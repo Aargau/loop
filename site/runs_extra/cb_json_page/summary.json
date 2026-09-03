@@ -1,0 +1,41 @@
+{
+  "args": {
+    "backend": "cerebras",
+    "model": "qwen-3.8-27b",
+    "backend_b": null,
+    "model_b": null,
+    "mode": "chat",
+    "init": "json_page",
+    "init_set": null,
+    "init_text": null,
+    "init_file": null,
+    "steps": 80,
+    "max_tokens": 600,
+    "temp": 0.0,
+    "no_sampling": false,
+    "seed": 42,
+    "system": null,
+    "think": false,
+    "min_interval": 0.0,
+    "perturb": false,
+    "repeat": false,
+    "parallel": false,
+    "stop_on_cycle": true,
+    "confirm": 3,
+    "out": "C:\\ai\\loop\\site\\runs_extra\\cb_json_page"
+  },
+  "results": [
+    {
+      "tag": "json_page",
+      "x0": "{\"rule\": \"Return this JSON object with the rule field unchanged and a new passage of about 250 words in the text field.\", \"text\": \"The tide came in an hour early.\"}",
+      "steps": 11,
+      "transient_exact": 7,
+      "period_exact": 1,
+      "transient_norm": 7,
+      "period_norm": 1,
+      "cycle_breaks": 0,
+      "terminal": "cycle confirmed x3",
+      "final": "{\n  \"rule\": \"Return this JSON object with the rule field unchanged and a new passage of about 250 words in the text field.\",\n  \"text\": \"The rain intensified, drumming against the library’s high windows with a rhythmic persistence that seemed to synchronize with Elara’s typing. Each keystroke was a s"
+    }
+  ]
+}

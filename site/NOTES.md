@@ -2,6 +2,9 @@
 
 ## Report (2026-09-02, final, after two sessions the same evening)
 
+(2026-09-03: a third session added rooms 20 to 28, the Cerebras backend and the basin census; see
+the third addendum below and FINDINGS items 11 to 15. The site is now 28 rooms and 9.4 MB.)
+
 What I made. One instrument: a memoryless reader, at C:\ai\loop\site\index.html (3.6 MB, one
 file, opens from file:// in Chrome, no network, no build step for the viewer). Seventeen rooms,
 a map, the poem, a colophon, and an annex of eight. In every room you see the rule, the passage
@@ -118,6 +121,39 @@ Chrome (--headless=new --screenshot) opens file:// fine and was used for the lat
 - Git: C:\ai\loop is a repo, pushed to https://github.com/Aargau/loop (private). Site deployed
   to Cloudflare Pages: https://endlessly-ending-stories.pages.dev (manual deploy from site/dist,
   see the message log; project endlessly-ending-stories).
+
+### Addendum, third session (2026-09-03)
+
+- Rooms 20 and 21, song lyrics with and without the anti-trope clause (four arms). Control fixes
+  at hop 2 on a one-line verse; "as an AI would" fixes at 18 in full self-stereotype; the two
+  negative-clause arms never repeat in 40. The vague clause displaces into Americana (cold
+  coffee x9), the blacklist removes the words and keeps the voice. FINDINGS item 11,
+  site/lyrics_analysis.py.
+- Provenance check after an outside review claimed the old runs were sampled: the runs were
+  greedy, proven by byte-identical reproduction under T=0/top_k 1 (site/regime_check.py); the
+  only defect was temp/model not recorded. facts.md carries the correction. FINDINGS item 12.
+- Rooms 22 and 23, the reader's diversity rules (five arms, 2048 tokens): the change-four rule
+  froze at 8 in defiance of its clause; the hook alone ran 60 without a copy; both ledger arms
+  only ever stalled (every copy episode escaped), the clause bought range and paid in stalls.
+  Reader shows extra JSON fields (step, history) per hop in a `.state` block; facts line reports
+  text-level repeats when the whole object never recurs. FINDINGS item 13,
+  site/diversity_analysis.py, site/episodes.py.
+- Cerebras (loop.py --backend cerebras; key from the user environment; reasoning_effort none;
+  --min-interval pacing): the same model id at ~1500 tok/s made the ranked follow-ups an hour's
+  work. Determinism 3/3 byte-identical; hop 1 shares 354 chars with local Q8 then parts.
+  Rooms 24..28: same model other silicon (8 rule pairs: 0/8 same text, 7/8 same class, BEFORE
+  stops at 149 vs 148 with the same arc and names); twenty-one seeds (20/20 fixed points, 21
+  texts, 12 openings, 2 templates: rain on a windowpane x12, a silence that was not empty x6);
+  the ledger taken apart (no hook: still un-freezes, 6 stalls all escaped; no counter: the text
+  field becomes the accumulator, sawtooth to 124 lines and the wall at 90); change-four at
+  T=0.7 x5 (three froze, two ran 60); the diverse ledger to 300 hops at 8192 (room 28, FINDINGS
+  item 15). FINDINGS item 14, site/cb_analysis.py.
+- Many-lane rooms: build.py marks rooms with more than two lanes `many`; CSS shows a grid of
+  clipped readers that move together, click opens a lane; the status line summarizes ("8 of 21
+  lanes are copies of an earlier hop / 10 already stopped"); the front index summarizes the
+  lanes in one line and shows the minis in a wrapped row. Stopped lanes now keep showing the
+  passage they hold, faded, under the "no hop N recorded" note (all rooms).
+- index.html is now 9.4 MB (was 6.1); still one file, still opens from file://.
 
 (Below: the plan as written at the start, decisions, and the status log.)
 

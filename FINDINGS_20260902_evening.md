@@ -1,6 +1,6 @@
 # Findings, evening of 2026-09-02 (site build session)
 
-Eighteen runs made while the site (site/index.html) was built. Logs: site/runs_extra/<run>/steps.jsonl
+Fifty-five runs made while the site (site/index.html) was built (18 on local Qwen, 37 on Cerebras on 2026-09-03). Logs: site/runs_extra/<run>/steps.jsonl
 + summary.json, same harness (loop.py), same decoding as export.py. Not copied into runs/ or data/
 (the brief said not to touch them); merge as you like. Fact-checked against the logs by three QA
 passes (site/qa_report*.md). Room numbers refer to the site.
@@ -27,6 +27,21 @@ passes (site/qa_report*.md). Room numbers refer to the site.
     verse: hook only                        Qwen                    none    60+    -    no copy; driving/glass/blood basin; "Engine roared to life beneath me." x4 (room 22)
     verse: ledger + unlike-every-entry      Qwen                    text   6/15/78 -   metastable copies (1, 3, 21 hops), each escaped; 58 settings; text grew 9..49 lines at 55..63 (room 23)
     verse: ledger, no diversity clause      Qwen                    text   46      -    one copy episode (47..49), escaped; 97 distinct verses; cave basin, "stone" x16 (room 23)
+    --- Cerebras (same model id, their hardware and precision; greedy, thinking off; runs cb_*) ---
+    json_better                             Qwen/Cerebras           exact   2      2    2-cycle "ahead of schedule" <-> "earlier than expected" (local: fixed at 1) (room 24)
+    json_para                               Qwen/Cerebras           exact   21     1    storm on a window (local: moon, tau 15)
+    json_page                               Qwen/Cerebras           exact   7      1    rain on the library windows, Elara typing (local: the click, tau 5) (room 24)
+    json_worse                              Qwen/Cerebras           exact   4      1    800-token wall, "and now I am the tide" (local: wall at 7)
+    json_unexpected                         Qwen/Cerebras           exact   4      1    600-token wall, black water (local: wall at 24)
+    json_prev                               Qwen/Cerebras           exact   149    1    the Vanguard in the Oort Cloud, "It is awake." (local: 148, Nexus rain) (room 24)
+    verse: change-four rule + hook          Qwen/Cerebras           exact   15     1    "Glass cut the bare foot." (local: 8) (rooms 24, 27)
+    verse: hook only                        Qwen/Cerebras           none    60+    -    no copy (local: no copy)
+    json_page x 20 new seeds (census)       Qwen/Cerebras           exact   1..22  1    20 of 20 fixed points; 21 distinct texts, 12 distinct openings, 2 templates (room 25)
+    verse: change-four, T=0.7, 5 seeds      Qwen/Cerebras           exact   16/47/19/-/-  1  three of five froze, two ran 60 (room 27)
+    verse: ledger, no closing action        Qwen/Cerebras           text   16      -    6 copy episodes, longest 3, all escaped; 58 settings (room 26)
+    verse: ledger, no step counter          Qwen/Cerebras           text   17      -    text field accumulates the song, sawtooth 4..124 lines, wall at 90 (room 26)
+    verse: ledger, no diversity clause      Qwen/Cerebras           none    100+   -    no copy, form 100/100, pit/stone/cave basin (local: cave too)
+    verse: ledger + clause, 300 hops, 8192  Qwen/Cerebras           text   21      -    11 stalls, all escaped, longest 42 and 64; 171 items copied verbatim; no wall (room 28)
 
 All at T=0 except Sonnet 5 (provider default sampling, --no-sampling). max_tokens 600 throughout except the 4096 rerun.
 
@@ -210,6 +225,73 @@ All at T=0 except Sonnet 5 (provider default sampling, --no-sampling). max_token
    half. Ledger explores and keeps un-freezing; the local rule froze rather than oscillated; no
    capacity transition yet. Next: run the diverse ledger to 300 hops, and the ledger with the
    hook clause removed to see whether the ledger alone (no hook) still un-freezes.
+
+14. Cerebras (2026-09-03; loop.py --backend cerebras, model qwen-3.8-27b, reasoning_effort
+   none, T=0, seed 42; runs site/runs_extra/cb_*; analysis site/cb_analysis.py, episodes.py).
+   Determinism: one hop of json_page three times, byte-identical, reasoning 0 chars. Numerics
+   vs local Q8: hop 1 of json_page shares its first 354 characters with the local hop 1 and
+   diverges at the second sentence. Eight rules run on both machines with the same budgets:
+   better, para, page, worse, unexpected, prev, change-four, hook. Identical terminal text: 0 of
+   8. Same terminal class: 7 of 8 (fixed point stays fixed point, wall fragment stays wall
+   fragment, freeze stays freeze, no-stop stays no-stop); better is fixed locally and a 2-cycle
+   on Cerebras. Transients: 1/2, 15/21, 5/7, 7/4, 24/4, 148/149, 8/15, none/none. BEFORE is the
+   striking pair: same arc (lighthouse instead of coast; servers in the sub-basement at 30
+   instead of a server room at 25; Neo-Veridia at 31 instead of 26; Aethelgard at 84 instead of
+   60; Sector 4 in both; a dying star; the ship Aethelgard at 146), same Elias, Thorne as a
+   surname in both (Elias Thorne locally, Dr. Aris Thorne on Cerebras), and a fixed point one
+   hop apart, both origin scenes ("You are here." / "It is awake."). Reading: attractor
+   class, transient scale, names and templates are properties of the weights; the exact fixed
+   point is a property of the kernel. Room 24.
+   Basin census (room 25): twenty new one-sentence seeds under json_page, 600 tokens,
+   stop-on-cycle, 30 steps. 20 of 20 reached an exact fixed point (period 1) at tau 1..22; one
+   (the pistol) ran 30 hops alternating rain/silence in different words each time. Attractor
+   count depends on resolution: 21 distinct terminal texts; 12 distinct 5-word openings; 2
+   templates own 18 of 21 ("The rain <lashed|hammered|fell|drummed> against the windowpane" x12
+   incl. the pistol, "The silence <that followed|of the void|of the deep> was not empty" x6);
+   3 singletons (the elevator held its own hop 1; a storm; "The cursor blinked"). Pairwise
+   cosine between terminal texts mean 0.46, max 0.76: different scenes on two skeletons. Every
+   trajectory: seed scene for one hop, then rain or silence, then alternation between the two
+   until an exact copy. Which template a seed lands on: silence for servers, king, interview,
+   general, moon, astronaut; rain for the domestic seeds. Names recur: Elias, Elara, Mara, Clara,
+   Julian, King Aldric, Dr. Aris Thorne (the moon lane); the moon lane's submersible and the astronaut's ship are
+   both the *Aethelgard*. Answer to the question the human started with: under this operator
+   the model has two attractor templates and an unbounded number of exact fixed points on them.
+   Ledger taken apart (room 26): (a) ledger + clause, hook removed: 100 hops, 88 distinct texts,
+   6 copy episodes (17..19, 68..69, 82, 86, 89..90, 97..99), longest 3, all escaped; 73 distinct
+   signatures, 58 settings; 30 append errors. The record un-freezes without the hook. (b) ledger +
+   clause + hook, no step counter: the text field becomes the accumulator. Hop 2 begins "The
+   anchor chain snapped with a loud crack." and every hop to 35 keeps the whole song so far,
+   +4 lines a hop, to 124 lines; resets at 36, 46, 59, 60; grows to 120 lines by 89; hop 90 hits
+   the 2048 wall; hop 91 repairs at 4 lines. History appended correctly on 90/100. Only 3 copied
+   hops (because the text is never the same length twice). So the counter is what pins the text
+   field to one verse. (c) ledger without clause (control) on Cerebras: 100 hops, zero copies,
+   form 100/100, 1 append error, 39 settings, pit x13 / stone x9 / cave x7: the same cave basin
+   as the local control. The basin is the model's.
+   Sampling (room 27): change-four at T=0.7, seeds 1..5, 60 steps, stop-on-cycle. Froze at 16,
+   47, 19; two ran 60 without a copy. The greedy Cerebras lane froze at 15. Sampling moves the
+   freeze and sometimes past the horizon; it does not remove it.
+   Cost: the whole batch (~1400 hops) was under $10 and about an hour of wall time, throttled at
+   2 s for the ledger runs; no 429s.
+
+15. The diverse ledger to 300 hops at 8192 tokens (room 28; cb_div_ledger_300 to hop 208, the
+   connection was reset at 209, continued as cb_div_ledger_300_ext from hop 208's exact output,
+   the way room 9 was; the site renders the concatenation and QA checks the join).
+   No capacity transition: the history reached 171 items and was copied verbatim, in order, on
+   every hop (0 alterations in 300); max tok_out 1776, max tok_in 1787, no wall. Text field 4
+   lines on 298 of 300 hops (8 lines at 54 and 299). 172 distinct verses, 167 distinct
+   signatures, 103 distinct settings; 130 hops appended nothing.
+   Stalls get longer: 11 text-level copy episodes, lengths 1, 1, 1, 4, 6, 42, 1, 2, 1, 64, 5,
+   every one escaped (the last at 297). The 42-hop stall (109..150, "Water gushed from the
+   drain.") and the 64-hop stall (208..271, "I wrapped the burn in gauze.") both had zero
+   appends, so the object fed back was byte-identical hop to hop except the step field.
+   Mechanism, now exact rather than a candidate: during such a stall X_t differs from X_{t-1}
+   only in the integer step, so the escape hop is a function of the step value alone; the step
+   is the clock that makes the fixed point metastable. Escape inputs here (step of the last copied
+   object): 22, 29, 31, 69, 94, 150, 155, 169, 193, 271, 296. Locally (item 13) the 21-hop stall escaped at input step
+   99. No pattern claimed beyond "some integers tip the argmax". Corollary for the memoryless
+   rooms: nothing in their state changes on its own, so a copy is absorbing; for the no-counter
+   arm (item 14b) the accumulating text field played the clock instead.
+   Cost: ~$3 for the 300 hops (history in and out every hop).
 
 8. Instrument notes. (a) llama.cpp with 2 slots at 131k context fell to 0.8 tok/s when two
    clients ran at once and stayed there alone (20.4 GB per 3090, paging); -c 16384 -np 1 gave

@@ -74,6 +74,8 @@ body.front-view .topbar { display: none; }
 .rooms-list li { border-bottom: 1px solid var(--line); }
 .rooms-list a { display: grid; grid-template-columns: 2rem 12rem 8.5rem 16rem 1fr; gap: 1rem; padding: .55rem 0; text-decoration: none; font-size: .85rem; align-items: baseline; }
 .rooms-list .mini-wrap { display: flex; flex-direction: column; align-items: flex-start; gap: 3px; align-self: center; }
+.rooms-list .mini-wrap.many { flex-direction: row; flex-wrap: wrap; gap: 3px 8px; }
+.rooms-list .mini-wrap.many .track.mini { height: 10px; }
 .track.mini { height: 16px; width: auto; max-width: 100%; margin: 0; cursor: inherit; }
 .track.mini .bar { fill: var(--ink-2); } .track.mini .bar.copy, .track.mini .bar.seed { fill: var(--faint); }
 .rooms-list a:hover .ttl { text-decoration: underline; }
@@ -151,10 +153,32 @@ ol.hops .as-context, .slot.current .as-context { display: none; }
 .slot.context .hop, .slot .hop.still { animation: none; }
 .slot.empty { min-height: 0; margin-bottom: 1.5rem; }
 .slot.empty::after { content: "nothing. hop 0 is the seed."; font-size: .72rem; color: var(--faint); }
-.ended { font-size: .8rem; color: var(--ink-2); padding: .8rem; border: 1px dashed var(--line); border-radius: 3px; max-width: var(--measure); }
+.ended { font-size: .8rem; color: var(--ink-2); padding: .8rem; border: 1px dashed var(--line); border-radius: 3px; max-width: var(--measure); margin-bottom: .8rem; }
+.slot .hop.held { opacity: .5; }
 @media (max-width: 64rem) {
   .lanes-2 { grid-template-columns: 1fr; gap: 1.5rem; }
 }
+
+/* many lanes: a grid of small readers that all move together; click a lane to open it */
+.room.many { max-width: none; }
+.room.many .room-head { max-width: 46rem; }
+.lanes-many { display: grid; grid-template-columns: repeat(auto-fill, minmax(17rem, 1fr)); gap: 1.4rem 1.8rem; align-items: start; }
+.room.many .lane { font-size: .82rem; cursor: pointer; }
+.room.many .lane.open { cursor: default; }
+.room.many .lane-label { font-size: .66rem; text-transform: none; letter-spacing: 0; font-style: italic; }
+.room.many .slot.context { display: none; }
+.room.many .slot.current .text { max-height: 9.5rem; overflow: hidden; -webkit-mask-image: linear-gradient(#000 65%, transparent); mask-image: linear-gradient(#000 65%, transparent); }
+.room.many .lane.open .slot.current .text { max-height: none; -webkit-mask-image: none; mask-image: none; }
+.room.many .cite, .room.many .metrics { font-size: .62rem; }
+.room.many .text { font-size: .92rem; line-height: 1.45; }
+.room.many .lane.open .text { font-size: 1rem; }
+.room.many .metrics, .room.many details.raw { display: none; }
+.room.many .lane.open .metrics, .room.many .lane.open details.raw { display: block; }
+.room.many .track { margin-bottom: .4rem; }
+.room.many .ended { font-size: .66rem; padding: .4rem .6rem; margin-bottom: .5rem; }
+details.facts-many summary { cursor: pointer; list-style: none; }
+details.facts-many summary::before { content: "+ "; }
+details.facts-many[open] summary::before { content: "\2212 "; }
 
 /* hops */
 ol.hops { list-style: none; margin: 0; padding: 0; }

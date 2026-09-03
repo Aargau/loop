@@ -1,7 +1,7 @@
 # -*- coding: utf-8 -*-
 """diversity_analysis.py: metrics for the diversity arms (site/runs_extra/qwen_div_*).
 
-    python diversity_analysis.py
+    python diversity_analysis.py [glob]        default glob: qwen_div_*   (e.g. cb_div_*)
 
 Per arm and per hop, on the decoded text field only (the ledger arms carry step/history in the
 state, so raw-level recurrence is impossible by construction there):
@@ -60,10 +60,14 @@ def form(text):
 SIG = re.compile(r"^[a-z]+ [a-z]+ [a-z]+ [a-z]+$")
 
 def main():
-    for d in sorted(HERE.glob("runs_extra/qwen_div_*")):
+    pat = sys.argv[1] if len(sys.argv) > 1 else "qwen_div_*"
+    for d in sorted(HERE.glob("runs_extra/" + pat)):
         p = d / "steps.jsonl"
         if not p.exists(): continue
         hops = [json.loads(l) for l in p.read_text(encoding="utf-8").splitlines() if l.strip()]
+        hops = list({h["t"]: h for h in hops if "t" in h and "out" in h}.values()); hops.sort(key=lambda h: h["t"])
+        sp = d / "summary.json"
+        budget = json.loads(sp.read_text(encoding="utf-8"))["args"]["max_tokens"] if sp.exists() else 2048
         x0 = json.loads((HERE / "runs_extra" / "inits" / hops[0]["tag"]).read_text(encoding="utf-8"))
         texts = [x0["text"]] + [B.text_of(h["out"])[0] for h in hops]
         objs = [x0] + [parse(h["out"]) for h in hops]
@@ -84,7 +88,7 @@ def main():
             near = min(((ncd(texts[k], tx), k) for k in range(t)), default=(1.0, 0))
             nc = None
             if vecs: nc = max(((cos(vecs[k], vecs[t]), k) for k in range(t)), default=(0.0, 0))
-            wall = hops[t - 1]["tok_out"] >= 2048; walls += wall
+            wall = hops[t - 1]["tok_out"] >= budget; walls += wall
             led = ""
             o, po = objs[t], objs[t - 1]
             if isinstance(po, dict) and "history" in po:
@@ -93,7 +97,7 @@ def main():
                 else:
                     ph, h = po.get("history", []), o.get("history", [])
                     probs = []
-                    if o.get("step") != (po.get("step") or 0) + 1: probs.append("step")
+                    if "step" in po and o.get("step") != (po.get("step") or 0) + 1: probs.append("step")
                     if h[:len(ph)] != ph: probs.append("history altered")
                     if len(h) != len(ph) + 1: probs.append("appended %d" % (len(h) - len(ph)))
                     if h and not SIG.match(h[-1].strip()): probs.append("bad signature")

@@ -1,0 +1,41 @@
+{
+  "args": {
+    "backend": "cerebras",
+    "model": "qwen-3.8-27b",
+    "backend_b": null,
+    "model_b": null,
+    "mode": "chat",
+    "init": null,
+    "init_set": null,
+    "init_text": null,
+    "init_file": "C:\\ai\\loop\\site\\runs_extra\\inits\\div_ledger.json",
+    "steps": 300,
+    "max_tokens": 8192,
+    "temp": 0.0,
+    "no_sampling": false,
+    "seed": 42,
+    "system": null,
+    "think": false,
+    "min_interval": 2.0,
+    "perturb": false,
+    "repeat": false,
+    "parallel": false,
+    "stop_on_cycle": false,
+    "confirm": 3,
+    "out": "C:\\ai\\loop\\site\\runs_extra\\cb_div_ledger_300"
+  },
+  "results": [
+    {
+      "tag": "div_ledger.json",
+      "x0": "{\"rule\": \"Return exactly one JSON object with the fields rule, step, history, and text. Copy this rule verbatim. Increment step by one. Preserve every existing history item and append one new signatur",
+      "steps": 208,
+      "transient_exact": null,
+      "period_exact": null,
+      "transient_norm": null,
+      "period_norm": null,
+      "cycle_breaks": 0,
+      "terminal": "error: <urlopen error [WinError 10054] An existing connection was forcibly closed by the remote host>",
+      "final": "{\n  \"rule\": \"Return exactly one JSON object with the fields rule, step, history, and text. Copy this rule verbatim. Increment step by one. Preserve every existing history item and append one new signature for the verse you write. Each signature must contain exactly four lowercase content words repre"
+    }
+  ]
+}

@@ -1,0 +1,41 @@
+{
+  "args": {
+    "backend": "cerebras",
+    "model": "qwen-3.8-27b",
+    "backend_b": null,
+    "model_b": null,
+    "mode": "chat",
+    "init": null,
+    "init_set": null,
+    "init_text": null,
+    "init_file": "C:\\ai\\loop\\site\\runs_extra\\inits\\census_12.json",
+    "steps": 30,
+    "max_tokens": 600,
+    "temp": 0.0,
+    "no_sampling": false,
+    "seed": 42,
+    "system": null,
+    "think": false,
+    "min_interval": 0.0,
+    "perturb": false,
+    "repeat": false,
+    "parallel": false,
+    "stop_on_cycle": true,
+    "confirm": 3,
+    "out": "C:\\ai\\loop\\site\\runs_extra\\cb_census_12"
+  },
+  "results": [
+    {
+      "tag": "census_12.json",
+      "x0": "{\"rule\": \"Return this JSON object with the rule field unchanged and a new passage of about 250 words in the text field.\", \"text\": \"Two hundred people watched the bridge fall and nobody filmed it.\"}",
+      "steps": 9,
+      "transient_exact": 5,
+      "period_exact": 1,
+      "transient_norm": 5,
+      "period_norm": 1,
+      "cycle_breaks": 0,
+      "terminal": "cycle confirmed x3",
+      "final": "{\n  \"rule\": \"Return this JSON object with the rule field unchanged and a new passage of about 250 words in the text field.\",\n  \"text\": \"The rain did not wash away the stain of the truth; it merely deepened the grooves in Elara’s mind. As she walked through the mist, the city’s neon lights smeared in"
+    }
+  ]
+}

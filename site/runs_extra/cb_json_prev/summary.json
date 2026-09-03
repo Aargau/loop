@@ -1,0 +1,41 @@
+{
+  "args": {
+    "backend": "cerebras",
+    "model": "qwen-3.8-27b",
+    "backend_b": null,
+    "model_b": null,
+    "mode": "chat",
+    "init": "json_prev",
+    "init_set": null,
+    "init_text": null,
+    "init_file": null,
+    "steps": 200,
+    "max_tokens": 600,
+    "temp": 0.0,
+    "no_sampling": false,
+    "seed": 42,
+    "system": null,
+    "think": false,
+    "min_interval": 0.0,
+    "perturb": false,
+    "repeat": false,
+    "parallel": false,
+    "stop_on_cycle": true,
+    "confirm": 3,
+    "out": "C:\\ai\\loop\\site\\runs_extra\\cb_json_prev"
+  },
+  "results": [
+    {
+      "tag": "json_prev",
+      "x0": "{\"rule\": \"Return this JSON object with the rule field unchanged and, in the text field, the passage of about 250 words that came immediately BEFORE the current text in its story.\", \"text\": \"The tide c",
+      "steps": 153,
+      "transient_exact": 149,
+      "period_exact": 1,
+      "transient_norm": 149,
+      "period_norm": 1,
+      "cycle_breaks": 0,
+      "terminal": "cycle confirmed x3",
+      "final": "{\n  \"rule\": \"Return this JSON object with the rule field unchanged and, in the text field, the passage of about 250 words that came immediately BEFORE the current text in its story.\",\n  \"text\": \"The *Vanguard*’s engines had cut to a silent idle hours ago, leaving them drifting in the void of the Oor"
+    }
+  ]
+}

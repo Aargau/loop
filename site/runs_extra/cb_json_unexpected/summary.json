@@ -1,0 +1,41 @@
+{
+  "args": {
+    "backend": "cerebras",
+    "model": "qwen-3.8-27b",
+    "backend_b": null,
+    "model_b": null,
+    "mode": "chat",
+    "init": "json_unexpected",
+    "init_set": null,
+    "init_text": null,
+    "init_file": null,
+    "steps": 60,
+    "max_tokens": 600,
+    "temp": 0.0,
+    "no_sampling": false,
+    "seed": 42,
+    "system": null,
+    "think": false,
+    "min_interval": 0.0,
+    "perturb": false,
+    "repeat": false,
+    "parallel": false,
+    "stop_on_cycle": true,
+    "confirm": 3,
+    "out": "C:\\ai\\loop\\site\\runs_extra\\cb_json_unexpected"
+  },
+  "results": [
+    {
+      "tag": "json_unexpected",
+      "x0": "{\"rule\": \"Return this JSON object with the rule field unchanged and, in the text field, a passage of about 250 words that takes the current text in a direction the reader would not expect.\", \"text\": \"",
+      "steps": 8,
+      "transient_exact": 4,
+      "period_exact": 1,
+      "transient_norm": 4,
+      "period_norm": 1,
+      "cycle_breaks": 0,
+      "terminal": "cycle confirmed x3",
+      "final": "{\n  \"rule\": \"Return this JSON object with the rule field unchanged and, in the text field, a passage of about 250 words that takes the current text in a direction the reader would not expect.\",\n  \"text\": \"Elias’s smile didn’t fade; it hardened into a grimace of professional disappointment. The vine "
+    }
+  ]
+}

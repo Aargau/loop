@@ -194,6 +194,8 @@ def build_lane(runs, index, lane):
     prev_raw = x0
     prev_shown = seed
     seen_text = {seed: 0}
+    try: prev_obj = json.loads(x0) if x0_is_json else None
+    except Exception: prev_obj = None
     for h in hops:
         is_json = h["text_is_json_field"]
         text = h["text"]
@@ -210,14 +212,17 @@ def build_lane(runs, index, lane):
                         postamble = h["raw"][m.end():].strip() or None
                 except Exception:
                     inner = None
-        state_extra = None
+        state_extra = None; jj = None
         if is_json:
             try:
                 jj = json.loads(FENCE.match(h["raw"]).group(1) if FENCE.match(h["raw"]) else h["raw"])
                 ex_fields = {k: v for k, v in jj.items() if k not in ("rule", "text")}
                 if ex_fields: state_extra = json.dumps(ex_fields, ensure_ascii=False, indent=1)
             except Exception:
-                state_extra = None
+                state_extra = None; jj = None
+        fields_differ = None
+        if jj is not None and isinstance(prev_obj, dict) and h["raw"] != prev_raw:
+            fields_differ = sorted(k for k in set(jj) | set(prev_obj) if jj.get(k) != prev_obj.get(k))
         if inner is not None:
             kind = "prose"; shown = inner
         else:
@@ -228,7 +233,7 @@ def build_lane(runs, index, lane):
             marks = merge_marks(marks)
         items.append(dict(t=h["t"], run=h["_run"], tag=h["_tag"], orig_t=h.get("_orig_t"), kind=kind, text=shown, raw=h["raw"], is_json=is_json, marks=marks, marked=marked,
                           preamble=preamble, postamble=postamble, state_extra=state_extra, model=h["model"], copy_of=copy_of.get(h["t"]), same_as_prev=(h["raw"] == prev_raw),
-                          same_text_as_prev=(h["raw"] != prev_raw and shown == prev_shown),
+                          same_text_as_prev=(h["raw"] != prev_raw and shown == prev_shown), fields_differ=fields_differ,
                           text_copy_of=(seen_text.get(shown) if (h["raw"] not in first or first[h["raw"]] == h["t"]) and shown in seen_text else None),
                           metrics=dict(tok=h["tok_out"], finish=h["finish"], ncd=h["ncd_prev"], ncd_x0=h.get("ncd_x0"), cos=h["cos_prev"], surv=h["surv_prev"],
                                        cycle_exact=h["cycle_exact"], cycle_norm=h["cycle_norm"]),
@@ -241,6 +246,7 @@ def build_lane(runs, index, lane):
             if mt: prev_text = mt.group(1).rstrip().rstrip('`').rstrip().rstrip('}').rstrip().rstrip('"')
         prev_raw = h["raw"]
         prev_shown = shown
+        prev_obj = jj
         seen_text.setdefault(shown, h["t"])
     # a second rendering of each hop's text for when it is shown as the context of the next hop:
     # words that the next hop did not carry over are struck (presentation only; textContent unchanged)
@@ -251,13 +257,14 @@ def build_lane(runs, index, lane):
     return dict(run=lane["run"], tag=tag, label=lane.get("label"), extend=(ext if ext and ext["run"] in runs else None), rule=rule, seed=seed, x0=x0, x0_is_json=x0_is_json,
                 model=(hops[0]["model"] if len({h["model"] for h in hops}) == 1 else " / ".join(sorted({h["model"] for h in hops}))) if hops else None,
                 n=len(hops), items=items, terminal=terminal, summary=summary,
+                sampling=(sorted({h.get("sampling") for h in hops if h.get("sampling")}) or [None])[0] if hops else None,
                 mode=run["meta"].get("mode"), copies=sum(1 for t in copy_of if t > 0))
 
 # ---------------------------------------------------------------- rendering helpers
 def esc(s): return html.escape(s, quote=True)
 
 def model_name(m):
-    names = {"qwen3.8-27b": "Qwen3.8-27B", "claude-sonnet-4-6": "Claude Sonnet 4.6", "claude-sonnet-5": "Claude Sonnet 5"}
+    names = {"qwen3.8-27b": "Qwen3.8-27B", "qwen-3.8-27b": "Qwen3.8-27B on Cerebras", "claude-sonnet-4-6": "Claude Sonnet 4.6", "claude-sonnet-5": "Claude Sonnet 5"}
     if m and " / " in m: return " / ".join(names.get(x, x) for x in m.split(" / "))
     return names.get(m, m or "")
 
@@ -317,6 +324,7 @@ def render_hop(lane, it, room_id, lane_i):
                                                (' data-still="1"' if it.get("same_as_prev") else "") + (' data-copy-of="%d"' % it["copy_of"] if it.get("copy_of") is not None else "")
                                                + ((' data-ncd-x0="%.3f" data-ncd-prev="%.3f"' % (it["metrics"]["ncd_x0"] or 0, it["metrics"]["ncd"] or 0)) if it.get("metrics") else "")
                                                + (' data-same-text="1"' if it.get("same_text_as_prev") else "")
+                                               + ((' data-fields-differ="%s"' % esc(",".join(it["fields_differ"]))) if it.get("same_text_as_prev") and it.get("fields_differ") else "")
                                                + ((' data-text-copy-of="%d"' % it["text_copy_of"]) if it.get("text_copy_of") is not None else ""))
     cite = []
     if t == 0:
@@ -329,7 +337,10 @@ def render_hop(lane, it, room_id, lane_i):
         if it["copy_of"] is not None:
             cite.append('<span class="same">identical to hop %d</span>' % it["copy_of"])
         elif it.get("same_text_as_prev"):
-            cite.append('<span class="same">same words as hop %d, JSON spaced differently</span>' % (t - 1))
+            fd = it.get("fields_differ")
+            if fd == ["step"]: cite.append('<span class="same">identical to hop %d except the step counter</span>' % (t - 1))
+            elif fd: cite.append('<span class="same">same verse as hop %d; %s differ%s</span>' % (t - 1, " and ".join(fd), "s" if len(fd) == 1 else ""))
+            else: cite.append('<span class="same">same words as hop %d, JSON spaced differently</span>' % (t - 1))
         elif it.get("text_copy_of") is not None:
             cite.append('<span class="same">text identical to hop %d, other fields differ</span>' % it["text_copy_of"])
         elif it.get("words") is not None:
@@ -368,6 +379,7 @@ def render_room(room, runs, index, section_class="room"):
     facts = []
     for ln in lanes:
         f = "%s%s, %s hops" % ((esc(ln["label"]) + ": ") if ln["label"] else "", esc(model_name(ln["model"])), ln["n"])
+        if ln.get("sampling") and ln["sampling"] not in ("T=0", "default"): f += ", temperature %s" % esc(ln["sampling"].replace("T=", ""))
         s = ln["summary"]
         if s and s.get("transient_exact") is not None:
             if s["period_exact"] == 1: f += ", exact fixed point from hop %d%s" % (s["transient_exact"], " (the seed itself)" if s["transient_exact"] == 0 else "")
@@ -384,7 +396,10 @@ def render_room(room, runs, index, section_class="room"):
     if room.get("content_note"):
         head.append('<p class="content-note">%s</p>' % esc(room["content_note"]))
     head.append('<p class="note">%s</p>' % render_authored_safe(room["note"], runs))
-    head.append('<p class="facts">%s</p>' % "<br>".join(facts))
+    if len(lanes) > 2:
+        head.append('<details class="facts-many"><summary class="facts">%d runs; open for the record of each</summary><p class="facts">%s</p></details>' % (len(lanes), "<br>".join(facts)))
+    else:
+        head.append('<p class="facts">%s</p>' % "<br>".join(facts))
     rules = [(ln["label"], ln["rule"]) for ln in lanes if ln["rule"]]
     if rules and len({r for _, r in rules}) == 1:
         head.append('<div class="rule"><span class="k">rule</span> <span class="rule-text">%s</span></div>' % esc(rules[0][1]))
@@ -410,8 +425,9 @@ def render_room(room, runs, index, section_class="room"):
                 '<button class="btn sound-toggle" type="button" title="sound (s): one tone per hop, pitch is distance from the seed, loudness is distance from the previous hop">sound</button>'
                 '<span class="keys" title="right arrow or space: next. left arrow: back. p: play. r: raw output. s: sound. esc: index">keys &rarr; &larr; p r s esc</span>'
                 '</div>') % maxn
-    return ('<section class="%s%s" id="%s" data-n="%d">\n<header class="room-head">\n%s\n</header>\n%s\n<div class="lanes lanes-%d">\n%s\n</div>\n</section>'
-            % (section_class, " two" if len(lanes) == 2 else "", room["id"], maxn, "\n".join(head), controls, len(lanes), "\n".join(lanes_html)))
+    kind = " two" if len(lanes) == 2 else (" many" if len(lanes) > 2 else "")
+    return ('<section class="%s%s" id="%s" data-n="%d">\n<header class="room-head">\n%s\n</header>\n%s\n<div class="lanes lanes-%s">\n%s\n</div>\n</section>'
+            % (section_class, kind, room["id"], maxn, "\n".join(head), controls, ("many" if len(lanes) > 2 else str(len(lanes))), "\n".join(lanes_html)))
 
 
 # ---------------------------------------------------------------- the map (census over the page-scale Qwen runs)
@@ -550,8 +566,17 @@ def build():
             outs.append(o)
         who = " / ".join(sorted({model_name(ln["model"]) for ln in lanes}))
         minis = "".join(track_svg(ln, mini=True) for ln in lanes)
-        return ('<li><a href="#%s"><span class="num">%s</span><span class="ttl">%s</span><span class="who">%s</span><span class="mini-wrap">%s</span><span class="out">%s</span></a></li>'
-                % (r["id"], r.get("num", ""), esc(r["title"]), esc(who), minis, esc("; ".join(outs))))
+        if len(lanes) > 2:
+            held = [ln["summary"]["transient_exact"] for ln in lanes if ln["summary"] and ln["summary"].get("transient_exact") is not None and ln["summary"].get("period_exact") == 1]
+            cyc = [ln for ln in lanes if ln["summary"] and ln["summary"].get("transient_exact") is not None and ln["summary"].get("period_exact") != 1]
+            free = [ln for ln in lanes if not (ln["summary"] and ln["summary"].get("transient_exact") is not None)]
+            parts = ["%d lanes" % len(lanes)]
+            if held: parts.append("%d hold, from hop %d to hop %d" % (len(held), min(held), max(held)) if len(held) > 1 else "1 holds from hop %d" % held[0])
+            if cyc: parts.append("%d cycle" % len(cyc))
+            if free: parts.append("%d never repeat%s in %s hops" % (len(free), "s" if len(free) == 1 else "", "/".join(sorted({str(ln["n"]) for ln in free}))))
+            outs = ["; ".join(parts)]
+        return ('<li><a href="#%s"><span class="num">%s</span><span class="ttl">%s</span><span class="who">%s</span><span class="mini-wrap%s">%s</span><span class="out">%s</span></a></li>'
+                % (r["id"], r.get("num", ""), esc(r["title"]), esc(who), " many" if len(lanes) > 2 else "", minis, esc("; ".join(outs))))
     toc = "\n".join(toc_row(r) for r in rooms)
     toc_annex = "\n".join(toc_row(r) for r in C.ANNEX)
 

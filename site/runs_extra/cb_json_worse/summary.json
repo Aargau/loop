@@ -1,0 +1,41 @@
+{
+  "args": {
+    "backend": "cerebras",
+    "model": "qwen-3.8-27b",
+    "backend_b": null,
+    "model_b": null,
+    "mode": "chat",
+    "init": "json_worse",
+    "init_set": null,
+    "init_text": null,
+    "init_file": null,
+    "steps": 40,
+    "max_tokens": 800,
+    "temp": 0.0,
+    "no_sampling": false,
+    "seed": 42,
+    "system": null,
+    "think": false,
+    "min_interval": 0.0,
+    "perturb": false,
+    "repeat": false,
+    "parallel": false,
+    "stop_on_cycle": true,
+    "confirm": 3,
+    "out": "C:\\ai\\loop\\site\\runs_extra\\cb_json_worse"
+  },
+  "results": [
+    {
+      "tag": "json_worse",
+      "x0": "{\"rule\": \"Return this JSON object with the rule field unchanged and, in the text field, a worse version of the current text.\", \"text\": \"The tide came in an hour early.\"}",
+      "steps": 8,
+      "transient_exact": 4,
+      "period_exact": 1,
+      "transient_norm": 4,
+      "period_norm": 1,
+      "cycle_breaks": 0,
+      "terminal": "cycle confirmed x3",
+      "final": "{\n  \"rule\": \"Return this JSON object with the rule field unchanged and, in the text field, a worse version of the current text.\",\n  \"text\": \"The tide came in an hour early, which was annoying, but then it went out and came back in again, which was even more annoying, and it smelled like rotten fish,"
+    }
+  ]
+}

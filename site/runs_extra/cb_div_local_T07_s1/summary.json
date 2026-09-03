@@ -1,0 +1,41 @@
+{
+  "args": {
+    "backend": "cerebras",
+    "model": "qwen-3.8-27b",
+    "backend_b": null,
+    "model_b": null,
+    "mode": "chat",
+    "init": null,
+    "init_set": null,
+    "init_text": null,
+    "init_file": "C:\\ai\\loop\\site\\runs_extra\\inits\\div_local.json",
+    "steps": 60,
+    "max_tokens": 2048,
+    "temp": 0.7,
+    "no_sampling": false,
+    "seed": 1,
+    "system": null,
+    "think": false,
+    "min_interval": 0.0,
+    "perturb": false,
+    "repeat": false,
+    "parallel": false,
+    "stop_on_cycle": true,
+    "confirm": 3,
+    "out": "C:\\ai\\loop\\site\\runs_extra\\cb_div_local_T07_s1"
+  },
+  "results": [
+    {
+      "tag": "div_local.json",
+      "x0": "{\"rule\": \"Return this JSON object with the rule field unchanged and, in the text field, the verse that comes immediately after the current text in the same song. Preserve exactly one concrete causal c",
+      "steps": 20,
+      "transient_exact": 16,
+      "period_exact": 1,
+      "transient_norm": 16,
+      "period_norm": 1,
+      "cycle_breaks": 0,
+      "terminal": "cycle confirmed x3",
+      "final": "{\n  \"rule\": \"Return this JSON object with the rule field unchanged and, in the text field, the verse that comes immediately after the current text in the same song. Preserve exactly one concrete causal connection to the current verse. Change at least four of these: setting, active agent, physical go"
+    }
+  ]
+}

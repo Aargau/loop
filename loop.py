@@ -6,7 +6,8 @@ State X_t is a string. Each hop X_{t+1} = f(X_t): the model's output given X_t a
 context. chat mode = single user turn, no history. raw mode = bare prompt (llama backend only).
 
 Backends: llama (local llama-server), anthropic (Messages API, key from ANTHROPIC_API_KEY),
-openai (chat completions, key from OPENAI_API_KEY). --backend-b/--model-b alternates hops
+openai (chat completions, key from OPENAI_API_KEY), cerebras (chat completions, key from
+CEREBRAS_API_KEY, reasoning_effort none unless --think). --backend-b/--model-b alternates hops
 between two models (A on odd hops, B on even), which is the original two-context hypothetical.
 Keys are read from the environment and never logged.
 
@@ -74,6 +75,11 @@ def post_retry(url, body, headers=None, tries=6):
             return post(url, body, headers)
         except HttpErr as e:
             if e.code in (429, 500, 502, 503, 529) and i < tries - 1:
+                time.sleep(min(60, 2 ** i * 2)); continue
+            raise
+        except (urllib.error.URLError, ConnectionError, TimeoutError, OSError) as e:
+            # connection reset, DNS hiccup, socket timeout: transient for a remote backend
+            if i < tries - 1 and not url.startswith(LLAMA):
                 time.sleep(min(60, 2 ** i * 2)); continue
             raise
 
@@ -158,6 +164,43 @@ def step_openai(state, args, model):
                                                   "tok_in": u.get("prompt_tokens"), "reasoning_chars": 0,
                                                   "model": r.get("model", model), "sampling": sampling}
 
+CEREBRAS = "https://api.cerebras.ai/v1/chat/completions"
+
+def step_cerebras(state, args, model):
+    """Cerebras chat completions (OpenAI-compatible). Reasoning is on by default there; the
+    harness sends reasoning_effort "none" unless --think, and logs any reasoning it gets back."""
+    key = os.environ.get("CEREBRAS_API_KEY")
+    if not key: raise RuntimeError("CEREBRAS_API_KEY not set in environment")
+    hdr = {"Authorization": "Bearer " + key, "User-Agent": "loop.py/1.0 (memoryless self-loop harness)"}
+    msgs = ([{"role": "system", "content": args.system}] if args.system else []) + [{"role": "user", "content": state}]
+    body = {"model": model, "messages": msgs, "max_completion_tokens": args.max_tokens,
+            "reasoning_effort": ("high" if args.think else "none")}
+    sampling = "default"
+    if not args.no_sampling:
+        body["temperature"] = args.temp; body["top_p"] = 1.0; body["seed"] = args.seed; sampling = "T=%g" % args.temp
+    r = post_retry(CEREBRAS, body, hdr)
+    ch = r["choices"][0]; u = r.get("usage", {}); m = ch["message"]
+    raw = m.get("content") or ""
+    reasoning = (m.get("reasoning") or m.get("reasoning_content") or "")
+    think = THINK_RE.findall(raw)
+    content = THINK_RE.sub("", raw)
+    return content, {"finish": ch.get("finish_reason"), "tok_out": u.get("completion_tokens"),
+                     "tok_in": u.get("prompt_tokens"), "reasoning_chars": len(reasoning) + sum(len(x) for x in think),
+                     "tok_cached": (u.get("prompt_tokens_details") or {}).get("cached_tokens"),
+                     "model": r.get("model", model), "sampling": sampling}
+
+_last_call = [0.0]
+def paced(fn, args):
+    def g(state, a):
+        if a.min_interval > 0:
+            wait = _last_call[0] + a.min_interval - time.time()
+            if wait > 0: time.sleep(wait)
+        try:
+            return fn(state, a)
+        finally:
+            _last_call[0] = time.time()
+    return g
+
 def make_step(backend, mode, model):
     if backend == "llama":
         fn = step_llama_raw if mode == "raw" else step_llama_chat
@@ -167,9 +210,12 @@ def make_step(backend, mode, model):
     elif backend == "openai":
         if mode == "raw": raise SystemExit("raw mode needs the llama backend")
         fn = step_openai
+    elif backend == "cerebras":
+        if mode == "raw": raise SystemExit("raw mode needs the llama backend")
+        fn = step_cerebras
     else:
         raise SystemExit("unknown backend " + backend)
-    return lambda state, args: fn(state, args, model)
+    return paced(lambda state, args: fn(state, args, model), None)
 
 def embed(s):
     if not EMB_OK: return None
@@ -234,7 +280,7 @@ def run_trajectory(x0, args, tag, log, steps, share=None):
         rec = {"tag": tag, "t": t, "model": meta.get("model"), "sampling": meta.get("sampling"),
                "hash": he, "nhash": hn, "chars": len(out),
                "tok_out": meta["tok_out"], "tok_in": meta["tok_in"], "finish": meta["finish"],
-               "reasoning_chars": meta["reasoning_chars"],
+               "reasoning_chars": meta["reasoning_chars"], "tok_cached": meta.get("tok_cached"),
                "ncd_prev": round(ncd(state, out), 4), "ncd_x0": round(ncd(x0, out), 4),
                "surv_prev": survival(state, out), "surv_x0": survival(x0, out),
                "prefix_x0": common_prefix(x0, out), "line1_eq": (line1(out) == line1(x0) and bool(line1(x0))),
@@ -278,9 +324,9 @@ def main():
     try: sys.stdout.reconfigure(encoding="utf-8", errors="replace")
     except Exception: pass
     ap = argparse.ArgumentParser()
-    ap.add_argument("--backend", choices=["llama", "anthropic", "openai"], default="llama")
-    ap.add_argument("--model", default=None, help="llama: alias (default qwen3.8-27b); anthropic: e.g. claude-sonnet-4-6; openai: required")
-    ap.add_argument("--backend-b", choices=["llama", "anthropic", "openai"], default=None, help="second model for alternating hops")
+    ap.add_argument("--backend", choices=["llama", "anthropic", "openai", "cerebras"], default="llama")
+    ap.add_argument("--model", default=None, help="llama: alias (default qwen3.8-27b); anthropic: e.g. claude-sonnet-4-6; cerebras: default qwen-3.8-27b; openai: required")
+    ap.add_argument("--backend-b", choices=["llama", "anthropic", "openai", "cerebras"], default=None, help="second model for alternating hops")
     ap.add_argument("--model-b", default=None)
     ap.add_argument("--mode", choices=["chat", "raw"], default="chat")
     ap.add_argument("--init", default=None, help="key from built-in INITS")
@@ -293,7 +339,8 @@ def main():
     ap.add_argument("--no-sampling", action="store_true", help="omit temperature/seed entirely (provider default sampling)")
     ap.add_argument("--seed", type=int, default=42)
     ap.add_argument("--system", default=None)
-    ap.add_argument("--think", action="store_true", help="llama only: leave thinking on")
+    ap.add_argument("--think", action="store_true", help="llama/cerebras: leave thinking on")
+    ap.add_argument("--min-interval", type=float, default=0.0, help="seconds between requests (rate-limit pacing)")
     ap.add_argument("--perturb", action="store_true")
     ap.add_argument("--repeat", action="store_true")
     ap.add_argument("--parallel", action="store_true")
@@ -305,6 +352,7 @@ def main():
     if args.model is None:
         if args.backend == "llama": args.model = "qwen3.8-27b"
         elif args.backend == "anthropic": args.model = "claude-sonnet-4-6"
+        elif args.backend == "cerebras": args.model = "qwen-3.8-27b"
         else: sys.exit("--model required for openai")
     if args.backend == "llama" or args.backend_b == "llama":
         if not health(LLAMA): sys.exit("llama-server not up on %s" % LLAMA)

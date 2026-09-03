@@ -75,7 +75,7 @@
     $all(".lane", sec).forEach(function (lane, li) {
       renderLane(lane, t, still);
       var h = $('ol.hops > li.hop[data-t="' + t + '"]', lane);
-      if (h && state.prevT !== t) setTimeout(function () { tone(h); }, li * 120);
+      if (h && state.prevT !== t) setTimeout(function () { tone(h); }, Math.min(li, 6) * 120);
     });
     var st = $(".counter .status", sec); var words = [];
     var lanes = $all(".lane", sec);
@@ -83,7 +83,10 @@
       var h = $('ol.hops > li.hop[data-t="' + t + '"]', lane); if (!h) return;
       var co = h.getAttribute("data-copy-of");
       var lab = lanes.length > 1 && $(".lane-label", lane) ? $(".lane-label", lane).textContent + ": " : "";
-      if (co === null && h.getAttribute("data-same-text") === "1") words.push(lab + "same words as hop " + (t - 1));
+      if (co === null && h.getAttribute("data-same-text") === "1") {
+        var fd = h.getAttribute("data-fields-differ");
+        words.push(lab + (fd === "step" ? "same as hop " + (t - 1) + ", only the step counter moved" : fd ? "same verse as hop " + (t - 1) + ", " + fd.replace(",", " and ") + " differ" : "same words as hop " + (t - 1)));
+      }
       else if (co === null && h.getAttribute("data-text-copy-of") !== null) words.push(lab + "text same as hop " + h.getAttribute("data-text-copy-of"));
       if (co !== null) {
         var prev = $('ol.hops > li.hop[data-t="' + (t - 1) + '"]', lane);
@@ -92,6 +95,18 @@
         words.push(lab + (parseInt(co, 10) === t - 1 || (pco !== null && pco === co) ? "unchanged since hop " + since : "same as hop " + co));
       }
     });
+    if (lanes.length > 2) {
+      var holding = 0, ended = 0;
+      lanes.forEach(function (lane) {
+        var n = parseInt(lane.getAttribute("data-n"), 10);
+        if (t > n) { ended++; return; }
+        var h = $('ol.hops > li.hop[data-t="' + t + '"]', lane);
+        if (h && h.getAttribute("data-copy-of") !== null) holding++;
+      });
+      words = [];
+      if (t > 0 && holding) words.push(holding + " of " + lanes.length + " lanes are copies of an earlier hop");
+      if (ended) words.push(ended + " already stopped");
+    }
     st.textContent = words.length ? words.join(" / ") : "";
     state.prevT = t;
     setHash(sec.id, t);
@@ -112,6 +127,8 @@
     } else {
       ctx.hidden = true;
       if (ended) { ended.hidden = false; $(".ended-t", ended).textContent = t; }
+      $(".slot-label", cur).textContent = "it holds";
+      fillSlot(cur, hops[n], true); $(".hop", cur).classList.add("held");
     }
     var cursor = $(".track .cursor", lane);
     var here = $('.track .bar[data-t="' + Math.min(t, n) + '"]', lane);
@@ -262,6 +279,8 @@
     }
     var ctx = el.closest ? el.closest(".slot.context") : null;
     if (ctx && !el.closest("summary")) { ctx.classList.toggle("open"); }
+    var manyLane = el.closest(".room.many .lane");
+    if (manyLane && !el.closest("summary, a, button, .track")) { manyLane.classList.toggle("open"); }
   });
 
   document.addEventListener("keydown", function (e) {
