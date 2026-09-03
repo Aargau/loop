@@ -1,6 +1,6 @@
 # Findings, evening of 2026-09-02 (site build session)
 
-Thirteen runs made while the site (site/index.html) was built. Logs: site/runs_extra/<run>/steps.jsonl
+Eighteen runs made while the site (site/index.html) was built. Logs: site/runs_extra/<run>/steps.jsonl
 + summary.json, same harness (loop.py), same decoding as export.py. Not copied into runs/ or data/
 (the brief said not to touch them); merge as you like. Fact-checked against the logs by three QA
 passes (site/qa_report*.md). Room numbers refer to the site.
@@ -22,6 +22,11 @@ passes (site/qa_report*.md). Room numbers refer to the site.
     lyrics: next verse, as an AI would      Qwen                    exact   18     1    "we hold on, we hold on tight"; shadows/silence/whispers throughout (room 20)
     lyrics: next verse, human, no AI phrases Qwen                   none    40+    -    Americana basin: cold coffee x9, radio static, rearview, Mama; silence/shadow/dance still x14 (room 21)
     lyrics: next verse, human, 12-word blacklist Qwen               none    40+    -    zero banned words, zero hinges; hum/glow/flicker/quiet/peace instead (room 21)
+    verse: neutral, 2048 tokens             Qwen                    exact   2      1    identical to the 600-token run: "I was walking down the street alone." (room 20)
+    verse: change-four rule + hook          Qwen                    exact   8      1    8 consequence verses then a copy in defiance of the clause (room 22)
+    verse: hook only                        Qwen                    none    60+    -    no copy; driving/glass/blood basin; "Engine roared to life beneath me." x4 (room 22)
+    verse: ledger + unlike-every-entry      Qwen                    text   6/15/78 -   metastable copies (1, 3, 21 hops), each escaped; 58 settings; text grew 9..49 lines at 55..63 (room 23)
+    verse: ledger, no diversity clause      Qwen                    text   46      -    one copy episode (47..49), escaped; 97 distinct verses; cave basin, "stone" x16 (room 23)
 
 All at T=0 except Sonnet 5 (provider default sampling, --no-sampling). max_tokens 600 throughout except the 4096 rerun.
 
@@ -165,6 +170,46 @@ All at T=0 except Sonnet 5 (provider default sampling, --no-sampling). max_token
    stand, and the only real defect is bookkeeping (temp not recorded, model not recorded). The
    parallel-run divergence (room 6) and the serial-vs-slot difference (facts.md 3.3) are what
    they were called: greedy decoding under different batch compositions.
+
+13. Diversity rules and an externalized memory (rooms 22, 23; five arms proposed by a reader,
+   Qwen T=0, max_tokens 2048, seed "The tide came in an hour early.", metrics fixed in advance in
+   site/diversity_analysis.py: form, text-only recurrence, census keys, nearest-earlier NCD and
+   cosine, ledger integrity).
+   Neutral (control): fixed point at hop 2, byte-identical to the 600-token run.
+   Local rule (keep one causal link, change at least four of seven dimensions, no negation or
+   synonym tricks, four lines, end on an action with a consequence): eight verses of consequence
+   (dry dock flood, spark, fire, severed rope, hatch), then hop 9 = hop 8 exactly, stop at 12.
+   The anti-copy clause was in the window and the copy came anyway. Prediction (period-2
+   oscillator) wrong: it froze.
+   Hook only (same rule minus the change-four clause): 60 hops, no copy, form 60/60, 55 distinct
+   openings, nearest-earlier cosine by quarter 0.71 0.71 0.78 0.82 (a driving/glass/blood basin
+   with "Engine roared to life beneath me." opening 4 of 60). The unfinished action alone beat
+   the fixed point; the prohibition did not.
+   Ledger + "unlike every history signature" (state carries step and a growing list of four-word
+   signatures): 100 hops. Ledger integrity perfect at the record level: no history item ever
+   altered, step correct 100/100. Failure mode is not writing: 33 hops appended nothing, 25 of
+   them copies of the previous verse. Three copy episodes, all metastable: hop 7 (1 hop), hops
+   16..18 (3), hops 79..99 (21), each followed by a new verse (8, 19, 100). A second memory
+   effect at hops 55..63: the text field accumulated verses (9, 14, ... 49 lines), then reset to
+   4 at hop 64. Range: 67 distinct signatures, 58 distinct settings, walking shore > harbor > deep
+   > cave > forest > river > alley > street > kitchen > yard > meadow > burrow > snow > lake > grave
+   > map > road. Nearest-earlier cosine by quarter 0.69 0.68 0.78 0.95 (the last quarter is the
+   21 copies). 75 distinct texts.
+   Ledger without the clause: 100 hops, 97 distinct texts, 84 distinct signatures, one copy
+   episode (47..49) then escape at 50, 2 append errors total, form 91/100. But semantically a
+   cave from hop 25 on: "stone" is the setting of 16 signatures, with dark/void/pit/hole/wall;
+   cosine by quarter 0.71 0.78 0.77 0.80. Prediction (recurrence within 15) wrong.
+   Reading: the externalized record made every fixed point metastable in both ledger arms,
+   where the memoryless arms froze for good; the diversity clause bought semantic range (58 vs
+   50 settings, lower first-half similarity) and paid in stalls (25 copy hops vs 3) and one
+   runaway text. No memory-capacity transition within 100 hops at 2048 tokens (max tok_out
+   1027): the model copied a 99-item list verbatim every hop. The escape mechanism is not
+   identified; candidates are the growing gap between step and history length (the diverse
+   lane's freeze ended at 100 with step 99 vs 67 items) and ordinary greedy sensitivity.
+   Reader's hoped-for outcome (local oscillator, ledger explores until a capacity transition):
+   half. Ledger explores and keeps un-freezing; the local rule froze rather than oscillated; no
+   capacity transition yet. Next: run the diverse ledger to 300 hops, and the ledger with the
+   hook clause removed to see whether the ledger alone (no hook) still un-freezes.
 
 8. Instrument notes. (a) llama.cpp with 2 slots at 131k context fell to 0.8 tok/s when two
    clients ran at once and stayed there alone (20.4 GB per 3090, paging); -c 16384 -np 1 gave

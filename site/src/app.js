@@ -84,6 +84,7 @@
       var co = h.getAttribute("data-copy-of");
       var lab = lanes.length > 1 && $(".lane-label", lane) ? $(".lane-label", lane).textContent + ": " : "";
       if (co === null && h.getAttribute("data-same-text") === "1") words.push(lab + "same words as hop " + (t - 1));
+      else if (co === null && h.getAttribute("data-text-copy-of") !== null) words.push(lab + "text same as hop " + h.getAttribute("data-text-copy-of"));
       if (co !== null) {
         var prev = $('ol.hops > li.hop[data-t="' + (t - 1) + '"]', lane);
         var pco = prev ? prev.getAttribute("data-copy-of") : null;

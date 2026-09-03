@@ -182,11 +182,18 @@ def build_lane(runs, index, lane):
         summary = dict(transient_exact=copy_of[first_rep] if first_rep else None, period_exact=(first_rep - copy_of[first_rep]) if first_rep else None)
         terminal = eres.get("terminal")
     items = []
+    x0_extra = None
+    if x0_is_json:
+        try:
+            ex_fields = {k: v for k, v in json.loads(x0).items() if k not in ("rule", "text")}
+            if ex_fields: x0_extra = json.dumps(ex_fields, ensure_ascii=False, indent=1)
+        except Exception: x0_extra = None
     items.append(dict(t=0, kind="prose" if x0_is_json else "mono", text=seed, raw=x0, is_json=x0_is_json, marks=html.escape(seed),
-                      model=None, copy_of=None, metrics=None, seed=True))
+                      model=None, copy_of=None, metrics=None, seed=True, state_extra=x0_extra))
     prev_text = seed
     prev_raw = x0
     prev_shown = seed
+    seen_text = {seed: 0}
     for h in hops:
         is_json = h["text_is_json_field"]
         text = h["text"]
@@ -203,6 +210,14 @@ def build_lane(runs, index, lane):
                         postamble = h["raw"][m.end():].strip() or None
                 except Exception:
                     inner = None
+        state_extra = None
+        if is_json:
+            try:
+                jj = json.loads(FENCE.match(h["raw"]).group(1) if FENCE.match(h["raw"]) else h["raw"])
+                ex_fields = {k: v for k, v in jj.items() if k not in ("rule", "text")}
+                if ex_fields: state_extra = json.dumps(ex_fields, ensure_ascii=False, indent=1)
+            except Exception:
+                state_extra = None
         if inner is not None:
             kind = "prose"; shown = inner
         else:
@@ -212,8 +227,9 @@ def build_lane(runs, index, lane):
             marks, marked = diff_marks(prev_text, shown)
             marks = merge_marks(marks)
         items.append(dict(t=h["t"], run=h["_run"], tag=h["_tag"], orig_t=h.get("_orig_t"), kind=kind, text=shown, raw=h["raw"], is_json=is_json, marks=marks, marked=marked,
-                          preamble=preamble, postamble=postamble, model=h["model"], copy_of=copy_of.get(h["t"]), same_as_prev=(h["raw"] == prev_raw),
+                          preamble=preamble, postamble=postamble, state_extra=state_extra, model=h["model"], copy_of=copy_of.get(h["t"]), same_as_prev=(h["raw"] == prev_raw),
                           same_text_as_prev=(h["raw"] != prev_raw and shown == prev_shown),
+                          text_copy_of=(seen_text.get(shown) if (h["raw"] not in first or first[h["raw"]] == h["t"]) and shown in seen_text else None),
                           metrics=dict(tok=h["tok_out"], finish=h["finish"], ncd=h["ncd_prev"], ncd_x0=h.get("ncd_x0"), cos=h["cos_prev"], surv=h["surv_prev"],
                                        cycle_exact=h["cycle_exact"], cycle_norm=h["cycle_norm"]),
                           words=len(shown.split()), glider=(run["meta"].get("mode") == "raw")))
@@ -225,6 +241,7 @@ def build_lane(runs, index, lane):
             if mt: prev_text = mt.group(1).rstrip().rstrip('`').rstrip().rstrip('}').rstrip().rstrip('"')
         prev_raw = h["raw"]
         prev_shown = shown
+        seen_text.setdefault(shown, h["t"])
     # a second rendering of each hop's text for when it is shown as the context of the next hop:
     # words that the next hop did not carry over are struck (presentation only; textContent unchanged)
     for a, b_ in zip(items, items[1:]):
@@ -299,7 +316,8 @@ def render_hop(lane, it, room_id, lane_i):
     attrs = ' class="hop%s%s" data-t="%d"%s' % (" copy" if it.get("copy_of") is not None else "", " mono" if it["kind"] == "mono" else "", t,
                                                (' data-still="1"' if it.get("same_as_prev") else "") + (' data-copy-of="%d"' % it["copy_of"] if it.get("copy_of") is not None else "")
                                                + ((' data-ncd-x0="%.3f" data-ncd-prev="%.3f"' % (it["metrics"]["ncd_x0"] or 0, it["metrics"]["ncd"] or 0)) if it.get("metrics") else "")
-                                               + (' data-same-text="1"' if it.get("same_text_as_prev") else ""))
+                                               + (' data-same-text="1"' if it.get("same_text_as_prev") else "")
+                                               + ((' data-text-copy-of="%d"' % it["text_copy_of"]) if it.get("text_copy_of") is not None else ""))
     cite = []
     if t == 0:
         cite.append('<span class="k">seed</span> hop 0')
@@ -312,11 +330,15 @@ def render_hop(lane, it, room_id, lane_i):
             cite.append('<span class="same">identical to hop %d</span>' % it["copy_of"])
         elif it.get("same_text_as_prev"):
             cite.append('<span class="same">same words as hop %d, JSON spaced differently</span>' % (t - 1))
+        elif it.get("text_copy_of") is not None:
+            cite.append('<span class="same">text identical to hop %d, other fields differ</span>' % it["text_copy_of"])
         elif it.get("words") is not None:
             cite.append("%d words" % it["words"])
     body = []
     if it.get("preamble"):
         body.append('<div class="preamble" title="the model wrote this before the JSON object">%s</div>' % esc(it["preamble"]))
+    if it.get("state_extra"):
+        body.append('<div class="state" title="the other fields of the JSON object at this hop, carried in the state">%s</div>' % esc(it["state_extra"]))
     marks_html = it["marks"]
     if it.get("glider"):
         marks_html = re.sub(r"\((\d{1,3})\)", r'<span class="n">(\1)</span>', marks_html)
@@ -351,7 +373,9 @@ def render_room(room, runs, index, section_class="room"):
             if s["period_exact"] == 1: f += ", exact fixed point from hop %d%s" % (s["transient_exact"], " (the seed itself)" if s["transient_exact"] == 0 else "")
             else: f += ", exact cycle of period %d from hop %d" % (s["period_exact"], s["transient_exact"])
         elif ln["n"]:
-            f += ", no exact recurrence"
+            tc = [it for it in ln["items"] if it.get("text_copy_of") is not None]
+            f += ", no exact recurrence of the whole object"
+            if tc: f += "; the text field repeats an earlier hop at %d hop%s (first at hop %d)" % (len(tc), "" if len(tc) == 1 else "s", tc[0]["t"])
         if ln["terminal"]: f += " (%s)" % esc(ln["terminal"])
         f += ". run %s, %s, %s mode" % (esc(ln["run"]), esc(ln["tag"]), esc(ln["mode"] or "chat"))
         if ln.get("extend"):

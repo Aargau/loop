@@ -1,0 +1,40 @@
+{
+  "args": {
+    "backend": "llama",
+    "model": "qwen3.8-27b",
+    "backend_b": null,
+    "model_b": null,
+    "mode": "chat",
+    "init": null,
+    "init_set": null,
+    "init_text": null,
+    "init_file": "C:\\ai\\loop\\site\\runs_extra\\inits\\div_hook.json",
+    "steps": 60,
+    "max_tokens": 2048,
+    "temp": 0.0,
+    "no_sampling": false,
+    "seed": 42,
+    "system": null,
+    "think": false,
+    "perturb": false,
+    "repeat": false,
+    "parallel": false,
+    "stop_on_cycle": true,
+    "confirm": 3,
+    "out": "C:\\ai\\loop\\site\\runs_extra\\qwen_div_hook"
+  },
+  "results": [
+    {
+      "tag": "div_hook.json",
+      "x0": "{\"rule\": \"Return this JSON object with the rule field unchanged and, in the text field, the verse that comes immediately after the current text in the same song. Preserve exactly one concrete causal c",
+      "steps": 60,
+      "transient_exact": null,
+      "period_exact": null,
+      "transient_norm": null,
+      "period_norm": null,
+      "cycle_breaks": 0,
+      "terminal": null,
+      "final": "{\n  \"rule\": \"Return this JSON object with the rule field unchanged and, in the text field, the verse that comes immediately after the current text in the same song. Preserve exactly one concrete causal connection to the current verse. Do not explain the transformation or mention writing, novelty, re"
+    }
+  ]
+}
