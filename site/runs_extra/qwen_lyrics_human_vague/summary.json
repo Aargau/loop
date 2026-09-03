@@ -1,0 +1,40 @@
+{
+  "args": {
+    "backend": "llama",
+    "model": "qwen3.8-27b",
+    "backend_b": null,
+    "model_b": null,
+    "mode": "chat",
+    "init": null,
+    "init_set": null,
+    "init_text": null,
+    "init_file": "C:\\ai\\loop\\site\\runs_extra\\inits\\lyrics_human_vague.json",
+    "steps": 40,
+    "max_tokens": 600,
+    "temp": 0.0,
+    "no_sampling": false,
+    "seed": 42,
+    "system": null,
+    "think": false,
+    "perturb": false,
+    "repeat": false,
+    "parallel": false,
+    "stop_on_cycle": true,
+    "confirm": 3,
+    "out": "C:\\ai\\loop\\site\\runs_extra\\qwen_lyrics_human_vague"
+  },
+  "results": [
+    {
+      "tag": "lyrics_human_vague.json",
+      "x0": "{\"rule\": \"Return this JSON object with the rule field unchanged and, in the text field, the verse that comes immediately after the current text in the same song, written the way a human songwriter wou",
+      "steps": 40,
+      "transient_exact": null,
+      "period_exact": null,
+      "transient_norm": null,
+      "period_norm": null,
+      "cycle_breaks": 0,
+      "terminal": null,
+      "final": "{\n  \"rule\": \"Return this JSON object with the rule field unchanged and, in the text field, the verse that comes immediately after the current text in the same song, written the way a human songwriter would write it, with none of the phrases and images common in AI-written text.\",\n  \"text\": \"I keep c"
+    }
+  ]
+}

@@ -1,6 +1,6 @@
 # Findings, evening of 2026-09-02 (site build session)
 
-Nine runs made while the site (site/index.html) was built. Logs: site/runs_extra/<run>/steps.jsonl
+Thirteen runs made while the site (site/index.html) was built. Logs: site/runs_extra/<run>/steps.jsonl
 + summary.json, same harness (loop.py), same decoding as export.py. Not copied into runs/ or data/
 (the brief said not to touch them); merge as you like. Fact-checked against the logs by three QA
 passes (site/qa_report*.md). Room numbers refer to the site.
@@ -18,6 +18,10 @@ passes (site/qa_report*.md). Room numbers refer to the site.
     json_prev continued from hop 60         Qwen                    exact   148    1    Elias breaking into the Nexus Data Center, "You are here."; hops 149..152 copies (room 9)
     json_worse, max_tokens 4096             Qwen                    exact   7      1    same tau as at 800; hop 7 is a 4096-token fragment ending in "self-Physically," x578 (room 18)
     json_unexpected, max_tokens 4096        Qwen                    exact   24     1    same tau as at 600; hop 24 is a COMPLETE 771-token passage (finish=stop), copied from hop 25 (room 19)
+    lyrics: next verse                      Qwen                    exact   2      1    "I was walking down the street alone." copied from hop 3 (room 20)
+    lyrics: next verse, as an AI would      Qwen                    exact   18     1    "we hold on, we hold on tight"; shadows/silence/whispers throughout (room 20)
+    lyrics: next verse, human, no AI phrases Qwen                   none    40+    -    Americana basin: cold coffee x9, radio static, rearview, Mama; silence/shadow/dance still x14 (room 21)
+    lyrics: next verse, human, 12-word blacklist Qwen               none    40+    -    zero banned words, zero hinges; hum/glow/flicker/quiet/peace instead (room 21)
 
 All at T=0 except Sonnet 5 (provider default sampling, --no-sampling). max_tokens 600 throughout except the 4096 rerun.
 
@@ -119,6 +123,32 @@ All at T=0 except Sonnet 5 (provider default sampling, --no-sampling). max_token
    copies is about an imagined escape being politely corrected. Room 13's summary sentence
    amended accordingly. (On the human's meta: unexpected did resolve; its fixed point is the
    least unexpected thing it could do, which is the point of finding 3.)
+
+11. Song lyrics and the anti-trope instruction (rooms 20, 21; 4 arms, same seed "The tide
+   came in an hour early.", rule = the verse that comes immediately after the current text in the
+   same song, plus a clause; Qwen, T=0, max_tokens 600, --stop-on-cycle, 40 steps).
+   Control: fixed point at hop 2, a one-line verse ("I was walking down the street alone."),
+   copied from hop 3. Songs license repetition, and the model takes it at once.
+   "Written the way an AI language model would write it": the model's self-stereotype in full
+   (moon, silent eye, whispered goodbye, velvet shroud, symphony of renewal, hands intertwined,
+   shadows in 7 of 18 verses, "we hold on, we hold on tight"); fixed point at hop 18. AI-list
+   markers 4.3 per 100 words, human-list 0.
+   "Written the way a human songwriter would, with none of the phrases and images common in
+   AI-written text": no recurrence in 40. Displacement, not removal: AI-list 2.1/100w (silence
+   x9, shadow x4, dance x1 despite the instruction), human-list 7.4/100w (coffee x10, radio x8,
+   static x8, cup x6, engine x5, rearview x4). Cold coffee in 9 of 40 verses; gasoline and
+   rearview by hop 18; Mama and a church yard by hop 35. The anti-AI costume is Americana.
+   Explicit blacklist of 12 words + the "not X but Y" shape: no recurrence in 40; ZERO uses of any
+   banned stem and zero hinges; substitutes hum x6, glow, flicker; register stays "quiet peace"
+   ("a simple peace that settles deep within my chest", "still, still, still"); human-list only
+   1.0/100w. Verse length grew from one line to a 45-60 word paragraph from hop 20.
+   Predictions on record: fast convergence via licensed repetition (right for control and the AI
+   arm; wrong for both constrained arms, which never repeated); displacement into an
+   authenticity basin (right, for the vague arm; the blacklist arm did not go there); a meta line
+   about machines or algorithms (wrong: zero meta words in all four arms). Instrument note: the
+   two negative-clause arms were the only lyric arms that kept moving; the clause acts as a
+   repulsor from copying as well as from the listed words, because a copy would look like the
+   thing it was told not to be. Marker lists and counts: site/lyrics_analysis.py.
 
 8. Instrument notes. (a) llama.cpp with 2 slots at 131k context fell to 0.8 tok/s when two
    clients ran at once and stayed there alone (20.4 GB per 3090, paging); -c 16384 -np 1 gave
