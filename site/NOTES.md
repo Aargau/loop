@@ -112,7 +112,9 @@ Chrome (--headless=new --screenshot) opens file:// fine and was used for the lat
 - Room 18, json_worse at max_tokens 4096 (objection from the Lidar Fable: the wall is part of
   f). Same tau=7, p=1; hop 6 fills 4096 with a period-2 sentence x71, hop 7 with
   "self-Physically," x578, hop 8 copies. The fragment is the wall's, the non-termination is the
-  model's. FINDINGS item 9. json_unexpected at 4096 queued after it.
+  model's. FINDINGS item 9.
+- Room 19, json_unexpected at 4096: same tau=24, but hop 24 completes (771 tokens, finish=stop)
+  and hop 25 copies it whole. The wall only decided fragment vs whole passage. FINDINGS item 10.
 - Git: C:\ai\loop is a repo, pushed to https://github.com/Aargau/loop (private). Site deployed
   to Cloudflare Pages: https://endlessly-ending-stories.pages.dev (manual deploy from site/dist,
   see the message log; project endlessly-ending-stories).

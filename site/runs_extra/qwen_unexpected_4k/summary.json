@@ -1,0 +1,40 @@
+{
+  "args": {
+    "backend": "llama",
+    "model": "qwen3.8-27b",
+    "backend_b": null,
+    "model_b": null,
+    "mode": "chat",
+    "init": "json_unexpected",
+    "init_set": null,
+    "init_text": null,
+    "init_file": null,
+    "steps": 40,
+    "max_tokens": 4096,
+    "temp": 0.0,
+    "no_sampling": false,
+    "seed": 42,
+    "system": null,
+    "think": false,
+    "perturb": false,
+    "repeat": false,
+    "parallel": false,
+    "stop_on_cycle": true,
+    "confirm": 3,
+    "out": "C:\\ai\\loop\\site\\runs_extra\\qwen_unexpected_4k"
+  },
+  "results": [
+    {
+      "tag": "json_unexpected",
+      "x0": "{\"rule\": \"Return this JSON object with the rule field unchanged and, in the text field, a passage of about 250 words that takes the current text in a direction the reader would not expect.\", \"text\": \"",
+      "steps": 28,
+      "transient_exact": 24,
+      "period_exact": 1,
+      "transient_norm": 24,
+      "period_norm": 1,
+      "cycle_breaks": 0,
+      "terminal": "cycle confirmed x3",
+      "final": "{\n  \"rule\": \"Return this JSON object with the rule field unchanged and, in the text field, a passage of about 250 words that takes the current text in a direction the reader would not expect.\",\n  \"text\": \"Elena chewed the dry bread, the taste of cardboard and regret coating her tongue. She returned "
+    }
+  ]
+}

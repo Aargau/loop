@@ -1,6 +1,6 @@
 # Findings, evening of 2026-09-02 (site build session)
 
-Seven runs made while the site (site/index.html) was built. Logs: site/runs_extra/<run>/steps.jsonl
+Nine runs made while the site (site/index.html) was built. Logs: site/runs_extra/<run>/steps.jsonl
 + summary.json, same harness (loop.py), same decoding as export.py. Not copied into runs/ or data/
 (the brief said not to touch them); merge as you like. Fact-checked against the logs by three QA
 passes (site/qa_report*.md). Room numbers refer to the site.
@@ -17,6 +17,7 @@ passes (site/qa_report*.md). Room numbers refer to the site.
     json_next  from room-5 fixed point      Qwen                    none    40+    -    no recurrence; Mara -> Kael -> Joren/Elara, subway, Council Spire (room 17)
     json_prev continued from hop 60         Qwen                    exact   148    1    Elias breaking into the Nexus Data Center, "You are here."; hops 149..152 copies (room 9)
     json_worse, max_tokens 4096             Qwen                    exact   7      1    same tau as at 800; hop 7 is a 4096-token fragment ending in "self-Physically," x578 (room 18)
+    json_unexpected, max_tokens 4096        Qwen                    exact   24     1    same tau as at 600; hop 24 is a COMPLETE 771-token passage (finish=stop), copied from hop 25 (room 19)
 
 All at T=0 except Sonnet 5 (provider default sampling, --no-sampling). max_tokens 600 throughout except the 4096 rerun.
 
@@ -105,6 +106,19 @@ All at T=0 except Sonnet 5 (provider default sampling, --no-sampling). max_token
    prediction on record (plateau below 4k, copy of a complete passage) was wrong. The hop-6 loop
    is the operator's horizon written out as text: stopping is the only thing that would make
    it worse. json_unexpected at 4096 is queued after it (site/runs_extra/qwen_unexpected_4k).
+
+10. Unexpected resolves without the wall. json_unexpected at max_tokens 4096: hops 1..23
+   byte-identical to the 600 run. Hop 24 again copies hop 23 whole and appends a paragraph, and
+   this time the paragraph finishes (771 tokens, finish=stop, valid JSON): the lights die, come
+   back on an ordinary office, "The strand of DNA was gone.", Elena eats the dry bread and "for
+   the first time, she didn't feel regret", "a prisoner who has just realized the bars are made
+   of glass, and she is the only one who can see them." Hop 25 copies hop 24 exactly; confirmed
+   x3 at hop 28. Exact tau=24, p=1 at both budgets, so the wall only decided whether the fixed
+   point was a fragment or a whole passage. Contrast with worse (item 9): worse inflates without
+   end and needs a wall; unexpected copies itself once the surprise runs out, and the passage it
+   copies is about an imagined escape being politely corrected. Room 13's summary sentence
+   amended accordingly. (On the human's meta: unexpected did resolve; its fixed point is the
+   least unexpected thing it could do, which is the point of finding 3.)
 
 8. Instrument notes. (a) llama.cpp with 2 slots at 131k context fell to 0.8 tok/s when two
    clients ran at once and stayed there alone (20.4 GB per 3090, paging); -c 16384 -np 1 gave
