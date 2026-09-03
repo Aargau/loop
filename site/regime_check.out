@@ -1,0 +1,22 @@
+== json_page (max_tokens 600)
+   A: T=0 top_k=1 seed 42       vs 20260902T155557_chat/json_page       identical=True common prefix=1796/1796
+   A: T=0 top_k=1 seed 42       vs 20260902T160344_chat/json_page       identical=False common prefix=372/1746
+   A: T=0 top_k=1 seed 42       vs 20260902T160344_chat/json_page~r     identical=False common prefix=583/1710
+   B: no temp key, seed 42      vs 20260902T155557_chat/json_page       identical=False common prefix=177/1796
+   B: no temp key, seed 42      vs 20260902T160344_chat/json_page       identical=False common prefix=177/1746
+   B: no temp key, seed 42      vs 20260902T160344_chat/json_page~r     identical=False common prefix=177/1710
+   C: no temp key, seed 7       vs 20260902T155557_chat/json_page       identical=False common prefix=2/1796
+   C: no temp key, seed 7       vs 20260902T160344_chat/json_page       identical=False common prefix=2/1746
+   C: no temp key, seed 7       vs 20260902T160344_chat/json_page~r     identical=False common prefix=2/1710
+   D: T=1.0 top_k=20 seed 42    vs 20260902T155557_chat/json_page       identical=False common prefix=177/1796
+   D: T=1.0 top_k=20 seed 42    vs 20260902T160344_chat/json_page       identical=False common prefix=177/1746
+   D: T=1.0 top_k=20 seed 42    vs 20260902T160344_chat/json_page~r     identical=False common prefix=177/1710
+   B == C (does seed matter without temp key): False
+   A == B: False   A == D: False
+== json_worse (max_tokens 800)
+   A: T=0 top_k=1 seed 42       vs 20260902T174258_chat/json_worse      identical=True common prefix=195/195
+   B: no temp key, seed 42      vs 20260902T174258_chat/json_worse      identical=False common prefix=0/195
+   C: no temp key, seed 7       vs 20260902T174258_chat/json_worse      identical=False common prefix=2/195
+   D: T=1.0 top_k=20 seed 42    vs 20260902T174258_chat/json_worse      identical=False common prefix=0/195
+   B == C (does seed matter without temp key): False
+   A == B: False   A == D: False

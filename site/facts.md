@@ -1,5 +1,19 @@
 # facts.md: verified audit of `data/` for the loop site
 
+> Correction (2026-09-03). The harness-args lines below say "temp=0.0 (llama default)" for every
+> run in runs/. That wording is wrong: summary.json records `"temp": null` for all thirteen Qwen
+> runs (the harness's --temp default was None at the time), and the old hop records carry no
+> `sampling` or `model` field (data/*.json shows "T=0" only because export.py fills that in as a
+> default). The effective regime, however, was greedy: site/regime_check.py re-sends the json_page
+> and json_worse X_0 to the same server and reproduces hop 1 of 20260902T155557_chat (1796/1796
+> bytes) and of 20260902T174258_chat (195/195) byte for byte under temperature 0 / top_k 1, while
+> the server-default regime (temperature omitted, which this llama-server build treats as
+> --temp 1.0 --top-k 20) diverges after the copied seed sentence. Sending `"temperature": null`
+> is rejected by this build with HTTP 400. Later byte-identical reproductions of hops 1..5 of
+> json_worse and 1..23 of json_unexpected under explicit T=0 (site/runs_extra/qwen_worse_4k,
+> qwen_unexpected_4k) confirm it. Read "temp=0.0 (llama default)" as "temp not recorded; greedy
+> by reproduction".
+
 Generated 2026-09-02 by an audit script (`site/facts_gen.py`, runnable with plain Python 3, no dependencies) that reads only `data/index.json` and `data/<run>.json`, plus `runs/<run>/summary.json` for the harness args, `loop.py` for the built-in X_0 texts and the `norm()` function, and `census.py` to reproduce its keys. Nothing under `data/` or `runs/` was modified.
 
 Every number and every quotation in this file was produced by Python from the JSON, never retyped. Quotations are shown inside `~~~` fences (or backtick spans) and are byte-exact: curly quotes, apostrophes, spaces and punctuation are as the model emitted them. Where a quotation is a fragment of a longer sentence this is said explicitly.

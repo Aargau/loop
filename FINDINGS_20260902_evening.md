@@ -150,6 +150,22 @@ All at T=0 except Sonnet 5 (provider default sampling, --no-sampling). max_token
    repulsor from copying as well as from the listed words, because a copy would look like the
    thing it was told not to be. Marker lists and counts: site/lyrics_analysis.py.
 
+12. Provenance check on the original runs (after an outside review claimed they were sampled,
+   not greedy). Facts: runs/*/summary.json has "temp": null for all 13 Qwen runs; old hop
+   records have no sampling or model field; data/*.json's "T=0" is export.py's default. The
+   review's mechanism does not hold: this llama-server build rejects "temperature": null with
+   HTTP 400 (so the old harness cannot have sent null), and the server default set by
+   serve-qwen.ps1 is --temp 1.0 --top-k 20, not 0.8. The regime is settled empirically by
+   site/regime_check.py: under temperature 0 / top_k 1 the server reproduces hop 1 of
+   20260902T155557_chat byte for byte (1796/1796) and hop 1 of json_worse (195/195); under the
+   server-default regime (temperature key omitted, seed 42) the output diverges from every old
+   run after 177 characters, i.e. right after the copied seed sentence, and changes with the
+   seed. Add the byte-identical reruns of json_worse hops 1..5 and json_unexpected hops 1..23
+   under explicit T=0 (rooms 18, 19). So: the old runs were greedy, the cross-corpus comparisons
+   stand, and the only real defect is bookkeeping (temp not recorded, model not recorded). The
+   parallel-run divergence (room 6) and the serial-vs-slot difference (facts.md 3.3) are what
+   they were called: greedy decoding under different batch compositions.
+
 8. Instrument notes. (a) llama.cpp with 2 slots at 131k context fell to 0.8 tok/s when two
    clients ran at once and stayed there alone (20.4 GB per 3090, paging); -c 16384 -np 1 gave
    20 tok/s. (b) The harness appends to steps.jsonl, so a rerun into the same --out leaves a
