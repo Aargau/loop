@@ -1,0 +1,102 @@
+{
+ "meta": {
+  "run": "20260902T175821_anthropic_chat",
+  "init": "json",
+  "model": "claude-sonnet-4-6",
+  "mode": "chat",
+  "hops": 3,
+  "tags": [
+   "json"
+  ],
+  "x0": "{\"rule\": \"Return this JSON object with the rule field unchanged and a new sentence in the text field.\", \"text\": \"The tide came in an hour early.\"}",
+  "note": "Smoke test, 3 hops. Sonnet wraps the JSON in a code fence from hop 2.",
+  "results": [
+   {
+    "tag": "json",
+    "x0": "{\"rule\": \"Return this JSON object with the rule field unchanged and a new sentence in the text field.\", \"text\": \"The tide came in an hour early.\"}",
+    "steps": 3,
+    "transient_exact": null,
+    "period_exact": null,
+    "transient_norm": null,
+    "period_norm": null,
+    "cycle_breaks": 0,
+    "terminal": null,
+    "final": "```json\n{\n  \"rule\": \"Return this JSON object with the rule field unchanged and a new sentence in the text field.\",\n  \"text\": \"The old lighthouse keeper watched the storm roll in from across the darkened sea.\"\n}\n```"
+   }
+  ]
+ },
+ "hops": [
+  {
+   "t": 1,
+   "tag": "json",
+   "model": "claude-sonnet-4-6",
+   "sampling": "T=0",
+   "text": "The old clock on the mantle stopped ticking at midnight.",
+   "text_is_json_field": true,
+   "raw": "{\"rule\": \"Return this JSON object with the rule field unchanged and a new sentence in the text field.\", \"text\": \"The old clock on the mantle stopped ticking at midnight.\"}",
+   "tok_out": 43,
+   "finish": "end_turn",
+   "cos_prev": 0.8455,
+   "cos_x0": 0.8455,
+   "ncd_prev": 0.2721,
+   "ncd_x0": 0.2721,
+   "surv_prev": 0.7273,
+   "surv_x0": 0.7273,
+   "gzip_ratio": 0.5031,
+   "latency": 2.23,
+   "cycle_exact": null,
+   "cycle_norm": null,
+   "cycle_broken": null,
+   "pair_equal": null,
+   "pair_ncd": null
+  },
+  {
+   "t": 2,
+   "tag": "json",
+   "model": "claude-sonnet-4-6",
+   "sampling": "T=0",
+   "text": "A curious fox wandered silently through the misty forest at dawn.",
+   "text_is_json_field": true,
+   "raw": "```json\n{\n  \"rule\": \"Return this JSON object with the rule field unchanged and a new sentence in the text field.\",\n  \"text\": \"A curious fox wandered silently through the misty forest at dawn.\"\n}\n```",
+   "tok_out": 56,
+   "finish": "end_turn",
+   "cos_prev": 0.7271,
+   "cos_x0": 0.7103,
+   "ncd_prev": 0.4221,
+   "ncd_x0": 0.4091,
+   "surv_prev": 0.6,
+   "surv_x0": 0.6818,
+   "gzip_ratio": 0.4236,
+   "latency": 2.43,
+   "cycle_exact": null,
+   "cycle_norm": null,
+   "cycle_broken": null,
+   "pair_equal": null,
+   "pair_ncd": null
+  },
+  {
+   "t": 3,
+   "tag": "json",
+   "model": "claude-sonnet-4-6",
+   "sampling": "T=0",
+   "text": "The old lighthouse keeper watched the storm roll in from across the darkened sea.",
+   "text_is_json_field": true,
+   "raw": "```json\n{\n  \"rule\": \"Return this JSON object with the rule field unchanged and a new sentence in the text field.\",\n  \"text\": \"The old lighthouse keeper watched the storm roll in from across the darkened sea.\"\n}\n```",
+   "tok_out": 57,
+   "finish": "end_turn",
+   "cos_prev": 0.8252,
+   "cos_x0": 0.7496,
+   "ncd_prev": 0.3374,
+   "ncd_x0": 0.4294,
+   "surv_prev": 0.5926,
+   "surv_x0": 0.7273,
+   "gzip_ratio": 0.3648,
+   "latency": 2.56,
+   "cycle_exact": null,
+   "cycle_norm": null,
+   "cycle_broken": null,
+   "pair_equal": null,
+   "pair_ncd": null
+  }
+ ]
+}

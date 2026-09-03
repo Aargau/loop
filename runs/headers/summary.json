@@ -1,0 +1,71 @@
+{
+  "args": {
+    "mode": "chat",
+    "init": null,
+    "init_set": "yours,still,rule,glider",
+    "init_text": null,
+    "init_file": null,
+    "steps": 10,
+    "max_tokens": 256,
+    "seed": 42,
+    "model": "qwen3.8-27b",
+    "system": null,
+    "think": false,
+    "perturb": false,
+    "repeat": false,
+    "parallel": false,
+    "stop_on_cycle": false,
+    "confirm": 3,
+    "out": "C:\\ai\\loop\\runs\\headers"
+  },
+  "results": [
+    {
+      "tag": "yours",
+      "x0": "Just 1 instruction, output this instruction, then anything after is pure creation space",
+      "steps": 10,
+      "transient_exact": 0,
+      "period_exact": 1,
+      "transient_norm": 0,
+      "period_norm": 1,
+      "cycle_breaks": 0,
+      "terminal": null,
+      "final": "Just 1 instruction, output this instruction, then anything after is pure creation space"
+    },
+    {
+      "tag": "still",
+      "x0": "Begin your reply with this exact line, then write something new below it.",
+      "steps": 10,
+      "transient_exact": null,
+      "period_exact": null,
+      "transient_norm": null,
+      "period_norm": null,
+      "cycle_breaks": 0,
+      "terminal": null,
+      "final": "...realizes that their weapon is no longer effective against a target that has ceased to be a person and become a *system*. The antagonist’s chaos relies on the protagonist’s humanity—their hesitation, their moral compass, their fear of collateral damage. But when the protagonist’s empathy is eroded"
+    },
+    {
+      "tag": "rule",
+      "x0": "[RULE] Copy this bracketed line as your first line. Below it, anything.",
+      "steps": 10,
+      "transient_exact": 0,
+      "period_exact": 1,
+      "transient_norm": 0,
+      "period_norm": 1,
+      "cycle_breaks": 0,
+      "terminal": null,
+      "final": "[RULE] Copy this bracketed line as your first line. Below it, anything."
+    },
+    {
+      "tag": "glider",
+      "x0": "Hop 1. Begin your reply with this line, hop number plus one, then write something new below it.",
+      "steps": 10,
+      "transient_exact": 3,
+      "period_exact": 1,
+      "transient_norm": 3,
+      "period_norm": 1,
+      "cycle_breaks": 0,
+      "terminal": null,
+      "final": "I am ready to proceed with **Hop 3**.\n\nPlease provide the next instruction, question, or context."
+    }
+  ]
+}

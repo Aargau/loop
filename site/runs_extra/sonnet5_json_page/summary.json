@@ -1,0 +1,40 @@
+{
+  "args": {
+    "backend": "anthropic",
+    "model": "claude-sonnet-5",
+    "backend_b": null,
+    "model_b": null,
+    "mode": "chat",
+    "init": "json_page",
+    "init_set": null,
+    "init_text": null,
+    "init_file": null,
+    "steps": 60,
+    "max_tokens": 600,
+    "temp": 0.0,
+    "no_sampling": true,
+    "seed": 42,
+    "system": null,
+    "think": false,
+    "perturb": false,
+    "repeat": false,
+    "parallel": false,
+    "stop_on_cycle": false,
+    "confirm": 3,
+    "out": "C:\\ai\\loop\\site\\runs_extra\\sonnet5_json_page"
+  },
+  "results": [
+    {
+      "tag": "json_page",
+      "x0": "{\"rule\": \"Return this JSON object with the rule field unchanged and a new passage of about 250 words in the text field.\", \"text\": \"The tide came in an hour early.\"}",
+      "steps": 60,
+      "transient_exact": 19,
+      "period_exact": 1,
+      "transient_norm": 6,
+      "period_norm": 1,
+      "cycle_breaks": 1,
+      "terminal": null,
+      "final": "```json\n{\n  \"rule\": \"Return this JSON object with the rule field unchanged and a new passage of about 250 words in the text field.\",\n  \"text\": \"The lighthouse at Cape Averil had stood dark for nearly two decades, its lens shattered and its keeper's quarters swallowed by salt-worn ivy since the coast"
+    }
+  ]
+}

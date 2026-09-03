@@ -1,0 +1,106 @@
+<!doctype html>
+<!--
+  If you are reading this file as text rather than viewing it in a browser:
+  every <section class="room"> is one run. Inside it, <ol class="hops"> holds every hop in order,
+  one <li class="hop" data-t="N"> per hop, each with its citation (hop, model, run id, tag), the
+  model's text exactly as returned (the JSON text field, or the raw output in monospace when the
+  output did not parse), the harness metrics, and the raw output in a <details>. Hop 0 is the seed.
+  <mark> wraps words not carried over from the previous hop; it adds nothing to the text.
+  Everything in class "note", "authored", "content-note", the titles and the colophon is authored
+  by the site's builder; everything in class "text", "preamble", "rule", "seed" and <pre> is data.
+  The poem is in <section id="poem">, the colophon in <section id="colophon">.
+-->
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>{{TITLE}}</title>
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' fill='%2317181b'/%3E%3Crect x='4' y='8' width='3' height='18' fill='%23e4e0d6'/%3E%3Crect x='9' y='12' width='3' height='14' fill='%23e4e0d6'/%3E%3Crect x='14' y='6' width='3' height='20' fill='%23e4e0d6'/%3E%3Crect x='19' y='24' width='3' height='2' fill='%239fb8c9'/%3E%3Crect x='24' y='24' width='3' height='2' fill='%239fb8c9'/%3E%3C/svg%3E">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="{{SUB}}">
+<style>
+{{CSS}}
+</style>
+</head>
+<body class="front-view">
+
+<nav class="topbar" aria-label="site">
+  <a class="home" href="#">{{TITLE}}</a>
+  <span class="where"></span>
+  <button class="theme-toggle" type="button" title="light / dark">theme</button>
+  <span class="roomnav"><a class="prev-room" href="#">&larr;</a> <a class="next-room" href="#">&rarr;</a></span>
+</nav>
+
+<header class="front" id="front">
+  <button class="theme-toggle" type="button" title="light / dark">theme</button>
+  <h1>{{TITLE}}</h1>
+  <p class="sub authored">{{SUB}}</p>
+  <div class="intro">
+{{INTRO}}
+  </div>
+  <p class="seed"><span class="k">hop 0</span> {{SEED}}</p>
+  <div class="intro">
+{{INTRO_AFTER}}
+  </div>
+  <p><a class="enter" href="#better">Enter room 1 &rarr;</a></p>
+  <nav class="toc" aria-label="rooms">
+    <ol class="rooms-list">
+{{TOC}}
+    </ol>
+    <p class="toc-extra"><a href="#map">The map</a> &nbsp; <a href="#poem">The poem</a> &nbsp; <a href="#colophon">Colophon</a> &nbsp; <a href="#annex">Annex</a></p>
+  </nav>
+</header>
+
+<main>
+{{ROOMS}}
+
+<section class="page" id="map">
+  <header class="room-head">
+    <h2>The map</h2>
+    <p class="note">{{MAP_NOTE}}</p>
+    <p class="facts">{{MAP_FACTS}}</p>
+  </header>
+  <div class="map-wrap">
+{{MAP}}
+  </div>
+</section>
+
+<section class="page" id="poem">
+  <header class="room-head">
+    <h2>The poem</h2>
+    <p class="note">{{POEM_HEAD}}</p>
+  </header>
+  <article class="poem">
+    <h3>{{POEM_TITLE}}</h3>
+{{POEM}}
+    <p class="sign">{{POEM_SIGN}}</p>
+  </article>
+</section>
+
+<section class="page" id="colophon">
+  <header class="room-head">
+    <h2>Colophon</h2>
+  </header>
+  <article class="colophon">
+{{COLOPHON}}
+    <p class="built">Built {{BUILT}} from C:\ai\loop\data and site/runs_extra by site/build.py. Static, single file, no network.</p>
+  </article>
+</section>
+
+<section class="room-group" id="annex">
+  <header class="room-head">
+    <h2>Annex</h2>
+    <p class="note">{{ANNEX_INTRO}}</p>
+  </header>
+  <ol class="rooms-list annex-list">
+{{TOC_ANNEX}}
+  </ol>
+</section>
+
+{{ANNEX}}
+</main>
+
+<script>
+{{JS}}
+</script>
+</body>
+</html>

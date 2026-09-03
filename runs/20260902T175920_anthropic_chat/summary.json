@@ -1,0 +1,40 @@
+{
+  "args": {
+    "backend": "anthropic",
+    "model": "claude-sonnet-4-6",
+    "backend_b": null,
+    "model_b": null,
+    "mode": "chat",
+    "init": "json_page",
+    "init_set": null,
+    "init_text": null,
+    "init_file": null,
+    "steps": 60,
+    "max_tokens": 600,
+    "temp": 0.0,
+    "no_sampling": false,
+    "seed": 42,
+    "system": null,
+    "think": false,
+    "perturb": false,
+    "repeat": false,
+    "parallel": false,
+    "stop_on_cycle": true,
+    "confirm": 3,
+    "out": null
+  },
+  "results": [
+    {
+      "tag": "json_page",
+      "x0": "{\"rule\": \"Return this JSON object with the rule field unchanged and a new passage of about 250 words in the text field.\", \"text\": \"The tide came in an hour early.\"}",
+      "steps": 60,
+      "transient_exact": null,
+      "period_exact": null,
+      "transient_norm": null,
+      "period_norm": null,
+      "cycle_breaks": 0,
+      "terminal": null,
+      "final": "```json\n{\n  \"rule\": \"Return this JSON object with the rule field unchanged and a new passage of about 250 words in the text field.\",\n  \"text\": \"The cartographer had a problem with edges.\\n\\nEvery map she made was a argument against uncertainty, and uncertainty always returned. The coastlines shifted"
+    }
+  ]
+}

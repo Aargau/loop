@@ -1,0 +1,40 @@
+{
+  "args": {
+    "backend": "llama",
+    "model": "qwen3.8-27b",
+    "backend_b": null,
+    "model_b": null,
+    "mode": "chat",
+    "init": "json_mid",
+    "init_set": null,
+    "init_text": null,
+    "init_file": null,
+    "steps": 60,
+    "max_tokens": 600,
+    "temp": 0.0,
+    "no_sampling": false,
+    "seed": 42,
+    "system": null,
+    "think": false,
+    "perturb": false,
+    "repeat": false,
+    "parallel": false,
+    "stop_on_cycle": true,
+    "confirm": 3,
+    "out": "C:\\ai\\loop\\site\\runs_extra\\qwen_json_mid"
+  },
+  "results": [
+    {
+      "tag": "json_mid",
+      "x0": "{\"rule\": \"Return this JSON object with the rule field unchanged and, in the text field, a new passage of about 250 words from the middle of the same story, not its beginning or its end.\", \"text\": \"The",
+      "steps": 60,
+      "transient_exact": null,
+      "period_exact": null,
+      "transient_norm": null,
+      "period_norm": null,
+      "cycle_breaks": 0,
+      "terminal": null,
+      "final": "{\n  \"rule\": \"Return this JSON object with the rule field unchanged and, in the text field, a new passage of about 250 words from the middle of the same story, not its beginning or its end.\",\n  \"text\": \"The corridor stretched before her, a labyrinth of blinking lights and humming conduits that seemed"
+    }
+  ]
+}

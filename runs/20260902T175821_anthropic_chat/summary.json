@@ -1,0 +1,40 @@
+{
+  "args": {
+    "backend": "anthropic",
+    "model": "claude-sonnet-4-6",
+    "backend_b": null,
+    "model_b": null,
+    "mode": "chat",
+    "init": "json",
+    "init_set": null,
+    "init_text": null,
+    "init_file": null,
+    "steps": 3,
+    "max_tokens": 200,
+    "temp": 0.0,
+    "no_sampling": false,
+    "seed": 42,
+    "system": null,
+    "think": false,
+    "perturb": false,
+    "repeat": false,
+    "parallel": false,
+    "stop_on_cycle": false,
+    "confirm": 3,
+    "out": null
+  },
+  "results": [
+    {
+      "tag": "json",
+      "x0": "{\"rule\": \"Return this JSON object with the rule field unchanged and a new sentence in the text field.\", \"text\": \"The tide came in an hour early.\"}",
+      "steps": 3,
+      "transient_exact": null,
+      "period_exact": null,
+      "transient_norm": null,
+      "period_norm": null,
+      "cycle_breaks": 0,
+      "terminal": null,
+      "final": "```json\n{\n  \"rule\": \"Return this JSON object with the rule field unchanged and a new sentence in the text field.\",\n  \"text\": \"The old lighthouse keeper watched the storm roll in from across the darkened sea.\"\n}\n```"
+    }
+  ]
+}

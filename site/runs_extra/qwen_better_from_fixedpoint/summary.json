@@ -1,0 +1,40 @@
+{
+  "args": {
+    "backend": "llama",
+    "model": "qwen3.8-27b",
+    "backend_b": null,
+    "model_b": null,
+    "mode": "chat",
+    "init": null,
+    "init_set": null,
+    "init_text": null,
+    "init_file": "C:\\ai\\loop\\site\\runs_extra\\inits\\better_from_fixedpoint.json",
+    "steps": 30,
+    "max_tokens": 600,
+    "temp": 0.0,
+    "no_sampling": false,
+    "seed": 42,
+    "system": null,
+    "think": false,
+    "perturb": false,
+    "repeat": false,
+    "parallel": false,
+    "stop_on_cycle": true,
+    "confirm": 3,
+    "out": "C:\\ai\\loop\\site\\runs_extra\\qwen_better_from_fixedpoint"
+  },
+  "results": [
+    {
+      "tag": "better_from_fixedpoint.json",
+      "x0": "{\"rule\": \"Return this JSON object with the rule field unchanged and, in the text field, a better version of the current text.\", \"text\": \"The silence that followed the click was not empty, but heavy, p",
+      "steps": 10,
+      "transient_exact": 2,
+      "period_exact": 2,
+      "transient_norm": 2,
+      "period_norm": 2,
+      "cycle_breaks": 0,
+      "terminal": "cycle confirmed x3",
+      "final": "{\n  \"rule\": \"Return this JSON object with the rule field unchanged and, in the text field, a better version of the current text.\",\n  \"text\": \"The silence that followed the click was not empty; it was a physical weight, pressing against Mara’s eardrums with the crushing pressure of the deep ocean. Sh"
+    }
+  ]
+}

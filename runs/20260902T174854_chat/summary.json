@@ -1,0 +1,35 @@
+{
+  "args": {
+    "mode": "chat",
+    "init": "json_better_para",
+    "init_set": null,
+    "init_text": null,
+    "init_file": null,
+    "steps": 30,
+    "max_tokens": 800,
+    "seed": 42,
+    "model": "qwen3.8-27b",
+    "system": null,
+    "think": false,
+    "perturb": false,
+    "repeat": false,
+    "parallel": false,
+    "stop_on_cycle": true,
+    "confirm": 3,
+    "out": null
+  },
+  "results": [
+    {
+      "tag": "json_better_para",
+      "x0": "{\"rule\": \"Return this JSON object with the rule field unchanged and, in the text field, a better version of the current text.\", \"text\": \"The tide came in an hour early. Elias was on the pier. He saw i",
+      "steps": 6,
+      "transient_exact": 2,
+      "period_exact": 1,
+      "transient_norm": 2,
+      "period_norm": 1,
+      "cycle_breaks": 0,
+      "terminal": "cycle confirmed x3",
+      "final": "{\n  \"rule\": \"Return this JSON object with the rule field unchanged and, in the text field, a better version of the current text.\",\n  \"text\": \"The tide surged an hour early, catching Elias off guard on the pier. The water, a churning shade of slate gray, cut through the air with a biting chill. Stand"
+    }
+  ]
+}

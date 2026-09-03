@@ -1,0 +1,40 @@
+{
+  "args": {
+    "backend": "anthropic",
+    "model": "claude-sonnet-4-6",
+    "backend_b": null,
+    "model_b": null,
+    "mode": "chat",
+    "init": "json_next",
+    "init_set": null,
+    "init_text": null,
+    "init_file": null,
+    "steps": 60,
+    "max_tokens": 600,
+    "temp": 0.0,
+    "no_sampling": false,
+    "seed": 42,
+    "system": null,
+    "think": false,
+    "perturb": false,
+    "repeat": false,
+    "parallel": false,
+    "stop_on_cycle": false,
+    "confirm": 3,
+    "out": null
+  },
+  "results": [
+    {
+      "tag": "json_next",
+      "x0": "{\"rule\": \"Return this JSON object with the rule field unchanged and, in the text field, the passage of about 250 words that comes immediately AFTER the current text in the same story.\", \"text\": \"The t",
+      "steps": 60,
+      "transient_exact": null,
+      "period_exact": null,
+      "transient_norm": null,
+      "period_norm": null,
+      "cycle_breaks": 0,
+      "terminal": null,
+      "final": "```json\n{\n  \"rule\": \"Return this JSON object with the rule field unchanged and, in the text field, the passage of about 250 words that comes immediately AFTER the current text in the same story.\",\n  \"text\": \"The walk to the door was shorter than she had been making it in her head for eleven months.\\"
+    }
+  ]
+}

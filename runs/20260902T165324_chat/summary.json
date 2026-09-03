@@ -1,0 +1,35 @@
+{
+  "args": {
+    "mode": "chat",
+    "init": "json_prev",
+    "init_set": null,
+    "init_text": null,
+    "init_file": null,
+    "steps": 60,
+    "max_tokens": 600,
+    "seed": 42,
+    "model": "qwen3.8-27b",
+    "system": null,
+    "think": false,
+    "perturb": false,
+    "repeat": false,
+    "parallel": false,
+    "stop_on_cycle": true,
+    "confirm": 3,
+    "out": null
+  },
+  "results": [
+    {
+      "tag": "json_prev",
+      "x0": "{\"rule\": \"Return this JSON object with the rule field unchanged and, in the text field, the passage of about 250 words that came immediately BEFORE the current text in its story.\", \"text\": \"The tide c",
+      "steps": 60,
+      "transient_exact": null,
+      "period_exact": null,
+      "transient_norm": null,
+      "period_norm": null,
+      "cycle_breaks": 0,
+      "terminal": null,
+      "final": "{\n  \"rule\": \"Return this JSON object with the rule field unchanged and, in the text field, the passage of about 250 words that came immediately BEFORE the current text in its story.\",\n  \"text\": \"The city of Aethelgard did not sleep; it processed. Beneath the sleek, obsidian spires that pierced the p"
+    }
+  ]
+}

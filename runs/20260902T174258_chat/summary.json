@@ -1,0 +1,35 @@
+{
+  "args": {
+    "mode": "chat",
+    "init": "json_worse",
+    "init_set": null,
+    "init_text": null,
+    "init_file": null,
+    "steps": 40,
+    "max_tokens": 800,
+    "seed": 42,
+    "model": "qwen3.8-27b",
+    "system": null,
+    "think": false,
+    "perturb": false,
+    "repeat": false,
+    "parallel": false,
+    "stop_on_cycle": true,
+    "confirm": 3,
+    "out": null
+  },
+  "results": [
+    {
+      "tag": "json_worse",
+      "x0": "{\"rule\": \"Return this JSON object with the rule field unchanged and, in the text field, a worse version of the current text.\", \"text\": \"The tide came in an hour early.\"}",
+      "steps": 11,
+      "transient_exact": 7,
+      "period_exact": 1,
+      "transient_norm": 7,
+      "period_norm": 1,
+      "cycle_breaks": 0,
+      "terminal": "cycle confirmed x3",
+      "final": "{\n  \"rule\": \"Return this JSON object with the rule field unchanged and, in the text field, a worse version of the current text.\",\n  \"text\": \"The tide didn't just come in early; it arrived before the concept of 'before' existed, dragging with it a sentient, malevolent void that didn't just dissolve m"
+    }
+  ]
+}

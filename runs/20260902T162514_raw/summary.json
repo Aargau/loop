@@ -1,0 +1,35 @@
+{
+  "args": {
+    "mode": "raw",
+    "init": "json_page",
+    "init_set": null,
+    "init_text": null,
+    "init_file": null,
+    "steps": 40,
+    "max_tokens": 600,
+    "seed": 42,
+    "model": "qwen3.8-27b",
+    "system": null,
+    "think": false,
+    "perturb": false,
+    "repeat": false,
+    "parallel": false,
+    "stop_on_cycle": false,
+    "confirm": 3,
+    "out": null
+  },
+  "results": [
+    {
+      "tag": "json_page",
+      "x0": "{\"rule\": \"Return this JSON object with the rule field unchanged and a new passage of about 250 words in the text field.\", \"text\": \"The tide came in an hour early.\"}",
+      "steps": 40,
+      "transient_exact": 20,
+      "period_exact": 11,
+      "transient_norm": 20,
+      "period_norm": 11,
+      "cycle_breaks": 0,
+      "terminal": null,
+      "final": " this close to someone, and she thought about how this was the last time she would ever do this, how this was the last time she would ever feel this way, how this was the last time she would ever be this close to someone, and she thought about how this was the last time she would ever do this, how t"
+    }
+  ]
+}

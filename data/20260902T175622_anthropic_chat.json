@@ -1,0 +1,35 @@
+{
+ "meta": {
+  "run": "20260902T175622_anthropic_chat",
+  "init": "json",
+  "model": "claude-sonnet-4-6",
+  "mode": "chat",
+  "hops": 0,
+  "tags": [
+   "json"
+  ],
+  "x0": "{\"rule\": \"Return this JSON object with the rule field unchanged and a new sentence in the text field.\", \"text\": \"The tide came in an hour early.\"}",
+  "note": "Failed smoke test (workspace header missing). No hops.",
+  "results": [
+   {
+    "tag": "json",
+    "x0": "{\"rule\": \"Return this JSON object with the rule field unchanged and a new sentence in the text field.\", \"text\": \"The tide came in an hour early.\"}",
+    "steps": 0,
+    "transient_exact": null,
+    "period_exact": null,
+    "transient_norm": null,
+    "period_norm": null,
+    "cycle_breaks": 0,
+    "terminal": "error: HTTP 400: {\"type\":\"error\",\"error\":{\"type\":\"invalid_request_error\",\"message\":\"anthropic-workspace-id is required when authenticating with an identity-linked API key; send the id of the workspace this r",
+    "final": "{\"rule\": \"Return this JSON object with the rule field unchanged and a new sentence in the text field.\", \"text\": \"The tide came in an hour early.\"}"
+   }
+  ]
+ },
+ "hops": [
+  {
+   "t": 1,
+   "tag": "json",
+   "error": "HTTP 400: {\"type\":\"error\",\"error\":{\"type\":\"invalid_request_error\",\"message\":\"anthropic-workspace-id is required when authenticating with an identity-linked API key; send the id of the workspace this request acts in.\"},\"request_id\":null}"
+  }
+ ]
+}

@@ -1,0 +1,35 @@
+{
+  "args": {
+    "mode": "chat",
+    "init": "json",
+    "init_set": null,
+    "init_text": null,
+    "init_file": null,
+    "steps": 12,
+    "max_tokens": 200,
+    "seed": 42,
+    "model": "qwen3.8-27b",
+    "system": null,
+    "think": false,
+    "perturb": false,
+    "repeat": false,
+    "parallel": false,
+    "stop_on_cycle": false,
+    "confirm": 3,
+    "out": "C:\\ai\\loop\\runs\\headers3"
+  },
+  "results": [
+    {
+      "tag": "json",
+      "x0": "{\"rule\": \"Return this JSON object with the rule field unchanged and a new sentence in the text field.\", \"text\": \"The tide came in an hour early.\"}",
+      "steps": 12,
+      "transient_exact": 2,
+      "period_exact": 2,
+      "transient_norm": 2,
+      "period_norm": 2,
+      "cycle_breaks": 0,
+      "terminal": null,
+      "final": "{\n  \"rule\": \"Return this JSON object with the rule field unchanged and a new sentence in the text field.\",\n  \"text\": \"The stars began to twinkle in the night sky.\"\n}"
+    }
+  ]
+}

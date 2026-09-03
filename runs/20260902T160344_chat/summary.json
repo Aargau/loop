@@ -1,0 +1,53 @@
+{
+  "args": {
+    "mode": "chat",
+    "init": "json_page",
+    "init_set": null,
+    "init_text": null,
+    "init_file": null,
+    "steps": 60,
+    "max_tokens": 600,
+    "seed": 42,
+    "model": "qwen3.8-27b",
+    "system": null,
+    "think": false,
+    "perturb": false,
+    "repeat": true,
+    "parallel": true,
+    "stop_on_cycle": false,
+    "confirm": 3,
+    "out": null
+  },
+  "results": [
+    {
+      "tag": "json_page",
+      "x0": "{\"rule\": \"Return this JSON object with the rule field unchanged and a new passage of about 250 words in the text field.\", \"text\": \"The tide came in an hour early.\"}",
+      "steps": 60,
+      "transient_exact": 4,
+      "period_exact": 1,
+      "transient_norm": 4,
+      "period_norm": 1,
+      "cycle_breaks": 0,
+      "terminal": null,
+      "final": "{\n  \"rule\": \"Return this JSON object with the rule field unchanged and a new passage of about 250 words in the text field.\",\n  \"text\": \"The rain hammered against the corrugated roof of the abandoned warehouse, a rhythmic drumming that masked the silence within. Mara crouched behind a stack of rottin"
+    },
+    {
+      "tag": "json_page~r",
+      "x0": "{\"rule\": \"Return this JSON object with the rule field unchanged and a new passage of about 250 words in the text field.\", \"text\": \"The tide came in an hour early.\"}",
+      "steps": 60,
+      "transient_exact": 14,
+      "period_exact": 1,
+      "transient_norm": 14,
+      "period_norm": 1,
+      "cycle_breaks": 0,
+      "terminal": null,
+      "final": "{\n  \"rule\": \"Return this JSON object with the rule field unchanged and a new passage of about 250 words in the text field.\",\n  \"text\": \"The rain lashed against the windowpane, a relentless drumming that drowned out the distant hum of the city. Inside the cramped apartment, Elias sat hunched over a c"
+    },
+    {
+      "tag": "json_page~pair",
+      "first_divergence": 1,
+      "remerge_at": null,
+      "compared": 61
+    }
+  ]
+}
