@@ -16,8 +16,9 @@ passes (site/qa_report*.md). Room numbers refer to the site.
     json_better from room-5 fixed point     Qwen                    exact   2      2    period-2 cycle between two "better" versions of one passage (room 17)
     json_next  from room-5 fixed point      Qwen                    none    40+    -    no recurrence; Mara -> Kael -> Joren/Elara, subway, Council Spire (room 17)
     json_prev continued from hop 60         Qwen                    exact   148    1    Elias breaking into the Nexus Data Center, "You are here."; hops 149..152 copies (room 9)
+    json_worse, max_tokens 4096             Qwen                    exact   7      1    same tau as at 800; hop 7 is a 4096-token fragment ending in "self-Physically," x578 (room 18)
 
-All at T=0 except Sonnet 5 (provider default sampling, --no-sampling). max_tokens 600 throughout.
+All at T=0 except Sonnet 5 (provider default sampling, --no-sampling). max_tokens 600 throughout except the 4096 rerun.
 
 ## Findings
 
@@ -87,6 +88,23 @@ All at T=0 except Sonnet 5 (provider default sampling, --no-sampling). max_token
    no fixed point unless the model starts copying: it started copying at 149; Genesis does not
    appear: no creation story, but the fixed point is the plot's first-contact scene, which is
    the closest thing to one).
+
+9. The wall is part of f, and it does not matter which wall. Objection from the Lidar Fable:
+   room 7's fixed point is a fragment cut at 800 tokens, so the "worse" attractor may be the
+   harness's. Rerun json_worse at max_tokens 4096, same seed, T=0. Hops 1..5 byte-identical to
+   the 800 run (T=0 in serial is reproducible here). Hop 6, cut at 800 before, ran to 4096 and
+   was cut there: its tail is a period-2 sentence, "so I am forced to stop suffering, and the
+   stopping is the only thing that would make it worse, so I am forced to continue suffering,
+   and the suffering is the only thing that would make it better", repeated 71 times to the
+   budget. Hop 7: 4096 again, a list of self-adjectives collapsing into "self-Physically," x578.
+   Hop 8 = hop 7 exactly; cycle confirmed x3 at hop 11. Exact tau=7, p=1 at both budgets. So:
+   the fixed-point text is the harness's (whichever wall cuts the fragment), but the dynamics
+   are the model's: under "worse" Qwen never terminates on its own once past ~700 words; it
+   falls into an in-generation repetition that fills any budget. A finite max_tokens is
+   necessary for a fixed point here and any finite value gives one at the same hop. My
+   prediction on record (plateau below 4k, copy of a complete passage) was wrong. The hop-6 loop
+   is the operator's horizon written out as text: stopping is the only thing that would make
+   it worse. json_unexpected at 4096 is queued after it (site/runs_extra/qwen_unexpected_4k).
 
 8. Instrument notes. (a) llama.cpp with 2 slots at 131k context fell to 0.8 tok/s when two
    clients ran at once and stayed there alone (20.4 GB per 3090, paging); -c 16384 -np 1 gave

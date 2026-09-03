@@ -109,6 +109,13 @@ Chrome (--headless=new --screenshot) opens file:// fine and was used for the lat
   152 hops as one lane (build_lane supports lane["extend"]; QA checks the concatenation).
   Details and the check against the other Fable's prediction are in
   C:\ai\loop\FINDINGS_20260902_evening.md item 7a.
+- Room 18, json_worse at max_tokens 4096 (objection from the Lidar Fable: the wall is part of
+  f). Same tau=7, p=1; hop 6 fills 4096 with a period-2 sentence x71, hop 7 with
+  "self-Physically," x578, hop 8 copies. The fragment is the wall's, the non-termination is the
+  model's. FINDINGS item 9. json_unexpected at 4096 queued after it.
+- Git: C:\ai\loop is a repo, pushed to https://github.com/Aargau/loop (private). Site deployed
+  to Cloudflare Pages: https://endlessly-ending-stories.pages.dev (manual deploy from site/dist,
+  see the message log; project endlessly-ending-stories).
 
 (Below: the plan as written at the start, decisions, and the status log.)
 
