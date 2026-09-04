@@ -1,0 +1,41 @@
+{
+  "args": {
+    "backend": "cerebras",
+    "model": "qwen-3.8-27b",
+    "backend_b": null,
+    "model_b": null,
+    "mode": "chat",
+    "init": null,
+    "init_set": null,
+    "init_text": null,
+    "init_file": "C:/ai/loop/experiments/astra_causal_before_20260904/init.json",
+    "steps": 300,
+    "max_tokens": 1024,
+    "temp": 0.0,
+    "no_sampling": false,
+    "seed": 42,
+    "system": null,
+    "think": false,
+    "min_interval": 1.0,
+    "perturb": false,
+    "repeat": false,
+    "parallel": false,
+    "stop_on_cycle": true,
+    "confirm": 3,
+    "out": "C:/ai/loop/experiments/astra_causal_before_20260904/run"
+  },
+  "results": [
+    {
+      "tag": "init.json",
+      "x0": "{\n  \"rule\": \"Return this JSON object with the rule field unchanged. Replace the text field with a passage of about 250 words that occurred BEFORE the current passage. Choose a concrete supporting deta",
+      "steps": 0,
+      "transient_exact": null,
+      "period_exact": null,
+      "transient_norm": null,
+      "period_norm": null,
+      "cycle_breaks": 0,
+      "terminal": "error: <urlopen error [WinError 10013] An attempt was made to access a socket in a way forbidden by its access permissions>",
+      "final": "{\n  \"rule\": \"Return this JSON object with the rule field unchanged. Replace the text field with a passage of about 250 words that occurred BEFORE the current passage. Choose a concrete supporting detail in the current passage and show how it came to be there through the actions of someone other than"
+    }
+  ]
+}
