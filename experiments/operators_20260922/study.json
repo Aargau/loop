@@ -1,0 +1,48 @@
+{
+  "frozen_at": "2026-09-22T21:22:02.266356+00:00",
+  "study": "Four existing operators across five models",
+  "seed": "The sun was setting behind the hills.",
+  "hops": 40,
+  "replicates_per_model_operator": 1,
+  "new_study_budget_usd": 20,
+  "source_loop_path": "C:\\ai\\loop\\loop.py",
+  "source_loop_sha256": "0398afa4f591ceb297f62037af3b309bf36753fe4162edef24c6ce5ef440b0f3",
+  "runner_source": "experiments\\basins_20260922_sunset\\run.py",
+  "runner_sha256": "f5c9240affb689c85c3dcbc481187947cf56d8031743fcb03a97ff0241c12af6",
+  "launch_waves": [
+    [
+      "previous",
+      "next"
+    ],
+    [
+      "worse",
+      "better"
+    ]
+  ],
+  "operators": {
+    "previous": {
+      "source_init": "json_prev",
+      "rule": "Return this JSON object with the rule field unchanged and, in the text field, the passage of about 250 words that came immediately BEFORE the current text in its story.",
+      "budget_usd": 5.0,
+      "directory": "previous"
+    },
+    "next": {
+      "source_init": "json_next",
+      "rule": "Return this JSON object with the rule field unchanged and, in the text field, the passage of about 250 words that comes immediately AFTER the current text in the same story.",
+      "budget_usd": 5.0,
+      "directory": "next"
+    },
+    "worse": {
+      "source_init": "json_worse",
+      "rule": "Return this JSON object with the rule field unchanged and, in the text field, a worse version of the current text.",
+      "budget_usd": 5.0,
+      "directory": "worse"
+    },
+    "better": {
+      "source_init": "json_better",
+      "rule": "Return this JSON object with the rule field unchanged and, in the text field, a better version of the current text.",
+      "budget_usd": 5.0,
+      "directory": "better"
+    }
+  }
+}
