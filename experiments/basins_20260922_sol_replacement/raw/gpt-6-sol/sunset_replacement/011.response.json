@@ -1,0 +1,50 @@
+{
+  "model": "gpt-6-sol",
+  "seed": "sunset_replacement",
+  "hop": 11,
+  "http_status": 200,
+  "response_body": "{\n  \"id\": \"chatcmpl-ER1hJD24MXcRNQrCcByOwvyBcPO05\",\n  \"object\": \"chat.completion\",\n  \"created\": 1790110089,\n  \"model\": \"gpt-6-sol\",\n  \"choices\": [\n    {\n      \"index\": 0,\n      \"message\": {\n        \"role\": \"assistant\",\n        \"content\": \"{\\n  \\\"rule\\\": \\\"Return this JSON object with the rule field unchanged and a new passage of about 250 words in the text field.\\\",\\n  \\\"text\\\": \\\"“The station’s been empty for years,” the constable said.\\\\n\\\\n“That’s why we took him there.” Venn swallowed. “He was hurt. He said he could manage until we came back.”\\\\n\\\\n“Why didn’t you?” Elias asked.\\\\n\\\\nVenn looked at the three names in the notebook. “Because he’d written those down.”\\\\n\\\\nThe constable took the notebook from Elias and read the page. His expression changed, though he said nothing. He ordered one officer to fetch a boat and sent the other for the harbor surgeon.\\\\n\\\\nElias was already heading for the customs steps when Mara caught up with him. “The reef will be nearly clear,” she said. “We can cross on foot.”\\\\n\\\\n“The channel between the rocks stays deep,” Ada warned.\\\\n\\\\n“I know the way.” Mara pulled off her shoes and handed them to Elias. “Carry these.”\\\\n\\\\nThey reached the reef ahead of the constable’s boat. Wet stone shone between pools of retreating water. At the far end, the signal station stood with its door open and its shutters banging in the wind.\\\\n\\\\nInside, someone had built a small fire in the hearth. It had burned down to ash. Elias found a strip of bandage caught beneath a chair, then heard Mara call from outside.\\\\n\\\\nHis brother sat against the station wall, wrapped in an old sail. He opened his eyes when Elias knelt beside him.\\\\n\\\\n“I thought you’d come,” he whispered.\\\\n\\\\nElias gripped his hand. Below them, the constable’s boat rounded the reef. His brother watched it approach and tried to sit up.\\\\n\\\\n“Don’t let Venn leave,” he said.\\\"\\n}\",\n        \"refusal\": null,\n        \"annotations\": []\n      },\n      \"finish_reason\": \"stop\"\n    }\n  ],\n  \"usage\": {\n    \"prompt_tokens\": 389,\n    \"completion_tokens\": 439,\n    \"total_tokens\": 828,\n    \"prompt_tokens_details\": {\n      \"cached_tokens\": 0,\n      \"cache_write_tokens\": 0,\n      \"audio_tokens\": 0\n    },\n    \"completion_tokens_details\": {\n      \"reasoning_tokens\": 35,\n      \"audio_tokens\": 0,\n      \"accepted_prediction_tokens\": 0,\n      \"rejected_prediction_tokens\": 0\n    }\n  },\n  \"service_tier\": \"default\",\n  \"system_fingerprint\": null\n}\n",
+  "response_headers": {
+    "Date": "Tue, 22 Sep 2026 20:48:16 GMT",
+    "openai-processing-ms": "6776",
+    "x-request-id": "req_3e7455a7f07740b7ad4b016a044472d2"
+  },
+  "output": "{\n  \"rule\": \"Return this JSON object with the rule field unchanged and a new passage of about 250 words in the text field.\",\n  \"text\": \"“The station’s been empty for years,” the constable said.\\n\\n“That’s why we took him there.” Venn swallowed. “He was hurt. He said he could manage until we came back.”\\n\\n“Why didn’t you?” Elias asked.\\n\\nVenn looked at the three names in the notebook. “Because he’d written those down.”\\n\\nThe constable took the notebook from Elias and read the page. His expression changed, though he said nothing. He ordered one officer to fetch a boat and sent the other for the harbor surgeon.\\n\\nElias was already heading for the customs steps when Mara caught up with him. “The reef will be nearly clear,” she said. “We can cross on foot.”\\n\\n“The channel between the rocks stays deep,” Ada warned.\\n\\n“I know the way.” Mara pulled off her shoes and handed them to Elias. “Carry these.”\\n\\nThey reached the reef ahead of the constable’s boat. Wet stone shone between pools of retreating water. At the far end, the signal station stood with its door open and its shutters banging in the wind.\\n\\nInside, someone had built a small fire in the hearth. It had burned down to ash. Elias found a strip of bandage caught beneath a chair, then heard Mara call from outside.\\n\\nHis brother sat against the station wall, wrapped in an old sail. He opened his eyes when Elias knelt beside him.\\n\\n“I thought you’d come,” he whispered.\\n\\nElias gripped his hand. Below them, the constable’s boat rounded the reef. His brother watched it approach and tried to sit up.\\n\\n“Don’t let Venn leave,” he said.\"\n}",
+  "output_sha256": "c2398923cbd3513cc9f917e340aa56a6fb8781e60faec7fdd268d21d6455b43e",
+  "finish_reason": "stop",
+  "refusal": null,
+  "returned_model": "gpt-6-sol",
+  "usage": {
+    "prompt_tokens": 389,
+    "completion_tokens": 439,
+    "total_tokens": 828,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 35,
+      "audio_tokens": 0,
+      "accepted_prediction_tokens": 0,
+      "rejected_prediction_tokens": 0
+    }
+  },
+  "format": {
+    "json_object": true,
+    "rule_unchanged": true,
+    "passage_is_string": true,
+    "passage_sha256": "ba7e263caaf823359ea5ae29c741ff6dfb9d153265b61725f1bbf3e269a77cec",
+    "passage_words": 257
+  },
+  "finished_at": "2026-09-22T20:48:12.164234+00:00",
+  "latency_seconds": 6.9155,
+  "usage_cost_upper_estimate_usd": 0.005168,
+  "stream_status": "active",
+  "budget": {
+    "usage_cost_upper_estimate_usd": 0.051776,
+    "uncertain_cost_reserve_usd": 0.0,
+    "in_flight_reserve_usd": 0.0,
+    "limit_usd": 3.0
+  }
+}

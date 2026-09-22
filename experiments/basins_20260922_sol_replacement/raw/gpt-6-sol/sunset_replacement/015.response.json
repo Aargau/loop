@@ -1,0 +1,50 @@
+{
+  "model": "gpt-6-sol",
+  "seed": "sunset_replacement",
+  "hop": 15,
+  "http_status": 200,
+  "response_body": "{\n  \"id\": \"chatcmpl-ER1hjp0dqXXgM10Rc3Fmc0DZhmJ0Q\",\n  \"object\": \"chat.completion\",\n  \"created\": 1790110115,\n  \"model\": \"gpt-6-sol\",\n  \"choices\": [\n    {\n      \"index\": 0,\n      \"message\": {\n        \"role\": \"assistant\",\n        \"content\": \"{\\n  \\\"rule\\\": \\\"Return this JSON object with the rule field unchanged and a new passage of about 250 words in the text field.\\\",\\n  \\\"text\\\": \\\"“Stop that boat,” the constable ordered.\\\\n\\\\nThe oarsman kept his hands in his lap. The current carried him beyond the pilings, where the darkness swallowed his face.\\\\n\\\\nElias’s brother caught Elias by the arm. “Don’t answer the knocking.”\\\\n\\\\n“You said it was our signal.”\\\\n\\\\n“It was.” His grip tightened. “Venn heard us use it yesterday.”\\\\n\\\\nAnother knock rose through the floorboards: three blows, then two. This time it came from directly beneath Elias’s feet.\\\\n\\\\nMara took the lantern from Ada and led them inside. Behind the stove, a square hatch stood half hidden under a coil of rope. Mud streaked its iron handle. The groove across the floor ended there.\\\\n\\\\nThe constable drew his revolver. “Ada, outside.”\\\\n\\\\nShe shook her head. “There’s someone hurt.”\\\\n\\\\nAs if in answer, a voice called faintly from below. “Elias?”\\\\n\\\\nIt sounded like their mother.\\\\n\\\\nHis brother released his arm and stumbled back against the wall. Their mother had been buried eight years ago, on a hillside miles from the river.\\\\n\\\\nElias reached for the hatch. Mara caught his wrist, just as she had caught his coat outside. She pointed to the blood on the boards. It had not been dragged toward the opening. It ran away from it, disappearing beneath the stove.\\\\n\\\\nThe voice came again, softer now. “Please.”\\\\n\\\\nThe constable knelt and pulled the stove aside. In the narrow gap behind it lay a woman, bound and bleeding, her mouth stopped with cloth. Ada dropped beside her.\\\\n\\\\nFrom beneath the hatch came a scrape of metal. Then someone below began to lift it.\\\"\\n}\",\n        \"refusal\": null,\n        \"annotations\": []\n      },\n      \"finish_reason\": \"stop\"\n    }\n  ],\n  \"usage\": {\n    \"prompt_tokens\": 417,\n    \"completion_tokens\": 439,\n    \"total_tokens\": 856,\n    \"prompt_tokens_details\": {\n      \"cached_tokens\": 0,\n      \"cache_write_tokens\": 0,\n      \"audio_tokens\": 0\n    },\n    \"completion_tokens_details\": {\n      \"reasoning_tokens\": 22,\n      \"audio_tokens\": 0,\n      \"accepted_prediction_tokens\": 0,\n      \"rejected_prediction_tokens\": 0\n    }\n  },\n  \"service_tier\": \"default\",\n  \"system_fingerprint\": null\n}\n",
+  "response_headers": {
+    "Date": "Tue, 22 Sep 2026 20:48:41 GMT",
+    "openai-processing-ms": "6210",
+    "x-request-id": "req_b1e9dcc8eb2d49b8b623b035e5374ab3"
+  },
+  "output": "{\n  \"rule\": \"Return this JSON object with the rule field unchanged and a new passage of about 250 words in the text field.\",\n  \"text\": \"“Stop that boat,” the constable ordered.\\n\\nThe oarsman kept his hands in his lap. The current carried him beyond the pilings, where the darkness swallowed his face.\\n\\nElias’s brother caught Elias by the arm. “Don’t answer the knocking.”\\n\\n“You said it was our signal.”\\n\\n“It was.” His grip tightened. “Venn heard us use it yesterday.”\\n\\nAnother knock rose through the floorboards: three blows, then two. This time it came from directly beneath Elias’s feet.\\n\\nMara took the lantern from Ada and led them inside. Behind the stove, a square hatch stood half hidden under a coil of rope. Mud streaked its iron handle. The groove across the floor ended there.\\n\\nThe constable drew his revolver. “Ada, outside.”\\n\\nShe shook her head. “There’s someone hurt.”\\n\\nAs if in answer, a voice called faintly from below. “Elias?”\\n\\nIt sounded like their mother.\\n\\nHis brother released his arm and stumbled back against the wall. Their mother had been buried eight years ago, on a hillside miles from the river.\\n\\nElias reached for the hatch. Mara caught his wrist, just as she had caught his coat outside. She pointed to the blood on the boards. It had not been dragged toward the opening. It ran away from it, disappearing beneath the stove.\\n\\nThe voice came again, softer now. “Please.”\\n\\nThe constable knelt and pulled the stove aside. In the narrow gap behind it lay a woman, bound and bleeding, her mouth stopped with cloth. Ada dropped beside her.\\n\\nFrom beneath the hatch came a scrape of metal. Then someone below began to lift it.\"\n}",
+  "output_sha256": "8cbd53e48bd9fa36c8ddf54eba0349ecca0c004733c0cd0e2aad7bd57189c8f3",
+  "finish_reason": "stop",
+  "refusal": null,
+  "returned_model": "gpt-6-sol",
+  "usage": {
+    "prompt_tokens": 417,
+    "completion_tokens": 439,
+    "total_tokens": 856,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 22,
+      "audio_tokens": 0,
+      "accepted_prediction_tokens": 0,
+      "rejected_prediction_tokens": 0
+    }
+  },
+  "format": {
+    "json_object": true,
+    "rule_unchanged": true,
+    "passage_is_string": true,
+    "passage_sha256": "8942748858db8ad1a2817f8d6d739781a3928ce62736ab534adb157775aa9ae8",
+    "passage_words": 260
+  },
+  "finished_at": "2026-09-22T20:48:37.614501+00:00",
+  "latency_seconds": 6.4158,
+  "usage_cost_upper_estimate_usd": 0.005224,
+  "stream_status": "active",
+  "budget": {
+    "usage_cost_upper_estimate_usd": 0.072996,
+    "uncertain_cost_reserve_usd": 0.0,
+    "in_flight_reserve_usd": 0.0,
+    "limit_usd": 3.0
+  }
+}

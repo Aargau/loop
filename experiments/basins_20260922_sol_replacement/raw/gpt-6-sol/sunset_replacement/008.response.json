@@ -1,0 +1,50 @@
+{
+  "model": "gpt-6-sol",
+  "seed": "sunset_replacement",
+  "hop": 8,
+  "http_status": 200,
+  "response_body": "{\n  \"id\": \"chatcmpl-ER1h0zWM6NWbR8Ek7O5HeGe7kf4pB\",\n  \"object\": \"chat.completion\",\n  \"created\": 1790110070,\n  \"model\": \"gpt-6-sol\",\n  \"choices\": [\n    {\n      \"index\": 0,\n      \"message\": {\n        \"role\": \"assistant\",\n        \"content\": \"{\\n  \\\"rule\\\": \\\"Return this JSON object with the rule field unchanged and a new passage of about 250 words in the text field.\\\",\\n  \\\"text\\\": \\\"By noon, people had gathered outside the constable’s office. Word of the harbor master’s confession had traveled faster than the tide. Mara kept to the far side of the square, where Ada stood beneath the awning of the baker’s shop.\\\\n\\\\n“Elias is still inside,” Ada said. “They’re asking him about his brother.”\\\\n\\\\nMara looked toward the office. She had spent months imagining what had happened on the night Elias’s brother disappeared. Now there was a man who could answer, and she was afraid of what he might say.\\\\n\\\\nA cart rattled past, carrying crates of fish from the quay. Its driver raised a hand to Ada, then slowed. “They’ve sent for the merchant,” he told them. “Constable says nobody leaves town until he gets here.”\\\\n\\\\nAda nodded, but Mara was watching Elias emerge from the office. He crossed the square without seeming to notice the crowd. In his hand was the folded list.\\\\n\\\\n“They found another payment,” he said when he reached them. “The night my brother went out.”\\\\n\\\\nMara waited. Elias unfolded the paper, then folded it again. “He’d found out what they were doing. The harbor master says he tried to stop them.”\\\\n\\\\nAcross the square, someone began calling for the harbor master to be brought outside. Elias flinched at the sound. Mara put her hand on his arm, and the three of them walked toward the quay.\\\\n\\\\nThe water was clear now. Beyond the markers, a boat turned for home, its white sail bright against the reef.\\\"\\n}\",\n        \"refusal\": null,\n        \"annotations\": []\n      },\n      \"finish_reason\": \"stop\"\n    }\n  ],\n  \"usage\": {\n    \"prompt_tokens\": 354,\n    \"completion_tokens\": 401,\n    \"total_tokens\": 755,\n    \"prompt_tokens_details\": {\n      \"cached_tokens\": 0,\n      \"cache_write_tokens\": 0,\n      \"audio_tokens\": 0\n    },\n    \"completion_tokens_details\": {\n      \"reasoning_tokens\": 25,\n      \"audio_tokens\": 0,\n      \"accepted_prediction_tokens\": 0,\n      \"rejected_prediction_tokens\": 0\n    }\n  },\n  \"service_tier\": \"default\",\n  \"system_fingerprint\": null\n}\n",
+  "response_headers": {
+    "Date": "Tue, 22 Sep 2026 20:47:56 GMT",
+    "openai-processing-ms": "5802",
+    "x-request-id": "req_6e73b9a847f9461cae19cdde1661196e"
+  },
+  "output": "{\n  \"rule\": \"Return this JSON object with the rule field unchanged and a new passage of about 250 words in the text field.\",\n  \"text\": \"By noon, people had gathered outside the constable’s office. Word of the harbor master’s confession had traveled faster than the tide. Mara kept to the far side of the square, where Ada stood beneath the awning of the baker’s shop.\\n\\n“Elias is still inside,” Ada said. “They’re asking him about his brother.”\\n\\nMara looked toward the office. She had spent months imagining what had happened on the night Elias’s brother disappeared. Now there was a man who could answer, and she was afraid of what he might say.\\n\\nA cart rattled past, carrying crates of fish from the quay. Its driver raised a hand to Ada, then slowed. “They’ve sent for the merchant,” he told them. “Constable says nobody leaves town until he gets here.”\\n\\nAda nodded, but Mara was watching Elias emerge from the office. He crossed the square without seeming to notice the crowd. In his hand was the folded list.\\n\\n“They found another payment,” he said when he reached them. “The night my brother went out.”\\n\\nMara waited. Elias unfolded the paper, then folded it again. “He’d found out what they were doing. The harbor master says he tried to stop them.”\\n\\nAcross the square, someone began calling for the harbor master to be brought outside. Elias flinched at the sound. Mara put her hand on his arm, and the three of them walked toward the quay.\\n\\nThe water was clear now. Beyond the markers, a boat turned for home, its white sail bright against the reef.\"\n}",
+  "output_sha256": "2fb4a6ef24467c4b5eb2189c33e59f68f24221ceb987ff9278753b485cbd584e",
+  "finish_reason": "stop",
+  "refusal": null,
+  "returned_model": "gpt-6-sol",
+  "usage": {
+    "prompt_tokens": 354,
+    "completion_tokens": 401,
+    "total_tokens": 755,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 25,
+      "audio_tokens": 0,
+      "accepted_prediction_tokens": 0,
+      "rejected_prediction_tokens": 0
+    }
+  },
+  "format": {
+    "json_object": true,
+    "rule_unchanged": true,
+    "passage_is_string": true,
+    "passage_sha256": "5c5fea30b9b516e8dd8c7836857fe3408a90709f48bebc72ad53f557880d57aa",
+    "passage_words": 250
+  },
+  "finished_at": "2026-09-22T20:47:52.272483+00:00",
+  "latency_seconds": 5.9547,
+  "usage_cost_upper_estimate_usd": 0.004718,
+  "stream_status": "active",
+  "budget": {
+    "usage_cost_upper_estimate_usd": 0.03693,
+    "uncertain_cost_reserve_usd": 0.0,
+    "in_flight_reserve_usd": 0.0,
+    "limit_usd": 3.0
+  }
+}

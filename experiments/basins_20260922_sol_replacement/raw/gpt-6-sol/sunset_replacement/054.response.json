@@ -1,0 +1,50 @@
+{
+  "model": "gpt-6-sol",
+  "seed": "sunset_replacement",
+  "hop": 54,
+  "http_status": 200,
+  "response_body": "{\n  \"id\": \"chatcmpl-ER1ly732vaQcdWqDCEpwfe7zfDGNx\",\n  \"object\": \"chat.completion\",\n  \"created\": 1790110378,\n  \"model\": \"gpt-6-sol\",\n  \"choices\": [\n    {\n      \"index\": 0,\n      \"message\": {\n        \"role\": \"assistant\",\n        \"content\": \"{\\n  \\\"rule\\\": \\\"Return this JSON object with the rule field unchanged and a new passage of about 250 words in the text field.\\\",\\n  \\\"text\\\": \\\"The constable crossed the street before Ada could stop him. From the bakery window, she watched him put one hand on the open gate. It swung inward without a sound.\\\\n\\\\nBeyond it, the passage ran between two brick walls to a patch of sunlit garden. A little girl in a blue coat sat on the path, fastening a brass button to her sleeve. She looked up at the constable, then shook her head.\\\\n\\\\n“He wasn’t the one,” she said.\\\\n\\\\nThe constable backed away. Ada went to the gate with the drawing folded in her pocket. She had spent months looking for the child, and longer still trying to understand the letters that arrived without stamps or signatures. Now the girl was close enough for Ada to see the uneven stitches in her coat.\\\\n\\\\n“Who showed you the way?” Ada asked.\\\\n\\\\n“You did.” The girl stood. “But you haven’t yet.”\\\\n\\\\nAt the end of the passage, the upstairs window of the little brick house stood open. A woman leaned out and called the child inside. Her voice was Ada’s, though older and roughened by years Ada had not lived.\\\\n\\\\nThe girl hurried toward the house. Halfway there, she stopped and pointed at the gate.\\\\n\\\\nAda turned. Across the street, the baker was locking his door. The constable had vanished. In the window beside the bakery, Ada caught her reflection: a woman holding a folded sheet of paper, with a small brass button pressed into her palm.\\\\n\\\\nBehind her, the gate began to close. She stepped through before it could shut.\\\"\\n}\",\n        \"refusal\": null,\n        \"annotations\": []\n      },\n      \"finish_reason\": \"stop\"\n    }\n  ],\n  \"usage\": {\n    \"prompt_tokens\": 372,\n    \"completion_tokens\": 410,\n    \"total_tokens\": 782,\n    \"prompt_tokens_details\": {\n      \"cached_tokens\": 0,\n      \"cache_write_tokens\": 0,\n      \"audio_tokens\": 0\n    },\n    \"completion_tokens_details\": {\n      \"reasoning_tokens\": 35,\n      \"audio_tokens\": 0,\n      \"accepted_prediction_tokens\": 0,\n      \"rejected_prediction_tokens\": 0\n    }\n  },\n  \"service_tier\": \"default\",\n  \"system_fingerprint\": null\n}\n",
+  "response_headers": {
+    "Date": "Tue, 22 Sep 2026 20:53:04 GMT",
+    "openai-processing-ms": "6463",
+    "x-request-id": "req_f8a2c16c8416459a9667f723f1db233f"
+  },
+  "output": "{\n  \"rule\": \"Return this JSON object with the rule field unchanged and a new passage of about 250 words in the text field.\",\n  \"text\": \"The constable crossed the street before Ada could stop him. From the bakery window, she watched him put one hand on the open gate. It swung inward without a sound.\\n\\nBeyond it, the passage ran between two brick walls to a patch of sunlit garden. A little girl in a blue coat sat on the path, fastening a brass button to her sleeve. She looked up at the constable, then shook her head.\\n\\n“He wasn’t the one,” she said.\\n\\nThe constable backed away. Ada went to the gate with the drawing folded in her pocket. She had spent months looking for the child, and longer still trying to understand the letters that arrived without stamps or signatures. Now the girl was close enough for Ada to see the uneven stitches in her coat.\\n\\n“Who showed you the way?” Ada asked.\\n\\n“You did.” The girl stood. “But you haven’t yet.”\\n\\nAt the end of the passage, the upstairs window of the little brick house stood open. A woman leaned out and called the child inside. Her voice was Ada’s, though older and roughened by years Ada had not lived.\\n\\nThe girl hurried toward the house. Halfway there, she stopped and pointed at the gate.\\n\\nAda turned. Across the street, the baker was locking his door. The constable had vanished. In the window beside the bakery, Ada caught her reflection: a woman holding a folded sheet of paper, with a small brass button pressed into her palm.\\n\\nBehind her, the gate began to close. She stepped through before it could shut.\"\n}",
+  "output_sha256": "c47e639453eacf384e92a2b66d226b21eb4f0b4c884580bf2e26e31487569f30",
+  "finish_reason": "stop",
+  "refusal": null,
+  "returned_model": "gpt-6-sol",
+  "usage": {
+    "prompt_tokens": 372,
+    "completion_tokens": 410,
+    "total_tokens": 782,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 35,
+      "audio_tokens": 0,
+      "accepted_prediction_tokens": 0,
+      "rejected_prediction_tokens": 0
+    }
+  },
+  "format": {
+    "json_object": true,
+    "rule_unchanged": true,
+    "passage_is_string": true,
+    "passage_sha256": "357e9cffd0fde98697966883a07d91158d30da63444146e4a534dcc1303ecaa1",
+    "passage_words": 259
+  },
+  "finished_at": "2026-09-22T20:53:00.495783+00:00",
+  "latency_seconds": 6.639,
+  "usage_cost_upper_estimate_usd": 0.004844,
+  "stream_status": "active",
+  "budget": {
+    "usage_cost_upper_estimate_usd": 0.270042,
+    "uncertain_cost_reserve_usd": 0.0,
+    "in_flight_reserve_usd": 0.0,
+    "limit_usd": 3.0
+  }
+}

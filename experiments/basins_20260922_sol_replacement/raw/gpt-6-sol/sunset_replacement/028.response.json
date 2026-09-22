@@ -1,0 +1,50 @@
+{
+  "model": "gpt-6-sol",
+  "seed": "sunset_replacement",
+  "hop": 28,
+  "http_status": 200,
+  "response_body": "{\n  \"id\": \"chatcmpl-ER1j8d5BeKFJ9CKSOStAzSLjhr6KP\",\n  \"object\": \"chat.completion\",\n  \"created\": 1790110202,\n  \"model\": \"gpt-6-sol\",\n  \"choices\": [\n    {\n      \"index\": 0,\n      \"message\": {\n        \"role\": \"assistant\",\n        \"content\": \"{\\n  \\\"rule\\\": \\\"Return this JSON object with the rule field unchanged and a new passage of about 250 words in the text field.\\\",\\n  \\\"text\\\": \\\"The footsteps in the hall reached the front door. Its latch clicked, though no one had lifted the bar.\\\\n\\\\nAt the kitchen threshold, a voice said, “Mara.”\\\\n\\\\nVenn’s wife tightened her grip on Ada’s hand. The constable stood a few paces away, staring at the dark marks gathering beneath the rain barrel.\\\\n\\\\n“Mara,” the voice said again. It was Venn’s voice, but he had never called his wife by her given name where anyone could hear.\\\\n\\\\nThe front door opened. A second voice, farther away, called, “Don’t answer him.”\\\\n\\\\nElias came into the yard and shut the kitchen door behind him. “There’s no one in the hall,” he whispered.\\\\n\\\\nSomething struck the door at the height of its handle. The constable backed away. His torn sleeve, still in Ada’s hand, began to pull toward the house.\\\\n\\\\nMara held the heated key against the sleeve’s stitches. They parted one by one. Inside the cuff lay a narrow strip of paper, rolled so tightly that Ada had to use her nails to open it.\\\\n\\\\nThree names were written there: ELIAS, ADA, MARA. Beneath them was a blank line.\\\\n\\\\nFrom the front of the house came Venn’s cry. “It’s asking for a fourth.”\\\\n\\\\nThe kitchen door rattled. The marks under the barrel spread into tiny fingers and gripped the constable’s boots.\\\\n\\\\nMara took the paper from Ada. With the key’s hot tip, she wrote VENN on the empty line.\\\\n\\\\nThe fingers released the constable. Inside, both sets of footsteps ran for the cellar.\\\"\\n}\",\n        \"refusal\": null,\n        \"annotations\": []\n      },\n      \"finish_reason\": \"stop\"\n    }\n  ],\n  \"usage\": {\n    \"prompt_tokens\": 402,\n    \"completion_tokens\": 422,\n    \"total_tokens\": 824,\n    \"prompt_tokens_details\": {\n      \"cached_tokens\": 0,\n      \"cache_write_tokens\": 0,\n      \"audio_tokens\": 0\n    },\n    \"completion_tokens_details\": {\n      \"reasoning_tokens\": 21,\n      \"audio_tokens\": 0,\n      \"accepted_prediction_tokens\": 0,\n      \"rejected_prediction_tokens\": 0\n    }\n  },\n  \"service_tier\": \"default\",\n  \"system_fingerprint\": null\n}\n",
+  "response_headers": {
+    "Date": "Tue, 22 Sep 2026 20:50:07 GMT",
+    "openai-processing-ms": "5669",
+    "x-request-id": "req_c6f95e57feff4023a063b553d271d9c2"
+  },
+  "output": "{\n  \"rule\": \"Return this JSON object with the rule field unchanged and a new passage of about 250 words in the text field.\",\n  \"text\": \"The footsteps in the hall reached the front door. Its latch clicked, though no one had lifted the bar.\\n\\nAt the kitchen threshold, a voice said, “Mara.”\\n\\nVenn’s wife tightened her grip on Ada’s hand. The constable stood a few paces away, staring at the dark marks gathering beneath the rain barrel.\\n\\n“Mara,” the voice said again. It was Venn’s voice, but he had never called his wife by her given name where anyone could hear.\\n\\nThe front door opened. A second voice, farther away, called, “Don’t answer him.”\\n\\nElias came into the yard and shut the kitchen door behind him. “There’s no one in the hall,” he whispered.\\n\\nSomething struck the door at the height of its handle. The constable backed away. His torn sleeve, still in Ada’s hand, began to pull toward the house.\\n\\nMara held the heated key against the sleeve’s stitches. They parted one by one. Inside the cuff lay a narrow strip of paper, rolled so tightly that Ada had to use her nails to open it.\\n\\nThree names were written there: ELIAS, ADA, MARA. Beneath them was a blank line.\\n\\nFrom the front of the house came Venn’s cry. “It’s asking for a fourth.”\\n\\nThe kitchen door rattled. The marks under the barrel spread into tiny fingers and gripped the constable’s boots.\\n\\nMara took the paper from Ada. With the key’s hot tip, she wrote VENN on the empty line.\\n\\nThe fingers released the constable. Inside, both sets of footsteps ran for the cellar.\"\n}",
+  "output_sha256": "a5af3cddc13c7b74df751a4668bcb93c7904cbffe194aaa0d36058a41beb24e2",
+  "finish_reason": "stop",
+  "refusal": null,
+  "returned_model": "gpt-6-sol",
+  "usage": {
+    "prompt_tokens": 402,
+    "completion_tokens": 422,
+    "total_tokens": 824,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 21,
+      "audio_tokens": 0,
+      "accepted_prediction_tokens": 0,
+      "rejected_prediction_tokens": 0
+    }
+  },
+  "format": {
+    "json_object": true,
+    "rule_unchanged": true,
+    "passage_is_string": true,
+    "passage_sha256": "a67abcbebc538b170665ed2ff37993067cf7d73e7e85282d0c140f656f05af48",
+    "passage_words": 250
+  },
+  "finished_at": "2026-09-22T20:50:03.663637+00:00",
+  "latency_seconds": 5.8096,
+  "usage_cost_upper_estimate_usd": 0.005024,
+  "stream_status": "active",
+  "budget": {
+    "usage_cost_upper_estimate_usd": 0.13904,
+    "uncertain_cost_reserve_usd": 0.0,
+    "in_flight_reserve_usd": 0.0,
+    "limit_usd": 3.0
+  }
+}

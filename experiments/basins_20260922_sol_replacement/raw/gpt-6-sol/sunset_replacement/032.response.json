@@ -1,0 +1,50 @@
+{
+  "model": "gpt-6-sol",
+  "seed": "sunset_replacement",
+  "hop": 32,
+  "http_status": 200,
+  "response_body": "{\n  \"id\": \"chatcmpl-ER1jZaSwVc2yodF3XRSwRYq4MdftA\",\n  \"object\": \"chat.completion\",\n  \"created\": 1790110229,\n  \"model\": \"gpt-6-sol\",\n  \"choices\": [\n    {\n      \"index\": 0,\n      \"message\": {\n        \"role\": \"assistant\",\n        \"content\": \"{\\n  \\\"rule\\\": \\\"Return this JSON object with the rule field unchanged and a new passage of about 250 words in the text field.\\\",\\n  \\\"text\\\": \\\"The constable lifted his left foot. Its heel was worn to the same crooked crescent.\\\\n\\\\n“I’ve never seen this place,” he said.\\\\n\\\\nFrom the passage came the scrape of a boot being dragged over stone. Once. Then again.\\\\n\\\\nVenn took the ledger from Elias and pushed it into the opening. The scratching beneath its cover ceased. A moment later, something farther down the passage began scratching instead.\\\\n\\\\n“First light,” Mara said. “How long?”\\\\n\\\\nElias checked his watch. Its hands stood at six, though it had been nearly midnight when they entered the house. He held it to his ear and shook his head.\\\\n\\\\nAda stepped over the threshold. The bootprints ended three paces in, where the dust gave way to bare stone. Beyond that, water shone in shallow pools. She could hear someone breathing ahead of her, careful and quiet.\\\\n\\\\nBehind her, the cellar door slammed. Elias cried out. Ada turned and saw that the seam in the wall was closing. Mara caught the edge with both hands, but the stone kept moving.\\\\n\\\\n“Come through!” Ada called.\\\\n\\\\nThe constable squeezed past Mara, then Elias. Venn stayed behind, bracing the ledger against the narrowing gap. Its cover swelled around his fingers.\\\\n\\\\n“Venn.” Ada reached for him.\\\\n\\\\nHe thrust the ledger toward her. “Find out whose handwriting that is.”\\\\n\\\\nAda pulled it free. The stone sealed before Venn could follow.\\\\n\\\\nIn the dark, the constable struck a match. On the page beneath the date, a fresh line appeared. Ada watched each letter take shape: VENN WILL OPEN THE DOOR.\\\"\\n}\",\n        \"refusal\": null,\n        \"annotations\": []\n      },\n      \"finish_reason\": \"stop\"\n    }\n  ],\n  \"usage\": {\n    \"prompt_tokens\": 404,\n    \"completion_tokens\": 418,\n    \"total_tokens\": 822,\n    \"prompt_tokens_details\": {\n      \"cached_tokens\": 0,\n      \"cache_write_tokens\": 0,\n      \"audio_tokens\": 0\n    },\n    \"completion_tokens_details\": {\n      \"reasoning_tokens\": 17,\n      \"audio_tokens\": 0,\n      \"accepted_prediction_tokens\": 0,\n      \"rejected_prediction_tokens\": 0\n    }\n  },\n  \"service_tier\": \"default\",\n  \"system_fingerprint\": null\n}\n",
+  "response_headers": {
+    "Date": "Tue, 22 Sep 2026 20:50:35 GMT",
+    "openai-processing-ms": "6155",
+    "x-request-id": "req_ec372ff7a232475e8f2631aafb5402fe"
+  },
+  "output": "{\n  \"rule\": \"Return this JSON object with the rule field unchanged and a new passage of about 250 words in the text field.\",\n  \"text\": \"The constable lifted his left foot. Its heel was worn to the same crooked crescent.\\n\\n“I’ve never seen this place,” he said.\\n\\nFrom the passage came the scrape of a boot being dragged over stone. Once. Then again.\\n\\nVenn took the ledger from Elias and pushed it into the opening. The scratching beneath its cover ceased. A moment later, something farther down the passage began scratching instead.\\n\\n“First light,” Mara said. “How long?”\\n\\nElias checked his watch. Its hands stood at six, though it had been nearly midnight when they entered the house. He held it to his ear and shook his head.\\n\\nAda stepped over the threshold. The bootprints ended three paces in, where the dust gave way to bare stone. Beyond that, water shone in shallow pools. She could hear someone breathing ahead of her, careful and quiet.\\n\\nBehind her, the cellar door slammed. Elias cried out. Ada turned and saw that the seam in the wall was closing. Mara caught the edge with both hands, but the stone kept moving.\\n\\n“Come through!” Ada called.\\n\\nThe constable squeezed past Mara, then Elias. Venn stayed behind, bracing the ledger against the narrowing gap. Its cover swelled around his fingers.\\n\\n“Venn.” Ada reached for him.\\n\\nHe thrust the ledger toward her. “Find out whose handwriting that is.”\\n\\nAda pulled it free. The stone sealed before Venn could follow.\\n\\nIn the dark, the constable struck a match. On the page beneath the date, a fresh line appeared. Ada watched each letter take shape: VENN WILL OPEN THE DOOR.\"\n}",
+  "output_sha256": "0f5398966d54ccff246f07c940d77b6c32caaebc8ab5727e37369270dde9319f",
+  "finish_reason": "stop",
+  "refusal": null,
+  "returned_model": "gpt-6-sol",
+  "usage": {
+    "prompt_tokens": 404,
+    "completion_tokens": 418,
+    "total_tokens": 822,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 17,
+      "audio_tokens": 0,
+      "accepted_prediction_tokens": 0,
+      "rejected_prediction_tokens": 0
+    }
+  },
+  "format": {
+    "json_object": true,
+    "rule_unchanged": true,
+    "passage_is_string": true,
+    "passage_sha256": "203ae75a09b39fae7be630a278b83c05bc27aa21a9154c5d3f80e90eb4848df8",
+    "passage_words": 257
+  },
+  "finished_at": "2026-09-22T20:50:31.158311+00:00",
+  "latency_seconds": 6.299,
+  "usage_cost_upper_estimate_usd": 0.004988,
+  "stream_status": "active",
+  "budget": {
+    "usage_cost_upper_estimate_usd": 0.15905,
+    "uncertain_cost_reserve_usd": 0.0,
+    "in_flight_reserve_usd": 0.0,
+    "limit_usd": 3.0
+  }
+}

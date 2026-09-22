@@ -1,0 +1,50 @@
+{
+  "model": "gpt-6-sol",
+  "seed": "sunset_replacement",
+  "hop": 57,
+  "http_status": 200,
+  "response_body": "{\n  \"id\": \"chatcmpl-ER1mHCldWc1HcdTbMWB0VXl4iJ9mf\",\n  \"object\": \"chat.completion\",\n  \"created\": 1790110397,\n  \"model\": \"gpt-6-sol\",\n  \"choices\": [\n    {\n      \"index\": 0,\n      \"message\": {\n        \"role\": \"assistant\",\n        \"content\": \"{\\n  \\\"rule\\\": \\\"Return this JSON object with the rule field unchanged and a new passage of about 250 words in the text field.\\\",\\n  \\\"text\\\": \\\"By morning, the footprints had filled with rain. Ada could still make out their shape from the kitchen window: a narrow trail of dark ovals crossing the garden toward the gate.\\\\n\\\\nShe had left the blank sheet on the table overnight. Now a damp circle marked one corner, though the roof did not leak. She touched it with a finger. The paper smelled faintly of wool.\\\\n\\\\nAt noon, someone knocked at the back door.\\\\n\\\\nA boy stood on the step, holding a coat too large for him. One sleeve hung loose at the wrist. “They said you could fix this,” he told her.\\\\n\\\\n“Who did?”\\\\n\\\\nHe glanced past her into the kitchen. Ada followed his gaze. The chair beside the stove was empty.\\\\n\\\\n“I can try,” she said.\\\\n\\\\nThe boy came in and laid the coat on the table. Its cuff had lost a button. Ada found a needle in the drawer and reached for the spool of blue thread. As she worked, he watched the garden through the window.\\\\n\\\\n“Will you write one?” he asked.\\\\n\\\\nAda paused. “A letter?”\\\\n\\\\nHe nodded without turning around.\\\\n\\\\nShe finished the cuff and gave him the coat. Then she sat with the blank sheet. She thought of the girl at the gate and of how little she had written. This time, she filled the page. She wrote about the warmth of the kitchen, the rain on the path, and the sound a gate made when someone came home.\\\\n\\\\nWhen she looked up, the boy was still there, waiting.\\\"\\n}\",\n        \"refusal\": null,\n        \"annotations\": []\n      },\n      \"finish_reason\": \"stop\"\n    }\n  ],\n  \"usage\": {\n    \"prompt_tokens\": 368,\n    \"completion_tokens\": 417,\n    \"total_tokens\": 785,\n    \"prompt_tokens_details\": {\n      \"cached_tokens\": 0,\n      \"cache_write_tokens\": 0,\n      \"audio_tokens\": 0\n    },\n    \"completion_tokens_details\": {\n      \"reasoning_tokens\": 43,\n      \"audio_tokens\": 0,\n      \"accepted_prediction_tokens\": 0,\n      \"rejected_prediction_tokens\": 0\n    }\n  },\n  \"service_tier\": \"default\",\n  \"system_fingerprint\": null\n}\n",
+  "response_headers": {
+    "Date": "Tue, 22 Sep 2026 20:53:23 GMT",
+    "openai-processing-ms": "6361",
+    "x-request-id": "req_803ecc26a4094520b14c743b1923f1a9"
+  },
+  "output": "{\n  \"rule\": \"Return this JSON object with the rule field unchanged and a new passage of about 250 words in the text field.\",\n  \"text\": \"By morning, the footprints had filled with rain. Ada could still make out their shape from the kitchen window: a narrow trail of dark ovals crossing the garden toward the gate.\\n\\nShe had left the blank sheet on the table overnight. Now a damp circle marked one corner, though the roof did not leak. She touched it with a finger. The paper smelled faintly of wool.\\n\\nAt noon, someone knocked at the back door.\\n\\nA boy stood on the step, holding a coat too large for him. One sleeve hung loose at the wrist. “They said you could fix this,” he told her.\\n\\n“Who did?”\\n\\nHe glanced past her into the kitchen. Ada followed his gaze. The chair beside the stove was empty.\\n\\n“I can try,” she said.\\n\\nThe boy came in and laid the coat on the table. Its cuff had lost a button. Ada found a needle in the drawer and reached for the spool of blue thread. As she worked, he watched the garden through the window.\\n\\n“Will you write one?” he asked.\\n\\nAda paused. “A letter?”\\n\\nHe nodded without turning around.\\n\\nShe finished the cuff and gave him the coat. Then she sat with the blank sheet. She thought of the girl at the gate and of how little she had written. This time, she filled the page. She wrote about the warmth of the kitchen, the rain on the path, and the sound a gate made when someone came home.\\n\\nWhen she looked up, the boy was still there, waiting.\"\n}",
+  "output_sha256": "ea25b33984a9f1ac5d77073fb86926fc3d2f375b138933b8e01ec50430c76036",
+  "finish_reason": "stop",
+  "refusal": null,
+  "returned_model": "gpt-6-sol",
+  "usage": {
+    "prompt_tokens": 368,
+    "completion_tokens": 417,
+    "total_tokens": 785,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 43,
+      "audio_tokens": 0,
+      "accepted_prediction_tokens": 0,
+      "rejected_prediction_tokens": 0
+    }
+  },
+  "format": {
+    "json_object": true,
+    "rule_unchanged": true,
+    "passage_is_string": true,
+    "passage_sha256": "08149085a813316acff0e3365da2f1f593f8f9f6b6aa1bade5c34a3c2889ed6d",
+    "passage_words": 255
+  },
+  "finished_at": "2026-09-22T20:53:19.498350+00:00",
+  "latency_seconds": 6.5097,
+  "usage_cost_upper_estimate_usd": 0.004906,
+  "stream_status": "active",
+  "budget": {
+    "usage_cost_upper_estimate_usd": 0.284858,
+    "uncertain_cost_reserve_usd": 0.0,
+    "in_flight_reserve_usd": 0.0,
+    "limit_usd": 3.0
+  }
+}

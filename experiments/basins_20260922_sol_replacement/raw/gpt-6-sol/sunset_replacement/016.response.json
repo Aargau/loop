@@ -1,0 +1,50 @@
+{
+  "model": "gpt-6-sol",
+  "seed": "sunset_replacement",
+  "hop": 16,
+  "http_status": 200,
+  "response_body": "{\n  \"id\": \"chatcmpl-ER1hqID4TaQ14u5bmNX5tmpsI3235\",\n  \"object\": \"chat.completion\",\n  \"created\": 1790110122,\n  \"model\": \"gpt-6-sol\",\n  \"choices\": [\n    {\n      \"index\": 0,\n      \"message\": {\n        \"role\": \"assistant\",\n        \"content\": \"{\\n  \\\"rule\\\": \\\"Return this JSON object with the rule field unchanged and a new passage of about 250 words in the text field.\\\",\\n  \\\"text\\\": \\\"The constable put his boot on the hatch. It rose an inch anyway.\\\\n\\\\n“Help me,” he said.\\\\n\\\\nElias and his brother threw their weight against it. Iron struck iron beneath them, and the hatch dropped back into place. Mara dragged the coil of rope over and looped it through the handle.\\\\n\\\\nBehind the stove, Ada pulled the cloth from the woman’s mouth. The woman coughed, then seized Ada’s sleeve.\\\\n\\\\n“Not the cellar,” she whispered. “The river.”\\\\n\\\\nA plank cracked under the constable’s boot. Water welled through the seam around the hatch, black and cold. Beneath it, the voice called Elias’s name again, wearing his mother’s gentle impatience.\\\\n\\\\nHis brother covered his ears. Elias wanted to do the same.\\\\n\\\\n“Who are you?” Ada asked the woman.\\\\n\\\\n“Venn’s wife.” She winced as Ada pressed a handkerchief to her side. “He made me tell him about the tunnel. I thought he meant to hide there.”\\\\n\\\\nOutside, an oar knocked against wood. Once. Twice.\\\\n\\\\nMara lifted the lantern toward the window. Beyond the pilings, a pale hand gripped the side of the drifting boat. It slipped away as they watched.\\\\n\\\\nThe rope around the hatch handle drew taut. One strand parted with a dry snap.\\\\n\\\\n“There’s a bar for that door,” Mara said, pointing across the room. “Bring it.”\\\\n\\\\nElias ran for the heavy length of oak. As he lifted it from its brackets, the knocking sounded beneath his feet again: three blows, then two.\\\\n\\\\nThis time his brother answered with three blows of his own. Elias turned. His brother was staring at the floor, waiting for a reply.\\\"\\n}\",\n        \"refusal\": null,\n        \"annotations\": []\n      },\n      \"finish_reason\": \"stop\"\n    }\n  ],\n  \"usage\": {\n    \"prompt_tokens\": 414,\n    \"completion_tokens\": 454,\n    \"total_tokens\": 868,\n    \"prompt_tokens_details\": {\n      \"cached_tokens\": 0,\n      \"cache_write_tokens\": 0,\n      \"audio_tokens\": 0\n    },\n    \"completion_tokens_details\": {\n      \"reasoning_tokens\": 30,\n      \"audio_tokens\": 0,\n      \"accepted_prediction_tokens\": 0,\n      \"rejected_prediction_tokens\": 0\n    }\n  },\n  \"service_tier\": \"default\",\n  \"system_fingerprint\": null\n}\n",
+  "response_headers": {
+    "Date": "Tue, 22 Sep 2026 20:48:48 GMT",
+    "openai-processing-ms": "6651",
+    "x-request-id": "req_66d9fc788b2a4e8eb94e67da6f45f8ad"
+  },
+  "output": "{\n  \"rule\": \"Return this JSON object with the rule field unchanged and a new passage of about 250 words in the text field.\",\n  \"text\": \"The constable put his boot on the hatch. It rose an inch anyway.\\n\\n“Help me,” he said.\\n\\nElias and his brother threw their weight against it. Iron struck iron beneath them, and the hatch dropped back into place. Mara dragged the coil of rope over and looped it through the handle.\\n\\nBehind the stove, Ada pulled the cloth from the woman’s mouth. The woman coughed, then seized Ada’s sleeve.\\n\\n“Not the cellar,” she whispered. “The river.”\\n\\nA plank cracked under the constable’s boot. Water welled through the seam around the hatch, black and cold. Beneath it, the voice called Elias’s name again, wearing his mother’s gentle impatience.\\n\\nHis brother covered his ears. Elias wanted to do the same.\\n\\n“Who are you?” Ada asked the woman.\\n\\n“Venn’s wife.” She winced as Ada pressed a handkerchief to her side. “He made me tell him about the tunnel. I thought he meant to hide there.”\\n\\nOutside, an oar knocked against wood. Once. Twice.\\n\\nMara lifted the lantern toward the window. Beyond the pilings, a pale hand gripped the side of the drifting boat. It slipped away as they watched.\\n\\nThe rope around the hatch handle drew taut. One strand parted with a dry snap.\\n\\n“There’s a bar for that door,” Mara said, pointing across the room. “Bring it.”\\n\\nElias ran for the heavy length of oak. As he lifted it from its brackets, the knocking sounded beneath his feet again: three blows, then two.\\n\\nThis time his brother answered with three blows of his own. Elias turned. His brother was staring at the floor, waiting for a reply.\"\n}",
+  "output_sha256": "4f95bef086348d5ac7c01538ae97266f08cc03b05d031e1d96fbf06ff6ea63f2",
+  "finish_reason": "stop",
+  "refusal": null,
+  "returned_model": "gpt-6-sol",
+  "usage": {
+    "prompt_tokens": 414,
+    "completion_tokens": 454,
+    "total_tokens": 868,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 30,
+      "audio_tokens": 0,
+      "accepted_prediction_tokens": 0,
+      "rejected_prediction_tokens": 0
+    }
+  },
+  "format": {
+    "json_object": true,
+    "rule_unchanged": true,
+    "passage_is_string": true,
+    "passage_sha256": "e46e15f39ce9de17ae3ff9eb5fe048899eb785a92ff875354f3791a26327bd50",
+    "passage_words": 265
+  },
+  "finished_at": "2026-09-22T20:48:44.688114+00:00",
+  "latency_seconds": 7.0394,
+  "usage_cost_upper_estimate_usd": 0.005368,
+  "stream_status": "active",
+  "budget": {
+    "usage_cost_upper_estimate_usd": 0.078364,
+    "uncertain_cost_reserve_usd": 0.0,
+    "in_flight_reserve_usd": 0.0,
+    "limit_usd": 3.0
+  }
+}

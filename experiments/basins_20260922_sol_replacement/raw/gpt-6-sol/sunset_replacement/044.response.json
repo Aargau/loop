@@ -1,0 +1,50 @@
+{
+  "model": "gpt-6-sol",
+  "seed": "sunset_replacement",
+  "hop": 44,
+  "http_status": 200,
+  "response_body": "{\n  \"id\": \"chatcmpl-ER1ksIjntLbwFErKD6CQLJM5iZqAb\",\n  \"object\": \"chat.completion\",\n  \"created\": 1790110310,\n  \"model\": \"gpt-6-sol\",\n  \"choices\": [\n    {\n      \"index\": 0,\n      \"message\": {\n        \"role\": \"assistant\",\n        \"content\": \"{\\n  \\\"rule\\\": \\\"Return this JSON object with the rule field unchanged and a new passage of about 250 words in the text field.\\\",\\n  \\\"text\\\": \\\"Nobody moved. Rain whispered against the door, but the knocks had come from somewhere closer than the street.\\\\n\\\\nVenn eased the poker out of the broken stair. Beneath the splintered tread, a strip of yellow paper was tied around a nail. Ada crouched and pulled it free.\\\\n\\\\nMara’s handwriting covered one side: Don’t answer until it asks to leave.\\\\n\\\\nA sixth knock sounded. The constable made a small, helpless noise.\\\\n\\\\n“That isn’t what she wrote,” Elias said.\\\\n\\\\n“No.” Ada turned the paper over. On the back was a sketch of the doorframe, with a circle drawn around the brass plate. Beneath it Mara had written: It needs a name to be let in. It needs its own to get out.\\\\n\\\\nThe plate clicked. Its little gate opened a finger’s width, and the voice spoke again, this time from inside the frame.\\\\n\\\\n“Please, Ada.”\\\\n\\\\nShe pressed her palm to the wood. Mara had never pleaded, not even that last night in the rain. Ada had spent years wishing she had.\\\\n\\\\n“What do you want?” she asked.\\\\n\\\\nThe gap widened. Cold air carried the smell of wet stone.\\\\n\\\\n“To leave.”\\\\n\\\\nAda glanced at the five scratches appearing on the inside of the door. Whatever waited beyond it had followed them up the stairs. She lifted the poker from Venn’s hands and slid its tip beneath the edge of the plate.\\\\n\\\\n“Then tell me your name.”\\\\n\\\\nFor a moment the rain stopped. The brass letters loosened, one by one, and fell into Ada’s open hand.\\\"\\n}\",\n        \"refusal\": null,\n        \"annotations\": []\n      },\n      \"finish_reason\": \"stop\"\n    }\n  ],\n  \"usage\": {\n    \"prompt_tokens\": 412,\n    \"completion_tokens\": 410,\n    \"total_tokens\": 822,\n    \"prompt_tokens_details\": {\n      \"cached_tokens\": 0,\n      \"cache_write_tokens\": 0,\n      \"audio_tokens\": 0\n    },\n    \"completion_tokens_details\": {\n      \"reasoning_tokens\": 20,\n      \"audio_tokens\": 0,\n      \"accepted_prediction_tokens\": 0,\n      \"rejected_prediction_tokens\": 0\n    }\n  },\n  \"service_tier\": \"default\",\n  \"system_fingerprint\": null\n}\n",
+  "response_headers": {
+    "Date": "Tue, 22 Sep 2026 20:51:56 GMT",
+    "openai-processing-ms": "6068",
+    "x-request-id": "req_dfe3f7c73f794eb39e59973b22c2687e"
+  },
+  "output": "{\n  \"rule\": \"Return this JSON object with the rule field unchanged and a new passage of about 250 words in the text field.\",\n  \"text\": \"Nobody moved. Rain whispered against the door, but the knocks had come from somewhere closer than the street.\\n\\nVenn eased the poker out of the broken stair. Beneath the splintered tread, a strip of yellow paper was tied around a nail. Ada crouched and pulled it free.\\n\\nMara’s handwriting covered one side: Don’t answer until it asks to leave.\\n\\nA sixth knock sounded. The constable made a small, helpless noise.\\n\\n“That isn’t what she wrote,” Elias said.\\n\\n“No.” Ada turned the paper over. On the back was a sketch of the doorframe, with a circle drawn around the brass plate. Beneath it Mara had written: It needs a name to be let in. It needs its own to get out.\\n\\nThe plate clicked. Its little gate opened a finger’s width, and the voice spoke again, this time from inside the frame.\\n\\n“Please, Ada.”\\n\\nShe pressed her palm to the wood. Mara had never pleaded, not even that last night in the rain. Ada had spent years wishing she had.\\n\\n“What do you want?” she asked.\\n\\nThe gap widened. Cold air carried the smell of wet stone.\\n\\n“To leave.”\\n\\nAda glanced at the five scratches appearing on the inside of the door. Whatever waited beyond it had followed them up the stairs. She lifted the poker from Venn’s hands and slid its tip beneath the edge of the plate.\\n\\n“Then tell me your name.”\\n\\nFor a moment the rain stopped. The brass letters loosened, one by one, and fell into Ada’s open hand.\"\n}",
+  "output_sha256": "c0b77ad2e8a042947987c8baa8a5758eba698153e9b26c6d9d9281bea73fbe89",
+  "finish_reason": "stop",
+  "refusal": null,
+  "returned_model": "gpt-6-sol",
+  "usage": {
+    "prompt_tokens": 412,
+    "completion_tokens": 410,
+    "total_tokens": 822,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 20,
+      "audio_tokens": 0,
+      "accepted_prediction_tokens": 0,
+      "rejected_prediction_tokens": 0
+    }
+  },
+  "format": {
+    "json_object": true,
+    "rule_unchanged": true,
+    "passage_is_string": true,
+    "passage_sha256": "a138c42862196e0673d37a6da3708ca2e88762e5220d8cb593e2cccaa7354ffe",
+    "passage_words": 252
+  },
+  "finished_at": "2026-09-22T20:51:52.288514+00:00",
+  "latency_seconds": 6.1874,
+  "usage_cost_upper_estimate_usd": 0.004924,
+  "stream_status": "active",
+  "budget": {
+    "usage_cost_upper_estimate_usd": 0.220486,
+    "uncertain_cost_reserve_usd": 0.0,
+    "in_flight_reserve_usd": 0.0,
+    "limit_usd": 3.0
+  }
+}

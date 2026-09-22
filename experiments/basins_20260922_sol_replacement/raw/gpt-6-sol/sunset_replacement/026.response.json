@@ -1,0 +1,50 @@
+{
+  "model": "gpt-6-sol",
+  "seed": "sunset_replacement",
+  "hop": 26,
+  "http_status": 200,
+  "response_body": "{\n  \"id\": \"chatcmpl-ER1iv0niIzD1e9onXMMa127mEgS5H\",\n  \"object\": \"chat.completion\",\n  \"created\": 1790110189,\n  \"model\": \"gpt-6-sol\",\n  \"choices\": [\n    {\n      \"index\": 0,\n      \"message\": {\n        \"role\": \"assistant\",\n        \"content\": \"{\\n  \\\"rule\\\": \\\"Return this JSON object with the rule field unchanged and a new passage of about 250 words in the text field.\\\",\\n  \\\"text\\\": \\\"No one answered. In the dark, Ada heard the constable pat his coat, searching for the key he had taken from Venn’s desk.\\\\n\\\\n“Don’t,” she whispered.\\\\n\\\\nThe patting stopped. Across the kitchen, the same sound continued.\\\\n\\\\nElias found Ada’s wrist and drew her away from the cellar door. Venn’s wife struck a match. Its small flame showed the constable on his knees and the other man standing at the threshold. Both had a hand inside the same pocket.\\\\n\\\\nThe standing man smiled. Water streamed from his cuff, though the floor beneath him was dry.\\\\n\\\\n“Give it here,” he said.\\\\n\\\\nThe constable pulled out an iron key. So did the figure. Venn’s wife blew out the match.\\\\n\\\\nIn the darkness, metal rang against tile. A hand caught Ada’s ankle. She kicked free and stumbled into the tin. Its lid skidded across the floor, stopping against the cellar door.\\\\n\\\\nA bolt slid back on the other side.\\\\n\\\\n“Keep it shut,” Elias said, bracing his shoulder against the wood.\\\\n\\\\nAda groped for the sleeve. She found its wet cuff and thrust it beneath the door. The thing at the threshold made a sound like a man drawing breath underwater. The bolt slid home.\\\\n\\\\nSomeone lit the constable’s spare match. He was alone at the threshold, staring at his empty hand. The key lay beside Ada’s foot, cold and dry.\\\\n\\\\nFrom inside the cellar came three slow knocks. Then Venn spoke through the door.\\\\n\\\\n“Thank you,” he said. “Now I know which side you’re on.”\\\"\\n}\",\n        \"refusal\": null,\n        \"annotations\": []\n      },\n      \"finish_reason\": \"stop\"\n    }\n  ],\n  \"usage\": {\n    \"prompt_tokens\": 410,\n    \"completion_tokens\": 426,\n    \"total_tokens\": 836,\n    \"prompt_tokens_details\": {\n      \"cached_tokens\": 0,\n      \"cache_write_tokens\": 0,\n      \"audio_tokens\": 0\n    },\n    \"completion_tokens_details\": {\n      \"reasoning_tokens\": 30,\n      \"audio_tokens\": 0,\n      \"accepted_prediction_tokens\": 0,\n      \"rejected_prediction_tokens\": 0\n    }\n  },\n  \"service_tier\": \"default\",\n  \"system_fingerprint\": null\n}\n",
+  "response_headers": {
+    "Date": "Tue, 22 Sep 2026 20:49:55 GMT",
+    "openai-processing-ms": "6457",
+    "x-request-id": "req_def8f0c219f741e9b89af85ae50bbcb6"
+  },
+  "output": "{\n  \"rule\": \"Return this JSON object with the rule field unchanged and a new passage of about 250 words in the text field.\",\n  \"text\": \"No one answered. In the dark, Ada heard the constable pat his coat, searching for the key he had taken from Venn’s desk.\\n\\n“Don’t,” she whispered.\\n\\nThe patting stopped. Across the kitchen, the same sound continued.\\n\\nElias found Ada’s wrist and drew her away from the cellar door. Venn’s wife struck a match. Its small flame showed the constable on his knees and the other man standing at the threshold. Both had a hand inside the same pocket.\\n\\nThe standing man smiled. Water streamed from his cuff, though the floor beneath him was dry.\\n\\n“Give it here,” he said.\\n\\nThe constable pulled out an iron key. So did the figure. Venn’s wife blew out the match.\\n\\nIn the darkness, metal rang against tile. A hand caught Ada’s ankle. She kicked free and stumbled into the tin. Its lid skidded across the floor, stopping against the cellar door.\\n\\nA bolt slid back on the other side.\\n\\n“Keep it shut,” Elias said, bracing his shoulder against the wood.\\n\\nAda groped for the sleeve. She found its wet cuff and thrust it beneath the door. The thing at the threshold made a sound like a man drawing breath underwater. The bolt slid home.\\n\\nSomeone lit the constable’s spare match. He was alone at the threshold, staring at his empty hand. The key lay beside Ada’s foot, cold and dry.\\n\\nFrom inside the cellar came three slow knocks. Then Venn spoke through the door.\\n\\n“Thank you,” he said. “Now I know which side you’re on.”\"\n}",
+  "output_sha256": "f14288621af6466bc633446bb25807c8648302010df36bc669e8cb39f845f3f5",
+  "finish_reason": "stop",
+  "refusal": null,
+  "returned_model": "gpt-6-sol",
+  "usage": {
+    "prompt_tokens": 410,
+    "completion_tokens": 426,
+    "total_tokens": 836,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 30,
+      "audio_tokens": 0,
+      "accepted_prediction_tokens": 0,
+      "rejected_prediction_tokens": 0
+    }
+  },
+  "format": {
+    "json_object": true,
+    "rule_unchanged": true,
+    "passage_is_string": true,
+    "passage_sha256": "983b413d99405f290ac240218137fe753423d84d435516ead0d5c1365d76d432",
+    "passage_words": 251
+  },
+  "finished_at": "2026-09-22T20:49:51.544300+00:00",
+  "latency_seconds": 6.5805,
+  "usage_cost_upper_estimate_usd": 0.00508,
+  "stream_status": "active",
+  "budget": {
+    "usage_cost_upper_estimate_usd": 0.12882,
+    "uncertain_cost_reserve_usd": 0.0,
+    "in_flight_reserve_usd": 0.0,
+    "limit_usd": 3.0
+  }
+}

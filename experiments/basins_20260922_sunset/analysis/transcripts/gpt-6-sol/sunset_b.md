@@ -206,6 +206,4 @@ After breakfast, Eli wiped the binocular lenses with the edge of the cloth. He a
 
 ## Hop 9
 
-Complete visible output; no JSON text field extracted.
-
-[No visible output saved; inspect raw error receipt.]
+[Operational error; no model output available for qualitative coding. Inspect the raw receipt.]

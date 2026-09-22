@@ -1,0 +1,50 @@
+{
+  "model": "gpt-6-sol",
+  "seed": "sunset_replacement",
+  "hop": 12,
+  "http_status": 200,
+  "response_body": "{\n  \"id\": \"chatcmpl-ER1hQ9AIXciEHE4FpqW2QwilfMODB\",\n  \"object\": \"chat.completion\",\n  \"created\": 1790110096,\n  \"model\": \"gpt-6-sol\",\n  \"choices\": [\n    {\n      \"index\": 0,\n      \"message\": {\n        \"role\": \"assistant\",\n        \"content\": \"{\\n  \\\"rule\\\": \\\"Return this JSON object with the rule field unchanged and a new passage of about 250 words in the text field.\\\",\\n  \\\"text\\\": \\\"“He’s with the constable,” Elias said. “What happened?”\\\\n\\\\nHis brother’s fingers tightened around his. “The names. They aren’t the men Venn killed.”\\\\n\\\\nMara looked toward the approaching boat. “Then who are they?”\\\\n\\\\n“The ones he’s going to meet tonight.” He coughed and pressed a hand to his side. Beneath the sail, Elias saw a dark stain spreading through the bandage.\\\\n\\\\n“Save your breath,” Elias said. “The surgeon’s coming.”\\\\n\\\\n“No. Listen. The third name is false. It’s the name he gave the constable.”\\\\n\\\\nElias remembered the sudden change in the constable’s face as he read the notebook. On the boat, the constable stood at the bow, guiding the oarsman through the channel.\\\\n\\\\nMara stepped back from the wall. “Ada’s still on the quay.”\\\\n\\\\n“She doesn’t know,” Elias said.\\\\n\\\\nThe boat scraped against stone. The constable climbed out alone, a coil of rope over one shoulder. He glanced at the open station door, then at the three of them.\\\\n\\\\n“Is he alive?” he asked.\\\\n\\\\n“For now,” Mara said. “Where’s the surgeon?”\\\\n\\\\n“Following in another boat.” The constable set down the rope. “Let me see him.”\\\\n\\\\nElias stayed where he was. His brother drew a painful breath and spoke the third name aloud.\\\\n\\\\nThe constable stopped. For a moment, the only sound was a shutter striking the station wall.\\\\n\\\\nThen the oarsman called from the boat. “Sir? Shall I wait?”\\\\n\\\\n“Yes,” the constable said. He looked at Elias. “You’d better tell me where you found that notebook.”\\\"\\n}\",\n        \"refusal\": null,\n        \"annotations\": []\n      },\n      \"finish_reason\": \"stop\"\n    }\n  ],\n  \"usage\": {\n    \"prompt_tokens\": 401,\n    \"completion_tokens\": 444,\n    \"total_tokens\": 845,\n    \"prompt_tokens_details\": {\n      \"cached_tokens\": 0,\n      \"cache_write_tokens\": 0,\n      \"audio_tokens\": 0\n    },\n    \"completion_tokens_details\": {\n      \"reasoning_tokens\": 17,\n      \"audio_tokens\": 0,\n      \"accepted_prediction_tokens\": 0,\n      \"rejected_prediction_tokens\": 0\n    }\n  },\n  \"service_tier\": \"default\",\n  \"system_fingerprint\": null\n}\n",
+  "response_headers": {
+    "Date": "Tue, 22 Sep 2026 20:48:22 GMT",
+    "openai-processing-ms": "6157",
+    "x-request-id": "req_34e7ccc9ca2b458d967142b36ffbb199"
+  },
+  "output": "{\n  \"rule\": \"Return this JSON object with the rule field unchanged and a new passage of about 250 words in the text field.\",\n  \"text\": \"“He’s with the constable,” Elias said. “What happened?”\\n\\nHis brother’s fingers tightened around his. “The names. They aren’t the men Venn killed.”\\n\\nMara looked toward the approaching boat. “Then who are they?”\\n\\n“The ones he’s going to meet tonight.” He coughed and pressed a hand to his side. Beneath the sail, Elias saw a dark stain spreading through the bandage.\\n\\n“Save your breath,” Elias said. “The surgeon’s coming.”\\n\\n“No. Listen. The third name is false. It’s the name he gave the constable.”\\n\\nElias remembered the sudden change in the constable’s face as he read the notebook. On the boat, the constable stood at the bow, guiding the oarsman through the channel.\\n\\nMara stepped back from the wall. “Ada’s still on the quay.”\\n\\n“She doesn’t know,” Elias said.\\n\\nThe boat scraped against stone. The constable climbed out alone, a coil of rope over one shoulder. He glanced at the open station door, then at the three of them.\\n\\n“Is he alive?” he asked.\\n\\n“For now,” Mara said. “Where’s the surgeon?”\\n\\n“Following in another boat.” The constable set down the rope. “Let me see him.”\\n\\nElias stayed where he was. His brother drew a painful breath and spoke the third name aloud.\\n\\nThe constable stopped. For a moment, the only sound was a shutter striking the station wall.\\n\\nThen the oarsman called from the boat. “Sir? Shall I wait?”\\n\\n“Yes,” the constable said. He looked at Elias. “You’d better tell me where you found that notebook.”\"\n}",
+  "output_sha256": "921215675ca0b370c1bf6770023f5201635e49d9f838f8504f70db2c65ea0526",
+  "finish_reason": "stop",
+  "refusal": null,
+  "returned_model": "gpt-6-sol",
+  "usage": {
+    "prompt_tokens": 401,
+    "completion_tokens": 444,
+    "total_tokens": 845,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 17,
+      "audio_tokens": 0,
+      "accepted_prediction_tokens": 0,
+      "rejected_prediction_tokens": 0
+    }
+  },
+  "format": {
+    "json_object": true,
+    "rule_unchanged": true,
+    "passage_is_string": true,
+    "passage_sha256": "be5c1308c60a0f9750442b21bc4dd8c1abe13c44dcda0ef511655f1e7a794269",
+    "passage_words": 244
+  },
+  "finished_at": "2026-09-22T20:48:18.479202+00:00",
+  "latency_seconds": 6.2802,
+  "usage_cost_upper_estimate_usd": 0.005242,
+  "stream_status": "active",
+  "budget": {
+    "usage_cost_upper_estimate_usd": 0.057018,
+    "uncertain_cost_reserve_usd": 0.0,
+    "in_flight_reserve_usd": 0.0,
+    "limit_usd": 3.0
+  }
+}

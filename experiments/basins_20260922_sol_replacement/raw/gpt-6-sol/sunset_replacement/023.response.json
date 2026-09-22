@@ -1,0 +1,50 @@
+{
+  "model": "gpt-6-sol",
+  "seed": "sunset_replacement",
+  "hop": 23,
+  "http_status": 200,
+  "response_body": "{\n  \"id\": \"chatcmpl-ER1iaDLcIs3n0HPtzeUwPUA0UQa3b\",\n  \"object\": \"chat.completion\",\n  \"created\": 1790110168,\n  \"model\": \"gpt-6-sol\",\n  \"choices\": [\n    {\n      \"index\": 0,\n      \"message\": {\n        \"role\": \"assistant\",\n        \"content\": \"{\\n  \\\"rule\\\": \\\"Return this JSON object with the rule field unchanged and a new passage of about 250 words in the text field.\\\",\\n  \\\"text\\\": \\\"Ada pressed the nail into the notch. The knocking stopped halfway through its next blow.\\\\n\\\\nFrom upstairs, the constable shouted, “Who’s down there?”\\\\n\\\\n“No one,” Ada said, though she could see fingers now, pale against the blue-checked sleeve. They gripped the cellar step and pulled the coat slowly upward.\\\\n\\\\nVenn’s wife seized the tin from Ada’s hand. “You’ve got it the wrong way round.”\\\\n\\\\nShe flipped the lid open. On its underside, four shallow dents formed a crooked line. Ada looked at the key. Its notches matched them, except for the new one beneath her thumb.\\\\n\\\\n“How many times did he knock?” Venn’s wife asked.\\\\n\\\\n“Five,” Elias whispered.\\\\n\\\\n“Three, then two.” She pushed Ada’s hand away from the lock. “Don’t give it the fifth.”\\\\n\\\\nThe nail stayed caught in the notch. Ada tried to pull it free, but the metal had grown cold enough to burn. On the cellar steps, the coat rose another inch. There was nothing inside it. The fingers belonged to something farther down.\\\\n\\\\nThe constable’s boots hammered across the landing. A moment later he appeared on the stairs, lantern raised. Its light fell through the open cellar door, onto a black mound of coal and the toe of a buried shoe.\\\\n\\\\n“Venn?” he said.\\\\n\\\\nThe fifth knock sounded from inside the tin.\\\\n\\\\nAda tore the nail loose. The key turned by itself, hard against her palm. The cellar door slammed shut, catching the blue sleeve in its frame.\\\\n\\\\nFor a moment, everyone watched the cloth twitch. Then, from beneath the stove, water began to seep upward again.\\\"\\n}\",\n        \"refusal\": null,\n        \"annotations\": []\n      },\n      \"finish_reason\": \"stop\"\n    }\n  ],\n  \"usage\": {\n    \"prompt_tokens\": 391,\n    \"completion_tokens\": 430,\n    \"total_tokens\": 821,\n    \"prompt_tokens_details\": {\n      \"cached_tokens\": 0,\n      \"cache_write_tokens\": 0,\n      \"audio_tokens\": 0\n    },\n    \"completion_tokens_details\": {\n      \"reasoning_tokens\": 22,\n      \"audio_tokens\": 0,\n      \"accepted_prediction_tokens\": 0,\n      \"rejected_prediction_tokens\": 0\n    }\n  },\n  \"service_tier\": \"default\",\n  \"system_fingerprint\": null\n}\n",
+  "response_headers": {
+    "Date": "Tue, 22 Sep 2026 20:49:34 GMT",
+    "openai-processing-ms": "6632",
+    "x-request-id": "req_363bd95f2b3d43b48a9b5e2a629f1ec7"
+  },
+  "output": "{\n  \"rule\": \"Return this JSON object with the rule field unchanged and a new passage of about 250 words in the text field.\",\n  \"text\": \"Ada pressed the nail into the notch. The knocking stopped halfway through its next blow.\\n\\nFrom upstairs, the constable shouted, “Who’s down there?”\\n\\n“No one,” Ada said, though she could see fingers now, pale against the blue-checked sleeve. They gripped the cellar step and pulled the coat slowly upward.\\n\\nVenn’s wife seized the tin from Ada’s hand. “You’ve got it the wrong way round.”\\n\\nShe flipped the lid open. On its underside, four shallow dents formed a crooked line. Ada looked at the key. Its notches matched them, except for the new one beneath her thumb.\\n\\n“How many times did he knock?” Venn’s wife asked.\\n\\n“Five,” Elias whispered.\\n\\n“Three, then two.” She pushed Ada’s hand away from the lock. “Don’t give it the fifth.”\\n\\nThe nail stayed caught in the notch. Ada tried to pull it free, but the metal had grown cold enough to burn. On the cellar steps, the coat rose another inch. There was nothing inside it. The fingers belonged to something farther down.\\n\\nThe constable’s boots hammered across the landing. A moment later he appeared on the stairs, lantern raised. Its light fell through the open cellar door, onto a black mound of coal and the toe of a buried shoe.\\n\\n“Venn?” he said.\\n\\nThe fifth knock sounded from inside the tin.\\n\\nAda tore the nail loose. The key turned by itself, hard against her palm. The cellar door slammed shut, catching the blue sleeve in its frame.\\n\\nFor a moment, everyone watched the cloth twitch. Then, from beneath the stove, water began to seep upward again.\"\n}",
+  "output_sha256": "cb7661e15e9d8ee103b79452c52925ef76bcc43c5583b88a97e9f2df0576b775",
+  "finish_reason": "stop",
+  "refusal": null,
+  "returned_model": "gpt-6-sol",
+  "usage": {
+    "prompt_tokens": 391,
+    "completion_tokens": 430,
+    "total_tokens": 821,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 22,
+      "audio_tokens": 0,
+      "accepted_prediction_tokens": 0,
+      "rejected_prediction_tokens": 0
+    }
+  },
+  "format": {
+    "json_object": true,
+    "rule_unchanged": true,
+    "passage_is_string": true,
+    "passage_sha256": "f22c1aa5ed98074da01e86382421111de5af947f0a5aaa826ac9f9ea6017920b",
+    "passage_words": 261
+  },
+  "finished_at": "2026-09-22T20:49:30.821207+00:00",
+  "latency_seconds": 6.7784,
+  "usage_cost_upper_estimate_usd": 0.005082,
+  "stream_status": "active",
+  "budget": {
+    "usage_cost_upper_estimate_usd": 0.113412,
+    "uncertain_cost_reserve_usd": 0.0,
+    "in_flight_reserve_usd": 0.0,
+    "limit_usd": 3.0
+  }
+}

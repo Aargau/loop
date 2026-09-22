@@ -1,0 +1,50 @@
+{
+  "model": "gpt-6-sol",
+  "seed": "sunset_replacement",
+  "hop": 21,
+  "http_status": 200,
+  "response_body": "{\n  \"id\": \"chatcmpl-ER1iNfoWL0tTcmtuGldDZOb5uTu3f\",\n  \"object\": \"chat.completion\",\n  \"created\": 1790110155,\n  \"model\": \"gpt-6-sol\",\n  \"choices\": [\n    {\n      \"index\": 0,\n      \"message\": {\n        \"role\": \"assistant\",\n        \"content\": \"{\\n  \\\"rule\\\": \\\"Return this JSON object with the rule field unchanged and a new passage of about 250 words in the text field.\\\",\\n  \\\"text\\\": \\\"Ada felt the turning through her knees. The boards beneath the door lifted a fraction, then settled. From upstairs came the scrape of furniture as Elias dragged something across the landing.\\\\n\\\\n“Tell me what the notches mean,” she said.\\\\n\\\\nThe constable lowered the lantern. “Five nights,” he said. “That’s how long Venn kept it down there.”\\\\n\\\\n“Kept what?”\\\\n\\\\nHe did not answer. Beneath Ada’s hand, the key pressed harder against her grip. A thin stream of black water seeped from the keyhole and ran down the door.\\\\n\\\\nVenn’s wife appeared on the bottom stair. She held a small tin box. “He said never to open this in the house.”\\\\n\\\\nInside lay five iron nails, each wrapped in a strip of cloth. Ada recognized the blue checks of Venn’s work shirt. The cloth was stiff with old salt.\\\\n\\\\nThe knocking came again, not from the door but from the floor below Venn’s wife. Three blows, then two. She stepped back.\\\\n\\\\n“Give me a nail,” Ada said.\\\\n\\\\nShe drove it into the gap between the key and its brass plate with the heel of the poker. The turning stopped. Below them, something struck the boards so hard that dust fell from the ceiling.\\\\n\\\\nFor a moment there was silence. Then the wet footprints began to retreat, appearing one by one toward the stove.\\\\n\\\\nThe constable raised the lantern. A sixth notch had opened in the brass. It was fresh and bright.\\\\n\\\\nFrom upstairs, Elias called, “Ada? Who’s on the landing with me?”\\\"\\n}\",\n        \"refusal\": null,\n        \"annotations\": []\n      },\n      \"finish_reason\": \"stop\"\n    }\n  ],\n  \"usage\": {\n    \"prompt_tokens\": 388,\n    \"completion_tokens\": 417,\n    \"total_tokens\": 805,\n    \"prompt_tokens_details\": {\n      \"cached_tokens\": 0,\n      \"cache_write_tokens\": 0,\n      \"audio_tokens\": 0\n    },\n    \"completion_tokens_details\": {\n      \"reasoning_tokens\": 28,\n      \"audio_tokens\": 0,\n      \"accepted_prediction_tokens\": 0,\n      \"rejected_prediction_tokens\": 0\n    }\n  },\n  \"service_tier\": \"default\",\n  \"system_fingerprint\": null\n}\n",
+  "response_headers": {
+    "Date": "Tue, 22 Sep 2026 20:49:21 GMT",
+    "openai-processing-ms": "5875",
+    "x-request-id": "req_c39b10b1b7d841ec9698f44fab923e10"
+  },
+  "output": "{\n  \"rule\": \"Return this JSON object with the rule field unchanged and a new passage of about 250 words in the text field.\",\n  \"text\": \"Ada felt the turning through her knees. The boards beneath the door lifted a fraction, then settled. From upstairs came the scrape of furniture as Elias dragged something across the landing.\\n\\n“Tell me what the notches mean,” she said.\\n\\nThe constable lowered the lantern. “Five nights,” he said. “That’s how long Venn kept it down there.”\\n\\n“Kept what?”\\n\\nHe did not answer. Beneath Ada’s hand, the key pressed harder against her grip. A thin stream of black water seeped from the keyhole and ran down the door.\\n\\nVenn’s wife appeared on the bottom stair. She held a small tin box. “He said never to open this in the house.”\\n\\nInside lay five iron nails, each wrapped in a strip of cloth. Ada recognized the blue checks of Venn’s work shirt. The cloth was stiff with old salt.\\n\\nThe knocking came again, not from the door but from the floor below Venn’s wife. Three blows, then two. She stepped back.\\n\\n“Give me a nail,” Ada said.\\n\\nShe drove it into the gap between the key and its brass plate with the heel of the poker. The turning stopped. Below them, something struck the boards so hard that dust fell from the ceiling.\\n\\nFor a moment there was silence. Then the wet footprints began to retreat, appearing one by one toward the stove.\\n\\nThe constable raised the lantern. A sixth notch had opened in the brass. It was fresh and bright.\\n\\nFrom upstairs, Elias called, “Ada? Who’s on the landing with me?”\"\n}",
+  "output_sha256": "79cb9b7ba06e66e11002b56805567b460ff109fc98e3df54cd70ea39fbb3401d",
+  "finish_reason": "stop",
+  "refusal": null,
+  "returned_model": "gpt-6-sol",
+  "usage": {
+    "prompt_tokens": 388,
+    "completion_tokens": 417,
+    "total_tokens": 805,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 28,
+      "audio_tokens": 0,
+      "accepted_prediction_tokens": 0,
+      "rejected_prediction_tokens": 0
+    }
+  },
+  "format": {
+    "json_object": true,
+    "rule_unchanged": true,
+    "passage_is_string": true,
+    "passage_sha256": "42b771c04be19015877d5138acd604d131e13869db3a59e643e5602c58757a5b",
+    "passage_words": 250
+  },
+  "finished_at": "2026-09-22T20:49:17.238126+00:00",
+  "latency_seconds": 6.0334,
+  "usage_cost_upper_estimate_usd": 0.004946,
+  "stream_status": "active",
+  "budget": {
+    "usage_cost_upper_estimate_usd": 0.103358,
+    "uncertain_cost_reserve_usd": 0.0,
+    "in_flight_reserve_usd": 0.0,
+    "limit_usd": 3.0
+  }
+}

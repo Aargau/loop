@@ -1,0 +1,50 @@
+{
+  "model": "gpt-6-sol",
+  "seed": "sunset_replacement",
+  "hop": 52,
+  "http_status": 200,
+  "response_body": "{\n  \"id\": \"chatcmpl-ER1lmyDpz3MZOkpfOzUvStu3x4OTc\",\n  \"object\": \"chat.completion\",\n  \"created\": 1790110366,\n  \"model\": \"gpt-6-sol\",\n  \"choices\": [\n    {\n      \"index\": 0,\n      \"message\": {\n        \"role\": \"assistant\",\n        \"content\": \"{\\n  \\\"rule\\\": \\\"Return this JSON object with the rule field unchanged and a new passage of about 250 words in the text field.\\\",\\n  \\\"text\\\": \\\"The street had changed since the constable last walked it. Rain shone on the paving stones, and every house had drawn its curtains. Yet the child knew the way. She led him past the bakery, past the boarded windows of the school, to a narrow passage he did not remember.\\\\n\\\\nAt its end stood an iron gate. Beyond it, a garden had grown wild around a little brick house. A light burned in the upstairs window.\\\\n\\\\nThe constable fitted the key into the lock. It turned at once.\\\\n\\\\nFor a moment, nobody moved. Then the child slipped through and ran up the path. She stopped at the door and looked back, waiting for the woman.\\\\n\\\\nThe woman passed the constable without a word. Rain fell through the loose strands of her hair, but her dress stayed dry. At the doorstep, she knelt and took the child’s face between her hands.\\\\n\\\\nAda had followed them as far as the passage. She saw the two figures lean together. When they stood, there was only the woman, holding a small, wet coat.\\\\n\\\\nThe light upstairs went out.\\\\n\\\\nThe constable rested a hand on the open gate. “Who lives there?” he asked.\\\\n\\\\n“No one,” Ada said. She had checked the house herself, years ago, when the letters first began to arrive.\\\\n\\\\nHe looked down at the key. Its teeth were worn smooth, and his hand had left a dark mark on the iron.\\\\n\\\\nBehind them, the woman shut the garden gate. This time, the latch caught gently.\\\"\\n}\",\n        \"refusal\": null,\n        \"annotations\": []\n      },\n      \"finish_reason\": \"stop\"\n    }\n  ],\n  \"usage\": {\n    \"prompt_tokens\": 392,\n    \"completion_tokens\": 394,\n    \"total_tokens\": 786,\n    \"prompt_tokens_details\": {\n      \"cached_tokens\": 0,\n      \"cache_write_tokens\": 0,\n      \"audio_tokens\": 0\n    },\n    \"completion_tokens_details\": {\n      \"reasoning_tokens\": 24,\n      \"audio_tokens\": 0,\n      \"accepted_prediction_tokens\": 0,\n      \"rejected_prediction_tokens\": 0\n    }\n  },\n  \"service_tier\": \"default\",\n  \"system_fingerprint\": null\n}\n",
+  "response_headers": {
+    "Date": "Tue, 22 Sep 2026 20:52:52 GMT",
+    "openai-processing-ms": "6072",
+    "x-request-id": "req_f786eb8504f94253abc664c5bca4a93e"
+  },
+  "output": "{\n  \"rule\": \"Return this JSON object with the rule field unchanged and a new passage of about 250 words in the text field.\",\n  \"text\": \"The street had changed since the constable last walked it. Rain shone on the paving stones, and every house had drawn its curtains. Yet the child knew the way. She led him past the bakery, past the boarded windows of the school, to a narrow passage he did not remember.\\n\\nAt its end stood an iron gate. Beyond it, a garden had grown wild around a little brick house. A light burned in the upstairs window.\\n\\nThe constable fitted the key into the lock. It turned at once.\\n\\nFor a moment, nobody moved. Then the child slipped through and ran up the path. She stopped at the door and looked back, waiting for the woman.\\n\\nThe woman passed the constable without a word. Rain fell through the loose strands of her hair, but her dress stayed dry. At the doorstep, she knelt and took the child’s face between her hands.\\n\\nAda had followed them as far as the passage. She saw the two figures lean together. When they stood, there was only the woman, holding a small, wet coat.\\n\\nThe light upstairs went out.\\n\\nThe constable rested a hand on the open gate. “Who lives there?” he asked.\\n\\n“No one,” Ada said. She had checked the house herself, years ago, when the letters first began to arrive.\\n\\nHe looked down at the key. Its teeth were worn smooth, and his hand had left a dark mark on the iron.\\n\\nBehind them, the woman shut the garden gate. This time, the latch caught gently.\"\n}",
+  "output_sha256": "91816bcfadcfc6bd5f5143b7424a26568e038159436694b520b87b5848084b3d",
+  "finish_reason": "stop",
+  "refusal": null,
+  "returned_model": "gpt-6-sol",
+  "usage": {
+    "prompt_tokens": 392,
+    "completion_tokens": 394,
+    "total_tokens": 786,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 24,
+      "audio_tokens": 0,
+      "accepted_prediction_tokens": 0,
+      "rejected_prediction_tokens": 0
+    }
+  },
+  "format": {
+    "json_object": true,
+    "rule_unchanged": true,
+    "passage_is_string": true,
+    "passage_sha256": "0c6cbfeb684abb6f989addfcfe84023175f45e3f1f90094c79b34cda9c89b025",
+    "passage_words": 253
+  },
+  "finished_at": "2026-09-22T20:52:48.157333+00:00",
+  "latency_seconds": 6.3238,
+  "usage_cost_upper_estimate_usd": 0.004724,
+  "stream_status": "active",
+  "budget": {
+    "usage_cost_upper_estimate_usd": 0.260494,
+    "uncertain_cost_reserve_usd": 0.0,
+    "in_flight_reserve_usd": 0.0,
+    "limit_usd": 3.0
+  }
+}

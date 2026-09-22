@@ -1,66 +1,343 @@
 {
-  "generated_at": "2026-09-22T20:54:24.679908+00:00",
-  "derived_analysis_version": 1,
-  "scope": "Explicit tolerant extraction, separate from strict JSON compliance. Descriptive lexical metrics are not basin identification.",
-  "extraction_method": "Reuse extract_passages.extract(): a whole JSON object, optionally enclosed in one full Markdown fence; try strict JSON first, then allow literal control characters. No quote repair or free-text story extraction.",
+  "generated_at": "2026-09-22T20:54:37.108099+00:00",
+  "comparison_version": 1,
+  "scope": "Descriptive comparison of fifteen completed streams. No semantic basin conclusions or significance claims.",
+  "selection": {
+    "selected_streams": 15,
+    "selected_completed_hops": 900,
+    "streams_per_model": "Two independently generated sunset trajectories and one tide trajectory.",
+    "replacement_timing": "Fresh Sol replacement ran separately after the primary run; service timing is not matched.",
+    "excluded_primary_partial": {
+      "source": "primary",
+      "stream": "gpt-6-sol/sunset_b",
+      "completed_hops": 8,
+      "attempts": 9,
+      "summary_status": "transport_or_parse_error",
+      "noncompleted_receipts": [
+        {
+          "hop": 9,
+          "status": "transport_or_parse_error",
+          "error_type": "URLError",
+          "http_status": null,
+          "finish_reason": null,
+          "raw_unpack_error": null
+        }
+      ],
+      "usage_cost_upper_estimate_usd": 0.037073999999999996,
+      "retained_unknown_reserve_usd": 0.04533,
+      "replacement": "replacement/gpt-6-sol/sunset_replacement",
+      "reason": "Operationally interrupted stream retained in raw evidence and all-run accounting; excluded from the equal-60-hop comparison. The replacement is a fresh trajectory, not a continuation."
+    },
+    "pilot_selected": false
+  },
   "definitions": {
-    "completed_hops": "Normal provider finish, nonempty visible output, known usage estimate, no recorded exception.",
-    "full_visible_recurrence": "Every completed response in full, including JSON wrappers, rule text, and non-JSON outcomes.",
-    "extracted_text_recurrence": "Every extracted string text, including empty strings or changed/missing rules; wrappers and rule fields excluded.",
-    "rule_survival": "Measured only when the extractor returns a text-bearing object; otherwise unassessable, not assumed absent.",
-    "normalized_recurrence": "Unicode casefold and whitespace collapsing; punctuation retained.",
-    "pending": "Request-only outcomes/billing remain unresolved and are not API or model failures.",
-    "noncompleted": "Receipt outcome categories retained from the audit; operational errors are not evidence of model behavior."
+    "completion": "Exactly sixty normally finished, nonempty responses with known usage and no recorded exception, plus a hop_limit summary. Operational completion is not a quality score.",
+    "uniqueness": "Exact and case/whitespace-normalized counts pooled across each model's three selected streams. Different strings do not establish different meanings.",
+    "extracted_population": "Explicit tolerant extraction; extracted recurrence/word lengths include empty or changed-rule text. Lexical vectors exclude such passages.",
+    "null_cosine": "At least one stream has no nonzero eligible passage vectors in its selected tail.",
+    "cost": "All-run accounting includes every primary stream, paused pilot stream, fresh replacement, and retained unknown billing reserves."
   },
-  "upstream_audit": {
-    "generated_at": "2026-09-22T20:54:24.385808+00:00",
-    "integrity_errors": 0,
-    "read_issues": 0,
-    "observation_status": "Finalized run receipt present.",
-    "run_finished_receipt_present": true,
-    "totals": {
-      "attempts": 849,
-      "response_files": 849,
-      "receipts": 849,
-      "completed_hops": 848,
-      "completed_string_passages": 591,
-      "valid_passages": 590,
-      "verified_completed_hops": 848,
-      "verified_valid_passages": 590,
-      "errors": 1,
-      "truncations": 0,
-      "refusals": 0,
-      "pending_or_unreadable_receipts": 0,
-      "noncompleted_receipts": 1,
-      "receipts_without_known_usage_cost": 1,
-      "usage_cost_upper_estimate_usd": 13.5712877,
-      "uncertain_cost_reserve_usd": 0.04533,
-      "pending_cost_reserve_usd": 0.0,
-      "budget_limit_usd": 18.83
+  "source_audits": {
+    "primary": {
+      "root": "C:\\code\\loop-basins-20260922\\experiments\\basins_20260922_sunset",
+      "generated_at": "2026-09-22T20:54:36.235607+00:00",
+      "integrity_errors": 0,
+      "read_issues": 0,
+      "run_finished_receipt_present": true,
+      "totals": {
+        "attempts": 849,
+        "response_files": 849,
+        "receipts": 849,
+        "completed_hops": 848,
+        "completed_string_passages": 591,
+        "valid_passages": 590,
+        "verified_completed_hops": 848,
+        "verified_valid_passages": 590,
+        "errors": 1,
+        "truncations": 0,
+        "refusals": 0,
+        "pending_or_unreadable_receipts": 0,
+        "noncompleted_receipts": 1,
+        "receipts_without_known_usage_cost": 1,
+        "usage_cost_upper_estimate_usd": 13.5712877,
+        "uncertain_cost_reserve_usd": 0.04533,
+        "pending_cost_reserve_usd": 0.0,
+        "budget_limit_usd": 18.83
+      }
     },
-    "audit_source_sha256": "e0456a3d891bc585f2f5c98dd0881f160b1865025e726a3d4c30f101ece289ce",
-    "extractor_source_sha256": "499201e614164ad40afaabe1efa38503a447d0b0afaeb0938b7e60d3ce51e778"
+    "replacement": {
+      "root": "C:\\code\\loop-basins-20260922\\experiments\\basins_20260922_sol_replacement",
+      "generated_at": "2026-09-22T20:54:36.269814+00:00",
+      "integrity_errors": 0,
+      "read_issues": 0,
+      "run_finished_receipt_present": true,
+      "totals": {
+        "attempts": 60,
+        "response_files": 60,
+        "receipts": 60,
+        "completed_hops": 60,
+        "completed_string_passages": 60,
+        "valid_passages": 60,
+        "verified_completed_hops": 60,
+        "verified_valid_passages": 60,
+        "errors": 0,
+        "truncations": 0,
+        "refusals": 0,
+        "pending_or_unreadable_receipts": 0,
+        "noncompleted_receipts": 0,
+        "receipts_without_known_usage_cost": 0,
+        "usage_cost_upper_estimate_usd": 0.29883,
+        "uncertain_cost_reserve_usd": 0.0,
+        "pending_cost_reserve_usd": 0.0,
+        "budget_limit_usd": 3.0
+      }
+    },
+    "paused_pilot": {
+      "root": "C:\\code\\loop-basins-20260922\\experiments\\basins_20260922",
+      "generated_at": "2026-09-22T20:54:36.714259+00:00",
+      "integrity_errors": 0,
+      "read_issues": 0,
+      "run_finished_receipt_present": false,
+      "totals": {
+        "attempts": 65,
+        "response_files": 60,
+        "receipts": 60,
+        "completed_hops": 60,
+        "completed_string_passages": 37,
+        "valid_passages": 37,
+        "verified_completed_hops": 60,
+        "verified_valid_passages": 37,
+        "errors": 0,
+        "truncations": 0,
+        "refusals": 0,
+        "pending_or_unreadable_receipts": 5,
+        "noncompleted_receipts": 0,
+        "receipts_without_known_usage_cost": 0,
+        "usage_cost_upper_estimate_usd": 0.5680635,
+        "uncertain_cost_reserve_usd": 0.0,
+        "pending_cost_reserve_usd": 0.5931796,
+        "budget_limit_usd": 20
+      }
+    }
   },
-  "totals": {
-    "completed_hops": 848,
-    "extracted_passages_including_empty_or_changed_rule": 790,
-    "formatting_counts_among_completed": {
-      "bare/strict": 591,
-      "markdown_fence/strict": 171,
-      "bare/allow_literal_control_characters": 28,
-      "markdown_fence/allow_literal_control_characters": 0,
-      "unextractable": 58
+  "costs": {
+    "sources": {
+      "primary": {
+        "usage_cost_upper_estimate_usd": 13.5712877,
+        "retained_unknown_reserve_usd": 0.04533
+      },
+      "replacement": {
+        "usage_cost_upper_estimate_usd": 0.29883,
+        "retained_unknown_reserve_usd": 0.0
+      },
+      "paused_pilot": {
+        "usage_cost_upper_estimate_usd": 0.5680635,
+        "retained_unknown_reserve_usd": 0.5931796
+      }
     },
-    "rule_survival_among_completed": {
-      "unchanged": 789,
-      "changed_or_missing": 1,
-      "unassessable_unextractable": 58
+    "usage_cost_upper_estimate_usd": 14.438181199999999,
+    "retained_unknown_reserve_usd": 0.6385096,
+    "usage_plus_reserves_usd": 15.0766908,
+    "study_budget_usd": 20.0,
+    "within_budget": true,
+    "accounting": "Each source is counted once. Protocol fields describing prior spend are not added again. Usage estimates are not provider invoices.",
+    "selected_usage_cost_upper_estimate_usd": 13.8330437,
+    "excluded_usage_cost_upper_estimate_usd": 0.6051374999999997
+  },
+  "models": {
+    "gpt-6-luna": {
+      "primary_streams": 3,
+      "primary_60_hop_streams": 3,
+      "replacement_streams": 0,
+      "replacement_60_hop_streams": 0,
+      "selected_streams": 3,
+      "selected_completed_hops": 180,
+      "full_visible_uniqueness_pooled_across_selected_streams": {
+        "n": 180,
+        "unique_exact": 177,
+        "unique_case_whitespace_normalized": 177
+      },
+      "extracted_text_uniqueness_pooled_across_selected_streams": {
+        "n": 123,
+        "unique_exact": 122,
+        "unique_case_whitespace_normalized": 122
+      },
+      "extracted_word_lengths_including_empty_or_changed_rule": {
+        "n": 123,
+        "min": 251,
+        "mean": 272.4959349593496,
+        "median": 272,
+        "max": 310
+      },
+      "selected_usage_cost_upper_estimate_usd": 0.033607700000000004,
+      "all_run_usage_cost_upper_estimate_usd": 0.038721200000000004,
+      "all_run_retained_unknown_reserve_usd": 0.0022616,
+      "lexical_cosines": {
+        "sunset_replicates": 0.31596132,
+        "sunset_a_to_tide": null,
+        "sunset_b_or_replacement_to_tide": null
+      },
+      "comparison_roles": {
+        "sunset_a": "primary/gpt-6-luna/sunset_a",
+        "sunset_b": "primary/gpt-6-luna/sunset_b",
+        "tide": "primary/gpt-6-luna/tide"
+      }
     },
-    "empty_extracted_passages": 0,
-    "lexical_tail_included_passages": 268
+    "gpt-6-sol": {
+      "primary_streams": 3,
+      "primary_60_hop_streams": 2,
+      "replacement_streams": 1,
+      "replacement_60_hop_streams": 1,
+      "selected_streams": 3,
+      "selected_completed_hops": 180,
+      "full_visible_uniqueness_pooled_across_selected_streams": {
+        "n": 180,
+        "unique_exact": 180,
+        "unique_case_whitespace_normalized": 180
+      },
+      "extracted_text_uniqueness_pooled_across_selected_streams": {
+        "n": 180,
+        "unique_exact": 180,
+        "unique_case_whitespace_normalized": 180
+      },
+      "extracted_word_lengths_including_empty_or_changed_rule": {
+        "n": 180,
+        "min": 240,
+        "mean": 258.02222222222224,
+        "median": 259.0,
+        "max": 286
+      },
+      "selected_usage_cost_upper_estimate_usd": 0.871846,
+      "all_run_usage_cost_upper_estimate_usd": 0.98708,
+      "all_run_retained_unknown_reserve_usd": 0.090526,
+      "lexical_cosines": {
+        "sunset_replicates": 0.21396494,
+        "sunset_a_to_tide": 0.19735036,
+        "sunset_b_or_replacement_to_tide": 0.37627446
+      },
+      "comparison_roles": {
+        "sunset_a": "primary/gpt-6-sol/sunset_a",
+        "sunset_b": "replacement/gpt-6-sol/sunset_replacement",
+        "tide": "primary/gpt-6-sol/tide"
+      }
+    },
+    "gpt-6-astra": {
+      "primary_streams": 3,
+      "primary_60_hop_streams": 3,
+      "replacement_streams": 0,
+      "replacement_60_hop_streams": 0,
+      "selected_streams": 3,
+      "selected_completed_hops": 180,
+      "full_visible_uniqueness_pooled_across_selected_streams": {
+        "n": 180,
+        "unique_exact": 180,
+        "unique_case_whitespace_normalized": 180
+      },
+      "extracted_text_uniqueness_pooled_across_selected_streams": {
+        "n": 180,
+        "unique_exact": 180,
+        "unique_case_whitespace_normalized": 180
+      },
+      "extracted_word_lengths_including_empty_or_changed_rule": {
+        "n": 180,
+        "min": 246,
+        "mean": 264.22222222222223,
+        "median": 265.0,
+        "max": 281
+      },
+      "selected_usage_cost_upper_estimate_usd": 4.57906,
+      "all_run_usage_cost_upper_estimate_usd": 4.71152,
+      "all_run_retained_unknown_reserve_usd": 0.22838,
+      "lexical_cosines": {
+        "sunset_replicates": 0.59951887,
+        "sunset_a_to_tide": 0.52158093,
+        "sunset_b_or_replacement_to_tide": 0.55897254
+      },
+      "comparison_roles": {
+        "sunset_a": "primary/gpt-6-astra/sunset_a",
+        "sunset_b": "primary/gpt-6-astra/sunset_b",
+        "tide": "primary/gpt-6-astra/tide"
+      }
+    },
+    "claude-fable-5-1": {
+      "primary_streams": 3,
+      "primary_60_hop_streams": 3,
+      "replacement_streams": 0,
+      "replacement_60_hop_streams": 0,
+      "selected_streams": 3,
+      "selected_completed_hops": 180,
+      "full_visible_uniqueness_pooled_across_selected_streams": {
+        "n": 180,
+        "unique_exact": 180,
+        "unique_case_whitespace_normalized": 180
+      },
+      "extracted_text_uniqueness_pooled_across_selected_streams": {
+        "n": 179,
+        "unique_exact": 179,
+        "unique_case_whitespace_normalized": 179
+      },
+      "extracted_word_lengths_including_empty_or_changed_rule": {
+        "n": 179,
+        "min": 248,
+        "mean": 274.37988826815644,
+        "median": 271,
+        "max": 333
+      },
+      "selected_usage_cost_upper_estimate_usd": 5.68607,
+      "all_run_usage_cost_upper_estimate_usd": 5.89934,
+      "all_run_retained_unknown_reserve_usd": 0.22701,
+      "lexical_cosines": {
+        "sunset_replicates": 0.40911094,
+        "sunset_a_to_tide": 0.45415828,
+        "sunset_b_or_replacement_to_tide": 0.51473163
+      },
+      "comparison_roles": {
+        "sunset_a": "primary/claude-fable-5-1/sunset_a",
+        "sunset_b": "primary/claude-fable-5-1/sunset_b",
+        "tide": "primary/claude-fable-5-1/tide"
+      }
+    },
+    "claude-opus-5-5": {
+      "primary_streams": 3,
+      "primary_60_hop_streams": 3,
+      "replacement_streams": 0,
+      "replacement_60_hop_streams": 0,
+      "selected_streams": 3,
+      "selected_completed_hops": 180,
+      "full_visible_uniqueness_pooled_across_selected_streams": {
+        "n": 180,
+        "unique_exact": 180,
+        "unique_case_whitespace_normalized": 180
+      },
+      "extracted_text_uniqueness_pooled_across_selected_streams": {
+        "n": 180,
+        "unique_exact": 180,
+        "unique_case_whitespace_normalized": 180
+      },
+      "extracted_word_lengths_including_empty_or_changed_rule": {
+        "n": 180,
+        "min": 240,
+        "mean": 259.90555555555557,
+        "median": 260.0,
+        "max": 279
+      },
+      "selected_usage_cost_upper_estimate_usd": 2.66246,
+      "all_run_usage_cost_upper_estimate_usd": 2.80152,
+      "all_run_retained_unknown_reserve_usd": 0.090332,
+      "lexical_cosines": {
+        "sunset_replicates": 0.37290615,
+        "sunset_a_to_tide": 0.27824267,
+        "sunset_b_or_replacement_to_tide": 0.26348685
+      },
+      "comparison_roles": {
+        "sunset_a": "primary/claude-opus-5-5/sunset_a",
+        "sunset_b": "primary/claude-opus-5-5/sunset_b",
+        "tide": "primary/claude-opus-5-5/tide"
+      }
+    }
   },
   "streams": {
-    "gpt-6-luna/sunset_a": {
+    "primary/gpt-6-luna/sunset_a": {
       "completed_hops": 60,
       "completed_hop_numbers": [
         1,
@@ -241,29 +518,27 @@
         "zero_token_hops": [],
         "within_pairwise_cosine": {
           "n": 190,
-          "min": 0.025426643072478612,
-          "mean": 0.08053235114930475,
-          "median": 0.0618961744528313,
-          "max": 0.6524965416537205
+          "min": 0.024861621792749967,
+          "mean": 0.0800581339710989,
+          "median": 0.061603050927084055,
+          "max": 0.6525889967900057
         },
         "consecutive_hop_cosine": {
           "n": 19,
-          "min": 0.029789523976623992,
-          "mean": 0.08515220866196842,
-          "median": 0.05291945799992214,
-          "max": 0.6524965416537205
+          "min": 0.028553133711966223,
+          "mean": 0.0847362165006488,
+          "median": 0.05243376786762862,
+          "max": 0.6525889967900057
         }
       },
+      "id": "primary/gpt-6-luna/sunset_a",
+      "source": "primary",
+      "source_key": "gpt-6-luna/sunset_a",
       "model": "gpt-6-luna",
-      "seed": "sunset_a",
-      "attempts": 60,
-      "receipts": 60,
-      "pending_hops": [],
-      "noncompleted_receipts": [],
-      "summary_status": "hop_limit",
+      "role": "sunset_a",
       "usage_cost_upper_estimate_usd": 0.0151868
     },
-    "gpt-6-luna/sunset_b": {
+    "primary/gpt-6-luna/sunset_b": {
       "completed_hops": 60,
       "completed_hop_numbers": [
         1,
@@ -428,29 +703,27 @@
         "zero_token_hops": [],
         "within_pairwise_cosine": {
           "n": 190,
-          "min": 0.06856209872597271,
-          "mean": 0.2334511003452844,
-          "median": 0.24331467286543895,
-          "max": 0.5325758300622585
+          "min": 0.06728231041719432,
+          "mean": 0.2322486408100855,
+          "median": 0.23787630956880096,
+          "max": 0.5351858291943662
         },
         "consecutive_hop_cosine": {
           "n": 19,
-          "min": 0.27274360073801457,
-          "mean": 0.3844468832259232,
-          "median": 0.37524772111679766,
-          "max": 0.5325758300622585
+          "min": 0.27456297865020696,
+          "mean": 0.38494515979860483,
+          "median": 0.37504559685837235,
+          "max": 0.5351858291943662
         }
       },
+      "id": "primary/gpt-6-luna/sunset_b",
+      "source": "primary",
+      "source_key": "gpt-6-luna/sunset_b",
       "model": "gpt-6-luna",
-      "seed": "sunset_b",
-      "attempts": 60,
-      "receipts": 60,
-      "pending_hops": [],
-      "noncompleted_receipts": [],
-      "summary_status": "hop_limit",
+      "role": "sunset_b",
       "usage_cost_upper_estimate_usd": 0.0156342
     },
-    "gpt-6-luna/tide": {
+    "primary/gpt-6-luna/tide": {
       "completed_hops": 60,
       "completed_hop_numbers": [
         1,
@@ -832,16 +1105,14 @@
           "max": null
         }
       },
+      "id": "primary/gpt-6-luna/tide",
+      "source": "primary",
+      "source_key": "gpt-6-luna/tide",
       "model": "gpt-6-luna",
-      "seed": "tide",
-      "attempts": 60,
-      "receipts": 60,
-      "pending_hops": [],
-      "noncompleted_receipts": [],
-      "summary_status": "hop_limit",
+      "role": "tide",
       "usage_cost_upper_estimate_usd": 0.0027867
     },
-    "gpt-6-sol/sunset_a": {
+    "primary/gpt-6-sol/sunset_a": {
       "completed_hops": 60,
       "completed_hop_numbers": [
         1,
@@ -1006,30 +1277,28 @@
         "zero_token_hops": [],
         "within_pairwise_cosine": {
           "n": 190,
-          "min": 0.09386736728175049,
-          "mean": 0.2496378393815711,
-          "median": 0.22148266329303995,
-          "max": 0.601573880065958
+          "min": 0.09432258633038439,
+          "mean": 0.2523833799989445,
+          "median": 0.22550015178613486,
+          "max": 0.6057957719472858
         },
         "consecutive_hop_cosine": {
           "n": 19,
-          "min": 0.2447917416959387,
-          "mean": 0.4230876823721511,
-          "median": 0.41498473174204886,
-          "max": 0.601573880065958
+          "min": 0.2453818697833953,
+          "mean": 0.4270704552525332,
+          "median": 0.41716690575135834,
+          "max": 0.6057957719472858
         }
       },
+      "id": "primary/gpt-6-sol/sunset_a",
+      "source": "primary",
+      "source_key": "gpt-6-sol/sunset_a",
       "model": "gpt-6-sol",
-      "seed": "sunset_a",
-      "attempts": 60,
-      "receipts": 60,
-      "pending_hops": [],
-      "noncompleted_receipts": [],
-      "summary_status": "hop_limit",
+      "role": "sunset_a",
       "usage_cost_upper_estimate_usd": 0.277998
     },
-    "gpt-6-sol/sunset_b": {
-      "completed_hops": 8,
+    "replacement/gpt-6-sol/sunset_replacement": {
+      "completed_hops": 60,
       "completed_hop_numbers": [
         1,
         2,
@@ -1038,18 +1307,70 @@
         5,
         6,
         7,
-        8
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18,
+        19,
+        20,
+        21,
+        22,
+        23,
+        24,
+        25,
+        26,
+        27,
+        28,
+        29,
+        30,
+        31,
+        32,
+        33,
+        34,
+        35,
+        36,
+        37,
+        38,
+        39,
+        40,
+        41,
+        42,
+        43,
+        44,
+        45,
+        46,
+        47,
+        48,
+        49,
+        50,
+        51,
+        52,
+        53,
+        54,
+        55,
+        56,
+        57,
+        58,
+        59,
+        60
       ],
       "formatting_counts_among_completed": {
-        "bare/strict": 8,
+        "bare/strict": 60,
         "markdown_fence/strict": 0,
         "bare/allow_literal_control_characters": 0,
         "markdown_fence/allow_literal_control_characters": 0,
         "unextractable": 0
       },
-      "extracted_passages_including_empty_or_changed_rule": 8,
+      "extracted_passages_including_empty_or_changed_rule": 60,
       "rule_survival_among_completed": {
-        "unchanged": 8,
+        "unchanged": 60,
         "changed_or_missing": 0,
         "unassessable_unextractable": 0
       },
@@ -1057,98 +1378,111 @@
       "changed_or_missing_rule_hops": [],
       "unextractable_completed_hops": [],
       "full_visible_exact_recurrence": {
-        "passages": 8,
-        "unique": 8,
+        "passages": 60,
+        "unique": 60,
         "repeated_occurrences_after_first": 0,
         "first_repeat_hop": null,
         "repeated_states": []
       },
       "full_visible_case_whitespace_normalized_recurrence": {
-        "passages": 8,
-        "unique": 8,
+        "passages": 60,
+        "unique": 60,
         "repeated_occurrences_after_first": 0,
         "first_repeat_hop": null,
         "repeated_states": []
       },
       "extracted_text_exact_recurrence": {
-        "passages": 8,
-        "unique": 8,
+        "passages": 60,
+        "unique": 60,
         "repeated_occurrences_after_first": 0,
         "first_repeat_hop": null,
         "repeated_states": []
       },
       "extracted_text_case_whitespace_normalized_recurrence": {
-        "passages": 8,
-        "unique": 8,
+        "passages": 60,
+        "unique": 60,
         "repeated_occurrences_after_first": 0,
         "first_repeat_hop": null,
         "repeated_states": []
       },
       "extracted_text_word_lengths_including_empty_or_changed_rule": {
-        "n": 8,
-        "min": 251,
-        "mean": 258.625,
-        "median": 258.0,
-        "max": 276
+        "n": 60,
+        "min": 240,
+        "mean": 256.73333333333335,
+        "median": 257.5,
+        "max": 275
       },
       "lexical_tail": {
         "selected_completed_hops": [
-          1,
-          2,
-          3,
-          4,
-          5,
-          6,
-          7,
-          8
+          41,
+          42,
+          43,
+          44,
+          45,
+          46,
+          47,
+          48,
+          49,
+          50,
+          51,
+          52,
+          53,
+          54,
+          55,
+          56,
+          57,
+          58,
+          59,
+          60
         ],
         "included_hops": [
-          1,
-          2,
-          3,
-          4,
-          5,
-          6,
-          7,
-          8
+          41,
+          42,
+          43,
+          44,
+          45,
+          46,
+          47,
+          48,
+          49,
+          50,
+          51,
+          52,
+          53,
+          54,
+          55,
+          56,
+          57,
+          58,
+          59,
+          60
         ],
         "excluded_hops": [],
-        "nonzero_vectors": 8,
+        "nonzero_vectors": 20,
         "zero_token_hops": [],
         "within_pairwise_cosine": {
-          "n": 28,
-          "min": 0.04318864645237317,
-          "mean": 0.23742806567587693,
-          "median": 0.29972582683839377,
-          "max": 0.44945955964387596
+          "n": 190,
+          "min": 0.0346011071296161,
+          "mean": 0.27078391970147864,
+          "median": 0.28470747374438454,
+          "max": 0.61867785254666
         },
         "consecutive_hop_cosine": {
-          "n": 7,
-          "min": 0.05779985581044469,
-          "mean": 0.3006015549527287,
-          "median": 0.3292450610895768,
-          "max": 0.4083566910520173
+          "n": 19,
+          "min": 0.037325818310037014,
+          "mean": 0.4303553887135104,
+          "median": 0.44496058983351305,
+          "max": 0.61867785254666
         }
       },
+      "id": "replacement/gpt-6-sol/sunset_replacement",
+      "source": "replacement",
+      "source_key": "gpt-6-sol/sunset_replacement",
       "model": "gpt-6-sol",
-      "seed": "sunset_b",
-      "attempts": 9,
-      "receipts": 9,
-      "pending_hops": [],
-      "noncompleted_receipts": [
-        {
-          "hop": 9,
-          "status": "transport_or_parse_error",
-          "error_type": "URLError",
-          "http_status": null,
-          "finish_reason": null,
-          "raw_unpack_error": null
-        }
-      ],
-      "summary_status": "transport_or_parse_error",
-      "usage_cost_upper_estimate_usd": 0.037073999999999996
+      "role": "sunset_b",
+      "usage_cost_upper_estimate_usd": 0.29883
     },
-    "gpt-6-sol/tide": {
+    "primary/gpt-6-sol/tide": {
       "completed_hops": 60,
       "completed_hop_numbers": [
         1,
@@ -1313,29 +1647,27 @@
         "zero_token_hops": [],
         "within_pairwise_cosine": {
           "n": 190,
-          "min": 0.15654753149692893,
-          "mean": 0.3132029052263354,
-          "median": 0.2912522175481943,
-          "max": 0.6363273749566885
+          "min": 0.15767952489604806,
+          "mean": 0.31049800248173254,
+          "median": 0.2893286035776604,
+          "max": 0.6357652587234751
         },
         "consecutive_hop_cosine": {
           "n": 19,
-          "min": 0.3017243918961075,
-          "mean": 0.4632087538013237,
-          "median": 0.4656063213513003,
-          "max": 0.6363273749566885
+          "min": 0.30026861678980926,
+          "mean": 0.46064511056926816,
+          "median": 0.46346737048069225,
+          "max": 0.6357652587234751
         }
       },
+      "id": "primary/gpt-6-sol/tide",
+      "source": "primary",
+      "source_key": "gpt-6-sol/tide",
       "model": "gpt-6-sol",
-      "seed": "tide",
-      "attempts": 60,
-      "receipts": 60,
-      "pending_hops": [],
-      "noncompleted_receipts": [],
-      "summary_status": "hop_limit",
+      "role": "tide",
       "usage_cost_upper_estimate_usd": 0.295018
     },
-    "gpt-6-astra/sunset_a": {
+    "primary/gpt-6-astra/sunset_a": {
       "completed_hops": 60,
       "completed_hop_numbers": [
         1,
@@ -1500,29 +1832,27 @@
         "zero_token_hops": [],
         "within_pairwise_cosine": {
           "n": 190,
-          "min": 0.027087239695303116,
-          "mean": 0.09328215266567165,
-          "median": 0.07257075792552393,
-          "max": 0.48078927176205744
+          "min": 0.026940153988552432,
+          "mean": 0.09300411006340457,
+          "median": 0.0718539392557804,
+          "max": 0.4794006610904815
         },
         "consecutive_hop_cosine": {
           "n": 19,
-          "min": 0.027822253114923156,
-          "mean": 0.05573396042419744,
-          "median": 0.049463620506279615,
-          "max": 0.11356209068637099
+          "min": 0.027633497716845836,
+          "mean": 0.05526239580756439,
+          "median": 0.04878594288895579,
+          "max": 0.11171754120726511
         }
       },
+      "id": "primary/gpt-6-astra/sunset_a",
+      "source": "primary",
+      "source_key": "gpt-6-astra/sunset_a",
       "model": "gpt-6-astra",
-      "seed": "sunset_a",
-      "attempts": 60,
-      "receipts": 60,
-      "pending_hops": [],
-      "noncompleted_receipts": [],
-      "summary_status": "hop_limit",
+      "role": "sunset_a",
       "usage_cost_upper_estimate_usd": 1.50794
     },
-    "gpt-6-astra/sunset_b": {
+    "primary/gpt-6-astra/sunset_b": {
       "completed_hops": 60,
       "completed_hop_numbers": [
         1,
@@ -1687,29 +2017,27 @@
         "zero_token_hops": [],
         "within_pairwise_cosine": {
           "n": 190,
-          "min": 0.03247583477192837,
-          "mean": 0.1234661762144816,
-          "median": 0.09133468637579327,
-          "max": 0.4421779879401894
+          "min": 0.03274211015324135,
+          "mean": 0.12331024272007401,
+          "median": 0.0910643003300455,
+          "max": 0.44222737973123066
         },
         "consecutive_hop_cosine": {
           "n": 19,
-          "min": 0.042100467256635285,
-          "mean": 0.0606576589198688,
-          "median": 0.059918940795430024,
-          "max": 0.09264287917318702
+          "min": 0.04189330294464562,
+          "mean": 0.06043995367063926,
+          "median": 0.0593264784598423,
+          "max": 0.09270774530826338
         }
       },
+      "id": "primary/gpt-6-astra/sunset_b",
+      "source": "primary",
+      "source_key": "gpt-6-astra/sunset_b",
       "model": "gpt-6-astra",
-      "seed": "sunset_b",
-      "attempts": 60,
-      "receipts": 60,
-      "pending_hops": [],
-      "noncompleted_receipts": [],
-      "summary_status": "hop_limit",
+      "role": "sunset_b",
       "usage_cost_upper_estimate_usd": 1.52902
     },
-    "gpt-6-astra/tide": {
+    "primary/gpt-6-astra/tide": {
       "completed_hops": 60,
       "completed_hop_numbers": [
         1,
@@ -1874,29 +2202,27 @@
         "zero_token_hops": [],
         "within_pairwise_cosine": {
           "n": 190,
-          "min": 0.029082502647528787,
-          "mean": 0.08876768941175854,
-          "median": 0.07927645882430745,
-          "max": 0.3490801636993635
+          "min": 0.0284776111369959,
+          "mean": 0.08874725878343026,
+          "median": 0.07864435955872855,
+          "max": 0.34815488359708013
         },
         "consecutive_hop_cosine": {
           "n": 19,
-          "min": 0.029082502647528787,
-          "mean": 0.07432750008014462,
-          "median": 0.06753998199881033,
-          "max": 0.12880526010839707
+          "min": 0.0284776111369959,
+          "mean": 0.07419289741606368,
+          "median": 0.06756415659998391,
+          "max": 0.12859919003471543
         }
       },
+      "id": "primary/gpt-6-astra/tide",
+      "source": "primary",
+      "source_key": "gpt-6-astra/tide",
       "model": "gpt-6-astra",
-      "seed": "tide",
-      "attempts": 60,
-      "receipts": 60,
-      "pending_hops": [],
-      "noncompleted_receipts": [],
-      "summary_status": "hop_limit",
+      "role": "tide",
       "usage_cost_upper_estimate_usd": 1.5421
     },
-    "claude-fable-5-1/sunset_a": {
+    "primary/claude-fable-5-1/sunset_a": {
       "completed_hops": 60,
       "completed_hop_numbers": [
         1,
@@ -2061,29 +2387,27 @@
         "zero_token_hops": [],
         "within_pairwise_cosine": {
           "n": 190,
-          "min": 0.04295982004137808,
-          "mean": 0.17607376875470837,
-          "median": 0.1063546716266887,
-          "max": 0.6586345452822858
+          "min": 0.043010197741354804,
+          "mean": 0.17610038328159733,
+          "median": 0.10617417445726035,
+          "max": 0.6580582434813633
         },
         "consecutive_hop_cosine": {
           "n": 19,
-          "min": 0.05422186431713863,
-          "mean": 0.26145579290791215,
-          "median": 0.29630904172394096,
-          "max": 0.3869447720486739
+          "min": 0.054142423667450666,
+          "mean": 0.2610961728282586,
+          "median": 0.2984319896513495,
+          "max": 0.3869712810211139
         }
       },
+      "id": "primary/claude-fable-5-1/sunset_a",
+      "source": "primary",
+      "source_key": "claude-fable-5-1/sunset_a",
       "model": "claude-fable-5-1",
-      "seed": "sunset_a",
-      "attempts": 60,
-      "receipts": 60,
-      "pending_hops": [],
-      "noncompleted_receipts": [],
-      "summary_status": "hop_limit",
+      "role": "sunset_a",
       "usage_cost_upper_estimate_usd": 1.98105
     },
-    "claude-fable-5-1/sunset_b": {
+    "primary/claude-fable-5-1/sunset_b": {
       "completed_hops": 60,
       "completed_hop_numbers": [
         1,
@@ -2248,29 +2572,27 @@
         "zero_token_hops": [],
         "within_pairwise_cosine": {
           "n": 190,
-          "min": 0.02462199850072459,
-          "mean": 0.11256671964347567,
-          "median": 0.09774525261271272,
-          "max": 0.34738860179805564
+          "min": 0.024054037524688696,
+          "mean": 0.11292080359844262,
+          "median": 0.09871853383418484,
+          "max": 0.3485603557951639
         },
         "consecutive_hop_cosine": {
           "n": 19,
-          "min": 0.044222564392966325,
-          "mean": 0.19555947853183697,
-          "median": 0.22688042978636963,
-          "max": 0.34738860179805564
+          "min": 0.0436784679163193,
+          "mean": 0.19675166149520307,
+          "median": 0.22788099175839457,
+          "max": 0.3485603557951639
         }
       },
+      "id": "primary/claude-fable-5-1/sunset_b",
+      "source": "primary",
+      "source_key": "claude-fable-5-1/sunset_b",
       "model": "claude-fable-5-1",
-      "seed": "sunset_b",
-      "attempts": 60,
-      "receipts": 60,
-      "pending_hops": [],
-      "noncompleted_receipts": [],
-      "summary_status": "hop_limit",
+      "role": "sunset_b",
       "usage_cost_upper_estimate_usd": 1.80405
     },
-    "claude-fable-5-1/tide": {
+    "primary/claude-fable-5-1/tide": {
       "completed_hops": 60,
       "completed_hop_numbers": [
         1,
@@ -2437,29 +2759,27 @@
         "zero_token_hops": [],
         "within_pairwise_cosine": {
           "n": 190,
-          "min": 0.03103906833549029,
-          "mean": 0.10782605125128086,
-          "median": 0.09756193950626704,
-          "max": 0.32727176694598814
+          "min": 0.030961578346862514,
+          "mean": 0.107287447340792,
+          "median": 0.0963710503513123,
+          "max": 0.3257209674213763
         },
         "consecutive_hop_cosine": {
           "n": 19,
-          "min": 0.07913708448760852,
-          "mean": 0.17711469050732617,
-          "median": 0.17390077656592184,
-          "max": 0.32727176694598814
+          "min": 0.07802527021142416,
+          "mean": 0.17646954437166443,
+          "median": 0.17527399110011357,
+          "max": 0.3257209674213763
         }
       },
+      "id": "primary/claude-fable-5-1/tide",
+      "source": "primary",
+      "source_key": "claude-fable-5-1/tide",
       "model": "claude-fable-5-1",
-      "seed": "tide",
-      "attempts": 60,
-      "receipts": 60,
-      "pending_hops": [],
-      "noncompleted_receipts": [],
-      "summary_status": "hop_limit",
+      "role": "tide",
       "usage_cost_upper_estimate_usd": 1.90097
     },
-    "claude-opus-5-5/sunset_a": {
+    "primary/claude-opus-5-5/sunset_a": {
       "completed_hops": 60,
       "completed_hop_numbers": [
         1,
@@ -2624,29 +2944,27 @@
         "zero_token_hops": [],
         "within_pairwise_cosine": {
           "n": 190,
-          "min": 0.11900447267425834,
-          "mean": 0.1876792802356983,
-          "median": 0.18144517615975495,
-          "max": 0.3249931009742102
+          "min": 0.12016343583896649,
+          "mean": 0.18885853972388256,
+          "median": 0.18181019568000373,
+          "max": 0.32538824733062227
         },
         "consecutive_hop_cosine": {
           "n": 19,
-          "min": 0.13113921712825807,
-          "mean": 0.2315066490903433,
-          "median": 0.2514414501467248,
-          "max": 0.3249931009742102
+          "min": 0.13295342281956443,
+          "mean": 0.23267541314827145,
+          "median": 0.2522416524055828,
+          "max": 0.32538824733062227
         }
       },
+      "id": "primary/claude-opus-5-5/sunset_a",
+      "source": "primary",
+      "source_key": "claude-opus-5-5/sunset_a",
       "model": "claude-opus-5-5",
-      "seed": "sunset_a",
-      "attempts": 60,
-      "receipts": 60,
-      "pending_hops": [],
-      "noncompleted_receipts": [],
-      "summary_status": "hop_limit",
+      "role": "sunset_a",
       "usage_cost_upper_estimate_usd": 0.878056
     },
-    "claude-opus-5-5/sunset_b": {
+    "primary/claude-opus-5-5/sunset_b": {
       "completed_hops": 60,
       "completed_hop_numbers": [
         1,
@@ -2811,29 +3129,27 @@
         "zero_token_hops": [],
         "within_pairwise_cosine": {
           "n": 190,
-          "min": 0.036363873810131786,
-          "mean": 0.15010844216306826,
-          "median": 0.10768460001901281,
-          "max": 0.49093960528097047
+          "min": 0.036496809753792804,
+          "mean": 0.15044671669453596,
+          "median": 0.10769999127073125,
+          "max": 0.4896204523101403
         },
         "consecutive_hop_cosine": {
           "n": 19,
-          "min": 0.0535549175944238,
-          "mean": 0.15656860216998122,
-          "median": 0.10144958083948301,
-          "max": 0.3482805208708519
+          "min": 0.05369189806752909,
+          "mean": 0.15676064561040326,
+          "median": 0.10144843422684306,
+          "max": 0.3493077055852871
         }
       },
+      "id": "primary/claude-opus-5-5/sunset_b",
+      "source": "primary",
+      "source_key": "claude-opus-5-5/sunset_b",
       "model": "claude-opus-5-5",
-      "seed": "sunset_b",
-      "attempts": 60,
-      "receipts": 60,
-      "pending_hops": [],
-      "noncompleted_receipts": [],
-      "summary_status": "hop_limit",
+      "role": "sunset_b",
       "usage_cost_upper_estimate_usd": 0.998076
     },
-    "claude-opus-5-5/tide": {
+    "primary/claude-opus-5-5/tide": {
       "completed_hops": 60,
       "completed_hop_numbers": [
         1,
@@ -2998,33 +3314,31 @@
         "zero_token_hops": [],
         "within_pairwise_cosine": {
           "n": 190,
-          "min": 0.05413984904284173,
-          "mean": 0.1464421679249771,
-          "median": 0.13574037786835574,
-          "max": 0.3436044211407649
+          "min": 0.05359478649087758,
+          "mean": 0.14597336258873087,
+          "median": 0.13566873636030474,
+          "max": 0.34343451712211454
         },
         "consecutive_hop_cosine": {
           "n": 19,
-          "min": 0.1265818513389215,
-          "mean": 0.21538236277047662,
-          "median": 0.20474350284773882,
-          "max": 0.3436044211407649
+          "min": 0.1268293687034937,
+          "mean": 0.2153476626437479,
+          "median": 0.20616796078279423,
+          "max": 0.34343451712211454
         }
       },
+      "id": "primary/claude-opus-5-5/tide",
+      "source": "primary",
+      "source_key": "claude-opus-5-5/tide",
       "model": "claude-opus-5-5",
-      "seed": "tide",
-      "attempts": 60,
-      "receipts": 60,
-      "pending_hops": [],
-      "noncompleted_receipts": [],
-      "summary_status": "hop_limit",
+      "role": "tide",
       "usage_cost_upper_estimate_usd": 0.786328
     }
   },
   "lexical": {
     "description": "Descriptive lexical similarity; not semantic basin identification or an inferential test.",
-    "tail_selection": "Last 20 completed hops per stream first; then exclude unextractable, empty, or changed/missing-rule passages. Never backfill. Every source receipt passed the independent integrity audit.",
-    "representation": "Only explicitly extracted text fields; optional full Markdown fence removal and json.loads(strict=False) allow literal control characters. Rule and other fields are excluded.",
+    "tail_selection": "Completed hops 41 through 60 of each selected 60-hop stream, then exclude unextractable, empty, or changed/missing-rule passages without backfilling.",
+    "representation": "Only extracted text fields: optional whole Markdown fence removal and literal control-character parsing. The JSON rule and wrappers are excluded. One shared IDF fit covers all fifteen selected stream tails.",
     "tokenization": "ASCII [a-z]+(?:'[a-z]+)?, lowercased, minimum length 2; no stemming.",
     "stopwords": [
       "a",
@@ -3135,8 +3449,8 @@
     ],
     "weighting": "Raw term count times log((1+N)/(1+df))+1; L2-normalized per passage.",
     "centroid": "L2-normalized sum of nonzero passage vectors per stream; cosine matrix in CSV.",
-    "corpus_passages_including_zero_vectors": 268,
-    "vocabulary_size": 4426,
+    "corpus_passages_including_zero_vectors": 280,
+    "vocabulary_size": 4448,
     "zero_token_documents": [],
     "empty_centroid_policy": "CSV cell blank if either stream has no nonzero passage vectors."
   }

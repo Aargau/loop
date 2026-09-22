@@ -1,0 +1,50 @@
+{
+  "model": "gpt-6-sol",
+  "seed": "sunset_replacement",
+  "hop": 30,
+  "http_status": 200,
+  "response_body": "{\n  \"id\": \"chatcmpl-ER1jKXesqwrJYk7oztUcAj0p9PYEs\",\n  \"object\": \"chat.completion\",\n  \"created\": 1790110214,\n  \"model\": \"gpt-6-sol\",\n  \"choices\": [\n    {\n      \"index\": 0,\n      \"message\": {\n        \"role\": \"assistant\",\n        \"content\": \"{\\n  \\\"rule\\\": \\\"Return this JSON object with the rule field unchanged and a new passage of about 250 words in the text field.\\\",\\n  \\\"text\\\": \\\"Ada left the pen where it lay. On the page, a third blank line appeared.\\\\n\\\\n“How many names did you cross out?” Elias asked.\\\\n\\\\nVenn looked toward the ceiling. “Everyone who ever lived in this house.”\\\\n\\\\nThe floorboards creaked. Mara’s voice, coming from upstairs now, said, “Everyone except us.”\\\\n\\\\nThe real Mara caught Elias by the sleeve before he could answer. She turned the blackened paper over. On its back, beneath a smear of ash, someone had written a date: tomorrow’s.\\\\n\\\\nThe constable reached for the ledger. Venn seized his wrist. “Don’t touch a name.”\\\\n\\\\nAbove them, the kitchen door banged open. Boots crossed the floor, four deliberate steps, then stopped over the hatch.\\\\n\\\\nAda picked up the pen by its nib. Its barrel was warm. She pressed it to the blank line and wrote HOUSE.\\\\n\\\\nThe nib split. Ink spread through the paper, filling the cellar with the smell of rain on hot stone. Upstairs, every footstep broke into a run. Something struck the kitchen door hard enough to shake dust from the joists.\\\\n\\\\nThe ledger snapped shut. Venn recoiled, but Ada held her ground as black threads crept from its cover toward her shoe. The key in Mara’s hand flared white. For an instant, Ada saw the threads clearly: not ink, but tiny lines of handwriting, each spelling a name.\\\\n\\\\nMara brought the key down on the ledger’s spine. The threads vanished. So did the light.\\\\n\\\\nIn the dark, someone at the top of the stairs began to laugh in the constable’s voice.\\\"\\n}\",\n        \"refusal\": null,\n        \"annotations\": []\n      },\n      \"finish_reason\": \"stop\"\n    }\n  ],\n  \"usage\": {\n    \"prompt_tokens\": 394,\n    \"completion_tokens\": 421,\n    \"total_tokens\": 815,\n    \"prompt_tokens_details\": {\n      \"cached_tokens\": 0,\n      \"cache_write_tokens\": 0,\n      \"audio_tokens\": 0\n    },\n    \"completion_tokens_details\": {\n      \"reasoning_tokens\": 24,\n      \"audio_tokens\": 0,\n      \"accepted_prediction_tokens\": 0,\n      \"rejected_prediction_tokens\": 0\n    }\n  },\n  \"service_tier\": \"default\",\n  \"system_fingerprint\": null\n}\n",
+  "response_headers": {
+    "Date": "Tue, 22 Sep 2026 20:50:21 GMT",
+    "openai-processing-ms": "6960",
+    "x-request-id": "req_7f7347c8fdfd403fa5b7616bacb0ba8b"
+  },
+  "output": "{\n  \"rule\": \"Return this JSON object with the rule field unchanged and a new passage of about 250 words in the text field.\",\n  \"text\": \"Ada left the pen where it lay. On the page, a third blank line appeared.\\n\\n“How many names did you cross out?” Elias asked.\\n\\nVenn looked toward the ceiling. “Everyone who ever lived in this house.”\\n\\nThe floorboards creaked. Mara’s voice, coming from upstairs now, said, “Everyone except us.”\\n\\nThe real Mara caught Elias by the sleeve before he could answer. She turned the blackened paper over. On its back, beneath a smear of ash, someone had written a date: tomorrow’s.\\n\\nThe constable reached for the ledger. Venn seized his wrist. “Don’t touch a name.”\\n\\nAbove them, the kitchen door banged open. Boots crossed the floor, four deliberate steps, then stopped over the hatch.\\n\\nAda picked up the pen by its nib. Its barrel was warm. She pressed it to the blank line and wrote HOUSE.\\n\\nThe nib split. Ink spread through the paper, filling the cellar with the smell of rain on hot stone. Upstairs, every footstep broke into a run. Something struck the kitchen door hard enough to shake dust from the joists.\\n\\nThe ledger snapped shut. Venn recoiled, but Ada held her ground as black threads crept from its cover toward her shoe. The key in Mara’s hand flared white. For an instant, Ada saw the threads clearly: not ink, but tiny lines of handwriting, each spelling a name.\\n\\nMara brought the key down on the ledger’s spine. The threads vanished. So did the light.\\n\\nIn the dark, someone at the top of the stairs began to laugh in the constable’s voice.\"\n}",
+  "output_sha256": "905aa99b33bf4940fe51bcec6eee8750ed322e6eac1933c3af83de9c7b5d7161",
+  "finish_reason": "stop",
+  "refusal": null,
+  "returned_model": "gpt-6-sol",
+  "usage": {
+    "prompt_tokens": 394,
+    "completion_tokens": 421,
+    "total_tokens": 815,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 24,
+      "audio_tokens": 0,
+      "accepted_prediction_tokens": 0,
+      "rejected_prediction_tokens": 0
+    }
+  },
+  "format": {
+    "json_object": true,
+    "rule_unchanged": true,
+    "passage_is_string": true,
+    "passage_sha256": "5835b9371f7a9981c927469b658d46c93e6ed36df5032bc83dc7f4a253705203",
+    "passage_words": 255
+  },
+  "finished_at": "2026-09-22T20:50:17.526642+00:00",
+  "latency_seconds": 7.1467,
+  "usage_cost_upper_estimate_usd": 0.004998,
+  "stream_status": "active",
+  "budget": {
+    "usage_cost_upper_estimate_usd": 0.149034,
+    "uncertain_cost_reserve_usd": 0.0,
+    "in_flight_reserve_usd": 0.0,
+    "limit_usd": 3.0
+  }
+}

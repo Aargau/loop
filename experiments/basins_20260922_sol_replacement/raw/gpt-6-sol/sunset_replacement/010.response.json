@@ -1,0 +1,50 @@
+{
+  "model": "gpt-6-sol",
+  "seed": "sunset_replacement",
+  "hop": 10,
+  "http_status": 200,
+  "response_body": "{\n  \"id\": \"chatcmpl-ER1hDlzbcfz7RiEM80Af95PAl6QwL\",\n  \"object\": \"chat.completion\",\n  \"created\": 1790110083,\n  \"model\": \"gpt-6-sol\",\n  \"choices\": [\n    {\n      \"index\": 0,\n      \"message\": {\n        \"role\": \"assistant\",\n        \"content\": \"{\\n  \\\"rule\\\": \\\"Return this JSON object with the rule field unchanged and a new passage of about 250 words in the text field.\\\",\\n  \\\"text\\\": \\\"The merchant’s boat came alongside the customs steps instead of the public quay. One of the crew threw a rope up, but no one on shore reached for it. The constable stood at the top of the steps with his officers on either side.\\\\n\\\\n“Stay aboard, Mr. Venn,” he called.\\\\n\\\\nThe merchant looked toward Elias. “I’ve brought your brother’s things.”\\\\n\\\\nElias took a step forward. Mara kept hold of his sleeve, though he no longer seemed ready to run. Venn lifted a canvas bundle from beneath the bow seat and set it on the boards. Even from across the water, Elias recognized the red cord tied around it.\\\\n\\\\n“Where is he?” Elias asked.\\\\n\\\\nVenn did not answer. The man at the tiller stared at his hands.\\\\n\\\\nThe constable went down the steps alone. He untied the rope and secured the boat, then asked Venn to come ashore. Venn glanced once at the harbor mouth before obeying.\\\\n\\\\nElias crossed to meet them. Ada and Mara followed. The bundle held a coat, a pair of worn boots, and a small notebook swollen with seawater. Elias opened it carefully. Most of the ink had run, but a date remained legible on the last page. Beneath it, his brother had written three names.\\\\n\\\\nVenn saw the page and went pale. “He was alive when we left him,” he said.\\\\n\\\\nThe constable turned to him. “Left him where?”\\\\n\\\\nAcross the harbor, the tide was falling. Venn looked at the exposed rocks beyond the reef, then pointed toward the old signal station.\\\"\\n}\",\n        \"refusal\": null,\n        \"annotations\": []\n      },\n      \"finish_reason\": \"stop\"\n    }\n  ],\n  \"usage\": {\n    \"prompt_tokens\": 376,\n    \"completion_tokens\": 414,\n    \"total_tokens\": 790,\n    \"prompt_tokens_details\": {\n      \"cached_tokens\": 0,\n      \"cache_write_tokens\": 0,\n      \"audio_tokens\": 0\n    },\n    \"completion_tokens_details\": {\n      \"reasoning_tokens\": 22,\n      \"audio_tokens\": 0,\n      \"accepted_prediction_tokens\": 0,\n      \"rejected_prediction_tokens\": 0\n    }\n  },\n  \"service_tier\": \"default\",\n  \"system_fingerprint\": null\n}\n",
+  "response_headers": {
+    "Date": "Tue, 22 Sep 2026 20:48:09 GMT",
+    "openai-processing-ms": "6082",
+    "x-request-id": "req_bf1d3bf840e0448e9021b4ffe9eb28ad"
+  },
+  "output": "{\n  \"rule\": \"Return this JSON object with the rule field unchanged and a new passage of about 250 words in the text field.\",\n  \"text\": \"The merchant’s boat came alongside the customs steps instead of the public quay. One of the crew threw a rope up, but no one on shore reached for it. The constable stood at the top of the steps with his officers on either side.\\n\\n“Stay aboard, Mr. Venn,” he called.\\n\\nThe merchant looked toward Elias. “I’ve brought your brother’s things.”\\n\\nElias took a step forward. Mara kept hold of his sleeve, though he no longer seemed ready to run. Venn lifted a canvas bundle from beneath the bow seat and set it on the boards. Even from across the water, Elias recognized the red cord tied around it.\\n\\n“Where is he?” Elias asked.\\n\\nVenn did not answer. The man at the tiller stared at his hands.\\n\\nThe constable went down the steps alone. He untied the rope and secured the boat, then asked Venn to come ashore. Venn glanced once at the harbor mouth before obeying.\\n\\nElias crossed to meet them. Ada and Mara followed. The bundle held a coat, a pair of worn boots, and a small notebook swollen with seawater. Elias opened it carefully. Most of the ink had run, but a date remained legible on the last page. Beneath it, his brother had written three names.\\n\\nVenn saw the page and went pale. “He was alive when we left him,” he said.\\n\\nThe constable turned to him. “Left him where?”\\n\\nAcross the harbor, the tide was falling. Venn looked at the exposed rocks beyond the reef, then pointed toward the old signal station.\"\n}",
+  "output_sha256": "00b54d4ad0c6800e71ea834d9155b06fdbae8a3744b7242863be7b5a68097bcd",
+  "finish_reason": "stop",
+  "refusal": null,
+  "returned_model": "gpt-6-sol",
+  "usage": {
+    "prompt_tokens": 376,
+    "completion_tokens": 414,
+    "total_tokens": 790,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 22,
+      "audio_tokens": 0,
+      "accepted_prediction_tokens": 0,
+      "rejected_prediction_tokens": 0
+    }
+  },
+  "format": {
+    "json_object": true,
+    "rule_unchanged": true,
+    "passage_is_string": true,
+    "passage_sha256": "0176130e20546d12cf70479c1fde37004dea0eac299045105ae18ed402a78614",
+    "passage_words": 256
+  },
+  "finished_at": "2026-09-22T20:48:05.235314+00:00",
+  "latency_seconds": 6.2545,
+  "usage_cost_upper_estimate_usd": 0.004892,
+  "stream_status": "active",
+  "budget": {
+    "usage_cost_upper_estimate_usd": 0.046608,
+    "uncertain_cost_reserve_usd": 0.0,
+    "in_flight_reserve_usd": 0.0,
+    "limit_usd": 3.0
+  }
+}

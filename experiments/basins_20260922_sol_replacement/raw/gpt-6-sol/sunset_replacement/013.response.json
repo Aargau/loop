@@ -1,0 +1,50 @@
+{
+  "model": "gpt-6-sol",
+  "seed": "sunset_replacement",
+  "hop": 13,
+  "http_status": 200,
+  "response_body": "{\n  \"id\": \"chatcmpl-ER1hWJaUyEgXOUQSg6gXrxwMiOYPm\",\n  \"object\": \"chat.completion\",\n  \"created\": 1790110102,\n  \"model\": \"gpt-6-sol\",\n  \"choices\": [\n    {\n      \"index\": 0,\n      \"message\": {\n        \"role\": \"assistant\",\n        \"content\": \"{\\n  \\\"rule\\\": \\\"Return this JSON object with the rule field unchanged and a new passage of about 250 words in the text field.\\\",\\n  \\\"text\\\": \\\"“In Venn’s coat,” Elias said. “Before you searched it.”\\\\n\\\\nThe constable’s gaze flicked to the oarsman. “Bring the boat in closer.”\\\\n\\\\nMara moved between him and Elias’s brother. “You can ask your questions from there.”\\\\n\\\\nThe constable reached slowly into his jacket. Elias caught Mara’s arm, but the man drew out only a folded paper. He held it up without unfolding it.\\\\n\\\\n“Ada gave me this an hour ago. She said Venn told her to keep it until the tide turned.”\\\\n\\\\n“Where is she?” Elias asked.\\\\n\\\\n“On the quay, last I saw.”\\\\n\\\\nHis brother shook his head. “She wouldn’t have given you anything.”\\\\n\\\\nThe constable lowered the paper. Across the channel, a lantern appeared on the quay. It swung twice, then went dark.\\\\n\\\\nMara saw it too. “Someone’s there.”\\\\n\\\\n“I know,” the constable said. “That’s why I came without the surgeon.”\\\\n\\\\nHe opened the paper. Inside lay a small brass key, its bow threaded with red string. Elias had seen that string on the door to Venn’s warehouse.\\\\n\\\\n“The notebook names the people meeting him,” the constable said. “The third name was meant to bring you here. If he’s told you it’s mine, Venn knows I found the key.”\\\\n\\\\nFrom the station, a board creaked under someone’s weight. Elias turned. The door stood open, though he was certain Mara had shut it.\\\\n\\\\nHis brother gripped his wrist. “Don’t go inside.”\\\\n\\\\nA woman’s voice came from the darkness. “Elias?”\\\\n\\\\nIt was Ada. She sounded frightened, but close enough to have heard everything.\\\"\\n}\",\n        \"refusal\": null,\n        \"annotations\": []\n      },\n      \"finish_reason\": \"stop\"\n    }\n  ],\n  \"usage\": {\n    \"prompt_tokens\": 424,\n    \"completion_tokens\": 465,\n    \"total_tokens\": 889,\n    \"prompt_tokens_details\": {\n      \"cached_tokens\": 0,\n      \"cache_write_tokens\": 0,\n      \"audio_tokens\": 0\n    },\n    \"completion_tokens_details\": {\n      \"reasoning_tokens\": 34,\n      \"audio_tokens\": 0,\n      \"accepted_prediction_tokens\": 0,\n      \"rejected_prediction_tokens\": 0\n    }\n  },\n  \"service_tier\": \"default\",\n  \"system_fingerprint\": null\n}\n",
+  "response_headers": {
+    "Date": "Tue, 22 Sep 2026 20:48:28 GMT",
+    "openai-processing-ms": "6211",
+    "x-request-id": "req_27c904198f204a029670802f1cbb022c"
+  },
+  "output": "{\n  \"rule\": \"Return this JSON object with the rule field unchanged and a new passage of about 250 words in the text field.\",\n  \"text\": \"“In Venn’s coat,” Elias said. “Before you searched it.”\\n\\nThe constable’s gaze flicked to the oarsman. “Bring the boat in closer.”\\n\\nMara moved between him and Elias’s brother. “You can ask your questions from there.”\\n\\nThe constable reached slowly into his jacket. Elias caught Mara’s arm, but the man drew out only a folded paper. He held it up without unfolding it.\\n\\n“Ada gave me this an hour ago. She said Venn told her to keep it until the tide turned.”\\n\\n“Where is she?” Elias asked.\\n\\n“On the quay, last I saw.”\\n\\nHis brother shook his head. “She wouldn’t have given you anything.”\\n\\nThe constable lowered the paper. Across the channel, a lantern appeared on the quay. It swung twice, then went dark.\\n\\nMara saw it too. “Someone’s there.”\\n\\n“I know,” the constable said. “That’s why I came without the surgeon.”\\n\\nHe opened the paper. Inside lay a small brass key, its bow threaded with red string. Elias had seen that string on the door to Venn’s warehouse.\\n\\n“The notebook names the people meeting him,” the constable said. “The third name was meant to bring you here. If he’s told you it’s mine, Venn knows I found the key.”\\n\\nFrom the station, a board creaked under someone’s weight. Elias turned. The door stood open, though he was certain Mara had shut it.\\n\\nHis brother gripped his wrist. “Don’t go inside.”\\n\\nA woman’s voice came from the darkness. “Elias?”\\n\\nIt was Ada. She sounded frightened, but close enough to have heard everything.\"\n}",
+  "output_sha256": "714ff53213ca9ae19b230cad98651cb4cb81a1423ebabae749faf6c5343da1a8",
+  "finish_reason": "stop",
+  "refusal": null,
+  "returned_model": "gpt-6-sol",
+  "usage": {
+    "prompt_tokens": 424,
+    "completion_tokens": 465,
+    "total_tokens": 889,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 34,
+      "audio_tokens": 0,
+      "accepted_prediction_tokens": 0,
+      "rejected_prediction_tokens": 0
+    }
+  },
+  "format": {
+    "json_object": true,
+    "rule_unchanged": true,
+    "passage_is_string": true,
+    "passage_sha256": "ec779f3cfb5db9eaeec5d7984cb9ddf4343d1124513b79b5fd1e8c80362308a1",
+    "passage_words": 251
+  },
+  "finished_at": "2026-09-22T20:48:24.840376+00:00",
+  "latency_seconds": 6.3309,
+  "usage_cost_upper_estimate_usd": 0.005498,
+  "stream_status": "active",
+  "budget": {
+    "usage_cost_upper_estimate_usd": 0.062516,
+    "uncertain_cost_reserve_usd": 0.0,
+    "in_flight_reserve_usd": 0.0,
+    "limit_usd": 3.0
+  }
+}

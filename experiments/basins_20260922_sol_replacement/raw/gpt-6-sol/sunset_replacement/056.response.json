@@ -1,0 +1,50 @@
+{
+  "model": "gpt-6-sol",
+  "seed": "sunset_replacement",
+  "hop": 56,
+  "http_status": 200,
+  "response_body": "{\n  \"id\": \"chatcmpl-ER1mB57Ewv6hS9tTv9y2IuFGqhM52\",\n  \"object\": \"chat.completion\",\n  \"created\": 1790110391,\n  \"model\": \"gpt-6-sol\",\n  \"choices\": [\n    {\n      \"index\": 0,\n      \"message\": {\n        \"role\": \"assistant\",\n        \"content\": \"{\\n  \\\"rule\\\": \\\"Return this JSON object with the rule field unchanged and a new passage of about 250 words in the text field.\\\",\\n  \\\"text\\\": \\\"Ada placed the button in the girl’s palm. The girl set it beside her needle and waited.\\\\n\\\\n“What am I supposed to say?” Ada asked.\\\\n\\\\nThe older woman looked at the envelopes. “Whatever you wish someone had told you.”\\\\n\\\\nAda turned the blank page over. It was blank on both sides. She picked up the pen beside the spool and wrote: I am here.\\\\n\\\\nThe girl took the button and began sewing it to her cuff. Each pull of the blue thread made a small, dry sound. Ada added: You can come inside.\\\\n\\\\nAt the window, the garden path was changing. Footprints appeared in the soft earth, one after another, leading from the gate to the back door. They were too small to be Ada’s.\\\\n\\\\n“Is that enough?” she asked.\\\\n\\\\nThe older woman came to stand beside her. For the first time, she looked out before answering. “I don’t know.”\\\\n\\\\nThe girl bit through the thread. She put on her coat and held out an envelope. Ada folded the letter, slipped it inside, and wrote her name on the front. There was no address.\\\\n\\\\nThe girl carried it to the door. When Ada opened it, the path was empty again. The girl stepped outside and walked toward the gate, her newly fastened cuff bright against the dark wool.\\\\n\\\\nAda watched until the gate clicked shut. Then she turned back to the kitchen. The older woman was gone, and on the table lay another blank sheet. Beside it sat the spool of blue thread.\\\"\\n}\",\n        \"refusal\": null,\n        \"annotations\": []\n      },\n      \"finish_reason\": \"stop\"\n    }\n  ],\n  \"usage\": {\n    \"prompt_tokens\": 383,\n    \"completion_tokens\": 412,\n    \"total_tokens\": 795,\n    \"prompt_tokens_details\": {\n      \"cached_tokens\": 0,\n      \"cache_write_tokens\": 0,\n      \"audio_tokens\": 0\n    },\n    \"completion_tokens_details\": {\n      \"reasoning_tokens\": 41,\n      \"audio_tokens\": 0,\n      \"accepted_prediction_tokens\": 0,\n      \"rejected_prediction_tokens\": 0\n    }\n  },\n  \"service_tier\": \"default\",\n  \"system_fingerprint\": null\n}\n",
+  "response_headers": {
+    "Date": "Tue, 22 Sep 2026 20:53:17 GMT",
+    "openai-processing-ms": "5920",
+    "x-request-id": "req_ace3e02f4a124ff9afcc1cc95e93fc95"
+  },
+  "output": "{\n  \"rule\": \"Return this JSON object with the rule field unchanged and a new passage of about 250 words in the text field.\",\n  \"text\": \"Ada placed the button in the girl’s palm. The girl set it beside her needle and waited.\\n\\n“What am I supposed to say?” Ada asked.\\n\\nThe older woman looked at the envelopes. “Whatever you wish someone had told you.”\\n\\nAda turned the blank page over. It was blank on both sides. She picked up the pen beside the spool and wrote: I am here.\\n\\nThe girl took the button and began sewing it to her cuff. Each pull of the blue thread made a small, dry sound. Ada added: You can come inside.\\n\\nAt the window, the garden path was changing. Footprints appeared in the soft earth, one after another, leading from the gate to the back door. They were too small to be Ada’s.\\n\\n“Is that enough?” she asked.\\n\\nThe older woman came to stand beside her. For the first time, she looked out before answering. “I don’t know.”\\n\\nThe girl bit through the thread. She put on her coat and held out an envelope. Ada folded the letter, slipped it inside, and wrote her name on the front. There was no address.\\n\\nThe girl carried it to the door. When Ada opened it, the path was empty again. The girl stepped outside and walked toward the gate, her newly fastened cuff bright against the dark wool.\\n\\nAda watched until the gate clicked shut. Then she turned back to the kitchen. The older woman was gone, and on the table lay another blank sheet. Beside it sat the spool of blue thread.\"\n}",
+  "output_sha256": "b67bc15c6bb0db9d3a214406d4a498a14748cddac3940e2e5701075428d89e50",
+  "finish_reason": "stop",
+  "refusal": null,
+  "returned_model": "gpt-6-sol",
+  "usage": {
+    "prompt_tokens": 383,
+    "completion_tokens": 412,
+    "total_tokens": 795,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 41,
+      "audio_tokens": 0,
+      "accepted_prediction_tokens": 0,
+      "rejected_prediction_tokens": 0
+    }
+  },
+  "format": {
+    "json_object": true,
+    "rule_unchanged": true,
+    "passage_is_string": true,
+    "passage_sha256": "a76c02faa792cf220566466b87feea3ce7e57b1f4b0e20d7a90f83438dc6d51f",
+    "passage_words": 253
+  },
+  "finished_at": "2026-09-22T20:53:12.948693+00:00",
+  "latency_seconds": 6.0602,
+  "usage_cost_upper_estimate_usd": 0.004886,
+  "stream_status": "active",
+  "budget": {
+    "usage_cost_upper_estimate_usd": 0.279952,
+    "uncertain_cost_reserve_usd": 0.0,
+    "in_flight_reserve_usd": 0.0,
+    "limit_usd": 3.0
+  }
+}

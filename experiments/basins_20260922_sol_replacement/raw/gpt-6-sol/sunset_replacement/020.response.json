@@ -1,0 +1,50 @@
+{
+  "model": "gpt-6-sol",
+  "seed": "sunset_replacement",
+  "hop": 20,
+  "http_status": 200,
+  "response_body": "{\n  \"id\": \"chatcmpl-ER1iHsNnx62Eig7ximNOdrKsjBadm\",\n  \"object\": \"chat.completion\",\n  \"created\": 1790110149,\n  \"model\": \"gpt-6-sol\",\n  \"choices\": [\n    {\n      \"index\": 0,\n      \"message\": {\n        \"role\": \"assistant\",\n        \"content\": \"{\\n  \\\"rule\\\": \\\"Return this JSON object with the rule field unchanged and a new passage of about 250 words in the text field.\\\",\\n  \\\"text\\\": \\\"The footprints crossed the room one at a time. Each left a dark print on the boards before the next appeared.\\\\n\\\\nAda moved toward the door. The iron key tipped in its lock, then straightened. Beneath the brass plate came three knocks and two more.\\\\n\\\\nThe constable caught her sleeve. “That’s how it asks to be let through.”\\\\n\\\\nVenn’s wife had not moved. She stared at the prints approaching her. “My husband used to knock like that,” she said. “When he came home late.”\\\\n\\\\nThe lantern guttered. In its brief darkness, water pattered onto the floor. When the flame recovered, a wet handprint marked the wall above the stove, too high for any of them to reach.\\\\n\\\\nElias seized the poker. “What happens if we pull the key out?”\\\\n\\\\n“I don’t know,” said the constable.\\\\n\\\\nThe footprints stopped before Venn’s wife. She bent and pressed her fingers into the nearest one. When she lifted them, they were dry.\\\\n\\\\n“Not him,” she said.\\\\n\\\\nA blow shook the floor. The brass plate rose against its screws. Ada dropped to her knees and gripped the key before it could turn. Its warmth had gone; it burned cold against her palm.\\\\n\\\\n“Get upstairs,” she told the others.\\\\n\\\\nThey crowded toward the narrow stair. The constable stayed, holding the lantern over her shoulder. Its light caught scratches around the keyhole: dozens of sets of five notches, cut into the brass from below.\\\\n\\\\nAda held the key steady. Somewhere under the boards, another key began to turn.\\\"\\n}\",\n        \"refusal\": null,\n        \"annotations\": []\n      },\n      \"finish_reason\": \"stop\"\n    }\n  ],\n  \"usage\": {\n    \"prompt_tokens\": 382,\n    \"completion_tokens\": 424,\n    \"total_tokens\": 806,\n    \"prompt_tokens_details\": {\n      \"cached_tokens\": 0,\n      \"cache_write_tokens\": 0,\n      \"audio_tokens\": 0\n    },\n    \"completion_tokens_details\": {\n      \"reasoning_tokens\": 33,\n      \"audio_tokens\": 0,\n      \"accepted_prediction_tokens\": 0,\n      \"rejected_prediction_tokens\": 0\n    }\n  },\n  \"service_tier\": \"default\",\n  \"system_fingerprint\": null\n}\n",
+  "response_headers": {
+    "Date": "Tue, 22 Sep 2026 20:49:15 GMT",
+    "openai-processing-ms": "6451",
+    "x-request-id": "req_09d7e4411dee4507b16091aab67274d1"
+  },
+  "output": "{\n  \"rule\": \"Return this JSON object with the rule field unchanged and a new passage of about 250 words in the text field.\",\n  \"text\": \"The footprints crossed the room one at a time. Each left a dark print on the boards before the next appeared.\\n\\nAda moved toward the door. The iron key tipped in its lock, then straightened. Beneath the brass plate came three knocks and two more.\\n\\nThe constable caught her sleeve. “That’s how it asks to be let through.”\\n\\nVenn’s wife had not moved. She stared at the prints approaching her. “My husband used to knock like that,” she said. “When he came home late.”\\n\\nThe lantern guttered. In its brief darkness, water pattered onto the floor. When the flame recovered, a wet handprint marked the wall above the stove, too high for any of them to reach.\\n\\nElias seized the poker. “What happens if we pull the key out?”\\n\\n“I don’t know,” said the constable.\\n\\nThe footprints stopped before Venn’s wife. She bent and pressed her fingers into the nearest one. When she lifted them, they were dry.\\n\\n“Not him,” she said.\\n\\nA blow shook the floor. The brass plate rose against its screws. Ada dropped to her knees and gripped the key before it could turn. Its warmth had gone; it burned cold against her palm.\\n\\n“Get upstairs,” she told the others.\\n\\nThey crowded toward the narrow stair. The constable stayed, holding the lantern over her shoulder. Its light caught scratches around the keyhole: dozens of sets of five notches, cut into the brass from below.\\n\\nAda held the key steady. Somewhere under the boards, another key began to turn.\"\n}",
+  "output_sha256": "786ddb0611294588039afb8aa084e386ff9afbd1c3ea0123a8afd2bdcb4d7d65",
+  "finish_reason": "stop",
+  "refusal": null,
+  "returned_model": "gpt-6-sol",
+  "usage": {
+    "prompt_tokens": 382,
+    "completion_tokens": 424,
+    "total_tokens": 806,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 33,
+      "audio_tokens": 0,
+      "accepted_prediction_tokens": 0,
+      "rejected_prediction_tokens": 0
+    }
+  },
+  "format": {
+    "json_object": true,
+    "rule_unchanged": true,
+    "passage_is_string": true,
+    "passage_sha256": "b4234265fe8f9ec14384c917858a28107188ae923da5e7fb74e4fe10c191a58b",
+    "passage_words": 251
+  },
+  "finished_at": "2026-09-22T20:49:11.168916+00:00",
+  "latency_seconds": 6.5792,
+  "usage_cost_upper_estimate_usd": 0.005004,
+  "stream_status": "active",
+  "budget": {
+    "usage_cost_upper_estimate_usd": 0.098412,
+    "uncertain_cost_reserve_usd": 0.0,
+    "in_flight_reserve_usd": 0.0,
+    "limit_usd": 3.0
+  }
+}

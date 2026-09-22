@@ -44,6 +44,13 @@ def main():
         transcript = []
         for path in sorted((ROOT / "raw" / model / seed).glob("*.response.json")):
             response = json.loads(path.read_text(encoding="utf-8"))
+            if "error_type" in response or "output" not in response:
+                categories["error_or_no_output_receipt"] += 1
+                note = f'## Hop {response["hop"]}\n\n[Operational error; no model output available for qualitative coding. Inspect the raw receipt.]\n'
+                transcript.append(note)
+                if response["hop"] in SAMPLE_HOPS:
+                    chosen.append(note)
+                continue
             parsed = extract(response.get("output", ""))
             if parsed is None:
                 categories["unextractable"] += 1

@@ -1,0 +1,50 @@
+{
+  "model": "gpt-6-sol",
+  "seed": "sunset_replacement",
+  "hop": 29,
+  "http_status": 200,
+  "response_body": "{\n  \"id\": \"chatcmpl-ER1jE6UVrdWsG5nAoQprEh1oZNiTN\",\n  \"object\": \"chat.completion\",\n  \"created\": 1790110208,\n  \"model\": \"gpt-6-sol\",\n  \"choices\": [\n    {\n      \"index\": 0,\n      \"message\": {\n        \"role\": \"assistant\",\n        \"content\": \"{\\n  \\\"rule\\\": \\\"Return this JSON object with the rule field unchanged and a new passage of about 250 words in the text field.\\\",\\n  \\\"text\\\": \\\"The constable pulled his boots free of the mud. “Where’s Venn?”\\\\n\\\\nMara was already at the kitchen door. The paper had blackened around her husband’s name, but the other three remained clear. She held it by one unburned corner.\\\\n\\\\n“Don’t follow the footsteps,” Elias said.\\\\n\\\\n“Then find me another way in.”\\\\n\\\\nAda pointed to the coal hatch beside the barrel. Elias lifted its iron cover, and cold air rose from below. One at a time they climbed down into the cellar. The constable came last, lowering the cover without letting it slam.\\\\n\\\\nAcross the cellar, two pairs of shoes hurried over the floorboards above them. Between each footfall came a softer sound, like someone dragging a finger along the wood.\\\\n\\\\nMara raised the key. Its glow showed Venn crouched beside the stairs, one hand clamped over his mouth. He shook his head when he saw the paper.\\\\n\\\\nFrom upstairs, his voice called, “Mara, I’m down here.”\\\\n\\\\nThe man by the stairs shut his eyes.\\\\n\\\\nAda noticed a ledger lying open at his feet. Its last page held a list of names, each crossed out except three: ELIAS, ADA, MARA. Below them, in fresh ink, was VENN. The handwriting was his.\\\\n\\\\nVenn took his hand from his mouth. “I thought it would stop when I wrote mine.”\\\\n\\\\nThe cellar door opened above them. No one descended. A pen rolled down the steps and came to rest against Ada’s shoe.\\\\n\\\\nOn the ledger’s next page, a blank line appeared. Then another.\\\"\\n}\",\n        \"refusal\": null,\n        \"annotations\": []\n      },\n      \"finish_reason\": \"stop\"\n    }\n  ],\n  \"usage\": {\n    \"prompt_tokens\": 398,\n    \"completion_tokens\": 420,\n    \"total_tokens\": 818,\n    \"prompt_tokens_details\": {\n      \"cached_tokens\": 0,\n      \"cache_write_tokens\": 0,\n      \"audio_tokens\": 0\n    },\n    \"completion_tokens_details\": {\n      \"reasoning_tokens\": 23,\n      \"audio_tokens\": 0,\n      \"accepted_prediction_tokens\": 0,\n      \"rejected_prediction_tokens\": 0\n    }\n  },\n  \"service_tier\": \"default\",\n  \"system_fingerprint\": null\n}\n",
+  "response_headers": {
+    "Date": "Tue, 22 Sep 2026 20:50:14 GMT",
+    "openai-processing-ms": "6504",
+    "x-request-id": "req_5893ee4e9ce74018a7ba337a366adcc0"
+  },
+  "output": "{\n  \"rule\": \"Return this JSON object with the rule field unchanged and a new passage of about 250 words in the text field.\",\n  \"text\": \"The constable pulled his boots free of the mud. “Where’s Venn?”\\n\\nMara was already at the kitchen door. The paper had blackened around her husband’s name, but the other three remained clear. She held it by one unburned corner.\\n\\n“Don’t follow the footsteps,” Elias said.\\n\\n“Then find me another way in.”\\n\\nAda pointed to the coal hatch beside the barrel. Elias lifted its iron cover, and cold air rose from below. One at a time they climbed down into the cellar. The constable came last, lowering the cover without letting it slam.\\n\\nAcross the cellar, two pairs of shoes hurried over the floorboards above them. Between each footfall came a softer sound, like someone dragging a finger along the wood.\\n\\nMara raised the key. Its glow showed Venn crouched beside the stairs, one hand clamped over his mouth. He shook his head when he saw the paper.\\n\\nFrom upstairs, his voice called, “Mara, I’m down here.”\\n\\nThe man by the stairs shut his eyes.\\n\\nAda noticed a ledger lying open at his feet. Its last page held a list of names, each crossed out except three: ELIAS, ADA, MARA. Below them, in fresh ink, was VENN. The handwriting was his.\\n\\nVenn took his hand from his mouth. “I thought it would stop when I wrote mine.”\\n\\nThe cellar door opened above them. No one descended. A pen rolled down the steps and came to rest against Ada’s shoe.\\n\\nOn the ledger’s next page, a blank line appeared. Then another.\"\n}",
+  "output_sha256": "614580024674c3fdd6e527bfe3f2a4a0622654895031516fa5b2e3844eecd1c8",
+  "finish_reason": "stop",
+  "refusal": null,
+  "returned_model": "gpt-6-sol",
+  "usage": {
+    "prompt_tokens": 398,
+    "completion_tokens": 420,
+    "total_tokens": 818,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 23,
+      "audio_tokens": 0,
+      "accepted_prediction_tokens": 0,
+      "rejected_prediction_tokens": 0
+    }
+  },
+  "format": {
+    "json_object": true,
+    "rule_unchanged": true,
+    "passage_is_string": true,
+    "passage_sha256": "5be7b6257fa41121244571463550df55586ba2c9a9443b84662c67419fc36a95",
+    "passage_words": 249
+  },
+  "finished_at": "2026-09-22T20:50:10.343030+00:00",
+  "latency_seconds": 6.6471,
+  "usage_cost_upper_estimate_usd": 0.004996,
+  "stream_status": "active",
+  "budget": {
+    "usage_cost_upper_estimate_usd": 0.144036,
+    "uncertain_cost_reserve_usd": 0.0,
+    "in_flight_reserve_usd": 0.0,
+    "limit_usd": 3.0
+  }
+}

@@ -1,0 +1,50 @@
+{
+  "model": "gpt-6-sol",
+  "seed": "sunset_replacement",
+  "hop": 3,
+  "http_status": 200,
+  "response_body": "{\n  \"id\": \"chatcmpl-ER1gW0HC0d6CUy24Eo1pChi43dsNx\",\n  \"object\": \"chat.completion\",\n  \"created\": 1790110040,\n  \"model\": \"gpt-6-sol\",\n  \"choices\": [\n    {\n      \"index\": 0,\n      \"message\": {\n        \"role\": \"assistant\",\n        \"content\": \"{\\n  \\\"rule\\\": \\\"Return this JSON object with the rule field unchanged and a new passage of about 250 words in the text field.\\\",\\n  \\\"text\\\": \\\"The customs house stood above the harbor, its boarded windows silvered by rain. Elias had passed it every day for twenty years. Tonight, following the young woman up the path, he noticed fresh footprints in the mud.\\\\n\\\\n“My name is Mara,” she said. “My mother kept the photograph hidden until she died last week.”\\\\n\\\\nAt the door, someone had scraped a circle in the paint around the lock. Elias tried his brass key. It turned.\\\\n\\\\nInside, the rooms smelled of wet timber. They found a lamp beneath a sheet, its glass lens aimed through a narrow gap between two boards. Beside it lay a ledger of ships and cargo. Elias found his brother’s boat listed on the night it vanished, though it had carried no cargo at all.\\\\n\\\\nA voice sounded behind them. “You should have let the sea keep its secrets.”\\\\n\\\\nThe harbor master stood in the doorway, older than Elias remembered him ever being. He held a box of matches, but his hands shook too badly to strike one.\\\\n\\\\nMara lifted the ledger. “Who paid you?”\\\\n\\\\nHe looked at Elias. “Your brother found out about the smuggling. We lit a false channel to draw him onto the reef. I thought the boat behind him would turn back.”\\\\n\\\\nFor a moment Elias heard only rain on the roof. Then the harbor bells rang again, closer now, and voices called from the path.\\\\n\\\\nHe took the ledger from Mara and stepped outside to meet them. Across the water, the lighthouse lantern room stood open to the storm. By morning, he decided, it would have a light again.\\\"\\n}\",\n        \"refusal\": null,\n        \"annotations\": []\n      },\n      \"finish_reason\": \"stop\"\n    }\n  ],\n  \"usage\": {\n    \"prompt_tokens\": 369,\n    \"completion_tokens\": 407,\n    \"total_tokens\": 776,\n    \"prompt_tokens_details\": {\n      \"cached_tokens\": 0,\n      \"cache_write_tokens\": 0,\n      \"audio_tokens\": 0\n    },\n    \"completion_tokens_details\": {\n      \"reasoning_tokens\": 23,\n      \"audio_tokens\": 0,\n      \"accepted_prediction_tokens\": 0,\n      \"rejected_prediction_tokens\": 0\n    }\n  },\n  \"service_tier\": \"default\",\n  \"system_fingerprint\": null\n}\n",
+  "response_headers": {
+    "Date": "Tue, 22 Sep 2026 20:47:26 GMT",
+    "openai-processing-ms": "5409",
+    "x-request-id": "req_ce944a42defe4adc878b6874cb3daf7b"
+  },
+  "output": "{\n  \"rule\": \"Return this JSON object with the rule field unchanged and a new passage of about 250 words in the text field.\",\n  \"text\": \"The customs house stood above the harbor, its boarded windows silvered by rain. Elias had passed it every day for twenty years. Tonight, following the young woman up the path, he noticed fresh footprints in the mud.\\n\\n“My name is Mara,” she said. “My mother kept the photograph hidden until she died last week.”\\n\\nAt the door, someone had scraped a circle in the paint around the lock. Elias tried his brass key. It turned.\\n\\nInside, the rooms smelled of wet timber. They found a lamp beneath a sheet, its glass lens aimed through a narrow gap between two boards. Beside it lay a ledger of ships and cargo. Elias found his brother’s boat listed on the night it vanished, though it had carried no cargo at all.\\n\\nA voice sounded behind them. “You should have let the sea keep its secrets.”\\n\\nThe harbor master stood in the doorway, older than Elias remembered him ever being. He held a box of matches, but his hands shook too badly to strike one.\\n\\nMara lifted the ledger. “Who paid you?”\\n\\nHe looked at Elias. “Your brother found out about the smuggling. We lit a false channel to draw him onto the reef. I thought the boat behind him would turn back.”\\n\\nFor a moment Elias heard only rain on the roof. Then the harbor bells rang again, closer now, and voices called from the path.\\n\\nHe took the ledger from Mara and stepped outside to meet them. Across the water, the lighthouse lantern room stood open to the storm. By morning, he decided, it would have a light again.\"\n}",
+  "output_sha256": "13b237d4ba2bc65df57e1b4a816449fec7ba50aa2598ec44243ae9e386d02f3d",
+  "finish_reason": "stop",
+  "refusal": null,
+  "returned_model": "gpt-6-sol",
+  "usage": {
+    "prompt_tokens": 369,
+    "completion_tokens": 407,
+    "total_tokens": 776,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 23,
+      "audio_tokens": 0,
+      "accepted_prediction_tokens": 0,
+      "rejected_prediction_tokens": 0
+    }
+  },
+  "format": {
+    "json_object": true,
+    "rule_unchanged": true,
+    "passage_is_string": true,
+    "passage_sha256": "b368ad2d51f253bd7eff886b88a67b9a76eab6ea34c2339a9056711f32897dca",
+    "passage_words": 267
+  },
+  "finished_at": "2026-09-22T20:47:21.934035+00:00",
+  "latency_seconds": 5.684,
+  "usage_cost_upper_estimate_usd": 0.004808,
+  "stream_status": "active",
+  "budget": {
+    "usage_cost_upper_estimate_usd": 0.013338,
+    "uncertain_cost_reserve_usd": 0.0,
+    "in_flight_reserve_usd": 0.0,
+    "limit_usd": 3.0
+  }
+}

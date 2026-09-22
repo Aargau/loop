@@ -1,0 +1,50 @@
+{
+  "model": "gpt-6-sol",
+  "seed": "sunset_replacement",
+  "hop": 24,
+  "http_status": 200,
+  "response_body": "{\n  \"id\": \"chatcmpl-ER1ihC3DrOgJAU2sjKJJdCSq78hjB\",\n  \"object\": \"chat.completion\",\n  \"created\": 1790110175,\n  \"model\": \"gpt-6-sol\",\n  \"choices\": [\n    {\n      \"index\": 0,\n      \"message\": {\n        \"role\": \"assistant\",\n        \"content\": \"{\\n  \\\"rule\\\": \\\"Return this JSON object with the rule field unchanged and a new passage of about 250 words in the text field.\\\",\\n  \\\"text\\\": \\\"The water spread across the kitchen tiles, carrying flecks of coal. Ada backed away from it. Beneath the cellar door, the trapped sleeve had gone still.\\\\n\\\\nThe constable lowered his lantern. “Who’s in there?”\\\\n\\\\nVenn’s wife took the tin from Ada and snapped its lid shut. The water stopped rising.\\\\n\\\\n“Your husband?” the constable asked.\\\\n\\\\n“He’s under the coal,” she said. “You saw his shoe.”\\\\n\\\\nElias made a small sound. Ada looked at the tin. Water beaded along its seam, although Venn’s wife held it well clear of the floor.\\\\n\\\\nFrom behind the cellar door came three knocks. A pause. Then one more.\\\\n\\\\n“Don’t answer,” Venn’s wife said.\\\\n\\\\nThe constable pushed past her. He caught the blue sleeve and tugged. It slipped free of the door, empty and wet, and fell at his feet. On its cuff was Venn’s brass watch, fastened over the cloth as if around a wrist.\\\\n\\\\nElias whispered, “He wore it on the other arm.”\\\\n\\\\nThe fifth knock came from upstairs.\\\\n\\\\nThey all looked toward the landing. The constable raised his lantern, but Venn’s wife caught his sleeve.\\\\n\\\\n“Leave it,” she said.\\\\n\\\\nA floorboard creaked above them. Then another, closer to the stairs. Ada took the nail from the table and pressed its point against the tin’s seam. Venn’s wife shook her head, but did not stop her.\\\\n\\\\nThe lid sprang open. Inside lay a little water and Venn’s watch chain. Its loose end drew slowly toward the keyhole in the cellar door.\\\"\\n}\",\n        \"refusal\": null,\n        \"annotations\": []\n      },\n      \"finish_reason\": \"stop\"\n    }\n  ],\n  \"usage\": {\n    \"prompt_tokens\": 405,\n    \"completion_tokens\": 437,\n    \"total_tokens\": 842,\n    \"prompt_tokens_details\": {\n      \"cached_tokens\": 0,\n      \"cache_write_tokens\": 0,\n      \"audio_tokens\": 0\n    },\n    \"completion_tokens_details\": {\n      \"reasoning_tokens\": 30,\n      \"audio_tokens\": 0,\n      \"accepted_prediction_tokens\": 0,\n      \"rejected_prediction_tokens\": 0\n    }\n  },\n  \"service_tier\": \"default\",\n  \"system_fingerprint\": null\n}\n",
+  "response_headers": {
+    "Date": "Tue, 22 Sep 2026 20:49:41 GMT",
+    "openai-processing-ms": "6444",
+    "x-request-id": "req_dcc39714de994371ad92203e87845566"
+  },
+  "output": "{\n  \"rule\": \"Return this JSON object with the rule field unchanged and a new passage of about 250 words in the text field.\",\n  \"text\": \"The water spread across the kitchen tiles, carrying flecks of coal. Ada backed away from it. Beneath the cellar door, the trapped sleeve had gone still.\\n\\nThe constable lowered his lantern. “Who’s in there?”\\n\\nVenn’s wife took the tin from Ada and snapped its lid shut. The water stopped rising.\\n\\n“Your husband?” the constable asked.\\n\\n“He’s under the coal,” she said. “You saw his shoe.”\\n\\nElias made a small sound. Ada looked at the tin. Water beaded along its seam, although Venn’s wife held it well clear of the floor.\\n\\nFrom behind the cellar door came three knocks. A pause. Then one more.\\n\\n“Don’t answer,” Venn’s wife said.\\n\\nThe constable pushed past her. He caught the blue sleeve and tugged. It slipped free of the door, empty and wet, and fell at his feet. On its cuff was Venn’s brass watch, fastened over the cloth as if around a wrist.\\n\\nElias whispered, “He wore it on the other arm.”\\n\\nThe fifth knock came from upstairs.\\n\\nThey all looked toward the landing. The constable raised his lantern, but Venn’s wife caught his sleeve.\\n\\n“Leave it,” she said.\\n\\nA floorboard creaked above them. Then another, closer to the stairs. Ada took the nail from the table and pressed its point against the tin’s seam. Venn’s wife shook her head, but did not stop her.\\n\\nThe lid sprang open. Inside lay a little water and Venn’s watch chain. Its loose end drew slowly toward the keyhole in the cellar door.\"\n}",
+  "output_sha256": "910d2dbfe3c930fb989bb4cc34ed295e11374504fa9ceb54643cf30af49b289e",
+  "finish_reason": "stop",
+  "refusal": null,
+  "returned_model": "gpt-6-sol",
+  "usage": {
+    "prompt_tokens": 405,
+    "completion_tokens": 437,
+    "total_tokens": 842,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 30,
+      "audio_tokens": 0,
+      "accepted_prediction_tokens": 0,
+      "rejected_prediction_tokens": 0
+    }
+  },
+  "format": {
+    "json_object": true,
+    "rule_unchanged": true,
+    "passage_is_string": true,
+    "passage_sha256": "091573a18d1d9364edf5be8042ceab976ca417bed6d756c529d54ae1d477985a",
+    "passage_words": 247
+  },
+  "finished_at": "2026-09-22T20:49:37.426809+00:00",
+  "latency_seconds": 6.5725,
+  "usage_cost_upper_estimate_usd": 0.00518,
+  "stream_status": "active",
+  "budget": {
+    "usage_cost_upper_estimate_usd": 0.118592,
+    "uncertain_cost_reserve_usd": 0.0,
+    "in_flight_reserve_usd": 0.0,
+    "limit_usd": 3.0
+  }
+}
