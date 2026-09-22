@@ -1,0 +1,48 @@
+{
+  "model": "claude-fable-5-1",
+  "seed": "sunset_b",
+  "hop": 25,
+  "http_status": 200,
+  "response_body": "{\"model\":\"claude-fable-5-1\",\"id\":\"msg_011CfK5wv9EzNzcM6L3yxetD\",\"type\":\"message\",\"role\":\"assistant\",\"content\":[{\"type\":\"text\",\"text\":\"{\\\"rule\\\": \\\"Return this JSON object with the rule field unchanged and a new passage of about 250 words in the text field.\\\", \\\"text\\\": \\\"The lighthouse on Carrick Head went automatic the autumn after Tomas lost his hearing in the left ear, and the county removed the foghorn the same week his daughter stopped phoning on Sundays. He stood at the rail while a crane lifted the horn's brass mouth onto a flatbed, his old logbook still under his arm, and for a while the two silences kept company in him: the sound that would now be memory and the voice that had already begun to be.\\\\n\\\\nHe still climbed the tower at dusk. Twenty-eight years of winding the mechanism had taught his hands a rhythm they followed without asking, and the lamp did not mind an old man polishing glass that no longer needed him. The logbook still lay open on the desk, the pencil still sharpened, and when the beam swung out over the water he caught himself counting the seconds between flashes, as if a ship might drift off course if he lost the number.\\\\n\\\\nThe coast relied on satellites now and called it safety. He knew that. He still stepped onto the gallery when a freighter passed the point, the way he had once checked that the light was seen, and once a distant horn answered, which may have been coincidence on their side too.\\\\n\\\\nWhat unsettled him was how steadily the beam kept turning. He had thought himself the light's keeper. Now he saw he had mostly been its companion. The lamp had never needed him to burn; it had needed someone in the tower to believe, quietly, that a ship out there was still worth the watching.\\\\n\\\\nHe kept the logbook.\\\"}\"}],\"container\":null,\"stop_reason\":\"end_turn\",\"stop_sequence\":null,\"stop_details\":null,\"usage\":{\"input_tokens\":543,\"cache_creation_input_tokens\":0,\"cache_read_input_tokens\":0,\"cache_creation\":{\"ephemeral_5m_input_tokens\":0,\"ephemeral_1h_input_tokens\":0},\"output_tokens\":529,\"output_tokens_details\":{\"thinking_tokens\":0},\"service_tier\":\"standard\",\"inference_geo\":\"global\"}}",
+  "response_headers": {
+    "Date": "Tue, 22 Sep 2026 20:11:12 GMT",
+    "request-id": "req_011CfK5wuhwjGT1X48ZCW3Ek"
+  },
+  "output": "{\"rule\": \"Return this JSON object with the rule field unchanged and a new passage of about 250 words in the text field.\", \"text\": \"The lighthouse on Carrick Head went automatic the autumn after Tomas lost his hearing in the left ear, and the county removed the foghorn the same week his daughter stopped phoning on Sundays. He stood at the rail while a crane lifted the horn's brass mouth onto a flatbed, his old logbook still under his arm, and for a while the two silences kept company in him: the sound that would now be memory and the voice that had already begun to be.\\n\\nHe still climbed the tower at dusk. Twenty-eight years of winding the mechanism had taught his hands a rhythm they followed without asking, and the lamp did not mind an old man polishing glass that no longer needed him. The logbook still lay open on the desk, the pencil still sharpened, and when the beam swung out over the water he caught himself counting the seconds between flashes, as if a ship might drift off course if he lost the number.\\n\\nThe coast relied on satellites now and called it safety. He knew that. He still stepped onto the gallery when a freighter passed the point, the way he had once checked that the light was seen, and once a distant horn answered, which may have been coincidence on their side too.\\n\\nWhat unsettled him was how steadily the beam kept turning. He had thought himself the light's keeper. Now he saw he had mostly been its companion. The lamp had never needed him to burn; it had needed someone in the tower to believe, quietly, that a ship out there was still worth the watching.\\n\\nHe kept the logbook.\"}",
+  "output_sha256": "24b10d0522160c58d0b8ffdf75120a3f03cb660f7d80d4d711259e9ad21ec6d8",
+  "finish_reason": "end_turn",
+  "refusal": null,
+  "returned_model": "claude-fable-5-1",
+  "usage": {
+    "input_tokens": 543,
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 0,
+    "cache_creation": {
+      "ephemeral_5m_input_tokens": 0,
+      "ephemeral_1h_input_tokens": 0
+    },
+    "output_tokens": 529,
+    "output_tokens_details": {
+      "thinking_tokens": 0
+    },
+    "service_tier": "standard",
+    "inference_geo": "global"
+  },
+  "format": {
+    "json_object": true,
+    "rule_unchanged": true,
+    "passage_is_string": true,
+    "passage_sha256": "c819f02e5cc63a644c2ce8aa22d30ae8013683881c57da926dada41e5394a929",
+    "passage_words": 273
+  },
+  "finished_at": "2026-09-22T20:11:08.100728+00:00",
+  "latency_seconds": 12.9871,
+  "usage_cost_upper_estimate_usd": 0.03188,
+  "stream_status": "active",
+  "budget": {
+    "usage_cost_upper_estimate_usd": 5.8190417,
+    "uncertain_cost_reserve_usd": 0.04533,
+    "in_flight_reserve_usd": 0.318134,
+    "limit_usd": 18.83
+  }
+}

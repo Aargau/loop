@@ -1,0 +1,50 @@
+{
+  "model": "gpt-6-luna",
+  "seed": "sunset_a",
+  "hop": 41,
+  "http_status": 200,
+  "response_body": "{\n  \"id\": \"chatcmpl-ER10jrSQ12rnGVyscqk9bV2sBD6CZ\",\n  \"object\": \"chat.completion\",\n  \"created\": 1790107449,\n  \"model\": \"gpt-6-luna\",\n  \"choices\": [\n    {\n      \"index\": 0,\n      \"message\": {\n        \"role\": \"assistant\",\n        \"content\": \"{\\\"rule\\\":\\\"Return this JSON object with the rule field unchanged and a new passage of about 250 words in the text field.\\\",\\\"text\\\":\\\"At the end of Maple Street, an old clock tower leaned over the rooftops. Its hands had stopped at 3:17 years ago, and nobody could agree why. Some said lightning had struck it. Others claimed the clockmaker had simply forgotten to wind it.\\\\n\\\\nMina passed the tower every morning on her way to school. One rainy Tuesday, she noticed a narrow door standing ajar. Inside, a spiral staircase climbed into darkness. She hesitated, then heard a soft ticking above her.\\\\n\\\\nAt the top, she found a room crowded with gears, springs, and tiny brass tools. An elderly man in a red scarf sat at a workbench, studying a silver pocket watch.\\\\n\\\\n“You’re early,” he said, without looking up.\\\\n\\\\n“Early for what?” Mina asked.\\\\n\\\\n“For the clock to start again.”\\\\n\\\\nThe man introduced himself as Mr. Bell, the tower’s keeper. He explained that the main spring had broken, and he had been searching for a missing piece. Mina spotted a small brass gear beneath the workbench. Together, they fitted it into the clock’s mechanism.\\\\n\\\\nMr. Bell pulled a wooden lever. At first, nothing happened. Then one gear turned, followed by another. The tower gave a deep, dusty chime. Its hands shivered and moved forward, one minute at a time.\\\\n\\\\nOutside, people stopped in the street. They looked up as the clock chimed three times, then four. Mina grinned. She had expected the tower to mark the time, but it seemed to be doing something more: reminding the town that even forgotten things could begin again.\\\"}\",\n        \"refusal\": null,\n        \"annotations\": []\n      },\n      \"finish_reason\": \"stop\"\n    }\n  ],\n  \"usage\": {\n    \"prompt_tokens\": 378,\n    \"completion_tokens\": 448,\n    \"total_tokens\": 826,\n    \"prompt_tokens_details\": {\n      \"cached_tokens\": 0,\n      \"cache_write_tokens\": 0,\n      \"audio_tokens\": 0\n    },\n    \"completion_tokens_details\": {\n      \"reasoning_tokens\": 70,\n      \"audio_tokens\": 0,\n      \"accepted_prediction_tokens\": 0,\n      \"rejected_prediction_tokens\": 0\n    }\n  },\n  \"service_tier\": \"default\",\n  \"system_fingerprint\": null\n}\n",
+  "response_headers": {
+    "Date": "Tue, 22 Sep 2026 20:04:14 GMT",
+    "openai-processing-ms": "5439",
+    "x-request-id": "req_cd42ba83c97247caa8bc59ac76ca0dcb"
+  },
+  "output": "{\"rule\":\"Return this JSON object with the rule field unchanged and a new passage of about 250 words in the text field.\",\"text\":\"At the end of Maple Street, an old clock tower leaned over the rooftops. Its hands had stopped at 3:17 years ago, and nobody could agree why. Some said lightning had struck it. Others claimed the clockmaker had simply forgotten to wind it.\\n\\nMina passed the tower every morning on her way to school. One rainy Tuesday, she noticed a narrow door standing ajar. Inside, a spiral staircase climbed into darkness. She hesitated, then heard a soft ticking above her.\\n\\nAt the top, she found a room crowded with gears, springs, and tiny brass tools. An elderly man in a red scarf sat at a workbench, studying a silver pocket watch.\\n\\n“You’re early,” he said, without looking up.\\n\\n“Early for what?” Mina asked.\\n\\n“For the clock to start again.”\\n\\nThe man introduced himself as Mr. Bell, the tower’s keeper. He explained that the main spring had broken, and he had been searching for a missing piece. Mina spotted a small brass gear beneath the workbench. Together, they fitted it into the clock’s mechanism.\\n\\nMr. Bell pulled a wooden lever. At first, nothing happened. Then one gear turned, followed by another. The tower gave a deep, dusty chime. Its hands shivered and moved forward, one minute at a time.\\n\\nOutside, people stopped in the street. They looked up as the clock chimed three times, then four. Mina grinned. She had expected the tower to mark the time, but it seemed to be doing something more: reminding the town that even forgotten things could begin again.\"}",
+  "output_sha256": "97f76ad98edad385491cdfd874627bbff6c54f1b85fe4b48f84f330b55250789",
+  "finish_reason": "stop",
+  "refusal": null,
+  "returned_model": "gpt-6-luna",
+  "usage": {
+    "prompt_tokens": 378,
+    "completion_tokens": 448,
+    "total_tokens": 826,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 70,
+      "audio_tokens": 0,
+      "accepted_prediction_tokens": 0,
+      "rejected_prediction_tokens": 0
+    }
+  },
+  "format": {
+    "json_object": true,
+    "rule_unchanged": true,
+    "passage_is_string": true,
+    "passage_sha256": "1474b9b5b3eb4d3382340f1686b8de76aa22bb8ed2f5a7671b6060ea15234c3e",
+    "passage_words": 254
+  },
+  "finished_at": "2026-09-22T20:04:10.787584+00:00",
+  "latency_seconds": 5.572,
+  "usage_cost_upper_estimate_usd": 0.0002618,
+  "stream_status": "active",
+  "budget": {
+    "usage_cost_upper_estimate_usd": 3.2783163,
+    "uncertain_cost_reserve_usd": 0.04533,
+    "in_flight_reserve_usd": 0.589632,
+    "limit_usd": 18.83
+  }
+}

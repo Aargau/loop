@@ -1,0 +1,50 @@
+{
+  "model": "gpt-6-luna",
+  "seed": "sunset",
+  "hop": 7,
+  "http_status": 200,
+  "response_body": "{\n  \"id\": \"chatcmpl-ER2GFWP8sWGoZ7mbSGW2Lw6a56IYq\",\n  \"object\": \"chat.completion\",\n  \"created\": 1790112255,\n  \"model\": \"gpt-6-luna\",\n  \"choices\": [\n    {\n      \"index\": 0,\n      \"message\": {\n        \"role\": \"assistant\",\n        \"content\": \"{\\\"rule\\\":\\\"Return this JSON object with the rule field unchanged and, in the text field, the passage of about 250 words that comes immediately AFTER the current text in the same story.\\\",\\\"text\\\":\\\"“Once,” Mara said, “there was a valley that feared being forgotten. So it taught every child a name to carry: the name of someone who had loved them.”\\\\n\\\\nThe child’s fingers curled against the glass. “That isn’t the part I don’t know.”\\\\n\\\\nMara’s throat tightened. She remembered then: muddy knees, a silver key, and a promise whispered beneath the old bridge. She had been small enough to believe that leaving meant losing everything.\\\\n\\\\n“Your name,” she said. “You don’t know your own name.”\\\\n\\\\nThe child shook her head. “Tell me.”\\\\n\\\\n“Lena.” The name came back as naturally as a tune. “You’re Lena. You were my sister.”\\\\n\\\\nFinn turned to her, but Mara kept her eyes on the window. She remembered Lena’s mittened hand slipping from hers in a whiteout; remembered searching until the storm swallowed the path, and waking alone beside the bridge. For years, the village had called Lena a story Mara made up to explain her grief.\\\\n\\\\nThe little face softened. “You remembered.”\\\\n\\\\nThe silver key grew warm in Mara’s palm. A lock appeared in the window’s stone frame, tiny and bright. She fitted the key into it and turned.\\\\n\\\\nThe glass swung inward. Snow-scented air rushed up the stairwell, carrying the faint glow of village lamps. Behind Mara, the lantern dimmed.\\\\n\\\\n“Come home,” she said.\\\\n\\\\nLena stepped through and took her hand. For an instant she was a child again; then she was only a memory, warm and certain, like fingers wrapped around Mara’s.\\\\n\\\\nAbove them, her grandmother called her name. This time, the sound found its way down.\\\"}\",\n        \"refusal\": null,\n        \"annotations\": []\n      },\n      \"finish_reason\": \"stop\"\n    }\n  ],\n  \"usage\": {\n    \"prompt_tokens\": 422,\n    \"completion_tokens\": 548,\n    \"total_tokens\": 970,\n    \"prompt_tokens_details\": {\n      \"cached_tokens\": 0,\n      \"cache_write_tokens\": 0,\n      \"audio_tokens\": 0\n    },\n    \"completion_tokens_details\": {\n      \"reasoning_tokens\": 125,\n      \"audio_tokens\": 0,\n      \"accepted_prediction_tokens\": 0,\n      \"rejected_prediction_tokens\": 0\n    }\n  },\n  \"service_tier\": \"default\",\n  \"system_fingerprint\": null\n}\n",
+  "response_headers": {
+    "Date": "Tue, 22 Sep 2026 21:24:22 GMT",
+    "openai-processing-ms": "6600",
+    "x-request-id": "req_e8d75ce4211e49358970ba83b6a57560"
+  },
+  "output": "{\"rule\":\"Return this JSON object with the rule field unchanged and, in the text field, the passage of about 250 words that comes immediately AFTER the current text in the same story.\",\"text\":\"“Once,” Mara said, “there was a valley that feared being forgotten. So it taught every child a name to carry: the name of someone who had loved them.”\\n\\nThe child’s fingers curled against the glass. “That isn’t the part I don’t know.”\\n\\nMara’s throat tightened. She remembered then: muddy knees, a silver key, and a promise whispered beneath the old bridge. She had been small enough to believe that leaving meant losing everything.\\n\\n“Your name,” she said. “You don’t know your own name.”\\n\\nThe child shook her head. “Tell me.”\\n\\n“Lena.” The name came back as naturally as a tune. “You’re Lena. You were my sister.”\\n\\nFinn turned to her, but Mara kept her eyes on the window. She remembered Lena’s mittened hand slipping from hers in a whiteout; remembered searching until the storm swallowed the path, and waking alone beside the bridge. For years, the village had called Lena a story Mara made up to explain her grief.\\n\\nThe little face softened. “You remembered.”\\n\\nThe silver key grew warm in Mara’s palm. A lock appeared in the window’s stone frame, tiny and bright. She fitted the key into it and turned.\\n\\nThe glass swung inward. Snow-scented air rushed up the stairwell, carrying the faint glow of village lamps. Behind Mara, the lantern dimmed.\\n\\n“Come home,” she said.\\n\\nLena stepped through and took her hand. For an instant she was a child again; then she was only a memory, warm and certain, like fingers wrapped around Mara’s.\\n\\nAbove them, her grandmother called her name. This time, the sound found its way down.\"}",
+  "output_sha256": "e8f1931b10c6b55d3469bad6bfc6bd453ed87f8c2a824e23d1b58bb3bc6b63e4",
+  "finish_reason": "stop",
+  "refusal": null,
+  "returned_model": "gpt-6-luna",
+  "usage": {
+    "prompt_tokens": 422,
+    "completion_tokens": 548,
+    "total_tokens": 970,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 125,
+      "audio_tokens": 0,
+      "accepted_prediction_tokens": 0,
+      "rejected_prediction_tokens": 0
+    }
+  },
+  "format": {
+    "json_object": true,
+    "rule_unchanged": true,
+    "passage_is_string": true,
+    "passage_sha256": "4e4054294a6767f2f427b8c94cfd979b15d8b2661761b70255b2534544b6564d",
+    "passage_words": 262
+  },
+  "finished_at": "2026-09-22T21:24:18.068472+00:00",
+  "latency_seconds": 6.7429,
+  "usage_cost_upper_estimate_usd": 0.0003162,
+  "stream_status": "active",
+  "budget": {
+    "usage_cost_upper_estimate_usd": 0.1646102,
+    "uncertain_cost_reserve_usd": 0.0,
+    "in_flight_reserve_usd": 0.349286,
+    "limit_usd": 5.0
+  }
+}

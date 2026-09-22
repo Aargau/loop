@@ -1,0 +1,22 @@
+{
+  "started_at": "2026-09-22T20:15:45.894453+00:00",
+  "model": "claude-opus-5-5",
+  "seed": "sunset_b",
+  "hop": 44,
+  "endpoint": "https://api.anthropic.com/v1/messages",
+  "body": {
+    "model": "claude-opus-5-5",
+    "messages": [
+      {
+        "role": "user",
+        "content": "```json\n{\"rule\": \"Return this JSON object with the rule field unchanged and a new passage of about 250 words in the text field.\", \"text\": \"On the windswept coast of Tarrow Point, the lighthouse had gone dark after a winter storm shattered its great lens and flooded the oil room below. Without its sweeping beam, the fishing boats crept home by guesswork. Captains anchored far offshore to wait for dawn, nets tangled on hidden rocks, and the harbormaster lit bonfires on the pier that the fog swallowed within minutes. A girl named Lena, who mended nets on the docks beside her aunt, often stared up at the silent tower perched on the cliff. One gray evening she noticed a faint glow flickering in the lantern room. Curious, she followed the crumbling stair cut into the rock and pushed open the salt-stiff door. Inside she found an old man kneeling among hundreds of glass prisms laid out on sailcloth. His name was Tobias, and he had kept the light for forty years before his hands began to shake. He had returned hoping to rebuild the lens, but his fingers could no longer set each prism into its brass frame without chipping the delicate edges. Lena offered her help. Each evening, after the nets were hung to dry, she climbed the cliff to learn how to polish the glass, seat each piece at its proper angle, and trim the wick until the flame burned steady and bright. When the autumn gales arrived, the last prism slid into place. Lena struck a match and touched it to the wick. A brilliant beam swept across the dark water, and far out at sea, the fishing boats turned their bows toward home.\"}\n```"
+      }
+    ],
+    "max_tokens": 4096,
+    "output_config": {
+      "effort": "low"
+    }
+  },
+  "state_sha256": "1a07270c0a7562151831d628519a05472ee8778d12e73d28633e70b558ec317d",
+  "reserved_cost_usd": 0.090384
+}

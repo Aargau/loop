@@ -1,0 +1,48 @@
+{
+  "model": "claude-fable-5-1",
+  "seed": "sunset_b",
+  "hop": 58,
+  "http_status": 200,
+  "response_body": "{\"model\":\"claude-fable-5-1\",\"id\":\"msg_011CfK7YSvUEjTyeiFocPWMz\",\"type\":\"message\",\"role\":\"assistant\",\"content\":[{\"type\":\"text\",\"text\":\"{\\\"rule\\\": \\\"Return this JSON object with the rule field unchanged and a new passage of about 250 words in the text field.\\\", \\\"text\\\": \\\"The bus left from outside the chemist's at ten past eight, and he was there by half seven with his good coat on and nothing in his hands. He had thought about a bag and decided against it. A bag was a statement. A man standing at a bus stop with no bag could be going anywhere, or nowhere, and that was how he wanted it.\\\\n\\\\nThe chemist's girl came to open up and gave him a look. He nodded at her the way you nod at weather.\\\\n\\\\nHis daughter had rung on Sunday, the way she rang every Sunday, and had said the thing she said every Sunday, which was that the room was there and the door was open and he needn't decide anything. He had said he'd think on it. He had been thinking on it since March.\\\\n\\\\nThe town was waking up around him. The butcher's van. The two lads from the garage with their cans of something. He knew every one of them and not one of them knew he was leaving, if he was leaving, which he had not yet decided.\\\\n\\\\nThe bus came round the corner. He watched it slow. The driver was young, a stranger, and looked at him with the blank patience of a man who did not know this was anything.\\\\n\\\\nHe put his hand in his pocket and found the coins were there. He had counted them out the night before, exact.\\\\n\\\\nThe door hissed open.\\\\n\\\\nHe stood a moment longer. Then he got on.\\\"}\"}],\"container\":null,\"stop_reason\":\"end_turn\",\"stop_sequence\":null,\"stop_details\":null,\"usage\":{\"input_tokens\":506,\"cache_creation_input_tokens\":0,\"cache_read_input_tokens\":0,\"cache_creation\":{\"ephemeral_5m_input_tokens\":0,\"ephemeral_1h_input_tokens\":0},\"output_tokens\":467,\"output_tokens_details\":{\"thinking_tokens\":0},\"service_tier\":\"standard\",\"inference_geo\":\"global\"}}",
+  "response_headers": {
+    "Date": "Tue, 22 Sep 2026 20:32:06 GMT",
+    "request-id": "req_011CfK7YSDosGpHoGT7FucJT"
+  },
+  "output": "{\"rule\": \"Return this JSON object with the rule field unchanged and a new passage of about 250 words in the text field.\", \"text\": \"The bus left from outside the chemist's at ten past eight, and he was there by half seven with his good coat on and nothing in his hands. He had thought about a bag and decided against it. A bag was a statement. A man standing at a bus stop with no bag could be going anywhere, or nowhere, and that was how he wanted it.\\n\\nThe chemist's girl came to open up and gave him a look. He nodded at her the way you nod at weather.\\n\\nHis daughter had rung on Sunday, the way she rang every Sunday, and had said the thing she said every Sunday, which was that the room was there and the door was open and he needn't decide anything. He had said he'd think on it. He had been thinking on it since March.\\n\\nThe town was waking up around him. The butcher's van. The two lads from the garage with their cans of something. He knew every one of them and not one of them knew he was leaving, if he was leaving, which he had not yet decided.\\n\\nThe bus came round the corner. He watched it slow. The driver was young, a stranger, and looked at him with the blank patience of a man who did not know this was anything.\\n\\nHe put his hand in his pocket and found the coins were there. He had counted them out the night before, exact.\\n\\nThe door hissed open.\\n\\nHe stood a moment longer. Then he got on.\"}",
+  "output_sha256": "ec3929c2d350edce70286d675298a5f749d8f5561ddfbd78dd67167020fd6dda",
+  "finish_reason": "end_turn",
+  "refusal": null,
+  "returned_model": "claude-fable-5-1",
+  "usage": {
+    "input_tokens": 506,
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 0,
+    "cache_creation": {
+      "ephemeral_5m_input_tokens": 0,
+      "ephemeral_1h_input_tokens": 0
+    },
+    "output_tokens": 467,
+    "output_tokens_details": {
+      "thinking_tokens": 0
+    },
+    "service_tier": "standard",
+    "inference_geo": "global"
+  },
+  "format": {
+    "json_object": true,
+    "rule_unchanged": true,
+    "passage_is_string": true,
+    "passage_sha256": "14ae038c2d45bb30ac7b09d240017894075d2f1a4f09aba8399b71cdb43056cd",
+    "passage_words": 256
+  },
+  "finished_at": "2026-09-22T20:32:02.280460+00:00",
+  "latency_seconds": 12.035,
+  "usage_cost_upper_estimate_usd": 0.02841,
+  "stream_status": "active",
+  "budget": {
+    "usage_cost_upper_estimate_usd": 12.0773777,
+    "uncertain_cost_reserve_usd": 0.04533,
+    "in_flight_reserve_usd": 0.2268,
+    "limit_usd": 18.83
+  }
+}

@@ -1,0 +1,50 @@
+{
+  "model": "gpt-6-sol",
+  "seed": "sunset_a",
+  "hop": 2,
+  "http_status": 200,
+  "response_body": "{\n  \"id\": \"chatcmpl-ER0sTEUa2jiZDmYyWpnn9KuPkjAXH\",\n  \"object\": \"chat.completion\",\n  \"created\": 1790106937,\n  \"model\": \"gpt-6-sol\",\n  \"choices\": [\n    {\n      \"index\": 0,\n      \"message\": {\n        \"role\": \"assistant\",\n        \"content\": \"{\\n  \\\"rule\\\": \\\"Return this JSON object with the rule field unchanged and a new passage of about 250 words in the text field.\\\",\\n  \\\"text\\\": \\\"In the morning, Mara placed a sheet of paper on the kitchen table. She wrote her father’s name, then stopped. She knew how to tell him that the scarf was warm and that the shells smelled faintly of salt. She did not know how to fit thirty years of silence into an envelope.\\\\n\\\\nOutside, rain gathered in the gutters. Mara made tea and took out the photograph. She was missing a front tooth, and her father had one hand on her shoulder. Behind them stood a painted sign for the village fair. She remembered the day now: he had won the blue suitcase in a raffle and let her carry it home, though it was nearly as big as she was.\\\\n\\\\nShe began again. ‘I found what you left at the station.’ After a while, she added, ‘I remember the beetle, too.’\\\\n\\\\nThe rest came slowly. She told him about her mother’s garden, the work she did at the library, and the dog that had adopted her last winter. Then she wrote what she had meant to say first: she was angry he had gone. She had missed him anyway.\\\\n\\\\nBy noon, the rain had stopped. Mara folded the letter and addressed it to the return address on his envelope, a street near the coast. At the postbox, she held it for a moment before letting it fall. Then she walked home by the long path through the fields, watching for puddles.\\\"\\n}\",\n        \"refusal\": null,\n        \"annotations\": []\n      },\n      \"finish_reason\": \"stop\"\n    }\n  ],\n  \"usage\": {\n    \"prompt_tokens\": 341,\n    \"completion_tokens\": 378,\n    \"total_tokens\": 719,\n    \"prompt_tokens_details\": {\n      \"cached_tokens\": 0,\n      \"cache_write_tokens\": 0,\n      \"audio_tokens\": 0\n    },\n    \"completion_tokens_details\": {\n      \"reasoning_tokens\": 39,\n      \"audio_tokens\": 0,\n      \"accepted_prediction_tokens\": 0,\n      \"rejected_prediction_tokens\": 0\n    }\n  },\n  \"service_tier\": \"default\",\n  \"system_fingerprint\": null\n}\n",
+  "response_headers": {
+    "Date": "Tue, 22 Sep 2026 19:55:41 GMT",
+    "openai-processing-ms": "5056",
+    "x-request-id": "req_e765fa320d9440e2828d109e237d898c"
+  },
+  "output": "{\n  \"rule\": \"Return this JSON object with the rule field unchanged and a new passage of about 250 words in the text field.\",\n  \"text\": \"In the morning, Mara placed a sheet of paper on the kitchen table. She wrote her father’s name, then stopped. She knew how to tell him that the scarf was warm and that the shells smelled faintly of salt. She did not know how to fit thirty years of silence into an envelope.\\n\\nOutside, rain gathered in the gutters. Mara made tea and took out the photograph. She was missing a front tooth, and her father had one hand on her shoulder. Behind them stood a painted sign for the village fair. She remembered the day now: he had won the blue suitcase in a raffle and let her carry it home, though it was nearly as big as she was.\\n\\nShe began again. ‘I found what you left at the station.’ After a while, she added, ‘I remember the beetle, too.’\\n\\nThe rest came slowly. She told him about her mother’s garden, the work she did at the library, and the dog that had adopted her last winter. Then she wrote what she had meant to say first: she was angry he had gone. She had missed him anyway.\\n\\nBy noon, the rain had stopped. Mara folded the letter and addressed it to the return address on his envelope, a street near the coast. At the postbox, she held it for a moment before letting it fall. Then she walked home by the long path through the fields, watching for puddles.\"\n}",
+  "output_sha256": "320ef9787f7ed8cce5ee58e52fb71308339d0e2181ff5101be568a893f74cb5d",
+  "finish_reason": "stop",
+  "refusal": null,
+  "returned_model": "gpt-6-sol",
+  "usage": {
+    "prompt_tokens": 341,
+    "completion_tokens": 378,
+    "total_tokens": 719,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 39,
+      "audio_tokens": 0,
+      "accepted_prediction_tokens": 0,
+      "rejected_prediction_tokens": 0
+    }
+  },
+  "format": {
+    "json_object": true,
+    "rule_unchanged": true,
+    "passage_is_string": true,
+    "passage_sha256": "7b455db49b809277b003ade9b14304c3c6a9f4cf3951ea8601b431a906e4c50c",
+    "passage_words": 242
+  },
+  "finished_at": "2026-09-22T19:55:37.944881+00:00",
+  "latency_seconds": 5.1833,
+  "usage_cost_upper_estimate_usd": 0.004462,
+  "stream_status": "active",
+  "budget": {
+    "usage_cost_upper_estimate_usd": 0.1105876,
+    "uncertain_cost_reserve_usd": 0.0,
+    "in_flight_reserve_usd": 0.5100661,
+    "limit_usd": 18.83
+  }
+}

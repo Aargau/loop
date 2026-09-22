@@ -1,0 +1,48 @@
+{
+  "model": "claude-fable-5-1",
+  "seed": "sunset_b",
+  "hop": 41,
+  "http_status": 200,
+  "response_body": "{\"model\":\"claude-fable-5-1\",\"id\":\"msg_011CfK6hmxbCipyupHWih33c\",\"type\":\"message\",\"role\":\"assistant\",\"content\":[{\"type\":\"text\",\"text\":\"{\\\"rule\\\": \\\"Return this JSON object with the rule field unchanged and a new passage of about 250 words in the text field.\\\", \\\"text\\\": \\\"The bookshop on Fenwick Lane had no name over the door, only a brass plate that said HOURS VARY, which had been true for so long that people in the neighbourhood treated it as a kind of weather. You checked. Sometimes the light was on.\\\\n\\\\nDesmond had inherited the shop from an uncle he had met four times. The will was specific about the stock and silent about everything else, so he kept the stock and changed nothing, at first out of respect and later because he had come to like the arrangement of things: poetry beside plumbing manuals, the atlases stacked flat under the window where the sun had bleached their spines to the colour of weak tea.\\\\n\\\\nHe did not sell much. He did not need to. The building was paid for and his own wants had narrowed over the years to coffee, the radio, and the particular silence of a room full of paper in the hour before opening. Regulars came in and sat. Some of them bought. A woman called Ines read the whole of a novel over eleven visits and then paid for it, and he had not minded either part of that.\\\\n\\\\nIn October a letter arrived from the council about the drains under the lane, and a second letter, from a firm he did not recognise, asking whether he had considered the value of the freehold. He put both on the counter under the paperweight. Then he turned the sign to the side that said OPEN, though it was a Tuesday and he had not planned to be.\\\"}\"}],\"container\":null,\"stop_reason\":\"end_turn\",\"stop_sequence\":null,\"stop_details\":null,\"usage\":{\"input_tokens\":471,\"cache_creation_input_tokens\":0,\"cache_read_input_tokens\":0,\"cache_creation\":{\"ephemeral_5m_input_tokens\":0,\"ephemeral_1h_input_tokens\":0},\"output_tokens\":481,\"output_tokens_details\":{\"thinking_tokens\":0},\"service_tier\":\"standard\",\"inference_geo\":\"global\"}}",
+  "response_headers": {
+    "Date": "Tue, 22 Sep 2026 20:21:06 GMT",
+    "request-id": "req_011CfK6hmdjxDXLJdyJ6t7n7"
+  },
+  "output": "{\"rule\": \"Return this JSON object with the rule field unchanged and a new passage of about 250 words in the text field.\", \"text\": \"The bookshop on Fenwick Lane had no name over the door, only a brass plate that said HOURS VARY, which had been true for so long that people in the neighbourhood treated it as a kind of weather. You checked. Sometimes the light was on.\\n\\nDesmond had inherited the shop from an uncle he had met four times. The will was specific about the stock and silent about everything else, so he kept the stock and changed nothing, at first out of respect and later because he had come to like the arrangement of things: poetry beside plumbing manuals, the atlases stacked flat under the window where the sun had bleached their spines to the colour of weak tea.\\n\\nHe did not sell much. He did not need to. The building was paid for and his own wants had narrowed over the years to coffee, the radio, and the particular silence of a room full of paper in the hour before opening. Regulars came in and sat. Some of them bought. A woman called Ines read the whole of a novel over eleven visits and then paid for it, and he had not minded either part of that.\\n\\nIn October a letter arrived from the council about the drains under the lane, and a second letter, from a firm he did not recognise, asking whether he had considered the value of the freehold. He put both on the counter under the paperweight. Then he turned the sign to the side that said OPEN, though it was a Tuesday and he had not planned to be.\"}",
+  "output_sha256": "69130103964f3681b220b1f4a9eb3d89c8c5ad2686595887bebff0120357e169",
+  "finish_reason": "end_turn",
+  "refusal": null,
+  "returned_model": "claude-fable-5-1",
+  "usage": {
+    "input_tokens": 471,
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 0,
+    "cache_creation": {
+      "ephemeral_5m_input_tokens": 0,
+      "ephemeral_1h_input_tokens": 0
+    },
+    "output_tokens": 481,
+    "output_tokens_details": {
+      "thinking_tokens": 0
+    },
+    "service_tier": "standard",
+    "inference_geo": "global"
+  },
+  "format": {
+    "json_object": true,
+    "rule_unchanged": true,
+    "passage_is_string": true,
+    "passage_sha256": "5f53c7e7a0415eddc7fedbd14f3669ed70d292317f8c00b21f2e9c81c3bdff6d",
+    "passage_words": 265
+  },
+  "finished_at": "2026-09-22T20:21:02.791525+00:00",
+  "latency_seconds": 12.7177,
+  "usage_cost_upper_estimate_usd": 0.02876,
+  "stream_status": "active",
+  "budget": {
+    "usage_cost_upper_estimate_usd": 9.1932237,
+    "uncertain_cost_reserve_usd": 0.04533,
+    "in_flight_reserve_usd": 0.318274,
+    "limit_usd": 18.83
+  }
+}

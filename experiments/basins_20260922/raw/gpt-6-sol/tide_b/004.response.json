@@ -1,0 +1,50 @@
+{
+  "model": "gpt-6-sol",
+  "seed": "tide_b",
+  "hop": 4,
+  "http_status": 200,
+  "response_body": "{\n  \"id\": \"chatcmpl-ER0ozhvMfRmEIcuBLrROOee0kOszz\",\n  \"object\": \"chat.completion\",\n  \"created\": 1790106721,\n  \"model\": \"gpt-6-sol\",\n  \"choices\": [\n    {\n      \"index\": 0,\n      \"message\": {\n        \"role\": \"assistant\",\n        \"content\": \"{\\\"rule\\\":\\\"Return this JSON object with the rule field unchanged and a new passage of about 250 words in the text field.\\\",\\\"text\\\":\\\"Every Tuesday, Ivo carried a brass key to the old greenhouse and opened its roof vents. The gardeners said the hinges had seized years ago, but each vent swung freely for him. He never asked why. The seedlings needed air, and the work took only ten minutes.\\\\n\\\\nOne Tuesday in April, a paper label hung from the handle of the highest vent. In neat blue ink, someone had written: Leave this one closed until noon.\\\\n\\\\nIvo looked at the clear sky. Warm days could cook the young plants under glass. He opened the other vents and left that one alone.\\\\n\\\\nBefore noon, a cold wind came over the hill. It swept through the greenhouse, shaking the tomato vines and scattering soil across the benches. Ivo hurried back. The closed vent sheltered a tray of rare pear saplings on the north wall. Everything beneath the open vents had bent in the gusts, but the saplings stood straight.\\\\n\\\\nThe next week, another label waited on the handle: You can open it today.\\\\n\\\\nIvo showed it to the head gardener. She turned it over, then fetched a box from her office. Inside were hundreds of labels, all written in the same blue ink. Her father had used them to mark seed trays. He had died twelve years earlier.\\\\n\\\\nThat evening, Ivo returned to latch the greenhouse door. A label lay on the floor beside the pear saplings. Its ink was still wet.\\\\n\\\\nHe picked it up. It said: They need a larger pot.\\\\n\\\\nOn Thursday, Ivo brought one from the shed.\\\"}\",\n        \"refusal\": null,\n        \"annotations\": []\n      },\n      \"finish_reason\": \"stop\"\n    }\n  ],\n  \"usage\": {\n    \"prompt_tokens\": 363,\n    \"completion_tokens\": 387,\n    \"total_tokens\": 750,\n    \"prompt_tokens_details\": {\n      \"cached_tokens\": 0,\n      \"cache_write_tokens\": 0,\n      \"audio_tokens\": 0\n    },\n    \"completion_tokens_details\": {\n      \"reasoning_tokens\": 23,\n      \"audio_tokens\": 0,\n      \"accepted_prediction_tokens\": 0,\n      \"rejected_prediction_tokens\": 0\n    }\n  },\n  \"service_tier\": \"default\",\n  \"system_fingerprint\": null\n}\n",
+  "response_headers": {
+    "Date": "Tue, 22 Sep 2026 19:52:07 GMT",
+    "openai-processing-ms": "5928",
+    "x-request-id": "req_281c33af89894213a902f431098c499b"
+  },
+  "output": "{\"rule\":\"Return this JSON object with the rule field unchanged and a new passage of about 250 words in the text field.\",\"text\":\"Every Tuesday, Ivo carried a brass key to the old greenhouse and opened its roof vents. The gardeners said the hinges had seized years ago, but each vent swung freely for him. He never asked why. The seedlings needed air, and the work took only ten minutes.\\n\\nOne Tuesday in April, a paper label hung from the handle of the highest vent. In neat blue ink, someone had written: Leave this one closed until noon.\\n\\nIvo looked at the clear sky. Warm days could cook the young plants under glass. He opened the other vents and left that one alone.\\n\\nBefore noon, a cold wind came over the hill. It swept through the greenhouse, shaking the tomato vines and scattering soil across the benches. Ivo hurried back. The closed vent sheltered a tray of rare pear saplings on the north wall. Everything beneath the open vents had bent in the gusts, but the saplings stood straight.\\n\\nThe next week, another label waited on the handle: You can open it today.\\n\\nIvo showed it to the head gardener. She turned it over, then fetched a box from her office. Inside were hundreds of labels, all written in the same blue ink. Her father had used them to mark seed trays. He had died twelve years earlier.\\n\\nThat evening, Ivo returned to latch the greenhouse door. A label lay on the floor beside the pear saplings. Its ink was still wet.\\n\\nHe picked it up. It said: They need a larger pot.\\n\\nOn Thursday, Ivo brought one from the shed.\"}",
+  "output_sha256": "d8a07cf44dd913ec99038063cbb0fb9f533bfe3e7e40d04b4f0412059fcd2b13",
+  "finish_reason": "stop",
+  "refusal": null,
+  "returned_model": "gpt-6-sol",
+  "usage": {
+    "prompt_tokens": 363,
+    "completion_tokens": 387,
+    "total_tokens": 750,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 23,
+      "audio_tokens": 0,
+      "accepted_prediction_tokens": 0,
+      "rejected_prediction_tokens": 0
+    }
+  },
+  "format": {
+    "json_object": true,
+    "rule_unchanged": true,
+    "passage_is_string": true,
+    "passage_sha256": "c7936311cae6d6fa028afb1d1b8c69a60cb589f5419089a8d6f44de42ec20fb0",
+    "passage_words": 258
+  },
+  "finished_at": "2026-09-22T19:52:03.255537+00:00",
+  "latency_seconds": 6.0589,
+  "usage_cost_upper_estimate_usd": 0.004596,
+  "stream_status": "active",
+  "budget": {
+    "usage_cost_upper_estimate_usd": 0.3370917,
+    "uncertain_cost_reserve_usd": 0.0,
+    "in_flight_reserve_usd": 0.5457697,
+    "limit_usd": 20
+  }
+}

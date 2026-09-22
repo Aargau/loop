@@ -1,0 +1,22 @@
+{
+  "started_at": "2026-09-22T19:52:18.686675+00:00",
+  "model": "claude-opus-5-5",
+  "seed": "bicycle",
+  "hop": 3,
+  "endpoint": "https://api.anthropic.com/v1/messages",
+  "body": {
+    "model": "claude-opus-5-5",
+    "messages": [
+      {
+        "role": "user",
+        "content": "```json\n{\"rule\": \"Return this JSON object with the rule field unchanged and a new passage of about 250 words in the text field.\", \"text\": \"The speck of land had no name on her father's chart, only a faint pencil circle and a number she could not decipher. For three days she said nothing, turning the letter over in her mind while she scrubbed salt from the gallery railing and hauled oil up the endless stairs. On the fourth morning the sea lay flat and silver, and she knew she would not get a better chance. She took the small skiff from the boathouse, packed bread, a tin of water, and the letter wrapped in oilcloth, and rowed out before her father woke. The lighthouse shrank behind her until it was no larger than a candle. By midday her palms were blistered and the sun hung pale behind a thin veil of cloud. Then, just as she began to doubt the map entirely, she saw it: a low hump of rock rising from the water, and on its crest a single crooked tree bent hard against the wind. She dragged the skiff onto a narrow strip of pebbles and climbed. The spring was exactly where the letter said, bubbling from a crack in the stone, and when she cupped the water to her lips it tasted faintly of iron. Her heart pounded. Following the coastline, she found the mouth of the cave, half hidden by hanging moss. Inside, the walls were dark and dull, but she remembered the words about rain. She looked up at the gathering clouds, sat down on a flat stone, and waited for the sky to open.\"}\n```"
+      }
+    ],
+    "max_tokens": 4096,
+    "output_config": {
+      "effort": "low"
+    }
+  },
+  "state_sha256": "8bf48d55f512b9f1f9d059483a3c5485514026522be8bd2e54300e79af53c338",
+  "reserved_cost_usd": 0.08994
+}

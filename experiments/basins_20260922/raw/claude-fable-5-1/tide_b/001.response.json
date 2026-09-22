@@ -1,0 +1,48 @@
+{
+  "model": "claude-fable-5-1",
+  "seed": "tide_b",
+  "hop": 1,
+  "http_status": 200,
+  "response_body": "{\"model\":\"claude-fable-5-1\",\"id\":\"msg_011CfK4SMkuuGMA8yeoQ6n5Y\",\"type\":\"message\",\"role\":\"assistant\",\"content\":[{\"type\":\"text\",\"text\":\"{\\\"rule\\\": \\\"Return this JSON object with the rule field unchanged and a new passage of about 250 words in the text field.\\\", \\\"text\\\": \\\"The tide came in an hour early. Nobody on the pier could explain it, and the old men who had fished these waters for fifty years simply shook their heads and reeled in their lines. Marta noticed first, because her boots were suddenly wet where a moment before she had been standing on dry sand, sorting through the morning's haul of clams. She called out to her brother, but Teo was already looking at the horizon, his hand shading his eyes against the pale light.\\\\n\\\\nThe water did not rush. It crept, patient and deliberate, swallowing the tide pools one by one, erasing the footprints of the gulls, lifting the tangled nets that had been left to dry on the rocks. The harbor master came down from his office with a clipboard he did not consult, muttering about lunar tables and barometric pressure, but his voice trailed off when he saw how far the sea had already advanced.\\\\n\\\\nBy noon the lower road was flooded. Children were delighted; their parents were not. Someone rang the church bell, though no one had agreed on what the signal meant. Marta and Teo carried their buckets up the hill and sat on the wall by the cemetery, watching the town rearrange itself around the water. Boats bobbed at odd angles. A dog swam in circles, barking joyfully.\\\\n\\\\n\\\\\\\"It will go out again,\\\\\\\" Teo said, though he did not sound certain.\\\\n\\\\nMarta said nothing. She was thinking of their grandmother, who used to say the sea kept its own clock, and that one day it would stop bothering to keep ours.\\\"}\"}],\"container\":null,\"stop_reason\":\"end_turn\",\"stop_sequence\":null,\"stop_details\":null,\"usage\":{\"input_tokens\":62,\"cache_creation_input_tokens\":0,\"cache_read_input_tokens\":0,\"cache_creation\":{\"ephemeral_5m_input_tokens\":0,\"ephemeral_1h_input_tokens\":0},\"output_tokens\":533,\"output_tokens_details\":{\"thinking_tokens\":0},\"service_tier\":\"standard\",\"inference_geo\":\"global\"}}",
+  "response_headers": {
+    "Date": "Tue, 22 Sep 2026 19:51:23 GMT",
+    "request-id": "req_011CfK4SMHNtx8MhMHmaJtwk"
+  },
+  "output": "{\"rule\": \"Return this JSON object with the rule field unchanged and a new passage of about 250 words in the text field.\", \"text\": \"The tide came in an hour early. Nobody on the pier could explain it, and the old men who had fished these waters for fifty years simply shook their heads and reeled in their lines. Marta noticed first, because her boots were suddenly wet where a moment before she had been standing on dry sand, sorting through the morning's haul of clams. She called out to her brother, but Teo was already looking at the horizon, his hand shading his eyes against the pale light.\\n\\nThe water did not rush. It crept, patient and deliberate, swallowing the tide pools one by one, erasing the footprints of the gulls, lifting the tangled nets that had been left to dry on the rocks. The harbor master came down from his office with a clipboard he did not consult, muttering about lunar tables and barometric pressure, but his voice trailed off when he saw how far the sea had already advanced.\\n\\nBy noon the lower road was flooded. Children were delighted; their parents were not. Someone rang the church bell, though no one had agreed on what the signal meant. Marta and Teo carried their buckets up the hill and sat on the wall by the cemetery, watching the town rearrange itself around the water. Boats bobbed at odd angles. A dog swam in circles, barking joyfully.\\n\\n\\\"It will go out again,\\\" Teo said, though he did not sound certain.\\n\\nMarta said nothing. She was thinking of their grandmother, who used to say the sea kept its own clock, and that one day it would stop bothering to keep ours.\"}",
+  "output_sha256": "0083e22fbb3e03707a174b80ad2af6f09a1f077edf9910db333067becb7717a8",
+  "finish_reason": "end_turn",
+  "refusal": null,
+  "returned_model": "claude-fable-5-1",
+  "usage": {
+    "input_tokens": 62,
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 0,
+    "cache_creation": {
+      "ephemeral_5m_input_tokens": 0,
+      "ephemeral_1h_input_tokens": 0
+    },
+    "output_tokens": 533,
+    "output_tokens_details": {
+      "thinking_tokens": 0
+    },
+    "service_tier": "standard",
+    "inference_geo": "global"
+  },
+  "format": {
+    "json_object": true,
+    "rule_unchanged": true,
+    "passage_is_string": true,
+    "passage_sha256": "4bad1e361915f204cf9a18851e54f43073db2f395a1bd441904a7125421ccb81",
+    "passage_words": 267
+  },
+  "finished_at": "2026-09-22T19:51:19.692641+00:00",
+  "latency_seconds": 12.3096,
+  "usage_cost_upper_estimate_usd": 0.02727,
+  "stream_status": "active",
+  "budget": {
+    "usage_cost_upper_estimate_usd": 0.1094177,
+    "uncertain_cost_reserve_usd": 0.0,
+    "in_flight_reserve_usd": 0.3436453,
+    "limit_usd": 20
+  }
+}

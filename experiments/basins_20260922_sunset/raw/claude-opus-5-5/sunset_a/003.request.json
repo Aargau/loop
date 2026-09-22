@@ -1,0 +1,22 @@
+{
+  "started_at": "2026-09-22T19:56:15.369035+00:00",
+  "model": "claude-opus-5-5",
+  "seed": "sunset_a",
+  "hop": 3,
+  "endpoint": "https://api.anthropic.com/v1/messages",
+  "body": {
+    "model": "claude-opus-5-5",
+    "messages": [
+      {
+        "role": "user",
+        "content": "```json\n{\"rule\": \"Return this JSON object with the rule field unchanged and a new passage of about 250 words in the text field.\", \"text\": \"The baker unlocked the shop at four in the morning, as she had every day since her grandmother handed her the keys. The bell above the door gave its familiar tired jingle, and the smell of yesterday's bread still hung in the air like a memory refusing to leave. She tied on her apron, switched on the ovens, and listened to them tick as they warmed. Flour dusted the wooden counter where three generations of hands had kneaded dough, and a shallow groove had formed near the center, worn smooth by decades of patient pressing. She measured water, salt, and yeast without looking at the scale, trusting the weight of the bowl in her arms. Outside, the street was dark and empty except for a delivery truck rumbling past and a cat watching from the windowsill across the road. By five, the first loaves were rising beneath linen towels, swelling slowly like sleeping animals breathing. She thought about the letter on the kitchen table upstairs, the one from the developer offering more money than the shop had earned in twenty years. She had read it four times and still had not answered. When the timer sounded, she pulled a tray of golden rolls from the oven and set them on the rack to cool. The crust crackled softly as it met the cooler air, a sound her grandmother used to call the bread singing. She stood still and listened until it faded. Then she turned the sign on the door to open, poured herself a cup of coffee, and waited for the neighborhood to wake.\"}\n```"
+      }
+    ],
+    "max_tokens": 4096,
+    "output_config": {
+      "effort": "low"
+    }
+  },
+  "state_sha256": "7b5da64ac3d7ca70657bc7bc352991d5618123b23bb4abd218cc833372fb20b0",
+  "reserved_cost_usd": 0.090408
+}

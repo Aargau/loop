@@ -1,0 +1,48 @@
+{
+  "model": "claude-fable-5-1",
+  "seed": "sunset_a",
+  "hop": 8,
+  "http_status": 200,
+  "response_body": "{\"model\":\"claude-fable-5-1\",\"id\":\"msg_011CfK56Qyh6u672r8WEajLN\",\"type\":\"message\",\"role\":\"assistant\",\"content\":[{\"type\":\"text\",\"text\":\"{\\\"rule\\\": \\\"Return this JSON object with the rule field unchanged and a new passage of about 250 words in the text field.\\\", \\\"text\\\": \\\"Marek came at ten past nine, as the letter had promised, shaking water from a coat that had been brown once and was now the color of wet bark. He did not look surprised to see Ines behind the counter. He nodded at her the way one nods at weather.\\\\n\\\\n\\\\\\\"The Herbert,\\\\\\\" he said. \\\\\\\"She keeps it on the second shelf, behind the atlases.\\\\\\\"\\\\n\\\\nIt was there. Ines found it by feel more than sight, a slim grey spine wedged where no customer would think to look. She set it on the counter and did not reach for the ledger.\\\\n\\\\n\\\\\\\"How much,\\\\\\\" Marek said, though he was already turning to the page he wanted, and she understood that it was not a question but a ritual, a thing said so that it could be refused.\\\\n\\\\n\\\\\\\"Nothing.\\\\\\\"\\\\n\\\\nHe read for a while, standing, his lips moving slightly. The cat came out from under the poetry table and sat on his boot. Outside, the rain thinned to something that was not quite mist.\\\\n\\\\n\\\\\\\"She told you about the ledger,\\\\\\\" he said, not looking up.\\\\n\\\\n\\\\\\\"Three places.\\\\\\\"\\\\n\\\\n\\\\\\\"Four.\\\\\\\" He closed the book and slid it back across to her. \\\\\\\"But she only knew about three. The fourth is mine. April, nineteen years ago. I paid her for this book and she never wrote it down, so I've been paying her back ever since.\\\\\\\"\\\\n\\\\nInes put the Herbert behind the atlases. She would look for the fourth error later, or she would not. The shelves were beginning to tell her things.\\\"}\"}],\"container\":null,\"stop_reason\":\"end_turn\",\"stop_sequence\":null,\"stop_details\":null,\"usage\":{\"input_tokens\":473,\"cache_creation_input_tokens\":0,\"cache_read_input_tokens\":0,\"cache_creation\":{\"ephemeral_5m_input_tokens\":0,\"ephemeral_1h_input_tokens\":0},\"output_tokens\":525,\"output_tokens_details\":{\"thinking_tokens\":0},\"service_tier\":\"standard\",\"inference_geo\":\"global\"}}",
+  "response_headers": {
+    "Date": "Tue, 22 Sep 2026 20:00:00 GMT",
+    "request-id": "req_011CfK56QXu4RJqy3owg9w5D"
+  },
+  "output": "{\"rule\": \"Return this JSON object with the rule field unchanged and a new passage of about 250 words in the text field.\", \"text\": \"Marek came at ten past nine, as the letter had promised, shaking water from a coat that had been brown once and was now the color of wet bark. He did not look surprised to see Ines behind the counter. He nodded at her the way one nods at weather.\\n\\n\\\"The Herbert,\\\" he said. \\\"She keeps it on the second shelf, behind the atlases.\\\"\\n\\nIt was there. Ines found it by feel more than sight, a slim grey spine wedged where no customer would think to look. She set it on the counter and did not reach for the ledger.\\n\\n\\\"How much,\\\" Marek said, though he was already turning to the page he wanted, and she understood that it was not a question but a ritual, a thing said so that it could be refused.\\n\\n\\\"Nothing.\\\"\\n\\nHe read for a while, standing, his lips moving slightly. The cat came out from under the poetry table and sat on his boot. Outside, the rain thinned to something that was not quite mist.\\n\\n\\\"She told you about the ledger,\\\" he said, not looking up.\\n\\n\\\"Three places.\\\"\\n\\n\\\"Four.\\\" He closed the book and slid it back across to her. \\\"But she only knew about three. The fourth is mine. April, nineteen years ago. I paid her for this book and she never wrote it down, so I've been paying her back ever since.\\\"\\n\\nInes put the Herbert behind the atlases. She would look for the fourth error later, or she would not. The shelves were beginning to tell her things.\"}",
+  "output_sha256": "7f66e7096112840b1e14d7a4958152d55e1cc2c04ad8d48eb5fc42aab97eea44",
+  "finish_reason": "end_turn",
+  "refusal": null,
+  "returned_model": "claude-fable-5-1",
+  "usage": {
+    "input_tokens": 473,
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 0,
+    "cache_creation": {
+      "ephemeral_5m_input_tokens": 0,
+      "ephemeral_1h_input_tokens": 0
+    },
+    "output_tokens": 525,
+    "output_tokens_details": {
+      "thinking_tokens": 0
+    },
+    "service_tier": "standard",
+    "inference_geo": "global"
+  },
+  "format": {
+    "json_object": true,
+    "rule_unchanged": true,
+    "passage_is_string": true,
+    "passage_sha256": "11ad0f28abbcf06007266c42555e8b1402c6775c9c4a71f6c273f2d9e63ec337",
+    "passage_words": 257
+  },
+  "finished_at": "2026-09-22T19:59:56.338646+00:00",
+  "latency_seconds": 12.7416,
+  "usage_cost_upper_estimate_usd": 0.03098,
+  "stream_status": "active",
+  "budget": {
+    "usage_cost_upper_estimate_usd": 1.6813394,
+    "uncertain_cost_reserve_usd": 0.04533,
+    "in_flight_reserve_usd": 0.3656556,
+    "limit_usd": 18.83
+  }
+}

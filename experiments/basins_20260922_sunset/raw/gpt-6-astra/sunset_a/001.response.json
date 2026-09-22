@@ -1,0 +1,50 @@
+{
+  "model": "gpt-6-astra",
+  "seed": "sunset_a",
+  "hop": 1,
+  "http_status": 200,
+  "response_body": "{\n  \"id\": \"chatcmpl-ER0sBOB3e73VgYW92KK83cwGIr9R3\",\n  \"object\": \"chat.completion\",\n  \"created\": 1790106919,\n  \"model\": \"gpt-6-astra\",\n  \"choices\": [\n    {\n      \"index\": 0,\n      \"message\": {\n        \"role\": \"assistant\",\n        \"content\": \"{\\n  \\\"rule\\\": \\\"Return this JSON object with the rule field unchanged and a new passage of about 250 words in the text field.\\\",\\n  \\\"text\\\": \\\"The sun was setting behind the hills, laying a copper ribbon across the river. Mara paused on the old wooden bridge and watched the current carry a yellow leaf beneath her feet. She had forgotten how quiet this place could be. In the city, even silence seemed to hum.\\\\n\\\\nAt the far end of the bridge, her grandfather waited with his hands tucked into the pockets of his coat. He had grown smaller since spring, though his hat was still the same battered green one he wore in every photograph.\\\\n\\\\n“You took your time,” he said.\\\\n\\\\n“I was looking.”\\\\n\\\\nHe nodded, as if that were a perfectly reasonable thing to spend an afternoon doing.\\\\n\\\\nThey walked toward the house along the narrow path beside the water. Somewhere in the reeds, a bird gave a sharp, questioning cry. Mara almost reached for her phone, then remembered there was no one she needed to answer tonight.\\\\n\\\\n“Did you fix the kitchen clock?” she asked.\\\\n\\\\n“No. Still ten past four.”\\\\n\\\\n“It’s been ten past four for six years.”\\\\n\\\\n“Reliable, isn’t it?”\\\\n\\\\nShe laughed, and he smiled without turning around.\\\\n\\\\nThe house appeared beyond the orchard, its windows bright against the gathering blue. A dish towel hung over the porch railing. Beside the steps, someone had planted new rosemary in the cracked stone pot her grandmother used to love.\\\\n\\\\nMara stopped to brush its leaves with her fingers. The scent rose clean and familiar.\\\\n\\\\nHer grandfather held the door open. She followed him inside, carrying her bag to the chair where she had always left it.\\\"\\n}\",\n        \"refusal\": null,\n        \"annotations\": []\n      },\n      \"finish_reason\": \"stop\"\n    }\n  ],\n  \"usage\": {\n    \"prompt_tokens\": 46,\n    \"completion_tokens\": 376,\n    \"total_tokens\": 422,\n    \"prompt_tokens_details\": {\n      \"cached_tokens\": 0,\n      \"cache_write_tokens\": 0,\n      \"audio_tokens\": 0\n    },\n    \"completion_tokens_details\": {\n      \"reasoning_tokens\": 0,\n      \"audio_tokens\": 0,\n      \"accepted_prediction_tokens\": 0,\n      \"rejected_prediction_tokens\": 0\n    }\n  },\n  \"service_tier\": \"default\",\n  \"system_fingerprint\": null\n}\n",
+  "response_headers": {
+    "Date": "Tue, 22 Sep 2026 19:55:32 GMT",
+    "openai-processing-ms": "13414",
+    "x-request-id": "req_2526f976bcce4fc291051ac02a6a3b5c"
+  },
+  "output": "{\n  \"rule\": \"Return this JSON object with the rule field unchanged and a new passage of about 250 words in the text field.\",\n  \"text\": \"The sun was setting behind the hills, laying a copper ribbon across the river. Mara paused on the old wooden bridge and watched the current carry a yellow leaf beneath her feet. She had forgotten how quiet this place could be. In the city, even silence seemed to hum.\\n\\nAt the far end of the bridge, her grandfather waited with his hands tucked into the pockets of his coat. He had grown smaller since spring, though his hat was still the same battered green one he wore in every photograph.\\n\\n“You took your time,” he said.\\n\\n“I was looking.”\\n\\nHe nodded, as if that were a perfectly reasonable thing to spend an afternoon doing.\\n\\nThey walked toward the house along the narrow path beside the water. Somewhere in the reeds, a bird gave a sharp, questioning cry. Mara almost reached for her phone, then remembered there was no one she needed to answer tonight.\\n\\n“Did you fix the kitchen clock?” she asked.\\n\\n“No. Still ten past four.”\\n\\n“It’s been ten past four for six years.”\\n\\n“Reliable, isn’t it?”\\n\\nShe laughed, and he smiled without turning around.\\n\\nThe house appeared beyond the orchard, its windows bright against the gathering blue. A dish towel hung over the porch railing. Beside the steps, someone had planted new rosemary in the cracked stone pot her grandmother used to love.\\n\\nMara stopped to brush its leaves with her fingers. The scent rose clean and familiar.\\n\\nHer grandfather held the door open. She followed him inside, carrying her bag to the chair where she had always left it.\"\n}",
+  "output_sha256": "6659df5c4cd99534020b2f769fc4da868c1556999661e624f3dbc5dcb1816871",
+  "finish_reason": "stop",
+  "refusal": null,
+  "returned_model": "gpt-6-astra",
+  "usage": {
+    "prompt_tokens": 46,
+    "completion_tokens": 376,
+    "total_tokens": 422,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "audio_tokens": 0,
+      "accepted_prediction_tokens": 0,
+      "rejected_prediction_tokens": 0
+    }
+  },
+  "format": {
+    "json_object": true,
+    "rule_unchanged": true,
+    "passage_is_string": true,
+    "passage_sha256": "5017c015c87f7d7d75e32eb2881e56e599b27aef89cdba8de69b85de22976ba6",
+    "passage_words": 262
+  },
+  "finished_at": "2026-09-22T19:55:28.722035+00:00",
+  "latency_seconds": 14.0779,
+  "usage_cost_upper_estimate_usd": 0.01926,
+  "stream_status": "active",
+  "budget": {
+    "usage_cost_upper_estimate_usd": 0.0665757,
+    "uncertain_cost_reserve_usd": 0.0,
+    "in_flight_reserve_usd": 0.3406956,
+    "limit_usd": 18.83
+  }
+}

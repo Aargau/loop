@@ -1,0 +1,22 @@
+{
+  "started_at": "2026-09-22T20:16:45.573519+00:00",
+  "model": "claude-opus-5-5",
+  "seed": "sunset_b",
+  "hop": 46,
+  "endpoint": "https://api.anthropic.com/v1/messages",
+  "body": {
+    "model": "claude-opus-5-5",
+    "messages": [
+      {
+        "role": "user",
+        "content": "```json\n{\"rule\": \"Return this JSON object with the rule field unchanged and a new passage of about 250 words in the text field.\", \"text\": \"On the windswept coast of Harlow Point, the lighthouse lamp had gone dark the winter its keeper fell ill. Without its sweeping beam, fishing boats returned before dusk for fear of the jagged reef that guarded the harbor, and the village grew quieter with each shortened day. Nets went unmended, the fish market thinned, and the tavern by the docks closed its shutters early. A girl named Tova, who gathered mussels along the tide pools, often stared up at the tower and imagined the light blazing once more. One stormy evening she noticed a faint glow flickering in the lantern room. Curious, she climbed the rusted iron stairs, counting each of the one hundred and twelve steps, and found an old man hunched over a cracked brass lamp. His name was Anders, and he had tended the light for forty winters before his hands grew too unsteady to trim the wick or polish the great glass lens. He had returned to try once more, but his fingers trembled over every screw. Tova offered to be his hands. Each evening, after the tide had turned, she hurried to the tower to learn how to scrub soot from the lens, replace the worn gaskets, and wind the clockwork that turned the beam. Anders taught her patiently, and she listened to every word. On the longest night of the year, she struck a match and lifted it to the fresh wick. The flame caught, the lens began to turn, and a golden beam swept across the dark water, guiding the boats of Harlow Point safely home.\"}\n```"
+      }
+    ],
+    "max_tokens": 4096,
+    "output_config": {
+      "effort": "low"
+    }
+  },
+  "state_sha256": "b75ee825c4bb40cdf95482a327fdc59571adb4b9ac8b6be101935585cbba0928",
+  "reserved_cost_usd": 0.090368
+}

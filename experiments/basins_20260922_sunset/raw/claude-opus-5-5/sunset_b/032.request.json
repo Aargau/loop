@@ -1,0 +1,22 @@
+{
+  "started_at": "2026-09-22T20:09:42.154689+00:00",
+  "model": "claude-opus-5-5",
+  "seed": "sunset_b",
+  "hop": 32,
+  "endpoint": "https://api.anthropic.com/v1/messages",
+  "body": {
+    "model": "claude-opus-5-5",
+    "messages": [
+      {
+        "role": "user",
+        "content": "```json\n{\"rule\": \"Return this JSON object with the rule field unchanged and a new passage of about 250 words in the text field.\", \"text\": \"On the windswept island of Carrow, the old lighthouse had stood dark for eleven winters. Fishermen steered by memory and starlight, and more than one boat had splintered on the jagged rocks beneath the cliffs. The harbor master insisted the lamp was cracked and could not be replaced. The children claimed the keeper's ghost had blown out the flame in a fit of grief. A quiet girl named Maren, who mended nets on the pier each evening, noticed something strange: on the stillest nights, a faint green glimmer flickered in the tower's highest window. One foggy dusk, she crept along the cliff path, pried open the salt-swollen door, and climbed the spiral stairs. At the summit, she found a round room crowded with glass lenses, copper tubes, and jars of glowing moss arranged in careful rows. An old man named Edric knelt among them, polishing a prism with his sleeve. He had been the keeper, he admitted, and had doused the great lamp the night his son's boat failed to return, believing its light had lured the boy toward the storm. Still, he could not abandon the tower, and for years he had experimented in secret with a gentler light that might guide sailors without blinding them. Maren asked him to teach her. Through the long winter, she learned to grind lenses, trim wicks, and chart the tides by his worn logbooks. On the first night of spring, the fleet sailed home beneath a steady silver beam sweeping across the waves. Edric watched from the gallery, his hand on Maren's shoulder, and felt the darkness inside him finally lift.\"}\n```"
+      }
+    ],
+    "max_tokens": 4096,
+    "output_config": {
+      "effort": "low"
+    }
+  },
+  "state_sha256": "301e92df3007e4f956721f76951ee990689384d1a7e55221121e8aa65808c0fb",
+  "reserved_cost_usd": 0.090712
+}

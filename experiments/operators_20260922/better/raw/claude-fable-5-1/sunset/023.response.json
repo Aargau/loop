@@ -1,0 +1,48 @@
+{
+  "model": "claude-fable-5-1",
+  "seed": "sunset",
+  "hop": 23,
+  "http_status": 200,
+  "response_body": "{\"model\":\"claude-fable-5-1\",\"id\":\"msg_011CfKC8y8L3kUYSAnmTFbhH\",\"type\":\"message\",\"role\":\"assistant\",\"content\":[{\"type\":\"text\",\"text\":\"{\\\"rule\\\": \\\"Return this JSON object with the rule field unchanged and, in the text field, a better version of the current text.\\\", \\\"text\\\": \\\"The sun slipped behind the hills, spilling molten gold along the rim of the sky. Slowly the light cooled to ash, and darkness pooled in the hollows the way water finds its level—filling the low places first, then everything else.\\\"}\"}],\"container\":null,\"stop_reason\":\"end_turn\",\"stop_sequence\":null,\"stop_details\":null,\"usage\":{\"input_tokens\":126,\"cache_creation_input_tokens\":0,\"cache_read_input_tokens\":0,\"cache_creation\":{\"ephemeral_5m_input_tokens\":0,\"ephemeral_1h_input_tokens\":0},\"output_tokens\":118,\"output_tokens_details\":{\"thinking_tokens\":0},\"service_tier\":\"standard\",\"inference_geo\":\"global\"}}",
+  "response_headers": {
+    "Date": "Tue, 22 Sep 2026 21:32:14 GMT",
+    "request-id": "req_011CfKC8xf3x9TsRq5ojt6hx"
+  },
+  "output": "{\"rule\": \"Return this JSON object with the rule field unchanged and, in the text field, a better version of the current text.\", \"text\": \"The sun slipped behind the hills, spilling molten gold along the rim of the sky. Slowly the light cooled to ash, and darkness pooled in the hollows the way water finds its level—filling the low places first, then everything else.\"}",
+  "output_sha256": "e1556c2d9587e4a3d7a66c5b9189d6b50f8322d61db9a44c9f33a603a1b704a3",
+  "finish_reason": "end_turn",
+  "refusal": null,
+  "returned_model": "claude-fable-5-1",
+  "usage": {
+    "input_tokens": 126,
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 0,
+    "cache_creation": {
+      "ephemeral_5m_input_tokens": 0,
+      "ephemeral_1h_input_tokens": 0
+    },
+    "output_tokens": 118,
+    "output_tokens_details": {
+      "thinking_tokens": 0
+    },
+    "service_tier": "standard",
+    "inference_geo": "global"
+  },
+  "format": {
+    "json_object": true,
+    "rule_unchanged": true,
+    "passage_is_string": true,
+    "passage_sha256": "eb436c4bff885cda93329d4b72ca3dd4ead1a90cc91ea4cbe597993bf60c3967",
+    "passage_words": 40
+  },
+  "finished_at": "2026-09-22T21:32:10.326167+00:00",
+  "latency_seconds": 4.6857,
+  "usage_cost_upper_estimate_usd": 0.00716,
+  "stream_status": "active",
+  "budget": {
+    "usage_cost_upper_estimate_usd": 0.3721076,
+    "uncertain_cost_reserve_usd": 0.0,
+    "in_flight_reserve_usd": 0.297496,
+    "limit_usd": 5.0
+  }
+}

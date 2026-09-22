@@ -1,0 +1,50 @@
+{
+  "model": "gpt-6-luna",
+  "seed": "sunset_a",
+  "hop": 53,
+  "http_status": 200,
+  "response_body": "{\n  \"id\": \"chatcmpl-ER13XNkH73e8kmIUAlAHgWmnKmVs9\",\n  \"object\": \"chat.completion\",\n  \"created\": 1790107623,\n  \"model\": \"gpt-6-luna\",\n  \"choices\": [\n    {\n      \"index\": 0,\n      \"message\": {\n        \"role\": \"assistant\",\n        \"content\": \"{\\\"rule\\\":\\\"Return this JSON object with the rule field unchanged and a new passage of about 250 words in the text field.\\\",\\\"text\\\":\\\"On the hill above Bellweather stood an old observatory with a copper dome that had turned green. It had been closed for years, its telescope covered in dust, until twelve-year-old Inez found the key in her grandmother’s sewing basket.\\\\n\\\\nHer grandmother had once worked there as an assistant. “The stars are patient,” she said when Inez asked why she had kept the key. “They’ll wait for someone curious enough to look.”\\\\n\\\\nThat Friday, Inez invited her friend Sami to help open the observatory. The door groaned, and a cloud of dust rose around them. Inside, moonlight fell across star charts and notebooks filled with careful handwriting. Sami found a switch beside the telescope. With a click and a shudder, the dome began to turn.\\\\n\\\\nThey aimed the telescope at the moon. Its bright surface appeared so close that Inez could make out dark plains and tiny craters. Then Sami pointed to a notebook. On its last page, Inez’s grandmother had written: “One day, show this to a child who asks questions.”\\\\n\\\\nThe next morning, they persuaded the town council to reopen the observatory. Neighbors swept the floors, repaired the stairs, and polished the brass telescope. Soon, every Thursday evening, families climbed the hill to watch the sky together.\\\\n\\\\nInez’s grandmother came to the first gathering. She stood beside the telescope, smiling as children took turns peering through it. When Inez asked what they should study next, her grandmother nodded toward the dark beyond the moon.\\\\n\\\\n“Pick a question,” she said. “The sky is full of them.”\\\"}\",\n        \"refusal\": null,\n        \"annotations\": []\n      },\n      \"finish_reason\": \"stop\"\n    }\n  ],\n  \"usage\": {\n    \"prompt_tokens\": 378,\n    \"completion_tokens\": 421,\n    \"total_tokens\": 799,\n    \"prompt_tokens_details\": {\n      \"cached_tokens\": 0,\n      \"cache_write_tokens\": 0,\n      \"audio_tokens\": 0\n    },\n    \"completion_tokens_details\": {\n      \"reasoning_tokens\": 45,\n      \"audio_tokens\": 0,\n      \"accepted_prediction_tokens\": 0,\n      \"rejected_prediction_tokens\": 0\n    }\n  },\n  \"service_tier\": \"default\",\n  \"system_fingerprint\": null\n}\n",
+  "response_headers": {
+    "Date": "Tue, 22 Sep 2026 20:07:08 GMT",
+    "openai-processing-ms": "5273",
+    "x-request-id": "req_3489aa26188a4fabaa2777b6d10c6d78"
+  },
+  "output": "{\"rule\":\"Return this JSON object with the rule field unchanged and a new passage of about 250 words in the text field.\",\"text\":\"On the hill above Bellweather stood an old observatory with a copper dome that had turned green. It had been closed for years, its telescope covered in dust, until twelve-year-old Inez found the key in her grandmother’s sewing basket.\\n\\nHer grandmother had once worked there as an assistant. “The stars are patient,” she said when Inez asked why she had kept the key. “They’ll wait for someone curious enough to look.”\\n\\nThat Friday, Inez invited her friend Sami to help open the observatory. The door groaned, and a cloud of dust rose around them. Inside, moonlight fell across star charts and notebooks filled with careful handwriting. Sami found a switch beside the telescope. With a click and a shudder, the dome began to turn.\\n\\nThey aimed the telescope at the moon. Its bright surface appeared so close that Inez could make out dark plains and tiny craters. Then Sami pointed to a notebook. On its last page, Inez’s grandmother had written: “One day, show this to a child who asks questions.”\\n\\nThe next morning, they persuaded the town council to reopen the observatory. Neighbors swept the floors, repaired the stairs, and polished the brass telescope. Soon, every Thursday evening, families climbed the hill to watch the sky together.\\n\\nInez’s grandmother came to the first gathering. She stood beside the telescope, smiling as children took turns peering through it. When Inez asked what they should study next, her grandmother nodded toward the dark beyond the moon.\\n\\n“Pick a question,” she said. “The sky is full of them.”\"}",
+  "output_sha256": "9ddc39ebdd84fba071ac17a03c89fffd270e1f866823deeceedb611b664ef208",
+  "finish_reason": "stop",
+  "refusal": null,
+  "returned_model": "gpt-6-luna",
+  "usage": {
+    "prompt_tokens": 378,
+    "completion_tokens": 421,
+    "total_tokens": 799,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 45,
+      "audio_tokens": 0,
+      "accepted_prediction_tokens": 0,
+      "rejected_prediction_tokens": 0
+    }
+  },
+  "format": {
+    "json_object": true,
+    "rule_unchanged": true,
+    "passage_is_string": true,
+    "passage_sha256": "8659b03c25c7b47c750456819a8d82ea65157d5ba334249b250db5f71b82f237",
+    "passage_words": 256
+  },
+  "finished_at": "2026-09-22T20:07:04.184845+00:00",
+  "latency_seconds": 5.3997,
+  "usage_cost_upper_estimate_usd": 0.0002483,
+  "stream_status": "active",
+  "budget": {
+    "usage_cost_upper_estimate_usd": 4.402771,
+    "uncertain_cost_reserve_usd": 0.04533,
+    "in_flight_reserve_usd": 0.588346,
+    "limit_usd": 18.83
+  }
+}

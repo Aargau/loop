@@ -1,0 +1,48 @@
+{
+  "model": "claude-fable-5-1",
+  "seed": "tide",
+  "hop": 59,
+  "http_status": 200,
+  "response_body": "{\"model\":\"claude-fable-5-1\",\"id\":\"msg_011CfK7cGynxVAQ5GxS11TMy\",\"type\":\"message\",\"role\":\"assistant\",\"content\":[{\"type\":\"text\",\"text\":\"{\\\"rule\\\": \\\"Return this JSON object with the rule field unchanged and a new passage of about 250 words in the text field.\\\", \\\"text\\\": \\\"The laundromat on Fourth stayed open all night, though the sign had said CLOSED for as long as anyone could remember. Ruth came in a little after two with a pillowcase of towels and found the old man already there, sitting in the plastic chair by the dryers with nothing tumbling behind him.\\\\n\\\\n\\\\\\\"Machine three eats quarters,\\\\\\\" he said, not looking up.\\\\n\\\\n\\\\\\\"I know. I use five.\\\\\\\"\\\\n\\\\nShe fed the coins in and listened to the water start. The fluorescent tube over the folding table flickered the way it always had, and someone had left a single sock, child-sized, on the sill where the window used to open.\\\\n\\\\nHe had a paper cup of coffee that had stopped steaming some time ago. She sat two chairs down and put her feet up on the bench.\\\\n\\\\n\\\\\\\"Couldn't sleep?\\\\\\\" she asked.\\\\n\\\\n\\\\\\\"Didn't try.\\\\\\\"\\\\n\\\\nThe washer thumped through its cycle. Outside a truck went by slow, headlights sweeping the wall of dryers and moving on.\\\\n\\\\n\\\\\\\"My daughter's coming Thursday,\\\\\\\" he said.\\\\n\\\\n\\\\\\\"That's good.\\\\\\\"\\\\n\\\\n\\\\\\\"She'll want to see the house.\\\\\\\"\\\\n\\\\nRuth thought about the house, which she had seen, and about the yard, which she had also seen. She picked at a thread on the pillowcase.\\\\n\\\\n\\\\\\\"You've got till Thursday.\\\\\\\"\\\\n\\\\n\\\\\\\"I've had till Thursday before.\\\\\\\"\\\\n\\\\nThe machine kicked into spin and the whole row shuddered. He finished the cold coffee anyway and set the cup down on the floor beside his shoe, careful, like it mattered where it went.\\\\n\\\\nWhen her towels were done she folded them slowly. He was still there when she left. She didn't say goodnight and he didn't seem to expect it.\\\"}\"}],\"container\":null,\"stop_reason\":\"end_turn\",\"stop_sequence\":null,\"stop_details\":null,\"usage\":{\"input_tokens\":587,\"cache_creation_input_tokens\":0,\"cache_read_input_tokens\":0,\"cache_creation\":{\"ephemeral_5m_input_tokens\":0,\"ephemeral_1h_input_tokens\":0},\"output_tokens\":627,\"output_tokens_details\":{\"thinking_tokens\":0},\"service_tier\":\"standard\",\"inference_geo\":\"global\"}}",
+  "response_headers": {
+    "Date": "Tue, 22 Sep 2026 20:32:59 GMT",
+    "request-id": "req_011CfK7cFzGFMSFb4NRL3z86"
+  },
+  "output": "{\"rule\": \"Return this JSON object with the rule field unchanged and a new passage of about 250 words in the text field.\", \"text\": \"The laundromat on Fourth stayed open all night, though the sign had said CLOSED for as long as anyone could remember. Ruth came in a little after two with a pillowcase of towels and found the old man already there, sitting in the plastic chair by the dryers with nothing tumbling behind him.\\n\\n\\\"Machine three eats quarters,\\\" he said, not looking up.\\n\\n\\\"I know. I use five.\\\"\\n\\nShe fed the coins in and listened to the water start. The fluorescent tube over the folding table flickered the way it always had, and someone had left a single sock, child-sized, on the sill where the window used to open.\\n\\nHe had a paper cup of coffee that had stopped steaming some time ago. She sat two chairs down and put her feet up on the bench.\\n\\n\\\"Couldn't sleep?\\\" she asked.\\n\\n\\\"Didn't try.\\\"\\n\\nThe washer thumped through its cycle. Outside a truck went by slow, headlights sweeping the wall of dryers and moving on.\\n\\n\\\"My daughter's coming Thursday,\\\" he said.\\n\\n\\\"That's good.\\\"\\n\\n\\\"She'll want to see the house.\\\"\\n\\nRuth thought about the house, which she had seen, and about the yard, which she had also seen. She picked at a thread on the pillowcase.\\n\\n\\\"You've got till Thursday.\\\"\\n\\n\\\"I've had till Thursday before.\\\"\\n\\nThe machine kicked into spin and the whole row shuddered. He finished the cold coffee anyway and set the cup down on the floor beside his shoe, careful, like it mattered where it went.\\n\\nWhen her towels were done she folded them slowly. He was still there when she left. She didn't say goodnight and he didn't seem to expect it.\"}",
+  "output_sha256": "b2c0761d8824d0777ca607db7030d74813daa652b571cba75a933bbf8f169c0b",
+  "finish_reason": "end_turn",
+  "refusal": null,
+  "returned_model": "claude-fable-5-1",
+  "usage": {
+    "input_tokens": 587,
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 0,
+    "cache_creation": {
+      "ephemeral_5m_input_tokens": 0,
+      "ephemeral_1h_input_tokens": 0
+    },
+    "output_tokens": 627,
+    "output_tokens_details": {
+      "thinking_tokens": 0
+    },
+    "service_tier": "standard",
+    "inference_geo": "global"
+  },
+  "format": {
+    "json_object": true,
+    "rule_unchanged": true,
+    "passage_is_string": true,
+    "passage_sha256": "0e48ce0f96dc57ad61d6524dd4c027dfb7b8bb86efb9187abe8006001024f51b",
+    "passage_words": 272
+  },
+  "finished_at": "2026-09-22T20:32:55.488720+00:00",
+  "latency_seconds": 13.4281,
+  "usage_cost_upper_estimate_usd": 0.03722,
+  "stream_status": "active",
+  "budget": {
+    "usage_cost_upper_estimate_usd": 12.2722977,
+    "uncertain_cost_reserve_usd": 0.04533,
+    "in_flight_reserve_usd": 0.22838,
+    "limit_usd": 18.83
+  }
+}

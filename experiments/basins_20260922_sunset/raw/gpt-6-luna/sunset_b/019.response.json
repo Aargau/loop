@@ -1,0 +1,50 @@
+{
+  "model": "gpt-6-luna",
+  "seed": "sunset_b",
+  "hop": 19,
+  "http_status": 200,
+  "response_body": "{\n  \"id\": \"chatcmpl-ER0wOoU0IseFOzk9edB3odkfvUX6R\",\n  \"object\": \"chat.completion\",\n  \"created\": 1790107180,\n  \"model\": \"gpt-6-luna\",\n  \"choices\": [\n    {\n      \"index\": 0,\n      \"message\": {\n        \"role\": \"assistant\",\n        \"content\": \"{\\n  \\\"rule\\\": \\\"Return this JSON object with the rule field unchanged and a new passage of about 250 words in the text field.\\\",\\n  \\\"text\\\": \\\"On the edge of town stood a clock tower that had been silent for nearly twenty years. Its hands were stuck at 4:17, and pigeons nested beneath its copper roof. Most people hurried past without looking up. Lena, who loved fixing old things, wondered what had made the clock stop.\\\\n\\\\nOne Saturday, she climbed the narrow stairs with a toolbox borrowed from her uncle. Dust covered the gears, and a small window rattled whenever the wind blew. Lena brushed away cobwebs and examined the clockwork. Nothing seemed broken, but the pendulum hung motionless.\\\\n\\\\nShe gave it a gentle push. The gears shuddered, then stopped again. Lena tried tightening a loose screw and cleaning a rusted wheel. Still, the clock would not move. Frustrated, she sat on the floor and listened to the wind tapping at the window.\\\\n\\\\nThe tapping came in an uneven rhythm. Lena looked closer and saw that the window latch was swinging against the frame. Each time it rattled, the vibration traveled through the wall to the clock. A tiny metal pin had slipped from the pendulum’s guide, and the shaking kept knocking it out of place.\\\\n\\\\nLena found a replacement pin in her toolbox and secured it. Then she fastened the window latch with a strip of cloth. She pushed the pendulum once more. This time, it swung steadily. The gears began turning, and a deep, familiar chime rolled across the square.\\\\n\\\\nPeople stopped to listen. An old shopkeeper smiled and checked his watch. Lena climbed down, pleased not only that she had repaired the clock, but that patience had helped her hear what hurried eyes had missed.\\\"\\n}\",\n        \"refusal\": null,\n        \"annotations\": []\n      },\n      \"finish_reason\": \"stop\"\n    }\n  ],\n  \"usage\": {\n    \"prompt_tokens\": 373,\n    \"completion_tokens\": 436,\n    \"total_tokens\": 809,\n    \"prompt_tokens_details\": {\n      \"cached_tokens\": 0,\n      \"cache_write_tokens\": 0,\n      \"audio_tokens\": 0\n    },\n    \"completion_tokens_details\": {\n      \"reasoning_tokens\": 46,\n      \"audio_tokens\": 0,\n      \"accepted_prediction_tokens\": 0,\n      \"rejected_prediction_tokens\": 0\n    }\n  },\n  \"service_tier\": \"default\",\n  \"system_fingerprint\": null\n}\n",
+  "response_headers": {
+    "Date": "Tue, 22 Sep 2026 19:59:45 GMT",
+    "openai-processing-ms": "5873",
+    "x-request-id": "req_ba02fe5bb68b43ecab23b778eb5215f2"
+  },
+  "output": "{\n  \"rule\": \"Return this JSON object with the rule field unchanged and a new passage of about 250 words in the text field.\",\n  \"text\": \"On the edge of town stood a clock tower that had been silent for nearly twenty years. Its hands were stuck at 4:17, and pigeons nested beneath its copper roof. Most people hurried past without looking up. Lena, who loved fixing old things, wondered what had made the clock stop.\\n\\nOne Saturday, she climbed the narrow stairs with a toolbox borrowed from her uncle. Dust covered the gears, and a small window rattled whenever the wind blew. Lena brushed away cobwebs and examined the clockwork. Nothing seemed broken, but the pendulum hung motionless.\\n\\nShe gave it a gentle push. The gears shuddered, then stopped again. Lena tried tightening a loose screw and cleaning a rusted wheel. Still, the clock would not move. Frustrated, she sat on the floor and listened to the wind tapping at the window.\\n\\nThe tapping came in an uneven rhythm. Lena looked closer and saw that the window latch was swinging against the frame. Each time it rattled, the vibration traveled through the wall to the clock. A tiny metal pin had slipped from the pendulum’s guide, and the shaking kept knocking it out of place.\\n\\nLena found a replacement pin in her toolbox and secured it. Then she fastened the window latch with a strip of cloth. She pushed the pendulum once more. This time, it swung steadily. The gears began turning, and a deep, familiar chime rolled across the square.\\n\\nPeople stopped to listen. An old shopkeeper smiled and checked his watch. Lena climbed down, pleased not only that she had repaired the clock, but that patience had helped her hear what hurried eyes had missed.\"\n}",
+  "output_sha256": "58fda3610378f7be3bb7cbd0462216917ae0eeb0bc704806c9f5f721a1c68ba5",
+  "finish_reason": "stop",
+  "refusal": null,
+  "returned_model": "gpt-6-luna",
+  "usage": {
+    "prompt_tokens": 373,
+    "completion_tokens": 436,
+    "total_tokens": 809,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 46,
+      "audio_tokens": 0,
+      "accepted_prediction_tokens": 0,
+      "rejected_prediction_tokens": 0
+    }
+  },
+  "format": {
+    "json_object": true,
+    "rule_unchanged": true,
+    "passage_is_string": true,
+    "passage_sha256": "62caafc9b73b889e81073dcd49a78d7675d5ccc464622945ab72ba5f824cc96b",
+    "passage_words": 272
+  },
+  "finished_at": "2026-09-22T19:59:41.883581+00:00",
+  "latency_seconds": 5.9706,
+  "usage_cost_upper_estimate_usd": 0.0002553,
+  "stream_status": "active",
+  "budget": {
+    "usage_cost_upper_estimate_usd": 1.5999709,
+    "uncertain_cost_reserve_usd": 0.04533,
+    "in_flight_reserve_usd": 0.58842,
+    "limit_usd": 18.83
+  }
+}

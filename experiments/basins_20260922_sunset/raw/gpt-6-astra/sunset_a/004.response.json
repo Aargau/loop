@@ -1,0 +1,50 @@
+{
+  "model": "gpt-6-astra",
+  "seed": "sunset_a",
+  "hop": 4,
+  "http_status": 200,
+  "response_body": "{\n  \"id\": \"chatcmpl-ER0uMMgkUj2bCHdCyjeDBQ9gfm2ak\",\n  \"object\": \"chat.completion\",\n  \"created\": 1790107054,\n  \"model\": \"gpt-6-astra\",\n  \"choices\": [\n    {\n      \"index\": 0,\n      \"message\": {\n        \"role\": \"assistant\",\n        \"content\": \"{\\n  \\\"rule\\\": \\\"Return this JSON object with the rule field unchanged and a new passage of about 250 words in the text field.\\\",\\n  \\\"text\\\": \\\"On the morning the bakery closed, Lena found a small brass key beneath the till. A paper label hung from it, blank except for a grease stain.\\\\n\\\\nHer father was outside, scraping his name from the window.\\\\n\\\\n“What does this open?” she asked.\\\\n\\\\nHe glanced through the glass and shrugged.\\\\n\\\\nShe tried the cupboard under the stairs, then the drawer where they kept birthday candles. Neither lock accepted it.\\\\n\\\\nBy ten, the last customers had collected their orders. Mrs. Vale took six rolls and asked whether they would freeze. A man Lena had never seen bought the remaining biscuits without asking the price.\\\\n\\\\nHer father came inside carrying the scraper.\\\\n\\\\n“There’s still the upstairs room,” he said.\\\\n\\\\nThey had used it for flour sacks until the ceiling began to leak. Behind the empty shelving stood a wooden box Lena remembered sitting on as a child.\\\\n\\\\nThe key turned reluctantly.\\\\n\\\\nInside were notebooks, each wrapped in a flour bag. She opened one to a page headed Tuesday. Beneath it, in her mother’s handwriting, were three names and three sums.\\\\n\\\\n“People who owed us?” Lena asked.\\\\n\\\\nHer father shook his head.\\\\n\\\\n“People who couldn’t.”\\\\n\\\\nPage after page: names, loaves, occasional cakes. Some entries had been crossed out. Beside one, her mother had drawn a small star.\\\\n\\\\n“What’s that mean?”\\\\n\\\\n“I don’t remember.”\\\\n\\\\nLena closed the notebook. Downstairs, the bell rang above the door, although she had turned the sign around.\\\\n\\\\nHer father listened.\\\\n\\\\n“Would you see who that is?” he asked.\\\\n\\\\nShe left the box open and went down. He followed more slowly, carrying the six rolls Mrs. Vale had forgotten.\\\"\\n}\",\n        \"refusal\": null,\n        \"annotations\": []\n      },\n      \"finish_reason\": \"stop\"\n    }\n  ],\n  \"usage\": {\n    \"prompt_tokens\": 415,\n    \"completion_tokens\": 416,\n    \"total_tokens\": 831,\n    \"prompt_tokens_details\": {\n      \"cached_tokens\": 0,\n      \"cache_write_tokens\": 0,\n      \"audio_tokens\": 0\n    },\n    \"completion_tokens_details\": {\n      \"reasoning_tokens\": 0,\n      \"audio_tokens\": 0,\n      \"accepted_prediction_tokens\": 0,\n      \"rejected_prediction_tokens\": 0\n    }\n  },\n  \"service_tier\": \"default\",\n  \"system_fingerprint\": null\n}\n",
+  "response_headers": {
+    "Date": "Tue, 22 Sep 2026 19:57:49 GMT",
+    "openai-processing-ms": "15729",
+    "x-request-id": "req_6abac95ba4384596b773a717ae01e42e"
+  },
+  "output": "{\n  \"rule\": \"Return this JSON object with the rule field unchanged and a new passage of about 250 words in the text field.\",\n  \"text\": \"On the morning the bakery closed, Lena found a small brass key beneath the till. A paper label hung from it, blank except for a grease stain.\\n\\nHer father was outside, scraping his name from the window.\\n\\n“What does this open?” she asked.\\n\\nHe glanced through the glass and shrugged.\\n\\nShe tried the cupboard under the stairs, then the drawer where they kept birthday candles. Neither lock accepted it.\\n\\nBy ten, the last customers had collected their orders. Mrs. Vale took six rolls and asked whether they would freeze. A man Lena had never seen bought the remaining biscuits without asking the price.\\n\\nHer father came inside carrying the scraper.\\n\\n“There’s still the upstairs room,” he said.\\n\\nThey had used it for flour sacks until the ceiling began to leak. Behind the empty shelving stood a wooden box Lena remembered sitting on as a child.\\n\\nThe key turned reluctantly.\\n\\nInside were notebooks, each wrapped in a flour bag. She opened one to a page headed Tuesday. Beneath it, in her mother’s handwriting, were three names and three sums.\\n\\n“People who owed us?” Lena asked.\\n\\nHer father shook his head.\\n\\n“People who couldn’t.”\\n\\nPage after page: names, loaves, occasional cakes. Some entries had been crossed out. Beside one, her mother had drawn a small star.\\n\\n“What’s that mean?”\\n\\n“I don’t remember.”\\n\\nLena closed the notebook. Downstairs, the bell rang above the door, although she had turned the sign around.\\n\\nHer father listened.\\n\\n“Would you see who that is?” he asked.\\n\\nShe left the box open and went down. He followed more slowly, carrying the six rolls Mrs. Vale had forgotten.\"\n}",
+  "output_sha256": "865d7d5cb613fab2c97ac5049b6397676260dbe08ce90acde44ca0481463499c",
+  "finish_reason": "stop",
+  "refusal": null,
+  "returned_model": "gpt-6-astra",
+  "usage": {
+    "prompt_tokens": 415,
+    "completion_tokens": 416,
+    "total_tokens": 831,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "audio_tokens": 0,
+      "accepted_prediction_tokens": 0,
+      "rejected_prediction_tokens": 0
+    }
+  },
+  "format": {
+    "json_object": true,
+    "rule_unchanged": true,
+    "passage_is_string": true,
+    "passage_sha256": "3ee1385c3f2a5472408aac84ed07c55bcc12213d2712c48a5e5252fa7e31463c",
+    "passage_words": 269
+  },
+  "finished_at": "2026-09-22T19:57:46.000016+00:00",
+  "latency_seconds": 15.828,
+  "usage_cost_upper_estimate_usd": 0.02495,
+  "stream_status": "active",
+  "budget": {
+    "usage_cost_upper_estimate_usd": 0.8791012,
+    "uncertain_cost_reserve_usd": 0.0,
+    "in_flight_reserve_usd": 0.3631409,
+    "limit_usd": 18.83
+  }
+}

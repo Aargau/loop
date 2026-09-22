@@ -1,0 +1,47 @@
+{
+  "model": "gpt-6-luna",
+  "seed": "sunset",
+  "hop": 24,
+  "http_status": 200,
+  "response_body": "{\n  \"id\": \"chatcmpl-ER2HkLT4BLs70oEdIFB3ZBalojTEP\",\n  \"object\": \"chat.completion\",\n  \"created\": 1790112348,\n  \"model\": \"gpt-6-luna\",\n  \"choices\": [\n    {\n      \"index\": 0,\n      \"message\": {\n        \"role\": \"assistant\",\n        \"content\": \"{\\\"rule\\\":\\\"Return this JSON object with the rule field unchanged and, in the text field, the passage of about 250 words that comes immediately AFTER the current text in the same story.\\\",\\\"text\\\":\\\"No one moved.\\n\\nMara tightened her fingers around the book. “How do we make that?”\\n\\n“By listening,” the woman said.\\n\\nThe shepherd picked up his flute. Tomas raised his small drum, then lowered it again. “I don’t know the song.”\\n\\n“Neither did I,” said the woman. “That was the trouble.”\\n\\nShe held out the broken bell. The shepherd reached for it, but stopped just short. Mara heard a rustle inside her book, like pages stirred by a breeze. She looked at Tomas. He nodded, though his face was pale.\\n\\nMara began with a low note, uncertain and soft. Tomas tapped the drum once, not to keep time, but to answer. The shepherd’s flute joined them, winding between their sounds. For a moment, it was only three separate voices, each searching for somewhere to land.\\n\\nThen the woman sang.\\n\\nHer voice was thin as a thread, but it held the melody from the shepherd’s tune. Mara changed her note to follow. Tomas found a steady beat beneath them. The shepherd closed his eyes, and his flute no longer sounded lonely.\\n\\nThe chamber trembled. Bells all around them stirred, but none rang. Instead, their silence deepened, making room for the song.\\n\\nThe brass bell in the woman’s palm gave a clear, bright chime. Its clapper had appeared.\\n\\nThe woman smiled, and the shepherd reached for her hand. This time, she took it.\\n\\nBehind them, the glowing figure on the door stepped through the gate. The door swung open, revealing the hillside under a silver dawn.\\n\\nMara’s book cooled. A final line settled onto the page:\\n\\nWhat is shared can find its way home.\\\"}\",\n        \"refusal\": null,\n        \"annotations\": []\n      },\n      \"finish_reason\": \"stop\"\n    }\n  ],\n  \"usage\": {\n    \"prompt_tokens\": 423,\n    \"completion_tokens\": 442,\n    \"total_tokens\": 865,\n    \"prompt_tokens_details\": {\n      \"cached_tokens\": 0,\n      \"cache_write_tokens\": 0,\n      \"audio_tokens\": 0\n    },\n    \"completion_tokens_details\": {\n      \"reasoning_tokens\": 46,\n      \"audio_tokens\": 0,\n      \"accepted_prediction_tokens\": 0,\n      \"rejected_prediction_tokens\": 0\n    }\n  },\n  \"service_tier\": \"default\",\n  \"system_fingerprint\": null\n}\n",
+  "response_headers": {
+    "Date": "Tue, 22 Sep 2026 21:25:53 GMT",
+    "openai-processing-ms": "4886",
+    "x-request-id": "req_38db8a0bd45b42bfb1b84945c886f745"
+  },
+  "output": "{\"rule\":\"Return this JSON object with the rule field unchanged and, in the text field, the passage of about 250 words that comes immediately AFTER the current text in the same story.\",\"text\":\"No one moved.\n\nMara tightened her fingers around the book. “How do we make that?”\n\n“By listening,” the woman said.\n\nThe shepherd picked up his flute. Tomas raised his small drum, then lowered it again. “I don’t know the song.”\n\n“Neither did I,” said the woman. “That was the trouble.”\n\nShe held out the broken bell. The shepherd reached for it, but stopped just short. Mara heard a rustle inside her book, like pages stirred by a breeze. She looked at Tomas. He nodded, though his face was pale.\n\nMara began with a low note, uncertain and soft. Tomas tapped the drum once, not to keep time, but to answer. The shepherd’s flute joined them, winding between their sounds. For a moment, it was only three separate voices, each searching for somewhere to land.\n\nThen the woman sang.\n\nHer voice was thin as a thread, but it held the melody from the shepherd’s tune. Mara changed her note to follow. Tomas found a steady beat beneath them. The shepherd closed his eyes, and his flute no longer sounded lonely.\n\nThe chamber trembled. Bells all around them stirred, but none rang. Instead, their silence deepened, making room for the song.\n\nThe brass bell in the woman’s palm gave a clear, bright chime. Its clapper had appeared.\n\nThe woman smiled, and the shepherd reached for her hand. This time, she took it.\n\nBehind them, the glowing figure on the door stepped through the gate. The door swung open, revealing the hillside under a silver dawn.\n\nMara’s book cooled. A final line settled onto the page:\n\nWhat is shared can find its way home.\"}",
+  "output_sha256": "c430070b25b83e68d8a92b13d2a56a77683fd6e530b723c32f3aba990784edcb",
+  "finish_reason": "stop",
+  "refusal": null,
+  "returned_model": "gpt-6-luna",
+  "usage": {
+    "prompt_tokens": 423,
+    "completion_tokens": 442,
+    "total_tokens": 865,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 46,
+      "audio_tokens": 0,
+      "accepted_prediction_tokens": 0,
+      "rejected_prediction_tokens": 0
+    }
+  },
+  "format": {
+    "json_object": false,
+    "rule_unchanged": false
+  },
+  "finished_at": "2026-09-22T21:25:48.809552+00:00",
+  "latency_seconds": 5.0031,
+  "usage_cost_upper_estimate_usd": 0.0002633,
+  "stream_status": "active",
+  "budget": {
+    "usage_cost_upper_estimate_usd": 0.4914177,
+    "uncertain_cost_reserve_usd": 0.0,
+    "in_flight_reserve_usd": 0.350034,
+    "limit_usd": 5.0
+  }
+}

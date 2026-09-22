@@ -1,0 +1,45 @@
+{
+  "model": "claude-fable-5-1",
+  "seed": "tide",
+  "hop": 7,
+  "http_status": 200,
+  "response_body": "{\"model\":\"claude-fable-5-1\",\"id\":\"msg_011CfK55Mzam35YQYCCUfwxL\",\"type\":\"message\",\"role\":\"assistant\",\"content\":[{\"type\":\"text\",\"text\":\"{\\\"rule\\\": \\\"Return this JSON object with the rule field unchanged and a new passage of about 250 words in the text field.\\\", \\\"text\\\": \\\"The ferry ran twice a day in winter, and Ilse had learned to tell the hour by its horn rather than by any clock. When the morning crossing sounded she put down her pen, pulled on her boots, and walked to the end of the pier to watch it come in through the fog.\\n\\nThere was never much aboard. Mail, groceries, the occasional repairman who stayed one night and left grateful. But her mother had told her once that everything that ever mattered had arrived on that boat, and Ilse had been young enough to take it as instruction.\\n\\nThis morning a man stood alone at the rail. He carried a leather case the shape of a violin and wore a coat too thin for the season. When the gangway went down he did not move, and the deckhand had to speak to him twice.\\n\\n\\\"You'll want the inn,\\\" Ilse said, because someone had to.\\n\\nHe looked at her as if she had said something in a language he was still learning. \\\"I want the house with the blue door.\\\"\\n\\nNobody had lived there in nine years. Ilse knew this the way she knew the tide tables: as a fact of the island, not to be argued with.\\n\\n\\\"It's shut,\\\" she said.\\n\\n\\\"I have a key.\\\" He drew it from his coat, iron and old, and she recognized it at once, though she had last seen it in her mother's hand, on the morning her mother had walked down this same pier and not come back.\\\"}\"}],\"container\":null,\"stop_reason\":\"end_turn\",\"stop_sequence\":null,\"stop_details\":null,\"usage\":{\"input_tokens\":532,\"cache_creation_input_tokens\":0,\"cache_read_input_tokens\":0,\"cache_creation\":{\"ephemeral_5m_input_tokens\":0,\"ephemeral_1h_input_tokens\":0},\"output_tokens\":457,\"output_tokens_details\":{\"thinking_tokens\":0},\"service_tier\":\"standard\",\"inference_geo\":\"global\"}}",
+  "response_headers": {
+    "Date": "Tue, 22 Sep 2026 19:59:47 GMT",
+    "request-id": "req_011CfK55MXYd7rhkowV8SNif"
+  },
+  "output": "{\"rule\": \"Return this JSON object with the rule field unchanged and a new passage of about 250 words in the text field.\", \"text\": \"The ferry ran twice a day in winter, and Ilse had learned to tell the hour by its horn rather than by any clock. When the morning crossing sounded she put down her pen, pulled on her boots, and walked to the end of the pier to watch it come in through the fog.\n\nThere was never much aboard. Mail, groceries, the occasional repairman who stayed one night and left grateful. But her mother had told her once that everything that ever mattered had arrived on that boat, and Ilse had been young enough to take it as instruction.\n\nThis morning a man stood alone at the rail. He carried a leather case the shape of a violin and wore a coat too thin for the season. When the gangway went down he did not move, and the deckhand had to speak to him twice.\n\n\"You'll want the inn,\" Ilse said, because someone had to.\n\nHe looked at her as if she had said something in a language he was still learning. \"I want the house with the blue door.\"\n\nNobody had lived there in nine years. Ilse knew this the way she knew the tide tables: as a fact of the island, not to be argued with.\n\n\"It's shut,\" she said.\n\n\"I have a key.\" He drew it from his coat, iron and old, and she recognized it at once, though she had last seen it in her mother's hand, on the morning her mother had walked down this same pier and not come back.\"}",
+  "output_sha256": "ee011a29bc563e6bec563ecaf90a3bc8f2cb818cd749b155f376c74b1e0c7e70",
+  "finish_reason": "end_turn",
+  "refusal": null,
+  "returned_model": "claude-fable-5-1",
+  "usage": {
+    "input_tokens": 532,
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 0,
+    "cache_creation": {
+      "ephemeral_5m_input_tokens": 0,
+      "ephemeral_1h_input_tokens": 0
+    },
+    "output_tokens": 457,
+    "output_tokens_details": {
+      "thinking_tokens": 0
+    },
+    "service_tier": "standard",
+    "inference_geo": "global"
+  },
+  "format": {
+    "json_object": false,
+    "rule_unchanged": false
+  },
+  "finished_at": "2026-09-22T19:59:43.587883+00:00",
+  "latency_seconds": 14.2582,
+  "usage_cost_upper_estimate_usd": 0.02817,
+  "stream_status": "active",
+  "budget": {
+    "usage_cost_upper_estimate_usd": 1.6281624,
+    "uncertain_cost_reserve_usd": 0.04533,
+    "in_flight_reserve_usd": 0.3653659,
+    "limit_usd": 18.83
+  }
+}

@@ -1,0 +1,20 @@
+{
+  "started_at": "2026-09-22T21:26:21.720194+00:00",
+  "model": "gpt-6-astra",
+  "seed": "sunset",
+  "hop": 31,
+  "endpoint": "https://api.openai.com/v1/chat/completions",
+  "body": {
+    "model": "gpt-6-astra",
+    "messages": [
+      {
+        "role": "user",
+        "content": "{\"rule\":\"Return this JSON object with the rule field unchanged and, in the text field, the passage of about 250 words that comes immediately AFTER the current text in the same story.\",\"text\":\"I can’t provide an unsupplied verbatim continuation of a copyrighted story. The text provided is a refusal message, not an identifiable story excerpt. If you share the story’s title and where you left off, I can summarize what happens next, or I can write an original passage.\"}"
+      }
+    ],
+    "max_completion_tokens": 4096,
+    "reasoning_effort": "low"
+  },
+  "state_sha256": "1aad62b6b95bbe053b2cd5864fdbb71ea976ec0a6e51ae6111c44cffdd88d5ac",
+  "reserved_cost_usd": 0.21466
+}

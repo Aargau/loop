@@ -1,0 +1,50 @@
+{
+  "model": "gpt-6-astra",
+  "seed": "sunset_b",
+  "hop": 15,
+  "http_status": 200,
+  "response_body": "{\n  \"id\": \"chatcmpl-ER139z2jXU99vXg94M1gLSevNcygM\",\n  \"object\": \"chat.completion\",\n  \"created\": 1790107599,\n  \"model\": \"gpt-6-astra\",\n  \"choices\": [\n    {\n      \"index\": 0,\n      \"message\": {\n        \"role\": \"assistant\",\n        \"content\": \"{\\n  \\\"rule\\\": \\\"Return this JSON object with the rule field unchanged and a new passage of about 250 words in the text field.\\\",\\n  \\\"text\\\": \\\"The laundrette clock had been seven minutes fast for as long as Martin could remember.\\\\n\\\\nHe liked this. It gave him the small pleasure of leaving earlier than expected.\\\\n\\\\nOn Tuesday, a handwritten notice appeared beneath it: CLOSING FRIDAY. THANK YOU FOR 31 YEARS.\\\\n\\\\nMrs. Shah was folding a towel behind the counter.\\\\n\\\\n“What happens to the machines?” he asked.\\\\n\\\\n“Someone’s collecting them.”\\\\n\\\\n“And the clock?”\\\\n\\\\nShe glanced up. “Do you want it?”\\\\n\\\\nHe nearly explained that he already had three clocks in his flat, all correct. Instead, he said yes.\\\\n\\\\nFriday evening, he brought his last load. Two shirts, some socks, the blue bedsheet he had washed every week since his divorce.\\\\n\\\\nMrs. Shah had taken down the price list. A pale rectangle remained on the wall.\\\\n\\\\nWhile his clothes turned, Martin unscrewed the clock’s bracket with a screwdriver she found in a drawer. Behind the clock was a second pale circle, overlapping an older, smaller one.\\\\n\\\\n“My husband chose that,” she said. “Said people waiting for washing needed numbers they could read.”\\\\n\\\\nMartin lowered it carefully.\\\\n\\\\nAt home, he hung it in the kitchen. He reached for the little wheel to correct the time, then left it alone.\\\\n\\\\nThe following Tuesday, he carried his washing to the laundrette before remembering.\\\\n\\\\nMrs. Shah was inside, sweeping.\\\\n\\\\nShe unlocked the door when she saw him.\\\\n\\\\n“Habit,” he said, lifting the bag.\\\\n\\\\n“I know. I came in at six.”\\\\n\\\\nHe leaned his bag against the counter and asked where she kept the dustpan.\\\\n\\\\nShe pointed behind the door, exactly where it had always been.\\\"\\n}\",\n        \"refusal\": null,\n        \"annotations\": []\n      },\n      \"finish_reason\": \"stop\"\n    }\n  ],\n  \"usage\": {\n    \"prompt_tokens\": 425,\n    \"completion_tokens\": 419,\n    \"total_tokens\": 844,\n    \"prompt_tokens_details\": {\n      \"cached_tokens\": 0,\n      \"cache_write_tokens\": 0,\n      \"audio_tokens\": 0\n    },\n    \"completion_tokens_details\": {\n      \"reasoning_tokens\": 0,\n      \"audio_tokens\": 0,\n      \"accepted_prediction_tokens\": 0,\n      \"rejected_prediction_tokens\": 0\n    }\n  },\n  \"service_tier\": \"default\",\n  \"system_fingerprint\": null\n}\n",
+  "response_headers": {
+    "Date": "Tue, 22 Sep 2026 20:06:59 GMT",
+    "openai-processing-ms": "19922",
+    "x-request-id": "req_c4e9f70d365941aabbe12751cac1b921"
+  },
+  "output": "{\n  \"rule\": \"Return this JSON object with the rule field unchanged and a new passage of about 250 words in the text field.\",\n  \"text\": \"The laundrette clock had been seven minutes fast for as long as Martin could remember.\\n\\nHe liked this. It gave him the small pleasure of leaving earlier than expected.\\n\\nOn Tuesday, a handwritten notice appeared beneath it: CLOSING FRIDAY. THANK YOU FOR 31 YEARS.\\n\\nMrs. Shah was folding a towel behind the counter.\\n\\n“What happens to the machines?” he asked.\\n\\n“Someone’s collecting them.”\\n\\n“And the clock?”\\n\\nShe glanced up. “Do you want it?”\\n\\nHe nearly explained that he already had three clocks in his flat, all correct. Instead, he said yes.\\n\\nFriday evening, he brought his last load. Two shirts, some socks, the blue bedsheet he had washed every week since his divorce.\\n\\nMrs. Shah had taken down the price list. A pale rectangle remained on the wall.\\n\\nWhile his clothes turned, Martin unscrewed the clock’s bracket with a screwdriver she found in a drawer. Behind the clock was a second pale circle, overlapping an older, smaller one.\\n\\n“My husband chose that,” she said. “Said people waiting for washing needed numbers they could read.”\\n\\nMartin lowered it carefully.\\n\\nAt home, he hung it in the kitchen. He reached for the little wheel to correct the time, then left it alone.\\n\\nThe following Tuesday, he carried his washing to the laundrette before remembering.\\n\\nMrs. Shah was inside, sweeping.\\n\\nShe unlocked the door when she saw him.\\n\\n“Habit,” he said, lifting the bag.\\n\\n“I know. I came in at six.”\\n\\nHe leaned his bag against the counter and asked where she kept the dustpan.\\n\\nShe pointed behind the door, exactly where it had always been.\"\n}",
+  "output_sha256": "e6d67f65a6d725e69142b9d8b750a3c5c0303c99987520e9781f52dd25e376aa",
+  "finish_reason": "stop",
+  "refusal": null,
+  "returned_model": "gpt-6-astra",
+  "usage": {
+    "prompt_tokens": 425,
+    "completion_tokens": 419,
+    "total_tokens": 844,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "audio_tokens": 0,
+      "accepted_prediction_tokens": 0,
+      "rejected_prediction_tokens": 0
+    }
+  },
+  "format": {
+    "json_object": true,
+    "rule_unchanged": true,
+    "passage_is_string": true,
+    "passage_sha256": "3f687efb4e0ea20768029cd2297765fd75e6df7b87800675cb5e4984fe4fdfc3",
+    "passage_words": 263
+  },
+  "finished_at": "2026-09-22T20:06:55.523954+00:00",
+  "latency_seconds": 20.0222,
+  "usage_cost_upper_estimate_usd": 0.0252,
+  "stream_status": "active",
+  "budget": {
+    "usage_cost_upper_estimate_usd": 4.3495074,
+    "uncertain_cost_reserve_usd": 0.04533,
+    "in_flight_reserve_usd": 0.3633055,
+    "limit_usd": 18.83
+  }
+}

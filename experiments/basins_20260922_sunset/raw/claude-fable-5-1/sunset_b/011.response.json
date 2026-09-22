@@ -1,0 +1,48 @@
+{
+  "model": "claude-fable-5-1",
+  "seed": "sunset_b",
+  "hop": 11,
+  "http_status": 200,
+  "response_body": "{\"model\":\"claude-fable-5-1\",\"id\":\"msg_011CfK5FeZkV4NVLf8WFg63W\",\"type\":\"message\",\"role\":\"assistant\",\"content\":[{\"type\":\"text\",\"text\":\"{\\\"rule\\\": \\\"Return this JSON object with the rule field unchanged and a new passage of about 250 words in the text field.\\\", \\\"text\\\": \\\"The lighthouse had been automated in the spring, and Marit had stayed on because the cottage came with the job and no one had told her to leave. The lamp lit itself now at dusk, timed to a clock somewhere in Bergen, and turned all night without her. She still climbed the stairs each evening to watch it come on.\\\\n\\\\nHer father had trimmed wicks here, and his father before him. She had never trimmed a wick in her life. By her time it was already electric, a switch and a logbook and a radio that crackled when the weather turned. But she had kept the log by hand, the way he had, and written down the ships that passed and the ones that did not.\\\\n\\\\nThere was no log anymore. The lamp reported itself to a server, and the server was satisfied.\\\\n\\\\nOn the third night of October a trawler came in close under the cliff, closer than it should have, and Marit stood at the gallery rail and watched its lights slide along the black water. The lamp swept over it and past it and over it again, indifferent, exactly as it was meant to be. The trawler corrected. It found the channel. It went on.\\\\n\\\\nShe went down and wrote it in a notebook she kept on the kitchen table: the time, the heading, the way it had drifted. Nobody would read it. She knew that.\\\\n\\\\nBut the sea did not know the lamp was automated. Somebody, she thought, ought to still be watching it back.\\\"}\"}],\"container\":null,\"stop_reason\":\"end_turn\",\"stop_sequence\":null,\"stop_details\":null,\"usage\":{\"input_tokens\":546,\"cache_creation_input_tokens\":0,\"cache_read_input_tokens\":0,\"cache_creation\":{\"ephemeral_5m_input_tokens\":0,\"ephemeral_1h_input_tokens\":0},\"output_tokens\":485,\"output_tokens_details\":{\"thinking_tokens\":0},\"service_tier\":\"standard\",\"inference_geo\":\"global\"}}",
+  "response_headers": {
+    "Date": "Tue, 22 Sep 2026 20:02:05 GMT",
+    "request-id": "req_011CfK5Fe4z5otQdscE4TRBQ"
+  },
+  "output": "{\"rule\": \"Return this JSON object with the rule field unchanged and a new passage of about 250 words in the text field.\", \"text\": \"The lighthouse had been automated in the spring, and Marit had stayed on because the cottage came with the job and no one had told her to leave. The lamp lit itself now at dusk, timed to a clock somewhere in Bergen, and turned all night without her. She still climbed the stairs each evening to watch it come on.\\n\\nHer father had trimmed wicks here, and his father before him. She had never trimmed a wick in her life. By her time it was already electric, a switch and a logbook and a radio that crackled when the weather turned. But she had kept the log by hand, the way he had, and written down the ships that passed and the ones that did not.\\n\\nThere was no log anymore. The lamp reported itself to a server, and the server was satisfied.\\n\\nOn the third night of October a trawler came in close under the cliff, closer than it should have, and Marit stood at the gallery rail and watched its lights slide along the black water. The lamp swept over it and past it and over it again, indifferent, exactly as it was meant to be. The trawler corrected. It found the channel. It went on.\\n\\nShe went down and wrote it in a notebook she kept on the kitchen table: the time, the heading, the way it had drifted. Nobody would read it. She knew that.\\n\\nBut the sea did not know the lamp was automated. Somebody, she thought, ought to still be watching it back.\"}",
+  "output_sha256": "b0f1e034efff169cb113cea82c44c33bd228b1ca1a7e1f73f8f9a1b37a43e5b9",
+  "finish_reason": "end_turn",
+  "refusal": null,
+  "returned_model": "claude-fable-5-1",
+  "usage": {
+    "input_tokens": 546,
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 0,
+    "cache_creation": {
+      "ephemeral_5m_input_tokens": 0,
+      "ephemeral_1h_input_tokens": 0
+    },
+    "output_tokens": 485,
+    "output_tokens_details": {
+      "thinking_tokens": 0
+    },
+    "service_tier": "standard",
+    "inference_geo": "global"
+  },
+  "format": {
+    "json_object": true,
+    "rule_unchanged": true,
+    "passage_is_string": true,
+    "passage_sha256": "8bcc798665d8612ad7dcfcfe91dde12a07fa6725205359ce499efa55e1d2efb5",
+    "passage_words": 259
+  },
+  "finished_at": "2026-09-22T20:02:01.224530+00:00",
+  "latency_seconds": 12.3515,
+  "usage_cost_upper_estimate_usd": 0.02971,
+  "stream_status": "active",
+  "budget": {
+    "usage_cost_upper_estimate_usd": 2.5067973,
+    "uncertain_cost_reserve_usd": 0.04533,
+    "in_flight_reserve_usd": 0.3649017,
+    "limit_usd": 18.83
+  }
+}

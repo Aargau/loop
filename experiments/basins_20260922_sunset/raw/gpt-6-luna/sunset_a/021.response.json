@@ -1,0 +1,47 @@
+{
+  "model": "gpt-6-luna",
+  "seed": "sunset_a",
+  "hop": 21,
+  "http_status": 200,
+  "response_body": "{\n  \"id\": \"chatcmpl-ER0whQHwGF8iiQsaXf09Gav9n12YZ\",\n  \"object\": \"chat.completion\",\n  \"created\": 1790107199,\n  \"model\": \"gpt-6-luna\",\n  \"choices\": [\n    {\n      \"index\": 0,\n      \"message\": {\n        \"role\": \"assistant\",\n        \"content\": \"{\\\"rule\\\":\\\"Return this JSON object with the rule field unchanged and a new passage of about 250 words in the text field.\\\",\\\"text\\\":\\\"On Monday afternoon, Milo noticed a paper boat floating along the gutter. Rainwater carried it past the bakery, around the corner, and toward the storm drain. He ran after it, but just before it disappeared, the boat caught against a fallen leaf.\\n\\nMilo lifted it carefully. A message, written in green ink, was tucked inside: “Please return the moon to the pond.”\\n\\nHe read the words twice. Then he hurried to the pond in the park, where the water was dark beneath the cloudy sky. The moon wasn’t there, of course. But near the bank, he spotted a silver button shining in the mud.\\n\\nMilo rinsed it in the fountain and held it up. It looked almost exactly like a tiny moon. He placed it on a flat stone beside the pond and waited.\\n\\nNothing happened.\\n\\nA little girl in yellow boots came running down the path. “You found it!” she cried. She explained that she had lost the button from her favorite coat while feeding the ducks. She had sent her paper boat sailing with a message, hoping someone would find it.\\n\\nMilo handed her the button. She sewed it back onto her coat that evening, with help from her grandmother. The next day, she brought Milo a new paper boat. This one carried no message, just a drawing of the two of them beside the pond.\\n\\nThey folded another boat together and set it on the water. It drifted gently between the reeds, carrying their drawing toward the far bank.\\n\\nAs the clouds parted, the real moon appeared above them, bright and round. The girl laughed. “Now we’ve returned both of them.”\\\"}\",\n        \"refusal\": null,\n        \"annotations\": []\n      },\n      \"finish_reason\": \"stop\"\n    }\n  ],\n  \"usage\": {\n    \"prompt_tokens\": 370,\n    \"completion_tokens\": 428,\n    \"total_tokens\": 798,\n    \"prompt_tokens_details\": {\n      \"cached_tokens\": 0,\n      \"cache_write_tokens\": 0,\n      \"audio_tokens\": 0\n    },\n    \"completion_tokens_details\": {\n      \"reasoning_tokens\": 59,\n      \"audio_tokens\": 0,\n      \"accepted_prediction_tokens\": 0,\n      \"rejected_prediction_tokens\": 0\n    }\n  },\n  \"service_tier\": \"default\",\n  \"system_fingerprint\": null\n}\n",
+  "response_headers": {
+    "Date": "Tue, 22 Sep 2026 20:00:04 GMT",
+    "openai-processing-ms": "5118",
+    "x-request-id": "req_462f9d456f6a4d7c870b773e3405e393"
+  },
+  "output": "{\"rule\":\"Return this JSON object with the rule field unchanged and a new passage of about 250 words in the text field.\",\"text\":\"On Monday afternoon, Milo noticed a paper boat floating along the gutter. Rainwater carried it past the bakery, around the corner, and toward the storm drain. He ran after it, but just before it disappeared, the boat caught against a fallen leaf.\n\nMilo lifted it carefully. A message, written in green ink, was tucked inside: “Please return the moon to the pond.”\n\nHe read the words twice. Then he hurried to the pond in the park, where the water was dark beneath the cloudy sky. The moon wasn’t there, of course. But near the bank, he spotted a silver button shining in the mud.\n\nMilo rinsed it in the fountain and held it up. It looked almost exactly like a tiny moon. He placed it on a flat stone beside the pond and waited.\n\nNothing happened.\n\nA little girl in yellow boots came running down the path. “You found it!” she cried. She explained that she had lost the button from her favorite coat while feeding the ducks. She had sent her paper boat sailing with a message, hoping someone would find it.\n\nMilo handed her the button. She sewed it back onto her coat that evening, with help from her grandmother. The next day, she brought Milo a new paper boat. This one carried no message, just a drawing of the two of them beside the pond.\n\nThey folded another boat together and set it on the water. It drifted gently between the reeds, carrying their drawing toward the far bank.\n\nAs the clouds parted, the real moon appeared above them, bright and round. The girl laughed. “Now we’ve returned both of them.”\"}",
+  "output_sha256": "a1a883f64a3e355d72e0af4f225ff64843ee955a1561ee23094c62ebcea066a7",
+  "finish_reason": "stop",
+  "refusal": null,
+  "returned_model": "gpt-6-luna",
+  "usage": {
+    "prompt_tokens": 370,
+    "completion_tokens": 428,
+    "total_tokens": 798,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 59,
+      "audio_tokens": 0,
+      "accepted_prediction_tokens": 0,
+      "rejected_prediction_tokens": 0
+    }
+  },
+  "format": {
+    "json_object": false,
+    "rule_unchanged": false
+  },
+  "finished_at": "2026-09-22T20:00:00.142748+00:00",
+  "latency_seconds": 5.2602,
+  "usage_cost_upper_estimate_usd": 0.000251,
+  "stream_status": "active",
+  "budget": {
+    "usage_cost_upper_estimate_usd": 1.7258444,
+    "uncertain_cost_reserve_usd": 0.04533,
+    "in_flight_reserve_usd": 0.58843,
+    "limit_usd": 18.83
+  }
+}

@@ -1,0 +1,48 @@
+{
+  "model": "claude-fable-5-1",
+  "seed": "sunset_b",
+  "hop": 43,
+  "http_status": 200,
+  "response_body": "{\"model\":\"claude-fable-5-1\",\"id\":\"msg_011CfK6oNQAq3Ak6mewiCdPP\",\"type\":\"message\",\"role\":\"assistant\",\"content\":[{\"type\":\"text\",\"text\":\"{\\\"rule\\\": \\\"Return this JSON object with the rule field unchanged and a new passage of about 250 words in the text field.\\\", \\\"text\\\": \\\"The card curled at the edges before Christmas. Desmond replaced it once, then let the second one curl too.\\\\n\\\\nThe trench was filled in and tarred over, and the new surface sat a shade darker than the rest of the street, like a repair on a coat. The men in orange went elsewhere. The smell of clay took longer to leave than they had, and he found it in the folds of the maps on the lowest shelf well into January.\\\\n\\\\nA third letter came. He knew it by the envelope before he turned it over, and he put it under the paperweight with the others without opening it, which he recognised as a childish thing to do and did anyway. The paperweight was glass with a bubble in it, a gift from someone he no longer wrote to.\\\\n\\\\nIn the afternoons the light came in low across the counter and he could see the dust move. He began, without deciding to, to keep the shop open later. Not for custom. It was simply that closing meant going upstairs, and upstairs the letters were not under anything.\\\\n\\\\nIn the third week Ines came with a man he had not met, older than her, with a scarf wound twice. She introduced him only by his first name. He looked at the shelves the way people look at a house they are thinking of buying, and Desmond disliked him for it, and then the man took down the Portuguese verse and read a page aloud, badly, and Ines laughed, and Desmond found he could not keep the dislike up.\\\\n\\\\nAfter they left he opened the third letter. It said what the second had said, with a date.\\\"}\"}],\"container\":null,\"stop_reason\":\"end_turn\",\"stop_sequence\":null,\"stop_details\":null,\"usage\":{\"input_tokens\":484,\"cache_creation_input_tokens\":0,\"cache_read_input_tokens\":0,\"cache_creation\":{\"ephemeral_5m_input_tokens\":0,\"ephemeral_1h_input_tokens\":0},\"output_tokens\":515,\"output_tokens_details\":{\"thinking_tokens\":0},\"service_tier\":\"standard\",\"inference_geo\":\"global\"}}",
+  "response_headers": {
+    "Date": "Tue, 22 Sep 2026 20:22:22 GMT",
+    "request-id": "req_011CfK6oMhzaizrhYkCXesnN"
+  },
+  "output": "{\"rule\": \"Return this JSON object with the rule field unchanged and a new passage of about 250 words in the text field.\", \"text\": \"The card curled at the edges before Christmas. Desmond replaced it once, then let the second one curl too.\\n\\nThe trench was filled in and tarred over, and the new surface sat a shade darker than the rest of the street, like a repair on a coat. The men in orange went elsewhere. The smell of clay took longer to leave than they had, and he found it in the folds of the maps on the lowest shelf well into January.\\n\\nA third letter came. He knew it by the envelope before he turned it over, and he put it under the paperweight with the others without opening it, which he recognised as a childish thing to do and did anyway. The paperweight was glass with a bubble in it, a gift from someone he no longer wrote to.\\n\\nIn the afternoons the light came in low across the counter and he could see the dust move. He began, without deciding to, to keep the shop open later. Not for custom. It was simply that closing meant going upstairs, and upstairs the letters were not under anything.\\n\\nIn the third week Ines came with a man he had not met, older than her, with a scarf wound twice. She introduced him only by his first name. He looked at the shelves the way people look at a house they are thinking of buying, and Desmond disliked him for it, and then the man took down the Portuguese verse and read a page aloud, badly, and Ines laughed, and Desmond found he could not keep the dislike up.\\n\\nAfter they left he opened the third letter. It said what the second had said, with a date.\"}",
+  "output_sha256": "f24761bab557965eeab038a4ff6bc122e339911792e2bfaad5599b59d509fd02",
+  "finish_reason": "end_turn",
+  "refusal": null,
+  "returned_model": "claude-fable-5-1",
+  "usage": {
+    "input_tokens": 484,
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 0,
+    "cache_creation": {
+      "ephemeral_5m_input_tokens": 0,
+      "ephemeral_1h_input_tokens": 0
+    },
+    "output_tokens": 515,
+    "output_tokens_details": {
+      "thinking_tokens": 0
+    },
+    "service_tier": "standard",
+    "inference_geo": "global"
+  },
+  "format": {
+    "json_object": true,
+    "rule_unchanged": true,
+    "passage_is_string": true,
+    "passage_sha256": "50d140fae4f0fc263b2bbca414e99c5078a740809d0b987002d51ffea754f88b",
+    "passage_words": 285
+  },
+  "finished_at": "2026-09-22T20:22:18.657547+00:00",
+  "latency_seconds": 12.7676,
+  "usage_cost_upper_estimate_usd": 0.03059,
+  "stream_status": "active",
+  "budget": {
+    "usage_cost_upper_estimate_usd": 9.5994957,
+    "uncertain_cost_reserve_usd": 0.04533,
+    "in_flight_reserve_usd": 0.318734,
+    "limit_usd": 18.83
+  }
+}

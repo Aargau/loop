@@ -1,0 +1,50 @@
+{
+  "model": "gpt-6-sol",
+  "seed": "sunset_a",
+  "hop": 58,
+  "http_status": 200,
+  "response_body": "{\n  \"id\": \"chatcmpl-ER14jxwbEkRO4QUCijCFDK2bfIRZt\",\n  \"object\": \"chat.completion\",\n  \"created\": 1790107697,\n  \"model\": \"gpt-6-sol\",\n  \"choices\": [\n    {\n      \"index\": 0,\n      \"message\": {\n        \"role\": \"assistant\",\n        \"content\": \"{\\n  \\\"rule\\\": \\\"Return this JSON object with the rule field unchanged and a new passage of about 250 words in the text field.\\\",\\n  \\\"text\\\": \\\"The next morning, Imani found a folded note beside the bakery till. The caretaker had written to say that the school bell had brought back more memories than he expected. Would she and Sami come by after breakfast?\\\\n\\\\nThey carried a paper bag of rolls up the hill. At the school gate, they met the fruit seller, who was waiting with a photograph. It showed a line of children beneath the tall windows. Though the picture was faded, Imani could make out the bell beside the doorway.\\\\n\\\\n“My mother took this on my first day,” the fruit seller said. “I thought the bell sounded enormous.”\\\\n\\\\nInside, the caretaker had set a small table under the windows. The man who had noticed the crooked handle arrived with another photograph, this one of a school play. Soon everyone was pointing out faces and trying to remember names.\\\\n\\\\nSami drew the bell as it hung on its hook. Imani copied the names onto fresh pages in her notebook, leaving space for stories beside each one. When the caretaker offered to keep the notebook at the school, she hesitated. She had carried it everywhere since finding the bell.\\\\n\\\\n“You can take it home when you want,” he said. “But people might like to add to it.”\\\\n\\\\nImani placed it on the table. The fruit seller wrote the first new memory, pressing hard enough to leave marks on the next page.\\\\n\\\\nBefore they left, the caretaker rang the bell once. From the playground below came the sound of children calling to one another. For a moment, the two sounds seemed to belong together.\\\"\\n}\",\n        \"refusal\": null,\n        \"annotations\": []\n      },\n      \"finish_reason\": \"stop\"\n    }\n  ],\n  \"usage\": {\n    \"prompt_tokens\": 347,\n    \"completion_tokens\": 389,\n    \"total_tokens\": 736,\n    \"prompt_tokens_details\": {\n      \"cached_tokens\": 0,\n      \"cache_write_tokens\": 0,\n      \"audio_tokens\": 0\n    },\n    \"completion_tokens_details\": {\n      \"reasoning_tokens\": 17,\n      \"audio_tokens\": 0,\n      \"accepted_prediction_tokens\": 0,\n      \"rejected_prediction_tokens\": 0\n    }\n  },\n  \"service_tier\": \"default\",\n  \"system_fingerprint\": null\n}\n",
+  "response_headers": {
+    "Date": "Tue, 22 Sep 2026 20:08:23 GMT",
+    "openai-processing-ms": "5828",
+    "x-request-id": "req_85a9afa0ca7e4d45a17c63f3871cc4ed"
+  },
+  "output": "{\n  \"rule\": \"Return this JSON object with the rule field unchanged and a new passage of about 250 words in the text field.\",\n  \"text\": \"The next morning, Imani found a folded note beside the bakery till. The caretaker had written to say that the school bell had brought back more memories than he expected. Would she and Sami come by after breakfast?\\n\\nThey carried a paper bag of rolls up the hill. At the school gate, they met the fruit seller, who was waiting with a photograph. It showed a line of children beneath the tall windows. Though the picture was faded, Imani could make out the bell beside the doorway.\\n\\n“My mother took this on my first day,” the fruit seller said. “I thought the bell sounded enormous.”\\n\\nInside, the caretaker had set a small table under the windows. The man who had noticed the crooked handle arrived with another photograph, this one of a school play. Soon everyone was pointing out faces and trying to remember names.\\n\\nSami drew the bell as it hung on its hook. Imani copied the names onto fresh pages in her notebook, leaving space for stories beside each one. When the caretaker offered to keep the notebook at the school, she hesitated. She had carried it everywhere since finding the bell.\\n\\n“You can take it home when you want,” he said. “But people might like to add to it.”\\n\\nImani placed it on the table. The fruit seller wrote the first new memory, pressing hard enough to leave marks on the next page.\\n\\nBefore they left, the caretaker rang the bell once. From the playground below came the sound of children calling to one another. For a moment, the two sounds seemed to belong together.\"\n}",
+  "output_sha256": "c54ee6c5535fca4630fcfdefbbd99e2be7e0c0d42e82768b24deddbfb5f00927",
+  "finish_reason": "stop",
+  "refusal": null,
+  "returned_model": "gpt-6-sol",
+  "usage": {
+    "prompt_tokens": 347,
+    "completion_tokens": 389,
+    "total_tokens": 736,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 17,
+      "audio_tokens": 0,
+      "accepted_prediction_tokens": 0,
+      "rejected_prediction_tokens": 0
+    }
+  },
+  "format": {
+    "json_object": true,
+    "rule_unchanged": true,
+    "passage_is_string": true,
+    "passage_sha256": "91a4ffe5ede3c65d56d8e656f88fd6df74c94a6f521cd231e27592d3078a0a89",
+    "passage_words": 268
+  },
+  "finished_at": "2026-09-22T20:08:19.414852+00:00",
+  "latency_seconds": 5.9505,
+  "usage_cost_upper_estimate_usd": 0.004584,
+  "stream_status": "active",
+  "budget": {
+    "usage_cost_upper_estimate_usd": 4.8757527,
+    "uncertain_cost_reserve_usd": 0.04533,
+    "in_flight_reserve_usd": 0.5456973,
+    "limit_usd": 18.83
+  }
+}

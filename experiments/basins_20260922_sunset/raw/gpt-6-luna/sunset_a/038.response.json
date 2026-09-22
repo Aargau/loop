@@ -1,0 +1,50 @@
+{
+  "model": "gpt-6-luna",
+  "seed": "sunset_a",
+  "hop": 38,
+  "http_status": 200,
+  "response_body": "{\n  \"id\": \"chatcmpl-ER109swbxq6FKmDDAWTH5fVrR536t\",\n  \"object\": \"chat.completion\",\n  \"created\": 1790107413,\n  \"model\": \"gpt-6-luna\",\n  \"choices\": [\n    {\n      \"index\": 0,\n      \"message\": {\n        \"role\": \"assistant\",\n        \"content\": \"{\\\"rule\\\":\\\"Return this JSON object with the rule field unchanged and a new passage of about 250 words in the text field.\\\",\\\"text\\\":\\\"At the end of Maple Street, a narrow lane led to an abandoned greenhouse. Its glass panes were cloudy, and ivy curled around the rusted frame. Most people hurried past, but Nora often stopped to listen. On windy days, the loose panes hummed like distant bells.\\\\n\\\\nOne Saturday, she found a small envelope tucked beneath the greenhouse door. Inside was a note from the building’s former gardener, Mr. Vale. He had planted a garden there years ago and hoped someone might bring it back to life. The note included a simple drawing of rows of herbs and flowers, with a little pond in the middle.\\\\n\\\\nNora showed the note to her neighbors. At first, everyone had a reason they were too busy to help. Then Mr. Chen offered his old tools, and the twins from across the street brought packets of seeds. By lunchtime, people were clearing broken branches and sweeping leaves from the cracked floor.\\\\n\\\\nThey worked every weekend. Nora planted marigolds beside the entrance, while the twins made a pond from a wide, blue bowl. Mr. Chen repaired a bench and painted it bright green. The greenhouse slowly filled with color and the sweet smell of mint.\\\\n\\\\nWhen the first flowers opened, the neighbors held a small gathering. They left a chair by the door for Mr. Vale, though no one knew whether he would return.\\\\n\\\\nThat evening, Nora heard the glass panes singing in the breeze. This time, the sound did not seem lonely. It rang above the neighbors’ laughter, as if the old greenhouse were welcoming them home.\\\"}\",\n        \"refusal\": null,\n        \"annotations\": []\n      },\n      \"finish_reason\": \"stop\"\n    }\n  ],\n  \"usage\": {\n    \"prompt_tokens\": 389,\n    \"completion_tokens\": 400,\n    \"total_tokens\": 789,\n    \"prompt_tokens_details\": {\n      \"cached_tokens\": 0,\n      \"cache_write_tokens\": 0,\n      \"audio_tokens\": 0\n    },\n    \"completion_tokens_details\": {\n      \"reasoning_tokens\": 41,\n      \"audio_tokens\": 0,\n      \"accepted_prediction_tokens\": 0,\n      \"rejected_prediction_tokens\": 0\n    }\n  },\n  \"service_tier\": \"default\",\n  \"system_fingerprint\": null\n}\n",
+  "response_headers": {
+    "Date": "Tue, 22 Sep 2026 20:03:38 GMT",
+    "openai-processing-ms": "5419",
+    "x-request-id": "req_f99b3d8ebd3941a1a3180f2e8403d263"
+  },
+  "output": "{\"rule\":\"Return this JSON object with the rule field unchanged and a new passage of about 250 words in the text field.\",\"text\":\"At the end of Maple Street, a narrow lane led to an abandoned greenhouse. Its glass panes were cloudy, and ivy curled around the rusted frame. Most people hurried past, but Nora often stopped to listen. On windy days, the loose panes hummed like distant bells.\\n\\nOne Saturday, she found a small envelope tucked beneath the greenhouse door. Inside was a note from the building’s former gardener, Mr. Vale. He had planted a garden there years ago and hoped someone might bring it back to life. The note included a simple drawing of rows of herbs and flowers, with a little pond in the middle.\\n\\nNora showed the note to her neighbors. At first, everyone had a reason they were too busy to help. Then Mr. Chen offered his old tools, and the twins from across the street brought packets of seeds. By lunchtime, people were clearing broken branches and sweeping leaves from the cracked floor.\\n\\nThey worked every weekend. Nora planted marigolds beside the entrance, while the twins made a pond from a wide, blue bowl. Mr. Chen repaired a bench and painted it bright green. The greenhouse slowly filled with color and the sweet smell of mint.\\n\\nWhen the first flowers opened, the neighbors held a small gathering. They left a chair by the door for Mr. Vale, though no one knew whether he would return.\\n\\nThat evening, Nora heard the glass panes singing in the breeze. This time, the sound did not seem lonely. It rang above the neighbors’ laughter, as if the old greenhouse were welcoming them home.\"}",
+  "output_sha256": "b6d802886835166fdaef073e0db0f5904bfcb69fe956b0628ae1ef0914837f1e",
+  "finish_reason": "stop",
+  "refusal": null,
+  "returned_model": "gpt-6-luna",
+  "usage": {
+    "prompt_tokens": 389,
+    "completion_tokens": 400,
+    "total_tokens": 789,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 41,
+      "audio_tokens": 0,
+      "accepted_prediction_tokens": 0,
+      "rejected_prediction_tokens": 0
+    }
+  },
+  "format": {
+    "json_object": true,
+    "rule_unchanged": true,
+    "passage_is_string": true,
+    "passage_sha256": "ab0306636d48d101b9e8bd0de3a2d9df4d9dc8175803e4e1b97f827c3237d221",
+    "passage_words": 262
+  },
+  "finished_at": "2026-09-22T20:03:34.342791+00:00",
+  "latency_seconds": 5.5472,
+  "usage_cost_upper_estimate_usd": 0.0002389,
+  "stream_status": "active",
+  "budget": {
+    "usage_cost_upper_estimate_usd": 3.0519861,
+    "uncertain_cost_reserve_usd": 0.04533,
+    "in_flight_reserve_usd": 0.59017,
+    "limit_usd": 18.83
+  }
+}

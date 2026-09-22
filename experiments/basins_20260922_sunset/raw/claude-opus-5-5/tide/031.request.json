@@ -1,0 +1,22 @@
+{
+  "started_at": "2026-09-22T20:09:26.199942+00:00",
+  "model": "claude-opus-5-5",
+  "seed": "tide",
+  "hop": 31,
+  "endpoint": "https://api.anthropic.com/v1/messages",
+  "body": {
+    "model": "claude-opus-5-5",
+    "messages": [
+      {
+        "role": "user",
+        "content": "```json\n{\"rule\": \"Return this JSON object with the rule field unchanged and a new passage of about 250 words in the text field.\", \"text\": \"Snow came late that year, not until the week after the new year, and it fell so softly in the night that the girl woke to a silence she did not recognise. The sea was still there, grumbling at the foot of the cliff, but everything else had gone quiet under the white. She dressed properly this time, because her grandmother was already at the stove and would have had something to say, and then she went out with a crust of bread in her pocket for the birds. The ring of stones had become a ring of small white hills. Inside it the rowan stood black and thin, each branch lined along its top with a narrow ridge of snow, as if someone had drawn over it with chalk. She brushed a little from the lowest twig and found the buds still there, hard and patient. A robin came down onto the nearest stone and watched her with one eye. She broke the crust and scattered it, and the robin waited until she had stepped back before it took any. Her brother came out later with the shovel to clear the path to the byre, and on his way back he stopped at the stones and knocked the heaviest snow from the branches so they would not break. He did it carefully, one branch at a time, the way their father mended nets. In the jotter that night, beside the brown ghosts of the October leaves, she wrote: everybody is looking after the tree now, even the ones who pretend they are not.\"}\n```"
+      }
+    ],
+    "max_tokens": 4096,
+    "output_config": {
+      "effort": "low"
+    }
+  },
+  "state_sha256": "02a19c3d69c012c4098fcbcadb714467965f2d8ff507056199dc82d8e3d0af7b",
+  "reserved_cost_usd": 0.090016
+}

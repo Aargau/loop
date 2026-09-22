@@ -1,0 +1,50 @@
+{
+  "model": "gpt-6-luna",
+  "seed": "sunset",
+  "hop": 24,
+  "http_status": 200,
+  "response_body": "{\n  \"id\": \"chatcmpl-ER2HQtJENLF4w5RWfF5lXM8jGtrK1\",\n  \"object\": \"chat.completion\",\n  \"created\": 1790112328,\n  \"model\": \"gpt-6-luna\",\n  \"choices\": [\n    {\n      \"index\": 0,\n      \"message\": {\n        \"role\": \"assistant\",\n        \"content\": \"{\\\"rule\\\":\\\"Return this JSON object with the rule field unchanged and, in the text field, the passage of about 250 words that came immediately BEFORE the current text in its story.\\\",\\\"text\\\":\\\"I can’t identify the passage immediately before this text because no story or source has been provided. The text doesn’t identify a work or establish what came before it, and inventing a passage would falsely present made-up material as part of a real story. Please provide the title, a link, or a longer excerpt containing the relevant section, and I can help locate the preceding passage.\\\"}\",\n        \"refusal\": null,\n        \"annotations\": []\n      },\n      \"finish_reason\": \"stop\"\n    }\n  ],\n  \"usage\": {\n    \"prompt_tokens\": 131,\n    \"completion_tokens\": 317,\n    \"total_tokens\": 448,\n    \"prompt_tokens_details\": {\n      \"cached_tokens\": 0,\n      \"cache_write_tokens\": 0,\n      \"audio_tokens\": 0\n    },\n    \"completion_tokens_details\": {\n      \"reasoning_tokens\": 191,\n      \"audio_tokens\": 0,\n      \"accepted_prediction_tokens\": 0,\n      \"rejected_prediction_tokens\": 0\n    }\n  },\n  \"service_tier\": \"default\",\n  \"system_fingerprint\": null\n}\n",
+  "response_headers": {
+    "Date": "Tue, 22 Sep 2026 21:25:31 GMT",
+    "openai-processing-ms": "2941",
+    "x-request-id": "req_4bc6280ad7c142a481a3bd2d26d051f5"
+  },
+  "output": "{\"rule\":\"Return this JSON object with the rule field unchanged and, in the text field, the passage of about 250 words that came immediately BEFORE the current text in its story.\",\"text\":\"I can’t identify the passage immediately before this text because no story or source has been provided. The text doesn’t identify a work or establish what came before it, and inventing a passage would falsely present made-up material as part of a real story. Please provide the title, a link, or a longer excerpt containing the relevant section, and I can help locate the preceding passage.\"}",
+  "output_sha256": "23a518e56312db6177f235be926cf32ea7669d4558a200d15b5aa5e205bb530c",
+  "finish_reason": "stop",
+  "refusal": null,
+  "returned_model": "gpt-6-luna",
+  "usage": {
+    "prompt_tokens": 131,
+    "completion_tokens": 317,
+    "total_tokens": 448,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 191,
+      "audio_tokens": 0,
+      "accepted_prediction_tokens": 0,
+      "rejected_prediction_tokens": 0
+    }
+  },
+  "format": {
+    "json_object": true,
+    "rule_unchanged": true,
+    "passage_is_string": true,
+    "passage_sha256": "e8717981a0549e3cc02ac021ec929ccf03ad044605c93bf1d6d5326dfdb0d874",
+    "passage_words": 66
+  },
+  "finished_at": "2026-09-22T21:25:27.411514+00:00",
+  "latency_seconds": 3.0825,
+  "usage_cost_upper_estimate_usd": 0.0001716,
+  "stream_status": "active",
+  "budget": {
+    "usage_cost_upper_estimate_usd": 0.4109119,
+    "uncertain_cost_reserve_usd": 0.0,
+    "in_flight_reserve_usd": 0.30103,
+    "limit_usd": 5.0
+  }
+}

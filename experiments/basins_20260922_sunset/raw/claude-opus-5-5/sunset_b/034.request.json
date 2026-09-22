@@ -1,0 +1,22 @@
+{
+  "started_at": "2026-09-22T20:10:36.159027+00:00",
+  "model": "claude-opus-5-5",
+  "seed": "sunset_b",
+  "hop": 34,
+  "endpoint": "https://api.anthropic.com/v1/messages",
+  "body": {
+    "model": "claude-opus-5-5",
+    "messages": [
+      {
+        "role": "user",
+        "content": "```json\n{\"rule\": \"Return this JSON object with the rule field unchanged and a new passage of about 250 words in the text field.\", \"text\": \"On the windswept island of Corran, the lighthouse had stood dark for eleven winters. Fishermen steered home by memory and starlight, and more than one boat had splintered on the jagged rocks beneath the cliffs. The harbor council claimed the great lamp was cracked and too costly to replace. Sailors in the tavern muttered that the old keeper had drowned himself and that his ghost refused to let the light burn. A quiet girl named Maren, who mended nets along the docks each afternoon, noticed something strange: on foggy nights, a faint glow flickered in the tower's highest window, though the beam never swept the sea. One stormy evening, she crept along the slick cliff path, pried open the salt-crusted door, and climbed the spiral stairs. At the summit, she found a cozy room crowded with lenses, oil cans, and hundreds of hand-drawn charts pinned to the walls. An old man named Tobias sat polishing a curved sheet of glass by candlelight. He had been the keeper, he admitted, and had let the lamp die after failing to save his son's boat during a terrible gale. Yet he had never stopped working, grinding new lenses that would cast a brighter, farther light than before. Maren pleaded to learn his craft. Through the long, dark months, she studied how to trim wicks, align prisms, and read the tides in his worn logbooks. On the first calm night of spring, the whole island gathered at the shore as the beam blazed across the water. Tobias stood beside Maren and, for the first time in years, watched the boats come safely home.\"}\n```"
+      }
+    ],
+    "max_tokens": 4096,
+    "output_config": {
+      "effort": "low"
+    }
+  },
+  "state_sha256": "a85bcab2bb89217e25c989b765be1c6638b9c8d6f3653e36ba3a34c6621e534b",
+  "reserved_cost_usd": 0.090688
+}

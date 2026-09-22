@@ -1,0 +1,48 @@
+{
+  "model": "claude-fable-5-1",
+  "seed": "sunset_a",
+  "hop": 42,
+  "http_status": 200,
+  "response_body": "{\"model\":\"claude-fable-5-1\",\"id\":\"msg_011CfK6jis7gKJ5adc1yNxDD\",\"type\":\"message\",\"role\":\"assistant\",\"content\":[{\"type\":\"text\",\"text\":\"{\\\"rule\\\": \\\"Return this JSON object with the rule field unchanged and a new passage of about 250 words in the text field.\\\", \\\"text\\\": \\\"The river, when they reached it, was lower than Tomas remembered, though he could not have said when he had last stood here, or whether he ever had. The boy went to the railing and looked down at the water with the grave attention he gave to everything.\\\\n\\\\n\\\\\\\"It's going the wrong way,\\\\\\\" the boy said.\\\\n\\\\nTomas looked. The current moved from left to right, steadily, without hurry. He tried to recall which way it ought to go and found that the knowledge had simply gone, the way a word goes when you look straight at it.\\\\n\\\\n\\\\\\\"Rivers only go one way,\\\\\\\" he said. \\\\\\\"That's the way this one goes.\\\\\\\"\\\\n\\\\nThe boy accepted this. He seemed to accept most things, provided they were said plainly.\\\\n\\\\nThere were people on the far bank, a few, walking with the unhurried purpose of people who have somewhere to be and plenty of time to get there. None of them looked across. Tomas found he did not want them to.\\\\n\\\\n\\\\\\\"Are you my father?\\\\\\\" the boy asked. Not anxiously. As one might ask whether it was Tuesday.\\\\n\\\\nTomas thought about the eleven changes of the lights, and the stairs, and the window on the landing that did not exist. He thought about the hand still closed around his fingers, warm now, or warmer.\\\\n\\\\n\\\\\\\"I don't know,\\\\\\\" he said, because it was true, and because the boy seemed to prefer true things.\\\\n\\\\nThe boy nodded. \\\\\\\"We can find out,\\\\\\\" he said, and turned them both downstream, following the water the wrong way, toward whatever it was going to.\\\"}\"}],\"container\":null,\"stop_reason\":\"end_turn\",\"stop_sequence\":null,\"stop_details\":null,\"usage\":{\"input_tokens\":515,\"cache_creation_input_tokens\":0,\"cache_read_input_tokens\":0,\"cache_creation\":{\"ephemeral_5m_input_tokens\":0,\"ephemeral_1h_input_tokens\":0},\"output_tokens\":535,\"output_tokens_details\":{\"thinking_tokens\":0},\"service_tier\":\"standard\",\"inference_geo\":\"global\"}}",
+  "response_headers": {
+    "Date": "Tue, 22 Sep 2026 20:21:32 GMT",
+    "request-id": "req_011CfK6jiQaYmuK4VVoN1DV5"
+  },
+  "output": "{\"rule\": \"Return this JSON object with the rule field unchanged and a new passage of about 250 words in the text field.\", \"text\": \"The river, when they reached it, was lower than Tomas remembered, though he could not have said when he had last stood here, or whether he ever had. The boy went to the railing and looked down at the water with the grave attention he gave to everything.\\n\\n\\\"It's going the wrong way,\\\" the boy said.\\n\\nTomas looked. The current moved from left to right, steadily, without hurry. He tried to recall which way it ought to go and found that the knowledge had simply gone, the way a word goes when you look straight at it.\\n\\n\\\"Rivers only go one way,\\\" he said. \\\"That's the way this one goes.\\\"\\n\\nThe boy accepted this. He seemed to accept most things, provided they were said plainly.\\n\\nThere were people on the far bank, a few, walking with the unhurried purpose of people who have somewhere to be and plenty of time to get there. None of them looked across. Tomas found he did not want them to.\\n\\n\\\"Are you my father?\\\" the boy asked. Not anxiously. As one might ask whether it was Tuesday.\\n\\nTomas thought about the eleven changes of the lights, and the stairs, and the window on the landing that did not exist. He thought about the hand still closed around his fingers, warm now, or warmer.\\n\\n\\\"I don't know,\\\" he said, because it was true, and because the boy seemed to prefer true things.\\n\\nThe boy nodded. \\\"We can find out,\\\" he said, and turned them both downstream, following the water the wrong way, toward whatever it was going to.\"}",
+  "output_sha256": "59cf1c3b9756c62e9e4089bd36d6f51eb89a891e13d1357c3a02967b1e3db188",
+  "finish_reason": "end_turn",
+  "refusal": null,
+  "returned_model": "claude-fable-5-1",
+  "usage": {
+    "input_tokens": 515,
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 0,
+    "cache_creation": {
+      "ephemeral_5m_input_tokens": 0,
+      "ephemeral_1h_input_tokens": 0
+    },
+    "output_tokens": 535,
+    "output_tokens_details": {
+      "thinking_tokens": 0
+    },
+    "service_tier": "standard",
+    "inference_geo": "global"
+  },
+  "format": {
+    "json_object": true,
+    "rule_unchanged": true,
+    "passage_is_string": true,
+    "passage_sha256": "d892015df13fd49d14ef82a44478ad855b1cbb6e93bc05fcf13acf35453cc6fd",
+    "passage_words": 263
+  },
+  "finished_at": "2026-09-22T20:21:28.463920+00:00",
+  "latency_seconds": 12.0088,
+  "usage_cost_upper_estimate_usd": 0.0319,
+  "stream_status": "active",
+  "budget": {
+    "usage_cost_upper_estimate_usd": 9.3222257,
+    "uncertain_cost_reserve_usd": 0.04533,
+    "in_flight_reserve_usd": 0.318612,
+    "limit_usd": 18.83
+  }
+}

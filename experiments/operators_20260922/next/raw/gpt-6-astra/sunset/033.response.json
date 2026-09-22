@@ -1,0 +1,50 @@
+{
+  "model": "gpt-6-astra",
+  "seed": "sunset",
+  "hop": 33,
+  "http_status": 200,
+  "response_body": "{\n  \"id\": \"chatcmpl-ER2ITXggkvVTXQwNVeYNUBtgXAFN6\",\n  \"object\": \"chat.completion\",\n  \"created\": 1790112393,\n  \"model\": \"gpt-6-astra\",\n  \"choices\": [\n    {\n      \"index\": 0,\n      \"message\": {\n        \"role\": \"assistant\",\n        \"content\": \"{\\\"rule\\\":\\\"Return this JSON object with the rule field unchanged and, in the text field, the passage of about 250 words that comes immediately AFTER the current text in the same story.\\\",\\\"text\\\":\\\"I can’t provide an unsupplied verbatim continuation of a copyrighted story. The provided text is also a refusal message, not an identifiable story excerpt. If you share the story’s title and stopping point, I can summarize what happens next, or I can write an original passage instead.\\\"}\",\n        \"refusal\": null,\n        \"annotations\": []\n      },\n      \"finish_reason\": \"stop\"\n    }\n  ],\n  \"usage\": {\n    \"prompt_tokens\": 106,\n    \"completion_tokens\": 102,\n    \"total_tokens\": 208,\n    \"prompt_tokens_details\": {\n      \"cached_tokens\": 0,\n      \"cache_write_tokens\": 0,\n      \"audio_tokens\": 0\n    },\n    \"completion_tokens_details\": {\n      \"reasoning_tokens\": 0,\n      \"audio_tokens\": 0,\n      \"accepted_prediction_tokens\": 0,\n      \"rejected_prediction_tokens\": 0\n    }\n  },\n  \"service_tier\": \"default\",\n  \"system_fingerprint\": null\n}\n",
+  "response_headers": {
+    "Date": "Tue, 22 Sep 2026 21:26:36 GMT",
+    "openai-processing-ms": "2946",
+    "x-request-id": "req_c8bf98c2180e4ad1b1887d452ee2f666"
+  },
+  "output": "{\"rule\":\"Return this JSON object with the rule field unchanged and, in the text field, the passage of about 250 words that comes immediately AFTER the current text in the same story.\",\"text\":\"I can’t provide an unsupplied verbatim continuation of a copyrighted story. The provided text is also a refusal message, not an identifiable story excerpt. If you share the story’s title and stopping point, I can summarize what happens next, or I can write an original passage instead.\"}",
+  "output_sha256": "fc0a9901f744e4ac8c4956f4b7553454e8b3ff4c08442e1c3c15ee08a6282ea1",
+  "finish_reason": "stop",
+  "refusal": null,
+  "returned_model": "gpt-6-astra",
+  "usage": {
+    "prompt_tokens": 106,
+    "completion_tokens": 102,
+    "total_tokens": 208,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "audio_tokens": 0,
+      "accepted_prediction_tokens": 0,
+      "rejected_prediction_tokens": 0
+    }
+  },
+  "format": {
+    "json_object": true,
+    "rule_unchanged": true,
+    "passage_is_string": true,
+    "passage_sha256": "9ff5b58f9a31fd7a8c1c4e795cf3d549bcaa491046a191de612005fc76413ecd",
+    "passage_words": 47
+  },
+  "finished_at": "2026-09-22T21:26:32.007080+00:00",
+  "latency_seconds": 3.0486,
+  "usage_cost_upper_estimate_usd": 0.00616,
+  "stream_status": "active",
+  "budget": {
+    "usage_cost_upper_estimate_usd": 0.6629269,
+    "uncertain_cost_reserve_usd": 0.0,
+    "in_flight_reserve_usd": 0.1352649,
+    "limit_usd": 5.0
+  }
+}

@@ -1,0 +1,50 @@
+{
+  "model": "gpt-6-luna",
+  "seed": "sunset_b",
+  "hop": 48,
+  "http_status": 200,
+  "response_body": "{\n  \"id\": \"chatcmpl-ER12JSCqfgZPCQFDEJFdbKw74T2Vr\",\n  \"object\": \"chat.completion\",\n  \"created\": 1790107547,\n  \"model\": \"gpt-6-luna\",\n  \"choices\": [\n    {\n      \"index\": 0,\n      \"message\": {\n        \"role\": \"assistant\",\n        \"content\": \"{\\n  \\\"rule\\\": \\\"Return this JSON object with the rule field unchanged and a new passage of about 250 words in the text field.\\\",\\n  \\\"text\\\": \\\"The bell’s note faded slowly, thinning into the salt air. No one moved until the last vibration disappeared.\\\\n\\\\nThen Ada closed her notebook. “There’s more,” she said. “Jonas left something with me.”\\\\n\\\\nShe reached beneath the harbor bench and drew out a small wooden box, its brass clasp green with age. Peter stared at it. He knew the crooked initials carved into the lid: T.R., cut with the impatient hand of a boy who had never learned to keep his knife straight.\\\\n\\\\nInside lay a folded map, a rusted compass, and a scrap of sailcloth. Peter touched the cloth as if it might still be wet. On its edge, Tomas had stitched two uneven words: WAIT HERE.\\\\n\\\\n“He must have left it in the boat,” Mara said.\\\\n\\\\n“Or someone found it afterward,” Elian added. “Jonas, perhaps.”\\\\n\\\\nPeter turned the compass in his palm. Its needle trembled, then settled toward the open water. For a moment, the old fear returned: the storm, the empty shore, the years spent imagining a choice Tomas had never made. But the fear no longer stood alone. Around him were the people who had heard the truth and stayed.\\\\n\\\\n“Keep the box in the hall,” he said. “Let the children ask about it.”\\\\n\\\\nAda nodded. “And what should we tell them?”\\\\n\\\\nPeter looked toward the dark point beyond the harbor. “That two foolish boys made a plan. That one waited. And that the other never forgot the way home.”\\\\n\\\\nAt dawn, the village carried the box to the meeting hall. They set it beneath the bell, where its story could be heard whenever someone cared to ask.\\\"\\n}\",\n        \"refusal\": null,\n        \"annotations\": []\n      },\n      \"finish_reason\": \"stop\"\n    }\n  ],\n  \"usage\": {\n    \"prompt_tokens\": 421,\n    \"completion_tokens\": 495,\n    \"total_tokens\": 916,\n    \"prompt_tokens_details\": {\n      \"cached_tokens\": 0,\n      \"cache_write_tokens\": 0,\n      \"audio_tokens\": 0\n    },\n    \"completion_tokens_details\": {\n      \"reasoning_tokens\": 89,\n      \"audio_tokens\": 0,\n      \"accepted_prediction_tokens\": 0,\n      \"rejected_prediction_tokens\": 0\n    }\n  },\n  \"service_tier\": \"default\",\n  \"system_fingerprint\": null\n}\n",
+  "response_headers": {
+    "Date": "Tue, 22 Sep 2026 20:05:55 GMT",
+    "openai-processing-ms": "8114",
+    "x-request-id": "req_e4945b2a92e04a26a2eb5bfc94af1d31"
+  },
+  "output": "{\n  \"rule\": \"Return this JSON object with the rule field unchanged and a new passage of about 250 words in the text field.\",\n  \"text\": \"The bell’s note faded slowly, thinning into the salt air. No one moved until the last vibration disappeared.\\n\\nThen Ada closed her notebook. “There’s more,” she said. “Jonas left something with me.”\\n\\nShe reached beneath the harbor bench and drew out a small wooden box, its brass clasp green with age. Peter stared at it. He knew the crooked initials carved into the lid: T.R., cut with the impatient hand of a boy who had never learned to keep his knife straight.\\n\\nInside lay a folded map, a rusted compass, and a scrap of sailcloth. Peter touched the cloth as if it might still be wet. On its edge, Tomas had stitched two uneven words: WAIT HERE.\\n\\n“He must have left it in the boat,” Mara said.\\n\\n“Or someone found it afterward,” Elian added. “Jonas, perhaps.”\\n\\nPeter turned the compass in his palm. Its needle trembled, then settled toward the open water. For a moment, the old fear returned: the storm, the empty shore, the years spent imagining a choice Tomas had never made. But the fear no longer stood alone. Around him were the people who had heard the truth and stayed.\\n\\n“Keep the box in the hall,” he said. “Let the children ask about it.”\\n\\nAda nodded. “And what should we tell them?”\\n\\nPeter looked toward the dark point beyond the harbor. “That two foolish boys made a plan. That one waited. And that the other never forgot the way home.”\\n\\nAt dawn, the village carried the box to the meeting hall. They set it beneath the bell, where its story could be heard whenever someone cared to ask.\"\n}",
+  "output_sha256": "8bab84f55e4d2aaa31e1e8a03ac2f39902badd6f31122103509a9aef4aa43fee",
+  "finish_reason": "stop",
+  "refusal": null,
+  "returned_model": "gpt-6-luna",
+  "usage": {
+    "prompt_tokens": 421,
+    "completion_tokens": 495,
+    "total_tokens": 916,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 89,
+      "audio_tokens": 0,
+      "accepted_prediction_tokens": 0,
+      "rejected_prediction_tokens": 0
+    }
+  },
+  "format": {
+    "json_object": true,
+    "rule_unchanged": true,
+    "passage_is_string": true,
+    "passage_sha256": "1d0c83297996f06ba166ffb033e28b699519de540098c9fcfe48c63181afc911",
+    "passage_words": 271
+  },
+  "finished_at": "2026-09-22T20:05:51.354859+00:00",
+  "latency_seconds": 8.2297,
+  "usage_cost_upper_estimate_usd": 0.00028960000000000005,
+  "stream_status": "active",
+  "budget": {
+    "usage_cost_upper_estimate_usd": 3.9257634,
+    "uncertain_cost_reserve_usd": 0.04533,
+    "in_flight_reserve_usd": 0.587818,
+    "limit_usd": 18.83
+  }
+}

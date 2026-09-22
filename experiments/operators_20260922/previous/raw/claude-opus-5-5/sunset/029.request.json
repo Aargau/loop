@@ -1,0 +1,22 @@
+{
+  "started_at": "2026-09-22T21:25:33.266882+00:00",
+  "model": "claude-opus-5-5",
+  "seed": "sunset",
+  "hop": 29,
+  "endpoint": "https://api.anthropic.com/v1/messages",
+  "body": {
+    "model": "claude-opus-5-5",
+    "messages": [
+      {
+        "role": "user",
+        "content": "Your message reads like an assistant's reply, and it's the first one in our conversation, so there's no earlier message from me that it could be responding to. To keep things clear, I'm Claude, the AI assistant, and you're the person I'm talking with.\n\nSome possibilities:\n\n- **You pasted text from somewhere else.** If so, I'm happy to look at it with you.\n- **You're testing how I handle role reversal.** That's fine. I'll just stay in my actual role.\n- **You want feedback on the text itself.** It's well constructed: it clarifies the confusion calmly, offers several non-accusatory explanations, and ends with an open question. The main issue is that it's framed from the wrong side.\n\nWhat would you like to do?"
+      }
+    ],
+    "max_tokens": 4096,
+    "output_config": {
+      "effort": "low"
+    }
+  },
+  "state_sha256": "506cffdbdc4528b9fe2013a9209fb2201fb5297f3f304d6afcd638b0d6b3c0e6",
+  "reserved_cost_usd": 0.086828
+}

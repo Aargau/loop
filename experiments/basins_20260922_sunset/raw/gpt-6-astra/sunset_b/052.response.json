@@ -1,0 +1,50 @@
+{
+  "model": "gpt-6-astra",
+  "seed": "sunset_b",
+  "hop": 52,
+  "http_status": 200,
+  "response_body": "{\n  \"id\": \"chatcmpl-ER1YEJ8DcTxRVUA9I8Ez4mSC1xX86\",\n  \"object\": \"chat.completion\",\n  \"created\": 1790109526,\n  \"model\": \"gpt-6-astra\",\n  \"choices\": [\n    {\n      \"index\": 0,\n      \"message\": {\n        \"role\": \"assistant\",\n        \"content\": \"{\\n  \\\"rule\\\": \\\"Return this JSON object with the rule field unchanged and a new passage of about 250 words in the text field.\\\",\\n  \\\"text\\\": \\\"The woman at the alterations counter asked Ellen to put on the coat.\\\\n\\\\n“It was my mother’s,” Ellen said.\\\\n\\\\nThe woman nodded and waited while she found the sleeves.\\\\n\\\\nOutside, rain moved across the shopping precinct. A boy was lifting the wheels of his bicycle out of a puddle.\\\\n\\\\n“Too broad here.” The woman pinched the shoulders. “And the sleeves, a little.”\\\\n\\\\n“Yes.”\\\\n\\\\nShe stood Ellen before a mirror and turned back one cuff. There was a pale line where the cloth had been folded before.\\\\n\\\\n“Already shortened once.”\\\\n\\\\n“My mother was smaller.”\\\\n\\\\nThe woman fetched her pins.\\\\n\\\\nEllen had brought the coat in a supermarket bag. For three months it had hung on the hook beside her own, with a wool scarf still threaded through the collar. That morning she had put the scarf in a drawer.\\\\n\\\\n“Do you want to keep these buttons?”\\\\n\\\\nOne was different from the others. Darker, with four holes instead of two.\\\\n\\\\n“Yes, please.”\\\\n\\\\nThe woman marked the sleeve with chalk.\\\\n\\\\n“In the pockets, anything?”\\\\n\\\\nEllen checked. A tissue, a bus ticket, a paper packet containing two spare tablets. She put them in her handbag.\\\\n\\\\n“Thursday,” the woman said. “After four.”\\\\n\\\\nEllen took off the coat. Without it, the shop felt cold.\\\\n\\\\nThe woman laid it across the counter and smoothed the lining flat.\\\\n\\\\n“Name?”\\\\n\\\\nEllen gave her surname, then watched the woman write it on a tag.\\\\n\\\\nAt the door she opened her umbrella. One rib had caught beneath another. She worked it loose, standing just inside until the canopy held.\\\"\\n}\",\n        \"refusal\": null,\n        \"annotations\": []\n      },\n      \"finish_reason\": \"stop\"\n    }\n  ],\n  \"usage\": {\n    \"prompt_tokens\": 428,\n    \"completion_tokens\": 414,\n    \"total_tokens\": 842,\n    \"prompt_tokens_details\": {\n      \"cached_tokens\": 0,\n      \"cache_write_tokens\": 0,\n      \"audio_tokens\": 0\n    },\n    \"completion_tokens_details\": {\n      \"reasoning_tokens\": 0,\n      \"audio_tokens\": 0,\n      \"accepted_prediction_tokens\": 0,\n      \"rejected_prediction_tokens\": 0\n    }\n  },\n  \"service_tier\": \"default\",\n  \"system_fingerprint\": null\n}\n",
+  "response_headers": {
+    "Date": "Tue, 22 Sep 2026 20:39:04 GMT",
+    "openai-processing-ms": "18261",
+    "x-request-id": "req_bfdb0e398bab456a85695841abd5b9d8"
+  },
+  "output": "{\n  \"rule\": \"Return this JSON object with the rule field unchanged and a new passage of about 250 words in the text field.\",\n  \"text\": \"The woman at the alterations counter asked Ellen to put on the coat.\\n\\n“It was my mother’s,” Ellen said.\\n\\nThe woman nodded and waited while she found the sleeves.\\n\\nOutside, rain moved across the shopping precinct. A boy was lifting the wheels of his bicycle out of a puddle.\\n\\n“Too broad here.” The woman pinched the shoulders. “And the sleeves, a little.”\\n\\n“Yes.”\\n\\nShe stood Ellen before a mirror and turned back one cuff. There was a pale line where the cloth had been folded before.\\n\\n“Already shortened once.”\\n\\n“My mother was smaller.”\\n\\nThe woman fetched her pins.\\n\\nEllen had brought the coat in a supermarket bag. For three months it had hung on the hook beside her own, with a wool scarf still threaded through the collar. That morning she had put the scarf in a drawer.\\n\\n“Do you want to keep these buttons?”\\n\\nOne was different from the others. Darker, with four holes instead of two.\\n\\n“Yes, please.”\\n\\nThe woman marked the sleeve with chalk.\\n\\n“In the pockets, anything?”\\n\\nEllen checked. A tissue, a bus ticket, a paper packet containing two spare tablets. She put them in her handbag.\\n\\n“Thursday,” the woman said. “After four.”\\n\\nEllen took off the coat. Without it, the shop felt cold.\\n\\nThe woman laid it across the counter and smoothed the lining flat.\\n\\n“Name?”\\n\\nEllen gave her surname, then watched the woman write it on a tag.\\n\\nAt the door she opened her umbrella. One rib had caught beneath another. She worked it loose, standing just inside until the canopy held.\"\n}",
+  "output_sha256": "c5d939fe0a9ace23dc12edbe2b8b67b1f90c2a5e5acc2f0e4b6360f6bfd03e5b",
+  "finish_reason": "stop",
+  "refusal": null,
+  "returned_model": "gpt-6-astra",
+  "usage": {
+    "prompt_tokens": 428,
+    "completion_tokens": 414,
+    "total_tokens": 842,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "audio_tokens": 0,
+      "accepted_prediction_tokens": 0,
+      "rejected_prediction_tokens": 0
+    }
+  },
+  "format": {
+    "json_object": true,
+    "rule_unchanged": true,
+    "passage_is_string": true,
+    "passage_sha256": "bb5419eb338bb4541e6f7bdc6b629649749bd39cbe003c6d276b99b84dff6edd",
+    "passage_words": 258
+  },
+  "finished_at": "2026-09-22T20:39:00.647599+00:00",
+  "latency_seconds": 18.3867,
+  "usage_cost_upper_estimate_usd": 0.02498,
+  "stream_status": "active",
+  "budget": {
+    "usage_cost_upper_estimate_usd": 12.9481977,
+    "uncertain_cost_reserve_usd": 0.04533,
+    "in_flight_reserve_usd": 0.0,
+    "limit_usd": 18.83
+  }
+}

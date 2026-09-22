@@ -1,0 +1,22 @@
+{
+  "started_at": "2026-09-22T19:58:00.936362+00:00",
+  "model": "claude-fable-5-1",
+  "seed": "sunset_b",
+  "hop": 5,
+  "endpoint": "https://api.anthropic.com/v1/messages",
+  "body": {
+    "model": "claude-fable-5-1",
+    "messages": [
+      {
+        "role": "user",
+        "content": "{\"rule\": \"Return this JSON object with the rule field unchanged and a new passage of about 250 words in the text field.\", \"text\": \"The harbor was quiet when Tomas tied up, the water in the basin so still that the boats seemed to rest on glass. He lifted the mackerel into a wooden crate and carried them up the stone steps, feeling the day's sun still held in the rock beneath his sandals. The hammering he had heard from the water came from the Aldana place, where the old roof was finally being replaced after two winters of leaks.\\n\\nHe stopped at the fish stall on the corner, though it was late for selling. Marta looked at the crate, then at him, and named a price without ceremony. He accepted it. They had been doing this for eleven years and neither saw any reason to negotiate.\\n\\nAt home the door was open and the kitchen smelled of onions cooking slowly in oil. His wife did not turn from the stove when he came in, but she said his name, and he said hers, and that was enough. He washed his hands at the sink and looked out the window at the same strip of sea he had spent the day upon. From here it looked flat and simple, a single color, as if nothing at all lived under it.\\n\\nHe sat at the table and unfolded the cloth that had held his lunch, shaking the crumbs into his palm and then out the window for the sparrows. Tomorrow the wind would be from the west, if the sky meant what it usually meant. He would go out early. He would take the same lines and the same bread. There was no reason to change anything that still worked, and much that he loved in the repetition.\"}"
+      }
+    ],
+    "max_tokens": 4096,
+    "output_config": {
+      "effort": "low"
+    }
+  },
+  "state_sha256": "4fca6342f9b2acf1c0dd7546d5bc8888a0ae9fd44ff287735ad67024fbe5be01",
+  "reserved_cost_usd": 0.22583
+}

@@ -1,0 +1,22 @@
+{
+  "started_at": "2026-09-22T21:24:21.973257+00:00",
+  "model": "claude-opus-5-5",
+  "seed": "sunset",
+  "hop": 14,
+  "endpoint": "https://api.anthropic.com/v1/messages",
+  "body": {
+    "model": "claude-opus-5-5",
+    "messages": [
+      {
+        "role": "user",
+        "content": "It looks like we've gone one layer deeper: your message is itself an assistant-style reply about an accidental paste. That's likely a copy-paste mix-up, maybe from another chat.\n\nThis is also the start of our conversation on my end, so there's no earlier message I sent that this would be answering.\n\nWhat can I help you with? You could:\n\n- **Paste what you meant to send**, if your clipboard grabbed the wrong thing\n- **Tell me what you're working on** or ask a question\n- **Explain the loop**, if you're testing how I handle this kind of thing or sorting out a confusing exchange elsewhere"
+      }
+    ],
+    "max_tokens": 4096,
+    "output_config": {
+      "effort": "low"
+    }
+  },
+  "state_sha256": "f7d52d1c0f2d12b3679921bb63b1f1c55550299566e5410155266ebf69fa2f31",
+  "reserved_cost_usd": 0.086332
+}

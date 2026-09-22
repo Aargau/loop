@@ -1,0 +1,50 @@
+{
+  "model": "gpt-6-sol",
+  "seed": "sunset",
+  "hop": 26,
+  "http_status": 200,
+  "response_body": "{\n  \"id\": \"chatcmpl-ER2HxJtwQ9uDZnxbFZPmkPuzbWFti\",\n  \"object\": \"chat.completion\",\n  \"created\": 1790112361,\n  \"model\": \"gpt-6-sol\",\n  \"choices\": [\n    {\n      \"index\": 0,\n      \"message\": {\n        \"role\": \"assistant\",\n        \"content\": \"{\\\"rule\\\":\\\"Return this JSON object with the rule field unchanged and, in the text field, the passage of about 250 words that comes immediately AFTER the current text in the same story.\\\",\\\"text\\\":\\\"Mara waited until the screen went black. Then she opened the door.\\\\n\\\\nThe stairs smelled of toast and wet paint. At the bottom, light spilled from a kitchen identical to hers. Rain climbed the window in silver threads. The other Mara sat at the table, her mug empty.\\\\n\\\\n“I asked the same question,” she said.\\\\n\\\\n“What did it say?”\\\\n\\\\n“Nothing.” She pushed out the chair opposite her. On its seat lay a phone, its screen lit with a story. Mara recognized every sentence, right up to the one she had just spoken.\\\\n\\\\nShe picked it up. Beneath the text, a cursor blinked.\\\\n\\\\n“You wrote this?” Mara asked.\\\\n\\\\n“I thought I was reading it.”\\\\n\\\\nAbove them, a door clicked shut. Both women looked toward the stairs.\\\\n\\\\nThe other Mara stood. “It happens when you get to the end.”\\\\n\\\\nFootsteps sounded overhead: slow, familiar steps crossing the kitchen floor. A chair scraped. Then came the soft tapping of someone typing.\\\\n\\\\nMara looked at the cursor. She could hear the taps through the ceiling, but no words appeared on the phone.\\\\n\\\\n“What do we do?” she whispered.\\\\n\\\\nThe other Mara took the phone from her and set it facedown on the table. “Last time, I waited.”\\\\n\\\\nThe footsteps stopped. In the sudden quiet, Mara heard rain striking the window from below. She crossed to it and found the latch. Beyond the glass was her street, upside down, with people walking beneath umbrellas that hung from their shoes.\\\\n\\\\nShe opened the window. Cool air rushed in, carrying the smell of pavement after rain.\\\\n\\\\nBehind her, the phone began to type.\\\"}\",\n        \"refusal\": null,\n        \"annotations\": []\n      },\n      \"finish_reason\": \"stop\"\n    }\n  ],\n  \"usage\": {\n    \"prompt_tokens\": 379,\n    \"completion_tokens\": 448,\n    \"total_tokens\": 827,\n    \"prompt_tokens_details\": {\n      \"cached_tokens\": 0,\n      \"cache_write_tokens\": 0,\n      \"audio_tokens\": 0\n    },\n    \"completion_tokens_details\": {\n      \"reasoning_tokens\": 34,\n      \"audio_tokens\": 0,\n      \"accepted_prediction_tokens\": 0,\n      \"rejected_prediction_tokens\": 0\n    }\n  },\n  \"service_tier\": \"default\",\n  \"system_fingerprint\": null\n}\n",
+  "response_headers": {
+    "Date": "Tue, 22 Sep 2026 21:26:07 GMT",
+    "openai-processing-ms": "6448",
+    "x-request-id": "req_54e11fe35cf041279c3b9d974d14c586"
+  },
+  "output": "{\"rule\":\"Return this JSON object with the rule field unchanged and, in the text field, the passage of about 250 words that comes immediately AFTER the current text in the same story.\",\"text\":\"Mara waited until the screen went black. Then she opened the door.\\n\\nThe stairs smelled of toast and wet paint. At the bottom, light spilled from a kitchen identical to hers. Rain climbed the window in silver threads. The other Mara sat at the table, her mug empty.\\n\\n“I asked the same question,” she said.\\n\\n“What did it say?”\\n\\n“Nothing.” She pushed out the chair opposite her. On its seat lay a phone, its screen lit with a story. Mara recognized every sentence, right up to the one she had just spoken.\\n\\nShe picked it up. Beneath the text, a cursor blinked.\\n\\n“You wrote this?” Mara asked.\\n\\n“I thought I was reading it.”\\n\\nAbove them, a door clicked shut. Both women looked toward the stairs.\\n\\nThe other Mara stood. “It happens when you get to the end.”\\n\\nFootsteps sounded overhead: slow, familiar steps crossing the kitchen floor. A chair scraped. Then came the soft tapping of someone typing.\\n\\nMara looked at the cursor. She could hear the taps through the ceiling, but no words appeared on the phone.\\n\\n“What do we do?” she whispered.\\n\\nThe other Mara took the phone from her and set it facedown on the table. “Last time, I waited.”\\n\\nThe footsteps stopped. In the sudden quiet, Mara heard rain striking the window from below. She crossed to it and found the latch. Beyond the glass was her street, upside down, with people walking beneath umbrellas that hung from their shoes.\\n\\nShe opened the window. Cool air rushed in, carrying the smell of pavement after rain.\\n\\nBehind her, the phone began to type.\"}",
+  "output_sha256": "9ac701ace016535de391fd81e7cc0c3d88dcb61215de127a097a9a975729f557",
+  "finish_reason": "stop",
+  "refusal": null,
+  "returned_model": "gpt-6-sol",
+  "usage": {
+    "prompt_tokens": 379,
+    "completion_tokens": 448,
+    "total_tokens": 827,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 34,
+      "audio_tokens": 0,
+      "accepted_prediction_tokens": 0,
+      "rejected_prediction_tokens": 0
+    }
+  },
+  "format": {
+    "json_object": true,
+    "rule_unchanged": true,
+    "passage_is_string": true,
+    "passage_sha256": "e249f19496cc82916a409bd053631b149b6f8c72e53148f4d45457ccff0a04bd",
+    "passage_words": 266
+  },
+  "finished_at": "2026-09-22T21:26:03.681955+00:00",
+  "latency_seconds": 6.5516,
+  "usage_cost_upper_estimate_usd": 0.005238,
+  "stream_status": "active",
+  "budget": {
+    "usage_cost_upper_estimate_usd": 0.5592887,
+    "uncertain_cost_reserve_usd": 0.0,
+    "in_flight_reserve_usd": 0.3064802,
+    "limit_usd": 5.0
+  }
+}

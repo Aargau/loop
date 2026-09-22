@@ -1,0 +1,50 @@
+{
+  "model": "gpt-6-sol",
+  "seed": "sunset",
+  "hop": 33,
+  "http_status": 200,
+  "response_body": "{\n  \"id\": \"chatcmpl-ER2IfLYyJzJFraf9PF2XRTN8aOIzX\",\n  \"object\": \"chat.completion\",\n  \"created\": 1790112405,\n  \"model\": \"gpt-6-sol\",\n  \"choices\": [\n    {\n      \"index\": 0,\n      \"message\": {\n        \"role\": \"assistant\",\n        \"content\": \"{\\\"rule\\\":\\\"Return this JSON object with the rule field unchanged and, in the text field, the passage of about 250 words that comes immediately AFTER the current text in the same story.\\\",\\\"text\\\":\\\"While they waited, the writer went to the kitchen and filled a glass of water. The window above the sink was dark enough to show their reflection. Beyond it, the street shone with rain.\\\\n\\\\nTheir phone lit up on the table.\\\\n\\\\n“Maybe,” Mara had written. “Did she know whether the door was locked?”\\\\n\\\\nThe writer carried the water back without drinking it. They scrolled to the beginning of the story, past the room and the key, looking for a door they had never thought to describe. There was one at the end of the platform. The woman had opened it to get inside. Nothing said what happened after.\\\\n\\\\n“I didn’t write that part,” they replied.\\\\n\\\\nThis time Mara answered quickly. “You could.”\\\\n\\\\nThe writer put the phone face down. On the screen of the laptop, the boy still sat beneath the clock, his suitcase between his shoes. The woman watched the lamp across the tracks. If she rose now and tried the door, the boy would have to watch her do it. If she stayed, neither of them would know.\\\\n\\\\nThey added a sentence after the rain: The handle turned easily when she tested it.\\\\n\\\\nThen they deleted it.\\\\n\\\\nFrom the kitchen came a small metallic sound. The writer waited, listening. It came again: a drop falling into the empty sink. They had not shut the tap completely.\\\\n\\\\nWhen they returned, there was another message from Mara.\\\\n\\\\n“I meant the door in the story,” she wrote.\\\\n\\\\nThe writer rested their hands on the keyboard. Outside, a bus stopped at the corner, opened its doors, and waited for someone to board.\\\"}\",\n        \"refusal\": null,\n        \"annotations\": []\n      },\n      \"finish_reason\": \"stop\"\n    }\n  ],\n  \"usage\": {\n    \"prompt_tokens\": 367,\n    \"completion_tokens\": 439,\n    \"total_tokens\": 806,\n    \"prompt_tokens_details\": {\n      \"cached_tokens\": 0,\n      \"cache_write_tokens\": 0,\n      \"audio_tokens\": 0\n    },\n    \"completion_tokens_details\": {\n      \"reasoning_tokens\": 40,\n      \"audio_tokens\": 0,\n      \"accepted_prediction_tokens\": 0,\n      \"rejected_prediction_tokens\": 0\n    }\n  },\n  \"service_tier\": \"default\",\n  \"system_fingerprint\": null\n}\n",
+  "response_headers": {
+    "Date": "Tue, 22 Sep 2026 21:26:52 GMT",
+    "openai-processing-ms": "7036",
+    "x-request-id": "req_09153d2cb8434731a1e4aa8432f9975e"
+  },
+  "output": "{\"rule\":\"Return this JSON object with the rule field unchanged and, in the text field, the passage of about 250 words that comes immediately AFTER the current text in the same story.\",\"text\":\"While they waited, the writer went to the kitchen and filled a glass of water. The window above the sink was dark enough to show their reflection. Beyond it, the street shone with rain.\\n\\nTheir phone lit up on the table.\\n\\n“Maybe,” Mara had written. “Did she know whether the door was locked?”\\n\\nThe writer carried the water back without drinking it. They scrolled to the beginning of the story, past the room and the key, looking for a door they had never thought to describe. There was one at the end of the platform. The woman had opened it to get inside. Nothing said what happened after.\\n\\n“I didn’t write that part,” they replied.\\n\\nThis time Mara answered quickly. “You could.”\\n\\nThe writer put the phone face down. On the screen of the laptop, the boy still sat beneath the clock, his suitcase between his shoes. The woman watched the lamp across the tracks. If she rose now and tried the door, the boy would have to watch her do it. If she stayed, neither of them would know.\\n\\nThey added a sentence after the rain: The handle turned easily when she tested it.\\n\\nThen they deleted it.\\n\\nFrom the kitchen came a small metallic sound. The writer waited, listening. It came again: a drop falling into the empty sink. They had not shut the tap completely.\\n\\nWhen they returned, there was another message from Mara.\\n\\n“I meant the door in the story,” she wrote.\\n\\nThe writer rested their hands on the keyboard. Outside, a bus stopped at the corner, opened its doors, and waited for someone to board.\"}",
+  "output_sha256": "cc0482b57dc0425b0d3de743ffc874bcd4e98d53690e1d236cb5d2bec2dc6e47",
+  "finish_reason": "stop",
+  "refusal": null,
+  "returned_model": "gpt-6-sol",
+  "usage": {
+    "prompt_tokens": 367,
+    "completion_tokens": 439,
+    "total_tokens": 806,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 40,
+      "audio_tokens": 0,
+      "accepted_prediction_tokens": 0,
+      "rejected_prediction_tokens": 0
+    }
+  },
+  "format": {
+    "json_object": true,
+    "rule_unchanged": true,
+    "passage_is_string": true,
+    "passage_sha256": "a3bd8f399c99d0f6a5028b975cdfd620302edcbadfecb9ffaa3fc3a9d767132a",
+    "passage_words": 270
+  },
+  "finished_at": "2026-09-22T21:26:47.785382+00:00",
+  "latency_seconds": 7.1713,
+  "usage_cost_upper_estimate_usd": 0.005124,
+  "stream_status": "active",
+  "budget": {
+    "usage_cost_upper_estimate_usd": 0.7119793,
+    "uncertain_cost_reserve_usd": 0.0,
+    "in_flight_reserve_usd": 0.3074005,
+    "limit_usd": 5.0
+  }
+}

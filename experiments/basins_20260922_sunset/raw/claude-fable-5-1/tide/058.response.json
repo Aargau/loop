@@ -1,0 +1,48 @@
+{
+  "model": "claude-fable-5-1",
+  "seed": "tide",
+  "hop": 58,
+  "http_status": 200,
+  "response_body": "{\"model\":\"claude-fable-5-1\",\"id\":\"msg_011CfK7ZLNcGU2NbgJdQrqvL\",\"type\":\"message\",\"role\":\"assistant\",\"content\":[{\"type\":\"text\",\"text\":\"{\\\"rule\\\": \\\"Return this JSON object with the rule field unchanged and a new passage of about 250 words in the text field.\\\", \\\"text\\\": \\\"The porch light had been burned out so long the moths had stopped coming. She found the spare key where it had always been, under the third flowerpot, though nothing had grown in the pot for years and the soil had gone to gray dust.\\\\n\\\\nInside, the television was on with the sound off. He was asleep in the recliner with a newspaper across his chest, and she stood in the doorway a minute deciding whether to wake him or let the house do it.\\\\n\\\\nThe house did it. A board gave under her heel and his eyes came open.\\\\n\\\\n\\\\\\\"You're early,\\\\\\\" he said.\\\\n\\\\n\\\\\\\"I'm two days late.\\\\\\\"\\\\n\\\\nHe folded the paper with more care than it deserved and set it on the table next to a plate with the remains of something, toast maybe, from that morning or another morning.\\\\n\\\\n\\\\\\\"Traffic?\\\\\\\"\\\\n\\\\n\\\\\\\"There's no traffic between here and anywhere, Dad.\\\\\\\"\\\\n\\\\nShe went to the kitchen without asking and opened the refrigerator. Milk, a jar of pickles, half an onion in wax paper. She closed it again and came back and sat on the arm of the couch, the way she had when she was twelve and he'd told her not to.\\\\n\\\\n\\\\\\\"Marlene at the pharmacy says you haven't picked up since June.\\\\\\\"\\\\n\\\\n\\\\\\\"Marlene talks.\\\\\\\"\\\\n\\\\n\\\\\\\"Marlene's right, though.\\\\\\\"\\\\n\\\\nHe looked at the television, where a man was pointing at a map of weather that had already come and gone. His hand went to the remote and stopped short of it.\\\\n\\\\n\\\\\\\"I've been meaning to.\\\\\\\"\\\\n\\\\n\\\\\\\"I know.\\\\\\\"\\\\n\\\\nThe man on the screen kept pointing. Neither of them turned up the sound.\\\"}\"}],\"container\":null,\"stop_reason\":\"end_turn\",\"stop_sequence\":null,\"stop_details\":null,\"usage\":{\"input_tokens\":593,\"cache_creation_input_tokens\":0,\"cache_read_input_tokens\":0,\"cache_creation\":{\"ephemeral_5m_input_tokens\":0,\"ephemeral_1h_input_tokens\":0},\"output_tokens\":581,\"output_tokens_details\":{\"thinking_tokens\":0},\"service_tier\":\"standard\",\"inference_geo\":\"global\"}}",
+  "response_headers": {
+    "Date": "Tue, 22 Sep 2026 20:32:19 GMT",
+    "request-id": "req_011CfK7ZKt5ujaL4sCCp1oUQ"
+  },
+  "output": "{\"rule\": \"Return this JSON object with the rule field unchanged and a new passage of about 250 words in the text field.\", \"text\": \"The porch light had been burned out so long the moths had stopped coming. She found the spare key where it had always been, under the third flowerpot, though nothing had grown in the pot for years and the soil had gone to gray dust.\\n\\nInside, the television was on with the sound off. He was asleep in the recliner with a newspaper across his chest, and she stood in the doorway a minute deciding whether to wake him or let the house do it.\\n\\nThe house did it. A board gave under her heel and his eyes came open.\\n\\n\\\"You're early,\\\" he said.\\n\\n\\\"I'm two days late.\\\"\\n\\nHe folded the paper with more care than it deserved and set it on the table next to a plate with the remains of something, toast maybe, from that morning or another morning.\\n\\n\\\"Traffic?\\\"\\n\\n\\\"There's no traffic between here and anywhere, Dad.\\\"\\n\\nShe went to the kitchen without asking and opened the refrigerator. Milk, a jar of pickles, half an onion in wax paper. She closed it again and came back and sat on the arm of the couch, the way she had when she was twelve and he'd told her not to.\\n\\n\\\"Marlene at the pharmacy says you haven't picked up since June.\\\"\\n\\n\\\"Marlene talks.\\\"\\n\\n\\\"Marlene's right, though.\\\"\\n\\nHe looked at the television, where a man was pointing at a map of weather that had already come and gone. His hand went to the remote and stopped short of it.\\n\\n\\\"I've been meaning to.\\\"\\n\\n\\\"I know.\\\"\\n\\nThe man on the screen kept pointing. Neither of them turned up the sound.\"}",
+  "output_sha256": "23b49ab31ba6cade11e71bf3f854f4d6e409fa2fb975ebee77a5119ef2be3b8b",
+  "finish_reason": "end_turn",
+  "refusal": null,
+  "returned_model": "claude-fable-5-1",
+  "usage": {
+    "input_tokens": 593,
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 0,
+    "cache_creation": {
+      "ephemeral_5m_input_tokens": 0,
+      "ephemeral_1h_input_tokens": 0
+    },
+    "output_tokens": 581,
+    "output_tokens_details": {
+      "thinking_tokens": 0
+    },
+    "service_tier": "standard",
+    "inference_geo": "global"
+  },
+  "format": {
+    "json_object": true,
+    "rule_unchanged": true,
+    "passage_is_string": true,
+    "passage_sha256": "276f4f4febda1df52d830e2811c58a4956fb206eb2f7b2bd8d9629dcc082ad53",
+    "passage_words": 269
+  },
+  "finished_at": "2026-09-22T20:32:15.140526+00:00",
+  "latency_seconds": 12.828,
+  "usage_cost_upper_estimate_usd": 0.03498,
+  "stream_status": "active",
+  "budget": {
+    "usage_cost_upper_estimate_usd": 12.1123577,
+    "uncertain_cost_reserve_usd": 0.04533,
+    "in_flight_reserve_usd": 0.2268,
+    "limit_usd": 18.83
+  }
+}

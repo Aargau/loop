@@ -1,0 +1,50 @@
+{
+  "model": "gpt-6-astra",
+  "seed": "sunset_a",
+  "hop": 34,
+  "http_status": 200,
+  "response_body": "{\n  \"id\": \"chatcmpl-ER1IpwFCBKhT4IkyYH8f8ky7T8g46\",\n  \"object\": \"chat.completion\",\n  \"created\": 1790108571,\n  \"model\": \"gpt-6-astra\",\n  \"choices\": [\n    {\n      \"index\": 0,\n      \"message\": {\n        \"role\": \"assistant\",\n        \"content\": \"{\\n  \\\"rule\\\": \\\"Return this JSON object with the rule field unchanged and a new passage of about 250 words in the text field.\\\",\\n  \\\"text\\\": \\\"When the laundrette changed owners, someone removed the chair beside the dryers.\\\\n\\\\nMr Bell stood in its empty place with his washing bag between his shoes.\\\\n\\\\n“You can leave it running,” the new owner said. “Forty minutes, usually.”\\\\n\\\\n“I know.”\\\\n\\\\nShe was kneeling behind the counter, sorting keys into a biscuit tin. Her name was Leila, according to the certificate taped to the wall.\\\\n\\\\nThe following Thursday, he brought a folding stool.\\\\n\\\\nLeila said nothing. She had three leaking machines and a card reader that accepted payment only when held at an angle.\\\\n\\\\nBy December, Mr Bell had begun bringing two cups of tea from the café next door.\\\\n\\\\n“You don’t have to do that,” she told him.\\\\n\\\\n“They make the second one too weak anyway.”\\\\n\\\\nOne morning, he missed his usual time. At noon, Leila found herself looking through the steamed window.\\\\n\\\\nHe came the next week with a young woman who carried his bag.\\\\n\\\\n“My daughter,” he said. “She thinks I should get a machine.”\\\\n\\\\n“It would be easier,” his daughter said.\\\\n\\\\nMr Bell studied the row of turning windows.\\\\n\\\\nLeila fetched the folding stool from behind the counter. She had kept it there since he left it in November.\\\\n\\\\n“We’ve ordered a bench,” she said.\\\\n\\\\nHis daughter checked her phone, then put it away.\\\\n\\\\n“Is there a café nearby?”\\\\n\\\\n“Next door,” said Mr Bell. “Don’t ask for a pot. They give you too much water.”\\\\n\\\\nAfter she went out, he lowered himself onto the stool.\\\\n\\\\n“A bench?”\\\\n\\\\n“Arrives Monday.”\\\\n\\\\nHe nodded and began separating his pale shirts from the dark ones.\\\"\\n}\",\n        \"refusal\": null,\n        \"annotations\": []\n      },\n      \"finish_reason\": \"stop\"\n    }\n  ],\n  \"usage\": {\n    \"prompt_tokens\": 424,\n    \"completion_tokens\": 421,\n    \"total_tokens\": 845,\n    \"prompt_tokens_details\": {\n      \"cached_tokens\": 0,\n      \"cache_write_tokens\": 0,\n      \"audio_tokens\": 0\n    },\n    \"completion_tokens_details\": {\n      \"reasoning_tokens\": 0,\n      \"audio_tokens\": 0,\n      \"accepted_prediction_tokens\": 0,\n      \"rejected_prediction_tokens\": 0\n    }\n  },\n  \"service_tier\": \"default\",\n  \"system_fingerprint\": null\n}\n",
+  "response_headers": {
+    "Date": "Tue, 22 Sep 2026 20:23:05 GMT",
+    "openai-processing-ms": "14655",
+    "x-request-id": "req_a01abce8087a42bb863d6e8b42ddc3c4"
+  },
+  "output": "{\n  \"rule\": \"Return this JSON object with the rule field unchanged and a new passage of about 250 words in the text field.\",\n  \"text\": \"When the laundrette changed owners, someone removed the chair beside the dryers.\\n\\nMr Bell stood in its empty place with his washing bag between his shoes.\\n\\n“You can leave it running,” the new owner said. “Forty minutes, usually.”\\n\\n“I know.”\\n\\nShe was kneeling behind the counter, sorting keys into a biscuit tin. Her name was Leila, according to the certificate taped to the wall.\\n\\nThe following Thursday, he brought a folding stool.\\n\\nLeila said nothing. She had three leaking machines and a card reader that accepted payment only when held at an angle.\\n\\nBy December, Mr Bell had begun bringing two cups of tea from the café next door.\\n\\n“You don’t have to do that,” she told him.\\n\\n“They make the second one too weak anyway.”\\n\\nOne morning, he missed his usual time. At noon, Leila found herself looking through the steamed window.\\n\\nHe came the next week with a young woman who carried his bag.\\n\\n“My daughter,” he said. “She thinks I should get a machine.”\\n\\n“It would be easier,” his daughter said.\\n\\nMr Bell studied the row of turning windows.\\n\\nLeila fetched the folding stool from behind the counter. She had kept it there since he left it in November.\\n\\n“We’ve ordered a bench,” she said.\\n\\nHis daughter checked her phone, then put it away.\\n\\n“Is there a café nearby?”\\n\\n“Next door,” said Mr Bell. “Don’t ask for a pot. They give you too much water.”\\n\\nAfter she went out, he lowered himself onto the stool.\\n\\n“A bench?”\\n\\n“Arrives Monday.”\\n\\nHe nodded and began separating his pale shirts from the dark ones.\"\n}",
+  "output_sha256": "08e5fb218d7ca3884c90281befa6fabe4432309f4419acd17fb3952564ade424",
+  "finish_reason": "stop",
+  "refusal": null,
+  "returned_model": "gpt-6-astra",
+  "usage": {
+    "prompt_tokens": 424,
+    "completion_tokens": 421,
+    "total_tokens": 845,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "audio_tokens": 0,
+      "accepted_prediction_tokens": 0,
+      "rejected_prediction_tokens": 0
+    }
+  },
+  "format": {
+    "json_object": true,
+    "rule_unchanged": true,
+    "passage_is_string": true,
+    "passage_sha256": "f01dea236fffb6301f4400615595c90e74bd52340c66ced60b36813d842114ce",
+    "passage_words": 264
+  },
+  "finished_at": "2026-09-22T20:23:01.912779+00:00",
+  "latency_seconds": 15.0396,
+  "usage_cost_upper_estimate_usd": 0.02529,
+  "stream_status": "active",
+  "budget": {
+    "usage_cost_upper_estimate_usd": 9.8595397,
+    "uncertain_cost_reserve_usd": 0.04533,
+    "in_flight_reserve_usd": 0.315638,
+    "limit_usd": 18.83
+  }
+}

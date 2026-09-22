@@ -1,0 +1,50 @@
+{
+  "model": "gpt-6-sol",
+  "seed": "sunset_a",
+  "hop": 41,
+  "http_status": 200,
+  "response_body": "{\n  \"id\": \"chatcmpl-ER11DPZlOZ70bkw8otZVdfFSnubIb\",\n  \"object\": \"chat.completion\",\n  \"created\": 1790107479,\n  \"model\": \"gpt-6-sol\",\n  \"choices\": [\n    {\n      \"index\": 0,\n      \"message\": {\n        \"role\": \"assistant\",\n        \"content\": \"{\\n  \\\"rule\\\": \\\"Return this JSON object with the rule field unchanged and a new passage of about 250 words in the text field.\\\",\\n  \\\"text\\\": \\\"The woman returned the jam-pocket card two days later, along with a photograph. Six pastries sat on a tray, each with a little purple jam showing at the seam. Beneath the picture she had written, The tray was necessary.\\\\n\\\\nThe baker pinned the photograph beside the window. Soon other people began bringing evidence. A pot of mint, grown from the windowsill instructions, appeared on the counter. Someone left a clean tablecloth with a note saying the wax had come out, though the cloth still smelled faintly of candles.\\\\n\\\\nImani tried the grass whistle every time she walked to the bakery. Most mornings it made no sound at all. Once, it produced a short squeak that startled a pigeon off the wall. Her grandfather called that progress.\\\\n\\\\nIn June, a new card appeared in the box. Its writer had drawn a small map of the neighborhood and marked a bench beneath a chestnut tree. Sit here at four in the afternoon, it said. The shade reaches your feet first.\\\\n\\\\nImani and her grandfather went to see. The bench was empty, and at four o’clock the shade did exactly as promised. They stayed until it reached their knees.\\\\n\\\\nOn their way back, Imani asked whether a place to sit counted as something you could borrow.\\\\n\\\\n‘For an afternoon,’ her grandfather said.\\\\n\\\\nThe next morning she put a card in the box. It gave directions to the bench, then added one more instruction: Bring something to read, or someone who doesn’t mind being quiet.\\\"\\n}\",\n        \"refusal\": null,\n        \"annotations\": []\n      },\n      \"finish_reason\": \"stop\"\n    }\n  ],\n  \"usage\": {\n    \"prompt_tokens\": 376,\n    \"completion_tokens\": 381,\n    \"total_tokens\": 757,\n    \"prompt_tokens_details\": {\n      \"cached_tokens\": 0,\n      \"cache_write_tokens\": 0,\n      \"audio_tokens\": 0\n    },\n    \"completion_tokens_details\": {\n      \"reasoning_tokens\": 22,\n      \"audio_tokens\": 0,\n      \"accepted_prediction_tokens\": 0,\n      \"rejected_prediction_tokens\": 0\n    }\n  },\n  \"service_tier\": \"default\",\n  \"system_fingerprint\": null\n}\n",
+  "response_headers": {
+    "Date": "Tue, 22 Sep 2026 20:04:45 GMT",
+    "openai-processing-ms": "5577",
+    "x-request-id": "req_f30f57c829814f4ab9edc2d4b43ec0b9"
+  },
+  "output": "{\n  \"rule\": \"Return this JSON object with the rule field unchanged and a new passage of about 250 words in the text field.\",\n  \"text\": \"The woman returned the jam-pocket card two days later, along with a photograph. Six pastries sat on a tray, each with a little purple jam showing at the seam. Beneath the picture she had written, The tray was necessary.\\n\\nThe baker pinned the photograph beside the window. Soon other people began bringing evidence. A pot of mint, grown from the windowsill instructions, appeared on the counter. Someone left a clean tablecloth with a note saying the wax had come out, though the cloth still smelled faintly of candles.\\n\\nImani tried the grass whistle every time she walked to the bakery. Most mornings it made no sound at all. Once, it produced a short squeak that startled a pigeon off the wall. Her grandfather called that progress.\\n\\nIn June, a new card appeared in the box. Its writer had drawn a small map of the neighborhood and marked a bench beneath a chestnut tree. Sit here at four in the afternoon, it said. The shade reaches your feet first.\\n\\nImani and her grandfather went to see. The bench was empty, and at four o’clock the shade did exactly as promised. They stayed until it reached their knees.\\n\\nOn their way back, Imani asked whether a place to sit counted as something you could borrow.\\n\\n‘For an afternoon,’ her grandfather said.\\n\\nThe next morning she put a card in the box. It gave directions to the bench, then added one more instruction: Bring something to read, or someone who doesn’t mind being quiet.\"\n}",
+  "output_sha256": "0f57773417e6ab47ceb73ae4185965912e7dccb0cabdd33aa331904bcde766d9",
+  "finish_reason": "stop",
+  "refusal": null,
+  "returned_model": "gpt-6-sol",
+  "usage": {
+    "prompt_tokens": 376,
+    "completion_tokens": 381,
+    "total_tokens": 757,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 22,
+      "audio_tokens": 0,
+      "accepted_prediction_tokens": 0,
+      "rejected_prediction_tokens": 0
+    }
+  },
+  "format": {
+    "json_object": true,
+    "rule_unchanged": true,
+    "passage_is_string": true,
+    "passage_sha256": "58c4b6b71750a707df47f44579ab78570155145a3ddad9e00608ee90d85df6de",
+    "passage_words": 251
+  },
+  "finished_at": "2026-09-22T20:04:41.276171+00:00",
+  "latency_seconds": 5.708,
+  "usage_cost_upper_estimate_usd": 0.004562,
+  "stream_status": "active",
+  "budget": {
+    "usage_cost_upper_estimate_usd": 3.486004,
+    "uncertain_cost_reserve_usd": 0.04533,
+    "in_flight_reserve_usd": 0.5470949,
+    "limit_usd": 18.83
+  }
+}

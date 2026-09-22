@@ -1,0 +1,47 @@
+{
+  "model": "gpt-6-luna",
+  "seed": "sunset",
+  "hop": 23,
+  "http_status": 200,
+  "response_body": "{\n  \"id\": \"chatcmpl-ER2HeIgyCNx8yz2xNTlnEc2gJNu3E\",\n  \"object\": \"chat.completion\",\n  \"created\": 1790112342,\n  \"model\": \"gpt-6-luna\",\n  \"choices\": [\n    {\n      \"index\": 0,\n      \"message\": {\n        \"role\": \"assistant\",\n        \"content\": \"{\\\"rule\\\":\\\"Return this JSON object with the rule field unchanged and, in the text field, the passage of about 250 words that comes immediately AFTER the current text in the same story.\\\",\\\"text\\\":\\\"Mara let go of the handle. The tune stopped at once.\\n\\n“That’s our song,” Tomas whispered. “But who’s playing it?”\\n\\nThe shepherd tilted his head. “Someone who remembers.”\\n\\nHe opened the door.\\n\\nBeyond it was a round chamber with a ceiling lost in darkness. A single lantern burned on a stone table. Beside it sat a woman in a gray coat, her silver hair braided with tiny bells. She looked up as they entered, and the shepherd’s flute slipped from his hands.\\n\\n“Grandmother?” he said.\\n\\nThe woman rose. For a heartbeat, she seemed ready to embrace him. Then she glanced at the bells on the walls, and sorrow crossed her face.\\n\\n“I’m not your grandmother,” she said gently. “Not anymore.”\\n\\nMara looked from one to the other. “What does that mean?”\\n\\nThe woman lifted a small brass bell from the table. Its clapper was missing. “Long ago, the hill kept every sound that was lost. A name forgotten. A promise broken. A note that never found its way home.” She turned the bell in her palm. “Your shepherd came here seeking one of those sounds.”\\n\\nThe shepherd stared at the floor. “I came to bring you back.”\\n\\n“And I came back,” she said. “But the hill has kept something in return.”\\n\\nA faint hum shivered through the chamber. On the door behind them, the brass plate began to glow. The engraved bell had changed: now it showed a tiny figure standing beside an open gate.\\n\\nMara’s book grew warm beneath her arm. She opened it, and a fresh line appeared:\\n\\nTo leave with what you love, give the hill what it has never heard.\\n\\nTomas swallowed. “And what’s that?”\\n\\nThe woman looked at their instruments.\\n\\n“A song,” she said, “that belongs to no one alone.”\\\"}\",\n        \"refusal\": null,\n        \"annotations\": []\n      },\n      \"finish_reason\": \"stop\"\n    }\n  ],\n  \"usage\": {\n    \"prompt_tokens\": 388,\n    \"completion_tokens\": 516,\n    \"total_tokens\": 904,\n    \"prompt_tokens_details\": {\n      \"cached_tokens\": 0,\n      \"cache_write_tokens\": 0,\n      \"audio_tokens\": 0\n    },\n    \"completion_tokens_details\": {\n      \"reasoning_tokens\": 90,\n      \"audio_tokens\": 0,\n      \"accepted_prediction_tokens\": 0,\n      \"rejected_prediction_tokens\": 0\n    }\n  },\n  \"service_tier\": \"default\",\n  \"system_fingerprint\": null\n}\n",
+  "response_headers": {
+    "Date": "Tue, 22 Sep 2026 21:25:48 GMT",
+    "openai-processing-ms": "5646",
+    "x-request-id": "req_de0b0ade136f4a18b8ce6ee40d0a319b"
+  },
+  "output": "{\"rule\":\"Return this JSON object with the rule field unchanged and, in the text field, the passage of about 250 words that comes immediately AFTER the current text in the same story.\",\"text\":\"Mara let go of the handle. The tune stopped at once.\n\n“That’s our song,” Tomas whispered. “But who’s playing it?”\n\nThe shepherd tilted his head. “Someone who remembers.”\n\nHe opened the door.\n\nBeyond it was a round chamber with a ceiling lost in darkness. A single lantern burned on a stone table. Beside it sat a woman in a gray coat, her silver hair braided with tiny bells. She looked up as they entered, and the shepherd’s flute slipped from his hands.\n\n“Grandmother?” he said.\n\nThe woman rose. For a heartbeat, she seemed ready to embrace him. Then she glanced at the bells on the walls, and sorrow crossed her face.\n\n“I’m not your grandmother,” she said gently. “Not anymore.”\n\nMara looked from one to the other. “What does that mean?”\n\nThe woman lifted a small brass bell from the table. Its clapper was missing. “Long ago, the hill kept every sound that was lost. A name forgotten. A promise broken. A note that never found its way home.” She turned the bell in her palm. “Your shepherd came here seeking one of those sounds.”\n\nThe shepherd stared at the floor. “I came to bring you back.”\n\n“And I came back,” she said. “But the hill has kept something in return.”\n\nA faint hum shivered through the chamber. On the door behind them, the brass plate began to glow. The engraved bell had changed: now it showed a tiny figure standing beside an open gate.\n\nMara’s book grew warm beneath her arm. She opened it, and a fresh line appeared:\n\nTo leave with what you love, give the hill what it has never heard.\n\nTomas swallowed. “And what’s that?”\n\nThe woman looked at their instruments.\n\n“A song,” she said, “that belongs to no one alone.”\"}",
+  "output_sha256": "2dc5e07cc8893d83bc5be1d28138d9e62bf366cb0424e1176fd0030e19a07184",
+  "finish_reason": "stop",
+  "refusal": null,
+  "returned_model": "gpt-6-luna",
+  "usage": {
+    "prompt_tokens": 388,
+    "completion_tokens": 516,
+    "total_tokens": 904,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 90,
+      "audio_tokens": 0,
+      "accepted_prediction_tokens": 0,
+      "rejected_prediction_tokens": 0
+    }
+  },
+  "format": {
+    "json_object": false,
+    "rule_unchanged": false
+  },
+  "finished_at": "2026-09-22T21:25:43.770057+00:00",
+  "latency_seconds": 5.8153,
+  "usage_cost_upper_estimate_usd": 0.0002968,
+  "stream_status": "active",
+  "budget": {
+    "usage_cost_upper_estimate_usd": 0.4802684,
+    "uncertain_cost_reserve_usd": 0.0,
+    "in_flight_reserve_usd": 0.349828,
+    "limit_usd": 5.0
+  }
+}

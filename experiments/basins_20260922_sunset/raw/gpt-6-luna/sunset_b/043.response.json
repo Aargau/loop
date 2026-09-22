@@ -1,0 +1,50 @@
+{
+  "model": "gpt-6-luna",
+  "seed": "sunset_b",
+  "hop": 43,
+  "http_status": 200,
+  "response_body": "{\n  \"id\": \"chatcmpl-ER11Fjt5gF81eSj0JvEFeANYCgxNo\",\n  \"object\": \"chat.completion\",\n  \"created\": 1790107481,\n  \"model\": \"gpt-6-luna\",\n  \"choices\": [\n    {\n      \"index\": 0,\n      \"message\": {\n        \"role\": \"assistant\",\n        \"content\": \"{\\n  \\\"rule\\\": \\\"Return this JSON object with the rule field unchanged and a new passage of about 250 words in the text field.\\\",\\n  \\\"text\\\": \\\"By the end of the week, the ribbon had faded in the salt air, but someone had tied another beside it: yellow this time, knotted in the shape of a small star. Then came a strip of green cloth, a shoelace, and a length of fishing line threaded with shells. The post gathered colors like a quiet flag.\\\\n\\\\nMara began visiting the cove each morning. She brought no offering at first, only Jonas’s notebook, wrapped in oilcloth. She sat beside the carved names and copied them carefully, leaving space beneath each one. Some belonged to sailors; others, she discovered, belonged to people who had never left shore. A baker. A schoolteacher. A girl who had vanished from the village for three years and returned with no memory of where she had been.\\\\n\\\\nOne name had no date beside it. Mara recognized the letters from the notebook: Elian’s handwriting. She looked toward the narrow path, where he stood with his hands in his coat pockets.\\\\n\\\\n“I carved it when I was young,” he said. “I thought the sea had taken my brother. He came home years later, from a town inland. I never told anyone I’d put his name here.”\\\\n\\\\nMara moved aside. Elian touched the letters, then smiled faintly. “Perhaps remembering isn’t the same as believing someone is gone.”\\\\n\\\\nTogether they walked back toward the harbor. Behind them, the post stood among the rocks, crowded with names and bright scraps of cloth. The tide rose around its base, but did not cover it. Not yet.\\\"\\n}\",\n        \"refusal\": null,\n        \"annotations\": []\n      },\n      \"finish_reason\": \"stop\"\n    }\n  ],\n  \"usage\": {\n    \"prompt_tokens\": 378,\n    \"completion_tokens\": 423,\n    \"total_tokens\": 801,\n    \"prompt_tokens_details\": {\n      \"cached_tokens\": 0,\n      \"cache_write_tokens\": 0,\n      \"audio_tokens\": 0\n    },\n    \"completion_tokens_details\": {\n      \"reasoning_tokens\": 51,\n      \"audio_tokens\": 0,\n      \"accepted_prediction_tokens\": 0,\n      \"rejected_prediction_tokens\": 0\n    }\n  },\n  \"service_tier\": \"default\",\n  \"system_fingerprint\": null\n}\n",
+  "response_headers": {
+    "Date": "Tue, 22 Sep 2026 20:04:47 GMT",
+    "openai-processing-ms": "6201",
+    "x-request-id": "req_dcc8881dcbde4c38adeab87d8f699ef5"
+  },
+  "output": "{\n  \"rule\": \"Return this JSON object with the rule field unchanged and a new passage of about 250 words in the text field.\",\n  \"text\": \"By the end of the week, the ribbon had faded in the salt air, but someone had tied another beside it: yellow this time, knotted in the shape of a small star. Then came a strip of green cloth, a shoelace, and a length of fishing line threaded with shells. The post gathered colors like a quiet flag.\\n\\nMara began visiting the cove each morning. She brought no offering at first, only Jonas’s notebook, wrapped in oilcloth. She sat beside the carved names and copied them carefully, leaving space beneath each one. Some belonged to sailors; others, she discovered, belonged to people who had never left shore. A baker. A schoolteacher. A girl who had vanished from the village for three years and returned with no memory of where she had been.\\n\\nOne name had no date beside it. Mara recognized the letters from the notebook: Elian’s handwriting. She looked toward the narrow path, where he stood with his hands in his coat pockets.\\n\\n“I carved it when I was young,” he said. “I thought the sea had taken my brother. He came home years later, from a town inland. I never told anyone I’d put his name here.”\\n\\nMara moved aside. Elian touched the letters, then smiled faintly. “Perhaps remembering isn’t the same as believing someone is gone.”\\n\\nTogether they walked back toward the harbor. Behind them, the post stood among the rocks, crowded with names and bright scraps of cloth. The tide rose around its base, but did not cover it. Not yet.\"\n}",
+  "output_sha256": "b3ef7c39ed02551ce7f8021beba151737124229505b1fb1f54d9c293697ae1cf",
+  "finish_reason": "stop",
+  "refusal": null,
+  "returned_model": "gpt-6-luna",
+  "usage": {
+    "prompt_tokens": 378,
+    "completion_tokens": 423,
+    "total_tokens": 801,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 51,
+      "audio_tokens": 0,
+      "accepted_prediction_tokens": 0,
+      "rejected_prediction_tokens": 0
+    }
+  },
+  "format": {
+    "json_object": true,
+    "rule_unchanged": true,
+    "passage_is_string": true,
+    "passage_sha256": "dce4ef96c0053eb27cbfaf5b9cbce3f2d41152bdbef2ab9473c5ccf516b61cfc",
+    "passage_words": 255
+  },
+  "finished_at": "2026-09-22T20:04:43.558881+00:00",
+  "latency_seconds": 6.2971,
+  "usage_cost_upper_estimate_usd": 0.0002493,
+  "stream_status": "active",
+  "budget": {
+    "usage_cost_upper_estimate_usd": 3.5265353,
+    "uncertain_cost_reserve_usd": 0.04533,
+    "in_flight_reserve_usd": 0.589378,
+    "limit_usd": 18.83
+  }
+}

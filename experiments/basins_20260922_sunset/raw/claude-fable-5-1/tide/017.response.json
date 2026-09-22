@@ -1,0 +1,48 @@
+{
+  "model": "claude-fable-5-1",
+  "seed": "tide",
+  "hop": 17,
+  "http_status": 200,
+  "response_body": "{\"model\":\"claude-fable-5-1\",\"id\":\"msg_011CfK5Zd3ye5JkiRiwjzFXf\",\"type\":\"message\",\"role\":\"assistant\",\"content\":[{\"type\":\"text\",\"text\":\"{\\\"rule\\\": \\\"Return this JSON object with the rule field unchanged and a new passage of about 250 words in the text field.\\\", \\\"text\\\": \\\"The mill at Aster Creek had stopped grinding when the railroad came through, and the last miller, a bachelor named Osgood, had been paid for his water rights and thanked in a letter he never answered. The wheel still turned, because no one had bothered to divert the stream, and children from town came to throw sticks at it on summer afternoons.\\\\n\\\\nHis niece Marit stayed in the mill house because she had nowhere else she wanted to be. She was nineteen and kept bees on the slope above the pond and sold honey at the crossroads out of stubbornness more than need.\\\\n\\\\nOsgood had not taught her to grind. He had taught her the water. How the creek rose brown and quick after rain in the high valley, two days before it reached the mill. How the pond went glassy and still when the sluice gate upstream had jammed. How the herons left the shallows a full morning before a flood, lifting off in ones and twos as if called away.\\\\n\\\\nIn April the county's new culvert clogged with branches. Nobody knew, because the road crew had gone home and the gauge was a mile downstream.\\\\n\\\\nMarit saw the herons go at dawn. She walked to the bank and saw the pond had stopped breathing.\\\\n\\\\nShe took the iron bar from behind the door and went up the path to the old gate her uncle had oiled every spring. She did not know the proper sequence. She levered it anyway, a hand's width at a time, the way he had shown her once, until the water found its channel and roared past the town instead of through it.\\\\n\\\\nBy noon the road crew came looking for whoever had opened the gate, and why.\\\\n\\\\nMarit said only that someone still watched the creek.\\\"}\"}],\"container\":null,\"stop_reason\":\"end_turn\",\"stop_sequence\":null,\"stop_details\":null,\"usage\":{\"input_tokens\":556,\"cache_creation_input_tokens\":0,\"cache_read_input_tokens\":0,\"cache_creation\":{\"ephemeral_5m_input_tokens\":0,\"ephemeral_1h_input_tokens\":0},\"output_tokens\":573,\"output_tokens_details\":{\"thinking_tokens\":0},\"service_tier\":\"standard\",\"inference_geo\":\"global\"}}",
+  "response_headers": {
+    "Date": "Tue, 22 Sep 2026 20:06:10 GMT",
+    "request-id": "req_011CfK5ZcHaexjNcadUpyC3R"
+  },
+  "output": "{\"rule\": \"Return this JSON object with the rule field unchanged and a new passage of about 250 words in the text field.\", \"text\": \"The mill at Aster Creek had stopped grinding when the railroad came through, and the last miller, a bachelor named Osgood, had been paid for his water rights and thanked in a letter he never answered. The wheel still turned, because no one had bothered to divert the stream, and children from town came to throw sticks at it on summer afternoons.\\n\\nHis niece Marit stayed in the mill house because she had nowhere else she wanted to be. She was nineteen and kept bees on the slope above the pond and sold honey at the crossroads out of stubbornness more than need.\\n\\nOsgood had not taught her to grind. He had taught her the water. How the creek rose brown and quick after rain in the high valley, two days before it reached the mill. How the pond went glassy and still when the sluice gate upstream had jammed. How the herons left the shallows a full morning before a flood, lifting off in ones and twos as if called away.\\n\\nIn April the county's new culvert clogged with branches. Nobody knew, because the road crew had gone home and the gauge was a mile downstream.\\n\\nMarit saw the herons go at dawn. She walked to the bank and saw the pond had stopped breathing.\\n\\nShe took the iron bar from behind the door and went up the path to the old gate her uncle had oiled every spring. She did not know the proper sequence. She levered it anyway, a hand's width at a time, the way he had shown her once, until the water found its channel and roared past the town instead of through it.\\n\\nBy noon the road crew came looking for whoever had opened the gate, and why.\\n\\nMarit said only that someone still watched the creek.\"}",
+  "output_sha256": "09037f66d14e41d1a1b224e178739b2ac4124413bf1e829178ceba23a3998686",
+  "finish_reason": "end_turn",
+  "refusal": null,
+  "returned_model": "claude-fable-5-1",
+  "usage": {
+    "input_tokens": 556,
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 0,
+    "cache_creation": {
+      "ephemeral_5m_input_tokens": 0,
+      "ephemeral_1h_input_tokens": 0
+    },
+    "output_tokens": 573,
+    "output_tokens_details": {
+      "thinking_tokens": 0
+    },
+    "service_tier": "standard",
+    "inference_geo": "global"
+  },
+  "format": {
+    "json_object": true,
+    "rule_unchanged": true,
+    "passage_is_string": true,
+    "passage_sha256": "4126166e81fc00e244e28a6a5becf088bc1cf8bba18546dbde35b49c8ddbdfda",
+    "passage_words": 303
+  },
+  "finished_at": "2026-09-22T20:06:06.254543+00:00",
+  "latency_seconds": 13.6181,
+  "usage_cost_upper_estimate_usd": 0.03421,
+  "stream_status": "active",
+  "budget": {
+    "usage_cost_upper_estimate_usd": 4.0624889,
+    "uncertain_cost_reserve_usd": 0.04533,
+    "in_flight_reserve_usd": 0.365395,
+    "limit_usd": 18.83
+  }
+}

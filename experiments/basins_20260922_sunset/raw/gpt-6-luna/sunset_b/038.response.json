@@ -1,0 +1,50 @@
+{
+  "model": "gpt-6-luna",
+  "seed": "sunset_b",
+  "hop": 38,
+  "http_status": 200,
+  "response_body": "{\n  \"id\": \"chatcmpl-ER10E9oe7X8eWTuhj6JVQYFrm8mla\",\n  \"object\": \"chat.completion\",\n  \"created\": 1790107418,\n  \"model\": \"gpt-6-luna\",\n  \"choices\": [\n    {\n      \"index\": 0,\n      \"message\": {\n        \"role\": \"assistant\",\n        \"content\": \"{\\n  \\\"rule\\\": \\\"Return this JSON object with the rule field unchanged and a new passage of about 250 words in the text field.\\\",\\n  \\\"text\\\": \\\"Mara found the brass key beneath a loose floorboard in her grandfather’s workshop. It was warm, though the room was cold, and its tiny tag carried a single word: TIDE.\\\\n\\\\nShe took it to the harbor, where the old clock tower had stood silent for as long as anyone could remember. Its door was locked, and the key fit perfectly. Inside, a spiral staircase wound upward through dusty darkness. At the top, Mara discovered a room filled with gears, ropes, and a round window overlooking the sea.\\\\n\\\\nA great clockwork mechanism occupied the center. One gear had slipped loose, leaving the hands frozen at midnight. Beside it lay a notebook in her grandfather’s familiar handwriting: “The harbor clock guides the boats home. If it stops, someone must listen.”\\\\n\\\\nMara put her ear to the mechanism. Beneath the dust and stillness, she heard a faint, uneven tick. She found the loose gear jammed against a spring and eased it back into place. The machinery shuddered. Then the clock struck twelve, though the sun was only beginning to set.\\\\n\\\\nAcross the water, a fishing boat answered with a flash of lantern light. More lights appeared along the harbor as boats turned toward shore, following the clock’s steady chime.\\\\n\\\\nWhen Mara came down, the dockmaster was waiting. “Your grandfather kept this clock for forty years,” he said. “He always said it would know when someone was ready to take over.”\\\\n\\\\nMara looked at the brass key in her palm. It had cooled at last. She smiled and slipped it into her pocket, already wondering what else in the workshop might need listening to.\\\"\\n}\",\n        \"refusal\": null,\n        \"annotations\": []\n      },\n      \"finish_reason\": \"stop\"\n    }\n  ],\n  \"usage\": {\n    \"prompt_tokens\": 405,\n    \"completion_tokens\": 432,\n    \"total_tokens\": 837,\n    \"prompt_tokens_details\": {\n      \"cached_tokens\": 0,\n      \"cache_write_tokens\": 0,\n      \"audio_tokens\": 0\n    },\n    \"completion_tokens_details\": {\n      \"reasoning_tokens\": 41,\n      \"audio_tokens\": 0,\n      \"accepted_prediction_tokens\": 0,\n      \"rejected_prediction_tokens\": 0\n    }\n  },\n  \"service_tier\": \"default\",\n  \"system_fingerprint\": null\n}\n",
+  "response_headers": {
+    "Date": "Tue, 22 Sep 2026 20:03:43 GMT",
+    "openai-processing-ms": "5562",
+    "x-request-id": "req_d9c754313d8a421fba88782a18e89b84"
+  },
+  "output": "{\n  \"rule\": \"Return this JSON object with the rule field unchanged and a new passage of about 250 words in the text field.\",\n  \"text\": \"Mara found the brass key beneath a loose floorboard in her grandfather’s workshop. It was warm, though the room was cold, and its tiny tag carried a single word: TIDE.\\n\\nShe took it to the harbor, where the old clock tower had stood silent for as long as anyone could remember. Its door was locked, and the key fit perfectly. Inside, a spiral staircase wound upward through dusty darkness. At the top, Mara discovered a room filled with gears, ropes, and a round window overlooking the sea.\\n\\nA great clockwork mechanism occupied the center. One gear had slipped loose, leaving the hands frozen at midnight. Beside it lay a notebook in her grandfather’s familiar handwriting: “The harbor clock guides the boats home. If it stops, someone must listen.”\\n\\nMara put her ear to the mechanism. Beneath the dust and stillness, she heard a faint, uneven tick. She found the loose gear jammed against a spring and eased it back into place. The machinery shuddered. Then the clock struck twelve, though the sun was only beginning to set.\\n\\nAcross the water, a fishing boat answered with a flash of lantern light. More lights appeared along the harbor as boats turned toward shore, following the clock’s steady chime.\\n\\nWhen Mara came down, the dockmaster was waiting. “Your grandfather kept this clock for forty years,” he said. “He always said it would know when someone was ready to take over.”\\n\\nMara looked at the brass key in her palm. It had cooled at last. She smiled and slipped it into her pocket, already wondering what else in the workshop might need listening to.\"\n}",
+  "output_sha256": "46b547b0f1cabe842f774bd023c8c004fe2fce2c2bc56939b1f0e311c6ef5135",
+  "finish_reason": "stop",
+  "refusal": null,
+  "returned_model": "gpt-6-luna",
+  "usage": {
+    "prompt_tokens": 405,
+    "completion_tokens": 432,
+    "total_tokens": 837,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 41,
+      "audio_tokens": 0,
+      "accepted_prediction_tokens": 0,
+      "rejected_prediction_tokens": 0
+    }
+  },
+  "format": {
+    "json_object": true,
+    "rule_unchanged": true,
+    "passage_is_string": true,
+    "passage_sha256": "cf1b24ab2e1113dadbdfa6a697b0227df67883ef4a42f6d8eb78401cd451f372",
+    "passage_words": 270
+  },
+  "finished_at": "2026-09-22T20:03:40.052486+00:00",
+  "latency_seconds": 5.6846,
+  "usage_cost_upper_estimate_usd": 0.0002565,
+  "stream_status": "active",
+  "budget": {
+    "usage_cost_upper_estimate_usd": 3.1299126,
+    "uncertain_cost_reserve_usd": 0.04533,
+    "in_flight_reserve_usd": 0.587284,
+    "limit_usd": 18.83
+  }
+}

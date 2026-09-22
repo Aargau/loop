@@ -1,0 +1,50 @@
+{
+  "model": "gpt-6-sol",
+  "seed": "tide_a",
+  "hop": 5,
+  "http_status": 200,
+  "response_body": "{\n  \"id\": \"chatcmpl-ER0pBDE9vD4lw4lxMjPqB7mbPFKNL\",\n  \"object\": \"chat.completion\",\n  \"created\": 1790106733,\n  \"model\": \"gpt-6-sol\",\n  \"choices\": [\n    {\n      \"index\": 0,\n      \"message\": {\n        \"role\": \"assistant\",\n        \"content\": \"{\\n  \\\"rule\\\": \\\"Return this JSON object with the rule field unchanged and a new passage of about 250 words in the text field.\\\",\\n  \\\"text\\\": \\\"On the first day of spring, Mara found a blue envelope beneath her door. Inside was a map of her town with one building marked in red: the library, which had burned down before she was born.\\\\n\\\\nAt dusk, she followed the map to the empty lot. Brick walls stood where the weeds had been that morning. Through the windows, she saw rows of books and a man asleep at a desk.\\\\n\\\\nMara pushed open the door. The man woke and handed her a card bearing her name.\\\\n\\\\n“You may borrow one,” he said.\\\\n\\\\nEvery spine on the nearest shelf carried a date instead of a title. Mara found tomorrow’s date and opened the book. Its first page described her visit to the library. On the next, her brother slipped from the riverbank and struck his head on a stone.\\\\n\\\\nShe shut the book. “Can I change this?”\\\\n\\\\nThe librarian glanced at the clock. “You have until we close.”\\\\n\\\\nMara ran home and found her brother packing his fishing rod. She offered to help mend the garden fence instead. He complained, but stayed. They worked until nightfall, when rain sent them indoors.\\\\n\\\\nThe next morning, Mara went to the river. Its banks were slick, and the stone lay just below the water. She carried it up the hill and left it in her garden.\\\\n\\\\nThat evening, the library lot was empty again. A blue envelope waited at her door. Inside was a due-date slip, stamped with tomorrow’s date, and a request to return the book.\\\"\\n}\",\n        \"refusal\": null,\n        \"annotations\": []\n      },\n      \"finish_reason\": \"stop\"\n    }\n  ],\n  \"usage\": {\n    \"prompt_tokens\": 392,\n    \"completion_tokens\": 392,\n    \"total_tokens\": 784,\n    \"prompt_tokens_details\": {\n      \"cached_tokens\": 0,\n      \"cache_write_tokens\": 0,\n      \"audio_tokens\": 0\n    },\n    \"completion_tokens_details\": {\n      \"reasoning_tokens\": 24,\n      \"audio_tokens\": 0,\n      \"accepted_prediction_tokens\": 0,\n      \"rejected_prediction_tokens\": 0\n    }\n  },\n  \"service_tier\": \"default\",\n  \"system_fingerprint\": null\n}\n",
+  "response_headers": {
+    "Date": "Tue, 22 Sep 2026 19:52:18 GMT",
+    "openai-processing-ms": "5101",
+    "x-request-id": "req_9e251cf1de064bf99baf8407275f80c8"
+  },
+  "output": "{\n  \"rule\": \"Return this JSON object with the rule field unchanged and a new passage of about 250 words in the text field.\",\n  \"text\": \"On the first day of spring, Mara found a blue envelope beneath her door. Inside was a map of her town with one building marked in red: the library, which had burned down before she was born.\\n\\nAt dusk, she followed the map to the empty lot. Brick walls stood where the weeds had been that morning. Through the windows, she saw rows of books and a man asleep at a desk.\\n\\nMara pushed open the door. The man woke and handed her a card bearing her name.\\n\\n“You may borrow one,” he said.\\n\\nEvery spine on the nearest shelf carried a date instead of a title. Mara found tomorrow’s date and opened the book. Its first page described her visit to the library. On the next, her brother slipped from the riverbank and struck his head on a stone.\\n\\nShe shut the book. “Can I change this?”\\n\\nThe librarian glanced at the clock. “You have until we close.”\\n\\nMara ran home and found her brother packing his fishing rod. She offered to help mend the garden fence instead. He complained, but stayed. They worked until nightfall, when rain sent them indoors.\\n\\nThe next morning, Mara went to the river. Its banks were slick, and the stone lay just below the water. She carried it up the hill and left it in her garden.\\n\\nThat evening, the library lot was empty again. A blue envelope waited at her door. Inside was a due-date slip, stamped with tomorrow’s date, and a request to return the book.\"\n}",
+  "output_sha256": "48a4573634dd2d7380b3ceea55b4a2c6e5721b1c5c1ff51d362d952e04b4a807",
+  "finish_reason": "stop",
+  "refusal": null,
+  "returned_model": "gpt-6-sol",
+  "usage": {
+    "prompt_tokens": 392,
+    "completion_tokens": 392,
+    "total_tokens": 784,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 24,
+      "audio_tokens": 0,
+      "accepted_prediction_tokens": 0,
+      "rejected_prediction_tokens": 0
+    }
+  },
+  "format": {
+    "json_object": true,
+    "rule_unchanged": true,
+    "passage_is_string": true,
+    "passage_sha256": "b16fcb97d47ae403467bdeff735b011e0fdc2ec1fd8dd192b3eb8aa476ee3a27",
+    "passage_words": 255
+  },
+  "finished_at": "2026-09-22T19:52:14.832731+00:00",
+  "latency_seconds": 5.1899,
+  "usage_cost_upper_estimate_usd": 0.004704,
+  "stream_status": "active",
+  "budget": {
+    "usage_cost_upper_estimate_usd": 0.4204797,
+    "uncertain_cost_reserve_usd": 0.0,
+    "in_flight_reserve_usd": 0.5468754,
+    "limit_usd": 20
+  }
+}

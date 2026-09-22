@@ -1,0 +1,50 @@
+{
+  "model": "gpt-6-luna",
+  "seed": "sunset_a",
+  "hop": 11,
+  "http_status": 200,
+  "response_body": "{\n  \"id\": \"chatcmpl-ER0uMDrL0kZlxdFmjMzX8xHcB7G8f\",\n  \"object\": \"chat.completion\",\n  \"created\": 1790107054,\n  \"model\": \"gpt-6-luna\",\n  \"choices\": [\n    {\n      \"index\": 0,\n      \"message\": {\n        \"role\": \"assistant\",\n        \"content\": \"{\\\"rule\\\":\\\"Return this JSON object with the rule field unchanged and a new passage of about 250 words in the text field.\\\",\\\"text\\\":\\\"At the edge of Marlowe, where the last houses gave way to orchards, stood a clock tower that had not kept time in decades. Its hands were fixed at eleven minutes past four, and no one could remember whether they had stopped during a storm or simply grown tired of turning.\\\\n\\\\nEvery Saturday, Anika climbed the tower’s narrow stairs with a basket of tools. She had inherited the job from her grandfather, though he had never managed to repair the clock either. Still, she liked the hush at the top, where she could see the whole town tucked between the hills.\\\\n\\\\nOne afternoon, a boy named Felix followed her up. He carried a small brass gear he’d found in his mother’s garden.\\\\n\\\\n“Maybe it belongs in there,” he said.\\\\n\\\\nAnika examined it. The gear was worn and too small, but she thanked him and set it beside her tools. Then she showed him the clock’s maze of wheels and springs. Together, they cleaned dust from the gears and tightened a loose screw. Nothing moved.\\\\n\\\\nFelix frowned. “Does that mean we failed?”\\\\n\\\\nBefore Anika could answer, a bell rang somewhere below. The sound rose through the tower, startling a flock of pigeons from the roof. Anika laughed. The clock itself was still silent, but the town’s church bells had just announced the hour.\\\\n\\\\nThe next week, Felix returned with a sketch of a new gear he planned to make. Anika pinned it to the tower wall. The old clock might never tell the time again, she thought, but it had given them a reason to keep showing up—and a place to begin making something new.\\\"}\",\n        \"refusal\": null,\n        \"annotations\": []\n      },\n      \"finish_reason\": \"stop\"\n    }\n  ],\n  \"usage\": {\n    \"prompt_tokens\": 406,\n    \"completion_tokens\": 468,\n    \"total_tokens\": 874,\n    \"prompt_tokens_details\": {\n      \"cached_tokens\": 0,\n      \"cache_write_tokens\": 0,\n      \"audio_tokens\": 0\n    },\n    \"completion_tokens_details\": {\n      \"reasoning_tokens\": 84,\n      \"audio_tokens\": 0,\n      \"accepted_prediction_tokens\": 0,\n      \"rejected_prediction_tokens\": 0\n    }\n  },\n  \"service_tier\": \"default\",\n  \"system_fingerprint\": null\n}\n",
+  "response_headers": {
+    "Date": "Tue, 22 Sep 2026 19:57:39 GMT",
+    "openai-processing-ms": "5172",
+    "x-request-id": "req_18cdb23f6db646ed8ebdc023dc57403e"
+  },
+  "output": "{\"rule\":\"Return this JSON object with the rule field unchanged and a new passage of about 250 words in the text field.\",\"text\":\"At the edge of Marlowe, where the last houses gave way to orchards, stood a clock tower that had not kept time in decades. Its hands were fixed at eleven minutes past four, and no one could remember whether they had stopped during a storm or simply grown tired of turning.\\n\\nEvery Saturday, Anika climbed the tower’s narrow stairs with a basket of tools. She had inherited the job from her grandfather, though he had never managed to repair the clock either. Still, she liked the hush at the top, where she could see the whole town tucked between the hills.\\n\\nOne afternoon, a boy named Felix followed her up. He carried a small brass gear he’d found in his mother’s garden.\\n\\n“Maybe it belongs in there,” he said.\\n\\nAnika examined it. The gear was worn and too small, but she thanked him and set it beside her tools. Then she showed him the clock’s maze of wheels and springs. Together, they cleaned dust from the gears and tightened a loose screw. Nothing moved.\\n\\nFelix frowned. “Does that mean we failed?”\\n\\nBefore Anika could answer, a bell rang somewhere below. The sound rose through the tower, startling a flock of pigeons from the roof. Anika laughed. The clock itself was still silent, but the town’s church bells had just announced the hour.\\n\\nThe next week, Felix returned with a sketch of a new gear he planned to make. Anika pinned it to the tower wall. The old clock might never tell the time again, she thought, but it had given them a reason to keep showing up—and a place to begin making something new.\"}",
+  "output_sha256": "4fba702496672063a0fc618a36d082e2f977492527d25cc156e681b374af52bd",
+  "finish_reason": "stop",
+  "refusal": null,
+  "returned_model": "gpt-6-luna",
+  "usage": {
+    "prompt_tokens": 406,
+    "completion_tokens": 468,
+    "total_tokens": 874,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 84,
+      "audio_tokens": 0,
+      "accepted_prediction_tokens": 0,
+      "rejected_prediction_tokens": 0
+    }
+  },
+  "format": {
+    "json_object": true,
+    "rule_unchanged": true,
+    "passage_is_string": true,
+    "passage_sha256": "87aa96d84d357808f4bfad7247086da447ced136bb767e8c4a00b2a415ed1457",
+    "passage_words": 274
+  },
+  "finished_at": "2026-09-22T19:57:35.987067+00:00",
+  "latency_seconds": 5.2847,
+  "usage_cost_upper_estimate_usd": 0.0002746,
+  "stream_status": "active",
+  "budget": {
+    "usage_cost_upper_estimate_usd": 0.831757,
+    "uncertain_cost_reserve_usd": 0.0,
+    "in_flight_reserve_usd": 0.588044,
+    "limit_usd": 18.83
+  }
+}

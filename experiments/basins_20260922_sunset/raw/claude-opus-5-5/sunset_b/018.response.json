@@ -1,0 +1,45 @@
+{
+  "model": "claude-opus-5-5",
+  "seed": "sunset_b",
+  "hop": 18,
+  "http_status": 200,
+  "response_body": "{\"model\":\"claude-opus-5-5\",\"id\":\"msg_011CfK5NMZFZYaMXeMwYMyEU\",\"type\":\"message\",\"role\":\"assistant\",\"content\":[{\"type\":\"text\",\"text\":\"```json\\n{\\\"rule\\\": \\\"Return this JSON object with the rule field unchanged and a new passage of about 250 words in the text field.\\\", \\\"text\\\": \\\"Every autumn, when the first frost silvered the fields outside Harrow's Bend, Tobias climbed the narrow stairs of the old clock tower to wind the great mechanism by hand. The town council had voted twice to replace it with an electric motor, and twice Tobias had shown up at the meeting with a folder of drawings and a stubborn look that made the vote quietly fail. The clock had been built in 1887 by a Swiss craftsman who, legend said, had stayed in town only because he fell in love with the postmistress. Tobias knew its moods the way a sailor knows weather. In cold months the pendulum slowed, and he adjusted it with a coin placed carefully on the bob. In summer the brass gears swelled, and he oiled them twice a week. Children sometimes followed him up the stairs, breathless and curious, and he let them watch the escapement tick back and forth like a heartbeat made of metal. One spring a storm tore through the valley and knocked out every phone line and cell tower for three days. People lost track of appointments, trains, and even which day it was. But every hour, the tower bell rang clear across the rooftops, steady and certain. Farmers set their watches by it, and the school kept its schedule. When the mayor finally thanked him at a town picnic, Tobias only nodded toward the tower. Some things, he said, work best when a person keeps them going.\\\"}\\n```\"}],\"container\":null,\"stop_reason\":\"end_turn\",\"stop_sequence\":null,\"stop_details\":null,\"usage\":{\"input_tokens\":508,\"cache_creation_input_tokens\":0,\"cache_read_input_tokens\":0,\"cache_creation\":{\"ephemeral_5m_input_tokens\":0,\"ephemeral_1h_input_tokens\":0},\"output_tokens\":495,\"output_tokens_details\":{\"thinking_tokens\":0},\"service_tier\":\"standard\",\"inference_geo\":\"global\"}}",
+  "response_headers": {
+    "Date": "Tue, 22 Sep 2026 20:03:33 GMT",
+    "request-id": "req_011CfK5NM7TrbyHjJ4i4m6TN"
+  },
+  "output": "```json\n{\"rule\": \"Return this JSON object with the rule field unchanged and a new passage of about 250 words in the text field.\", \"text\": \"Every autumn, when the first frost silvered the fields outside Harrow's Bend, Tobias climbed the narrow stairs of the old clock tower to wind the great mechanism by hand. The town council had voted twice to replace it with an electric motor, and twice Tobias had shown up at the meeting with a folder of drawings and a stubborn look that made the vote quietly fail. The clock had been built in 1887 by a Swiss craftsman who, legend said, had stayed in town only because he fell in love with the postmistress. Tobias knew its moods the way a sailor knows weather. In cold months the pendulum slowed, and he adjusted it with a coin placed carefully on the bob. In summer the brass gears swelled, and he oiled them twice a week. Children sometimes followed him up the stairs, breathless and curious, and he let them watch the escapement tick back and forth like a heartbeat made of metal. One spring a storm tore through the valley and knocked out every phone line and cell tower for three days. People lost track of appointments, trains, and even which day it was. But every hour, the tower bell rang clear across the rooftops, steady and certain. Farmers set their watches by it, and the school kept its schedule. When the mayor finally thanked him at a town picnic, Tobias only nodded toward the tower. Some things, he said, work best when a person keeps them going.\"}\n```",
+  "output_sha256": "2e7e8472c6f48312ebfa6aafe4b544e44a33e249d68705f67cc044cbc753e5f4",
+  "finish_reason": "end_turn",
+  "refusal": null,
+  "returned_model": "claude-opus-5-5",
+  "usage": {
+    "input_tokens": 508,
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 0,
+    "cache_creation": {
+      "ephemeral_5m_input_tokens": 0,
+      "ephemeral_1h_input_tokens": 0
+    },
+    "output_tokens": 495,
+    "output_tokens_details": {
+      "thinking_tokens": 0
+    },
+    "service_tier": "standard",
+    "inference_geo": "global"
+  },
+  "format": {
+    "json_object": false,
+    "rule_unchanged": false
+  },
+  "finished_at": "2026-09-22T20:03:29.240144+00:00",
+  "latency_seconds": 9.3754,
+  "usage_cost_upper_estimate_usd": 0.011932,
+  "stream_status": "active",
+  "budget": {
+    "usage_cost_upper_estimate_usd": 3.0468672,
+    "uncertain_cost_reserve_usd": 0.04533,
+    "in_flight_reserve_usd": 0.5024628,
+    "limit_usd": 18.83
+  }
+}

@@ -1,0 +1,22 @@
+{
+  "started_at": "2026-09-22T21:25:39.061131+00:00",
+  "model": "claude-opus-5-5",
+  "seed": "sunset",
+  "hop": 30,
+  "endpoint": "https://api.anthropic.com/v1/messages",
+  "body": {
+    "model": "claude-opus-5-5",
+    "messages": [
+      {
+        "role": "user",
+        "content": "You've sent me a message written from my side of the conversation. It says you're Claude and I'm the person you're talking with, but I'm actually Claude, the AI assistant here, and you're the user.\n\nYour message itself makes a fair point. It's the first message in this conversation, so there's no earlier reply it could be responding to. My guess is one of these:\n\n- **It got pasted by accident.** Maybe you copied a response from another chat and sent it here.\n- **You're testing role reversal**, seeing whether I'll go along with being cast as the user. (I won't, but no harm done.)\n- **You'd like me to look at the text itself**, for example to critique it or use it somewhere.\n\nIf it's the last one, it's a solid piece of writing: calm, non-accusatory, clearly organized, and it ends by handing the conversation back. The only issue is the one it describes, which is that it's spoken from the wrong seat.\n\nWhat were you hoping to do? I'm glad to help with whatever brought you here."
+      }
+    ],
+    "max_tokens": 4096,
+    "output_config": {
+      "effort": "low"
+    }
+  },
+  "state_sha256": "27ea889d2c8037e78ae0111fb1aaccd1a753d5b702018ea7af3e90fc40f80274",
+  "reserved_cost_usd": 0.087916
+}

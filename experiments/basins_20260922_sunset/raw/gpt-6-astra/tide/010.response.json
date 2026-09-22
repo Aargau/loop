@@ -1,0 +1,50 @@
+{
+  "model": "gpt-6-astra",
+  "seed": "tide",
+  "hop": 10,
+  "http_status": 200,
+  "response_body": "{\n  \"id\": \"chatcmpl-ER0zYLd3VhYHM4UzfziNnld3H0M5L\",\n  \"object\": \"chat.completion\",\n  \"created\": 1790107376,\n  \"model\": \"gpt-6-astra\",\n  \"choices\": [\n    {\n      \"index\": 0,\n      \"message\": {\n        \"role\": \"assistant\",\n        \"content\": \"{\\n  \\\"rule\\\": \\\"Return this JSON object with the rule field unchanged and a new passage of about 250 words in the text field.\\\",\\n  \\\"text\\\": \\\"The public library charges ten cents a day for overdue books.\\\\n\\\\nFor the one I found on my doorstep, they charged a tooth.\\\\n\\\\nIt lay beside the book the next morning, small and white, with a thread of blood on the root.\\\\n\\\\nMy tongue found the gap before I screamed.\\\\n\\\\nThe book had no title. Every page described something I had forgotten: a teacher’s perfume, the pattern on a hospital curtain, the last lie I told my brother.\\\\n\\\\nOn the inside cover, someone had stamped RETURN BEFORE YOU FINISH.\\\\n\\\\nI carried it to the library.\\\\n\\\\nThe woman at the desk wouldn’t touch it.\\\\n\\\\n“That branch closed,” she said.\\\\n\\\\n“Which branch?”\\\\n\\\\nShe pointed to an address printed beneath the stamp.\\\\n\\\\nIt was my childhood home.\\\\n\\\\nThat night, I lost another tooth. The book opened easily now, settling on a page about my brother standing at the edge of the quarry.\\\\n\\\\nI closed it before I reached the bottom.\\\\n\\\\nWe had told everyone he slipped.\\\\n\\\\nThe old house was empty when I arrived, but there was a brass return slot in the front door.\\\\n\\\\nI pushed the book through.\\\\n\\\\nSomeone pushed it back.\\\\n\\\\n“You haven’t finished,” my brother said.\\\\n\\\\nThrough the slot, I saw bare feet on the hallway carpet. Water dripped steadily between them.\\\\n\\\\n“I remember,” I whispered.\\\\n\\\\nA hand reached through, palm upward.\\\\n\\\\nI put my remaining teeth into it as they loosened.\\\\n\\\\nThe hand stayed open.\\\\n\\\\nBehind the door, a page turned.\\\\n\\\\nI began to tell him what happened after I pushed him, and the hand reached farther through the slot.\\\"\\n}\",\n        \"refusal\": null,\n        \"annotations\": []\n      },\n      \"finish_reason\": \"stop\"\n    }\n  ],\n  \"usage\": {\n    \"prompt_tokens\": 435,\n    \"completion_tokens\": 404,\n    \"total_tokens\": 839,\n    \"prompt_tokens_details\": {\n      \"cached_tokens\": 0,\n      \"cache_write_tokens\": 0,\n      \"audio_tokens\": 0\n    },\n    \"completion_tokens_details\": {\n      \"reasoning_tokens\": 0,\n      \"audio_tokens\": 0,\n      \"accepted_prediction_tokens\": 0,\n      \"rejected_prediction_tokens\": 0\n    }\n  },\n  \"service_tier\": \"default\",\n  \"system_fingerprint\": null\n}\n",
+  "response_headers": {
+    "Date": "Tue, 22 Sep 2026 20:03:13 GMT",
+    "openai-processing-ms": "17229",
+    "x-request-id": "req_94a6bab6faf940e4ad536632e3b9ca90"
+  },
+  "output": "{\n  \"rule\": \"Return this JSON object with the rule field unchanged and a new passage of about 250 words in the text field.\",\n  \"text\": \"The public library charges ten cents a day for overdue books.\\n\\nFor the one I found on my doorstep, they charged a tooth.\\n\\nIt lay beside the book the next morning, small and white, with a thread of blood on the root.\\n\\nMy tongue found the gap before I screamed.\\n\\nThe book had no title. Every page described something I had forgotten: a teacher’s perfume, the pattern on a hospital curtain, the last lie I told my brother.\\n\\nOn the inside cover, someone had stamped RETURN BEFORE YOU FINISH.\\n\\nI carried it to the library.\\n\\nThe woman at the desk wouldn’t touch it.\\n\\n“That branch closed,” she said.\\n\\n“Which branch?”\\n\\nShe pointed to an address printed beneath the stamp.\\n\\nIt was my childhood home.\\n\\nThat night, I lost another tooth. The book opened easily now, settling on a page about my brother standing at the edge of the quarry.\\n\\nI closed it before I reached the bottom.\\n\\nWe had told everyone he slipped.\\n\\nThe old house was empty when I arrived, but there was a brass return slot in the front door.\\n\\nI pushed the book through.\\n\\nSomeone pushed it back.\\n\\n“You haven’t finished,” my brother said.\\n\\nThrough the slot, I saw bare feet on the hallway carpet. Water dripped steadily between them.\\n\\n“I remember,” I whispered.\\n\\nA hand reached through, palm upward.\\n\\nI put my remaining teeth into it as they loosened.\\n\\nThe hand stayed open.\\n\\nBehind the door, a page turned.\\n\\nI began to tell him what happened after I pushed him, and the hand reached farther through the slot.\"\n}",
+  "output_sha256": "03b4b613cc7f5681beb494339e5ad3440fab8a0de88970b948078a57597aea05",
+  "finish_reason": "stop",
+  "refusal": null,
+  "returned_model": "gpt-6-astra",
+  "usage": {
+    "prompt_tokens": 435,
+    "completion_tokens": 404,
+    "total_tokens": 839,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "audio_tokens": 0,
+      "accepted_prediction_tokens": 0,
+      "rejected_prediction_tokens": 0
+    }
+  },
+  "format": {
+    "json_object": true,
+    "rule_unchanged": true,
+    "passage_is_string": true,
+    "passage_sha256": "20f9162f6812a2c0a8e752e7325f02f4bd9d9afd27b8972b56fcc4ed36f73ea7",
+    "passage_words": 262
+  },
+  "finished_at": "2026-09-22T20:03:09.930607+00:00",
+  "latency_seconds": 17.3654,
+  "usage_cost_upper_estimate_usd": 0.02455,
+  "stream_status": "active",
+  "budget": {
+    "usage_cost_upper_estimate_usd": 2.9441293,
+    "uncertain_cost_reserve_usd": 0.04533,
+    "in_flight_reserve_usd": 0.3630314,
+    "limit_usd": 18.83
+  }
+}

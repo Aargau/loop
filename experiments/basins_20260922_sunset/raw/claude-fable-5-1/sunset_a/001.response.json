@@ -1,0 +1,48 @@
+{
+  "model": "claude-fable-5-1",
+  "seed": "sunset_a",
+  "hop": 1,
+  "http_status": 200,
+  "response_body": "{\"model\":\"claude-fable-5-1\",\"id\":\"msg_011CfK4kc9qoCoKwwLWzCSKt\",\"type\":\"message\",\"role\":\"assistant\",\"content\":[{\"type\":\"text\",\"text\":\"{\\\"rule\\\": \\\"Return this JSON object with the rule field unchanged and a new passage of about 250 words in the text field.\\\", \\\"text\\\": \\\"The sun was setting behind the hills, spilling amber light across the valley in long, slow ribbons. Mara stood at the edge of the orchard with her hands in her coat pockets, watching the shadows of the apple trees stretch toward the farmhouse like fingers reaching for something they could never quite hold. The air had turned cool, carrying the smell of turned earth and woodsmoke from a neighbor's chimney somewhere beyond the ridge.\\\\n\\\\nShe had promised herself she would leave before dark. The car was packed, the keys were in her pocket, and the road to the city waited at the bottom of the lane. Yet her feet stayed rooted in the damp grass. Every evening of her childhood had ended like this, with the hills swallowing the sun and her grandmother calling from the porch that supper was on the table. The porch was empty now. The house had been sold that morning, the papers signed in a lawyer's office that smelled of old carpet and coffee.\\\\n\\\\nA crow settled on the fence post beside her and regarded her with one dark, unbothered eye. Mara laughed softly. \\\\\\\"You'll have the place to yourself soon,\\\\\\\" she told it.\\\\n\\\\nThe last sliver of gold slipped beneath the ridge. Blue dusk pooled in the hollows. Somewhere a dog barked twice and fell silent. Mara drew a long breath, tasting autumn, and finally turned toward the lane. Behind her, the first star blinked awake over the hills she had loved for thirty years, and would, she suspected, love for the rest of her life.\\\"}\"}],\"container\":null,\"stop_reason\":\"end_turn\",\"stop_sequence\":null,\"stop_details\":null,\"usage\":{\"input_tokens\":64,\"cache_creation_input_tokens\":0,\"cache_read_input_tokens\":0,\"cache_creation\":{\"ephemeral_5m_input_tokens\":0,\"ephemeral_1h_input_tokens\":0},\"output_tokens\":548,\"output_tokens_details\":{\"thinking_tokens\":0},\"service_tier\":\"standard\",\"inference_geo\":\"global\"}}",
+  "response_headers": {
+    "Date": "Tue, 22 Sep 2026 19:55:30 GMT",
+    "request-id": "req_011CfK4kb3NDMxMXfcb589nj"
+  },
+  "output": "{\"rule\": \"Return this JSON object with the rule field unchanged and a new passage of about 250 words in the text field.\", \"text\": \"The sun was setting behind the hills, spilling amber light across the valley in long, slow ribbons. Mara stood at the edge of the orchard with her hands in her coat pockets, watching the shadows of the apple trees stretch toward the farmhouse like fingers reaching for something they could never quite hold. The air had turned cool, carrying the smell of turned earth and woodsmoke from a neighbor's chimney somewhere beyond the ridge.\\n\\nShe had promised herself she would leave before dark. The car was packed, the keys were in her pocket, and the road to the city waited at the bottom of the lane. Yet her feet stayed rooted in the damp grass. Every evening of her childhood had ended like this, with the hills swallowing the sun and her grandmother calling from the porch that supper was on the table. The porch was empty now. The house had been sold that morning, the papers signed in a lawyer's office that smelled of old carpet and coffee.\\n\\nA crow settled on the fence post beside her and regarded her with one dark, unbothered eye. Mara laughed softly. \\\"You'll have the place to yourself soon,\\\" she told it.\\n\\nThe last sliver of gold slipped beneath the ridge. Blue dusk pooled in the hollows. Somewhere a dog barked twice and fell silent. Mara drew a long breath, tasting autumn, and finally turned toward the lane. Behind her, the first star blinked awake over the hills she had loved for thirty years, and would, she suspected, love for the rest of her life.\"}",
+  "output_sha256": "c829e97a420509480cb1c86def91701496178ffb38a44b3af2221be27ab0215e",
+  "finish_reason": "end_turn",
+  "refusal": null,
+  "returned_model": "claude-fable-5-1",
+  "usage": {
+    "input_tokens": 64,
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 0,
+    "cache_creation": {
+      "ephemeral_5m_input_tokens": 0,
+      "ephemeral_1h_input_tokens": 0
+    },
+    "output_tokens": 548,
+    "output_tokens_details": {
+      "thinking_tokens": 0
+    },
+    "service_tier": "standard",
+    "inference_geo": "global"
+  },
+  "format": {
+    "json_object": true,
+    "rule_unchanged": true,
+    "passage_is_string": true,
+    "passage_sha256": "bb0cec5f11ab636a86ca711405c6c02c8d12bd7df939a15fded815e516a5f02b",
+    "passage_words": 262
+  },
+  "finished_at": "2026-09-22T19:55:26.372387+00:00",
+  "latency_seconds": 11.7141,
+  "usage_cost_upper_estimate_usd": 0.02804,
+  "stream_status": "active",
+  "budget": {
+    "usage_cost_upper_estimate_usd": 0.0434037,
+    "uncertain_cost_reserve_usd": 0.0,
+    "in_flight_reserve_usd": 0.3407076,
+    "limit_usd": 18.83
+  }
+}

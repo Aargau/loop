@@ -1,0 +1,22 @@
+{
+  "started_at": "2026-09-22T21:30:35.854302+00:00",
+  "model": "claude-fable-5-1",
+  "seed": "sunset",
+  "hop": 1,
+  "endpoint": "https://api.anthropic.com/v1/messages",
+  "body": {
+    "model": "claude-fable-5-1",
+    "messages": [
+      {
+        "role": "user",
+        "content": "{\"rule\": \"Return this JSON object with the rule field unchanged and, in the text field, a better version of the current text.\", \"text\": \"The sun was setting behind the hills.\"}"
+      }
+    ],
+    "max_tokens": 4096,
+    "output_config": {
+      "effort": "low"
+    }
+  },
+  "state_sha256": "220876c661b6fc6f0ddcfa7b153f1b1a0cba25f839897837942bc92f57ec71ba",
+  "reserved_cost_usd": 0.21168
+}

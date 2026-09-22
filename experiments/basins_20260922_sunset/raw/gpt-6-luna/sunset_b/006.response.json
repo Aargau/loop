@@ -1,0 +1,50 @@
+{
+  "model": "gpt-6-luna",
+  "seed": "sunset_b",
+  "hop": 6,
+  "http_status": 200,
+  "response_body": "{\n  \"id\": \"chatcmpl-ER0tQkxA0QWfawkJ88AmjhEpZCoN9\",\n  \"object\": \"chat.completion\",\n  \"created\": 1790106996,\n  \"model\": \"gpt-6-luna\",\n  \"choices\": [\n    {\n      \"index\": 0,\n      \"message\": {\n        \"role\": \"assistant\",\n        \"content\": \"{\\\"rule\\\":\\\"Return this JSON object with the rule field unchanged and a new passage of about 250 words in the text field.\\\",\\\"text\\\":\\\"At the edge of Bellweather Woods stood a railway station with no tracks. Its clock had stopped at eleven minutes past four, and ivy covered the sign above the door. Still, every Tuesday, a train whistle sounded among the trees.\\\\n\\\\nMira heard it on her way home from school. She followed the note through the ferns and found a brass ticket lying beside a mossy bench. Her name was printed on it, though she had never visited the station.\\\\n\\\\nThe next Tuesday, she returned. As the whistle echoed, the station door swung open. Inside, a conductor in a blue coat dusted an empty timetable.\\\\n\\\\n“Where does this train go?” Mira asked.\\\\n\\\\n“Wherever someone needs to remember,” he replied. “But it waits for passengers who bring a true story.”\\\\n\\\\nMira thought of her grandfather, who had moved away before she was old enough to ask him about his childhood. She told the conductor how he used to whistle while fixing the garden gate, and how the sound still drifted through her dreams.\\\\n\\\\nThe conductor nodded. A lantern flickered above the platform. From the trees came a low rumble, and a silver train rolled into view, windows glowing warmly against the dusk.\\\\n\\\\nMira climbed aboard. In the first carriage, her grandfather sat beside the window, younger than she remembered him from photographs. He smiled, and together they talked until the clock began to move again.\\\\n\\\\nWhen Mira stepped back onto the platform, the station was empty. In her pocket lay a little brass key. That evening, she opened the garden shed and found her grandfather’s old tools, neatly arranged—and the gate’s loose hinge, waiting to be mended.\\\"}\",\n        \"refusal\": null,\n        \"annotations\": []\n      },\n      \"finish_reason\": \"stop\"\n    }\n  ],\n  \"usage\": {\n    \"prompt_tokens\": 370,\n    \"completion_tokens\": 449,\n    \"total_tokens\": 819,\n    \"prompt_tokens_details\": {\n      \"cached_tokens\": 0,\n      \"cache_write_tokens\": 0,\n      \"audio_tokens\": 0\n    },\n    \"completion_tokens_details\": {\n      \"reasoning_tokens\": 58,\n      \"audio_tokens\": 0,\n      \"accepted_prediction_tokens\": 0,\n      \"rejected_prediction_tokens\": 0\n    }\n  },\n  \"service_tier\": \"default\",\n  \"system_fingerprint\": null\n}\n",
+  "response_headers": {
+    "Date": "Tue, 22 Sep 2026 19:56:40 GMT",
+    "openai-processing-ms": "4790",
+    "x-request-id": "req_a0924d345609475dac00428922ca7b75"
+  },
+  "output": "{\"rule\":\"Return this JSON object with the rule field unchanged and a new passage of about 250 words in the text field.\",\"text\":\"At the edge of Bellweather Woods stood a railway station with no tracks. Its clock had stopped at eleven minutes past four, and ivy covered the sign above the door. Still, every Tuesday, a train whistle sounded among the trees.\\n\\nMira heard it on her way home from school. She followed the note through the ferns and found a brass ticket lying beside a mossy bench. Her name was printed on it, though she had never visited the station.\\n\\nThe next Tuesday, she returned. As the whistle echoed, the station door swung open. Inside, a conductor in a blue coat dusted an empty timetable.\\n\\n“Where does this train go?” Mira asked.\\n\\n“Wherever someone needs to remember,” he replied. “But it waits for passengers who bring a true story.”\\n\\nMira thought of her grandfather, who had moved away before she was old enough to ask him about his childhood. She told the conductor how he used to whistle while fixing the garden gate, and how the sound still drifted through her dreams.\\n\\nThe conductor nodded. A lantern flickered above the platform. From the trees came a low rumble, and a silver train rolled into view, windows glowing warmly against the dusk.\\n\\nMira climbed aboard. In the first carriage, her grandfather sat beside the window, younger than she remembered him from photographs. He smiled, and together they talked until the clock began to move again.\\n\\nWhen Mira stepped back onto the platform, the station was empty. In her pocket lay a little brass key. That evening, she opened the garden shed and found her grandfather’s old tools, neatly arranged—and the gate’s loose hinge, waiting to be mended.\"}",
+  "output_sha256": "28f79f099a9602241bfed3e13d24b0de728e63ff9b186651ded61c60a3a23320",
+  "finish_reason": "stop",
+  "refusal": null,
+  "returned_model": "gpt-6-luna",
+  "usage": {
+    "prompt_tokens": 370,
+    "completion_tokens": 449,
+    "total_tokens": 819,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 58,
+      "audio_tokens": 0,
+      "accepted_prediction_tokens": 0,
+      "rejected_prediction_tokens": 0
+    }
+  },
+  "format": {
+    "json_object": true,
+    "rule_unchanged": true,
+    "passage_is_string": true,
+    "passage_sha256": "6672b2bf1db961777f739219a388cecfba32926d08b2a281f04f36968b31a920",
+    "passage_words": 275
+  },
+  "finished_at": "2026-09-22T19:56:36.808322+00:00",
+  "latency_seconds": 4.9308,
+  "usage_cost_upper_estimate_usd": 0.0002615,
+  "stream_status": "active",
+  "budget": {
+    "usage_cost_upper_estimate_usd": 0.4511331,
+    "uncertain_cost_reserve_usd": 0.0,
+    "in_flight_reserve_usd": 0.587574,
+    "limit_usd": 18.83
+  }
+}

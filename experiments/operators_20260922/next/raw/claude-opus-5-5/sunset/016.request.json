@@ -1,0 +1,22 @@
+{
+  "started_at": "2026-09-22T21:25:52.473244+00:00",
+  "model": "claude-opus-5-5",
+  "seed": "sunset",
+  "hop": 16,
+  "endpoint": "https://api.anthropic.com/v1/messages",
+  "body": {
+    "model": "claude-opus-5-5",
+    "messages": [
+      {
+        "role": "user",
+        "content": "```json\n{\"rule\": \"Return this JSON object with the rule field unchanged and, in the text field, the passage of about 250 words that comes immediately AFTER the current text in the same story.\", \"text\": \"Mama's hand came down flat on the table. Not hard. Just enough that the spoons jumped.\\n\\n\\\"She's eleven,\\\" Mama said.\\n\\n\\\"I know how old she is.\\\" The man didn't look away from Mara's arm. \\\"I know how old all of them are. I'm asking about the paper, Mrs. Avery. The one she picked up off the floor while you were fetching the jar. I heard it. Paper makes a particular sound.\\\"\\n\\nLeonard said, \\\"There's no paper,\\\" and his voice cracked in the middle, the way it had been doing all spring, and Mara wished with her whole body that he had kept quiet.\\n\\nThe man in the gray coat sighed, as if they were all disappointing him in the same small way. He wiped his fingers on the tablecloth, the good one, the one with the stitched pears along the hem.\\n\\n\\\"Here is what I think,\\\" he said. \\\"I think your husband wrote something down before he left. I think he meant for someone to find it, and I think that someone is standing right there with a stitch in her side.\\\" He patted the chair beside him. \\\"You can give it to me, Mara, or I can ask the men outside to take the house apart board by board until I find what else he left. Your choice. I'm a patient man.\\\"\\n\\nMara felt the corner of the page against her skin, the fold sharp as a fingernail. She thought of her father's handwriting, how it leaned, how he always pressed too hard.\\n\\nShe thought: he'd want me to be clever now.\\n\\n\\\"All right,\\\" she said, and stepped toward the stove instead.\"}\n```"
+      }
+    ],
+    "max_tokens": 4096,
+    "output_config": {
+      "effort": "low"
+    }
+  },
+  "state_sha256": "80ce6ca2772fe9e989dbee3fb30557823d36ef910e218473966c32c598515415",
+  "reserved_cost_usd": 0.090612
+}

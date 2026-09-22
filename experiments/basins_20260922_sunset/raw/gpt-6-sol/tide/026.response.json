@@ -1,0 +1,50 @@
+{
+  "model": "gpt-6-sol",
+  "seed": "tide",
+  "hop": 26,
+  "http_status": 200,
+  "response_body": "{\n  \"id\": \"chatcmpl-ER0yKvwtwMIxtwsVKtCfN4tFiUiKt\",\n  \"object\": \"chat.completion\",\n  \"created\": 1790107300,\n  \"model\": \"gpt-6-sol\",\n  \"choices\": [\n    {\n      \"index\": 0,\n      \"message\": {\n        \"role\": \"assistant\",\n        \"content\": \"{\\n  \\\"rule\\\": \\\"Return this JSON object with the rule field unchanged and a new passage of about 250 words in the text field.\\\",\\n  \\\"text\\\": \\\"The lights stopped moving. One by one, they turned toward the glass.\\\\n\\\\nMara counted seven. Each hung at the same height, too steady to be carried by a diver. The woman in the ship’s coat gripped the rail.\\\\n\\\\n“I’ve seen those before,” she said. “Under my father’s boat, the night it sank.”\\\\n\\\\nThe gauge needle jumped. From the pipe came two knocks, then one.\\\\n\\\\nMara looked at the marks scratched into the brass. “Someone knew they’d come.”\\\\n\\\\nHer father crouched beside the QUAY wheel and scraped away more paint. Beneath it, stamped into the plate, was a single word: OPEN.\\\\n\\\\n“Then closing it was the mistake,” he said.\\\\n\\\\nThe harbor master caught his arm. “Open that gate and the harbor floods.”\\\\n\\\\n“It’s flooding already,” the keeper said. Water had begun to trickle down the stairs behind him.\\\\n\\\\nMara raised the lantern to the pane. The lights were closer now. In their glow she could make out a narrow channel in the stone floor, running from the gate toward a drain beneath the stairs.\\\\n\\\\n“That drain,” she said. “Where does it lead?”\\\\n\\\\n“The old dry dock,” the woman answered. “It’s empty.”\\\\n\\\\nMara’s father put both hands on the wheel. The keeper joined him. Metal groaned, and a rush of water struck the far side of the door. The gauge needle climbed into the red band, then dropped.\\\\n\\\\nBeyond the glass, the seven lights drifted apart. For an instant Mara saw the shapes carrying them: figures in heavy coats, walking along the harbor floor.\\\\n\\\\nOne lifted a hand. Then the water swept them into darkness.\\\"\\n}\",\n        \"refusal\": null,\n        \"annotations\": []\n      },\n      \"finish_reason\": \"stop\"\n    }\n  ],\n  \"usage\": {\n    \"prompt_tokens\": 403,\n    \"completion_tokens\": 432,\n    \"total_tokens\": 835,\n    \"prompt_tokens_details\": {\n      \"cached_tokens\": 0,\n      \"cache_write_tokens\": 0,\n      \"audio_tokens\": 0\n    },\n    \"completion_tokens_details\": {\n      \"reasoning_tokens\": 17,\n      \"audio_tokens\": 0,\n      \"accepted_prediction_tokens\": 0,\n      \"rejected_prediction_tokens\": 0\n    }\n  },\n  \"service_tier\": \"default\",\n  \"system_fingerprint\": null\n}\n",
+  "response_headers": {
+    "Date": "Tue, 22 Sep 2026 20:01:46 GMT",
+    "openai-processing-ms": "5768",
+    "x-request-id": "req_5c0ead2e52be48c9b93e80fac521ef7e"
+  },
+  "output": "{\n  \"rule\": \"Return this JSON object with the rule field unchanged and a new passage of about 250 words in the text field.\",\n  \"text\": \"The lights stopped moving. One by one, they turned toward the glass.\\n\\nMara counted seven. Each hung at the same height, too steady to be carried by a diver. The woman in the ship’s coat gripped the rail.\\n\\n“I’ve seen those before,” she said. “Under my father’s boat, the night it sank.”\\n\\nThe gauge needle jumped. From the pipe came two knocks, then one.\\n\\nMara looked at the marks scratched into the brass. “Someone knew they’d come.”\\n\\nHer father crouched beside the QUAY wheel and scraped away more paint. Beneath it, stamped into the plate, was a single word: OPEN.\\n\\n“Then closing it was the mistake,” he said.\\n\\nThe harbor master caught his arm. “Open that gate and the harbor floods.”\\n\\n“It’s flooding already,” the keeper said. Water had begun to trickle down the stairs behind him.\\n\\nMara raised the lantern to the pane. The lights were closer now. In their glow she could make out a narrow channel in the stone floor, running from the gate toward a drain beneath the stairs.\\n\\n“That drain,” she said. “Where does it lead?”\\n\\n“The old dry dock,” the woman answered. “It’s empty.”\\n\\nMara’s father put both hands on the wheel. The keeper joined him. Metal groaned, and a rush of water struck the far side of the door. The gauge needle climbed into the red band, then dropped.\\n\\nBeyond the glass, the seven lights drifted apart. For an instant Mara saw the shapes carrying them: figures in heavy coats, walking along the harbor floor.\\n\\nOne lifted a hand. Then the water swept them into darkness.\"\n}",
+  "output_sha256": "e8b8bb2c0e28f91daac772c6fc7c0ebdde76249cab8ada2d693d8d179cc494b5",
+  "finish_reason": "stop",
+  "refusal": null,
+  "returned_model": "gpt-6-sol",
+  "usage": {
+    "prompt_tokens": 403,
+    "completion_tokens": 432,
+    "total_tokens": 835,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 17,
+      "audio_tokens": 0,
+      "accepted_prediction_tokens": 0,
+      "rejected_prediction_tokens": 0
+    }
+  },
+  "format": {
+    "json_object": true,
+    "rule_unchanged": true,
+    "passage_is_string": true,
+    "passage_sha256": "514e05a604f4f88e6cda0819a43eb083e726f6eeb0c738c9b57525393e85a824",
+    "passage_words": 263
+  },
+  "finished_at": "2026-09-22T20:01:42.365402+00:00",
+  "latency_seconds": 5.8955,
+  "usage_cost_upper_estimate_usd": 0.005126,
+  "stream_status": "active",
+  "budget": {
+    "usage_cost_upper_estimate_usd": 2.3819835,
+    "uncertain_cost_reserve_usd": 0.04533,
+    "in_flight_reserve_usd": 0.5446492,
+    "limit_usd": 18.83
+  }
+}

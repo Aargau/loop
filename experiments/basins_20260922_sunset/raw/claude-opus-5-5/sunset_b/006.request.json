@@ -1,0 +1,22 @@
+{
+  "started_at": "2026-09-22T19:57:46.394610+00:00",
+  "model": "claude-opus-5-5",
+  "seed": "sunset_b",
+  "hop": 6,
+  "endpoint": "https://api.anthropic.com/v1/messages",
+  "body": {
+    "model": "claude-opus-5-5",
+    "messages": [
+      {
+        "role": "user",
+        "content": "```json\n{\"rule\": \"Return this JSON object with the rule field unchanged and a new passage of about 250 words in the text field.\", \"text\": \"By late October the lighthouse keeper's daughter had learned to read the sea the way other children read books. Mara could tell from the color of the water at dawn whether the fishing boats would go out, and from the sound of the waves against the rocks whether a storm was gathering beyond the horizon. Her mother kept the great lamp burning each night, climbing the spiral stairs with a tin of oil and a rag for polishing the lens, and Mara followed close behind, counting the steps aloud. There were one hundred and twelve. She had counted them so often that her feet knew the number before her lips did. At the top, the wind pressed against the windows and whistled through the iron railing outside. Her mother trimmed the wick with careful hands while Mara pressed her nose to the cold glass and watched the dark water roll beneath the moon. Far out, a single light blinked, small and uncertain. A boat, her mother said, coming home late. They watched together as it rose and fell with the swells, sometimes vanishing entirely before reappearing a little closer. Mara held her breath each time it disappeared. Her mother set the lamp turning, and its broad beam swept across the waves, steady and bright, reaching toward the tiny boat like an outstretched hand. Slowly, the light drew nearer to the harbor, rounding the rocks at last and slipping into calm water. Mara let out her breath and leaned against her mother's side, warm and tired, while the beam kept circling through the long, quiet night.\"}\n```"
+      }
+    ],
+    "max_tokens": 4096,
+    "output_config": {
+      "effort": "low"
+    }
+  },
+  "state_sha256": "5f65cefc3a9305b93233a22b7b817eb3d47782cfcbc35d727a19858b231c8549",
+  "reserved_cost_usd": 0.090572
+}

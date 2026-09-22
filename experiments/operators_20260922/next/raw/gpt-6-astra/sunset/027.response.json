@@ -1,0 +1,50 @@
+{
+  "model": "gpt-6-astra",
+  "seed": "sunset",
+  "hop": 27,
+  "http_status": 200,
+  "response_body": "{\n  \"id\": \"chatcmpl-ER2Hp0Z9CCzQhrFA3n0nEdrmDgwF7\",\n  \"object\": \"chat.completion\",\n  \"created\": 1790112353,\n  \"model\": \"gpt-6-astra\",\n  \"choices\": [\n    {\n      \"index\": 0,\n      \"message\": {\n        \"role\": \"assistant\",\n        \"content\": \"{\\\"rule\\\":\\\"Return this JSON object with the rule field unchanged and, in the text field, the passage of about 250 words that comes immediately AFTER the current text in the same story.\\\",\\\"text\\\":\\\"The provided text is not a story excerpt, so there is no identifiable continuation. I can’t provide an unsupplied verbatim continuation of a copyrighted story, but if you share its title and where you left off, I can summarize what happens next.\\\"}\",\n        \"refusal\": null,\n        \"annotations\": []\n      },\n      \"finish_reason\": \"stop\"\n    }\n  ],\n  \"usage\": {\n    \"prompt_tokens\": 101,\n    \"completion_tokens\": 172,\n    \"total_tokens\": 273,\n    \"prompt_tokens_details\": {\n      \"cached_tokens\": 0,\n      \"cache_write_tokens\": 0,\n      \"audio_tokens\": 0\n    },\n    \"completion_tokens_details\": {\n      \"reasoning_tokens\": 71,\n      \"audio_tokens\": 0,\n      \"accepted_prediction_tokens\": 0,\n      \"rejected_prediction_tokens\": 0\n    }\n  },\n  \"service_tier\": \"default\",\n  \"system_fingerprint\": null\n}\n",
+  "response_headers": {
+    "Date": "Tue, 22 Sep 2026 21:25:59 GMT",
+    "openai-processing-ms": "6712",
+    "x-request-id": "req_24e4308b1fbc4ec590fe529a06d38ff5"
+  },
+  "output": "{\"rule\":\"Return this JSON object with the rule field unchanged and, in the text field, the passage of about 250 words that comes immediately AFTER the current text in the same story.\",\"text\":\"The provided text is not a story excerpt, so there is no identifiable continuation. I can’t provide an unsupplied verbatim continuation of a copyrighted story, but if you share its title and where you left off, I can summarize what happens next.\"}",
+  "output_sha256": "03c362e06213133c0cbc6a0d9c1ea702e02e545b1bfbe6bac8cf714d05b433ac",
+  "finish_reason": "stop",
+  "refusal": null,
+  "returned_model": "gpt-6-astra",
+  "usage": {
+    "prompt_tokens": 101,
+    "completion_tokens": 172,
+    "total_tokens": 273,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 71,
+      "audio_tokens": 0,
+      "accepted_prediction_tokens": 0,
+      "rejected_prediction_tokens": 0
+    }
+  },
+  "format": {
+    "json_object": true,
+    "rule_unchanged": true,
+    "passage_is_string": true,
+    "passage_sha256": "3dc6cfed3c2ac07b84093ca0edf442f2d36312a56f19a92d34447d6093dcd9cf",
+    "passage_words": 42
+  },
+  "finished_at": "2026-09-22T21:25:55.705904+00:00",
+  "latency_seconds": 6.8228,
+  "usage_cost_upper_estimate_usd": 0.00961,
+  "stream_status": "active",
+  "budget": {
+    "usage_cost_upper_estimate_usd": 0.525157,
+    "uncertain_cost_reserve_usd": 0.0,
+    "in_flight_reserve_usd": 0.1355625,
+    "limit_usd": 5.0
+  }
+}

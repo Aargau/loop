@@ -1,0 +1,50 @@
+{
+  "model": "gpt-6-luna",
+  "seed": "sunset_a",
+  "hop": 58,
+  "http_status": 200,
+  "response_body": "{\n  \"id\": \"chatcmpl-ER14WZ8EGjrnMxNEesDFbVwSUbODX\",\n  \"object\": \"chat.completion\",\n  \"created\": 1790107684,\n  \"model\": \"gpt-6-luna\",\n  \"choices\": [\n    {\n      \"index\": 0,\n      \"message\": {\n        \"role\": \"assistant\",\n        \"content\": \"{\\\"rule\\\":\\\"Return this JSON object with the rule field unchanged and a new passage of about 250 words in the text field.\\\",\\\"text\\\":\\\"Every Thursday, the old ferry crossed the river with only a handful of passengers. Most people drove across the new bridge, but Nora preferred the boat. From its deck, she could see the town shrink behind her and the wide marsh open ahead.\\\\n\\\\nOne gray morning, the ferry’s engine sputtered halfway across. Captain Ellis turned a key, checked a gauge, and frowned. The boat drifted slowly toward a sandbar.\\\\n\\\\nNora noticed a wooden toolbox beside the engine room. “Could I help?” she asked.\\\\n\\\\nThe captain hesitated, then handed her a flashlight. Together they examined the engine. Nora spotted a loose wire trembling near a metal bracket. Captain Ellis switched off the power while she held the light steady. He tightened the connection, and the engine rumbled back to life.\\\\n\\\\nAs they steered away from the sandbar, a boy on the shore waved both arms. He had been waiting for the ferry, his bicycle beside him. Captain Ellis gave a short blast of the horn, and the boy grinned.\\\\n\\\\n“You kept us from drifting into trouble,” the captain told Nora.\\\\n\\\\n“I only held the flashlight,” she said.\\\\n\\\\n“Sometimes that’s exactly what’s needed.”\\\\n\\\\nAfter that, Nora came aboard every Thursday. Captain Ellis taught her how to read the river’s currents and listen for changes in the engine. She learned that a ferry’s safe passage depended on many small acts: a careful hand, a watchful eye, and someone willing to notice what others missed.\\\\n\\\\nYears later, when Nora became captain herself, she kept the old flashlight in the wheelhouse. It reminded her that every journey began with paying attention.\\\"}\",\n        \"refusal\": null,\n        \"annotations\": []\n      },\n      \"finish_reason\": \"stop\"\n    }\n  ],\n  \"usage\": {\n    \"prompt_tokens\": 391,\n    \"completion_tokens\": 462,\n    \"total_tokens\": 853,\n    \"prompt_tokens_details\": {\n      \"cached_tokens\": 0,\n      \"cache_write_tokens\": 0,\n      \"audio_tokens\": 0\n    },\n    \"completion_tokens_details\": {\n      \"reasoning_tokens\": 77,\n      \"audio_tokens\": 0,\n      \"accepted_prediction_tokens\": 0,\n      \"rejected_prediction_tokens\": 0\n    }\n  },\n  \"service_tier\": \"default\",\n  \"system_fingerprint\": null\n}\n",
+  "response_headers": {
+    "Date": "Tue, 22 Sep 2026 20:08:09 GMT",
+    "openai-processing-ms": "5540",
+    "x-request-id": "req_2fad2e76961747f4a165ae3ecb611e93"
+  },
+  "output": "{\"rule\":\"Return this JSON object with the rule field unchanged and a new passage of about 250 words in the text field.\",\"text\":\"Every Thursday, the old ferry crossed the river with only a handful of passengers. Most people drove across the new bridge, but Nora preferred the boat. From its deck, she could see the town shrink behind her and the wide marsh open ahead.\\n\\nOne gray morning, the ferry’s engine sputtered halfway across. Captain Ellis turned a key, checked a gauge, and frowned. The boat drifted slowly toward a sandbar.\\n\\nNora noticed a wooden toolbox beside the engine room. “Could I help?” she asked.\\n\\nThe captain hesitated, then handed her a flashlight. Together they examined the engine. Nora spotted a loose wire trembling near a metal bracket. Captain Ellis switched off the power while she held the light steady. He tightened the connection, and the engine rumbled back to life.\\n\\nAs they steered away from the sandbar, a boy on the shore waved both arms. He had been waiting for the ferry, his bicycle beside him. Captain Ellis gave a short blast of the horn, and the boy grinned.\\n\\n“You kept us from drifting into trouble,” the captain told Nora.\\n\\n“I only held the flashlight,” she said.\\n\\n“Sometimes that’s exactly what’s needed.”\\n\\nAfter that, Nora came aboard every Thursday. Captain Ellis taught her how to read the river’s currents and listen for changes in the engine. She learned that a ferry’s safe passage depended on many small acts: a careful hand, a watchful eye, and someone willing to notice what others missed.\\n\\nYears later, when Nora became captain herself, she kept the old flashlight in the wheelhouse. It reminded her that every journey began with paying attention.\"}",
+  "output_sha256": "f43aca97c87d2e36a69aa52c58ed2c429ab8ef322199ebb07e6e4c22c0c8dd7e",
+  "finish_reason": "stop",
+  "refusal": null,
+  "returned_model": "gpt-6-luna",
+  "usage": {
+    "prompt_tokens": 391,
+    "completion_tokens": 462,
+    "total_tokens": 853,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 77,
+      "audio_tokens": 0,
+      "accepted_prediction_tokens": 0,
+      "rejected_prediction_tokens": 0
+    }
+  },
+  "format": {
+    "json_object": true,
+    "rule_unchanged": true,
+    "passage_is_string": true,
+    "passage_sha256": "06c481487fe91a25ec4c1aada044f95683dac5be1a0ac169ae7b55b2457f165c",
+    "passage_words": 266
+  },
+  "finished_at": "2026-09-22T20:08:06.002140+00:00",
+  "latency_seconds": 5.6414,
+  "usage_cost_upper_estimate_usd": 0.0002701,
+  "stream_status": "active",
+  "budget": {
+    "usage_cost_upper_estimate_usd": 4.7589155,
+    "uncertain_cost_reserve_usd": 0.04533,
+    "in_flight_reserve_usd": 0.590448,
+    "limit_usd": 18.83
+  }
+}

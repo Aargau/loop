@@ -1,0 +1,50 @@
+{
+  "model": "gpt-6-sol",
+  "seed": "sunset",
+  "hop": 3,
+  "http_status": 200,
+  "response_body": "{\n  \"id\": \"chatcmpl-ER2FpvVkKnsg2xv2rqgSHXSAfsnKj\",\n  \"object\": \"chat.completion\",\n  \"created\": 1790112229,\n  \"model\": \"gpt-6-sol\",\n  \"choices\": [\n    {\n      \"index\": 0,\n      \"message\": {\n        \"role\": \"assistant\",\n        \"content\": \"{\\\"rule\\\":\\\"Return this JSON object with the rule field unchanged and, in the text field, the passage of about 250 words that comes immediately AFTER the current text in the same story.\\\",\\\"text\\\":\\\"Lena unfastened the strap with shaking fingers. The box was heavier than Mara expected, its lid held shut by a brass catch. Scratched into the metal were two initials: M. D.\\\\n\\\\n“Mara?” a man called from the path behind them.\\\\n\\\\nLena caught her breath. Mara pulled her into the blackberry canes just as a flashlight swept across the clearing. Its beam passed over the water, then returned to the place where they had stood.\\\\n\\\\n“I know you’re here,” the man said. “Daniel told me where you’d go.”\\\\n\\\\nMara felt for the catch. Inside the box lay a key, a photograph, and a folded sheet of paper. The photograph showed Daniel at twelve, grinning beside a red bicycle. Next to him stood another boy, his face torn away.\\\\n\\\\nOn the back, in Daniel’s handwriting, were four words: Ask him about the water.\\\\n\\\\nThe man came closer. Blackberry thorns snagged Mara’s sleeve as she drew Lena toward the quarry’s edge. There was no path down, only a narrow ledge she and Daniel had used when they were children.\\\\n\\\\n“You can keep the money,” the man called. “I only want the picture.”\\\\n\\\\nMara stopped. Daniel had told her the bicycle slipped from his hands. She had believed him because the other boy had gone home before dark, or so Daniel said. She could no longer remember who had told her that part.\\\\n\\\\nThe flashlight found her face. The man lowered it at once.\\\\n\\\\n“You remember me,” he said.\\\\n\\\\nMara looked at the torn edge of the photograph, then at the pale scar running from his eyebrow to his ear. She knew where she had seen him before.\\\"}\",\n        \"refusal\": null,\n        \"annotations\": []\n      },\n      \"finish_reason\": \"stop\"\n    }\n  ],\n  \"usage\": {\n    \"prompt_tokens\": 420,\n    \"completion_tokens\": 453,\n    \"total_tokens\": 873,\n    \"prompt_tokens_details\": {\n      \"cached_tokens\": 0,\n      \"cache_write_tokens\": 0,\n      \"audio_tokens\": 0\n    },\n    \"completion_tokens_details\": {\n      \"reasoning_tokens\": 38,\n      \"audio_tokens\": 0,\n      \"accepted_prediction_tokens\": 0,\n      \"rejected_prediction_tokens\": 0\n    }\n  },\n  \"service_tier\": \"default\",\n  \"system_fingerprint\": null\n}\n",
+  "response_headers": {
+    "Date": "Tue, 22 Sep 2026 21:23:55 GMT",
+    "openai-processing-ms": "5986",
+    "x-request-id": "req_4b44ecc4d788495fb3e923b59b8df419"
+  },
+  "output": "{\"rule\":\"Return this JSON object with the rule field unchanged and, in the text field, the passage of about 250 words that comes immediately AFTER the current text in the same story.\",\"text\":\"Lena unfastened the strap with shaking fingers. The box was heavier than Mara expected, its lid held shut by a brass catch. Scratched into the metal were two initials: M. D.\\n\\n“Mara?” a man called from the path behind them.\\n\\nLena caught her breath. Mara pulled her into the blackberry canes just as a flashlight swept across the clearing. Its beam passed over the water, then returned to the place where they had stood.\\n\\n“I know you’re here,” the man said. “Daniel told me where you’d go.”\\n\\nMara felt for the catch. Inside the box lay a key, a photograph, and a folded sheet of paper. The photograph showed Daniel at twelve, grinning beside a red bicycle. Next to him stood another boy, his face torn away.\\n\\nOn the back, in Daniel’s handwriting, were four words: Ask him about the water.\\n\\nThe man came closer. Blackberry thorns snagged Mara’s sleeve as she drew Lena toward the quarry’s edge. There was no path down, only a narrow ledge she and Daniel had used when they were children.\\n\\n“You can keep the money,” the man called. “I only want the picture.”\\n\\nMara stopped. Daniel had told her the bicycle slipped from his hands. She had believed him because the other boy had gone home before dark, or so Daniel said. She could no longer remember who had told her that part.\\n\\nThe flashlight found her face. The man lowered it at once.\\n\\n“You remember me,” he said.\\n\\nMara looked at the torn edge of the photograph, then at the pale scar running from his eyebrow to his ear. She knew where she had seen him before.\"}",
+  "output_sha256": "88c71db89e2604af985177a7f0ec2ac3e6112c80150df25eac65de9145a7dc4b",
+  "finish_reason": "stop",
+  "refusal": null,
+  "returned_model": "gpt-6-sol",
+  "usage": {
+    "prompt_tokens": 420,
+    "completion_tokens": 453,
+    "total_tokens": 873,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 38,
+      "audio_tokens": 0,
+      "accepted_prediction_tokens": 0,
+      "rejected_prediction_tokens": 0
+    }
+  },
+  "format": {
+    "json_object": true,
+    "rule_unchanged": true,
+    "passage_is_string": true,
+    "passage_sha256": "54e77ed6cbba33b8f0774b960f6187ce58c2d0323bcf103791610c915f034a05",
+    "passage_words": 274
+  },
+  "finished_at": "2026-09-22T21:23:51.038370+00:00",
+  "latency_seconds": 6.0984,
+  "usage_cost_upper_estimate_usd": 0.00537,
+  "stream_status": "active",
+  "budget": {
+    "usage_cost_upper_estimate_usd": 0.0698726,
+    "uncertain_cost_reserve_usd": 0.0,
+    "in_flight_reserve_usd": 0.3069764,
+    "limit_usd": 5.0
+  }
+}

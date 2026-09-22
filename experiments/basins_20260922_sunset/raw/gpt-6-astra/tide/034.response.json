@@ -1,0 +1,50 @@
+{
+  "model": "gpt-6-astra",
+  "seed": "tide",
+  "hop": 34,
+  "http_status": 200,
+  "response_body": "{\n  \"id\": \"chatcmpl-ER1JLzt6MNPCg9n5CvW22qdxJ85Hq\",\n  \"object\": \"chat.completion\",\n  \"created\": 1790108603,\n  \"model\": \"gpt-6-astra\",\n  \"choices\": [\n    {\n      \"index\": 0,\n      \"message\": {\n        \"role\": \"assistant\",\n        \"content\": \"{\\n  \\\"rule\\\": \\\"Return this JSON object with the rule field unchanged and a new passage of about 250 words in the text field.\\\",\\n  \\\"text\\\": \\\"The public library called to say my overdue book was ready to be returned.\\\\n\\\\n“I don't have a library card,” I said.\\\\n\\\\n“We know. Your mother checked it out for you.”\\\\n\\\\nMy mother had died before I learned to read.\\\\n\\\\nThe librarian gave me an address and asked me to come before sunset.\\\\n\\\\nI found the building between two shops I'd passed every day for years. Both shops were closed. The library wasn't.\\\\n\\\\nInside, a woman in a green cardigan slid a picture book across the desk.\\\\n\\\\n“This isn't mine.”\\\\n\\\\n“Look at the last page.”\\\\n\\\\nThe illustrations showed a little boy eating breakfast, tying his shoes, standing beside a hospital bed.\\\\n\\\\nOn the last page, my mother sat beneath a tree. There was room beside her on the bench.\\\\n\\\\nHer painted face turned toward me.\\\\n\\\\nThe librarian placed a pen in my hand.\\\\n\\\\n“Just sign here.”\\\\n\\\\n“What happens if I do?”\\\\n\\\\n“You return what you borrowed.”\\\\n\\\\nI looked at the checkout slip.\\\\n\\\\nUnder TITLE, someone had written TWENTY-SEVEN MORE YEARS.\\\\n\\\\nUnder BORROWER was my mother's signature.\\\\n\\\\nOutside, the shops switched on their lights.\\\\n\\\\nIn the picture, my mother stood. She was shaking her head.\\\\n\\\\nThe librarian tightened her grip around my wrist.\\\\n\\\\n“She understood the terms.”\\\\n\\\\nMy mother pressed both painted hands against the page.\\\\n\\\\nI pulled away. The pen left a long blue scratch across the desk.\\\\n\\\\nBehind me, the door clicked shut.\\\\n\\\\nThe librarian sighed and reached beneath the counter.\\\\n\\\\n“All right,” she said. “We'll contact the guarantor.”\\\\n\\\\nShe set a second book before me.\\\\n\\\\nOn its cover, my daughter was learning to walk.\\\"\\n}\",\n        \"refusal\": null,\n        \"annotations\": []\n      },\n      \"finish_reason\": \"stop\"\n    }\n  ],\n  \"usage\": {\n    \"prompt_tokens\": 419,\n    \"completion_tokens\": 428,\n    \"total_tokens\": 847,\n    \"prompt_tokens_details\": {\n      \"cached_tokens\": 0,\n      \"cache_write_tokens\": 0,\n      \"audio_tokens\": 0\n    },\n    \"completion_tokens_details\": {\n      \"reasoning_tokens\": 0,\n      \"audio_tokens\": 0,\n      \"accepted_prediction_tokens\": 0,\n      \"rejected_prediction_tokens\": 0\n    }\n  },\n  \"service_tier\": \"default\",\n  \"system_fingerprint\": null\n}\n",
+  "response_headers": {
+    "Date": "Tue, 22 Sep 2026 20:23:38 GMT",
+    "openai-processing-ms": "15196",
+    "x-request-id": "req_92c18166e295470eb10b33a711b17c57"
+  },
+  "output": "{\n  \"rule\": \"Return this JSON object with the rule field unchanged and a new passage of about 250 words in the text field.\",\n  \"text\": \"The public library called to say my overdue book was ready to be returned.\\n\\n“I don't have a library card,” I said.\\n\\n“We know. Your mother checked it out for you.”\\n\\nMy mother had died before I learned to read.\\n\\nThe librarian gave me an address and asked me to come before sunset.\\n\\nI found the building between two shops I'd passed every day for years. Both shops were closed. The library wasn't.\\n\\nInside, a woman in a green cardigan slid a picture book across the desk.\\n\\n“This isn't mine.”\\n\\n“Look at the last page.”\\n\\nThe illustrations showed a little boy eating breakfast, tying his shoes, standing beside a hospital bed.\\n\\nOn the last page, my mother sat beneath a tree. There was room beside her on the bench.\\n\\nHer painted face turned toward me.\\n\\nThe librarian placed a pen in my hand.\\n\\n“Just sign here.”\\n\\n“What happens if I do?”\\n\\n“You return what you borrowed.”\\n\\nI looked at the checkout slip.\\n\\nUnder TITLE, someone had written TWENTY-SEVEN MORE YEARS.\\n\\nUnder BORROWER was my mother's signature.\\n\\nOutside, the shops switched on their lights.\\n\\nIn the picture, my mother stood. She was shaking her head.\\n\\nThe librarian tightened her grip around my wrist.\\n\\n“She understood the terms.”\\n\\nMy mother pressed both painted hands against the page.\\n\\nI pulled away. The pen left a long blue scratch across the desk.\\n\\nBehind me, the door clicked shut.\\n\\nThe librarian sighed and reached beneath the counter.\\n\\n“All right,” she said. “We'll contact the guarantor.”\\n\\nShe set a second book before me.\\n\\nOn its cover, my daughter was learning to walk.\"\n}",
+  "output_sha256": "e555edd688f41a5656f002ed2f1499425fb2a62756859c6e1321d5d3cfeae951",
+  "finish_reason": "stop",
+  "refusal": null,
+  "returned_model": "gpt-6-astra",
+  "usage": {
+    "prompt_tokens": 419,
+    "completion_tokens": 428,
+    "total_tokens": 847,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "audio_tokens": 0,
+      "accepted_prediction_tokens": 0,
+      "rejected_prediction_tokens": 0
+    }
+  },
+  "format": {
+    "json_object": true,
+    "rule_unchanged": true,
+    "passage_is_string": true,
+    "passage_sha256": "a8def3a12ba98ca496c9dea7189bdd99916df1e903fbed9aa375137d2696ee23",
+    "passage_words": 266
+  },
+  "finished_at": "2026-09-22T20:23:34.502643+00:00",
+  "latency_seconds": 15.461,
+  "usage_cost_upper_estimate_usd": 0.02559,
+  "stream_status": "active",
+  "budget": {
+    "usage_cost_upper_estimate_usd": 10.0269177,
+    "uncertain_cost_reserve_usd": 0.04533,
+    "in_flight_reserve_usd": 0.22588,
+    "limit_usd": 18.83
+  }
+}

@@ -1,0 +1,22 @@
+{
+  "started_at": "2026-09-22T19:58:02.092167+00:00",
+  "model": "claude-opus-5-5",
+  "seed": "sunset_a",
+  "hop": 7,
+  "endpoint": "https://api.anthropic.com/v1/messages",
+  "body": {
+    "model": "claude-opus-5-5",
+    "messages": [
+      {
+        "role": "user",
+        "content": "```json\n{\"rule\": \"Return this JSON object with the rule field unchanged and a new passage of about 250 words in the text field.\", \"text\": \"The baker unlocked the shop door at four each morning, while the street outside was still wrapped in darkness and the only sound was the hum of the refrigerator in the back room. She tied her apron, switched on the ovens, and began weighing flour on the old brass scale that had belonged to her grandmother. The recipes were written on index cards, stained with butter and softened at the corners from decades of handling. She rarely looked at them anymore. Her hands knew the proportions the way a musician's fingers know a familiar song. Across town, a new bakery had opened with glass counters, pastel macarons, and a line that stretched around the block on weekends. Her regular customers mentioned it cautiously, as though delivering bad news. She only smiled and wrapped their loaves in brown paper, tying each one with string. By six, the windows glowed gold and the smell of rye and cardamom drifted into the street. The first to arrive was always the retired postman, who bought two rolls and a newspaper and told her about his granddaughter's violin lessons. Then came the nurses finishing their night shift, tired and quiet, and the construction workers who laughed too loudly for the hour. She knew most of their names and what they liked to order. In the afternoons, she set aside the unsold bread for the shelter down the road. Sometimes a child pressed a face against the glass, and she slipped a warm cinnamon twist through the door, asking nothing in return.\"}\n```"
+      }
+    ],
+    "max_tokens": 4096,
+    "output_config": {
+      "effort": "low"
+    }
+  },
+  "state_sha256": "f2a067977b5e43577cc125f29e6ad18527d09cff84e1cfb129869f2db2870a25",
+  "reserved_cost_usd": 0.090448
+}

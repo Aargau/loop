@@ -1,0 +1,22 @@
+{
+  "started_at": "2026-09-22T20:03:35.794032+00:00",
+  "model": "claude-fable-5-1",
+  "seed": "sunset_a",
+  "hop": 14,
+  "endpoint": "https://api.anthropic.com/v1/messages",
+  "body": {
+    "model": "claude-fable-5-1",
+    "messages": [
+      {
+        "role": "user",
+        "content": "{\"rule\": \"Return this JSON object with the rule field unchanged and a new passage of about 250 words in the text field.\", \"text\": \"The letter was not addressed to her. She knew that before she finished the first line, because the initial was followed by a name she had never used, a name that belonged to the woman who had owned the shop before her, and before that woman's mother. Still, the coincidence of the letter sat in her chest like a swallowed stone.\\n\\nIt was longer than the others. The writer described the courtyard as it had been when the fountain still worked, and the sound the water made against the basin, a sound that had been, the writer said, the reason for staying. The rooms were only rooms. The stairs were only stairs, even the loud one. But the fountain had been a kind of clock, and when it stopped, the building had begun to keep time some other way.\\n\\nInes read this twice. Then she went down through the shop, past the counter and the shelves she had stocked herself, and out the back into the courtyard she used mostly for bins and bicycles. The basin was there, under a lid of leaves. She had never thought of it as a fountain. She had thought of it as a thing left over.\\n\\nShe cleared the leaves with her hands. Beneath them the stone was dark and dry, cracked in a line that ran toward the wall of the room with the sloped ceiling. She followed the crack with her eyes and understood what the piano tuner had meant. The whole building was leaning, very gently, toward the place where the water had been.\"}"
+      }
+    ],
+    "max_tokens": 4096,
+    "output_config": {
+      "effort": "low"
+    }
+  },
+  "state_sha256": "13ef31e883cea8c7ebe2ac7ca1ac43bcabd063159fbc165b296e4b292b4c958b",
+  "reserved_cost_usd": 0.22533
+}

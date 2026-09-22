@@ -1,0 +1,22 @@
+{
+  "started_at": "2026-09-22T20:12:25.744728+00:00",
+  "model": "claude-opus-5-5",
+  "seed": "tide",
+  "hop": 37,
+  "endpoint": "https://api.anthropic.com/v1/messages",
+  "body": {
+    "model": "claude-opus-5-5",
+    "messages": [
+      {
+        "role": "user",
+        "content": "```json\n{\"rule\": \"Return this JSON object with the rule field unchanged and a new passage of about 250 words in the text field.\", \"text\": \"By October the tree was bare, and the thrushes had gone wherever thrushes go when there is nothing left to guard. The girl missed their rattling more than she expected. She still went out each morning before breakfast, though there was nothing to count now, only the black twigs against the sky and the last few leaves curled on the path like small brown hands. Her grandmother had grown quieter since the summer. She sat longer on the bench and rose from it more slowly, and sometimes she called the girl by her mother's name and then laughed at herself, softly, as if it were a joke they shared. The girl did not mind. She liked to think that somewhere in her grandmother's mind the two of them were the same age, running along the same wall. One cold afternoon her brother found a nest wedged in the fork of the rowan, empty and loosened by the wind. He brought it inside and set it on the kitchen table, and the three of them looked at it for a long time. It was made of moss and grass and something that might have been wool, and it was smaller than any of them had imagined. Her grandmother turned it gently in her fingers. She said the birds would build another in spring, somewhere new, and that this one had done its work. The girl asked if she could keep it. Her grandmother said yes, and the girl put it on the windowsill, where she could see the tree behind it.\"}\n```"
+      }
+    ],
+    "max_tokens": 4096,
+    "output_config": {
+      "effort": "low"
+    }
+  },
+  "state_sha256": "9cc981072005e2755c0a986641dbe580d5c2cdd02c0e2c88ac961ef8aa188c0d",
+  "reserved_cost_usd": 0.09004
+}

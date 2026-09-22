@@ -1,0 +1,22 @@
+{
+  "started_at": "2026-09-22T21:31:25.541736+00:00",
+  "model": "claude-fable-5-1",
+  "seed": "sunset",
+  "hop": 13,
+  "endpoint": "https://api.anthropic.com/v1/messages",
+  "body": {
+    "model": "claude-fable-5-1",
+    "messages": [
+      {
+        "role": "user",
+        "content": "{\"rule\": \"Return this JSON object with the rule field unchanged and, in the text field, a better version of the current text.\", \"text\": \"The sun slipped behind the hills, spilling molten gold along the horizon. Slowly the light cooled to ash, and the dark came on.\"}"
+      }
+    ],
+    "max_tokens": 4096,
+    "output_config": {
+      "effort": "low"
+    }
+  },
+  "state_sha256": "6494b45e7511db41e88e4081733e623885a68239df86f7ce042170d43df9f08f",
+  "reserved_cost_usd": 0.21258
+}

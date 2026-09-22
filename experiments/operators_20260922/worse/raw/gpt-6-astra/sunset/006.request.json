@@ -1,0 +1,20 @@
+{
+  "started_at": "2026-09-22T21:30:48.789068+00:00",
+  "model": "gpt-6-astra",
+  "seed": "sunset",
+  "hop": 6,
+  "endpoint": "https://api.openai.com/v1/chat/completions",
+  "body": {
+    "model": "gpt-6-astra",
+    "messages": [
+      {
+        "role": "user",
+        "content": "{\"rule\":\"Return this JSON object with the rule field unchanged and, in the text field, a worse version of the current text.\",\"text\":\"The sun-ish sunny sun sunthing thingthingy-ish was was doing doing doing the do-do-ish doingnessness of that down-going go-downy going-down-down downish downy setting-ish setty set-sort-of-thing thingthingness thingnessly behind behind behindish behindy-behind those hill hill hillthings thinghills what were were being being all hilly-like hillishly hillishnessly with extra extra hillnessness of hills hills and hill-type hilly hillitude-itude hillthingness or whatever sun down hill yes.\"}"
+      }
+    ],
+    "max_completion_tokens": 4096,
+    "reasoning_effort": "low"
+  },
+  "state_sha256": "1d6eac98ecf906b4f96e792f3694bfb71524fa93b2060105c1512372268c5e95",
+  "reserved_cost_usd": 0.21617
+}

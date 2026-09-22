@@ -1,0 +1,22 @@
+{
+  "started_at": "2026-09-22T21:30:36.652757+00:00",
+  "model": "claude-opus-5-5",
+  "seed": "sunset",
+  "hop": 5,
+  "endpoint": "https://api.anthropic.com/v1/messages",
+  "body": {
+    "model": "claude-opus-5-5",
+    "messages": [
+      {
+        "role": "user",
+        "content": "```json\n{\"rule\": \"Return this JSON object with the rule field unchanged and, in the text field, a worse version of the current text.\", \"text\": \"So, like, okay, so the sun thingy, the big hot yellowy-ish sky circle or whatever, it was, um, uh, like, kinda sorta maybe possibly perhaps going downwardly-ish or down-goingly or setting or un-rising or de-upping or doing whatever it be do or did or doing, like, behind of the over there of the hills and the lumpy ground stuff and things and the whatchamacallits and the thingamajigs and the, um, you know, the ones, or something, or not, or maybe both, I guess, I think, I feel, probably, possibly, basically, literally, or whatever, you know, like, yeah, or no, or yeah-no, anyway, so, yeah, like, yeah.\"}\n```"
+      }
+    ],
+    "max_tokens": 4096,
+    "output_config": {
+      "effort": "low"
+    }
+  },
+  "state_sha256": "114d5914a70968660cbad00519090dae423bb965f8d267779043be05aa878922",
+  "reserved_cost_usd": 0.086996
+}

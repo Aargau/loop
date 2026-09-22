@@ -1,0 +1,50 @@
+{
+  "model": "gpt-6-luna",
+  "seed": "sunset_b",
+  "hop": 59,
+  "http_status": 200,
+  "response_body": "{\n  \"id\": \"chatcmpl-ER14pBqbudYkFKUnLAb8c7przxroU\",\n  \"object\": \"chat.completion\",\n  \"created\": 1790107703,\n  \"model\": \"gpt-6-luna\",\n  \"choices\": [\n    {\n      \"index\": 0,\n      \"message\": {\n        \"role\": \"assistant\",\n        \"content\": \"{\\n  \\\"rule\\\": \\\"Return this JSON object with the rule field unchanged and a new passage of about 250 words in the text field.\\\",\\n  \\\"text\\\": \\\"Each step downward dimmed the world above. Ada followed close behind, one hand on the wall, while Elian brought up the rear with the map held like a shield. The humming grew clearer, then stopped.\\\\n\\\\nAt the foot of the stairs stood a room no larger than a pantry. A lantern rested on a stone table. Its glass was dark, but a small flame burned inside, blue as winter twilight.\\\\n\\\\nBeside it lay a wooden music box. Peter recognized the carving on its lid: a crooked little bird his mother had once drawn on the margins of his schoolbooks.\\\\n\\\\nHe reached for it.\\\\n\\\\n“Don’t,” Ada whispered.\\\\n\\\\nThe lantern flared. On the far wall, a shadow appeared—a woman’s silhouette, one hand raised as if beckoning. Peter’s throat tightened.\\\\n\\\\n“Peter, come home.”\\\\n\\\\nThe voice was his mother’s, but now he heard the wrongness in it. She had never called him home in that frightened, pleading tone. She had always made home sound like a promise, not a warning.\\\\n\\\\nHe took the lantern instead.\\\\n\\\\nThe blue flame brightened, revealing words etched into the table: *A memory given freely cannot be stolen.*\\\\n\\\\nElian leaned closer to read them. “It wants something from you.”\\\\n\\\\nPeter thought of the kitchen window, the rain, his mother’s hand resting gently on his hair. He held that memory in his mind—not the melody, not the shadow, but the warmth of her palm.\\\\n\\\\nThen he spoke the tune she had truly sung, a simple lullaby with no strange notes in it.\\\\n\\\\nThe music box snapped shut. The shadow folded inward, vanishing like a candle pinched between fingers.\\\\n\\\\nSomewhere above, the bell rang once.\\\\n\\\\nThis time, they heard it.\\\"\\n}\",\n        \"refusal\": null,\n        \"annotations\": []\n      },\n      \"finish_reason\": \"stop\"\n    }\n  ],\n  \"usage\": {\n    \"prompt_tokens\": 415,\n    \"completion_tokens\": 479,\n    \"total_tokens\": 894,\n    \"prompt_tokens_details\": {\n      \"cached_tokens\": 0,\n      \"cache_write_tokens\": 0,\n      \"audio_tokens\": 0\n    },\n    \"completion_tokens_details\": {\n      \"reasoning_tokens\": 49,\n      \"audio_tokens\": 0,\n      \"accepted_prediction_tokens\": 0,\n      \"rejected_prediction_tokens\": 0\n    }\n  },\n  \"service_tier\": \"default\",\n  \"system_fingerprint\": null\n}\n",
+  "response_headers": {
+    "Date": "Tue, 22 Sep 2026 20:08:29 GMT",
+    "openai-processing-ms": "5911",
+    "x-request-id": "req_7a57d811423e48f39e5cc2376d9d15da"
+  },
+  "output": "{\n  \"rule\": \"Return this JSON object with the rule field unchanged and a new passage of about 250 words in the text field.\",\n  \"text\": \"Each step downward dimmed the world above. Ada followed close behind, one hand on the wall, while Elian brought up the rear with the map held like a shield. The humming grew clearer, then stopped.\\n\\nAt the foot of the stairs stood a room no larger than a pantry. A lantern rested on a stone table. Its glass was dark, but a small flame burned inside, blue as winter twilight.\\n\\nBeside it lay a wooden music box. Peter recognized the carving on its lid: a crooked little bird his mother had once drawn on the margins of his schoolbooks.\\n\\nHe reached for it.\\n\\n“Don’t,” Ada whispered.\\n\\nThe lantern flared. On the far wall, a shadow appeared—a woman’s silhouette, one hand raised as if beckoning. Peter’s throat tightened.\\n\\n“Peter, come home.”\\n\\nThe voice was his mother’s, but now he heard the wrongness in it. She had never called him home in that frightened, pleading tone. She had always made home sound like a promise, not a warning.\\n\\nHe took the lantern instead.\\n\\nThe blue flame brightened, revealing words etched into the table: *A memory given freely cannot be stolen.*\\n\\nElian leaned closer to read them. “It wants something from you.”\\n\\nPeter thought of the kitchen window, the rain, his mother’s hand resting gently on his hair. He held that memory in his mind—not the melody, not the shadow, but the warmth of her palm.\\n\\nThen he spoke the tune she had truly sung, a simple lullaby with no strange notes in it.\\n\\nThe music box snapped shut. The shadow folded inward, vanishing like a candle pinched between fingers.\\n\\nSomewhere above, the bell rang once.\\n\\nThis time, they heard it.\"\n}",
+  "output_sha256": "351c98808904d2c240bbfaf3d87c0c0b45bc988d9595263c66e6927afbbbc14b",
+  "finish_reason": "stop",
+  "refusal": null,
+  "returned_model": "gpt-6-luna",
+  "usage": {
+    "prompt_tokens": 415,
+    "completion_tokens": 479,
+    "total_tokens": 894,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 49,
+      "audio_tokens": 0,
+      "accepted_prediction_tokens": 0,
+      "rejected_prediction_tokens": 0
+    }
+  },
+  "format": {
+    "json_object": true,
+    "rule_unchanged": true,
+    "passage_is_string": true,
+    "passage_sha256": "30b6ceb6b2803c694fa3460c3e32e4bc923008f0777fc01d80db92ca07124f29",
+    "passage_words": 278
+  },
+  "finished_at": "2026-09-22T20:08:25.238667+00:00",
+  "latency_seconds": 5.9902,
+  "usage_cost_upper_estimate_usd": 0.000281,
+  "stream_status": "active",
+  "budget": {
+    "usage_cost_upper_estimate_usd": 4.9155917,
+    "uncertain_cost_reserve_usd": 0.04533,
+    "in_flight_reserve_usd": 0.589468,
+    "limit_usd": 18.83
+  }
+}

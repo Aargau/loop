@@ -1,0 +1,50 @@
+{
+  "model": "gpt-6-sol",
+  "seed": "tide",
+  "hop": 28,
+  "http_status": 200,
+  "response_body": "{\n  \"id\": \"chatcmpl-ER0yiQ1sdyqKZhf8ChXSDHWptGHGS\",\n  \"object\": \"chat.completion\",\n  \"created\": 1790107324,\n  \"model\": \"gpt-6-sol\",\n  \"choices\": [\n    {\n      \"index\": 0,\n      \"message\": {\n        \"role\": \"assistant\",\n        \"content\": \"{\\n  \\\"rule\\\": \\\"Return this JSON object with the rule field unchanged and a new passage of about 250 words in the text field.\\\",\\n  \\\"text\\\": \\\"The gate settled into its frame with a sound like a door closing in an empty house. Mara’s father let go of the wheel. Across the glass, the seven lights dwindled until only darkness remained.\\\\n\\\\n“Who were they?” Mara asked.\\\\n\\\\nThe woman in the ship’s coat did not answer. She was watching the lantern on the sill. Its flame had turned blue.\\\\n\\\\nAbove them, the harbor master called that the waterline was dropping. Boots sounded on the stairs, then stopped. He had seen the lantern too.\\\\n\\\\n“It came through the gate?” he asked.\\\\n\\\\nMara nodded.\\\\n\\\\nHe took off his cap and held it against his chest. “There was a boat lost out there,” he said. “The winter they sealed the old passage. Seven aboard.”\\\\n\\\\nThe woman stepped away from the glass. “Eight,” she said. “My father went after them.”\\\\n\\\\nA faint knock came from the pipe: two, then one. She put her palm against the wall, but no second signal followed.\\\\n\\\\nMara looked at the bell lodged against the grate. When she pulled it free, water poured from its mouth. On the brass, beneath a crust of silt, someone had scratched a name. She carried it to the woman.\\\\n\\\\nFor a long time, the woman held the bell without speaking. Then she gave it one gentle shake. Its note traveled down the pipe, clear and small.\\\\n\\\\nThe lantern flame bent toward the flooded passage. Far beyond the glass, a single light answered. It hovered there until the woman raised her hand. Then it turned and followed the others into the dark.\\\"\\n}\",\n        \"refusal\": null,\n        \"annotations\": []\n      },\n      \"finish_reason\": \"stop\"\n    }\n  ],\n  \"usage\": {\n    \"prompt_tokens\": 409,\n    \"completion_tokens\": 426,\n    \"total_tokens\": 835,\n    \"prompt_tokens_details\": {\n      \"cached_tokens\": 0,\n      \"cache_write_tokens\": 0,\n      \"audio_tokens\": 0\n    },\n    \"completion_tokens_details\": {\n      \"reasoning_tokens\": 37,\n      \"audio_tokens\": 0,\n      \"accepted_prediction_tokens\": 0,\n      \"rejected_prediction_tokens\": 0\n    }\n  },\n  \"service_tier\": \"default\",\n  \"system_fingerprint\": null\n}\n",
+  "response_headers": {
+    "Date": "Tue, 22 Sep 2026 20:02:10 GMT",
+    "openai-processing-ms": "6178",
+    "x-request-id": "req_a73f79256bea4ac698fd1dd949bbd401"
+  },
+  "output": "{\n  \"rule\": \"Return this JSON object with the rule field unchanged and a new passage of about 250 words in the text field.\",\n  \"text\": \"The gate settled into its frame with a sound like a door closing in an empty house. Mara’s father let go of the wheel. Across the glass, the seven lights dwindled until only darkness remained.\\n\\n“Who were they?” Mara asked.\\n\\nThe woman in the ship’s coat did not answer. She was watching the lantern on the sill. Its flame had turned blue.\\n\\nAbove them, the harbor master called that the waterline was dropping. Boots sounded on the stairs, then stopped. He had seen the lantern too.\\n\\n“It came through the gate?” he asked.\\n\\nMara nodded.\\n\\nHe took off his cap and held it against his chest. “There was a boat lost out there,” he said. “The winter they sealed the old passage. Seven aboard.”\\n\\nThe woman stepped away from the glass. “Eight,” she said. “My father went after them.”\\n\\nA faint knock came from the pipe: two, then one. She put her palm against the wall, but no second signal followed.\\n\\nMara looked at the bell lodged against the grate. When she pulled it free, water poured from its mouth. On the brass, beneath a crust of silt, someone had scratched a name. She carried it to the woman.\\n\\nFor a long time, the woman held the bell without speaking. Then she gave it one gentle shake. Its note traveled down the pipe, clear and small.\\n\\nThe lantern flame bent toward the flooded passage. Far beyond the glass, a single light answered. It hovered there until the woman raised her hand. Then it turned and followed the others into the dark.\"\n}",
+  "output_sha256": "dc56feda8afc9d077b09f040f3b0e3a71351e1a45692880ab6b21503886a9ee2",
+  "finish_reason": "stop",
+  "refusal": null,
+  "returned_model": "gpt-6-sol",
+  "usage": {
+    "prompt_tokens": 409,
+    "completion_tokens": 426,
+    "total_tokens": 835,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 37,
+      "audio_tokens": 0,
+      "accepted_prediction_tokens": 0,
+      "rejected_prediction_tokens": 0
+    }
+  },
+  "format": {
+    "json_object": true,
+    "rule_unchanged": true,
+    "passage_is_string": true,
+    "passage_sha256": "6f313f03dda0094fce9f1a05806542136553580ab734cbbf86be736ea20c174d",
+    "passage_words": 261
+  },
+  "finished_at": "2026-09-22T20:02:06.371858+00:00",
+  "latency_seconds": 6.3262,
+  "usage_cost_upper_estimate_usd": 0.005078,
+  "stream_status": "active",
+  "budget": {
+    "usage_cost_upper_estimate_usd": 2.5118753,
+    "uncertain_cost_reserve_usd": 0.04533,
+    "in_flight_reserve_usd": 0.5476537,
+    "limit_usd": 18.83
+  }
+}

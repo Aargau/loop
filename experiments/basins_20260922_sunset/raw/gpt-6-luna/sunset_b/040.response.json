@@ -1,0 +1,50 @@
+{
+  "model": "gpt-6-luna",
+  "seed": "sunset_b",
+  "hop": 40,
+  "http_status": 200,
+  "response_body": "{\n  \"id\": \"chatcmpl-ER10dfe5ZnmPpfQULFJQWmFUhyPe2\",\n  \"object\": \"chat.completion\",\n  \"created\": 1790107443,\n  \"model\": \"gpt-6-luna\",\n  \"choices\": [\n    {\n      \"index\": 0,\n      \"message\": {\n        \"role\": \"assistant\",\n        \"content\": \"{\\n  \\\"rule\\\": \\\"Return this JSON object with the rule field unchanged and a new passage of about 250 words in the text field.\\\",\\n  \\\"text\\\": \\\"The stories spread farther than Mara expected. Within a week, people came to the harbor carrying photographs, letters, and scraps of memory. Some remembered the families from the list; others recognized names in the faded handwriting. The dockmaster pinned every discovery to the wall of the old boathouse, turning it into a patchwork of faces and dates.\\\\n\\\\nOne afternoon, a woman named Elian arrived with a tin of seashells. Her grandmother, she said, had collected them as a child on the northern shore. Beneath the shells lay a small brass plate engraved with the same coastline as the map on Mara’s box. A second silver pin marked the clock tower.\\\\n\\\\nMara hurried to the tower with Elian and the dockmaster. Its door had been locked for decades, but the brass key fitted the narrow lock. Inside, dust coated the stairs. At the top, they found a wooden drawer built into the wall. It held a bundle of letters, each addressed to someone named on the list.\\\\n\\\\nThe letters described a storm that had forced the families to leave the coast. They had promised to return, but years passed, and the promise faded into family legend. Mara read the final letter aloud. It ended with an invitation: “When the harbor remembers us, let us meet again by the water.”\\\\n\\\\nThat evening, the townspeople lit lanterns along the dock. Elian brought her grandchildren, and the dockmaster rang the tower bell. Mara watched the reflections tremble across the waves. The harbor, she realized, had not simply kept the past safe. It had been waiting for someone to open the door.\\\"\\n}\",\n        \"refusal\": null,\n        \"annotations\": []\n      },\n      \"finish_reason\": \"stop\"\n    }\n  ],\n  \"usage\": {\n    \"prompt_tokens\": 388,\n    \"completion_tokens\": 415,\n    \"total_tokens\": 803,\n    \"prompt_tokens_details\": {\n      \"cached_tokens\": 0,\n      \"cache_write_tokens\": 0,\n      \"audio_tokens\": 0\n    },\n    \"completion_tokens_details\": {\n      \"reasoning_tokens\": 35,\n      \"audio_tokens\": 0,\n      \"accepted_prediction_tokens\": 0,\n      \"rejected_prediction_tokens\": 0\n    }\n  },\n  \"service_tier\": \"default\",\n  \"system_fingerprint\": null\n}\n",
+  "response_headers": {
+    "Date": "Tue, 22 Sep 2026 20:04:08 GMT",
+    "openai-processing-ms": "5156",
+    "x-request-id": "req_1711cc63032246f892c54a7977745c06"
+  },
+  "output": "{\n  \"rule\": \"Return this JSON object with the rule field unchanged and a new passage of about 250 words in the text field.\",\n  \"text\": \"The stories spread farther than Mara expected. Within a week, people came to the harbor carrying photographs, letters, and scraps of memory. Some remembered the families from the list; others recognized names in the faded handwriting. The dockmaster pinned every discovery to the wall of the old boathouse, turning it into a patchwork of faces and dates.\\n\\nOne afternoon, a woman named Elian arrived with a tin of seashells. Her grandmother, she said, had collected them as a child on the northern shore. Beneath the shells lay a small brass plate engraved with the same coastline as the map on Mara’s box. A second silver pin marked the clock tower.\\n\\nMara hurried to the tower with Elian and the dockmaster. Its door had been locked for decades, but the brass key fitted the narrow lock. Inside, dust coated the stairs. At the top, they found a wooden drawer built into the wall. It held a bundle of letters, each addressed to someone named on the list.\\n\\nThe letters described a storm that had forced the families to leave the coast. They had promised to return, but years passed, and the promise faded into family legend. Mara read the final letter aloud. It ended with an invitation: “When the harbor remembers us, let us meet again by the water.”\\n\\nThat evening, the townspeople lit lanterns along the dock. Elian brought her grandchildren, and the dockmaster rang the tower bell. Mara watched the reflections tremble across the waves. The harbor, she realized, had not simply kept the past safe. It had been waiting for someone to open the door.\"\n}",
+  "output_sha256": "6ed9fa6cf9493e20f622c838d8c81afa1a41c9135b21e4523e56f566b8b0bdd3",
+  "finish_reason": "stop",
+  "refusal": null,
+  "returned_model": "gpt-6-luna",
+  "usage": {
+    "prompt_tokens": 388,
+    "completion_tokens": 415,
+    "total_tokens": 803,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 35,
+      "audio_tokens": 0,
+      "accepted_prediction_tokens": 0,
+      "rejected_prediction_tokens": 0
+    }
+  },
+  "format": {
+    "json_object": true,
+    "rule_unchanged": true,
+    "passage_is_string": true,
+    "passage_sha256": "b5c9ac289d83f5e657cf10d9d9460785f45af0fff506c0fd217e019217bc40fa",
+    "passage_words": 267
+  },
+  "finished_at": "2026-09-22T20:04:04.119461+00:00",
+  "latency_seconds": 5.2744,
+  "usage_cost_upper_estimate_usd": 0.0002463,
+  "stream_status": "active",
+  "budget": {
+    "usage_cost_upper_estimate_usd": 3.2609012,
+    "uncertain_cost_reserve_usd": 0.04533,
+    "in_flight_reserve_usd": 0.58943,
+    "limit_usd": 18.83
+  }
+}

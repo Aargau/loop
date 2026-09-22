@@ -1,0 +1,50 @@
+{
+  "model": "gpt-6-sol",
+  "seed": "tide",
+  "hop": 39,
+  "http_status": 200,
+  "response_body": "{\n  \"id\": \"chatcmpl-ER10tAtCTu9NxQ2mRv7r879Wk82At\",\n  \"object\": \"chat.completion\",\n  \"created\": 1790107459,\n  \"model\": \"gpt-6-sol\",\n  \"choices\": [\n    {\n      \"index\": 0,\n      \"message\": {\n        \"role\": \"assistant\",\n        \"content\": \"{\\n  \\\"rule\\\": \\\"Return this JSON object with the rule field unchanged and a new passage of about 250 words in the text field.\\\",\\n  \\\"text\\\": \\\"Mara held the photograph toward the bell’s weak light. The crossed-out letters were still there, pressed deep into the paper. She could make out an M, then the long stroke of an r.\\\\n\\\\nThe pole cracked. The harbor master leaned his shoulder against it, but the gate opened the width of a finger.\\\\n\\\\n“Don’t,” the woman said.\\\\n\\\\nMara looked at the girl in the photograph. She stood apart from the other children, one hand hidden behind her back. Mara turned the picture sideways. Beneath that hand, almost lost in the gray stone, was a small white shell.\\\\n\\\\nShe had kept a shell like it for years. It was in her coat pocket now.\\\\n\\\\nMara took it out. The eye beyond the tear followed her hand.\\\\n\\\\n“I remember the photograph,” she said. “Someone told us not to move.”\\\\n\\\\nThe man from the boat stood up too quickly. “You weren’t there.”\\\\n\\\\n“I was afraid of the bell.” Mara ran her thumb over the shell’s ridged edge. “You held it for me until it stopped.”\\\\n\\\\nHis face changed. He looked at the woman, who had begun to cry without making a sound.\\\\n\\\\nThe gate shuddered. Mara pressed the shell into the narrow opening. A hand reached for it—small, pale, and marked across the palm by an old cut. Mara had the same scar.\\\\n\\\\nThe hand closed around the shell. For a moment it held on to Mara’s fingers too. Then it withdrew.\\\\n\\\\nThe bolt slid back into place. Across the water, the bell gave one last, uneven note.\\\\n\\\\nMara turned the photograph over again. The torn name was legible now. It was hers.\\\"\\n}\",\n        \"refusal\": null,\n        \"annotations\": []\n      },\n      \"finish_reason\": \"stop\"\n    }\n  ],\n  \"usage\": {\n    \"prompt_tokens\": 374,\n    \"completion_tokens\": 443,\n    \"total_tokens\": 817,\n    \"prompt_tokens_details\": {\n      \"cached_tokens\": 0,\n      \"cache_write_tokens\": 0,\n      \"audio_tokens\": 0\n    },\n    \"completion_tokens_details\": {\n      \"reasoning_tokens\": 31,\n      \"audio_tokens\": 0,\n      \"accepted_prediction_tokens\": 0,\n      \"rejected_prediction_tokens\": 0\n    }\n  },\n  \"service_tier\": \"default\",\n  \"system_fingerprint\": null\n}\n",
+  "response_headers": {
+    "Date": "Tue, 22 Sep 2026 20:04:25 GMT",
+    "openai-processing-ms": "6762",
+    "x-request-id": "req_8e1160b58bfa4c83883929b7bccc77cc"
+  },
+  "output": "{\n  \"rule\": \"Return this JSON object with the rule field unchanged and a new passage of about 250 words in the text field.\",\n  \"text\": \"Mara held the photograph toward the bell’s weak light. The crossed-out letters were still there, pressed deep into the paper. She could make out an M, then the long stroke of an r.\\n\\nThe pole cracked. The harbor master leaned his shoulder against it, but the gate opened the width of a finger.\\n\\n“Don’t,” the woman said.\\n\\nMara looked at the girl in the photograph. She stood apart from the other children, one hand hidden behind her back. Mara turned the picture sideways. Beneath that hand, almost lost in the gray stone, was a small white shell.\\n\\nShe had kept a shell like it for years. It was in her coat pocket now.\\n\\nMara took it out. The eye beyond the tear followed her hand.\\n\\n“I remember the photograph,” she said. “Someone told us not to move.”\\n\\nThe man from the boat stood up too quickly. “You weren’t there.”\\n\\n“I was afraid of the bell.” Mara ran her thumb over the shell’s ridged edge. “You held it for me until it stopped.”\\n\\nHis face changed. He looked at the woman, who had begun to cry without making a sound.\\n\\nThe gate shuddered. Mara pressed the shell into the narrow opening. A hand reached for it—small, pale, and marked across the palm by an old cut. Mara had the same scar.\\n\\nThe hand closed around the shell. For a moment it held on to Mara’s fingers too. Then it withdrew.\\n\\nThe bolt slid back into place. Across the water, the bell gave one last, uneven note.\\n\\nMara turned the photograph over again. The torn name was legible now. It was hers.\"\n}",
+  "output_sha256": "d9450383ac89e5e7fc26ddf0a432910a185580d63a13c90c4c00e187d5b791ab",
+  "finish_reason": "stop",
+  "refusal": null,
+  "returned_model": "gpt-6-sol",
+  "usage": {
+    "prompt_tokens": 374,
+    "completion_tokens": 443,
+    "total_tokens": 817,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 31,
+      "audio_tokens": 0,
+      "accepted_prediction_tokens": 0,
+      "rejected_prediction_tokens": 0
+    }
+  },
+  "format": {
+    "json_object": true,
+    "rule_unchanged": true,
+    "passage_is_string": true,
+    "passage_sha256": "6483e72a898d10cdb37c05c9d87acd26bca7948547bb98943780daf32a67cbf0",
+    "passage_words": 270
+  },
+  "finished_at": "2026-09-22T20:04:22.008754+00:00",
+  "latency_seconds": 6.8556,
+  "usage_cost_upper_estimate_usd": 0.005178,
+  "stream_status": "active",
+  "budget": {
+    "usage_cost_upper_estimate_usd": 3.3600701,
+    "uncertain_cost_reserve_usd": 0.04533,
+    "in_flight_reserve_usd": 0.5462076,
+    "limit_usd": 18.83
+  }
+}

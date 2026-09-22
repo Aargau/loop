@@ -1,0 +1,50 @@
+{
+  "model": "gpt-6-sol",
+  "seed": "sunset_replacement",
+  "hop": 46,
+  "http_status": 200,
+  "response_body": "{\n  \"id\": \"chatcmpl-ER1l6MrIMdgYM5EVMtM7n2Nu0NAeX\",\n  \"object\": \"chat.completion\",\n  \"created\": 1790110324,\n  \"model\": \"gpt-6-sol\",\n  \"choices\": [\n    {\n      \"index\": 0,\n      \"message\": {\n        \"role\": \"assistant\",\n        \"content\": \"{\\n  \\\"rule\\\": \\\"Return this JSON object with the rule field unchanged and a new passage of about 250 words in the text field.\\\",\\n  \\\"text\\\": \\\"The constable took a step toward the stairs. Ada held out her arm.\\\\n\\\\n“She’s dead,” she said.\\\\n\\\\nBelow them, the front-door latch clicked. The constable looked down at the key still hanging from his belt.\\\\n\\\\nVenn folded the yellow paper along its old creases. “The warning said not to answer until it asks to leave. Did the voice ask?”\\\\n\\\\nAda thought of the sigh behind the door. She remembered. Not a question. Not even a request.\\\\n\\\\nThe six letters on the floor began to turn, each one scraping a slow circle in the dust. From downstairs came the sound of wet shoes crossing the hall.\\\\n\\\\n“Mara,” Ada called, “what was carved beneath your name?”\\\\n\\\\nThe footsteps stopped.\\\\n\\\\nFor a moment there was only rain, pattering impossibly through the open brass gate. Then Mara’s voice rose from the landing below. “You know what it says.”\\\\n\\\\n“I know what I read.” Ada glanced at the letters. They had come to rest in a different order. “I’m asking you.”\\\\n\\\\nThe lantern guttered. In its wavering light, Ada saw water creeping up the stairs, step by step, though nothing spilled over the edges.\\\\n\\\\nVenn crouched beside the letters. “This isn’t her name,” he whispered.\\\\n\\\\nAt the bottom of the stairs, Mara laughed once. It sounded like a woman recognizing a familiar mistake.\\\\n\\\\nAda picked up the first letter. The water halted.\\\\n\\\\n“Tell me whose name it is,” she said.\\\\n\\\\nThe brass gate snapped shut. Every scratch returned to the door at once, deep enough to show pale wood beneath the paint. Downstairs, the wet footsteps began to climb.\\\"\\n}\",\n        \"refusal\": null,\n        \"annotations\": []\n      },\n      \"finish_reason\": \"stop\"\n    }\n  ],\n  \"usage\": {\n    \"prompt_tokens\": 376,\n    \"completion_tokens\": 440,\n    \"total_tokens\": 816,\n    \"prompt_tokens_details\": {\n      \"cached_tokens\": 0,\n      \"cache_write_tokens\": 0,\n      \"audio_tokens\": 0\n    },\n    \"completion_tokens_details\": {\n      \"reasoning_tokens\": 26,\n      \"audio_tokens\": 0,\n      \"accepted_prediction_tokens\": 0,\n      \"rejected_prediction_tokens\": 0\n    }\n  },\n  \"service_tier\": \"default\",\n  \"system_fingerprint\": null\n}\n",
+  "response_headers": {
+    "Date": "Tue, 22 Sep 2026 20:52:11 GMT",
+    "openai-processing-ms": "7681",
+    "x-request-id": "req_1fa6d17590b64a4b8ca1e69db43ab15d"
+  },
+  "output": "{\n  \"rule\": \"Return this JSON object with the rule field unchanged and a new passage of about 250 words in the text field.\",\n  \"text\": \"The constable took a step toward the stairs. Ada held out her arm.\\n\\n“She’s dead,” she said.\\n\\nBelow them, the front-door latch clicked. The constable looked down at the key still hanging from his belt.\\n\\nVenn folded the yellow paper along its old creases. “The warning said not to answer until it asks to leave. Did the voice ask?”\\n\\nAda thought of the sigh behind the door. She remembered. Not a question. Not even a request.\\n\\nThe six letters on the floor began to turn, each one scraping a slow circle in the dust. From downstairs came the sound of wet shoes crossing the hall.\\n\\n“Mara,” Ada called, “what was carved beneath your name?”\\n\\nThe footsteps stopped.\\n\\nFor a moment there was only rain, pattering impossibly through the open brass gate. Then Mara’s voice rose from the landing below. “You know what it says.”\\n\\n“I know what I read.” Ada glanced at the letters. They had come to rest in a different order. “I’m asking you.”\\n\\nThe lantern guttered. In its wavering light, Ada saw water creeping up the stairs, step by step, though nothing spilled over the edges.\\n\\nVenn crouched beside the letters. “This isn’t her name,” he whispered.\\n\\nAt the bottom of the stairs, Mara laughed once. It sounded like a woman recognizing a familiar mistake.\\n\\nAda picked up the first letter. The water halted.\\n\\n“Tell me whose name it is,” she said.\\n\\nThe brass gate snapped shut. Every scratch returned to the door at once, deep enough to show pale wood beneath the paint. Downstairs, the wet footsteps began to climb.\"\n}",
+  "output_sha256": "9b455acb9b54af2181897981b4a7afacc8444f316b077cf38e6775305fc54c50",
+  "finish_reason": "stop",
+  "refusal": null,
+  "returned_model": "gpt-6-sol",
+  "usage": {
+    "prompt_tokens": 376,
+    "completion_tokens": 440,
+    "total_tokens": 816,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 26,
+      "audio_tokens": 0,
+      "accepted_prediction_tokens": 0,
+      "rejected_prediction_tokens": 0
+    }
+  },
+  "format": {
+    "json_object": true,
+    "rule_unchanged": true,
+    "passage_is_string": true,
+    "passage_sha256": "48b6b64266d1000da733623ce7fcf27380ec6f9815a0855a13a30769d2008278",
+    "passage_words": 264
+  },
+  "finished_at": "2026-09-22T20:52:07.028485+00:00",
+  "latency_seconds": 7.8156,
+  "usage_cost_upper_estimate_usd": 0.005152,
+  "stream_status": "active",
+  "budget": {
+    "usage_cost_upper_estimate_usd": 0.230462,
+    "uncertain_cost_reserve_usd": 0.0,
+    "in_flight_reserve_usd": 0.0,
+    "limit_usd": 3.0
+  }
+}

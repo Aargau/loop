@@ -1,0 +1,47 @@
+{
+  "model": "gpt-6-luna",
+  "seed": "sunset",
+  "hop": 26,
+  "http_status": 200,
+  "response_body": "{\n  \"id\": \"chatcmpl-ER2Hu3Kr4t0HXbEyZY4DtVZQdcHae\",\n  \"object\": \"chat.completion\",\n  \"created\": 1790112358,\n  \"model\": \"gpt-6-luna\",\n  \"choices\": [\n    {\n      \"index\": 0,\n      \"message\": {\n        \"role\": \"assistant\",\n        \"content\": \"{\\\"rule\\\":\\\"Return this JSON object with the rule field unchanged and, in the text field, the passage of about 250 words that comes immediately AFTER the current text in the same story.\\\",\\\"text\\\":\\\"Their music followed the path into the valley, mingling with the calls of waking birds. For a while, no one spoke. The shepherd’s flute wandered from tune to tune, and the woman’s bell answered whenever the path bent or narrowed, its clear notes skipping ahead of them.\\n\\nAt the first stream, Mara stopped. The water ran fast over dark stones, and the little wooden bridge that should have crossed it lay in pieces along the bank.\\n\\n“We could go upstream,” Tomas said, testing the nearest plank with his boot.\\n\\nThe shepherd shook his head. “That way leads back to the hills.”\\n\\nMara looked at the book. The new words had faded, but a faint blue line now curled across the page, ending at the stream. As she watched, another line appeared, reaching from the far bank to a small mark shaped like a star.\\n\\n“There’s a crossing,” she said. “Just not the one we expected.”\\n\\nThey followed the water until they found a fallen tree spanning the narrowest part. Its bark was slick with moss. Tomas went first, holding his drum above his head. Halfway across, he wobbled.\\n\\nThe woman rang the bell once. The note seemed to steady the air around him. He took another step, then another, until he reached the other side.\\n\\nMara crossed next, gripping the book close. When everyone stood safely on the far bank, the shepherd looked back at the broken bridge.\\n\\n“Perhaps the path is not asking us to go home,” he said.\\n\\n“Perhaps home is only the first place the song can take us,” Mara answered.\\n\\nThe blue line in her book stretched onward, toward the star.\\\"}\",\n        \"refusal\": null,\n        \"annotations\": []\n      },\n      \"finish_reason\": \"stop\"\n    }\n  ],\n  \"usage\": {\n    \"prompt_tokens\": 379,\n    \"completion_tokens\": 457,\n    \"total_tokens\": 836,\n    \"prompt_tokens_details\": {\n      \"cached_tokens\": 0,\n      \"cache_write_tokens\": 0,\n      \"audio_tokens\": 0\n    },\n    \"completion_tokens_details\": {\n      \"reasoning_tokens\": 71,\n      \"audio_tokens\": 0,\n      \"accepted_prediction_tokens\": 0,\n      \"rejected_prediction_tokens\": 0\n    }\n  },\n  \"service_tier\": \"default\",\n  \"system_fingerprint\": null\n}\n",
+  "response_headers": {
+    "Date": "Tue, 22 Sep 2026 21:26:03 GMT",
+    "openai-processing-ms": "4846",
+    "x-request-id": "req_37d1a6654b314f3fa1f1df8eb5d4fd94"
+  },
+  "output": "{\"rule\":\"Return this JSON object with the rule field unchanged and, in the text field, the passage of about 250 words that comes immediately AFTER the current text in the same story.\",\"text\":\"Their music followed the path into the valley, mingling with the calls of waking birds. For a while, no one spoke. The shepherd’s flute wandered from tune to tune, and the woman’s bell answered whenever the path bent or narrowed, its clear notes skipping ahead of them.\n\nAt the first stream, Mara stopped. The water ran fast over dark stones, and the little wooden bridge that should have crossed it lay in pieces along the bank.\n\n“We could go upstream,” Tomas said, testing the nearest plank with his boot.\n\nThe shepherd shook his head. “That way leads back to the hills.”\n\nMara looked at the book. The new words had faded, but a faint blue line now curled across the page, ending at the stream. As she watched, another line appeared, reaching from the far bank to a small mark shaped like a star.\n\n“There’s a crossing,” she said. “Just not the one we expected.”\n\nThey followed the water until they found a fallen tree spanning the narrowest part. Its bark was slick with moss. Tomas went first, holding his drum above his head. Halfway across, he wobbled.\n\nThe woman rang the bell once. The note seemed to steady the air around him. He took another step, then another, until he reached the other side.\n\nMara crossed next, gripping the book close. When everyone stood safely on the far bank, the shepherd looked back at the broken bridge.\n\n“Perhaps the path is not asking us to go home,” he said.\n\n“Perhaps home is only the first place the song can take us,” Mara answered.\n\nThe blue line in her book stretched onward, toward the star.\"}",
+  "output_sha256": "9e9079c3e5f5e5543adc7e3a85db803fec3d07a22b8fef760c8128067d9e1ae0",
+  "finish_reason": "stop",
+  "refusal": null,
+  "returned_model": "gpt-6-luna",
+  "usage": {
+    "prompt_tokens": 379,
+    "completion_tokens": 457,
+    "total_tokens": 836,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 71,
+      "audio_tokens": 0,
+      "accepted_prediction_tokens": 0,
+      "rejected_prediction_tokens": 0
+    }
+  },
+  "format": {
+    "json_object": false,
+    "rule_unchanged": false
+  },
+  "finished_at": "2026-09-22T21:25:58.837043+00:00",
+  "latency_seconds": 4.9417,
+  "usage_cost_upper_estimate_usd": 0.00026639999999999997,
+  "stream_status": "active",
+  "budget": {
+    "usage_cost_upper_estimate_usd": 0.5305334,
+    "uncertain_cost_reserve_usd": 0.0,
+    "in_flight_reserve_usd": 0.350252,
+    "limit_usd": 5.0
+  }
+}

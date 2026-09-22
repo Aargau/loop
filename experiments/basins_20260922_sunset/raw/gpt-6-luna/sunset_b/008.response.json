@@ -1,0 +1,50 @@
+{
+  "model": "gpt-6-luna",
+  "seed": "sunset_b",
+  "hop": 8,
+  "http_status": 200,
+  "response_body": "{\n  \"id\": \"chatcmpl-ER0tqwRYnxT2HuTWtJwYAWd0UyHoa\",\n  \"object\": \"chat.completion\",\n  \"created\": 1790107022,\n  \"model\": \"gpt-6-luna\",\n  \"choices\": [\n    {\n      \"index\": 0,\n      \"message\": {\n        \"role\": \"assistant\",\n        \"content\": \"{\\\"rule\\\":\\\"Return this JSON object with the rule field unchanged and a new passage of about 250 words in the text field.\\\",\\\"text\\\":\\\"On the last day of autumn, Mara discovered a door in the old apple tree. It was no taller than her hand, painted green, with a brass knob shaped like a curled leaf. She had climbed that tree every week since she was small, but she had never seen the door before.\\\\n\\\\nWhen she turned the knob, warm air drifted out, carrying the scent of cinnamon and rain. A narrow staircase spiraled down into the trunk. Mara squeezed through and found herself in a round room lit by dozens of glowing acorns. At a wooden desk sat a tiny woman wearing a coat stitched from red leaves.\\\\n\\\\n“You’re late,” the woman said, checking a pocket watch.\\\\n\\\\n“For what?” Mara asked.\\\\n\\\\n“For returning the wind.” The woman pointed to a glass bottle on the desk. Inside, a silver breeze curled and tapped against the glass. “It escaped from the northern hills. Without it, the clouds can’t travel, and the winter snow will miss the valley.”\\\\n\\\\nMara carried the bottle upstairs. At the top of the tree, she pulled out the cork. The wind sprang free, tugged her scarf loose, and rushed across the fields. Above her, clouds began to gather, their gray edges glowing pink in the sunset.\\\\n\\\\nThe little door clicked shut behind her. When Mara looked again, it had vanished beneath the bark.\\\\n\\\\nThat night, snow began to fall, soft and steady. In the morning, she found a red leaf on her windowsill, folded into the shape of a thank-you note. She tucked it inside her pocket and went out to make the first footprints in the snow.\\\"}\",\n        \"refusal\": null,\n        \"annotations\": []\n      },\n      \"finish_reason\": \"stop\"\n    }\n  ],\n  \"usage\": {\n    \"prompt_tokens\": 392,\n    \"completion_tokens\": 425,\n    \"total_tokens\": 817,\n    \"prompt_tokens_details\": {\n      \"cached_tokens\": 0,\n      \"cache_write_tokens\": 0,\n      \"audio_tokens\": 0\n    },\n    \"completion_tokens_details\": {\n      \"reasoning_tokens\": 48,\n      \"audio_tokens\": 0,\n      \"accepted_prediction_tokens\": 0,\n      \"rejected_prediction_tokens\": 0\n    }\n  },\n  \"service_tier\": \"default\",\n  \"system_fingerprint\": null\n}\n",
+  "response_headers": {
+    "Date": "Tue, 22 Sep 2026 19:57:06 GMT",
+    "openai-processing-ms": "4706",
+    "x-request-id": "req_a4dc1db314c747e39f3dee0b5af535ac"
+  },
+  "output": "{\"rule\":\"Return this JSON object with the rule field unchanged and a new passage of about 250 words in the text field.\",\"text\":\"On the last day of autumn, Mara discovered a door in the old apple tree. It was no taller than her hand, painted green, with a brass knob shaped like a curled leaf. She had climbed that tree every week since she was small, but she had never seen the door before.\\n\\nWhen she turned the knob, warm air drifted out, carrying the scent of cinnamon and rain. A narrow staircase spiraled down into the trunk. Mara squeezed through and found herself in a round room lit by dozens of glowing acorns. At a wooden desk sat a tiny woman wearing a coat stitched from red leaves.\\n\\n“You’re late,” the woman said, checking a pocket watch.\\n\\n“For what?” Mara asked.\\n\\n“For returning the wind.” The woman pointed to a glass bottle on the desk. Inside, a silver breeze curled and tapped against the glass. “It escaped from the northern hills. Without it, the clouds can’t travel, and the winter snow will miss the valley.”\\n\\nMara carried the bottle upstairs. At the top of the tree, she pulled out the cork. The wind sprang free, tugged her scarf loose, and rushed across the fields. Above her, clouds began to gather, their gray edges glowing pink in the sunset.\\n\\nThe little door clicked shut behind her. When Mara looked again, it had vanished beneath the bark.\\n\\nThat night, snow began to fall, soft and steady. In the morning, she found a red leaf on her windowsill, folded into the shape of a thank-you note. She tucked it inside her pocket and went out to make the first footprints in the snow.\"}",
+  "output_sha256": "8c46cd7461fb0ffe350fa416bbf11d39a014f3bf05f45b461a75f8c820764df5",
+  "finish_reason": "stop",
+  "refusal": null,
+  "returned_model": "gpt-6-luna",
+  "usage": {
+    "prompt_tokens": 392,
+    "completion_tokens": 425,
+    "total_tokens": 817,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 48,
+      "audio_tokens": 0,
+      "accepted_prediction_tokens": 0,
+      "rejected_prediction_tokens": 0
+    }
+  },
+  "format": {
+    "json_object": true,
+    "rule_unchanged": true,
+    "passage_is_string": true,
+    "passage_sha256": "b858772970fcf6d319d9b2077c07b9ac23f3957bbc793a80773d4e3f0501666d",
+    "passage_words": 269
+  },
+  "finished_at": "2026-09-22T19:57:02.695211+00:00",
+  "latency_seconds": 4.83,
+  "usage_cost_upper_estimate_usd": 0.0002517,
+  "stream_status": "active",
+  "budget": {
+    "usage_cost_upper_estimate_usd": 0.6127559,
+    "uncertain_cost_reserve_usd": 0.0,
+    "in_flight_reserve_usd": 0.588392,
+    "limit_usd": 18.83
+  }
+}

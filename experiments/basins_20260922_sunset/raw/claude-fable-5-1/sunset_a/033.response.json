@@ -1,0 +1,48 @@
+{
+  "model": "claude-fable-5-1",
+  "seed": "sunset_a",
+  "hop": 33,
+  "http_status": 200,
+  "response_body": "{\"model\":\"claude-fable-5-1\",\"id\":\"msg_011CfK6KFnmhjrA5mx6VsxBX\",\"type\":\"message\",\"role\":\"assistant\",\"content\":[{\"type\":\"text\",\"text\":\"{\\\"rule\\\": \\\"Return this JSON object with the rule field unchanged and a new passage of about 250 words in the text field.\\\", \\\"text\\\": \\\"The key was where the letter said it would be, under the third flowerpot from the door, and it turned in the lock as if the lock had been waiting for it. Ines pushed the door and stood on the threshold without going in.\\\\n\\\\nThe hall smelled of dust and, under that, of something she had not expected: the same cheap lavender soap her aunt had used for forty years, so faint it might have been memory. The coats still hung on their pegs. Someone had left a pair of boots at the foot of the stairs with newspaper stuffed in the toes, and the newspaper was yellow.\\\\n\\\\nHer brother had said to sell it without looking. He had said it on the phone, quickly, the way he said things he wanted to be done with. Get a man in, sign what he gives you, come home. She had agreed with him. She had driven six hours anyway.\\\\n\\\\nIn the kitchen the clock had stopped at ten past four. She wound it without thinking and it began again, loud in the quiet, and she almost stopped it. Instead she opened the drawer beside the sink. String, rubber bands, a tin of buttons she remembered being allowed to sort on rainy afternoons. Under the buttons, a photograph she had never seen: her aunt at twenty, laughing, on a beach Ines did not recognise, with a man whose face had been carefully cut away.\\\\n\\\\nShe sat down at the table. The clock went on. Outside, the light was already changing, and she had not yet taken off her coat.\\\"}\"}],\"container\":null,\"stop_reason\":\"end_turn\",\"stop_sequence\":null,\"stop_details\":null,\"usage\":{\"input_tokens\":510,\"cache_creation_input_tokens\":0,\"cache_read_input_tokens\":0,\"cache_creation\":{\"ephemeral_5m_input_tokens\":0,\"ephemeral_1h_input_tokens\":0},\"output_tokens\":513,\"output_tokens_details\":{\"thinking_tokens\":0},\"service_tier\":\"standard\",\"inference_geo\":\"global\"}}",
+  "response_headers": {
+    "Date": "Tue, 22 Sep 2026 20:15:59 GMT",
+    "request-id": "req_011CfK6KEtwXYp5JAnN4WFsL"
+  },
+  "output": "{\"rule\": \"Return this JSON object with the rule field unchanged and a new passage of about 250 words in the text field.\", \"text\": \"The key was where the letter said it would be, under the third flowerpot from the door, and it turned in the lock as if the lock had been waiting for it. Ines pushed the door and stood on the threshold without going in.\\n\\nThe hall smelled of dust and, under that, of something she had not expected: the same cheap lavender soap her aunt had used for forty years, so faint it might have been memory. The coats still hung on their pegs. Someone had left a pair of boots at the foot of the stairs with newspaper stuffed in the toes, and the newspaper was yellow.\\n\\nHer brother had said to sell it without looking. He had said it on the phone, quickly, the way he said things he wanted to be done with. Get a man in, sign what he gives you, come home. She had agreed with him. She had driven six hours anyway.\\n\\nIn the kitchen the clock had stopped at ten past four. She wound it without thinking and it began again, loud in the quiet, and she almost stopped it. Instead she opened the drawer beside the sink. String, rubber bands, a tin of buttons she remembered being allowed to sort on rainy afternoons. Under the buttons, a photograph she had never seen: her aunt at twenty, laughing, on a beach Ines did not recognise, with a man whose face had been carefully cut away.\\n\\nShe sat down at the table. The clock went on. Outside, the light was already changing, and she had not yet taken off her coat.\"}",
+  "output_sha256": "aca09cf10a0530e0d971b53b3d8b54578bb50258c9b18c4b654a0cee978a4484",
+  "finish_reason": "end_turn",
+  "refusal": null,
+  "returned_model": "claude-fable-5-1",
+  "usage": {
+    "input_tokens": 510,
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 0,
+    "cache_creation": {
+      "ephemeral_5m_input_tokens": 0,
+      "ephemeral_1h_input_tokens": 0
+    },
+    "output_tokens": 513,
+    "output_tokens_details": {
+      "thinking_tokens": 0
+    },
+    "service_tier": "standard",
+    "inference_geo": "global"
+  },
+  "format": {
+    "json_object": true,
+    "rule_unchanged": true,
+    "passage_is_string": true,
+    "passage_sha256": "db4469299e79a3846a87aaa2336d661b28f8add8fd7c1fa075e1f3512cb37d0d",
+    "passage_words": 267
+  },
+  "finished_at": "2026-09-22T20:15:55.267726+00:00",
+  "latency_seconds": 10.8143,
+  "usage_cost_upper_estimate_usd": 0.03075,
+  "stream_status": "active",
+  "budget": {
+    "usage_cost_upper_estimate_usd": 7.4835737,
+    "uncertain_cost_reserve_usd": 0.04533,
+    "in_flight_reserve_usd": 0.317798,
+    "limit_usd": 18.83
+  }
+}

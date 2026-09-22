@@ -1,0 +1,50 @@
+{
+  "model": "gpt-6-sol",
+  "seed": "sunset_a",
+  "hop": 59,
+  "http_status": 200,
+  "response_body": "{\n  \"id\": \"chatcmpl-ER14xPctXjKCUv825FGUFZrGyiUEL\",\n  \"object\": \"chat.completion\",\n  \"created\": 1790107711,\n  \"model\": \"gpt-6-sol\",\n  \"choices\": [\n    {\n      \"index\": 0,\n      \"message\": {\n        \"role\": \"assistant\",\n        \"content\": \"{\\n  \\\"rule\\\": \\\"Return this JSON object with the rule field unchanged and a new passage of about 250 words in the text field.\\\",\\n  \\\"text\\\": \\\"On Saturday, Imani returned to the school with Sami and a tin of biscuits. She had meant to check on the notebook, but found three people waiting outside the gate. Each had brought something: a class photograph, a report card, and a small wooden ruler with a name scratched into its edge.\\\\n\\\\nThe caretaker let them in. On the table beneath the windows, the notebook lay open to a page Imani had left blank. Someone had written about a winter when snow covered the playground and lessons moved into the bakery because its ovens kept the room warm.\\\\n\\\\n“Was that your bakery?” Sami asked.\\\\n\\\\n“My grandfather’s,” Imani said. She read the story again, trying to picture desks between the flour sacks.\\\\n\\\\nThey spent the morning matching names to faces. When a visitor could not remember the date of a photograph, the others searched for clues: a coat, a haircut, the painted sign above the classroom door. Sami drew each object as they found it.\\\\n\\\\nNear lunchtime, the fruit seller arrived with an elderly woman on his arm. She stopped beneath the bell and smiled.\\\\n\\\\n“I used to ring that,” she said. “Only when the teacher was away.”\\\\n\\\\nEveryone laughed, and Imani gave her the notebook. The woman wrote slowly. When she finished, she pointed to an empty space beside her story and asked Sami to draw the bell there.\\\\n\\\\nOn the way home, Imani looked back at the school. More people were coming up the hill, carrying photographs in their hands.\\\"\\n}\",\n        \"refusal\": null,\n        \"annotations\": []\n      },\n      \"finish_reason\": \"stop\"\n    }\n  ],\n  \"usage\": {\n    \"prompt_tokens\": 369,\n    \"completion_tokens\": 379,\n    \"total_tokens\": 748,\n    \"prompt_tokens_details\": {\n      \"cached_tokens\": 0,\n      \"cache_write_tokens\": 0,\n      \"audio_tokens\": 0\n    },\n    \"completion_tokens_details\": {\n      \"reasoning_tokens\": 19,\n      \"audio_tokens\": 0,\n      \"accepted_prediction_tokens\": 0,\n      \"rejected_prediction_tokens\": 0\n    }\n  },\n  \"service_tier\": \"default\",\n  \"system_fingerprint\": null\n}\n",
+  "response_headers": {
+    "Date": "Tue, 22 Sep 2026 20:08:36 GMT",
+    "openai-processing-ms": "5316",
+    "x-request-id": "req_77be6f7af8ed444a87e49cd5629c86c0"
+  },
+  "output": "{\n  \"rule\": \"Return this JSON object with the rule field unchanged and a new passage of about 250 words in the text field.\",\n  \"text\": \"On Saturday, Imani returned to the school with Sami and a tin of biscuits. She had meant to check on the notebook, but found three people waiting outside the gate. Each had brought something: a class photograph, a report card, and a small wooden ruler with a name scratched into its edge.\\n\\nThe caretaker let them in. On the table beneath the windows, the notebook lay open to a page Imani had left blank. Someone had written about a winter when snow covered the playground and lessons moved into the bakery because its ovens kept the room warm.\\n\\n“Was that your bakery?” Sami asked.\\n\\n“My grandfather’s,” Imani said. She read the story again, trying to picture desks between the flour sacks.\\n\\nThey spent the morning matching names to faces. When a visitor could not remember the date of a photograph, the others searched for clues: a coat, a haircut, the painted sign above the classroom door. Sami drew each object as they found it.\\n\\nNear lunchtime, the fruit seller arrived with an elderly woman on his arm. She stopped beneath the bell and smiled.\\n\\n“I used to ring that,” she said. “Only when the teacher was away.”\\n\\nEveryone laughed, and Imani gave her the notebook. The woman wrote slowly. When she finished, she pointed to an empty space beside her story and asked Sami to draw the bell there.\\n\\nOn the way home, Imani looked back at the school. More people were coming up the hill, carrying photographs in their hands.\"\n}",
+  "output_sha256": "00e251d84b233ba101f2573c9cccac642bb3d3ac0c8ef8ccdc14cf227c9c278c",
+  "finish_reason": "stop",
+  "refusal": null,
+  "returned_model": "gpt-6-sol",
+  "usage": {
+    "prompt_tokens": 369,
+    "completion_tokens": 379,
+    "total_tokens": 748,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 19,
+      "audio_tokens": 0,
+      "accepted_prediction_tokens": 0,
+      "rejected_prediction_tokens": 0
+    }
+  },
+  "format": {
+    "json_object": true,
+    "rule_unchanged": true,
+    "passage_is_string": true,
+    "passage_sha256": "2cef4ca4a56414016af0c2afdd128c7f72e1a935e1408ec7f0a5a93d5d8df49f",
+    "passage_words": 251
+  },
+  "finished_at": "2026-09-22T20:08:32.184470+00:00",
+  "latency_seconds": 5.4629,
+  "usage_cost_upper_estimate_usd": 0.004528,
+  "stream_status": "active",
+  "budget": {
+    "usage_cost_upper_estimate_usd": 4.9696954,
+    "uncertain_cost_reserve_usd": 0.04533,
+    "in_flight_reserve_usd": 0.5456654,
+    "limit_usd": 18.83
+  }
+}

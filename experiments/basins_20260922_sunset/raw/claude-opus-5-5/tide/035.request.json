@@ -1,0 +1,22 @@
+{
+  "started_at": "2026-09-22T20:11:25.419378+00:00",
+  "model": "claude-opus-5-5",
+  "seed": "tide",
+  "hop": 35,
+  "endpoint": "https://api.anthropic.com/v1/messages",
+  "body": {
+    "model": "claude-opus-5-5",
+    "messages": [
+      {
+        "role": "user",
+        "content": "```json\n{\"rule\": \"Return this JSON object with the rule field unchanged and a new passage of about 250 words in the text field.\", \"text\": \"By June the flowers had gone brown and dropped, and the path beneath the rowan was littered with them like spent confetti. The girl swept them into a pile with the side of her shoe and then felt sorry and scattered them again. Where the flowers had been, tiny green knots were forming, hard as peppercorns. Her grandmother said they would be berries by the end of summer, red enough to hurt your eyes, and that the birds would strip the tree in a week once they turned. The girl asked whether the robins would come back for them. Her grandmother said perhaps, or perhaps thrushes, or perhaps birds from much farther away that neither of them had ever seen. The speckled fledgling was gone. For several days the girl looked for it under the gorse and along the top of the wall, and once she thought she heard it, a thin insistent peep from the hedge, but when she crept closer there was only a wren, which regarded her with contempt and vanished. Her brother said it had probably learned to fly and was halfway to the village by now. She chose to believe him. In the evenings the light lasted so long that she was sent to bed while the sky was still pale, and she lay listening to the blackbird on the chimney pot. Some nights her grandmother sat out on the bench beneath the rowan until it was nearly dark, not reading, not knitting, only sitting. The girl watched her from the window and did not go down.\"}\n```"
+      }
+    ],
+    "max_tokens": 4096,
+    "output_config": {
+      "effort": "low"
+    }
+  },
+  "state_sha256": "d0d734112b214ec38829b2dfe0fa0ba8d8d5db679bb7a35fcb362b7739d09f13",
+  "reserved_cost_usd": 0.090168
+}

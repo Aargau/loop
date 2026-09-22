@@ -1,0 +1,50 @@
+{
+  "model": "gpt-6-luna",
+  "seed": "tide_a",
+  "hop": 5,
+  "http_status": 200,
+  "response_body": "{\n  \"id\": \"chatcmpl-ER0p2ksw9PUqlD1r2pSf2rkSb9O8H\",\n  \"object\": \"chat.completion\",\n  \"created\": 1790106724,\n  \"model\": \"gpt-6-luna\",\n  \"choices\": [\n    {\n      \"index\": 0,\n      \"message\": {\n        \"role\": \"assistant\",\n        \"content\": \"{\\\"rule\\\":\\\"Return this JSON object with the rule field unchanged and a new passage of about 250 words in the text field.\\\",\\\"text\\\":\\\"Every evening, Mara unlocked the little observatory on the hill and swept dust from its brass telescope. The building had belonged to her aunt, who claimed she could hear the stars humming. Mara had never heard a thing.\\\\n\\\\nOn the first clear night of autumn, she aimed the telescope at the brightest star and waited. A faint note trembled through the room—so soft she thought it might be the wind. Then the star blinked, and the note became a melody.\\\\n\\\\nMara hurried outside. Across the valley, windows lit one by one. People stepped onto their porches, looking up. Even old Mr. Iven, who had not left his house in months, stood beneath the maple tree in his slippers.\\\\n\\\\nThe melody changed. It was not a song with words, but Mara recognized its shape: the tune her aunt used to whistle while making tea. She adjusted the telescope, and the star seemed to draw closer, filling the lens with a silver shimmer.\\\\n\\\\nA small paper envelope slid from the telescope’s brass housing. Inside was a note in her aunt’s careful hand: “The sky is not far away. It is what we remember together.”\\\\n\\\\nMara read it aloud. Around her, neighbors began humming the melody, each one finding a different part. Their voices traveled down the hill and through the sleeping town.\\\\n\\\\nBy morning, the star had vanished into daylight. The observatory was quiet again, but Mara left its door unlocked. That night, she knew, someone else might come looking for the song—and find the whole town already singing.\\\"}\",\n        \"refusal\": null,\n        \"annotations\": []\n      },\n      \"finish_reason\": \"stop\"\n    }\n  ],\n  \"usage\": {\n    \"prompt_tokens\": 395,\n    \"completion_tokens\": 418,\n    \"total_tokens\": 813,\n    \"prompt_tokens_details\": {\n      \"cached_tokens\": 0,\n      \"cache_write_tokens\": 0,\n      \"audio_tokens\": 0\n    },\n    \"completion_tokens_details\": {\n      \"reasoning_tokens\": 54,\n      \"audio_tokens\": 0,\n      \"accepted_prediction_tokens\": 0,\n      \"rejected_prediction_tokens\": 0\n    }\n  },\n  \"service_tier\": \"default\",\n  \"system_fingerprint\": null\n}\n",
+  "response_headers": {
+    "Date": "Tue, 22 Sep 2026 19:52:08 GMT",
+    "openai-processing-ms": "4738",
+    "x-request-id": "req_6167c5f62ffc44f4b038317bc3b30807"
+  },
+  "output": "{\"rule\":\"Return this JSON object with the rule field unchanged and a new passage of about 250 words in the text field.\",\"text\":\"Every evening, Mara unlocked the little observatory on the hill and swept dust from its brass telescope. The building had belonged to her aunt, who claimed she could hear the stars humming. Mara had never heard a thing.\\n\\nOn the first clear night of autumn, she aimed the telescope at the brightest star and waited. A faint note trembled through the room—so soft she thought it might be the wind. Then the star blinked, and the note became a melody.\\n\\nMara hurried outside. Across the valley, windows lit one by one. People stepped onto their porches, looking up. Even old Mr. Iven, who had not left his house in months, stood beneath the maple tree in his slippers.\\n\\nThe melody changed. It was not a song with words, but Mara recognized its shape: the tune her aunt used to whistle while making tea. She adjusted the telescope, and the star seemed to draw closer, filling the lens with a silver shimmer.\\n\\nA small paper envelope slid from the telescope’s brass housing. Inside was a note in her aunt’s careful hand: “The sky is not far away. It is what we remember together.”\\n\\nMara read it aloud. Around her, neighbors began humming the melody, each one finding a different part. Their voices traveled down the hill and through the sleeping town.\\n\\nBy morning, the star had vanished into daylight. The observatory was quiet again, but Mara left its door unlocked. That night, she knew, someone else might come looking for the song—and find the whole town already singing.\"}",
+  "output_sha256": "4d71435b91bf07473bf795d6b040d806303c9227e49cb78155b66a3ddc143b96",
+  "finish_reason": "stop",
+  "refusal": null,
+  "returned_model": "gpt-6-luna",
+  "usage": {
+    "prompt_tokens": 395,
+    "completion_tokens": 418,
+    "total_tokens": 813,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 54,
+      "audio_tokens": 0,
+      "accepted_prediction_tokens": 0,
+      "rejected_prediction_tokens": 0
+    }
+  },
+  "format": {
+    "json_object": true,
+    "rule_unchanged": true,
+    "passage_is_string": true,
+    "passage_sha256": "c1410e5dafaced3470bd49d83c65ad9d7eb8edaca530dea2a0cfde25c0e6a4bf",
+    "passage_words": 257
+  },
+  "finished_at": "2026-09-22T19:52:04.840579+00:00",
+  "latency_seconds": 4.8615,
+  "usage_cost_upper_estimate_usd": 0.0002485,
+  "stream_status": "active",
+  "budget": {
+    "usage_cost_upper_estimate_usd": 0.3373402,
+    "uncertain_cost_reserve_usd": 0.0,
+    "in_flight_reserve_usd": 0.588674,
+    "limit_usd": 20
+  }
+}

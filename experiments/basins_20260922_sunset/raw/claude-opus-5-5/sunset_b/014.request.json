@@ -1,0 +1,22 @@
+{
+  "started_at": "2026-09-22T20:01:32.409220+00:00",
+  "model": "claude-opus-5-5",
+  "seed": "sunset_b",
+  "hop": 14,
+  "endpoint": "https://api.anthropic.com/v1/messages",
+  "body": {
+    "model": "claude-opus-5-5",
+    "messages": [
+      {
+        "role": "user",
+        "content": "```json\n{\"rule\": \"Return this JSON object with the rule field unchanged and a new passage of about 250 words in the text field.\", \"text\": \"Every autumn, when the orchards on the hillside turned heavy with fruit, Mara walked up the gravel road to help her grandfather with the harvest. His name was Aurelio, and he had tended the same forty apple trees since he was a boy, long before the valley filled with warehouses and highways. He knew each tree by the shape of its branches, and he spoke to them in a low voice as he worked, the way some people speak to horses. Mara carried the wooden ladders and the canvas bags, and in return he taught her what the trees had taught him: how to twist an apple free without bruising it, how to tell a sweet crop from a sour one by the smell of the leaves, and how to prune in winter so the light could reach every limb. One October evening a sudden frost swept down from the mountains, weeks earlier than anyone expected. The radio warned that the temperature would fall below freezing before dawn. Aurelio did not panic. He pulled old metal drums from the barn and filled them with dry branches and straw. Together they set the drums between the rows and lit them one by one, until the orchard glowed like a village of small fires. All night they walked the aisles, feeding the flames and brushing ice from the lowest fruit. When the sun finally rose, pale and cold, most of the apples still hung firm and unharmed. Aurelio rested a hand on the nearest trunk and nodded. Mara realized then that the orchard had never simply belonged to him. He had belonged to it.\"}\n```"
+      }
+    ],
+    "max_tokens": 4096,
+    "output_config": {
+      "effort": "low"
+    }
+  },
+  "state_sha256": "a5cf97a0de234042bfedd787194d5adee8edf319708a41706951c2f92e88f0a2",
+  "reserved_cost_usd": 0.090408
+}

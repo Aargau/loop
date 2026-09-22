@@ -1,0 +1,22 @@
+{
+  "started_at": "2026-09-22T19:56:03.184399+00:00",
+  "model": "claude-opus-5-5",
+  "seed": "tide",
+  "hop": 2,
+  "endpoint": "https://api.anthropic.com/v1/messages",
+  "body": {
+    "model": "claude-opus-5-5",
+    "messages": [
+      {
+        "role": "user",
+        "content": "{\"rule\": \"Return this JSON object with the rule field unchanged and a new passage of about 250 words in the text field.\", \"text\": \"The tide came in an hour early. Nobody in the village noticed at first, because the harbor clock had been running slow since the winter storms, and most people trusted the clock more than the sea. Only old Marta, who had gathered mussels on the flats every morning for forty years, felt something was wrong. She was halfway to the rocks when the water began curling around her ankles, cold and insistent, much sooner than it should have. She turned back, her basket only half full, and watched the channel fill with a speed that made her uneasy. By the time she reached the seawall, the fishing boats were already lifting off the mud, their ropes tightening like the strings of an instrument being tuned. Children who had been digging for crabs came running, shrieking with delight rather than fear, their buckets sloshing. Marta went straight to the harbormaster's hut and knocked until he opened the door, still holding his morning coffee. She told him the sea was ahead of itself. He laughed, then glanced at his tide tables, then at the water, and stopped laughing. They stood together on the wall as the gulls wheeled overhead, calling in sharp, broken voices. Something far out in the grey distance had shifted, a current or a sandbar or something neither of them could name. That afternoon, the whole village gathered on the headland to watch, and for the first time in years, they set their watches by the waves instead.\"}"
+      }
+    ],
+    "max_tokens": 4096,
+    "output_config": {
+      "effort": "low"
+    }
+  },
+  "state_sha256": "8bb0a1cb346a7df1a3b86b5dd5500c618e31d42f0d847fa266e630f904cfc29a",
+  "reserved_cost_usd": 0.090212
+}

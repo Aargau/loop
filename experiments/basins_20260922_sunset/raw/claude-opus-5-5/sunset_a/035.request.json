@@ -1,0 +1,22 @@
+{
+  "started_at": "2026-09-22T20:10:59.831585+00:00",
+  "model": "claude-opus-5-5",
+  "seed": "sunset_a",
+  "hop": 35,
+  "endpoint": "https://api.anthropic.com/v1/messages",
+  "body": {
+    "model": "claude-opus-5-5",
+    "messages": [
+      {
+        "role": "user",
+        "content": "```json\n{\"rule\": \"Return this JSON object with the rule field unchanged and a new passage of about 250 words in the text field.\", \"text\": \"Morning came gray and ordinary, which Mira had not expected. She had half believed the house would look different, as if a weight lifted from beneath the floorboards might make the walls stand straighter. Instead, the kettle still rattled on its broken burner, and the kitchen still smelled of dust and lavender soap. Tobias sat at the table with his hands wrapped around a mug he wasn't drinking from. \\\"I didn't sleep,\\\" he said. \\\"I kept listening for it.\\\" Mira didn't ask what he meant. She had listened too, lying awake until the window turned pale, but the humming had not returned. The silence it left behind was not empty. It felt like the quiet after a long argument finally ends. She opened the notebook on the table between them. The page with the unfinished box was still there, the gap in its top line untouched, but the torn word was gone. In its place, pressed lightly into the paper as if by a tired hand, was a single line of looping script she recognized from every birthday card she had ever received: Thank you, little bird. Tobias read it and looked away quickly, blinking. \\\"So that's it? It's over?\\\" Mira ran her thumb along the gap she had left. \\\"I don't think it's over,\\\" she said slowly. \\\"I think it's just not a secret anymore.\\\" She tucked the notebook into her bag rather than returning it to the drawer where her grandmother had hidden it for sixty years. Some things, she decided, were better carried in the open.\"}\n```"
+      }
+    ],
+    "max_tokens": 4096,
+    "output_config": {
+      "effort": "low"
+    }
+  },
+  "state_sha256": "5014738f20a364e17bb490d4a2e54a5d1ac5c879647798353042efd7c52d16e0",
+  "reserved_cost_usd": 0.090344
+}

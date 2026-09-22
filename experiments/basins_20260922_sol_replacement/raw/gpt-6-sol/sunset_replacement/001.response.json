@@ -1,0 +1,50 @@
+{
+  "model": "gpt-6-sol",
+  "seed": "sunset_replacement",
+  "hop": 1,
+  "http_status": 200,
+  "response_body": "{\n  \"id\": \"chatcmpl-ER1gJfmXcWDG4DA3ZYEvcgGTXeDvc\",\n  \"object\": \"chat.completion\",\n  \"created\": 1790110027,\n  \"model\": \"gpt-6-sol\",\n  \"choices\": [\n    {\n      \"index\": 0,\n      \"message\": {\n        \"role\": \"assistant\",\n        \"content\": \"{\\n  \\\"rule\\\": \\\"Return this JSON object with the rule field unchanged and a new passage of about 250 words in the text field.\\\",\\n  \\\"text\\\": \\\"The sun was setting behind the hills when Mara reached the abandoned station. Its clock had stopped at 4:17, though the hands still cast long shadows across the cracked face. She set her suitcase on the platform and listened. Wind moved through the grass beside the tracks. Somewhere inside the station, a door tapped gently against its frame.\\\\n\\\\nHer father had told her to meet him here if she ever needed to know why he left. For years, she had kept his note folded in a kitchen drawer, beneath batteries and spare keys. That morning, after finding the drawer empty except for the note, she had finally bought a ticket.\\\\n\\\\nThe station door opened with a shove. Inside, dust softened the edges of the benches. A timetable hung behind the counter, listing towns she had never heard of. On the nearest bench sat a small blue tin with her name written on the lid.\\\\n\\\\nShe opened it. There was a photograph of her father as a boy, standing beside a woman who looked remarkably like Mara. Beneath it lay a train ticket dated tomorrow and a second note, written in the same careful hand: I hoped you would come. I am sorry I could not wait.\\\\n\\\\nMara read the words twice. Then she turned the photograph over. On the back, her father had written the woman's name and an address in a town three stops away.\\\\n\\\\nOutside, a light appeared far down the track. Mara closed the tin and picked up her suitcase. This time, she would not let the train pass.\\\"\\n}\",\n        \"refusal\": null,\n        \"annotations\": []\n      },\n      \"finish_reason\": \"stop\"\n    }\n  ],\n  \"usage\": {\n    \"prompt_tokens\": 46,\n    \"completion_tokens\": 380,\n    \"total_tokens\": 426,\n    \"prompt_tokens_details\": {\n      \"cached_tokens\": 0,\n      \"cache_write_tokens\": 0,\n      \"audio_tokens\": 0\n    },\n    \"completion_tokens_details\": {\n      \"reasoning_tokens\": 23,\n      \"audio_tokens\": 0,\n      \"accepted_prediction_tokens\": 0,\n      \"rejected_prediction_tokens\": 0\n    }\n  },\n  \"service_tier\": \"default\",\n  \"system_fingerprint\": null\n}\n",
+  "response_headers": {
+    "Date": "Tue, 22 Sep 2026 20:47:13 GMT",
+    "openai-processing-ms": "6180",
+    "x-request-id": "req_360b4658e9a14db890f43bf4143bd8fe"
+  },
+  "output": "{\n  \"rule\": \"Return this JSON object with the rule field unchanged and a new passage of about 250 words in the text field.\",\n  \"text\": \"The sun was setting behind the hills when Mara reached the abandoned station. Its clock had stopped at 4:17, though the hands still cast long shadows across the cracked face. She set her suitcase on the platform and listened. Wind moved through the grass beside the tracks. Somewhere inside the station, a door tapped gently against its frame.\\n\\nHer father had told her to meet him here if she ever needed to know why he left. For years, she had kept his note folded in a kitchen drawer, beneath batteries and spare keys. That morning, after finding the drawer empty except for the note, she had finally bought a ticket.\\n\\nThe station door opened with a shove. Inside, dust softened the edges of the benches. A timetable hung behind the counter, listing towns she had never heard of. On the nearest bench sat a small blue tin with her name written on the lid.\\n\\nShe opened it. There was a photograph of her father as a boy, standing beside a woman who looked remarkably like Mara. Beneath it lay a train ticket dated tomorrow and a second note, written in the same careful hand: I hoped you would come. I am sorry I could not wait.\\n\\nMara read the words twice. Then she turned the photograph over. On the back, her father had written the woman's name and an address in a town three stops away.\\n\\nOutside, a light appeared far down the track. Mara closed the tin and picked up her suitcase. This time, she would not let the train pass.\"\n}",
+  "output_sha256": "b90bc3af6f8ebfcafd65e52c227c3ad5ae65a04582bac55a14bbb3ba99ebffbc",
+  "finish_reason": "stop",
+  "refusal": null,
+  "returned_model": "gpt-6-sol",
+  "usage": {
+    "prompt_tokens": 46,
+    "completion_tokens": 380,
+    "total_tokens": 426,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 23,
+      "audio_tokens": 0,
+      "accepted_prediction_tokens": 0,
+      "rejected_prediction_tokens": 0
+    }
+  },
+  "format": {
+    "json_object": true,
+    "rule_unchanged": true,
+    "passage_is_string": true,
+    "passage_sha256": "d21c44012c93cb8890c9de4482939057319b51f108dd614aa767951839a2314c",
+    "passage_words": 262
+  },
+  "finished_at": "2026-09-22T20:47:09.388822+00:00",
+  "latency_seconds": 6.4953,
+  "usage_cost_upper_estimate_usd": 0.003892,
+  "stream_status": "active",
+  "budget": {
+    "usage_cost_upper_estimate_usd": 0.003892,
+    "uncertain_cost_reserve_usd": 0.0,
+    "in_flight_reserve_usd": 0.0,
+    "limit_usd": 3.0
+  }
+}

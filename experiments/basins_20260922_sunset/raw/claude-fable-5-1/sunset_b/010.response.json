@@ -1,0 +1,48 @@
+{
+  "model": "claude-fable-5-1",
+  "seed": "sunset_b",
+  "hop": 10,
+  "http_status": 200,
+  "response_body": "{\"model\":\"claude-fable-5-1\",\"id\":\"msg_011CfK5CuaK3C2H3S9Z646o1\",\"type\":\"message\",\"role\":\"assistant\",\"content\":[{\"type\":\"text\",\"text\":\"{\\\"rule\\\": \\\"Return this JSON object with the rule field unchanged and a new passage of about 250 words in the text field.\\\", \\\"text\\\": \\\"The ferry ran twice a day in winter, and Tomas had driven it for twenty-two years before the council replaced the old diesel with a new electric hull that steered itself between the pilings. They kept him on for one more season to sit in the wheelhouse and watch the screens. He did not touch anything. He was there, the letter said, for the reassurance of passengers.\\\\n\\\\nOn the first crossing of the morning there were rarely passengers to reassure. A woman with a bicycle, sometimes. A boy going to the mainland school, asleep against the window. Tomas stood with his hands behind his back and looked out at the channel, where the tide ran hard between the island and the shore, and where he had learned the eddies by feel long before anyone drew them on a chart.\\\\n\\\\nThe new boat crossed in eleven minutes. His old one had taken fourteen, sometimes eighteen when the wind came from the north and the current set wrong. He had thought, in those years, that the extra minutes were a kind of failure. Now he found he missed them.\\\\n\\\\nHalfway across, the boy woke and came to the wheelhouse door. He asked what the screens meant. Tomas told him about depth, about speed over ground, about the small green triangle that was themselves. The boy nodded and watched the shore approach.\\\\n\\\\n\\\\\\\"Do you still steer it?\\\\\\\" he asked.\\\\n\\\\n\\\\\\\"No,\\\\\\\" Tomas said. Then, after a moment: \\\\\\\"I watch the water.\\\\\\\"\\\\n\\\\nThe boy seemed to find this a reasonable answer, and went back to his seat.\\\"}\"}],\"container\":null,\"stop_reason\":\"end_turn\",\"stop_sequence\":null,\"stop_details\":null,\"usage\":{\"input_tokens\":536,\"cache_creation_input_tokens\":0,\"cache_read_input_tokens\":0,\"cache_creation\":{\"ephemeral_5m_input_tokens\":0,\"ephemeral_1h_input_tokens\":0},\"output_tokens\":540,\"output_tokens_details\":{\"thinking_tokens\":0},\"service_tier\":\"standard\",\"inference_geo\":\"global\"}}",
+  "response_headers": {
+    "Date": "Tue, 22 Sep 2026 20:01:27 GMT",
+    "request-id": "req_011CfK5CuDjFeX1G5mUvDCzt"
+  },
+  "output": "{\"rule\": \"Return this JSON object with the rule field unchanged and a new passage of about 250 words in the text field.\", \"text\": \"The ferry ran twice a day in winter, and Tomas had driven it for twenty-two years before the council replaced the old diesel with a new electric hull that steered itself between the pilings. They kept him on for one more season to sit in the wheelhouse and watch the screens. He did not touch anything. He was there, the letter said, for the reassurance of passengers.\\n\\nOn the first crossing of the morning there were rarely passengers to reassure. A woman with a bicycle, sometimes. A boy going to the mainland school, asleep against the window. Tomas stood with his hands behind his back and looked out at the channel, where the tide ran hard between the island and the shore, and where he had learned the eddies by feel long before anyone drew them on a chart.\\n\\nThe new boat crossed in eleven minutes. His old one had taken fourteen, sometimes eighteen when the wind came from the north and the current set wrong. He had thought, in those years, that the extra minutes were a kind of failure. Now he found he missed them.\\n\\nHalfway across, the boy woke and came to the wheelhouse door. He asked what the screens meant. Tomas told him about depth, about speed over ground, about the small green triangle that was themselves. The boy nodded and watched the shore approach.\\n\\n\\\"Do you still steer it?\\\" he asked.\\n\\n\\\"No,\\\" Tomas said. Then, after a moment: \\\"I watch the water.\\\"\\n\\nThe boy seemed to find this a reasonable answer, and went back to his seat.\"}",
+  "output_sha256": "beb2358c3f74bf2f68de29f1c3bdf006007cc219e9caf839772134c351203b16",
+  "finish_reason": "end_turn",
+  "refusal": null,
+  "returned_model": "claude-fable-5-1",
+  "usage": {
+    "input_tokens": 536,
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 0,
+    "cache_creation": {
+      "ephemeral_5m_input_tokens": 0,
+      "ephemeral_1h_input_tokens": 0
+    },
+    "output_tokens": 540,
+    "output_tokens_details": {
+      "thinking_tokens": 0
+    },
+    "service_tier": "standard",
+    "inference_geo": "global"
+  },
+  "format": {
+    "json_object": true,
+    "rule_unchanged": true,
+    "passage_is_string": true,
+    "passage_sha256": "149b24429660e85719a88400df82b70a2f84e9f3e13afc12ddbb1e0a07120cca",
+    "passage_words": 262
+  },
+  "finished_at": "2026-09-22T20:01:23.529835+00:00",
+  "latency_seconds": 11.8244,
+  "usage_cost_upper_estimate_usd": 0.03236,
+  "stream_status": "active",
+  "budget": {
+    "usage_cost_upper_estimate_usd": 2.2650146,
+    "uncertain_cost_reserve_usd": 0.04533,
+    "in_flight_reserve_usd": 0.3651078,
+    "limit_usd": 18.83
+  }
+}

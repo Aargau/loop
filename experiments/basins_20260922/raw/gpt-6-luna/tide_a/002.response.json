@@ -1,0 +1,50 @@
+{
+  "model": "gpt-6-luna",
+  "seed": "tide_a",
+  "hop": 2,
+  "http_status": 200,
+  "response_body": "{\n  \"id\": \"chatcmpl-ER0oHBlIQBkJY2PaWBjXONjzGguoy\",\n  \"object\": \"chat.completion\",\n  \"created\": 1790106677,\n  \"model\": \"gpt-6-luna\",\n  \"choices\": [\n    {\n      \"index\": 0,\n      \"message\": {\n        \"role\": \"assistant\",\n        \"content\": \"{\\\"rule\\\":\\\"Return this JSON object with the rule field unchanged and a new passage of about 250 words in the text field.\\\",\\\"text\\\":\\\"By dusk, the rain had stopped, but the river kept climbing. Niko watched it from the footbridge, where brown water nudged the stones beneath his boots. On the far bank, the old willow leaned low, its branches combing the current.\\\\n\\\\nHis mother had sent him to fetch the baker’s tin of rolls before the footpath disappeared. He tucked the tin under his coat and hurried back through the narrow streets. Neighbors were already moving flowerpots from their doorsteps and stacking sandbags outside the shop. At the corner, Mrs. Vale stood beside a small dog that refused to leave its kennel.\\\\n\\\\nNiko set down the rolls and lifted the dog into his arms. Together, he and Mrs. Vale carried it to the schoolhouse, where volunteers had opened the doors. Inside, the baker was handing out tea, and someone had spread blankets across the floor. The room smelled of wet wool and cinnamon.\\\\n\\\\nA siren sounded once from the hill. Everyone fell quiet. Then the lights blinked out, leaving only the glow of lanterns along the walls. Niko thought of the bridge and the river pushing against its stones. He imagined the water swallowing the path, the willow, and the place where he had stood only minutes before.\\\\n\\\\nNear midnight, the rain returned, tapping softly at the schoolhouse windows. The river did not reach the hill. By morning, its muddy edge had slipped back from the streets, leaving reeds and driftwood in the gutters. Niko carried the empty tin home. On the bridge, the willow still leaned over the water, but its branches now held a bright scatter of leaves, washed clean by the night.\\\"}\",\n        \"refusal\": null,\n        \"annotations\": []\n      },\n      \"finish_reason\": \"stop\"\n    }\n  ],\n  \"usage\": {\n    \"prompt_tokens\": 363,\n    \"completion_tokens\": 428,\n    \"total_tokens\": 791,\n    \"prompt_tokens_details\": {\n      \"cached_tokens\": 0,\n      \"cache_write_tokens\": 0,\n      \"audio_tokens\": 0\n    },\n    \"completion_tokens_details\": {\n      \"reasoning_tokens\": 47,\n      \"audio_tokens\": 0,\n      \"accepted_prediction_tokens\": 0,\n      \"rejected_prediction_tokens\": 0\n    }\n  },\n  \"service_tier\": \"default\",\n  \"system_fingerprint\": null\n}\n",
+  "response_headers": {
+    "Date": "Tue, 22 Sep 2026 19:51:21 GMT",
+    "openai-processing-ms": "4779",
+    "x-request-id": "req_429027a9014943d283b041b30746c4e1"
+  },
+  "output": "{\"rule\":\"Return this JSON object with the rule field unchanged and a new passage of about 250 words in the text field.\",\"text\":\"By dusk, the rain had stopped, but the river kept climbing. Niko watched it from the footbridge, where brown water nudged the stones beneath his boots. On the far bank, the old willow leaned low, its branches combing the current.\\n\\nHis mother had sent him to fetch the baker’s tin of rolls before the footpath disappeared. He tucked the tin under his coat and hurried back through the narrow streets. Neighbors were already moving flowerpots from their doorsteps and stacking sandbags outside the shop. At the corner, Mrs. Vale stood beside a small dog that refused to leave its kennel.\\n\\nNiko set down the rolls and lifted the dog into his arms. Together, he and Mrs. Vale carried it to the schoolhouse, where volunteers had opened the doors. Inside, the baker was handing out tea, and someone had spread blankets across the floor. The room smelled of wet wool and cinnamon.\\n\\nA siren sounded once from the hill. Everyone fell quiet. Then the lights blinked out, leaving only the glow of lanterns along the walls. Niko thought of the bridge and the river pushing against its stones. He imagined the water swallowing the path, the willow, and the place where he had stood only minutes before.\\n\\nNear midnight, the rain returned, tapping softly at the schoolhouse windows. The river did not reach the hill. By morning, its muddy edge had slipped back from the streets, leaving reeds and driftwood in the gutters. Niko carried the empty tin home. On the bridge, the willow still leaned over the water, but its branches now held a bright scatter of leaves, washed clean by the night.\"}",
+  "output_sha256": "6333897af19bfcf0f307bafeb6c1b60c51a68caa1ffa1326321fde16fcb59150",
+  "finish_reason": "stop",
+  "refusal": null,
+  "returned_model": "gpt-6-luna",
+  "usage": {
+    "prompt_tokens": 363,
+    "completion_tokens": 428,
+    "total_tokens": 791,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 47,
+      "audio_tokens": 0,
+      "accepted_prediction_tokens": 0,
+      "rejected_prediction_tokens": 0
+    }
+  },
+  "format": {
+    "json_object": true,
+    "rule_unchanged": true,
+    "passage_is_string": true,
+    "passage_sha256": "cb9e8c4d32a41cb65ea03e7415d2c289ff76ac5f8ac86fb94b4da669c5e28d0b",
+    "passage_words": 273
+  },
+  "finished_at": "2026-09-22T19:51:17.730018+00:00",
+  "latency_seconds": 4.8833,
+  "usage_cost_upper_estimate_usd": 0.0002503,
+  "stream_status": "active",
+  "budget": {
+    "usage_cost_upper_estimate_usd": 0.0821477,
+    "uncertain_cost_reserve_usd": 0.0,
+    "in_flight_reserve_usd": 0.552934,
+    "limit_usd": 20
+  }
+}

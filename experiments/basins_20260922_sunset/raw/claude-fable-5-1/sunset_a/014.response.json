@@ -1,0 +1,48 @@
+{
+  "model": "claude-fable-5-1",
+  "seed": "sunset_a",
+  "hop": 14,
+  "http_status": 200,
+  "response_body": "{\"model\":\"claude-fable-5-1\",\"id\":\"msg_011CfK5PYSddVm6m626WwGSH\",\"type\":\"message\",\"role\":\"assistant\",\"content\":[{\"type\":\"text\",\"text\":\"{\\\"rule\\\": \\\"Return this JSON object with the rule field unchanged and a new passage of about 250 words in the text field.\\\", \\\"text\\\": \\\"She did not tell anyone about the crack. There was no one to tell, in the sense that mattered; the tenants upstairs were new and paid on time and asked her nothing, and the piano tuner came only twice a year. But she found herself standing in the courtyard in the evenings, after the shop was closed, with a broom she did not use.\\\\n\\\\nThe next letter arrived on a Thursday. It was shorter, and the hand was less steady, as if the writer had grown tired of explaining or had run out of things that could be explained. It said only that the water had come from a pipe under the north wall, and that the pipe had been closed by a man who was paid to close it, and that the writer had watched this happen from the window of the room with the sloped ceiling and had said nothing, because saying something would have required admitting how much the sound had mattered.\\\\n\\\\nInes read this standing up. Then she folded it into the drawer with the others, seven now, and went to look at the north wall.\\\\n\\\\nThere was a valve there. She had seen it a hundred times and taken it for part of the gas. It was painted the same grey as the brick, and the paint had sealed it shut, and beneath the paint she could feel the old brass, cold and patient.\\\\n\\\\nShe did not turn it. Not that night. But she took a knife from the kitchen and began, very carefully, to score the paint around its edge, the way one loosens a lid that has been closed too long.\\\"}\"}],\"container\":null,\"stop_reason\":\"end_turn\",\"stop_sequence\":null,\"stop_details\":null,\"usage\":{\"input_tokens\":483,\"cache_creation_input_tokens\":0,\"cache_read_input_tokens\":0,\"cache_creation\":{\"ephemeral_5m_input_tokens\":0,\"ephemeral_1h_input_tokens\":0},\"output_tokens\":487,\"output_tokens_details\":{\"thinking_tokens\":0},\"service_tier\":\"standard\",\"inference_geo\":\"global\"}}",
+  "response_headers": {
+    "Date": "Tue, 22 Sep 2026 20:03:52 GMT",
+    "request-id": "req_011CfK5PXULKaj1JJDwHtzWn"
+  },
+  "output": "{\"rule\": \"Return this JSON object with the rule field unchanged and a new passage of about 250 words in the text field.\", \"text\": \"She did not tell anyone about the crack. There was no one to tell, in the sense that mattered; the tenants upstairs were new and paid on time and asked her nothing, and the piano tuner came only twice a year. But she found herself standing in the courtyard in the evenings, after the shop was closed, with a broom she did not use.\\n\\nThe next letter arrived on a Thursday. It was shorter, and the hand was less steady, as if the writer had grown tired of explaining or had run out of things that could be explained. It said only that the water had come from a pipe under the north wall, and that the pipe had been closed by a man who was paid to close it, and that the writer had watched this happen from the window of the room with the sloped ceiling and had said nothing, because saying something would have required admitting how much the sound had mattered.\\n\\nInes read this standing up. Then she folded it into the drawer with the others, seven now, and went to look at the north wall.\\n\\nThere was a valve there. She had seen it a hundred times and taken it for part of the gas. It was painted the same grey as the brick, and the paint had sealed it shut, and beneath the paint she could feel the old brass, cold and patient.\\n\\nShe did not turn it. Not that night. But she took a knife from the kitchen and began, very carefully, to score the paint around its edge, the way one loosens a lid that has been closed too long.\"}",
+  "output_sha256": "ffcbdba27d4eb8cf61703e39a0476030a882443abe47d63793d7d9d41ab00d7f",
+  "finish_reason": "end_turn",
+  "refusal": null,
+  "returned_model": "claude-fable-5-1",
+  "usage": {
+    "input_tokens": 483,
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 0,
+    "cache_creation": {
+      "ephemeral_5m_input_tokens": 0,
+      "ephemeral_1h_input_tokens": 0
+    },
+    "output_tokens": 487,
+    "output_tokens_details": {
+      "thinking_tokens": 0
+    },
+    "service_tier": "standard",
+    "inference_geo": "global"
+  },
+  "format": {
+    "json_object": true,
+    "rule_unchanged": true,
+    "passage_is_string": true,
+    "passage_sha256": "239a0f8d97e61152a7349b558ed168ac1f105b392341134ca2d05501e3a84a03",
+    "passage_words": 278
+  },
+  "finished_at": "2026-09-22T20:03:48.493432+00:00",
+  "latency_seconds": 12.6878,
+  "usage_cost_upper_estimate_usd": 0.02918,
+  "stream_status": "active",
+  "budget": {
+    "usage_cost_upper_estimate_usd": 3.1766501,
+    "uncertain_cost_reserve_usd": 0.04533,
+    "in_flight_reserve_usd": 0.3641161,
+    "limit_usd": 18.83
+  }
+}

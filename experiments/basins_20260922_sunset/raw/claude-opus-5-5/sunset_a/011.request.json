@@ -1,0 +1,22 @@
+{
+  "started_at": "2026-09-22T19:59:48.216549+00:00",
+  "model": "claude-opus-5-5",
+  "seed": "sunset_a",
+  "hop": 11,
+  "endpoint": "https://api.anthropic.com/v1/messages",
+  "body": {
+    "model": "claude-opus-5-5",
+    "messages": [
+      {
+        "role": "user",
+        "content": "```json\n{\"rule\": \"Return this JSON object with the rule field unchanged and a new passage of about 250 words in the text field.\", \"text\": \"The baker unlocked her shop at four each morning, when the street outside was still dark and silent except for the hum of the streetlamps. She tied on her flour-stained apron, lit the old brick oven, and set out the dough that had been rising overnight in wooden trays. Her grandmother had built the business sixty years earlier with a single oven and a recipe for rye bread scribbled on the back of an envelope. That envelope now hung framed above the counter, faded to the color of weak tea. The neighborhood had changed around the little shop. A supermarket had opened two blocks away, selling sliced loaves in plastic bags for half her price, and a developer had twice offered to buy the building. She had listened politely and sent him away with a warm cinnamon roll. By six o'clock the first customers arrived: a nurse coming off the night shift, a pair of construction workers, an elderly man who bought one poppy-seed roll every day and paid in exact change. She knew their names, their children's names, and how they liked their bread. In a spiral notebook beside the register she kept track of special orders and small kindnesses: the birthday cake for a boy who had been sick all spring, the loaves she left each Friday at the shelter on Maple Street, the winter the power failed and she baked by lantern light. When the shelves were empty by early afternoon, she swept the floor, counted the till, and walked home tired, flour still in her hair, but content.\"}\n```"
+      }
+    ],
+    "max_tokens": 4096,
+    "output_config": {
+      "effort": "low"
+    }
+  },
+  "state_sha256": "d6d676d944362a28d1ea1b668331431bcb1d379bec1cafe0ab38fc4c4ae1e26f",
+  "reserved_cost_usd": 0.090428
+}

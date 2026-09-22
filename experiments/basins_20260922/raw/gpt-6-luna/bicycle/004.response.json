@@ -1,0 +1,47 @@
+{
+  "model": "gpt-6-luna",
+  "seed": "bicycle",
+  "hop": 4,
+  "http_status": 200,
+  "response_body": "{\n  \"id\": \"chatcmpl-ER0oxdcgCPBDOT7ZibtmnFnMuOCm6\",\n  \"object\": \"chat.completion\",\n  \"created\": 1790106719,\n  \"model\": \"gpt-6-luna\",\n  \"choices\": [\n    {\n      \"index\": 0,\n      \"message\": {\n        \"role\": \"assistant\",\n        \"content\": \"{\\\"rule\\\":\\\"Return this JSON object with the rule field unchanged and a new passage of about 250 words in the text field.\\\",\\\"text\\\":\\\"The clock in the station stopped at 3:17.\\n\\nMara noticed it while she was shelving the last of the town’s old maps. Beyond the windows, dusk settled over the harbor, and fishing boats rocked against their moorings. She climbed onto a chair and tapped the clock’s wooden frame. The hands did not move.\\n\\nA soft knock sounded from the front door.\\n\\nOn the step stood a boy in a yellow raincoat, holding a folded chart. “My grandfather says this belongs here,” he said. “He found it in the attic.”\\n\\nMara opened the paper carefully. It showed the coastline as it had been a century earlier, before the new breakwater and the row of houses along the northern road. A red pencil line traced a narrow channel between two reefs.\\n\\n“This isn’t on any modern chart,” Mara said.\\n\\n“My grandfather used to sail through it,” the boy replied. “He says the old lighthouse marked the safe passage.”\\n\\nThe lighthouse had been dark for years. Still, Mara fetched a flashlight and followed the boy down to the shore. The tide was low, revealing a line of pale stones beneath the water. At the far end of the beach, the abandoned tower rose against the deepening sky.\\n\\nThey climbed its spiral stairs together. At the top, Mara found the lamp’s old control box and a handwritten note tucked inside: a list of repairs, dated decades ago. One entry mentioned a hidden generator beneath the floor.\\n\\nThe boy grinned as Mara found the hatch. “Do you think it still works?”\\n\\nShe turned the handle. Somewhere below, machinery stirred.\\n\\nOutside, the first beam swept across the harbor, bright enough to guide every boat safely home.\\\"}\",\n        \"refusal\": null,\n        \"annotations\": []\n      },\n      \"finish_reason\": \"stop\"\n    }\n  ],\n  \"usage\": {\n    \"prompt_tokens\": 387,\n    \"completion_tokens\": 426,\n    \"total_tokens\": 813,\n    \"prompt_tokens_details\": {\n      \"cached_tokens\": 0,\n      \"cache_write_tokens\": 0,\n      \"audio_tokens\": 0\n    },\n    \"completion_tokens_details\": {\n      \"reasoning_tokens\": 46,\n      \"audio_tokens\": 0,\n      \"accepted_prediction_tokens\": 0,\n      \"rejected_prediction_tokens\": 0\n    }\n  },\n  \"service_tier\": \"default\",\n  \"system_fingerprint\": null\n}\n",
+  "response_headers": {
+    "Date": "Tue, 22 Sep 2026 19:52:03 GMT",
+    "openai-processing-ms": "4771",
+    "x-request-id": "req_4d6a9feabf064331847fee3436f7439e"
+  },
+  "output": "{\"rule\":\"Return this JSON object with the rule field unchanged and a new passage of about 250 words in the text field.\",\"text\":\"The clock in the station stopped at 3:17.\n\nMara noticed it while she was shelving the last of the town’s old maps. Beyond the windows, dusk settled over the harbor, and fishing boats rocked against their moorings. She climbed onto a chair and tapped the clock’s wooden frame. The hands did not move.\n\nA soft knock sounded from the front door.\n\nOn the step stood a boy in a yellow raincoat, holding a folded chart. “My grandfather says this belongs here,” he said. “He found it in the attic.”\n\nMara opened the paper carefully. It showed the coastline as it had been a century earlier, before the new breakwater and the row of houses along the northern road. A red pencil line traced a narrow channel between two reefs.\n\n“This isn’t on any modern chart,” Mara said.\n\n“My grandfather used to sail through it,” the boy replied. “He says the old lighthouse marked the safe passage.”\n\nThe lighthouse had been dark for years. Still, Mara fetched a flashlight and followed the boy down to the shore. The tide was low, revealing a line of pale stones beneath the water. At the far end of the beach, the abandoned tower rose against the deepening sky.\n\nThey climbed its spiral stairs together. At the top, Mara found the lamp’s old control box and a handwritten note tucked inside: a list of repairs, dated decades ago. One entry mentioned a hidden generator beneath the floor.\n\nThe boy grinned as Mara found the hatch. “Do you think it still works?”\n\nShe turned the handle. Somewhere below, machinery stirred.\n\nOutside, the first beam swept across the harbor, bright enough to guide every boat safely home.\"}",
+  "output_sha256": "f47b9c000155218fde0022e8dd6add9eaa741bf96911be60cbfd19841bff385d",
+  "finish_reason": "stop",
+  "refusal": null,
+  "returned_model": "gpt-6-luna",
+  "usage": {
+    "prompt_tokens": 387,
+    "completion_tokens": 426,
+    "total_tokens": 813,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 46,
+      "audio_tokens": 0,
+      "accepted_prediction_tokens": 0,
+      "rejected_prediction_tokens": 0
+    }
+  },
+  "format": {
+    "json_object": false,
+    "rule_unchanged": false
+  },
+  "finished_at": "2026-09-22T19:51:59.973228+00:00",
+  "latency_seconds": 4.8841,
+  "usage_cost_upper_estimate_usd": 0.0002517,
+  "stream_status": "active",
+  "budget": {
+    "usage_cost_upper_estimate_usd": 0.3324957,
+    "uncertain_cost_reserve_usd": 0.0,
+    "in_flight_reserve_usd": 0.588756,
+    "limit_usd": 20
+  }
+}

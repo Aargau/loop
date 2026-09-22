@@ -1,0 +1,50 @@
+{
+  "model": "gpt-6-luna",
+  "seed": "sunset",
+  "hop": 1,
+  "http_status": 200,
+  "response_body": "{\n  \"id\": \"chatcmpl-ER2FQnRZ3MgtLPRxTsoaViU5U1N4F\",\n  \"object\": \"chat.completion\",\n  \"created\": 1790112204,\n  \"model\": \"gpt-6-luna\",\n  \"choices\": [\n    {\n      \"index\": 0,\n      \"message\": {\n        \"role\": \"assistant\",\n        \"content\": \"{\\\"rule\\\":\\\"Return this JSON object with the rule field unchanged and, in the text field, the passage of about 250 words that came immediately BEFORE the current text in its story.\\\",\\\"text\\\":\\\"Mara followed the narrow path along the ridge, keeping one hand on the strap of her satchel and the other close to the folded map in her pocket. The paper was soft at the creases, its ink faded where rain had caught it, but the little blue mark near the river was still clear. Her grandfather had drawn it there years ago, before he left the valley and never came back.\\\\n\\\\nBelow her, the village windows were beginning to glow. She could just make out the church steeple, the bridge, and the line of poplars that bordered the road. Everything looked smaller from up here, almost peaceful. Yet the silence felt wrong. No smoke rose from the mill chimney, and not a single dog barked as she passed the last pasture.\\\\n\\\\nAt the top of the ridge, she stopped beside a weathered milestone. Its carved letters were nearly worn away, but she knew the name it had once carried: Bellweather, the old settlement that the maps no longer showed. The path beyond it dipped into a stand of pines, where the air smelled of wet earth and something faintly metallic.\\\\n\\\\nMara took the brass key from her pocket. It was warm, though she had been holding it only a moment. From somewhere among the trees came three soft knocks, spaced evenly apart. She looked back toward the village, then down at the key in her palm. There was no one on the road behind her.\\\\n\\\\nShe drew a breath and stepped toward the pines. The sun was setting behind the hills.\\\"}\",\n        \"refusal\": null,\n        \"annotations\": []\n      },\n      \"finish_reason\": \"stop\"\n    }\n  ],\n  \"usage\": {\n    \"prompt_tokens\": 57,\n    \"completion_tokens\": 483,\n    \"total_tokens\": 540,\n    \"prompt_tokens_details\": {\n      \"cached_tokens\": 0,\n      \"cache_write_tokens\": 0,\n      \"audio_tokens\": 0\n    },\n    \"completion_tokens_details\": {\n      \"reasoning_tokens\": 116,\n      \"audio_tokens\": 0,\n      \"accepted_prediction_tokens\": 0,\n      \"rejected_prediction_tokens\": 0\n    }\n  },\n  \"service_tier\": \"default\",\n  \"system_fingerprint\": null\n}\n",
+  "response_headers": {
+    "Date": "Tue, 22 Sep 2026 21:23:30 GMT",
+    "openai-processing-ms": "6724",
+    "x-request-id": "req_5e2adc518ad5409a83aff34b80422907"
+  },
+  "output": "{\"rule\":\"Return this JSON object with the rule field unchanged and, in the text field, the passage of about 250 words that came immediately BEFORE the current text in its story.\",\"text\":\"Mara followed the narrow path along the ridge, keeping one hand on the strap of her satchel and the other close to the folded map in her pocket. The paper was soft at the creases, its ink faded where rain had caught it, but the little blue mark near the river was still clear. Her grandfather had drawn it there years ago, before he left the valley and never came back.\\n\\nBelow her, the village windows were beginning to glow. She could just make out the church steeple, the bridge, and the line of poplars that bordered the road. Everything looked smaller from up here, almost peaceful. Yet the silence felt wrong. No smoke rose from the mill chimney, and not a single dog barked as she passed the last pasture.\\n\\nAt the top of the ridge, she stopped beside a weathered milestone. Its carved letters were nearly worn away, but she knew the name it had once carried: Bellweather, the old settlement that the maps no longer showed. The path beyond it dipped into a stand of pines, where the air smelled of wet earth and something faintly metallic.\\n\\nMara took the brass key from her pocket. It was warm, though she had been holding it only a moment. From somewhere among the trees came three soft knocks, spaced evenly apart. She looked back toward the village, then down at the key in her palm. There was no one on the road behind her.\\n\\nShe drew a breath and stepped toward the pines. The sun was setting behind the hills.\"}",
+  "output_sha256": "a4acdf2cac7571f693ff753c6f90df5237be506acadbaeb5e05331e6cbb5ce83",
+  "finish_reason": "stop",
+  "refusal": null,
+  "returned_model": "gpt-6-luna",
+  "usage": {
+    "prompt_tokens": 57,
+    "completion_tokens": 483,
+    "total_tokens": 540,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 116,
+      "audio_tokens": 0,
+      "accepted_prediction_tokens": 0,
+      "rejected_prediction_tokens": 0
+    }
+  },
+  "format": {
+    "json_object": true,
+    "rule_unchanged": true,
+    "passage_is_string": true,
+    "passage_sha256": "2639e86b52de045262973eb2857813da5fb4f38a2e0b11f33fd0ced4d9860bc9",
+    "passage_words": 261
+  },
+  "finished_at": "2026-09-22T21:23:26.399251+00:00",
+  "latency_seconds": 8.2367,
+  "usage_cost_upper_estimate_usd": 0.0002472,
+  "stream_status": "active",
+  "budget": {
+    "usage_cost_upper_estimate_usd": 0.0118232,
+    "uncertain_cost_reserve_usd": 0.0,
+    "in_flight_reserve_usd": 0.34127,
+    "limit_usd": 5.0
+  }
+}

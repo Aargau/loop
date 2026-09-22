@@ -1,0 +1,50 @@
+{
+  "model": "gpt-6-astra",
+  "seed": "tide",
+  "hop": 4,
+  "http_status": 200,
+  "response_body": "{\n  \"id\": \"chatcmpl-ER0utL207wJvpNvndOZPnGxBRdjrX\",\n  \"object\": \"chat.completion\",\n  \"created\": 1790107087,\n  \"model\": \"gpt-6-astra\",\n  \"choices\": [\n    {\n      \"index\": 0,\n      \"message\": {\n        \"role\": \"assistant\",\n        \"content\": \"{\\n  \\\"rule\\\": \\\"Return this JSON object with the rule field unchanged and a new passage of about 250 words in the text field.\\\",\\n  \\\"text\\\": \\\"Every winter, the village hired someone to count the houses.\\\\n\\\\nIt was easy work, my uncle said. Start at the church, follow the road, stop at the bridge. Never count after dark.\\\\n\\\\nThere were forty-three houses in November.\\\\n\\\\nIn December, there were forty-four.\\\\n\\\\nThe extra house stood between the bakery and the school, narrow and yellow, with a bicycle leaning against its fence. Nobody answered when I knocked.\\\\n\\\\n“Forty-three,” my uncle said, correcting my report.\\\\n\\\\n“You haven't looked.”\\\\n\\\\n“I used to do your job.”\\\\n\\\\nThat night, someone left a photograph beneath my door. It showed me on the yellow house's steps, holding a birthday cake. I was perhaps seven. A woman's hand rested on my shoulder.\\\\n\\\\nI recognized the cake. My mother had dropped it the year before she died. We ate the undamaged half straight from the kitchen floor.\\\\n\\\\nIn the photograph, it was whole.\\\\n\\\\nI went back at dusk.\\\\n\\\\nThrough the window, I saw a table set for two. A woman stood at the sink, her sleeves rolled above her elbows.\\\\n\\\\nWithout turning, she lifted one finger: wait.\\\\n\\\\nMy uncle found me at the gate.\\\\n\\\\n“She'll finish washing up,” he said. “Then she'll remember something in the oven. Then she'll need you to fetch a plate.”\\\\n\\\\nThe woman dried her hands.\\\\n\\\\n“How do you know?”\\\\n\\\\nHe pulled me toward the road. Behind us, a cupboard opened.\\\\n\\\\nAt the bridge, he finally stopped.\\\\n\\\\nFor years, I had wondered why he wore a watch that didn't work.\\\\n\\\\nNow he showed me its face.\\\\n\\\\nBehind the glass, the second hand was still moving backward.\\\"\\n}\",\n        \"refusal\": null,\n        \"annotations\": []\n      },\n      \"finish_reason\": \"stop\"\n    }\n  ],\n  \"usage\": {\n    \"prompt_tokens\": 420,\n    \"completion_tokens\": 414,\n    \"total_tokens\": 834,\n    \"prompt_tokens_details\": {\n      \"cached_tokens\": 0,\n      \"cache_write_tokens\": 0,\n      \"audio_tokens\": 0\n    },\n    \"completion_tokens_details\": {\n      \"reasoning_tokens\": 0,\n      \"audio_tokens\": 0,\n      \"accepted_prediction_tokens\": 0,\n      \"rejected_prediction_tokens\": 0\n    }\n  },\n  \"service_tier\": \"default\",\n  \"system_fingerprint\": null\n}\n",
+  "response_headers": {
+    "Date": "Tue, 22 Sep 2026 19:58:23 GMT",
+    "openai-processing-ms": "16952",
+    "x-request-id": "req_1e5055c2bf594328a5ea002d37d891d9"
+  },
+  "output": "{\n  \"rule\": \"Return this JSON object with the rule field unchanged and a new passage of about 250 words in the text field.\",\n  \"text\": \"Every winter, the village hired someone to count the houses.\\n\\nIt was easy work, my uncle said. Start at the church, follow the road, stop at the bridge. Never count after dark.\\n\\nThere were forty-three houses in November.\\n\\nIn December, there were forty-four.\\n\\nThe extra house stood between the bakery and the school, narrow and yellow, with a bicycle leaning against its fence. Nobody answered when I knocked.\\n\\n“Forty-three,” my uncle said, correcting my report.\\n\\n“You haven't looked.”\\n\\n“I used to do your job.”\\n\\nThat night, someone left a photograph beneath my door. It showed me on the yellow house's steps, holding a birthday cake. I was perhaps seven. A woman's hand rested on my shoulder.\\n\\nI recognized the cake. My mother had dropped it the year before she died. We ate the undamaged half straight from the kitchen floor.\\n\\nIn the photograph, it was whole.\\n\\nI went back at dusk.\\n\\nThrough the window, I saw a table set for two. A woman stood at the sink, her sleeves rolled above her elbows.\\n\\nWithout turning, she lifted one finger: wait.\\n\\nMy uncle found me at the gate.\\n\\n“She'll finish washing up,” he said. “Then she'll remember something in the oven. Then she'll need you to fetch a plate.”\\n\\nThe woman dried her hands.\\n\\n“How do you know?”\\n\\nHe pulled me toward the road. Behind us, a cupboard opened.\\n\\nAt the bridge, he finally stopped.\\n\\nFor years, I had wondered why he wore a watch that didn't work.\\n\\nNow he showed me its face.\\n\\nBehind the glass, the second hand was still moving backward.\"\n}",
+  "output_sha256": "5cbbd6ba5a45b106310c62de8a1e264d6944c494330aae29deb60f14bdfc033a",
+  "finish_reason": "stop",
+  "refusal": null,
+  "returned_model": "gpt-6-astra",
+  "usage": {
+    "prompt_tokens": 420,
+    "completion_tokens": 414,
+    "total_tokens": 834,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "audio_tokens": 0,
+      "accepted_prediction_tokens": 0,
+      "rejected_prediction_tokens": 0
+    }
+  },
+  "format": {
+    "json_object": true,
+    "rule_unchanged": true,
+    "passage_is_string": true,
+    "passage_sha256": "673e1d2440b00e85754031e61c9247cc74e8630af1c5127c81f9f4e42592a8cc",
+    "passage_words": 263
+  },
+  "finished_at": "2026-09-22T19:58:19.592361+00:00",
+  "latency_seconds": 17.1001,
+  "usage_cost_upper_estimate_usd": 0.0249,
+  "stream_status": "active",
+  "budget": {
+    "usage_cost_upper_estimate_usd": 1.0932507,
+    "uncertain_cost_reserve_usd": 0.04533,
+    "in_flight_reserve_usd": 0.3624727,
+    "limit_usd": 18.83
+  }
+}

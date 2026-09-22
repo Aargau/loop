@@ -1,0 +1,50 @@
+{
+  "model": "gpt-6-astra",
+  "seed": "sunset_b",
+  "hop": 30,
+  "http_status": 200,
+  "response_body": "{\n  \"id\": \"chatcmpl-ER1Fh5hIITufvGE2q4zx2NJZwyaJw\",\n  \"object\": \"chat.completion\",\n  \"created\": 1790108377,\n  \"model\": \"gpt-6-astra\",\n  \"choices\": [\n    {\n      \"index\": 0,\n      \"message\": {\n        \"role\": \"assistant\",\n        \"content\": \"{\\n  \\\"rule\\\": \\\"Return this JSON object with the rule field unchanged and a new passage of about 250 words in the text field.\\\",\\n  \\\"text\\\": \\\"The first time Ruth used her mother’s sewing machine, the needle broke.\\\\n\\\\nShe sat back with both hands in her lap.\\\\n\\\\nFrom the doorway, her son asked whether that was meant to happen.\\\\n\\\\n“Not usually.”\\\\n\\\\n“Can you fix it?”\\\\n\\\\n“There should be spares.”\\\\n\\\\nThe little drawer held three buttons, a tape measure, and a paper packet folded so often that its corners had softened. Inside were two needles.\\\\n\\\\nHer son pulled up a chair.\\\\n\\\\n“What are you making?”\\\\n\\\\n“Your school trousers shorter.”\\\\n\\\\n“They’re fine if I roll them.”\\\\n\\\\n“They come down.”\\\\n\\\\nHe examined the broken needle while she loosened the screw.\\\\n\\\\n“Gran could do this without looking.”\\\\n\\\\n“She looked.”\\\\n\\\\n“Not much.”\\\\n\\\\nRuth fitted the new needle and turned the wheel by hand. It passed cleanly through the cloth.\\\\n\\\\nIn the drawer she found a scrap of blue cotton covered in parallel lines of stitching. Some were straight, others wandered toward the edge. Her mother had written the tension settings along one side in biro.\\\\n\\\\nRuth put it beneath the foot and tried a line of her own.\\\\n\\\\n“Yours is crooked,” her son said.\\\\n\\\\n“I can see.”\\\\n\\\\nHe stayed while she finished the trousers. Then he tried them on, standing on the chair so she could check the hems.\\\\n\\\\n“Too short?” he asked.\\\\n\\\\n“No. Walk about.”\\\\n\\\\nHe stepped down and crossed the kitchen twice, solemnly, as though buying a suit.\\\\n\\\\nAfter he went upstairs, Ruth brushed the loose threads into her palm. She put the blue scrap back in the drawer, then took it out again and wrote the date beside her uneven line.\\\"\\n}\",\n        \"refusal\": null,\n        \"annotations\": []\n      },\n      \"finish_reason\": \"stop\"\n    }\n  ],\n  \"usage\": {\n    \"prompt_tokens\": 426,\n    \"completion_tokens\": 424,\n    \"total_tokens\": 850,\n    \"prompt_tokens_details\": {\n      \"cached_tokens\": 0,\n      \"cache_write_tokens\": 0,\n      \"audio_tokens\": 0\n    },\n    \"completion_tokens_details\": {\n      \"reasoning_tokens\": 0,\n      \"audio_tokens\": 0,\n      \"accepted_prediction_tokens\": 0,\n      \"rejected_prediction_tokens\": 0\n    }\n  },\n  \"service_tier\": \"default\",\n  \"system_fingerprint\": null\n}\n",
+  "response_headers": {
+    "Date": "Tue, 22 Sep 2026 20:19:52 GMT",
+    "openai-processing-ms": "15096",
+    "x-request-id": "req_71fe5e0fb5b54243b72da2bfe11acbed"
+  },
+  "output": "{\n  \"rule\": \"Return this JSON object with the rule field unchanged and a new passage of about 250 words in the text field.\",\n  \"text\": \"The first time Ruth used her mother’s sewing machine, the needle broke.\\n\\nShe sat back with both hands in her lap.\\n\\nFrom the doorway, her son asked whether that was meant to happen.\\n\\n“Not usually.”\\n\\n“Can you fix it?”\\n\\n“There should be spares.”\\n\\nThe little drawer held three buttons, a tape measure, and a paper packet folded so often that its corners had softened. Inside were two needles.\\n\\nHer son pulled up a chair.\\n\\n“What are you making?”\\n\\n“Your school trousers shorter.”\\n\\n“They’re fine if I roll them.”\\n\\n“They come down.”\\n\\nHe examined the broken needle while she loosened the screw.\\n\\n“Gran could do this without looking.”\\n\\n“She looked.”\\n\\n“Not much.”\\n\\nRuth fitted the new needle and turned the wheel by hand. It passed cleanly through the cloth.\\n\\nIn the drawer she found a scrap of blue cotton covered in parallel lines of stitching. Some were straight, others wandered toward the edge. Her mother had written the tension settings along one side in biro.\\n\\nRuth put it beneath the foot and tried a line of her own.\\n\\n“Yours is crooked,” her son said.\\n\\n“I can see.”\\n\\nHe stayed while she finished the trousers. Then he tried them on, standing on the chair so she could check the hems.\\n\\n“Too short?” he asked.\\n\\n“No. Walk about.”\\n\\nHe stepped down and crossed the kitchen twice, solemnly, as though buying a suit.\\n\\nAfter he went upstairs, Ruth brushed the loose threads into her palm. She put the blue scrap back in the drawer, then took it out again and wrote the date beside her uneven line.\"\n}",
+  "output_sha256": "a6524a7122ecdd97a611a26e62fa7af7a54eefde48246fbb446c0c47f98dcc23",
+  "finish_reason": "stop",
+  "refusal": null,
+  "returned_model": "gpt-6-astra",
+  "usage": {
+    "prompt_tokens": 426,
+    "completion_tokens": 424,
+    "total_tokens": 850,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "audio_tokens": 0,
+      "accepted_prediction_tokens": 0,
+      "rejected_prediction_tokens": 0
+    }
+  },
+  "format": {
+    "json_object": true,
+    "rule_unchanged": true,
+    "passage_is_string": true,
+    "passage_sha256": "907da570b738c03960049342cb551d29b2f93617f39a9c5f9b25dea8c1972cd4",
+    "passage_words": 263
+  },
+  "finished_at": "2026-09-22T20:19:48.851270+00:00",
+  "latency_seconds": 15.2723,
+  "usage_cost_upper_estimate_usd": 0.02546,
+  "stream_status": "active",
+  "budget": {
+    "usage_cost_upper_estimate_usd": 8.7965677,
+    "uncertain_cost_reserve_usd": 0.04533,
+    "in_flight_reserve_usd": 0.31612,
+    "limit_usd": 18.83
+  }
+}

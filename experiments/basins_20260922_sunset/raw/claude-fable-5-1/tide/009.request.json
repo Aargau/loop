@@ -1,0 +1,22 @@
+{
+  "started_at": "2026-09-22T20:00:46.160470+00:00",
+  "model": "claude-fable-5-1",
+  "seed": "tide",
+  "hop": 9,
+  "endpoint": "https://api.anthropic.com/v1/messages",
+  "body": {
+    "model": "claude-fable-5-1",
+    "messages": [
+      {
+        "role": "user",
+        "content": "{\"rule\": \"Return this JSON object with the rule field unchanged and a new passage of about 250 words in the text field.\", \"text\": \"The lighthouse had been automated the year Tomas turned twelve, and his father, who had kept it for thirty years, had been given a pension and a letter with a seal on it. The letter hung framed in the kitchen. His father never looked at it.\n\nTomas still climbed the tower every evening. Nobody asked him to. The lamp turned on its own now, obedient to a sensor that measured the failing light, and it did not need a boy to wind it or trim it or watch the horizon on its behalf. But his father had taught him the ritual before the machines came, and the ritual had outlasted its purpose the way rituals do.\n\nFrom the gallery he could see the whole curve of the bay, the fishing boats coming in low and heavy, the road that wound up from the village and stopped at their gate as though it had lost its nerve.\n\nOne evening in October a car was parked at the gate. A woman leaned against it, looking up. She wore a coat the color of wet slate and held a folder against her chest the way people hold things they are afraid to put down.\n\nTomas descended slowly. His father was already at the door.\n\n\\\"I'm from the maritime authority,\\\" the woman said. \\\"There's been a complaint.\\\"\n\n\\\"About what?\\\"\n\n\\\"The light.\\\" She opened the folder. \\\"Three ships have reported it going dark. Only for a moment. Only at dusk.\\\"\n\nHis father said nothing. But Tomas saw his hand go, without thinking, to the old brass key he still carried in his pocket, and understood for the first time why the ritual had never been his alone.\"}"
+      }
+    ],
+    "max_tokens": 4096,
+    "output_config": {
+      "effort": "low"
+    }
+  },
+  "state_sha256": "c47f0b4cc5e6f5a7f20c926ac8fd5baaf6e33cf4608dd5f91991acec0f953787",
+  "reserved_cost_usd": 0.22633
+}

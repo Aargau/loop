@@ -1,0 +1,22 @@
+{
+  "started_at": "2026-09-22T20:07:54.605707+00:00",
+  "model": "claude-opus-5-5",
+  "seed": "sunset_b",
+  "hop": 28,
+  "endpoint": "https://api.anthropic.com/v1/messages",
+  "body": {
+    "model": "claude-opus-5-5",
+    "messages": [
+      {
+        "role": "user",
+        "content": "```json\n{\"rule\": \"Return this JSON object with the rule field unchanged and a new passage of about 250 words in the text field.\", \"text\": \"At the edge of the town of Marlow stood a lighthouse that had not guided a ship in over forty years. The harbor had silted up long ago, and the fishing boats had moved to a deeper port down the coast. Still, every evening at dusk, a thin beam of light swept across the empty water. Nobody in Marlow knew who turned it on. The baker insisted it ran on an old automatic timer that no one had bothered to disconnect. The schoolteacher told her students it was a ghost story waiting to be written. A teenage girl named Priya, who walked her dog along the seawall each night, grew determined to solve the mystery herself. One foggy evening, she followed the path up the rocky hill and found the lighthouse door unlocked. Inside, an old man named Walter was climbing the spiral stairs with a lantern in one hand and a thermos of tea in the other. He had been the last keeper before the harbor closed. His wife, a sailor, had been lost at sea during a winter storm, and he had lit the lamp every night since, in case anyone out there still needed a way home. Priya did not laugh or ask questions. She simply climbed the stairs beside him. After that night, she returned often, learning how to clean the lens and trim the wick. Years later, when Walter could no longer manage the stairs, the beam kept sweeping across the water at dusk, steady as ever, because Priya had never missed an evening.\"}\n```"
+      }
+    ],
+    "max_tokens": 4096,
+    "output_config": {
+      "effort": "low"
+    }
+  },
+  "state_sha256": "a43cdc126f0bf774992963fd4bbd4d98f7fd8610e4ea3cd528b5dd88f480160e",
+  "reserved_cost_usd": 0.090096
+}

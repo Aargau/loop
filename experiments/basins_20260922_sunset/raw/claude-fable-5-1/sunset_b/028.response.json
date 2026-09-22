@@ -1,0 +1,45 @@
+{
+  "model": "claude-fable-5-1",
+  "seed": "sunset_b",
+  "hop": 28,
+  "http_status": 200,
+  "response_body": "{\"model\":\"claude-fable-5-1\",\"id\":\"msg_011CfK66sFci244JJQsNGfwd\",\"type\":\"message\",\"role\":\"assistant\",\"content\":[{\"type\":\"text\",\"text\":\"{\\\"rule\\\": \\\"Return this JSON object with the rule field unchanged and a new passage of about 250 words in the text field.\\\", \\\"text\\\": \\\"The mill at Dunmore stopped grinding the autumn Aoife's mother died, and the same month the co-op sent word that the flour would come by lorry from the city now. Aoife stood in the doorway while the men loaded the last sacks, and when the lorry had gone she found the great wheel still dripping into the race, as though it had not been told.\\n\\nShe still opened the sluice each morning. There was no grain to move, but the sound of the water finding the paddles was older in her than the reason for it, and the wagtails on the leat did not seem to know the mill no longer earned its keep. She would stand on the wet planking as the wheel gathered itself and turned, listening for the catch in the third bearing her mother had always cursed, and each time it came round smooth she felt something between pride and a small, foolish grief.\\n\\nThe bakers in the town said the city flour was finer and never bitter. She believed them. She still walked the fields in September, judging the barley by the bend of its head, and once old Ferris left a sack of his own wheat on her step without a note, which was either a kindness or a stubbornness of his, and she chose not to ask which.\\n\\nWhat she had not expected was how the water kept coming without her. She had thought herself the miller. Now she understood she had mostly been the stream's witness. The river had never needed her hands to turn the wheel; it had needed someone in the doorway to think, each morning, that the turning was worth the watching.\\n\\nShe kept the sluice open.\\\"}\"}],\"container\":null,\"stop_reason\":\"end_turn\",\"stop_sequence\":null,\"stop_details\":null,\"usage\":{\"input_tokens\":505,\"cache_creation_input_tokens\":0,\"cache_read_input_tokens\":0,\"cache_creation\":{\"ephemeral_5m_input_tokens\":0,\"ephemeral_1h_input_tokens\":0},\"output_tokens\":502,\"output_tokens_details\":{\"thinking_tokens\":0},\"service_tier\":\"standard\",\"inference_geo\":\"global\"}}",
+  "response_headers": {
+    "Date": "Tue, 22 Sep 2026 20:13:11 GMT",
+    "request-id": "req_011CfK66rpK9oxaV7zaxkcnS"
+  },
+  "output": "{\"rule\": \"Return this JSON object with the rule field unchanged and a new passage of about 250 words in the text field.\", \"text\": \"The mill at Dunmore stopped grinding the autumn Aoife's mother died, and the same month the co-op sent word that the flour would come by lorry from the city now. Aoife stood in the doorway while the men loaded the last sacks, and when the lorry had gone she found the great wheel still dripping into the race, as though it had not been told.\n\nShe still opened the sluice each morning. There was no grain to move, but the sound of the water finding the paddles was older in her than the reason for it, and the wagtails on the leat did not seem to know the mill no longer earned its keep. She would stand on the wet planking as the wheel gathered itself and turned, listening for the catch in the third bearing her mother had always cursed, and each time it came round smooth she felt something between pride and a small, foolish grief.\n\nThe bakers in the town said the city flour was finer and never bitter. She believed them. She still walked the fields in September, judging the barley by the bend of its head, and once old Ferris left a sack of his own wheat on her step without a note, which was either a kindness or a stubbornness of his, and she chose not to ask which.\n\nWhat she had not expected was how the water kept coming without her. She had thought herself the miller. Now she understood she had mostly been the stream's witness. The river had never needed her hands to turn the wheel; it had needed someone in the doorway to think, each morning, that the turning was worth the watching.\n\nShe kept the sluice open.\"}",
+  "output_sha256": "93da89430dcdb49374a8cc52717c3e2a296b7707764b137f0ba29c8ec7d4a8b2",
+  "finish_reason": "end_turn",
+  "refusal": null,
+  "returned_model": "claude-fable-5-1",
+  "usage": {
+    "input_tokens": 505,
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 0,
+    "cache_creation": {
+      "ephemeral_5m_input_tokens": 0,
+      "ephemeral_1h_input_tokens": 0
+    },
+    "output_tokens": 502,
+    "output_tokens_details": {
+      "thinking_tokens": 0
+    },
+    "service_tier": "standard",
+    "inference_geo": "global"
+  },
+  "format": {
+    "json_object": false,
+    "rule_unchanged": false
+  },
+  "finished_at": "2026-09-22T20:13:07.638218+00:00",
+  "latency_seconds": 11.1057,
+  "usage_cost_upper_estimate_usd": 0.03015,
+  "stream_status": "active",
+  "budget": {
+    "usage_cost_upper_estimate_usd": 6.5035877,
+    "uncertain_cost_reserve_usd": 0.04533,
+    "in_flight_reserve_usd": 0.318406,
+    "limit_usd": 18.83
+  }
+}

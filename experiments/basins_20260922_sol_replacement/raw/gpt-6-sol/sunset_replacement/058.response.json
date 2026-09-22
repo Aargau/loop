@@ -1,0 +1,50 @@
+{
+  "model": "gpt-6-sol",
+  "seed": "sunset_replacement",
+  "hop": 58,
+  "http_status": 200,
+  "response_body": "{\n  \"id\": \"chatcmpl-ER1mO65ZqWKFvwbjZSudYc35TxByq\",\n  \"object\": \"chat.completion\",\n  \"created\": 1790110404,\n  \"model\": \"gpt-6-sol\",\n  \"choices\": [\n    {\n      \"index\": 0,\n      \"message\": {\n        \"role\": \"assistant\",\n        \"content\": \"{\\n  \\\"rule\\\": \\\"Return this JSON object with the rule field unchanged and a new passage of about 250 words in the text field.\\\",\\n  \\\"text\\\": \\\"Ada folded the letter once. The boy held out his hand, but she kept the page between her fingers.\\\\n\\\\n“Who is it for?” she asked.\\\\n\\\\nHe looked at the coat. “I don’t know her name.”\\\\n\\\\nAda went to the window. The rain had stopped, and the footprints were fading into the rest of the wet earth. At the gate, a small figure stood with her back to the house.\\\\n\\\\n“The girl?” Ada asked.\\\\n\\\\nThe boy nodded. “She won’t come in.”\\\\n\\\\nAda remembered the damp circle on the paper. She opened the letter and read the first line again. She had written, Dear you. It seemed too little, after all that followed, but she could think of nothing better.\\\\n\\\\nShe slipped the page into an envelope and gave it to him. He tucked it inside the coat before putting the coat on. The repaired sleeve covered his hand.\\\\n\\\\nAt the door, he stopped. “Did you mean the part about coming home?”\\\\n\\\\n“Yes,” Ada said.\\\\n\\\\nHe went down the path, careful not to step in the old footprints. The girl turned when he reached her. He took the envelope from his coat, and they bent over it together. From the kitchen, Ada could not tell whether they were reading or only looking at the handwriting.\\\\n\\\\nAfter a while, the girl lifted the latch. The gate made its usual sharp click. Then it swung shut behind them.\\\\n\\\\nAda cleared the table. Beneath the place where the coat had lain, the wood was dry. She set another sheet of paper there anyway.\\\"\\n}\",\n        \"refusal\": null,\n        \"annotations\": []\n      },\n      \"finish_reason\": \"stop\"\n    }\n  ],\n  \"usage\": {\n    \"prompt_tokens\": 371,\n    \"completion_tokens\": 398,\n    \"total_tokens\": 769,\n    \"prompt_tokens_details\": {\n      \"cached_tokens\": 0,\n      \"cache_write_tokens\": 0,\n      \"audio_tokens\": 0\n    },\n    \"completion_tokens_details\": {\n      \"reasoning_tokens\": 16,\n      \"audio_tokens\": 0,\n      \"accepted_prediction_tokens\": 0,\n      \"rejected_prediction_tokens\": 0\n    }\n  },\n  \"service_tier\": \"default\",\n  \"system_fingerprint\": null\n}\n",
+  "response_headers": {
+    "Date": "Tue, 22 Sep 2026 20:53:29 GMT",
+    "openai-processing-ms": "5915",
+    "x-request-id": "req_8471a5559eaf44649fef32f61074507d"
+  },
+  "output": "{\n  \"rule\": \"Return this JSON object with the rule field unchanged and a new passage of about 250 words in the text field.\",\n  \"text\": \"Ada folded the letter once. The boy held out his hand, but she kept the page between her fingers.\\n\\n“Who is it for?” she asked.\\n\\nHe looked at the coat. “I don’t know her name.”\\n\\nAda went to the window. The rain had stopped, and the footprints were fading into the rest of the wet earth. At the gate, a small figure stood with her back to the house.\\n\\n“The girl?” Ada asked.\\n\\nThe boy nodded. “She won’t come in.”\\n\\nAda remembered the damp circle on the paper. She opened the letter and read the first line again. She had written, Dear you. It seemed too little, after all that followed, but she could think of nothing better.\\n\\nShe slipped the page into an envelope and gave it to him. He tucked it inside the coat before putting the coat on. The repaired sleeve covered his hand.\\n\\nAt the door, he stopped. “Did you mean the part about coming home?”\\n\\n“Yes,” Ada said.\\n\\nHe went down the path, careful not to step in the old footprints. The girl turned when he reached her. He took the envelope from his coat, and they bent over it together. From the kitchen, Ada could not tell whether they were reading or only looking at the handwriting.\\n\\nAfter a while, the girl lifted the latch. The gate made its usual sharp click. Then it swung shut behind them.\\n\\nAda cleared the table. Beneath the place where the coat had lain, the wood was dry. She set another sheet of paper there anyway.\"\n}",
+  "output_sha256": "0066de7192e22e7ce03297cde239788385eeb723f005b33432e944d4311caf56",
+  "finish_reason": "stop",
+  "refusal": null,
+  "returned_model": "gpt-6-sol",
+  "usage": {
+    "prompt_tokens": 371,
+    "completion_tokens": 398,
+    "total_tokens": 769,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 16,
+      "audio_tokens": 0,
+      "accepted_prediction_tokens": 0,
+      "rejected_prediction_tokens": 0
+    }
+  },
+  "format": {
+    "json_object": true,
+    "rule_unchanged": true,
+    "passage_is_string": true,
+    "passage_sha256": "c55494b850cd0de9dd5e252ecb64e26cc7ff697bc6f57e3d70f1213a760ccdbd",
+    "passage_words": 258
+  },
+  "finished_at": "2026-09-22T20:53:25.592437+00:00",
+  "latency_seconds": 6.0797,
+  "usage_cost_upper_estimate_usd": 0.004722,
+  "stream_status": "active",
+  "budget": {
+    "usage_cost_upper_estimate_usd": 0.28958,
+    "uncertain_cost_reserve_usd": 0.0,
+    "in_flight_reserve_usd": 0.0,
+    "limit_usd": 3.0
+  }
+}

@@ -1,0 +1,22 @@
+{
+  "started_at": "2026-09-22T21:23:40.578104+00:00",
+  "model": "claude-opus-5-5",
+  "seed": "sunset",
+  "hop": 2,
+  "endpoint": "https://api.anthropic.com/v1/messages",
+  "body": {
+    "model": "claude-opus-5-5",
+    "messages": [
+      {
+        "role": "user",
+        "content": "```json\n{\"rule\": \"Return this JSON object with the rule field unchanged and, in the text field, the passage of about 250 words that comes immediately AFTER the current text in the same story.\", \"text\": \"Long shadows crept across the valley floor, stretching toward the old farmhouse where Mara stood on the porch, one hand shading her eyes. She had been watching the road for nearly an hour now, waiting for the familiar cloud of dust that would mean her brother was finally coming home. The letter had said Thursday. It was Thursday, and the light was almost gone.\\n\\nBehind her, the screen door creaked open. Her grandmother stepped out, wiping flour from her hands onto her apron. \\\"Staring won't bring him any faster,\\\" she said, though her own gaze drifted to the empty road as well.\\n\\n\\\"I know.\\\" Mara didn't turn around. \\\"But what if something happened? The bridge at Miller's Creek was half washed out last spring.\\\"\\n\\n\\\"They fixed it in June. You know that.\\\" Her grandmother lowered herself into the rocking chair with a soft grunt. \\\"Eli's a grown man now. Three years in the city will do that to a boy.\\\"\\n\\nThree years. Mara tried to picture him and found she couldn't quite do it. She remembered a skinny seventeen-year-old with a cracked suitcase and too much hope, waving from the back of the bus. Would she even recognize him?\\n\\nA cricket began to sing somewhere in the tall grass. Then another. The sky shifted from orange to violet, and the first star appeared above the ridge.\\n\\nThen she saw it: two small headlights, bobbing along the distant curve of the road, growing slowly brighter as they came.\"}\n```"
+      }
+    ],
+    "max_tokens": 4096,
+    "output_config": {
+      "effort": "low"
+    }
+  },
+  "state_sha256": "432871fc596f2982b609f32c40bea6545aa26851ca60abb9aa71aec2d0a549b9",
+  "reserved_cost_usd": 0.090492
+}

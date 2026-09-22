@@ -1,0 +1,48 @@
+{
+  "model": "claude-fable-5-1",
+  "seed": "tide",
+  "hop": 13,
+  "http_status": 200,
+  "response_body": "{\"model\":\"claude-fable-5-1\",\"id\":\"msg_011CfK5NU7QJsEJStNYuz1C8\",\"type\":\"message\",\"role\":\"assistant\",\"content\":[{\"type\":\"text\",\"text\":\"{\\\"rule\\\": \\\"Return this JSON object with the rule field unchanged and a new passage of about 250 words in the text field.\\\", \\\"text\\\": \\\"The ferry stopped running to Harrow Island the autumn Elise turned nine, and her mother, who had sold tickets from the little booth on the pier for nineteen years, was given a cardboard box for her things and a certificate thanking her for her service. The certificate went into a drawer. The box became a place for onions.\\\\n\\\\nElise still walked to the pier most afternoons after school. The gate was chained, but the chain had rusted through on one side and swung open if you lifted it just right. The timetable board still hung above the booth, its painted hours bleached to ghosts, and the coin tray inside had been pried out and taken away. But her mother had taught her the tides before the ferry stopped, how the channel narrowed to a green ribbon at low water and how the current bent hard around the point when the wind sat in the east, and the knowing stayed even after there was nothing left to schedule.\\\\n\\\\nFrom the end of the pier she could see the island, its two chimneys, the white smudge of the chapel, the mudflats glistening when the water fell back.\\\\n\\\\nOne afternoon in late October a man in waders set out across the flats toward the island, walking straight for the place where the channel cut deepest and filled first.\\\\n\\\\nElise did not call out. She climbed onto the booth's roof, took off her red scarf, and held it out sideways, the way her mother had once signaled the last boat to wait.\\\\n\\\\nThe man stopped, looked, and angled north toward the sandbar.\\\\n\\\\nLater he came back along the pier, dripping to the knee.\\\\n\\\\n\\\\\\\"Is the crossing still watched?\\\\\\\" he asked.\\\\n\\\\nElise thought of the onions in the ticket box and said, \\\\\\\"Only by habit.\\\\\\\"\\\"}\"}],\"container\":null,\"stop_reason\":\"end_turn\",\"stop_sequence\":null,\"stop_details\":null,\"usage\":{\"input_tokens\":610,\"cache_creation_input_tokens\":0,\"cache_read_input_tokens\":0,\"cache_creation\":{\"ephemeral_5m_input_tokens\":0,\"ephemeral_1h_input_tokens\":0},\"output_tokens\":584,\"output_tokens_details\":{\"thinking_tokens\":0},\"service_tier\":\"standard\",\"inference_geo\":\"global\"}}",
+  "response_headers": {
+    "Date": "Tue, 22 Sep 2026 20:03:39 GMT",
+    "request-id": "req_011CfK5NTgMcYfpTZuG35L31"
+  },
+  "output": "{\"rule\": \"Return this JSON object with the rule field unchanged and a new passage of about 250 words in the text field.\", \"text\": \"The ferry stopped running to Harrow Island the autumn Elise turned nine, and her mother, who had sold tickets from the little booth on the pier for nineteen years, was given a cardboard box for her things and a certificate thanking her for her service. The certificate went into a drawer. The box became a place for onions.\\n\\nElise still walked to the pier most afternoons after school. The gate was chained, but the chain had rusted through on one side and swung open if you lifted it just right. The timetable board still hung above the booth, its painted hours bleached to ghosts, and the coin tray inside had been pried out and taken away. But her mother had taught her the tides before the ferry stopped, how the channel narrowed to a green ribbon at low water and how the current bent hard around the point when the wind sat in the east, and the knowing stayed even after there was nothing left to schedule.\\n\\nFrom the end of the pier she could see the island, its two chimneys, the white smudge of the chapel, the mudflats glistening when the water fell back.\\n\\nOne afternoon in late October a man in waders set out across the flats toward the island, walking straight for the place where the channel cut deepest and filled first.\\n\\nElise did not call out. She climbed onto the booth's roof, took off her red scarf, and held it out sideways, the way her mother had once signaled the last boat to wait.\\n\\nThe man stopped, looked, and angled north toward the sandbar.\\n\\nLater he came back along the pier, dripping to the knee.\\n\\n\\\"Is the crossing still watched?\\\" he asked.\\n\\nElise thought of the onions in the ticket box and said, \\\"Only by habit.\\\"\"}",
+  "output_sha256": "2c26a1b6d848208e51c19509b69711070e42d10a86d40f87f9c75347f03e703c",
+  "finish_reason": "end_turn",
+  "refusal": null,
+  "returned_model": "claude-fable-5-1",
+  "usage": {
+    "input_tokens": 610,
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 0,
+    "cache_creation": {
+      "ephemeral_5m_input_tokens": 0,
+      "ephemeral_1h_input_tokens": 0
+    },
+    "output_tokens": 584,
+    "output_tokens_details": {
+      "thinking_tokens": 0
+    },
+    "service_tier": "standard",
+    "inference_geo": "global"
+  },
+  "format": {
+    "json_object": true,
+    "rule_unchanged": true,
+    "passage_is_string": true,
+    "passage_sha256": "336cf0e6d4c412d447b7e9db68857c6bc715b85a60c7a7fb1cb2032b53d99500",
+    "passage_words": 300
+  },
+  "finished_at": "2026-09-22T20:03:35.775291+00:00",
+  "latency_seconds": 14.4245,
+  "usage_cost_upper_estimate_usd": 0.0353,
+  "stream_status": "active",
+  "budget": {
+    "usage_cost_upper_estimate_usd": 3.0872861,
+    "uncertain_cost_reserve_usd": 0.04533,
+    "in_flight_reserve_usd": 0.3647917,
+    "limit_usd": 18.83
+  }
+}

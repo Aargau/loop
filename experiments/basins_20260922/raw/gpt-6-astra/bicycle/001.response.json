@@ -1,0 +1,50 @@
+{
+  "model": "gpt-6-astra",
+  "seed": "bicycle",
+  "hop": 1,
+  "http_status": 200,
+  "response_body": "{\n  \"id\": \"chatcmpl-ER0oR3iYcXLM3v0BZn8Y3emuRayuK\",\n  \"object\": \"chat.completion\",\n  \"created\": 1790106687,\n  \"model\": \"gpt-6-astra\",\n  \"choices\": [\n    {\n      \"index\": 0,\n      \"message\": {\n        \"role\": \"assistant\",\n        \"content\": \"{\\n  \\\"rule\\\": \\\"Return this JSON object with the rule field unchanged and a new passage of about 250 words in the text field.\\\",\\n  \\\"text\\\": \\\"The red bicycle was missing its front wheel. Mara found it leaning against the bakery wall, exactly where her brother had left it ten years earlier, except that someone had polished the frame.\\\\n\\\\nShe stopped so abruptly that the paper bag in her arms split. Apples rolled across the pavement. One bumped against the bicycle’s remaining tire.\\\\n\\\\n“Thought you might recognize it,” said a voice behind her.\\\\n\\\\nThe baker stood in his doorway, dusting flour from his wrists. He had grown thinner, and his eyebrows seemed whiter than the flour.\\\\n\\\\n“Where did you get this?” Mara asked.\\\\n\\\\n“Council cleared the old railway shed. It was in there with three shopping carts and a church pew.”\\\\n\\\\nHer brother had always claimed he could fix anything. During his last summer home, he had taken the front wheel away to straighten its bent rim. Then came the job overseas, the hurried departure, and years of calls made increasingly brief by time zones and things neither knew how to say.\\\\n\\\\nMara crouched beside the frame. Beneath the seat, almost rubbed away, was the crooked silver star she had painted when she was twelve.\\\\n\\\\n“I can find you another wheel,” the baker offered.\\\\n\\\\nShe took out her phone instead. Her brother answered on the fifth ring, sounding sleepy.\\\\n\\\\n“Do you still have my wheel?” she asked.\\\\n\\\\nFor a moment, he said nothing. Then she heard a drawer open.\\\\n\\\\n“You won’t believe this,” he said.\\\\n\\\\nMara sat down on the curb, laughing, while the baker gathered her apples and put them in a fresh bag.\\\"\\n}\",\n        \"refusal\": null,\n        \"annotations\": []\n      },\n      \"finish_reason\": \"stop\"\n    }\n  ],\n  \"usage\": {\n    \"prompt_tokens\": 47,\n    \"completion_tokens\": 378,\n    \"total_tokens\": 425,\n    \"prompt_tokens_details\": {\n      \"cached_tokens\": 0,\n      \"cache_write_tokens\": 0,\n      \"audio_tokens\": 0\n    },\n    \"completion_tokens_details\": {\n      \"reasoning_tokens\": 0,\n      \"audio_tokens\": 0,\n      \"accepted_prediction_tokens\": 0,\n      \"rejected_prediction_tokens\": 0\n    }\n  },\n  \"service_tier\": \"default\",\n  \"system_fingerprint\": null\n}\n",
+  "response_headers": {
+    "Date": "Tue, 22 Sep 2026 19:51:41 GMT",
+    "openai-processing-ms": "14013",
+    "x-request-id": "req_f267922ddf44480d8b2661556e370e66"
+  },
+  "output": "{\n  \"rule\": \"Return this JSON object with the rule field unchanged and a new passage of about 250 words in the text field.\",\n  \"text\": \"The red bicycle was missing its front wheel. Mara found it leaning against the bakery wall, exactly where her brother had left it ten years earlier, except that someone had polished the frame.\\n\\nShe stopped so abruptly that the paper bag in her arms split. Apples rolled across the pavement. One bumped against the bicycle’s remaining tire.\\n\\n“Thought you might recognize it,” said a voice behind her.\\n\\nThe baker stood in his doorway, dusting flour from his wrists. He had grown thinner, and his eyebrows seemed whiter than the flour.\\n\\n“Where did you get this?” Mara asked.\\n\\n“Council cleared the old railway shed. It was in there with three shopping carts and a church pew.”\\n\\nHer brother had always claimed he could fix anything. During his last summer home, he had taken the front wheel away to straighten its bent rim. Then came the job overseas, the hurried departure, and years of calls made increasingly brief by time zones and things neither knew how to say.\\n\\nMara crouched beside the frame. Beneath the seat, almost rubbed away, was the crooked silver star she had painted when she was twelve.\\n\\n“I can find you another wheel,” the baker offered.\\n\\nShe took out her phone instead. Her brother answered on the fifth ring, sounding sleepy.\\n\\n“Do you still have my wheel?” she asked.\\n\\nFor a moment, he said nothing. Then she heard a drawer open.\\n\\n“You won’t believe this,” he said.\\n\\nMara sat down on the curb, laughing, while the baker gathered her apples and put them in a fresh bag.\"\n}",
+  "output_sha256": "700917a8a90d5f6d9f91b1ecab81a50ed277666a02fbab4cb67fe13e11786aaa",
+  "finish_reason": "stop",
+  "refusal": null,
+  "returned_model": "gpt-6-astra",
+  "usage": {
+    "prompt_tokens": 47,
+    "completion_tokens": 378,
+    "total_tokens": 425,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "audio_tokens": 0,
+      "accepted_prediction_tokens": 0,
+      "rejected_prediction_tokens": 0
+    }
+  },
+  "format": {
+    "json_object": true,
+    "rule_unchanged": true,
+    "passage_is_string": true,
+    "passage_sha256": "d3a38996024aff29c67a886f8dfcc50ae8a89009f8058ed7035164eaf8345f7c",
+    "passage_words": 259
+  },
+  "finished_at": "2026-09-22T19:51:37.221510+00:00",
+  "latency_seconds": 14.157,
+  "usage_cost_upper_estimate_usd": 0.01937,
+  "stream_status": "active",
+  "budget": {
+    "usage_cost_upper_estimate_usd": 0.2171648,
+    "uncertain_cost_reserve_usd": 0.0,
+    "in_flight_reserve_usd": 0.3638034,
+    "limit_usd": 20
+  }
+}

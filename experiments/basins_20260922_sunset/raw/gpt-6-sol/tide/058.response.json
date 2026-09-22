@@ -1,0 +1,50 @@
+{
+  "model": "gpt-6-sol",
+  "seed": "tide",
+  "hop": 58,
+  "http_status": 200,
+  "response_body": "{\n  \"id\": \"chatcmpl-ER14pISTUoehacIqFxyOyslhmPxiC\",\n  \"object\": \"chat.completion\",\n  \"created\": 1790107703,\n  \"model\": \"gpt-6-sol\",\n  \"choices\": [\n    {\n      \"index\": 0,\n      \"message\": {\n        \"role\": \"assistant\",\n        \"content\": \"{\\n  \\\"rule\\\": \\\"Return this JSON object with the rule field unchanged and a new passage of about 250 words in the text field.\\\",\\n  \\\"text\\\": \\\"By the time they reached the ferry landing, the child had fallen asleep against their mother’s shoulder. Mara bought four tickets and kept the receipt beside the scrap from the notebook. The address was still legible, though sand had caught in its folds.\\\\n\\\\nHer sister stood at the rail as the ferry pulled away. “Do you think he went there?”\\\\n\\\\n“I think he wanted us to know about it,” Mara said.\\\\n\\\\nAcross the bay, the harbor rose in tiers of narrow streets and slate roofs. Their mother had worked there before Mara was born, but she said little during the crossing. Only when they passed the inn named on the receipt did she stop and point uphill.\\\\n\\\\n“That street is near the old hospital.”\\\\n\\\\nThe address led them to a blue door between a baker’s shop and a boarded-up tailor’s. No one answered their knock. Mara was about to try again when an upstairs window opened.\\\\n\\\\nA woman looked down at them. Her gaze moved from Mara’s face to the notebook under her arm.\\\\n\\\\n“You’re his daughters,” she said.\\\\n\\\\nTheir mother stepped forward. “Is he here?”\\\\n\\\\nThe woman gripped the windowsill. For a moment, Mara heard only the ferry’s horn sounding across the water.\\\\n\\\\n“No,” the woman said. “But he was. Come round to the back.”\\\\n\\\\nShe closed the window. Mara’s sister took the child’s hand, and together they found the narrow passage beside the bakery. At its end, a gate stood open. Mara held the notebook closer as they went through.\\\"\\n}\",\n        \"refusal\": null,\n        \"annotations\": []\n      },\n      \"finish_reason\": \"stop\"\n    }\n  ],\n  \"usage\": {\n    \"prompt_tokens\": 363,\n    \"completion_tokens\": 399,\n    \"total_tokens\": 762,\n    \"prompt_tokens_details\": {\n      \"cached_tokens\": 0,\n      \"cache_write_tokens\": 0,\n      \"audio_tokens\": 0\n    },\n    \"completion_tokens_details\": {\n      \"reasoning_tokens\": 25,\n      \"audio_tokens\": 0,\n      \"accepted_prediction_tokens\": 0,\n      \"rejected_prediction_tokens\": 0\n    }\n  },\n  \"service_tier\": \"default\",\n  \"system_fingerprint\": null\n}\n",
+  "response_headers": {
+    "Date": "Tue, 22 Sep 2026 20:08:30 GMT",
+    "openai-processing-ms": "7169",
+    "x-request-id": "req_fc9f03bd6b4e4eacadfc2eaf60741f0f"
+  },
+  "output": "{\n  \"rule\": \"Return this JSON object with the rule field unchanged and a new passage of about 250 words in the text field.\",\n  \"text\": \"By the time they reached the ferry landing, the child had fallen asleep against their mother’s shoulder. Mara bought four tickets and kept the receipt beside the scrap from the notebook. The address was still legible, though sand had caught in its folds.\\n\\nHer sister stood at the rail as the ferry pulled away. “Do you think he went there?”\\n\\n“I think he wanted us to know about it,” Mara said.\\n\\nAcross the bay, the harbor rose in tiers of narrow streets and slate roofs. Their mother had worked there before Mara was born, but she said little during the crossing. Only when they passed the inn named on the receipt did she stop and point uphill.\\n\\n“That street is near the old hospital.”\\n\\nThe address led them to a blue door between a baker’s shop and a boarded-up tailor’s. No one answered their knock. Mara was about to try again when an upstairs window opened.\\n\\nA woman looked down at them. Her gaze moved from Mara’s face to the notebook under her arm.\\n\\n“You’re his daughters,” she said.\\n\\nTheir mother stepped forward. “Is he here?”\\n\\nThe woman gripped the windowsill. For a moment, Mara heard only the ferry’s horn sounding across the water.\\n\\n“No,” the woman said. “But he was. Come round to the back.”\\n\\nShe closed the window. Mara’s sister took the child’s hand, and together they found the narrow passage beside the bakery. At its end, a gate stood open. Mara held the notebook closer as they went through.\"\n}",
+  "output_sha256": "249855a838ef389828982392826bbacfb4fe37bb6f71a1bd39fcfc1c356179f4",
+  "finish_reason": "stop",
+  "refusal": null,
+  "returned_model": "gpt-6-sol",
+  "usage": {
+    "prompt_tokens": 363,
+    "completion_tokens": 399,
+    "total_tokens": 762,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 25,
+      "audio_tokens": 0,
+      "accepted_prediction_tokens": 0,
+      "rejected_prediction_tokens": 0
+    }
+  },
+  "format": {
+    "json_object": true,
+    "rule_unchanged": true,
+    "passage_is_string": true,
+    "passage_sha256": "4073318054753ec7c6fef6754e49b2feb29b2fdf1b4ca973c72a04df33cfe4ee",
+    "passage_words": 252
+  },
+  "finished_at": "2026-09-22T20:08:26.689052+00:00",
+  "latency_seconds": 7.27,
+  "usage_cost_upper_estimate_usd": 0.004716,
+  "stream_status": "active",
+  "budget": {
+    "usage_cost_upper_estimate_usd": 4.9203077,
+    "uncertain_cost_reserve_usd": 0.04533,
+    "in_flight_reserve_usd": 0.5464653,
+    "limit_usd": 18.83
+  }
+}

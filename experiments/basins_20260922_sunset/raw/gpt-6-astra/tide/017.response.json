@@ -1,0 +1,50 @@
+{
+  "model": "gpt-6-astra",
+  "seed": "tide",
+  "hop": 17,
+  "http_status": 200,
+  "response_body": "{\n  \"id\": \"chatcmpl-ER15AE86TOh8uIszNXbCqsVFnnYLG\",\n  \"object\": \"chat.completion\",\n  \"created\": 1790107724,\n  \"model\": \"gpt-6-astra\",\n  \"choices\": [\n    {\n      \"index\": 0,\n      \"message\": {\n        \"role\": \"assistant\",\n        \"content\": \"{\\n  \\\"rule\\\": \\\"Return this JSON object with the rule field unchanged and a new passage of about 250 words in the text field.\\\",\\n  \\\"text\\\": \\\"The council installed the public telephone three days after my mother’s funeral.\\\\n\\\\nIt stood outside my flat, bright yellow, with no coin slot and only one button.\\\\n\\\\nAt midnight, it rang.\\\\n\\\\nI let it ring for seven nights.\\\\n\\\\nOn the eighth, a neighbour leaned out of her window and shouted, “Some of us have people we’re trying to forget.”\\\\n\\\\nI went downstairs.\\\\n\\\\nThe receiver was warm.\\\\n\\\\n“Hello, darling,” Mum said. “Have you eaten?”\\\\n\\\\nI sat on the pavement until dawn, telling her everything except that she was dead.\\\\n\\\\nAfter that, I answered every night.\\\\n\\\\nShe asked ordinary questions. Was work all right? Had I fixed the bathroom lock? Did I still keep the spare key beneath the blue pot?\\\\n\\\\nSometimes I heard cutlery behind her. Sometimes a chair scraping closer.\\\\n\\\\n“Have you got company?” I asked.\\\\n\\\\n“Just the man who lets me call.”\\\\n\\\\nLast night, her voice sounded faint.\\\\n\\\\n“He says we’ve nearly used up our time.”\\\\n\\\\n“How do we get more?”\\\\n\\\\nA pause. Then paper rustling.\\\\n\\\\n“He needs you to press the button.”\\\\n\\\\nI looked at the telephone’s single black button.\\\\n\\\\n“What does it do?”\\\\n\\\\nMum began to cry.\\\\n\\\\nBehind her, a man whispered something.\\\\n\\\\n“It opens the door,” she said.\\\\n\\\\nI put down the receiver.\\\\n\\\\nThe telephone rang again before I reached my building.\\\\n\\\\nThen my mobile rang.\\\\n\\\\nThen every flat above me lit up, one window after another.\\\\n\\\\nThrough my open bathroom window, I heard the lock slide shut.\\\\n\\\\nMy mother called down softly.\\\\n\\\\n“Darling, where’s the blue pot?”\\\"\\n}\",\n        \"refusal\": null,\n        \"annotations\": []\n      },\n      \"finish_reason\": \"stop\"\n    }\n  ],\n  \"usage\": {\n    \"prompt_tokens\": 437,\n    \"completion_tokens\": 426,\n    \"total_tokens\": 863,\n    \"prompt_tokens_details\": {\n      \"cached_tokens\": 0,\n      \"cache_write_tokens\": 0,\n      \"audio_tokens\": 0\n    },\n    \"completion_tokens_details\": {\n      \"reasoning_tokens\": 0,\n      \"audio_tokens\": 0,\n      \"accepted_prediction_tokens\": 0,\n      \"rejected_prediction_tokens\": 0\n    }\n  },\n  \"service_tier\": \"default\",\n  \"system_fingerprint\": null\n}\n",
+  "response_headers": {
+    "Date": "Tue, 22 Sep 2026 20:09:04 GMT",
+    "openai-processing-ms": "20982",
+    "x-request-id": "req_217cc32364eb4a15b564fa9f557e0524"
+  },
+  "output": "{\n  \"rule\": \"Return this JSON object with the rule field unchanged and a new passage of about 250 words in the text field.\",\n  \"text\": \"The council installed the public telephone three days after my mother’s funeral.\\n\\nIt stood outside my flat, bright yellow, with no coin slot and only one button.\\n\\nAt midnight, it rang.\\n\\nI let it ring for seven nights.\\n\\nOn the eighth, a neighbour leaned out of her window and shouted, “Some of us have people we’re trying to forget.”\\n\\nI went downstairs.\\n\\nThe receiver was warm.\\n\\n“Hello, darling,” Mum said. “Have you eaten?”\\n\\nI sat on the pavement until dawn, telling her everything except that she was dead.\\n\\nAfter that, I answered every night.\\n\\nShe asked ordinary questions. Was work all right? Had I fixed the bathroom lock? Did I still keep the spare key beneath the blue pot?\\n\\nSometimes I heard cutlery behind her. Sometimes a chair scraping closer.\\n\\n“Have you got company?” I asked.\\n\\n“Just the man who lets me call.”\\n\\nLast night, her voice sounded faint.\\n\\n“He says we’ve nearly used up our time.”\\n\\n“How do we get more?”\\n\\nA pause. Then paper rustling.\\n\\n“He needs you to press the button.”\\n\\nI looked at the telephone’s single black button.\\n\\n“What does it do?”\\n\\nMum began to cry.\\n\\nBehind her, a man whispered something.\\n\\n“It opens the door,” she said.\\n\\nI put down the receiver.\\n\\nThe telephone rang again before I reached my building.\\n\\nThen my mobile rang.\\n\\nThen every flat above me lit up, one window after another.\\n\\nThrough my open bathroom window, I heard the lock slide shut.\\n\\nMy mother called down softly.\\n\\n“Darling, where’s the blue pot?”\"\n}",
+  "output_sha256": "76a5149abff4f83d0d5f8ebaf13128d06c1950fb0a04467822326b884ea9de9b",
+  "finish_reason": "stop",
+  "refusal": null,
+  "returned_model": "gpt-6-astra",
+  "usage": {
+    "prompt_tokens": 437,
+    "completion_tokens": 426,
+    "total_tokens": 863,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "audio_tokens": 0,
+      "accepted_prediction_tokens": 0,
+      "rejected_prediction_tokens": 0
+    }
+  },
+  "format": {
+    "json_object": true,
+    "rule_unchanged": true,
+    "passage_is_string": true,
+    "passage_sha256": "67359d8c34e05484731fe82c57f36b783c3403e1a38e2b0a0f51001b2e9381f0",
+    "passage_words": 252
+  },
+  "finished_at": "2026-09-22T20:09:00.859982+00:00",
+  "latency_seconds": 21.0924,
+  "usage_cost_upper_estimate_usd": 0.02567,
+  "stream_status": "active",
+  "budget": {
+    "usage_cost_upper_estimate_usd": 5.1276577,
+    "uncertain_cost_reserve_usd": 0.04533,
+    "in_flight_reserve_usd": 0.317192,
+    "limit_usd": 18.83
+  }
+}

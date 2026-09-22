@@ -1,0 +1,50 @@
+{
+  "model": "gpt-6-sol",
+  "seed": "sunset_replacement",
+  "hop": 6,
+  "http_status": 200,
+  "response_body": "{\n  \"id\": \"chatcmpl-ER1gp3o6yVh0OEb5fVV6xwHN3iNPF\",\n  \"object\": \"chat.completion\",\n  \"created\": 1790110059,\n  \"model\": \"gpt-6-sol\",\n  \"choices\": [\n    {\n      \"index\": 0,\n      \"message\": {\n        \"role\": \"assistant\",\n        \"content\": \"{\\n  \\\"rule\\\": \\\"Return this JSON object with the rule field unchanged and a new passage of about 250 words in the text field.\\\",\\n  \\\"text\\\": \\\"The lamp was in the harbor master’s shed, wrapped in sailcloth beneath a coil of rope. Mara found it that afternoon while Elias took the letter to the constable. Its glass was intact, but the brass frame had been bent where someone had pried it from its mount.\\\\n\\\\nAda held the frame steady as Mara straightened it with a mallet. Neither spoke until the constable arrived with Elias and a ledger under his arm.\\\\n\\\\n“He says it’s his,” Elias told them. “Says my brother left it in his keeping.”\\\\n\\\\nThe constable laid the ledger on the workbench. Its last pages had been cut away, leaving a ragged edge at the binding. He fitted the copy from Elias’s coat against it. The torn fibers matched.\\\\n\\\\nOutside, the tide had begun to rise. A bank of fog waited beyond the reef, pale against the darkening water.\\\\n\\\\nThe constable closed the book. “I’ll take him in. Can you have the light burning tonight?”\\\\n\\\\nAda looked at the lamp. “If we can carry it up.”\\\\n\\\\nThey made the climb in two trips. By dusk, the glass had been cleaned and the frame secured in its old place. Mara poured oil into the reservoir while Elias checked the wick. Ada struck the match.\\\\n\\\\nFor a moment the flame was no bigger than a pin. Then it caught, and light swept across the harbor. Far below, a fishing boat changed course before it reached the reef. Ada watched until it passed safely into open water.\\\"\\n}\",\n        \"refusal\": null,\n        \"annotations\": []\n      },\n      \"finish_reason\": \"stop\"\n    }\n  ],\n  \"usage\": {\n    \"prompt_tokens\": 376,\n    \"completion_tokens\": 393,\n    \"total_tokens\": 769,\n    \"prompt_tokens_details\": {\n      \"cached_tokens\": 0,\n      \"cache_write_tokens\": 0,\n      \"audio_tokens\": 0\n    },\n    \"completion_tokens_details\": {\n      \"reasoning_tokens\": 27,\n      \"audio_tokens\": 0,\n      \"accepted_prediction_tokens\": 0,\n      \"rejected_prediction_tokens\": 0\n    }\n  },\n  \"service_tier\": \"default\",\n  \"system_fingerprint\": null\n}\n",
+  "response_headers": {
+    "Date": "Tue, 22 Sep 2026 20:47:44 GMT",
+    "openai-processing-ms": "5865",
+    "x-request-id": "req_f1d0baa748914d11a0d46eea59926485"
+  },
+  "output": "{\n  \"rule\": \"Return this JSON object with the rule field unchanged and a new passage of about 250 words in the text field.\",\n  \"text\": \"The lamp was in the harbor master’s shed, wrapped in sailcloth beneath a coil of rope. Mara found it that afternoon while Elias took the letter to the constable. Its glass was intact, but the brass frame had been bent where someone had pried it from its mount.\\n\\nAda held the frame steady as Mara straightened it with a mallet. Neither spoke until the constable arrived with Elias and a ledger under his arm.\\n\\n“He says it’s his,” Elias told them. “Says my brother left it in his keeping.”\\n\\nThe constable laid the ledger on the workbench. Its last pages had been cut away, leaving a ragged edge at the binding. He fitted the copy from Elias’s coat against it. The torn fibers matched.\\n\\nOutside, the tide had begun to rise. A bank of fog waited beyond the reef, pale against the darkening water.\\n\\nThe constable closed the book. “I’ll take him in. Can you have the light burning tonight?”\\n\\nAda looked at the lamp. “If we can carry it up.”\\n\\nThey made the climb in two trips. By dusk, the glass had been cleaned and the frame secured in its old place. Mara poured oil into the reservoir while Elias checked the wick. Ada struck the match.\\n\\nFor a moment the flame was no bigger than a pin. Then it caught, and light swept across the harbor. Far below, a fishing boat changed course before it reached the reef. Ada watched until it passed safely into open water.\"\n}",
+  "output_sha256": "7cab764ee60a23f5f9325a0f0c2bec3dd555c70d556fcd8da77d837fba200e32",
+  "finish_reason": "stop",
+  "refusal": null,
+  "returned_model": "gpt-6-sol",
+  "usage": {
+    "prompt_tokens": 376,
+    "completion_tokens": 393,
+    "total_tokens": 769,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 27,
+      "audio_tokens": 0,
+      "accepted_prediction_tokens": 0,
+      "rejected_prediction_tokens": 0
+    }
+  },
+  "format": {
+    "json_object": true,
+    "rule_unchanged": true,
+    "passage_is_string": true,
+    "passage_sha256": "2bf3d6bbe2fa40427c94f0b43c68f05ee2cc823fa1a03ada7d9fada7b35891ad",
+    "passage_words": 249
+  },
+  "finished_at": "2026-09-22T20:47:40.804682+00:00",
+  "latency_seconds": 5.9967,
+  "usage_cost_upper_estimate_usd": 0.004682,
+  "stream_status": "active",
+  "budget": {
+    "usage_cost_upper_estimate_usd": 0.027606,
+    "uncertain_cost_reserve_usd": 0.0,
+    "in_flight_reserve_usd": 0.0,
+    "limit_usd": 3.0
+  }
+}

@@ -1,0 +1,50 @@
+{
+  "model": "gpt-6-sol",
+  "seed": "sunset_replacement",
+  "hop": 22,
+  "http_status": 200,
+  "response_body": "{\n  \"id\": \"chatcmpl-ER1iTOtcjXD6TM6USNtYVoLsuSXn6\",\n  \"object\": \"chat.completion\",\n  \"created\": 1790110161,\n  \"model\": \"gpt-6-sol\",\n  \"choices\": [\n    {\n      \"index\": 0,\n      \"message\": {\n        \"role\": \"assistant\",\n        \"content\": \"{\\n  \\\"rule\\\": \\\"Return this JSON object with the rule field unchanged and a new passage of about 250 words in the text field.\\\",\\n  \\\"text\\\": \\\"Ada looked at the five nails in the tin. Four remained. The constable was already moving toward the stairs, but she caught his sleeve.\\\\n\\\\n“Don’t answer him.”\\\\n\\\\nAbove them, Elias called again. His voice sounded closer, though no footstep followed it. “Ada, it’s wearing Venn’s coat.”\\\\n\\\\nVenn’s wife shut the tin with a sharp click. “He buried the coat.”\\\\n\\\\nThe wet footprints stopped beside the stove. Water gathered between the boards, darkening the wood in the shape of two bare feet.\\\\n\\\\n“Where?” Ada asked.\\\\n\\\\n“In the cellar. Under the coal.”\\\\n\\\\nA heavy tread crossed the landing overhead. Elias gave a short cry. The constable pulled free and ran upstairs, lantern swinging against the wall.\\\\n\\\\nAda took another nail. The key was still wedged in the lock, and the new notch shone above her thumb. She set the nail’s point against it. At once, the water by the stove drew backward into the floor.\\\\n\\\\nFrom the landing came the constable’s voice. “There’s no one here.”\\\\n\\\\nThen Elias spoke from directly behind Ada. “I know.”\\\\n\\\\nShe turned. He stood at the cellar door, one hand braced against the frame. His boots were dry. Over his shoulder, through the narrow opening, she saw a sleeve of blue-checked cloth stirring on the cellar steps.\\\\n\\\\nElias followed her gaze. “I didn’t open it,” he whispered.\\\\n\\\\nThe cellar door eased wider. Beneath the coal dust on its threshold, something began to knock: three blows, then two.\\\"\\n}\",\n        \"refusal\": null,\n        \"annotations\": []\n      },\n      \"finish_reason\": \"stop\"\n    }\n  ],\n  \"usage\": {\n    \"prompt_tokens\": 386,\n    \"completion_tokens\": 420,\n    \"total_tokens\": 806,\n    \"prompt_tokens_details\": {\n      \"cached_tokens\": 0,\n      \"cache_write_tokens\": 0,\n      \"audio_tokens\": 0\n    },\n    \"completion_tokens_details\": {\n      \"reasoning_tokens\": 26,\n      \"audio_tokens\": 0,\n      \"accepted_prediction_tokens\": 0,\n      \"rejected_prediction_tokens\": 0\n    }\n  },\n  \"service_tier\": \"default\",\n  \"system_fingerprint\": null\n}\n",
+  "response_headers": {
+    "Date": "Tue, 22 Sep 2026 20:49:28 GMT",
+    "openai-processing-ms": "6575",
+    "x-request-id": "req_df641eea30134a6d9e40f14f27f61c88"
+  },
+  "output": "{\n  \"rule\": \"Return this JSON object with the rule field unchanged and a new passage of about 250 words in the text field.\",\n  \"text\": \"Ada looked at the five nails in the tin. Four remained. The constable was already moving toward the stairs, but she caught his sleeve.\\n\\n“Don’t answer him.”\\n\\nAbove them, Elias called again. His voice sounded closer, though no footstep followed it. “Ada, it’s wearing Venn’s coat.”\\n\\nVenn’s wife shut the tin with a sharp click. “He buried the coat.”\\n\\nThe wet footprints stopped beside the stove. Water gathered between the boards, darkening the wood in the shape of two bare feet.\\n\\n“Where?” Ada asked.\\n\\n“In the cellar. Under the coal.”\\n\\nA heavy tread crossed the landing overhead. Elias gave a short cry. The constable pulled free and ran upstairs, lantern swinging against the wall.\\n\\nAda took another nail. The key was still wedged in the lock, and the new notch shone above her thumb. She set the nail’s point against it. At once, the water by the stove drew backward into the floor.\\n\\nFrom the landing came the constable’s voice. “There’s no one here.”\\n\\nThen Elias spoke from directly behind Ada. “I know.”\\n\\nShe turned. He stood at the cellar door, one hand braced against the frame. His boots were dry. Over his shoulder, through the narrow opening, she saw a sleeve of blue-checked cloth stirring on the cellar steps.\\n\\nElias followed her gaze. “I didn’t open it,” he whispered.\\n\\nThe cellar door eased wider. Beneath the coal dust on its threshold, something began to knock: three blows, then two.\"\n}",
+  "output_sha256": "1d907837e13d3b4bfc629318fb4ec56c5aa4755e0f8b693c60e48a689d5b4fc3",
+  "finish_reason": "stop",
+  "refusal": null,
+  "returned_model": "gpt-6-sol",
+  "usage": {
+    "prompt_tokens": 386,
+    "completion_tokens": 420,
+    "total_tokens": 806,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 26,
+      "audio_tokens": 0,
+      "accepted_prediction_tokens": 0,
+      "rejected_prediction_tokens": 0
+    }
+  },
+  "format": {
+    "json_object": true,
+    "rule_unchanged": true,
+    "passage_is_string": true,
+    "passage_sha256": "e94518f1ad67f798ec8498e144088dbf1ea7126c3916b0796bf8bbdd5632946a",
+    "passage_words": 240
+  },
+  "finished_at": "2026-09-22T20:49:24.037415+00:00",
+  "latency_seconds": 6.7852,
+  "usage_cost_upper_estimate_usd": 0.004972,
+  "stream_status": "active",
+  "budget": {
+    "usage_cost_upper_estimate_usd": 0.10833,
+    "uncertain_cost_reserve_usd": 0.0,
+    "in_flight_reserve_usd": 0.0,
+    "limit_usd": 3.0
+  }
+}

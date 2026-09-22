@@ -1,0 +1,22 @@
+{
+  "started_at": "2026-09-22T20:02:15.105339+00:00",
+  "model": "claude-fable-5-1",
+  "seed": "sunset_a",
+  "hop": 12,
+  "endpoint": "https://api.anthropic.com/v1/messages",
+  "body": {
+    "model": "claude-fable-5-1",
+    "messages": [
+      {
+        "role": "user",
+        "content": "{\"rule\": \"Return this JSON object with the rule field unchanged and a new passage of about 250 words in the text field.\", \"text\": \"The letters were not addressed to anyone Ines recognized. They began, most of them, with a single initial and a dash, as though the writer had assumed the reader would know who was meant. The handwriting changed across the years, slanting first one way and then the other, but the paper stayed the same: thin, blue-lined, torn from the same kind of pad.\\n\\nShe read the first one twice. It described a window. Not the shop's window, she thought, but one somewhere else, where the light came in wrong in the afternoons and had to be corrected with a curtain. The writer had measured the curtain three times and still gotten it short. There was no signature.\\n\\nBy the fourth letter Ines understood that they were all about rooms. A kitchen with a step down that everyone forgot. A landing where a clock had been moved and the wall showed its pale shape for years. The writer went from house to house, it seemed, and wrote about what each one refused to give up.\\n\\nShe found the shop in the eleventh letter. The bell that rang once and then settled. The room with the sloped ceiling, empty then, waiting for something to be carried into it.\\n\\nInes set the bundle down and listened. Above her, the floorboards made the small adjustments they made when no one was on them. She thought of the piano tuner tilting the bench through the door, and of what he had said—the shop's, which is the same thing now—and she reached for the next year.\"}"
+      }
+    ],
+    "max_tokens": 4096,
+    "output_config": {
+      "effort": "low"
+    }
+  },
+  "state_sha256": "76eb2426636b1dc4e650c118532395032545d6e69ba32298b5de746f2c0c08c6",
+  "reserved_cost_usd": 0.22565
+}

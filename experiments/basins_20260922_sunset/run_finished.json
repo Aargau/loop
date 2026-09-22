@@ -1,0 +1,116 @@
+{
+  "finished_at": "2026-09-22T20:45:58.296545+00:00",
+  "budget": {
+    "usage_cost_upper_estimate_usd": 13.5712877,
+    "uncertain_cost_reserve_usd": 0.04533,
+    "in_flight_reserve_usd": 0.0,
+    "limit_usd": 18.83
+  },
+  "models": [
+    {
+      "model": "gpt-6-luna",
+      "finished_at": "2026-09-22T20:08:39.551600+00:00",
+      "streams": {
+        "sunset_a": {
+          "completed_hops": 60,
+          "status": "hop_limit",
+          "cost_usd": 0.015186800000000004
+        },
+        "sunset_b": {
+          "completed_hops": 60,
+          "status": "hop_limit",
+          "cost_usd": 0.015634199999999994
+        },
+        "tide": {
+          "completed_hops": 60,
+          "status": "hop_limit",
+          "cost_usd": 0.0027867
+        }
+      }
+    },
+    {
+      "model": "gpt-6-sol",
+      "finished_at": "2026-09-22T20:08:54.308735+00:00",
+      "streams": {
+        "sunset_a": {
+          "completed_hops": 60,
+          "status": "hop_limit",
+          "cost_usd": 0.27799799999999997
+        },
+        "sunset_b": {
+          "completed_hops": 8,
+          "status": "transport_or_parse_error",
+          "cost_usd": 0.037073999999999996
+        },
+        "tide": {
+          "completed_hops": 60,
+          "status": "hop_limit",
+          "cost_usd": 0.295018
+        }
+      }
+    },
+    {
+      "model": "gpt-6-astra",
+      "finished_at": "2026-09-22T20:45:58.285025+00:00",
+      "streams": {
+        "sunset_a": {
+          "completed_hops": 60,
+          "status": "hop_limit",
+          "cost_usd": 1.5079399999999996
+        },
+        "sunset_b": {
+          "completed_hops": 60,
+          "status": "hop_limit",
+          "cost_usd": 1.5290199999999996
+        },
+        "tide": {
+          "completed_hops": 60,
+          "status": "hop_limit",
+          "cost_usd": 1.5421000000000002
+        }
+      }
+    },
+    {
+      "model": "claude-fable-5-1",
+      "finished_at": "2026-09-22T20:33:38.789439+00:00",
+      "streams": {
+        "sunset_a": {
+          "completed_hops": 60,
+          "status": "hop_limit",
+          "cost_usd": 1.98105
+        },
+        "sunset_b": {
+          "completed_hops": 60,
+          "status": "hop_limit",
+          "cost_usd": 1.80405
+        },
+        "tide": {
+          "completed_hops": 60,
+          "status": "hop_limit",
+          "cost_usd": 1.9009699999999996
+        }
+      }
+    },
+    {
+      "model": "claude-opus-5-5",
+      "finished_at": "2026-09-22T20:23:28.239872+00:00",
+      "streams": {
+        "sunset_a": {
+          "completed_hops": 60,
+          "status": "hop_limit",
+          "cost_usd": 0.8780560000000001
+        },
+        "sunset_b": {
+          "completed_hops": 60,
+          "status": "hop_limit",
+          "cost_usd": 0.9980760000000002
+        },
+        "tide": {
+          "completed_hops": 60,
+          "status": "hop_limit",
+          "cost_usd": 0.7863280000000001
+        }
+      }
+    }
+  ]
+}

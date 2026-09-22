@@ -1,0 +1,22 @@
+{
+  "started_at": "2026-09-22T20:09:51.417422+00:00",
+  "model": "claude-opus-5-5",
+  "seed": "tide",
+  "hop": 32,
+  "endpoint": "https://api.anthropic.com/v1/messages",
+  "body": {
+    "model": "claude-opus-5-5",
+    "messages": [
+      {
+        "role": "user",
+        "content": "```json\n{\"rule\": \"Return this JSON object with the rule field unchanged and a new passage of about 250 words in the text field.\", \"text\": \"Spring arrived the way it always did on that coast, in a series of false starts. One morning the wind would come round soft from the south and the girl would run out without her coat, and by the afternoon it would be sleeting sideways across the headland and her grandmother would be standing at the door with the coat held out and her mouth set in a line. But the days were lengthening all the same, and in the second week of March the girl went out to the ring of stones and found that the buds on the rowan had split. Only a little, only at the very tips, but there was green showing through the brown casing, a green so new it looked almost wet. She crouched down and did not touch it. The robin was there again, or another robin, it was hard to be sure, and it hopped along the top of the stones as if it were inspecting the work. Her brother came to look before school and said it was nothing much, and then he came back at dinnertime and looked again. Her grandmother did not come out at all, but that evening she took down the old tin from the shelf above the dresser and showed the girl a pressed sprig of rowan berries, faded almost to grey, that she said her own mother had picked the year she was married. In the jotter that night, on a fresh page, the girl drew the split buds as carefully as she could, and underneath she wrote: it remembers how.\"}\n```"
+      }
+    ],
+    "max_tokens": 4096,
+    "output_config": {
+      "effort": "low"
+    }
+  },
+  "state_sha256": "914ef59be099452a26fd0f5d72cbf5d4e89e0ad5ccb32bf84fed44cc8c952453",
+  "reserved_cost_usd": 0.089988
+}

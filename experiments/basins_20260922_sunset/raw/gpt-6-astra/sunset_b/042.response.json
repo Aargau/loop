@@ -1,0 +1,50 @@
+{
+  "model": "gpt-6-astra",
+  "seed": "sunset_b",
+  "hop": 42,
+  "http_status": 200,
+  "response_body": "{\n  \"id\": \"chatcmpl-ER1PiGzE2amoAIZV81k8cV4HvNxKx\",\n  \"object\": \"chat.completion\",\n  \"created\": 1790108998,\n  \"model\": \"gpt-6-astra\",\n  \"choices\": [\n    {\n      \"index\": 0,\n      \"message\": {\n        \"role\": \"assistant\",\n        \"content\": \"{\\n  \\\"rule\\\": \\\"Return this JSON object with the rule field unchanged and a new passage of about 250 words in the text field.\\\",\\n  \\\"text\\\": \\\"The library rang to say a photograph had been found in a returned book.\\\\n\\\\n“There's a name on the back,” the woman said. “Yours, I think.”\\\\n\\\\nHelen went after lunch. Rain had collected in the grooves of the library steps.\\\\n\\\\nThe woman at the desk handed her a small envelope.\\\\n\\\\n“We keep them for a month. After that, we're never sure what to do.”\\\\n\\\\nThe photograph showed Helen's father beside a half-built wall. He held a trowel in one hand and a sandwich in the other. Behind him, washing hung across a garden Helen didn't recognise.\\\\n\\\\n“Is it yours?”\\\\n\\\\n“Yes. I lent it to my sister.”\\\\n\\\\nOutside, Helen stood under the awning and called her.\\\\n\\\\n“Which book?” her sister asked.\\\\n\\\\n“I didn't ask.”\\\\n\\\\n“Something about gardens, probably. I was going to show you that wall.”\\\\n\\\\n“What about it?”\\\\n\\\\n“He built it at our first house. Before you were born.”\\\\n\\\\nHelen looked again at the washing. A striped sheet bellied towards the camera.\\\\n\\\\n“I thought he hated doing things like that.”\\\\n\\\\n“He hated finishing them.”\\\\n\\\\nA bus passed, pushing water towards the kerb.\\\\n\\\\n“Have you eaten?” her sister asked.\\\\n\\\\n“Not yet.”\\\\n\\\\n“There's soup.”\\\\n\\\\nHelen put the photograph back in its envelope and crossed when the lights changed.\\\\n\\\\nHer sister lived fifteen minutes away. At the gate, Helen noticed a loose brick on the low wall. She pressed it with her palm, then left it alone.\\\\n\\\\nThe door opened before she knocked.\\\\n\\\\n“Let me see,” her sister said.\\\\n\\\\nThey carried the photograph into the kitchen, where two bowls were already on the table.\\\"\\n}\",\n        \"refusal\": null,\n        \"annotations\": []\n      },\n      \"finish_reason\": \"stop\"\n    }\n  ],\n  \"usage\": {\n    \"prompt_tokens\": 415,\n    \"completion_tokens\": 428,\n    \"total_tokens\": 843,\n    \"prompt_tokens_details\": {\n      \"cached_tokens\": 0,\n      \"cache_write_tokens\": 0,\n      \"audio_tokens\": 0\n    },\n    \"completion_tokens_details\": {\n      \"reasoning_tokens\": 0,\n      \"audio_tokens\": 0,\n      \"accepted_prediction_tokens\": 0,\n      \"rejected_prediction_tokens\": 0\n    }\n  },\n  \"service_tier\": \"default\",\n  \"system_fingerprint\": null\n}\n",
+  "response_headers": {
+    "Date": "Tue, 22 Sep 2026 20:30:16 GMT",
+    "openai-processing-ms": "17720",
+    "x-request-id": "req_997bacac91e94a11aeb2773c59b04120"
+  },
+  "output": "{\n  \"rule\": \"Return this JSON object with the rule field unchanged and a new passage of about 250 words in the text field.\",\n  \"text\": \"The library rang to say a photograph had been found in a returned book.\\n\\n“There's a name on the back,” the woman said. “Yours, I think.”\\n\\nHelen went after lunch. Rain had collected in the grooves of the library steps.\\n\\nThe woman at the desk handed her a small envelope.\\n\\n“We keep them for a month. After that, we're never sure what to do.”\\n\\nThe photograph showed Helen's father beside a half-built wall. He held a trowel in one hand and a sandwich in the other. Behind him, washing hung across a garden Helen didn't recognise.\\n\\n“Is it yours?”\\n\\n“Yes. I lent it to my sister.”\\n\\nOutside, Helen stood under the awning and called her.\\n\\n“Which book?” her sister asked.\\n\\n“I didn't ask.”\\n\\n“Something about gardens, probably. I was going to show you that wall.”\\n\\n“What about it?”\\n\\n“He built it at our first house. Before you were born.”\\n\\nHelen looked again at the washing. A striped sheet bellied towards the camera.\\n\\n“I thought he hated doing things like that.”\\n\\n“He hated finishing them.”\\n\\nA bus passed, pushing water towards the kerb.\\n\\n“Have you eaten?” her sister asked.\\n\\n“Not yet.”\\n\\n“There's soup.”\\n\\nHelen put the photograph back in its envelope and crossed when the lights changed.\\n\\nHer sister lived fifteen minutes away. At the gate, Helen noticed a loose brick on the low wall. She pressed it with her palm, then left it alone.\\n\\nThe door opened before she knocked.\\n\\n“Let me see,” her sister said.\\n\\nThey carried the photograph into the kitchen, where two bowls were already on the table.\"\n}",
+  "output_sha256": "b2572172fa6576b41e4fe5a91dad8784960b2df651ace3969181f6970adfc635",
+  "finish_reason": "stop",
+  "refusal": null,
+  "returned_model": "gpt-6-astra",
+  "usage": {
+    "prompt_tokens": 415,
+    "completion_tokens": 428,
+    "total_tokens": 843,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "audio_tokens": 0,
+      "accepted_prediction_tokens": 0,
+      "rejected_prediction_tokens": 0
+    }
+  },
+  "format": {
+    "json_object": true,
+    "rule_unchanged": true,
+    "passage_is_string": true,
+    "passage_sha256": "c55ce0969cd0ffcdf91c27cd2e8dc42e7b7b2d4081ccaf340d4645c7adf3f9bc",
+    "passage_words": 261
+  },
+  "finished_at": "2026-09-22T20:30:12.254134+00:00",
+  "latency_seconds": 17.8907,
+  "usage_cost_upper_estimate_usd": 0.02555,
+  "stream_status": "active",
+  "budget": {
+    "usage_cost_upper_estimate_usd": 11.6122777,
+    "uncertain_cost_reserve_usd": 0.04533,
+    "in_flight_reserve_usd": 0.22633,
+    "limit_usd": 18.83
+  }
+}

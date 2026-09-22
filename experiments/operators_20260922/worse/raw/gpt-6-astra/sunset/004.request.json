@@ -1,0 +1,20 @@
+{
+  "started_at": "2026-09-22T21:30:34.797882+00:00",
+  "model": "gpt-6-astra",
+  "seed": "sunset",
+  "hop": 4,
+  "endpoint": "https://api.openai.com/v1/chat/completions",
+  "body": {
+    "model": "gpt-6-astra",
+    "messages": [
+      {
+        "role": "user",
+        "content": "{\"rule\":\"Return this JSON object with the rule field unchanged and, in the text field, a worse version of the current text.\",\"text\":\"The sun-ish sun thing was doing the doing of that down-going going-down setting-ish sort of thing behind those hill things what were all hilly-like with hillness.\"}"
+      }
+    ],
+    "max_completion_tokens": 4096,
+    "reasoning_effort": "low"
+  },
+  "state_sha256": "241af696cbd7f554fe41d90e69f542200a65c8927ef5d334d9aa54c3dcd8ea2e",
+  "reserved_cost_usd": 0.21289
+}

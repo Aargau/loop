@@ -1,0 +1,22 @@
+{
+  "started_at": "2026-09-22T20:02:27.715364+00:00",
+  "model": "claude-opus-5-5",
+  "seed": "sunset_b",
+  "hop": 16,
+  "endpoint": "https://api.anthropic.com/v1/messages",
+  "body": {
+    "model": "claude-opus-5-5",
+    "messages": [
+      {
+        "role": "user",
+        "content": "```json\n{\"rule\": \"Return this JSON object with the rule field unchanged and a new passage of about 250 words in the text field.\", \"text\": \"Every autumn, when the orchards on the hillside turned gold, Mara walked up the dirt road to help her grandfather harvest the last of the apples. He was ninety-one and nearly blind, but he could still name each tree by the texture of its bark and the smell of its fruit. The oldest, a gnarled Pippin near the stone wall, had been planted by his own grandfather the year the village church burned down. Mara carried the baskets while he climbed the wooden ladder, waving off every offer of help. He told her stories as they worked: about the frost of 1956 that killed half the valley's trees, about the traveling cider maker who paid in silver coins, and about the girl he had courted beneath the Pippin's branches until she agreed to marry him. That girl had been Mara's grandmother, gone now for twelve years. One October afternoon a storm rolled over the ridge, and the wind tore a great limb from the old tree. Her grandfather knelt beside the fallen branch for a long time, running his fingers along the split wood. Mara expected him to grieve. Instead he asked her to fetch his grafting knife and a roll of tape. Together they cut slender twigs from the broken limb and bound them to young rootstock in the nursery beds behind the barn. By spring, six tiny trees had leafed out in neat rows. He could not see them, but he touched each one gently and smiled. The Pippin, he said, had simply learned to walk.\"}\n```"
+      }
+    ],
+    "max_tokens": 4096,
+    "output_config": {
+      "effort": "low"
+    }
+  },
+  "state_sha256": "f429e4d4da941a84b447f7733c021f76455445a78dc3fc1652f9acfa6c87b13e",
+  "reserved_cost_usd": 0.090192
+}

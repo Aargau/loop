@@ -1,0 +1,47 @@
+{
+  "model": "gpt-6-luna",
+  "seed": "tide_b",
+  "hop": 3,
+  "http_status": 200,
+  "response_body": "{\n  \"id\": \"chatcmpl-ER0ocZGwTA5kwDl7NSiuamJbNYrfq\",\n  \"object\": \"chat.completion\",\n  \"created\": 1790106698,\n  \"model\": \"gpt-6-luna\",\n  \"choices\": [\n    {\n      \"index\": 0,\n      \"message\": {\n        \"role\": \"assistant\",\n        \"content\": \"{\\\"rule\\\":\\\"Return this JSON object with the rule field unchanged and a new passage of about 250 words in the text field.\\\",\\\"text\\\":\\\"The northern road climbed between low stone walls, its puddles reflecting a sky the color of pewter. For a while, none of them spoke. Mara kept one hand closed around the compass, feeling its faint, steady warmth through her coat.\\n\\nAt the last house, the mist thickened. A woman stood beside the gate, holding a lantern that gave no light. Mara’s mother stopped so suddenly Eli nearly walked into her.\\n\\n“You know her?” Mara asked.\\n\\nHer mother shook her head, but her expression said otherwise. The woman lifted one hand and pointed toward a narrow track leading off the road. Beyond it, the hills disappeared into fog.\\n\\nThe compass needle swung toward the track.\\n\\nEli glanced back at the village. The lighthouse was barely visible now, its white tower reduced to a smudge against the sea. “We should tell someone where we’re going.”\\n\\n“We can’t,” said Mara’s mother. “Not until we know what this is.”\\n\\nThe woman by the gate stepped aside. As they passed, Mara noticed that the lantern’s glass was wet with seawater. Inside, a small flame flickered blue.\\n\\nAt the track’s entrance, the compass lid sprang open by itself. The inscription caught the gray daylight: For the way home. Beneath it, a second line appeared, scratched so faintly it seemed to emerge from the brass.\\n\\nMara leaned closer.\\n\\nFor the ones still waiting.\\n\\nA bell sounded somewhere beyond the hills. Not the harbor bell, but a deeper note, answered at once by another.\\n\\nHer mother reached for Mara’s hand. Together, they followed the track into the mist, while Eli walked close behind. The compass needle held steady, pointing toward a place none of them could remember—and all three somehow recognized.\\\"}\",\n        \"refusal\": null,\n        \"annotations\": []\n      },\n      \"finish_reason\": \"stop\"\n    }\n  ],\n  \"usage\": {\n    \"prompt_tokens\": 365,\n    \"completion_tokens\": 470,\n    \"total_tokens\": 835,\n    \"prompt_tokens_details\": {\n      \"cached_tokens\": 0,\n      \"cache_write_tokens\": 0,\n      \"audio_tokens\": 0\n    },\n    \"completion_tokens_details\": {\n      \"reasoning_tokens\": 78,\n      \"audio_tokens\": 0,\n      \"accepted_prediction_tokens\": 0,\n      \"rejected_prediction_tokens\": 0\n    }\n  },\n  \"service_tier\": \"default\",\n  \"system_fingerprint\": null\n}\n",
+  "response_headers": {
+    "Date": "Tue, 22 Sep 2026 19:51:43 GMT",
+    "openai-processing-ms": "5074",
+    "x-request-id": "req_6143276ff4ac44f081b6fa06a1050035"
+  },
+  "output": "{\"rule\":\"Return this JSON object with the rule field unchanged and a new passage of about 250 words in the text field.\",\"text\":\"The northern road climbed between low stone walls, its puddles reflecting a sky the color of pewter. For a while, none of them spoke. Mara kept one hand closed around the compass, feeling its faint, steady warmth through her coat.\n\nAt the last house, the mist thickened. A woman stood beside the gate, holding a lantern that gave no light. Mara’s mother stopped so suddenly Eli nearly walked into her.\n\n“You know her?” Mara asked.\n\nHer mother shook her head, but her expression said otherwise. The woman lifted one hand and pointed toward a narrow track leading off the road. Beyond it, the hills disappeared into fog.\n\nThe compass needle swung toward the track.\n\nEli glanced back at the village. The lighthouse was barely visible now, its white tower reduced to a smudge against the sea. “We should tell someone where we’re going.”\n\n“We can’t,” said Mara’s mother. “Not until we know what this is.”\n\nThe woman by the gate stepped aside. As they passed, Mara noticed that the lantern’s glass was wet with seawater. Inside, a small flame flickered blue.\n\nAt the track’s entrance, the compass lid sprang open by itself. The inscription caught the gray daylight: For the way home. Beneath it, a second line appeared, scratched so faintly it seemed to emerge from the brass.\n\nMara leaned closer.\n\nFor the ones still waiting.\n\nA bell sounded somewhere beyond the hills. Not the harbor bell, but a deeper note, answered at once by another.\n\nHer mother reached for Mara’s hand. Together, they followed the track into the mist, while Eli walked close behind. The compass needle held steady, pointing toward a place none of them could remember—and all three somehow recognized.\"}",
+  "output_sha256": "1f9df813f9ce462d24cb5f72d8a0fcea6fda4b86e0e49366e49b5c49caa5bf45",
+  "finish_reason": "stop",
+  "refusal": null,
+  "returned_model": "gpt-6-luna",
+  "usage": {
+    "prompt_tokens": 365,
+    "completion_tokens": 470,
+    "total_tokens": 835,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 78,
+      "audio_tokens": 0,
+      "accepted_prediction_tokens": 0,
+      "rejected_prediction_tokens": 0
+    }
+  },
+  "format": {
+    "json_object": false,
+    "rule_unchanged": false
+  },
+  "finished_at": "2026-09-22T19:51:39.318853+00:00",
+  "latency_seconds": 5.2017,
+  "usage_cost_upper_estimate_usd": 0.0002715,
+  "stream_status": "active",
+  "budget": {
+    "usage_cost_upper_estimate_usd": 0.2174363,
+    "uncertain_cost_reserve_usd": 0.0,
+    "in_flight_reserve_usd": 0.587772,
+    "limit_usd": 20
+  }
+}

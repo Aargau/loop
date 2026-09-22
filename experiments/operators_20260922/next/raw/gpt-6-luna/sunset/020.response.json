@@ -1,0 +1,47 @@
+{
+  "model": "gpt-6-luna",
+  "seed": "sunset",
+  "hop": 20,
+  "http_status": 200,
+  "response_body": "{\n  \"id\": \"chatcmpl-ER2HPxI9TOCyPk6MTt7XuuyDMMe4Y\",\n  \"object\": \"chat.completion\",\n  \"created\": 1790112327,\n  \"model\": \"gpt-6-luna\",\n  \"choices\": [\n    {\n      \"index\": 0,\n      \"message\": {\n        \"role\": \"assistant\",\n        \"content\": \"{\\\"rule\\\":\\\"Return this JSON object with the rule field unchanged and, in the text field, the passage of about 250 words that comes immediately AFTER the current text in the same story.\\\",\\\"text\\\":\\\"The hum belonged to Tomas, the quiet mapmaker, who had spent the morning drawing the roads beyond the hills. He stopped when he noticed Mara listening.\\n\\n“I don’t know where it came from,” he said. “It was waiting in my head.”\\n\\nMara opened the book again. Its pages were crowded now with notes, sketches, and scraps of songs. She found a clean corner and offered him the pen.\\n\\nTomas hesitated. “What if I get it wrong?”\\n\\n“Then the song will tell us,” said Mara.\\n\\nHe hummed the tune once more, softer this time. The baker’s spoon joined in, followed by the shepherd’s flute. A little girl tried the melody on a reed pipe, missed a note, and laughed. The others laughed too, and the mistake became part of the music.\\n\\nAs the tune wandered around the square, an old woman stepped from the doorway of the inn. She had lived there all her life, yet no one had heard her sing. Now she lifted her voice, and the melody changed again—deepened, then rose like smoke above the rooftops.\\n\\nMara wrote down what she could, though the song kept slipping into new shapes. When the last note faded, Tomas looked at the roads he had drawn.\\n\\n“Perhaps I should take this map farther,” he said.\\n\\n“Perhaps,” Mara answered. “But leave room for what you haven’t heard yet.”\\n\\nThat night, she placed the book beside the fountain, where anyone could add a sound. By sunrise, three new pages were filled. And from somewhere beyond the hills, a distant voice answered.\\\"}\",\n        \"refusal\": null,\n        \"annotations\": []\n      },\n      \"finish_reason\": \"stop\"\n    }\n  ],\n  \"usage\": {\n    \"prompt_tokens\": 360,\n    \"completion_tokens\": 426,\n    \"total_tokens\": 786,\n    \"prompt_tokens_details\": {\n      \"cached_tokens\": 0,\n      \"cache_write_tokens\": 0,\n      \"audio_tokens\": 0\n    },\n    \"completion_tokens_details\": {\n      \"reasoning_tokens\": 50,\n      \"audio_tokens\": 0,\n      \"accepted_prediction_tokens\": 0,\n      \"rejected_prediction_tokens\": 0\n    }\n  },\n  \"service_tier\": \"default\",\n  \"system_fingerprint\": null\n}\n",
+  "response_headers": {
+    "Date": "Tue, 22 Sep 2026 21:25:32 GMT",
+    "openai-processing-ms": "4400",
+    "x-request-id": "req_2b5c88a29f334ded9d24c216fa7b08b5"
+  },
+  "output": "{\"rule\":\"Return this JSON object with the rule field unchanged and, in the text field, the passage of about 250 words that comes immediately AFTER the current text in the same story.\",\"text\":\"The hum belonged to Tomas, the quiet mapmaker, who had spent the morning drawing the roads beyond the hills. He stopped when he noticed Mara listening.\n\n“I don’t know where it came from,” he said. “It was waiting in my head.”\n\nMara opened the book again. Its pages were crowded now with notes, sketches, and scraps of songs. She found a clean corner and offered him the pen.\n\nTomas hesitated. “What if I get it wrong?”\n\n“Then the song will tell us,” said Mara.\n\nHe hummed the tune once more, softer this time. The baker’s spoon joined in, followed by the shepherd’s flute. A little girl tried the melody on a reed pipe, missed a note, and laughed. The others laughed too, and the mistake became part of the music.\n\nAs the tune wandered around the square, an old woman stepped from the doorway of the inn. She had lived there all her life, yet no one had heard her sing. Now she lifted her voice, and the melody changed again—deepened, then rose like smoke above the rooftops.\n\nMara wrote down what she could, though the song kept slipping into new shapes. When the last note faded, Tomas looked at the roads he had drawn.\n\n“Perhaps I should take this map farther,” he said.\n\n“Perhaps,” Mara answered. “But leave room for what you haven’t heard yet.”\n\nThat night, she placed the book beside the fountain, where anyone could add a sound. By sunrise, three new pages were filled. And from somewhere beyond the hills, a distant voice answered.\"}",
+  "output_sha256": "6aca76688ef8140f7e80596c3bd6880a3ec8f218254da2f2354011dbf8632e91",
+  "finish_reason": "stop",
+  "refusal": null,
+  "returned_model": "gpt-6-luna",
+  "usage": {
+    "prompt_tokens": 360,
+    "completion_tokens": 426,
+    "total_tokens": 786,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 50,
+      "audio_tokens": 0,
+      "accepted_prediction_tokens": 0,
+      "rejected_prediction_tokens": 0
+    }
+  },
+  "format": {
+    "json_object": false,
+    "rule_unchanged": false
+  },
+  "finished_at": "2026-09-22T21:25:27.944078+00:00",
+  "latency_seconds": 4.5603,
+  "usage_cost_upper_estimate_usd": 0.000249,
+  "stream_status": "active",
+  "budget": {
+    "usage_cost_upper_estimate_usd": 0.4280618,
+    "uncertain_cost_reserve_usd": 0.0,
+    "in_flight_reserve_usd": 0.347216,
+    "limit_usd": 5.0
+  }
+}

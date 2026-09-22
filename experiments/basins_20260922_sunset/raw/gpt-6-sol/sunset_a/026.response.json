@@ -1,0 +1,50 @@
+{
+  "model": "gpt-6-sol",
+  "seed": "sunset_a",
+  "hop": 26,
+  "http_status": 200,
+  "response_body": "{\n  \"id\": \"chatcmpl-ER0yF3SiJ2xEXU3NJsdtkziLT5Qtc\",\n  \"object\": \"chat.completion\",\n  \"created\": 1790107295,\n  \"model\": \"gpt-6-sol\",\n  \"choices\": [\n    {\n      \"index\": 0,\n      \"message\": {\n        \"role\": \"assistant\",\n        \"content\": \"{\\n  \\\"rule\\\": \\\"Return this JSON object with the rule field unchanged and a new passage of about 250 words in the text field.\\\",\\n  \\\"text\\\": \\\"On Thursday morning, Daniel took the bus to the library to return a book. Rain had stopped just before he left, but the pavement was still wet, and he stepped around a puddle near the crossing. At the library, he slid the book into the return slot and went upstairs to look for a map of the local walking paths.\\\\n\\\\nThe maps were kept in a drawer beside the reference desk. Daniel found one with the rivers marked in blue and spread it across an empty table. A path he remembered from childhood ran behind the old mill, then turned toward a footbridge. He copied the route onto a scrap of paper, adding the names of two streets where he could catch a bus home.\\\\n\\\\nBefore leaving, he checked the weather forecast on his phone. There was no rain expected until evening. He folded his notes and stopped at the bakery across the road for a roll and a bottle of water.\\\\n\\\\nThe path began at the edge of a playing field. Daniel followed it past a row of poplars, where fallen leaves stuck to his shoes. At the mill, a new fence directed walkers away from the building and back toward the river. He paused to read the notice on the gate, then continued to the footbridge.\\\\n\\\\nHalfway across, he watched a duck move through the reeds below. On the other bank, he sat on a dry section of wall and ate his roll. He had brought the map notes, but the next signpost was easy to see from where he sat.\\\"\\n}\",\n        \"refusal\": null,\n        \"annotations\": []\n      },\n      \"finish_reason\": \"stop\"\n    }\n  ],\n  \"usage\": {\n    \"prompt_tokens\": 345,\n    \"completion_tokens\": 375,\n    \"total_tokens\": 720,\n    \"prompt_tokens_details\": {\n      \"cached_tokens\": 0,\n      \"cache_write_tokens\": 0,\n      \"audio_tokens\": 0\n    },\n    \"completion_tokens_details\": {\n      \"reasoning_tokens\": 23,\n      \"audio_tokens\": 0,\n      \"accepted_prediction_tokens\": 0,\n      \"rejected_prediction_tokens\": 0\n    }\n  },\n  \"service_tier\": \"default\",\n  \"system_fingerprint\": null\n}\n",
+  "response_headers": {
+    "Date": "Tue, 22 Sep 2026 20:01:40 GMT",
+    "openai-processing-ms": "5213",
+    "x-request-id": "req_892e75ff29734cbe9f41724215155b0b"
+  },
+  "output": "{\n  \"rule\": \"Return this JSON object with the rule field unchanged and a new passage of about 250 words in the text field.\",\n  \"text\": \"On Thursday morning, Daniel took the bus to the library to return a book. Rain had stopped just before he left, but the pavement was still wet, and he stepped around a puddle near the crossing. At the library, he slid the book into the return slot and went upstairs to look for a map of the local walking paths.\\n\\nThe maps were kept in a drawer beside the reference desk. Daniel found one with the rivers marked in blue and spread it across an empty table. A path he remembered from childhood ran behind the old mill, then turned toward a footbridge. He copied the route onto a scrap of paper, adding the names of two streets where he could catch a bus home.\\n\\nBefore leaving, he checked the weather forecast on his phone. There was no rain expected until evening. He folded his notes and stopped at the bakery across the road for a roll and a bottle of water.\\n\\nThe path began at the edge of a playing field. Daniel followed it past a row of poplars, where fallen leaves stuck to his shoes. At the mill, a new fence directed walkers away from the building and back toward the river. He paused to read the notice on the gate, then continued to the footbridge.\\n\\nHalfway across, he watched a duck move through the reeds below. On the other bank, he sat on a dry section of wall and ate his roll. He had brought the map notes, but the next signpost was easy to see from where he sat.\"\n}",
+  "output_sha256": "7a5dbdeb4f37dd29c14c746eb94393a642c63439f8e86fb00241e6e73fe0bf05",
+  "finish_reason": "stop",
+  "refusal": null,
+  "returned_model": "gpt-6-sol",
+  "usage": {
+    "prompt_tokens": 345,
+    "completion_tokens": 375,
+    "total_tokens": 720,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 23,
+      "audio_tokens": 0,
+      "accepted_prediction_tokens": 0,
+      "rejected_prediction_tokens": 0
+    }
+  },
+  "format": {
+    "json_object": true,
+    "rule_unchanged": true,
+    "passage_is_string": true,
+    "passage_sha256": "5742d68d560d279fc3520630b6ae5388baabe8d32e95d7737df289f5b76ede04",
+    "passage_words": 263
+  },
+  "finished_at": "2026-09-22T20:01:36.465764+00:00",
+  "latency_seconds": 5.3255,
+  "usage_cost_upper_estimate_usd": 0.00444,
+  "stream_status": "active",
+  "budget": {
+    "usage_cost_upper_estimate_usd": 2.3386906,
+    "uncertain_cost_reserve_usd": 0.04533,
+    "in_flight_reserve_usd": 0.5456831,
+    "limit_usd": 18.83
+  }
+}

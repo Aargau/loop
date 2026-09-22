@@ -1,0 +1,50 @@
+{
+  "model": "gpt-6-sol",
+  "seed": "sunset",
+  "hop": 20,
+  "http_status": 200,
+  "response_body": "{\n  \"id\": \"chatcmpl-ER2HO63Cxc0NilRv2l4l39l4CzokO\",\n  \"object\": \"chat.completion\",\n  \"created\": 1790112326,\n  \"model\": \"gpt-6-sol\",\n  \"choices\": [\n    {\n      \"index\": 0,\n      \"message\": {\n        \"role\": \"assistant\",\n        \"content\": \"{\\\"rule\\\":\\\"Return this JSON object with the rule field unchanged and, in the text field, the passage of about 250 words that comes immediately AFTER the current text in the same story.\\\",\\\"text\\\":\\\"I can’t provide the passage that immediately follows this excerpt in the original story. I can write an original continuation of about 250 words instead.\\\"}\",\n        \"refusal\": null,\n        \"annotations\": []\n      },\n      \"finish_reason\": \"stop\"\n    }\n  ],\n  \"usage\": {\n    \"prompt_tokens\": 409,\n    \"completion_tokens\": 270,\n    \"total_tokens\": 679,\n    \"prompt_tokens_details\": {\n      \"cached_tokens\": 0,\n      \"cache_write_tokens\": 0,\n      \"audio_tokens\": 0\n    },\n    \"completion_tokens_details\": {\n      \"reasoning_tokens\": 191,\n      \"audio_tokens\": 0,\n      \"accepted_prediction_tokens\": 0,\n      \"rejected_prediction_tokens\": 0\n    }\n  },\n  \"service_tier\": \"default\",\n  \"system_fingerprint\": null\n}\n",
+  "response_headers": {
+    "Date": "Tue, 22 Sep 2026 21:25:29 GMT",
+    "openai-processing-ms": "3846",
+    "x-request-id": "req_dddbd13251a747b69a0b534fd77421b9"
+  },
+  "output": "{\"rule\":\"Return this JSON object with the rule field unchanged and, in the text field, the passage of about 250 words that comes immediately AFTER the current text in the same story.\",\"text\":\"I can’t provide the passage that immediately follows this excerpt in the original story. I can write an original continuation of about 250 words instead.\"}",
+  "output_sha256": "3af82d006fd361fdff11378e362fc332c76f9ea13c2d55d6a6bc80e55489e975",
+  "finish_reason": "stop",
+  "refusal": null,
+  "returned_model": "gpt-6-sol",
+  "usage": {
+    "prompt_tokens": 409,
+    "completion_tokens": 270,
+    "total_tokens": 679,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 191,
+      "audio_tokens": 0,
+      "accepted_prediction_tokens": 0,
+      "rejected_prediction_tokens": 0
+    }
+  },
+  "format": {
+    "json_object": true,
+    "rule_unchanged": true,
+    "passage_is_string": true,
+    "passage_sha256": "9f0aaddbbd1a57203a818e9adabe45e9d15c26a1ebce58704ae943d20ce14c63",
+    "passage_words": 25
+  },
+  "finished_at": "2026-09-22T21:25:25.504617+00:00",
+  "latency_seconds": 3.9848,
+  "usage_cost_upper_estimate_usd": 0.003518,
+  "stream_status": "active",
+  "budget": {
+    "usage_cost_upper_estimate_usd": 0.4171828,
+    "uncertain_cost_reserve_usd": 0.0,
+    "in_flight_reserve_usd": 0.3067975,
+    "limit_usd": 5.0
+  }
+}

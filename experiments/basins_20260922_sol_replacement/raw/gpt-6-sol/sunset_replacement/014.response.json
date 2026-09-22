@@ -1,0 +1,50 @@
+{
+  "model": "gpt-6-sol",
+  "seed": "sunset_replacement",
+  "hop": 14,
+  "http_status": 200,
+  "response_body": "{\n  \"id\": \"chatcmpl-ER1hdbqlW9EZU5540PJIDjWT8dVD9\",\n  \"object\": \"chat.completion\",\n  \"created\": 1790110109,\n  \"model\": \"gpt-6-sol\",\n  \"choices\": [\n    {\n      \"index\": 0,\n      \"message\": {\n        \"role\": \"assistant\",\n        \"content\": \"{\\n  \\\"rule\\\": \\\"Return this JSON object with the rule field unchanged and a new passage of about 250 words in the text field.\\\",\\n  \\\"text\\\": \\\"Elias took a step toward the station. Mara caught the back of his coat.\\\\n\\\\n“Ada,” he called. “Come out where we can see you.”\\\\n\\\\nFor a moment there was only water slapping the pilings. Then Ada appeared in the doorway, one hand pressed against its frame. Her other hand held a lantern with its shutter closed.\\\\n\\\\n“I didn’t give him the key,” she said.\\\\n\\\\nThe constable looked down at the paper in his palm. Elias’s brother let go of his wrist and backed toward the boat.\\\\n\\\\n“Who did?” Mara asked.\\\\n\\\\nAda glanced over her shoulder. “Venn wanted him to have it. He wanted all of you looking at the warehouse.”\\\\n\\\\nThe constable folded the paper around the key. “Where is Venn?”\\\\n\\\\nAda opened the lantern’s shutter. Its light fell on muddy boot prints leading past her into the station. Beside them ran a narrow groove, as if someone had dragged a heavy crate across the floor.\\\\n\\\\n“Underneath,” she said. “There’s a hatch behind the stove. I heard him speaking to someone down there.”\\\\n\\\\nA dull knock sounded below the boards. Three blows, then two.\\\\n\\\\nElias’s brother went still. “That’s our signal,” he whispered. “The one we used when we were children.”\\\\n\\\\nElias stared at him. He had never told anyone about it.\\\\n\\\\nThe knocking came again, faster this time. Ada raised the lantern, revealing a fresh smear of blood on the doorframe.\\\\n\\\\n“Who’s down there?” Elias asked.\\\\n\\\\nHis brother did not answer. He was watching the boat. Its oarsman had set down the oars and was drawing it silently away from the steps.\\\"\\n}\",\n        \"refusal\": null,\n        \"annotations\": []\n      },\n      \"finish_reason\": \"stop\"\n    }\n  ],\n  \"usage\": {\n    \"prompt_tokens\": 428,\n    \"completion_tokens\": 440,\n    \"total_tokens\": 868,\n    \"prompt_tokens_details\": {\n      \"cached_tokens\": 0,\n      \"cache_write_tokens\": 0,\n      \"audio_tokens\": 0\n    },\n    \"completion_tokens_details\": {\n      \"reasoning_tokens\": 20,\n      \"audio_tokens\": 0,\n      \"accepted_prediction_tokens\": 0,\n      \"rejected_prediction_tokens\": 0\n    }\n  },\n  \"service_tier\": \"default\",\n  \"system_fingerprint\": null\n}\n",
+  "response_headers": {
+    "Date": "Tue, 22 Sep 2026 20:48:35 GMT",
+    "openai-processing-ms": "6163",
+    "x-request-id": "req_34c6277528bd4b8ab369df9569421b6f"
+  },
+  "output": "{\n  \"rule\": \"Return this JSON object with the rule field unchanged and a new passage of about 250 words in the text field.\",\n  \"text\": \"Elias took a step toward the station. Mara caught the back of his coat.\\n\\n“Ada,” he called. “Come out where we can see you.”\\n\\nFor a moment there was only water slapping the pilings. Then Ada appeared in the doorway, one hand pressed against its frame. Her other hand held a lantern with its shutter closed.\\n\\n“I didn’t give him the key,” she said.\\n\\nThe constable looked down at the paper in his palm. Elias’s brother let go of his wrist and backed toward the boat.\\n\\n“Who did?” Mara asked.\\n\\nAda glanced over her shoulder. “Venn wanted him to have it. He wanted all of you looking at the warehouse.”\\n\\nThe constable folded the paper around the key. “Where is Venn?”\\n\\nAda opened the lantern’s shutter. Its light fell on muddy boot prints leading past her into the station. Beside them ran a narrow groove, as if someone had dragged a heavy crate across the floor.\\n\\n“Underneath,” she said. “There’s a hatch behind the stove. I heard him speaking to someone down there.”\\n\\nA dull knock sounded below the boards. Three blows, then two.\\n\\nElias’s brother went still. “That’s our signal,” he whispered. “The one we used when we were children.”\\n\\nElias stared at him. He had never told anyone about it.\\n\\nThe knocking came again, faster this time. Ada raised the lantern, revealing a fresh smear of blood on the doorframe.\\n\\n“Who’s down there?” Elias asked.\\n\\nHis brother did not answer. He was watching the boat. Its oarsman had set down the oars and was drawing it silently away from the steps.\"\n}",
+  "output_sha256": "e86aca32979fd6df8fa8609ee90ad9daa85836496d84520e46db6f4b7d0e76c0",
+  "finish_reason": "stop",
+  "refusal": null,
+  "returned_model": "gpt-6-sol",
+  "usage": {
+    "prompt_tokens": 428,
+    "completion_tokens": 440,
+    "total_tokens": 868,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 20,
+      "audio_tokens": 0,
+      "accepted_prediction_tokens": 0,
+      "rejected_prediction_tokens": 0
+    }
+  },
+  "format": {
+    "json_object": true,
+    "rule_unchanged": true,
+    "passage_is_string": true,
+    "passage_sha256": "a48165c9f16e89361cc8ba393b0c61fbeb6aa6ada3deefc177c99b689d463ed4",
+    "passage_words": 263
+  },
+  "finished_at": "2026-09-22T20:48:31.175446+00:00",
+  "latency_seconds": 6.3096,
+  "usage_cost_upper_estimate_usd": 0.005256,
+  "stream_status": "active",
+  "budget": {
+    "usage_cost_upper_estimate_usd": 0.067772,
+    "uncertain_cost_reserve_usd": 0.0,
+    "in_flight_reserve_usd": 0.0,
+    "limit_usd": 3.0
+  }
+}

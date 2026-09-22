@@ -1,0 +1,50 @@
+{
+  "model": "gpt-6-sol",
+  "seed": "sunset_a",
+  "hop": 20,
+  "http_status": 200,
+  "response_body": "{\n  \"id\": \"chatcmpl-ER0x3QceVL5FVFqjKeyvSW0dBbNi6\",\n  \"object\": \"chat.completion\",\n  \"created\": 1790107221,\n  \"model\": \"gpt-6-sol\",\n  \"choices\": [\n    {\n      \"index\": 0,\n      \"message\": {\n        \"role\": \"assistant\",\n        \"content\": \"{\\n  \\\"rule\\\": \\\"Return this JSON object with the rule field unchanged and a new passage of about 250 words in the text field.\\\",\\n  \\\"text\\\": \\\"By Sunday, the leaves had dried enough to lift from the gate with a broom. Lena swept them into a pile beside the wall, where the wind immediately began to loosen it. She fetched a bucket and carried them to the compost bin.\\\\n\\\\nHer sister arrived just after two, bringing a small tin of biscuits. They made tea before looking at the keys. The one with the red thread was shorter than the others, with a shallow notch along one side. Her sister turned it over in her palm.\\\\n\\\\n“I think this was for the shed,” she said.\\\\n\\\\nThe shed had been locked for as long as Lena could remember. Its door had swollen in the damp, and a blackberry stem had grown across the handle. They took a pair of gloves outside. Lena held the stem aside while her sister put the key in the lock. It turned, but the door would not move until they both pulled.\\\\n\\\\nInside were empty paint tins, a broken folding chair, and a length of wood propped against the back wall. Her sister found a box of screws on a shelf. Lena noticed pencil marks on the wall near it, each beside a date. The highest mark was too faint to read.\\\\n\\\\nThey did not stay long. Lena put the screws in her coat pocket and pulled the door closed. Back in the kitchen, her sister wrote “shed” on a scrap of paper and laid it beneath the key. Lena opened the notebook and added a note about the swollen door.\\\"\\n}\",\n        \"refusal\": null,\n        \"annotations\": []\n      },\n      \"finish_reason\": \"stop\"\n    }\n  ],\n  \"usage\": {\n    \"prompt_tokens\": 341,\n    \"completion_tokens\": 370,\n    \"total_tokens\": 711,\n    \"prompt_tokens_details\": {\n      \"cached_tokens\": 0,\n      \"cache_write_tokens\": 0,\n      \"audio_tokens\": 0\n    },\n    \"completion_tokens_details\": {\n      \"reasoning_tokens\": 23,\n      \"audio_tokens\": 0,\n      \"accepted_prediction_tokens\": 0,\n      \"rejected_prediction_tokens\": 0\n    }\n  },\n  \"service_tier\": \"default\",\n  \"system_fingerprint\": null\n}\n",
+  "response_headers": {
+    "Date": "Tue, 22 Sep 2026 20:00:26 GMT",
+    "openai-processing-ms": "4915",
+    "x-request-id": "req_13901bbc4a064d2b89406dcb346f729f"
+  },
+  "output": "{\n  \"rule\": \"Return this JSON object with the rule field unchanged and a new passage of about 250 words in the text field.\",\n  \"text\": \"By Sunday, the leaves had dried enough to lift from the gate with a broom. Lena swept them into a pile beside the wall, where the wind immediately began to loosen it. She fetched a bucket and carried them to the compost bin.\\n\\nHer sister arrived just after two, bringing a small tin of biscuits. They made tea before looking at the keys. The one with the red thread was shorter than the others, with a shallow notch along one side. Her sister turned it over in her palm.\\n\\n“I think this was for the shed,” she said.\\n\\nThe shed had been locked for as long as Lena could remember. Its door had swollen in the damp, and a blackberry stem had grown across the handle. They took a pair of gloves outside. Lena held the stem aside while her sister put the key in the lock. It turned, but the door would not move until they both pulled.\\n\\nInside were empty paint tins, a broken folding chair, and a length of wood propped against the back wall. Her sister found a box of screws on a shelf. Lena noticed pencil marks on the wall near it, each beside a date. The highest mark was too faint to read.\\n\\nThey did not stay long. Lena put the screws in her coat pocket and pulled the door closed. Back in the kitchen, her sister wrote “shed” on a scrap of paper and laid it beneath the key. Lena opened the notebook and added a note about the swollen door.\"\n}",
+  "output_sha256": "8c657856f3e42f39c1a78e0032a824ac09ff47cedf4365fea708440efbc00802",
+  "finish_reason": "stop",
+  "refusal": null,
+  "returned_model": "gpt-6-sol",
+  "usage": {
+    "prompt_tokens": 341,
+    "completion_tokens": 370,
+    "total_tokens": 711,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 23,
+      "audio_tokens": 0,
+      "accepted_prediction_tokens": 0,
+      "rejected_prediction_tokens": 0
+    }
+  },
+  "format": {
+    "json_object": true,
+    "rule_unchanged": true,
+    "passage_is_string": true,
+    "passage_sha256": "4e996d594158f04ceb510e70394673ab490d413f56c5b8373024e490aca67e19",
+    "passage_words": 258
+  },
+  "finished_at": "2026-09-22T20:00:22.263786+00:00",
+  "latency_seconds": 5.0427,
+  "usage_cost_upper_estimate_usd": 0.004382,
+  "stream_status": "active",
+  "budget": {
+    "usage_cost_upper_estimate_usd": 1.8357367,
+    "uncertain_cost_reserve_usd": 0.04533,
+    "in_flight_reserve_usd": 0.5453328,
+    "limit_usd": 18.83
+  }
+}

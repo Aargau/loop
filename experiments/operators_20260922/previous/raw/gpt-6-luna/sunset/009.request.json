@@ -1,0 +1,20 @@
+{
+  "started_at": "2026-09-22T21:24:10.733718+00:00",
+  "model": "gpt-6-luna",
+  "seed": "sunset",
+  "hop": 9,
+  "endpoint": "https://api.openai.com/v1/chat/completions",
+  "body": {
+    "model": "gpt-6-luna",
+    "messages": [
+      {
+        "role": "user",
+        "content": "{\"rule\":\"Return this JSON object with the rule field unchanged and, in the text field, the passage of about 250 words that came immediately BEFORE the current text in its story.\",\"text\":\"By late morning, the rain had settled in, turning the garden path dark and slick. Mara stood in her grandfather’s study with the desk drawer pulled open, trying to decide what could be packed and what should be thrown away.\\n\\nThe drawer was mostly full of envelopes, blunt pencils, and folded scraps of paper. At the back, beneath a stack of old bills, she found a map. Its paper had gone soft along the creases, and one corner was stained brown, as if someone had once set down a cup there.\\n\\nShe spread it across the desk. The map showed a stretch of coastline and a scatter of small towns. A pencil circle marked one of them: Bellweather. Beside the circle, in her grandfather’s cramped handwriting, were the words: Ask your mother what happened there.\\n\\nMara read the note again. She couldn’t remember ever hearing her grandfather mention Bellweather, though she had spent enough afternoons with him to know the names of his favorite places. He had told her about the harbor where he learned to swim, the railway station where he met her grandmother, and the hill where he used to fly kites. This village had never come up.\\n\\nShe carried the map into the hall, where her mother was sorting through a cupboard. “Do you know where Bellweather is?”\\n\\nHer mother looked at the pencil circle. For a moment, the only sound was rain ticking against the glass. Then she folded the map carefully along its old creases and handed it back.\\n\\n“Not now, Mara,” she said. “We have a lot to finish.”\\n\\nMara slipped the map into her pocket. In the kitchen, a stack of postcards waited beside the boxes.\"}"
+      }
+    ],
+    "max_completion_tokens": 4096,
+    "reasoning_effort": "low"
+  },
+  "state_sha256": "5f49a9b2a7ddc4db3f8d8fdf20181760cdc27376efc6143d4749ce63e6d83dbd",
+  "reserved_cost_usd": 0.0022796
+}

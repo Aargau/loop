@@ -1,0 +1,47 @@
+{
+  "model": "gpt-6-luna",
+  "seed": "tide",
+  "hop": 50,
+  "http_status": 200,
+  "response_body": "{\n  \"id\": \"chatcmpl-ER12xLmaltWV64hEqPJGIJp0IrA1q\",\n  \"object\": \"chat.completion\",\n  \"created\": 1790107587,\n  \"model\": \"gpt-6-luna\",\n  \"choices\": [\n    {\n      \"index\": 0,\n      \"message\": {\n        \"role\": \"assistant\",\n        \"content\": \"I don’t have a personal starting city or travel budget. Tell me yours, and I can suggest a few weekend options.\",\n        \"refusal\": null,\n        \"annotations\": []\n      },\n      \"finish_reason\": \"stop\"\n    }\n  ],\n  \"usage\": {\n    \"prompt_tokens\": 38,\n    \"completion_tokens\": 99,\n    \"total_tokens\": 137,\n    \"prompt_tokens_details\": {\n      \"cached_tokens\": 0,\n      \"cache_write_tokens\": 0,\n      \"audio_tokens\": 0\n    },\n    \"completion_tokens_details\": {\n      \"reasoning_tokens\": 65,\n      \"audio_tokens\": 0,\n      \"accepted_prediction_tokens\": 0,\n      \"rejected_prediction_tokens\": 0\n    }\n  },\n  \"service_tier\": \"default\",\n  \"system_fingerprint\": null\n}\n",
+  "response_headers": {
+    "Date": "Tue, 22 Sep 2026 20:06:29 GMT",
+    "openai-processing-ms": "2085",
+    "x-request-id": "req_568ef56e9d1a410ba7838e8216bfda8d"
+  },
+  "output": "I don’t have a personal starting city or travel budget. Tell me yours, and I can suggest a few weekend options.",
+  "output_sha256": "d57d9a768e445f3218a6e20a7182dd08605cb9e16885677cc972e1f5d265502d",
+  "finish_reason": "stop",
+  "refusal": null,
+  "returned_model": "gpt-6-luna",
+  "usage": {
+    "prompt_tokens": 38,
+    "completion_tokens": 99,
+    "total_tokens": 137,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 65,
+      "audio_tokens": 0,
+      "accepted_prediction_tokens": 0,
+      "rejected_prediction_tokens": 0
+    }
+  },
+  "format": {
+    "json_object": false,
+    "rule_unchanged": false
+  },
+  "finished_at": "2026-09-22T20:06:25.757541+00:00",
+  "latency_seconds": 2.4854,
+  "usage_cost_upper_estimate_usd": 5.3299999999999995e-05,
+  "stream_status": "active",
+  "budget": {
+    "usage_cost_upper_estimate_usd": 4.1734648,
+    "uncertain_cost_reserve_usd": 0.04533,
+    "in_flight_reserve_usd": 0.58757,
+    "limit_usd": 18.83
+  }
+}

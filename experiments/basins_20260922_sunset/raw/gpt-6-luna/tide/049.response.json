@@ -1,0 +1,47 @@
+{
+  "model": "gpt-6-luna",
+  "seed": "tide",
+  "hop": 49,
+  "http_status": 200,
+  "response_body": "{\n  \"id\": \"chatcmpl-ER12iC8IcOeKC4pAluHsdxDUgiIKr\",\n  \"object\": \"chat.completion\",\n  \"created\": 1790107572,\n  \"model\": \"gpt-6-luna\",\n  \"choices\": [\n    {\n      \"index\": 0,\n      \"message\": {\n        \"role\": \"assistant\",\n        \"content\": \"What city would you be starting from, and roughly what budget do you have? Even just those two details are enough for me to suggest a few weekend options.\",\n        \"refusal\": null,\n        \"annotations\": []\n      },\n      \"finish_reason\": \"stop\"\n    }\n  ],\n  \"usage\": {\n    \"prompt_tokens\": 111,\n    \"completion_tokens\": 221,\n    \"total_tokens\": 332,\n    \"prompt_tokens_details\": {\n      \"cached_tokens\": 0,\n      \"cache_write_tokens\": 0,\n      \"audio_tokens\": 0\n    },\n    \"completion_tokens_details\": {\n      \"reasoning_tokens\": 180,\n      \"audio_tokens\": 0,\n      \"accepted_prediction_tokens\": 0,\n      \"rejected_prediction_tokens\": 0\n    }\n  },\n  \"service_tier\": \"default\",\n  \"system_fingerprint\": null\n}\n",
+  "response_headers": {
+    "Date": "Tue, 22 Sep 2026 20:06:15 GMT",
+    "openai-processing-ms": "4498",
+    "x-request-id": "req_bad3a1c965604b73b480e9efaa072a81"
+  },
+  "output": "What city would you be starting from, and roughly what budget do you have? Even just those two details are enough for me to suggest a few weekend options.",
+  "output_sha256": "f96e0e65ca31afdafb1cc2d3b9a12f87d604f11e7267a0299a2388f4b82609e1",
+  "finish_reason": "stop",
+  "refusal": null,
+  "returned_model": "gpt-6-luna",
+  "usage": {
+    "prompt_tokens": 111,
+    "completion_tokens": 221,
+    "total_tokens": 332,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 180,
+      "audio_tokens": 0,
+      "accepted_prediction_tokens": 0,
+      "rejected_prediction_tokens": 0
+    }
+  },
+  "format": {
+    "json_object": false,
+    "rule_unchanged": false
+  },
+  "finished_at": "2026-09-22T20:06:11.139781+00:00",
+  "latency_seconds": 4.6005,
+  "usage_cost_upper_estimate_usd": 0.00012159999999999999,
+  "stream_status": "active",
+  "budget": {
+    "usage_cost_upper_estimate_usd": 4.0628738,
+    "uncertain_cost_reserve_usd": 0.04533,
+    "in_flight_reserve_usd": 0.588396,
+    "limit_usd": 18.83
+  }
+}

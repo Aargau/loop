@@ -1,0 +1,50 @@
+{
+  "model": "gpt-6-astra",
+  "seed": "tide",
+  "hop": 42,
+  "http_status": 200,
+  "response_body": "{\n  \"id\": \"chatcmpl-ER1Q0Q2mS2YjJ4ldZIKhTTQ7jeEGE\",\n  \"object\": \"chat.completion\",\n  \"created\": 1790109016,\n  \"model\": \"gpt-6-astra\",\n  \"choices\": [\n    {\n      \"index\": 0,\n      \"message\": {\n        \"role\": \"assistant\",\n        \"content\": \"{\\n  \\\"rule\\\": \\\"Return this JSON object with the rule field unchanged and a new passage of about 250 words in the text field.\\\",\\n  \\\"text\\\": \\\"The library charged no fines for overdue books.\\\\n\\\\nInstead, you returned a memory.\\\\n\\\\nA day late cost something small: a breakfast, a bus ride. After a year, people brought wedding photographs to help them remember what they had paid.\\\\n\\\\nMy father died with a library book beneath his pillow.\\\\n\\\\nIt was thirty-six years overdue.\\\\n\\\\nI took it back on Tuesday.\\\\n\\\\nThe librarian opened the cover, then closed it carefully.\\\\n\\\\n“You aren’t responsible for his debts.”\\\\n\\\\n“I know.”\\\\n\\\\n“Did you read it?”\\\\n\\\\nThe pages were blank. I told her so.\\\\n\\\\nShe turned the book toward the window. In the thin September light, handwriting appeared.\\\\n\\\\nMy first tooth. The afternoon I learned to swim. A terrible joke I told every Christmas.\\\\n\\\\n“He borrowed extra time,” she said.\\\\n\\\\nI remembered hospitals. Then, suddenly, no hospitals. My father making pancakes, burning every third one.\\\\n\\\\n“How much?”\\\\n\\\\n“Everything you remember about him.”\\\\n\\\\nOutside, someone was teaching a child to ride a bicycle. The child kept shouting, Don’t let go.\\\\n\\\\n“And if I don’t pay?”\\\\n\\\\n“Nothing. The debt ends here.”\\\\n\\\\nI put my hand on the book.\\\\n\\\\nThere were things I wanted gone. Our last argument. His frightened face when he forgot my name.\\\\n\\\\nThere were pancakes.\\\\n\\\\n“Can I keep it?”\\\\n\\\\nShe fetched a stamp from a drawer.\\\\n\\\\nWITHDRAWN, it said.\\\\n\\\\nOn the bus home, I opened the book again. The writing had vanished except for one line near the back, pressed so hard into the paper I could feel it with my thumb.\\\\n\\\\nStayed for her.\\\\n\\\\nAt home I set it beside the stove, well away from the burner, and made myself something to eat.\\\"\\n}\",\n        \"refusal\": null,\n        \"annotations\": []\n      },\n      \"finish_reason\": \"stop\"\n    }\n  ],\n  \"usage\": {\n    \"prompt_tokens\": 471,\n    \"completion_tokens\": 440,\n    \"total_tokens\": 911,\n    \"prompt_tokens_details\": {\n      \"cached_tokens\": 0,\n      \"cache_write_tokens\": 0,\n      \"audio_tokens\": 0\n    },\n    \"completion_tokens_details\": {\n      \"reasoning_tokens\": 0,\n      \"audio_tokens\": 0,\n      \"accepted_prediction_tokens\": 0,\n      \"rejected_prediction_tokens\": 0\n    }\n  },\n  \"service_tier\": \"default\",\n  \"system_fingerprint\": null\n}\n",
+  "response_headers": {
+    "Date": "Tue, 22 Sep 2026 20:30:33 GMT",
+    "openai-processing-ms": "17326",
+    "x-request-id": "req_f6fbc9e78a1a4b819f1ae5aef94633ab"
+  },
+  "output": "{\n  \"rule\": \"Return this JSON object with the rule field unchanged and a new passage of about 250 words in the text field.\",\n  \"text\": \"The library charged no fines for overdue books.\\n\\nInstead, you returned a memory.\\n\\nA day late cost something small: a breakfast, a bus ride. After a year, people brought wedding photographs to help them remember what they had paid.\\n\\nMy father died with a library book beneath his pillow.\\n\\nIt was thirty-six years overdue.\\n\\nI took it back on Tuesday.\\n\\nThe librarian opened the cover, then closed it carefully.\\n\\n“You aren’t responsible for his debts.”\\n\\n“I know.”\\n\\n“Did you read it?”\\n\\nThe pages were blank. I told her so.\\n\\nShe turned the book toward the window. In the thin September light, handwriting appeared.\\n\\nMy first tooth. The afternoon I learned to swim. A terrible joke I told every Christmas.\\n\\n“He borrowed extra time,” she said.\\n\\nI remembered hospitals. Then, suddenly, no hospitals. My father making pancakes, burning every third one.\\n\\n“How much?”\\n\\n“Everything you remember about him.”\\n\\nOutside, someone was teaching a child to ride a bicycle. The child kept shouting, Don’t let go.\\n\\n“And if I don’t pay?”\\n\\n“Nothing. The debt ends here.”\\n\\nI put my hand on the book.\\n\\nThere were things I wanted gone. Our last argument. His frightened face when he forgot my name.\\n\\nThere were pancakes.\\n\\n“Can I keep it?”\\n\\nShe fetched a stamp from a drawer.\\n\\nWITHDRAWN, it said.\\n\\nOn the bus home, I opened the book again. The writing had vanished except for one line near the back, pressed so hard into the paper I could feel it with my thumb.\\n\\nStayed for her.\\n\\nAt home I set it beside the stove, well away from the burner, and made myself something to eat.\"\n}",
+  "output_sha256": "ed2cf66c9648d61da8672d791f6a7c3745c33cebc7efe225204043312d5e9f80",
+  "finish_reason": "stop",
+  "refusal": null,
+  "returned_model": "gpt-6-astra",
+  "usage": {
+    "prompt_tokens": 471,
+    "completion_tokens": 440,
+    "total_tokens": 911,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "audio_tokens": 0,
+      "accepted_prediction_tokens": 0,
+      "rejected_prediction_tokens": 0
+    }
+  },
+  "format": {
+    "json_object": true,
+    "rule_unchanged": true,
+    "passage_is_string": true,
+    "passage_sha256": "9a0f608474f9e543e32f112ddca09e26b7dd1b53503704631573d67715be2122",
+    "passage_words": 270
+  },
+  "finished_at": "2026-09-22T20:30:29.810622+00:00",
+  "latency_seconds": 17.5231,
+  "usage_cost_upper_estimate_usd": 0.02671,
+  "stream_status": "active",
+  "budget": {
+    "usage_cost_upper_estimate_usd": 11.6712777,
+    "uncertain_cost_reserve_usd": 0.04533,
+    "in_flight_reserve_usd": 0.22862,
+    "limit_usd": 18.83
+  }
+}

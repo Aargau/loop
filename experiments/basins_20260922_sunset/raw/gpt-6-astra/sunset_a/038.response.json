@@ -1,0 +1,50 @@
+{
+  "model": "gpt-6-astra",
+  "seed": "sunset_a",
+  "hop": 38,
+  "http_status": 200,
+  "response_body": "{\n  \"id\": \"chatcmpl-ER1M184giM65gNaCD8mD7SyHx5eHE\",\n  \"object\": \"chat.completion\",\n  \"created\": 1790108769,\n  \"model\": \"gpt-6-astra\",\n  \"choices\": [\n    {\n      \"index\": 0,\n      \"message\": {\n        \"role\": \"assistant\",\n        \"content\": \"{\\n  \\\"rule\\\": \\\"Return this JSON object with the rule field unchanged and a new passage of about 250 words in the text field.\\\",\\n  \\\"text\\\": \\\"Every morning, Arthur opened the station bookstall at six, though the first train no longer stopped until seven.\\\\n\\\\nHe liked the hour in between. He swept the platform, boiled his kettle, and turned the newspapers so their headlines faced the tracks.\\\\n\\\\nOne Tuesday, he found a crossword tucked beneath the shutter. Only one answer had been filled in.\\\\n\\\\nSeventeen across: a place to begin again.\\\\n\\\\nHOME, someone had written, incorrectly. The answer required five letters.\\\\n\\\\nArthur pencilled START beside it and left the page on the counter.\\\\n\\\\nThe next morning it returned with three more answers and a correction to his own.\\\\n\\\\nOver the following weeks, they completed six crosswords without meeting. His partner knew rivers, composers, and obscure birds. Arthur supplied footballers and things found in sheds.\\\\n\\\\nThen a note appeared in the margin.\\\\n\\\\nLast treatment Thursday. Might be late.\\\\n\\\\nArthur read it twice. He left the crossword unfinished.\\\\n\\\\nOn Thursday he kept the kettle warm until noon.\\\\n\\\\nAt eleven forty, a woman in a yellow coat approached the stall. She held a folded newspaper against her chest.\\\\n\\\\n“I think you've got my pencil,” she said.\\\\n\\\\nArthur looked at the three pencils in his mug.\\\\n\\\\n“Which one?”\\\\n\\\\n“The good one.”\\\\n\\\\nHe gave her the chair from behind the counter and made tea in his spare cup.\\\\n\\\\nFor a while they worked without speaking. A train arrived, emptied, and went away.\\\\n\\\\n“Nine down,” she said eventually. “Six letters. Someone you've yet to meet.”\\\\n\\\\n“Stranger,” Arthur said.\\\\n\\\\n“That's eight.”\\\\n\\\\nHe counted on his fingers, frowned, and passed her the pencil.\\\\n\\\\n“You'd better keep this.”\\\"\\n}\",\n        \"refusal\": null,\n        \"annotations\": []\n      },\n      \"finish_reason\": \"stop\"\n    }\n  ],\n  \"usage\": {\n    \"prompt_tokens\": 407,\n    \"completion_tokens\": 418,\n    \"total_tokens\": 825,\n    \"prompt_tokens_details\": {\n      \"cached_tokens\": 0,\n      \"cache_write_tokens\": 0,\n      \"audio_tokens\": 0\n    },\n    \"completion_tokens_details\": {\n      \"reasoning_tokens\": 0,\n      \"audio_tokens\": 0,\n      \"accepted_prediction_tokens\": 0,\n      \"rejected_prediction_tokens\": 0\n    }\n  },\n  \"service_tier\": \"default\",\n  \"system_fingerprint\": null\n}\n",
+  "response_headers": {
+    "Date": "Tue, 22 Sep 2026 20:26:27 GMT",
+    "openai-processing-ms": "18831",
+    "x-request-id": "req_156c432713ad4becbd8142aa40af1a1e"
+  },
+  "output": "{\n  \"rule\": \"Return this JSON object with the rule field unchanged and a new passage of about 250 words in the text field.\",\n  \"text\": \"Every morning, Arthur opened the station bookstall at six, though the first train no longer stopped until seven.\\n\\nHe liked the hour in between. He swept the platform, boiled his kettle, and turned the newspapers so their headlines faced the tracks.\\n\\nOne Tuesday, he found a crossword tucked beneath the shutter. Only one answer had been filled in.\\n\\nSeventeen across: a place to begin again.\\n\\nHOME, someone had written, incorrectly. The answer required five letters.\\n\\nArthur pencilled START beside it and left the page on the counter.\\n\\nThe next morning it returned with three more answers and a correction to his own.\\n\\nOver the following weeks, they completed six crosswords without meeting. His partner knew rivers, composers, and obscure birds. Arthur supplied footballers and things found in sheds.\\n\\nThen a note appeared in the margin.\\n\\nLast treatment Thursday. Might be late.\\n\\nArthur read it twice. He left the crossword unfinished.\\n\\nOn Thursday he kept the kettle warm until noon.\\n\\nAt eleven forty, a woman in a yellow coat approached the stall. She held a folded newspaper against her chest.\\n\\n“I think you've got my pencil,” she said.\\n\\nArthur looked at the three pencils in his mug.\\n\\n“Which one?”\\n\\n“The good one.”\\n\\nHe gave her the chair from behind the counter and made tea in his spare cup.\\n\\nFor a while they worked without speaking. A train arrived, emptied, and went away.\\n\\n“Nine down,” she said eventually. “Six letters. Someone you've yet to meet.”\\n\\n“Stranger,” Arthur said.\\n\\n“That's eight.”\\n\\nHe counted on his fingers, frowned, and passed her the pencil.\\n\\n“You'd better keep this.”\"\n}",
+  "output_sha256": "487b3358356c7efd67f7cc74175021dc66b3ded6fe4d1d2ea62a6789a9fcb915",
+  "finish_reason": "stop",
+  "refusal": null,
+  "returned_model": "gpt-6-astra",
+  "usage": {
+    "prompt_tokens": 407,
+    "completion_tokens": 418,
+    "total_tokens": 825,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "audio_tokens": 0,
+      "accepted_prediction_tokens": 0,
+      "rejected_prediction_tokens": 0
+    }
+  },
+  "format": {
+    "json_object": true,
+    "rule_unchanged": true,
+    "passage_is_string": true,
+    "passage_sha256": "178ac527180d36e05a86d3d7f0e86d358d9faef3e9b7350f3d03fdd4c5443de1",
+    "passage_words": 263
+  },
+  "finished_at": "2026-09-22T20:26:23.716377+00:00",
+  "latency_seconds": 19.1078,
+  "usage_cost_upper_estimate_usd": 0.02497,
+  "stream_status": "active",
+  "budget": {
+    "usage_cost_upper_estimate_usd": 10.6992477,
+    "uncertain_cost_reserve_usd": 0.04533,
+    "in_flight_reserve_usd": 0.22584,
+    "limit_usd": 18.83
+  }
+}

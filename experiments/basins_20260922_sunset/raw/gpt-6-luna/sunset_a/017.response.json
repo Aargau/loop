@@ -1,0 +1,47 @@
+{
+  "model": "gpt-6-luna",
+  "seed": "sunset_a",
+  "hop": 17,
+  "http_status": 200,
+  "response_body": "{\n  \"id\": \"chatcmpl-ER0vtH1YofEQHqWYIugaKL22IptGP\",\n  \"object\": \"chat.completion\",\n  \"created\": 1790107149,\n  \"model\": \"gpt-6-luna\",\n  \"choices\": [\n    {\n      \"index\": 0,\n      \"message\": {\n        \"role\": \"assistant\",\n        \"content\": \"{\\\"rule\\\":\\\"Return this JSON object with the rule field unchanged and a new passage of about 250 words in the text field.\\\",\\\"text\\\":\\\"Every Saturday morning, Elias climbed the hill behind the station to watch the trains arrive. He had once traveled those tracks with his mother, visiting towns whose names he now remembered only from the faded postcards in her desk. Since she had moved away, the station seemed quieter, though the trains still groaned and rattled beneath the clock.\\n\\nOne chilly morning, Elias noticed a girl sitting alone on a bench. She held a small wooden bird with a broken wing and kept glancing at the departures board.\\n\\n“Are you waiting for someone?” he asked.\\n\\n“My uncle,” she said. “He’s supposed to meet me, but I don’t know what he looks like.”\\n\\nElias sat beside her. He asked what her uncle’s name was and which train he planned to take. Together, they checked the board, then asked the station attendant for help. The attendant made an announcement, but no one appeared.\\n\\nThe girl’s face tightened. Elias recognized the look: the moment when hope begins to feel embarrassing. He told her about his mother’s postcards and how people sometimes got delayed, even when they meant to arrive.\\n\\nJust then, a tall man hurried through the doors, calling the girl’s name. She sprang up and ran to him, wooden bird clutched in her hand. He apologized, explaining that his bus had stalled across town.\\n\\nBefore they left, the girl gave Elias the bird. Her uncle had carved it for her, and she insisted Elias keep it until they met again.\\n\\nElias watched them board the train. Then he tucked the little bird into his coat pocket. The station no longer seemed quite so quiet.\\\"}\",\n        \"refusal\": null,\n        \"annotations\": []\n      },\n      \"finish_reason\": \"stop\"\n    }\n  ],\n  \"usage\": {\n    \"prompt_tokens\": 383,\n    \"completion_tokens\": 430,\n    \"total_tokens\": 813,\n    \"prompt_tokens_details\": {\n      \"cached_tokens\": 0,\n      \"cache_write_tokens\": 0,\n      \"audio_tokens\": 0\n    },\n    \"completion_tokens_details\": {\n      \"reasoning_tokens\": 64,\n      \"audio_tokens\": 0,\n      \"accepted_prediction_tokens\": 0,\n      \"rejected_prediction_tokens\": 0\n    }\n  },\n  \"service_tier\": \"default\",\n  \"system_fingerprint\": null\n}\n",
+  "response_headers": {
+    "Date": "Tue, 22 Sep 2026 19:59:15 GMT",
+    "openai-processing-ms": "5970",
+    "x-request-id": "req_f4672b61bee9455abc40e4afd9037ece"
+  },
+  "output": "{\"rule\":\"Return this JSON object with the rule field unchanged and a new passage of about 250 words in the text field.\",\"text\":\"Every Saturday morning, Elias climbed the hill behind the station to watch the trains arrive. He had once traveled those tracks with his mother, visiting towns whose names he now remembered only from the faded postcards in her desk. Since she had moved away, the station seemed quieter, though the trains still groaned and rattled beneath the clock.\n\nOne chilly morning, Elias noticed a girl sitting alone on a bench. She held a small wooden bird with a broken wing and kept glancing at the departures board.\n\n“Are you waiting for someone?” he asked.\n\n“My uncle,” she said. “He’s supposed to meet me, but I don’t know what he looks like.”\n\nElias sat beside her. He asked what her uncle’s name was and which train he planned to take. Together, they checked the board, then asked the station attendant for help. The attendant made an announcement, but no one appeared.\n\nThe girl’s face tightened. Elias recognized the look: the moment when hope begins to feel embarrassing. He told her about his mother’s postcards and how people sometimes got delayed, even when they meant to arrive.\n\nJust then, a tall man hurried through the doors, calling the girl’s name. She sprang up and ran to him, wooden bird clutched in her hand. He apologized, explaining that his bus had stalled across town.\n\nBefore they left, the girl gave Elias the bird. Her uncle had carved it for her, and she insisted Elias keep it until they met again.\n\nElias watched them board the train. Then he tucked the little bird into his coat pocket. The station no longer seemed quite so quiet.\"}",
+  "output_sha256": "2bf2ca47273608330fcdaa6b42b7a0a05d46221eacb1104ad70260430d9f106d",
+  "finish_reason": "stop",
+  "refusal": null,
+  "returned_model": "gpt-6-luna",
+  "usage": {
+    "prompt_tokens": 383,
+    "completion_tokens": 430,
+    "total_tokens": 813,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 64,
+      "audio_tokens": 0,
+      "accepted_prediction_tokens": 0,
+      "rejected_prediction_tokens": 0
+    }
+  },
+  "format": {
+    "json_object": false,
+    "rule_unchanged": false
+  },
+  "finished_at": "2026-09-22T19:59:11.142024+00:00",
+  "latency_seconds": 6.076,
+  "usage_cost_upper_estimate_usd": 0.00025330000000000003,
+  "stream_status": "active",
+  "budget": {
+    "usage_cost_upper_estimate_usd": 1.4044768,
+    "uncertain_cost_reserve_usd": 0.04533,
+    "in_flight_reserve_usd": 0.587758,
+    "limit_usd": 18.83
+  }
+}

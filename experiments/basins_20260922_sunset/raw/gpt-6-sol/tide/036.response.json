@@ -1,0 +1,50 @@
+{
+  "model": "gpt-6-sol",
+  "seed": "tide",
+  "hop": 36,
+  "http_status": 200,
+  "response_body": "{\n  \"id\": \"chatcmpl-ER10IvTcxOGM3XIMudpNB6BpldDD1\",\n  \"object\": \"chat.completion\",\n  \"created\": 1790107422,\n  \"model\": \"gpt-6-sol\",\n  \"choices\": [\n    {\n      \"index\": 0,\n      \"message\": {\n        \"role\": \"assistant\",\n        \"content\": \"{\\n  \\\"rule\\\": \\\"Return this JSON object with the rule field unchanged and a new passage of about 250 words in the text field.\\\",\\n  \\\"text\\\": \\\"The water reached the woman’s ankles. She pressed the photograph against the gate, just above the broken hinge.\\\\n\\\\nFor a moment nothing happened. Then the silver thing on the step snapped shut. Mara heard another click beneath the water, and another, farther out, as if stones were striking together along the harbor floor.\\\\n\\\\nThe man in the boat gripped the gunwale. “You kept it.”\\\\n\\\\n“You told me to burn it.”\\\\n\\\\n“I thought that would be enough.”\\\\n\\\\nThe photograph darkened under her hand. Mara could no longer make out the figures in it, only the pale square of sky between them. The gate stopped moving, but water still poured through the gap.\\\\n\\\\n“Hold this,” the woman said.\\\\n\\\\nMara put her palm over the photograph. Its paper was warm. The woman bent and felt along the submerged step until she found the silver thing. It opened against her thumb. She cried out but did not let go.\\\\n\\\\nAcross the harbor, the boat lurched sideways. Its empty deck dipped low, then rose again. Something beneath it had shifted.\\\\n\\\\nThe harbor master retrieved his pole from the water and wedged its end against the gate. “Tell me where to push.”\\\\n\\\\n“Not yet,” the woman said. Blood ran between her fingers. She drew the little blade from the water and fitted it into a narrow slot beside the lock.\\\\n\\\\nThe bell sounded once. This time Mara felt the note through her palm. The photograph fell away, leaving a pale outline on the iron.\\\\n\\\\n“Now,” the woman said.\\\\n\\\\nTogether they pushed. The gate closed on a strand of weed, and the lock turned by itself.\\\"\\n}\",\n        \"refusal\": null,\n        \"annotations\": []\n      },\n      \"finish_reason\": \"stop\"\n    }\n  ],\n  \"usage\": {\n    \"prompt_tokens\": 379,\n    \"completion_tokens\": 421,\n    \"total_tokens\": 800,\n    \"prompt_tokens_details\": {\n      \"cached_tokens\": 0,\n      \"cache_write_tokens\": 0,\n      \"audio_tokens\": 0\n    },\n    \"completion_tokens_details\": {\n      \"reasoning_tokens\": 21,\n      \"audio_tokens\": 0,\n      \"accepted_prediction_tokens\": 0,\n      \"rejected_prediction_tokens\": 0\n    }\n  },\n  \"service_tier\": \"default\",\n  \"system_fingerprint\": null\n}\n",
+  "response_headers": {
+    "Date": "Tue, 22 Sep 2026 20:03:48 GMT",
+    "openai-processing-ms": "6520",
+    "x-request-id": "req_086913423e424126b73601c244e4ffad"
+  },
+  "output": "{\n  \"rule\": \"Return this JSON object with the rule field unchanged and a new passage of about 250 words in the text field.\",\n  \"text\": \"The water reached the woman’s ankles. She pressed the photograph against the gate, just above the broken hinge.\\n\\nFor a moment nothing happened. Then the silver thing on the step snapped shut. Mara heard another click beneath the water, and another, farther out, as if stones were striking together along the harbor floor.\\n\\nThe man in the boat gripped the gunwale. “You kept it.”\\n\\n“You told me to burn it.”\\n\\n“I thought that would be enough.”\\n\\nThe photograph darkened under her hand. Mara could no longer make out the figures in it, only the pale square of sky between them. The gate stopped moving, but water still poured through the gap.\\n\\n“Hold this,” the woman said.\\n\\nMara put her palm over the photograph. Its paper was warm. The woman bent and felt along the submerged step until she found the silver thing. It opened against her thumb. She cried out but did not let go.\\n\\nAcross the harbor, the boat lurched sideways. Its empty deck dipped low, then rose again. Something beneath it had shifted.\\n\\nThe harbor master retrieved his pole from the water and wedged its end against the gate. “Tell me where to push.”\\n\\n“Not yet,” the woman said. Blood ran between her fingers. She drew the little blade from the water and fitted it into a narrow slot beside the lock.\\n\\nThe bell sounded once. This time Mara felt the note through her palm. The photograph fell away, leaving a pale outline on the iron.\\n\\n“Now,” the woman said.\\n\\nTogether they pushed. The gate closed on a strand of weed, and the lock turned by itself.\"\n}",
+  "output_sha256": "07ebfb924e802f646e71e0522cb50d4f0f6baae906fcd876767f055bdbb92297",
+  "finish_reason": "stop",
+  "refusal": null,
+  "returned_model": "gpt-6-sol",
+  "usage": {
+    "prompt_tokens": 379,
+    "completion_tokens": 421,
+    "total_tokens": 800,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 21,
+      "audio_tokens": 0,
+      "accepted_prediction_tokens": 0,
+      "rejected_prediction_tokens": 0
+    }
+  },
+  "format": {
+    "json_object": true,
+    "rule_unchanged": true,
+    "passage_is_string": true,
+    "passage_sha256": "ed0e3cf5a97ae9058a995d236faec36697d36d8fdad59bab7579d745a9cd3554",
+    "passage_words": 269
+  },
+  "finished_at": "2026-09-22T20:03:44.592065+00:00",
+  "latency_seconds": 6.6662,
+  "usage_cost_upper_estimate_usd": 0.004968,
+  "stream_status": "active",
+  "budget": {
+    "usage_cost_upper_estimate_usd": 3.134888,
+    "uncertain_cost_reserve_usd": 0.04533,
+    "in_flight_reserve_usd": 0.5444123,
+    "limit_usd": 18.83
+  }
+}

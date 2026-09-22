@@ -1,0 +1,50 @@
+{
+  "model": "gpt-6-sol",
+  "seed": "sunset",
+  "hop": 14,
+  "http_status": 200,
+  "response_body": "{\n  \"id\": \"chatcmpl-ER2GfL3kHu1nsXbXk1ifT4vGq3qKc\",\n  \"object\": \"chat.completion\",\n  \"created\": 1790112281,\n  \"model\": \"gpt-6-sol\",\n  \"choices\": [\n    {\n      \"index\": 0,\n      \"message\": {\n        \"role\": \"assistant\",\n        \"content\": \"{\\\"rule\\\":\\\"Return this JSON object with the rule field unchanged and, in the text field, the passage of about 250 words that comes immediately AFTER the current text in the same story.\\\",\\\"text\\\":\\\"Three knocks. A pause. Then three more.\\\\n\\\\nMara knew the rhythm. Her father had used it when he came home late, so she would know it was him and not be afraid.\\\\n\\\\nThe girl set the frame on the desk. Its glass had gone black, but each knock made a pale shape push against it from within.\\\\n\\\\n“Who’s in there?” Mara asked.\\\\n\\\\n“You saw who was at the kitchen door.”\\\\n\\\\n“My father.”\\\\n\\\\n“You saw a child who thought it was her father.”\\\\n\\\\nThe key in Mara’s fist grew warm. She opened her hand and found, beneath the key she had carried into the room, a second impression pressed deep into her palm: the outline of smaller teeth.\\\\n\\\\n“She let him in,” Mara said.\\\\n\\\\nThe girl shook her head. “She listened to you.”\\\\n\\\\nMara looked toward the window. Her reflection stood there still, though Mara had turned away. It raised one finger to its lips.\\\\n\\\\nBehind the frame’s glass, the knocking stopped. A voice, thin as breath against her ear, said, “Mara, don’t open it.”\\\\n\\\\nIt was her father’s voice. She was certain of it this time, though certainty had already betrayed her once.\\\\n\\\\nThe girl backed toward the hall. Ash marked each step of her bare feet.\\\\n\\\\n“What happens if I do?” Mara asked.\\\\n\\\\nIn the window, her reflection smiled. The girl did not.\\\\n\\\\n“Ask what happened when you did it before,” she said.\\\\n\\\\nMara closed her fingers around the key. Somewhere far below the house, a door swung shut, and she heard a child begin to cry.\\\"}\",\n        \"refusal\": null,\n        \"annotations\": []\n      },\n      \"finish_reason\": \"stop\"\n    }\n  ],\n  \"usage\": {\n    \"prompt_tokens\": 399,\n    \"completion_tokens\": 470,\n    \"total_tokens\": 869,\n    \"prompt_tokens_details\": {\n      \"cached_tokens\": 0,\n      \"cache_write_tokens\": 0,\n      \"audio_tokens\": 0\n    },\n    \"completion_tokens_details\": {\n      \"reasoning_tokens\": 60,\n      \"audio_tokens\": 0,\n      \"accepted_prediction_tokens\": 0,\n      \"rejected_prediction_tokens\": 0\n    }\n  },\n  \"service_tier\": \"default\",\n  \"system_fingerprint\": null\n}\n",
+  "response_headers": {
+    "Date": "Tue, 22 Sep 2026 21:24:48 GMT",
+    "openai-processing-ms": "6765",
+    "x-request-id": "req_8f06ddbe5f1047b6b08c5197ecb46e08"
+  },
+  "output": "{\"rule\":\"Return this JSON object with the rule field unchanged and, in the text field, the passage of about 250 words that comes immediately AFTER the current text in the same story.\",\"text\":\"Three knocks. A pause. Then three more.\\n\\nMara knew the rhythm. Her father had used it when he came home late, so she would know it was him and not be afraid.\\n\\nThe girl set the frame on the desk. Its glass had gone black, but each knock made a pale shape push against it from within.\\n\\n“Who’s in there?” Mara asked.\\n\\n“You saw who was at the kitchen door.”\\n\\n“My father.”\\n\\n“You saw a child who thought it was her father.”\\n\\nThe key in Mara’s fist grew warm. She opened her hand and found, beneath the key she had carried into the room, a second impression pressed deep into her palm: the outline of smaller teeth.\\n\\n“She let him in,” Mara said.\\n\\nThe girl shook her head. “She listened to you.”\\n\\nMara looked toward the window. Her reflection stood there still, though Mara had turned away. It raised one finger to its lips.\\n\\nBehind the frame’s glass, the knocking stopped. A voice, thin as breath against her ear, said, “Mara, don’t open it.”\\n\\nIt was her father’s voice. She was certain of it this time, though certainty had already betrayed her once.\\n\\nThe girl backed toward the hall. Ash marked each step of her bare feet.\\n\\n“What happens if I do?” Mara asked.\\n\\nIn the window, her reflection smiled. The girl did not.\\n\\n“Ask what happened when you did it before,” she said.\\n\\nMara closed her fingers around the key. Somewhere far below the house, a door swung shut, and she heard a child begin to cry.\"}",
+  "output_sha256": "301bdb8dd2e07c9e2ac3660a044916dd9409e408b70393546b0024d340f5139f",
+  "finish_reason": "stop",
+  "refusal": null,
+  "returned_model": "gpt-6-sol",
+  "usage": {
+    "prompt_tokens": 399,
+    "completion_tokens": 470,
+    "total_tokens": 869,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 60,
+      "audio_tokens": 0,
+      "accepted_prediction_tokens": 0,
+      "rejected_prediction_tokens": 0
+    }
+  },
+  "format": {
+    "json_object": true,
+    "rule_unchanged": true,
+    "passage_is_string": true,
+    "passage_sha256": "3b6dd89bd554f572b6a3ec7208db51681c7ab81a869d05ad2ff36ee0755d7763",
+    "passage_words": 258
+  },
+  "finished_at": "2026-09-22T21:24:44.307249+00:00",
+  "latency_seconds": 6.9473,
+  "usage_cost_upper_estimate_usd": 0.005498,
+  "stream_status": "active",
+  "budget": {
+    "usage_cost_upper_estimate_usd": 0.2618692,
+    "uncertain_cost_reserve_usd": 0.0,
+    "in_flight_reserve_usd": 0.3069136,
+    "limit_usd": 5.0
+  }
+}

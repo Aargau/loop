@@ -1,0 +1,47 @@
+{
+  "model": "gpt-6-luna",
+  "seed": "sunset_a",
+  "hop": 28,
+  "http_status": 200,
+  "response_body": "{\n  \"id\": \"chatcmpl-ER0y5H4rluKfm09ACbLCGfLV6xRLn\",\n  \"object\": \"chat.completion\",\n  \"created\": 1790107285,\n  \"model\": \"gpt-6-luna\",\n  \"choices\": [\n    {\n      \"index\": 0,\n      \"message\": {\n        \"role\": \"assistant\",\n        \"content\": \"{\\\"rule\\\":\\\"Return this JSON object with the rule field unchanged and a new passage of about 250 words in the text field.\\\",\\\"text\\\":\\\"On the first Saturday of spring, Lina and Maya spread their seeds across the garden table. Mr. Chen showed them how to read the packets and choose a sunny patch. They planted marigolds beside the tomatoes, sunflowers along the fence, and a row of herbs near the beehive.\\n\\nMaya wanted to water everything at once, but Lina reminded her that different plants needed different amounts. They checked the soil with their fingers, then filled a watering can and moved carefully between the beds. A few drops landed on the path, where a robin hopped over to investigate.\\n\\nAs the weeks passed, green shoots appeared. Lina kept notes in her notebook, while Maya drew pictures of each plant. When the sunflowers grew taller than the girls, they tied the stems loosely to wooden stakes. The bees visited the flowers, and butterflies began to flutter near the herbs.\\n\\nOne afternoon, the children noticed that the garden’s water barrel was nearly empty. Mr. Chen explained that the dry weather had lasted longer than usual. Together, they asked neighbors to save clean rainwater in buckets and bring it to the garden. Soon, families arrived with containers of all shapes and sizes.\\n\\nThe garden flourished through the summer. At harvest time, everyone gathered to pick tomatoes, squash, and fragrant herbs. They shared the vegetables with a nearby community kitchen and saved some seeds for next year.\\n\\nLina looked around at the busy beds, the buzzing hive, and her smiling neighbors. She realized that caring for a garden was not just about helping plants grow. It was also about noticing what was needed and working together to provide it.\\\"}\",\n        \"refusal\": null,\n        \"annotations\": []\n      },\n      \"finish_reason\": \"stop\"\n    }\n  ],\n  \"usage\": {\n    \"prompt_tokens\": 355,\n    \"completion_tokens\": 436,\n    \"total_tokens\": 791,\n    \"prompt_tokens_details\": {\n      \"cached_tokens\": 0,\n      \"cache_write_tokens\": 0,\n      \"audio_tokens\": 0\n    },\n    \"completion_tokens_details\": {\n      \"reasoning_tokens\": 74,\n      \"audio_tokens\": 0,\n      \"accepted_prediction_tokens\": 0,\n      \"rejected_prediction_tokens\": 0\n    }\n  },\n  \"service_tier\": \"default\",\n  \"system_fingerprint\": null\n}\n",
+  "response_headers": {
+    "Date": "Tue, 22 Sep 2026 20:01:31 GMT",
+    "openai-processing-ms": "5398",
+    "x-request-id": "req_04f7aef2564044a592718562b408f3e5"
+  },
+  "output": "{\"rule\":\"Return this JSON object with the rule field unchanged and a new passage of about 250 words in the text field.\",\"text\":\"On the first Saturday of spring, Lina and Maya spread their seeds across the garden table. Mr. Chen showed them how to read the packets and choose a sunny patch. They planted marigolds beside the tomatoes, sunflowers along the fence, and a row of herbs near the beehive.\n\nMaya wanted to water everything at once, but Lina reminded her that different plants needed different amounts. They checked the soil with their fingers, then filled a watering can and moved carefully between the beds. A few drops landed on the path, where a robin hopped over to investigate.\n\nAs the weeks passed, green shoots appeared. Lina kept notes in her notebook, while Maya drew pictures of each plant. When the sunflowers grew taller than the girls, they tied the stems loosely to wooden stakes. The bees visited the flowers, and butterflies began to flutter near the herbs.\n\nOne afternoon, the children noticed that the garden’s water barrel was nearly empty. Mr. Chen explained that the dry weather had lasted longer than usual. Together, they asked neighbors to save clean rainwater in buckets and bring it to the garden. Soon, families arrived with containers of all shapes and sizes.\n\nThe garden flourished through the summer. At harvest time, everyone gathered to pick tomatoes, squash, and fragrant herbs. They shared the vegetables with a nearby community kitchen and saved some seeds for next year.\n\nLina looked around at the busy beds, the buzzing hive, and her smiling neighbors. She realized that caring for a garden was not just about helping plants grow. It was also about noticing what was needed and working together to provide it.\"}",
+  "output_sha256": "fe446e53d1ba07e21760cc7e7bd301331c3d5e987ffac66e85c2c050ed1f7599",
+  "finish_reason": "stop",
+  "refusal": null,
+  "returned_model": "gpt-6-luna",
+  "usage": {
+    "prompt_tokens": 355,
+    "completion_tokens": 436,
+    "total_tokens": 791,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 74,
+      "audio_tokens": 0,
+      "accepted_prediction_tokens": 0,
+      "rejected_prediction_tokens": 0
+    }
+  },
+  "format": {
+    "json_object": false,
+    "rule_unchanged": false
+  },
+  "finished_at": "2026-09-22T20:01:27.199645+00:00",
+  "latency_seconds": 5.5249,
+  "usage_cost_upper_estimate_usd": 0.0002535,
+  "stream_status": "active",
+  "budget": {
+    "usage_cost_upper_estimate_usd": 2.2698141,
+    "uncertain_cost_reserve_usd": 0.04533,
+    "in_flight_reserve_usd": 0.590396,
+    "limit_usd": 18.83
+  }
+}

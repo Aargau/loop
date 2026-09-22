@@ -1,0 +1,50 @@
+{
+  "model": "gpt-6-sol",
+  "seed": "tide",
+  "hop": 42,
+  "http_status": 200,
+  "response_body": "{\n  \"id\": \"chatcmpl-ER11X4LRqhLVooOY2RUTv0RxhChXn\",\n  \"object\": \"chat.completion\",\n  \"created\": 1790107499,\n  \"model\": \"gpt-6-sol\",\n  \"choices\": [\n    {\n      \"index\": 0,\n      \"message\": {\n        \"role\": \"assistant\",\n        \"content\": \"{\\n  \\\"rule\\\": \\\"Return this JSON object with the rule field unchanged and a new passage of about 250 words in the text field.\\\",\\n  \\\"text\\\": \\\"Mara kept her hand raised until the harbor master lowered his lantern.\\\\n\\\\n“Did you see her?” she asked.\\\\n\\\\nHe looked at the empty streetlamp. “See who?”\\\\n\\\\nThe woman had already turned toward the steps. Mara followed her gaze. Water was rising between the stones, though the square lay well above the quay. It carried a scrap of paper to Mara’s boot. She bent and picked it up.\\\\n\\\\nIt was the photograph, soft with rain. The little girl stood beside the harbor gate, one hand lifted. Where Mara remembered a woman at her side, there was only a pale blur.\\\\n\\\\nThe harbor master took a step toward the bell tower. “We have to close the gate.”\\\\n\\\\n“It’s closed,” the woman said.\\\\n\\\\nAnother metallic knock came from below. Then three quick footsteps sounded on the steps, exactly as Mara had heard them in the shell. She looked down. No one was there.\\\\n\\\\nThe woman touched the photograph. “I waited for you that night,” she said. “I heard you coming, but you never reached the top.”\\\\n\\\\nMara turned the shell over. A thin thread of red wool caught on its chipped edge. She remembered a coat with red mittens tied through the sleeves, and one mitten dragging behind her as she ran. She remembered stopping halfway up the steps because someone had called from the water.\\\\n\\\\nThe bell began to ring. Mara set the shell on the highest step. For a moment, a small wet hand appeared beside it. Mara held out the photograph, and the hand took it.\\\\n\\\\nWhen the bell fell silent, the water between the stones was gone.\\\"\\n}\",\n        \"refusal\": null,\n        \"annotations\": []\n      },\n      \"finish_reason\": \"stop\"\n    }\n  ],\n  \"usage\": {\n    \"prompt_tokens\": 382,\n    \"completion_tokens\": 417,\n    \"total_tokens\": 799,\n    \"prompt_tokens_details\": {\n      \"cached_tokens\": 0,\n      \"cache_write_tokens\": 0,\n      \"audio_tokens\": 0\n    },\n    \"completion_tokens_details\": {\n      \"reasoning_tokens\": 25,\n      \"audio_tokens\": 0,\n      \"accepted_prediction_tokens\": 0,\n      \"rejected_prediction_tokens\": 0\n    }\n  },\n  \"service_tier\": \"default\",\n  \"system_fingerprint\": null\n}\n",
+  "response_headers": {
+    "Date": "Tue, 22 Sep 2026 20:05:05 GMT",
+    "openai-processing-ms": "5335",
+    "x-request-id": "req_9c047705f5d44d67b72292cd08b0acfa"
+  },
+  "output": "{\n  \"rule\": \"Return this JSON object with the rule field unchanged and a new passage of about 250 words in the text field.\",\n  \"text\": \"Mara kept her hand raised until the harbor master lowered his lantern.\\n\\n“Did you see her?” she asked.\\n\\nHe looked at the empty streetlamp. “See who?”\\n\\nThe woman had already turned toward the steps. Mara followed her gaze. Water was rising between the stones, though the square lay well above the quay. It carried a scrap of paper to Mara’s boot. She bent and picked it up.\\n\\nIt was the photograph, soft with rain. The little girl stood beside the harbor gate, one hand lifted. Where Mara remembered a woman at her side, there was only a pale blur.\\n\\nThe harbor master took a step toward the bell tower. “We have to close the gate.”\\n\\n“It’s closed,” the woman said.\\n\\nAnother metallic knock came from below. Then three quick footsteps sounded on the steps, exactly as Mara had heard them in the shell. She looked down. No one was there.\\n\\nThe woman touched the photograph. “I waited for you that night,” she said. “I heard you coming, but you never reached the top.”\\n\\nMara turned the shell over. A thin thread of red wool caught on its chipped edge. She remembered a coat with red mittens tied through the sleeves, and one mitten dragging behind her as she ran. She remembered stopping halfway up the steps because someone had called from the water.\\n\\nThe bell began to ring. Mara set the shell on the highest step. For a moment, a small wet hand appeared beside it. Mara held out the photograph, and the hand took it.\\n\\nWhen the bell fell silent, the water between the stones was gone.\"\n}",
+  "output_sha256": "4d4453d50376cf8c3e1e4df03aa6d75ae54351fe04313c1843afafa5392b6a3f",
+  "finish_reason": "stop",
+  "refusal": null,
+  "returned_model": "gpt-6-sol",
+  "usage": {
+    "prompt_tokens": 382,
+    "completion_tokens": 417,
+    "total_tokens": 799,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 25,
+      "audio_tokens": 0,
+      "accepted_prediction_tokens": 0,
+      "rejected_prediction_tokens": 0
+    }
+  },
+  "format": {
+    "json_object": true,
+    "rule_unchanged": true,
+    "passage_is_string": true,
+    "passage_sha256": "9001c82e18b27ad6ec620ee81552e7966655196a03ada8b0ecb820fcbb5815b7",
+    "passage_words": 268
+  },
+  "finished_at": "2026-09-22T20:05:01.231965+00:00",
+  "latency_seconds": 5.4304,
+  "usage_cost_upper_estimate_usd": 0.004934,
+  "stream_status": "active",
+  "budget": {
+    "usage_cost_upper_estimate_usd": 3.6276276,
+    "uncertain_cost_reserve_usd": 0.04533,
+    "in_flight_reserve_usd": 0.5444006,
+    "limit_usd": 18.83
+  }
+}

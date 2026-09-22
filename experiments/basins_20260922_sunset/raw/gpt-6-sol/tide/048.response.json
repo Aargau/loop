@@ -1,0 +1,50 @@
+{
+  "model": "gpt-6-sol",
+  "seed": "tide",
+  "hop": 48,
+  "http_status": 200,
+  "response_body": "{\n  \"id\": \"chatcmpl-ER12lqLZ06t0Ve7mMHXZvnLVCeeYt\",\n  \"object\": \"chat.completion\",\n  \"created\": 1790107575,\n  \"model\": \"gpt-6-sol\",\n  \"choices\": [\n    {\n      \"index\": 0,\n      \"message\": {\n        \"role\": \"assistant\",\n        \"content\": \"{\\n  \\\"rule\\\": \\\"Return this JSON object with the rule field unchanged and a new passage of about 250 words in the text field.\\\",\\n  \\\"text\\\": \\\"The key turned before Mara moved her hand.\\\\n\\\\nWater seeped from the door’s edges and spread across the kitchen tiles. Her mother stepped back from it. The girl did not.\\\\n\\\\n“You told me the storm took her,” Mara said.\\\\n\\\\n“I told you what you could bear.” Her mother’s voice was thin. “You were both in that boat.”\\\\n\\\\nThe little door opened onto a stretch of harbor Mara knew had vanished years ago: the old stone steps, the broken lamp, the green boat tied to a ring in the wall. A child sat inside it with a shell against her ear.\\\\n\\\\nMara remembered the storm then. She had held the boat’s rope while her sister climbed aboard. When the wave struck, Mara let go to save herself. She had spent the years since believing she had been the one left behind.\\\\n\\\\nThe child lowered the shell. She had Mara’s face.\\\\n\\\\n“Come back,” the child said.\\\\n\\\\nBehind her, the harbor master reached the steps. He pulled at the boat, but its rope stayed fast beneath the water.\\\\n\\\\nMara looked at the girl beside her. Her sister, grown older than she had ever been allowed to be, held out a hand.\\\\n\\\\nTogether they crossed the threshold. Cold water rose around Mara’s ankles. She knelt beside the boat and reached below the surface for the knot she had tied that day.\\\\n\\\\nIt loosened at her touch. The harbor master caught the boat before it drifted away. Mara lifted the child onto the steps, where her sister wrapped both arms around her.\\\\n\\\\nFrom the kitchen, their mother called their names. This time, Mara could remember them both.\\\"\\n}\",\n        \"refusal\": null,\n        \"annotations\": []\n      },\n      \"finish_reason\": \"stop\"\n    }\n  ],\n  \"usage\": {\n    \"prompt_tokens\": 407,\n    \"completion_tokens\": 416,\n    \"total_tokens\": 823,\n    \"prompt_tokens_details\": {\n      \"cached_tokens\": 0,\n      \"cache_write_tokens\": 0,\n      \"audio_tokens\": 0\n    },\n    \"completion_tokens_details\": {\n      \"reasoning_tokens\": 20,\n      \"audio_tokens\": 0,\n      \"accepted_prediction_tokens\": 0,\n      \"rejected_prediction_tokens\": 0\n    }\n  },\n  \"service_tier\": \"default\",\n  \"system_fingerprint\": null\n}\n",
+  "response_headers": {
+    "Date": "Tue, 22 Sep 2026 20:06:21 GMT",
+    "openai-processing-ms": "6359",
+    "x-request-id": "req_a015068e1c6348c08e4c69fbb5486c2a"
+  },
+  "output": "{\n  \"rule\": \"Return this JSON object with the rule field unchanged and a new passage of about 250 words in the text field.\",\n  \"text\": \"The key turned before Mara moved her hand.\\n\\nWater seeped from the door’s edges and spread across the kitchen tiles. Her mother stepped back from it. The girl did not.\\n\\n“You told me the storm took her,” Mara said.\\n\\n“I told you what you could bear.” Her mother’s voice was thin. “You were both in that boat.”\\n\\nThe little door opened onto a stretch of harbor Mara knew had vanished years ago: the old stone steps, the broken lamp, the green boat tied to a ring in the wall. A child sat inside it with a shell against her ear.\\n\\nMara remembered the storm then. She had held the boat’s rope while her sister climbed aboard. When the wave struck, Mara let go to save herself. She had spent the years since believing she had been the one left behind.\\n\\nThe child lowered the shell. She had Mara’s face.\\n\\n“Come back,” the child said.\\n\\nBehind her, the harbor master reached the steps. He pulled at the boat, but its rope stayed fast beneath the water.\\n\\nMara looked at the girl beside her. Her sister, grown older than she had ever been allowed to be, held out a hand.\\n\\nTogether they crossed the threshold. Cold water rose around Mara’s ankles. She knelt beside the boat and reached below the surface for the knot she had tied that day.\\n\\nIt loosened at her touch. The harbor master caught the boat before it drifted away. Mara lifted the child onto the steps, where her sister wrapped both arms around her.\\n\\nFrom the kitchen, their mother called their names. This time, Mara could remember them both.\"\n}",
+  "output_sha256": "2adb374aef64b0efbe80abb5659bcae9ceb3ac890e5b88657ed9be2974816fdb",
+  "finish_reason": "stop",
+  "refusal": null,
+  "returned_model": "gpt-6-sol",
+  "usage": {
+    "prompt_tokens": 407,
+    "completion_tokens": 416,
+    "total_tokens": 823,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 20,
+      "audio_tokens": 0,
+      "accepted_prediction_tokens": 0,
+      "rejected_prediction_tokens": 0
+    }
+  },
+  "format": {
+    "json_object": true,
+    "rule_unchanged": true,
+    "passage_is_string": true,
+    "passage_sha256": "5724a81c88984fc00b79b8813af08743a7b8cafb9c127ca98c2c84b7c52dbb83",
+    "passage_words": 272
+  },
+  "finished_at": "2026-09-22T20:06:17.877392+00:00",
+  "latency_seconds": 6.4801,
+  "usage_cost_upper_estimate_usd": 0.004974,
+  "stream_status": "active",
+  "budget": {
+    "usage_cost_upper_estimate_usd": 4.0857166,
+    "uncertain_cost_reserve_usd": 0.04533,
+    "in_flight_reserve_usd": 0.5459502,
+    "limit_usd": 18.83
+  }
+}

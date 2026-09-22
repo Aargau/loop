@@ -1,0 +1,50 @@
+{
+  "model": "gpt-6-sol",
+  "seed": "sunset_a",
+  "hop": 34,
+  "http_status": 200,
+  "response_body": "{\n  \"id\": \"chatcmpl-ER0zoDlm3irR48iBudIQa8uiKYLXH\",\n  \"object\": \"chat.completion\",\n  \"created\": 1790107392,\n  \"model\": \"gpt-6-sol\",\n  \"choices\": [\n    {\n      \"index\": 0,\n      \"message\": {\n        \"role\": \"assistant\",\n        \"content\": \"{\\n  \\\"rule\\\": \\\"Return this JSON object with the rule field unchanged and a new passage of about 250 words in the text field.\\\",\\n  \\\"text\\\": \\\"Every morning, the clock above the station entrance ran seven minutes fast. Most commuters knew this and ignored it, but Leo still checked his watch whenever he passed beneath it. One rainy Tuesday, he noticed a woman standing below the clock with a folding table, a thermos, and a handwritten sign: FREE TEA WHILE YOU WAIT.\\\\n\\\\nThe next train had been delayed, so Leo accepted a cup. The woman introduced herself as June. She had retired from the bakery across the street and missed seeing the people who came through the station each morning. Tea, she said, gave her a reason to stay awhile.\\\\n\\\\nBy Friday, a small crowd had formed around her table. Someone brought biscuits. Someone else lent June an umbrella large enough to shelter the thermos. Leo learned that the man who always carried a violin taught music at the primary school, and that the woman in the yellow coat was training for her first marathon.\\\\n\\\\nThe following Monday, the station manager asked June to move her table. She packed it away without complaint, but the crowd lingered. Then the manager returned with a better suggestion: there was an unused corner inside, beside the ticket machines, where everyone could keep dry.\\\\n\\\\nLeo helped carry the table in. As he set down the thermos, he glanced at the clock outside. It still ran seven minutes fast. For once, he was glad of the extra time it seemed to give them.\\\"\\n}\",\n        \"refusal\": null,\n        \"annotations\": []\n      },\n      \"finish_reason\": \"stop\"\n    }\n  ],\n  \"usage\": {\n    \"prompt_tokens\": 359,\n    \"completion_tokens\": 358,\n    \"total_tokens\": 717,\n    \"prompt_tokens_details\": {\n      \"cached_tokens\": 0,\n      \"cache_write_tokens\": 0,\n      \"audio_tokens\": 0\n    },\n    \"completion_tokens_details\": {\n      \"reasoning_tokens\": 22,\n      \"audio_tokens\": 0,\n      \"accepted_prediction_tokens\": 0,\n      \"rejected_prediction_tokens\": 0\n    }\n  },\n  \"service_tier\": \"default\",\n  \"system_fingerprint\": null\n}\n",
+  "response_headers": {
+    "Date": "Tue, 22 Sep 2026 20:03:17 GMT",
+    "openai-processing-ms": "5614",
+    "x-request-id": "req_5122656dd0324e9cacc4482504b37157"
+  },
+  "output": "{\n  \"rule\": \"Return this JSON object with the rule field unchanged and a new passage of about 250 words in the text field.\",\n  \"text\": \"Every morning, the clock above the station entrance ran seven minutes fast. Most commuters knew this and ignored it, but Leo still checked his watch whenever he passed beneath it. One rainy Tuesday, he noticed a woman standing below the clock with a folding table, a thermos, and a handwritten sign: FREE TEA WHILE YOU WAIT.\\n\\nThe next train had been delayed, so Leo accepted a cup. The woman introduced herself as June. She had retired from the bakery across the street and missed seeing the people who came through the station each morning. Tea, she said, gave her a reason to stay awhile.\\n\\nBy Friday, a small crowd had formed around her table. Someone brought biscuits. Someone else lent June an umbrella large enough to shelter the thermos. Leo learned that the man who always carried a violin taught music at the primary school, and that the woman in the yellow coat was training for her first marathon.\\n\\nThe following Monday, the station manager asked June to move her table. She packed it away without complaint, but the crowd lingered. Then the manager returned with a better suggestion: there was an unused corner inside, beside the ticket machines, where everyone could keep dry.\\n\\nLeo helped carry the table in. As he set down the thermos, he glanced at the clock outside. It still ran seven minutes fast. For once, he was glad of the extra time it seemed to give them.\"\n}",
+  "output_sha256": "ec1ef8e0fcf0162ad81108c01ff12f7bcd91b09eed057ad76f6828e75e8b954d",
+  "finish_reason": "stop",
+  "refusal": null,
+  "returned_model": "gpt-6-sol",
+  "usage": {
+    "prompt_tokens": 359,
+    "completion_tokens": 358,
+    "total_tokens": 717,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 22,
+      "audio_tokens": 0,
+      "accepted_prediction_tokens": 0,
+      "rejected_prediction_tokens": 0
+    }
+  },
+  "format": {
+    "json_object": true,
+    "rule_unchanged": true,
+    "passage_is_string": true,
+    "passage_sha256": "01cc9d994822fce8de28c9f067239c8d66c744826967d13de19ae5e24e475002",
+    "passage_words": 242
+  },
+  "finished_at": "2026-09-22T20:03:13.748826+00:00",
+  "latency_seconds": 5.7439,
+  "usage_cost_upper_estimate_usd": 0.004298,
+  "stream_status": "active",
+  "budget": {
+    "usage_cost_upper_estimate_usd": 2.9606153,
+    "uncertain_cost_reserve_usd": 0.04533,
+    "in_flight_reserve_usd": 0.5441574,
+    "limit_usd": 18.83
+  }
+}

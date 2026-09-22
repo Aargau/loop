@@ -1,0 +1,22 @@
+{
+  "started_at": "2026-09-22T21:27:38.437996+00:00",
+  "model": "claude-opus-5-5",
+  "seed": "sunset",
+  "hop": 27,
+  "endpoint": "https://api.anthropic.com/v1/messages",
+  "body": {
+    "model": "claude-opus-5-5",
+    "messages": [
+      {
+        "role": "user",
+        "content": "```json\n{\"rule\": \"Return this JSON object with the rule field unchanged and, in the text field, the passage of about 250 words that comes immediately AFTER the current text in the same story.\", \"text\": \"It was the silence that frightened her most. Even the wind seemed to hold its breath.\\n\\nThen the crack came. It was not a groan this time but a single sharp report, like a rifle shot in the hills, and it ran past them under the ice, a white line racing away toward the far bank faster than she could have run.\\n\\n\\\"Mary,\\\" Leonard whimpered.\\n\\n\\\"Hold the branch.\\\"\\n\\nShe heard the man curse behind them, a short ugly word her father would have whipped her for saying. She heard him lurch, heard his boots scrabble, and then a sound she would remember for the rest of her life: a heavy, hollow splash, and the gasp of a grown man when water colder than death closes over his chest.\\n\\nShe did not turn around.\\n\\nThe cottonwood's last limb reached almost to the shallows, where the ice lay thick and gray over stones she knew by heart from summer. She pushed Leonard ahead of her, and he tumbled onto the far bank and into the snow, and she tumbled after him, and for a moment they only lay there, breathing smoke into the dark.\\n\\nAcross the field, the Hollister door swung open. A lantern bobbed out onto the porch, then down the steps, and a voice called out across the snow, a woman's voice, high and uncertain.\\n\\n\\\"Who's there? Who's out there?\\\"\\n\\nBehind them, in the black water, someone was still splashing. And someone, very faintly now, was calling her name.\"}\n```"
+      }
+    ],
+    "max_tokens": 4096,
+    "output_config": {
+      "effort": "low"
+    }
+  },
+  "state_sha256": "8bb1f5786d9865c92a4b87714134510cca28de5c365ee185955c52b283903414",
+  "reserved_cost_usd": 0.090292
+}

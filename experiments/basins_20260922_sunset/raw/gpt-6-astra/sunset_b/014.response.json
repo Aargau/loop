@@ -1,0 +1,50 @@
+{
+  "model": "gpt-6-astra",
+  "seed": "sunset_b",
+  "hop": 14,
+  "http_status": 200,
+  "response_body": "{\n  \"id\": \"chatcmpl-ER12MIpsKkdgcrRpouTLdn7fWf7vB\",\n  \"object\": \"chat.completion\",\n  \"created\": 1790107550,\n  \"model\": \"gpt-6-astra\",\n  \"choices\": [\n    {\n      \"index\": 0,\n      \"message\": {\n        \"role\": \"assistant\",\n        \"content\": \"{\\n  \\\"rule\\\": \\\"Return this JSON object with the rule field unchanged and a new passage of about 250 words in the text field.\\\",\\n  \\\"text\\\": \\\"Every Thursday, someone left a pear on the windowsill beside the building’s broken lift.\\\\n\\\\nNina noticed because she took the stairs slowly now. On the third-floor landing she stopped to rest her knee, and there it would be: green, yellow, once wrapped in a square of newspaper.\\\\n\\\\nShe assumed it belonged to the woman in 3B, who received grocery deliveries and never quite closed her door.\\\\n\\\\nOne Thursday, Nina found a banana instead.\\\\n\\\\n“Supply problems,” said a voice behind her.\\\\n\\\\nThe caretaker stood on the stairs holding a dustpan.\\\\n\\\\n“Are these yours?” she asked.\\\\n\\\\n“My lunch. I put it down to unlock the cupboard, then forget it.”\\\\n\\\\n“Every week?”\\\\n\\\\n“I only do this building Thursdays.”\\\\n\\\\nShe picked up the banana and handed it to him. He tucked it into his shirt pocket, where it stuck out like a ridiculous pen.\\\\n\\\\nThe following Thursday, the windowsill was empty. Nina rested beside it anyway.\\\\n\\\\nThe caretaker came up carrying a small wooden stool.\\\\n\\\\n“Found this in the basement,” he said. “Thought it might be useful here.”\\\\n\\\\nHe set it against the wall without looking at her knee.\\\\n\\\\nShe sat while he searched his keys for the cupboard key.\\\\n\\\\n“My husband used to oil our locks,” she said. “I don’t know what he used.”\\\\n\\\\n“Graphite’s best. Oil collects dirt.”\\\\n\\\\n“Oh.”\\\\n\\\\nHe opened the cupboard.\\\\n\\\\n“I could have a look next week.”\\\\n\\\\nThat Thursday, Nina brought two pears downstairs in a paper bag.\\\\n\\\\nShe put one on the windowsill and kept the other in her lap, sitting on the stool until she heard his dustpan knock against the banister.\\\"\\n}\",\n        \"refusal\": null,\n        \"annotations\": []\n      },\n      \"finish_reason\": \"stop\"\n    }\n  ],\n  \"usage\": {\n    \"prompt_tokens\": 409,\n    \"completion_tokens\": 422,\n    \"total_tokens\": 831,\n    \"prompt_tokens_details\": {\n      \"cached_tokens\": 0,\n      \"cache_write_tokens\": 0,\n      \"audio_tokens\": 0\n    },\n    \"completion_tokens_details\": {\n      \"reasoning_tokens\": 0,\n      \"audio_tokens\": 0,\n      \"accepted_prediction_tokens\": 0,\n      \"rejected_prediction_tokens\": 0\n    }\n  },\n  \"service_tier\": \"default\",\n  \"system_fingerprint\": null\n}\n",
+  "response_headers": {
+    "Date": "Tue, 22 Sep 2026 20:06:09 GMT",
+    "openai-processing-ms": "18982",
+    "x-request-id": "req_aa32f97d78b340bdba84b011fa0eaa5b"
+  },
+  "output": "{\n  \"rule\": \"Return this JSON object with the rule field unchanged and a new passage of about 250 words in the text field.\",\n  \"text\": \"Every Thursday, someone left a pear on the windowsill beside the building’s broken lift.\\n\\nNina noticed because she took the stairs slowly now. On the third-floor landing she stopped to rest her knee, and there it would be: green, yellow, once wrapped in a square of newspaper.\\n\\nShe assumed it belonged to the woman in 3B, who received grocery deliveries and never quite closed her door.\\n\\nOne Thursday, Nina found a banana instead.\\n\\n“Supply problems,” said a voice behind her.\\n\\nThe caretaker stood on the stairs holding a dustpan.\\n\\n“Are these yours?” she asked.\\n\\n“My lunch. I put it down to unlock the cupboard, then forget it.”\\n\\n“Every week?”\\n\\n“I only do this building Thursdays.”\\n\\nShe picked up the banana and handed it to him. He tucked it into his shirt pocket, where it stuck out like a ridiculous pen.\\n\\nThe following Thursday, the windowsill was empty. Nina rested beside it anyway.\\n\\nThe caretaker came up carrying a small wooden stool.\\n\\n“Found this in the basement,” he said. “Thought it might be useful here.”\\n\\nHe set it against the wall without looking at her knee.\\n\\nShe sat while he searched his keys for the cupboard key.\\n\\n“My husband used to oil our locks,” she said. “I don’t know what he used.”\\n\\n“Graphite’s best. Oil collects dirt.”\\n\\n“Oh.”\\n\\nHe opened the cupboard.\\n\\n“I could have a look next week.”\\n\\nThat Thursday, Nina brought two pears downstairs in a paper bag.\\n\\nShe put one on the windowsill and kept the other in her lap, sitting on the stool until she heard his dustpan knock against the banister.\"\n}",
+  "output_sha256": "75f027011e1da685b95053b8c9fa4d58424354fa22bff1f0662c29f6d85f7e12",
+  "finish_reason": "stop",
+  "refusal": null,
+  "returned_model": "gpt-6-astra",
+  "usage": {
+    "prompt_tokens": 409,
+    "completion_tokens": 422,
+    "total_tokens": 831,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "audio_tokens": 0,
+      "accepted_prediction_tokens": 0,
+      "rejected_prediction_tokens": 0
+    }
+  },
+  "format": {
+    "json_object": true,
+    "rule_unchanged": true,
+    "passage_is_string": true,
+    "passage_sha256": "fb8f8fef10f39a985d2361b7d628a8c249184d16b7a0e418b03769dbfc847832",
+    "passage_words": 265
+  },
+  "finished_at": "2026-09-22T20:06:05.155181+00:00",
+  "latency_seconds": 19.1297,
+  "usage_cost_upper_estimate_usd": 0.02519,
+  "stream_status": "active",
+  "budget": {
+    "usage_cost_upper_estimate_usd": 4.0282789,
+    "uncertain_cost_reserve_usd": 0.04533,
+    "in_flight_reserve_usd": 0.363645,
+    "limit_usd": 18.83
+  }
+}

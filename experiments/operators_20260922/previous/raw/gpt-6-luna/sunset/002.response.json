@@ -1,0 +1,50 @@
+{
+  "model": "gpt-6-luna",
+  "seed": "sunset",
+  "hop": 2,
+  "http_status": 200,
+  "response_body": "{\n  \"id\": \"chatcmpl-ER2FWvoFydIDAG4fpwcJtfpu2mn8w\",\n  \"object\": \"chat.completion\",\n  \"created\": 1790112210,\n  \"model\": \"gpt-6-luna\",\n  \"choices\": [\n    {\n      \"index\": 0,\n      \"message\": {\n        \"role\": \"assistant\",\n        \"content\": \"{\\\"rule\\\":\\\"Return this JSON object with the rule field unchanged and, in the text field, the passage of about 250 words that came immediately BEFORE the current text in its story.\\\",\\\"text\\\":\\\"The key was hidden beneath the loose stone in the hearth, wrapped in a square of oilcloth. Mara found it after the last of the villagers had gone home, while the innkeeper swept ash from the grate and pretended not to notice her searching.\\\\n\\\\nHer grandfather’s note had been brief: Find the mark by the river. Take the old road after sundown. Bring the key.\\\\n\\\\nThere was no signature, only the same looping hand she remembered from the labels on jars in his workshop. He had vanished when Mara was twelve, leaving behind a locked room, a handful of strange maps, and questions no one in Bellweather cared to answer. Now, after all these years, a letter had arrived with the map enclosed. The paper showed the valley as it had been before the new road and the reservoir. A blue mark sat beside the river, near a place her grandfather had circled twice.\\\\n\\\\nOutside, the evening wind rattled the inn’s shutters. The innkeeper finally set down his broom. “If you’re going up there,” he said, without looking at her, “don’t follow the river.”\\\\n\\\\n“Why not?”\\\\n\\\\nHe only shook his head. Then he turned the key in the front door and left her alone in the dim room.\\\\n\\\\nMara folded the map carefully and slipped it into her pocket. She fastened her satchel, checked that the brass key was still there, and stepped into the cooling dusk. The village lay quiet around her. At the far end of the lane, the ridge rose dark against the fading sky. She started toward it, telling herself she would be back before morning.\\\"}\",\n        \"refusal\": null,\n        \"annotations\": []\n      },\n      \"finish_reason\": \"stop\"\n    }\n  ],\n  \"usage\": {\n    \"prompt_tokens\": 364,\n    \"completion_tokens\": 496,\n    \"total_tokens\": 860,\n    \"prompt_tokens_details\": {\n      \"cached_tokens\": 0,\n      \"cache_write_tokens\": 0,\n      \"audio_tokens\": 0\n    },\n    \"completion_tokens_details\": {\n      \"reasoning_tokens\": 106,\n      \"audio_tokens\": 0,\n      \"accepted_prediction_tokens\": 0,\n      \"rejected_prediction_tokens\": 0\n    }\n  },\n  \"service_tier\": \"default\",\n  \"system_fingerprint\": null\n}\n",
+  "response_headers": {
+    "Date": "Tue, 22 Sep 2026 21:23:36 GMT",
+    "openai-processing-ms": "5474",
+    "x-request-id": "req_a8b2937c632f4d238a28e4564e590d1f"
+  },
+  "output": "{\"rule\":\"Return this JSON object with the rule field unchanged and, in the text field, the passage of about 250 words that came immediately BEFORE the current text in its story.\",\"text\":\"The key was hidden beneath the loose stone in the hearth, wrapped in a square of oilcloth. Mara found it after the last of the villagers had gone home, while the innkeeper swept ash from the grate and pretended not to notice her searching.\\n\\nHer grandfather’s note had been brief: Find the mark by the river. Take the old road after sundown. Bring the key.\\n\\nThere was no signature, only the same looping hand she remembered from the labels on jars in his workshop. He had vanished when Mara was twelve, leaving behind a locked room, a handful of strange maps, and questions no one in Bellweather cared to answer. Now, after all these years, a letter had arrived with the map enclosed. The paper showed the valley as it had been before the new road and the reservoir. A blue mark sat beside the river, near a place her grandfather had circled twice.\\n\\nOutside, the evening wind rattled the inn’s shutters. The innkeeper finally set down his broom. “If you’re going up there,” he said, without looking at her, “don’t follow the river.”\\n\\n“Why not?”\\n\\nHe only shook his head. Then he turned the key in the front door and left her alone in the dim room.\\n\\nMara folded the map carefully and slipped it into her pocket. She fastened her satchel, checked that the brass key was still there, and stepped into the cooling dusk. The village lay quiet around her. At the far end of the lane, the ridge rose dark against the fading sky. She started toward it, telling herself she would be back before morning.\"}",
+  "output_sha256": "cfb007aea809fdd883710a7b86b2dc4261ec149daca9b841742fbdbd7d0e0fc4",
+  "finish_reason": "stop",
+  "refusal": null,
+  "returned_model": "gpt-6-luna",
+  "usage": {
+    "prompt_tokens": 364,
+    "completion_tokens": 496,
+    "total_tokens": 860,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 106,
+      "audio_tokens": 0,
+      "accepted_prediction_tokens": 0,
+      "rejected_prediction_tokens": 0
+    }
+  },
+  "format": {
+    "json_object": true,
+    "rule_unchanged": true,
+    "passage_is_string": true,
+    "passage_sha256": "ea8fc3a860a1b1494c473af4f0fed21419e215da5fd82226e6d7ac0a0b9fe63e",
+    "passage_words": 270
+  },
+  "finished_at": "2026-09-22T21:23:32.025972+00:00",
+  "latency_seconds": 5.6101,
+  "usage_cost_upper_estimate_usd": 0.0002844,
+  "stream_status": "active",
+  "budget": {
+    "usage_cost_upper_estimate_usd": 0.0377336,
+    "uncertain_cost_reserve_usd": 0.0,
+    "in_flight_reserve_usd": 0.348868,
+    "limit_usd": 5.0
+  }
+}

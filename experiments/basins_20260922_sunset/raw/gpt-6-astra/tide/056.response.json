@@ -1,0 +1,50 @@
+{
+  "model": "gpt-6-astra",
+  "seed": "tide",
+  "hop": 56,
+  "http_status": 200,
+  "response_body": "{\n  \"id\": \"chatcmpl-ER1bcOSVQrlOfKciLSXppmLKNyzf9\",\n  \"object\": \"chat.completion\",\n  \"created\": 1790109736,\n  \"model\": \"gpt-6-astra\",\n  \"choices\": [\n    {\n      \"index\": 0,\n      \"message\": {\n        \"role\": \"assistant\",\n        \"content\": \"{\\n  \\\"rule\\\": \\\"Return this JSON object with the rule field unchanged and a new passage of about 250 words in the text field.\\\",\\n  \\\"text\\\": \\\"The man behind the counter put my father's shoes on a sheet of newspaper.\\\\n\\\\n“He paid when he brought them in,” he said.\\\\n\\\\nI had found the ticket in a dish beside the telephone. Six weeks late, but the man hadn't mentioned that.\\\\n\\\\n“New soles,” he said. “The uppers are good.”\\\\n\\\\nI picked one up. There was a pale scrape near the toe where my father had caught it on his front step.\\\\n\\\\n“Do you want a bag?”\\\\n\\\\n“Yes, please.”\\\\n\\\\nWhile he looked under the counter, I watched a woman outside trying to fold a pushchair. A child stood beside her holding a bread roll in both hands.\\\\n\\\\n“He said he'd collect them Friday,” the man said.\\\\n\\\\n“He died on the Wednesday.”\\\\n\\\\nThe man stopped opening the bag.\\\\n\\\\n“I'm sorry.”\\\\n\\\\n“It was in April.”\\\\n\\\\nHe nodded and put the shoes inside, heels down.\\\\n\\\\nAt home I set them beside my own in the hallway. They were half a size bigger. My father had always bought the same pair, then complained when the price went up.\\\\n\\\\nI had been taking his things to the charity shop on my way to work. Shirts first, then books. The bags were easier if I tied them before breakfast.\\\\n\\\\nOn Sunday it rained. I needed milk and couldn't find my trainers.\\\\n\\\\nHis shoes slipped at the heel until I put on thicker socks.\\\\n\\\\nAt the corner shop, I wiped my feet twice on the mat. Walking back, I went round the puddle outside the chemist instead of through it.\\\\n\\\\nAt home I left them by the door.\\\"\\n}\",\n        \"refusal\": null,\n        \"annotations\": []\n      },\n      \"finish_reason\": \"stop\"\n    }\n  ],\n  \"usage\": {\n    \"prompt_tokens\": 409,\n    \"completion_tokens\": 394,\n    \"total_tokens\": 803,\n    \"prompt_tokens_details\": {\n      \"cached_tokens\": 0,\n      \"cache_write_tokens\": 0,\n      \"audio_tokens\": 0\n    },\n    \"completion_tokens_details\": {\n      \"reasoning_tokens\": 0,\n      \"audio_tokens\": 0,\n      \"accepted_prediction_tokens\": 0,\n      \"rejected_prediction_tokens\": 0\n    }\n  },\n  \"service_tier\": \"default\",\n  \"system_fingerprint\": null\n}\n",
+  "response_headers": {
+    "Date": "Tue, 22 Sep 2026 20:42:33 GMT",
+    "openai-processing-ms": "17439",
+    "x-request-id": "req_44d3f6e64ca44a7ba93c3f1633a8e375"
+  },
+  "output": "{\n  \"rule\": \"Return this JSON object with the rule field unchanged and a new passage of about 250 words in the text field.\",\n  \"text\": \"The man behind the counter put my father's shoes on a sheet of newspaper.\\n\\n“He paid when he brought them in,” he said.\\n\\nI had found the ticket in a dish beside the telephone. Six weeks late, but the man hadn't mentioned that.\\n\\n“New soles,” he said. “The uppers are good.”\\n\\nI picked one up. There was a pale scrape near the toe where my father had caught it on his front step.\\n\\n“Do you want a bag?”\\n\\n“Yes, please.”\\n\\nWhile he looked under the counter, I watched a woman outside trying to fold a pushchair. A child stood beside her holding a bread roll in both hands.\\n\\n“He said he'd collect them Friday,” the man said.\\n\\n“He died on the Wednesday.”\\n\\nThe man stopped opening the bag.\\n\\n“I'm sorry.”\\n\\n“It was in April.”\\n\\nHe nodded and put the shoes inside, heels down.\\n\\nAt home I set them beside my own in the hallway. They were half a size bigger. My father had always bought the same pair, then complained when the price went up.\\n\\nI had been taking his things to the charity shop on my way to work. Shirts first, then books. The bags were easier if I tied them before breakfast.\\n\\nOn Sunday it rained. I needed milk and couldn't find my trainers.\\n\\nHis shoes slipped at the heel until I put on thicker socks.\\n\\nAt the corner shop, I wiped my feet twice on the mat. Walking back, I went round the puddle outside the chemist instead of through it.\\n\\nAt home I left them by the door.\"\n}",
+  "output_sha256": "07a36b7e32cbabdb3ffcd4cf2d8924ca12092c5d7e2924d04e3a4eec1c4f95ee",
+  "finish_reason": "stop",
+  "refusal": null,
+  "returned_model": "gpt-6-astra",
+  "usage": {
+    "prompt_tokens": 409,
+    "completion_tokens": 394,
+    "total_tokens": 803,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "audio_tokens": 0,
+      "accepted_prediction_tokens": 0,
+      "rejected_prediction_tokens": 0
+    }
+  },
+  "format": {
+    "json_object": true,
+    "rule_unchanged": true,
+    "passage_is_string": true,
+    "passage_sha256": "3a5cd77317bcdec2014451c66a9320c743dd4fb656590402ea4675a8bca4670a",
+    "passage_words": 262
+  },
+  "finished_at": "2026-09-22T20:42:29.379530+00:00",
+  "latency_seconds": 17.6384,
+  "usage_cost_upper_estimate_usd": 0.02379,
+  "stream_status": "active",
+  "budget": {
+    "usage_cost_upper_estimate_usd": 13.2729477,
+    "uncertain_cost_reserve_usd": 0.04533,
+    "in_flight_reserve_usd": 0.0,
+    "limit_usd": 18.83
+  }
+}

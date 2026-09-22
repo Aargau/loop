@@ -1,0 +1,45 @@
+{
+  "model": "claude-fable-5-1",
+  "seed": "sunset_b",
+  "hop": 30,
+  "http_status": 200,
+  "response_body": "{\"model\":\"claude-fable-5-1\",\"id\":\"msg_011CfK6C3SBjU76PaH15cmUL\",\"type\":\"message\",\"role\":\"assistant\",\"content\":[{\"type\":\"text\",\"text\":\"{\\\"rule\\\": \\\"Return this JSON object with the rule field unchanged and a new passage of about 250 words in the text field.\\\", \\\"text\\\": \\\"The mill at Hollins Ford stopped turning the spring Agnes's mother was buried, and the same week the co-operative wrote to say flour would come by lorry now from the roller mill in town, bagged and stamped and cheaper by the hundredweight. Agnes read the letter at the kitchen table, then went out and oiled the gears as she had every Saturday she could remember.\\n\\nShe still opened the sluice at dawn. There was no grain to grind, but her hands knew the iron wheel better than they knew a pen, and the water did not seem to have heard that the wheel had been let go. She would stand in the meal loft as the light came up through the dust, and down the lane the lorry would pass with its engine coughing, and she would count the sacks on the flatbed the way her mother had taught her to count the turns.\\n\\nThe bakers said the town flour was whiter and never went weevily. She believed them. She still watched the carts come up from the farms of a morning, naming each by the sound of its axle, and once old Pruett left a sack of barley on the step without knocking, which was either loyalty or forgetfulness, and Agnes did not ask.\\n\\nWhat surprised her was how the river kept coming without needing her. She had thought herself the mill. Now she understood she had mostly been the one who let it through. The water had never required her hand on the sluice; it had required someone in the loft to believe each morning that the turning mattered.\\n\\nShe opened the gate again the next dawn.\\\"}\"}],\"container\":null,\"stop_reason\":\"end_turn\",\"stop_sequence\":null,\"stop_details\":null,\"usage\":{\"input_tokens\":522,\"cache_creation_input_tokens\":0,\"cache_read_input_tokens\":0,\"cache_creation\":{\"ephemeral_5m_input_tokens\":0,\"ephemeral_1h_input_tokens\":0},\"output_tokens\":502,\"output_tokens_details\":{\"thinking_tokens\":0},\"service_tier\":\"standard\",\"inference_geo\":\"global\"}}",
+  "response_headers": {
+    "Date": "Tue, 22 Sep 2026 20:14:22 GMT",
+    "request-id": "req_011CfK6C38KnFKx4hq8rFUAP"
+  },
+  "output": "{\"rule\": \"Return this JSON object with the rule field unchanged and a new passage of about 250 words in the text field.\", \"text\": \"The mill at Hollins Ford stopped turning the spring Agnes's mother was buried, and the same week the co-operative wrote to say flour would come by lorry now from the roller mill in town, bagged and stamped and cheaper by the hundredweight. Agnes read the letter at the kitchen table, then went out and oiled the gears as she had every Saturday she could remember.\n\nShe still opened the sluice at dawn. There was no grain to grind, but her hands knew the iron wheel better than they knew a pen, and the water did not seem to have heard that the wheel had been let go. She would stand in the meal loft as the light came up through the dust, and down the lane the lorry would pass with its engine coughing, and she would count the sacks on the flatbed the way her mother had taught her to count the turns.\n\nThe bakers said the town flour was whiter and never went weevily. She believed them. She still watched the carts come up from the farms of a morning, naming each by the sound of its axle, and once old Pruett left a sack of barley on the step without knocking, which was either loyalty or forgetfulness, and Agnes did not ask.\n\nWhat surprised her was how the river kept coming without needing her. She had thought herself the mill. Now she understood she had mostly been the one who let it through. The water had never required her hand on the sluice; it had required someone in the loft to believe each morning that the turning mattered.\n\nShe opened the gate again the next dawn.\"}",
+  "output_sha256": "8654697691afd8a8240715a2bb2cba7d7d3c6c2b9c694d9418e1c14aabb2db92",
+  "finish_reason": "end_turn",
+  "refusal": null,
+  "returned_model": "claude-fable-5-1",
+  "usage": {
+    "input_tokens": 522,
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 0,
+    "cache_creation": {
+      "ephemeral_5m_input_tokens": 0,
+      "ephemeral_1h_input_tokens": 0
+    },
+    "output_tokens": 502,
+    "output_tokens_details": {
+      "thinking_tokens": 0
+    },
+    "service_tier": "standard",
+    "inference_geo": "global"
+  },
+  "format": {
+    "json_object": false,
+    "rule_unchanged": false
+  },
+  "finished_at": "2026-09-22T20:14:18.069785+00:00",
+  "latency_seconds": 11.2925,
+  "usage_cost_upper_estimate_usd": 0.03032,
+  "stream_status": "active",
+  "budget": {
+    "usage_cost_upper_estimate_usd": 6.9019877,
+    "uncertain_cost_reserve_usd": 0.04533,
+    "in_flight_reserve_usd": 0.316638,
+    "limit_usd": 18.83
+  }
+}

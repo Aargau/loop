@@ -1,0 +1,48 @@
+{
+  "model": "claude-fable-5-1",
+  "seed": "tide",
+  "hop": 57,
+  "http_status": 200,
+  "response_body": "{\"model\":\"claude-fable-5-1\",\"id\":\"msg_011CfK7WWduXF3BRU8L5jtd7\",\"type\":\"message\",\"role\":\"assistant\",\"content\":[{\"type\":\"text\",\"text\":\"{\\\"rule\\\": \\\"Return this JSON object with the rule field unchanged and a new passage of about 250 words in the text field.\\\", \\\"text\\\": \\\"The kitchen still had the calendar from three years ago nailed by the door, turned to a month of someone else's birthdays. She did not take it down. She made coffee in the percolator because the electric one had died and he had never replaced it, and she stood at the window while it worked itself up to a boil.\\\\n\\\\nHe came in stamping mud off his boots and did not take them off.\\\\n\\\\n\\\\\\\"You could have called first,\\\\\\\" he said.\\\\n\\\\n\\\\\\\"I did call. Twice.\\\\\\\"\\\\n\\\\nHe went to the sink and ran water over his hands, which were shaking a little, and she watched him notice her watching and turn his back so she couldn't.\\\\n\\\\n\\\\\\\"Phone's in the barn.\\\\\\\"\\\\n\\\\n\\\\\\\"The phone's not in the barn.\\\\\\\"\\\\n\\\\n\\\\\\\"It was for a while.\\\\\\\"\\\\n\\\\nShe poured two cups and put one on the table in front of his chair, the one with the arm mended in wire, and sat down across from it. He stayed at the sink a while longer than the washing required.\\\\n\\\\n\\\\\\\"Doctor in town says you missed August,\\\\\\\" she said.\\\\n\\\\n\\\\\\\"Doctor in town says a lot of things.\\\\\\\"\\\\n\\\\n\\\\\\\"He called me, Dad.\\\\\\\"\\\\n\\\\nThat stopped him. He dried his hands slowly on the towel that had been hanging there since she was a girl, or one just like it, and then he came and sat, and lifted the cup, and set it down again without drinking.\\\\n\\\\n\\\\\\\"He had no business.\\\\\\\"\\\\n\\\\n\\\\\\\"No,\\\\\\\" she said. \\\\\\\"He didn't.\\\\\\\"\\\\n\\\\nOutside the dog barked once at nothing and gave up. The coffee steamed between them. Neither reached for it, and neither got up, and the calendar by the door went on saying it was a year that had already happened.\\\"}\"}],\"container\":null,\"stop_reason\":\"end_turn\",\"stop_sequence\":null,\"stop_details\":null,\"usage\":{\"input_tokens\":534,\"cache_creation_input_tokens\":0,\"cache_read_input_tokens\":0,\"cache_creation\":{\"ephemeral_5m_input_tokens\":0,\"ephemeral_1h_input_tokens\":0},\"output_tokens\":587,\"output_tokens_details\":{\"thinking_tokens\":0},\"service_tier\":\"standard\",\"inference_geo\":\"global\"}}",
+  "response_headers": {
+    "Date": "Tue, 22 Sep 2026 20:31:41 GMT",
+    "request-id": "req_011CfK7WWFqnoJKRMT2Zgyzf"
+  },
+  "output": "{\"rule\": \"Return this JSON object with the rule field unchanged and a new passage of about 250 words in the text field.\", \"text\": \"The kitchen still had the calendar from three years ago nailed by the door, turned to a month of someone else's birthdays. She did not take it down. She made coffee in the percolator because the electric one had died and he had never replaced it, and she stood at the window while it worked itself up to a boil.\\n\\nHe came in stamping mud off his boots and did not take them off.\\n\\n\\\"You could have called first,\\\" he said.\\n\\n\\\"I did call. Twice.\\\"\\n\\nHe went to the sink and ran water over his hands, which were shaking a little, and she watched him notice her watching and turn his back so she couldn't.\\n\\n\\\"Phone's in the barn.\\\"\\n\\n\\\"The phone's not in the barn.\\\"\\n\\n\\\"It was for a while.\\\"\\n\\nShe poured two cups and put one on the table in front of his chair, the one with the arm mended in wire, and sat down across from it. He stayed at the sink a while longer than the washing required.\\n\\n\\\"Doctor in town says you missed August,\\\" she said.\\n\\n\\\"Doctor in town says a lot of things.\\\"\\n\\n\\\"He called me, Dad.\\\"\\n\\nThat stopped him. He dried his hands slowly on the towel that had been hanging there since she was a girl, or one just like it, and then he came and sat, and lifted the cup, and set it down again without drinking.\\n\\n\\\"He had no business.\\\"\\n\\n\\\"No,\\\" she said. \\\"He didn't.\\\"\\n\\nOutside the dog barked once at nothing and gave up. The coffee steamed between them. Neither reached for it, and neither got up, and the calendar by the door went on saying it was a year that had already happened.\"}",
+  "output_sha256": "ae77d71a5d896fa2ef93c45672178cb04780fc178b0665bc28f5e409dfcdef25",
+  "finish_reason": "end_turn",
+  "refusal": null,
+  "returned_model": "claude-fable-5-1",
+  "usage": {
+    "input_tokens": 534,
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 0,
+    "cache_creation": {
+      "ephemeral_5m_input_tokens": 0,
+      "ephemeral_1h_input_tokens": 0
+    },
+    "output_tokens": 587,
+    "output_tokens_details": {
+      "thinking_tokens": 0
+    },
+    "service_tier": "standard",
+    "inference_geo": "global"
+  },
+  "format": {
+    "json_object": true,
+    "rule_unchanged": true,
+    "passage_is_string": true,
+    "passage_sha256": "fdb02e47c68bc56bb4f3255044fb0df8c16aebbaaff92a73931a5f76601fe296",
+    "passage_words": 284
+  },
+  "finished_at": "2026-09-22T20:31:37.067690+00:00",
+  "latency_seconds": 13.0378,
+  "usage_cost_upper_estimate_usd": 0.03469,
+  "stream_status": "active",
+  "budget": {
+    "usage_cost_upper_estimate_usd": 11.9560477,
+    "uncertain_cost_reserve_usd": 0.04533,
+    "in_flight_reserve_usd": 0.2277,
+    "limit_usd": 18.83
+  }
+}

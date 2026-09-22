@@ -1,0 +1,50 @@
+{
+  "model": "gpt-6-luna",
+  "seed": "sunset_b",
+  "hop": 5,
+  "http_status": 200,
+  "response_body": "{\n  \"id\": \"chatcmpl-ER0tCDm1WTExlLi9qjb1QiRYGmWT0\",\n  \"object\": \"chat.completion\",\n  \"created\": 1790106982,\n  \"model\": \"gpt-6-luna\",\n  \"choices\": [\n    {\n      \"index\": 0,\n      \"message\": {\n        \"role\": \"assistant\",\n        \"content\": \"{\\\"rule\\\":\\\"Return this JSON object with the rule field unchanged and a new passage of about 250 words in the text field.\\\",\\\"text\\\":\\\"On the hill above Marrow Bay stood a lighthouse with a green door. Every evening, its keeper, Tomas, lit the lamp and watched the boats return. Every evening, one window in the harbor stayed dark.\\\\n\\\\nIt belonged to the old ferry, which had vanished in a storm before Tomas was born. His grandmother insisted it still sailed somewhere beyond the fog, carrying people who had lost their way.\\\\n\\\\nOne night, a bell rang from the shore. Tomas hurried down and found a girl beside a rowboat. She held a lantern with no flame.\\\\n\\\\n“Can your light reach the ferry?” she asked. “My father is aboard.”\\\\n\\\\nTomas glanced at the lighthouse. Its beam swept across the bay, bright and steady, but the fog swallowed it before it reached the open water.\\\\n\\\\n“Not alone,” he said.\\\\n\\\\nHe carried the girl to the village and knocked on every door. Fishermen came with lamps; shopkeepers brought candles; even the baker arrived holding a glowing oven coal in a tin. Together they lined the harbor wall with lights.\\\\n\\\\nTomas climbed the tower and turned the great lens toward the sea. One by one, the small flames below answered its beam. The fog thinned. Far out on the water, a ferry appeared, its windows shining like stars.\\\\n\\\\nAt dawn, the girl’s father stepped onto the pier. He carried a salt-stiff coat and a story about a ship that had followed their lights home.\\\\n\\\\nAfter that, the villagers kept lamps ready each night. Tomas still tended the lighthouse, but he no longer watched the dark harbor alone.\\\"}\",\n        \"refusal\": null,\n        \"annotations\": []\n      },\n      \"finish_reason\": \"stop\"\n    }\n  ],\n  \"usage\": {\n    \"prompt_tokens\": 381,\n    \"completion_tokens\": 429,\n    \"total_tokens\": 810,\n    \"prompt_tokens_details\": {\n      \"cached_tokens\": 0,\n      \"cache_write_tokens\": 0,\n      \"audio_tokens\": 0\n    },\n    \"completion_tokens_details\": {\n      \"reasoning_tokens\": 56,\n      \"audio_tokens\": 0,\n      \"accepted_prediction_tokens\": 0,\n      \"rejected_prediction_tokens\": 0\n    }\n  },\n  \"service_tier\": \"default\",\n  \"system_fingerprint\": null\n}\n",
+  "response_headers": {
+    "Date": "Tue, 22 Sep 2026 19:56:27 GMT",
+    "openai-processing-ms": "4812",
+    "x-request-id": "req_f7fc85d78b89479181d4a00ec1f1fe3d"
+  },
+  "output": "{\"rule\":\"Return this JSON object with the rule field unchanged and a new passage of about 250 words in the text field.\",\"text\":\"On the hill above Marrow Bay stood a lighthouse with a green door. Every evening, its keeper, Tomas, lit the lamp and watched the boats return. Every evening, one window in the harbor stayed dark.\\n\\nIt belonged to the old ferry, which had vanished in a storm before Tomas was born. His grandmother insisted it still sailed somewhere beyond the fog, carrying people who had lost their way.\\n\\nOne night, a bell rang from the shore. Tomas hurried down and found a girl beside a rowboat. She held a lantern with no flame.\\n\\n“Can your light reach the ferry?” she asked. “My father is aboard.”\\n\\nTomas glanced at the lighthouse. Its beam swept across the bay, bright and steady, but the fog swallowed it before it reached the open water.\\n\\n“Not alone,” he said.\\n\\nHe carried the girl to the village and knocked on every door. Fishermen came with lamps; shopkeepers brought candles; even the baker arrived holding a glowing oven coal in a tin. Together they lined the harbor wall with lights.\\n\\nTomas climbed the tower and turned the great lens toward the sea. One by one, the small flames below answered its beam. The fog thinned. Far out on the water, a ferry appeared, its windows shining like stars.\\n\\nAt dawn, the girl’s father stepped onto the pier. He carried a salt-stiff coat and a story about a ship that had followed their lights home.\\n\\nAfter that, the villagers kept lamps ready each night. Tomas still tended the lighthouse, but he no longer watched the dark harbor alone.\"}",
+  "output_sha256": "441780808a2c25eb887f3eaf38ea6a8a391989229b0dfc8ba23d7e2222d6aac9",
+  "finish_reason": "stop",
+  "refusal": null,
+  "returned_model": "gpt-6-luna",
+  "usage": {
+    "prompt_tokens": 381,
+    "completion_tokens": 429,
+    "total_tokens": 810,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 56,
+      "audio_tokens": 0,
+      "accepted_prediction_tokens": 0,
+      "rejected_prediction_tokens": 0
+    }
+  },
+  "format": {
+    "json_object": true,
+    "rule_unchanged": true,
+    "passage_is_string": true,
+    "passage_sha256": "af730b39e4042ab1520a532b79eab085cbe5942b196fd551c6510fdabf2bae23",
+    "passage_words": 260
+  },
+  "finished_at": "2026-09-22T19:56:23.300870+00:00",
+  "latency_seconds": 5.025,
+  "usage_cost_upper_estimate_usd": 0.0002526,
+  "stream_status": "active",
+  "budget": {
+    "usage_cost_upper_estimate_usd": 0.3491636,
+    "uncertain_cost_reserve_usd": 0.0,
+    "in_flight_reserve_usd": 0.58791,
+    "limit_usd": 18.83
+  }
+}

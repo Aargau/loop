@@ -1,0 +1,22 @@
+{
+  "started_at": "2026-09-22T20:16:25.730143+00:00",
+  "model": "claude-opus-5-5",
+  "seed": "tide",
+  "hop": 45,
+  "endpoint": "https://api.anthropic.com/v1/messages",
+  "body": {
+    "model": "claude-opus-5-5",
+    "messages": [
+      {
+        "role": "user",
+        "content": "```json\n{\"rule\": \"Return this JSON object with the rule field unchanged and a new passage of about 250 words in the text field.\", \"text\": \"By September the leaves had begun to yellow from the bottom up, and the pods left on the vines turned leathery and grey, rattling faintly when the wind moved through them. The girl's mother said they should leave a few to dry, the way the old woman always had, so there would be seed for next year. The girl had not known that was how it worked. She had thought beans came from paper packets with pictures on the front. One Saturday, under a low white sky, they went out together with a basket and a pair of kitchen scissors. The pods snapped free easily now. Her brother held the basket and complained about the cold, but he did not go inside. At the kitchen table they split the pods with their thumbnails, and the beans tumbled out, mottled purple and black, glossy as river stones. The Painted Lady seeds were paler, speckled like a thrush's egg. The girl laid them in rows on a tea towel by the radiator and counted them twice. Her mother found an old biscuit tin in the back of the pantry, the lid painted with Highland cattle, and inside it, folded small, was a paper envelope in a hand they all recognised. Runners, it said, 1998, best yet. There were still six beans inside. Nobody spoke for a while. Then the girl tipped the new seeds in beside the old ones, closed the lid, and carried the tin up to her room, where she set it on the windowsill to wait for spring.\"}\n```"
+      }
+    ],
+    "max_tokens": 4096,
+    "output_config": {
+      "effort": "low"
+    }
+  },
+  "state_sha256": "254419567bf0349538db25fc58e49b99cd4dff6e12dc09b315ebc32063ab3861",
+  "reserved_cost_usd": 0.090048
+}

@@ -1,0 +1,50 @@
+{
+  "model": "gpt-6-luna",
+  "seed": "sunset_b",
+  "hop": 47,
+  "http_status": 200,
+  "response_body": "{\n  \"id\": \"chatcmpl-ER124QKWMbEEKoAT7PDgPCw8n7Q2Y\",\n  \"object\": \"chat.completion\",\n  \"created\": 1790107532,\n  \"model\": \"gpt-6-luna\",\n  \"choices\": [\n    {\n      \"index\": 0,\n      \"message\": {\n        \"role\": \"assistant\",\n        \"content\": \"{\\n  \\\"rule\\\": \\\"Return this JSON object with the rule field unchanged and a new passage of about 250 words in the text field.\\\",\\n  \\\"text\\\": \\\"The old man’s name was Peter Rusk. He held the candle high until his arm began to tremble, then lowered it carefully between them.\\\\n\\\\n“That light was Tomas’s signal,” he said. “We made it together from a boat lantern. He was going to meet me beyond the point that night. We planned to leave the village and find work upriver.”\\\\n\\\\nMara glanced at Elian. “But the storm came.”\\\\n\\\\nPeter nodded. “I saw the sail turn back. I heard the bell, but by the time I reached the shore, there was nothing.” He paused, watching the distant glow. “I told myself he’d chosen to go without me. It was easier than believing I’d failed to reach him.”\\\\n\\\\n“Jonas found the boat,” Mara said. “He wanted the village to remember what happened.”\\\\n\\\\nPeter’s face tightened. “Jonas came to me, too. He asked me to speak at the gathering. I said no. I thought the truth would only open old wounds.”\\\\n\\\\nThe light across the water flickered once, then steadied. Peter took a breath and turned toward the village. Its windows were bright now, and people had begun to gather near the harbor bell.\\\\n\\\\n“Perhaps wounds don’t close when we bury the story,” he said.\\\\n\\\\nHe walked with them through the lanes, carrying his candle. At the harbor, Ada waited beside the bell, her notebook tucked under one arm. When Peter arrived, she opened it to Tomas’s name.\\\\n\\\\nTogether, they told the village about the boat, the storm, and the promise that had outlasted them both. No one hurried to fill the silence afterward.\\\\n\\\\nThen someone rang the bell once, gently. Across the dark water, the answering light shone on.\\\"\\n}\",\n        \"refusal\": null,\n        \"annotations\": []\n      },\n      \"finish_reason\": \"stop\"\n    }\n  ],\n  \"usage\": {\n    \"prompt_tokens\": 408,\n    \"completion_tokens\": 480,\n    \"total_tokens\": 888,\n    \"prompt_tokens_details\": {\n      \"cached_tokens\": 0,\n      \"cache_write_tokens\": 0,\n      \"audio_tokens\": 0\n    },\n    \"completion_tokens_details\": {\n      \"reasoning_tokens\": 56,\n      \"audio_tokens\": 0,\n      \"accepted_prediction_tokens\": 0,\n      \"rejected_prediction_tokens\": 0\n    }\n  },\n  \"service_tier\": \"default\",\n  \"system_fingerprint\": null\n}\n",
+  "response_headers": {
+    "Date": "Tue, 22 Sep 2026 20:05:37 GMT",
+    "openai-processing-ms": "5796",
+    "x-request-id": "req_1f6c2bf1f6444db2bf29d670cea14843"
+  },
+  "output": "{\n  \"rule\": \"Return this JSON object with the rule field unchanged and a new passage of about 250 words in the text field.\",\n  \"text\": \"The old man’s name was Peter Rusk. He held the candle high until his arm began to tremble, then lowered it carefully between them.\\n\\n“That light was Tomas’s signal,” he said. “We made it together from a boat lantern. He was going to meet me beyond the point that night. We planned to leave the village and find work upriver.”\\n\\nMara glanced at Elian. “But the storm came.”\\n\\nPeter nodded. “I saw the sail turn back. I heard the bell, but by the time I reached the shore, there was nothing.” He paused, watching the distant glow. “I told myself he’d chosen to go without me. It was easier than believing I’d failed to reach him.”\\n\\n“Jonas found the boat,” Mara said. “He wanted the village to remember what happened.”\\n\\nPeter’s face tightened. “Jonas came to me, too. He asked me to speak at the gathering. I said no. I thought the truth would only open old wounds.”\\n\\nThe light across the water flickered once, then steadied. Peter took a breath and turned toward the village. Its windows were bright now, and people had begun to gather near the harbor bell.\\n\\n“Perhaps wounds don’t close when we bury the story,” he said.\\n\\nHe walked with them through the lanes, carrying his candle. At the harbor, Ada waited beside the bell, her notebook tucked under one arm. When Peter arrived, she opened it to Tomas’s name.\\n\\nTogether, they told the village about the boat, the storm, and the promise that had outlasted them both. No one hurried to fill the silence afterward.\\n\\nThen someone rang the bell once, gently. Across the dark water, the answering light shone on.\"\n}",
+  "output_sha256": "300b7a6f3630a67a8d6257dfad43c994df7a7020f980c23f707614a1487bdbde",
+  "finish_reason": "stop",
+  "refusal": null,
+  "returned_model": "gpt-6-luna",
+  "usage": {
+    "prompt_tokens": 408,
+    "completion_tokens": 480,
+    "total_tokens": 888,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 56,
+      "audio_tokens": 0,
+      "accepted_prediction_tokens": 0,
+      "rejected_prediction_tokens": 0
+    }
+  },
+  "format": {
+    "json_object": true,
+    "rule_unchanged": true,
+    "passage_is_string": true,
+    "passage_sha256": "0e6e4b2b0da4391515d7b3a37bee90c032ea837325a4e11538f058ddaaad9c06",
+    "passage_words": 277
+  },
+  "finished_at": "2026-09-22T20:05:33.864233+00:00",
+  "latency_seconds": 5.9621,
+  "usage_cost_upper_estimate_usd": 0.0002808,
+  "stream_status": "active",
+  "budget": {
+    "usage_cost_upper_estimate_usd": 3.8457061,
+    "uncertain_cost_reserve_usd": 0.04533,
+    "in_flight_reserve_usd": 0.58699,
+    "limit_usd": 18.83
+  }
+}

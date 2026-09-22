@@ -1,0 +1,50 @@
+{
+  "model": "gpt-6-sol",
+  "seed": "tide",
+  "hop": 1,
+  "http_status": 200,
+  "response_body": "{\n  \"id\": \"chatcmpl-ER0sMul9MXZpsaOP60Y0R9iJWMJxM\",\n  \"object\": \"chat.completion\",\n  \"created\": 1790106930,\n  \"model\": \"gpt-6-sol\",\n  \"choices\": [\n    {\n      \"index\": 0,\n      \"message\": {\n        \"role\": \"assistant\",\n        \"content\": \"{\\n  \\\"rule\\\": \\\"Return this JSON object with the rule field unchanged and a new passage of about 250 words in the text field.\\\",\\n  \\\"text\\\": \\\"The tide came in an hour early. Mara noticed because the water reached the third step of the harbor stairs while the church clock was still striking four. She had spent forty years watching that staircase disappear and return, and the sea had always kept its appointments.\\\\n\\\\nShe closed her bait shop and walked toward the breakwater. Gulls circled above the fishing boats, which rocked against their ropes. Beyond them, the horizon had gone strangely flat. There was no storm cloud, no wind strong enough to trouble her coat. Only the water moved, slipping over the lowest stones and into the street.\\\\n\\\\nAt the pier, young Daniel was hauling in his nets. Mara called for him to leave them. He glanced at the clock, then at the water, and dropped the line.\\\\n\\\\nThey went door to door along the waterfront. Most people followed them uphill. A few stopped to gather photographs or look for a missing cat. By the time everyone reached the square, seawater was running past the shop windows, carrying a crate of oranges and a red plastic chair.\\\\n\\\\nMara sat on the church steps beside Daniel and counted the boats. She could see all six, their bows lifting as the water rose. Then the harbor bell rang once, though no one was near it.\\\\n\\\\nThe water stayed in the streets until after dark. When it finally receded, Mara went down with a torch to check the shop. A line of salt marked the counter. Her clock had stopped at four, and someone had left a wet orange on the doorstep.\\\"\\n}\",\n        \"refusal\": null,\n        \"annotations\": []\n      },\n      \"finish_reason\": \"stop\"\n    }\n  ],\n  \"usage\": {\n    \"prompt_tokens\": 46,\n    \"completion_tokens\": 381,\n    \"total_tokens\": 427,\n    \"prompt_tokens_details\": {\n      \"cached_tokens\": 0,\n      \"cache_write_tokens\": 0,\n      \"audio_tokens\": 0\n    },\n    \"completion_tokens_details\": {\n      \"reasoning_tokens\": 22,\n      \"audio_tokens\": 0,\n      \"accepted_prediction_tokens\": 0,\n      \"rejected_prediction_tokens\": 0\n    }\n  },\n  \"service_tier\": \"default\",\n  \"system_fingerprint\": null\n}\n",
+  "response_headers": {
+    "Date": "Tue, 22 Sep 2026 19:55:36 GMT",
+    "openai-processing-ms": "5969",
+    "x-request-id": "req_b9298d04f58d4f9d88ecef4072826a93"
+  },
+  "output": "{\n  \"rule\": \"Return this JSON object with the rule field unchanged and a new passage of about 250 words in the text field.\",\n  \"text\": \"The tide came in an hour early. Mara noticed because the water reached the third step of the harbor stairs while the church clock was still striking four. She had spent forty years watching that staircase disappear and return, and the sea had always kept its appointments.\\n\\nShe closed her bait shop and walked toward the breakwater. Gulls circled above the fishing boats, which rocked against their ropes. Beyond them, the horizon had gone strangely flat. There was no storm cloud, no wind strong enough to trouble her coat. Only the water moved, slipping over the lowest stones and into the street.\\n\\nAt the pier, young Daniel was hauling in his nets. Mara called for him to leave them. He glanced at the clock, then at the water, and dropped the line.\\n\\nThey went door to door along the waterfront. Most people followed them uphill. A few stopped to gather photographs or look for a missing cat. By the time everyone reached the square, seawater was running past the shop windows, carrying a crate of oranges and a red plastic chair.\\n\\nMara sat on the church steps beside Daniel and counted the boats. She could see all six, their bows lifting as the water rose. Then the harbor bell rang once, though no one was near it.\\n\\nThe water stayed in the streets until after dark. When it finally receded, Mara went down with a torch to check the shop. A line of salt marked the counter. Her clock had stopped at four, and someone had left a wet orange on the doorstep.\"\n}",
+  "output_sha256": "41a3c8f6db8f96b6c16ace24e1832a23e1da976e49b5de109b15bd8b08f17f3b",
+  "finish_reason": "stop",
+  "refusal": null,
+  "returned_model": "gpt-6-sol",
+  "usage": {
+    "prompt_tokens": 46,
+    "completion_tokens": 381,
+    "total_tokens": 427,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 22,
+      "audio_tokens": 0,
+      "accepted_prediction_tokens": 0,
+      "rejected_prediction_tokens": 0
+    }
+  },
+  "format": {
+    "json_object": true,
+    "rule_unchanged": true,
+    "passage_is_string": true,
+    "passage_sha256": "fac326346e828d5af7fc1f38548dac0112d4d5095d4bf2cb9d1123382cbfb8d3",
+    "passage_words": 263
+  },
+  "finished_at": "2026-09-22T19:55:32.726773+00:00",
+  "latency_seconds": 6.083,
+  "usage_cost_upper_estimate_usd": 0.003902,
+  "stream_status": "active",
+  "budget": {
+    "usage_cost_upper_estimate_usd": 0.0816903,
+    "uncertain_cost_reserve_usd": 0.0,
+    "in_flight_reserve_usd": 0.5101223,
+    "limit_usd": 18.83
+  }
+}

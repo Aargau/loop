@@ -1,0 +1,22 @@
+{
+  "started_at": "2026-09-22T20:01:08.923998+00:00",
+  "model": "claude-opus-5-5",
+  "seed": "tide",
+  "hop": 13,
+  "endpoint": "https://api.anthropic.com/v1/messages",
+  "body": {
+    "model": "claude-opus-5-5",
+    "messages": [
+      {
+        "role": "user",
+        "content": "```json\n{\"rule\": \"Return this JSON object with the rule field unchanged and a new passage of about 250 words in the text field.\", \"text\": \"The seeds were slow to wake. For three weeks the girl checked the hollow every morning before her lessons, kneeling on the cold rock to search the dark soil for any sign of green. Her father pretended not to watch her from the tower window, but she saw the curtain twitch each time she bent over the rows. Then, on a gray morning when the fog hung so thick she could barely see the shore, she found it: a pale thread of stem, bent like a question, pushing up through the seaweed crust. By the end of the week there were eleven. By the end of the month, nineteen. The plum stones never came up, and the girl mourned them quietly, but the apples rose in a crooked line and the pears followed after. When the first storm of summer rolled in from the west, her father carried planks down from the shed and built a low fence around the hollow, lashing the boards together with rope that had once held the supply boat to the jetty. The girl helped him drive the stakes. The wind howled all night and the waves broke white against the cliffs, and she lay awake listening, certain that the seedlings would be torn away. In the morning they were bent flat, their small leaves pressed against the earth. But by noon, warmed by a thin sun, they had begun to lift themselves again. Her father stood at the fence with his hands in his pockets. She thought, for a moment, that he was smiling.\"}\n```"
+      }
+    ],
+    "max_tokens": 4096,
+    "output_config": {
+      "effort": "low"
+    }
+  },
+  "state_sha256": "8f0ba331ec28f9f57c387fdd78835cc62ea2c52bf5d09dfebd51ecb60f19df66",
+  "reserved_cost_usd": 0.09006
+}

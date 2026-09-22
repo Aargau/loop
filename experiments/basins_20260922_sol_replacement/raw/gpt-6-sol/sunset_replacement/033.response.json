@@ -1,0 +1,50 @@
+{
+  "model": "gpt-6-sol",
+  "seed": "sunset_replacement",
+  "hop": 33,
+  "http_status": 200,
+  "response_body": "{\n  \"id\": \"chatcmpl-ER1jfd5LvhmrZLhn9o7tCjXJwCCx1\",\n  \"object\": \"chat.completion\",\n  \"created\": 1790110235,\n  \"model\": \"gpt-6-sol\",\n  \"choices\": [\n    {\n      \"index\": 0,\n      \"message\": {\n        \"role\": \"assistant\",\n        \"content\": \"{\\n  \\\"rule\\\": \\\"Return this JSON object with the rule field unchanged and a new passage of about 250 words in the text field.\\\",\\n  \\\"text\\\": \\\"The match burned down to the constable’s fingers. He dropped it into a pool, where it hissed and went out.\\\\n\\\\n“Which door?” Elias asked.\\\\n\\\\nNo one answered. Ada held the ledger open while Mara found another match. The ink had soaked through the page. On the reverse, the letters were backward, but the words were the same.\\\\n\\\\nFrom behind the sealed wall came three knocks. Venn’s usual signal: two quick, one slow. Mara pressed her ear to the stone.\\\\n\\\\n“Venn?”\\\\n\\\\nA fourth knock followed, so faint she might have imagined it.\\\\n\\\\nAda turned toward the breathing. It had stopped. She took one step, and water rippled around her boot. In the wavering matchlight, a door appeared at the end of the passage. It was narrow and painted the yellow of the cellar door upstairs.\\\\n\\\\nElias stared at it. “That wasn’t there.”\\\\n\\\\nThe constable walked past them. His left heel struck stone with a familiar uneven tap. At the door he raised his hand, then looked back at Ada.\\\\n\\\\n“I still don’t remember coming here,” he said.\\\\n\\\\nThe latch lifted on its own. He stepped away.\\\\n\\\\nThrough the gap Ada saw the cellar, its shelves and overturned chair. Venn stood beside the opening in the wall, one hand flat against it. He saw her and began to shout, but she could hear nothing he said.\\\\n\\\\nThen he looked down. Something on the other side had taken hold of his wrist.\\\\n\\\\nThe ledger jerked in Ada’s hands. A second line pressed up through the paper, letter by letter: DO NOT LET HIM.\\\"\\n}\",\n        \"refusal\": null,\n        \"annotations\": []\n      },\n      \"finish_reason\": \"stop\"\n    }\n  ],\n  \"usage\": {\n    \"prompt_tokens\": 398,\n    \"completion_tokens\": 423,\n    \"total_tokens\": 821,\n    \"prompt_tokens_details\": {\n      \"cached_tokens\": 0,\n      \"cache_write_tokens\": 0,\n      \"audio_tokens\": 0\n    },\n    \"completion_tokens_details\": {\n      \"reasoning_tokens\": 24,\n      \"audio_tokens\": 0,\n      \"accepted_prediction_tokens\": 0,\n      \"rejected_prediction_tokens\": 0\n    }\n  },\n  \"service_tier\": \"default\",\n  \"system_fingerprint\": null\n}\n",
+  "response_headers": {
+    "Date": "Tue, 22 Sep 2026 20:50:41 GMT",
+    "openai-processing-ms": "6109",
+    "x-request-id": "req_bcfddd1674e44aa8853e49781445dee3"
+  },
+  "output": "{\n  \"rule\": \"Return this JSON object with the rule field unchanged and a new passage of about 250 words in the text field.\",\n  \"text\": \"The match burned down to the constable’s fingers. He dropped it into a pool, where it hissed and went out.\\n\\n“Which door?” Elias asked.\\n\\nNo one answered. Ada held the ledger open while Mara found another match. The ink had soaked through the page. On the reverse, the letters were backward, but the words were the same.\\n\\nFrom behind the sealed wall came three knocks. Venn’s usual signal: two quick, one slow. Mara pressed her ear to the stone.\\n\\n“Venn?”\\n\\nA fourth knock followed, so faint she might have imagined it.\\n\\nAda turned toward the breathing. It had stopped. She took one step, and water rippled around her boot. In the wavering matchlight, a door appeared at the end of the passage. It was narrow and painted the yellow of the cellar door upstairs.\\n\\nElias stared at it. “That wasn’t there.”\\n\\nThe constable walked past them. His left heel struck stone with a familiar uneven tap. At the door he raised his hand, then looked back at Ada.\\n\\n“I still don’t remember coming here,” he said.\\n\\nThe latch lifted on its own. He stepped away.\\n\\nThrough the gap Ada saw the cellar, its shelves and overturned chair. Venn stood beside the opening in the wall, one hand flat against it. He saw her and began to shout, but she could hear nothing he said.\\n\\nThen he looked down. Something on the other side had taken hold of his wrist.\\n\\nThe ledger jerked in Ada’s hands. A second line pressed up through the paper, letter by letter: DO NOT LET HIM.\"\n}",
+  "output_sha256": "b1b1944b6469b6ae90c6ce4e3272eaf7746c71211ab5531fc8bc116633161b6c",
+  "finish_reason": "stop",
+  "refusal": null,
+  "returned_model": "gpt-6-sol",
+  "usage": {
+    "prompt_tokens": 398,
+    "completion_tokens": 423,
+    "total_tokens": 821,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 24,
+      "audio_tokens": 0,
+      "accepted_prediction_tokens": 0,
+      "rejected_prediction_tokens": 0
+    }
+  },
+  "format": {
+    "json_object": true,
+    "rule_unchanged": true,
+    "passage_is_string": true,
+    "passage_sha256": "47b9f70fffe1d7762d639aec87f6787df87864f54f7fc3e562bd97f93bd5b998",
+    "passage_words": 260
+  },
+  "finished_at": "2026-09-22T20:50:37.478836+00:00",
+  "latency_seconds": 6.288,
+  "usage_cost_upper_estimate_usd": 0.005026,
+  "stream_status": "active",
+  "budget": {
+    "usage_cost_upper_estimate_usd": 0.164076,
+    "uncertain_cost_reserve_usd": 0.0,
+    "in_flight_reserve_usd": 0.0,
+    "limit_usd": 3.0
+  }
+}

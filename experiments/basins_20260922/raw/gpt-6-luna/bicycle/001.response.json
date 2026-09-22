@@ -1,0 +1,47 @@
+{
+  "model": "gpt-6-luna",
+  "seed": "bicycle",
+  "hop": 1,
+  "http_status": 200,
+  "response_body": "{\n  \"id\": \"chatcmpl-ER0oCDv3hFVBlGByhZP4Ig74o2KQN\",\n  \"object\": \"chat.completion\",\n  \"created\": 1790106672,\n  \"model\": \"gpt-6-luna\",\n  \"choices\": [\n    {\n      \"index\": 0,\n      \"message\": {\n        \"role\": \"assistant\",\n        \"content\": \"{\\\"rule\\\":\\\"Return this JSON object with the rule field unchanged and a new passage of about 250 words in the text field.\\\",\\\"text\\\":\\\"The red bicycle was missing its front wheel. Mara found it leaning against the wall behind the old train station, its handlebars turned toward the weeds and its bell dulled by rain. A strip of blue ribbon was knotted around the seat post. She recognized it as the ribbon her brother Eli had tied there the summer he disappeared.\\n\\nFor three years, the bicycle had been locked in their family’s shed. Their father insisted Eli had taken it on the night he left town, though Mara knew he never rode without checking the tires first. Now the bike stood outside the station, clean and freshly oiled, as if someone had carefully carried it through the storm.\\n\\nA folded note was tucked beneath the saddle. Mara opened it with trembling hands.\\n\\n“Platform four. Before the last train.”\\n\\nThe station clock showed eleven forty. The final train was due in twenty minutes. She ran inside, pushing through the quiet waiting room and past the shuttered ticket counter. On platform four, a figure stood beneath the yellow lamp, holding a bicycle wheel.\\n\\nEli looked older, thinner, and more uncertain than she remembered. For a moment, neither of them spoke. Then he lifted the wheel.\\n\\n“I thought you might still know how to fix it,” he said.\\n\\nMara wanted to ask where he had been, why he had waited so long, and whether he planned to leave again. Instead, she took the wheel from him and knelt beside the bicycle.\\n\\nThe train’s lights appeared around the bend. Eli reached for the handlebars, and Mara let him help. Together, they fitted the wheel into place. When the bell rang softly, they both laughed—not because anything was settled, but because, for the first time in years, they were standing on the same side of the road.\\\"}\",\n        \"refusal\": null,\n        \"annotations\": []\n      },\n      \"finish_reason\": \"stop\"\n    }\n  ],\n  \"usage\": {\n    \"prompt_tokens\": 47,\n    \"completion_tokens\": 429,\n    \"total_tokens\": 476,\n    \"prompt_tokens_details\": {\n      \"cached_tokens\": 0,\n      \"cache_write_tokens\": 0,\n      \"audio_tokens\": 0\n    },\n    \"completion_tokens_details\": {\n      \"reasoning_tokens\": 34,\n      \"audio_tokens\": 0,\n      \"accepted_prediction_tokens\": 0,\n      \"rejected_prediction_tokens\": 0\n    }\n  },\n  \"service_tier\": \"default\",\n  \"system_fingerprint\": null\n}\n",
+  "response_headers": {
+    "Date": "Tue, 22 Sep 2026 19:51:16 GMT",
+    "openai-processing-ms": "4836",
+    "x-request-id": "req_a881f73cea5e49328af08c815ff1da5d"
+  },
+  "output": "{\"rule\":\"Return this JSON object with the rule field unchanged and a new passage of about 250 words in the text field.\",\"text\":\"The red bicycle was missing its front wheel. Mara found it leaning against the wall behind the old train station, its handlebars turned toward the weeds and its bell dulled by rain. A strip of blue ribbon was knotted around the seat post. She recognized it as the ribbon her brother Eli had tied there the summer he disappeared.\n\nFor three years, the bicycle had been locked in their family’s shed. Their father insisted Eli had taken it on the night he left town, though Mara knew he never rode without checking the tires first. Now the bike stood outside the station, clean and freshly oiled, as if someone had carefully carried it through the storm.\n\nA folded note was tucked beneath the saddle. Mara opened it with trembling hands.\n\n“Platform four. Before the last train.”\n\nThe station clock showed eleven forty. The final train was due in twenty minutes. She ran inside, pushing through the quiet waiting room and past the shuttered ticket counter. On platform four, a figure stood beneath the yellow lamp, holding a bicycle wheel.\n\nEli looked older, thinner, and more uncertain than she remembered. For a moment, neither of them spoke. Then he lifted the wheel.\n\n“I thought you might still know how to fix it,” he said.\n\nMara wanted to ask where he had been, why he had waited so long, and whether he planned to leave again. Instead, she took the wheel from him and knelt beside the bicycle.\n\nThe train’s lights appeared around the bend. Eli reached for the handlebars, and Mara let him help. Together, they fitted the wheel into place. When the bell rang softly, they both laughed—not because anything was settled, but because, for the first time in years, they were standing on the same side of the road.\"}",
+  "output_sha256": "2c59a577eab04a9c40ad95858079cfb7fab50a077989ef7dcc5d31c24f84142a",
+  "finish_reason": "stop",
+  "refusal": null,
+  "returned_model": "gpt-6-luna",
+  "usage": {
+    "prompt_tokens": 47,
+    "completion_tokens": 429,
+    "total_tokens": 476,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 34,
+      "audio_tokens": 0,
+      "accepted_prediction_tokens": 0,
+      "rejected_prediction_tokens": 0
+    }
+  },
+  "format": {
+    "json_object": false,
+    "rule_unchanged": false
+  },
+  "finished_at": "2026-09-22T19:51:12.841112+00:00",
+  "latency_seconds": 4.9592,
+  "usage_cost_upper_estimate_usd": 0.0002192,
+  "stream_status": "active",
+  "budget": {
+    "usage_cost_upper_estimate_usd": 0.0664054,
+    "uncertain_cost_reserve_usd": 0.0,
+    "in_flight_reserve_usd": 0.550082,
+    "limit_usd": 20
+  }
+}

@@ -1,0 +1,50 @@
+{
+  "model": "gpt-6-luna",
+  "seed": "sunset_b",
+  "hop": 60,
+  "http_status": 200,
+  "response_body": "{\n  \"id\": \"chatcmpl-ER152bTzlp5b7kiGdr8LpUjfp8u5M\",\n  \"object\": \"chat.completion\",\n  \"created\": 1790107716,\n  \"model\": \"gpt-6-luna\",\n  \"choices\": [\n    {\n      \"index\": 0,\n      \"message\": {\n        \"role\": \"assistant\",\n        \"content\": \"{\\n  \\\"rule\\\": \\\"Return this JSON object with the rule field unchanged and a new passage of about 250 words in the text field.\\\",\\n  \\\"text\\\": \\\"The bell’s note trembled through the stone, then faded. For a moment, none of them moved.\\\\n\\\\nA narrow seam appeared in the far wall. Blue light spilled through it, outlining a door that had not been there before. Peter lifted the lantern. Its flame leaned toward the opening, though no breeze stirred.\\\\n\\\\n“Is that the way out?” Elian asked.\\\\n\\\\n“Maybe,” Ada said. “Or maybe it wants us to think so.”\\\\n\\\\nPeter looked down at the music box. The carved bird seemed almost alive in the wavering light, its beak tilted toward the hidden door. He remembered his mother’s hands guiding his over the tiny brass key, teaching him how to wind the box without breaking its spring.\\\\n\\\\nA second bell rang, louder than the first.\\\\n\\\\nThe door swung inward.\\\\n\\\\nBeyond it lay a hallway lined with mirrors. In each one, Peter saw the three of them from a different angle: Ada with a crown of thorny branches, Elian carrying an empty map, himself alone beneath a dark sky. Their reflections did not move when they did.\\\\n\\\\n“Keep your eyes on the floor,” Ada warned.\\\\n\\\\nThey stepped through. The lantern’s glow dwindled, leaving only a thin blue path across the stones. Behind them, the door began to close.\\\\n\\\\nPeter heard his mother’s lullaby again—not from the music box, but from somewhere ahead. This time the melody was broken, each note separated by a long, uncertain silence.\\\\n\\\\nHe stopped.\\\\n\\\\n“That isn’t the tune I sang,” he said.\\\\n\\\\n“No,” Ada replied, gripping his sleeve. “So don’t answer it.”\\\\n\\\\nTogether, they followed the blue path deeper into the hall.\\\"\\n}\",\n        \"refusal\": null,\n        \"annotations\": []\n      },\n      \"finish_reason\": \"stop\"\n    }\n  ],\n  \"usage\": {\n    \"prompt_tokens\": 427,\n    \"completion_tokens\": 465,\n    \"total_tokens\": 892,\n    \"prompt_tokens_details\": {\n      \"cached_tokens\": 0,\n      \"cache_write_tokens\": 0,\n      \"audio_tokens\": 0\n    },\n    \"completion_tokens_details\": {\n      \"reasoning_tokens\": 55,\n      \"audio_tokens\": 0,\n      \"accepted_prediction_tokens\": 0,\n      \"rejected_prediction_tokens\": 0\n    }\n  },\n  \"service_tier\": \"default\",\n  \"system_fingerprint\": null\n}\n",
+  "response_headers": {
+    "Date": "Tue, 22 Sep 2026 20:08:41 GMT",
+    "openai-processing-ms": "4871",
+    "x-request-id": "req_dd2c7ca6fa174a2d93f5a5a6a0c47a24"
+  },
+  "output": "{\n  \"rule\": \"Return this JSON object with the rule field unchanged and a new passage of about 250 words in the text field.\",\n  \"text\": \"The bell’s note trembled through the stone, then faded. For a moment, none of them moved.\\n\\nA narrow seam appeared in the far wall. Blue light spilled through it, outlining a door that had not been there before. Peter lifted the lantern. Its flame leaned toward the opening, though no breeze stirred.\\n\\n“Is that the way out?” Elian asked.\\n\\n“Maybe,” Ada said. “Or maybe it wants us to think so.”\\n\\nPeter looked down at the music box. The carved bird seemed almost alive in the wavering light, its beak tilted toward the hidden door. He remembered his mother’s hands guiding his over the tiny brass key, teaching him how to wind the box without breaking its spring.\\n\\nA second bell rang, louder than the first.\\n\\nThe door swung inward.\\n\\nBeyond it lay a hallway lined with mirrors. In each one, Peter saw the three of them from a different angle: Ada with a crown of thorny branches, Elian carrying an empty map, himself alone beneath a dark sky. Their reflections did not move when they did.\\n\\n“Keep your eyes on the floor,” Ada warned.\\n\\nThey stepped through. The lantern’s glow dwindled, leaving only a thin blue path across the stones. Behind them, the door began to close.\\n\\nPeter heard his mother’s lullaby again—not from the music box, but from somewhere ahead. This time the melody was broken, each note separated by a long, uncertain silence.\\n\\nHe stopped.\\n\\n“That isn’t the tune I sang,” he said.\\n\\n“No,” Ada replied, gripping his sleeve. “So don’t answer it.”\\n\\nTogether, they followed the blue path deeper into the hall.\"\n}",
+  "output_sha256": "08744ac9e376c9c995e0fcacd8c6b5cabcd7caf55f86abc973055664f71181c8",
+  "finish_reason": "stop",
+  "refusal": null,
+  "returned_model": "gpt-6-luna",
+  "usage": {
+    "prompt_tokens": 427,
+    "completion_tokens": 465,
+    "total_tokens": 892,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 55,
+      "audio_tokens": 0,
+      "accepted_prediction_tokens": 0,
+      "rejected_prediction_tokens": 0
+    }
+  },
+  "format": {
+    "json_object": true,
+    "rule_unchanged": true,
+    "passage_is_string": true,
+    "passage_sha256": "8aebde68793a6790fceb29df941fd033438f9989388fa8f2feeb9e9c0fa72b04",
+    "passage_words": 265
+  },
+  "finished_at": "2026-09-22T20:08:37.575936+00:00",
+  "latency_seconds": 4.9673,
+  "usage_cost_upper_estimate_usd": 0.00027519999999999997,
+  "stream_status": "active",
+  "budget": {
+    "usage_cost_upper_estimate_usd": 4.9702273,
+    "uncertain_cost_reserve_usd": 0.04533,
+    "in_flight_reserve_usd": 0.588616,
+    "limit_usd": 18.83
+  }
+}

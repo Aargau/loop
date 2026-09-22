@@ -1,0 +1,50 @@
+{
+  "model": "gpt-6-sol",
+  "seed": "sunset_replacement",
+  "hop": 43,
+  "http_status": 200,
+  "response_body": "{\n  \"id\": \"chatcmpl-ER1klgMTBLDoy7EMUqgF1fU8FoSn2\",\n  \"object\": \"chat.completion\",\n  \"created\": 1790110303,\n  \"model\": \"gpt-6-sol\",\n  \"choices\": [\n    {\n      \"index\": 0,\n      \"message\": {\n        \"role\": \"assistant\",\n        \"content\": \"{\\n  \\\"rule\\\": \\\"Return this JSON object with the rule field unchanged and a new passage of about 250 words in the text field.\\\",\\n  \\\"text\\\": \\\"Ada caught the constable’s coat before he could put his foot down.\\\\n\\\\nThe five marks waited on the stair between them. Then a sixth appeared, higher up.\\\\n\\\\n“Back,” she whispered.\\\\n\\\\n“There’s no room.”\\\\n\\\\nAbove them, the street door stood open. Rain fell beyond it, silver in the lamplight. Elias was already on the landing, but he did not cross the threshold. He was staring at the brass plate screwed to the doorframe.\\\\n\\\\n“There wasn’t a name there before,” he said.\\\\n\\\\nAda looked up. The plate read MARA, its letters dark with age.\\\\n\\\\nFrom below came the sound of metal turning against stone. Her ring. The marks climbed another stair.\\\\n\\\\nVenn raised the poker. “I can hold it off.”\\\\n\\\\n“You can’t hit a mark,” Ada said.\\\\n\\\\n“I can hit the stair.”\\\\n\\\\nHe brought the poker down. The wood split, and a cold draught rushed through the crack. For an instant Ada saw a tiny hand gripping the underside of the tread. It let go.\\\\n\\\\nEvery mark vanished.\\\\n\\\\nThe constable lunged for the street door. Elias seized his collar and hauled him back as the brass plate swung inward, opening like a little gate. Behind it was darkness, deep enough to swallow the lamplight.\\\\n\\\\nA voice from the cellar spoke Ada’s name. It sounded exactly like Mara.\\\\n\\\\nAda closed her eyes. She remembered Mara standing in the rain, years ago, refusing to come inside.\\\\n\\\\n“She never called me that,” Ada said.\\\\n\\\\nThe darkness behind the plate drew a sharp breath. Elias pulled the street door shut. In the sudden quiet, someone knocked five times from the other side.\\\"\\n}\",\n        \"refusal\": null,\n        \"annotations\": []\n      },\n      \"finish_reason\": \"stop\"\n    }\n  ],\n  \"usage\": {\n    \"prompt_tokens\": 390,\n    \"completion_tokens\": 441,\n    \"total_tokens\": 831,\n    \"prompt_tokens_details\": {\n      \"cached_tokens\": 0,\n      \"cache_write_tokens\": 0,\n      \"audio_tokens\": 0\n    },\n    \"completion_tokens_details\": {\n      \"reasoning_tokens\": 26,\n      \"audio_tokens\": 0,\n      \"accepted_prediction_tokens\": 0,\n      \"rejected_prediction_tokens\": 0\n    }\n  },\n  \"service_tier\": \"default\",\n  \"system_fingerprint\": null\n}\n",
+  "response_headers": {
+    "Date": "Tue, 22 Sep 2026 20:51:50 GMT",
+    "openai-processing-ms": "7105",
+    "x-request-id": "req_b533882cf5d04df1a3f33db76eb6da00"
+  },
+  "output": "{\n  \"rule\": \"Return this JSON object with the rule field unchanged and a new passage of about 250 words in the text field.\",\n  \"text\": \"Ada caught the constable’s coat before he could put his foot down.\\n\\nThe five marks waited on the stair between them. Then a sixth appeared, higher up.\\n\\n“Back,” she whispered.\\n\\n“There’s no room.”\\n\\nAbove them, the street door stood open. Rain fell beyond it, silver in the lamplight. Elias was already on the landing, but he did not cross the threshold. He was staring at the brass plate screwed to the doorframe.\\n\\n“There wasn’t a name there before,” he said.\\n\\nAda looked up. The plate read MARA, its letters dark with age.\\n\\nFrom below came the sound of metal turning against stone. Her ring. The marks climbed another stair.\\n\\nVenn raised the poker. “I can hold it off.”\\n\\n“You can’t hit a mark,” Ada said.\\n\\n“I can hit the stair.”\\n\\nHe brought the poker down. The wood split, and a cold draught rushed through the crack. For an instant Ada saw a tiny hand gripping the underside of the tread. It let go.\\n\\nEvery mark vanished.\\n\\nThe constable lunged for the street door. Elias seized his collar and hauled him back as the brass plate swung inward, opening like a little gate. Behind it was darkness, deep enough to swallow the lamplight.\\n\\nA voice from the cellar spoke Ada’s name. It sounded exactly like Mara.\\n\\nAda closed her eyes. She remembered Mara standing in the rain, years ago, refusing to come inside.\\n\\n“She never called me that,” Ada said.\\n\\nThe darkness behind the plate drew a sharp breath. Elias pulled the street door shut. In the sudden quiet, someone knocked five times from the other side.\"\n}",
+  "output_sha256": "76de6f07785b9bc9349ae290ce48df9096431b6cabf5eddcfd411568a2ea5af4",
+  "finish_reason": "stop",
+  "refusal": null,
+  "returned_model": "gpt-6-sol",
+  "usage": {
+    "prompt_tokens": 390,
+    "completion_tokens": 441,
+    "total_tokens": 831,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 26,
+      "audio_tokens": 0,
+      "accepted_prediction_tokens": 0,
+      "rejected_prediction_tokens": 0
+    }
+  },
+  "format": {
+    "json_object": true,
+    "rule_unchanged": true,
+    "passage_is_string": true,
+    "passage_sha256": "9f117126c29879ee67bbdbd2aa98ecd4ea46f80cc5d8051b8f046344e14a2019",
+    "passage_words": 266
+  },
+  "finished_at": "2026-09-22T20:51:46.063905+00:00",
+  "latency_seconds": 7.2511,
+  "usage_cost_upper_estimate_usd": 0.00519,
+  "stream_status": "active",
+  "budget": {
+    "usage_cost_upper_estimate_usd": 0.215562,
+    "uncertain_cost_reserve_usd": 0.0,
+    "in_flight_reserve_usd": 0.0,
+    "limit_usd": 3.0
+  }
+}

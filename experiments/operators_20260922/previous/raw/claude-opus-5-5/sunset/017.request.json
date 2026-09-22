@@ -1,0 +1,22 @@
+{
+  "started_at": "2026-09-22T21:24:35.734779+00:00",
+  "model": "claude-opus-5-5",
+  "seed": "sunset",
+  "hop": 17,
+  "endpoint": "https://api.anthropic.com/v1/messages",
+  "body": {
+    "model": "claude-opus-5-5",
+    "messages": [
+      {
+        "role": "user",
+        "content": "The message you sent reads like an AI assistant's reply, and it says *I* pasted something to *you*. But this is the start of our conversation, and I haven't sent anything before this.\n\nSo it looks like the loop continued one more step: a reply about a copy-paste mix-up got copy-pasted.\n\nNo problem either way. What would you like to do?\n\n- **Paste what you meant to send**, if your clipboard grabbed the wrong thing\n- **Ask a question or start a task**\n- **Explore the loop**, if you're curious how assistants handle messages that sound like they came from an assistant (it's an interesting quirk of how these conversations work)"
+      }
+    ],
+    "max_tokens": 4096,
+    "output_config": {
+      "effort": "low"
+    }
+  },
+  "state_sha256": "cbc6b61e9291f866cfb65e2e5bc531a5a171afa92e462e454e1c3167b99ded0d",
+  "reserved_cost_usd": 0.086488
+}

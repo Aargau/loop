@@ -1,0 +1,48 @@
+{
+  "model": "claude-fable-5-1",
+  "seed": "sunset_a",
+  "hop": 20,
+  "http_status": 200,
+  "response_body": "{\"model\":\"claude-fable-5-1\",\"id\":\"msg_011CfK5gr1nMT1PA78stTepu\",\"type\":\"message\",\"role\":\"assistant\",\"content\":[{\"type\":\"text\",\"text\":\"{\\\"rule\\\": \\\"Return this JSON object with the rule field unchanged and a new passage of about 250 words in the text field.\\\", \\\"text\\\": \\\"The door opened inward on a breath of air that was not stale. That was the first wrong thing. Eleven years of a locked room should have smelled of dust and mouse and forgotten damp, and instead it smelled faintly of coffee, of soap, of a window recently shut.\\\\n\\\\nThe room was small and square and lived in. A cot along the far wall, blanket folded with a neatness that felt like an apology. A table under the sloped ceiling with a candle stub, a saucer of pins, a stack of paper cut to the same size as the letters. A chair pushed back at an angle, as though someone had stood up quickly and not sat down again.\\\\n\\\\nAnd on the floorboards, running in a thin bright line from the table to the far wall, a strip of light. She followed it with her eyes to a knot in the wood where the light came through, and beneath it, worn pale by years of a body lying pressed close, a shallow hollow the shape of a shoulder and a cheek.\\\\n\\\\nShe knelt. She put her eye to the knothole.\\\\n\\\\nBelow her was the back room of the shop, her lamp still burning on the shelf where she left it every night, the counter, the door she locked, the stool where she sat to mend the account books. Everything she did alone. Everything she had believed no one saw.\\\\n\\\\nBehind her, on the stairs, a board took a weight and held its breath.\\\\n\\\\nInes did not turn around. She said, quietly, to the floor, \\\\\\\"You can come in. It's your room.\\\\\\\"\\\"}\"}],\"container\":null,\"stop_reason\":\"end_turn\",\"stop_sequence\":null,\"stop_details\":null,\"usage\":{\"input_tokens\":507,\"cache_creation_input_tokens\":0,\"cache_read_input_tokens\":0,\"cache_creation\":{\"ephemeral_5m_input_tokens\":0,\"ephemeral_1h_input_tokens\":0},\"output_tokens\":517,\"output_tokens_details\":{\"thinking_tokens\":0},\"service_tier\":\"standard\",\"inference_geo\":\"global\"}}",
+  "response_headers": {
+    "Date": "Tue, 22 Sep 2026 20:07:46 GMT",
+    "request-id": "req_011CfK5gqjQsw2AcnfhvC9hY"
+  },
+  "output": "{\"rule\": \"Return this JSON object with the rule field unchanged and a new passage of about 250 words in the text field.\", \"text\": \"The door opened inward on a breath of air that was not stale. That was the first wrong thing. Eleven years of a locked room should have smelled of dust and mouse and forgotten damp, and instead it smelled faintly of coffee, of soap, of a window recently shut.\\n\\nThe room was small and square and lived in. A cot along the far wall, blanket folded with a neatness that felt like an apology. A table under the sloped ceiling with a candle stub, a saucer of pins, a stack of paper cut to the same size as the letters. A chair pushed back at an angle, as though someone had stood up quickly and not sat down again.\\n\\nAnd on the floorboards, running in a thin bright line from the table to the far wall, a strip of light. She followed it with her eyes to a knot in the wood where the light came through, and beneath it, worn pale by years of a body lying pressed close, a shallow hollow the shape of a shoulder and a cheek.\\n\\nShe knelt. She put her eye to the knothole.\\n\\nBelow her was the back room of the shop, her lamp still burning on the shelf where she left it every night, the counter, the door she locked, the stool where she sat to mend the account books. Everything she did alone. Everything she had believed no one saw.\\n\\nBehind her, on the stairs, a board took a weight and held its breath.\\n\\nInes did not turn around. She said, quietly, to the floor, \\\"You can come in. It's your room.\\\"\"}",
+  "output_sha256": "126a0b40e1c466f08db289d3bb89dedad675417e6956342485b3a957c327fe02",
+  "finish_reason": "end_turn",
+  "refusal": null,
+  "returned_model": "claude-fable-5-1",
+  "usage": {
+    "input_tokens": 507,
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 0,
+    "cache_creation": {
+      "ephemeral_5m_input_tokens": 0,
+      "ephemeral_1h_input_tokens": 0
+    },
+    "output_tokens": 517,
+    "output_tokens_details": {
+      "thinking_tokens": 0
+    },
+    "service_tier": "standard",
+    "inference_geo": "global"
+  },
+  "format": {
+    "json_object": true,
+    "rule_unchanged": true,
+    "passage_is_string": true,
+    "passage_sha256": "4f59324d961b68344626e56acae356756c6d0db441e4fa1fc54f993f8cead9a1",
+    "passage_words": 271
+  },
+  "finished_at": "2026-09-22T20:07:42.901374+00:00",
+  "latency_seconds": 12.1674,
+  "usage_cost_upper_estimate_usd": 0.03092,
+  "stream_status": "active",
+  "budget": {
+    "usage_cost_upper_estimate_usd": 4.645022,
+    "uncertain_cost_reserve_usd": 0.04533,
+    "in_flight_reserve_usd": 0.3648925,
+    "limit_usd": 18.83
+  }
+}

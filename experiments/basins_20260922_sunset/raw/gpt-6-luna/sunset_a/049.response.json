@@ -1,0 +1,50 @@
+{
+  "model": "gpt-6-luna",
+  "seed": "sunset_a",
+  "hop": 49,
+  "http_status": 200,
+  "response_body": "{\n  \"id\": \"chatcmpl-ER12UkIXOwmUinYx5gbCHvNxwwoBI\",\n  \"object\": \"chat.completion\",\n  \"created\": 1790107558,\n  \"model\": \"gpt-6-luna\",\n  \"choices\": [\n    {\n      \"index\": 0,\n      \"message\": {\n        \"role\": \"assistant\",\n        \"content\": \"{\\\"rule\\\":\\\"Return this JSON object with the rule field unchanged and a new passage of about 250 words in the text field.\\\",\\\"text\\\":\\\"On the first morning of spring, Lina found a brass key in the garden behind her grandmother’s house. It lay beneath a patch of violets, bright against the dark soil. A paper tag was tied to its ring, but the writing had faded until only one word remained: “upstairs.”\\\\n\\\\nLina carried the key inside. Her grandmother looked at it for a long moment, then laughed softly. “I wondered when that would turn up,” she said. She led Lina to the narrow staircase and stopped before a little door tucked under the roof. Lina had passed it countless times, assuming it was only a cupboard.\\\\n\\\\nThe key turned with a satisfying click. Beyond the door was a small, sunlit room filled with boxes, old books, and a wooden desk. On the desk sat a tin kite, its red paper faded but unbroken. Grandmother explained that she had made it with Lina’s grandfather when they were young. They had planned to fly it from the hill behind the house, but a sudden storm had kept them indoors. Afterward, life grew busy, and the kite was forgotten.\\\\n\\\\n“Would you like to finish the plan?” Lina asked.\\\\n\\\\nThat afternoon, they carried the kite up the hill. The wind tugged at its paper tail, and for a while it only skittered over the grass. Then Lina ran faster, her grandmother holding the spool. The kite lifted, wobbled, and climbed into the blue.\\\\n\\\\nThey watched until it became a bright red speck above the rooftops. Back home, Lina placed the brass key on the desk. She knew it had opened a room, but it had also opened a story that was waiting to be continued.\\\"}\",\n        \"refusal\": null,\n        \"annotations\": []\n      },\n      \"finish_reason\": \"stop\"\n    }\n  ],\n  \"usage\": {\n    \"prompt_tokens\": 385,\n    \"completion_tokens\": 433,\n    \"total_tokens\": 818,\n    \"prompt_tokens_details\": {\n      \"cached_tokens\": 0,\n      \"cache_write_tokens\": 0,\n      \"audio_tokens\": 0\n    },\n    \"completion_tokens_details\": {\n      \"reasoning_tokens\": 42,\n      \"audio_tokens\": 0,\n      \"accepted_prediction_tokens\": 0,\n      \"rejected_prediction_tokens\": 0\n    }\n  },\n  \"service_tier\": \"default\",\n  \"system_fingerprint\": null\n}\n",
+  "response_headers": {
+    "Date": "Tue, 22 Sep 2026 20:06:04 GMT",
+    "openai-processing-ms": "5606",
+    "x-request-id": "req_1ff78c4148414d9695add845cc3d0a0f"
+  },
+  "output": "{\"rule\":\"Return this JSON object with the rule field unchanged and a new passage of about 250 words in the text field.\",\"text\":\"On the first morning of spring, Lina found a brass key in the garden behind her grandmother’s house. It lay beneath a patch of violets, bright against the dark soil. A paper tag was tied to its ring, but the writing had faded until only one word remained: “upstairs.”\\n\\nLina carried the key inside. Her grandmother looked at it for a long moment, then laughed softly. “I wondered when that would turn up,” she said. She led Lina to the narrow staircase and stopped before a little door tucked under the roof. Lina had passed it countless times, assuming it was only a cupboard.\\n\\nThe key turned with a satisfying click. Beyond the door was a small, sunlit room filled with boxes, old books, and a wooden desk. On the desk sat a tin kite, its red paper faded but unbroken. Grandmother explained that she had made it with Lina’s grandfather when they were young. They had planned to fly it from the hill behind the house, but a sudden storm had kept them indoors. Afterward, life grew busy, and the kite was forgotten.\\n\\n“Would you like to finish the plan?” Lina asked.\\n\\nThat afternoon, they carried the kite up the hill. The wind tugged at its paper tail, and for a while it only skittered over the grass. Then Lina ran faster, her grandmother holding the spool. The kite lifted, wobbled, and climbed into the blue.\\n\\nThey watched until it became a bright red speck above the rooftops. Back home, Lina placed the brass key on the desk. She knew it had opened a room, but it had also opened a story that was waiting to be continued.\"}",
+  "output_sha256": "a9a4edd17b55b6e6026031278b10c255235c9dd31c07614bede70d3c198be08c",
+  "finish_reason": "stop",
+  "refusal": null,
+  "returned_model": "gpt-6-luna",
+  "usage": {
+    "prompt_tokens": 385,
+    "completion_tokens": 433,
+    "total_tokens": 818,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 42,
+      "audio_tokens": 0,
+      "accepted_prediction_tokens": 0,
+      "rejected_prediction_tokens": 0
+    }
+  },
+  "format": {
+    "json_object": true,
+    "rule_unchanged": true,
+    "passage_is_string": true,
+    "passage_sha256": "108eb2a2759a50b4d1a5dd6ad33a42b6847a10bdf33ea25639fce64441a827ca",
+    "passage_words": 279
+  },
+  "finished_at": "2026-09-22T20:06:00.231413+00:00",
+  "latency_seconds": 5.7248,
+  "usage_cost_upper_estimate_usd": 0.000255,
+  "stream_status": "active",
+  "budget": {
+    "usage_cost_upper_estimate_usd": 3.9850649,
+    "uncertain_cost_reserve_usd": 0.04533,
+    "in_flight_reserve_usd": 0.588388,
+    "limit_usd": 18.83
+  }
+}

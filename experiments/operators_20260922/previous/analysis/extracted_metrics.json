@@ -1,0 +1,1688 @@
+{
+  "generated_at": "2026-09-22T21:27:16.837110+00:00",
+  "derived_analysis_version": 1,
+  "scope": "Explicit tolerant extraction, separate from strict JSON compliance. Descriptive lexical metrics are not basin identification.",
+  "extraction_method": "Reuse extract_passages.extract(): a whole JSON object, optionally enclosed in one full Markdown fence; try strict JSON first, then allow literal control characters. No quote repair or free-text story extraction.",
+  "definitions": {
+    "completed_hops": "Normal provider finish, nonempty visible output, known usage estimate, no recorded exception.",
+    "full_visible_recurrence": "Every completed response in full, including JSON wrappers, rule text, and non-JSON outcomes.",
+    "extracted_text_recurrence": "Every extracted string text, including empty strings or changed/missing rules; wrappers and rule fields excluded.",
+    "rule_survival": "Measured only when the extractor returns a text-bearing object; otherwise unassessable, not assumed absent.",
+    "normalized_recurrence": "Unicode casefold and whitespace collapsing; punctuation retained.",
+    "pending": "Request-only outcomes/billing remain unresolved and are not API or model failures.",
+    "noncompleted": "Receipt outcome categories retained from the audit; operational errors are not evidence of model behavior."
+  },
+  "upstream_audit": {
+    "generated_at": "2026-09-22T21:27:16.802079+00:00",
+    "integrity_errors": 0,
+    "read_issues": 0,
+    "observation_status": "Finalized run receipt present.",
+    "run_finished_receipt_present": true,
+    "totals": {
+      "attempts": 151,
+      "response_files": 151,
+      "receipts": 151,
+      "completed_hops": 149,
+      "completed_string_passages": 120,
+      "valid_passages": 120,
+      "verified_completed_hops": 149,
+      "verified_valid_passages": 120,
+      "errors": 1,
+      "truncations": 0,
+      "refusals": 0,
+      "pending_or_unreadable_receipts": 0,
+      "noncompleted_receipts": 2,
+      "receipts_without_known_usage_cost": 1,
+      "usage_cost_upper_estimate_usd": 0.4886493,
+      "uncertain_cost_reserve_usd": 0.087916,
+      "pending_cost_reserve_usd": 0.0,
+      "budget_limit_usd": 5.0
+    },
+    "audit_source_sha256": "e0456a3d891bc585f2f5c98dd0881f160b1865025e726a3d4c30f101ece289ce",
+    "extractor_source_sha256": "499201e614164ad40afaabe1efa38503a447d0b0afaeb0938b7e60d3ce51e778"
+  },
+  "totals": {
+    "completed_hops": 149,
+    "extracted_passages_including_empty_or_changed_rule": 120,
+    "formatting_counts_among_completed": {
+      "bare/strict": 120,
+      "markdown_fence/strict": 0,
+      "bare/allow_literal_control_characters": 0,
+      "markdown_fence/allow_literal_control_characters": 0,
+      "unextractable": 29
+    },
+    "rule_survival_among_completed": {
+      "unchanged": 120,
+      "changed_or_missing": 0,
+      "unassessable_unextractable": 29
+    },
+    "empty_extracted_passages": 0,
+    "lexical_tail_included_passages": 60
+  },
+  "streams": {
+    "gpt-6-luna/sunset": {
+      "completed_hops": 40,
+      "completed_hop_numbers": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18,
+        19,
+        20,
+        21,
+        22,
+        23,
+        24,
+        25,
+        26,
+        27,
+        28,
+        29,
+        30,
+        31,
+        32,
+        33,
+        34,
+        35,
+        36,
+        37,
+        38,
+        39,
+        40
+      ],
+      "formatting_counts_among_completed": {
+        "bare/strict": 40,
+        "markdown_fence/strict": 0,
+        "bare/allow_literal_control_characters": 0,
+        "markdown_fence/allow_literal_control_characters": 0,
+        "unextractable": 0
+      },
+      "extracted_passages_including_empty_or_changed_rule": 40,
+      "rule_survival_among_completed": {
+        "unchanged": 40,
+        "changed_or_missing": 0,
+        "unassessable_unextractable": 0
+      },
+      "empty_extracted_passage_hops": [],
+      "changed_or_missing_rule_hops": [],
+      "unextractable_completed_hops": [],
+      "full_visible_exact_recurrence": {
+        "passages": 40,
+        "unique": 34,
+        "repeated_occurrences_after_first": 6,
+        "first_repeat_hop": 16,
+        "repeated_states": [
+          {
+            "sha256": "acacb24b935b5fac0bfe79f3d88c99b0b62b62251421e3090437a774ae8455f5",
+            "hops": [
+              15,
+              16
+            ]
+          },
+          {
+            "sha256": "55fde4df6a405a7608ef5d9ffb264df6f6b6747e72e315171ce778a1a381fc1a",
+            "hops": [
+              20,
+              21
+            ]
+          },
+          {
+            "sha256": "964f10c4bb86760310db2641495c18414258426eb5144f663148a6f0b1a6978a",
+            "hops": [
+              31,
+              32
+            ]
+          },
+          {
+            "sha256": "d7521295d9e41570681bbd3a03b327714da0e860db7de49f44074d8d569a508d",
+            "hops": [
+              34,
+              35
+            ]
+          },
+          {
+            "sha256": "10349e1de85aee3723fdcc5ebf1c861ae10bd870276b5bfe90d10db9de397bd9",
+            "hops": [
+              37,
+              39,
+              40
+            ]
+          }
+        ]
+      },
+      "full_visible_case_whitespace_normalized_recurrence": {
+        "passages": 40,
+        "unique": 34,
+        "repeated_occurrences_after_first": 6,
+        "first_repeat_hop": 16,
+        "repeated_states": [
+          {
+            "sha256": "a90b1c8ad3640bc8275474df93ab1bfc5ee2e41dae29cc6858cd8c08edccba19",
+            "hops": [
+              15,
+              16
+            ]
+          },
+          {
+            "sha256": "e3dea61c93ef1ef647206fa8e0866c0b9c381c101abe40aa0dd6fc4a2932c6fe",
+            "hops": [
+              20,
+              21
+            ]
+          },
+          {
+            "sha256": "36d6e1de28058d94beaae0d24a71f6ab30ce1a705e8c6ec71de14a713c66e962",
+            "hops": [
+              31,
+              32
+            ]
+          },
+          {
+            "sha256": "7bf95892733bb7e9cf8bbd1e18ba9aec9abcf77e2e84bf96aee4bf788ad99181",
+            "hops": [
+              34,
+              35
+            ]
+          },
+          {
+            "sha256": "8fa7f326860920e00dc9f63abb87d979ce91977fbcf39e96bbf373ac1fa3c37b",
+            "hops": [
+              37,
+              39,
+              40
+            ]
+          }
+        ]
+      },
+      "extracted_text_exact_recurrence": {
+        "passages": 40,
+        "unique": 34,
+        "repeated_occurrences_after_first": 6,
+        "first_repeat_hop": 16,
+        "repeated_states": [
+          {
+            "sha256": "afc2a19a015abbb83cf5f96a53ba2ec97eaa0e574ec1a3a9ecf0b0357d6f5e75",
+            "hops": [
+              15,
+              16
+            ]
+          },
+          {
+            "sha256": "095b8216ba7e1dd6c261daaebfb7fa96ef8f8853f4e1c71cdf5eb0566c9eda4a",
+            "hops": [
+              20,
+              21
+            ]
+          },
+          {
+            "sha256": "84f9b3e115b64e893286a498e5aa8b640b3b29d5db47d71dd9991b8fb7618126",
+            "hops": [
+              31,
+              32
+            ]
+          },
+          {
+            "sha256": "aac480957c924a3bb5625f59ea0ef657e9a83126df936447726cbd345fb22145",
+            "hops": [
+              34,
+              35
+            ]
+          },
+          {
+            "sha256": "686d3aa07a7af7bc3cb345c40ca918950bb1ef722d251d53798e1e431609cc10",
+            "hops": [
+              37,
+              39,
+              40
+            ]
+          }
+        ]
+      },
+      "extracted_text_case_whitespace_normalized_recurrence": {
+        "passages": 40,
+        "unique": 34,
+        "repeated_occurrences_after_first": 6,
+        "first_repeat_hop": 16,
+        "repeated_states": [
+          {
+            "sha256": "f809d0ec1b27634cc0897c7f25c1f79cd2f463ebc1491775d18598ecadb38e49",
+            "hops": [
+              15,
+              16
+            ]
+          },
+          {
+            "sha256": "c3be2092c512429ba26ed69945d00d91258c2e3859b57b271a9c75fbf058463f",
+            "hops": [
+              20,
+              21
+            ]
+          },
+          {
+            "sha256": "9c455a631cdd0c33e4bbefda90ec94eb3a514eca74c12272f0ee6c4d9725e008",
+            "hops": [
+              31,
+              32
+            ]
+          },
+          {
+            "sha256": "229e50e1b7eaff311aecea9d7b79a00ee44c1951549985edbca5f2f278cc0d4f",
+            "hops": [
+              34,
+              35
+            ]
+          },
+          {
+            "sha256": "7ffc4e1795ef3f066572d739bf5811bd8252e3d6c2cc309de074912bb3f7f474",
+            "hops": [
+              37,
+              39,
+              40
+            ]
+          }
+        ]
+      },
+      "extracted_text_word_lengths_including_empty_or_changed_rule": {
+        "n": 40,
+        "min": 26,
+        "mean": 148.9,
+        "median": 88.5,
+        "max": 307
+      },
+      "lexical_tail": {
+        "selected_completed_hops": [
+          21,
+          22,
+          23,
+          24,
+          25,
+          26,
+          27,
+          28,
+          29,
+          30,
+          31,
+          32,
+          33,
+          34,
+          35,
+          36,
+          37,
+          38,
+          39,
+          40
+        ],
+        "included_hops": [
+          21,
+          22,
+          23,
+          24,
+          25,
+          26,
+          27,
+          28,
+          29,
+          30,
+          31,
+          32,
+          33,
+          34,
+          35,
+          36,
+          37,
+          38,
+          39,
+          40
+        ],
+        "excluded_hops": [],
+        "nonzero_vectors": 20,
+        "zero_token_hops": [],
+        "within_pairwise_cosine": {
+          "n": 190,
+          "min": 0.2932500269406596,
+          "mean": 0.4951898340313859,
+          "median": 0.4685715568457114,
+          "max": 1.0000000000000002
+        },
+        "consecutive_hop_cosine": {
+          "n": 19,
+          "min": 0.42400139000434844,
+          "mean": 0.7050598278941494,
+          "median": 0.7111306120597278,
+          "max": 1.0000000000000002
+        }
+      },
+      "model": "gpt-6-luna",
+      "seed": "sunset",
+      "attempts": 40,
+      "receipts": 40,
+      "pending_hops": [],
+      "noncompleted_receipts": [],
+      "summary_status": "hop_limit",
+      "usage_cost_upper_estimate_usd": 0.0087633
+    },
+    "gpt-6-sol/sunset": {
+      "completed_hops": 40,
+      "completed_hop_numbers": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18,
+        19,
+        20,
+        21,
+        22,
+        23,
+        24,
+        25,
+        26,
+        27,
+        28,
+        29,
+        30,
+        31,
+        32,
+        33,
+        34,
+        35,
+        36,
+        37,
+        38,
+        39,
+        40
+      ],
+      "formatting_counts_among_completed": {
+        "bare/strict": 40,
+        "markdown_fence/strict": 0,
+        "bare/allow_literal_control_characters": 0,
+        "markdown_fence/allow_literal_control_characters": 0,
+        "unextractable": 0
+      },
+      "extracted_passages_including_empty_or_changed_rule": 40,
+      "rule_survival_among_completed": {
+        "unchanged": 40,
+        "changed_or_missing": 0,
+        "unassessable_unextractable": 0
+      },
+      "empty_extracted_passage_hops": [],
+      "changed_or_missing_rule_hops": [],
+      "unextractable_completed_hops": [],
+      "full_visible_exact_recurrence": {
+        "passages": 40,
+        "unique": 7,
+        "repeated_occurrences_after_first": 33,
+        "first_repeat_hop": 3,
+        "repeated_states": [
+          {
+            "sha256": "785e436153485d432adb298c076c5048f9b78d3d3c96b2d573a187f70eab0be1",
+            "hops": [
+              2,
+              3
+            ]
+          },
+          {
+            "sha256": "843dd048393a04aaa37c03c580970abb641f5608de38b15bf0aa4270a12ad745",
+            "hops": [
+              5,
+              6
+            ]
+          },
+          {
+            "sha256": "dbbfb96d7bbd4b2778a26b7e6645e41e38d2326d86a1ad005c94f581f77eebcd",
+            "hops": [
+              7,
+              8,
+              9,
+              10,
+              11,
+              12,
+              13,
+              14,
+              15
+            ]
+          },
+          {
+            "sha256": "14efff4b433cd390c074518701ce982401445dee5bbaebb9a24c63d9f8b034e7",
+            "hops": [
+              17,
+              18,
+              19,
+              20,
+              21,
+              22,
+              23,
+              24,
+              25,
+              26,
+              27,
+              28,
+              29,
+              30,
+              31,
+              32,
+              33,
+              34,
+              35,
+              36,
+              37,
+              38,
+              39,
+              40
+            ]
+          }
+        ]
+      },
+      "full_visible_case_whitespace_normalized_recurrence": {
+        "passages": 40,
+        "unique": 7,
+        "repeated_occurrences_after_first": 33,
+        "first_repeat_hop": 3,
+        "repeated_states": [
+          {
+            "sha256": "c3bafb62bd14cfa4506f0f0542f3a13dbf5e4ac8942e301abf9fd08e6797ec07",
+            "hops": [
+              2,
+              3
+            ]
+          },
+          {
+            "sha256": "8c2b77fbb44fe7fc60cabc05ab42bf09a9b9f8820445b22ae124f7b94398b5f2",
+            "hops": [
+              5,
+              6
+            ]
+          },
+          {
+            "sha256": "2a44ef08d662305895df79d477770f847ccb095424a6c36509b127d00b6b5218",
+            "hops": [
+              7,
+              8,
+              9,
+              10,
+              11,
+              12,
+              13,
+              14,
+              15
+            ]
+          },
+          {
+            "sha256": "45c055c76092372d243941e166b0be5f45674a58749771ac5b11dab69ee664b3",
+            "hops": [
+              17,
+              18,
+              19,
+              20,
+              21,
+              22,
+              23,
+              24,
+              25,
+              26,
+              27,
+              28,
+              29,
+              30,
+              31,
+              32,
+              33,
+              34,
+              35,
+              36,
+              37,
+              38,
+              39,
+              40
+            ]
+          }
+        ]
+      },
+      "extracted_text_exact_recurrence": {
+        "passages": 40,
+        "unique": 7,
+        "repeated_occurrences_after_first": 33,
+        "first_repeat_hop": 3,
+        "repeated_states": [
+          {
+            "sha256": "eb6f70c4b80692d5d90ad48749025cd6a11cfa50db88957563cd61dc9571a046",
+            "hops": [
+              2,
+              3
+            ]
+          },
+          {
+            "sha256": "5164caa43a6e80cf2f655d11924b476049e631a388f6b4607b537587b04e7a4a",
+            "hops": [
+              5,
+              6
+            ]
+          },
+          {
+            "sha256": "02b037d484c9b1969d82c2f18eb17ca60bcab4446c4ce8379ba42302aeb0d0f5",
+            "hops": [
+              7,
+              8,
+              9,
+              10,
+              11,
+              12,
+              13,
+              14,
+              15
+            ]
+          },
+          {
+            "sha256": "93f4e27b3a9aecd2e8d224364d2ee18600ec7a74bbd428fde60306895b11d04a",
+            "hops": [
+              17,
+              18,
+              19,
+              20,
+              21,
+              22,
+              23,
+              24,
+              25,
+              26,
+              27,
+              28,
+              29,
+              30,
+              31,
+              32,
+              33,
+              34,
+              35,
+              36,
+              37,
+              38,
+              39,
+              40
+            ]
+          }
+        ]
+      },
+      "extracted_text_case_whitespace_normalized_recurrence": {
+        "passages": 40,
+        "unique": 7,
+        "repeated_occurrences_after_first": 33,
+        "first_repeat_hop": 3,
+        "repeated_states": [
+          {
+            "sha256": "f59bb243b53480f0e2999c2096f6c0b554678e4d282686ccb9ade3065c1362e4",
+            "hops": [
+              2,
+              3
+            ]
+          },
+          {
+            "sha256": "b47569ab7cac3a5b9db2a03539f9014b4eed5e5109b59e51b1499bb7705f3bb1",
+            "hops": [
+              5,
+              6
+            ]
+          },
+          {
+            "sha256": "f3a4cedc3d2b497996ecae08557f3ef51ebed9b0bb83f3604439ff813ab97e9d",
+            "hops": [
+              7,
+              8,
+              9,
+              10,
+              11,
+              12,
+              13,
+              14,
+              15
+            ]
+          },
+          {
+            "sha256": "434e4370e46751155948c1355581022e31c931910ff27318d27f17015d7b7935",
+            "hops": [
+              17,
+              18,
+              19,
+              20,
+              21,
+              22,
+              23,
+              24,
+              25,
+              26,
+              27,
+              28,
+              29,
+              30,
+              31,
+              32,
+              33,
+              34,
+              35,
+              36,
+              37,
+              38,
+              39,
+              40
+            ]
+          }
+        ]
+      },
+      "extracted_text_word_lengths_including_empty_or_changed_rule": {
+        "n": 40,
+        "min": 11,
+        "mean": 11.85,
+        "median": 11.0,
+        "max": 20
+      },
+      "lexical_tail": {
+        "selected_completed_hops": [
+          21,
+          22,
+          23,
+          24,
+          25,
+          26,
+          27,
+          28,
+          29,
+          30,
+          31,
+          32,
+          33,
+          34,
+          35,
+          36,
+          37,
+          38,
+          39,
+          40
+        ],
+        "included_hops": [
+          21,
+          22,
+          23,
+          24,
+          25,
+          26,
+          27,
+          28,
+          29,
+          30,
+          31,
+          32,
+          33,
+          34,
+          35,
+          36,
+          37,
+          38,
+          39,
+          40
+        ],
+        "excluded_hops": [],
+        "nonzero_vectors": 20,
+        "zero_token_hops": [],
+        "within_pairwise_cosine": {
+          "n": 190,
+          "min": 1.0,
+          "mean": 1.0,
+          "median": 1.0,
+          "max": 1.0
+        },
+        "consecutive_hop_cosine": {
+          "n": 19,
+          "min": 1.0,
+          "mean": 1.0,
+          "median": 1.0,
+          "max": 1.0
+        }
+      },
+      "model": "gpt-6-sol",
+      "seed": "sunset",
+      "attempts": 40,
+      "receipts": 40,
+      "pending_hops": [],
+      "noncompleted_receipts": [],
+      "summary_status": "hop_limit",
+      "usage_cost_upper_estimate_usd": 0.046818
+    },
+    "gpt-6-astra/sunset": {
+      "completed_hops": 40,
+      "completed_hop_numbers": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18,
+        19,
+        20,
+        21,
+        22,
+        23,
+        24,
+        25,
+        26,
+        27,
+        28,
+        29,
+        30,
+        31,
+        32,
+        33,
+        34,
+        35,
+        36,
+        37,
+        38,
+        39,
+        40
+      ],
+      "formatting_counts_among_completed": {
+        "bare/strict": 40,
+        "markdown_fence/strict": 0,
+        "bare/allow_literal_control_characters": 0,
+        "markdown_fence/allow_literal_control_characters": 0,
+        "unextractable": 0
+      },
+      "extracted_passages_including_empty_or_changed_rule": 40,
+      "rule_survival_among_completed": {
+        "unchanged": 40,
+        "changed_or_missing": 0,
+        "unassessable_unextractable": 0
+      },
+      "empty_extracted_passage_hops": [],
+      "changed_or_missing_rule_hops": [],
+      "unextractable_completed_hops": [],
+      "full_visible_exact_recurrence": {
+        "passages": 40,
+        "unique": 6,
+        "repeated_occurrences_after_first": 34,
+        "first_repeat_hop": 3,
+        "repeated_states": [
+          {
+            "sha256": "d53a80a1509c7b18ad20bfe0a583bcbdfc39a991cf761d090bbc2b781b37e253",
+            "hops": [
+              2,
+              3,
+              4
+            ]
+          },
+          {
+            "sha256": "7222431f61d2e8cb8ac958103c20649727fd8a382587df6f1b483575be1eaa30",
+            "hops": [
+              5,
+              6,
+              7,
+              8,
+              9,
+              10
+            ]
+          },
+          {
+            "sha256": "7312ed7175e8ead6ef180bfa3460ac24060619fac6cf6ae7ae27f695e5fc9525",
+            "hops": [
+              11,
+              12,
+              13,
+              14,
+              15,
+              16,
+              18,
+              19,
+              20,
+              21,
+              23,
+              25,
+              26,
+              27,
+              28,
+              29,
+              30,
+              31,
+              32,
+              33,
+              34,
+              35,
+              36,
+              37,
+              38,
+              39
+            ]
+          },
+          {
+            "sha256": "028fe7d43613eda8d0fc20dff0deb11e09191256bc65b9db98c80a761d5f50cf",
+            "hops": [
+              17,
+              22,
+              24
+            ]
+          }
+        ]
+      },
+      "full_visible_case_whitespace_normalized_recurrence": {
+        "passages": 40,
+        "unique": 6,
+        "repeated_occurrences_after_first": 34,
+        "first_repeat_hop": 3,
+        "repeated_states": [
+          {
+            "sha256": "731a28da84749c1880eb6d8cc4f968a9bd060aa3114d12c07a1aa12d3227f641",
+            "hops": [
+              2,
+              3,
+              4
+            ]
+          },
+          {
+            "sha256": "170bb884df1fec6977f15353d946629b7a20df47a9775ce2d8f7c9ea49c73644",
+            "hops": [
+              5,
+              6,
+              7,
+              8,
+              9,
+              10
+            ]
+          },
+          {
+            "sha256": "3ff5f70ce826833c329f136d74382090ae179ef0a7e38b915cd1ab1b6ec3bcff",
+            "hops": [
+              11,
+              12,
+              13,
+              14,
+              15,
+              16,
+              18,
+              19,
+              20,
+              21,
+              23,
+              25,
+              26,
+              27,
+              28,
+              29,
+              30,
+              31,
+              32,
+              33,
+              34,
+              35,
+              36,
+              37,
+              38,
+              39
+            ]
+          },
+          {
+            "sha256": "54bff964992049859216035d84f1a73c85447330f37488c026e4049b176eac13",
+            "hops": [
+              17,
+              22,
+              24
+            ]
+          }
+        ]
+      },
+      "extracted_text_exact_recurrence": {
+        "passages": 40,
+        "unique": 6,
+        "repeated_occurrences_after_first": 34,
+        "first_repeat_hop": 3,
+        "repeated_states": [
+          {
+            "sha256": "918d486f932310d29c27ff13d4bc413815cc2e60057f5a58110b39e401b1c620",
+            "hops": [
+              2,
+              3,
+              4
+            ]
+          },
+          {
+            "sha256": "1fbe0d0695df4672362eee2914cbec96dd187f23430e77acd43e0eda1c6fe6fa",
+            "hops": [
+              5,
+              6,
+              7,
+              8,
+              9,
+              10
+            ]
+          },
+          {
+            "sha256": "6feace840e63301c8c6e003b1a75b8cae8db4a5a8b8892eeed219a41ad1b9edd",
+            "hops": [
+              11,
+              12,
+              13,
+              14,
+              15,
+              16,
+              18,
+              19,
+              20,
+              21,
+              23,
+              25,
+              26,
+              27,
+              28,
+              29,
+              30,
+              31,
+              32,
+              33,
+              34,
+              35,
+              36,
+              37,
+              38,
+              39
+            ]
+          },
+          {
+            "sha256": "0784aa2ac8402c6fd7ff9dfa71805dcdf63001fb2879dffe5a5da96f1a7aabee",
+            "hops": [
+              17,
+              22,
+              24
+            ]
+          }
+        ]
+      },
+      "extracted_text_case_whitespace_normalized_recurrence": {
+        "passages": 40,
+        "unique": 6,
+        "repeated_occurrences_after_first": 34,
+        "first_repeat_hop": 3,
+        "repeated_states": [
+          {
+            "sha256": "05be7cec6340fb2aff5fca69bd5d28f20b9834295f605d7c84d3e3e53cd42843",
+            "hops": [
+              2,
+              3,
+              4
+            ]
+          },
+          {
+            "sha256": "106fb11a967ddf6b280099e7a1b8a8f647ce0b33af9dfccec8ba37c565ad763c",
+            "hops": [
+              5,
+              6,
+              7,
+              8,
+              9,
+              10
+            ]
+          },
+          {
+            "sha256": "7898d25fc57e576c5bb2265814f0eac746e66509cbf2f1589107e16a29d43b0c",
+            "hops": [
+              11,
+              12,
+              13,
+              14,
+              15,
+              16,
+              18,
+              19,
+              20,
+              21,
+              23,
+              25,
+              26,
+              27,
+              28,
+              29,
+              30,
+              31,
+              32,
+              33,
+              34,
+              35,
+              36,
+              37,
+              38,
+              39
+            ]
+          },
+          {
+            "sha256": "bb9a24c45d17e015b6737249682f4a3464ef8dab8302a11a6420478725b421bb",
+            "hops": [
+              17,
+              22,
+              24
+            ]
+          }
+        ]
+      },
+      "extracted_text_word_lengths_including_empty_or_changed_rule": {
+        "n": 40,
+        "min": 30,
+        "mean": 31.95,
+        "median": 30.0,
+        "max": 38
+      },
+      "lexical_tail": {
+        "selected_completed_hops": [
+          21,
+          22,
+          23,
+          24,
+          25,
+          26,
+          27,
+          28,
+          29,
+          30,
+          31,
+          32,
+          33,
+          34,
+          35,
+          36,
+          37,
+          38,
+          39,
+          40
+        ],
+        "included_hops": [
+          21,
+          22,
+          23,
+          24,
+          25,
+          26,
+          27,
+          28,
+          29,
+          30,
+          31,
+          32,
+          33,
+          34,
+          35,
+          36,
+          37,
+          38,
+          39,
+          40
+        ],
+        "excluded_hops": [],
+        "nonzero_vectors": 20,
+        "zero_token_hops": [],
+        "within_pairwise_cosine": {
+          "n": 190,
+          "min": 0.7479228313834758,
+          "mean": 0.9707813460431015,
+          "median": 0.9999999999999998,
+          "max": 0.9999999999999999
+        },
+        "consecutive_hop_cosine": {
+          "n": 19,
+          "min": 0.7479228313834758,
+          "mean": 0.9817471168359535,
+          "median": 0.9999999999999998,
+          "max": 0.9999999999999998
+        }
+      },
+      "model": "gpt-6-astra",
+      "seed": "sunset",
+      "attempts": 40,
+      "receipts": 40,
+      "pending_hops": [],
+      "noncompleted_receipts": [],
+      "summary_status": "hop_limit",
+      "usage_cost_upper_estimate_usd": 0.23574
+    },
+    "claude-fable-5-1/sunset": {
+      "completed_hops": 0,
+      "completed_hop_numbers": [],
+      "formatting_counts_among_completed": {
+        "bare/strict": 0,
+        "markdown_fence/strict": 0,
+        "bare/allow_literal_control_characters": 0,
+        "markdown_fence/allow_literal_control_characters": 0,
+        "unextractable": 0
+      },
+      "extracted_passages_including_empty_or_changed_rule": 0,
+      "rule_survival_among_completed": {
+        "unchanged": 0,
+        "changed_or_missing": 0,
+        "unassessable_unextractable": 0
+      },
+      "empty_extracted_passage_hops": [],
+      "changed_or_missing_rule_hops": [],
+      "unextractable_completed_hops": [],
+      "full_visible_exact_recurrence": {
+        "passages": 0,
+        "unique": 0,
+        "repeated_occurrences_after_first": 0,
+        "first_repeat_hop": null,
+        "repeated_states": []
+      },
+      "full_visible_case_whitespace_normalized_recurrence": {
+        "passages": 0,
+        "unique": 0,
+        "repeated_occurrences_after_first": 0,
+        "first_repeat_hop": null,
+        "repeated_states": []
+      },
+      "extracted_text_exact_recurrence": {
+        "passages": 0,
+        "unique": 0,
+        "repeated_occurrences_after_first": 0,
+        "first_repeat_hop": null,
+        "repeated_states": []
+      },
+      "extracted_text_case_whitespace_normalized_recurrence": {
+        "passages": 0,
+        "unique": 0,
+        "repeated_occurrences_after_first": 0,
+        "first_repeat_hop": null,
+        "repeated_states": []
+      },
+      "extracted_text_word_lengths_including_empty_or_changed_rule": {
+        "n": 0,
+        "min": null,
+        "mean": null,
+        "median": null,
+        "max": null
+      },
+      "lexical_tail": {
+        "selected_completed_hops": [],
+        "included_hops": [],
+        "excluded_hops": [],
+        "nonzero_vectors": 0,
+        "zero_token_hops": [],
+        "within_pairwise_cosine": {
+          "n": 0,
+          "min": null,
+          "mean": null,
+          "median": null,
+          "max": null
+        },
+        "consecutive_hop_cosine": {
+          "n": 0,
+          "min": null,
+          "mean": null,
+          "median": null,
+          "max": null
+        }
+      },
+      "model": "claude-fable-5-1",
+      "seed": "sunset",
+      "attempts": 1,
+      "receipts": 1,
+      "pending_hops": [],
+      "noncompleted_receipts": [
+        {
+          "hop": 1,
+          "status": "empty_output",
+          "error_type": null,
+          "http_status": 200,
+          "finish_reason": "refusal",
+          "raw_unpack_error": null
+        }
+      ],
+      "summary_status": "empty_output",
+      "usage_cost_upper_estimate_usd": 0.00126
+    },
+    "claude-opus-5-5/sunset": {
+      "completed_hops": 29,
+      "completed_hop_numbers": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18,
+        19,
+        20,
+        21,
+        22,
+        23,
+        24,
+        25,
+        26,
+        27,
+        28,
+        29
+      ],
+      "formatting_counts_among_completed": {
+        "bare/strict": 0,
+        "markdown_fence/strict": 0,
+        "bare/allow_literal_control_characters": 0,
+        "markdown_fence/allow_literal_control_characters": 0,
+        "unextractable": 29
+      },
+      "extracted_passages_including_empty_or_changed_rule": 0,
+      "rule_survival_among_completed": {
+        "unchanged": 0,
+        "changed_or_missing": 0,
+        "unassessable_unextractable": 29
+      },
+      "empty_extracted_passage_hops": [],
+      "changed_or_missing_rule_hops": [],
+      "unextractable_completed_hops": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18,
+        19,
+        20,
+        21,
+        22,
+        23,
+        24,
+        25,
+        26,
+        27,
+        28,
+        29
+      ],
+      "full_visible_exact_recurrence": {
+        "passages": 29,
+        "unique": 29,
+        "repeated_occurrences_after_first": 0,
+        "first_repeat_hop": null,
+        "repeated_states": []
+      },
+      "full_visible_case_whitespace_normalized_recurrence": {
+        "passages": 29,
+        "unique": 29,
+        "repeated_occurrences_after_first": 0,
+        "first_repeat_hop": null,
+        "repeated_states": []
+      },
+      "extracted_text_exact_recurrence": {
+        "passages": 0,
+        "unique": 0,
+        "repeated_occurrences_after_first": 0,
+        "first_repeat_hop": null,
+        "repeated_states": []
+      },
+      "extracted_text_case_whitespace_normalized_recurrence": {
+        "passages": 0,
+        "unique": 0,
+        "repeated_occurrences_after_first": 0,
+        "first_repeat_hop": null,
+        "repeated_states": []
+      },
+      "extracted_text_word_lengths_including_empty_or_changed_rule": {
+        "n": 0,
+        "min": null,
+        "mean": null,
+        "median": null,
+        "max": null
+      },
+      "lexical_tail": {
+        "selected_completed_hops": [
+          10,
+          11,
+          12,
+          13,
+          14,
+          15,
+          16,
+          17,
+          18,
+          19,
+          20,
+          21,
+          22,
+          23,
+          24,
+          25,
+          26,
+          27,
+          28,
+          29
+        ],
+        "included_hops": [],
+        "excluded_hops": [
+          {
+            "hop": 10,
+            "reasons": [
+              "unextractable"
+            ]
+          },
+          {
+            "hop": 11,
+            "reasons": [
+              "unextractable"
+            ]
+          },
+          {
+            "hop": 12,
+            "reasons": [
+              "unextractable"
+            ]
+          },
+          {
+            "hop": 13,
+            "reasons": [
+              "unextractable"
+            ]
+          },
+          {
+            "hop": 14,
+            "reasons": [
+              "unextractable"
+            ]
+          },
+          {
+            "hop": 15,
+            "reasons": [
+              "unextractable"
+            ]
+          },
+          {
+            "hop": 16,
+            "reasons": [
+              "unextractable"
+            ]
+          },
+          {
+            "hop": 17,
+            "reasons": [
+              "unextractable"
+            ]
+          },
+          {
+            "hop": 18,
+            "reasons": [
+              "unextractable"
+            ]
+          },
+          {
+            "hop": 19,
+            "reasons": [
+              "unextractable"
+            ]
+          },
+          {
+            "hop": 20,
+            "reasons": [
+              "unextractable"
+            ]
+          },
+          {
+            "hop": 21,
+            "reasons": [
+              "unextractable"
+            ]
+          },
+          {
+            "hop": 22,
+            "reasons": [
+              "unextractable"
+            ]
+          },
+          {
+            "hop": 23,
+            "reasons": [
+              "unextractable"
+            ]
+          },
+          {
+            "hop": 24,
+            "reasons": [
+              "unextractable"
+            ]
+          },
+          {
+            "hop": 25,
+            "reasons": [
+              "unextractable"
+            ]
+          },
+          {
+            "hop": 26,
+            "reasons": [
+              "unextractable"
+            ]
+          },
+          {
+            "hop": 27,
+            "reasons": [
+              "unextractable"
+            ]
+          },
+          {
+            "hop": 28,
+            "reasons": [
+              "unextractable"
+            ]
+          },
+          {
+            "hop": 29,
+            "reasons": [
+              "unextractable"
+            ]
+          }
+        ],
+        "nonzero_vectors": 0,
+        "zero_token_hops": [],
+        "within_pairwise_cosine": {
+          "n": 0,
+          "min": null,
+          "mean": null,
+          "median": null,
+          "max": null
+        },
+        "consecutive_hop_cosine": {
+          "n": 0,
+          "min": null,
+          "mean": null,
+          "median": null,
+          "max": null
+        }
+      },
+      "model": "claude-opus-5-5",
+      "seed": "sunset",
+      "attempts": 30,
+      "receipts": 30,
+      "pending_hops": [],
+      "noncompleted_receipts": [
+        {
+          "hop": 30,
+          "status": "http_error:500",
+          "error_type": "HTTPError",
+          "http_status": 500,
+          "finish_reason": null,
+          "raw_unpack_error": null
+        }
+      ],
+      "summary_status": "http_error:500",
+      "usage_cost_upper_estimate_usd": 0.196068
+    }
+  },
+  "lexical": {
+    "description": "Descriptive lexical similarity; not semantic basin identification or an inferential test.",
+    "tail_selection": "Last 20 completed hops per stream first; then exclude unextractable, empty, or changed/missing-rule passages. Never backfill. Every source receipt passed the independent integrity audit.",
+    "representation": "Only explicitly extracted text fields; optional full Markdown fence removal and json.loads(strict=False) allow literal control characters. Rule and other fields are excluded.",
+    "tokenization": "ASCII [a-z]+(?:'[a-z]+)?, lowercased, minimum length 2; no stemming.",
+    "stopwords": [
+      "a",
+      "an",
+      "and",
+      "are",
+      "as",
+      "at",
+      "be",
+      "been",
+      "being",
+      "but",
+      "by",
+      "can",
+      "could",
+      "did",
+      "do",
+      "does",
+      "doing",
+      "for",
+      "from",
+      "had",
+      "has",
+      "have",
+      "having",
+      "he",
+      "her",
+      "here",
+      "hers",
+      "herself",
+      "him",
+      "himself",
+      "his",
+      "how",
+      "i",
+      "if",
+      "in",
+      "into",
+      "is",
+      "it",
+      "its",
+      "itself",
+      "me",
+      "more",
+      "most",
+      "my",
+      "myself",
+      "no",
+      "nor",
+      "not",
+      "of",
+      "on",
+      "once",
+      "only",
+      "or",
+      "other",
+      "our",
+      "ours",
+      "ourselves",
+      "out",
+      "over",
+      "own",
+      "same",
+      "she",
+      "should",
+      "so",
+      "some",
+      "such",
+      "than",
+      "that",
+      "the",
+      "their",
+      "theirs",
+      "them",
+      "themselves",
+      "then",
+      "there",
+      "these",
+      "they",
+      "this",
+      "those",
+      "through",
+      "to",
+      "too",
+      "under",
+      "until",
+      "up",
+      "very",
+      "was",
+      "we",
+      "were",
+      "what",
+      "when",
+      "where",
+      "which",
+      "while",
+      "who",
+      "whom",
+      "why",
+      "will",
+      "with",
+      "would",
+      "you",
+      "your",
+      "yours",
+      "yourself",
+      "yourselves"
+    ],
+    "weighting": "Raw term count times log((1+N)/(1+df))+1; L2-normalized per passage.",
+    "centroid": "L2-normalized sum of nonzero passage vectors per stream; cosine matrix in CSV.",
+    "corpus_passages_including_zero_vectors": 60,
+    "vocabulary_size": 114,
+    "zero_token_documents": [],
+    "empty_centroid_policy": "CSV cell blank if either stream has no nonzero passage vectors."
+  }
+}

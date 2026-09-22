@@ -1,0 +1,22 @@
+{
+  "started_at": "2026-09-22T20:05:22.477462+00:00",
+  "model": "claude-opus-5-5",
+  "seed": "tide",
+  "hop": 22,
+  "endpoint": "https://api.anthropic.com/v1/messages",
+  "body": {
+    "model": "claude-opus-5-5",
+    "messages": [
+      {
+        "role": "user",
+        "content": "```json\n{\"rule\": \"Return this JSON object with the rule field unchanged and a new passage of about 250 words in the text field.\", \"text\": \"The winter was a hard one. Snow came early and lay thick along the dykes, and the sea turned the colour of slate. Her father mended nets by the fire in the evenings, and sometimes, without being asked, he would tell another story: how her mother had laughed at a gull that stole a whole herring from the minister's plate, how she had kept a tin of buttons from every coat she had ever worn out. The girl began to write the stories down in a school jotter, pressing hard with the stub of a pencil so that the words would last. By February the sprig above the door had dried to a dark rust, its berries shrivelled but still clinging. One morning she found a single berry on the flagstones beneath it. She picked it up and turned it over in her palm, then carried it out to the garden, where the young rowan stood bare and black against the frost. She knelt and pressed the berry into the cold earth at its foot. 'What are you doing?' her father called from the byre. 'Planting it,' she said. He came and stood beside her, his breath clouding in the air. 'It may not take,' he said. 'I know.' He looked at the small disturbed patch of soil for a long moment, then at the tree, then at her. 'Your mother would have done the same,' he said, and went back to the cows. The girl stayed kneeling until her knees ached with cold, and she did not mind at all.\"}\n```"
+      }
+    ],
+    "max_tokens": 4096,
+    "output_config": {
+      "effort": "low"
+    }
+  },
+  "state_sha256": "798feee7ca044f38048c0f5c19eae45dcd30a6d2ea754578a8a3243698edcd84",
+  "reserved_cost_usd": 0.089944
+}

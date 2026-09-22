@@ -1,0 +1,48 @@
+{
+  "model": "claude-fable-5-1",
+  "seed": "sunset_a",
+  "hop": 19,
+  "http_status": 200,
+  "response_body": "{\"model\":\"claude-fable-5-1\",\"id\":\"msg_011CfK5dQ2WJgQMqstAuiEPi\",\"type\":\"message\",\"role\":\"assistant\",\"content\":[{\"type\":\"text\",\"text\":\"{\\\"rule\\\": \\\"Return this JSON object with the rule field unchanged and a new passage of about 250 words in the text field.\\\", \\\"text\\\": \\\"She stood at the foot of the stairs with the key closed in her fist until the metal warmed. The shop had gone dark around her without her noticing. Outside, a bicycle passed and its bell rang once, ordinary, belonging to the street and not to her.\\\\n\\\\nThe stairs were the same stairs. She had climbed them every night for eleven years to the two rooms she rented above the shop, and she had never once thought about the door at the top of the second flight, the one the landlord called storage and kept locked and never opened. She thought about it now. She thought about how the thanks in the fourth letter had been for the light she left burning in the back room, and how she had never told anyone she did that.\\\\n\\\\nShe climbed. The first flight, her own landing, her own door with the chipped green paint. The second flight, narrower, the boards drier. At the top the air was colder and smelled of plaster and old water.\\\\n\\\\nThe key went in without resistance, as if it had been waiting. She did not turn it yet.\\\\n\\\\nFrom behind the door there was no sound at all. Not the pipes. Not breath. A silence so complete it had weight, the silence of a room that has been listening for a long time and has just now stopped.\\\\n\\\\nInes put her other hand flat against the wood. It was warm. Warmer than the stairwell, warmer than her palm.\\\\n\\\\nSomeone, she understood, had been on the other side of it a moment ago.\\\\n\\\\nShe turned the key.\\\"}\"}],\"container\":null,\"stop_reason\":\"end_turn\",\"stop_sequence\":null,\"stop_details\":null,\"usage\":{\"input_tokens\":521,\"cache_creation_input_tokens\":0,\"cache_read_input_tokens\":0,\"cache_creation\":{\"ephemeral_5m_input_tokens\":0,\"ephemeral_1h_input_tokens\":0},\"output_tokens\":501,\"output_tokens_details\":{\"thinking_tokens\":0},\"service_tier\":\"standard\",\"inference_geo\":\"global\"}}",
+  "response_headers": {
+    "Date": "Tue, 22 Sep 2026 20:07:00 GMT",
+    "request-id": "req_011CfK5dPkssZhUHkYHnAGKk"
+  },
+  "output": "{\"rule\": \"Return this JSON object with the rule field unchanged and a new passage of about 250 words in the text field.\", \"text\": \"She stood at the foot of the stairs with the key closed in her fist until the metal warmed. The shop had gone dark around her without her noticing. Outside, a bicycle passed and its bell rang once, ordinary, belonging to the street and not to her.\\n\\nThe stairs were the same stairs. She had climbed them every night for eleven years to the two rooms she rented above the shop, and she had never once thought about the door at the top of the second flight, the one the landlord called storage and kept locked and never opened. She thought about it now. She thought about how the thanks in the fourth letter had been for the light she left burning in the back room, and how she had never told anyone she did that.\\n\\nShe climbed. The first flight, her own landing, her own door with the chipped green paint. The second flight, narrower, the boards drier. At the top the air was colder and smelled of plaster and old water.\\n\\nThe key went in without resistance, as if it had been waiting. She did not turn it yet.\\n\\nFrom behind the door there was no sound at all. Not the pipes. Not breath. A silence so complete it had weight, the silence of a room that has been listening for a long time and has just now stopped.\\n\\nInes put her other hand flat against the wood. It was warm. Warmer than the stairwell, warmer than her palm.\\n\\nSomeone, she understood, had been on the other side of it a moment ago.\\n\\nShe turned the key.\"}",
+  "output_sha256": "a94e6fbbdd10cc2b90ebfdfbaa24be794376f754c6ad4e8f93dbf0d1a4979c24",
+  "finish_reason": "end_turn",
+  "refusal": null,
+  "returned_model": "claude-fable-5-1",
+  "usage": {
+    "input_tokens": 521,
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 0,
+    "cache_creation": {
+      "ephemeral_5m_input_tokens": 0,
+      "ephemeral_1h_input_tokens": 0
+    },
+    "output_tokens": 501,
+    "output_tokens_details": {
+      "thinking_tokens": 0
+    },
+    "service_tier": "standard",
+    "inference_geo": "global"
+  },
+  "format": {
+    "json_object": true,
+    "rule_unchanged": true,
+    "passage_is_string": true,
+    "passage_sha256": "a73d8e299e89868cc6208f64415c0012258b9db469462e8f63724598f148be08",
+    "passage_words": 269
+  },
+  "finished_at": "2026-09-22T20:06:56.924909+00:00",
+  "latency_seconds": 12.9718,
+  "usage_cost_upper_estimate_usd": 0.03026,
+  "stream_status": "active",
+  "budget": {
+    "usage_cost_upper_estimate_usd": 4.3926095,
+    "uncertain_cost_reserve_usd": 0.04533,
+    "in_flight_reserve_usd": 0.3648075,
+    "limit_usd": 18.83
+  }
+}

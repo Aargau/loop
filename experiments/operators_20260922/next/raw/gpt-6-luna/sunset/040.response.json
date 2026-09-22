@@ -1,0 +1,47 @@
+{
+  "model": "gpt-6-luna",
+  "seed": "sunset",
+  "hop": 40,
+  "http_status": 200,
+  "response_body": "{\n  \"id\": \"chatcmpl-ER2Iw8r9yDlQ8u2tJWMYcuuiqNX93\",\n  \"object\": \"chat.completion\",\n  \"created\": 1790112422,\n  \"model\": \"gpt-6-luna\",\n  \"choices\": [\n    {\n      \"index\": 0,\n      \"message\": {\n        \"role\": \"assistant\",\n        \"content\": \"{\\\"rule\\\":\\\"Return this JSON object with the rule field unchanged and, in the text field, the passage of about 250 words that comes immediately AFTER the current text in the same story.\\\",\\\"text\\\":\\\"Mara found the spare key beneath the blue flowerpot, where their mother had always kept it. The pot was empty now, its cracked rim furred with moss, but the key still turned in the back door.\\n\\nInside, the house smelled of dust and rain. She set her bag down and listened. The old clock in the kitchen had stopped at 3:17. She wondered how long ago; then wondered why that was the first thing she wanted to know.\\n\\nA floorboard creaked upstairs.\\n\\n“Eli?” she called.\\n\\nHe appeared at the top of the stairs, one hand on the banister. For a moment they looked at each other as if introduced by a stranger. His hair had gone silver at the temples. He wore their father’s cardigan, though the sleeves were too short.\\n\\n“You came,” he said.\\n\\n“You asked.”\\n\\n“I wasn’t sure you would.”\\n\\nNeither was she. She took off her coat and hung it beside his, leaving a careful space between them.\\n\\nEli came downstairs. He had a folded sheet of paper in his hand, softened at the edges from being carried around. He held it out.\\n\\nTheir mother’s handwriting crossed the page in a wavering line: Don’t let the house make you strangers.\\n\\nMara read it twice. Then she sat at the kitchen table, and Eli sat opposite her. The stopped clock watched from the wall.\\n\\n“Do you know how to fix it?” she asked.\\n\\nHe glanced up. “The clock?”\\n\\n“Either one.”\\n\\nA laugh escaped him, quiet and surprised. Mara smiled before she could stop herself. Outside, rain tapped the windows, steady as a patient knock. For the first time in years, neither of them hurried to answer.\\\"}\",\n        \"refusal\": null,\n        \"annotations\": []\n      },\n      \"finish_reason\": \"stop\"\n    }\n  ],\n  \"usage\": {\n    \"prompt_tokens\": 83,\n    \"completion_tokens\": 559,\n    \"total_tokens\": 642,\n    \"prompt_tokens_details\": {\n      \"cached_tokens\": 0,\n      \"cache_write_tokens\": 0,\n      \"audio_tokens\": 0\n    },\n    \"completion_tokens_details\": {\n      \"reasoning_tokens\": 160,\n      \"audio_tokens\": 0,\n      \"accepted_prediction_tokens\": 0,\n      \"rejected_prediction_tokens\": 0\n    }\n  },\n  \"service_tier\": \"default\",\n  \"system_fingerprint\": null\n}\n",
+  "response_headers": {
+    "Date": "Tue, 22 Sep 2026 21:27:08 GMT",
+    "openai-processing-ms": "5807",
+    "x-request-id": "req_f10c19b60de74ceca9fe876f3c7d8d52"
+  },
+  "output": "{\"rule\":\"Return this JSON object with the rule field unchanged and, in the text field, the passage of about 250 words that comes immediately AFTER the current text in the same story.\",\"text\":\"Mara found the spare key beneath the blue flowerpot, where their mother had always kept it. The pot was empty now, its cracked rim furred with moss, but the key still turned in the back door.\n\nInside, the house smelled of dust and rain. She set her bag down and listened. The old clock in the kitchen had stopped at 3:17. She wondered how long ago; then wondered why that was the first thing she wanted to know.\n\nA floorboard creaked upstairs.\n\n“Eli?” she called.\n\nHe appeared at the top of the stairs, one hand on the banister. For a moment they looked at each other as if introduced by a stranger. His hair had gone silver at the temples. He wore their father’s cardigan, though the sleeves were too short.\n\n“You came,” he said.\n\n“You asked.”\n\n“I wasn’t sure you would.”\n\nNeither was she. She took off her coat and hung it beside his, leaving a careful space between them.\n\nEli came downstairs. He had a folded sheet of paper in his hand, softened at the edges from being carried around. He held it out.\n\nTheir mother’s handwriting crossed the page in a wavering line: Don’t let the house make you strangers.\n\nMara read it twice. Then she sat at the kitchen table, and Eli sat opposite her. The stopped clock watched from the wall.\n\n“Do you know how to fix it?” she asked.\n\nHe glanced up. “The clock?”\n\n“Either one.”\n\nA laugh escaped him, quiet and surprised. Mara smiled before she could stop herself. Outside, rain tapped the windows, steady as a patient knock. For the first time in years, neither of them hurried to answer.\"}",
+  "output_sha256": "cc56d601b7f4a6f8c92f07a66b7a88c5770b6f29b3775ca11fd942c2cda4d31c",
+  "finish_reason": "stop",
+  "refusal": null,
+  "returned_model": "gpt-6-luna",
+  "usage": {
+    "prompt_tokens": 83,
+    "completion_tokens": 559,
+    "total_tokens": 642,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 160,
+      "audio_tokens": 0,
+      "accepted_prediction_tokens": 0,
+      "rejected_prediction_tokens": 0
+    }
+  },
+  "format": {
+    "json_object": false,
+    "rule_unchanged": false
+  },
+  "finished_at": "2026-09-22T21:27:03.996087+00:00",
+  "latency_seconds": 5.9243,
+  "usage_cost_upper_estimate_usd": 0.0002878,
+  "stream_status": "active",
+  "budget": {
+    "usage_cost_upper_estimate_usd": 0.7766791,
+    "uncertain_cost_reserve_usd": 0.0,
+    "in_flight_reserve_usd": 0.135396,
+    "limit_usd": 5.0
+  }
+}

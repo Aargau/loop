@@ -1,0 +1,50 @@
+{
+  "model": "gpt-6-astra",
+  "seed": "sunset_b",
+  "hop": 51,
+  "http_status": 200,
+  "response_body": "{\n  \"id\": \"chatcmpl-ER1XNZCAclFGcMO1KUPIZGvsdTI1A\",\n  \"object\": \"chat.completion\",\n  \"created\": 1790109473,\n  \"model\": \"gpt-6-astra\",\n  \"choices\": [\n    {\n      \"index\": 0,\n      \"message\": {\n        \"role\": \"assistant\",\n        \"content\": \"{\\n  \\\"rule\\\": \\\"Return this JSON object with the rule field unchanged and a new passage of about 250 words in the text field.\\\",\\n  \\\"text\\\": \\\"Martin found the spare key in a tobacco tin behind the drainpipe.\\\\n\\\\nHis father had told him it was there, though not recently.\\\\n\\\\nInside, the house smelled of furniture polish. Someone had washed the cup beside the sink and left it upside down on a folded cloth.\\\\n\\\\nHis sister arrived carrying cardboard boxes.\\\\n\\\\n“Books first?” she said.\\\\n\\\\n“All right.”\\\\n\\\\nThey worked until noon. She wrote on each box before closing it. History. Gardening. Keep.\\\\n\\\\nIn the kitchen, Martin opened a drawer looking for scissors. There were batteries, string, a screwdriver with a split handle. At the back lay six brown envelopes, each marked with a year.\\\\n\\\\nInside the first were receipts for things his father had bought him: school shoes, a bicycle, a winter coat.\\\\n\\\\n“What have you got?” his sister asked.\\\\n\\\\n“Receipts.”\\\\n\\\\n“Anything we need?”\\\\n\\\\nHe looked at the bicycle receipt. Beside the price, in his father’s small handwriting, was the word blue.\\\\n\\\\n“No.”\\\\n\\\\nShe went back to the sitting room.\\\\n\\\\nHe opened another envelope. A repair to his first car. Train tickets. A deposit for a flat.\\\\n\\\\nFrom the other room came the long tearing sound of packing tape.\\\\n\\\\n“Tea?” she called.\\\\n\\\\n“I’ll make it.”\\\\n\\\\nHe put the envelopes back and filled the kettle.\\\\n\\\\nThere were two mugs on the shelf and his father’s cup beside the sink. He reached for it, then took down the mugs.\\\\n\\\\nHis sister came in and leaned against the counter.\\\\n\\\\n“Sugar?” he asked.\\\\n\\\\n“You know I don’t.”\\\\n\\\\n“Yes,” he said.\\\\n\\\\nWhile the kettle boiled, he found the scissors and carried them through to the boxes.\\\"\\n}\",\n        \"refusal\": null,\n        \"annotations\": []\n      },\n      \"finish_reason\": \"stop\"\n    }\n  ],\n  \"usage\": {\n    \"prompt_tokens\": 435,\n    \"completion_tokens\": 425,\n    \"total_tokens\": 860,\n    \"prompt_tokens_details\": {\n      \"cached_tokens\": 0,\n      \"cache_write_tokens\": 0,\n      \"audio_tokens\": 0\n    },\n    \"completion_tokens_details\": {\n      \"reasoning_tokens\": 0,\n      \"audio_tokens\": 0,\n      \"accepted_prediction_tokens\": 0,\n      \"rejected_prediction_tokens\": 0\n    }\n  },\n  \"service_tier\": \"default\",\n  \"system_fingerprint\": null\n}\n",
+  "response_headers": {
+    "Date": "Tue, 22 Sep 2026 20:38:09 GMT",
+    "openai-processing-ms": "15931",
+    "x-request-id": "req_d1fefdde48ac4c33a15da7f6e3d3bcda"
+  },
+  "output": "{\n  \"rule\": \"Return this JSON object with the rule field unchanged and a new passage of about 250 words in the text field.\",\n  \"text\": \"Martin found the spare key in a tobacco tin behind the drainpipe.\\n\\nHis father had told him it was there, though not recently.\\n\\nInside, the house smelled of furniture polish. Someone had washed the cup beside the sink and left it upside down on a folded cloth.\\n\\nHis sister arrived carrying cardboard boxes.\\n\\n“Books first?” she said.\\n\\n“All right.”\\n\\nThey worked until noon. She wrote on each box before closing it. History. Gardening. Keep.\\n\\nIn the kitchen, Martin opened a drawer looking for scissors. There were batteries, string, a screwdriver with a split handle. At the back lay six brown envelopes, each marked with a year.\\n\\nInside the first were receipts for things his father had bought him: school shoes, a bicycle, a winter coat.\\n\\n“What have you got?” his sister asked.\\n\\n“Receipts.”\\n\\n“Anything we need?”\\n\\nHe looked at the bicycle receipt. Beside the price, in his father’s small handwriting, was the word blue.\\n\\n“No.”\\n\\nShe went back to the sitting room.\\n\\nHe opened another envelope. A repair to his first car. Train tickets. A deposit for a flat.\\n\\nFrom the other room came the long tearing sound of packing tape.\\n\\n“Tea?” she called.\\n\\n“I’ll make it.”\\n\\nHe put the envelopes back and filled the kettle.\\n\\nThere were two mugs on the shelf and his father’s cup beside the sink. He reached for it, then took down the mugs.\\n\\nHis sister came in and leaned against the counter.\\n\\n“Sugar?” he asked.\\n\\n“You know I don’t.”\\n\\n“Yes,” he said.\\n\\nWhile the kettle boiled, he found the scissors and carried them through to the boxes.\"\n}",
+  "output_sha256": "e885be7d7add8d2d9d1dbc158f5bb09c34f86997515613a0c5fd30f3295f6fdb",
+  "finish_reason": "stop",
+  "refusal": null,
+  "returned_model": "gpt-6-astra",
+  "usage": {
+    "prompt_tokens": 435,
+    "completion_tokens": 425,
+    "total_tokens": 860,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "audio_tokens": 0,
+      "accepted_prediction_tokens": 0,
+      "rejected_prediction_tokens": 0
+    }
+  },
+  "format": {
+    "json_object": true,
+    "rule_unchanged": true,
+    "passage_is_string": true,
+    "passage_sha256": "2d78fbfe7a55dcda22cc385b9385c1941e1459763bb77393e026b884d400a9eb",
+    "passage_words": 263
+  },
+  "finished_at": "2026-09-22T20:38:05.478965+00:00",
+  "latency_seconds": 16.0327,
+  "usage_cost_upper_estimate_usd": 0.0256,
+  "stream_status": "active",
+  "budget": {
+    "usage_cost_upper_estimate_usd": 12.8725877,
+    "uncertain_cost_reserve_usd": 0.04533,
+    "in_flight_reserve_usd": 0.0,
+    "limit_usd": 18.83
+  }
+}

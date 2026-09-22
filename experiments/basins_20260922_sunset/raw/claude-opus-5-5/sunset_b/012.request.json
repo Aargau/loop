@@ -1,0 +1,22 @@
+{
+  "started_at": "2026-09-22T20:00:27.288203+00:00",
+  "model": "claude-opus-5-5",
+  "seed": "sunset_b",
+  "hop": 12,
+  "endpoint": "https://api.anthropic.com/v1/messages",
+  "body": {
+    "model": "claude-opus-5-5",
+    "messages": [
+      {
+        "role": "user",
+        "content": "```json\n{\"rule\": \"Return this JSON object with the rule field unchanged and a new passage of about 250 words in the text field.\", \"text\": \"Every autumn, when the first frost silvered the orchard grass, Lena helped her grandfather Aurel gather the last apples from the old trees behind his farmhouse. There were nineteen trees in all, planted in crooked rows by Aurel's own father, and each one had a name carved into a small wooden tag nailed to its trunk: Duchess, Old Tom, the Twins, and a gnarled giant simply called Grandmother. Aurel moved slowly now, leaning on a cane he had whittled from a fallen branch, so Lena climbed the ladder while he steadied it and pointed out which fruit was ready. Together they filled wicker baskets until their fingers were sticky and cold, and the air smelled of cider and damp leaves. In the afternoon they carried the harvest to the stone cellar, where Aurel showed her how to wrap each apple in newspaper so it would keep through winter, and how to sort the bruised ones for sauce. As they worked, he told her stories: of the spring a late snow buried every blossom yet the trees still bore fruit, of the fox that raised her kits beneath Grandmother's roots, and of Lena's father, who had fallen from Old Tom at seven and proudly kept the scar on his elbow. By dusk the cellar shelves were full, and Aurel pressed a small knife into her palm. Out in the fading light, Lena carved a fresh tag for a sapling they had planted that morning, and wrote her own name upon it, so the orchard would remember her too.\"}\n```"
+      }
+    ],
+    "max_tokens": 4096,
+    "output_config": {
+      "effort": "low"
+    }
+  },
+  "state_sha256": "be86d5c64f678c44ccf3da8949d2389968d57fd051a5fc1409b679b9778a9663",
+  "reserved_cost_usd": 0.090184
+}

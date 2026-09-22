@@ -1,0 +1,48 @@
+{
+  "model": "claude-fable-5-1",
+  "seed": "sunset_b",
+  "hop": 2,
+  "http_status": 200,
+  "response_body": "{\"model\":\"claude-fable-5-1\",\"id\":\"msg_011CfK4pHBvk3CneUP7QzS6n\",\"type\":\"message\",\"role\":\"assistant\",\"content\":[{\"type\":\"text\",\"text\":\"{\\\"rule\\\": \\\"Return this JSON object with the rule field unchanged and a new passage of about 250 words in the text field.\\\", \\\"text\\\": \\\"The morning fog had not yet lifted from the harbor when Tomas pushed the boat out from the dock. The water was flat and gray, the color of old pewter, and the oars dipped into it with a sound like someone clearing their throat. He rowed slowly, not because he was tired but because there was no reason to hurry. The fish would be where they always were, or they would not, and either way the day would unfold as it pleased.\\\\n\\\\nHis father had taught him to read the water when he was seven. Look for the ripples that move against the wind, the old man had said, and the gulls that circle without landing. Tomas had believed, back then, that these were secrets only fishermen knew. Later he understood that the harbor gave its signs freely to anyone patient enough to sit still and watch.\\\\n\\\\nThe fog began to thin as he reached the outer buoys. First the church steeple appeared above the town, then the red roofs below it, then the long curve of the seawall with its line of sleeping boats. Somewhere a bell rang once and stopped. A cormorant surfaced beside him, regarded him with an expression of mild disappointment, and dove again.\\\\n\\\\nTomas let the boat drift. He baited his lines and dropped them over the side, watching the weights sink until they vanished into the green dark. Then he leaned back against the gunwale and waited, as his father had waited, and his grandfather before that, while the sun climbed unhurried out of the sea and the whole world slowly turned to gold.\\\"}\"}],\"container\":null,\"stop_reason\":\"end_turn\",\"stop_sequence\":null,\"stop_details\":null,\"usage\":{\"input_tokens\":477,\"cache_creation_input_tokens\":0,\"cache_read_input_tokens\":0,\"cache_creation\":{\"ephemeral_5m_input_tokens\":0,\"ephemeral_1h_input_tokens\":0},\"output_tokens\":513,\"output_tokens_details\":{\"thinking_tokens\":0},\"service_tier\":\"standard\",\"inference_geo\":\"global\"}}",
+  "response_headers": {
+    "Date": "Tue, 22 Sep 2026 19:56:20 GMT",
+    "request-id": "req_011CfK4pGw411fXKCeqHZbum"
+  },
+  "output": "{\"rule\": \"Return this JSON object with the rule field unchanged and a new passage of about 250 words in the text field.\", \"text\": \"The morning fog had not yet lifted from the harbor when Tomas pushed the boat out from the dock. The water was flat and gray, the color of old pewter, and the oars dipped into it with a sound like someone clearing their throat. He rowed slowly, not because he was tired but because there was no reason to hurry. The fish would be where they always were, or they would not, and either way the day would unfold as it pleased.\\n\\nHis father had taught him to read the water when he was seven. Look for the ripples that move against the wind, the old man had said, and the gulls that circle without landing. Tomas had believed, back then, that these were secrets only fishermen knew. Later he understood that the harbor gave its signs freely to anyone patient enough to sit still and watch.\\n\\nThe fog began to thin as he reached the outer buoys. First the church steeple appeared above the town, then the red roofs below it, then the long curve of the seawall with its line of sleeping boats. Somewhere a bell rang once and stopped. A cormorant surfaced beside him, regarded him with an expression of mild disappointment, and dove again.\\n\\nTomas let the boat drift. He baited his lines and dropped them over the side, watching the weights sink until they vanished into the green dark. Then he leaned back against the gunwale and waited, as his father had waited, and his grandfather before that, while the sun climbed unhurried out of the sea and the whole world slowly turned to gold.\"}",
+  "output_sha256": "b7eca7765491c4f29d7ff2d875a48d20ae8175e1490e26dc0ef4216bda8b094c",
+  "finish_reason": "end_turn",
+  "refusal": null,
+  "returned_model": "claude-fable-5-1",
+  "usage": {
+    "input_tokens": 477,
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 0,
+    "cache_creation": {
+      "ephemeral_5m_input_tokens": 0,
+      "ephemeral_1h_input_tokens": 0
+    },
+    "output_tokens": 513,
+    "output_tokens_details": {
+      "thinking_tokens": 0
+    },
+    "service_tier": "standard",
+    "inference_geo": "global"
+  },
+  "format": {
+    "json_object": true,
+    "rule_unchanged": true,
+    "passage_is_string": true,
+    "passage_sha256": "8e23eba050569784d60644974adb47deee69940c5a0f488ae05329fc11efb029",
+    "passage_words": 270
+  },
+  "finished_at": "2026-09-22T19:56:17.042525+00:00",
+  "latency_seconds": 12.2439,
+  "usage_cost_upper_estimate_usd": 0.03042,
+  "stream_status": "active",
+  "budget": {
+    "usage_cost_upper_estimate_usd": 0.3439584,
+    "uncertain_cost_reserve_usd": 0.0,
+    "in_flight_reserve_usd": 0.3642576,
+    "limit_usd": 18.83
+  }
+}

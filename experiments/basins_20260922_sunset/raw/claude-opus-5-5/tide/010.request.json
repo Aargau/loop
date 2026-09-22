@@ -1,0 +1,22 @@
+{
+  "started_at": "2026-09-22T19:59:40.395035+00:00",
+  "model": "claude-opus-5-5",
+  "seed": "tide",
+  "hop": 10,
+  "endpoint": "https://api.anthropic.com/v1/messages",
+  "body": {
+    "model": "claude-opus-5-5",
+    "messages": [
+      {
+        "role": "user",
+        "content": "{\"rule\": \"Return this JSON object with the rule field unchanged and a new passage of about 250 words in the text field.\", \"text\": \"The letters stayed on the table for three days. The girl dusted around them, set her cup beside them, and once caught her father resting his hand on the bundle as if to check that it was still warm. On the fourth morning a fog rolled in, thick and white, erasing the mainland and the cove and even the end of the path. Her father climbed the tower to wind the old clockwork of the lamp, though no ship had needed it in years, and the girl followed with a lantern. At the top he stopped and looked out at nothing. Then he took the letters from his coat pocket, untied the string, and handed her the first one. She read it aloud while the fog pressed against the glass. It was written to her mother, dated the winter before the girl was born, and it described the island in plain, careful words: the wind that rattled the shutters, the gull with the notched wing, the plum tree he meant to plant by the cottage door. Every letter that followed spoke of the same tree, and every one promised that he would come back in spring. By the time she finished, the fog had begun to thin. Patches of blue showed above the cove, and the water glittered where the sun broke through. Her father folded the letters carefully and put them back in the tin. That evening he walked to the lee side of the cottage with a spade, and the girl watched him turn the dark, stony earth beside the door.\"}"
+      }
+    ],
+    "max_tokens": 4096,
+    "output_config": {
+      "effort": "low"
+    }
+  },
+  "state_sha256": "b347422219ca31da6aeb4f5e6cfd4278ce435ec73bcb8f6dd65e11af746e8ca9",
+  "reserved_cost_usd": 0.09
+}

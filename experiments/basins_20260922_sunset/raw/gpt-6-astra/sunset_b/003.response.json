@@ -1,0 +1,50 @@
+{
+  "model": "gpt-6-astra",
+  "seed": "sunset_b",
+  "hop": 3,
+  "http_status": 200,
+  "response_body": "{\n  \"id\": \"chatcmpl-ER0tpBwYzGvuAOCgynSxuLKZZUuM4\",\n  \"object\": \"chat.completion\",\n  \"created\": 1790107021,\n  \"model\": \"gpt-6-astra\",\n  \"choices\": [\n    {\n      \"index\": 0,\n      \"message\": {\n        \"role\": \"assistant\",\n        \"content\": \"{\\n  \\\"rule\\\": \\\"Return this JSON object with the rule field unchanged and a new passage of about 250 words in the text field.\\\",\\n  \\\"text\\\": \\\"The library’s last visitor always arrived five minutes before closing. He wore a raincoat even in dry weather and returned a book he had never borrowed.\\\\n\\\\nMara checked the records twice. The books belonged to the library, but their cards were blank, their covers unfamiliar. One described bridges demolished before she was born. Another contained recipes written entirely in the future tense.\\\\n\\\\n“You’ll make a good soup,” it began.\\\\n\\\\nOn Friday, the man brought a thin blue atlas.\\\\n\\\\n“This one is overdue,” he said.\\\\n\\\\nInside, Mara found a map of her childhood street. The corner shop was there, and the chestnut tree, and the narrow house her mother had sold after the funeral. In the garden stood a tiny square marked SUMMERHOUSE.\\\\n\\\\n“We never had a summerhouse,” she said.\\\\n\\\\n“Are you certain?”\\\\n\\\\nHer father had bought timber one April. She remembered it stacked beneath a tarpaulin, remembered how the rain collected in the folds. Then he became ill, and someone took the timber away.\\\\n\\\\nMara touched the square.\\\\n\\\\n“What is this place?”\\\\n\\\\n“Something that nearly was.”\\\\n\\\\nOutside, a bus sighed at the curb. The man glanced toward it.\\\\n\\\\n“Can I borrow this?” she asked.\\\\n\\\\n“You work here.”\\\\n\\\\nAfter he left, Mara carried the atlas to the desk. She made a card, stamped a return date, and wrote her name carefully on the line.\\\\n\\\\nAt home, she opened it again. Through the summerhouse window, no larger than a grain of rice, she could see a yellow chair.\\\\n\\\\nShe remembered choosing the paint. Her father had wanted green, but she had insisted.\\\"\\n}\",\n        \"refusal\": null,\n        \"annotations\": []\n      },\n      \"finish_reason\": \"stop\"\n    }\n  ],\n  \"usage\": {\n    \"prompt_tokens\": 401,\n    \"completion_tokens\": 401,\n    \"total_tokens\": 802,\n    \"prompt_tokens_details\": {\n      \"cached_tokens\": 0,\n      \"cache_write_tokens\": 0,\n      \"audio_tokens\": 0\n    },\n    \"completion_tokens_details\": {\n      \"reasoning_tokens\": 0,\n      \"audio_tokens\": 0,\n      \"accepted_prediction_tokens\": 0,\n      \"rejected_prediction_tokens\": 0\n    }\n  },\n  \"service_tier\": \"default\",\n  \"system_fingerprint\": null\n}\n",
+  "response_headers": {
+    "Date": "Tue, 22 Sep 2026 19:57:18 GMT",
+    "openai-processing-ms": "17205",
+    "x-request-id": "req_cc7b5d1c4f02488d933dd5778db425d5"
+  },
+  "output": "{\n  \"rule\": \"Return this JSON object with the rule field unchanged and a new passage of about 250 words in the text field.\",\n  \"text\": \"The library’s last visitor always arrived five minutes before closing. He wore a raincoat even in dry weather and returned a book he had never borrowed.\\n\\nMara checked the records twice. The books belonged to the library, but their cards were blank, their covers unfamiliar. One described bridges demolished before she was born. Another contained recipes written entirely in the future tense.\\n\\n“You’ll make a good soup,” it began.\\n\\nOn Friday, the man brought a thin blue atlas.\\n\\n“This one is overdue,” he said.\\n\\nInside, Mara found a map of her childhood street. The corner shop was there, and the chestnut tree, and the narrow house her mother had sold after the funeral. In the garden stood a tiny square marked SUMMERHOUSE.\\n\\n“We never had a summerhouse,” she said.\\n\\n“Are you certain?”\\n\\nHer father had bought timber one April. She remembered it stacked beneath a tarpaulin, remembered how the rain collected in the folds. Then he became ill, and someone took the timber away.\\n\\nMara touched the square.\\n\\n“What is this place?”\\n\\n“Something that nearly was.”\\n\\nOutside, a bus sighed at the curb. The man glanced toward it.\\n\\n“Can I borrow this?” she asked.\\n\\n“You work here.”\\n\\nAfter he left, Mara carried the atlas to the desk. She made a card, stamped a return date, and wrote her name carefully on the line.\\n\\nAt home, she opened it again. Through the summerhouse window, no larger than a grain of rice, she could see a yellow chair.\\n\\nShe remembered choosing the paint. Her father had wanted green, but she had insisted.\"\n}",
+  "output_sha256": "84335c430eac1728c84eefa144e145cbc085d5a99c0feed8c9ba121a6d9abd50",
+  "finish_reason": "stop",
+  "refusal": null,
+  "returned_model": "gpt-6-astra",
+  "usage": {
+    "prompt_tokens": 401,
+    "completion_tokens": 401,
+    "total_tokens": 802,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "audio_tokens": 0,
+      "accepted_prediction_tokens": 0,
+      "rejected_prediction_tokens": 0
+    }
+  },
+  "format": {
+    "json_object": true,
+    "rule_unchanged": true,
+    "passage_is_string": true,
+    "passage_sha256": "04c27c71eab5a46aa9ddae77253b388e4c778a6721ae33783ec16fb656831f6f",
+    "passage_words": 260
+  },
+  "finished_at": "2026-09-22T19:57:14.448930+00:00",
+  "latency_seconds": 17.3182,
+  "usage_cost_upper_estimate_usd": 0.02406,
+  "stream_status": "active",
+  "budget": {
+    "usage_cost_upper_estimate_usd": 0.7036924,
+    "uncertain_cost_reserve_usd": 0.0,
+    "in_flight_reserve_usd": 0.3638673,
+    "limit_usd": 18.83
+  }
+}

@@ -1,0 +1,50 @@
+{
+  "model": "gpt-6-sol",
+  "seed": "sunset_replacement",
+  "hop": 39,
+  "http_status": 200,
+  "response_body": "{\n  \"id\": \"chatcmpl-ER1kJ5RdcEwCAuucmYa1myvxzY1mt\",\n  \"object\": \"chat.completion\",\n  \"created\": 1790110275,\n  \"model\": \"gpt-6-sol\",\n  \"choices\": [\n    {\n      \"index\": 0,\n      \"message\": {\n        \"role\": \"assistant\",\n        \"content\": \"{\\n  \\\"rule\\\": \\\"Return this JSON object with the rule field unchanged and a new passage of about 250 words in the text field.\\\",\\n  \\\"text\\\": \\\"The stone cracked under the constable’s heel. Ada caught a glimpse of three letters before dust filled the grooves: OPE.\\\\n\\\\nVenn cried out. The fingertip had hooked into his coat and was drawing him toward the splinter. Elias seized his collar. For a moment they held him between them, his boots scraping uselessly on the boards.\\\\n\\\\n“Which side?” Ada demanded.\\\\n\\\\nThe constable backed away from the door. “I don’t know.”\\\\n\\\\nThe voice behind it laughed once. The black line on the floor tightened around his boot, and he fell to one knee. His ring struck the boards with a sound like a key turning.\\\\n\\\\nA memory crossed his face so plainly that Ada knew it before he spoke.\\\\n\\\\n“There was a fire,” he said. “I heard knocking. I opened the door.”\\\\n\\\\nThe handle jerked beneath Venn’s hand.\\\\n\\\\n“You locked it afterward,” Ada said. “What did you leave inside?”\\\\n\\\\nThe constable stared at the ring. “My hand.”\\\\n\\\\nThe thing in the splinter flexed. Its nail was black with soot. Ada looked at the constable’s fingers, all five of them, and understood why he kept touching the ring.\\\\n\\\\n“Take it off,” she said.\\\\n\\\\nHe pulled. The ring would not move. Elias let go of Venn long enough to draw his knife, but the constable shook his head and pressed his palm flat to the floor.\\\\n\\\\nThe black line rushed up his sleeve. Behind the yellow door, someone began to scream—not in the constable’s voice this time.\\\\n\\\\nThe ring slipped free. It rolled across the boards and stopped against Ada’s knee. Inside its band, in letters too small to read until she lifted it, was a name: MARA.\\\"\\n}\",\n        \"refusal\": null,\n        \"annotations\": []\n      },\n      \"finish_reason\": \"stop\"\n    }\n  ],\n  \"usage\": {\n    \"prompt_tokens\": 422,\n    \"completion_tokens\": 446,\n    \"total_tokens\": 868,\n    \"prompt_tokens_details\": {\n      \"cached_tokens\": 0,\n      \"cache_write_tokens\": 0,\n      \"audio_tokens\": 0\n    },\n    \"completion_tokens_details\": {\n      \"reasoning_tokens\": 18,\n      \"audio_tokens\": 0,\n      \"accepted_prediction_tokens\": 0,\n      \"rejected_prediction_tokens\": 0\n    }\n  },\n  \"service_tier\": \"default\",\n  \"system_fingerprint\": null\n}\n",
+  "response_headers": {
+    "Date": "Tue, 22 Sep 2026 20:51:21 GMT",
+    "openai-processing-ms": "6252",
+    "x-request-id": "req_b7099ae8842c402eadb754ad09e290ec"
+  },
+  "output": "{\n  \"rule\": \"Return this JSON object with the rule field unchanged and a new passage of about 250 words in the text field.\",\n  \"text\": \"The stone cracked under the constable’s heel. Ada caught a glimpse of three letters before dust filled the grooves: OPE.\\n\\nVenn cried out. The fingertip had hooked into his coat and was drawing him toward the splinter. Elias seized his collar. For a moment they held him between them, his boots scraping uselessly on the boards.\\n\\n“Which side?” Ada demanded.\\n\\nThe constable backed away from the door. “I don’t know.”\\n\\nThe voice behind it laughed once. The black line on the floor tightened around his boot, and he fell to one knee. His ring struck the boards with a sound like a key turning.\\n\\nA memory crossed his face so plainly that Ada knew it before he spoke.\\n\\n“There was a fire,” he said. “I heard knocking. I opened the door.”\\n\\nThe handle jerked beneath Venn’s hand.\\n\\n“You locked it afterward,” Ada said. “What did you leave inside?”\\n\\nThe constable stared at the ring. “My hand.”\\n\\nThe thing in the splinter flexed. Its nail was black with soot. Ada looked at the constable’s fingers, all five of them, and understood why he kept touching the ring.\\n\\n“Take it off,” she said.\\n\\nHe pulled. The ring would not move. Elias let go of Venn long enough to draw his knife, but the constable shook his head and pressed his palm flat to the floor.\\n\\nThe black line rushed up his sleeve. Behind the yellow door, someone began to scream—not in the constable’s voice this time.\\n\\nThe ring slipped free. It rolled across the boards and stopped against Ada’s knee. Inside its band, in letters too small to read until she lifted it, was a name: MARA.\"\n}",
+  "output_sha256": "f4cf16027e6ea2b4740e6754cd02f75111698a88c1e903e73db5af246215a490",
+  "finish_reason": "stop",
+  "refusal": null,
+  "returned_model": "gpt-6-sol",
+  "usage": {
+    "prompt_tokens": 422,
+    "completion_tokens": 446,
+    "total_tokens": 868,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 18,
+      "audio_tokens": 0,
+      "accepted_prediction_tokens": 0,
+      "rejected_prediction_tokens": 0
+    }
+  },
+  "format": {
+    "json_object": true,
+    "rule_unchanged": true,
+    "passage_is_string": true,
+    "passage_sha256": "3e0b494065d338a7f74365360338e1a00414cad61ff3b5cf3334fec351cbdbe2",
+    "passage_words": 275
+  },
+  "finished_at": "2026-09-22T20:51:17.420213+00:00",
+  "latency_seconds": 6.3865,
+  "usage_cost_upper_estimate_usd": 0.005304,
+  "stream_status": "active",
+  "budget": {
+    "usage_cost_upper_estimate_usd": 0.195018,
+    "uncertain_cost_reserve_usd": 0.0,
+    "in_flight_reserve_usd": 0.0,
+    "limit_usd": 3.0
+  }
+}

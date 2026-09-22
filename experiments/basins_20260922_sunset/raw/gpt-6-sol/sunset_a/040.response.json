@@ -1,0 +1,50 @@
+{
+  "model": "gpt-6-sol",
+  "seed": "sunset_a",
+  "hop": 40,
+  "http_status": 200,
+  "response_body": "{\n  \"id\": \"chatcmpl-ER110b9m8RwhOHFIGnHYcVQHjGwel\",\n  \"object\": \"chat.completion\",\n  \"created\": 1790107466,\n  \"model\": \"gpt-6-sol\",\n  \"choices\": [\n    {\n      \"index\": 0,\n      \"message\": {\n        \"role\": \"assistant\",\n        \"content\": \"{\\n  \\\"rule\\\": \\\"Return this JSON object with the rule field unchanged and a new passage of about 250 words in the text field.\\\",\\n  \\\"text\\\": \\\"The next box arrived on Monday. It had once held oranges, and the baker set it beneath the window with a stack of clean cards inside. By lunchtime, someone had written a recipe for soup on the first one. By closing, there were three more.\\\\n\\\\nImani liked reading them while her grandfather chose his bread. Some were careful, with measurements and oven temperatures. Others said things like Cook until it smells right, or Add enough lemon to make everyone ask what’s in it.\\\\n\\\\nOne rainy afternoon, she found a card in Elias’s handwriting. It described how to mend a torn apron pocket with a scrap of cloth. At the bottom he had added, Not a recipe, but useful when you carry too many things.\\\\n\\\\nThe baker left it in the box.\\\\n\\\\nSoon the cards included instructions for growing mint on a windowsill, getting candle wax out of a tablecloth, and teaching a dog to wait by the door. Imani’s grandfather contributed one for whistling through a blade of grass. It took him three attempts to explain it clearly, and another four to demonstrate it.\\\\n\\\\nIn spring, the baker tied the oldest cards into bundles with string. He put them on a shelf where anyone could borrow one and bring it back. Imani watched a woman take the jam-pocket card, now soft at the edges.\\\\n\\\\n‘Do you think she’ll put a tray underneath?’ Imani asked.\\\\n\\\\n‘If she reads the whole thing,’ her grandfather said.\\\\n\\\\nThe woman paused at the door, turned the card over, and smiled. Then she went back to ask the baker for pastry scraps.\\\"\\n}\",\n        \"refusal\": null,\n        \"annotations\": []\n      },\n      \"finish_reason\": \"stop\"\n    }\n  ],\n  \"usage\": {\n    \"prompt_tokens\": 359,\n    \"completion_tokens\": 406,\n    \"total_tokens\": 765,\n    \"prompt_tokens_details\": {\n      \"cached_tokens\": 0,\n      \"cache_write_tokens\": 0,\n      \"audio_tokens\": 0\n    },\n    \"completion_tokens_details\": {\n      \"reasoning_tokens\": 27,\n      \"audio_tokens\": 0,\n      \"accepted_prediction_tokens\": 0,\n      \"rejected_prediction_tokens\": 0\n    }\n  },\n  \"service_tier\": \"default\",\n  \"system_fingerprint\": null\n}\n",
+  "response_headers": {
+    "Date": "Tue, 22 Sep 2026 20:04:33 GMT",
+    "openai-processing-ms": "7266",
+    "x-request-id": "req_1fd810f92d8b4ba58c6db8c209ec07d7"
+  },
+  "output": "{\n  \"rule\": \"Return this JSON object with the rule field unchanged and a new passage of about 250 words in the text field.\",\n  \"text\": \"The next box arrived on Monday. It had once held oranges, and the baker set it beneath the window with a stack of clean cards inside. By lunchtime, someone had written a recipe for soup on the first one. By closing, there were three more.\\n\\nImani liked reading them while her grandfather chose his bread. Some were careful, with measurements and oven temperatures. Others said things like Cook until it smells right, or Add enough lemon to make everyone ask what’s in it.\\n\\nOne rainy afternoon, she found a card in Elias’s handwriting. It described how to mend a torn apron pocket with a scrap of cloth. At the bottom he had added, Not a recipe, but useful when you carry too many things.\\n\\nThe baker left it in the box.\\n\\nSoon the cards included instructions for growing mint on a windowsill, getting candle wax out of a tablecloth, and teaching a dog to wait by the door. Imani’s grandfather contributed one for whistling through a blade of grass. It took him three attempts to explain it clearly, and another four to demonstrate it.\\n\\nIn spring, the baker tied the oldest cards into bundles with string. He put them on a shelf where anyone could borrow one and bring it back. Imani watched a woman take the jam-pocket card, now soft at the edges.\\n\\n‘Do you think she’ll put a tray underneath?’ Imani asked.\\n\\n‘If she reads the whole thing,’ her grandfather said.\\n\\nThe woman paused at the door, turned the card over, and smiled. Then she went back to ask the baker for pastry scraps.\"\n}",
+  "output_sha256": "f24e9719855f61b4e644a8f4e406b62e89e813615762780ee09643ed6829e4c3",
+  "finish_reason": "stop",
+  "refusal": null,
+  "returned_model": "gpt-6-sol",
+  "usage": {
+    "prompt_tokens": 359,
+    "completion_tokens": 406,
+    "total_tokens": 765,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 27,
+      "audio_tokens": 0,
+      "accepted_prediction_tokens": 0,
+      "rejected_prediction_tokens": 0
+    }
+  },
+  "format": {
+    "json_object": true,
+    "rule_unchanged": true,
+    "passage_is_string": true,
+    "passage_sha256": "d7fd1a72f0fbed7b80d7007ed6c7492fe19728bd6be4b57fd3d934c2cadb1aa0",
+    "passage_words": 266
+  },
+  "finished_at": "2026-09-22T20:04:29.391292+00:00",
+  "latency_seconds": 7.3563,
+  "usage_cost_upper_estimate_usd": 0.004778,
+  "stream_status": "active",
+  "budget": {
+    "usage_cost_upper_estimate_usd": 3.4334986,
+    "uncertain_cost_reserve_usd": 0.04533,
+    "in_flight_reserve_usd": 0.5460192,
+    "limit_usd": 18.83
+  }
+}

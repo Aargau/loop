@@ -1,0 +1,22 @@
+{
+  "started_at": "2026-09-22T19:57:21.330797+00:00",
+  "model": "claude-opus-5-5",
+  "seed": "sunset_b",
+  "hop": 5,
+  "endpoint": "https://api.anthropic.com/v1/messages",
+  "body": {
+    "model": "claude-opus-5-5",
+    "messages": [
+      {
+        "role": "user",
+        "content": "```json\n{\"rule\": \"Return this JSON object with the rule field unchanged and a new passage of about 250 words in the text field.\", \"text\": \"The first rain of spring arrived just after midnight, tapping softly against the greenhouse glass like a visitor unsure of its welcome. Tomas woke to the sound and lay still for a while, listening, before pulling on his boots and a heavy coat and crossing the muddy yard with a lantern swinging from his hand. Inside the greenhouse the air was thick and warm, rich with the smell of damp soil and crushed basil. Rows of seedlings leaned toward him in the lamplight, their pale stems trembling slightly as drops found the small gaps in the roof. He moved among them slowly, checking the trays, pressing a fingertip into the earth to feel its moisture, murmuring to the plants the way his father once had. His father used to say that growing things could hear worry in a voice, so one must always speak to them with patience. Tomas had laughed at that as a boy. Now he found himself doing it without thinking. He paused beside a clay pot on the corner shelf, where a stubborn lemon tree had refused to bloom for three long years. Tonight, tucked among the glossy leaves, he spotted a single white bud, tightly furled and faintly fragrant. He set the lantern down and crouched to look closer, hardly daring to breathe. Outside, the rain grew steadier, drumming a gentle rhythm on the glass. Tomas sat on an overturned bucket and stayed there until the sky began to pale, keeping the small bud company as it waited for morning.\"}\n```"
+      }
+    ],
+    "max_tokens": 4096,
+    "output_config": {
+      "effort": "low"
+    }
+  },
+  "state_sha256": "074043cb91878ef6c034744806f56d09c75e97d0a66e146b71fdc5ae32b0cd1f",
+  "reserved_cost_usd": 0.09024
+}

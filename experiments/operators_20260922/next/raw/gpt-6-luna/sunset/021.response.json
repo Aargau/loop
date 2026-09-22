@@ -1,0 +1,47 @@
+{
+  "model": "gpt-6-luna",
+  "seed": "sunset",
+  "hop": 21,
+  "http_status": 200,
+  "response_body": "{\n  \"id\": \"chatcmpl-ER2HUIBqRnjd1Uykd5vpAr3xhiGel\",\n  \"object\": \"chat.completion\",\n  \"created\": 1790112332,\n  \"model\": \"gpt-6-luna\",\n  \"choices\": [\n    {\n      \"index\": 0,\n      \"message\": {\n        \"role\": \"assistant\",\n        \"content\": \"{\\\"rule\\\":\\\"Return this JSON object with the rule field unchanged and, in the text field, the passage of about 250 words that comes immediately AFTER the current text in the same story.\\\",\\\"text\\\":\\\"At breakfast, Mara found a narrow strip of paper tucked between the book’s pages. The handwriting was unfamiliar, and the ink had run as if it had been written in the rain.\\n\\n“Follow the river until it forgets its name,” it said. Beneath the words was a small drawing of a bell.\\n\\nTomas studied the sketch. “There’s an old bell tower beyond the hills,” he said. “It’s marked on my map, though the road ends before it.”\\n\\n“Then we’ll have to discover what comes after the road,” Mara said.\\n\\nThey set out that morning with the book, Tomas’s map, and a loaf of bread from the baker. At the edge of town, the shepherd joined them, carrying his flute. The little girl came too, with her reed pipe tucked into her coat.\\n\\nThe road climbed through fields and narrowed among the trees. Whenever they lost their way, Tomas hummed the tune. Sometimes the birds answered. Once, a stream seemed to turn its bubbling into a rhythm, and Mara wrote it down.\\n\\nBy afternoon they reached a fork. One path led uphill toward a stand of dark pines. The other followed a river that wound between stones.\\n\\n“Which one?” asked the girl.\\n\\nTomas looked at his map, then at the river. “The note says to follow it.”\\n\\nThey walked beside the water until dusk. Just as the sky turned violet, the river split around a mossy hill—and from inside the hill came the sound of a bell.\\n\\nIt rang once.\\n\\nThe melody in their heads changed, making room for a note none of them had heard before.\\\"}\",\n        \"refusal\": null,\n        \"annotations\": []\n      },\n      \"finish_reason\": \"stop\"\n    }\n  ],\n  \"usage\": {\n    \"prompt_tokens\": 373,\n    \"completion_tokens\": 445,\n    \"total_tokens\": 818,\n    \"prompt_tokens_details\": {\n      \"cached_tokens\": 0,\n      \"cache_write_tokens\": 0,\n      \"audio_tokens\": 0\n    },\n    \"completion_tokens_details\": {\n      \"reasoning_tokens\": 67,\n      \"audio_tokens\": 0,\n      \"accepted_prediction_tokens\": 0,\n      \"rejected_prediction_tokens\": 0\n    }\n  },\n  \"service_tier\": \"default\",\n  \"system_fingerprint\": null\n}\n",
+  "response_headers": {
+    "Date": "Tue, 22 Sep 2026 21:25:37 GMT",
+    "openai-processing-ms": "5029",
+    "x-request-id": "req_df8dd999daf44ee1bb2a642336b6f127"
+  },
+  "output": "{\"rule\":\"Return this JSON object with the rule field unchanged and, in the text field, the passage of about 250 words that comes immediately AFTER the current text in the same story.\",\"text\":\"At breakfast, Mara found a narrow strip of paper tucked between the book’s pages. The handwriting was unfamiliar, and the ink had run as if it had been written in the rain.\n\n“Follow the river until it forgets its name,” it said. Beneath the words was a small drawing of a bell.\n\nTomas studied the sketch. “There’s an old bell tower beyond the hills,” he said. “It’s marked on my map, though the road ends before it.”\n\n“Then we’ll have to discover what comes after the road,” Mara said.\n\nThey set out that morning with the book, Tomas’s map, and a loaf of bread from the baker. At the edge of town, the shepherd joined them, carrying his flute. The little girl came too, with her reed pipe tucked into her coat.\n\nThe road climbed through fields and narrowed among the trees. Whenever they lost their way, Tomas hummed the tune. Sometimes the birds answered. Once, a stream seemed to turn its bubbling into a rhythm, and Mara wrote it down.\n\nBy afternoon they reached a fork. One path led uphill toward a stand of dark pines. The other followed a river that wound between stones.\n\n“Which one?” asked the girl.\n\nTomas looked at his map, then at the river. “The note says to follow it.”\n\nThey walked beside the water until dusk. Just as the sky turned violet, the river split around a mossy hill—and from inside the hill came the sound of a bell.\n\nIt rang once.\n\nThe melody in their heads changed, making room for a note none of them had heard before.\"}",
+  "output_sha256": "a6d571c6e521b8643dc99ea6da3fdf1989433637c0d74d0a6292351f4f66fc25",
+  "finish_reason": "stop",
+  "refusal": null,
+  "returned_model": "gpt-6-luna",
+  "usage": {
+    "prompt_tokens": 373,
+    "completion_tokens": 445,
+    "total_tokens": 818,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 67,
+      "audio_tokens": 0,
+      "accepted_prediction_tokens": 0,
+      "rejected_prediction_tokens": 0
+    }
+  },
+  "format": {
+    "json_object": false,
+    "rule_unchanged": false
+  },
+  "finished_at": "2026-09-22T21:25:33.143358+00:00",
+  "latency_seconds": 5.162,
+  "usage_cost_upper_estimate_usd": 0.0002598,
+  "stream_status": "active",
+  "budget": {
+    "usage_cost_upper_estimate_usd": 0.4488856,
+    "uncertain_cost_reserve_usd": 0.0,
+    "in_flight_reserve_usd": 0.347684,
+    "limit_usd": 5.0
+  }
+}

@@ -1,0 +1,22 @@
+{
+  "started_at": "2026-09-22T19:57:54.198801+00:00",
+  "model": "claude-opus-5-5",
+  "seed": "tide",
+  "hop": 6,
+  "endpoint": "https://api.anthropic.com/v1/messages",
+  "body": {
+    "model": "claude-opus-5-5",
+    "messages": [
+      {
+        "role": "user",
+        "content": "{\"rule\": \"Return this JSON object with the rule field unchanged and a new passage of about 250 words in the text field.\", \"text\": \"The attic stairs groaned under their weight, each step narrower than the last, until the girl had to climb sideways with the lantern held high above her head. Her father followed, one hand on the wall, breathing the dust of forty years. At the top, the air was cold and smelled of salt and old rope. Rafters sloped low overhead, strung with cobwebs that shivered in the lantern's glow. Broken chairs leaned against a trunk of faded bunting, and a rusted foghorn lay on its side like a sleeping animal. \\\"It was here,\\\" her father whispered, pointing to a bare patch of floor beneath the round window. \\\"Right here.\\\" The boards were paler in a rectangle, as though something had rested there for a long time and then been dragged away. The girl knelt and ran her fingers along the edge. Two faint grooves led toward the far corner, where a canvas sheet hung from a nail. She lifted it. Behind the sheet was not a chest but a small door, no taller than her shoulder, set flush into the wall and painted the same grey as the plaster. In its center sat a brass keyhole shaped like an open shell. Her father made a sound she had never heard from him before, something between a laugh and a sob. The beam swept past the round window, flooding the attic with white light, then leaving them in darkness again. The girl counted eleven seconds. Then she held out her hand, and he placed the key in her palm.\"}"
+      }
+    ],
+    "max_tokens": 4096,
+    "output_config": {
+      "effort": "low"
+    }
+  },
+  "state_sha256": "e55718d4108ef68ff5aa078bfdcf6bb96963564a273859e24e4245c7c4f438c8",
+  "reserved_cost_usd": 0.090092
+}

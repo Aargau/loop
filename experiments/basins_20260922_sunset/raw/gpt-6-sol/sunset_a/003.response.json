@@ -1,0 +1,50 @@
+{
+  "model": "gpt-6-sol",
+  "seed": "sunset_a",
+  "hop": 3,
+  "http_status": 200,
+  "response_body": "{\n  \"id\": \"chatcmpl-ER0skmHkHtuxQuvUBR3e4IVXBtki5\",\n  \"object\": \"chat.completion\",\n  \"created\": 1790106954,\n  \"model\": \"gpt-6-sol\",\n  \"choices\": [\n    {\n      \"index\": 0,\n      \"message\": {\n        \"role\": \"assistant\",\n        \"content\": \"{\\n  \\\"rule\\\": \\\"Return this JSON object with the rule field unchanged and a new passage of about 250 words in the text field.\\\",\\n  \\\"text\\\": \\\"For three weeks, Mara listened for the post each morning. She told herself she was waiting for a book she had ordered for the library, but when its padded envelope arrived, she left it unopened on the hall table.\\\\n\\\\nHer father’s letter came on a Thursday. The envelope was thin. She carried it into the kitchen and set it beside the blue suitcase, which she had brought down from the attic after writing to him. Its clasp had rusted, and one wheel no longer turned.\\\\n\\\\nHe thanked her for writing. He said he was sorry, though he did not try to explain the years away. He remembered the fair, too, and how she had refused to let him help with the suitcase, stopping every few steps to change hands. At the bottom of the page, he had written his telephone number. She read the letter twice, then put it back in its envelope.\\\\n\\\\nThat afternoon, Mara took the suitcase to a repair shop. The man behind the counter turned the broken wheel with his thumb and said he might be able to find a match. She left it with him.\\\\n\\\\nAt home, she stood by the telephone for a while. Then she went outside to bring in the washing before the clouds reached the garden. She folded the sheets, made supper, and washed her plate. Afterward, she called the number.\\\\n\\\\nA man answered on the third ring. Mara looked out at the darkening fields and said, ‘Hello, Dad.’\\\"\\n}\",\n        \"refusal\": null,\n        \"annotations\": []\n      },\n      \"finish_reason\": \"stop\"\n    }\n  ],\n  \"usage\": {\n    \"prompt_tokens\": 336,\n    \"completion_tokens\": 379,\n    \"total_tokens\": 715,\n    \"prompt_tokens_details\": {\n      \"cached_tokens\": 0,\n      \"cache_write_tokens\": 0,\n      \"audio_tokens\": 0\n    },\n    \"completion_tokens_details\": {\n      \"reasoning_tokens\": 33,\n      \"audio_tokens\": 0,\n      \"accepted_prediction_tokens\": 0,\n      \"rejected_prediction_tokens\": 0\n    }\n  },\n  \"service_tier\": \"default\",\n  \"system_fingerprint\": null\n}\n",
+  "response_headers": {
+    "Date": "Tue, 22 Sep 2026 19:56:00 GMT",
+    "openai-processing-ms": "5599",
+    "x-request-id": "req_427733d27a184526bbebb3ec427d7711"
+  },
+  "output": "{\n  \"rule\": \"Return this JSON object with the rule field unchanged and a new passage of about 250 words in the text field.\",\n  \"text\": \"For three weeks, Mara listened for the post each morning. She told herself she was waiting for a book she had ordered for the library, but when its padded envelope arrived, she left it unopened on the hall table.\\n\\nHer father’s letter came on a Thursday. The envelope was thin. She carried it into the kitchen and set it beside the blue suitcase, which she had brought down from the attic after writing to him. Its clasp had rusted, and one wheel no longer turned.\\n\\nHe thanked her for writing. He said he was sorry, though he did not try to explain the years away. He remembered the fair, too, and how she had refused to let him help with the suitcase, stopping every few steps to change hands. At the bottom of the page, he had written his telephone number. She read the letter twice, then put it back in its envelope.\\n\\nThat afternoon, Mara took the suitcase to a repair shop. The man behind the counter turned the broken wheel with his thumb and said he might be able to find a match. She left it with him.\\n\\nAt home, she stood by the telephone for a while. Then she went outside to bring in the washing before the clouds reached the garden. She folded the sheets, made supper, and washed her plate. Afterward, she called the number.\\n\\nA man answered on the third ring. Mara looked out at the darkening fields and said, ‘Hello, Dad.’\"\n}",
+  "output_sha256": "6eba5b2bcab9c5ae4a8d5ce93f96a60f6ba118d8b9fe346e497e6a823978bfdb",
+  "finish_reason": "stop",
+  "refusal": null,
+  "returned_model": "gpt-6-sol",
+  "usage": {
+    "prompt_tokens": 336,
+    "completion_tokens": 379,
+    "total_tokens": 715,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 33,
+      "audio_tokens": 0,
+      "accepted_prediction_tokens": 0,
+      "rejected_prediction_tokens": 0
+    }
+  },
+  "format": {
+    "json_object": true,
+    "rule_unchanged": true,
+    "passage_is_string": true,
+    "passage_sha256": "35194c5aa8eb53db9f9b5c90660bb6e4218f12074c3209202eedce52fb5f4d71",
+    "passage_words": 248
+  },
+  "finished_at": "2026-09-22T19:55:56.353603+00:00",
+  "latency_seconds": 5.7053,
+  "usage_cost_upper_estimate_usd": 0.004462,
+  "stream_status": "active",
+  "budget": {
+    "usage_cost_upper_estimate_usd": 0.2174741,
+    "uncertain_cost_reserve_usd": 0.0,
+    "in_flight_reserve_usd": 0.54499,
+    "limit_usd": 18.83
+  }
+}

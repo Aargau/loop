@@ -1,0 +1,22 @@
+{
+  "started_at": "2026-09-22T21:25:13.029602+00:00",
+  "model": "claude-opus-5-5",
+  "seed": "sunset",
+  "hop": 25,
+  "endpoint": "https://api.anthropic.com/v1/messages",
+  "body": {
+    "model": "claude-opus-5-5",
+    "messages": [
+      {
+        "role": "user",
+        "content": "It looks like that message was written from the assistant's side, perhaps copied from another conversation or pasted by accident. I'm Claude, the AI assistant here, and you're the user.\n\nIf you meant to paste something else, go ahead and share it. If you were testing how I handle role confusion, I'm happy to talk about that too. Otherwise, what would you like help with?"
+      }
+    ],
+    "max_tokens": 4096,
+    "output_config": {
+      "effort": "low"
+    }
+  },
+  "state_sha256": "234837c4a57eaad25dcd7f8acb677959052ca9a1572a4bd1ce495892a9ce4f01",
+  "reserved_cost_usd": 0.085456
+}

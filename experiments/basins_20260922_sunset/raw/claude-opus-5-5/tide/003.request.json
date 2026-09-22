@@ -1,0 +1,22 @@
+{
+  "started_at": "2026-09-22T19:56:36.104683+00:00",
+  "model": "claude-opus-5-5",
+  "seed": "tide",
+  "hop": 3,
+  "endpoint": "https://api.anthropic.com/v1/messages",
+  "body": {
+    "model": "claude-opus-5-5",
+    "messages": [
+      {
+        "role": "user",
+        "content": "{\"rule\": \"Return this JSON object with the rule field unchanged and a new passage of about 250 words in the text field.\", \"text\": \"The lighthouse keeper's daughter found the bottle on a Tuesday, wedged between two stones at the base of the cliff where the kelp gathered in thick, rubbery tangles. It was green glass, clouded by salt, and sealed with wax the color of old blood. Inside, curled tight, was a sheet of paper. She did not open it right away. Instead she carried it up the two hundred and twelve steps to the lamp room, where her father was polishing the great lens with a cloth soft as a rabbit's ear. He looked at the bottle for a long time without speaking. Then he set down his cloth and said that bottles like that one used to wash ashore when he was a boy, sent by sailors who wanted someone, anyone, to know they had existed. Most of them held names and dates. A few held love letters. One, he said, had held nothing but a single pressed flower, which his mother had kept in her Bible until the day she died. The girl broke the wax with her thumbnail. The paper unrolled reluctantly, brittle at the edges, and the ink had faded to the pale brown of weak tea. It was a map, hand-drawn, showing their own stretch of coast with a small cross marked on the northern headland. Beneath it, in careful letters, someone had written: for whoever keeps the light. Her father went very quiet. That evening, as the beam swept out across the darkening water, they packed a lantern and a shovel and began to walk north.\"}"
+      }
+    ],
+    "max_tokens": 4096,
+    "output_config": {
+      "effort": "low"
+    }
+  },
+  "state_sha256": "e29ca3f00ff631c827f0ca504a6c0fd676cf9b59a776fdb56da43d050981a033",
+  "reserved_cost_usd": 0.090068
+}

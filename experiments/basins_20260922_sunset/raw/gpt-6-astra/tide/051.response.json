@@ -1,0 +1,50 @@
+{
+  "model": "gpt-6-astra",
+  "seed": "tide",
+  "hop": 51,
+  "http_status": 200,
+  "response_body": "{\n  \"id\": \"chatcmpl-ER1XeaqMX98LHuH7aB4Xl3W5rnwDl\",\n  \"object\": \"chat.completion\",\n  \"created\": 1790109490,\n  \"model\": \"gpt-6-astra\",\n  \"choices\": [\n    {\n      \"index\": 0,\n      \"message\": {\n        \"role\": \"assistant\",\n        \"content\": \"{\\n  \\\"rule\\\": \\\"Return this JSON object with the rule field unchanged and a new passage of about 250 words in the text field.\\\",\\n  \\\"text\\\": \\\"My mother asked me to take the good plates down.\\\\n\\\\n“How many?”\\\\n\\\\n“Four.”\\\\n\\\\nThere would be three of us. I reached into the cupboard without saying anything.\\\\n\\\\nShe had put a cloth over the kitchen table. One corner caught on the radiator, and I freed it while she checked the potatoes.\\\\n\\\\n“Your brother's late.”\\\\n\\\\n“He said half past.”\\\\n\\\\n“Did he?”\\\\n\\\\nShe lifted the lid again.\\\\n\\\\nI laid out the plates. The fourth went beside her, where my father used to sit with his chair pushed back to make room for his knees.\\\\n\\\\n“Not that one,” she said.\\\\n\\\\nI looked at her.\\\\n\\\\n“It's chipped.”\\\\n\\\\nThere was a small notch under the rim. I had forgotten she knew every plate by touch.\\\\n\\\\nI took it back to the cupboard.\\\\n\\\\n“Shall I get another?”\\\\n\\\\nShe turned the gas down, then up a little.\\\\n\\\\n“No. These are enough.”\\\\n\\\\nMy brother arrived carrying a cake in a box too large for it. He kissed her and asked what needed doing.\\\\n\\\\n“Gravy,” she said.\\\\n\\\\nHe whisked it with a fork while I carried the dishes through. We passed each other carefully in the doorway.\\\\n\\\\nAt the table, my mother gave him the serving spoon.\\\\n\\\\n“You do it. You'll only complain about the portions.”\\\\n\\\\nAfter lunch I washed and she dried. She held each plate against her apron before putting it away.\\\\n\\\\nWhen she reached the chipped one on the counter, she handed it to me.\\\\n\\\\n“Bottom of the pile.”\\\\n\\\\nI lifted the others for her.\\\\n\\\\n“No need to throw it out,” she said.\\\"\\n}\",\n        \"refusal\": null,\n        \"annotations\": []\n      },\n      \"finish_reason\": \"stop\"\n    }\n  ],\n  \"usage\": {\n    \"prompt_tokens\": 439,\n    \"completion_tokens\": 416,\n    \"total_tokens\": 855,\n    \"prompt_tokens_details\": {\n      \"cached_tokens\": 0,\n      \"cache_write_tokens\": 0,\n      \"audio_tokens\": 0\n    },\n    \"completion_tokens_details\": {\n      \"reasoning_tokens\": 0,\n      \"audio_tokens\": 0,\n      \"accepted_prediction_tokens\": 0,\n      \"rejected_prediction_tokens\": 0\n    }\n  },\n  \"service_tier\": \"default\",\n  \"system_fingerprint\": null\n}\n",
+  "response_headers": {
+    "Date": "Tue, 22 Sep 2026 20:38:29 GMT",
+    "openai-processing-ms": "19858",
+    "x-request-id": "req_8d1bbceeedef4d55a13202c9ddc27f9a"
+  },
+  "output": "{\n  \"rule\": \"Return this JSON object with the rule field unchanged and a new passage of about 250 words in the text field.\",\n  \"text\": \"My mother asked me to take the good plates down.\\n\\n“How many?”\\n\\n“Four.”\\n\\nThere would be three of us. I reached into the cupboard without saying anything.\\n\\nShe had put a cloth over the kitchen table. One corner caught on the radiator, and I freed it while she checked the potatoes.\\n\\n“Your brother's late.”\\n\\n“He said half past.”\\n\\n“Did he?”\\n\\nShe lifted the lid again.\\n\\nI laid out the plates. The fourth went beside her, where my father used to sit with his chair pushed back to make room for his knees.\\n\\n“Not that one,” she said.\\n\\nI looked at her.\\n\\n“It's chipped.”\\n\\nThere was a small notch under the rim. I had forgotten she knew every plate by touch.\\n\\nI took it back to the cupboard.\\n\\n“Shall I get another?”\\n\\nShe turned the gas down, then up a little.\\n\\n“No. These are enough.”\\n\\nMy brother arrived carrying a cake in a box too large for it. He kissed her and asked what needed doing.\\n\\n“Gravy,” she said.\\n\\nHe whisked it with a fork while I carried the dishes through. We passed each other carefully in the doorway.\\n\\nAt the table, my mother gave him the serving spoon.\\n\\n“You do it. You'll only complain about the portions.”\\n\\nAfter lunch I washed and she dried. She held each plate against her apron before putting it away.\\n\\nWhen she reached the chipped one on the counter, she handed it to me.\\n\\n“Bottom of the pile.”\\n\\nI lifted the others for her.\\n\\n“No need to throw it out,” she said.\"\n}",
+  "output_sha256": "f900c33d3bc6781454af69c542c1907ab3c3f2b432061ea4b6d1b2e7c850abe6",
+  "finish_reason": "stop",
+  "refusal": null,
+  "returned_model": "gpt-6-astra",
+  "usage": {
+    "prompt_tokens": 439,
+    "completion_tokens": 416,
+    "total_tokens": 855,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "audio_tokens": 0,
+      "accepted_prediction_tokens": 0,
+      "rejected_prediction_tokens": 0
+    }
+  },
+  "format": {
+    "json_object": true,
+    "rule_unchanged": true,
+    "passage_is_string": true,
+    "passage_sha256": "62ab470a586db8a30096af8f73f53aac15251b19533550f7f1071aee38d15a74",
+    "passage_words": 257
+  },
+  "finished_at": "2026-09-22T20:38:25.741806+00:00",
+  "latency_seconds": 20.2305,
+  "usage_cost_upper_estimate_usd": 0.02519,
+  "stream_status": "active",
+  "budget": {
+    "usage_cost_upper_estimate_usd": 12.8977777,
+    "uncertain_cost_reserve_usd": 0.04533,
+    "in_flight_reserve_usd": 0.0,
+    "limit_usd": 18.83
+  }
+}

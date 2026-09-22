@@ -1,0 +1,22 @@
+{
+  "started_at": "2026-09-22T20:08:31.967593+00:00",
+  "model": "claude-fable-5-1",
+  "seed": "tide",
+  "hop": 21,
+  "endpoint": "https://api.anthropic.com/v1/messages",
+  "body": {
+    "model": "claude-fable-5-1",
+    "messages": [
+      {
+        "role": "user",
+        "content": "{\"rule\": \"Return this JSON object with the rule field unchanged and a new passage of about 250 words in the text field.\", \"text\": \"The lighthouse at Corrie Head had been automated in the year Ivo Marchant turned nineteen, and for a while nobody noticed that he kept going up anyway.\\n\\nHis grandfather had been the last keeper. The old man had taught Ivo to read the lamp the way other people read weather: the faint stutter in the rotation that meant salt on the bearings, the particular hum of the generator when the fuel was running thin, the way the beam looked thicker on the water when a sea fog was building out past the Sisters.\\n\\nThe new system reported all of this to a control room on the mainland, ninety miles south. It reported it well. Ivo did not distrust the machine so much as he distrusted the idea that a light could be watched from somewhere it could not be seen.\\n\\nSo he climbed the hundred and twelve steps most evenings and sat with a thermos in the lamp room, saying nothing to anyone about it.\\n\\nIn February a cable fault took the telemetry down. The control room showed the light as operating normally, because that was the last thing it had heard. The lamp, in fact, had stopped turning at half past nine.\\n\\nIvo saw the fixed beam from the harbour wall and was up the steps in twelve minutes. He cranked the mechanism by hand, as his grandfather had shown him once, half as a joke, and kept it turning until the relief crew arrived at dawn.\\n\\nThe fault report noted a manual restart of unknown origin.\\n\\nIvo bought a new thermos.\"}"
+      }
+    ],
+    "max_tokens": 4096,
+    "output_config": {
+      "effort": "low"
+    }
+  },
+  "state_sha256": "d5e991353b0cb3bf852765acc2242e59d7f02b38943de443e235afd9069006c4",
+  "reserved_cost_usd": 0.22557
+}

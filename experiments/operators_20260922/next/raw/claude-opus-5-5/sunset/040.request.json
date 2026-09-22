@@ -1,0 +1,22 @@
+{
+  "started_at": "2026-09-22T21:29:44.623756+00:00",
+  "model": "claude-opus-5-5",
+  "seed": "sunset",
+  "hop": 40,
+  "endpoint": "https://api.anthropic.com/v1/messages",
+  "body": {
+    "model": "claude-opus-5-5",
+    "messages": [
+      {
+        "role": "user",
+        "content": "```json\n{\"rule\": \"Return this JSON object with the rule field unchanged and, in the text field, the passage of about 250 words that comes immediately AFTER the current text in the same story.\", \"text\": \"Mary took the bundle from Leonard's hands. It was lighter than it looked, and that seemed wrong to her, that thirty years of a woman's longing should weigh no more than a hymnal.\\n\\nShe did not untie the string. She sat on the edge of the bed with the letters in her lap and watched her father breathe, and she found she could not be angry with him, not yet. The anger was there, she could feel it waiting somewhere beneath her ribs like a stone at the bottom of a well, but it would keep. He would not.\\n\\n\\\"Why?\\\" she said finally. It was the only word she had.\\n\\nHis lips moved. She leaned close enough to smell the camphor on his skin.\\n\\n\\\"Because you stayed,\\\" he said. \\\"Because if you read them, you might go.\\\"\\n\\nOutside, the wind had picked up off the lake, and the old house answered it the way it always had, with small complaints in the eaves and a rattle in the kitchen window that no one had ever managed to fix. Leonard stood at the foot of the bed with his hat in his hands, though he had not been wearing it. He looked at Mary as if to ask whether he should leave, and she shook her head.\\n\\nHer father did not speak again that night. Near dawn his breathing changed, lengthened, and then simply stopped, as quietly as a door closing in another room.\\n\\nMary was still holding the letters when the light came up gray over the water.\"}\n```"
+      }
+    ],
+    "max_tokens": 4096,
+    "output_config": {
+      "effort": "low"
+    }
+  },
+  "state_sha256": "468d5e72870baf5d71b2f07219bc8a04317505f22650922c2a4b7150b1dcf30e",
+  "reserved_cost_usd": 0.090212
+}

@@ -1,0 +1,20 @@
+{
+  "started_at": "2026-09-22T19:51:40.736356+00:00",
+  "model": "gpt-6-sol",
+  "seed": "tide_b",
+  "hop": 3,
+  "endpoint": "https://api.openai.com/v1/chat/completions",
+  "body": {
+    "model": "gpt-6-sol",
+    "messages": [
+      {
+        "role": "user",
+        "content": "{\"rule\":\"Return this JSON object with the rule field unchanged and a new passage of about 250 words in the text field.\",\"text\":\"On the morning the bridge vanished, Ivo was carrying a basket of pears to his sister. He reached the river just after sunrise and stopped where the road ended in a row of broken stones. The bridge had stood there the evening before. Now only its two gateposts remained, facing each other across the water.\\n\\nA woman from the mill came down the road behind him. She set her flour sack on the ground and stared. Soon others gathered, each with some reason to cross: a doctor summoned to a farm, two children late for school, a man leading a reluctant goat.\\n\\nIvo climbed the bank to look for fallen timbers. He found none. Even the riverbed beneath the bridge was clear. On the far shore, his sister appeared with her own basket. She lifted a pear from it and held it up. Ivo showed her his. They laughed, though neither could hear the other over the water.\\n\\nBy noon, the doctor had borrowed the miller’s boat. He ferried the children across first, then returned for the rest of them. When Ivo stepped ashore, his sister met him at the landing. Her pears were bruised, she said, and she hoped his were better.\\n\\nThat evening, the villagers walked back to the river with lanterns. The bridge was there again, its planks dry and its iron rail warm from the day’s sun. No one crossed it. The doctor tied the boat beneath the landing, and everyone took the long road home.\"}"
+      }
+    ],
+    "max_completion_tokens": 4096,
+    "reasoning_effort": "low"
+  },
+  "state_sha256": "1f1bb3cebb7499875006dd6059eb10d2b7ca19e5891f03654948f0dfe4eca861",
+  "reserved_cost_usd": 0.044994
+}

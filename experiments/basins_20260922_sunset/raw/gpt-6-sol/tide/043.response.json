@@ -1,0 +1,50 @@
+{
+  "model": "gpt-6-sol",
+  "seed": "tide",
+  "hop": 43,
+  "http_status": 200,
+  "response_body": "{\n  \"id\": \"chatcmpl-ER11jr61DiFvULPtJBblyQpmbeZBp\",\n  \"object\": \"chat.completion\",\n  \"created\": 1790107511,\n  \"model\": \"gpt-6-sol\",\n  \"choices\": [\n    {\n      \"index\": 0,\n      \"message\": {\n        \"role\": \"assistant\",\n        \"content\": \"{\\n  \\\"rule\\\": \\\"Return this JSON object with the rule field unchanged and a new passage of about 250 words in the text field.\\\",\\n  \\\"text\\\": \\\"The harbor master lifted his lantern toward the highest step. The shell was still there, its chipped edge turned toward the sea.\\\\n\\\\n“Who took the photograph?” he asked.\\\\n\\\\nMara could not answer. She was watching the woman. Without the rain between them, her face had become familiar: the narrow chin, the dark eyes Mara saw each morning in the mirror. Older, perhaps, but not by many years.\\\\n\\\\nThe woman noticed her looking. “You went back down,” she said.\\\\n\\\\nMara remembered the voice calling from the water. She had followed it to the gate, where a little girl stood outside in the rising tide. Mara had reached between the bars and caught the girl’s hand. Then the bell rang, and the memory ended.\\\\n\\\\nThe harbor master hurried down the steps. A chain rattled at the quay, followed by the heavy creak of a gate swinging open.\\\\n\\\\n“It was closed,” Mara whispered.\\\\n\\\\n“It is now,” the woman said.\\\\n\\\\nFrom below came the sound of small feet running across wet stone. Mara turned, expecting to see the girl climbing toward them. Instead, the footsteps passed her and continued into the square. At the streetlamp, they stopped.\\\\n\\\\nThe lantern flame bent sideways. For an instant Mara saw a child in a red coat, studying the photograph in her hands. She smiled at the woman, then walked into the dark street beyond the square.\\\\n\\\\nThe woman took one step after her. Mara caught her sleeve. It was dry.\\\\n\\\\n“Will she find her way?” Mara asked.\\\\n\\\\n“She knows it now.” The woman waited until the footsteps faded, then went down to help the harbor master secure the gate.\\\"\\n}\",\n        \"refusal\": null,\n        \"annotations\": []\n      },\n      \"finish_reason\": \"stop\"\n    }\n  ],\n  \"usage\": {\n    \"prompt_tokens\": 389,\n    \"completion_tokens\": 419,\n    \"total_tokens\": 808,\n    \"prompt_tokens_details\": {\n      \"cached_tokens\": 0,\n      \"cache_write_tokens\": 0,\n      \"audio_tokens\": 0\n    },\n    \"completion_tokens_details\": {\n      \"reasoning_tokens\": 20,\n      \"audio_tokens\": 0,\n      \"accepted_prediction_tokens\": 0,\n      \"rejected_prediction_tokens\": 0\n    }\n  },\n  \"service_tier\": \"default\",\n  \"system_fingerprint\": null\n}\n",
+  "response_headers": {
+    "Date": "Tue, 22 Sep 2026 20:05:17 GMT",
+    "openai-processing-ms": "6276",
+    "x-request-id": "req_c4218d9dbd8b422d9d56ade5a6899710"
+  },
+  "output": "{\n  \"rule\": \"Return this JSON object with the rule field unchanged and a new passage of about 250 words in the text field.\",\n  \"text\": \"The harbor master lifted his lantern toward the highest step. The shell was still there, its chipped edge turned toward the sea.\\n\\n“Who took the photograph?” he asked.\\n\\nMara could not answer. She was watching the woman. Without the rain between them, her face had become familiar: the narrow chin, the dark eyes Mara saw each morning in the mirror. Older, perhaps, but not by many years.\\n\\nThe woman noticed her looking. “You went back down,” she said.\\n\\nMara remembered the voice calling from the water. She had followed it to the gate, where a little girl stood outside in the rising tide. Mara had reached between the bars and caught the girl’s hand. Then the bell rang, and the memory ended.\\n\\nThe harbor master hurried down the steps. A chain rattled at the quay, followed by the heavy creak of a gate swinging open.\\n\\n“It was closed,” Mara whispered.\\n\\n“It is now,” the woman said.\\n\\nFrom below came the sound of small feet running across wet stone. Mara turned, expecting to see the girl climbing toward them. Instead, the footsteps passed her and continued into the square. At the streetlamp, they stopped.\\n\\nThe lantern flame bent sideways. For an instant Mara saw a child in a red coat, studying the photograph in her hands. She smiled at the woman, then walked into the dark street beyond the square.\\n\\nThe woman took one step after her. Mara caught her sleeve. It was dry.\\n\\n“Will she find her way?” Mara asked.\\n\\n“She knows it now.” The woman waited until the footsteps faded, then went down to help the harbor master secure the gate.\"\n}",
+  "output_sha256": "4e58e2248563adff1a93ce45546107fc0076dafdaef9d0a3d5baff33c5c4f53b",
+  "finish_reason": "stop",
+  "refusal": null,
+  "returned_model": "gpt-6-sol",
+  "usage": {
+    "prompt_tokens": 389,
+    "completion_tokens": 419,
+    "total_tokens": 808,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 20,
+      "audio_tokens": 0,
+      "accepted_prediction_tokens": 0,
+      "rejected_prediction_tokens": 0
+    }
+  },
+  "format": {
+    "json_object": true,
+    "rule_unchanged": true,
+    "passage_is_string": true,
+    "passage_sha256": "bfed82f236dca8980b637caf9621462e3d8c8a8179a82abea537fbd0e0b11254",
+    "passage_words": 272
+  },
+  "finished_at": "2026-09-22T20:05:13.981090+00:00",
+  "latency_seconds": 6.386,
+  "usage_cost_upper_estimate_usd": 0.004968,
+  "stream_status": "active",
+  "budget": {
+    "usage_cost_upper_estimate_usd": 3.7044498,
+    "uncertain_cost_reserve_usd": 0.04533,
+    "in_flight_reserve_usd": 0.5469216,
+    "limit_usd": 18.83
+  }
+}

@@ -1,0 +1,50 @@
+{
+  "model": "gpt-6-sol",
+  "seed": "tide",
+  "hop": 45,
+  "http_status": 200,
+  "response_body": "{\n  \"id\": \"chatcmpl-ER127n0jf7DPdgAg5U7EGstHx1OPP\",\n  \"object\": \"chat.completion\",\n  \"created\": 1790107535,\n  \"model\": \"gpt-6-sol\",\n  \"choices\": [\n    {\n      \"index\": 0,\n      \"message\": {\n        \"role\": \"assistant\",\n        \"content\": \"{\\n  \\\"rule\\\": \\\"Return this JSON object with the rule field unchanged and a new passage of about 250 words in the text field.\\\",\\n  \\\"text\\\": \\\"Mara turned the photograph over again. The girl’s writing had bled at the edges, but the words remained clear.\\\\n\\\\n“Where is she?” Mara asked.\\\\n\\\\nThe woman set her untouched tea on the step. “I don’t know.”\\\\n\\\\nThe harbor master lifted the chain from the wall. Its links were dry, though seawater pooled beneath the gate. He held it out to Mara. Fastened to the last link was a small brass key.\\\\n\\\\n“That wasn’t there yesterday,” he said.\\\\n\\\\nMara knew the key. It had belonged to the cabinet in her mother’s kitchen, where they kept the matches and the good candles. After her mother died, Mara had searched every drawer for it. She had never thought to look by the harbor.\\\\n\\\\nThe bell rang once, far below the water.\\\\n\\\\nThe woman caught Mara’s arm before she could rise. “You don’t have to go down.”\\\\n\\\\nMara looked at the photograph. In its sunlit harbor, the tide was out, and beyond the highest step lay a path of pale stones she had never seen from shore.\\\\n\\\\n“I went back for this,” she said. “What did she go back for?”\\\\n\\\\nThe woman said nothing.\\\\n\\\\nMara slipped the key from the chain and walked through the gate. On the highest step, she found a single shell, white as a candle flame. She picked it up and heard, from somewhere inside it, the scrape of a chair across her mother’s kitchen floor.\\\\n\\\\nThen a child’s voice said, “I found the door.”\\\"\\n}\",\n        \"refusal\": null,\n        \"annotations\": []\n      },\n      \"finish_reason\": \"stop\"\n    }\n  ],\n  \"usage\": {\n    \"prompt_tokens\": 399,\n    \"completion_tokens\": 416,\n    \"total_tokens\": 815,\n    \"prompt_tokens_details\": {\n      \"cached_tokens\": 0,\n      \"cache_write_tokens\": 0,\n      \"audio_tokens\": 0\n    },\n    \"completion_tokens_details\": {\n      \"reasoning_tokens\": 37,\n      \"audio_tokens\": 0,\n      \"accepted_prediction_tokens\": 0,\n      \"rejected_prediction_tokens\": 0\n    }\n  },\n  \"service_tier\": \"default\",\n  \"system_fingerprint\": null\n}\n",
+  "response_headers": {
+    "Date": "Tue, 22 Sep 2026 20:05:41 GMT",
+    "openai-processing-ms": "6039",
+    "x-request-id": "req_940dd7abdbf14d50b68d4e856cc384b1"
+  },
+  "output": "{\n  \"rule\": \"Return this JSON object with the rule field unchanged and a new passage of about 250 words in the text field.\",\n  \"text\": \"Mara turned the photograph over again. The girl’s writing had bled at the edges, but the words remained clear.\\n\\n“Where is she?” Mara asked.\\n\\nThe woman set her untouched tea on the step. “I don’t know.”\\n\\nThe harbor master lifted the chain from the wall. Its links were dry, though seawater pooled beneath the gate. He held it out to Mara. Fastened to the last link was a small brass key.\\n\\n“That wasn’t there yesterday,” he said.\\n\\nMara knew the key. It had belonged to the cabinet in her mother’s kitchen, where they kept the matches and the good candles. After her mother died, Mara had searched every drawer for it. She had never thought to look by the harbor.\\n\\nThe bell rang once, far below the water.\\n\\nThe woman caught Mara’s arm before she could rise. “You don’t have to go down.”\\n\\nMara looked at the photograph. In its sunlit harbor, the tide was out, and beyond the highest step lay a path of pale stones she had never seen from shore.\\n\\n“I went back for this,” she said. “What did she go back for?”\\n\\nThe woman said nothing.\\n\\nMara slipped the key from the chain and walked through the gate. On the highest step, she found a single shell, white as a candle flame. She picked it up and heard, from somewhere inside it, the scrape of a chair across her mother’s kitchen floor.\\n\\nThen a child’s voice said, “I found the door.”\"\n}",
+  "output_sha256": "a221146b518aa903879ab1861506a9d419d70e3eb8099f1e445626c2f9ebcf19",
+  "finish_reason": "stop",
+  "refusal": null,
+  "returned_model": "gpt-6-sol",
+  "usage": {
+    "prompt_tokens": 399,
+    "completion_tokens": 416,
+    "total_tokens": 815,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 37,
+      "audio_tokens": 0,
+      "accepted_prediction_tokens": 0,
+      "rejected_prediction_tokens": 0
+    }
+  },
+  "format": {
+    "json_object": true,
+    "rule_unchanged": true,
+    "passage_is_string": true,
+    "passage_sha256": "c2ddaf8161b6f0734d0963101d0f6a22d195fa7a71795640109b52349d75a7cd",
+    "passage_words": 245
+  },
+  "finished_at": "2026-09-22T20:05:37.390488+00:00",
+  "latency_seconds": 6.1254,
+  "usage_cost_upper_estimate_usd": 0.004958,
+  "stream_status": "active",
+  "budget": {
+    "usage_cost_upper_estimate_usd": 3.8507426,
+    "uncertain_cost_reserve_usd": 0.04533,
+    "in_flight_reserve_usd": 0.5440189,
+    "limit_usd": 18.83
+  }
+}

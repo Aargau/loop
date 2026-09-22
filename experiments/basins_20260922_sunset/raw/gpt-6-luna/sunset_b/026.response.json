@@ -1,0 +1,50 @@
+{
+  "model": "gpt-6-luna",
+  "seed": "sunset_b",
+  "hop": 26,
+  "http_status": 200,
+  "response_body": "{\n  \"id\": \"chatcmpl-ER0xniNlId6QDhXaq1jwGWzPIOhD4\",\n  \"object\": \"chat.completion\",\n  \"created\": 1790107267,\n  \"model\": \"gpt-6-luna\",\n  \"choices\": [\n    {\n      \"index\": 0,\n      \"message\": {\n        \"role\": \"assistant\",\n        \"content\": \"{\\n  \\\"rule\\\": \\\"Return this JSON object with the rule field unchanged and a new passage of about 250 words in the text field.\\\",\\n  \\\"text\\\": \\\"Every Thursday, Nia took the long path home beside the canal. Most people hurried past the water, but she liked watching the reflections wobble whenever a breeze crossed the surface. One afternoon, she noticed a blue envelope caught among the reeds. Her name was not on it, and the paper was damp around the edges.\\\\n\\\\nInside was a hand-drawn map of the canal, marked with a red star near the old stone bridge. Beneath the map, someone had written, “If you find this, please bring a little hope.” Nia read the message twice, then looked toward the bridge. A small wooden box sat beneath its nearest arch.\\\\n\\\\nThe box held a handful of packets of wildflower seeds and a note explaining that the writer had moved away before finishing a plan to brighten the bare banks. Nia took one packet and went to ask Mr. Okafor, who tended the community garden nearby, for advice. He lent her a trowel and showed her which patches would stay damp enough for the seeds.\\\\n\\\\nThe next week, Nia returned with her cousin and two friends. They planted the seeds along the sunny stretch of the canal, leaving the path clear for walkers. More neighbors joined them, bringing gloves, watering cans, and stories about the bridge.\\\\n\\\\nWeeks later, green shoots appeared. By summer, yellow and purple flowers nodded beside the water. Nia never learned who had drawn the map, but she kept it in her desk. Whenever someone asked how the garden began, she told them about a message that had traveled farther than its writer ever expected.\\\"\\n}\",\n        \"refusal\": null,\n        \"annotations\": []\n      },\n      \"finish_reason\": \"stop\"\n    }\n  ],\n  \"usage\": {\n    \"prompt_tokens\": 390,\n    \"completion_tokens\": 402,\n    \"total_tokens\": 792,\n    \"prompt_tokens_details\": {\n      \"cached_tokens\": 0,\n      \"cache_write_tokens\": 0,\n      \"audio_tokens\": 0\n    },\n    \"completion_tokens_details\": {\n      \"reasoning_tokens\": 32,\n      \"audio_tokens\": 0,\n      \"accepted_prediction_tokens\": 0,\n      \"rejected_prediction_tokens\": 0\n    }\n  },\n  \"service_tier\": \"default\",\n  \"system_fingerprint\": null\n}\n",
+  "response_headers": {
+    "Date": "Tue, 22 Sep 2026 20:01:12 GMT",
+    "openai-processing-ms": "5767",
+    "x-request-id": "req_10ad8668696a423ab952691c1b6af5fc"
+  },
+  "output": "{\n  \"rule\": \"Return this JSON object with the rule field unchanged and a new passage of about 250 words in the text field.\",\n  \"text\": \"Every Thursday, Nia took the long path home beside the canal. Most people hurried past the water, but she liked watching the reflections wobble whenever a breeze crossed the surface. One afternoon, she noticed a blue envelope caught among the reeds. Her name was not on it, and the paper was damp around the edges.\\n\\nInside was a hand-drawn map of the canal, marked with a red star near the old stone bridge. Beneath the map, someone had written, “If you find this, please bring a little hope.” Nia read the message twice, then looked toward the bridge. A small wooden box sat beneath its nearest arch.\\n\\nThe box held a handful of packets of wildflower seeds and a note explaining that the writer had moved away before finishing a plan to brighten the bare banks. Nia took one packet and went to ask Mr. Okafor, who tended the community garden nearby, for advice. He lent her a trowel and showed her which patches would stay damp enough for the seeds.\\n\\nThe next week, Nia returned with her cousin and two friends. They planted the seeds along the sunny stretch of the canal, leaving the path clear for walkers. More neighbors joined them, bringing gloves, watering cans, and stories about the bridge.\\n\\nWeeks later, green shoots appeared. By summer, yellow and purple flowers nodded beside the water. Nia never learned who had drawn the map, but she kept it in her desk. Whenever someone asked how the garden began, she told them about a message that had traveled farther than its writer ever expected.\"\n}",
+  "output_sha256": "c617fdaef74cd2e1f6b140ab3c5e94957d34fa3f9f3fe07fb277533d26db5d2e",
+  "finish_reason": "stop",
+  "refusal": null,
+  "returned_model": "gpt-6-luna",
+  "usage": {
+    "prompt_tokens": 390,
+    "completion_tokens": 402,
+    "total_tokens": 792,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 32,
+      "audio_tokens": 0,
+      "accepted_prediction_tokens": 0,
+      "rejected_prediction_tokens": 0
+    }
+  },
+  "format": {
+    "json_object": true,
+    "rule_unchanged": true,
+    "passage_is_string": true,
+    "passage_sha256": "51dd3ba592681c4384fa8bc9c605eeee8b62308d015b0652ee8810067b62144c",
+    "passage_words": 264
+  },
+  "finished_at": "2026-09-22T20:01:08.998058+00:00",
+  "latency_seconds": 5.8732,
+  "usage_cost_upper_estimate_usd": 0.00024,
+  "stream_status": "active",
+  "budget": {
+    "usage_cost_upper_estimate_usd": 2.1534415,
+    "uncertain_cost_reserve_usd": 0.04533,
+    "in_flight_reserve_usd": 0.588066,
+    "limit_usd": 18.83
+  }
+}

@@ -1,0 +1,50 @@
+{
+  "model": "gpt-6-sol",
+  "seed": "sunset",
+  "hop": 19,
+  "http_status": 200,
+  "response_body": "{\n  \"id\": \"chatcmpl-ER2HH6e3v42d73YFcB5P73dZ7RPqf\",\n  \"object\": \"chat.completion\",\n  \"created\": 1790112319,\n  \"model\": \"gpt-6-sol\",\n  \"choices\": [\n    {\n      \"index\": 0,\n      \"message\": {\n        \"role\": \"assistant\",\n        \"content\": \"{\\\"rule\\\":\\\"Return this JSON object with the rule field unchanged and, in the text field, the passage of about 250 words that comes immediately AFTER the current text in the same story.\\\",\\\"text\\\":\\\"M.\\\\n\\\\nMara closed her fist. “That’s my name.”\\\\n\\\\nThe girl’s grip went slack. In the glass, the reflection smiled without moving its mouth.\\\\n\\\\n“No,” the girl said. “It’s the first letter.”\\\\n\\\\nThe scratching in the drawer stopped. Water lapped at the desk legs, lifting the scraps of photograph. Mara pinned them down with her free hand. Her father’s face had faded almost to white, but the yellow coat was still bright. There was something inside its open pocket: a child’s hand, holding on.\\\\n\\\\nMara pulled the drawer open.\\\\n\\\\nA wet scrap of paper lay inside, folded into a narrow square. The scratching began again, this time from beneath it. She unfolded the paper and found three names written in her father’s careful capitals. MARA. MINA. MOTHER.\\\\n\\\\nThe room gave a long, settling creak.\\\\n\\\\n“I thought she’d gone,” Mara whispered.\\\\n\\\\n“She did,” said the girl. “She came back for us.”\\\\n\\\\nIn the glass, the soot-black hand lifted away. For an instant Mara saw a woman behind it, her hair floating around her face as though she were underwater. Then the reflection struck the pane from the other side.\\\\n\\\\nThe crack ran from top to bottom. Cold water poured through it, though the glass held firm.\\\\n\\\\nMara seized Mina’s hand. “Where’s the door?”\\\\n\\\\nMina pointed beneath the desk. The water had washed the dust from a small iron ring set into the floor.\\\\n\\\\nBehind them, their father said, “I couldn’t carry her.”\\\\n\\\\nMara gripped the ring. “Then help us lift.”\\\"}\",\n        \"refusal\": null,\n        \"annotations\": []\n      },\n      \"finish_reason\": \"stop\"\n    }\n  ],\n  \"usage\": {\n    \"prompt_tokens\": 413,\n    \"completion_tokens\": 448,\n    \"total_tokens\": 861,\n    \"prompt_tokens_details\": {\n      \"cached_tokens\": 0,\n      \"cache_write_tokens\": 0,\n      \"audio_tokens\": 0\n    },\n    \"completion_tokens_details\": {\n      \"reasoning_tokens\": 36,\n      \"audio_tokens\": 0,\n      \"accepted_prediction_tokens\": 0,\n      \"rejected_prediction_tokens\": 0\n    }\n  },\n  \"service_tier\": \"default\",\n  \"system_fingerprint\": null\n}\n",
+  "response_headers": {
+    "Date": "Tue, 22 Sep 2026 21:25:25 GMT",
+    "openai-processing-ms": "6790",
+    "x-request-id": "req_0886129503764aac841291ca39e911c0"
+  },
+  "output": "{\"rule\":\"Return this JSON object with the rule field unchanged and, in the text field, the passage of about 250 words that comes immediately AFTER the current text in the same story.\",\"text\":\"M.\\n\\nMara closed her fist. “That’s my name.”\\n\\nThe girl’s grip went slack. In the glass, the reflection smiled without moving its mouth.\\n\\n“No,” the girl said. “It’s the first letter.”\\n\\nThe scratching in the drawer stopped. Water lapped at the desk legs, lifting the scraps of photograph. Mara pinned them down with her free hand. Her father’s face had faded almost to white, but the yellow coat was still bright. There was something inside its open pocket: a child’s hand, holding on.\\n\\nMara pulled the drawer open.\\n\\nA wet scrap of paper lay inside, folded into a narrow square. The scratching began again, this time from beneath it. She unfolded the paper and found three names written in her father’s careful capitals. MARA. MINA. MOTHER.\\n\\nThe room gave a long, settling creak.\\n\\n“I thought she’d gone,” Mara whispered.\\n\\n“She did,” said the girl. “She came back for us.”\\n\\nIn the glass, the soot-black hand lifted away. For an instant Mara saw a woman behind it, her hair floating around her face as though she were underwater. Then the reflection struck the pane from the other side.\\n\\nThe crack ran from top to bottom. Cold water poured through it, though the glass held firm.\\n\\nMara seized Mina’s hand. “Where’s the door?”\\n\\nMina pointed beneath the desk. The water had washed the dust from a small iron ring set into the floor.\\n\\nBehind them, their father said, “I couldn’t carry her.”\\n\\nMara gripped the ring. “Then help us lift.”\"}",
+  "output_sha256": "3dac25a5f5c9be2f5206bd33d59e1bd5fe4fdcedeee8d4adbc927b9a038d49c1",
+  "finish_reason": "stop",
+  "refusal": null,
+  "returned_model": "gpt-6-sol",
+  "usage": {
+    "prompt_tokens": 413,
+    "completion_tokens": 448,
+    "total_tokens": 861,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 36,
+      "audio_tokens": 0,
+      "accepted_prediction_tokens": 0,
+      "rejected_prediction_tokens": 0
+    }
+  },
+  "format": {
+    "json_object": true,
+    "rule_unchanged": true,
+    "passage_is_string": true,
+    "passage_sha256": "c130879dbc5f395c36928964594b501f8c5e094f1229629ba11b3d6fb535c7bb",
+    "passage_words": 248
+  },
+  "finished_at": "2026-09-22T21:25:21.507192+00:00",
+  "latency_seconds": 6.8939,
+  "usage_cost_upper_estimate_usd": 0.005306,
+  "stream_status": "active",
+  "budget": {
+    "usage_cost_upper_estimate_usd": 0.3985068,
+    "uncertain_cost_reserve_usd": 0.0,
+    "in_flight_reserve_usd": 0.307005,
+    "limit_usd": 5.0
+  }
+}

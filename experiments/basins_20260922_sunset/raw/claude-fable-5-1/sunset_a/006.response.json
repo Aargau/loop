@@ -1,0 +1,48 @@
+{
+  "model": "claude-fable-5-1",
+  "seed": "sunset_a",
+  "hop": 6,
+  "http_status": 200,
+  "response_body": "{\"model\":\"claude-fable-5-1\",\"id\":\"msg_011CfK4zjk8siCiGdosyF3Hb\",\"type\":\"message\",\"role\":\"assistant\",\"content\":[{\"type\":\"text\",\"text\":\"{\\\"rule\\\": \\\"Return this JSON object with the rule field unchanged and a new passage of about 250 words in the text field.\\\", \\\"text\\\": \\\"The first customer came on a Tuesday, before Ines had decided anything. She had swept twice and fixed the door with a wedge of folded cardboard, and the sign in the window still said CLOSED, but the man pushed inside anyway, shaking rain from a coat that had seen better decades. He did not seem surprised to find her there. He nodded as if she were expected, and went straight to the shelf of maps in the back.\\\\n\\\\nShe watched him from behind the counter, pretending to read the ledger. He pulled down an atlas so old its cover had gone the color of tea, opened it on the table by the window, and stood over it for nearly an hour, turning pages with the flat of his palm. The cat sat on the far end of the table and watched too.\\\\n\\\\nWhen he finally came to the counter, he did not have the atlas. He had a slim paperback of poems she had not noticed him take. He set down coins from a pocket without asking the price, and the amount, when she counted it later, was exactly right.\\\\n\\\\n\\\\\\\"Your aunt kept the Norwegian coast on the third shelf,\\\\\\\" he said. \\\\\\\"It's on the second now.\\\\\\\"\\\\n\\\\n\\\\\\\"I haven't moved anything,\\\\\\\" Ines said.\\\\n\\\\nHe considered this. \\\\\\\"Then she did. Near the end.\\\\\\\" He put the book in his coat. \\\\\\\"She said someone would come.\\\\\\\"\\\\n\\\\nAfter he left, Ines climbed the step-ladder and found the coast, and behind it, tucked flat against the wall, an envelope with her name on it.\\\"}\"}],\"container\":null,\"stop_reason\":\"end_turn\",\"stop_sequence\":null,\"stop_details\":null,\"usage\":{\"input_tokens\":520,\"cache_creation_input_tokens\":0,\"cache_read_input_tokens\":0,\"cache_creation\":{\"ephemeral_5m_input_tokens\":0,\"ephemeral_1h_input_tokens\":0},\"output_tokens\":522,\"output_tokens_details\":{\"thinking_tokens\":0},\"service_tier\":\"standard\",\"inference_geo\":\"global\"}}",
+  "response_headers": {
+    "Date": "Tue, 22 Sep 2026 19:58:43 GMT",
+    "request-id": "req_011CfK4zj9AeUG7unKLX88Sa"
+  },
+  "output": "{\"rule\": \"Return this JSON object with the rule field unchanged and a new passage of about 250 words in the text field.\", \"text\": \"The first customer came on a Tuesday, before Ines had decided anything. She had swept twice and fixed the door with a wedge of folded cardboard, and the sign in the window still said CLOSED, but the man pushed inside anyway, shaking rain from a coat that had seen better decades. He did not seem surprised to find her there. He nodded as if she were expected, and went straight to the shelf of maps in the back.\\n\\nShe watched him from behind the counter, pretending to read the ledger. He pulled down an atlas so old its cover had gone the color of tea, opened it on the table by the window, and stood over it for nearly an hour, turning pages with the flat of his palm. The cat sat on the far end of the table and watched too.\\n\\nWhen he finally came to the counter, he did not have the atlas. He had a slim paperback of poems she had not noticed him take. He set down coins from a pocket without asking the price, and the amount, when she counted it later, was exactly right.\\n\\n\\\"Your aunt kept the Norwegian coast on the third shelf,\\\" he said. \\\"It's on the second now.\\\"\\n\\n\\\"I haven't moved anything,\\\" Ines said.\\n\\nHe considered this. \\\"Then she did. Near the end.\\\" He put the book in his coat. \\\"She said someone would come.\\\"\\n\\nAfter he left, Ines climbed the step-ladder and found the coast, and behind it, tucked flat against the wall, an envelope with her name on it.\"}",
+  "output_sha256": "147863a972766e9abc40bbb10f36a635880d2f2e51308bc1dd94c94db944d0c7",
+  "finish_reason": "end_turn",
+  "refusal": null,
+  "returned_model": "claude-fable-5-1",
+  "usage": {
+    "input_tokens": 520,
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 0,
+    "cache_creation": {
+      "ephemeral_5m_input_tokens": 0,
+      "ephemeral_1h_input_tokens": 0
+    },
+    "output_tokens": 522,
+    "output_tokens_details": {
+      "thinking_tokens": 0
+    },
+    "service_tier": "standard",
+    "inference_geo": "global"
+  },
+  "format": {
+    "json_object": true,
+    "rule_unchanged": true,
+    "passage_is_string": true,
+    "passage_sha256": "c038299bfdc3eadf7c51eaf25bd09b545aa3f03c19c546bcfaa3be972bb117d6",
+    "passage_words": 260
+  },
+  "finished_at": "2026-09-22T19:58:39.155565+00:00",
+  "latency_seconds": 12.6071,
+  "usage_cost_upper_estimate_usd": 0.0313,
+  "stream_status": "active",
+  "budget": {
+    "usage_cost_upper_estimate_usd": 1.2178256,
+    "uncertain_cost_reserve_usd": 0.04533,
+    "in_flight_reserve_usd": 0.3644402,
+    "limit_usd": 18.83
+  }
+}

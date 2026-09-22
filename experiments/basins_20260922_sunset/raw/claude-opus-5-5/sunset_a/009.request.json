@@ -1,0 +1,22 @@
+{
+  "started_at": "2026-09-22T19:58:52.874009+00:00",
+  "model": "claude-opus-5-5",
+  "seed": "sunset_a",
+  "hop": 9,
+  "endpoint": "https://api.anthropic.com/v1/messages",
+  "body": {
+    "model": "claude-opus-5-5",
+    "messages": [
+      {
+        "role": "user",
+        "content": "```json\n{\"rule\": \"Return this JSON object with the rule field unchanged and a new passage of about 250 words in the text field.\", \"text\": \"The baker unlocked her shop at four each morning, when the street outside was still wrapped in blue darkness and the only sound was the hum of the refrigerators. She tied her apron, switched on the ovens, and pulled the dough from the proofing cabinet, pressing a floured thumb into each loaf to see whether it sprang back. Her grandmother had opened the bakery sixty years earlier with a single oven and a borrowed mixer, and the recipes were still written in faded pencil on index cards pinned above the counter. Developers had offered to buy the building twice, promising a sum that would let her retire comfortably, but she had turned them down. The neighborhood, she said, needed a place that smelled like bread. By six, the first customers arrived: a nurse finishing the night shift, a pair of construction workers, an elderly man who ordered the same poppy seed roll every day and paid in exact change. She knew their names, their children's names, and which of them preferred their croissants slightly burnt. In a spiral notebook beside the register, she kept track of small things: the week the rye failed to rise, the morning a stray cat slipped in through the back door, the day a little girl drew a picture of the shop and left it taped to the window. When the rush faded and sunlight filled the display cases, she poured herself coffee, sat on the stool behind the counter, and watched the street wake up, tired but deeply satisfied.\"}\n```"
+      }
+    ],
+    "max_tokens": 4096,
+    "output_config": {
+      "effort": "low"
+    }
+  },
+  "state_sha256": "0314fed4d8c8877cff44b01938c69669b9a989eb71070b220a727793a286f695",
+  "reserved_cost_usd": 0.090332
+}

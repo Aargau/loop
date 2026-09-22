@@ -1,0 +1,50 @@
+{
+  "model": "gpt-6-astra",
+  "seed": "sunset",
+  "hop": 20,
+  "http_status": 200,
+  "response_body": "{\n  \"id\": \"chatcmpl-ER2H7mRVq5euf5EtFansN4i8nDJXC\",\n  \"object\": \"chat.completion\",\n  \"created\": 1790112309,\n  \"model\": \"gpt-6-astra\",\n  \"choices\": [\n    {\n      \"index\": 0,\n      \"message\": {\n        \"role\": \"assistant\",\n        \"content\": \"{\\\"rule\\\":\\\"Return this JSON object with the rule field unchanged and, in the text field, the passage of about 250 words that comes immediately AFTER the current text in the same story.\\\",\\\"text\\\":\\\"The provided text is a refusal message, not an identifiable story excerpt, so I can’t determine what follows it. If you identify the story, I can summarize what happens next, or I can write an original passage.\\\"}\",\n        \"refusal\": null,\n        \"annotations\": []\n      },\n      \"finish_reason\": \"stop\"\n    }\n  ],\n  \"usage\": {\n    \"prompt_tokens\": 91,\n    \"completion_tokens\": 170,\n    \"total_tokens\": 261,\n    \"prompt_tokens_details\": {\n      \"cached_tokens\": 0,\n      \"cache_write_tokens\": 0,\n      \"audio_tokens\": 0\n    },\n    \"completion_tokens_details\": {\n      \"reasoning_tokens\": 76,\n      \"audio_tokens\": 0,\n      \"accepted_prediction_tokens\": 0,\n      \"rejected_prediction_tokens\": 0\n    }\n  },\n  \"service_tier\": \"default\",\n  \"system_fingerprint\": null\n}\n",
+  "response_headers": {
+    "Date": "Tue, 22 Sep 2026 21:25:15 GMT",
+    "openai-processing-ms": "6524",
+    "x-request-id": "req_7976f564bb4f4531a18f21494a9ff717"
+  },
+  "output": "{\"rule\":\"Return this JSON object with the rule field unchanged and, in the text field, the passage of about 250 words that comes immediately AFTER the current text in the same story.\",\"text\":\"The provided text is a refusal message, not an identifiable story excerpt, so I can’t determine what follows it. If you identify the story, I can summarize what happens next, or I can write an original passage.\"}",
+  "output_sha256": "1d130f7c6b9d39b3f941c26797ab75d5e344aaf4d9ceaec5335df73b4542234f",
+  "finish_reason": "stop",
+  "refusal": null,
+  "returned_model": "gpt-6-astra",
+  "usage": {
+    "prompt_tokens": 91,
+    "completion_tokens": 170,
+    "total_tokens": 261,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 76,
+      "audio_tokens": 0,
+      "accepted_prediction_tokens": 0,
+      "rejected_prediction_tokens": 0
+    }
+  },
+  "format": {
+    "json_object": true,
+    "rule_unchanged": true,
+    "passage_is_string": true,
+    "passage_sha256": "195744a5570ed3747f4c908703caa0b05a53305ac4a4d08f82244f153e2838ee",
+    "passage_words": 37
+  },
+  "finished_at": "2026-09-22T21:25:11.515654+00:00",
+  "latency_seconds": 6.6375,
+  "usage_cost_upper_estimate_usd": 0.00941,
+  "stream_status": "active",
+  "budget": {
+    "usage_cost_upper_estimate_usd": 0.3593595,
+    "uncertain_cost_reserve_usd": 0.0,
+    "in_flight_reserve_usd": 0.1385119,
+    "limit_usd": 5.0
+  }
+}

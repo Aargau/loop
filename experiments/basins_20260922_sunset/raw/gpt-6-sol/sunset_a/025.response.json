@@ -1,0 +1,50 @@
+{
+  "model": "gpt-6-sol",
+  "seed": "sunset_a",
+  "hop": 25,
+  "http_status": 200,
+  "response_body": "{\n  \"id\": \"chatcmpl-ER0y2udt70tBFaVtbsCeqjH9IqIyO\",\n  \"object\": \"chat.completion\",\n  \"created\": 1790107282,\n  \"model\": \"gpt-6-sol\",\n  \"choices\": [\n    {\n      \"index\": 0,\n      \"message\": {\n        \"role\": \"assistant\",\n        \"content\": \"{\\n  \\\"rule\\\": \\\"Return this JSON object with the rule field unchanged and a new passage of about 250 words in the text field.\\\",\\n  \\\"text\\\": \\\"On Tuesday, Lena stopped at the garden shop on her way home. The seed packets stood in a revolving rack beside the till. She found the yellow beans on the bottom row and read the back before taking one. The last frost date had passed, though the ground still felt cold in the mornings.\\\\n\\\\nAt home, she put her bag on the kitchen table and went out to the fence. The row she had cleared was dotted with new weeds. She pulled them up, then broke the larger clumps of soil apart with the fork. A worm curled in one of them. She set it beneath the loose earth and fetched the watering can.\\\\n\\\\nThe packet said to plant the seeds in pairs. Lena pressed shallow holes along the row with her finger, measuring the spaces as well as she could by eye. She dropped two beans into each hole and covered them. When she watered the row, a little soil washed toward the bricks, so she poured the rest more slowly.\\\\n\\\\nHer sister arrived while Lena was putting the tools away. She had brought a small bag of compost from her own garden, but Lena had already finished planting. They left the bag in the shed for another day and sat on the bench. The brick under its leg had settled firmly into the ground.\\\\n\\\\nThey talked about the leaking gutter at their mother’s house and what to make for supper. Before going inside, Lena pushed a twig into the soil at each end of the row. The packet went back into her pocket.\\\"\\n}\",\n        \"refusal\": null,\n        \"annotations\": []\n      },\n      \"finish_reason\": \"stop\"\n    }\n  ],\n  \"usage\": {\n    \"prompt_tokens\": 348,\n    \"completion_tokens\": 385,\n    \"total_tokens\": 733,\n    \"prompt_tokens_details\": {\n      \"cached_tokens\": 0,\n      \"cache_write_tokens\": 0,\n      \"audio_tokens\": 0\n    },\n    \"completion_tokens_details\": {\n      \"reasoning_tokens\": 37,\n      \"audio_tokens\": 0,\n      \"accepted_prediction_tokens\": 0,\n      \"rejected_prediction_tokens\": 0\n    }\n  },\n  \"service_tier\": \"default\",\n  \"system_fingerprint\": null\n}\n",
+  "response_headers": {
+    "Date": "Tue, 22 Sep 2026 20:01:28 GMT",
+    "openai-processing-ms": "6180",
+    "x-request-id": "req_ec0ff1a0b0f547c59907c9c953b96c6b"
+  },
+  "output": "{\n  \"rule\": \"Return this JSON object with the rule field unchanged and a new passage of about 250 words in the text field.\",\n  \"text\": \"On Tuesday, Lena stopped at the garden shop on her way home. The seed packets stood in a revolving rack beside the till. She found the yellow beans on the bottom row and read the back before taking one. The last frost date had passed, though the ground still felt cold in the mornings.\\n\\nAt home, she put her bag on the kitchen table and went out to the fence. The row she had cleared was dotted with new weeds. She pulled them up, then broke the larger clumps of soil apart with the fork. A worm curled in one of them. She set it beneath the loose earth and fetched the watering can.\\n\\nThe packet said to plant the seeds in pairs. Lena pressed shallow holes along the row with her finger, measuring the spaces as well as she could by eye. She dropped two beans into each hole and covered them. When she watered the row, a little soil washed toward the bricks, so she poured the rest more slowly.\\n\\nHer sister arrived while Lena was putting the tools away. She had brought a small bag of compost from her own garden, but Lena had already finished planting. They left the bag in the shed for another day and sat on the bench. The brick under its leg had settled firmly into the ground.\\n\\nThey talked about the leaking gutter at their mother’s house and what to make for supper. Before going inside, Lena pushed a twig into the soil at each end of the row. The packet went back into her pocket.\"\n}",
+  "output_sha256": "f6b487c8014d4c0bc5aedbe209100097437f0539baf50f7bf22f9449b378c25f",
+  "finish_reason": "stop",
+  "refusal": null,
+  "returned_model": "gpt-6-sol",
+  "usage": {
+    "prompt_tokens": 348,
+    "completion_tokens": 385,
+    "total_tokens": 733,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 37,
+      "audio_tokens": 0,
+      "accepted_prediction_tokens": 0,
+      "rejected_prediction_tokens": 0
+    }
+  },
+  "format": {
+    "json_object": true,
+    "rule_unchanged": true,
+    "passage_is_string": true,
+    "passage_sha256": "d6c257f6fb52d94969ca45b7882885611a61b216c2124927a724447ecdf7a54f",
+    "passage_words": 265
+  },
+  "finished_at": "2026-09-22T20:01:24.723368+00:00",
+  "latency_seconds": 6.4717,
+  "usage_cost_upper_estimate_usd": 0.004546,
+  "stream_status": "active",
+  "budget": {
+    "usage_cost_upper_estimate_usd": 2.2695606,
+    "uncertain_cost_reserve_usd": 0.04533,
+    "in_flight_reserve_usd": 0.5472338,
+    "limit_usd": 18.83
+  }
+}

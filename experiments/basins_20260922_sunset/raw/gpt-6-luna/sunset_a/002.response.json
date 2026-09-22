@@ -1,0 +1,50 @@
+{
+  "model": "gpt-6-luna",
+  "seed": "sunset_a",
+  "hop": 2,
+  "http_status": 200,
+  "response_body": "{\n  \"id\": \"chatcmpl-ER0sQE6MJkAclrJfG7204CYKdHy40\",\n  \"object\": \"chat.completion\",\n  \"created\": 1790106934,\n  \"model\": \"gpt-6-luna\",\n  \"choices\": [\n    {\n      \"index\": 0,\n      \"message\": {\n        \"role\": \"assistant\",\n        \"content\": \"{\\\"rule\\\":\\\"Return this JSON object with the rule field unchanged and a new passage of about 250 words in the text field.\\\",\\\"text\\\":\\\"When the door swung open, Mara expected to find a dusty parlor. Instead, she stepped into a garden beneath a night sky. Silver stars glittered overhead, though outside the house the evening was still pale. A narrow stream wound between beds of white flowers, and a stone bench stood beside an apple tree heavy with fruit.\\\\n\\\\nOn the bench lay a small book bound in green cloth. Mara opened it carefully. The pages were filled with names, each written in a different hand. Some were familiar: her grandfather’s, her mother’s, and even her own. Beside each name was a date and a short note. Her grandfather’s entry read, “Found the garden in spring. Stayed until the bells rang.”\\\\n\\\\nA bell sounded once, somewhere beyond the trees. The flowers stirred, although no wind touched them. At the bottom of the page, Mara found a blank line, and beneath it a message: “Write what you hope to remember.”\\\\n\\\\nShe thought of the stories her grandfather had told beside the kitchen fire, and of the way he had always paused before describing the old house. Then she understood that the room was not a hiding place. It was a place where the past could be kept, but only if someone chose to carry it forward.\\\\n\\\\nMara took the pencil resting in the book’s crease and wrote about the key, the lavender-scented hall, and the garden under the stars. When she finished, the bell rang again. A path appeared between the flowers, leading toward a gate she had never seen before. She closed the book and followed it, ready to discover what lay beyond.\\\"}\",\n        \"refusal\": null,\n        \"annotations\": []\n      },\n      \"finish_reason\": \"stop\"\n    }\n  ],\n  \"usage\": {\n    \"prompt_tokens\": 353,\n    \"completion_tokens\": 420,\n    \"total_tokens\": 773,\n    \"prompt_tokens_details\": {\n      \"cached_tokens\": 0,\n      \"cache_write_tokens\": 0,\n      \"audio_tokens\": 0\n    },\n    \"completion_tokens_details\": {\n      \"reasoning_tokens\": 47,\n      \"audio_tokens\": 0,\n      \"accepted_prediction_tokens\": 0,\n      \"rejected_prediction_tokens\": 0\n    }\n  },\n  \"service_tier\": \"default\",\n  \"system_fingerprint\": null\n}\n",
+  "response_headers": {
+    "Date": "Tue, 22 Sep 2026 19:55:39 GMT",
+    "openai-processing-ms": "4826",
+    "x-request-id": "req_3d1fc04531d541a6b1e8b90ef3fc5f2f"
+  },
+  "output": "{\"rule\":\"Return this JSON object with the rule field unchanged and a new passage of about 250 words in the text field.\",\"text\":\"When the door swung open, Mara expected to find a dusty parlor. Instead, she stepped into a garden beneath a night sky. Silver stars glittered overhead, though outside the house the evening was still pale. A narrow stream wound between beds of white flowers, and a stone bench stood beside an apple tree heavy with fruit.\\n\\nOn the bench lay a small book bound in green cloth. Mara opened it carefully. The pages were filled with names, each written in a different hand. Some were familiar: her grandfather’s, her mother’s, and even her own. Beside each name was a date and a short note. Her grandfather’s entry read, “Found the garden in spring. Stayed until the bells rang.”\\n\\nA bell sounded once, somewhere beyond the trees. The flowers stirred, although no wind touched them. At the bottom of the page, Mara found a blank line, and beneath it a message: “Write what you hope to remember.”\\n\\nShe thought of the stories her grandfather had told beside the kitchen fire, and of the way he had always paused before describing the old house. Then she understood that the room was not a hiding place. It was a place where the past could be kept, but only if someone chose to carry it forward.\\n\\nMara took the pencil resting in the book’s crease and wrote about the key, the lavender-scented hall, and the garden under the stars. When she finished, the bell rang again. A path appeared between the flowers, leading toward a gate she had never seen before. She closed the book and followed it, ready to discover what lay beyond.\"}",
+  "output_sha256": "10be9790063519ac7f3eb8e5a82ec46cbcd9ece5e5a15910efa2233955d6e837",
+  "finish_reason": "stop",
+  "refusal": null,
+  "returned_model": "gpt-6-luna",
+  "usage": {
+    "prompt_tokens": 353,
+    "completion_tokens": 420,
+    "total_tokens": 773,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 47,
+      "audio_tokens": 0,
+      "accepted_prediction_tokens": 0,
+      "rejected_prediction_tokens": 0
+    }
+  },
+  "format": {
+    "json_object": true,
+    "rule_unchanged": true,
+    "passage_is_string": true,
+    "passage_sha256": "4076e4cd7ba5fd79ac5a6a4cf4ba425757747d620fb50ce03a0af2ee72468c1b",
+    "passage_words": 270
+  },
+  "finished_at": "2026-09-22T19:55:35.413705+00:00",
+  "latency_seconds": 4.931,
+  "usage_cost_upper_estimate_usd": 0.0002453,
+  "stream_status": "active",
+  "budget": {
+    "usage_cost_upper_estimate_usd": 0.0819356,
+    "uncertain_cost_reserve_usd": 0.0,
+    "in_flight_reserve_usd": 0.552924,
+    "limit_usd": 18.83
+  }
+}

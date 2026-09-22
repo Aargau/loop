@@ -1,0 +1,22 @@
+{
+  "started_at": "2026-09-22T20:05:15.424244+00:00",
+  "model": "claude-fable-5-1",
+  "seed": "tide",
+  "hop": 16,
+  "endpoint": "https://api.anthropic.com/v1/messages",
+  "body": {
+    "model": "claude-fable-5-1",
+    "messages": [
+      {
+        "role": "user",
+        "content": "{\"rule\": \"Return this JSON object with the rule field unchanged and a new passage of about 250 words in the text field.\", \"text\": \"The ferry to Sandholm ran twice a day in summer and once in winter, and for forty years it had been piloted by a man named Aksel who knew the sound the way a farmer knows his fields. When the council bought a new boat with a screen that drew the channel in green lines and beeped at shoals, Aksel was thanked, photographed, and sent home with a plaque.\\n\\nHis granddaughter Ingrid was fourteen that year and worked the deck for pocket money, coiling lines and taking tickets. The new pilot was a polite young man from the mainland who trusted the screen, and the screen was usually right.\\n\\nAksel had taught her other things without meaning to. How the water went flat and dark over the sandbar off Krok Point when the tide was making. How the cormorants stood on the far marker only when the current set east. How a certain smell of mud on the wind meant the channel had shifted overnight, the way it did after a hard blow.\\n\\nIn November, after three days of gale, the ferry set out into a gray morning with eleven passengers and a mail sack. The screen showed the channel clear. Ingrid, coiling rope at the bow, smelled mud.\\n\\nShe went to the wheelhouse and said so. The young pilot looked at the screen, then at her, then at the flat dark patch of water ahead where no flat dark patch should be.\\n\\nHe eased the throttle back and swung wide.\\n\\nThey touched nothing. Behind them, where the green line said deep water lay, a gull stood knee-deep on new sand.\\n\\nThe pilot said nothing for a long while. Then he asked, quietly, what else her grandfather knew.\"}"
+      }
+    ],
+    "max_tokens": 4096,
+    "output_config": {
+      "effort": "low"
+    }
+  },
+  "state_sha256": "5132ffaac7797f6bdebcf38e76acbedf8eb3d5d06f9c645c9b6046c5eb15b3f3",
+  "reserved_cost_usd": 0.22688
+}

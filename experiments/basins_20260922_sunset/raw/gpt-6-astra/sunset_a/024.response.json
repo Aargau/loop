@@ -1,0 +1,50 @@
+{
+  "model": "gpt-6-astra",
+  "seed": "sunset_a",
+  "hop": 24,
+  "http_status": 200,
+  "response_body": "{\n  \"id\": \"chatcmpl-ER1APbzEw7FsxZ40VAN1G7INX20Kl\",\n  \"object\": \"chat.completion\",\n  \"created\": 1790108049,\n  \"model\": \"gpt-6-astra\",\n  \"choices\": [\n    {\n      \"index\": 0,\n      \"message\": {\n        \"role\": \"assistant\",\n        \"content\": \"{\\n  \\\"rule\\\": \\\"Return this JSON object with the rule field unchanged and a new passage of about 250 words in the text field.\\\",\\n  \\\"text\\\": \\\"Every Tuesday, Arthur took the long way to the swimming pool so he could pass his old house.\\\\n\\\\nHe never stopped. He looked at the gate, which needed painting, and the upstairs window where his daughter had once kept a row of jam jars full of coloured water.\\\\n\\\\nIn April, the new owner pulled out the rose bushes.\\\\n\\\\nArthur mentioned it to the woman at the pool desk.\\\\n\\\\n“Perhaps they were diseased,” she said.\\\\n\\\\n“They weren’t.”\\\\n\\\\nThe following week, a small boy was digging beside the path. He had a kitchen spoon and an empty ice-cream tub.\\\\n\\\\n“Looking for treasure?” Arthur asked through the gate.\\\\n\\\\n“Making a pond.”\\\\n\\\\nArthur considered the tub.\\\\n\\\\n“You’ll need stones so things can climb out.”\\\\n\\\\n“What things?”\\\\n\\\\n“Whatever falls in.”\\\\n\\\\nOn Tuesday he brought three flat stones in his swimming bag. The boy wasn’t there, so Arthur left them beside the gate.\\\\n\\\\nA week later, they surrounded the tub. A wooden sign said POND. Someone had drawn a fish beneath the word.\\\\n\\\\nThe boy’s mother came out carrying a watering can.\\\\n\\\\n“Were those yours?” she asked.\\\\n\\\\nArthur nodded.\\\\n\\\\n“He’s waiting for frogs.”\\\\n\\\\n“It may take a while.”\\\\n\\\\n“That’s what I said.”\\\\n\\\\nShe tipped a little water into the tub. Arthur noticed that one rose remained, cut almost to the ground beneath the window.\\\\n\\\\n“That one smells lovely,” she said. “Do you know what it’s called?”\\\\n\\\\nHe told her he would try to remember.\\\\n\\\\nAt home, he opened the drawer where they had kept plant labels. There it was, under some string.\\\\n\\\\nHe put it in his swimming bag.\\\"\\n}\",\n        \"refusal\": null,\n        \"annotations\": []\n      },\n      \"finish_reason\": \"stop\"\n    }\n  ],\n  \"usage\": {\n    \"prompt_tokens\": 394,\n    \"completion_tokens\": 425,\n    \"total_tokens\": 819,\n    \"prompt_tokens_details\": {\n      \"cached_tokens\": 0,\n      \"cache_write_tokens\": 0,\n      \"audio_tokens\": 0\n    },\n    \"completion_tokens_details\": {\n      \"reasoning_tokens\": 0,\n      \"audio_tokens\": 0,\n      \"accepted_prediction_tokens\": 0,\n      \"rejected_prediction_tokens\": 0\n    }\n  },\n  \"service_tier\": \"default\",\n  \"system_fingerprint\": null\n}\n",
+  "response_headers": {
+    "Date": "Tue, 22 Sep 2026 20:14:23 GMT",
+    "openai-processing-ms": "14120",
+    "x-request-id": "req_eb183969f1a54c55844c39df0917b2ab"
+  },
+  "output": "{\n  \"rule\": \"Return this JSON object with the rule field unchanged and a new passage of about 250 words in the text field.\",\n  \"text\": \"Every Tuesday, Arthur took the long way to the swimming pool so he could pass his old house.\\n\\nHe never stopped. He looked at the gate, which needed painting, and the upstairs window where his daughter had once kept a row of jam jars full of coloured water.\\n\\nIn April, the new owner pulled out the rose bushes.\\n\\nArthur mentioned it to the woman at the pool desk.\\n\\n“Perhaps they were diseased,” she said.\\n\\n“They weren’t.”\\n\\nThe following week, a small boy was digging beside the path. He had a kitchen spoon and an empty ice-cream tub.\\n\\n“Looking for treasure?” Arthur asked through the gate.\\n\\n“Making a pond.”\\n\\nArthur considered the tub.\\n\\n“You’ll need stones so things can climb out.”\\n\\n“What things?”\\n\\n“Whatever falls in.”\\n\\nOn Tuesday he brought three flat stones in his swimming bag. The boy wasn’t there, so Arthur left them beside the gate.\\n\\nA week later, they surrounded the tub. A wooden sign said POND. Someone had drawn a fish beneath the word.\\n\\nThe boy’s mother came out carrying a watering can.\\n\\n“Were those yours?” she asked.\\n\\nArthur nodded.\\n\\n“He’s waiting for frogs.”\\n\\n“It may take a while.”\\n\\n“That’s what I said.”\\n\\nShe tipped a little water into the tub. Arthur noticed that one rose remained, cut almost to the ground beneath the window.\\n\\n“That one smells lovely,” she said. “Do you know what it’s called?”\\n\\nHe told her he would try to remember.\\n\\nAt home, he opened the drawer where they had kept plant labels. There it was, under some string.\\n\\nHe put it in his swimming bag.\"\n}",
+  "output_sha256": "9d0ebb69f506de187b96bc118205e0840c95f5bb27ccaece2380383d916387ae",
+  "finish_reason": "stop",
+  "refusal": null,
+  "returned_model": "gpt-6-astra",
+  "usage": {
+    "prompt_tokens": 394,
+    "completion_tokens": 425,
+    "total_tokens": 819,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "audio_tokens": 0,
+      "accepted_prediction_tokens": 0,
+      "rejected_prediction_tokens": 0
+    }
+  },
+  "format": {
+    "json_object": true,
+    "rule_unchanged": true,
+    "passage_is_string": true,
+    "passage_sha256": "620309b02728ba5f1bccb542982b76cad5d8b1d577eec9e44d2e84a4218ea58b",
+    "passage_words": 263
+  },
+  "finished_at": "2026-09-22T20:14:19.385476+00:00",
+  "latency_seconds": 14.4395,
+  "usage_cost_upper_estimate_usd": 0.02519,
+  "stream_status": "active",
+  "budget": {
+    "usage_cost_upper_estimate_usd": 6.9527417,
+    "uncertain_cost_reserve_usd": 0.04533,
+    "in_flight_reserve_usd": 0.315768,
+    "limit_usd": 18.83
+  }
+}

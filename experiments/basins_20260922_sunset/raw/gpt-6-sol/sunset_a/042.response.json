@@ -1,0 +1,50 @@
+{
+  "model": "gpt-6-sol",
+  "seed": "sunset_a",
+  "hop": 42,
+  "http_status": 200,
+  "response_body": "{\n  \"id\": \"chatcmpl-ER11RIT7jGPsNZlXjimIKOaEQsBGS\",\n  \"object\": \"chat.completion\",\n  \"created\": 1790107493,\n  \"model\": \"gpt-6-sol\",\n  \"choices\": [\n    {\n      \"index\": 0,\n      \"message\": {\n        \"role\": \"assistant\",\n        \"content\": \"{\\n  \\\"rule\\\": \\\"Return this JSON object with the rule field unchanged and a new passage of about 250 words in the text field.\\\",\\n  \\\"text\\\": \\\"By the following week, the bench had become a place people mentioned at the bakery. A man with a newspaper said the shade arrived three minutes late on cloudy days. Two sisters reported that the chestnut tree dropped its flowers into their hair. Neither sounded disappointed.\\\\n\\\\nImani went back one afternoon with a book, but found an older boy already sitting there. He was holding a closed notebook on his lap.\\\\n\\\\n‘Is this the bench from the card?’ he asked.\\\\n\\\\nShe nodded and sat at the other end. For a while, they watched a beetle make its way along a crack in the pavement. The boy opened his notebook, wrote something, and shut it again.\\\\n\\\\nWhen the shade reached Imani’s shoes, he stood up. ‘It works,’ he said.\\\\n\\\\nAt the bakery the next morning, Imani found a new card in the box. It said: If you have a question you cannot answer, write it down. Take it somewhere pleasant. You do not have to solve it there.\\\\n\\\\nShe read the card twice before showing it to her grandfather. He put it beside the photograph of the pastries, where everyone could see it.\\\\n\\\\nThat afternoon, Imani tore a corner from an old shopping list and wrote, Why do pigeons look surprised when they fly? She took the question to the bench and folded it into her pocket.\\\\n\\\\nThe shade reached her feet at four. She stayed until it reached her knees, then walked home without an answer. The question was still in her pocket, and she liked having it there.\\\"\\n}\",\n        \"refusal\": null,\n        \"annotations\": []\n      },\n      \"finish_reason\": \"stop\"\n    }\n  ],\n  \"usage\": {\n    \"prompt_tokens\": 356,\n    \"completion_tokens\": 392,\n    \"total_tokens\": 748,\n    \"prompt_tokens_details\": {\n      \"cached_tokens\": 0,\n      \"cache_write_tokens\": 0,\n      \"audio_tokens\": 0\n    },\n    \"completion_tokens_details\": {\n      \"reasoning_tokens\": 24,\n      \"audio_tokens\": 0,\n      \"accepted_prediction_tokens\": 0,\n      \"rejected_prediction_tokens\": 0\n    }\n  },\n  \"service_tier\": \"default\",\n  \"system_fingerprint\": null\n}\n",
+  "response_headers": {
+    "Date": "Tue, 22 Sep 2026 20:04:59 GMT",
+    "openai-processing-ms": "7694",
+    "x-request-id": "req_3dbad973d66340a3986ce0ffd7b5b02f"
+  },
+  "output": "{\n  \"rule\": \"Return this JSON object with the rule field unchanged and a new passage of about 250 words in the text field.\",\n  \"text\": \"By the following week, the bench had become a place people mentioned at the bakery. A man with a newspaper said the shade arrived three minutes late on cloudy days. Two sisters reported that the chestnut tree dropped its flowers into their hair. Neither sounded disappointed.\\n\\nImani went back one afternoon with a book, but found an older boy already sitting there. He was holding a closed notebook on his lap.\\n\\n‘Is this the bench from the card?’ he asked.\\n\\nShe nodded and sat at the other end. For a while, they watched a beetle make its way along a crack in the pavement. The boy opened his notebook, wrote something, and shut it again.\\n\\nWhen the shade reached Imani’s shoes, he stood up. ‘It works,’ he said.\\n\\nAt the bakery the next morning, Imani found a new card in the box. It said: If you have a question you cannot answer, write it down. Take it somewhere pleasant. You do not have to solve it there.\\n\\nShe read the card twice before showing it to her grandfather. He put it beside the photograph of the pastries, where everyone could see it.\\n\\nThat afternoon, Imani tore a corner from an old shopping list and wrote, Why do pigeons look surprised when they fly? She took the question to the bench and folded it into her pocket.\\n\\nThe shade reached her feet at four. She stayed until it reached her knees, then walked home without an answer. The question was still in her pocket, and she liked having it there.\"\n}",
+  "output_sha256": "04d07a27f7e42f96c8ee9caf0929200f368b11f0a348122999b653822018c1dc",
+  "finish_reason": "stop",
+  "refusal": null,
+  "returned_model": "gpt-6-sol",
+  "usage": {
+    "prompt_tokens": 356,
+    "completion_tokens": 392,
+    "total_tokens": 748,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 24,
+      "audio_tokens": 0,
+      "accepted_prediction_tokens": 0,
+      "rejected_prediction_tokens": 0
+    }
+  },
+  "format": {
+    "json_object": true,
+    "rule_unchanged": true,
+    "passage_is_string": true,
+    "passage_sha256": "80df50867a8a146f0df9ddc866215b37616604c21155a4550242781820a85eb3",
+    "passage_words": 259
+  },
+  "finished_at": "2026-09-22T20:04:55.789543+00:00",
+  "latency_seconds": 8.0938,
+  "usage_cost_upper_estimate_usd": 0.004632,
+  "stream_status": "active",
+  "budget": {
+    "usage_cost_upper_estimate_usd": 3.5862335,
+    "uncertain_cost_reserve_usd": 0.04533,
+    "in_flight_reserve_usd": 0.5435675,
+    "limit_usd": 18.83
+  }
+}

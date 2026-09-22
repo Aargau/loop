@@ -1,0 +1,50 @@
+{
+  "model": "gpt-6-astra",
+  "seed": "tide",
+  "hop": 60,
+  "http_status": 200,
+  "response_body": "{\n  \"id\": \"chatcmpl-ER1f2qHdYC13186QA4cZICA4d1gvc\",\n  \"object\": \"chat.completion\",\n  \"created\": 1790109948,\n  \"model\": \"gpt-6-astra\",\n  \"choices\": [\n    {\n      \"index\": 0,\n      \"message\": {\n        \"role\": \"assistant\",\n        \"content\": \"{\\n  \\\"rule\\\": \\\"Return this JSON object with the rule field unchanged and a new passage of about 250 words in the text field.\\\",\\n  \\\"text\\\": \\\"The piano tuner arrived three weeks after my father’s funeral. I’d forgotten to cancel him.\\\\n\\\\n“Ten o’clock,” he said, checking a folded card.\\\\n\\\\nI stepped aside.\\\\n\\\\nIn the front room, the piano was covered with photographs I’d taken down from the walls. He waited while I moved them onto the sofa, then opened his case.\\\\n\\\\n“Any particular problems?”\\\\n\\\\n“I wouldn’t know.”\\\\n\\\\nHe played a few notes. One made a dry clicking sound.\\\\n\\\\n“Your father mentioned that last time.”\\\\n\\\\nI went to make tea. From the kitchen came the same note, struck over and over, then a silence long enough for me to hear the kettle beginning to boil.\\\\n\\\\nWhen I returned, a narrow strip of wood lay on the carpet. The tuner was leaning into the piano with a small torch.\\\\n\\\\n“A pencil,” he said.\\\\n\\\\nHe held it out. The end had been chewed, and the lettering was nearly gone. My father had kept pencils on every windowsill, though there was never one beside the telephone.\\\\n\\\\nI put it on the mantelpiece.\\\\n\\\\n“Are you keeping the instrument?”\\\\n\\\\n“The house is going up for sale.”\\\\n\\\\nHe nodded and went back to work.\\\\n\\\\nAfterwards, he played something quick and quiet, stopping before I recognised it. I paid him by the door.\\\\n\\\\nThat evening I found the beginner’s book inside the piano stool. My name was written on the cover in my father’s square capitals.\\\\n\\\\nI set it on the music rack and sat down. The first exercise used only five notes. I played them with my right hand, then moved the stool a little closer.\\\"\\n}\",\n        \"refusal\": null,\n        \"annotations\": []\n      },\n      \"finish_reason\": \"stop\"\n    }\n  ],\n  \"usage\": {\n    \"prompt_tokens\": 387,\n    \"completion_tokens\": 400,\n    \"total_tokens\": 787,\n    \"prompt_tokens_details\": {\n      \"cached_tokens\": 0,\n      \"cache_write_tokens\": 0,\n      \"audio_tokens\": 0\n    },\n    \"completion_tokens_details\": {\n      \"reasoning_tokens\": 0,\n      \"audio_tokens\": 0,\n      \"accepted_prediction_tokens\": 0,\n      \"rejected_prediction_tokens\": 0\n    }\n  },\n  \"service_tier\": \"default\",\n  \"system_fingerprint\": null\n}\n",
+  "response_headers": {
+    "Date": "Tue, 22 Sep 2026 20:46:02 GMT",
+    "openai-processing-ms": "14362",
+    "x-request-id": "req_6ff0da581de54fe5867b0db29d5a292d"
+  },
+  "output": "{\n  \"rule\": \"Return this JSON object with the rule field unchanged and a new passage of about 250 words in the text field.\",\n  \"text\": \"The piano tuner arrived three weeks after my father’s funeral. I’d forgotten to cancel him.\\n\\n“Ten o’clock,” he said, checking a folded card.\\n\\nI stepped aside.\\n\\nIn the front room, the piano was covered with photographs I’d taken down from the walls. He waited while I moved them onto the sofa, then opened his case.\\n\\n“Any particular problems?”\\n\\n“I wouldn’t know.”\\n\\nHe played a few notes. One made a dry clicking sound.\\n\\n“Your father mentioned that last time.”\\n\\nI went to make tea. From the kitchen came the same note, struck over and over, then a silence long enough for me to hear the kettle beginning to boil.\\n\\nWhen I returned, a narrow strip of wood lay on the carpet. The tuner was leaning into the piano with a small torch.\\n\\n“A pencil,” he said.\\n\\nHe held it out. The end had been chewed, and the lettering was nearly gone. My father had kept pencils on every windowsill, though there was never one beside the telephone.\\n\\nI put it on the mantelpiece.\\n\\n“Are you keeping the instrument?”\\n\\n“The house is going up for sale.”\\n\\nHe nodded and went back to work.\\n\\nAfterwards, he played something quick and quiet, stopping before I recognised it. I paid him by the door.\\n\\nThat evening I found the beginner’s book inside the piano stool. My name was written on the cover in my father’s square capitals.\\n\\nI set it on the music rack and sat down. The first exercise used only five notes. I played them with my right hand, then moved the stool a little closer.\"\n}",
+  "output_sha256": "584d6dd2f03973b0e25c7b4758504f6a4829dc8e6ff8b11dda27ae7bcb7f4d52",
+  "finish_reason": "stop",
+  "refusal": null,
+  "returned_model": "gpt-6-astra",
+  "usage": {
+    "prompt_tokens": 387,
+    "completion_tokens": 400,
+    "total_tokens": 787,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "audio_tokens": 0,
+      "accepted_prediction_tokens": 0,
+      "rejected_prediction_tokens": 0
+    }
+  },
+  "format": {
+    "json_object": true,
+    "rule_unchanged": true,
+    "passage_is_string": true,
+    "passage_sha256": "d2c05c473415a46a582902ae24c796aeb16f973d75115a2ad37471b08b95f01d",
+    "passage_words": 263
+  },
+  "finished_at": "2026-09-22T20:45:58.260152+00:00",
+  "latency_seconds": 14.4833,
+  "usage_cost_upper_estimate_usd": 0.02387,
+  "stream_status": "active",
+  "budget": {
+    "usage_cost_upper_estimate_usd": 13.5712877,
+    "uncertain_cost_reserve_usd": 0.04533,
+    "in_flight_reserve_usd": 0.0,
+    "limit_usd": 18.83
+  }
+}

@@ -1,0 +1,50 @@
+{
+  "model": "gpt-6-sol",
+  "seed": "sunset_a",
+  "hop": 19,
+  "http_status": 200,
+  "response_body": "{\n  \"id\": \"chatcmpl-ER0wrEUvIF2bhRYNzEuovUNBimOt9\",\n  \"object\": \"chat.completion\",\n  \"created\": 1790107209,\n  \"model\": \"gpt-6-sol\",\n  \"choices\": [\n    {\n      \"index\": 0,\n      \"message\": {\n        \"role\": \"assistant\",\n        \"content\": \"{\\n  \\\"rule\\\": \\\"Return this JSON object with the rule field unchanged and a new passage of about 250 words in the text field.\\\",\\n  \\\"text\\\": \\\"The next morning, Lena found a pencil tucked into the notebook’s spine. She did not remember seeing it before. Its point was blunt, and someone had wound a strip of tape around the end where the eraser had come loose.\\\\n\\\\nShe took it outside with the notebook and measured the space between the gate and the post. The new latch held, though the gate leaned a little when she put her weight against it. She wrote down the measurement beneath her father’s drawing. Her numbers were darker than his and took up more room.\\\\n\\\\nAt lunchtime, her sister called to ask whether the rain had come through the kitchen window again. Lena said it hadn’t, but she would check the sill after the next storm. She mentioned the pencil. Her sister remembered using it years ago to mark the height of a shelf. Neither of them could remember which shelf.\\\\n\\\\nWhen the call ended, Lena went back to the cupboard. She returned the plates to the bottom shelf and put the mismatched cups in a box. Behind them was a folded paper bag containing three spare keys. One had a red thread tied through its hole. She tried each in the back door; none fitted.\\\\n\\\\nShe left the keys beside the notebook for her sister to look at next Sunday. Before going upstairs, she checked the gate once more through the window. It was shut. A few wet leaves had gathered against its bottom edge, and she made a note to clear them when the rain stopped.\\\"\\n}\",\n        \"refusal\": null,\n        \"annotations\": []\n      },\n      \"finish_reason\": \"stop\"\n    }\n  ],\n  \"usage\": {\n    \"prompt_tokens\": 337,\n    \"completion_tokens\": 376,\n    \"total_tokens\": 713,\n    \"prompt_tokens_details\": {\n      \"cached_tokens\": 0,\n      \"cache_write_tokens\": 0,\n      \"audio_tokens\": 0\n    },\n    \"completion_tokens_details\": {\n      \"reasoning_tokens\": 32,\n      \"audio_tokens\": 0,\n      \"accepted_prediction_tokens\": 0,\n      \"rejected_prediction_tokens\": 0\n    }\n  },\n  \"service_tier\": \"default\",\n  \"system_fingerprint\": null\n}\n",
+  "response_headers": {
+    "Date": "Tue, 22 Sep 2026 20:00:15 GMT",
+    "openai-processing-ms": "6013",
+    "x-request-id": "req_bff1a617984643ee9b4da979ad50ef1b"
+  },
+  "output": "{\n  \"rule\": \"Return this JSON object with the rule field unchanged and a new passage of about 250 words in the text field.\",\n  \"text\": \"The next morning, Lena found a pencil tucked into the notebook’s spine. She did not remember seeing it before. Its point was blunt, and someone had wound a strip of tape around the end where the eraser had come loose.\\n\\nShe took it outside with the notebook and measured the space between the gate and the post. The new latch held, though the gate leaned a little when she put her weight against it. She wrote down the measurement beneath her father’s drawing. Her numbers were darker than his and took up more room.\\n\\nAt lunchtime, her sister called to ask whether the rain had come through the kitchen window again. Lena said it hadn’t, but she would check the sill after the next storm. She mentioned the pencil. Her sister remembered using it years ago to mark the height of a shelf. Neither of them could remember which shelf.\\n\\nWhen the call ended, Lena went back to the cupboard. She returned the plates to the bottom shelf and put the mismatched cups in a box. Behind them was a folded paper bag containing three spare keys. One had a red thread tied through its hole. She tried each in the back door; none fitted.\\n\\nShe left the keys beside the notebook for her sister to look at next Sunday. Before going upstairs, she checked the gate once more through the window. It was shut. A few wet leaves had gathered against its bottom edge, and she made a note to clear them when the rain stopped.\"\n}",
+  "output_sha256": "71574e160199ebececd581124185d5714f4130f0fab675fb28390ec510877c38",
+  "finish_reason": "stop",
+  "refusal": null,
+  "returned_model": "gpt-6-sol",
+  "usage": {
+    "prompt_tokens": 337,
+    "completion_tokens": 376,
+    "total_tokens": 713,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 32,
+      "audio_tokens": 0,
+      "accepted_prediction_tokens": 0,
+      "rejected_prediction_tokens": 0
+    }
+  },
+  "format": {
+    "json_object": true,
+    "rule_unchanged": true,
+    "passage_is_string": true,
+    "passage_sha256": "0f94b7867d0ed1164ddbec120ef265268200681429dc27b509dbfceef752a540",
+    "passage_words": 257
+  },
+  "finished_at": "2026-09-22T20:00:11.262156+00:00",
+  "latency_seconds": 6.2364,
+  "usage_cost_upper_estimate_usd": 0.004434,
+  "stream_status": "active",
+  "budget": {
+    "usage_cost_upper_estimate_usd": 1.7796176,
+    "uncertain_cost_reserve_usd": 0.04533,
+    "in_flight_reserve_usd": 0.5440129,
+    "limit_usd": 18.83
+  }
+}

@@ -1,0 +1,48 @@
+{
+  "model": "claude-fable-5-1",
+  "seed": "sunset_b",
+  "hop": 7,
+  "http_status": 200,
+  "response_body": "{\"model\":\"claude-fable-5-1\",\"id\":\"msg_011CfK54Spkobw7me1TRPTjs\",\"type\":\"message\",\"role\":\"assistant\",\"content\":[{\"type\":\"text\",\"text\":\"{\\\"rule\\\": \\\"Return this JSON object with the rule field unchanged and a new passage of about 250 words in the text field.\\\", \\\"text\\\": \\\"The lighthouse had been automated for nineteen years, but Ingrid still climbed it every evening at dusk. The council had offered her a small pension to leave the keeper's cottage, and she had taken the pension and stayed anyway, because nobody had come to check and because the stairs were the only place her knees felt like her own.\\\\n\\\\nThere were one hundred and twelve steps. She counted them not from need but from habit, the way some people say grace before eating without believing anyone is listening. At the top she wiped the salt from the glass with a rag she kept in her apron pocket, though the machinery did not require it. The lamp turned on its own schedule, indifferent to her cloth.\\\\n\\\\nFrom the gallery she could see the whole curve of the bay, the fishing boats coming in like beads drawn along a string, and beyond them the darker water where the shipping lanes ran. She had watched that water for forty years and knew its moods better than she had ever known her own. Tonight it was flat and pewter-coloured, holding the last light longer than the sky did.\\\\n\\\\nA boy on a bicycle stopped on the coast road below and looked up. He was too far away to see her face, but she raised a hand anyway, and after a moment he raised his. Then he pedalled on toward the village, where the windows were beginning to glow.\\\\n\\\\nIngrid folded the rag. The lamp swung its beam out across the water, and she followed it with her eyes until it came back to her.\\\"}\"}],\"container\":null,\"stop_reason\":\"end_turn\",\"stop_sequence\":null,\"stop_details\":null,\"usage\":{\"input_tokens\":531,\"cache_creation_input_tokens\":0,\"cache_read_input_tokens\":0,\"cache_creation\":{\"ephemeral_5m_input_tokens\":0,\"ephemeral_1h_input_tokens\":0},\"output_tokens\":506,\"output_tokens_details\":{\"thinking_tokens\":0},\"service_tier\":\"standard\",\"inference_geo\":\"global\"}}",
+  "response_headers": {
+    "Date": "Tue, 22 Sep 2026 19:59:33 GMT",
+    "request-id": "req_011CfK54SNUA9BKgvhdKSS2A"
+  },
+  "output": "{\"rule\": \"Return this JSON object with the rule field unchanged and a new passage of about 250 words in the text field.\", \"text\": \"The lighthouse had been automated for nineteen years, but Ingrid still climbed it every evening at dusk. The council had offered her a small pension to leave the keeper's cottage, and she had taken the pension and stayed anyway, because nobody had come to check and because the stairs were the only place her knees felt like her own.\\n\\nThere were one hundred and twelve steps. She counted them not from need but from habit, the way some people say grace before eating without believing anyone is listening. At the top she wiped the salt from the glass with a rag she kept in her apron pocket, though the machinery did not require it. The lamp turned on its own schedule, indifferent to her cloth.\\n\\nFrom the gallery she could see the whole curve of the bay, the fishing boats coming in like beads drawn along a string, and beyond them the darker water where the shipping lanes ran. She had watched that water for forty years and knew its moods better than she had ever known her own. Tonight it was flat and pewter-coloured, holding the last light longer than the sky did.\\n\\nA boy on a bicycle stopped on the coast road below and looked up. He was too far away to see her face, but she raised a hand anyway, and after a moment he raised his. Then he pedalled on toward the village, where the windows were beginning to glow.\\n\\nIngrid folded the rag. The lamp swung its beam out across the water, and she followed it with her eyes until it came back to her.\"}",
+  "output_sha256": "3e3f21f1d875a7b0316e95587a5ab03588b5e50586aa34f2322d4435585ab67b",
+  "finish_reason": "end_turn",
+  "refusal": null,
+  "returned_model": "claude-fable-5-1",
+  "usage": {
+    "input_tokens": 531,
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 0,
+    "cache_creation": {
+      "ephemeral_5m_input_tokens": 0,
+      "ephemeral_1h_input_tokens": 0
+    },
+    "output_tokens": 506,
+    "output_tokens_details": {
+      "thinking_tokens": 0
+    },
+    "service_tier": "standard",
+    "inference_geo": "global"
+  },
+  "format": {
+    "json_object": true,
+    "rule_unchanged": true,
+    "passage_is_string": true,
+    "passage_sha256": "9fc61ae21c2394d6e6e37627bad936873f44b72b48151c6be382c90794da3a6f",
+    "passage_words": 270
+  },
+  "finished_at": "2026-09-22T19:59:29.325714+00:00",
+  "latency_seconds": 12.4009,
+  "usage_cost_upper_estimate_usd": 0.03061,
+  "stream_status": "active",
+  "budget": {
+    "usage_cost_upper_estimate_usd": 1.5417044,
+    "uncertain_cost_reserve_usd": 0.04533,
+    "in_flight_reserve_usd": 0.3646426,
+    "limit_usd": 18.83
+  }
+}

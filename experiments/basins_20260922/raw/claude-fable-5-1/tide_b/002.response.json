@@ -1,0 +1,48 @@
+{
+  "model": "claude-fable-5-1",
+  "seed": "tide_b",
+  "hop": 2,
+  "http_status": 200,
+  "response_body": "{\"model\":\"claude-fable-5-1\",\"id\":\"msg_011CfK4VViiqnaUCmSVjxERb\",\"type\":\"message\",\"role\":\"assistant\",\"content\":[{\"type\":\"text\",\"text\":\"{\\\"rule\\\": \\\"Return this JSON object with the rule field unchanged and a new passage of about 250 words in the text field.\\\", \\\"text\\\": \\\"The lights went out at a quarter past nine, all along the ridge at once, as if someone had drawn a curtain across the valley. Elena was on the porch shelling beans into a colander when the glow from the town below simply vanished, leaving only the outline of the hills against a sky that had not yet finished darkening. She waited for the familiar sputter of generators, the flashlight beams that always followed a storm, but the night stayed still. There had been no storm.\\\\n\\\\nHer neighbor Ruben came up the gravel path with a lantern, walking slowly, the way he did when he was thinking rather than hurrying. He set the lantern on the step and sat beside her without asking.\\\\n\\\\n\\\\\\\"The radio's dead too,\\\\\\\" he said. \\\\\\\"Not static. Just nothing.\\\\\\\"\\\\n\\\\nBelow them, the town began to reveal itself in a different way. Candles appeared in windows, one and then another, small and uncertain. Someone was playing a guitar on a rooftop, the notes carrying farther than they should have. A car crept along the main road with its headlights off, the driver leaning out the window, calling a name Elena could not make out.\\\\n\\\\nShe went back to the beans. Her hands knew the work, and the rhythm steadied her. Ruben watched the valley.\\\\n\\\\n\\\\\\\"My father said this happened once, before I was born,\\\\\\\" he said. \\\\\\\"Three days. Then everything came back like nothing had changed.\\\\\\\"\\\\n\\\\n\\\\\\\"And had it?\\\\\\\"\\\\n\\\\nHe was quiet for a long time. The guitar stopped. Somewhere a dog began to howl, and then others answered, until the whole dark valley seemed to be speaking in a language it had almost forgotten.\\\"}\"}],\"container\":null,\"stop_reason\":\"end_turn\",\"stop_sequence\":null,\"stop_details\":null,\"usage\":{\"input_tokens\":539,\"cache_creation_input_tokens\":0,\"cache_read_input_tokens\":0,\"cache_creation\":{\"ephemeral_5m_input_tokens\":0,\"ephemeral_1h_input_tokens\":0},\"output_tokens\":574,\"output_tokens_details\":{\"thinking_tokens\":0},\"service_tier\":\"standard\",\"inference_geo\":\"global\"}}",
+  "response_headers": {
+    "Date": "Tue, 22 Sep 2026 19:52:09 GMT",
+    "request-id": "req_011CfK4VVHRLpjJAAN1UY4VP"
+  },
+  "output": "{\"rule\": \"Return this JSON object with the rule field unchanged and a new passage of about 250 words in the text field.\", \"text\": \"The lights went out at a quarter past nine, all along the ridge at once, as if someone had drawn a curtain across the valley. Elena was on the porch shelling beans into a colander when the glow from the town below simply vanished, leaving only the outline of the hills against a sky that had not yet finished darkening. She waited for the familiar sputter of generators, the flashlight beams that always followed a storm, but the night stayed still. There had been no storm.\\n\\nHer neighbor Ruben came up the gravel path with a lantern, walking slowly, the way he did when he was thinking rather than hurrying. He set the lantern on the step and sat beside her without asking.\\n\\n\\\"The radio's dead too,\\\" he said. \\\"Not static. Just nothing.\\\"\\n\\nBelow them, the town began to reveal itself in a different way. Candles appeared in windows, one and then another, small and uncertain. Someone was playing a guitar on a rooftop, the notes carrying farther than they should have. A car crept along the main road with its headlights off, the driver leaning out the window, calling a name Elena could not make out.\\n\\nShe went back to the beans. Her hands knew the work, and the rhythm steadied her. Ruben watched the valley.\\n\\n\\\"My father said this happened once, before I was born,\\\" he said. \\\"Three days. Then everything came back like nothing had changed.\\\"\\n\\n\\\"And had it?\\\"\\n\\nHe was quiet for a long time. The guitar stopped. Somewhere a dog began to howl, and then others answered, until the whole dark valley seemed to be speaking in a language it had almost forgotten.\"}",
+  "output_sha256": "463552c1c6c659e713ead0428743d6cd8de3058cdfb9be51ac6e6cd2112eb05a",
+  "finish_reason": "end_turn",
+  "refusal": null,
+  "returned_model": "claude-fable-5-1",
+  "usage": {
+    "input_tokens": 539,
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 0,
+    "cache_creation": {
+      "ephemeral_5m_input_tokens": 0,
+      "ephemeral_1h_input_tokens": 0
+    },
+    "output_tokens": 574,
+    "output_tokens_details": {
+      "thinking_tokens": 0
+    },
+    "service_tier": "standard",
+    "inference_geo": "global"
+  },
+  "format": {
+    "json_object": true,
+    "rule_unchanged": true,
+    "passage_is_string": true,
+    "passage_sha256": "62c03ad3f66b263dcde619ee79e8412b3bb7b1a2f03687dd224a5f9b19e7cc61",
+    "passage_words": 278
+  },
+  "finished_at": "2026-09-22T19:52:05.250754+00:00",
+  "latency_seconds": 15.3066,
+  "usage_cost_upper_estimate_usd": 0.03409,
+  "stream_status": "active",
+  "budget": {
+    "usage_cost_upper_estimate_usd": 0.3714302,
+    "uncertain_cost_reserve_usd": 0.0,
+    "in_flight_reserve_usd": 0.3648501,
+    "limit_usd": 20
+  }
+}

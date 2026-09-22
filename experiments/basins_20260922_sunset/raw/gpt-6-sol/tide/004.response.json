@@ -1,0 +1,50 @@
+{
+  "model": "gpt-6-sol",
+  "seed": "tide",
+  "hop": 4,
+  "http_status": 200,
+  "response_body": "{\n  \"id\": \"chatcmpl-ER0tEjXzot0w3JI512VIXG5Zrr2FX\",\n  \"object\": \"chat.completion\",\n  \"created\": 1790106984,\n  \"model\": \"gpt-6-sol\",\n  \"choices\": [\n    {\n      \"index\": 0,\n      \"message\": {\n        \"role\": \"assistant\",\n        \"content\": \"{\\n  \\\"rule\\\": \\\"Return this JSON object with the rule field unchanged and a new passage of about 250 words in the text field.\\\",\\n  \\\"text\\\": \\\"The second bell note rolled over the harbor as Mara reached the last mooring. Old Mr. Venn was still aboard his trawler, sawing at a rope swollen tight around the cleat.\\\\n\\\\n“Leave it,” Daniel shouted from the quay. “Take the spare line.”\\\\n\\\\nMr. Venn looked up. Beyond him, the water drew back from the harbor wall. For a moment Mara could see stones that had lain underwater all her life. Then the sea returned, climbing the wall in a single dark sheet.\\\\n\\\\nShe jumped onto the trawler and caught the spare line Daniel threw her. Together she and Mr. Venn hauled it around the bow while Daniel cut the old rope from shore. The boat swung free. Its stern struck the quay hard enough to crack a plank, but the engine started, and Mr. Venn steered toward the gap in the breakwater.\\\\n\\\\nFive boats were already beyond it. Mara counted again, searching the harbor for the sixth. A little white skiff rocked beside the rebuilt stairs, empty.\\\\n\\\\n“That’s my father’s,” she said.\\\\n\\\\nDaniel stared at the chart in her hand. One cross had been drawn in heavier ink than the rest. On the back, beneath the warning, Mara found a line she had missed: The smallest one carries the bell rope.\\\\n\\\\nAcross the harbor, the church bell sounded a third time. Its tower stood empty against the sky, but something beneath the skiff’s hull tugged at the water in time with the note.\\\\n\\\\nMara pointed. “We have to get it out too.”\\\\n\\\\nMr. Venn turned the trawler back toward the harbor entrance.\\\"\\n}\",\n        \"refusal\": null,\n        \"annotations\": []\n      },\n      \"finish_reason\": \"stop\"\n    }\n  ],\n  \"usage\": {\n    \"prompt_tokens\": 356,\n    \"completion_tokens\": 434,\n    \"total_tokens\": 790,\n    \"prompt_tokens_details\": {\n      \"cached_tokens\": 0,\n      \"cache_write_tokens\": 0,\n      \"audio_tokens\": 0\n    },\n    \"completion_tokens_details\": {\n      \"reasoning_tokens\": 39,\n      \"audio_tokens\": 0,\n      \"accepted_prediction_tokens\": 0,\n      \"rejected_prediction_tokens\": 0\n    }\n  },\n  \"service_tier\": \"default\",\n  \"system_fingerprint\": null\n}\n",
+  "response_headers": {
+    "Date": "Tue, 22 Sep 2026 19:56:30 GMT",
+    "openai-processing-ms": "6005",
+    "x-request-id": "req_d05109f77cfc4a76bcff298165768564"
+  },
+  "output": "{\n  \"rule\": \"Return this JSON object with the rule field unchanged and a new passage of about 250 words in the text field.\",\n  \"text\": \"The second bell note rolled over the harbor as Mara reached the last mooring. Old Mr. Venn was still aboard his trawler, sawing at a rope swollen tight around the cleat.\\n\\n“Leave it,” Daniel shouted from the quay. “Take the spare line.”\\n\\nMr. Venn looked up. Beyond him, the water drew back from the harbor wall. For a moment Mara could see stones that had lain underwater all her life. Then the sea returned, climbing the wall in a single dark sheet.\\n\\nShe jumped onto the trawler and caught the spare line Daniel threw her. Together she and Mr. Venn hauled it around the bow while Daniel cut the old rope from shore. The boat swung free. Its stern struck the quay hard enough to crack a plank, but the engine started, and Mr. Venn steered toward the gap in the breakwater.\\n\\nFive boats were already beyond it. Mara counted again, searching the harbor for the sixth. A little white skiff rocked beside the rebuilt stairs, empty.\\n\\n“That’s my father’s,” she said.\\n\\nDaniel stared at the chart in her hand. One cross had been drawn in heavier ink than the rest. On the back, beneath the warning, Mara found a line she had missed: The smallest one carries the bell rope.\\n\\nAcross the harbor, the church bell sounded a third time. Its tower stood empty against the sky, but something beneath the skiff’s hull tugged at the water in time with the note.\\n\\nMara pointed. “We have to get it out too.”\\n\\nMr. Venn turned the trawler back toward the harbor entrance.\"\n}",
+  "output_sha256": "ee43bcf57e9a0ab5d84633961a9d564ed06451ce74cf74202cbfa3f3c4269192",
+  "finish_reason": "stop",
+  "refusal": null,
+  "returned_model": "gpt-6-sol",
+  "usage": {
+    "prompt_tokens": 356,
+    "completion_tokens": 434,
+    "total_tokens": 790,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 39,
+      "audio_tokens": 0,
+      "accepted_prediction_tokens": 0,
+      "rejected_prediction_tokens": 0
+    }
+  },
+  "format": {
+    "json_object": true,
+    "rule_unchanged": true,
+    "passage_is_string": true,
+    "passage_sha256": "9fbe3eecbb9f048d85c5b6e436b5e71369de2b2d322e637ddc09653d4cabd27e",
+    "passage_words": 262
+  },
+  "finished_at": "2026-09-22T19:56:26.301447+00:00",
+  "latency_seconds": 6.1703,
+  "usage_cost_upper_estimate_usd": 0.005052,
+  "stream_status": "active",
+  "budget": {
+    "usage_cost_upper_estimate_usd": 0.3778849,
+    "uncertain_cost_reserve_usd": 0.0,
+    "in_flight_reserve_usd": 0.5455591,
+    "limit_usd": 18.83
+  }
+}

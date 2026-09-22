@@ -1,0 +1,50 @@
+{
+  "model": "gpt-6-sol",
+  "seed": "sunset",
+  "hop": 28,
+  "http_status": 200,
+  "response_body": "{\n  \"id\": \"chatcmpl-ER2IAZVWVxh6hcQsHtETzvSdtR1eE\",\n  \"object\": \"chat.completion\",\n  \"created\": 1790112374,\n  \"model\": \"gpt-6-sol\",\n  \"choices\": [\n    {\n      \"index\": 0,\n      \"message\": {\n        \"role\": \"assistant\",\n        \"content\": \"{\\\"rule\\\":\\\"Return this JSON object with the rule field unchanged and, in the text field, the passage of about 250 words that comes immediately AFTER the current text in the same story.\\\",\\\"text\\\":\\\"The drops were warm. Each one left a small, dry circle on her skin.\\\\n\\\\nMara looked back at the window. In the dark glass, she could make out a kitchen she had never seen before: yellow walls, a clock above the stove, a child’s drawing held up by a magnet. No one stood inside.\\\\n\\\\nThe woman with Mara’s face waited beside her. Without the umbrella between them, Mara could see a thin white scar across the woman’s chin.\\\\n\\\\n“What happens now?” Mara asked.\\\\n\\\\nThe woman touched her own chin, as if checking the scar was still there. “We walk.”\\\\n\\\\nThey went down the street together. At each crossing, the traffic lights changed before they reached them. Mara tried to read the signs, but the names shifted when she looked away. She kept her eyes on the woman’s coat instead.\\\\n\\\\nA phone rang somewhere above them. The woman stopped so abruptly that Mara nearly walked into her.\\\\n\\\\n“Don’t look,” she said.\\\\n\\\\nMara looked. On the underside of a balcony, a phone trembled against the concrete. Its bright screen showed a photograph of the kitchen window. In the photograph, Mara was standing at the sill, one hand raised to wave.\\\\n\\\\nShe had no memory of waving.\\\\n\\\\nThe woman took her wrist and drew her onward. Behind them, the ringing ceased. A moment later came the scrape of a chair, faint but unmistakable, from every open window on the street.\\\\n\\\\nMara pulled her hand free. “How far?”\\\\n\\\\nThe woman pointed to the end of the block. There, beneath a streetlamp, someone had set out a table and two chairs.\\\"}\",\n        \"refusal\": null,\n        \"annotations\": []\n      },\n      \"finish_reason\": \"stop\"\n    }\n  ],\n  \"usage\": {\n    \"prompt_tokens\": 399,\n    \"completion_tokens\": 458,\n    \"total_tokens\": 857,\n    \"prompt_tokens_details\": {\n      \"cached_tokens\": 0,\n      \"cache_write_tokens\": 0,\n      \"audio_tokens\": 0\n    },\n    \"completion_tokens_details\": {\n      \"reasoning_tokens\": 54,\n      \"audio_tokens\": 0,\n      \"accepted_prediction_tokens\": 0,\n      \"rejected_prediction_tokens\": 0\n    }\n  },\n  \"service_tier\": \"default\",\n  \"system_fingerprint\": null\n}\n",
+  "response_headers": {
+    "Date": "Tue, 22 Sep 2026 21:26:21 GMT",
+    "openai-processing-ms": "7015",
+    "x-request-id": "req_b562bb97b46d4809822a0bc253588f58"
+  },
+  "output": "{\"rule\":\"Return this JSON object with the rule field unchanged and, in the text field, the passage of about 250 words that comes immediately AFTER the current text in the same story.\",\"text\":\"The drops were warm. Each one left a small, dry circle on her skin.\\n\\nMara looked back at the window. In the dark glass, she could make out a kitchen she had never seen before: yellow walls, a clock above the stove, a child’s drawing held up by a magnet. No one stood inside.\\n\\nThe woman with Mara’s face waited beside her. Without the umbrella between them, Mara could see a thin white scar across the woman’s chin.\\n\\n“What happens now?” Mara asked.\\n\\nThe woman touched her own chin, as if checking the scar was still there. “We walk.”\\n\\nThey went down the street together. At each crossing, the traffic lights changed before they reached them. Mara tried to read the signs, but the names shifted when she looked away. She kept her eyes on the woman’s coat instead.\\n\\nA phone rang somewhere above them. The woman stopped so abruptly that Mara nearly walked into her.\\n\\n“Don’t look,” she said.\\n\\nMara looked. On the underside of a balcony, a phone trembled against the concrete. Its bright screen showed a photograph of the kitchen window. In the photograph, Mara was standing at the sill, one hand raised to wave.\\n\\nShe had no memory of waving.\\n\\nThe woman took her wrist and drew her onward. Behind them, the ringing ceased. A moment later came the scrape of a chair, faint but unmistakable, from every open window on the street.\\n\\nMara pulled her hand free. “How far?”\\n\\nThe woman pointed to the end of the block. There, beneath a streetlamp, someone had set out a table and two chairs.\"}",
+  "output_sha256": "a9d0a3d082cecc4a74a6f9a8929789b9df096719937a7f65f74875cfefffa01c",
+  "finish_reason": "stop",
+  "refusal": null,
+  "returned_model": "gpt-6-sol",
+  "usage": {
+    "prompt_tokens": 399,
+    "completion_tokens": 458,
+    "total_tokens": 857,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 54,
+      "audio_tokens": 0,
+      "accepted_prediction_tokens": 0,
+      "rejected_prediction_tokens": 0
+    }
+  },
+  "format": {
+    "json_object": true,
+    "rule_unchanged": true,
+    "passage_is_string": true,
+    "passage_sha256": "e3911988a865798ba46a5375c4d5d360ef02b4439bd86ef1c8e99c853136c1fd",
+    "passage_words": 266
+  },
+  "finished_at": "2026-09-22T21:26:17.454082+00:00",
+  "latency_seconds": 7.1062,
+  "usage_cost_upper_estimate_usd": 0.005378,
+  "stream_status": "active",
+  "budget": {
+    "usage_cost_upper_estimate_usd": 0.5948283,
+    "uncertain_cost_reserve_usd": 0.0,
+    "in_flight_reserve_usd": 0.3077919,
+    "limit_usd": 5.0
+  }
+}

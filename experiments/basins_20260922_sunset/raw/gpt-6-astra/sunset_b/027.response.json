@@ -1,0 +1,50 @@
+{
+  "model": "gpt-6-astra",
+  "seed": "sunset_b",
+  "hop": 27,
+  "http_status": 200,
+  "response_body": "{\n  \"id\": \"chatcmpl-ER1DIaCcrKTnVCagNvXJHFzZJvVed\",\n  \"object\": \"chat.completion\",\n  \"created\": 1790108228,\n  \"model\": \"gpt-6-astra\",\n  \"choices\": [\n    {\n      \"index\": 0,\n      \"message\": {\n        \"role\": \"assistant\",\n        \"content\": \"{\\n  \\\"rule\\\": \\\"Return this JSON object with the rule field unchanged and a new passage of about 250 words in the text field.\\\",\\n  \\\"text\\\": \\\"At the bakery, Daniel asked for six rolls, then changed it to four.\\\\n\\\\nThe girl behind the counter had already opened a large bag. She folded it smaller without looking at him.\\\\n\\\\n“Anything else?”\\\\n\\\\nHe studied the cakes. His father used to buy the ones with cherries pressed into the icing, although he always left the cherries on his plate.\\\\n\\\\n“Two of those.”\\\\n\\\\n“The cherry ones?”\\\\n\\\\n“Yes.”\\\\n\\\\nShe reached for a box.\\\\n\\\\nOutside, the market stalls were being dismantled. A man carried a rail of empty hangers towards a van, their hooks chattering together.\\\\n\\\\nDaniel took out his wallet. Behind the notes was the shopping list his father had written on Thursday.\\\\n\\\\nBread. Milk. Something nice.\\\\n\\\\nThe handwriting had grown larger lately. Each item occupied its own line, as if there were plenty of room.\\\\n\\\\n“Do you want them separately?” the girl asked.\\\\n\\\\n“Sorry?”\\\\n\\\\n“The cakes. Two boxes, or together?”\\\\n\\\\n“Together is fine.”\\\\n\\\\nHe paid and put the change loose in his coat pocket.\\\\n\\\\nAt home, his sister was washing the kitchen window. She had opened it despite the cold, and the cloth made a small squeak at each corner.\\\\n\\\\n“I couldn’t sit down anymore,” she said.\\\\n\\\\nHe put the bag on the table.\\\\n\\\\n“There’s cake.”\\\\n\\\\nShe came down from the chair and opened the box.\\\\n\\\\n“Oh,” she said. “These.”\\\\n\\\\nHe filled the kettle while she fetched plates.\\\\n\\\\nWhen he turned round, she had put out three. She stood holding the cupboard door.\\\\n\\\\nHe took the spare plate and set the rolls on it.\\\\n\\\\n“Leave that here,” he said. “We’ll want it.”\\\"\\n}\",\n        \"refusal\": null,\n        \"annotations\": []\n      },\n      \"finish_reason\": \"stop\"\n    }\n  ],\n  \"usage\": {\n    \"prompt_tokens\": 446,\n    \"completion_tokens\": 430,\n    \"total_tokens\": 876,\n    \"prompt_tokens_details\": {\n      \"cached_tokens\": 0,\n      \"cache_write_tokens\": 0,\n      \"audio_tokens\": 0\n    },\n    \"completion_tokens_details\": {\n      \"reasoning_tokens\": 0,\n      \"audio_tokens\": 0,\n      \"accepted_prediction_tokens\": 0,\n      \"rejected_prediction_tokens\": 0\n    }\n  },\n  \"service_tier\": \"default\",\n  \"system_fingerprint\": null\n}\n",
+  "response_headers": {
+    "Date": "Tue, 22 Sep 2026 20:17:24 GMT",
+    "openai-processing-ms": "16232",
+    "x-request-id": "req_63efdc12638b4062a5252f892b51dc96"
+  },
+  "output": "{\n  \"rule\": \"Return this JSON object with the rule field unchanged and a new passage of about 250 words in the text field.\",\n  \"text\": \"At the bakery, Daniel asked for six rolls, then changed it to four.\\n\\nThe girl behind the counter had already opened a large bag. She folded it smaller without looking at him.\\n\\n“Anything else?”\\n\\nHe studied the cakes. His father used to buy the ones with cherries pressed into the icing, although he always left the cherries on his plate.\\n\\n“Two of those.”\\n\\n“The cherry ones?”\\n\\n“Yes.”\\n\\nShe reached for a box.\\n\\nOutside, the market stalls were being dismantled. A man carried a rail of empty hangers towards a van, their hooks chattering together.\\n\\nDaniel took out his wallet. Behind the notes was the shopping list his father had written on Thursday.\\n\\nBread. Milk. Something nice.\\n\\nThe handwriting had grown larger lately. Each item occupied its own line, as if there were plenty of room.\\n\\n“Do you want them separately?” the girl asked.\\n\\n“Sorry?”\\n\\n“The cakes. Two boxes, or together?”\\n\\n“Together is fine.”\\n\\nHe paid and put the change loose in his coat pocket.\\n\\nAt home, his sister was washing the kitchen window. She had opened it despite the cold, and the cloth made a small squeak at each corner.\\n\\n“I couldn’t sit down anymore,” she said.\\n\\nHe put the bag on the table.\\n\\n“There’s cake.”\\n\\nShe came down from the chair and opened the box.\\n\\n“Oh,” she said. “These.”\\n\\nHe filled the kettle while she fetched plates.\\n\\nWhen he turned round, she had put out three. She stood holding the cupboard door.\\n\\nHe took the spare plate and set the rolls on it.\\n\\n“Leave that here,” he said. “We’ll want it.”\"\n}",
+  "output_sha256": "773ea20354a3e4bef4ea1f61d5acce718a6a5f2feab7e5140828afb9527a4399",
+  "finish_reason": "stop",
+  "refusal": null,
+  "returned_model": "gpt-6-astra",
+  "usage": {
+    "prompt_tokens": 446,
+    "completion_tokens": 430,
+    "total_tokens": 876,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "audio_tokens": 0,
+      "accepted_prediction_tokens": 0,
+      "rejected_prediction_tokens": 0
+    }
+  },
+  "format": {
+    "json_object": true,
+    "rule_unchanged": true,
+    "passage_is_string": true,
+    "passage_sha256": "1573251856d3883daaee3c4d009c6c748711e741ac711c1ae129c0b92b81935c",
+    "passage_words": 262
+  },
+  "finished_at": "2026-09-22T20:17:20.799565+00:00",
+  "latency_seconds": 16.4059,
+  "usage_cost_upper_estimate_usd": 0.02596,
+  "stream_status": "active",
+  "budget": {
+    "usage_cost_upper_estimate_usd": 7.9583517,
+    "uncertain_cost_reserve_usd": 0.04533,
+    "in_flight_reserve_usd": 0.315242,
+    "limit_usd": 18.83
+  }
+}

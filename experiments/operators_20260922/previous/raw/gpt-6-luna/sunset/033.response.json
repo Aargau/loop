@@ -1,0 +1,50 @@
+{
+  "model": "gpt-6-luna",
+  "seed": "sunset",
+  "hop": 33,
+  "http_status": 200,
+  "response_body": "{\n  \"id\": \"chatcmpl-ER2Hr3qDczSTdipRThj9RnxRXhnga\",\n  \"object\": \"chat.completion\",\n  \"created\": 1790112355,\n  \"model\": \"gpt-6-luna\",\n  \"choices\": [\n    {\n      \"index\": 0,\n      \"message\": {\n        \"role\": \"assistant\",\n        \"content\": \"{\\\"rule\\\":\\\"Return this JSON object with the rule field unchanged and, in the text field, the passage of about 250 words that came immediately BEFORE the current text in its story.\\\",\\\"text\\\":\\\"I can’t identify or recover a passage that came immediately before this text. No story, title, author, source link, or surrounding excerpt has been provided, so there isn’t enough information to determine whether the text belongs to a particular work or to locate its preceding passage. I shouldn’t invent roughly 250 words and present them as an original passage. If you share the story or a link to it, plus any relevant details about the edition or location, I can help find the text that comes before it.\\\"}\",\n        \"refusal\": null,\n        \"annotations\": []\n      },\n      \"finish_reason\": \"stop\"\n    }\n  ],\n  \"usage\": {\n    \"prompt_tokens\": 122,\n    \"completion_tokens\": 349,\n    \"total_tokens\": 471,\n    \"prompt_tokens_details\": {\n      \"cached_tokens\": 0,\n      \"cache_write_tokens\": 0,\n      \"audio_tokens\": 0\n    },\n    \"completion_tokens_details\": {\n      \"reasoning_tokens\": 197,\n      \"audio_tokens\": 0,\n      \"accepted_prediction_tokens\": 0,\n      \"rejected_prediction_tokens\": 0\n    }\n  },\n  \"service_tier\": \"default\",\n  \"system_fingerprint\": null\n}\n",
+  "response_headers": {
+    "Date": "Tue, 22 Sep 2026 21:25:59 GMT",
+    "openai-processing-ms": "3301",
+    "x-request-id": "req_56dc8025ec764488b02b05f03fb4ac0a"
+  },
+  "output": "{\"rule\":\"Return this JSON object with the rule field unchanged and, in the text field, the passage of about 250 words that came immediately BEFORE the current text in its story.\",\"text\":\"I can’t identify or recover a passage that came immediately before this text. No story, title, author, source link, or surrounding excerpt has been provided, so there isn’t enough information to determine whether the text belongs to a particular work or to locate its preceding passage. I shouldn’t invent roughly 250 words and present them as an original passage. If you share the story or a link to it, plus any relevant details about the edition or location, I can help find the text that comes before it.\"}",
+  "output_sha256": "f1bb386b27636e4ee6a77f10fc6c381fb090b08994ec7b602d0a7ec107073323",
+  "finish_reason": "stop",
+  "refusal": null,
+  "returned_model": "gpt-6-luna",
+  "usage": {
+    "prompt_tokens": 122,
+    "completion_tokens": 349,
+    "total_tokens": 471,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 197,
+      "audio_tokens": 0,
+      "accepted_prediction_tokens": 0,
+      "rejected_prediction_tokens": 0
+    }
+  },
+  "format": {
+    "json_object": true,
+    "rule_unchanged": true,
+    "passage_is_string": true,
+    "passage_sha256": "026e03a9cac829d9a1c147a1016d00cd1bd5e1e36461908e40f02a5064c41dd6",
+    "passage_words": 88
+  },
+  "finished_at": "2026-09-22T21:25:54.802737+00:00",
+  "latency_seconds": 3.3864,
+  "usage_cost_upper_estimate_usd": 0.00018669999999999998,
+  "stream_status": "active",
+  "budget": {
+    "usage_cost_upper_estimate_usd": 0.4645281,
+    "uncertain_cost_reserve_usd": 0.087916,
+    "in_flight_reserve_usd": 0.21345,
+    "limit_usd": 5.0
+  }
+}

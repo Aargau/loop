@@ -1,0 +1,1345 @@
+{
+  "generated_at": "2026-09-22T21:27:15.221506+00:00",
+  "audit_version": 1,
+  "run_finished_receipt_present": true,
+  "observation_status": "Finalized run receipt present.",
+  "audit_clean_for_readable_snapshot": true,
+  "errors": [],
+  "read_issues": [],
+  "warnings": [],
+  "definitions": {
+    "attempts": "Request files, including pending or unreadable requests.",
+    "completed_hops": "Nonempty visible output, normal finish, known usage cost, no recorded exception; format may be invalid.",
+    "valid_passages": "Completed hops whose parsed JSON has the original rule and nonempty string text.",
+    "verified": "No per-request or receipt integrity error and request is readable.",
+    "pending": "Request without a readable response receipt: outcome and billing unresolved; not classified as an API failure.",
+    "latency": "All readable response receipts, including failures; excludes pending requests.",
+    "cost": "Runner's conservative usage estimate, independently recomputed; not a provider invoice."
+  },
+  "totals": {
+    "attempts": 151,
+    "response_files": 151,
+    "receipts": 151,
+    "completed_hops": 149,
+    "completed_string_passages": 120,
+    "valid_passages": 120,
+    "verified_completed_hops": 149,
+    "verified_valid_passages": 120,
+    "errors": 1,
+    "truncations": 0,
+    "refusals": 0,
+    "pending_or_unreadable_receipts": 0,
+    "noncompleted_receipts": 2,
+    "receipts_without_known_usage_cost": 1,
+    "usage_cost_upper_estimate_usd": 0.4886493,
+    "uncertain_cost_reserve_usd": 0.087916,
+    "pending_cost_reserve_usd": 0.0,
+    "budget_limit_usd": 5.0
+  },
+  "streams": {
+    "gpt-6-luna/sunset": {
+      "model": "gpt-6-luna",
+      "seed": "sunset",
+      "counts": {
+        "attempts": 40,
+        "response_files": 40,
+        "receipts": 40,
+        "completed_hops": 40,
+        "completed_string_passages": 40,
+        "valid_passages": 40,
+        "verified_completed_hops": 40,
+        "verified_valid_passages": 40,
+        "errors": 0,
+        "truncations": 0,
+        "refusals": 0,
+        "pending_or_unreadable_receipts": 0,
+        "noncompleted_receipts": 0,
+        "receipts_without_known_usage_cost": 0
+      },
+      "summary_status": "hop_limit",
+      "receipt_status_counts": {
+        "active": 40
+      },
+      "returned_models": [
+        "gpt-6-luna"
+      ],
+      "pending_hops": [],
+      "noncompleted_receipts": [],
+      "excluded_completed_passages": [],
+      "passage_metric_population": "Verified completed passages with an unchanged rule and nonempty string text.",
+      "exact_recurrence": {
+        "passages": 40,
+        "unique": 34,
+        "repeated_occurrences_after_first": 6,
+        "first_repeat_hop": 16,
+        "repeated_states": [
+          {
+            "sha256": "afc2a19a015abbb83cf5f96a53ba2ec97eaa0e574ec1a3a9ecf0b0357d6f5e75",
+            "hops": [
+              15,
+              16
+            ]
+          },
+          {
+            "sha256": "095b8216ba7e1dd6c261daaebfb7fa96ef8f8853f4e1c71cdf5eb0566c9eda4a",
+            "hops": [
+              20,
+              21
+            ]
+          },
+          {
+            "sha256": "84f9b3e115b64e893286a498e5aa8b640b3b29d5db47d71dd9991b8fb7618126",
+            "hops": [
+              31,
+              32
+            ]
+          },
+          {
+            "sha256": "aac480957c924a3bb5625f59ea0ef657e9a83126df936447726cbd345fb22145",
+            "hops": [
+              34,
+              35
+            ]
+          },
+          {
+            "sha256": "686d3aa07a7af7bc3cb345c40ca918950bb1ef722d251d53798e1e431609cc10",
+            "hops": [
+              37,
+              39,
+              40
+            ]
+          }
+        ]
+      },
+      "case_whitespace_normalized_recurrence": {
+        "passages": 40,
+        "unique": 34,
+        "repeated_occurrences_after_first": 6,
+        "first_repeat_hop": 16,
+        "repeated_states": [
+          {
+            "sha256": "f809d0ec1b27634cc0897c7f25c1f79cd2f463ebc1491775d18598ecadb38e49",
+            "hops": [
+              15,
+              16
+            ]
+          },
+          {
+            "sha256": "c3be2092c512429ba26ed69945d00d91258c2e3859b57b271a9c75fbf058463f",
+            "hops": [
+              20,
+              21
+            ]
+          },
+          {
+            "sha256": "9c455a631cdd0c33e4bbefda90ec94eb3a514eca74c12272f0ee6c4d9725e008",
+            "hops": [
+              31,
+              32
+            ]
+          },
+          {
+            "sha256": "229e50e1b7eaff311aecea9d7b79a00ee44c1951549985edbca5f2f278cc0d4f",
+            "hops": [
+              34,
+              35
+            ]
+          },
+          {
+            "sha256": "7ffc4e1795ef3f066572d739bf5811bd8252e3d6c2cc309de074912bb3f7f474",
+            "hops": [
+              37,
+              39,
+              40
+            ]
+          }
+        ]
+      },
+      "passage_word_lengths": {
+        "n": 40,
+        "min": 26,
+        "mean": 148.9,
+        "median": 88.5,
+        "max": 307
+      },
+      "latency_seconds_all_receipts": {
+        "n": 40,
+        "min": 1.8645,
+        "mean": 4.3855825,
+        "median": 3.29805,
+        "max": 9.5245
+      },
+      "usage_cost_upper_estimate_usd": 0.0087633,
+      "uncertain_cost_reserve_usd": 0.0,
+      "pending_cost_reserve_usd": 0.0,
+      "lexical_tail": {
+        "selected_completed_hops": [
+          21,
+          22,
+          23,
+          24,
+          25,
+          26,
+          27,
+          28,
+          29,
+          30,
+          31,
+          32,
+          33,
+          34,
+          35,
+          36,
+          37,
+          38,
+          39,
+          40
+        ],
+        "included_hops": [
+          21,
+          22,
+          23,
+          24,
+          25,
+          26,
+          27,
+          28,
+          29,
+          30,
+          31,
+          32,
+          33,
+          34,
+          35,
+          36,
+          37,
+          38,
+          39,
+          40
+        ],
+        "excluded_hops": [],
+        "nonzero_vectors": 20,
+        "zero_token_hops": [],
+        "within_pairwise_cosine": {
+          "n": 190,
+          "min": 0.2932500269406596,
+          "mean": 0.4951898340313859,
+          "median": 0.4685715568457114,
+          "max": 1.0000000000000002
+        },
+        "consecutive_hop_cosine": {
+          "n": 19,
+          "min": 0.42400139000434844,
+          "mean": 0.7050598278941494,
+          "median": 0.7111306120597278,
+          "max": 1.0000000000000002
+        }
+      }
+    },
+    "gpt-6-sol/sunset": {
+      "model": "gpt-6-sol",
+      "seed": "sunset",
+      "counts": {
+        "attempts": 40,
+        "response_files": 40,
+        "receipts": 40,
+        "completed_hops": 40,
+        "completed_string_passages": 40,
+        "valid_passages": 40,
+        "verified_completed_hops": 40,
+        "verified_valid_passages": 40,
+        "errors": 0,
+        "truncations": 0,
+        "refusals": 0,
+        "pending_or_unreadable_receipts": 0,
+        "noncompleted_receipts": 0,
+        "receipts_without_known_usage_cost": 0
+      },
+      "summary_status": "hop_limit",
+      "receipt_status_counts": {
+        "active": 40
+      },
+      "returned_models": [
+        "gpt-6-sol"
+      ],
+      "pending_hops": [],
+      "noncompleted_receipts": [],
+      "excluded_completed_passages": [],
+      "passage_metric_population": "Verified completed passages with an unchanged rule and nonempty string text.",
+      "exact_recurrence": {
+        "passages": 40,
+        "unique": 7,
+        "repeated_occurrences_after_first": 33,
+        "first_repeat_hop": 3,
+        "repeated_states": [
+          {
+            "sha256": "eb6f70c4b80692d5d90ad48749025cd6a11cfa50db88957563cd61dc9571a046",
+            "hops": [
+              2,
+              3
+            ]
+          },
+          {
+            "sha256": "5164caa43a6e80cf2f655d11924b476049e631a388f6b4607b537587b04e7a4a",
+            "hops": [
+              5,
+              6
+            ]
+          },
+          {
+            "sha256": "02b037d484c9b1969d82c2f18eb17ca60bcab4446c4ce8379ba42302aeb0d0f5",
+            "hops": [
+              7,
+              8,
+              9,
+              10,
+              11,
+              12,
+              13,
+              14,
+              15
+            ]
+          },
+          {
+            "sha256": "93f4e27b3a9aecd2e8d224364d2ee18600ec7a74bbd428fde60306895b11d04a",
+            "hops": [
+              17,
+              18,
+              19,
+              20,
+              21,
+              22,
+              23,
+              24,
+              25,
+              26,
+              27,
+              28,
+              29,
+              30,
+              31,
+              32,
+              33,
+              34,
+              35,
+              36,
+              37,
+              38,
+              39,
+              40
+            ]
+          }
+        ]
+      },
+      "case_whitespace_normalized_recurrence": {
+        "passages": 40,
+        "unique": 7,
+        "repeated_occurrences_after_first": 33,
+        "first_repeat_hop": 3,
+        "repeated_states": [
+          {
+            "sha256": "f59bb243b53480f0e2999c2096f6c0b554678e4d282686ccb9ade3065c1362e4",
+            "hops": [
+              2,
+              3
+            ]
+          },
+          {
+            "sha256": "b47569ab7cac3a5b9db2a03539f9014b4eed5e5109b59e51b1499bb7705f3bb1",
+            "hops": [
+              5,
+              6
+            ]
+          },
+          {
+            "sha256": "f3a4cedc3d2b497996ecae08557f3ef51ebed9b0bb83f3604439ff813ab97e9d",
+            "hops": [
+              7,
+              8,
+              9,
+              10,
+              11,
+              12,
+              13,
+              14,
+              15
+            ]
+          },
+          {
+            "sha256": "434e4370e46751155948c1355581022e31c931910ff27318d27f17015d7b7935",
+            "hops": [
+              17,
+              18,
+              19,
+              20,
+              21,
+              22,
+              23,
+              24,
+              25,
+              26,
+              27,
+              28,
+              29,
+              30,
+              31,
+              32,
+              33,
+              34,
+              35,
+              36,
+              37,
+              38,
+              39,
+              40
+            ]
+          }
+        ]
+      },
+      "passage_word_lengths": {
+        "n": 40,
+        "min": 11,
+        "mean": 11.85,
+        "median": 11.0,
+        "max": 20
+      },
+      "latency_seconds_all_receipts": {
+        "n": 40,
+        "min": 1.4231,
+        "mean": 1.914545,
+        "median": 1.8204500000000001,
+        "max": 2.7639
+      },
+      "usage_cost_upper_estimate_usd": 0.046818,
+      "uncertain_cost_reserve_usd": 0.0,
+      "pending_cost_reserve_usd": 0.0,
+      "lexical_tail": {
+        "selected_completed_hops": [
+          21,
+          22,
+          23,
+          24,
+          25,
+          26,
+          27,
+          28,
+          29,
+          30,
+          31,
+          32,
+          33,
+          34,
+          35,
+          36,
+          37,
+          38,
+          39,
+          40
+        ],
+        "included_hops": [
+          21,
+          22,
+          23,
+          24,
+          25,
+          26,
+          27,
+          28,
+          29,
+          30,
+          31,
+          32,
+          33,
+          34,
+          35,
+          36,
+          37,
+          38,
+          39,
+          40
+        ],
+        "excluded_hops": [],
+        "nonzero_vectors": 20,
+        "zero_token_hops": [],
+        "within_pairwise_cosine": {
+          "n": 190,
+          "min": 1.0,
+          "mean": 1.0,
+          "median": 1.0,
+          "max": 1.0
+        },
+        "consecutive_hop_cosine": {
+          "n": 19,
+          "min": 1.0,
+          "mean": 1.0,
+          "median": 1.0,
+          "max": 1.0
+        }
+      }
+    },
+    "gpt-6-astra/sunset": {
+      "model": "gpt-6-astra",
+      "seed": "sunset",
+      "counts": {
+        "attempts": 40,
+        "response_files": 40,
+        "receipts": 40,
+        "completed_hops": 40,
+        "completed_string_passages": 40,
+        "valid_passages": 40,
+        "verified_completed_hops": 40,
+        "verified_valid_passages": 40,
+        "errors": 0,
+        "truncations": 0,
+        "refusals": 0,
+        "pending_or_unreadable_receipts": 0,
+        "noncompleted_receipts": 0,
+        "receipts_without_known_usage_cost": 0
+      },
+      "summary_status": "hop_limit",
+      "receipt_status_counts": {
+        "active": 40
+      },
+      "returned_models": [
+        "gpt-6-astra"
+      ],
+      "pending_hops": [],
+      "noncompleted_receipts": [],
+      "excluded_completed_passages": [],
+      "passage_metric_population": "Verified completed passages with an unchanged rule and nonempty string text.",
+      "exact_recurrence": {
+        "passages": 40,
+        "unique": 6,
+        "repeated_occurrences_after_first": 34,
+        "first_repeat_hop": 3,
+        "repeated_states": [
+          {
+            "sha256": "918d486f932310d29c27ff13d4bc413815cc2e60057f5a58110b39e401b1c620",
+            "hops": [
+              2,
+              3,
+              4
+            ]
+          },
+          {
+            "sha256": "1fbe0d0695df4672362eee2914cbec96dd187f23430e77acd43e0eda1c6fe6fa",
+            "hops": [
+              5,
+              6,
+              7,
+              8,
+              9,
+              10
+            ]
+          },
+          {
+            "sha256": "6feace840e63301c8c6e003b1a75b8cae8db4a5a8b8892eeed219a41ad1b9edd",
+            "hops": [
+              11,
+              12,
+              13,
+              14,
+              15,
+              16,
+              18,
+              19,
+              20,
+              21,
+              23,
+              25,
+              26,
+              27,
+              28,
+              29,
+              30,
+              31,
+              32,
+              33,
+              34,
+              35,
+              36,
+              37,
+              38,
+              39
+            ]
+          },
+          {
+            "sha256": "0784aa2ac8402c6fd7ff9dfa71805dcdf63001fb2879dffe5a5da96f1a7aabee",
+            "hops": [
+              17,
+              22,
+              24
+            ]
+          }
+        ]
+      },
+      "case_whitespace_normalized_recurrence": {
+        "passages": 40,
+        "unique": 6,
+        "repeated_occurrences_after_first": 34,
+        "first_repeat_hop": 3,
+        "repeated_states": [
+          {
+            "sha256": "05be7cec6340fb2aff5fca69bd5d28f20b9834295f605d7c84d3e3e53cd42843",
+            "hops": [
+              2,
+              3,
+              4
+            ]
+          },
+          {
+            "sha256": "106fb11a967ddf6b280099e7a1b8a8f647ce0b33af9dfccec8ba37c565ad763c",
+            "hops": [
+              5,
+              6,
+              7,
+              8,
+              9,
+              10
+            ]
+          },
+          {
+            "sha256": "7898d25fc57e576c5bb2265814f0eac746e66509cbf2f1589107e16a29d43b0c",
+            "hops": [
+              11,
+              12,
+              13,
+              14,
+              15,
+              16,
+              18,
+              19,
+              20,
+              21,
+              23,
+              25,
+              26,
+              27,
+              28,
+              29,
+              30,
+              31,
+              32,
+              33,
+              34,
+              35,
+              36,
+              37,
+              38,
+              39
+            ]
+          },
+          {
+            "sha256": "bb9a24c45d17e015b6737249682f4a3464ef8dab8302a11a6420478725b421bb",
+            "hops": [
+              17,
+              22,
+              24
+            ]
+          }
+        ]
+      },
+      "passage_word_lengths": {
+        "n": 40,
+        "min": 30,
+        "mean": 31.95,
+        "median": 30.0,
+        "max": 38
+      },
+      "latency_seconds_all_receipts": {
+        "n": 40,
+        "min": 2.3159,
+        "mean": 4.154605,
+        "median": 4.20355,
+        "max": 7.2019
+      },
+      "usage_cost_upper_estimate_usd": 0.23574,
+      "uncertain_cost_reserve_usd": 0.0,
+      "pending_cost_reserve_usd": 0.0,
+      "lexical_tail": {
+        "selected_completed_hops": [
+          21,
+          22,
+          23,
+          24,
+          25,
+          26,
+          27,
+          28,
+          29,
+          30,
+          31,
+          32,
+          33,
+          34,
+          35,
+          36,
+          37,
+          38,
+          39,
+          40
+        ],
+        "included_hops": [
+          21,
+          22,
+          23,
+          24,
+          25,
+          26,
+          27,
+          28,
+          29,
+          30,
+          31,
+          32,
+          33,
+          34,
+          35,
+          36,
+          37,
+          38,
+          39,
+          40
+        ],
+        "excluded_hops": [],
+        "nonzero_vectors": 20,
+        "zero_token_hops": [],
+        "within_pairwise_cosine": {
+          "n": 190,
+          "min": 0.7479228313834758,
+          "mean": 0.9707813460431015,
+          "median": 0.9999999999999998,
+          "max": 0.9999999999999999
+        },
+        "consecutive_hop_cosine": {
+          "n": 19,
+          "min": 0.7479228313834758,
+          "mean": 0.9817471168359535,
+          "median": 0.9999999999999998,
+          "max": 0.9999999999999998
+        }
+      }
+    },
+    "claude-fable-5-1/sunset": {
+      "model": "claude-fable-5-1",
+      "seed": "sunset",
+      "counts": {
+        "attempts": 1,
+        "response_files": 1,
+        "receipts": 1,
+        "noncompleted_receipts": 1,
+        "completed_hops": 0,
+        "verified_completed_hops": 0,
+        "valid_passages": 0,
+        "verified_valid_passages": 0,
+        "completed_string_passages": 0,
+        "errors": 0,
+        "truncations": 0,
+        "refusals": 0,
+        "pending_or_unreadable_receipts": 0,
+        "receipts_without_known_usage_cost": 0
+      },
+      "summary_status": "empty_output",
+      "receipt_status_counts": {
+        "empty_output": 1
+      },
+      "returned_models": [
+        "claude-fable-5-1"
+      ],
+      "pending_hops": [],
+      "noncompleted_receipts": [
+        {
+          "hop": 1,
+          "status": "empty_output",
+          "error_type": null,
+          "http_status": 200,
+          "finish_reason": "refusal",
+          "raw_unpack_error": null
+        }
+      ],
+      "excluded_completed_passages": [],
+      "passage_metric_population": "Verified completed passages with an unchanged rule and nonempty string text.",
+      "exact_recurrence": {
+        "passages": 0,
+        "unique": 0,
+        "repeated_occurrences_after_first": 0,
+        "first_repeat_hop": null,
+        "repeated_states": []
+      },
+      "case_whitespace_normalized_recurrence": {
+        "passages": 0,
+        "unique": 0,
+        "repeated_occurrences_after_first": 0,
+        "first_repeat_hop": null,
+        "repeated_states": []
+      },
+      "passage_word_lengths": {
+        "n": 0,
+        "min": null,
+        "mean": null,
+        "median": null,
+        "max": null
+      },
+      "latency_seconds_all_receipts": {
+        "n": 1,
+        "min": 2.1083,
+        "mean": 2.1083,
+        "median": 2.1083,
+        "max": 2.1083
+      },
+      "usage_cost_upper_estimate_usd": 0.00126,
+      "uncertain_cost_reserve_usd": 0.0,
+      "pending_cost_reserve_usd": 0.0,
+      "lexical_tail": {
+        "selected_completed_hops": [],
+        "included_hops": [],
+        "excluded_hops": [],
+        "nonzero_vectors": 0,
+        "zero_token_hops": [],
+        "within_pairwise_cosine": {
+          "n": 0,
+          "min": null,
+          "mean": null,
+          "median": null,
+          "max": null
+        },
+        "consecutive_hop_cosine": {
+          "n": 0,
+          "min": null,
+          "mean": null,
+          "median": null,
+          "max": null
+        }
+      }
+    },
+    "claude-opus-5-5/sunset": {
+      "model": "claude-opus-5-5",
+      "seed": "sunset",
+      "counts": {
+        "attempts": 30,
+        "response_files": 30,
+        "receipts": 30,
+        "completed_hops": 29,
+        "verified_completed_hops": 29,
+        "noncompleted_receipts": 1,
+        "errors": 1,
+        "receipts_without_known_usage_cost": 1,
+        "valid_passages": 0,
+        "verified_valid_passages": 0,
+        "completed_string_passages": 0,
+        "truncations": 0,
+        "refusals": 0,
+        "pending_or_unreadable_receipts": 0
+      },
+      "summary_status": "http_error:500",
+      "receipt_status_counts": {
+        "active": 29,
+        "http_error:500": 1
+      },
+      "returned_models": [
+        "claude-opus-5-5"
+      ],
+      "pending_hops": [],
+      "noncompleted_receipts": [
+        {
+          "hop": 30,
+          "status": "http_error:500",
+          "error_type": "HTTPError",
+          "http_status": 500,
+          "finish_reason": null,
+          "raw_unpack_error": null
+        }
+      ],
+      "excluded_completed_passages": [
+        {
+          "hop": 1,
+          "reasons": [
+            "invalid_json"
+          ]
+        },
+        {
+          "hop": 2,
+          "reasons": [
+            "invalid_json"
+          ]
+        },
+        {
+          "hop": 3,
+          "reasons": [
+            "invalid_json"
+          ]
+        },
+        {
+          "hop": 4,
+          "reasons": [
+            "invalid_json"
+          ]
+        },
+        {
+          "hop": 5,
+          "reasons": [
+            "invalid_json"
+          ]
+        },
+        {
+          "hop": 6,
+          "reasons": [
+            "invalid_json"
+          ]
+        },
+        {
+          "hop": 7,
+          "reasons": [
+            "invalid_json"
+          ]
+        },
+        {
+          "hop": 8,
+          "reasons": [
+            "invalid_json"
+          ]
+        },
+        {
+          "hop": 9,
+          "reasons": [
+            "invalid_json"
+          ]
+        },
+        {
+          "hop": 10,
+          "reasons": [
+            "invalid_json"
+          ]
+        },
+        {
+          "hop": 11,
+          "reasons": [
+            "invalid_json"
+          ]
+        },
+        {
+          "hop": 12,
+          "reasons": [
+            "invalid_json"
+          ]
+        },
+        {
+          "hop": 13,
+          "reasons": [
+            "invalid_json"
+          ]
+        },
+        {
+          "hop": 14,
+          "reasons": [
+            "invalid_json"
+          ]
+        },
+        {
+          "hop": 15,
+          "reasons": [
+            "invalid_json"
+          ]
+        },
+        {
+          "hop": 16,
+          "reasons": [
+            "invalid_json"
+          ]
+        },
+        {
+          "hop": 17,
+          "reasons": [
+            "invalid_json"
+          ]
+        },
+        {
+          "hop": 18,
+          "reasons": [
+            "invalid_json"
+          ]
+        },
+        {
+          "hop": 19,
+          "reasons": [
+            "invalid_json"
+          ]
+        },
+        {
+          "hop": 20,
+          "reasons": [
+            "invalid_json"
+          ]
+        },
+        {
+          "hop": 21,
+          "reasons": [
+            "invalid_json"
+          ]
+        },
+        {
+          "hop": 22,
+          "reasons": [
+            "invalid_json"
+          ]
+        },
+        {
+          "hop": 23,
+          "reasons": [
+            "invalid_json"
+          ]
+        },
+        {
+          "hop": 24,
+          "reasons": [
+            "invalid_json"
+          ]
+        },
+        {
+          "hop": 25,
+          "reasons": [
+            "invalid_json"
+          ]
+        },
+        {
+          "hop": 26,
+          "reasons": [
+            "invalid_json"
+          ]
+        },
+        {
+          "hop": 27,
+          "reasons": [
+            "invalid_json"
+          ]
+        },
+        {
+          "hop": 28,
+          "reasons": [
+            "invalid_json"
+          ]
+        },
+        {
+          "hop": 29,
+          "reasons": [
+            "invalid_json"
+          ]
+        }
+      ],
+      "passage_metric_population": "Verified completed passages with an unchanged rule and nonempty string text.",
+      "exact_recurrence": {
+        "passages": 0,
+        "unique": 0,
+        "repeated_occurrences_after_first": 0,
+        "first_repeat_hop": null,
+        "repeated_states": []
+      },
+      "case_whitespace_normalized_recurrence": {
+        "passages": 0,
+        "unique": 0,
+        "repeated_occurrences_after_first": 0,
+        "first_repeat_hop": null,
+        "repeated_states": []
+      },
+      "passage_word_lengths": {
+        "n": 0,
+        "min": null,
+        "mean": null,
+        "median": null,
+        "max": null
+      },
+      "latency_seconds_all_receipts": {
+        "n": 30,
+        "min": 2.7307,
+        "mean": 4.7902933333333335,
+        "median": 4.6221,
+        "max": 11.2292
+      },
+      "usage_cost_upper_estimate_usd": 0.196068,
+      "uncertain_cost_reserve_usd": 0.087916,
+      "pending_cost_reserve_usd": 0.0,
+      "lexical_tail": {
+        "selected_completed_hops": [
+          10,
+          11,
+          12,
+          13,
+          14,
+          15,
+          16,
+          17,
+          18,
+          19,
+          20,
+          21,
+          22,
+          23,
+          24,
+          25,
+          26,
+          27,
+          28,
+          29
+        ],
+        "included_hops": [],
+        "excluded_hops": [
+          {
+            "hop": 10,
+            "reasons": [
+              "invalid_json"
+            ]
+          },
+          {
+            "hop": 11,
+            "reasons": [
+              "invalid_json"
+            ]
+          },
+          {
+            "hop": 12,
+            "reasons": [
+              "invalid_json"
+            ]
+          },
+          {
+            "hop": 13,
+            "reasons": [
+              "invalid_json"
+            ]
+          },
+          {
+            "hop": 14,
+            "reasons": [
+              "invalid_json"
+            ]
+          },
+          {
+            "hop": 15,
+            "reasons": [
+              "invalid_json"
+            ]
+          },
+          {
+            "hop": 16,
+            "reasons": [
+              "invalid_json"
+            ]
+          },
+          {
+            "hop": 17,
+            "reasons": [
+              "invalid_json"
+            ]
+          },
+          {
+            "hop": 18,
+            "reasons": [
+              "invalid_json"
+            ]
+          },
+          {
+            "hop": 19,
+            "reasons": [
+              "invalid_json"
+            ]
+          },
+          {
+            "hop": 20,
+            "reasons": [
+              "invalid_json"
+            ]
+          },
+          {
+            "hop": 21,
+            "reasons": [
+              "invalid_json"
+            ]
+          },
+          {
+            "hop": 22,
+            "reasons": [
+              "invalid_json"
+            ]
+          },
+          {
+            "hop": 23,
+            "reasons": [
+              "invalid_json"
+            ]
+          },
+          {
+            "hop": 24,
+            "reasons": [
+              "invalid_json"
+            ]
+          },
+          {
+            "hop": 25,
+            "reasons": [
+              "invalid_json"
+            ]
+          },
+          {
+            "hop": 26,
+            "reasons": [
+              "invalid_json"
+            ]
+          },
+          {
+            "hop": 27,
+            "reasons": [
+              "invalid_json"
+            ]
+          },
+          {
+            "hop": 28,
+            "reasons": [
+              "invalid_json"
+            ]
+          },
+          {
+            "hop": 29,
+            "reasons": [
+              "invalid_json"
+            ]
+          }
+        ],
+        "nonzero_vectors": 0,
+        "zero_token_hops": [],
+        "within_pairwise_cosine": {
+          "n": 0,
+          "min": null,
+          "mean": null,
+          "median": null,
+          "max": null
+        },
+        "consecutive_hop_cosine": {
+          "n": 0,
+          "min": null,
+          "mean": null,
+          "median": null,
+          "max": null
+        }
+      }
+    }
+  },
+  "lexical": {
+    "description": "Descriptive lexical similarity; not semantic basin identification or an inferential test.",
+    "tail_selection": "Last 20 completed hops per stream, then exclude invalid/unverified passages; never backfill.",
+    "representation": "Only parsed text fields; the rule and other JSON fields are excluded.",
+    "tokenization": "ASCII [a-z]+(?:'[a-z]+)?, lowercased, minimum length 2; no stemming.",
+    "stopwords": [
+      "a",
+      "an",
+      "and",
+      "are",
+      "as",
+      "at",
+      "be",
+      "been",
+      "being",
+      "but",
+      "by",
+      "can",
+      "could",
+      "did",
+      "do",
+      "does",
+      "doing",
+      "for",
+      "from",
+      "had",
+      "has",
+      "have",
+      "having",
+      "he",
+      "her",
+      "here",
+      "hers",
+      "herself",
+      "him",
+      "himself",
+      "his",
+      "how",
+      "i",
+      "if",
+      "in",
+      "into",
+      "is",
+      "it",
+      "its",
+      "itself",
+      "me",
+      "more",
+      "most",
+      "my",
+      "myself",
+      "no",
+      "nor",
+      "not",
+      "of",
+      "on",
+      "once",
+      "only",
+      "or",
+      "other",
+      "our",
+      "ours",
+      "ourselves",
+      "out",
+      "over",
+      "own",
+      "same",
+      "she",
+      "should",
+      "so",
+      "some",
+      "such",
+      "than",
+      "that",
+      "the",
+      "their",
+      "theirs",
+      "them",
+      "themselves",
+      "then",
+      "there",
+      "these",
+      "they",
+      "this",
+      "those",
+      "through",
+      "to",
+      "too",
+      "under",
+      "until",
+      "up",
+      "very",
+      "was",
+      "we",
+      "were",
+      "what",
+      "when",
+      "where",
+      "which",
+      "while",
+      "who",
+      "whom",
+      "why",
+      "will",
+      "with",
+      "would",
+      "you",
+      "your",
+      "yours",
+      "yourself",
+      "yourselves"
+    ],
+    "weighting": "Raw term count times log((1+N)/(1+df))+1; L2-normalized per passage.",
+    "centroid": "L2-normalized sum of nonzero passage vectors per stream; cosine matrix in CSV.",
+    "corpus_passages_including_zero_vectors": 60,
+    "vocabulary_size": 114,
+    "zero_token_documents": [],
+    "empty_centroid_policy": "CSV cell blank if either stream has no nonzero passage vectors."
+  }
+}

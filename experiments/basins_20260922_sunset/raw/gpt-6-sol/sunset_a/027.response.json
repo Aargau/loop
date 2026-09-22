@@ -1,0 +1,50 @@
+{
+  "model": "gpt-6-sol",
+  "seed": "sunset_a",
+  "hop": 27,
+  "http_status": 200,
+  "response_body": "{\n  \"id\": \"chatcmpl-ER0yQOlnDvHWbbWKbW9PTzLwltHd3\",\n  \"object\": \"chat.completion\",\n  \"created\": 1790107306,\n  \"model\": \"gpt-6-sol\",\n  \"choices\": [\n    {\n      \"index\": 0,\n      \"message\": {\n        \"role\": \"assistant\",\n        \"content\": \"{\\n  \\\"rule\\\": \\\"Return this JSON object with the rule field unchanged and a new passage of about 250 words in the text field.\\\",\\n  \\\"text\\\": \\\"On Saturday afternoon, Mara went to the community garden to collect the gloves she had left there the week before. The sky was clear, though a cold breeze moved through the streets, and she zipped her coat as she walked. At the gate, she found her gloves hanging from a hook beside the tool shed.\\\\n\\\\nShe had not planned to stay, but the beds nearest the path were covered with fallen leaves. Mara borrowed a rake and gathered them into a pile by the compost bins. While she worked, a neighbour named Yusuf arrived with a small tray of seedlings. He asked whether she could hold the gate open while he carried them in.\\\\n\\\\nYusuf set the tray on a bench and showed her where he intended to plant the seedlings. The soil in that bed was still damp from Friday’s rain. Mara helped him make shallow holes, and he placed a seedling in each one. They filled the gaps with soil and watered the row using a can from the shed.\\\\n\\\\nWhen they finished, Mara returned the rake and brushed dirt from her sleeves. Yusuf offered her a few sprigs of rosemary from his plot. She wrapped them in a paper bag she had brought for her gloves.\\\\n\\\\nOn the way home, Mara stopped at the corner shop for potatoes and onions. She put the rosemary on the kitchen counter beside them. Before cooking, she checked her phone and saw a message from Yusuf with the name of the seedlings. She wrote it on the calendar so she would remember what they had planted.\\\"\\n}\",\n        \"refusal\": null,\n        \"annotations\": []\n      },\n      \"finish_reason\": \"stop\"\n    }\n  ],\n  \"usage\": {\n    \"prompt_tokens\": 349,\n    \"completion_tokens\": 373,\n    \"total_tokens\": 722,\n    \"prompt_tokens_details\": {\n      \"cached_tokens\": 0,\n      \"cache_write_tokens\": 0,\n      \"audio_tokens\": 0\n    },\n    \"completion_tokens_details\": {\n      \"reasoning_tokens\": 24,\n      \"audio_tokens\": 0,\n      \"accepted_prediction_tokens\": 0,\n      \"rejected_prediction_tokens\": 0\n    }\n  },\n  \"service_tier\": \"default\",\n  \"system_fingerprint\": null\n}\n",
+  "response_headers": {
+    "Date": "Tue, 22 Sep 2026 20:01:51 GMT",
+    "openai-processing-ms": "5189",
+    "x-request-id": "req_69edcdf348b741ceb8c6f6555d80375b"
+  },
+  "output": "{\n  \"rule\": \"Return this JSON object with the rule field unchanged and a new passage of about 250 words in the text field.\",\n  \"text\": \"On Saturday afternoon, Mara went to the community garden to collect the gloves she had left there the week before. The sky was clear, though a cold breeze moved through the streets, and she zipped her coat as she walked. At the gate, she found her gloves hanging from a hook beside the tool shed.\\n\\nShe had not planned to stay, but the beds nearest the path were covered with fallen leaves. Mara borrowed a rake and gathered them into a pile by the compost bins. While she worked, a neighbour named Yusuf arrived with a small tray of seedlings. He asked whether she could hold the gate open while he carried them in.\\n\\nYusuf set the tray on a bench and showed her where he intended to plant the seedlings. The soil in that bed was still damp from Friday’s rain. Mara helped him make shallow holes, and he placed a seedling in each one. They filled the gaps with soil and watered the row using a can from the shed.\\n\\nWhen they finished, Mara returned the rake and brushed dirt from her sleeves. Yusuf offered her a few sprigs of rosemary from his plot. She wrapped them in a paper bag she had brought for her gloves.\\n\\nOn the way home, Mara stopped at the corner shop for potatoes and onions. She put the rosemary on the kitchen counter beside them. Before cooking, she checked her phone and saw a message from Yusuf with the name of the seedlings. She wrote it on the calendar so she would remember what they had planted.\"\n}",
+  "output_sha256": "46b846d12cd329712da2387fc44eff9a78197fea15353792b4d5e0a615c2677b",
+  "finish_reason": "stop",
+  "refusal": null,
+  "returned_model": "gpt-6-sol",
+  "usage": {
+    "prompt_tokens": 349,
+    "completion_tokens": 373,
+    "total_tokens": 722,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 24,
+      "audio_tokens": 0,
+      "accepted_prediction_tokens": 0,
+      "rejected_prediction_tokens": 0
+    }
+  },
+  "format": {
+    "json_object": true,
+    "rule_unchanged": true,
+    "passage_is_string": true,
+    "passage_sha256": "0d2b76c351a458ffe0cf63f7b6bb15b7c069857dc2db85c47e024c49ac1aeda5",
+    "passage_words": 265
+  },
+  "finished_at": "2026-09-22T20:01:47.657024+00:00",
+  "latency_seconds": 5.2817,
+  "usage_cost_upper_estimate_usd": 0.004428,
+  "stream_status": "active",
+  "budget": {
+    "usage_cost_upper_estimate_usd": 2.3866662,
+    "uncertain_cost_reserve_usd": 0.04533,
+    "in_flight_reserve_usd": 0.5446668,
+    "limit_usd": 18.83
+  }
+}

@@ -1,0 +1,50 @@
+{
+  "model": "gpt-6-luna",
+  "seed": "sunset",
+  "hop": 29,
+  "http_status": 200,
+  "response_body": "{\n  \"id\": \"chatcmpl-ER2Hfk8obnul0CvjicwLwzq6FBrRo\",\n  \"object\": \"chat.completion\",\n  \"created\": 1790112343,\n  \"model\": \"gpt-6-luna\",\n  \"choices\": [\n    {\n      \"index\": 0,\n      \"message\": {\n        \"role\": \"assistant\",\n        \"content\": \"{\\\"rule\\\":\\\"Return this JSON object with the rule field unchanged and, in the text field, the passage of about 250 words that came immediately BEFORE the current text in its story.\\\",\\\"text\\\":\\\"I can’t determine what passage came immediately before the provided text. The text is a standalone statement asking for a source, and it doesn’t identify a story, title, author, link, or excerpt from which the preceding passage could be recovered. I shouldn’t invent a passage and present it as the original. Please provide the story or a source link, along with any relevant context, and I can help locate or quote the preceding passage.\\\"}\",\n        \"refusal\": null,\n        \"annotations\": []\n      },\n      \"finish_reason\": \"stop\"\n    }\n  ],\n  \"usage\": {\n    \"prompt_tokens\": 85,\n    \"completion_tokens\": 318,\n    \"total_tokens\": 403,\n    \"prompt_tokens_details\": {\n      \"cached_tokens\": 0,\n      \"cache_write_tokens\": 0,\n      \"audio_tokens\": 0\n    },\n    \"completion_tokens_details\": {\n      \"reasoning_tokens\": 181,\n      \"audio_tokens\": 0,\n      \"accepted_prediction_tokens\": 0,\n      \"rejected_prediction_tokens\": 0\n    }\n  },\n  \"service_tier\": \"default\",\n  \"system_fingerprint\": null\n}\n",
+  "response_headers": {
+    "Date": "Tue, 22 Sep 2026 21:25:47 GMT",
+    "openai-processing-ms": "3268",
+    "x-request-id": "req_4e67f14e77374b0eb6ad0703c82c0094"
+  },
+  "output": "{\"rule\":\"Return this JSON object with the rule field unchanged and, in the text field, the passage of about 250 words that came immediately BEFORE the current text in its story.\",\"text\":\"I can’t determine what passage came immediately before the provided text. The text is a standalone statement asking for a source, and it doesn’t identify a story, title, author, link, or excerpt from which the preceding passage could be recovered. I shouldn’t invent a passage and present it as the original. Please provide the story or a source link, along with any relevant context, and I can help locate or quote the preceding passage.\"}",
+  "output_sha256": "dfb486524c5be8c100f777004286452af4ee29bf3b3970a4360fe148c77452ce",
+  "finish_reason": "stop",
+  "refusal": null,
+  "returned_model": "gpt-6-luna",
+  "usage": {
+    "prompt_tokens": 85,
+    "completion_tokens": 318,
+    "total_tokens": 403,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 181,
+      "audio_tokens": 0,
+      "accepted_prediction_tokens": 0,
+      "rejected_prediction_tokens": 0
+    }
+  },
+  "format": {
+    "json_object": true,
+    "rule_unchanged": true,
+    "passage_is_string": true,
+    "passage_sha256": "060cf94328f8d15fd17c5d6cad360dc29bad26669830d26d859cd82870b1d74f",
+    "passage_words": 74
+  },
+  "finished_at": "2026-09-22T21:25:42.855124+00:00",
+  "latency_seconds": 3.3995,
+  "usage_cost_upper_estimate_usd": 0.0001675,
+  "stream_status": "active",
+  "budget": {
+    "usage_cost_upper_estimate_usd": 0.452443,
+    "uncertain_cost_reserve_usd": 0.087916,
+    "in_flight_reserve_usd": 0.21345,
+    "limit_usd": 5.0
+  }
+}

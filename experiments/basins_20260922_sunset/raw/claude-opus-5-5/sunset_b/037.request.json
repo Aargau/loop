@@ -1,0 +1,22 @@
+{
+  "started_at": "2026-09-22T20:12:13.625423+00:00",
+  "model": "claude-opus-5-5",
+  "seed": "sunset_b",
+  "hop": 37,
+  "endpoint": "https://api.anthropic.com/v1/messages",
+  "body": {
+    "model": "claude-opus-5-5",
+    "messages": [
+      {
+        "role": "user",
+        "content": "```json\n{\"rule\": \"Return this JSON object with the rule field unchanged and a new passage of about 250 words in the text field.\", \"text\": \"In the mountain village of Elmsreach, the great clock in the square had not chimed for thirty years. Its hands were frozen at a quarter past four, and the villagers had long since stopped looking up. Merchants opened their stalls by the sun, children ran home when their mothers called, and nobody could agree on what time anything had happened. The mayor insisted the mechanism was beyond repair, rusted solid by decades of snow. The baker's grandmother whispered that the clockmaker had cursed it after the village refused to pay him. A curious boy named Emil, who swept the cobblestones each morning, noticed that the pigeons never roosted on the clock face's left side, as if something inside still stirred. One drizzly afternoon, he found a small iron door hidden behind ivy at the tower's base and squeezed through. A ladder climbed into darkness, ending in a chamber of enormous gears, dangling weights, and a workbench scattered with tiny brass springs. An elderly woman named Greta sat polishing a gear no larger than a coin. She was the clockmaker's apprentice, she explained, and after her master died she had vowed to restore his work herself, one piece at a time. Her hands had grown slow, and her eyes weak, but she had never stopped. Emil offered to help. All winter, he oiled axles, counted teeth on cogs, and learned how a single pendulum could keep a whole town in rhythm. On the first morning of spring, the villagers froze mid-step as a deep, bright chime rang across Elmsreach. Greta squeezed Emil's hand, and together they listened to the bells count the hour.\"}\n```"
+      }
+    ],
+    "max_tokens": 4096,
+    "output_config": {
+      "effort": "low"
+    }
+  },
+  "state_sha256": "3896c31170ef92505bf2e5cc31afb12458155d9915ce4fea3c9741b2fa9ceb93",
+  "reserved_cost_usd": 0.090876
+}

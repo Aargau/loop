@@ -1,0 +1,47 @@
+{
+  "model": "gpt-6-luna",
+  "seed": "tide_b",
+  "hop": 4,
+  "http_status": 200,
+  "response_body": "{\n  \"id\": \"chatcmpl-ER0os88OK7qhAySKaBZaQ2O5LeR3b\",\n  \"object\": \"chat.completion\",\n  \"created\": 1790106714,\n  \"model\": \"gpt-6-luna\",\n  \"choices\": [\n    {\n      \"index\": 0,\n      \"message\": {\n        \"role\": \"assistant\",\n        \"content\": \"{\\\"rule\\\":\\\"Return this JSON object with the rule field unchanged and a new passage of about 250 words in the text field.\\\",\\\"text\\\":\\\"The track narrowed until the stone walls gave way to thorny hedges. Their branches combed the mist, dripping cold water onto Mara’s sleeves. Behind them, the bell sounded again, and this time the note seemed to come from beneath the ground.\\n\\nEli slowed. “That’s not a bell.”\\n\\n“What is it, then?” Mara asked.\\n\\nHe listened, head tilted. “Someone calling.”\\n\\nHer mother tightened her grip on Mara’s hand. “Keep walking.”\\n\\nThe compass warmed until its brass edge was almost hot. Its needle trembled, then pointed down. At their feet, half-buried in mud, lay a round iron plate. Eli brushed away the leaves. A ring was set into its center, and around the rim someone had engraved the same words as the compass: For the way home.\\n\\nMara’s mother knelt beside it. Her face had gone pale.\\n\\n“You’ve seen this before,” Mara said.\\n\\n“I dreamed of it,” her mother replied. “When you were little. There was a door under the hill, and someone on the other side was calling your name.”\\n\\nThe iron ring shifted with a groan. A breath of air rose from the crack, carrying the smell of salt and smoke. Far below, a blue light pulsed once.\\n\\nMara crouched and peered into the darkness. “Is anyone there?”\\n\\nFor a moment, nothing answered. Then a voice floated up, thin as a thread.\\n\\n“Mara?”\\n\\nShe knew that voice. She had heard it only in the oldest stories her grandmother told, the ones about a sailor who vanished before Mara was born.\\n\\nHer mother reached for the ring. Eli caught her wrist.\\n\\n“Wait,” he whispered. “What if it’s not calling her home?”\\n\\nThe compass needle pointed straight into the opening.\\\"}\",\n        \"refusal\": null,\n        \"annotations\": []\n      },\n      \"finish_reason\": \"stop\"\n    }\n  ],\n  \"usage\": {\n    \"prompt_tokens\": 389,\n    \"completion_tokens\": 472,\n    \"total_tokens\": 861,\n    \"prompt_tokens_details\": {\n      \"cached_tokens\": 0,\n      \"cache_write_tokens\": 0,\n      \"audio_tokens\": 0\n    },\n    \"completion_tokens_details\": {\n      \"reasoning_tokens\": 71,\n      \"audio_tokens\": 0,\n      \"accepted_prediction_tokens\": 0,\n      \"rejected_prediction_tokens\": 0\n    }\n  },\n  \"service_tier\": \"default\",\n  \"system_fingerprint\": null\n}\n",
+  "response_headers": {
+    "Date": "Tue, 22 Sep 2026 19:51:58 GMT",
+    "openai-processing-ms": "4705",
+    "x-request-id": "req_159df043e17c457a976044798c580509"
+  },
+  "output": "{\"rule\":\"Return this JSON object with the rule field unchanged and a new passage of about 250 words in the text field.\",\"text\":\"The track narrowed until the stone walls gave way to thorny hedges. Their branches combed the mist, dripping cold water onto Mara’s sleeves. Behind them, the bell sounded again, and this time the note seemed to come from beneath the ground.\n\nEli slowed. “That’s not a bell.”\n\n“What is it, then?” Mara asked.\n\nHe listened, head tilted. “Someone calling.”\n\nHer mother tightened her grip on Mara’s hand. “Keep walking.”\n\nThe compass warmed until its brass edge was almost hot. Its needle trembled, then pointed down. At their feet, half-buried in mud, lay a round iron plate. Eli brushed away the leaves. A ring was set into its center, and around the rim someone had engraved the same words as the compass: For the way home.\n\nMara’s mother knelt beside it. Her face had gone pale.\n\n“You’ve seen this before,” Mara said.\n\n“I dreamed of it,” her mother replied. “When you were little. There was a door under the hill, and someone on the other side was calling your name.”\n\nThe iron ring shifted with a groan. A breath of air rose from the crack, carrying the smell of salt and smoke. Far below, a blue light pulsed once.\n\nMara crouched and peered into the darkness. “Is anyone there?”\n\nFor a moment, nothing answered. Then a voice floated up, thin as a thread.\n\n“Mara?”\n\nShe knew that voice. She had heard it only in the oldest stories her grandmother told, the ones about a sailor who vanished before Mara was born.\n\nHer mother reached for the ring. Eli caught her wrist.\n\n“Wait,” he whispered. “What if it’s not calling her home?”\n\nThe compass needle pointed straight into the opening.\"}",
+  "output_sha256": "932221269326385db752ef7ee32a6c3eb8d0a2a3b92691fe8e2900cbcec53ecd",
+  "finish_reason": "stop",
+  "refusal": null,
+  "returned_model": "gpt-6-luna",
+  "usage": {
+    "prompt_tokens": 389,
+    "completion_tokens": 472,
+    "total_tokens": 861,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 71,
+      "audio_tokens": 0,
+      "accepted_prediction_tokens": 0,
+      "rejected_prediction_tokens": 0
+    }
+  },
+  "format": {
+    "json_object": false,
+    "rule_unchanged": false
+  },
+  "finished_at": "2026-09-22T19:51:55.084595+00:00",
+  "latency_seconds": 4.8551,
+  "usage_cost_upper_estimate_usd": 0.00027489999999999996,
+  "stream_status": "active",
+  "budget": {
+    "usage_cost_upper_estimate_usd": 0.289208,
+    "uncertain_cost_reserve_usd": 0.0,
+    "in_flight_reserve_usd": 0.587832,
+    "limit_usd": 20
+  }
+}

@@ -1,0 +1,22 @@
+{
+  "started_at": "2026-09-22T21:23:48.789658+00:00",
+  "model": "claude-opus-5-5",
+  "seed": "sunset",
+  "hop": 6,
+  "endpoint": "https://api.anthropic.com/v1/messages",
+  "body": {
+    "model": "claude-opus-5-5",
+    "messages": [
+      {
+        "role": "user",
+        "content": "It looks like this message is itself an assistant's reply, one explaining that a *previous* pasted message was also from an assistant. So we may be caught in a copy-paste loop.\n\nI don't have any earlier context on my end: no passage about Mara, no farmhouse scene, no JSON. Each conversation starts fresh for me.\n\nTo get unstuck, just tell me directly what you're after, for example:\n\n- **\"Write a short story that begins 'The sun was setting behind the hills,' about a woman named Mara returning to a farmhouse.\"** Add a genre, tone, or length if you have one in mind.\n- **\"Here's the text/JSON I was working with: [paste]. Please [edit/continue/convert] it.\"**\n- **Something else entirely.** Ask away.\n\nIf you're unsure what happened, check whether you copied from the wrong window or pasted an assistant response instead of your own draft. What would you like to do?"
+      }
+    ],
+    "max_tokens": 4096,
+    "output_config": {
+      "effort": "low"
+    }
+  },
+  "state_sha256": "ffa8b467367bb0c97f7250ccbfbaeb86c5fba1935e8606ae89955f6746c50962",
+  "reserved_cost_usd": 0.087444
+}

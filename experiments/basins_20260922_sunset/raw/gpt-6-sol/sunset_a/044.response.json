@@ -1,0 +1,50 @@
+{
+  "model": "gpt-6-sol",
+  "seed": "sunset_a",
+  "hop": 44,
+  "http_status": 200,
+  "response_body": "{\n  \"id\": \"chatcmpl-ER11qdM6wAGCrPEQtvrsKL4DNiukN\",\n  \"object\": \"chat.completion\",\n  \"created\": 1790107518,\n  \"model\": \"gpt-6-sol\",\n  \"choices\": [\n    {\n      \"index\": 0,\n      \"message\": {\n        \"role\": \"assistant\",\n        \"content\": \"{\\n  \\\"rule\\\": \\\"Return this JSON object with the rule field unchanged and a new passage of about 250 words in the text field.\\\",\\n  \\\"text\\\": \\\"On Friday, the bench was dry except for one dark patch beneath a chestnut leaf. Imani lifted the leaf by its stem. Underneath, the wood was the color it had been before the rain.\\\\n\\\\nThe older boy arrived with his notebook tucked under his arm. He pointed to the pale shape the leaf had left behind.\\\\n\\\\n‘It’s like a picture,’ he said.\\\\n\\\\n‘It won’t stay,’ Imani told him.\\\\n\\\\nHe sat at one end of the bench, leaving room for her. From her pocket, Imani took Thursday’s receipt. The ink had blurred where her thumb had touched it, but she could still read her question: Did the shade come when no one was here?\\\\n\\\\nA small beetle appeared between the slats. It crossed the dry wood and disappeared into the narrow space behind the bench. The boy leaned forward to look, then sat back.\\\\n\\\\n‘Maybe that’s where they go,’ he said.\\\\n\\\\n‘Maybe this one lives there all the time.’\\\\n\\\\nHe opened his notebook and wrote something down. Imani didn’t ask what. Across the street, her grandfather set a tray of rolls in the bakery window, and the glass clouded around them.\\\\n\\\\nAs the sun moved, the pale leaf shape faded into the rest of the bench. Imani kept watching until she could no longer tell where it had been.\\\\n\\\\n‘Did you see it go?’ the boy asked.\\\\n\\\\n‘No,’ she said. ‘I was looking right at it.’\\\\n\\\\nHe turned to a fresh page. This time, when he held out the notebook, Imani wrote her own question beside his.\\\"\\n}\",\n        \"refusal\": null,\n        \"annotations\": []\n      },\n      \"finish_reason\": \"stop\"\n    }\n  ],\n  \"usage\": {\n    \"prompt_tokens\": 379,\n    \"completion_tokens\": 419,\n    \"total_tokens\": 798,\n    \"prompt_tokens_details\": {\n      \"cached_tokens\": 0,\n      \"cache_write_tokens\": 0,\n      \"audio_tokens\": 0\n    },\n    \"completion_tokens_details\": {\n      \"reasoning_tokens\": 28,\n      \"audio_tokens\": 0,\n      \"accepted_prediction_tokens\": 0,\n      \"rejected_prediction_tokens\": 0\n    }\n  },\n  \"service_tier\": \"default\",\n  \"system_fingerprint\": null\n}\n",
+  "response_headers": {
+    "Date": "Tue, 22 Sep 2026 20:05:23 GMT",
+    "openai-processing-ms": "5328",
+    "x-request-id": "req_4233787bc25240beb928f00c7969634f"
+  },
+  "output": "{\n  \"rule\": \"Return this JSON object with the rule field unchanged and a new passage of about 250 words in the text field.\",\n  \"text\": \"On Friday, the bench was dry except for one dark patch beneath a chestnut leaf. Imani lifted the leaf by its stem. Underneath, the wood was the color it had been before the rain.\\n\\nThe older boy arrived with his notebook tucked under his arm. He pointed to the pale shape the leaf had left behind.\\n\\n‘It’s like a picture,’ he said.\\n\\n‘It won’t stay,’ Imani told him.\\n\\nHe sat at one end of the bench, leaving room for her. From her pocket, Imani took Thursday’s receipt. The ink had blurred where her thumb had touched it, but she could still read her question: Did the shade come when no one was here?\\n\\nA small beetle appeared between the slats. It crossed the dry wood and disappeared into the narrow space behind the bench. The boy leaned forward to look, then sat back.\\n\\n‘Maybe that’s where they go,’ he said.\\n\\n‘Maybe this one lives there all the time.’\\n\\nHe opened his notebook and wrote something down. Imani didn’t ask what. Across the street, her grandfather set a tray of rolls in the bakery window, and the glass clouded around them.\\n\\nAs the sun moved, the pale leaf shape faded into the rest of the bench. Imani kept watching until she could no longer tell where it had been.\\n\\n‘Did you see it go?’ the boy asked.\\n\\n‘No,’ she said. ‘I was looking right at it.’\\n\\nHe turned to a fresh page. This time, when he held out the notebook, Imani wrote her own question beside his.\"\n}",
+  "output_sha256": "f652878b9c6ac3023571d4653f7f496766a5622fed5847327579987bdbe57957",
+  "finish_reason": "stop",
+  "refusal": null,
+  "returned_model": "gpt-6-sol",
+  "usage": {
+    "prompt_tokens": 379,
+    "completion_tokens": 419,
+    "total_tokens": 798,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 28,
+      "audio_tokens": 0,
+      "accepted_prediction_tokens": 0,
+      "rejected_prediction_tokens": 0
+    }
+  },
+  "format": {
+    "json_object": true,
+    "rule_unchanged": true,
+    "passage_is_string": true,
+    "passage_sha256": "3331bfa41cd47c3218c8f95ecba955163ac8ca4dbab3f8f907b7ccd82dd08206",
+    "passage_words": 256
+  },
+  "finished_at": "2026-09-22T20:05:19.656770+00:00",
+  "latency_seconds": 5.6718,
+  "usage_cost_upper_estimate_usd": 0.004948,
+  "stream_status": "active",
+  "budget": {
+    "usage_cost_upper_estimate_usd": 3.7384734,
+    "uncertain_cost_reserve_usd": 0.04533,
+    "in_flight_reserve_usd": 0.5482001,
+    "limit_usd": 18.83
+  }
+}

@@ -1,0 +1,22 @@
+{
+  "started_at": "2026-09-22T20:01:57.828513+00:00",
+  "model": "claude-opus-5-5",
+  "seed": "sunset_b",
+  "hop": 15,
+  "endpoint": "https://api.anthropic.com/v1/messages",
+  "body": {
+    "model": "claude-opus-5-5",
+    "messages": [
+      {
+        "role": "user",
+        "content": "```json\n{\"rule\": \"Return this JSON object with the rule field unchanged and a new passage of about 250 words in the text field.\", \"text\": \"On the northern edge of the island stood a lighthouse that had not been lit in thirty years, and every summer Tomas rowed out to visit the woman who still lived beneath it. Her name was Ilse, and she had been the last keeper before the automated beacons came and the coast guard sent letters thanking her for her service. She had simply refused to leave. The tower was hers, she said, the way a shell belongs to the creature that grew it. Tomas brought flour, lamp oil, and newspapers weeks out of date, and in return she taught him the language of the sea: how to read a storm in the color of the gulls' flight, how to mend a net with knots that tightened under strain, and how to count the seconds between waves to judge the weather beyond the horizon. One August night a fishing boat lost its engine in a squall and drifted toward the rocks below the point. The radio crackled with the captain's voice, but the new beacon on the far headland was hidden by rain. Ilse climbed the spiral stairs faster than Tomas had ever seen her move. Together they polished the great lens, filled the old burner, and struck a match with trembling hands. The flame caught, and the beam swept out across the black water for the first time in decades. Within the hour the boat had turned away from the reef and found the harbor. At dawn Ilse sat on the gallery, watching the calm sea, and smiled. Tomas understood that she had never been waiting for rescue. She had been waiting to rescue someone.\"}\n```"
+      }
+    ],
+    "max_tokens": 4096,
+    "output_config": {
+      "effort": "low"
+    }
+  },
+  "state_sha256": "baa8ef14a95b8e0b57595c353b25e89dd0be3aa082ee56629e868a52af78078f",
+  "reserved_cost_usd": 0.090472
+}

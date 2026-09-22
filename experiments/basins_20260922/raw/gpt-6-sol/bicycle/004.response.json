@@ -1,0 +1,50 @@
+{
+  "model": "gpt-6-sol",
+  "seed": "bicycle",
+  "hop": 4,
+  "http_status": 200,
+  "response_body": "{\n  \"id\": \"chatcmpl-ER0p5SdxCX59sHvtk07m3hhAPh34V\",\n  \"object\": \"chat.completion\",\n  \"created\": 1790106727,\n  \"model\": \"gpt-6-sol\",\n  \"choices\": [\n    {\n      \"index\": 0,\n      \"message\": {\n        \"role\": \"assistant\",\n        \"content\": \"{\\\"rule\\\":\\\"Return this JSON object with the rule field unchanged and a new passage of about 250 words in the text field.\\\",\\\"text\\\":\\\"Every Tuesday, a paper crane appeared on the windowsill of the town library. Each was folded from a different page: a recipe, a bus timetable, once a map of the moon.\\\\n\\\\nMara, the librarian, began lining them up behind the circulation desk. By winter, the cranes formed a small, uneven flock.\\\\n\\\\n“Throw them away,” said the caretaker. “They’re only scraps.”\\\\n\\\\nBut Mara liked the thought of someone leaving a little work behind for a stranger. She set out a sign: IF THESE ARE YOURS, THANK YOU.\\\\n\\\\nThe following Tuesday, there was no crane. Instead, she found a square of blank yellow paper.\\\\n\\\\nMara turned it over. Nothing. After closing, she tried folding it herself. Her first crane had a crooked neck and one wing smaller than the other. She left it on the windowsill.\\\\n\\\\nThe next morning, a man was standing outside, smiling at it. He came in carrying a stack of yellow squares.\\\\n\\\\n“My wife used to make them,” he said. “She died in the spring. I found her box of paper, and I didn’t know what else to do with it.”\\\\n\\\\nMara glanced at her clumsy crane. “I’m sorry. I think I used too many creases.”\\\\n\\\\n“She would have liked it,” he said. “She was always trying to teach someone.”\\\\n\\\\nThey sat at a table while he showed her how to fold the wings. A student waiting for a computer asked to join them. Then the caretaker pulled up a chair.\\\\n\\\\nWhen they locked the doors that evening, three new cranes stood on the windowsill, facing the street.\\\"}\",\n        \"refusal\": null,\n        \"annotations\": []\n      },\n      \"finish_reason\": \"stop\"\n    }\n  ],\n  \"usage\": {\n    \"prompt_tokens\": 378,\n    \"completion_tokens\": 421,\n    \"total_tokens\": 799,\n    \"prompt_tokens_details\": {\n      \"cached_tokens\": 0,\n      \"cache_write_tokens\": 0,\n      \"audio_tokens\": 0\n    },\n    \"completion_tokens_details\": {\n      \"reasoning_tokens\": 30,\n      \"audio_tokens\": 0,\n      \"accepted_prediction_tokens\": 0,\n      \"rejected_prediction_tokens\": 0\n    }\n  },\n  \"service_tier\": \"default\",\n  \"system_fingerprint\": null\n}\n",
+  "response_headers": {
+    "Date": "Tue, 22 Sep 2026 19:52:13 GMT",
+    "openai-processing-ms": "6246",
+    "x-request-id": "req_7230c9efd27b4a648e8eee0f00d50617"
+  },
+  "output": "{\"rule\":\"Return this JSON object with the rule field unchanged and a new passage of about 250 words in the text field.\",\"text\":\"Every Tuesday, a paper crane appeared on the windowsill of the town library. Each was folded from a different page: a recipe, a bus timetable, once a map of the moon.\\n\\nMara, the librarian, began lining them up behind the circulation desk. By winter, the cranes formed a small, uneven flock.\\n\\n“Throw them away,” said the caretaker. “They’re only scraps.”\\n\\nBut Mara liked the thought of someone leaving a little work behind for a stranger. She set out a sign: IF THESE ARE YOURS, THANK YOU.\\n\\nThe following Tuesday, there was no crane. Instead, she found a square of blank yellow paper.\\n\\nMara turned it over. Nothing. After closing, she tried folding it herself. Her first crane had a crooked neck and one wing smaller than the other. She left it on the windowsill.\\n\\nThe next morning, a man was standing outside, smiling at it. He came in carrying a stack of yellow squares.\\n\\n“My wife used to make them,” he said. “She died in the spring. I found her box of paper, and I didn’t know what else to do with it.”\\n\\nMara glanced at her clumsy crane. “I’m sorry. I think I used too many creases.”\\n\\n“She would have liked it,” he said. “She was always trying to teach someone.”\\n\\nThey sat at a table while he showed her how to fold the wings. A student waiting for a computer asked to join them. Then the caretaker pulled up a chair.\\n\\nWhen they locked the doors that evening, three new cranes stood on the windowsill, facing the street.\"}",
+  "output_sha256": "6d03f58ef9949927ff10063cb5e77dab3e2f1ac62f9503f541c0d60430793fa7",
+  "finish_reason": "stop",
+  "refusal": null,
+  "returned_model": "gpt-6-sol",
+  "usage": {
+    "prompt_tokens": 378,
+    "completion_tokens": 421,
+    "total_tokens": 799,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 30,
+      "audio_tokens": 0,
+      "accepted_prediction_tokens": 0,
+      "rejected_prediction_tokens": 0
+    }
+  },
+  "format": {
+    "json_object": true,
+    "rule_unchanged": true,
+    "passage_is_string": true,
+    "passage_sha256": "17fcb5fd4eda8944e3b538e004442681447cfdd591a778f2416b989b984c1b8b",
+    "passage_words": 260
+  },
+  "finished_at": "2026-09-22T19:52:09.615021+00:00",
+  "latency_seconds": 6.3467,
+  "usage_cost_upper_estimate_usd": 0.004966,
+  "stream_status": "active",
+  "budget": {
+    "usage_cost_upper_estimate_usd": 0.3906602,
+    "uncertain_cost_reserve_usd": 0.0,
+    "in_flight_reserve_usd": 0.5473101,
+    "limit_usd": 20
+  }
+}

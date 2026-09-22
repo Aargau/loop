@@ -1,0 +1,20 @@
+{
+  "started_at": "2026-09-22T19:52:26.455552+00:00",
+  "model": "gpt-6-sol",
+  "seed": "tide_a",
+  "hop": 6,
+  "endpoint": "https://api.openai.com/v1/chat/completions",
+  "body": {
+    "model": "gpt-6-sol",
+    "messages": [
+      {
+        "role": "user",
+        "content": "{\n  \"rule\": \"Return this JSON object with the rule field unchanged and a new passage of about 250 words in the text field.\",\n  \"text\": \"On the first day of spring, Mara found a blue envelope beneath her door. Inside was a map of her town with one building marked in red: the library, which had burned down before she was born.\\n\\nAt dusk, she followed the map to the empty lot. Brick walls stood where the weeds had been that morning. Through the windows, she saw rows of books and a man asleep at a desk.\\n\\nMara pushed open the door. The man woke and handed her a card bearing her name.\\n\\n“You may borrow one,” he said.\\n\\nEvery spine on the nearest shelf carried a date instead of a title. Mara found tomorrow’s date and opened the book. Its first page described her visit to the library. On the next, her brother slipped from the riverbank and struck his head on a stone.\\n\\nShe shut the book. “Can I change this?”\\n\\nThe librarian glanced at the clock. “You have until we close.”\\n\\nMara ran home and found her brother packing his fishing rod. She offered to help mend the garden fence instead. He complained, but stayed. They worked until nightfall, when rain sent them indoors.\\n\\nThe next morning, Mara went to the river. Its banks were slick, and the stone lay just below the water. She carried it up the hill and left it in her garden.\\n\\nThat evening, the library lot was empty again. A blue envelope waited at her door. Inside was a due-date slip, stamped with tomorrow’s date, and a request to return the book.\"\n}"
+      }
+    ],
+    "max_completion_tokens": 4096,
+    "reasoning_effort": "low"
+  },
+  "state_sha256": "48a4573634dd2d7380b3ceea55b4a2c6e5721b1c5c1ff51d362d952e04b4a807",
+  "reserved_cost_usd": 0.04507
+}

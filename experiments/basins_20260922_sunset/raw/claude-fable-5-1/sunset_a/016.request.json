@@ -1,0 +1,22 @@
+{
+  "started_at": "2026-09-22T20:04:52.151713+00:00",
+  "model": "claude-fable-5-1",
+  "seed": "sunset_a",
+  "hop": 16,
+  "endpoint": "https://api.anthropic.com/v1/messages",
+  "body": {
+    "model": "claude-fable-5-1",
+    "messages": [
+      {
+        "role": "user",
+        "content": "{\"rule\": \"Return this JSON object with the rule field unchanged and a new passage of about 250 words in the text field.\", \"text\": \"By morning the paint had come away in a ring, and the brass beneath it caught the light from the courtyard door. Ines did not touch it again until the shop was closed and the tenants' footsteps had settled into the ordinary sounds of evening. Then she went out with a cloth and wiped the valve clean, and stood looking at it as if it might tell her something on its own.\\n\\nIt did not. It was a valve. It had a handle like a small iron wheel, and the wheel was stiff, and when she put her hand to it she felt the cold go up her arm the way it does from a doorknob in winter.\\n\\nShe thought about the room with the sloped ceiling. She had never been in it. She knew it only from the letters, which described it the way one describes a place one has left and cannot return to: the angle of the light in the afternoon, the particular sound the floorboards made near the window, the way the water had run somewhere behind the plaster and filled the whole room with a low, steady murmur that was almost like company.\\n\\nThat was the word the writer had used. Company.\\n\\nInes turned the wheel a quarter turn. It resisted, then gave, with a small dry sound like a knuckle cracking. Nothing happened. She waited. The courtyard was silent except for a pigeon on the gutter.\\n\\nThen, faintly, from somewhere behind the north wall, she heard it begin.\"}"
+      }
+    ],
+    "max_tokens": 4096,
+    "output_config": {
+      "effort": "low"
+    }
+  },
+  "state_sha256": "031ed35b1cd94dc1e48368ef87914c33971b187ad7cc9d5b2a592e8fa64793a5",
+  "reserved_cost_usd": 0.22466
+}

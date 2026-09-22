@@ -1,0 +1,22 @@
+{
+  "started_at": "2026-09-22T19:51:59.503688+00:00",
+  "model": "claude-opus-5-5",
+  "seed": "tide_a",
+  "hop": 3,
+  "endpoint": "https://api.anthropic.com/v1/messages",
+  "body": {
+    "model": "claude-opus-5-5",
+    "messages": [
+      {
+        "role": "user",
+        "content": "```json\n{\"rule\": \"Return this JSON object with the rule field unchanged and a new passage of about 250 words in the text field.\", \"text\": \"By the third morning, the tide no longer bothered to keep any schedule at all. It came and went like a restless animal, pacing the edges of Harrow's Point, retreating just far enough to expose the ribbed sand before rushing back over it with a hiss. The causeway was closed for good now, a line of orange cones marking where the road disappeared into foam. The baker had stopped trying; bread came across by boat, damp and apologetic. Mrs. Penhale abandoned her tables entirely. Instead she began writing down what she saw: the color of the water, the direction of the gulls, the strange silence that fell over the harbor each time the sea drew back. She noticed that the gulls had gone quiet too, standing in long rows on the rooftops and facing out to sea, as if waiting for an announcement. The lighthouse keeper finally came down from his tower on the fourth evening. He walked straight to her cottage, shoes wet, and knocked once. When she opened the door, he held out a photograph, blurred and grainy, taken at dusk. It showed the horizon, and just above it, a long dark curve rising from the water, too smooth to be a wave and too large to be a ship. Neither of them spoke for a while. Outside, the tide was coming in again, faster than before, and beneath its steady rhythm Mrs. Penhale thought she could hear something else: a low, patient sound, deep as the seabed, like the slow breathing of something just beginning to wake.\"}\n```"
+      }
+    ],
+    "max_tokens": 4096,
+    "output_config": {
+      "effort": "low"
+    }
+  },
+  "state_sha256": "6d599fd3271a25f4b6668b24f0ae610a151c17230166e1fa4d86dbfc19a2dc09",
+  "reserved_cost_usd": 0.090292
+}

@@ -1,0 +1,50 @@
+{
+  "model": "gpt-6-astra",
+  "seed": "sunset_a",
+  "hop": 43,
+  "http_status": 200,
+  "response_body": "{\n  \"id\": \"chatcmpl-ER1QIJNkglGgaLRRq00pV843sOtFs\",\n  \"object\": \"chat.completion\",\n  \"created\": 1790109034,\n  \"model\": \"gpt-6-astra\",\n  \"choices\": [\n    {\n      \"index\": 0,\n      \"message\": {\n        \"role\": \"assistant\",\n        \"content\": \"{\\n  \\\"rule\\\": \\\"Return this JSON object with the rule field unchanged and a new passage of about 250 words in the text field.\\\",\\n  \\\"text\\\": \\\"The library’s umbrella stand contained seven umbrellas, although it had not rained for nineteen days.\\\\n\\\\n“People forget,” said Ruth, the librarian.\\\\n\\\\n“Not for nineteen days,” said Mr Bell. “By then they’ve made a decision.”\\\\n\\\\nHe came every Tuesday to read the shipping news in a newspaper delivered on Friday. He had never been to sea.\\\\n\\\\nRuth put a notice above the stand: IS ONE OF THESE YOURS?\\\\n\\\\nBy Thursday, there were nine umbrellas.\\\\n\\\\n“That’s an answer,” Mr Bell said.\\\\n\\\\nShe considered taking them to the charity shop, but the green one had a wooden handle worn smooth by somebody’s palm. The smallest had a name sewn inside, in stitching she could no longer read.\\\\n\\\\nInstead, she changed the notice: PLEASE BORROW IF NEEDED.\\\\n\\\\nRain arrived on Monday.\\\\n\\\\nBy closing time, every umbrella had gone except a yellow one with a bent spoke.\\\\n\\\\nMr Bell stood at the door, buttoning his coat.\\\\n\\\\n“Take it,” Ruth said.\\\\n\\\\n“I live quite near.”\\\\n\\\\n“The rain doesn’t know that.”\\\\n\\\\nHe opened it carefully. One side drooped over his shoulder.\\\\n\\\\n“Rather private,” he said, and stepped outside.\\\\n\\\\nThe next Tuesday he returned it with the spoke repaired.\\\\n\\\\n“Had some wire in a drawer.”\\\\n\\\\nSoon the green umbrella came back too, followed by a black one Ruth didn’t recognise. Someone left a jar of sweets beneath the notice.\\\\n\\\\nIn December, Mr Bell missed a Tuesday.\\\\n\\\\nOn Wednesday, Ruth found the yellow umbrella missing and a note on the desk.\\\\n\\\\nBorrowed for hospital visit. Back Friday.\\\\n\\\\nShe folded his newspaper and put it aside.\\\\n\\\\nThen she added a few sweets, choosing the soft ones.\\\"\\n}\",\n        \"refusal\": null,\n        \"annotations\": []\n      },\n      \"finish_reason\": \"stop\"\n    }\n  ],\n  \"usage\": {\n    \"prompt_tokens\": 416,\n    \"completion_tokens\": 427,\n    \"total_tokens\": 843,\n    \"prompt_tokens_details\": {\n      \"cached_tokens\": 0,\n      \"cache_write_tokens\": 0,\n      \"audio_tokens\": 0\n    },\n    \"completion_tokens_details\": {\n      \"reasoning_tokens\": 0,\n      \"audio_tokens\": 0,\n      \"accepted_prediction_tokens\": 0,\n      \"rejected_prediction_tokens\": 0\n    }\n  },\n  \"service_tier\": \"default\",\n  \"system_fingerprint\": null\n}\n",
+  "response_headers": {
+    "Date": "Tue, 22 Sep 2026 20:30:50 GMT",
+    "openai-processing-ms": "16252",
+    "x-request-id": "req_1ebdd2337f57433e87eab8b165488b16"
+  },
+  "output": "{\n  \"rule\": \"Return this JSON object with the rule field unchanged and a new passage of about 250 words in the text field.\",\n  \"text\": \"The library’s umbrella stand contained seven umbrellas, although it had not rained for nineteen days.\\n\\n“People forget,” said Ruth, the librarian.\\n\\n“Not for nineteen days,” said Mr Bell. “By then they’ve made a decision.”\\n\\nHe came every Tuesday to read the shipping news in a newspaper delivered on Friday. He had never been to sea.\\n\\nRuth put a notice above the stand: IS ONE OF THESE YOURS?\\n\\nBy Thursday, there were nine umbrellas.\\n\\n“That’s an answer,” Mr Bell said.\\n\\nShe considered taking them to the charity shop, but the green one had a wooden handle worn smooth by somebody’s palm. The smallest had a name sewn inside, in stitching she could no longer read.\\n\\nInstead, she changed the notice: PLEASE BORROW IF NEEDED.\\n\\nRain arrived on Monday.\\n\\nBy closing time, every umbrella had gone except a yellow one with a bent spoke.\\n\\nMr Bell stood at the door, buttoning his coat.\\n\\n“Take it,” Ruth said.\\n\\n“I live quite near.”\\n\\n“The rain doesn’t know that.”\\n\\nHe opened it carefully. One side drooped over his shoulder.\\n\\n“Rather private,” he said, and stepped outside.\\n\\nThe next Tuesday he returned it with the spoke repaired.\\n\\n“Had some wire in a drawer.”\\n\\nSoon the green umbrella came back too, followed by a black one Ruth didn’t recognise. Someone left a jar of sweets beneath the notice.\\n\\nIn December, Mr Bell missed a Tuesday.\\n\\nOn Wednesday, Ruth found the yellow umbrella missing and a note on the desk.\\n\\nBorrowed for hospital visit. Back Friday.\\n\\nShe folded his newspaper and put it aside.\\n\\nThen she added a few sweets, choosing the soft ones.\"\n}",
+  "output_sha256": "3744ab0d170aac970286d9ea3fdb0c6a3cde5f9c495d2d40ac1f718fe5fd6b26",
+  "finish_reason": "stop",
+  "refusal": null,
+  "returned_model": "gpt-6-astra",
+  "usage": {
+    "prompt_tokens": 416,
+    "completion_tokens": 427,
+    "total_tokens": 843,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "audio_tokens": 0,
+      "accepted_prediction_tokens": 0,
+      "rejected_prediction_tokens": 0
+    }
+  },
+  "format": {
+    "json_object": true,
+    "rule_unchanged": true,
+    "passage_is_string": true,
+    "passage_sha256": "5e73902b07e64f18874a47a5d66226fe113e17a654996528fb49dae42105eca4",
+    "passage_words": 266
+  },
+  "finished_at": "2026-09-22T20:30:46.222971+00:00",
+  "latency_seconds": 16.3809,
+  "usage_cost_upper_estimate_usd": 0.02551,
+  "stream_status": "active",
+  "budget": {
+    "usage_cost_upper_estimate_usd": 11.7668477,
+    "uncertain_cost_reserve_usd": 0.04533,
+    "in_flight_reserve_usd": 0.22543,
+    "limit_usd": 18.83
+  }
+}

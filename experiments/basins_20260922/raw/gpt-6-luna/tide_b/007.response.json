@@ -1,0 +1,47 @@
+{
+  "model": "gpt-6-luna",
+  "seed": "tide_b",
+  "hop": 7,
+  "http_status": 200,
+  "response_body": "{\n  \"id\": \"chatcmpl-ER0pbjcYy5ht1okMWxJ1oo5FDiKVd\",\n  \"object\": \"chat.completion\",\n  \"created\": 1790106759,\n  \"model\": \"gpt-6-luna\",\n  \"choices\": [\n    {\n      \"index\": 0,\n      \"message\": {\n        \"role\": \"assistant\",\n        \"content\": \"{\\\"rule\\\":\\\"Return this JSON object with the rule field unchanged and a new passage of about 250 words in the text field.\\\",\\\"text\\\":\\\"Mara reached for the key. The instant her fingers closed around it, every carved name on the wall began to whisper.\\n\\nHer grandmother’s voice rose above the rest. “Don’t let it choose for you.”\\n\\nThe stairs shuddered. Behind them, the iron plate slammed shut, cutting off the mist and the last trace of daylight. Eli lifted his lantern, but its flame had turned green.\\n\\n“What does the key open?” he asked.\\n\\nThe figure below them lowered its hand. “A door.”\\n\\n“That’s not an answer,” Mara said.\\n\\n“It is the only one you can carry safely.”\\n\\nHer mother moved between Mara and the figure. “You said the path would show her what she carries. You didn’t say it would take anything.”\\n\\nThe figure’s still face seemed almost kind. “It takes what is offered.”\\n\\nA low, hollow note rolled through the passage. The water surged up the steps, circling Mara’s ankles. In its dark surface, she saw a reflection that wasn’t hers: a little girl with her mother’s eyes, standing alone beneath a red sky.\\n\\nMara jerked back. The image vanished.\\n\\n“Who was that?” Eli asked.\\n\\nHer mother shook her head, but the figure answered. “The child your mother left behind.”\\n\\nHer mother’s face went pale. “No.”\\n\\nThe compass needle swung wildly, then pointed past the figure, toward a narrow archway in the rock. Beyond it, something knocked three times.\\n\\nMara tightened her fist around the key. “We’re going through.”\\n\\nHer mother caught her shoulder. This time, Mara did not pull away.\\n\\nTogether, they stepped off the stairs and into the rising water. Behind them, the whispers fell silent. Ahead, the unseen door knocked again.\\\"}\",\n        \"refusal\": null,\n        \"annotations\": []\n      },\n      \"finish_reason\": \"stop\"\n    }\n  ],\n  \"usage\": {\n    \"prompt_tokens\": 394,\n    \"completion_tokens\": 471,\n    \"total_tokens\": 865,\n    \"prompt_tokens_details\": {\n      \"cached_tokens\": 0,\n      \"cache_write_tokens\": 0,\n      \"audio_tokens\": 0\n    },\n    \"completion_tokens_details\": {\n      \"reasoning_tokens\": 78,\n      \"audio_tokens\": 0,\n      \"accepted_prediction_tokens\": 0,\n      \"rejected_prediction_tokens\": 0\n    }\n  },\n  \"service_tier\": \"default\",\n  \"system_fingerprint\": null\n}\n",
+  "response_headers": {
+    "Date": "Tue, 22 Sep 2026 19:52:44 GMT",
+    "openai-processing-ms": "5153",
+    "x-request-id": "req_9e8451a253ef47a0a76c89db04b47785"
+  },
+  "output": "{\"rule\":\"Return this JSON object with the rule field unchanged and a new passage of about 250 words in the text field.\",\"text\":\"Mara reached for the key. The instant her fingers closed around it, every carved name on the wall began to whisper.\n\nHer grandmother’s voice rose above the rest. “Don’t let it choose for you.”\n\nThe stairs shuddered. Behind them, the iron plate slammed shut, cutting off the mist and the last trace of daylight. Eli lifted his lantern, but its flame had turned green.\n\n“What does the key open?” he asked.\n\nThe figure below them lowered its hand. “A door.”\n\n“That’s not an answer,” Mara said.\n\n“It is the only one you can carry safely.”\n\nHer mother moved between Mara and the figure. “You said the path would show her what she carries. You didn’t say it would take anything.”\n\nThe figure’s still face seemed almost kind. “It takes what is offered.”\n\nA low, hollow note rolled through the passage. The water surged up the steps, circling Mara’s ankles. In its dark surface, she saw a reflection that wasn’t hers: a little girl with her mother’s eyes, standing alone beneath a red sky.\n\nMara jerked back. The image vanished.\n\n“Who was that?” Eli asked.\n\nHer mother shook her head, but the figure answered. “The child your mother left behind.”\n\nHer mother’s face went pale. “No.”\n\nThe compass needle swung wildly, then pointed past the figure, toward a narrow archway in the rock. Beyond it, something knocked three times.\n\nMara tightened her fist around the key. “We’re going through.”\n\nHer mother caught her shoulder. This time, Mara did not pull away.\n\nTogether, they stepped off the stairs and into the rising water. Behind them, the whispers fell silent. Ahead, the unseen door knocked again.\"}",
+  "output_sha256": "38a4cf277739a852ea94381b9fe1e09fef6b7a61d44bdb41ac9b6df4f0096c46",
+  "finish_reason": "stop",
+  "refusal": null,
+  "returned_model": "gpt-6-luna",
+  "usage": {
+    "prompt_tokens": 394,
+    "completion_tokens": 471,
+    "total_tokens": 865,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 78,
+      "audio_tokens": 0,
+      "accepted_prediction_tokens": 0,
+      "rejected_prediction_tokens": 0
+    }
+  },
+  "format": {
+    "json_object": false,
+    "rule_unchanged": false
+  },
+  "finished_at": "2026-09-22T19:52:40.807853+00:00",
+  "latency_seconds": 5.2742,
+  "usage_cost_upper_estimate_usd": 0.00027489999999999996,
+  "stream_status": "active",
+  "budget": {
+    "usage_cost_upper_estimate_usd": 0.5680635,
+    "uncertain_cost_reserve_usd": 0.0,
+    "in_flight_reserve_usd": 0.590918,
+    "limit_usd": 20
+  }
+}

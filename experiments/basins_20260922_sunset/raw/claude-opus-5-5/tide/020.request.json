@@ -1,0 +1,22 @@
+{
+  "started_at": "2026-09-22T20:04:24.505112+00:00",
+  "model": "claude-opus-5-5",
+  "seed": "tide",
+  "hop": 20,
+  "endpoint": "https://api.anthropic.com/v1/messages",
+  "body": {
+    "model": "claude-opus-5-5",
+    "messages": [
+      {
+        "role": "user",
+        "content": "```json\n{\"rule\": \"Return this JSON object with the rule field unchanged and a new passage of about 250 words in the text field.\", \"text\": \"They mended the net together that afternoon, sitting cross-legged in the damp grass with a spool of twine between them. Her father tied the knots the way he had learned on the boats, quick loops that tightened under strain, and the girl copied him until her fingers ached. Neither of them spoke of the storm or the slippers. When the net was whole again he stood back and studied the tree for a long while, his cap pushed up on his forehead. 'She'd have liked to see five,' he said at last. The girl nodded and said nothing, because she understood that this was the most he had said about her mother since the funeral. Summer came slowly to the island. The heather flowered purple, then rust, and the days stretched so long that she could read by the window past eleven at night. The tree grew a hand's width by midsummer, its stem thickening, its leaves darkening from pale green to something closer to the colour of moss. Neighbours began to hear of it. Old Mrs. MacLeod walked out from the village one Sunday on her two sticks, looked at the sapling without a word, and left a paper twist of bonemeal on the stake. The minister came the following week and asked what kind of tree it was. The girl realised she did not know. Her father, leaning on the driftwood frame, answered for her. 'A rowan,' he said. 'For protection. Her mother always said a house should have one.'\"}\n```"
+      }
+    ],
+    "max_tokens": 4096,
+    "output_config": {
+      "effort": "low"
+    }
+  },
+  "state_sha256": "202ab7f60c040acdd0874aa4a70b3886f772de5f105caf329225f0be3c554eb9",
+  "reserved_cost_usd": 0.090044
+}

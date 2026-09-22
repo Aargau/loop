@@ -1,0 +1,50 @@
+{
+  "model": "gpt-6-sol",
+  "seed": "tide",
+  "hop": 21,
+  "http_status": 200,
+  "response_body": "{\n  \"id\": \"chatcmpl-ER0xKeBCItfoiC0q2y3e03QetoNna\",\n  \"object\": \"chat.completion\",\n  \"created\": 1790107238,\n  \"model\": \"gpt-6-sol\",\n  \"choices\": [\n    {\n      \"index\": 0,\n      \"message\": {\n        \"role\": \"assistant\",\n        \"content\": \"{\\n  \\\"rule\\\": \\\"Return this JSON object with the rule field unchanged and a new passage of about 250 words in the text field.\\\",\\n  \\\"text\\\": \\\"“It turned an hour ago,” the girl said.\\\\n\\\\nA bell rang somewhere beyond the quay. She flinched and pulled the trapdoor down until only a narrow strip of daylight remained.\\\\n\\\\nMara read the rest of the note. “Third arch. Key in the stone. Do not open the seaward gate.”\\\\n\\\\n“The third arch is under the warehouse,” said the harbor master. “There’s no gate there.”\\\\n\\\\n“Not one you can see from above.” The girl held out her hand for the key. “I’ll show you.”\\\\n\\\\nTheir father caught her wrist before she could take it. “Who wrote this?”\\\\n\\\\n“I don’t know. The box was wedged behind a loose brick.”\\\\n\\\\nAnother bell sounded, closer this time. Through the gap above them, Mara saw two men crossing the quay with lanterns despite the morning light. One stopped beside the warehouse and pointed toward the trapdoor.\\\\n\\\\n“They followed me,” the girl whispered.\\\\n\\\\nThe harbor master lowered the hatch and slid its bolt into place. The cellar went dark except for the girl’s lantern.\\\\n\\\\n“Then we move,” he said.\\\\n\\\\nThey descended into the cold water. At the bottom of the steps, the girl led them through an opening so low that their father had to duck. Mara counted the brick arches as they passed beneath them. At the third, the girl raised her lantern.\\\\n\\\\nA keyhole gleamed in the wall, just above the waterline. Behind them, the trapdoor shook under a heavy blow. Mara took the key from her father and pushed it into the stone.\\\"\\n}\",\n        \"refusal\": null,\n        \"annotations\": []\n      },\n      \"finish_reason\": \"stop\"\n    }\n  ],\n  \"usage\": {\n    \"prompt_tokens\": 393,\n    \"completion_tokens\": 410,\n    \"total_tokens\": 803,\n    \"prompt_tokens_details\": {\n      \"cached_tokens\": 0,\n      \"cache_write_tokens\": 0,\n      \"audio_tokens\": 0\n    },\n    \"completion_tokens_details\": {\n      \"reasoning_tokens\": 24,\n      \"audio_tokens\": 0,\n      \"accepted_prediction_tokens\": 0,\n      \"rejected_prediction_tokens\": 0\n    }\n  },\n  \"service_tier\": \"default\",\n  \"system_fingerprint\": null\n}\n",
+  "response_headers": {
+    "Date": "Tue, 22 Sep 2026 20:00:43 GMT",
+    "openai-processing-ms": "5757",
+    "x-request-id": "req_54b49e071e114072a14396adb4ec7243"
+  },
+  "output": "{\n  \"rule\": \"Return this JSON object with the rule field unchanged and a new passage of about 250 words in the text field.\",\n  \"text\": \"“It turned an hour ago,” the girl said.\\n\\nA bell rang somewhere beyond the quay. She flinched and pulled the trapdoor down until only a narrow strip of daylight remained.\\n\\nMara read the rest of the note. “Third arch. Key in the stone. Do not open the seaward gate.”\\n\\n“The third arch is under the warehouse,” said the harbor master. “There’s no gate there.”\\n\\n“Not one you can see from above.” The girl held out her hand for the key. “I’ll show you.”\\n\\nTheir father caught her wrist before she could take it. “Who wrote this?”\\n\\n“I don’t know. The box was wedged behind a loose brick.”\\n\\nAnother bell sounded, closer this time. Through the gap above them, Mara saw two men crossing the quay with lanterns despite the morning light. One stopped beside the warehouse and pointed toward the trapdoor.\\n\\n“They followed me,” the girl whispered.\\n\\nThe harbor master lowered the hatch and slid its bolt into place. The cellar went dark except for the girl’s lantern.\\n\\n“Then we move,” he said.\\n\\nThey descended into the cold water. At the bottom of the steps, the girl led them through an opening so low that their father had to duck. Mara counted the brick arches as they passed beneath them. At the third, the girl raised her lantern.\\n\\nA keyhole gleamed in the wall, just above the waterline. Behind them, the trapdoor shook under a heavy blow. Mara took the key from her father and pushed it into the stone.\"\n}",
+  "output_sha256": "7d9cdbfb4efd80f7e92f50ccf1c89cf7c5adfb5966361d985c3e514d57eed811",
+  "finish_reason": "stop",
+  "refusal": null,
+  "returned_model": "gpt-6-sol",
+  "usage": {
+    "prompt_tokens": 393,
+    "completion_tokens": 410,
+    "total_tokens": 803,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 24,
+      "audio_tokens": 0,
+      "accepted_prediction_tokens": 0,
+      "rejected_prediction_tokens": 0
+    }
+  },
+  "format": {
+    "json_object": true,
+    "rule_unchanged": true,
+    "passage_is_string": true,
+    "passage_sha256": "fd71e5e88f2398e4d76b03b7e94f93ad3691fa47c92147ab53ee7af52ced8b07",
+    "passage_words": 250
+  },
+  "finished_at": "2026-09-22T20:00:39.863299+00:00",
+  "latency_seconds": 5.8754,
+  "usage_cost_upper_estimate_usd": 0.004886,
+  "stream_status": "active",
+  "budget": {
+    "usage_cost_upper_estimate_usd": 1.953456,
+    "uncertain_cost_reserve_usd": 0.04533,
+    "in_flight_reserve_usd": 0.5460625,
+    "limit_usd": 18.83
+  }
+}

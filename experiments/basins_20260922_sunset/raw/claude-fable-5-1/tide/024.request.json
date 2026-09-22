@@ -1,0 +1,22 @@
+{
+  "started_at": "2026-09-22T20:10:26.034283+00:00",
+  "model": "claude-fable-5-1",
+  "seed": "tide",
+  "hop": 24,
+  "endpoint": "https://api.anthropic.com/v1/messages",
+  "body": {
+    "model": "claude-fable-5-1",
+    "messages": [
+      {
+        "role": "user",
+        "content": "{\"rule\": \"Return this JSON object with the rule field unchanged and a new passage of about 250 words in the text field.\", \"text\": \"The bell foundry at Ashwell had cast its last bell in 1961, and by the time Mira Solano inherited the building, the furnace had been cold longer than she had been alive.\\n\\nHer great-aunt had left it to her with a single instruction, written on the back of a feed-store receipt: do not let them melt the patterns.\\n\\nThe patterns were wooden forms, hundreds of them, stacked in the loft like the ribs of some vast dismantled animal. Each one held the exact profile of a bell that had once hung somewhere: a schoolhouse in Renner County, a fire station in a town that no longer had a name, a chapel whose congregation had scattered before the war. The forms were worthless to anyone who did not know how to read them.\\n\\nMira learned to read them.\\n\\nShe found her great-aunt's notebooks in a tin box under the floorboards and spent a winter matching the shapes to the sketches, the sketches to the notes on pitch and weight and the temper of the bronze. She learned that a bell's voice lived in the thickness of its lip, that a tenth of an inch could turn a clear note sour.\\n\\nIn spring a church in the valley wrote to ask whether anyone still knew how the old Ashwell bell had sounded. It had cracked in a frost. They wanted it recast true.\\n\\nMira climbed to the loft, found the pattern, and carried it down.\\n\\nThe furnace took three days to heat. She did not sleep much.\\n\\nWhen the bell rang, an old man in the valley wept, and did not say why.\"}"
+      }
+    ],
+    "max_tokens": 4096,
+    "output_config": {
+      "effort": "low"
+    }
+  },
+  "state_sha256": "4ebf57294d1f06b7385be0018f946d856a8ca5ec0362d52b08fcd79e3762e1d2",
+  "reserved_cost_usd": 0.22575
+}

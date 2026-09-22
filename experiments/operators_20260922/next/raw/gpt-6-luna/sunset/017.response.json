@@ -1,0 +1,50 @@
+{
+  "model": "gpt-6-luna",
+  "seed": "sunset",
+  "hop": 17,
+  "http_status": 200,
+  "response_body": "{\n  \"id\": \"chatcmpl-ER2HB6IoanEaJY0lVdYVNKvEbAuiJ\",\n  \"object\": \"chat.completion\",\n  \"created\": 1790112313,\n  \"model\": \"gpt-6-luna\",\n  \"choices\": [\n    {\n      \"index\": 0,\n      \"message\": {\n        \"role\": \"assistant\",\n        \"content\": \"{\\\"rule\\\":\\\"Return this JSON object with the rule field unchanged and, in the text field, the passage of about 250 words that comes immediately AFTER the current text in the same story.\\\",\\\"text\\\":\\\"The next evening, Mara returned to the fountain, expecting only the quiet splash of water and the familiar creak of the town sign. But before she could lift her fiddle, the baker came hurrying across the square with his bucket tucked under one arm.\\\\n\\\\n“I’ve brought a better drum,” he announced, setting down a wooden box. It made a hollow, promising thump when he struck it.\\\\n\\\\nThe shepherd arrived with his flute, and the children came tumbling after him, carrying their hoop. Soon the square filled again—not with a crowd waiting for Mara to begin, but with neighbors greeting one another and tuning their borrowed instruments.\\\\n\\\\nMara raised her bow. This time, she played a new melody, one she had made on the walk home the night before. It wandered up and down like a path through the hills, then paused at the end as if unsure where to go.\\\\n\\\\nThe shepherd answered with a bright phrase. The baker tapped out a steady beat, and one of the children added a little skip on the hoop. From an upstairs window, a clear voice sang a line Mara had never heard before.\\\\n\\\\nShe listened, then shaped her melody around it. The tune grew and changed, gathering pieces from everyone who joined. When the final notes came, they did not stop at once. They passed from fiddle to flute, from flute to voice, and from voice to the soft tapping of spoons.\\\\n\\\\nAfterward, Mara looked around the square. “What shall we call it?” she asked.\\\\n\\\\nThe smallest child thought for a moment. “Ours,” she said.\\\\n\\\\nAnd so they did.\\\"}\",\n        \"refusal\": null,\n        \"annotations\": []\n      },\n      \"finish_reason\": \"stop\"\n    }\n  ],\n  \"usage\": {\n    \"prompt_tokens\": 362,\n    \"completion_tokens\": 479,\n    \"total_tokens\": 841,\n    \"prompt_tokens_details\": {\n      \"cached_tokens\": 0,\n      \"cache_write_tokens\": 0,\n      \"audio_tokens\": 0\n    },\n    \"completion_tokens_details\": {\n      \"reasoning_tokens\": 90,\n      \"audio_tokens\": 0,\n      \"accepted_prediction_tokens\": 0,\n      \"rejected_prediction_tokens\": 0\n    }\n  },\n  \"service_tier\": \"default\",\n  \"system_fingerprint\": null\n}\n",
+  "response_headers": {
+    "Date": "Tue, 22 Sep 2026 21:25:18 GMT",
+    "openai-processing-ms": "4940",
+    "x-request-id": "req_d8caf6b6ca794a6496355e1619505b60"
+  },
+  "output": "{\"rule\":\"Return this JSON object with the rule field unchanged and, in the text field, the passage of about 250 words that comes immediately AFTER the current text in the same story.\",\"text\":\"The next evening, Mara returned to the fountain, expecting only the quiet splash of water and the familiar creak of the town sign. But before she could lift her fiddle, the baker came hurrying across the square with his bucket tucked under one arm.\\n\\n“I’ve brought a better drum,” he announced, setting down a wooden box. It made a hollow, promising thump when he struck it.\\n\\nThe shepherd arrived with his flute, and the children came tumbling after him, carrying their hoop. Soon the square filled again—not with a crowd waiting for Mara to begin, but with neighbors greeting one another and tuning their borrowed instruments.\\n\\nMara raised her bow. This time, she played a new melody, one she had made on the walk home the night before. It wandered up and down like a path through the hills, then paused at the end as if unsure where to go.\\n\\nThe shepherd answered with a bright phrase. The baker tapped out a steady beat, and one of the children added a little skip on the hoop. From an upstairs window, a clear voice sang a line Mara had never heard before.\\n\\nShe listened, then shaped her melody around it. The tune grew and changed, gathering pieces from everyone who joined. When the final notes came, they did not stop at once. They passed from fiddle to flute, from flute to voice, and from voice to the soft tapping of spoons.\\n\\nAfterward, Mara looked around the square. “What shall we call it?” she asked.\\n\\nThe smallest child thought for a moment. “Ours,” she said.\\n\\nAnd so they did.\"}",
+  "output_sha256": "a612eb840f77ada1c3d28f08be396fcb4c29e45caaa43b32b5daf7033fce4c07",
+  "finish_reason": "stop",
+  "refusal": null,
+  "returned_model": "gpt-6-luna",
+  "usage": {
+    "prompt_tokens": 362,
+    "completion_tokens": 479,
+    "total_tokens": 841,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 90,
+      "audio_tokens": 0,
+      "accepted_prediction_tokens": 0,
+      "rejected_prediction_tokens": 0
+    }
+  },
+  "format": {
+    "json_object": true,
+    "rule_unchanged": true,
+    "passage_is_string": true,
+    "passage_sha256": "52d6b16e39721c266a9150cef1e32b6589595ffe5e83936608f58cad3e085e53",
+    "passage_words": 267
+  },
+  "finished_at": "2026-09-22T21:25:14.316040+00:00",
+  "latency_seconds": 5.0587,
+  "usage_cost_upper_estimate_usd": 0.0002757,
+  "stream_status": "active",
+  "budget": {
+    "usage_cost_upper_estimate_usd": 0.3596352,
+    "uncertain_cost_reserve_usd": 0.0,
+    "in_flight_reserve_usd": 0.350228,
+    "limit_usd": 5.0
+  }
+}

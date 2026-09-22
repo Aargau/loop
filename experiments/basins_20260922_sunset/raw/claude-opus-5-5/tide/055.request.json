@@ -1,0 +1,22 @@
+{
+  "started_at": "2026-09-22T20:21:03.233597+00:00",
+  "model": "claude-opus-5-5",
+  "seed": "tide",
+  "hop": 55,
+  "endpoint": "https://api.anthropic.com/v1/messages",
+  "body": {
+    "model": "claude-opus-5-5",
+    "messages": [
+      {
+        "role": "user",
+        "content": "```json\n{\"rule\": \"Return this JSON object with the rule field unchanged and a new passage of about 250 words in the text field.\", \"text\": \"The tin spent the autumn on the kitchen shelf between the tea caddy and the jar of buttons. Sometimes, when her mother was out, the girl took it down and shook it just to hear the seeds move. They sounded like rain starting on a roof. In November her cousin wrote that the old garden up north had been sold, and that the new people had dug everything over for a lawn. There was nothing left of the rows her grandmother had kept, not even the bent hazel poles by the wall. The girl read the letter twice and then went and stood by the shelf for a long time without opening the tin. That evening she counted the seeds onto a saucer. There were forty-one. She divided them into two heaps, twenty for the garden and twenty for her cousin, and one left over that she could not decide about. In the end she wrapped the twenty in a twist of greaseproof paper, tucked it inside her next letter, and wrote on the outside in her best capitals: DO NOT BEND. The odd seed she put in her pocket and carried with her all winter, to school and to chapel and to the shops, rubbing it smooth between her finger and thumb. In March, when the soil by the fence had softened again, she knelt and pushed it in first, before all the others, at the very end of the row where the twine began.\"}\n```"
+      }
+    ],
+    "max_tokens": 4096,
+    "output_config": {
+      "effort": "low"
+    }
+  },
+  "state_sha256": "4926ded87203c4612e18580075eece67c8d7e3ce056af0497600dbefa73dc0a0",
+  "reserved_cost_usd": 0.08962
+}

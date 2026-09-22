@@ -1,0 +1,48 @@
+{
+  "model": "claude-fable-5-1",
+  "seed": "sunset_b",
+  "hop": 55,
+  "http_status": 200,
+  "response_body": "{\"model\":\"claude-fable-5-1\",\"id\":\"msg_011CfK7PhgEuP6YC342FX1qc\",\"type\":\"message\",\"role\":\"assistant\",\"content\":[{\"type\":\"text\",\"text\":\"{\\\"rule\\\": \\\"Return this JSON object with the rule field unchanged and a new passage of about 250 words in the text field.\\\", \\\"text\\\": \\\"The bus came at ten past, as it had every morning since the timetable changed, and as it had every morning she was not on it. Coyle at the wheel had stopped looking for her after the first week. He slowed at the stop from habit, saw the empty bench, and went on, and she watched him go from the upstairs window with her coat already on.\\\\n\\\\nThe coat was the problem, or part of it. It was the good one, the navy one, the one she had bought in Limerick for the christening and worn twice since. She put it on at half nine because that was when a person would put it on if they meant to catch the bus, and she took it off at quarter past when the bus had gone, and in between she stood at the window and did not decide anything.\\\\n\\\\nDownstairs he was doing the accounts. She could hear the small sounds of it, the ledger opening, the pencil, the pause when he found something he did not like and went back a page. He did the accounts on Thursdays and had done since his father's time, and he would not come up, and she knew he would not, and she was grateful for it in a way that had nothing warm in it at all.\\\\n\\\\nThe letter was on the dresser. It had been on the dresser for nine days.\\\\n\\\\nShe took off the coat. She hung it on the back of the door where it had been hanging, and smoothed the shoulder where the hanger had left a mark, and went down to make his tea.\\\"}\"}],\"container\":null,\"stop_reason\":\"end_turn\",\"stop_sequence\":null,\"stop_details\":null,\"usage\":{\"input_tokens\":561,\"cache_creation_input_tokens\":0,\"cache_read_input_tokens\":0,\"cache_creation\":{\"ephemeral_5m_input_tokens\":0,\"ephemeral_1h_input_tokens\":0},\"output_tokens\":469,\"output_tokens_details\":{\"thinking_tokens\":0},\"service_tier\":\"standard\",\"inference_geo\":\"global\"}}",
+  "response_headers": {
+    "Date": "Tue, 22 Sep 2026 20:30:10 GMT",
+    "request-id": "req_011CfK7Ph9VH6UXaNrA6xvGj"
+  },
+  "output": "{\"rule\": \"Return this JSON object with the rule field unchanged and a new passage of about 250 words in the text field.\", \"text\": \"The bus came at ten past, as it had every morning since the timetable changed, and as it had every morning she was not on it. Coyle at the wheel had stopped looking for her after the first week. He slowed at the stop from habit, saw the empty bench, and went on, and she watched him go from the upstairs window with her coat already on.\\n\\nThe coat was the problem, or part of it. It was the good one, the navy one, the one she had bought in Limerick for the christening and worn twice since. She put it on at half nine because that was when a person would put it on if they meant to catch the bus, and she took it off at quarter past when the bus had gone, and in between she stood at the window and did not decide anything.\\n\\nDownstairs he was doing the accounts. She could hear the small sounds of it, the ledger opening, the pencil, the pause when he found something he did not like and went back a page. He did the accounts on Thursdays and had done since his father's time, and he would not come up, and she knew he would not, and she was grateful for it in a way that had nothing warm in it at all.\\n\\nThe letter was on the dresser. It had been on the dresser for nine days.\\n\\nShe took off the coat. She hung it on the back of the door where it had been hanging, and smoothed the shoulder where the hanger had left a mark, and went down to make his tea.\"}",
+  "output_sha256": "6b115fbe9f55b8456b7ab00bd2bd146d3c1d92898cfd97a00b970e7fbc0aed8f",
+  "finish_reason": "end_turn",
+  "refusal": null,
+  "returned_model": "claude-fable-5-1",
+  "usage": {
+    "input_tokens": 561,
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 0,
+    "cache_creation": {
+      "ephemeral_5m_input_tokens": 0,
+      "ephemeral_1h_input_tokens": 0
+    },
+    "output_tokens": 469,
+    "output_tokens_details": {
+      "thinking_tokens": 0
+    },
+    "service_tier": "standard",
+    "inference_geo": "global"
+  },
+  "format": {
+    "json_object": true,
+    "rule_unchanged": true,
+    "passage_is_string": true,
+    "passage_sha256": "328252a7f0d1c8f75ba7c3d3dfb462f10b11f4fdc48d78d5ce8cc9d4f12c7a75",
+    "passage_words": 276
+  },
+  "finished_at": "2026-09-22T20:30:06.360435+00:00",
+  "latency_seconds": 14.7377,
+  "usage_cost_upper_estimate_usd": 0.02906,
+  "stream_status": "active",
+  "budget": {
+    "usage_cost_upper_estimate_usd": 11.5867277,
+    "uncertain_cost_reserve_usd": 0.04533,
+    "in_flight_reserve_usd": 0.22706,
+    "limit_usd": 18.83
+  }
+}

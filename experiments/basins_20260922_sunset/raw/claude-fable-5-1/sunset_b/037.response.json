@@ -1,0 +1,48 @@
+{
+  "model": "claude-fable-5-1",
+  "seed": "sunset_b",
+  "hop": 37,
+  "http_status": 200,
+  "response_body": "{\"model\":\"claude-fable-5-1\",\"id\":\"msg_011CfK6WXAJZ4ofSh4pjCkaM\",\"type\":\"message\",\"role\":\"assistant\",\"content\":[{\"type\":\"text\",\"text\":\"{\\\"rule\\\": \\\"Return this JSON object with the rule field unchanged and a new passage of about 250 words in the text field.\\\", \\\"text\\\": \\\"The ferry to Hallow Isle ran twice a day until the causeway opened, and after that it ran not at all. Ewan had skippered it for thirty-one years, and on the last crossing he carried eleven passengers, a crate of hens, and a grandfather clock somebody's daughter had inherited and could not bear to leave on the mainland side of the water.\\\\n\\\\nHe did not make a speech. He rang the bell at the pier the way he always had, two short and one long, and the old men who had come down to watch raised their caps as if it were any Tuesday.\\\\n\\\\nThe causeway was a good thing. He said so to anyone who asked, and meant it. The doctor could come at midnight now, and the children would not miss school for a fortnight of gales. But he found he could not stop going down to the slip in the mornings. He would stand where the ramp used to grind against the concrete and look across at the island, near enough now to walk to, and he would check the tide out of habit, though the tide no longer decided anything.\\\\n\\\\nOne morning a girl in a school blazer stopped beside him. She asked what he was looking at. He thought about it and said he was seeing whether the water was fit to cross.\\\\n\\\\nShe looked at the causeway, dry and grey and certain, and then at him, and did not laugh. After a while she said it looked fit to her, and walked on across, and Ewan watched her the whole way over.\\\"}\"}],\"container\":null,\"stop_reason\":\"end_turn\",\"stop_sequence\":null,\"stop_details\":null,\"usage\":{\"input_tokens\":559,\"cache_creation_input_tokens\":0,\"cache_read_input_tokens\":0,\"cache_creation\":{\"ephemeral_5m_input_tokens\":0,\"ephemeral_1h_input_tokens\":0},\"output_tokens\":486,\"output_tokens_details\":{\"thinking_tokens\":0},\"service_tier\":\"standard\",\"inference_geo\":\"global\"}}",
+  "response_headers": {
+    "Date": "Tue, 22 Sep 2026 20:18:33 GMT",
+    "request-id": "req_011CfK6WWrw1vDjrgprHnqj3"
+  },
+  "output": "{\"rule\": \"Return this JSON object with the rule field unchanged and a new passage of about 250 words in the text field.\", \"text\": \"The ferry to Hallow Isle ran twice a day until the causeway opened, and after that it ran not at all. Ewan had skippered it for thirty-one years, and on the last crossing he carried eleven passengers, a crate of hens, and a grandfather clock somebody's daughter had inherited and could not bear to leave on the mainland side of the water.\\n\\nHe did not make a speech. He rang the bell at the pier the way he always had, two short and one long, and the old men who had come down to watch raised their caps as if it were any Tuesday.\\n\\nThe causeway was a good thing. He said so to anyone who asked, and meant it. The doctor could come at midnight now, and the children would not miss school for a fortnight of gales. But he found he could not stop going down to the slip in the mornings. He would stand where the ramp used to grind against the concrete and look across at the island, near enough now to walk to, and he would check the tide out of habit, though the tide no longer decided anything.\\n\\nOne morning a girl in a school blazer stopped beside him. She asked what he was looking at. He thought about it and said he was seeing whether the water was fit to cross.\\n\\nShe looked at the causeway, dry and grey and certain, and then at him, and did not laugh. After a while she said it looked fit to her, and walked on across, and Ewan watched her the whole way over.\"}",
+  "output_sha256": "9c9f232039b690acc4d3b4c682482549cf39e80667200063e5fa866dbee5d218",
+  "finish_reason": "end_turn",
+  "refusal": null,
+  "returned_model": "claude-fable-5-1",
+  "usage": {
+    "input_tokens": 559,
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 0,
+    "cache_creation": {
+      "ephemeral_5m_input_tokens": 0,
+      "ephemeral_1h_input_tokens": 0
+    },
+    "output_tokens": 486,
+    "output_tokens_details": {
+      "thinking_tokens": 0
+    },
+    "service_tier": "standard",
+    "inference_geo": "global"
+  },
+  "format": {
+    "json_object": true,
+    "rule_unchanged": true,
+    "passage_is_string": true,
+    "passage_sha256": "58982e41d88bef7091043878e6cb277dc53410ee0a4688b357cb8bbacc20b83f",
+    "passage_words": 268
+  },
+  "finished_at": "2026-09-22T20:18:29.423888+00:00",
+  "latency_seconds": 12.0091,
+  "usage_cost_upper_estimate_usd": 0.02989,
+  "stream_status": "active",
+  "budget": {
+    "usage_cost_upper_estimate_usd": 8.3555857,
+    "uncertain_cost_reserve_usd": 0.04533,
+    "in_flight_reserve_usd": 0.31831,
+    "limit_usd": 18.83
+  }
+}

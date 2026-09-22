@@ -1,0 +1,50 @@
+{
+  "model": "gpt-6-sol",
+  "seed": "tide_a",
+  "hop": 2,
+  "http_status": 200,
+  "response_body": "{\n  \"id\": \"chatcmpl-ER0oKtE6ACQBYlSz6zvOdZNhFUofE\",\n  \"object\": \"chat.completion\",\n  \"created\": 1790106680,\n  \"model\": \"gpt-6-sol\",\n  \"choices\": [\n    {\n      \"index\": 0,\n      \"message\": {\n        \"role\": \"assistant\",\n        \"content\": \"{\\n  \\\"rule\\\": \\\"Return this JSON object with the rule field unchanged and a new passage of about 250 words in the text field.\\\",\\n  \\\"text\\\": \\\"Every morning, Ivo wound the clock in the station waiting room. It had stopped once during a winter storm, and the delayed trains that day had been blamed on the weather. Ivo had never been certain.\\\\n\\\\nOn Tuesday, the clock began running backward. Its hands moved slowly enough that he thought he was mistaken until the minute hand passed the twelve for a second time. The departure board still showed the usual trains. Outside, passengers crossed the platform with paper cups and damp newspapers.\\\\n\\\\nIvo fetched a ladder and opened the clock’s glass face. The gears turned smoothly beneath his fingers. He closed it again and stood watching as the hands returned to six fifteen, the hour when he had arrived.\\\\n\\\\nAt six fourteen, a woman entered the waiting room carrying a red suitcase. She asked whether the northbound train had left. Ivo told her it was due in twenty minutes. She thanked him and sat beneath the clock.\\\\n\\\\nA few minutes later, the same woman came through the door. Her coat was wet, though no rain had fallen. She stopped when she saw the suitcase beside the bench. The first woman looked up. Neither spoke.\\\\n\\\\nIvo led them into the ticket office and shut the door. By then the clock was moving forward again. The women compared the contents of their suitcases: the same clothes, the same ticket, and two different letters folded into the same pocket. One had been opened; the other had not.\\\\n\\\\nWhen the northbound train arrived, only the woman with the unopened letter boarded. Ivo watched the other walk into town. Then he took down the clock and carried it home.\\\"\\n}\",\n        \"refusal\": null,\n        \"annotations\": []\n      },\n      \"finish_reason\": \"stop\"\n    }\n  ],\n  \"usage\": {\n    \"prompt_tokens\": 353,\n    \"completion_tokens\": 405,\n    \"total_tokens\": 758,\n    \"prompt_tokens_details\": {\n      \"cached_tokens\": 0,\n      \"cache_write_tokens\": 0,\n      \"audio_tokens\": 0\n    },\n    \"completion_tokens_details\": {\n      \"reasoning_tokens\": 24,\n      \"audio_tokens\": 0,\n      \"accepted_prediction_tokens\": 0,\n      \"rejected_prediction_tokens\": 0\n    }\n  },\n  \"service_tier\": \"default\",\n  \"system_fingerprint\": null\n}\n",
+  "response_headers": {
+    "Date": "Tue, 22 Sep 2026 19:51:27 GMT",
+    "openai-processing-ms": "6453",
+    "x-request-id": "req_b13e4a5987594356939eb4297f565e74"
+  },
+  "output": "{\n  \"rule\": \"Return this JSON object with the rule field unchanged and a new passage of about 250 words in the text field.\",\n  \"text\": \"Every morning, Ivo wound the clock in the station waiting room. It had stopped once during a winter storm, and the delayed trains that day had been blamed on the weather. Ivo had never been certain.\\n\\nOn Tuesday, the clock began running backward. Its hands moved slowly enough that he thought he was mistaken until the minute hand passed the twelve for a second time. The departure board still showed the usual trains. Outside, passengers crossed the platform with paper cups and damp newspapers.\\n\\nIvo fetched a ladder and opened the clock’s glass face. The gears turned smoothly beneath his fingers. He closed it again and stood watching as the hands returned to six fifteen, the hour when he had arrived.\\n\\nAt six fourteen, a woman entered the waiting room carrying a red suitcase. She asked whether the northbound train had left. Ivo told her it was due in twenty minutes. She thanked him and sat beneath the clock.\\n\\nA few minutes later, the same woman came through the door. Her coat was wet, though no rain had fallen. She stopped when she saw the suitcase beside the bench. The first woman looked up. Neither spoke.\\n\\nIvo led them into the ticket office and shut the door. By then the clock was moving forward again. The women compared the contents of their suitcases: the same clothes, the same ticket, and two different letters folded into the same pocket. One had been opened; the other had not.\\n\\nWhen the northbound train arrived, only the woman with the unopened letter boarded. Ivo watched the other walk into town. Then he took down the clock and carried it home.\"\n}",
+  "output_sha256": "5d438187fe9bb9534999f8dbc8453533e39e2f094039d580ac9fc2732339d0c4",
+  "finish_reason": "stop",
+  "refusal": null,
+  "returned_model": "gpt-6-sol",
+  "usage": {
+    "prompt_tokens": 353,
+    "completion_tokens": 405,
+    "total_tokens": 758,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 24,
+      "audio_tokens": 0,
+      "accepted_prediction_tokens": 0,
+      "rejected_prediction_tokens": 0
+    }
+  },
+  "format": {
+    "json_object": true,
+    "rule_unchanged": true,
+    "passage_is_string": true,
+    "passage_sha256": "5f833d8d7675c26789321da0a12252b313617d5f48749b83dbf4bcf0bba6596a",
+    "passage_words": 276
+  },
+  "finished_at": "2026-09-22T19:51:23.156431+00:00",
+  "latency_seconds": 6.567,
+  "usage_cost_upper_estimate_usd": 0.004756,
+  "stream_status": "active",
+  "budget": {
+    "usage_cost_upper_estimate_usd": 0.1344988,
+    "uncertain_cost_reserve_usd": 0.0,
+    "in_flight_reserve_usd": 0.5103408,
+    "limit_usd": 20
+  }
+}

@@ -1,0 +1,50 @@
+{
+  "model": "gpt-6-luna",
+  "seed": "sunset",
+  "hop": 8,
+  "http_status": 200,
+  "response_body": "{\n  \"id\": \"chatcmpl-ER2GMYL6JrI5fjUE0uUjVGwAQdUgt\",\n  \"object\": \"chat.completion\",\n  \"created\": 1790112262,\n  \"model\": \"gpt-6-luna\",\n  \"choices\": [\n    {\n      \"index\": 0,\n      \"message\": {\n        \"role\": \"assistant\",\n        \"content\": \"{\\\"rule\\\":\\\"Return this JSON object with the rule field unchanged and, in the text field, the passage of about 250 words that comes immediately AFTER the current text in the same story.\\\",\\\"text\\\":\\\"Mara climbed the stairs slowly, afraid that if she hurried, the warmth would vanish. Lena’s fingers stayed folded around hers. Each step brought the village nearer: the creak of the old floorboards, the wind worrying at the shutters, the soft clatter of someone setting a kettle on the stove.\\\\n\\\\nAt the top, Grandmother stood beside the open door. Her white hair was loose, and she held a candle in one trembling hand.\\\\n\\\\n“Mara,” she whispered.\\\\n\\\\n“I’m here.”\\\\n\\\\nGrandmother’s gaze fell to the empty space beside Mara. For a long moment, she said nothing. Then she lifted her free hand, palm open, as if greeting someone just beyond the candlelight.\\\\n\\\\n“Lena,” she said.\\\\n\\\\nThe air stirred. The flame leaned toward them, and a second shadow appeared on the wall: small, with one mittened hand reaching for Mara’s.\\\\n\\\\nGrandmother shut her eyes. A tear slipped down her cheek. “I’m sorry I let them call you a story.”\\\\n\\\\nMara had imagined this moment a hundred ways. In none of them had she known what to say. So she squeezed the hand she could feel and answered for both of them.\\\\n\\\\n“We remember.”\\\\n\\\\nOutside, a bell began to ring. Its note rolled over the roofs and down into the valley, where windows brightened one by one. Somewhere, a child woke and asked who the bell was for. Somewhere else, an old man spoke a name he had not dared to say in years.\\\\n\\\\nLena’s fingers loosened. Mara turned, but the space beside her was empty.\\\\n\\\\nThis time, the emptiness did not feel like loss. It felt like a door left open.\\\"}\",\n        \"refusal\": null,\n        \"annotations\": []\n      },\n      \"finish_reason\": \"stop\"\n    }\n  ],\n  \"usage\": {\n    \"prompt_tokens\": 420,\n    \"completion_tokens\": 493,\n    \"total_tokens\": 913,\n    \"prompt_tokens_details\": {\n      \"cached_tokens\": 0,\n      \"cache_write_tokens\": 0,\n      \"audio_tokens\": 0\n    },\n    \"completion_tokens_details\": {\n      \"reasoning_tokens\": 76,\n      \"audio_tokens\": 0,\n      \"accepted_prediction_tokens\": 0,\n      \"rejected_prediction_tokens\": 0\n    }\n  },\n  \"service_tier\": \"default\",\n  \"system_fingerprint\": null\n}\n",
+  "response_headers": {
+    "Date": "Tue, 22 Sep 2026 21:24:27 GMT",
+    "openai-processing-ms": "4648",
+    "x-request-id": "req_ff8af080c75841a88b500bc0ecb2bae0"
+  },
+  "output": "{\"rule\":\"Return this JSON object with the rule field unchanged and, in the text field, the passage of about 250 words that comes immediately AFTER the current text in the same story.\",\"text\":\"Mara climbed the stairs slowly, afraid that if she hurried, the warmth would vanish. Lena’s fingers stayed folded around hers. Each step brought the village nearer: the creak of the old floorboards, the wind worrying at the shutters, the soft clatter of someone setting a kettle on the stove.\\n\\nAt the top, Grandmother stood beside the open door. Her white hair was loose, and she held a candle in one trembling hand.\\n\\n“Mara,” she whispered.\\n\\n“I’m here.”\\n\\nGrandmother’s gaze fell to the empty space beside Mara. For a long moment, she said nothing. Then she lifted her free hand, palm open, as if greeting someone just beyond the candlelight.\\n\\n“Lena,” she said.\\n\\nThe air stirred. The flame leaned toward them, and a second shadow appeared on the wall: small, with one mittened hand reaching for Mara’s.\\n\\nGrandmother shut her eyes. A tear slipped down her cheek. “I’m sorry I let them call you a story.”\\n\\nMara had imagined this moment a hundred ways. In none of them had she known what to say. So she squeezed the hand she could feel and answered for both of them.\\n\\n“We remember.”\\n\\nOutside, a bell began to ring. Its note rolled over the roofs and down into the valley, where windows brightened one by one. Somewhere, a child woke and asked who the bell was for. Somewhere else, an old man spoke a name he had not dared to say in years.\\n\\nLena’s fingers loosened. Mara turned, but the space beside her was empty.\\n\\nThis time, the emptiness did not feel like loss. It felt like a door left open.\"}",
+  "output_sha256": "a1114b70221421525ce50d0e32e6b966ee97553472c0dd86fa097a133a9bde9b",
+  "finish_reason": "stop",
+  "refusal": null,
+  "returned_model": "gpt-6-luna",
+  "usage": {
+    "prompt_tokens": 420,
+    "completion_tokens": 493,
+    "total_tokens": 913,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 76,
+      "audio_tokens": 0,
+      "accepted_prediction_tokens": 0,
+      "rejected_prediction_tokens": 0
+    }
+  },
+  "format": {
+    "json_object": true,
+    "rule_unchanged": true,
+    "passage_is_string": true,
+    "passage_sha256": "e3c48e8896d2a1a2d3ff7798f605dbdfe27b0d5aad25844d710028fa0bf274e7",
+    "passage_words": 267
+  },
+  "finished_at": "2026-09-22T21:24:22.894745+00:00",
+  "latency_seconds": 4.7915,
+  "usage_cost_upper_estimate_usd": 0.0002885,
+  "stream_status": "active",
+  "budget": {
+    "usage_cost_upper_estimate_usd": 0.1915747,
+    "uncertain_cost_reserve_usd": 0.0,
+    "in_flight_reserve_usd": 0.349496,
+    "limit_usd": 5.0
+  }
+}

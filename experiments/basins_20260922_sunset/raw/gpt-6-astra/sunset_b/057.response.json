@@ -1,0 +1,50 @@
+{
+  "model": "gpt-6-astra",
+  "seed": "sunset_b",
+  "hop": 57,
+  "http_status": 200,
+  "response_body": "{\n  \"id\": \"chatcmpl-ER1c8isVXxHIsUkoSfRPmDCIYKVui\",\n  \"object\": \"chat.completion\",\n  \"created\": 1790109768,\n  \"model\": \"gpt-6-astra\",\n  \"choices\": [\n    {\n      \"index\": 0,\n      \"message\": {\n        \"role\": \"assistant\",\n        \"content\": \"{\\n  \\\"rule\\\": \\\"Return this JSON object with the rule field unchanged and a new passage of about 250 words in the text field.\\\",\\n  \\\"text\\\": \\\"Martin arrived at the allotment with two mugs wrapped in newspaper. His father was already inside the shed, sorting screws into the lid of a biscuit tin.\\\\n\\\\n“Your sister sent those?”\\\\n\\\\n“She said you hadn’t got any down here.”\\\\n\\\\n“I’ve got one.”\\\\n\\\\nHis father pointed to a mug on the windowsill. Its handle had broken off, and a skin of dust covered the tea inside.\\\\n\\\\nMartin put the new mugs beside the kettle.\\\\n\\\\nOutside, the bean poles leaned together over an empty bed. He had not visited since August, when his mother had sat between the rows, filling a bowl with peas and dropping the occasional one into her mouth.\\\\n\\\\n“Shall I take those poles down?” he asked.\\\\n\\\\n“Not yet.”\\\\n\\\\n“They’ll rot.”\\\\n\\\\n“They’re all right.”\\\\n\\\\nHis father tipped the screws back into the tin. Several missed. Neither of them bent to retrieve them.\\\\n\\\\nMartin filled the kettle from the water container. There was enough for two cups, perhaps three.\\\\n\\\\n“Milk?”\\\\n\\\\n“In the flask.”\\\\n\\\\nWhile the kettle heated, his father unwrapped a mug. It was yellow, with a white interior. He turned it over to inspect the base.\\\\n\\\\n“Bit big.”\\\\n\\\\n“You don’t have to fill it.”\\\\n\\\\n“No.”\\\\n\\\\nThey drank standing in the doorway. Across the path, someone had covered a plot with black plastic and weighed the edges with bricks.\\\\n\\\\nHis father finished first.\\\\n\\\\n“Hold this a minute.”\\\\n\\\\nHe walked to the bean bed and pulled at the nearest pole. It came free suddenly, scattering dry earth onto his shoes.\\\\n\\\\nMartin set both mugs on the step and went to help untie the string.\\\"\\n}\",\n        \"refusal\": null,\n        \"annotations\": []\n      },\n      \"finish_reason\": \"stop\"\n    }\n  ],\n  \"usage\": {\n    \"prompt_tokens\": 427,\n    \"completion_tokens\": 420,\n    \"total_tokens\": 847,\n    \"prompt_tokens_details\": {\n      \"cached_tokens\": 0,\n      \"cache_write_tokens\": 0,\n      \"audio_tokens\": 0\n    },\n    \"completion_tokens_details\": {\n      \"reasoning_tokens\": 0,\n      \"audio_tokens\": 0,\n      \"accepted_prediction_tokens\": 0,\n      \"rejected_prediction_tokens\": 0\n    }\n  },\n  \"service_tier\": \"default\",\n  \"system_fingerprint\": null\n}\n",
+  "response_headers": {
+    "Date": "Tue, 22 Sep 2026 20:43:06 GMT",
+    "openai-processing-ms": "18130",
+    "x-request-id": "req_2babc9eef6b5442fa4b774c948efeac2"
+  },
+  "output": "{\n  \"rule\": \"Return this JSON object with the rule field unchanged and a new passage of about 250 words in the text field.\",\n  \"text\": \"Martin arrived at the allotment with two mugs wrapped in newspaper. His father was already inside the shed, sorting screws into the lid of a biscuit tin.\\n\\n“Your sister sent those?”\\n\\n“She said you hadn’t got any down here.”\\n\\n“I’ve got one.”\\n\\nHis father pointed to a mug on the windowsill. Its handle had broken off, and a skin of dust covered the tea inside.\\n\\nMartin put the new mugs beside the kettle.\\n\\nOutside, the bean poles leaned together over an empty bed. He had not visited since August, when his mother had sat between the rows, filling a bowl with peas and dropping the occasional one into her mouth.\\n\\n“Shall I take those poles down?” he asked.\\n\\n“Not yet.”\\n\\n“They’ll rot.”\\n\\n“They’re all right.”\\n\\nHis father tipped the screws back into the tin. Several missed. Neither of them bent to retrieve them.\\n\\nMartin filled the kettle from the water container. There was enough for two cups, perhaps three.\\n\\n“Milk?”\\n\\n“In the flask.”\\n\\nWhile the kettle heated, his father unwrapped a mug. It was yellow, with a white interior. He turned it over to inspect the base.\\n\\n“Bit big.”\\n\\n“You don’t have to fill it.”\\n\\n“No.”\\n\\nThey drank standing in the doorway. Across the path, someone had covered a plot with black plastic and weighed the edges with bricks.\\n\\nHis father finished first.\\n\\n“Hold this a minute.”\\n\\nHe walked to the bean bed and pulled at the nearest pole. It came free suddenly, scattering dry earth onto his shoes.\\n\\nMartin set both mugs on the step and went to help untie the string.\"\n}",
+  "output_sha256": "32bf2662838ba3bc45f719b797f7fe23c3ebd6d980d783a16ca228231f5a3bc2",
+  "finish_reason": "stop",
+  "refusal": null,
+  "returned_model": "gpt-6-astra",
+  "usage": {
+    "prompt_tokens": 427,
+    "completion_tokens": 420,
+    "total_tokens": 847,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "audio_tokens": 0,
+      "accepted_prediction_tokens": 0,
+      "rejected_prediction_tokens": 0
+    }
+  },
+  "format": {
+    "json_object": true,
+    "rule_unchanged": true,
+    "passage_is_string": true,
+    "passage_sha256": "8079744a1276a28190423d603df209ea93331a854a6fe36e696110890c4613b9",
+    "passage_words": 263
+  },
+  "finished_at": "2026-09-22T20:43:02.422811+00:00",
+  "latency_seconds": 18.4383,
+  "usage_cost_upper_estimate_usd": 0.02527,
+  "stream_status": "active",
+  "budget": {
+    "usage_cost_upper_estimate_usd": 13.3223477,
+    "uncertain_cost_reserve_usd": 0.04533,
+    "in_flight_reserve_usd": 0.0,
+    "limit_usd": 18.83
+  }
+}

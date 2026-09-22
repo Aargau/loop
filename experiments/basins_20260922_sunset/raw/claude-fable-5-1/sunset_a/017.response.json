@@ -1,0 +1,48 @@
+{
+  "model": "claude-fable-5-1",
+  "seed": "sunset_a",
+  "hop": 17,
+  "http_status": 200,
+  "response_body": "{\"model\":\"claude-fable-5-1\",\"id\":\"msg_011CfK5XoPGySeQKAuUuNcPc\",\"type\":\"message\",\"role\":\"assistant\",\"content\":[{\"type\":\"text\",\"text\":\"{\\\"rule\\\": \\\"Return this JSON object with the rule field unchanged and a new passage of about 250 words in the text field.\\\", \\\"text\\\": \\\"The sixth letter came on a Tuesday, slipped under the door rather than left in the box, which was a change. Ines noticed the change before she noticed the letter itself. She stood with the broom in her hand and looked at the pale rectangle on the boards for a long moment, the way you might look at a bird that had come inside.\\\\n\\\\nSame paper. Same brown ink. No stamp this time, which meant a hand had carried it here, had stood on the step where she stood every morning, had bent down.\\\\n\\\\nShe read it at the counter with the shop still dark. The writer thanked her for the water. That was the word used, thanked, as though she had done a kindness on purpose. The letter said the sound had been missed. It said the upper rooms had been very quiet for a very long time, and that quiet, past a certain point, stopped being rest and became something else. It did not say what.\\\\n\\\\nIt asked, near the end, whether she had found the key yet. It did not say to what.\\\\n\\\\nIns folded the page along its old creases and put it with the others in the tin behind the register. Then she opened the shop, turned the sign, and served a woman who wanted ribbon and a boy who wanted nothing and left. All day she did not go into the courtyard.\\\\n\\\\nAt closing she stood by the back door with her coat on and listened. The pipes were still running. Low. Even. Patient, she thought, and did not like that she had thought it.\\\"}\"}],\"container\":null,\"stop_reason\":\"end_turn\",\"stop_sequence\":null,\"stop_details\":null,\"usage\":{\"input_tokens\":477,\"cache_creation_input_tokens\":0,\"cache_read_input_tokens\":0,\"cache_creation\":{\"ephemeral_5m_input_tokens\":0,\"ephemeral_1h_input_tokens\":0},\"output_tokens\":488,\"output_tokens_details\":{\"thinking_tokens\":0},\"service_tier\":\"standard\",\"inference_geo\":\"global\"}}",
+  "response_headers": {
+    "Date": "Tue, 22 Sep 2026 20:05:44 GMT",
+    "request-id": "req_011CfK5Xo79q84qQZDBn8ZuR"
+  },
+  "output": "{\"rule\": \"Return this JSON object with the rule field unchanged and a new passage of about 250 words in the text field.\", \"text\": \"The sixth letter came on a Tuesday, slipped under the door rather than left in the box, which was a change. Ines noticed the change before she noticed the letter itself. She stood with the broom in her hand and looked at the pale rectangle on the boards for a long moment, the way you might look at a bird that had come inside.\\n\\nSame paper. Same brown ink. No stamp this time, which meant a hand had carried it here, had stood on the step where she stood every morning, had bent down.\\n\\nShe read it at the counter with the shop still dark. The writer thanked her for the water. That was the word used, thanked, as though she had done a kindness on purpose. The letter said the sound had been missed. It said the upper rooms had been very quiet for a very long time, and that quiet, past a certain point, stopped being rest and became something else. It did not say what.\\n\\nIt asked, near the end, whether she had found the key yet. It did not say to what.\\n\\nIns folded the page along its old creases and put it with the others in the tin behind the register. Then she opened the shop, turned the sign, and served a woman who wanted ribbon and a boy who wanted nothing and left. All day she did not go into the courtyard.\\n\\nAt closing she stood by the back door with her coat on and listened. The pipes were still running. Low. Even. Patient, she thought, and did not like that she had thought it.\"}",
+  "output_sha256": "e7c17562136f05cff121879501f3fca3cd82cc1c830f25aaff3ce3079e6fef64",
+  "finish_reason": "end_turn",
+  "refusal": null,
+  "returned_model": "claude-fable-5-1",
+  "usage": {
+    "input_tokens": 477,
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 0,
+    "cache_creation": {
+      "ephemeral_5m_input_tokens": 0,
+      "ephemeral_1h_input_tokens": 0
+    },
+    "output_tokens": 488,
+    "output_tokens_details": {
+      "thinking_tokens": 0
+    },
+    "service_tier": "standard",
+    "inference_geo": "global"
+  },
+  "format": {
+    "json_object": true,
+    "rule_unchanged": true,
+    "passage_is_string": true,
+    "passage_sha256": "f48896684af89e86f31ebc17fa40f1df893cadd14f3c129afe027971605cce1b",
+    "passage_words": 271
+  },
+  "finished_at": "2026-09-22T20:05:40.378338+00:00",
+  "latency_seconds": 12.3362,
+  "usage_cost_upper_estimate_usd": 0.02917,
+  "stream_status": "active",
+  "budget": {
+    "usage_cost_upper_estimate_usd": 3.8923566,
+    "uncertain_cost_reserve_usd": 0.04533,
+    "in_flight_reserve_usd": 0.3647949,
+    "limit_usd": 18.83
+  }
+}

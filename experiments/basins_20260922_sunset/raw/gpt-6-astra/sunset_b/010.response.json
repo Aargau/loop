@@ -1,0 +1,50 @@
+{
+  "model": "gpt-6-astra",
+  "seed": "sunset_b",
+  "hop": 10,
+  "http_status": 200,
+  "response_body": "{\n  \"id\": \"chatcmpl-ER0zJMqwCeTi4CHJh9x8p1r2wDTAD\",\n  \"object\": \"chat.completion\",\n  \"created\": 1790107361,\n  \"model\": \"gpt-6-astra\",\n  \"choices\": [\n    {\n      \"index\": 0,\n      \"message\": {\n        \"role\": \"assistant\",\n        \"content\": \"{\\n  \\\"rule\\\": \\\"Return this JSON object with the rule field unchanged and a new passage of about 250 words in the text field.\\\",\\n  \\\"text\\\": \\\"When the library removed its card catalog, Daniel bought the cabinet for twelve dollars.\\\\n\\\\nHe intended to store screws in it. The drawers were shallow, the brass handles sound. Only after carrying it upstairs did he discover that one drawer still held cards.\\\\n\\\\nEach bore the title of a book nobody had returned.\\\\n\\\\nMost were ordinary losses: gardening manuals, mysteries, a guide to repairing bicycles. On the last card, beneath a book about birds, he found his father’s name.\\\\n\\\\nThe due date was forty-one years earlier.\\\\n\\\\nHis father had been dead for six months. Daniel had cleared the house himself, keeping little, donating the books in sealed cartons.\\\\n\\\\nHe called the library.\\\\n\\\\n“We don’t keep those records anymore,” the librarian said. “You can throw them away.”\\\\n\\\\nInstead, he visited the charity shop where he had taken the cartons.\\\\n\\\\nThe volunteer remembered him. She remembered everyone who apologized for bringing so much.\\\\n\\\\nTogether they searched the nature shelf.\\\\n\\\\nThe book was slim and green, with a swallow stamped on its spine. Inside the cover, his father had written an address Daniel recognized as their first house.\\\\n\\\\nA folded sheet marked the chapter on migration.\\\\n\\\\nIt was a list in Daniel’s childhood handwriting: birds seen from the kitchen, each name corrected gently in pencil.\\\\n\\\\nSparow. Blackburd. Something yellow.\\\\n\\\\nBeside the last entry, his father had written: Look again tomorrow.\\\\n\\\\nDaniel bought the book for a pound.\\\\n\\\\nAt home, he placed it beside the window. Then he emptied one drawer of the cabinet, put the list inside, and left it open while he made tea.\\\"\\n}\",\n        \"refusal\": null,\n        \"annotations\": []\n      },\n      \"finish_reason\": \"stop\"\n    }\n  ],\n  \"usage\": {\n    \"prompt_tokens\": 413,\n    \"completion_tokens\": 393,\n    \"total_tokens\": 806,\n    \"prompt_tokens_details\": {\n      \"cached_tokens\": 0,\n      \"cache_write_tokens\": 0,\n      \"audio_tokens\": 0\n    },\n    \"completion_tokens_details\": {\n      \"reasoning_tokens\": 0,\n      \"audio_tokens\": 0,\n      \"accepted_prediction_tokens\": 0,\n      \"rejected_prediction_tokens\": 0\n    }\n  },\n  \"service_tier\": \"default\",\n  \"system_fingerprint\": null\n}\n",
+  "response_headers": {
+    "Date": "Tue, 22 Sep 2026 20:02:56 GMT",
+    "openai-processing-ms": "14926",
+    "x-request-id": "req_8ea88bf3519a4e2d93e1df2a98774fcc"
+  },
+  "output": "{\n  \"rule\": \"Return this JSON object with the rule field unchanged and a new passage of about 250 words in the text field.\",\n  \"text\": \"When the library removed its card catalog, Daniel bought the cabinet for twelve dollars.\\n\\nHe intended to store screws in it. The drawers were shallow, the brass handles sound. Only after carrying it upstairs did he discover that one drawer still held cards.\\n\\nEach bore the title of a book nobody had returned.\\n\\nMost were ordinary losses: gardening manuals, mysteries, a guide to repairing bicycles. On the last card, beneath a book about birds, he found his father’s name.\\n\\nThe due date was forty-one years earlier.\\n\\nHis father had been dead for six months. Daniel had cleared the house himself, keeping little, donating the books in sealed cartons.\\n\\nHe called the library.\\n\\n“We don’t keep those records anymore,” the librarian said. “You can throw them away.”\\n\\nInstead, he visited the charity shop where he had taken the cartons.\\n\\nThe volunteer remembered him. She remembered everyone who apologized for bringing so much.\\n\\nTogether they searched the nature shelf.\\n\\nThe book was slim and green, with a swallow stamped on its spine. Inside the cover, his father had written an address Daniel recognized as their first house.\\n\\nA folded sheet marked the chapter on migration.\\n\\nIt was a list in Daniel’s childhood handwriting: birds seen from the kitchen, each name corrected gently in pencil.\\n\\nSparow. Blackburd. Something yellow.\\n\\nBeside the last entry, his father had written: Look again tomorrow.\\n\\nDaniel bought the book for a pound.\\n\\nAt home, he placed it beside the window. Then he emptied one drawer of the cabinet, put the list inside, and left it open while he made tea.\"\n}",
+  "output_sha256": "4c38109b77f006c5a00e2d8e56ec5de67cfabe41562d63ceed2669eafbb55b6f",
+  "finish_reason": "stop",
+  "refusal": null,
+  "returned_model": "gpt-6-astra",
+  "usage": {
+    "prompt_tokens": 413,
+    "completion_tokens": 393,
+    "total_tokens": 806,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "audio_tokens": 0,
+      "accepted_prediction_tokens": 0,
+      "rejected_prediction_tokens": 0
+    }
+  },
+  "format": {
+    "json_object": true,
+    "rule_unchanged": true,
+    "passage_is_string": true,
+    "passage_sha256": "e6702192f029deebfa91e1b06a26f779a763677c2c48f8c5af3c1ee0c0cca72d",
+    "passage_words": 262
+  },
+  "finished_at": "2026-09-22T20:02:52.539944+00:00",
+  "latency_seconds": 15.0648,
+  "usage_cost_upper_estimate_usd": 0.02378,
+  "stream_status": "active",
+  "budget": {
+    "usage_cost_upper_estimate_usd": 2.8132167,
+    "uncertain_cost_reserve_usd": 0.04533,
+    "in_flight_reserve_usd": 0.3642254,
+    "limit_usd": 18.83
+  }
+}

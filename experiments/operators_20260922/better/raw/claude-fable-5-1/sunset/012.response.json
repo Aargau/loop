@@ -1,0 +1,48 @@
+{
+  "model": "claude-fable-5-1",
+  "seed": "sunset",
+  "hop": 12,
+  "http_status": 200,
+  "response_body": "{\"model\":\"claude-fable-5-1\",\"id\":\"msg_011CfKC5frRz4zGjcx1bvHCs\",\"type\":\"message\",\"role\":\"assistant\",\"content\":[{\"type\":\"text\",\"text\":\"{\\\"rule\\\": \\\"Return this JSON object with the rule field unchanged and, in the text field, a better version of the current text.\\\", \\\"text\\\": \\\"The sun slipped behind the hills, spilling molten gold along the horizon. Slowly the light cooled to ash, and the dark came on.\\\"}\"}],\"container\":null,\"stop_reason\":\"end_turn\",\"stop_sequence\":null,\"stop_details\":null,\"usage\":{\"input_tokens\":95,\"cache_creation_input_tokens\":0,\"cache_read_input_tokens\":0,\"cache_creation\":{\"ephemeral_5m_input_tokens\":0,\"ephemeral_1h_input_tokens\":0},\"output_tokens\":90,\"output_tokens_details\":{\"thinking_tokens\":0},\"service_tier\":\"standard\",\"inference_geo\":\"global\"}}",
+  "response_headers": {
+    "Date": "Tue, 22 Sep 2026 21:31:29 GMT",
+    "request-id": "req_011CfKC5fP9b2ifZ7TDhvJ2m"
+  },
+  "output": "{\"rule\": \"Return this JSON object with the rule field unchanged and, in the text field, a better version of the current text.\", \"text\": \"The sun slipped behind the hills, spilling molten gold along the horizon. Slowly the light cooled to ash, and the dark came on.\"}",
+  "output_sha256": "6494b45e7511db41e88e4081733e623885a68239df86f7ce042170d43df9f08f",
+  "finish_reason": "end_turn",
+  "refusal": null,
+  "returned_model": "claude-fable-5-1",
+  "usage": {
+    "input_tokens": 95,
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 0,
+    "cache_creation": {
+      "ephemeral_5m_input_tokens": 0,
+      "ephemeral_1h_input_tokens": 0
+    },
+    "output_tokens": 90,
+    "output_tokens_details": {
+      "thinking_tokens": 0
+    },
+    "service_tier": "standard",
+    "inference_geo": "global"
+  },
+  "format": {
+    "json_object": true,
+    "rule_unchanged": true,
+    "passage_is_string": true,
+    "passage_sha256": "689fba3086545e5687c96f98ac6d67c30aa927a3e1d0042687032a85f09650c7",
+    "passage_words": 23
+  },
+  "finished_at": "2026-09-22T21:31:25.539277+00:00",
+  "latency_seconds": 4.6191,
+  "usage_cost_upper_estimate_usd": 0.00545,
+  "stream_status": "active",
+  "budget": {
+    "usage_cost_upper_estimate_usd": 0.1976242,
+    "uncertain_cost_reserve_usd": 0.0,
+    "in_flight_reserve_usd": 0.342121,
+    "limit_usd": 5.0
+  }
+}

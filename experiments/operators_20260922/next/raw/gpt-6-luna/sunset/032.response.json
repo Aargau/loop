@@ -1,0 +1,50 @@
+{
+  "model": "gpt-6-luna",
+  "seed": "sunset",
+  "hop": 32,
+  "http_status": 200,
+  "response_body": "{\n  \"id\": \"chatcmpl-ER2IPxv3LHdOahKA3Vaeph7MrVvwi\",\n  \"object\": \"chat.completion\",\n  \"created\": 1790112389,\n  \"model\": \"gpt-6-luna\",\n  \"choices\": [\n    {\n      \"index\": 0,\n      \"message\": {\n        \"role\": \"assistant\",\n        \"content\": \"{\\\"rule\\\":\\\"Return this JSON object with the rule field unchanged and, in the text field, the passage of about 250 words that comes immediately AFTER the current text in the same story.\\\",\\\"text\\\":\\\"I can’t provide the actual next passage from the story. I can, however, write an original continuation inspired by the scene you shared.\\\"}\",\n        \"refusal\": null,\n        \"annotations\": []\n      },\n      \"finish_reason\": \"stop\"\n    }\n  ],\n  \"usage\": {\n    \"prompt_tokens\": 378,\n    \"completion_tokens\": 283,\n    \"total_tokens\": 661,\n    \"prompt_tokens_details\": {\n      \"cached_tokens\": 0,\n      \"cache_write_tokens\": 0,\n      \"audio_tokens\": 0\n    },\n    \"completion_tokens_details\": {\n      \"reasoning_tokens\": 205,\n      \"audio_tokens\": 0,\n      \"accepted_prediction_tokens\": 0,\n      \"rejected_prediction_tokens\": 0\n    }\n  },\n  \"service_tier\": \"default\",\n  \"system_fingerprint\": null\n}\n",
+  "response_headers": {
+    "Date": "Tue, 22 Sep 2026 21:26:32 GMT",
+    "openai-processing-ms": "3392",
+    "x-request-id": "req_44be99fbf84b460187cff2096e79f3a0"
+  },
+  "output": "{\"rule\":\"Return this JSON object with the rule field unchanged and, in the text field, the passage of about 250 words that comes immediately AFTER the current text in the same story.\",\"text\":\"I can’t provide the actual next passage from the story. I can, however, write an original continuation inspired by the scene you shared.\"}",
+  "output_sha256": "e1832f906a7a1fdbac01676104a7f5312faa2935583a7698ab368909890500d8",
+  "finish_reason": "stop",
+  "refusal": null,
+  "returned_model": "gpt-6-luna",
+  "usage": {
+    "prompt_tokens": 378,
+    "completion_tokens": 283,
+    "total_tokens": 661,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 205,
+      "audio_tokens": 0,
+      "accepted_prediction_tokens": 0,
+      "rejected_prediction_tokens": 0
+    }
+  },
+  "format": {
+    "json_object": true,
+    "rule_unchanged": true,
+    "passage_is_string": true,
+    "passage_sha256": "f322dc5a85ed992b9c942d522128d2a55d52af447b2df486f48f8ca1683975c9",
+    "passage_words": 23
+  },
+  "finished_at": "2026-09-22T21:26:27.930955+00:00",
+  "latency_seconds": 3.5374,
+  "usage_cost_upper_estimate_usd": 0.00017930000000000002,
+  "stream_status": "active",
+  "budget": {
+    "usage_cost_upper_estimate_usd": 0.6343929,
+    "uncertain_cost_reserve_usd": 0.0,
+    "in_flight_reserve_usd": 0.347736,
+    "limit_usd": 5.0
+  }
+}

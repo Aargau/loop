@@ -1,0 +1,50 @@
+{
+  "model": "gpt-6-sol",
+  "seed": "tide",
+  "hop": 50,
+  "http_status": 200,
+  "response_body": "{\n  \"id\": \"chatcmpl-ER13DFZsX0VsrGqD4bpPvBMsIXtWY\",\n  \"object\": \"chat.completion\",\n  \"created\": 1790107603,\n  \"model\": \"gpt-6-sol\",\n  \"choices\": [\n    {\n      \"index\": 0,\n      \"message\": {\n        \"role\": \"assistant\",\n        \"content\": \"{\\n  \\\"rule\\\": \\\"Return this JSON object with the rule field unchanged and a new passage of about 250 words in the text field.\\\",\\n  \\\"text\\\": \\\"By morning, the child had learned where they kept the spoons. She laid four beside the breakfast bowls, then paused and added a fifth.\\\\n\\\\n“Who’s that for?” Mara asked.\\\\n\\\\nThe child glanced toward the cupboard. “He might be hungry.”\\\\n\\\\nTheir mother put the fifth spoon back in the drawer. No one objected.\\\\n\\\\nRain tapped at the window. Mara’s sister sat with her elbows on the table, watching the child stir honey into her porridge. In the night, she had told them what she could remember: the harbor wall, the cold beneath it, a room with no windows where the harbor master counted tides aloud. She could not say how long she had been there. The child had not been able to say either.\\\\n\\\\nAfter breakfast, Mara took the shell from the cupboard and set it on the windowsill. The child came to stand beside her.\\\\n\\\\n“Do you want to go back?” Mara asked.\\\\n\\\\nThe child shook her head, but she kept her eyes on the shell. “I left someone there.”\\\\n\\\\nMara’s sister looked up. For a moment, she seemed about to speak. Instead, she crossed the kitchen and took the child’s hand.\\\\n\\\\nTheir mother opened the drawer again. She found the fifth spoon and placed it beside the shell, its handle pointing toward the cupboard.\\\\n\\\\nThey went about their morning. Mara washed the bowls. Her sister helped the child fasten a button on her coat. When the rain stopped, a thin line of water appeared beneath the cupboard door. It ran across the dry floor and came to rest at Mara’s feet.\\\"\\n}\",\n        \"refusal\": null,\n        \"annotations\": []\n      },\n      \"finish_reason\": \"stop\"\n    }\n  ],\n  \"usage\": {\n    \"prompt_tokens\": 360,\n    \"completion_tokens\": 428,\n    \"total_tokens\": 788,\n    \"prompt_tokens_details\": {\n      \"cached_tokens\": 0,\n      \"cache_write_tokens\": 0,\n      \"audio_tokens\": 0\n    },\n    \"completion_tokens_details\": {\n      \"reasoning_tokens\": 43,\n      \"audio_tokens\": 0,\n      \"accepted_prediction_tokens\": 0,\n      \"rejected_prediction_tokens\": 0\n    }\n  },\n  \"service_tier\": \"default\",\n  \"system_fingerprint\": null\n}\n",
+  "response_headers": {
+    "Date": "Tue, 22 Sep 2026 20:06:49 GMT",
+    "openai-processing-ms": "6408",
+    "x-request-id": "req_0bd6c1d9df39431fa819fc3ee0ad0844"
+  },
+  "output": "{\n  \"rule\": \"Return this JSON object with the rule field unchanged and a new passage of about 250 words in the text field.\",\n  \"text\": \"By morning, the child had learned where they kept the spoons. She laid four beside the breakfast bowls, then paused and added a fifth.\\n\\n“Who’s that for?” Mara asked.\\n\\nThe child glanced toward the cupboard. “He might be hungry.”\\n\\nTheir mother put the fifth spoon back in the drawer. No one objected.\\n\\nRain tapped at the window. Mara’s sister sat with her elbows on the table, watching the child stir honey into her porridge. In the night, she had told them what she could remember: the harbor wall, the cold beneath it, a room with no windows where the harbor master counted tides aloud. She could not say how long she had been there. The child had not been able to say either.\\n\\nAfter breakfast, Mara took the shell from the cupboard and set it on the windowsill. The child came to stand beside her.\\n\\n“Do you want to go back?” Mara asked.\\n\\nThe child shook her head, but she kept her eyes on the shell. “I left someone there.”\\n\\nMara’s sister looked up. For a moment, she seemed about to speak. Instead, she crossed the kitchen and took the child’s hand.\\n\\nTheir mother opened the drawer again. She found the fifth spoon and placed it beside the shell, its handle pointing toward the cupboard.\\n\\nThey went about their morning. Mara washed the bowls. Her sister helped the child fasten a button on her coat. When the rain stopped, a thin line of water appeared beneath the cupboard door. It ran across the dry floor and came to rest at Mara’s feet.\"\n}",
+  "output_sha256": "be18847b940941e80a720d9d28e1e7b7a9ce12bcab8ff683d36b329962b47382",
+  "finish_reason": "stop",
+  "refusal": null,
+  "returned_model": "gpt-6-sol",
+  "usage": {
+    "prompt_tokens": 360,
+    "completion_tokens": 428,
+    "total_tokens": 788,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 43,
+      "audio_tokens": 0,
+      "accepted_prediction_tokens": 0,
+      "rejected_prediction_tokens": 0
+    }
+  },
+  "format": {
+    "json_object": true,
+    "rule_unchanged": true,
+    "passage_is_string": true,
+    "passage_sha256": "1231ec2fe0f3c69f831ca81bfb17333b28b8ff78255516b12fe31129106acb2f",
+    "passage_words": 262
+  },
+  "finished_at": "2026-09-22T20:06:45.408160+00:00",
+  "latency_seconds": 6.7,
+  "usage_cost_upper_estimate_usd": 0.005,
+  "stream_status": "active",
+  "budget": {
+    "usage_cost_upper_estimate_usd": 4.3059687,
+    "uncertain_cost_reserve_usd": 0.04533,
+    "in_flight_reserve_usd": 0.5463449,
+    "limit_usd": 18.83
+  }
+}

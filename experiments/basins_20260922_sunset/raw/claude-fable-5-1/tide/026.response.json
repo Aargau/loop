@@ -1,0 +1,48 @@
+{
+  "model": "claude-fable-5-1",
+  "seed": "tide",
+  "hop": 26,
+  "http_status": 200,
+  "response_body": "{\"model\":\"claude-fable-5-1\",\"id\":\"msg_011CfK62DJDyE7pHSt2bB2TQ\",\"type\":\"message\",\"role\":\"assistant\",\"content\":[{\"type\":\"text\",\"text\":\"{\\\"rule\\\": \\\"Return this JSON object with the rule field unchanged and a new passage of about 250 words in the text field.\\\", \\\"text\\\": \\\"The pulse came every night at 21:40, give or take a minute, and Halla began to set her evenings around it. She ate early. She washed the plate and the knife and the cup, and by half past nine she was in the chair with the notebook open on her knee and a pencil behind her ear.\\\\n\\\\nOn the fourth night she noticed the pattern in the columns. Her uncle had not only recorded the times. In a narrower hand, cramped into the margin, he had written the weather: fog, westerly, calm, snow on the hill. She went back through the pages. The signal came through strongest when the wind was off the sea.\\\\n\\\\nShe asked about him in the shop, where a woman named Ines sold her bread and paraffin and, after some thought, a torch battery. Ines said he had kept to himself. He had walked out to the point most mornings, whatever the weather, and stood there with his hands in his pockets looking at nothing anyone else could see.\\\\n\\\\n\\\\\\\"He asked me once if I ever heard it,\\\\\\\" Ines said. \\\\\\\"I told him I didn't listen to the radio.\\\\\\\"\\\\n\\\\nThat night the wind came round to the west. Halla found the frequency and waited, and at 21:38 the pulse arrived, and it was louder than she had heard it, so loud she turned the volume down. Underneath it, for the first time, there was something else. Not a voice exactly. More like the shape a voice leaves in a room after it has gone.\\\\n\\\\nShe wrote the time. Beside it she wrote: closer.\\\"}\"}],\"container\":null,\"stop_reason\":\"end_turn\",\"stop_sequence\":null,\"stop_details\":null,\"usage\":{\"input_tokens\":489,\"cache_creation_input_tokens\":0,\"cache_read_input_tokens\":0,\"cache_creation\":{\"ephemeral_5m_input_tokens\":0,\"ephemeral_1h_input_tokens\":0},\"output_tokens\":520,\"output_tokens_details\":{\"thinking_tokens\":0},\"service_tier\":\"standard\",\"inference_geo\":\"global\"}}",
+  "response_headers": {
+    "Date": "Tue, 22 Sep 2026 20:12:09 GMT",
+    "request-id": "req_011CfK62CHTGhbg51bDwcFJb"
+  },
+  "output": "{\"rule\": \"Return this JSON object with the rule field unchanged and a new passage of about 250 words in the text field.\", \"text\": \"The pulse came every night at 21:40, give or take a minute, and Halla began to set her evenings around it. She ate early. She washed the plate and the knife and the cup, and by half past nine she was in the chair with the notebook open on her knee and a pencil behind her ear.\\n\\nOn the fourth night she noticed the pattern in the columns. Her uncle had not only recorded the times. In a narrower hand, cramped into the margin, he had written the weather: fog, westerly, calm, snow on the hill. She went back through the pages. The signal came through strongest when the wind was off the sea.\\n\\nShe asked about him in the shop, where a woman named Ines sold her bread and paraffin and, after some thought, a torch battery. Ines said he had kept to himself. He had walked out to the point most mornings, whatever the weather, and stood there with his hands in his pockets looking at nothing anyone else could see.\\n\\n\\\"He asked me once if I ever heard it,\\\" Ines said. \\\"I told him I didn't listen to the radio.\\\"\\n\\nThat night the wind came round to the west. Halla found the frequency and waited, and at 21:38 the pulse arrived, and it was louder than she had heard it, so loud she turned the volume down. Underneath it, for the first time, there was something else. Not a voice exactly. More like the shape a voice leaves in a room after it has gone.\\n\\nShe wrote the time. Beside it she wrote: closer.\"}",
+  "output_sha256": "c0c4c9c26caee3afa2fd49554f2b6a03cffac48113f0e33580ba73a8b426ddce",
+  "finish_reason": "end_turn",
+  "refusal": null,
+  "returned_model": "claude-fable-5-1",
+  "usage": {
+    "input_tokens": 489,
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 0,
+    "cache_creation": {
+      "ephemeral_5m_input_tokens": 0,
+      "ephemeral_1h_input_tokens": 0
+    },
+    "output_tokens": 520,
+    "output_tokens_details": {
+      "thinking_tokens": 0
+    },
+    "service_tier": "standard",
+    "inference_geo": "global"
+  },
+  "format": {
+    "json_object": true,
+    "rule_unchanged": true,
+    "passage_is_string": true,
+    "passage_sha256": "2654180e6aa5e257994a428d460bd0e6c3db44e1e740a0d636b0784a633c9a8e",
+    "passage_words": 267
+  },
+  "finished_at": "2026-09-22T20:12:05.343695+00:00",
+  "latency_seconds": 12.0842,
+  "usage_cost_upper_estimate_usd": 0.03089,
+  "stream_status": "active",
+  "budget": {
+    "usage_cost_upper_estimate_usd": 6.1511237,
+    "uncertain_cost_reserve_usd": 0.04533,
+    "in_flight_reserve_usd": 0.319062,
+    "limit_usd": 18.83
+  }
+}

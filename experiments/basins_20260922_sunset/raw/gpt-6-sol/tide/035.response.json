@@ -1,0 +1,50 @@
+{
+  "model": "gpt-6-sol",
+  "seed": "tide",
+  "hop": 35,
+  "http_status": 200,
+  "response_body": "{\n  \"id\": \"chatcmpl-ER106lF3bGCtyk0FE7svoSwhlI1nl\",\n  \"object\": \"chat.completion\",\n  \"created\": 1790107410,\n  \"model\": \"gpt-6-sol\",\n  \"choices\": [\n    {\n      \"index\": 0,\n      \"message\": {\n        \"role\": \"assistant\",\n        \"content\": \"{\\n  \\\"rule\\\": \\\"Return this JSON object with the rule field unchanged and a new passage of about 250 words in the text field.\\\",\\n  \\\"text\\\": \\\"The mortar came away in wet crumbs. By the time Mara had cleared the lower hinge, the boat was close enough for her to see that the man at its bow was not waving. He was bracing himself against the mast, his arms spread to keep his balance.\\\\n\\\\n“Don’t open it,” he called.\\\\n\\\\nThe harbor master let go of his pole. It struck the steps and rolled into the water.\\\\n\\\\nThe boat drifted nearer. Its hull rode high, though Mara could see no one aboard but the man. He had the same dark coat as the figure in the photograph, but his hair was white with salt.\\\\n\\\\n“The gate was shut,” the harbor master said.\\\\n\\\\n“I know.” The man looked past him, toward the town. “Is she here?”\\\\n\\\\nBefore either could answer, the lock clicked. Mara drew back. She had not touched it.\\\\n\\\\nThe gate shifted inward by the width of a hand. Water pressed through the gap, carrying a strand of weed and something small and silver. A fish, Mara thought, until it caught against the step and opened like a folded blade.\\\\n\\\\nThe man dropped to his knees in the boat. “Put the mortar back.”\\\\n\\\\nMara seized a handful, but the tide was rising now, washing it from her fingers. Above the tower, the bell swung silently once more.\\\\n\\\\nFootsteps sounded on the quay. The woman from the harbor came down the steps, the photograph held flat against her palm. She looked at the man, then at the widening gate.\\\\n\\\\n“Move,” she said, and stepped into the water.\\\"\\n}\",\n        \"refusal\": null,\n        \"annotations\": []\n      },\n      \"finish_reason\": \"stop\"\n    }\n  ],\n  \"usage\": {\n    \"prompt_tokens\": 370,\n    \"completion_tokens\": 414,\n    \"total_tokens\": 784,\n    \"prompt_tokens_details\": {\n      \"cached_tokens\": 0,\n      \"cache_write_tokens\": 0,\n      \"audio_tokens\": 0\n    },\n    \"completion_tokens_details\": {\n      \"reasoning_tokens\": 32,\n      \"audio_tokens\": 0,\n      \"accepted_prediction_tokens\": 0,\n      \"rejected_prediction_tokens\": 0\n    }\n  },\n  \"service_tier\": \"default\",\n  \"system_fingerprint\": null\n}\n",
+  "response_headers": {
+    "Date": "Tue, 22 Sep 2026 20:03:36 GMT",
+    "openai-processing-ms": "6042",
+    "x-request-id": "req_5f80fc149fe0494c94626f14cb9d6c83"
+  },
+  "output": "{\n  \"rule\": \"Return this JSON object with the rule field unchanged and a new passage of about 250 words in the text field.\",\n  \"text\": \"The mortar came away in wet crumbs. By the time Mara had cleared the lower hinge, the boat was close enough for her to see that the man at its bow was not waving. He was bracing himself against the mast, his arms spread to keep his balance.\\n\\n“Don’t open it,” he called.\\n\\nThe harbor master let go of his pole. It struck the steps and rolled into the water.\\n\\nThe boat drifted nearer. Its hull rode high, though Mara could see no one aboard but the man. He had the same dark coat as the figure in the photograph, but his hair was white with salt.\\n\\n“The gate was shut,” the harbor master said.\\n\\n“I know.” The man looked past him, toward the town. “Is she here?”\\n\\nBefore either could answer, the lock clicked. Mara drew back. She had not touched it.\\n\\nThe gate shifted inward by the width of a hand. Water pressed through the gap, carrying a strand of weed and something small and silver. A fish, Mara thought, until it caught against the step and opened like a folded blade.\\n\\nThe man dropped to his knees in the boat. “Put the mortar back.”\\n\\nMara seized a handful, but the tide was rising now, washing it from her fingers. Above the tower, the bell swung silently once more.\\n\\nFootsteps sounded on the quay. The woman from the harbor came down the steps, the photograph held flat against her palm. She looked at the man, then at the widening gate.\\n\\n“Move,” she said, and stepped into the water.\"\n}",
+  "output_sha256": "9fcc139a341195a73101f69ea9b2daf9d621aed37c65ecd0e3f92d3aced6f388",
+  "finish_reason": "stop",
+  "refusal": null,
+  "returned_model": "gpt-6-sol",
+  "usage": {
+    "prompt_tokens": 370,
+    "completion_tokens": 414,
+    "total_tokens": 784,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 32,
+      "audio_tokens": 0,
+      "accepted_prediction_tokens": 0,
+      "rejected_prediction_tokens": 0
+    }
+  },
+  "format": {
+    "json_object": true,
+    "rule_unchanged": true,
+    "passage_is_string": true,
+    "passage_sha256": "e0805855cdb8531282fe5929a0c97ff3a97593439fb0eaabe49837fc5db66d82",
+    "passage_words": 260
+  },
+  "finished_at": "2026-09-22T20:03:32.102000+00:00",
+  "latency_seconds": 6.1369,
+  "usage_cost_upper_estimate_usd": 0.00488,
+  "stream_status": "active",
+  "budget": {
+    "usage_cost_upper_estimate_usd": 3.0517472,
+    "uncertain_cost_reserve_usd": 0.04533,
+    "in_flight_reserve_usd": 0.5474048,
+    "limit_usd": 18.83
+  }
+}

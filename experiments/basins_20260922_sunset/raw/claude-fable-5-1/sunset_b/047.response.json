@@ -1,0 +1,48 @@
+{
+  "model": "claude-fable-5-1",
+  "seed": "sunset_b",
+  "hop": 47,
+  "http_status": 200,
+  "response_body": "{\"model\":\"claude-fable-5-1\",\"id\":\"msg_011CfK6zZcRDxNCDAhathJtZ\",\"type\":\"message\",\"role\":\"assistant\",\"content\":[{\"type\":\"text\",\"text\":\"{\\\"rule\\\": \\\"Return this JSON object with the rule field unchanged and a new passage of about 250 words in the text field.\\\", \\\"text\\\": \\\"Saturday the van came, though not the one he had pictured. It was white and small and the two men who got out of it did not look at the shop at all. They stood over the strip of tar with their hands in their jackets and talked in the way of men who have been sent somewhere and are deciding, between themselves, how much of it to do.\\\\n\\\\nHe watched from behind the glass. He had the fourth envelope out on the counter now, unfolded, the two lines facing up, and he found he could not read them and watch the men at the same time, so he watched the men.\\\\n\\\\nOne of them knelt. He put his palm flat on the tar the way you might on a horse, or a stove, checking. Then he stood and shook his head and said something that made the other one laugh, and they got back in the van and drove off, and the strip was still there.\\\\n\\\\nHe went out. It was colder than it looked. The tar had a sheen on it like the skin on old paint and when he crouched he could see, pressed into the edge nearest the kerb, the print of a shoe that was not his and not, he thought, either of theirs. A narrow shoe. A woman's, or a boy's.\\\\n\\\\nHe went back in and took up the pen. He wrote one line, crossed it out, wrote it again differently. Then the bell went, and he covered the page with his hand, and it was only the post.\\\"}\"}],\"container\":null,\"stop_reason\":\"end_turn\",\"stop_sequence\":null,\"stop_details\":null,\"usage\":{\"input_tokens\":484,\"cache_creation_input_tokens\":0,\"cache_read_input_tokens\":0,\"cache_creation\":{\"ephemeral_5m_input_tokens\":0,\"ephemeral_1h_input_tokens\":0},\"output_tokens\":459,\"output_tokens_details\":{\"thinking_tokens\":0},\"service_tier\":\"standard\",\"inference_geo\":\"global\"}}",
+  "response_headers": {
+    "Date": "Tue, 22 Sep 2026 20:24:53 GMT",
+    "request-id": "req_011CfK6zZ6ew7hMimvN6xckk"
+  },
+  "output": "{\"rule\": \"Return this JSON object with the rule field unchanged and a new passage of about 250 words in the text field.\", \"text\": \"Saturday the van came, though not the one he had pictured. It was white and small and the two men who got out of it did not look at the shop at all. They stood over the strip of tar with their hands in their jackets and talked in the way of men who have been sent somewhere and are deciding, between themselves, how much of it to do.\\n\\nHe watched from behind the glass. He had the fourth envelope out on the counter now, unfolded, the two lines facing up, and he found he could not read them and watch the men at the same time, so he watched the men.\\n\\nOne of them knelt. He put his palm flat on the tar the way you might on a horse, or a stove, checking. Then he stood and shook his head and said something that made the other one laugh, and they got back in the van and drove off, and the strip was still there.\\n\\nHe went out. It was colder than it looked. The tar had a sheen on it like the skin on old paint and when he crouched he could see, pressed into the edge nearest the kerb, the print of a shoe that was not his and not, he thought, either of theirs. A narrow shoe. A woman's, or a boy's.\\n\\nHe went back in and took up the pen. He wrote one line, crossed it out, wrote it again differently. Then the bell went, and he covered the page with his hand, and it was only the post.\"}",
+  "output_sha256": "1021013cf0622ff44754bb4198c99d4c4bb9c67cdc7dedf00d4e3f2b0b5d4aaf",
+  "finish_reason": "end_turn",
+  "refusal": null,
+  "returned_model": "claude-fable-5-1",
+  "usage": {
+    "input_tokens": 484,
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 0,
+    "cache_creation": {
+      "ephemeral_5m_input_tokens": 0,
+      "ephemeral_1h_input_tokens": 0
+    },
+    "output_tokens": 459,
+    "output_tokens_details": {
+      "thinking_tokens": 0
+    },
+    "service_tier": "standard",
+    "inference_geo": "global"
+  },
+  "format": {
+    "json_object": true,
+    "rule_unchanged": true,
+    "passage_is_string": true,
+    "passage_sha256": "47b83caa7591a58c3fd43c0085afeb336539552764476fd0fa3aea2711baf9d9",
+    "passage_words": 265
+  },
+  "finished_at": "2026-09-22T20:24:49.569221+00:00",
+  "latency_seconds": 11.9031,
+  "usage_cost_upper_estimate_usd": 0.02779,
+  "stream_status": "active",
+  "budget": {
+    "usage_cost_upper_estimate_usd": 10.3373477,
+    "uncertain_cost_reserve_usd": 0.04533,
+    "in_flight_reserve_usd": 0.2274,
+    "limit_usd": 18.83
+  }
+}

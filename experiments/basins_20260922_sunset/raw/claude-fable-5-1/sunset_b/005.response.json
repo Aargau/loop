@@ -1,0 +1,48 @@
+{
+  "model": "claude-fable-5-1",
+  "seed": "sunset_b",
+  "hop": 5,
+  "http_status": 200,
+  "response_body": "{\"model\":\"claude-fable-5-1\",\"id\":\"msg_011CfK4xrCX2u8SuRYHU9JnP\",\"type\":\"message\",\"role\":\"assistant\",\"content\":[{\"type\":\"text\",\"text\":\"{\\\"rule\\\": \\\"Return this JSON object with the rule field unchanged and a new passage of about 250 words in the text field.\\\", \\\"text\\\": \\\"The bakery opened before the streetlights went off, and Ines liked that hour best, when the ovens were hot but the door was still locked and the town belonged to no one. She worked the dough with the heel of her hand, folding and turning, counting without meaning to. Her mother had counted too, aloud, in a low voice that Ines could still hear if she let herself.\\\\n\\\\nBy six the first loaves were on the racks and the window had fogged from the inside. She wiped a circle clear and watched the square fill in slowly: the man who swept the church steps, the two sisters who ran the pharmacy, a boy on a bicycle who was always late for something. None of them looked up. That was fine. Bread did not need to be watched to be wanted.\\\\n\\\\nWhen she unlocked the door the bell rang once and the cold came in with the smell of wet stone. Old Fermin was already there, as he was every morning, holding his coins in a closed fist as though someone might take them. She gave him the small round loaf he preferred and did not mention that it was yesterday's price. He did not mention it either. They had an understanding that had never once been spoken.\\\\n\\\\nThe day would go the way days went. She would sell out by noon or she would not, and either way she would sweep the flour into the corners and start the starter for tomorrow. Some people found this dull. Ines found it steady, the way a wall is steady, and she leaned her whole life against it without worry.\\\"}\"}],\"container\":null,\"stop_reason\":\"end_turn\",\"stop_sequence\":null,\"stop_details\":null,\"usage\":{\"input_tokens\":516,\"cache_creation_input_tokens\":0,\"cache_read_input_tokens\":0,\"cache_creation\":{\"ephemeral_5m_input_tokens\":0,\"ephemeral_1h_input_tokens\":0},\"output_tokens\":495,\"output_tokens_details\":{\"thinking_tokens\":0},\"service_tier\":\"standard\",\"inference_geo\":\"global\"}}",
+  "response_headers": {
+    "Date": "Tue, 22 Sep 2026 19:58:18 GMT",
+    "request-id": "req_011CfK4xqmE4F6sXC1DWZ4vs"
+  },
+  "output": "{\"rule\": \"Return this JSON object with the rule field unchanged and a new passage of about 250 words in the text field.\", \"text\": \"The bakery opened before the streetlights went off, and Ines liked that hour best, when the ovens were hot but the door was still locked and the town belonged to no one. She worked the dough with the heel of her hand, folding and turning, counting without meaning to. Her mother had counted too, aloud, in a low voice that Ines could still hear if she let herself.\\n\\nBy six the first loaves were on the racks and the window had fogged from the inside. She wiped a circle clear and watched the square fill in slowly: the man who swept the church steps, the two sisters who ran the pharmacy, a boy on a bicycle who was always late for something. None of them looked up. That was fine. Bread did not need to be watched to be wanted.\\n\\nWhen she unlocked the door the bell rang once and the cold came in with the smell of wet stone. Old Fermin was already there, as he was every morning, holding his coins in a closed fist as though someone might take them. She gave him the small round loaf he preferred and did not mention that it was yesterday's price. He did not mention it either. They had an understanding that had never once been spoken.\\n\\nThe day would go the way days went. She would sell out by noon or she would not, and either way she would sweep the flour into the corners and start the starter for tomorrow. Some people found this dull. Ines found it steady, the way a wall is steady, and she leaned her whole life against it without worry.\"}",
+  "output_sha256": "1a8f894fbb79ddc789d67e3acce3b7fcfe08077747633ad35669a9214121b353",
+  "finish_reason": "end_turn",
+  "refusal": null,
+  "returned_model": "claude-fable-5-1",
+  "usage": {
+    "input_tokens": 516,
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 0,
+    "cache_creation": {
+      "ephemeral_5m_input_tokens": 0,
+      "ephemeral_1h_input_tokens": 0
+    },
+    "output_tokens": 495,
+    "output_tokens_details": {
+      "thinking_tokens": 0
+    },
+    "service_tier": "standard",
+    "inference_geo": "global"
+  },
+  "format": {
+    "json_object": true,
+    "rule_unchanged": true,
+    "passage_is_string": true,
+    "passage_sha256": "516357007575b2ff211f63f21be5be898c529e301d35c0031dd84e8258cf84e5",
+    "passage_words": 277
+  },
+  "finished_at": "2026-09-22T19:58:15.009561+00:00",
+  "latency_seconds": 14.0715,
+  "usage_cost_upper_estimate_usd": 0.02991,
+  "stream_status": "active",
+  "budget": {
+    "usage_cost_upper_estimate_usd": 1.0504425,
+    "uncertain_cost_reserve_usd": 0.04533,
+    "in_flight_reserve_usd": 0.365023,
+    "limit_usd": 18.83
+  }
+}

@@ -1,0 +1,48 @@
+{
+  "model": "claude-fable-5-1",
+  "seed": "sunset_a",
+  "hop": 52,
+  "http_status": 200,
+  "response_body": "{\"model\":\"claude-fable-5-1\",\"id\":\"msg_011CfK7Dfw3QvHbUD13zijSA\",\"type\":\"message\",\"role\":\"assistant\",\"content\":[{\"type\":\"text\",\"text\":\"{\\\"rule\\\": \\\"Return this JSON object with the rule field unchanged and a new passage of about 250 words in the text field.\\\", \\\"text\\\": \\\"Marisol ran the ferry the way her father had run it, which is to say she ran it on time and did not explain the schedule. The crossing took twenty-two minutes. She had made it, by her own rough count, somewhere past forty thousand times, and she had stopped counting because the number had begun to feel like an accusation.\\\\n\\\\nA man boarded at the last call with no luggage and a coat too heavy for the season. He stood at the rail instead of sitting, which told her most of what she needed to know.\\\\n\\\\n\\\\\\\"Is this the boat to the island?\\\\\\\"\\\\n\\\\n\\\\\\\"It's the only boat.\\\\\\\"\\\\n\\\\n\\\\\\\"I meant—does it come back?\\\\\\\"\\\\n\\\\nMarisol eased the throttle forward and let the harbor slide behind them. She had learned that people asked about the return trip when they had already decided not to take it, and asked about the island when they had already decided not to stay.\\\\n\\\\n\\\\\\\"Same boat,\\\\\\\" she said. \\\\\\\"Different water.\\\\\\\"\\\\n\\\\nHe laughed, uncertain, and put his hands in his pockets. Halfway across, the wind found the gap between the headlands and the deck tilted, briefly, the way it always did. He gripped the rail.\\\\n\\\\n\\\\\\\"Does it always do that?\\\\\\\"\\\\n\\\\n\\\\\\\"Every crossing. Same spot.\\\\\\\"\\\\n\\\\n\\\\\\\"Then you'd think you'd get used to it.\\\\\\\"\\\\n\\\\n\\\\\\\"You'd think.\\\\\\\" She adjusted the wheel a hair to port. \\\\\\\"But I don't want to. The day it doesn't surprise me is the day I stop paying attention.\\\\\\\"\\\\n\\\\nThe island came up gray and low. He didn't move toward the ramp.\\\\n\\\\n\\\\\\\"Return's at six,\\\\\\\" she said. \\\\\\\"You don't have to decide now.\\\\\\\"\\\\n\\\\n\\\\\\\"When do I have to decide?\\\\\\\"\\\\n\\\\n\\\\\\\"At six,\\\\\\\" said Marisol. \\\\\\\"That's what the schedule's for.\\\\\\\"\\\"}\"}],\"container\":null,\"stop_reason\":\"end_turn\",\"stop_sequence\":null,\"stop_details\":null,\"usage\":{\"input_tokens\":685,\"cache_creation_input_tokens\":0,\"cache_read_input_tokens\":0,\"cache_creation\":{\"ephemeral_5m_input_tokens\":0,\"ephemeral_1h_input_tokens\":0},\"output_tokens\":634,\"output_tokens_details\":{\"thinking_tokens\":0},\"service_tier\":\"standard\",\"inference_geo\":\"global\"}}",
+  "response_headers": {
+    "Date": "Tue, 22 Sep 2026 20:27:53 GMT",
+    "request-id": "req_011CfK7DfU1JEkyVx5bUCBLW"
+  },
+  "output": "{\"rule\": \"Return this JSON object with the rule field unchanged and a new passage of about 250 words in the text field.\", \"text\": \"Marisol ran the ferry the way her father had run it, which is to say she ran it on time and did not explain the schedule. The crossing took twenty-two minutes. She had made it, by her own rough count, somewhere past forty thousand times, and she had stopped counting because the number had begun to feel like an accusation.\\n\\nA man boarded at the last call with no luggage and a coat too heavy for the season. He stood at the rail instead of sitting, which told her most of what she needed to know.\\n\\n\\\"Is this the boat to the island?\\\"\\n\\n\\\"It's the only boat.\\\"\\n\\n\\\"I meant—does it come back?\\\"\\n\\nMarisol eased the throttle forward and let the harbor slide behind them. She had learned that people asked about the return trip when they had already decided not to take it, and asked about the island when they had already decided not to stay.\\n\\n\\\"Same boat,\\\" she said. \\\"Different water.\\\"\\n\\nHe laughed, uncertain, and put his hands in his pockets. Halfway across, the wind found the gap between the headlands and the deck tilted, briefly, the way it always did. He gripped the rail.\\n\\n\\\"Does it always do that?\\\"\\n\\n\\\"Every crossing. Same spot.\\\"\\n\\n\\\"Then you'd think you'd get used to it.\\\"\\n\\n\\\"You'd think.\\\" She adjusted the wheel a hair to port. \\\"But I don't want to. The day it doesn't surprise me is the day I stop paying attention.\\\"\\n\\nThe island came up gray and low. He didn't move toward the ramp.\\n\\n\\\"Return's at six,\\\" she said. \\\"You don't have to decide now.\\\"\\n\\n\\\"When do I have to decide?\\\"\\n\\n\\\"At six,\\\" said Marisol. \\\"That's what the schedule's for.\\\"\"}",
+  "output_sha256": "00ac367e7a29996bf80b069389d984ecd4e0040cf80097f83ad1bd38250b0ddd",
+  "finish_reason": "end_turn",
+  "refusal": null,
+  "returned_model": "claude-fable-5-1",
+  "usage": {
+    "input_tokens": 685,
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 0,
+    "cache_creation": {
+      "ephemeral_5m_input_tokens": 0,
+      "ephemeral_1h_input_tokens": 0
+    },
+    "output_tokens": 634,
+    "output_tokens_details": {
+      "thinking_tokens": 0
+    },
+    "service_tier": "standard",
+    "inference_geo": "global"
+  },
+  "format": {
+    "json_object": true,
+    "rule_unchanged": true,
+    "passage_is_string": true,
+    "passage_sha256": "784d631fcab1ba24c3c76a190e59cf87511d1446399b2b473950cd099b33bef5",
+    "passage_words": 280
+  },
+  "finished_at": "2026-09-22T20:27:49.098455+00:00",
+  "latency_seconds": 13.52,
+  "usage_cost_upper_estimate_usd": 0.03855,
+  "stream_status": "active",
+  "budget": {
+    "usage_cost_upper_estimate_usd": 11.0363177,
+    "uncertain_cost_reserve_usd": 0.04533,
+    "in_flight_reserve_usd": 0.2282,
+    "limit_usd": 18.83
+  }
+}

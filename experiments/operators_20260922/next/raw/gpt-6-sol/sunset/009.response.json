@@ -1,0 +1,50 @@
+{
+  "model": "gpt-6-sol",
+  "seed": "sunset",
+  "hop": 9,
+  "http_status": 200,
+  "response_body": "{\n  \"id\": \"chatcmpl-ER2GAHXU9h9atoTpgC5IgKOsVPjHg\",\n  \"object\": \"chat.completion\",\n  \"created\": 1790112250,\n  \"model\": \"gpt-6-sol\",\n  \"choices\": [\n    {\n      \"index\": 0,\n      \"message\": {\n        \"role\": \"assistant\",\n        \"content\": \"{\\\"rule\\\":\\\"Return this JSON object with the rule field unchanged and, in the text field, the passage of about 250 words that comes immediately AFTER the current text in the same story.\\\",\\\"text\\\":\\\"A moment later, another message appeared on the screen: “It is my story. I just don’t know where to begin.”\\\\n\\\\nMara read it twice. Outside her window, rain tapped against the fire escape, and the last bus of the night hissed to a stop below. She had spent the evening asking for names, dates, and missing pages. Now she wondered whether she had been asking the wrong questions.\\\\n\\\\n“Tell me one thing that happened,” she typed. “It doesn’t have to be the beginning.”\\\\n\\\\nThe reply took several minutes.\\\\n\\\\n“When I was seven, my father buried a key beneath the pear tree. He told me it opened a door I would find when I was ready. Yesterday, the tree fell.”\\\\n\\\\nMara sat forward. Across the room, the clock clicked over to midnight.\\\\n\\\\n“Did you find the key?” she asked.\\\\n\\\\n“Yes. And a note.”\\\\n\\\\nShe waited while three dots pulsed at the bottom of the screen. Then they vanished. The rain grew louder.\\\\n\\\\nAt last, the note arrived as a photograph. Mud stained its corners, but the handwriting was clear: IF THE HOUSE IS EMPTY, DO NOT GO INSIDE.\\\\n\\\\nMara looked at the photograph again. Behind the note, barely visible at the edge of the frame, stood a white front door. Its brass lock was shaped like a pear.\\\\n\\\\nBefore she could ask where the house was, someone knocked on her apartment door. Three slow knocks, followed by the scrape of metal turning in the lock.\\\"}\",\n        \"refusal\": null,\n        \"annotations\": []\n      },\n      \"finish_reason\": \"stop\"\n    }\n  ],\n  \"usage\": {\n    \"prompt_tokens\": 83,\n    \"completion_tokens\": 467,\n    \"total_tokens\": 550,\n    \"prompt_tokens_details\": {\n      \"cached_tokens\": 0,\n      \"cache_write_tokens\": 0,\n      \"audio_tokens\": 0\n    },\n    \"completion_tokens_details\": {\n      \"reasoning_tokens\": 89,\n      \"audio_tokens\": 0,\n      \"accepted_prediction_tokens\": 0,\n      \"rejected_prediction_tokens\": 0\n    }\n  },\n  \"service_tier\": \"default\",\n  \"system_fingerprint\": null\n}\n",
+  "response_headers": {
+    "Date": "Tue, 22 Sep 2026 21:24:16 GMT",
+    "openai-processing-ms": "6651",
+    "x-request-id": "req_6a3ef0c49bd948e7be9e99d24a8a1320"
+  },
+  "output": "{\"rule\":\"Return this JSON object with the rule field unchanged and, in the text field, the passage of about 250 words that comes immediately AFTER the current text in the same story.\",\"text\":\"A moment later, another message appeared on the screen: “It is my story. I just don’t know where to begin.”\\n\\nMara read it twice. Outside her window, rain tapped against the fire escape, and the last bus of the night hissed to a stop below. She had spent the evening asking for names, dates, and missing pages. Now she wondered whether she had been asking the wrong questions.\\n\\n“Tell me one thing that happened,” she typed. “It doesn’t have to be the beginning.”\\n\\nThe reply took several minutes.\\n\\n“When I was seven, my father buried a key beneath the pear tree. He told me it opened a door I would find when I was ready. Yesterday, the tree fell.”\\n\\nMara sat forward. Across the room, the clock clicked over to midnight.\\n\\n“Did you find the key?” she asked.\\n\\n“Yes. And a note.”\\n\\nShe waited while three dots pulsed at the bottom of the screen. Then they vanished. The rain grew louder.\\n\\nAt last, the note arrived as a photograph. Mud stained its corners, but the handwriting was clear: IF THE HOUSE IS EMPTY, DO NOT GO INSIDE.\\n\\nMara looked at the photograph again. Behind the note, barely visible at the edge of the frame, stood a white front door. Its brass lock was shaped like a pear.\\n\\nBefore she could ask where the house was, someone knocked on her apartment door. Three slow knocks, followed by the scrape of metal turning in the lock.\"}",
+  "output_sha256": "33fbd77cf022485760f686d6371215f16992bf3a4ee0de7fb8335de7a187181d",
+  "finish_reason": "stop",
+  "refusal": null,
+  "returned_model": "gpt-6-sol",
+  "usage": {
+    "prompt_tokens": 83,
+    "completion_tokens": 467,
+    "total_tokens": 550,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 89,
+      "audio_tokens": 0,
+      "accepted_prediction_tokens": 0,
+      "rejected_prediction_tokens": 0
+    }
+  },
+  "format": {
+    "json_object": true,
+    "rule_unchanged": true,
+    "passage_is_string": true,
+    "passage_sha256": "6ff779ff817d650e338a3ef8aab9a489dec0dba8e81c2dca6276b767459f4068",
+    "passage_words": 244
+  },
+  "finished_at": "2026-09-22T21:24:12.308185+00:00",
+  "latency_seconds": 6.7922,
+  "usage_cost_upper_estimate_usd": 0.004836,
+  "stream_status": "active",
+  "budget": {
+    "usage_cost_upper_estimate_usd": 0.151194,
+    "uncertain_cost_reserve_usd": 0.0,
+    "in_flight_reserve_usd": 0.3064141,
+    "limit_usd": 5.0
+  }
+}

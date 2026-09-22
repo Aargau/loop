@@ -1,0 +1,50 @@
+{
+  "model": "gpt-6-sol",
+  "seed": "sunset",
+  "hop": 13,
+  "http_status": 200,
+  "response_body": "{\n  \"id\": \"chatcmpl-ER2GZzGw2Hf8jV5noAQXn3CrVFpGi\",\n  \"object\": \"chat.completion\",\n  \"created\": 1790112275,\n  \"model\": \"gpt-6-sol\",\n  \"choices\": [\n    {\n      \"index\": 0,\n      \"message\": {\n        \"role\": \"assistant\",\n        \"content\": \"{\\\"rule\\\":\\\"Return this JSON object with the rule field unchanged and, in the text field, the passage of about 250 words that comes immediately AFTER the current text in the same story.\\\",\\\"text\\\":\\\"Mara dropped the wood. It struck the floor with the hollow sound of a picture frame.\\\\n\\\\nThe girl in the window pressed her palm to the glass. Mara’s reflection pressed back. For a moment their hands matched; then the reflection’s fingers spread wider than Mara’s could.\\\\n\\\\nThe sentence on the desk vanished. In its place, letters appeared slowly, digging grooves through the page: “Ask her what happened to the key.”\\\\n\\\\nMara looked down. The key was still in her fist, its teeth biting her skin.\\\\n\\\\n“I have it,” she whispered.\\\\n\\\\n“No,” said the girl.\\\\n\\\\nHer voice came from the open doorway. She stood in the dark hall now, the smoking frame tucked under one arm. Up close, Mara could see that it held no picture. Ash shifted behind the glass.\\\\n\\\\n“I mean the first one,” the girl said.\\\\n\\\\nA memory rose without warning: her father kneeling at the kitchen table, showing her a little brass key. If the man outside came in, he told her, she must lock the kitchen door and wait. Mara remembered doing it. She remembered the knocking moving from the front door to the kitchen door.\\\\n\\\\nShe did not remember unlocking it.\\\\n\\\\nThe girl lifted the frame. Through its glass Mara saw the kitchen as it had been that night. Her seven-year-old self stood beside the locked door, key in hand. On the other side, her father called her name.\\\\n\\\\nThen, behind the child, another voice—Mara’s voice—said, “Let him in.”\\\\n\\\\nThe girl turned the frame around. Ash spilled onto the floor, and something inside it began to knock.\\\"}\",\n        \"refusal\": null,\n        \"annotations\": []\n      },\n      \"finish_reason\": \"stop\"\n    }\n  ],\n  \"usage\": {\n    \"prompt_tokens\": 372,\n    \"completion_tokens\": 419,\n    \"total_tokens\": 791,\n    \"prompt_tokens_details\": {\n      \"cached_tokens\": 0,\n      \"cache_write_tokens\": 0,\n      \"audio_tokens\": 0\n    },\n    \"completion_tokens_details\": {\n      \"reasoning_tokens\": 17,\n      \"audio_tokens\": 0,\n      \"accepted_prediction_tokens\": 0,\n      \"rejected_prediction_tokens\": 0\n    }\n  },\n  \"service_tier\": \"default\",\n  \"system_fingerprint\": null\n}\n",
+  "response_headers": {
+    "Date": "Tue, 22 Sep 2026 21:24:41 GMT",
+    "openai-processing-ms": "6160",
+    "x-request-id": "req_debcdac78d6b4a44893c1085f477307f"
+  },
+  "output": "{\"rule\":\"Return this JSON object with the rule field unchanged and, in the text field, the passage of about 250 words that comes immediately AFTER the current text in the same story.\",\"text\":\"Mara dropped the wood. It struck the floor with the hollow sound of a picture frame.\\n\\nThe girl in the window pressed her palm to the glass. Mara’s reflection pressed back. For a moment their hands matched; then the reflection’s fingers spread wider than Mara’s could.\\n\\nThe sentence on the desk vanished. In its place, letters appeared slowly, digging grooves through the page: “Ask her what happened to the key.”\\n\\nMara looked down. The key was still in her fist, its teeth biting her skin.\\n\\n“I have it,” she whispered.\\n\\n“No,” said the girl.\\n\\nHer voice came from the open doorway. She stood in the dark hall now, the smoking frame tucked under one arm. Up close, Mara could see that it held no picture. Ash shifted behind the glass.\\n\\n“I mean the first one,” the girl said.\\n\\nA memory rose without warning: her father kneeling at the kitchen table, showing her a little brass key. If the man outside came in, he told her, she must lock the kitchen door and wait. Mara remembered doing it. She remembered the knocking moving from the front door to the kitchen door.\\n\\nShe did not remember unlocking it.\\n\\nThe girl lifted the frame. Through its glass Mara saw the kitchen as it had been that night. Her seven-year-old self stood beside the locked door, key in hand. On the other side, her father called her name.\\n\\nThen, behind the child, another voice—Mara’s voice—said, “Let him in.”\\n\\nThe girl turned the frame around. Ash spilled onto the floor, and something inside it began to knock.\"}",
+  "output_sha256": "42649a248d3dfadfbe7e7386b03dc5292a48bd82a6d301c073e7467b1920a1bd",
+  "finish_reason": "stop",
+  "refusal": null,
+  "returned_model": "gpt-6-sol",
+  "usage": {
+    "prompt_tokens": 372,
+    "completion_tokens": 419,
+    "total_tokens": 791,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 17,
+      "audio_tokens": 0,
+      "accepted_prediction_tokens": 0,
+      "rejected_prediction_tokens": 0
+    }
+  },
+  "format": {
+    "json_object": true,
+    "rule_unchanged": true,
+    "passage_is_string": true,
+    "passage_sha256": "000741fff7e9105d5c1e25052c7bcb2d60e1afb563ba4da59d0337d9506077d3",
+    "passage_words": 262
+  },
+  "finished_at": "2026-09-22T21:24:37.336802+00:00",
+  "latency_seconds": 6.2453,
+  "usage_cost_upper_estimate_usd": 0.004934,
+  "stream_status": "active",
+  "budget": {
+    "usage_cost_upper_estimate_usd": 0.2560585,
+    "uncertain_cost_reserve_usd": 0.0,
+    "in_flight_reserve_usd": 0.2166308,
+    "limit_usd": 5.0
+  }
+}

@@ -1,0 +1,50 @@
+{
+  "model": "gpt-6-sol",
+  "seed": "sunset_a",
+  "hop": 17,
+  "http_status": 200,
+  "response_body": "{\n  \"id\": \"chatcmpl-ER0wTxZYIb24gqCPamrEKR8ZeBCeb\",\n  \"object\": \"chat.completion\",\n  \"created\": 1790107185,\n  \"model\": \"gpt-6-sol\",\n  \"choices\": [\n    {\n      \"index\": 0,\n      \"message\": {\n        \"role\": \"assistant\",\n        \"content\": \"{\\n  \\\"rule\\\": \\\"Return this JSON object with the rule field unchanged and a new passage of about 250 words in the text field.\\\",\\n  \\\"text\\\": \\\"In March, Mara found the envelope while looking for a spare lightbulb. It had slipped behind the jar on the shelf above the stove. She brought it to the table and opened it carefully, though the fold had already begun to split.\\\\n\\\\nHer brother came over the following Saturday. They filled three small pots with soil from a bag Mara had kept in the shed. It was cold and clumped together, so they broke it apart with their fingers. Neither of them knew which seeds were which. Her brother shook a few into each pot, and Mara covered them lightly.\\\\n\\\\nThey set the pots on the kitchen sill, where the tomatoes had ripened in autumn. For a week, nothing happened. Mara watered them with a teaspoon because the tap ran too hard. Once, she thought she saw a green point near the edge of a pot, but it was only a bit of leaf from the soil.\\\\n\\\\nThen, on a morning when she was late for work, she noticed two thin stems leaning toward the window. She called her brother from the doorway, coat still on. He asked what they looked like. She told him it was too early to say.\\\\n\\\\nBy April, the garden sticks were dry again. Mara took them from beside the shed and pressed them into the ground near the back fence. She did not need them yet, but the weather was mild, and she had the afternoon free. When she went inside, she left a little soil on the handle of the kitchen door.\\\"\\n}\",\n        \"refusal\": null,\n        \"annotations\": []\n      },\n      \"finish_reason\": \"stop\"\n    }\n  ],\n  \"usage\": {\n    \"prompt_tokens\": 361,\n    \"completion_tokens\": 375,\n    \"total_tokens\": 736,\n    \"prompt_tokens_details\": {\n      \"cached_tokens\": 0,\n      \"cache_write_tokens\": 0,\n      \"audio_tokens\": 0\n    },\n    \"completion_tokens_details\": {\n      \"reasoning_tokens\": 25,\n      \"audio_tokens\": 0,\n      \"accepted_prediction_tokens\": 0,\n      \"rejected_prediction_tokens\": 0\n    }\n  },\n  \"service_tier\": \"default\",\n  \"system_fingerprint\": null\n}\n",
+  "response_headers": {
+    "Date": "Tue, 22 Sep 2026 19:59:50 GMT",
+    "openai-processing-ms": "5482",
+    "x-request-id": "req_b5b52253acc1453997784b85f341bca9"
+  },
+  "output": "{\n  \"rule\": \"Return this JSON object with the rule field unchanged and a new passage of about 250 words in the text field.\",\n  \"text\": \"In March, Mara found the envelope while looking for a spare lightbulb. It had slipped behind the jar on the shelf above the stove. She brought it to the table and opened it carefully, though the fold had already begun to split.\\n\\nHer brother came over the following Saturday. They filled three small pots with soil from a bag Mara had kept in the shed. It was cold and clumped together, so they broke it apart with their fingers. Neither of them knew which seeds were which. Her brother shook a few into each pot, and Mara covered them lightly.\\n\\nThey set the pots on the kitchen sill, where the tomatoes had ripened in autumn. For a week, nothing happened. Mara watered them with a teaspoon because the tap ran too hard. Once, she thought she saw a green point near the edge of a pot, but it was only a bit of leaf from the soil.\\n\\nThen, on a morning when she was late for work, she noticed two thin stems leaning toward the window. She called her brother from the doorway, coat still on. He asked what they looked like. She told him it was too early to say.\\n\\nBy April, the garden sticks were dry again. Mara took them from beside the shed and pressed them into the ground near the back fence. She did not need them yet, but the weather was mild, and she had the afternoon free. When she went inside, she left a little soil on the handle of the kitchen door.\"\n}",
+  "output_sha256": "1804bb325f6461292fdbc334d35a145f9b1f05ffc871a4c9c35e747946c52e67",
+  "finish_reason": "stop",
+  "refusal": null,
+  "returned_model": "gpt-6-sol",
+  "usage": {
+    "prompt_tokens": 361,
+    "completion_tokens": 375,
+    "total_tokens": 736,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 25,
+      "audio_tokens": 0,
+      "accepted_prediction_tokens": 0,
+      "rejected_prediction_tokens": 0
+    }
+  },
+  "format": {
+    "json_object": true,
+    "rule_unchanged": true,
+    "passage_is_string": true,
+    "passage_sha256": "b6651db3468e9ab2746748e46c53875225f0874a1d8b998f1d350dec246d22c3",
+    "passage_words": 259
+  },
+  "finished_at": "2026-09-22T19:59:46.785680+00:00",
+  "latency_seconds": 5.5875,
+  "usage_cost_upper_estimate_usd": 0.004472,
+  "stream_status": "active",
+  "budget": {
+    "usage_cost_upper_estimate_usd": 1.6326344,
+    "uncertain_cost_reserve_usd": 0.04533,
+    "in_flight_reserve_usd": 0.5447959,
+    "limit_usd": 18.83
+  }
+}

@@ -1,0 +1,50 @@
+{
+  "model": "gpt-6-luna",
+  "seed": "sunset_a",
+  "hop": 51,
+  "http_status": 200,
+  "response_body": "{\n  \"id\": \"chatcmpl-ER12zvNw7Fy5C7sawrmtFDRDrP6Ei\",\n  \"object\": \"chat.completion\",\n  \"created\": 1790107589,\n  \"model\": \"gpt-6-luna\",\n  \"choices\": [\n    {\n      \"index\": 0,\n      \"message\": {\n        \"role\": \"assistant\",\n        \"content\": \"{\\\"rule\\\":\\\"Return this JSON object with the rule field unchanged and a new passage of about 250 words in the text field.\\\",\\\"text\\\":\\\"On the edge of Willow Marsh stood a little wooden library, no bigger than a garden shed. Its shelves held donated books, field guides, and jars of pencils. There was no librarian, only a painted sign that read: TAKE A BOOK, LEAVE A BOOK, OR JUST COME IN.\\\\n\\\\nNico discovered the library during a walk with his grandmother. Rain drummed on the roof, so they stepped inside to wait it out. While his grandmother flipped through a cookbook, Nico found a book about constellations. He had never seen the stars drawn as maps before.\\\\n\\\\nThe following Saturday, he returned with a notebook and a question: “Could I borrow this?”\\\\n\\\\nA woman arranging books looked up from the doorway. “You can borrow anything here. Just bring it back when you’re ready.”\\\\n\\\\nNico read the constellation book beneath his blanket that night. Afterward, he began visiting the marsh after sunset, notebook in hand, learning the patterns above the reeds. He drew what he saw and wrote down the names he could remember.\\\\n\\\\nSoon, other visitors noticed his sketches. A retired sailor showed him how to find the North Star. A little girl brought a book about planets. Nico added a page about the marsh’s night sky to the library’s noticeboard, with an invitation for everyone to draw what they saw.\\\\n\\\\nBy summer, the board was crowded with stars: careful ones, crooked ones, and a few that looked suspiciously like potatoes. The library had not grown any larger, but it had become a place where strangers could share what they knew—and discover how much wonder fit inside a small room.\\\"}\",\n        \"refusal\": null,\n        \"annotations\": []\n      },\n      \"finish_reason\": \"stop\"\n    }\n  ],\n  \"usage\": {\n    \"prompt_tokens\": 377,\n    \"completion_tokens\": 450,\n    \"total_tokens\": 827,\n    \"prompt_tokens_details\": {\n      \"cached_tokens\": 0,\n      \"cache_write_tokens\": 0,\n      \"audio_tokens\": 0\n    },\n    \"completion_tokens_details\": {\n      \"reasoning_tokens\": 75,\n      \"audio_tokens\": 0,\n      \"accepted_prediction_tokens\": 0,\n      \"rejected_prediction_tokens\": 0\n    }\n  },\n  \"service_tier\": \"default\",\n  \"system_fingerprint\": null\n}\n",
+  "response_headers": {
+    "Date": "Tue, 22 Sep 2026 20:06:35 GMT",
+    "openai-processing-ms": "5865",
+    "x-request-id": "req_8169479328e44e249bfa975ccf76e8ab"
+  },
+  "output": "{\"rule\":\"Return this JSON object with the rule field unchanged and a new passage of about 250 words in the text field.\",\"text\":\"On the edge of Willow Marsh stood a little wooden library, no bigger than a garden shed. Its shelves held donated books, field guides, and jars of pencils. There was no librarian, only a painted sign that read: TAKE A BOOK, LEAVE A BOOK, OR JUST COME IN.\\n\\nNico discovered the library during a walk with his grandmother. Rain drummed on the roof, so they stepped inside to wait it out. While his grandmother flipped through a cookbook, Nico found a book about constellations. He had never seen the stars drawn as maps before.\\n\\nThe following Saturday, he returned with a notebook and a question: “Could I borrow this?”\\n\\nA woman arranging books looked up from the doorway. “You can borrow anything here. Just bring it back when you’re ready.”\\n\\nNico read the constellation book beneath his blanket that night. Afterward, he began visiting the marsh after sunset, notebook in hand, learning the patterns above the reeds. He drew what he saw and wrote down the names he could remember.\\n\\nSoon, other visitors noticed his sketches. A retired sailor showed him how to find the North Star. A little girl brought a book about planets. Nico added a page about the marsh’s night sky to the library’s noticeboard, with an invitation for everyone to draw what they saw.\\n\\nBy summer, the board was crowded with stars: careful ones, crooked ones, and a few that looked suspiciously like potatoes. The library had not grown any larger, but it had become a place where strangers could share what they knew—and discover how much wonder fit inside a small room.\"}",
+  "output_sha256": "814fe65e2ad32a3811a6cf20448cbb9906285317277eb9b4336750337fb4ed06",
+  "finish_reason": "stop",
+  "refusal": null,
+  "returned_model": "gpt-6-luna",
+  "usage": {
+    "prompt_tokens": 377,
+    "completion_tokens": 450,
+    "total_tokens": 827,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 75,
+      "audio_tokens": 0,
+      "accepted_prediction_tokens": 0,
+      "rejected_prediction_tokens": 0
+    }
+  },
+  "format": {
+    "json_object": true,
+    "rule_unchanged": true,
+    "passage_is_string": true,
+    "passage_sha256": "8e8f9bf67880f76801dc98394d437b07215f0ce8f473def7ba7d66a50bebb0f7",
+    "passage_words": 267
+  },
+  "finished_at": "2026-09-22T20:06:31.766911+00:00",
+  "latency_seconds": 5.9948,
+  "usage_cost_upper_estimate_usd": 0.0002627,
+  "stream_status": "active",
+  "budget": {
+    "usage_cost_upper_estimate_usd": 4.2038975,
+    "uncertain_cost_reserve_usd": 0.04533,
+    "in_flight_reserve_usd": 0.58951,
+    "limit_usd": 18.83
+  }
+}

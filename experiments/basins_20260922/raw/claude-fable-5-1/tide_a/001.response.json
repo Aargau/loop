@@ -1,0 +1,48 @@
+{
+  "model": "claude-fable-5-1",
+  "seed": "tide_a",
+  "hop": 1,
+  "http_status": 200,
+  "response_body": "{\"model\":\"claude-fable-5-1\",\"id\":\"msg_011CfK4RSqUBwdE7fLVvFqNK\",\"type\":\"message\",\"role\":\"assistant\",\"content\":[{\"type\":\"text\",\"text\":\"{\\\"rule\\\": \\\"Return this JSON object with the rule field unchanged and a new passage of about 250 words in the text field.\\\", \\\"text\\\": \\\"The tide came in an hour early. Marta noticed it first from the kitchen window, the way the water had already swallowed the flat gray stones where the gulls usually stood at this time of morning. She checked the tide chart pinned beside the refrigerator, then checked the clock, then checked the chart again. The numbers had not changed. The sea simply had not bothered to consult them.\\\\n\\\\nShe pulled on her boots and went down the path to the shore. Her father's boat was still tied to the post, riding higher than it should have been, tugging at its line like a dog that wanted to be walked. Beyond it the bay lay unnaturally calm, the surface smooth and dull as pewter, and she could not remember ever seeing it so quiet while the water moved so fast.\\\\n\\\\nOld Ruben was already on the pier, his hands in his pockets, watching. He did not turn when she came up beside him.\\\\n\\\\n\\\\\\\"Happened once before,\\\\\\\" he said. \\\\\\\"Nineteen sixty-two. Came in early, went out late. Took the Hendersons' shed and left a whale skeleton on the beach in its place, clean as if someone had polished it.\\\\\\\"\\\\n\\\\n\\\\\\\"What did people think it meant?\\\\\\\"\\\\n\\\\nHe shrugged. \\\\\\\"Different things. Mostly they thought it meant they should move the sheds.\\\\\\\"\\\\n\\\\nMarta looked at the boat, at the line straining against the post, at the water creeping over the third step of the pier where it had never in her lifetime reached. She decided she would move the boat. Meaning could wait until the afternoon.\\\"}\"}],\"container\":null,\"stop_reason\":\"end_turn\",\"stop_sequence\":null,\"stop_details\":null,\"usage\":{\"input_tokens\":62,\"cache_creation_input_tokens\":0,\"cache_read_input_tokens\":0,\"cache_creation\":{\"ephemeral_5m_input_tokens\":0,\"ephemeral_1h_input_tokens\":0},\"output_tokens\":536,\"output_tokens_details\":{\"thinking_tokens\":0},\"service_tier\":\"standard\",\"inference_geo\":\"global\"}}",
+  "response_headers": {
+    "Date": "Tue, 22 Sep 2026 19:51:11 GMT",
+    "request-id": "req_011CfK4RRVMg5GYS1bmdMoZn"
+  },
+  "output": "{\"rule\": \"Return this JSON object with the rule field unchanged and a new passage of about 250 words in the text field.\", \"text\": \"The tide came in an hour early. Marta noticed it first from the kitchen window, the way the water had already swallowed the flat gray stones where the gulls usually stood at this time of morning. She checked the tide chart pinned beside the refrigerator, then checked the clock, then checked the chart again. The numbers had not changed. The sea simply had not bothered to consult them.\\n\\nShe pulled on her boots and went down the path to the shore. Her father's boat was still tied to the post, riding higher than it should have been, tugging at its line like a dog that wanted to be walked. Beyond it the bay lay unnaturally calm, the surface smooth and dull as pewter, and she could not remember ever seeing it so quiet while the water moved so fast.\\n\\nOld Ruben was already on the pier, his hands in his pockets, watching. He did not turn when she came up beside him.\\n\\n\\\"Happened once before,\\\" he said. \\\"Nineteen sixty-two. Came in early, went out late. Took the Hendersons' shed and left a whale skeleton on the beach in its place, clean as if someone had polished it.\\\"\\n\\n\\\"What did people think it meant?\\\"\\n\\nHe shrugged. \\\"Different things. Mostly they thought it meant they should move the sheds.\\\"\\n\\nMarta looked at the boat, at the line straining against the post, at the water creeping over the third step of the pier where it had never in her lifetime reached. She decided she would move the boat. Meaning could wait until the afternoon.\"}",
+  "output_sha256": "54e78afa58e332d81080e069cbecaa6f6f808244b58da1d7211dc91e6480eebd",
+  "finish_reason": "end_turn",
+  "refusal": null,
+  "returned_model": "claude-fable-5-1",
+  "usage": {
+    "input_tokens": 62,
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 0,
+    "cache_creation": {
+      "ephemeral_5m_input_tokens": 0,
+      "ephemeral_1h_input_tokens": 0
+    },
+    "output_tokens": 536,
+    "output_tokens_details": {
+      "thinking_tokens": 0
+    },
+    "service_tier": "standard",
+    "inference_geo": "global"
+  },
+  "format": {
+    "json_object": true,
+    "rule_unchanged": true,
+    "passage_is_string": true,
+    "passage_sha256": "051be122b80c4e6c7d5c1883cf2c426785fbe378de98689eba3970ab1d2987b2",
+    "passage_words": 261
+  },
+  "finished_at": "2026-09-22T19:51:07.378946+00:00",
+  "latency_seconds": 12.7173,
+  "usage_cost_upper_estimate_usd": 0.02742,
+  "stream_status": "active",
+  "budget": {
+    "usage_cost_upper_estimate_usd": 0.0430611,
+    "uncertain_cost_reserve_usd": 0.0,
+    "in_flight_reserve_usd": 0.3406116,
+    "limit_usd": 20
+  }
+}

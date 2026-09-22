@@ -1,0 +1,50 @@
+{
+  "model": "gpt-6-sol",
+  "seed": "tide_b",
+  "hop": 3,
+  "http_status": 200,
+  "response_body": "{\n  \"id\": \"chatcmpl-ER0oiOW6ycRSOXzkgTE1n6x5bbkCk\",\n  \"object\": \"chat.completion\",\n  \"created\": 1790106704,\n  \"model\": \"gpt-6-sol\",\n  \"choices\": [\n    {\n      \"index\": 0,\n      \"message\": {\n        \"role\": \"assistant\",\n        \"content\": \"{\\\"rule\\\":\\\"Return this JSON object with the rule field unchanged and a new passage of about 250 words in the text field.\\\",\\\"text\\\":\\\"Every Thursday, Mara opened the town clock to wind it. The work took eleven minutes, unless rain had swollen the wooden door around the mechanism. On the first Thursday of October, she found a folded note tucked beside the largest gear.\\\\n\\\\nIt read: Please let it run slow tomorrow.\\\\n\\\\nThere was no signature. Mara checked the hands against her watch. The clock had kept good time for forty years, and people relied on it: the baker to pull his loaves, the schoolchildren to start home, the stationmaster to wave the afternoon train through.\\\\n\\\\nShe wound the clock and left the note where she had found it.\\\\n\\\\nThe next morning, fog settled over the tracks. At the station, a loose coupling delayed the freight train. Farther down the line, the afternoon passenger train waited at a signal that should already have changed. By the time the freight cleared the junction, both trains were late, but safely apart.\\\\n\\\\nMara heard about it while buying bread. She went straight to the clock tower. Behind the gears lay a second note, written in the same careful hand: Thank you for checking.\\\\n\\\\nShe stood there for a while, listening to the steady teeth of the mechanism. Then she carried both notes to the stationmaster. He studied them, compared their paper with the sheets on his desk, and shook his head. The clock had not lost a minute, he said. He knew because he had checked it himself at noon.\\\\n\\\\nMara took the notes home. The following Thursday, she wound the clock as usual, but she looked behind every gear.\\\"}\",\n        \"refusal\": null,\n        \"annotations\": []\n      },\n      \"finish_reason\": \"stop\"\n    }\n  ],\n  \"usage\": {\n    \"prompt_tokens\": 346,\n    \"completion_tokens\": 386,\n    \"total_tokens\": 732,\n    \"prompt_tokens_details\": {\n      \"cached_tokens\": 0,\n      \"cache_write_tokens\": 0,\n      \"audio_tokens\": 0\n    },\n    \"completion_tokens_details\": {\n      \"reasoning_tokens\": 20,\n      \"audio_tokens\": 0,\n      \"accepted_prediction_tokens\": 0,\n      \"rejected_prediction_tokens\": 0\n    }\n  },\n  \"service_tier\": \"default\",\n  \"system_fingerprint\": null\n}\n",
+  "response_headers": {
+    "Date": "Tue, 22 Sep 2026 19:51:49 GMT",
+    "openai-processing-ms": "4986",
+    "x-request-id": "req_06a187b9bc8844429f4d9501cd837b6d"
+  },
+  "output": "{\"rule\":\"Return this JSON object with the rule field unchanged and a new passage of about 250 words in the text field.\",\"text\":\"Every Thursday, Mara opened the town clock to wind it. The work took eleven minutes, unless rain had swollen the wooden door around the mechanism. On the first Thursday of October, she found a folded note tucked beside the largest gear.\\n\\nIt read: Please let it run slow tomorrow.\\n\\nThere was no signature. Mara checked the hands against her watch. The clock had kept good time for forty years, and people relied on it: the baker to pull his loaves, the schoolchildren to start home, the stationmaster to wave the afternoon train through.\\n\\nShe wound the clock and left the note where she had found it.\\n\\nThe next morning, fog settled over the tracks. At the station, a loose coupling delayed the freight train. Farther down the line, the afternoon passenger train waited at a signal that should already have changed. By the time the freight cleared the junction, both trains were late, but safely apart.\\n\\nMara heard about it while buying bread. She went straight to the clock tower. Behind the gears lay a second note, written in the same careful hand: Thank you for checking.\\n\\nShe stood there for a while, listening to the steady teeth of the mechanism. Then she carried both notes to the stationmaster. He studied them, compared their paper with the sheets on his desk, and shook his head. The clock had not lost a minute, he said. He knew because he had checked it himself at noon.\\n\\nMara took the notes home. The following Thursday, she wound the clock as usual, but she looked behind every gear.\"}",
+  "output_sha256": "23cfb76c2cfa4065c2b20aabf2d9e4697b9cc0f419d97ed0c425579d104edc30",
+  "finish_reason": "stop",
+  "refusal": null,
+  "returned_model": "gpt-6-sol",
+  "usage": {
+    "prompt_tokens": 346,
+    "completion_tokens": 386,
+    "total_tokens": 732,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 20,
+      "audio_tokens": 0,
+      "accepted_prediction_tokens": 0,
+      "rejected_prediction_tokens": 0
+    }
+  },
+  "format": {
+    "json_object": true,
+    "rule_unchanged": true,
+    "passage_is_string": true,
+    "passage_sha256": "dc1294374a93b87cd913b14f8f90f56a105396d3a53ddc48643b0dc8f36b50ee",
+    "passage_words": 264
+  },
+  "finished_at": "2026-09-22T19:51:45.841631+00:00",
+  "latency_seconds": 5.0984,
+  "usage_cost_upper_estimate_usd": 0.004552,
+  "stream_status": "active",
+  "budget": {
+    "usage_cost_upper_estimate_usd": 0.2269871,
+    "uncertain_cost_reserve_usd": 0.0,
+    "in_flight_reserve_usd": 0.5446105,
+    "limit_usd": 20
+  }
+}

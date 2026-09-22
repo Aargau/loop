@@ -1,0 +1,50 @@
+{
+  "model": "gpt-6-sol",
+  "seed": "tide",
+  "hop": 38,
+  "http_status": 200,
+  "response_body": "{\n  \"id\": \"chatcmpl-ER10hAJDiiUPqlCP2hpxpuBEuCjR4\",\n  \"object\": \"chat.completion\",\n  \"created\": 1790107447,\n  \"model\": \"gpt-6-sol\",\n  \"choices\": [\n    {\n      \"index\": 0,\n      \"message\": {\n        \"role\": \"assistant\",\n        \"content\": \"{\\n  \\\"rule\\\": \\\"Return this JSON object with the rule field unchanged and a new passage of about 250 words in the text field.\\\",\\n  \\\"text\\\": \\\"Mara pulled against the woman’s grip. The voice behind the gate laughed, and she stopped. She had never heard herself laugh like that.\\\\n\\\\nThe bell swung higher. Each time it passed overhead, the water at their feet rose a little, then fell. On the third swing, a small handprint appeared beside the two dark marks.\\\\n\\\\n“That wasn’t there before,” the harbor master said.\\\\n\\\\nThe man from the boat crouched at the quay’s edge. He reached into the water and drew out a photograph, soaked but unblurred. Mara saw three children standing before the gate: the man, the woman, and a girl with Mara’s face.\\\\n\\\\nShe looked up. The woman had let go of her wrist.\\\\n\\\\n“How old is this?” Mara asked.\\\\n\\\\n“Older than you,” the woman said.\\\\n\\\\nFrom behind the iron came the sound of bare feet crossing stone. The lock twitched beneath the woman’s bloodied thumbprint. She pressed her hand to it again, but the bolt had begun to slide.\\\\n\\\\nThe harbor master wedged his pole through the gate’s handles. Wood bent. Mara took the photograph from the man and turned it over. On the back, in a child’s cramped writing, were four names. The last had been crossed out so hard the paper had torn.\\\\n\\\\nThrough the tear, Mara could see a sliver of movement on the other side of the gate. An eye lowered to the opening.\\\\n\\\\nThe voice spoke again, close enough that she felt its breath on her fingers.\\\\n\\\\n“Read the name,” it said.\\\"\\n}\",\n        \"refusal\": null,\n        \"annotations\": []\n      },\n      \"finish_reason\": \"stop\"\n    }\n  ],\n  \"usage\": {\n    \"prompt_tokens\": 374,\n    \"completion_tokens\": 395,\n    \"total_tokens\": 769,\n    \"prompt_tokens_details\": {\n      \"cached_tokens\": 0,\n      \"cache_write_tokens\": 0,\n      \"audio_tokens\": 0\n    },\n    \"completion_tokens_details\": {\n      \"reasoning_tokens\": 18,\n      \"audio_tokens\": 0,\n      \"accepted_prediction_tokens\": 0,\n      \"rejected_prediction_tokens\": 0\n    }\n  },\n  \"service_tier\": \"default\",\n  \"system_fingerprint\": null\n}\n",
+  "response_headers": {
+    "Date": "Tue, 22 Sep 2026 20:04:12 GMT",
+    "openai-processing-ms": "5963",
+    "x-request-id": "req_1466668add4042d5ae488b704f5ca131"
+  },
+  "output": "{\n  \"rule\": \"Return this JSON object with the rule field unchanged and a new passage of about 250 words in the text field.\",\n  \"text\": \"Mara pulled against the woman’s grip. The voice behind the gate laughed, and she stopped. She had never heard herself laugh like that.\\n\\nThe bell swung higher. Each time it passed overhead, the water at their feet rose a little, then fell. On the third swing, a small handprint appeared beside the two dark marks.\\n\\n“That wasn’t there before,” the harbor master said.\\n\\nThe man from the boat crouched at the quay’s edge. He reached into the water and drew out a photograph, soaked but unblurred. Mara saw three children standing before the gate: the man, the woman, and a girl with Mara’s face.\\n\\nShe looked up. The woman had let go of her wrist.\\n\\n“How old is this?” Mara asked.\\n\\n“Older than you,” the woman said.\\n\\nFrom behind the iron came the sound of bare feet crossing stone. The lock twitched beneath the woman’s bloodied thumbprint. She pressed her hand to it again, but the bolt had begun to slide.\\n\\nThe harbor master wedged his pole through the gate’s handles. Wood bent. Mara took the photograph from the man and turned it over. On the back, in a child’s cramped writing, were four names. The last had been crossed out so hard the paper had torn.\\n\\nThrough the tear, Mara could see a sliver of movement on the other side of the gate. An eye lowered to the opening.\\n\\nThe voice spoke again, close enough that she felt its breath on her fingers.\\n\\n“Read the name,” it said.\"\n}",
+  "output_sha256": "6b1804b06d3aa5292b18a3342e1ce25c18283851bbf50c8d797a15dc8e1df939",
+  "finish_reason": "stop",
+  "refusal": null,
+  "returned_model": "gpt-6-sol",
+  "usage": {
+    "prompt_tokens": 374,
+    "completion_tokens": 395,
+    "total_tokens": 769,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 18,
+      "audio_tokens": 0,
+      "accepted_prediction_tokens": 0,
+      "rejected_prediction_tokens": 0
+    }
+  },
+  "format": {
+    "json_object": true,
+    "rule_unchanged": true,
+    "passage_is_string": true,
+    "passage_sha256": "bf6cbb8cc4b96e6d0a27f7b0ab694e344fd7cd15f178d54515c2b481a1e6e31a",
+    "passage_words": 249
+  },
+  "finished_at": "2026-09-22T20:04:08.859277+00:00",
+  "latency_seconds": 6.0445,
+  "usage_cost_upper_estimate_usd": 0.004698,
+  "stream_status": "active",
+  "budget": {
+    "usage_cost_upper_estimate_usd": 3.2780545,
+    "uncertain_cost_reserve_usd": 0.04533,
+    "in_flight_reserve_usd": 0.5466939,
+    "limit_usd": 18.83
+  }
+}

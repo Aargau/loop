@@ -1,0 +1,22 @@
+{
+  "started_at": "2026-09-22T20:06:48.445754+00:00",
+  "model": "claude-opus-5-5",
+  "seed": "tide",
+  "hop": 25,
+  "endpoint": "https://api.anthropic.com/v1/messages",
+  "body": {
+    "model": "claude-opus-5-5",
+    "messages": [
+      {
+        "role": "user",
+        "content": "```json\n{\"rule\": \"Return this JSON object with the rule field unchanged and a new passage of about 250 words in the text field.\", \"text\": \"Autumn came in on the tail of the swallows. One week they were stitching the air above the byre, and the next the wires were empty and the light had begun to slant low and gold across the machair. The rowan above the house hung heavy with berries, so red they looked lit from within, and the blackbirds came to strip them, squabbling in the branches from dawn until dusk. The girl watched the seedling closely now. Its leaves had turned before the big tree's did, first a freckling of orange at the edges, then the whole of each leaflet flushing scarlet. She worried that it was dying and ran to fetch her father, who crouched beside it with his cap pushed back. 'It's only going to sleep,' he told her. 'It'll drop its leaves and wait out the winter, same as its mother.' In the jotter she drew the red leaves with the stub of a crayon borrowed from school, pressing hard to get the colour right. When the last leaf fell, she picked it up and flattened it between the pages, where it left a faint rusty stain like a fingerprint. By November the seedling was nothing but a bare twig no longer than a pencil, and the wind off the Atlantic tugged at it without mercy. Her father found an old creel, broken past mending, and set it upside down over the shoot, weighting it with the two guard stones. 'A house for the winter,' he said. That night she added a line to the jotter: it has a roof now.\"}\n```"
+      }
+    ],
+    "max_tokens": 4096,
+    "output_config": {
+      "effort": "low"
+    }
+  },
+  "state_sha256": "c9e76a9508ca64402a7a64c5f8a46e5a6d420ec49d47cefaba6d8c41224fd29e",
+  "reserved_cost_usd": 0.09012
+}

@@ -1,0 +1,48 @@
+{
+  "model": "claude-fable-5-1",
+  "seed": "sunset_b",
+  "hop": 38,
+  "http_status": 200,
+  "response_body": "{\"model\":\"claude-fable-5-1\",\"id\":\"msg_011CfK6ZLLFz4HWHJgqHB4PR\",\"type\":\"message\",\"role\":\"assistant\",\"content\":[{\"type\":\"text\",\"text\":\"{\\\"rule\\\": \\\"Return this JSON object with the rule field unchanged and a new passage of about 250 words in the text field.\\\", \\\"text\\\": \\\"The lighthouse at Carrick Point went automatic in the spring, and Moira was the last keeper to climb its hundred and twelve steps with a reason to. She had kept the light for nineteen years, first with her husband and then, after the stroke took him, alone. On the final night she wound nothing and lit nothing. The lamp turned on its own at dusk, indifferent and exact, and she stood on the gallery and watched the beam sweep the water as it always had.\\\\n\\\\nThe men from the board had been kind about it. They gave her a framed certificate and a pension that would do, and the cottage at the foot of the tower was hers for as long as she wanted it. She wanted it. She had nowhere else that knew her.\\\\n\\\\nSo she stayed, and the light went on without her. It never faltered. In fog it sounded its horn at the proper intervals, and in clear weather it swept the sea with a patience she had once thought was her own. She found she still woke at the old hours. She would go to the window and count the flashes, four and a pause, and only then lie down again.\\\\n\\\\nA fisherman's boy rowed over one afternoon with mackerel his mother had sent. He asked her, shyly, what a keeper did now that the light kept itself.\\\\n\\\\nMoira considered the question honestly. She said someone had to watch it being watched over, or it would only be a machine. The boy nodded as though this made sense, and perhaps it did.\\\"}\"}],\"container\":null,\"stop_reason\":\"end_turn\",\"stop_sequence\":null,\"stop_details\":null,\"usage\":{\"input_tokens\":492,\"cache_creation_input_tokens\":0,\"cache_read_input_tokens\":0,\"cache_creation\":{\"ephemeral_5m_input_tokens\":0,\"ephemeral_1h_input_tokens\":0},\"output_tokens\":495,\"output_tokens_details\":{\"thinking_tokens\":0},\"service_tier\":\"standard\",\"inference_geo\":\"global\"}}",
+  "response_headers": {
+    "Date": "Tue, 22 Sep 2026 20:19:12 GMT",
+    "request-id": "req_011CfK6ZKrUxRv2yVNvoZrMk"
+  },
+  "output": "{\"rule\": \"Return this JSON object with the rule field unchanged and a new passage of about 250 words in the text field.\", \"text\": \"The lighthouse at Carrick Point went automatic in the spring, and Moira was the last keeper to climb its hundred and twelve steps with a reason to. She had kept the light for nineteen years, first with her husband and then, after the stroke took him, alone. On the final night she wound nothing and lit nothing. The lamp turned on its own at dusk, indifferent and exact, and she stood on the gallery and watched the beam sweep the water as it always had.\\n\\nThe men from the board had been kind about it. They gave her a framed certificate and a pension that would do, and the cottage at the foot of the tower was hers for as long as she wanted it. She wanted it. She had nowhere else that knew her.\\n\\nSo she stayed, and the light went on without her. It never faltered. In fog it sounded its horn at the proper intervals, and in clear weather it swept the sea with a patience she had once thought was her own. She found she still woke at the old hours. She would go to the window and count the flashes, four and a pause, and only then lie down again.\\n\\nA fisherman's boy rowed over one afternoon with mackerel his mother had sent. He asked her, shyly, what a keeper did now that the light kept itself.\\n\\nMoira considered the question honestly. She said someone had to watch it being watched over, or it would only be a machine. The boy nodded as though this made sense, and perhaps it did.\"}",
+  "output_sha256": "bfff3560825e609b4db2a0be66188244e8bbc3ec69fd2e1c8232e27b7e53b45d",
+  "finish_reason": "end_turn",
+  "refusal": null,
+  "returned_model": "claude-fable-5-1",
+  "usage": {
+    "input_tokens": 492,
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 0,
+    "cache_creation": {
+      "ephemeral_5m_input_tokens": 0,
+      "ephemeral_1h_input_tokens": 0
+    },
+    "output_tokens": 495,
+    "output_tokens_details": {
+      "thinking_tokens": 0
+    },
+    "service_tier": "standard",
+    "inference_geo": "global"
+  },
+  "format": {
+    "json_object": true,
+    "rule_unchanged": true,
+    "passage_is_string": true,
+    "passage_sha256": "ff514b2655ddb270514ab0117ae101a6efd6dd8372653984c19a99a19a04b97e",
+    "passage_words": 266
+  },
+  "finished_at": "2026-09-22T20:19:08.575364+00:00",
+  "latency_seconds": 13.0095,
+  "usage_cost_upper_estimate_usd": 0.02967,
+  "stream_status": "active",
+  "budget": {
+    "usage_cost_upper_estimate_usd": 8.5569937,
+    "uncertain_cost_reserve_usd": 0.04533,
+    "in_flight_reserve_usd": 0.31764,
+    "limit_usd": 18.83
+  }
+}

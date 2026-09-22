@@ -1,0 +1,22 @@
+{
+  "started_at": "2026-09-22T19:59:56.341106+00:00",
+  "model": "claude-fable-5-1",
+  "seed": "sunset_b",
+  "hop": 8,
+  "endpoint": "https://api.anthropic.com/v1/messages",
+  "body": {
+    "model": "claude-fable-5-1",
+    "messages": [
+      {
+        "role": "user",
+        "content": "{\"rule\": \"Return this JSON object with the rule field unchanged and a new passage of about 250 words in the text field.\", \"text\": \"The lighthouse had been automated for nineteen years, but Ingrid still climbed it every evening at dusk. The council had offered her a small pension to leave the keeper's cottage, and she had taken the pension and stayed anyway, because nobody had come to check and because the stairs were the only place her knees felt like her own.\\n\\nThere were one hundred and twelve steps. She counted them not from need but from habit, the way some people say grace before eating without believing anyone is listening. At the top she wiped the salt from the glass with a rag she kept in her apron pocket, though the machinery did not require it. The lamp turned on its own schedule, indifferent to her cloth.\\n\\nFrom the gallery she could see the whole curve of the bay, the fishing boats coming in like beads drawn along a string, and beyond them the darker water where the shipping lanes ran. She had watched that water for forty years and knew its moods better than she had ever known her own. Tonight it was flat and pewter-coloured, holding the last light longer than the sky did.\\n\\nA boy on a bicycle stopped on the coast road below and looked up. He was too far away to see her face, but she raised a hand anyway, and after a moment he raised his. Then he pedalled on toward the village, where the windows were beginning to glow.\\n\\nIngrid folded the rag. The lamp swung its beam out across the water, and she followed it with her eyes until it came back to her.\"}"
+      }
+    ],
+    "max_tokens": 4096,
+    "output_config": {
+      "effort": "low"
+    }
+  },
+  "state_sha256": "3e3f21f1d875a7b0316e95587a5ab03588b5e50586aa34f2322d4435585ab67b",
+  "reserved_cost_usd": 0.22584
+}

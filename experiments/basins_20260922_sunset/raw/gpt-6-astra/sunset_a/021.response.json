@@ -1,0 +1,50 @@
+{
+  "model": "gpt-6-astra",
+  "seed": "sunset_a",
+  "hop": 21,
+  "http_status": 200,
+  "response_body": "{\n  \"id\": \"chatcmpl-ER182kEUlKai8ZvW3iSeBwSpfsDAs\",\n  \"object\": \"chat.completion\",\n  \"created\": 1790107902,\n  \"model\": \"gpt-6-astra\",\n  \"choices\": [\n    {\n      \"index\": 0,\n      \"message\": {\n        \"role\": \"assistant\",\n        \"content\": \"{\\n  \\\"rule\\\": \\\"Return this JSON object with the rule field unchanged and a new passage of about 250 words in the text field.\\\",\\n  \\\"text\\\": \\\"The repair shop called on Thursday to say the clock was ready.\\\\n\\\\n“I didn’t leave a clock,” Helen said.\\\\n\\\\n“It’s under your number.”\\\\n\\\\nShe looked at the calendar, still turned to August.\\\\n\\\\n“Is it blue?”\\\\n\\\\n“Yes. Kitchen clock.”\\\\n\\\\nHer mother had taken it in before the operation.\\\\n\\\\nAt the shop, a man brought it from a shelf behind the counter. He had wrapped the hands in tissue, though the glass protected them.\\\\n\\\\n“New movement,” he said. “Should be fine now.”\\\\n\\\\n“How much?”\\\\n\\\\n“Already paid.”\\\\n\\\\nHelen opened her bag anyway.\\\\n\\\\n“She was particular about the tick,” he said. “Some people want them silent. She didn’t.”\\\\n\\\\n“No.”\\\\n\\\\nHe fitted a battery and held the clock towards her. The second hand moved with a small, dry sound.\\\\n\\\\n“Like that?”\\\\n\\\\n“I think so.”\\\\n\\\\nAt home, the hook above the kitchen door was hidden by a supermarket calendar. Helen took the calendar down. A pale circle remained on the wall, with a darker patch where her mother had once tried to clean it.\\\\n\\\\nThe clock settled crookedly. She stood on a chair and straightened it.\\\\n\\\\nFrom there she could see the dust on top of the cupboards, a birthday candle, the lid of a jar.\\\\n\\\\nShe climbed down without touching them.\\\\n\\\\nWhile the kettle boiled, she checked the clock against her phone. It was four minutes fast.\\\\n\\\\nHer hand was already on the chair when she remembered her mother asking the time, then asking whether that was the real time or the kitchen time.\\\\n\\\\nHelen left the chair where it was.\\\\n\\\\nWhen the kettle clicked off, she could hear the clock.\\\"\\n}\",\n        \"refusal\": null,\n        \"annotations\": []\n      },\n      \"finish_reason\": \"stop\"\n    }\n  ],\n  \"usage\": {\n    \"prompt_tokens\": 435,\n    \"completion_tokens\": 422,\n    \"total_tokens\": 857,\n    \"prompt_tokens_details\": {\n      \"cached_tokens\": 0,\n      \"cache_write_tokens\": 0,\n      \"audio_tokens\": 0\n    },\n    \"completion_tokens_details\": {\n      \"reasoning_tokens\": 0,\n      \"audio_tokens\": 0,\n      \"accepted_prediction_tokens\": 0,\n      \"rejected_prediction_tokens\": 0\n    }\n  },\n  \"service_tier\": \"default\",\n  \"system_fingerprint\": null\n}\n",
+  "response_headers": {
+    "Date": "Tue, 22 Sep 2026 20:11:57 GMT",
+    "openai-processing-ms": "14981",
+    "x-request-id": "req_f81863a3aaa74cd2a79b23582ebf0999"
+  },
+  "output": "{\n  \"rule\": \"Return this JSON object with the rule field unchanged and a new passage of about 250 words in the text field.\",\n  \"text\": \"The repair shop called on Thursday to say the clock was ready.\\n\\n“I didn’t leave a clock,” Helen said.\\n\\n“It’s under your number.”\\n\\nShe looked at the calendar, still turned to August.\\n\\n“Is it blue?”\\n\\n“Yes. Kitchen clock.”\\n\\nHer mother had taken it in before the operation.\\n\\nAt the shop, a man brought it from a shelf behind the counter. He had wrapped the hands in tissue, though the glass protected them.\\n\\n“New movement,” he said. “Should be fine now.”\\n\\n“How much?”\\n\\n“Already paid.”\\n\\nHelen opened her bag anyway.\\n\\n“She was particular about the tick,” he said. “Some people want them silent. She didn’t.”\\n\\n“No.”\\n\\nHe fitted a battery and held the clock towards her. The second hand moved with a small, dry sound.\\n\\n“Like that?”\\n\\n“I think so.”\\n\\nAt home, the hook above the kitchen door was hidden by a supermarket calendar. Helen took the calendar down. A pale circle remained on the wall, with a darker patch where her mother had once tried to clean it.\\n\\nThe clock settled crookedly. She stood on a chair and straightened it.\\n\\nFrom there she could see the dust on top of the cupboards, a birthday candle, the lid of a jar.\\n\\nShe climbed down without touching them.\\n\\nWhile the kettle boiled, she checked the clock against her phone. It was four minutes fast.\\n\\nHer hand was already on the chair when she remembered her mother asking the time, then asking whether that was the real time or the kitchen time.\\n\\nHelen left the chair where it was.\\n\\nWhen the kettle clicked off, she could hear the clock.\"\n}",
+  "output_sha256": "0f07538a26197e4fba32d88b29996f997bf2ca5b9b162eec3925ff4f5578a8b6",
+  "finish_reason": "stop",
+  "refusal": null,
+  "returned_model": "gpt-6-astra",
+  "usage": {
+    "prompt_tokens": 435,
+    "completion_tokens": 422,
+    "total_tokens": 857,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "audio_tokens": 0,
+      "accepted_prediction_tokens": 0,
+      "rejected_prediction_tokens": 0
+    }
+  },
+  "format": {
+    "json_object": true,
+    "rule_unchanged": true,
+    "passage_is_string": true,
+    "passage_sha256": "e4504df32454098e8bf7cba4d1df2bd6d97b170f13da826f906dc5edc34d0a16",
+    "passage_words": 266
+  },
+  "finished_at": "2026-09-22T20:11:53.248808+00:00",
+  "latency_seconds": 15.0868,
+  "usage_cost_upper_estimate_usd": 0.02545,
+  "stream_status": "active",
+  "budget": {
+    "usage_cost_upper_estimate_usd": 6.0929897,
+    "uncertain_cost_reserve_usd": 0.04533,
+    "in_flight_reserve_usd": 0.090636,
+    "limit_usd": 18.83
+  }
+}

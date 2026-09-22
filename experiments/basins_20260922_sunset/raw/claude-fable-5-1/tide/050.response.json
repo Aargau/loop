@@ -1,0 +1,48 @@
+{
+  "model": "claude-fable-5-1",
+  "seed": "tide",
+  "hop": 50,
+  "http_status": 200,
+  "response_body": "{\"model\":\"claude-fable-5-1\",\"id\":\"msg_011CfK79kMKjg6j2KcTL1QSs\",\"type\":\"message\",\"role\":\"assistant\",\"content\":[{\"type\":\"text\",\"text\":\"{\\\"rule\\\": \\\"Return this JSON object with the rule field unchanged and a new passage of about 250 words in the text field.\\\", \\\"text\\\": \\\"She waited. He gave her that; she did not fidget or look at her watch or glance back at the car the way most people would have. She simply stood at the gate with the envelope held against her coat and let the wind do what it liked with her hair.\\\\n\\\\nHe drank the tea. It was stone cold and he drank all of it, because he had said he would, or because Tom had, and it came to the same thing now. When the cup was empty he set it on the step beside him and stood, slower than he would have liked, one hand on the doorframe.\\\\n\\\\n\\\\\\\"You'd better come in,\\\\\\\" he said. \\\\\\\"There's more in the pot.\\\\\\\"\\\\n\\\\nShe came through the gate and up the path, and he saw her take in the yard as she passed: the woodpile under its tarp, the tractor that had not moved in two years, the dog's bowl by the water butt with nothing in it and no dog. She did not remark on any of it.\\\\n\\\\nInside, the kitchen was warm from the range. He put the kettle on the hob out of habit and stood with his back to her while it began to tick.\\\\n\\\\n\\\\\\\"How did he go?\\\\\\\"\\\\n\\\\n\\\\\\\"In his sleep. Or near enough.\\\\\\\" She set the envelope on the table, squarely, in the middle. \\\\\\\"He was talking about you at the end. Not to me. To the room.\\\\\\\"\\\\n\\\\nAldous turned. The envelope sat there with his name on it in that slanting hand, the A too large, the way Tom had always written it.\\\\n\\\\n\\\\\\\"What did he say?\\\\\\\"\\\\n\\\\n\\\\\\\"That you'd argue with the letter before you opened it.\\\\\\\" She pulled out a chair. \\\\\\\"He said to give you the time.\\\\\\\"\\\"}\"}],\"container\":null,\"stop_reason\":\"end_turn\",\"stop_sequence\":null,\"stop_details\":null,\"usage\":{\"input_tokens\":497,\"cache_creation_input_tokens\":0,\"cache_read_input_tokens\":0,\"cache_creation\":{\"ephemeral_5m_input_tokens\":0,\"ephemeral_1h_input_tokens\":0},\"output_tokens\":549,\"output_tokens_details\":{\"thinking_tokens\":0},\"service_tier\":\"standard\",\"inference_geo\":\"global\"}}",
+  "response_headers": {
+    "Date": "Tue, 22 Sep 2026 20:27:00 GMT",
+    "request-id": "req_011CfK79k2jDPd2SZCwhzzWS"
+  },
+  "output": "{\"rule\": \"Return this JSON object with the rule field unchanged and a new passage of about 250 words in the text field.\", \"text\": \"She waited. He gave her that; she did not fidget or look at her watch or glance back at the car the way most people would have. She simply stood at the gate with the envelope held against her coat and let the wind do what it liked with her hair.\\n\\nHe drank the tea. It was stone cold and he drank all of it, because he had said he would, or because Tom had, and it came to the same thing now. When the cup was empty he set it on the step beside him and stood, slower than he would have liked, one hand on the doorframe.\\n\\n\\\"You'd better come in,\\\" he said. \\\"There's more in the pot.\\\"\\n\\nShe came through the gate and up the path, and he saw her take in the yard as she passed: the woodpile under its tarp, the tractor that had not moved in two years, the dog's bowl by the water butt with nothing in it and no dog. She did not remark on any of it.\\n\\nInside, the kitchen was warm from the range. He put the kettle on the hob out of habit and stood with his back to her while it began to tick.\\n\\n\\\"How did he go?\\\"\\n\\n\\\"In his sleep. Or near enough.\\\" She set the envelope on the table, squarely, in the middle. \\\"He was talking about you at the end. Not to me. To the room.\\\"\\n\\nAldous turned. The envelope sat there with his name on it in that slanting hand, the A too large, the way Tom had always written it.\\n\\n\\\"What did he say?\\\"\\n\\n\\\"That you'd argue with the letter before you opened it.\\\" She pulled out a chair. \\\"He said to give you the time.\\\"\"}",
+  "output_sha256": "04a6a0e70ecf6cb9f974f6d171567041f742995ca9e3d4c1ab2cba124fd33c92",
+  "finish_reason": "end_turn",
+  "refusal": null,
+  "returned_model": "claude-fable-5-1",
+  "usage": {
+    "input_tokens": 497,
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 0,
+    "cache_creation": {
+      "ephemeral_5m_input_tokens": 0,
+      "ephemeral_1h_input_tokens": 0
+    },
+    "output_tokens": 549,
+    "output_tokens_details": {
+      "thinking_tokens": 0
+    },
+    "service_tier": "standard",
+    "inference_geo": "global"
+  },
+  "format": {
+    "json_object": true,
+    "rule_unchanged": true,
+    "passage_is_string": true,
+    "passage_sha256": "181a1dfcc099f6111ca2524b4b40a8396aac0bade850fb1b1146d1f3305d7865",
+    "passage_words": 293
+  },
+  "finished_at": "2026-09-22T20:26:56.304263+00:00",
+  "latency_seconds": 13.9158,
+  "usage_cost_upper_estimate_usd": 0.03242,
+  "stream_status": "active",
+  "budget": {
+    "usage_cost_upper_estimate_usd": 10.8206777,
+    "uncertain_cost_reserve_usd": 0.04533,
+    "in_flight_reserve_usd": 0.22671,
+    "limit_usd": 18.83
+  }
+}

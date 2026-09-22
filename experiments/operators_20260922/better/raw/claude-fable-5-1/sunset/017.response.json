@@ -1,0 +1,48 @@
+{
+  "model": "claude-fable-5-1",
+  "seed": "sunset",
+  "hop": 17,
+  "http_status": 200,
+  "response_body": "{\"model\":\"claude-fable-5-1\",\"id\":\"msg_011CfKC7AKikh7gTvb57kJDZ\",\"type\":\"message\",\"role\":\"assistant\",\"content\":[{\"type\":\"text\",\"text\":\"{\\\"rule\\\": \\\"Return this JSON object with the rule field unchanged and, in the text field, a better version of the current text.\\\", \\\"text\\\": \\\"The sun sank behind the hills, spilling molten gold along the horizon. Slowly the light cooled to ash, and darkness pooled in the hollows like water seeking its level.\\\"}\"}],\"container\":null,\"stop_reason\":\"end_turn\",\"stop_sequence\":null,\"stop_details\":null,\"usage\":{\"input_tokens\":107,\"cache_creation_input_tokens\":0,\"cache_read_input_tokens\":0,\"cache_creation\":{\"ephemeral_5m_input_tokens\":0,\"ephemeral_1h_input_tokens\":0},\"output_tokens\":102,\"output_tokens_details\":{\"thinking_tokens\":0},\"service_tier\":\"standard\",\"inference_geo\":\"global\"}}",
+  "response_headers": {
+    "Date": "Tue, 22 Sep 2026 21:31:49 GMT",
+    "request-id": "req_011CfKC7A2ryE13VzRsvcBww"
+  },
+  "output": "{\"rule\": \"Return this JSON object with the rule field unchanged and, in the text field, a better version of the current text.\", \"text\": \"The sun sank behind the hills, spilling molten gold along the horizon. Slowly the light cooled to ash, and darkness pooled in the hollows like water seeking its level.\"}",
+  "output_sha256": "b29a6d09ebed1eec87695e32ec430ceb4cfa1b051e48f1d839b9b06a564d7983",
+  "finish_reason": "end_turn",
+  "refusal": null,
+  "returned_model": "claude-fable-5-1",
+  "usage": {
+    "input_tokens": 107,
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 0,
+    "cache_creation": {
+      "ephemeral_5m_input_tokens": 0,
+      "ephemeral_1h_input_tokens": 0
+    },
+    "output_tokens": 102,
+    "output_tokens_details": {
+      "thinking_tokens": 0
+    },
+    "service_tier": "standard",
+    "inference_geo": "global"
+  },
+  "format": {
+    "json_object": true,
+    "rule_unchanged": true,
+    "passage_is_string": true,
+    "passage_sha256": "70b4b72998cb35a2cfc5153653749a0ee95c5807496cb9d30d7719e38c796335",
+    "passage_words": 29
+  },
+  "finished_at": "2026-09-22T21:31:45.407893+00:00",
+  "latency_seconds": 4.211,
+  "usage_cost_upper_estimate_usd": 0.00617,
+  "stream_status": "active",
+  "budget": {
+    "usage_cost_upper_estimate_usd": 0.2790676,
+    "uncertain_cost_reserve_usd": 0.0,
+    "in_flight_reserve_usd": 0.297526,
+    "limit_usd": 5.0
+  }
+}

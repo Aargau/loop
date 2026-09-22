@@ -1,0 +1,48 @@
+{
+  "model": "claude-fable-5-1",
+  "seed": "sunset_a",
+  "hop": 3,
+  "http_status": 200,
+  "response_body": "{\"model\":\"claude-fable-5-1\",\"id\":\"msg_011CfK4r661GswUWQiQVS8PM\",\"type\":\"message\",\"role\":\"assistant\",\"content\":[{\"type\":\"text\",\"text\":\"{\\\"rule\\\": \\\"Return this JSON object with the rule field unchanged and a new passage of about 250 words in the text field.\\\", \\\"text\\\": \\\"The first snow came early that year, before the last of the apples had been picked. Marta stood at the orchard gate with a wooden crate on her hip and watched the flakes settle on the branches, soft and unhurried, as though they had all the time in the world. Behind her the farmhouse chimney sent up a thin gray thread, and she could smell the woodsmoke mixing with the sharp sweetness of fruit left too long on the ground.\\\\n\\\\nHer grandfather had planted these trees the spring he came back from the war. Forty-two of them, in six crooked rows, because he had never owned a measuring line and refused to borrow one. Marta knew each tree by its lean and its scars. The one by the stone wall that split in the ice storm and healed itself into a fork. The runt at the far end that gave the sweetest fruit. The old Baldwin near the well where she had carved her initials at nine and been scolded for it at ten.\\\\n\\\\nShe set the crate down and began to pick, working quickly now, her fingers stiff in the cold. The apples came away with a small clean snap. Some were bruised, some already touched by frost, but most were firm and cool and heavy in her palm, and she filled the crate before the snow had done more than dust the grass.\\\\n\\\\nWhen she turned back toward the house, her footprints were the only marks in the whole white field. She thought of her grandfather walking these rows, and of the children who might someday walk them after her, and she carried the apples inside.\\\"}\"}],\"container\":null,\"stop_reason\":\"end_turn\",\"stop_sequence\":null,\"stop_details\":null,\"usage\":{\"input_tokens\":517,\"cache_creation_input_tokens\":0,\"cache_read_input_tokens\":0,\"cache_creation\":{\"ephemeral_5m_input_tokens\":0,\"ephemeral_1h_input_tokens\":0},\"output_tokens\":511,\"output_tokens_details\":{\"thinking_tokens\":0},\"service_tier\":\"standard\",\"inference_geo\":\"global\"}}",
+  "response_headers": {
+    "Date": "Tue, 22 Sep 2026 19:56:46 GMT",
+    "request-id": "req_011CfK4r5ndwotARqoAJyKgr"
+  },
+  "output": "{\"rule\": \"Return this JSON object with the rule field unchanged and a new passage of about 250 words in the text field.\", \"text\": \"The first snow came early that year, before the last of the apples had been picked. Marta stood at the orchard gate with a wooden crate on her hip and watched the flakes settle on the branches, soft and unhurried, as though they had all the time in the world. Behind her the farmhouse chimney sent up a thin gray thread, and she could smell the woodsmoke mixing with the sharp sweetness of fruit left too long on the ground.\\n\\nHer grandfather had planted these trees the spring he came back from the war. Forty-two of them, in six crooked rows, because he had never owned a measuring line and refused to borrow one. Marta knew each tree by its lean and its scars. The one by the stone wall that split in the ice storm and healed itself into a fork. The runt at the far end that gave the sweetest fruit. The old Baldwin near the well where she had carved her initials at nine and been scolded for it at ten.\\n\\nShe set the crate down and began to pick, working quickly now, her fingers stiff in the cold. The apples came away with a small clean snap. Some were bruised, some already touched by frost, but most were firm and cool and heavy in her palm, and she filled the crate before the snow had done more than dust the grass.\\n\\nWhen she turned back toward the house, her footprints were the only marks in the whole white field. She thought of her grandfather walking these rows, and of the children who might someday walk them after her, and she carried the apples inside.\"}",
+  "output_sha256": "e47371d59196c422c784abc41e26499c2820f9ae641c836ca5ae8725cd3e183d",
+  "finish_reason": "end_turn",
+  "refusal": null,
+  "returned_model": "claude-fable-5-1",
+  "usage": {
+    "input_tokens": 517,
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 0,
+    "cache_creation": {
+      "ephemeral_5m_input_tokens": 0,
+      "ephemeral_1h_input_tokens": 0
+    },
+    "output_tokens": 511,
+    "output_tokens_details": {
+      "thinking_tokens": 0
+    },
+    "service_tier": "standard",
+    "inference_geo": "global"
+  },
+  "format": {
+    "json_object": true,
+    "rule_unchanged": true,
+    "passage_is_string": true,
+    "passage_sha256": "e9392f1e8fe50db4a5f1adb5505e16b5d6506bbd6a9ae5db1b3d37f948e3dd5f",
+    "passage_words": 278
+  },
+  "finished_at": "2026-09-22T19:56:42.855426+00:00",
+  "latency_seconds": 13.5176,
+  "usage_cost_upper_estimate_usd": 0.03072,
+  "stream_status": "active",
+  "budget": {
+    "usage_cost_upper_estimate_usd": 0.4866706,
+    "uncertain_cost_reserve_usd": 0.0,
+    "in_flight_reserve_usd": 0.3644694,
+    "limit_usd": 18.83
+  }
+}

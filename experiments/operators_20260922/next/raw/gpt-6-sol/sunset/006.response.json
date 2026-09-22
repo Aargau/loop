@@ -1,0 +1,50 @@
+{
+  "model": "gpt-6-sol",
+  "seed": "sunset",
+  "hop": 6,
+  "http_status": 200,
+  "response_body": "{\n  \"id\": \"chatcmpl-ER2G0E4SstHq1U5Px5NrEoZG4img4\",\n  \"object\": \"chat.completion\",\n  \"created\": 1790112240,\n  \"model\": \"gpt-6-sol\",\n  \"choices\": [\n    {\n      \"index\": 0,\n      \"message\": {\n        \"role\": \"assistant\",\n        \"content\": \"{\\\"rule\\\":\\\"Return this JSON object with the rule field unchanged and, in the text field, the passage of about 250 words that comes immediately AFTER the current text in the same story.\\\",\\\"text\\\":\\\"The supplied text doesn’t identify a story, so I can’t determine what passage comes next. If you share an excerpt and the story is your own, I can help continue it. I can also write an original passage inspired by an excerpt you provide.\\\"}\",\n        \"refusal\": null,\n        \"annotations\": []\n      },\n      \"finish_reason\": \"stop\"\n    }\n  ],\n  \"usage\": {\n    \"prompt_tokens\": 81,\n    \"completion_tokens\": 190,\n    \"total_tokens\": 271,\n    \"prompt_tokens_details\": {\n      \"cached_tokens\": 0,\n      \"cache_write_tokens\": 0,\n      \"audio_tokens\": 0\n    },\n    \"completion_tokens_details\": {\n      \"reasoning_tokens\": 89,\n      \"audio_tokens\": 0,\n      \"accepted_prediction_tokens\": 0,\n      \"rejected_prediction_tokens\": 0\n    }\n  },\n  \"service_tier\": \"default\",\n  \"system_fingerprint\": null\n}\n",
+  "response_headers": {
+    "Date": "Tue, 22 Sep 2026 21:24:03 GMT",
+    "openai-processing-ms": "3058",
+    "x-request-id": "req_53231923dc464ade9580b814788b4852"
+  },
+  "output": "{\"rule\":\"Return this JSON object with the rule field unchanged and, in the text field, the passage of about 250 words that comes immediately AFTER the current text in the same story.\",\"text\":\"The supplied text doesn’t identify a story, so I can’t determine what passage comes next. If you share an excerpt and the story is your own, I can help continue it. I can also write an original passage inspired by an excerpt you provide.\"}",
+  "output_sha256": "af8c352e16c4dbaba700ce62619778744609ca0eff43117661e937672af32dc5",
+  "finish_reason": "stop",
+  "refusal": null,
+  "returned_model": "gpt-6-sol",
+  "usage": {
+    "prompt_tokens": 81,
+    "completion_tokens": 190,
+    "total_tokens": 271,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 89,
+      "audio_tokens": 0,
+      "accepted_prediction_tokens": 0,
+      "rejected_prediction_tokens": 0
+    }
+  },
+  "format": {
+    "json_object": true,
+    "rule_unchanged": true,
+    "passage_is_string": true,
+    "passage_sha256": "255adf3ebd6d3198ef69cf60965675b149947e27b1b96a35e4c331417743b453",
+    "passage_words": 44
+  },
+  "finished_at": "2026-09-22T21:23:59.266874+00:00",
+  "latency_seconds": 3.1832,
+  "usage_cost_upper_estimate_usd": 0.002062,
+  "stream_status": "active",
+  "budget": {
+    "usage_cost_upper_estimate_usd": 0.0959606,
+    "uncertain_cost_reserve_usd": 0.0,
+    "in_flight_reserve_usd": 0.3069854,
+    "limit_usd": 5.0
+  }
+}

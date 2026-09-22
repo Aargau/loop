@@ -1,0 +1,50 @@
+{
+  "model": "gpt-6-luna",
+  "seed": "sunset_a",
+  "hop": 45,
+  "http_status": 200,
+  "response_body": "{\n  \"id\": \"chatcmpl-ER11ag7VvW2ImUADYOxUJRXnl0cs1\",\n  \"object\": \"chat.completion\",\n  \"created\": 1790107502,\n  \"model\": \"gpt-6-luna\",\n  \"choices\": [\n    {\n      \"index\": 0,\n      \"message\": {\n        \"role\": \"assistant\",\n        \"content\": \"{\\\"rule\\\":\\\"Return this JSON object with the rule field unchanged and a new passage of about 250 words in the text field.\\\",\\\"text\\\":\\\"Maya found the little blue boat wedged between two rocks at the edge of the lake. Its paint was chipped, and a length of faded red string was tied to its bow. She lifted it carefully, wondering who had left it there.\\\\n\\\\n“Maybe it belongs to someone in the village,” said her brother, Sam. He peered inside and found a folded piece of paper tucked beneath the seat. The note read: “To whoever finds this boat: please send it across the water. My name is Elin, and I live in the house with the green door.”\\\\n\\\\nMaya and Sam looked across the lake. On the far shore stood a cottage with a green door, almost hidden among the trees. They carried the boat to a small wooden pier. Maya placed the note back inside, then pushed the boat gently into the water.\\\\n\\\\nA breeze caught the sail, and the boat glided away. The children followed its journey along the shore, cheering whenever it passed a patch of reeds. At last, it reached the other side. A girl ran from the cottage and picked it up. She waved, then held up a piece of paper of her own.\\\\n\\\\nThe wind carried her reply only partway across, but Sam managed to catch it with a long branch. “Thank you,” it said. “I built the boat with my grandfather. I thought it was lost.”\\\\n\\\\nThe next Saturday, Maya and Sam visited Elin. Together, the three children repaired the boat and painted a bright yellow star on its sail. Then they took turns sending it across the lake, each time carrying a new note for someone on the opposite shore.\\\"}\",\n        \"refusal\": null,\n        \"annotations\": []\n      },\n      \"finish_reason\": \"stop\"\n    }\n  ],\n  \"usage\": {\n    \"prompt_tokens\": 381,\n    \"completion_tokens\": 428,\n    \"total_tokens\": 809,\n    \"prompt_tokens_details\": {\n      \"cached_tokens\": 0,\n      \"cache_write_tokens\": 0,\n      \"audio_tokens\": 0\n    },\n    \"completion_tokens_details\": {\n      \"reasoning_tokens\": 49,\n      \"audio_tokens\": 0,\n      \"accepted_prediction_tokens\": 0,\n      \"rejected_prediction_tokens\": 0\n    }\n  },\n  \"service_tier\": \"default\",\n  \"system_fingerprint\": null\n}\n",
+  "response_headers": {
+    "Date": "Tue, 22 Sep 2026 20:05:07 GMT",
+    "openai-processing-ms": "5233",
+    "x-request-id": "req_6f3dbb9ff95843e8beb209063e0269f9"
+  },
+  "output": "{\"rule\":\"Return this JSON object with the rule field unchanged and a new passage of about 250 words in the text field.\",\"text\":\"Maya found the little blue boat wedged between two rocks at the edge of the lake. Its paint was chipped, and a length of faded red string was tied to its bow. She lifted it carefully, wondering who had left it there.\\n\\n“Maybe it belongs to someone in the village,” said her brother, Sam. He peered inside and found a folded piece of paper tucked beneath the seat. The note read: “To whoever finds this boat: please send it across the water. My name is Elin, and I live in the house with the green door.”\\n\\nMaya and Sam looked across the lake. On the far shore stood a cottage with a green door, almost hidden among the trees. They carried the boat to a small wooden pier. Maya placed the note back inside, then pushed the boat gently into the water.\\n\\nA breeze caught the sail, and the boat glided away. The children followed its journey along the shore, cheering whenever it passed a patch of reeds. At last, it reached the other side. A girl ran from the cottage and picked it up. She waved, then held up a piece of paper of her own.\\n\\nThe wind carried her reply only partway across, but Sam managed to catch it with a long branch. “Thank you,” it said. “I built the boat with my grandfather. I thought it was lost.”\\n\\nThe next Saturday, Maya and Sam visited Elin. Together, the three children repaired the boat and painted a bright yellow star on its sail. Then they took turns sending it across the lake, each time carrying a new note for someone on the opposite shore.\"}",
+  "output_sha256": "2bdae785eaf74940e49ca4e364a4b28574f51fb7261b7ea66beb2e353d36b209",
+  "finish_reason": "stop",
+  "refusal": null,
+  "returned_model": "gpt-6-luna",
+  "usage": {
+    "prompt_tokens": 381,
+    "completion_tokens": 428,
+    "total_tokens": 809,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 49,
+      "audio_tokens": 0,
+      "accepted_prediction_tokens": 0,
+      "rejected_prediction_tokens": 0
+    }
+  },
+  "format": {
+    "json_object": true,
+    "rule_unchanged": true,
+    "passage_is_string": true,
+    "passage_sha256": "a19f9c1c6a1d2b8fce25c6cd33303d3d1b53dcab24b85bcc8078c34476f78d83",
+    "passage_words": 276
+  },
+  "finished_at": "2026-09-22T20:05:03.959245+00:00",
+  "latency_seconds": 5.3837,
+  "usage_cost_upper_estimate_usd": 0.0002521,
+  "stream_status": "active",
+  "budget": {
+    "usage_cost_upper_estimate_usd": 3.6563297,
+    "uncertain_cost_reserve_usd": 0.04533,
+    "in_flight_reserve_usd": 0.588222,
+    "limit_usd": 18.83
+  }
+}

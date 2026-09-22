@@ -1,0 +1,22 @@
+{
+  "started_at": "2026-09-22T20:16:56.824104+00:00",
+  "model": "claude-fable-5-1",
+  "seed": "sunset_a",
+  "hop": 35,
+  "endpoint": "https://api.anthropic.com/v1/messages",
+  "body": {
+    "model": "claude-fable-5-1",
+    "messages": [
+      {
+        "role": "user",
+        "content": "{\"rule\": \"Return this JSON object with the rule field unchanged and a new passage of about 250 words in the text field.\", \"text\": \"The bus left at seven, and Tomas was at the stop by half past six, because his mother had told him once that being early was the same as being kind, and he had never found a reason to disbelieve her. The bench was wet. He stood.\\n\\nAcross the road the bakery had its lights on but not its sign, and through the window he could see a woman in a white apron lifting trays with a cloth wrapped round her hands. He watched her the way he watched most things, without meaning to, until she looked up and caught him at it. She did not smile. She did not look away either. After a moment she went back to the trays.\\n\\nHe had a letter in his inside pocket that he had read eleven times. It said what it said. He knew the sentences by their shapes now, the short one near the top, the long one at the end that curled round on itself and finished with his name spelled wrong. He had decided not to correct them. It seemed a small thing to let go.\\n\\nThe bus came at four minutes past. He was the only one waiting. The driver nodded at him as if they knew each other, and perhaps they did, perhaps he had taken this bus a hundred times and forgotten every one. He sat by the window on the bakery side. The woman was outside now, turning the sign, and as the bus pulled away she raised one floured hand, not quite a wave, and he found that he had raised his own.\"}"
+      }
+    ],
+    "max_tokens": 4096,
+    "output_config": {
+      "effort": "low"
+    }
+  },
+  "state_sha256": "e3c7cee06733b4d1f6b8be1385d528edcc54e301f8ce56129ec3b1658af1d792",
+  "reserved_cost_usd": 0.22476
+}

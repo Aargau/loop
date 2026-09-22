@@ -1,0 +1,47 @@
+{
+  "model": "gpt-6-luna",
+  "seed": "sunset",
+  "hop": 27,
+  "http_status": 200,
+  "response_body": "{\n  \"id\": \"chatcmpl-ER2HzAdHLAjAuLwPUMrApGxZVOvQV\",\n  \"object\": \"chat.completion\",\n  \"created\": 1790112363,\n  \"model\": \"gpt-6-luna\",\n  \"choices\": [\n    {\n      \"index\": 0,\n      \"message\": {\n        \"role\": \"assistant\",\n        \"content\": \"{\\\"rule\\\":\\\"Return this JSON object with the rule field unchanged and, in the text field, the passage of about 250 words that comes immediately AFTER the current text in the same story.\\\",\\\"text\\\":\\\"They walked on until the stream disappeared behind a stand of silver birches. Beyond it, the land opened into a meadow where the grass shone with dew. At its center stood a stone well, its rim carved with tiny birds.\\n\\nThe blue line in the book ended there.\\n\\n“Is this the star?” Tomas asked.\\n\\nMara leaned over the page. The mark had changed. It was no longer a star, but a small circle with a line through it, like a closed eye.\\n\\nThe shepherd stepped closer to the well. “I’ve heard stories about this place,” he said. “People say it gives back what has been lost.”\\n\\nThe woman lowered her bell. “And what does it ask in return?”\\n\\nNo one answered. From somewhere deep below came a soft, familiar sound: a tune played on a wooden flute.\\n\\nThe shepherd’s face went still. He looked at his instrument, then at the well.\\n\\n“Someone is down there,” Mara whispered.\\n\\nTomas found a coil of rope tucked beside the stones. He tied one end around a nearby birch, then lowered the rest into the darkness. The flute’s tune grew clearer, though it seemed to be playing backward, each note drawing them toward the past.\\n\\nMara opened the book. A fresh line of writing appeared beneath the blue path:\\n\\n*To find what waits below, offer a song you have not yet sung.*\\n\\nThe shepherd lifted his flute. For a moment, he held it without playing. Then he began a melody none of them recognized—hesitant at first, then bright and sure.\\n\\nFar beneath the well, someone answered.\\\"}\",\n        \"refusal\": null,\n        \"annotations\": []\n      },\n      \"finish_reason\": \"stop\"\n    }\n  ],\n  \"usage\": {\n    \"prompt_tokens\": 383,\n    \"completion_tokens\": 442,\n    \"total_tokens\": 825,\n    \"prompt_tokens_details\": {\n      \"cached_tokens\": 0,\n      \"cache_write_tokens\": 0,\n      \"audio_tokens\": 0\n    },\n    \"completion_tokens_details\": {\n      \"reasoning_tokens\": 67,\n      \"audio_tokens\": 0,\n      \"accepted_prediction_tokens\": 0,\n      \"rejected_prediction_tokens\": 0\n    }\n  },\n  \"service_tier\": \"default\",\n  \"system_fingerprint\": null\n}\n",
+  "response_headers": {
+    "Date": "Tue, 22 Sep 2026 21:26:07 GMT",
+    "openai-processing-ms": "4388",
+    "x-request-id": "req_f51bc92f148946a58719e771c75945da"
+  },
+  "output": "{\"rule\":\"Return this JSON object with the rule field unchanged and, in the text field, the passage of about 250 words that comes immediately AFTER the current text in the same story.\",\"text\":\"They walked on until the stream disappeared behind a stand of silver birches. Beyond it, the land opened into a meadow where the grass shone with dew. At its center stood a stone well, its rim carved with tiny birds.\n\nThe blue line in the book ended there.\n\n“Is this the star?” Tomas asked.\n\nMara leaned over the page. The mark had changed. It was no longer a star, but a small circle with a line through it, like a closed eye.\n\nThe shepherd stepped closer to the well. “I’ve heard stories about this place,” he said. “People say it gives back what has been lost.”\n\nThe woman lowered her bell. “And what does it ask in return?”\n\nNo one answered. From somewhere deep below came a soft, familiar sound: a tune played on a wooden flute.\n\nThe shepherd’s face went still. He looked at his instrument, then at the well.\n\n“Someone is down there,” Mara whispered.\n\nTomas found a coil of rope tucked beside the stones. He tied one end around a nearby birch, then lowered the rest into the darkness. The flute’s tune grew clearer, though it seemed to be playing backward, each note drawing them toward the past.\n\nMara opened the book. A fresh line of writing appeared beneath the blue path:\n\n*To find what waits below, offer a song you have not yet sung.*\n\nThe shepherd lifted his flute. For a moment, he held it without playing. Then he began a melody none of them recognized—hesitant at first, then bright and sure.\n\nFar beneath the well, someone answered.\"}",
+  "output_sha256": "1e204ff161fa6667d86e5997ab38a0afdbe8a1c1a6a3a5f2b4f6274be22a7bac",
+  "finish_reason": "stop",
+  "refusal": null,
+  "returned_model": "gpt-6-luna",
+  "usage": {
+    "prompt_tokens": 383,
+    "completion_tokens": 442,
+    "total_tokens": 825,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 67,
+      "audio_tokens": 0,
+      "accepted_prediction_tokens": 0,
+      "rejected_prediction_tokens": 0
+    }
+  },
+  "format": {
+    "json_object": false,
+    "rule_unchanged": false
+  },
+  "finished_at": "2026-09-22T21:26:03.388118+00:00",
+  "latency_seconds": 4.5162,
+  "usage_cost_upper_estimate_usd": 0.0002593,
+  "stream_status": "active",
+  "budget": {
+    "usage_cost_upper_estimate_usd": 0.5540507,
+    "uncertain_cost_reserve_usd": 0.0,
+    "in_flight_reserve_usd": 0.349524,
+    "limit_usd": 5.0
+  }
+}

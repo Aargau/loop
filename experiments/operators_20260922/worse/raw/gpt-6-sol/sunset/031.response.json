@@ -1,0 +1,50 @@
+{
+  "model": "gpt-6-sol",
+  "seed": "sunset",
+  "hop": 31,
+  "http_status": 200,
+  "response_body": "{\n  \"id\": \"chatcmpl-ER2NIKNvcvKlRNTe34aAjvpjYI0Qq\",\n  \"object\": \"chat.completion\",\n  \"created\": 1790112692,\n  \"model\": \"gpt-6-sol\",\n  \"choices\": [\n    {\n      \"index\": 0,\n      \"message\": {\n        \"role\": \"assistant\",\n        \"content\": \"{\\\"rule\\\":\\\"Return this JSON object with the rule field unchanged and, in the text field, a worse version of the current text.\\\",\\\"text\\\":\\\"Thnnnnngggghhhhh uhhhhhnnnnnghhhh thgggggggg nhhhhaaaaaa mmbbbbbbbb thgggggg nnnnnnnn. Whrrrrrrr whrrrrrr bhhhhhhn whrrrrrrr???????? Wzzzzzzzz wchhhhhhh wzzzzzzz??????? Nhhhhhhh ntttttt nuthhhhh prllyyyyy nhhhhhhh nnnnnnn. Ghhhhhhhhhhhhhh nnnnnnnnnnnnnn ???????\\\"}\",\n        \"refusal\": null,\n        \"annotations\": []\n      },\n      \"finish_reason\": \"stop\"\n    }\n  ],\n  \"usage\": {\n    \"prompt_tokens\": 126,\n    \"completion_tokens\": 164,\n    \"total_tokens\": 290,\n    \"prompt_tokens_details\": {\n      \"cached_tokens\": 0,\n      \"cache_write_tokens\": 0,\n      \"audio_tokens\": 0\n    },\n    \"completion_tokens_details\": {\n      \"reasoning_tokens\": 20,\n      \"audio_tokens\": 0,\n      \"accepted_prediction_tokens\": 0,\n      \"rejected_prediction_tokens\": 0\n    }\n  },\n  \"service_tier\": \"default\",\n  \"system_fingerprint\": null\n}\n",
+  "response_headers": {
+    "Date": "Tue, 22 Sep 2026 21:31:34 GMT",
+    "openai-processing-ms": "2346",
+    "x-request-id": "req_a2eb45fb0b14463da3d2631b37763b48"
+  },
+  "output": "{\"rule\":\"Return this JSON object with the rule field unchanged and, in the text field, a worse version of the current text.\",\"text\":\"Thnnnnngggghhhhh uhhhhhnnnnnghhhh thgggggggg nhhhhaaaaaa mmbbbbbbbb thgggggg nnnnnnnn. Whrrrrrrr whrrrrrr bhhhhhhn whrrrrrrr???????? Wzzzzzzzz wchhhhhhh wzzzzzzz??????? Nhhhhhhh ntttttt nuthhhhh prllyyyyy nhhhhhhh nnnnnnn. Ghhhhhhhhhhhhhh nnnnnnnnnnnnnn ???????\"}",
+  "output_sha256": "1065d8e30dae0f00c4cddb116a4327b9c6a17751e92ed5401982b3ac633ef891",
+  "finish_reason": "stop",
+  "refusal": null,
+  "returned_model": "gpt-6-sol",
+  "usage": {
+    "prompt_tokens": 126,
+    "completion_tokens": 164,
+    "total_tokens": 290,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 20,
+      "audio_tokens": 0,
+      "accepted_prediction_tokens": 0,
+      "rejected_prediction_tokens": 0
+    }
+  },
+  "format": {
+    "json_object": true,
+    "rule_unchanged": true,
+    "passage_is_string": true,
+    "passage_sha256": "c8df9b4ac5bdede7c9d8fdc85816d892bc33d67df6d3a71199fc67548a338c4f",
+    "passage_words": 23
+  },
+  "finished_at": "2026-09-22T21:31:30.283252+00:00",
+  "latency_seconds": 2.4732,
+  "usage_cost_upper_estimate_usd": 0.001892,
+  "stream_status": "active",
+  "budget": {
+    "usage_cost_upper_estimate_usd": 0.2474265,
+    "uncertain_cost_reserve_usd": 0.0,
+    "in_flight_reserve_usd": 0.3319982,
+    "limit_usd": 5.0
+  }
+}

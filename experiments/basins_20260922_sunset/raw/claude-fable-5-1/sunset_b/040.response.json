@@ -1,0 +1,48 @@
+{
+  "model": "claude-fable-5-1",
+  "seed": "sunset_b",
+  "hop": 40,
+  "http_status": 200,
+  "response_body": "{\"model\":\"claude-fable-5-1\",\"id\":\"msg_011CfK6eznBzGwXz3XHZh7ve\",\"type\":\"message\",\"role\":\"assistant\",\"content\":[{\"type\":\"text\",\"text\":\"{\\\"rule\\\": \\\"Return this JSON object with the rule field unchanged and a new passage of about 250 words in the text field.\\\", \\\"text\\\": \\\"The lighthouse at Carrow Point had been automated in 1987, and for the eleven years after that Maura kept the garden anyway. Nobody paid her. The commissioners had offered the keeper's cottage at a rent that was more gesture than sum, and she took it because she had been born in it and because the alternative was a bungalow in town with a view of the chemist's.\\\\n\\\\nThe light came on by itself at dusk now, a soft click somewhere in the tower that she could hear from the kitchen if the wind was down. She had stopped flinching at it around the third year. Before that, every evening, some part of her had risen to go up the stairs and found there was nothing to do when she got there.\\\\n\\\\nShe grew potatoes and kale and a row of sweet pea against the south wall, which was the only wall that gave them a chance. Fishermen coming in past the point could see the colour from the water and said so, the few times they met her in the shop. She liked that they saw it. She did not say so.\\\\n\\\\nIn the spring of the twelfth year a man from the commissioners drove out to tell her the cottage was to be sold. He was young and apologetic and kept looking at the sweet pea instead of at her. She gave him tea. When he had gone she went up the tower, for the first time in years, and stood by the lamp until it clicked on beside her.\\\"}\"}],\"container\":null,\"stop_reason\":\"end_turn\",\"stop_sequence\":null,\"stop_details\":null,\"usage\":{\"input_tokens\":494,\"cache_creation_input_tokens\":0,\"cache_read_input_tokens\":0,\"cache_creation\":{\"ephemeral_5m_input_tokens\":0,\"ephemeral_1h_input_tokens\":0},\"output_tokens\":465,\"output_tokens_details\":{\"thinking_tokens\":0},\"service_tier\":\"standard\",\"inference_geo\":\"global\"}}",
+  "response_headers": {
+    "Date": "Tue, 22 Sep 2026 20:20:27 GMT",
+    "request-id": "req_011CfK6ezHRRSRY4gYX1xnvF"
+  },
+  "output": "{\"rule\": \"Return this JSON object with the rule field unchanged and a new passage of about 250 words in the text field.\", \"text\": \"The lighthouse at Carrow Point had been automated in 1987, and for the eleven years after that Maura kept the garden anyway. Nobody paid her. The commissioners had offered the keeper's cottage at a rent that was more gesture than sum, and she took it because she had been born in it and because the alternative was a bungalow in town with a view of the chemist's.\\n\\nThe light came on by itself at dusk now, a soft click somewhere in the tower that she could hear from the kitchen if the wind was down. She had stopped flinching at it around the third year. Before that, every evening, some part of her had risen to go up the stairs and found there was nothing to do when she got there.\\n\\nShe grew potatoes and kale and a row of sweet pea against the south wall, which was the only wall that gave them a chance. Fishermen coming in past the point could see the colour from the water and said so, the few times they met her in the shop. She liked that they saw it. She did not say so.\\n\\nIn the spring of the twelfth year a man from the commissioners drove out to tell her the cottage was to be sold. He was young and apologetic and kept looking at the sweet pea instead of at her. She gave him tea. When he had gone she went up the tower, for the first time in years, and stood by the lamp until it clicked on beside her.\"}",
+  "output_sha256": "098395c836ecd8a2e7de43ea8c05cde43ed29f00e7854eb117e1feca6c04e0ee",
+  "finish_reason": "end_turn",
+  "refusal": null,
+  "returned_model": "claude-fable-5-1",
+  "usage": {
+    "input_tokens": 494,
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 0,
+    "cache_creation": {
+      "ephemeral_5m_input_tokens": 0,
+      "ephemeral_1h_input_tokens": 0
+    },
+    "output_tokens": 465,
+    "output_tokens_details": {
+      "thinking_tokens": 0
+    },
+    "service_tier": "standard",
+    "inference_geo": "global"
+  },
+  "format": {
+    "json_object": true,
+    "rule_unchanged": true,
+    "passage_is_string": true,
+    "passage_sha256": "50a40025db0067d9a989fb8eb24acfaec9a3dae08f2b4d34d02270e20148588d",
+    "passage_words": 261
+  },
+  "finished_at": "2026-09-22T20:20:23.167612+00:00",
+  "latency_seconds": 10.8065,
+  "usage_cost_upper_estimate_usd": 0.02819,
+  "stream_status": "active",
+  "budget": {
+    "usage_cost_upper_estimate_usd": 8.9912077,
+    "uncertain_cost_reserve_usd": 0.04533,
+    "in_flight_reserve_usd": 0.317478,
+    "limit_usd": 18.83
+  }
+}

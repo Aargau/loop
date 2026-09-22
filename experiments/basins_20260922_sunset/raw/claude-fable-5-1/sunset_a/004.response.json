@@ -1,0 +1,48 @@
+{
+  "model": "claude-fable-5-1",
+  "seed": "sunset_a",
+  "hop": 4,
+  "http_status": 200,
+  "response_body": "{\"model\":\"claude-fable-5-1\",\"id\":\"msg_011CfK4u3SaprQxuHoVbM66A\",\"type\":\"message\",\"role\":\"assistant\",\"content\":[{\"type\":\"text\",\"text\":\"{\\\"rule\\\": \\\"Return this JSON object with the rule field unchanged and a new passage of about 250 words in the text field.\\\", \\\"text\\\": \\\"The lighthouse had been dark for eleven years when Tomas bought it, sight unseen, from a county auction listing that described it as 'structure, coastal, needs work.' He drove out on a Tuesday in March with a thermos of coffee and a set of keys that turned out to fit nothing, and he stood at the base of the tower for a long time before he tried the door. It was unlocked. It had probably always been unlocked.\\\\n\\\\nInside, the spiral stairs were rusted but sound, and he climbed them slowly, counting. One hundred and six. At the top the lamp room was full of gulls' feathers and the glass was fogged with salt, but when he wiped a circle clear with his sleeve he could see the whole curve of the bay, the fishing boats coming in, the town huddled against the hill like it was trying to stay warm.\\\\n\\\\nHis father had been a keeper here, briefly, before the automation came and then the decommissioning. Tomas had been six. He remembered the smell of kerosene and the sound of the foghorn through the floor, a sound he had felt more than heard. He remembered his father's hands, always a little stained, always steady.\\\\n\\\\nHe did not know yet what he would do with the place. Fix the roof, certainly. Scrape the rust. Maybe nothing more than that. But he stood in the lamp room until the boats were all in and the light went amber over the water, and he understood that he had not bought a building. He had bought a way of looking out.\\\"}\"}],\"container\":null,\"stop_reason\":\"end_turn\",\"stop_sequence\":null,\"stop_details\":null,\"usage\":{\"input_tokens\":517,\"cache_creation_input_tokens\":0,\"cache_read_input_tokens\":0,\"cache_creation\":{\"ephemeral_5m_input_tokens\":0,\"ephemeral_1h_input_tokens\":0},\"output_tokens\":512,\"output_tokens_details\":{\"thinking_tokens\":0},\"service_tier\":\"standard\",\"inference_geo\":\"global\"}}",
+  "response_headers": {
+    "Date": "Tue, 22 Sep 2026 19:57:25 GMT",
+    "request-id": "req_011CfK4u2z3rueEZD7fgnUYb"
+  },
+  "output": "{\"rule\": \"Return this JSON object with the rule field unchanged and a new passage of about 250 words in the text field.\", \"text\": \"The lighthouse had been dark for eleven years when Tomas bought it, sight unseen, from a county auction listing that described it as 'structure, coastal, needs work.' He drove out on a Tuesday in March with a thermos of coffee and a set of keys that turned out to fit nothing, and he stood at the base of the tower for a long time before he tried the door. It was unlocked. It had probably always been unlocked.\\n\\nInside, the spiral stairs were rusted but sound, and he climbed them slowly, counting. One hundred and six. At the top the lamp room was full of gulls' feathers and the glass was fogged with salt, but when he wiped a circle clear with his sleeve he could see the whole curve of the bay, the fishing boats coming in, the town huddled against the hill like it was trying to stay warm.\\n\\nHis father had been a keeper here, briefly, before the automation came and then the decommissioning. Tomas had been six. He remembered the smell of kerosene and the sound of the foghorn through the floor, a sound he had felt more than heard. He remembered his father's hands, always a little stained, always steady.\\n\\nHe did not know yet what he would do with the place. Fix the roof, certainly. Scrape the rust. Maybe nothing more than that. But he stood in the lamp room until the boats were all in and the light went amber over the water, and he understood that he had not bought a building. He had bought a way of looking out.\"}",
+  "output_sha256": "758ecbe478543ac001b6fd057550f79688d0630ca4f5ee9b4ea9fde95b825fbd",
+  "finish_reason": "end_turn",
+  "refusal": null,
+  "returned_model": "claude-fable-5-1",
+  "usage": {
+    "input_tokens": 517,
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 0,
+    "cache_creation": {
+      "ephemeral_5m_input_tokens": 0,
+      "ephemeral_1h_input_tokens": 0
+    },
+    "output_tokens": 512,
+    "output_tokens_details": {
+      "thinking_tokens": 0
+    },
+    "service_tier": "standard",
+    "inference_geo": "global"
+  },
+  "format": {
+    "json_object": true,
+    "rule_unchanged": true,
+    "passage_is_string": true,
+    "passage_sha256": "39758a436d2e557f5296bdee953e051ed023f2e3f3f6200a9ea13fe06e09f3ea",
+    "passage_words": 268
+  },
+  "finished_at": "2026-09-22T19:57:21.314081+00:00",
+  "latency_seconds": 11.9416,
+  "usage_cost_upper_estimate_usd": 0.03077,
+  "stream_status": "active",
+  "budget": {
+    "usage_cost_upper_estimate_usd": 0.7518534,
+    "uncertain_cost_reserve_usd": 0.0,
+    "in_flight_reserve_usd": 0.2753038,
+    "limit_usd": 18.83
+  }
+}

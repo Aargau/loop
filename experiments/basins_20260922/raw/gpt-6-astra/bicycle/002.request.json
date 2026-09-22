@@ -1,0 +1,20 @@
+{
+  "started_at": "2026-09-22T19:52:10.746248+00:00",
+  "model": "gpt-6-astra",
+  "seed": "bicycle",
+  "hop": 2,
+  "endpoint": "https://api.openai.com/v1/chat/completions",
+  "body": {
+    "model": "gpt-6-astra",
+    "messages": [
+      {
+        "role": "user",
+        "content": "{\n  \"rule\": \"Return this JSON object with the rule field unchanged and a new passage of about 250 words in the text field.\",\n  \"text\": \"The red bicycle was missing its front wheel. Mara found it leaning against the bakery wall, exactly where her brother had left it ten years earlier, except that someone had polished the frame.\\n\\nShe stopped so abruptly that the paper bag in her arms split. Apples rolled across the pavement. One bumped against the bicycle’s remaining tire.\\n\\n“Thought you might recognize it,” said a voice behind her.\\n\\nThe baker stood in his doorway, dusting flour from his wrists. He had grown thinner, and his eyebrows seemed whiter than the flour.\\n\\n“Where did you get this?” Mara asked.\\n\\n“Council cleared the old railway shed. It was in there with three shopping carts and a church pew.”\\n\\nHer brother had always claimed he could fix anything. During his last summer home, he had taken the front wheel away to straighten its bent rim. Then came the job overseas, the hurried departure, and years of calls made increasingly brief by time zones and things neither knew how to say.\\n\\nMara crouched beside the frame. Beneath the seat, almost rubbed away, was the crooked silver star she had painted when she was twelve.\\n\\n“I can find you another wheel,” the baker offered.\\n\\nShe took out her phone instead. Her brother answered on the fifth ring, sounding sleepy.\\n\\n“Do you still have my wheel?” she asked.\\n\\nFor a moment, he said nothing. Then she heard a drawer open.\\n\\n“You won’t believe this,” he said.\\n\\nMara sat down on the curb, laughing, while the baker gathered her apples and put them in a fresh bag.\"\n}"
+      }
+    ],
+    "max_completion_tokens": 4096,
+    "reasoning_effort": "low"
+  },
+  "state_sha256": "700917a8a90d5f6d9f91b1ecab81a50ed277666a02fbab4cb67fe13e11786aaa",
+  "reserved_cost_usd": 0.22668
+}

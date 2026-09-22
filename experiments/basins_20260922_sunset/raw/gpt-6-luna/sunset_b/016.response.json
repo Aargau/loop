@@ -1,0 +1,50 @@
+{
+  "model": "gpt-6-luna",
+  "seed": "sunset_b",
+  "hop": 16,
+  "http_status": 200,
+  "response_body": "{\n  \"id\": \"chatcmpl-ER0vlQlaj6ApEns40v7GVODnv8p4Y\",\n  \"object\": \"chat.completion\",\n  \"created\": 1790107141,\n  \"model\": \"gpt-6-luna\",\n  \"choices\": [\n    {\n      \"index\": 0,\n      \"message\": {\n        \"role\": \"assistant\",\n        \"content\": \"{\\n  \\\"rule\\\": \\\"Return this JSON object with the rule field unchanged and a new passage of about 250 words in the text field.\\\",\\n  \\\"text\\\": \\\"At the edge of Willowmere, where the road narrowed between fields, stood a red post box that had not been used in years. Its paint was chipped, its little door stuck, and weeds grew around its feet. Still, every Monday morning, a single envelope appeared inside.\\\\n\\\\nThe envelopes were addressed to people who had moved away: a baker who lived in another town, a teacher who had retired by the sea, and a boy who had once delivered newspapers. The letters were always unsigned, but each contained a small memory of Willowmere—a summer storm, a lost dog, or the smell of cinnamon drifting from the bakery.\\\\n\\\\nMara, who had recently moved into the cottage nearby, began collecting the letters. She found the baker’s address and sent his envelope onward. Then she tracked down the retired teacher and mailed hers, too. The last letter was addressed only to “the boy with the green bicycle.”\\\\n\\\\nOne afternoon, an old man stopped beside the post box. He leaned on a wooden cane and smiled when Mara showed him the envelope.\\\\n\\\\n“That was me,” he said. “I left town before I could say goodbye.”\\\\n\\\\nHe opened the letter and read about the summers he had spent racing his bicycle along the lane. For a while, neither of them spoke. Then he asked whether the old bakery still made cinnamon rolls.\\\\n\\\\nMara walked him there. The baker, now gray-haired, recognized him at once and brought out a warm tray. By dusk, the three of them were sharing stories at a table by the window.\\\\n\\\\nThe following Monday, the post box was empty. Mara didn’t mind. It had delivered every message it needed to.\\\"\\n}\",\n        \"refusal\": null,\n        \"annotations\": []\n      },\n      \"finish_reason\": \"stop\"\n    }\n  ],\n  \"usage\": {\n    \"prompt_tokens\": 400,\n    \"completion_tokens\": 437,\n    \"total_tokens\": 837,\n    \"prompt_tokens_details\": {\n      \"cached_tokens\": 0,\n      \"cache_write_tokens\": 0,\n      \"audio_tokens\": 0\n    },\n    \"completion_tokens_details\": {\n      \"reasoning_tokens\": 45,\n      \"audio_tokens\": 0,\n      \"accepted_prediction_tokens\": 0,\n      \"rejected_prediction_tokens\": 0\n    }\n  },\n  \"service_tier\": \"default\",\n  \"system_fingerprint\": null\n}\n",
+  "response_headers": {
+    "Date": "Tue, 22 Sep 2026 19:59:07 GMT",
+    "openai-processing-ms": "6334",
+    "x-request-id": "req_702b84c1a6154d04ae3523a41e352f25"
+  },
+  "output": "{\n  \"rule\": \"Return this JSON object with the rule field unchanged and a new passage of about 250 words in the text field.\",\n  \"text\": \"At the edge of Willowmere, where the road narrowed between fields, stood a red post box that had not been used in years. Its paint was chipped, its little door stuck, and weeds grew around its feet. Still, every Monday morning, a single envelope appeared inside.\\n\\nThe envelopes were addressed to people who had moved away: a baker who lived in another town, a teacher who had retired by the sea, and a boy who had once delivered newspapers. The letters were always unsigned, but each contained a small memory of Willowmere—a summer storm, a lost dog, or the smell of cinnamon drifting from the bakery.\\n\\nMara, who had recently moved into the cottage nearby, began collecting the letters. She found the baker’s address and sent his envelope onward. Then she tracked down the retired teacher and mailed hers, too. The last letter was addressed only to “the boy with the green bicycle.”\\n\\nOne afternoon, an old man stopped beside the post box. He leaned on a wooden cane and smiled when Mara showed him the envelope.\\n\\n“That was me,” he said. “I left town before I could say goodbye.”\\n\\nHe opened the letter and read about the summers he had spent racing his bicycle along the lane. For a while, neither of them spoke. Then he asked whether the old bakery still made cinnamon rolls.\\n\\nMara walked him there. The baker, now gray-haired, recognized him at once and brought out a warm tray. By dusk, the three of them were sharing stories at a table by the window.\\n\\nThe following Monday, the post box was empty. Mara didn’t mind. It had delivered every message it needed to.\"\n}",
+  "output_sha256": "35e584d1a087648e814440e02958358df605d649fe2f4366fd3ddcb1bcfe8b02",
+  "finish_reason": "stop",
+  "refusal": null,
+  "returned_model": "gpt-6-luna",
+  "usage": {
+    "prompt_tokens": 400,
+    "completion_tokens": 437,
+    "total_tokens": 837,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 45,
+      "audio_tokens": 0,
+      "accepted_prediction_tokens": 0,
+      "rejected_prediction_tokens": 0
+    }
+  },
+  "format": {
+    "json_object": true,
+    "rule_unchanged": true,
+    "passage_is_string": true,
+    "passage_sha256": "090d1747d9dcfcbfb524084357826960b86307b6b10404ec30a25e37be400ee6",
+    "passage_words": 278
+  },
+  "finished_at": "2026-09-22T19:59:03.954060+00:00",
+  "latency_seconds": 6.6051,
+  "usage_cost_upper_estimate_usd": 0.0002585,
+  "stream_status": "active",
+  "budget": {
+    "usage_cost_upper_estimate_usd": 1.3146932,
+    "uncertain_cost_reserve_usd": 0.04533,
+    "in_flight_reserve_usd": 0.587218,
+    "limit_usd": 18.83
+  }
+}

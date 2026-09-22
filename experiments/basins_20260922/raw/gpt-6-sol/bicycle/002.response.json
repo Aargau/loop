@@ -1,0 +1,50 @@
+{
+  "model": "gpt-6-sol",
+  "seed": "bicycle",
+  "hop": 2,
+  "http_status": 200,
+  "response_body": "{\n  \"id\": \"chatcmpl-ER0oXnPqIXthtolYXQn7uJA2uedDx\",\n  \"object\": \"chat.completion\",\n  \"created\": 1790106693,\n  \"model\": \"gpt-6-sol\",\n  \"choices\": [\n    {\n      \"index\": 0,\n      \"message\": {\n        \"role\": \"assistant\",\n        \"content\": \"{\\\"rule\\\":\\\"Return this JSON object with the rule field unchanged and a new passage of about 250 words in the text field.\\\",\\\"text\\\":\\\"Every Thursday, the library’s clock stopped at 4:17. No one knew why. The hands froze, the second hand trembled, and by morning the clock was running again.\\\\n\\\\nNina noticed it during her first week shelving books. On the second Thursday, she brought a step stool and watched the clock from across the reading room. At 4:16, the librarian, Mrs. Vale, crossed the room and stood beneath it.\\\\n\\\\nWhen the clock stopped, Mrs. Vale closed her eyes.\\\\n\\\\n“Is it broken?” Nina asked.\\\\n\\\\n“Not exactly.” Mrs. Vale looked embarrassed. “My sister used to call every Thursday at 4:17. When she died, I started winding the clock a little less than it needed. I suppose I liked having a moment that still belonged to her.”\\\\n\\\\nNina glanced at the shelves. People turned pages, whispered over homework, searched for lost reading glasses. No one else seemed to have noticed the silence overhead.\\\\n\\\\n“Would you tell me about her?” Nina asked.\\\\n\\\\nMrs. Vale smiled. Her sister, it turned out, had been a terrible cook and an excellent dancer. She had once returned an overdue atlas with a postcard tucked inside, addressed to a mountain she hoped to climb.\\\\n\\\\nThe next Thursday, Nina brought two paper cups of tea. At 4:17, they sat beneath the clock while Mrs. Vale told her another story. Afterward, Mrs. Vale climbed the step stool and wound it fully.\\\\n\\\\nThe following week, the clock kept going. Nina missed the pause, but at 4:17 Mrs. Vale came to find her anyway.\\\"}\",\n        \"refusal\": null,\n        \"annotations\": []\n      },\n      \"finish_reason\": \"stop\"\n    }\n  ],\n  \"usage\": {\n    \"prompt_tokens\": 358,\n    \"completion_tokens\": 401,\n    \"total_tokens\": 759,\n    \"prompt_tokens_details\": {\n      \"cached_tokens\": 0,\n      \"cache_write_tokens\": 0,\n      \"audio_tokens\": 0\n    },\n    \"completion_tokens_details\": {\n      \"reasoning_tokens\": 18,\n      \"audio_tokens\": 0,\n      \"accepted_prediction_tokens\": 0,\n      \"rejected_prediction_tokens\": 0\n    }\n  },\n  \"service_tier\": \"default\",\n  \"system_fingerprint\": null\n}\n",
+  "response_headers": {
+    "Date": "Tue, 22 Sep 2026 19:51:38 GMT",
+    "openai-processing-ms": "5345",
+    "x-request-id": "req_78ac4b887b494fe59d48d5f37fc054dd"
+  },
+  "output": "{\"rule\":\"Return this JSON object with the rule field unchanged and a new passage of about 250 words in the text field.\",\"text\":\"Every Thursday, the library’s clock stopped at 4:17. No one knew why. The hands froze, the second hand trembled, and by morning the clock was running again.\\n\\nNina noticed it during her first week shelving books. On the second Thursday, she brought a step stool and watched the clock from across the reading room. At 4:16, the librarian, Mrs. Vale, crossed the room and stood beneath it.\\n\\nWhen the clock stopped, Mrs. Vale closed her eyes.\\n\\n“Is it broken?” Nina asked.\\n\\n“Not exactly.” Mrs. Vale looked embarrassed. “My sister used to call every Thursday at 4:17. When she died, I started winding the clock a little less than it needed. I suppose I liked having a moment that still belonged to her.”\\n\\nNina glanced at the shelves. People turned pages, whispered over homework, searched for lost reading glasses. No one else seemed to have noticed the silence overhead.\\n\\n“Would you tell me about her?” Nina asked.\\n\\nMrs. Vale smiled. Her sister, it turned out, had been a terrible cook and an excellent dancer. She had once returned an overdue atlas with a postcard tucked inside, addressed to a mountain she hoped to climb.\\n\\nThe next Thursday, Nina brought two paper cups of tea. At 4:17, they sat beneath the clock while Mrs. Vale told her another story. Afterward, Mrs. Vale climbed the step stool and wound it fully.\\n\\nThe following week, the clock kept going. Nina missed the pause, but at 4:17 Mrs. Vale came to find her anyway.\"}",
+  "output_sha256": "1c21b431ebccd3d7976e2bd3fc39de42378b2f3948f2ae165195b1318e188448",
+  "finish_reason": "stop",
+  "refusal": null,
+  "returned_model": "gpt-6-sol",
+  "usage": {
+    "prompt_tokens": 358,
+    "completion_tokens": 401,
+    "total_tokens": 759,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 18,
+      "audio_tokens": 0,
+      "accepted_prediction_tokens": 0,
+      "rejected_prediction_tokens": 0
+    }
+  },
+  "format": {
+    "json_object": true,
+    "rule_unchanged": true,
+    "passage_is_string": true,
+    "passage_sha256": "adced34428eaca4ca8292ec44aaa2688a1ec480f72fe2e7342b9202230966d75",
+    "passage_words": 249
+  },
+  "finished_at": "2026-09-22T19:51:34.331658+00:00",
+  "latency_seconds": 5.4952,
+  "usage_cost_upper_estimate_usd": 0.004726,
+  "stream_status": "active",
+  "budget": {
+    "usage_cost_upper_estimate_usd": 0.1853068,
+    "uncertain_cost_reserve_usd": 0.0,
+    "in_flight_reserve_usd": 0.5301854,
+    "limit_usd": 20
+  }
+}

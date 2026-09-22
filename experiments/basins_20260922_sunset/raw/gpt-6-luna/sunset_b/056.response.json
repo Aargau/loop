@@ -1,0 +1,50 @@
+{
+  "model": "gpt-6-luna",
+  "seed": "sunset_b",
+  "hop": 56,
+  "http_status": 200,
+  "response_body": "{\n  \"id\": \"chatcmpl-ER14EXvfXgLXlzrQnniX8oY541KQL\",\n  \"object\": \"chat.completion\",\n  \"created\": 1790107666,\n  \"model\": \"gpt-6-luna\",\n  \"choices\": [\n    {\n      \"index\": 0,\n      \"message\": {\n        \"role\": \"assistant\",\n        \"content\": \"{\\n  \\\"rule\\\": \\\"Return this JSON object with the rule field unchanged and a new passage of about 250 words in the text field.\\\",\\n  \\\"text\\\": \\\"Peter snatched up the compass. Its needle spun wildly, then pointed inland, toward the dark line of trees above the cove.\\\\n\\\\nAda waited at the edge of the stones, one hand pressed to her side. “Did it take anything from you?”\\\\n\\\\nPeter tried to answer, but the words caught in his throat. He could still hear his mother’s lullaby—not the creature’s flawless version, but the crooked one he had sung. The one with the missing line and the ridiculous ending.\\\\n\\\\n“I don’t think so,” he said.\\\\n\\\\nElian leaned over the compass. A thin crack ran across its glass, though the needle held steady. “It’s pointing away from the water.”\\\\n\\\\n“Then we follow it,” Ada said. Her gaze lingered on the empty cove. “Before the tide comes back.”\\\\n\\\\nThey climbed the path in silence. Behind them, the sea slid over the stones, covering the place where the bells had rested. No note followed. No pale light stirred beneath the waves.\\\\n\\\\nAt the top of the path, Peter looked back once. The cove seemed ordinary now: a crescent of dark water beneath a sky bruised with clouds. Still, he thought he saw something white moving far below the surface.\\\\n\\\\nHe tightened his grip on the compass and faced the trees.\\\\n\\\\nA narrow trail wound between the trunks. At its entrance stood a weather-beaten post, its lettering nearly worn away. Elian brushed off the moss.\\\\n\\\\n“Northwatch,” she read. “That’s the name on the map.”\\\\n\\\\nThe compass needle trembled, then pointed down the trail.\\\\n\\\\nFrom somewhere in the forest came a soft, familiar tune. Peter stopped.\\\\n\\\\nAda took his arm. “Keep walking,” she whispered.\\\\n\\\\nThis time, the song did not sound like his mother.\\\"\\n}\",\n        \"refusal\": null,\n        \"annotations\": []\n      },\n      \"finish_reason\": \"stop\"\n    }\n  ],\n  \"usage\": {\n    \"prompt_tokens\": 425,\n    \"completion_tokens\": 488,\n    \"total_tokens\": 913,\n    \"prompt_tokens_details\": {\n      \"cached_tokens\": 0,\n      \"cache_write_tokens\": 0,\n      \"audio_tokens\": 0\n    },\n    \"completion_tokens_details\": {\n      \"reasoning_tokens\": 53,\n      \"audio_tokens\": 0,\n      \"accepted_prediction_tokens\": 0,\n      \"rejected_prediction_tokens\": 0\n    }\n  },\n  \"service_tier\": \"default\",\n  \"system_fingerprint\": null\n}\n",
+  "response_headers": {
+    "Date": "Tue, 22 Sep 2026 20:07:51 GMT",
+    "openai-processing-ms": "5556",
+    "x-request-id": "req_a010a33dc83e49d4bbae3d27ed0aba5f"
+  },
+  "output": "{\n  \"rule\": \"Return this JSON object with the rule field unchanged and a new passage of about 250 words in the text field.\",\n  \"text\": \"Peter snatched up the compass. Its needle spun wildly, then pointed inland, toward the dark line of trees above the cove.\\n\\nAda waited at the edge of the stones, one hand pressed to her side. “Did it take anything from you?”\\n\\nPeter tried to answer, but the words caught in his throat. He could still hear his mother’s lullaby—not the creature’s flawless version, but the crooked one he had sung. The one with the missing line and the ridiculous ending.\\n\\n“I don’t think so,” he said.\\n\\nElian leaned over the compass. A thin crack ran across its glass, though the needle held steady. “It’s pointing away from the water.”\\n\\n“Then we follow it,” Ada said. Her gaze lingered on the empty cove. “Before the tide comes back.”\\n\\nThey climbed the path in silence. Behind them, the sea slid over the stones, covering the place where the bells had rested. No note followed. No pale light stirred beneath the waves.\\n\\nAt the top of the path, Peter looked back once. The cove seemed ordinary now: a crescent of dark water beneath a sky bruised with clouds. Still, he thought he saw something white moving far below the surface.\\n\\nHe tightened his grip on the compass and faced the trees.\\n\\nA narrow trail wound between the trunks. At its entrance stood a weather-beaten post, its lettering nearly worn away. Elian brushed off the moss.\\n\\n“Northwatch,” she read. “That’s the name on the map.”\\n\\nThe compass needle trembled, then pointed down the trail.\\n\\nFrom somewhere in the forest came a soft, familiar tune. Peter stopped.\\n\\nAda took his arm. “Keep walking,” she whispered.\\n\\nThis time, the song did not sound like his mother.\"\n}",
+  "output_sha256": "d5d1e0b54fd56a68f393ce1c7aae786c0307ad4b7615fba9cf5d8903e442a733",
+  "finish_reason": "stop",
+  "refusal": null,
+  "returned_model": "gpt-6-luna",
+  "usage": {
+    "prompt_tokens": 425,
+    "completion_tokens": 488,
+    "total_tokens": 913,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 53,
+      "audio_tokens": 0,
+      "accepted_prediction_tokens": 0,
+      "rejected_prediction_tokens": 0
+    }
+  },
+  "format": {
+    "json_object": true,
+    "rule_unchanged": true,
+    "passage_is_string": true,
+    "passage_sha256": "94ab7ead973d7c2edbd5eaffd440cdf3475c500e08e269b914ef5bd7adc54908",
+    "passage_words": 280
+  },
+  "finished_at": "2026-09-22T20:07:47.670234+00:00",
+  "latency_seconds": 5.6973,
+  "usage_cost_upper_estimate_usd": 0.0002865,
+  "stream_status": "active",
+  "budget": {
+    "usage_cost_upper_estimate_usd": 4.6626605,
+    "uncertain_cost_reserve_usd": 0.04533,
+    "in_flight_reserve_usd": 0.589842,
+    "limit_usd": 18.83
+  }
+}

@@ -1,0 +1,22 @@
+{
+  "started_at": "2026-09-22T20:00:49.338717+00:00",
+  "model": "claude-opus-5-5",
+  "seed": "sunset_a",
+  "hop": 13,
+  "endpoint": "https://api.anthropic.com/v1/messages",
+  "body": {
+    "model": "claude-opus-5-5",
+    "messages": [
+      {
+        "role": "user",
+        "content": "```json\n{\"rule\": \"Return this JSON object with the rule field unchanged and a new passage of about 250 words in the text field.\", \"text\": \"The baker unlocked the shop at four each morning, long before the streetlamps flickered off along the narrow lane. She tied on her flour-dusted apron, switched on the old radio, and let the hum of the ovens fill the quiet room. Her grandmother had opened the bakery sixty years earlier, and the sourdough starter bubbling in its ceramic crock on the counter was the same one she had fed as a girl, passed down like an heirloom. She shaped the loaves by hand, folding and turning the dough with a rhythm her fingers remembered even when her mind wandered. By six, the windows glowed warm and golden, and the smell of cinnamon and crusty bread drifted out to greet the first commuters hurrying toward the train station. A supermarket had opened on the edge of town the previous spring, selling sliced bread in plastic bags for half her price. Some of her regulars had drifted away, and she noticed the empty spaces in the morning line. Still, many returned: the retired schoolteacher who bought a single croissant every Tuesday, the young couple who ordered a birthday cake for their daughter each year, the construction crew who arrived at dawn for coffee and still-warm rolls. She knew their names, their stories, and how they liked their bread sliced. In the afternoons she taught her nephew to knead, correcting his grip with gentle patience. When the last customer left and the shelves stood bare, she wiped the counters clean, fed the starter, and turned off the lights, ready to begin again.\"}\n```"
+      }
+    ],
+    "max_tokens": 4096,
+    "output_config": {
+      "effort": "low"
+    }
+  },
+  "state_sha256": "5cdf3648af7c0f31850f7c5a6e50e99f5e1452eb1a55ebd4488f933470e74d55",
+  "reserved_cost_usd": 0.090532
+}

@@ -1,0 +1,50 @@
+{
+  "model": "gpt-6-sol",
+  "seed": "tide",
+  "hop": 33,
+  "http_status": 200,
+  "response_body": "{\n  \"id\": \"chatcmpl-ER0zhflt879NmVUlezRtT23nsksmy\",\n  \"object\": \"chat.completion\",\n  \"created\": 1790107385,\n  \"model\": \"gpt-6-sol\",\n  \"choices\": [\n    {\n      \"index\": 0,\n      \"message\": {\n        \"role\": \"assistant\",\n        \"content\": \"{\\n  \\\"rule\\\": \\\"Return this JSON object with the rule field unchanged and a new passage of about 250 words in the text field.\\\",\\n  \\\"text\\\": \\\"At dawn, the harbor master found a line of salt above the gate, higher than the flood had reached. He rubbed it with his thumb. The grains were cold.\\\\n\\\\n“We should mortar the lock,” Mara’s father said.\\\\n\\\\n“And if someone’s still out there?” the woman asked.\\\\n\\\\nNo one answered. By morning, fishing boats had begun to nose into the harbor. Their crews called across the water, asking why the bell had rung all night. The harbor master told them a storm had struck the channel. He did not look at the sky as he said it.\\\\n\\\\nMara went home with her father, but she could not sleep. Each time she closed her eyes, she saw the shapes behind Elias shift in the lantern light. At noon she returned to the gate. The woman was there, sitting on the steps with the red scarf in her lap.\\\\n\\\\n“He knew you’d close it,” Mara said.\\\\n\\\\n“I think he hoped we would.” The woman smoothed the dry, torn end. “He never liked asking for help.”\\\\n\\\\nSomething tapped against the far side of the bars. Mara stepped back. A small wooden boat rocked in the shallows, empty except for a photograph laid beneath its seat. She recognized the hearth behind Elias, and the woman standing beside him, young enough to be laughing at whoever held the camera.\\\\n\\\\nThe harbor master arrived with a pole and drew the boat through a gap beneath the gate. Its hull scraped stone. Mara watched the dark water beyond it, but nothing followed.\\\\n\\\\nThe woman lifted the photograph. On its back, in faded ink, Elias had written the date he left. Beneath it, in fresh, wet letters, were three words: I am sorry.\\\"\\n}\",\n        \"refusal\": null,\n        \"annotations\": []\n      },\n      \"finish_reason\": \"stop\"\n    }\n  ],\n  \"usage\": {\n    \"prompt_tokens\": 393,\n    \"completion_tokens\": 437,\n    \"total_tokens\": 830,\n    \"prompt_tokens_details\": {\n      \"cached_tokens\": 0,\n      \"cache_write_tokens\": 0,\n      \"audio_tokens\": 0\n    },\n    \"completion_tokens_details\": {\n      \"reasoning_tokens\": 33,\n      \"audio_tokens\": 0,\n      \"accepted_prediction_tokens\": 0,\n      \"rejected_prediction_tokens\": 0\n    }\n  },\n  \"service_tier\": \"default\",\n  \"system_fingerprint\": null\n}\n",
+  "response_headers": {
+    "Date": "Tue, 22 Sep 2026 20:03:11 GMT",
+    "openai-processing-ms": "7248",
+    "x-request-id": "req_e392779b001e415ca402a1242c14a9c9"
+  },
+  "output": "{\n  \"rule\": \"Return this JSON object with the rule field unchanged and a new passage of about 250 words in the text field.\",\n  \"text\": \"At dawn, the harbor master found a line of salt above the gate, higher than the flood had reached. He rubbed it with his thumb. The grains were cold.\\n\\n“We should mortar the lock,” Mara’s father said.\\n\\n“And if someone’s still out there?” the woman asked.\\n\\nNo one answered. By morning, fishing boats had begun to nose into the harbor. Their crews called across the water, asking why the bell had rung all night. The harbor master told them a storm had struck the channel. He did not look at the sky as he said it.\\n\\nMara went home with her father, but she could not sleep. Each time she closed her eyes, she saw the shapes behind Elias shift in the lantern light. At noon she returned to the gate. The woman was there, sitting on the steps with the red scarf in her lap.\\n\\n“He knew you’d close it,” Mara said.\\n\\n“I think he hoped we would.” The woman smoothed the dry, torn end. “He never liked asking for help.”\\n\\nSomething tapped against the far side of the bars. Mara stepped back. A small wooden boat rocked in the shallows, empty except for a photograph laid beneath its seat. She recognized the hearth behind Elias, and the woman standing beside him, young enough to be laughing at whoever held the camera.\\n\\nThe harbor master arrived with a pole and drew the boat through a gap beneath the gate. Its hull scraped stone. Mara watched the dark water beyond it, but nothing followed.\\n\\nThe woman lifted the photograph. On its back, in faded ink, Elias had written the date he left. Beneath it, in fresh, wet letters, were three words: I am sorry.\"\n}",
+  "output_sha256": "89a0a87c30fb140947de49d8cd729a19fffebb77dee98ce62d3965b70cff94c5",
+  "finish_reason": "stop",
+  "refusal": null,
+  "returned_model": "gpt-6-sol",
+  "usage": {
+    "prompt_tokens": 393,
+    "completion_tokens": 437,
+    "total_tokens": 830,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 33,
+      "audio_tokens": 0,
+      "accepted_prediction_tokens": 0,
+      "rejected_prediction_tokens": 0
+    }
+  },
+  "format": {
+    "json_object": true,
+    "rule_unchanged": true,
+    "passage_is_string": true,
+    "passage_sha256": "213d6309224d6a8c73bbbd2cbbf364fcd871973aaf1fa2deed99e1cad213f015",
+    "passage_words": 284
+  },
+  "finished_at": "2026-09-22T20:03:07.997947+00:00",
+  "latency_seconds": 7.3471,
+  "usage_cost_upper_estimate_usd": 0.005156,
+  "stream_status": "active",
+  "budget": {
+    "usage_cost_upper_estimate_usd": 2.8905142,
+    "uncertain_cost_reserve_usd": 0.04533,
+    "in_flight_reserve_usd": 0.5461369,
+    "limit_usd": 18.83
+  }
+}

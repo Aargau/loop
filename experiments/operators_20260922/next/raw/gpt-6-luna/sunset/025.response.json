@@ -1,0 +1,47 @@
+{
+  "model": "gpt-6-luna",
+  "seed": "sunset",
+  "hop": 25,
+  "http_status": 200,
+  "response_body": "{\n  \"id\": \"chatcmpl-ER2HpT6iMO87t3ysMXr11VozSRrQu\",\n  \"object\": \"chat.completion\",\n  \"created\": 1790112353,\n  \"model\": \"gpt-6-luna\",\n  \"choices\": [\n    {\n      \"index\": 0,\n      \"message\": {\n        \"role\": \"assistant\",\n        \"content\": \"{\\\"rule\\\":\\\"Return this JSON object with the rule field unchanged and, in the text field, the passage of about 250 words that comes immediately AFTER the current text in the same story.\\\",\\\"text\\\":\\\"For a breath, no one crossed the threshold.\\n\\nBeyond it, the hillside shone with dew. The dawn was silver only at its edges; farther east, a seam of gold opened beneath the clouds.\\n\\nThe woman looked down at the bell. “I thought I had forgotten how it sounded.”\\n\\n“Maybe it was waiting for all of us,” Tomas said.\\n\\nThe shepherd gave a quiet laugh. “Then we should not keep it waiting again.”\\n\\nHe and the woman walked out together. Mara followed with Tomas, the book tucked beneath her arm. As soon as her feet touched the grass, the chamber behind them gave a soft sigh. One by one, the silent bells rang—not loudly, but warmly, as if each had remembered a small part of the song.\\n\\nAt the foot of the hill, a narrow path curved toward the valley. The shepherd stopped there. “This is where I lost my way,” he said.\\n\\nThe woman lifted the bell. Its new clapper gleamed in the morning light. “Then we’ll find the next part together.”\\n\\nMara opened her book. The last line had not vanished, but another had appeared beneath it, written in a hand she did not recognize:\\n\\nA song can open a door. A journey asks you to keep singing.\\n\\nTomas peered over her shoulder. “Does that mean we have to sing all the way home?”\\n\\n“Only if you want to,” Mara said.\\n\\nHe considered this, then tapped his drum. The shepherd answered on his flute, and the woman joined in. Mara found the first note, and the four of them started down the path as the sun rose over the valley.\\\"}\",\n        \"refusal\": null,\n        \"annotations\": []\n      },\n      \"finish_reason\": \"stop\"\n    }\n  ],\n  \"usage\": {\n    \"prompt_tokens\": 393,\n    \"completion_tokens\": 572,\n    \"total_tokens\": 965,\n    \"prompt_tokens_details\": {\n      \"cached_tokens\": 0,\n      \"cache_write_tokens\": 0,\n      \"audio_tokens\": 0\n    },\n    \"completion_tokens_details\": {\n      \"reasoning_tokens\": 190,\n      \"audio_tokens\": 0,\n      \"accepted_prediction_tokens\": 0,\n      \"rejected_prediction_tokens\": 0\n    }\n  },\n  \"service_tier\": \"default\",\n  \"system_fingerprint\": null\n}\n",
+  "response_headers": {
+    "Date": "Tue, 22 Sep 2026 21:25:58 GMT",
+    "openai-processing-ms": "4924",
+    "x-request-id": "req_3e45e8bc362442bb8e2fd714887b4f6e"
+  },
+  "output": "{\"rule\":\"Return this JSON object with the rule field unchanged and, in the text field, the passage of about 250 words that comes immediately AFTER the current text in the same story.\",\"text\":\"For a breath, no one crossed the threshold.\n\nBeyond it, the hillside shone with dew. The dawn was silver only at its edges; farther east, a seam of gold opened beneath the clouds.\n\nThe woman looked down at the bell. “I thought I had forgotten how it sounded.”\n\n“Maybe it was waiting for all of us,” Tomas said.\n\nThe shepherd gave a quiet laugh. “Then we should not keep it waiting again.”\n\nHe and the woman walked out together. Mara followed with Tomas, the book tucked beneath her arm. As soon as her feet touched the grass, the chamber behind them gave a soft sigh. One by one, the silent bells rang—not loudly, but warmly, as if each had remembered a small part of the song.\n\nAt the foot of the hill, a narrow path curved toward the valley. The shepherd stopped there. “This is where I lost my way,” he said.\n\nThe woman lifted the bell. Its new clapper gleamed in the morning light. “Then we’ll find the next part together.”\n\nMara opened her book. The last line had not vanished, but another had appeared beneath it, written in a hand she did not recognize:\n\nA song can open a door. A journey asks you to keep singing.\n\nTomas peered over her shoulder. “Does that mean we have to sing all the way home?”\n\n“Only if you want to,” Mara said.\n\nHe considered this, then tapped his drum. The shepherd answered on his flute, and the woman joined in. Mara found the first note, and the four of them started down the path as the sun rose over the valley.\"}",
+  "output_sha256": "34d45e5c564bd7b1b65604dce11bdb60fab153f147f982be68b5375116fedfa9",
+  "finish_reason": "stop",
+  "refusal": null,
+  "returned_model": "gpt-6-luna",
+  "usage": {
+    "prompt_tokens": 393,
+    "completion_tokens": 572,
+    "total_tokens": 965,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 190,
+      "audio_tokens": 0,
+      "accepted_prediction_tokens": 0,
+      "rejected_prediction_tokens": 0
+    }
+  },
+  "format": {
+    "json_object": false,
+    "rule_unchanged": false
+  },
+  "finished_at": "2026-09-22T21:25:53.880477+00:00",
+  "latency_seconds": 5.0339,
+  "usage_cost_upper_estimate_usd": 0.0003253,
+  "stream_status": "active",
+  "budget": {
+    "usage_cost_upper_estimate_usd": 0.515547,
+    "uncertain_cost_reserve_usd": 0.0,
+    "in_flight_reserve_usd": 0.347726,
+    "limit_usd": 5.0
+  }
+}

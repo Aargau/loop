@@ -1,0 +1,20 @@
+{
+  "started_at": "2026-09-22T19:55:41.657442+00:00",
+  "model": "gpt-6-astra",
+  "seed": "tide",
+  "hop": 1,
+  "endpoint": "https://api.openai.com/v1/chat/completions",
+  "body": {
+    "model": "gpt-6-astra",
+    "messages": [
+      {
+        "role": "user",
+        "content": "{\"rule\": \"Return this JSON object with the rule field unchanged and a new passage of about 250 words in the text field.\", \"text\": \"The tide came in an hour early.\"}"
+      }
+    ],
+    "max_completion_tokens": 4096,
+    "reasoning_effort": "low"
+  },
+  "state_sha256": "7c2671a240808151eae221270338509cc33b5d0833619a46bf8db39bfc3ee0bd",
+  "reserved_cost_usd": 0.21156
+}

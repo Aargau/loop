@@ -1,0 +1,50 @@
+{
+  "model": "gpt-6-astra",
+  "seed": "tide",
+  "hop": 2,
+  "http_status": 200,
+  "response_body": "{\n  \"id\": \"chatcmpl-ER0tKtayZBm6hKeNPFjJyRqJdXZeq\",\n  \"object\": \"chat.completion\",\n  \"created\": 1790106990,\n  \"model\": \"gpt-6-astra\",\n  \"choices\": [\n    {\n      \"index\": 0,\n      \"message\": {\n        \"role\": \"assistant\",\n        \"content\": \"{\\n  \\\"rule\\\": \\\"Return this JSON object with the rule field unchanged and a new passage of about 250 words in the text field.\\\",\\n  \\\"text\\\": \\\"Every Thursday, the library returned a book that nobody had borrowed.\\\\n\\\\nIt appeared in the overnight slot at six, bound in gray cloth, its pages warm enough to steam in winter. Eleanor always shelved it in Local History. By closing time, it was gone.\\\\n\\\\nFor eleven years, she had respected this arrangement.\\\\n\\\\nThen the demolition notice arrived.\\\\n\\\\nOn the last Thursday, Eleanor waited beside the slot with a flashlight and her coat buttoned wrong. At six precisely, the flap lifted.\\\\n\\\\nA small hand pushed the book through.\\\\n\\\\nShe caught the wrist before she could reconsider.\\\\n\\\\n“Your library card,” she said.\\\\n\\\\nThe hand went still.\\\\n\\\\n“We don't have those anymore,” a child replied.\\\\n\\\\nEleanor opened the service door.\\\\n\\\\nBeyond it stood a girl beneath an enormous white sky. Where the parking lot should have been, pale grass bent around the foundations of buildings Eleanor almost recognized.\\\\n\\\\nThe girl glanced past her at the shelves.\\\\n\\\\n“Is it true?” she asked. “You're closing?”\\\\n\\\\n“Tomorrow.”\\\\n\\\\n“My grandmother said this was the last door.”\\\\n\\\\nEleanor looked down at the book. For the first time, its cover bore a title: A Catalogue of Things We Managed to Save.\\\\n\\\\nShe opened it. The first page described rain. The second contained a recipe for bread. Farther on were instructions for setting a broken arm.\\\\n\\\\n“How much time do you have?” Eleanor asked.\\\\n\\\\nThe girl looked over her shoulder. Something distant was lifting dust into the white sky.\\\\n\\\\nEleanor propped the door open with a dictionary and fetched the returns cart.\\\\n\\\\n“Start with the medical section,” she said. “I'll find you something to carry them in.”\\\"\\n}\",\n        \"refusal\": null,\n        \"annotations\": []\n      },\n      \"finish_reason\": \"stop\"\n    }\n  ],\n  \"usage\": {\n    \"prompt_tokens\": 388,\n    \"completion_tokens\": 412,\n    \"total_tokens\": 800,\n    \"prompt_tokens_details\": {\n      \"cached_tokens\": 0,\n      \"cache_write_tokens\": 0,\n      \"audio_tokens\": 0\n    },\n    \"completion_tokens_details\": {\n      \"reasoning_tokens\": 0,\n      \"audio_tokens\": 0,\n      \"accepted_prediction_tokens\": 0,\n      \"rejected_prediction_tokens\": 0\n    }\n  },\n  \"service_tier\": \"default\",\n  \"system_fingerprint\": null\n}\n",
+  "response_headers": {
+    "Date": "Tue, 22 Sep 2026 19:56:47 GMT",
+    "openai-processing-ms": "17588",
+    "x-request-id": "req_d2f3252c22924252966f35b77c67e3f6"
+  },
+  "output": "{\n  \"rule\": \"Return this JSON object with the rule field unchanged and a new passage of about 250 words in the text field.\",\n  \"text\": \"Every Thursday, the library returned a book that nobody had borrowed.\\n\\nIt appeared in the overnight slot at six, bound in gray cloth, its pages warm enough to steam in winter. Eleanor always shelved it in Local History. By closing time, it was gone.\\n\\nFor eleven years, she had respected this arrangement.\\n\\nThen the demolition notice arrived.\\n\\nOn the last Thursday, Eleanor waited beside the slot with a flashlight and her coat buttoned wrong. At six precisely, the flap lifted.\\n\\nA small hand pushed the book through.\\n\\nShe caught the wrist before she could reconsider.\\n\\n“Your library card,” she said.\\n\\nThe hand went still.\\n\\n“We don't have those anymore,” a child replied.\\n\\nEleanor opened the service door.\\n\\nBeyond it stood a girl beneath an enormous white sky. Where the parking lot should have been, pale grass bent around the foundations of buildings Eleanor almost recognized.\\n\\nThe girl glanced past her at the shelves.\\n\\n“Is it true?” she asked. “You're closing?”\\n\\n“Tomorrow.”\\n\\n“My grandmother said this was the last door.”\\n\\nEleanor looked down at the book. For the first time, its cover bore a title: A Catalogue of Things We Managed to Save.\\n\\nShe opened it. The first page described rain. The second contained a recipe for bread. Farther on were instructions for setting a broken arm.\\n\\n“How much time do you have?” Eleanor asked.\\n\\nThe girl looked over her shoulder. Something distant was lifting dust into the white sky.\\n\\nEleanor propped the door open with a dictionary and fetched the returns cart.\\n\\n“Start with the medical section,” she said. “I'll find you something to carry them in.”\"\n}",
+  "output_sha256": "77546b72fb2cc977b2ce0b44309fef9e01acc323c7e24f907fb35f31e57f2a62",
+  "finish_reason": "stop",
+  "refusal": null,
+  "returned_model": "gpt-6-astra",
+  "usage": {
+    "prompt_tokens": 388,
+    "completion_tokens": 412,
+    "total_tokens": 800,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "audio_tokens": 0,
+      "accepted_prediction_tokens": 0,
+      "rejected_prediction_tokens": 0
+    }
+  },
+  "format": {
+    "json_object": true,
+    "rule_unchanged": true,
+    "passage_is_string": true,
+    "passage_sha256": "168e4fb7ac30224db96e38a5dc19c6af1f78432f1ffe50b3494dac34317307bd",
+    "passage_words": 267
+  },
+  "finished_at": "2026-09-22T19:56:43.732177+00:00",
+  "latency_seconds": 17.7229,
+  "usage_cost_upper_estimate_usd": 0.02448,
+  "stream_status": "active",
+  "budget": {
+    "usage_cost_upper_estimate_usd": 0.5111506,
+    "uncertain_cost_reserve_usd": 0.0,
+    "in_flight_reserve_usd": 0.3636594,
+    "limit_usd": 18.83
+  }
+}

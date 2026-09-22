@@ -1,0 +1,50 @@
+{
+  "model": "gpt-6-sol",
+  "seed": "sunset_replacement",
+  "hop": 38,
+  "http_status": 200,
+  "response_body": "{\n  \"id\": \"chatcmpl-ER1kCuFdP4Q8s8sOtTKFTdu030kS0\",\n  \"object\": \"chat.completion\",\n  \"created\": 1790110268,\n  \"model\": \"gpt-6-sol\",\n  \"choices\": [\n    {\n      \"index\": 0,\n      \"message\": {\n        \"role\": \"assistant\",\n        \"content\": \"{\\n  \\\"rule\\\": \\\"Return this JSON object with the rule field unchanged and a new passage of about 250 words in the text field.\\\",\\n  \\\"text\\\": \\\"Mara snatched her hand from the yellow door. The knock came again, beside the handle, though no one stood there.\\\\n\\\\n“Don’t answer it,” Ada said.\\\\n\\\\nThe constable opened his mouth. Elias clapped a hand over it just as a voice spoke from the other side of the door.\\\\n\\\\n“Let me in,” said the constable.\\\\n\\\\nThe man in Elias’s grip went rigid. Beneath his boot, the black line unspooled across the floor, slipping between the boards toward the threshold.\\\\n\\\\nAda pulled her wrist free of the gap. On the stone square, the warning had changed. WAIT UNTIL HE FINISHES was gone. In its place, the fingers wrote: MAKE HIM REMEMBER.\\\\n\\\\n“What happened here?” she asked the constable.\\\\n\\\\nHe shook his head against Elias’s hand. His eyes followed the line to the door, where it had begun to climb the paint.\\\\n\\\\nVenn braced himself against the handle. “Ada. Quickly.”\\\\n\\\\nShe showed the constable the ink on her palm. He stared. Then he lifted his own hand and touched the black ring around his finger.\\\\n\\\\n“I locked it,” he whispered when Elias let go. “I was meant to keep it locked.”\\\\n\\\\n“Who’s inside?”\\\\n\\\\nThe door shuddered. A splinter opened beside Venn’s shoulder, and an ink-dark fingertip pressed through.\\\\n\\\\nThe constable looked at Ada, bewildered. “I am.”\\\\n\\\\nFrom beyond the door came his voice again, now close enough to seem pressed against the wood.\\\\n\\\\n“Ask him which side,” it said.\\\\n\\\\nThe fingers beneath the stone began to scratch out another word. Ada knelt to read it, but the constable stamped his heel.\\\"\\n}\",\n        \"refusal\": null,\n        \"annotations\": []\n      },\n      \"finish_reason\": \"stop\"\n    }\n  ],\n  \"usage\": {\n    \"prompt_tokens\": 398,\n    \"completion_tokens\": 445,\n    \"total_tokens\": 843,\n    \"prompt_tokens_details\": {\n      \"cached_tokens\": 0,\n      \"cache_write_tokens\": 0,\n      \"audio_tokens\": 0\n    },\n    \"completion_tokens_details\": {\n      \"reasoning_tokens\": 20,\n      \"audio_tokens\": 0,\n      \"accepted_prediction_tokens\": 0,\n      \"rejected_prediction_tokens\": 0\n    }\n  },\n  \"service_tier\": \"default\",\n  \"system_fingerprint\": null\n}\n",
+  "response_headers": {
+    "Date": "Tue, 22 Sep 2026 20:51:15 GMT",
+    "openai-processing-ms": "7008",
+    "x-request-id": "req_69c64e4293f541b186fb2b7487bbd225"
+  },
+  "output": "{\n  \"rule\": \"Return this JSON object with the rule field unchanged and a new passage of about 250 words in the text field.\",\n  \"text\": \"Mara snatched her hand from the yellow door. The knock came again, beside the handle, though no one stood there.\\n\\n“Don’t answer it,” Ada said.\\n\\nThe constable opened his mouth. Elias clapped a hand over it just as a voice spoke from the other side of the door.\\n\\n“Let me in,” said the constable.\\n\\nThe man in Elias’s grip went rigid. Beneath his boot, the black line unspooled across the floor, slipping between the boards toward the threshold.\\n\\nAda pulled her wrist free of the gap. On the stone square, the warning had changed. WAIT UNTIL HE FINISHES was gone. In its place, the fingers wrote: MAKE HIM REMEMBER.\\n\\n“What happened here?” she asked the constable.\\n\\nHe shook his head against Elias’s hand. His eyes followed the line to the door, where it had begun to climb the paint.\\n\\nVenn braced himself against the handle. “Ada. Quickly.”\\n\\nShe showed the constable the ink on her palm. He stared. Then he lifted his own hand and touched the black ring around his finger.\\n\\n“I locked it,” he whispered when Elias let go. “I was meant to keep it locked.”\\n\\n“Who’s inside?”\\n\\nThe door shuddered. A splinter opened beside Venn’s shoulder, and an ink-dark fingertip pressed through.\\n\\nThe constable looked at Ada, bewildered. “I am.”\\n\\nFrom beyond the door came his voice again, now close enough to seem pressed against the wood.\\n\\n“Ask him which side,” it said.\\n\\nThe fingers beneath the stone began to scratch out another word. Ada knelt to read it, but the constable stamped his heel.\"\n}",
+  "output_sha256": "c52475230f88a8c88a41e67d5476d8d7177805191c76a163dcc1d7f930e8ac07",
+  "finish_reason": "stop",
+  "refusal": null,
+  "returned_model": "gpt-6-sol",
+  "usage": {
+    "prompt_tokens": 398,
+    "completion_tokens": 445,
+    "total_tokens": 843,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 20,
+      "audio_tokens": 0,
+      "accepted_prediction_tokens": 0,
+      "rejected_prediction_tokens": 0
+    }
+  },
+  "format": {
+    "json_object": true,
+    "rule_unchanged": true,
+    "passage_is_string": true,
+    "passage_sha256": "f92e1f22047e90690354beee9a4ff12256c33a2b0b2fad653d266f809e96b829",
+    "passage_words": 258
+  },
+  "finished_at": "2026-09-22T20:51:10.993603+00:00",
+  "latency_seconds": 7.1534,
+  "usage_cost_upper_estimate_usd": 0.005246,
+  "stream_status": "active",
+  "budget": {
+    "usage_cost_upper_estimate_usd": 0.189714,
+    "uncertain_cost_reserve_usd": 0.0,
+    "in_flight_reserve_usd": 0.0,
+    "limit_usd": 3.0
+  }
+}

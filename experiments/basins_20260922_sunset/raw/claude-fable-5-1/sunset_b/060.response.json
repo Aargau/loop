@@ -1,0 +1,48 @@
+{
+  "model": "claude-fable-5-1",
+  "seed": "sunset_b",
+  "hop": 60,
+  "http_status": 200,
+  "response_body": "{\"model\":\"claude-fable-5-1\",\"id\":\"msg_011CfK7eEHPSZfcn8ZBqK9rY\",\"type\":\"message\",\"role\":\"assistant\",\"content\":[{\"type\":\"text\",\"text\":\"{\\\"rule\\\": \\\"Return this JSON object with the rule field unchanged and a new passage of about 250 words in the text field.\\\", \\\"text\\\": \\\"The library closed at six on Thursdays, and he had timed it so he would be the last one there. Not for any reason he could have said aloud. He simply wanted to hear the lights go off one bank at a time, the way they always did, and to be the one the caretaker nodded at on the way out.\\\\n\\\\nForty-one years. He had counted them that morning while shaving and then wished he hadn't. The number sat in his chest like a swallowed stone.\\\\n\\\\nThe new woman was good. He had trained her himself, over the autumn, and she had listened in a way that made him feel both useful and already gone. She knew where the local history was kept and which of the regulars needed the large print and which only pretended to. She would be fine. That was the trouble with it.\\\\n\\\\nHe walked the stacks once more. Fiction, then the reference shelves nobody used now, then the children's corner with its low chairs and its faint smell of crayon. He straightened a spine that did not need straightening.\\\\n\\\\nHis daughter had bought him a garden bench as a present. It was still in its box in the hall. He had looked at the picture on the side, a man and a woman sitting very upright in a good deal of sunlight, and had not been able to imagine himself into it.\\\\n\\\\nThe caretaker was at the door, keys in hand.\\\\n\\\\nHe turned off the last lamp himself, and went.\\\"}\"}],\"container\":null,\"stop_reason\":\"end_turn\",\"stop_sequence\":null,\"stop_details\":null,\"usage\":{\"input_tokens\":488,\"cache_creation_input_tokens\":0,\"cache_read_input_tokens\":0,\"cache_creation\":{\"ephemeral_5m_input_tokens\":0,\"ephemeral_1h_input_tokens\":0},\"output_tokens\":469,\"output_tokens_details\":{\"thinking_tokens\":0},\"service_tier\":\"standard\",\"inference_geo\":\"global\"}}",
+  "response_headers": {
+    "Date": "Tue, 22 Sep 2026 20:33:26 GMT",
+    "request-id": "req_011CfK7eDy2dPk8abWQUHBug"
+  },
+  "output": "{\"rule\": \"Return this JSON object with the rule field unchanged and a new passage of about 250 words in the text field.\", \"text\": \"The library closed at six on Thursdays, and he had timed it so he would be the last one there. Not for any reason he could have said aloud. He simply wanted to hear the lights go off one bank at a time, the way they always did, and to be the one the caretaker nodded at on the way out.\\n\\nForty-one years. He had counted them that morning while shaving and then wished he hadn't. The number sat in his chest like a swallowed stone.\\n\\nThe new woman was good. He had trained her himself, over the autumn, and she had listened in a way that made him feel both useful and already gone. She knew where the local history was kept and which of the regulars needed the large print and which only pretended to. She would be fine. That was the trouble with it.\\n\\nHe walked the stacks once more. Fiction, then the reference shelves nobody used now, then the children's corner with its low chairs and its faint smell of crayon. He straightened a spine that did not need straightening.\\n\\nHis daughter had bought him a garden bench as a present. It was still in its box in the hall. He had looked at the picture on the side, a man and a woman sitting very upright in a good deal of sunlight, and had not been able to imagine himself into it.\\n\\nThe caretaker was at the door, keys in hand.\\n\\nHe turned off the last lamp himself, and went.\"}",
+  "output_sha256": "3d13b0c057ebe37139c62082dcc8683b14d3d1eb39ebc9011e6c2c3574d7d32c",
+  "finish_reason": "end_turn",
+  "refusal": null,
+  "returned_model": "claude-fable-5-1",
+  "usage": {
+    "input_tokens": 488,
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 0,
+    "cache_creation": {
+      "ephemeral_5m_input_tokens": 0,
+      "ephemeral_1h_input_tokens": 0
+    },
+    "output_tokens": 469,
+    "output_tokens_details": {
+      "thinking_tokens": 0
+    },
+    "service_tier": "standard",
+    "inference_geo": "global"
+  },
+  "format": {
+    "json_object": true,
+    "rule_unchanged": true,
+    "passage_is_string": true,
+    "passage_sha256": "7a9eb8806000abded821d8af50200ffb1e901fd05079c8e2a0f892a76681095b",
+    "passage_words": 255
+  },
+  "finished_at": "2026-09-22T20:33:22.175926+00:00",
+  "latency_seconds": 13.3969,
+  "usage_cost_upper_estimate_usd": 0.02833,
+  "stream_status": "active",
+  "budget": {
+    "usage_cost_upper_estimate_usd": 12.3971277,
+    "uncertain_cost_reserve_usd": 0.04533,
+    "in_flight_reserve_usd": 0.22822,
+    "limit_usd": 18.83
+  }
+}

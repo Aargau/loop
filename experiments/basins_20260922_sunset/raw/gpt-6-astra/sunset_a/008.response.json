@@ -1,0 +1,50 @@
+{
+  "model": "gpt-6-astra",
+  "seed": "sunset_a",
+  "hop": 8,
+  "http_status": 200,
+  "response_body": "{\n  \"id\": \"chatcmpl-ER0xbZ7Xuw4yVUAfVtK4dspoYsNLo\",\n  \"object\": \"chat.completion\",\n  \"created\": 1790107255,\n  \"model\": \"gpt-6-astra\",\n  \"choices\": [\n    {\n      \"index\": 0,\n      \"message\": {\n        \"role\": \"assistant\",\n        \"content\": \"{\\n  \\\"rule\\\": \\\"Return this JSON object with the rule field unchanged and a new passage of about 250 words in the text field.\\\",\\n  \\\"text\\\": \\\"The first thing Ellen unpacked was the kettle. The second was a blue cup with a chip she always turned towards the wall.\\\\n\\\\nOutside the kitchen window, someone had left three empty pots along the fence. Each contained a label for a plant that was no longer there.\\\\n\\\\nShe was filling the kettle when the doorbell rang.\\\\n\\\\nA man in slippers stood on the step, holding a small parcel.\\\\n\\\\n“This came to ours.”\\\\n\\\\nThe name on it was her husband's.\\\\n\\\\n“That's right,” she said.\\\\n\\\\nThe man glanced past her at the boxes.\\\\n\\\\n“Getting settled?”\\\\n\\\\n“More or less.”\\\\n\\\\nAfter he left, she put the parcel beside the sink. Paul had ordered things weeks ahead: light bulbs, envelopes, a replacement part for something he hadn't yet taken apart.\\\\n\\\\nShe found scissors in a box marked BEDROOM.\\\\n\\\\nInside the parcel were six wooden plant labels and a pencil. Nothing else. She checked beneath the folded packing paper.\\\\n\\\\nThe kettle clicked off.\\\\n\\\\nThey had seen the house in February. Paul had stood at the kitchen window while the agent explained the boiler warranty.\\\\n\\\\n“You could grow beans there,” he'd said afterwards.\\\\n\\\\n“You could,” she'd told him.\\\\n\\\\nEllen made her tea. Then she went outside and tipped the old soil from one pot. A snail clung to the drainage hole. She eased it free with a label and set it beneath the fence.\\\\n\\\\nThere was no compost, and she didn't know whether it was too late for beans.\\\\n\\\\nShe brought the pot to the back door, where she would see it, and went to look for a pen to start a shopping list.\\\"\\n}\",\n        \"refusal\": null,\n        \"annotations\": []\n      },\n      \"finish_reason\": \"stop\"\n    }\n  ],\n  \"usage\": {\n    \"prompt_tokens\": 398,\n    \"completion_tokens\": 396,\n    \"total_tokens\": 794,\n    \"prompt_tokens_details\": {\n      \"cached_tokens\": 0,\n      \"cache_write_tokens\": 0,\n      \"audio_tokens\": 0\n    },\n    \"completion_tokens_details\": {\n      \"reasoning_tokens\": 0,\n      \"audio_tokens\": 0,\n      \"accepted_prediction_tokens\": 0,\n      \"rejected_prediction_tokens\": 0\n    }\n  },\n  \"service_tier\": \"default\",\n  \"system_fingerprint\": null\n}\n",
+  "response_headers": {
+    "Date": "Tue, 22 Sep 2026 20:01:11 GMT",
+    "openai-processing-ms": "16455",
+    "x-request-id": "req_45583b64be144d0491124a69e127adbe"
+  },
+  "output": "{\n  \"rule\": \"Return this JSON object with the rule field unchanged and a new passage of about 250 words in the text field.\",\n  \"text\": \"The first thing Ellen unpacked was the kettle. The second was a blue cup with a chip she always turned towards the wall.\\n\\nOutside the kitchen window, someone had left three empty pots along the fence. Each contained a label for a plant that was no longer there.\\n\\nShe was filling the kettle when the doorbell rang.\\n\\nA man in slippers stood on the step, holding a small parcel.\\n\\n“This came to ours.”\\n\\nThe name on it was her husband's.\\n\\n“That's right,” she said.\\n\\nThe man glanced past her at the boxes.\\n\\n“Getting settled?”\\n\\n“More or less.”\\n\\nAfter he left, she put the parcel beside the sink. Paul had ordered things weeks ahead: light bulbs, envelopes, a replacement part for something he hadn't yet taken apart.\\n\\nShe found scissors in a box marked BEDROOM.\\n\\nInside the parcel were six wooden plant labels and a pencil. Nothing else. She checked beneath the folded packing paper.\\n\\nThe kettle clicked off.\\n\\nThey had seen the house in February. Paul had stood at the kitchen window while the agent explained the boiler warranty.\\n\\n“You could grow beans there,” he'd said afterwards.\\n\\n“You could,” she'd told him.\\n\\nEllen made her tea. Then she went outside and tipped the old soil from one pot. A snail clung to the drainage hole. She eased it free with a label and set it beneath the fence.\\n\\nThere was no compost, and she didn't know whether it was too late for beans.\\n\\nShe brought the pot to the back door, where she would see it, and went to look for a pen to start a shopping list.\"\n}",
+  "output_sha256": "bf2c6b179b946e16c3ecf09521c5c621850e0f25bafd5c1241db3db6746d2b9a",
+  "finish_reason": "stop",
+  "refusal": null,
+  "returned_model": "gpt-6-astra",
+  "usage": {
+    "prompt_tokens": 398,
+    "completion_tokens": 396,
+    "total_tokens": 794,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "audio_tokens": 0,
+      "accepted_prediction_tokens": 0,
+      "rejected_prediction_tokens": 0
+    }
+  },
+  "format": {
+    "json_object": true,
+    "rule_unchanged": true,
+    "passage_is_string": true,
+    "passage_sha256": "ba4edd0f0f6a6a3efafc5b09314f31ed6ce42fef5f30f24be656fedc905d9cbb",
+    "passage_words": 268
+  },
+  "finished_at": "2026-09-22T20:01:07.730207+00:00",
+  "latency_seconds": 16.5515,
+  "usage_cost_upper_estimate_usd": 0.02378,
+  "stream_status": "active",
+  "budget": {
+    "usage_cost_upper_estimate_usd": 2.1408055,
+    "uncertain_cost_reserve_usd": 0.04533,
+    "in_flight_reserve_usd": 0.3628403,
+    "limit_usd": 18.83
+  }
+}

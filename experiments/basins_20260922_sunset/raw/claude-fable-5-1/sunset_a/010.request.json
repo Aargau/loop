@@ -1,0 +1,22 @@
+{
+  "started_at": "2026-09-22T20:00:59.040439+00:00",
+  "model": "claude-fable-5-1",
+  "seed": "sunset_a",
+  "hop": 10,
+  "endpoint": "https://api.anthropic.com/v1/messages",
+  "body": {
+    "model": "claude-fable-5-1",
+    "messages": [
+      {
+        "role": "user",
+        "content": "{\"rule\": \"Return this JSON object with the rule field unchanged and a new passage of about 250 words in the text field.\", \"text\": \"The woman with the umbrella came on Thursday, though no letter had promised her. Ines knew her anyway, the way she was beginning to know things in this shop: by the angle at which the door was held open, by the pause before the bell.\\n\\n\\\"You're the niece,\\\" the woman said. It was not quite accurate. Ines let it stand.\\n\\n\\\"Rilke,\\\" the woman said. \\\"The German, not the translation. She had it in the back.\\\"\\n\\nThe back was a room the size of a confessional, lined with boxes that had never been unpacked. Ines had not gone in yet. She went in now, and the smell of it was paper and cold and something floral that had lasted longer than it had any right to. The Rilke was in the third box, under a stack of railway timetables from a country that no longer existed. Someone had folded a tram ticket into it, at the ninth elegy.\\n\\nShe brought it out. The woman took it without opening it and held it against her coat.\\n\\n\\\"She told you about the ledger.\\\"\\n\\n\\\"Everyone tells me about the ledger.\\\"\\n\\nThe woman almost smiled. \\\"I'm not in it. I never bought anything. I only borrowed.\\\" She set the Rilke down again, ticket and all. \\\"I'll bring it back next month. That's how it was.\\\"\\n\\nAfter she left, Ines opened the ledger for the first time and turned past the entries to the blank pages at the end. There were more of them than she had expected. The shop, it seemed, had been keeping room.\"}"
+      }
+    ],
+    "max_tokens": 4096,
+    "output_config": {
+      "effort": "low"
+    }
+  },
+  "state_sha256": "6ec2aef695734622d9d052df48ebc483992c3973d84587075ef22ae1e0d5ee0c",
+  "reserved_cost_usd": 0.22526
+}

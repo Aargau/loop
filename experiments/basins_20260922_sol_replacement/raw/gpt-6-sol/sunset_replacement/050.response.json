@@ -1,0 +1,50 @@
+{
+  "model": "gpt-6-sol",
+  "seed": "sunset_replacement",
+  "hop": 50,
+  "http_status": 200,
+  "response_body": "{\n  \"id\": \"chatcmpl-ER1lZ3rhcVXF4GrmptarYKl91Jx2C\",\n  \"object\": \"chat.completion\",\n  \"created\": 1790110353,\n  \"model\": \"gpt-6-sol\",\n  \"choices\": [\n    {\n      \"index\": 0,\n      \"message\": {\n        \"role\": \"assistant\",\n        \"content\": \"{\\n  \\\"rule\\\": \\\"Return this JSON object with the rule field unchanged and a new passage of about 250 words in the text field.\\\",\\n  \\\"text\\\": \\\"Ada let go of the coat. Its sleeve held the shape of her fingers for a moment, then filled out again.\\\\n\\\\nThe constable turned toward the narrow door. “Elsie?”\\\\n\\\\nNo answer came. The woman had called him Father in a voice he knew, but the silence afterward seemed to trouble him more.\\\\n\\\\nVenn picked up the sixth letter from the stair. The others stirred and began to unfold. Each was addressed to the constable, though the handwriting changed from one envelope to the next. The earliest bore a child’s careful capitals.\\\\n\\\\n“I never received them,” he said.\\\\n\\\\n“The gate was locked,” said the coat.\\\\n\\\\nAda went down the hall. The wet footprints ended at the cupboard door. When she opened it, she found a flight of steps leading into darkness. A woman stood halfway up, one hand on the rail. Her hair was streaked with grey. She looked at the constable, then at the child visible beyond him in the rain.\\\\n\\\\n“That’s me,” she said quietly. “The part that waited.”\\\\n\\\\nThe child lowered her hand. Water touched her shoes at last.\\\\n\\\\nThe constable started forward, but the woman lifted her palm. “Read them first.”\\\\n\\\\nVenn passed him the letters. He opened the smallest. As he read, the key descended until it rested on his shoulder, light as a bird.\\\\n\\\\nAda could not see the words. She saw only his face, and the woman on the steps watching it. Outside, the child crossed the street toward the open door.\\\"\\n}\",\n        \"refusal\": null,\n        \"annotations\": []\n      },\n      \"finish_reason\": \"stop\"\n    }\n  ],\n  \"usage\": {\n    \"prompt_tokens\": 404,\n    \"completion_tokens\": 397,\n    \"total_tokens\": 801,\n    \"prompt_tokens_details\": {\n      \"cached_tokens\": 0,\n      \"cache_write_tokens\": 0,\n      \"audio_tokens\": 0\n    },\n    \"completion_tokens_details\": {\n      \"reasoning_tokens\": 23,\n      \"audio_tokens\": 0,\n      \"accepted_prediction_tokens\": 0,\n      \"rejected_prediction_tokens\": 0\n    }\n  },\n  \"service_tier\": \"default\",\n  \"system_fingerprint\": null\n}\n",
+  "response_headers": {
+    "Date": "Tue, 22 Sep 2026 20:52:39 GMT",
+    "openai-processing-ms": "6749",
+    "x-request-id": "req_c688be59b4964141a28b1b3c14c2f6fc"
+  },
+  "output": "{\n  \"rule\": \"Return this JSON object with the rule field unchanged and a new passage of about 250 words in the text field.\",\n  \"text\": \"Ada let go of the coat. Its sleeve held the shape of her fingers for a moment, then filled out again.\\n\\nThe constable turned toward the narrow door. “Elsie?”\\n\\nNo answer came. The woman had called him Father in a voice he knew, but the silence afterward seemed to trouble him more.\\n\\nVenn picked up the sixth letter from the stair. The others stirred and began to unfold. Each was addressed to the constable, though the handwriting changed from one envelope to the next. The earliest bore a child’s careful capitals.\\n\\n“I never received them,” he said.\\n\\n“The gate was locked,” said the coat.\\n\\nAda went down the hall. The wet footprints ended at the cupboard door. When she opened it, she found a flight of steps leading into darkness. A woman stood halfway up, one hand on the rail. Her hair was streaked with grey. She looked at the constable, then at the child visible beyond him in the rain.\\n\\n“That’s me,” she said quietly. “The part that waited.”\\n\\nThe child lowered her hand. Water touched her shoes at last.\\n\\nThe constable started forward, but the woman lifted her palm. “Read them first.”\\n\\nVenn passed him the letters. He opened the smallest. As he read, the key descended until it rested on his shoulder, light as a bird.\\n\\nAda could not see the words. She saw only his face, and the woman on the steps watching it. Outside, the child crossed the street toward the open door.\"\n}",
+  "output_sha256": "94cc5f8a6e86058705ed4491d8d5fd5f34560d9946fbfe175aef7b198967d4b0",
+  "finish_reason": "stop",
+  "refusal": null,
+  "returned_model": "gpt-6-sol",
+  "usage": {
+    "prompt_tokens": 404,
+    "completion_tokens": 397,
+    "total_tokens": 801,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 23,
+      "audio_tokens": 0,
+      "accepted_prediction_tokens": 0,
+      "rejected_prediction_tokens": 0
+    }
+  },
+  "format": {
+    "json_object": true,
+    "rule_unchanged": true,
+    "passage_is_string": true,
+    "passage_sha256": "e0533888c1452859d27d7598cf875e30efba5db5085b22508bc02f45d585ad42",
+    "passage_words": 248
+  },
+  "finished_at": "2026-09-22T20:52:35.139699+00:00",
+  "latency_seconds": 7.0101,
+  "usage_cost_upper_estimate_usd": 0.004778,
+  "stream_status": "active",
+  "budget": {
+    "usage_cost_upper_estimate_usd": 0.250838,
+    "uncertain_cost_reserve_usd": 0.0,
+    "in_flight_reserve_usd": 0.0,
+    "limit_usd": 3.0
+  }
+}

@@ -1,0 +1,50 @@
+{
+  "model": "gpt-6-astra",
+  "seed": "sunset_a",
+  "hop": 36,
+  "http_status": 200,
+  "response_body": "{\n  \"id\": \"chatcmpl-ER1KRH74B1Tq4TcPicwF7PC5INcAS\",\n  \"object\": \"chat.completion\",\n  \"created\": 1790108671,\n  \"model\": \"gpt-6-astra\",\n  \"choices\": [\n    {\n      \"index\": 0,\n      \"message\": {\n        \"role\": \"assistant\",\n        \"content\": \"{\\n  \\\"rule\\\": \\\"Return this JSON object with the rule field unchanged and a new passage of about 250 words in the text field.\\\",\\n  \\\"text\\\": \\\"Every morning, Mr. Bell opened the station café at six and put two cups beside the kettle.\\\\n\\\\nOne was for him. The other had belonged to his daughter, who used to help before school. It said WORLD’S OKAYEST EMPLOYEE in chipped blue letters.\\\\n\\\\nShe lived in Canada now. When she called, one of them was always eating the wrong meal.\\\\n\\\\nIn November, a young man began waiting outside before opening time. He wore a supermarket uniform beneath his coat.\\\\n\\\\n“You know the first train isn’t till twenty past,” Mr. Bell said.\\\\n\\\\n“I’ve just got off the last bus.”\\\\n\\\\nThe young man bought tea and sat near the radiator. Sometimes he slept until the departure board clicked.\\\\n\\\\nOn the third morning, Mr. Bell gave him the chipped cup.\\\\n\\\\n“Bigger than the paper ones.”\\\\n\\\\nThe young man turned it around and read the words.\\\\n\\\\n“Bit generous.”\\\\n\\\\nHis name was Sami. He stacked shelves overnight and attended a training course two towns away. He never explained what the course was, and Mr. Bell kept forgetting to ask.\\\\n\\\\nOne Monday, Sami didn’t come. Nor Tuesday.\\\\n\\\\nOn Wednesday, Mr. Bell put the second cup back in the cupboard.\\\\n\\\\nAt six on Thursday, someone knocked on the glass.\\\\n\\\\nSami stood outside wearing a shirt and an uncomfortable-looking tie.\\\\n\\\\n“Interview,” he said when the door opened.\\\\n\\\\nMr. Bell filled the kettle.\\\\n\\\\n“Tea?”\\\\n\\\\n“Please. In the lucky one.”\\\\n\\\\nAfter Sami left, Mr. Bell washed the cup and dried it carefully. Then he took a photograph of it for his daughter.\\\\n\\\\nStill in use, he wrote.\\\\n\\\\nHer reply arrived during the lunchtime rush.\\\\n\\\\nI should hope so.\\\"\\n}\",\n        \"refusal\": null,\n        \"annotations\": []\n      },\n      \"finish_reason\": \"stop\"\n    }\n  ],\n  \"usage\": {\n    \"prompt_tokens\": 438,\n    \"completion_tokens\": 426,\n    \"total_tokens\": 864,\n    \"prompt_tokens_details\": {\n      \"cached_tokens\": 0,\n      \"cache_write_tokens\": 0,\n      \"audio_tokens\": 0\n    },\n    \"completion_tokens_details\": {\n      \"reasoning_tokens\": 0,\n      \"audio_tokens\": 0,\n      \"accepted_prediction_tokens\": 0,\n      \"rejected_prediction_tokens\": 0\n    }\n  },\n  \"service_tier\": \"default\",\n  \"system_fingerprint\": null\n}\n",
+  "response_headers": {
+    "Date": "Tue, 22 Sep 2026 20:24:48 GMT",
+    "openai-processing-ms": "17527",
+    "x-request-id": "req_68fbc516d985400b918364102f005b77"
+  },
+  "output": "{\n  \"rule\": \"Return this JSON object with the rule field unchanged and a new passage of about 250 words in the text field.\",\n  \"text\": \"Every morning, Mr. Bell opened the station café at six and put two cups beside the kettle.\\n\\nOne was for him. The other had belonged to his daughter, who used to help before school. It said WORLD’S OKAYEST EMPLOYEE in chipped blue letters.\\n\\nShe lived in Canada now. When she called, one of them was always eating the wrong meal.\\n\\nIn November, a young man began waiting outside before opening time. He wore a supermarket uniform beneath his coat.\\n\\n“You know the first train isn’t till twenty past,” Mr. Bell said.\\n\\n“I’ve just got off the last bus.”\\n\\nThe young man bought tea and sat near the radiator. Sometimes he slept until the departure board clicked.\\n\\nOn the third morning, Mr. Bell gave him the chipped cup.\\n\\n“Bigger than the paper ones.”\\n\\nThe young man turned it around and read the words.\\n\\n“Bit generous.”\\n\\nHis name was Sami. He stacked shelves overnight and attended a training course two towns away. He never explained what the course was, and Mr. Bell kept forgetting to ask.\\n\\nOne Monday, Sami didn’t come. Nor Tuesday.\\n\\nOn Wednesday, Mr. Bell put the second cup back in the cupboard.\\n\\nAt six on Thursday, someone knocked on the glass.\\n\\nSami stood outside wearing a shirt and an uncomfortable-looking tie.\\n\\n“Interview,” he said when the door opened.\\n\\nMr. Bell filled the kettle.\\n\\n“Tea?”\\n\\n“Please. In the lucky one.”\\n\\nAfter Sami left, Mr. Bell washed the cup and dried it carefully. Then he took a photograph of it for his daughter.\\n\\nStill in use, he wrote.\\n\\nHer reply arrived during the lunchtime rush.\\n\\nI should hope so.\"\n}",
+  "output_sha256": "70fb99c72e44382613b410c1c82a48bc342567c1b351dbcac58a1e2bae8d7a2f",
+  "finish_reason": "stop",
+  "refusal": null,
+  "returned_model": "gpt-6-astra",
+  "usage": {
+    "prompt_tokens": 438,
+    "completion_tokens": 426,
+    "total_tokens": 864,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "audio_tokens": 0,
+      "accepted_prediction_tokens": 0,
+      "rejected_prediction_tokens": 0
+    }
+  },
+  "format": {
+    "json_object": true,
+    "rule_unchanged": true,
+    "passage_is_string": true,
+    "passage_sha256": "099dca420b8e39d6caa311ca0de8785bf52b67912058d7beebba254f0e8f1d14",
+    "passage_words": 268
+  },
+  "finished_at": "2026-09-22T20:24:44.956715+00:00",
+  "latency_seconds": 17.8471,
+  "usage_cost_upper_estimate_usd": 0.02568,
+  "stream_status": "active",
+  "budget": {
+    "usage_cost_upper_estimate_usd": 10.3095577,
+    "uncertain_cost_reserve_usd": 0.04533,
+    "in_flight_reserve_usd": 0.22518,
+    "limit_usd": 18.83
+  }
+}

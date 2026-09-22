@@ -1,0 +1,48 @@
+{
+  "model": "claude-fable-5-1",
+  "seed": "tide",
+  "hop": 55,
+  "http_status": 200,
+  "response_body": "{\"model\":\"claude-fable-5-1\",\"id\":\"msg_011CfK7QnR2MbmYjfX7iAXQ4\",\"type\":\"message\",\"role\":\"assistant\",\"content\":[{\"type\":\"text\",\"text\":\"{\\\"rule\\\": \\\"Return this JSON object with the rule field unchanged and a new passage of about 250 words in the text field.\\\", \\\"text\\\": \\\"The well was at the bottom of the pasture where the ground went soft in spring, and he walked down to it with the toolbox while she stayed on the porch with her arms folded against the cold. She could see him from there, small against the fence line, the truck idling in the yard behind her like it might leave without him.\\\\n\\\\nHe pulled the cover off and knelt and looked down into it a long while. Then he stood and looked back up at the house, and she did not wave, and he did not either.\\\\n\\\\nWhen he came back his knees were dark with mud.\\\\n\\\\n\\\\\\\"Pump's fine,\\\\\\\" he said. \\\\\\\"It's the pressure switch. I can get one in town.\\\\\\\"\\\\n\\\\n\\\\\\\"Town's the wrong direction.\\\\\\\"\\\\n\\\\n\\\\\\\"I know which direction town is.\\\\\\\"\\\\n\\\\nShe went inside and came out with the coffee can from the top of the refrigerator and counted out bills onto the porch rail. He watched her do it and did not stop her and did not pick them up.\\\\n\\\\n\\\\\\\"He never fixed it right,\\\\\\\" he said. \\\\\\\"That's all. He'd get it going and it'd hold a season.\\\\\\\"\\\\n\\\\n\\\\\\\"It held.\\\\\\\"\\\\n\\\\n\\\\\\\"It held,\\\\\\\" he agreed.\\\\n\\\\nHe took the money then, folded it once without counting, and put it in the same pocket as whatever he had brought out of the barn. She heard the two things meet in there, a small dull sound, and then he was walking to the truck and she was watching the frost finally start to lift off the grass in patches, the way it did every morning, whether anyone was there to see it or not.\\\"}\"}],\"container\":null,\"stop_reason\":\"end_turn\",\"stop_sequence\":null,\"stop_details\":null,\"usage\":{\"input_tokens\":594,\"cache_creation_input_tokens\":0,\"cache_read_input_tokens\":0,\"cache_creation\":{\"ephemeral_5m_input_tokens\":0,\"ephemeral_1h_input_tokens\":0},\"output_tokens\":527,\"output_tokens_details\":{\"thinking_tokens\":0},\"service_tier\":\"standard\",\"inference_geo\":\"global\"}}",
+  "response_headers": {
+    "Date": "Tue, 22 Sep 2026 20:30:22 GMT",
+    "request-id": "req_011CfK7Qn3SdtRgmrKgqfxAc"
+  },
+  "output": "{\"rule\": \"Return this JSON object with the rule field unchanged and a new passage of about 250 words in the text field.\", \"text\": \"The well was at the bottom of the pasture where the ground went soft in spring, and he walked down to it with the toolbox while she stayed on the porch with her arms folded against the cold. She could see him from there, small against the fence line, the truck idling in the yard behind her like it might leave without him.\\n\\nHe pulled the cover off and knelt and looked down into it a long while. Then he stood and looked back up at the house, and she did not wave, and he did not either.\\n\\nWhen he came back his knees were dark with mud.\\n\\n\\\"Pump's fine,\\\" he said. \\\"It's the pressure switch. I can get one in town.\\\"\\n\\n\\\"Town's the wrong direction.\\\"\\n\\n\\\"I know which direction town is.\\\"\\n\\nShe went inside and came out with the coffee can from the top of the refrigerator and counted out bills onto the porch rail. He watched her do it and did not stop her and did not pick them up.\\n\\n\\\"He never fixed it right,\\\" he said. \\\"That's all. He'd get it going and it'd hold a season.\\\"\\n\\n\\\"It held.\\\"\\n\\n\\\"It held,\\\" he agreed.\\n\\nHe took the money then, folded it once without counting, and put it in the same pocket as whatever he had brought out of the barn. She heard the two things meet in there, a small dull sound, and then he was walking to the truck and she was watching the frost finally start to lift off the grass in patches, the way it did every morning, whether anyone was there to see it or not.\"}",
+  "output_sha256": "7f31bcd614e9d1826e370ddecda3318e55e3149c3ca0b3702d967205544fdcad",
+  "finish_reason": "end_turn",
+  "refusal": null,
+  "returned_model": "claude-fable-5-1",
+  "usage": {
+    "input_tokens": 594,
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 0,
+    "cache_creation": {
+      "ephemeral_5m_input_tokens": 0,
+      "ephemeral_1h_input_tokens": 0
+    },
+    "output_tokens": 527,
+    "output_tokens_details": {
+      "thinking_tokens": 0
+    },
+    "service_tier": "standard",
+    "inference_geo": "global"
+  },
+  "format": {
+    "json_object": true,
+    "rule_unchanged": true,
+    "passage_is_string": true,
+    "passage_sha256": "fe0c3fd59b2e55ef315083fe833fc9cabc3d1f03b743dbc2331edc05ba201c02",
+    "passage_words": 272
+  },
+  "finished_at": "2026-09-22T20:30:18.325409+00:00",
+  "latency_seconds": 11.9551,
+  "usage_cost_upper_estimate_usd": 0.03229,
+  "stream_status": "active",
+  "budget": {
+    "usage_cost_upper_estimate_usd": 11.6445677,
+    "uncertain_cost_reserve_usd": 0.04533,
+    "in_flight_reserve_usd": 0.22851,
+    "limit_usd": 18.83
+  }
+}

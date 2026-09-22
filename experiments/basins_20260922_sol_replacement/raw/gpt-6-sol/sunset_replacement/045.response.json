@@ -1,0 +1,50 @@
+{
+  "model": "gpt-6-sol",
+  "seed": "sunset_replacement",
+  "hop": 45,
+  "http_status": 200,
+  "response_body": "{\n  \"id\": \"chatcmpl-ER1kzxyeQiWh8gCByza0nJY7RAnqi\",\n  \"object\": \"chat.completion\",\n  \"created\": 1790110317,\n  \"model\": \"gpt-6-sol\",\n  \"choices\": [\n    {\n      \"index\": 0,\n      \"message\": {\n        \"role\": \"assistant\",\n        \"content\": \"{\\n  \\\"rule\\\": \\\"Return this JSON object with the rule field unchanged and a new passage of about 250 words in the text field.\\\",\\n  \\\"text\\\": \\\"The letters were warm. Ada closed her fingers around them before Elias could see, but something moved beneath her skin, arranging itself against her palm.\\\\n\\\\n“Don’t read it,” Venn said.\\\\n\\\\n“I haven’t.”\\\\n\\\\nThe brass plate shuddered. From the stairwell came the soft scrape of a shoe on the next step. The constable raised his lantern, illuminating nothing but peeling wallpaper.\\\\n\\\\nAda opened her hand. Six letters lay there, bright as coins. She knew the word they made. It had been spoken at Mara’s funeral, though no one had understood why Mara had asked for it to be carved beneath her own name.\\\\n\\\\nBehind the door, the voice sighed. “She remembered.”\\\\n\\\\nAda looked at the warning on the yellow paper. Don’t answer until it asks to leave. Mara had left instructions, not a promise that they would be safe.\\\\n\\\\nShe set the letters on the floor, one at a time, spelling the name aloud. With each syllable, a scratch vanished from the door. On the final one, the stairwell gave a long, hollow creak.\\\\n\\\\nThe little gate in the plate swung wide. Through it Ada saw rain falling across an empty street.\\\\n\\\\n“Is it gone?” the constable whispered.\\\\n\\\\nVenn leaned toward the opening. Ada caught his sleeve before he could touch it.\\\\n\\\\nAt the bottom of the stairs, someone knocked on the front door: six patient blows.\\\\n\\\\nThen Mara’s voice called up to them, no longer pleading. “Ada? I think you’ve let me out.”\\\"\\n}\",\n        \"refusal\": null,\n        \"annotations\": []\n      },\n      \"finish_reason\": \"stop\"\n    }\n  ],\n  \"usage\": {\n    \"prompt_tokens\": 387,\n    \"completion_tokens\": 405,\n    \"total_tokens\": 792,\n    \"prompt_tokens_details\": {\n      \"cached_tokens\": 0,\n      \"cache_write_tokens\": 0,\n      \"audio_tokens\": 0\n    },\n    \"completion_tokens_details\": {\n      \"reasoning_tokens\": 26,\n      \"audio_tokens\": 0,\n      \"accepted_prediction_tokens\": 0,\n      \"rejected_prediction_tokens\": 0\n    }\n  },\n  \"service_tier\": \"default\",\n  \"system_fingerprint\": null\n}\n",
+  "response_headers": {
+    "Date": "Tue, 22 Sep 2026 20:52:03 GMT",
+    "openai-processing-ms": "6732",
+    "x-request-id": "req_6b7e6b1f2a55496d8143d2cda64cc667"
+  },
+  "output": "{\n  \"rule\": \"Return this JSON object with the rule field unchanged and a new passage of about 250 words in the text field.\",\n  \"text\": \"The letters were warm. Ada closed her fingers around them before Elias could see, but something moved beneath her skin, arranging itself against her palm.\\n\\n“Don’t read it,” Venn said.\\n\\n“I haven’t.”\\n\\nThe brass plate shuddered. From the stairwell came the soft scrape of a shoe on the next step. The constable raised his lantern, illuminating nothing but peeling wallpaper.\\n\\nAda opened her hand. Six letters lay there, bright as coins. She knew the word they made. It had been spoken at Mara’s funeral, though no one had understood why Mara had asked for it to be carved beneath her own name.\\n\\nBehind the door, the voice sighed. “She remembered.”\\n\\nAda looked at the warning on the yellow paper. Don’t answer until it asks to leave. Mara had left instructions, not a promise that they would be safe.\\n\\nShe set the letters on the floor, one at a time, spelling the name aloud. With each syllable, a scratch vanished from the door. On the final one, the stairwell gave a long, hollow creak.\\n\\nThe little gate in the plate swung wide. Through it Ada saw rain falling across an empty street.\\n\\n“Is it gone?” the constable whispered.\\n\\nVenn leaned toward the opening. Ada caught his sleeve before he could touch it.\\n\\nAt the bottom of the stairs, someone knocked on the front door: six patient blows.\\n\\nThen Mara’s voice called up to them, no longer pleading. “Ada? I think you’ve let me out.”\"\n}",
+  "output_sha256": "0655da9cb3ffd928d7bd934a17998cd867cbae6b469072a72cffba44bb096e23",
+  "finish_reason": "stop",
+  "refusal": null,
+  "returned_model": "gpt-6-sol",
+  "usage": {
+    "prompt_tokens": 387,
+    "completion_tokens": 405,
+    "total_tokens": 792,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 26,
+      "audio_tokens": 0,
+      "accepted_prediction_tokens": 0,
+      "rejected_prediction_tokens": 0
+    }
+  },
+  "format": {
+    "json_object": true,
+    "rule_unchanged": true,
+    "passage_is_string": true,
+    "passage_sha256": "7c7c5128ebab804b0a7c6209c1e31a419f4fdb5dcbbc3fa044a586abb5759501",
+    "passage_words": 243
+  },
+  "finished_at": "2026-09-22T20:51:59.171977+00:00",
+  "latency_seconds": 6.8461,
+  "usage_cost_upper_estimate_usd": 0.004824,
+  "stream_status": "active",
+  "budget": {
+    "usage_cost_upper_estimate_usd": 0.22531,
+    "uncertain_cost_reserve_usd": 0.0,
+    "in_flight_reserve_usd": 0.0,
+    "limit_usd": 3.0
+  }
+}

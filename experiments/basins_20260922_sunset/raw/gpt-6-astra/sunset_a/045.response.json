@@ -1,0 +1,50 @@
+{
+  "model": "gpt-6-astra",
+  "seed": "sunset_a",
+  "hop": 45,
+  "http_status": 200,
+  "response_body": "{\n  \"id\": \"chatcmpl-ER1S6nEH6jXE9slqTYC0IatTyD18n\",\n  \"object\": \"chat.completion\",\n  \"created\": 1790109146,\n  \"model\": \"gpt-6-astra\",\n  \"choices\": [\n    {\n      \"index\": 0,\n      \"message\": {\n        \"role\": \"assistant\",\n        \"content\": \"{\\n  \\\"rule\\\": \\\"Return this JSON object with the rule field unchanged and a new passage of about 250 words in the text field.\\\",\\n  \\\"text\\\": \\\"After the library closed, Ruth still found borrowing slips in her coat pockets. She used them for shopping lists, writing butter beneath the names of books nobody had returned.\\\\n\\\\nHer son suggested she join something.\\\\n\\\\n“I belonged to the library.”\\\\n\\\\n“That was a job.”\\\\n\\\\n“It had chairs.”\\\\n\\\\nIn April, the laundrette put a bookcase beside its change machine. Ruth noticed it while washing the winter blankets. Someone had shelved a gardening manual between two crime novels, spine inward.\\\\n\\\\nShe corrected this.\\\\n\\\\nThe owner, a young man called Dev, watched from behind the counter.\\\\n\\\\n“Help yourself,” he said.\\\\n\\\\n“I’m not taking anything.”\\\\n\\\\n“Neither is anyone else.”\\\\n\\\\nThe next Tuesday she brought eleven paperbacks in a shopping trolley. She arranged them while her sheets revolved behind her.\\\\n\\\\nDev offered her tea in a mug advertising brake pads.\\\\n\\\\nSoon people began leaving books. Most were readable. Some had survived conditions Ruth preferred not to imagine.\\\\n\\\\nShe made a small sign: TAKE ONE. BRING ONE IF YOU LIKE.\\\\n\\\\n“Should we keep records?” Dev asked.\\\\n\\\\n“No,” she said, surprising herself.\\\\n\\\\nA taxi driver asked for something short. A woman with three children wanted a book in which nobody needed looking after. Ruth considered each request carefully.\\\\n\\\\nBy September, she was visiting on Fridays too, without washing.\\\\n\\\\nOne afternoon Dev found her repairing a torn cover with tape.\\\\n\\\\n“You know you don’t work here?”\\\\n\\\\n“Yes.”\\\\n\\\\nHe put her tea on the folding table.\\\\n\\\\nShe pressed the tape flat with her thumbnail. Beside her, a dryer stopped, and a man looked up from his book, then lowered his eyes to finish the page.\\\"\\n}\",\n        \"refusal\": null,\n        \"annotations\": []\n      },\n      \"finish_reason\": \"stop\"\n    }\n  ],\n  \"usage\": {\n    \"prompt_tokens\": 405,\n    \"completion_tokens\": 419,\n    \"total_tokens\": 824,\n    \"prompt_tokens_details\": {\n      \"cached_tokens\": 0,\n      \"cache_write_tokens\": 0,\n      \"audio_tokens\": 0\n    },\n    \"completion_tokens_details\": {\n      \"reasoning_tokens\": 0,\n      \"audio_tokens\": 0,\n      \"accepted_prediction_tokens\": 0,\n      \"rejected_prediction_tokens\": 0\n    }\n  },\n  \"service_tier\": \"default\",\n  \"system_fingerprint\": null\n}\n",
+  "response_headers": {
+    "Date": "Tue, 22 Sep 2026 20:32:49 GMT",
+    "openai-processing-ms": "22900",
+    "x-request-id": "req_2bb85884d7b94e82913ca0ae9b3e5371"
+  },
+  "output": "{\n  \"rule\": \"Return this JSON object with the rule field unchanged and a new passage of about 250 words in the text field.\",\n  \"text\": \"After the library closed, Ruth still found borrowing slips in her coat pockets. She used them for shopping lists, writing butter beneath the names of books nobody had returned.\\n\\nHer son suggested she join something.\\n\\n“I belonged to the library.”\\n\\n“That was a job.”\\n\\n“It had chairs.”\\n\\nIn April, the laundrette put a bookcase beside its change machine. Ruth noticed it while washing the winter blankets. Someone had shelved a gardening manual between two crime novels, spine inward.\\n\\nShe corrected this.\\n\\nThe owner, a young man called Dev, watched from behind the counter.\\n\\n“Help yourself,” he said.\\n\\n“I’m not taking anything.”\\n\\n“Neither is anyone else.”\\n\\nThe next Tuesday she brought eleven paperbacks in a shopping trolley. She arranged them while her sheets revolved behind her.\\n\\nDev offered her tea in a mug advertising brake pads.\\n\\nSoon people began leaving books. Most were readable. Some had survived conditions Ruth preferred not to imagine.\\n\\nShe made a small sign: TAKE ONE. BRING ONE IF YOU LIKE.\\n\\n“Should we keep records?” Dev asked.\\n\\n“No,” she said, surprising herself.\\n\\nA taxi driver asked for something short. A woman with three children wanted a book in which nobody needed looking after. Ruth considered each request carefully.\\n\\nBy September, she was visiting on Fridays too, without washing.\\n\\nOne afternoon Dev found her repairing a torn cover with tape.\\n\\n“You know you don’t work here?”\\n\\n“Yes.”\\n\\nHe put her tea on the folding table.\\n\\nShe pressed the tape flat with her thumbnail. Beside her, a dryer stopped, and a man looked up from his book, then lowered his eyes to finish the page.\"\n}",
+  "output_sha256": "cc37e29069f00a0705048e10ac053ae693453501fd6636e8db8e4f5fb80a8a4e",
+  "finish_reason": "stop",
+  "refusal": null,
+  "returned_model": "gpt-6-astra",
+  "usage": {
+    "prompt_tokens": 405,
+    "completion_tokens": 419,
+    "total_tokens": 824,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "audio_tokens": 0,
+      "accepted_prediction_tokens": 0,
+      "rejected_prediction_tokens": 0
+    }
+  },
+  "format": {
+    "json_object": true,
+    "rule_unchanged": true,
+    "passage_is_string": true,
+    "passage_sha256": "a72f64cbe4b7216fc161ce55aab882fc077b59f86e08bd471bb601da642f85ed",
+    "passage_words": 266
+  },
+  "finished_at": "2026-09-22T20:32:45.324810+00:00",
+  "latency_seconds": 23.0364,
+  "usage_cost_upper_estimate_usd": 0.025,
+  "stream_status": "active",
+  "budget": {
+    "usage_cost_upper_estimate_usd": 12.2350777,
+    "uncertain_cost_reserve_usd": 0.04533,
+    "in_flight_reserve_usd": 0.22605,
+    "limit_usd": 18.83
+  }
+}

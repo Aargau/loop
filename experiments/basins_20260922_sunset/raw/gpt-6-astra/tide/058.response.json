@@ -1,0 +1,50 @@
+{
+  "model": "gpt-6-astra",
+  "seed": "tide",
+  "hop": 58,
+  "http_status": 200,
+  "response_body": "{\n  \"id\": \"chatcmpl-ER1dJdF7Te0E9fhvnmfk4jpVq3TwN\",\n  \"object\": \"chat.completion\",\n  \"created\": 1790109841,\n  \"model\": \"gpt-6-astra\",\n  \"choices\": [\n    {\n      \"index\": 0,\n      \"message\": {\n        \"role\": \"assistant\",\n        \"content\": \"{\\n  \\\"rule\\\": \\\"Return this JSON object with the rule field unchanged and a new passage of about 250 words in the text field.\\\",\\n  \\\"text\\\": \\\"The repair shop phoned to say my father's watch was ready.\\\\n\\\\n“He paid the deposit,” the woman said. “There's twelve pounds left.”\\\\n\\\\nI went on Thursday, carrying the ticket we'd found beneath his telephone.\\\\n\\\\nThe shop was narrower than I remembered. Behind the counter, a man sat under a lamp with something small held in tweezers.\\\\n\\\\nThe woman brought out a paper envelope.\\\\n\\\\n“We replaced the winding stem. You shouldn't have any more trouble.”\\\\n\\\\nI almost told her it wasn't mine.\\\\n\\\\nShe slid the watch across a square of felt. The strap had a pale crease where he had fastened it every morning. I could remember the sound of its buckle touching the kitchen table while he buttered toast.\\\\n\\\\n“Would you like to try it?”\\\\n\\\\nIt wouldn't go over my hand until she showed me the catch.\\\\n\\\\nOn my wrist it was loose enough to turn sideways.\\\\n\\\\n“We can take a link out.”\\\\n\\\\n“No, thank you.”\\\\n\\\\nI paid the twelve pounds. She put the old stem in a little plastic bag and gave it to me with the receipt.\\\\n\\\\nOutside, I stood near the bus stop and tried to set the time by the clock above the chemist's. The hands were too small to see properly without my glasses.\\\\n\\\\nA bus came. I let it go.\\\\n\\\\nWhen I found my glasses, I saw the watch was already right.\\\\n\\\\nAt home, I put the receipt in the drawer with his papers. There was no reason to keep the broken part, but I left it in its bag.\\\\n\\\\nI wore the watch while I made lunch.\\\"\\n}\",\n        \"refusal\": null,\n        \"annotations\": []\n      },\n      \"finish_reason\": \"stop\"\n    }\n  ],\n  \"usage\": {\n    \"prompt_tokens\": 405,\n    \"completion_tokens\": 388,\n    \"total_tokens\": 793,\n    \"prompt_tokens_details\": {\n      \"cached_tokens\": 0,\n      \"cache_write_tokens\": 0,\n      \"audio_tokens\": 0\n    },\n    \"completion_tokens_details\": {\n      \"reasoning_tokens\": 0,\n      \"audio_tokens\": 0,\n      \"accepted_prediction_tokens\": 0,\n      \"rejected_prediction_tokens\": 0\n    }\n  },\n  \"service_tier\": \"default\",\n  \"system_fingerprint\": null\n}\n",
+  "response_headers": {
+    "Date": "Tue, 22 Sep 2026 20:44:17 GMT",
+    "openai-processing-ms": "15711",
+    "x-request-id": "req_5b1eb848300942c3ad3661b4d12d637e"
+  },
+  "output": "{\n  \"rule\": \"Return this JSON object with the rule field unchanged and a new passage of about 250 words in the text field.\",\n  \"text\": \"The repair shop phoned to say my father's watch was ready.\\n\\n“He paid the deposit,” the woman said. “There's twelve pounds left.”\\n\\nI went on Thursday, carrying the ticket we'd found beneath his telephone.\\n\\nThe shop was narrower than I remembered. Behind the counter, a man sat under a lamp with something small held in tweezers.\\n\\nThe woman brought out a paper envelope.\\n\\n“We replaced the winding stem. You shouldn't have any more trouble.”\\n\\nI almost told her it wasn't mine.\\n\\nShe slid the watch across a square of felt. The strap had a pale crease where he had fastened it every morning. I could remember the sound of its buckle touching the kitchen table while he buttered toast.\\n\\n“Would you like to try it?”\\n\\nIt wouldn't go over my hand until she showed me the catch.\\n\\nOn my wrist it was loose enough to turn sideways.\\n\\n“We can take a link out.”\\n\\n“No, thank you.”\\n\\nI paid the twelve pounds. She put the old stem in a little plastic bag and gave it to me with the receipt.\\n\\nOutside, I stood near the bus stop and tried to set the time by the clock above the chemist's. The hands were too small to see properly without my glasses.\\n\\nA bus came. I let it go.\\n\\nWhen I found my glasses, I saw the watch was already right.\\n\\nAt home, I put the receipt in the drawer with his papers. There was no reason to keep the broken part, but I left it in its bag.\\n\\nI wore the watch while I made lunch.\"\n}",
+  "output_sha256": "0db9931b68ceb5538ab65c79dd9db286b77bc89df50293e948256e9f6b49e8a1",
+  "finish_reason": "stop",
+  "refusal": null,
+  "returned_model": "gpt-6-astra",
+  "usage": {
+    "prompt_tokens": 405,
+    "completion_tokens": 388,
+    "total_tokens": 793,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "audio_tokens": 0,
+      "accepted_prediction_tokens": 0,
+      "rejected_prediction_tokens": 0
+    }
+  },
+  "format": {
+    "json_object": true,
+    "rule_unchanged": true,
+    "passage_is_string": true,
+    "passage_sha256": "203e8927df05f84e4b750e14a187e9a3b93b61baf659f18bf4cdf23d6d727e6c",
+    "passage_words": 264
+  },
+  "finished_at": "2026-09-22T20:44:13.147773+00:00",
+  "latency_seconds": 15.9502,
+  "usage_cost_upper_estimate_usd": 0.02345,
+  "stream_status": "active",
+  "budget": {
+    "usage_cost_upper_estimate_usd": 13.4207077,
+    "uncertain_cost_reserve_usd": 0.04533,
+    "in_flight_reserve_usd": 0.0,
+    "limit_usd": 18.83
+  }
+}

@@ -1,0 +1,48 @@
+{
+  "model": "claude-fable-5-1",
+  "seed": "sunset_a",
+  "hop": 15,
+  "http_status": 200,
+  "response_body": "{\"model\":\"claude-fable-5-1\",\"id\":\"msg_011CfK5SRNKLq3EBVs257sKA\",\"type\":\"message\",\"role\":\"assistant\",\"content\":[{\"type\":\"text\",\"text\":\"{\\\"rule\\\": \\\"Return this JSON object with the rule field unchanged and a new passage of about 250 words in the text field.\\\", \\\"text\\\": \\\"By morning the paint had come away in a ring, and the brass beneath it caught the light from the courtyard door. Ines did not touch it again until the shop was closed and the tenants' footsteps had settled into the ordinary sounds of evening. Then she went out with a cloth and wiped the valve clean, and stood looking at it as if it might tell her something on its own.\\\\n\\\\nIt did not. It was a valve. It had a handle like a small iron wheel, and the wheel was stiff, and when she put her hand to it she felt the cold go up her arm the way it does from a doorknob in winter.\\\\n\\\\nShe thought about the room with the sloped ceiling. She had never been in it. She knew it only from the letters, which described it the way one describes a place one has left and cannot return to: the angle of the light in the afternoon, the particular sound the floorboards made near the window, the way the water had run somewhere behind the plaster and filled the whole room with a low, steady murmur that was almost like company.\\\\n\\\\nThat was the word the writer had used. Company.\\\\n\\\\nInes turned the wheel a quarter turn. It resisted, then gave, with a small dry sound like a knuckle cracking. Nothing happened. She waited. The courtyard was silent except for a pigeon on the gutter.\\\\n\\\\nThen, faintly, from somewhere behind the north wall, she heard it begin.\\\"}\"}],\"container\":null,\"stop_reason\":\"end_turn\",\"stop_sequence\":null,\"stop_details\":null,\"usage\":{\"input_tokens\":493,\"cache_creation_input_tokens\":0,\"cache_read_input_tokens\":0,\"cache_creation\":{\"ephemeral_5m_input_tokens\":0,\"ephemeral_1h_input_tokens\":0},\"output_tokens\":484,\"output_tokens_details\":{\"thinking_tokens\":0},\"service_tier\":\"standard\",\"inference_geo\":\"global\"}}",
+  "response_headers": {
+    "Date": "Tue, 22 Sep 2026 20:04:29 GMT",
+    "request-id": "req_011CfK5SQvGn47T4iEEEs3Qj"
+  },
+  "output": "{\"rule\": \"Return this JSON object with the rule field unchanged and a new passage of about 250 words in the text field.\", \"text\": \"By morning the paint had come away in a ring, and the brass beneath it caught the light from the courtyard door. Ines did not touch it again until the shop was closed and the tenants' footsteps had settled into the ordinary sounds of evening. Then she went out with a cloth and wiped the valve clean, and stood looking at it as if it might tell her something on its own.\\n\\nIt did not. It was a valve. It had a handle like a small iron wheel, and the wheel was stiff, and when she put her hand to it she felt the cold go up her arm the way it does from a doorknob in winter.\\n\\nShe thought about the room with the sloped ceiling. She had never been in it. She knew it only from the letters, which described it the way one describes a place one has left and cannot return to: the angle of the light in the afternoon, the particular sound the floorboards made near the window, the way the water had run somewhere behind the plaster and filled the whole room with a low, steady murmur that was almost like company.\\n\\nThat was the word the writer had used. Company.\\n\\nInes turned the wheel a quarter turn. It resisted, then gave, with a small dry sound like a knuckle cracking. Nothing happened. She waited. The courtyard was silent except for a pigeon on the gutter.\\n\\nThen, faintly, from somewhere behind the north wall, she heard it begin.\"}",
+  "output_sha256": "031ed35b1cd94dc1e48368ef87914c33971b187ad7cc9d5b2a592e8fa64793a5",
+  "finish_reason": "end_turn",
+  "refusal": null,
+  "returned_model": "claude-fable-5-1",
+  "usage": {
+    "input_tokens": 493,
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 0,
+    "cache_creation": {
+      "ephemeral_5m_input_tokens": 0,
+      "ephemeral_1h_input_tokens": 0
+    },
+    "output_tokens": 484,
+    "output_tokens_details": {
+      "thinking_tokens": 0
+    },
+    "service_tier": "standard",
+    "inference_geo": "global"
+  },
+  "format": {
+    "json_object": true,
+    "rule_unchanged": true,
+    "passage_is_string": true,
+    "passage_sha256": "d89491afd913a0711d8cfbcb34ccb594b6ca700cfec7a5a8e73acafc8bb1949e",
+    "passage_words": 254
+  },
+  "finished_at": "2026-09-22T20:04:25.182985+00:00",
+  "latency_seconds": 10.1743,
+  "usage_cost_upper_estimate_usd": 0.02913,
+  "stream_status": "active",
+  "budget": {
+    "usage_cost_upper_estimate_usd": 3.4040606,
+    "uncertain_cost_reserve_usd": 0.04533,
+    "in_flight_reserve_usd": 0.3651372,
+    "limit_usd": 18.83
+  }
+}

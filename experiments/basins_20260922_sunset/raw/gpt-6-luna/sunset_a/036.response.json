@@ -1,0 +1,50 @@
+{
+  "model": "gpt-6-luna",
+  "seed": "sunset_a",
+  "hop": 36,
+  "http_status": 200,
+  "response_body": "{\n  \"id\": \"chatcmpl-ER0zipN1mxo0uOJQUYf7HTU8FeEqq\",\n  \"object\": \"chat.completion\",\n  \"created\": 1790107386,\n  \"model\": \"gpt-6-luna\",\n  \"choices\": [\n    {\n      \"index\": 0,\n      \"message\": {\n        \"role\": \"assistant\",\n        \"content\": \"{\\\"rule\\\":\\\"Return this JSON object with the rule field unchanged and a new passage of about 250 words in the text field.\\\",\\\"text\\\":\\\"Every Thursday afternoon, a small blue bicycle appeared outside the town library. Its owner, an elderly man named Tomas, would lean it against the railing and carry a stack of books inside. He always chose mysteries, but he never borrowed the same author twice.\\\\n\\\\nOne rainy afternoon, Tomas found a girl sitting on the library steps, staring at the puddles. Her name was Nia, and she had missed the bus home. The rain had soaked her backpack, and the pages of her school notebook were beginning to curl.\\\\n\\\\n“Come in and warm up,” Tomas said. “The library has a good roof and better stories.”\\\\n\\\\nNia followed him inside. While the librarian found a towel for her backpack, Tomas showed her the children’s reading corner. Nia picked a book about a girl who sailed around the world in a homemade boat. She began reading and soon forgot the rain tapping at the windows.\\\\n\\\\nWhen the storm passed, Tomas offered to walk with her to the bus stop. Before they left, Nia asked if she could borrow the book. The librarian helped her sign up for a library card, and Tomas waited patiently while she wrote her name on the form.\\\\n\\\\nAfter that, Nia started visiting the library every Thursday. She and Tomas traded recommendations, and sometimes they sat by the window reading in companionable silence. When Nia finished her first mystery, Tomas smiled and promised to bring her another.\\\\n\\\\nYears later, Nia still remembered the rainy day that had led her to the library. She became a teacher, and every Thursday she brought her students books to share. At the end of each visit, she told them that one small invitation could open the door to a whole world.\\\"}\",\n        \"refusal\": null,\n        \"annotations\": []\n      },\n      \"finish_reason\": \"stop\"\n    }\n  ],\n  \"usage\": {\n    \"prompt_tokens\": 396,\n    \"completion_tokens\": 451,\n    \"total_tokens\": 847,\n    \"prompt_tokens_details\": {\n      \"cached_tokens\": 0,\n      \"cache_write_tokens\": 0,\n      \"audio_tokens\": 0\n    },\n    \"completion_tokens_details\": {\n      \"reasoning_tokens\": 60,\n      \"audio_tokens\": 0,\n      \"accepted_prediction_tokens\": 0,\n      \"rejected_prediction_tokens\": 0\n    }\n  },\n  \"service_tier\": \"default\",\n  \"system_fingerprint\": null\n}\n",
+  "response_headers": {
+    "Date": "Tue, 22 Sep 2026 20:03:12 GMT",
+    "openai-processing-ms": "5750",
+    "x-request-id": "req_bf8a13d13f104d9cb39238484954d9f8"
+  },
+  "output": "{\"rule\":\"Return this JSON object with the rule field unchanged and a new passage of about 250 words in the text field.\",\"text\":\"Every Thursday afternoon, a small blue bicycle appeared outside the town library. Its owner, an elderly man named Tomas, would lean it against the railing and carry a stack of books inside. He always chose mysteries, but he never borrowed the same author twice.\\n\\nOne rainy afternoon, Tomas found a girl sitting on the library steps, staring at the puddles. Her name was Nia, and she had missed the bus home. The rain had soaked her backpack, and the pages of her school notebook were beginning to curl.\\n\\n“Come in and warm up,” Tomas said. “The library has a good roof and better stories.”\\n\\nNia followed him inside. While the librarian found a towel for her backpack, Tomas showed her the children’s reading corner. Nia picked a book about a girl who sailed around the world in a homemade boat. She began reading and soon forgot the rain tapping at the windows.\\n\\nWhen the storm passed, Tomas offered to walk with her to the bus stop. Before they left, Nia asked if she could borrow the book. The librarian helped her sign up for a library card, and Tomas waited patiently while she wrote her name on the form.\\n\\nAfter that, Nia started visiting the library every Thursday. She and Tomas traded recommendations, and sometimes they sat by the window reading in companionable silence. When Nia finished her first mystery, Tomas smiled and promised to bring her another.\\n\\nYears later, Nia still remembered the rainy day that had led her to the library. She became a teacher, and every Thursday she brought her students books to share. At the end of each visit, she told them that one small invitation could open the door to a whole world.\"}",
+  "output_sha256": "3e995008d02191e2a216bf28d3e218bd3f580b6a38b49b21d48a31d36ac37d0f",
+  "finish_reason": "stop",
+  "refusal": null,
+  "returned_model": "gpt-6-luna",
+  "usage": {
+    "prompt_tokens": 396,
+    "completion_tokens": 451,
+    "total_tokens": 847,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 60,
+      "audio_tokens": 0,
+      "accepted_prediction_tokens": 0,
+      "rejected_prediction_tokens": 0
+    }
+  },
+  "format": {
+    "json_object": true,
+    "rule_unchanged": true,
+    "passage_is_string": true,
+    "passage_sha256": "87460c66c5dabc92057feb48c6bc9b0183e2b5347143d5158532be7494cf52c9",
+    "passage_words": 288
+  },
+  "finished_at": "2026-09-22T20:03:08.405226+00:00",
+  "latency_seconds": 5.9087,
+  "usage_cost_upper_estimate_usd": 0.00026510000000000005,
+  "stream_status": "active",
+  "budget": {
+    "usage_cost_upper_estimate_usd": 2.8907793,
+    "uncertain_cost_reserve_usd": 0.04533,
+    "in_flight_reserve_usd": 0.589172,
+    "limit_usd": 18.83
+  }
+}

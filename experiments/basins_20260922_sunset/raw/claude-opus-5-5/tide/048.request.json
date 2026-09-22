@@ -1,0 +1,22 @@
+{
+  "started_at": "2026-09-22T20:17:45.872633+00:00",
+  "model": "claude-opus-5-5",
+  "seed": "tide",
+  "hop": 48,
+  "endpoint": "https://api.anthropic.com/v1/messages",
+  "body": {
+    "model": "claude-opus-5-5",
+    "messages": [
+      {
+        "role": "user",
+        "content": "```json\n{\"rule\": \"Return this JSON object with the rule field unchanged and a new passage of about 250 words in the text field.\", \"text\": \"The tin went back to its place on the top shelf of the pantry, behind the jars of chutney and the paraffin lamp nobody used anymore. Through the dark months she did not open it, though sometimes, reaching for the golden syrup, she would touch the lid with one finger, the way you might touch the shoulder of someone sleeping. Snow came in January and stayed a week, and the wigwam stood bare in the garden, its canes grey and knotted with the dead stems of last year's vines. Her mother talked about pulling them down. The girl asked her to wait. In February a letter arrived from her cousin in Aberdeen, who wrote that their allotment had flooded and they had lost everything, even the rhubarb. The girl read it twice at the kitchen table. That evening she took down the tin, opened the new envelope, and counted out four of the speckled beans onto her palm. She wrapped them in a square of greaseproof paper, folded it into a tiny parcel, and tucked it inside a card. On the card she drew a bean climbing a cane, turning anticlockwise, and underneath she wrote the instructions exactly as she remembered them: soak overnight, plant an inch deep, keep them on the sill until the frosts are over. Then, after a long moment with the pen hovering, she added one more line. They are slow at first. Be patient with them. They know what they are doing. She sealed the envelope and walked it to the postbox herself.\"}\n```"
+      }
+    ],
+    "max_tokens": 4096,
+    "output_config": {
+      "effort": "low"
+    }
+  },
+  "state_sha256": "99f091d50bfe504d16386246e3ae3c1b757eb978df4a72810f9f0302f9a1c706",
+  "reserved_cost_usd": 0.090184
+}

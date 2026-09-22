@@ -1,0 +1,50 @@
+{
+  "model": "gpt-6-luna",
+  "seed": "sunset_a",
+  "hop": 33,
+  "http_status": 200,
+  "response_body": "{\n  \"id\": \"chatcmpl-ER0z6kxtePH9WvwianiOevu5rEGTL\",\n  \"object\": \"chat.completion\",\n  \"created\": 1790107348,\n  \"model\": \"gpt-6-luna\",\n  \"choices\": [\n    {\n      \"index\": 0,\n      \"message\": {\n        \"role\": \"assistant\",\n        \"content\": \"{\\\"rule\\\":\\\"Return this JSON object with the rule field unchanged and a new passage of about 250 words in the text field.\\\",\\\"text\\\":\\\"When a storm knocked down the old oak tree beside Maple School, students were sad to see it lying across the playground. For years, it had provided shade during lunch and a quiet place to sit before class. The principal explained that the tree could not be saved, but its wood might still be useful.\\\\n\\\\nMaya suggested building benches for the playground. Her class liked the idea, though nobody knew how to begin. Their art teacher contacted a local carpenter, who offered to show them how to measure, sand, and join the boards safely. The school also invited families to help on a Saturday.\\\\n\\\\nAt first, the work seemed difficult. The pieces of oak were heavy, and some boards had rough edges. Maya and her friends wore safety glasses and carefully sanded the wood. The carpenter guided the adults as they assembled the benches, while the students painted small leaves and birds along the sides.\\\\n\\\\nBy afternoon, three sturdy benches stood beneath the younger trees. Everyone gathered to admire them. Maya noticed that one bench had a knot in the wood shaped like a tiny heart. The class decided it should be called the Heart Bench.\\\\n\\\\nSoon, students began using the benches to read, talk, and watch butterflies near the garden. A few weeks later, the principal placed a small sign beside them: “Made from the oak that watched over us.”\\\\n\\\\nThe fallen tree was gone, but its story remained in the playground. Whenever Maya sat on the Heart Bench, she remembered that something new could grow from a loss—and that a whole community could build it together.\\\"}\",\n        \"refusal\": null,\n        \"annotations\": []\n      },\n      \"finish_reason\": \"stop\"\n    }\n  ],\n  \"usage\": {\n    \"prompt_tokens\": 344,\n    \"completion_tokens\": 406,\n    \"total_tokens\": 750,\n    \"prompt_tokens_details\": {\n      \"cached_tokens\": 0,\n      \"cache_write_tokens\": 0,\n      \"audio_tokens\": 0\n    },\n    \"completion_tokens_details\": {\n      \"reasoning_tokens\": 48,\n      \"audio_tokens\": 0,\n      \"accepted_prediction_tokens\": 0,\n      \"rejected_prediction_tokens\": 0\n    }\n  },\n  \"service_tier\": \"default\",\n  \"system_fingerprint\": null\n}\n",
+  "response_headers": {
+    "Date": "Tue, 22 Sep 2026 20:02:33 GMT",
+    "openai-processing-ms": "5451",
+    "x-request-id": "req_c7a9811582284218ad2a110bfeaa5f51"
+  },
+  "output": "{\"rule\":\"Return this JSON object with the rule field unchanged and a new passage of about 250 words in the text field.\",\"text\":\"When a storm knocked down the old oak tree beside Maple School, students were sad to see it lying across the playground. For years, it had provided shade during lunch and a quiet place to sit before class. The principal explained that the tree could not be saved, but its wood might still be useful.\\n\\nMaya suggested building benches for the playground. Her class liked the idea, though nobody knew how to begin. Their art teacher contacted a local carpenter, who offered to show them how to measure, sand, and join the boards safely. The school also invited families to help on a Saturday.\\n\\nAt first, the work seemed difficult. The pieces of oak were heavy, and some boards had rough edges. Maya and her friends wore safety glasses and carefully sanded the wood. The carpenter guided the adults as they assembled the benches, while the students painted small leaves and birds along the sides.\\n\\nBy afternoon, three sturdy benches stood beneath the younger trees. Everyone gathered to admire them. Maya noticed that one bench had a knot in the wood shaped like a tiny heart. The class decided it should be called the Heart Bench.\\n\\nSoon, students began using the benches to read, talk, and watch butterflies near the garden. A few weeks later, the principal placed a small sign beside them: “Made from the oak that watched over us.”\\n\\nThe fallen tree was gone, but its story remained in the playground. Whenever Maya sat on the Heart Bench, she remembered that something new could grow from a loss—and that a whole community could build it together.\"}",
+  "output_sha256": "218b6cee8cd4189415611579cc3d7c976a650b9ec586c7129d14cd132885c5b1",
+  "finish_reason": "stop",
+  "refusal": null,
+  "returned_model": "gpt-6-luna",
+  "usage": {
+    "prompt_tokens": 344,
+    "completion_tokens": 406,
+    "total_tokens": 750,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 48,
+      "audio_tokens": 0,
+      "accepted_prediction_tokens": 0,
+      "rejected_prediction_tokens": 0
+    }
+  },
+  "format": {
+    "json_object": true,
+    "rule_unchanged": true,
+    "passage_is_string": true,
+    "passage_sha256": "da026b2c729b60cffd3c334f0b21742cf57f39bfdaeee7e9a03251f2c98fa0b3",
+    "passage_words": 268
+  },
+  "finished_at": "2026-09-22T20:02:29.902227+00:00",
+  "latency_seconds": 5.5727,
+  "usage_cost_upper_estimate_usd": 0.0002374,
+  "stream_status": "active",
+  "budget": {
+    "usage_cost_upper_estimate_usd": 2.6897176,
+    "uncertain_cost_reserve_usd": 0.04533,
+    "in_flight_reserve_usd": 0.58762,
+    "limit_usd": 18.83
+  }
+}

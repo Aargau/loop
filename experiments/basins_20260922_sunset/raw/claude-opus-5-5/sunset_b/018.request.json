@@ -1,0 +1,22 @@
+{
+  "started_at": "2026-09-22T20:03:19.856499+00:00",
+  "model": "claude-opus-5-5",
+  "seed": "sunset_b",
+  "hop": 18,
+  "endpoint": "https://api.anthropic.com/v1/messages",
+  "body": {
+    "model": "claude-opus-5-5",
+    "messages": [
+      {
+        "role": "user",
+        "content": "```json\n{\"rule\": \"Return this JSON object with the rule field unchanged and a new passage of about 250 words in the text field.\", \"text\": \"Every morning before the market opened, Amara unlocked the small bakery on Delancey Street and switched on the ovens her mother had bought secondhand forty years earlier. The machines rattled and hissed like old dogs waking, and Amara spoke to them softly while they warmed. Her nephew had tried to convince her to replace them with sleek new models that could be programmed from a phone, but she only laughed. The old ovens had quirks, she explained, and she knew every one of them: the back left corner ran hot, the door stuck in humid weather, and the timer was always three minutes slow. She kneaded the dough by hand, pressing her palms into it the way her mother had taught her, feeling for the moment it turned smooth and alive. The neighborhood had changed around her. The shoe repair shop had become a phone store, and the butcher had become a café that sold coffee for seven dollars a cup. Still, the line outside her door formed before sunrise. One February a blizzard buried the city, and the power failed across twenty blocks. Amara lit the gas burners with a match, propped the door open with a brick, and baked by lantern light. By noon she had given away three hundred loaves to neighbors who had no heat and nowhere else to go. When a reporter asked why she had bothered, she wiped flour from her cheek and shrugged. Bread, she said, was simply what people needed, and someone had to remember how to make it.\"}\n```"
+      }
+    ],
+    "max_tokens": 4096,
+    "output_config": {
+      "effort": "low"
+    }
+  },
+  "state_sha256": "ccae2c2bce6ddb93b6be4a7117de37df2c636958c795aab43860b49b05ce99ea",
+  "reserved_cost_usd": 0.090252
+}

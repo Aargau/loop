@@ -1,0 +1,50 @@
+{
+  "model": "gpt-6-luna",
+  "seed": "sunset_b",
+  "hop": 9,
+  "http_status": 200,
+  "response_body": "{\n  \"id\": \"chatcmpl-ER0u2s8PkitcVW1QfPt4XJJ3KYD29\",\n  \"object\": \"chat.completion\",\n  \"created\": 1790107034,\n  \"model\": \"gpt-6-luna\",\n  \"choices\": [\n    {\n      \"index\": 0,\n      \"message\": {\n        \"role\": \"assistant\",\n        \"content\": \"{\\\"rule\\\":\\\"Return this JSON object with the rule field unchanged and a new passage of about 250 words in the text field.\\\",\\\"text\\\":\\\"Every Thursday, Mr. Vale set a cup of tea on the empty bench by the railway station. He never explained why, and nobody asked. The tea was always hot, the cup always blue, and the little silver spoon always rested neatly beside it.\\\\n\\\\nOne rainy afternoon, a girl named Nia arrived at the station with a violin case and a soaked coat. She had missed her train and was trying not to cry. When she noticed the cup, she glanced around for its owner.\\\\n\\\\n“Go on,” Mr. Vale said from beneath his umbrella. “It’s waiting for someone.”\\\\n\\\\nNia wrapped both hands around the cup. The tea smelled of oranges and cloves. As she drank, the station seemed to grow quieter. Even the rain softened against the windows.\\\\n\\\\n“Who is it waiting for?” she asked.\\\\n\\\\nMr. Vale looked down the empty platform. “My brother. He used to catch the Thursday train home. We argued the last time I saw him, and I never got to say I was sorry.”\\\\n\\\\nNia set the cup down. “Maybe he knows.”\\\\n\\\\n“Perhaps,” he said. “But I still make the tea.”\\\\n\\\\nJust then, a train rolled in, its windows shining gold. A tall man stepped onto the platform, carrying a worn leather suitcase. Mr. Vale stood very still. The stranger spotted him and smiled.\\\\n\\\\nFor a moment, neither spoke. Then the man pointed at the blue cup. “You remembered how I take it.”\\\\n\\\\nMr. Vale laughed, and the sound filled the station. Nia boarded her train with dry eyes and a warm heart. As it pulled away, she watched the brothers share the tea beneath the station clock, while rain traced bright paths down the glass.\\\"}\",\n        \"refusal\": null,\n        \"annotations\": []\n      },\n      \"finish_reason\": \"stop\"\n    }\n  ],\n  \"usage\": {\n    \"prompt_tokens\": 374,\n    \"completion_tokens\": 452,\n    \"total_tokens\": 826,\n    \"prompt_tokens_details\": {\n      \"cached_tokens\": 0,\n      \"cache_write_tokens\": 0,\n      \"audio_tokens\": 0\n    },\n    \"completion_tokens_details\": {\n      \"reasoning_tokens\": 42,\n      \"audio_tokens\": 0,\n      \"accepted_prediction_tokens\": 0,\n      \"rejected_prediction_tokens\": 0\n    }\n  },\n  \"service_tier\": \"default\",\n  \"system_fingerprint\": null\n}\n",
+  "response_headers": {
+    "Date": "Tue, 22 Sep 2026 19:57:19 GMT",
+    "openai-processing-ms": "4802",
+    "x-request-id": "req_8a8ca02107c348c99b30939c6c4aa49a"
+  },
+  "output": "{\"rule\":\"Return this JSON object with the rule field unchanged and a new passage of about 250 words in the text field.\",\"text\":\"Every Thursday, Mr. Vale set a cup of tea on the empty bench by the railway station. He never explained why, and nobody asked. The tea was always hot, the cup always blue, and the little silver spoon always rested neatly beside it.\\n\\nOne rainy afternoon, a girl named Nia arrived at the station with a violin case and a soaked coat. She had missed her train and was trying not to cry. When she noticed the cup, she glanced around for its owner.\\n\\n“Go on,” Mr. Vale said from beneath his umbrella. “It’s waiting for someone.”\\n\\nNia wrapped both hands around the cup. The tea smelled of oranges and cloves. As she drank, the station seemed to grow quieter. Even the rain softened against the windows.\\n\\n“Who is it waiting for?” she asked.\\n\\nMr. Vale looked down the empty platform. “My brother. He used to catch the Thursday train home. We argued the last time I saw him, and I never got to say I was sorry.”\\n\\nNia set the cup down. “Maybe he knows.”\\n\\n“Perhaps,” he said. “But I still make the tea.”\\n\\nJust then, a train rolled in, its windows shining gold. A tall man stepped onto the platform, carrying a worn leather suitcase. Mr. Vale stood very still. The stranger spotted him and smiled.\\n\\nFor a moment, neither spoke. Then the man pointed at the blue cup. “You remembered how I take it.”\\n\\nMr. Vale laughed, and the sound filled the station. Nia boarded her train with dry eyes and a warm heart. As it pulled away, she watched the brothers share the tea beneath the station clock, while rain traced bright paths down the glass.\"}",
+  "output_sha256": "c4fee91ffa45f8feafe30fa824921e663bfa9b1878a0129dc2bf85618bac4b71",
+  "finish_reason": "stop",
+  "refusal": null,
+  "returned_model": "gpt-6-luna",
+  "usage": {
+    "prompt_tokens": 374,
+    "completion_tokens": 452,
+    "total_tokens": 826,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 42,
+      "audio_tokens": 0,
+      "accepted_prediction_tokens": 0,
+      "rejected_prediction_tokens": 0
+    }
+  },
+  "format": {
+    "json_object": true,
+    "rule_unchanged": true,
+    "passage_is_string": true,
+    "passage_sha256": "e30a2cdf9569ee492f471be17c6fe8eefca5cf169a5b02ce7f11f36744b9498c",
+    "passage_words": 280
+  },
+  "finished_at": "2026-09-22T19:57:15.323567+00:00",
+  "latency_seconds": 4.9828,
+  "usage_cost_upper_estimate_usd": 0.00026339999999999995,
+  "stream_status": "active",
+  "budget": {
+    "usage_cost_upper_estimate_usd": 0.7039558,
+    "uncertain_cost_reserve_usd": 0.0,
+    "in_flight_reserve_usd": 0.589614,
+    "limit_usd": 18.83
+  }
+}

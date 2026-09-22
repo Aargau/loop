@@ -1,0 +1,50 @@
+{
+  "model": "gpt-6-sol",
+  "seed": "sunset_a",
+  "hop": 47,
+  "http_status": 200,
+  "response_body": "{\n  \"id\": \"chatcmpl-ER12QFiEUncnPDk4VYOHijuF03y0K\",\n  \"object\": \"chat.completion\",\n  \"created\": 1790107554,\n  \"model\": \"gpt-6-sol\",\n  \"choices\": [\n    {\n      \"index\": 0,\n      \"message\": {\n        \"role\": \"assistant\",\n        \"content\": \"{\\n  \\\"rule\\\": \\\"Return this JSON object with the rule field unchanged and a new passage of about 250 words in the text field.\\\",\\n  \\\"text\\\": \\\"On Tuesday, Imani brought a blue marble to the bench. She had found it beneath the kitchen table that morning, though no one in the house remembered owning it. Inside the glass, a yellow ribbon curved around a tiny pocket of air.\\\\n\\\\nThe boy held it up to the light. “It looks like a little piece of sky,” he said.\\\\n\\\\n“Sky isn’t blue when you put it in your pocket.”\\\\n\\\\nHe lowered the marble and smiled. Imani took it back before it could roll from his palm.\\\\n\\\\nThey tried setting it on the bench for him to draw, but it slipped toward a gap between the slats. Imani caught it with her sleeve. The boy tore a corner from an old receipt and folded the paper into a shallow tray. This time the marble stayed put.\\\\n\\\\nWhile he drew, the bakery door opened across the street. Her grandfather came out carrying a broom. He swept a line of flour from the doorstep, then went inside without seeing them.\\\\n\\\\n“Will you give it to him?” the boy asked.\\\\n\\\\n“Maybe.” Imani turned the marble between her fingers. Her grandfather’s jar held things whose owners were unknown: a button with four holes, a bent key, the feather they had found on Sunday. Perhaps a marble belonged there too.\\\\n\\\\nWhen the drawing was finished, she leaned close to look. The boy had drawn the paper tray as carefully as the glass. Its torn edge made a crooked shadow.\\\\n\\\\nImani wrapped the marble in the receipt. She decided she could ask her grandfather about the jar after supper.\\\"\\n}\",\n        \"refusal\": null,\n        \"annotations\": []\n      },\n      \"finish_reason\": \"stop\"\n    }\n  ],\n  \"usage\": {\n    \"prompt_tokens\": 366,\n    \"completion_tokens\": 424,\n    \"total_tokens\": 790,\n    \"prompt_tokens_details\": {\n      \"cached_tokens\": 0,\n      \"cache_write_tokens\": 0,\n      \"audio_tokens\": 0\n    },\n    \"completion_tokens_details\": {\n      \"reasoning_tokens\": 49,\n      \"audio_tokens\": 0,\n      \"accepted_prediction_tokens\": 0,\n      \"rejected_prediction_tokens\": 0\n    }\n  },\n  \"service_tier\": \"default\",\n  \"system_fingerprint\": null\n}\n",
+  "response_headers": {
+    "Date": "Tue, 22 Sep 2026 20:05:59 GMT",
+    "openai-processing-ms": "5723",
+    "x-request-id": "req_7ed45a63ff6b487eb9fec8445eb6de96"
+  },
+  "output": "{\n  \"rule\": \"Return this JSON object with the rule field unchanged and a new passage of about 250 words in the text field.\",\n  \"text\": \"On Tuesday, Imani brought a blue marble to the bench. She had found it beneath the kitchen table that morning, though no one in the house remembered owning it. Inside the glass, a yellow ribbon curved around a tiny pocket of air.\\n\\nThe boy held it up to the light. “It looks like a little piece of sky,” he said.\\n\\n“Sky isn’t blue when you put it in your pocket.”\\n\\nHe lowered the marble and smiled. Imani took it back before it could roll from his palm.\\n\\nThey tried setting it on the bench for him to draw, but it slipped toward a gap between the slats. Imani caught it with her sleeve. The boy tore a corner from an old receipt and folded the paper into a shallow tray. This time the marble stayed put.\\n\\nWhile he drew, the bakery door opened across the street. Her grandfather came out carrying a broom. He swept a line of flour from the doorstep, then went inside without seeing them.\\n\\n“Will you give it to him?” the boy asked.\\n\\n“Maybe.” Imani turned the marble between her fingers. Her grandfather’s jar held things whose owners were unknown: a button with four holes, a bent key, the feather they had found on Sunday. Perhaps a marble belonged there too.\\n\\nWhen the drawing was finished, she leaned close to look. The boy had drawn the paper tray as carefully as the glass. Its torn edge made a crooked shadow.\\n\\nImani wrapped the marble in the receipt. She decided she could ask her grandfather about the jar after supper.\"\n}",
+  "output_sha256": "836bcb24704c8c867c6890dafb20d4dce5b6b5b546e037023b8f4c68f0b60270",
+  "finish_reason": "stop",
+  "refusal": null,
+  "returned_model": "gpt-6-sol",
+  "usage": {
+    "prompt_tokens": 366,
+    "completion_tokens": 424,
+    "total_tokens": 790,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 49,
+      "audio_tokens": 0,
+      "accepted_prediction_tokens": 0,
+      "rejected_prediction_tokens": 0
+    }
+  },
+  "format": {
+    "json_object": true,
+    "rule_unchanged": true,
+    "passage_is_string": true,
+    "passage_sha256": "3c5dfe30eb7026daaf38e320076472c21ad6024e45130cb22031becac126e714",
+    "passage_words": 263
+  },
+  "finished_at": "2026-09-22T20:05:56.044911+00:00",
+  "latency_seconds": 5.8398,
+  "usage_cost_upper_estimate_usd": 0.004972,
+  "stream_status": "active",
+  "budget": {
+    "usage_cost_upper_estimate_usd": 3.9848099,
+    "uncertain_cost_reserve_usd": 0.04533,
+    "in_flight_reserve_usd": 0.5454286,
+    "limit_usd": 18.83
+  }
+}

@@ -1,0 +1,50 @@
+{
+  "model": "gpt-6-luna",
+  "seed": "sunset_b",
+  "hop": 11,
+  "http_status": 200,
+  "response_body": "{\n  \"id\": \"chatcmpl-ER0uSYYK9UlNJVPpKIzlfZ8UariXW\",\n  \"object\": \"chat.completion\",\n  \"created\": 1790107060,\n  \"model\": \"gpt-6-luna\",\n  \"choices\": [\n    {\n      \"index\": 0,\n      \"message\": {\n        \"role\": \"assistant\",\n        \"content\": \"{\\\"rule\\\":\\\"Return this JSON object with the rule field unchanged and a new passage of about 250 words in the text field.\\\",\\\"text\\\":\\\"When the old clock tower stopped, nobody noticed at first. The town was busy preparing for the summer festival, and people had little time to wonder why its hands remained fixed at ten past four.\\\\n\\\\nMara noticed because she lived across the square. Every afternoon, she watched the clock while waiting for her father to finish work at the train station. When the hands didn’t move for three days, she climbed the tower’s narrow stairs to investigate.\\\\n\\\\nAt the top, she found the clockmaker, Mr. Vale, sitting beside the open mechanism. Tiny gears covered the floor around him.\\\\n\\\\n“I can’t find the missing piece,” he sighed. “Without it, the clock won’t run.”\\\\n\\\\nMara searched among the gears, but the piece was nowhere to be seen. Then she heard a faint ticking inside the wooden case. She tapped its side, and something dropped from a hidden ledge: a small brass wheel.\\\\n\\\\nMr. Vale fitted it into place. The gears shuddered, then began to turn. Outside, the clock’s hands crept forward, and its bell rang out across the square.\\\\n\\\\nThe sound drew people from shops and doorways. They cheered, and someone started the festival music early. Mr. Vale offered Mara a little brass gear to keep, but she shook her head.\\\\n\\\\n“Keep it for the next time something gets lost,” she said.\\\\n\\\\nYears later, when Mara became the town’s clockmaker, she remembered those words. She kept a small drawer beside her workbench for every stray screw, spring, and wheel she found. The drawer was rarely empty, and neither, she learned, was the town’s patience for putting things back together.\\\"}\",\n        \"refusal\": null,\n        \"annotations\": []\n      },\n      \"finish_reason\": \"stop\"\n    }\n  ],\n  \"usage\": {\n    \"prompt_tokens\": 409,\n    \"completion_tokens\": 466,\n    \"total_tokens\": 875,\n    \"prompt_tokens_details\": {\n      \"cached_tokens\": 0,\n      \"cache_write_tokens\": 0,\n      \"audio_tokens\": 0\n    },\n    \"completion_tokens_details\": {\n      \"reasoning_tokens\": 74,\n      \"audio_tokens\": 0,\n      \"accepted_prediction_tokens\": 0,\n      \"rejected_prediction_tokens\": 0\n    }\n  },\n  \"service_tier\": \"default\",\n  \"system_fingerprint\": null\n}\n",
+  "response_headers": {
+    "Date": "Tue, 22 Sep 2026 19:57:45 GMT",
+    "openai-processing-ms": "5024",
+    "x-request-id": "req_3075225d43464e918b01a5281a4d4242"
+  },
+  "output": "{\"rule\":\"Return this JSON object with the rule field unchanged and a new passage of about 250 words in the text field.\",\"text\":\"When the old clock tower stopped, nobody noticed at first. The town was busy preparing for the summer festival, and people had little time to wonder why its hands remained fixed at ten past four.\\n\\nMara noticed because she lived across the square. Every afternoon, she watched the clock while waiting for her father to finish work at the train station. When the hands didn’t move for three days, she climbed the tower’s narrow stairs to investigate.\\n\\nAt the top, she found the clockmaker, Mr. Vale, sitting beside the open mechanism. Tiny gears covered the floor around him.\\n\\n“I can’t find the missing piece,” he sighed. “Without it, the clock won’t run.”\\n\\nMara searched among the gears, but the piece was nowhere to be seen. Then she heard a faint ticking inside the wooden case. She tapped its side, and something dropped from a hidden ledge: a small brass wheel.\\n\\nMr. Vale fitted it into place. The gears shuddered, then began to turn. Outside, the clock’s hands crept forward, and its bell rang out across the square.\\n\\nThe sound drew people from shops and doorways. They cheered, and someone started the festival music early. Mr. Vale offered Mara a little brass gear to keep, but she shook her head.\\n\\n“Keep it for the next time something gets lost,” she said.\\n\\nYears later, when Mara became the town’s clockmaker, she remembered those words. She kept a small drawer beside her workbench for every stray screw, spring, and wheel she found. The drawer was rarely empty, and neither, she learned, was the town’s patience for putting things back together.\"}",
+  "output_sha256": "8655520dfba6d974cbc43fa96ce8b0ddbe60fc49aa7baf138425605c02d5b8a9",
+  "finish_reason": "stop",
+  "refusal": null,
+  "returned_model": "gpt-6-luna",
+  "usage": {
+    "prompt_tokens": 409,
+    "completion_tokens": 466,
+    "total_tokens": 875,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 74,
+      "audio_tokens": 0,
+      "accepted_prediction_tokens": 0,
+      "rejected_prediction_tokens": 0
+    }
+  },
+  "format": {
+    "json_object": true,
+    "rule_unchanged": true,
+    "passage_is_string": true,
+    "passage_sha256": "70761941ca547d2d33889b751b041f3131e1da23e2ec6e472fdbd4853e73894d",
+    "passage_words": 267
+  },
+  "finished_at": "2026-09-22T19:57:41.169556+00:00",
+  "latency_seconds": 5.1545,
+  "usage_cost_upper_estimate_usd": 0.0002739,
+  "stream_status": "active",
+  "budget": {
+    "usage_cost_upper_estimate_usd": 0.8495089,
+    "uncertain_cost_reserve_usd": 0.0,
+    "in_flight_reserve_usd": 0.58856,
+    "limit_usd": 18.83
+  }
+}

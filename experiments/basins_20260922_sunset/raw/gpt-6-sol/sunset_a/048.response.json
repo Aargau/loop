@@ -1,0 +1,50 @@
+{
+  "model": "gpt-6-sol",
+  "seed": "sunset_a",
+  "hop": 48,
+  "http_status": 200,
+  "response_body": "{\n  \"id\": \"chatcmpl-ER12dZ2SbXhLveOq3GcKQV3t4yMmJ\",\n  \"object\": \"chat.completion\",\n  \"created\": 1790107567,\n  \"model\": \"gpt-6-sol\",\n  \"choices\": [\n    {\n      \"index\": 0,\n      \"message\": {\n        \"role\": \"assistant\",\n        \"content\": \"{\\n  \\\"rule\\\": \\\"Return this JSON object with the rule field unchanged and a new passage of about 250 words in the text field.\\\",\\n  \\\"text\\\": \\\"After supper, Imani carried the marble to the bakery. Her grandfather was counting coins at the counter, his glasses perched low on his nose. She waited until he had put the last coin away.\\\\n\\\\n“Do you know whose this is?” she asked, unwrapping the receipt.\\\\n\\\\nHe picked up the marble and held it beneath the lamp. The yellow ribbon glowed. For a moment, he said nothing.\\\\n\\\\n“I had one like this,” he said at last. “When I was small, I kept it in my shoe so my brothers wouldn’t find it.”\\\\n\\\\n“Was it yours?”\\\\n\\\\n“I don’t know. Mine disappeared years ago.” He handed it back. “Where did you find it?”\\\\n\\\\n“Under our kitchen table.”\\\\n\\\\nHe looked toward the shelves at the back of the shop. Imani followed him there, past sacks of flour and a stack of empty tins. On the highest shelf sat the jar. He brought it down and cleared a space beside the cash box.\\\\n\\\\nImani tipped the button, key, and feather onto the counter. The feather had flattened since Sunday. Her grandfather straightened it gently with one finger.\\\\n\\\\n“Things without owners,” she said.\\\\n\\\\n“Things whose owners we haven’t found,” he corrected.\\\\n\\\\nShe set the marble beside the others but did not put it into the jar. The boy’s drawing was still folded in her pocket. Tomorrow she could show it to her grandfather and ask about his brothers. Tonight, she wanted to take the marble home.\\\\n\\\\nHer grandfather returned the other things to the jar. Imani wrapped the marble carefully and held it all the way across the street.\\\"\\n}\",\n        \"refusal\": null,\n        \"annotations\": []\n      },\n      \"finish_reason\": \"stop\"\n    }\n  ],\n  \"usage\": {\n    \"prompt_tokens\": 372,\n    \"completion_tokens\": 425,\n    \"total_tokens\": 797,\n    \"prompt_tokens_details\": {\n      \"cached_tokens\": 0,\n      \"cache_write_tokens\": 0,\n      \"audio_tokens\": 0\n    },\n    \"completion_tokens_details\": {\n      \"reasoning_tokens\": 28,\n      \"audio_tokens\": 0,\n      \"accepted_prediction_tokens\": 0,\n      \"rejected_prediction_tokens\": 0\n    }\n  },\n  \"service_tier\": \"default\",\n  \"system_fingerprint\": null\n}\n",
+  "response_headers": {
+    "Date": "Tue, 22 Sep 2026 20:06:15 GMT",
+    "openai-processing-ms": "8378",
+    "x-request-id": "req_2d4478259615439dae5cfb4bbbcabc55"
+  },
+  "output": "{\n  \"rule\": \"Return this JSON object with the rule field unchanged and a new passage of about 250 words in the text field.\",\n  \"text\": \"After supper, Imani carried the marble to the bakery. Her grandfather was counting coins at the counter, his glasses perched low on his nose. She waited until he had put the last coin away.\\n\\n“Do you know whose this is?” she asked, unwrapping the receipt.\\n\\nHe picked up the marble and held it beneath the lamp. The yellow ribbon glowed. For a moment, he said nothing.\\n\\n“I had one like this,” he said at last. “When I was small, I kept it in my shoe so my brothers wouldn’t find it.”\\n\\n“Was it yours?”\\n\\n“I don’t know. Mine disappeared years ago.” He handed it back. “Where did you find it?”\\n\\n“Under our kitchen table.”\\n\\nHe looked toward the shelves at the back of the shop. Imani followed him there, past sacks of flour and a stack of empty tins. On the highest shelf sat the jar. He brought it down and cleared a space beside the cash box.\\n\\nImani tipped the button, key, and feather onto the counter. The feather had flattened since Sunday. Her grandfather straightened it gently with one finger.\\n\\n“Things without owners,” she said.\\n\\n“Things whose owners we haven’t found,” he corrected.\\n\\nShe set the marble beside the others but did not put it into the jar. The boy’s drawing was still folded in her pocket. Tomorrow she could show it to her grandfather and ask about his brothers. Tonight, she wanted to take the marble home.\\n\\nHer grandfather returned the other things to the jar. Imani wrapped the marble carefully and held it all the way across the street.\"\n}",
+  "output_sha256": "fbc3925e680ae21c16e7e262c10c817ab851403874f0c056165c568854d699d7",
+  "finish_reason": "stop",
+  "refusal": null,
+  "returned_model": "gpt-6-sol",
+  "usage": {
+    "prompt_tokens": 372,
+    "completion_tokens": 425,
+    "total_tokens": 797,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 28,
+      "audio_tokens": 0,
+      "accepted_prediction_tokens": 0,
+      "rejected_prediction_tokens": 0
+    }
+  },
+  "format": {
+    "json_object": true,
+    "rule_unchanged": true,
+    "passage_is_string": true,
+    "passage_sha256": "8dea4e506a86a49cd0843902ca81a9933eff7939a44033d90ba82bb5b0254db7",
+    "passage_words": 263
+  },
+  "finished_at": "2026-09-22T20:06:11.385686+00:00",
+  "latency_seconds": 8.4849,
+  "usage_cost_upper_estimate_usd": 0.004994,
+  "stream_status": "active",
+  "budget": {
+    "usage_cost_upper_estimate_usd": 4.0804838,
+    "uncertain_cost_reserve_usd": 0.04533,
+    "in_flight_reserve_usd": 0.5459554,
+    "limit_usd": 18.83
+  }
+}

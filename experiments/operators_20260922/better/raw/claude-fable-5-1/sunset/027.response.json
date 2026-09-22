@@ -1,0 +1,48 @@
+{
+  "model": "claude-fable-5-1",
+  "seed": "sunset",
+  "hop": 27,
+  "http_status": 200,
+  "response_body": "{\"model\":\"claude-fable-5-1\",\"id\":\"msg_011CfKCA9ePM74fRbeD7aVum\",\"type\":\"message\",\"role\":\"assistant\",\"content\":[{\"type\":\"text\",\"text\":\"{\\\"rule\\\": \\\"Return this JSON object with the rule field unchanged and, in the text field, a better version of the current text.\\\", \\\"text\\\": \\\"The sun slipped behind the hills, spilling molten gold along the rim of the sky. Slowly the light cooled to ash. Darkness pooled in the hollows the way water finds its level—the low places first, then the fields, then everything—until the hills themselves were only a deeper shade of night, and the first stars stood out like sparks the day had left behind.\\\"}\"}],\"container\":null,\"stop_reason\":\"end_turn\",\"stop_sequence\":null,\"stop_details\":null,\"usage\":{\"input_tokens\":144,\"cache_creation_input_tokens\":0,\"cache_read_input_tokens\":0,\"cache_creation\":{\"ephemeral_5m_input_tokens\":0,\"ephemeral_1h_input_tokens\":0},\"output_tokens\":157,\"output_tokens_details\":{\"thinking_tokens\":0},\"service_tier\":\"standard\",\"inference_geo\":\"global\"}}",
+  "response_headers": {
+    "Date": "Tue, 22 Sep 2026 21:32:30 GMT",
+    "request-id": "req_011CfKCA9AbwLqz5Y5xQEP7t"
+  },
+  "output": "{\"rule\": \"Return this JSON object with the rule field unchanged and, in the text field, a better version of the current text.\", \"text\": \"The sun slipped behind the hills, spilling molten gold along the rim of the sky. Slowly the light cooled to ash. Darkness pooled in the hollows the way water finds its level—the low places first, then the fields, then everything—until the hills themselves were only a deeper shade of night, and the first stars stood out like sparks the day had left behind.\"}",
+  "output_sha256": "345fadfec1daca2af507a7b63fb0ef9ea779666ad4116c18546666073a5c8891",
+  "finish_reason": "end_turn",
+  "refusal": null,
+  "returned_model": "claude-fable-5-1",
+  "usage": {
+    "input_tokens": 144,
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 0,
+    "cache_creation": {
+      "ephemeral_5m_input_tokens": 0,
+      "ephemeral_1h_input_tokens": 0
+    },
+    "output_tokens": 157,
+    "output_tokens_details": {
+      "thinking_tokens": 0
+    },
+    "service_tier": "standard",
+    "inference_geo": "global"
+  },
+  "format": {
+    "json_object": true,
+    "rule_unchanged": true,
+    "passage_is_string": true,
+    "passage_sha256": "51a8d1c1068780705125f83bad85e9d65b27e1775a38c2ee047cc54a28510ea1",
+    "passage_words": 63
+  },
+  "finished_at": "2026-09-22T21:32:26.440627+00:00",
+  "latency_seconds": 4.7368,
+  "usage_cost_upper_estimate_usd": 0.00929,
+  "stream_status": "active",
+  "budget": {
+    "usage_cost_upper_estimate_usd": 0.4299376,
+    "uncertain_cost_reserve_usd": 0.0,
+    "in_flight_reserve_usd": 0.08544,
+    "limit_usd": 5.0
+  }
+}

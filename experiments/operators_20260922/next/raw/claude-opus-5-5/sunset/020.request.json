@@ -1,0 +1,22 @@
+{
+  "started_at": "2026-09-22T21:26:30.535404+00:00",
+  "model": "claude-opus-5-5",
+  "seed": "sunset",
+  "hop": 20,
+  "endpoint": "https://api.anthropic.com/v1/messages",
+  "body": {
+    "model": "claude-opus-5-5",
+    "messages": [
+      {
+        "role": "user",
+        "content": "```json\n{\"rule\": \"Return this JSON object with the rule field unchanged and, in the text field, the passage of about 250 words that comes immediately AFTER the current text in the same story.\", \"text\": \"Mara went still. Beside her, Leonard stopped breathing altogether.\\n\\nShe rolled onto her stomach, slow as honey, and put her eye to the gap between the loft boards where the knot had fallen out years ago. The kitchen below was a pool of red from the stove's dying coals. The pallet by the stove was empty, the quilt thrown back.\\n\\nThe man stood at the flour shelf with his back to her. He had taken off his boots. In his stocking feet he seemed smaller, less like a traveler and more like a shadow that had learned to stand. His hand rested on the lid of the flour tin.\\n\\nHe did not open it. He only tilted his head, the way a dog does when it hears something far off, and Mara understood with a cold lurch that he was listening for them.\\n\\nShe pressed her palm flat against Leonard's back. *Don't move.*\\n\\nThe man lifted the lid. Flour dust rose pale in the red light. He reached inside, felt around, and drew his hand out empty. For a long moment he stood looking at his white fingers. Then he smiled, the same slow smile he had worn at supper, and wiped his hand clean on his trouser leg.\\n\\n\\\"Clever woman,\\\" he said, very quietly, to no one.\\n\\nHe set the lid back without a sound and turned toward the ladder.\\n\\nMara's heart slammed against the boards. But he only looked up at the dark square of the loft opening, and nodded once, as if they had agreed on something, and went back to his pallet.\"}\n```"
+      }
+    ],
+    "max_tokens": 4096,
+    "output_config": {
+      "effort": "low"
+    }
+  },
+  "state_sha256": "bbce44dc47b1df8a12f3fafa04294a9191258b95a229ae6dbf406fc05b642828",
+  "reserved_cost_usd": 0.090436
+}

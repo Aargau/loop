@@ -1,0 +1,47 @@
+{
+  "model": "gpt-6-luna",
+  "seed": "sunset",
+  "hop": 38,
+  "http_status": 200,
+  "response_body": "{\n  \"id\": \"chatcmpl-ER2Ioe5wCTTe7XvxxZLvOvkMiCN5B\",\n  \"object\": \"chat.completion\",\n  \"created\": 1790112414,\n  \"model\": \"gpt-6-luna\",\n  \"choices\": [\n    {\n      \"index\": 0,\n      \"message\": {\n        \"role\": \"assistant\",\n        \"content\": \"{\\\"rule\\\":\\\"Return this JSON object with the rule field unchanged and, in the text field, the passage of about 250 words that comes immediately AFTER the current text in the same story.\\\",\\\"text\\\":\\\"Her brother wrapped both hands around the cup. “I don’t know if I can sleep there.”\\n\\n“You don’t have to sleep,” Mara said. “You can sit in the kitchen and complain about the pipes. You were always good at that.”\\n\\nA small, startled laugh escaped him. It sounded unfamiliar, but not unwelcome.\\n\\nThey waited until the train emptied, then gathered their coats. Mara tucked the letter into her bag, taking care not to crease it again. On the platform, her brother lifted his suitcase. The handle caught; he tugged once, then let it go.\\n\\n“Here,” she said, reaching for the other end.\\n\\nThey carried it together down the station steps.\\n\\nThe rain had softened to a mist. At the curb, Mara unlocked the car and paused with one hand on the door. She had imagined this moment so many times that she’d expected a speech, an apology, perhaps even the sudden certainty that everything between them could be repaired.\\n\\nInstead, her brother stood beside the suitcase, looking toward the dark street.\\n\\n“Do you remember the blue mug?” he asked.\\n\\n“The one you broke?”\\n\\n“The one I said you broke.”\\n\\nMara studied him. “You pushed it off the counter.”\\n\\n“I know.”\\n\\nShe waited. He didn’t add anything, and for once she didn’t rush to fill the silence.\\n\\nThen he picked up the suitcase. “I’m sorry.”\\n\\nThe words were small. They did not undo anything. Still, Mara felt something loosen—not forgiveness, exactly, but room for it to arrive someday.\\n\\n“Okay,” she said, and opened the passenger door.\\n\\nHe climbed in. As she started the engine, he unfolded their mother’s letter once more, smoothing its edges against his knee. Neither of them spoke on the drive home. But when Mara turned onto their old street, he leaned forward to see the house.\\\"}\",\n        \"refusal\": null,\n        \"annotations\": []\n      },\n      \"finish_reason\": \"stop\"\n    }\n  ],\n  \"usage\": {\n    \"prompt_tokens\": 398,\n    \"completion_tokens\": 500,\n    \"total_tokens\": 898,\n    \"prompt_tokens_details\": {\n      \"cached_tokens\": 0,\n      \"cache_write_tokens\": 0,\n      \"audio_tokens\": 0\n    },\n    \"completion_tokens_details\": {\n      \"reasoning_tokens\": 73,\n      \"audio_tokens\": 0,\n      \"accepted_prediction_tokens\": 0,\n      \"rejected_prediction_tokens\": 0\n    }\n  },\n  \"service_tier\": \"default\",\n  \"system_fingerprint\": null\n}\n",
+  "response_headers": {
+    "Date": "Tue, 22 Sep 2026 21:26:59 GMT",
+    "openai-processing-ms": "5355",
+    "x-request-id": "req_a66a3864621640e29104a76e2000dcf4"
+  },
+  "output": "{\"rule\":\"Return this JSON object with the rule field unchanged and, in the text field, the passage of about 250 words that comes immediately AFTER the current text in the same story.\",\"text\":\"Her brother wrapped both hands around the cup. “I don’t know if I can sleep there.”\n\n“You don’t have to sleep,” Mara said. “You can sit in the kitchen and complain about the pipes. You were always good at that.”\n\nA small, startled laugh escaped him. It sounded unfamiliar, but not unwelcome.\n\nThey waited until the train emptied, then gathered their coats. Mara tucked the letter into her bag, taking care not to crease it again. On the platform, her brother lifted his suitcase. The handle caught; he tugged once, then let it go.\n\n“Here,” she said, reaching for the other end.\n\nThey carried it together down the station steps.\n\nThe rain had softened to a mist. At the curb, Mara unlocked the car and paused with one hand on the door. She had imagined this moment so many times that she’d expected a speech, an apology, perhaps even the sudden certainty that everything between them could be repaired.\n\nInstead, her brother stood beside the suitcase, looking toward the dark street.\n\n“Do you remember the blue mug?” he asked.\n\n“The one you broke?”\n\n“The one I said you broke.”\n\nMara studied him. “You pushed it off the counter.”\n\n“I know.”\n\nShe waited. He didn’t add anything, and for once she didn’t rush to fill the silence.\n\nThen he picked up the suitcase. “I’m sorry.”\n\nThe words were small. They did not undo anything. Still, Mara felt something loosen—not forgiveness, exactly, but room for it to arrive someday.\n\n“Okay,” she said, and opened the passenger door.\n\nHe climbed in. As she started the engine, he unfolded their mother’s letter once more, smoothing its edges against his knee. Neither of them spoke on the drive home. But when Mara turned onto their old street, he leaned forward to see the house.\"}",
+  "output_sha256": "2a30acd2310467d720234fb62dd60090342ea29ffb8b62862f416b1a08a6eeef",
+  "finish_reason": "stop",
+  "refusal": null,
+  "returned_model": "gpt-6-luna",
+  "usage": {
+    "prompt_tokens": 398,
+    "completion_tokens": 500,
+    "total_tokens": 898,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 73,
+      "audio_tokens": 0,
+      "accepted_prediction_tokens": 0,
+      "rejected_prediction_tokens": 0
+    }
+  },
+  "format": {
+    "json_object": false,
+    "rule_unchanged": false
+  },
+  "finished_at": "2026-09-22T21:26:55.030921+00:00",
+  "latency_seconds": 5.4832,
+  "usage_cost_upper_estimate_usd": 0.0002898,
+  "stream_status": "active",
+  "budget": {
+    "usage_cost_upper_estimate_usd": 0.7447224,
+    "uncertain_cost_reserve_usd": 0.0,
+    "in_flight_reserve_usd": 0.350306,
+    "limit_usd": 5.0
+  }
+}

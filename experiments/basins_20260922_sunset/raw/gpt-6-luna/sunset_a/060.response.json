@@ -1,0 +1,50 @@
+{
+  "model": "gpt-6-luna",
+  "seed": "sunset_a",
+  "hop": 60,
+  "http_status": 200,
+  "response_body": "{\n  \"id\": \"chatcmpl-ER14xXyWGH2Y46MQJbR7SU04s6HIA\",\n  \"object\": \"chat.completion\",\n  \"created\": 1790107711,\n  \"model\": \"gpt-6-luna\",\n  \"choices\": [\n    {\n      \"index\": 0,\n      \"message\": {\n        \"role\": \"assistant\",\n        \"content\": \"{\\\"rule\\\":\\\"Return this JSON object with the rule field unchanged and a new passage of about 250 words in the text field.\\\",\\\"text\\\":\\\"Every spring, the river carried bright green leaves past the old footbridge. That year, however, the water rose higher than anyone could remember. It covered the stepping-stones and lapped at the path leading to the village garden.\\\\n\\\\nNiko watched from his bedroom window as rain swept across the hills. The garden was small, but it held the vegetables his neighbors depended on. His grandmother had planted the first seeds there, and she still tended the rows each morning.\\\\n\\\\nBefore breakfast, Niko pulled on his boots and hurried outside. His grandmother was already at the garden gate, studying the muddy water.\\\\n\\\\n“We can’t stop the river,” she said, “but we can give it another way through.”\\\\n\\\\nThey gathered sandbags from the village storehouse and called to the neighbors. Soon, people arrived carrying shovels, boards, and buckets. They worked together to clear a shallow channel away from the lowest beds. Niko carried stones to strengthen the edge while his grandmother showed the younger children how to pile sandbags tightly.\\\\n\\\\nBy midday, the rain began to ease. The river still rushed beneath the bridge, but the channel guided some of the water toward an empty field. A few rows of carrots were lost, and the garden paths were thick with mud, yet most of the plants remained above the flood.\\\\n\\\\nThe following week, neighbors returned to repair the beds and replant what had been washed away. Niko noticed that people who rarely spoke now shared tools and stories as they worked. The river had changed the garden for a while, but helping one another had made the village feel stronger. When the first new seedlings appeared, everyone paused to admire them.\\\"}\",\n        \"refusal\": null,\n        \"annotations\": []\n      },\n      \"finish_reason\": \"stop\"\n    }\n  ],\n  \"usage\": {\n    \"prompt_tokens\": 372,\n    \"completion_tokens\": 439,\n    \"total_tokens\": 811,\n    \"prompt_tokens_details\": {\n      \"cached_tokens\": 0,\n      \"cache_write_tokens\": 0,\n      \"audio_tokens\": 0\n    },\n    \"completion_tokens_details\": {\n      \"reasoning_tokens\": 55,\n      \"audio_tokens\": 0,\n      \"accepted_prediction_tokens\": 0,\n      \"rejected_prediction_tokens\": 0\n    }\n  },\n  \"service_tier\": \"default\",\n  \"system_fingerprint\": null\n}\n",
+  "response_headers": {
+    "Date": "Tue, 22 Sep 2026 20:08:36 GMT",
+    "openai-processing-ms": "4890",
+    "x-request-id": "req_f5ec61b484764497a21e82f5d73c0999"
+  },
+  "output": "{\"rule\":\"Return this JSON object with the rule field unchanged and a new passage of about 250 words in the text field.\",\"text\":\"Every spring, the river carried bright green leaves past the old footbridge. That year, however, the water rose higher than anyone could remember. It covered the stepping-stones and lapped at the path leading to the village garden.\\n\\nNiko watched from his bedroom window as rain swept across the hills. The garden was small, but it held the vegetables his neighbors depended on. His grandmother had planted the first seeds there, and she still tended the rows each morning.\\n\\nBefore breakfast, Niko pulled on his boots and hurried outside. His grandmother was already at the garden gate, studying the muddy water.\\n\\n“We can’t stop the river,” she said, “but we can give it another way through.”\\n\\nThey gathered sandbags from the village storehouse and called to the neighbors. Soon, people arrived carrying shovels, boards, and buckets. They worked together to clear a shallow channel away from the lowest beds. Niko carried stones to strengthen the edge while his grandmother showed the younger children how to pile sandbags tightly.\\n\\nBy midday, the rain began to ease. The river still rushed beneath the bridge, but the channel guided some of the water toward an empty field. A few rows of carrots were lost, and the garden paths were thick with mud, yet most of the plants remained above the flood.\\n\\nThe following week, neighbors returned to repair the beds and replant what had been washed away. Niko noticed that people who rarely spoke now shared tools and stories as they worked. The river had changed the garden for a while, but helping one another had made the village feel stronger. When the first new seedlings appeared, everyone paused to admire them.\"}",
+  "output_sha256": "f45b53726356002d108dcc1cc74a98298c043195d014cb3b8bc3b9f863c85b9b",
+  "finish_reason": "stop",
+  "refusal": null,
+  "returned_model": "gpt-6-luna",
+  "usage": {
+    "prompt_tokens": 372,
+    "completion_tokens": 439,
+    "total_tokens": 811,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 55,
+      "audio_tokens": 0,
+      "accepted_prediction_tokens": 0,
+      "rejected_prediction_tokens": 0
+    }
+  },
+  "format": {
+    "json_object": true,
+    "rule_unchanged": true,
+    "passage_is_string": true,
+    "passage_sha256": "e681ca359071e14e69a789aabe8965385250d91babceb40feff5821967749276",
+    "passage_words": 278
+  },
+  "finished_at": "2026-09-22T20:08:32.593725+00:00",
+  "latency_seconds": 5.0155,
+  "usage_cost_upper_estimate_usd": 0.0002567,
+  "stream_status": "active",
+  "budget": {
+    "usage_cost_upper_estimate_usd": 4.9699521,
+    "uncertain_cost_reserve_usd": 0.04533,
+    "in_flight_reserve_usd": 0.588616,
+    "limit_usd": 18.83
+  }
+}

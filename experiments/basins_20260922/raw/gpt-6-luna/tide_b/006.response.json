@@ -1,0 +1,47 @@
+{
+  "model": "gpt-6-luna",
+  "seed": "tide_b",
+  "hop": 6,
+  "http_status": 200,
+  "response_body": "{\n  \"id\": \"chatcmpl-ER0pMLr6tslxuu3dhKAc03ZTqdWQ9\",\n  \"object\": \"chat.completion\",\n  \"created\": 1790106744,\n  \"model\": \"gpt-6-luna\",\n  \"choices\": [\n    {\n      \"index\": 0,\n      \"message\": {\n        \"role\": \"assistant\",\n        \"content\": \"{\\\"rule\\\":\\\"Return this JSON object with the rule field unchanged and a new passage of about 250 words in the text field.\\\",\\\"text\\\":\\\"The stone was slick beneath Mara’s boot. Her mother caught her wrist, but Mara had already felt the compass tug forward, as if a thread ran from its brass case to the figure below.\\n\\n“Wait,” Eli said. He crouched beside the opening and held his lantern over the steps. Its flame bent downward, though the air was rushing up. “That’s not wind.”\\n\\nThe figure turned its head. Water rippled around its boots, climbing the stairs against gravity. “The tide is not water,” it said. “Not here.”\\n\\nMara’s mother’s grip tightened. “You promised you would never call to her.”\\n\\n“I promised your mother,” the figure replied. “She is gone.”\\n\\nFor an instant, all Mara heard was the bell’s fading echo. Then her mother released her wrist.\\n\\n“Who was she?” Mara asked.\\n\\nHer mother looked toward the mist-shrouded track. “The person who brought me back.”\\n\\nThe figure held out its raised hand. In its palm lay a small silver key, worn almost smooth. Mara’s compass stopped spinning. Its needle pointed directly at the key.\\n\\n“Take it,” the figure said. “And remember: the path will show you what you carry, not what you want.”\\n\\nEli stepped onto the first stair beside Mara. “Then we go together.”\\n\\nHer mother stared at them both, fear and something older moving across her face. At last, she followed.\\n\\nThe instant her boot touched stone, the iron plate shuddered overhead. The opening began to close.\\n\\nThey hurried down. The blue light flared, revealing words carved into the wall: three names, one scratched through so deeply the stone had split.\\n\\nMara recognized her grandmother’s.\\n\\nBeneath it, freshly carved, was her own.\\\"}\",\n        \"refusal\": null,\n        \"annotations\": []\n      },\n      \"finish_reason\": \"stop\"\n    }\n  ],\n  \"usage\": {\n    \"prompt_tokens\": 383,\n    \"completion_tokens\": 477,\n    \"total_tokens\": 860,\n    \"prompt_tokens_details\": {\n      \"cached_tokens\": 0,\n      \"cache_write_tokens\": 0,\n      \"audio_tokens\": 0\n    },\n    \"completion_tokens_details\": {\n      \"reasoning_tokens\": 80,\n      \"audio_tokens\": 0,\n      \"accepted_prediction_tokens\": 0,\n      \"rejected_prediction_tokens\": 0\n    }\n  },\n  \"service_tier\": \"default\",\n  \"system_fingerprint\": null\n}\n",
+  "response_headers": {
+    "Date": "Tue, 22 Sep 2026 19:52:29 GMT",
+    "openai-processing-ms": "5303",
+    "x-request-id": "req_f63ef0221e0b464d9b9f36b0a98c942a"
+  },
+  "output": "{\"rule\":\"Return this JSON object with the rule field unchanged and a new passage of about 250 words in the text field.\",\"text\":\"The stone was slick beneath Mara’s boot. Her mother caught her wrist, but Mara had already felt the compass tug forward, as if a thread ran from its brass case to the figure below.\n\n“Wait,” Eli said. He crouched beside the opening and held his lantern over the steps. Its flame bent downward, though the air was rushing up. “That’s not wind.”\n\nThe figure turned its head. Water rippled around its boots, climbing the stairs against gravity. “The tide is not water,” it said. “Not here.”\n\nMara’s mother’s grip tightened. “You promised you would never call to her.”\n\n“I promised your mother,” the figure replied. “She is gone.”\n\nFor an instant, all Mara heard was the bell’s fading echo. Then her mother released her wrist.\n\n“Who was she?” Mara asked.\n\nHer mother looked toward the mist-shrouded track. “The person who brought me back.”\n\nThe figure held out its raised hand. In its palm lay a small silver key, worn almost smooth. Mara’s compass stopped spinning. Its needle pointed directly at the key.\n\n“Take it,” the figure said. “And remember: the path will show you what you carry, not what you want.”\n\nEli stepped onto the first stair beside Mara. “Then we go together.”\n\nHer mother stared at them both, fear and something older moving across her face. At last, she followed.\n\nThe instant her boot touched stone, the iron plate shuddered overhead. The opening began to close.\n\nThey hurried down. The blue light flared, revealing words carved into the wall: three names, one scratched through so deeply the stone had split.\n\nMara recognized her grandmother’s.\n\nBeneath it, freshly carved, was her own.\"}",
+  "output_sha256": "c8a56774edfa3ec9f824b5e15d8683b6e6dfa853dd770c3c78375e293c516c09",
+  "finish_reason": "stop",
+  "refusal": null,
+  "returned_model": "gpt-6-luna",
+  "usage": {
+    "prompt_tokens": 383,
+    "completion_tokens": 477,
+    "total_tokens": 860,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 80,
+      "audio_tokens": 0,
+      "accepted_prediction_tokens": 0,
+      "rejected_prediction_tokens": 0
+    }
+  },
+  "format": {
+    "json_object": false,
+    "rule_unchanged": false
+  },
+  "finished_at": "2026-09-22T19:52:25.486093+00:00",
+  "latency_seconds": 5.4295,
+  "usage_cost_upper_estimate_usd": 0.0002768,
+  "stream_status": "active",
+  "budget": {
+    "usage_cost_upper_estimate_usd": 0.4711511,
+    "uncertain_cost_reserve_usd": 0.0,
+    "in_flight_reserve_usd": 0.588022,
+    "limit_usd": 20
+  }
+}

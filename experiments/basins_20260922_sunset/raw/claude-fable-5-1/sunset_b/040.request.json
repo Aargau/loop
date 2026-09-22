@@ -1,0 +1,22 @@
+{
+  "started_at": "2026-09-22T20:20:12.351489+00:00",
+  "model": "claude-fable-5-1",
+  "seed": "sunset_b",
+  "hop": 40,
+  "endpoint": "https://api.anthropic.com/v1/messages",
+  "body": {
+    "model": "claude-fable-5-1",
+    "messages": [
+      {
+        "role": "user",
+        "content": "{\"rule\": \"Return this JSON object with the rule field unchanged and a new passage of about 250 words in the text field.\", \"text\": \"The ferry to Inishmaan ran twice a day in summer and once in winter, and for thirty-one years Declan had steered it. He knew the sound by the color of the water and the set of the swell, knew where the current pulled hardest off the skerries and how the wind came round the headland in October. When the company brought in the new boat with its screens and its satellite fix, they kept him on for a season to show the young captain the way. Then they thanked him, and he went home.\\n\\nHome was a house above the pier with a view of the whole crossing. He had not chosen it for that, but he found now that he could not stop looking. Every morning the ferry pulled out at eight, and he stood at his kitchen window with his tea and watched it take the line he would have taken, more or less. Sometimes it cut a little wide of the rocks. Sometimes it came in too fast. He said nothing to anyone.\\n\\nHis daughter came from Galway and told him he ought to travel, see somewhere else. He said he had seen the same nine miles of water every day for three decades and was not tired of it yet.\\n\\nIn November a storm closed the crossing for four days. On the fifth, the sea still heaving, the young captain came up the hill and knocked on his door. He wanted to know, he said, whether Declan thought it safe to go.\\n\\nDeclan looked past him at the water for a long moment. Then he got his coat.\"}"
+      }
+    ],
+    "max_tokens": 4096,
+    "output_config": {
+      "effort": "low"
+    }
+  },
+  "state_sha256": "d9d642ef6077b7a8fda3b3a8803e2e414edc029b5e395edd460aca2f637bf72e",
+  "reserved_cost_usd": 0.22509
+}

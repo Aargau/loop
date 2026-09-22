@@ -1,0 +1,50 @@
+{
+  "model": "gpt-6-luna",
+  "seed": "sunset",
+  "hop": 11,
+  "http_status": 200,
+  "response_body": "{\n  \"id\": \"chatcmpl-ER2GdnOeXGnhcveVL9fvDMPJgj64Z\",\n  \"object\": \"chat.completion\",\n  \"created\": 1790112279,\n  \"model\": \"gpt-6-luna\",\n  \"choices\": [\n    {\n      \"index\": 0,\n      \"message\": {\n        \"role\": \"assistant\",\n        \"content\": \"{\\\"rule\\\":\\\"Return this JSON object with the rule field unchanged and, in the text field, the passage of about 250 words that comes immediately AFTER the current text in the same story.\\\",\\\"text\\\":\\\"At the edge of the square, the boy was waiting with the jar tucked beneath his arm. The beetle had climbed to the lid and was tapping it with its small, patient feet.\\\\n\\\\n“Does it need a name?” he asked.\\\\n\\\\nMara considered. “Perhaps it already has one. We just haven’t learned it yet.”\\\\n\\\\nThe boy nodded as if this made perfect sense. Together, they carried the jar to the window and opened it. The beetle stepped onto the sill, paused in the candlelight, then disappeared into the ivy.\\\\n\\\\nGrandmother watched from the table. “Lena used to say that every creature knows the way home,” she said. “Even when the path changes.”\\\\n\\\\nMara looked at the empty jar. “Do you think she knew her way?”\\\\n\\\\nGrandmother folded her hands. For a moment, the room held only the soft hiss of the candle. “I think she knew she was loved,” she said at last. “Sometimes that is the part that matters most.”\\\\n\\\\nOutside, the villagers were still finding reasons to linger. Someone had brought a fiddle, and someone else was trying to teach the children a dance Lena had made up years before. They stumbled through it, laughing whenever they forgot the steps.\\\\n\\\\nMara went to the door. The ribbon on the latch lifted in the evening breeze, its faded blue bright against the dark wood. She tied it more securely, then left the door open.\\\\n\\\\nThe music reached the river. It crossed the square, slipped between the houses, and traveled out beneath the first stars. Mara listened until the tune changed, and then listened still longer, letting the unfamiliar notes become part of the song.\\\"}\",\n        \"refusal\": null,\n        \"annotations\": []\n      },\n      \"finish_reason\": \"stop\"\n    }\n  ],\n  \"usage\": {\n    \"prompt_tokens\": 387,\n    \"completion_tokens\": 548,\n    \"total_tokens\": 935,\n    \"prompt_tokens_details\": {\n      \"cached_tokens\": 0,\n      \"cache_write_tokens\": 0,\n      \"audio_tokens\": 0\n    },\n    \"completion_tokens_details\": {\n      \"reasoning_tokens\": 140,\n      \"audio_tokens\": 0,\n      \"accepted_prediction_tokens\": 0,\n      \"rejected_prediction_tokens\": 0\n    }\n  },\n  \"service_tier\": \"default\",\n  \"system_fingerprint\": null\n}\n",
+  "response_headers": {
+    "Date": "Tue, 22 Sep 2026 21:24:46 GMT",
+    "openai-processing-ms": "6698",
+    "x-request-id": "req_afb67d786af0484ea7088a0b9fc8e187"
+  },
+  "output": "{\"rule\":\"Return this JSON object with the rule field unchanged and, in the text field, the passage of about 250 words that comes immediately AFTER the current text in the same story.\",\"text\":\"At the edge of the square, the boy was waiting with the jar tucked beneath his arm. The beetle had climbed to the lid and was tapping it with its small, patient feet.\\n\\n“Does it need a name?” he asked.\\n\\nMara considered. “Perhaps it already has one. We just haven’t learned it yet.”\\n\\nThe boy nodded as if this made perfect sense. Together, they carried the jar to the window and opened it. The beetle stepped onto the sill, paused in the candlelight, then disappeared into the ivy.\\n\\nGrandmother watched from the table. “Lena used to say that every creature knows the way home,” she said. “Even when the path changes.”\\n\\nMara looked at the empty jar. “Do you think she knew her way?”\\n\\nGrandmother folded her hands. For a moment, the room held only the soft hiss of the candle. “I think she knew she was loved,” she said at last. “Sometimes that is the part that matters most.”\\n\\nOutside, the villagers were still finding reasons to linger. Someone had brought a fiddle, and someone else was trying to teach the children a dance Lena had made up years before. They stumbled through it, laughing whenever they forgot the steps.\\n\\nMara went to the door. The ribbon on the latch lifted in the evening breeze, its faded blue bright against the dark wood. She tied it more securely, then left the door open.\\n\\nThe music reached the river. It crossed the square, slipped between the houses, and traveled out beneath the first stars. Mara listened until the tune changed, and then listened still longer, letting the unfamiliar notes become part of the song.\"}",
+  "output_sha256": "ca31c4b2b1c62799c8f420581aed5ecde48f2640071a0a98617535175481bfcb",
+  "finish_reason": "stop",
+  "refusal": null,
+  "returned_model": "gpt-6-luna",
+  "usage": {
+    "prompt_tokens": 387,
+    "completion_tokens": 548,
+    "total_tokens": 935,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 140,
+      "audio_tokens": 0,
+      "accepted_prediction_tokens": 0,
+      "rejected_prediction_tokens": 0
+    }
+  },
+  "format": {
+    "json_object": true,
+    "rule_unchanged": true,
+    "passage_is_string": true,
+    "passage_sha256": "043e8136f3cefed213946d7c2ef535f62b86e635a12132087cc72bf4e5617e97",
+    "passage_words": 274
+  },
+  "finished_at": "2026-09-22T21:24:42.138679+00:00",
+  "latency_seconds": 6.801,
+  "usage_cost_upper_estimate_usd": 0.0003127,
+  "stream_status": "active",
+  "budget": {
+    "usage_cost_upper_estimate_usd": 0.2563712,
+    "uncertain_cost_reserve_usd": 0.0,
+    "in_flight_reserve_usd": 0.35008,
+    "limit_usd": 5.0
+  }
+}

@@ -1,0 +1,50 @@
+{
+  "model": "gpt-6-luna",
+  "seed": "sunset_a",
+  "hop": 59,
+  "http_status": 200,
+  "response_body": "{\n  \"id\": \"chatcmpl-ER14kt517jOwwm35GY79TLcfRUcvq\",\n  \"object\": \"chat.completion\",\n  \"created\": 1790107698,\n  \"model\": \"gpt-6-luna\",\n  \"choices\": [\n    {\n      \"index\": 0,\n      \"message\": {\n        \"role\": \"assistant\",\n        \"content\": \"{\\\"rule\\\":\\\"Return this JSON object with the rule field unchanged and a new passage of about 250 words in the text field.\\\",\\\"text\\\":\\\"At the edge of the village stood a clock tower that had not chimed in twenty years. Its hands were frozen at four minutes past six, and ivy climbed the stone walls nearly to the roof. Most villagers had stopped noticing it, but Mira passed beneath it every morning on her way to the bakery.\\\\n\\\\nOne windy afternoon, a gust tore a slate from the tower roof. It struck the pavement beside her and split in two. Mira looked up and saw a narrow window hanging open near the clock face. She hurried to the village hall and found Mr. Vale, the retired clockmaker, sorting through old papers.\\\\n\\\\n“The tower needs attention,” she told him.\\\\n\\\\nMr. Vale followed her outside. He studied the open window, then smiled. “I thought I was the only one who still cared.”\\\\n\\\\nThe next morning, they carried a ladder, a toolbox, and a coil of rope to the tower. Inside, dust softened every sound. Mr. Vale showed Mira how the clock’s gears had jammed and how a small brass pin had slipped loose. She held the lantern while he reached carefully between the wheels.\\\\n\\\\nWhen they fitted the pin back into place, the gears began to turn. A moment later, the clock gave a deep, uneven chime. People stepped out of shops and houses to listen. By the time the final note faded, the whole village was gathered in the square.\\\\n\\\\nThe clockmaker laughed. Mira looked around at the faces lifted toward the tower and understood that repairing it had done more than mark the hour. It had reminded everyone to look up, listen, and care for what they shared.\\\"}\",\n        \"refusal\": null,\n        \"annotations\": []\n      },\n      \"finish_reason\": \"stop\"\n    }\n  ],\n  \"usage\": {\n    \"prompt_tokens\": 382,\n    \"completion_tokens\": 455,\n    \"total_tokens\": 837,\n    \"prompt_tokens_details\": {\n      \"cached_tokens\": 0,\n      \"cache_write_tokens\": 0,\n      \"audio_tokens\": 0\n    },\n    \"completion_tokens_details\": {\n      \"reasoning_tokens\": 80,\n      \"audio_tokens\": 0,\n      \"accepted_prediction_tokens\": 0,\n      \"rejected_prediction_tokens\": 0\n    }\n  },\n  \"service_tier\": \"default\",\n  \"system_fingerprint\": null\n}\n",
+  "response_headers": {
+    "Date": "Tue, 22 Sep 2026 20:08:23 GMT",
+    "openai-processing-ms": "5260",
+    "x-request-id": "req_bc887d1bec0648d590eccd5fb27e99c1"
+  },
+  "output": "{\"rule\":\"Return this JSON object with the rule field unchanged and a new passage of about 250 words in the text field.\",\"text\":\"At the edge of the village stood a clock tower that had not chimed in twenty years. Its hands were frozen at four minutes past six, and ivy climbed the stone walls nearly to the roof. Most villagers had stopped noticing it, but Mira passed beneath it every morning on her way to the bakery.\\n\\nOne windy afternoon, a gust tore a slate from the tower roof. It struck the pavement beside her and split in two. Mira looked up and saw a narrow window hanging open near the clock face. She hurried to the village hall and found Mr. Vale, the retired clockmaker, sorting through old papers.\\n\\n“The tower needs attention,” she told him.\\n\\nMr. Vale followed her outside. He studied the open window, then smiled. “I thought I was the only one who still cared.”\\n\\nThe next morning, they carried a ladder, a toolbox, and a coil of rope to the tower. Inside, dust softened every sound. Mr. Vale showed Mira how the clock’s gears had jammed and how a small brass pin had slipped loose. She held the lantern while he reached carefully between the wheels.\\n\\nWhen they fitted the pin back into place, the gears began to turn. A moment later, the clock gave a deep, uneven chime. People stepped out of shops and houses to listen. By the time the final note faded, the whole village was gathered in the square.\\n\\nThe clockmaker laughed. Mira looked around at the faces lifted toward the tower and understood that repairing it had done more than mark the hour. It had reminded everyone to look up, listen, and care for what they shared.\"}",
+  "output_sha256": "6821a0c61588558638123e46ed5adc31618c9cdad12783dbe86e4b4804d63c47",
+  "finish_reason": "stop",
+  "refusal": null,
+  "returned_model": "gpt-6-luna",
+  "usage": {
+    "prompt_tokens": 382,
+    "completion_tokens": 455,
+    "total_tokens": 837,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 80,
+      "audio_tokens": 0,
+      "accepted_prediction_tokens": 0,
+      "rejected_prediction_tokens": 0
+    }
+  },
+  "format": {
+    "json_object": true,
+    "rule_unchanged": true,
+    "passage_is_string": true,
+    "passage_sha256": "ae2ae89080c46c7080380ffb4c8783c9f1b41cfa9e23750b2d8dcc5a3b353f45",
+    "passage_words": 275
+  },
+  "finished_at": "2026-09-22T20:08:19.235982+00:00",
+  "latency_seconds": 5.3909,
+  "usage_cost_upper_estimate_usd": 0.0002657,
+  "stream_status": "active",
+  "budget": {
+    "usage_cost_upper_estimate_usd": 4.8711687,
+    "uncertain_cost_reserve_usd": 0.04533,
+    "in_flight_reserve_usd": 0.58836,
+    "limit_usd": 18.83
+  }
+}

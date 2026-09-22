@@ -1,0 +1,45 @@
+{
+  "model": "claude-opus-5-5",
+  "seed": "sunset",
+  "hop": 4,
+  "http_status": 200,
+  "response_body": "{\"model\":\"claude-opus-5-5\",\"id\":\"msg_011CfKC2sy75iS2zodYYeDYR\",\"type\":\"message\",\"role\":\"assistant\",\"content\":[{\"type\":\"thinking\",\"thinking\":\"\",\"signature\":\"CAQS8AQKEAgSGAI4AUIIdGhpbmtpbmcSDETXh5dfw1AJBpmWjBoMEMOBJnThyl8gA15NIjBRzqefwZrNPLyKcaPAnPHTo0nEmDGD8KYQmgFOQpUzOeMQkgP1RK1UCaElcjif9gcqjQQM5JWqZ5IrMAsHjuhm2+Ucxg82IfaoiS8eYsKlHf9B7RN/CuoRQ1T9Itr8AX9jY6cIk6ftbSlwd2zgVSK9LhOftDlYrMCCnevCkNIJtIvsoEi3TGRYFbaKf5O7hy92VZzkenNs20hpbmUKyFiEYGHdl/MBmLkihP+iF+G4FVcBWIjxHVN3R6SGJCDJXprPuwtd5+83R/+DpOTD4MrsJfXu/++lEFih60twnBx5xIFHVm6fcfP4un42UKU8wOVx/ZaAUNmk11dA/Izryre+84DfnX3hAt9z/E9wI46ssoz7/7qj31uQ9d9x6XkWuYUG+EoR4XMKTEvF2gUIKnsIPUh8Mn1ffvzQ9k8DdpEl9QfIMkhiznuaaw+1lkCUz4cJn61zJrVCPY70q2KFANmBFZE1Y7sDMoT44oGnV5hDcq+AmGicshh2WQYtHz8qrVwHvNNIN5ETCveOZUhG+bByYpI8KN16euMPHiiBF1j3WEHD7w3YQtvZbyE+u50RFbSd3rf/nIG6apIaT/FXTmMINYcQoWwioVNg+SKE/XGdf7NDaz9AvW+xjHrKsVo5HdO58a7+iPGJ6rKBQgJAhzIAyWVtyXu9uxKMx5WIppJnoTsn54hPqtSyE48QD578erC5P+ZYlFDqS1+S+rgNJgrvzYj3JMIvrca0R3yIFFeAVXMMkfMeAdHC9Ai6qCGcKYkYAQ==\"},{\"type\":\"text\",\"text\":\"```json\\n{\\\"rule\\\": \\\"Return this JSON object with the rule field unchanged and, in the text field, a better version of the current text.\\\", \\\"text\\\": \\\"The sun slipped behind the hills, pouring the last of its amber light into the valley as darkness gathered below.\\\"}\\n```\"}],\"container\":null,\"stop_reason\":\"end_turn\",\"stop_sequence\":null,\"stop_details\":null,\"usage\":{\"input_tokens\":83,\"cache_creation_input_tokens\":0,\"cache_read_input_tokens\":0,\"cache_creation\":{\"ephemeral_5m_input_tokens\":0,\"ephemeral_1h_input_tokens\":0},\"output_tokens\":104,\"output_tokens_details\":{\"thinking_tokens\":19},\"service_tier\":\"standard\",\"inference_geo\":\"global\"}}",
+  "response_headers": {
+    "Date": "Tue, 22 Sep 2026 21:30:49 GMT",
+    "request-id": "req_011CfKC2rJ9mpGhquLSrDgHn"
+  },
+  "output": "```json\n{\"rule\": \"Return this JSON object with the rule field unchanged and, in the text field, a better version of the current text.\", \"text\": \"The sun slipped behind the hills, pouring the last of its amber light into the valley as darkness gathered below.\"}\n```",
+  "output_sha256": "d623b1b0c6af26e39497be46e80bcf5e8852c681336a3d182ee8bec52d993122",
+  "finish_reason": "end_turn",
+  "refusal": null,
+  "returned_model": "claude-opus-5-5",
+  "usage": {
+    "input_tokens": 83,
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 0,
+    "cache_creation": {
+      "ephemeral_5m_input_tokens": 0,
+      "ephemeral_1h_input_tokens": 0
+    },
+    "output_tokens": 104,
+    "output_tokens_details": {
+      "thinking_tokens": 19
+    },
+    "service_tier": "standard",
+    "inference_geo": "global"
+  },
+  "format": {
+    "json_object": false,
+    "rule_unchanged": false
+  },
+  "finished_at": "2026-09-22T21:30:45.200339+00:00",
+  "latency_seconds": 2.395,
+  "usage_cost_upper_estimate_usd": 0.002412,
+  "stream_status": "active",
+  "budget": {
+    "usage_cost_upper_estimate_usd": 0.0303971,
+    "uncertain_cost_reserve_usd": 0.0,
+    "in_flight_reserve_usd": 0.4686055,
+    "limit_usd": 5.0
+  }
+}

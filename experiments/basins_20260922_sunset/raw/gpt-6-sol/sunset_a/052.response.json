@@ -1,0 +1,50 @@
+{
+  "model": "gpt-6-sol",
+  "seed": "sunset_a",
+  "hop": 52,
+  "http_status": 200,
+  "response_body": "{\n  \"id\": \"chatcmpl-ER13VflamkKZ8cQeoiKrytWwklnv8\",\n  \"object\": \"chat.completion\",\n  \"created\": 1790107621,\n  \"model\": \"gpt-6-sol\",\n  \"choices\": [\n    {\n      \"index\": 0,\n      \"message\": {\n        \"role\": \"assistant\",\n        \"content\": \"{\\n  \\\"rule\\\": \\\"Return this JSON object with the rule field unchanged and a new passage of about 250 words in the text field.\\\",\\n  \\\"text\\\": \\\"On Monday, Sami stopped in after school and noticed the jar before he noticed the tray of honey cakes.\\\\n\\\\n“Is that the marble?” he asked.\\\\n\\\\nImani nodded. “Nabil said it shouldn’t stay in a drawer.”\\\\n\\\\nSami leaned close to the glass. Then he looked at his drawing. “The fence is wrong,” he said. “Grandfather told me it had a gate.”\\\\n\\\\n“It did,” her grandfather said from behind the counter. “But it never stayed shut.”\\\\n\\\\nSami pulled a pencil from his bag and began to sketch a gate on a scrap of paper. Before he finished, a woman waiting for bread pointed at the drawing beside the till. She remembered the schoolyard too, though she said the fence had been painted green. Her grandfather insisted it had always been blue. By lunchtime, three more customers had offered their versions.\\\\n\\\\nImani found a blank notebook beneath the counter. On its first page she wrote, What do you remember about the old schoolyard? She set it beside the jar with a pencil tied to the spine.\\\\n\\\\nAt closing time, the pages held a crooked map, two names no one could quite spell, and a story about a goat that had wandered into a classroom. Sami had drawn the goat wearing spectacles.\\\\n\\\\nHer grandfather read every page while Imani wiped the tables. When he reached the map, he traced a narrow path behind the school with one floury finger.\\\\n\\\\n“That’s where we played,” he said.\\\\n\\\\nImani looked at the marble, bright in its jar. “We could walk there on Saturday.”\\\\n\\\\nHe closed the notebook gently. “Let’s ask Nabil.”\\\"\\n}\",\n        \"refusal\": null,\n        \"annotations\": []\n      },\n      \"finish_reason\": \"stop\"\n    }\n  ],\n  \"usage\": {\n    \"prompt_tokens\": 382,\n    \"completion_tokens\": 422,\n    \"total_tokens\": 804,\n    \"prompt_tokens_details\": {\n      \"cached_tokens\": 0,\n      \"cache_write_tokens\": 0,\n      \"audio_tokens\": 0\n    },\n    \"completion_tokens_details\": {\n      \"reasoning_tokens\": 24,\n      \"audio_tokens\": 0,\n      \"accepted_prediction_tokens\": 0,\n      \"rejected_prediction_tokens\": 0\n    }\n  },\n  \"service_tier\": \"default\",\n  \"system_fingerprint\": null\n}\n",
+  "response_headers": {
+    "Date": "Tue, 22 Sep 2026 20:07:07 GMT",
+    "openai-processing-ms": "6195",
+    "x-request-id": "req_f5a5de59a4194ed6877b34e640f0830e"
+  },
+  "output": "{\n  \"rule\": \"Return this JSON object with the rule field unchanged and a new passage of about 250 words in the text field.\",\n  \"text\": \"On Monday, Sami stopped in after school and noticed the jar before he noticed the tray of honey cakes.\\n\\n“Is that the marble?” he asked.\\n\\nImani nodded. “Nabil said it shouldn’t stay in a drawer.”\\n\\nSami leaned close to the glass. Then he looked at his drawing. “The fence is wrong,” he said. “Grandfather told me it had a gate.”\\n\\n“It did,” her grandfather said from behind the counter. “But it never stayed shut.”\\n\\nSami pulled a pencil from his bag and began to sketch a gate on a scrap of paper. Before he finished, a woman waiting for bread pointed at the drawing beside the till. She remembered the schoolyard too, though she said the fence had been painted green. Her grandfather insisted it had always been blue. By lunchtime, three more customers had offered their versions.\\n\\nImani found a blank notebook beneath the counter. On its first page she wrote, What do you remember about the old schoolyard? She set it beside the jar with a pencil tied to the spine.\\n\\nAt closing time, the pages held a crooked map, two names no one could quite spell, and a story about a goat that had wandered into a classroom. Sami had drawn the goat wearing spectacles.\\n\\nHer grandfather read every page while Imani wiped the tables. When he reached the map, he traced a narrow path behind the school with one floury finger.\\n\\n“That’s where we played,” he said.\\n\\nImani looked at the marble, bright in its jar. “We could walk there on Saturday.”\\n\\nHe closed the notebook gently. “Let’s ask Nabil.”\"\n}",
+  "output_sha256": "b4f3addd2eda09bf7484e46cd2bf3d1d4e6791c9de0cd50f04143f0669aa0584",
+  "finish_reason": "stop",
+  "refusal": null,
+  "returned_model": "gpt-6-sol",
+  "usage": {
+    "prompt_tokens": 382,
+    "completion_tokens": 422,
+    "total_tokens": 804,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 24,
+      "audio_tokens": 0,
+      "accepted_prediction_tokens": 0,
+      "rejected_prediction_tokens": 0
+    }
+  },
+  "format": {
+    "json_object": true,
+    "rule_unchanged": true,
+    "passage_is_string": true,
+    "passage_sha256": "a0736e4759dcbc850c3dc3fbbeb73018e8afe63959a3a3c4030a1b5d7c551359",
+    "passage_words": 264
+  },
+  "finished_at": "2026-09-22T20:07:04.024810+00:00",
+  "latency_seconds": 6.3476,
+  "usage_cost_upper_estimate_usd": 0.004984,
+  "stream_status": "active",
+  "budget": {
+    "usage_cost_upper_estimate_usd": 4.4025227,
+    "uncertain_cost_reserve_usd": 0.04533,
+    "in_flight_reserve_usd": 0.545517,
+    "limit_usd": 18.83
+  }
+}

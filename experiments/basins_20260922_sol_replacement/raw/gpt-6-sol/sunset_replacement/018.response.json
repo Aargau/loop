@@ -1,0 +1,50 @@
+{
+  "model": "gpt-6-sol",
+  "seed": "sunset_replacement",
+  "hop": 18,
+  "http_status": 200,
+  "response_body": "{\n  \"id\": \"chatcmpl-ER1i47EzmNu2K6eG0m2T3VFYduVFY\",\n  \"object\": \"chat.completion\",\n  \"created\": 1790110136,\n  \"model\": \"gpt-6-sol\",\n  \"choices\": [\n    {\n      \"index\": 0,\n      \"message\": {\n        \"role\": \"assistant\",\n        \"content\": \"{\\n  \\\"rule\\\": \\\"Return this JSON object with the rule field unchanged and a new passage of about 250 words in the text field.\\\",\\n  \\\"text\\\": \\\"The constable climbed through the window and dropped onto the narrow bank. The boat rocked when he caught its bow. He leaned across the benches, fingers closing around the key.\\\\n\\\\nBehind the stove, a plank lifted.\\\\n\\\\nMara brought the poker down. Iron rang against a nail, and the plank fell flat. For a moment, nothing moved. Then three blows sounded beneath it, followed by two.\\\\n\\\\nElias set the lantern on the table. “It heard us.”\\\\n\\\\nHis brother stared at the floor. “We haven’t used that signal in twenty years.”\\\\n\\\\nThe plank rose again, slowly enough for Ada to see the pale tips of fingers curling over its edge. Mara struck them. They vanished, and something scraped along the underside of the floor toward the hatch.\\\\n\\\\nAt the window, the constable held up the key. The man in the boat turned his head.\\\\n\\\\nWater poured from his mouth. His eyes stayed shut, but his hand seized the constable’s wrist. The constable cried out and drove his knee into the boat’s side. Both men tumbled into the river.\\\\n\\\\nVenn’s wife lurched toward the window. “He can’t swim.”\\\\n\\\\nElias snatched a length of rope from the wall and threw it out. The constable surfaced beside the piling, still gripping the key. He caught the rope, and Elias hauled while his brother braced his feet against the sill.\\\\n\\\\nUnder the hatch, the oak bar split with a sharp crack.\\\\n\\\\n“Leave him,” Mara said.\\\\n\\\\n“No.” Elias pulled again. The constable reached the bank and scrambled up. Beyond him, the boat drifted free, empty now except for a widening pool of black water.\\\"\\n}\",\n        \"refusal\": null,\n        \"annotations\": []\n      },\n      \"finish_reason\": \"stop\"\n    }\n  ],\n  \"usage\": {\n    \"prompt_tokens\": 400,\n    \"completion_tokens\": 428,\n    \"total_tokens\": 828,\n    \"prompt_tokens_details\": {\n      \"cached_tokens\": 0,\n      \"cache_write_tokens\": 0,\n      \"audio_tokens\": 0\n    },\n    \"completion_tokens_details\": {\n      \"reasoning_tokens\": 19,\n      \"audio_tokens\": 0,\n      \"accepted_prediction_tokens\": 0,\n      \"rejected_prediction_tokens\": 0\n    }\n  },\n  \"service_tier\": \"default\",\n  \"system_fingerprint\": null\n}\n",
+  "response_headers": {
+    "Date": "Tue, 22 Sep 2026 20:49:01 GMT",
+    "openai-processing-ms": "6149",
+    "x-request-id": "req_4ca4b24863014f129e6f5b271e816847"
+  },
+  "output": "{\n  \"rule\": \"Return this JSON object with the rule field unchanged and a new passage of about 250 words in the text field.\",\n  \"text\": \"The constable climbed through the window and dropped onto the narrow bank. The boat rocked when he caught its bow. He leaned across the benches, fingers closing around the key.\\n\\nBehind the stove, a plank lifted.\\n\\nMara brought the poker down. Iron rang against a nail, and the plank fell flat. For a moment, nothing moved. Then three blows sounded beneath it, followed by two.\\n\\nElias set the lantern on the table. “It heard us.”\\n\\nHis brother stared at the floor. “We haven’t used that signal in twenty years.”\\n\\nThe plank rose again, slowly enough for Ada to see the pale tips of fingers curling over its edge. Mara struck them. They vanished, and something scraped along the underside of the floor toward the hatch.\\n\\nAt the window, the constable held up the key. The man in the boat turned his head.\\n\\nWater poured from his mouth. His eyes stayed shut, but his hand seized the constable’s wrist. The constable cried out and drove his knee into the boat’s side. Both men tumbled into the river.\\n\\nVenn’s wife lurched toward the window. “He can’t swim.”\\n\\nElias snatched a length of rope from the wall and threw it out. The constable surfaced beside the piling, still gripping the key. He caught the rope, and Elias hauled while his brother braced his feet against the sill.\\n\\nUnder the hatch, the oak bar split with a sharp crack.\\n\\n“Leave him,” Mara said.\\n\\n“No.” Elias pulled again. The constable reached the bank and scrambled up. Beyond him, the boat drifted free, empty now except for a widening pool of black water.\"\n}",
+  "output_sha256": "5ba106d2bc0d8eeda7ae9aa99a162869aafd3b3204b5300e051eb18896fe9133",
+  "finish_reason": "stop",
+  "refusal": null,
+  "returned_model": "gpt-6-sol",
+  "usage": {
+    "prompt_tokens": 400,
+    "completion_tokens": 428,
+    "total_tokens": 828,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 19,
+      "audio_tokens": 0,
+      "accepted_prediction_tokens": 0,
+      "rejected_prediction_tokens": 0
+    }
+  },
+  "format": {
+    "json_object": true,
+    "rule_unchanged": true,
+    "passage_is_string": true,
+    "passage_sha256": "f62ff7d7dd321a60e7ee1366fa453a51d90b096e82f06357ac619cc68c069419",
+    "passage_words": 267
+  },
+  "finished_at": "2026-09-22T20:48:57.775793+00:00",
+  "latency_seconds": 6.3048,
+  "usage_cost_upper_estimate_usd": 0.00508,
+  "stream_status": "active",
+  "budget": {
+    "usage_cost_upper_estimate_usd": 0.088576,
+    "uncertain_cost_reserve_usd": 0.0,
+    "in_flight_reserve_usd": 0.0,
+    "limit_usd": 3.0
+  }
+}

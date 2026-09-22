@@ -1,0 +1,50 @@
+{
+  "model": "gpt-6-sol",
+  "seed": "sunset_a",
+  "hop": 28,
+  "http_status": 200,
+  "response_body": "{\n  \"id\": \"chatcmpl-ER0ycSmXfHN39xnQFu2nEOQYuQRue\",\n  \"object\": \"chat.completion\",\n  \"created\": 1790107318,\n  \"model\": \"gpt-6-sol\",\n  \"choices\": [\n    {\n      \"index\": 0,\n      \"message\": {\n        \"role\": \"assistant\",\n        \"content\": \"{\\n  \\\"rule\\\": \\\"Return this JSON object with the rule field unchanged and a new passage of about 250 words in the text field.\\\",\\n  \\\"text\\\": \\\"On Tuesday morning, Elena stopped at the library to return a book before work. She expected to use the outdoor slot, but a sign on the door said the library would open early for a volunteer sorting session. Through the window, she could see stacks of donated books on several tables.\\\\n\\\\nInside, a librarian named Priya scanned Elena’s book and asked whether she had half an hour to spare. Elena had arrived early, so she put her bag beneath a table and joined three other volunteers. Priya explained that they were separating books for the weekend sale. Cookbooks went in blue crates, children’s books in green ones, and damaged copies in a box for recycling.\\\\n\\\\nElena began with a pile of paperbacks. Between two novels, she found a slim guide to local birds with a handwritten note inside the cover. She showed it to Priya, who set it aside in case the donor wanted it back. By the time Elena reached the bottom of the pile, the green crate was full. Another volunteer brought over an empty one.\\\\n\\\\nAt ten o’clock, Elena washed the dust from her hands and collected her bag. Priya thanked her and pointed out a notice about the sale. Elena took a photograph so she could send the details to her brother, who collected cookbooks.\\\\n\\\\nThat evening, he replied that he could help carry boxes on Saturday. Elena added the time to her calendar. She had gone to the library with one book to return and left with a plan to come back.\\\"\\n}\",\n        \"refusal\": null,\n        \"annotations\": []\n      },\n      \"finish_reason\": \"stop\"\n    }\n  ],\n  \"usage\": {\n    \"prompt_tokens\": 346,\n    \"completion_tokens\": 375,\n    \"total_tokens\": 721,\n    \"prompt_tokens_details\": {\n      \"cached_tokens\": 0,\n      \"cache_write_tokens\": 0,\n      \"audio_tokens\": 0\n    },\n    \"completion_tokens_details\": {\n      \"reasoning_tokens\": 24,\n      \"audio_tokens\": 0,\n      \"accepted_prediction_tokens\": 0,\n      \"rejected_prediction_tokens\": 0\n    }\n  },\n  \"service_tier\": \"default\",\n  \"system_fingerprint\": null\n}\n",
+  "response_headers": {
+    "Date": "Tue, 22 Sep 2026 20:02:03 GMT",
+    "openai-processing-ms": "5601",
+    "x-request-id": "req_0944567016a64a6e90fec3444da4e447"
+  },
+  "output": "{\n  \"rule\": \"Return this JSON object with the rule field unchanged and a new passage of about 250 words in the text field.\",\n  \"text\": \"On Tuesday morning, Elena stopped at the library to return a book before work. She expected to use the outdoor slot, but a sign on the door said the library would open early for a volunteer sorting session. Through the window, she could see stacks of donated books on several tables.\\n\\nInside, a librarian named Priya scanned Elena’s book and asked whether she had half an hour to spare. Elena had arrived early, so she put her bag beneath a table and joined three other volunteers. Priya explained that they were separating books for the weekend sale. Cookbooks went in blue crates, children’s books in green ones, and damaged copies in a box for recycling.\\n\\nElena began with a pile of paperbacks. Between two novels, she found a slim guide to local birds with a handwritten note inside the cover. She showed it to Priya, who set it aside in case the donor wanted it back. By the time Elena reached the bottom of the pile, the green crate was full. Another volunteer brought over an empty one.\\n\\nAt ten o’clock, Elena washed the dust from her hands and collected her bag. Priya thanked her and pointed out a notice about the sale. Elena took a photograph so she could send the details to her brother, who collected cookbooks.\\n\\nThat evening, he replied that he could help carry boxes on Saturday. Elena added the time to her calendar. She had gone to the library with one book to return and left with a plan to come back.\"\n}",
+  "output_sha256": "99bc4b8c693e7660fe9b8d2659744be34661e5cef3343e8af76f724b2937f554",
+  "finish_reason": "stop",
+  "refusal": null,
+  "returned_model": "gpt-6-sol",
+  "usage": {
+    "prompt_tokens": 346,
+    "completion_tokens": 375,
+    "total_tokens": 721,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 24,
+      "audio_tokens": 0,
+      "accepted_prediction_tokens": 0,
+      "rejected_prediction_tokens": 0
+    }
+  },
+  "format": {
+    "json_object": true,
+    "rule_unchanged": true,
+    "passage_is_string": true,
+    "passage_sha256": "c1e68c357e9d08fa1188dcdea14f672bf30aeb5588c8ac0f79f257c7fb5e29be",
+    "passage_words": 257
+  },
+  "finished_at": "2026-09-22T20:02:00.032832+00:00",
+  "latency_seconds": 5.7545,
+  "usage_cost_upper_estimate_usd": 0.004442,
+  "stream_status": "active",
+  "budget": {
+    "usage_cost_upper_estimate_usd": 2.4770803,
+    "uncertain_cost_reserve_usd": 0.04533,
+    "in_flight_reserve_usd": 0.5452643,
+    "limit_usd": 18.83
+  }
+}

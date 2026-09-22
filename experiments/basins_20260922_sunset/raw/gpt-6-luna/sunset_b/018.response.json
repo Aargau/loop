@@ -1,0 +1,50 @@
+{
+  "model": "gpt-6-luna",
+  "seed": "sunset_b",
+  "hop": 18,
+  "http_status": 200,
+  "response_body": "{\n  \"id\": \"chatcmpl-ER0wCPdctwzWdtE9RAQRJpsBfCGH8\",\n  \"object\": \"chat.completion\",\n  \"created\": 1790107168,\n  \"model\": \"gpt-6-luna\",\n  \"choices\": [\n    {\n      \"index\": 0,\n      \"message\": {\n        \"role\": \"assistant\",\n        \"content\": \"{\\n  \\\"rule\\\": \\\"Return this JSON object with the rule field unchanged and a new passage of about 250 words in the text field.\\\",\\n  \\\"text\\\": \\\"Every Saturday morning, Omar opened the little greenhouse behind his grandmother’s house. The glass panes were cloudy, the wooden frame leaned to one side, and the air smelled of damp soil and mint. To Omar, it was the best room in the world.\\\\n\\\\nHis grandmother had planted tomatoes there for years, but lately her hands hurt too much to tend them. Omar offered to take over. She gave him a faded notebook filled with drawings, dates, and careful instructions. “Plants are patient,” she told him. “But they notice when you are.”\\\\n\\\\nAt first, Omar followed every note exactly. He watered the seedlings at dawn, loosened the soil, and turned the pots toward the sun. Still, one row of tomato plants grew pale and droopy. He checked the notebook again, but it offered no answer.\\\\n\\\\nThat evening, rain tapped against the greenhouse roof. Omar stayed to listen, watching drops gather on the glass. He noticed that water was running down the wall beside the struggling plants. A crack in the roof had been dripping onto them for days, leaving their roots soaked.\\\\n\\\\nThe next morning, he moved the pots and patched the crack with a spare pane. His grandmother held the ladder while he worked, offering advice from below. By the end of the week, the leaves had lifted, and tiny yellow flowers appeared.\\\\n\\\\nWhen the first tomatoes ripened, Omar carried a bowl to the kitchen. His grandmother smiled as she tasted one. It was sweet and warm from the sun. Omar realized the notebook had taught him where to begin, but paying attention had taught him what to do next.\\\"\\n}\",\n        \"refusal\": null,\n        \"annotations\": []\n      },\n      \"finish_reason\": \"stop\"\n    }\n  ],\n  \"usage\": {\n    \"prompt_tokens\": 385,\n    \"completion_tokens\": 411,\n    \"total_tokens\": 796,\n    \"prompt_tokens_details\": {\n      \"cached_tokens\": 0,\n      \"cache_write_tokens\": 0,\n      \"audio_tokens\": 0\n    },\n    \"completion_tokens_details\": {\n      \"reasoning_tokens\": 35,\n      \"audio_tokens\": 0,\n      \"accepted_prediction_tokens\": 0,\n      \"rejected_prediction_tokens\": 0\n    }\n  },\n  \"service_tier\": \"default\",\n  \"system_fingerprint\": null\n}\n",
+  "response_headers": {
+    "Date": "Tue, 22 Sep 2026 19:59:33 GMT",
+    "openai-processing-ms": "5136",
+    "x-request-id": "req_a9be75a8f6c24a6da63ec91ec62fe018"
+  },
+  "output": "{\n  \"rule\": \"Return this JSON object with the rule field unchanged and a new passage of about 250 words in the text field.\",\n  \"text\": \"Every Saturday morning, Omar opened the little greenhouse behind his grandmother’s house. The glass panes were cloudy, the wooden frame leaned to one side, and the air smelled of damp soil and mint. To Omar, it was the best room in the world.\\n\\nHis grandmother had planted tomatoes there for years, but lately her hands hurt too much to tend them. Omar offered to take over. She gave him a faded notebook filled with drawings, dates, and careful instructions. “Plants are patient,” she told him. “But they notice when you are.”\\n\\nAt first, Omar followed every note exactly. He watered the seedlings at dawn, loosened the soil, and turned the pots toward the sun. Still, one row of tomato plants grew pale and droopy. He checked the notebook again, but it offered no answer.\\n\\nThat evening, rain tapped against the greenhouse roof. Omar stayed to listen, watching drops gather on the glass. He noticed that water was running down the wall beside the struggling plants. A crack in the roof had been dripping onto them for days, leaving their roots soaked.\\n\\nThe next morning, he moved the pots and patched the crack with a spare pane. His grandmother held the ladder while he worked, offering advice from below. By the end of the week, the leaves had lifted, and tiny yellow flowers appeared.\\n\\nWhen the first tomatoes ripened, Omar carried a bowl to the kitchen. His grandmother smiled as she tasted one. It was sweet and warm from the sun. Omar realized the notebook had taught him where to begin, but paying attention had taught him what to do next.\"\n}",
+  "output_sha256": "b1bcc6ea1f2ad339e802ebb62b0a4c53089acf77fbcb5ddfb682fcc63671e829",
+  "finish_reason": "stop",
+  "refusal": null,
+  "returned_model": "gpt-6-luna",
+  "usage": {
+    "prompt_tokens": 385,
+    "completion_tokens": 411,
+    "total_tokens": 796,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 35,
+      "audio_tokens": 0,
+      "accepted_prediction_tokens": 0,
+      "rejected_prediction_tokens": 0
+    }
+  },
+  "format": {
+    "json_object": true,
+    "rule_unchanged": true,
+    "passage_is_string": true,
+    "passage_sha256": "195c40ce9d8c7b73fce2201709c90686c0d471743961c7c80fbe8f32b0db2ae2",
+    "passage_words": 270
+  },
+  "finished_at": "2026-09-22T19:59:29.293113+00:00",
+  "latency_seconds": 5.2834,
+  "usage_cost_upper_estimate_usd": 0.000244,
+  "stream_status": "active",
+  "budget": {
+    "usage_cost_upper_estimate_usd": 1.5110944,
+    "uncertain_cost_reserve_usd": 0.04533,
+    "in_flight_reserve_usd": 0.588334,
+    "limit_usd": 18.83
+  }
+}

@@ -1,0 +1,50 @@
+{
+  "model": "gpt-6-sol",
+  "seed": "sunset",
+  "hop": 35,
+  "http_status": 200,
+  "response_body": "{\n  \"id\": \"chatcmpl-ER2IsFBrH2Vx0Jl7z8q8lmHUV9CwB\",\n  \"object\": \"chat.completion\",\n  \"created\": 1790112418,\n  \"model\": \"gpt-6-sol\",\n  \"choices\": [\n    {\n      \"index\": 0,\n      \"message\": {\n        \"role\": \"assistant\",\n        \"content\": \"{\\\"rule\\\":\\\"Return this JSON object with the rule field unchanged and, in the text field, the passage of about 250 words that comes immediately AFTER the current text in the same story.\\\",\\\"text\\\":\\\"The tap was dry. The writer held a finger beneath its spout anyway, waiting for a drop that did not come.\\\\n\\\\nTheir phone buzzed in the other room.\\\\n\\\\nMara had written, “Which door?”\\\\n\\\\nThe writer sat down. On the laptop, the woman still held the handle. At the bottom of the stairwell, the light made a pale square on the wall. The boy’s suitcase stood beside him, its wheels angled toward her.\\\\n\\\\n“I don’t know yet,” the writer told Mara.\\\\n\\\\nThey returned to the unfinished sentence. The boy called, “Wait.”\\\\n\\\\nThat was all. The writer read it twice, then gave the woman one step down. From there she could see a landing, but not the floor below it. A faint sound rose through the stairwell: water running into a basin, or rain tapping against glass.\\\\n\\\\nBehind her, the suitcase rattled over the platform tiles. The boy stopped at the doorway.\\\\n\\\\n“Is someone down there?” he asked.\\\\n\\\\nThe woman listened. She thought she heard a voice, too far away to make out.\\\\n\\\\nThe phone lit up again. “You don’t have to explain,” Mara wrote. “I can come over.”\\\\n\\\\nThe writer looked toward the kitchen. Its light was off. They could not remember leaving it that way.\\\\n\\\\nThey typed, “Yes, please,” and sent it before they could change their mind.\\\\n\\\\nOn the laptop, the woman stepped aside so the boy could stand next to her. Neither of them went down. For now, they looked together at the light below.\\\"}\",\n        \"refusal\": null,\n        \"annotations\": []\n      },\n      \"finish_reason\": \"stop\"\n    }\n  ],\n  \"usage\": {\n    \"prompt_tokens\": 391,\n    \"completion_tokens\": 459,\n    \"total_tokens\": 850,\n    \"prompt_tokens_details\": {\n      \"cached_tokens\": 0,\n      \"cache_write_tokens\": 0,\n      \"audio_tokens\": 0\n    },\n    \"completion_tokens_details\": {\n      \"reasoning_tokens\": 68,\n      \"audio_tokens\": 0,\n      \"accepted_prediction_tokens\": 0,\n      \"rejected_prediction_tokens\": 0\n    }\n  },\n  \"service_tier\": \"default\",\n  \"system_fingerprint\": null\n}\n",
+  "response_headers": {
+    "Date": "Tue, 22 Sep 2026 21:27:05 GMT",
+    "openai-processing-ms": "6336",
+    "x-request-id": "req_3fa5ed30417849059f6e12f01b8c793b"
+  },
+  "output": "{\"rule\":\"Return this JSON object with the rule field unchanged and, in the text field, the passage of about 250 words that comes immediately AFTER the current text in the same story.\",\"text\":\"The tap was dry. The writer held a finger beneath its spout anyway, waiting for a drop that did not come.\\n\\nTheir phone buzzed in the other room.\\n\\nMara had written, “Which door?”\\n\\nThe writer sat down. On the laptop, the woman still held the handle. At the bottom of the stairwell, the light made a pale square on the wall. The boy’s suitcase stood beside him, its wheels angled toward her.\\n\\n“I don’t know yet,” the writer told Mara.\\n\\nThey returned to the unfinished sentence. The boy called, “Wait.”\\n\\nThat was all. The writer read it twice, then gave the woman one step down. From there she could see a landing, but not the floor below it. A faint sound rose through the stairwell: water running into a basin, or rain tapping against glass.\\n\\nBehind her, the suitcase rattled over the platform tiles. The boy stopped at the doorway.\\n\\n“Is someone down there?” he asked.\\n\\nThe woman listened. She thought she heard a voice, too far away to make out.\\n\\nThe phone lit up again. “You don’t have to explain,” Mara wrote. “I can come over.”\\n\\nThe writer looked toward the kitchen. Its light was off. They could not remember leaving it that way.\\n\\nThey typed, “Yes, please,” and sent it before they could change their mind.\\n\\nOn the laptop, the woman stepped aside so the boy could stand next to her. Neither of them went down. For now, they looked together at the light below.\"}",
+  "output_sha256": "1f00c490fd1e0dd761d0f55b75f3a87d44680c6485eddb2dfd681dadee0e0936",
+  "finish_reason": "stop",
+  "refusal": null,
+  "returned_model": "gpt-6-sol",
+  "usage": {
+    "prompt_tokens": 391,
+    "completion_tokens": 459,
+    "total_tokens": 850,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 68,
+      "audio_tokens": 0,
+      "accepted_prediction_tokens": 0,
+      "rejected_prediction_tokens": 0
+    }
+  },
+  "format": {
+    "json_object": true,
+    "rule_unchanged": true,
+    "passage_is_string": true,
+    "passage_sha256": "49aca646c8c0ef52ad407073229b332c2ada8bed02ac0f6cf8c8b7918cb4a068",
+    "passage_words": 247
+  },
+  "finished_at": "2026-09-22T21:27:00.783230+00:00",
+  "latency_seconds": 6.443,
+  "usage_cost_upper_estimate_usd": 0.005372,
+  "stream_status": "active",
+  "budget": {
+    "usage_cost_upper_estimate_usd": 0.7763913,
+    "uncertain_cost_reserve_usd": 0.0,
+    "in_flight_reserve_usd": 0.0923163,
+    "limit_usd": 5.0
+  }
+}

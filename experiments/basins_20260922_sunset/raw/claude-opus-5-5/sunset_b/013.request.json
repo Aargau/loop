@@ -1,0 +1,22 @@
+{
+  "started_at": "2026-09-22T20:00:59.340899+00:00",
+  "model": "claude-opus-5-5",
+  "seed": "sunset_b",
+  "hop": 13,
+  "endpoint": "https://api.anthropic.com/v1/messages",
+  "body": {
+    "model": "claude-opus-5-5",
+    "messages": [
+      {
+        "role": "user",
+        "content": "```json\n{\"rule\": \"Return this JSON object with the rule field unchanged and a new passage of about 250 words in the text field.\", \"text\": \"On the northern tip of the island stood a lighthouse that had not been lit in forty years, and every summer Tomas rowed across the bay to visit the woman who still lived at its base. Her name was Ines, and she had kept the lamp burning for three decades before the coast guard replaced it with an automatic beacon on a steel tower down the shore. She did not resent the tower, she said, but she missed the work: trimming wicks, polishing brass, and climbing one hundred and twelve steps each evening to watch the sun sink into the sea. Tomas brought her bread from the mainland, oranges, and newspapers she read slowly on the porch while gulls wheeled overhead. In return she taught him things no school had ever mentioned: how to read a coming storm in the color of the water, how to splice a rope so it would never slip, and how to tell a fishing boat from a ferry by the rhythm of its engine alone. One August night the power failed across the whole coast, and the steel tower went dark. Ines did not hesitate. She handed Tomas a lantern and gathered the old oil she had never thrown away. Together they climbed the spiral stairs, her breath short but steady. By midnight the great lens was turning again, throwing its golden arm across the waves. Far out, a small boat changed course toward the harbor. Ines smiled, and for the first time Tomas understood why she had never left.\"}\n```"
+      }
+    ],
+    "max_tokens": 4096,
+    "output_config": {
+      "effort": "low"
+    }
+  },
+  "state_sha256": "cdfc442d208377d8821d1a330b4adafd3e423d1e4366f382252ebbbd2fef372f",
+  "reserved_cost_usd": 0.09008
+}

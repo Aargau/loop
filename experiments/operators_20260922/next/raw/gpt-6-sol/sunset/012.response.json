@@ -1,0 +1,50 @@
+{
+  "model": "gpt-6-sol",
+  "seed": "sunset",
+  "hop": 12,
+  "http_status": 200,
+  "response_body": "{\n  \"id\": \"chatcmpl-ER2GTMCUpmynMckJAddT4WuFU7uDk\",\n  \"object\": \"chat.completion\",\n  \"created\": 1790112269,\n  \"model\": \"gpt-6-sol\",\n  \"choices\": [\n    {\n      \"index\": 0,\n      \"message\": {\n        \"role\": \"assistant\",\n        \"content\": \"{\\\"rule\\\":\\\"Return this JSON object with the rule field unchanged and, in the text field, the passage of about 250 words that comes immediately AFTER the current text in the same story.\\\",\\\"text\\\":\\\"The voice was her own.\\\\n\\\\nMara backed away, leaving the key in the lock. On the desk, a new sentence pressed itself into the paper: “That was not the door.”\\\\n\\\\nThe handle began to turn. Mara lunged for the key, but it would not move. In the window, her reflection watched with one hand against the glass. Behind it, the little girl had returned. She stood beneath the painted pear tree, holding a smoking picture frame.\\\\n\\\\nThree knocks sounded from inside the frame.\\\\n\\\\nMara remembered something else about the fire. Her father had not burned the picture until after he came home. He had found her in the kitchen, small and shivering, while someone wearing his face knocked at the front door.\\\\n\\\\n“Dad?” she said.\\\\n\\\\nThe knocking stopped. The little girl looked up from the frame. She had Mara’s face, exactly as it had been at seven.\\\\n\\\\nThe apartment handle turned again. This time Mara let it. The door opened an inch onto a hallway filled with yellow light. No one stood there. At the far end hung the pear-tree picture, untouched by fire.\\\\n\\\\nIn the window, her reflection shook its head.\\\\n\\\\nMara pulled the key from the lock. The hallway went dark, but the apartment door stayed open. Something small slipped through the gap and landed at her feet: a charred piece of wood, warm enough to sting.\\\\n\\\\nOn its back, in her father’s handwriting, were six words.\\\\n\\\\n“You’re the one I let in.”\\\"}\",\n        \"refusal\": null,\n        \"annotations\": []\n      },\n      \"finish_reason\": \"stop\"\n    }\n  ],\n  \"usage\": {\n    \"prompt_tokens\": 389,\n    \"completion_tokens\": 408,\n    \"total_tokens\": 797,\n    \"prompt_tokens_details\": {\n      \"cached_tokens\": 0,\n      \"cache_write_tokens\": 0,\n      \"audio_tokens\": 0\n    },\n    \"completion_tokens_details\": {\n      \"reasoning_tokens\": 33,\n      \"audio_tokens\": 0,\n      \"accepted_prediction_tokens\": 0,\n      \"rejected_prediction_tokens\": 0\n    }\n  },\n  \"service_tier\": \"default\",\n  \"system_fingerprint\": null\n}\n",
+  "response_headers": {
+    "Date": "Tue, 22 Sep 2026 21:24:35 GMT",
+    "openai-processing-ms": "6433",
+    "x-request-id": "req_d0d0f4b101dd4716ac30b3588dc1c8cb"
+  },
+  "output": "{\"rule\":\"Return this JSON object with the rule field unchanged and, in the text field, the passage of about 250 words that comes immediately AFTER the current text in the same story.\",\"text\":\"The voice was her own.\\n\\nMara backed away, leaving the key in the lock. On the desk, a new sentence pressed itself into the paper: “That was not the door.”\\n\\nThe handle began to turn. Mara lunged for the key, but it would not move. In the window, her reflection watched with one hand against the glass. Behind it, the little girl had returned. She stood beneath the painted pear tree, holding a smoking picture frame.\\n\\nThree knocks sounded from inside the frame.\\n\\nMara remembered something else about the fire. Her father had not burned the picture until after he came home. He had found her in the kitchen, small and shivering, while someone wearing his face knocked at the front door.\\n\\n“Dad?” she said.\\n\\nThe knocking stopped. The little girl looked up from the frame. She had Mara’s face, exactly as it had been at seven.\\n\\nThe apartment handle turned again. This time Mara let it. The door opened an inch onto a hallway filled with yellow light. No one stood there. At the far end hung the pear-tree picture, untouched by fire.\\n\\nIn the window, her reflection shook its head.\\n\\nMara pulled the key from the lock. The hallway went dark, but the apartment door stayed open. Something small slipped through the gap and landed at her feet: a charred piece of wood, warm enough to sting.\\n\\nOn its back, in her father’s handwriting, were six words.\\n\\n“You’re the one I let in.”\"}",
+  "output_sha256": "d859dfd8d8529edbdef4a5a8bfe904e71e60dce097c144d1ab8e465e43a4e465",
+  "finish_reason": "stop",
+  "refusal": null,
+  "returned_model": "gpt-6-sol",
+  "usage": {
+    "prompt_tokens": 389,
+    "completion_tokens": 408,
+    "total_tokens": 797,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 33,
+      "audio_tokens": 0,
+      "accepted_prediction_tokens": 0,
+      "rejected_prediction_tokens": 0
+    }
+  },
+  "format": {
+    "json_object": true,
+    "rule_unchanged": true,
+    "passage_is_string": true,
+    "passage_sha256": "422d289f6dfd3bdd36ad736b74244eab87b3462a02ed05510a5445700bbc6113",
+    "passage_words": 245
+  },
+  "finished_at": "2026-09-22T21:24:31.079816+00:00",
+  "latency_seconds": 6.5421,
+  "usage_cost_upper_estimate_usd": 0.004858,
+  "stream_status": "active",
+  "budget": {
+    "usage_cost_upper_estimate_usd": 0.2314741,
+    "uncertain_cost_reserve_usd": 0.0,
+    "in_flight_reserve_usd": 0.3073785,
+    "limit_usd": 5.0
+  }
+}

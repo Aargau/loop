@@ -1,0 +1,48 @@
+{
+  "model": "claude-fable-5-1",
+  "seed": "tide",
+  "hop": 23,
+  "http_status": 200,
+  "response_body": "{\"model\":\"claude-fable-5-1\",\"id\":\"msg_011CfK5rugpbJxcD6MLvwhjs\",\"type\":\"message\",\"role\":\"assistant\",\"content\":[{\"type\":\"text\",\"text\":\"{\\\"rule\\\": \\\"Return this JSON object with the rule field unchanged and a new passage of about 250 words in the text field.\\\", \\\"text\\\": \\\"The bell foundry at Ashwell had cast its last bell in 1961, and by the time Mira Solano inherited the building, the furnace had been cold longer than she had been alive.\\\\n\\\\nHer great-aunt had left it to her with a single instruction, written on the back of a feed-store receipt: do not let them melt the patterns.\\\\n\\\\nThe patterns were wooden forms, hundreds of them, stacked in the loft like the ribs of some vast dismantled animal. Each one held the exact profile of a bell that had once hung somewhere: a schoolhouse in Renner County, a fire station in a town that no longer had a name, a chapel whose congregation had scattered before the war. The forms were worthless to anyone who did not know how to read them.\\\\n\\\\nMira learned to read them.\\\\n\\\\nShe found her great-aunt's notebooks in a tin box under the floorboards and spent a winter matching the shapes to the sketches, the sketches to the notes on pitch and weight and the temper of the bronze. She learned that a bell's voice lived in the thickness of its lip, that a tenth of an inch could turn a clear note sour.\\\\n\\\\nIn spring a church in the valley wrote to ask whether anyone still knew how the old Ashwell bell had sounded. It had cracked in a frost. They wanted it recast true.\\\\n\\\\nMira climbed to the loft, found the pattern, and carried it down.\\\\n\\\\nThe furnace took three days to heat. She did not sleep much.\\\\n\\\\nWhen the bell rang, an old man in the valley wept, and did not say why.\\\"}\"}],\"container\":null,\"stop_reason\":\"end_turn\",\"stop_sequence\":null,\"stop_details\":null,\"usage\":{\"input_tokens\":549,\"cache_creation_input_tokens\":0,\"cache_read_input_tokens\":0,\"cache_creation\":{\"ephemeral_5m_input_tokens\":0,\"ephemeral_1h_input_tokens\":0},\"output_tokens\":551,\"output_tokens_details\":{\"thinking_tokens\":0},\"service_tier\":\"standard\",\"inference_geo\":\"global\"}}",
+  "response_headers": {
+    "Date": "Tue, 22 Sep 2026 20:10:04 GMT",
+    "request-id": "req_011CfK5rtuBuKMzdbgXzGKji"
+  },
+  "output": "{\"rule\": \"Return this JSON object with the rule field unchanged and a new passage of about 250 words in the text field.\", \"text\": \"The bell foundry at Ashwell had cast its last bell in 1961, and by the time Mira Solano inherited the building, the furnace had been cold longer than she had been alive.\\n\\nHer great-aunt had left it to her with a single instruction, written on the back of a feed-store receipt: do not let them melt the patterns.\\n\\nThe patterns were wooden forms, hundreds of them, stacked in the loft like the ribs of some vast dismantled animal. Each one held the exact profile of a bell that had once hung somewhere: a schoolhouse in Renner County, a fire station in a town that no longer had a name, a chapel whose congregation had scattered before the war. The forms were worthless to anyone who did not know how to read them.\\n\\nMira learned to read them.\\n\\nShe found her great-aunt's notebooks in a tin box under the floorboards and spent a winter matching the shapes to the sketches, the sketches to the notes on pitch and weight and the temper of the bronze. She learned that a bell's voice lived in the thickness of its lip, that a tenth of an inch could turn a clear note sour.\\n\\nIn spring a church in the valley wrote to ask whether anyone still knew how the old Ashwell bell had sounded. It had cracked in a frost. They wanted it recast true.\\n\\nMira climbed to the loft, found the pattern, and carried it down.\\n\\nThe furnace took three days to heat. She did not sleep much.\\n\\nWhen the bell rang, an old man in the valley wept, and did not say why.\"}",
+  "output_sha256": "4ebf57294d1f06b7385be0018f946d856a8ca5ec0362d52b08fcd79e3762e1d2",
+  "finish_reason": "end_turn",
+  "refusal": null,
+  "returned_model": "claude-fable-5-1",
+  "usage": {
+    "input_tokens": 549,
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 0,
+    "cache_creation": {
+      "ephemeral_5m_input_tokens": 0,
+      "ephemeral_1h_input_tokens": 0
+    },
+    "output_tokens": 551,
+    "output_tokens_details": {
+      "thinking_tokens": 0
+    },
+    "service_tier": "standard",
+    "inference_geo": "global"
+  },
+  "format": {
+    "json_object": true,
+    "rule_unchanged": true,
+    "passage_is_string": true,
+    "passage_sha256": "f661032cf421806adb876768466e2a9887d076dec574c067919e64346afee0fc",
+    "passage_words": 271
+  },
+  "finished_at": "2026-09-22T20:10:00.118134+00:00",
+  "latency_seconds": 13.0055,
+  "usage_cost_upper_estimate_usd": 0.03304,
+  "stream_status": "active",
+  "budget": {
+    "usage_cost_upper_estimate_usd": 5.4758017,
+    "uncertain_cost_reserve_usd": 0.04533,
+    "in_flight_reserve_usd": 0.318558,
+    "limit_usd": 18.83
+  }
+}

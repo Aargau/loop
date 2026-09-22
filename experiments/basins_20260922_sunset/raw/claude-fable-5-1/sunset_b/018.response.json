@@ -1,0 +1,48 @@
+{
+  "model": "claude-fable-5-1",
+  "seed": "sunset_b",
+  "hop": 18,
+  "http_status": 200,
+  "response_body": "{\"model\":\"claude-fable-5-1\",\"id\":\"msg_011CfK5bXAKeGMnfSF4ST7VU\",\"type\":\"message\",\"role\":\"assistant\",\"content\":[{\"type\":\"text\",\"text\":\"{\\\"rule\\\": \\\"Return this JSON object with the rule field unchanged and a new passage of about 250 words in the text field.\\\", \\\"text\\\": \\\"The bakery on Wren Street closed the winter Tomas turned seventy-one, and the notice taped to the window went up the same morning his hearing aid stopped working. He read it through the glass with the dead device in his coat pocket, and afterward the two things stayed fused in his mind: the sudden hush of the street and the words thank you for forty years of loyal custom.\\\\n\\\\nHe kept walking past it anyway. His route had been fixed since the year his wife died, and the empty shop did not seem to object to being looked at. The awning still came down in the wind, the faded sign still promised rye and cardamom buns, and on cold mornings the glass still fogged from the inside, as if something in there were breathing.\\\\n\\\\nThe neighbors still nodded when they passed. He still bought his bread from the supermarket now, but he carried it home the old way, tucked under one arm, warm against his ribs though it was never warm. Nobody noticed, and he knew that, and he did it anyway.\\\\n\\\\nWhat surprised him was how little the closing changed. He had thought of himself as a customer, a person the shop had needed in order to be a shop. Now he understood he had mostly been its regular. The ovens had never needed him to bake; they had needed someone to expect them, to round the corner at seven and confirm that the smell was still there, still rising, still telling the street it was morning.\\\\n\\\\nHe went on expecting. It seemed the least anyone could do.\\\"}\"}],\"container\":null,\"stop_reason\":\"end_turn\",\"stop_sequence\":null,\"stop_details\":null,\"usage\":{\"input_tokens\":507,\"cache_creation_input_tokens\":0,\"cache_read_input_tokens\":0,\"cache_creation\":{\"ephemeral_5m_input_tokens\":0,\"ephemeral_1h_input_tokens\":0},\"output_tokens\":502,\"output_tokens_details\":{\"thinking_tokens\":0},\"service_tier\":\"standard\",\"inference_geo\":\"global\"}}",
+  "response_headers": {
+    "Date": "Tue, 22 Sep 2026 20:06:33 GMT",
+    "request-id": "req_011CfK5bWh3Et25xZ1rZz1uN"
+  },
+  "output": "{\"rule\": \"Return this JSON object with the rule field unchanged and a new passage of about 250 words in the text field.\", \"text\": \"The bakery on Wren Street closed the winter Tomas turned seventy-one, and the notice taped to the window went up the same morning his hearing aid stopped working. He read it through the glass with the dead device in his coat pocket, and afterward the two things stayed fused in his mind: the sudden hush of the street and the words thank you for forty years of loyal custom.\\n\\nHe kept walking past it anyway. His route had been fixed since the year his wife died, and the empty shop did not seem to object to being looked at. The awning still came down in the wind, the faded sign still promised rye and cardamom buns, and on cold mornings the glass still fogged from the inside, as if something in there were breathing.\\n\\nThe neighbors still nodded when they passed. He still bought his bread from the supermarket now, but he carried it home the old way, tucked under one arm, warm against his ribs though it was never warm. Nobody noticed, and he knew that, and he did it anyway.\\n\\nWhat surprised him was how little the closing changed. He had thought of himself as a customer, a person the shop had needed in order to be a shop. Now he understood he had mostly been its regular. The ovens had never needed him to bake; they had needed someone to expect them, to round the corner at seven and confirm that the smell was still there, still rising, still telling the street it was morning.\\n\\nHe went on expecting. It seemed the least anyone could do.\"}",
+  "output_sha256": "c0cf2145e3ca246f86b22de4929755c16d5eb4ed185355184281f7ac6207e6aa",
+  "finish_reason": "end_turn",
+  "refusal": null,
+  "returned_model": "claude-fable-5-1",
+  "usage": {
+    "input_tokens": 507,
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 0,
+    "cache_creation": {
+      "ephemeral_5m_input_tokens": 0,
+      "ephemeral_1h_input_tokens": 0
+    },
+    "output_tokens": 502,
+    "output_tokens_details": {
+      "thinking_tokens": 0
+    },
+    "service_tier": "standard",
+    "inference_geo": "global"
+  },
+  "format": {
+    "json_object": true,
+    "rule_unchanged": true,
+    "passage_is_string": true,
+    "passage_sha256": "caf3a6e00df19920a18b6d88b9f1533242b1697849cb4e09801d955cda893453",
+    "passage_words": 269
+  },
+  "finished_at": "2026-09-22T20:06:29.210703+00:00",
+  "latency_seconds": 10.7795,
+  "usage_cost_upper_estimate_usd": 0.03017,
+  "stream_status": "active",
+  "budget": {
+    "usage_cost_upper_estimate_usd": 4.2036348,
+    "uncertain_cost_reserve_usd": 0.04533,
+    "in_flight_reserve_usd": 0.3642855,
+    "limit_usd": 18.83
+  }
+}

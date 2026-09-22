@@ -1,0 +1,50 @@
+{
+  "model": "gpt-6-astra",
+  "seed": "tide_a",
+  "hop": 1,
+  "http_status": 200,
+  "response_body": "{\n  \"id\": \"chatcmpl-ER0o0FRFkHakXT3ZfI93ynIzLERNi\",\n  \"object\": \"chat.completion\",\n  \"created\": 1790106660,\n  \"model\": \"gpt-6-astra\",\n  \"choices\": [\n    {\n      \"index\": 0,\n      \"message\": {\n        \"role\": \"assistant\",\n        \"content\": \"{\\n  \\\"rule\\\": \\\"Return this JSON object with the rule field unchanged and a new passage of about 250 words in the text field.\\\",\\n  \\\"text\\\": \\\"The tide came in an hour early. Mara noticed because the water had already swallowed the lowest step of the harbor stairs, where she always sat to eat her breakfast. Her father’s old tide table lay open beside her, its penciled predictions suddenly useless.\\\\n\\\\nAcross the bay, the bell on the abandoned lighthouse rang once.\\\\n\\\\nNobody had lived there for thirty years.\\\\n\\\\nMara wrapped her bread in its cloth and stood. Along the quay, fishermen paused over their nets. A dog began barking, then stopped so abruptly that the silence seemed deliberate.\\\\n\\\\nThe bell rang again.\\\\n\\\\nHer father had told her a story about that sound, though only once, and only after a winter storm had kept him awake for three nights. If the sea returned something it had taken, he said, the lighthouse would announce it.\\\\n\\\\nShe had been seven then. She had asked whether the sea could return a person.\\\\n\\\\nHe had gone outside without answering.\\\\n\\\\nNow a small wooden boat drifted between the harbor walls. No sail, no oars, no engine. Its blue paint was blistered, and a length of red rope trailed from its bow.\\\\n\\\\nMara knew that rope. She had tied it herself the morning her brother left.\\\\n\\\\nThe boat nudged the lowest stair. Inside lay a yellow raincoat, a sealed tin box, and a pair of boots far too small for a grown man.\\\\n\\\\nBehind her, someone whispered her name.\\\\n\\\\nBut Mara was watching the water in the bottom of the boat, where fresh drops kept falling from a place the morning sunlight showed was empty.\\\"\\n}\",\n        \"refusal\": null,\n        \"annotations\": []\n      },\n      \"finish_reason\": \"stop\"\n    }\n  ],\n  \"usage\": {\n    \"prompt_tokens\": 46,\n    \"completion_tokens\": 373,\n    \"total_tokens\": 419,\n    \"prompt_tokens_details\": {\n      \"cached_tokens\": 0,\n      \"cache_write_tokens\": 0,\n      \"audio_tokens\": 0\n    },\n    \"completion_tokens_details\": {\n      \"reasoning_tokens\": 0,\n      \"audio_tokens\": 0,\n      \"accepted_prediction_tokens\": 0,\n      \"rejected_prediction_tokens\": 0\n    }\n  },\n  \"service_tier\": \"default\",\n  \"system_fingerprint\": null\n}\n",
+  "response_headers": {
+    "Date": "Tue, 22 Sep 2026 19:51:13 GMT",
+    "openai-processing-ms": "13235",
+    "x-request-id": "req_9b7186be79134fc08ecf76bf6bf4e0e5"
+  },
+  "output": "{\n  \"rule\": \"Return this JSON object with the rule field unchanged and a new passage of about 250 words in the text field.\",\n  \"text\": \"The tide came in an hour early. Mara noticed because the water had already swallowed the lowest step of the harbor stairs, where she always sat to eat her breakfast. Her father’s old tide table lay open beside her, its penciled predictions suddenly useless.\\n\\nAcross the bay, the bell on the abandoned lighthouse rang once.\\n\\nNobody had lived there for thirty years.\\n\\nMara wrapped her bread in its cloth and stood. Along the quay, fishermen paused over their nets. A dog began barking, then stopped so abruptly that the silence seemed deliberate.\\n\\nThe bell rang again.\\n\\nHer father had told her a story about that sound, though only once, and only after a winter storm had kept him awake for three nights. If the sea returned something it had taken, he said, the lighthouse would announce it.\\n\\nShe had been seven then. She had asked whether the sea could return a person.\\n\\nHe had gone outside without answering.\\n\\nNow a small wooden boat drifted between the harbor walls. No sail, no oars, no engine. Its blue paint was blistered, and a length of red rope trailed from its bow.\\n\\nMara knew that rope. She had tied it herself the morning her brother left.\\n\\nThe boat nudged the lowest stair. Inside lay a yellow raincoat, a sealed tin box, and a pair of boots far too small for a grown man.\\n\\nBehind her, someone whispered her name.\\n\\nBut Mara was watching the water in the bottom of the boat, where fresh drops kept falling from a place the morning sunlight showed was empty.\"\n}",
+  "output_sha256": "c81bec07aa1e1a4a24f598e5302410120d3af6b40fd4573e586241f141372bae",
+  "finish_reason": "stop",
+  "refusal": null,
+  "returned_model": "gpt-6-astra",
+  "usage": {
+    "prompt_tokens": 46,
+    "completion_tokens": 373,
+    "total_tokens": 419,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "audio_tokens": 0,
+      "accepted_prediction_tokens": 0,
+      "rejected_prediction_tokens": 0
+    }
+  },
+  "format": {
+    "json_object": true,
+    "rule_unchanged": true,
+    "passage_is_string": true,
+    "passage_sha256": "5f677a3120c6979ae4f52dd4412f108f43ee1c5364bcc5c593bf6301a4c45445",
+    "passage_words": 262
+  },
+  "finished_at": "2026-09-22T19:51:09.338483+00:00",
+  "latency_seconds": 14.5928,
+  "usage_cost_upper_estimate_usd": 0.01911,
+  "stream_status": "active",
+  "budget": {
+    "usage_cost_upper_estimate_usd": 0.0623942,
+    "uncertain_cost_reserve_usd": 0.0,
+    "in_flight_reserve_usd": 0.3406129,
+    "limit_usd": 20
+  }
+}

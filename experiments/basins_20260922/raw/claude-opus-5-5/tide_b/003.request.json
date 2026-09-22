@@ -1,0 +1,22 @@
+{
+  "started_at": "2026-09-22T19:52:08.435189+00:00",
+  "model": "claude-opus-5-5",
+  "seed": "tide_b",
+  "hop": 3,
+  "endpoint": "https://api.anthropic.com/v1/messages",
+  "body": {
+    "model": "claude-opus-5-5",
+    "messages": [
+      {
+        "role": "user",
+        "content": "```json\n{\"rule\": \"Return this JSON object with the rule field unchanged and a new passage of about 250 words in the text field.\", \"text\": \"The light did not flicker the way a ship's lantern does when the swell lifts and drops it. It glided, low and level, as if the sea beneath it had been smoothed flat by an invisible hand. Tomas put his cap back on, then took it off again, unsure which was more respectful.\\n\\nNobody fetched the harbormaster. Nobody rang the chapel bell. The town simply waited, the way one waits at a bedside, listening for a change in breathing. Marguerite felt flour still dusting her wrists and did not brush it away.\\n\\nWhen the light was close enough to cast shadows, they saw it was a boat, small and weathered, its hull the pale gray of driftwood. It had no sail, no oars, no engine. At its prow hung a lantern of old brass, and behind it sat a woman wrapped in a dark shawl, her hands folded in her lap.\\n\\nThe gulls rose all at once from the cliff, a white storm of wings, and circled the boat three times before settling on the water around it like a guard of honor.\\n\\nThe boat touched the chapel step without a sound. The woman lifted her head, and old Tomas made a noise no one had ever heard from him, half sob, half laughter.\\n\\n\\\"Elena,\\\" he whispered.\\n\\nHis sister had rowed out past the headland fifty years ago, on a night very like this one, and had never come home. Now she stepped onto the stone, her feet somehow dry, and smiled at him as though she had been gone only an hour.\"}\n```"
+      }
+    ],
+    "max_tokens": 4096,
+    "output_config": {
+      "effort": "low"
+    }
+  },
+  "state_sha256": "cc9947fc8235f1b2cd9443a82b5ca416525e2e0715458d17686248e24b8fc6d1",
+  "reserved_cost_usd": 0.090084
+}

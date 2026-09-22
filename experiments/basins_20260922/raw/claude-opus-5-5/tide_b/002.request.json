@@ -1,0 +1,22 @@
+{
+  "started_at": "2026-09-22T19:51:34.875524+00:00",
+  "model": "claude-opus-5-5",
+  "seed": "tide_b",
+  "hop": 2,
+  "endpoint": "https://api.anthropic.com/v1/messages",
+  "body": {
+    "model": "claude-opus-5-5",
+    "messages": [
+      {
+        "role": "user",
+        "content": "```json\n{\"rule\": \"Return this JSON object with the rule field unchanged and a new passage of about 250 words in the text field.\", \"text\": \"The tide came in an hour early, and nobody in Harrow's Point could explain it. Old Tomas, who had kept the tide tables pinned beside his door for forty years, stood on the seawall with his cap in his hands and stared at the water as if it had personally betrayed him. The charts said low water at six. By five the harbor was already brimming, lapping at the lowest rung of the fishermen's ladders and nudging the moored dinghies against one another like restless cattle.\\n\\nChildren gathered first, because children always sense when the ordinary world has slipped a gear. They lined the quay and dropped pebbles into the rising green, counting the seconds until the ripples vanished. Their parents came later, drying their hands on aprons, murmuring about the moon, about storms far out at sea, about the strange warmth that had lingered all week.\\n\\nMarguerite, who ran the bakery, noticed something else. The gulls had gone quiet. Not a single one wheeled over the boats or squabbled on the rooftops. They sat in long silent rows along the cliff, all facing east, as though waiting for someone to arrive.\\n\\nAs the light faded, the water kept climbing, patient and unhurried, until it touched the bottom step of the chapel. Then it stopped. For a long moment the whole town held its breath. Out on the horizon, where the sea met the darkening sky, a single light appeared, steady and white, drifting slowly toward the shore.\"}\n```"
+      }
+    ],
+    "max_tokens": 4096,
+    "output_config": {
+      "effort": "low"
+    }
+  },
+  "state_sha256": "1d8937ba61801f47b060124b5bfcacc9b4780ed2b22d21ed52ac36d90821246d",
+  "reserved_cost_usd": 0.090256
+}

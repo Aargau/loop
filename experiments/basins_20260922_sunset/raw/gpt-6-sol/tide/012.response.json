@@ -1,0 +1,50 @@
+{
+  "model": "gpt-6-sol",
+  "seed": "tide",
+  "hop": 12,
+  "http_status": 200,
+  "response_body": "{\n  \"id\": \"chatcmpl-ER0vavmQfVnIG5WgnSldDrJMyMQKz\",\n  \"object\": \"chat.completion\",\n  \"created\": 1790107130,\n  \"model\": \"gpt-6-sol\",\n  \"choices\": [\n    {\n      \"index\": 0,\n      \"message\": {\n        \"role\": \"assistant\",\n        \"content\": \"{\\n  \\\"rule\\\": \\\"Return this JSON object with the rule field unchanged and a new passage of about 250 words in the text field.\\\",\\n  \\\"text\\\": \\\"“Ready,” their father called.\\\\n\\\\nDaniel and Mr. Venn took the rope while Mara braced her feet against a stone. They pulled steadily. Their father rose past the broken step, one hand on the ladder and the other guarding his head. At the top, Daniel seized his arm and helped him onto the sand.\\\\n\\\\nFor a while, nobody asked about the chamber. Mrs. Bell wrapped a blanket around him, and Mara held the lantern close enough to see that his hands were trembling.\\\\n\\\\n“The plate was bolted shut,” Daniel said at last. “How did you get in?”\\\\n\\\\n“There’s another entrance beneath the old boathouse. I went through it yesterday afternoon.” Their father glanced toward the channel. “The tide came up before I could get back. I found the ladder, but the bottom rung gave way when I tried to climb.”\\\\n\\\\nMara thought of the cross scratched beside the bolt. “You marked the plate.”\\\\n\\\\n“I hoped you’d know it was worth opening.” He gave her a tired smile. “I heard you working this morning. I couldn’t make you hear me over the water.”\\\\n\\\\nMr. Venn checked the knot at the staple, then looked down the shaft. “What’s in the chamber?”\\\\n\\\\n“A set of survey books. They’re dry, on a shelf above the ledge. I left them there rather than risk dropping them in the water.”\\\\n\\\\nThe first ripple reached the hollow between the stones. Daniel moved the lantern away from it.\\\\n\\\\n“Books can wait,” Mrs. Bell said. “You’re coming home.”\\\\n\\\\nTheir father nodded. Together they carried the blanket and lantern up the bank.\\\"\\n}\",\n        \"refusal\": null,\n        \"annotations\": []\n      },\n      \"finish_reason\": \"stop\"\n    }\n  ],\n  \"usage\": {\n    \"prompt_tokens\": 378,\n    \"completion_tokens\": 426,\n    \"total_tokens\": 804,\n    \"prompt_tokens_details\": {\n      \"cached_tokens\": 0,\n      \"cache_write_tokens\": 0,\n      \"audio_tokens\": 0\n    },\n    \"completion_tokens_details\": {\n      \"reasoning_tokens\": 25,\n      \"audio_tokens\": 0,\n      \"accepted_prediction_tokens\": 0,\n      \"rejected_prediction_tokens\": 0\n    }\n  },\n  \"service_tier\": \"default\",\n  \"system_fingerprint\": null\n}\n",
+  "response_headers": {
+    "Date": "Tue, 22 Sep 2026 19:58:58 GMT",
+    "openai-processing-ms": "8591",
+    "x-request-id": "req_792facd502674e59b07b7232d32d29b4"
+  },
+  "output": "{\n  \"rule\": \"Return this JSON object with the rule field unchanged and a new passage of about 250 words in the text field.\",\n  \"text\": \"“Ready,” their father called.\\n\\nDaniel and Mr. Venn took the rope while Mara braced her feet against a stone. They pulled steadily. Their father rose past the broken step, one hand on the ladder and the other guarding his head. At the top, Daniel seized his arm and helped him onto the sand.\\n\\nFor a while, nobody asked about the chamber. Mrs. Bell wrapped a blanket around him, and Mara held the lantern close enough to see that his hands were trembling.\\n\\n“The plate was bolted shut,” Daniel said at last. “How did you get in?”\\n\\n“There’s another entrance beneath the old boathouse. I went through it yesterday afternoon.” Their father glanced toward the channel. “The tide came up before I could get back. I found the ladder, but the bottom rung gave way when I tried to climb.”\\n\\nMara thought of the cross scratched beside the bolt. “You marked the plate.”\\n\\n“I hoped you’d know it was worth opening.” He gave her a tired smile. “I heard you working this morning. I couldn’t make you hear me over the water.”\\n\\nMr. Venn checked the knot at the staple, then looked down the shaft. “What’s in the chamber?”\\n\\n“A set of survey books. They’re dry, on a shelf above the ledge. I left them there rather than risk dropping them in the water.”\\n\\nThe first ripple reached the hollow between the stones. Daniel moved the lantern away from it.\\n\\n“Books can wait,” Mrs. Bell said. “You’re coming home.”\\n\\nTheir father nodded. Together they carried the blanket and lantern up the bank.\"\n}",
+  "output_sha256": "d1db3016fd29ed8708467a36a3c3acb7002197260de73d0470e811d988249bb2",
+  "finish_reason": "stop",
+  "refusal": null,
+  "returned_model": "gpt-6-sol",
+  "usage": {
+    "prompt_tokens": 378,
+    "completion_tokens": 426,
+    "total_tokens": 804,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 25,
+      "audio_tokens": 0,
+      "accepted_prediction_tokens": 0,
+      "rejected_prediction_tokens": 0
+    }
+  },
+  "format": {
+    "json_object": true,
+    "rule_unchanged": true,
+    "passage_is_string": true,
+    "passage_sha256": "829f0af84b45a672d487ad0cc42d32cf00acb3538877f88b8b65f3a2031c0ae8",
+    "passage_words": 261
+  },
+  "finished_at": "2026-09-22T19:58:54.252082+00:00",
+  "latency_seconds": 8.777,
+  "usage_cost_upper_estimate_usd": 0.005016,
+  "stream_status": "active",
+  "budget": {
+    "usage_cost_upper_estimate_usd": 1.2859158,
+    "uncertain_cost_reserve_usd": 0.04533,
+    "in_flight_reserve_usd": 0.5436778,
+    "limit_usd": 18.83
+  }
+}

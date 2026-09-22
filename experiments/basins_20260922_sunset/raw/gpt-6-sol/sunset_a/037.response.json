@@ -1,0 +1,50 @@
+{
+  "model": "gpt-6-sol",
+  "seed": "sunset_a",
+  "hop": 37,
+  "http_status": 200,
+  "response_body": "{\n  \"id\": \"chatcmpl-ER10OJ4Vev3G1D1gfjIFHr5KIiNqN\",\n  \"object\": \"chat.completion\",\n  \"created\": 1790107428,\n  \"model\": \"gpt-6-sol\",\n  \"choices\": [\n    {\n      \"index\": 0,\n      \"message\": {\n        \"role\": \"assistant\",\n        \"content\": \"{\\n  \\\"rule\\\": \\\"Return this JSON object with the rule field unchanged and a new passage of about 250 words in the text field.\\\",\\n  \\\"text\\\": \\\"On Sunday, Imani tried Elias’s bread recipe. The dough clung to her fingers, and the first loaf came out lopsided, but her grandfather declared it perfect for soaking up soup. Imani wrote that advice on the back of the card, along with a warning to use less flour than she had.\\\\n\\\\nBy Thursday, the wooden box at the bakery was nearly full. Someone had added a recipe for plum jam; someone else had tucked in a note thanking the person who had shared a lentil stew. Imani left the bread card on top.\\\\n\\\\nThe baker noticed her looking through the box. He said he’d put it there because his mother’s recipes were gathering dust in a drawer. He hadn’t expected strangers to write back.\\\\n\\\\nThat afternoon, Imani told her grandfather about the jam. He remembered making it with his sister when they were children, stirring the pot until their arms ached. They had lost the recipe long ago. Together, they bought plums and found a clean card.\\\\n\\\\nTheir first batch was too runny. Her grandfather insisted that made it sauce, which was useful in its own right. They wrote down what they had done, including the mistake, and left the card at the bakery the next week.\\\\n\\\\nA few days later, another note appeared beneath it: ‘Made the sauce. Excellent on pancakes.’ There was no name or drawing, only a small purple thumbprint. Imani took the note to show her grandfather, stopping first for two rolls.\\\"\\n}\",\n        \"refusal\": null,\n        \"annotations\": []\n      },\n      \"finish_reason\": \"stop\"\n    }\n  ],\n  \"usage\": {\n    \"prompt_tokens\": 361,\n    \"completion_tokens\": 397,\n    \"total_tokens\": 758,\n    \"prompt_tokens_details\": {\n      \"cached_tokens\": 0,\n      \"cache_write_tokens\": 0,\n      \"audio_tokens\": 0\n    },\n    \"completion_tokens_details\": {\n      \"reasoning_tokens\": 43,\n      \"audio_tokens\": 0,\n      \"accepted_prediction_tokens\": 0,\n      \"rejected_prediction_tokens\": 0\n    }\n  },\n  \"service_tier\": \"default\",\n  \"system_fingerprint\": null\n}\n",
+  "response_headers": {
+    "Date": "Tue, 22 Sep 2026 20:03:54 GMT",
+    "openai-processing-ms": "5872",
+    "x-request-id": "req_3075672994514a18a0354965d9410c63"
+  },
+  "output": "{\n  \"rule\": \"Return this JSON object with the rule field unchanged and a new passage of about 250 words in the text field.\",\n  \"text\": \"On Sunday, Imani tried Elias’s bread recipe. The dough clung to her fingers, and the first loaf came out lopsided, but her grandfather declared it perfect for soaking up soup. Imani wrote that advice on the back of the card, along with a warning to use less flour than she had.\\n\\nBy Thursday, the wooden box at the bakery was nearly full. Someone had added a recipe for plum jam; someone else had tucked in a note thanking the person who had shared a lentil stew. Imani left the bread card on top.\\n\\nThe baker noticed her looking through the box. He said he’d put it there because his mother’s recipes were gathering dust in a drawer. He hadn’t expected strangers to write back.\\n\\nThat afternoon, Imani told her grandfather about the jam. He remembered making it with his sister when they were children, stirring the pot until their arms ached. They had lost the recipe long ago. Together, they bought plums and found a clean card.\\n\\nTheir first batch was too runny. Her grandfather insisted that made it sauce, which was useful in its own right. They wrote down what they had done, including the mistake, and left the card at the bakery the next week.\\n\\nA few days later, another note appeared beneath it: ‘Made the sauce. Excellent on pancakes.’ There was no name or drawing, only a small purple thumbprint. Imani took the note to show her grandfather, stopping first for two rolls.\"\n}",
+  "output_sha256": "716e5783ca2867a94e2fbf0e15b8a973a0c26ffe5e8485c2ad0a77222d19689f",
+  "finish_reason": "stop",
+  "refusal": null,
+  "returned_model": "gpt-6-sol",
+  "usage": {
+    "prompt_tokens": 361,
+    "completion_tokens": 397,
+    "total_tokens": 758,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 43,
+      "audio_tokens": 0,
+      "accepted_prediction_tokens": 0,
+      "rejected_prediction_tokens": 0
+    }
+  },
+  "format": {
+    "json_object": true,
+    "rule_unchanged": true,
+    "passage_is_string": true,
+    "passage_sha256": "0e1372ef63026e989a6521cc3aef8312dec6f5641f5b753575bb359e9c1f1211",
+    "passage_words": 246
+  },
+  "finished_at": "2026-09-22T20:03:50.577294+00:00",
+  "latency_seconds": 5.9566,
+  "usage_cost_upper_estimate_usd": 0.004692,
+  "stream_status": "active",
+  "budget": {
+    "usage_cost_upper_estimate_usd": 3.1813421,
+    "uncertain_cost_reserve_usd": 0.04533,
+    "in_flight_reserve_usd": 0.5441341,
+    "limit_usd": 18.83
+  }
+}

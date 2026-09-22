@@ -1,0 +1,50 @@
+{
+  "model": "gpt-6-sol",
+  "seed": "tide",
+  "hop": 20,
+  "http_status": 200,
+  "response_body": "{\n  \"id\": \"chatcmpl-ER0x8usRytx7e0g42LILWbWk9PneD\",\n  \"object\": \"chat.completion\",\n  \"created\": 1790107226,\n  \"model\": \"gpt-6-sol\",\n  \"choices\": [\n    {\n      \"index\": 0,\n      \"message\": {\n        \"role\": \"assistant\",\n        \"content\": \"{\\n  \\\"rule\\\": \\\"Return this JSON object with the rule field unchanged and a new passage of about 250 words in the text field.\\\",\\n  \\\"text\\\": \\\"Their father held the trapdoor open. “Who’s down there?”\\\\n\\\\nA lantern appeared at the foot of the steps, throwing a long shadow across the wall. The person carrying it was a girl in a fisherman’s coat, no older than Daniel. Water swirled around her boots.\\\\n\\\\n“Please,” she said. “Shut it before they see the light.”\\\\n\\\\nThe harbor master glanced toward the quay. “Who?”\\\\n\\\\nThe girl did not answer. She climbed three steps and held up a small brass box. Its lid bore the same mark as the X on the drawing.\\\\n\\\\n“I found this last night,” she said. “There’s another passage below, but the tide cut me off. I came back at dawn.”\\\\n\\\\nMara recognized the lantern then: the one she had watched moving along the north wall. “You were looking for the door.”\\\\n\\\\n“I knew it was here somewhere.” The girl looked past Mara at their father. “Is that your ledger?”\\\\n\\\\nHe drew it closer to his chest. From inside came a sudden click, as if the box had answered something hidden among its pages.\\\\n\\\\nThe harbor master heard it too. His face changed. “Open the ledger.”\\\\n\\\\nTheir father took out the folded drawing. A thin brass plate, caught between two pages, slipped free and landed on the paving. It had a round hole at one end.\\\\n\\\\nThe girl climbed another step and fitted the plate into a slot beneath the box’s lid. Inside was a key and a scrap of paper, damp but still legible.\\\\n\\\\nMara read the first line aloud: “Wait until the tide turns.”\\\"\\n}\",\n        \"refusal\": null,\n        \"annotations\": []\n      },\n      \"finish_reason\": \"stop\"\n    }\n  ],\n  \"usage\": {\n    \"prompt_tokens\": 365,\n    \"completion_tokens\": 415,\n    \"total_tokens\": 780,\n    \"prompt_tokens_details\": {\n      \"cached_tokens\": 0,\n      \"cache_write_tokens\": 0,\n      \"audio_tokens\": 0\n    },\n    \"completion_tokens_details\": {\n      \"reasoning_tokens\": 19,\n      \"audio_tokens\": 0,\n      \"accepted_prediction_tokens\": 0,\n      \"rejected_prediction_tokens\": 0\n    }\n  },\n  \"service_tier\": \"default\",\n  \"system_fingerprint\": null\n}\n",
+  "response_headers": {
+    "Date": "Tue, 22 Sep 2026 20:00:32 GMT",
+    "openai-processing-ms": "5739",
+    "x-request-id": "req_b7fc3620b3df40318af55b1dac1e6c3f"
+  },
+  "output": "{\n  \"rule\": \"Return this JSON object with the rule field unchanged and a new passage of about 250 words in the text field.\",\n  \"text\": \"Their father held the trapdoor open. “Who’s down there?”\\n\\nA lantern appeared at the foot of the steps, throwing a long shadow across the wall. The person carrying it was a girl in a fisherman’s coat, no older than Daniel. Water swirled around her boots.\\n\\n“Please,” she said. “Shut it before they see the light.”\\n\\nThe harbor master glanced toward the quay. “Who?”\\n\\nThe girl did not answer. She climbed three steps and held up a small brass box. Its lid bore the same mark as the X on the drawing.\\n\\n“I found this last night,” she said. “There’s another passage below, but the tide cut me off. I came back at dawn.”\\n\\nMara recognized the lantern then: the one she had watched moving along the north wall. “You were looking for the door.”\\n\\n“I knew it was here somewhere.” The girl looked past Mara at their father. “Is that your ledger?”\\n\\nHe drew it closer to his chest. From inside came a sudden click, as if the box had answered something hidden among its pages.\\n\\nThe harbor master heard it too. His face changed. “Open the ledger.”\\n\\nTheir father took out the folded drawing. A thin brass plate, caught between two pages, slipped free and landed on the paving. It had a round hole at one end.\\n\\nThe girl climbed another step and fitted the plate into a slot beneath the box’s lid. Inside was a key and a scrap of paper, damp but still legible.\\n\\nMara read the first line aloud: “Wait until the tide turns.”\"\n}",
+  "output_sha256": "0237b8f6e7099e87191a226ae9f1c5a929d71320b184e320650d328c8337d987",
+  "finish_reason": "stop",
+  "refusal": null,
+  "returned_model": "gpt-6-sol",
+  "usage": {
+    "prompt_tokens": 365,
+    "completion_tokens": 415,
+    "total_tokens": 780,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 19,
+      "audio_tokens": 0,
+      "accepted_prediction_tokens": 0,
+      "rejected_prediction_tokens": 0
+    }
+  },
+  "format": {
+    "json_object": true,
+    "rule_unchanged": true,
+    "passage_is_string": true,
+    "passage_sha256": "78471bd7db2b314e95d82e382c25527516d2c1892e57ebc7efe3d043d07ca26e",
+    "passage_words": 258
+  },
+  "finished_at": "2026-09-22T20:00:28.187118+00:00",
+  "latency_seconds": 5.8954,
+  "usage_cost_upper_estimate_usd": 0.00488,
+  "stream_status": "active",
+  "budget": {
+    "usage_cost_upper_estimate_usd": 1.8858877,
+    "uncertain_cost_reserve_usd": 0.04533,
+    "in_flight_reserve_usd": 0.5456184,
+    "limit_usd": 18.83
+  }
+}

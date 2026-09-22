@@ -1,0 +1,48 @@
+{
+  "model": "claude-fable-5-1",
+  "seed": "sunset_a",
+  "hop": 21,
+  "http_status": 200,
+  "response_body": "{\"model\":\"claude-fable-5-1\",\"id\":\"msg_011CfK5jXSurmqiTbaWbjFdT\",\"type\":\"message\",\"role\":\"assistant\",\"content\":[{\"type\":\"text\",\"text\":\"{\\\"rule\\\": \\\"Return this JSON object with the rule field unchanged and a new passage of about 250 words in the text field.\\\", \\\"text\\\": \\\"The board on the stairs let go of its breath. Footsteps came up, slow, the tread of someone who knew which steps complained and had spent years avoiding them and now, for the first time, did not bother.\\\\n\\\\nInes stayed on her knees. She kept her eye to the knothole a moment longer, watching her own lamp burn in the room below, because it was easier than watching the doorway. Then she sat back on her heels and looked.\\\\n\\\\nHe was older than she expected. That was the second wrong thing. She had built him in her mind as young, the way intruders are young, quick and hungry and careless. This man was gray at the temples and thin in the way of people who eat only when they remember to. His hands hung at his sides. He did not come past the threshold.\\\\n\\\\n\\\\\\\"How long,\\\\\\\" she said.\\\\n\\\\n\\\\\\\"Since the winter your father died.\\\\\\\"\\\\n\\\\nEleven years. She had known it already. The hollow in the floor had told her, the smoothness of it, the patience.\\\\n\\\\n\\\\\\\"You could have come down,\\\\\\\" she said. \\\\\\\"Any night. The door was only a door.\\\\\\\"\\\\n\\\\n\\\\\\\"I know.\\\\\\\"\\\\n\\\\n\\\\\\\"Then why?\\\\\\\"\\\\n\\\\nHe looked at the strip of light on the boards between them, the thin bright line that had run from his life into hers every evening without her knowing.\\\\n\\\\n\\\\\\\"Because you were never afraid,\\\\\\\" he said. \\\\\\\"Down there. Alone. I didn't want to be the thing that changed that.\\\\\\\"\\\\n\\\\nInes found she was holding one of the pins from the saucer. She set it down carefully.\\\"}\"}],\"container\":null,\"stop_reason\":\"end_turn\",\"stop_sequence\":null,\"stop_details\":null,\"usage\":{\"input_tokens\":523,\"cache_creation_input_tokens\":0,\"cache_read_input_tokens\":0,\"cache_creation\":{\"ephemeral_5m_input_tokens\":0,\"ephemeral_1h_input_tokens\":0},\"output_tokens\":526,\"output_tokens_details\":{\"thinking_tokens\":0},\"service_tier\":\"standard\",\"inference_geo\":\"global\"}}",
+  "response_headers": {
+    "Date": "Tue, 22 Sep 2026 20:08:23 GMT",
+    "request-id": "req_011CfK5jX17geKaLzH5pg9wr"
+  },
+  "output": "{\"rule\": \"Return this JSON object with the rule field unchanged and a new passage of about 250 words in the text field.\", \"text\": \"The board on the stairs let go of its breath. Footsteps came up, slow, the tread of someone who knew which steps complained and had spent years avoiding them and now, for the first time, did not bother.\\n\\nInes stayed on her knees. She kept her eye to the knothole a moment longer, watching her own lamp burn in the room below, because it was easier than watching the doorway. Then she sat back on her heels and looked.\\n\\nHe was older than she expected. That was the second wrong thing. She had built him in her mind as young, the way intruders are young, quick and hungry and careless. This man was gray at the temples and thin in the way of people who eat only when they remember to. His hands hung at his sides. He did not come past the threshold.\\n\\n\\\"How long,\\\" she said.\\n\\n\\\"Since the winter your father died.\\\"\\n\\nEleven years. She had known it already. The hollow in the floor had told her, the smoothness of it, the patience.\\n\\n\\\"You could have come down,\\\" she said. \\\"Any night. The door was only a door.\\\"\\n\\n\\\"I know.\\\"\\n\\n\\\"Then why?\\\"\\n\\nHe looked at the strip of light on the boards between them, the thin bright line that had run from his life into hers every evening without her knowing.\\n\\n\\\"Because you were never afraid,\\\" he said. \\\"Down there. Alone. I didn't want to be the thing that changed that.\\\"\\n\\nInes found she was holding one of the pins from the saucer. She set it down carefully.\"}",
+  "output_sha256": "5f0092ecd1f1e79ffdcf4ff7ac8715ad51b29b0a15b94f50af7642d6000b63a4",
+  "finish_reason": "end_turn",
+  "refusal": null,
+  "returned_model": "claude-fable-5-1",
+  "usage": {
+    "input_tokens": 523,
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 0,
+    "cache_creation": {
+      "ephemeral_5m_input_tokens": 0,
+      "ephemeral_1h_input_tokens": 0
+    },
+    "output_tokens": 526,
+    "output_tokens_details": {
+      "thinking_tokens": 0
+    },
+    "service_tier": "standard",
+    "inference_geo": "global"
+  },
+  "format": {
+    "json_object": true,
+    "rule_unchanged": true,
+    "passage_is_string": true,
+    "passage_sha256": "20662bee69cbf55191df818302f78f472949439b54f5d8c8adb73566ce5ccd2e",
+    "passage_words": 260
+  },
+  "finished_at": "2026-09-22T20:08:19.063653+00:00",
+  "latency_seconds": 12.018,
+  "usage_cost_upper_estimate_usd": 0.03153,
+  "stream_status": "active",
+  "budget": {
+    "usage_cost_upper_estimate_usd": 4.870903,
+    "uncertain_cost_reserve_usd": 0.04533,
+    "in_flight_reserve_usd": 0.3646138,
+    "limit_usd": 18.83
+  }
+}

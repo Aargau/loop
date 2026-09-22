@@ -1,0 +1,22 @@
+{
+  "started_at": "2026-09-22T21:26:01.401879+00:00",
+  "model": "claude-opus-5-5",
+  "seed": "sunset",
+  "hop": 17,
+  "endpoint": "https://api.anthropic.com/v1/messages",
+  "body": {
+    "model": "claude-opus-5-5",
+    "messages": [
+      {
+        "role": "user",
+        "content": "```json\n{\"rule\": \"Return this JSON object with the rule field unchanged and, in the text field, the passage of about 250 words that comes immediately AFTER the current text in the same story.\", \"text\": \"The man was faster than he looked. His chair scraped back, and for one terrible second Mara thought he would reach her before she reached the iron door. But Mama was already moving too. She stood up into his path, not quickly, just deliberately, the way she stood between the goats and the gate every evening. He had to stop or knock her down.\\n\\nHe stopped.\\n\\nMara hooked the stove door with the poker and pulled the paper from her sleeve. The fire inside had burned low since supper, mostly red coals with a few thin flames licking at the ash. She did not unfold the page. She did not let herself look at the leaning letters one last time. She simply let go.\\n\\nThe edges curled first, blackening inward, and then the whole square caught with a soft breath of light.\\n\\n\\\"That,\\\" said the man in the gray coat, very quietly, \\\"was foolish.\\\"\\n\\n\\\"It was a list,\\\" Mara said. Her voice sounded strange to her, high and steady at once. \\\"Of what we needed from town. Flour. Lamp oil. Thread for Mama.\\\"\\n\\nHe looked at her for a long time. Then he looked at Leonard, who had gone white to the lips, and at Mama, who had not moved an inch.\\n\\n\\\"You read it before you burned it,\\\" he said. It was not a question.\\n\\nMara said nothing. Behind her, the fire ate the last of her father's words, and she held every one of them behind her teeth.\"}\n```"
+      }
+    ],
+    "max_tokens": 4096,
+    "output_config": {
+      "effort": "low"
+    }
+  },
+  "state_sha256": "7647f44c989c2ce4aa3fb0c96f4b62c8751cd46065a1b9b3cb64ada0cf3fec96",
+  "reserved_cost_usd": 0.090164
+}

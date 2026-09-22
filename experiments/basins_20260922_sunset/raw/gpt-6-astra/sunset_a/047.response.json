@@ -1,0 +1,50 @@
+{
+  "model": "gpt-6-astra",
+  "seed": "sunset_a",
+  "hop": 47,
+  "http_status": 200,
+  "response_body": "{\n  \"id\": \"chatcmpl-ER1Tn0ADcjVlKvN40wKzbykxQ3bRu\",\n  \"object\": \"chat.completion\",\n  \"created\": 1790109251,\n  \"model\": \"gpt-6-astra\",\n  \"choices\": [\n    {\n      \"index\": 0,\n      \"message\": {\n        \"role\": \"assistant\",\n        \"content\": \"{\\n  \\\"rule\\\": \\\"Return this JSON object with the rule field unchanged and a new passage of about 250 words in the text field.\\\",\\n  \\\"text\\\": \\\"Every Saturday, June washed the windows of the empty shop next to her bakery. She used the same bucket, though she changed the water first.\\\\n\\\\nHer apprentice asked why.\\\\n\\\\n“People look in,” she said.\\\\n\\\\n“There’s nothing there.”\\\\n\\\\n“They still look.”\\\\n\\\\nThe shop had belonged to a man who repaired clocks. After he died, his nephew took the clocks away but left a calendar showing March and a square of darker wallpaper where the regulator had hung.\\\\n\\\\nIn July, someone pushed an envelope through June’s letterbox. Inside was a key and a note from the nephew.\\\\n\\\\nFor the inside, if you want.\\\\n\\\\n“I don’t,” June told the apprentice.\\\\n\\\\nOn Saturday she cleaned the inside.\\\\n\\\\nShe found a brass screw beneath the radiator and put it on the counter. The following week, she brought a geranium from home.\\\\n\\\\nBy September, the apprentice was eating his lunch there.\\\\n\\\\n“It’s quieter,” he said.\\\\n\\\\nJune gave him a cloth for the crumbs.\\\\n\\\\nA woman came to view the premises in October. She wanted to sell children’s shoes. She measured the doorway, checked the sockets and asked whether the plant was included.\\\\n\\\\n“That belongs next door,” June said.\\\\n\\\\nThe woman signed the lease.\\\\n\\\\nOn opening morning, June carried over a plate of buns. Small shoes stood in pairs beneath the window, their toes pointing towards the street.\\\\n\\\\n“You’ve missed a bit,” June said, indicating the glass.\\\\n\\\\nThe woman handed her a clean cloth.\\\\n\\\\nWhen June returned, the apprentice had put the geranium beside the till.\\\\n\\\\n“It needs light,” she said.\\\\n\\\\nHe moved it to the window, shifting two cake stands to make room.\\\"\\n}\",\n        \"refusal\": null,\n        \"annotations\": []\n      },\n      \"finish_reason\": \"stop\"\n    }\n  ],\n  \"usage\": {\n    \"prompt_tokens\": 412,\n    \"completion_tokens\": 410,\n    \"total_tokens\": 822,\n    \"prompt_tokens_details\": {\n      \"cached_tokens\": 0,\n      \"cache_write_tokens\": 0,\n      \"audio_tokens\": 0\n    },\n    \"completion_tokens_details\": {\n      \"reasoning_tokens\": 0,\n      \"audio_tokens\": 0,\n      \"accepted_prediction_tokens\": 0,\n      \"rejected_prediction_tokens\": 0\n    }\n  },\n  \"service_tier\": \"default\",\n  \"system_fingerprint\": null\n}\n",
+  "response_headers": {
+    "Date": "Tue, 22 Sep 2026 20:34:29 GMT",
+    "openai-processing-ms": "18483",
+    "x-request-id": "req_232a6a58da3340d58bd696959589c737"
+  },
+  "output": "{\n  \"rule\": \"Return this JSON object with the rule field unchanged and a new passage of about 250 words in the text field.\",\n  \"text\": \"Every Saturday, June washed the windows of the empty shop next to her bakery. She used the same bucket, though she changed the water first.\\n\\nHer apprentice asked why.\\n\\n“People look in,” she said.\\n\\n“There’s nothing there.”\\n\\n“They still look.”\\n\\nThe shop had belonged to a man who repaired clocks. After he died, his nephew took the clocks away but left a calendar showing March and a square of darker wallpaper where the regulator had hung.\\n\\nIn July, someone pushed an envelope through June’s letterbox. Inside was a key and a note from the nephew.\\n\\nFor the inside, if you want.\\n\\n“I don’t,” June told the apprentice.\\n\\nOn Saturday she cleaned the inside.\\n\\nShe found a brass screw beneath the radiator and put it on the counter. The following week, she brought a geranium from home.\\n\\nBy September, the apprentice was eating his lunch there.\\n\\n“It’s quieter,” he said.\\n\\nJune gave him a cloth for the crumbs.\\n\\nA woman came to view the premises in October. She wanted to sell children’s shoes. She measured the doorway, checked the sockets and asked whether the plant was included.\\n\\n“That belongs next door,” June said.\\n\\nThe woman signed the lease.\\n\\nOn opening morning, June carried over a plate of buns. Small shoes stood in pairs beneath the window, their toes pointing towards the street.\\n\\n“You’ve missed a bit,” June said, indicating the glass.\\n\\nThe woman handed her a clean cloth.\\n\\nWhen June returned, the apprentice had put the geranium beside the till.\\n\\n“It needs light,” she said.\\n\\nHe moved it to the window, shifting two cake stands to make room.\"\n}",
+  "output_sha256": "f4d37a78fee493ecd363695ab3ec5267077084ae6f063b8feb65e3bc31470b9e",
+  "finish_reason": "stop",
+  "refusal": null,
+  "returned_model": "gpt-6-astra",
+  "usage": {
+    "prompt_tokens": 412,
+    "completion_tokens": 410,
+    "total_tokens": 822,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "audio_tokens": 0,
+      "accepted_prediction_tokens": 0,
+      "rejected_prediction_tokens": 0
+    }
+  },
+  "format": {
+    "json_object": true,
+    "rule_unchanged": true,
+    "passage_is_string": true,
+    "passage_sha256": "2c87e387485df0d5c9f0490ccab89ef01f66fe842238068ced22a6426cc60273",
+    "passage_words": 267
+  },
+  "finished_at": "2026-09-22T20:34:25.221260+00:00",
+  "latency_seconds": 18.6658,
+  "usage_cost_upper_estimate_usd": 0.02462,
+  "stream_status": "active",
+  "budget": {
+    "usage_cost_upper_estimate_usd": 12.5364377,
+    "uncertain_cost_reserve_usd": 0.04533,
+    "in_flight_reserve_usd": 0.0,
+    "limit_usd": 18.83
+  }
+}

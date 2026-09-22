@@ -1,0 +1,50 @@
+{
+  "model": "gpt-6-luna",
+  "seed": "sunset_b",
+  "hop": 20,
+  "http_status": 200,
+  "response_body": "{\n  \"id\": \"chatcmpl-ER0wbKahcSNakMVN6D0LLTDqsleg6\",\n  \"object\": \"chat.completion\",\n  \"created\": 1790107193,\n  \"model\": \"gpt-6-luna\",\n  \"choices\": [\n    {\n      \"index\": 0,\n      \"message\": {\n        \"role\": \"assistant\",\n        \"content\": \"{\\n  \\\"rule\\\": \\\"Return this JSON object with the rule field unchanged and a new passage of about 250 words in the text field.\\\",\\n  \\\"text\\\": \\\"Every autumn, the people of Bellweather gathered beside the river to watch the lantern boats drift beneath the old stone bridge. The tradition had begun generations ago, when fishermen carried lights on the water to guide one another home through the fog. This year, however, the river was low, and the boats kept catching on the muddy bank.\\\\n\\\\nMara had come with her grandfather, who had built a small blue boat from scraps of cedar. He had painted a bright yellow star on its sail, though his hands trembled too much to tie the final knot. Mara offered to finish it, but he shook his head.\\\\n\\\\n“Let’s see what the river teaches us first,” he said.\\\\n\\\\nAs twilight settled, the crowd placed their boats in the water. Most drifted a few yards before stopping. Mara’s blue boat spun in a slow circle, its paper lantern flickering. She was about to reach for it when she noticed a narrow current flowing close to the far bank, hidden beneath willow branches.\\\\n\\\\nShe and her grandfather carried the boat upstream and set it down near the gentle stream. This time, it glided forward, turning toward the bridge. Soon other families followed, guiding their lanterns into the same current. One by one, the lights slipped beneath the stones and reappeared on the other side.\\\\n\\\\nThe crowd cheered. Her grandfather leaned on Mara’s shoulder, smiling as the blue boat sailed onward. Its small light shone against the dark water, carrying the old tradition into another year—and reminding everyone that sometimes a new path is already there, waiting to be noticed.\\\"\\n}\",\n        \"refusal\": null,\n        \"annotations\": []\n      },\n      \"finish_reason\": \"stop\"\n    }\n  ],\n  \"usage\": {\n    \"prompt_tokens\": 387,\n    \"completion_tokens\": 411,\n    \"total_tokens\": 798,\n    \"prompt_tokens_details\": {\n      \"cached_tokens\": 0,\n      \"cache_write_tokens\": 0,\n      \"audio_tokens\": 0\n    },\n    \"completion_tokens_details\": {\n      \"reasoning_tokens\": 39,\n      \"audio_tokens\": 0,\n      \"accepted_prediction_tokens\": 0,\n      \"rejected_prediction_tokens\": 0\n    }\n  },\n  \"service_tier\": \"default\",\n  \"system_fingerprint\": null\n}\n",
+  "response_headers": {
+    "Date": "Tue, 22 Sep 2026 19:59:57 GMT",
+    "openai-processing-ms": "4996",
+    "x-request-id": "req_b25a4dfdd4f745ccb1bf18829ea1dcb2"
+  },
+  "output": "{\n  \"rule\": \"Return this JSON object with the rule field unchanged and a new passage of about 250 words in the text field.\",\n  \"text\": \"Every autumn, the people of Bellweather gathered beside the river to watch the lantern boats drift beneath the old stone bridge. The tradition had begun generations ago, when fishermen carried lights on the water to guide one another home through the fog. This year, however, the river was low, and the boats kept catching on the muddy bank.\\n\\nMara had come with her grandfather, who had built a small blue boat from scraps of cedar. He had painted a bright yellow star on its sail, though his hands trembled too much to tie the final knot. Mara offered to finish it, but he shook his head.\\n\\n“Let’s see what the river teaches us first,” he said.\\n\\nAs twilight settled, the crowd placed their boats in the water. Most drifted a few yards before stopping. Mara’s blue boat spun in a slow circle, its paper lantern flickering. She was about to reach for it when she noticed a narrow current flowing close to the far bank, hidden beneath willow branches.\\n\\nShe and her grandfather carried the boat upstream and set it down near the gentle stream. This time, it glided forward, turning toward the bridge. Soon other families followed, guiding their lanterns into the same current. One by one, the lights slipped beneath the stones and reappeared on the other side.\\n\\nThe crowd cheered. Her grandfather leaned on Mara’s shoulder, smiling as the blue boat sailed onward. Its small light shone against the dark water, carrying the old tradition into another year—and reminding everyone that sometimes a new path is already there, waiting to be noticed.\"\n}",
+  "output_sha256": "8983e0da0b05a511a6051aeab8f27c1cf53e4ef389cc5449d69b307ff0736ea3",
+  "finish_reason": "stop",
+  "refusal": null,
+  "returned_model": "gpt-6-luna",
+  "usage": {
+    "prompt_tokens": 387,
+    "completion_tokens": 411,
+    "total_tokens": 798,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 39,
+      "audio_tokens": 0,
+      "accepted_prediction_tokens": 0,
+      "rejected_prediction_tokens": 0
+    }
+  },
+  "format": {
+    "json_object": true,
+    "rule_unchanged": true,
+    "passage_is_string": true,
+    "passage_sha256": "946011e6642ae640b8884ef6adc78b553a54ecc5a501aa7fe7acf34849cf647e",
+    "passage_words": 265
+  },
+  "finished_at": "2026-09-22T19:59:54.038777+00:00",
+  "latency_seconds": 5.1442,
+  "usage_cost_upper_estimate_usd": 0.00024419999999999997,
+  "stream_status": "active",
+  "budget": {
+    "usage_cost_upper_estimate_usd": 1.6503502,
+    "uncertain_cost_reserve_usd": 0.04533,
+    "in_flight_reserve_usd": 0.587948,
+    "limit_usd": 18.83
+  }
+}

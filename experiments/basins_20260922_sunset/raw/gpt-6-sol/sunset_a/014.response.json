@@ -1,0 +1,50 @@
+{
+  "model": "gpt-6-sol",
+  "seed": "sunset_a",
+  "hop": 14,
+  "http_status": 200,
+  "response_body": "{\n  \"id\": \"chatcmpl-ER0vuOktfbAQIwm8TX24hv18wTrrC\",\n  \"object\": \"chat.completion\",\n  \"created\": 1790107150,\n  \"model\": \"gpt-6-sol\",\n  \"choices\": [\n    {\n      \"index\": 0,\n      \"message\": {\n        \"role\": \"assistant\",\n        \"content\": \"{\\n  \\\"rule\\\": \\\"Return this JSON object with the rule field unchanged and a new passage of about 250 words in the text field.\\\",\\n  \\\"text\\\": \\\"For three weeks, nothing came up. Mara checked the row each morning before work, standing beside the fence with her mug cooling in her hands. Rain darkened the soil; a blackbird scattered it looking for worms. She pushed two short sticks into the ground to mark where she had planted.\\\\n\\\\nHer brother called on a Sunday. When she mentioned the seeds, he asked what kind they were. Mara admitted she had thrown away the packet without looking closely. He laughed, then said their father had never been much good at labeling things either. For a moment, neither of them spoke.\\\\n\\\\nThe next morning, a thin green hook stood between the sticks. By Friday there were six. She sent her brother a photograph. He replied with a picture of their father’s scissors, still in his kitchen drawer, their handles wrapped in red thread. Mara remembered him using them to cut twine in the garden.\\\\n\\\\nAs the days grew warmer, she learned to tell the seedlings from the weeds. She watered only when the soil felt dry beneath her finger. When a late frost was forecast, she covered the row with an old bedsheet held down by stones. In the morning, she hung the damp sheet over a chair.\\\\n\\\\nThe plants grew tall enough to lean against the fence. Their first flowers were small and yellow. A gardening book from the library told her they were tomatoes.\\\\n\\\\nBy August, she was picking fruit faster than she could eat it. She left a bowl outside her brother’s door with a note: Take these while you have time.\\\"\\n}\",\n        \"refusal\": null,\n        \"annotations\": []\n      },\n      \"finish_reason\": \"stop\"\n    }\n  ],\n  \"usage\": {\n    \"prompt_tokens\": 350,\n    \"completion_tokens\": 389,\n    \"total_tokens\": 739,\n    \"prompt_tokens_details\": {\n      \"cached_tokens\": 0,\n      \"cache_write_tokens\": 0,\n      \"audio_tokens\": 0\n    },\n    \"completion_tokens_details\": {\n      \"reasoning_tokens\": 28,\n      \"audio_tokens\": 0,\n      \"accepted_prediction_tokens\": 0,\n      \"rejected_prediction_tokens\": 0\n    }\n  },\n  \"service_tier\": \"default\",\n  \"system_fingerprint\": null\n}\n",
+  "response_headers": {
+    "Date": "Tue, 22 Sep 2026 19:59:14 GMT",
+    "openai-processing-ms": "4213",
+    "x-request-id": "req_62d96ae185584e16a6609daecb3ef0b6"
+  },
+  "output": "{\n  \"rule\": \"Return this JSON object with the rule field unchanged and a new passage of about 250 words in the text field.\",\n  \"text\": \"For three weeks, nothing came up. Mara checked the row each morning before work, standing beside the fence with her mug cooling in her hands. Rain darkened the soil; a blackbird scattered it looking for worms. She pushed two short sticks into the ground to mark where she had planted.\\n\\nHer brother called on a Sunday. When she mentioned the seeds, he asked what kind they were. Mara admitted she had thrown away the packet without looking closely. He laughed, then said their father had never been much good at labeling things either. For a moment, neither of them spoke.\\n\\nThe next morning, a thin green hook stood between the sticks. By Friday there were six. She sent her brother a photograph. He replied with a picture of their father’s scissors, still in his kitchen drawer, their handles wrapped in red thread. Mara remembered him using them to cut twine in the garden.\\n\\nAs the days grew warmer, she learned to tell the seedlings from the weeds. She watered only when the soil felt dry beneath her finger. When a late frost was forecast, she covered the row with an old bedsheet held down by stones. In the morning, she hung the damp sheet over a chair.\\n\\nThe plants grew tall enough to lean against the fence. Their first flowers were small and yellow. A gardening book from the library told her they were tomatoes.\\n\\nBy August, she was picking fruit faster than she could eat it. She left a bowl outside her brother’s door with a note: Take these while you have time.\"\n}",
+  "output_sha256": "4c14af47f8e7e06e5db0fb80c9ab73d9bf94ed3e060ab216c81ebbdbb0ba2cd7",
+  "finish_reason": "stop",
+  "refusal": null,
+  "returned_model": "gpt-6-sol",
+  "usage": {
+    "prompt_tokens": 350,
+    "completion_tokens": 389,
+    "total_tokens": 739,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 28,
+      "audio_tokens": 0,
+      "accepted_prediction_tokens": 0,
+      "rejected_prediction_tokens": 0
+    }
+  },
+  "format": {
+    "json_object": true,
+    "rule_unchanged": true,
+    "passage_is_string": true,
+    "passage_sha256": "fb3ce19d2fd5496eb75a42ab8c48d4d0e2b4e45f8eb964fe25d547a74f19631c",
+    "passage_words": 264
+  },
+  "finished_at": "2026-09-22T19:59:10.415424+00:00",
+  "latency_seconds": 4.3185,
+  "usage_cost_upper_estimate_usd": 0.00459,
+  "stream_status": "active",
+  "budget": {
+    "usage_cost_upper_estimate_usd": 1.3778535,
+    "uncertain_cost_reserve_usd": 0.04533,
+    "in_flight_reserve_usd": 0.5447184,
+    "limit_usd": 18.83
+  }
+}

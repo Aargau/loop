@@ -1,0 +1,48 @@
+{
+  "model": "claude-fable-5-1",
+  "seed": "sunset_b",
+  "hop": 6,
+  "http_status": 200,
+  "response_body": "{\"model\":\"claude-fable-5-1\",\"id\":\"msg_011CfK51fSwZGjuCu4MCpE8D\",\"type\":\"message\",\"role\":\"assistant\",\"content\":[{\"type\":\"text\",\"text\":\"{\\\"rule\\\": \\\"Return this JSON object with the rule field unchanged and a new passage of about 250 words in the text field.\\\", \\\"text\\\": \\\"The ferry ran twice a day in winter, and Tomas had learned to build his hours around it the way other men built theirs around meals. He kept the ticket booth warm with a paraffin heater that smelled faintly of his grandfather's workshop, and he sold tickets to people who mostly did not need them, since everyone on the island knew everyone else and the captain would have waved them aboard regardless.\\\\n\\\\nStill, the tickets mattered. They were small blue rectangles with a number and a date, and Tomas stamped each one with more care than the job required. His wife had teased him about it once, years ago, and he had not been able to explain that the stamp was the only mark he made on the world that lasted past evening. People kept the tickets in coat pockets and drawers. He had seen them turn up in the pages of library books.\\\\n\\\\nAt eleven the ferry came in low against the grey water, and the gulls lifted off the pilings all at once, complaining. A woman he did not recognise stepped off first, carrying a suitcase too large for a short visit. She looked at the harbour as though checking it against a photograph. Tomas watched her hesitate, then walk toward the booth.\\\\n\\\\n\\\\\\\"Is there a hotel?\\\\\\\" she asked.\\\\n\\\\n\\\\\\\"Not in winter,\\\\\\\" he said. \\\\\\\"But Marta rents a room above the shop. Tell her I sent you.\\\\\\\"\\\\n\\\\nShe thanked him and went. He did not know why he felt he had done something important. He stamped a ticket for no one and put it in his pocket.\\\"}\"}],\"container\":null,\"stop_reason\":\"end_turn\",\"stop_sequence\":null,\"stop_details\":null,\"usage\":{\"input_tokens\":501,\"cache_creation_input_tokens\":0,\"cache_read_input_tokens\":0,\"cache_creation\":{\"ephemeral_5m_input_tokens\":0,\"ephemeral_1h_input_tokens\":0},\"output_tokens\":525,\"output_tokens_details\":{\"thinking_tokens\":0},\"service_tier\":\"standard\",\"inference_geo\":\"global\"}}",
+  "response_headers": {
+    "Date": "Tue, 22 Sep 2026 19:58:56 GMT",
+    "request-id": "req_011CfK51exBDbZSQBtNNKCrP"
+  },
+  "output": "{\"rule\": \"Return this JSON object with the rule field unchanged and a new passage of about 250 words in the text field.\", \"text\": \"The ferry ran twice a day in winter, and Tomas had learned to build his hours around it the way other men built theirs around meals. He kept the ticket booth warm with a paraffin heater that smelled faintly of his grandfather's workshop, and he sold tickets to people who mostly did not need them, since everyone on the island knew everyone else and the captain would have waved them aboard regardless.\\n\\nStill, the tickets mattered. They were small blue rectangles with a number and a date, and Tomas stamped each one with more care than the job required. His wife had teased him about it once, years ago, and he had not been able to explain that the stamp was the only mark he made on the world that lasted past evening. People kept the tickets in coat pockets and drawers. He had seen them turn up in the pages of library books.\\n\\nAt eleven the ferry came in low against the grey water, and the gulls lifted off the pilings all at once, complaining. A woman he did not recognise stepped off first, carrying a suitcase too large for a short visit. She looked at the harbour as though checking it against a photograph. Tomas watched her hesitate, then walk toward the booth.\\n\\n\\\"Is there a hotel?\\\" she asked.\\n\\n\\\"Not in winter,\\\" he said. \\\"But Marta rents a room above the shop. Tell her I sent you.\\\"\\n\\nShe thanked him and went. He did not know why he felt he had done something important. He stamped a ticket for no one and put it in his pocket.\"}",
+  "output_sha256": "dfab6c0a346e362029c3271af0a7703d90a6c1609682188983dcf0b8fcf69b64",
+  "finish_reason": "end_turn",
+  "refusal": null,
+  "returned_model": "claude-fable-5-1",
+  "usage": {
+    "input_tokens": 501,
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 0,
+    "cache_creation": {
+      "ephemeral_5m_input_tokens": 0,
+      "ephemeral_1h_input_tokens": 0
+    },
+    "output_tokens": 525,
+    "output_tokens_details": {
+      "thinking_tokens": 0
+    },
+    "service_tier": "standard",
+    "inference_geo": "global"
+  },
+  "format": {
+    "json_object": true,
+    "rule_unchanged": true,
+    "passage_is_string": true,
+    "passage_sha256": "98b8abf1be524c9387c9ee57c529ecca79b0d0c7b82cbcfe867ae88880afe9b4",
+    "passage_words": 269
+  },
+  "finished_at": "2026-09-22T19:58:52.780725+00:00",
+  "latency_seconds": 13.6159,
+  "usage_cost_upper_estimate_usd": 0.03126,
+  "stream_status": "active",
+  "budget": {
+    "usage_cost_upper_estimate_usd": 1.2677598,
+    "uncertain_cost_reserve_usd": 0.04533,
+    "in_flight_reserve_usd": 0.3637358,
+    "limit_usd": 18.83
+  }
+}

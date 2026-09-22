@@ -1,0 +1,50 @@
+{
+  "model": "gpt-6-astra",
+  "seed": "sunset_b",
+  "hop": 6,
+  "http_status": 200,
+  "response_body": "{\n  \"id\": \"chatcmpl-ER0wEKvpwVa77zTe4BgNtXCrGnMjt\",\n  \"object\": \"chat.completion\",\n  \"created\": 1790107170,\n  \"model\": \"gpt-6-astra\",\n  \"choices\": [\n    {\n      \"index\": 0,\n      \"message\": {\n        \"role\": \"assistant\",\n        \"content\": \"{\\n  \\\"rule\\\": \\\"Return this JSON object with the rule field unchanged and a new passage of about 250 words in the text field.\\\",\\n  \\\"text\\\": \\\"Every Thursday, a staircase appeared behind the fishmonger's shop, leading down to the sea as it had been thirty years ago.\\\\n\\\\nElias found it while looking for a dropped coin.\\\\n\\\\nAt the bottom, his father sat on an overturned boat, repairing a net. He was younger than Elias now, with black hair and a thumbnail split down the middle.\\\\n\\\\n“You're blocking the light,” his father said.\\\\n\\\\nElias stepped aside.\\\\n\\\\nHe returned the following Thursday with two sandwiches. His father accepted one without asking his name.\\\\n\\\\nThey ate, watching gulls gather around something neither could see.\\\\n\\\\nFor six weeks, Elias brought lunch. He learned that his father disliked fishing, wanted to visit Naples, and worried that his little boy was frightened of him.\\\\n\\\\n“Are you unkind to him?” Elias asked.\\\\n\\\\n“Sometimes I'm tired.”\\\\n\\\\nThe seventh Thursday, the staircase had only nine steps. Beyond the last, seawater moved through darkness.\\\\n\\\\nHis father was waiting on the boat.\\\\n\\\\n“Next week I'll bring photographs,” Elias said. “There's someone you should see.”\\\\n\\\\nHis father held out the net.\\\\n\\\\n“Take this end a moment.”\\\\n\\\\nThey worked until the light began to fail. Elias knew no knots, so his father showed him, patiently, twice.\\\\n\\\\nWhen he climbed back, water covered his shoes.\\\\n\\\\nThe next Thursday, there was only a wall behind the shop.\\\\n\\\\nElias stood facing it with the photographs in his pocket. Then he walked home and called his son.\\\\n\\\\n“Nothing's happened,” he said when the call connected. “I wondered if you'd had lunch.”\\\\n\\\\nHis son said he had.\\\\n\\\\nElias nearly said goodbye. Instead, he sat down at the kitchen table and asked what he'd eaten.\\\"\\n}\",\n        \"refusal\": null,\n        \"annotations\": []\n      },\n      \"finish_reason\": \"stop\"\n    }\n  ],\n  \"usage\": {\n    \"prompt_tokens\": 400,\n    \"completion_tokens\": 424,\n    \"total_tokens\": 824,\n    \"prompt_tokens_details\": {\n      \"cached_tokens\": 0,\n      \"cache_write_tokens\": 0,\n      \"audio_tokens\": 0\n    },\n    \"completion_tokens_details\": {\n      \"reasoning_tokens\": 0,\n      \"audio_tokens\": 0,\n      \"accepted_prediction_tokens\": 0,\n      \"rejected_prediction_tokens\": 0\n    }\n  },\n  \"service_tier\": \"default\",\n  \"system_fingerprint\": null\n}\n",
+  "response_headers": {
+    "Date": "Tue, 22 Sep 2026 19:59:44 GMT",
+    "openai-processing-ms": "14440",
+    "x-request-id": "req_322b7ac479124428bd87e497faef325f"
+  },
+  "output": "{\n  \"rule\": \"Return this JSON object with the rule field unchanged and a new passage of about 250 words in the text field.\",\n  \"text\": \"Every Thursday, a staircase appeared behind the fishmonger's shop, leading down to the sea as it had been thirty years ago.\\n\\nElias found it while looking for a dropped coin.\\n\\nAt the bottom, his father sat on an overturned boat, repairing a net. He was younger than Elias now, with black hair and a thumbnail split down the middle.\\n\\n“You're blocking the light,” his father said.\\n\\nElias stepped aside.\\n\\nHe returned the following Thursday with two sandwiches. His father accepted one without asking his name.\\n\\nThey ate, watching gulls gather around something neither could see.\\n\\nFor six weeks, Elias brought lunch. He learned that his father disliked fishing, wanted to visit Naples, and worried that his little boy was frightened of him.\\n\\n“Are you unkind to him?” Elias asked.\\n\\n“Sometimes I'm tired.”\\n\\nThe seventh Thursday, the staircase had only nine steps. Beyond the last, seawater moved through darkness.\\n\\nHis father was waiting on the boat.\\n\\n“Next week I'll bring photographs,” Elias said. “There's someone you should see.”\\n\\nHis father held out the net.\\n\\n“Take this end a moment.”\\n\\nThey worked until the light began to fail. Elias knew no knots, so his father showed him, patiently, twice.\\n\\nWhen he climbed back, water covered his shoes.\\n\\nThe next Thursday, there was only a wall behind the shop.\\n\\nElias stood facing it with the photographs in his pocket. Then he walked home and called his son.\\n\\n“Nothing's happened,” he said when the call connected. “I wondered if you'd had lunch.”\\n\\nHis son said he had.\\n\\nElias nearly said goodbye. Instead, he sat down at the kitchen table and asked what he'd eaten.\"\n}",
+  "output_sha256": "adeb87cbdf2a1277e77af65f22202a70e21339b736a12c189ea797a5359c280e",
+  "finish_reason": "stop",
+  "refusal": null,
+  "returned_model": "gpt-6-astra",
+  "usage": {
+    "prompt_tokens": 400,
+    "completion_tokens": 424,
+    "total_tokens": 824,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "audio_tokens": 0,
+      "accepted_prediction_tokens": 0,
+      "rejected_prediction_tokens": 0
+    }
+  },
+  "format": {
+    "json_object": true,
+    "rule_unchanged": true,
+    "passage_is_string": true,
+    "passage_sha256": "d56e26577f2b6623810bc7e0b2422a893b8882627c4ca0622cf16e65b3bfc600",
+    "passage_words": 270
+  },
+  "finished_at": "2026-09-22T19:59:40.637966+00:00",
+  "latency_seconds": 14.5742,
+  "usage_cost_upper_estimate_usd": 0.0252,
+  "stream_status": "active",
+  "budget": {
+    "usage_cost_upper_estimate_usd": 1.5947216,
+    "uncertain_cost_reserve_usd": 0.04533,
+    "in_flight_reserve_usd": 0.3627656,
+    "limit_usd": 18.83
+  }
+}

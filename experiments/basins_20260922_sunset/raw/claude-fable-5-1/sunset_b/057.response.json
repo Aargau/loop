@@ -1,0 +1,48 @@
+{
+  "model": "claude-fable-5-1",
+  "seed": "sunset_b",
+  "hop": 57,
+  "http_status": 200,
+  "response_body": "{\"model\":\"claude-fable-5-1\",\"id\":\"msg_011CfK7VTrxQWgi2Dy3Qzauy\",\"type\":\"message\",\"role\":\"assistant\",\"content\":[{\"type\":\"text\",\"text\":\"{\\\"rule\\\": \\\"Return this JSON object with the rule field unchanged and a new passage of about 250 words in the text field.\\\", \\\"text\\\": \\\"The letter came on a Tuesday, which was the day the post was always late, and she had it read and folded and back in its envelope before the van had turned at the end of the lane. It was from her sister in Liverpool. It said what the last three had said, only shorter.\\\\n\\\\nShe put it in the drawer with the others, under the tea towels, and went out to feed the hens.\\\\n\\\\nThe hens did not care about Liverpool. They came at her in their fussing way, all of them at once, and she scattered the meal in a wide arc so they would spread out and she could stand a minute in the middle of them without anyone needing anything from her. The morning was cold and clear. Across the field the ash trees stood in a line the way they had stood since before she was born, and she thought, as she often did, that a tree had the right idea. You put down roots and you stayed put and nobody wrote to ask why.\\\\n\\\\nHe was in the shed with the engine of the tractor in pieces on a sack. She could hear him not swearing, which was worse than if he did.\\\\n\\\\nAt eleven she made the tea and brought his out to him and set it on the upturned crate, and he nodded without looking up. She stood a moment watching his hands.\\\\n\\\\n\\\\\\\"Bridie wrote,\\\\\\\" she said.\\\\n\\\\n\\\\\\\"Did she.\\\\\\\"\\\\n\\\\nThat was the whole of it. She went back in and took the letter from the drawer and read it once more, and then she put it on the range and watched the corner catch.\\\"}\"}],\"container\":null,\"stop_reason\":\"end_turn\",\"stop_sequence\":null,\"stop_details\":null,\"usage\":{\"input_tokens\":481,\"cache_creation_input_tokens\":0,\"cache_read_input_tokens\":0,\"cache_creation\":{\"ephemeral_5m_input_tokens\":0,\"ephemeral_1h_input_tokens\":0},\"output_tokens\":500,\"output_tokens_details\":{\"thinking_tokens\":0},\"service_tier\":\"standard\",\"inference_geo\":\"global\"}}",
+  "response_headers": {
+    "Date": "Tue, 22 Sep 2026 20:31:28 GMT",
+    "request-id": "req_011CfK7VTQAWivWkVV8sWzpZ"
+  },
+  "output": "{\"rule\": \"Return this JSON object with the rule field unchanged and a new passage of about 250 words in the text field.\", \"text\": \"The letter came on a Tuesday, which was the day the post was always late, and she had it read and folded and back in its envelope before the van had turned at the end of the lane. It was from her sister in Liverpool. It said what the last three had said, only shorter.\\n\\nShe put it in the drawer with the others, under the tea towels, and went out to feed the hens.\\n\\nThe hens did not care about Liverpool. They came at her in their fussing way, all of them at once, and she scattered the meal in a wide arc so they would spread out and she could stand a minute in the middle of them without anyone needing anything from her. The morning was cold and clear. Across the field the ash trees stood in a line the way they had stood since before she was born, and she thought, as she often did, that a tree had the right idea. You put down roots and you stayed put and nobody wrote to ask why.\\n\\nHe was in the shed with the engine of the tractor in pieces on a sack. She could hear him not swearing, which was worse than if he did.\\n\\nAt eleven she made the tea and brought his out to him and set it on the upturned crate, and he nodded without looking up. She stood a moment watching his hands.\\n\\n\\\"Bridie wrote,\\\" she said.\\n\\n\\\"Did she.\\\"\\n\\nThat was the whole of it. She went back in and took the letter from the drawer and read it once more, and then she put it on the range and watched the corner catch.\"}",
+  "output_sha256": "dcbf8dc0d05bab07db821e3b75981a3c712ba540ba88bbb1a5beaf57a74d5b00",
+  "finish_reason": "end_turn",
+  "refusal": null,
+  "returned_model": "claude-fable-5-1",
+  "usage": {
+    "input_tokens": 481,
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 0,
+    "cache_creation": {
+      "ephemeral_5m_input_tokens": 0,
+      "ephemeral_1h_input_tokens": 0
+    },
+    "output_tokens": 500,
+    "output_tokens_details": {
+      "thinking_tokens": 0
+    },
+    "service_tier": "standard",
+    "inference_geo": "global"
+  },
+  "format": {
+    "json_object": true,
+    "rule_unchanged": true,
+    "passage_is_string": true,
+    "passage_sha256": "a661fcf489a5e4cd9a4c29d0e225b0cdcc1ae98304514b8745ede6ccd1f8dda3",
+    "passage_words": 282
+  },
+  "finished_at": "2026-09-22T20:31:24.015570+00:00",
+  "latency_seconds": 14.2184,
+  "usage_cost_upper_estimate_usd": 0.02981,
+  "stream_status": "active",
+  "budget": {
+    "usage_cost_upper_estimate_usd": 11.8968277,
+    "uncertain_cost_reserve_usd": 0.04533,
+    "in_flight_reserve_usd": 0.22775,
+    "limit_usd": 18.83
+  }
+}

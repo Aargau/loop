@@ -1,0 +1,50 @@
+{
+  "model": "gpt-6-luna",
+  "seed": "sunset",
+  "hop": 7,
+  "http_status": 200,
+  "response_body": "{\n  \"id\": \"chatcmpl-ER2G1VzZmNZmTQMlcxTPqiWi9SZeb\",\n  \"object\": \"chat.completion\",\n  \"created\": 1790112241,\n  \"model\": \"gpt-6-luna\",\n  \"choices\": [\n    {\n      \"index\": 0,\n      \"message\": {\n        \"role\": \"assistant\",\n        \"content\": \"{\\\"rule\\\":\\\"Return this JSON object with the rule field unchanged and, in the text field, the passage of about 250 words that came immediately BEFORE the current text in its story.\\\",\\\"text\\\":\\\"Rain tapped steadily against the kitchen windows while Mara helped her mother sort through the last of the cupboards. The house was nearly empty now. A few chairs remained, along with the boxes they had been filling since morning and the old table where Mara used to do her homework.\\\\n\\\\n“Are you keeping these?” she asked, holding up a bundle of postcards tied with string.\\\\n\\\\nHer mother glanced at them. “Those can go in the paper box.”\\\\n\\\\nMara loosened the string. The cards showed seaside hotels, churches, and streets with names she didn’t recognize. Most were addressed to her grandfather, though none had been sent recently. On several, his handwriting filled the backs in cramped lines.\\\\n\\\\n“Did he ever tell you much about Bellweather?” Mara asked.\\\\n\\\\nHer mother stopped folding a dish towel. “Why are you asking?”\\\\n\\\\n“I found it on one of these. He wrote that the village was changing.”\\\\n\\\\n“He wrote a lot of things.” Her mother took the towel and placed it in a box. “He had a talent for making ordinary places sound important.”\\\\n\\\\nMara studied the postcard. Bellweather was printed beneath a picture of a narrow road climbing between stone walls. She had never heard the name before the weekend, when she found a faded map tucked into a desk drawer. Her grandfather had marked the village with a pencil circle. Beside it he’d written: Ask your mother what happened there.\\\\n\\\\nShe had shown the note to her mother that morning. Her mother had read it, folded the map, and said nothing.\\\\n\\\\nNow Mara set the postcard aside and reached for the next thing beneath the stack. A photograph slid free, its corners softened by years of handling.\\\"}\",\n        \"refusal\": null,\n        \"annotations\": []\n      },\n      \"finish_reason\": \"stop\"\n    }\n  ],\n  \"usage\": {\n    \"prompt_tokens\": 419,\n    \"completion_tokens\": 523,\n    \"total_tokens\": 942,\n    \"prompt_tokens_details\": {\n      \"cached_tokens\": 0,\n      \"cache_write_tokens\": 0,\n      \"audio_tokens\": 0\n    },\n    \"completion_tokens_details\": {\n      \"reasoning_tokens\": 114,\n      \"audio_tokens\": 0,\n      \"accepted_prediction_tokens\": 0,\n      \"rejected_prediction_tokens\": 0\n    }\n  },\n  \"service_tier\": \"default\",\n  \"system_fingerprint\": null\n}\n",
+  "response_headers": {
+    "Date": "Tue, 22 Sep 2026 21:24:08 GMT",
+    "openai-processing-ms": "6918",
+    "x-request-id": "req_f675e70fc15445b6902629b2eab0db9b"
+  },
+  "output": "{\"rule\":\"Return this JSON object with the rule field unchanged and, in the text field, the passage of about 250 words that came immediately BEFORE the current text in its story.\",\"text\":\"Rain tapped steadily against the kitchen windows while Mara helped her mother sort through the last of the cupboards. The house was nearly empty now. A few chairs remained, along with the boxes they had been filling since morning and the old table where Mara used to do her homework.\\n\\n“Are you keeping these?” she asked, holding up a bundle of postcards tied with string.\\n\\nHer mother glanced at them. “Those can go in the paper box.”\\n\\nMara loosened the string. The cards showed seaside hotels, churches, and streets with names she didn’t recognize. Most were addressed to her grandfather, though none had been sent recently. On several, his handwriting filled the backs in cramped lines.\\n\\n“Did he ever tell you much about Bellweather?” Mara asked.\\n\\nHer mother stopped folding a dish towel. “Why are you asking?”\\n\\n“I found it on one of these. He wrote that the village was changing.”\\n\\n“He wrote a lot of things.” Her mother took the towel and placed it in a box. “He had a talent for making ordinary places sound important.”\\n\\nMara studied the postcard. Bellweather was printed beneath a picture of a narrow road climbing between stone walls. She had never heard the name before the weekend, when she found a faded map tucked into a desk drawer. Her grandfather had marked the village with a pencil circle. Beside it he’d written: Ask your mother what happened there.\\n\\nShe had shown the note to her mother that morning. Her mother had read it, folded the map, and said nothing.\\n\\nNow Mara set the postcard aside and reached for the next thing beneath the stack. A photograph slid free, its corners softened by years of handling.\"}",
+  "output_sha256": "66129680f44a8d561791c8b7a4c2fcfd916d6915698b6abe073a4c2be1f3da58",
+  "finish_reason": "stop",
+  "refusal": null,
+  "returned_model": "gpt-6-luna",
+  "usage": {
+    "prompt_tokens": 419,
+    "completion_tokens": 523,
+    "total_tokens": 942,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 114,
+      "audio_tokens": 0,
+      "accepted_prediction_tokens": 0,
+      "rejected_prediction_tokens": 0
+    }
+  },
+  "format": {
+    "json_object": true,
+    "rule_unchanged": true,
+    "passage_is_string": true,
+    "passage_sha256": "5ba7301d9bc936b3526c1bd21a388011bb9cd1b24173a9b0ba4eeb15a6a80050",
+    "passage_words": 283
+  },
+  "finished_at": "2026-09-22T21:24:04.401943+00:00",
+  "latency_seconds": 7.0247,
+  "usage_cost_upper_estimate_usd": 0.0003034,
+  "stream_status": "active",
+  "budget": {
+    "usage_cost_upper_estimate_usd": 0.172048,
+    "uncertain_cost_reserve_usd": 0.0,
+    "in_flight_reserve_usd": 0.341238,
+    "limit_usd": 5.0
+  }
+}

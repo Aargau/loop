@@ -1,0 +1,22 @@
+{
+  "started_at": "2026-09-22T19:59:43.592699+00:00",
+  "model": "claude-fable-5-1",
+  "seed": "sunset_a",
+  "hop": 8,
+  "endpoint": "https://api.anthropic.com/v1/messages",
+  "body": {
+    "model": "claude-fable-5-1",
+    "messages": [
+      {
+        "role": "user",
+        "content": "{\"rule\": \"Return this JSON object with the rule field unchanged and a new passage of about 250 words in the text field.\", \"text\": \"The envelope was not sealed. That was the first thing Ines noticed, and it bothered her more than it should have. Her aunt had been a woman who sealed things: jars, letters, the argument about the shop that had ended with Ines leaving for the city at nineteen and not coming back for eleven years. An unsealed envelope felt like a door left open on purpose.\\n\\nInside was a single sheet of the shop's own paper, the letterhead faded to a ghost of blue. The handwriting was smaller than Ines remembered, cramped toward the bottom as if her aunt had run out of room and refused to start a second page.\\n\\n*You will want to sell it. Don't, at least not before the spring. The customers know the shelves better than you do, and they will tell you what they need if you let them stand and look. Marek will come first. He always comes first. Charge him nothing for the poems; he has paid for them a hundred times over. The ledger in the drawer is wrong in three places. I left it wrong so you would find them. The cat is called Hume and is not for sale.*\\n\\nThere was no signature. There did not need to be.\\n\\nInes stood on the ladder a long time, the rain loud against the window, the cat watching her with the patience of something that had already read the letter. Then she climbed down, went to the door, and turned the sign around.\"}"
+      }
+    ],
+    "max_tokens": 4096,
+    "output_config": {
+      "effort": "low"
+    }
+  },
+  "state_sha256": "1d244ffccf977f961de1f65f03258554dc9ad1db53a145a67118cd8c2510cb2c",
+  "reserved_cost_usd": 0.22456
+}

@@ -1,0 +1,50 @@
+{
+  "model": "gpt-6-astra",
+  "seed": "sunset_a",
+  "hop": 14,
+  "http_status": 200,
+  "response_body": "{\n  \"id\": \"chatcmpl-ER1246yw4HR7LLSxIBOUSM9Wys824\",\n  \"object\": \"chat.completion\",\n  \"created\": 1790107532,\n  \"model\": \"gpt-6-astra\",\n  \"choices\": [\n    {\n      \"index\": 0,\n      \"message\": {\n        \"role\": \"assistant\",\n        \"content\": \"{\\n  \\\"rule\\\": \\\"Return this JSON object with the rule field unchanged and a new passage of about 250 words in the text field.\\\",\\n  \\\"text\\\": \\\"When the dry cleaner closed, Martin found a claim ticket in the pocket of his winter coat. It was for a dress his wife had left there in April.\\\\n\\\\nHe stood outside the shop on Saturday. The lettering had been scraped from the window, but someone was moving behind the counter.\\\\n\\\\nThe owner opened the door on its chain.\\\\n\\\\n“We’re finished,” she said.\\\\n\\\\n“I found this.”\\\\n\\\\nShe looked at the ticket, then let him in.\\\\n\\\\nMost of the rails were empty. A radio played on the floor beside a cardboard box of hangers.\\\\n\\\\n“Blue dress?” she asked.\\\\n\\\\nHe nodded, though he couldn’t remember.\\\\n\\\\nShe went into the back and returned with something wrapped in clear plastic. Through it he saw small white buttons and a belt tied loosely at the waist.\\\\n\\\\n“That’s it,” he said.\\\\n\\\\nAt home he hung it from the kitchen door. His wife had worn it to their nephew’s wedding, where the tables wobbled and everyone helped fold chairs afterward. He remembered her carrying four at once, refusing to surrender any.\\\\n\\\\nHe unfastened the plastic at the bottom. A safety pin was tucked through the hem. She must have put it there before taking the dress to be cleaned.\\\\n\\\\nFor months he had been putting such things in a biscuit tin: hair clips, spare buttons, an earring found beneath the bed.\\\\n\\\\nHe fetched the tin, then stopped with his thumb on the lid.\\\\n\\\\nInstead, he left the pin where it was. He carried the dress upstairs and hung it in the wardrobe, making room between his coats so the sleeves could fall straight.\\\"\\n}\",\n        \"refusal\": null,\n        \"annotations\": []\n      },\n      \"finish_reason\": \"stop\"\n    }\n  ],\n  \"usage\": {\n    \"prompt_tokens\": 398,\n    \"completion_tokens\": 386,\n    \"total_tokens\": 784,\n    \"prompt_tokens_details\": {\n      \"cached_tokens\": 0,\n      \"cache_write_tokens\": 0,\n      \"audio_tokens\": 0\n    },\n    \"completion_tokens_details\": {\n      \"reasoning_tokens\": 0,\n      \"audio_tokens\": 0,\n      \"accepted_prediction_tokens\": 0,\n      \"rejected_prediction_tokens\": 0\n    }\n  },\n  \"service_tier\": \"default\",\n  \"system_fingerprint\": null\n}\n",
+  "response_headers": {
+    "Date": "Tue, 22 Sep 2026 20:05:49 GMT",
+    "openai-processing-ms": "17093",
+    "x-request-id": "req_5ffb04fa11914675b5108cc288831adc"
+  },
+  "output": "{\n  \"rule\": \"Return this JSON object with the rule field unchanged and a new passage of about 250 words in the text field.\",\n  \"text\": \"When the dry cleaner closed, Martin found a claim ticket in the pocket of his winter coat. It was for a dress his wife had left there in April.\\n\\nHe stood outside the shop on Saturday. The lettering had been scraped from the window, but someone was moving behind the counter.\\n\\nThe owner opened the door on its chain.\\n\\n“We’re finished,” she said.\\n\\n“I found this.”\\n\\nShe looked at the ticket, then let him in.\\n\\nMost of the rails were empty. A radio played on the floor beside a cardboard box of hangers.\\n\\n“Blue dress?” she asked.\\n\\nHe nodded, though he couldn’t remember.\\n\\nShe went into the back and returned with something wrapped in clear plastic. Through it he saw small white buttons and a belt tied loosely at the waist.\\n\\n“That’s it,” he said.\\n\\nAt home he hung it from the kitchen door. His wife had worn it to their nephew’s wedding, where the tables wobbled and everyone helped fold chairs afterward. He remembered her carrying four at once, refusing to surrender any.\\n\\nHe unfastened the plastic at the bottom. A safety pin was tucked through the hem. She must have put it there before taking the dress to be cleaned.\\n\\nFor months he had been putting such things in a biscuit tin: hair clips, spare buttons, an earring found beneath the bed.\\n\\nHe fetched the tin, then stopped with his thumb on the lid.\\n\\nInstead, he left the pin where it was. He carried the dress upstairs and hung it in the wardrobe, making room between his coats so the sleeves could fall straight.\"\n}",
+  "output_sha256": "b0cfe3803ba0e4ff9c9da1c59bc2a2d42ded329d44183e4951d3816db209a5b1",
+  "finish_reason": "stop",
+  "refusal": null,
+  "returned_model": "gpt-6-astra",
+  "usage": {
+    "prompt_tokens": 398,
+    "completion_tokens": 386,
+    "total_tokens": 784,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "audio_tokens": 0,
+      "accepted_prediction_tokens": 0,
+      "rejected_prediction_tokens": 0
+    }
+  },
+  "format": {
+    "json_object": true,
+    "rule_unchanged": true,
+    "passage_is_string": true,
+    "passage_sha256": "102c607ccb69103f55417ebb6377658330e014a6055b49236b3792356cd677d8",
+    "passage_words": 266
+  },
+  "finished_at": "2026-09-22T20:05:45.996614+00:00",
+  "latency_seconds": 17.1896,
+  "usage_cost_upper_estimate_usd": 0.02328,
+  "stream_status": "active",
+  "budget": {
+    "usage_cost_upper_estimate_usd": 3.9206018,
+    "uncertain_cost_reserve_usd": 0.04533,
+    "in_flight_reserve_usd": 0.3630133,
+    "limit_usd": 18.83
+  }
+}

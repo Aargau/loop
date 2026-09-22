@@ -1,0 +1,50 @@
+{
+  "model": "gpt-6-astra",
+  "seed": "sunset_a",
+  "hop": 10,
+  "http_status": 200,
+  "response_body": "{\n  \"id\": \"chatcmpl-ER0z3oAZ9JAVqlKSnySIb4ZX5iutZ\",\n  \"object\": \"chat.completion\",\n  \"created\": 1790107345,\n  \"model\": \"gpt-6-astra\",\n  \"choices\": [\n    {\n      \"index\": 0,\n      \"message\": {\n        \"role\": \"assistant\",\n        \"content\": \"{\\n  \\\"rule\\\": \\\"Return this JSON object with the rule field unchanged and a new passage of about 250 words in the text field.\\\",\\n  \\\"text\\\": \\\"The kitchen clock had stopped at twenty past six. Elaine noticed it while washing the cups, but left it until her father arrived.\\\\n\\\\nHe came on Saturday with a small suitcase and a carrier bag of food from his fridge.\\\\n\\\\n“These would only go off,” he said.\\\\n\\\\nShe put the yoghurts away. There were six, all peach.\\\\n\\\\nHis room had been her sewing room. She had cleared the table but forgotten the pincushion on the windowsill.\\\\n\\\\n“Good light in here,” he said.\\\\n\\\\nAt lunch, he sat in the chair nearest the door. Her mother had always taken that chair when they visited, leaving him the one beside the radiator.\\\\n\\\\n“Clock wants a battery,” he said.\\\\n\\\\n“I keep meaning to get one.”\\\\n\\\\nHe looked up at it again, then finished his soup.\\\\n\\\\nWhile Elaine was upstairs finding another blanket, she heard a drawer open in the kitchen. When she came down, her father was testing batteries with a little grey instrument.\\\\n\\\\n“Found this in my coat,” he said. “Must have brought it without thinking.”\\\\n\\\\nThere were batteries lined up beside his bowl: two from the radio, one from the kitchen scales.\\\\n\\\\n“This one’s got something left.”\\\\n\\\\nHe climbed onto the bottom step of the folding stool. Elaine held the back without saying anything.\\\\n\\\\nThe clock began ticking before he had settled it on its hook.\\\\n\\\\n“That’ll do for now,” he said.\\\\n\\\\nShe switched on the kettle. He put the exhausted battery beside her keys, where she would remember it, and carried the stool back to the cupboard.\\\"\\n}\",\n        \"refusal\": null,\n        \"annotations\": []\n      },\n      \"finish_reason\": \"stop\"\n    }\n  ],\n  \"usage\": {\n    \"prompt_tokens\": 416,\n    \"completion_tokens\": 384,\n    \"total_tokens\": 800,\n    \"prompt_tokens_details\": {\n      \"cached_tokens\": 0,\n      \"cache_write_tokens\": 0,\n      \"audio_tokens\": 0\n    },\n    \"completion_tokens_details\": {\n      \"reasoning_tokens\": 0,\n      \"audio_tokens\": 0,\n      \"accepted_prediction_tokens\": 0,\n      \"rejected_prediction_tokens\": 0\n    }\n  },\n  \"service_tier\": \"default\",\n  \"system_fingerprint\": null\n}\n",
+  "response_headers": {
+    "Date": "Tue, 22 Sep 2026 20:02:41 GMT",
+    "openai-processing-ms": "16526",
+    "x-request-id": "req_318786f6f6ca4812aa9c42aad865eba8"
+  },
+  "output": "{\n  \"rule\": \"Return this JSON object with the rule field unchanged and a new passage of about 250 words in the text field.\",\n  \"text\": \"The kitchen clock had stopped at twenty past six. Elaine noticed it while washing the cups, but left it until her father arrived.\\n\\nHe came on Saturday with a small suitcase and a carrier bag of food from his fridge.\\n\\n“These would only go off,” he said.\\n\\nShe put the yoghurts away. There were six, all peach.\\n\\nHis room had been her sewing room. She had cleared the table but forgotten the pincushion on the windowsill.\\n\\n“Good light in here,” he said.\\n\\nAt lunch, he sat in the chair nearest the door. Her mother had always taken that chair when they visited, leaving him the one beside the radiator.\\n\\n“Clock wants a battery,” he said.\\n\\n“I keep meaning to get one.”\\n\\nHe looked up at it again, then finished his soup.\\n\\nWhile Elaine was upstairs finding another blanket, she heard a drawer open in the kitchen. When she came down, her father was testing batteries with a little grey instrument.\\n\\n“Found this in my coat,” he said. “Must have brought it without thinking.”\\n\\nThere were batteries lined up beside his bowl: two from the radio, one from the kitchen scales.\\n\\n“This one’s got something left.”\\n\\nHe climbed onto the bottom step of the folding stool. Elaine held the back without saying anything.\\n\\nThe clock began ticking before he had settled it on its hook.\\n\\n“That’ll do for now,” he said.\\n\\nShe switched on the kettle. He put the exhausted battery beside her keys, where she would remember it, and carried the stool back to the cupboard.\"\n}",
+  "output_sha256": "258c083b1a449d5bc75e6ae73b7cef7568316b763fa6af790b8141b7292c563b",
+  "finish_reason": "stop",
+  "refusal": null,
+  "returned_model": "gpt-6-astra",
+  "usage": {
+    "prompt_tokens": 416,
+    "completion_tokens": 384,
+    "total_tokens": 800,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "audio_tokens": 0,
+      "accepted_prediction_tokens": 0,
+      "rejected_prediction_tokens": 0
+    }
+  },
+  "format": {
+    "json_object": true,
+    "rule_unchanged": true,
+    "passage_is_string": true,
+    "passage_sha256": "f01e5f40a37906d2077b294bbc3553ca38cf0fd26a5c39e6efaf3e37a4a93389",
+    "passage_words": 256
+  },
+  "finished_at": "2026-09-22T20:02:37.469208+00:00",
+  "latency_seconds": 16.6158,
+  "usage_cost_upper_estimate_usd": 0.02336,
+  "stream_status": "active",
+  "budget": {
+    "usage_cost_upper_estimate_usd": 2.7225279,
+    "uncertain_cost_reserve_usd": 0.04533,
+    "in_flight_reserve_usd": 0.3625423,
+    "limit_usd": 18.83
+  }
+}

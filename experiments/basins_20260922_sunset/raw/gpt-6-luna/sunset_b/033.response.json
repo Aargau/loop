@@ -1,0 +1,50 @@
+{
+  "model": "gpt-6-luna",
+  "seed": "sunset_b",
+  "hop": 33,
+  "http_status": 200,
+  "response_body": "{\n  \"id\": \"chatcmpl-ER0zCVV5pMGrpjZihjB1y4PHsj7pm\",\n  \"object\": \"chat.completion\",\n  \"created\": 1790107354,\n  \"model\": \"gpt-6-luna\",\n  \"choices\": [\n    {\n      \"index\": 0,\n      \"message\": {\n        \"role\": \"assistant\",\n        \"content\": \"{\\n  \\\"rule\\\": \\\"Return this JSON object with the rule field unchanged and a new passage of about 250 words in the text field.\\\",\\n  \\\"text\\\": \\\"Every Thursday, just before sunset, Eli carried a small blue chair to the edge of the harbor. He set it beside the old lighthouse and waited for the foghorn to sound.\\\\n\\\\nThe chair had belonged to his grandmother, who used to sit there and watch the fishing boats return. She had taught Eli the names of the vessels and the habits of the tides. When she died, he brought the chair to the harbor, though he could not explain why he kept coming back.\\\\n\\\\nOne evening, a girl about his age appeared with a sketchbook tucked under her arm. She asked if the chair was taken. Eli shook his head, and she sat down on the stone wall instead.\\\\n\\\\n“I’m drawing the boats,” she said. “But they all look like little boxes.”\\\\n\\\\nEli pointed toward a green trawler rocking near the pier. “That one leans into the waves. It’s called the Heron.”\\\\n\\\\nThe girl studied it, then added a long, sloping line to her drawing. They began talking about the harbor: which gulls stole sandwiches, where the water turned silver at dusk, and how the lighthouse beam swept across the bay each night.\\\\n\\\\nThe next Thursday, she returned. This time she brought two pencils and a folded sheet of paper. On it was a careful sketch of the blue chair, angled toward the sea.\\\\n\\\\nAfter that, Eli never waited alone. Some evenings they drew; others they simply listened to the foghorn and watched the boats come home. The chair stayed by the lighthouse, worn smooth by the salt air, while the harbor slowly became a place they shared.\\\"\\n}\",\n        \"refusal\": null,\n        \"annotations\": []\n      },\n      \"finish_reason\": \"stop\"\n    }\n  ],\n  \"usage\": {\n    \"prompt_tokens\": 380,\n    \"completion_tokens\": 415,\n    \"total_tokens\": 795,\n    \"prompt_tokens_details\": {\n      \"cached_tokens\": 0,\n      \"cache_write_tokens\": 0,\n      \"audio_tokens\": 0\n    },\n    \"completion_tokens_details\": {\n      \"reasoning_tokens\": 33,\n      \"audio_tokens\": 0,\n      \"accepted_prediction_tokens\": 0,\n      \"rejected_prediction_tokens\": 0\n    }\n  },\n  \"service_tier\": \"default\",\n  \"system_fingerprint\": null\n}\n",
+  "response_headers": {
+    "Date": "Tue, 22 Sep 2026 20:02:39 GMT",
+    "openai-processing-ms": "5574",
+    "x-request-id": "req_f0347d2e484549e1a6b1f86960e4338a"
+  },
+  "output": "{\n  \"rule\": \"Return this JSON object with the rule field unchanged and a new passage of about 250 words in the text field.\",\n  \"text\": \"Every Thursday, just before sunset, Eli carried a small blue chair to the edge of the harbor. He set it beside the old lighthouse and waited for the foghorn to sound.\\n\\nThe chair had belonged to his grandmother, who used to sit there and watch the fishing boats return. She had taught Eli the names of the vessels and the habits of the tides. When she died, he brought the chair to the harbor, though he could not explain why he kept coming back.\\n\\nOne evening, a girl about his age appeared with a sketchbook tucked under her arm. She asked if the chair was taken. Eli shook his head, and she sat down on the stone wall instead.\\n\\n“I’m drawing the boats,” she said. “But they all look like little boxes.”\\n\\nEli pointed toward a green trawler rocking near the pier. “That one leans into the waves. It’s called the Heron.”\\n\\nThe girl studied it, then added a long, sloping line to her drawing. They began talking about the harbor: which gulls stole sandwiches, where the water turned silver at dusk, and how the lighthouse beam swept across the bay each night.\\n\\nThe next Thursday, she returned. This time she brought two pencils and a folded sheet of paper. On it was a careful sketch of the blue chair, angled toward the sea.\\n\\nAfter that, Eli never waited alone. Some evenings they drew; others they simply listened to the foghorn and watched the boats come home. The chair stayed by the lighthouse, worn smooth by the salt air, while the harbor slowly became a place they shared.\"\n}",
+  "output_sha256": "1b94ca232b1616ab01712362d59835a2d4e519c1973fbe7c9424e4e37240cd9b",
+  "finish_reason": "stop",
+  "refusal": null,
+  "returned_model": "gpt-6-luna",
+  "usage": {
+    "prompt_tokens": 380,
+    "completion_tokens": 415,
+    "total_tokens": 795,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 33,
+      "audio_tokens": 0,
+      "accepted_prediction_tokens": 0,
+      "rejected_prediction_tokens": 0
+    }
+  },
+  "format": {
+    "json_object": true,
+    "rule_unchanged": true,
+    "passage_is_string": true,
+    "passage_sha256": "de35da271d1b8d8baa6d4fe1af2b027b3fd231fd5c9c1ba2ac46f2dd9d290d17",
+    "passage_words": 268
+  },
+  "finished_at": "2026-09-22T20:02:35.684222+00:00",
+  "latency_seconds": 5.7663,
+  "usage_cost_upper_estimate_usd": 0.0002455,
+  "stream_status": "active",
+  "budget": {
+    "usage_cost_upper_estimate_usd": 2.6947731,
+    "uncertain_cost_reserve_usd": 0.04533,
+    "in_flight_reserve_usd": 0.587642,
+    "limit_usd": 18.83
+  }
+}

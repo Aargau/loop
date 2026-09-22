@@ -1,0 +1,22 @@
+{
+  "started_at": "2026-09-22T21:24:45.569499+00:00",
+  "model": "claude-opus-5-5",
+  "seed": "sunset",
+  "hop": 9,
+  "endpoint": "https://api.anthropic.com/v1/messages",
+  "body": {
+    "model": "claude-opus-5-5",
+    "messages": [
+      {
+        "role": "user",
+        "content": "```json\n{\"rule\": \"Return this JSON object with the rule field unchanged and, in the text field, the passage of about 250 words that comes immediately AFTER the current text in the same story.\", \"text\": \"Grandma was the first to stand. She crossed to the window, didn't touch the curtain, just leaned close enough to see past its edge. Mara heard her breathe out through her nose, long and slow, the way she did when the radio said the storm was turning toward them after all.\\n\\n\\\"Headlights,\\\" she said. \\\"Down at the cattle guard.\\\"\\n\\nEli's fork clattered onto the floor. Nobody picked it up.\\n\\n\\\"He knows I took it,\\\" June whispered. \\\"I told you he'd know.\\\"\\n\\n\\\"Hush.\\\" Grandma turned from the window. Her face had gone very still, the way a pond goes still right before something breaks the surface. \\\"Mara, get the lamp off in the front room. Eli, you take your sister upstairs and you stay in the closet under the eaves till I call you by name. Not before.\\\"\\n\\n\\\"What about the book?\\\" Mara asked.\\n\\nGrandma looked at the ledger for a long moment. Then she wrapped it back in the rooster towel, key and all, and pressed it into Mara's hands. It was heavier than it looked, and cold, as if it had been buried somewhere.\\n\\n\\\"The root cellar,\\\" she said. \\\"Behind the peaches. Put it where your grandpa kept the thing we don't talk about.\\\"\\n\\nMara knew exactly where she meant. She had never been allowed to touch that shelf.\\n\\nThe dog's barking climbed into a howl and then cut off, sudden as a slammed door. In the silence, gravel crunched under tires, slow and patient, coming up the drive.\"}\n```"
+      }
+    ],
+    "max_tokens": 4096,
+    "output_config": {
+      "effort": "low"
+    }
+  },
+  "state_sha256": "244184f472ab90b6da007082a2b8267e8eaf4ef766090fbe5dc385075bebda51",
+  "reserved_cost_usd": 0.090416
+}

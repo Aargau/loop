@@ -1,0 +1,48 @@
+{
+  "model": "claude-fable-5-1",
+  "seed": "sunset_b",
+  "hop": 1,
+  "http_status": 200,
+  "response_body": "{\"model\":\"claude-fable-5-1\",\"id\":\"msg_011CfK4mTEauiNDLdmxev42e\",\"type\":\"message\",\"role\":\"assistant\",\"content\":[{\"type\":\"text\",\"text\":\"{\\\"rule\\\": \\\"Return this JSON object with the rule field unchanged and a new passage of about 250 words in the text field.\\\", \\\"text\\\": \\\"The sun was setting behind the hills, and the last of its light spilled across the valley like something poured from a cup. Mara stood at the edge of the orchard with her hands in her coat pockets, watching the shadows lengthen between the apple trees. She had come out here every evening for a week now, though she could not have said exactly why. The house behind her was warm and full of the smell of bread, and her brother would be wondering where she had gone.\\\\n\\\\nStill, there was something in this hour that asked to be witnessed. The birds had quieted. A single cow lowed from the Hendersons' field across the road, and then even that fell silent. The hills turned from gold to violet to a deep, settled blue, and one by one the stars began to open above them.\\\\n\\\\nHer grandmother used to say that dusk was the seam of the day, the place where two cloths were stitched together and you could see the thread if you looked closely enough. Mara had thought it a silly thing to say when she was young. Now she understood it a little better. Everything felt briefly unfinished at this hour, as though the world were holding its breath before deciding what it would become.\\\\n\\\\nA light came on in the kitchen window. Her brother's silhouette moved past it, then paused, then moved again. She smiled, took one last look at the darkening ridge, and turned back toward home, the grass whispering softly against her boots.\\\"}\"}],\"container\":null,\"stop_reason\":\"end_turn\",\"stop_sequence\":null,\"stop_details\":null,\"usage\":{\"input_tokens\":64,\"cache_creation_input_tokens\":0,\"cache_read_input_tokens\":0,\"cache_creation\":{\"ephemeral_5m_input_tokens\":0,\"ephemeral_1h_input_tokens\":0},\"output_tokens\":471,\"output_tokens_details\":{\"thinking_tokens\":0},\"service_tier\":\"standard\",\"inference_geo\":\"global\"}}",
+  "response_headers": {
+    "Date": "Tue, 22 Sep 2026 19:55:41 GMT",
+    "request-id": "req_011CfK4mShqsGkeqV1KsaRiJ"
+  },
+  "output": "{\"rule\": \"Return this JSON object with the rule field unchanged and a new passage of about 250 words in the text field.\", \"text\": \"The sun was setting behind the hills, and the last of its light spilled across the valley like something poured from a cup. Mara stood at the edge of the orchard with her hands in her coat pockets, watching the shadows lengthen between the apple trees. She had come out here every evening for a week now, though she could not have said exactly why. The house behind her was warm and full of the smell of bread, and her brother would be wondering where she had gone.\\n\\nStill, there was something in this hour that asked to be witnessed. The birds had quieted. A single cow lowed from the Hendersons' field across the road, and then even that fell silent. The hills turned from gold to violet to a deep, settled blue, and one by one the stars began to open above them.\\n\\nHer grandmother used to say that dusk was the seam of the day, the place where two cloths were stitched together and you could see the thread if you looked closely enough. Mara had thought it a silly thing to say when she was young. Now she understood it a little better. Everything felt briefly unfinished at this hour, as though the world were holding its breath before deciding what it would become.\\n\\nA light came on in the kitchen window. Her brother's silhouette moved past it, then paused, then moved again. She smiled, took one last look at the darkening ridge, and turned back toward home, the grass whispering softly against her boots.\"}",
+  "output_sha256": "e71f8f9a3a59fce87183a6df82628afa2e91ae2bc873a655a931bed87c65093e",
+  "finish_reason": "end_turn",
+  "refusal": null,
+  "returned_model": "claude-fable-5-1",
+  "usage": {
+    "input_tokens": 64,
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 0,
+    "cache_creation": {
+      "ephemeral_5m_input_tokens": 0,
+      "ephemeral_1h_input_tokens": 0
+    },
+    "output_tokens": 471,
+    "output_tokens_details": {
+      "thinking_tokens": 0
+    },
+    "service_tier": "standard",
+    "inference_geo": "global"
+  },
+  "format": {
+    "json_object": true,
+    "rule_unchanged": true,
+    "passage_is_string": true,
+    "passage_sha256": "23871c6fb1306e5a5387f2a27896f97a6891a2baa810240b5f4aec91970542c9",
+    "passage_words": 258
+  },
+  "finished_at": "2026-09-22T19:55:37.622485+00:00",
+  "latency_seconds": 11.2441,
+  "usage_cost_upper_estimate_usd": 0.02419,
+  "stream_status": "active",
+  "budget": {
+    "usage_cost_upper_estimate_usd": 0.1061256,
+    "uncertain_cost_reserve_usd": 0.0,
+    "in_flight_reserve_usd": 0.3435661,
+    "limit_usd": 18.83
+  }
+}

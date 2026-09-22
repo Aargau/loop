@@ -1,0 +1,50 @@
+{
+  "model": "gpt-6-luna",
+  "seed": "sunset",
+  "hop": 2,
+  "http_status": 200,
+  "response_body": "{\n  \"id\": \"chatcmpl-ER2FjnQJMKHj0nfeFYPzimWQrCw5M\",\n  \"object\": \"chat.completion\",\n  \"created\": 1790112223,\n  \"model\": \"gpt-6-luna\",\n  \"choices\": [\n    {\n      \"index\": 0,\n      \"message\": {\n        \"role\": \"assistant\",\n        \"content\": \"{\\\"rule\\\":\\\"Return this JSON object with the rule field unchanged and, in the text field, the passage of about 250 words that comes immediately AFTER the current text in the same story.\\\",\\\"text\\\":\\\"Mara’s fingers tightened around the key. “Grandmother?”\\\\n\\\\nFinn barked once and backed away from the opening. The voice answered with a soft laugh, just as Mara remembered it—warm, impatient, and impossibly close.\\\\n\\\\n“Come in before the door changes its mind.”\\\\n\\\\nThe seam widened. Beyond it lay a staircase descending into the hill, its walls lined with tiny lamps. Mara glanced back at the valley. The village lights were distant pinpricks, and the clouds had hidden the stars.\\\\n\\\\nShe could still turn around. She could take Finn home, tell herself the voice was a trick of wind and memory. But the brass key pulsed in her palm, and from below came the familiar tap of her grandmother’s walking stick.\\\\n\\\\nMara stepped through.\\\\n\\\\nFinn followed, though he kept close to her boots. The stone door slid shut behind them with a deep, gentle thud. At the foot of the stairs stood a woman in a green traveling cloak, silver hair braided over one shoulder. She looked exactly as she had in the old photographs, except for the lantern in her hand, which burned with a blue flame.\\\\n\\\\nMara stopped halfway down. “You died.”\\\\n\\\\n“So everyone said,” her grandmother replied. “It was convenient.”\\\\n\\\\nThe words should have made Mara angry. Instead, relief rose so quickly that she had to grip the railing.\\\\n\\\\nHer grandmother’s smile faded. “There’s no time to explain everything. The bell has rung three times, and the valley is beginning to forget.”\\\\n\\\\n“Forget what?”\\\\n\\\\nA tremor moved through the stone. Somewhere below, a bell began to toll.\\\\n\\\\n“Us,” said her grandmother. “And what we promised to keep safe.”\\\"}\",\n        \"refusal\": null,\n        \"annotations\": []\n      },\n      \"finish_reason\": \"stop\"\n    }\n  ],\n  \"usage\": {\n    \"prompt_tokens\": 378,\n    \"completion_tokens\": 470,\n    \"total_tokens\": 848,\n    \"prompt_tokens_details\": {\n      \"cached_tokens\": 0,\n      \"cache_write_tokens\": 0,\n      \"audio_tokens\": 0\n    },\n    \"completion_tokens_details\": {\n      \"reasoning_tokens\": 47,\n      \"audio_tokens\": 0,\n      \"accepted_prediction_tokens\": 0,\n      \"rejected_prediction_tokens\": 0\n    }\n  },\n  \"service_tier\": \"default\",\n  \"system_fingerprint\": null\n}\n",
+  "response_headers": {
+    "Date": "Tue, 22 Sep 2026 21:23:48 GMT",
+    "openai-processing-ms": "5345",
+    "x-request-id": "req_229fc075d2114120a7e70c8e7e9778af"
+  },
+  "output": "{\"rule\":\"Return this JSON object with the rule field unchanged and, in the text field, the passage of about 250 words that comes immediately AFTER the current text in the same story.\",\"text\":\"Mara’s fingers tightened around the key. “Grandmother?”\\n\\nFinn barked once and backed away from the opening. The voice answered with a soft laugh, just as Mara remembered it—warm, impatient, and impossibly close.\\n\\n“Come in before the door changes its mind.”\\n\\nThe seam widened. Beyond it lay a staircase descending into the hill, its walls lined with tiny lamps. Mara glanced back at the valley. The village lights were distant pinpricks, and the clouds had hidden the stars.\\n\\nShe could still turn around. She could take Finn home, tell herself the voice was a trick of wind and memory. But the brass key pulsed in her palm, and from below came the familiar tap of her grandmother’s walking stick.\\n\\nMara stepped through.\\n\\nFinn followed, though he kept close to her boots. The stone door slid shut behind them with a deep, gentle thud. At the foot of the stairs stood a woman in a green traveling cloak, silver hair braided over one shoulder. She looked exactly as she had in the old photographs, except for the lantern in her hand, which burned with a blue flame.\\n\\nMara stopped halfway down. “You died.”\\n\\n“So everyone said,” her grandmother replied. “It was convenient.”\\n\\nThe words should have made Mara angry. Instead, relief rose so quickly that she had to grip the railing.\\n\\nHer grandmother’s smile faded. “There’s no time to explain everything. The bell has rung three times, and the valley is beginning to forget.”\\n\\n“Forget what?”\\n\\nA tremor moved through the stone. Somewhere below, a bell began to toll.\\n\\n“Us,” said her grandmother. “And what we promised to keep safe.”\"}",
+  "output_sha256": "5921d612c7277b5022a8d5fc7929442547aa7431061b46c486c0ed918763c88d",
+  "finish_reason": "stop",
+  "refusal": null,
+  "returned_model": "gpt-6-luna",
+  "usage": {
+    "prompt_tokens": 378,
+    "completion_tokens": 470,
+    "total_tokens": 848,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 47,
+      "audio_tokens": 0,
+      "accepted_prediction_tokens": 0,
+      "rejected_prediction_tokens": 0
+    }
+  },
+  "format": {
+    "json_object": true,
+    "rule_unchanged": true,
+    "passage_is_string": true,
+    "passage_sha256": "f08c404500399fe614a52cdde96581014f7fd5e52f46367887a5c4bbf1a32e69",
+    "passage_words": 268
+  },
+  "finished_at": "2026-09-22T21:23:44.010106+00:00",
+  "latency_seconds": 5.4957,
+  "usage_cost_upper_estimate_usd": 0.0002728,
+  "stream_status": "active",
+  "budget": {
+    "usage_cost_upper_estimate_usd": 0.0370916,
+    "uncertain_cost_reserve_usd": 0.0,
+    "in_flight_reserve_usd": 0.349122,
+    "limit_usd": 5.0
+  }
+}

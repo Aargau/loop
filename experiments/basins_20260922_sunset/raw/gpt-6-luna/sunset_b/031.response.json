@@ -1,0 +1,50 @@
+{
+  "model": "gpt-6-luna",
+  "seed": "sunset_b",
+  "hop": 31,
+  "http_status": 200,
+  "response_body": "{\n  \"id\": \"chatcmpl-ER0yoRXE1eD64lOXLxYpDAv8LwnOh\",\n  \"object\": \"chat.completion\",\n  \"created\": 1790107330,\n  \"model\": \"gpt-6-luna\",\n  \"choices\": [\n    {\n      \"index\": 0,\n      \"message\": {\n        \"role\": \"assistant\",\n        \"content\": \"{\\n  \\\"rule\\\": \\\"Return this JSON object with the rule field unchanged and a new passage of about 250 words in the text field.\\\",\\n  \\\"text\\\": \\\"When the town library announced it would close for repairs, everyone expected the old building to grow quiet. Instead, the final week became its busiest in years. Children crowded the picture-book corner, retirees lingered over newspapers, and someone brought a tin of cinnamon biscuits for the volunteers packing shelves.\\\\n\\\\nNina, the youngest librarian, had been asked to sort the returns. Most were ordinary: mysteries, cookbooks, a guide to birdwatching. But wedged between two atlases was a slim green notebook with no title. Its pages held a list of places around town—a fountain behind the bakery, a bench beneath the clock tower, a narrow path beside the river. Next to each place was a date and a single sentence.\\\\n\\\\n“Someone laughed here after a hard winter,” read one. Another said, “A lost dog found its way home.”\\\\n\\\\nNina showed the notebook to Mr. Bell, who had visited the library every afternoon for as long as she could remember. He studied the handwriting, then smiled. “My wife kept that,” he said. “She believed every town had stories hiding in plain sight.”\\\\n\\\\nThe next morning, Nina carried the notebook outside. At the fountain, she found a child dropping coins into the water. At the clock tower, two neighbors were sharing an umbrella. By the river, a woman paused to watch a heron stand perfectly still.\\\\n\\\\nNina began adding fresh lines to the notebook. When the library reopened, she placed it on a low table beside the entrance, with a pencil tied to its cover. Soon, the pages filled with small discoveries: a repaired fence, a first day at work, a quiet kindness nobody else had noticed.\\\\n\\\\nThe building had been closed for a month, but its stories had never stopped.\\\"\\n}\",\n        \"refusal\": null,\n        \"annotations\": []\n      },\n      \"finish_reason\": \"stop\"\n    }\n  ],\n  \"usage\": {\n    \"prompt_tokens\": 365,\n    \"completion_tokens\": 466,\n    \"total_tokens\": 831,\n    \"prompt_tokens_details\": {\n      \"cached_tokens\": 0,\n      \"cache_write_tokens\": 0,\n      \"audio_tokens\": 0\n    },\n    \"completion_tokens_details\": {\n      \"reasoning_tokens\": 55,\n      \"audio_tokens\": 0,\n      \"accepted_prediction_tokens\": 0,\n      \"rejected_prediction_tokens\": 0\n    }\n  },\n  \"service_tier\": \"default\",\n  \"system_fingerprint\": null\n}\n",
+  "response_headers": {
+    "Date": "Tue, 22 Sep 2026 20:02:16 GMT",
+    "openai-processing-ms": "6090",
+    "x-request-id": "req_682bdd77d49a4cb68c636870aa064eeb"
+  },
+  "output": "{\n  \"rule\": \"Return this JSON object with the rule field unchanged and a new passage of about 250 words in the text field.\",\n  \"text\": \"When the town library announced it would close for repairs, everyone expected the old building to grow quiet. Instead, the final week became its busiest in years. Children crowded the picture-book corner, retirees lingered over newspapers, and someone brought a tin of cinnamon biscuits for the volunteers packing shelves.\\n\\nNina, the youngest librarian, had been asked to sort the returns. Most were ordinary: mysteries, cookbooks, a guide to birdwatching. But wedged between two atlases was a slim green notebook with no title. Its pages held a list of places around town—a fountain behind the bakery, a bench beneath the clock tower, a narrow path beside the river. Next to each place was a date and a single sentence.\\n\\n“Someone laughed here after a hard winter,” read one. Another said, “A lost dog found its way home.”\\n\\nNina showed the notebook to Mr. Bell, who had visited the library every afternoon for as long as she could remember. He studied the handwriting, then smiled. “My wife kept that,” he said. “She believed every town had stories hiding in plain sight.”\\n\\nThe next morning, Nina carried the notebook outside. At the fountain, she found a child dropping coins into the water. At the clock tower, two neighbors were sharing an umbrella. By the river, a woman paused to watch a heron stand perfectly still.\\n\\nNina began adding fresh lines to the notebook. When the library reopened, she placed it on a low table beside the entrance, with a pencil tied to its cover. Soon, the pages filled with small discoveries: a repaired fence, a first day at work, a quiet kindness nobody else had noticed.\\n\\nThe building had been closed for a month, but its stories had never stopped.\"\n}",
+  "output_sha256": "75ca4e7fc004ebeb13296fc5aa518fb3702596d592f9d621a380e89a11b143d9",
+  "finish_reason": "stop",
+  "refusal": null,
+  "returned_model": "gpt-6-luna",
+  "usage": {
+    "prompt_tokens": 365,
+    "completion_tokens": 466,
+    "total_tokens": 831,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 55,
+      "audio_tokens": 0,
+      "accepted_prediction_tokens": 0,
+      "rejected_prediction_tokens": 0
+    }
+  },
+  "format": {
+    "json_object": true,
+    "rule_unchanged": true,
+    "passage_is_string": true,
+    "passage_sha256": "1c8f0552b1505fcb01bdefe99a9bc93a16f663447582c647cc01b6d217dadb3d",
+    "passage_words": 287
+  },
+  "finished_at": "2026-09-22T20:02:12.875276+00:00",
+  "latency_seconds": 6.184,
+  "usage_cost_upper_estimate_usd": 0.0002695,
+  "stream_status": "active",
+  "budget": {
+    "usage_cost_upper_estimate_usd": 2.5654298,
+    "uncertain_cost_reserve_usd": 0.04533,
+    "in_flight_reserve_usd": 0.590624,
+    "limit_usd": 18.83
+  }
+}

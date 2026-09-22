@@ -1,0 +1,22 @@
+{
+  "started_at": "2026-09-22T20:09:01.382821+00:00",
+  "model": "claude-opus-5-5",
+  "seed": "tide",
+  "hop": 30,
+  "endpoint": "https://api.anthropic.com/v1/messages",
+  "body": {
+    "model": "claude-opus-5-5",
+    "messages": [
+      {
+        "role": "user",
+        "content": "```json\n{\"rule\": \"Return this JSON object with the rule field unchanged and a new passage of about 250 words in the text field.\", \"text\": \"October came in on a gale that lasted three days, and the girl lay awake listening to the slates rattle and the sea throw itself against the rocks below the croft. On the fourth morning the sky was washed clean and pale, and she ran out before breakfast in her nightdress and boots. The rowan had lost nearly all its leaves. They lay scattered across the grass inside the ring of stones, orange and red and the colour of rust, and for a moment she thought the storm had killed it after all. Then she knelt and saw the buds, small and dark and tight as fists, tucked where each leaf had been. Her grandmother came out with a shawl and put it around her shoulders without scolding. She said the tree had done the sensible thing, that it had let go of what it could not keep so the wind would have nothing to pull on. The girl gathered a handful of the fallen leaves and pressed them between the pages of the jotter, where they left faint brown stains that never quite came out. That week her brother went out in the boat with their father for the first time, and when he came home cold and proud he walked straight past the house to the ring of stones and stood there a while with his hands in his pockets. Neither of them said anything about it. In the jotter that night she wrote: the tree is bare but it is not empty. It is keeping everything inside until spring.\"}\n```"
+      }
+    ],
+    "max_tokens": 4096,
+    "output_config": {
+      "effort": "low"
+    }
+  },
+  "state_sha256": "059bf28957b97dddba064f24b3658a03a7f67ade49208ad869a9e48611ae7aec",
+  "reserved_cost_usd": 0.090004
+}

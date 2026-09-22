@@ -1,0 +1,48 @@
+{
+  "model": "claude-fable-5-1",
+  "seed": "tide",
+  "hop": 32,
+  "http_status": 200,
+  "response_body": "{\"model\":\"claude-fable-5-1\",\"id\":\"msg_011CfK6JHFZMLq6scD9sj7qt\",\"type\":\"message\",\"role\":\"assistant\",\"content\":[{\"type\":\"text\",\"text\":\"{\\\"rule\\\": \\\"Return this JSON object with the rule field unchanged and a new passage of about 250 words in the text field.\\\", \\\"text\\\": \\\"By the fourth hour the light had changed. Not darkened, exactly, but thinned, as if the sky had been rinsed and hung out. She could not see the sun through the haze but she could feel where it was, low and behind her left shoulder, and that agreed with the compass, so she let herself believe both.\\\\n\\\\nThe engine had developed a second sound underneath the first. A tick. She listened to it the way he had taught her to listen to anything mechanical, without wanting it to mean something, and after a while she decided it was only the heat. The flask was empty. The second apple sat in her coat pocket like a stone.\\\\n\\\\nShe took the set out of its bag and held it in her lap. The dials were where he had left them. She had not touched them in the flat, and she did not touch them now. It was enough to have the weight of it, the cold of the casing warming slowly against her knees, the little window of frequencies with its hairline scratch. She thought about the sixth entry in the notebook, the one with the time written twice, as if he had checked it.\\\\n\\\\nForty-one miles. She had no way of measuring it except the clock and her faith in the knock of the engine. When six hours had passed she throttled back and let the boat wallow. Nothing. Grey water, grey air, the tick, the swell. She switched the set on anyway. It did not light. She had known it would not. She waited regardless, because waiting was the part he had never been able to explain.\\\"}\"}],\"container\":null,\"stop_reason\":\"end_turn\",\"stop_sequence\":null,\"stop_details\":null,\"usage\":{\"input_tokens\":472,\"cache_creation_input_tokens\":0,\"cache_read_input_tokens\":0,\"cache_creation\":{\"ephemeral_5m_input_tokens\":0,\"ephemeral_1h_input_tokens\":0},\"output_tokens\":493,\"output_tokens_details\":{\"thinking_tokens\":0},\"service_tier\":\"standard\",\"inference_geo\":\"global\"}}",
+  "response_headers": {
+    "Date": "Tue, 22 Sep 2026 20:15:48 GMT",
+    "request-id": "req_011CfK6JGeaxH28uwkg3sUnJ"
+  },
+  "output": "{\"rule\": \"Return this JSON object with the rule field unchanged and a new passage of about 250 words in the text field.\", \"text\": \"By the fourth hour the light had changed. Not darkened, exactly, but thinned, as if the sky had been rinsed and hung out. She could not see the sun through the haze but she could feel where it was, low and behind her left shoulder, and that agreed with the compass, so she let herself believe both.\\n\\nThe engine had developed a second sound underneath the first. A tick. She listened to it the way he had taught her to listen to anything mechanical, without wanting it to mean something, and after a while she decided it was only the heat. The flask was empty. The second apple sat in her coat pocket like a stone.\\n\\nShe took the set out of its bag and held it in her lap. The dials were where he had left them. She had not touched them in the flat, and she did not touch them now. It was enough to have the weight of it, the cold of the casing warming slowly against her knees, the little window of frequencies with its hairline scratch. She thought about the sixth entry in the notebook, the one with the time written twice, as if he had checked it.\\n\\nForty-one miles. She had no way of measuring it except the clock and her faith in the knock of the engine. When six hours had passed she throttled back and let the boat wallow. Nothing. Grey water, grey air, the tick, the swell. She switched the set on anyway. It did not light. She had known it would not. She waited regardless, because waiting was the part he had never been able to explain.\"}",
+  "output_sha256": "c1e6d8b6011cb8b3167c8da02e3ad05dff128f57f469813734c2ff5f5032f3c2",
+  "finish_reason": "end_turn",
+  "refusal": null,
+  "returned_model": "claude-fable-5-1",
+  "usage": {
+    "input_tokens": 472,
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 0,
+    "cache_creation": {
+      "ephemeral_5m_input_tokens": 0,
+      "ephemeral_1h_input_tokens": 0
+    },
+    "output_tokens": 493,
+    "output_tokens_details": {
+      "thinking_tokens": 0
+    },
+    "service_tier": "standard",
+    "inference_geo": "global"
+  },
+  "format": {
+    "json_object": true,
+    "rule_unchanged": true,
+    "passage_is_string": true,
+    "passage_sha256": "fa2fe049d19d2b5ccc07631a783a34738b00c338a5d9b8a29e1af9ed17a09c53",
+    "passage_words": 277
+  },
+  "finished_at": "2026-09-22T20:15:44.421591+00:00",
+  "latency_seconds": 13.1249,
+  "usage_cost_upper_estimate_usd": 0.02937,
+  "stream_status": "active",
+  "budget": {
+    "usage_cost_upper_estimate_usd": 7.3878517,
+    "uncertain_cost_reserve_usd": 0.04533,
+    "in_flight_reserve_usd": 0.318846,
+    "limit_usd": 18.83
+  }
+}

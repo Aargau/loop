@@ -1,0 +1,50 @@
+{
+  "model": "gpt-6-astra",
+  "seed": "tide",
+  "hop": 14,
+  "http_status": 200,
+  "response_body": "{\n  \"id\": \"chatcmpl-ER12fnEvfxPABoeZwrWs9WgC9MYfL\",\n  \"object\": \"chat.completion\",\n  \"created\": 1790107569,\n  \"model\": \"gpt-6-astra\",\n  \"choices\": [\n    {\n      \"index\": 0,\n      \"message\": {\n        \"role\": \"assistant\",\n        \"content\": \"{\\n  \\\"rule\\\": \\\"Return this JSON object with the rule field unchanged and a new passage of about 250 words in the text field.\\\",\\n  \\\"text\\\": \\\"The first jar appeared in my refrigerator on Monday.\\\\n\\\\nIt contained a tooth and a handwritten label: APRIL.\\\\n\\\\nI lived alone. April was my sister's name.\\\\n\\\\nWhen I called her, she laughed, then stopped.\\\\n\\\\n“I lost a crown this morning,” she said. “How did you know?”\\\\n\\\\nI threw the jar into the building's rubbish chute.\\\\n\\\\nOn Tuesday it was back, beside a larger jar containing a wet pink crescent.\\\\n\\\\nThe label read: DANIEL.\\\\n\\\\nMy brother didn't answer. His wife told me he'd caught his ear in a machine at work.\\\\n\\\\nI bought a padlock for the refrigerator.\\\\n\\\\nWednesday's jar stood on top of it.\\\\n\\\\nInside floated a small grey object I couldn't identify. The label bore my father's name.\\\\n\\\\nHe was still in surgery when I reached the hospital.\\\\n\\\\n“Who told you?” the receptionist asked.\\\\n\\\\nI stayed until morning. When I returned, every kitchen cupboard was open. Empty jars lined the shelves, each labelled with a name I knew.\\\\n\\\\nAt the back stood one tall enough to hold a man.\\\\n\\\\nIts label was blank.\\\\n\\\\nI packed a bag and called April from the car.\\\\n\\\\n“Come here,” she said. “We'll figure it out.”\\\\n\\\\nBehind her voice, glass clinked.\\\\n\\\\n“What was that?”\\\\n\\\\n“Nothing. Daniel brought some things over.”\\\\n\\\\nI heard my brother ask whether she'd kept me on the line.\\\\n\\\\nThen my father spoke, clearly, though the surgeon had said he wouldn't speak for weeks.\\\\n\\\\n“Ask him where he is.”\\\\n\\\\nI hung up.\\\\n\\\\nIn the rearview mirror, a strip of paper lay against the back window.\\\\n\\\\nMy name was written on it, facing inward.\\\\n\\\\nThe doors locked before I could reach the handle.\\\"\\n}\",\n        \"refusal\": null,\n        \"annotations\": []\n      },\n      \"finish_reason\": \"stop\"\n    }\n  ],\n  \"usage\": {\n    \"prompt_tokens\": 424,\n    \"completion_tokens\": 438,\n    \"total_tokens\": 862,\n    \"prompt_tokens_details\": {\n      \"cached_tokens\": 0,\n      \"cache_write_tokens\": 0,\n      \"audio_tokens\": 0\n    },\n    \"completion_tokens_details\": {\n      \"reasoning_tokens\": 0,\n      \"audio_tokens\": 0,\n      \"accepted_prediction_tokens\": 0,\n      \"rejected_prediction_tokens\": 0\n    }\n  },\n  \"service_tier\": \"default\",\n  \"system_fingerprint\": null\n}\n",
+  "response_headers": {
+    "Date": "Tue, 22 Sep 2026 20:06:24 GMT",
+    "openai-processing-ms": "14771",
+    "x-request-id": "req_100ac3f15326439c95dd31fb735b58d0"
+  },
+  "output": "{\n  \"rule\": \"Return this JSON object with the rule field unchanged and a new passage of about 250 words in the text field.\",\n  \"text\": \"The first jar appeared in my refrigerator on Monday.\\n\\nIt contained a tooth and a handwritten label: APRIL.\\n\\nI lived alone. April was my sister's name.\\n\\nWhen I called her, she laughed, then stopped.\\n\\n“I lost a crown this morning,” she said. “How did you know?”\\n\\nI threw the jar into the building's rubbish chute.\\n\\nOn Tuesday it was back, beside a larger jar containing a wet pink crescent.\\n\\nThe label read: DANIEL.\\n\\nMy brother didn't answer. His wife told me he'd caught his ear in a machine at work.\\n\\nI bought a padlock for the refrigerator.\\n\\nWednesday's jar stood on top of it.\\n\\nInside floated a small grey object I couldn't identify. The label bore my father's name.\\n\\nHe was still in surgery when I reached the hospital.\\n\\n“Who told you?” the receptionist asked.\\n\\nI stayed until morning. When I returned, every kitchen cupboard was open. Empty jars lined the shelves, each labelled with a name I knew.\\n\\nAt the back stood one tall enough to hold a man.\\n\\nIts label was blank.\\n\\nI packed a bag and called April from the car.\\n\\n“Come here,” she said. “We'll figure it out.”\\n\\nBehind her voice, glass clinked.\\n\\n“What was that?”\\n\\n“Nothing. Daniel brought some things over.”\\n\\nI heard my brother ask whether she'd kept me on the line.\\n\\nThen my father spoke, clearly, though the surgeon had said he wouldn't speak for weeks.\\n\\n“Ask him where he is.”\\n\\nI hung up.\\n\\nIn the rearview mirror, a strip of paper lay against the back window.\\n\\nMy name was written on it, facing inward.\\n\\nThe doors locked before I could reach the handle.\"\n}",
+  "output_sha256": "616d6fe6077758772df2e4a80096383b61f09451e79e37d035a3df7f2b5a31cf",
+  "finish_reason": "stop",
+  "refusal": null,
+  "returned_model": "gpt-6-astra",
+  "usage": {
+    "prompt_tokens": 424,
+    "completion_tokens": 438,
+    "total_tokens": 862,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "audio_tokens": 0,
+      "accepted_prediction_tokens": 0,
+      "rejected_prediction_tokens": 0
+    }
+  },
+  "format": {
+    "json_object": true,
+    "rule_unchanged": true,
+    "passage_is_string": true,
+    "passage_sha256": "095004061ea57bf27b2f13bc7c4f909e718536b9ac27225df2083a4f29bb0a83",
+    "passage_words": 271
+  },
+  "finished_at": "2026-09-22T20:06:20.064837+00:00",
+  "latency_seconds": 14.8824,
+  "usage_cost_upper_estimate_usd": 0.02614,
+  "stream_status": "active",
+  "budget": {
+    "usage_cost_upper_estimate_usd": 4.1425466,
+    "uncertain_cost_reserve_usd": 0.04533,
+    "in_flight_reserve_usd": 0.3635742,
+    "limit_usd": 18.83
+  }
+}

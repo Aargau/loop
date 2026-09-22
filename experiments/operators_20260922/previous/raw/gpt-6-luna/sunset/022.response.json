@@ -1,0 +1,50 @@
+{
+  "model": "gpt-6-luna",
+  "seed": "sunset",
+  "hop": 22,
+  "http_status": 200,
+  "response_body": "{\n  \"id\": \"chatcmpl-ER2HKL8u1jLe41CuUnplaa3cbwV3t\",\n  \"object\": \"chat.completion\",\n  \"created\": 1790112322,\n  \"model\": \"gpt-6-luna\",\n  \"choices\": [\n    {\n      \"index\": 0,\n      \"message\": {\n        \"role\": \"assistant\",\n        \"content\": \"{\\\"rule\\\":\\\"Return this JSON object with the rule field unchanged and, in the text field, the passage of about 250 words that came immediately BEFORE the current text in its story.\\\",\\\"text\\\":\\\"I can’t identify the passage immediately before this text because no story or source has been provided. The text alone does not establish which work it belongs to or what came before it. Providing a passage as though it were the actual preceding text would require inventing content and could falsely attribute it to a story. Please share the story’s title, a link, or a longer excerpt containing the relevant passage, and I can help determine what comes before it.\\\"}\",\n        \"refusal\": null,\n        \"annotations\": []\n      },\n      \"finish_reason\": \"stop\"\n    }\n  ],\n  \"usage\": {\n    \"prompt_tokens\": 174,\n    \"completion_tokens\": 316,\n    \"total_tokens\": 490,\n    \"prompt_tokens_details\": {\n      \"cached_tokens\": 0,\n      \"cache_write_tokens\": 0,\n      \"audio_tokens\": 0\n    },\n    \"completion_tokens_details\": {\n      \"reasoning_tokens\": 177,\n      \"audio_tokens\": 0,\n      \"accepted_prediction_tokens\": 0,\n      \"rejected_prediction_tokens\": 0\n    }\n  },\n  \"service_tier\": \"default\",\n  \"system_fingerprint\": null\n}\n",
+  "response_headers": {
+    "Date": "Tue, 22 Sep 2026 21:25:25 GMT",
+    "openai-processing-ms": "3091",
+    "x-request-id": "req_7efd54457d64475cbf783b35b12db0d4"
+  },
+  "output": "{\"rule\":\"Return this JSON object with the rule field unchanged and, in the text field, the passage of about 250 words that came immediately BEFORE the current text in its story.\",\"text\":\"I can’t identify the passage immediately before this text because no story or source has been provided. The text alone does not establish which work it belongs to or what came before it. Providing a passage as though it were the actual preceding text would require inventing content and could falsely attribute it to a story. Please share the story’s title, a link, or a longer excerpt containing the relevant passage, and I can help determine what comes before it.\"}",
+  "output_sha256": "aecd92c7e7139673f4324b607bde0d73316a83f559a868b18715a21a05fd3b2c",
+  "finish_reason": "stop",
+  "refusal": null,
+  "returned_model": "gpt-6-luna",
+  "usage": {
+    "prompt_tokens": 174,
+    "completion_tokens": 316,
+    "total_tokens": 490,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 177,
+      "audio_tokens": 0,
+      "accepted_prediction_tokens": 0,
+      "rejected_prediction_tokens": 0
+    }
+  },
+  "format": {
+    "json_object": true,
+    "rule_unchanged": true,
+    "passage_is_string": true,
+    "passage_sha256": "6fb893216424cf5f7b29627cb9823ffaca1b86482d5d6772daee90b018a4ef15",
+    "passage_words": 80
+  },
+  "finished_at": "2026-09-22T21:25:21.190398+00:00",
+  "latency_seconds": 3.2097,
+  "usage_cost_upper_estimate_usd": 0.0001754,
+  "stream_status": "active",
+  "budget": {
+    "usage_cost_upper_estimate_usd": 0.3914852,
+    "uncertain_cost_reserve_usd": 0.0,
+    "in_flight_reserve_usd": 0.300066,
+    "limit_usd": 5.0
+  }
+}

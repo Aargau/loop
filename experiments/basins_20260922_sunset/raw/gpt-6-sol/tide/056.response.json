@@ -1,0 +1,50 @@
+{
+  "model": "gpt-6-sol",
+  "seed": "tide",
+  "hop": 56,
+  "http_status": 200,
+  "response_body": "{\n  \"id\": \"chatcmpl-ER14RK1sG3LAdrJDtaXm6nRTlzAoN\",\n  \"object\": \"chat.completion\",\n  \"created\": 1790107679,\n  \"model\": \"gpt-6-sol\",\n  \"choices\": [\n    {\n      \"index\": 0,\n      \"message\": {\n        \"role\": \"assistant\",\n        \"content\": \"{\\n  \\\"rule\\\": \\\"Return this JSON object with the rule field unchanged and a new passage of about 250 words in the text field.\\\",\\n  \\\"text\\\": \\\"Mara waited until the water fell below the crossbeam. The pale thing was a strip of canvas, caught on a nail. She let out a breath, but her sister was already climbing down the ladder.\\\\n\\\\n“Come back,” their mother called.\\\\n\\\\n“I can see the ledge.” Her sister’s voice rose from beneath the pier. “There’s a door.”\\\\n\\\\nMara passed the chart to their mother and followed. Barnacles scraped her palms as she lowered herself onto the narrow shelf of stone. In the shadows, her sister stood before a wooden hatch set into the seawall. Its brass lock was furred with salt.\\\\n\\\\nThe child’s key turned easily. Beyond the hatch lay a chamber that smelled of mud and old rope. Daylight entered through cracks overhead. Against one wall rested a small boat, its bow marked with their father’s initials.\\\\n\\\\nTheir mother called again, nearer this time. Mara lifted the boat’s cover. Beneath it were a coil of dry line, a lantern, and a tin box. Inside the box, wrapped in oilcloth, was a notebook.\\\\n\\\\nThe first page bore a date from the morning the boat vanished. In her father’s handwriting were three words: He is alive.\\\\n\\\\nHer sister read them over Mara’s shoulder. “The boy?”\\\\n\\\\nFrom outside came the child’s voice, asking why everyone had gone under the pier. Mara closed the notebook. Its remaining pages were thick with writing, but the tide had begun to turn. She took her sister’s hand, and together they climbed toward the light.\\\"\\n}\",\n        \"refusal\": null,\n        \"annotations\": []\n      },\n      \"finish_reason\": \"stop\"\n    }\n  ],\n  \"usage\": {\n    \"prompt_tokens\": 369,\n    \"completion_tokens\": 393,\n    \"total_tokens\": 762,\n    \"prompt_tokens_details\": {\n      \"cached_tokens\": 0,\n      \"cache_write_tokens\": 0,\n      \"audio_tokens\": 0\n    },\n    \"completion_tokens_details\": {\n      \"reasoning_tokens\": 21,\n      \"audio_tokens\": 0,\n      \"accepted_prediction_tokens\": 0,\n      \"rejected_prediction_tokens\": 0\n    }\n  },\n  \"service_tier\": \"default\",\n  \"system_fingerprint\": null\n}\n",
+  "response_headers": {
+    "Date": "Tue, 22 Sep 2026 20:08:05 GMT",
+    "openai-processing-ms": "5767",
+    "x-request-id": "req_562b2663e0774ecaad9c2562b3a57f58"
+  },
+  "output": "{\n  \"rule\": \"Return this JSON object with the rule field unchanged and a new passage of about 250 words in the text field.\",\n  \"text\": \"Mara waited until the water fell below the crossbeam. The pale thing was a strip of canvas, caught on a nail. She let out a breath, but her sister was already climbing down the ladder.\\n\\n“Come back,” their mother called.\\n\\n“I can see the ledge.” Her sister’s voice rose from beneath the pier. “There’s a door.”\\n\\nMara passed the chart to their mother and followed. Barnacles scraped her palms as she lowered herself onto the narrow shelf of stone. In the shadows, her sister stood before a wooden hatch set into the seawall. Its brass lock was furred with salt.\\n\\nThe child’s key turned easily. Beyond the hatch lay a chamber that smelled of mud and old rope. Daylight entered through cracks overhead. Against one wall rested a small boat, its bow marked with their father’s initials.\\n\\nTheir mother called again, nearer this time. Mara lifted the boat’s cover. Beneath it were a coil of dry line, a lantern, and a tin box. Inside the box, wrapped in oilcloth, was a notebook.\\n\\nThe first page bore a date from the morning the boat vanished. In her father’s handwriting were three words: He is alive.\\n\\nHer sister read them over Mara’s shoulder. “The boy?”\\n\\nFrom outside came the child’s voice, asking why everyone had gone under the pier. Mara closed the notebook. Its remaining pages were thick with writing, but the tide had begun to turn. She took her sister’s hand, and together they climbed toward the light.\"\n}",
+  "output_sha256": "34a17b0fd97a7169f807a91417dda8f8f3d9a5e04537cec0150acfe150c7be4a",
+  "finish_reason": "stop",
+  "refusal": null,
+  "returned_model": "gpt-6-sol",
+  "usage": {
+    "prompt_tokens": 369,
+    "completion_tokens": 393,
+    "total_tokens": 762,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 21,
+      "audio_tokens": 0,
+      "accepted_prediction_tokens": 0,
+      "rejected_prediction_tokens": 0
+    }
+  },
+  "format": {
+    "json_object": true,
+    "rule_unchanged": true,
+    "passage_is_string": true,
+    "passage_sha256": "547830e0534d92800156523bd86c751be76670acb5423ffd6d082b024b6caf0b",
+    "passage_words": 247
+  },
+  "finished_at": "2026-09-22T20:08:01.243924+00:00",
+  "latency_seconds": 5.8455,
+  "usage_cost_upper_estimate_usd": 0.004668,
+  "stream_status": "active",
+  "budget": {
+    "usage_cost_upper_estimate_usd": 4.7459494,
+    "uncertain_cost_reserve_usd": 0.04533,
+    "in_flight_reserve_usd": 0.5475995,
+    "limit_usd": 18.83
+  }
+}

@@ -1,0 +1,22 @@
+{
+  "started_at": "2026-09-22T21:25:18.727072+00:00",
+  "model": "claude-opus-5-5",
+  "seed": "sunset",
+  "hop": 26,
+  "endpoint": "https://api.anthropic.com/v1/messages",
+  "body": {
+    "model": "claude-opus-5-5",
+    "messages": [
+      {
+        "role": "user",
+        "content": "It looks like the roles got flipped. That message reads like something I'd write, but this is the start of our conversation, so there's no earlier message from me that it could be responding to. I'm Claude, the assistant, and you're the user.\n\nA few possibilities:\n\n- **You pasted the wrong thing.** Maybe you copied text from another chat by accident. Feel free to paste what you meant to send.\n- **You're testing how I handle role confusion.** Happy to talk about that, including how I keep track of who's who in a conversation.\n- **You're sharing a response you got elsewhere** and want my take on it. Just let me know the context.\n\nWhat would you like to do?"
+      }
+    ],
+    "max_tokens": 4096,
+    "output_config": {
+      "effort": "low"
+    }
+  },
+  "state_sha256": "5ee80eb163cb01e2ea03dc04d35d1c3ab3b4b15d4ab433afcddf1bbc9a5a54be",
+  "reserved_cost_usd": 0.086616
+}

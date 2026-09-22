@@ -1,0 +1,50 @@
+{
+  "model": "gpt-6-sol",
+  "seed": "sunset_replacement",
+  "hop": 7,
+  "http_status": 200,
+  "response_body": "{\n  \"id\": \"chatcmpl-ER1gvmt5ZWy97zEiX4xZhJoznSQLI\",\n  \"object\": \"chat.completion\",\n  \"created\": 1790110065,\n  \"model\": \"gpt-6-sol\",\n  \"choices\": [\n    {\n      \"index\": 0,\n      \"message\": {\n        \"role\": \"assistant\",\n        \"content\": \"{\\n  \\\"rule\\\": \\\"Return this JSON object with the rule field unchanged and a new passage of about 250 words in the text field.\\\",\\n  \\\"text\\\": \\\"By morning, the fog had swallowed the harbor. Mara could hear the boats at their moorings but could not see the nearest one. She went up to the light with a can of oil and found Ada asleep in a chair, her shawl pulled over her knees.\\\\n\\\\nThe flame burned steadily. On the sill beside it lay a folded scrap of paper.\\\\n\\\\n“I found that behind the reservoir,” Ada said, waking as Mara picked it up. “It must have been there for years.”\\\\n\\\\nThe paper held a list of dates and names, written in Elias’s brother’s hand. Beside each name was a number. Mara recognized two of the boats lost on the reef the previous winter.\\\\n\\\\nThey took the list to Elias. He studied it at the kitchen table, then turned it over. On the back, his brother had written three words: Ask about payments.\\\\n\\\\nAt the constable’s office, the harbor master denied knowing anything about the list. The constable set the torn ledger beside it and asked him to look again. After a long while, the man named the merchant who had paid him to keep the light dark on certain nights.\\\\n\\\\nMara left before he finished. She needed air, and the fog was lifting. From the quay she could see the lamp above the harbor, still burning though the sun had risen. Elias came to stand beside her. Neither of them spoke of his brother. They watched a boat come in between the markers and waited until its crew stepped safely ashore.\\\"\\n}\",\n        \"refusal\": null,\n        \"annotations\": []\n      },\n      \"finish_reason\": \"stop\"\n    }\n  ],\n  \"usage\": {\n    \"prompt_tokens\": 363,\n    \"completion_tokens\": 388,\n    \"total_tokens\": 751,\n    \"prompt_tokens_details\": {\n      \"cached_tokens\": 0,\n      \"cache_write_tokens\": 0,\n      \"audio_tokens\": 0\n    },\n    \"completion_tokens_details\": {\n      \"reasoning_tokens\": 31,\n      \"audio_tokens\": 0,\n      \"accepted_prediction_tokens\": 0,\n      \"rejected_prediction_tokens\": 0\n    }\n  },\n  \"service_tier\": \"default\",\n  \"system_fingerprint\": null\n}\n",
+  "response_headers": {
+    "Date": "Tue, 22 Sep 2026 20:47:50 GMT",
+    "openai-processing-ms": "5320",
+    "x-request-id": "req_c14a1be42d65417d8fc88db164b1eda7"
+  },
+  "output": "{\n  \"rule\": \"Return this JSON object with the rule field unchanged and a new passage of about 250 words in the text field.\",\n  \"text\": \"By morning, the fog had swallowed the harbor. Mara could hear the boats at their moorings but could not see the nearest one. She went up to the light with a can of oil and found Ada asleep in a chair, her shawl pulled over her knees.\\n\\nThe flame burned steadily. On the sill beside it lay a folded scrap of paper.\\n\\n“I found that behind the reservoir,” Ada said, waking as Mara picked it up. “It must have been there for years.”\\n\\nThe paper held a list of dates and names, written in Elias’s brother’s hand. Beside each name was a number. Mara recognized two of the boats lost on the reef the previous winter.\\n\\nThey took the list to Elias. He studied it at the kitchen table, then turned it over. On the back, his brother had written three words: Ask about payments.\\n\\nAt the constable’s office, the harbor master denied knowing anything about the list. The constable set the torn ledger beside it and asked him to look again. After a long while, the man named the merchant who had paid him to keep the light dark on certain nights.\\n\\nMara left before he finished. She needed air, and the fog was lifting. From the quay she could see the lamp above the harbor, still burning though the sun had risen. Elias came to stand beside her. Neither of them spoke of his brother. They watched a boat come in between the markers and waited until its crew stepped safely ashore.\"\n}",
+  "output_sha256": "bc7ee09b7fed6cff3e34158fef080c9daded177615c33f3aaea6504171a256b6",
+  "finish_reason": "stop",
+  "refusal": null,
+  "returned_model": "gpt-6-sol",
+  "usage": {
+    "prompt_tokens": 363,
+    "completion_tokens": 388,
+    "total_tokens": 751,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 31,
+      "audio_tokens": 0,
+      "accepted_prediction_tokens": 0,
+      "rejected_prediction_tokens": 0
+    }
+  },
+  "format": {
+    "json_object": true,
+    "rule_unchanged": true,
+    "passage_is_string": true,
+    "passage_sha256": "b242043aadb152965c6a27ef07729519a87a8394ede474c8a81463480cb3295a",
+    "passage_words": 254
+  },
+  "finished_at": "2026-09-22T20:47:46.311413+00:00",
+  "latency_seconds": 5.4678,
+  "usage_cost_upper_estimate_usd": 0.004606,
+  "stream_status": "active",
+  "budget": {
+    "usage_cost_upper_estimate_usd": 0.032212,
+    "uncertain_cost_reserve_usd": 0.0,
+    "in_flight_reserve_usd": 0.0,
+    "limit_usd": 3.0
+  }
+}

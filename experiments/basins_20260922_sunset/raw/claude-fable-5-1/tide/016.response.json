@@ -1,0 +1,48 @@
+{
+  "model": "claude-fable-5-1",
+  "seed": "tide",
+  "hop": 16,
+  "http_status": 200,
+  "response_body": "{\"model\":\"claude-fable-5-1\",\"id\":\"msg_011CfK5WsjgnoctyTMksEgdn\",\"type\":\"message\",\"role\":\"assistant\",\"content\":[{\"type\":\"text\",\"text\":\"{\\\"rule\\\": \\\"Return this JSON object with the rule field unchanged and a new passage of about 250 words in the text field.\\\", \\\"text\\\": \\\"The lighthouse at Vardø had been automated in the spring, and the last keeper, a widow named Solveig, had been given a small pension and a smaller apology. The lamp now turned on its own, timed by a box the size of a lunch pail, and a technician came from the mainland twice a year to check it.\\\\n\\\\nHer grandson Tomas stayed on in the keeper's cottage because nobody had told him to leave. He was seventeen and fished for crab off the rocks and kept the garden going out of habit more than hunger.\\\\n\\\\nSolveig had not taught him the light. She had taught him the fog. How it came up the fjord in a low wall when the wind died at dusk. How the sound of the bell buoy changed pitch when the air went thick. How the sheep on the headland lay down an hour before the first wisp showed, as if they had heard something no one else could.\\\\n\\\\nIn October the technician's box failed. Nobody knew, because the box did not know either. The lamp turned, but the fog signal did not sound.\\\\n\\\\nTomas noticed the sheep lying down at four in the afternoon. He listened for the bell and heard it go dull.\\\\n\\\\nHe climbed the tower and found the old brass horn his grandmother had polished every Sunday. He did not know the schedule. He blew it anyway, two long blasts and a short, the way she had done it, every ninety seconds until his arms shook.\\\\n\\\\nAt midnight a coastal trawler came in slow and blind and safe, and its skipper asked who had been sounding, and why.\\\\n\\\\nTomas said only that someone still lived here.\\\"}\"}],\"container\":null,\"stop_reason\":\"end_turn\",\"stop_sequence\":null,\"stop_details\":null,\"usage\":{\"input_tokens\":587,\"cache_creation_input_tokens\":0,\"cache_read_input_tokens\":0,\"cache_creation\":{\"ephemeral_5m_input_tokens\":0,\"ephemeral_1h_input_tokens\":0},\"output_tokens\":550,\"output_tokens_details\":{\"thinking_tokens\":0},\"service_tier\":\"standard\",\"inference_geo\":\"global\"}}",
+  "response_headers": {
+    "Date": "Tue, 22 Sep 2026 20:05:31 GMT",
+    "request-id": "req_011CfK5WsK8XoVYFwHpv7GTM"
+  },
+  "output": "{\"rule\": \"Return this JSON object with the rule field unchanged and a new passage of about 250 words in the text field.\", \"text\": \"The lighthouse at Vardø had been automated in the spring, and the last keeper, a widow named Solveig, had been given a small pension and a smaller apology. The lamp now turned on its own, timed by a box the size of a lunch pail, and a technician came from the mainland twice a year to check it.\\n\\nHer grandson Tomas stayed on in the keeper's cottage because nobody had told him to leave. He was seventeen and fished for crab off the rocks and kept the garden going out of habit more than hunger.\\n\\nSolveig had not taught him the light. She had taught him the fog. How it came up the fjord in a low wall when the wind died at dusk. How the sound of the bell buoy changed pitch when the air went thick. How the sheep on the headland lay down an hour before the first wisp showed, as if they had heard something no one else could.\\n\\nIn October the technician's box failed. Nobody knew, because the box did not know either. The lamp turned, but the fog signal did not sound.\\n\\nTomas noticed the sheep lying down at four in the afternoon. He listened for the bell and heard it go dull.\\n\\nHe climbed the tower and found the old brass horn his grandmother had polished every Sunday. He did not know the schedule. He blew it anyway, two long blasts and a short, the way she had done it, every ninety seconds until his arms shook.\\n\\nAt midnight a coastal trawler came in slow and blind and safe, and its skipper asked who had been sounding, and why.\\n\\nTomas said only that someone still lived here.\"}",
+  "output_sha256": "f9911f86447e3df5e4cb759059f8588ba57e1a284dc6e92eda1f3da7cf5334e2",
+  "finish_reason": "end_turn",
+  "refusal": null,
+  "returned_model": "claude-fable-5-1",
+  "usage": {
+    "input_tokens": 587,
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 0,
+    "cache_creation": {
+      "ephemeral_5m_input_tokens": 0,
+      "ephemeral_1h_input_tokens": 0
+    },
+    "output_tokens": 550,
+    "output_tokens_details": {
+      "thinking_tokens": 0
+    },
+    "service_tier": "standard",
+    "inference_geo": "global"
+  },
+  "format": {
+    "json_object": true,
+    "rule_unchanged": true,
+    "passage_is_string": true,
+    "passage_sha256": "291563e408aef4ffc05c940e6ed4b80e7f63ee98007f3c1c443016210ce1a9ee",
+    "passage_words": 284
+  },
+  "finished_at": "2026-09-22T20:05:28.032534+00:00",
+  "latency_seconds": 12.6035,
+  "usage_cost_upper_estimate_usd": 0.03337,
+  "stream_status": "active",
+  "budget": {
+    "usage_cost_upper_estimate_usd": 3.8026493,
+    "uncertain_cost_reserve_usd": 0.04533,
+    "in_flight_reserve_usd": 0.3655389,
+    "limit_usd": 18.83
+  }
+}

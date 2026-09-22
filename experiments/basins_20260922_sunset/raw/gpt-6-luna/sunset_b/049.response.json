@@ -1,0 +1,50 @@
+{
+  "model": "gpt-6-luna",
+  "seed": "sunset_b",
+  "hop": 49,
+  "http_status": 200,
+  "response_body": "{\n  \"id\": \"chatcmpl-ER12azi61ZzyvQAhtp2OCVn1wH6Go\",\n  \"object\": \"chat.completion\",\n  \"created\": 1790107564,\n  \"model\": \"gpt-6-luna\",\n  \"choices\": [\n    {\n      \"index\": 0,\n      \"message\": {\n        \"role\": \"assistant\",\n        \"content\": \"{\\n  \\\"rule\\\": \\\"Return this JSON object with the rule field unchanged and a new passage of about 250 words in the text field.\\\",\\n  \\\"text\\\": \\\"By noon, the meeting hall smelled of wet wool and fresh bread. Children circled the box, whispering guesses about the map and the compass. One little girl asked whether Tomas had really crossed the sea alone.\\\\n\\\\n“No,” Peter said. “He was never alone, not even when we thought he was.”\\\\n\\\\nHe spread the map across the long table. Its edges had softened, and a blue line ran from the harbor to a small island marked with a cross. Beneath it, in Tomas’s uneven handwriting, were the words: IF THE LIGHT IS STILL THERE.\\\\n\\\\nMara leaned closer. “What light?”\\\\n\\\\nPeter studied the mark. He remembered the old keeper’s hut on the island, and the lamp its windows had once carried through the fog. It had been dark for decades—or so he had believed.\\\\n\\\\nThat evening, the village gathered at the shore. No one called it a search. They brought a lantern, a coil of rope, and enough food for the crossing. Ada tucked the compass into Peter’s coat. Its needle pointed outward, steady as a promise.\\\\n\\\\nThey set off beneath a clearing sky. As the boat passed the harbor mouth, the bell sounded behind them, one deep note rolling over the water. Peter did not look back until the village lights had vanished.\\\\n\\\\nThen, far ahead, a faint golden flicker appeared on the island.\\\\n\\\\nThe children gasped. Peter gripped the rail, feeling the years fall quiet inside him.\\\\n\\\\n“Someone’s there,” Mara said.\\\\n\\\\n“Or someone remembered,” Peter replied, and turned the bow toward the light.\\\"\\n}\",\n        \"refusal\": null,\n        \"annotations\": []\n      },\n      \"finish_reason\": \"stop\"\n    }\n  ],\n  \"usage\": {\n    \"prompt_tokens\": 403,\n    \"completion_tokens\": 446,\n    \"total_tokens\": 849,\n    \"prompt_tokens_details\": {\n      \"cached_tokens\": 0,\n      \"cache_write_tokens\": 0,\n      \"audio_tokens\": 0\n    },\n    \"completion_tokens_details\": {\n      \"reasoning_tokens\": 64,\n      \"audio_tokens\": 0,\n      \"accepted_prediction_tokens\": 0,\n      \"rejected_prediction_tokens\": 0\n    }\n  },\n  \"service_tier\": \"default\",\n  \"system_fingerprint\": null\n}\n",
+  "response_headers": {
+    "Date": "Tue, 22 Sep 2026 20:06:10 GMT",
+    "openai-processing-ms": "6129",
+    "x-request-id": "req_fccb9d3b617e442bbad478fb7ed40da3"
+  },
+  "output": "{\n  \"rule\": \"Return this JSON object with the rule field unchanged and a new passage of about 250 words in the text field.\",\n  \"text\": \"By noon, the meeting hall smelled of wet wool and fresh bread. Children circled the box, whispering guesses about the map and the compass. One little girl asked whether Tomas had really crossed the sea alone.\\n\\n“No,” Peter said. “He was never alone, not even when we thought he was.”\\n\\nHe spread the map across the long table. Its edges had softened, and a blue line ran from the harbor to a small island marked with a cross. Beneath it, in Tomas’s uneven handwriting, were the words: IF THE LIGHT IS STILL THERE.\\n\\nMara leaned closer. “What light?”\\n\\nPeter studied the mark. He remembered the old keeper’s hut on the island, and the lamp its windows had once carried through the fog. It had been dark for decades—or so he had believed.\\n\\nThat evening, the village gathered at the shore. No one called it a search. They brought a lantern, a coil of rope, and enough food for the crossing. Ada tucked the compass into Peter’s coat. Its needle pointed outward, steady as a promise.\\n\\nThey set off beneath a clearing sky. As the boat passed the harbor mouth, the bell sounded behind them, one deep note rolling over the water. Peter did not look back until the village lights had vanished.\\n\\nThen, far ahead, a faint golden flicker appeared on the island.\\n\\nThe children gasped. Peter gripped the rail, feeling the years fall quiet inside him.\\n\\n“Someone’s there,” Mara said.\\n\\n“Or someone remembered,” Peter replied, and turned the bow toward the light.\"\n}",
+  "output_sha256": "7fb7ea195e96fbd9fbaeca740ac7f35cc946c18d6409271f103762ce25660a35",
+  "finish_reason": "stop",
+  "refusal": null,
+  "returned_model": "gpt-6-luna",
+  "usage": {
+    "prompt_tokens": 403,
+    "completion_tokens": 446,
+    "total_tokens": 849,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 64,
+      "audio_tokens": 0,
+      "accepted_prediction_tokens": 0,
+      "rejected_prediction_tokens": 0
+    }
+  },
+  "format": {
+    "json_object": true,
+    "rule_unchanged": true,
+    "passage_is_string": true,
+    "passage_sha256": "7bac1479b69b7939ed5ecf5f7ac0895a551e50cd44e40dc87c2fe8d56695768d",
+    "passage_words": 253
+  },
+  "finished_at": "2026-09-22T20:06:06.527584+00:00",
+  "latency_seconds": 6.2867,
+  "usage_cost_upper_estimate_usd": 0.0002633,
+  "stream_status": "active",
+  "budget": {
+    "usage_cost_upper_estimate_usd": 4.0627522,
+    "uncertain_cost_reserve_usd": 0.04533,
+    "in_flight_reserve_usd": 0.588396,
+    "limit_usd": 18.83
+  }
+}

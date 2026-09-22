@@ -1,0 +1,22 @@
+{
+  "started_at": "2026-09-22T20:00:06.742596+00:00",
+  "model": "claude-opus-5-5",
+  "seed": "tide",
+  "hop": 11,
+  "endpoint": "https://api.anthropic.com/v1/messages",
+  "body": {
+    "model": "claude-opus-5-5",
+    "messages": [
+      {
+        "role": "user",
+        "content": "```json\n{\"rule\": \"Return this JSON object with the rule field unchanged and a new passage of about 250 words in the text field.\", \"text\": \"The sapling arrived on the supply boat two weeks later, its roots bundled in sacking and its thin branches tied with twine. The boatman handed it up without a word, as though he had carried stranger things across the strait, and the girl held it against her chest the whole way up the path. Her father had already mixed seaweed and ash into the soil by the door. Together they lowered the tree into the hole, and he pressed the earth around it with his palms, slowly, the way he used to smooth the blankets over her when she was small. That night a gale came in from the west. The girl lay awake listening to the shutters bang and imagined the sapling snapped in two, its roots torn loose and flung into the sea. At first light she ran outside barefoot. The tree was bent nearly to the ground, but it held. Her father had driven a stake beside it sometime in the dark and bound the trunk with strips of old sailcloth. He was sitting on the step with his coat still wet, watching the branches shiver. Through the long summer she carried water to it from the rain barrel, and he checked the bindings every evening before he climbed the tower. In autumn it dropped its few leaves onto the stones. The next spring, when the mainland turned green across the water, the girl found a single white blossom on the lowest branch. She did not pick it. She went inside, took the tin from the shelf, and set it on the table beside her father's cup.\"}\n```"
+      }
+    ],
+    "max_tokens": 4096,
+    "output_config": {
+      "effort": "low"
+    }
+  },
+  "state_sha256": "ec1eec534f0ea19b0ddf6bcdd5439e0dfd430263b933b5e2e756f16221174022",
+  "reserved_cost_usd": 0.090288
+}

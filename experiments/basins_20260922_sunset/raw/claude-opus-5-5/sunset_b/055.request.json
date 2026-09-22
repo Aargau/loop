@@ -1,0 +1,22 @@
+{
+  "started_at": "2026-09-22T20:20:55.233038+00:00",
+  "model": "claude-opus-5-5",
+  "seed": "sunset_b",
+  "hop": 55,
+  "endpoint": "https://api.anthropic.com/v1/messages",
+  "body": {
+    "model": "claude-opus-5-5",
+    "messages": [
+      {
+        "role": "user",
+        "content": "```json\n{\"rule\": \"Return this JSON object with the rule field unchanged and a new passage of about 250 words in the text field.\", \"text\": \"Down in the harbor, the widow Maren Holt was mending nets by lantern when the first beam slid across the water. She dropped her needle and called to her neighbors, and one by one doors opened along the quay. Children ran barefoot onto the cold stones, pointing, while fishermen who had not smiled since autumn stood with their caps in their hands. Far out beyond the Needle Rocks, a small boat named the Tern had been drifting with a broken compass, her crew arguing over which faint glow was the village and which was only a star. When the golden sweep passed over them, the skipper laughed aloud and turned the tiller for home. By midnight the Tern was tied safely at the dock, and her crew climbed the cliff path with a basket of herring as thanks. They found Wren asleep on a coil of rope beside the lamp, soot on her cheeks, and Petter keeping watch in his father's old chair. Through the rest of that winter the light never failed. Wren learned to read the barometer and to smell a storm before it arrived. Petter wrote to the shipping company once more, but this time his letter did not ask for a replacement. Instead, he requested that a new name be entered in the official register of keepers. In early spring a reply arrived with a brass badge wrapped in oilcloth. Wren pinned it to her coat, climbed the hundred and twelve steps, and lit the lamp as the sun went down.\"}\n```"
+      }
+    ],
+    "max_tokens": 4096,
+    "output_config": {
+      "effort": "low"
+    }
+  },
+  "state_sha256": "d6d42dec54c1237569c675dfbc904ead872f7d0d75d6e2c58873ff58b44ef9e2",
+  "reserved_cost_usd": 0.090064
+}

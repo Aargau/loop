@@ -1,0 +1,48 @@
+{
+  "model": "claude-fable-5-1",
+  "seed": "tide",
+  "hop": 35,
+  "http_status": 200,
+  "response_body": "{\"model\":\"claude-fable-5-1\",\"id\":\"msg_011CfK6S8JXB7zig1UbjNY7S\",\"type\":\"message\",\"role\":\"assistant\",\"content\":[{\"type\":\"text\",\"text\":\"{\\\"rule\\\": \\\"Return this JSON object with the rule field unchanged and a new passage of about 250 words in the text field.\\\", \\\"text\\\": \\\"The boat touched something before she saw it. A soft check, then a scrape along the hull, and the bow swung a few degrees as if nudged by a hand. She stood, holding the gunwale, and looked down. Stone. Pale, flat, close enough under the surface that she could have stepped onto it, and running away from her in a line too straight to be anything the sea had made.\\\\n\\\\nThe light was above her now. Not a lamp after all, or not only. A glass housing on an iron post, the glass gone milky with salt, and inside it a flame that did not flicker. She waited for the wind to take it. The wind did not.\\\\n\\\\nShe made the painter fast to a ring set into the stone. It took her weight without complaint, and she noticed, in the way she had learned to notice things, that there was no rust on it. The sound came a third time, closer, and she understood at last that it was not coming from the light or the water. It was coming from further in, along the line of stone, from whatever the post had been built to mark.\\\\n\\\\nHe had told her she would know it when she reached it. He had not told her what to do next. She thought of his hands folding the chart, the careful way he had not met her eyes. The mind fills the quiet. She stepped onto the stone and began to walk, and the sea closed up behind her as though the boat had never been there.\\\"}\"}],\"container\":null,\"stop_reason\":\"end_turn\",\"stop_sequence\":null,\"stop_details\":null,\"usage\":{\"input_tokens\":488,\"cache_creation_input_tokens\":0,\"cache_read_input_tokens\":0,\"cache_creation\":{\"ephemeral_5m_input_tokens\":0,\"ephemeral_1h_input_tokens\":0},\"output_tokens\":456,\"output_tokens_details\":{\"thinking_tokens\":0},\"service_tier\":\"standard\",\"inference_geo\":\"global\"}}",
+  "response_headers": {
+    "Date": "Tue, 22 Sep 2026 20:17:31 GMT",
+    "request-id": "req_011CfK6S7pV8Ynjz5dvUzusd"
+  },
+  "output": "{\"rule\": \"Return this JSON object with the rule field unchanged and a new passage of about 250 words in the text field.\", \"text\": \"The boat touched something before she saw it. A soft check, then a scrape along the hull, and the bow swung a few degrees as if nudged by a hand. She stood, holding the gunwale, and looked down. Stone. Pale, flat, close enough under the surface that she could have stepped onto it, and running away from her in a line too straight to be anything the sea had made.\\n\\nThe light was above her now. Not a lamp after all, or not only. A glass housing on an iron post, the glass gone milky with salt, and inside it a flame that did not flicker. She waited for the wind to take it. The wind did not.\\n\\nShe made the painter fast to a ring set into the stone. It took her weight without complaint, and she noticed, in the way she had learned to notice things, that there was no rust on it. The sound came a third time, closer, and she understood at last that it was not coming from the light or the water. It was coming from further in, along the line of stone, from whatever the post had been built to mark.\\n\\nHe had told her she would know it when she reached it. He had not told her what to do next. She thought of his hands folding the chart, the careful way he had not met her eyes. The mind fills the quiet. She stepped onto the stone and began to walk, and the sea closed up behind her as though the boat had never been there.\"}",
+  "output_sha256": "5bd35b1eeb0bff71d1a8e0be1c5c34ef8f6429a15f6f347e1ab802318eaa873e",
+  "finish_reason": "end_turn",
+  "refusal": null,
+  "returned_model": "claude-fable-5-1",
+  "usage": {
+    "input_tokens": 488,
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 0,
+    "cache_creation": {
+      "ephemeral_5m_input_tokens": 0,
+      "ephemeral_1h_input_tokens": 0
+    },
+    "output_tokens": 456,
+    "output_tokens_details": {
+      "thinking_tokens": 0
+    },
+    "service_tier": "standard",
+    "inference_geo": "global"
+  },
+  "format": {
+    "json_object": true,
+    "rule_unchanged": true,
+    "passage_is_string": true,
+    "passage_sha256": "4436ed7a18dd7156349c5031b01b3fd554855ab022ff4b5ae5d0934c68c834cc",
+    "passage_words": 265
+  },
+  "finished_at": "2026-09-22T20:17:27.563323+00:00",
+  "latency_seconds": 9.794,
+  "usage_cost_upper_estimate_usd": 0.02768,
+  "stream_status": "active",
+  "budget": {
+    "usage_cost_upper_estimate_usd": 7.9860317,
+    "uncertain_cost_reserve_usd": 0.04533,
+    "in_flight_reserve_usd": 0.317382,
+    "limit_usd": 18.83
+  }
+}

@@ -1,0 +1,47 @@
+{
+  "model": "gpt-6-luna",
+  "seed": "sunset_a",
+  "hop": 30,
+  "http_status": 200,
+  "response_body": "{\n  \"id\": \"chatcmpl-ER0yVCbnUCcKMmSQkA3CosGQ6hF1W\",\n  \"object\": \"chat.completion\",\n  \"created\": 1790107311,\n  \"model\": \"gpt-6-luna\",\n  \"choices\": [\n    {\n      \"index\": 0,\n      \"message\": {\n        \"role\": \"assistant\",\n        \"content\": \"{\\\"rule\\\":\\\"Return this JSON object with the rule field unchanged and a new passage of about 250 words in the text field.\\\",\\\"text\\\":\\\"Mina found the blue notebook beneath a loose floorboard in the attic. Its pages were filled with careful drawings of birds, each labeled with a date and a place. On the final page, someone had written, “Look for the one that visits when the rain stops.”\\n\\nThe next morning, Mina carried the notebook to the garden. A storm had passed during the night, leaving beads of water on the roses and a silver puddle beside the shed. She waited quietly, listening to drops fall from the roof.\\n\\nAt first, she saw only sparrows hopping beneath the hedge. Then a flash of yellow crossed the garden. A small bird landed on the fence, shook rain from its wings, and tilted its head toward her.\\n\\nMina opened the notebook. One sketch showed a yellow bird with a dark stripe across its chest. Beneath it, the writer had noted: “After rain, near the old pear tree.”\\n\\nShe hurried to the tree, where the bird had already settled among the wet leaves. Mina made a quick drawing, then compared it with the picture. The markings matched.\\n\\nThat afternoon, she showed the notebook to her grandmother. Grandmother smiled when she recognized the handwriting. It had belonged to Mina’s great-aunt, who had loved watching birds and keeping records of their visits.\\n\\nTogether, they added Mina’s drawing to the last page, along with the date and the garden’s name. Then Grandmother told her stories about the aunt’s patience and her habit of noticing small things.\\n\\nMina tucked the notebook safely away, but she kept a new one on the windowsill. Each morning, she looked outside, ready to see what might appear.\\\"}\",\n        \"refusal\": null,\n        \"annotations\": []\n      },\n      \"finish_reason\": \"stop\"\n    }\n  ],\n  \"usage\": {\n    \"prompt_tokens\": 354,\n    \"completion_tokens\": 420,\n    \"total_tokens\": 774,\n    \"prompt_tokens_details\": {\n      \"cached_tokens\": 0,\n      \"cache_write_tokens\": 0,\n      \"audio_tokens\": 0\n    },\n    \"completion_tokens_details\": {\n      \"reasoning_tokens\": 47,\n      \"audio_tokens\": 0,\n      \"accepted_prediction_tokens\": 0,\n      \"rejected_prediction_tokens\": 0\n    }\n  },\n  \"service_tier\": \"default\",\n  \"system_fingerprint\": null\n}\n",
+  "response_headers": {
+    "Date": "Tue, 22 Sep 2026 20:01:56 GMT",
+    "openai-processing-ms": "5584",
+    "x-request-id": "req_21a3d300d7324b928d90dd62769f3778"
+  },
+  "output": "{\"rule\":\"Return this JSON object with the rule field unchanged and a new passage of about 250 words in the text field.\",\"text\":\"Mina found the blue notebook beneath a loose floorboard in the attic. Its pages were filled with careful drawings of birds, each labeled with a date and a place. On the final page, someone had written, “Look for the one that visits when the rain stops.”\n\nThe next morning, Mina carried the notebook to the garden. A storm had passed during the night, leaving beads of water on the roses and a silver puddle beside the shed. She waited quietly, listening to drops fall from the roof.\n\nAt first, she saw only sparrows hopping beneath the hedge. Then a flash of yellow crossed the garden. A small bird landed on the fence, shook rain from its wings, and tilted its head toward her.\n\nMina opened the notebook. One sketch showed a yellow bird with a dark stripe across its chest. Beneath it, the writer had noted: “After rain, near the old pear tree.”\n\nShe hurried to the tree, where the bird had already settled among the wet leaves. Mina made a quick drawing, then compared it with the picture. The markings matched.\n\nThat afternoon, she showed the notebook to her grandmother. Grandmother smiled when she recognized the handwriting. It had belonged to Mina’s great-aunt, who had loved watching birds and keeping records of their visits.\n\nTogether, they added Mina’s drawing to the last page, along with the date and the garden’s name. Then Grandmother told her stories about the aunt’s patience and her habit of noticing small things.\n\nMina tucked the notebook safely away, but she kept a new one on the windowsill. Each morning, she looked outside, ready to see what might appear.\"}",
+  "output_sha256": "727a21a84deb8dcfe81011782a453b113bf3cf4dd0a0ce84f54f6b194122e6e4",
+  "finish_reason": "stop",
+  "refusal": null,
+  "returned_model": "gpt-6-luna",
+  "usage": {
+    "prompt_tokens": 354,
+    "completion_tokens": 420,
+    "total_tokens": 774,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 47,
+      "audio_tokens": 0,
+      "accepted_prediction_tokens": 0,
+      "rejected_prediction_tokens": 0
+    }
+  },
+  "format": {
+    "json_object": false,
+    "rule_unchanged": false
+  },
+  "finished_at": "2026-09-22T20:01:52.942177+00:00",
+  "latency_seconds": 5.782,
+  "usage_cost_upper_estimate_usd": 0.0002454,
+  "stream_status": "active",
+  "budget": {
+    "usage_cost_upper_estimate_usd": 2.4542756,
+    "uncertain_cost_reserve_usd": 0.04533,
+    "in_flight_reserve_usd": 0.588394,
+    "limit_usd": 18.83
+  }
+}

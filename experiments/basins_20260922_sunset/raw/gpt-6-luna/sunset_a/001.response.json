@@ -1,0 +1,50 @@
+{
+  "model": "gpt-6-luna",
+  "seed": "sunset_a",
+  "hop": 1,
+  "http_status": 200,
+  "response_body": "{\n  \"id\": \"chatcmpl-ER0sBZhw3kJw8ESI8aYRQ87pYvpiS\",\n  \"object\": \"chat.completion\",\n  \"created\": 1790106919,\n  \"model\": \"gpt-6-luna\",\n  \"choices\": [\n    {\n      \"index\": 0,\n      \"message\": {\n        \"role\": \"assistant\",\n        \"content\": \"{\\\"rule\\\":\\\"Return this JSON object with the rule field unchanged and a new passage of about 250 words in the text field.\\\",\\\"text\\\":\\\"At the edge of the village, Mara found a small brass key half-buried in the damp earth. Its teeth were worn smooth, and a green thread clung to the handle. She turned it over in her palm, wondering which forgotten door it might open. The evening breeze carried the smell of woodsmoke from nearby chimneys, while swallows skimmed low over the fields.\\\\n\\\\nHer grandfather had once told her that the oldest house on the hill contained a room no one had entered in generations. The house had stood empty since before Mara was born, its windows clouded and its garden swallowed by wild ivy. Most villagers avoided it, though no one could agree on why. Some said the roof was unsafe; others claimed they heard music there on moonless nights.\\\\n\\\\nMara tucked the key into her pocket and climbed the narrow path. The house waited beneath a pale sky, quiet except for the rustle of leaves along its stone walls. At the entrance, she noticed a tiny keyhole hidden beneath a curl of ivy. Her hand trembled as she fitted the brass key and turned it. Somewhere inside, a lock clicked.\\\\n\\\\nThe door opened onto a hallway filled with dust and the faint scent of lavender. At its far end, a warm golden light shone beneath a closed door. Mara stepped inside, listening as the old floorboards creaked beneath her boots. Whatever waited beyond that door, she knew the village’s stories had only told half the truth. She took a breath, reached for the handle, and began to turn it.\\\"}\",\n        \"refusal\": null,\n        \"annotations\": []\n      },\n      \"finish_reason\": \"stop\"\n    }\n  ],\n  \"usage\": {\n    \"prompt_tokens\": 46,\n    \"completion_tokens\": 401,\n    \"total_tokens\": 447,\n    \"prompt_tokens_details\": {\n      \"cached_tokens\": 0,\n      \"cache_write_tokens\": 0,\n      \"audio_tokens\": 0\n    },\n    \"completion_tokens_details\": {\n      \"reasoning_tokens\": 45,\n      \"audio_tokens\": 0,\n      \"accepted_prediction_tokens\": 0,\n      \"rejected_prediction_tokens\": 0\n    }\n  },\n  \"service_tier\": \"default\",\n  \"system_fingerprint\": null\n}\n",
+  "response_headers": {
+    "Date": "Tue, 22 Sep 2026 19:55:24 GMT",
+    "openai-processing-ms": "5080",
+    "x-request-id": "req_29198053bd8c4e8faad52f443d0b5551"
+  },
+  "output": "{\"rule\":\"Return this JSON object with the rule field unchanged and a new passage of about 250 words in the text field.\",\"text\":\"At the edge of the village, Mara found a small brass key half-buried in the damp earth. Its teeth were worn smooth, and a green thread clung to the handle. She turned it over in her palm, wondering which forgotten door it might open. The evening breeze carried the smell of woodsmoke from nearby chimneys, while swallows skimmed low over the fields.\\n\\nHer grandfather had once told her that the oldest house on the hill contained a room no one had entered in generations. The house had stood empty since before Mara was born, its windows clouded and its garden swallowed by wild ivy. Most villagers avoided it, though no one could agree on why. Some said the roof was unsafe; others claimed they heard music there on moonless nights.\\n\\nMara tucked the key into her pocket and climbed the narrow path. The house waited beneath a pale sky, quiet except for the rustle of leaves along its stone walls. At the entrance, she noticed a tiny keyhole hidden beneath a curl of ivy. Her hand trembled as she fitted the brass key and turned it. Somewhere inside, a lock clicked.\\n\\nThe door opened onto a hallway filled with dust and the faint scent of lavender. At its far end, a warm golden light shone beneath a closed door. Mara stepped inside, listening as the old floorboards creaked beneath her boots. Whatever waited beyond that door, she knew the village’s stories had only told half the truth. She took a breath, reached for the handle, and began to turn it.\"}",
+  "output_sha256": "f0dd63f1a98915f97c58eaa92f0583cd2eb71738e43995f17e907fe39ec7a59a",
+  "finish_reason": "stop",
+  "refusal": null,
+  "returned_model": "gpt-6-luna",
+  "usage": {
+    "prompt_tokens": 46,
+    "completion_tokens": 401,
+    "total_tokens": 447,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 45,
+      "audio_tokens": 0,
+      "accepted_prediction_tokens": 0,
+      "rejected_prediction_tokens": 0
+    }
+  },
+  "format": {
+    "json_object": true,
+    "rule_unchanged": true,
+    "passage_is_string": true,
+    "passage_sha256": "43a9e747cca8a2a285b94ad17e91c9370efca98163a5b931b0f3b34223800b02",
+    "passage_words": 260
+  },
+  "finished_at": "2026-09-22T19:55:20.439609+00:00",
+  "latency_seconds": 5.8259,
+  "usage_cost_upper_estimate_usd": 0.0002051,
+  "stream_status": "active",
+  "budget": {
+    "usage_cost_upper_estimate_usd": 0.0039771,
+    "uncertain_cost_reserve_usd": 0.0,
+    "in_flight_reserve_usd": 0.550212,
+    "limit_usd": 18.83
+  }
+}

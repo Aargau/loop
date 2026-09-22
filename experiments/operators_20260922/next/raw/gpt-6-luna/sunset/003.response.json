@@ -1,0 +1,50 @@
+{
+  "model": "gpt-6-luna",
+  "seed": "sunset",
+  "hop": 3,
+  "http_status": 200,
+  "response_body": "{\n  \"id\": \"chatcmpl-ER2FoEyzahYqc2mEFrEdt4Ccx8ruZ\",\n  \"object\": \"chat.completion\",\n  \"created\": 1790112228,\n  \"model\": \"gpt-6-luna\",\n  \"choices\": [\n    {\n      \"index\": 0,\n      \"message\": {\n        \"role\": \"assistant\",\n        \"content\": \"{\\\"rule\\\":\\\"Return this JSON object with the rule field unchanged and, in the text field, the passage of about 250 words that comes immediately AFTER the current text in the same story.\\\",\\\"text\\\":\\\"The bell’s fourth toll rolled through the staircase. One of the little lamps went dark.\\\\n\\\\nFinn whined. In the blue light, Mara saw the fur along his back turn pale, as if the color were being rubbed away.\\\\n\\\\n“What’s happening to him?” she cried.\\\\n\\\\n“The valley is losing its memories,” her grandmother said. “Soon it won’t remember the people who live there. Then it won’t remember the valley at all.”\\\\n\\\\nShe turned and hurried down the corridor. Mara followed, Finn pressed close against her leg. At its end stood a round iron door, its surface crowded with names carved in uneven rows. Some had faded until only faint scratches remained.\\\\n\\\\nMara recognized her own name. Beside it was her mother’s—and, below that, her grandmother’s.\\\\n\\\\n“What did we promise to keep safe?”\\\\n\\\\n“Not a thing,” said her grandmother. “A story.”\\\\n\\\\nThe bell sounded again. Her name blurred. Mara reached toward the carving, but her grandmother caught her wrist.\\\\n\\\\n“Don’t touch it. The keeper must speak the story aloud.”\\\\n\\\\n“I don’t know it.”\\\\n\\\\n“You do. Your mother told you when you were small.”\\\\n\\\\nMara searched her memory: a rainy afternoon, her mother’s voice, Finn as a puppy curled beneath the table. A tale about a lantern carried into the hills, and a promise made so the valley would always find its way home.\\\\n\\\\nThe iron door shuddered. Another name vanished.\\\\n\\\\nMara took a breath and began.\\\\n\\\\nAt her first words, the blue flame leapt high. Finn’s coat darkened again, and the faded letters on the door glimmered like embers.\\\"}\",\n        \"refusal\": null,\n        \"annotations\": []\n      },\n      \"finish_reason\": \"stop\"\n    }\n  ],\n  \"usage\": {\n    \"prompt_tokens\": 420,\n    \"completion_tokens\": 530,\n    \"total_tokens\": 950,\n    \"prompt_tokens_details\": {\n      \"cached_tokens\": 0,\n      \"cache_write_tokens\": 0,\n      \"audio_tokens\": 0\n    },\n    \"completion_tokens_details\": {\n      \"reasoning_tokens\": 112,\n      \"audio_tokens\": 0,\n      \"accepted_prediction_tokens\": 0,\n      \"rejected_prediction_tokens\": 0\n    }\n  },\n  \"service_tier\": \"default\",\n  \"system_fingerprint\": null\n}\n",
+  "response_headers": {
+    "Date": "Tue, 22 Sep 2026 21:23:54 GMT",
+    "openai-processing-ms": "5991",
+    "x-request-id": "req_b00127de2b344e90b55ea022e38e2943"
+  },
+  "output": "{\"rule\":\"Return this JSON object with the rule field unchanged and, in the text field, the passage of about 250 words that comes immediately AFTER the current text in the same story.\",\"text\":\"The bell’s fourth toll rolled through the staircase. One of the little lamps went dark.\\n\\nFinn whined. In the blue light, Mara saw the fur along his back turn pale, as if the color were being rubbed away.\\n\\n“What’s happening to him?” she cried.\\n\\n“The valley is losing its memories,” her grandmother said. “Soon it won’t remember the people who live there. Then it won’t remember the valley at all.”\\n\\nShe turned and hurried down the corridor. Mara followed, Finn pressed close against her leg. At its end stood a round iron door, its surface crowded with names carved in uneven rows. Some had faded until only faint scratches remained.\\n\\nMara recognized her own name. Beside it was her mother’s—and, below that, her grandmother’s.\\n\\n“What did we promise to keep safe?”\\n\\n“Not a thing,” said her grandmother. “A story.”\\n\\nThe bell sounded again. Her name blurred. Mara reached toward the carving, but her grandmother caught her wrist.\\n\\n“Don’t touch it. The keeper must speak the story aloud.”\\n\\n“I don’t know it.”\\n\\n“You do. Your mother told you when you were small.”\\n\\nMara searched her memory: a rainy afternoon, her mother’s voice, Finn as a puppy curled beneath the table. A tale about a lantern carried into the hills, and a promise made so the valley would always find its way home.\\n\\nThe iron door shuddered. Another name vanished.\\n\\nMara took a breath and began.\\n\\nAt her first words, the blue flame leapt high. Finn’s coat darkened again, and the faded letters on the door glimmered like embers.\"}",
+  "output_sha256": "751e611454d71e7798cd746665ddea1f322ccb4c59c29d13be73ccff058b49b0",
+  "finish_reason": "stop",
+  "refusal": null,
+  "returned_model": "gpt-6-luna",
+  "usage": {
+    "prompt_tokens": 420,
+    "completion_tokens": 530,
+    "total_tokens": 950,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 112,
+      "audio_tokens": 0,
+      "accepted_prediction_tokens": 0,
+      "rejected_prediction_tokens": 0
+    }
+  },
+  "format": {
+    "json_object": true,
+    "rule_unchanged": true,
+    "passage_is_string": true,
+    "passage_sha256": "bc1aedd7908dd47c9673613069a0df1447d1bae8391879f67f4254cc5d0b6a52",
+    "passage_words": 257
+  },
+  "finished_at": "2026-09-22T21:23:50.149489+00:00",
+  "latency_seconds": 6.0938,
+  "usage_cost_upper_estimate_usd": 0.000307,
+  "stream_status": "active",
+  "budget": {
+    "usage_cost_upper_estimate_usd": 0.0495266,
+    "uncertain_cost_reserve_usd": 0.0,
+    "in_flight_reserve_usd": 0.349738,
+    "limit_usd": 5.0
+  }
+}

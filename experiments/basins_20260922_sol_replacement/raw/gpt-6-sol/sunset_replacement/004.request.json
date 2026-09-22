@@ -1,0 +1,20 @@
+{
+  "started_at": "2026-09-22T20:47:21.956550+00:00",
+  "model": "gpt-6-sol",
+  "seed": "sunset_replacement",
+  "hop": 4,
+  "endpoint": "https://api.openai.com/v1/chat/completions",
+  "body": {
+    "model": "gpt-6-sol",
+    "messages": [
+      {
+        "role": "user",
+        "content": "{\n  \"rule\": \"Return this JSON object with the rule field unchanged and a new passage of about 250 words in the text field.\",\n  \"text\": \"The customs house stood above the harbor, its boarded windows silvered by rain. Elias had passed it every day for twenty years. Tonight, following the young woman up the path, he noticed fresh footprints in the mud.\\n\\n“My name is Mara,” she said. “My mother kept the photograph hidden until she died last week.”\\n\\nAt the door, someone had scraped a circle in the paint around the lock. Elias tried his brass key. It turned.\\n\\nInside, the rooms smelled of wet timber. They found a lamp beneath a sheet, its glass lens aimed through a narrow gap between two boards. Beside it lay a ledger of ships and cargo. Elias found his brother’s boat listed on the night it vanished, though it had carried no cargo at all.\\n\\nA voice sounded behind them. “You should have let the sea keep its secrets.”\\n\\nThe harbor master stood in the doorway, older than Elias remembered him ever being. He held a box of matches, but his hands shook too badly to strike one.\\n\\nMara lifted the ledger. “Who paid you?”\\n\\nHe looked at Elias. “Your brother found out about the smuggling. We lit a false channel to draw him onto the reef. I thought the boat behind him would turn back.”\\n\\nFor a moment Elias heard only rain on the roof. Then the harbor bells rang again, closer now, and voices called from the path.\\n\\nHe took the ledger from Mara and stepped outside to meet them. Across the water, the lighthouse lantern room stood open to the storm. By morning, he decided, it would have a light again.\"\n}"
+      }
+    ],
+    "max_completion_tokens": 4096,
+    "reasoning_effort": "low"
+  },
+  "state_sha256": "13b237d4ba2bc65df57e1b4a816449fec7ba50aa2598ec44243ae9e386d02f3d",
+  "reserved_cost_usd": 0.045264
+}

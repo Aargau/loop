@@ -1,0 +1,48 @@
+{
+  "model": "claude-fable-5-1",
+  "seed": "tide",
+  "hop": 24,
+  "http_status": 200,
+  "response_body": "{\"model\":\"claude-fable-5-1\",\"id\":\"msg_011CfK5umgh1qAXMTQNLd5iW\",\"type\":\"message\",\"role\":\"assistant\",\"content\":[{\"type\":\"text\",\"text\":\"{\\\"rule\\\": \\\"Return this JSON object with the rule field unchanged and a new passage of about 250 words in the text field.\\\", \\\"text\\\": \\\"The lighthouse at Corran Point had been automated in 1978, and by the time Teodor Vask took the keeper's cottage, no one had climbed the tower stairs in a decade except to replace a bulb.\\\\n\\\\nHe had not come for the light. He had come for the logbooks.\\\\n\\\\nThey filled a cupboard in the cottage kitchen, ninety years of them, bound in canvas that had gone the color of tea. Each page recorded the same things: wind direction, visibility, the passing of ships by name and time. Between the columns, though, the keepers had written other things. A porpoise seen at dawn. A child's birthday. A wife's cough that did not improve.\\\\n\\\\nTeodor's grandmother had kept the light for eleven years. She had never spoken of it.\\\\n\\\\nHe read her entries first, then the ones before and after, until he knew the handwriting of six strangers as well as his own. He learned that the winter of 1952 had frozen the spray on the gallery rail into a solid wall. He learned that a keeper named Ross had lost a boat and never written another word about the sea, only about his garden.\\\\n\\\\nIn his grandmother's last year there was a single line, in March: he did not come back, and the light was on the whole night.\\\\n\\\\nTeodor did not know who he was. There was no one left to ask.\\\\n\\\\nHe climbed the tower that evening and stood beside the lamp as it turned, and counted the seconds between each sweep, and found that the rhythm had not changed.\\\"}\"}],\"container\":null,\"stop_reason\":\"end_turn\",\"stop_sequence\":null,\"stop_details\":null,\"usage\":{\"input_tokens\":557,\"cache_creation_input_tokens\":0,\"cache_read_input_tokens\":0,\"cache_creation\":{\"ephemeral_5m_input_tokens\":0,\"ephemeral_1h_input_tokens\":0},\"output_tokens\":518,\"output_tokens_details\":{\"thinking_tokens\":0},\"service_tier\":\"standard\",\"inference_geo\":\"global\"}}",
+  "response_headers": {
+    "Date": "Tue, 22 Sep 2026 20:10:44 GMT",
+    "request-id": "req_011CfK5umQ5BYtrFxRTCjLf1"
+  },
+  "output": "{\"rule\": \"Return this JSON object with the rule field unchanged and a new passage of about 250 words in the text field.\", \"text\": \"The lighthouse at Corran Point had been automated in 1978, and by the time Teodor Vask took the keeper's cottage, no one had climbed the tower stairs in a decade except to replace a bulb.\\n\\nHe had not come for the light. He had come for the logbooks.\\n\\nThey filled a cupboard in the cottage kitchen, ninety years of them, bound in canvas that had gone the color of tea. Each page recorded the same things: wind direction, visibility, the passing of ships by name and time. Between the columns, though, the keepers had written other things. A porpoise seen at dawn. A child's birthday. A wife's cough that did not improve.\\n\\nTeodor's grandmother had kept the light for eleven years. She had never spoken of it.\\n\\nHe read her entries first, then the ones before and after, until he knew the handwriting of six strangers as well as his own. He learned that the winter of 1952 had frozen the spray on the gallery rail into a solid wall. He learned that a keeper named Ross had lost a boat and never written another word about the sea, only about his garden.\\n\\nIn his grandmother's last year there was a single line, in March: he did not come back, and the light was on the whole night.\\n\\nTeodor did not know who he was. There was no one left to ask.\\n\\nHe climbed the tower that evening and stood beside the lamp as it turned, and counted the seconds between each sweep, and found that the rhythm had not changed.\"}",
+  "output_sha256": "1812a311e21b2a9f7845ab2ad735994b683803e979181bf55f2ae1b1bce9ab92",
+  "finish_reason": "end_turn",
+  "refusal": null,
+  "returned_model": "claude-fable-5-1",
+  "usage": {
+    "input_tokens": 557,
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 0,
+    "cache_creation": {
+      "ephemeral_5m_input_tokens": 0,
+      "ephemeral_1h_input_tokens": 0
+    },
+    "output_tokens": 518,
+    "output_tokens_details": {
+      "thinking_tokens": 0
+    },
+    "service_tier": "standard",
+    "inference_geo": "global"
+  },
+  "format": {
+    "json_object": true,
+    "rule_unchanged": true,
+    "passage_is_string": true,
+    "passage_sha256": "5262e67db5e48ac7bab3976c2e02a32cac561c9368e5e18f7f3f0677ebb7bb6f",
+    "passage_words": 261
+  },
+  "finished_at": "2026-09-22T20:10:40.458010+00:00",
+  "latency_seconds": 14.422,
+  "usage_cost_upper_estimate_usd": 0.03147,
+  "stream_status": "active",
+  "budget": {
+    "usage_cost_upper_estimate_usd": 5.6920777,
+    "uncertain_cost_reserve_usd": 0.04533,
+    "in_flight_reserve_usd": 0.318188,
+    "limit_usd": 18.83
+  }
+}

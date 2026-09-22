@@ -1,0 +1,50 @@
+{
+  "model": "gpt-6-sol",
+  "seed": "sunset_a",
+  "hop": 9,
+  "http_status": 200,
+  "response_body": "{\n  \"id\": \"chatcmpl-ER0uUgoYgU12PRkWMgfAUaeXG41l2\",\n  \"object\": \"chat.completion\",\n  \"created\": 1790107062,\n  \"model\": \"gpt-6-sol\",\n  \"choices\": [\n    {\n      \"index\": 0,\n      \"message\": {\n        \"role\": \"assistant\",\n        \"content\": \"{\\n  \\\"rule\\\": \\\"Return this JSON object with the rule field unchanged and a new passage of about 250 words in the text field.\\\",\\n  \\\"text\\\": \\\"The key was still on the hook beside the kitchen door. Daniel had expected to find it in an envelope, perhaps with the electricity bill and the forwarding address. Instead, it hung where it always had, between the corkscrew and a length of blue string.\\\\n\\\\nHe took down the key and put it on the table.\\\\n\\\\nIn the garden, someone had stacked the empty flowerpots beneath the bench. Ruth had never done that before. She used to leave them along the path until rain filled them and mosquitoes came. He opened the back door and looked at the patch of earth where the beans had grown. The canes were gone, but one length of twine remained tied to the fence.\\\\n\\\\nHis phone lit up. Ruth had sent a photograph of a chair in a bright room. It was the one from upstairs, with the worn place on the arm where she rested her hand when she read. Under the photograph she had written, It fits.\\\\n\\\\nDaniel typed Good, then erased it. He put the phone face down and went upstairs to check the cupboard. She had taken the winter coats but left the box of Christmas ornaments on the high shelf. He could see one corner of its red lid.\\\\n\\\\nWhen he came back down, the kitchen had darkened. He switched on the light and found a small dish for the key. It was chipped along the rim, but it sat flat on the table. He placed the key inside it, then picked up his phone.\\\\n\\\\nIt looks right there, he wrote.\\\"\\n}\",\n        \"refusal\": null,\n        \"annotations\": []\n      },\n      \"finish_reason\": \"stop\"\n    }\n  ],\n  \"usage\": {\n    \"prompt_tokens\": 393,\n    \"completion_tokens\": 381,\n    \"total_tokens\": 774,\n    \"prompt_tokens_details\": {\n      \"cached_tokens\": 0,\n      \"cache_write_tokens\": 0,\n      \"audio_tokens\": 0\n    },\n    \"completion_tokens_details\": {\n      \"reasoning_tokens\": 23,\n      \"audio_tokens\": 0,\n      \"accepted_prediction_tokens\": 0,\n      \"rejected_prediction_tokens\": 0\n    }\n  },\n  \"service_tier\": \"default\",\n  \"system_fingerprint\": null\n}\n",
+  "response_headers": {
+    "Date": "Tue, 22 Sep 2026 19:57:48 GMT",
+    "openai-processing-ms": "6048",
+    "x-request-id": "req_bc47d76af71d47f1b25febce2104e9a8"
+  },
+  "output": "{\n  \"rule\": \"Return this JSON object with the rule field unchanged and a new passage of about 250 words in the text field.\",\n  \"text\": \"The key was still on the hook beside the kitchen door. Daniel had expected to find it in an envelope, perhaps with the electricity bill and the forwarding address. Instead, it hung where it always had, between the corkscrew and a length of blue string.\\n\\nHe took down the key and put it on the table.\\n\\nIn the garden, someone had stacked the empty flowerpots beneath the bench. Ruth had never done that before. She used to leave them along the path until rain filled them and mosquitoes came. He opened the back door and looked at the patch of earth where the beans had grown. The canes were gone, but one length of twine remained tied to the fence.\\n\\nHis phone lit up. Ruth had sent a photograph of a chair in a bright room. It was the one from upstairs, with the worn place on the arm where she rested her hand when she read. Under the photograph she had written, It fits.\\n\\nDaniel typed Good, then erased it. He put the phone face down and went upstairs to check the cupboard. She had taken the winter coats but left the box of Christmas ornaments on the high shelf. He could see one corner of its red lid.\\n\\nWhen he came back down, the kitchen had darkened. He switched on the light and found a small dish for the key. It was chipped along the rim, but it sat flat on the table. He placed the key inside it, then picked up his phone.\\n\\nIt looks right there, he wrote.\"\n}",
+  "output_sha256": "31d8c9841bef6eb6e13ac533b6a35c8f92f34f7a58af70238034fbb615698bc9",
+  "finish_reason": "stop",
+  "refusal": null,
+  "returned_model": "gpt-6-sol",
+  "usage": {
+    "prompt_tokens": 393,
+    "completion_tokens": 381,
+    "total_tokens": 774,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 23,
+      "audio_tokens": 0,
+      "accepted_prediction_tokens": 0,
+      "rejected_prediction_tokens": 0
+    }
+  },
+  "format": {
+    "json_object": true,
+    "rule_unchanged": true,
+    "passage_is_string": true,
+    "passage_sha256": "f487e42335c805eef87d4b4161c1e20c700e3ec185ac1f6a106a77011853a7c9",
+    "passage_words": 262
+  },
+  "finished_at": "2026-09-22T19:57:44.921375+00:00",
+  "latency_seconds": 6.1466,
+  "usage_cost_upper_estimate_usd": 0.004596,
+  "stream_status": "active",
+  "budget": {
+    "usage_cost_upper_estimate_usd": 0.8541512,
+    "uncertain_cost_reserve_usd": 0.0,
+    "in_flight_reserve_usd": 0.5455009,
+    "limit_usd": 18.83
+  }
+}

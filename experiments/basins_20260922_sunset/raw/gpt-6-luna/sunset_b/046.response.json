@@ -1,0 +1,50 @@
+{
+  "model": "gpt-6-luna",
+  "seed": "sunset_b",
+  "hop": 46,
+  "http_status": 200,
+  "response_body": "{\n  \"id\": \"chatcmpl-ER11rtdmWcY4fohuXSlYZ58TI3Ty8\",\n  \"object\": \"chat.completion\",\n  \"created\": 1790107519,\n  \"model\": \"gpt-6-luna\",\n  \"choices\": [\n    {\n      \"index\": 0,\n      \"message\": {\n        \"role\": \"assistant\",\n        \"content\": \"{\\n  \\\"rule\\\": \\\"Return this JSON object with the rule field unchanged and a new passage of about 250 words in the text field.\\\",\\n  \\\"text\\\": \\\"The woman’s name was Ada Bell, and she had once kept the harbor records. Inside her narrow house, the air smelled of dust and orange peel. She led Mara and Elian to a desk crowded with notebooks, each labeled with a year.\\\\n\\\\n“Jonas came here the night before he disappeared,” Ada said. “He asked me to remember a boy named Tomas Vale. No one had spoken his name in decades.”\\\\n\\\\nShe opened a notebook and turned it toward Mara. Beside Tomas’s name was a small drawing of a boat, its sail marked with a star.\\\\n\\\\n“He was my brother,” Ada said. “He went out in a storm. The village decided it was easier to forget than to grieve.” Her fingers rested on the page. “Jonas wanted me to tell the story again.”\\\\n\\\\nOutside, the harbor bell rang twice. Across the water, the pale light held steady.\\\\n\\\\nAda stood, suddenly brisk. “There’s someone else you must find. A man at the far end of the village. He knew Tomas best.”\\\\n\\\\nThey thanked her and hurried through the lanes. More lanterns glimmered in windows now, each one a small promise against the dark. At the last cottage, an old man opened the door with a candle in his hand.\\\\n\\\\nWhen Mara said Tomas’s name, he gripped the doorframe. For a moment, the years seemed to fall away from his face.\\\\n\\\\n“I thought nobody remembered,” he whispered.\\\\n\\\\nMara took Jonas’s letter from her coat. “He did.”\\\\n\\\\nThe old man read the final line, then looked toward the sea. Together, they stepped outside. He raised his candle, and far beyond the harbor, the answering light brightened.\\\"\\n}\",\n        \"refusal\": null,\n        \"annotations\": []\n      },\n      \"finish_reason\": \"stop\"\n    }\n  ],\n  \"usage\": {\n    \"prompt_tokens\": 384,\n    \"completion_tokens\": 500,\n    \"total_tokens\": 884,\n    \"prompt_tokens_details\": {\n      \"cached_tokens\": 0,\n      \"cache_write_tokens\": 0,\n      \"audio_tokens\": 0\n    },\n    \"completion_tokens_details\": {\n      \"reasoning_tokens\": 89,\n      \"audio_tokens\": 0,\n      \"accepted_prediction_tokens\": 0,\n      \"rejected_prediction_tokens\": 0\n    }\n  },\n  \"service_tier\": \"default\",\n  \"system_fingerprint\": null\n}\n",
+  "response_headers": {
+    "Date": "Tue, 22 Sep 2026 20:05:25 GMT",
+    "openai-processing-ms": "5872",
+    "x-request-id": "req_b9269d1358ea4940a4ce64c09ca99ebf"
+  },
+  "output": "{\n  \"rule\": \"Return this JSON object with the rule field unchanged and a new passage of about 250 words in the text field.\",\n  \"text\": \"The woman’s name was Ada Bell, and she had once kept the harbor records. Inside her narrow house, the air smelled of dust and orange peel. She led Mara and Elian to a desk crowded with notebooks, each labeled with a year.\\n\\n“Jonas came here the night before he disappeared,” Ada said. “He asked me to remember a boy named Tomas Vale. No one had spoken his name in decades.”\\n\\nShe opened a notebook and turned it toward Mara. Beside Tomas’s name was a small drawing of a boat, its sail marked with a star.\\n\\n“He was my brother,” Ada said. “He went out in a storm. The village decided it was easier to forget than to grieve.” Her fingers rested on the page. “Jonas wanted me to tell the story again.”\\n\\nOutside, the harbor bell rang twice. Across the water, the pale light held steady.\\n\\nAda stood, suddenly brisk. “There’s someone else you must find. A man at the far end of the village. He knew Tomas best.”\\n\\nThey thanked her and hurried through the lanes. More lanterns glimmered in windows now, each one a small promise against the dark. At the last cottage, an old man opened the door with a candle in his hand.\\n\\nWhen Mara said Tomas’s name, he gripped the doorframe. For a moment, the years seemed to fall away from his face.\\n\\n“I thought nobody remembered,” he whispered.\\n\\nMara took Jonas’s letter from her coat. “He did.”\\n\\nThe old man read the final line, then looked toward the sea. Together, they stepped outside. He raised his candle, and far beyond the harbor, the answering light brightened.\"\n}",
+  "output_sha256": "c4d875d5da0f8c0f8c72b94c539f110fbb3f51c3aff491a519f9ef7812c58aac",
+  "finish_reason": "stop",
+  "refusal": null,
+  "returned_model": "gpt-6-luna",
+  "usage": {
+    "prompt_tokens": 384,
+    "completion_tokens": 500,
+    "total_tokens": 884,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 89,
+      "audio_tokens": 0,
+      "accepted_prediction_tokens": 0,
+      "rejected_prediction_tokens": 0
+    }
+  },
+  "format": {
+    "json_object": true,
+    "rule_unchanged": true,
+    "passage_is_string": true,
+    "passage_sha256": "aecf55011a46b8a085811eb81a6857d9ecf431436f504826cf98926977f88417",
+    "passage_words": 272
+  },
+  "finished_at": "2026-09-22T20:05:21.168705+00:00",
+  "latency_seconds": 6.0122,
+  "usage_cost_upper_estimate_usd": 0.00028839999999999996,
+  "stream_status": "active",
+  "budget": {
+    "usage_cost_upper_estimate_usd": 3.7387618,
+    "uncertain_cost_reserve_usd": 0.04533,
+    "in_flight_reserve_usd": 0.591364,
+    "limit_usd": 18.83
+  }
+}

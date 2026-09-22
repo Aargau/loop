@@ -1,0 +1,48 @@
+{
+  "model": "claude-fable-5-1",
+  "seed": "tide",
+  "hop": 49,
+  "http_status": 200,
+  "response_body": "{\"model\":\"claude-fable-5-1\",\"id\":\"msg_011CfK7742Ngn8VpLaknGE1w\",\"type\":\"message\",\"role\":\"assistant\",\"content\":[{\"type\":\"text\",\"text\":\"{\\\"rule\\\": \\\"Return this JSON object with the rule field unchanged and a new passage of about 250 words in the text field.\\\", \\\"text\\\": \\\"He heard the car before he saw it, the engine dropping a gear at the bend where the road came out of the trees. Nobody used that road in November. He stayed where he was, on the step with the cup going cold in his hands, and let it come to him.\\\\n\\\\nIt was a small grey thing, rented probably, too clean for the lane. It stopped short of the gate as if the driver had thought better of it, and then it sat there with the engine running for longer than seemed reasonable.\\\\n\\\\nWhen the door finally opened, a woman got out. She was younger than he had expected, though he could not have said what he had expected. She looked at the house, then at him, then back at the house, as though checking it against something she had been told.\\\\n\\\\n\\\\\\\"You're Aldous,\\\\\\\" she said. Not a question.\\\\n\\\\n\\\\\\\"Depends who's asking.\\\\\\\"\\\\n\\\\nShe did not smile, which he noted. She reached into the car and brought out an envelope, brown and creased along one edge, and held it up so he could see it without offering it.\\\\n\\\\n\\\\\\\"He said you'd know the hand.\\\\\\\"\\\\n\\\\nHe did. He knew it from across the yard, before she had taken a single step closer, and he felt the cold of the step come up through him in a way it had not a moment before.\\\\n\\\\n\\\\\\\"He's dead, then,\\\\\\\" Aldous said.\\\\n\\\\n\\\\\\\"Three weeks.\\\\\\\" She lowered the envelope. \\\\\\\"He said to wait until you'd finished your tea.\\\\\\\"\\\"}\"}],\"container\":null,\"stop_reason\":\"end_turn\",\"stop_sequence\":null,\"stop_details\":null,\"usage\":{\"input_tokens\":481,\"cache_creation_input_tokens\":0,\"cache_read_input_tokens\":0,\"cache_creation\":{\"ephemeral_5m_input_tokens\":0,\"ephemeral_1h_input_tokens\":0},\"output_tokens\":491,\"output_tokens_details\":{\"thinking_tokens\":0},\"service_tier\":\"standard\",\"inference_geo\":\"global\"}}",
+  "response_headers": {
+    "Date": "Tue, 22 Sep 2026 20:26:21 GMT",
+    "request-id": "req_011CfK773Z6ffeFgqAfWokPY"
+  },
+  "output": "{\"rule\": \"Return this JSON object with the rule field unchanged and a new passage of about 250 words in the text field.\", \"text\": \"He heard the car before he saw it, the engine dropping a gear at the bend where the road came out of the trees. Nobody used that road in November. He stayed where he was, on the step with the cup going cold in his hands, and let it come to him.\\n\\nIt was a small grey thing, rented probably, too clean for the lane. It stopped short of the gate as if the driver had thought better of it, and then it sat there with the engine running for longer than seemed reasonable.\\n\\nWhen the door finally opened, a woman got out. She was younger than he had expected, though he could not have said what he had expected. She looked at the house, then at him, then back at the house, as though checking it against something she had been told.\\n\\n\\\"You're Aldous,\\\" she said. Not a question.\\n\\n\\\"Depends who's asking.\\\"\\n\\nShe did not smile, which he noted. She reached into the car and brought out an envelope, brown and creased along one edge, and held it up so he could see it without offering it.\\n\\n\\\"He said you'd know the hand.\\\"\\n\\nHe did. He knew it from across the yard, before she had taken a single step closer, and he felt the cold of the step come up through him in a way it had not a moment before.\\n\\n\\\"He's dead, then,\\\" Aldous said.\\n\\n\\\"Three weeks.\\\" She lowered the envelope. \\\"He said to wait until you'd finished your tea.\\\"\"}",
+  "output_sha256": "47182917a5ed668ddcc26f33f8989b14738ed5c1e433427b2a5d2ed5dabe6d16",
+  "finish_reason": "end_turn",
+  "refusal": null,
+  "returned_model": "claude-fable-5-1",
+  "usage": {
+    "input_tokens": 481,
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 0,
+    "cache_creation": {
+      "ephemeral_5m_input_tokens": 0,
+      "ephemeral_1h_input_tokens": 0
+    },
+    "output_tokens": 491,
+    "output_tokens_details": {
+      "thinking_tokens": 0
+    },
+    "service_tier": "standard",
+    "inference_geo": "global"
+  },
+  "format": {
+    "json_object": true,
+    "rule_unchanged": true,
+    "passage_is_string": true,
+    "passage_sha256": "e181cb96b8aabad851564b37e30f847b826f634d7c070f2bd22f672cd1b780a0",
+    "passage_words": 252
+  },
+  "finished_at": "2026-09-22T20:26:17.201534+00:00",
+  "latency_seconds": 11.3885,
+  "usage_cost_upper_estimate_usd": 0.02936,
+  "stream_status": "active",
+  "budget": {
+    "usage_cost_upper_estimate_usd": 10.6742777,
+    "uncertain_cost_reserve_usd": 0.04533,
+    "in_flight_reserve_usd": 0.22682,
+    "limit_usd": 18.83
+  }
+}

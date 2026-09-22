@@ -1,0 +1,22 @@
+{
+  "started_at": "2026-09-22T19:58:39.160121+00:00",
+  "model": "claude-fable-5-1",
+  "seed": "sunset_b",
+  "hop": 6,
+  "endpoint": "https://api.anthropic.com/v1/messages",
+  "body": {
+    "model": "claude-fable-5-1",
+    "messages": [
+      {
+        "role": "user",
+        "content": "{\"rule\": \"Return this JSON object with the rule field unchanged and a new passage of about 250 words in the text field.\", \"text\": \"The bakery opened before the streetlights went off, and Ines liked that hour best, when the ovens were hot but the door was still locked and the town belonged to no one. She worked the dough with the heel of her hand, folding and turning, counting without meaning to. Her mother had counted too, aloud, in a low voice that Ines could still hear if she let herself.\\n\\nBy six the first loaves were on the racks and the window had fogged from the inside. She wiped a circle clear and watched the square fill in slowly: the man who swept the church steps, the two sisters who ran the pharmacy, a boy on a bicycle who was always late for something. None of them looked up. That was fine. Bread did not need to be watched to be wanted.\\n\\nWhen she unlocked the door the bell rang once and the cold came in with the smell of wet stone. Old Fermin was already there, as he was every morning, holding his coins in a closed fist as though someone might take them. She gave him the small round loaf he preferred and did not mention that it was yesterday's price. He did not mention it either. They had an understanding that had never once been spoken.\\n\\nThe day would go the way days went. She would sell out by noon or she would not, and either way she would sweep the flour into the corners and start the starter for tomorrow. Some people found this dull. Ines found it steady, the way a wall is steady, and she leaned her whole life against it without worry.\"}"
+      }
+    ],
+    "max_tokens": 4096,
+    "output_config": {
+      "effort": "low"
+    }
+  },
+  "state_sha256": "1a8f894fbb79ddc789d67e3acce3b7fcfe08077747633ad35669a9214121b353",
+  "reserved_cost_usd": 0.22577
+}

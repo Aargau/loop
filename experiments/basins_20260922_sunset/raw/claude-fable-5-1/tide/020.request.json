@@ -1,0 +1,22 @@
+{
+  "started_at": "2026-09-22T20:07:54.872865+00:00",
+  "model": "claude-fable-5-1",
+  "seed": "tide",
+  "hop": 20,
+  "endpoint": "https://api.anthropic.com/v1/messages",
+  "body": {
+    "model": "claude-fable-5-1",
+    "messages": [
+      {
+        "role": "user",
+        "content": "{\"rule\": \"Return this JSON object with the rule field unchanged and a new passage of about 250 words in the text field.\", \"text\": \"The ferry that ran between Harrow Island and the mainland was called the Merrin, and for thirty-one years its master had been a woman named Dell Acheson, who could dock it in a crosswind with her eyes shut and once nearly proved it.\\n\\nWhen the company replaced the Merrin with a new vessel that steered itself between waypoints and needed only a technician to watch a screen, Dell was offered a pension and a plaque. She took the pension. The plaque she left on the counter in the office.\\n\\nHer nephew Pell had grown up on the Merrin's afterdeck, coiling lines badly and then well. He was hired onto the new boat because he knew the run, and because the company liked a familiar face on the gangway when the islanders grumbled.\\n\\nDell had never taught him the console. She had taught him the water. How the current over Fallon's Bar ran a knot stronger than the chart said in the hour before low tide. How the buoy off Skerrick would drift a boat-length east after a hard northerly and lie there lying to anyone who trusted it. How the wheelhouse windows fogged from the inside just before the real fog came.\\n\\nOne evening in December the new boat's positioning lost its satellite fix in a squall. The screen froze on a course that would have carried them straight across the bar at dead low water.\\n\\nPell felt it before he read it. The swell was wrong under his feet. He took the manual helm, swung two points to seaward, and brought them home through the deep channel the way his aunt would have.\\n\\nThe report called it operator intervention.\\n\\nDell, hearing of it, said only that the water had been teaching long before the screens.\"}"
+      }
+    ],
+    "max_tokens": 4096,
+    "output_config": {
+      "effort": "low"
+    }
+  },
+  "state_sha256": "71eb9619947e2942c9c0f8e4d39c14900abf56943d33aa95dbcd83bf76183cd2",
+  "reserved_cost_usd": 0.22767
+}

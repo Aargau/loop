@@ -1,0 +1,22 @@
+{
+  "started_at": "2026-09-22T20:11:45.598427+00:00",
+  "model": "claude-opus-5-5",
+  "seed": "sunset_b",
+  "hop": 36,
+  "endpoint": "https://api.anthropic.com/v1/messages",
+  "body": {
+    "model": "claude-opus-5-5",
+    "messages": [
+      {
+        "role": "user",
+        "content": "```json\n{\"rule\": \"Return this JSON object with the rule field unchanged and a new passage of about 250 words in the text field.\", \"text\": \"On the windswept island of Carrow, the lighthouse had stood dark for eleven winters. Fishermen steered home by memory and starlight, and more than one boat had splintered on the jagged reef beneath the cliffs. The harbor council claimed the great lens had cracked in a storm and could never be replaced. Old sailors muttered that the keeper had drowned chasing a ghost ship and taken the light with him. A quiet girl named Wren, who mended nets on the pier each evening, noticed a faint glimmer in the lantern room on moonless nights, as if someone were testing a flame. One foggy dusk, she followed a narrow goat path up the cliff and pushed open the lighthouse door, which groaned on salt-crusted hinges. Inside, spiral stairs led to a room cluttered with polished glass prisms, coils of copper wire, and notebooks filled with careful sketches. A stooped man named Tobias knelt beside a half-assembled lens, grinding a curved pane by candlelight. He had been the keeper, he admitted, and had let the light die on the night his daughter's boat failed to return. Yet grief had slowly turned to purpose, and he had spent years building a lens that could shine twice as far. Wren asked to learn. Through the blustery autumn, she ground glass, trimmed wicks, and memorized the angles that bent light across the sea. On the first night of the herring run, the islanders watched from the docks as a brilliant beam swept over the waves. Tobias rested his hand on Wren's arm, and together they watched the boats come safely home.\"}\n```"
+      }
+    ],
+    "max_tokens": 4096,
+    "output_config": {
+      "effort": "low"
+    }
+  },
+  "state_sha256": "8151769f3a43499f81e79b3c290fe8fc26c10f267b0222d902d3d0aa59f9cdcd",
+  "reserved_cost_usd": 0.090636
+}

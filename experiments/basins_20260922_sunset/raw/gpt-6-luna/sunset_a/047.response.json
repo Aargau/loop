@@ -1,0 +1,50 @@
+{
+  "model": "gpt-6-luna",
+  "seed": "sunset_a",
+  "hop": 47,
+  "http_status": 200,
+  "response_body": "{\n  \"id\": \"chatcmpl-ER11yCU49HOojOUkX9Lo9riSZnPtm\",\n  \"object\": \"chat.completion\",\n  \"created\": 1790107526,\n  \"model\": \"gpt-6-luna\",\n  \"choices\": [\n    {\n      \"index\": 0,\n      \"message\": {\n        \"role\": \"assistant\",\n        \"content\": \"{\\\"rule\\\":\\\"Return this JSON object with the rule field unchanged and a new passage of about 250 words in the text field.\\\",\\\"text\\\":\\\"On a windy Saturday, Nia followed a trail of bright blue feathers through the park. They led past the pond, around a bench, and straight to a small wooden shed she had never noticed before. Its door stood open, and inside sat a box covered in colorful stickers.\\\\n\\\\nNia lifted the lid. The box was full of paper birds, each folded from a different kind of paper: old maps, music sheets, and even a page from a cookbook. Beneath them lay a note: “Take one, write a wish, and send it somewhere the wind can find.”\\\\n\\\\nShe chose a bird folded from a map of the coast. On its wing, she wrote, “I hope someone feels less alone today.” Then she carried it to the hill at the edge of the park and let it go. The paper bird wobbled in the breeze before sailing over the trees.\\\\n\\\\nThe next week, Nia returned to the shed. A new note waited in the box. It was written in blue ink: “Your bird landed on my garden gate. I was having a hard day, and your wish made me smile. Thank you.”\\\\n\\\\nNia grinned and tucked the message carefully into her pocket. She began bringing paper and pencils to the park, inviting others to make birds of their own. Soon, the shed filled with folded wings and hopeful words. Some birds traveled only a few steps; others disappeared beyond the rooftops.\\\\n\\\\nNo one knew exactly where they would land. That was part of the magic. Each time the wind lifted a paper wing, someone had offered a stranger a small reminder: kindness could travel farther than expected.\\\"}\",\n        \"refusal\": null,\n        \"annotations\": []\n      },\n      \"finish_reason\": \"stop\"\n    }\n  ],\n  \"usage\": {\n    \"prompt_tokens\": 379,\n    \"completion_tokens\": 421,\n    \"total_tokens\": 800,\n    \"prompt_tokens_details\": {\n      \"cached_tokens\": 0,\n      \"cache_write_tokens\": 0,\n      \"audio_tokens\": 0\n    },\n    \"completion_tokens_details\": {\n      \"reasoning_tokens\": 41,\n      \"audio_tokens\": 0,\n      \"accepted_prediction_tokens\": 0,\n      \"rejected_prediction_tokens\": 0\n    }\n  },\n  \"service_tier\": \"default\",\n  \"system_fingerprint\": null\n}\n",
+  "response_headers": {
+    "Date": "Tue, 22 Sep 2026 20:05:31 GMT",
+    "openai-processing-ms": "5466",
+    "x-request-id": "req_f5434a89951e4bf4bdf0206e5778bc83"
+  },
+  "output": "{\"rule\":\"Return this JSON object with the rule field unchanged and a new passage of about 250 words in the text field.\",\"text\":\"On a windy Saturday, Nia followed a trail of bright blue feathers through the park. They led past the pond, around a bench, and straight to a small wooden shed she had never noticed before. Its door stood open, and inside sat a box covered in colorful stickers.\\n\\nNia lifted the lid. The box was full of paper birds, each folded from a different kind of paper: old maps, music sheets, and even a page from a cookbook. Beneath them lay a note: “Take one, write a wish, and send it somewhere the wind can find.”\\n\\nShe chose a bird folded from a map of the coast. On its wing, she wrote, “I hope someone feels less alone today.” Then she carried it to the hill at the edge of the park and let it go. The paper bird wobbled in the breeze before sailing over the trees.\\n\\nThe next week, Nia returned to the shed. A new note waited in the box. It was written in blue ink: “Your bird landed on my garden gate. I was having a hard day, and your wish made me smile. Thank you.”\\n\\nNia grinned and tucked the message carefully into her pocket. She began bringing paper and pencils to the park, inviting others to make birds of their own. Soon, the shed filled with folded wings and hopeful words. Some birds traveled only a few steps; others disappeared beyond the rooftops.\\n\\nNo one knew exactly where they would land. That was part of the magic. Each time the wind lifted a paper wing, someone had offered a stranger a small reminder: kindness could travel farther than expected.\"}",
+  "output_sha256": "eb039fe16f88de3ec98f761aa496ea7166decdc29a061aa73e0b23148ccda219",
+  "finish_reason": "stop",
+  "refusal": null,
+  "returned_model": "gpt-6-luna",
+  "usage": {
+    "prompt_tokens": 379,
+    "completion_tokens": 421,
+    "total_tokens": 800,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 41,
+      "audio_tokens": 0,
+      "accepted_prediction_tokens": 0,
+      "rejected_prediction_tokens": 0
+    }
+  },
+  "format": {
+    "json_object": true,
+    "rule_unchanged": true,
+    "passage_is_string": true,
+    "passage_sha256": "1abb8e5112ba643c9e8243c93c5b41917617268b7c87156e3729d28cf7cfaf9c",
+    "passage_words": 275
+  },
+  "finished_at": "2026-09-22T20:05:27.874780+00:00",
+  "latency_seconds": 5.626,
+  "usage_cost_upper_estimate_usd": 0.0002484,
+  "stream_status": "active",
+  "budget": {
+    "usage_cost_upper_estimate_usd": 3.7692793,
+    "uncertain_cost_reserve_usd": 0.04533,
+    "in_flight_reserve_usd": 0.59015,
+    "limit_usd": 18.83
+  }
+}

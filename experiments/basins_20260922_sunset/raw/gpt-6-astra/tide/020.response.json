@@ -1,0 +1,50 @@
+{
+  "model": "gpt-6-astra",
+  "seed": "tide",
+  "hop": 20,
+  "http_status": 200,
+  "response_body": "{\n  \"id\": \"chatcmpl-ER17okUXscOvwBv8Epgo32Cz96URF\",\n  \"object\": \"chat.completion\",\n  \"created\": 1790107888,\n  \"model\": \"gpt-6-astra\",\n  \"choices\": [\n    {\n      \"index\": 0,\n      \"message\": {\n        \"role\": \"assistant\",\n        \"content\": \"{\\n  \\\"rule\\\": \\\"Return this JSON object with the rule field unchanged and a new passage of about 250 words in the text field.\\\",\\n  \\\"text\\\": \\\"The laundrette on Bell Street returned something extra with every wash.\\\\n\\\\nUsually it was a button or a foreign coin. Once, I found a wedding ring inside a pillowcase. The woman behind the counter accepted it without surprise.\\\\n\\\\n“People leave things,” she said.\\\\n\\\\nThen I found a photograph of myself asleep.\\\\n\\\\nIt was tucked into the pocket of a shirt I had bought that morning.\\\\n\\\\nI recognised my bedroom, my yellow blanket, the glass of water beside the bed. Someone stood in the doorway, but the flash had caught only their hand.\\\\n\\\\nI took it to the counter.\\\\n\\\\nThe woman put on her glasses.\\\\n\\\\n“You’ve been using machine six?”\\\\n\\\\nI nodded.\\\\n\\\\nShe looked towards the back wall.\\\\n\\\\n“Use four next time.”\\\\n\\\\nAt home, I examined the photograph again. The hand wore my wedding ring.\\\\n\\\\nI had buried my husband wearing it.\\\\n\\\\nThe following Thursday, I used machine six.\\\\n\\\\nAmong the warm towels was a folded note in his handwriting.\\\\n\\\\nStop leaving the window open.\\\\n\\\\nI checked every window before bed. In the morning, the kitchen one stood an inch above its frame. There was damp soil on the sill.\\\\n\\\\nI washed the towels again.\\\\n\\\\nThis time, his ring came back.\\\\n\\\\nThe woman watched me hold it under the fluorescent light.\\\\n\\\\n“Sometimes,” she said, “they run out of things to send.”\\\\n\\\\nI asked what happened then.\\\\n\\\\nBehind us, machine six began its final spin.\\\\n\\\\nSomething heavy knocked against the drum, three times.\\\\n\\\\nThe woman locked the front door and turned the sign to CLOSED.\\\\n\\\\n“Now,” she said, “we see whether you brought enough for him to wear.”\\\"\\n}\",\n        \"refusal\": null,\n        \"annotations\": []\n      },\n      \"finish_reason\": \"stop\"\n    }\n  ],\n  \"usage\": {\n    \"prompt_tokens\": 422,\n    \"completion_tokens\": 417,\n    \"total_tokens\": 839,\n    \"prompt_tokens_details\": {\n      \"cached_tokens\": 0,\n      \"cache_write_tokens\": 0,\n      \"audio_tokens\": 0\n    },\n    \"completion_tokens_details\": {\n      \"reasoning_tokens\": 0,\n      \"audio_tokens\": 0,\n      \"accepted_prediction_tokens\": 0,\n      \"rejected_prediction_tokens\": 0\n    }\n  },\n  \"service_tier\": \"default\",\n  \"system_fingerprint\": null\n}\n",
+  "response_headers": {
+    "Date": "Tue, 22 Sep 2026 20:11:42 GMT",
+    "openai-processing-ms": "13981",
+    "x-request-id": "req_891e5741f8cd4f88a2f7e0243bc6313c"
+  },
+  "output": "{\n  \"rule\": \"Return this JSON object with the rule field unchanged and a new passage of about 250 words in the text field.\",\n  \"text\": \"The laundrette on Bell Street returned something extra with every wash.\\n\\nUsually it was a button or a foreign coin. Once, I found a wedding ring inside a pillowcase. The woman behind the counter accepted it without surprise.\\n\\n“People leave things,” she said.\\n\\nThen I found a photograph of myself asleep.\\n\\nIt was tucked into the pocket of a shirt I had bought that morning.\\n\\nI recognised my bedroom, my yellow blanket, the glass of water beside the bed. Someone stood in the doorway, but the flash had caught only their hand.\\n\\nI took it to the counter.\\n\\nThe woman put on her glasses.\\n\\n“You’ve been using machine six?”\\n\\nI nodded.\\n\\nShe looked towards the back wall.\\n\\n“Use four next time.”\\n\\nAt home, I examined the photograph again. The hand wore my wedding ring.\\n\\nI had buried my husband wearing it.\\n\\nThe following Thursday, I used machine six.\\n\\nAmong the warm towels was a folded note in his handwriting.\\n\\nStop leaving the window open.\\n\\nI checked every window before bed. In the morning, the kitchen one stood an inch above its frame. There was damp soil on the sill.\\n\\nI washed the towels again.\\n\\nThis time, his ring came back.\\n\\nThe woman watched me hold it under the fluorescent light.\\n\\n“Sometimes,” she said, “they run out of things to send.”\\n\\nI asked what happened then.\\n\\nBehind us, machine six began its final spin.\\n\\nSomething heavy knocked against the drum, three times.\\n\\nThe woman locked the front door and turned the sign to CLOSED.\\n\\n“Now,” she said, “we see whether you brought enough for him to wear.”\"\n}",
+  "output_sha256": "edf61bbc2c39438dbfe26179ef3ac3f1a6f359e58dbdf79d865b57a4e1449a80",
+  "finish_reason": "stop",
+  "refusal": null,
+  "returned_model": "gpt-6-astra",
+  "usage": {
+    "prompt_tokens": 422,
+    "completion_tokens": 417,
+    "total_tokens": 839,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "audio_tokens": 0,
+      "accepted_prediction_tokens": 0,
+      "rejected_prediction_tokens": 0
+    }
+  },
+  "format": {
+    "json_object": true,
+    "rule_unchanged": true,
+    "passage_is_string": true,
+    "passage_sha256": "c04a5265340b70457fcbb42797e7c0e0eba67bec8f8a7f29dc16e4329f87ec13",
+    "passage_words": 266
+  },
+  "finished_at": "2026-09-22T20:11:38.147302+00:00",
+  "latency_seconds": 14.1018,
+  "usage_cost_upper_estimate_usd": 0.02507,
+  "stream_status": "active",
+  "budget": {
+    "usage_cost_upper_estimate_usd": 5.9785477,
+    "uncertain_cost_reserve_usd": 0.04533,
+    "in_flight_reserve_usd": 0.315224,
+    "limit_usd": 18.83
+  }
+}

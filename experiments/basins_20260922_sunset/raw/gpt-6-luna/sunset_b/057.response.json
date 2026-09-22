@@ -1,0 +1,50 @@
+{
+  "model": "gpt-6-luna",
+  "seed": "sunset_b",
+  "hop": 57,
+  "http_status": 200,
+  "response_body": "{\n  \"id\": \"chatcmpl-ER14QCKbDzk4MyJal5CHjkpQ3X3MV\",\n  \"object\": \"chat.completion\",\n  \"created\": 1790107678,\n  \"model\": \"gpt-6-luna\",\n  \"choices\": [\n    {\n      \"index\": 0,\n      \"message\": {\n        \"role\": \"assistant\",\n        \"content\": \"{\\n  \\\"rule\\\": \\\"Return this JSON object with the rule field unchanged and a new passage of about 250 words in the text field.\\\",\\n  \\\"text\\\": \\\"Peter kept walking, though every step seemed to carry the tune deeper into his head. It drifted between the trees, gentle and low, like someone humming to keep themselves company. The melody was almost his mother’s, but it turned at the wrong places, twisting into notes she had never sung.\\\\n\\\\n“Don’t listen,” Ada said.\\\\n\\\\n“I’m trying.”\\\\n\\\\nElian unfolded the map as they walked. Its ink had blurred where the cove was marked, leaving a gray smear across the coastline. Northwatch, however, remained clear. A small black tower stood at the end of a thin trail, and beside it someone had drawn a circle around a single word: *Remember*.\\\\n\\\\n“Do you know what that means?” Peter asked.\\\\n\\\\nElian shook her head. “Not yet.”\\\\n\\\\nThe trail climbed steadily. Wet branches brushed their shoulders, and the forest floor grew soft beneath their boots. Behind them, the tune followed, never louder, never farther away.\\\\n\\\\nAt last, the trees opened onto a ridge. Beyond it stood Northwatch: a squat stone tower with a roof that had partly collapsed. Its windows were dark. A rusted bell hung above the doorway, motionless in the wind.\\\\n\\\\nAda let go of Peter’s arm. “That bell wasn’t on the map.”\\\\n\\\\nThe compass needle jerked toward it. A hairline crack spread across the glass.\\\\n\\\\nPeter stepped closer. The song behind them stopped.\\\\n\\\\nFor one quiet moment, the forest held its breath. Then the bell rang once, though no hand had touched it.\\\\n\\\\nPeter felt the sound pass through him—not as a note, but as a question.\\\\n\\\\nFrom inside the tower, someone answered in his mother’s voice.\\\"\\n}\",\n        \"refusal\": null,\n        \"annotations\": []\n      },\n      \"finish_reason\": \"stop\"\n    }\n  ],\n  \"usage\": {\n    \"prompt_tokens\": 432,\n    \"completion_tokens\": 458,\n    \"total_tokens\": 890,\n    \"prompt_tokens_details\": {\n      \"cached_tokens\": 0,\n      \"cache_write_tokens\": 0,\n      \"audio_tokens\": 0\n    },\n    \"completion_tokens_details\": {\n      \"reasoning_tokens\": 45,\n      \"audio_tokens\": 0,\n      \"accepted_prediction_tokens\": 0,\n      \"rejected_prediction_tokens\": 0\n    }\n  },\n  \"service_tier\": \"default\",\n  \"system_fingerprint\": null\n}\n",
+  "response_headers": {
+    "Date": "Tue, 22 Sep 2026 20:08:03 GMT",
+    "openai-processing-ms": "5039",
+    "x-request-id": "req_1750cb4a9d7f4059adce1419cb5b0bf4"
+  },
+  "output": "{\n  \"rule\": \"Return this JSON object with the rule field unchanged and a new passage of about 250 words in the text field.\",\n  \"text\": \"Peter kept walking, though every step seemed to carry the tune deeper into his head. It drifted between the trees, gentle and low, like someone humming to keep themselves company. The melody was almost his mother’s, but it turned at the wrong places, twisting into notes she had never sung.\\n\\n“Don’t listen,” Ada said.\\n\\n“I’m trying.”\\n\\nElian unfolded the map as they walked. Its ink had blurred where the cove was marked, leaving a gray smear across the coastline. Northwatch, however, remained clear. A small black tower stood at the end of a thin trail, and beside it someone had drawn a circle around a single word: *Remember*.\\n\\n“Do you know what that means?” Peter asked.\\n\\nElian shook her head. “Not yet.”\\n\\nThe trail climbed steadily. Wet branches brushed their shoulders, and the forest floor grew soft beneath their boots. Behind them, the tune followed, never louder, never farther away.\\n\\nAt last, the trees opened onto a ridge. Beyond it stood Northwatch: a squat stone tower with a roof that had partly collapsed. Its windows were dark. A rusted bell hung above the doorway, motionless in the wind.\\n\\nAda let go of Peter’s arm. “That bell wasn’t on the map.”\\n\\nThe compass needle jerked toward it. A hairline crack spread across the glass.\\n\\nPeter stepped closer. The song behind them stopped.\\n\\nFor one quiet moment, the forest held its breath. Then the bell rang once, though no hand had touched it.\\n\\nPeter felt the sound pass through him—not as a note, but as a question.\\n\\nFrom inside the tower, someone answered in his mother’s voice.\"\n}",
+  "output_sha256": "3252bc6777802a486d3231c2e88e7f3b1d1b47f0483ee1614c3a3fa0757695fe",
+  "finish_reason": "stop",
+  "refusal": null,
+  "returned_model": "gpt-6-luna",
+  "usage": {
+    "prompt_tokens": 432,
+    "completion_tokens": 458,
+    "total_tokens": 890,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 45,
+      "audio_tokens": 0,
+      "accepted_prediction_tokens": 0,
+      "rejected_prediction_tokens": 0
+    }
+  },
+  "format": {
+    "json_object": true,
+    "rule_unchanged": true,
+    "passage_is_string": true,
+    "passage_sha256": "e9b2dd5c138706940512bde20c6fa5f2e4cc58b5c97b94cf5d8ce36986bc6ca9",
+    "passage_words": 265
+  },
+  "finished_at": "2026-09-22T20:07:59.058472+00:00",
+  "latency_seconds": 5.164,
+  "usage_cost_upper_estimate_usd": 0.0002722,
+  "stream_status": "active",
+  "budget": {
+    "usage_cost_upper_estimate_usd": 4.7412594,
+    "uncertain_cost_reserve_usd": 0.04533,
+    "in_flight_reserve_usd": 0.590376,
+    "limit_usd": 18.83
+  }
+}

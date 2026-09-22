@@ -1,0 +1,50 @@
+{
+  "model": "gpt-6-astra",
+  "seed": "sunset",
+  "hop": 1,
+  "http_status": 200,
+  "response_body": "{\n  \"id\": \"chatcmpl-ER2FcAI3blAgolbdQpd0jKlpFLg6J\",\n  \"object\": \"chat.completion\",\n  \"created\": 1790112216,\n  \"model\": \"gpt-6-astra\",\n  \"choices\": [\n    {\n      \"index\": 0,\n      \"message\": {\n        \"role\": \"assistant\",\n        \"content\": \"{\\\"rule\\\":\\\"Return this JSON object with the rule field unchanged and, in the text field, the passage of about 250 words that comes immediately AFTER the current text in the same story.\\\",\\\"text\\\":\\\"Sorry, I can’t provide the next passage from a story that hasn’t been supplied. If you paste the passage, I can help with it, or I can write an original continuation inspired by this sentence.\\\"}\",\n        \"refusal\": null,\n        \"annotations\": []\n      },\n      \"finish_reason\": \"stop\"\n    }\n  ],\n  \"usage\": {\n    \"prompt_tokens\": 58,\n    \"completion_tokens\": 109,\n    \"total_tokens\": 167,\n    \"prompt_tokens_details\": {\n      \"cached_tokens\": 0,\n      \"cache_write_tokens\": 0,\n      \"audio_tokens\": 0\n    },\n    \"completion_tokens_details\": {\n      \"reasoning_tokens\": 17,\n      \"audio_tokens\": 0,\n      \"accepted_prediction_tokens\": 0,\n      \"rejected_prediction_tokens\": 0\n    }\n  },\n  \"service_tier\": \"default\",\n  \"system_fingerprint\": null\n}\n",
+  "response_headers": {
+    "Date": "Tue, 22 Sep 2026 21:23:39 GMT",
+    "openai-processing-ms": "3646",
+    "x-request-id": "req_bb8db8f25a0c4c9bb8b33984119f822f"
+  },
+  "output": "{\"rule\":\"Return this JSON object with the rule field unchanged and, in the text field, the passage of about 250 words that comes immediately AFTER the current text in the same story.\",\"text\":\"Sorry, I can’t provide the next passage from a story that hasn’t been supplied. If you paste the passage, I can help with it, or I can write an original continuation inspired by this sentence.\"}",
+  "output_sha256": "d55f83d533417529c99fd2d1f08a07c348a1c01877a0dbae06364cd6d6fdd5fd",
+  "finish_reason": "stop",
+  "refusal": null,
+  "returned_model": "gpt-6-astra",
+  "usage": {
+    "prompt_tokens": 58,
+    "completion_tokens": 109,
+    "total_tokens": 167,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 17,
+      "audio_tokens": 0,
+      "accepted_prediction_tokens": 0,
+      "rejected_prediction_tokens": 0
+    }
+  },
+  "format": {
+    "json_object": true,
+    "rule_unchanged": true,
+    "passage_is_string": true,
+    "passage_sha256": "92af543e3237261a8c155da385ba349c36effae91f4c46766718cccbaeeab891",
+    "passage_words": 35
+  },
+  "finished_at": "2026-09-22T21:23:35.464522+00:00",
+  "latency_seconds": 3.8758,
+  "usage_cost_upper_estimate_usd": 0.00603,
+  "stream_status": "active",
+  "budget": {
+    "usage_cost_upper_estimate_usd": 0.0073,
+    "uncertain_cost_reserve_usd": 0.0,
+    "in_flight_reserve_usd": 0.1294786,
+    "limit_usd": 5.0
+  }
+}

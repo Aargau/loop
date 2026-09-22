@@ -1,0 +1,50 @@
+{
+  "model": "gpt-6-astra",
+  "seed": "tide",
+  "hop": 43,
+  "http_status": 200,
+  "response_body": "{\n  \"id\": \"chatcmpl-ER1QrhIEscjD0ONFH33dBTcvfr1X8\",\n  \"object\": \"chat.completion\",\n  \"created\": 1790109069,\n  \"model\": \"gpt-6-astra\",\n  \"choices\": [\n    {\n      \"index\": 0,\n      \"message\": {\n        \"role\": \"assistant\",\n        \"content\": \"{\\n  \\\"rule\\\": \\\"Return this JSON object with the rule field unchanged and a new passage of about 250 words in the text field.\\\",\\n  \\\"text\\\": \\\"When the reservoir emptied, our old house appeared with its upstairs windows open.\\\\n\\\\nMy brother said not to go.\\\\n\\\\n“The mud will take your boots.”\\\\n\\\\nHe had been practical since we were children. I borrowed his boots.\\\\n\\\\nThe village lay half a mile beyond the warning signs. Roofs had folded inward. The church clock showed twenty past four, though I remembered it stopping long before the flood.\\\\n\\\\nOur house still had its blue door.\\\\n\\\\nInside, everything stood lower than it should. The table had sunk to its knees. Silt filled the fireplace. A fish skeleton rested where we used to leave the post.\\\\n\\\\nI went looking for the marks beside the kitchen doorway.\\\\n\\\\nMum measured us every birthday, pressing a cereal box flat against our heads. My brother always stretched. She always pretended not to notice.\\\\n\\\\nThe pencil had washed away.\\\\n\\\\nI scraped the doorframe with my thumbnail until a pale strip emerged, bare of everything.\\\\n\\\\nOutside, my brother called my name.\\\\n\\\\nHe stood in the doorway wearing office shoes, already ruined.\\\\n\\\\n“Find anything?”\\\\n\\\\nI shook my head.\\\\n\\\\nHe looked at the strip of wood. Then he turned his back to it and stood straight.\\\\n\\\\n“Go on.”\\\\n\\\\n“We haven’t got a pencil.”\\\\n\\\\nHe took his keys from his pocket.\\\\n\\\\nI held one above his head and scratched a short line. Then he made mine.\\\\n\\\\nWe left before the rain started.\\\\n\\\\nAt the car, he opened the boot for our muddy shoes. I had to lean on him to pull his boots off. He complained that I was stretching the leather, and drove me home in his socks.\\\"\\n}\",\n        \"refusal\": null,\n        \"annotations\": []\n      },\n      \"finish_reason\": \"stop\"\n    }\n  ],\n  \"usage\": {\n    \"prompt_tokens\": 443,\n    \"completion_tokens\": 402,\n    \"total_tokens\": 845,\n    \"prompt_tokens_details\": {\n      \"cached_tokens\": 0,\n      \"cache_write_tokens\": 0,\n      \"audio_tokens\": 0\n    },\n    \"completion_tokens_details\": {\n      \"reasoning_tokens\": 0,\n      \"audio_tokens\": 0,\n      \"accepted_prediction_tokens\": 0,\n      \"rejected_prediction_tokens\": 0\n    }\n  },\n  \"service_tier\": \"default\",\n  \"system_fingerprint\": null\n}\n",
+  "response_headers": {
+    "Date": "Tue, 22 Sep 2026 20:31:30 GMT",
+    "openai-processing-ms": "20883",
+    "x-request-id": "req_f167bde8eadd4c72af47c450f61ca614"
+  },
+  "output": "{\n  \"rule\": \"Return this JSON object with the rule field unchanged and a new passage of about 250 words in the text field.\",\n  \"text\": \"When the reservoir emptied, our old house appeared with its upstairs windows open.\\n\\nMy brother said not to go.\\n\\n“The mud will take your boots.”\\n\\nHe had been practical since we were children. I borrowed his boots.\\n\\nThe village lay half a mile beyond the warning signs. Roofs had folded inward. The church clock showed twenty past four, though I remembered it stopping long before the flood.\\n\\nOur house still had its blue door.\\n\\nInside, everything stood lower than it should. The table had sunk to its knees. Silt filled the fireplace. A fish skeleton rested where we used to leave the post.\\n\\nI went looking for the marks beside the kitchen doorway.\\n\\nMum measured us every birthday, pressing a cereal box flat against our heads. My brother always stretched. She always pretended not to notice.\\n\\nThe pencil had washed away.\\n\\nI scraped the doorframe with my thumbnail until a pale strip emerged, bare of everything.\\n\\nOutside, my brother called my name.\\n\\nHe stood in the doorway wearing office shoes, already ruined.\\n\\n“Find anything?”\\n\\nI shook my head.\\n\\nHe looked at the strip of wood. Then he turned his back to it and stood straight.\\n\\n“Go on.”\\n\\n“We haven’t got a pencil.”\\n\\nHe took his keys from his pocket.\\n\\nI held one above his head and scratched a short line. Then he made mine.\\n\\nWe left before the rain started.\\n\\nAt the car, he opened the boot for our muddy shoes. I had to lean on him to pull his boots off. He complained that I was stretching the leather, and drove me home in his socks.\"\n}",
+  "output_sha256": "1d789bca0a1b7999997947d07468a2212c18d72d46fd6d7117ce0a4f7a126266",
+  "finish_reason": "stop",
+  "refusal": null,
+  "returned_model": "gpt-6-astra",
+  "usage": {
+    "prompt_tokens": 443,
+    "completion_tokens": 402,
+    "total_tokens": 845,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "audio_tokens": 0,
+      "accepted_prediction_tokens": 0,
+      "rejected_prediction_tokens": 0
+    }
+  },
+  "format": {
+    "json_object": true,
+    "rule_unchanged": true,
+    "passage_is_string": true,
+    "passage_sha256": "769c12bca691a5d2f6189174bba94ec2facc6ab856d28e928ebac9a62804b31b",
+    "passage_words": 267
+  },
+  "finished_at": "2026-09-22T20:31:26.381467+00:00",
+  "latency_seconds": 21.1264,
+  "usage_cost_upper_estimate_usd": 0.02453,
+  "stream_status": "active",
+  "budget": {
+    "usage_cost_upper_estimate_usd": 11.9213577,
+    "uncertain_cost_reserve_usd": 0.04533,
+    "in_flight_reserve_usd": 0.22545,
+    "limit_usd": 18.83
+  }
+}

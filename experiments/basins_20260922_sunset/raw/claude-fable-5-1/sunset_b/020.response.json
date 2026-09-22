@@ -1,0 +1,48 @@
+{
+  "model": "claude-fable-5-1",
+  "seed": "sunset_b",
+  "hop": 20,
+  "http_status": 200,
+  "response_body": "{\"model\":\"claude-fable-5-1\",\"id\":\"msg_011CfK5hkvE5WyrGziYRuLT8\",\"type\":\"message\",\"role\":\"assistant\",\"content\":[{\"type\":\"text\",\"text\":\"{\\\"rule\\\": \\\"Return this JSON object with the rule field unchanged and a new passage of about 250 words in the text field.\\\", \\\"text\\\": \\\"The lighthouse at Vesterholm was automated the spring Anders turned seventy-one, and the engineers left on the same morning his brother's letter stopped arriving. He stood at the foot of the tower watching their van take the coast road, the last envelope from March still folded in his coat pocket, and for a long while the two silences kept company in him: the lamp that would now turn without a hand on it and the mailbox at the gate with nothing inside.\\\\n\\\\nHe climbed the stairs anyway. Forty years had taught his legs the count, and the lantern room did not object to an old man arriving at dusk with nothing to do. The brass still wanted polishing, the logbook still lay open on its shelf, and when the beam swung out over the skerries he found himself noting the time in the margin as if someone downstream would read it.\\\\n\\\\nThe ships passed farther out now, guided by satellites, and did not need him. He knew that. He still stood at the glass when a trawler came in past the reef, lifting his hand the way he always had, and once or twice a light blinked back, which might have been habit on their side too.\\\\n\\\\nWhat unsettled him was how little the machinery changed the work. He had thought himself the keeper, the one the light depended on. Now he understood he had mostly been its companion. The lamp had never needed him to burn; it had needed someone to see the dark it was pushing against and to say, quietly, that the coast was still there.\\\\n\\\\nHe kept saying it.\\\"}\"}],\"container\":null,\"stop_reason\":\"end_turn\",\"stop_sequence\":null,\"stop_details\":null,\"usage\":{\"input_tokens\":543,\"cache_creation_input_tokens\":0,\"cache_read_input_tokens\":0,\"cache_creation\":{\"ephemeral_5m_input_tokens\":0,\"ephemeral_1h_input_tokens\":0},\"output_tokens\":508,\"output_tokens_details\":{\"thinking_tokens\":0},\"service_tier\":\"standard\",\"inference_geo\":\"global\"}}",
+  "response_headers": {
+    "Date": "Tue, 22 Sep 2026 20:07:58 GMT",
+    "request-id": "req_011CfK5hk4NgehipPFcgw3Jc"
+  },
+  "output": "{\"rule\": \"Return this JSON object with the rule field unchanged and a new passage of about 250 words in the text field.\", \"text\": \"The lighthouse at Vesterholm was automated the spring Anders turned seventy-one, and the engineers left on the same morning his brother's letter stopped arriving. He stood at the foot of the tower watching their van take the coast road, the last envelope from March still folded in his coat pocket, and for a long while the two silences kept company in him: the lamp that would now turn without a hand on it and the mailbox at the gate with nothing inside.\\n\\nHe climbed the stairs anyway. Forty years had taught his legs the count, and the lantern room did not object to an old man arriving at dusk with nothing to do. The brass still wanted polishing, the logbook still lay open on its shelf, and when the beam swung out over the skerries he found himself noting the time in the margin as if someone downstream would read it.\\n\\nThe ships passed farther out now, guided by satellites, and did not need him. He knew that. He still stood at the glass when a trawler came in past the reef, lifting his hand the way he always had, and once or twice a light blinked back, which might have been habit on their side too.\\n\\nWhat unsettled him was how little the machinery changed the work. He had thought himself the keeper, the one the light depended on. Now he understood he had mostly been its companion. The lamp had never needed him to burn; it had needed someone to see the dark it was pushing against and to say, quietly, that the coast was still there.\\n\\nHe kept saying it.\"}",
+  "output_sha256": "a8b1fbe4c78d3f81ff77e16e11dff96d41938861e3d29c0d04ff967185391aeb",
+  "finish_reason": "end_turn",
+  "refusal": null,
+  "returned_model": "claude-fable-5-1",
+  "usage": {
+    "input_tokens": 543,
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 0,
+    "cache_creation": {
+      "ephemeral_5m_input_tokens": 0,
+      "ephemeral_1h_input_tokens": 0
+    },
+    "output_tokens": 508,
+    "output_tokens_details": {
+      "thinking_tokens": 0
+    },
+    "service_tier": "standard",
+    "inference_geo": "global"
+  },
+  "format": {
+    "json_object": true,
+    "rule_unchanged": true,
+    "passage_is_string": true,
+    "passage_sha256": "09980365b4d6bbe1b26af4ed75189612f05a66726a3f8e15b43a570396bc86a2",
+    "passage_words": 273
+  },
+  "finished_at": "2026-09-22T20:07:54.869711+00:00",
+  "latency_seconds": 11.9421,
+  "usage_cost_upper_estimate_usd": 0.03083,
+  "stream_status": "active",
+  "budget": {
+    "usage_cost_upper_estimate_usd": 4.7361952,
+    "uncertain_cost_reserve_usd": 0.04533,
+    "in_flight_reserve_usd": 0.3651487,
+    "limit_usd": 18.83
+  }
+}

@@ -1,0 +1,22 @@
+{
+  "started_at": "2026-09-22T20:04:13.937287+00:00",
+  "model": "claude-opus-5-5",
+  "seed": "sunset_b",
+  "hop": 20,
+  "endpoint": "https://api.anthropic.com/v1/messages",
+  "body": {
+    "model": "claude-opus-5-5",
+    "messages": [
+      {
+        "role": "user",
+        "content": "```json\n{\"rule\": \"Return this JSON object with the rule field unchanged and a new passage of about 250 words in the text field.\", \"text\": \"On the outskirts of Millbrook stood a greenhouse so old that its glass panes had turned faintly violet with age. It belonged to Marguerite Dell, who had inherited it from her grandmother along with a leather notebook full of cramped handwriting and pressed leaves. Most people in town assumed the greenhouse would be torn down when Marguerite moved back from the city, but instead she spent her first winter replacing cracked panes, patching the iron frame, and coaxing the ancient boiler back to life. By spring, the air inside smelled of damp soil and citrus blossoms. Her grandmother's notebook turned out to be more than a gardening log. Tucked between entries about tomato blight and orchid watering schedules were recipes, bits of gossip, and the names of neighbors who had once traded cuttings across the back fence. Marguerite began tracking those families down. Some had moved away, but many still lived nearby, and more than a few still grew plants descended from her grandmother's originals. An elderly man named Walter brought her a rosemary bush grown from a sprig taken sixty years earlier. A young mother arrived with a jar of heirloom bean seeds her own grandmother had saved. Before long, Marguerite hosted a seed swap every Saturday morning, and the greenhouse filled with voices, children, and folding tables crowded with pots. Nobody could quite remember when it had become the heart of the town. Marguerite only smiled when asked. Gardens, she said, are just long conversations between people who plant things and people who come after.\"}\n```"
+      }
+    ],
+    "max_tokens": 4096,
+    "output_config": {
+      "effort": "low"
+    }
+  },
+  "state_sha256": "eebb841d8d15ce65ffd590ae61f6c9eb42cbf120ea0682554ba2c463415ef8ef",
+  "reserved_cost_usd": 0.090776
+}

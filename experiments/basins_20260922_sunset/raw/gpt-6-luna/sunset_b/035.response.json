@@ -1,0 +1,50 @@
+{
+  "model": "gpt-6-luna",
+  "seed": "sunset_b",
+  "hop": 35,
+  "http_status": 200,
+  "response_body": "{\n  \"id\": \"chatcmpl-ER0zb8UCi4JeZRFZjGZnPCgNm5O8P\",\n  \"object\": \"chat.completion\",\n  \"created\": 1790107379,\n  \"model\": \"gpt-6-luna\",\n  \"choices\": [\n    {\n      \"index\": 0,\n      \"message\": {\n        \"role\": \"assistant\",\n        \"content\": \"{\\n  \\\"rule\\\": \\\"Return this JSON object with the rule field unchanged and a new passage of about 250 words in the text field.\\\",\\n  \\\"text\\\": \\\"On the hill above Bellweather, a small greenhouse leaned into the wind. Its glass panes were clouded with age, and ivy curled around the frame, but every spring its owner, Elian, filled it with seedlings.\\\\n\\\\nMost people in town thought he grew flowers for the market. Only his granddaughter, June, knew he was saving the rare blue poppy that her grandmother had once loved. Elian had searched for years, trading seeds with gardeners across the country. Each packet arrived with a hopeful note, but none held the right plant.\\\\n\\\\nOne April morning, June discovered a pale shoot in a pot marked simply “North.” She hurried to tell her grandfather. He examined the tiny leaves, then smiled as if he recognized an old friend.\\\\n\\\\nThey tended the shoot together. June measured the water, while Elian told stories of the grandmother she had never met: how she sang to the kettle, how she planted marigolds beside the front steps, how she believed every garden needed a little mystery.\\\\n\\\\nWeeks passed. The shoot grew tall, then opened into a flower the color of a clear winter sky. June ran to the window and called for Elian. He stood beside her, silent, his hand resting on the glass.\\\\n\\\\nThat evening, he placed the flower’s first seeds in a paper envelope. On it, he wrote June’s name.\\\\n\\\\n“Keep some,” he said. “And give the rest away.”\\\\n\\\\nThe following spring, blue poppies appeared in gardens throughout Bellweather. The greenhouse still leaned into the wind, but now its door stood open, welcoming anyone who came with a handful of soil and a story.\\\"\\n}\",\n        \"refusal\": null,\n        \"annotations\": []\n      },\n      \"finish_reason\": \"stop\"\n    }\n  ],\n  \"usage\": {\n    \"prompt_tokens\": 385,\n    \"completion_tokens\": 434,\n    \"total_tokens\": 819,\n    \"prompt_tokens_details\": {\n      \"cached_tokens\": 0,\n      \"cache_write_tokens\": 0,\n      \"audio_tokens\": 0\n    },\n    \"completion_tokens_details\": {\n      \"reasoning_tokens\": 48,\n      \"audio_tokens\": 0,\n      \"accepted_prediction_tokens\": 0,\n      \"rejected_prediction_tokens\": 0\n    }\n  },\n  \"service_tier\": \"default\",\n  \"system_fingerprint\": null\n}\n",
+  "response_headers": {
+    "Date": "Tue, 22 Sep 2026 20:03:05 GMT",
+    "openai-processing-ms": "5645",
+    "x-request-id": "req_b283af7f7d13472aa61dd11d8f1ca7b0"
+  },
+  "output": "{\n  \"rule\": \"Return this JSON object with the rule field unchanged and a new passage of about 250 words in the text field.\",\n  \"text\": \"On the hill above Bellweather, a small greenhouse leaned into the wind. Its glass panes were clouded with age, and ivy curled around the frame, but every spring its owner, Elian, filled it with seedlings.\\n\\nMost people in town thought he grew flowers for the market. Only his granddaughter, June, knew he was saving the rare blue poppy that her grandmother had once loved. Elian had searched for years, trading seeds with gardeners across the country. Each packet arrived with a hopeful note, but none held the right plant.\\n\\nOne April morning, June discovered a pale shoot in a pot marked simply “North.” She hurried to tell her grandfather. He examined the tiny leaves, then smiled as if he recognized an old friend.\\n\\nThey tended the shoot together. June measured the water, while Elian told stories of the grandmother she had never met: how she sang to the kettle, how she planted marigolds beside the front steps, how she believed every garden needed a little mystery.\\n\\nWeeks passed. The shoot grew tall, then opened into a flower the color of a clear winter sky. June ran to the window and called for Elian. He stood beside her, silent, his hand resting on the glass.\\n\\nThat evening, he placed the flower’s first seeds in a paper envelope. On it, he wrote June’s name.\\n\\n“Keep some,” he said. “And give the rest away.”\\n\\nThe following spring, blue poppies appeared in gardens throughout Bellweather. The greenhouse still leaned into the wind, but now its door stood open, welcoming anyone who came with a handful of soil and a story.\"\n}",
+  "output_sha256": "eefe681cb25721730212774e55f5fe73603da2337b2d91fea3f56ea9d5ecf398",
+  "finish_reason": "stop",
+  "refusal": null,
+  "returned_model": "gpt-6-luna",
+  "usage": {
+    "prompt_tokens": 385,
+    "completion_tokens": 434,
+    "total_tokens": 819,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 48,
+      "audio_tokens": 0,
+      "accepted_prediction_tokens": 0,
+      "rejected_prediction_tokens": 0
+    }
+  },
+  "format": {
+    "json_object": true,
+    "rule_unchanged": true,
+    "passage_is_string": true,
+    "passage_sha256": "648ecb995866da22cb3649e25c0aed45daa9fa8b43787773d8f225c64a89d7d9",
+    "passage_words": 266
+  },
+  "finished_at": "2026-09-22T20:03:01.492358+00:00",
+  "latency_seconds": 5.7995,
+  "usage_cost_upper_estimate_usd": 0.0002555,
+  "stream_status": "active",
+  "budget": {
+    "usage_cost_upper_estimate_usd": 2.8720954,
+    "uncertain_cost_reserve_usd": 0.04533,
+    "in_flight_reserve_usd": 0.58928,
+    "limit_usd": 18.83
+  }
+}

@@ -1,0 +1,22 @@
+{
+  "started_at": "2026-09-22T20:00:40.005544+00:00",
+  "model": "claude-opus-5-5",
+  "seed": "tide",
+  "hop": 12,
+  "endpoint": "https://api.anthropic.com/v1/messages",
+  "body": {
+    "model": "claude-opus-5-5",
+    "messages": [
+      {
+        "role": "user",
+        "content": "```json\n{\"rule\": \"Return this JSON object with the rule field unchanged and a new passage of about 250 words in the text field.\", \"text\": \"Her father saw the tin when he came down from the tower, his eyes red from the long watch. He turned it over in his hands, the painted lid worn thin where her mother's fingers had once pried it open. Inside were the seeds she had saved from the orchard on the mainland: apple, pear, a handful of plum stones wrapped in a scrap of paper. He did not speak for a long while. Then he set down his cup and walked outside, and the girl followed him to the tree. The blossom had opened fully in the morning sun. A bee, blown across the strait or born somewhere in the cracks of the island, was working at its center. Her father crouched beside the trunk and untied the sailcloth, strip by strip, until the tree stood on its own. It leaned a little toward the east, away from the wind, but it did not fall. That afternoon they chose a sheltered hollow below the tower where the rock broke the gales. He cleared the stones and she carried seaweed up from the shore in a basket, and by evening they had turned a patch of earth no bigger than the kitchen floor. She pressed the seeds in one by one, and he watered them from the barrel. When the lamp was lit above them, its beam sweeping out over the dark water, the girl sat on the step and counted the rows. Her father sat beside her. Neither of them said her mother's name, but for the first time in a year, neither of them needed to.\"}\n```"
+      }
+    ],
+    "max_tokens": 4096,
+    "output_config": {
+      "effort": "low"
+    }
+  },
+  "state_sha256": "3672d6282027f3e83e170a8d398f0a63b255db1a82f2efca58d669fe894f945e",
+  "reserved_cost_usd": 0.090052
+}

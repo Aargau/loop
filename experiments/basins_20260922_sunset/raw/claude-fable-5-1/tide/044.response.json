@@ -1,0 +1,48 @@
+{
+  "model": "claude-fable-5-1",
+  "seed": "tide",
+  "hop": 44,
+  "http_status": 200,
+  "response_body": "{\"model\":\"claude-fable-5-1\",\"id\":\"msg_011CfK6sCuH9tbjNx8tL1uEZ\",\"type\":\"message\",\"role\":\"assistant\",\"content\":[{\"type\":\"text\",\"text\":\"{\\\"rule\\\": \\\"Return this JSON object with the rule field unchanged and a new passage of about 250 words in the text field.\\\", \\\"text\\\": \\\"She did not sleep after that. She sat with her back to the cold stone and watched the knot until the grey went white and then, slowly, gold. It did not move. It did not need to. It had been tied by hands that knew the tower's habits, that knew which sill caught the first light and which stayed dark until noon, and it had been left where she would find it before she found anything else.\\\\n\\\\nHer grandmother had used to say that the sea kept two ledgers. One for what it took, and one for what it returned, and that the second was always shorter and always more carefully written. She had never understood that as a child. She understood it now, looking at the knot.\\\\n\\\\nThe ring had gone quiet. Not cold, but quiet, the way a dog goes quiet when the person it has been waiting for finally comes up the road. She turned it once on her finger and felt nothing at all, and that absence was its own kind of answer.\\\\n\\\\nBelow, the tide was going out over the shoal she had kept sharp, and the fog was going with it, unhurried, as if it had never wanted anything.\\\\n\\\\nShe opened the chart at last. Not because the weather asked, but because she wished to see it again, the whole coast laid out plain. The eastern shoal was still there. So was the channel. And along the deep water, in a hand she had not drawn, someone had marked the place where a boat had passed.\\\"}\"}],\"container\":null,\"stop_reason\":\"end_turn\",\"stop_sequence\":null,\"stop_details\":null,\"usage\":{\"input_tokens\":533,\"cache_creation_input_tokens\":0,\"cache_read_input_tokens\":0,\"cache_creation\":{\"ephemeral_5m_input_tokens\":0,\"ephemeral_1h_input_tokens\":0},\"output_tokens\":467,\"output_tokens_details\":{\"thinking_tokens\":0},\"service_tier\":\"standard\",\"inference_geo\":\"global\"}}",
+  "response_headers": {
+    "Date": "Tue, 22 Sep 2026 20:23:13 GMT",
+    "request-id": "req_011CfK6sCZSS2rHDpy2wjHu9"
+  },
+  "output": "{\"rule\": \"Return this JSON object with the rule field unchanged and a new passage of about 250 words in the text field.\", \"text\": \"She did not sleep after that. She sat with her back to the cold stone and watched the knot until the grey went white and then, slowly, gold. It did not move. It did not need to. It had been tied by hands that knew the tower's habits, that knew which sill caught the first light and which stayed dark until noon, and it had been left where she would find it before she found anything else.\\n\\nHer grandmother had used to say that the sea kept two ledgers. One for what it took, and one for what it returned, and that the second was always shorter and always more carefully written. She had never understood that as a child. She understood it now, looking at the knot.\\n\\nThe ring had gone quiet. Not cold, but quiet, the way a dog goes quiet when the person it has been waiting for finally comes up the road. She turned it once on her finger and felt nothing at all, and that absence was its own kind of answer.\\n\\nBelow, the tide was going out over the shoal she had kept sharp, and the fog was going with it, unhurried, as if it had never wanted anything.\\n\\nShe opened the chart at last. Not because the weather asked, but because she wished to see it again, the whole coast laid out plain. The eastern shoal was still there. So was the channel. And along the deep water, in a hand she had not drawn, someone had marked the place where a boat had passed.\"}",
+  "output_sha256": "6b0ff0af08f1abe48cc00c54baf772b6c041c2512dd01ddbaa698fc195d0bc92",
+  "finish_reason": "end_turn",
+  "refusal": null,
+  "returned_model": "claude-fable-5-1",
+  "usage": {
+    "input_tokens": 533,
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 0,
+    "cache_creation": {
+      "ephemeral_5m_input_tokens": 0,
+      "ephemeral_1h_input_tokens": 0
+    },
+    "output_tokens": 467,
+    "output_tokens_details": {
+      "thinking_tokens": 0
+    },
+    "service_tier": "standard",
+    "inference_geo": "global"
+  },
+  "format": {
+    "json_object": true,
+    "rule_unchanged": true,
+    "passage_is_string": true,
+    "passage_sha256": "8c706d2b7f27f33045b32f5a335dc6424b456fc0f99f5c534773318dba93230a",
+    "passage_words": 262
+  },
+  "finished_at": "2026-09-22T20:23:09.421835+00:00",
+  "latency_seconds": 11.4141,
+  "usage_cost_upper_estimate_usd": 0.02868,
+  "stream_status": "active",
+  "budget": {
+    "usage_cost_upper_estimate_usd": 9.9017437,
+    "uncertain_cost_reserve_usd": 0.04533,
+    "in_flight_reserve_usd": 0.318008,
+    "limit_usd": 18.83
+  }
+}

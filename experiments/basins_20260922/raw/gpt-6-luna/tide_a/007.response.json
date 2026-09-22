@@ -1,0 +1,50 @@
+{
+  "model": "gpt-6-luna",
+  "seed": "tide_a",
+  "hop": 7,
+  "http_status": 200,
+  "response_body": "{\n  \"id\": \"chatcmpl-ER0pWrCToTIidW9j3hmnKMCMlsH3W\",\n  \"object\": \"chat.completion\",\n  \"created\": 1790106754,\n  \"model\": \"gpt-6-luna\",\n  \"choices\": [\n    {\n      \"index\": 0,\n      \"message\": {\n        \"role\": \"assistant\",\n        \"content\": \"{\\\"rule\\\":\\\"Return this JSON object with the rule field unchanged and a new passage of about 250 words in the text field.\\\",\\\"text\\\":\\\"Every evening, Mara unlocked the little clock shop and listened to the clocks argue. The tall one insisted it was midnight; the brass one claimed it was nearly noon. A tiny wooden clock, shaped like a fox, never said a word at all.\\\\n\\\\nOne rainy Tuesday, a boy came in carrying a pocket watch wrapped in a red scarf. “It belonged to my grandfather,” he said. “It stopped the night he disappeared.”\\\\n\\\\nMara opened the watch carefully. Inside, beneath the hands, she found a speck of blue glass. She had seen the same color before, shining in the window of the abandoned lighthouse beyond the harbor.\\\\n\\\\n“Does your grandfather know the way there?” she asked.\\\\n\\\\nThe boy shook his head. “He’s been gone for twelve years.”\\\\n\\\\nMara wound the watch. Its hands spun backward, then settled at seven minutes past six. At once, every clock in the shop fell silent. The wooden fox sprang from its shelf and trotted toward the door.\\\\n\\\\nThey followed it through the rain, past shuttered houses and along the seawall. At the lighthouse, the fox scratched at a loose stone. Behind it lay a narrow stairway descending beneath the rocks.\\\\n\\\\nAt the bottom, they found a small room, dry and bright with candles. An old man sat at a table, repairing a broken clock. He looked up at the boy and smiled as if only a moment had passed.\\\\n\\\\nThe pocket watch began ticking again. Outside, the storm eased, and the tide turned toward shore.\\\\n\\\\nYears later, Mara still kept the wooden fox in her shop. It never spoke, but whenever someone lost their way, its paws pointed toward the door.\\\"}\",\n        \"refusal\": null,\n        \"annotations\": []\n      },\n      \"finish_reason\": \"stop\"\n    }\n  ],\n  \"usage\": {\n    \"prompt_tokens\": 374,\n    \"completion_tokens\": 436,\n    \"total_tokens\": 810,\n    \"prompt_tokens_details\": {\n      \"cached_tokens\": 0,\n      \"cache_write_tokens\": 0,\n      \"audio_tokens\": 0\n    },\n    \"completion_tokens_details\": {\n      \"reasoning_tokens\": 42,\n      \"audio_tokens\": 0,\n      \"accepted_prediction_tokens\": 0,\n      \"rejected_prediction_tokens\": 0\n    }\n  },\n  \"service_tier\": \"default\",\n  \"system_fingerprint\": null\n}\n",
+  "response_headers": {
+    "Date": "Tue, 22 Sep 2026 19:52:39 GMT",
+    "openai-processing-ms": "4632",
+    "x-request-id": "req_3efec39d752f43989f1dd7b64edffcd9"
+  },
+  "output": "{\"rule\":\"Return this JSON object with the rule field unchanged and a new passage of about 250 words in the text field.\",\"text\":\"Every evening, Mara unlocked the little clock shop and listened to the clocks argue. The tall one insisted it was midnight; the brass one claimed it was nearly noon. A tiny wooden clock, shaped like a fox, never said a word at all.\\n\\nOne rainy Tuesday, a boy came in carrying a pocket watch wrapped in a red scarf. “It belonged to my grandfather,” he said. “It stopped the night he disappeared.”\\n\\nMara opened the watch carefully. Inside, beneath the hands, she found a speck of blue glass. She had seen the same color before, shining in the window of the abandoned lighthouse beyond the harbor.\\n\\n“Does your grandfather know the way there?” she asked.\\n\\nThe boy shook his head. “He’s been gone for twelve years.”\\n\\nMara wound the watch. Its hands spun backward, then settled at seven minutes past six. At once, every clock in the shop fell silent. The wooden fox sprang from its shelf and trotted toward the door.\\n\\nThey followed it through the rain, past shuttered houses and along the seawall. At the lighthouse, the fox scratched at a loose stone. Behind it lay a narrow stairway descending beneath the rocks.\\n\\nAt the bottom, they found a small room, dry and bright with candles. An old man sat at a table, repairing a broken clock. He looked up at the boy and smiled as if only a moment had passed.\\n\\nThe pocket watch began ticking again. Outside, the storm eased, and the tide turned toward shore.\\n\\nYears later, Mara still kept the wooden fox in her shop. It never spoke, but whenever someone lost their way, its paws pointed toward the door.\"}",
+  "output_sha256": "29c5377fcd1252b67a3da724e9144d33b34510217f09642cacc5ddb04deac2c2",
+  "finish_reason": "stop",
+  "refusal": null,
+  "returned_model": "gpt-6-luna",
+  "usage": {
+    "prompt_tokens": 374,
+    "completion_tokens": 436,
+    "total_tokens": 810,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 42,
+      "audio_tokens": 0,
+      "accepted_prediction_tokens": 0,
+      "rejected_prediction_tokens": 0
+    }
+  },
+  "format": {
+    "json_object": true,
+    "rule_unchanged": true,
+    "passage_is_string": true,
+    "passage_sha256": "fceee1dd4ecfb256f27a47e9d3988775d4fb956342c7ac1fab0cd735153f298c",
+    "passage_words": 276
+  },
+  "finished_at": "2026-09-22T19:52:35.528363+00:00",
+  "latency_seconds": 4.7955,
+  "usage_cost_upper_estimate_usd": 0.00025540000000000003,
+  "stream_status": "active",
+  "budget": {
+    "usage_cost_upper_estimate_usd": 0.5493486,
+    "uncertain_cost_reserve_usd": 0.0,
+    "in_flight_reserve_usd": 0.591088,
+    "limit_usd": 20
+  }
+}

@@ -1,0 +1,48 @@
+{
+  "model": "claude-fable-5-1",
+  "seed": "sunset_a",
+  "hop": 34,
+  "http_status": 200,
+  "response_body": "{\"model\":\"claude-fable-5-1\",\"id\":\"msg_011CfK6Mpow4Lb6HQuMaEeQN\",\"type\":\"message\",\"role\":\"assistant\",\"content\":[{\"type\":\"text\",\"text\":\"{\\\"rule\\\": \\\"Return this JSON object with the rule field unchanged and a new passage of about 250 words in the text field.\\\", \\\"text\\\": \\\"The bus left at seven, and Tomas was at the stop by half past six, because his mother had told him once that being early was the same as being kind, and he had never found a reason to disbelieve her. The bench was wet. He stood.\\\\n\\\\nAcross the road the bakery had its lights on but not its sign, and through the window he could see a woman in a white apron lifting trays with a cloth wrapped round her hands. He watched her the way he watched most things, without meaning to, until she looked up and caught him at it. She did not smile. She did not look away either. After a moment she went back to the trays.\\\\n\\\\nHe had a letter in his inside pocket that he had read eleven times. It said what it said. He knew the sentences by their shapes now, the short one near the top, the long one at the end that curled round on itself and finished with his name spelled wrong. He had decided not to correct them. It seemed a small thing to let go.\\\\n\\\\nThe bus came at four minutes past. He was the only one waiting. The driver nodded at him as if they knew each other, and perhaps they did, perhaps he had taken this bus a hundred times and forgotten every one. He sat by the window on the bakery side. The woman was outside now, turning the sign, and as the bus pulled away she raised one floured hand, not quite a wave, and he found that he had raised his own.\\\"}\"}],\"container\":null,\"stop_reason\":\"end_turn\",\"stop_sequence\":null,\"stop_details\":null,\"usage\":{\"input_tokens\":519,\"cache_creation_input_tokens\":0,\"cache_read_input_tokens\":0,\"cache_creation\":{\"ephemeral_5m_input_tokens\":0,\"ephemeral_1h_input_tokens\":0},\"output_tokens\":465,\"output_tokens_details\":{\"thinking_tokens\":0},\"service_tier\":\"standard\",\"inference_geo\":\"global\"}}",
+  "response_headers": {
+    "Date": "Tue, 22 Sep 2026 20:16:35 GMT",
+    "request-id": "req_011CfK6MpQsUpzcYecyMXkNF"
+  },
+  "output": "{\"rule\": \"Return this JSON object with the rule field unchanged and a new passage of about 250 words in the text field.\", \"text\": \"The bus left at seven, and Tomas was at the stop by half past six, because his mother had told him once that being early was the same as being kind, and he had never found a reason to disbelieve her. The bench was wet. He stood.\\n\\nAcross the road the bakery had its lights on but not its sign, and through the window he could see a woman in a white apron lifting trays with a cloth wrapped round her hands. He watched her the way he watched most things, without meaning to, until she looked up and caught him at it. She did not smile. She did not look away either. After a moment she went back to the trays.\\n\\nHe had a letter in his inside pocket that he had read eleven times. It said what it said. He knew the sentences by their shapes now, the short one near the top, the long one at the end that curled round on itself and finished with his name spelled wrong. He had decided not to correct them. It seemed a small thing to let go.\\n\\nThe bus came at four minutes past. He was the only one waiting. The driver nodded at him as if they knew each other, and perhaps they did, perhaps he had taken this bus a hundred times and forgotten every one. He sat by the window on the bakery side. The woman was outside now, turning the sign, and as the bus pulled away she raised one floured hand, not quite a wave, and he found that he had raised his own.\"}",
+  "output_sha256": "e3c7cee06733b4d1f6b8be1385d528edcc54e301f8ce56129ec3b1658af1d792",
+  "finish_reason": "end_turn",
+  "refusal": null,
+  "returned_model": "claude-fable-5-1",
+  "usage": {
+    "input_tokens": 519,
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 0,
+    "cache_creation": {
+      "ephemeral_5m_input_tokens": 0,
+      "ephemeral_1h_input_tokens": 0
+    },
+    "output_tokens": 465,
+    "output_tokens_details": {
+      "thinking_tokens": 0
+    },
+    "service_tier": "standard",
+    "inference_geo": "global"
+  },
+  "format": {
+    "json_object": true,
+    "rule_unchanged": true,
+    "passage_is_string": true,
+    "passage_sha256": "6dec66f50cb532b3929da75a2f61aaa6f6c4919513f8e43b9d10135c7c40c83e",
+    "passage_words": 270
+  },
+  "finished_at": "2026-09-22T20:16:31.487403+00:00",
+  "latency_seconds": 12.0277,
+  "usage_cost_upper_estimate_usd": 0.02844,
+  "stream_status": "active",
+  "budget": {
+    "usage_cost_upper_estimate_usd": 7.6760957,
+    "uncertain_cost_reserve_usd": 0.04533,
+    "in_flight_reserve_usd": 0.318118,
+    "limit_usd": 18.83
+  }
+}

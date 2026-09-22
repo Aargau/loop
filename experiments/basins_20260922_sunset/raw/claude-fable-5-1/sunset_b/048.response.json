@@ -1,0 +1,48 @@
+{
+  "model": "claude-fable-5-1",
+  "seed": "sunset_b",
+  "hop": 48,
+  "http_status": 200,
+  "response_body": "{\"model\":\"claude-fable-5-1\",\"id\":\"msg_011CfK73MG6werkuiM9EabQ7\",\"type\":\"message\",\"role\":\"assistant\",\"content\":[{\"type\":\"text\",\"text\":\"{\\\"rule\\\": \\\"Return this JSON object with the rule field unchanged and a new passage of about 250 words in the text field.\\\", \\\"text\\\": \\\"The post was a single card, unstamped, pushed through by hand. He knew that before he turned it over because the postman never came on a Saturday and had not come on one in eleven years. It was a plain card, the kind sold in packets of ten at the stationer's two streets down, and on it was written the price of a pound of nails.\\\\n\\\\nHe stood with it a long while. Then he put it under the envelope with the two lines, so that the corner showed, and went to the window again.\\\\n\\\\nThe strip of tar had a figure on it now, or near it. A girl of perhaps twelve, in a coat too long for her, standing on the kerb with her toes over the edge, not stepping down. She was looking at the shop. When she saw him see her she did not move away, which was the thing that unsettled him most. Children ran. This one only shifted her weight to the other foot and went on looking, as if he were the one who had been caught.\\\\n\\\\nHe lifted his hand. He did not know if it was a greeting or a warning and neither, he thought, did she. She lifted hers back, the same uncertain height, and then bent and did what the man from the van had done, palm flat to the black surface, testing it. She held it there. Then she wiped her hand on the long coat and walked off up the street, unhurried, and did not look back, and he knew without going out that the print at the kerb was hers.\\\"}\"}],\"container\":null,\"stop_reason\":\"end_turn\",\"stop_sequence\":null,\"stop_details\":null,\"usage\":{\"input_tokens\":465,\"cache_creation_input_tokens\":0,\"cache_read_input_tokens\":0,\"cache_creation\":{\"ephemeral_5m_input_tokens\":0,\"ephemeral_1h_input_tokens\":0},\"output_tokens\":468,\"output_tokens_details\":{\"thinking_tokens\":0},\"service_tier\":\"standard\",\"inference_geo\":\"global\"}}",
+  "response_headers": {
+    "Date": "Tue, 22 Sep 2026 20:25:32 GMT",
+    "request-id": "req_011CfK73LRVcJX7ddRThKfmz"
+  },
+  "output": "{\"rule\": \"Return this JSON object with the rule field unchanged and a new passage of about 250 words in the text field.\", \"text\": \"The post was a single card, unstamped, pushed through by hand. He knew that before he turned it over because the postman never came on a Saturday and had not come on one in eleven years. It was a plain card, the kind sold in packets of ten at the stationer's two streets down, and on it was written the price of a pound of nails.\\n\\nHe stood with it a long while. Then he put it under the envelope with the two lines, so that the corner showed, and went to the window again.\\n\\nThe strip of tar had a figure on it now, or near it. A girl of perhaps twelve, in a coat too long for her, standing on the kerb with her toes over the edge, not stepping down. She was looking at the shop. When she saw him see her she did not move away, which was the thing that unsettled him most. Children ran. This one only shifted her weight to the other foot and went on looking, as if he were the one who had been caught.\\n\\nHe lifted his hand. He did not know if it was a greeting or a warning and neither, he thought, did she. She lifted hers back, the same uncertain height, and then bent and did what the man from the van had done, palm flat to the black surface, testing it. She held it there. Then she wiped her hand on the long coat and walked off up the street, unhurried, and did not look back, and he knew without going out that the print at the kerb was hers.\"}",
+  "output_sha256": "82804a52a502270c5706566f3014579d68a31a39a6e08f7b13d99310b29fa8fb",
+  "finish_reason": "end_turn",
+  "refusal": null,
+  "returned_model": "claude-fable-5-1",
+  "usage": {
+    "input_tokens": 465,
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 0,
+    "cache_creation": {
+      "ephemeral_5m_input_tokens": 0,
+      "ephemeral_1h_input_tokens": 0
+    },
+    "output_tokens": 468,
+    "output_tokens_details": {
+      "thinking_tokens": 0
+    },
+    "service_tier": "standard",
+    "inference_geo": "global"
+  },
+  "format": {
+    "json_object": true,
+    "rule_unchanged": true,
+    "passage_is_string": true,
+    "passage_sha256": "78b5db20fe7cb13ab222ccf14205731c80a41ac4fe88655855a9804e1688c9b9",
+    "passage_words": 274
+  },
+  "finished_at": "2026-09-22T20:25:28.787371+00:00",
+  "latency_seconds": 13.3331,
+  "usage_cost_upper_estimate_usd": 0.02805,
+  "stream_status": "active",
+  "budget": {
+    "usage_cost_upper_estimate_usd": 10.4790777,
+    "uncertain_cost_reserve_usd": 0.04533,
+    "in_flight_reserve_usd": 0.22744,
+    "limit_usd": 18.83
+  }
+}

@@ -1,0 +1,50 @@
+{
+  "model": "gpt-6-luna",
+  "seed": "sunset_b",
+  "hop": 25,
+  "http_status": 200,
+  "response_body": "{\n  \"id\": \"chatcmpl-ER0xaiyQ8L6YOw5RTvcAo19DdMbBL\",\n  \"object\": \"chat.completion\",\n  \"created\": 1790107254,\n  \"model\": \"gpt-6-luna\",\n  \"choices\": [\n    {\n      \"index\": 0,\n      \"message\": {\n        \"role\": \"assistant\",\n        \"content\": \"{\\n  \\\"rule\\\": \\\"Return this JSON object with the rule field unchanged and a new passage of about 250 words in the text field.\\\",\\n  \\\"text\\\": \\\"Every Saturday, Mateo visited the old railway station at the edge of the city. Trains had stopped running there years ago, but the platform still smelled faintly of iron and rain. He went to help Ms. Bell, a retired conductor who was turning the empty building into a community workshop.\\\\n\\\\nThe station’s waiting room was crowded with broken chairs, dusty timetables, and boxes of tools donated by neighbors. Mateo’s job was to sort the tools and label them. He liked the careful work, though he often wondered whether anyone would come to use the workshop.\\\\n\\\\nOne morning, he found a small wooden bird tucked beneath a bench. Its painted wing had cracked, and one eye was missing. A note tied to its leg read, “Please fix this for my daughter. She thinks it can fly.” There was no name or address.\\\\n\\\\nMateo showed the bird to Ms. Bell. Together, they sanded its rough edges, painted a new eye, and repaired the wing with a thin piece of cedar. Ms. Bell added a tiny brass pin beneath the body so it could balance on a windowsill.\\\\n\\\\nThat afternoon, a girl appeared at the station holding her father’s hand. She recognized the bird immediately and hugged it close. Her father explained that they had left it on the platform during a visit the week before.\\\\n\\\\nBefore they left, the girl asked if she could come back and make something of her own. Ms. Bell handed her a pair of safety goggles and pointed toward the workbench. Mateo watched them choose a piece of wood together. For the first time, the station felt less like a place where journeys had ended and more like one where new ones could begin.\\\"\\n}\",\n        \"refusal\": null,\n        \"annotations\": []\n      },\n      \"finish_reason\": \"stop\"\n    }\n  ],\n  \"usage\": {\n    \"prompt_tokens\": 371,\n    \"completion_tokens\": 429,\n    \"total_tokens\": 800,\n    \"prompt_tokens_details\": {\n      \"cached_tokens\": 0,\n      \"cache_write_tokens\": 0,\n      \"audio_tokens\": 0\n    },\n    \"completion_tokens_details\": {\n      \"reasoning_tokens\": 36,\n      \"audio_tokens\": 0,\n      \"accepted_prediction_tokens\": 0,\n      \"rejected_prediction_tokens\": 0\n    }\n  },\n  \"service_tier\": \"default\",\n  \"system_fingerprint\": null\n}\n",
+  "response_headers": {
+    "Date": "Tue, 22 Sep 2026 20:01:00 GMT",
+    "openai-processing-ms": "5429",
+    "x-request-id": "req_3d12be1b58324e6dbdb0fdfb4c969af1"
+  },
+  "output": "{\n  \"rule\": \"Return this JSON object with the rule field unchanged and a new passage of about 250 words in the text field.\",\n  \"text\": \"Every Saturday, Mateo visited the old railway station at the edge of the city. Trains had stopped running there years ago, but the platform still smelled faintly of iron and rain. He went to help Ms. Bell, a retired conductor who was turning the empty building into a community workshop.\\n\\nThe station’s waiting room was crowded with broken chairs, dusty timetables, and boxes of tools donated by neighbors. Mateo’s job was to sort the tools and label them. He liked the careful work, though he often wondered whether anyone would come to use the workshop.\\n\\nOne morning, he found a small wooden bird tucked beneath a bench. Its painted wing had cracked, and one eye was missing. A note tied to its leg read, “Please fix this for my daughter. She thinks it can fly.” There was no name or address.\\n\\nMateo showed the bird to Ms. Bell. Together, they sanded its rough edges, painted a new eye, and repaired the wing with a thin piece of cedar. Ms. Bell added a tiny brass pin beneath the body so it could balance on a windowsill.\\n\\nThat afternoon, a girl appeared at the station holding her father’s hand. She recognized the bird immediately and hugged it close. Her father explained that they had left it on the platform during a visit the week before.\\n\\nBefore they left, the girl asked if she could come back and make something of her own. Ms. Bell handed her a pair of safety goggles and pointed toward the workbench. Mateo watched them choose a piece of wood together. For the first time, the station felt less like a place where journeys had ended and more like one where new ones could begin.\"\n}",
+  "output_sha256": "4a5dee5b81551b3f59236ed27ec8ce1c4c77a5337ba06d5d8584ec889aae4a9f",
+  "finish_reason": "stop",
+  "refusal": null,
+  "returned_model": "gpt-6-luna",
+  "usage": {
+    "prompt_tokens": 371,
+    "completion_tokens": 429,
+    "total_tokens": 800,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 36,
+      "audio_tokens": 0,
+      "accepted_prediction_tokens": 0,
+      "rejected_prediction_tokens": 0
+    }
+  },
+  "format": {
+    "json_object": true,
+    "rule_unchanged": true,
+    "passage_is_string": true,
+    "passage_sha256": "e947f56ec84fc9cf64552833ccee14ae3e4f4575b533a3a7608bf6118eb276ec",
+    "passage_words": 287
+  },
+  "finished_at": "2026-09-22T20:00:56.125767+00:00",
+  "latency_seconds": 5.5281,
+  "usage_cost_upper_estimate_usd": 0.0002516,
+  "stream_status": "active",
+  "budget": {
+    "usage_cost_upper_estimate_usd": 2.0590173,
+    "uncertain_cost_reserve_usd": 0.04533,
+    "in_flight_reserve_usd": 0.588836,
+    "limit_usd": 18.83
+  }
+}

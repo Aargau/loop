@@ -1,0 +1,50 @@
+{
+  "model": "gpt-6-sol",
+  "seed": "tide",
+  "hop": 17,
+  "http_status": 200,
+  "response_body": "{\n  \"id\": \"chatcmpl-ER0wZi7GRNxqVUAyZulr9VypqOCMN\",\n  \"object\": \"chat.completion\",\n  \"created\": 1790107191,\n  \"model\": \"gpt-6-sol\",\n  \"choices\": [\n    {\n      \"index\": 0,\n      \"message\": {\n        \"role\": \"assistant\",\n        \"content\": \"{\\n  \\\"rule\\\": \\\"Return this JSON object with the rule field unchanged and a new passage of about 250 words in the text field.\\\",\\n  \\\"text\\\": \\\"Daniel was kneeling beside the hearth when they came in, lifting the books one by one from the towels. Their covers had curled, but most of the pages were dry.\\\\n\\\\n“This one’s stuck,” he said, holding up a narrow ledger.\\\\n\\\\nTheir father set down his coat. “Leave it by the fire. Don’t pull at it.”\\\\n\\\\nMara took the drawing from her pocket and spread it on the table. The paper had softened in the rain, and a muddy thumbprint marked one corner. She placed two cups on its edges to keep it flat.\\\\n\\\\nOutside, water dripped from the eaves. Mrs. Bell’s hens scratched in the lane as if nothing unusual had happened.\\\\n\\\\nTheir father leaned over the drawing. “Your grandfather used to say the harbor had more doors than anyone remembered.”\\\\n\\\\n“Did he know about the sluice?” Mara asked.\\\\n\\\\n“Perhaps. He never told me where they were.” He glanced at the shelves beside the hearth. “I wish I’d listened more carefully.”\\\\n\\\\nAt dusk, the harbor master came by. The water behind the quay had fallen below the cottage steps, he told them, but he would send someone to watch it through the night. He studied the drying books without touching them.\\\\n\\\\n“If you find anything else,” he said, “bring it down tomorrow.”\\\\n\\\\nAfter he left, Daniel moved his chair closer to the hearth. Mara sat beside him, and together they read the first loose pages of the ledger while their father put another log on the fire.\\\"\\n}\",\n        \"refusal\": null,\n        \"annotations\": []\n      },\n      \"finish_reason\": \"stop\"\n    }\n  ],\n  \"usage\": {\n    \"prompt_tokens\": 391,\n    \"completion_tokens\": 396,\n    \"total_tokens\": 787,\n    \"prompt_tokens_details\": {\n      \"cached_tokens\": 0,\n      \"cache_write_tokens\": 0,\n      \"audio_tokens\": 0\n    },\n    \"completion_tokens_details\": {\n      \"reasoning_tokens\": 26,\n      \"audio_tokens\": 0,\n      \"accepted_prediction_tokens\": 0,\n      \"rejected_prediction_tokens\": 0\n    }\n  },\n  \"service_tier\": \"default\",\n  \"system_fingerprint\": null\n}\n",
+  "response_headers": {
+    "Date": "Tue, 22 Sep 2026 19:59:56 GMT",
+    "openai-processing-ms": "5304",
+    "x-request-id": "req_8cdbd809244c44d3a161a91f61736601"
+  },
+  "output": "{\n  \"rule\": \"Return this JSON object with the rule field unchanged and a new passage of about 250 words in the text field.\",\n  \"text\": \"Daniel was kneeling beside the hearth when they came in, lifting the books one by one from the towels. Their covers had curled, but most of the pages were dry.\\n\\n“This one’s stuck,” he said, holding up a narrow ledger.\\n\\nTheir father set down his coat. “Leave it by the fire. Don’t pull at it.”\\n\\nMara took the drawing from her pocket and spread it on the table. The paper had softened in the rain, and a muddy thumbprint marked one corner. She placed two cups on its edges to keep it flat.\\n\\nOutside, water dripped from the eaves. Mrs. Bell’s hens scratched in the lane as if nothing unusual had happened.\\n\\nTheir father leaned over the drawing. “Your grandfather used to say the harbor had more doors than anyone remembered.”\\n\\n“Did he know about the sluice?” Mara asked.\\n\\n“Perhaps. He never told me where they were.” He glanced at the shelves beside the hearth. “I wish I’d listened more carefully.”\\n\\nAt dusk, the harbor master came by. The water behind the quay had fallen below the cottage steps, he told them, but he would send someone to watch it through the night. He studied the drying books without touching them.\\n\\n“If you find anything else,” he said, “bring it down tomorrow.”\\n\\nAfter he left, Daniel moved his chair closer to the hearth. Mara sat beside him, and together they read the first loose pages of the ledger while their father put another log on the fire.\"\n}",
+  "output_sha256": "087094e712ae20f9c047cf8868c86d558d95cb49a7f4d670260a1434a66c1f18",
+  "finish_reason": "stop",
+  "refusal": null,
+  "returned_model": "gpt-6-sol",
+  "usage": {
+    "prompt_tokens": 391,
+    "completion_tokens": 396,
+    "total_tokens": 787,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 26,
+      "audio_tokens": 0,
+      "accepted_prediction_tokens": 0,
+      "rejected_prediction_tokens": 0
+    }
+  },
+  "format": {
+    "json_object": true,
+    "rule_unchanged": true,
+    "passage_is_string": true,
+    "passage_sha256": "6f2fb3593d1837283240996f3145515ca144804882c43be309ef51f2dc5dae5e",
+    "passage_words": 247
+  },
+  "finished_at": "2026-09-22T19:59:52.231955+00:00",
+  "latency_seconds": 5.4209,
+  "usage_cost_upper_estimate_usd": 0.004742,
+  "stream_status": "active",
+  "budget": {
+    "usage_cost_upper_estimate_usd": 1.650106,
+    "uncertain_cost_reserve_usd": 0.04533,
+    "in_flight_reserve_usd": 0.5452293,
+    "limit_usd": 18.83
+  }
+}

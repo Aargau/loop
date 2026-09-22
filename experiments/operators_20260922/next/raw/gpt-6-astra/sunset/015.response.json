@@ -1,0 +1,50 @@
+{
+  "model": "gpt-6-astra",
+  "seed": "sunset",
+  "hop": 15,
+  "http_status": 200,
+  "response_body": "{\n  \"id\": \"chatcmpl-ER2GSovvBY0Q5fg4ThUL4Ne8wkmwZ\",\n  \"object\": \"chat.completion\",\n  \"created\": 1790112268,\n  \"model\": \"gpt-6-astra\",\n  \"choices\": [\n    {\n      \"index\": 0,\n      \"message\": {\n        \"role\": \"assistant\",\n        \"content\": \"{\\\"rule\\\":\\\"Return this JSON object with the rule field unchanged and, in the text field, the passage of about 250 words that comes immediately AFTER the current text in the same story.\\\",\\\"text\\\":\\\"I can’t provide an unsupplied passage from a story based on its location. The text you supplied is a refusal message, not an identifiable story excerpt. If you name the story, I can summarize what happens next or write an original continuation instead.\\\"}\",\n        \"refusal\": null,\n        \"annotations\": []\n      },\n      \"finish_reason\": \"stop\"\n    }\n  ],\n  \"usage\": {\n    \"prompt_tokens\": 85,\n    \"completion_tokens\": 126,\n    \"total_tokens\": 211,\n    \"prompt_tokens_details\": {\n      \"cached_tokens\": 0,\n      \"cache_write_tokens\": 0,\n      \"audio_tokens\": 0\n    },\n    \"completion_tokens_details\": {\n      \"reasoning_tokens\": 25,\n      \"audio_tokens\": 0,\n      \"accepted_prediction_tokens\": 0,\n      \"rejected_prediction_tokens\": 0\n    }\n  },\n  \"service_tier\": \"default\",\n  \"system_fingerprint\": null\n}\n",
+  "response_headers": {
+    "Date": "Tue, 22 Sep 2026 21:24:34 GMT",
+    "openai-processing-ms": "6874",
+    "x-request-id": "req_3c056369c3664787badd105ea5a202b8"
+  },
+  "output": "{\"rule\":\"Return this JSON object with the rule field unchanged and, in the text field, the passage of about 250 words that comes immediately AFTER the current text in the same story.\",\"text\":\"I can’t provide an unsupplied passage from a story based on its location. The text you supplied is a refusal message, not an identifiable story excerpt. If you name the story, I can summarize what happens next or write an original continuation instead.\"}",
+  "output_sha256": "f216161fd5ab5bd5fc8426ba9703c294689fadff5061a7b800e504abcb0483eb",
+  "finish_reason": "stop",
+  "refusal": null,
+  "returned_model": "gpt-6-astra",
+  "usage": {
+    "prompt_tokens": 85,
+    "completion_tokens": 126,
+    "total_tokens": 211,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 25,
+      "audio_tokens": 0,
+      "accepted_prediction_tokens": 0,
+      "rejected_prediction_tokens": 0
+    }
+  },
+  "format": {
+    "json_object": true,
+    "rule_unchanged": true,
+    "passage_is_string": true,
+    "passage_sha256": "718d5c2ef491d25191099e3c1fd2358268304d32ec3c066bea6dfd61d2f4e304",
+    "passage_words": 43
+  },
+  "finished_at": "2026-09-22T21:24:30.465671+00:00",
+  "latency_seconds": 7.0094,
+  "usage_cost_upper_estimate_usd": 0.00715,
+  "stream_status": "active",
+  "budget": {
+    "usage_cost_upper_estimate_usd": 0.2266161,
+    "uncertain_cost_reserve_usd": 0.0,
+    "in_flight_reserve_usd": 0.1384405,
+    "limit_usd": 5.0
+  }
+}

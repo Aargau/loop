@@ -1,0 +1,22 @@
+{
+  "started_at": "2026-09-22T20:06:31.806241+00:00",
+  "model": "claude-opus-5-5",
+  "seed": "sunset_a",
+  "hop": 25,
+  "endpoint": "https://api.anthropic.com/v1/messages",
+  "body": {
+    "model": "claude-opus-5-5",
+    "messages": [
+      {
+        "role": "user",
+        "content": "```json\n{\"rule\": \"Return this JSON object with the rule field unchanged and a new passage of about 250 words in the text field.\", \"text\": \"Tobias read the page twice before he spoke. He ran his thumb down the column of hours as if the numbers might rearrange themselves under his touch, and when he reached the last line he stopped and looked at the stove. Mira had not relit it. The iron was dull and grey, and the kettle on top had a skin of ice across the water. \\\"You should have woken me,\\\" he said, but there was no anger in it. He crossed to the machine and crouched beside it, close enough that the swinging arm stirred the hair at his temple. For a long time he only watched. Then he reached into his coat for the small brass calipers he always carried and measured something at the base of the pivot, frowning, measuring again. \\\"It's the cold,\\\" he said at last. \\\"The oil thickens. Or the metal draws in. I thought I had allowed for it.\\\" Mira came to stand behind him. Outside, the sun had cleared the ridge, and the frost on the window was beginning to soften at its edges, the feathers blurring into droplets. \\\"Then it isn't broken,\\\" she said. \\\"No. It's listening.\\\" He said it lightly, but he did not smile. He stood, brushed off his knees, and took the pencil from the table. Beneath her last line he wrote a single word, underlined it twice, and handed the ledger back to her. She read it and felt the room grow very quiet around her. The word was: tonight.\"}\n```"
+      }
+    ],
+    "max_tokens": 4096,
+    "output_config": {
+      "effort": "low"
+    }
+  },
+  "state_sha256": "c7a46fac9115ebb0d7be4422714398395be4ff7445d26738b33307c2d325d194",
+  "reserved_cost_usd": 0.089904
+}

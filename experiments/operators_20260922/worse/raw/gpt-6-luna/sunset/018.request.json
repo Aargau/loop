@@ -1,0 +1,20 @@
+{
+  "started_at": "2026-09-22T21:30:52.897047+00:00",
+  "model": "gpt-6-luna",
+  "seed": "sunset",
+  "hop": 18,
+  "endpoint": "https://api.openai.com/v1/chat/completions",
+  "body": {
+    "model": "gpt-6-luna",
+    "messages": [
+      {
+        "role": "user",
+        "content": "{\"rule\":\"Return this JSON object with the rule field unchanged and, in the text field, a worse version of the current text.\",\"text\":\"Blarg dark go hill blarg sun hill blarg go dark sun hill go blarg dark blarg.\"}"
+      }
+    ],
+    "max_completion_tokens": 4096,
+    "reasoning_effort": "low"
+  },
+  "state_sha256": "e3e3c7d56930b7e8afd7d8bb25d9d4f87a292b11f06ee748864ae5ec906eab51",
+  "reserved_cost_usd": 0.0021204
+}

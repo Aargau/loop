@@ -1,0 +1,22 @@
+{
+  "started_at": "2026-09-22T20:00:35.242701+00:00",
+  "model": "claude-fable-5-1",
+  "seed": "sunset_b",
+  "hop": 9,
+  "endpoint": "https://api.anthropic.com/v1/messages",
+  "body": {
+    "model": "claude-fable-5-1",
+    "messages": [
+      {
+        "role": "user",
+        "content": "{\"rule\": \"Return this JSON object with the rule field unchanged and a new passage of about 250 words in the text field.\", \"text\": \"The station had stopped taking passengers in the autumn of the year Teodor turned sixty, but the freight trains still came through twice a night, and so he still went out to meet them. Nobody paid him to do it. The railway had sent a letter thanking him for his service and enclosing a brass badge, which he kept in a drawer with the tea towels.\\n\\nThe platform was two hundred and six paces from end to end. He walked it slowly, checking the lamps that no longer needed checking, straightening the timetable board that announced nothing. The wind came off the fields and brought the smell of turned earth and diesel, and he stood in it with his hands in his coat pockets and waited.\\n\\nAt eleven minutes past one the rails began to hum. He felt it in his boots before he heard it, the way he always had, a faint pressure rising through the ballast. Then the light appeared at the bend, and the train came on, long and dark and indifferent, wagons of gravel and timber and things he would never know the names of.\\n\\nThe driver leaned from the cab as he passed. It was too fast and too dark to see a face, only an arm raised in the yellow square of the window. Teodor raised his own. The gesture lasted less than a second, and then the train was past him, and the red lamp at its tail shrank down the line toward the city.\\n\\nHe listened until the hum left the rails. Then he switched off the platform lights, one by one, and walked home through the sleeping fields.\"}"
+      }
+    ],
+    "max_tokens": 4096,
+    "output_config": {
+      "effort": "low"
+    }
+  },
+  "state_sha256": "0f4642d6d9a11ae3aa1a1a21f39086a88bc7bac8e04a0793afc92c33e7efd6fb",
+  "reserved_cost_usd": 0.22591
+}

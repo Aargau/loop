@@ -1,0 +1,50 @@
+{
+  "model": "gpt-6-luna",
+  "seed": "sunset_a",
+  "hop": 12,
+  "http_status": 200,
+  "response_body": "{\n  \"id\": \"chatcmpl-ER0uYbOBe0C9mrvFBh5cr3KMwYG1v\",\n  \"object\": \"chat.completion\",\n  \"created\": 1790107066,\n  \"model\": \"gpt-6-luna\",\n  \"choices\": [\n    {\n      \"index\": 0,\n      \"message\": {\n        \"role\": \"assistant\",\n        \"content\": \"{\\\"rule\\\":\\\"Return this JSON object with the rule field unchanged and a new passage of about 250 words in the text field.\\\",\\\"text\\\":\\\"When the river receded each autumn, it left a narrow strip of silver sand beneath the old bridge. Mara liked to walk there before sunrise, when the water was quiet and the town’s windows still glowed with lamplight.\\\\n\\\\nOne morning, she found a wooden boat wedged between two stones. Its blue paint had faded, and a name—North Star—was carved across its bow. Inside lay a folded note, softened by water but still readable: “If you find this, please send it home.”\\\\n\\\\nMara carried the boat to the library. Mr. Bell, the librarian, recognized the handwriting at once. He explained that his sister, June, had made the boat when they were children. She had moved overseas many years ago, and the two of them had lost touch after a quarrel over something neither could now remember.\\\\n\\\\n“Do you know where she is?” Mara asked.\\\\n\\\\nMr. Bell shook his head. But he brought out a box of old letters, and together they searched. In one envelope, they found a return address in a coastal village. Mara carefully packed the boat and sent it along with a short message from Mr. Bell.\\\\n\\\\nWeeks passed. Then a letter arrived. June had recognized the boat immediately. She wrote that she still remembered their games beside the river, and that she would be coming home for a visit.\\\\n\\\\nOn the morning she arrived, Mara watched from the bridge as Mr. Bell and his sister met below. They laughed, then embraced. The river kept moving past them, carrying leaves and sunlight toward the sea. But the little boat had finally found its way back.\\\"}\",\n        \"refusal\": null,\n        \"annotations\": []\n      },\n      \"finish_reason\": \"stop\"\n    }\n  ],\n  \"usage\": {\n    \"prompt_tokens\": 381,\n    \"completion_tokens\": 426,\n    \"total_tokens\": 807,\n    \"prompt_tokens_details\": {\n      \"cached_tokens\": 0,\n      \"cache_write_tokens\": 0,\n      \"audio_tokens\": 0\n    },\n    \"completion_tokens_details\": {\n      \"reasoning_tokens\": 49,\n      \"audio_tokens\": 0,\n      \"accepted_prediction_tokens\": 0,\n      \"rejected_prediction_tokens\": 0\n    }\n  },\n  \"service_tier\": \"default\",\n  \"system_fingerprint\": null\n}\n",
+  "response_headers": {
+    "Date": "Tue, 22 Sep 2026 19:58:01 GMT",
+    "openai-processing-ms": "14777",
+    "x-request-id": "req_21794609bb3a4a23a606e309b312c225"
+  },
+  "output": "{\"rule\":\"Return this JSON object with the rule field unchanged and a new passage of about 250 words in the text field.\",\"text\":\"When the river receded each autumn, it left a narrow strip of silver sand beneath the old bridge. Mara liked to walk there before sunrise, when the water was quiet and the town’s windows still glowed with lamplight.\\n\\nOne morning, she found a wooden boat wedged between two stones. Its blue paint had faded, and a name—North Star—was carved across its bow. Inside lay a folded note, softened by water but still readable: “If you find this, please send it home.”\\n\\nMara carried the boat to the library. Mr. Bell, the librarian, recognized the handwriting at once. He explained that his sister, June, had made the boat when they were children. She had moved overseas many years ago, and the two of them had lost touch after a quarrel over something neither could now remember.\\n\\n“Do you know where she is?” Mara asked.\\n\\nMr. Bell shook his head. But he brought out a box of old letters, and together they searched. In one envelope, they found a return address in a coastal village. Mara carefully packed the boat and sent it along with a short message from Mr. Bell.\\n\\nWeeks passed. Then a letter arrived. June had recognized the boat immediately. She wrote that she still remembered their games beside the river, and that she would be coming home for a visit.\\n\\nOn the morning she arrived, Mara watched from the bridge as Mr. Bell and his sister met below. They laughed, then embraced. The river kept moving past them, carrying leaves and sunlight toward the sea. But the little boat had finally found its way back.\"}",
+  "output_sha256": "65e3b61b907d347a2ad8ab46ef4f6f473b115d1e56cda92f4edb19639e78025c",
+  "finish_reason": "stop",
+  "refusal": null,
+  "returned_model": "gpt-6-luna",
+  "usage": {
+    "prompt_tokens": 381,
+    "completion_tokens": 426,
+    "total_tokens": 807,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 49,
+      "audio_tokens": 0,
+      "accepted_prediction_tokens": 0,
+      "rejected_prediction_tokens": 0
+    }
+  },
+  "format": {
+    "json_object": true,
+    "rule_unchanged": true,
+    "passage_is_string": true,
+    "passage_sha256": "59ca269ac122d9570ea47aa7af1965d1ef09322f889ff7f794a985b4d6da4055",
+    "passage_words": 267
+  },
+  "finished_at": "2026-09-22T19:57:57.597628+00:00",
+  "latency_seconds": 14.8925,
+  "usage_cost_upper_estimate_usd": 0.0002511,
+  "stream_status": "active",
+  "budget": {
+    "usage_cost_upper_estimate_usd": 0.9356423,
+    "uncertain_cost_reserve_usd": 0.0,
+    "in_flight_reserve_usd": 0.588142,
+    "limit_usd": 18.83
+  }
+}

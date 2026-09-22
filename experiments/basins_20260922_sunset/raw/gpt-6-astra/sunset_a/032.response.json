@@ -1,0 +1,50 @@
+{
+  "model": "gpt-6-astra",
+  "seed": "sunset_a",
+  "hop": 32,
+  "http_status": 200,
+  "response_body": "{\n  \"id\": \"chatcmpl-ER1H7axVeURvTcb6RzyH3uk03HxIP\",\n  \"object\": \"chat.completion\",\n  \"created\": 1790108465,\n  \"model\": \"gpt-6-astra\",\n  \"choices\": [\n    {\n      \"index\": 0,\n      \"message\": {\n        \"role\": \"assistant\",\n        \"content\": \"{\\n  \\\"rule\\\": \\\"Return this JSON object with the rule field unchanged and a new passage of about 250 words in the text field.\\\",\\n  \\\"text\\\": \\\"The station clock had stopped at twenty past four, but Mr Bell still checked it before unlocking his shoe-repair shop.\\\\n\\\\n“You could get a watch,” said Nina, who sold flowers opposite.\\\\n\\\\n“I know what time it is.”\\\\n\\\\n“Then why look?”\\\\n\\\\nHe bent to lift the shutter.\\\\n\\\\nIn March, the railway announced that the old shops would be replaced with ticket machines. Nina found another pitch outside the hospital. Mr Bell put a handwritten notice in his window: ALL REPAIRS TO BE COLLECTED BY FRIDAY.\\\\n\\\\nOn Thursday evening, one pair remained. Small brown boots, newly soled, with a yellow bead threaded onto one lace.\\\\n\\\\nHe rang the number on the ticket. It was no longer connected.\\\\n\\\\n“Leave them with lost property,” Nina said.\\\\n\\\\nHe wrapped the boots in paper.\\\\n\\\\nFor three weeks, they sat beneath her flower stall. Then she moved them onto a shelf behind the buckets, away from the rain.\\\\n\\\\nIn May, a woman stopped to buy carnations. Her daughter stood beside her in sandals, though the morning was cold.\\\\n\\\\nNina noticed a yellow bead hanging from the zip of the child’s coat.\\\\n\\\\n“Did you leave some boots at the station?”\\\\n\\\\nThe woman lowered the flowers.\\\\n\\\\n“We had to move rather quickly.”\\\\n\\\\nNina fetched the parcel.\\\\n\\\\n“How much do I owe?”\\\\n\\\\n“There’s a ticket inside.”\\\\n\\\\nThe woman unfolded it. Beneath the price, Mr Bell had written a telephone number.\\\\n\\\\n“He’s working from home now,” Nina said.\\\\n\\\\nThe child sat on an upturned crate to try the boots. Her mother held the carnations while Nina loosened the laces.\\\\n\\\\nThey were a little tight. Nina fetched a shoehorn, and the child pushed her heel down.\\\"\\n}\",\n        \"refusal\": null,\n        \"annotations\": []\n      },\n      \"finish_reason\": \"stop\"\n    }\n  ],\n  \"usage\": {\n    \"prompt_tokens\": 441,\n    \"completion_tokens\": 431,\n    \"total_tokens\": 872,\n    \"prompt_tokens_details\": {\n      \"cached_tokens\": 0,\n      \"cache_write_tokens\": 0,\n      \"audio_tokens\": 0\n    },\n    \"completion_tokens_details\": {\n      \"reasoning_tokens\": 0,\n      \"audio_tokens\": 0,\n      \"accepted_prediction_tokens\": 0,\n      \"rejected_prediction_tokens\": 0\n    }\n  },\n  \"service_tier\": \"default\",\n  \"system_fingerprint\": null\n}\n",
+  "response_headers": {
+    "Date": "Tue, 22 Sep 2026 20:21:23 GMT",
+    "openai-processing-ms": "18113",
+    "x-request-id": "req_891e93b524bf456b8d2f669f708f095f"
+  },
+  "output": "{\n  \"rule\": \"Return this JSON object with the rule field unchanged and a new passage of about 250 words in the text field.\",\n  \"text\": \"The station clock had stopped at twenty past four, but Mr Bell still checked it before unlocking his shoe-repair shop.\\n\\n“You could get a watch,” said Nina, who sold flowers opposite.\\n\\n“I know what time it is.”\\n\\n“Then why look?”\\n\\nHe bent to lift the shutter.\\n\\nIn March, the railway announced that the old shops would be replaced with ticket machines. Nina found another pitch outside the hospital. Mr Bell put a handwritten notice in his window: ALL REPAIRS TO BE COLLECTED BY FRIDAY.\\n\\nOn Thursday evening, one pair remained. Small brown boots, newly soled, with a yellow bead threaded onto one lace.\\n\\nHe rang the number on the ticket. It was no longer connected.\\n\\n“Leave them with lost property,” Nina said.\\n\\nHe wrapped the boots in paper.\\n\\nFor three weeks, they sat beneath her flower stall. Then she moved them onto a shelf behind the buckets, away from the rain.\\n\\nIn May, a woman stopped to buy carnations. Her daughter stood beside her in sandals, though the morning was cold.\\n\\nNina noticed a yellow bead hanging from the zip of the child’s coat.\\n\\n“Did you leave some boots at the station?”\\n\\nThe woman lowered the flowers.\\n\\n“We had to move rather quickly.”\\n\\nNina fetched the parcel.\\n\\n“How much do I owe?”\\n\\n“There’s a ticket inside.”\\n\\nThe woman unfolded it. Beneath the price, Mr Bell had written a telephone number.\\n\\n“He’s working from home now,” Nina said.\\n\\nThe child sat on an upturned crate to try the boots. Her mother held the carnations while Nina loosened the laces.\\n\\nThey were a little tight. Nina fetched a shoehorn, and the child pushed her heel down.\"\n}",
+  "output_sha256": "b0c72b7941b81fd584e3c8ccf2ed07d700066b8f835d73fe920ae876da9dd027",
+  "finish_reason": "stop",
+  "refusal": null,
+  "returned_model": "gpt-6-astra",
+  "usage": {
+    "prompt_tokens": 441,
+    "completion_tokens": 431,
+    "total_tokens": 872,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "audio_tokens": 0,
+      "accepted_prediction_tokens": 0,
+      "rejected_prediction_tokens": 0
+    }
+  },
+  "format": {
+    "json_object": true,
+    "rule_unchanged": true,
+    "passage_is_string": true,
+    "passage_sha256": "9b676c9bb30cd8d1b6156abc423f86becd31727cee3b11566eeecfe2eda2a620",
+    "passage_words": 274
+  },
+  "finished_at": "2026-09-22T20:21:19.036500+00:00",
+  "latency_seconds": 18.4149,
+  "usage_cost_upper_estimate_usd": 0.02596,
+  "stream_status": "active",
+  "budget": {
+    "usage_cost_upper_estimate_usd": 9.2758737,
+    "uncertain_cost_reserve_usd": 0.04533,
+    "in_flight_reserve_usd": 0.31528,
+    "limit_usd": 18.83
+  }
+}

@@ -1,0 +1,48 @@
+{
+  "model": "claude-fable-5-1",
+  "seed": "tide",
+  "hop": 60,
+  "http_status": 200,
+  "response_body": "{\"model\":\"claude-fable-5-1\",\"id\":\"msg_011CfK7fEL94DYCjjg5Eds13\",\"type\":\"message\",\"role\":\"assistant\",\"content\":[{\"type\":\"text\",\"text\":\"{\\\"rule\\\": \\\"Return this JSON object with the rule field unchanged and a new passage of about 250 words in the text field.\\\", \\\"text\\\": \\\"The bus shelter on Ninth had lost its glass years ago, so it was just a roof on two poles and a bench nobody had bothered to remove. Della got there at quarter past five with her thermos and found the boy already sitting at the far end, backpack between his knees, staring at the street.\\\\n\\\\n\\\\\\\"The 22 doesn't run this early,\\\\\\\" she said.\\\\n\\\\n\\\\\\\"I know.\\\\\\\"\\\\n\\\\nShe sat at the other end and unscrewed the thermos. Steam came off it and vanished. Across the road the bakery had its lights on but the door was still locked, and a man inside moved trays around without looking out.\\\\n\\\\n\\\\\\\"You waiting for somebody?\\\\\\\" she asked.\\\\n\\\\n\\\\\\\"Not really.\\\\\\\"\\\\n\\\\nA streetlight down the block buzzed and went dark, then came back weaker. The boy zipped his jacket to the chin. He couldn't have been more than sixteen.\\\\n\\\\n\\\\\\\"My mom works nights,\\\\\\\" he said after a while. \\\\\\\"She gets home around six.\\\\\\\"\\\\n\\\\n\\\\\\\"So you wait here.\\\\\\\"\\\\n\\\\n\\\\\\\"Sometimes.\\\\\\\"\\\\n\\\\nDella poured a little coffee into the lid and held it out. He looked at it, then took it, and drank without saying thank you, which she didn't mind.\\\\n\\\\n\\\\\\\"She know you're out here?\\\\\\\"\\\\n\\\\n\\\\\\\"She knows I'm not asleep.\\\\\\\"\\\\n\\\\nThe first bus of the day rounded the corner two blocks up, empty, its interior lit like a fish tank. It slowed for the shelter out of habit, saw nobody stand, and went on.\\\\n\\\\nAt six a woman in scrubs came around the corner walking fast. The boy handed the lid back and picked up his bag. He didn't wave and Della didn't expect it. She screwed the thermos shut and waited for the 22.\\\"}\"}],\"container\":null,\"stop_reason\":\"end_turn\",\"stop_sequence\":null,\"stop_details\":null,\"usage\":{\"input_tokens\":633,\"cache_creation_input_tokens\":0,\"cache_read_input_tokens\":0,\"cache_creation\":{\"ephemeral_5m_input_tokens\":0,\"ephemeral_1h_input_tokens\":0},\"output_tokens\":615,\"output_tokens_details\":{\"thinking_tokens\":0},\"service_tier\":\"standard\",\"inference_geo\":\"global\"}}",
+  "response_headers": {
+    "Date": "Tue, 22 Sep 2026 20:33:42 GMT",
+    "request-id": "req_011CfK7fDeTNfhnFHTfd9bcp"
+  },
+  "output": "{\"rule\": \"Return this JSON object with the rule field unchanged and a new passage of about 250 words in the text field.\", \"text\": \"The bus shelter on Ninth had lost its glass years ago, so it was just a roof on two poles and a bench nobody had bothered to remove. Della got there at quarter past five with her thermos and found the boy already sitting at the far end, backpack between his knees, staring at the street.\\n\\n\\\"The 22 doesn't run this early,\\\" she said.\\n\\n\\\"I know.\\\"\\n\\nShe sat at the other end and unscrewed the thermos. Steam came off it and vanished. Across the road the bakery had its lights on but the door was still locked, and a man inside moved trays around without looking out.\\n\\n\\\"You waiting for somebody?\\\" she asked.\\n\\n\\\"Not really.\\\"\\n\\nA streetlight down the block buzzed and went dark, then came back weaker. The boy zipped his jacket to the chin. He couldn't have been more than sixteen.\\n\\n\\\"My mom works nights,\\\" he said after a while. \\\"She gets home around six.\\\"\\n\\n\\\"So you wait here.\\\"\\n\\n\\\"Sometimes.\\\"\\n\\nDella poured a little coffee into the lid and held it out. He looked at it, then took it, and drank without saying thank you, which she didn't mind.\\n\\n\\\"She know you're out here?\\\"\\n\\n\\\"She knows I'm not asleep.\\\"\\n\\nThe first bus of the day rounded the corner two blocks up, empty, its interior lit like a fish tank. It slowed for the shelter out of habit, saw nobody stand, and went on.\\n\\nAt six a woman in scrubs came around the corner walking fast. The boy handed the lid back and picked up his bag. He didn't wave and Della didn't expect it. She screwed the thermos shut and waited for the 22.\"}",
+  "output_sha256": "1414db189e23abe2c0d184e590e2e7287da18217d26fc8f2207bf22c119f0422",
+  "finish_reason": "end_turn",
+  "refusal": null,
+  "returned_model": "claude-fable-5-1",
+  "usage": {
+    "input_tokens": 633,
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 0,
+    "cache_creation": {
+      "ephemeral_5m_input_tokens": 0,
+      "ephemeral_1h_input_tokens": 0
+    },
+    "output_tokens": 615,
+    "output_tokens_details": {
+      "thinking_tokens": 0
+    },
+    "service_tier": "standard",
+    "inference_geo": "global"
+  },
+  "format": {
+    "json_object": true,
+    "rule_unchanged": true,
+    "passage_is_string": true,
+    "passage_sha256": "3b3810ccadce36720c99321d7aee1d08a837552a42ddeaaa0a8350494ad351d1",
+    "passage_words": 276
+  },
+  "finished_at": "2026-09-22T20:33:38.767608+00:00",
+  "latency_seconds": 16.5606,
+  "usage_cost_upper_estimate_usd": 0.03708,
+  "stream_status": "active",
+  "budget": {
+    "usage_cost_upper_estimate_usd": 12.4588777,
+    "uncertain_cost_reserve_usd": 0.04533,
+    "in_flight_reserve_usd": 0.22804,
+    "limit_usd": 18.83
+  }
+}

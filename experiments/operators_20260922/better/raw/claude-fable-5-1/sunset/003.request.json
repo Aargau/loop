@@ -1,0 +1,22 @@
+{
+  "started_at": "2026-09-22T21:30:43.983190+00:00",
+  "model": "claude-fable-5-1",
+  "seed": "sunset",
+  "hop": 3,
+  "endpoint": "https://api.anthropic.com/v1/messages",
+  "body": {
+    "model": "claude-fable-5-1",
+    "messages": [
+      {
+        "role": "user",
+        "content": "{\"rule\": \"Return this JSON object with the rule field unchanged and, in the text field, a better version of the current text.\", \"text\": \"The sun sank behind the hills, spilling molten gold across the horizon.\"}"
+      }
+    ],
+    "max_tokens": 4096,
+    "output_config": {
+      "effort": "low"
+    }
+  },
+  "state_sha256": "7b4d6dd06e53483cbab394e6bfb0f3f61af16c05bc014682316aab04ba37e61c",
+  "reserved_cost_usd": 0.21202
+}

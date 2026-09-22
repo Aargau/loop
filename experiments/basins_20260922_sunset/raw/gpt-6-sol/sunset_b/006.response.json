@@ -1,0 +1,50 @@
+{
+  "model": "gpt-6-sol",
+  "seed": "sunset_b",
+  "hop": 6,
+  "http_status": 200,
+  "response_body": "{\n  \"id\": \"chatcmpl-ER0ticVYkGsyFHO8DUfSTb7rZhmpP\",\n  \"object\": \"chat.completion\",\n  \"created\": 1790107014,\n  \"model\": \"gpt-6-sol\",\n  \"choices\": [\n    {\n      \"index\": 0,\n      \"message\": {\n        \"role\": \"assistant\",\n        \"content\": \"{\\\"rule\\\":\\\"Return this JSON object with the rule field unchanged and a new passage of about 250 words in the text field.\\\",\\\"text\\\":\\\"The timer rang before either of them had finished their tea. Mara’s mother opened the oven, and a warm smell filled the kitchen. The cake had risen above the edge of the tin, with a crack across the top where the apples showed through.\\\\n\\\\n“Is it done?” Mara asked.\\\\n\\\\nHer mother pressed the center with one finger. “Give it five more minutes.”\\\\n\\\\nThey took their mugs to the back step. Beyond the path, the grass lay in uneven heaps where Mara had stopped raking. A few apples still hung on the tree, too high to reach without the ladder. Her mother pointed to one near the top.\\\\n\\\\n“That one will fall tonight.”\\\\n\\\\n“You don’t know that.”\\\\n\\\\n“I’ve been watching it all week.”\\\\n\\\\nMara looked at her. She had thought her mother hadn’t spent much time in the garden lately.\\\\n\\\\nWhen they brought the cake out, her mother ran a knife around the tin and left it on the counter. Mara found two plates, but they waited until the steam had thinned. The first slice broke as she lifted it. She gave the larger piece to her mother and kept the smaller one.\\\\n\\\\nHer mother took a bite. “It needs more cinnamon.”\\\\n\\\\n“That’s what I thought.”\\\\n\\\\n“We can write it on the card.”\\\\n\\\\nMara found a pencil in the drawer. There was room beneath her grandfather’s last instruction, though not much. She wrote More cinnamon next time, then set the card beside the tin so they would remember to put it away.\\\"}\",\n        \"refusal\": null,\n        \"annotations\": []\n      },\n      \"finish_reason\": \"stop\"\n    }\n  ],\n  \"usage\": {\n    \"prompt_tokens\": 353,\n    \"completion_tokens\": 397,\n    \"total_tokens\": 750,\n    \"prompt_tokens_details\": {\n      \"cached_tokens\": 0,\n      \"cache_write_tokens\": 0,\n      \"audio_tokens\": 0\n    },\n    \"completion_tokens_details\": {\n      \"reasoning_tokens\": 29,\n      \"audio_tokens\": 0,\n      \"accepted_prediction_tokens\": 0,\n      \"rejected_prediction_tokens\": 0\n    }\n  },\n  \"service_tier\": \"default\",\n  \"system_fingerprint\": null\n}\n",
+  "response_headers": {
+    "Date": "Tue, 22 Sep 2026 19:56:59 GMT",
+    "openai-processing-ms": "5497",
+    "x-request-id": "req_c7b76c705aa8405ca8db597ca4377082"
+  },
+  "output": "{\"rule\":\"Return this JSON object with the rule field unchanged and a new passage of about 250 words in the text field.\",\"text\":\"The timer rang before either of them had finished their tea. Mara’s mother opened the oven, and a warm smell filled the kitchen. The cake had risen above the edge of the tin, with a crack across the top where the apples showed through.\\n\\n“Is it done?” Mara asked.\\n\\nHer mother pressed the center with one finger. “Give it five more minutes.”\\n\\nThey took their mugs to the back step. Beyond the path, the grass lay in uneven heaps where Mara had stopped raking. A few apples still hung on the tree, too high to reach without the ladder. Her mother pointed to one near the top.\\n\\n“That one will fall tonight.”\\n\\n“You don’t know that.”\\n\\n“I’ve been watching it all week.”\\n\\nMara looked at her. She had thought her mother hadn’t spent much time in the garden lately.\\n\\nWhen they brought the cake out, her mother ran a knife around the tin and left it on the counter. Mara found two plates, but they waited until the steam had thinned. The first slice broke as she lifted it. She gave the larger piece to her mother and kept the smaller one.\\n\\nHer mother took a bite. “It needs more cinnamon.”\\n\\n“That’s what I thought.”\\n\\n“We can write it on the card.”\\n\\nMara found a pencil in the drawer. There was room beneath her grandfather’s last instruction, though not much. She wrote More cinnamon next time, then set the card beside the tin so they would remember to put it away.\"}",
+  "output_sha256": "741c9b7c890a86651ec32924c6724d73a163d32c1035370aebc45861c9cd7e1e",
+  "finish_reason": "stop",
+  "refusal": null,
+  "returned_model": "gpt-6-sol",
+  "usage": {
+    "prompt_tokens": 353,
+    "completion_tokens": 397,
+    "total_tokens": 750,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 29,
+      "audio_tokens": 0,
+      "accepted_prediction_tokens": 0,
+      "rejected_prediction_tokens": 0
+    }
+  },
+  "format": {
+    "json_object": true,
+    "rule_unchanged": true,
+    "passage_is_string": true,
+    "passage_sha256": "50024ab4969047d50d3435a85edbb0038442bdf365884ad6c8a4d19ddc3cef22",
+    "passage_words": 251
+  },
+  "finished_at": "2026-09-22T19:56:55.629340+00:00",
+  "latency_seconds": 5.6077,
+  "usage_cost_upper_estimate_usd": 0.004676,
+  "stream_status": "active",
+  "budget": {
+    "usage_cost_upper_estimate_usd": 0.5519751,
+    "uncertain_cost_reserve_usd": 0.0,
+    "in_flight_reserve_usd": 0.5459738,
+    "limit_usd": 18.83
+  }
+}
