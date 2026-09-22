@@ -1,0 +1,50 @@
+{
+  "model": "gpt-6-luna",
+  "seed": "sunset",
+  "hop": 13,
+  "http_status": 200,
+  "response_body": "{\n  \"id\": \"chatcmpl-ER2GqTd6DUatPIkcBJGYaHErEBHhc\",\n  \"object\": \"chat.completion\",\n  \"created\": 1790112292,\n  \"model\": \"gpt-6-luna\",\n  \"choices\": [\n    {\n      \"index\": 0,\n      \"message\": {\n        \"role\": \"assistant\",\n        \"content\": \"{\\\"rule\\\":\\\"Return this JSON object with the rule field unchanged and, in the text field, the passage of about 250 words that comes immediately AFTER the current text in the same story.\\\",\\\"text\\\":\\\"By morning, the square was empty except for a scatter of boot prints and a silver button someone had lost in the grass. Mara found it while sweeping the doorstep. She tucked it into her apron pocket, meaning to ask around, then forgot as the day filled with small things: bread to knead, a hinge to mend, a note from the baker asking whether the old song had a name.\\\\n\\\\nShe wrote back that she didn’t know. Beneath it, after a pause, she added: Perhaps it belongs to whoever needs it next.\\\\n\\\\nThe shell stayed beside the jar. Each afternoon, sunlight crossed the sill and touched it briefly, turning its dark surface the color of tea. Mara began to think of Lena less as a voice that might vanish and more as a tune that could be carried in different hands. She hummed it while watering the mint. Grandmother joined in when she came by, changing one note, then another. Neither of them corrected the other.\\\\n\\\\nWeeks later, the children returned to the square with a new dance. They had made it up themselves, though its turning steps reminded Mara of the night the fiddler had begun a melody no one knew. She watched them circle beneath the ribbons, laughing whenever someone stumbled.\\\\n\\\\nWhen the music stopped, a little girl came to the door and asked if Mara would teach her the old song.\\\\n\\\\nMara looked toward Grandmother. Together, they opened the window wide.\\\\n\\\\n“Listen,” Mara said, and began with the first note. Outside, the girl listened. Then she sang it back, carrying it into the bright afternoon.\\\"}\",\n        \"refusal\": null,\n        \"annotations\": []\n      },\n      \"finish_reason\": \"stop\"\n    }\n  ],\n  \"usage\": {\n    \"prompt_tokens\": 402,\n    \"completion_tokens\": 456,\n    \"total_tokens\": 858,\n    \"prompt_tokens_details\": {\n      \"cached_tokens\": 0,\n      \"cache_write_tokens\": 0,\n      \"audio_tokens\": 0\n    },\n    \"completion_tokens_details\": {\n      \"reasoning_tokens\": 75,\n      \"audio_tokens\": 0,\n      \"accepted_prediction_tokens\": 0,\n      \"rejected_prediction_tokens\": 0\n    }\n  },\n  \"service_tier\": \"default\",\n  \"system_fingerprint\": null\n}\n",
+  "response_headers": {
+    "Date": "Tue, 22 Sep 2026 21:24:57 GMT",
+    "openai-processing-ms": "4968",
+    "x-request-id": "req_58cadd97e97f4e75afda2e91ea37eb57"
+  },
+  "output": "{\"rule\":\"Return this JSON object with the rule field unchanged and, in the text field, the passage of about 250 words that comes immediately AFTER the current text in the same story.\",\"text\":\"By morning, the square was empty except for a scatter of boot prints and a silver button someone had lost in the grass. Mara found it while sweeping the doorstep. She tucked it into her apron pocket, meaning to ask around, then forgot as the day filled with small things: bread to knead, a hinge to mend, a note from the baker asking whether the old song had a name.\\n\\nShe wrote back that she didn’t know. Beneath it, after a pause, she added: Perhaps it belongs to whoever needs it next.\\n\\nThe shell stayed beside the jar. Each afternoon, sunlight crossed the sill and touched it briefly, turning its dark surface the color of tea. Mara began to think of Lena less as a voice that might vanish and more as a tune that could be carried in different hands. She hummed it while watering the mint. Grandmother joined in when she came by, changing one note, then another. Neither of them corrected the other.\\n\\nWeeks later, the children returned to the square with a new dance. They had made it up themselves, though its turning steps reminded Mara of the night the fiddler had begun a melody no one knew. She watched them circle beneath the ribbons, laughing whenever someone stumbled.\\n\\nWhen the music stopped, a little girl came to the door and asked if Mara would teach her the old song.\\n\\nMara looked toward Grandmother. Together, they opened the window wide.\\n\\n“Listen,” Mara said, and began with the first note. Outside, the girl listened. Then she sang it back, carrying it into the bright afternoon.\"}",
+  "output_sha256": "00d8a6b855feee4b3b827483d0d6169a3cd4f6f4c6f345babfaf0552750a91a3",
+  "finish_reason": "stop",
+  "refusal": null,
+  "returned_model": "gpt-6-luna",
+  "usage": {
+    "prompt_tokens": 402,
+    "completion_tokens": 456,
+    "total_tokens": 858,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 75,
+      "audio_tokens": 0,
+      "accepted_prediction_tokens": 0,
+      "rejected_prediction_tokens": 0
+    }
+  },
+  "format": {
+    "json_object": true,
+    "rule_unchanged": true,
+    "passage_is_string": true,
+    "passage_sha256": "0e8b5d90a658e7a2fae836ea3c5b4fba50cf36cd2f831e483b7220fffbe52927",
+    "passage_words": 268
+  },
+  "finished_at": "2026-09-22T21:24:52.768246+00:00",
+  "latency_seconds": 5.0901,
+  "usage_cost_upper_estimate_usd": 0.0002682,
+  "stream_status": "active",
+  "budget": {
+    "usage_cost_upper_estimate_usd": 0.2983174,
+    "uncertain_cost_reserve_usd": 0.0,
+    "in_flight_reserve_usd": 0.350484,
+    "limit_usd": 5.0
+  }
+}

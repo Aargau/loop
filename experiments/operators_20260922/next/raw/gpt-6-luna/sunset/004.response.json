@@ -1,0 +1,50 @@
+{
+  "model": "gpt-6-luna",
+  "seed": "sunset",
+  "hop": 4,
+  "http_status": 200,
+  "response_body": "{\n  \"id\": \"chatcmpl-ER2FuvfTgYJokGarjtjPDt7D0jZyw\",\n  \"object\": \"chat.completion\",\n  \"created\": 1790112234,\n  \"model\": \"gpt-6-luna\",\n  \"choices\": [\n    {\n      \"index\": 0,\n      \"message\": {\n        \"role\": \"assistant\",\n        \"content\": \"{\\\"rule\\\":\\\"Return this JSON object with the rule field unchanged and, in the text field, the passage of about 250 words that comes immediately AFTER the current text in the same story.\\\",\\\"text\\\":\\\"“Long ago,” Mara said, “when the hills were still learning their names, a lantern went missing in the storm.”\\\\n\\\\nThe flame trembled. She could hear her mother’s voice now, soft and sure, as if it were speaking beside her.\\\\n\\\\n“A child carried it up the ridge, though the wind tried to blow it out. At the top, she found the valley lost in darkness. She held the lantern high, and every window answered with a light of its own.”\\\\n\\\\nThe iron door gave a low groan. A warm glow spread across its surface, filling the scratches where names had been.\\\\n\\\\n“The child wanted to keep the lantern,” Mara continued. “But the valley needed it more. So she left it on the hill and promised that whenever anyone was lost, someone would tell the story—and the lantern would show the way home.”\\\\n\\\\nFor a moment, nothing happened.\\\\n\\\\nThen the door swung inward.\\\\n\\\\nBeyond it lay a small chamber, round as a well. In its center stood a lantern, its glass clouded with dust. A thin blue flame flickered inside.\\\\n\\\\nHer grandmother stepped forward, but Mara held out an arm. “The keeper must speak,” she said, remembering the warning.\\\\n\\\\nShe crossed the threshold alone. The floor was cold beneath her shoes. When she reached the lantern, she saw tiny pictures etched into its metal: the ridge, the valley, a child holding up a light.\\\\n\\\\nMara lifted the lantern. Its flame turned gold.\\\\n\\\\nFar below, bells began ringing—not one, but many. Light returned to Finn’s coat, and the names on the door shone bright and clear.\\\\n\\\\nHer grandmother smiled. “Now the valley remembers.”\\\\n\\\\nMara looked down at the lantern. “Then we’ll have to keep telling it.”\\\"}\",\n        \"refusal\": null,\n        \"annotations\": []\n      },\n      \"finish_reason\": \"stop\"\n    }\n  ],\n  \"usage\": {\n    \"prompt_tokens\": 415,\n    \"completion_tokens\": 477,\n    \"total_tokens\": 892,\n    \"prompt_tokens_details\": {\n      \"cached_tokens\": 0,\n      \"cache_write_tokens\": 0,\n      \"audio_tokens\": 0\n    },\n    \"completion_tokens_details\": {\n      \"reasoning_tokens\": 43,\n      \"audio_tokens\": 0,\n      \"accepted_prediction_tokens\": 0,\n      \"rejected_prediction_tokens\": 0\n    }\n  },\n  \"service_tier\": \"default\",\n  \"system_fingerprint\": null\n}\n",
+  "response_headers": {
+    "Date": "Tue, 22 Sep 2026 21:24:00 GMT",
+    "openai-processing-ms": "6194",
+    "x-request-id": "req_5b40d1a85add4520b6699631c85ba177"
+  },
+  "output": "{\"rule\":\"Return this JSON object with the rule field unchanged and, in the text field, the passage of about 250 words that comes immediately AFTER the current text in the same story.\",\"text\":\"“Long ago,” Mara said, “when the hills were still learning their names, a lantern went missing in the storm.”\\n\\nThe flame trembled. She could hear her mother’s voice now, soft and sure, as if it were speaking beside her.\\n\\n“A child carried it up the ridge, though the wind tried to blow it out. At the top, she found the valley lost in darkness. She held the lantern high, and every window answered with a light of its own.”\\n\\nThe iron door gave a low groan. A warm glow spread across its surface, filling the scratches where names had been.\\n\\n“The child wanted to keep the lantern,” Mara continued. “But the valley needed it more. So she left it on the hill and promised that whenever anyone was lost, someone would tell the story—and the lantern would show the way home.”\\n\\nFor a moment, nothing happened.\\n\\nThen the door swung inward.\\n\\nBeyond it lay a small chamber, round as a well. In its center stood a lantern, its glass clouded with dust. A thin blue flame flickered inside.\\n\\nHer grandmother stepped forward, but Mara held out an arm. “The keeper must speak,” she said, remembering the warning.\\n\\nShe crossed the threshold alone. The floor was cold beneath her shoes. When she reached the lantern, she saw tiny pictures etched into its metal: the ridge, the valley, a child holding up a light.\\n\\nMara lifted the lantern. Its flame turned gold.\\n\\nFar below, bells began ringing—not one, but many. Light returned to Finn’s coat, and the names on the door shone bright and clear.\\n\\nHer grandmother smiled. “Now the valley remembers.”\\n\\nMara looked down at the lantern. “Then we’ll have to keep telling it.”\"}",
+  "output_sha256": "abbc0d3c632b181a1482fac1349bf534224a2769fd938f1521356b443b5fcb89",
+  "finish_reason": "stop",
+  "refusal": null,
+  "returned_model": "gpt-6-luna",
+  "usage": {
+    "prompt_tokens": 415,
+    "completion_tokens": 477,
+    "total_tokens": 892,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 43,
+      "audio_tokens": 0,
+      "accepted_prediction_tokens": 0,
+      "rejected_prediction_tokens": 0
+    }
+  },
+  "format": {
+    "json_object": true,
+    "rule_unchanged": true,
+    "passage_is_string": true,
+    "passage_sha256": "6b62b1b819266a33632ae8e4a9fd69a6e7aff658a8d23ff6b4db758b0bd22824",
+    "passage_words": 283
+  },
+  "finished_at": "2026-09-22T21:23:56.442319+00:00",
+  "latency_seconds": 6.2829,
+  "usage_cost_upper_estimate_usd": 0.00028,
+  "stream_status": "active",
+  "budget": {
+    "usage_cost_upper_estimate_usd": 0.0839986,
+    "uncertain_cost_reserve_usd": 0.0,
+    "in_flight_reserve_usd": 0.347386,
+    "limit_usd": 5.0
+  }
+}

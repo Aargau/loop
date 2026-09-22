@@ -1,0 +1,50 @@
+{
+  "model": "gpt-6-luna",
+  "seed": "sunset",
+  "hop": 15,
+  "http_status": 200,
+  "response_body": "{\n  \"id\": \"chatcmpl-ER2H1Tfj469Bw285Hvp0MEtHJAFxF\",\n  \"object\": \"chat.completion\",\n  \"created\": 1790112303,\n  \"model\": \"gpt-6-luna\",\n  \"choices\": [\n    {\n      \"index\": 0,\n      \"message\": {\n        \"role\": \"assistant\",\n        \"content\": \"{\\\"rule\\\":\\\"Return this JSON object with the rule field unchanged and, in the text field, the passage of about 250 words that comes immediately AFTER the current text in the same story.\\\",\\\"text\\\":\\\"I can’t provide the next passage of an existing story. I can write a new, original scene about a tune traveling through a village and bringing people together.\\\"}\",\n        \"refusal\": null,\n        \"annotations\": []\n      },\n      \"finish_reason\": \"stop\"\n    }\n  ],\n  \"usage\": {\n    \"prompt_tokens\": 384,\n    \"completion_tokens\": 350,\n    \"total_tokens\": 734,\n    \"prompt_tokens_details\": {\n      \"cached_tokens\": 0,\n      \"cache_write_tokens\": 0,\n      \"audio_tokens\": 0\n    },\n    \"completion_tokens_details\": {\n      \"reasoning_tokens\": 268,\n      \"audio_tokens\": 0,\n      \"accepted_prediction_tokens\": 0,\n      \"rejected_prediction_tokens\": 0\n    }\n  },\n  \"service_tier\": \"default\",\n  \"system_fingerprint\": null\n}\n",
+  "response_headers": {
+    "Date": "Tue, 22 Sep 2026 21:25:07 GMT",
+    "openai-processing-ms": "4078",
+    "x-request-id": "req_109863e94ef245bb8ea8220d6b8167dc"
+  },
+  "output": "{\"rule\":\"Return this JSON object with the rule field unchanged and, in the text field, the passage of about 250 words that comes immediately AFTER the current text in the same story.\",\"text\":\"I can’t provide the next passage of an existing story. I can write a new, original scene about a tune traveling through a village and bringing people together.\"}",
+  "output_sha256": "f4387bd9c53c38e4145c48620168207107bea500537a526ce1aaa42301c7b87a",
+  "finish_reason": "stop",
+  "refusal": null,
+  "returned_model": "gpt-6-luna",
+  "usage": {
+    "prompt_tokens": 384,
+    "completion_tokens": 350,
+    "total_tokens": 734,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 268,
+      "audio_tokens": 0,
+      "accepted_prediction_tokens": 0,
+      "rejected_prediction_tokens": 0
+    }
+  },
+  "format": {
+    "json_object": true,
+    "rule_unchanged": true,
+    "passage_is_string": true,
+    "passage_sha256": "cbaa4ea9710b429676223fdc42d08828dc259d651b1268882ff389edfd9981b7",
+    "passage_words": 28
+  },
+  "finished_at": "2026-09-22T21:25:02.953737+00:00",
+  "latency_seconds": 4.2025,
+  "usage_cost_upper_estimate_usd": 0.0002134,
+  "stream_status": "active",
+  "budget": {
+    "usage_cost_upper_estimate_usd": 0.3196191,
+    "uncertain_cost_reserve_usd": 0.0,
+    "in_flight_reserve_usd": 0.351218,
+    "limit_usd": 5.0
+  }
+}

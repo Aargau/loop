@@ -1,0 +1,50 @@
+{
+  "model": "gpt-6-luna",
+  "seed": "sunset",
+  "hop": 11,
+  "http_status": 200,
+  "response_body": "{\n  \"id\": \"chatcmpl-ER2GR3c1wHODIVPqehxahCFpAAQyr\",\n  \"object\": \"chat.completion\",\n  \"created\": 1790112267,\n  \"model\": \"gpt-6-luna\",\n  \"choices\": [\n    {\n      \"index\": 0,\n      \"message\": {\n        \"role\": \"assistant\",\n        \"content\": \"{\\\"rule\\\":\\\"Return this JSON object with the rule field unchanged and, in the text field, the passage of about 250 words that came immediately BEFORE the current text in its story.\\\",\\\"text\\\":\\\"The message had arrived the night before, just as Mara was putting away the dishes. Her mother’s voice on the phone was thin and unsteady. “Grandfather’s gone,” she had said. “He died in his sleep.” Then, after a pause, she added that the doctor had come and there was nothing more to be done.\\\\n\\\\nMara sat at the kitchen table long after they hung up. The words didn’t seem to fit together. Her grandfather had always seemed too stubborn to die; even last winter, when he’d caught a fever, he’d joked that he planned to outlive every doctor in the county. Mara had laughed and promised to visit during the school holidays.\\\\n\\\\nShe hadn’t gone. There had been exams, then a friend’s birthday, then the ordinary busy days that somehow filled the time. She told herself she would make the trip soon. Now soon had become too late.\\\\n\\\\nHer mother called again in the morning. She asked Mara to come home, and Mara packed without knowing what to bring. A sweater, a book, the old photograph of her and her grandfather beside the garden gate. She tucked the photograph into her coat pocket and left before she could change her mind.\\\\n\\\\nThe train was crowded at first. Mara found a window seat and watched towns give way to fields. She tried to read, but the same sentence kept losing its meaning. When the conductor announced the next stop, she closed the book and held the photograph in both hands.\\\\n\\\\nBy the time the train slowed, rain had begun to stipple the glass. Mara stepped onto the platform with her bag, searching the waiting faces for her mother.\\\"}\",\n        \"refusal\": null,\n        \"annotations\": []\n      },\n      \"finish_reason\": \"stop\"\n    }\n  ],\n  \"usage\": {\n    \"prompt_tokens\": 370,\n    \"completion_tokens\": 543,\n    \"total_tokens\": 913,\n    \"prompt_tokens_details\": {\n      \"cached_tokens\": 0,\n      \"cache_write_tokens\": 0,\n      \"audio_tokens\": 0\n    },\n    \"completion_tokens_details\": {\n      \"reasoning_tokens\": 154,\n      \"audio_tokens\": 0,\n      \"accepted_prediction_tokens\": 0,\n      \"rejected_prediction_tokens\": 0\n    }\n  },\n  \"service_tier\": \"default\",\n  \"system_fingerprint\": null\n}\n",
+  "response_headers": {
+    "Date": "Tue, 22 Sep 2026 21:24:33 GMT",
+    "openai-processing-ms": "6085",
+    "x-request-id": "req_659801ed0479457199cc87dd30005120"
+  },
+  "output": "{\"rule\":\"Return this JSON object with the rule field unchanged and, in the text field, the passage of about 250 words that came immediately BEFORE the current text in its story.\",\"text\":\"The message had arrived the night before, just as Mara was putting away the dishes. Her mother’s voice on the phone was thin and unsteady. “Grandfather’s gone,” she had said. “He died in his sleep.” Then, after a pause, she added that the doctor had come and there was nothing more to be done.\\n\\nMara sat at the kitchen table long after they hung up. The words didn’t seem to fit together. Her grandfather had always seemed too stubborn to die; even last winter, when he’d caught a fever, he’d joked that he planned to outlive every doctor in the county. Mara had laughed and promised to visit during the school holidays.\\n\\nShe hadn’t gone. There had been exams, then a friend’s birthday, then the ordinary busy days that somehow filled the time. She told herself she would make the trip soon. Now soon had become too late.\\n\\nHer mother called again in the morning. She asked Mara to come home, and Mara packed without knowing what to bring. A sweater, a book, the old photograph of her and her grandfather beside the garden gate. She tucked the photograph into her coat pocket and left before she could change her mind.\\n\\nThe train was crowded at first. Mara found a window seat and watched towns give way to fields. She tried to read, but the same sentence kept losing its meaning. When the conductor announced the next stop, she closed the book and held the photograph in both hands.\\n\\nBy the time the train slowed, rain had begun to stipple the glass. Mara stepped onto the platform with her bag, searching the waiting faces for her mother.\"}",
+  "output_sha256": "11972253a795ade0cbb8bda313eb3ea013b2560c8f12a03f12979a3c8abc3a56",
+  "finish_reason": "stop",
+  "refusal": null,
+  "returned_model": "gpt-6-luna",
+  "usage": {
+    "prompt_tokens": 370,
+    "completion_tokens": 543,
+    "total_tokens": 913,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 154,
+      "audio_tokens": 0,
+      "accepted_prediction_tokens": 0,
+      "rejected_prediction_tokens": 0
+    }
+  },
+  "format": {
+    "json_object": true,
+    "rule_unchanged": true,
+    "passage_is_string": true,
+    "passage_sha256": "f26577e08aeada1d1fc0052300988f2975bee380696e880e41abf449c8cded8f",
+    "passage_words": 277
+  },
+  "finished_at": "2026-09-22T21:24:28.770118+00:00",
+  "latency_seconds": 6.1825,
+  "usage_cost_upper_estimate_usd": 0.0003085,
+  "stream_status": "active",
+  "budget": {
+    "usage_cost_upper_estimate_usd": 0.2470031,
+    "uncertain_cost_reserve_usd": 0.0,
+    "in_flight_reserve_usd": 0.342286,
+    "limit_usd": 5.0
+  }
+}

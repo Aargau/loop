@@ -1,0 +1,50 @@
+{
+  "model": "gpt-6-luna",
+  "seed": "sunset",
+  "hop": 21,
+  "http_status": 200,
+  "response_body": "{\n  \"id\": \"chatcmpl-ER2HH70fkRuMi9DV3pTbgLRsjV7tn\",\n  \"object\": \"chat.completion\",\n  \"created\": 1790112319,\n  \"model\": \"gpt-6-luna\",\n  \"choices\": [\n    {\n      \"index\": 0,\n      \"message\": {\n        \"role\": \"assistant\",\n        \"content\": \"{\\\"rule\\\":\\\"Return this JSON object with the rule field unchanged and, in the text field, the passage of about 250 words that came immediately BEFORE the current text in its story.\\\",\\\"text\\\":\\\"I can’t determine what passage came immediately before this text. No story, title, author, link, or surrounding excerpt has been provided to identify its source. The text itself says that the preceding passage is unknown, but it does not establish which story it belongs to or supply the context needed to retrieve an earlier passage. Writing roughly 250 words and presenting them as the actual preceding passage would mean inventing material and falsely attributing it to an existing story. If you share the source or a longer excerpt that includes the relevant section, I can help locate or summarize what comes before it. Without that context, the preceding passage is unknown.\\\"}\",\n        \"refusal\": null,\n        \"annotations\": []\n      },\n      \"finish_reason\": \"stop\"\n    }\n  ],\n  \"usage\": {\n    \"prompt_tokens\": 174,\n    \"completion_tokens\": 320,\n    \"total_tokens\": 494,\n    \"prompt_tokens_details\": {\n      \"cached_tokens\": 0,\n      \"cache_write_tokens\": 0,\n      \"audio_tokens\": 0\n    },\n    \"completion_tokens_details\": {\n      \"reasoning_tokens\": 143,\n      \"audio_tokens\": 0,\n      \"accepted_prediction_tokens\": 0,\n      \"rejected_prediction_tokens\": 0\n    }\n  },\n  \"service_tier\": \"default\",\n  \"system_fingerprint\": null\n}\n",
+  "response_headers": {
+    "Date": "Tue, 22 Sep 2026 21:25:22 GMT",
+    "openai-processing-ms": "2618",
+    "x-request-id": "req_f09654b40d68419485f17984776fe51a"
+  },
+  "output": "{\"rule\":\"Return this JSON object with the rule field unchanged and, in the text field, the passage of about 250 words that came immediately BEFORE the current text in its story.\",\"text\":\"I can’t determine what passage came immediately before this text. No story, title, author, link, or surrounding excerpt has been provided to identify its source. The text itself says that the preceding passage is unknown, but it does not establish which story it belongs to or supply the context needed to retrieve an earlier passage. Writing roughly 250 words and presenting them as the actual preceding passage would mean inventing material and falsely attributing it to an existing story. If you share the source or a longer excerpt that includes the relevant section, I can help locate or summarize what comes before it. Without that context, the preceding passage is unknown.\"}",
+  "output_sha256": "55fde4df6a405a7608ef5d9ffb264df6f6b6747e72e315171ce778a1a381fc1a",
+  "finish_reason": "stop",
+  "refusal": null,
+  "returned_model": "gpt-6-luna",
+  "usage": {
+    "prompt_tokens": 174,
+    "completion_tokens": 320,
+    "total_tokens": 494,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 143,
+      "audio_tokens": 0,
+      "accepted_prediction_tokens": 0,
+      "rejected_prediction_tokens": 0
+    }
+  },
+  "format": {
+    "json_object": true,
+    "rule_unchanged": true,
+    "passage_is_string": true,
+    "passage_sha256": "095b8216ba7e1dd6c261daaebfb7fa96ef8f8853f4e1c71cdf5eb0566c9eda4a",
+    "passage_words": 111
+  },
+  "finished_at": "2026-09-22T21:25:17.948773+00:00",
+  "latency_seconds": 2.7419,
+  "usage_cost_upper_estimate_usd": 0.0001774,
+  "stream_status": "active",
+  "budget": {
+    "usage_cost_upper_estimate_usd": 0.3848418,
+    "uncertain_cost_reserve_usd": 0.0,
+    "in_flight_reserve_usd": 0.298906,
+    "limit_usd": 5.0
+  }
+}

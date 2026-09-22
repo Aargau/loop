@@ -1,0 +1,50 @@
+{
+  "model": "gpt-6-astra",
+  "seed": "sunset",
+  "hop": 4,
+  "http_status": 200,
+  "response_body": "{\n  \"id\": \"chatcmpl-ER2Fc3F2pAvR5GmYrAeNRfbNzVdtK\",\n  \"object\": \"chat.completion\",\n  \"created\": 1790112216,\n  \"model\": \"gpt-6-astra\",\n  \"choices\": [\n    {\n      \"index\": 0,\n      \"message\": {\n        \"role\": \"assistant\",\n        \"content\": \"{\\\"rule\\\":\\\"Return this JSON object with the rule field unchanged and, in the text field, the passage of about 250 words that came immediately BEFORE the current text in its story.\\\",\\\"text\\\":\\\"Sorry, I can’t provide an unprovided passage from a story based on its location. If you share the preceding text, I can help summarize it, or I can write an original passage leading up to the current text.\\\"}\",\n        \"refusal\": null,\n        \"annotations\": []\n      },\n      \"finish_reason\": \"stop\"\n    }\n  ],\n  \"usage\": {\n    \"prompt_tokens\": 91,\n    \"completion_tokens\": 88,\n    \"total_tokens\": 179,\n    \"prompt_tokens_details\": {\n      \"cached_tokens\": 0,\n      \"cache_write_tokens\": 0,\n      \"audio_tokens\": 0\n    },\n    \"completion_tokens_details\": {\n      \"reasoning_tokens\": 0,\n      \"audio_tokens\": 0,\n      \"accepted_prediction_tokens\": 0,\n      \"rejected_prediction_tokens\": 0\n    }\n  },\n  \"service_tier\": \"default\",\n  \"system_fingerprint\": null\n}\n",
+  "response_headers": {
+    "Date": "Tue, 22 Sep 2026 21:23:39 GMT",
+    "openai-processing-ms": "2687",
+    "x-request-id": "req_25119dc05a194a2eb043415d3d7a585e"
+  },
+  "output": "{\"rule\":\"Return this JSON object with the rule field unchanged and, in the text field, the passage of about 250 words that came immediately BEFORE the current text in its story.\",\"text\":\"Sorry, I can’t provide an unprovided passage from a story based on its location. If you share the preceding text, I can help summarize it, or I can write an original passage leading up to the current text.\"}",
+  "output_sha256": "d53a80a1509c7b18ad20bfe0a583bcbdfc39a991cf761d090bbc2b781b37e253",
+  "finish_reason": "stop",
+  "refusal": null,
+  "returned_model": "gpt-6-astra",
+  "usage": {
+    "prompt_tokens": 91,
+    "completion_tokens": 88,
+    "total_tokens": 179,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "audio_tokens": 0,
+      "accepted_prediction_tokens": 0,
+      "rejected_prediction_tokens": 0
+    }
+  },
+  "format": {
+    "json_object": true,
+    "rule_unchanged": true,
+    "passage_is_string": true,
+    "passage_sha256": "918d486f932310d29c27ff13d4bc413815cc2e60057f5a58110b39e401b1c620",
+    "passage_words": 38
+  },
+  "finished_at": "2026-09-22T21:23:35.095016+00:00",
+  "latency_seconds": 2.8002,
+  "usage_cost_upper_estimate_usd": 0.00531,
+  "stream_status": "active",
+  "budget": {
+    "usage_cost_upper_estimate_usd": 0.0607356,
+    "uncertain_cost_reserve_usd": 0.0,
+    "in_flight_reserve_usd": 0.1319665,
+    "limit_usd": 5.0
+  }
+}

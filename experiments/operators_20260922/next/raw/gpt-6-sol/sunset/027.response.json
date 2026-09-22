@@ -1,0 +1,50 @@
+{
+  "model": "gpt-6-sol",
+  "seed": "sunset",
+  "hop": 27,
+  "http_status": 200,
+  "response_body": "{\n  \"id\": \"chatcmpl-ER2I41ZnIrgMKZ1Zlop7Eh22QVMew\",\n  \"object\": \"chat.completion\",\n  \"created\": 1790112368,\n  \"model\": \"gpt-6-sol\",\n  \"choices\": [\n    {\n      \"index\": 0,\n      \"message\": {\n        \"role\": \"assistant\",\n        \"content\": \"{\\\"rule\\\":\\\"Return this JSON object with the rule field unchanged and, in the text field, the passage of about 250 words that comes immediately AFTER the current text in the same story.\\\",\\\"text\\\":\\\"Mara turned. The phone lay facedown, but its screen cast a pale rectangle across the table. Letters clicked into place beneath the glass.\\\\n\\\\nThe other Mara reached for it. “Don’t.”\\\\n\\\\n“You said you waited.”\\\\n\\\\n“I didn’t say it helped.”\\\\n\\\\nOutside, a woman stopped in the inverted street. Her umbrella swung gently beneath her shoes. She looked up at the open window, and Mara saw her own face.\\\\n\\\\nFrom overhead came the scrape of a chair. The tapping stopped.\\\\n\\\\nThe woman outside raised one finger to her lips. Then she pointed behind Mara.\\\\n\\\\nOn the table, the phone was silent. The other Mara stood beside it, staring at the stairs. A shadow had appeared on the bottom step, though no one was coming down.\\\\n\\\\nMara climbed onto the sill. The street seemed no farther away than a low drop, until she looked at the people walking there. Their coats hung toward the sky.\\\\n\\\\n“If I go out,” she said, “where does it end?”\\\\n\\\\nThe woman outside shook her head. Rain slipped upward past her face.\\\\n\\\\nBehind Mara, the shadow lengthened across the kitchen floor. She let herself through the window.\\\\n\\\\nFor one breath she fell. Then her shoes struck wet pavement, and she was standing beneath an umbrella she could not remember opening. Above her, in the window, the two Maras watched.\\\\n\\\\nOne of them lifted the phone. Mara heard a faint tap, and the window went dark. She waited for the street to change, but people kept walking past. Water ran up the curb. She closed the umbrella and felt the rain against her face.\\\"}\",\n        \"refusal\": null,\n        \"annotations\": []\n      },\n      \"finish_reason\": \"stop\"\n    }\n  ],\n  \"usage\": {\n    \"prompt_tokens\": 411,\n    \"completion_tokens\": 426,\n    \"total_tokens\": 837,\n    \"prompt_tokens_details\": {\n      \"cached_tokens\": 0,\n      \"cache_write_tokens\": 0,\n      \"audio_tokens\": 0\n    },\n    \"completion_tokens_details\": {\n      \"reasoning_tokens\": 24,\n      \"audio_tokens\": 0,\n      \"accepted_prediction_tokens\": 0,\n      \"rejected_prediction_tokens\": 0\n    }\n  },\n  \"service_tier\": \"default\",\n  \"system_fingerprint\": null\n}\n",
+  "response_headers": {
+    "Date": "Tue, 22 Sep 2026 21:26:14 GMT",
+    "openai-processing-ms": "6469",
+    "x-request-id": "req_fdf0f425ef6b4e15a3ca28d3815cb01c"
+  },
+  "output": "{\"rule\":\"Return this JSON object with the rule field unchanged and, in the text field, the passage of about 250 words that comes immediately AFTER the current text in the same story.\",\"text\":\"Mara turned. The phone lay facedown, but its screen cast a pale rectangle across the table. Letters clicked into place beneath the glass.\\n\\nThe other Mara reached for it. “Don’t.”\\n\\n“You said you waited.”\\n\\n“I didn’t say it helped.”\\n\\nOutside, a woman stopped in the inverted street. Her umbrella swung gently beneath her shoes. She looked up at the open window, and Mara saw her own face.\\n\\nFrom overhead came the scrape of a chair. The tapping stopped.\\n\\nThe woman outside raised one finger to her lips. Then she pointed behind Mara.\\n\\nOn the table, the phone was silent. The other Mara stood beside it, staring at the stairs. A shadow had appeared on the bottom step, though no one was coming down.\\n\\nMara climbed onto the sill. The street seemed no farther away than a low drop, until she looked at the people walking there. Their coats hung toward the sky.\\n\\n“If I go out,” she said, “where does it end?”\\n\\nThe woman outside shook her head. Rain slipped upward past her face.\\n\\nBehind Mara, the shadow lengthened across the kitchen floor. She let herself through the window.\\n\\nFor one breath she fell. Then her shoes struck wet pavement, and she was standing beneath an umbrella she could not remember opening. Above her, in the window, the two Maras watched.\\n\\nOne of them lifted the phone. Mara heard a faint tap, and the window went dark. She waited for the street to change, but people kept walking past. Water ran up the curb. She closed the umbrella and felt the rain against her face.\"}",
+  "output_sha256": "d42608951fbd25f26d92561dcb474b32ad3a7556298dd0fb4b4671b0757d152d",
+  "finish_reason": "stop",
+  "refusal": null,
+  "returned_model": "gpt-6-sol",
+  "usage": {
+    "prompt_tokens": 411,
+    "completion_tokens": 426,
+    "total_tokens": 837,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 24,
+      "audio_tokens": 0,
+      "accepted_prediction_tokens": 0,
+      "rejected_prediction_tokens": 0
+    }
+  },
+  "format": {
+    "json_object": true,
+    "rule_unchanged": true,
+    "passage_is_string": true,
+    "passage_sha256": "1dccd53e5c9c8eba09f343bb48328e3fd200a590ded25e09b901f658aee3894a",
+    "passage_words": 265
+  },
+  "finished_at": "2026-09-22T21:26:10.304504+00:00",
+  "latency_seconds": 6.6169,
+  "usage_cost_upper_estimate_usd": 0.005082,
+  "stream_status": "active",
+  "budget": {
+    "usage_cost_upper_estimate_usd": 0.5646304,
+    "uncertain_cost_reserve_usd": 0.0,
+    "in_flight_reserve_usd": 0.3064948,
+    "limit_usd": 5.0
+  }
+}

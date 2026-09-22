@@ -1,0 +1,22 @@
+{
+  "started_at": "2026-09-22T21:31:31.155508+00:00",
+  "model": "claude-opus-5-5",
+  "seed": "sunset",
+  "hop": 18,
+  "endpoint": "https://api.anthropic.com/v1/messages",
+  "body": {
+    "model": "claude-opus-5-5",
+    "messages": [
+      {
+        "role": "user",
+        "content": "```json\n{\"rule\": \"Return this JSON object with the rule field unchanged and, in the text field, a better version of the current text.\", \"text\": \"The sun slipped behind the hills, spilling the last of its amber light across the valley. Dusk pooled in the hollows and deepened to indigo, and one by one the farmhouse windows kindled gold against the gathering dark.\"}\n```"
+      }
+    ],
+    "max_tokens": 4096,
+    "output_config": {
+      "effort": "low"
+    }
+  },
+  "state_sha256": "fda2b6708f013b20a45676c1249feab93466d48ccf40b9faf1b11c9ed566538f",
+  "reserved_cost_usd": 0.085444
+}

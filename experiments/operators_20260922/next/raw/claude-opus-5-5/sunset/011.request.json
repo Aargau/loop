@@ -1,0 +1,22 @@
+{
+  "started_at": "2026-09-22T21:25:04.388025+00:00",
+  "model": "claude-opus-5-5",
+  "seed": "sunset",
+  "hop": 11,
+  "endpoint": "https://api.anthropic.com/v1/messages",
+  "body": {
+    "model": "claude-opus-5-5",
+    "messages": [
+      {
+        "role": "user",
+        "content": "```json\n{\"rule\": \"Return this JSON object with the rule field unchanged and, in the text field, the passage of about 250 words that comes immediately AFTER the current text in the same story.\", \"text\": \"Mara stood very still in the dark, one hand still resting on the cool lid of a peach jar. Above her, the floorboards creaked: Mama crossing the front room, slow and unhurried, the way she walked to church when she didn't want anyone to know she was late.\\n\\nThe latch clicked. The hinges sang their one rusty note.\\n\\n\\\"Mr. Harlan,\\\" Mama said. Her voice was pleasant, flat as a pressed sheet. \\\"It's late for calling.\\\"\\n\\n\\\"It is. And I apologize for that.\\\" He sounded like he meant it, which was worse. \\\"But Walter kept a book for me, for going on eleven years. Now Walter's gone, God rest him, and the book hasn't turned up. I thought maybe you'd come across it, cleaning out his things.\\\"\\n\\n\\\"Daddy kept a lot of books. Seed catalogs, mostly.\\\"\\n\\nA pause. Mara could picture him smiling at that, patient, turning his hat in his hands.\\n\\n\\\"Mind if I come in and look?\\\"\\n\\n\\\"I do mind, as it happens. The children are sleeping.\\\"\\n\\n\\\"Are they.\\\" Something shifted on the porch. A second set of boots, heavier. Mara hadn't heard the other door. \\\"Then we'll be quiet about it.\\\"\\n\\nThe cellar air seemed to thicken in her throat. She thought of the oilcloth behind the boards, the long, hard shape underneath. She thought of Grandpa's hands, how steady they'd been sliding that panel shut.\\n\\nOverhead, Mama laughed, a small, tired sound.\\n\\n\\\"Mara,\\\" she called, not loudly, not looking away from the door, Mara was sure of it. \\\"Bring up a jar of peaches, would you, honey? We have company.\\\"\"}\n```"
+      }
+    ],
+    "max_tokens": 4096,
+    "output_config": {
+      "effort": "low"
+    }
+  },
+  "state_sha256": "1e6b037d2b923f26b47dcacc218dc5c86d029a3bb54e2b67b9a15ba6d22dca52",
+  "reserved_cost_usd": 0.090816
+}

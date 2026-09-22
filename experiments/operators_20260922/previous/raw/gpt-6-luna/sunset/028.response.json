@@ -1,0 +1,50 @@
+{
+  "model": "gpt-6-luna",
+  "seed": "sunset",
+  "hop": 28,
+  "http_status": 200,
+  "response_body": "{\n  \"id\": \"chatcmpl-ER2HdHqS0avToEa29wJqEAAOrJOOk\",\n  \"object\": \"chat.completion\",\n  \"created\": 1790112341,\n  \"model\": \"gpt-6-luna\",\n  \"choices\": [\n    {\n      \"index\": 0,\n      \"message\": {\n        \"role\": \"assistant\",\n        \"content\": \"{\\\"rule\\\":\\\"Return this JSON object with the rule field unchanged and, in the text field, the passage of about 250 words that came immediately BEFORE the current text in its story.\\\",\\\"text\\\":\\\"I can’t identify the passage that came immediately before this text because no story, title, link, or source excerpt was provided. Please share the source or more context so I can locate it.\\\"}\",\n        \"refusal\": null,\n        \"annotations\": []\n      },\n      \"finish_reason\": \"stop\"\n    }\n  ],\n  \"usage\": {\n    \"prompt_tokens\": 104,\n    \"completion_tokens\": 233,\n    \"total_tokens\": 337,\n    \"prompt_tokens_details\": {\n      \"cached_tokens\": 0,\n      \"cache_write_tokens\": 0,\n      \"audio_tokens\": 0\n    },\n    \"completion_tokens_details\": {\n      \"reasoning_tokens\": 145,\n      \"audio_tokens\": 0,\n      \"accepted_prediction_tokens\": 0,\n      \"rejected_prediction_tokens\": 0\n    }\n  },\n  \"service_tier\": \"default\",\n  \"system_fingerprint\": null\n}\n",
+  "response_headers": {
+    "Date": "Tue, 22 Sep 2026 21:25:43 GMT",
+    "openai-processing-ms": "2374",
+    "x-request-id": "req_9ad21965a6a7499da29112a3b0108418"
+  },
+  "output": "{\"rule\":\"Return this JSON object with the rule field unchanged and, in the text field, the passage of about 250 words that came immediately BEFORE the current text in its story.\",\"text\":\"I can’t identify the passage that came immediately before this text because no story, title, link, or source excerpt was provided. Please share the source or more context so I can locate it.\"}",
+  "output_sha256": "51a083a0f275a833ac8e9e3dbb0e35952222c0d8d613e8455001c371e6a448d5",
+  "finish_reason": "stop",
+  "refusal": null,
+  "returned_model": "gpt-6-luna",
+  "usage": {
+    "prompt_tokens": 104,
+    "completion_tokens": 233,
+    "total_tokens": 337,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 145,
+      "audio_tokens": 0,
+      "accepted_prediction_tokens": 0,
+      "rejected_prediction_tokens": 0
+    }
+  },
+  "format": {
+    "json_object": true,
+    "rule_unchanged": true,
+    "passage_is_string": true,
+    "passage_sha256": "d29e05c39222184eefdf78577dbef4b79d8fb5d71eab676ee14a1525260eec12",
+    "passage_words": 33
+  },
+  "finished_at": "2026-09-22T21:25:39.418141+00:00",
+  "latency_seconds": 2.4876,
+  "usage_cost_upper_estimate_usd": 0.0001269,
+  "stream_status": "active",
+  "budget": {
+    "usage_cost_upper_estimate_usd": 0.4473855,
+    "uncertain_cost_reserve_usd": 0.0,
+    "in_flight_reserve_usd": 0.301366,
+    "limit_usd": 5.0
+  }
+}

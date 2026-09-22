@@ -1,0 +1,50 @@
+{
+  "model": "gpt-6-luna",
+  "seed": "sunset",
+  "hop": 16,
+  "http_status": 200,
+  "response_body": "{\n  \"id\": \"chatcmpl-ER2H0pZOCi6igasElGikxm5xAUTvw\",\n  \"object\": \"chat.completion\",\n  \"created\": 1790112302,\n  \"model\": \"gpt-6-luna\",\n  \"choices\": [\n    {\n      \"index\": 0,\n      \"message\": {\n        \"role\": \"assistant\",\n        \"content\": \"{\\\"rule\\\":\\\"Return this JSON object with the rule field unchanged and, in the text field, the passage of about 250 words that came immediately BEFORE the current text in its story.\\\",\\\"text\\\":\\\"I can’t determine the exact passage that came before the supplied text because no earlier part of the story or source is provided. Here’s an original imagined passage that could lead into it:\\\\n\\\\nMara found the envelope tucked behind the loose panel of the library’s old card catalog. It was addressed to no one, and the date stamped on its corner was nearly a decade old. Inside lay a brass key and a strip of paper bearing a room number: B-17.\\\\n\\\\nShe recognized the number. The basement archive had been sealed after the leak, and B-17 was the room where the library kept uncatalogued donations before deciding what to do with them. Mara had helped with that work once, back when the collection still arrived in boxes and every box seemed to contain somebody’s unfinished life.\\\\n\\\\nThe key fit a side entrance she thought had been permanently locked. Behind it, a narrow corridor smelled of wet plaster and cold metal. At the far end, a red indicator glowed above the archive door. The building’s maintenance system should have cut power to that wing years ago.\\\\n\\\\nMara didn’t go in. Instead, she photographed the envelope and called the facilities office. No one answered. She left a message, then went upstairs to find the night supervisor. By the time she returned with him, the indicator had gone dark, and the key was warm in her palm.\\\\n\\\\nThe supervisor insisted the room was empty. Mara wanted to believe him. But, through the door, she heard a faint electronic chime—followed by the soft scrape of a chair moving across the floor.\\\\n\\\\nThe next morning, she asked Eli to come with her.\\\"}\",\n        \"refusal\": null,\n        \"annotations\": []\n      },\n      \"finish_reason\": \"stop\"\n    }\n  ],\n  \"usage\": {\n    \"prompt_tokens\": 388,\n    \"completion_tokens\": 385,\n    \"total_tokens\": 773,\n    \"prompt_tokens_details\": {\n      \"cached_tokens\": 0,\n      \"cache_write_tokens\": 0,\n      \"audio_tokens\": 0\n    },\n    \"completion_tokens_details\": {\n      \"reasoning_tokens\": 0,\n      \"audio_tokens\": 0,\n      \"accepted_prediction_tokens\": 0,\n      \"rejected_prediction_tokens\": 0\n    }\n  },\n  \"service_tier\": \"default\",\n  \"system_fingerprint\": null\n}\n",
+  "response_headers": {
+    "Date": "Tue, 22 Sep 2026 21:25:04 GMT",
+    "openai-processing-ms": "2973",
+    "x-request-id": "req_16271f82043b475a84616d379e664069"
+  },
+  "output": "{\"rule\":\"Return this JSON object with the rule field unchanged and, in the text field, the passage of about 250 words that came immediately BEFORE the current text in its story.\",\"text\":\"I can’t determine the exact passage that came before the supplied text because no earlier part of the story or source is provided. Here’s an original imagined passage that could lead into it:\\n\\nMara found the envelope tucked behind the loose panel of the library’s old card catalog. It was addressed to no one, and the date stamped on its corner was nearly a decade old. Inside lay a brass key and a strip of paper bearing a room number: B-17.\\n\\nShe recognized the number. The basement archive had been sealed after the leak, and B-17 was the room where the library kept uncatalogued donations before deciding what to do with them. Mara had helped with that work once, back when the collection still arrived in boxes and every box seemed to contain somebody’s unfinished life.\\n\\nThe key fit a side entrance she thought had been permanently locked. Behind it, a narrow corridor smelled of wet plaster and cold metal. At the far end, a red indicator glowed above the archive door. The building’s maintenance system should have cut power to that wing years ago.\\n\\nMara didn’t go in. Instead, she photographed the envelope and called the facilities office. No one answered. She left a message, then went upstairs to find the night supervisor. By the time she returned with him, the indicator had gone dark, and the key was warm in her palm.\\n\\nThe supervisor insisted the room was empty. Mara wanted to believe him. But, through the door, she heard a faint electronic chime—followed by the soft scrape of a chair moving across the floor.\\n\\nThe next morning, she asked Eli to come with her.\"}",
+  "output_sha256": "acacb24b935b5fac0bfe79f3d88c99b0b62b62251421e3090437a774ae8455f5",
+  "finish_reason": "stop",
+  "refusal": null,
+  "returned_model": "gpt-6-luna",
+  "usage": {
+    "prompt_tokens": 388,
+    "completion_tokens": 385,
+    "total_tokens": 773,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "audio_tokens": 0,
+      "accepted_prediction_tokens": 0,
+      "rejected_prediction_tokens": 0
+    }
+  },
+  "format": {
+    "json_object": true,
+    "rule_unchanged": true,
+    "passage_is_string": true,
+    "passage_sha256": "afc2a19a015abbb83cf5f96a53ba2ec97eaa0e574ec1a3a9ecf0b0357d6f5e75",
+    "passage_words": 277
+  },
+  "finished_at": "2026-09-22T21:25:00.338886+00:00",
+  "latency_seconds": 3.0675,
+  "usage_cost_upper_estimate_usd": 0.0002313,
+  "stream_status": "active",
+  "budget": {
+    "usage_cost_upper_estimate_usd": 0.3406487,
+    "uncertain_cost_reserve_usd": 0.0,
+    "in_flight_reserve_usd": 0.30021,
+    "limit_usd": 5.0
+  }
+}

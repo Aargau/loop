@@ -1,0 +1,47 @@
+{
+  "model": "gpt-6-luna",
+  "seed": "sunset",
+  "hop": 22,
+  "http_status": 200,
+  "response_body": "{\n  \"id\": \"chatcmpl-ER2HZ3lkn6Myy2L9mSU0rsB0Wzbmz\",\n  \"object\": \"chat.completion\",\n  \"created\": 1790112337,\n  \"model\": \"gpt-6-luna\",\n  \"choices\": [\n    {\n      \"index\": 0,\n      \"message\": {\n        \"role\": \"assistant\",\n        \"content\": \"{\\\"rule\\\":\\\"Return this JSON object with the rule field unchanged and, in the text field, the passage of about 250 words that comes immediately AFTER the current text in the same story.\\\",\\\"text\\\":\\\"For a moment, nobody moved. The sound seemed to linger not in the air but beneath their feet, trembling through the stones.\\n\\n“Inside the hill?” whispered the girl.\\n\\nThe shepherd raised his flute and played the new note. It came out thin and wavering. From the hill, the bell answered—not with another ring, but with a low hum that made the river’s surface smooth as glass.\\n\\nMara opened the book. The ink on the rain-blurred page had shifted. A line appeared beneath the drawing: When the water holds the sky, enter where the echo begins.\\n\\nTomas crouched at the riverbank. In the still water, he saw the reflection of a narrow arch in the hill, though no arch stood there above the surface.\\n\\n“There,” he said.\\n\\nThey stepped into the river. It was shallow, but cold enough to steal their breath. At the place where the arch appeared in the reflection, Mara reached toward the hill. Her fingers met empty air, then something like a curtain of water.\\n\\nBeyond it lay a passage lit by a soft golden glow.\\n\\nThe shepherd went first, flute in hand. The others followed, leaving the river’s hush behind them. Their clothes were dry on the other side.\\n\\nThe passage curved downward. Along its walls, small bells hung from threads, each one marked with a different symbol. As they passed, the bells stirred without ringing.\\n\\nAt the end stood a wooden door, and beside it a brass plate engraved with the same little bell from the note.\\n\\nMara touched the handle. From somewhere beyond the door came a familiar tune—one they had played together in the town square, before any of them knew the missing note.\\\"}\",\n        \"refusal\": null,\n        \"annotations\": []\n      },\n      \"finish_reason\": \"stop\"\n    }\n  ],\n  \"usage\": {\n    \"prompt_tokens\": 375,\n    \"completion_tokens\": 437,\n    \"total_tokens\": 812,\n    \"prompt_tokens_details\": {\n      \"cached_tokens\": 0,\n      \"cache_write_tokens\": 0,\n      \"audio_tokens\": 0\n    },\n    \"completion_tokens_details\": {\n      \"reasoning_tokens\": 46,\n      \"audio_tokens\": 0,\n      \"accepted_prediction_tokens\": 0,\n      \"rejected_prediction_tokens\": 0\n    }\n  },\n  \"service_tier\": \"default\",\n  \"system_fingerprint\": null\n}\n",
+  "response_headers": {
+    "Date": "Tue, 22 Sep 2026 21:25:42 GMT",
+    "openai-processing-ms": "4648",
+    "x-request-id": "req_461e216c111444cab433acdd6fc265e9"
+  },
+  "output": "{\"rule\":\"Return this JSON object with the rule field unchanged and, in the text field, the passage of about 250 words that comes immediately AFTER the current text in the same story.\",\"text\":\"For a moment, nobody moved. The sound seemed to linger not in the air but beneath their feet, trembling through the stones.\n\n“Inside the hill?” whispered the girl.\n\nThe shepherd raised his flute and played the new note. It came out thin and wavering. From the hill, the bell answered—not with another ring, but with a low hum that made the river’s surface smooth as glass.\n\nMara opened the book. The ink on the rain-blurred page had shifted. A line appeared beneath the drawing: When the water holds the sky, enter where the echo begins.\n\nTomas crouched at the riverbank. In the still water, he saw the reflection of a narrow arch in the hill, though no arch stood there above the surface.\n\n“There,” he said.\n\nThey stepped into the river. It was shallow, but cold enough to steal their breath. At the place where the arch appeared in the reflection, Mara reached toward the hill. Her fingers met empty air, then something like a curtain of water.\n\nBeyond it lay a passage lit by a soft golden glow.\n\nThe shepherd went first, flute in hand. The others followed, leaving the river’s hush behind them. Their clothes were dry on the other side.\n\nThe passage curved downward. Along its walls, small bells hung from threads, each one marked with a different symbol. As they passed, the bells stirred without ringing.\n\nAt the end stood a wooden door, and beside it a brass plate engraved with the same little bell from the note.\n\nMara touched the handle. From somewhere beyond the door came a familiar tune—one they had played together in the town square, before any of them knew the missing note.\"}",
+  "output_sha256": "197df04c9cbfa94f5f80411f1116b3a0574216390460a8e6c36a19d63c8b9b83",
+  "finish_reason": "stop",
+  "refusal": null,
+  "returned_model": "gpt-6-luna",
+  "usage": {
+    "prompt_tokens": 375,
+    "completion_tokens": 437,
+    "total_tokens": 812,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 46,
+      "audio_tokens": 0,
+      "accepted_prediction_tokens": 0,
+      "rejected_prediction_tokens": 0
+    }
+  },
+  "format": {
+    "json_object": false,
+    "rule_unchanged": false
+  },
+  "finished_at": "2026-09-22T21:25:37.913818+00:00",
+  "latency_seconds": 4.7663,
+  "usage_cost_upper_estimate_usd": 0.000256,
+  "stream_status": "active",
+  "budget": {
+    "usage_cost_upper_estimate_usd": 0.4598336,
+    "uncertain_cost_reserve_usd": 0.0,
+    "in_flight_reserve_usd": 0.35018,
+    "limit_usd": 5.0
+  }
+}

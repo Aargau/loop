@@ -1,0 +1,47 @@
+{
+  "model": "gpt-6-luna",
+  "seed": "sunset",
+  "hop": 29,
+  "http_status": 200,
+  "response_body": "{\n  \"id\": \"chatcmpl-ER2I8Dz5yxphw2aS4puwQ0NNM9DF7\",\n  \"object\": \"chat.completion\",\n  \"created\": 1790112372,\n  \"model\": \"gpt-6-luna\",\n  \"choices\": [\n    {\n      \"index\": 0,\n      \"message\": {\n        \"role\": \"assistant\",\n        \"content\": \"{\\\"rule\\\":\\\"Return this JSON object with the rule field unchanged and, in the text field, the passage of about 250 words that comes immediately AFTER the current text in the same story.\\\",\\\"text\\\":\\\"No one answered.\\n\\nThe wind worried at Mara’s coat, and the carved birds clicked their stone beaks. The boy stood beside the shepherd, still holding his little flute. For a moment, the two brothers looked at each other as if the years between them were a wall neither could touch.\\n\\nThen the shepherd set his flute on the grass.\\n\\n“I will,” he said.\\n\\nThe boy seized his sleeve. “You can’t. You’ve waited long enough.”\\n\\n“I’ve waited because you were there.”\\n\\nThe well gave a low, hungry murmur. The circle in Mara’s book brightened, its two halves drawing together. She understood then: the mark was not a door, but a choice. One brother could leave, but not both.\\n\\n“Maybe it means someone must remember,” Tomas said. His voice shook, though he tried to sound certain. “Not stay down there.”\\n\\nThe woman with the bell stepped forward. “The well keeps what is forgotten. It has no claim on those who are remembered.”\\n\\nMara opened the book and read the names written in its margins: shepherds, travelers, children. Names worn thin by time. She found a blank line and asked the boy his name.\\n\\n“Elian,” he said.\\n\\n“And yours?” she asked the shepherd.\\n\\n“Elian,” he answered, with a faint smile. “We were named alike.”\\n\\nMara wrote both names side by side. The blue ink shone. Beneath their feet, the meadow trembled, and far below, water rushed upward.\\n\\nThe boy’s old-fashioned clothes fluttered as the wind changed. This time, when he reached for his brother, nothing pulled him back.\\n\\nTogether, the two Elians stepped away from the well.\\n\\nBehind them, the stone birds folded their wings. The well fell silent, and the book’s final page turned blank.\\\"}\",\n        \"refusal\": null,\n        \"annotations\": []\n      },\n      \"finish_reason\": \"stop\"\n    }\n  ],\n  \"usage\": {\n    \"prompt_tokens\": 404,\n    \"completion_tokens\": 491,\n    \"total_tokens\": 895,\n    \"prompt_tokens_details\": {\n      \"cached_tokens\": 0,\n      \"cache_write_tokens\": 0,\n      \"audio_tokens\": 0\n    },\n    \"completion_tokens_details\": {\n      \"reasoning_tokens\": 71,\n      \"audio_tokens\": 0,\n      \"accepted_prediction_tokens\": 0,\n      \"rejected_prediction_tokens\": 0\n    }\n  },\n  \"service_tier\": \"default\",\n  \"system_fingerprint\": null\n}\n",
+  "response_headers": {
+    "Date": "Tue, 22 Sep 2026 21:26:17 GMT",
+    "openai-processing-ms": "5314",
+    "x-request-id": "req_b30ac44f97df43d6a9c93ac67852caac"
+  },
+  "output": "{\"rule\":\"Return this JSON object with the rule field unchanged and, in the text field, the passage of about 250 words that comes immediately AFTER the current text in the same story.\",\"text\":\"No one answered.\n\nThe wind worried at Mara’s coat, and the carved birds clicked their stone beaks. The boy stood beside the shepherd, still holding his little flute. For a moment, the two brothers looked at each other as if the years between them were a wall neither could touch.\n\nThen the shepherd set his flute on the grass.\n\n“I will,” he said.\n\nThe boy seized his sleeve. “You can’t. You’ve waited long enough.”\n\n“I’ve waited because you were there.”\n\nThe well gave a low, hungry murmur. The circle in Mara’s book brightened, its two halves drawing together. She understood then: the mark was not a door, but a choice. One brother could leave, but not both.\n\n“Maybe it means someone must remember,” Tomas said. His voice shook, though he tried to sound certain. “Not stay down there.”\n\nThe woman with the bell stepped forward. “The well keeps what is forgotten. It has no claim on those who are remembered.”\n\nMara opened the book and read the names written in its margins: shepherds, travelers, children. Names worn thin by time. She found a blank line and asked the boy his name.\n\n“Elian,” he said.\n\n“And yours?” she asked the shepherd.\n\n“Elian,” he answered, with a faint smile. “We were named alike.”\n\nMara wrote both names side by side. The blue ink shone. Beneath their feet, the meadow trembled, and far below, water rushed upward.\n\nThe boy’s old-fashioned clothes fluttered as the wind changed. This time, when he reached for his brother, nothing pulled him back.\n\nTogether, the two Elians stepped away from the well.\n\nBehind them, the stone birds folded their wings. The well fell silent, and the book’s final page turned blank.\"}",
+  "output_sha256": "4db7949e56aff31c588403aec79f91d33267274934cb05d09b986de82de3a557",
+  "finish_reason": "stop",
+  "refusal": null,
+  "returned_model": "gpt-6-luna",
+  "usage": {
+    "prompt_tokens": 404,
+    "completion_tokens": 491,
+    "total_tokens": 895,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 71,
+      "audio_tokens": 0,
+      "accepted_prediction_tokens": 0,
+      "rejected_prediction_tokens": 0
+    }
+  },
+  "format": {
+    "json_object": false,
+    "rule_unchanged": false
+  },
+  "finished_at": "2026-09-22T21:26:13.628797+00:00",
+  "latency_seconds": 5.4283,
+  "usage_cost_upper_estimate_usd": 0.00028589999999999996,
+  "stream_status": "active",
+  "budget": {
+    "usage_cost_upper_estimate_usd": 0.5817803,
+    "uncertain_cost_reserve_usd": 0.0,
+    "in_flight_reserve_usd": 0.350512,
+    "limit_usd": 5.0
+  }
+}

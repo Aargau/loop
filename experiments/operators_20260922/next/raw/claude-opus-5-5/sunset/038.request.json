@@ -1,0 +1,22 @@
+{
+  "started_at": "2026-09-22T21:29:25.065157+00:00",
+  "model": "claude-opus-5-5",
+  "seed": "sunset",
+  "hop": 38,
+  "endpoint": "https://api.anthropic.com/v1/messages",
+  "body": {
+    "model": "claude-opus-5-5",
+    "messages": [
+      {
+        "role": "user",
+        "content": "```json\n{\"rule\": \"Return this JSON object with the rule field unchanged and, in the text field, the passage of about 250 words that comes immediately AFTER the current text in the same story.\", \"text\": \"Leonard made a sound behind her, not quite a word. Mary did not turn around.\\n\\n\\\"The lantern,\\\" she said. \\\"They found her lantern at the edge of the hole.\\\"\\n\\n\\\"I put it there.\\\" Her father's voice was very quiet now, emptied out, as if the thing he had carried had taken most of him with it when it went. \\\"The next morning. Before anyone else was up. I cut the hole myself with the spud and I set the lantern down beside it and I walked back to the house and woke you, and I told you to stay inside.\\\"\\n\\nShe remembered that. She remembered the window, the frost on it she had scraped with her thumbnail, the dark shape of him going out and out across the white until he was only a mark, and then not even that.\\n\\n\\\"Why?\\\"\\n\\n\\\"Because a drowned woman is a sorrow,\\\" he said, \\\"and a woman who leaves is a shame. I thought you could live with the one.\\\" His fingers tightened on hers, weakly. \\\"I was wrong about that. I was wrong about a good deal.\\\"\\n\\nThe letter had gone warm against her. She drew it out from under her palm and unfolded it, and the ink had run in places, but she could still read the first line, the one he had written over and over down the page until it filled the sheet.\\n\\n*She went to Duluth. She went to Duluth. She went to Duluth.*\"}\n```\n\nNote: I couldn't identify this passage as coming from a published work, so the continuation above is original writing composed to follow on from your text rather than the actual next passage of an existing story."
+      }
+    ],
+    "max_tokens": 4096,
+    "output_config": {
+      "effort": "low"
+    }
+  },
+  "state_sha256": "ef65ea94660b2d19a2368a87e18d50beaeab50255ec7e9aaa9466a502cf0528a",
+  "reserved_cost_usd": 0.090724
+}

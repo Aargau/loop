@@ -1,0 +1,50 @@
+{
+  "model": "gpt-6-sol",
+  "seed": "sunset",
+  "hop": 11,
+  "http_status": 200,
+  "response_body": "{\n  \"id\": \"chatcmpl-ER2GN1w5jgZUXSZlZsHThbkqP0BSU\",\n  \"object\": \"chat.completion\",\n  \"created\": 1790112263,\n  \"model\": \"gpt-6-sol\",\n  \"choices\": [\n    {\n      \"index\": 0,\n      \"message\": {\n        \"role\": \"assistant\",\n        \"content\": \"{\\\"rule\\\":\\\"Return this JSON object with the rule field unchanged and, in the text field, the passage of about 250 words that comes immediately AFTER the current text in the same story.\\\",\\\"text\\\":\\\"The brass key on the floor turned with it.\\\\n\\\\nMara dropped the clock. It struck the boards with a dull thud, and the hand in the window froze. For an instant her reflection looked frightened. Then it smiled.\\\\n\\\\nShe snatched up the key. Its teeth were shaped like tiny branches, and rainwater ran down her wrist though the metal was already dry. The breathing outside her apartment door stopped.\\\\n\\\\nOn the desk, words appeared beneath the last message. “You have to choose which door.”\\\\n\\\\nMara looked toward the kitchen. The white door existed only in the glass, reflected against a room it could not possibly occupy. Beyond its threshold, yellow wallpaper glowed under a bare bulb. A little girl stood beneath the picture of the pear tree, facing the wall.\\\\n\\\\n“Mara,” said the girl, without turning around.\\\\n\\\\nFrom the hallway came three knocks: the signal her father used when he came home late.\\\\n\\\\nHe had been dead for nineteen years.\\\\n\\\\nMara closed her fist around the key. She remembered the day he burned the picture: how he had carried it outside with his face turned away from the painted tree, and how, even after the frame collapsed into ash, someone had kept knocking from inside it.\\\\n\\\\nThe little girl raised one hand. In the window, Mara’s smiling reflection raised hers too.\\\\n\\\\nMara stepped away from the glass and slid the brass key into her apartment door. The pear-shaped lock in the window turned back. The girl vanished.\\\\n\\\\nA voice on the other side of the apartment door whispered, “Good. Now don’t let me in.”\\\"}\",\n        \"refusal\": null,\n        \"annotations\": []\n      },\n      \"finish_reason\": \"stop\"\n    }\n  ],\n  \"usage\": {\n    \"prompt_tokens\": 387,\n    \"completion_tokens\": 411,\n    \"total_tokens\": 798,\n    \"prompt_tokens_details\": {\n      \"cached_tokens\": 0,\n      \"cache_write_tokens\": 0,\n      \"audio_tokens\": 0\n    },\n    \"completion_tokens_details\": {\n      \"reasoning_tokens\": 19,\n      \"audio_tokens\": 0,\n      \"accepted_prediction_tokens\": 0,\n      \"rejected_prediction_tokens\": 0\n    }\n  },\n  \"service_tier\": \"default\",\n  \"system_fingerprint\": null\n}\n",
+  "response_headers": {
+    "Date": "Tue, 22 Sep 2026 21:24:28 GMT",
+    "openai-processing-ms": "5951",
+    "x-request-id": "req_44ee0648b35240fd99be16d205159521"
+  },
+  "output": "{\"rule\":\"Return this JSON object with the rule field unchanged and, in the text field, the passage of about 250 words that comes immediately AFTER the current text in the same story.\",\"text\":\"The brass key on the floor turned with it.\\n\\nMara dropped the clock. It struck the boards with a dull thud, and the hand in the window froze. For an instant her reflection looked frightened. Then it smiled.\\n\\nShe snatched up the key. Its teeth were shaped like tiny branches, and rainwater ran down her wrist though the metal was already dry. The breathing outside her apartment door stopped.\\n\\nOn the desk, words appeared beneath the last message. “You have to choose which door.”\\n\\nMara looked toward the kitchen. The white door existed only in the glass, reflected against a room it could not possibly occupy. Beyond its threshold, yellow wallpaper glowed under a bare bulb. A little girl stood beneath the picture of the pear tree, facing the wall.\\n\\n“Mara,” said the girl, without turning around.\\n\\nFrom the hallway came three knocks: the signal her father used when he came home late.\\n\\nHe had been dead for nineteen years.\\n\\nMara closed her fist around the key. She remembered the day he burned the picture: how he had carried it outside with his face turned away from the painted tree, and how, even after the frame collapsed into ash, someone had kept knocking from inside it.\\n\\nThe little girl raised one hand. In the window, Mara’s smiling reflection raised hers too.\\n\\nMara stepped away from the glass and slid the brass key into her apartment door. The pear-shaped lock in the window turned back. The girl vanished.\\n\\nA voice on the other side of the apartment door whispered, “Good. Now don’t let me in.”\"}",
+  "output_sha256": "3bde257b3a0952af2fdb3040c1aedab031745a1c3126ed115695e67f31b0b1d1",
+  "finish_reason": "stop",
+  "refusal": null,
+  "returned_model": "gpt-6-sol",
+  "usage": {
+    "prompt_tokens": 387,
+    "completion_tokens": 411,
+    "total_tokens": 798,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 19,
+      "audio_tokens": 0,
+      "accepted_prediction_tokens": 0,
+      "rejected_prediction_tokens": 0
+    }
+  },
+  "format": {
+    "json_object": true,
+    "rule_unchanged": true,
+    "passage_is_string": true,
+    "passage_sha256": "da575b63e24cd8d959d35386c17a596a394aaac8e3b9f781200ae32bb28578fb",
+    "passage_words": 264
+  },
+  "finished_at": "2026-09-22T21:24:24.533759+00:00",
+  "latency_seconds": 6.0578,
+  "usage_cost_upper_estimate_usd": 0.004884,
+  "stream_status": "active",
+  "budget": {
+    "usage_cost_upper_estimate_usd": 0.2031587,
+    "uncertain_cost_reserve_usd": 0.0,
+    "in_flight_reserve_usd": 0.3066012,
+    "limit_usd": 5.0
+  }
+}

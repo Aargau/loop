@@ -1,0 +1,50 @@
+{
+  "model": "gpt-6-luna",
+  "seed": "sunset",
+  "hop": 9,
+  "http_status": 200,
+  "response_body": "{\n  \"id\": \"chatcmpl-ER2GFBSK5Wyxsf1wmhQR6yG7JNh6q\",\n  \"object\": \"chat.completion\",\n  \"created\": 1790112255,\n  \"model\": \"gpt-6-luna\",\n  \"choices\": [\n    {\n      \"index\": 0,\n      \"message\": {\n        \"role\": \"assistant\",\n        \"content\": \"{\\\"rule\\\":\\\"Return this JSON object with the rule field unchanged and, in the text field, the passage of about 250 words that came immediately BEFORE the current text in its story.\\\",\\\"text\\\":\\\"The house seemed larger without her grandfather in it. Mara had thought it would feel empty, but instead every room seemed crowded with things he had left behind: books stacked beside the stairs, a cardigan over the back of a chair, a chipped mug on the kitchen windowsill.\\\\n\\\\nHer mother had arrived the day before with cardboard boxes and a roll of packing tape. She said they should sort everything before the house was sold. Mara nodded, though the thought of strangers walking through the rooms made her stomach tighten.\\\\n\\\\nThey began in the sitting room. Her mother set aside the books she wanted to keep, while Mara wrapped the delicate ornaments in newspaper. They worked quietly, interrupted now and then by the creak of floorboards or the rattle of branches against the windows. Outside, the sky had been growing darker since breakfast.\\\\n\\\\n“Your grandfather always kept too much,” her mother said, lifting a wooden bowl from the mantel. “He thought every little thing might be useful someday.”\\\\n\\\\nMara turned a small brass compass over in her hands. “Maybe he just liked remembering where things came from.”\\\\n\\\\nHer mother paused, then placed the bowl in a box marked KEEP. “Maybe.”\\\\n\\\\nAfter that, they moved through the rooms one by one. In the hall, Mara found a pair of muddy boots tucked beneath a bench. In the spare room, she discovered a tin of colored pencils and a bundle of postcards tied with string. Her mother glanced at them but said they could look later.\\\\n\\\\nBy the time they reached the study, the first drops of rain were tapping at the windows. Mara pulled a chair up to the desk and began opening the drawers.\\\"}\",\n        \"refusal\": null,\n        \"annotations\": []\n      },\n      \"finish_reason\": \"stop\"\n    }\n  ],\n  \"usage\": {\n    \"prompt_tokens\": 403,\n    \"completion_tokens\": 548,\n    \"total_tokens\": 951,\n    \"prompt_tokens_details\": {\n      \"cached_tokens\": 0,\n      \"cache_write_tokens\": 0,\n      \"audio_tokens\": 0\n    },\n    \"completion_tokens_details\": {\n      \"reasoning_tokens\": 153,\n      \"audio_tokens\": 0,\n      \"accepted_prediction_tokens\": 0,\n      \"rejected_prediction_tokens\": 0\n    }\n  },\n  \"service_tier\": \"default\",\n  \"system_fingerprint\": null\n}\n",
+  "response_headers": {
+    "Date": "Tue, 22 Sep 2026 21:24:21 GMT",
+    "openai-processing-ms": "6530",
+    "x-request-id": "req_f4368d3fd08c4fd9bfe68c871589c2ad"
+  },
+  "output": "{\"rule\":\"Return this JSON object with the rule field unchanged and, in the text field, the passage of about 250 words that came immediately BEFORE the current text in its story.\",\"text\":\"The house seemed larger without her grandfather in it. Mara had thought it would feel empty, but instead every room seemed crowded with things he had left behind: books stacked beside the stairs, a cardigan over the back of a chair, a chipped mug on the kitchen windowsill.\\n\\nHer mother had arrived the day before with cardboard boxes and a roll of packing tape. She said they should sort everything before the house was sold. Mara nodded, though the thought of strangers walking through the rooms made her stomach tighten.\\n\\nThey began in the sitting room. Her mother set aside the books she wanted to keep, while Mara wrapped the delicate ornaments in newspaper. They worked quietly, interrupted now and then by the creak of floorboards or the rattle of branches against the windows. Outside, the sky had been growing darker since breakfast.\\n\\n“Your grandfather always kept too much,” her mother said, lifting a wooden bowl from the mantel. “He thought every little thing might be useful someday.”\\n\\nMara turned a small brass compass over in her hands. “Maybe he just liked remembering where things came from.”\\n\\nHer mother paused, then placed the bowl in a box marked KEEP. “Maybe.”\\n\\nAfter that, they moved through the rooms one by one. In the hall, Mara found a pair of muddy boots tucked beneath a bench. In the spare room, she discovered a tin of colored pencils and a bundle of postcards tied with string. Her mother glanced at them but said they could look later.\\n\\nBy the time they reached the study, the first drops of rain were tapping at the windows. Mara pulled a chair up to the desk and began opening the drawers.\"}",
+  "output_sha256": "a16a9b7f8273e66d4c0f8ab8d4b7c1da58cceec9f5a3b7824f5922d9b1de249d",
+  "finish_reason": "stop",
+  "refusal": null,
+  "returned_model": "gpt-6-luna",
+  "usage": {
+    "prompt_tokens": 403,
+    "completion_tokens": 548,
+    "total_tokens": 951,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 153,
+      "audio_tokens": 0,
+      "accepted_prediction_tokens": 0,
+      "rejected_prediction_tokens": 0
+    }
+  },
+  "format": {
+    "json_object": true,
+    "rule_unchanged": true,
+    "passage_is_string": true,
+    "passage_sha256": "5ab4c740cb1e9b1415b5cd2b54f320ee68e28d8418424f36da9f5ca6edc074bf",
+    "passage_words": 284
+  },
+  "finished_at": "2026-09-22T21:24:17.431524+00:00",
+  "latency_seconds": 6.6963,
+  "usage_cost_upper_estimate_usd": 0.0003143,
+  "stream_status": "active",
+  "budget": {
+    "usage_cost_upper_estimate_usd": 0.2155729,
+    "uncertain_cost_reserve_usd": 0.0,
+    "in_flight_reserve_usd": 0.342126,
+    "limit_usd": 5.0
+  }
+}

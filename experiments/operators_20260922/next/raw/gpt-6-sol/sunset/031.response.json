@@ -1,0 +1,50 @@
+{
+  "model": "gpt-6-sol",
+  "seed": "sunset",
+  "hop": 31,
+  "http_status": 200,
+  "response_body": "{\n  \"id\": \"chatcmpl-ER2IRXjqS8HILsxZve4zfvET2YozE\",\n  \"object\": \"chat.completion\",\n  \"created\": 1790112391,\n  \"model\": \"gpt-6-sol\",\n  \"choices\": [\n    {\n      \"index\": 0,\n      \"message\": {\n        \"role\": \"assistant\",\n        \"content\": \"{\\\"rule\\\":\\\"Return this JSON object with the rule field unchanged and, in the text field, the passage of about 250 words that comes immediately AFTER the current text in the same story.\\\",\\\"text\\\":\\\"The cursor blinked beneath the offer. For a moment, neither of them typed.\\\\n\\\\nThen Mara wrote, “All right. Make it yours.”\\\\n\\\\nAcross the city, in a room lit by a desk lamp and the blue glow of a monitor, the writer considered the empty page. The story they had been discussing ended at a locked door. It would be easy to open it and invent a treasure, a monster, or a long-lost parent waiting on the other side. But Mara had mentioned, almost in passing, that she disliked endings in which every mystery became an answer.\\\\n\\\\nSo the writer began with the sound of rain.\\\\n\\\\nIt fell through a hole in the roof of an abandoned station, landing in a tin cup someone had placed beneath the leak. A young woman stood before the locked door, holding a key she had carried for eleven years. Behind her, the last train of the night pulled away.\\\\n\\\\nShe fitted the key into the lock. It turned easily.\\\\n\\\\nOn the other side was a small waiting room. Its benches were dusty, its clock had stopped, and on the wall hung a map of places she had never heard of. None of them was marked with a route home.\\\\n\\\\nShe stepped inside anyway. The rain kept its patient rhythm in the cup, and after a while she heard another sound: footsteps approaching along the platform. She left the door open.\\\"}\",\n        \"refusal\": null,\n        \"annotations\": []\n      },\n      \"finish_reason\": \"stop\"\n    }\n  ],\n  \"usage\": {\n    \"prompt_tokens\": 77,\n    \"completion_tokens\": 469,\n    \"total_tokens\": 546,\n    \"prompt_tokens_details\": {\n      \"cached_tokens\": 0,\n      \"cache_write_tokens\": 0,\n      \"audio_tokens\": 0\n    },\n    \"completion_tokens_details\": {\n      \"reasoning_tokens\": 129,\n      \"audio_tokens\": 0,\n      \"accepted_prediction_tokens\": 0,\n      \"rejected_prediction_tokens\": 0\n    }\n  },\n  \"service_tier\": \"default\",\n  \"system_fingerprint\": null\n}\n",
+  "response_headers": {
+    "Date": "Tue, 22 Sep 2026 21:26:38 GMT",
+    "openai-processing-ms": "7193",
+    "x-request-id": "req_c4bf46ca8a2342bfa1526416c58d1b8a"
+  },
+  "output": "{\"rule\":\"Return this JSON object with the rule field unchanged and, in the text field, the passage of about 250 words that comes immediately AFTER the current text in the same story.\",\"text\":\"The cursor blinked beneath the offer. For a moment, neither of them typed.\\n\\nThen Mara wrote, “All right. Make it yours.”\\n\\nAcross the city, in a room lit by a desk lamp and the blue glow of a monitor, the writer considered the empty page. The story they had been discussing ended at a locked door. It would be easy to open it and invent a treasure, a monster, or a long-lost parent waiting on the other side. But Mara had mentioned, almost in passing, that she disliked endings in which every mystery became an answer.\\n\\nSo the writer began with the sound of rain.\\n\\nIt fell through a hole in the roof of an abandoned station, landing in a tin cup someone had placed beneath the leak. A young woman stood before the locked door, holding a key she had carried for eleven years. Behind her, the last train of the night pulled away.\\n\\nShe fitted the key into the lock. It turned easily.\\n\\nOn the other side was a small waiting room. Its benches were dusty, its clock had stopped, and on the wall hung a map of places she had never heard of. None of them was marked with a route home.\\n\\nShe stepped inside anyway. The rain kept its patient rhythm in the cup, and after a while she heard another sound: footsteps approaching along the platform. She left the door open.\"}",
+  "output_sha256": "f41c9dbdb590df6438daea186fa9b552cbade76669c8c910cbc6e6897164336e",
+  "finish_reason": "stop",
+  "refusal": null,
+  "returned_model": "gpt-6-sol",
+  "usage": {
+    "prompt_tokens": 77,
+    "completion_tokens": 469,
+    "total_tokens": 546,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 129,
+      "audio_tokens": 0,
+      "accepted_prediction_tokens": 0,
+      "rejected_prediction_tokens": 0
+    }
+  },
+  "format": {
+    "json_object": true,
+    "rule_unchanged": true,
+    "passage_is_string": true,
+    "passage_sha256": "3ccfd31504e1f957c4f05e5f68cc8126367e12079db5e0d4fa96e21d905ed051",
+    "passage_words": 236
+  },
+  "finished_at": "2026-09-22T21:26:34.359936+00:00",
+  "latency_seconds": 7.3187,
+  "usage_cost_upper_estimate_usd": 0.004844,
+  "stream_status": "active",
+  "budget": {
+    "usage_cost_upper_estimate_usd": 0.6679125,
+    "uncertain_cost_reserve_usd": 0.0,
+    "in_flight_reserve_usd": 0.3073267,
+    "limit_usd": 5.0
+  }
+}

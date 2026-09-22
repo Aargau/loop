@@ -1,0 +1,47 @@
+{
+  "model": "gpt-6-luna",
+  "seed": "sunset",
+  "hop": 35,
+  "http_status": 200,
+  "response_body": "{\n  \"id\": \"chatcmpl-ER2IXbufuxX5mhmIZgNfmmFMPMdjW\",\n  \"object\": \"chat.completion\",\n  \"created\": 1790112397,\n  \"model\": \"gpt-6-luna\",\n  \"choices\": [\n    {\n      \"index\": 0,\n      \"message\": {\n        \"role\": \"assistant\",\n        \"content\": \"{\\\"rule\\\":\\\"Return this JSON object with the rule field unchanged and, in the text field, the passage of about 250 words that comes immediately AFTER the current text in the same story.\\\",\\\"text\\\":\\\"The reply appeared on the screen, calm and final. Mara read it twice, then leaned back from the desk. Outside, rain stitched silver lines down the window, blurring the streetlights into little floating moons.\\n\\n“Fine,” she said to the empty room. “Then I’ll tell it myself.”\\n\\nShe opened a blank document. The story had begun years ago, in a town she had left behind and insisted she’d forgotten. She could still picture the old station, though: its green benches, its clock that ran seven minutes slow, and the red suitcase her brother had carried the night he disappeared.\\n\\nMara typed a sentence, stopped, and deleted it. The truth was harder to arrange than she expected. In memory, events didn’t line up neatly. A laugh might come before an argument; a goodbye could hide inside an ordinary Tuesday. She tried again, this time writing what she knew instead of what she wished she knew.\\n\\nAt the end of the first paragraph, her phone buzzed.\\n\\nAn unknown number. No message, just a photograph.\\n\\nShe opened it. The picture showed the station as it looked now, renovated and bright, with a new sign above the entrance. On the nearest bench sat a red suitcase, scuffed at one corner.\\n\\nMara’s hands went cold.\\n\\nA second message arrived: **You left out the part where I came back.**\\n\\nFor a long moment, she listened to the rain. Then she typed: **Where are you?**\\n\\nThe answer came almost at once.\\n\\n**Across the street.**\\n\\nShe stood, crossed to the window, and pulled the curtain aside.\\\"}\",\n        \"refusal\": null,\n        \"annotations\": []\n      },\n      \"finish_reason\": \"stop\"\n    }\n  ],\n  \"usage\": {\n    \"prompt_tokens\": 90,\n    \"completion_tokens\": 576,\n    \"total_tokens\": 666,\n    \"prompt_tokens_details\": {\n      \"cached_tokens\": 0,\n      \"cache_write_tokens\": 0,\n      \"audio_tokens\": 0\n    },\n    \"completion_tokens_details\": {\n      \"reasoning_tokens\": 200,\n      \"audio_tokens\": 0,\n      \"accepted_prediction_tokens\": 0,\n      \"rejected_prediction_tokens\": 0\n    }\n  },\n  \"service_tier\": \"default\",\n  \"system_fingerprint\": null\n}\n",
+  "response_headers": {
+    "Date": "Tue, 22 Sep 2026 21:26:43 GMT",
+    "openai-processing-ms": "5401",
+    "x-request-id": "req_c1faa680b7084f998198bbd7015ad789"
+  },
+  "output": "{\"rule\":\"Return this JSON object with the rule field unchanged and, in the text field, the passage of about 250 words that comes immediately AFTER the current text in the same story.\",\"text\":\"The reply appeared on the screen, calm and final. Mara read it twice, then leaned back from the desk. Outside, rain stitched silver lines down the window, blurring the streetlights into little floating moons.\n\n“Fine,” she said to the empty room. “Then I’ll tell it myself.”\n\nShe opened a blank document. The story had begun years ago, in a town she had left behind and insisted she’d forgotten. She could still picture the old station, though: its green benches, its clock that ran seven minutes slow, and the red suitcase her brother had carried the night he disappeared.\n\nMara typed a sentence, stopped, and deleted it. The truth was harder to arrange than she expected. In memory, events didn’t line up neatly. A laugh might come before an argument; a goodbye could hide inside an ordinary Tuesday. She tried again, this time writing what she knew instead of what she wished she knew.\n\nAt the end of the first paragraph, her phone buzzed.\n\nAn unknown number. No message, just a photograph.\n\nShe opened it. The picture showed the station as it looked now, renovated and bright, with a new sign above the entrance. On the nearest bench sat a red suitcase, scuffed at one corner.\n\nMara’s hands went cold.\n\nA second message arrived: **You left out the part where I came back.**\n\nFor a long moment, she listened to the rain. Then she typed: **Where are you?**\n\nThe answer came almost at once.\n\n**Across the street.**\n\nShe stood, crossed to the window, and pulled the curtain aside.\"}",
+  "output_sha256": "4be2d5a1e1ef36a7a887d2d100ead26c699ef117588dd89eee4eac15b6d69327",
+  "finish_reason": "stop",
+  "refusal": null,
+  "returned_model": "gpt-6-luna",
+  "usage": {
+    "prompt_tokens": 90,
+    "completion_tokens": 576,
+    "total_tokens": 666,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 200,
+      "audio_tokens": 0,
+      "accepted_prediction_tokens": 0,
+      "rejected_prediction_tokens": 0
+    }
+  },
+  "format": {
+    "json_object": false,
+    "rule_unchanged": false
+  },
+  "finished_at": "2026-09-22T21:26:38.766495+00:00",
+  "latency_seconds": 5.5052,
+  "usage_cost_upper_estimate_usd": 0.000297,
+  "stream_status": "active",
+  "budget": {
+    "usage_cost_upper_estimate_usd": 0.6741095,
+    "uncertain_cost_reserve_usd": 0.0,
+    "in_flight_reserve_usd": 0.349928,
+    "limit_usd": 5.0
+  }
+}

@@ -1,0 +1,22 @@
+{
+  "started_at": "2026-09-22T21:27:47.880058+00:00",
+  "model": "claude-opus-5-5",
+  "seed": "sunset",
+  "hop": 28,
+  "endpoint": "https://api.anthropic.com/v1/messages",
+  "body": {
+    "model": "claude-opus-5-5",
+    "messages": [
+      {
+        "role": "user",
+        "content": "```json\n{\"rule\": \"Return this JSON object with the rule field unchanged and, in the text field, the passage of about 250 words that comes immediately AFTER the current text in the same story.\", \"text\": \"\\\"Mary.\\\" It came again, thinner, bubbling at the edges. \\\"Mary, please.\\\"\\n\\nShe pushed herself up onto her knees. Leonard clutched at her sleeve with both mittened hands.\\n\\n\\\"Don't,\\\" he said. \\\"Don't go back. He'll get you.\\\"\\n\\n\\\"Run to the lantern,\\\" she told him. \\\"Tell Mrs. Hollister to bring rope. Tell her to bring Mr. Hollister and the rope. Can you do that?\\\"\\n\\nHe stared at her, his face a pale smudge in the dark, and she saw him weigh it, saw fear and obedience struggle in him the way they always did. Then he was gone, stumbling through the drifts toward the swinging light, shouting in his high cracked voice.\\n\\nMary turned back to the river.\\n\\nShe could see him now, or the shape of him: a darker darkness where the ice had broken, arms thrown out across the jagged rim. Each time he tried to haul himself up, the edge crumbled beneath him and he slid back with a sound like a sob. He had stopped cursing. That, more than anything, told her how bad it was.\\n\\nShe lay flat on her stomach the way her father had taught her, spreading her weight, and reached behind her for the cottonwood limb. It came away from the snow stiff and frozen, nearly as long as she was tall.\\n\\n\\\"I've got a branch,\\\" she called. Her voice sounded strange to her, steady and far away, like someone else's. \\\"Don't grab me. Grab the branch.\\\"\\n\\nOut on the black water, the shape went still, listening.\"}\n```"
+      }
+    ],
+    "max_tokens": 4096,
+    "output_config": {
+      "effort": "low"
+    }
+  },
+  "state_sha256": "47f68efe3af72d0ab95c4ebbf6dfb322210b6cb1f964fbd2e1021f52cfb025e4",
+  "reserved_cost_usd": 0.090412
+}

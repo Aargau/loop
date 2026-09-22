@@ -1,0 +1,20 @@
+{
+  "started_at": "2026-09-22T21:30:59.609515+00:00",
+  "model": "gpt-6-astra",
+  "seed": "sunset",
+  "hop": 10,
+  "endpoint": "https://api.openai.com/v1/chat/completions",
+  "body": {
+    "model": "gpt-6-astra",
+    "messages": [
+      {
+        "role": "user",
+        "content": "{\"rule\":\"Return this JSON object with the rule field unchanged and, in the text field, a better version of the current text.\",\"text\":\"The sun slipped behind the hills, bathing the sky in a lingering glow of gold.\"}"
+      }
+    ],
+    "max_completion_tokens": 4096,
+    "reasoning_effort": "low"
+  },
+  "state_sha256": "d53faeedb9f43b3cd8fa5ef1f03b4dd7d2962230b5940765dbf21cc5b1fe325e",
+  "reserved_cost_usd": 0.21206
+}

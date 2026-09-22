@@ -1,0 +1,22 @@
+{
+  "started_at": "2026-09-22T21:26:21.517257+00:00",
+  "model": "claude-opus-5-5",
+  "seed": "sunset",
+  "hop": 19,
+  "endpoint": "https://api.anthropic.com/v1/messages",
+  "body": {
+    "model": "claude-opus-5-5",
+    "messages": [
+      {
+        "role": "user",
+        "content": "```json\n{\"rule\": \"Return this JSON object with the rule field unchanged and, in the text field, the passage of about 250 words that comes immediately AFTER the current text in the same story.\", \"text\": \"Mama made up a pallet for him by the stove. She did it without a word, shaking out the spare quilt with sharp snaps, and when she was done she sent Mara and Leonard up the ladder to the loft with a look that meant *not one sound*.\\n\\nMara lay on her back beneath the rafters and listened. Below, the man's breathing settled into something slow and even, but she did not believe it. Men who smiled like that did not sleep easily. They waited.\\n\\nBeside her, Leonard's straw tick rustled. \\\"Mara,\\\" he whispered. \\\"I didn't know.\\\"\\n\\n\\\"You brought it home.\\\"\\n\\n\\\"A rider gave it to me at the crossing. He said it was for Mama, and I wasn't to open it.\\\" His voice cracked. \\\"I put it in the flour tin so she'd find it when she baked. I thought it would be a surprise.\\\"\\n\\nMara turned her head. In the dark she could just make out the shape of him, small and hunched, his knees pulled up to his chest. She wanted to be angry, but she found she couldn't. He was only eight. He had not known what he carried.\\n\\n\\\"Did the rider say anything else?\\\"\\n\\nLeonard was quiet so long she thought he'd fallen asleep. Then: \\\"He said the frost moon comes Thursday.\\\"\\n\\nThursday. Three days.\\n\\nBelow them, the stove ticked as it cooled. Then, very softly, a floorboard creaked, the loose one by the flour shelf, the one Papa had always meant to nail down.\"}\n```"
+      }
+    ],
+    "max_tokens": 4096,
+    "output_config": {
+      "effort": "low"
+    }
+  },
+  "state_sha256": "7fa22f4484056dec2bd4d701e2f7829ba555568095f5adc8a2049bb06e3284d7",
+  "reserved_cost_usd": 0.090188
+}

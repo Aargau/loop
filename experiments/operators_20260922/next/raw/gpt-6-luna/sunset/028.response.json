@@ -1,0 +1,47 @@
+{
+  "model": "gpt-6-luna",
+  "seed": "sunset",
+  "hop": 28,
+  "http_status": 200,
+  "response_body": "{\n  \"id\": \"chatcmpl-ER2I3Qci9tl1Tf7c0N71pICfEGiz4\",\n  \"object\": \"chat.completion\",\n  \"created\": 1790112367,\n  \"model\": \"gpt-6-luna\",\n  \"choices\": [\n    {\n      \"index\": 0,\n      \"message\": {\n        \"role\": \"assistant\",\n        \"content\": \"{\\\"rule\\\":\\\"Return this JSON object with the rule field unchanged and, in the text field, the passage of about 250 words that comes immediately AFTER the current text in the same story.\\\",\\\"text\\\":\\\"The answering notes rose through the well, threading themselves through the shepherd’s melody until the two songs became one. The rope shivered against the stones.\\n\\nTomas grabbed it. “Someone’s climbing.”\\n\\nA small hand appeared in the darkness, pale as moonlight. Mara knelt and reached down, but the shepherd caught her sleeve.\\n\\n“Wait,” he said. His tune faltered. The hand slipped out of sight.\\n\\nThe woman lifted her bell and rang it once. Its clear note rang over the meadow. From below came a gasp, then a voice.\\n\\n“Is that you, Elian?”\\n\\nThe shepherd lowered his flute. His eyes shone. “My brother.”\\n\\nHe had never told them he had a brother. He took a breath and played again, this time a tune that seemed to hold both joy and grief. The rope tightened. Tomas and Mara pulled together while the woman braced herself against the well.\\n\\nA boy emerged, coughing and blinking in the morning light. He looked no older than Tomas, though his clothes were old-fashioned and his hair fell in tangled curls. In one hand he clutched a little wooden flute.\\n\\nThe shepherd dropped to his knees. “You haven’t changed.”\\n\\n“Neither have you,” the boy said, and smiled.\\n\\nThe shepherd’s face crumpled. He reached out, but the boy glanced at the well. “It won’t let me leave alone.”\\n\\nThe carved birds around the rim stirred. Their stone wings beat once, and a cold wind swept across the meadow. The book in Mara’s hands turned its pages by itself. On the last one, fresh blue ink formed a new mark: a circle split in two.\\n\\nThen the well spoke, in a voice like water over stone.\\n\\n“Who will stay?”\\\"}\",\n        \"refusal\": null,\n        \"annotations\": []\n      },\n      \"finish_reason\": \"stop\"\n    }\n  ],\n  \"usage\": {\n    \"prompt_tokens\": 372,\n    \"completion_tokens\": 445,\n    \"total_tokens\": 817,\n    \"prompt_tokens_details\": {\n      \"cached_tokens\": 0,\n      \"cache_write_tokens\": 0,\n      \"audio_tokens\": 0\n    },\n    \"completion_tokens_details\": {\n      \"reasoning_tokens\": 38,\n      \"audio_tokens\": 0,\n      \"accepted_prediction_tokens\": 0,\n      \"rejected_prediction_tokens\": 0\n    }\n  },\n  \"service_tier\": \"default\",\n  \"system_fingerprint\": null\n}\n",
+  "response_headers": {
+    "Date": "Tue, 22 Sep 2026 21:26:12 GMT",
+    "openai-processing-ms": "4669",
+    "x-request-id": "req_76cc7dc8b2aa4c22b0a69cc3d9d4cecb"
+  },
+  "output": "{\"rule\":\"Return this JSON object with the rule field unchanged and, in the text field, the passage of about 250 words that comes immediately AFTER the current text in the same story.\",\"text\":\"The answering notes rose through the well, threading themselves through the shepherd’s melody until the two songs became one. The rope shivered against the stones.\n\nTomas grabbed it. “Someone’s climbing.”\n\nA small hand appeared in the darkness, pale as moonlight. Mara knelt and reached down, but the shepherd caught her sleeve.\n\n“Wait,” he said. His tune faltered. The hand slipped out of sight.\n\nThe woman lifted her bell and rang it once. Its clear note rang over the meadow. From below came a gasp, then a voice.\n\n“Is that you, Elian?”\n\nThe shepherd lowered his flute. His eyes shone. “My brother.”\n\nHe had never told them he had a brother. He took a breath and played again, this time a tune that seemed to hold both joy and grief. The rope tightened. Tomas and Mara pulled together while the woman braced herself against the well.\n\nA boy emerged, coughing and blinking in the morning light. He looked no older than Tomas, though his clothes were old-fashioned and his hair fell in tangled curls. In one hand he clutched a little wooden flute.\n\nThe shepherd dropped to his knees. “You haven’t changed.”\n\n“Neither have you,” the boy said, and smiled.\n\nThe shepherd’s face crumpled. He reached out, but the boy glanced at the well. “It won’t let me leave alone.”\n\nThe carved birds around the rim stirred. Their stone wings beat once, and a cold wind swept across the meadow. The book in Mara’s hands turned its pages by itself. On the last one, fresh blue ink formed a new mark: a circle split in two.\n\nThen the well spoke, in a voice like water over stone.\n\n“Who will stay?”\"}",
+  "output_sha256": "f617c98e55575e12bd316197f3af3a33c979ce3f37756fb1df53d984bcbe6cbd",
+  "finish_reason": "stop",
+  "refusal": null,
+  "returned_model": "gpt-6-luna",
+  "usage": {
+    "prompt_tokens": 372,
+    "completion_tokens": 445,
+    "total_tokens": 817,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 38,
+      "audio_tokens": 0,
+      "accepted_prediction_tokens": 0,
+      "rejected_prediction_tokens": 0
+    }
+  },
+  "format": {
+    "json_object": false,
+    "rule_unchanged": false
+  },
+  "finished_at": "2026-09-22T21:26:08.194722+00:00",
+  "latency_seconds": 4.7989,
+  "usage_cost_upper_estimate_usd": 0.00025969999999999997,
+  "stream_status": "active",
+  "budget": {
+    "usage_cost_upper_estimate_usd": 0.5595484,
+    "uncertain_cost_reserve_usd": 0.0,
+    "in_flight_reserve_usd": 0.349714,
+    "limit_usd": 5.0
+  }
+}

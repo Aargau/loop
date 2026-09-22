@@ -1,0 +1,50 @@
+{
+  "model": "gpt-6-luna",
+  "seed": "sunset",
+  "hop": 16,
+  "http_status": 200,
+  "response_body": "{\n  \"id\": \"chatcmpl-ER2H5EW1BT2sAzNa2VyAdDBd4xrZS\",\n  \"object\": \"chat.completion\",\n  \"created\": 1790112307,\n  \"model\": \"gpt-6-luna\",\n  \"choices\": [\n    {\n      \"index\": 0,\n      \"message\": {\n        \"role\": \"assistant\",\n        \"content\": \"{\\\"rule\\\":\\\"Return this JSON object with the rule field unchanged and, in the text field, the passage of about 250 words that comes immediately AFTER the current text in the same story.\\\",\\\"text\\\":\\\"At dusk, a fiddler named Mara stepped onto the dry fountain and drew her bow across the strings. The first notes wavered in the square, shy as a candle flame. A baker paused with flour on his sleeves. Two children stopped chasing a hoop. Even the old clock seemed to listen between its ticks.\\\\n\\\\nMara played the tune her grandmother had taught her, a melody with a little skip near the end. From an open window, someone hummed along. A moment later, a shepherd joined in on a wooden flute, adding a low, sweet line beneath the fiddle. The baker tapped a rhythm on an overturned bucket, and the children clapped whenever the melody skipped.\\\\n\\\\nPeople emerged from doorways carrying whatever could make a sound: a tin cup, a pair of spoons, a comb wrapped in paper. Their music was uneven, and now and then the tune wandered off course. But whenever it did, Mara returned to that little skip, and the others found their way back.\\\\n\\\\nSoon the square was bright with music. Neighbors who had barely spoken all week stood shoulder to shoulder, laughing when the bucket toppled or a spoon flew into the fountain. Above them, windows opened one by one, spilling lamplight onto the stones.\\\\n\\\\nWhen the last note faded, nobody hurried home. The baker offered warm rolls; the shepherd passed around apples. Mara lowered her fiddle and smiled. The tune had belonged to her grandmother once. Now, carried from one voice to another, it belonged to the whole village.\\\"}\",\n        \"refusal\": null,\n        \"annotations\": []\n      },\n      \"finish_reason\": \"stop\"\n    }\n  ],\n  \"usage\": {\n    \"prompt_tokens\": 79,\n    \"completion_tokens\": 553,\n    \"total_tokens\": 632,\n    \"prompt_tokens_details\": {\n      \"cached_tokens\": 0,\n      \"cache_write_tokens\": 0,\n      \"audio_tokens\": 0\n    },\n    \"completion_tokens_details\": {\n      \"reasoning_tokens\": 188,\n      \"audio_tokens\": 0,\n      \"accepted_prediction_tokens\": 0,\n      \"rejected_prediction_tokens\": 0\n    }\n  },\n  \"service_tier\": \"default\",\n  \"system_fingerprint\": null\n}\n",
+  "response_headers": {
+    "Date": "Tue, 22 Sep 2026 21:25:13 GMT",
+    "openai-processing-ms": "6148",
+    "x-request-id": "req_3263e273121244f9926e38e58400270c"
+  },
+  "output": "{\"rule\":\"Return this JSON object with the rule field unchanged and, in the text field, the passage of about 250 words that comes immediately AFTER the current text in the same story.\",\"text\":\"At dusk, a fiddler named Mara stepped onto the dry fountain and drew her bow across the strings. The first notes wavered in the square, shy as a candle flame. A baker paused with flour on his sleeves. Two children stopped chasing a hoop. Even the old clock seemed to listen between its ticks.\\n\\nMara played the tune her grandmother had taught her, a melody with a little skip near the end. From an open window, someone hummed along. A moment later, a shepherd joined in on a wooden flute, adding a low, sweet line beneath the fiddle. The baker tapped a rhythm on an overturned bucket, and the children clapped whenever the melody skipped.\\n\\nPeople emerged from doorways carrying whatever could make a sound: a tin cup, a pair of spoons, a comb wrapped in paper. Their music was uneven, and now and then the tune wandered off course. But whenever it did, Mara returned to that little skip, and the others found their way back.\\n\\nSoon the square was bright with music. Neighbors who had barely spoken all week stood shoulder to shoulder, laughing when the bucket toppled or a spoon flew into the fountain. Above them, windows opened one by one, spilling lamplight onto the stones.\\n\\nWhen the last note faded, nobody hurried home. The baker offered warm rolls; the shepherd passed around apples. Mara lowered her fiddle and smiled. The tune had belonged to her grandmother once. Now, carried from one voice to another, it belonged to the whole village.\"}",
+  "output_sha256": "38899cec8e545462de69dcab5f72105ab8a3ea60effc5f9d6f42fee1e5be6553",
+  "finish_reason": "stop",
+  "refusal": null,
+  "returned_model": "gpt-6-luna",
+  "usage": {
+    "prompt_tokens": 79,
+    "completion_tokens": 553,
+    "total_tokens": 632,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 188,
+      "audio_tokens": 0,
+      "accepted_prediction_tokens": 0,
+      "rejected_prediction_tokens": 0
+    }
+  },
+  "format": {
+    "json_object": true,
+    "rule_unchanged": true,
+    "passage_is_string": true,
+    "passage_sha256": "48e0dfa02a26dc14bac43f48c20a60ff86c6896e2698cd9635e039cb587a1dd9",
+    "passage_words": 254
+  },
+  "finished_at": "2026-09-22T21:25:09.238857+00:00",
+  "latency_seconds": 6.2445,
+  "usage_cost_upper_estimate_usd": 0.0002844,
+  "stream_status": "active",
+  "budget": {
+    "usage_cost_upper_estimate_usd": 0.3499495,
+    "uncertain_cost_reserve_usd": 0.0,
+    "in_flight_reserve_usd": 0.350308,
+    "limit_usd": 5.0
+  }
+}

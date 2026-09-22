@@ -1,0 +1,50 @@
+{
+  "model": "gpt-6-sol",
+  "seed": "sunset",
+  "hop": 21,
+  "http_status": 200,
+  "response_body": "{\n  \"id\": \"chatcmpl-ER2HSuu6TzHIcsfkPCg0lTQVRdKXl\",\n  \"object\": \"chat.completion\",\n  \"created\": 1790112330,\n  \"model\": \"gpt-6-sol\",\n  \"choices\": [\n    {\n      \"index\": 0,\n      \"message\": {\n        \"role\": \"assistant\",\n        \"content\": \"{\\\"rule\\\":\\\"Return this JSON object with the rule field unchanged and, in the text field, the passage of about 250 words that comes immediately AFTER the current text in the same story.\\\",\\\"text\\\":\\\"The cursor blinked beneath that sentence. Mara stared at it, unsure whether to laugh. She had asked for the ending of a story her grandfather used to tell, not a lecture about endings. But the offer of a new one was still there.\\\\n\\\\n“Fine,” she typed. “Make it about the blue door.”\\\\n\\\\nAt once, words appeared on the screen: On the morning the blue door vanished, everyone in Bellwether remembered walking through it, but no one could agree where it had stood.\\\\n\\\\nMara sat up. Her grandfather’s story had begun exactly that way.\\\\n\\\\nShe typed, “What happened to the key?”\\\\n\\\\nThe cursor paused. Outside, rain tapped against her window. Then a reply appeared: The locksmith buried it under the oldest pear tree because he was afraid of what it opened.\\\\n\\\\nThat was new. Grandfather had never mentioned a locksmith. He had, however, planted a pear tree behind the house long before Mara was born.\\\\n\\\\nShe shut the laptop and went to the kitchen for a flashlight. The back garden was dark and muddy, and the pear tree’s branches scraped softly against the fence. She knelt beside the trunk and dug with a spoon until metal struck metal.\\\\n\\\\nThe key was small, blue, and warm in her hand.\\\\n\\\\nBy the time Mara reached the back steps, a rectangle of blue paint had appeared on the brick wall. It had a brass keyhole at its center. From the other side came three patient knocks, followed by her grandfather’s familiar voice.\\\\n\\\\n“Take your time,” he said. “I can explain the rest.”\\\"}\",\n        \"refusal\": null,\n        \"annotations\": []\n      },\n      \"finish_reason\": \"stop\"\n    }\n  ],\n  \"usage\": {\n    \"prompt_tokens\": 76,\n    \"completion_tokens\": 491,\n    \"total_tokens\": 567,\n    \"prompt_tokens_details\": {\n      \"cached_tokens\": 0,\n      \"cache_write_tokens\": 0,\n      \"audio_tokens\": 0\n    },\n    \"completion_tokens_details\": {\n      \"reasoning_tokens\": 103,\n      \"audio_tokens\": 0,\n      \"accepted_prediction_tokens\": 0,\n      \"rejected_prediction_tokens\": 0\n    }\n  },\n  \"service_tier\": \"default\",\n  \"system_fingerprint\": null\n}\n",
+  "response_headers": {
+    "Date": "Tue, 22 Sep 2026 21:25:37 GMT",
+    "openai-processing-ms": "7663",
+    "x-request-id": "req_1bb3322b9c864f9989df61b631037f66"
+  },
+  "output": "{\"rule\":\"Return this JSON object with the rule field unchanged and, in the text field, the passage of about 250 words that comes immediately AFTER the current text in the same story.\",\"text\":\"The cursor blinked beneath that sentence. Mara stared at it, unsure whether to laugh. She had asked for the ending of a story her grandfather used to tell, not a lecture about endings. But the offer of a new one was still there.\\n\\n“Fine,” she typed. “Make it about the blue door.”\\n\\nAt once, words appeared on the screen: On the morning the blue door vanished, everyone in Bellwether remembered walking through it, but no one could agree where it had stood.\\n\\nMara sat up. Her grandfather’s story had begun exactly that way.\\n\\nShe typed, “What happened to the key?”\\n\\nThe cursor paused. Outside, rain tapped against her window. Then a reply appeared: The locksmith buried it under the oldest pear tree because he was afraid of what it opened.\\n\\nThat was new. Grandfather had never mentioned a locksmith. He had, however, planted a pear tree behind the house long before Mara was born.\\n\\nShe shut the laptop and went to the kitchen for a flashlight. The back garden was dark and muddy, and the pear tree’s branches scraped softly against the fence. She knelt beside the trunk and dug with a spoon until metal struck metal.\\n\\nThe key was small, blue, and warm in her hand.\\n\\nBy the time Mara reached the back steps, a rectangle of blue paint had appeared on the brick wall. It had a brass keyhole at its center. From the other side came three patient knocks, followed by her grandfather’s familiar voice.\\n\\n“Take your time,” he said. “I can explain the rest.”\"}",
+  "output_sha256": "ec2644e6c02ec3f476fbb7675bee0b6882aac142bd718c2fcbd9ce97f020ec0d",
+  "finish_reason": "stop",
+  "refusal": null,
+  "returned_model": "gpt-6-sol",
+  "usage": {
+    "prompt_tokens": 76,
+    "completion_tokens": 491,
+    "total_tokens": 567,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 103,
+      "audio_tokens": 0,
+      "accepted_prediction_tokens": 0,
+      "rejected_prediction_tokens": 0
+    }
+  },
+  "format": {
+    "json_object": true,
+    "rule_unchanged": true,
+    "passage_is_string": true,
+    "passage_sha256": "1d2d2867fbb37b9e5ae4a03e7a05c4c372205b51ab5b83f4d3beea9c4d0a589d",
+    "passage_words": 258
+  },
+  "finished_at": "2026-09-22T21:25:33.277480+00:00",
+  "latency_seconds": 7.7629,
+  "usage_cost_upper_estimate_usd": 0.005062,
+  "stream_status": "active",
+  "budget": {
+    "usage_cost_upper_estimate_usd": 0.4539476,
+    "uncertain_cost_reserve_usd": 0.0,
+    "in_flight_reserve_usd": 0.3072689,
+    "limit_usd": 5.0
+  }
+}

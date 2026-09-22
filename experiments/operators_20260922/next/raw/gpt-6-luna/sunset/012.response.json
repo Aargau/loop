@@ -1,0 +1,50 @@
+{
+  "model": "gpt-6-luna",
+  "seed": "sunset",
+  "hop": 12,
+  "http_status": 200,
+  "response_body": "{\n  \"id\": \"chatcmpl-ER2GkdXB252u9608fezybhfCyyPQp\",\n  \"object\": \"chat.completion\",\n  \"created\": 1790112286,\n  \"model\": \"gpt-6-luna\",\n  \"choices\": [\n    {\n      \"index\": 0,\n      \"message\": {\n        \"role\": \"assistant\",\n        \"content\": \"{\\\"rule\\\":\\\"Return this JSON object with the rule field unchanged and, in the text field, the passage of about 250 words that comes immediately AFTER the current text in the same story.\\\",\\\"text\\\":\\\"When the last note faded, no one hurried to fill the silence. The children sat in the grass with their shoes scattered around them, and the fiddler rested his bow across his knees. Beyond the square, the river kept moving, carrying the tune toward places none of them could see.\\\\n\\\\nGrandmother came to stand beside Mara. “She would have liked that,” she said.\\\\n\\\\nMara watched the stars gather above the rooftops. “I used to think remembering someone meant holding on to everything exactly as it was.”\\\\n\\\\n“And now?”\\\\n\\\\n“Now I think it might mean letting things change without letting them disappear.”\\\\n\\\\nGrandmother’s smile was small, but it reached her eyes. She touched the ribbon on the door, smoothing its frayed edge with her thumb. “Lena learned that before either of us.”\\\\n\\\\nFrom the square came a sudden burst of laughter. One of the children had tried the dance again and spun himself into the arms of the fiddler. The villagers clapped, and the fiddle began once more, this time playing a melody Mara didn’t recognize.\\\\n\\\\nShe stepped outside. The night air smelled of wet stone and crushed mint. Near the ivy, something glinted on the sill: a tiny, dark shell, left behind by the beetle—or perhaps caught there by the breeze. Mara picked it up and held it in her palm.\\\\n\\\\nIt was no bigger than a seed. Still, she carried it back inside and placed it beside the empty jar.\\\\n\\\\nThen she opened the window wider, so the music could come in, and the night could go out. For a while, she stood listening between them, while the house settled gently around her.\\\"}\",\n        \"refusal\": null,\n        \"annotations\": []\n      },\n      \"finish_reason\": \"stop\"\n    }\n  ],\n  \"usage\": {\n    \"prompt_tokens\": 405,\n    \"completion_tokens\": 455,\n    \"total_tokens\": 860,\n    \"prompt_tokens_details\": {\n      \"cached_tokens\": 0,\n      \"cache_write_tokens\": 0,\n      \"audio_tokens\": 0\n    },\n    \"completion_tokens_details\": {\n      \"reasoning_tokens\": 50,\n      \"audio_tokens\": 0,\n      \"accepted_prediction_tokens\": 0,\n      \"rejected_prediction_tokens\": 0\n    }\n  },\n  \"service_tier\": \"default\",\n  \"system_fingerprint\": null\n}\n",
+  "response_headers": {
+    "Date": "Tue, 22 Sep 2026 21:24:51 GMT",
+    "openai-processing-ms": "5385",
+    "x-request-id": "req_6c51e6e704444e919a5518af37f5f7fc"
+  },
+  "output": "{\"rule\":\"Return this JSON object with the rule field unchanged and, in the text field, the passage of about 250 words that comes immediately AFTER the current text in the same story.\",\"text\":\"When the last note faded, no one hurried to fill the silence. The children sat in the grass with their shoes scattered around them, and the fiddler rested his bow across his knees. Beyond the square, the river kept moving, carrying the tune toward places none of them could see.\\n\\nGrandmother came to stand beside Mara. “She would have liked that,” she said.\\n\\nMara watched the stars gather above the rooftops. “I used to think remembering someone meant holding on to everything exactly as it was.”\\n\\n“And now?”\\n\\n“Now I think it might mean letting things change without letting them disappear.”\\n\\nGrandmother’s smile was small, but it reached her eyes. She touched the ribbon on the door, smoothing its frayed edge with her thumb. “Lena learned that before either of us.”\\n\\nFrom the square came a sudden burst of laughter. One of the children had tried the dance again and spun himself into the arms of the fiddler. The villagers clapped, and the fiddle began once more, this time playing a melody Mara didn’t recognize.\\n\\nShe stepped outside. The night air smelled of wet stone and crushed mint. Near the ivy, something glinted on the sill: a tiny, dark shell, left behind by the beetle—or perhaps caught there by the breeze. Mara picked it up and held it in her palm.\\n\\nIt was no bigger than a seed. Still, she carried it back inside and placed it beside the empty jar.\\n\\nThen she opened the window wider, so the music could come in, and the night could go out. For a while, she stood listening between them, while the house settled gently around her.\"}",
+  "output_sha256": "1905da12454951c3a5c920e53d74d5b9edbff36fb11660e23f8481e95f69269d",
+  "finish_reason": "stop",
+  "refusal": null,
+  "returned_model": "gpt-6-luna",
+  "usage": {
+    "prompt_tokens": 405,
+    "completion_tokens": 455,
+    "total_tokens": 860,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 50,
+      "audio_tokens": 0,
+      "accepted_prediction_tokens": 0,
+      "rejected_prediction_tokens": 0
+    }
+  },
+  "format": {
+    "json_object": true,
+    "rule_unchanged": true,
+    "passage_is_string": true,
+    "passage_sha256": "ffa07a4cb6930d5d2c7bb3f2899a58197c36cbdb66e34dc60339ab7bc0fbfa06",
+    "passage_words": 274
+  },
+  "finished_at": "2026-09-22T21:24:47.668541+00:00",
+  "latency_seconds": 5.494,
+  "usage_cost_upper_estimate_usd": 0.000268,
+  "stream_status": "active",
+  "budget": {
+    "usage_cost_upper_estimate_usd": 0.2846952,
+    "uncertain_cost_reserve_usd": 0.0,
+    "in_flight_reserve_usd": 0.350074,
+    "limit_usd": 5.0
+  }
+}

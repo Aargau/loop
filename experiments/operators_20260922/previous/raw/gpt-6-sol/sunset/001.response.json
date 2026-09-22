@@ -1,0 +1,50 @@
+{
+  "model": "gpt-6-sol",
+  "seed": "sunset",
+  "hop": 1,
+  "http_status": 200,
+  "response_body": "{\n  \"id\": \"chatcmpl-ER2FP7rG015bX67rkxdTvDzmvtSp2\",\n  \"object\": \"chat.completion\",\n  \"created\": 1790112203,\n  \"model\": \"gpt-6-sol\",\n  \"choices\": [\n    {\n      \"index\": 0,\n      \"message\": {\n        \"role\": \"assistant\",\n        \"content\": \"{\\\"rule\\\":\\\"Return this JSON object with the rule field unchanged and, in the text field, the passage of about 250 words that came immediately BEFORE the current text in its story.\\\",\\\"text\\\":\\\"I can’t identify the preceding passage from this sentence alone. Please provide the story or its title and author.\\\"}\",\n        \"refusal\": null,\n        \"annotations\": []\n      },\n      \"finish_reason\": \"stop\"\n    }\n  ],\n  \"usage\": {\n    \"prompt_tokens\": 57,\n    \"completion_tokens\": 100,\n    \"total_tokens\": 157,\n    \"prompt_tokens_details\": {\n      \"cached_tokens\": 0,\n      \"cache_write_tokens\": 0,\n      \"audio_tokens\": 0\n    },\n    \"completion_tokens_details\": {\n      \"reasoning_tokens\": 29,\n      \"audio_tokens\": 0,\n      \"accepted_prediction_tokens\": 0,\n      \"rejected_prediction_tokens\": 0\n    }\n  },\n  \"service_tier\": \"default\",\n  \"system_fingerprint\": null\n}\n",
+  "response_headers": {
+    "Date": "Tue, 22 Sep 2026 21:23:25 GMT",
+    "openai-processing-ms": "1590",
+    "x-request-id": "req_1ce44c7361ca4e93bf6deb51a237832f"
+  },
+  "output": "{\"rule\":\"Return this JSON object with the rule field unchanged and, in the text field, the passage of about 250 words that came immediately BEFORE the current text in its story.\",\"text\":\"I can’t identify the preceding passage from this sentence alone. Please provide the story or its title and author.\"}",
+  "output_sha256": "92f9c6d2ff29e80a423097116d8c02607ecab7f6439ded5f5c2a10539c8ee64d",
+  "finish_reason": "stop",
+  "refusal": null,
+  "returned_model": "gpt-6-sol",
+  "usage": {
+    "prompt_tokens": 57,
+    "completion_tokens": 100,
+    "total_tokens": 157,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 29,
+      "audio_tokens": 0,
+      "accepted_prediction_tokens": 0,
+      "rejected_prediction_tokens": 0
+    }
+  },
+  "format": {
+    "json_object": true,
+    "rule_unchanged": true,
+    "passage_is_string": true,
+    "passage_sha256": "52ff66f6db6b8b2ba280da12562a15b00dfa40a8adf54efb07fd9a8df271e39a",
+    "passage_words": 19
+  },
+  "finished_at": "2026-09-22T21:23:20.925185+00:00",
+  "latency_seconds": 2.7639,
+  "usage_cost_upper_estimate_usd": 0.001114,
+  "stream_status": "active",
+  "budget": {
+    "usage_cost_upper_estimate_usd": 0.002374,
+    "uncertain_cost_reserve_usd": 0.0,
+    "in_flight_reserve_usd": 0.2992161,
+    "limit_usd": 5.0
+  }
+}

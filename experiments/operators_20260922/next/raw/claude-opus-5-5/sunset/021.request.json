@@ -1,0 +1,22 @@
+{
+  "started_at": "2026-09-22T21:26:40.121630+00:00",
+  "model": "claude-opus-5-5",
+  "seed": "sunset",
+  "hop": 21,
+  "endpoint": "https://api.anthropic.com/v1/messages",
+  "body": {
+    "model": "claude-opus-5-5",
+    "messages": [
+      {
+        "role": "user",
+        "content": "```json\n{\"rule\": \"Return this JSON object with the rule field unchanged and, in the text field, the passage of about 250 words that comes immediately AFTER the current text in the same story.\", \"text\": \"Neither of them slept after that.\\n\\nMara lay with her cheek against the rough boards and listened to the man breathe. He breathed like someone pretending to sleep, too even, too patient. Every so often the pallet creaked, and each time Leonard's fingers found her wrist and held on until the sound died away.\\n\\nShe thought about the flour tin. Mama had moved the money three days ago, the night the letter came from Uncle Asa. She had done it without a word, but Mara had seen her kneeling by the hearth with the poker, working loose the third stone from the left. Mara had pretended not to notice. Now she wondered whether Mama had known, even then, that someone would come looking.\\n\\n*Clever woman.* He had said it as though he admired her. As though he were sorry.\\n\\nToward dawn the coals went gray, and the kitchen below sank into a cold blue dark. A rooster started up somewhere across the creek. Mara heard the man sit up, heard the soft scrape of his boots as he pulled them on, one and then the other.\\n\\nThe door latch lifted.\\n\\nShe waited for it to close behind him, waited for the crunch of his steps on the frosted yard. Instead there was nothing. Only the draft sliding across the floor and up through the knothole, carrying the smell of snow.\\n\\n\\\"Mara,\\\" Leonard whispered. \\\"Is he gone?\\\"\\n\\nBelow them, very near the ladder, someone laughed under his breath.\"}\n```"
+      }
+    ],
+    "max_tokens": 4096,
+    "output_config": {
+      "effort": "low"
+    }
+  },
+  "state_sha256": "8eb69f2c8197fae878f85668d34955634a203a81cf999bb25099ffbc47eba779",
+  "reserved_cost_usd": 0.090324
+}

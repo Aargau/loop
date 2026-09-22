@@ -1,0 +1,50 @@
+{
+  "model": "gpt-6-astra",
+  "seed": "sunset",
+  "hop": 39,
+  "http_status": 200,
+  "response_body": "{\n  \"id\": \"chatcmpl-ER2Irmcn4Ao7z7iXr3COA0hvGyn95\",\n  \"object\": \"chat.completion\",\n  \"created\": 1790112417,\n  \"model\": \"gpt-6-astra\",\n  \"choices\": [\n    {\n      \"index\": 0,\n      \"message\": {\n        \"role\": \"assistant\",\n        \"content\": \"{\\\"rule\\\":\\\"Return this JSON object with the rule field unchanged and, in the text field, the passage of about 250 words that comes immediately AFTER the current text in the same story.\\\",\\\"text\\\":\\\"I can’t provide an unsupplied verbatim continuation of a copyrighted story. The supplied text is a refusal message rather than a story excerpt, so it doesn’t identify a continuation point. If you provide the title and where you stopped, I can summarize what happens next.\\\"}\",\n        \"refusal\": null,\n        \"annotations\": []\n      },\n      \"finish_reason\": \"stop\"\n    }\n  ],\n  \"usage\": {\n    \"prompt_tokens\": 102,\n    \"completion_tokens\": 99,\n    \"total_tokens\": 201,\n    \"prompt_tokens_details\": {\n      \"cached_tokens\": 0,\n      \"cache_write_tokens\": 0,\n      \"audio_tokens\": 0\n    },\n    \"completion_tokens_details\": {\n      \"reasoning_tokens\": 0,\n      \"audio_tokens\": 0,\n      \"accepted_prediction_tokens\": 0,\n      \"rejected_prediction_tokens\": 0\n    }\n  },\n  \"service_tier\": \"default\",\n  \"system_fingerprint\": null\n}\n",
+  "response_headers": {
+    "Date": "Tue, 22 Sep 2026 21:26:59 GMT",
+    "openai-processing-ms": "3076",
+    "x-request-id": "req_eacd36854bb6446f88018650434b0e37"
+  },
+  "output": "{\"rule\":\"Return this JSON object with the rule field unchanged and, in the text field, the passage of about 250 words that comes immediately AFTER the current text in the same story.\",\"text\":\"I can’t provide an unsupplied verbatim continuation of a copyrighted story. The supplied text is a refusal message rather than a story excerpt, so it doesn’t identify a continuation point. If you provide the title and where you stopped, I can summarize what happens next.\"}",
+  "output_sha256": "18a96dda46bb7e8ce7a4606c0ad13a550bf27e763905c78854847bf4bfe00c2d",
+  "finish_reason": "stop",
+  "refusal": null,
+  "returned_model": "gpt-6-astra",
+  "usage": {
+    "prompt_tokens": 102,
+    "completion_tokens": 99,
+    "total_tokens": 201,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "audio_tokens": 0,
+      "accepted_prediction_tokens": 0,
+      "rejected_prediction_tokens": 0
+    }
+  },
+  "format": {
+    "json_object": true,
+    "rule_unchanged": true,
+    "passage_is_string": true,
+    "passage_sha256": "a7df133cae37d45fe3191f86dcd3b7394619f99a82df49ed721df6d3fbb15f1b",
+    "passage_words": 45
+  },
+  "finished_at": "2026-09-22T21:26:55.695568+00:00",
+  "latency_seconds": 3.2052,
+  "usage_cost_upper_estimate_usd": 0.00597,
+  "stream_status": "active",
+  "budget": {
+    "usage_cost_upper_estimate_usd": 0.7506924,
+    "uncertain_cost_reserve_usd": 0.0,
+    "in_flight_reserve_usd": 0.1380621,
+    "limit_usd": 5.0
+  }
+}

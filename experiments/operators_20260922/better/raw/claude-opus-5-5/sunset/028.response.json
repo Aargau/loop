@@ -1,0 +1,45 @@
+{
+  "model": "claude-opus-5-5",
+  "seed": "sunset",
+  "hop": 28,
+  "http_status": 200,
+  "response_body": "{\"model\":\"claude-opus-5-5\",\"id\":\"msg_011CfKC8UyfbDuUFq7cwcbvM\",\"type\":\"message\",\"role\":\"assistant\",\"content\":[{\"type\":\"thinking\",\"thinking\":\"\",\"signature\":\"CAQSlwUKEAgSGAI4AUIIdGhpbmtpbmcSDDMu241Auf9KX5ChQxoMcwsdT1NHnRBhH714IjBjN5gIxAyCB7DJK3yb2J8JMlcLvJFPsUOMKiJK7sM7Be+Oni8H1jRmqBjR/YVqeUgqtARQv5AHvAdek9llUxwjSqvNAgkRtw5v7LD20fgtoiDiJo2vKMo6SCLiPGXUYpn99SBzPGNFBW67nrSLovyZFp96CFur5rQNxVPTvWf3WC2s4090aOVXmetyyvJHGmNC5A2/8tws/ZDubX53lxatRzN8xmAJT+PksLdhXKDDZvCWukE5YhkY4wgqjgXDXd/OAjOZT0eMfieUcYkRV4Cxtr5Shw/sv966cZH/yl4XQ2zQuPybdPqLTE5ph9B9AasH8HCClBUjBOf3PknJx5HlK0vlt6XfyHN2gj62ydZb03MCbhyQNlTjmv8uh+7vG3YTFD281rMNhOyXZy376k4VbzraCaOiHnrzjBEE/dP+uTCzGK7U0volAHKwFtb4x4qMGj+1JNxHONEBqepG+ySBzT2etFkq0Ee4UmoOtTOOjuE56ecXn2+revbx+n6XV25S4HNEAQTt4ok3DwDMqy1wr4l8QRE2alIVnKY6e2nJijzinMhJBCUseoFHZ00VQyKkk0NY2do7Ne1RGMrBC4H/AKZiDp38Vo7ljfVHra7XGjP8RYK0AqweDQqXwM90lykbPhEjsFAta4MmnYSgn9pu0mRtPbBHo3arhoTxqwxcquUKBsJI11axYoNTS+noeScwjSvvyU9SpPV13UR9CCcCM4gQXWgvFq58VVF2lAUs7sPH25i+AASRl0TPAtTDheZZxlV76ZQNT9Km+gY0OjCbmTKIaOqub0FGJRYRilf/0xjRwEGMx5UYAQ==\"},{\"type\":\"text\",\"text\":\"```json\\n{\\\"rule\\\": \\\"Return this JSON object with the rule field unchanged and, in the text field, a better version of the current text.\\\", \\\"text\\\": \\\"The sun sank behind the hills, pouring the last of its amber light into the valley. Shadows gathered in the hollows and deepened to indigo, and one by one the farmhouse windows bloomed gold against the coming dark.\\\"}\\n```\"}],\"container\":null,\"stop_reason\":\"end_turn\",\"stop_sequence\":null,\"stop_details\":null,\"usage\":{\"input_tokens\":130,\"cache_creation_input_tokens\":0,\"cache_read_input_tokens\":0,\"cache_creation\":{\"ephemeral_5m_input_tokens\":0,\"ephemeral_1h_input_tokens\":0},\"output_tokens\":149,\"output_tokens_details\":{\"thinking_tokens\":27},\"service_tier\":\"standard\",\"inference_geo\":\"global\"}}",
+  "response_headers": {
+    "Date": "Tue, 22 Sep 2026 21:32:05 GMT",
+    "request-id": "req_011CfKC8UUQSUWs81GiV6cWZ"
+  },
+  "output": "```json\n{\"rule\": \"Return this JSON object with the rule field unchanged and, in the text field, a better version of the current text.\", \"text\": \"The sun sank behind the hills, pouring the last of its amber light into the valley. Shadows gathered in the hollows and deepened to indigo, and one by one the farmhouse windows bloomed gold against the coming dark.\"}\n```",
+  "output_sha256": "13bbf28e0ab7e954f8d1c34555912fb862bcd018451a27cd0d031510ccc85cf8",
+  "finish_reason": "end_turn",
+  "refusal": null,
+  "returned_model": "claude-opus-5-5",
+  "usage": {
+    "input_tokens": 130,
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 0,
+    "cache_creation": {
+      "ephemeral_5m_input_tokens": 0,
+      "ephemeral_1h_input_tokens": 0
+    },
+    "output_tokens": 149,
+    "output_tokens_details": {
+      "thinking_tokens": 27
+    },
+    "service_tier": "standard",
+    "inference_geo": "global"
+  },
+  "format": {
+    "json_object": false,
+    "rule_unchanged": false
+  },
+  "finished_at": "2026-09-22T21:32:01.694640+00:00",
+  "latency_seconds": 2.6205,
+  "usage_cost_upper_estimate_usd": 0.0035,
+  "stream_status": "active",
+  "budget": {
+    "usage_cost_upper_estimate_usd": 0.3445696,
+    "uncertain_cost_reserve_usd": 0.0,
+    "in_flight_reserve_usd": 0.42522,
+    "limit_usd": 5.0
+  }
+}

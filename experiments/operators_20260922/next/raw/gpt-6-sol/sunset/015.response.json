@@ -1,0 +1,50 @@
+{
+  "model": "gpt-6-sol",
+  "seed": "sunset",
+  "hop": 15,
+  "http_status": 200,
+  "response_body": "{\n  \"id\": \"chatcmpl-ER2Gm96HTLpCgDvAojaPybeZ5YdCS\",\n  \"object\": \"chat.completion\",\n  \"created\": 1790112288,\n  \"model\": \"gpt-6-sol\",\n  \"choices\": [\n    {\n      \"index\": 0,\n      \"message\": {\n        \"role\": \"assistant\",\n        \"content\": \"{\\\"rule\\\":\\\"Return this JSON object with the rule field unchanged and, in the text field, the passage of about 250 words that comes immediately AFTER the current text in the same story.\\\",\\\"text\\\":\\\"Mara knew that cry, too. She had heard it in dreams all her life, always from the other side of a door she could never reach.\\\\n\\\\n“Where is she?” she asked.\\\\n\\\\nThe girl glanced at the black glass. “Where you left her.”\\\\n\\\\nA memory came with the smell of rain: Mara at six, standing in the kitchen while three knocks sounded at the back door. Her father was upstairs, asleep. She remembered that now. She remembered turning the key anyway.\\\\n\\\\nNo. Not turning it. Holding it out to someone on the other side.\\\\n\\\\nThe pale shape in the frame spread until it resembled a hand. Her father’s voice whispered, “Put the key down.”\\\\n\\\\nIn the window, Mara’s reflection lowered its finger. It held up a small, dark key of its own.\\\\n\\\\n“You kept me out,” it said, speaking with Mara’s mouth. “For a while.”\\\\n\\\\nThe girl seized Mara’s wrist. Her fingers were cold and gritty with ash. “Don’t look at her. Look at me.”\\\\n\\\\nMara did. Beneath the soot, the girl had her eyes. She was six years old, and she was crying without making a sound.\\\\n\\\\nFar below, the other child cried louder.\\\\n\\\\n“Which one are you?” Mara asked.\\\\n\\\\n“I’m the one who stayed,” the girl said.\\\\n\\\\nThe glass of the frame cracked. A line ran through the pale hand, dividing it into two. On the desk, the key beneath Mara’s fingers began to turn, though there was no lock around it.\\\\n\\\\nFrom the hall came three knocks. A pause. Then three more.\\\"}\",\n        \"refusal\": null,\n        \"annotations\": []\n      },\n      \"finish_reason\": \"stop\"\n    }\n  ],\n  \"usage\": {\n    \"prompt_tokens\": 407,\n    \"completion_tokens\": 422,\n    \"total_tokens\": 829,\n    \"prompt_tokens_details\": {\n      \"cached_tokens\": 0,\n      \"cache_write_tokens\": 0,\n      \"audio_tokens\": 0\n    },\n    \"completion_tokens_details\": {\n      \"reasoning_tokens\": 16,\n      \"audio_tokens\": 0,\n      \"accepted_prediction_tokens\": 0,\n      \"rejected_prediction_tokens\": 0\n    }\n  },\n  \"service_tier\": \"default\",\n  \"system_fingerprint\": null\n}\n",
+  "response_headers": {
+    "Date": "Tue, 22 Sep 2026 21:24:55 GMT",
+    "openai-processing-ms": "6758",
+    "x-request-id": "req_1a972800beea48e1af8390223efe30e3"
+  },
+  "output": "{\"rule\":\"Return this JSON object with the rule field unchanged and, in the text field, the passage of about 250 words that comes immediately AFTER the current text in the same story.\",\"text\":\"Mara knew that cry, too. She had heard it in dreams all her life, always from the other side of a door she could never reach.\\n\\n“Where is she?” she asked.\\n\\nThe girl glanced at the black glass. “Where you left her.”\\n\\nA memory came with the smell of rain: Mara at six, standing in the kitchen while three knocks sounded at the back door. Her father was upstairs, asleep. She remembered that now. She remembered turning the key anyway.\\n\\nNo. Not turning it. Holding it out to someone on the other side.\\n\\nThe pale shape in the frame spread until it resembled a hand. Her father’s voice whispered, “Put the key down.”\\n\\nIn the window, Mara’s reflection lowered its finger. It held up a small, dark key of its own.\\n\\n“You kept me out,” it said, speaking with Mara’s mouth. “For a while.”\\n\\nThe girl seized Mara’s wrist. Her fingers were cold and gritty with ash. “Don’t look at her. Look at me.”\\n\\nMara did. Beneath the soot, the girl had her eyes. She was six years old, and she was crying without making a sound.\\n\\nFar below, the other child cried louder.\\n\\n“Which one are you?” Mara asked.\\n\\n“I’m the one who stayed,” the girl said.\\n\\nThe glass of the frame cracked. A line ran through the pale hand, dividing it into two. On the desk, the key beneath Mara’s fingers began to turn, though there was no lock around it.\\n\\nFrom the hall came three knocks. A pause. Then three more.\"}",
+  "output_sha256": "31afc94b9c72ca7d6628b38c12e95fbb1505142e020a2d3931265ec009f71b5d",
+  "finish_reason": "stop",
+  "refusal": null,
+  "returned_model": "gpt-6-sol",
+  "usage": {
+    "prompt_tokens": 407,
+    "completion_tokens": 422,
+    "total_tokens": 829,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 16,
+      "audio_tokens": 0,
+      "accepted_prediction_tokens": 0,
+      "rejected_prediction_tokens": 0
+    }
+  },
+  "format": {
+    "json_object": true,
+    "rule_unchanged": true,
+    "passage_is_string": true,
+    "passage_sha256": "083a13c3cd8b4d59c802d991daff8ae32db5cc8fc67a0648296cf70c975867f1",
+    "passage_words": 254
+  },
+  "finished_at": "2026-09-22T21:24:51.246327+00:00",
+  "latency_seconds": 6.9333,
+  "usage_cost_upper_estimate_usd": 0.005034,
+  "stream_status": "active",
+  "budget": {
+    "usage_cost_upper_estimate_usd": 0.2897292,
+    "uncertain_cost_reserve_usd": 0.0,
+    "in_flight_reserve_usd": 0.3070335,
+    "limit_usd": 5.0
+  }
+}

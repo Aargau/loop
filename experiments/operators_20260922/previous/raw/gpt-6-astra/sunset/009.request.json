@@ -1,0 +1,20 @@
+{
+  "started_at": "2026-09-22T21:23:47.944668+00:00",
+  "model": "gpt-6-astra",
+  "seed": "sunset",
+  "hop": 9,
+  "endpoint": "https://api.openai.com/v1/chat/completions",
+  "body": {
+    "model": "gpt-6-astra",
+    "messages": [
+      {
+        "role": "user",
+        "content": "{\"rule\":\"Return this JSON object with the rule field unchanged and, in the text field, the passage of about 250 words that came immediately BEFORE the current text in its story.\",\"text\":\"Sorry, I can’t provide an unprovided passage from a story based on its location. If you share the preceding text, I can summarize it, or I can write an original passage leading up to the current text.\"}"
+      }
+    ],
+    "max_completion_tokens": 4096,
+    "reasoning_effort": "low"
+  },
+  "state_sha256": "7222431f61d2e8cb8ac958103c20649727fd8a382587df6f1b483575be1eaa30",
+  "reserved_cost_usd": 0.21383
+}

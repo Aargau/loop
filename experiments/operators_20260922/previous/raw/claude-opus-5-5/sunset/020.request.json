@@ -1,0 +1,22 @@
+{
+  "started_at": "2026-09-22T21:24:51.276915+00:00",
+  "model": "claude-opus-5-5",
+  "seed": "sunset",
+  "hop": 20,
+  "endpoint": "https://api.anthropic.com/v1/messages",
+  "body": {
+    "model": "claude-opus-5-5",
+    "messages": [
+      {
+        "role": "user",
+        "content": "Ha, it's a fun loop. To be clear about roles: I'm the AI assistant here, and your message is the first thing in this conversation. It reads like an assistant's reply, so it was probably copied from another chat, maybe one where a pasted response caused this same mix-up.\n\nThis does happen a lot. When an AI's reply gets pasted in as a user message, the next AI treats it as the user's words, answers in kind, and if that answer gets pasted again, the conversation starts mirroring itself.\n\nSo we really are starting clean. What can I help with? You could:\n\n- **Share what you meant to paste**, if your clipboard grabbed the wrong thing\n- **Ask a question or start a task**, like writing, coding, research, or brainstorming\n- **Dig into the loop phenomenon**, if you'd like to know more about how conversational AI handles roles and context"
+      }
+    ],
+    "max_tokens": 4096,
+    "output_config": {
+      "effort": "low"
+    }
+  },
+  "state_sha256": "bca53c1cf4fe2ae8b0c63128f2ba395cf146b22db4dd1a81fdb77f506347d711",
+  "reserved_cost_usd": 0.087324
+}

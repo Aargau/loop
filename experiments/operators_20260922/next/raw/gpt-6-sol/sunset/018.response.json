@@ -1,0 +1,50 @@
+{
+  "model": "gpt-6-sol",
+  "seed": "sunset",
+  "hop": 18,
+  "http_status": 200,
+  "response_body": "{\n  \"id\": \"chatcmpl-ER2H9uhtAJIFv0mETBfNhyoU55eYM\",\n  \"object\": \"chat.completion\",\n  \"created\": 1790112311,\n  \"model\": \"gpt-6-sol\",\n  \"choices\": [\n    {\n      \"index\": 0,\n      \"message\": {\n        \"role\": \"assistant\",\n        \"content\": \"{\\\"rule\\\":\\\"Return this JSON object with the rule field unchanged and, in the text field, the passage of about 250 words that comes immediately AFTER the current text in the same story.\\\",\\\"text\\\":\\\"Mara backed away from the glass. The reflection stayed where it was.\\\\n\\\\nThe girl caught her wrist. “Don’t answer it again.”\\\\n\\\\nA second knock came from beneath the floorboards. The yellow button rolled across the boards and stopped against Mara’s shoe. She picked it up. Sewn through its four holes was a single black thread, tied in a knot on the back.\\\\n\\\\n“I kept this,” Mara said.\\\\n\\\\nThe girl shook her head. “You gave it back.”\\\\n\\\\nThe water in the hall rose over the threshold. It carried a smell of cold ashes. Mara looked at the torn photograph: her father, the yellow coat, the narrow strip of darkness where the other girl had been. She fitted the pieces together on the desk. In the cracked glass, her reflection watched her hands.\\\\n\\\\n“There were two of you,” Mara said.\\\\n\\\\n“There were three.”\\\\n\\\\nThe desk drawer slid shut. Mara snatched her fingers clear. From inside came a faint, furious scratching.\\\\n\\\\nHer father spoke from the empty doorway. “I could only carry one.”\\\\n\\\\nMara saw him then as she had beneath the stairs: soaked to the elbows, reaching into the dark. She had thought he was choosing. Perhaps he had been asking them to come out.\\\\n\\\\nThe reflection pressed its palm against the glass. Soot spread beneath its fingers, and words appeared where its hand had been: LET ME IN.\\\\n\\\\nThe girl tightened her grip on Mara’s wrist. “It can’t open the door,” she said. “Not unless you remember its name.”\\\\n\\\\nMara looked at the button in her palm. On its back, beneath the knot, one small letter had been scratched into the brass.\\\"}\",\n        \"refusal\": null,\n        \"annotations\": []\n      },\n      \"finish_reason\": \"stop\"\n    }\n  ],\n  \"usage\": {\n    \"prompt_tokens\": 420,\n    \"completion_tokens\": 542,\n    \"total_tokens\": 962,\n    \"prompt_tokens_details\": {\n      \"cached_tokens\": 0,\n      \"cache_write_tokens\": 0,\n      \"audio_tokens\": 0\n    },\n    \"completion_tokens_details\": {\n      \"reasoning_tokens\": 126,\n      \"audio_tokens\": 0,\n      \"accepted_prediction_tokens\": 0,\n      \"rejected_prediction_tokens\": 0\n    }\n  },\n  \"service_tier\": \"default\",\n  \"system_fingerprint\": null\n}\n",
+  "response_headers": {
+    "Date": "Tue, 22 Sep 2026 21:25:18 GMT",
+    "openai-processing-ms": "7931",
+    "x-request-id": "req_61b856c12a4446f8a70fa676bfcffeb7"
+  },
+  "output": "{\"rule\":\"Return this JSON object with the rule field unchanged and, in the text field, the passage of about 250 words that comes immediately AFTER the current text in the same story.\",\"text\":\"Mara backed away from the glass. The reflection stayed where it was.\\n\\nThe girl caught her wrist. “Don’t answer it again.”\\n\\nA second knock came from beneath the floorboards. The yellow button rolled across the boards and stopped against Mara’s shoe. She picked it up. Sewn through its four holes was a single black thread, tied in a knot on the back.\\n\\n“I kept this,” Mara said.\\n\\nThe girl shook her head. “You gave it back.”\\n\\nThe water in the hall rose over the threshold. It carried a smell of cold ashes. Mara looked at the torn photograph: her father, the yellow coat, the narrow strip of darkness where the other girl had been. She fitted the pieces together on the desk. In the cracked glass, her reflection watched her hands.\\n\\n“There were two of you,” Mara said.\\n\\n“There were three.”\\n\\nThe desk drawer slid shut. Mara snatched her fingers clear. From inside came a faint, furious scratching.\\n\\nHer father spoke from the empty doorway. “I could only carry one.”\\n\\nMara saw him then as she had beneath the stairs: soaked to the elbows, reaching into the dark. She had thought he was choosing. Perhaps he had been asking them to come out.\\n\\nThe reflection pressed its palm against the glass. Soot spread beneath its fingers, and words appeared where its hand had been: LET ME IN.\\n\\nThe girl tightened her grip on Mara’s wrist. “It can’t open the door,” she said. “Not unless you remember its name.”\\n\\nMara looked at the button in her palm. On its back, beneath the knot, one small letter had been scratched into the brass.\"}",
+  "output_sha256": "86f0e2de241f507e57f169200ad17bb6f5f1b037888711d0d0437d8ce50dc8df",
+  "finish_reason": "stop",
+  "refusal": null,
+  "returned_model": "gpt-6-sol",
+  "usage": {
+    "prompt_tokens": 420,
+    "completion_tokens": 542,
+    "total_tokens": 962,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 126,
+      "audio_tokens": 0,
+      "accepted_prediction_tokens": 0,
+      "rejected_prediction_tokens": 0
+    }
+  },
+  "format": {
+    "json_object": true,
+    "rule_unchanged": true,
+    "passage_is_string": true,
+    "passage_sha256": "19b0e83733458a61f7caaacb9aa617e8fd97f88ca58f5215c598b68af775912b",
+    "passage_words": 271
+  },
+  "finished_at": "2026-09-22T21:25:14.599235+00:00",
+  "latency_seconds": 8.0561,
+  "usage_cost_upper_estimate_usd": 0.00626,
+  "stream_status": "active",
+  "budget": {
+    "usage_cost_upper_estimate_usd": 0.3658952,
+    "uncertain_cost_reserve_usd": 0.0,
+    "in_flight_reserve_usd": 0.3070667,
+    "limit_usd": 5.0
+  }
+}

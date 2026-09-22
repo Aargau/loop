@@ -1,0 +1,22 @@
+{
+  "started_at": "2026-09-22T21:33:05.092527+00:00",
+  "model": "claude-fable-5-1",
+  "seed": "sunset",
+  "hop": 36,
+  "endpoint": "https://api.anthropic.com/v1/messages",
+  "body": {
+    "model": "claude-fable-5-1",
+    "messages": [
+      {
+        "role": "user",
+        "content": "{\"rule\": \"Return this JSON object with the rule field unchanged and, in the text field, a better version of the current text.\", \"text\": \"The sun slipped behind the hills, spilling molten gold along the rim of the sky. Slowly the light cooled to ash. Darkness pooled in the hollows the way water finds its level—the low places first, then the fields, then everything—until the hills were only a deeper shade of night and the first stars stood out like sparks the day had forgotten to put out. Somewhere below, a dog barked once and thought better of it. The silence that followed had weight: the settled weight of a house after the last door has closed, when the walls seem to exhale, and then hold their breath.\"}"
+      }
+    ],
+    "max_tokens": 4096,
+    "output_config": {
+      "effort": "low"
+    }
+  },
+  "state_sha256": "c685e24ab9b899c88b9734da673418033ee21c6b4d9d36c533f3640eb9de69db",
+  "reserved_cost_usd": 0.21709
+}

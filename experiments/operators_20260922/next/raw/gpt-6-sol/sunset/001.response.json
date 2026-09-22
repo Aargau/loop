@@ -1,0 +1,50 @@
+{
+  "model": "gpt-6-sol",
+  "seed": "sunset",
+  "hop": 1,
+  "http_status": 200,
+  "response_body": "{\n  \"id\": \"chatcmpl-ER2Fc5yMZYPyw0FXsHBzJixeke2Pb\",\n  \"object\": \"chat.completion\",\n  \"created\": 1790112216,\n  \"model\": \"gpt-6-sol\",\n  \"choices\": [\n    {\n      \"index\": 0,\n      \"message\": {\n        \"role\": \"assistant\",\n        \"content\": \"{\\\"rule\\\":\\\"Return this JSON object with the rule field unchanged and, in the text field, the passage of about 250 words that comes immediately AFTER the current text in the same story.\\\",\\\"text\\\":\\\"Mara counted the last three windows along the ridge road. Two were dark. In the third, a lamp burned behind a blue curtain.\\\\n\\\\nShe had been walking since noon, following the directions her brother had tucked into his final letter. At the end of the road, he’d written, you’ll find the place I couldn’t leave.\\\\n\\\\nThe house looked smaller than she remembered. Its gate hung open, and weeds had swallowed the path to the porch. Mara stopped beside the mailbox. Inside was a single envelope, damp at the corners, addressed to her in her brother’s careful handwriting.\\\\n\\\\nShe opened it beneath the fading sky.\\\\n\\\\nI’m sorry I made you come all this way. The lamp means someone is here. Knock, and tell them about the summer we hid the boat.\\\\n\\\\nMara read the note twice. They had never hidden a boat. They had hidden a red bicycle in the old quarry after she’d broken its wheel and been too frightened to tell their father.\\\\n\\\\nA floorboard creaked inside the house. The blue curtain shifted.\\\\n\\\\nMara folded the letter and slipped it into her coat. Then she walked past the porch to the narrow path that led toward the quarry. If someone was watching, she wanted to know whether they would follow.\\\\n\\\\nAt the edge of the trees, she glanced back. The lamp went out. A moment later, the front door opened, and a voice she knew called her name.\\\"}\",\n        \"refusal\": null,\n        \"annotations\": []\n      },\n      \"finish_reason\": \"stop\"\n    }\n  ],\n  \"usage\": {\n    \"prompt_tokens\": 58,\n    \"completion_tokens\": 384,\n    \"total_tokens\": 442,\n    \"prompt_tokens_details\": {\n      \"cached_tokens\": 0,\n      \"cache_write_tokens\": 0,\n      \"audio_tokens\": 0\n    },\n    \"completion_tokens_details\": {\n      \"reasoning_tokens\": 32,\n      \"audio_tokens\": 0,\n      \"accepted_prediction_tokens\": 0,\n      \"rejected_prediction_tokens\": 0\n    }\n  },\n  \"service_tier\": \"default\",\n  \"system_fingerprint\": null\n}\n",
+  "response_headers": {
+    "Date": "Tue, 22 Sep 2026 21:23:41 GMT",
+    "openai-processing-ms": "5637",
+    "x-request-id": "req_2e1f45ae769c4d779af80fde70829fb8"
+  },
+  "output": "{\"rule\":\"Return this JSON object with the rule field unchanged and, in the text field, the passage of about 250 words that comes immediately AFTER the current text in the same story.\",\"text\":\"Mara counted the last three windows along the ridge road. Two were dark. In the third, a lamp burned behind a blue curtain.\\n\\nShe had been walking since noon, following the directions her brother had tucked into his final letter. At the end of the road, he’d written, you’ll find the place I couldn’t leave.\\n\\nThe house looked smaller than she remembered. Its gate hung open, and weeds had swallowed the path to the porch. Mara stopped beside the mailbox. Inside was a single envelope, damp at the corners, addressed to her in her brother’s careful handwriting.\\n\\nShe opened it beneath the fading sky.\\n\\nI’m sorry I made you come all this way. The lamp means someone is here. Knock, and tell them about the summer we hid the boat.\\n\\nMara read the note twice. They had never hidden a boat. They had hidden a red bicycle in the old quarry after she’d broken its wheel and been too frightened to tell their father.\\n\\nA floorboard creaked inside the house. The blue curtain shifted.\\n\\nMara folded the letter and slipped it into her coat. Then she walked past the porch to the narrow path that led toward the quarry. If someone was watching, she wanted to know whether they would follow.\\n\\nAt the edge of the trees, she glanced back. The lamp went out. A moment later, the front door opened, and a voice she knew called her name.\"}",
+  "output_sha256": "297c80c9b717c67e615ae94f5b101ab4bb3c8b2dbc9541a7d0cb53f220d2ee8d",
+  "finish_reason": "stop",
+  "refusal": null,
+  "returned_model": "gpt-6-sol",
+  "usage": {
+    "prompt_tokens": 58,
+    "completion_tokens": 384,
+    "total_tokens": 442,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 32,
+      "audio_tokens": 0,
+      "accepted_prediction_tokens": 0,
+      "rejected_prediction_tokens": 0
+    }
+  },
+  "format": {
+    "json_object": true,
+    "rule_unchanged": true,
+    "passage_is_string": true,
+    "passage_sha256": "556dbb59b242866b158f20a57e38a5eb26e1b7298870f798793143e949829b02",
+    "passage_words": 239
+  },
+  "finished_at": "2026-09-22T21:23:37.444712+00:00",
+  "latency_seconds": 5.8988,
+  "usage_cost_upper_estimate_usd": 0.003956,
+  "stream_status": "active",
+  "budget": {
+    "usage_cost_upper_estimate_usd": 0.011256,
+    "uncertain_cost_reserve_usd": 0.0,
+    "in_flight_reserve_usd": 0.3008466,
+    "limit_usd": 5.0
+  }
+}

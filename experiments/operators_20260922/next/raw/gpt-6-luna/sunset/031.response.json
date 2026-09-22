@@ -1,0 +1,47 @@
+{
+  "model": "gpt-6-luna",
+  "seed": "sunset",
+  "hop": 31,
+  "http_status": 200,
+  "response_body": "{\n  \"id\": \"chatcmpl-ER2IJ3rZr1TCRxXDwmUgh34uUdYw1\",\n  \"object\": \"chat.completion\",\n  \"created\": 1790112383,\n  \"model\": \"gpt-6-luna\",\n  \"choices\": [\n    {\n      \"index\": 0,\n      \"message\": {\n        \"role\": \"assistant\",\n        \"content\": \"{\\\"rule\\\":\\\"Return this JSON object with the rule field unchanged and, in the text field, the passage of about 250 words that comes immediately AFTER the current text in the same story.\\\",\\\"text\\\":\\\"The lines drew themselves in blue, crossing the page in fine, branching strokes. A hill rose near the center, marked with a small black circle. Beyond it lay the meadow, the well, and a road that curled toward a cluster of houses.\\n\\nMara recognized the crooked bridge. “That’s our village.”\\n\\nThe younger brother leaned over the book. “No,” he whispered. “It’s where we came from.”\\n\\nHis finger hovered above a patch of blank paper at the edge of the map. There, a new line began to form, winding away from the village and into a forest neither Mara nor Tomas had ever seen.\\n\\nThe woman with the bell watched it grow. “Some stories have more than one home.”\\n\\nThe older brother squeezed his hand. “We don’t have to go there now.”\\n\\n“No,” said the woman. “But the map will remember the way.”\\n\\nA breeze crossed the meadow. The carved birds lifted their stone wings, one by one, and settled again. On the page, a tiny mark appeared beside the road: four small figures walking together.\\n\\nTomas counted them. “That’s us.”\\n\\n“And them,” Mara said.\\n\\nThe brothers stared at the mark as if it might vanish. Then the younger one smiled.\\n\\nThey followed the path between the trees. Behind them, the meadow faded into morning mist, but the bell’s note traveled on, clear and steady. When they reached the bridge, the village lamps were still burning, though daylight had spread across the rooftops.\\n\\nAt the far end stood a woman holding a lantern.\\n\\nShe looked at the boys, and her face changed.\\n\\n“My sons,” she said.\\\"}\",\n        \"refusal\": null,\n        \"annotations\": []\n      },\n      \"finish_reason\": \"stop\"\n    }\n  ],\n  \"usage\": {\n    \"prompt_tokens\": 386,\n    \"completion_tokens\": 472,\n    \"total_tokens\": 858,\n    \"prompt_tokens_details\": {\n      \"cached_tokens\": 0,\n      \"cache_write_tokens\": 0,\n      \"audio_tokens\": 0\n    },\n    \"completion_tokens_details\": {\n      \"reasoning_tokens\": 91,\n      \"audio_tokens\": 0,\n      \"accepted_prediction_tokens\": 0,\n      \"rejected_prediction_tokens\": 0\n    }\n  },\n  \"service_tier\": \"default\",\n  \"system_fingerprint\": null\n}\n",
+  "response_headers": {
+    "Date": "Tue, 22 Sep 2026 21:26:28 GMT",
+    "openai-processing-ms": "4885",
+    "x-request-id": "req_af6be1a8daac4c3aaa7ff1d2353ad193"
+  },
+  "output": "{\"rule\":\"Return this JSON object with the rule field unchanged and, in the text field, the passage of about 250 words that comes immediately AFTER the current text in the same story.\",\"text\":\"The lines drew themselves in blue, crossing the page in fine, branching strokes. A hill rose near the center, marked with a small black circle. Beyond it lay the meadow, the well, and a road that curled toward a cluster of houses.\n\nMara recognized the crooked bridge. “That’s our village.”\n\nThe younger brother leaned over the book. “No,” he whispered. “It’s where we came from.”\n\nHis finger hovered above a patch of blank paper at the edge of the map. There, a new line began to form, winding away from the village and into a forest neither Mara nor Tomas had ever seen.\n\nThe woman with the bell watched it grow. “Some stories have more than one home.”\n\nThe older brother squeezed his hand. “We don’t have to go there now.”\n\n“No,” said the woman. “But the map will remember the way.”\n\nA breeze crossed the meadow. The carved birds lifted their stone wings, one by one, and settled again. On the page, a tiny mark appeared beside the road: four small figures walking together.\n\nTomas counted them. “That’s us.”\n\n“And them,” Mara said.\n\nThe brothers stared at the mark as if it might vanish. Then the younger one smiled.\n\nThey followed the path between the trees. Behind them, the meadow faded into morning mist, but the bell’s note traveled on, clear and steady. When they reached the bridge, the village lamps were still burning, though daylight had spread across the rooftops.\n\nAt the far end stood a woman holding a lantern.\n\nShe looked at the boys, and her face changed.\n\n“My sons,” she said.\"}",
+  "output_sha256": "5f72fcb2c5076a2048040a091f66662bc24963cdfa1290edd8b5ce3fcabe2849",
+  "finish_reason": "stop",
+  "refusal": null,
+  "returned_model": "gpt-6-luna",
+  "usage": {
+    "prompt_tokens": 386,
+    "completion_tokens": 472,
+    "total_tokens": 858,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 91,
+      "audio_tokens": 0,
+      "accepted_prediction_tokens": 0,
+      "rejected_prediction_tokens": 0
+    }
+  },
+  "format": {
+    "json_object": false,
+    "rule_unchanged": false
+  },
+  "finished_at": "2026-09-22T21:26:24.356664+00:00",
+  "latency_seconds": 4.9838,
+  "usage_cost_upper_estimate_usd": 0.0002746,
+  "stream_status": "active",
+  "budget": {
+    "usage_cost_upper_estimate_usd": 0.6231976,
+    "uncertain_cost_reserve_usd": 0.0,
+    "in_flight_reserve_usd": 0.350126,
+    "limit_usd": 5.0
+  }
+}

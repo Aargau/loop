@@ -1,0 +1,22 @@
+{
+  "started_at": "2026-09-22T21:24:13.188806+00:00",
+  "model": "claude-opus-5-5",
+  "seed": "sunset",
+  "hop": 12,
+  "endpoint": "https://api.anthropic.com/v1/messages",
+  "body": {
+    "model": "claude-opus-5-5",
+    "messages": [
+      {
+        "role": "user",
+        "content": "That message reads like an assistant's reply, telling someone their message may have been pasted by mistake. So it may have been copied from another chat or pasted by accident.\n\nEither way, we're starting fresh. What would you like to do? For example, you could:\n\n- **Paste the text you meant to share**, if something else was on your clipboard\n- **Ask a question** or describe a problem you're working on\n- **Show me that other conversation**, if you'd like help interpreting or continuing it"
+      }
+    ],
+    "max_tokens": 4096,
+    "output_config": {
+      "effort": "low"
+    }
+  },
+  "state_sha256": "68650d03e337454e1892b48d384d08a8606adb6bbae1d8bb098c467017373ec1",
+  "reserved_cost_usd": 0.08594
+}

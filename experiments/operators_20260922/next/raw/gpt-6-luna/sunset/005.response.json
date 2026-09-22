@@ -1,0 +1,50 @@
+{
+  "model": "gpt-6-luna",
+  "seed": "sunset",
+  "hop": 5,
+  "http_status": 200,
+  "response_body": "{\n  \"id\": \"chatcmpl-ER2G0hr5Axm9vYN5pKmTKUsJcsRr5\",\n  \"object\": \"chat.completion\",\n  \"created\": 1790112240,\n  \"model\": \"gpt-6-luna\",\n  \"choices\": [\n    {\n      \"index\": 0,\n      \"message\": {\n        \"role\": \"assistant\",\n        \"content\": \"{\\\"rule\\\":\\\"Return this JSON object with the rule field unchanged and, in the text field, the passage of about 250 words that comes immediately AFTER the current text in the same story.\\\",\\\"text\\\":\\\"A bell rang once more, deep beneath the hill.\\\\n\\\\nMara turned toward the doorway. “Was that part of the story?”\\\\n\\\\nHer grandmother’s smile faded. “No.”\\\\n\\\\nThe lantern dimmed in Mara’s hand. Across the chamber, a narrow seam appeared in the stone wall. It widened with a grinding sigh, revealing steps that descended into darkness.\\\\n\\\\nFinn tugged at his coat. “Maybe the valley remembers something else.”\\\\n\\\\nFrom below came a whisper—not a name, but a tune. Mara knew it, though she had never heard it before. The notes slipped into her mind like a dream she’d forgotten upon waking.\\\\n\\\\nHer grandmother took the lantern from her. “Some doors open only when the light is carried by someone who knows the way back.”\\\\n\\\\n“I know the way,” Mara said.\\\\n\\\\n“Not every way home leads to the same place.”\\\\n\\\\nMara looked at the bright names on the iron door, then at Finn. He was pale, but he nodded. Together, they stepped toward the stairs.\\\\n\\\\nAt the first step, the lantern’s gold flame leaned downward. At the second, the tune grew clearer. And at the third, Mara saw something shining far below: a little window, no larger than a book, with a light answering from inside.\\\\n\\\\nShe gripped the handle. “Who’s down there?”\\\\n\\\\nThe whisper stopped.\\\\n\\\\nThen, from the dark, a child’s voice replied, “Someone who’s been waiting for the story to end.”\\\"}\",\n        \"refusal\": null,\n        \"annotations\": []\n      },\n      \"finish_reason\": \"stop\"\n    }\n  ],\n  \"usage\": {\n    \"prompt_tokens\": 431,\n    \"completion_tokens\": 655,\n    \"total_tokens\": 1086,\n    \"prompt_tokens_details\": {\n      \"cached_tokens\": 0,\n      \"cache_write_tokens\": 0,\n      \"audio_tokens\": 0\n    },\n    \"completion_tokens_details\": {\n      \"reasoning_tokens\": 279,\n      \"audio_tokens\": 0,\n      \"accepted_prediction_tokens\": 0,\n      \"rejected_prediction_tokens\": 0\n    }\n  },\n  \"service_tier\": \"default\",\n  \"system_fingerprint\": null\n}\n",
+  "response_headers": {
+    "Date": "Tue, 22 Sep 2026 21:24:08 GMT",
+    "openai-processing-ms": "7924",
+    "x-request-id": "req_cb7a1636345944289bb8b6b0c911446f"
+  },
+  "output": "{\"rule\":\"Return this JSON object with the rule field unchanged and, in the text field, the passage of about 250 words that comes immediately AFTER the current text in the same story.\",\"text\":\"A bell rang once more, deep beneath the hill.\\n\\nMara turned toward the doorway. “Was that part of the story?”\\n\\nHer grandmother’s smile faded. “No.”\\n\\nThe lantern dimmed in Mara’s hand. Across the chamber, a narrow seam appeared in the stone wall. It widened with a grinding sigh, revealing steps that descended into darkness.\\n\\nFinn tugged at his coat. “Maybe the valley remembers something else.”\\n\\nFrom below came a whisper—not a name, but a tune. Mara knew it, though she had never heard it before. The notes slipped into her mind like a dream she’d forgotten upon waking.\\n\\nHer grandmother took the lantern from her. “Some doors open only when the light is carried by someone who knows the way back.”\\n\\n“I know the way,” Mara said.\\n\\n“Not every way home leads to the same place.”\\n\\nMara looked at the bright names on the iron door, then at Finn. He was pale, but he nodded. Together, they stepped toward the stairs.\\n\\nAt the first step, the lantern’s gold flame leaned downward. At the second, the tune grew clearer. And at the third, Mara saw something shining far below: a little window, no larger than a book, with a light answering from inside.\\n\\nShe gripped the handle. “Who’s down there?”\\n\\nThe whisper stopped.\\n\\nThen, from the dark, a child’s voice replied, “Someone who’s been waiting for the story to end.”\"}",
+  "output_sha256": "430f81d856805b5d5ea8ea0d6d1e250078dd18b6c728138558fd5b7714858537",
+  "finish_reason": "stop",
+  "refusal": null,
+  "returned_model": "gpt-6-luna",
+  "usage": {
+    "prompt_tokens": 431,
+    "completion_tokens": 655,
+    "total_tokens": 1086,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 279,
+      "audio_tokens": 0,
+      "accepted_prediction_tokens": 0,
+      "rejected_prediction_tokens": 0
+    }
+  },
+  "format": {
+    "json_object": true,
+    "rule_unchanged": true,
+    "passage_is_string": true,
+    "passage_sha256": "aac88767d1bac7749f0bcc1cb5858423ed6711331fac16f3b2c948ab1195d6e6",
+    "passage_words": 229
+  },
+  "finished_at": "2026-09-22T21:24:04.558437+00:00",
+  "latency_seconds": 8.11,
+  "usage_cost_upper_estimate_usd": 0.0003706,
+  "stream_status": "active",
+  "budget": {
+    "usage_cost_upper_estimate_usd": 0.1221872,
+    "uncertain_cost_reserve_usd": 0.0,
+    "in_flight_reserve_usd": 0.347354,
+    "limit_usd": 5.0
+  }
+}

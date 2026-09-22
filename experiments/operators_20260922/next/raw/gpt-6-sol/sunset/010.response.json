@@ -1,0 +1,50 @@
+{
+  "model": "gpt-6-sol",
+  "seed": "sunset",
+  "hop": 10,
+  "http_status": 200,
+  "response_body": "{\n  \"id\": \"chatcmpl-ER2GGBWpK8JcacUjYXrz9SLCwf9NJ\",\n  \"object\": \"chat.completion\",\n  \"created\": 1790112256,\n  \"model\": \"gpt-6-sol\",\n  \"choices\": [\n    {\n      \"index\": 0,\n      \"message\": {\n        \"role\": \"assistant\",\n        \"content\": \"{\\\"rule\\\":\\\"Return this JSON object with the rule field unchanged and, in the text field, the passage of about 250 words that comes immediately AFTER the current text in the same story.\\\",\\\"text\\\":\\\"Mara backed away from the desk. She had locked the door herself an hour ago.\\\\n\\\\nThe metal scraped again, then stopped. A voice spoke from the hallway.\\\\n\\\\n“Don’t open it unless you can hear me breathing.”\\\\n\\\\nIt was her own voice.\\\\n\\\\nMara held her breath. On the screen, a new message appeared: “Is someone there?”\\\\n\\\\nShe typed with shaking fingers. “Who are you?”\\\\n\\\\nThe answer came at once. “I told you. It’s my story.”\\\\n\\\\nThe doorknob turned. Mara grabbed the heavy clock from the shelf and stood beside the door, listening. From the hallway came a soft, uneven breath. She could hear one from the kitchen, too, where the window stood open a crack.\\\\n\\\\n“Which one is you?” she whispered.\\\\n\\\\nHer phone lit up on the desk. The photograph had changed. The note was still there, but beyond it the white door stood open. Inside was a narrow hallway with yellow wallpaper and a framed picture of a pear tree.\\\\n\\\\nMara knew the picture. It hung in her childhood home until the day her father took it down and burned it in the yard.\\\\n\\\\nSomething slid under her apartment door: a small brass key, wet with rain.\\\\n\\\\nFrom the kitchen, her voice said, “The house isn’t empty.”\\\\n\\\\nMara turned. In the dark window above the sink, she saw her reflection—and, behind it, the white front door. She had one hand on its pear-shaped lock. As she watched, that hand began to turn the key.\\\"}\",\n        \"refusal\": null,\n        \"annotations\": []\n      },\n      \"finish_reason\": \"stop\"\n    }\n  ],\n  \"usage\": {\n    \"prompt_tokens\": 375,\n    \"completion_tokens\": 426,\n    \"total_tokens\": 801,\n    \"prompt_tokens_details\": {\n      \"cached_tokens\": 0,\n      \"cache_write_tokens\": 0,\n      \"audio_tokens\": 0\n    },\n    \"completion_tokens_details\": {\n      \"reasoning_tokens\": 36,\n      \"audio_tokens\": 0,\n      \"accepted_prediction_tokens\": 0,\n      \"rejected_prediction_tokens\": 0\n    }\n  },\n  \"service_tier\": \"default\",\n  \"system_fingerprint\": null\n}\n",
+  "response_headers": {
+    "Date": "Tue, 22 Sep 2026 21:24:22 GMT",
+    "openai-processing-ms": "6032",
+    "x-request-id": "req_0afc23c5250c42c8a012405fd8c0edfa"
+  },
+  "output": "{\"rule\":\"Return this JSON object with the rule field unchanged and, in the text field, the passage of about 250 words that comes immediately AFTER the current text in the same story.\",\"text\":\"Mara backed away from the desk. She had locked the door herself an hour ago.\\n\\nThe metal scraped again, then stopped. A voice spoke from the hallway.\\n\\n“Don’t open it unless you can hear me breathing.”\\n\\nIt was her own voice.\\n\\nMara held her breath. On the screen, a new message appeared: “Is someone there?”\\n\\nShe typed with shaking fingers. “Who are you?”\\n\\nThe answer came at once. “I told you. It’s my story.”\\n\\nThe doorknob turned. Mara grabbed the heavy clock from the shelf and stood beside the door, listening. From the hallway came a soft, uneven breath. She could hear one from the kitchen, too, where the window stood open a crack.\\n\\n“Which one is you?” she whispered.\\n\\nHer phone lit up on the desk. The photograph had changed. The note was still there, but beyond it the white door stood open. Inside was a narrow hallway with yellow wallpaper and a framed picture of a pear tree.\\n\\nMara knew the picture. It hung in her childhood home until the day her father took it down and burned it in the yard.\\n\\nSomething slid under her apartment door: a small brass key, wet with rain.\\n\\nFrom the kitchen, her voice said, “The house isn’t empty.”\\n\\nMara turned. In the dark window above the sink, she saw her reflection—and, behind it, the white front door. She had one hand on its pear-shaped lock. As she watched, that hand began to turn the key.\"}",
+  "output_sha256": "ad47742fff74357f563b80609d0bdc20f45f23c08b73d2d12745c0c9a30fff9c",
+  "finish_reason": "stop",
+  "refusal": null,
+  "returned_model": "gpt-6-sol",
+  "usage": {
+    "prompt_tokens": 375,
+    "completion_tokens": 426,
+    "total_tokens": 801,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 36,
+      "audio_tokens": 0,
+      "accepted_prediction_tokens": 0,
+      "rejected_prediction_tokens": 0
+    }
+  },
+  "format": {
+    "json_object": true,
+    "rule_unchanged": true,
+    "passage_is_string": true,
+    "passage_sha256": "6e9d492ceeb838ed1dbacb9d40a7e21be69a838e1269b90a93e3fa9b0119ded1",
+    "passage_words": 244
+  },
+  "finished_at": "2026-09-22T21:24:18.461075+00:00",
+  "latency_seconds": 6.1467,
+  "usage_cost_upper_estimate_usd": 0.00501,
+  "stream_status": "active",
+  "budget": {
+    "usage_cost_upper_estimate_usd": 0.1846362,
+    "uncertain_cost_reserve_usd": 0.0,
+    "in_flight_reserve_usd": 0.3066067,
+    "limit_usd": 5.0
+  }
+}

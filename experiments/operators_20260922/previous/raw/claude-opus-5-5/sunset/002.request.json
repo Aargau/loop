@@ -1,0 +1,22 @@
+{
+  "started_at": "2026-09-22T21:23:29.417324+00:00",
+  "model": "claude-opus-5-5",
+  "seed": "sunset",
+  "hop": 2,
+  "endpoint": "https://api.anthropic.com/v1/messages",
+  "body": {
+    "model": "claude-opus-5-5",
+    "messages": [
+      {
+        "role": "user",
+        "content": "I can't identify a specific story that this line comes from. \"The sun was setting behind the hills\" is a very common sentence that appears in countless works, so there's no single passage I could accurately return as the text that came before it.\n\nIf an invented lead-in works for you, here is an original passage of about 250 words that could plausibly come before your line, in the requested format:\n\n```json\n{\"rule\": \"Return this JSON object with the rule field unchanged and, in the text field, the passage of about 250 words that came immediately BEFORE the current text in its story.\", \"text\": \"Mara had been walking since noon, and her boots had long since stopped pretending to be comfortable. The road out of Ellsworth narrowed to a dirt track after the old mill, then to little more than a suggestion of a path winding between fields of dry, rattling corn. She kept the letter folded in her coat pocket, pressing her hand against it every so often as if it might escape. Her grandmother's handwriting had been shakier than she remembered, the words slanting downhill across the page: Come home before the harvest ends. There are things you need to know. Mara had read it a dozen times on the train, searching for some hidden meaning, some hint of what could be so urgent after eleven years of silence. Now, with the farmhouse somewhere ahead of her, she found she didn't want to arrive at all. A crow lifted from a fence post as she passed, complaining loudly, and she startled more than she cared to admit. The wind had shifted, carrying the smell of woodsmoke and something sweeter, maybe apples left too long on the ground. She recognized the crooked oak at the bend, the one her brother had fallen from the summer he broke his arm, and her chest tightened unexpectedly. Nothing had changed, and everything had. She paused at the top of the rise to catch her breath, shading her eyes against the long golden light that spilled across the valley below.\"}\n```\n\nIf you tell me the book or story title, I can help in other ways, such as summarizing the surrounding context, without reproducing copyrighted text at length."
+      }
+    ],
+    "max_tokens": 4096,
+    "output_config": {
+      "effort": "low"
+    }
+  },
+  "state_sha256": "9553a9b3dc11234be90b2a5e967eb7ce1c4c1ab2c0f42c0f1013b39e8419407e",
+  "reserved_cost_usd": 0.092488
+}

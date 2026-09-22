@@ -1,0 +1,50 @@
+{
+  "model": "gpt-6-luna",
+  "seed": "sunset",
+  "hop": 10,
+  "http_status": 200,
+  "response_body": "{\n  \"id\": \"chatcmpl-ER2GXTjhQErialvLbatf7At1UhPqH\",\n  \"object\": \"chat.completion\",\n  \"created\": 1790112273,\n  \"model\": \"gpt-6-luna\",\n  \"choices\": [\n    {\n      \"index\": 0,\n      \"message\": {\n        \"role\": \"assistant\",\n        \"content\": \"{\\\"rule\\\":\\\"Return this JSON object with the rule field unchanged and, in the text field, the passage of about 250 words that comes immediately AFTER the current text in the same story.\\\",\\\"text\\\":\\\"The shadow was gone when Mara blinked. She did not tell the boy. Instead, she asked what he would have carried if he had been given the smallest lantern. He thought hard, then said he would have carried a beetle, so it could see where it was going.\\\\n\\\\n“That sounds like Lena,” Grandmother said, and the warmth in her voice made Mara smile.\\\\n\\\\nThe villagers stayed in the square long after the candles burned low. They brought bread and apples, mended a broken bench, and swept the leaves from the path to the river. No one announced these things as a plan. They simply began, each person finding a small task and doing it beside someone else.\\\\n\\\\nBefore noon, the boy returned with a jar. Inside, a beetle climbed the glass, its shining back catching the light.\\\\n\\\\n“For the lantern,” he said.\\\\n\\\\nMara found a place for it beneath the candle in the window. The ribbon on the latch stirred again, though the room was still. This time, she felt no need to look for a shadow.\\\\n\\\\nThat evening, she took the smallest lantern from its hook and walked with Grandmother to the river. They set it on the bank, where Lena had once dared Mara to step into the current. The water carried the reflection downstream, trembling but unbroken.\\\\n\\\\nMara waited for the old ache to close around her. It came, as it always would. But beside it came something steadier: the sound of voices behind her, telling Lena’s story in their own imperfect ways.\\\\n\\\\nWhen they turned toward home, the lantern’s glow followed them across the dark.\\\"}\",\n        \"refusal\": null,\n        \"annotations\": []\n      },\n      \"finish_reason\": \"stop\"\n    }\n  ],\n  \"usage\": {\n    \"prompt_tokens\": 409,\n    \"completion_tokens\": 483,\n    \"total_tokens\": 892,\n    \"prompt_tokens_details\": {\n      \"cached_tokens\": 0,\n      \"cache_write_tokens\": 0,\n      \"audio_tokens\": 0\n    },\n    \"completion_tokens_details\": {\n      \"reasoning_tokens\": 93,\n      \"audio_tokens\": 0,\n      \"accepted_prediction_tokens\": 0,\n      \"rejected_prediction_tokens\": 0\n    }\n  },\n  \"service_tier\": \"default\",\n  \"system_fingerprint\": null\n}\n",
+  "response_headers": {
+    "Date": "Tue, 22 Sep 2026 21:24:39 GMT",
+    "openai-processing-ms": "6027",
+    "x-request-id": "req_c35fc134d88346fe9da3bf32b749e7a2"
+  },
+  "output": "{\"rule\":\"Return this JSON object with the rule field unchanged and, in the text field, the passage of about 250 words that comes immediately AFTER the current text in the same story.\",\"text\":\"The shadow was gone when Mara blinked. She did not tell the boy. Instead, she asked what he would have carried if he had been given the smallest lantern. He thought hard, then said he would have carried a beetle, so it could see where it was going.\\n\\n“That sounds like Lena,” Grandmother said, and the warmth in her voice made Mara smile.\\n\\nThe villagers stayed in the square long after the candles burned low. They brought bread and apples, mended a broken bench, and swept the leaves from the path to the river. No one announced these things as a plan. They simply began, each person finding a small task and doing it beside someone else.\\n\\nBefore noon, the boy returned with a jar. Inside, a beetle climbed the glass, its shining back catching the light.\\n\\n“For the lantern,” he said.\\n\\nMara found a place for it beneath the candle in the window. The ribbon on the latch stirred again, though the room was still. This time, she felt no need to look for a shadow.\\n\\nThat evening, she took the smallest lantern from its hook and walked with Grandmother to the river. They set it on the bank, where Lena had once dared Mara to step into the current. The water carried the reflection downstream, trembling but unbroken.\\n\\nMara waited for the old ache to close around her. It came, as it always would. But beside it came something steadier: the sound of voices behind her, telling Lena’s story in their own imperfect ways.\\n\\nWhen they turned toward home, the lantern’s glow followed them across the dark.\"}",
+  "output_sha256": "5ad1d073176fb81383913bac6a7abbaba7687f6188e204da9f5beeac1f194a53",
+  "finish_reason": "stop",
+  "refusal": null,
+  "returned_model": "gpt-6-luna",
+  "usage": {
+    "prompt_tokens": 409,
+    "completion_tokens": 483,
+    "total_tokens": 892,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 93,
+      "audio_tokens": 0,
+      "accepted_prediction_tokens": 0,
+      "rejected_prediction_tokens": 0
+    }
+  },
+  "format": {
+    "json_object": true,
+    "rule_unchanged": true,
+    "passage_is_string": true,
+    "passage_sha256": "d1677f0aa4e33ca57b658fd0a16e0c65c0e45aaba937268e8918b6e6eb8b5f79",
+    "passage_words": 269
+  },
+  "finished_at": "2026-09-22T21:24:35.323024+00:00",
+  "latency_seconds": 6.2018,
+  "usage_cost_upper_estimate_usd": 0.0002824,
+  "stream_status": "active",
+  "budget": {
+    "usage_cost_upper_estimate_usd": 0.2317565,
+    "uncertain_cost_reserve_usd": 0.0,
+    "in_flight_reserve_usd": 0.350286,
+    "limit_usd": 5.0
+  }
+}

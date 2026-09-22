@@ -1,0 +1,22 @@
+{
+  "started_at": "2026-09-22T21:28:25.941681+00:00",
+  "model": "claude-opus-5-5",
+  "seed": "sunset",
+  "hop": 32,
+  "endpoint": "https://api.anthropic.com/v1/messages",
+  "body": {
+    "model": "claude-opus-5-5",
+    "messages": [
+      {
+        "role": "user",
+        "content": "```json\n{\"rule\": \"Return this JSON object with the rule field unchanged and, in the text field, the passage of about 250 words that comes immediately AFTER the current text in the same story.\", \"text\": \"He was heavier than she had imagined a man could be. The wet wool of his coat had frozen stiff at the hem, and it dragged behind them like a sledge runner, catching on every ridge of drifted snow. His head lolled against her shoulder. She could smell the whiskey on him still, sour and sweet beneath the cold, and underneath that the smell of the pond itself, weedy and old.\\n\\nThey did not speak. The lantern stayed behind on the ice, burning its small circle into the dark, and after a while she stopped looking back at it. The house was a black shape against a blacker hill, one window lit where she had left the lamp in the kitchen. It seemed to come no closer. She counted steps to keep from thinking, lost count, began again.\\n\\nHalfway up the slope her father's feet began to move on their own, a weak, stumbling shuffle, and Leonard grunted something that might have been surprise. \\\"He's trying,\\\" Mary said. \\\"Papa, that's it. That's it.\\\"\\n\\nAt the porch steps he said her name aloud, the first word he had managed, and then he said, \\\"I'm sorry, I'm sorry,\\\" over and over, as if it were a prayer he had only half learned.\\n\\nLeonard kicked the door open. Heat rushed out at them from the stove. They laid her father on the floor before it, and Leonard stood over him, breathing hard, snow melting in his hair.\\n\\n\\\"Sorry,\\\" he said flatly. \\\"That won't plant a single acre.\\\"\"}\n```"
+      }
+    ],
+    "max_tokens": 4096,
+    "output_config": {
+      "effort": "low"
+    }
+  },
+  "state_sha256": "22def16e3a419541d65d9896ddaf172f38f41c0c0e72bf0e48d579e740a85e16",
+  "reserved_cost_usd": 0.090356
+}

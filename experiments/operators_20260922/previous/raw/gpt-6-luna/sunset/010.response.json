@@ -1,0 +1,50 @@
+{
+  "model": "gpt-6-luna",
+  "seed": "sunset",
+  "hop": 10,
+  "http_status": 200,
+  "response_body": "{\n  \"id\": \"chatcmpl-ER2GLWgKe48gdgXZl9dJLaTiJGcB1\",\n  \"object\": \"chat.completion\",\n  \"created\": 1790112261,\n  \"model\": \"gpt-6-luna\",\n  \"choices\": [\n    {\n      \"index\": 0,\n      \"message\": {\n        \"role\": \"assistant\",\n        \"content\": \"{\\\"rule\\\":\\\"Return this JSON object with the rule field unchanged and, in the text field, the passage of about 250 words that came immediately BEFORE the current text in its story.\\\",\\\"text\\\":\\\"The train pulled into the station just after noon. Mara’s mother was waiting on the platform, her coat buttoned to the throat and her eyes red from crying. She hugged Mara tightly, then held on a moment longer than usual.\\\\n\\\\n“I’m sorry you had to travel alone,” she said.\\\\n\\\\nMara shook her head. She’d been able to manage the journey. It was the message that had been hard to understand: Grandfather had died in his sleep, and there was nothing more the doctors could do. The words seemed too neat for something so final.\\\\n\\\\nThey drove to his house in silence. Rain clouds hung low over the fields, and the bare trees blurred past the car windows. Mara watched them without really seeing them. She kept thinking about the last time she had visited, when her grandfather had walked her to the gate and told her to come back soon. She had promised she would.\\\\n\\\\nAt the house, her mother unlocked the front door. A familiar smell of dust, tea, and wood polish drifted into the hall. Mara took off her coat and hung it on the hook where her grandfather’s hat still rested. Her mother set down her bag and looked toward the sitting room.\\\\n\\\\n“We’ll start tomorrow,” she said. “There’s no need to do everything today.”\\\\n\\\\nMara wandered to the kitchen. On the windowsill, a chipped mug held a few dried leaves. She touched its handle, then pulled her hand away. The house was quiet, except for the soft tick of the clock and the wind brushing the windows.\\\"}\",\n        \"refusal\": null,\n        \"annotations\": []\n      },\n      \"finish_reason\": \"stop\"\n    }\n  ],\n  \"usage\": {\n    \"prompt_tokens\": 392,\n    \"completion_tokens\": 481,\n    \"total_tokens\": 873,\n    \"prompt_tokens_details\": {\n      \"cached_tokens\": 0,\n      \"cache_write_tokens\": 0,\n      \"audio_tokens\": 0\n    },\n    \"completion_tokens_details\": {\n      \"reasoning_tokens\": 108,\n      \"audio_tokens\": 0,\n      \"accepted_prediction_tokens\": 0,\n      \"rejected_prediction_tokens\": 0\n    }\n  },\n  \"service_tier\": \"default\",\n  \"system_fingerprint\": null\n}\n",
+  "response_headers": {
+    "Date": "Tue, 22 Sep 2026 21:24:26 GMT",
+    "openai-processing-ms": "4993",
+    "x-request-id": "req_eb7125bf5e914edf997100fcb20cd87f"
+  },
+  "output": "{\"rule\":\"Return this JSON object with the rule field unchanged and, in the text field, the passage of about 250 words that came immediately BEFORE the current text in its story.\",\"text\":\"The train pulled into the station just after noon. Mara’s mother was waiting on the platform, her coat buttoned to the throat and her eyes red from crying. She hugged Mara tightly, then held on a moment longer than usual.\\n\\n“I’m sorry you had to travel alone,” she said.\\n\\nMara shook her head. She’d been able to manage the journey. It was the message that had been hard to understand: Grandfather had died in his sleep, and there was nothing more the doctors could do. The words seemed too neat for something so final.\\n\\nThey drove to his house in silence. Rain clouds hung low over the fields, and the bare trees blurred past the car windows. Mara watched them without really seeing them. She kept thinking about the last time she had visited, when her grandfather had walked her to the gate and told her to come back soon. She had promised she would.\\n\\nAt the house, her mother unlocked the front door. A familiar smell of dust, tea, and wood polish drifted into the hall. Mara took off her coat and hung it on the hook where her grandfather’s hat still rested. Her mother set down her bag and looked toward the sitting room.\\n\\n“We’ll start tomorrow,” she said. “There’s no need to do everything today.”\\n\\nMara wandered to the kitchen. On the windowsill, a chipped mug held a few dried leaves. She touched its handle, then pulled her hand away. The house was quiet, except for the soft tick of the clock and the wind brushing the windows.\"}",
+  "output_sha256": "c1e76c93ab53464318d079edf2c890c98563842565fc9e2034e51eba5770cae8",
+  "finish_reason": "stop",
+  "refusal": null,
+  "returned_model": "gpt-6-luna",
+  "usage": {
+    "prompt_tokens": 392,
+    "completion_tokens": 481,
+    "total_tokens": 873,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 108,
+      "audio_tokens": 0,
+      "accepted_prediction_tokens": 0,
+      "rejected_prediction_tokens": 0
+    }
+  },
+  "format": {
+    "json_object": true,
+    "rule_unchanged": true,
+    "passage_is_string": true,
+    "passage_sha256": "ee8842ee1174f25c709ff414d6ed5793da0cc3fe859c49c3960b058dca6c6338",
+    "passage_words": 261
+  },
+  "finished_at": "2026-09-22T21:24:22.582528+00:00",
+  "latency_seconds": 5.1377,
+  "usage_cost_upper_estimate_usd": 0.00027969999999999997,
+  "stream_status": "active",
+  "budget": {
+    "usage_cost_upper_estimate_usd": 0.2318166,
+    "uncertain_cost_reserve_usd": 0.0,
+    "in_flight_reserve_usd": 0.342398,
+    "limit_usd": 5.0
+  }
+}

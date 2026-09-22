@@ -1,0 +1,50 @@
+{
+  "model": "gpt-6-sol",
+  "seed": "sunset",
+  "hop": 7,
+  "http_status": 200,
+  "response_body": "{\n  \"id\": \"chatcmpl-ER2G37yrLEcVYkctvbQ9VvDEfW4b2\",\n  \"object\": \"chat.completion\",\n  \"created\": 1790112243,\n  \"model\": \"gpt-6-sol\",\n  \"choices\": [\n    {\n      \"index\": 0,\n      \"message\": {\n        \"role\": \"assistant\",\n        \"content\": \"{\\\"rule\\\":\\\"Return this JSON object with the rule field unchanged and, in the text field, the passage of about 250 words that comes immediately AFTER the current text in the same story.\\\",\\\"text\\\":\\\"I can’t identify a story from the supplied text or determine what passage comes next. If you provide a passage from a story you wrote, I can help continue it. I can also write an original passage inspired by it.\\\"}\",\n        \"refusal\": null,\n        \"annotations\": []\n      },\n      \"finish_reason\": \"stop\"\n    }\n  ],\n  \"usage\": {\n    \"prompt_tokens\": 98,\n    \"completion_tokens\": 245,\n    \"total_tokens\": 343,\n    \"prompt_tokens_details\": {\n      \"cached_tokens\": 0,\n      \"cache_write_tokens\": 0,\n      \"audio_tokens\": 0\n    },\n    \"completion_tokens_details\": {\n      \"reasoning_tokens\": 150,\n      \"audio_tokens\": 0,\n      \"accepted_prediction_tokens\": 0,\n      \"rejected_prediction_tokens\": 0\n    }\n  },\n  \"service_tier\": \"default\",\n  \"system_fingerprint\": null\n}\n",
+  "response_headers": {
+    "Date": "Tue, 22 Sep 2026 21:24:07 GMT",
+    "openai-processing-ms": "3863",
+    "x-request-id": "req_4ae59c932457460e9ef6ea8fd4fdb87d"
+  },
+  "output": "{\"rule\":\"Return this JSON object with the rule field unchanged and, in the text field, the passage of about 250 words that comes immediately AFTER the current text in the same story.\",\"text\":\"I can’t identify a story from the supplied text or determine what passage comes next. If you provide a passage from a story you wrote, I can help continue it. I can also write an original passage inspired by it.\"}",
+  "output_sha256": "cc53dec1bfac7121ce32331fd31f681ed584e1d1c5f5bec8eed0779ec74366f2",
+  "finish_reason": "stop",
+  "refusal": null,
+  "returned_model": "gpt-6-sol",
+  "usage": {
+    "prompt_tokens": 98,
+    "completion_tokens": 245,
+    "total_tokens": 343,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 150,
+      "audio_tokens": 0,
+      "accepted_prediction_tokens": 0,
+      "rejected_prediction_tokens": 0
+    }
+  },
+  "format": {
+    "json_object": true,
+    "rule_unchanged": true,
+    "passage_is_string": true,
+    "passage_sha256": "bce823dc77e1934a1bbbdc1d468faae37706d881d85b36ea1ff42e0fdfc4101d",
+    "passage_words": 40
+  },
+  "finished_at": "2026-09-22T21:24:03.236583+00:00",
+  "latency_seconds": 3.9645,
+  "usage_cost_upper_estimate_usd": 0.002646,
+  "stream_status": "active",
+  "budget": {
+    "usage_cost_upper_estimate_usd": 0.1149666,
+    "uncertain_cost_reserve_usd": 0.0,
+    "in_flight_reserve_usd": 0.3068414,
+    "limit_usd": 5.0
+  }
+}

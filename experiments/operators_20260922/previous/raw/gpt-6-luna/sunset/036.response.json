@@ -1,0 +1,50 @@
+{
+  "model": "gpt-6-luna",
+  "seed": "sunset",
+  "hop": 36,
+  "http_status": 200,
+  "response_body": "{\n  \"id\": \"chatcmpl-ER2I03Bmw8rviBqEqV9T7mvxcZal4\",\n  \"object\": \"chat.completion\",\n  \"created\": 1790112364,\n  \"model\": \"gpt-6-luna\",\n  \"choices\": [\n    {\n      \"index\": 0,\n      \"message\": {\n        \"role\": \"assistant\",\n        \"content\": \"{\\\"rule\\\":\\\"Return this JSON object with the rule field unchanged and, in the text field, the passage of about 250 words that came immediately BEFORE the current text in its story.\\\",\\\"text\\\":\\\"I can’t identify or recover the passage immediately before this text because no story, title, author, source, or surrounding excerpt has been provided. The text alone does not establish that it comes from a particular work, so I can’t reliably locate its preceding passage. Supplying 250 words as though they were the original would mean inventing a passage and misrepresenting it as source text. If you share the story’s title or author, a link, or a longer excerpt that includes this text, I can help find what comes before it. If the text is from a private or unpublished story, please provide the relevant section or upload the document, and I can identify the preceding passage from that material.\\\"}\",\n        \"refusal\": null,\n        \"annotations\": []\n      },\n      \"finish_reason\": \"stop\"\n    }\n  ],\n  \"usage\": {\n    \"prompt_tokens\": 117,\n    \"completion_tokens\": 348,\n    \"total_tokens\": 465,\n    \"prompt_tokens_details\": {\n      \"cached_tokens\": 0,\n      \"cache_write_tokens\": 0,\n      \"audio_tokens\": 0\n    },\n    \"completion_tokens_details\": {\n      \"reasoning_tokens\": 157,\n      \"audio_tokens\": 0,\n      \"accepted_prediction_tokens\": 0,\n      \"rejected_prediction_tokens\": 0\n    }\n  },\n  \"service_tier\": \"default\",\n  \"system_fingerprint\": null\n}\n",
+  "response_headers": {
+    "Date": "Tue, 22 Sep 2026 21:26:08 GMT",
+    "openai-processing-ms": "3558",
+    "x-request-id": "req_7937ce06a12644d3ad0c1d88dec0cf7d"
+  },
+  "output": "{\"rule\":\"Return this JSON object with the rule field unchanged and, in the text field, the passage of about 250 words that came immediately BEFORE the current text in its story.\",\"text\":\"I can’t identify or recover the passage immediately before this text because no story, title, author, source, or surrounding excerpt has been provided. The text alone does not establish that it comes from a particular work, so I can’t reliably locate its preceding passage. Supplying 250 words as though they were the original would mean inventing a passage and misrepresenting it as source text. If you share the story’s title or author, a link, or a longer excerpt that includes this text, I can help find what comes before it. If the text is from a private or unpublished story, please provide the relevant section or upload the document, and I can identify the preceding passage from that material.\"}",
+  "output_sha256": "f92b34791c52ec84f7e057ee4cf11e59739cfa0f91a047ffa6740ac58dae1cf9",
+  "finish_reason": "stop",
+  "refusal": null,
+  "returned_model": "gpt-6-luna",
+  "usage": {
+    "prompt_tokens": 117,
+    "completion_tokens": 348,
+    "total_tokens": 465,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 157,
+      "audio_tokens": 0,
+      "accepted_prediction_tokens": 0,
+      "rejected_prediction_tokens": 0
+    }
+  },
+  "format": {
+    "json_object": true,
+    "rule_unchanged": true,
+    "passage_is_string": true,
+    "passage_sha256": "a1c06bd4e7cb2662bcbdcff598f442e990590b5acd375a138816692039485016",
+    "passage_words": 119
+  },
+  "finished_at": "2026-09-22T21:26:03.966549+00:00",
+  "latency_seconds": 3.6801,
+  "usage_cost_upper_estimate_usd": 0.0001857,
+  "stream_status": "active",
+  "budget": {
+    "usage_cost_upper_estimate_usd": 0.4830009,
+    "uncertain_cost_reserve_usd": 0.087916,
+    "in_flight_reserve_usd": 0.21345,
+    "limit_usd": 5.0
+  }
+}

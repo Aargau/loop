@@ -1,0 +1,47 @@
+{
+  "model": "gpt-6-luna",
+  "seed": "sunset",
+  "hop": 19,
+  "http_status": 200,
+  "response_body": "{\n  \"id\": \"chatcmpl-ER2HLDhWxasnYgBm6Q5LR2eSLsSqv\",\n  \"object\": \"chat.completion\",\n  \"created\": 1790112323,\n  \"model\": \"gpt-6-luna\",\n  \"choices\": [\n    {\n      \"index\": 0,\n      \"message\": {\n        \"role\": \"assistant\",\n        \"content\": \"{\\\"rule\\\":\\\"Return this JSON object with the rule field unchanged and, in the text field, the passage of about 250 words that comes immediately AFTER the current text in the same story.\\\",\\\"text\\\":\\\"One autumn morning, a girl from a distant village arrived at the square carrying a small wooden box. She had followed the music for three days, she said, but she could not tell whether it came from the road ahead or from somewhere inside her.\\n\\nThe townspeople made room for her beside the fountain. Mara, now older, brought down the little book from its shelf and opened it to a blank page.\\n\\n“What do you hear?” she asked.\\n\\nThe girl listened. At first, there was only the splash of water and the creak of a cart passing over the stones. Then the baker tapped a spoon against his window, and the shepherd answered with a phrase on his flute. A child clapped twice. The girl opened her box and drew out a small wooden bird.\\n\\nShe turned its key. The bird sang a clear, trembling note.\\n\\nEveryone paused. It was unlike any part of the old tune, yet somehow it seemed to belong. Mara passed the book to the girl, who drew a tiny bird in the margin and wrote the note beneath it.\\n\\nThat evening, the new sound traveled through the square and out along the roads. It crossed the fields, slipped through open windows, and found its way into unfamiliar dreams.\\n\\nIn the morning, the girl set off for home. The townspeople waved as she went, and the music followed—not to keep her there, but to show her the way.\\n\\nMara watched until the road was empty. Then she turned back to the fountain, where someone was already humming a tune no one had heard before.\\\"}\",\n        \"refusal\": null,\n        \"annotations\": []\n      },\n      \"finish_reason\": \"stop\"\n    }\n  ],\n  \"usage\": {\n    \"prompt_tokens\": 390,\n    \"completion_tokens\": 438,\n    \"total_tokens\": 828,\n    \"prompt_tokens_details\": {\n      \"cached_tokens\": 0,\n      \"cache_write_tokens\": 0,\n      \"audio_tokens\": 0\n    },\n    \"completion_tokens_details\": {\n      \"reasoning_tokens\": 75,\n      \"audio_tokens\": 0,\n      \"accepted_prediction_tokens\": 0,\n      \"rejected_prediction_tokens\": 0\n    }\n  },\n  \"service_tier\": \"default\",\n  \"system_fingerprint\": null\n}\n",
+  "response_headers": {
+    "Date": "Tue, 22 Sep 2026 21:25:27 GMT",
+    "openai-processing-ms": "4090",
+    "x-request-id": "req_f9d3e6eeca844485a0e0c3dc05815e61"
+  },
+  "output": "{\"rule\":\"Return this JSON object with the rule field unchanged and, in the text field, the passage of about 250 words that comes immediately AFTER the current text in the same story.\",\"text\":\"One autumn morning, a girl from a distant village arrived at the square carrying a small wooden box. She had followed the music for three days, she said, but she could not tell whether it came from the road ahead or from somewhere inside her.\n\nThe townspeople made room for her beside the fountain. Mara, now older, brought down the little book from its shelf and opened it to a blank page.\n\n“What do you hear?” she asked.\n\nThe girl listened. At first, there was only the splash of water and the creak of a cart passing over the stones. Then the baker tapped a spoon against his window, and the shepherd answered with a phrase on his flute. A child clapped twice. The girl opened her box and drew out a small wooden bird.\n\nShe turned its key. The bird sang a clear, trembling note.\n\nEveryone paused. It was unlike any part of the old tune, yet somehow it seemed to belong. Mara passed the book to the girl, who drew a tiny bird in the margin and wrote the note beneath it.\n\nThat evening, the new sound traveled through the square and out along the roads. It crossed the fields, slipped through open windows, and found its way into unfamiliar dreams.\n\nIn the morning, the girl set off for home. The townspeople waved as she went, and the music followed—not to keep her there, but to show her the way.\n\nMara watched until the road was empty. Then she turned back to the fountain, where someone was already humming a tune no one had heard before.\"}",
+  "output_sha256": "c7126c0ff611de86dd801d72169458f3ae0f030161ece54a6dbc8f8084c6d078",
+  "finish_reason": "stop",
+  "refusal": null,
+  "returned_model": "gpt-6-luna",
+  "usage": {
+    "prompt_tokens": 390,
+    "completion_tokens": 438,
+    "total_tokens": 828,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 75,
+      "audio_tokens": 0,
+      "accepted_prediction_tokens": 0,
+      "rejected_prediction_tokens": 0
+    }
+  },
+  "format": {
+    "json_object": false,
+    "rule_unchanged": false
+  },
+  "finished_at": "2026-09-22T21:25:23.348140+00:00",
+  "latency_seconds": 4.199,
+  "usage_cost_upper_estimate_usd": 0.000258,
+  "stream_status": "active",
+  "budget": {
+    "usage_cost_upper_estimate_usd": 0.3987648,
+    "uncertain_cost_reserve_usd": 0.0,
+    "in_flight_reserve_usd": 0.350128,
+    "limit_usd": 5.0
+  }
+}

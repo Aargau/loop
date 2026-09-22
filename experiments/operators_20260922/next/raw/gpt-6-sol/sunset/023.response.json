@@ -1,0 +1,50 @@
+{
+  "model": "gpt-6-sol",
+  "seed": "sunset",
+  "hop": 23,
+  "http_status": 200,
+  "response_body": "{\n  \"id\": \"chatcmpl-ER2HgfszUFkZ0R8WsPycKDweDp3hq\",\n  \"object\": \"chat.completion\",\n  \"created\": 1790112344,\n  \"model\": \"gpt-6-sol\",\n  \"choices\": [\n    {\n      \"index\": 0,\n      \"message\": {\n        \"role\": \"assistant\",\n        \"content\": \"{\\\"rule\\\":\\\"Return this JSON object with the rule field unchanged and, in the text field, the passage of about 250 words that comes immediately AFTER the current text in the same story.\\\",\\\"text\\\":\\\"Mara kept one hand on the door. “I’ve never seen that photograph.”\\\\n\\\\n“No,” her grandfather said. “You haven’t taken it yet.”\\\\n\\\\nRain tapped behind her. In the hallway, nothing moved except steam rising from the cups.\\\\n\\\\nHe pointed to the spoon in the photograph. “The tree was dying. You found a place where it had already grown, dug up a little soil, and brought it back.”\\\\n\\\\n“I was six.”\\\\n\\\\n“You will be six again when you go through the other door.”\\\\n\\\\nMara looked past him. At the end of the hallway, behind the table, stood a narrow green door. She remembered its chipped paint. It had led from her grandparents’ kitchen to the garden, until they replaced it the summer she turned seven.\\\\n\\\\n“What happens if I don’t?” she asked.\\\\n\\\\n“I don’t know.” He glanced at the photograph. “This is the first time you’ve asked.”\\\\n\\\\nShe studied his face. He looked older than he had in her last memory of him, but his hands were steady around the cup. She wanted to cross the hall and sit down. Instead, she looked at the muddy spoon she held in the picture.\\\\n\\\\n“Did you know who I was?”\\\\n\\\\n“I knew you were frightened,” he said. “And that you’d come a long way for a tree.”\\\\n\\\\nMara stepped inside. The floorboards gave their familiar creak beneath her shoe. She left the door to the rainy step open and went to the table, where the second cup was still too hot to lift.\\\"}\",\n        \"refusal\": null,\n        \"annotations\": []\n      },\n      \"finish_reason\": \"stop\"\n    }\n  ],\n  \"usage\": {\n    \"prompt_tokens\": 403,\n    \"completion_tokens\": 407,\n    \"total_tokens\": 810,\n    \"prompt_tokens_details\": {\n      \"cached_tokens\": 0,\n      \"cache_write_tokens\": 0,\n      \"audio_tokens\": 0\n    },\n    \"completion_tokens_details\": {\n      \"reasoning_tokens\": 17,\n      \"audio_tokens\": 0,\n      \"accepted_prediction_tokens\": 0,\n      \"rejected_prediction_tokens\": 0\n    }\n  },\n  \"service_tier\": \"default\",\n  \"system_fingerprint\": null\n}\n",
+  "response_headers": {
+    "Date": "Tue, 22 Sep 2026 21:25:50 GMT",
+    "openai-processing-ms": "5987",
+    "x-request-id": "req_48298f714c57468489e7e1e7cbd92341"
+  },
+  "output": "{\"rule\":\"Return this JSON object with the rule field unchanged and, in the text field, the passage of about 250 words that comes immediately AFTER the current text in the same story.\",\"text\":\"Mara kept one hand on the door. “I’ve never seen that photograph.”\\n\\n“No,” her grandfather said. “You haven’t taken it yet.”\\n\\nRain tapped behind her. In the hallway, nothing moved except steam rising from the cups.\\n\\nHe pointed to the spoon in the photograph. “The tree was dying. You found a place where it had already grown, dug up a little soil, and brought it back.”\\n\\n“I was six.”\\n\\n“You will be six again when you go through the other door.”\\n\\nMara looked past him. At the end of the hallway, behind the table, stood a narrow green door. She remembered its chipped paint. It had led from her grandparents’ kitchen to the garden, until they replaced it the summer she turned seven.\\n\\n“What happens if I don’t?” she asked.\\n\\n“I don’t know.” He glanced at the photograph. “This is the first time you’ve asked.”\\n\\nShe studied his face. He looked older than he had in her last memory of him, but his hands were steady around the cup. She wanted to cross the hall and sit down. Instead, she looked at the muddy spoon she held in the picture.\\n\\n“Did you know who I was?”\\n\\n“I knew you were frightened,” he said. “And that you’d come a long way for a tree.”\\n\\nMara stepped inside. The floorboards gave their familiar creak beneath her shoe. She left the door to the rainy step open and went to the table, where the second cup was still too hot to lift.\"}",
+  "output_sha256": "773013842cd47529ca53b9f1951675edd47f3f965d3fdcb0d2fd347a2ae43d37",
+  "finish_reason": "stop",
+  "refusal": null,
+  "returned_model": "gpt-6-sol",
+  "usage": {
+    "prompt_tokens": 403,
+    "completion_tokens": 407,
+    "total_tokens": 810,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 17,
+      "audio_tokens": 0,
+      "accepted_prediction_tokens": 0,
+      "rejected_prediction_tokens": 0
+    }
+  },
+  "format": {
+    "json_object": true,
+    "rule_unchanged": true,
+    "passage_is_string": true,
+    "passage_sha256": "01de5ea12fd1d841994a9c6e42f0dd5cded3e15529cbc6cf58be2232d0397b4e",
+    "passage_words": 249
+  },
+  "finished_at": "2026-09-22T21:25:46.084386+00:00",
+  "latency_seconds": 6.103,
+  "usage_cost_upper_estimate_usd": 0.004876,
+  "stream_status": "active",
+  "budget": {
+    "usage_cost_upper_estimate_usd": 0.4911544,
+    "uncertain_cost_reserve_usd": 0.0,
+    "in_flight_reserve_usd": 0.3071018,
+    "limit_usd": 5.0
+  }
+}

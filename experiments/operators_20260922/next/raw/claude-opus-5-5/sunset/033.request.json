@@ -1,0 +1,22 @@
+{
+  "started_at": "2026-09-22T21:28:35.738372+00:00",
+  "model": "claude-opus-5-5",
+  "seed": "sunset",
+  "hop": 33,
+  "endpoint": "https://api.anthropic.com/v1/messages",
+  "body": {
+    "model": "claude-opus-5-5",
+    "messages": [
+      {
+        "role": "user",
+        "content": "```json\n{\"rule\": \"Return this JSON object with the rule field unchanged and, in the text field, the passage of about 250 words that comes immediately AFTER the current text in the same story.\", \"text\": \"Mary did not answer him. She knelt and began working at the buttons of her father's coat, but her fingers had gone numb and clumsy, and the wool was stiff as bark. Leonard watched her fumble for a moment, then crouched beside her and took out his knife. He cut the coat up the back in one long pull, the way he might have opened a feed sack, and together they peeled it away from him.\\n\\nUnderneath, her father's shirt clung to his ribs. He was shaking now, great racking shudders that knocked his heels against the floorboards, and Mary thought that was good, that shaking meant something in him was still fighting. She pulled the quilt down from the back of the rocker and wrapped it around him, tucking it under his chin as if he were a child.\\n\\n\\\"Get the kettle on,\\\" Leonard said.\\n\\nShe filled it from the bucket by the door, breaking the skin of ice with the dipper. When she turned back, Leonard had pulled off his own wet boots and was sitting with his back against the woodbox, his hands hanging between his knees. In the lamplight his face looked older than she had ever seen it, lined and gray, the face of a man who had been awake for a very long time.\\n\\n\\\"He'd have drowned,\\\" she said.\\n\\n\\\"I know it.\\\"\\n\\n\\\"If you hadn't come.\\\"\\n\\nLeonard looked at the man on the floor, then at the dark window, where the lantern on the pond had finally gone out.\\n\\n\\\"I know it,\\\" he said again.\"}\n```"
+      }
+    ],
+    "max_tokens": 4096,
+    "output_config": {
+      "effort": "low"
+    }
+  },
+  "state_sha256": "b896a5b899fbf687eea03a35191092d750f8974ee083a87a6fb8d8bdde2937ec",
+  "reserved_cost_usd": 0.090404
+}

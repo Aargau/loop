@@ -1,0 +1,50 @@
+{
+  "model": "gpt-6-sol",
+  "seed": "sunset",
+  "hop": 22,
+  "http_status": 200,
+  "response_body": "{\n  \"id\": \"chatcmpl-ER2HZbmfLtTZg54Q3qMOcrR5kLEbJ\",\n  \"object\": \"chat.completion\",\n  \"created\": 1790112337,\n  \"model\": \"gpt-6-sol\",\n  \"choices\": [\n    {\n      \"index\": 0,\n      \"message\": {\n        \"role\": \"assistant\",\n        \"content\": \"{\\\"rule\\\":\\\"Return this JSON object with the rule field unchanged and, in the text field, the passage of about 250 words that comes immediately AFTER the current text in the same story.\\\",\\\"text\\\":\\\"Mara held the key against her palm. Her grandfather had been dead for eleven years. His voice sounded just as it had on Sunday afternoons, when he pretended not to notice her stealing pears from the fruit bowl.\\\\n\\\\n“Tell me something only you would know,” she said.\\\\n\\\\nA pause. “You hated the ending where the locksmith threw the key into the sea. You said keys didn’t float.”\\\\n\\\\nMara swallowed. She had been six. He had changed the ending every time after that.\\\\n\\\\n“Why is the door here?”\\\\n\\\\n“Because you asked what happened to the key.”\\\\n\\\\nShe looked toward the kitchen window. Her laptop was upstairs, its lid closed. Rain ran down the glass in crooked lines.\\\\n\\\\n“Are you really there?”\\\\n\\\\n“I am,” he said. “But I’m not alone. Open it a crack, if you like.”\\\\n\\\\nMara fitted the key into the lock. It turned easily. She pulled the door toward her until a narrow strip of lamplight fell across the wet step.\\\\n\\\\nBeyond it stood a hallway lined with coats she recognized: his brown wool one, her childhood yellow raincoat, the red jacket she had lost at fourteen. At the far end, her grandfather sat at a table with two cups of tea.\\\\n\\\\nMara reached for the door, then stopped. On the wall beside him hung a photograph of the pear tree, small and newly planted. Her grandfather was in it, smiling at the camera. Behind him stood Mara, exactly as she was now, muddy spoon in hand.\\\\n\\\\nHe followed her gaze. “That,” he said gently, “is the part I need to explain.”\\\"}\",\n        \"refusal\": null,\n        \"annotations\": []\n      },\n      \"finish_reason\": \"stop\"\n    }\n  ],\n  \"usage\": {\n    \"prompt_tokens\": 385,\n    \"completion_tokens\": 422,\n    \"total_tokens\": 807,\n    \"prompt_tokens_details\": {\n      \"cached_tokens\": 0,\n      \"cache_write_tokens\": 0,\n      \"audio_tokens\": 0\n    },\n    \"completion_tokens_details\": {\n      \"reasoning_tokens\": 16,\n      \"audio_tokens\": 0,\n      \"accepted_prediction_tokens\": 0,\n      \"rejected_prediction_tokens\": 0\n    }\n  },\n  \"service_tier\": \"default\",\n  \"system_fingerprint\": null\n}\n",
+  "response_headers": {
+    "Date": "Tue, 22 Sep 2026 21:25:44 GMT",
+    "openai-processing-ms": "6585",
+    "x-request-id": "req_1c0126ef1db442da8782e6679f43a911"
+  },
+  "output": "{\"rule\":\"Return this JSON object with the rule field unchanged and, in the text field, the passage of about 250 words that comes immediately AFTER the current text in the same story.\",\"text\":\"Mara held the key against her palm. Her grandfather had been dead for eleven years. His voice sounded just as it had on Sunday afternoons, when he pretended not to notice her stealing pears from the fruit bowl.\\n\\n“Tell me something only you would know,” she said.\\n\\nA pause. “You hated the ending where the locksmith threw the key into the sea. You said keys didn’t float.”\\n\\nMara swallowed. She had been six. He had changed the ending every time after that.\\n\\n“Why is the door here?”\\n\\n“Because you asked what happened to the key.”\\n\\nShe looked toward the kitchen window. Her laptop was upstairs, its lid closed. Rain ran down the glass in crooked lines.\\n\\n“Are you really there?”\\n\\n“I am,” he said. “But I’m not alone. Open it a crack, if you like.”\\n\\nMara fitted the key into the lock. It turned easily. She pulled the door toward her until a narrow strip of lamplight fell across the wet step.\\n\\nBeyond it stood a hallway lined with coats she recognized: his brown wool one, her childhood yellow raincoat, the red jacket she had lost at fourteen. At the far end, her grandfather sat at a table with two cups of tea.\\n\\nMara reached for the door, then stopped. On the wall beside him hung a photograph of the pear tree, small and newly planted. Her grandfather was in it, smiling at the camera. Behind him stood Mara, exactly as she was now, muddy spoon in hand.\\n\\nHe followed her gaze. “That,” he said gently, “is the part I need to explain.”\"}",
+  "output_sha256": "e40ea03c3a855b666893950a82cc011b5889c1b13bf1fc8ede1955d57b3bea84",
+  "finish_reason": "stop",
+  "refusal": null,
+  "returned_model": "gpt-6-sol",
+  "usage": {
+    "prompt_tokens": 385,
+    "completion_tokens": 422,
+    "total_tokens": 807,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 16,
+      "audio_tokens": 0,
+      "accepted_prediction_tokens": 0,
+      "rejected_prediction_tokens": 0
+    }
+  },
+  "format": {
+    "json_object": true,
+    "rule_unchanged": true,
+    "passage_is_string": true,
+    "passage_sha256": "388f49c06b324be1b9aae33283948a7d11932653e155461f497d9cbf8b216170",
+    "passage_words": 263
+  },
+  "finished_at": "2026-09-22T21:25:39.976137+00:00",
+  "latency_seconds": 6.694,
+  "usage_cost_upper_estimate_usd": 0.00499,
+  "stream_status": "active",
+  "budget": {
+    "usage_cost_upper_estimate_usd": 0.4648236,
+    "uncertain_cost_reserve_usd": 0.0,
+    "in_flight_reserve_usd": 0.3071012,
+    "limit_usd": 5.0
+  }
+}

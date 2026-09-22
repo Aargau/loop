@@ -1,0 +1,22 @@
+{
+  "started_at": "2026-09-22T21:25:41.299444+00:00",
+  "model": "claude-opus-5-5",
+  "seed": "sunset",
+  "hop": 15,
+  "endpoint": "https://api.anthropic.com/v1/messages",
+  "body": {
+    "model": "claude-opus-5-5",
+    "messages": [
+      {
+        "role": "user",
+        "content": "```json\n{\"rule\": \"Return this JSON object with the rule field unchanged and, in the text field, the passage of about 250 words that comes immediately AFTER the current text in the same story.\", \"text\": \"She didn't stop. Stopping would be the thing they'd see. Instead she straightened slowly, pressing her elbow tight against her side as if she had a stitch, and the page caught somewhere below her belt and held.\\n\\n\\\"You're a quiet one,\\\" said the man in the gray coat. He was watching her now. Not her face. Her arm.\\n\\n\\\"She's shy,\\\" Mama said.\\n\\n\\\"I'm not,\\\" Mara said, before she could help it, and then, because that was worse, she added, \\\"I just don't like peaches.\\\"\\n\\nThat made him smile, a small smile that stayed mostly in his mouth. \\\"Then who are they for?\\\"\\n\\nThe kitchen went very still. Out in the yard the pump handle creaked in the wind, the way it did when no one had latched it. Leonard turned from the window.\\n\\nMara looked at the blue bowl. The syrup had gone over last, the way it always did, the way it would for someone who would come in from the barn and sit at the end of the table and say *well, now* before he picked up his spoon.\\n\\n\\\"For company,\\\" Mama said. \\\"We always put out something sweet for company.\\\"\\n\\nThe man in the gray coat considered this. Then he pulled the bowl toward himself and took a slice with his fingers, and ate it, and licked the syrup from his thumb.\\n\\n\\\"Kind of you,\\\" he said. \\\"Now, Mara. Why don't you sit down next to me, and show me what you've got under that shirt.\\\"\"}\n```"
+      }
+    ],
+    "max_tokens": 4096,
+    "output_config": {
+      "effort": "low"
+    }
+  },
+  "state_sha256": "618df651b89a0a3565a4ba4f69232c3fdd1711a85f838f123b8332b4b34886ed",
+  "reserved_cost_usd": 0.090152
+}

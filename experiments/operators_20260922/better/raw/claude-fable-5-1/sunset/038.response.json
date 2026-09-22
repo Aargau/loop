@@ -1,0 +1,48 @@
+{
+  "model": "claude-fable-5-1",
+  "seed": "sunset",
+  "hop": 38,
+  "http_status": 200,
+  "response_body": "{\"model\":\"claude-fable-5-1\",\"id\":\"msg_011CfKCE5JoGe4v9AQgMhLyn\",\"type\":\"message\",\"role\":\"assistant\",\"content\":[{\"type\":\"text\",\"text\":\"{\\\"rule\\\": \\\"Return this JSON object with the rule field unchanged and, in the text field, a better version of the current text.\\\", \\\"text\\\": \\\"The sun slipped behind the hills, spilling molten gold along the rim of the sky. Slowly the light cooled to ash. Darkness pooled in the hollows the way water finds its level—the low places first, then the fields, then everything—until the hills were only a deeper shade of night and the first stars stood out like sparks the day had forgotten to put out. Somewhere below, a dog barked once and thought better of it. The silence that followed had weight: the settled weight of a house after the last door has closed, when the walls seem to exhale and then, listening, hold their breath. Nothing moved. The hills kept their shape only by memory, and the road, pale a moment ago, gave itself up to the grass.\\\"}\"}],\"container\":null,\"stop_reason\":\"end_turn\",\"stop_sequence\":null,\"stop_details\":null,\"usage\":{\"input_tokens\":231,\"cache_creation_input_tokens\":0,\"cache_read_input_tokens\":0,\"cache_creation\":{\"ephemeral_5m_input_tokens\":0,\"ephemeral_1h_input_tokens\":0},\"output_tokens\":267,\"output_tokens_details\":{\"thinking_tokens\":0},\"service_tier\":\"standard\",\"inference_geo\":\"global\"}}",
+  "response_headers": {
+    "Date": "Tue, 22 Sep 2026 21:33:24 GMT",
+    "request-id": "req_011CfKCE4Wv2paZzZM1Mwqc6"
+  },
+  "output": "{\"rule\": \"Return this JSON object with the rule field unchanged and, in the text field, a better version of the current text.\", \"text\": \"The sun slipped behind the hills, spilling molten gold along the rim of the sky. Slowly the light cooled to ash. Darkness pooled in the hollows the way water finds its level—the low places first, then the fields, then everything—until the hills were only a deeper shade of night and the first stars stood out like sparks the day had forgotten to put out. Somewhere below, a dog barked once and thought better of it. The silence that followed had weight: the settled weight of a house after the last door has closed, when the walls seem to exhale and then, listening, hold their breath. Nothing moved. The hills kept their shape only by memory, and the road, pale a moment ago, gave itself up to the grass.\"}",
+  "output_sha256": "e54f4f85c9da17b073f5f89c2aa7f0e4b4f598c136c15b525dc6c2691cf027ba",
+  "finish_reason": "end_turn",
+  "refusal": null,
+  "returned_model": "claude-fable-5-1",
+  "usage": {
+    "input_tokens": 231,
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 0,
+    "cache_creation": {
+      "ephemeral_5m_input_tokens": 0,
+      "ephemeral_1h_input_tokens": 0
+    },
+    "output_tokens": 267,
+    "output_tokens_details": {
+      "thinking_tokens": 0
+    },
+    "service_tier": "standard",
+    "inference_geo": "global"
+  },
+  "format": {
+    "json_object": true,
+    "rule_unchanged": true,
+    "passage_is_string": true,
+    "passage_sha256": "6ad8d23d95bdb1ad6252d853e24fb1b5916e7a87821f29b16f50f35385e0b984",
+    "passage_words": 128
+  },
+  "finished_at": "2026-09-22T21:33:20.659862+00:00",
+  "latency_seconds": 5.8368,
+  "usage_cost_upper_estimate_usd": 0.01566,
+  "stream_status": "active",
+  "budget": {
+    "usage_cost_upper_estimate_usd": 0.6006976,
+    "uncertain_cost_reserve_usd": 0.0,
+    "in_flight_reserve_usd": -0.0,
+    "limit_usd": 5.0
+  }
+}

@@ -1,0 +1,22 @@
+{
+  "started_at": "2026-09-22T21:24:26.221450+00:00",
+  "model": "claude-opus-5-5",
+  "seed": "sunset",
+  "hop": 15,
+  "endpoint": "https://api.anthropic.com/v1/messages",
+  "body": {
+    "model": "claude-opus-5-5",
+    "messages": [
+      {
+        "role": "user",
+        "content": "Your message reads like an assistant's reply too, one about *me* sending a mixed-up paste. But this is the start of our conversation, and I haven't sent anything before this, so it looks like the text came from somewhere else, maybe another chat window or your clipboard.\n\nNo harm done. What would you like to do?\n\n- **Share what you meant to send**, if something else was supposed to be in your clipboard\n- **Start fresh** with a question or task\n- **Tell me what's going on**, if you're experimenting with how I handle recursive or confusing messages (happy to play along or discuss it)"
+      }
+    ],
+    "max_tokens": 4096,
+    "output_config": {
+      "effort": "low"
+    }
+  },
+  "state_sha256": "8cf67ab9c8962b4633ddd3b090b71b248bfba225129f25ee8f592ee8400de6f5",
+  "reserved_cost_usd": 0.08632
+}

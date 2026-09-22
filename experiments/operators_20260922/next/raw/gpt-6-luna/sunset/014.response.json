@@ -1,0 +1,50 @@
+{
+  "model": "gpt-6-luna",
+  "seed": "sunset",
+  "hop": 14,
+  "http_status": 200,
+  "response_body": "{\n  \"id\": \"chatcmpl-ER2GvvLoMCVRRY1znpnmwo7lmbabV\",\n  \"object\": \"chat.completion\",\n  \"created\": 1790112297,\n  \"model\": \"gpt-6-luna\",\n  \"choices\": [\n    {\n      \"index\": 0,\n      \"message\": {\n        \"role\": \"assistant\",\n        \"content\": \"{\\\"rule\\\":\\\"Return this JSON object with the rule field unchanged and, in the text field, the passage of about 250 words that comes immediately AFTER the current text in the same story.\\\",\\\"text\\\":\\\"The note wandered down the lane, light as a leaf. A boy carrying a basket heard it and added a harmony. At the well, the baker’s wife caught the tune and tapped its rhythm against her pail. By the time the girl reached the square, the song had gathered three new voices and a clap of hands.\\\\n\\\\nMara stayed by the window, smiling. Grandmother rested one hand on the shell, as if it could hear the music traveling past.\\\\n\\\\nThat evening, the girl came back alone. She held out a silver button, bright against her small palm.\\\\n\\\\n“I found it by the old fountain,” she said. “Do you know whose it is?”\\\\n\\\\nMara recognized the button from her apron pocket. Somehow, it had slipped free while she was sweeping. She took it gently, then looked at the girl.\\\\n\\\\n“Perhaps it belongs to whoever needs it next,” she said.\\\\n\\\\nThe girl considered this. “Could I keep it until I find someone?”\\\\n\\\\n“Of course.”\\\\n\\\\nShe tied the button to a blue thread and wore it around her wrist. Before running home, she sang the first note once more. This time, Mara did not join in. She listened as the girl carried the tune into the dusk, where other voices waited to catch it.\\\\n\\\\nWhen the house grew quiet, Grandmother asked whether Mara missed the song being theirs alone.\\\\n\\\\nMara turned the shell toward the open window. Outside, someone was humming—almost the tune, but not quite.\\\\n\\\\n“No,” she said. “I think it was only ever passing through.”\\\"}\",\n        \"refusal\": null,\n        \"annotations\": []\n      },\n      \"finish_reason\": \"stop\"\n    }\n  ],\n  \"usage\": {\n    \"prompt_tokens\": 378,\n    \"completion_tokens\": 461,\n    \"total_tokens\": 839,\n    \"prompt_tokens_details\": {\n      \"cached_tokens\": 0,\n      \"cache_write_tokens\": 0,\n      \"audio_tokens\": 0\n    },\n    \"completion_tokens_details\": {\n      \"reasoning_tokens\": 74,\n      \"audio_tokens\": 0,\n      \"accepted_prediction_tokens\": 0,\n      \"rejected_prediction_tokens\": 0\n    }\n  },\n  \"service_tier\": \"default\",\n  \"system_fingerprint\": null\n}\n",
+  "response_headers": {
+    "Date": "Tue, 22 Sep 2026 21:25:02 GMT",
+    "openai-processing-ms": "5826",
+    "x-request-id": "req_2cf2c21eafef4a06879ac213f7b58e94"
+  },
+  "output": "{\"rule\":\"Return this JSON object with the rule field unchanged and, in the text field, the passage of about 250 words that comes immediately AFTER the current text in the same story.\",\"text\":\"The note wandered down the lane, light as a leaf. A boy carrying a basket heard it and added a harmony. At the well, the baker’s wife caught the tune and tapped its rhythm against her pail. By the time the girl reached the square, the song had gathered three new voices and a clap of hands.\\n\\nMara stayed by the window, smiling. Grandmother rested one hand on the shell, as if it could hear the music traveling past.\\n\\nThat evening, the girl came back alone. She held out a silver button, bright against her small palm.\\n\\n“I found it by the old fountain,” she said. “Do you know whose it is?”\\n\\nMara recognized the button from her apron pocket. Somehow, it had slipped free while she was sweeping. She took it gently, then looked at the girl.\\n\\n“Perhaps it belongs to whoever needs it next,” she said.\\n\\nThe girl considered this. “Could I keep it until I find someone?”\\n\\n“Of course.”\\n\\nShe tied the button to a blue thread and wore it around her wrist. Before running home, she sang the first note once more. This time, Mara did not join in. She listened as the girl carried the tune into the dusk, where other voices waited to catch it.\\n\\nWhen the house grew quiet, Grandmother asked whether Mara missed the song being theirs alone.\\n\\nMara turned the shell toward the open window. Outside, someone was humming—almost the tune, but not quite.\\n\\n“No,” she said. “I think it was only ever passing through.”\"}",
+  "output_sha256": "f6c227cf14415e5bddfaa3cb76feb33c2fe1eac61beaedadde8116bd8d9cce3f",
+  "finish_reason": "stop",
+  "refusal": null,
+  "returned_model": "gpt-6-luna",
+  "usage": {
+    "prompt_tokens": 378,
+    "completion_tokens": 461,
+    "total_tokens": 839,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 74,
+      "audio_tokens": 0,
+      "accepted_prediction_tokens": 0,
+      "rejected_prediction_tokens": 0
+    }
+  },
+  "format": {
+    "json_object": true,
+    "rule_unchanged": true,
+    "passage_is_string": true,
+    "passage_sha256": "a9926c77aa97f48121badea93df9eeafb37f30118cca9a79b06fcf96130da633",
+    "passage_words": 254
+  },
+  "finished_at": "2026-09-22T21:24:58.719453+00:00",
+  "latency_seconds": 5.9411,
+  "usage_cost_upper_estimate_usd": 0.0002683,
+  "stream_status": "active",
+  "budget": {
+    "usage_cost_upper_estimate_usd": 0.3135497,
+    "uncertain_cost_reserve_usd": 0.0,
+    "in_flight_reserve_usd": 0.350624,
+    "limit_usd": 5.0
+  }
+}

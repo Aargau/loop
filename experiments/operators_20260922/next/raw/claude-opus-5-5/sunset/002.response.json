@@ -1,0 +1,45 @@
+{
+  "model": "claude-opus-5-5",
+  "seed": "sunset",
+  "hop": 2,
+  "http_status": 200,
+  "response_body": "{\"model\":\"claude-opus-5-5\",\"id\":\"msg_011CfKBVjSXaTHn5r9ykZjmy\",\"type\":\"message\",\"role\":\"assistant\",\"content\":[{\"type\":\"text\",\"text\":\"```json\\n{\\\"rule\\\": \\\"Return this JSON object with the rule field unchanged and, in the text field, the passage of about 250 words that comes immediately AFTER the current text in the same story.\\\", \\\"text\\\": \\\"Mara's breath caught. She gripped the porch railing so hard the old paint flaked beneath her fingers. \\\\\\\"Grandma.\\\\\\\"\\\\n\\\\n\\\\\\\"I see them.\\\\\\\" The rocking chair went still.\\\\n\\\\nThe lights swung around the last bend and slowed at the mouth of the gravel drive. It wasn't the bus. It was a pickup, dented and dark blue, its engine rattling like a pocketful of loose change. For a terrible moment Mara thought it was only a neighbor, someone lost or passing through. Then the driver's door opened, and a tall figure unfolded from the cab.\\\\n\\\\nHe stood there in the glow of the headlights, broader through the shoulders than she remembered, his hair cut short. He wore a canvas jacket she had never seen before. But when he lifted one hand and waved, a small, uncertain wave, the same crooked wave from the back of the bus, she knew him instantly.\\\\n\\\\n\\\\\\\"Eli,\\\\\\\" she whispered, and then she was running.\\\\n\\\\nThe porch steps vanished beneath her feet. Gravel crunched and scattered. He caught her halfway down the drive, laughing, staggering back against the truck as she threw her arms around his neck. He smelled of motor oil and coffee and something unfamiliar, like rain on pavement.\\\\n\\\\n\\\\\\\"You're late,\\\\\\\" she said into his collar.\\\\n\\\\n\\\\\\\"Bus broke down in Harlow. Bought this heap off a mechanic instead.\\\\\\\" He pulled back to look at her. \\\\\\\"Look at you. You got tall.\\\\\\\"\\\\n\\\\nBehind them, their grandmother had reached the bottom step, her apron pressed to her mouth. Eli let go of Mara slowly and walked toward her, and for a long moment nobody said anything at all.\\\"}\\n```\"}],\"container\":null,\"stop_reason\":\"end_turn\",\"stop_sequence\":null,\"stop_details\":null,\"usage\":{\"input_tokens\":574,\"cache_creation_input_tokens\":0,\"cache_read_input_tokens\":0,\"cache_creation\":{\"ephemeral_5m_input_tokens\":0,\"ephemeral_1h_input_tokens\":0},\"output_tokens\":634,\"output_tokens_details\":{\"thinking_tokens\":0},\"service_tier\":\"standard\",\"inference_geo\":\"global\"}}",
+  "response_headers": {
+    "Date": "Tue, 22 Sep 2026 21:23:55 GMT",
+    "request-id": "req_011CfKBViyzmrHzZt7JgTCKe"
+  },
+  "output": "```json\n{\"rule\": \"Return this JSON object with the rule field unchanged and, in the text field, the passage of about 250 words that comes immediately AFTER the current text in the same story.\", \"text\": \"Mara's breath caught. She gripped the porch railing so hard the old paint flaked beneath her fingers. \\\"Grandma.\\\"\\n\\n\\\"I see them.\\\" The rocking chair went still.\\n\\nThe lights swung around the last bend and slowed at the mouth of the gravel drive. It wasn't the bus. It was a pickup, dented and dark blue, its engine rattling like a pocketful of loose change. For a terrible moment Mara thought it was only a neighbor, someone lost or passing through. Then the driver's door opened, and a tall figure unfolded from the cab.\\n\\nHe stood there in the glow of the headlights, broader through the shoulders than she remembered, his hair cut short. He wore a canvas jacket she had never seen before. But when he lifted one hand and waved, a small, uncertain wave, the same crooked wave from the back of the bus, she knew him instantly.\\n\\n\\\"Eli,\\\" she whispered, and then she was running.\\n\\nThe porch steps vanished beneath her feet. Gravel crunched and scattered. He caught her halfway down the drive, laughing, staggering back against the truck as she threw her arms around his neck. He smelled of motor oil and coffee and something unfamiliar, like rain on pavement.\\n\\n\\\"You're late,\\\" she said into his collar.\\n\\n\\\"Bus broke down in Harlow. Bought this heap off a mechanic instead.\\\" He pulled back to look at her. \\\"Look at you. You got tall.\\\"\\n\\nBehind them, their grandmother had reached the bottom step, her apron pressed to her mouth. Eli let go of Mara slowly and walked toward her, and for a long moment nobody said anything at all.\"}\n```",
+  "output_sha256": "96c7a108b3d6c248bf4ac12be3755d539596f3fa08b64d7136fd3dd877e0b4f3",
+  "finish_reason": "end_turn",
+  "refusal": null,
+  "returned_model": "claude-opus-5-5",
+  "usage": {
+    "input_tokens": 574,
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 0,
+    "cache_creation": {
+      "ephemeral_5m_input_tokens": 0,
+      "ephemeral_1h_input_tokens": 0
+    },
+    "output_tokens": 634,
+    "output_tokens_details": {
+      "thinking_tokens": 0
+    },
+    "service_tier": "standard",
+    "inference_geo": "global"
+  },
+  "format": {
+    "json_object": false,
+    "rule_unchanged": false
+  },
+  "finished_at": "2026-09-22T21:23:50.928799+00:00",
+  "latency_seconds": 10.3483,
+  "usage_cost_upper_estimate_usd": 0.014976,
+  "stream_status": "active",
+  "budget": {
+    "usage_cost_upper_estimate_usd": 0.0645026,
+    "uncertain_cost_reserve_usd": 0.0,
+    "in_flight_reserve_usd": 0.2615224,
+    "limit_usd": 5.0
+  }
+}

@@ -1,0 +1,50 @@
+{
+  "model": "gpt-6-sol",
+  "seed": "sunset",
+  "hop": 16,
+  "http_status": 200,
+  "response_body": "{\n  \"id\": \"chatcmpl-ER2GtvwqZiwSzBqHSXPckDur4dGhC\",\n  \"object\": \"chat.completion\",\n  \"created\": 1790112295,\n  \"model\": \"gpt-6-sol\",\n  \"choices\": [\n    {\n      \"index\": 0,\n      \"message\": {\n        \"role\": \"assistant\",\n        \"content\": \"{\\\"rule\\\":\\\"Return this JSON object with the rule field unchanged and, in the text field, the passage of about 250 words that comes immediately AFTER the current text in the same story.\\\",\\\"text\\\":\\\"The girl’s grip tightened. “She’s learned to knock.”\\\\n\\\\nMara looked at the hall. Beneath the door, a thin stripe of water spread across the floorboards. It smelled of rain and the rusted screen on the back porch.\\\\n\\\\n“Who’s out there?”\\\\n\\\\nThe girl shook her head. “That’s the wrong question.”\\\\n\\\\nThe key turned another quarter circle under Mara’s hand. Something clicked inside the desk. A drawer slid open, revealing a photograph curled at the edges: her father in the kitchen, holding two little girls. One wore a yellow raincoat. The other had soot on her cheek.\\\\n\\\\nMara touched the photograph. She remembered her father taking it. He had told them both to smile, though someone was knocking at the back door.\\\\n\\\\nThe cries below stopped.\\\\n\\\\nIn the sudden quiet, the reflection pressed its palm against the cracked glass. Beyond the hall door, a child’s voice said, “Mara? I’m cold.”\\\\n\\\\nThe girl beside her flinched.\\\\n\\\\nMara picked up the photograph. On its back, in her father’s hurried handwriting, were four words: Ask which one remembers.\\\\n\\\\nShe turned to the girl. “What happened after I gave away the key?”\\\\n\\\\n“I hid with you,” the girl whispered. “Under the stairs.”\\\\n\\\\n“And Dad?”\\\\n\\\\n“He came down when he heard us.”\\\\n\\\\nMara remembered the stairs: the dark space beneath them, the taste of dust, her father’s bare feet passing the door. He had gone to the kitchen first.\\\\n\\\\nThe knocking came again, this time from inside the desk.\\\\n\\\\nMara lifted the key away. At once the drawer slammed shut, trapping the photograph’s corner. The girl let go of her wrist and stared at the hall.\\\\n\\\\nFrom the other side of the door, her father said, “Now, Mara. Ask her where I went.”\\\"}\",\n        \"refusal\": null,\n        \"annotations\": []\n      },\n      \"finish_reason\": \"stop\"\n    }\n  ],\n  \"usage\": {\n    \"prompt_tokens\": 403,\n    \"completion_tokens\": 505,\n    \"total_tokens\": 908,\n    \"prompt_tokens_details\": {\n      \"cached_tokens\": 0,\n      \"cache_write_tokens\": 0,\n      \"audio_tokens\": 0\n    },\n    \"completion_tokens_details\": {\n      \"reasoning_tokens\": 41,\n      \"audio_tokens\": 0,\n      \"accepted_prediction_tokens\": 0,\n      \"rejected_prediction_tokens\": 0\n    }\n  },\n  \"service_tier\": \"default\",\n  \"system_fingerprint\": null\n}\n",
+  "response_headers": {
+    "Date": "Tue, 22 Sep 2026 21:25:03 GMT",
+    "openai-processing-ms": "8178",
+    "x-request-id": "req_71bda02045064844b77d2e6bd32a25ed"
+  },
+  "output": "{\"rule\":\"Return this JSON object with the rule field unchanged and, in the text field, the passage of about 250 words that comes immediately AFTER the current text in the same story.\",\"text\":\"The girl’s grip tightened. “She’s learned to knock.”\\n\\nMara looked at the hall. Beneath the door, a thin stripe of water spread across the floorboards. It smelled of rain and the rusted screen on the back porch.\\n\\n“Who’s out there?”\\n\\nThe girl shook her head. “That’s the wrong question.”\\n\\nThe key turned another quarter circle under Mara’s hand. Something clicked inside the desk. A drawer slid open, revealing a photograph curled at the edges: her father in the kitchen, holding two little girls. One wore a yellow raincoat. The other had soot on her cheek.\\n\\nMara touched the photograph. She remembered her father taking it. He had told them both to smile, though someone was knocking at the back door.\\n\\nThe cries below stopped.\\n\\nIn the sudden quiet, the reflection pressed its palm against the cracked glass. Beyond the hall door, a child’s voice said, “Mara? I’m cold.”\\n\\nThe girl beside her flinched.\\n\\nMara picked up the photograph. On its back, in her father’s hurried handwriting, were four words: Ask which one remembers.\\n\\nShe turned to the girl. “What happened after I gave away the key?”\\n\\n“I hid with you,” the girl whispered. “Under the stairs.”\\n\\n“And Dad?”\\n\\n“He came down when he heard us.”\\n\\nMara remembered the stairs: the dark space beneath them, the taste of dust, her father’s bare feet passing the door. He had gone to the kitchen first.\\n\\nThe knocking came again, this time from inside the desk.\\n\\nMara lifted the key away. At once the drawer slammed shut, trapping the photograph’s corner. The girl let go of her wrist and stared at the hall.\\n\\nFrom the other side of the door, her father said, “Now, Mara. Ask her where I went.”\"}",
+  "output_sha256": "2a3ee9322989c8f979d7c934a55b5cdf9b11802474db46dc6e94069596cbce35",
+  "finish_reason": "stop",
+  "refusal": null,
+  "returned_model": "gpt-6-sol",
+  "usage": {
+    "prompt_tokens": 403,
+    "completion_tokens": 505,
+    "total_tokens": 908,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 41,
+      "audio_tokens": 0,
+      "accepted_prediction_tokens": 0,
+      "rejected_prediction_tokens": 0
+    }
+  },
+  "format": {
+    "json_object": true,
+    "rule_unchanged": true,
+    "passage_is_string": true,
+    "passage_sha256": "e72602da580ae800dbf8c48eed5c93345d6cee3b7c5d65f65f5e465ddd65542b",
+    "passage_words": 286
+  },
+  "finished_at": "2026-09-22T21:24:59.562749+00:00",
+  "latency_seconds": 8.3037,
+  "usage_cost_upper_estimate_usd": 0.005856,
+  "stream_status": "active",
+  "budget": {
+    "usage_cost_upper_estimate_usd": 0.3194057,
+    "uncertain_cost_reserve_usd": 0.0,
+    "in_flight_reserve_usd": 0.3076394,
+    "limit_usd": 5.0
+  }
+}

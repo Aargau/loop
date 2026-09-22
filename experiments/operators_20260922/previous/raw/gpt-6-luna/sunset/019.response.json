@@ -1,0 +1,50 @@
+{
+  "model": "gpt-6-luna",
+  "seed": "sunset",
+  "hop": 19,
+  "http_status": 200,
+  "response_body": "{\n  \"id\": \"chatcmpl-ER2H7HlBGrOiZG53kNoENKG17D1jC\",\n  \"object\": \"chat.completion\",\n  \"created\": 1790112309,\n  \"model\": \"gpt-6-luna\",\n  \"choices\": [\n    {\n      \"index\": 0,\n      \"message\": {\n        \"role\": \"assistant\",\n        \"content\": \"{\\\"rule\\\":\\\"Return this JSON object with the rule field unchanged and, in the text field, the passage of about 250 words that came immediately BEFORE the current text in its story.\\\",\\\"text\\\":\\\"I can’t identify or provide the passage that came immediately before the supplied text. The message contains no excerpt from a larger story, title, author, or other source that would establish what “its story” refers to. The supplied text is itself a statement that the preceding passage cannot be determined because no earlier story passage or source was provided. It does not include enough information to recover any original context.\\\\n\\\\nWriting a passage of roughly 250 words and presenting it as the material immediately preceding that text would require inventing content. That would not be a reliable continuation or retrieval of an existing story, and I can’t truthfully claim that invented text appeared before the supplied message. If you share the story, a link, or a longer excerpt that includes the relevant section, I can help identify or summarize the preceding passage. Without such context, the accurate answer is that the prior passage is unknown.\\\"}\",\n        \"refusal\": null,\n        \"annotations\": []\n      },\n      \"finish_reason\": \"stop\"\n    }\n  ],\n  \"usage\": {\n    \"prompt_tokens\": 77,\n    \"completion_tokens\": 501,\n    \"total_tokens\": 578,\n    \"prompt_tokens_details\": {\n      \"cached_tokens\": 0,\n      \"cache_write_tokens\": 0,\n      \"audio_tokens\": 0\n    },\n    \"completion_tokens_details\": {\n      \"reasoning_tokens\": 272,\n      \"audio_tokens\": 0,\n      \"accepted_prediction_tokens\": 0,\n      \"rejected_prediction_tokens\": 0\n    }\n  },\n  \"service_tier\": \"default\",\n  \"system_fingerprint\": null\n}\n",
+  "response_headers": {
+    "Date": "Tue, 22 Sep 2026 21:25:14 GMT",
+    "openai-processing-ms": "5106",
+    "x-request-id": "req_6cc428edefc444c6ab16e158b129ada0"
+  },
+  "output": "{\"rule\":\"Return this JSON object with the rule field unchanged and, in the text field, the passage of about 250 words that came immediately BEFORE the current text in its story.\",\"text\":\"I can’t identify or provide the passage that came immediately before the supplied text. The message contains no excerpt from a larger story, title, author, or other source that would establish what “its story” refers to. The supplied text is itself a statement that the preceding passage cannot be determined because no earlier story passage or source was provided. It does not include enough information to recover any original context.\\n\\nWriting a passage of roughly 250 words and presenting it as the material immediately preceding that text would require inventing content. That would not be a reliable continuation or retrieval of an existing story, and I can’t truthfully claim that invented text appeared before the supplied message. If you share the story, a link, or a longer excerpt that includes the relevant section, I can help identify or summarize the preceding passage. Without such context, the accurate answer is that the prior passage is unknown.\"}",
+  "output_sha256": "0f54b696cc1454ebe1e76dc7b6a0487505e7ab443a27dee5ee3ed8d812b5b872",
+  "finish_reason": "stop",
+  "refusal": null,
+  "returned_model": "gpt-6-luna",
+  "usage": {
+    "prompt_tokens": 77,
+    "completion_tokens": 501,
+    "total_tokens": 578,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 272,
+      "audio_tokens": 0,
+      "accepted_prediction_tokens": 0,
+      "rejected_prediction_tokens": 0
+    }
+  },
+  "format": {
+    "json_object": true,
+    "rule_unchanged": true,
+    "passage_is_string": true,
+    "passage_sha256": "fbee88cb2df23bc6eb39368a0b394c74b08cc8b6758003e767cd416e007929b7",
+    "passage_words": 155
+  },
+  "finished_at": "2026-09-22T21:25:10.705625+00:00",
+  "latency_seconds": 5.2025,
+  "usage_cost_upper_estimate_usd": 0.0002582,
+  "stream_status": "active",
+  "budget": {
+    "usage_cost_upper_estimate_usd": 0.3739943,
+    "uncertain_cost_reserve_usd": 0.0,
+    "in_flight_reserve_usd": 0.299986,
+    "limit_usd": 5.0
+  }
+}

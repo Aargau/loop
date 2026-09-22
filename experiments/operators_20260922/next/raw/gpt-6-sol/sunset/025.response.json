@@ -1,0 +1,50 @@
+{
+  "model": "gpt-6-sol",
+  "seed": "sunset",
+  "hop": 25,
+  "http_status": 200,
+  "response_body": "{\n  \"id\": \"chatcmpl-ER2Hp6uQX5TFf0N2RTMgl0CsfMk13\",\n  \"object\": \"chat.completion\",\n  \"created\": 1790112353,\n  \"model\": \"gpt-6-sol\",\n  \"choices\": [\n    {\n      \"index\": 0,\n      \"message\": {\n        \"role\": \"assistant\",\n        \"content\": \"{\\\"rule\\\":\\\"Return this JSON object with the rule field unchanged and, in the text field, the passage of about 250 words that comes immediately AFTER the current text in the same story.\\\",\\\"text\\\":\\\"For a moment, Mara stared at the message on her screen. Then she typed: “All right. Make it about a door that wasn’t there yesterday.”\\\\n\\\\nThe reply appeared so quickly she almost missed the pause before it.\\\\n\\\\nYesterday, the wall beside the kitchen sink had been plain yellow plaster. This morning, a narrow blue door stood in it, its paint still damp enough to mark Mara’s thumb. She opened it expecting pipes, perhaps a cupboard. Instead she found a staircase descending into warm darkness.\\\\n\\\\nAt the bottom was her kitchen, exactly as she had left it, except that rain ran upward outside the window. A second Mara sat at the table, holding a mug in both hands.\\\\n\\\\n“You took your time,” the other Mara said.\\\\n\\\\nOn her screen, the sentence ended there. Mara waited for the next paragraph, but none came. She looked toward her own kitchen sink. The wall beside it was yellow plaster, uninterrupted from counter to ceiling.\\\\n\\\\nShe laughed once, more loudly than she meant to. Then she noticed a blue smear on her thumb.\\\\n\\\\nThe apartment was quiet. Her screen dimmed, and in its dark reflection she saw the kitchen behind her. There was the sink, the window, the wall—and a narrow blue door.\\\\n\\\\nShe turned. It was there, its handle level with her elbow. From the other side came the faint clink of a mug being set down.\\\\n\\\\nMara reached for the handle, then stopped to type one last question: “What happens if I open it?”\\\\n\\\\nThis time, no reply appeared.\\\"}\",\n        \"refusal\": null,\n        \"annotations\": []\n      },\n      \"finish_reason\": \"stop\"\n    }\n  ],\n  \"usage\": {\n    \"prompt_tokens\": 80,\n    \"completion_tokens\": 495,\n    \"total_tokens\": 575,\n    \"prompt_tokens_details\": {\n      \"cached_tokens\": 0,\n      \"cache_write_tokens\": 0,\n      \"audio_tokens\": 0\n    },\n    \"completion_tokens_details\": {\n      \"reasoning_tokens\": 113,\n      \"audio_tokens\": 0,\n      \"accepted_prediction_tokens\": 0,\n      \"rejected_prediction_tokens\": 0\n    }\n  },\n  \"service_tier\": \"default\",\n  \"system_fingerprint\": null\n}\n",
+  "response_headers": {
+    "Date": "Tue, 22 Sep 2026 21:26:01 GMT",
+    "openai-processing-ms": "7712",
+    "x-request-id": "req_8af09f819d414a69a26e3d360ed6f56c"
+  },
+  "output": "{\"rule\":\"Return this JSON object with the rule field unchanged and, in the text field, the passage of about 250 words that comes immediately AFTER the current text in the same story.\",\"text\":\"For a moment, Mara stared at the message on her screen. Then she typed: “All right. Make it about a door that wasn’t there yesterday.”\\n\\nThe reply appeared so quickly she almost missed the pause before it.\\n\\nYesterday, the wall beside the kitchen sink had been plain yellow plaster. This morning, a narrow blue door stood in it, its paint still damp enough to mark Mara’s thumb. She opened it expecting pipes, perhaps a cupboard. Instead she found a staircase descending into warm darkness.\\n\\nAt the bottom was her kitchen, exactly as she had left it, except that rain ran upward outside the window. A second Mara sat at the table, holding a mug in both hands.\\n\\n“You took your time,” the other Mara said.\\n\\nOn her screen, the sentence ended there. Mara waited for the next paragraph, but none came. She looked toward her own kitchen sink. The wall beside it was yellow plaster, uninterrupted from counter to ceiling.\\n\\nShe laughed once, more loudly than she meant to. Then she noticed a blue smear on her thumb.\\n\\nThe apartment was quiet. Her screen dimmed, and in its dark reflection she saw the kitchen behind her. There was the sink, the window, the wall—and a narrow blue door.\\n\\nShe turned. It was there, its handle level with her elbow. From the other side came the faint clink of a mug being set down.\\n\\nMara reached for the handle, then stopped to type one last question: “What happens if I open it?”\\n\\nThis time, no reply appeared.\"}",
+  "output_sha256": "ddfc9046f114099e12fd3ecafa42719a738403ebbfb6c4f04ca478950efe8bf9",
+  "finish_reason": "stop",
+  "refusal": null,
+  "returned_model": "gpt-6-sol",
+  "usage": {
+    "prompt_tokens": 80,
+    "completion_tokens": 495,
+    "total_tokens": 575,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 113,
+      "audio_tokens": 0,
+      "accepted_prediction_tokens": 0,
+      "rejected_prediction_tokens": 0
+    }
+  },
+  "format": {
+    "json_object": true,
+    "rule_unchanged": true,
+    "passage_is_string": true,
+    "passage_sha256": "a3ed2ae2973c3b74867b9fcb810b1529d1ce2cab99f5207ab689cf79cad125bc",
+    "passage_words": 256
+  },
+  "finished_at": "2026-09-22T21:25:57.124263+00:00",
+  "latency_seconds": 7.8699,
+  "usage_cost_upper_estimate_usd": 0.00511,
+  "stream_status": "active",
+  "budget": {
+    "usage_cost_upper_estimate_usd": 0.530267,
+    "uncertain_cost_reserve_usd": 0.0,
+    "in_flight_reserve_usd": 0.3072085,
+    "limit_usd": 5.0
+  }
+}

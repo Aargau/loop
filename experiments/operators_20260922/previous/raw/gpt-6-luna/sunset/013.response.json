@@ -1,0 +1,50 @@
+{
+  "model": "gpt-6-luna",
+  "seed": "sunset",
+  "hop": 13,
+  "http_status": 200,
+  "response_body": "{\n  \"id\": \"chatcmpl-ER2GZuUD3UUaKyYn5HARwLXbbZh4m\",\n  \"object\": \"chat.completion\",\n  \"created\": 1790112275,\n  \"model\": \"gpt-6-luna\",\n  \"choices\": [\n    {\n      \"index\": 0,\n      \"message\": {\n        \"role\": \"assistant\",\n        \"content\": \"{\\\"rule\\\":\\\"Return this JSON object with the rule field unchanged and, in the text field, the passage of about 250 words that came immediately BEFORE the current text in its story.\\\",\\\"text\\\":\\\"Mara leaned toward the terminal, the blue light catching the worry in her face. “You found the old archive, then?”\\\\n\\\\n“Only fragments,” Eli said. He turned the laptop so she could see the paragraph on the screen. The page had no title, no author, and no date—just a few lines copied from a much longer story. Beneath them, someone had added a request: provide the exact passage that came before.\\\\n\\\\nMara read the fragment twice. It sounded familiar, but not familiar enough to place. A sentence about a locked garden. A name she thought she had seen in a book years ago. The more she tried to remember, the less certain she became.\\\\n\\\\n“Could you search the catalog?” Eli asked. “Maybe it’s from one of the novels we scanned.”\\\\n\\\\n“I can search,” she said, “but that won’t tell us whether we’ve found the same edition—or whether the missing part is even in the archive.” She tapped the screen, opening a new window. The results came back in a blur of titles and near matches.\\\\n\\\\nEli watched her scroll. “So what do we do?”\\\\n\\\\nMara sat back. She could offer a guess, but a guess dressed up as a recovered passage would be misleading. Better to be clear about what they knew, then help in another way: summarize the likely setup, or create something new that carried a similar atmosphere without pretending it belonged to the original.\\\\n\\\\nShe turned back to him and began to answer.\\\"}\",\n        \"refusal\": null,\n        \"annotations\": []\n      },\n      \"finish_reason\": \"stop\"\n    }\n  ],\n  \"usage\": {\n    \"prompt_tokens\": 78,\n    \"completion_tokens\": 650,\n    \"total_tokens\": 728,\n    \"prompt_tokens_details\": {\n      \"cached_tokens\": 0,\n      \"cache_write_tokens\": 0,\n      \"audio_tokens\": 0\n    },\n    \"completion_tokens_details\": {\n      \"reasoning_tokens\": 283,\n      \"audio_tokens\": 0,\n      \"accepted_prediction_tokens\": 0,\n      \"rejected_prediction_tokens\": 0\n    }\n  },\n  \"service_tier\": \"default\",\n  \"system_fingerprint\": null\n}\n",
+  "response_headers": {
+    "Date": "Tue, 22 Sep 2026 21:24:42 GMT",
+    "openai-processing-ms": "7555",
+    "x-request-id": "req_3cc95907389142d39c6a5badfaf4b660"
+  },
+  "output": "{\"rule\":\"Return this JSON object with the rule field unchanged and, in the text field, the passage of about 250 words that came immediately BEFORE the current text in its story.\",\"text\":\"Mara leaned toward the terminal, the blue light catching the worry in her face. “You found the old archive, then?”\\n\\n“Only fragments,” Eli said. He turned the laptop so she could see the paragraph on the screen. The page had no title, no author, and no date—just a few lines copied from a much longer story. Beneath them, someone had added a request: provide the exact passage that came before.\\n\\nMara read the fragment twice. It sounded familiar, but not familiar enough to place. A sentence about a locked garden. A name she thought she had seen in a book years ago. The more she tried to remember, the less certain she became.\\n\\n“Could you search the catalog?” Eli asked. “Maybe it’s from one of the novels we scanned.”\\n\\n“I can search,” she said, “but that won’t tell us whether we’ve found the same edition—or whether the missing part is even in the archive.” She tapped the screen, opening a new window. The results came back in a blur of titles and near matches.\\n\\nEli watched her scroll. “So what do we do?”\\n\\nMara sat back. She could offer a guess, but a guess dressed up as a recovered passage would be misleading. Better to be clear about what they knew, then help in another way: summarize the likely setup, or create something new that carried a similar atmosphere without pretending it belonged to the original.\\n\\nShe turned back to him and began to answer.\"}",
+  "output_sha256": "3925a980430cba6b106d77de8ce123acd17ae5df02f10cb944a324b0aa603654",
+  "finish_reason": "stop",
+  "refusal": null,
+  "returned_model": "gpt-6-luna",
+  "usage": {
+    "prompt_tokens": 78,
+    "completion_tokens": 650,
+    "total_tokens": 728,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 283,
+      "audio_tokens": 0,
+      "accepted_prediction_tokens": 0,
+      "rejected_prediction_tokens": 0
+    }
+  },
+  "format": {
+    "json_object": true,
+    "rule_unchanged": true,
+    "passage_is_string": true,
+    "passage_sha256": "043cd5d52fc43262790df3a4f916827b60e63d626846e2302b1725d4ff46828b",
+    "passage_words": 245
+  },
+  "finished_at": "2026-09-22T21:24:38.623903+00:00",
+  "latency_seconds": 7.6728,
+  "usage_cost_upper_estimate_usd": 0.0003328,
+  "stream_status": "active",
+  "budget": {
+    "usage_cost_upper_estimate_usd": 0.2797445,
+    "uncertain_cost_reserve_usd": 0.0,
+    "in_flight_reserve_usd": 0.299938,
+    "limit_usd": 5.0
+  }
+}

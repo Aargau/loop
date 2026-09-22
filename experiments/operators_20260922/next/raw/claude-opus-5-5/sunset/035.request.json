@@ -1,0 +1,22 @@
+{
+  "started_at": "2026-09-22T21:28:53.161885+00:00",
+  "model": "claude-opus-5-5",
+  "seed": "sunset",
+  "hop": 35,
+  "endpoint": "https://api.anthropic.com/v1/messages",
+  "body": {
+    "model": "claude-opus-5-5",
+    "messages": [
+      {
+        "role": "user",
+        "content": "```json\n{\"rule\": \"Return this JSON object with the rule field unchanged and, in the text field, the passage of about 250 words that comes immediately AFTER the current text in the same story.\", \"text\": \"She eased her wrist free and lifted the kettle before it could shriek. The steam fogged the window over the washbasin, and for a moment the dark lake beyond it disappeared, which she was glad of. She poured the water over the tea leaves and watched them turn and settle.\\n\\nLeonard had not moved from the stove. \\\"Somebody ought to go back out for the auger,\\\" he said. \\\"And whatever else he left.\\\"\\n\\n\\\"Not tonight.\\\"\\n\\n\\\"No. Not tonight.\\\" He rubbed his hands together, slowly, the way a man does when he is thinking about something other than his hands. \\\"I saw a sled out there. Past where we found him. Loaded, it looked like.\\\"\\n\\nMary set the cup down harder than she meant to. Tea slopped over the rim and ran in a thin brown line toward the edge of the table. She did not wipe it.\\n\\n\\\"Loaded with what?\\\"\\n\\n\\\"Couldn't tell. Tarp over it. Lashed down tight.\\\" Leonard looked at her then, and she understood that he had been waiting to say this since they had first laid her father on the floor. \\\"It wasn't pointed toward home, Mary. It was pointed across. Toward Harlan's side.\\\"\\n\\nOn the cot, her father stirred. His mouth worked, and a sound came out of it that was not quite a word, and then it was.\\n\\n\\\"Letter,\\\" he said.\\n\\nMary looked at the vest hanging over the chair back, still dripping, the pocket dark and sodden. Slowly, she crossed the room and put her hand inside.\"}\n```"
+      }
+    ],
+    "max_tokens": 4096,
+    "output_config": {
+      "effort": "low"
+    }
+  },
+  "state_sha256": "d87f8fceb80bbe83f189535931ffa93062a4edb893ad8206cd06e61fe7ce4fd1",
+  "reserved_cost_usd": 0.090384
+}

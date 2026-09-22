@@ -1,0 +1,50 @@
+{
+  "model": "gpt-6-luna",
+  "seed": "sunset",
+  "hop": 8,
+  "http_status": 200,
+  "response_body": "{\n  \"id\": \"chatcmpl-ER2G83kHtZDMJ1a79K2LfQCFIFgpy\",\n  \"object\": \"chat.completion\",\n  \"created\": 1790112248,\n  \"model\": \"gpt-6-luna\",\n  \"choices\": [\n    {\n      \"index\": 0,\n      \"message\": {\n        \"role\": \"assistant\",\n        \"content\": \"{\\\"rule\\\":\\\"Return this JSON object with the rule field unchanged and, in the text field, the passage of about 250 words that came immediately BEFORE the current text in its story.\\\",\\\"text\\\":\\\"By late morning, the rain had settled in, turning the garden path dark and slick. Mara stood in her grandfather’s study with the desk drawer pulled open, trying to decide what could be packed and what should be thrown away.\\\\n\\\\nThe drawer was mostly full of envelopes, blunt pencils, and folded scraps of paper. At the back, beneath a stack of old bills, she found a map. Its paper had gone soft along the creases, and one corner was stained brown, as if someone had once set down a cup there.\\\\n\\\\nShe spread it across the desk. The map showed a stretch of coastline and a scatter of small towns. A pencil circle marked one of them: Bellweather. Beside the circle, in her grandfather’s cramped handwriting, were the words: Ask your mother what happened there.\\\\n\\\\nMara read the note again. She couldn’t remember ever hearing her grandfather mention Bellweather, though she had spent enough afternoons with him to know the names of his favorite places. He had told her about the harbor where he learned to swim, the railway station where he met her grandmother, and the hill where he used to fly kites. This village had never come up.\\\\n\\\\nShe carried the map into the hall, where her mother was sorting through a cupboard. “Do you know where Bellweather is?”\\\\n\\\\nHer mother looked at the pencil circle. For a moment, the only sound was rain ticking against the glass. Then she folded the map carefully along its old creases and handed it back.\\\\n\\\\n“Not now, Mara,” she said. “We have a lot to finish.”\\\\n\\\\nMara slipped the map into her pocket. In the kitchen, a stack of postcards waited beside the boxes.\\\"}\",\n        \"refusal\": null,\n        \"annotations\": []\n      },\n      \"finish_reason\": \"stop\"\n    }\n  ],\n  \"usage\": {\n    \"prompt_tokens\": 406,\n    \"completion_tokens\": 516,\n    \"total_tokens\": 922,\n    \"prompt_tokens_details\": {\n      \"cached_tokens\": 0,\n      \"cache_write_tokens\": 0,\n      \"audio_tokens\": 0\n    },\n    \"completion_tokens_details\": {\n      \"reasoning_tokens\": 110,\n      \"audio_tokens\": 0,\n      \"accepted_prediction_tokens\": 0,\n      \"rejected_prediction_tokens\": 0\n    }\n  },\n  \"service_tier\": \"default\",\n  \"system_fingerprint\": null\n}\n",
+  "response_headers": {
+    "Date": "Tue, 22 Sep 2026 21:24:14 GMT",
+    "openai-processing-ms": "6222",
+    "x-request-id": "req_bb95048319af4a23bfad081f9990d3d1"
+  },
+  "output": "{\"rule\":\"Return this JSON object with the rule field unchanged and, in the text field, the passage of about 250 words that came immediately BEFORE the current text in its story.\",\"text\":\"By late morning, the rain had settled in, turning the garden path dark and slick. Mara stood in her grandfather’s study with the desk drawer pulled open, trying to decide what could be packed and what should be thrown away.\\n\\nThe drawer was mostly full of envelopes, blunt pencils, and folded scraps of paper. At the back, beneath a stack of old bills, she found a map. Its paper had gone soft along the creases, and one corner was stained brown, as if someone had once set down a cup there.\\n\\nShe spread it across the desk. The map showed a stretch of coastline and a scatter of small towns. A pencil circle marked one of them: Bellweather. Beside the circle, in her grandfather’s cramped handwriting, were the words: Ask your mother what happened there.\\n\\nMara read the note again. She couldn’t remember ever hearing her grandfather mention Bellweather, though she had spent enough afternoons with him to know the names of his favorite places. He had told her about the harbor where he learned to swim, the railway station where he met her grandmother, and the hill where he used to fly kites. This village had never come up.\\n\\nShe carried the map into the hall, where her mother was sorting through a cupboard. “Do you know where Bellweather is?”\\n\\nHer mother looked at the pencil circle. For a moment, the only sound was rain ticking against the glass. Then she folded the map carefully along its old creases and handed it back.\\n\\n“Not now, Mara,” she said. “We have a lot to finish.”\\n\\nMara slipped the map into her pocket. In the kitchen, a stack of postcards waited beside the boxes.\"}",
+  "output_sha256": "5f49a9b2a7ddc4db3f8d8fdf20181760cdc27376efc6143d4749ce63e6d83dbd",
+  "finish_reason": "stop",
+  "refusal": null,
+  "returned_model": "gpt-6-luna",
+  "usage": {
+    "prompt_tokens": 406,
+    "completion_tokens": 516,
+    "total_tokens": 922,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 110,
+      "audio_tokens": 0,
+      "accepted_prediction_tokens": 0,
+      "rejected_prediction_tokens": 0
+    }
+  },
+  "format": {
+    "json_object": true,
+    "rule_unchanged": true,
+    "passage_is_string": true,
+    "passage_sha256": "a823db884cf859464c4c57529b30446ebda3e19a3f02b6e22e2248f8979311e8",
+    "passage_words": 283
+  },
+  "finished_at": "2026-09-22T21:24:10.730865+00:00",
+  "latency_seconds": 6.3249,
+  "usage_cost_upper_estimate_usd": 0.00029860000000000005,
+  "stream_status": "active",
+  "budget": {
+    "usage_cost_upper_estimate_usd": 0.1960506,
+    "uncertain_cost_reserve_usd": 0.0,
+    "in_flight_reserve_usd": 0.342014,
+    "limit_usd": 5.0
+  }
+}

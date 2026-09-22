@@ -1,0 +1,50 @@
+{
+  "model": "gpt-6-luna",
+  "seed": "sunset",
+  "hop": 14,
+  "http_status": 200,
+  "response_body": "{\n  \"id\": \"chatcmpl-ER2Ghjl7gA8kMlKCZbPA6PDCh8WTq\",\n  \"object\": \"chat.completion\",\n  \"created\": 1790112283,\n  \"model\": \"gpt-6-luna\",\n  \"choices\": [\n    {\n      \"index\": 0,\n      \"message\": {\n        \"role\": \"assistant\",\n        \"content\": \"{\\\"rule\\\":\\\"Return this JSON object with the rule field unchanged and, in the text field, the passage of about 250 words that came immediately BEFORE the current text in its story.\\\",\\\"text\\\":\\\"I can’t determine the exact passage that came before this excerpt. Here’s an original imagined lead-in instead:\\\\n\\\\nThe archive room had been closed for three years, ever since a leak in the west wall ruined a row of paper records and set off alarms throughout the building. Eli had expected dust, perhaps a few broken scanners. He hadn’t expected the terminal to wake when he touched the desk.\\\\n\\\\nIts screen flickered, then displayed a directory labeled UNCATALOGUED. Most of the files were damaged: blank pages, corrupted indexes, fragments of letters with their beginnings and endings missing. One document opened only after Eli tried a date he found scratched beneath the keyboard.\\\\n\\\\nThe story appeared in pieces. A character entered a garden after dark. Somewhere later, a key was hidden in a clock. The references were too incomplete to establish a title, yet the prose had the peculiar confidence of a text that knew exactly where it was going.\\\\n\\\\nEli called Mara from the stairwell. She knew the archive better than anyone, and she had once helped digitize the library’s uncatalogued novels. By the time she arrived, he had copied the surviving lines into a clean file and checked them against every searchable collection he could access.\\\\n\\\\nNothing matched. Still, someone had left a note beneath the fragment, asking for the passage that came before it. Eli read the note again, wondering whether it had been written by a researcher, a prankster, or the person who had hidden the file.\\\\n\\\\nFootsteps sounded in the corridor. Mara appeared in the doorway, took in the glowing screen, and asked the question that began their search.\\\"}\",\n        \"refusal\": null,\n        \"annotations\": []\n      },\n      \"finish_reason\": \"stop\"\n    }\n  ],\n  \"usage\": {\n    \"prompt_tokens\": 364,\n    \"completion_tokens\": 753,\n    \"total_tokens\": 1117,\n    \"prompt_tokens_details\": {\n      \"cached_tokens\": 0,\n      \"cache_write_tokens\": 0,\n      \"audio_tokens\": 0\n    },\n    \"completion_tokens_details\": {\n      \"reasoning_tokens\": 365,\n      \"audio_tokens\": 0,\n      \"accepted_prediction_tokens\": 0,\n      \"rejected_prediction_tokens\": 0\n    }\n  },\n  \"service_tier\": \"default\",\n  \"system_fingerprint\": null\n}\n",
+  "response_headers": {
+    "Date": "Tue, 22 Sep 2026 21:24:52 GMT",
+    "openai-processing-ms": "9412",
+    "x-request-id": "req_c46789ad6e8e4371849ba50ad0e1750f"
+  },
+  "output": "{\"rule\":\"Return this JSON object with the rule field unchanged and, in the text field, the passage of about 250 words that came immediately BEFORE the current text in its story.\",\"text\":\"I can’t determine the exact passage that came before this excerpt. Here’s an original imagined lead-in instead:\\n\\nThe archive room had been closed for three years, ever since a leak in the west wall ruined a row of paper records and set off alarms throughout the building. Eli had expected dust, perhaps a few broken scanners. He hadn’t expected the terminal to wake when he touched the desk.\\n\\nIts screen flickered, then displayed a directory labeled UNCATALOGUED. Most of the files were damaged: blank pages, corrupted indexes, fragments of letters with their beginnings and endings missing. One document opened only after Eli tried a date he found scratched beneath the keyboard.\\n\\nThe story appeared in pieces. A character entered a garden after dark. Somewhere later, a key was hidden in a clock. The references were too incomplete to establish a title, yet the prose had the peculiar confidence of a text that knew exactly where it was going.\\n\\nEli called Mara from the stairwell. She knew the archive better than anyone, and she had once helped digitize the library’s uncatalogued novels. By the time she arrived, he had copied the surviving lines into a clean file and checked them against every searchable collection he could access.\\n\\nNothing matched. Still, someone had left a note beneath the fragment, asking for the passage that came before it. Eli read the note again, wondering whether it had been written by a researcher, a prankster, or the person who had hidden the file.\\n\\nFootsteps sounded in the corridor. Mara appeared in the doorway, took in the glowing screen, and asked the question that began their search.\"}",
+  "output_sha256": "42ca8dca95b671ce6443b4988d8835fcb9e418a019755e8c3b78131dd164fedd",
+  "finish_reason": "stop",
+  "refusal": null,
+  "returned_model": "gpt-6-luna",
+  "usage": {
+    "prompt_tokens": 364,
+    "completion_tokens": 753,
+    "total_tokens": 1117,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 365,
+      "audio_tokens": 0,
+      "accepted_prediction_tokens": 0,
+      "rejected_prediction_tokens": 0
+    }
+  },
+  "format": {
+    "json_object": true,
+    "rule_unchanged": true,
+    "passage_is_string": true,
+    "passage_sha256": "de3ad7ad37dcee333ce41bcb0e6b85ebe1222f91473c6daddff757f4e735624b",
+    "passage_words": 272
+  },
+  "finished_at": "2026-09-22T21:24:48.162649+00:00",
+  "latency_seconds": 9.5245,
+  "usage_cost_upper_estimate_usd": 0.00041289999999999995,
+  "stream_status": "active",
+  "budget": {
+    "usage_cost_upper_estimate_usd": 0.3074474,
+    "uncertain_cost_reserve_usd": 0.0,
+    "in_flight_reserve_usd": 0.30025,
+    "limit_usd": 5.0
+  }
+}

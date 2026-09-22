@@ -1,0 +1,50 @@
+{
+  "model": "gpt-6-luna",
+  "seed": "sunset",
+  "hop": 18,
+  "http_status": 200,
+  "response_body": "{\n  \"id\": \"chatcmpl-ER2HGBZ7USfyFmv1dQI2AHpmWHok7\",\n  \"object\": \"chat.completion\",\n  \"created\": 1790112318,\n  \"model\": \"gpt-6-luna\",\n  \"choices\": [\n    {\n      \"index\": 0,\n      \"message\": {\n        \"role\": \"assistant\",\n        \"content\": \"{\\\"rule\\\":\\\"Return this JSON object with the rule field unchanged and, in the text field, the passage of about 250 words that comes immediately AFTER the current text in the same story.\\\",\\\"text\\\":\\\"The name followed them home that night. It traveled down the lane with the shepherd, slipped through the baker’s open window, and found its way into the children’s dreams. By morning, everyone in town seemed to know the tune, though no two people remembered it quite the same way.\\\\n\\\\nMara tried to write it down in her little music book. She caught the shepherd’s bright phrase, then the baker’s steady beat, but when she reached the place where the voice had risen from the upstairs window, her pencil stopped. The tune seemed too big for the page.\\\\n\\\\nSo she left the book open on the fountain’s edge and went to fetch breakfast.\\\\n\\\\nWhen she returned, the baker had added a row of tiny notes in the margin. Beneath them, the shepherd had drawn a winding path, and the children had scattered little circles and stars across the bottom. Someone had written, in careful letters, OURS.\\\\n\\\\nMara smiled. She tucked the book beneath her arm and took it to the schoolhouse. There, she set it on a shelf where anyone could reach it.\\\\n\\\\nEvery evening after that, the neighbors met at the fountain. Sometimes they played the whole tune. Sometimes they changed it, letting a new voice or instrument lead the way. On quiet nights, they simply sat together and listened to the water.\\\\n\\\\nYears later, travelers still heard music in the square and asked who had written it. The townspeople would look at one another, then point to the fiddle, the flute, the drum, the open windows, and the little book on its shelf.\\\\n\\\\n“No one,” they would say. “And all of us.”\\\"}\",\n        \"refusal\": null,\n        \"annotations\": []\n      },\n      \"finish_reason\": \"stop\"\n    }\n  ],\n  \"usage\": {\n    \"prompt_tokens\": 386,\n    \"completion_tokens\": 490,\n    \"total_tokens\": 876,\n    \"prompt_tokens_details\": {\n      \"cached_tokens\": 0,\n      \"cache_write_tokens\": 0,\n      \"audio_tokens\": 0\n    },\n    \"completion_tokens_details\": {\n      \"reasoning_tokens\": 97,\n      \"audio_tokens\": 0,\n      \"accepted_prediction_tokens\": 0,\n      \"rejected_prediction_tokens\": 0\n    }\n  },\n  \"service_tier\": \"default\",\n  \"system_fingerprint\": null\n}\n",
+  "response_headers": {
+    "Date": "Tue, 22 Sep 2026 21:25:23 GMT",
+    "openai-processing-ms": "4618",
+    "x-request-id": "req_0ad84741f918432bab650f1f133f3fd7"
+  },
+  "output": "{\"rule\":\"Return this JSON object with the rule field unchanged and, in the text field, the passage of about 250 words that comes immediately AFTER the current text in the same story.\",\"text\":\"The name followed them home that night. It traveled down the lane with the shepherd, slipped through the baker’s open window, and found its way into the children’s dreams. By morning, everyone in town seemed to know the tune, though no two people remembered it quite the same way.\\n\\nMara tried to write it down in her little music book. She caught the shepherd’s bright phrase, then the baker’s steady beat, but when she reached the place where the voice had risen from the upstairs window, her pencil stopped. The tune seemed too big for the page.\\n\\nSo she left the book open on the fountain’s edge and went to fetch breakfast.\\n\\nWhen she returned, the baker had added a row of tiny notes in the margin. Beneath them, the shepherd had drawn a winding path, and the children had scattered little circles and stars across the bottom. Someone had written, in careful letters, OURS.\\n\\nMara smiled. She tucked the book beneath her arm and took it to the schoolhouse. There, she set it on a shelf where anyone could reach it.\\n\\nEvery evening after that, the neighbors met at the fountain. Sometimes they played the whole tune. Sometimes they changed it, letting a new voice or instrument lead the way. On quiet nights, they simply sat together and listened to the water.\\n\\nYears later, travelers still heard music in the square and asked who had written it. The townspeople would look at one another, then point to the fiddle, the flute, the drum, the open windows, and the little book on its shelf.\\n\\n“No one,” they would say. “And all of us.”\"}",
+  "output_sha256": "1bbbc38cc05c88b644ba8db0d5c78a0f53931bc6da86acd8a7d249f26aa42a8f",
+  "finish_reason": "stop",
+  "refusal": null,
+  "returned_model": "gpt-6-luna",
+  "usage": {
+    "prompt_tokens": 386,
+    "completion_tokens": 490,
+    "total_tokens": 876,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 97,
+      "audio_tokens": 0,
+      "accepted_prediction_tokens": 0,
+      "rejected_prediction_tokens": 0
+    }
+  },
+  "format": {
+    "json_object": true,
+    "rule_unchanged": true,
+    "passage_is_string": true,
+    "passage_sha256": "99a8f67e7ce1c557e18d9889ba3cfcd9304b65071fc8aa3a11acb23b3474bb06",
+    "passage_words": 273
+  },
+  "finished_at": "2026-09-22T21:25:19.111996+00:00",
+  "latency_seconds": 4.756,
+  "usage_cost_upper_estimate_usd": 0.0002836,
+  "stream_status": "active",
+  "budget": {
+    "usage_cost_upper_estimate_usd": 0.3932008,
+    "uncertain_cost_reserve_usd": 0.0,
+    "in_flight_reserve_usd": 0.350268,
+    "limit_usd": 5.0
+  }
+}

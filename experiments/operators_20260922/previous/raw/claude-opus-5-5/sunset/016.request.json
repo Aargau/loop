@@ -1,0 +1,22 @@
+{
+  "started_at": "2026-09-22T21:24:30.584384+00:00",
+  "model": "claude-opus-5-5",
+  "seed": "sunset",
+  "hop": 16,
+  "endpoint": "https://api.anthropic.com/v1/messages",
+  "body": {
+    "model": "claude-opus-5-5",
+    "messages": [
+      {
+        "role": "user",
+        "content": "This is actually the first message in our conversation, so I haven't sent anything yet. The text you pasted looks like an AI assistant's reply, possibly copied from another chat. It describes the same kind of mix-up it's now part of, which makes it a bit of a loop.\n\nWhat would you like to do? You could:\n\n- **Paste what you meant to send**, if your clipboard had the wrong thing\n- **Ask a question or start a task**\n- **Explore the loop**, if you're curious how assistants handle messages that sound like they came from an assistant"
+      }
+    ],
+    "max_tokens": 4096,
+    "output_config": {
+      "effort": "low"
+    }
+  },
+  "state_sha256": "bb32703046361b67600050985b64868821debee23c7e3bae2d3038ccc52c0829",
+  "reserved_cost_usd": 0.0861
+}

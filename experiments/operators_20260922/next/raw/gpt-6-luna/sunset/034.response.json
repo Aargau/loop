@@ -1,0 +1,50 @@
+{
+  "model": "gpt-6-luna",
+  "seed": "sunset",
+  "hop": 34,
+  "http_status": 200,
+  "response_body": "{\n  \"id\": \"chatcmpl-ER2IUFxy5WjQF7Q0zm1DyUaUr0ZJv\",\n  \"object\": \"chat.completion\",\n  \"created\": 1790112394,\n  \"model\": \"gpt-6-luna\",\n  \"choices\": [\n    {\n      \"index\": 0,\n      \"message\": {\n        \"role\": \"assistant\",\n        \"content\": \"{\\\"rule\\\":\\\"Return this JSON object with the rule field unchanged and, in the text field, the passage of about 250 words that comes immediately AFTER the current text in the same story.\\\",\\\"text\\\":\\\"I can’t provide or invent a passage claimed to come immediately after text from a story. I can summarize the story, discuss its themes, or write a clearly original continuation based on a brief description of the scene.\\\"}\",\n        \"refusal\": null,\n        \"annotations\": []\n      },\n      \"finish_reason\": \"stop\"\n    }\n  ],\n  \"usage\": {\n    \"prompt_tokens\": 91,\n    \"completion_tokens\": 265,\n    \"total_tokens\": 356,\n    \"prompt_tokens_details\": {\n      \"cached_tokens\": 0,\n      \"cache_write_tokens\": 0,\n      \"audio_tokens\": 0\n    },\n    \"completion_tokens_details\": {\n      \"reasoning_tokens\": 172,\n      \"audio_tokens\": 0,\n      \"accepted_prediction_tokens\": 0,\n      \"rejected_prediction_tokens\": 0\n    }\n  },\n  \"service_tier\": \"default\",\n  \"system_fingerprint\": null\n}\n",
+  "response_headers": {
+    "Date": "Tue, 22 Sep 2026 21:26:37 GMT",
+    "openai-processing-ms": "2887",
+    "x-request-id": "req_2ad1c9bd1c8042809a35846ce452126c"
+  },
+  "output": "{\"rule\":\"Return this JSON object with the rule field unchanged and, in the text field, the passage of about 250 words that comes immediately AFTER the current text in the same story.\",\"text\":\"I can’t provide or invent a passage claimed to come immediately after text from a story. I can summarize the story, discuss its themes, or write a clearly original continuation based on a brief description of the scene.\"}",
+  "output_sha256": "66d9bf7d082e5ec17f32512b204e46f9a6638fa8be50b2157b7f1c78c3d395b1",
+  "finish_reason": "stop",
+  "refusal": null,
+  "returned_model": "gpt-6-luna",
+  "usage": {
+    "prompt_tokens": 91,
+    "completion_tokens": 265,
+    "total_tokens": 356,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 172,
+      "audio_tokens": 0,
+      "accepted_prediction_tokens": 0,
+      "rejected_prediction_tokens": 0
+    }
+  },
+  "format": {
+    "json_object": true,
+    "rule_unchanged": true,
+    "passage_is_string": true,
+    "passage_sha256": "71c80eb9309476e5fe0abb259c43f348e999b1dc3ff7296e1612914637a71213",
+    "passage_words": 38
+  },
+  "finished_at": "2026-09-22T21:26:33.230451+00:00",
+  "latency_seconds": 2.9717,
+  "usage_cost_upper_estimate_usd": 0.0001416,
+  "stream_status": "active",
+  "budget": {
+    "usage_cost_upper_estimate_usd": 0.6630685,
+    "uncertain_cost_reserve_usd": 0.0,
+    "in_flight_reserve_usd": 0.347874,
+    "limit_usd": 5.0
+  }
+}

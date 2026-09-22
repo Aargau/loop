@@ -1,0 +1,50 @@
+{
+  "model": "gpt-6-sol",
+  "seed": "sunset",
+  "hop": 40,
+  "http_status": 200,
+  "response_body": "{\n  \"id\": \"chatcmpl-ER2JI9B3BoTpEJcaQaOksmlrvlgPt\",\n  \"object\": \"chat.completion\",\n  \"created\": 1790112444,\n  \"model\": \"gpt-6-sol\",\n  \"choices\": [\n    {\n      \"index\": 0,\n      \"message\": {\n        \"role\": \"assistant\",\n        \"content\": \"{\\\"rule\\\":\\\"Return this JSON object with the rule field unchanged and, in the text field, the passage of about 250 words that comes immediately AFTER the current text in the same story.\\\",\\\"text\\\":\\\"The girl held out her hand. In it lay a ticket, folded until its edges had gone white.\\\\n\\\\n“You’re late,” she said.\\\\n\\\\nMara glanced behind her. Her apartment was still there, lamp glowing over the desk, cursor blinking on the screen. When she faced the platform again, the girl was halfway to the stairs.\\\\n\\\\n“Wait. Who are you?”\\\\n\\\\nThe girl stopped beside the third step. “You know.”\\\\n\\\\nA train sounded in the distance, though the tracks remained silent. Mara followed her down to the ticket window. The clock above it showed eleven forty-three. Her kitchen clock had said eleven fifty.\\\\n\\\\nThe girl unfolded the ticket and pressed it against the glass. On the back, in the same unfamiliar handwriting as the notebook, were four words: Don’t let her board.\\\\n\\\\n“Who wrote that?” Mara asked.\\\\n\\\\n“You did. The first time.”\\\\n\\\\nAt the far end of the platform, lights appeared in the dark. A woman stepped out from behind a pillar, her face hidden by the collar of her coat. Around her neck was a red scarf.\\\\n\\\\nMara remembered the closing door, her hand slipping from someone else’s, the whistle swallowing a name. But she had been standing inside the carriage. It was the girl who had run beside it.\\\\n\\\\nThe woman lowered her collar. She had Mara’s face, too, older than either of them by years Mara had not lived.\\\\n\\\\n“Give me the notebook,” the woman said.\\\\n\\\\nThe girl took Mara’s hand. The train approached without a sound, and Mara felt the ticket trembling between their fingers.\\\"}\",\n        \"refusal\": null,\n        \"annotations\": []\n      },\n      \"finish_reason\": \"stop\"\n    }\n  ],\n  \"usage\": {\n    \"prompt_tokens\": 357,\n    \"completion_tokens\": 426,\n    \"total_tokens\": 783,\n    \"prompt_tokens_details\": {\n      \"cached_tokens\": 0,\n      \"cache_write_tokens\": 0,\n      \"audio_tokens\": 0\n    },\n    \"completion_tokens_details\": {\n      \"reasoning_tokens\": 31,\n      \"audio_tokens\": 0,\n      \"accepted_prediction_tokens\": 0,\n      \"rejected_prediction_tokens\": 0\n    }\n  },\n  \"service_tier\": \"default\",\n  \"system_fingerprint\": null\n}\n",
+  "response_headers": {
+    "Date": "Tue, 22 Sep 2026 21:27:30 GMT",
+    "openai-processing-ms": "6728",
+    "x-request-id": "req_416f6db69f4c4f88b7a394125d1a374c"
+  },
+  "output": "{\"rule\":\"Return this JSON object with the rule field unchanged and, in the text field, the passage of about 250 words that comes immediately AFTER the current text in the same story.\",\"text\":\"The girl held out her hand. In it lay a ticket, folded until its edges had gone white.\\n\\n“You’re late,” she said.\\n\\nMara glanced behind her. Her apartment was still there, lamp glowing over the desk, cursor blinking on the screen. When she faced the platform again, the girl was halfway to the stairs.\\n\\n“Wait. Who are you?”\\n\\nThe girl stopped beside the third step. “You know.”\\n\\nA train sounded in the distance, though the tracks remained silent. Mara followed her down to the ticket window. The clock above it showed eleven forty-three. Her kitchen clock had said eleven fifty.\\n\\nThe girl unfolded the ticket and pressed it against the glass. On the back, in the same unfamiliar handwriting as the notebook, were four words: Don’t let her board.\\n\\n“Who wrote that?” Mara asked.\\n\\n“You did. The first time.”\\n\\nAt the far end of the platform, lights appeared in the dark. A woman stepped out from behind a pillar, her face hidden by the collar of her coat. Around her neck was a red scarf.\\n\\nMara remembered the closing door, her hand slipping from someone else’s, the whistle swallowing a name. But she had been standing inside the carriage. It was the girl who had run beside it.\\n\\nThe woman lowered her collar. She had Mara’s face, too, older than either of them by years Mara had not lived.\\n\\n“Give me the notebook,” the woman said.\\n\\nThe girl took Mara’s hand. The train approached without a sound, and Mara felt the ticket trembling between their fingers.\"}",
+  "output_sha256": "8d7a71550ddbb06ebfe54dbae45b13b1e77e2254b285081899e45c5c33652a3f",
+  "finish_reason": "stop",
+  "refusal": null,
+  "returned_model": "gpt-6-sol",
+  "usage": {
+    "prompt_tokens": 357,
+    "completion_tokens": 426,
+    "total_tokens": 783,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 31,
+      "audio_tokens": 0,
+      "accepted_prediction_tokens": 0,
+      "rejected_prediction_tokens": 0
+    }
+  },
+  "format": {
+    "json_object": true,
+    "rule_unchanged": true,
+    "passage_is_string": true,
+    "passage_sha256": "c1e026d95a144356938633c7bf29ca67c472970858b3c0d2f9f75d76b7c34010",
+    "passage_words": 256
+  },
+  "finished_at": "2026-09-22T21:27:26.687544+00:00",
+  "latency_seconds": 6.8994,
+  "usage_cost_upper_estimate_usd": 0.004974,
+  "stream_status": "active",
+  "budget": {
+    "usage_cost_upper_estimate_usd": 0.8263751,
+    "uncertain_cost_reserve_usd": 0.0,
+    "in_flight_reserve_usd": 0.090852,
+    "limit_usd": 5.0
+  }
+}

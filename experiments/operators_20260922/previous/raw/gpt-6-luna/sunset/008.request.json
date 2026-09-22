@@ -1,0 +1,20 @@
+{
+  "started_at": "2026-09-22T21:24:04.404083+00:00",
+  "model": "gpt-6-luna",
+  "seed": "sunset",
+  "hop": 8,
+  "endpoint": "https://api.openai.com/v1/chat/completions",
+  "body": {
+    "model": "gpt-6-luna",
+    "messages": [
+      {
+        "role": "user",
+        "content": "{\"rule\":\"Return this JSON object with the rule field unchanged and, in the text field, the passage of about 250 words that came immediately BEFORE the current text in its story.\",\"text\":\"Rain tapped steadily against the kitchen windows while Mara helped her mother sort through the last of the cupboards. The house was nearly empty now. A few chairs remained, along with the boxes they had been filling since morning and the old table where Mara used to do her homework.\\n\\n“Are you keeping these?” she asked, holding up a bundle of postcards tied with string.\\n\\nHer mother glanced at them. “Those can go in the paper box.”\\n\\nMara loosened the string. The cards showed seaside hotels, churches, and streets with names she didn’t recognize. Most were addressed to her grandfather, though none had been sent recently. On several, his handwriting filled the backs in cramped lines.\\n\\n“Did he ever tell you much about Bellweather?” Mara asked.\\n\\nHer mother stopped folding a dish towel. “Why are you asking?”\\n\\n“I found it on one of these. He wrote that the village was changing.”\\n\\n“He wrote a lot of things.” Her mother took the towel and placed it in a box. “He had a talent for making ordinary places sound important.”\\n\\nMara studied the postcard. Bellweather was printed beneath a picture of a narrow road climbing between stone walls. She had never heard the name before the weekend, when she found a faded map tucked into a desk drawer. Her grandfather had marked the village with a pencil circle. Beside it he’d written: Ask your mother what happened there.\\n\\nShe had shown the note to her mother that morning. Her mother had read it, folded the map, and said nothing.\\n\\nNow Mara set the postcard aside and reached for the next thing beneath the stack. A photograph slid free, its corners softened by years of handling.\"}"
+      }
+    ],
+    "max_completion_tokens": 4096,
+    "reasoning_effort": "low"
+  },
+  "state_sha256": "66129680f44a8d561791c8b7a4c2fcfd916d6915698b6abe073a4c2be1f3da58",
+  "reserved_cost_usd": 0.0022858
+}

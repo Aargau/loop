@@ -1,0 +1,50 @@
+{
+  "model": "gpt-6-sol",
+  "seed": "sunset",
+  "hop": 17,
+  "http_status": 200,
+  "response_body": "{\n  \"id\": \"chatcmpl-ER2H24FgyB5TSUQcD0JLeN77Y88ed\",\n  \"object\": \"chat.completion\",\n  \"created\": 1790112304,\n  \"model\": \"gpt-6-sol\",\n  \"choices\": [\n    {\n      \"index\": 0,\n      \"message\": {\n        \"role\": \"assistant\",\n        \"content\": \"{\\\"rule\\\":\\\"Return this JSON object with the rule field unchanged and, in the text field, the passage of about 250 words that comes immediately AFTER the current text in the same story.\\\",\\\"text\\\":\\\"Mara kept her eyes on the girl. “Where did he go?”\\\\n\\\\nThe girl’s mouth opened, but no sound came out. Water crept beneath the hall door and touched the toe of her shoe. She stepped back.\\\\n\\\\n“He went to get the other key,” she said at last.\\\\n\\\\nMara looked down at the brass key in her hand. “Other?”\\\\n\\\\nThe desk knocked three times. In the cracked glass, her reflection raised a finger to its lips. Then it pointed toward the photograph, still caught in the drawer.\\\\n\\\\nMara pulled. The paper tore, leaving her father and the girl in the yellow coat in her hand. The other girl remained inside the desk.\\\\n\\\\nFrom the hall, her father’s voice softened. “Don’t make her tell you.”\\\\n\\\\nMara remembered a bare foot stopping outside the space beneath the stairs. Her father had crouched and reached in, not for her, but for the girl beside her. Mara had held on to the girl’s coat so tightly that a button came off in her fist.\\\\n\\\\nShe turned the torn photograph over. Under the four words, hidden by the fold, was a fifth: aloud.\\\\n\\\\n“Which one remembers?” Mara asked.\\\\n\\\\nThe girl stared at her. “You do.”\\\\n\\\\n“No.” Mara faced the glass. “Which one remembers?”\\\\n\\\\nHer reflection lowered its hand. Its cheek was smudged with soot.\\\\n\\\\nThe hall door swung inward. No one stood there. At Mara’s feet lay a yellow button, wet with rain.\\\\n\\\\nBehind her, the girl whispered, “I told you she’d learned to knock.”\\\\n\\\\nIn the glass, Mara’s reflection smiled and tapped once, gently, from the other side.\\\"}\",\n        \"refusal\": null,\n        \"annotations\": []\n      },\n      \"finish_reason\": \"stop\"\n    }\n  ],\n  \"usage\": {\n    \"prompt_tokens\": 461,\n    \"completion_tokens\": 450,\n    \"total_tokens\": 911,\n    \"prompt_tokens_details\": {\n      \"cached_tokens\": 0,\n      \"cache_write_tokens\": 0,\n      \"audio_tokens\": 0\n    },\n    \"completion_tokens_details\": {\n      \"reasoning_tokens\": 27,\n      \"audio_tokens\": 0,\n      \"accepted_prediction_tokens\": 0,\n      \"rejected_prediction_tokens\": 0\n    }\n  },\n  \"service_tier\": \"default\",\n  \"system_fingerprint\": null\n}\n",
+  "response_headers": {
+    "Date": "Tue, 22 Sep 2026 21:25:10 GMT",
+    "openai-processing-ms": "6834",
+    "x-request-id": "req_ae13295b332f492b9d7e79774678b895"
+  },
+  "output": "{\"rule\":\"Return this JSON object with the rule field unchanged and, in the text field, the passage of about 250 words that comes immediately AFTER the current text in the same story.\",\"text\":\"Mara kept her eyes on the girl. “Where did he go?”\\n\\nThe girl’s mouth opened, but no sound came out. Water crept beneath the hall door and touched the toe of her shoe. She stepped back.\\n\\n“He went to get the other key,” she said at last.\\n\\nMara looked down at the brass key in her hand. “Other?”\\n\\nThe desk knocked three times. In the cracked glass, her reflection raised a finger to its lips. Then it pointed toward the photograph, still caught in the drawer.\\n\\nMara pulled. The paper tore, leaving her father and the girl in the yellow coat in her hand. The other girl remained inside the desk.\\n\\nFrom the hall, her father’s voice softened. “Don’t make her tell you.”\\n\\nMara remembered a bare foot stopping outside the space beneath the stairs. Her father had crouched and reached in, not for her, but for the girl beside her. Mara had held on to the girl’s coat so tightly that a button came off in her fist.\\n\\nShe turned the torn photograph over. Under the four words, hidden by the fold, was a fifth: aloud.\\n\\n“Which one remembers?” Mara asked.\\n\\nThe girl stared at her. “You do.”\\n\\n“No.” Mara faced the glass. “Which one remembers?”\\n\\nHer reflection lowered its hand. Its cheek was smudged with soot.\\n\\nThe hall door swung inward. No one stood there. At Mara’s feet lay a yellow button, wet with rain.\\n\\nBehind her, the girl whispered, “I told you she’d learned to knock.”\\n\\nIn the glass, Mara’s reflection smiled and tapped once, gently, from the other side.\"}",
+  "output_sha256": "6cc1472e9d3640dca02157fa38b7908fe48e49794bea0fa2392cf9886f6c7fd5",
+  "finish_reason": "stop",
+  "refusal": null,
+  "returned_model": "gpt-6-sol",
+  "usage": {
+    "prompt_tokens": 461,
+    "completion_tokens": 450,
+    "total_tokens": 911,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 27,
+      "audio_tokens": 0,
+      "accepted_prediction_tokens": 0,
+      "rejected_prediction_tokens": 0
+    }
+  },
+  "format": {
+    "json_object": true,
+    "rule_unchanged": true,
+    "passage_is_string": true,
+    "passage_sha256": "d932d0e214b85c40d5543b59adc7d6a7974b4af5a7842e259ec3cfcc466bc224",
+    "passage_words": 263
+  },
+  "finished_at": "2026-09-22T21:25:06.529562+00:00",
+  "latency_seconds": 6.9516,
+  "usage_cost_upper_estimate_usd": 0.005422,
+  "stream_status": "active",
+  "budget": {
+    "usage_cost_upper_estimate_usd": 0.3496651,
+    "uncertain_cost_reserve_usd": 0.0,
+    "in_flight_reserve_usd": 0.3070107,
+    "limit_usd": 5.0
+  }
+}

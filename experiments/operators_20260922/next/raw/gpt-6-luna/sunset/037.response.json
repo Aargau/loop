@@ -1,0 +1,47 @@
+{
+  "model": "gpt-6-luna",
+  "seed": "sunset",
+  "hop": 37,
+  "http_status": 200,
+  "response_body": "{\n  \"id\": \"chatcmpl-ER2IitxWbPTORQrQUNzkuU5xHs4Wp\",\n  \"object\": \"chat.completion\",\n  \"created\": 1790112408,\n  \"model\": \"gpt-6-luna\",\n  \"choices\": [\n    {\n      \"index\": 0,\n      \"message\": {\n        \"role\": \"assistant\",\n        \"content\": \"{\\\"rule\\\":\\\"Return this JSON object with the rule field unchanged and, in the text field, the passage of about 250 words that comes immediately AFTER the current text in the same story.\\\",\\\"text\\\":\\\"Inside, the station smelled of wet wool and burnt coffee. They found a table by the windows, where the rain blurred the tracks into silver lines. Mara laid the envelope between them.\\n\\n“You open it,” her brother said.\\n\\nShe slid a finger beneath the flap. The paper inside was folded twice, her mother’s handwriting neat and slanted across the page.\\n\\nMy dears,\\n\\nIf you’re reading this together, then one of you has finally found the courage to come home, and the other has found the courage to let him in.\\n\\nMara stopped. Her brother stared at the table.\\n\\nTheir mother had written about the garden, about the old house settling in winter, about how she’d kept both their childhood drawings in the hall cupboard. Then, near the bottom, the lines grew smaller.\\n\\nI know you’ve each blamed the other for the last years. Don’t spend what remains proving who was hurt first. You were both children when you learned to leave a room rather than ask to be forgiven.\\n\\nMara folded the letter carefully, though her hands had begun to tremble.\\n\\n“She knew,” she whispered.\\n\\n“She knew everything,” he said.\\n\\nOutside, a train pulled in with a long metallic groan. Passengers stepped onto the platform, lifting collars against the rain. Her brother glanced toward them, then back at Mara.\\n\\n“I can find somewhere to stay,” he said. “I don’t want to assume—”\\n\\n“Don’t,” she interrupted.\\n\\nHe looked down.\\n\\n“Don’t make another decision for me before I get to answer.”\\n\\nFor a moment, the years between them seemed to wait.\\n\\nThen Mara pushed her untouched coffee toward him. “Come home tonight,” she said. “Tomorrow, we can decide what home means.”\\\"}\",\n        \"refusal\": null,\n        \"annotations\": []\n      },\n      \"finish_reason\": \"stop\"\n    }\n  ],\n  \"usage\": {\n    \"prompt_tokens\": 428,\n    \"completion_tokens\": 477,\n    \"total_tokens\": 905,\n    \"prompt_tokens_details\": {\n      \"cached_tokens\": 0,\n      \"cache_write_tokens\": 0,\n      \"audio_tokens\": 0\n    },\n    \"completion_tokens_details\": {\n      \"reasoning_tokens\": 76,\n      \"audio_tokens\": 0,\n      \"accepted_prediction_tokens\": 0,\n      \"rejected_prediction_tokens\": 0\n    }\n  },\n  \"service_tier\": \"default\",\n  \"system_fingerprint\": null\n}\n",
+  "response_headers": {
+    "Date": "Tue, 22 Sep 2026 21:26:53 GMT",
+    "openai-processing-ms": "5239",
+    "x-request-id": "req_d680be1d997c484a9b7cdeabe53f8c42"
+  },
+  "output": "{\"rule\":\"Return this JSON object with the rule field unchanged and, in the text field, the passage of about 250 words that comes immediately AFTER the current text in the same story.\",\"text\":\"Inside, the station smelled of wet wool and burnt coffee. They found a table by the windows, where the rain blurred the tracks into silver lines. Mara laid the envelope between them.\n\n“You open it,” her brother said.\n\nShe slid a finger beneath the flap. The paper inside was folded twice, her mother’s handwriting neat and slanted across the page.\n\nMy dears,\n\nIf you’re reading this together, then one of you has finally found the courage to come home, and the other has found the courage to let him in.\n\nMara stopped. Her brother stared at the table.\n\nTheir mother had written about the garden, about the old house settling in winter, about how she’d kept both their childhood drawings in the hall cupboard. Then, near the bottom, the lines grew smaller.\n\nI know you’ve each blamed the other for the last years. Don’t spend what remains proving who was hurt first. You were both children when you learned to leave a room rather than ask to be forgiven.\n\nMara folded the letter carefully, though her hands had begun to tremble.\n\n“She knew,” she whispered.\n\n“She knew everything,” he said.\n\nOutside, a train pulled in with a long metallic groan. Passengers stepped onto the platform, lifting collars against the rain. Her brother glanced toward them, then back at Mara.\n\n“I can find somewhere to stay,” he said. “I don’t want to assume—”\n\n“Don’t,” she interrupted.\n\nHe looked down.\n\n“Don’t make another decision for me before I get to answer.”\n\nFor a moment, the years between them seemed to wait.\n\nThen Mara pushed her untouched coffee toward him. “Come home tonight,” she said. “Tomorrow, we can decide what home means.”\"}",
+  "output_sha256": "9207d5cc86b271bfdc9b7bec7a9d3fa94f30091f20293e92635fb2bb6724a69d",
+  "finish_reason": "stop",
+  "refusal": null,
+  "returned_model": "gpt-6-luna",
+  "usage": {
+    "prompt_tokens": 428,
+    "completion_tokens": 477,
+    "total_tokens": 905,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 76,
+      "audio_tokens": 0,
+      "accepted_prediction_tokens": 0,
+      "rejected_prediction_tokens": 0
+    }
+  },
+  "format": {
+    "json_object": false,
+    "rule_unchanged": false
+  },
+  "finished_at": "2026-09-22T21:26:49.542081+00:00",
+  "latency_seconds": 5.3702,
+  "usage_cost_upper_estimate_usd": 0.0002813,
+  "stream_status": "active",
+  "budget": {
+    "usage_cost_upper_estimate_usd": 0.7122606,
+    "uncertain_cost_reserve_usd": 0.0,
+    "in_flight_reserve_usd": 0.35055,
+    "limit_usd": 5.0
+  }
+}
