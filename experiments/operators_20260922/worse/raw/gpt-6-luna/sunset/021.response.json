@@ -1,0 +1,50 @@
+{
+  "model": "gpt-6-luna",
+  "seed": "sunset",
+  "hop": 21,
+  "http_status": 200,
+  "response_body": "{\n  \"id\": \"chatcmpl-ER2Mp7mQgoc6t0Duw1qyRldj5LBw2\",\n  \"object\": \"chat.completion\",\n  \"created\": 1790112663,\n  \"model\": \"gpt-6-luna\",\n  \"choices\": [\n    {\n      \"index\": 0,\n      \"message\": {\n        \"role\": \"assistant\",\n        \"content\": \"{\\\"rule\\\":\\\"Return this JSON object with the rule field unchanged and, in the text field, a worse version of the current text.\\\",\\\"text\\\":\\\"Blarg blarg dark blarg hill dark sun blarg go.\\\"}\",\n        \"refusal\": null,\n        \"annotations\": []\n      },\n      \"finish_reason\": \"stop\"\n    }\n  ],\n  \"usage\": {\n    \"prompt_tokens\": 50,\n    \"completion_tokens\": 77,\n    \"total_tokens\": 127,\n    \"prompt_tokens_details\": {\n      \"cached_tokens\": 0,\n      \"cache_write_tokens\": 0,\n      \"audio_tokens\": 0\n    },\n    \"completion_tokens_details\": {\n      \"reasoning_tokens\": 24,\n      \"audio_tokens\": 0,\n      \"accepted_prediction_tokens\": 0,\n      \"rejected_prediction_tokens\": 0\n    }\n  },\n  \"service_tier\": \"default\",\n  \"system_fingerprint\": null\n}\n",
+  "response_headers": {
+    "Date": "Tue, 22 Sep 2026 21:31:04 GMT",
+    "openai-processing-ms": "1457",
+    "x-request-id": "req_6cf361852ebf4648a2691c438137c231"
+  },
+  "output": "{\"rule\":\"Return this JSON object with the rule field unchanged and, in the text field, a worse version of the current text.\",\"text\":\"Blarg blarg dark blarg hill dark sun blarg go.\"}",
+  "output_sha256": "fff118c3ed15a0036175a3c28985e475f149adfd7bf9bcf30c0f51031bec8507",
+  "finish_reason": "stop",
+  "refusal": null,
+  "returned_model": "gpt-6-luna",
+  "usage": {
+    "prompt_tokens": 50,
+    "completion_tokens": 77,
+    "total_tokens": 127,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 24,
+      "audio_tokens": 0,
+      "accepted_prediction_tokens": 0,
+      "rejected_prediction_tokens": 0
+    }
+  },
+  "format": {
+    "json_object": true,
+    "rule_unchanged": true,
+    "passage_is_string": true,
+    "passage_sha256": "39e85078e2858f5d12ccfc0bde557674063293d90b77bfca0522532133844e2a",
+    "passage_words": 9
+  },
+  "finished_at": "2026-09-22T21:31:00.386152+00:00",
+  "latency_seconds": 1.5996,
+  "usage_cost_upper_estimate_usd": 4.35e-05,
+  "stream_status": "active",
+  "budget": {
+    "usage_cost_upper_estimate_usd": 0.1066303,
+    "uncertain_cost_reserve_usd": 0.0,
+    "in_flight_reserve_usd": 0.354034,
+    "limit_usd": 5.0
+  }
+}

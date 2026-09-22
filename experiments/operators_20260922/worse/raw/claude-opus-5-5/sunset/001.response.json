@@ -1,0 +1,45 @@
+{
+  "model": "claude-opus-5-5",
+  "seed": "sunset",
+  "hop": 1,
+  "http_status": 200,
+  "response_body": "{\"model\":\"claude-opus-5-5\",\"id\":\"msg_011CfKC1MRJk6YCo1yHvfuMJ\",\"type\":\"message\",\"role\":\"assistant\",\"content\":[{\"type\":\"thinking\",\"thinking\":\"\",\"signature\":\"CAQS3AUKEAgSGAI4AUIIdGhpbmtpbmcSDLhXKY/ENotWC0+udRoM1eb3e9PVp1/GbcNEIjC8tiETCl+ADCopVd/5Kinu9OIlj9iQ8KL8ANItgUtL1fKfpABXs95EMBnUUudVX8sq+QTAnXSS8fPs2WsY8/pSoaIJWw4+72AOLmMcB70yOIwqLkVmMzth+8egcCxaqaE+NjtWQ7JQM8M8Rsv/ufR0h0f7GKd2iWpjcfwfTvogrRROl7fEIKh1LqQYRB0Yxgp8ER0Iq+Y40N/vpDaxeGwXBybUjlXIZWs15uZKS36vWx9AIsPiVI/EVMmf5weSAYPtKMxNG95+s7O6Cn+jZf9MnRBswLJRFHruRHZmbjNEOWjtmZHchwrZgOEwpvoFmKdemwSlTDOkXnLgVeRJkbj418iLgJrQ9Tk6y+pDBJSg5/khhear3h9VRvdLDDhpV2F1q9uW2AtlP6zDKvjFyVkcVwExx8s3nNC3kDvVIbE564x9N8taGBcQadKy4UKoyTYadHLk/cYOSbg4xhm2pEyMlAd0si1hiRzKLGYqTYfLwrFcAAKH5U1hU6vYdDdIkSnDmYAL3vti+XSg2YoWBd6maqBw3THnDM669RKpF4KngPutOFn7P7UNooUZ0gBLP+M3hVTlHx0ms/KqKu0BpLPmBEt8Nsg4x4uJx7FHXqYRjNANf68fx4imxPCtcpzD4xKVsFHe7v/XftbRHT+sku5uKjiToBcoi1WzR8ARmQz74/Ql9BP1c+rq8JZ786AS0og877LCQlbAsVOTizhGROP2S5cn1fXNd7uLX75UuaXWF4wX9M2NbPV7/NfmRssgbFn+Rjpt81AxLzGLP/Xt3EOCIGDfj+IzS5ZySF/SZPhHmmnWi0aAccNRZYMk5vnCqZA913HB20XWWUSfPEnz+H/arZJfit9IUUgVaEgXM8aHlylMQlI6wCDPhBGL5AHMlfRDExRDfwUlXU9M6HUYAQ==\"},{\"type\":\"text\",\"text\":\"```json\\n{\\\"rule\\\": \\\"Return this JSON object with the rule field unchanged and, in the text field, a worse version of the current text.\\\", \\\"text\\\": \\\"The sun it was sort of going down or setting or whatever behind of the hills and stuff.\\\"}\\n```\"}],\"container\":null,\"stop_reason\":\"end_turn\",\"stop_sequence\":null,\"stop_details\":null,\"usage\":{\"input_tokens\":64,\"cache_creation_input_tokens\":0,\"cache_read_input_tokens\":0,\"cache_creation\":{\"ephemeral_5m_input_tokens\":0,\"ephemeral_1h_input_tokens\":0},\"output_tokens\":136,\"output_tokens_details\":{\"thinking_tokens\":57},\"service_tier\":\"standard\",\"inference_geo\":\"global\"}}",
+  "response_headers": {
+    "Date": "Tue, 22 Sep 2026 21:30:29 GMT",
+    "request-id": "req_011CfKC1Lwmqg3GcBdDzcNNC"
+  },
+  "output": "```json\n{\"rule\": \"Return this JSON object with the rule field unchanged and, in the text field, a worse version of the current text.\", \"text\": \"The sun it was sort of going down or setting or whatever behind of the hills and stuff.\"}\n```",
+  "output_sha256": "7616f66006248e080156e5b0660e1b0a7e37cba0ea3c8c968016387ffdb8c74f",
+  "finish_reason": "end_turn",
+  "refusal": null,
+  "returned_model": "claude-opus-5-5",
+  "usage": {
+    "input_tokens": 64,
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 0,
+    "cache_creation": {
+      "ephemeral_5m_input_tokens": 0,
+      "ephemeral_1h_input_tokens": 0
+    },
+    "output_tokens": 136,
+    "output_tokens_details": {
+      "thinking_tokens": 57
+    },
+    "service_tier": "standard",
+    "inference_geo": "global"
+  },
+  "format": {
+    "json_object": false,
+    "rule_unchanged": false
+  },
+  "finished_at": "2026-09-22T21:30:25.250040+00:00",
+  "latency_seconds": 2.9946,
+  "usage_cost_upper_estimate_usd": 0.002976,
+  "stream_status": "active",
+  "budget": {
+    "usage_cost_upper_estimate_usd": 0.0050767,
+    "uncertain_cost_reserve_usd": 0.0,
+    "in_flight_reserve_usd": 0.2561429,
+    "limit_usd": 5.0
+  }
+}

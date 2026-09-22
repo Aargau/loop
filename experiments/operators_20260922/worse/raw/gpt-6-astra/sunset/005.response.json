@@ -1,0 +1,50 @@
+{
+  "model": "gpt-6-astra",
+  "seed": "sunset",
+  "hop": 5,
+  "http_status": 200,
+  "response_body": "{\n  \"id\": \"chatcmpl-ER2MYYcurIlZLpdIiYFDhIWtltRaZ\",\n  \"object\": \"chat.completion\",\n  \"created\": 1790112646,\n  \"model\": \"gpt-6-astra\",\n  \"choices\": [\n    {\n      \"index\": 0,\n      \"message\": {\n        \"role\": \"assistant\",\n        \"content\": \"{\\\"rule\\\":\\\"Return this JSON object with the rule field unchanged and, in the text field, a worse version of the current text.\\\",\\\"text\\\":\\\"The sun-ish sunny sun sunthing thingthingy-ish was was doing doing doing the do-do-ish doingnessness of that down-going go-downy going-down-down downish downy setting-ish setty set-sort-of-thing thingthingness thingnessly behind behind behindish behindy-behind those hill hill hillthings thinghills what were were being being all hilly-like hillishly hillishnessly with extra extra hillnessness of hills hills and hill-type hilly hillitude-itude hillthingness or whatever sun down hill yes.\\\"}\",\n        \"refusal\": null,\n        \"annotations\": []\n      },\n      \"finish_reason\": \"stop\"\n    }\n  ],\n  \"usage\": {\n    \"prompt_tokens\": 97,\n    \"completion_tokens\": 144,\n    \"total_tokens\": 241,\n    \"prompt_tokens_details\": {\n      \"cached_tokens\": 0,\n      \"cache_write_tokens\": 0,\n      \"audio_tokens\": 0\n    },\n    \"completion_tokens_details\": {\n      \"reasoning_tokens\": 0,\n      \"audio_tokens\": 0,\n      \"accepted_prediction_tokens\": 0,\n      \"rejected_prediction_tokens\": 0\n    }\n  },\n  \"service_tier\": \"default\",\n  \"system_fingerprint\": null\n}\n",
+  "response_headers": {
+    "Date": "Tue, 22 Sep 2026 21:30:53 GMT",
+    "openai-processing-ms": "7144",
+    "x-request-id": "req_313b887ca81241568f2ccc6ee56a9b60"
+  },
+  "output": "{\"rule\":\"Return this JSON object with the rule field unchanged and, in the text field, a worse version of the current text.\",\"text\":\"The sun-ish sunny sun sunthing thingthingy-ish was was doing doing doing the do-do-ish doingnessness of that down-going go-downy going-down-down downish downy setting-ish setty set-sort-of-thing thingthingness thingnessly behind behind behindish behindy-behind those hill hill hillthings thinghills what were were being being all hilly-like hillishly hillishnessly with extra extra hillnessness of hills hills and hill-type hilly hillitude-itude hillthingness or whatever sun down hill yes.\"}",
+  "output_sha256": "1d6eac98ecf906b4f96e792f3694bfb71524fa93b2060105c1512372268c5e95",
+  "finish_reason": "stop",
+  "refusal": null,
+  "returned_model": "gpt-6-astra",
+  "usage": {
+    "prompt_tokens": 97,
+    "completion_tokens": 144,
+    "total_tokens": 241,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "audio_tokens": 0,
+      "accepted_prediction_tokens": 0,
+      "rejected_prediction_tokens": 0
+    }
+  },
+  "format": {
+    "json_object": true,
+    "rule_unchanged": true,
+    "passage_is_string": true,
+    "passage_sha256": "9b9264e3f000e66c6f8bb74e80f5185b88e60e5517c0f2f726a712cb13ce938b",
+    "passage_words": 62
+  },
+  "finished_at": "2026-09-22T21:30:48.786348+00:00",
+  "latency_seconds": 7.2663,
+  "usage_cost_upper_estimate_usd": 0.00817,
+  "stream_status": "active",
+  "budget": {
+    "usage_cost_upper_estimate_usd": 0.0680205,
+    "uncertain_cost_reserve_usd": 0.0,
+    "in_flight_reserve_usd": 0.1343127,
+    "limit_usd": 5.0
+  }
+}

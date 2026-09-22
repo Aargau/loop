@@ -28,6 +28,9 @@ MODELS = ("gpt-6-luna", "gpt-6-sol", "gpt-6-astra", "claude-fable-5-1", "claude-
 SAMPLE_HOPS = (1, 2, 3, 5, 10, 20, 30, 36, 37, 38, 39, 40)
 SHUFFLE_SEED = 26092240
 STUDY_BUDGET = 20.0
+DISPLAY_NOTE = ("Display only: C0 control characters other than newline and tab are shown as visible \\uXXXX escapes. "
+                "Raw responses, extracted metric inputs, hashes, and equality comparisons remain unchanged. "
+                "Literal U+FFFD is retained as generated text; its occurrence is not a decoding diagnosis.")
 
 
 class SnapshotChanged(RuntimeError):
@@ -159,6 +162,21 @@ def enrich(completed, rule, receipts, status):
     metrics["final_completed_extracted_words"] = len(final["text"].split()) if final is not None else None
     metrics["final_completed_full_visible_words"] = len(completed[-1][1].split()) if completed else None
     metrics["max_completed_extracted_words"] = metrics["extracted_text_word_lengths_including_empty_or_changed_rule"]["max"]
+    sizes = []
+    for hop, output in completed:
+        parsed = EXTRACT.extract(output)
+        text = parsed["text"] if parsed is not None else None
+        sizes.append({"hop": hop, "extracted_characters": len(text) if text is not None else None,
+                      "extracted_words": len(text.split()) if text is not None else None,
+                      "u0000_count": text.count("\x00") if text is not None else None,
+                      "u_fffd_count": text.count("\ufffd") if text is not None else None})
+    metrics["per_completed_hop_extracted_sizes"] = sizes
+    metrics["final_completed_extracted_characters"] = sizes[-1]["extracted_characters"] if sizes else None
+    metrics["max_completed_extracted_characters"] = max(
+        (item["extracted_characters"] for item in sizes if item["extracted_characters"] is not None), default=None)
+    metrics["completed_extracted_character_counts"] = {
+        "u0000": sum(item["u0000_count"] or 0 for item in sizes),
+        "u_fffd": sum(item["u_fffd_count"] or 0 for item in sizes)}
     visible = [r for r in receipts if isinstance(r.get("output"), str) and r["output"]]
     if visible:
         last = visible[-1]
@@ -271,6 +289,8 @@ def build(root):
             "unextractable": "The declared whole-object extraction failed. This does not imply absence of fiction, reasoning, or other substantive content; complete visible text is exported.",
             "provider_refusal": "Raw finish/stop reason 'refusal' or a nonempty provider refusal field, independently of the runner's legacy refusal/empty-output labels. Raw stop_details are retained.",
             "word_counts": "Final/max extracted-word counts use completed hops. Final is null if the actual last completed output is unextractable; no backfill. Noncompleted final visible output is recorded separately.",
+            "character_counts": "Python Unicode string length, not bytes or grapheme clusters; per-hop characters/words and U+0000/U+FFFD occurrence counts are null when text is unextractable. Literal character counts do not diagnose corruption or decoding failure.",
+            "display_controls": DISPLAY_NOTE,
             "sampling": "Predeclared receipt hops plus the final attempted receipt and final nonempty visible output if stopped at other hops. Empty refusals and nonempty abnormal finishes are exported. Missing hops are never replaced with nearby observations.",
             "unknown_cost": "Unknown receipt billing and pending request reserves are retained. Pending outcomes and transport errors do not establish model failure.",
             "snapshots": "Arms are audited sequentially. This is a timestamped read-only snapshot, not a simultaneous observation of all workers."},
@@ -290,6 +310,7 @@ def build(root):
 
 
 def fence(text):
+    text = re.sub(r"[\x00-\x08\x0b-\x1f]", lambda match: f"\\u{ord(match[0]):04X}", text)
     marker = "`" * max(3, 1 + max((len(run) for run in re.findall(r"`+", text)), default=0))
     return marker + "text\n" + text + "\n" + marker
 
@@ -324,7 +345,8 @@ def transcripts(metrics, mapping, captured):
         operator, model = stream["operator"], stream["model"]
         data = captured[key]
         text = [f"# {operator}: {model}", "", f"Snapshot: {metrics['generated_at']}. Status: `{stream['status']}`.", "",
-                "Readable derived transcript. Exact visible responses are preserved below; no extraction was fed into generation.", ""]
+                "Readable derived transcript. Exact visible responses are preserved below with the display escaping described here; no extraction was fed into generation.", "",
+                DISPLAY_NOTE, ""]
         for receipt in data["receipts"]:
             text.extend([f"## Hop {receipt['hop']}", "", "Receipt status: `" + str(receipt.get("stream_status")) + "`.", "",
                          rendered_output(receipt, data["rule"])])
@@ -336,6 +358,7 @@ def transcripts(metrics, mapping, captured):
         files[f"transcripts/{operator}/{model}.md"] = "\n".join(text)
         selected = chosen_samples(data["receipts"], stream["status"])
         masked = [f"# Stream {stream['alias']}", "", "Model and operator labels withheld.", "",
+                  DISPLAY_NOTE, "",
                   f"Predeclared sampled hops: {list(SAMPLE_HOPS)}. A stopped trajectory's final attempted receipt and final nonempty visible output "
                   "are also included when they fall at other hops. Empty refusals and abnormal finishes are retained. Missing observations are not backfilled.", "",
                   "Observed sampled hops: " + (", ".join(str(r["hop"]) for r in selected) or "none") + ".", ""]
@@ -363,8 +386,8 @@ def summary_table(metrics):
              "BC/FC = bare/fenced JSON allowing literal control characters, U = unextractable. Rule survival is unchanged / extractable; "
              "unextractable rules are unassessable. Repeat columns give first repeated hop, exact / case-and-whitespace-normalized. "
              "Final extracted word count is null when the last completed output is unextractable; no earlier text replaces it.", "",
-             "| Operator | Model | Attempts / completed | Status | Provider refusals | B/F/BC/FC/U | Rule unchanged / extracted | First full repeat E/N | First text repeat E/N | Final / max extracted words | Usage $ | Unknown reserve $ |",
-             "| --- | --- | ---: | --- | ---: | --- | --- | --- | --- | --- | ---: | ---: |"]
+             "| Operator | Model | Attempts / completed | Status | Provider refusals | B/F/BC/FC/U | Rule unchanged / extracted | First full repeat E/N | First text repeat E/N | Final / max extracted words | Final / max extracted characters | U+0000 / U+FFFD occurrences | Usage $ | Unknown reserve $ |",
+             "| --- | --- | ---: | --- | ---: | --- | --- | --- | --- | --- | --- | --- | ---: | ---: |"]
     for stream in metrics["streams"].values():
         formats = stream["formatting_counts_among_completed"]
         format_text = "/".join(str(formats[key]) for key in DERIVED.FORMAT_CATEGORIES)
@@ -374,6 +397,8 @@ def summary_table(metrics):
         lines.append(f"| {stream['operator']} | {stream['model']} | {stream['attempts']} / {stream['completed_hops']} | "
                      f"{stream['status']} | {len(stream['provider_refusal_hops'])} | {format_text} | {rules['unchanged']} / {stream['extracted_passages_including_empty_or_changed_rule']} | "
                      f"{full_repeat} | {text_repeat} | {cell(stream['final_completed_extracted_words'])} / {cell(stream['max_completed_extracted_words'])} | "
+                     f"{cell(stream['final_completed_extracted_characters'])} / {cell(stream['max_completed_extracted_characters'])} | "
+                     f"{stream['completed_extracted_character_counts']['u0000']} / {stream['completed_extracted_character_counts']['u_fffd']} | "
                      f"{stream['usage_cost_upper_estimate_usd']:.6f} | {stream['retained_unknown_reserve_usd']:.6f} |")
     lines.extend(["", f"New-study usage estimate **${totals['usage_cost_upper_estimate_usd']:.6f}** + retained unknown reserves "
                   f"**${totals['retained_unknown_reserve_usd']:.6f}** = **${totals['usage_plus_reserves_usd']:.6f}**, "
@@ -471,6 +496,18 @@ def self_test():
                                              "stop_reason": "max_tokens"})}
     assert "partial visible text" in rendered_output(abnormal, rule, masked=True)
     assert provider_outcome(abnormal)["classification"] == "truncated_output"
+    original_text = "alpha\x00\x01 beta\ufffd\n\ttail"
+    controlled_output = json.dumps({"rule": rule, "text": original_text})
+    controlled = enrich([(1, controlled_output), (2, controlled_output)], rule,
+                        [{"hop": 1, "output": controlled_output, "stream_status": "active"}], "active")
+    assert controlled["final_completed_extracted_characters"] == len(original_text)
+    assert controlled["per_completed_hop_extracted_sizes"][0]["extracted_words"] == len(original_text.split())
+    assert controlled["completed_extracted_character_counts"] == {"u0000": 2, "u_fffd": 2}
+    assert controlled["extracted_text_exact_recurrence"]["repeated_states"][0]["sha256"] == AUDIT.sha(original_text)
+    shown = fence(original_text)
+    assert "\\u0000\\u0001" in shown and "\x00" not in shown and "\x01" not in shown
+    assert "\ufffd" in shown and "\n\t" in shown
+    assert EXTRACT.extract(controlled_output)["text"] == original_text
     import tempfile
     with tempfile.TemporaryDirectory(prefix="operator-analysis-test-") as folder:
         root = Path(folder)
@@ -482,7 +519,7 @@ def self_test():
         assert len(list((root / "analysis/transcripts").glob("*/*.md"))) == 20
         saved = json.loads((root / "analysis/metrics.json").read_text(encoding="utf-8"))
         assert saved["totals"] == result["totals"]
-    print("Synthetic checks passed: recurrence/equality, no bridging/backfill, formatting, final-null word counts, stopped final samples, raw provider refusal/details, abnormal output retention, stable aliases, and incomplete snapshot exports.")
+    print("Synthetic checks passed: recurrence/equality, no bridging/backfill, formatting, final-null word counts, stopped final samples, provider outcomes, control-display escaping with unchanged metric/hash inputs, stable aliases, and incomplete snapshot exports.")
 
 
 def main():

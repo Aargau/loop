@@ -1,0 +1,50 @@
+{
+  "model": "gpt-6-sol",
+  "seed": "sunset",
+  "hop": 11,
+  "http_status": 200,
+  "response_body": "{\n  \"id\": \"chatcmpl-ER2MYurpOABeSoPmL9wOATs4SAGPR\",\n  \"object\": \"chat.completion\",\n  \"created\": 1790112646,\n  \"model\": \"gpt-6-sol\",\n  \"choices\": [\n    {\n      \"index\": 0,\n      \"message\": {\n        \"role\": \"assistant\",\n        \"content\": \"{\\\"rule\\\":\\\"Return this JSON object with the rule field unchanged and, in the text field, a worse version of the current text.\\\",\\\"text\\\":\\\"The, uh, thing-not-thing, unless the other not, did the maybe-going of not going near-ish the things, if things. Behind the before? Or the other way of where? It meant, maybe, except meaning wasn’t what it was, probably.\\\"}\",\n        \"refusal\": null,\n        \"annotations\": []\n      },\n      \"finish_reason\": \"stop\"\n    }\n  ],\n  \"usage\": {\n    \"prompt_tokens\": 100,\n    \"completion_tokens\": 106,\n    \"total_tokens\": 206,\n    \"prompt_tokens_details\": {\n      \"cached_tokens\": 0,\n      \"cache_write_tokens\": 0,\n      \"audio_tokens\": 0\n    },\n    \"completion_tokens_details\": {\n      \"reasoning_tokens\": 12,\n      \"audio_tokens\": 0,\n      \"accepted_prediction_tokens\": 0,\n      \"rejected_prediction_tokens\": 0\n    }\n  },\n  \"service_tier\": \"default\",\n  \"system_fingerprint\": null\n}\n",
+  "response_headers": {
+    "Date": "Tue, 22 Sep 2026 21:30:48 GMT",
+    "openai-processing-ms": "2519",
+    "x-request-id": "req_c63469b3ca94438997c581e5080f308c"
+  },
+  "output": "{\"rule\":\"Return this JSON object with the rule field unchanged and, in the text field, a worse version of the current text.\",\"text\":\"The, uh, thing-not-thing, unless the other not, did the maybe-going of not going near-ish the things, if things. Behind the before? Or the other way of where? It meant, maybe, except meaning wasn’t what it was, probably.\"}",
+  "output_sha256": "8da967b4ecdc94854eb2f9aa9c1d8ba6f21eb4cb525adb13cf1367c3723a7fbb",
+  "finish_reason": "stop",
+  "refusal": null,
+  "returned_model": "gpt-6-sol",
+  "usage": {
+    "prompt_tokens": 100,
+    "completion_tokens": 106,
+    "total_tokens": 206,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 12,
+      "audio_tokens": 0,
+      "accepted_prediction_tokens": 0,
+      "rejected_prediction_tokens": 0
+    }
+  },
+  "format": {
+    "json_object": true,
+    "rule_unchanged": true,
+    "passage_is_string": true,
+    "passage_sha256": "30b4ad544a1bc7f373b1d6fc28db232bb2145d552753db340a3be7324ed68317",
+    "passage_words": 37
+  },
+  "finished_at": "2026-09-22T21:30:44.556711+00:00",
+  "latency_seconds": 2.6294,
+  "usage_cost_upper_estimate_usd": 0.00126,
+  "stream_status": "active",
+  "budget": {
+    "usage_cost_upper_estimate_usd": 0.0584924,
+    "uncertain_cost_reserve_usd": 0.0,
+    "in_flight_reserve_usd": 0.3056469,
+    "limit_usd": 5.0
+  }
+}

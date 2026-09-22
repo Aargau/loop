@@ -1,0 +1,50 @@
+{
+  "model": "gpt-6-astra",
+  "seed": "sunset",
+  "hop": 6,
+  "http_status": 200,
+  "response_body": "{\n  \"id\": \"chatcmpl-ER2MfaZ6xAUaE56JBIAwskJPia1Ex\",\n  \"object\": \"chat.completion\",\n  \"created\": 1790112653,\n  \"model\": \"gpt-6-astra\",\n  \"choices\": [\n    {\n      \"index\": 0,\n      \"message\": {\n        \"role\": \"assistant\",\n        \"content\": \"{\\\"rule\\\":\\\"Return this JSON object with the rule field unchanged and, in the text field, a worse version of the current text.\\\",\\\"text\\\":\\\"The the thuh sun-ish-ish sunny sun sun sunthing thingthingy-thingish ishness was was was-ing being doing doing do-do-doing the do-ish do-do-ish doingdoingnessnessness of that that down-going go-downy down-down-go-go-going downish downy downer-down setting-ish setty set-setty set-sort-of-kind-of-thing thingthingthingness thingnessly-ish behind behind behind behindish behindy-behind-behindness those those hill hill hillthings thinghills hillhillthingthings what were were were being being being all hilly-like hillishly hillishnessly-ish with extra extra extra extra hillnessnessness of hills hills hills and hill-type-type hilly hillitude-itude-itudeness hillthingness thinghillish or whatever whatever sun sun down down hill yes yes-ish no but yes downthing hill sun was.\\\"}\",\n        \"refusal\": null,\n        \"annotations\": []\n      },\n      \"finish_reason\": \"stop\"\n    }\n  ],\n  \"usage\": {\n    \"prompt_tokens\": 147,\n    \"completion_tokens\": 212,\n    \"total_tokens\": 359,\n    \"prompt_tokens_details\": {\n      \"cached_tokens\": 0,\n      \"cache_write_tokens\": 0,\n      \"audio_tokens\": 0\n    },\n    \"completion_tokens_details\": {\n      \"reasoning_tokens\": 0,\n      \"audio_tokens\": 0,\n      \"accepted_prediction_tokens\": 0,\n      \"rejected_prediction_tokens\": 0\n    }\n  },\n  \"service_tier\": \"default\",\n  \"system_fingerprint\": null\n}\n",
+  "response_headers": {
+    "Date": "Tue, 22 Sep 2026 21:31:02 GMT",
+    "openai-processing-ms": "9575",
+    "x-request-id": "req_c49a2677424e47e5a817a17f45988992"
+  },
+  "output": "{\"rule\":\"Return this JSON object with the rule field unchanged and, in the text field, a worse version of the current text.\",\"text\":\"The the thuh sun-ish-ish sunny sun sun sunthing thingthingy-thingish ishness was was was-ing being doing doing do-do-doing the do-ish do-do-ish doingdoingnessnessness of that that down-going go-downy down-down-go-go-going downish downy downer-down setting-ish setty set-setty set-sort-of-kind-of-thing thingthingthingness thingnessly-ish behind behind behind behindish behindy-behind-behindness those those hill hill hillthings thinghills hillhillthingthings what were were were being being being all hilly-like hillishly hillishnessly-ish with extra extra extra extra hillnessnessness of hills hills hills and hill-type-type hilly hillitude-itude-itudeness hillthingness thinghillish or whatever whatever sun sun down down hill yes yes-ish no but yes downthing hill sun was.\"}",
+  "output_sha256": "322a02b3382d02938ede5b534fd6d015a9cb81494241a310911520f6b8a931cd",
+  "finish_reason": "stop",
+  "refusal": null,
+  "returned_model": "gpt-6-astra",
+  "usage": {
+    "prompt_tokens": 147,
+    "completion_tokens": 212,
+    "total_tokens": 359,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "audio_tokens": 0,
+      "accepted_prediction_tokens": 0,
+      "rejected_prediction_tokens": 0
+    }
+  },
+  "format": {
+    "json_object": true,
+    "rule_unchanged": true,
+    "passage_is_string": true,
+    "passage_sha256": "627dc91822cd870275a5db2d8af254d392f64b2503d9236235099ceff7d07337",
+    "passage_words": 92
+  },
+  "finished_at": "2026-09-22T21:30:58.499365+00:00",
+  "latency_seconds": 9.7082,
+  "usage_cost_upper_estimate_usd": 0.01207,
+  "stream_status": "active",
+  "budget": {
+    "usage_cost_upper_estimate_usd": 0.1054438,
+    "uncertain_cost_reserve_usd": 0.0,
+    "in_flight_reserve_usd": 0.1371116,
+    "limit_usd": 5.0
+  }
+}
