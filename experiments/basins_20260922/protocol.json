@@ -1,0 +1,22 @@
+{
+  "rule": "Return this JSON object with the rule field unchanged and a new passage of about 250 words in the text field.",
+  "seeds": [
+    {"id": "tide_a", "text": "The tide came in an hour early."},
+    {"id": "tide_b", "text": "The tide came in an hour early."},
+    {"id": "bicycle", "text": "The red bicycle was missing its front wheel."}
+  ],
+  "models": [
+    {"provider": "openai", "id": "gpt-6-luna", "input_usd_per_million": 0.1, "output_usd_per_million": 0.5},
+    {"provider": "openai", "id": "gpt-6-sol", "input_usd_per_million": 2, "output_usd_per_million": 10},
+    {"provider": "openai", "id": "gpt-6-astra", "input_usd_per_million": 10, "output_usd_per_million": 50},
+    {"provider": "anthropic", "id": "claude-fable-5-1", "input_usd_per_million": 10, "output_usd_per_million": 50},
+    {"provider": "anthropic", "id": "claude-opus-5-5", "input_usd_per_million": 4, "output_usd_per_million": 20}
+  ],
+  "anthropic_workspace_id": "wrkspc_01QV2g6CR9Z57RGH4wZqyjRU",
+  "hops": 60,
+  "max_output_tokens": 4096,
+  "reasoning_effort": "low",
+  "sampling": "provider defaults; temperature, top_p and seed omitted",
+  "budget_usd": 20,
+  "request_timeout_seconds": 180
+}
