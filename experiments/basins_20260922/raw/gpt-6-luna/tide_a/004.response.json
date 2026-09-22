@@ -1,0 +1,50 @@
+{
+  "model": "gpt-6-luna",
+  "seed": "tide_a",
+  "hop": 4,
+  "http_status": 200,
+  "response_body": "{\n  \"id\": \"chatcmpl-ER0onTenfJtclOOYYq4KETa8t0fPB\",\n  \"object\": \"chat.completion\",\n  \"created\": 1790106709,\n  \"model\": \"gpt-6-luna\",\n  \"choices\": [\n    {\n      \"index\": 0,\n      \"message\": {\n        \"role\": \"assistant\",\n        \"content\": \"{\\\"rule\\\":\\\"Return this JSON object with the rule field unchanged and a new passage of about 250 words in the text field.\\\",\\\"text\\\":\\\"On the morning the river changed direction, everyone in Bellweather noticed except Mr. Vale. He was busy repairing the clock above his bakery, whose hands had been stuck at twelve for nearly a year.\\\\n\\\\nHis granddaughter June arrived with a jar of river water. “It’s flowing uphill,” she said. “Look.”\\\\n\\\\nMr. Vale wiped his hands and followed her to the bridge. Sure enough, leaves and little boats of bark drifted toward the hills. The townspeople gathered along the banks, trading guesses. Some blamed the recent storm; others insisted the river had always behaved strangely in spring.\\\\n\\\\nJune watched a red scarf travel past, against the current. She recognized it as the one she had dropped from the bridge the previous afternoon. “Maybe it’s trying to return something,” she said.\\\\n\\\\nAt that, Mr. Vale remembered the brass key he had found beneath his workbench years ago. Its label was worn away, and he had never learned what it opened. He fetched it from the bakery and held it over the water.\\\\n\\\\nThe river stopped.\\\\n\\\\nA narrow ripple ran upstream, curled around the bridge supports, and gathered at the old stone mill. There, a small door appeared in the riverbank, half-hidden by reeds. The key fit its lock.\\\\n\\\\nInside lay a dry room crowded with lost things: single gloves, cracked cups, letters never sent. In the center stood a wooden clock, its hands fixed at twelve. Mr. Vale set his repaired clock beside it. The two began to tick together.\\\\n\\\\nOutside, the river turned and flowed toward the sea once more. June chose a letter from the room, addressed to her mother, and carried it home unopened, ready to ask what it meant.\\\"}\",\n        \"refusal\": null,\n        \"annotations\": []\n      },\n      \"finish_reason\": \"stop\"\n    }\n  ],\n  \"usage\": {\n    \"prompt_tokens\": 380,\n    \"completion_tokens\": 464,\n    \"total_tokens\": 844,\n    \"prompt_tokens_details\": {\n      \"cached_tokens\": 0,\n      \"cache_write_tokens\": 0,\n      \"audio_tokens\": 0\n    },\n    \"completion_tokens_details\": {\n      \"reasoning_tokens\": 66,\n      \"audio_tokens\": 0,\n      \"accepted_prediction_tokens\": 0,\n      \"rejected_prediction_tokens\": 0\n    }\n  },\n  \"service_tier\": \"default\",\n  \"system_fingerprint\": null\n}\n",
+  "response_headers": {
+    "Date": "Tue, 22 Sep 2026 19:51:54 GMT",
+    "openai-processing-ms": "5090",
+    "x-request-id": "req_072578a0a48d4d5b921980bf1afddf44"
+  },
+  "output": "{\"rule\":\"Return this JSON object with the rule field unchanged and a new passage of about 250 words in the text field.\",\"text\":\"On the morning the river changed direction, everyone in Bellweather noticed except Mr. Vale. He was busy repairing the clock above his bakery, whose hands had been stuck at twelve for nearly a year.\\n\\nHis granddaughter June arrived with a jar of river water. “It’s flowing uphill,” she said. “Look.”\\n\\nMr. Vale wiped his hands and followed her to the bridge. Sure enough, leaves and little boats of bark drifted toward the hills. The townspeople gathered along the banks, trading guesses. Some blamed the recent storm; others insisted the river had always behaved strangely in spring.\\n\\nJune watched a red scarf travel past, against the current. She recognized it as the one she had dropped from the bridge the previous afternoon. “Maybe it’s trying to return something,” she said.\\n\\nAt that, Mr. Vale remembered the brass key he had found beneath his workbench years ago. Its label was worn away, and he had never learned what it opened. He fetched it from the bakery and held it over the water.\\n\\nThe river stopped.\\n\\nA narrow ripple ran upstream, curled around the bridge supports, and gathered at the old stone mill. There, a small door appeared in the riverbank, half-hidden by reeds. The key fit its lock.\\n\\nInside lay a dry room crowded with lost things: single gloves, cracked cups, letters never sent. In the center stood a wooden clock, its hands fixed at twelve. Mr. Vale set his repaired clock beside it. The two began to tick together.\\n\\nOutside, the river turned and flowed toward the sea once more. June chose a letter from the room, addressed to her mother, and carried it home unopened, ready to ask what it meant.\"}",
+  "output_sha256": "566f2b1e4bec3003be8bb466cdb0cf1f9bb349aca6a648c2b10f156744542482",
+  "finish_reason": "stop",
+  "refusal": null,
+  "returned_model": "gpt-6-luna",
+  "usage": {
+    "prompt_tokens": 380,
+    "completion_tokens": 464,
+    "total_tokens": 844,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 66,
+      "audio_tokens": 0,
+      "accepted_prediction_tokens": 0,
+      "rejected_prediction_tokens": 0
+    }
+  },
+  "format": {
+    "json_object": true,
+    "rule_unchanged": true,
+    "passage_is_string": true,
+    "passage_sha256": "a0497ba1fd2b8d24491d41e86a01b4a9f329c0f95f950ef91a611490f58ca17c",
+    "passage_words": 281
+  },
+  "finished_at": "2026-09-22T19:51:50.225268+00:00",
+  "latency_seconds": 5.1991,
+  "usage_cost_upper_estimate_usd": 0.00027,
+  "stream_status": "active",
+  "budget": {
+    "usage_cost_upper_estimate_usd": 0.2841531,
+    "uncertain_cost_reserve_usd": 0.0,
+    "in_flight_reserve_usd": 0.58772,
+    "limit_usd": 20
+  }
+}

@@ -1,0 +1,48 @@
+{
+  "model": "claude-fable-5-1",
+  "seed": "bicycle",
+  "hop": 2,
+  "http_status": 200,
+  "response_body": "{\"model\":\"claude-fable-5-1\",\"id\":\"msg_011CfK4Wdov4Lcu1JSHkv7Fb\",\"type\":\"message\",\"role\":\"assistant\",\"content\":[{\"type\":\"text\",\"text\":\"{\\\"rule\\\": \\\"Return this JSON object with the rule field unchanged and a new passage of about 250 words in the text field.\\\", \\\"text\\\": \\\"The lighthouse had not been lit in forty years, but Elias climbed it anyway, every evening, just before dark. The stairs spiraled up through the stone like the inside of a shell, one hundred and twelve steps, and he counted them the way other men counted prayers. At the top, the great lamp sat dead in its housing, its lens clouded with salt, and the windows rattled in their frames whenever the wind came off the water.\\\\n\\\\nHe told himself it was for the view. From the gallery he could see the whole curve of the bay, the fishing boats coming in low and heavy, the town's lights blinking on one by one as if someone were walking through it with a match. But the truth was simpler and harder to say aloud. His father had kept this light. His grandfather before that. When the coast guard automated the harbor beacon and shuttered the tower, the family had been left with a key and a silence.\\\\n\\\\nOne November evening a girl was waiting on the gallery when he arrived, breathless from the climb. She could not have been more than ten. She had a flashlight in one hand and a thermos in the other, and she looked at him without any fear at all.\\\\n\\\\n\\\\\\\"My mom says you come up here every night,\\\\\\\" she said. \\\\\\\"I wanted to see what you were looking at.\\\\\\\"\\\\n\\\\nElias considered this. Then he stepped aside so she could stand at the rail, and together they watched the dark come in over the water, and for the first time in years the tower felt, if not lit, at least occupied.\\\"}\"}],\"container\":null,\"stop_reason\":\"end_turn\",\"stop_sequence\":null,\"stop_details\":null,\"usage\":{\"input_tokens\":600,\"cache_creation_input_tokens\":0,\"cache_read_input_tokens\":0,\"cache_creation\":{\"ephemeral_5m_input_tokens\":0,\"ephemeral_1h_input_tokens\":0},\"output_tokens\":507,\"output_tokens_details\":{\"thinking_tokens\":0},\"service_tier\":\"standard\",\"inference_geo\":\"global\"}}",
+  "response_headers": {
+    "Date": "Tue, 22 Sep 2026 19:52:23 GMT",
+    "request-id": "req_011CfK4Wd6FbRwyMzqij1zDi"
+  },
+  "output": "{\"rule\": \"Return this JSON object with the rule field unchanged and a new passage of about 250 words in the text field.\", \"text\": \"The lighthouse had not been lit in forty years, but Elias climbed it anyway, every evening, just before dark. The stairs spiraled up through the stone like the inside of a shell, one hundred and twelve steps, and he counted them the way other men counted prayers. At the top, the great lamp sat dead in its housing, its lens clouded with salt, and the windows rattled in their frames whenever the wind came off the water.\\n\\nHe told himself it was for the view. From the gallery he could see the whole curve of the bay, the fishing boats coming in low and heavy, the town's lights blinking on one by one as if someone were walking through it with a match. But the truth was simpler and harder to say aloud. His father had kept this light. His grandfather before that. When the coast guard automated the harbor beacon and shuttered the tower, the family had been left with a key and a silence.\\n\\nOne November evening a girl was waiting on the gallery when he arrived, breathless from the climb. She could not have been more than ten. She had a flashlight in one hand and a thermos in the other, and she looked at him without any fear at all.\\n\\n\\\"My mom says you come up here every night,\\\" she said. \\\"I wanted to see what you were looking at.\\\"\\n\\nElias considered this. Then he stepped aside so she could stand at the rail, and together they watched the dark come in over the water, and for the first time in years the tower felt, if not lit, at least occupied.\"}",
+  "output_sha256": "45817a559480cc94cf78af155f00f191d72412a26ccef02438c88e0e866f8e1b",
+  "finish_reason": "end_turn",
+  "refusal": null,
+  "returned_model": "claude-fable-5-1",
+  "usage": {
+    "input_tokens": 600,
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 0,
+    "cache_creation": {
+      "ephemeral_5m_input_tokens": 0,
+      "ephemeral_1h_input_tokens": 0
+    },
+    "output_tokens": 507,
+    "output_tokens_details": {
+      "thinking_tokens": 0
+    },
+    "service_tier": "standard",
+    "inference_geo": "global"
+  },
+  "format": {
+    "json_object": true,
+    "rule_unchanged": true,
+    "passage_is_string": true,
+    "passage_sha256": "a5a78d4776eb27dbc18d8541be4de94d1a9e1c0804f34ea5e7751a415ba1c86d",
+    "passage_words": 275
+  },
+  "finished_at": "2026-09-22T19:52:19.691472+00:00",
+  "latency_seconds": 14.4343,
+  "usage_cost_upper_estimate_usd": 0.03135,
+  "stream_status": "active",
+  "budget": {
+    "usage_cost_upper_estimate_usd": 0.4657777,
+    "uncertain_cost_reserve_usd": 0.0,
+    "in_flight_reserve_usd": 0.3639734,
+    "limit_usd": 20
+  }
+}

@@ -1,0 +1,50 @@
+{
+  "model": "gpt-6-sol",
+  "seed": "tide_a",
+  "hop": 3,
+  "http_status": 200,
+  "response_body": "{\n  \"id\": \"chatcmpl-ER0ocOnkojeOmyuC3FUASbYyMNnrr\",\n  \"object\": \"chat.completion\",\n  \"created\": 1790106698,\n  \"model\": \"gpt-6-sol\",\n  \"choices\": [\n    {\n      \"index\": 0,\n      \"message\": {\n        \"role\": \"assistant\",\n        \"content\": \"{\\n  \\\"rule\\\": \\\"Return this JSON object with the rule field unchanged and a new passage of about 250 words in the text field.\\\",\\n  \\\"text\\\": \\\"Each evening, Mara checked the lamps along the harbor wall. There were eleven, though the town’s oldest map showed twelve. No one knew where the missing lamp had stood.\\\\n\\\\nOne Thursday, Mara found a pool of light between the ninth lamp and the tenth. It fell across the stones in a neat circle, but when she looked up, there was only dark sky. She held out her hand. Her fingers cast a shadow.\\\\n\\\\nThe harbor master brought a ladder, then a mirror. From its top rung he could see nothing above the light. In the mirror, however, a lamp hung from a bent iron post. Its glass was green with salt.\\\\n\\\\nMara climbed down to the water. At low tide, she found the post’s base set into the wall, its bolts buried under years of mortar. Someone had removed the lamp and left the light behind.\\\\n\\\\nNear midnight, a small boat entered the harbor. Its sailor tied up beneath the circle and asked for a man named Ellis. Mara said Ellis had died thirty years ago. The sailor studied her face, then reached into his coat and handed her a sealed envelope addressed in her father’s handwriting.\\\\n\\\\nInside was a single page. Ellis had written that the boat would come once, and that its sailor must not be allowed to leave before dawn. There was no explanation.\\\\n\\\\nMara showed the letter to the harbor master. Together they offered the sailor a room above the quay. He accepted without asking why.\\\\n\\\\nAt sunrise, the circle of light went out. Where it had been, the wall was newly painted, and the iron bolts had disappeared.\\\"\\n}\",\n        \"refusal\": null,\n        \"annotations\": []\n      },\n      \"finish_reason\": \"stop\"\n    }\n  ],\n  \"usage\": {\n    \"prompt_tokens\": 378,\n    \"completion_tokens\": 397,\n    \"total_tokens\": 775,\n    \"prompt_tokens_details\": {\n      \"cached_tokens\": 0,\n      \"cache_write_tokens\": 0,\n      \"audio_tokens\": 0\n    },\n    \"completion_tokens_details\": {\n      \"reasoning_tokens\": 19,\n      \"audio_tokens\": 0,\n      \"accepted_prediction_tokens\": 0,\n      \"rejected_prediction_tokens\": 0\n    }\n  },\n  \"service_tier\": \"default\",\n  \"system_fingerprint\": null\n}\n",
+  "response_headers": {
+    "Date": "Tue, 22 Sep 2026 19:51:44 GMT",
+    "openai-processing-ms": "6247",
+    "x-request-id": "req_47f807d123fb4e478b0bfe8f852259b8"
+  },
+  "output": "{\n  \"rule\": \"Return this JSON object with the rule field unchanged and a new passage of about 250 words in the text field.\",\n  \"text\": \"Each evening, Mara checked the lamps along the harbor wall. There were eleven, though the town’s oldest map showed twelve. No one knew where the missing lamp had stood.\\n\\nOne Thursday, Mara found a pool of light between the ninth lamp and the tenth. It fell across the stones in a neat circle, but when she looked up, there was only dark sky. She held out her hand. Her fingers cast a shadow.\\n\\nThe harbor master brought a ladder, then a mirror. From its top rung he could see nothing above the light. In the mirror, however, a lamp hung from a bent iron post. Its glass was green with salt.\\n\\nMara climbed down to the water. At low tide, she found the post’s base set into the wall, its bolts buried under years of mortar. Someone had removed the lamp and left the light behind.\\n\\nNear midnight, a small boat entered the harbor. Its sailor tied up beneath the circle and asked for a man named Ellis. Mara said Ellis had died thirty years ago. The sailor studied her face, then reached into his coat and handed her a sealed envelope addressed in her father’s handwriting.\\n\\nInside was a single page. Ellis had written that the boat would come once, and that its sailor must not be allowed to leave before dawn. There was no explanation.\\n\\nMara showed the letter to the harbor master. Together they offered the sailor a room above the quay. He accepted without asking why.\\n\\nAt sunrise, the circle of light went out. Where it had been, the wall was newly painted, and the iron bolts had disappeared.\"\n}",
+  "output_sha256": "df468d09258cea36d44a019075f9634f32ffaf8afda3561ba62269c6e430ee9f",
+  "finish_reason": "stop",
+  "refusal": null,
+  "returned_model": "gpt-6-sol",
+  "usage": {
+    "prompt_tokens": 378,
+    "completion_tokens": 397,
+    "total_tokens": 775,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 19,
+      "audio_tokens": 0,
+      "accepted_prediction_tokens": 0,
+      "rejected_prediction_tokens": 0
+    }
+  },
+  "format": {
+    "json_object": true,
+    "rule_unchanged": true,
+    "passage_is_string": true,
+    "passage_sha256": "99a6fec820d04485dabb3125be003ce0e8d50c538750d1b8f6afde4da3d5479f",
+    "passage_words": 273
+  },
+  "finished_at": "2026-09-22T19:51:40.718242+00:00",
+  "latency_seconds": 6.3825,
+  "usage_cost_upper_estimate_usd": 0.004726,
+  "stream_status": "active",
+  "budget": {
+    "usage_cost_upper_estimate_usd": 0.2221623,
+    "uncertain_cost_reserve_usd": 0.0,
+    "in_flight_reserve_usd": 0.5446053,
+    "limit_usd": 20
+  }
+}

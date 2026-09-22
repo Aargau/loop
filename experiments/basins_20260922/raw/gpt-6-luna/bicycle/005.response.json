@@ -1,0 +1,47 @@
+{
+  "model": "gpt-6-luna",
+  "seed": "bicycle",
+  "hop": 5,
+  "http_status": 200,
+  "response_body": "{\n  \"id\": \"chatcmpl-ER0pCJtJV3GEpYJnL6kFhQzrP6iZa\",\n  \"object\": \"chat.completion\",\n  \"created\": 1790106734,\n  \"model\": \"gpt-6-luna\",\n  \"choices\": [\n    {\n      \"index\": 0,\n      \"message\": {\n        \"role\": \"assistant\",\n        \"content\": \"{\\\"rule\\\":\\\"Return this JSON object with the rule field unchanged and a new passage of about 250 words in the text field.\\\",\\\"text\\\":\\\"By morning, the lighthouse beam had gone dark again.\\n\\nMara stood on the beach with the boy, watching a gray mist drift over the water. The fishing boats had returned safely, but the old generator had fallen silent before sunrise. Beneath the tower, its metal casing ticked as it cooled.\\n\\n“My grandfather will want to know what happened,” the boy said.\\n\\n“Then we’ll ask him to help us fix it,” Mara replied.\\n\\nAt the station, they spread the century-old chart across a table. The boy’s grandfather arrived carrying a leather toolbox and a thermos of coffee. His name was Elias, and he studied the red line for a long time before touching it.\\n\\n“My father showed me this passage when I was young,” he said. “He told me never to trust it unless the tide was falling and the lighthouse was lit.”\\n\\nElias examined the notes in the control box, then pointed to a penciled mark beside the generator instructions. A small gear had been replaced with a handmade wooden part, its measurements written in the margin.\\n\\nThey searched the tower until Mara found the gear wrapped in oilcloth beneath a loose floorboard. Elias fitted it into place while the boy held the flashlight. When they turned the handle, the generator rumbled, but the lamp stayed dark.\\n\\nMara climbed to the lantern room and opened the shutters. A gull had wedged a strip of seaweed into the old reflector. She pulled it free.\\n\\nThe beam flashed over the harbor, steady and bright.\\n\\nBelow, Elias smiled. “Some things,” he said, “just need the right people to find them again.”\\\"}\",\n        \"refusal\": null,\n        \"annotations\": []\n      },\n      \"finish_reason\": \"stop\"\n    }\n  ],\n  \"usage\": {\n    \"prompt_tokens\": 377,\n    \"completion_tokens\": 442,\n    \"total_tokens\": 819,\n    \"prompt_tokens_details\": {\n      \"cached_tokens\": 0,\n      \"cache_write_tokens\": 0,\n      \"audio_tokens\": 0\n    },\n    \"completion_tokens_details\": {\n      \"reasoning_tokens\": 78,\n      \"audio_tokens\": 0,\n      \"accepted_prediction_tokens\": 0,\n      \"rejected_prediction_tokens\": 0\n    }\n  },\n  \"service_tier\": \"default\",\n  \"system_fingerprint\": null\n}\n",
+  "response_headers": {
+    "Date": "Tue, 22 Sep 2026 19:52:18 GMT",
+    "openai-processing-ms": "4428",
+    "x-request-id": "req_44d2631733cc4109a6b2062554d8380e"
+  },
+  "output": "{\"rule\":\"Return this JSON object with the rule field unchanged and a new passage of about 250 words in the text field.\",\"text\":\"By morning, the lighthouse beam had gone dark again.\n\nMara stood on the beach with the boy, watching a gray mist drift over the water. The fishing boats had returned safely, but the old generator had fallen silent before sunrise. Beneath the tower, its metal casing ticked as it cooled.\n\n“My grandfather will want to know what happened,” the boy said.\n\n“Then we’ll ask him to help us fix it,” Mara replied.\n\nAt the station, they spread the century-old chart across a table. The boy’s grandfather arrived carrying a leather toolbox and a thermos of coffee. His name was Elias, and he studied the red line for a long time before touching it.\n\n“My father showed me this passage when I was young,” he said. “He told me never to trust it unless the tide was falling and the lighthouse was lit.”\n\nElias examined the notes in the control box, then pointed to a penciled mark beside the generator instructions. A small gear had been replaced with a handmade wooden part, its measurements written in the margin.\n\nThey searched the tower until Mara found the gear wrapped in oilcloth beneath a loose floorboard. Elias fitted it into place while the boy held the flashlight. When they turned the handle, the generator rumbled, but the lamp stayed dark.\n\nMara climbed to the lantern room and opened the shutters. A gull had wedged a strip of seaweed into the old reflector. She pulled it free.\n\nThe beam flashed over the harbor, steady and bright.\n\nBelow, Elias smiled. “Some things,” he said, “just need the right people to find them again.”\"}",
+  "output_sha256": "756dc8ea5a5193c95819fc32d5742ced56e02446dca3209b915a0c207c200252",
+  "finish_reason": "stop",
+  "refusal": null,
+  "returned_model": "gpt-6-luna",
+  "usage": {
+    "prompt_tokens": 377,
+    "completion_tokens": 442,
+    "total_tokens": 819,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 78,
+      "audio_tokens": 0,
+      "accepted_prediction_tokens": 0,
+      "rejected_prediction_tokens": 0
+    }
+  },
+  "format": {
+    "json_object": false,
+    "rule_unchanged": false
+  },
+  "finished_at": "2026-09-22T19:52:14.517243+00:00",
+  "latency_seconds": 4.5586,
+  "usage_cost_upper_estimate_usd": 0.0002587,
+  "stream_status": "active",
+  "budget": {
+    "usage_cost_upper_estimate_usd": 0.4157757,
+    "uncertain_cost_reserve_usd": 0.0,
+    "in_flight_reserve_usd": 0.589804,
+    "limit_usd": 20
+  }
+}

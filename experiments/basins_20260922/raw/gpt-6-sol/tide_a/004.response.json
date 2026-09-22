@@ -1,0 +1,50 @@
+{
+  "model": "gpt-6-sol",
+  "seed": "tide_a",
+  "hop": 4,
+  "http_status": 200,
+  "response_body": "{\n  \"id\": \"chatcmpl-ER0otTh89KfS1ao3x2bj2Bc2luuCr\",\n  \"object\": \"chat.completion\",\n  \"created\": 1790106715,\n  \"model\": \"gpt-6-sol\",\n  \"choices\": [\n    {\n      \"index\": 0,\n      \"message\": {\n        \"role\": \"assistant\",\n        \"content\": \"{\\n  \\\"rule\\\": \\\"Return this JSON object with the rule field unchanged and a new passage of about 250 words in the text field.\\\",\\n  \\\"text\\\": \\\"Every morning, Ivo wound the clock in the village square. It had no hands, but at noon it rang twelve times, and the villagers set their watches by it.\\\\n\\\\nOne winter morning, he found a narrow door in the clock’s base. He had cleaned that stone for forty years and had never seen a seam. Inside was a staircase descending into warm, lamplit air.\\\\n\\\\nAt the bottom sat a woman at a desk covered in calendars. She looked up as if she had been expecting him.\\\\n\\\\n“The bell is early,” she said.\\\\n\\\\nIvo checked his watch. It was eleven fifty-eight. Overhead, the clock began to strike.\\\\n\\\\nThe woman crossed out a date on the nearest calendar. “That’s the third time this month.” She showed him the page. Beside each crossed-out date was a name. Ivo recognized the first two: villagers who had gone missing.\\\\n\\\\nBeside today’s date, she had written his own.\\\\n\\\\nHe backed toward the stairs. The woman did not stop him. “If you reach the square before the twelfth strike, you can wind it again.”\\\\n\\\\nIvo ran. On the seventh strike, he reached the door. On the tenth, he found the winding key where he had left it. He turned it with both hands as the eleventh sounded.\\\\n\\\\nThe bell fell silent. Across the square, the baker emerged from his shop carrying a tray of rolls. Ivo’s watch read noon.\\\\n\\\\nWhen he returned to the clock’s base, the door was gone. He kept the key in his pocket for the rest of the day. At dawn, he was already waiting by the square.\\\"\\n}\",\n        \"refusal\": null,\n        \"annotations\": []\n      },\n      \"finish_reason\": \"stop\"\n    }\n  ],\n  \"usage\": {\n    \"prompt_tokens\": 375,\n    \"completion_tokens\": 419,\n    \"total_tokens\": 794,\n    \"prompt_tokens_details\": {\n      \"cached_tokens\": 0,\n      \"cache_write_tokens\": 0,\n      \"audio_tokens\": 0\n    },\n    \"completion_tokens_details\": {\n      \"reasoning_tokens\": 24,\n      \"audio_tokens\": 0,\n      \"accepted_prediction_tokens\": 0,\n      \"rejected_prediction_tokens\": 0\n    }\n  },\n  \"service_tier\": \"default\",\n  \"system_fingerprint\": null\n}\n",
+  "response_headers": {
+    "Date": "Tue, 22 Sep 2026 19:52:01 GMT",
+    "openai-processing-ms": "5693",
+    "x-request-id": "req_91491a0ead934e2bad9d760ebbf11714"
+  },
+  "output": "{\n  \"rule\": \"Return this JSON object with the rule field unchanged and a new passage of about 250 words in the text field.\",\n  \"text\": \"Every morning, Ivo wound the clock in the village square. It had no hands, but at noon it rang twelve times, and the villagers set their watches by it.\\n\\nOne winter morning, he found a narrow door in the clock’s base. He had cleaned that stone for forty years and had never seen a seam. Inside was a staircase descending into warm, lamplit air.\\n\\nAt the bottom sat a woman at a desk covered in calendars. She looked up as if she had been expecting him.\\n\\n“The bell is early,” she said.\\n\\nIvo checked his watch. It was eleven fifty-eight. Overhead, the clock began to strike.\\n\\nThe woman crossed out a date on the nearest calendar. “That’s the third time this month.” She showed him the page. Beside each crossed-out date was a name. Ivo recognized the first two: villagers who had gone missing.\\n\\nBeside today’s date, she had written his own.\\n\\nHe backed toward the stairs. The woman did not stop him. “If you reach the square before the twelfth strike, you can wind it again.”\\n\\nIvo ran. On the seventh strike, he reached the door. On the tenth, he found the winding key where he had left it. He turned it with both hands as the eleventh sounded.\\n\\nThe bell fell silent. Across the square, the baker emerged from his shop carrying a tray of rolls. Ivo’s watch read noon.\\n\\nWhen he returned to the clock’s base, the door was gone. He kept the key in his pocket for the rest of the day. At dawn, he was already waiting by the square.\"\n}",
+  "output_sha256": "5a9979aca48e460981a4db69b152050dadc5f25b52617aba8a06d031b4b94ca3",
+  "finish_reason": "stop",
+  "refusal": null,
+  "returned_model": "gpt-6-sol",
+  "usage": {
+    "prompt_tokens": 375,
+    "completion_tokens": 419,
+    "total_tokens": 794,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 24,
+      "audio_tokens": 0,
+      "accepted_prediction_tokens": 0,
+      "rejected_prediction_tokens": 0
+    }
+  },
+  "format": {
+    "json_object": true,
+    "rule_unchanged": true,
+    "passage_is_string": true,
+    "passage_sha256": "0b85e6527230bf6bcd3600401eb7954362da8ef0e95a8e796bdef350c53722cb",
+    "passage_words": 265
+  },
+  "finished_at": "2026-09-22T19:51:57.170849+00:00",
+  "latency_seconds": 5.8146,
+  "usage_cost_upper_estimate_usd": 0.00494,
+  "stream_status": "active",
+  "budget": {
+    "usage_cost_upper_estimate_usd": 0.318708,
+    "uncertain_cost_reserve_usd": 0.0,
+    "in_flight_reserve_usd": 0.5456885,
+    "limit_usd": 20
+  }
+}

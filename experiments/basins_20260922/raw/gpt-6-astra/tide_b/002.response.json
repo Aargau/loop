@@ -1,0 +1,50 @@
+{
+  "model": "gpt-6-astra",
+  "seed": "tide_b",
+  "hop": 2,
+  "http_status": 200,
+  "response_body": "{\n  \"id\": \"chatcmpl-ER0oyXeeJQkUMNN3NvFo9nkkyp3rR\",\n  \"object\": \"chat.completion\",\n  \"created\": 1790106720,\n  \"model\": \"gpt-6-astra\",\n  \"choices\": [\n    {\n      \"index\": 0,\n      \"message\": {\n        \"role\": \"assistant\",\n        \"content\": \"{\\n  \\\"rule\\\": \\\"Return this JSON object with the rule field unchanged and a new passage of about 250 words in the text field.\\\",\\n  \\\"text\\\": \\\"Every Thursday, the railway station received a suitcase addressed to someone who had died.\\\\n\\\\nNina discovered this during her second week in the lost-property office. The cases arrived without tickets or luggage tags, each bearing a name written in blue ink. Inside were ordinary things: folded shirts, a paperback, a toothbrush still damp around the bristles.\\\\n\\\\nShe reported the first three to her supervisor.\\\\n\\\\n“Put them on the bottom shelf,” he said. “They’re collected eventually.”\\\\n\\\\n“By whom?”\\\\n\\\\nHe straightened a stack of claim forms and did not answer.\\\\n\\\\nOn the fourth Thursday, a green canvas bag appeared beside her desk. She knew its broken zip, the burn mark near the handle. She had bought it for her brother before his last trip north.\\\\n\\\\nDaniel had been missing for six years.\\\\n\\\\nNina locked the office door and opened the bag.\\\\n\\\\nBeneath a sweater lay a sandwich wrapped in yesterday’s newspaper. His phone was there too, charged, displaying seventeen missed calls from her old number.\\\\n\\\\nAs she lifted it, a message arrived.\\\\n\\\\nDon’t let them shelve it.\\\\n\\\\nOutside, wheels rattled across the station tiles. Her supervisor called through the door.\\\\n\\\\n“Collection time.”\\\\n\\\\nNina looked down. A second message appeared.\\\\n\\\\nPlatform nine. Please hurry.\\\\n\\\\nThe station had only eight platforms.\\\\n\\\\nThen, behind the bottom shelf, she heard an announcement in her brother’s voice. He stumbled over the destination, started again, and asked all remaining passengers to board.\\\\n\\\\nHer supervisor tried the handle.\\\\n\\\\nNina dragged the shelf aside. Behind it stood a narrow door, its window clouded with steam. She picked up Daniel’s bag and turned the latch.\\\"\\n}\",\n        \"refusal\": null,\n        \"annotations\": []\n      },\n      \"finish_reason\": \"stop\"\n    }\n  ],\n  \"usage\": {\n    \"prompt_tokens\": 395,\n    \"completion_tokens\": 413,\n    \"total_tokens\": 808,\n    \"prompt_tokens_details\": {\n      \"cached_tokens\": 0,\n      \"cache_write_tokens\": 0,\n      \"audio_tokens\": 0\n    },\n    \"completion_tokens_details\": {\n      \"reasoning_tokens\": 0,\n      \"audio_tokens\": 0,\n      \"accepted_prediction_tokens\": 0,\n      \"rejected_prediction_tokens\": 0\n    }\n  },\n  \"service_tier\": \"default\",\n  \"system_fingerprint\": null\n}\n",
+  "response_headers": {
+    "Date": "Tue, 22 Sep 2026 19:52:14 GMT",
+    "openai-processing-ms": "14651",
+    "x-request-id": "req_3fc6a0213d654025839f34532c039f19"
+  },
+  "output": "{\n  \"rule\": \"Return this JSON object with the rule field unchanged and a new passage of about 250 words in the text field.\",\n  \"text\": \"Every Thursday, the railway station received a suitcase addressed to someone who had died.\\n\\nNina discovered this during her second week in the lost-property office. The cases arrived without tickets or luggage tags, each bearing a name written in blue ink. Inside were ordinary things: folded shirts, a paperback, a toothbrush still damp around the bristles.\\n\\nShe reported the first three to her supervisor.\\n\\n“Put them on the bottom shelf,” he said. “They’re collected eventually.”\\n\\n“By whom?”\\n\\nHe straightened a stack of claim forms and did not answer.\\n\\nOn the fourth Thursday, a green canvas bag appeared beside her desk. She knew its broken zip, the burn mark near the handle. She had bought it for her brother before his last trip north.\\n\\nDaniel had been missing for six years.\\n\\nNina locked the office door and opened the bag.\\n\\nBeneath a sweater lay a sandwich wrapped in yesterday’s newspaper. His phone was there too, charged, displaying seventeen missed calls from her old number.\\n\\nAs she lifted it, a message arrived.\\n\\nDon’t let them shelve it.\\n\\nOutside, wheels rattled across the station tiles. Her supervisor called through the door.\\n\\n“Collection time.”\\n\\nNina looked down. A second message appeared.\\n\\nPlatform nine. Please hurry.\\n\\nThe station had only eight platforms.\\n\\nThen, behind the bottom shelf, she heard an announcement in her brother’s voice. He stumbled over the destination, started again, and asked all remaining passengers to board.\\n\\nHer supervisor tried the handle.\\n\\nNina dragged the shelf aside. Behind it stood a narrow door, its window clouded with steam. She picked up Daniel’s bag and turned the latch.\"\n}",
+  "output_sha256": "921524cb8ea752abdf10d1845bb9a2d23ba659c8e316532e380d3200d6ab7b7c",
+  "finish_reason": "stop",
+  "refusal": null,
+  "returned_model": "gpt-6-astra",
+  "usage": {
+    "prompt_tokens": 395,
+    "completion_tokens": 413,
+    "total_tokens": 808,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "audio_tokens": 0,
+      "accepted_prediction_tokens": 0,
+      "rejected_prediction_tokens": 0
+    }
+  },
+  "format": {
+    "json_object": true,
+    "rule_unchanged": true,
+    "passage_is_string": true,
+    "passage_sha256": "3b0a7bce2ee2ba6eb241bc28cf16ddddd624ac4662eff4fb2d462d5b8162dce5",
+    "passage_words": 264
+  },
+  "finished_at": "2026-09-22T19:52:10.742435+00:00",
+  "latency_seconds": 14.7721,
+  "usage_cost_upper_estimate_usd": 0.0246,
+  "stream_status": "active",
+  "budget": {
+    "usage_cost_upper_estimate_usd": 0.415517,
+    "uncertain_cost_reserve_usd": 0.0,
+    "in_flight_reserve_usd": 0.3653991,
+    "limit_usd": 20
+  }
+}

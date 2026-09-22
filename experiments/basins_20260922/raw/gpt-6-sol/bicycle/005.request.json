@@ -1,0 +1,20 @@
+{
+  "started_at": "2026-09-22T19:52:20.940955+00:00",
+  "model": "gpt-6-sol",
+  "seed": "bicycle",
+  "hop": 5,
+  "endpoint": "https://api.openai.com/v1/chat/completions",
+  "body": {
+    "model": "gpt-6-sol",
+    "messages": [
+      {
+        "role": "user",
+        "content": "{\"rule\":\"Return this JSON object with the rule field unchanged and a new passage of about 250 words in the text field.\",\"text\":\"Every Tuesday, a paper crane appeared on the windowsill of the town library. Each was folded from a different page: a recipe, a bus timetable, once a map of the moon.\\n\\nMara, the librarian, began lining them up behind the circulation desk. By winter, the cranes formed a small, uneven flock.\\n\\n“Throw them away,” said the caretaker. “They’re only scraps.”\\n\\nBut Mara liked the thought of someone leaving a little work behind for a stranger. She set out a sign: IF THESE ARE YOURS, THANK YOU.\\n\\nThe following Tuesday, there was no crane. Instead, she found a square of blank yellow paper.\\n\\nMara turned it over. Nothing. After closing, she tried folding it herself. Her first crane had a crooked neck and one wing smaller than the other. She left it on the windowsill.\\n\\nThe next morning, a man was standing outside, smiling at it. He came in carrying a stack of yellow squares.\\n\\n“My wife used to make them,” he said. “She died in the spring. I found her box of paper, and I didn’t know what else to do with it.”\\n\\nMara glanced at her clumsy crane. “I’m sorry. I think I used too many creases.”\\n\\n“She would have liked it,” he said. “She was always trying to teach someone.”\\n\\nThey sat at a table while he showed her how to fold the wings. A student waiting for a computer asked to join them. Then the caretaker pulled up a chair.\\n\\nWhen they locked the doors that evening, three new cranes stood on the windowsill, facing the street.\"}"
+      }
+    ],
+    "max_completion_tokens": 4096,
+    "reasoning_effort": "low"
+  },
+  "state_sha256": "6d03f58ef9949927ff10063cb5e77dab3e2f1ac62f9503f541c0d60430793fa7",
+  "reserved_cost_usd": 0.045202
+}

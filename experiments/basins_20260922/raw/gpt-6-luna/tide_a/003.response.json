@@ -1,0 +1,50 @@
+{
+  "model": "gpt-6-luna",
+  "seed": "tide_a",
+  "hop": 3,
+  "http_status": 200,
+  "response_body": "{\n  \"id\": \"chatcmpl-ER0oXU9clRhnw7I7U095LrWOyTyFT\",\n  \"object\": \"chat.completion\",\n  \"created\": 1790106693,\n  \"model\": \"gpt-6-luna\",\n  \"choices\": [\n    {\n      \"index\": 0,\n      \"message\": {\n        \"role\": \"assistant\",\n        \"content\": \"{\\\"rule\\\":\\\"Return this JSON object with the rule field unchanged and a new passage of about 250 words in the text field.\\\",\\\"text\\\":\\\"Every Thursday, Mara opened the little observatory on the hill, though the telescope had not worked in years. She dusted its brass frame, swept the narrow floor, and set a jar of pencils beside the guestbook. Most visitors came for the view of the town, not the stars.\\\\n\\\\nOne evening, a boy arrived carrying a cardboard box. He introduced himself as Tomas and explained that his grandmother had given him a collection of old photographs. In one picture, he said, the observatory stood unfinished, surrounded by workers and piles of stone. A woman in a dark coat watched them from the edge of the frame.\\\\n\\\\nMara leaned closer. The woman had her own grandmother’s face.\\\\n\\\\nThey turned the photograph over. A date was written in faded ink, followed by a few words: “For the one who keeps looking up.” Mara had heard that her grandmother once helped build the observatory, but no one in the family knew why she had left the town soon afterward.\\\\n\\\\nTogether, Mara and Tomas searched the guestbook. Beneath years of names and doodles, they found a pressed flower and a short note in the same handwriting as the photograph. It described a clear night when the town’s first telescope was carried upstairs. The woman had stayed until dawn, watching Saturn’s rings appear like a tiny thread of light.\\\\n\\\\nWhen darkness settled, Mara showed Tomas how to focus the old instrument. Its gears groaned, then turned. Above them, the sky opened into sharp points of silver. Tomas began to write in the guestbook, carefully recording what he saw. Mara left the flower beside his entry, where someone else might find it, and look up.\\\"}\",\n        \"refusal\": null,\n        \"annotations\": []\n      },\n      \"finish_reason\": \"stop\"\n    }\n  ],\n  \"usage\": {\n    \"prompt_tokens\": 378,\n    \"completion_tokens\": 445,\n    \"total_tokens\": 823,\n    \"prompt_tokens_details\": {\n      \"cached_tokens\": 0,\n      \"cache_write_tokens\": 0,\n      \"audio_tokens\": 0\n    },\n    \"completion_tokens_details\": {\n      \"reasoning_tokens\": 62,\n      \"audio_tokens\": 0,\n      \"accepted_prediction_tokens\": 0,\n      \"rejected_prediction_tokens\": 0\n    }\n  },\n  \"service_tier\": \"default\",\n  \"system_fingerprint\": null\n}\n",
+  "response_headers": {
+    "Date": "Tue, 22 Sep 2026 19:51:38 GMT",
+    "openai-processing-ms": "4979",
+    "x-request-id": "req_65383b3ce8ff4aa892b045a347a8456c"
+  },
+  "output": "{\"rule\":\"Return this JSON object with the rule field unchanged and a new passage of about 250 words in the text field.\",\"text\":\"Every Thursday, Mara opened the little observatory on the hill, though the telescope had not worked in years. She dusted its brass frame, swept the narrow floor, and set a jar of pencils beside the guestbook. Most visitors came for the view of the town, not the stars.\\n\\nOne evening, a boy arrived carrying a cardboard box. He introduced himself as Tomas and explained that his grandmother had given him a collection of old photographs. In one picture, he said, the observatory stood unfinished, surrounded by workers and piles of stone. A woman in a dark coat watched them from the edge of the frame.\\n\\nMara leaned closer. The woman had her own grandmother’s face.\\n\\nThey turned the photograph over. A date was written in faded ink, followed by a few words: “For the one who keeps looking up.” Mara had heard that her grandmother once helped build the observatory, but no one in the family knew why she had left the town soon afterward.\\n\\nTogether, Mara and Tomas searched the guestbook. Beneath years of names and doodles, they found a pressed flower and a short note in the same handwriting as the photograph. It described a clear night when the town’s first telescope was carried upstairs. The woman had stayed until dawn, watching Saturn’s rings appear like a tiny thread of light.\\n\\nWhen darkness settled, Mara showed Tomas how to focus the old instrument. Its gears groaned, then turned. Above them, the sky opened into sharp points of silver. Tomas began to write in the guestbook, carefully recording what he saw. Mara left the flower beside his entry, where someone else might find it, and look up.\"}",
+  "output_sha256": "9d563ada7785114903f3977d88f51e3f7c61150f7088a271e8474aa73d6052bd",
+  "finish_reason": "stop",
+  "refusal": null,
+  "returned_model": "gpt-6-luna",
+  "usage": {
+    "prompt_tokens": 378,
+    "completion_tokens": 445,
+    "total_tokens": 823,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 62,
+      "audio_tokens": 0,
+      "accepted_prediction_tokens": 0,
+      "rejected_prediction_tokens": 0
+    }
+  },
+  "format": {
+    "json_object": true,
+    "rule_unchanged": true,
+    "passage_is_string": true,
+    "passage_sha256": "5dd163dd92c51a3282ff897245b4b6623a4aa0cd4549b8846750e3a532ada0e1",
+    "passage_words": 278
+  },
+  "finished_at": "2026-09-22T19:51:34.112738+00:00",
+  "latency_seconds": 5.2195,
+  "usage_cost_upper_estimate_usd": 0.0002603,
+  "stream_status": "active",
+  "budget": {
+    "usage_cost_upper_estimate_usd": 0.1805808,
+    "uncertain_cost_reserve_usd": 0.0,
+    "in_flight_reserve_usd": 0.57308,
+    "limit_usd": 20
+  }
+}

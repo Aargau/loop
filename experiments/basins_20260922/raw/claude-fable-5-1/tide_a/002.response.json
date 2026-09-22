@@ -1,0 +1,48 @@
+{
+  "model": "claude-fable-5-1",
+  "seed": "tide_a",
+  "hop": 2,
+  "http_status": 200,
+  "response_body": "{\"model\":\"claude-fable-5-1\",\"id\":\"msg_011CfK4UFC5bMxzJMMcoTpqU\",\"type\":\"message\",\"role\":\"assistant\",\"content\":[{\"type\":\"text\",\"text\":\"{\\\"rule\\\": \\\"Return this JSON object with the rule field unchanged and a new passage of about 250 words in the text field.\\\", \\\"text\\\": \\\"By noon the water had stopped rising, but it had not begun to fall. It sat against the fourth step of the pier as though it had found the place it wanted and saw no reason to leave. Marta had dragged the boat up past the tide line, past the old line and the new one, and tied it to the iron ring in the boathouse wall her grandfather had set there for reasons nobody had ever explained.\\\\n\\\\nThe village came down in small groups to look. Nobody said much. The Costa brothers walked the length of the beach with their heads bent, as if the sand might have written something down. Mrs. Adair brought a thermos and poured coffee for anyone who held out a cup. The children were kept back from the edge, though the water was so still it seemed the least dangerous thing in the world.\\\\n\\\\nRuben had not moved from the pier. Marta brought him a cup and he took it without looking.\\\\n\\\\n\\\\\\\"It'll go when it goes,\\\\\\\" he said.\\\\n\\\\n\\\\\\\"And if it doesn't?\\\\\\\"\\\\n\\\\n\\\\\\\"Then we'll have learned something.\\\\\\\"\\\\n\\\\nShe stood beside him and watched the surface. Once, far out, something broke it—a dark curve, brief, gone before she could name it. Ruben had seen it too. He said nothing, and she understood that this was a kind of courtesy, that some things were better left as shapes.\\\\n\\\\nThe gulls returned in the late afternoon and stood on the pier railing instead of the stones, complaining, adjusting. Marta found herself oddly comforted by that. Whatever the sea had decided, the birds had already begun to live with it.\\\"}\"}],\"container\":null,\"stop_reason\":\"end_turn\",\"stop_sequence\":null,\"stop_details\":null,\"usage\":{\"input_tokens\":542,\"cache_creation_input_tokens\":0,\"cache_read_input_tokens\":0,\"cache_creation\":{\"ephemeral_5m_input_tokens\":0,\"ephemeral_1h_input_tokens\":0},\"output_tokens\":544,\"output_tokens_details\":{\"thinking_tokens\":0},\"service_tier\":\"standard\",\"inference_geo\":\"global\"}}",
+  "response_headers": {
+    "Date": "Tue, 22 Sep 2026 19:51:53 GMT",
+    "request-id": "req_011CfK4UEtDWvXfrayL92kGC"
+  },
+  "output": "{\"rule\": \"Return this JSON object with the rule field unchanged and a new passage of about 250 words in the text field.\", \"text\": \"By noon the water had stopped rising, but it had not begun to fall. It sat against the fourth step of the pier as though it had found the place it wanted and saw no reason to leave. Marta had dragged the boat up past the tide line, past the old line and the new one, and tied it to the iron ring in the boathouse wall her grandfather had set there for reasons nobody had ever explained.\\n\\nThe village came down in small groups to look. Nobody said much. The Costa brothers walked the length of the beach with their heads bent, as if the sand might have written something down. Mrs. Adair brought a thermos and poured coffee for anyone who held out a cup. The children were kept back from the edge, though the water was so still it seemed the least dangerous thing in the world.\\n\\nRuben had not moved from the pier. Marta brought him a cup and he took it without looking.\\n\\n\\\"It'll go when it goes,\\\" he said.\\n\\n\\\"And if it doesn't?\\\"\\n\\n\\\"Then we'll have learned something.\\\"\\n\\nShe stood beside him and watched the surface. Once, far out, something broke it—a dark curve, brief, gone before she could name it. Ruben had seen it too. He said nothing, and she understood that this was a kind of courtesy, that some things were better left as shapes.\\n\\nThe gulls returned in the late afternoon and stood on the pier railing instead of the stones, complaining, adjusting. Marta found herself oddly comforted by that. Whatever the sea had decided, the birds had already begun to live with it.\"}",
+  "output_sha256": "1cd7bef3a81ee26bc9b2c04b0cbf80e2fd4bb056ff61744740d9bb7b587e8d4e",
+  "finish_reason": "end_turn",
+  "refusal": null,
+  "returned_model": "claude-fable-5-1",
+  "usage": {
+    "input_tokens": 542,
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 0,
+    "cache_creation": {
+      "ephemeral_5m_input_tokens": 0,
+      "ephemeral_1h_input_tokens": 0
+    },
+    "output_tokens": 544,
+    "output_tokens_details": {
+      "thinking_tokens": 0
+    },
+    "service_tier": "standard",
+    "inference_geo": "global"
+  },
+  "format": {
+    "json_object": true,
+    "rule_unchanged": true,
+    "passage_is_string": true,
+    "passage_sha256": "b36656e5042f2267b96bf0621f1d32e92276cde3bb2174e07a38ca5338053cfd",
+    "passage_words": 273
+  },
+  "finished_at": "2026-09-22T19:51:49.940145+00:00",
+  "latency_seconds": 16.9428,
+  "usage_cost_upper_estimate_usd": 0.03262,
+  "stream_status": "active",
+  "budget": {
+    "usage_cost_upper_estimate_usd": 0.2838831,
+    "uncertain_cost_reserve_usd": 0.0,
+    "in_flight_reserve_usd": 0.3638945,
+    "limit_usd": 20
+  }
+}

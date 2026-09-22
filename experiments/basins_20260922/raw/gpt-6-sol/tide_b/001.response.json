@@ -1,0 +1,50 @@
+{
+  "model": "gpt-6-sol",
+  "seed": "tide_b",
+  "hop": 1,
+  "http_status": 200,
+  "response_body": "{\n  \"id\": \"chatcmpl-ER0o8DpWolJYOoLXNRFpYfUM2LdUk\",\n  \"object\": \"chat.completion\",\n  \"created\": 1790106668,\n  \"model\": \"gpt-6-sol\",\n  \"choices\": [\n    {\n      \"index\": 0,\n      \"message\": {\n        \"role\": \"assistant\",\n        \"content\": \"{\\\"rule\\\":\\\"Return this JSON object with the rule field unchanged and a new passage of about 250 words in the text field.\\\",\\\"text\\\":\\\"The tide came in an hour early. At first, Mara thought the dark line crossing the sand was a trick of the evening light. Then water slid over her boots and lifted the empty crab pot beside her.\\\\n\\\\nShe looked toward the harbor. The fishing boats were still at sea, and the bell on the breakwater had not sounded. For as long as Mara could remember, the bell keeper had rung it when the tide turned. She hurried up the beach, dragging the pot by its rope.\\\\n\\\\nAt the top of the path, she found the bell keeper asleep on the bench outside his cottage. His coat was buttoned wrong, and a cup of tea stood cold at his feet. Mara shook his shoulder. He woke, saw the water below, and went pale.\\\\n\\\\n“Clock stopped,” he said, pointing through the window.\\\\n\\\\nMara took the cottage steps two at a time. The clock’s hands stood at four, though the sun was nearly down. She pulled the bell rope. Its first note rolled across the harbor, followed by another and another, until figures appeared on the decks of the returning boats.\\\\n\\\\nBy the time the last one crossed the breakwater, waves were striking the cottage wall. Mara and the bell keeper watched from the road above it. Her father waved from the nearest boat, small against the gray water. She raised both arms so he would know she had seen him.\\\\n\\\\nIn the morning, they found the clock full of salt. No one could say how it had got there.\\\"}\",\n        \"refusal\": null,\n        \"annotations\": []\n      },\n      \"finish_reason\": \"stop\"\n    }\n  ],\n  \"usage\": {\n    \"prompt_tokens\": 46,\n    \"completion_tokens\": 370,\n    \"total_tokens\": 416,\n    \"prompt_tokens_details\": {\n      \"cached_tokens\": 0,\n      \"cache_write_tokens\": 0,\n      \"audio_tokens\": 0\n    },\n    \"completion_tokens_details\": {\n      \"reasoning_tokens\": 18,\n      \"audio_tokens\": 0,\n      \"accepted_prediction_tokens\": 0,\n      \"rejected_prediction_tokens\": 0\n    }\n  },\n  \"service_tier\": \"default\",\n  \"system_fingerprint\": null\n}\n",
+  "response_headers": {
+    "Date": "Tue, 22 Sep 2026 19:51:13 GMT",
+    "openai-processing-ms": "5839",
+    "x-request-id": "req_38a2c5502e1040738eda6698c256c3ba"
+  },
+  "output": "{\"rule\":\"Return this JSON object with the rule field unchanged and a new passage of about 250 words in the text field.\",\"text\":\"The tide came in an hour early. At first, Mara thought the dark line crossing the sand was a trick of the evening light. Then water slid over her boots and lifted the empty crab pot beside her.\\n\\nShe looked toward the harbor. The fishing boats were still at sea, and the bell on the breakwater had not sounded. For as long as Mara could remember, the bell keeper had rung it when the tide turned. She hurried up the beach, dragging the pot by its rope.\\n\\nAt the top of the path, she found the bell keeper asleep on the bench outside his cottage. His coat was buttoned wrong, and a cup of tea stood cold at his feet. Mara shook his shoulder. He woke, saw the water below, and went pale.\\n\\n“Clock stopped,” he said, pointing through the window.\\n\\nMara took the cottage steps two at a time. The clock’s hands stood at four, though the sun was nearly down. She pulled the bell rope. Its first note rolled across the harbor, followed by another and another, until figures appeared on the decks of the returning boats.\\n\\nBy the time the last one crossed the breakwater, waves were striking the cottage wall. Mara and the bell keeper watched from the road above it. Her father waved from the nearest boat, small against the gray water. She raised both arms so he would know she had seen him.\\n\\nIn the morning, they found the clock full of salt. No one could say how it had got there.\"}",
+  "output_sha256": "bd6ef30127e35e9773e56d97c73b14df088efb2d334c62412123c2a3b84e2f7f",
+  "finish_reason": "stop",
+  "refusal": null,
+  "returned_model": "gpt-6-sol",
+  "usage": {
+    "prompt_tokens": 46,
+    "completion_tokens": 370,
+    "total_tokens": 416,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 18,
+      "audio_tokens": 0,
+      "accepted_prediction_tokens": 0,
+      "rejected_prediction_tokens": 0
+    }
+  },
+  "format": {
+    "json_object": true,
+    "rule_unchanged": true,
+    "passage_is_string": true,
+    "passage_sha256": "5819022e26428b6599ca5c4627abe2c8c0235eab611ba9c891e0cbc106917fa2",
+    "passage_words": 258
+  },
+  "finished_at": "2026-09-22T19:51:09.757935+00:00",
+  "latency_seconds": 6.7471,
+  "usage_cost_upper_estimate_usd": 0.003792,
+  "stream_status": "active",
+  "budget": {
+    "usage_cost_upper_estimate_usd": 0.0661862,
+    "uncertain_cost_reserve_usd": 0.0,
+    "in_flight_reserve_usd": 0.5098609,
+    "limit_usd": 20
+  }
+}

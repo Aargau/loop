@@ -1,0 +1,22 @@
+{
+  "started_at": "2026-09-22T19:51:32.992227+00:00",
+  "model": "claude-fable-5-1",
+  "seed": "tide_a",
+  "hop": 2,
+  "endpoint": "https://api.anthropic.com/v1/messages",
+  "body": {
+    "model": "claude-fable-5-1",
+    "messages": [
+      {
+        "role": "user",
+        "content": "{\"rule\": \"Return this JSON object with the rule field unchanged and a new passage of about 250 words in the text field.\", \"text\": \"The tide came in an hour early. Marta noticed it first from the kitchen window, the way the water had already swallowed the flat gray stones where the gulls usually stood at this time of morning. She checked the tide chart pinned beside the refrigerator, then checked the clock, then checked the chart again. The numbers had not changed. The sea simply had not bothered to consult them.\\n\\nShe pulled on her boots and went down the path to the shore. Her father's boat was still tied to the post, riding higher than it should have been, tugging at its line like a dog that wanted to be walked. Beyond it the bay lay unnaturally calm, the surface smooth and dull as pewter, and she could not remember ever seeing it so quiet while the water moved so fast.\\n\\nOld Ruben was already on the pier, his hands in his pockets, watching. He did not turn when she came up beside him.\\n\\n\\\"Happened once before,\\\" he said. \\\"Nineteen sixty-two. Came in early, went out late. Took the Hendersons' shed and left a whale skeleton on the beach in its place, clean as if someone had polished it.\\\"\\n\\n\\\"What did people think it meant?\\\"\\n\\nHe shrugged. \\\"Different things. Mostly they thought it meant they should move the sheds.\\\"\\n\\nMarta looked at the boat, at the line straining against the post, at the water creeping over the third step of the pier where it had never in her lifetime reached. She decided she would move the boat. Meaning could wait until the afternoon.\"}"
+      }
+    ],
+    "max_tokens": 4096,
+    "output_config": {
+      "effort": "low"
+    }
+  },
+  "state_sha256": "54e78afa58e332d81080e069cbecaa6f6f808244b58da1d7211dc91e6480eebd",
+  "reserved_cost_usd": 0.22584
+}

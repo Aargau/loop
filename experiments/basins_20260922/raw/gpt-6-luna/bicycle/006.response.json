@@ -1,0 +1,47 @@
+{
+  "model": "gpt-6-luna",
+  "seed": "bicycle",
+  "hop": 6,
+  "http_status": 200,
+  "response_body": "{\n  \"id\": \"chatcmpl-ER0pR1rq3uU4nEy0XI6JGboFILpVg\",\n  \"object\": \"chat.completion\",\n  \"created\": 1790106749,\n  \"model\": \"gpt-6-luna\",\n  \"choices\": [\n    {\n      \"index\": 0,\n      \"message\": {\n        \"role\": \"assistant\",\n        \"content\": \"{\\\"rule\\\":\\\"Return this JSON object with the rule field unchanged and a new passage of about 250 words in the text field.\\\",\\\"text\\\":\\\"That evening, the lighthouse beam swept across the water without faltering. Mara stayed in the lantern room, listening to the generator’s steady rhythm beneath her feet. Each turn of light revealed a different piece of the harbor: the black rocks, the empty pier, the boats resting at their moorings.\\n\\nThe boy came up the stairs with two mugs of coffee. “Grandfather says the chart has another mark,” he said. “One he never understood.”\\n\\nHe unfolded the old paper on the floor. Near the northern edge, almost hidden beneath a crease, was a tiny blue cross. Beside it, someone had written a date from forty years earlier.\\n\\n“Could be a wreck,” Mara said.\\n\\n“Or a warning,” the boy replied.\\n\\nElias joined them, wiping grease from his hands. He looked at the mark and frowned. “That’s not out at sea. It’s on the island.”\\n\\nThe three of them took a lantern down to the shore. At low tide, a narrow strip of sand appeared between the beach and a rocky outcrop. They followed it carefully, stopping when the lantern revealed an iron ring set into the stone.\\n\\nElias pulled. A small metal box emerged from a crevice, sealed against the salt air. Inside lay a bundle of letters and a photograph of the lighthouse before its tower had been painted white.\\n\\nOn the back, a name was written in fading ink: Mara’s great-grandmother.\\n\\nMara held the photograph toward the lantern. For a moment, the past seemed close enough to touch.\\n\\nThe beam circled overhead, guiding the tide home.\\\"}\",\n        \"refusal\": null,\n        \"annotations\": []\n      },\n      \"finish_reason\": \"stop\"\n    }\n  ],\n  \"usage\": {\n    \"prompt_tokens\": 361,\n    \"completion_tokens\": 432,\n    \"total_tokens\": 793,\n    \"prompt_tokens_details\": {\n      \"cached_tokens\": 0,\n      \"cache_write_tokens\": 0,\n      \"audio_tokens\": 0\n    },\n    \"completion_tokens_details\": {\n      \"reasoning_tokens\": 72,\n      \"audio_tokens\": 0,\n      \"accepted_prediction_tokens\": 0,\n      \"rejected_prediction_tokens\": 0\n    }\n  },\n  \"service_tier\": \"default\",\n  \"system_fingerprint\": null\n}\n",
+  "response_headers": {
+    "Date": "Tue, 22 Sep 2026 19:52:34 GMT",
+    "openai-processing-ms": "5146",
+    "x-request-id": "req_42065ce02e0d45ee8e6b0c7ebb81ad9a"
+  },
+  "output": "{\"rule\":\"Return this JSON object with the rule field unchanged and a new passage of about 250 words in the text field.\",\"text\":\"That evening, the lighthouse beam swept across the water without faltering. Mara stayed in the lantern room, listening to the generator’s steady rhythm beneath her feet. Each turn of light revealed a different piece of the harbor: the black rocks, the empty pier, the boats resting at their moorings.\n\nThe boy came up the stairs with two mugs of coffee. “Grandfather says the chart has another mark,” he said. “One he never understood.”\n\nHe unfolded the old paper on the floor. Near the northern edge, almost hidden beneath a crease, was a tiny blue cross. Beside it, someone had written a date from forty years earlier.\n\n“Could be a wreck,” Mara said.\n\n“Or a warning,” the boy replied.\n\nElias joined them, wiping grease from his hands. He looked at the mark and frowned. “That’s not out at sea. It’s on the island.”\n\nThe three of them took a lantern down to the shore. At low tide, a narrow strip of sand appeared between the beach and a rocky outcrop. They followed it carefully, stopping when the lantern revealed an iron ring set into the stone.\n\nElias pulled. A small metal box emerged from a crevice, sealed against the salt air. Inside lay a bundle of letters and a photograph of the lighthouse before its tower had been painted white.\n\nOn the back, a name was written in fading ink: Mara’s great-grandmother.\n\nMara held the photograph toward the lantern. For a moment, the past seemed close enough to touch.\n\nThe beam circled overhead, guiding the tide home.\"}",
+  "output_sha256": "57676637002467c58a6e6ce640c1a9f8159441819b6880ab22b749ce725a5e0a",
+  "finish_reason": "stop",
+  "refusal": null,
+  "returned_model": "gpt-6-luna",
+  "usage": {
+    "prompt_tokens": 361,
+    "completion_tokens": 432,
+    "total_tokens": 793,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 72,
+      "audio_tokens": 0,
+      "accepted_prediction_tokens": 0,
+      "rejected_prediction_tokens": 0
+    }
+  },
+  "format": {
+    "json_object": false,
+    "rule_unchanged": false
+  },
+  "finished_at": "2026-09-22T19:52:30.727819+00:00",
+  "latency_seconds": 5.2373,
+  "usage_cost_upper_estimate_usd": 0.0002521,
+  "stream_status": "active",
+  "budget": {
+    "usage_cost_upper_estimate_usd": 0.5140832,
+    "uncertain_cost_reserve_usd": 0.0,
+    "in_flight_reserve_usd": 0.590062,
+    "limit_usd": 20
+  }
+}

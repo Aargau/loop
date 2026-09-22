@@ -1,0 +1,22 @@
+{
+  "started_at": "2026-09-22T19:51:49.942230+00:00",
+  "model": "claude-fable-5-1",
+  "seed": "tide_b",
+  "hop": 2,
+  "endpoint": "https://api.anthropic.com/v1/messages",
+  "body": {
+    "model": "claude-fable-5-1",
+    "messages": [
+      {
+        "role": "user",
+        "content": "{\"rule\": \"Return this JSON object with the rule field unchanged and a new passage of about 250 words in the text field.\", \"text\": \"The tide came in an hour early. Nobody on the pier could explain it, and the old men who had fished these waters for fifty years simply shook their heads and reeled in their lines. Marta noticed first, because her boots were suddenly wet where a moment before she had been standing on dry sand, sorting through the morning's haul of clams. She called out to her brother, but Teo was already looking at the horizon, his hand shading his eyes against the pale light.\\n\\nThe water did not rush. It crept, patient and deliberate, swallowing the tide pools one by one, erasing the footprints of the gulls, lifting the tangled nets that had been left to dry on the rocks. The harbor master came down from his office with a clipboard he did not consult, muttering about lunar tables and barometric pressure, but his voice trailed off when he saw how far the sea had already advanced.\\n\\nBy noon the lower road was flooded. Children were delighted; their parents were not. Someone rang the church bell, though no one had agreed on what the signal meant. Marta and Teo carried their buckets up the hill and sat on the wall by the cemetery, watching the town rearrange itself around the water. Boats bobbed at odd angles. A dog swam in circles, barking joyfully.\\n\\n\\\"It will go out again,\\\" Teo said, though he did not sound certain.\\n\\nMarta said nothing. She was thinking of their grandmother, who used to say the sea kept its own clock, and that one day it would stop bothering to keep ours.\"}"
+      }
+    ],
+    "max_tokens": 4096,
+    "output_config": {
+      "effort": "low"
+    }
+  },
+  "state_sha256": "0083e22fbb3e03707a174b80ad2af6f09a1f077edf9910db333067becb7717a8",
+  "reserved_cost_usd": 0.2261
+}

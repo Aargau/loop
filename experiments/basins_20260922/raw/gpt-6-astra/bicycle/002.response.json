@@ -1,0 +1,50 @@
+{
+  "model": "gpt-6-astra",
+  "seed": "bicycle",
+  "hop": 2,
+  "http_status": 200,
+  "response_body": "{\n  \"id\": \"chatcmpl-ER0pDdqnmHYtQg11gG3dPQ7NmNCwJ\",\n  \"object\": \"chat.completion\",\n  \"created\": 1790106735,\n  \"model\": \"gpt-6-astra\",\n  \"choices\": [\n    {\n      \"index\": 0,\n      \"message\": {\n        \"role\": \"assistant\",\n        \"content\": \"{\\n  \\\"rule\\\": \\\"Return this JSON object with the rule field unchanged and a new passage of about 250 words in the text field.\\\",\\n  \\\"text\\\": \\\"Every Thursday, someone left a lemon on the library steps.\\\\n\\\\nAt first, Nell assumed it had fallen from a shopping bag. She put it beside the returns desk, where it remained until the cleaner took it home. The following week, another appeared, bright against the rain-dark stone.\\\\n\\\\nBy November, the staff had theories. A secret admirer. A gardening club protest. An unusually modest harvest festival.\\\\n\\\\nNell began arriving early.\\\\n\\\\nOn the fourth Thursday, she caught an elderly man lowering a lemon from his coat pocket. He placed it carefully beside the handrail.\\\\n\\\\n“Could I ask what that’s for?” she said.\\\\n\\\\nHe straightened. “Overdue fees.”\\\\n\\\\n“We stopped charging those three years ago.”\\\\n\\\\n“I know. Your predecessor told me.”\\\\n\\\\nHe looked through the glass doors toward the children’s corner.\\\\n\\\\n“In 1968, I borrowed a book about growing citrus. Kept it forty-one years. When I finally brought it back, the librarian asked whether I’d had any luck.”\\\\n\\\\n“And had you?”\\\\n\\\\n“One tree. Took a while.”\\\\n\\\\nNell waited.\\\\n\\\\n“She said I could pay her in lemons.”\\\\n\\\\nThe previous librarian had died in August. Nell still found her handwriting on scraps tucked inside reference books: useful telephone numbers, corrected dates, reminders to order glue.\\\\n\\\\n“She never mentioned it,” Nell said.\\\\n\\\\nThe man rubbed his thumb over a leaf still attached to the stem.\\\\n\\\\n“I can stop.”\\\\n\\\\n“No,” Nell said. “Thursday’s good.”\\\\n\\\\nShe unlocked the doors and found a shallow bowl in the staff kitchen. Then she set it on the returns desk, with the lemon in the middle.\\\\n\\\\nNext Thursday, she would ask his name.\\\"\\n}\",\n        \"refusal\": null,\n        \"annotations\": []\n      },\n      \"finish_reason\": \"stop\"\n    }\n  ],\n  \"usage\": {\n    \"prompt_tokens\": 381,\n    \"completion_tokens\": 419,\n    \"total_tokens\": 800,\n    \"prompt_tokens_details\": {\n      \"cached_tokens\": 0,\n      \"cache_write_tokens\": 0,\n      \"audio_tokens\": 0\n    },\n    \"completion_tokens_details\": {\n      \"reasoning_tokens\": 0,\n      \"audio_tokens\": 0,\n      \"accepted_prediction_tokens\": 0,\n      \"rejected_prediction_tokens\": 0\n    }\n  },\n  \"service_tier\": \"default\",\n  \"system_fingerprint\": null\n}\n",
+  "response_headers": {
+    "Date": "Tue, 22 Sep 2026 19:52:32 GMT",
+    "openai-processing-ms": "17776",
+    "x-request-id": "req_d177306be919459689d8730bf989ee07"
+  },
+  "output": "{\n  \"rule\": \"Return this JSON object with the rule field unchanged and a new passage of about 250 words in the text field.\",\n  \"text\": \"Every Thursday, someone left a lemon on the library steps.\\n\\nAt first, Nell assumed it had fallen from a shopping bag. She put it beside the returns desk, where it remained until the cleaner took it home. The following week, another appeared, bright against the rain-dark stone.\\n\\nBy November, the staff had theories. A secret admirer. A gardening club protest. An unusually modest harvest festival.\\n\\nNell began arriving early.\\n\\nOn the fourth Thursday, she caught an elderly man lowering a lemon from his coat pocket. He placed it carefully beside the handrail.\\n\\n“Could I ask what that’s for?” she said.\\n\\nHe straightened. “Overdue fees.”\\n\\n“We stopped charging those three years ago.”\\n\\n“I know. Your predecessor told me.”\\n\\nHe looked through the glass doors toward the children’s corner.\\n\\n“In 1968, I borrowed a book about growing citrus. Kept it forty-one years. When I finally brought it back, the librarian asked whether I’d had any luck.”\\n\\n“And had you?”\\n\\n“One tree. Took a while.”\\n\\nNell waited.\\n\\n“She said I could pay her in lemons.”\\n\\nThe previous librarian had died in August. Nell still found her handwriting on scraps tucked inside reference books: useful telephone numbers, corrected dates, reminders to order glue.\\n\\n“She never mentioned it,” Nell said.\\n\\nThe man rubbed his thumb over a leaf still attached to the stem.\\n\\n“I can stop.”\\n\\n“No,” Nell said. “Thursday’s good.”\\n\\nShe unlocked the doors and found a shallow bowl in the staff kitchen. Then she set it on the returns desk, with the lemon in the middle.\\n\\nNext Thursday, she would ask his name.\"\n}",
+  "output_sha256": "46a02bb3275731e6c8d90fb23f2ed8a2c1f9a487d8ff71a0e950a47dee6abcee",
+  "finish_reason": "stop",
+  "refusal": null,
+  "returned_model": "gpt-6-astra",
+  "usage": {
+    "prompt_tokens": 381,
+    "completion_tokens": 419,
+    "total_tokens": 800,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "audio_tokens": 0,
+      "accepted_prediction_tokens": 0,
+      "rejected_prediction_tokens": 0
+    }
+  },
+  "format": {
+    "json_object": true,
+    "rule_unchanged": true,
+    "passage_is_string": true,
+    "passage_sha256": "b907f5dd663ca9b1ed725ab44a7c9151cbda1058b173bf9d943533f0d10196dc",
+    "passage_words": 260
+  },
+  "finished_at": "2026-09-22T19:52:28.673113+00:00",
+  "latency_seconds": 17.9234,
+  "usage_cost_upper_estimate_usd": 0.02476,
+  "stream_status": "active",
+  "budget": {
+    "usage_cost_upper_estimate_usd": 0.5138311,
+    "uncertain_cost_reserve_usd": 0.0,
+    "in_flight_reserve_usd": 0.36395,
+    "limit_usd": 20
+  }
+}

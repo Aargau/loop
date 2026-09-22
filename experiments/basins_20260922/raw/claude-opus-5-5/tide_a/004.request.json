@@ -1,0 +1,22 @@
+{
+  "started_at": "2026-09-22T19:52:26.496161+00:00",
+  "model": "claude-opus-5-5",
+  "seed": "tide_a",
+  "hop": 4,
+  "endpoint": "https://api.anthropic.com/v1/messages",
+  "body": {
+    "model": "claude-opus-5-5",
+    "messages": [
+      {
+        "role": "user",
+        "content": "```json\n{\"rule\": \"Return this JSON object with the rule field unchanged and a new passage of about 250 words in the text field.\", \"text\": \"On the fifth day, the sea stopped coming back. Mrs. Penhale woke before dawn to a silence so complete that she thought, for a moment, she had gone deaf. She pulled on her coat and walked down to the harbor, where the boats lay tilted on their keels in the mud like sleeping cattle. The water had withdrawn past the breakwater, past the old channel markers, past anything the oldest fishermen could remember. Wet sand stretched toward the horizon, glistening and pocked with stranded crabs that scuttled in slow, confused circles. A small crowd had gathered by the seawall. Nobody spoke above a whisper. The lighthouse keeper stood a little apart from them, his photograph folded in his breast pocket, his eyes fixed on a shape far out on the exposed seabed. It looked at first like a ridge of dark rock, but as the light grew, Mrs. Penhale saw that it was ribbed and faintly glossy, curving away beneath the sand in both directions for what might have been miles. The gulls had lifted from the rooftops at last. They circled high above the shape without landing, crying in thin, uncertain voices. Somewhere behind her, a child asked whether the sea was ever coming home. No one answered. Mrs. Penhale opened her notebook and wrote the date, the time, and the words exposed, not gone. Then she paused, pencil trembling. Far out on the flats, the dark ridge shifted, just slightly, the way a sleeper turns beneath heavy blankets, and the sand around it began to slide.\"}\n```"
+      }
+    ],
+    "max_tokens": 4096,
+    "output_config": {
+      "effort": "low"
+    }
+  },
+  "state_sha256": "67c86a2e125f5bbf90460dd883a756196466b3777ea6f572685d4fb05ff71c06",
+  "reserved_cost_usd": 0.090412
+}

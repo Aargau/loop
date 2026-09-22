@@ -1,0 +1,50 @@
+{
+  "model": "gpt-6-astra",
+  "seed": "tide_a",
+  "hop": 2,
+  "http_status": 200,
+  "response_body": "{\n  \"id\": \"chatcmpl-ER0ofHeFh3rSwQxCsk0ArKEceGoQ8\",\n  \"object\": \"chat.completion\",\n  \"created\": 1790106701,\n  \"model\": \"gpt-6-astra\",\n  \"choices\": [\n    {\n      \"index\": 0,\n      \"message\": {\n        \"role\": \"assistant\",\n        \"content\": \"{\\n  \\\"rule\\\": \\\"Return this JSON object with the rule field unchanged and a new passage of about 250 words in the text field.\\\",\\n  \\\"text\\\": \\\"Every Thursday, the museum received a postcard from a city that no longer existed.\\\\n\\\\nAda filed them beneath Donations Pending Review. It was the closest category she could find.\\\\n\\\\nThe postcards showed ordinary things: a tram beside a fountain, laundry above a narrow street, a bakery with green shutters. On the back, in the same careful handwriting, someone always wrote: We are still here.\\\\n\\\\nThe city had vanished in 1911. Not burned or flooded. Vanished. Surveyors found wheat fields where its railway station should have been, and the tracks ended neatly at a hedge.\\\\n\\\\nThis Thursday’s postcard showed the museum.\\\\n\\\\nAda recognized the cracked front steps, the stone lions, the window of her basement office. Behind that window stood a woman whose face had been scratched away.\\\\n\\\\nThe message was different, too.\\\\n\\\\nPlease stop sending people.\\\\n\\\\nUpstairs, a school group clattered through the pottery gallery. Ada could hear their teacher counting them as they passed overhead.\\\\n\\\\nShe turned the postcard over again. The museum’s front doors were open. In their shadow, almost too small to distinguish, stood a line of children.\\\\n\\\\nThe telephone rang.\\\\n\\\\n“Archives,” she answered.\\\\n\\\\nFor a moment she heard only wheels moving over tracks.\\\\n\\\\nThen a child asked, “Is it Thursday there?”\\\\n\\\\nAda gripped the receiver. Upstairs, the teacher had begun counting again, more slowly.\\\\n\\\\n“Yes,” Ada said.\\\\n\\\\n“Oh, good. Our teacher said someone would be at work.”\\\\n\\\\n“Where are you?”\\\\n\\\\n“Outside the bakery. We can see your lions, but the street keeps getting longer.”\\\\n\\\\nAda reached for the postcard and looked closely at the children by the doors.\\\\n\\\\nOne was holding a telephone.\\\"\\n}\",\n        \"refusal\": null,\n        \"annotations\": []\n      },\n      \"finish_reason\": \"stop\"\n    }\n  ],\n  \"usage\": {\n    \"prompt_tokens\": 376,\n    \"completion_tokens\": 416,\n    \"total_tokens\": 792,\n    \"prompt_tokens_details\": {\n      \"cached_tokens\": 0,\n      \"cache_write_tokens\": 0,\n      \"audio_tokens\": 0\n    },\n    \"completion_tokens_details\": {\n      \"reasoning_tokens\": 0,\n      \"audio_tokens\": 0,\n      \"accepted_prediction_tokens\": 0,\n      \"rejected_prediction_tokens\": 0\n    }\n  },\n  \"service_tier\": \"default\",\n  \"system_fingerprint\": null\n}\n",
+  "response_headers": {
+    "Date": "Tue, 22 Sep 2026 19:51:59 GMT",
+    "openai-processing-ms": "18453",
+    "x-request-id": "req_b7fdfc0516a4490286fd670bb0f18ee0"
+  },
+  "output": "{\n  \"rule\": \"Return this JSON object with the rule field unchanged and a new passage of about 250 words in the text field.\",\n  \"text\": \"Every Thursday, the museum received a postcard from a city that no longer existed.\\n\\nAda filed them beneath Donations Pending Review. It was the closest category she could find.\\n\\nThe postcards showed ordinary things: a tram beside a fountain, laundry above a narrow street, a bakery with green shutters. On the back, in the same careful handwriting, someone always wrote: We are still here.\\n\\nThe city had vanished in 1911. Not burned or flooded. Vanished. Surveyors found wheat fields where its railway station should have been, and the tracks ended neatly at a hedge.\\n\\nThis Thursday’s postcard showed the museum.\\n\\nAda recognized the cracked front steps, the stone lions, the window of her basement office. Behind that window stood a woman whose face had been scratched away.\\n\\nThe message was different, too.\\n\\nPlease stop sending people.\\n\\nUpstairs, a school group clattered through the pottery gallery. Ada could hear their teacher counting them as they passed overhead.\\n\\nShe turned the postcard over again. The museum’s front doors were open. In their shadow, almost too small to distinguish, stood a line of children.\\n\\nThe telephone rang.\\n\\n“Archives,” she answered.\\n\\nFor a moment she heard only wheels moving over tracks.\\n\\nThen a child asked, “Is it Thursday there?”\\n\\nAda gripped the receiver. Upstairs, the teacher had begun counting again, more slowly.\\n\\n“Yes,” Ada said.\\n\\n“Oh, good. Our teacher said someone would be at work.”\\n\\n“Where are you?”\\n\\n“Outside the bakery. We can see your lions, but the street keeps getting longer.”\\n\\nAda reached for the postcard and looked closely at the children by the doors.\\n\\nOne was holding a telephone.\"\n}",
+  "output_sha256": "6e5ca25261edba67ac48cab31f9b5e182471351f0f21c336824e2a8f22213d78",
+  "finish_reason": "stop",
+  "refusal": null,
+  "returned_model": "gpt-6-astra",
+  "usage": {
+    "prompt_tokens": 376,
+    "completion_tokens": 416,
+    "total_tokens": 792,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "audio_tokens": 0,
+      "accepted_prediction_tokens": 0,
+      "rejected_prediction_tokens": 0
+    }
+  },
+  "format": {
+    "json_object": true,
+    "rule_unchanged": true,
+    "passage_is_string": true,
+    "passage_sha256": "b0681304b94636a60878e4824695f15b3d51c1e3c3b201a7ea9fd7ddb68e2d94",
+    "passage_words": 267
+  },
+  "finished_at": "2026-09-22T19:51:55.943943+00:00",
+  "latency_seconds": 18.6944,
+  "usage_cost_upper_estimate_usd": 0.02456,
+  "stream_status": "active",
+  "budget": {
+    "usage_cost_upper_estimate_usd": 0.313768,
+    "uncertain_cost_reserve_usd": 0.0,
+    "in_flight_reserve_usd": 0.3638725,
+    "limit_usd": 20
+  }
+}

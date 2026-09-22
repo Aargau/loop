@@ -1,0 +1,22 @@
+{
+  "started_at": "2026-09-22T19:52:05.253102+00:00",
+  "model": "claude-fable-5-1",
+  "seed": "bicycle",
+  "hop": 2,
+  "endpoint": "https://api.anthropic.com/v1/messages",
+  "body": {
+    "model": "claude-fable-5-1",
+    "messages": [
+      {
+        "role": "user",
+        "content": "{\"rule\": \"Return this JSON object with the rule field unchanged and a new passage of about 250 words in the text field.\", \"text\": \"The red bicycle was missing its front wheel. It leaned against the chain-link fence behind the hardware store like a wounded animal, its frame tilted forward so that the empty fork rested in a shallow puddle. Someone had chained it there weeks ago, perhaps months, and the lock had rusted into a solid orange knot that no key would ever open again.\\n\\nMara noticed it every morning on her way to the bus stop. At first it was just a shape, a splash of color against the gray of the alley. Then she began to look for it, the way one looks for a familiar face in a crowd. She wondered who had owned it. A child, maybe, judging by the size, or a small adult who liked the bright paint and the little bell still clinging to the handlebar.\\n\\nOne Tuesday she stopped. The bell gave a thin, uncertain ring when she flicked it, and a pigeon startled off the fence above. The seat was cracked, the leather peeling back in curls. On the down tube, half hidden under grime, someone had written a name in marker: LUCY.\\n\\nMara stood there longer than she meant to. The bus came and went at the end of the alley, and she let it go. She thought about wheels, about how a thing could be almost whole and still unable to move. She thought about her own apartment, the boxes she had never unpacked, the phone calls she kept meaning to return.\\n\\nThat afternoon she came back with a pair of bolt cutters borrowed from the hardware store and a wheel she had found at a secondhand shop. It didn't match. It was black and slightly too large. But when she lifted the bicycle upright and let it stand on both wheels, it looked, for the first time, like it was ready to go somewhere.\"}"
+      }
+    ],
+    "max_tokens": 4096,
+    "output_config": {
+      "effort": "low"
+    }
+  },
+  "state_sha256": "d3e3a5fb6c55494adb2e269fffeae61a5dcd785105014f34087b8d744bcda195",
+  "reserved_cost_usd": 0.22785
+}

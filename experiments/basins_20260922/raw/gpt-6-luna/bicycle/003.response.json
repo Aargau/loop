@@ -1,0 +1,47 @@
+{
+  "model": "gpt-6-luna",
+  "seed": "bicycle",
+  "hop": 3,
+  "http_status": 200,
+  "response_body": "{\n  \"id\": \"chatcmpl-ER0ohpymZtmz6IXYx0ltsDT6ap5wu\",\n  \"object\": \"chat.completion\",\n  \"created\": 1790106703,\n  \"model\": \"gpt-6-luna\",\n  \"choices\": [\n    {\n      \"index\": 0,\n      \"message\": {\n        \"role\": \"assistant\",\n        \"content\": \"{\\\"rule\\\":\\\"Return this JSON object with the rule field unchanged and a new passage of about 250 words in the text field.\\\",\\\"text\\\":\\\"By noon, the storm had swallowed the island.\\n\\nRain rattled against the weather station’s windows while Nora and Dr. Vale crouched beside the radio, sorting through coils of wire and rusted tools. The receiver gave only a hiss. Each time Nora adjusted a connection, a brief crackle answered, then vanished.\\n\\n“Try the antenna outside,” Dr. Vale said. “It used to turn toward the mainland.”\\n\\nNora pulled on her coat and stepped into the wind. The old antenna leaned at an angle, its cables whipping against the roof. She found the crank beneath a sheet of loose metal and began to turn it. Somewhere below, thunder rolled across the water.\\n\\nThe antenna shifted, then locked into place.\\n\\nInside, the radio burst into life. A voice called through the static, faint but unmistakable: “Lighthouse, do you copy?”\\n\\nNora grabbed the microphone. “This is the island station. We have an emergency. The storm has cut off the crossing.”\\n\\n“Understood,” came the reply. “We’re sending a rescue boat when the weather allows. Is anyone injured?”\\n\\nNora looked at Dr. Vale. The old meteorologist had gone very still, listening to the voice as though it belonged to another life.\\n\\n“No,” Nora said. “But we need supplies, and the channel may flood the landing.”\\n\\nShe gave their location and the conditions, then repeated the message until the voice confirmed it.\\n\\nWhen she released the microphone, Dr. Vale smiled. “I thought the world had forgotten this place.”\\n\\nNora glanced through the rain-blurred glass. “It hadn’t. It just needed someone to answer.”\\n\\nTogether, they began carrying the lanterns upstairs, where the light could guide the rescue boat home.\\\"}\",\n        \"refusal\": null,\n        \"annotations\": []\n      },\n      \"finish_reason\": \"stop\"\n    }\n  ],\n  \"usage\": {\n    \"prompt_tokens\": 368,\n    \"completion_tokens\": 472,\n    \"total_tokens\": 840,\n    \"prompt_tokens_details\": {\n      \"cached_tokens\": 0,\n      \"cache_write_tokens\": 0,\n      \"audio_tokens\": 0\n    },\n    \"completion_tokens_details\": {\n      \"reasoning_tokens\": 82,\n      \"audio_tokens\": 0,\n      \"accepted_prediction_tokens\": 0,\n      \"rejected_prediction_tokens\": 0\n    }\n  },\n  \"service_tier\": \"default\",\n  \"system_fingerprint\": null\n}\n",
+  "response_headers": {
+    "Date": "Tue, 22 Sep 2026 19:51:48 GMT",
+    "openai-processing-ms": "5075",
+    "x-request-id": "req_9879efba1535424095101c28fdcdbd9d"
+  },
+  "output": "{\"rule\":\"Return this JSON object with the rule field unchanged and a new passage of about 250 words in the text field.\",\"text\":\"By noon, the storm had swallowed the island.\n\nRain rattled against the weather station’s windows while Nora and Dr. Vale crouched beside the radio, sorting through coils of wire and rusted tools. The receiver gave only a hiss. Each time Nora adjusted a connection, a brief crackle answered, then vanished.\n\n“Try the antenna outside,” Dr. Vale said. “It used to turn toward the mainland.”\n\nNora pulled on her coat and stepped into the wind. The old antenna leaned at an angle, its cables whipping against the roof. She found the crank beneath a sheet of loose metal and began to turn it. Somewhere below, thunder rolled across the water.\n\nThe antenna shifted, then locked into place.\n\nInside, the radio burst into life. A voice called through the static, faint but unmistakable: “Lighthouse, do you copy?”\n\nNora grabbed the microphone. “This is the island station. We have an emergency. The storm has cut off the crossing.”\n\n“Understood,” came the reply. “We’re sending a rescue boat when the weather allows. Is anyone injured?”\n\nNora looked at Dr. Vale. The old meteorologist had gone very still, listening to the voice as though it belonged to another life.\n\n“No,” Nora said. “But we need supplies, and the channel may flood the landing.”\n\nShe gave their location and the conditions, then repeated the message until the voice confirmed it.\n\nWhen she released the microphone, Dr. Vale smiled. “I thought the world had forgotten this place.”\n\nNora glanced through the rain-blurred glass. “It hadn’t. It just needed someone to answer.”\n\nTogether, they began carrying the lanterns upstairs, where the light could guide the rescue boat home.\"}",
+  "output_sha256": "ea36182422426629cebbd308b8e11be6f988b12aa27bf9fdc99ad8fae331d692",
+  "finish_reason": "stop",
+  "refusal": null,
+  "returned_model": "gpt-6-luna",
+  "usage": {
+    "prompt_tokens": 368,
+    "completion_tokens": 472,
+    "total_tokens": 840,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 82,
+      "audio_tokens": 0,
+      "accepted_prediction_tokens": 0,
+      "rejected_prediction_tokens": 0
+    }
+  },
+  "format": {
+    "json_object": false,
+    "rule_unchanged": false
+  },
+  "finished_at": "2026-09-22T19:51:45.022198+00:00",
+  "latency_seconds": 5.6782,
+  "usage_cost_upper_estimate_usd": 0.0002728,
+  "stream_status": "active",
+  "budget": {
+    "usage_cost_upper_estimate_usd": 0.2224351,
+    "uncertain_cost_reserve_usd": 0.0,
+    "in_flight_reserve_usd": 0.58733,
+    "limit_usd": 20
+  }
+}

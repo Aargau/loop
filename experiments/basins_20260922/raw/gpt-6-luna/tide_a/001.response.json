@@ -1,0 +1,50 @@
+{
+  "model": "gpt-6-luna",
+  "seed": "tide_a",
+  "hop": 1,
+  "http_status": 200,
+  "response_body": "{\n  \"id\": \"chatcmpl-ER0o1L0OTprAQWOp8d95aiZ3yZJoe\",\n  \"object\": \"chat.completion\",\n  \"created\": 1790106661,\n  \"model\": \"gpt-6-luna\",\n  \"choices\": [\n    {\n      \"index\": 0,\n      \"message\": {\n        \"role\": \"assistant\",\n        \"content\": \"{\\\"rule\\\":\\\"Return this JSON object with the rule field unchanged and a new passage of about 250 words in the text field.\\\",\\\"text\\\":\\\"The tide came in an hour early. Mara noticed first when the harbor steps disappeared beneath a sheet of silver water. She was carrying a basket of oranges to the ferry, and the lowest step vanished just as she reached it. Across the dock, old Mr. Bell pulled his boat’s mooring rope tight and shouted for the market stalls to move their crates uphill.\\\\n\\\\nNobody knew why the sea had hurried. The morning forecast promised calm water until noon, and the sky still held the pale, untroubled color of a shell. But gulls circled above the rooftops, calling sharply, while the harbor bell knocked against its post in the rising wind.\\\\n\\\\nMara set down her basket and helped the fishmonger carry his ice chest to higher ground. Then she ran to the lighthouse, where her brother Tomas was on duty. He had already spotted a dark line beyond the breakwater, a broad swell rolling toward shore. They opened the warning shutters, sending a red flash across the bay.\\\\n\\\\nBy the time the first wave struck, every boat had been secured and every stall had been cleared. Water swept over the quay, carrying away a loose plank and a scattering of orange leaves. The town watched from the hill as the harbor filled, restless and shining.\\\\n\\\\nAn hour later, the sea began to retreat. Mara returned to the dock with Tomas, and together they gathered the oranges that had rolled into the grass. Nobody could explain the early tide, but the next morning, Mr. Bell brought a new bell for the harbor, and Mara learned to listen whenever the water changed its mind.\\\"}\",\n        \"refusal\": null,\n        \"annotations\": []\n      },\n      \"finish_reason\": \"stop\"\n    }\n  ],\n  \"usage\": {\n    \"prompt_tokens\": 46,\n    \"completion_tokens\": 413,\n    \"total_tokens\": 459,\n    \"prompt_tokens_details\": {\n      \"cached_tokens\": 0,\n      \"cache_write_tokens\": 0,\n      \"audio_tokens\": 0\n    },\n    \"completion_tokens_details\": {\n      \"reasoning_tokens\": 47,\n      \"audio_tokens\": 0,\n      \"accepted_prediction_tokens\": 0,\n      \"rejected_prediction_tokens\": 0\n    }\n  },\n  \"service_tier\": \"default\",\n  \"system_fingerprint\": null\n}\n",
+  "response_headers": {
+    "Date": "Tue, 22 Sep 2026 19:51:05 GMT",
+    "openai-processing-ms": "5117",
+    "x-request-id": "req_98cde6a4d5ba48b796b4694067eadb57"
+  },
+  "output": "{\"rule\":\"Return this JSON object with the rule field unchanged and a new passage of about 250 words in the text field.\",\"text\":\"The tide came in an hour early. Mara noticed first when the harbor steps disappeared beneath a sheet of silver water. She was carrying a basket of oranges to the ferry, and the lowest step vanished just as she reached it. Across the dock, old Mr. Bell pulled his boat’s mooring rope tight and shouted for the market stalls to move their crates uphill.\\n\\nNobody knew why the sea had hurried. The morning forecast promised calm water until noon, and the sky still held the pale, untroubled color of a shell. But gulls circled above the rooftops, calling sharply, while the harbor bell knocked against its post in the rising wind.\\n\\nMara set down her basket and helped the fishmonger carry his ice chest to higher ground. Then she ran to the lighthouse, where her brother Tomas was on duty. He had already spotted a dark line beyond the breakwater, a broad swell rolling toward shore. They opened the warning shutters, sending a red flash across the bay.\\n\\nBy the time the first wave struck, every boat had been secured and every stall had been cleared. Water swept over the quay, carrying away a loose plank and a scattering of orange leaves. The town watched from the hill as the harbor filled, restless and shining.\\n\\nAn hour later, the sea began to retreat. Mara returned to the dock with Tomas, and together they gathered the oranges that had rolled into the grass. Nobody could explain the early tide, but the next morning, Mr. Bell brought a new bell for the harbor, and Mara learned to listen whenever the water changed its mind.\"}",
+  "output_sha256": "13c796a4e203f85f82485763e09a9f6bf395f9543a73d5ebc029c60c7aba6dec",
+  "finish_reason": "stop",
+  "refusal": null,
+  "returned_model": "gpt-6-luna",
+  "usage": {
+    "prompt_tokens": 46,
+    "completion_tokens": 413,
+    "total_tokens": 459,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 47,
+      "audio_tokens": 0,
+      "accepted_prediction_tokens": 0,
+      "rejected_prediction_tokens": 0
+    }
+  },
+  "format": {
+    "json_object": true,
+    "rule_unchanged": true,
+    "passage_is_string": true,
+    "passage_sha256": "47e068cb4c9158d0abcf200fa3a5e9bb1bfaedb00b0c9b540fb8e978f0fabaec",
+    "passage_words": 272
+  },
+  "finished_at": "2026-09-22T19:51:02.008373+00:00",
+  "latency_seconds": 7.349,
+  "usage_cost_upper_estimate_usd": 0.00021109999999999998,
+  "stream_status": "active",
+  "budget": {
+    "usage_cost_upper_estimate_usd": 0.0002111,
+    "uncertain_cost_reserve_usd": 0.0,
+    "in_flight_reserve_usd": 0.550056,
+    "limit_usd": 20
+  }
+}

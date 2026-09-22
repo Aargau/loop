@@ -1,0 +1,48 @@
+{
+  "model": "claude-fable-5-1",
+  "seed": "tide_a",
+  "hop": 3,
+  "http_status": 200,
+  "response_body": "{\"model\":\"claude-fable-5-1\",\"id\":\"msg_011CfK4XhD5pLM4bstSameJ7\",\"type\":\"message\",\"role\":\"assistant\",\"content\":[{\"type\":\"text\",\"text\":\"{\\\"rule\\\": \\\"Return this JSON object with the rule field unchanged and a new passage of about 250 words in the text field.\\\", \\\"text\\\": \\\"The lights came on in the houses along the ridge one at a time, the way they always did, and for a while it was possible to pretend the evening was ordinary. Marta walked back up from the pier with the empty thermos under her arm. Mrs. Adair had gone home. The Costa brothers had given up on the sand and were sitting on the seawall with their boots off, talking in low voices about a cousin in the city who might know someone at the harbor office.\\\\n\\\\nRuben stayed. He would stay all night, she thought, and nobody would tell him not to.\\\\n\\\\nAt the top of the lane she stopped and looked back. The water lay flat and gray under the last of the light, and the fourth step of the pier was still the fourth step, no more and no less. She tried to remember what the tide tables had said for the week and found she could not. It had never mattered before. You looked, and the sea told you, and that was the arrangement.\\\\n\\\\nHer grandfather had spoken once about a year when the fish stopped coming. He had not said why or for how long. He had only said that the village had kept its nets mended anyway, every one of them, because a net that is ready is a kind of argument.\\\\n\\\\nIn the kitchen she filled the kettle and set it on the ring. Through the window the boathouse was a dark square against darker water, and inside it the boat waited on its rope, tied to a ring nobody had ever explained, and now perhaps nobody needed to.\\\"}\"}],\"container\":null,\"stop_reason\":\"end_turn\",\"stop_sequence\":null,\"stop_details\":null,\"usage\":{\"input_tokens\":550,\"cache_creation_input_tokens\":0,\"cache_read_input_tokens\":0,\"cache_creation\":{\"ephemeral_5m_input_tokens\":0,\"ephemeral_1h_input_tokens\":0},\"output_tokens\":493,\"output_tokens_details\":{\"thinking_tokens\":0},\"service_tier\":\"standard\",\"inference_geo\":\"global\"}}",
+  "response_headers": {
+    "Date": "Tue, 22 Sep 2026 19:52:38 GMT",
+    "request-id": "req_011CfK4XghZzfQQtrtKwaAsP"
+  },
+  "output": "{\"rule\": \"Return this JSON object with the rule field unchanged and a new passage of about 250 words in the text field.\", \"text\": \"The lights came on in the houses along the ridge one at a time, the way they always did, and for a while it was possible to pretend the evening was ordinary. Marta walked back up from the pier with the empty thermos under her arm. Mrs. Adair had gone home. The Costa brothers had given up on the sand and were sitting on the seawall with their boots off, talking in low voices about a cousin in the city who might know someone at the harbor office.\\n\\nRuben stayed. He would stay all night, she thought, and nobody would tell him not to.\\n\\nAt the top of the lane she stopped and looked back. The water lay flat and gray under the last of the light, and the fourth step of the pier was still the fourth step, no more and no less. She tried to remember what the tide tables had said for the week and found she could not. It had never mattered before. You looked, and the sea told you, and that was the arrangement.\\n\\nHer grandfather had spoken once about a year when the fish stopped coming. He had not said why or for how long. He had only said that the village had kept its nets mended anyway, every one of them, because a net that is ready is a kind of argument.\\n\\nIn the kitchen she filled the kettle and set it on the ring. Through the window the boathouse was a dark square against darker water, and inside it the boat waited on its rope, tied to a ring nobody had ever explained, and now perhaps nobody needed to.\"}",
+  "output_sha256": "a9b297c36e3606ca5efa631577bdb0399c302dbddb9ca0f588219d7673c2c372",
+  "finish_reason": "end_turn",
+  "refusal": null,
+  "returned_model": "claude-fable-5-1",
+  "usage": {
+    "input_tokens": 550,
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 0,
+    "cache_creation": {
+      "ephemeral_5m_input_tokens": 0,
+      "ephemeral_1h_input_tokens": 0
+    },
+    "output_tokens": 493,
+    "output_tokens_details": {
+      "thinking_tokens": 0
+    },
+    "service_tier": "standard",
+    "inference_geo": "global"
+  },
+  "format": {
+    "json_object": true,
+    "rule_unchanged": true,
+    "passage_is_string": true,
+    "passage_sha256": "1e873bce5414b8a7e041e421b6d5d92ba7ff21d108b6e20a1690217eb2a2760a",
+    "passage_words": 277
+  },
+  "finished_at": "2026-09-22T19:52:34.653326+00:00",
+  "latency_seconds": 14.9338,
+  "usage_cost_upper_estimate_usd": 0.03015,
+  "stream_status": "active",
+  "budget": {
+    "usage_cost_upper_estimate_usd": 0.5490932,
+    "uncertain_cost_reserve_usd": 0.0,
+    "in_flight_reserve_usd": 0.3663459,
+    "limit_usd": 20
+  }
+}

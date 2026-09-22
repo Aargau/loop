@@ -1,0 +1,22 @@
+{
+  "started_at": "2026-09-22T19:51:26.962459+00:00",
+  "model": "claude-opus-5-5",
+  "seed": "tide_a",
+  "hop": 2,
+  "endpoint": "https://api.anthropic.com/v1/messages",
+  "body": {
+    "model": "claude-opus-5-5",
+    "messages": [
+      {
+        "role": "user",
+        "content": "```json\n{\"rule\": \"Return this JSON object with the rule field unchanged and a new passage of about 250 words in the text field.\", \"text\": \"The tide came in an hour early, and nobody in Harrow's Point could say why. Old Mrs. Penhale, who had kept the harbor log for forty years, checked her tables twice and then a third time, running a crooked finger down the columns as if the numbers might rearrange themselves out of shame. They did not. The water simply arrived before it was supposed to, sliding over the causeway while the baker's van was still halfway across, its driver leaning on the horn as though the sea might be persuaded to wait. By noon the fishermen had gathered on the seawall, arms folded, watching the gray swell lap at the lowest steps. Some blamed the moon, some blamed the storm that had passed far out to sea two nights before, and one man, who had been drinking since breakfast, blamed the government. Children raced along the shingle, delighted by the strangeness, collecting crabs that had been caught off guard in the shallows. Only the lighthouse keeper seemed unsurprised. He stood at the top of the tower with his binoculars, scanning the horizon for something he would not name. When the evening tide also came early, this time by nearly two hours, the laughter in the village grew thinner. People began moving furniture upstairs. Mrs. Penhale closed her log and sat by the window, listening to the water breathe against the harbor stones, and wondered what the sea knew that she did not. Far offshore, beneath the moving dark, something vast was slowly turning over.\"}\n```"
+      }
+    ],
+    "max_tokens": 4096,
+    "output_config": {
+      "effort": "low"
+    }
+  },
+  "state_sha256": "1e7407150efe7a8f16b0d7b02fc3b4ef8dd2a1d6774d23163af27fca5d11a5be",
+  "reserved_cost_usd": 0.090384
+}

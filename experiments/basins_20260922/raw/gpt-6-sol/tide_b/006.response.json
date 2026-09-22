@@ -1,0 +1,50 @@
+{
+  "model": "gpt-6-sol",
+  "seed": "tide_b",
+  "hop": 6,
+  "http_status": 200,
+  "response_body": "{\n  \"id\": \"chatcmpl-ER0pYt634ysQ4SlKnBd1pvFqWL85P\",\n  \"object\": \"chat.completion\",\n  \"created\": 1790106756,\n  \"model\": \"gpt-6-sol\",\n  \"choices\": [\n    {\n      \"index\": 0,\n      \"message\": {\n        \"role\": \"assistant\",\n        \"content\": \"{\\\"rule\\\":\\\"Return this JSON object with the rule field unchanged and a new passage of about 250 words in the text field.\\\",\\\"text\\\":\\\"Every Thursday, the village post office received a letter addressed to someone who had moved away. The handwriting was neat, the stamp was current, and the return address was always blank.\\\\n\\\\nNina, who sorted the mail, kept the letters in a drawer. At first she meant to forward them, but each arrived with a different name. After six weeks, she noticed the names belonged to people who had once lived in the blue house beside the river.\\\\n\\\\nOn the seventh Thursday, a letter came for her father.\\\\n\\\\nHe had died when Nina was twelve. She carried the envelope home without telling anyone and held it over the kettle, hoping the steam would loosen the seal. Before she could try, her mother came into the kitchen.\\\\n\\\\n“I know that handwriting,” she said.\\\\n\\\\nInside was a single sheet of paper. It listed three things: a loose step on the back porch, a tin of photographs beneath the attic floorboards, and a promise to take Nina fishing when the weather warmed.\\\\n\\\\nHer father had made that promise the day before he died.\\\\n\\\\nThey found the photographs exactly where the letter said. Nina’s mother sat on the attic floor, turning them over one by one. On the back of the last was a date written in the same neat hand: next Thursday.\\\\n\\\\nThat morning, Nina opened the post office early. No letter came. Instead, a little girl arrived with an unstamped envelope and asked if Nina could send it to her grandmother.\\\\n\\\\n“She moved away,” the girl said, “but I think she’d like to hear from me.”\\\\n\\\\nNina found a stamp and showed her where to write the address.\\\"}\",\n        \"refusal\": null,\n        \"annotations\": []\n      },\n      \"finish_reason\": \"stop\"\n    }\n  ],\n  \"usage\": {\n    \"prompt_tokens\": 370,\n    \"completion_tokens\": 420,\n    \"total_tokens\": 790,\n    \"prompt_tokens_details\": {\n      \"cached_tokens\": 0,\n      \"cache_write_tokens\": 0,\n      \"audio_tokens\": 0\n    },\n    \"completion_tokens_details\": {\n      \"reasoning_tokens\": 38,\n      \"audio_tokens\": 0,\n      \"accepted_prediction_tokens\": 0,\n      \"rejected_prediction_tokens\": 0\n    }\n  },\n  \"service_tier\": \"default\",\n  \"system_fingerprint\": null\n}\n",
+  "response_headers": {
+    "Date": "Tue, 22 Sep 2026 19:52:41 GMT",
+    "openai-processing-ms": "5403",
+    "x-request-id": "req_b49f39adb0db4bd0a12469c32d825404"
+  },
+  "output": "{\"rule\":\"Return this JSON object with the rule field unchanged and a new passage of about 250 words in the text field.\",\"text\":\"Every Thursday, the village post office received a letter addressed to someone who had moved away. The handwriting was neat, the stamp was current, and the return address was always blank.\\n\\nNina, who sorted the mail, kept the letters in a drawer. At first she meant to forward them, but each arrived with a different name. After six weeks, she noticed the names belonged to people who had once lived in the blue house beside the river.\\n\\nOn the seventh Thursday, a letter came for her father.\\n\\nHe had died when Nina was twelve. She carried the envelope home without telling anyone and held it over the kettle, hoping the steam would loosen the seal. Before she could try, her mother came into the kitchen.\\n\\n“I know that handwriting,” she said.\\n\\nInside was a single sheet of paper. It listed three things: a loose step on the back porch, a tin of photographs beneath the attic floorboards, and a promise to take Nina fishing when the weather warmed.\\n\\nHer father had made that promise the day before he died.\\n\\nThey found the photographs exactly where the letter said. Nina’s mother sat on the attic floor, turning them over one by one. On the back of the last was a date written in the same neat hand: next Thursday.\\n\\nThat morning, Nina opened the post office early. No letter came. Instead, a little girl arrived with an unstamped envelope and asked if Nina could send it to her grandmother.\\n\\n“She moved away,” the girl said, “but I think she’d like to hear from me.”\\n\\nNina found a stamp and showed her where to write the address.\"}",
+  "output_sha256": "aa8461b67d35f2f853124bf52071941721bb6a79a74686ff963d049f07ae77d3",
+  "finish_reason": "stop",
+  "refusal": null,
+  "returned_model": "gpt-6-sol",
+  "usage": {
+    "prompt_tokens": 370,
+    "completion_tokens": 420,
+    "total_tokens": 790,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 38,
+      "audio_tokens": 0,
+      "accepted_prediction_tokens": 0,
+      "rejected_prediction_tokens": 0
+    }
+  },
+  "format": {
+    "json_object": true,
+    "rule_unchanged": true,
+    "passage_is_string": true,
+    "passage_sha256": "d5f24e022ebc7311c06cf8a192a8f94eb163a09ae1ae10213818b8441c0d8228",
+    "passage_words": 275
+  },
+  "finished_at": "2026-09-22T19:52:37.416397+00:00",
+  "latency_seconds": 5.4831,
+  "usage_cost_upper_estimate_usd": 0.00494,
+  "stream_status": "active",
+  "budget": {
+    "usage_cost_upper_estimate_usd": 0.5677886,
+    "uncertain_cost_reserve_usd": 0.0,
+    "in_flight_reserve_usd": 0.5480008,
+    "limit_usd": 20
+  }
+}

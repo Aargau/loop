@@ -1,0 +1,59 @@
+{
+  "rule": "Return this JSON object with the rule field unchanged and a new passage of about 250 words in the text field.",
+  "seeds": [
+    {
+      "id": "sunset_a",
+      "text": "The sun was setting behind the hills."
+    },
+    {
+      "id": "sunset_b",
+      "text": "The sun was setting behind the hills."
+    },
+    {
+      "id": "tide",
+      "text": "The tide came in an hour early."
+    }
+  ],
+  "models": [
+    {
+      "provider": "openai",
+      "id": "gpt-6-luna",
+      "input_usd_per_million": 0.1,
+      "output_usd_per_million": 0.5
+    },
+    {
+      "provider": "openai",
+      "id": "gpt-6-sol",
+      "input_usd_per_million": 2,
+      "output_usd_per_million": 10
+    },
+    {
+      "provider": "openai",
+      "id": "gpt-6-astra",
+      "input_usd_per_million": 10,
+      "output_usd_per_million": 50
+    },
+    {
+      "provider": "anthropic",
+      "id": "claude-fable-5-1",
+      "input_usd_per_million": 10,
+      "output_usd_per_million": 50
+    },
+    {
+      "provider": "anthropic",
+      "id": "claude-opus-5-5",
+      "input_usd_per_million": 4,
+      "output_usd_per_million": 20
+    }
+  ],
+  "anthropic_workspace_id": "wrkspc_01QV2g6CR9Z57RGH4wZqyjRU",
+  "hops": 60,
+  "max_output_tokens": 4096,
+  "reasoning_effort": "low",
+  "sampling": "provider defaults; temperature, top_p and seed omitted",
+  "budget_usd": 18.83,
+  "request_timeout_seconds": 180,
+  "prior_run": "../basins_20260922",
+  "prior_usage_cost_upper_estimate_usd": 0.5680635,
+  "prior_unresolved_billing_reserve_usd": 0.5931796
+}

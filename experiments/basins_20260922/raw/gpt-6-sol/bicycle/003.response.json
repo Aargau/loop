@@ -1,0 +1,50 @@
+{
+  "model": "gpt-6-sol",
+  "seed": "bicycle",
+  "hop": 3,
+  "http_status": 200,
+  "response_body": "{\n  \"id\": \"chatcmpl-ER0ooUCg58CnIib8NhBKnEbGOEPUz\",\n  \"object\": \"chat.completion\",\n  \"created\": 1790106710,\n  \"model\": \"gpt-6-sol\",\n  \"choices\": [\n    {\n      \"index\": 0,\n      \"message\": {\n        \"role\": \"assistant\",\n        \"content\": \"{\\\"rule\\\":\\\"Return this JSON object with the rule field unchanged and a new passage of about 250 words in the text field.\\\",\\\"text\\\":\\\"At the end of every shift, Tomas found a blue marble on the last seat of the number 6 bus. He put each one in a jar beside the fare machine. By October, the jar was nearly full.\\\\n\\\\n“Some child is going to be furious with you,” his supervisor said.\\\\n\\\\n“Then they can come and claim them.”\\\\n\\\\nNo one did. Tomas checked the seats after every trip and asked the regular passengers whether they knew anything about the marbles. They shook their heads. An elderly woman suggested a ghost, then laughed so hard she missed her stop.\\\\n\\\\nOne rainy evening, Tomas spotted a boy lingering at the back of the bus. He wore a school blazer and held a marble between his finger and thumb.\\\\n\\\\n“Are those yours?” Tomas asked, nodding toward the jar.\\\\n\\\\nThe boy looked startled. “I didn’t think you kept them.”\\\\n\\\\n“Why leave them?”\\\\n\\\\n“My dad drove this route before you. When I was little, he’d hide one for me to find on the way home.” The boy rolled the marble across his palm. “After he got sick, I started leaving them instead. I thought someone might like finding one.”\\\\n\\\\nTomas looked at the jar. He had never once thought to leave a marble where another passenger could see it.\\\\n\\\\nThe next morning, he set one on the last seat before opening the doors. A little girl found it and carried it carefully in both hands to the front.\\\\n\\\\n“Did somebody lose this?” she asked.\\\\n\\\\n“Maybe,” Tomas said. “You could leave it for them, if you like.”\\\"}\",\n        \"refusal\": null,\n        \"annotations\": []\n      },\n      \"finish_reason\": \"stop\"\n    }\n  ],\n  \"usage\": {\n    \"prompt_tokens\": 380,\n    \"completion_tokens\": 402,\n    \"total_tokens\": 782,\n    \"prompt_tokens_details\": {\n      \"cached_tokens\": 0,\n      \"cache_write_tokens\": 0,\n      \"audio_tokens\": 0\n    },\n    \"completion_tokens_details\": {\n      \"reasoning_tokens\": 21,\n      \"audio_tokens\": 0,\n      \"accepted_prediction_tokens\": 0,\n      \"rejected_prediction_tokens\": 0\n    }\n  },\n  \"service_tier\": \"default\",\n  \"system_fingerprint\": null\n}\n",
+  "response_headers": {
+    "Date": "Tue, 22 Sep 2026 19:51:55 GMT",
+    "openai-processing-ms": "5078",
+    "x-request-id": "req_06f99ed01eea48ecb80e850a78053a24"
+  },
+  "output": "{\"rule\":\"Return this JSON object with the rule field unchanged and a new passage of about 250 words in the text field.\",\"text\":\"At the end of every shift, Tomas found a blue marble on the last seat of the number 6 bus. He put each one in a jar beside the fare machine. By October, the jar was nearly full.\\n\\n“Some child is going to be furious with you,” his supervisor said.\\n\\n“Then they can come and claim them.”\\n\\nNo one did. Tomas checked the seats after every trip and asked the regular passengers whether they knew anything about the marbles. They shook their heads. An elderly woman suggested a ghost, then laughed so hard she missed her stop.\\n\\nOne rainy evening, Tomas spotted a boy lingering at the back of the bus. He wore a school blazer and held a marble between his finger and thumb.\\n\\n“Are those yours?” Tomas asked, nodding toward the jar.\\n\\nThe boy looked startled. “I didn’t think you kept them.”\\n\\n“Why leave them?”\\n\\n“My dad drove this route before you. When I was little, he’d hide one for me to find on the way home.” The boy rolled the marble across his palm. “After he got sick, I started leaving them instead. I thought someone might like finding one.”\\n\\nTomas looked at the jar. He had never once thought to leave a marble where another passenger could see it.\\n\\nThe next morning, he set one on the last seat before opening the doors. A little girl found it and carried it carefully in both hands to the front.\\n\\n“Did somebody lose this?” she asked.\\n\\n“Maybe,” Tomas said. “You could leave it for them, if you like.”\"}",
+  "output_sha256": "ec7c04b43e8d7f1fb0ba00408313816b126b23db046378f6eaad460323f9ed10",
+  "finish_reason": "stop",
+  "refusal": null,
+  "returned_model": "gpt-6-sol",
+  "usage": {
+    "prompt_tokens": 380,
+    "completion_tokens": 402,
+    "total_tokens": 782,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 21,
+      "audio_tokens": 0,
+      "accepted_prediction_tokens": 0,
+      "rejected_prediction_tokens": 0
+    }
+  },
+  "format": {
+    "json_object": true,
+    "rule_unchanged": true,
+    "passage_is_string": true,
+    "passage_sha256": "ec6cb6818155daf48380014d2161a1e0133f1d287e0af22e88d77d57dc0d53a5",
+    "passage_words": 260
+  },
+  "finished_at": "2026-09-22T19:51:51.352111+00:00",
+  "latency_seconds": 5.5054,
+  "usage_cost_upper_estimate_usd": 0.00478,
+  "stream_status": "active",
+  "budget": {
+    "usage_cost_upper_estimate_usd": 0.2889331,
+    "uncertain_cost_reserve_usd": 0.0,
+    "in_flight_reserve_usd": 0.5448302,
+    "limit_usd": 20
+  }
+}

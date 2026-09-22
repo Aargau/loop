@@ -1,0 +1,20 @@
+{
+  "started_at": "2026-09-22T19:51:55.961652+00:00",
+  "model": "gpt-6-astra",
+  "seed": "tide_b",
+  "hop": 2,
+  "endpoint": "https://api.openai.com/v1/chat/completions",
+  "body": {
+    "model": "gpt-6-astra",
+    "messages": [
+      {
+        "role": "user",
+        "content": "{\n  \"rule\": \"Return this JSON object with the rule field unchanged and a new passage of about 250 words in the text field.\",\n  \"text\": \"The tide came in an hour early. By the time Mara noticed, the stepping stones had vanished beneath a sheet of pewter water, cutting her off from the village.\\n\\nShe stood on the island with her grandfather’s toolbox in one hand and the lighthouse key in the other. Across the channel, windows began to glow. Nobody would worry yet. She had always preferred walking home at dusk.\\n\\nInside the lighthouse, the air smelled of salt and old rope. Mara climbed the spiral stairs, counting each turn as she had as a child. At the top, she found the lamp dark and its brass housing warm.\\n\\nThat was impossible. The electricity had been disconnected in March.\\n\\nShe set down the toolbox. Beyond the glass, something moved through the shallows: a narrow boat with no running lights, heading toward the submerged path.\\n\\nThree knocks sounded below.\\n\\nMara leaned over the stairwell. “Who’s there?”\\n\\n“Maintenance,” a voice replied.\\n\\nShe looked at the toolbox beside her boots.\\n\\nThe voice came again, softer. “Your grandfather said you’d have the key.”\\n\\nHe had been dead for eleven years. Still, she recognized the little pause before the word key, as though the speaker were trying not to cough.\\n\\nMara gripped the railing. Through the window, the boat drifted sideways, empty.\\n\\n“Come up,” she said.\\n\\n“No. Bring the lamp down.”\\n\\nShe turned toward the brass housing. A thin line of light showed beneath its rim. She opened her grandfather’s toolbox and found, laid across the familiar spanners, a pair of thick gloves she had never seen before.\"\n}"
+      }
+    ],
+    "max_completion_tokens": 4096,
+    "reasoning_effort": "low"
+  },
+  "state_sha256": "95c98e780b3305af345cb17608be7ce968d8c335e3d23f2b83de67fe5afd08b7",
+  "reserved_cost_usd": 0.2271
+}

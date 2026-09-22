@@ -1,0 +1,50 @@
+{
+  "model": "gpt-6-sol",
+  "seed": "tide_a",
+  "hop": 1,
+  "http_status": 200,
+  "response_body": "{\n  \"id\": \"chatcmpl-ER0o1KpLUBRitf53oeVA4n949U8yT\",\n  \"object\": \"chat.completion\",\n  \"created\": 1790106661,\n  \"model\": \"gpt-6-sol\",\n  \"choices\": [\n    {\n      \"index\": 0,\n      \"message\": {\n        \"role\": \"assistant\",\n        \"content\": \"{\\n  \\\"rule\\\": \\\"Return this JSON object with the rule field unchanged and a new passage of about 250 words in the text field.\\\",\\n  \\\"text\\\": \\\"The tide came in an hour early. Mara noticed when the water reached the third step of the harbor stairs, a step that should have stayed dry until dusk. She checked her watch, then the tide table pinned inside the bait shop. Neither offered an explanation.\\\\n\\\\nAcross the inlet, gulls lifted from the mudflats in a white, ragged cloud. The fishing boats were still out, their running lights too distant to read. Mara went to the bell at the end of the pier and pulled its rope three times. The sound carried over the water, though she could not tell whether anyone heard it.\\\\n\\\\nBy the time her father arrived, waves were slapping the boards beneath their feet. He had kept the harbor for forty years and knew every ordinary reason for a strange tide: wind, pressure, a storm too far away to see. He looked at the calm sky and said nothing. Together they walked the pier, calling to the few people still mending nets or packing crates. Everyone moved inland without arguing.\\\\n\\\\nAt dusk, the boats returned one by one. Their crews tied up where they could and climbed the hill to the square. From there, Mara watched the water cover the pier, then stop just short of the bait shop door. It stayed there through the night.\\\\n\\\\nIn the morning, the tide went out on schedule. It left seaweed on the shop steps and a silver fish in the town fountain. Mara changed the tide table, marking what had happened in the margin before she opened the shop.\\\"\\n}\",\n        \"refusal\": null,\n        \"annotations\": []\n      },\n      \"finish_reason\": \"stop\"\n    }\n  ],\n  \"usage\": {\n    \"prompt_tokens\": 46,\n    \"completion_tokens\": 383,\n    \"total_tokens\": 429,\n    \"prompt_tokens_details\": {\n      \"cached_tokens\": 0,\n      \"cache_write_tokens\": 0,\n      \"audio_tokens\": 0\n    },\n    \"completion_tokens_details\": {\n      \"reasoning_tokens\": 27,\n      \"audio_tokens\": 0,\n      \"accepted_prediction_tokens\": 0,\n      \"rejected_prediction_tokens\": 0\n    }\n  },\n  \"service_tier\": \"default\",\n  \"system_fingerprint\": null\n}\n",
+  "response_headers": {
+    "Date": "Tue, 22 Sep 2026 19:51:06 GMT",
+    "openai-processing-ms": "6034",
+    "x-request-id": "req_db8391b304a14207b08c0e44a5e14280"
+  },
+  "output": "{\n  \"rule\": \"Return this JSON object with the rule field unchanged and a new passage of about 250 words in the text field.\",\n  \"text\": \"The tide came in an hour early. Mara noticed when the water reached the third step of the harbor stairs, a step that should have stayed dry until dusk. She checked her watch, then the tide table pinned inside the bait shop. Neither offered an explanation.\\n\\nAcross the inlet, gulls lifted from the mudflats in a white, ragged cloud. The fishing boats were still out, their running lights too distant to read. Mara went to the bell at the end of the pier and pulled its rope three times. The sound carried over the water, though she could not tell whether anyone heard it.\\n\\nBy the time her father arrived, waves were slapping the boards beneath their feet. He had kept the harbor for forty years and knew every ordinary reason for a strange tide: wind, pressure, a storm too far away to see. He looked at the calm sky and said nothing. Together they walked the pier, calling to the few people still mending nets or packing crates. Everyone moved inland without arguing.\\n\\nAt dusk, the boats returned one by one. Their crews tied up where they could and climbed the hill to the square. From there, Mara watched the water cover the pier, then stop just short of the bait shop door. It stayed there through the night.\\n\\nIn the morning, the tide went out on schedule. It left seaweed on the shop steps and a silver fish in the town fountain. Mara changed the tide table, marking what had happened in the margin before she opened the shop.\"\n}",
+  "output_sha256": "4d427a3b5ff0183edfb933141bfcbc92fac8c91780e330da1188690ac59bd803",
+  "finish_reason": "stop",
+  "refusal": null,
+  "returned_model": "gpt-6-sol",
+  "usage": {
+    "prompt_tokens": 46,
+    "completion_tokens": 383,
+    "total_tokens": 429,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 27,
+      "audio_tokens": 0,
+      "accepted_prediction_tokens": 0,
+      "rejected_prediction_tokens": 0
+    }
+  },
+  "format": {
+    "json_object": true,
+    "rule_unchanged": true,
+    "passage_is_string": true,
+    "passage_sha256": "6d4b51efff5fd1e77bd7a8d4bbea62542ae0f808f0e487897257486abf1037ab",
+    "passage_words": 261
+  },
+  "finished_at": "2026-09-22T19:51:02.995278+00:00",
+  "latency_seconds": 8.3348,
+  "usage_cost_upper_estimate_usd": 0.003922,
+  "stream_status": "active",
+  "budget": {
+    "usage_cost_upper_estimate_usd": 0.0041331,
+    "uncertain_cost_reserve_usd": 0.0,
+    "in_flight_reserve_usd": 0.5098596,
+    "limit_usd": 20
+  }
+}

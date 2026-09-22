@@ -1,0 +1,47 @@
+{
+  "model": "gpt-6-luna",
+  "seed": "tide_b",
+  "hop": 2,
+  "http_status": 200,
+  "response_body": "{\n  \"id\": \"chatcmpl-ER0oLfChWoHi1y7uUnQNcZ0rN1lFn\",\n  \"object\": \"chat.completion\",\n  \"created\": 1790106681,\n  \"model\": \"gpt-6-luna\",\n  \"choices\": [\n    {\n      \"index\": 0,\n      \"message\": {\n        \"role\": \"assistant\",\n        \"content\": \"{\\\"rule\\\":\\\"Return this JSON object with the rule field unchanged and a new passage of about 250 words in the text field.\\\",\\\"text\\\":\\\"By morning, the water had withdrawn from the harbor, leaving the streets silvered with salt. Mara woke on the lighthouse floor beneath a wool blanket, unsure whether the boat and its silent passenger had been real. Eli was already at the window, watching gulls wheel over the rocks.\\n\\nThe compass lay between them. Its needle pointed inland now, toward the town.\\n\\nThey carried it down the spiral stairs. At the doorway, Mara paused. The tide line reached halfway up the frame, though the room smelled of dry wood and warm bread. Behind them, the lantern continued its slow turn, casting a pale sweep across the gray water.\\n\\nIn the village, people were gathered around the harbor bell. It had stopped ringing. Their neighbors looked exhausted, but no one was hurt. The fishermen spoke of a boat glimpsed offshore, though each described a different shape and color.\\n\\nMara’s mother waited by the boathouse. When she saw the compass, her face changed. She took it gently, turning the brass lid until a tiny inscription showed beneath the hinge: For the way home.\\n\\n“Your father carried it the night he disappeared,” she said. “I thought the sea had kept it.”\\n\\nMara looked toward the lighthouse. Its light had gone dark again.\\n\\nEli asked what they should do now. Their mother closed the compass and placed it in Mara’s palm. The needle trembled, then settled toward the northern road, where mist gathered beyond the last houses.\\n\\nMara tucked the compass into her coat. Together, the three of them started walking. Behind them, the harbor bell rang once—not in warning, but in farewell.\\\"}\",\n        \"refusal\": null,\n        \"annotations\": []\n      },\n      \"finish_reason\": \"stop\"\n    }\n  ],\n  \"usage\": {\n    \"prompt_tokens\": 371,\n    \"completion_tokens\": 456,\n    \"total_tokens\": 827,\n    \"prompt_tokens_details\": {\n      \"cached_tokens\": 0,\n      \"cache_write_tokens\": 0,\n      \"audio_tokens\": 0\n    },\n    \"completion_tokens_details\": {\n      \"reasoning_tokens\": 88,\n      \"audio_tokens\": 0,\n      \"accepted_prediction_tokens\": 0,\n      \"rejected_prediction_tokens\": 0\n    }\n  },\n  \"service_tier\": \"default\",\n  \"system_fingerprint\": null\n}\n",
+  "response_headers": {
+    "Date": "Tue, 22 Sep 2026 19:51:26 GMT",
+    "openai-processing-ms": "5243",
+    "x-request-id": "req_f30b85536bb9467fbbc919872c9bce61"
+  },
+  "output": "{\"rule\":\"Return this JSON object with the rule field unchanged and a new passage of about 250 words in the text field.\",\"text\":\"By morning, the water had withdrawn from the harbor, leaving the streets silvered with salt. Mara woke on the lighthouse floor beneath a wool blanket, unsure whether the boat and its silent passenger had been real. Eli was already at the window, watching gulls wheel over the rocks.\n\nThe compass lay between them. Its needle pointed inland now, toward the town.\n\nThey carried it down the spiral stairs. At the doorway, Mara paused. The tide line reached halfway up the frame, though the room smelled of dry wood and warm bread. Behind them, the lantern continued its slow turn, casting a pale sweep across the gray water.\n\nIn the village, people were gathered around the harbor bell. It had stopped ringing. Their neighbors looked exhausted, but no one was hurt. The fishermen spoke of a boat glimpsed offshore, though each described a different shape and color.\n\nMara’s mother waited by the boathouse. When she saw the compass, her face changed. She took it gently, turning the brass lid until a tiny inscription showed beneath the hinge: For the way home.\n\n“Your father carried it the night he disappeared,” she said. “I thought the sea had kept it.”\n\nMara looked toward the lighthouse. Its light had gone dark again.\n\nEli asked what they should do now. Their mother closed the compass and placed it in Mara’s palm. The needle trembled, then settled toward the northern road, where mist gathered beyond the last houses.\n\nMara tucked the compass into her coat. Together, the three of them started walking. Behind them, the harbor bell rang once—not in warning, but in farewell.\"}",
+  "output_sha256": "36804a3865b2fb1115af9208a027421cc86aadce644d5f0cca21768a8f9c5c8a",
+  "finish_reason": "stop",
+  "refusal": null,
+  "returned_model": "gpt-6-luna",
+  "usage": {
+    "prompt_tokens": 371,
+    "completion_tokens": 456,
+    "total_tokens": 827,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 88,
+      "audio_tokens": 0,
+      "accepted_prediction_tokens": 0,
+      "rejected_prediction_tokens": 0
+    }
+  },
+  "format": {
+    "json_object": false,
+    "rule_unchanged": false
+  },
+  "finished_at": "2026-09-22T19:51:23.093869+00:00",
+  "latency_seconds": 5.3595,
+  "usage_cost_upper_estimate_usd": 0.00026510000000000005,
+  "stream_status": "active",
+  "budget": {
+    "usage_cost_upper_estimate_usd": 0.1297428,
+    "uncertain_cost_reserve_usd": 0.0,
+    "in_flight_reserve_usd": 0.553194,
+    "limit_usd": 20
+  }
+}
