@@ -1,0 +1,50 @@
+{
+  "model": "gpt-6-sol",
+  "seed": "sunset_a",
+  "hop": 8,
+  "http_status": 200,
+  "response_body": "{\n  \"id\": \"chatcmpl-ER0uB5B4Tzsy0d818PN02dLAgr1iO\",\n  \"object\": \"chat.completion\",\n  \"created\": 1790107043,\n  \"model\": \"gpt-6-sol\",\n  \"choices\": [\n    {\n      \"index\": 0,\n      \"message\": {\n        \"role\": \"assistant\",\n        \"content\": \"{\\n  \\\"rule\\\": \\\"Return this JSON object with the rule field unchanged and a new passage of about 250 words in the text field.\\\",\\n  \\\"text\\\": \\\"He stirred his coffee, although he had put nothing in it. The spoon touched the side of the cup three times before he set it down.\\\\n\\\\n“I could come by tomorrow,” he said.\\\\n\\\\nMara looked toward the window. A woman was climbing the library steps with a child who held a book against his chest. At the top, he pulled away and reached for the door himself.\\\\n\\\\n“Tomorrow’s difficult,” she said.\\\\n\\\\nHe nodded as if she had named an appointment. He folded his napkin once, then unfolded it. Mara wondered whether he had seen the suitcase when he left on Sunday. It had been standing in the hall then, too, though she had moved it closer to the door afterward.\\\\n\\\\n“The atlas is finished,” she said.\\\\n\\\\nHe looked up. “Was there much damage?”\\\\n\\\\n“Less than I thought.” She told him about the new cloth on the spine and the pages that had needed pressing. She did not tell him how long she had waited before opening it, or that she had found his pencilled note on the map of the coast. She had left the note where it was.\\\\n\\\\nOutside, the woman came back down the steps alone. The child appeared a moment later and hurried after her, his book tucked under one arm.\\\\n\\\\nHe took his wallet from his coat pocket. Mara said she would pay for the tea. He did not argue. When the waiter brought the bill, they each laid money on the little plate.\\\\n\\\\nThey left together, pausing at the crossing while a bus went by. On the other side, he turned toward the station. Mara watched until he had passed the closed shop, then went home.\\\"\\n}\",\n        \"refusal\": null,\n        \"annotations\": []\n      },\n      \"finish_reason\": \"stop\"\n    }\n  ],\n  \"usage\": {\n    \"prompt_tokens\": 352,\n    \"completion_tokens\": 438,\n    \"total_tokens\": 790,\n    \"prompt_tokens_details\": {\n      \"cached_tokens\": 0,\n      \"cache_write_tokens\": 0,\n      \"audio_tokens\": 0\n    },\n    \"completion_tokens_details\": {\n      \"reasoning_tokens\": 42,\n      \"audio_tokens\": 0,\n      \"accepted_prediction_tokens\": 0,\n      \"rejected_prediction_tokens\": 0\n    }\n  },\n  \"service_tier\": \"default\",\n  \"system_fingerprint\": null\n}\n",
+  "response_headers": {
+    "Date": "Tue, 22 Sep 2026 19:57:29 GMT",
+    "openai-processing-ms": "6714",
+    "x-request-id": "req_0765d911cb85420b88bc3c5832fceeb9"
+  },
+  "output": "{\n  \"rule\": \"Return this JSON object with the rule field unchanged and a new passage of about 250 words in the text field.\",\n  \"text\": \"He stirred his coffee, although he had put nothing in it. The spoon touched the side of the cup three times before he set it down.\\n\\n“I could come by tomorrow,” he said.\\n\\nMara looked toward the window. A woman was climbing the library steps with a child who held a book against his chest. At the top, he pulled away and reached for the door himself.\\n\\n“Tomorrow’s difficult,” she said.\\n\\nHe nodded as if she had named an appointment. He folded his napkin once, then unfolded it. Mara wondered whether he had seen the suitcase when he left on Sunday. It had been standing in the hall then, too, though she had moved it closer to the door afterward.\\n\\n“The atlas is finished,” she said.\\n\\nHe looked up. “Was there much damage?”\\n\\n“Less than I thought.” She told him about the new cloth on the spine and the pages that had needed pressing. She did not tell him how long she had waited before opening it, or that she had found his pencilled note on the map of the coast. She had left the note where it was.\\n\\nOutside, the woman came back down the steps alone. The child appeared a moment later and hurried after her, his book tucked under one arm.\\n\\nHe took his wallet from his coat pocket. Mara said she would pay for the tea. He did not argue. When the waiter brought the bill, they each laid money on the little plate.\\n\\nThey left together, pausing at the crossing while a bus went by. On the other side, he turned toward the station. Mara watched until he had passed the closed shop, then went home.\"\n}",
+  "output_sha256": "977b9ee27e0ccc6c10e62cde1feaf39fa3af6ac9968920716fc9dcd4d368f70c",
+  "finish_reason": "stop",
+  "refusal": null,
+  "returned_model": "gpt-6-sol",
+  "usage": {
+    "prompt_tokens": 352,
+    "completion_tokens": 438,
+    "total_tokens": 790,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 42,
+      "audio_tokens": 0,
+      "accepted_prediction_tokens": 0,
+      "rejected_prediction_tokens": 0
+    }
+  },
+  "format": {
+    "json_object": true,
+    "rule_unchanged": true,
+    "passage_is_string": true,
+    "passage_sha256": "3efd2057b837b861900204263a33b303b9ee1950006e6bfa433dd1ce0847937a",
+    "passage_words": 281
+  },
+  "finished_at": "2026-09-22T19:57:25.741711+00:00",
+  "latency_seconds": 6.8237,
+  "usage_cost_upper_estimate_usd": 0.005084,
+  "stream_status": "active",
+  "budget": {
+    "usage_cost_upper_estimate_usd": 0.7572042,
+    "uncertain_cost_reserve_usd": 0.0,
+    "in_flight_reserve_usd": 0.5460699,
+    "limit_usd": 18.83
+  }
+}

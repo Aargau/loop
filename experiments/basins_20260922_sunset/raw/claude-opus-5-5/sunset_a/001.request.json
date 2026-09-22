@@ -1,0 +1,22 @@
+{
+  "started_at": "2026-09-22T19:55:14.605971+00:00",
+  "model": "claude-opus-5-5",
+  "seed": "sunset_a",
+  "hop": 1,
+  "endpoint": "https://api.anthropic.com/v1/messages",
+  "body": {
+    "model": "claude-opus-5-5",
+    "messages": [
+      {
+        "role": "user",
+        "content": "{\"rule\": \"Return this JSON object with the rule field unchanged and a new passage of about 250 words in the text field.\", \"text\": \"The sun was setting behind the hills.\"}"
+      }
+    ],
+    "max_tokens": 4096,
+    "output_config": {
+      "effort": "low"
+    }
+  },
+  "state_sha256": "d4e10c8855fe3f0f9d40987fe25441135a0c211f554c17e9692d3f04f42bcc89",
+  "reserved_cost_usd": 0.084648
+}

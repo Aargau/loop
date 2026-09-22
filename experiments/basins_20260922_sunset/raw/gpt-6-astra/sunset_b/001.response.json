@@ -1,0 +1,50 @@
+{
+  "model": "gpt-6-astra",
+  "seed": "sunset_b",
+  "hop": 1,
+  "http_status": 200,
+  "response_body": "{\n  \"id\": \"chatcmpl-ER0sPMmPxSWHJAcTU74Caf4tVUajC\",\n  \"object\": \"chat.completion\",\n  \"created\": 1790106933,\n  \"model\": \"gpt-6-astra\",\n  \"choices\": [\n    {\n      \"index\": 0,\n      \"message\": {\n        \"role\": \"assistant\",\n        \"content\": \"{\\n  \\\"rule\\\": \\\"Return this JSON object with the rule field unchanged and a new passage of about 250 words in the text field.\\\",\\n  \\\"text\\\": \\\"The sun was setting behind the hills, leaving a narrow ribbon of gold along the horizon. Mara paused beside the old stone bridge and watched the river gather the evening into its darkening current. She had not stood here in twenty years, yet the place seemed to remember her: the leaning willow, the broken milestone, the smell of rain rising from warm earth.\\\\n\\\\nIn her coat pocket lay a key wrapped in a handkerchief. Her brother had mailed it without explanation, along with a note that said only, Come before the first frost.\\\\n\\\\nNow the village windows were beginning to glow. Somewhere beyond the church, a dog barked twice, and a bicycle rattled over the cobblestones. Ordinary sounds, but they made her throat tighten. She had spent so long imagining this return that she had forgotten it would happen on an ordinary evening, among people thinking about supper.\\\\n\\\\nMara crossed the bridge. At the far end, she noticed a small wooden boat caught between two reeds. Its paper sail had collapsed, but a blue stripe remained visible along the hull. Her brother used to paint their toy boats that exact color.\\\\n\\\\nShe bent to free it, then stopped. Written across the little deck, in familiar crooked letters, was her name.\\\\n\\\\nFrom the road above came footsteps.\\\\n\\\\n“You took your time,” her brother said.\\\\n\\\\nMara straightened slowly. He was holding a second boat, its white sail bright against his sleeve.\\\\n\\\\n“I wasn’t sure you’d come,” he added.\\\\n\\\\nShe lifted the dripping boat. “Neither was I.”\\\"\\n}\",\n        \"refusal\": null,\n        \"annotations\": []\n      },\n      \"finish_reason\": \"stop\"\n    }\n  ],\n  \"usage\": {\n    \"prompt_tokens\": 46,\n    \"completion_tokens\": 365,\n    \"total_tokens\": 411,\n    \"prompt_tokens_details\": {\n      \"cached_tokens\": 0,\n      \"cache_write_tokens\": 0,\n      \"audio_tokens\": 0\n    },\n    \"completion_tokens_details\": {\n      \"reasoning_tokens\": 0,\n      \"audio_tokens\": 0,\n      \"accepted_prediction_tokens\": 0,\n      \"rejected_prediction_tokens\": 0\n    }\n  },\n  \"service_tier\": \"default\",\n  \"system_fingerprint\": null\n}\n",
+  "response_headers": {
+    "Date": "Tue, 22 Sep 2026 19:55:45 GMT",
+    "openai-processing-ms": "12768",
+    "x-request-id": "req_5a6ff10b526f43c1a2d7677e3e165ad1"
+  },
+  "output": "{\n  \"rule\": \"Return this JSON object with the rule field unchanged and a new passage of about 250 words in the text field.\",\n  \"text\": \"The sun was setting behind the hills, leaving a narrow ribbon of gold along the horizon. Mara paused beside the old stone bridge and watched the river gather the evening into its darkening current. She had not stood here in twenty years, yet the place seemed to remember her: the leaning willow, the broken milestone, the smell of rain rising from warm earth.\\n\\nIn her coat pocket lay a key wrapped in a handkerchief. Her brother had mailed it without explanation, along with a note that said only, Come before the first frost.\\n\\nNow the village windows were beginning to glow. Somewhere beyond the church, a dog barked twice, and a bicycle rattled over the cobblestones. Ordinary sounds, but they made her throat tighten. She had spent so long imagining this return that she had forgotten it would happen on an ordinary evening, among people thinking about supper.\\n\\nMara crossed the bridge. At the far end, she noticed a small wooden boat caught between two reeds. Its paper sail had collapsed, but a blue stripe remained visible along the hull. Her brother used to paint their toy boats that exact color.\\n\\nShe bent to free it, then stopped. Written across the little deck, in familiar crooked letters, was her name.\\n\\nFrom the road above came footsteps.\\n\\n“You took your time,” her brother said.\\n\\nMara straightened slowly. He was holding a second boat, its white sail bright against his sleeve.\\n\\n“I wasn’t sure you’d come,” he added.\\n\\nShe lifted the dripping boat. “Neither was I.”\"\n}",
+  "output_sha256": "a41591e6bad1357244d9e23f6293f4b5e653c490a4dee72eba4fd57386cb03e4",
+  "finish_reason": "stop",
+  "refusal": null,
+  "returned_model": "gpt-6-astra",
+  "usage": {
+    "prompt_tokens": 46,
+    "completion_tokens": 365,
+    "total_tokens": 411,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "audio_tokens": 0,
+      "accepted_prediction_tokens": 0,
+      "rejected_prediction_tokens": 0
+    }
+  },
+  "format": {
+    "json_object": true,
+    "rule_unchanged": true,
+    "passage_is_string": true,
+    "passage_sha256": "69723aa0fdd802fa5ef9ca72085cb83bc3c60497dc00928f80f26ed0853b3391",
+    "passage_words": 254
+  },
+  "finished_at": "2026-09-22T19:55:41.652774+00:00",
+  "latency_seconds": 12.913,
+  "usage_cost_upper_estimate_usd": 0.01871,
+  "stream_status": "active",
+  "budget": {
+    "usage_cost_upper_estimate_usd": 0.1402226,
+    "uncertain_cost_reserve_usd": 0.0,
+    "in_flight_reserve_usd": 0.3493845,
+    "limit_usd": 18.83
+  }
+}

@@ -1,0 +1,48 @@
+{
+  "model": "claude-fable-5-1",
+  "seed": "sunset_b",
+  "hop": 8,
+  "http_status": 200,
+  "response_body": "{\"model\":\"claude-fable-5-1\",\"id\":\"msg_011CfK57MTPByR81XCmnBWuA\",\"type\":\"message\",\"role\":\"assistant\",\"content\":[{\"type\":\"text\",\"text\":\"{\\\"rule\\\": \\\"Return this JSON object with the rule field unchanged and a new passage of about 250 words in the text field.\\\", \\\"text\\\": \\\"The station had stopped taking passengers in the autumn of the year Teodor turned sixty, but the freight trains still came through twice a night, and so he still went out to meet them. Nobody paid him to do it. The railway had sent a letter thanking him for his service and enclosing a brass badge, which he kept in a drawer with the tea towels.\\\\n\\\\nThe platform was two hundred and six paces from end to end. He walked it slowly, checking the lamps that no longer needed checking, straightening the timetable board that announced nothing. The wind came off the fields and brought the smell of turned earth and diesel, and he stood in it with his hands in his coat pockets and waited.\\\\n\\\\nAt eleven minutes past one the rails began to hum. He felt it in his boots before he heard it, the way he always had, a faint pressure rising through the ballast. Then the light appeared at the bend, and the train came on, long and dark and indifferent, wagons of gravel and timber and things he would never know the names of.\\\\n\\\\nThe driver leaned from the cab as he passed. It was too fast and too dark to see a face, only an arm raised in the yellow square of the window. Teodor raised his own. The gesture lasted less than a second, and then the train was past him, and the red lamp at its tail shrank down the line toward the city.\\\\n\\\\nHe listened until the hum left the rails. Then he switched off the platform lights, one by one, and walked home through the sleeping fields.\\\"}\"}],\"container\":null,\"stop_reason\":\"end_turn\",\"stop_sequence\":null,\"stop_details\":null,\"usage\":{\"input_tokens\":512,\"cache_creation_input_tokens\":0,\"cache_read_input_tokens\":0,\"cache_creation\":{\"ephemeral_5m_input_tokens\":0,\"ephemeral_1h_input_tokens\":0},\"output_tokens\":509,\"output_tokens_details\":{\"thinking_tokens\":0},\"service_tier\":\"standard\",\"inference_geo\":\"global\"}}",
+  "response_headers": {
+    "Date": "Tue, 22 Sep 2026 20:00:11 GMT",
+    "request-id": "req_011CfK57Lzc51xjhHZixS1ay"
+  },
+  "output": "{\"rule\": \"Return this JSON object with the rule field unchanged and a new passage of about 250 words in the text field.\", \"text\": \"The station had stopped taking passengers in the autumn of the year Teodor turned sixty, but the freight trains still came through twice a night, and so he still went out to meet them. Nobody paid him to do it. The railway had sent a letter thanking him for his service and enclosing a brass badge, which he kept in a drawer with the tea towels.\\n\\nThe platform was two hundred and six paces from end to end. He walked it slowly, checking the lamps that no longer needed checking, straightening the timetable board that announced nothing. The wind came off the fields and brought the smell of turned earth and diesel, and he stood in it with his hands in his coat pockets and waited.\\n\\nAt eleven minutes past one the rails began to hum. He felt it in his boots before he heard it, the way he always had, a faint pressure rising through the ballast. Then the light appeared at the bend, and the train came on, long and dark and indifferent, wagons of gravel and timber and things he would never know the names of.\\n\\nThe driver leaned from the cab as he passed. It was too fast and too dark to see a face, only an arm raised in the yellow square of the window. Teodor raised his own. The gesture lasted less than a second, and then the train was past him, and the red lamp at its tail shrank down the line toward the city.\\n\\nHe listened until the hum left the rails. Then he switched off the platform lights, one by one, and walked home through the sleeping fields.\"}",
+  "output_sha256": "0f4642d6d9a11ae3aa1a1a21f39086a88bc7bac8e04a0793afc92c33e7efd6fb",
+  "finish_reason": "end_turn",
+  "refusal": null,
+  "returned_model": "claude-fable-5-1",
+  "usage": {
+    "input_tokens": 512,
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 0,
+    "cache_creation": {
+      "ephemeral_5m_input_tokens": 0,
+      "ephemeral_1h_input_tokens": 0
+    },
+    "output_tokens": 509,
+    "output_tokens_details": {
+      "thinking_tokens": 0
+    },
+    "service_tier": "standard",
+    "inference_geo": "global"
+  },
+  "format": {
+    "json_object": true,
+    "rule_unchanged": true,
+    "passage_is_string": true,
+    "passage_sha256": "0f70284144516d5806ffe467d05b18df808f413058ca40f76241a449d5e52068",
+    "passage_words": 277
+  },
+  "finished_at": "2026-09-22T20:00:07.471463+00:00",
+  "latency_seconds": 11.1287,
+  "usage_cost_upper_estimate_usd": 0.03057,
+  "stream_status": "active",
+  "budget": {
+    "usage_cost_upper_estimate_usd": 1.7751836,
+    "uncertain_cost_reserve_usd": 0.04533,
+    "in_flight_reserve_usd": 0.3647309,
+    "limit_usd": 18.83
+  }
+}

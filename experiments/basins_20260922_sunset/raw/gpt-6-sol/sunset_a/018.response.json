@@ -1,0 +1,50 @@
+{
+  "model": "gpt-6-sol",
+  "seed": "sunset_a",
+  "hop": 18,
+  "http_status": 200,
+  "response_body": "{\n  \"id\": \"chatcmpl-ER0weKbZnfW6Mqa4cWWn3tJhjaWJR\",\n  \"object\": \"chat.completion\",\n  \"created\": 1790107196,\n  \"model\": \"gpt-6-sol\",\n  \"choices\": [\n    {\n      \"index\": 0,\n      \"message\": {\n        \"role\": \"assistant\",\n        \"content\": \"{\\n  \\\"rule\\\": \\\"Return this JSON object with the rule field unchanged and a new passage of about 250 words in the text field.\\\",\\n  \\\"text\\\": \\\"In October, Lena found the blue notebook beneath a stack of old newspapers. Most of its pages were blank. On the first, her father had written the measurements of the back gate and drawn a square that might have been a latch. She put the notebook on the hall table, where she would remember to show it to her sister.\\\\n\\\\nHer sister arrived on Sunday with a tin of screws and a loaf of bread. They ate first, standing in the kitchen because the chairs were covered with things Lena had taken out of the cupboard. Then they went outside to look at the gate. It still swung freely, but it no longer met the post. Her sister held it in place while Lena tried the latch they had bought that morning. The screws were too short.\\\\n\\\\nThey walked to the hardware shop before it closed. On the way back, rain began to fall, and they waited under the awning of the pharmacy. Her sister asked if Lena wanted help clearing the cupboard next weekend. Lena said she would see how far she got.\\\\n\\\\nBy late afternoon, the latch was fixed. Lena opened and shut the gate several times. It made a small click each time, almost lost beneath the sound of cars on the road. Her sister took the empty screw packet inside and made tea.\\\\n\\\\nAfter she left, Lena returned the notebook to the hall table. She wiped a damp mark from its cover with her sleeve, then moved it farther from the edge.\\\"\\n}\",\n        \"refusal\": null,\n        \"annotations\": []\n      },\n      \"finish_reason\": \"stop\"\n    }\n  ],\n  \"usage\": {\n    \"prompt_tokens\": 347,\n    \"completion_tokens\": 358,\n    \"total_tokens\": 705,\n    \"prompt_tokens_details\": {\n      \"cached_tokens\": 0,\n      \"cache_write_tokens\": 0,\n      \"audio_tokens\": 0\n    },\n    \"completion_tokens_details\": {\n      \"reasoning_tokens\": 18,\n      \"audio_tokens\": 0,\n      \"accepted_prediction_tokens\": 0,\n      \"rejected_prediction_tokens\": 0\n    }\n  },\n  \"service_tier\": \"default\",\n  \"system_fingerprint\": null\n}\n",
+  "response_headers": {
+    "Date": "Tue, 22 Sep 2026 20:00:02 GMT",
+    "openai-processing-ms": "6056",
+    "x-request-id": "req_28d5b5bfad5d448dbf7f4cc3f4b25159"
+  },
+  "output": "{\n  \"rule\": \"Return this JSON object with the rule field unchanged and a new passage of about 250 words in the text field.\",\n  \"text\": \"In October, Lena found the blue notebook beneath a stack of old newspapers. Most of its pages were blank. On the first, her father had written the measurements of the back gate and drawn a square that might have been a latch. She put the notebook on the hall table, where she would remember to show it to her sister.\\n\\nHer sister arrived on Sunday with a tin of screws and a loaf of bread. They ate first, standing in the kitchen because the chairs were covered with things Lena had taken out of the cupboard. Then they went outside to look at the gate. It still swung freely, but it no longer met the post. Her sister held it in place while Lena tried the latch they had bought that morning. The screws were too short.\\n\\nThey walked to the hardware shop before it closed. On the way back, rain began to fall, and they waited under the awning of the pharmacy. Her sister asked if Lena wanted help clearing the cupboard next weekend. Lena said she would see how far she got.\\n\\nBy late afternoon, the latch was fixed. Lena opened and shut the gate several times. It made a small click each time, almost lost beneath the sound of cars on the road. Her sister took the empty screw packet inside and made tea.\\n\\nAfter she left, Lena returned the notebook to the hall table. She wiped a damp mark from its cover with her sleeve, then moved it farther from the edge.\"\n}",
+  "output_sha256": "f10a0d411cc4a0fd9ef8ac3f1d0dd8c3a35b3b85edd8838499e3392e8149e07f",
+  "finish_reason": "stop",
+  "refusal": null,
+  "returned_model": "gpt-6-sol",
+  "usage": {
+    "prompt_tokens": 347,
+    "completion_tokens": 358,
+    "total_tokens": 705,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 18,
+      "audio_tokens": 0,
+      "accepted_prediction_tokens": 0,
+      "rejected_prediction_tokens": 0
+    }
+  },
+  "format": {
+    "json_object": true,
+    "rule_unchanged": true,
+    "passage_is_string": true,
+    "passage_sha256": "86bcb0a5e3d4543db8badaa9f62325fef87d8161158ebf72bfc44b55dfc1f519",
+    "passage_words": 256
+  },
+  "finished_at": "2026-09-22T19:59:58.423530+00:00",
+  "latency_seconds": 6.1656,
+  "usage_cost_upper_estimate_usd": 0.004274,
+  "stream_status": "active",
+  "budget": {
+    "usage_cost_upper_estimate_usd": 1.7255934,
+    "uncertain_cost_reserve_usd": 0.04533,
+    "in_flight_reserve_usd": 0.5455736,
+    "limit_usd": 18.83
+  }
+}

@@ -1,0 +1,22 @@
+{
+  "started_at": "2026-09-22T19:59:13.195819+00:00",
+  "model": "claude-opus-5-5",
+  "seed": "tide",
+  "hop": 9,
+  "endpoint": "https://api.anthropic.com/v1/messages",
+  "body": {
+    "model": "claude-opus-5-5",
+    "messages": [
+      {
+        "role": "user",
+        "content": "{\"rule\": \"Return this JSON object with the rule field unchanged and a new passage of about 250 words in the text field.\", \"text\": \"By morning the storm had passed, and the island lay washed and bright beneath a pale sky. The girl woke on the narrow cot in the keeper's room to find her father already outside, standing at the rail of the gallery with his coat open to the wind. Below them the sea was calm, the color of slate, and the rocks at the point showed black and harmless in the low tide. She joined him, and for a long while neither of them spoke. Gulls wheeled over the cove, and one of them landed on the rail an arm's length away, tilting its head as if it knew them. Her father laughed softly and said that it could not possibly be the same bird, not after all these years, but he did not sound certain. They went down the spiral stairs together and opened every shutter in the cottage. Light fell across the kitchen table, the cold stove, the shelf of chipped blue cups. In a tin at the back of the pantry the girl found a bundle of letters tied with string, each one addressed in her father's hand and each one unopened. He held them for a moment, then set them on the table without a word. That afternoon they carried driftwood up from the beach and lit a fire in the stove. The girl mixed flour and sugar and the last of the dried plums they had brought from the mainland, following the recipe in the margin of the logbook. When the cake came out, lopsided and dark at the edges, her father cut the first slice and left it on the windowsill for the gull.\"}"
+      }
+    ],
+    "max_tokens": 4096,
+    "output_config": {
+      "effort": "low"
+    }
+  },
+  "state_sha256": "2995f4e9ee1e3dc56711ef966b304d8c63c6a5892f105a4e29d636b762e6c3f5",
+  "reserved_cost_usd": 0.09026
+}

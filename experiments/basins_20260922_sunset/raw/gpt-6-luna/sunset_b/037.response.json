@@ -1,0 +1,50 @@
+{
+  "model": "gpt-6-luna",
+  "seed": "sunset_b",
+  "hop": 37,
+  "http_status": 200,
+  "response_body": "{\n  \"id\": \"chatcmpl-ER1021UsJ4DddR8B4AxJcn1VyPXEc\",\n  \"object\": \"chat.completion\",\n  \"created\": 1790107406,\n  \"model\": \"gpt-6-luna\",\n  \"choices\": [\n    {\n      \"index\": 0,\n      \"message\": {\n        \"role\": \"assistant\",\n        \"content\": \"{\\n  \\\"rule\\\": \\\"Return this JSON object with the rule field unchanged and a new passage of about 250 words in the text field.\\\",\\n  \\\"text\\\": \\\"Every winter, the village lake froze so smoothly that people said you could skate all the way to the mountains. No one had ever tried. The mountains were too far, and the ice, though beautiful, was known to crack without warning.\\\\n\\\\nExcept for Niko, who believed warnings were often just stories told by people who had turned back.\\\\n\\\\nOn the coldest morning of the year, he laced his skates and stepped onto the lake. His sister Lena watched from shore, arms folded inside her coat. “If you hear the ice sing,” she called, “come back.”\\\\n\\\\nNiko waved and glided away. Behind him, the village shrank to a cluster of chimneys. Ahead, the mountains stood blue and distant. The lake was so still that he seemed to skate through the sky itself.\\\\n\\\\nThen came a low, clear note beneath his feet. The ice sang.\\\\n\\\\nNiko stopped. A thin white line ran across the lake, branching toward him like lightning. He remembered Lena’s warning and turned toward shore. But the crack followed, racing over the frozen surface.\\\\n\\\\nHe pushed hard, skates flashing. When he reached the shallows, Lena was waiting with a long wooden pole. She thrust it toward him, and he grabbed on. Together they scrambled onto the snowy bank just as the ice split behind them.\\\\n\\\\nFor a while, neither spoke. Then Niko laughed, shaky with relief.\\\\n\\\\n“Did you reach the mountains?” Lena asked.\\\\n\\\\n“No,” he said, looking across the lake. “But I found out how far away they really are.”\\\\n\\\\nThat evening, they drew a map together. This time, they marked not only the destination, but also the safe roads home.\\\"\\n}\",\n        \"refusal\": null,\n        \"annotations\": []\n      },\n      \"finish_reason\": \"stop\"\n    }\n  ],\n  \"usage\": {\n    \"prompt_tokens\": 407,\n    \"completion_tokens\": 446,\n    \"total_tokens\": 853,\n    \"prompt_tokens_details\": {\n      \"cached_tokens\": 0,\n      \"cache_write_tokens\": 0,\n      \"audio_tokens\": 0\n    },\n    \"completion_tokens_details\": {\n      \"reasoning_tokens\": 38,\n      \"audio_tokens\": 0,\n      \"accepted_prediction_tokens\": 0,\n      \"rejected_prediction_tokens\": 0\n    }\n  },\n  \"service_tier\": \"default\",\n  \"system_fingerprint\": null\n}\n",
+  "response_headers": {
+    "Date": "Tue, 22 Sep 2026 20:03:32 GMT",
+    "openai-processing-ms": "5679",
+    "x-request-id": "req_73cf998707f34f5b91d16bdcd1271ec3"
+  },
+  "output": "{\n  \"rule\": \"Return this JSON object with the rule field unchanged and a new passage of about 250 words in the text field.\",\n  \"text\": \"Every winter, the village lake froze so smoothly that people said you could skate all the way to the mountains. No one had ever tried. The mountains were too far, and the ice, though beautiful, was known to crack without warning.\\n\\nExcept for Niko, who believed warnings were often just stories told by people who had turned back.\\n\\nOn the coldest morning of the year, he laced his skates and stepped onto the lake. His sister Lena watched from shore, arms folded inside her coat. “If you hear the ice sing,” she called, “come back.”\\n\\nNiko waved and glided away. Behind him, the village shrank to a cluster of chimneys. Ahead, the mountains stood blue and distant. The lake was so still that he seemed to skate through the sky itself.\\n\\nThen came a low, clear note beneath his feet. The ice sang.\\n\\nNiko stopped. A thin white line ran across the lake, branching toward him like lightning. He remembered Lena’s warning and turned toward shore. But the crack followed, racing over the frozen surface.\\n\\nHe pushed hard, skates flashing. When he reached the shallows, Lena was waiting with a long wooden pole. She thrust it toward him, and he grabbed on. Together they scrambled onto the snowy bank just as the ice split behind them.\\n\\nFor a while, neither spoke. Then Niko laughed, shaky with relief.\\n\\n“Did you reach the mountains?” Lena asked.\\n\\n“No,” he said, looking across the lake. “But I found out how far away they really are.”\\n\\nThat evening, they drew a map together. This time, they marked not only the destination, but also the safe roads home.\"\n}",
+  "output_sha256": "1ee9152cbc4df5553b17c0d5b194e94aedc38e63f2387e32e0ecb0307e188386",
+  "finish_reason": "stop",
+  "refusal": null,
+  "returned_model": "gpt-6-luna",
+  "usage": {
+    "prompt_tokens": 407,
+    "completion_tokens": 446,
+    "total_tokens": 853,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 38,
+      "audio_tokens": 0,
+      "accepted_prediction_tokens": 0,
+      "rejected_prediction_tokens": 0
+    }
+  },
+  "format": {
+    "json_object": true,
+    "rule_unchanged": true,
+    "passage_is_string": true,
+    "passage_sha256": "dfd994808e3181419b7782876a1bb1c5cebc315b6f59efd10f6aef9e8813d8a6",
+    "passage_words": 272
+  },
+  "finished_at": "2026-09-22T20:03:28.128232+00:00",
+  "latency_seconds": 6.4618,
+  "usage_cost_upper_estimate_usd": 0.0002637,
+  "stream_status": "active",
+  "budget": {
+    "usage_cost_upper_estimate_usd": 3.034931,
+    "uncertain_cost_reserve_usd": 0.04533,
+    "in_flight_reserve_usd": 0.59044,
+    "limit_usd": 18.83
+  }
+}

@@ -1,0 +1,50 @@
+{
+  "model": "gpt-6-sol",
+  "seed": "tide",
+  "hop": 27,
+  "http_status": 200,
+  "response_body": "{\n  \"id\": \"chatcmpl-ER0yVeN94pjRXJfpNXQf4bN9LH6re\",\n  \"object\": \"chat.completion\",\n  \"created\": 1790107311,\n  \"model\": \"gpt-6-sol\",\n  \"choices\": [\n    {\n      \"index\": 0,\n      \"message\": {\n        \"role\": \"assistant\",\n        \"content\": \"{\\n  \\\"rule\\\": \\\"Return this JSON object with the rule field unchanged and a new passage of about 250 words in the text field.\\\",\\n  \\\"text\\\": \\\"The wheel spun beneath her father’s hands. He stumbled back as the gate rose another inch, then stopped with a clang.\\\\n\\\\nWater surged through the channel at Mara’s feet. It carried silt, splinters, and a small brass bell that struck the drain grate without ringing.\\\\n\\\\n“Dry dock’s taking it,” the keeper said. “For now.”\\\\n\\\\nThe harbor master hurried up the stairs to check the waterline. Mara stayed at the glass. The figures were gone, but one light remained, caught beneath the lip of the gate.\\\\n\\\\nHer father saw it too. “Don’t touch anything.”\\\\n\\\\nMara knelt anyway. Wedged between two stones was a lantern no bigger than her fist. Its glass was unbroken. Inside, a pale flame burned underwater.\\\\n\\\\nTwo knocks sounded from the pipe. Then one.\\\\n\\\\nThe woman in the ship’s coat went still. “My father used that signal. Two for home, one for safe.”\\\\n\\\\nMara lifted the lantern by its handle. The flame leaned toward the stairs. Behind her, the trickle of water had ceased.\\\\n\\\\nFrom above came the harbor master’s shout. “The tide’s falling!”\\\\n\\\\nHer father eased the wheel back, but the gate would not move. Something held it open from the other side.\\\\n\\\\nIn the channel, the little bell trembled against the grate. This time it rang, a thin clear note.\\\\n\\\\nThe woman pressed a hand to the glass. Beyond it, far down the flooded passage, seven lights appeared again. They were moving away from the harbor, single file.\\\\n\\\\nMara set the lantern on the sill. Its flame steadied. The bell fell silent, and the gate began to close.\\\"\\n}\",\n        \"refusal\": null,\n        \"annotations\": []\n      },\n      \"finish_reason\": \"stop\"\n    }\n  ],\n  \"usage\": {\n    \"prompt_tokens\": 412,\n    \"completion_tokens\": 434,\n    \"total_tokens\": 846,\n    \"prompt_tokens_details\": {\n      \"cached_tokens\": 0,\n      \"cache_write_tokens\": 0,\n      \"audio_tokens\": 0\n    },\n    \"completion_tokens_details\": {\n      \"reasoning_tokens\": 22,\n      \"audio_tokens\": 0,\n      \"accepted_prediction_tokens\": 0,\n      \"rejected_prediction_tokens\": 0\n    }\n  },\n  \"service_tier\": \"default\",\n  \"system_fingerprint\": null\n}\n",
+  "response_headers": {
+    "Date": "Tue, 22 Sep 2026 20:01:58 GMT",
+    "openai-processing-ms": "6438",
+    "x-request-id": "req_f24b8797b2844209a12b9c8190ed0207"
+  },
+  "output": "{\n  \"rule\": \"Return this JSON object with the rule field unchanged and a new passage of about 250 words in the text field.\",\n  \"text\": \"The wheel spun beneath her father’s hands. He stumbled back as the gate rose another inch, then stopped with a clang.\\n\\nWater surged through the channel at Mara’s feet. It carried silt, splinters, and a small brass bell that struck the drain grate without ringing.\\n\\n“Dry dock’s taking it,” the keeper said. “For now.”\\n\\nThe harbor master hurried up the stairs to check the waterline. Mara stayed at the glass. The figures were gone, but one light remained, caught beneath the lip of the gate.\\n\\nHer father saw it too. “Don’t touch anything.”\\n\\nMara knelt anyway. Wedged between two stones was a lantern no bigger than her fist. Its glass was unbroken. Inside, a pale flame burned underwater.\\n\\nTwo knocks sounded from the pipe. Then one.\\n\\nThe woman in the ship’s coat went still. “My father used that signal. Two for home, one for safe.”\\n\\nMara lifted the lantern by its handle. The flame leaned toward the stairs. Behind her, the trickle of water had ceased.\\n\\nFrom above came the harbor master’s shout. “The tide’s falling!”\\n\\nHer father eased the wheel back, but the gate would not move. Something held it open from the other side.\\n\\nIn the channel, the little bell trembled against the grate. This time it rang, a thin clear note.\\n\\nThe woman pressed a hand to the glass. Beyond it, far down the flooded passage, seven lights appeared again. They were moving away from the harbor, single file.\\n\\nMara set the lantern on the sill. Its flame steadied. The bell fell silent, and the gate began to close.\"\n}",
+  "output_sha256": "b6cbf854ab7883df1d5f5bd60ea1d53a1c3679c86d6134089ecec95ae08d8a73",
+  "finish_reason": "stop",
+  "refusal": null,
+  "returned_model": "gpt-6-sol",
+  "usage": {
+    "prompt_tokens": 412,
+    "completion_tokens": 434,
+    "total_tokens": 846,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 22,
+      "audio_tokens": 0,
+      "accepted_prediction_tokens": 0,
+      "rejected_prediction_tokens": 0
+    }
+  },
+  "format": {
+    "json_object": true,
+    "rule_unchanged": true,
+    "passage_is_string": true,
+    "passage_sha256": "20e60d517dc72e37e9ae74f44f5e86029864c701b9065c77c58585ce7fe1bd1a",
+    "passage_words": 262
+  },
+  "finished_at": "2026-09-22T20:01:54.247290+00:00",
+  "latency_seconds": 6.5658,
+  "usage_cost_upper_estimate_usd": 0.005164,
+  "stream_status": "active",
+  "budget": {
+    "usage_cost_upper_estimate_usd": 2.4594396,
+    "uncertain_cost_reserve_usd": 0.04533,
+    "in_flight_reserve_usd": 0.5452584,
+    "limit_usd": 18.83
+  }
+}

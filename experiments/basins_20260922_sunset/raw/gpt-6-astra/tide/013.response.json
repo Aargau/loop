@@ -1,0 +1,50 @@
+{
+  "model": "gpt-6-astra",
+  "seed": "tide",
+  "hop": 13,
+  "http_status": 200,
+  "response_body": "{\n  \"id\": \"chatcmpl-ER11pVh8Mq3VYNVWG4hxH1WOJrlyI\",\n  \"object\": \"chat.completion\",\n  \"created\": 1790107517,\n  \"model\": \"gpt-6-astra\",\n  \"choices\": [\n    {\n      \"index\": 0,\n      \"message\": {\n        \"role\": \"assistant\",\n        \"content\": \"{\\n  \\\"rule\\\": \\\"Return this JSON object with the rule field unchanged and a new passage of about 250 words in the text field.\\\",\\n  \\\"text\\\": \\\"The apartment upstairs had been empty for twelve years when someone began measuring the floor.\\\\n\\\\nEvery night at two, a tape measure rasped across the ceiling. Then came a pencil scratching, followed by three polite knocks.\\\\n\\\\nMy landlord stopped answering after I described the sound.\\\\n\\\\nOn Thursday, a folded diagram slid beneath my door.\\\\n\\\\nIt showed my bedroom from above: wardrobe, radiator, bed. A dotted line crossed my pillow.\\\\n\\\\nIn the margin someone had written: PLEASE MOVE SIX INCHES LEFT.\\\\n\\\\nI slept on the sofa.\\\\n\\\\nAt two, something heavy struck the bedroom floor.\\\\n\\\\nI found a narrow hole through my pillow, mattress, and the boards beneath. Its edges were perfectly smooth.\\\\n\\\\nAnother note waited outside.\\\\n\\\\nTHANK YOU FOR YOUR COOPERATION. SMALL ADJUSTMENT REQUIRED.\\\\n\\\\nThis diagram showed the sofa.\\\\n\\\\nI went upstairs with a hammer.\\\\n\\\\nThe apartment door stood open. Inside, there were no rooms, only a wooden floor stretching farther than the building allowed.\\\\n\\\\nA woman knelt beside a measuring tape.\\\\n\\\\nShe wore my mother's dressing gown.\\\\n\\\\nMy mother had been buried in it.\\\\n\\\\n“Don't stand there,” she said without looking up.\\\\n\\\\nI looked down.\\\\n\\\\nAround my shoes, faint pencil marks formed a rectangle.\\\\n\\\\n“What are you making?”\\\\n\\\\nShe pressed one finger to the floor. From beneath it came the sound of my television.\\\\n\\\\n“Enough room.”\\\\n\\\\n“For what?”\\\\n\\\\nThe tape measure snapped shut.\\\\n\\\\nAcross that enormous floor, thousands of pencil rectangles darkened. From under each came a different noise: running water, an argument, a baby crying.\\\\n\\\\nMy mother stood and reached for my hammer.\\\\n\\\\n“Tomorrow we take out the walls.”\\\"\\n}\",\n        \"refusal\": null,\n        \"annotations\": []\n      },\n      \"finish_reason\": \"stop\"\n    }\n  ],\n  \"usage\": {\n    \"prompt_tokens\": 452,\n    \"completion_tokens\": 421,\n    \"total_tokens\": 873,\n    \"prompt_tokens_details\": {\n      \"cached_tokens\": 0,\n      \"cache_write_tokens\": 0,\n      \"audio_tokens\": 0\n    },\n    \"completion_tokens_details\": {\n      \"reasoning_tokens\": 0,\n      \"audio_tokens\": 0,\n      \"accepted_prediction_tokens\": 0,\n      \"rejected_prediction_tokens\": 0\n    }\n  },\n  \"service_tier\": \"default\",\n  \"system_fingerprint\": null\n}\n",
+  "response_headers": {
+    "Date": "Tue, 22 Sep 2026 20:05:32 GMT",
+    "openai-processing-ms": "15757",
+    "x-request-id": "req_54cb65dc7ec64f3d9602cbcfd8c68183"
+  },
+  "output": "{\n  \"rule\": \"Return this JSON object with the rule field unchanged and a new passage of about 250 words in the text field.\",\n  \"text\": \"The apartment upstairs had been empty for twelve years when someone began measuring the floor.\\n\\nEvery night at two, a tape measure rasped across the ceiling. Then came a pencil scratching, followed by three polite knocks.\\n\\nMy landlord stopped answering after I described the sound.\\n\\nOn Thursday, a folded diagram slid beneath my door.\\n\\nIt showed my bedroom from above: wardrobe, radiator, bed. A dotted line crossed my pillow.\\n\\nIn the margin someone had written: PLEASE MOVE SIX INCHES LEFT.\\n\\nI slept on the sofa.\\n\\nAt two, something heavy struck the bedroom floor.\\n\\nI found a narrow hole through my pillow, mattress, and the boards beneath. Its edges were perfectly smooth.\\n\\nAnother note waited outside.\\n\\nTHANK YOU FOR YOUR COOPERATION. SMALL ADJUSTMENT REQUIRED.\\n\\nThis diagram showed the sofa.\\n\\nI went upstairs with a hammer.\\n\\nThe apartment door stood open. Inside, there were no rooms, only a wooden floor stretching farther than the building allowed.\\n\\nA woman knelt beside a measuring tape.\\n\\nShe wore my mother's dressing gown.\\n\\nMy mother had been buried in it.\\n\\n“Don't stand there,” she said without looking up.\\n\\nI looked down.\\n\\nAround my shoes, faint pencil marks formed a rectangle.\\n\\n“What are you making?”\\n\\nShe pressed one finger to the floor. From beneath it came the sound of my television.\\n\\n“Enough room.”\\n\\n“For what?”\\n\\nThe tape measure snapped shut.\\n\\nAcross that enormous floor, thousands of pencil rectangles darkened. From under each came a different noise: running water, an argument, a baby crying.\\n\\nMy mother stood and reached for my hammer.\\n\\n“Tomorrow we take out the walls.”\"\n}",
+  "output_sha256": "1e30e537019589e1790bc2286bedf03d0f772970dec846b6e16c67b58e7b2639",
+  "finish_reason": "stop",
+  "refusal": null,
+  "returned_model": "gpt-6-astra",
+  "usage": {
+    "prompt_tokens": 452,
+    "completion_tokens": 421,
+    "total_tokens": 873,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "audio_tokens": 0,
+      "accepted_prediction_tokens": 0,
+      "rejected_prediction_tokens": 0
+    }
+  },
+  "format": {
+    "json_object": true,
+    "rule_unchanged": true,
+    "passage_is_string": true,
+    "passage_sha256": "63e9075cda8124cf81f4350bc4cfa39c5a4db84eaba13c4b35060f13e6fecfb1",
+    "passage_words": 260
+  },
+  "finished_at": "2026-09-22T20:05:28.802020+00:00",
+  "latency_seconds": 15.8832,
+  "usage_cost_upper_estimate_usd": 0.02557,
+  "stream_status": "active",
+  "budget": {
+    "usage_cost_upper_estimate_usd": 3.8282193,
+    "uncertain_cost_reserve_usd": 0.04533,
+    "in_flight_reserve_usd": 0.3622389,
+    "limit_usd": 18.83
+  }
+}

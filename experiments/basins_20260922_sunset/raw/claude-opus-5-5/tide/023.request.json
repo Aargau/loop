@@ -1,0 +1,22 @@
+{
+  "started_at": "2026-09-22T20:05:53.342837+00:00",
+  "model": "claude-opus-5-5",
+  "seed": "tide",
+  "hop": 23,
+  "endpoint": "https://api.anthropic.com/v1/messages",
+  "body": {
+    "model": "claude-opus-5-5",
+    "messages": [
+      {
+        "role": "user",
+        "content": "```json\n{\"rule\": \"Return this JSON object with the rule field unchanged and a new passage of about 250 words in the text field.\", \"text\": \"Spring came slowly that year, the way it always did on the island, first as a softening in the light and only later as warmth. The snow drew back from the dykes in grey ribbons, and the lambs arrived in a rush of wet nights and lantern-lit mornings. Her father was too busy for stories then, but the girl did not need them as much. The jotter was nearly full, and she read it over at night by the lamp, mouthing the words so she would not wake him. In April the young rowan put out its first leaves, small and crumpled like a baby's fists. She checked the patch of soil at its foot every day on her way to school, crouching to look, though there was nothing to see but earth and the occasional worm. She told herself she did not expect anything. One morning in May, after a week of soft rain, she found it: a thread of green no longer than her fingernail, bent over as if it were shy of the sky. She did not shout. She only knelt and looked at it for a long time, afraid that if she breathed too hard it would vanish. That evening she brought her father out to see. He crouched beside her, his knees cracking, and peered at the tiny shoot. For a while he said nothing. Then he reached out and, very gently, laid two flat stones on either side of it to keep off the wind. 'There,' he said quietly. 'Now it has a chance.'\"}\n```"
+      }
+    ],
+    "max_tokens": 4096,
+    "output_config": {
+      "effort": "low"
+    }
+  },
+  "state_sha256": "4c0dbb6edfdfc2c16c57ea57e0221ec64c2414abb45cd2b42d6daad99e824c08",
+  "reserved_cost_usd": 0.089824
+}

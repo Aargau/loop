@@ -1,0 +1,22 @@
+{
+  "started_at": "2026-09-22T20:00:07.490077+00:00",
+  "model": "claude-fable-5-1",
+  "seed": "tide",
+  "hop": 8,
+  "endpoint": "https://api.anthropic.com/v1/messages",
+  "body": {
+    "model": "claude-fable-5-1",
+    "messages": [
+      {
+        "role": "user",
+        "content": "{\"rule\": \"Return this JSON object with the rule field unchanged and a new passage of about 250 words in the text field.\", \"text\": \"The ferry ran twice a day in winter, and Ilse had learned to tell the hour by its horn rather than by any clock. When the morning crossing sounded she put down her pen, pulled on her boots, and walked to the end of the pier to watch it come in through the fog.\n\nThere was never much aboard. Mail, groceries, the occasional repairman who stayed one night and left grateful. But her mother had told her once that everything that ever mattered had arrived on that boat, and Ilse had been young enough to take it as instruction.\n\nThis morning a man stood alone at the rail. He carried a leather case the shape of a violin and wore a coat too thin for the season. When the gangway went down he did not move, and the deckhand had to speak to him twice.\n\n\"You'll want the inn,\" Ilse said, because someone had to.\n\nHe looked at her as if she had said something in a language he was still learning. \"I want the house with the blue door.\"\n\nNobody had lived there in nine years. Ilse knew this the way she knew the tide tables: as a fact of the island, not to be argued with.\n\n\"It's shut,\" she said.\n\n\"I have a key.\" He drew it from his coat, iron and old, and she recognized it at once, though she had last seen it in her mother's hand, on the morning her mother had walked down this same pier and not come back.\"}"
+      }
+    ],
+    "max_tokens": 4096,
+    "output_config": {
+      "effort": "low"
+    }
+  },
+  "state_sha256": "ee011a29bc563e6bec563ecaf90a3bc8f2cb818cd749b155f376c74b1e0c7e70",
+  "reserved_cost_usd": 0.22427
+}

@@ -1,0 +1,48 @@
+{
+  "model": "claude-fable-5-1",
+  "seed": "sunset_a",
+  "hop": 16,
+  "http_status": 200,
+  "response_body": "{\"model\":\"claude-fable-5-1\",\"id\":\"msg_011CfK5VBd9tSzV84bDa6jPW\",\"type\":\"message\",\"role\":\"assistant\",\"content\":[{\"type\":\"text\",\"text\":\"{\\\"rule\\\": \\\"Return this JSON object with the rule field unchanged and a new passage of about 250 words in the text field.\\\", \\\"text\\\": \\\"It was not loud. It came the way a kettle comes, a long way off at first, a sound you could mistake for the building settling or the blood in your own ears. Ines stood very still with her hand on the wheel and let it grow.\\\\n\\\\nWater, moving through pipe that had not carried water in years. She could hear it find the turns. There was a knock, and a pause, and then a rush that traveled upward and away from her, into the part of the house she had never had a key to.\\\\n\\\\nShe thought of the letters again, the thin paper, the ink that had gone brown. The writer had never signed a name. The envelopes had been addressed to the shop, not to any person, and the first one had been waiting in the box the day she took over the lease, as if it had been timed. She had assumed a mistake. Then the second came, and the third, and by the fifth she had stopped assuming anything.\\\\n\\\\nThe murmur steadied. It found a level and stayed there, low and even, exactly as described. Almost like company.\\\\n\\\\nInes took her hand from the valve. Her fingers had gone white where they gripped it. Above her, faint through two floors of plaster and lath, something creaked near what she guessed was a window.\\\\n\\\\nShe told herself it was the wood answering the water. She told herself that twice. Then she went inside, locked the courtyard door, and left the light on in the shop all night.\\\"}\"}],\"container\":null,\"stop_reason\":\"end_turn\",\"stop_sequence\":null,\"stop_details\":null,\"usage\":{\"input_tokens\":490,\"cache_creation_input_tokens\":0,\"cache_read_input_tokens\":0,\"cache_creation\":{\"ephemeral_5m_input_tokens\":0,\"ephemeral_1h_input_tokens\":0},\"output_tokens\":471,\"output_tokens_details\":{\"thinking_tokens\":0},\"service_tier\":\"standard\",\"inference_geo\":\"global\"}}",
+  "response_headers": {
+    "Date": "Tue, 22 Sep 2026 20:05:06 GMT",
+    "request-id": "req_011CfK5V9oWnNcTygoSETuvd"
+  },
+  "output": "{\"rule\": \"Return this JSON object with the rule field unchanged and a new passage of about 250 words in the text field.\", \"text\": \"It was not loud. It came the way a kettle comes, a long way off at first, a sound you could mistake for the building settling or the blood in your own ears. Ines stood very still with her hand on the wheel and let it grow.\\n\\nWater, moving through pipe that had not carried water in years. She could hear it find the turns. There was a knock, and a pause, and then a rush that traveled upward and away from her, into the part of the house she had never had a key to.\\n\\nShe thought of the letters again, the thin paper, the ink that had gone brown. The writer had never signed a name. The envelopes had been addressed to the shop, not to any person, and the first one had been waiting in the box the day she took over the lease, as if it had been timed. She had assumed a mistake. Then the second came, and the third, and by the fifth she had stopped assuming anything.\\n\\nThe murmur steadied. It found a level and stayed there, low and even, exactly as described. Almost like company.\\n\\nInes took her hand from the valve. Her fingers had gone white where they gripped it. Above her, faint through two floors of plaster and lath, something creaked near what she guessed was a window.\\n\\nShe told herself it was the wood answering the water. She told herself that twice. Then she went inside, locked the courtyard door, and left the light on in the shop all night.\"}",
+  "output_sha256": "5b683b28cd594db65a651b7ea5235dcea50d719d3137751b948462d1ca9ba8b0",
+  "finish_reason": "end_turn",
+  "refusal": null,
+  "returned_model": "claude-fable-5-1",
+  "usage": {
+    "input_tokens": 490,
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 0,
+    "cache_creation": {
+      "ephemeral_5m_input_tokens": 0,
+      "ephemeral_1h_input_tokens": 0
+    },
+    "output_tokens": 471,
+    "output_tokens_details": {
+      "thinking_tokens": 0
+    },
+    "service_tier": "standard",
+    "inference_geo": "global"
+  },
+  "format": {
+    "json_object": true,
+    "rule_unchanged": true,
+    "passage_is_string": true,
+    "passage_sha256": "42b887afe202e68fbf691423d04e3233cbcab20de72c808f92948958865b63fb",
+    "passage_words": 261
+  },
+  "finished_at": "2026-09-22T20:05:02.664243+00:00",
+  "latency_seconds": 10.5061,
+  "usage_cost_upper_estimate_usd": 0.02845,
+  "stream_status": "active",
+  "budget": {
+    "usage_cost_upper_estimate_usd": 3.6560776,
+    "uncertain_cost_reserve_usd": 0.04533,
+    "in_flight_reserve_usd": 0.3648846,
+    "limit_usd": 18.83
+  }
+}

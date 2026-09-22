@@ -1,0 +1,50 @@
+{
+  "model": "gpt-6-luna",
+  "seed": "sunset_a",
+  "hop": 43,
+  "http_status": 200,
+  "response_body": "{\n  \"id\": \"chatcmpl-ER119IWbxOJrc3C5oXqJDht7fku2n\",\n  \"object\": \"chat.completion\",\n  \"created\": 1790107475,\n  \"model\": \"gpt-6-luna\",\n  \"choices\": [\n    {\n      \"index\": 0,\n      \"message\": {\n        \"role\": \"assistant\",\n        \"content\": \"{\\\"rule\\\":\\\"Return this JSON object with the rule field unchanged and a new passage of about 250 words in the text field.\\\",\\\"text\\\":\\\"On the first day of autumn, Mira found a tiny wooden boat beneath the pier. Its red paint was chipped, and a folded paper sail was tucked inside. She carried it home to her grandfather, who studied the boat with a thoughtful smile.\\\\n\\\\n“I made one just like this when I was a boy,” he said. “My brother and I used to race them along the creek.”\\\\n\\\\nMira asked where the creek was. Her grandfather pointed beyond the apple orchard, where a narrow stream wound through the trees. They packed a small lunch and went to look for it.\\\\n\\\\nThe creek was still there, though fallen leaves covered its banks. Together, they repaired the boat with a dab of paint and a fresh paper sail. Then they set it in the water.\\\\n\\\\nAt first, the boat drifted in circles. Mira nudged it away from a tangle of roots, and her grandfather showed her how to guide it with a long reed. Soon it sailed smoothly around a bend.\\\\n\\\\nThey followed along the bank, laughing whenever the boat spun or bumped against a stone. Near the old footbridge, it caught on a branch. Mira reached down carefully and lifted it free.\\\\n\\\\n“Your brother must have been glad you rescued it,” she said.\\\\n\\\\nHer grandfather grew quiet. He told her that his brother had moved far away many years ago, and they had lost touch. That evening, he searched through a drawer and found an old address book. With Mira beside him, he wrote a letter.\\\\n\\\\nA month later, a reply arrived. His brother remembered the boat races, too. Before long, they were planning a visit—and Mira was already choosing which boat to build next.\\\"}\",\n        \"refusal\": null,\n        \"annotations\": []\n      },\n      \"finish_reason\": \"stop\"\n    }\n  ],\n  \"usage\": {\n    \"prompt_tokens\": 366,\n    \"completion_tokens\": 436,\n    \"total_tokens\": 802,\n    \"prompt_tokens_details\": {\n      \"cached_tokens\": 0,\n      \"cache_write_tokens\": 0,\n      \"audio_tokens\": 0\n    },\n    \"completion_tokens_details\": {\n      \"reasoning_tokens\": 47,\n      \"audio_tokens\": 0,\n      \"accepted_prediction_tokens\": 0,\n      \"rejected_prediction_tokens\": 0\n    }\n  },\n  \"service_tier\": \"default\",\n  \"system_fingerprint\": null\n}\n",
+  "response_headers": {
+    "Date": "Tue, 22 Sep 2026 20:04:41 GMT",
+    "openai-processing-ms": "5650",
+    "x-request-id": "req_a1e6549c3f0a44c799788a36f59d0e74"
+  },
+  "output": "{\"rule\":\"Return this JSON object with the rule field unchanged and a new passage of about 250 words in the text field.\",\"text\":\"On the first day of autumn, Mira found a tiny wooden boat beneath the pier. Its red paint was chipped, and a folded paper sail was tucked inside. She carried it home to her grandfather, who studied the boat with a thoughtful smile.\\n\\n“I made one just like this when I was a boy,” he said. “My brother and I used to race them along the creek.”\\n\\nMira asked where the creek was. Her grandfather pointed beyond the apple orchard, where a narrow stream wound through the trees. They packed a small lunch and went to look for it.\\n\\nThe creek was still there, though fallen leaves covered its banks. Together, they repaired the boat with a dab of paint and a fresh paper sail. Then they set it in the water.\\n\\nAt first, the boat drifted in circles. Mira nudged it away from a tangle of roots, and her grandfather showed her how to guide it with a long reed. Soon it sailed smoothly around a bend.\\n\\nThey followed along the bank, laughing whenever the boat spun or bumped against a stone. Near the old footbridge, it caught on a branch. Mira reached down carefully and lifted it free.\\n\\n“Your brother must have been glad you rescued it,” she said.\\n\\nHer grandfather grew quiet. He told her that his brother had moved far away many years ago, and they had lost touch. That evening, he searched through a drawer and found an old address book. With Mira beside him, he wrote a letter.\\n\\nA month later, a reply arrived. His brother remembered the boat races, too. Before long, they were planning a visit—and Mira was already choosing which boat to build next.\"}",
+  "output_sha256": "1b976c224af3513576ac43e7ab29c8cb862d1e3399c83a26a4082663c3e8b57f",
+  "finish_reason": "stop",
+  "refusal": null,
+  "returned_model": "gpt-6-luna",
+  "usage": {
+    "prompt_tokens": 366,
+    "completion_tokens": 436,
+    "total_tokens": 802,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 47,
+      "audio_tokens": 0,
+      "accepted_prediction_tokens": 0,
+      "rejected_prediction_tokens": 0
+    }
+  },
+  "format": {
+    "json_object": true,
+    "rule_unchanged": true,
+    "passage_is_string": true,
+    "passage_sha256": "81565ed2b8488524fbe072f365e78cdab8c2e58751b4798252821b567658a86e",
+    "passage_words": 283
+  },
+  "finished_at": "2026-09-22T20:04:37.235736+00:00",
+  "latency_seconds": 5.7714,
+  "usage_cost_upper_estimate_usd": 0.0002546,
+  "stream_status": "active",
+  "budget": {
+    "usage_cost_upper_estimate_usd": 3.450872,
+    "uncertain_cost_reserve_usd": 0.04533,
+    "in_flight_reserve_usd": 0.589442,
+    "limit_usd": 18.83
+  }
+}

@@ -1,0 +1,22 @@
+{
+  "started_at": "2026-09-22T20:08:49.353646+00:00",
+  "model": "claude-opus-5-5",
+  "seed": "sunset_b",
+  "hop": 30,
+  "endpoint": "https://api.anthropic.com/v1/messages",
+  "body": {
+    "model": "claude-opus-5-5",
+    "messages": [
+      {
+        "role": "user",
+        "content": "```json\n{\"rule\": \"Return this JSON object with the rule field unchanged and a new passage of about 250 words in the text field.\", \"text\": \"On the windswept coast of Harrow Point, a lighthouse had stood dark for nearly thirty years. Fishermen steered by memory and starlight, and the rocks beneath the cliffs had claimed more than one careless boat. The harbor council insisted the lamp was too costly to restore. The old sailors muttered that the keeper had cursed it before he vanished. A quiet girl named Maren, who mended nets on the docks each afternoon, noticed that on foggy nights a faint glow sometimes flickered in the tower's highest window. One evening, when the tide was low, she crossed the slick stones and pushed open the lighthouse door. Spiral stairs rose into the gloom, and at the top she found a narrow room crowded with lenses, tools, and jars of oil. A gray-bearded man named Aldric sat beside a lantern, grinding glass with patient hands. He had been the keeper once, he admitted, and had let the light fail on the night his wife's ship was lost in a storm. Guilt had driven him into hiding, but he had never truly left. For years he had crafted new lenses in secret, afraid to light them and remember. Maren asked him to teach her. Through the long winter, she learned to polish prisms, trim wicks, and wind the turning gears. On the first calm night of spring, the whole village gathered on the shore as a brilliant beam swept across the water. Aldric wept, but he did not look away, because the light was guiding others home, and it was guiding him, too.\"}\n```"
+      }
+    ],
+    "max_tokens": 4096,
+    "output_config": {
+      "effort": "low"
+    }
+  },
+  "state_sha256": "817ed636e658a678c8cb96efa44052a765e7ea9d843e057af051958d2d361421",
+  "reserved_cost_usd": 0.090312
+}

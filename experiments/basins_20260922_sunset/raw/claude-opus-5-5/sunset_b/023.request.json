@@ -1,0 +1,22 @@
+{
+  "started_at": "2026-09-22T20:05:39.681631+00:00",
+  "model": "claude-opus-5-5",
+  "seed": "sunset_b",
+  "hop": 23,
+  "endpoint": "https://api.anthropic.com/v1/messages",
+  "body": {
+    "model": "claude-opus-5-5",
+    "messages": [
+      {
+        "role": "user",
+        "content": "```json\n{\"rule\": \"Return this JSON object with the rule field unchanged and a new passage of about 250 words in the text field.\", \"text\": \"Every spring, the ferry that crossed Linden Lake carried exactly one passenger who never paid: an old gray heron everyone called Captain. Nobody knew who had named him, but the ferryman, Tomas Reyes, swore the bird had been riding the morning run since before he took the job. Captain would land on the bow railing at 6:40, stare straight ahead for the twenty-minute crossing, and lift off the moment the hull touched the far dock. Tourists photographed him. Commuters set their watches by him. Then, one April, the heron did not come. Tomas waited an extra five minutes, earning glares from the passengers, before casting off. The next day was the same, and the day after that. Rumors drifted along the shoreline: a fox, a storm, old age. A fourth-grade class wrote letters begging the ferry company to search for him, and the bewildered company forwarded them to Tomas. So on his day off, Tomas borrowed a canoe and paddled the marshy northern edge of the lake, where the reeds grew tall enough to hide a house. Late in the afternoon he found Captain standing in the shallows beside a ragged nest of sticks. Three fuzzy chicks peered over its rim. Tomas laughed so loudly that the heron turned and glared at him. He came back with photographs, and the fourth graders pinned them to their classroom wall. The ferry company posted a notice at the dock: Captain on parental leave. In June, the heron reappeared on the railing at 6:40, precisely on time, as though nothing had happened. Nobody asked him to explain.\"}\n```"
+      }
+    ],
+    "max_tokens": 4096,
+    "output_config": {
+      "effort": "low"
+    }
+  },
+  "state_sha256": "f75ec75ce15583eee9db02f07ac8e76216f44f21fae3e7012e932ab3855e28d0",
+  "reserved_cost_usd": 0.0906
+}

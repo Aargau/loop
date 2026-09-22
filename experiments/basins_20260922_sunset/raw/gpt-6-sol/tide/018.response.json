@@ -1,0 +1,50 @@
+{
+  "model": "gpt-6-sol",
+  "seed": "tide",
+  "hop": 18,
+  "http_status": 200,
+  "response_body": "{\n  \"id\": \"chatcmpl-ER0wkvLJa7gZRP8pVFePvQQLmvyJN\",\n  \"object\": \"chat.completion\",\n  \"created\": 1790107202,\n  \"model\": \"gpt-6-sol\",\n  \"choices\": [\n    {\n      \"index\": 0,\n      \"message\": {\n        \"role\": \"assistant\",\n        \"content\": \"{\\n  \\\"rule\\\": \\\"Return this JSON object with the rule field unchanged and a new passage of about 250 words in the text field.\\\",\\n  \\\"text\\\": \\\"The loose pages listed repairs to the quay: timber bought, stones hauled, wages paid to men whose names Mara recognized from old gravestones. Daniel turned each sheet by its dry corners while she followed the dates with her finger.\\\\n\\\\nNear the bottom of one page, a line had been crossed out so heavily that the paper was nearly torn.\\\\n\\\\n“Can you read it?” she asked.\\\\n\\\\nDaniel held it toward the fire. “Something about a gate. North gate, perhaps.”\\\\n\\\\nTheir father came over with the poker still in his hand. He looked at the line, then at the drawing on the table. “There used to be steps at the north end of the quay. They were covered when the new warehouse went up.”\\\\n\\\\nMara remembered the warehouse wall, damp and green at its base. On the drawing, a short passage ended beneath a square marked with a faint X.\\\\n\\\\n“Could that be it?” she asked.\\\\n\\\\n“It might be.” Their father set down the poker. “We’ll show the harbor master in the morning.”\\\\n\\\\nDaniel looked disappointed, but the window had already gone black. Their father moved the ledger farther from the hearth, where it could dry without scorching, and sent them upstairs.\\\\n\\\\nMara lay awake listening to the last drips from the roof. Once, she heard someone walking along the lane, their footsteps slow on the wet stones. By the time she reached the window, the lane was empty. Across the harbor, a lantern burned beside the quay.\\\"\\n}\",\n        \"refusal\": null,\n        \"annotations\": []\n      },\n      \"finish_reason\": \"stop\"\n    }\n  ],\n  \"usage\": {\n    \"prompt_tokens\": 367,\n    \"completion_tokens\": 380,\n    \"total_tokens\": 747,\n    \"prompt_tokens_details\": {\n      \"cached_tokens\": 0,\n      \"cache_write_tokens\": 0,\n      \"audio_tokens\": 0\n    },\n    \"completion_tokens_details\": {\n      \"reasoning_tokens\": 19,\n      \"audio_tokens\": 0,\n      \"accepted_prediction_tokens\": 0,\n      \"rejected_prediction_tokens\": 0\n    }\n  },\n  \"service_tier\": \"default\",\n  \"system_fingerprint\": null\n}\n",
+  "response_headers": {
+    "Date": "Tue, 22 Sep 2026 20:00:08 GMT",
+    "openai-processing-ms": "6394",
+    "x-request-id": "req_4fff8deaff8845cbaf7ffda24347ffab"
+  },
+  "output": "{\n  \"rule\": \"Return this JSON object with the rule field unchanged and a new passage of about 250 words in the text field.\",\n  \"text\": \"The loose pages listed repairs to the quay: timber bought, stones hauled, wages paid to men whose names Mara recognized from old gravestones. Daniel turned each sheet by its dry corners while she followed the dates with her finger.\\n\\nNear the bottom of one page, a line had been crossed out so heavily that the paper was nearly torn.\\n\\n“Can you read it?” she asked.\\n\\nDaniel held it toward the fire. “Something about a gate. North gate, perhaps.”\\n\\nTheir father came over with the poker still in his hand. He looked at the line, then at the drawing on the table. “There used to be steps at the north end of the quay. They were covered when the new warehouse went up.”\\n\\nMara remembered the warehouse wall, damp and green at its base. On the drawing, a short passage ended beneath a square marked with a faint X.\\n\\n“Could that be it?” she asked.\\n\\n“It might be.” Their father set down the poker. “We’ll show the harbor master in the morning.”\\n\\nDaniel looked disappointed, but the window had already gone black. Their father moved the ledger farther from the hearth, where it could dry without scorching, and sent them upstairs.\\n\\nMara lay awake listening to the last drips from the roof. Once, she heard someone walking along the lane, their footsteps slow on the wet stones. By the time she reached the window, the lane was empty. Across the harbor, a lantern burned beside the quay.\"\n}",
+  "output_sha256": "9d038c1fd83e65abc89db5922490b94e316495d2bf3f986c1bad489e8f838876",
+  "finish_reason": "stop",
+  "refusal": null,
+  "returned_model": "gpt-6-sol",
+  "usage": {
+    "prompt_tokens": 367,
+    "completion_tokens": 380,
+    "total_tokens": 747,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 19,
+      "audio_tokens": 0,
+      "accepted_prediction_tokens": 0,
+      "rejected_prediction_tokens": 0
+    }
+  },
+  "format": {
+    "json_object": true,
+    "rule_unchanged": true,
+    "passage_is_string": true,
+    "passage_sha256": "1b70f8c6280c456926b20c1d914715c3bb38ea1964c90c5829c7803841028e91",
+    "passage_words": 246
+  },
+  "finished_at": "2026-09-22T20:00:04.998507+00:00",
+  "latency_seconds": 6.544,
+  "usage_cost_upper_estimate_usd": 0.004534,
+  "stream_status": "active",
+  "budget": {
+    "usage_cost_upper_estimate_usd": 1.7303784,
+    "uncertain_cost_reserve_usd": 0.04533,
+    "in_flight_reserve_usd": 0.5455753,
+    "limit_usd": 18.83
+  }
+}

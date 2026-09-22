@@ -1,0 +1,50 @@
+{
+  "model": "gpt-6-sol",
+  "seed": "sunset_a",
+  "hop": 50,
+  "http_status": 200,
+  "response_body": "{\n  \"id\": \"chatcmpl-ER136T3m2AuTLAxXdvqOOqi0xv2jw\",\n  \"object\": \"chat.completion\",\n  \"created\": 1790107596,\n  \"model\": \"gpt-6-sol\",\n  \"choices\": [\n    {\n      \"index\": 0,\n      \"message\": {\n        \"role\": \"assistant\",\n        \"content\": \"{\\n  \\\"rule\\\": \\\"Return this JSON object with the rule field unchanged and a new passage of about 250 words in the text field.\\\",\\n  \\\"text\\\": \\\"The telephone rang so long that Imani thought Nabil might be out. Then her grandfather’s face brightened.\\\\n\\\\n“Are you sitting down?” he asked. “We found the marble.”\\\\n\\\\nImani could hear a voice through the receiver, though not the words. Her grandfather laughed and held out the phone.\\\\n\\\\n“Nabil wants to tell you something.”\\\\n\\\\nImani pressed the receiver to her ear. Nabil’s voice was scratchy and warm. “I gave that marble to your grandfather because he’d lost his favorite one. Mine had a yellow streak inside the glass. Does it still?”\\\\n\\\\nShe lifted it toward the window. In the morning light, the streak shone like a thin ribbon. “It does.”\\\\n\\\\n“Then tell him I was right. He didn’t lose it again.”\\\\n\\\\nHer grandfather shook his head when she repeated this. “Not for long, anyway.”\\\\n\\\\nBefore they hung up, Nabil promised to visit on Saturday. He asked whether the bakery still made sesame rings, and her grandfather said he would have a fresh batch waiting.\\\\n\\\\nAfterward, Imani set the marble on the counter beside Sami’s drawing. A customer came in for a loaf, and her grandfather wrapped it in paper. He seemed about to put the drawing away, but instead he propped it against the till.\\\\n\\\\n“Will Nabil want the marble back?” Imani asked.\\\\n\\\\n“I don’t think so. But we can ask him.”\\\\n\\\\nHe handed her a sesame ring, still warm enough to soften the paper bag. Imani took a bite and looked at the three boys by the fence. On Saturday, she would get to meet one of them.\\\"\\n}\",\n        \"refusal\": null,\n        \"annotations\": []\n      },\n      \"finish_reason\": \"stop\"\n    }\n  ],\n  \"usage\": {\n    \"prompt_tokens\": 384,\n    \"completion_tokens\": 437,\n    \"total_tokens\": 821,\n    \"prompt_tokens_details\": {\n      \"cached_tokens\": 0,\n      \"cache_write_tokens\": 0,\n      \"audio_tokens\": 0\n    },\n    \"completion_tokens_details\": {\n      \"reasoning_tokens\": 33,\n      \"audio_tokens\": 0,\n      \"accepted_prediction_tokens\": 0,\n      \"rejected_prediction_tokens\": 0\n    }\n  },\n  \"service_tier\": \"default\",\n  \"system_fingerprint\": null\n}\n",
+  "response_headers": {
+    "Date": "Tue, 22 Sep 2026 20:06:42 GMT",
+    "openai-processing-ms": "6121",
+    "x-request-id": "req_6cac799c990e4bb3b338165dea0dceb5"
+  },
+  "output": "{\n  \"rule\": \"Return this JSON object with the rule field unchanged and a new passage of about 250 words in the text field.\",\n  \"text\": \"The telephone rang so long that Imani thought Nabil might be out. Then her grandfather’s face brightened.\\n\\n“Are you sitting down?” he asked. “We found the marble.”\\n\\nImani could hear a voice through the receiver, though not the words. Her grandfather laughed and held out the phone.\\n\\n“Nabil wants to tell you something.”\\n\\nImani pressed the receiver to her ear. Nabil’s voice was scratchy and warm. “I gave that marble to your grandfather because he’d lost his favorite one. Mine had a yellow streak inside the glass. Does it still?”\\n\\nShe lifted it toward the window. In the morning light, the streak shone like a thin ribbon. “It does.”\\n\\n“Then tell him I was right. He didn’t lose it again.”\\n\\nHer grandfather shook his head when she repeated this. “Not for long, anyway.”\\n\\nBefore they hung up, Nabil promised to visit on Saturday. He asked whether the bakery still made sesame rings, and her grandfather said he would have a fresh batch waiting.\\n\\nAfterward, Imani set the marble on the counter beside Sami’s drawing. A customer came in for a loaf, and her grandfather wrapped it in paper. He seemed about to put the drawing away, but instead he propped it against the till.\\n\\n“Will Nabil want the marble back?” Imani asked.\\n\\n“I don’t think so. But we can ask him.”\\n\\nHe handed her a sesame ring, still warm enough to soften the paper bag. Imani took a bite and looked at the three boys by the fence. On Saturday, she would get to meet one of them.\"\n}",
+  "output_sha256": "150fcfb03e900be56a95ca6b0e5393d0f8f5f6e43bec9c8f26c24af675e0297b",
+  "finish_reason": "stop",
+  "refusal": null,
+  "returned_model": "gpt-6-sol",
+  "usage": {
+    "prompt_tokens": 384,
+    "completion_tokens": 437,
+    "total_tokens": 821,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 33,
+      "audio_tokens": 0,
+      "accepted_prediction_tokens": 0,
+      "rejected_prediction_tokens": 0
+    }
+  },
+  "format": {
+    "json_object": true,
+    "rule_unchanged": true,
+    "passage_is_string": true,
+    "passage_sha256": "70362214781a08300ca1dacfeb5eecdd6e18ec81f06be2d72efaad113400bd13",
+    "passage_words": 258
+  },
+  "finished_at": "2026-09-22T20:06:38.702963+00:00",
+  "latency_seconds": 6.3719,
+  "usage_cost_upper_estimate_usd": 0.005138,
+  "stream_status": "active",
+  "budget": {
+    "usage_cost_upper_estimate_usd": 4.2517735,
+    "uncertain_cost_reserve_usd": 0.04533,
+    "in_flight_reserve_usd": 0.5471198,
+    "limit_usd": 18.83
+  }
+}

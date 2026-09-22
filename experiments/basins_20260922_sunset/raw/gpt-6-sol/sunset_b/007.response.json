@@ -1,0 +1,50 @@
+{
+  "model": "gpt-6-sol",
+  "seed": "sunset_b",
+  "hop": 7,
+  "http_status": 200,
+  "response_body": "{\n  \"id\": \"chatcmpl-ER0tzSvdbRjjoqzhriagXjCY9zjh8\",\n  \"object\": \"chat.completion\",\n  \"created\": 1790107031,\n  \"model\": \"gpt-6-sol\",\n  \"choices\": [\n    {\n      \"index\": 0,\n      \"message\": {\n        \"role\": \"assistant\",\n        \"content\": \"{\\\"rule\\\":\\\"Return this JSON object with the rule field unchanged and a new passage of about 250 words in the text field.\\\",\\\"text\\\":\\\"That evening, Mara heard a soft thud outside her bedroom window. She lay still for a moment, listening for a second one, then went downstairs.\\\\n\\\\nThe kitchen light was on. Her mother stood at the sink in her dressing gown, rinsing their plates.\\\\n\\\\n“The apple?” Mara asked.\\\\n\\\\n“I heard it too.”\\\\n\\\\nThey went out with a torch. The air smelled of damp leaves, and the beam caught on the rake Mara had left across the path. Beneath the tree lay the apple her mother had pointed out. One side had split when it landed, exposing pale flesh already turning brown.\\\\n\\\\nHer mother picked it up. “Good enough for breakfast.”\\\\n\\\\n“You were right,” Mara said.\\\\n\\\\n“About this one.” Her mother turned the apple over in her hand. “I’ve been wrong about plenty of the others.”\\\\n\\\\nInside, she cut away the bruised part while Mara found a bowl. They ate the rest in thin slices, standing at the counter. It was sharper than the apples in the cake.\\\\n\\\\nMara looked toward the recipe card, still beside the empty tin. “We should put that away before it gets stained.”\\\\n\\\\nHer mother dried her hands and opened the drawer where the cards lived. She paused, reading Mara’s addition once more, then slipped the card behind the others.\\\\n\\\\nIn the morning, Mara fetched the rake before the grass was wet. Her mother joined her after breakfast, carrying two mugs of tea. They worked until the heaps had become one pile beneath the tree. Every so often, Mara looked up, but the remaining apples held fast.\\\"}\",\n        \"refusal\": null,\n        \"annotations\": []\n      },\n      \"finish_reason\": \"stop\"\n    }\n  ],\n  \"usage\": {\n    \"prompt_tokens\": 365,\n    \"completion_tokens\": 414,\n    \"total_tokens\": 779,\n    \"prompt_tokens_details\": {\n      \"cached_tokens\": 0,\n      \"cache_write_tokens\": 0,\n      \"audio_tokens\": 0\n    },\n    \"completion_tokens_details\": {\n      \"reasoning_tokens\": 35,\n      \"audio_tokens\": 0,\n      \"accepted_prediction_tokens\": 0,\n      \"rejected_prediction_tokens\": 0\n    }\n  },\n  \"service_tier\": \"default\",\n  \"system_fingerprint\": null\n}\n",
+  "response_headers": {
+    "Date": "Tue, 22 Sep 2026 19:57:17 GMT",
+    "openai-processing-ms": "6018",
+    "x-request-id": "req_80f8620ee9b340a58ee049569c7fb5fd"
+  },
+  "output": "{\"rule\":\"Return this JSON object with the rule field unchanged and a new passage of about 250 words in the text field.\",\"text\":\"That evening, Mara heard a soft thud outside her bedroom window. She lay still for a moment, listening for a second one, then went downstairs.\\n\\nThe kitchen light was on. Her mother stood at the sink in her dressing gown, rinsing their plates.\\n\\n“The apple?” Mara asked.\\n\\n“I heard it too.”\\n\\nThey went out with a torch. The air smelled of damp leaves, and the beam caught on the rake Mara had left across the path. Beneath the tree lay the apple her mother had pointed out. One side had split when it landed, exposing pale flesh already turning brown.\\n\\nHer mother picked it up. “Good enough for breakfast.”\\n\\n“You were right,” Mara said.\\n\\n“About this one.” Her mother turned the apple over in her hand. “I’ve been wrong about plenty of the others.”\\n\\nInside, she cut away the bruised part while Mara found a bowl. They ate the rest in thin slices, standing at the counter. It was sharper than the apples in the cake.\\n\\nMara looked toward the recipe card, still beside the empty tin. “We should put that away before it gets stained.”\\n\\nHer mother dried her hands and opened the drawer where the cards lived. She paused, reading Mara’s addition once more, then slipped the card behind the others.\\n\\nIn the morning, Mara fetched the rake before the grass was wet. Her mother joined her after breakfast, carrying two mugs of tea. They worked until the heaps had become one pile beneath the tree. Every so often, Mara looked up, but the remaining apples held fast.\"}",
+  "output_sha256": "6c4437ea553600e1585643053c75c4a1d5178c68503d093dfc015e2cac18ac95",
+  "finish_reason": "stop",
+  "refusal": null,
+  "returned_model": "gpt-6-sol",
+  "usage": {
+    "prompt_tokens": 365,
+    "completion_tokens": 414,
+    "total_tokens": 779,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 35,
+      "audio_tokens": 0,
+      "accepted_prediction_tokens": 0,
+      "rejected_prediction_tokens": 0
+    }
+  },
+  "format": {
+    "json_object": true,
+    "rule_unchanged": true,
+    "passage_is_string": true,
+    "passage_sha256": "e2f2e673d2ec810457368c53f1bd58124444ee1b37e3bcd3f1f540cf12cfc8ff",
+    "passage_words": 260
+  },
+  "finished_at": "2026-09-22T19:57:13.221459+00:00",
+  "latency_seconds": 6.1709,
+  "usage_cost_upper_estimate_usd": 0.00487,
+  "stream_status": "active",
+  "budget": {
+    "usage_cost_upper_estimate_usd": 0.6670924,
+    "uncertain_cost_reserve_usd": 0.0,
+    "in_flight_reserve_usd": 0.5453713,
+    "limit_usd": 18.83
+  }
+}

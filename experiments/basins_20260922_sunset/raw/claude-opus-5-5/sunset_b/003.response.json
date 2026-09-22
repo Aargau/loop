@@ -1,0 +1,45 @@
+{
+  "model": "claude-opus-5-5",
+  "seed": "sunset_b",
+  "hop": 3,
+  "http_status": 200,
+  "response_body": "{\"model\":\"claude-opus-5-5\",\"id\":\"msg_011CfK4qsaRTdrRQaxHFruqi\",\"type\":\"message\",\"role\":\"assistant\",\"content\":[{\"type\":\"text\",\"text\":\"```json\\n{\\\"rule\\\": \\\"Return this JSON object with the rule field unchanged and a new passage of about 250 words in the text field.\\\", \\\"text\\\": \\\"By late afternoon the snow had turned the color of weak tea, and the light slanted low across the rooftops as if it, too, were tired. Mara stood at the edge of the frozen pond with a thermos cradled in her mittens, watching the skaters trace their looping signatures across the ice. Some glided with effortless grace, arms folded behind their backs like herons; others wobbled and flailed, laughing each time they fell. An old man in a knitted cap moved slowly along the far shore, sweeping a path with a wide broom, pausing now and then to wave at children who called his name. The air smelled of woodsmoke and cold metal. Somewhere behind her, a vendor was selling roasted chestnuts, and the scent drifted over in warm, sweet ribbons. Mara unscrewed the thermos and poured cocoa into the lid, steam curling up and fogging her glasses for a moment. She had not skated since she was twelve, the winter her grandmother had held her hands and pulled her gently backward across this very pond, promising she would not let go. She had kept that promise until Mara no longer needed it. Now the skates hung in her closet, laces stiff with age, blades dulled by years of waiting. She sipped the cocoa and considered them. The sun slipped lower, gilding the ice with streaks of amber and rose. A girl nearby took her first shaky strides, clutching her mother's sleeve. Mara watched, then smiled, and decided that tomorrow she would bring the skates.\\\"}\\n```\"}],\"container\":null,\"stop_reason\":\"end_turn\",\"stop_sequence\":null,\"stop_details\":null,\"usage\":{\"input_tokens\":524,\"cache_creation_input_tokens\":0,\"cache_read_input_tokens\":0,\"cache_creation\":{\"ephemeral_5m_input_tokens\":0,\"ephemeral_1h_input_tokens\":0},\"output_tokens\":534,\"output_tokens_details\":{\"thinking_tokens\":0},\"service_tier\":\"standard\",\"inference_geo\":\"global\"}}",
+  "response_headers": {
+    "Date": "Tue, 22 Sep 2026 19:56:40 GMT",
+    "request-id": "req_011CfK4qs98QeJucNP17vQf6"
+  },
+  "output": "```json\n{\"rule\": \"Return this JSON object with the rule field unchanged and a new passage of about 250 words in the text field.\", \"text\": \"By late afternoon the snow had turned the color of weak tea, and the light slanted low across the rooftops as if it, too, were tired. Mara stood at the edge of the frozen pond with a thermos cradled in her mittens, watching the skaters trace their looping signatures across the ice. Some glided with effortless grace, arms folded behind their backs like herons; others wobbled and flailed, laughing each time they fell. An old man in a knitted cap moved slowly along the far shore, sweeping a path with a wide broom, pausing now and then to wave at children who called his name. The air smelled of woodsmoke and cold metal. Somewhere behind her, a vendor was selling roasted chestnuts, and the scent drifted over in warm, sweet ribbons. Mara unscrewed the thermos and poured cocoa into the lid, steam curling up and fogging her glasses for a moment. She had not skated since she was twelve, the winter her grandmother had held her hands and pulled her gently backward across this very pond, promising she would not let go. She had kept that promise until Mara no longer needed it. Now the skates hung in her closet, laces stiff with age, blades dulled by years of waiting. She sipped the cocoa and considered them. The sun slipped lower, gilding the ice with streaks of amber and rose. A girl nearby took her first shaky strides, clutching her mother's sleeve. Mara watched, then smiled, and decided that tomorrow she would bring the skates.\"}\n```",
+  "output_sha256": "0e4b8f5fcdcfb418a665b64ae9d79579b07dacb147badac0419c79b41df7a5f2",
+  "finish_reason": "end_turn",
+  "refusal": null,
+  "returned_model": "claude-opus-5-5",
+  "usage": {
+    "input_tokens": 524,
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 0,
+    "cache_creation": {
+      "ephemeral_5m_input_tokens": 0,
+      "ephemeral_1h_input_tokens": 0
+    },
+    "output_tokens": 534,
+    "output_tokens_details": {
+      "thinking_tokens": 0
+    },
+    "service_tier": "standard",
+    "inference_geo": "global"
+  },
+  "format": {
+    "json_object": false,
+    "rule_unchanged": false
+  },
+  "finished_at": "2026-09-22T19:56:36.085810+00:00",
+  "latency_seconds": 9.7485,
+  "usage_cost_upper_estimate_usd": 0.012776,
+  "stream_status": "active",
+  "budget": {
+    "usage_cost_upper_estimate_usd": 0.4508716,
+    "uncertain_cost_reserve_usd": 0.0,
+    "in_flight_reserve_usd": 0.4997684,
+    "limit_usd": 18.83
+  }
+}

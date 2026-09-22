@@ -1,0 +1,47 @@
+{
+  "model": "gpt-6-luna",
+  "seed": "tide",
+  "hop": 43,
+  "http_status": 200,
+  "response_body": "{\n  \"id\": \"chatcmpl-ER11LlvmGUeav2uiTZOqIzfB3l88q\",\n  \"object\": \"chat.completion\",\n  \"created\": 1790107487,\n  \"model\": \"gpt-6-luna\",\n  \"choices\": [\n    {\n      \"index\": 0,\n      \"message\": {\n        \"role\": \"assistant\",\n        \"content\": \"Hi! I can help with writing, research, brainstorming, coding, or answering questions. What would you like to work on?\",\n        \"refusal\": null,\n        \"annotations\": []\n      },\n      \"finish_reason\": \"stop\"\n    }\n  ],\n  \"usage\": {\n    \"prompt_tokens\": 16,\n    \"completion_tokens\": 68,\n    \"total_tokens\": 84,\n    \"prompt_tokens_details\": {\n      \"cached_tokens\": 0,\n      \"cache_write_tokens\": 0,\n      \"audio_tokens\": 0\n    },\n    \"completion_tokens_details\": {\n      \"reasoning_tokens\": 33,\n      \"audio_tokens\": 0,\n      \"accepted_prediction_tokens\": 0,\n      \"rejected_prediction_tokens\": 0\n    }\n  },\n  \"service_tier\": \"default\",\n  \"system_fingerprint\": null\n}\n",
+  "response_headers": {
+    "Date": "Tue, 22 Sep 2026 20:04:49 GMT",
+    "openai-processing-ms": "1490",
+    "x-request-id": "req_f456f001b8e7454796fae64cfcc3fea9"
+  },
+  "output": "Hi! I can help with writing, research, brainstorming, coding, or answering questions. What would you like to work on?",
+  "output_sha256": "cc32726f550a5a4a44cc0b9c01f4d7610af792ec1b1fe0ad085ad9077b5339a5",
+  "finish_reason": "stop",
+  "refusal": null,
+  "returned_model": "gpt-6-luna",
+  "usage": {
+    "prompt_tokens": 16,
+    "completion_tokens": 68,
+    "total_tokens": 84,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 33,
+      "audio_tokens": 0,
+      "accepted_prediction_tokens": 0,
+      "rejected_prediction_tokens": 0
+    }
+  },
+  "format": {
+    "json_object": false,
+    "rule_unchanged": false
+  },
+  "finished_at": "2026-09-22T20:04:45.179225+00:00",
+  "latency_seconds": 1.6064,
+  "usage_cost_upper_estimate_usd": 3.5600000000000005e-05,
+  "stream_status": "active",
+  "budget": {
+    "usage_cost_upper_estimate_usd": 3.5265709,
+    "uncertain_cost_reserve_usd": 0.04533,
+    "in_flight_reserve_usd": 0.589378,
+    "limit_usd": 18.83
+  }
+}

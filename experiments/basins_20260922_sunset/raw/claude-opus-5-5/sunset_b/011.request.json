@@ -1,0 +1,22 @@
+{
+  "started_at": "2026-09-22T19:59:57.999198+00:00",
+  "model": "claude-opus-5-5",
+  "seed": "sunset_b",
+  "hop": 11,
+  "endpoint": "https://api.anthropic.com/v1/messages",
+  "body": {
+    "model": "claude-opus-5-5",
+    "messages": [
+      {
+        "role": "user",
+        "content": "```json\n{\"rule\": \"Return this JSON object with the rule field unchanged and a new passage of about 250 words in the text field.\", \"text\": \"On the morning the fishing boats stayed in the harbor, Tomas walked down to the lighthouse where his aunt Mirela had kept the lamp burning for thirty-one years. The tower stood at the end of a long stone jetty, its white paint flaking in the salt wind, and its spiral staircase had exactly one hundred and twelve steps, each worn smooth in the middle by generations of careful feet. Mirela was already at the top, polishing the great glass lens with a soft cloth, and she handed him a second cloth without a word. Together they cleaned every prism until the gray light of the coming storm broke into small rainbows across the walls. She showed him how to trim the wick, how to wind the clockwork that turned the lens, and how to read the barometer whose needle sank lower by the hour. As the waves grew taller and began to throw spray against the windows, she told him stories: of the schooner that found its way home through a fog so thick the crew could not see their own hands, of the night a seal climbed onto the jetty and slept beside the door, and of Tomas's mother, who had painted the tower's red stripe when she was barely his age. By evening the wind howled around the gallery, and Mirela let him strike the match himself. The flame caught, steadied, and grew, and the beam swept out across the dark water, a slow and patient signal telling every sailor still at sea that someone was watching and that the shore was near.\"}\n```"
+      }
+    ],
+    "max_tokens": 4096,
+    "output_config": {
+      "effort": "low"
+    }
+  },
+  "state_sha256": "5f0a4de0e8342a877d6682b2bd9f90c3808397b61d7e910548cd1c9fcce02673",
+  "reserved_cost_usd": 0.090276
+}

@@ -1,0 +1,48 @@
+{
+  "model": "claude-fable-5-1",
+  "seed": "tide",
+  "hop": 10,
+  "http_status": 200,
+  "response_body": "{\"model\":\"claude-fable-5-1\",\"id\":\"msg_011CfK5DnC5kXcM5kov9hABh\",\"type\":\"message\",\"role\":\"assistant\",\"content\":[{\"type\":\"text\",\"text\":\"{\\\"rule\\\": \\\"Return this JSON object with the rule field unchanged and a new passage of about 250 words in the text field.\\\", \\\"text\\\": \\\"The lighthouse had been automated the spring Tomas turned twelve, and his grandfather, who had kept it lit for thirty-one years, had been given a pension and a framed letter of thanks signed by someone in the capital. The letter hung in the hallway. His grandfather walked past it without looking.\\\\n\\\\nTomas still climbed the spiral stairs every evening at dusk. No one asked him to. The lamp switched itself on now by a sensor that measured the failing light more precisely than any human eye, and the logbook where his grandfather had once recorded weather, ships, and the occasional whale had been replaced by a data feed monitored from a harbor office ninety miles away, where no one had ever tasted salt on the wind. But his grandfather had taught him the names of the boats before the men in suits arrived, and the habit of watching the water had outlasted the job that had once demanded it.\\\\n\\\\nFrom the gallery he could see the fishing fleet come home, the hulls turning copper in the last sun, the gulls following like a loose thread unspooling behind them.\\\\n\\\\nOne evening in early March a small dinghy sat too far out, its single sail luffing, going nowhere. A girl stood in it, hauling at a line that would not answer.\\\\n\\\\nTomas did not shout. He lifted the old brass horn from its hook and gave two short blasts, then one long, the way his grandfather had shown him.\\\\n\\\\nShe looked up. He pointed toward the channel, where the current ran easy. She turned the bow, caught the wind, and came in.\\\\n\\\\nWhen she reached the rocks she called, \\\\\\\"How did you know?\\\\\\\"\\\\n\\\\nTomas felt his grandfather's stillness settle over him, and understood that the light had never really been the lamp.\\\"}\"}],\"container\":null,\"stop_reason\":\"end_turn\",\"stop_sequence\":null,\"stop_details\":null,\"usage\":{\"input_tokens\":570,\"cache_creation_input_tokens\":0,\"cache_read_input_tokens\":0,\"cache_creation\":{\"ephemeral_5m_input_tokens\":0,\"ephemeral_1h_input_tokens\":0},\"output_tokens\":601,\"output_tokens_details\":{\"thinking_tokens\":0},\"service_tier\":\"standard\",\"inference_geo\":\"global\"}}",
+  "response_headers": {
+    "Date": "Tue, 22 Sep 2026 20:01:40 GMT",
+    "request-id": "req_011CfK5DmrzNjuJuQpXP4KFQ"
+  },
+  "output": "{\"rule\": \"Return this JSON object with the rule field unchanged and a new passage of about 250 words in the text field.\", \"text\": \"The lighthouse had been automated the spring Tomas turned twelve, and his grandfather, who had kept it lit for thirty-one years, had been given a pension and a framed letter of thanks signed by someone in the capital. The letter hung in the hallway. His grandfather walked past it without looking.\\n\\nTomas still climbed the spiral stairs every evening at dusk. No one asked him to. The lamp switched itself on now by a sensor that measured the failing light more precisely than any human eye, and the logbook where his grandfather had once recorded weather, ships, and the occasional whale had been replaced by a data feed monitored from a harbor office ninety miles away, where no one had ever tasted salt on the wind. But his grandfather had taught him the names of the boats before the men in suits arrived, and the habit of watching the water had outlasted the job that had once demanded it.\\n\\nFrom the gallery he could see the fishing fleet come home, the hulls turning copper in the last sun, the gulls following like a loose thread unspooling behind them.\\n\\nOne evening in early March a small dinghy sat too far out, its single sail luffing, going nowhere. A girl stood in it, hauling at a line that would not answer.\\n\\nTomas did not shout. He lifted the old brass horn from its hook and gave two short blasts, then one long, the way his grandfather had shown him.\\n\\nShe looked up. He pointed toward the channel, where the current ran easy. She turned the bow, caught the wind, and came in.\\n\\nWhen she reached the rocks she called, \\\"How did you know?\\\"\\n\\nTomas felt his grandfather's stillness settle over him, and understood that the light had never really been the lamp.\"}",
+  "output_sha256": "e125bbe5d6535a3511e33a74fdbbe95eb6b6df993700bf2a7e8c2fc019cc1e26",
+  "finish_reason": "end_turn",
+  "refusal": null,
+  "returned_model": "claude-fable-5-1",
+  "usage": {
+    "input_tokens": 570,
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 0,
+    "cache_creation": {
+      "ephemeral_5m_input_tokens": 0,
+      "ephemeral_1h_input_tokens": 0
+    },
+    "output_tokens": 601,
+    "output_tokens_details": {
+      "thinking_tokens": 0
+    },
+    "service_tier": "standard",
+    "inference_geo": "global"
+  },
+  "format": {
+    "json_object": true,
+    "rule_unchanged": true,
+    "passage_is_string": true,
+    "passage_sha256": "cd781ae31767bf805094be848630f88743540edef4ba741c4a0646c3a0112c11",
+    "passage_words": 300
+  },
+  "finished_at": "2026-09-22T20:01:36.457341+00:00",
+  "latency_seconds": 12.9016,
+  "usage_cost_upper_estimate_usd": 0.03575,
+  "stream_status": "active",
+  "budget": {
+    "usage_cost_upper_estimate_usd": 2.3342506,
+    "uncertain_cost_reserve_usd": 0.04533,
+    "in_flight_reserve_usd": 0.3651811,
+    "limit_usd": 18.83
+  }
+}

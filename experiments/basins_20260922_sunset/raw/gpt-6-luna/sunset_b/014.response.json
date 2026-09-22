@@ -1,0 +1,50 @@
+{
+  "model": "gpt-6-luna",
+  "seed": "sunset_b",
+  "hop": 14,
+  "http_status": 200,
+  "response_body": "{\n  \"id\": \"chatcmpl-ER0vHEJXD5BjeFfWDIr99YW6B5OKO\",\n  \"object\": \"chat.completion\",\n  \"created\": 1790107111,\n  \"model\": \"gpt-6-luna\",\n  \"choices\": [\n    {\n      \"index\": 0,\n      \"message\": {\n        \"role\": \"assistant\",\n        \"content\": \"{\\\"rule\\\":\\\"Return this JSON object with the rule field unchanged and a new passage of about 250 words in the text field.\\\",\\\"text\\\":\\\"At the end of Willow Street stood a greenhouse that nobody seemed to own. Its panes were clouded with age, and ivy had climbed halfway over the door. Yet every spring, bright green shoots appeared inside.\\\\n\\\\nNina first noticed them while walking home from school. She peered through a cracked pane and saw rows of tiny pots, each marked with a name. Some names belonged to people she knew; others belonged to strangers. On the shelf, a notebook listed planting dates and brief notes: “For Mr. Alvarez, who misses his garden,” and “For the new family on Birch Lane.”\\\\n\\\\nThe next afternoon, Nina returned with a pair of gloves. She found a watering can and gave the seedlings a drink. Then she turned to the notebook and added her own name beside a pot of blue cornflowers.\\\\n\\\\nA week later, an elderly man appeared at the gate. He introduced himself as Mr. Alvarez and said he had once tended the greenhouse with his wife. After she died, he had stopped coming. Nina showed him the notebook. His eyes rested on the note beside the tomatoes, and he smiled.\\\\n\\\\nSoon, other neighbors began to visit. A young father repaired the broken door. The Birch Lane family planted beans, while a retired teacher brought a box of flower seeds. Nina made a sign for the gate: “Take what you need. Leave something growing.”\\\\n\\\\nBy summer, the greenhouse was full of color and conversation. Nina still came after school, but she no longer felt she was tending it alone. In the notebook, beneath the newest names, someone had written: “A garden is a promise we make together.”\\\"}\",\n        \"refusal\": null,\n        \"annotations\": []\n      },\n      \"finish_reason\": \"stop\"\n    }\n  ],\n  \"usage\": {\n    \"prompt_tokens\": 340,\n    \"completion_tokens\": 433,\n    \"total_tokens\": 773,\n    \"prompt_tokens_details\": {\n      \"cached_tokens\": 0,\n      \"cache_write_tokens\": 0,\n      \"audio_tokens\": 0\n    },\n    \"completion_tokens_details\": {\n      \"reasoning_tokens\": 56,\n      \"audio_tokens\": 0,\n      \"accepted_prediction_tokens\": 0,\n      \"rejected_prediction_tokens\": 0\n    }\n  },\n  \"service_tier\": \"default\",\n  \"system_fingerprint\": null\n}\n",
+  "response_headers": {
+    "Date": "Tue, 22 Sep 2026 19:58:36 GMT",
+    "openai-processing-ms": "5881",
+    "x-request-id": "req_a245af10e02348288c66e5bca9d675ff"
+  },
+  "output": "{\"rule\":\"Return this JSON object with the rule field unchanged and a new passage of about 250 words in the text field.\",\"text\":\"At the end of Willow Street stood a greenhouse that nobody seemed to own. Its panes were clouded with age, and ivy had climbed halfway over the door. Yet every spring, bright green shoots appeared inside.\\n\\nNina first noticed them while walking home from school. She peered through a cracked pane and saw rows of tiny pots, each marked with a name. Some names belonged to people she knew; others belonged to strangers. On the shelf, a notebook listed planting dates and brief notes: “For Mr. Alvarez, who misses his garden,” and “For the new family on Birch Lane.”\\n\\nThe next afternoon, Nina returned with a pair of gloves. She found a watering can and gave the seedlings a drink. Then she turned to the notebook and added her own name beside a pot of blue cornflowers.\\n\\nA week later, an elderly man appeared at the gate. He introduced himself as Mr. Alvarez and said he had once tended the greenhouse with his wife. After she died, he had stopped coming. Nina showed him the notebook. His eyes rested on the note beside the tomatoes, and he smiled.\\n\\nSoon, other neighbors began to visit. A young father repaired the broken door. The Birch Lane family planted beans, while a retired teacher brought a box of flower seeds. Nina made a sign for the gate: “Take what you need. Leave something growing.”\\n\\nBy summer, the greenhouse was full of color and conversation. Nina still came after school, but she no longer felt she was tending it alone. In the notebook, beneath the newest names, someone had written: “A garden is a promise we make together.”\"}",
+  "output_sha256": "70351d0af1dd909a37ad880494753ed368cff9984db89aa8f366c7fa604345b5",
+  "finish_reason": "stop",
+  "refusal": null,
+  "returned_model": "gpt-6-luna",
+  "usage": {
+    "prompt_tokens": 340,
+    "completion_tokens": 433,
+    "total_tokens": 773,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 56,
+      "audio_tokens": 0,
+      "accepted_prediction_tokens": 0,
+      "rejected_prediction_tokens": 0
+    }
+  },
+  "format": {
+    "json_object": true,
+    "rule_unchanged": true,
+    "passage_is_string": true,
+    "passage_sha256": "a66a137ac34b54ae6afca0cc14f061b6f4088ed26bd796ab7a2cfeeac7636093",
+    "passage_words": 274
+  },
+  "finished_at": "2026-09-22T19:58:32.868896+00:00",
+  "latency_seconds": 6.0274,
+  "usage_cost_upper_estimate_usd": 0.0002505,
+  "stream_status": "active",
+  "budget": {
+    "usage_cost_upper_estimate_usd": 1.1447099,
+    "uncertain_cost_reserve_usd": 0.04533,
+    "in_flight_reserve_usd": 0.58933,
+    "limit_usd": 18.83
+  }
+}

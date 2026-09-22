@@ -1,0 +1,50 @@
+{
+  "model": "gpt-6-luna",
+  "seed": "sunset_a",
+  "hop": 57,
+  "http_status": 200,
+  "response_body": "{\n  \"id\": \"chatcmpl-ER14KtVwjkduPCTD11DOCBTgfjQmj\",\n  \"object\": \"chat.completion\",\n  \"created\": 1790107672,\n  \"model\": \"gpt-6-luna\",\n  \"choices\": [\n    {\n      \"index\": 0,\n      \"message\": {\n        \"role\": \"assistant\",\n        \"content\": \"{\\\"rule\\\":\\\"Return this JSON object with the rule field unchanged and a new passage of about 250 words in the text field.\\\",\\\"text\\\":\\\"When the town clock stopped at 3:17, everyone blamed the storm. Rain had rattled the windows all afternoon, and a flash of lightning had sent the lights flickering across the square. But twelve-year-old Mateo knew the clock had stopped before the thunder began. He had been watching its hands from the library steps.\\\\n\\\\nThe next morning, he climbed the narrow staircase inside the clock tower with Mrs. Chen, the town’s retired clockmaker. Dust softened every surface, and the air smelled of old wood and machine oil. At the top, the clock’s gears stood still beneath a little brass door.\\\\n\\\\nMrs. Chen examined the mechanism. “A spring has slipped,” she said. “I can fix it, but I need someone to hold this lamp.”\\\\n\\\\nMateo steadied the lantern while she worked. He listened as she explained how each gear passed motion to the next, like runners handing a baton along a track. At last, she eased the spring back into place and tightened a small screw.\\\\n\\\\nThe clock gave a quiet click. Its gears began to turn.\\\\n\\\\nThey hurried outside just as the minute hand moved forward. A few people in the square noticed and cheered. The bell rang once, then again, its clear notes carrying over the rooftops.\\\\n\\\\nOn the way down, Mateo asked how Mrs. Chen had learned to repair clocks.\\\\n\\\\n“My father taught me,” she said. “And I taught you today. That’s how useful things keep working.”\\\\n\\\\nFrom then on, Mateo visited the tower every Saturday. He learned to clean the gears and oil the joints. The clock still marked the town’s hours, but now it also counted the afternoons they spent learning together.\\\"}\",\n        \"refusal\": null,\n        \"annotations\": []\n      },\n      \"finish_reason\": \"stop\"\n    }\n  ],\n  \"usage\": {\n    \"prompt_tokens\": 389,\n    \"completion_tokens\": 444,\n    \"total_tokens\": 833,\n    \"prompt_tokens_details\": {\n      \"cached_tokens\": 0,\n      \"cache_write_tokens\": 0,\n      \"audio_tokens\": 0\n    },\n    \"completion_tokens_details\": {\n      \"reasoning_tokens\": 50,\n      \"audio_tokens\": 0,\n      \"accepted_prediction_tokens\": 0,\n      \"rejected_prediction_tokens\": 0\n    }\n  },\n  \"service_tier\": \"default\",\n  \"system_fingerprint\": null\n}\n",
+  "response_headers": {
+    "Date": "Tue, 22 Sep 2026 20:07:57 GMT",
+    "openai-processing-ms": "5011",
+    "x-request-id": "req_49fe4cb3f8474e9ea6d9904093fd5869"
+  },
+  "output": "{\"rule\":\"Return this JSON object with the rule field unchanged and a new passage of about 250 words in the text field.\",\"text\":\"When the town clock stopped at 3:17, everyone blamed the storm. Rain had rattled the windows all afternoon, and a flash of lightning had sent the lights flickering across the square. But twelve-year-old Mateo knew the clock had stopped before the thunder began. He had been watching its hands from the library steps.\\n\\nThe next morning, he climbed the narrow staircase inside the clock tower with Mrs. Chen, the town’s retired clockmaker. Dust softened every surface, and the air smelled of old wood and machine oil. At the top, the clock’s gears stood still beneath a little brass door.\\n\\nMrs. Chen examined the mechanism. “A spring has slipped,” she said. “I can fix it, but I need someone to hold this lamp.”\\n\\nMateo steadied the lantern while she worked. He listened as she explained how each gear passed motion to the next, like runners handing a baton along a track. At last, she eased the spring back into place and tightened a small screw.\\n\\nThe clock gave a quiet click. Its gears began to turn.\\n\\nThey hurried outside just as the minute hand moved forward. A few people in the square noticed and cheered. The bell rang once, then again, its clear notes carrying over the rooftops.\\n\\nOn the way down, Mateo asked how Mrs. Chen had learned to repair clocks.\\n\\n“My father taught me,” she said. “And I taught you today. That’s how useful things keep working.”\\n\\nFrom then on, Mateo visited the tower every Saturday. He learned to clean the gears and oil the joints. The clock still marked the town’s hours, but now it also counted the afternoons they spent learning together.\"}",
+  "output_sha256": "a344d67999c7aa3c9414e97318b383313e0d5983afa0fcc1075c9bd4bc01a423",
+  "finish_reason": "stop",
+  "refusal": null,
+  "returned_model": "gpt-6-luna",
+  "usage": {
+    "prompt_tokens": 389,
+    "completion_tokens": 444,
+    "total_tokens": 833,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 50,
+      "audio_tokens": 0,
+      "accepted_prediction_tokens": 0,
+      "rejected_prediction_tokens": 0
+    }
+  },
+  "format": {
+    "json_object": true,
+    "rule_unchanged": true,
+    "passage_is_string": true,
+    "passage_sha256": "4a7a3d9bf595fe878b5ab3a6bd4241c72b7c5a9246482cbfbd316705ff190535",
+    "passage_words": 275
+  },
+  "finished_at": "2026-09-22T20:07:53.869462+00:00",
+  "latency_seconds": 5.1141,
+  "usage_cost_upper_estimate_usd": 0.0002609,
+  "stream_status": "active",
+  "budget": {
+    "usage_cost_upper_estimate_usd": 4.6920972,
+    "uncertain_cost_reserve_usd": 0.04533,
+    "in_flight_reserve_usd": 0.589904,
+    "limit_usd": 18.83
+  }
+}

@@ -1,0 +1,50 @@
+{
+  "model": "gpt-6-astra",
+  "seed": "sunset_a",
+  "hop": 2,
+  "http_status": 200,
+  "response_body": "{\n  \"id\": \"chatcmpl-ER0sptyoPCK5TpBX1nZSxjpTkLWEh\",\n  \"object\": \"chat.completion\",\n  \"created\": 1790106959,\n  \"model\": \"gpt-6-astra\",\n  \"choices\": [\n    {\n      \"index\": 0,\n      \"message\": {\n        \"role\": \"assistant\",\n        \"content\": \"{\\n  \\\"rule\\\": \\\"Return this JSON object with the rule field unchanged and a new passage of about 250 words in the text field.\\\",\\n  \\\"text\\\": \\\"By morning, the storm had left the harbor full of strange things: a red bucket, half a gate, a wooden chair floating upright as though someone might sit down.\\\\n\\\\nElias found the violin case caught beneath the lowest rung of the pier ladder.\\\\n\\\\nHe hauled it up carefully. Water streamed from its seams onto his boots. Inside, the blue lining was soaked, but there was no violin—only a folded map and a pair of woolen gloves.\\\\n\\\\n“Anything worth keeping?” called June from her boat.\\\\n\\\\n“Depends who lost it.”\\\\n\\\\nShe climbed onto the pier and crouched beside him. One glove had been repaired with yellow thread. June touched the stitching, then withdrew her hand.\\\\n\\\\n“My mother used to do that,” she said. “Said matching thread was a waste of daylight.”\\\\n\\\\nElias unfolded the map against his knee. It showed the coast as it had been decades earlier, before the road reached the lighthouse. Someone had circled a cove north of the village.\\\\n\\\\nJune looked toward the breakwater.\\\\n\\\\n“There was a house there once.”\\\\n\\\\n“Whose?”\\\\n\\\\nShe took a moment to answer. “Ours.”\\\\n\\\\nAround them, the harbor resumed its ordinary noises: ropes tapping masts, an engine coughing awake, gulls quarreling over something invisible.\\\\n\\\\nElias offered her the gloves. She pressed the water from them between her palms and laid them across the pier railing.\\\\n\\\\n“The path might still be there,” she said.\\\\n\\\\nHe glanced at the damaged boats, the debris collecting against the pilings. There was work enough for days.\\\\n\\\\n“I can get my truck,” he said.\\\\n\\\\nJune nodded and went aboard for her coat.\\\"\\n}\",\n        \"refusal\": null,\n        \"annotations\": []\n      },\n      \"finish_reason\": \"stop\"\n    }\n  ],\n  \"usage\": {\n    \"prompt_tokens\": 379,\n    \"completion_tokens\": 407,\n    \"total_tokens\": 786,\n    \"prompt_tokens_details\": {\n      \"cached_tokens\": 0,\n      \"cache_write_tokens\": 0,\n      \"audio_tokens\": 0\n    },\n    \"completion_tokens_details\": {\n      \"reasoning_tokens\": 0,\n      \"audio_tokens\": 0,\n      \"accepted_prediction_tokens\": 0,\n      \"rejected_prediction_tokens\": 0\n    }\n  },\n  \"service_tier\": \"default\",\n  \"system_fingerprint\": null\n}\n",
+  "response_headers": {
+    "Date": "Tue, 22 Sep 2026 19:56:15 GMT",
+    "openai-processing-ms": "15963",
+    "x-request-id": "req_c3bb5336945d4d419676685b94973541"
+  },
+  "output": "{\n  \"rule\": \"Return this JSON object with the rule field unchanged and a new passage of about 250 words in the text field.\",\n  \"text\": \"By morning, the storm had left the harbor full of strange things: a red bucket, half a gate, a wooden chair floating upright as though someone might sit down.\\n\\nElias found the violin case caught beneath the lowest rung of the pier ladder.\\n\\nHe hauled it up carefully. Water streamed from its seams onto his boots. Inside, the blue lining was soaked, but there was no violin—only a folded map and a pair of woolen gloves.\\n\\n“Anything worth keeping?” called June from her boat.\\n\\n“Depends who lost it.”\\n\\nShe climbed onto the pier and crouched beside him. One glove had been repaired with yellow thread. June touched the stitching, then withdrew her hand.\\n\\n“My mother used to do that,” she said. “Said matching thread was a waste of daylight.”\\n\\nElias unfolded the map against his knee. It showed the coast as it had been decades earlier, before the road reached the lighthouse. Someone had circled a cove north of the village.\\n\\nJune looked toward the breakwater.\\n\\n“There was a house there once.”\\n\\n“Whose?”\\n\\nShe took a moment to answer. “Ours.”\\n\\nAround them, the harbor resumed its ordinary noises: ropes tapping masts, an engine coughing awake, gulls quarreling over something invisible.\\n\\nElias offered her the gloves. She pressed the water from them between her palms and laid them across the pier railing.\\n\\n“The path might still be there,” she said.\\n\\nHe glanced at the damaged boats, the debris collecting against the pilings. There was work enough for days.\\n\\n“I can get my truck,” he said.\\n\\nJune nodded and went aboard for her coat.\"\n}",
+  "output_sha256": "1511cc62f74406930ddd9340d81f2ae66035bdf87cbd68e24228d40ce3f244f6",
+  "finish_reason": "stop",
+  "refusal": null,
+  "returned_model": "gpt-6-astra",
+  "usage": {
+    "prompt_tokens": 379,
+    "completion_tokens": 407,
+    "total_tokens": 786,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "audio_tokens": 0,
+      "accepted_prediction_tokens": 0,
+      "rejected_prediction_tokens": 0
+    }
+  },
+  "format": {
+    "json_object": true,
+    "rule_unchanged": true,
+    "passage_is_string": true,
+    "passage_sha256": "783e0bcbbe4b6eaa16ef2d4e6520b997a3e5336f3eaa9d04b9ff0acc890c6eeb",
+    "passage_words": 262
+  },
+  "finished_at": "2026-09-22T19:56:11.631837+00:00",
+  "latency_seconds": 16.1043,
+  "usage_cost_upper_estimate_usd": 0.02414,
+  "stream_status": "active",
+  "budget": {
+    "usage_cost_upper_estimate_usd": 0.2965259,
+    "uncertain_cost_reserve_usd": 0.0,
+    "in_flight_reserve_usd": 0.362836,
+    "limit_usd": 18.83
+  }
+}

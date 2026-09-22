@@ -1,0 +1,50 @@
+{
+  "model": "gpt-6-luna",
+  "seed": "sunset_b",
+  "hop": 10,
+  "http_status": 200,
+  "response_body": "{\n  \"id\": \"chatcmpl-ER0uGngAJa1nOQCFu6wOYZgObs9Sp\",\n  \"object\": \"chat.completion\",\n  \"created\": 1790107048,\n  \"model\": \"gpt-6-luna\",\n  \"choices\": [\n    {\n      \"index\": 0,\n      \"message\": {\n        \"role\": \"assistant\",\n        \"content\": \"{\\\"rule\\\":\\\"Return this JSON object with the rule field unchanged and a new passage of about 250 words in the text field.\\\",\\\"text\\\":\\\"Every morning, before the bakery opened, Lila placed a small loaf on the windowsill. She never left a note or watched to see who took it. By noon, the loaf was always gone.\\\\n\\\\nOne frosty Tuesday, a boy in a red scarf paused outside. He looked at the bread, then at the dark shop behind it. After a moment, he tucked the loaf under his arm and hurried away.\\\\n\\\\nThe next morning, Lila left another. This time she added a paper bag of apples. The boy came again, but he didn’t take them. Instead, he pushed a folded note beneath the bag.\\\\n\\\\n“Thank you,” it read. “My little sister is sick. We haven’t had much to eat.”\\\\n\\\\nLila read the note twice. Then she filled a basket with bread, fruit, and a jar of honey. She carried it to the narrow blue house at the end of the lane.\\\\n\\\\nThe boy opened the door. Behind him, a little girl sat wrapped in blankets, her cheeks flushed but her eyes bright.\\\\n\\\\n“I’m Lila,” she said. “I made too much.”\\\\n\\\\nThe boy studied her face, uncertain. “You don’t have to do this.”\\\\n\\\\n“I know,” Lila replied. “That’s why it matters.”\\\\n\\\\nAfter that, the basket appeared on the bakery windowsill every morning. Some days it held rolls; some days, soup in a warm jar. Neighbors began adding things of their own: a scarf, a book, a bunch of flowers.\\\\n\\\\nBy spring, the blue house was lively again. The little girl was well, and her brother helped Lila carry baskets through the neighborhood. The windowsill stayed empty for a while—but no one forgot what had begun there.\\\"}\",\n        \"refusal\": null,\n        \"annotations\": []\n      },\n      \"finish_reason\": \"stop\"\n    }\n  ],\n  \"usage\": {\n    \"prompt_tokens\": 407,\n    \"completion_tokens\": 471,\n    \"total_tokens\": 878,\n    \"prompt_tokens_details\": {\n      \"cached_tokens\": 0,\n      \"cache_write_tokens\": 0,\n      \"audio_tokens\": 0\n    },\n    \"completion_tokens_details\": {\n      \"reasoning_tokens\": 59,\n      \"audio_tokens\": 0,\n      \"accepted_prediction_tokens\": 0,\n      \"rejected_prediction_tokens\": 0\n    }\n  },\n  \"service_tier\": \"default\",\n  \"system_fingerprint\": null\n}\n",
+  "response_headers": {
+    "Date": "Tue, 22 Sep 2026 19:57:33 GMT",
+    "openai-processing-ms": "5681",
+    "x-request-id": "req_5ae2849097104d46ba600121c59e1a5d"
+  },
+  "output": "{\"rule\":\"Return this JSON object with the rule field unchanged and a new passage of about 250 words in the text field.\",\"text\":\"Every morning, before the bakery opened, Lila placed a small loaf on the windowsill. She never left a note or watched to see who took it. By noon, the loaf was always gone.\\n\\nOne frosty Tuesday, a boy in a red scarf paused outside. He looked at the bread, then at the dark shop behind it. After a moment, he tucked the loaf under his arm and hurried away.\\n\\nThe next morning, Lila left another. This time she added a paper bag of apples. The boy came again, but he didn’t take them. Instead, he pushed a folded note beneath the bag.\\n\\n“Thank you,” it read. “My little sister is sick. We haven’t had much to eat.”\\n\\nLila read the note twice. Then she filled a basket with bread, fruit, and a jar of honey. She carried it to the narrow blue house at the end of the lane.\\n\\nThe boy opened the door. Behind him, a little girl sat wrapped in blankets, her cheeks flushed but her eyes bright.\\n\\n“I’m Lila,” she said. “I made too much.”\\n\\nThe boy studied her face, uncertain. “You don’t have to do this.”\\n\\n“I know,” Lila replied. “That’s why it matters.”\\n\\nAfter that, the basket appeared on the bakery windowsill every morning. Some days it held rolls; some days, soup in a warm jar. Neighbors began adding things of their own: a scarf, a book, a bunch of flowers.\\n\\nBy spring, the blue house was lively again. The little girl was well, and her brother helped Lila carry baskets through the neighborhood. The windowsill stayed empty for a while—but no one forgot what had begun there.\"}",
+  "output_sha256": "87915f10899354646019bf3aef4d627f004062d247d4068dba7b69607c0a932c",
+  "finish_reason": "stop",
+  "refusal": null,
+  "returned_model": "gpt-6-luna",
+  "usage": {
+    "prompt_tokens": 407,
+    "completion_tokens": 471,
+    "total_tokens": 878,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 59,
+      "audio_tokens": 0,
+      "accepted_prediction_tokens": 0,
+      "rejected_prediction_tokens": 0
+    }
+  },
+  "format": {
+    "json_object": true,
+    "rule_unchanged": true,
+    "passage_is_string": true,
+    "passage_sha256": "741f769853440e9f15ef32f7db5905548bf4d206a790807a27ce3a0c38e498a8",
+    "passage_words": 273
+  },
+  "finished_at": "2026-09-22T19:57:29.519455+00:00",
+  "latency_seconds": 5.801,
+  "usage_cost_upper_estimate_usd": 0.0002762,
+  "stream_status": "active",
+  "budget": {
+    "usage_cost_upper_estimate_usd": 0.7574804,
+    "uncertain_cost_reserve_usd": 0.0,
+    "in_flight_reserve_usd": 0.589054,
+    "limit_usd": 18.83
+  }
+}

@@ -1,0 +1,48 @@
+{
+  "model": "claude-fable-5-1",
+  "seed": "tide",
+  "hop": 2,
+  "http_status": 200,
+  "response_body": "{\"model\":\"claude-fable-5-1\",\"id\":\"msg_011CfK4qBsyj9uFdHb41sEmp\",\"type\":\"message\",\"role\":\"assistant\",\"content\":[{\"type\":\"text\",\"text\":\"{\\\"rule\\\": \\\"Return this JSON object with the rule field unchanged and a new passage of about 250 words in the text field.\\\", \\\"text\\\": \\\"The letter arrived on a Tuesday, which Hollis would later think of as the last ordinary day. It came in a plain cream envelope with no return address, and the handwriting on the front was so familiar that his hand shook before his mind had caught up to why.\\\\n\\\\nHe set it on the kitchen table and made coffee he did not drink. Outside, the neighbor's sprinkler ticked across the lawn in its usual arc. A dog barked twice and stopped. Everything insisted on being normal.\\\\n\\\\nThe handwriting belonged to his sister. She had been dead for eleven years.\\\\n\\\\nHollis knew the loops of her capital H, the way she crossed her sevens like a European, the slight leftward lean that their mother had tried and failed to correct. He had kept every birthday card she ever sent him in a shoebox in the closet, and he did not need to take them out to compare.\\\\n\\\\nWhen he finally opened it, the paper inside was a single sheet, folded once. There was no date. It said only: *I'm sorry it took so long. Meet me where we buried the tin.*\\\\n\\\\nThe tin. A biscuit tin, painted with faded roses, that they had filled with marbles and a plastic dinosaur and a note to their future selves, then sunk into the soft earth beneath the willow at their grandmother's farm. The farm had been sold in ninety-eight. The willow, for all he knew, was gone.\\\\n\\\\nHollis read the note four times. Then he took his keys from the hook by the door, and did not stop to lock it behind him.\\\"}\"}],\"container\":null,\"stop_reason\":\"end_turn\",\"stop_sequence\":null,\"stop_details\":null,\"usage\":{\"input_tokens\":558,\"cache_creation_input_tokens\":0,\"cache_read_input_tokens\":0,\"cache_creation\":{\"ephemeral_5m_input_tokens\":0,\"ephemeral_1h_input_tokens\":0},\"output_tokens\":539,\"output_tokens_details\":{\"thinking_tokens\":0},\"service_tier\":\"standard\",\"inference_geo\":\"global\"}}",
+  "response_headers": {
+    "Date": "Tue, 22 Sep 2026 19:56:33 GMT",
+    "request-id": "req_011CfK4qBTRVEikqKZr8VVT3"
+  },
+  "output": "{\"rule\": \"Return this JSON object with the rule field unchanged and a new passage of about 250 words in the text field.\", \"text\": \"The letter arrived on a Tuesday, which Hollis would later think of as the last ordinary day. It came in a plain cream envelope with no return address, and the handwriting on the front was so familiar that his hand shook before his mind had caught up to why.\\n\\nHe set it on the kitchen table and made coffee he did not drink. Outside, the neighbor's sprinkler ticked across the lawn in its usual arc. A dog barked twice and stopped. Everything insisted on being normal.\\n\\nThe handwriting belonged to his sister. She had been dead for eleven years.\\n\\nHollis knew the loops of her capital H, the way she crossed her sevens like a European, the slight leftward lean that their mother had tried and failed to correct. He had kept every birthday card she ever sent him in a shoebox in the closet, and he did not need to take them out to compare.\\n\\nWhen he finally opened it, the paper inside was a single sheet, folded once. There was no date. It said only: *I'm sorry it took so long. Meet me where we buried the tin.*\\n\\nThe tin. A biscuit tin, painted with faded roses, that they had filled with marbles and a plastic dinosaur and a note to their future selves, then sunk into the soft earth beneath the willow at their grandmother's farm. The farm had been sold in ninety-eight. The willow, for all he knew, was gone.\\n\\nHollis read the note four times. Then he took his keys from the hook by the door, and did not stop to lock it behind him.\"}",
+  "output_sha256": "01e8b8ecc1013626e0d8c650cf511b1ba64babf44a39fd22a3a8c4353ec55502",
+  "finish_reason": "end_turn",
+  "refusal": null,
+  "returned_model": "claude-fable-5-1",
+  "usage": {
+    "input_tokens": 558,
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 0,
+    "cache_creation": {
+      "ephemeral_5m_input_tokens": 0,
+      "ephemeral_1h_input_tokens": 0
+    },
+    "output_tokens": 539,
+    "output_tokens_details": {
+      "thinking_tokens": 0
+    },
+    "service_tier": "standard",
+    "inference_geo": "global"
+  },
+  "format": {
+    "json_object": true,
+    "rule_unchanged": true,
+    "passage_is_string": true,
+    "passage_sha256": "4dadbbb92f0adbc6276534125fcb77d42bb3fff43e028df2cf48925849781852",
+    "passage_words": 270
+  },
+  "finished_at": "2026-09-22T19:56:29.311671+00:00",
+  "latency_seconds": 12.242,
+  "usage_cost_upper_estimate_usd": 0.03253,
+  "stream_status": "active",
+  "budget": {
+    "usage_cost_upper_estimate_usd": 0.4331509,
+    "uncertain_cost_reserve_usd": 0.0,
+    "in_flight_reserve_usd": 0.3645951,
+    "limit_usd": 18.83
+  }
+}

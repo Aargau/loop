@@ -1,0 +1,50 @@
+{
+  "model": "gpt-6-sol",
+  "seed": "tide",
+  "hop": 13,
+  "http_status": 200,
+  "response_body": "{\n  \"id\": \"chatcmpl-ER0vo1FElPELz440MpXUBKju8r29y\",\n  \"object\": \"chat.completion\",\n  \"created\": 1790107144,\n  \"model\": \"gpt-6-sol\",\n  \"choices\": [\n    {\n      \"index\": 0,\n      \"message\": {\n        \"role\": \"assistant\",\n        \"content\": \"{\\n  \\\"rule\\\": \\\"Return this JSON object with the rule field unchanged and a new passage of about 250 words in the text field.\\\",\\n  \\\"text\\\": \\\"By the time they reached the cottage, the tide had covered the stones where Daniel had stood. Their father stopped at the gate to look back. Mara thought he might ask them to return for the survey books, but he only let Mrs. Bell guide him inside.\\\\n\\\\nShe set a kettle on the stove while Daniel found dry clothes. Mr. Venn stayed by the door, turning the damp rope through his hands.\\\\n\\\\n“Will the books still be there tomorrow?” he asked.\\\\n\\\\n“If the shelf holds,” their father said. He sat down carefully. “They’ve survived worse tides than this one.”\\\\n\\\\nMara brought him a cup of tea. “Why did you go looking for them?”\\\\n\\\\n“Your grandfather drew the first plans for the channel wall. I thought his notebooks might show where it was built.” He warmed his hands around the cup. “There’s a crack near the boathouse. I wanted to know what lies behind it before I told anyone it needed repairing.”\\\\n\\\\nDaniel looked toward the window. Beyond it, the last light lay flat across the water. “You could have told us you were going.”\\\\n\\\\n“I should have.” Their father met his eyes. “I’m sorry.”\\\\n\\\\nFor a moment, only the kettle spoke. Then Mrs. Bell put a plate of bread on the table and told everyone to sit down.\\\\n\\\\nIn the morning, when the tide had fallen, they could decide how to fetch the books. Tonight, Mara was glad to hear her father’s chair scrape across the floor as he came to join them.\\\"\\n}\",\n        \"refusal\": null,\n        \"annotations\": []\n      },\n      \"finish_reason\": \"stop\"\n    }\n  ],\n  \"usage\": {\n    \"prompt_tokens\": 398,\n    \"completion_tokens\": 410,\n    \"total_tokens\": 808,\n    \"prompt_tokens_details\": {\n      \"cached_tokens\": 0,\n      \"cache_write_tokens\": 0,\n      \"audio_tokens\": 0\n    },\n    \"completion_tokens_details\": {\n      \"reasoning_tokens\": 36,\n      \"audio_tokens\": 0,\n      \"accepted_prediction_tokens\": 0,\n      \"rejected_prediction_tokens\": 0\n    }\n  },\n  \"service_tier\": \"default\",\n  \"system_fingerprint\": null\n}\n",
+  "response_headers": {
+    "Date": "Tue, 22 Sep 2026 19:59:10 GMT",
+    "openai-processing-ms": "5804",
+    "x-request-id": "req_f9ba8321b9e44b7b96ebb0af3b68de88"
+  },
+  "output": "{\n  \"rule\": \"Return this JSON object with the rule field unchanged and a new passage of about 250 words in the text field.\",\n  \"text\": \"By the time they reached the cottage, the tide had covered the stones where Daniel had stood. Their father stopped at the gate to look back. Mara thought he might ask them to return for the survey books, but he only let Mrs. Bell guide him inside.\\n\\nShe set a kettle on the stove while Daniel found dry clothes. Mr. Venn stayed by the door, turning the damp rope through his hands.\\n\\n“Will the books still be there tomorrow?” he asked.\\n\\n“If the shelf holds,” their father said. He sat down carefully. “They’ve survived worse tides than this one.”\\n\\nMara brought him a cup of tea. “Why did you go looking for them?”\\n\\n“Your grandfather drew the first plans for the channel wall. I thought his notebooks might show where it was built.” He warmed his hands around the cup. “There’s a crack near the boathouse. I wanted to know what lies behind it before I told anyone it needed repairing.”\\n\\nDaniel looked toward the window. Beyond it, the last light lay flat across the water. “You could have told us you were going.”\\n\\n“I should have.” Their father met his eyes. “I’m sorry.”\\n\\nFor a moment, only the kettle spoke. Then Mrs. Bell put a plate of bread on the table and told everyone to sit down.\\n\\nIn the morning, when the tide had fallen, they could decide how to fetch the books. Tonight, Mara was glad to hear her father’s chair scrape across the floor as he came to join them.\"\n}",
+  "output_sha256": "fdc12c93c87776f3bcc0df148867ce1c6a8f5cdf554d91fde8d5ea2675229d1d",
+  "finish_reason": "stop",
+  "refusal": null,
+  "returned_model": "gpt-6-sol",
+  "usage": {
+    "prompt_tokens": 398,
+    "completion_tokens": 410,
+    "total_tokens": 808,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 36,
+      "audio_tokens": 0,
+      "accepted_prediction_tokens": 0,
+      "rejected_prediction_tokens": 0
+    }
+  },
+  "format": {
+    "json_object": true,
+    "rule_unchanged": true,
+    "passage_is_string": true,
+    "passage_sha256": "a6400e3f97e18387711e77278d3ba43e5772db66bdfccc96e79d7bf8b58d9e3a",
+    "passage_words": 253
+  },
+  "finished_at": "2026-09-22T19:59:06.094286+00:00",
+  "latency_seconds": 5.9422,
+  "usage_cost_upper_estimate_usd": 0.004896,
+  "stream_status": "active",
+  "budget": {
+    "usage_cost_upper_estimate_usd": 1.3732635,
+    "uncertain_cost_reserve_usd": 0.04533,
+    "in_flight_reserve_usd": 0.5447184,
+    "limit_usd": 18.83
+  }
+}

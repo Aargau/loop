@@ -1,0 +1,50 @@
+{
+  "model": "gpt-6-sol",
+  "seed": "tide",
+  "hop": 2,
+  "http_status": 200,
+  "response_body": "{\n  \"id\": \"chatcmpl-ER0sd9XhQohiluHdY1MBQbj5zZT8Y\",\n  \"object\": \"chat.completion\",\n  \"created\": 1790106947,\n  \"model\": \"gpt-6-sol\",\n  \"choices\": [\n    {\n      \"index\": 0,\n      \"message\": {\n        \"role\": \"assistant\",\n        \"content\": \"{\\n  \\\"rule\\\": \\\"Return this JSON object with the rule field unchanged and a new passage of about 250 words in the text field.\\\",\\n  \\\"text\\\": \\\"By morning, the orange had dried to a dull shine. Mara set it on the counter while she swept sand from beneath the shelves. Nothing else in the shop had moved, though the water had been high enough to float the tins of bait. They stood in neat rows, their labels facing the door.\\\\n\\\\nDaniel arrived carrying a bucket and a loaf of bread. He had been checking the boats. All six were sound, he said, but every compass aboard pointed toward the church.\\\\n\\\\nMara thought of the bell. Together they climbed the hill, passing neighbors who were washing salt from their windows. The church door was unlocked. Inside, the air smelled of damp stone, and a narrow trail of sand crossed the floor to the bell rope. At its end lay a second orange.\\\\n\\\\nDaniel picked it up. A small square of paper had been pressed into the peel, leaving its corners outlined in white. Mara eased it free. On one side was a drawing of the harbor stairs. On the other, in careful handwriting, were three words: Look beneath them.\\\\n\\\\nThey waited for the tide to turn. At noon the bottom step emerged, slick with weed. Daniel knelt and reached into the gap below it. His hand closed around a brass key tied to a length of blue string.\\\\n\\\\nMara recognized the string. She sold it by the yard to fishermen, but her father had used the same kind to mark things he meant to find again. She took the key from Daniel and looked uphill at the locked door of his old house.\\\"\\n}\",\n        \"refusal\": null,\n        \"annotations\": []\n      },\n      \"finish_reason\": \"stop\"\n    }\n  ],\n  \"usage\": {\n    \"prompt_tokens\": 356,\n    \"completion_tokens\": 421,\n    \"total_tokens\": 777,\n    \"prompt_tokens_details\": {\n      \"cached_tokens\": 0,\n      \"cache_write_tokens\": 0,\n      \"audio_tokens\": 0\n    },\n    \"completion_tokens_details\": {\n      \"reasoning_tokens\": 60,\n      \"audio_tokens\": 0,\n      \"accepted_prediction_tokens\": 0,\n      \"rejected_prediction_tokens\": 0\n    }\n  },\n  \"service_tier\": \"default\",\n  \"system_fingerprint\": null\n}\n",
+  "response_headers": {
+    "Date": "Tue, 22 Sep 2026 19:55:54 GMT",
+    "openai-processing-ms": "7062",
+    "x-request-id": "req_83c626fa3c354054b215c327eb8e9436"
+  },
+  "output": "{\n  \"rule\": \"Return this JSON object with the rule field unchanged and a new passage of about 250 words in the text field.\",\n  \"text\": \"By morning, the orange had dried to a dull shine. Mara set it on the counter while she swept sand from beneath the shelves. Nothing else in the shop had moved, though the water had been high enough to float the tins of bait. They stood in neat rows, their labels facing the door.\\n\\nDaniel arrived carrying a bucket and a loaf of bread. He had been checking the boats. All six were sound, he said, but every compass aboard pointed toward the church.\\n\\nMara thought of the bell. Together they climbed the hill, passing neighbors who were washing salt from their windows. The church door was unlocked. Inside, the air smelled of damp stone, and a narrow trail of sand crossed the floor to the bell rope. At its end lay a second orange.\\n\\nDaniel picked it up. A small square of paper had been pressed into the peel, leaving its corners outlined in white. Mara eased it free. On one side was a drawing of the harbor stairs. On the other, in careful handwriting, were three words: Look beneath them.\\n\\nThey waited for the tide to turn. At noon the bottom step emerged, slick with weed. Daniel knelt and reached into the gap below it. His hand closed around a brass key tied to a length of blue string.\\n\\nMara recognized the string. She sold it by the yard to fishermen, but her father had used the same kind to mark things he meant to find again. She took the key from Daniel and looked uphill at the locked door of his old house.\"\n}",
+  "output_sha256": "a3a878b8944e16f563054a0ebb92af05587bd56c39da20270fe763f248705b87",
+  "finish_reason": "stop",
+  "refusal": null,
+  "returned_model": "gpt-6-sol",
+  "usage": {
+    "prompt_tokens": 356,
+    "completion_tokens": 421,
+    "total_tokens": 777,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 60,
+      "audio_tokens": 0,
+      "accepted_prediction_tokens": 0,
+      "rejected_prediction_tokens": 0
+    }
+  },
+  "format": {
+    "json_object": true,
+    "rule_unchanged": true,
+    "passage_is_string": true,
+    "passage_sha256": "528b8e04d1c853edc0eb5345a3d5c8c8fd8ed18456067e5190553432bcca98e6",
+    "passage_words": 266
+  },
+  "finished_at": "2026-09-22T19:55:50.634676+00:00",
+  "latency_seconds": 7.1754,
+  "usage_cost_upper_estimate_usd": 0.004922,
+  "stream_status": "active",
+  "budget": {
+    "usage_cost_upper_estimate_usd": 0.1500253,
+    "uncertain_cost_reserve_usd": 0.0,
+    "in_flight_reserve_usd": 0.5157385,
+    "limit_usd": 18.83
+  }
+}

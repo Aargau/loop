@@ -1,0 +1,50 @@
+{
+  "model": "gpt-6-luna",
+  "seed": "sunset_b",
+  "hop": 23,
+  "http_status": 200,
+  "response_body": "{\n  \"id\": \"chatcmpl-ER0xBgClyHziYDy1KZqUpSEn2GmYE\",\n  \"object\": \"chat.completion\",\n  \"created\": 1790107229,\n  \"model\": \"gpt-6-luna\",\n  \"choices\": [\n    {\n      \"index\": 0,\n      \"message\": {\n        \"role\": \"assistant\",\n        \"content\": \"{\\n  \\\"rule\\\": \\\"Return this JSON object with the rule field unchanged and a new passage of about 250 words in the text field.\\\",\\n  \\\"text\\\": \\\"Every Thursday, Mateo visited the old train station to sketch its clock. The station had been closed for decades, but the clock still ticked, its hands moving with patient certainty above a platform scattered with leaves.\\\\n\\\\nOne rainy afternoon, Mateo found a brass key beneath a bench. A paper tag tied to it read, “For the waiting room.” He tried the key in the station’s side door, which opened with a reluctant click. Inside, dust softened the outlines of wooden chairs, and a faded timetable hung crookedly on the wall.\\\\n\\\\nIn a desk drawer, he discovered a bundle of postcards. They were addressed to people who had once lived in town, each describing a journey that never seemed to have happened. One card mentioned a violinist who planned to return after finding work. Another promised a daughter that her father would be home before the first frost. The dates were nearly a hundred years old.\\\\n\\\\nMateo showed the postcards to his teacher, who helped him search the town archives. They found the violinist’s name in an old newspaper and learned he had eventually returned, playing concerts in the school auditorium. The daughter’s family had moved away, but a grandson still lived nearby.\\\\n\\\\nTogether, the teacher and Mateo delivered the cards to the local history room, where volunteers made copies for an exhibit. On opening day, the grandson stood beneath the station clock and read his grandfather’s postcard aloud.\\\\n\\\\nAfterward, Mateo returned to his sketchbook. He drew the clock, the open waiting-room door, and a line of people gathered beneath it—not waiting for a train, but sharing the journeys they had carried with them.\\\"\\n}\",\n        \"refusal\": null,\n        \"annotations\": []\n      },\n      \"finish_reason\": \"stop\"\n    }\n  ],\n  \"usage\": {\n    \"prompt_tokens\": 384,\n    \"completion_tokens\": 428,\n    \"total_tokens\": 812,\n    \"prompt_tokens_details\": {\n      \"cached_tokens\": 0,\n      \"cache_write_tokens\": 0,\n      \"audio_tokens\": 0\n    },\n    \"completion_tokens_details\": {\n      \"reasoning_tokens\": 49,\n      \"audio_tokens\": 0,\n      \"accepted_prediction_tokens\": 0,\n      \"rejected_prediction_tokens\": 0\n    }\n  },\n  \"service_tier\": \"default\",\n  \"system_fingerprint\": null\n}\n",
+  "response_headers": {
+    "Date": "Tue, 22 Sep 2026 20:00:35 GMT",
+    "openai-processing-ms": "5983",
+    "x-request-id": "req_1f9dbb3c9e404965b8e6892c32fa181c"
+  },
+  "output": "{\n  \"rule\": \"Return this JSON object with the rule field unchanged and a new passage of about 250 words in the text field.\",\n  \"text\": \"Every Thursday, Mateo visited the old train station to sketch its clock. The station had been closed for decades, but the clock still ticked, its hands moving with patient certainty above a platform scattered with leaves.\\n\\nOne rainy afternoon, Mateo found a brass key beneath a bench. A paper tag tied to it read, “For the waiting room.” He tried the key in the station’s side door, which opened with a reluctant click. Inside, dust softened the outlines of wooden chairs, and a faded timetable hung crookedly on the wall.\\n\\nIn a desk drawer, he discovered a bundle of postcards. They were addressed to people who had once lived in town, each describing a journey that never seemed to have happened. One card mentioned a violinist who planned to return after finding work. Another promised a daughter that her father would be home before the first frost. The dates were nearly a hundred years old.\\n\\nMateo showed the postcards to his teacher, who helped him search the town archives. They found the violinist’s name in an old newspaper and learned he had eventually returned, playing concerts in the school auditorium. The daughter’s family had moved away, but a grandson still lived nearby.\\n\\nTogether, the teacher and Mateo delivered the cards to the local history room, where volunteers made copies for an exhibit. On opening day, the grandson stood beneath the station clock and read his grandfather’s postcard aloud.\\n\\nAfterward, Mateo returned to his sketchbook. He drew the clock, the open waiting-room door, and a line of people gathered beneath it—not waiting for a train, but sharing the journeys they had carried with them.\"\n}",
+  "output_sha256": "da1ae9b2c337e2020b1db31868187b017dc30d364219da4cbf6934141b623154",
+  "finish_reason": "stop",
+  "refusal": null,
+  "returned_model": "gpt-6-luna",
+  "usage": {
+    "prompt_tokens": 384,
+    "completion_tokens": 428,
+    "total_tokens": 812,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 49,
+      "audio_tokens": 0,
+      "accepted_prediction_tokens": 0,
+      "rejected_prediction_tokens": 0
+    }
+  },
+  "format": {
+    "json_object": true,
+    "rule_unchanged": true,
+    "passage_is_string": true,
+    "passage_sha256": "a0b15657f3f21ed04b62341ffba63761d9b5550240abca0a66fe4af4c636ece6",
+    "passage_words": 273
+  },
+  "finished_at": "2026-09-22T20:00:31.481464+00:00",
+  "latency_seconds": 6.093,
+  "usage_cost_upper_estimate_usd": 0.0002524,
+  "stream_status": "active",
+  "budget": {
+    "usage_cost_upper_estimate_usd": 1.9121601,
+    "uncertain_cost_reserve_usd": 0.04533,
+    "in_flight_reserve_usd": 0.587896,
+    "limit_usd": 18.83
+  }
+}

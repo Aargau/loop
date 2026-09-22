@@ -1,0 +1,22 @@
+{
+  "started_at": "2026-09-22T20:05:00.048881+00:00",
+  "model": "claude-opus-5-5",
+  "seed": "sunset_a",
+  "hop": 22,
+  "endpoint": "https://api.anthropic.com/v1/messages",
+  "body": {
+    "model": "claude-opus-5-5",
+    "messages": [
+      {
+        "role": "user",
+        "content": "```json\n{\"rule\": \"Return this JSON object with the rule field unchanged and a new passage of about 250 words in the text field.\", \"text\": \"Tobias returned on a Monday, pale and thinner, his scarf wound twice around his throat. He nodded to her, hung his coat on the peg by the stove, and went straight to the back room without a word. Mira watched him go, and for the rest of the morning she could not concentrate on the ledger. Every small noise from behind the partition made her lift her head: the scrape of a stool, the clink of a tweezers set down on glass, a long exhale that might have been frustration or relief. Near noon he appeared in the doorway holding the cloth in one hand. He did not look angry, only tired, and faintly amused. 'You folded it wrong,' he said. 'I fold the corners under. You folded them over.' Heat rose in her face, but before she could apologize he stepped aside and gestured toward the bench. 'Since you've already seen it, you may as well tell me what you think.' She approached slowly, as though the mechanism might startle. Up close it was even stranger than she remembered, the escapement tilted at an angle no textbook would allow, a tiny weighted arm swinging where a balance wheel should have been. He wound it with a key no larger than a sewing needle, and they both leaned in. The ticking began, faltered, steadied. Outside, a cart rattled past over the frozen ruts. Inside, neither of them breathed. The little machine kept time for two minutes, then three, and Tobias, very quietly, began to laugh.\"}\n```"
+      }
+    ],
+    "max_tokens": 4096,
+    "output_config": {
+      "effort": "low"
+    }
+  },
+  "state_sha256": "b4ed9366c0c468d3acbe092de7143e04b80d2c65d0756031f793a278b27bf504",
+  "reserved_cost_usd": 0.090168
+}

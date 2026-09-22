@@ -1,0 +1,50 @@
+{
+  "model": "gpt-6-sol",
+  "seed": "tide",
+  "hop": 3,
+  "http_status": 200,
+  "response_body": "{\n  \"id\": \"chatcmpl-ER0sw0TslrTlaWjHtmvczUmaZRXaZ\",\n  \"object\": \"chat.completion\",\n  \"created\": 1790106966,\n  \"model\": \"gpt-6-sol\",\n  \"choices\": [\n    {\n      \"index\": 0,\n      \"message\": {\n        \"role\": \"assistant\",\n        \"content\": \"{\\n  \\\"rule\\\": \\\"Return this JSON object with the rule field unchanged and a new passage of about 250 words in the text field.\\\",\\n  \\\"text\\\": \\\"The key turned stiffly in the lock. Daniel pushed the door open, and the smell of dust met them. His father had kept the house shut since Mara’s father died, though no one had ever explained why.\\\\n\\\\nIn the kitchen, every chair stood upside down on the table. Blue string ran from one chair leg to another, making a crooked web. At its center hung a tin of bait, its label facing the door.\\\\n\\\\nDaniel took it down. Inside was a folded chart of the harbor, marked with six small crosses. Each cross lay beside a mooring.\\\\n\\\\n“The boats,” he said.\\\\n\\\\nOn the back, Mara found her father’s handwriting: When the bell rings without a hand, move them beyond the breakwater.\\\\n\\\\nA single note sounded from the church. Through the window, Mara saw neighbors stop in the street and turn toward the hill.\\\\n\\\\nDaniel was already reaching for the chart, but Mara held it flat against the table. The crosses were not where the six boats lay now. They marked the deeper moorings used before the harbor stairs had been rebuilt.\\\\n\\\\n“The tide took the stairs once,” she said. “He thought it might happen again.”\\\\n\\\\nOutside, water spilled over the quay, though the tide should have been falling. Daniel ran to warn the boat owners. Mara followed with the chart, calling out the old moorings as they went. By the time the church bell rang again, the first boat had slipped its rope and was heading for open water.\\\"\\n}\",\n        \"refusal\": null,\n        \"annotations\": []\n      },\n      \"finish_reason\": \"stop\"\n    }\n  ],\n  \"usage\": {\n    \"prompt_tokens\": 358,\n    \"completion_tokens\": 376,\n    \"total_tokens\": 734,\n    \"prompt_tokens_details\": {\n      \"cached_tokens\": 0,\n      \"cache_write_tokens\": 0,\n      \"audio_tokens\": 0\n    },\n    \"completion_tokens_details\": {\n      \"reasoning_tokens\": 17,\n      \"audio_tokens\": 0,\n      \"accepted_prediction_tokens\": 0,\n      \"rejected_prediction_tokens\": 0\n    }\n  },\n  \"service_tier\": \"default\",\n  \"system_fingerprint\": null\n}\n",
+  "response_headers": {
+    "Date": "Tue, 22 Sep 2026 19:56:12 GMT",
+    "openai-processing-ms": "5681",
+    "x-request-id": "req_4bd880144f7343ac88ed47cd6501be95"
+  },
+  "output": "{\n  \"rule\": \"Return this JSON object with the rule field unchanged and a new passage of about 250 words in the text field.\",\n  \"text\": \"The key turned stiffly in the lock. Daniel pushed the door open, and the smell of dust met them. His father had kept the house shut since Mara’s father died, though no one had ever explained why.\\n\\nIn the kitchen, every chair stood upside down on the table. Blue string ran from one chair leg to another, making a crooked web. At its center hung a tin of bait, its label facing the door.\\n\\nDaniel took it down. Inside was a folded chart of the harbor, marked with six small crosses. Each cross lay beside a mooring.\\n\\n“The boats,” he said.\\n\\nOn the back, Mara found her father’s handwriting: When the bell rings without a hand, move them beyond the breakwater.\\n\\nA single note sounded from the church. Through the window, Mara saw neighbors stop in the street and turn toward the hill.\\n\\nDaniel was already reaching for the chart, but Mara held it flat against the table. The crosses were not where the six boats lay now. They marked the deeper moorings used before the harbor stairs had been rebuilt.\\n\\n“The tide took the stairs once,” she said. “He thought it might happen again.”\\n\\nOutside, water spilled over the quay, though the tide should have been falling. Daniel ran to warn the boat owners. Mara followed with the chart, calling out the old moorings as they went. By the time the church bell rang again, the first boat had slipped its rope and was heading for open water.\"\n}",
+  "output_sha256": "b30a0d18beedd7072e3d1bb251cc615e6e57beced4d873f46841786d4850e1c5",
+  "finish_reason": "stop",
+  "refusal": null,
+  "returned_model": "gpt-6-sol",
+  "usage": {
+    "prompt_tokens": 358,
+    "completion_tokens": 376,
+    "total_tokens": 734,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 17,
+      "audio_tokens": 0,
+      "accepted_prediction_tokens": 0,
+      "rejected_prediction_tokens": 0
+    }
+  },
+  "format": {
+    "json_object": true,
+    "rule_unchanged": true,
+    "passage_is_string": true,
+    "passage_sha256": "c5a3946526695538a2744cb3cdd02365328674521c34c78b6ce2de17cc51eddd",
+    "passage_words": 249
+  },
+  "finished_at": "2026-09-22T19:56:08.130790+00:00",
+  "latency_seconds": 5.7795,
+  "usage_cost_upper_estimate_usd": 0.004476,
+  "stream_status": "active",
+  "budget": {
+    "usage_cost_upper_estimate_usd": 0.2721286,
+    "uncertain_cost_reserve_usd": 0.0,
+    "in_flight_reserve_usd": 0.5446533,
+    "limit_usd": 18.83
+  }
+}

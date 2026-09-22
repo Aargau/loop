@@ -1,0 +1,50 @@
+{
+  "model": "gpt-6-sol",
+  "seed": "sunset_a",
+  "hop": 24,
+  "http_status": 200,
+  "response_body": "{\n  \"id\": \"chatcmpl-ER0xqDa7Shppl5GGHjOI9j3m7Lyhd\",\n  \"object\": \"chat.completion\",\n  \"created\": 1790107270,\n  \"model\": \"gpt-6-sol\",\n  \"choices\": [\n    {\n      \"index\": 0,\n      \"message\": {\n        \"role\": \"assistant\",\n        \"content\": \"{\\n  \\\"rule\\\": \\\"Return this JSON object with the rule field unchanged and a new passage of about 250 words in the text field.\\\",\\n  \\\"text\\\": \\\"On Sunday morning, Lena went out to the shed with a mug of tea. Rain had fallen during the night, and the path was dark between the stones. Inside, the floor beneath the new boards was dry. She moved the empty pots back onto the shelf, leaving a space at one end for the boxes.\\\\n\\\\nThe seed catalogue lay on top of the nearest box. Lena opened it at the marked page and read the small print beneath the yellow beans. They were supposed to be sown after the last frost. She looked through the shed window at the patch beside the fence, where weeds had grown between the bricks.\\\\n\\\\nAfter breakfast, she took a fork from the kitchen and worked the soil loose. It came up in heavy clumps, with thin white roots running through it. She filled a bucket with weeds and carried it to the compost heap. By the time she had cleared a narrow row, the sun had reached the fence.\\\\n\\\\nHer sister called while Lena was washing her hands. Lena told her the boards had held through the rain and mentioned the beans.\\\\n\\\\n‘You’ll need seeds,’ her sister said.\\\\n\\\\n‘I know. I was just clearing a place.’\\\\n\\\\nLater, Lena carried the low bench around to the fence. One leg sank into the soft ground, so she slid a flat brick beneath it. She sat there for a while, looking at the row she had made. When the light began to go, she went inside and added seeds to her shopping list.\\\"\\n}\",\n        \"refusal\": null,\n        \"annotations\": []\n      },\n      \"finish_reason\": \"stop\"\n    }\n  ],\n  \"usage\": {\n    \"prompt_tokens\": 358,\n    \"completion_tokens\": 377,\n    \"total_tokens\": 735,\n    \"prompt_tokens_details\": {\n      \"cached_tokens\": 0,\n      \"cache_write_tokens\": 0,\n      \"audio_tokens\": 0\n    },\n    \"completion_tokens_details\": {\n      \"reasoning_tokens\": 26,\n      \"audio_tokens\": 0,\n      \"accepted_prediction_tokens\": 0,\n      \"rejected_prediction_tokens\": 0\n    }\n  },\n  \"service_tier\": \"default\",\n  \"system_fingerprint\": null\n}\n",
+  "response_headers": {
+    "Date": "Tue, 22 Sep 2026 20:01:15 GMT",
+    "openai-processing-ms": "5680",
+    "x-request-id": "req_eb462263f081437684c000a3dc139686"
+  },
+  "output": "{\n  \"rule\": \"Return this JSON object with the rule field unchanged and a new passage of about 250 words in the text field.\",\n  \"text\": \"On Sunday morning, Lena went out to the shed with a mug of tea. Rain had fallen during the night, and the path was dark between the stones. Inside, the floor beneath the new boards was dry. She moved the empty pots back onto the shelf, leaving a space at one end for the boxes.\\n\\nThe seed catalogue lay on top of the nearest box. Lena opened it at the marked page and read the small print beneath the yellow beans. They were supposed to be sown after the last frost. She looked through the shed window at the patch beside the fence, where weeds had grown between the bricks.\\n\\nAfter breakfast, she took a fork from the kitchen and worked the soil loose. It came up in heavy clumps, with thin white roots running through it. She filled a bucket with weeds and carried it to the compost heap. By the time she had cleared a narrow row, the sun had reached the fence.\\n\\nHer sister called while Lena was washing her hands. Lena told her the boards had held through the rain and mentioned the beans.\\n\\n‘You’ll need seeds,’ her sister said.\\n\\n‘I know. I was just clearing a place.’\\n\\nLater, Lena carried the low bench around to the fence. One leg sank into the soft ground, so she slid a flat brick beneath it. She sat there for a while, looking at the row she had made. When the light began to go, she went inside and added seeds to her shopping list.\"\n}",
+  "output_sha256": "e98ba11261988841fb482b0db24e4a736c53ac8feecbd585518f71aed7e524ac",
+  "finish_reason": "stop",
+  "refusal": null,
+  "returned_model": "gpt-6-sol",
+  "usage": {
+    "prompt_tokens": 358,
+    "completion_tokens": 377,
+    "total_tokens": 735,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 26,
+      "audio_tokens": 0,
+      "accepted_prediction_tokens": 0,
+      "rejected_prediction_tokens": 0
+    }
+  },
+  "format": {
+    "json_object": true,
+    "rule_unchanged": true,
+    "passage_is_string": true,
+    "passage_sha256": "3bca6911d5935ddc61f0d0e024eb49ef5bf77839c6476a4b2bc22fe142b86eb9",
+    "passage_words": 256
+  },
+  "finished_at": "2026-09-22T20:01:11.554981+00:00",
+  "latency_seconds": 5.7949,
+  "usage_cost_upper_estimate_usd": 0.004486,
+  "stream_status": "active",
+  "budget": {
+    "usage_cost_upper_estimate_usd": 2.1579348,
+    "uncertain_cost_reserve_usd": 0.04533,
+    "in_flight_reserve_usd": 0.5451137,
+    "limit_usd": 18.83
+  }
+}

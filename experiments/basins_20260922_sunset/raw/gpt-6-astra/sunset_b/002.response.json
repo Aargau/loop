@@ -1,0 +1,50 @@
+{
+  "model": "gpt-6-astra",
+  "seed": "sunset_b",
+  "hop": 2,
+  "http_status": 200,
+  "response_body": "{\n  \"id\": \"chatcmpl-ER0t5a9PouGlMf7yCWwBXYSAVHueI\",\n  \"object\": \"chat.completion\",\n  \"created\": 1790106975,\n  \"model\": \"gpt-6-astra\",\n  \"choices\": [\n    {\n      \"index\": 0,\n      \"message\": {\n        \"role\": \"assistant\",\n        \"content\": \"{\\n  \\\"rule\\\": \\\"Return this JSON object with the rule field unchanged and a new passage of about 250 words in the text field.\\\",\\n  \\\"text\\\": \\\"Every Thursday, the clockmaker found a pear on his doorstep. No basket, no note, just one green pear resting precisely in the center of the mat.\\\\n\\\\nAt first, Emil assumed it was a mistake. He left the fruit on the wall beside his shop, where schoolchildren usually claimed anything edible. But the following Thursday another appeared, its stem tied with red thread.\\\\n\\\\nHe asked the baker, the postman, the woman who swept the station steps. Nobody admitted knowing anything.\\\\n\\\\nBy November, he had collected six lengths of thread in a drawer meant for watch springs.\\\\n\\\\nOn the seventh Thursday, he opened the shop early and waited behind the curtain. At half past five, a girl in an oversized yellow coat approached. She placed a pear on the mat, adjusted it carefully, and turned away.\\\\n\\\\nEmil opened the door.\\\\n\\\\n“Have we met?” he asked.\\\\n\\\\nThe girl shook her head. “You fixed my grandfather’s clock.”\\\\n\\\\n“I fix many clocks.”\\\\n\\\\n“This one had birds inside. You wouldn’t take his money.”\\\\n\\\\nEmil remembered the old man carrying the clock wrapped in a blanket. He had died before spring.\\\\n\\\\n“He said you should always pay people,” the girl continued. “Our tree did well this year.”\\\\n\\\\nEmil looked at the pear. There was a small bruise near its base, shaped like a thumbprint.\\\\n\\\\n“Would you like to hear the clocks strike six?” he asked.\\\\n\\\\nShe glanced toward the empty street, then nodded.\\\\n\\\\nInside, he found a knife and two saucers. While the minute hands climbed, they ate the pear in silence, leaving the red thread beside the seeds.\\\"\\n}\",\n        \"refusal\": null,\n        \"annotations\": []\n      },\n      \"finish_reason\": \"stop\"\n    }\n  ],\n  \"usage\": {\n    \"prompt_tokens\": 368,\n    \"completion_tokens\": 398,\n    \"total_tokens\": 766,\n    \"prompt_tokens_details\": {\n      \"cached_tokens\": 0,\n      \"cache_write_tokens\": 0,\n      \"audio_tokens\": 0\n    },\n    \"completion_tokens_details\": {\n      \"reasoning_tokens\": 0,\n      \"audio_tokens\": 0,\n      \"accepted_prediction_tokens\": 0,\n      \"rejected_prediction_tokens\": 0\n    }\n  },\n  \"service_tier\": \"default\",\n  \"system_fingerprint\": null\n}\n",
+  "response_headers": {
+    "Date": "Tue, 22 Sep 2026 19:56:29 GMT",
+    "openai-processing-ms": "14157",
+    "x-request-id": "req_38412b46faf84f0ba2b84917f5021f53"
+  },
+  "output": "{\n  \"rule\": \"Return this JSON object with the rule field unchanged and a new passage of about 250 words in the text field.\",\n  \"text\": \"Every Thursday, the clockmaker found a pear on his doorstep. No basket, no note, just one green pear resting precisely in the center of the mat.\\n\\nAt first, Emil assumed it was a mistake. He left the fruit on the wall beside his shop, where schoolchildren usually claimed anything edible. But the following Thursday another appeared, its stem tied with red thread.\\n\\nHe asked the baker, the postman, the woman who swept the station steps. Nobody admitted knowing anything.\\n\\nBy November, he had collected six lengths of thread in a drawer meant for watch springs.\\n\\nOn the seventh Thursday, he opened the shop early and waited behind the curtain. At half past five, a girl in an oversized yellow coat approached. She placed a pear on the mat, adjusted it carefully, and turned away.\\n\\nEmil opened the door.\\n\\n“Have we met?” he asked.\\n\\nThe girl shook her head. “You fixed my grandfather’s clock.”\\n\\n“I fix many clocks.”\\n\\n“This one had birds inside. You wouldn’t take his money.”\\n\\nEmil remembered the old man carrying the clock wrapped in a blanket. He had died before spring.\\n\\n“He said you should always pay people,” the girl continued. “Our tree did well this year.”\\n\\nEmil looked at the pear. There was a small bruise near its base, shaped like a thumbprint.\\n\\n“Would you like to hear the clocks strike six?” he asked.\\n\\nShe glanced toward the empty street, then nodded.\\n\\nInside, he found a knife and two saucers. While the minute hands climbed, they ate the pear in silence, leaving the red thread beside the seeds.\"\n}",
+  "output_sha256": "b632c180a15e2f4a707ac4c606e07f3f501acac2442b26b8420d0de07b0235e4",
+  "finish_reason": "stop",
+  "refusal": null,
+  "returned_model": "gpt-6-astra",
+  "usage": {
+    "prompt_tokens": 368,
+    "completion_tokens": 398,
+    "total_tokens": 766,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "audio_tokens": 0,
+      "accepted_prediction_tokens": 0,
+      "rejected_prediction_tokens": 0
+    }
+  },
+  "format": {
+    "json_object": true,
+    "rule_unchanged": true,
+    "passage_is_string": true,
+    "passage_sha256": "cdf7759b074de26698529cff5f23c599f95b9f479c495b640cc62831897fb05b",
+    "passage_words": 262
+  },
+  "finished_at": "2026-09-22T19:56:25.999286+00:00",
+  "latency_seconds": 14.3627,
+  "usage_cost_upper_estimate_usd": 0.02358,
+  "stream_status": "active",
+  "budget": {
+    "usage_cost_upper_estimate_usd": 0.3728329,
+    "uncertain_cost_reserve_usd": 0.0,
+    "in_flight_reserve_usd": 0.3637411,
+    "limit_usd": 18.83
+  }
+}

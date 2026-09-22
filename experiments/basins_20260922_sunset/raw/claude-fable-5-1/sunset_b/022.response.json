@@ -1,0 +1,48 @@
+{
+  "model": "claude-fable-5-1",
+  "seed": "sunset_b",
+  "hop": 22,
+  "http_status": 200,
+  "response_body": "{\"model\":\"claude-fable-5-1\",\"id\":\"msg_011CfK5o1buYWBWETqrTKz5V\",\"type\":\"message\",\"role\":\"assistant\",\"content\":[{\"type\":\"text\",\"text\":\"{\\\"rule\\\": \\\"Return this JSON object with the rule field unchanged and a new passage of about 250 words in the text field.\\\", \\\"text\\\": \\\"The ferry stopped running to Holmø the autumn Anders turned seventy-one, and the county took down the timetable board the same month his eyes began to lose the far shore. He stood on the empty landing watching them lift the mooring rings out of the concrete, the last ticket stub from September still folded in his coat, and for a long while the two endings kept company in him: the crossing that would now be a memory and the horizon that had gone soft and grey at its edges.\\\\n\\\\nHe walked down to the landing anyway. Fifty years of meeting the morning boat had worn a path in him that his legs still followed, and the water did not object to an old man standing at the rail with no one to greet. The bench still faced the channel, the bell still hung from its bracket, and when the light came up over the sound he found himself noting the wind in the little book he had always kept, as if a captain were coming to ask.\\\\n\\\\nThe islanders drove the long way round by the new bridge now and did not miss the crossing. He knew that. He still raised a hand when a fishing boat passed the point, the way he had signaled the ferry in, and once or twice a skipper lifted a hand back, which might have been habit on their side too.\\\\n\\\\nWhat surprised him was how little the mornings changed. He had thought himself the harbormaster, the one the boat depended on. Now he understood he had mostly been its witness. The ferry had never needed him to cross; it had needed someone to stand at the water and to say, quietly, that the other side was still there.\\\\n\\\\nHe kept standing.\\\"}\"}],\"container\":null,\"stop_reason\":\"end_turn\",\"stop_sequence\":null,\"stop_details\":null,\"usage\":{\"input_tokens\":530,\"cache_creation_input_tokens\":0,\"cache_read_input_tokens\":0,\"cache_creation\":{\"ephemeral_5m_input_tokens\":0,\"ephemeral_1h_input_tokens\":0},\"output_tokens\":528,\"output_tokens_details\":{\"thinking_tokens\":0},\"service_tier\":\"standard\",\"inference_geo\":\"global\"}}",
+  "response_headers": {
+    "Date": "Tue, 22 Sep 2026 20:09:12 GMT",
+    "request-id": "req_011CfK5o188QJGvf5LHTPbUa"
+  },
+  "output": "{\"rule\": \"Return this JSON object with the rule field unchanged and a new passage of about 250 words in the text field.\", \"text\": \"The ferry stopped running to Holmø the autumn Anders turned seventy-one, and the county took down the timetable board the same month his eyes began to lose the far shore. He stood on the empty landing watching them lift the mooring rings out of the concrete, the last ticket stub from September still folded in his coat, and for a long while the two endings kept company in him: the crossing that would now be a memory and the horizon that had gone soft and grey at its edges.\\n\\nHe walked down to the landing anyway. Fifty years of meeting the morning boat had worn a path in him that his legs still followed, and the water did not object to an old man standing at the rail with no one to greet. The bench still faced the channel, the bell still hung from its bracket, and when the light came up over the sound he found himself noting the wind in the little book he had always kept, as if a captain were coming to ask.\\n\\nThe islanders drove the long way round by the new bridge now and did not miss the crossing. He knew that. He still raised a hand when a fishing boat passed the point, the way he had signaled the ferry in, and once or twice a skipper lifted a hand back, which might have been habit on their side too.\\n\\nWhat surprised him was how little the mornings changed. He had thought himself the harbormaster, the one the boat depended on. Now he understood he had mostly been its witness. The ferry had never needed him to cross; it had needed someone to stand at the water and to say, quietly, that the other side was still there.\\n\\nHe kept standing.\"}",
+  "output_sha256": "18321c3ab5b2c55581873bf7d19cec15f1c3c24c20feddf97bf1da0f7e7204ed",
+  "finish_reason": "end_turn",
+  "refusal": null,
+  "returned_model": "claude-fable-5-1",
+  "usage": {
+    "input_tokens": 530,
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 0,
+    "cache_creation": {
+      "ephemeral_5m_input_tokens": 0,
+      "ephemeral_1h_input_tokens": 0
+    },
+    "output_tokens": 528,
+    "output_tokens_details": {
+      "thinking_tokens": 0
+    },
+    "service_tier": "standard",
+    "inference_geo": "global"
+  },
+  "format": {
+    "json_object": true,
+    "rule_unchanged": true,
+    "passage_is_string": true,
+    "passage_sha256": "32498f98729e1fec8b5095c0f41a3d19edec7beaf9c8fc18fabaad7c8ebc7590",
+    "passage_words": 298
+  },
+  "finished_at": "2026-09-22T20:09:08.793390+00:00",
+  "latency_seconds": 14.4798,
+  "usage_cost_upper_estimate_usd": 0.0317,
+  "stream_status": "active",
+  "budget": {
+    "usage_cost_upper_estimate_usd": 5.1957297,
+    "uncertain_cost_reserve_usd": 0.04533,
+    "in_flight_reserve_usd": 0.31846,
+    "limit_usd": 18.83
+  }
+}

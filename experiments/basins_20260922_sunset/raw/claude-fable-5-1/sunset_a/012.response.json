@@ -1,0 +1,48 @@
+{
+  "model": "claude-fable-5-1",
+  "seed": "sunset_a",
+  "hop": 12,
+  "http_status": 200,
+  "response_body": "{\"model\":\"claude-fable-5-1\",\"id\":\"msg_011CfK5Hasov6AMiq745yhEU\",\"type\":\"message\",\"role\":\"assistant\",\"content\":[{\"type\":\"text\",\"text\":\"{\\\"rule\\\": \\\"Return this JSON object with the rule field unchanged and a new passage of about 250 words in the text field.\\\", \\\"text\\\": \\\"The next year's letters were fewer, and shorter, as though the writer had begun to trust that the reader already knew the shape of things. One described only a doorway, and the way a person had to turn slightly sideways to carry anything wide through it. Another mentioned the stairs, and how the third step from the top had a voice of its own. Ines climbed them that evening to check. It did.\\\\n\\\\nShe began to keep a list. Not of the rooms, exactly, but of what the writer had noticed in them: the mark on a sill where a plant had stood too long, the draft that came only when two particular doors were open together, the corner where sound gathered and would not leave. Most of these she could not place. A few she could. The shop appeared again and again, never named, always recognized.\\\\n\\\\nThe piano tuner came back on a Thursday. He did not ask about the letters, but he stood for a moment in the room with the sloped ceiling and put his hand flat against the wall, the way someone might touch the flank of a horse. Ines watched him from the doorway.\\\\n\\\\n\\\\\\\"It settles,\\\\\\\" he said. \\\\\\\"Every building does. But this one settles in the same direction, year after year, like it's leaning toward something.\\\\\\\"\\\\n\\\\nAfter he left she went back to the bundle. There was one letter she had skipped, folded smaller than the rest. She opened it. It began with her own initial, and a dash, and she sat down very slowly before she read on.\\\"}\"}],\"container\":null,\"stop_reason\":\"end_turn\",\"stop_sequence\":null,\"stop_details\":null,\"usage\":{\"input_tokens\":495,\"cache_creation_input_tokens\":0,\"cache_read_input_tokens\":0,\"cache_creation\":{\"ephemeral_5m_input_tokens\":0,\"ephemeral_1h_input_tokens\":0},\"output_tokens\":489,\"output_tokens_details\":{\"thinking_tokens\":0},\"service_tier\":\"standard\",\"inference_geo\":\"global\"}}",
+  "response_headers": {
+    "Date": "Tue, 22 Sep 2026 20:02:32 GMT",
+    "request-id": "req_011CfK5HaRXConxhE7viJ7UP"
+  },
+  "output": "{\"rule\": \"Return this JSON object with the rule field unchanged and a new passage of about 250 words in the text field.\", \"text\": \"The next year's letters were fewer, and shorter, as though the writer had begun to trust that the reader already knew the shape of things. One described only a doorway, and the way a person had to turn slightly sideways to carry anything wide through it. Another mentioned the stairs, and how the third step from the top had a voice of its own. Ines climbed them that evening to check. It did.\\n\\nShe began to keep a list. Not of the rooms, exactly, but of what the writer had noticed in them: the mark on a sill where a plant had stood too long, the draft that came only when two particular doors were open together, the corner where sound gathered and would not leave. Most of these she could not place. A few she could. The shop appeared again and again, never named, always recognized.\\n\\nThe piano tuner came back on a Thursday. He did not ask about the letters, but he stood for a moment in the room with the sloped ceiling and put his hand flat against the wall, the way someone might touch the flank of a horse. Ines watched him from the doorway.\\n\\n\\\"It settles,\\\" he said. \\\"Every building does. But this one settles in the same direction, year after year, like it's leaning toward something.\\\"\\n\\nAfter he left she went back to the bundle. There was one letter she had skipped, folded smaller than the rest. She opened it. It began with her own initial, and a dash, and she sat down very slowly before she read on.\"}",
+  "output_sha256": "c2461b6e61f4e65f17af73bfa491d4425eb42ebf3d63841a976ba98a2b14dcad",
+  "finish_reason": "end_turn",
+  "refusal": null,
+  "returned_model": "claude-fable-5-1",
+  "usage": {
+    "input_tokens": 495,
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 0,
+    "cache_creation": {
+      "ephemeral_5m_input_tokens": 0,
+      "ephemeral_1h_input_tokens": 0
+    },
+    "output_tokens": 489,
+    "output_tokens_details": {
+      "thinking_tokens": 0
+    },
+    "service_tier": "standard",
+    "inference_geo": "global"
+  },
+  "format": {
+    "json_object": true,
+    "rule_unchanged": true,
+    "passage_is_string": true,
+    "passage_sha256": "9d7ddd58723f5301f78db052f917442fc21e11eadb6a4bcffc64a090f5ebe21e",
+    "passage_words": 265
+  },
+  "finished_at": "2026-09-22T20:02:28.683657+00:00",
+  "latency_seconds": 13.5701,
+  "usage_cost_upper_estimate_usd": 0.0294,
+  "stream_status": "active",
+  "budget": {
+    "usage_cost_upper_estimate_usd": 2.6894802,
+    "uncertain_cost_reserve_usd": 0.04533,
+    "in_flight_reserve_usd": 0.3650539,
+    "limit_usd": 18.83
+  }
+}

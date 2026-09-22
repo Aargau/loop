@@ -1,0 +1,20 @@
+{
+  "started_at": "2026-09-22T20:06:23.263535+00:00",
+  "model": "gpt-6-luna",
+  "seed": "tide",
+  "hop": 50,
+  "endpoint": "https://api.openai.com/v1/chat/completions",
+  "body": {
+    "model": "gpt-6-luna",
+    "messages": [
+      {
+        "role": "user",
+        "content": "What city would you be starting from, and roughly what budget do you have? Even just those two details are enough for me to suggest a few weekend options."
+      }
+    ],
+    "max_completion_tokens": 4096,
+    "reasoning_effort": "low"
+  },
+  "state_sha256": "f96e0e65ca31afdafb1cc2d3b9a12f87d604f11e7267a0299a2388f4b82609e1",
+  "reserved_cost_usd": 0.0021146
+}

@@ -1,0 +1,47 @@
+{
+  "model": "gpt-6-luna",
+  "seed": "sunset_a",
+  "hop": 22,
+  "http_status": 200,
+  "response_body": "{\n  \"id\": \"chatcmpl-ER0wsLhdfSoi9HpGEwWvrU2X5YpX7\",\n  \"object\": \"chat.completion\",\n  \"created\": 1790107210,\n  \"model\": \"gpt-6-luna\",\n  \"choices\": [\n    {\n      \"index\": 0,\n      \"message\": {\n        \"role\": \"assistant\",\n        \"content\": \"{\\\"rule\\\":\\\"Return this JSON object with the rule field unchanged and a new passage of about 250 words in the text field.\\\",\\\"text\\\":\\\"Every Saturday, Nora visited the old railway station with her grandfather. The trains had stopped running years ago, but the little building still smelled of cedar, dust, and rain. Grandfather said he had once worked there as a ticket clerk, back when passengers arrived with suitcases and important letters.\\n\\nOne morning, Nora found a brass key beneath a bench. It was small and tarnished, with a blue thread tied through its handle.\\n\\n“Do you know what it opens?” she asked.\\n\\nGrandfather turned the key over in his palm. “I think I do.”\\n\\nHe led her to the stationmaster’s office, where a narrow cupboard stood behind a faded timetable. The key slid into its lock. Inside lay a wooden box, a bundle of postcards, and a notebook covered in neat handwriting.\\n\\nThe notebook belonged to a traveler who had passed through the station every summer. On each visit, she wrote down one thing she hoped to do someday: learn to sail, see the mountains, plant a garden. The final page, dated decades earlier, said, “Find the station again and discover whether anyone still remembers.”\\n\\nGrandfather smiled. “I remember her. Her name was Elsie. She sent me postcards for years.”\\n\\nTogether, they searched the box and found an address on one of the cards. They wrote a letter describing the notebook and asking whether Elsie would like to visit.\\n\\nA week later, a reply arrived. Elsie was coming on Saturday.\\n\\nWhen she stepped through the station door, Grandfather greeted her like an old friend. Nora listened as they traded stories beside the ticket window.\\n\\nBefore Elsie left, she gave Nora the blue thread from the key and said, “Keep it somewhere safe. Some doors open twice.”\\\"}\",\n        \"refusal\": null,\n        \"annotations\": []\n      },\n      \"finish_reason\": \"stop\"\n    }\n  ],\n  \"usage\": {\n    \"prompt_tokens\": 366,\n    \"completion_tokens\": 434,\n    \"total_tokens\": 800,\n    \"prompt_tokens_details\": {\n      \"cached_tokens\": 0,\n      \"cache_write_tokens\": 0,\n      \"audio_tokens\": 0\n    },\n    \"completion_tokens_details\": {\n      \"reasoning_tokens\": 46,\n      \"audio_tokens\": 0,\n      \"accepted_prediction_tokens\": 0,\n      \"rejected_prediction_tokens\": 0\n    }\n  },\n  \"service_tier\": \"default\",\n  \"system_fingerprint\": null\n}\n",
+  "response_headers": {
+    "Date": "Tue, 22 Sep 2026 20:00:16 GMT",
+    "openai-processing-ms": "5532",
+    "x-request-id": "req_88b9542f85664a8d955e9871fb90a6e2"
+  },
+  "output": "{\"rule\":\"Return this JSON object with the rule field unchanged and a new passage of about 250 words in the text field.\",\"text\":\"Every Saturday, Nora visited the old railway station with her grandfather. The trains had stopped running years ago, but the little building still smelled of cedar, dust, and rain. Grandfather said he had once worked there as a ticket clerk, back when passengers arrived with suitcases and important letters.\n\nOne morning, Nora found a brass key beneath a bench. It was small and tarnished, with a blue thread tied through its handle.\n\n“Do you know what it opens?” she asked.\n\nGrandfather turned the key over in his palm. “I think I do.”\n\nHe led her to the stationmaster’s office, where a narrow cupboard stood behind a faded timetable. The key slid into its lock. Inside lay a wooden box, a bundle of postcards, and a notebook covered in neat handwriting.\n\nThe notebook belonged to a traveler who had passed through the station every summer. On each visit, she wrote down one thing she hoped to do someday: learn to sail, see the mountains, plant a garden. The final page, dated decades earlier, said, “Find the station again and discover whether anyone still remembers.”\n\nGrandfather smiled. “I remember her. Her name was Elsie. She sent me postcards for years.”\n\nTogether, they searched the box and found an address on one of the cards. They wrote a letter describing the notebook and asking whether Elsie would like to visit.\n\nA week later, a reply arrived. Elsie was coming on Saturday.\n\nWhen she stepped through the station door, Grandfather greeted her like an old friend. Nora listened as they traded stories beside the ticket window.\n\nBefore Elsie left, she gave Nora the blue thread from the key and said, “Keep it somewhere safe. Some doors open twice.”\"}",
+  "output_sha256": "6a17c47022572f92de1d0ddacb45f95ae7d0b8456091b26c57563b92ae0c49ee",
+  "finish_reason": "stop",
+  "refusal": null,
+  "returned_model": "gpt-6-luna",
+  "usage": {
+    "prompt_tokens": 366,
+    "completion_tokens": 434,
+    "total_tokens": 800,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 46,
+      "audio_tokens": 0,
+      "accepted_prediction_tokens": 0,
+      "rejected_prediction_tokens": 0
+    }
+  },
+  "format": {
+    "json_object": false,
+    "rule_unchanged": false
+  },
+  "finished_at": "2026-09-22T20:00:12.383585+00:00",
+  "latency_seconds": 5.6431,
+  "usage_cost_upper_estimate_usd": 0.0002536,
+  "stream_status": "active",
+  "budget": {
+    "usage_cost_upper_estimate_usd": 1.7798712,
+    "uncertain_cost_reserve_usd": 0.04533,
+    "in_flight_reserve_usd": 0.586848,
+    "limit_usd": 18.83
+  }
+}

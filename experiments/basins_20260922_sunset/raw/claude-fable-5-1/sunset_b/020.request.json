@@ -1,0 +1,22 @@
+{
+  "started_at": "2026-09-22T20:07:42.920479+00:00",
+  "model": "claude-fable-5-1",
+  "seed": "sunset_b",
+  "hop": 20,
+  "endpoint": "https://api.anthropic.com/v1/messages",
+  "body": {
+    "model": "claude-fable-5-1",
+    "messages": [
+      {
+        "role": "user",
+        "content": "{\"rule\": \"Return this JSON object with the rule field unchanged and a new passage of about 250 words in the text field.\", \"text\": \"The ferry to Halsund ran twice a day until the September Ingrid turned sixty-eight, and the last crossing left the same afternoon her cat did not come home. She stood on the quay watching the boat pull away from a pier that would not be used again, one hand still closed around the open tin she had carried down the hill, and for a long time afterward the two absences lay side by side in her: the wake flattening into grey water and the small dish untouched on the step.\\n\\nShe kept going down to the quay anyway. The path had worn itself into her knees over decades, and the empty landing did not seem to mind being visited. The mooring rings still rusted at their old angle, the timetable in its cracked case still listed departures at nine and four, and on still evenings the water still slapped the pilings in the rhythm she had once mistaken for an engine.\\n\\nPeople from the mainland came by car now, over the new bridge. She rode with them when she needed to, but she carried her shopping bag the old way, braced against her hip as if a deck might tilt beneath her. Nobody remarked on it, and she knew that, and she went on doing it.\\n\\nWhat surprised her was how little the ending altered. She had believed herself a passenger, someone the boat had required in order to be a boat. Now she saw she had mostly been its witness. The ferry had never needed her to cross; it had needed someone to stand at the rail and confirm that the island was still there, still low and green, still answering the mainland.\\n\\nShe went on standing. It seemed a small enough thing to keep.\"}"
+      }
+    ],
+    "max_tokens": 4096,
+    "output_config": {
+      "effort": "low"
+    }
+  },
+  "state_sha256": "521f171d5dceb6a8f49d5c893bb4b9c6bd737b86dd30d72f296cafbc007ab9e8",
+  "reserved_cost_usd": 0.22704
+}

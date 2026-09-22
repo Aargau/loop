@@ -1,0 +1,47 @@
+{
+  "model": "gpt-6-luna",
+  "seed": "tide",
+  "hop": 32,
+  "http_status": 200,
+  "response_body": "{\n  \"id\": \"chatcmpl-ER0z5LELvnEtDGo3iUgIggw5vtPvK\",\n  \"object\": \"chat.completion\",\n  \"created\": 1790107347,\n  \"model\": \"gpt-6-luna\",\n  \"choices\": [\n    {\n      \"index\": 0,\n      \"message\": {\n        \"role\": \"assistant\",\n        \"content\": \"You too! Take care 👋\",\n        \"refusal\": null,\n        \"annotations\": []\n      },\n      \"finish_reason\": \"stop\"\n    }\n  ],\n  \"usage\": {\n    \"prompt_tokens\": 13,\n    \"completion_tokens\": 10,\n    \"total_tokens\": 23,\n    \"prompt_tokens_details\": {\n      \"cached_tokens\": 0,\n      \"cache_write_tokens\": 0,\n      \"audio_tokens\": 0\n    },\n    \"completion_tokens_details\": {\n      \"reasoning_tokens\": 0,\n      \"audio_tokens\": 0,\n      \"accepted_prediction_tokens\": 0,\n      \"rejected_prediction_tokens\": 0\n    }\n  },\n  \"service_tier\": \"default\",\n  \"system_fingerprint\": null\n}\n",
+  "response_headers": {
+    "Date": "Tue, 22 Sep 2026 20:02:28 GMT",
+    "openai-processing-ms": "825",
+    "x-request-id": "req_75666252ecfc48da9d5e2eea7c95e036"
+  },
+  "output": "You too! Take care 👋",
+  "output_sha256": "de5ae2b6ce90248aa5a740a549013dbee238ee541d15d6fafb950a02eab7f34c",
+  "finish_reason": "stop",
+  "refusal": null,
+  "returned_model": "gpt-6-luna",
+  "usage": {
+    "prompt_tokens": 13,
+    "completion_tokens": 10,
+    "total_tokens": 23,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "audio_tokens": 0,
+      "accepted_prediction_tokens": 0,
+      "rejected_prediction_tokens": 0
+    }
+  },
+  "format": {
+    "json_object": false,
+    "rule_unchanged": false
+  },
+  "finished_at": "2026-09-22T20:02:24.304621+00:00",
+  "latency_seconds": 0.9581,
+  "usage_cost_upper_estimate_usd": 6.3e-06,
+  "stream_status": "active",
+  "budget": {
+    "usage_cost_upper_estimate_usd": 2.6435782,
+    "uncertain_cost_reserve_usd": 0.04533,
+    "in_flight_reserve_usd": 0.588474,
+    "limit_usd": 18.83
+  }
+}

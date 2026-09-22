@@ -1,0 +1,50 @@
+{
+  "model": "gpt-6-luna",
+  "seed": "sunset_a",
+  "hop": 34,
+  "http_status": 200,
+  "response_body": "{\n  \"id\": \"chatcmpl-ER0zIR9oD6n0EIG47rcrFtHf1Iz0j\",\n  \"object\": \"chat.completion\",\n  \"created\": 1790107360,\n  \"model\": \"gpt-6-luna\",\n  \"choices\": [\n    {\n      \"index\": 0,\n      \"message\": {\n        \"role\": \"assistant\",\n        \"content\": \"{\\\"rule\\\":\\\"Return this JSON object with the rule field unchanged and a new passage of about 250 words in the text field.\\\",\\\"text\\\":\\\"Every spring, the town of Bellweather held a kite festival on the wide meadow beside the river. This year, however, the morning began without a breeze. Kites drooped from their strings, and the children waited beneath a sky that seemed perfectly still.\\\\n\\\\nNico had brought a bright yellow kite shaped like a whale. He had spent weeks making it with his grandmother, carefully gluing the paper fins and painting a smiling face. He didn’t want to pack it away without trying.\\\\n\\\\n“Maybe we can find a little wind,” his friend Lila suggested. She pointed toward the hill at the edge of the meadow. The two climbed to the top, where the air moved just enough to flutter a ribbon tied to a fence post.\\\\n\\\\nNico held the kite while Lila ran downhill with the string. For a moment, the whale bumped along the grass. Then a gentle gust caught its tail, and it rose above the hill. Nico laughed as the kite climbed higher, its yellow body bright against the clouds.\\\\n\\\\nOther children hurried over. Some ran with their kites, while others waved large pieces of cardboard to stir the air. Soon, a dozen colorful shapes floated above the meadow. Even the grown-ups joined in, cheering whenever a kite lifted.\\\\n\\\\nThe festival organizers had planned prizes for the highest, smallest, and most unusual kites. Instead, they announced a new award: the Helping Hands Prize. It went to everyone who had helped someone else get a kite into the sky.\\\\n\\\\nAs the afternoon breeze strengthened, the meadow filled with dancing colors. Nico looked up at his whale and realized that the best part of the day wasn’t winning—it was watching everyone help the sky come alive.\\\"}\",\n        \"refusal\": null,\n        \"annotations\": []\n      },\n      \"finish_reason\": \"stop\"\n    }\n  ],\n  \"usage\": {\n    \"prompt_tokens\": 355,\n    \"completion_tokens\": 436,\n    \"total_tokens\": 791,\n    \"prompt_tokens_details\": {\n      \"cached_tokens\": 0,\n      \"cache_write_tokens\": 0,\n      \"audio_tokens\": 0\n    },\n    \"completion_tokens_details\": {\n      \"reasoning_tokens\": 46,\n      \"audio_tokens\": 0,\n      \"accepted_prediction_tokens\": 0,\n      \"rejected_prediction_tokens\": 0\n    }\n  },\n  \"service_tier\": \"default\",\n  \"system_fingerprint\": null\n}\n",
+  "response_headers": {
+    "Date": "Tue, 22 Sep 2026 20:02:46 GMT",
+    "openai-processing-ms": "5581",
+    "x-request-id": "req_49ca654810cb4526b1be1d32f6ab4419"
+  },
+  "output": "{\"rule\":\"Return this JSON object with the rule field unchanged and a new passage of about 250 words in the text field.\",\"text\":\"Every spring, the town of Bellweather held a kite festival on the wide meadow beside the river. This year, however, the morning began without a breeze. Kites drooped from their strings, and the children waited beneath a sky that seemed perfectly still.\\n\\nNico had brought a bright yellow kite shaped like a whale. He had spent weeks making it with his grandmother, carefully gluing the paper fins and painting a smiling face. He didn’t want to pack it away without trying.\\n\\n“Maybe we can find a little wind,” his friend Lila suggested. She pointed toward the hill at the edge of the meadow. The two climbed to the top, where the air moved just enough to flutter a ribbon tied to a fence post.\\n\\nNico held the kite while Lila ran downhill with the string. For a moment, the whale bumped along the grass. Then a gentle gust caught its tail, and it rose above the hill. Nico laughed as the kite climbed higher, its yellow body bright against the clouds.\\n\\nOther children hurried over. Some ran with their kites, while others waved large pieces of cardboard to stir the air. Soon, a dozen colorful shapes floated above the meadow. Even the grown-ups joined in, cheering whenever a kite lifted.\\n\\nThe festival organizers had planned prizes for the highest, smallest, and most unusual kites. Instead, they announced a new award: the Helping Hands Prize. It went to everyone who had helped someone else get a kite into the sky.\\n\\nAs the afternoon breeze strengthened, the meadow filled with dancing colors. Nico looked up at his whale and realized that the best part of the day wasn’t winning—it was watching everyone help the sky come alive.\"}",
+  "output_sha256": "5c94e8666114d5e021bab8ecc0bc22163344ec912a890d10b7cf9c321ca9794e",
+  "finish_reason": "stop",
+  "refusal": null,
+  "returned_model": "gpt-6-luna",
+  "usage": {
+    "prompt_tokens": 355,
+    "completion_tokens": 436,
+    "total_tokens": 791,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 46,
+      "audio_tokens": 0,
+      "accepted_prediction_tokens": 0,
+      "rejected_prediction_tokens": 0
+    }
+  },
+  "format": {
+    "json_object": true,
+    "rule_unchanged": true,
+    "passage_is_string": true,
+    "passage_sha256": "97dac5dbb95b1645c0f12c2a7dfd47c91787c55a5a0f03cc0ebc0968fe5d34b1",
+    "passage_words": 285
+  },
+  "finished_at": "2026-09-22T20:02:42.433163+00:00",
+  "latency_seconds": 5.7171,
+  "usage_cost_upper_estimate_usd": 0.0002535,
+  "stream_status": "active",
+  "budget": {
+    "usage_cost_upper_estimate_usd": 2.7666274,
+    "uncertain_cost_reserve_usd": 0.04533,
+    "in_flight_reserve_usd": 0.590554,
+    "limit_usd": 18.83
+  }
+}

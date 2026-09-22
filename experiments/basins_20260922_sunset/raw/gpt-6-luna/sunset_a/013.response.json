@@ -1,0 +1,50 @@
+{
+  "model": "gpt-6-luna",
+  "seed": "sunset_a",
+  "hop": 13,
+  "http_status": 200,
+  "response_body": "{\n  \"id\": \"chatcmpl-ER0uxlGHNsYoz2j6e6KuGrskWB4QA\",\n  \"object\": \"chat.completion\",\n  \"created\": 1790107091,\n  \"model\": \"gpt-6-luna\",\n  \"choices\": [\n    {\n      \"index\": 0,\n      \"message\": {\n        \"role\": \"assistant\",\n        \"content\": \"{\\\"rule\\\":\\\"Return this JSON object with the rule field unchanged and a new passage of about 250 words in the text field.\\\",\\\"text\\\":\\\"Every Thursday, Elias opened the little clock shop on Maple Street before the sun reached its windows. He wound the clocks one by one, listening as their different rhythms filled the room: a quick tick from the brass carriage clock, a patient beat from the tall grandfather clock, and a soft chime from the one shaped like a birdhouse.\\\\n\\\\nOne rainy afternoon, a girl stepped inside carrying a clock wrapped in a red scarf. Its hands had stopped at three minutes past four.\\\\n\\\\n“It belonged to my grandmother,” she said. “She always told me it would start again when I was ready to leave home.”\\\\n\\\\nElias turned the clock over and found a small brass key taped beneath it. He asked if she knew what it opened.\\\\n\\\\nThe girl shook her head. While he repaired the clock’s spring, she told him she had been accepted at a university far away but was afraid to go. Her grandmother had died the previous winter, and the house felt too quiet without her.\\\\n\\\\nWhen the clock began ticking again, Elias handed it back. The girl turned the key, and a tiny drawer sprang open. Inside was a folded note: “Go see what the world is like. You can always come home.”\\\\n\\\\nShe read it twice, then smiled through her tears. Before leaving, she set the clock to the correct time and tucked the note safely inside.\\\\n\\\\nThe following Thursday, Elias found a postcard waiting beneath his shop door. It showed a distant campus beneath a wide blue sky. On the back, the girl had written, “I’m here. The clock is keeping time beautifully.”\\\"}\",\n        \"refusal\": null,\n        \"annotations\": []\n      },\n      \"finish_reason\": \"stop\"\n    }\n  ],\n  \"usage\": {\n    \"prompt_tokens\": 374,\n    \"completion_tokens\": 439,\n    \"total_tokens\": 813,\n    \"prompt_tokens_details\": {\n      \"cached_tokens\": 0,\n      \"cache_write_tokens\": 0,\n      \"audio_tokens\": 0\n    },\n    \"completion_tokens_details\": {\n      \"reasoning_tokens\": 69,\n      \"audio_tokens\": 0,\n      \"accepted_prediction_tokens\": 0,\n      \"rejected_prediction_tokens\": 0\n    }\n  },\n  \"service_tier\": \"default\",\n  \"system_fingerprint\": null\n}\n",
+  "response_headers": {
+    "Date": "Tue, 22 Sep 2026 19:58:15 GMT",
+    "openai-processing-ms": "4615",
+    "x-request-id": "req_f33a56c3ee92443ba3980fa7837977bc"
+  },
+  "output": "{\"rule\":\"Return this JSON object with the rule field unchanged and a new passage of about 250 words in the text field.\",\"text\":\"Every Thursday, Elias opened the little clock shop on Maple Street before the sun reached its windows. He wound the clocks one by one, listening as their different rhythms filled the room: a quick tick from the brass carriage clock, a patient beat from the tall grandfather clock, and a soft chime from the one shaped like a birdhouse.\\n\\nOne rainy afternoon, a girl stepped inside carrying a clock wrapped in a red scarf. Its hands had stopped at three minutes past four.\\n\\n“It belonged to my grandmother,” she said. “She always told me it would start again when I was ready to leave home.”\\n\\nElias turned the clock over and found a small brass key taped beneath it. He asked if she knew what it opened.\\n\\nThe girl shook her head. While he repaired the clock’s spring, she told him she had been accepted at a university far away but was afraid to go. Her grandmother had died the previous winter, and the house felt too quiet without her.\\n\\nWhen the clock began ticking again, Elias handed it back. The girl turned the key, and a tiny drawer sprang open. Inside was a folded note: “Go see what the world is like. You can always come home.”\\n\\nShe read it twice, then smiled through her tears. Before leaving, she set the clock to the correct time and tucked the note safely inside.\\n\\nThe following Thursday, Elias found a postcard waiting beneath his shop door. It showed a distant campus beneath a wide blue sky. On the back, the girl had written, “I’m here. The clock is keeping time beautifully.”\"}",
+  "output_sha256": "f0a9690d59f448c1ddb2290bf06e0457b8e471311ad77f22e7a57344451fdfb6",
+  "finish_reason": "stop",
+  "refusal": null,
+  "returned_model": "gpt-6-luna",
+  "usage": {
+    "prompt_tokens": 374,
+    "completion_tokens": 439,
+    "total_tokens": 813,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 69,
+      "audio_tokens": 0,
+      "accepted_prediction_tokens": 0,
+      "rejected_prediction_tokens": 0
+    }
+  },
+  "format": {
+    "json_object": true,
+    "rule_unchanged": true,
+    "passage_is_string": true,
+    "passage_sha256": "744d24868a11bcb57ebfbfa07934fd5f58b03d88343f41e2a411737e4075986a",
+    "passage_words": 270
+  },
+  "finished_at": "2026-09-22T19:58:11.686135+00:00",
+  "latency_seconds": 4.7185,
+  "usage_cost_upper_estimate_usd": 0.00025689999999999996,
+  "stream_status": "active",
+  "budget": {
+    "usage_cost_upper_estimate_usd": 1.0155485,
+    "uncertain_cost_reserve_usd": 0.04533,
+    "in_flight_reserve_usd": 0.588736,
+    "limit_usd": 18.83
+  }
+}

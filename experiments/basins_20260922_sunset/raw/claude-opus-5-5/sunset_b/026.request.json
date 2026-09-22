@@ -1,0 +1,22 @@
+{
+  "started_at": "2026-09-22T20:07:04.427814+00:00",
+  "model": "claude-opus-5-5",
+  "seed": "sunset_b",
+  "hop": 26,
+  "endpoint": "https://api.anthropic.com/v1/messages",
+  "body": {
+    "model": "claude-opus-5-5",
+    "messages": [
+      {
+        "role": "user",
+        "content": "```json\n{\"rule\": \"Return this JSON object with the rule field unchanged and a new passage of about 250 words in the text field.\", \"text\": \"The lighthouse on Carrow Point had been automated for nearly thirty years, but Edith Marsh still climbed its spiral stairs every evening at dusk. The coast guard had long since stopped paying her, and the town council had twice suggested, politely, that she might enjoy a quieter retirement. Edith ignored them both. She polished the brass railings, logged the passing ships in a leather notebook, and wiped the salt from the great glass lens until it gleamed. Nobody in town quite understood why. The harbor master assumed she was lonely. The librarian believed she was writing a memoir. A group of teenagers insisted, with great confidence, that the lighthouse was haunted and Edith was its keeper in more ways than one. Then, one October night, a storm rolled in faster than any forecast had predicted. The automated beacon flickered, sputtered, and went dark as the power lines along the point snapped in the wind. Out on the black water, a small fishing boat was struggling toward the harbor, its crew unable to see the rocks. Edith did not hesitate. From a cabinet no one had opened in decades, she pulled out an old kerosene lantern and a hand-cranked signal lamp. For three hours she stood at the top of the tower, turning the crank until her arms ached, sweeping a thin beam across the waves. The boat came home safely just before dawn. The next week, the town council held a meeting. This time, nobody suggested retirement. Instead, they voted to put Edith back on the payroll.\"}\n```"
+      }
+    ],
+    "max_tokens": 4096,
+    "output_config": {
+      "effort": "low"
+    }
+  },
+  "state_sha256": "2d196ad87822add926bd026eaaea22d445e812461e8af9016c93121d7a4dd89e",
+  "reserved_cost_usd": 0.090496
+}

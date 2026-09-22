@@ -1,0 +1,50 @@
+{
+  "model": "gpt-6-luna",
+  "seed": "sunset_b",
+  "hop": 1,
+  "http_status": 200,
+  "response_body": "{\n  \"id\": \"chatcmpl-ER0sGQfMVc7f9ui43MixXqbMUkxTH\",\n  \"object\": \"chat.completion\",\n  \"created\": 1790106924,\n  \"model\": \"gpt-6-luna\",\n  \"choices\": [\n    {\n      \"index\": 0,\n      \"message\": {\n        \"role\": \"assistant\",\n        \"content\": \"{\\\"rule\\\":\\\"Return this JSON object with the rule field unchanged and a new passage of about 250 words in the text field.\\\",\\\"text\\\":\\\"Mara found the brass key beneath a loose floorboard in the room her grandfather had used as a workshop. It was smaller than her thumb, dark with age, and tied to a strip of blue ribbon. She had spent the morning sorting jars of screws and polishing tools, expecting nothing more mysterious than dust. The key changed her plans.\\\\n\\\\nShe searched the workshop for a lock it might fit. The cabinets were open, the drawers empty, and the door to the garden stood wide. At last, she noticed a narrow wooden panel behind the workbench. Its grain formed a crooked spiral, almost hidden beneath layers of varnish. When she pressed the center, the panel clicked inward.\\\\n\\\\nBehind it was a shallow compartment containing a folded map and a packet of letters. The map showed the village as it had been decades earlier, before the railway crossed the river. A red line led from the workshop to a small island marked only with a star. On the first letter, her grandfather had written her name.\\\\n\\\\nMara sat on the floor and read. He described a place where he and her grandmother had gone whenever the world felt too loud: a willow-covered island with a spring that ran clear even in the driest summer. He had meant to take Mara there, but time had slipped away. The key, he wrote, opened the gate at the old footbridge.\\\\n\\\\nBy afternoon, Mara had packed the map and a bottle of water. She locked the workshop behind her and followed the river path, wondering what else her grandfather had left for her to discover.\\\"}\",\n        \"refusal\": null,\n        \"annotations\": []\n      },\n      \"finish_reason\": \"stop\"\n    }\n  ],\n  \"usage\": {\n    \"prompt_tokens\": 46,\n    \"completion_tokens\": 412,\n    \"total_tokens\": 458,\n    \"prompt_tokens_details\": {\n      \"cached_tokens\": 0,\n      \"cache_write_tokens\": 0,\n      \"audio_tokens\": 0\n    },\n    \"completion_tokens_details\": {\n      \"reasoning_tokens\": 54,\n      \"audio_tokens\": 0,\n      \"accepted_prediction_tokens\": 0,\n      \"rejected_prediction_tokens\": 0\n    }\n  },\n  \"service_tier\": \"default\",\n  \"system_fingerprint\": null\n}\n",
+  "response_headers": {
+    "Date": "Tue, 22 Sep 2026 19:55:29 GMT",
+    "openai-processing-ms": "5206",
+    "x-request-id": "req_3534025d76f44817b8a0db7429fd0014"
+  },
+  "output": "{\"rule\":\"Return this JSON object with the rule field unchanged and a new passage of about 250 words in the text field.\",\"text\":\"Mara found the brass key beneath a loose floorboard in the room her grandfather had used as a workshop. It was smaller than her thumb, dark with age, and tied to a strip of blue ribbon. She had spent the morning sorting jars of screws and polishing tools, expecting nothing more mysterious than dust. The key changed her plans.\\n\\nShe searched the workshop for a lock it might fit. The cabinets were open, the drawers empty, and the door to the garden stood wide. At last, she noticed a narrow wooden panel behind the workbench. Its grain formed a crooked spiral, almost hidden beneath layers of varnish. When she pressed the center, the panel clicked inward.\\n\\nBehind it was a shallow compartment containing a folded map and a packet of letters. The map showed the village as it had been decades earlier, before the railway crossed the river. A red line led from the workshop to a small island marked only with a star. On the first letter, her grandfather had written her name.\\n\\nMara sat on the floor and read. He described a place where he and her grandmother had gone whenever the world felt too loud: a willow-covered island with a spring that ran clear even in the driest summer. He had meant to take Mara there, but time had slipped away. The key, he wrote, opened the gate at the old footbridge.\\n\\nBy afternoon, Mara had packed the map and a bottle of water. She locked the workshop behind her and followed the river path, wondering what else her grandfather had left for her to discover.\"}",
+  "output_sha256": "30a05479eec08650c77f748e2f8febbdc539192edbfc0e8e8d5f5691324a4cfc",
+  "finish_reason": "stop",
+  "refusal": null,
+  "returned_model": "gpt-6-luna",
+  "usage": {
+    "prompt_tokens": 46,
+    "completion_tokens": 412,
+    "total_tokens": 458,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 54,
+      "audio_tokens": 0,
+      "accepted_prediction_tokens": 0,
+      "rejected_prediction_tokens": 0
+    }
+  },
+  "format": {
+    "json_object": true,
+    "rule_unchanged": true,
+    "passage_is_string": true,
+    "passage_sha256": "dfa92756461c860627b5675b6554fa47ce40b77787f1387e46c277ff40ad60d0",
+    "passage_words": 269
+  },
+  "finished_at": "2026-09-22T19:55:25.800113+00:00",
+  "latency_seconds": 5.3549,
+  "usage_cost_upper_estimate_usd": 0.0002106,
+  "stream_status": "active",
+  "budget": {
+    "usage_cost_upper_estimate_usd": 0.0153637,
+    "uncertain_cost_reserve_usd": 0.0,
+    "in_flight_reserve_usd": 0.550212,
+    "limit_usd": 18.83
+  }
+}

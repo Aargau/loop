@@ -1,0 +1,50 @@
+{
+  "model": "gpt-6-astra",
+  "seed": "sunset_a",
+  "hop": 5,
+  "http_status": 200,
+  "response_body": "{\n  \"id\": \"chatcmpl-ER0vAxzdqts2D0heEOkK7dWgPO4OS\",\n  \"object\": \"chat.completion\",\n  \"created\": 1790107104,\n  \"model\": \"gpt-6-astra\",\n  \"choices\": [\n    {\n      \"index\": 0,\n      \"message\": {\n        \"role\": \"assistant\",\n        \"content\": \"{\\n  \\\"rule\\\": \\\"Return this JSON object with the rule field unchanged and a new passage of about 250 words in the text field.\\\",\\n  \\\"text\\\": \\\"The council gave Martin until Friday to empty the allotment shed. On Thursday evening, he arrived with three cardboard boxes and a flask of tea.\\\\n\\\\nMost of the tools belonged to his brother. Martin could identify the spade by its split handle, repaired with yellow tape. He had never learned the names of the smaller things.\\\\n\\\\nRain began while he was sorting seed packets.\\\\n\\\\nSomeone knocked on the open door.\\\\n\\\\nA girl stood outside holding a bicycle helmet. She was perhaps fourteen.\\\\n\\\\n“Is David here?”\\\\n\\\\n“No,” Martin said. “He died in February.”\\\\n\\\\nShe looked past him at the hook where David’s coat still hung.\\\\n\\\\n“Oh.”\\\\n\\\\n“Did you know him?”\\\\n\\\\n“He was growing something for me.”\\\\n\\\\nMartin waited.\\\\n\\\\n“For school. We were supposed to grow beans, but mine went mouldy.”\\\\n\\\\nAlong the windowsill stood five pots. Four contained dry stalks. In the fifth, a green shoot leaned against a pencil.\\\\n\\\\n“This one?” he asked.\\\\n\\\\nShe stepped inside and examined the pot. Her name was written on its side in thick black marker: AMIRA.\\\\n\\\\n“I forgot to come back,” she said.\\\\n\\\\n“He seems to have watered it.”\\\\n\\\\nMartin wrapped the pot in newspaper while she held her helmet under one arm.\\\\n\\\\n“Do you want the pencil?” she asked.\\\\n\\\\n“Better leave it where it is.”\\\\n\\\\nAfter she had gone, he opened the last seed packet. Six beans rested in the crease.\\\\n\\\\nHe put them in his coat pocket, then took the coat from its hook. There was room for both coats in the largest box, but he folded his brother’s carefully and carried it out over his arm.\\\"\\n}\",\n        \"refusal\": null,\n        \"annotations\": []\n      },\n      \"finish_reason\": \"stop\"\n    }\n  ],\n  \"usage\": {\n    \"prompt_tokens\": 419,\n    \"completion_tokens\": 414,\n    \"total_tokens\": 833,\n    \"prompt_tokens_details\": {\n      \"cached_tokens\": 0,\n      \"cache_write_tokens\": 0,\n      \"audio_tokens\": 0\n    },\n    \"completion_tokens_details\": {\n      \"reasoning_tokens\": 0,\n      \"audio_tokens\": 0,\n      \"accepted_prediction_tokens\": 0,\n      \"rejected_prediction_tokens\": 0\n    }\n  },\n  \"service_tier\": \"default\",\n  \"system_fingerprint\": null\n}\n",
+  "response_headers": {
+    "Date": "Tue, 22 Sep 2026 19:58:40 GMT",
+    "openai-processing-ms": "16753",
+    "x-request-id": "req_701edb6f3db243ea86001f474f55799c"
+  },
+  "output": "{\n  \"rule\": \"Return this JSON object with the rule field unchanged and a new passage of about 250 words in the text field.\",\n  \"text\": \"The council gave Martin until Friday to empty the allotment shed. On Thursday evening, he arrived with three cardboard boxes and a flask of tea.\\n\\nMost of the tools belonged to his brother. Martin could identify the spade by its split handle, repaired with yellow tape. He had never learned the names of the smaller things.\\n\\nRain began while he was sorting seed packets.\\n\\nSomeone knocked on the open door.\\n\\nA girl stood outside holding a bicycle helmet. She was perhaps fourteen.\\n\\n“Is David here?”\\n\\n“No,” Martin said. “He died in February.”\\n\\nShe looked past him at the hook where David’s coat still hung.\\n\\n“Oh.”\\n\\n“Did you know him?”\\n\\n“He was growing something for me.”\\n\\nMartin waited.\\n\\n“For school. We were supposed to grow beans, but mine went mouldy.”\\n\\nAlong the windowsill stood five pots. Four contained dry stalks. In the fifth, a green shoot leaned against a pencil.\\n\\n“This one?” he asked.\\n\\nShe stepped inside and examined the pot. Her name was written on its side in thick black marker: AMIRA.\\n\\n“I forgot to come back,” she said.\\n\\n“He seems to have watered it.”\\n\\nMartin wrapped the pot in newspaper while she held her helmet under one arm.\\n\\n“Do you want the pencil?” she asked.\\n\\n“Better leave it where it is.”\\n\\nAfter she had gone, he opened the last seed packet. Six beans rested in the crease.\\n\\nHe put them in his coat pocket, then took the coat from its hook. There was room for both coats in the largest box, but he folded his brother’s carefully and carried it out over his arm.\"\n}",
+  "output_sha256": "68af4ebf99c8735bbd5ae98a17498e3ab10ae1882c0a1dd2db7ed1d97142e22b",
+  "finish_reason": "stop",
+  "refusal": null,
+  "returned_model": "gpt-6-astra",
+  "usage": {
+    "prompt_tokens": 419,
+    "completion_tokens": 414,
+    "total_tokens": 833,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "audio_tokens": 0,
+      "accepted_prediction_tokens": 0,
+      "rejected_prediction_tokens": 0
+    }
+  },
+  "format": {
+    "json_object": true,
+    "rule_unchanged": true,
+    "passage_is_string": true,
+    "passage_sha256": "c3cd140795fd4e0b62e37034e7bf19b916715eebe887b9d73827a0bce5401594",
+    "passage_words": 265
+  },
+  "finished_at": "2026-09-22T19:58:36.571662+00:00",
+  "latency_seconds": 16.9721,
+  "usage_cost_upper_estimate_usd": 0.02489,
+  "stream_status": "active",
+  "budget": {
+    "usage_cost_upper_estimate_usd": 1.1816616,
+    "uncertain_cost_reserve_usd": 0.04533,
+    "in_flight_reserve_usd": 0.3637562,
+    "limit_usd": 18.83
+  }
+}

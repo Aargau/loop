@@ -1,0 +1,50 @@
+{
+  "model": "gpt-6-luna",
+  "seed": "sunset_b",
+  "hop": 15,
+  "http_status": 200,
+  "response_body": "{\n  \"id\": \"chatcmpl-ER0vXqiTuE8mW4aS9B0n2jto7ZCup\",\n  \"object\": \"chat.completion\",\n  \"created\": 1790107127,\n  \"model\": \"gpt-6-luna\",\n  \"choices\": [\n    {\n      \"index\": 0,\n      \"message\": {\n        \"role\": \"assistant\",\n        \"content\": \"{\\n  \\\"rule\\\": \\\"Return this JSON object with the rule field unchanged and a new passage of about 250 words in the text field.\\\",\\n  \\\"text\\\": \\\"Every Thursday, just before sunset, a small blue boat appeared beside the old pier. Nobody in Harbor Point knew who brought it there. It had no name painted on its side, and its oars were always neatly tucked beneath the seats.\\\\n\\\\nOne evening, Leo found a folded map inside the boat. A red line wound across the bay, ending at a tiny island marked with a star. He showed the map to his grandmother, who studied it for a long moment.\\\\n\\\\n“My brother and I used to row there when we were children,” she said. “There was a bell on the shore. We rang it whenever we wanted the fishing boats to come home.”\\\\n\\\\nThe next Thursday, Leo invited her to join him. They followed the map past the lighthouse and around a rocky point. On the island, wild grass brushed their knees, and gulls circled overhead. Near the water, half-buried in sand, they found a little bronze bell.\\\\n\\\\nHis grandmother lifted it and rang. The clear note carried across the bay. For a moment, she seemed younger, and Leo could almost imagine two children racing down the shore together.\\\\n\\\\nWhen they returned, a fisherman was waiting at the pier. He had heard the bell and come to ask if anyone needed help. His grandmother laughed and told him the story.\\\\n\\\\nAfter that, the boat appeared every Thursday. Sometimes Leo and his grandmother rowed to the island; sometimes they took a neighbor along. They never learned who owned the boat. But each week, someone polished the bell, and someone else left a fresh map inside.\\\\n\\\\nSoon, the people of Harbor Point began to understand: the boat was not waiting for an owner. It was waiting for a story to continue.\\\"\\n}\",\n        \"refusal\": null,\n        \"annotations\": []\n      },\n      \"finish_reason\": \"stop\"\n    }\n  ],\n  \"usage\": {\n    \"prompt_tokens\": 374,\n    \"completion_tokens\": 489,\n    \"total_tokens\": 863,\n    \"prompt_tokens_details\": {\n      \"cached_tokens\": 0,\n      \"cache_write_tokens\": 0,\n      \"audio_tokens\": 0\n    },\n    \"completion_tokens_details\": {\n      \"reasoning_tokens\": 86,\n      \"audio_tokens\": 0,\n      \"accepted_prediction_tokens\": 0,\n      \"rejected_prediction_tokens\": 0\n    }\n  },\n  \"service_tier\": \"default\",\n  \"system_fingerprint\": null\n}\n",
+  "response_headers": {
+    "Date": "Tue, 22 Sep 2026 19:58:53 GMT",
+    "openai-processing-ms": "9452",
+    "x-request-id": "req_4b33d446c9ab4af695a2473a6febfa4a"
+  },
+  "output": "{\n  \"rule\": \"Return this JSON object with the rule field unchanged and a new passage of about 250 words in the text field.\",\n  \"text\": \"Every Thursday, just before sunset, a small blue boat appeared beside the old pier. Nobody in Harbor Point knew who brought it there. It had no name painted on its side, and its oars were always neatly tucked beneath the seats.\\n\\nOne evening, Leo found a folded map inside the boat. A red line wound across the bay, ending at a tiny island marked with a star. He showed the map to his grandmother, who studied it for a long moment.\\n\\n“My brother and I used to row there when we were children,” she said. “There was a bell on the shore. We rang it whenever we wanted the fishing boats to come home.”\\n\\nThe next Thursday, Leo invited her to join him. They followed the map past the lighthouse and around a rocky point. On the island, wild grass brushed their knees, and gulls circled overhead. Near the water, half-buried in sand, they found a little bronze bell.\\n\\nHis grandmother lifted it and rang. The clear note carried across the bay. For a moment, she seemed younger, and Leo could almost imagine two children racing down the shore together.\\n\\nWhen they returned, a fisherman was waiting at the pier. He had heard the bell and come to ask if anyone needed help. His grandmother laughed and told him the story.\\n\\nAfter that, the boat appeared every Thursday. Sometimes Leo and his grandmother rowed to the island; sometimes they took a neighbor along. They never learned who owned the boat. But each week, someone polished the bell, and someone else left a fresh map inside.\\n\\nSoon, the people of Harbor Point began to understand: the boat was not waiting for an owner. It was waiting for a story to continue.\"\n}",
+  "output_sha256": "aaa477853806883845aac4122efc74e3737cd81487e980a8d3a42fdc1195ac8d",
+  "finish_reason": "stop",
+  "refusal": null,
+  "returned_model": "gpt-6-luna",
+  "usage": {
+    "prompt_tokens": 374,
+    "completion_tokens": 489,
+    "total_tokens": 863,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 86,
+      "audio_tokens": 0,
+      "accepted_prediction_tokens": 0,
+      "rejected_prediction_tokens": 0
+    }
+  },
+  "format": {
+    "json_object": true,
+    "rule_unchanged": true,
+    "passage_is_string": true,
+    "passage_sha256": "020581a06ac93de197a112ded904fee5b11cb12f3f70c4e150e1069edb866b54",
+    "passage_words": 290
+  },
+  "finished_at": "2026-09-22T19:58:49.558285+00:00",
+  "latency_seconds": 9.5407,
+  "usage_cost_upper_estimate_usd": 0.00028189999999999997,
+  "stream_status": "active",
+  "budget": {
+    "usage_cost_upper_estimate_usd": 1.2364116,
+    "uncertain_cost_reserve_usd": 0.04533,
+    "in_flight_reserve_usd": 0.58724,
+    "limit_usd": 18.83
+  }
+}

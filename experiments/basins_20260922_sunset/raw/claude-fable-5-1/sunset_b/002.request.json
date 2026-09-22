@@ -1,0 +1,22 @@
+{
+  "started_at": "2026-09-22T19:56:04.790004+00:00",
+  "model": "claude-fable-5-1",
+  "seed": "sunset_b",
+  "hop": 2,
+  "endpoint": "https://api.anthropic.com/v1/messages",
+  "body": {
+    "model": "claude-fable-5-1",
+    "messages": [
+      {
+        "role": "user",
+        "content": "{\"rule\": \"Return this JSON object with the rule field unchanged and a new passage of about 250 words in the text field.\", \"text\": \"The sun was setting behind the hills, and the last of its light spilled across the valley like something poured from a cup. Mara stood at the edge of the orchard with her hands in her coat pockets, watching the shadows lengthen between the apple trees. She had come out here every evening for a week now, though she could not have said exactly why. The house behind her was warm and full of the smell of bread, and her brother would be wondering where she had gone.\\n\\nStill, there was something in this hour that asked to be witnessed. The birds had quieted. A single cow lowed from the Hendersons' field across the road, and then even that fell silent. The hills turned from gold to violet to a deep, settled blue, and one by one the stars began to open above them.\\n\\nHer grandmother used to say that dusk was the seam of the day, the place where two cloths were stitched together and you could see the thread if you looked closely enough. Mara had thought it a silly thing to say when she was young. Now she understood it a little better. Everything felt briefly unfinished at this hour, as though the world were holding its breath before deciding what it would become.\\n\\nA light came on in the kitchen window. Her brother's silhouette moved past it, then paused, then moved again. She smiled, took one last look at the darkening ridge, and turned back toward home, the grass whispering softly against her boots.\"}"
+      }
+    ],
+    "max_tokens": 4096,
+    "output_config": {
+      "effort": "low"
+    }
+  },
+  "state_sha256": "e71f8f9a3a59fce87183a6df82628afa2e91ae2bc873a655a931bed87c65093e",
+  "reserved_cost_usd": 0.22542
+}

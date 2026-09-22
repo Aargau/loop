@@ -1,0 +1,50 @@
+{
+  "model": "gpt-6-luna",
+  "seed": "sunset_b",
+  "hop": 45,
+  "http_status": 200,
+  "response_body": "{\n  \"id\": \"chatcmpl-ER11gkbOpdvYzlWKSnNtvnuNJ9fSH\",\n  \"object\": \"chat.completion\",\n  \"created\": 1790107508,\n  \"model\": \"gpt-6-luna\",\n  \"choices\": [\n    {\n      \"index\": 0,\n      \"message\": {\n        \"role\": \"assistant\",\n        \"content\": \"{\\n  \\\"rule\\\": \\\"Return this JSON object with the rule field unchanged and a new passage of about 250 words in the text field.\\\",\\n  \\\"text\\\": \\\"The light blinked again, then vanished. Mara held her breath, watching the darkness where it had been. The letters in the tin box stirred in the wind slipping through the cracked glass. She lifted the top one. Its envelope bore the name of an old woman who lived near the church, someone Mara remembered from the list on the rocks.\\\\n\\\\n“Do you think she knows?” Elian asked.\\\\n\\\\nBefore Mara could answer, a bell sounded below them. Not the church bell—the harbor bell, ringing once though no boat was near enough to strike it. From the village came a answering glow: a lantern in an upstairs window, then another farther along the shore.\\\\n\\\\nMara unfolded the letter. Jonas’s handwriting ran across the page, hurried and slanted. He wrote that the lights beyond the water appeared only when someone remembered the lost. The letters, he said, were not messages to the dead. They were invitations to the living: names to carry, stories to return, doors to knock upon.\\\\n\\\\nAt the bottom, he had added a line just for her: “If you find this, don’t keep the light to yourself.”\\\\n\\\\nElian looked toward the village. The lanterns were multiplying, warm points in the dark. Mara tucked the letters into her coat and started down the stairs.\\\\n\\\\nThey visited the woman by the church first. She opened the door before they knocked, as though she had been waiting. When Mara spoke Jonas’s name, the woman closed her eyes and smiled.\\\\n\\\\nOutside, beyond the harbor, the pale light appeared once more. This time, from the shore, someone answered with a lantern of their own.\\\"\\n}\",\n        \"refusal\": null,\n        \"annotations\": []\n      },\n      \"finish_reason\": \"stop\"\n    }\n  ],\n  \"usage\": {\n    \"prompt_tokens\": 410,\n    \"completion_tokens\": 457,\n    \"total_tokens\": 867,\n    \"prompt_tokens_details\": {\n      \"cached_tokens\": 0,\n      \"cache_write_tokens\": 0,\n      \"audio_tokens\": 0\n    },\n    \"completion_tokens_details\": {\n      \"reasoning_tokens\": 70,\n      \"audio_tokens\": 0,\n      \"accepted_prediction_tokens\": 0,\n      \"rejected_prediction_tokens\": 0\n    }\n  },\n  \"service_tier\": \"default\",\n  \"system_fingerprint\": null\n}\n",
+  "response_headers": {
+    "Date": "Tue, 22 Sep 2026 20:05:13 GMT",
+    "openai-processing-ms": "5146",
+    "x-request-id": "req_f6a4f8c11e8a4efb967530ec1d17aad2"
+  },
+  "output": "{\n  \"rule\": \"Return this JSON object with the rule field unchanged and a new passage of about 250 words in the text field.\",\n  \"text\": \"The light blinked again, then vanished. Mara held her breath, watching the darkness where it had been. The letters in the tin box stirred in the wind slipping through the cracked glass. She lifted the top one. Its envelope bore the name of an old woman who lived near the church, someone Mara remembered from the list on the rocks.\\n\\n“Do you think she knows?” Elian asked.\\n\\nBefore Mara could answer, a bell sounded below them. Not the church bell—the harbor bell, ringing once though no boat was near enough to strike it. From the village came a answering glow: a lantern in an upstairs window, then another farther along the shore.\\n\\nMara unfolded the letter. Jonas’s handwriting ran across the page, hurried and slanted. He wrote that the lights beyond the water appeared only when someone remembered the lost. The letters, he said, were not messages to the dead. They were invitations to the living: names to carry, stories to return, doors to knock upon.\\n\\nAt the bottom, he had added a line just for her: “If you find this, don’t keep the light to yourself.”\\n\\nElian looked toward the village. The lanterns were multiplying, warm points in the dark. Mara tucked the letters into her coat and started down the stairs.\\n\\nThey visited the woman by the church first. She opened the door before they knocked, as though she had been waiting. When Mara spoke Jonas’s name, the woman closed her eyes and smiled.\\n\\nOutside, beyond the harbor, the pale light appeared once more. This time, from the shore, someone answered with a lantern of their own.\"\n}",
+  "output_sha256": "848e54ffe8e19f820451fdfce0cee742c9aad400ea50627a0e7af6098fab7707",
+  "finish_reason": "stop",
+  "refusal": null,
+  "returned_model": "gpt-6-luna",
+  "usage": {
+    "prompt_tokens": 410,
+    "completion_tokens": 457,
+    "total_tokens": 867,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 70,
+      "audio_tokens": 0,
+      "accepted_prediction_tokens": 0,
+      "rejected_prediction_tokens": 0
+    }
+  },
+  "format": {
+    "json_object": true,
+    "rule_unchanged": true,
+    "passage_is_string": true,
+    "passage_sha256": "2e39ebdeb531e5489328fa0c8656f8c035ec2f96dee4b683f9c946922485ed4c",
+    "passage_words": 269
+  },
+  "finished_at": "2026-09-22T20:05:09.246715+00:00",
+  "latency_seconds": 5.2625,
+  "usage_cost_upper_estimate_usd": 0.0002695,
+  "stream_status": "active",
+  "budget": {
+    "usage_cost_upper_estimate_usd": 3.6613092,
+    "uncertain_cost_reserve_usd": 0.04533,
+    "in_flight_reserve_usd": 0.588394,
+    "limit_usd": 18.83
+  }
+}

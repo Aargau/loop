@@ -1,0 +1,50 @@
+{
+  "model": "gpt-6-astra",
+  "seed": "sunset_a",
+  "hop": 13,
+  "http_status": 200,
+  "response_body": "{\n  \"id\": \"chatcmpl-ER11KHx6MUqHvZhPzTtpxATnKrYkW\",\n  \"object\": \"chat.completion\",\n  \"created\": 1790107486,\n  \"model\": \"gpt-6-astra\",\n  \"choices\": [\n    {\n      \"index\": 0,\n      \"message\": {\n        \"role\": \"assistant\",\n        \"content\": \"{\\n  \\\"rule\\\": \\\"Return this JSON object with the rule field unchanged and a new passage of about 250 words in the text field.\\\",\\n  \\\"text\\\": \\\"The piano tuner came on Thursday, although Ruth had meant to cancel. She remembered only when his van stopped outside.\\\\n\\\\n“Usual room?” he asked.\\\\n\\\\nShe moved aside to let him in.\\\\n\\\\nHer mother’s music was still on the stand, open at a page marked with a shopping list. Eggs, polish, something Ruth couldn’t read. The tuner lifted it onto the table and spread his tools across a square of green felt.\\\\n\\\\n“Has it been played much?”\\\\n\\\\n“Not lately.”\\\\n\\\\nHe pressed a key, listened, and pressed it again.\\\\n\\\\nRuth went to make tea. From the kitchen, the separate notes sounded less like music than someone checking each window in an empty house.\\\\n\\\\nShe brought his cup without milk, as her mother had always done.\\\\n\\\\n“You remembered,” he said.\\\\n\\\\nShe hadn’t, exactly.\\\\n\\\\nWhile he worked, she opened the piano stool. Inside were examination certificates, a metronome with its door missing, and a blue exercise book. On the first page her own name appeared in large pencil letters. Beneath it, her mother had written: Ten minutes every day is better than an hour on Sunday.\\\\n\\\\nThe tuner finished shortly before noon.\\\\n\\\\n“It’ll hold well enough,” he said. “These older ones usually do.”\\\\n\\\\nAfter he left, Ruth put the certificates back and took the cups to the kitchen. Then she returned to the stool.\\\\n\\\\nShe placed the exercise book on the stand and found the first lesson. Her feet reached the pedals now. She played the little tune twice, stumbling at the same place both times.\\\\n\\\\nOn the third attempt, she slowed down before it.\\\"\\n}\",\n        \"refusal\": null,\n        \"annotations\": []\n      },\n      \"finish_reason\": \"stop\"\n    }\n  ],\n  \"usage\": {\n    \"prompt_tokens\": 394,\n    \"completion_tokens\": 395,\n    \"total_tokens\": 789,\n    \"prompt_tokens_details\": {\n      \"cached_tokens\": 0,\n      \"cache_write_tokens\": 0,\n      \"audio_tokens\": 0\n    },\n    \"completion_tokens_details\": {\n      \"reasoning_tokens\": 0,\n      \"audio_tokens\": 0,\n      \"accepted_prediction_tokens\": 0,\n      \"rejected_prediction_tokens\": 0\n    }\n  },\n  \"service_tier\": \"default\",\n  \"system_fingerprint\": null\n}\n",
+  "response_headers": {
+    "Date": "Tue, 22 Sep 2026 20:05:01 GMT",
+    "openai-processing-ms": "14486",
+    "x-request-id": "req_b7f9f279713b4b098c311c23a9c15634"
+  },
+  "output": "{\n  \"rule\": \"Return this JSON object with the rule field unchanged and a new passage of about 250 words in the text field.\",\n  \"text\": \"The piano tuner came on Thursday, although Ruth had meant to cancel. She remembered only when his van stopped outside.\\n\\n“Usual room?” he asked.\\n\\nShe moved aside to let him in.\\n\\nHer mother’s music was still on the stand, open at a page marked with a shopping list. Eggs, polish, something Ruth couldn’t read. The tuner lifted it onto the table and spread his tools across a square of green felt.\\n\\n“Has it been played much?”\\n\\n“Not lately.”\\n\\nHe pressed a key, listened, and pressed it again.\\n\\nRuth went to make tea. From the kitchen, the separate notes sounded less like music than someone checking each window in an empty house.\\n\\nShe brought his cup without milk, as her mother had always done.\\n\\n“You remembered,” he said.\\n\\nShe hadn’t, exactly.\\n\\nWhile he worked, she opened the piano stool. Inside were examination certificates, a metronome with its door missing, and a blue exercise book. On the first page her own name appeared in large pencil letters. Beneath it, her mother had written: Ten minutes every day is better than an hour on Sunday.\\n\\nThe tuner finished shortly before noon.\\n\\n“It’ll hold well enough,” he said. “These older ones usually do.”\\n\\nAfter he left, Ruth put the certificates back and took the cups to the kitchen. Then she returned to the stool.\\n\\nShe placed the exercise book on the stand and found the first lesson. Her feet reached the pedals now. She played the little tune twice, stumbling at the same place both times.\\n\\nOn the third attempt, she slowed down before it.\"\n}",
+  "output_sha256": "f89370d7aa83e52fd158d642e961d454ab4f0f8bf32dd4942cb94602cdd621dc",
+  "finish_reason": "stop",
+  "refusal": null,
+  "returned_model": "gpt-6-astra",
+  "usage": {
+    "prompt_tokens": 394,
+    "completion_tokens": 395,
+    "total_tokens": 789,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "audio_tokens": 0,
+      "accepted_prediction_tokens": 0,
+      "rejected_prediction_tokens": 0
+    }
+  },
+  "format": {
+    "json_object": true,
+    "rule_unchanged": true,
+    "passage_is_string": true,
+    "passage_sha256": "9022f256d04305342bbb4c70ef936a185969c3d8ff9c62dde07c38ca2427f25c",
+    "passage_words": 261
+  },
+  "finished_at": "2026-09-22T20:04:57.336744+00:00",
+  "latency_seconds": 14.5899,
+  "usage_cost_upper_estimate_usd": 0.02369,
+  "stream_status": "active",
+  "budget": {
+    "usage_cost_upper_estimate_usd": 3.6101919,
+    "uncertain_cost_reserve_usd": 0.04533,
+    "in_flight_reserve_usd": 0.3619789,
+    "limit_usd": 18.83
+  }
+}

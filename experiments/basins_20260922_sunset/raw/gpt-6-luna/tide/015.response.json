@@ -1,0 +1,47 @@
+{
+  "model": "gpt-6-luna",
+  "seed": "tide",
+  "hop": 15,
+  "http_status": 200,
+  "response_body": "{\n  \"id\": \"chatcmpl-ER0vdUBKfntOFQ3yBEM5ae1CxXMKu\",\n  \"object\": \"chat.completion\",\n  \"created\": 1790107133,\n  \"model\": \"gpt-6-luna\",\n  \"choices\": [\n    {\n      \"index\": 0,\n      \"message\": {\n        \"role\": \"assistant\",\n        \"content\": \"A slightly smoother version:\\n\\n“I’d be happy to help. Would you like me to revise the wording, summarize it, or tailor it to a specific audience?”\",\n        \"refusal\": null,\n        \"annotations\": []\n      },\n      \"finish_reason\": \"stop\"\n    }\n  ],\n  \"usage\": {\n    \"prompt_tokens\": 32,\n    \"completion_tokens\": 170,\n    \"total_tokens\": 202,\n    \"prompt_tokens_details\": {\n      \"cached_tokens\": 0,\n      \"cache_write_tokens\": 0,\n      \"audio_tokens\": 0\n    },\n    \"completion_tokens_details\": {\n      \"reasoning_tokens\": 129,\n      \"audio_tokens\": 0,\n      \"accepted_prediction_tokens\": 0,\n      \"rejected_prediction_tokens\": 0\n    }\n  },\n  \"service_tier\": \"default\",\n  \"system_fingerprint\": null\n}\n",
+  "response_headers": {
+    "Date": "Tue, 22 Sep 2026 19:58:55 GMT",
+    "openai-processing-ms": "2042",
+    "x-request-id": "req_09a647ad94284a2c99b348ba2c692f99"
+  },
+  "output": "A slightly smoother version:\n\n“I’d be happy to help. Would you like me to revise the wording, summarize it, or tailor it to a specific audience?”",
+  "output_sha256": "13e553514ca4509bd74dc42bfe8337dd98987b70d13027aa820c4c9f6b67d608",
+  "finish_reason": "stop",
+  "refusal": null,
+  "returned_model": "gpt-6-luna",
+  "usage": {
+    "prompt_tokens": 32,
+    "completion_tokens": 170,
+    "total_tokens": 202,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 129,
+      "audio_tokens": 0,
+      "accepted_prediction_tokens": 0,
+      "rejected_prediction_tokens": 0
+    }
+  },
+  "format": {
+    "json_object": false,
+    "rule_unchanged": false
+  },
+  "finished_at": "2026-09-22T19:58:51.745145+00:00",
+  "latency_seconds": 2.182,
+  "usage_cost_upper_estimate_usd": 8.82e-05,
+  "stream_status": "active",
+  "budget": {
+    "usage_cost_upper_estimate_usd": 1.2364998,
+    "uncertain_cost_reserve_usd": 0.04533,
+    "in_flight_reserve_usd": 0.58724,
+    "limit_usd": 18.83
+  }
+}

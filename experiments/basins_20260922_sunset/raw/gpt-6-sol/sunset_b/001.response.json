@@ -1,0 +1,50 @@
+{
+  "model": "gpt-6-sol",
+  "seed": "sunset_b",
+  "hop": 1,
+  "http_status": 200,
+  "response_body": "{\n  \"id\": \"chatcmpl-ER0sG9mIAmuNshtyQV27Ut4Pinz33\",\n  \"object\": \"chat.completion\",\n  \"created\": 1790106924,\n  \"model\": \"gpt-6-sol\",\n  \"choices\": [\n    {\n      \"index\": 0,\n      \"message\": {\n        \"role\": \"assistant\",\n        \"content\": \"{\\\"rule\\\":\\\"Return this JSON object with the rule field unchanged and a new passage of about 250 words in the text field.\\\",\\\"text\\\":\\\"The sun was setting behind the hills when Mara reached the empty station. Its clock had stopped at half past four, though the evening train was due in minutes. She set her suitcase on the platform and listened. Somewhere beyond the tracks, a dog barked. From the station office came the dry rustle of paper.\\\\n\\\\nThe door stood ajar. Inside, a man in a railway uniform was sorting letters into neat piles. He looked up as Mara entered.\\\\n\\\\n“Is the train running?” she asked.\\\\n\\\\n“It will come,” he said, and returned to his work.\\\\n\\\\nMara waited by the doorway. Most of the envelopes were yellowed, their stamps faded. On top of one pile lay a letter addressed to her mother, at the house they had left twenty years ago. She recognized the careful handwriting of her grandfather, who had died that same winter.\\\\n\\\\n“Where did you get that?” she asked.\\\\n\\\\nThe man glanced at the envelope. “It was never collected.”\\\\n\\\\nOutside, a whistle sounded in the valley. Mara picked up the letter, but her thumb caught under the flap. She could open it now. She could carry it home and let her mother decide. The whistle sounded again, closer this time.\\\\n\\\\nShe placed the unopened letter in her coat pocket and hurried back to the platform. A single headlamp appeared around the bend. As the train slowed, she turned to thank the clerk, but the office was dark. Through its dusty window she could see a bare desk, an overturned chair, and no sign that anyone had been there that evening.\\\"}\",\n        \"refusal\": null,\n        \"annotations\": []\n      },\n      \"finish_reason\": \"stop\"\n    }\n  ],\n  \"usage\": {\n    \"prompt_tokens\": 46,\n    \"completion_tokens\": 382,\n    \"total_tokens\": 428,\n    \"prompt_tokens_details\": {\n      \"cached_tokens\": 0,\n      \"cache_write_tokens\": 0,\n      \"audio_tokens\": 0\n    },\n    \"completion_tokens_details\": {\n      \"reasoning_tokens\": 14,\n      \"audio_tokens\": 0,\n      \"accepted_prediction_tokens\": 0,\n      \"rejected_prediction_tokens\": 0\n    }\n  },\n  \"service_tier\": \"default\",\n  \"system_fingerprint\": null\n}\n",
+  "response_headers": {
+    "Date": "Tue, 22 Sep 2026 19:55:30 GMT",
+    "openai-processing-ms": "6679",
+    "x-request-id": "req_a7319d64bfad443081fd28c901f224b1"
+  },
+  "output": "{\"rule\":\"Return this JSON object with the rule field unchanged and a new passage of about 250 words in the text field.\",\"text\":\"The sun was setting behind the hills when Mara reached the empty station. Its clock had stopped at half past four, though the evening train was due in minutes. She set her suitcase on the platform and listened. Somewhere beyond the tracks, a dog barked. From the station office came the dry rustle of paper.\\n\\nThe door stood ajar. Inside, a man in a railway uniform was sorting letters into neat piles. He looked up as Mara entered.\\n\\n“Is the train running?” she asked.\\n\\n“It will come,” he said, and returned to his work.\\n\\nMara waited by the doorway. Most of the envelopes were yellowed, their stamps faded. On top of one pile lay a letter addressed to her mother, at the house they had left twenty years ago. She recognized the careful handwriting of her grandfather, who had died that same winter.\\n\\n“Where did you get that?” she asked.\\n\\nThe man glanced at the envelope. “It was never collected.”\\n\\nOutside, a whistle sounded in the valley. Mara picked up the letter, but her thumb caught under the flap. She could open it now. She could carry it home and let her mother decide. The whistle sounded again, closer this time.\\n\\nShe placed the unopened letter in her coat pocket and hurried back to the platform. A single headlamp appeared around the bend. As the train slowed, she turned to thank the clerk, but the office was dark. Through its dusty window she could see a bare desk, an overturned chair, and no sign that anyone had been there that evening.\"}",
+  "output_sha256": "27fba0169225f5214f94cc445058908a7f108ad629f73cd4d0ba2126a77adcdc",
+  "finish_reason": "stop",
+  "refusal": null,
+  "returned_model": "gpt-6-sol",
+  "usage": {
+    "prompt_tokens": 46,
+    "completion_tokens": 382,
+    "total_tokens": 428,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 14,
+      "audio_tokens": 0,
+      "accepted_prediction_tokens": 0,
+      "rejected_prediction_tokens": 0
+    }
+  },
+  "format": {
+    "json_object": true,
+    "rule_unchanged": true,
+    "passage_is_string": true,
+    "passage_sha256": "067f35c4a96a9f97f74b34daf401cc4ba613eec48d0b7f7e6c216f42abab7795",
+    "passage_words": 261
+  },
+  "finished_at": "2026-09-22T19:55:26.638804+00:00",
+  "latency_seconds": 6.7998,
+  "usage_cost_upper_estimate_usd": 0.003912,
+  "stream_status": "active",
+  "budget": {
+    "usage_cost_upper_estimate_usd": 0.0473157,
+    "uncertain_cost_reserve_usd": 0.0,
+    "in_flight_reserve_usd": 0.5100036,
+    "limit_usd": 18.83
+  }
+}

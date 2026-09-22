@@ -1,0 +1,22 @@
+{
+  "started_at": "2026-09-22T20:03:29.242850+00:00",
+  "model": "claude-opus-5-5",
+  "seed": "tide",
+  "hop": 18,
+  "endpoint": "https://api.anthropic.com/v1/messages",
+  "body": {
+    "model": "claude-opus-5-5",
+    "messages": [
+      {
+        "role": "user",
+        "content": "```json\n{\"rule\": \"Return this JSON object with the rule field unchanged and a new passage of about 250 words in the text field.\", \"text\": \"She told her father at supper, though she had meant to keep it to herself a little longer. He set down his spoon and looked at her across the table, and for a moment she thought he might not have heard. Then he stood, took his coat from the hook, and went out into the dusk without a word. She followed him down the path with the lantern swinging, its light catching on puddles and the pale undersides of heather. At the hollow he crouched beside the stake and cupped his hand around the bud as if shielding a match from the wind. He stayed like that for a long while. When he finally spoke, his voice was rough. 'She tried nine years running,' he said. 'Every spring she said the soil was wrong, or the frost came too soon, or the scion was too weak. I told her to give it up.' He retied the twine, though it did not need retying. 'I'm glad she didn't listen.' The girl said nothing. She understood now why the fresh knots had appeared on the stake, why he had never once asked about the tree and yet had never let it fall. Walking home, he took the lantern from her and held it low so she could see the path. Above them the lighthouse beam swept out across the water, steady and patient, turning and returning. That night she opened the almanac again and, beneath her own date, drew a small leaf, shading it carefully with the side of the pencil.\"}\n```"
+      }
+    ],
+    "max_tokens": 4096,
+    "output_config": {
+      "effort": "low"
+    }
+  },
+  "state_sha256": "1b1a487167511a3af40873a5386324a587bbc11525fe6963ba180b435c8d6ca3",
+  "reserved_cost_usd": 0.08994
+}

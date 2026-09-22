@@ -1,0 +1,50 @@
+{
+  "model": "gpt-6-astra",
+  "seed": "sunset_a",
+  "hop": 12,
+  "http_status": 200,
+  "response_body": "{\n  \"id\": \"chatcmpl-ER10c3VAgql3sC4jKW93JLgVFycA6\",\n  \"object\": \"chat.completion\",\n  \"created\": 1790107442,\n  \"model\": \"gpt-6-astra\",\n  \"choices\": [\n    {\n      \"index\": 0,\n      \"message\": {\n        \"role\": \"assistant\",\n        \"content\": \"{\\n  \\\"rule\\\": \\\"Return this JSON object with the rule field unchanged and a new passage of about 250 words in the text field.\\\",\\n  \\\"text\\\": \\\"The letter arrived in June, asking whether her father wished to renew his allotment. Helen put it beside the kettle and rang the number on Saturday.\\\\n\\\\n“Plot seventeen,” she said.\\\\n\\\\nThere was a sound of pages turning.\\\\n\\\\n“He always paid in person.”\\\\n\\\\n“Yes,” Helen said. “I know.”\\\\n\\\\nThe secretary told her she could have until the end of the month to clear the shed.\\\\n\\\\nShe went that afternoon with three empty boxes. At the gate, she tried the smallest key first. The second worked.\\\\n\\\\nSomeone had cut the grass along the main path. His plot was mostly weeds, though a row of onions stood near the fence. She remembered him explaining when to bend the tops over, but not what he had said.\\\\n\\\\nInside the shed were two chairs, a camping stove and a coat she had never seen him wear. Nails had been hammered into a shelf in place of hooks. From one hung a string bag containing a single gardening glove.\\\\n\\\\nHelen filled a box with packets of seed. Some were sealed; others had been folded shut and fastened with paper clips.\\\\n\\\\nA man appeared at the doorway.\\\\n\\\\n“Those onions want another fortnight.”\\\\n\\\\n“I’m giving the plot back.”\\\\n\\\\n“No hurry, then. End of the month.”\\\\n\\\\nHe offered to take the tools for the communal shed. She thanked him and kept the folding knife from the windowsill.\\\\n\\\\nBefore leaving, she pulled one onion. It was smaller than she expected, with wet soil caught in its roots.\\\\n\\\\nAt home she laid it on the draining board. Later, making supper, she used half and wrapped the rest.\\\"\\n}\",\n        \"refusal\": null,\n        \"annotations\": []\n      },\n      \"finish_reason\": \"stop\"\n    }\n  ],\n  \"usage\": {\n    \"prompt_tokens\": 393,\n    \"completion_tokens\": 391,\n    \"total_tokens\": 784,\n    \"prompt_tokens_details\": {\n      \"cached_tokens\": 0,\n      \"cache_write_tokens\": 0,\n      \"audio_tokens\": 0\n    },\n    \"completion_tokens_details\": {\n      \"reasoning_tokens\": 0,\n      \"audio_tokens\": 0,\n      \"accepted_prediction_tokens\": 0,\n      \"rejected_prediction_tokens\": 0\n    }\n  },\n  \"service_tier\": \"default\",\n  \"system_fingerprint\": null\n}\n",
+  "response_headers": {
+    "Date": "Tue, 22 Sep 2026 20:04:17 GMT",
+    "openai-processing-ms": "15175",
+    "x-request-id": "req_edcd4025b75349a38d59081e766d8589"
+  },
+  "output": "{\n  \"rule\": \"Return this JSON object with the rule field unchanged and a new passage of about 250 words in the text field.\",\n  \"text\": \"The letter arrived in June, asking whether her father wished to renew his allotment. Helen put it beside the kettle and rang the number on Saturday.\\n\\n“Plot seventeen,” she said.\\n\\nThere was a sound of pages turning.\\n\\n“He always paid in person.”\\n\\n“Yes,” Helen said. “I know.”\\n\\nThe secretary told her she could have until the end of the month to clear the shed.\\n\\nShe went that afternoon with three empty boxes. At the gate, she tried the smallest key first. The second worked.\\n\\nSomeone had cut the grass along the main path. His plot was mostly weeds, though a row of onions stood near the fence. She remembered him explaining when to bend the tops over, but not what he had said.\\n\\nInside the shed were two chairs, a camping stove and a coat she had never seen him wear. Nails had been hammered into a shelf in place of hooks. From one hung a string bag containing a single gardening glove.\\n\\nHelen filled a box with packets of seed. Some were sealed; others had been folded shut and fastened with paper clips.\\n\\nA man appeared at the doorway.\\n\\n“Those onions want another fortnight.”\\n\\n“I’m giving the plot back.”\\n\\n“No hurry, then. End of the month.”\\n\\nHe offered to take the tools for the communal shed. She thanked him and kept the folding knife from the windowsill.\\n\\nBefore leaving, she pulled one onion. It was smaller than she expected, with wet soil caught in its roots.\\n\\nAt home she laid it on the draining board. Later, making supper, she used half and wrapped the rest.\"\n}",
+  "output_sha256": "95240a8c5f41d46594ecfb23e95b8a7fc638c66781b09cf296b05a9c69764270",
+  "finish_reason": "stop",
+  "refusal": null,
+  "returned_model": "gpt-6-astra",
+  "usage": {
+    "prompt_tokens": 393,
+    "completion_tokens": 391,
+    "total_tokens": 784,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "audio_tokens": 0,
+      "accepted_prediction_tokens": 0,
+      "rejected_prediction_tokens": 0
+    }
+  },
+  "format": {
+    "json_object": true,
+    "rule_unchanged": true,
+    "passage_is_string": true,
+    "passage_sha256": "39883de007e080989b9363e1bcb6a04cac4578ab50dd91d14a01a8263cb63bb3",
+    "passage_words": 266
+  },
+  "finished_at": "2026-09-22T20:04:13.289810+00:00",
+  "latency_seconds": 15.3634,
+  "usage_cost_upper_estimate_usd": 0.02348,
+  "stream_status": "active",
+  "budget": {
+    "usage_cost_upper_estimate_usd": 3.3017963,
+    "uncertain_cost_reserve_usd": 0.04533,
+    "in_flight_reserve_usd": 0.3655313,
+    "limit_usd": 18.83
+  }
+}

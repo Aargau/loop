@@ -1,0 +1,50 @@
+{
+  "model": "gpt-6-sol",
+  "seed": "sunset_b",
+  "hop": 5,
+  "http_status": 200,
+  "response_body": "{\n  \"id\": \"chatcmpl-ER0tPQbh3J0RXWxGiOczMu3ivgVCa\",\n  \"object\": \"chat.completion\",\n  \"created\": 1790106995,\n  \"model\": \"gpt-6-sol\",\n  \"choices\": [\n    {\n      \"index\": 0,\n      \"message\": {\n        \"role\": \"assistant\",\n        \"content\": \"{\\\"rule\\\":\\\"Return this JSON object with the rule field unchanged and a new passage of about 250 words in the text field.\\\",\\\"text\\\":\\\"They spread the card on the table and put a mug on one corner to keep it flat. The measurements were precise until the last few lines. A handful of raisins. Enough cinnamon. Her grandfather had drawn a small arrow beside the word apples and written, Use the tart ones if you have them.\\\\n\\\\nMara tipped the fruit from the towel into a colander. Her mother found the cake tin and held it up to the light, checking for rust.\\\\n\\\\n“He always made it on Sundays,” she said. “Even in summer, when it was too hot to put the oven on.”\\\\n\\\\n“Did he let you help?”\\\\n\\\\n“He let me eat the bits of apple that wouldn’t fit.”\\\\n\\\\nThey worked on opposite sides of the table. Mara chopped while her mother measured flour and stirred butter into sugar. When the bowl was ready, Mara folded in the apples, skins and all. One piece slipped onto the floor, and her mother picked it up before Mara could reach it.\\\\n\\\\n“He’d have put that back in,” she said.\\\\n\\\\n“Are we going to?”\\\\n\\\\n“No.” Her mother dropped it in the bin. “He wasn’t right about everything.”\\\\n\\\\nThe batter filled the tin nearly to the rim. Once it was in the oven, they washed the bowls and cleared a space on the counter for the cake to cool. Mara looked through the window at the branch beside the path. There was still work to do outside, but her mother put the kettle on, and Mara stayed.\\\"}\",\n        \"refusal\": null,\n        \"annotations\": []\n      },\n      \"finish_reason\": \"stop\"\n    }\n  ],\n  \"usage\": {\n    \"prompt_tokens\": 377,\n    \"completion_tokens\": 381,\n    \"total_tokens\": 758,\n    \"prompt_tokens_details\": {\n      \"cached_tokens\": 0,\n      \"cache_write_tokens\": 0,\n      \"audio_tokens\": 0\n    },\n    \"completion_tokens_details\": {\n      \"reasoning_tokens\": 25,\n      \"audio_tokens\": 0,\n      \"accepted_prediction_tokens\": 0,\n      \"rejected_prediction_tokens\": 0\n    }\n  },\n  \"service_tier\": \"default\",\n  \"system_fingerprint\": null\n}\n",
+  "response_headers": {
+    "Date": "Tue, 22 Sep 2026 19:56:42 GMT",
+    "openai-processing-ms": "6735",
+    "x-request-id": "req_44a12e111a9341139ecb4cb595aebd45"
+  },
+  "output": "{\"rule\":\"Return this JSON object with the rule field unchanged and a new passage of about 250 words in the text field.\",\"text\":\"They spread the card on the table and put a mug on one corner to keep it flat. The measurements were precise until the last few lines. A handful of raisins. Enough cinnamon. Her grandfather had drawn a small arrow beside the word apples and written, Use the tart ones if you have them.\\n\\nMara tipped the fruit from the towel into a colander. Her mother found the cake tin and held it up to the light, checking for rust.\\n\\n“He always made it on Sundays,” she said. “Even in summer, when it was too hot to put the oven on.”\\n\\n“Did he let you help?”\\n\\n“He let me eat the bits of apple that wouldn’t fit.”\\n\\nThey worked on opposite sides of the table. Mara chopped while her mother measured flour and stirred butter into sugar. When the bowl was ready, Mara folded in the apples, skins and all. One piece slipped onto the floor, and her mother picked it up before Mara could reach it.\\n\\n“He’d have put that back in,” she said.\\n\\n“Are we going to?”\\n\\n“No.” Her mother dropped it in the bin. “He wasn’t right about everything.”\\n\\nThe batter filled the tin nearly to the rim. Once it was in the oven, they washed the bowls and cleared a space on the counter for the cake to cool. Mara looked through the window at the branch beside the path. There was still work to do outside, but her mother put the kettle on, and Mara stayed.\"}",
+  "output_sha256": "604423ab042c836842a763a83f45cd2579ce80ed238cbcc970b082a07ab41912",
+  "finish_reason": "stop",
+  "refusal": null,
+  "returned_model": "gpt-6-sol",
+  "usage": {
+    "prompt_tokens": 377,
+    "completion_tokens": 381,
+    "total_tokens": 758,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 25,
+      "audio_tokens": 0,
+      "accepted_prediction_tokens": 0,
+      "rejected_prediction_tokens": 0
+    }
+  },
+  "format": {
+    "json_object": true,
+    "rule_unchanged": true,
+    "passage_is_string": true,
+    "passage_sha256": "146aa5d4d8f1d786f80827002a618dcd41fbe2698fef51d71454db8b0a56b5e9",
+    "passage_words": 251
+  },
+  "finished_at": "2026-09-22T19:56:38.354162+00:00",
+  "latency_seconds": 6.9045,
+  "usage_cost_upper_estimate_usd": 0.004564,
+  "stream_status": "active",
+  "budget": {
+    "usage_cost_upper_estimate_usd": 0.4557093,
+    "uncertain_cost_reserve_usd": 0.0,
+    "in_flight_reserve_usd": 0.5446717,
+    "limit_usd": 18.83
+  }
+}

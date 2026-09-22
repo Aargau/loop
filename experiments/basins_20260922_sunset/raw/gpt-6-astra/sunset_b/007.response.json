@@ -1,0 +1,50 @@
+{
+  "model": "gpt-6-astra",
+  "seed": "sunset_b",
+  "hop": 7,
+  "http_status": 200,
+  "response_body": "{\n  \"id\": \"chatcmpl-ER0wz1GXK0iUTqYuKBwS1v1ElGXzu\",\n  \"object\": \"chat.completion\",\n  \"created\": 1790107217,\n  \"model\": \"gpt-6-astra\",\n  \"choices\": [\n    {\n      \"index\": 0,\n      \"message\": {\n        \"role\": \"assistant\",\n        \"content\": \"{\\n  \\\"rule\\\": \\\"Return this JSON object with the rule field unchanged and a new passage of about 250 words in the text field.\\\",\\n  \\\"text\\\": \\\"The laundrette on Mercer Street had one machine that washed things out of memory.\\\\n\\\\nA handwritten notice above it said: CHECK ALL POCKETS.\\\\n\\\\nMara brought the yellow cardigan she had worn when her sister stopped speaking to her. She fed in six coins and watched the sleeves turn behind the glass.\\\\n\\\\nAfterward, she remembered the argument but not the sentence that had ended it.\\\\n\\\\nThis seemed like mercy.\\\\n\\\\nThe next week she washed a tablecloth. Then a scarf. By November, she could think of her sister without feeling the old heat rise through her neck.\\\\n\\\\nShe could not remember why they had quarreled.\\\\n\\\\nAt Christmas, a parcel arrived containing a blue bowl, carefully mended. Mara recognized it as their mother's, though she had thought it was green.\\\\n\\\\nUnder the bowl lay a note.\\\\n\\\\nI shouldn't have thrown it. I'm sorry.\\\\n\\\\nMara took the note to the laundrette.\\\\n\\\\nThe attendant was emptying lint into a bin.\\\\n\\\\n“Does it work on paper?” Mara asked.\\\\n\\\\n“It works on anything.”\\\\n\\\\n“And can you get things back?”\\\\n\\\\nHe looked at the note in her hand.\\\\n\\\\n“Not here.”\\\\n\\\\nShe stood beside the machine until someone asked whether she was using it. Then she put her coins away.\\\\n\\\\nAt home, she called her sister.\\\\n\\\\n“I got the bowl,” she said.\\\\n\\\\n“I wasn't sure you'd want it.”\\\\n\\\\nMara traced a repaired crack with her thumb.\\\\n\\\\n“I've forgotten some things,” she said. “What I said to you.”\\\\n\\\\nHer sister was quiet.\\\\n\\\\n“Do you want me to tell you?”\\\\n\\\\nMara pulled out a chair. Through the window, she could see the laundrette sign switching off.\\\\n\\\\n“Yes,” she said, and sat down.\\\"\\n}\",\n        \"refusal\": null,\n        \"annotations\": []\n      },\n      \"finish_reason\": \"stop\"\n    }\n  ],\n  \"usage\": {\n    \"prompt_tokens\": 427,\n    \"completion_tokens\": 435,\n    \"total_tokens\": 862,\n    \"prompt_tokens_details\": {\n      \"cached_tokens\": 0,\n      \"cache_write_tokens\": 0,\n      \"audio_tokens\": 0\n    },\n    \"completion_tokens_details\": {\n      \"reasoning_tokens\": 0,\n      \"audio_tokens\": 0,\n      \"accepted_prediction_tokens\": 0,\n      \"rejected_prediction_tokens\": 0\n    }\n  },\n  \"service_tier\": \"default\",\n  \"system_fingerprint\": null\n}\n",
+  "response_headers": {
+    "Date": "Tue, 22 Sep 2026 20:00:33 GMT",
+    "openai-processing-ms": "16282",
+    "x-request-id": "req_f61b2ea8c90b4344a23c55bda2d06938"
+  },
+  "output": "{\n  \"rule\": \"Return this JSON object with the rule field unchanged and a new passage of about 250 words in the text field.\",\n  \"text\": \"The laundrette on Mercer Street had one machine that washed things out of memory.\\n\\nA handwritten notice above it said: CHECK ALL POCKETS.\\n\\nMara brought the yellow cardigan she had worn when her sister stopped speaking to her. She fed in six coins and watched the sleeves turn behind the glass.\\n\\nAfterward, she remembered the argument but not the sentence that had ended it.\\n\\nThis seemed like mercy.\\n\\nThe next week she washed a tablecloth. Then a scarf. By November, she could think of her sister without feeling the old heat rise through her neck.\\n\\nShe could not remember why they had quarreled.\\n\\nAt Christmas, a parcel arrived containing a blue bowl, carefully mended. Mara recognized it as their mother's, though she had thought it was green.\\n\\nUnder the bowl lay a note.\\n\\nI shouldn't have thrown it. I'm sorry.\\n\\nMara took the note to the laundrette.\\n\\nThe attendant was emptying lint into a bin.\\n\\n“Does it work on paper?” Mara asked.\\n\\n“It works on anything.”\\n\\n“And can you get things back?”\\n\\nHe looked at the note in her hand.\\n\\n“Not here.”\\n\\nShe stood beside the machine until someone asked whether she was using it. Then she put her coins away.\\n\\nAt home, she called her sister.\\n\\n“I got the bowl,” she said.\\n\\n“I wasn't sure you'd want it.”\\n\\nMara traced a repaired crack with her thumb.\\n\\n“I've forgotten some things,” she said. “What I said to you.”\\n\\nHer sister was quiet.\\n\\n“Do you want me to tell you?”\\n\\nMara pulled out a chair. Through the window, she could see the laundrette sign switching off.\\n\\n“Yes,” she said, and sat down.\"\n}",
+  "output_sha256": "b7c1c4a74dd34dbc363b994d4138d6ec46e883d9f6fc55dea63d655a1f463d9b",
+  "finish_reason": "stop",
+  "refusal": null,
+  "returned_model": "gpt-6-astra",
+  "usage": {
+    "prompt_tokens": 427,
+    "completion_tokens": 435,
+    "total_tokens": 862,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "audio_tokens": 0,
+      "accepted_prediction_tokens": 0,
+      "rejected_prediction_tokens": 0
+    }
+  },
+  "format": {
+    "json_object": true,
+    "rule_unchanged": true,
+    "passage_is_string": true,
+    "passage_sha256": "8103d1d1a8964733dd3a4ee0926b41a1244ea17a9deb1a2817e1b4be410f70f7",
+    "passage_words": 271
+  },
+  "finished_at": "2026-09-22T20:00:29.829446+00:00",
+  "latency_seconds": 16.4135,
+  "usage_cost_upper_estimate_usd": 0.02602,
+  "stream_status": "active",
+  "budget": {
+    "usage_cost_upper_estimate_usd": 1.9119077,
+    "uncertain_cost_reserve_usd": 0.04533,
+    "in_flight_reserve_usd": 0.3624804,
+    "limit_usd": 18.83
+  }
+}

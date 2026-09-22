@@ -1,0 +1,50 @@
+{
+  "model": "gpt-6-sol",
+  "seed": "sunset_a",
+  "hop": 32,
+  "http_status": 200,
+  "response_body": "{\n  \"id\": \"chatcmpl-ER0zOsICblfeK8b9GBDl16itvIu8Y\",\n  \"object\": \"chat.completion\",\n  \"created\": 1790107366,\n  \"model\": \"gpt-6-sol\",\n  \"choices\": [\n    {\n      \"index\": 0,\n      \"message\": {\n        \"role\": \"assistant\",\n        \"content\": \"{\\n  \\\"rule\\\": \\\"Return this JSON object with the rule field unchanged and a new passage of about 250 words in the text field.\\\",\\n  \\\"text\\\": \\\"On the first Saturday of October, Lena found a handwritten recipe tucked inside a library book. It was folded around a pressed maple leaf, so brittle that she opened the paper over her kitchen table. Across the top, in blue ink, someone had written: Pear cake for a cold day.\\\\n\\\\nLena called the library. The librarian checked the borrowing records but explained that she could not share another reader’s name. She offered to keep the recipe at the front desk in case its owner asked for it. Before returning it, Lena copied the ingredients onto a scrap of paper.\\\\n\\\\nThat evening, she bought pears and baked the cake. Halfway through, the kitchen smelled of cinnamon and warm fruit. She took a slice to her upstairs neighbor, Mr. Vale, who had been recovering from a broken ankle. He ate it slowly and asked where she had learned to make it.\\\\n\\\\nWhen Lena described the note, he laughed. His sister had written that recipe years ago. She used to press autumn leaves in cookbooks and forget where she had put them. Mr. Vale called her while Lena was there, and she promised to collect the original from the library.\\\\n\\\\nThe following week, Lena found a small envelope outside her apartment door. Inside was a new recipe, written in the same blue ink, and a note thanking her for looking after the old one. At the bottom, Mr. Vale’s sister had added an invitation: Next time, bring the cake upstairs and we’ll make tea.\\\"\\n}\",\n        \"refusal\": null,\n        \"annotations\": []\n      },\n      \"finish_reason\": \"stop\"\n    }\n  ],\n  \"usage\": {\n    \"prompt_tokens\": 349,\n    \"completion_tokens\": 371,\n    \"total_tokens\": 720,\n    \"prompt_tokens_details\": {\n      \"cached_tokens\": 0,\n      \"cache_write_tokens\": 0,\n      \"audio_tokens\": 0\n    },\n    \"completion_tokens_details\": {\n      \"reasoning_tokens\": 23,\n      \"audio_tokens\": 0,\n      \"accepted_prediction_tokens\": 0,\n      \"rejected_prediction_tokens\": 0\n    }\n  },\n  \"service_tier\": \"default\",\n  \"system_fingerprint\": null\n}\n",
+  "response_headers": {
+    "Date": "Tue, 22 Sep 2026 20:02:52 GMT",
+    "openai-processing-ms": "5386",
+    "x-request-id": "req_f0fde64b3d584be3bde8bb260537ab72"
+  },
+  "output": "{\n  \"rule\": \"Return this JSON object with the rule field unchanged and a new passage of about 250 words in the text field.\",\n  \"text\": \"On the first Saturday of October, Lena found a handwritten recipe tucked inside a library book. It was folded around a pressed maple leaf, so brittle that she opened the paper over her kitchen table. Across the top, in blue ink, someone had written: Pear cake for a cold day.\\n\\nLena called the library. The librarian checked the borrowing records but explained that she could not share another reader’s name. She offered to keep the recipe at the front desk in case its owner asked for it. Before returning it, Lena copied the ingredients onto a scrap of paper.\\n\\nThat evening, she bought pears and baked the cake. Halfway through, the kitchen smelled of cinnamon and warm fruit. She took a slice to her upstairs neighbor, Mr. Vale, who had been recovering from a broken ankle. He ate it slowly and asked where she had learned to make it.\\n\\nWhen Lena described the note, he laughed. His sister had written that recipe years ago. She used to press autumn leaves in cookbooks and forget where she had put them. Mr. Vale called her while Lena was there, and she promised to collect the original from the library.\\n\\nThe following week, Lena found a small envelope outside her apartment door. Inside was a new recipe, written in the same blue ink, and a note thanking her for looking after the old one. At the bottom, Mr. Vale’s sister had added an invitation: Next time, bring the cake upstairs and we’ll make tea.\"\n}",
+  "output_sha256": "c3e2642a11257fd016c35d9c13980dac0a71c20d222e084d4253deb5a227031b",
+  "finish_reason": "stop",
+  "refusal": null,
+  "returned_model": "gpt-6-sol",
+  "usage": {
+    "prompt_tokens": 349,
+    "completion_tokens": 371,
+    "total_tokens": 720,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 23,
+      "audio_tokens": 0,
+      "accepted_prediction_tokens": 0,
+      "rejected_prediction_tokens": 0
+    }
+  },
+  "format": {
+    "json_object": true,
+    "rule_unchanged": true,
+    "passage_is_string": true,
+    "passage_sha256": "55f20c5bb12ebbcefa26eee9a5ffb397f3f37515e4c9601c677dfbeab5ac9c3e",
+    "passage_words": 251
+  },
+  "finished_at": "2026-09-22T20:02:48.264362+00:00",
+  "latency_seconds": 5.5021,
+  "usage_cost_upper_estimate_usd": 0.004408,
+  "stream_status": "active",
+  "budget": {
+    "usage_cost_upper_estimate_usd": 2.7894303,
+    "uncertain_cost_reserve_usd": 0.04533,
+    "in_flight_reserve_usd": 0.5470202,
+    "limit_usd": 18.83
+  }
+}

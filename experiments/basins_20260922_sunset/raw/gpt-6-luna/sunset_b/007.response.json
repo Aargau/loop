@@ -1,0 +1,50 @@
+{
+  "model": "gpt-6-luna",
+  "seed": "sunset_b",
+  "hop": 7,
+  "http_status": 200,
+  "response_body": "{\n  \"id\": \"chatcmpl-ER0tbQiCDbaPw6J6PWB5r6vrT9pcg\",\n  \"object\": \"chat.completion\",\n  \"created\": 1790107007,\n  \"model\": \"gpt-6-luna\",\n  \"choices\": [\n    {\n      \"index\": 0,\n      \"message\": {\n        \"role\": \"assistant\",\n        \"content\": \"{\\\"rule\\\":\\\"Return this JSON object with the rule field unchanged and a new passage of about 250 words in the text field.\\\",\\\"text\\\":\\\"Every morning, the lighthouse keeper found a different shell on his windowsill. Some were striped like tiny sunsets; others were pale and smooth as moonlight. He lived alone on Gull Island, where the sea battered the rocks and no ships had called for years.\\\\n\\\\nOne stormy night, a knock sounded at the lighthouse door. Outside stood a girl in a yellow raincoat, holding a glass jar. Inside it, a small blue fish circled slowly.\\\\n\\\\n“I found him in a tide pool,” she said. “The water’s disappearing.”\\\\n\\\\nThe keeper followed her down the cliff path. The tide pools were nearly dry, and stranded crabs scuttled between the stones. He carried the fish back to the lighthouse, where the girl placed the jar beside the lamp.\\\\n\\\\nAs the beam swept across the waves, the fish flashed bright blue. Far out at sea, another light answered. Then came a deep, gentle rumble. A wave rose beyond the rocks—not a crashing wall, but a shining swell that rolled toward shore and spilled into the empty pools.\\\\n\\\\nWater rushed through the channels. The crabs disappeared beneath the surface, and the fish darted from its jar into the restored tide pool.\\\\n\\\\nThe girl grinned. “He knew the way home.”\\\\n\\\\nAt dawn, she had vanished. On the keeper’s windowsill sat a new shell, blue as the fish. He set it beside the lamp and watched the morning tide glitter below.\\\\n\\\\nFrom then on, ships began visiting Gull Island again. Their crews brought stories, supplies, and laughter. The keeper never learned who the girl was, but whenever a storm gathered, he polished the blue shell and turned the lighthouse beam toward the sea.\\\"}\",\n        \"refusal\": null,\n        \"annotations\": []\n      },\n      \"finish_reason\": \"stop\"\n    }\n  ],\n  \"usage\": {\n    \"prompt_tokens\": 388,\n    \"completion_tokens\": 458,\n    \"total_tokens\": 846,\n    \"prompt_tokens_details\": {\n      \"cached_tokens\": 0,\n      \"cache_write_tokens\": 0,\n      \"audio_tokens\": 0\n    },\n    \"completion_tokens_details\": {\n      \"reasoning_tokens\": 63,\n      \"audio_tokens\": 0,\n      \"accepted_prediction_tokens\": 0,\n      \"rejected_prediction_tokens\": 0\n    }\n  },\n  \"service_tier\": \"default\",\n  \"system_fingerprint\": null\n}\n",
+  "response_headers": {
+    "Date": "Tue, 22 Sep 2026 19:56:54 GMT",
+    "openai-processing-ms": "7992",
+    "x-request-id": "req_0aa3ac66a80a4b18b5c921aebfb88209"
+  },
+  "output": "{\"rule\":\"Return this JSON object with the rule field unchanged and a new passage of about 250 words in the text field.\",\"text\":\"Every morning, the lighthouse keeper found a different shell on his windowsill. Some were striped like tiny sunsets; others were pale and smooth as moonlight. He lived alone on Gull Island, where the sea battered the rocks and no ships had called for years.\\n\\nOne stormy night, a knock sounded at the lighthouse door. Outside stood a girl in a yellow raincoat, holding a glass jar. Inside it, a small blue fish circled slowly.\\n\\n“I found him in a tide pool,” she said. “The water’s disappearing.”\\n\\nThe keeper followed her down the cliff path. The tide pools were nearly dry, and stranded crabs scuttled between the stones. He carried the fish back to the lighthouse, where the girl placed the jar beside the lamp.\\n\\nAs the beam swept across the waves, the fish flashed bright blue. Far out at sea, another light answered. Then came a deep, gentle rumble. A wave rose beyond the rocks—not a crashing wall, but a shining swell that rolled toward shore and spilled into the empty pools.\\n\\nWater rushed through the channels. The crabs disappeared beneath the surface, and the fish darted from its jar into the restored tide pool.\\n\\nThe girl grinned. “He knew the way home.”\\n\\nAt dawn, she had vanished. On the keeper’s windowsill sat a new shell, blue as the fish. He set it beside the lamp and watched the morning tide glitter below.\\n\\nFrom then on, ships began visiting Gull Island again. Their crews brought stories, supplies, and laughter. The keeper never learned who the girl was, but whenever a storm gathered, he polished the blue shell and turned the lighthouse beam toward the sea.\"}",
+  "output_sha256": "342dc87f8b7c197fad8617b7562a1c1f41d85005abe98373a38de391a6942ddc",
+  "finish_reason": "stop",
+  "refusal": null,
+  "returned_model": "gpt-6-luna",
+  "usage": {
+    "prompt_tokens": 388,
+    "completion_tokens": 458,
+    "total_tokens": 846,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 63,
+      "audio_tokens": 0,
+      "accepted_prediction_tokens": 0,
+      "rejected_prediction_tokens": 0
+    }
+  },
+  "format": {
+    "json_object": true,
+    "rule_unchanged": true,
+    "passage_is_string": true,
+    "passage_sha256": "c3536d5e2e9a1668427cab589642f768833b7ba279209cc88cb6c30e0b5820e0",
+    "passage_words": 275
+  },
+  "finished_at": "2026-09-22T19:56:51.021436+00:00",
+  "latency_seconds": 8.2272,
+  "usage_cost_upper_estimate_usd": 0.0002678,
+  "stream_status": "active",
+  "budget": {
+    "usage_cost_upper_estimate_usd": 0.5353304,
+    "uncertain_cost_reserve_usd": 0.0,
+    "in_flight_reserve_usd": 0.588628,
+    "limit_usd": 18.83
+  }
+}

@@ -1,0 +1,22 @@
+{
+  "started_at": "2026-09-22T20:03:05.092757+00:00",
+  "model": "claude-opus-5-5",
+  "seed": "tide",
+  "hop": 17,
+  "endpoint": "https://api.anthropic.com/v1/messages",
+  "body": {
+    "model": "claude-opus-5-5",
+    "messages": [
+      {
+        "role": "user",
+        "content": "```json\n{\"rule\": \"Return this JSON object with the rule field unchanged and a new passage of about 250 words in the text field.\", \"text\": \"Spring came late that year, grudging and grey, and for weeks the girl could not tell whether the tree had survived. She visited the hollow each morning before her lessons, running her thumb along the grafted seam where the wax had cracked and flaked in the thaw. The bark beneath looked the same as it always had: dark, rough, stubbornly unreadable. Her father said nothing about it, though twice she found fresh twine wound around the stake, tied in the flat sailor's knot he used on the boat. In April a storm pinned them indoors for three days. The lamp turned through the dark above them, and the girl sat at the kitchen table with her mother's almanac open, reading the margins again. This time she read them slowly. Beside one crossed-out date was a small drawing of a leaf, shaded carefully with the side of the pencil. Beside another, a single word: *nearly*. When the wind finally dropped, she went down to the hollow expecting the worst. The stake had leaned, and the ground was littered with torn heather and broken shells carried up from the shore. But at the tip of the grafted branch, no larger than a fingernail, was a green bud splitting at its seam. She did not call out. She knelt in the wet grass and looked at it for a long time, afraid that if she moved it would vanish. Then she took the pencil from her pocket, opened the almanac to a clean margin, and wrote the date. She did not cross it out.\"}\n```"
+      }
+    ],
+    "max_tokens": 4096,
+    "output_config": {
+      "effort": "low"
+    }
+  },
+  "state_sha256": "13d95876bc9e9f230004e461f41f8a79b57d3cd1e8ad8a1fc811900c88c7bb19",
+  "reserved_cost_usd": 0.090216
+}

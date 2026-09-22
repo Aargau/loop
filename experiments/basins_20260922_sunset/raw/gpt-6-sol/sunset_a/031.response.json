@@ -1,0 +1,50 @@
+{
+  "model": "gpt-6-sol",
+  "seed": "sunset_a",
+  "hop": 31,
+  "http_status": 200,
+  "response_body": "{\n  \"id\": \"chatcmpl-ER0zD8Sfi82911xIRbqH9v7M5MfwQ\",\n  \"object\": \"chat.completion\",\n  \"created\": 1790107355,\n  \"model\": \"gpt-6-sol\",\n  \"choices\": [\n    {\n      \"index\": 0,\n      \"message\": {\n        \"role\": \"assistant\",\n        \"content\": \"{\\n  \\\"rule\\\": \\\"Return this JSON object with the rule field unchanged and a new passage of about 250 words in the text field.\\\",\\n  \\\"text\\\": \\\"Every Thursday, Marcus stopped at the corner shop for a loaf of bread on his way home. One rainy afternoon, he noticed a small cardboard box beneath the counter. Inside were dozens of keys, each tied to a paper tag. The shopkeeper, Mrs. Iqbal, saw him looking and explained that customers often left keys behind. She kept them until someone came to ask.\\\\n\\\\nMarcus recognized one key immediately. Its yellow tag read GARDEN SHED in his father’s careful handwriting. His father had died the previous winter, and Marcus had spent months sorting through his belongings. He had assumed the shed key was gone for good.\\\\n\\\\nMrs. Iqbal remembered his father well. He used to buy seeds from the shop each spring, then return in summer with tomatoes from his garden. She had found the key near the seed rack almost a year earlier. Marcus thanked her and slipped it into his pocket.\\\\n\\\\nThe next morning, he walked to the garden behind his father’s house. The shed door stuck at first, but the key turned easily. Inside, tools hung from hooks, and empty flowerpots lined a shelf. On the workbench lay a packet of sunflower seeds with a note: Plant these by the fence.\\\\n\\\\nMarcus cleared a narrow strip of soil and planted the seeds. Over the following weeks, he visited to water them. When the first flowers opened, he took a photograph to Mrs. Iqbal. She pinned it beside the counter, just above the box of keys.\\\"\\n}\",\n        \"refusal\": null,\n        \"annotations\": []\n      },\n      \"finish_reason\": \"stop\"\n    }\n  ],\n  \"usage\": {\n    \"prompt_tokens\": 349,\n    \"completion_tokens\": 369,\n    \"total_tokens\": 718,\n    \"prompt_tokens_details\": {\n      \"cached_tokens\": 0,\n      \"cache_write_tokens\": 0,\n      \"audio_tokens\": 0\n    },\n    \"completion_tokens_details\": {\n      \"reasoning_tokens\": 17,\n      \"audio_tokens\": 0,\n      \"accepted_prediction_tokens\": 0,\n      \"rejected_prediction_tokens\": 0\n    }\n  },\n  \"service_tier\": \"default\",\n  \"system_fingerprint\": null\n}\n",
+  "response_headers": {
+    "Date": "Tue, 22 Sep 2026 20:02:40 GMT",
+    "openai-processing-ms": "5425",
+    "x-request-id": "req_c7c95609b60d4c6490b7cae071d00b57"
+  },
+  "output": "{\n  \"rule\": \"Return this JSON object with the rule field unchanged and a new passage of about 250 words in the text field.\",\n  \"text\": \"Every Thursday, Marcus stopped at the corner shop for a loaf of bread on his way home. One rainy afternoon, he noticed a small cardboard box beneath the counter. Inside were dozens of keys, each tied to a paper tag. The shopkeeper, Mrs. Iqbal, saw him looking and explained that customers often left keys behind. She kept them until someone came to ask.\\n\\nMarcus recognized one key immediately. Its yellow tag read GARDEN SHED in his father’s careful handwriting. His father had died the previous winter, and Marcus had spent months sorting through his belongings. He had assumed the shed key was gone for good.\\n\\nMrs. Iqbal remembered his father well. He used to buy seeds from the shop each spring, then return in summer with tomatoes from his garden. She had found the key near the seed rack almost a year earlier. Marcus thanked her and slipped it into his pocket.\\n\\nThe next morning, he walked to the garden behind his father’s house. The shed door stuck at first, but the key turned easily. Inside, tools hung from hooks, and empty flowerpots lined a shelf. On the workbench lay a packet of sunflower seeds with a note: Plant these by the fence.\\n\\nMarcus cleared a narrow strip of soil and planted the seeds. Over the following weeks, he visited to water them. When the first flowers opened, he took a photograph to Mrs. Iqbal. She pinned it beside the counter, just above the box of keys.\"\n}",
+  "output_sha256": "1338bc62c5f1595557024c45be4bd9cb3818f90153aeab65105444bb7a3ce629",
+  "finish_reason": "stop",
+  "refusal": null,
+  "returned_model": "gpt-6-sol",
+  "usage": {
+    "prompt_tokens": 349,
+    "completion_tokens": 369,
+    "total_tokens": 718,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 17,
+      "audio_tokens": 0,
+      "accepted_prediction_tokens": 0,
+      "rejected_prediction_tokens": 0
+    }
+  },
+  "format": {
+    "json_object": true,
+    "rule_unchanged": true,
+    "passage_is_string": true,
+    "passage_sha256": "f5815b84b64c99f464e5f698e926aedb75af2183842e2cf3cabd61199b2b1bb6",
+    "passage_words": 247
+  },
+  "finished_at": "2026-09-22T20:02:36.426171+00:00",
+  "latency_seconds": 5.5526,
+  "usage_cost_upper_estimate_usd": 0.004388,
+  "stream_status": "active",
+  "budget": {
+    "usage_cost_upper_estimate_usd": 2.6991611,
+    "uncertain_cost_reserve_usd": 0.04533,
+    "in_flight_reserve_usd": 0.5444935,
+    "limit_usd": 18.83
+  }
+}

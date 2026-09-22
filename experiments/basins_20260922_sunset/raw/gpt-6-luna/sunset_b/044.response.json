@@ -1,0 +1,50 @@
+{
+  "model": "gpt-6-luna",
+  "seed": "sunset_b",
+  "hop": 44,
+  "http_status": 200,
+  "response_body": "{\n  \"id\": \"chatcmpl-ER11TBLLDTuPBneLTCkIF6QONUSaW\",\n  \"object\": \"chat.completion\",\n  \"created\": 1790107495,\n  \"model\": \"gpt-6-luna\",\n  \"choices\": [\n    {\n      \"index\": 0,\n      \"message\": {\n        \"role\": \"assistant\",\n        \"content\": \"{\\n  \\\"rule\\\": \\\"Return this JSON object with the rule field unchanged and a new passage of about 250 words in the text field.\\\",\\n  \\\"text\\\": \\\"That evening, Mara opened Jonas’s notebook beneath the lamp in her kitchen. The pages smelled faintly of salt and smoke. She had copied the names from the post, but one page held a sketch she had missed: a small star, drawn in the margin beside a list of dates. Underneath, Jonas had written, “When the lights return, look beyond the harbor.”\\\\n\\\\nShe read it twice. Outside, the village lamps flickered on, one by one, along the waterfront. Beyond them, the lighthouse remained dark. It had been closed since the winter storm, when a crack split its upper window and the keeper moved inland.\\\\n\\\\nMara took her coat and walked down to the harbor. Elian was there, mending a net beneath the boathouse roof. When she showed him the page, his face changed.\\\\n\\\\n“Jonas used to climb the lighthouse stairs,” he said. “He claimed he could see a second shore from the top.”\\\\n\\\\n“There’s no second shore.”\\\\n\\\\n“Not on any map.” Elian set down his needle. “But the old keeper told stories about lights appearing out at sea, far beyond the shipping lanes. He said they belonged to people who were trying to find their way home.”\\\\n\\\\nThey crossed the quiet pier and followed the path up the headland. The lighthouse door resisted, then swung inward with a groan. Dust softened the steps. At the top, Mara found a tin box tucked beneath the broken lantern mechanism. Inside lay a bundle of letters, all addressed in Jonas’s hand—to names she had copied from the rocks.\\\\n\\\\nThrough the cracked glass, a pale light blinked once beyond the black water.\\\\n\\\\nElian reached for her hand. This time, neither of them looked away.\\\"\\n}\",\n        \"refusal\": null,\n        \"annotations\": []\n      },\n      \"finish_reason\": \"stop\"\n    }\n  ],\n  \"usage\": {\n    \"prompt_tokens\": 369,\n    \"completion_tokens\": 463,\n    \"total_tokens\": 832,\n    \"prompt_tokens_details\": {\n      \"cached_tokens\": 0,\n      \"cache_write_tokens\": 0,\n      \"audio_tokens\": 0\n    },\n    \"completion_tokens_details\": {\n      \"reasoning_tokens\": 50,\n      \"audio_tokens\": 0,\n      \"accepted_prediction_tokens\": 0,\n      \"rejected_prediction_tokens\": 0\n    }\n  },\n  \"service_tier\": \"default\",\n  \"system_fingerprint\": null\n}\n",
+  "response_headers": {
+    "Date": "Tue, 22 Sep 2026 20:05:01 GMT",
+    "openai-processing-ms": "6328",
+    "x-request-id": "req_e0ed35582c0947b0a3f03773558b0ead"
+  },
+  "output": "{\n  \"rule\": \"Return this JSON object with the rule field unchanged and a new passage of about 250 words in the text field.\",\n  \"text\": \"That evening, Mara opened Jonas’s notebook beneath the lamp in her kitchen. The pages smelled faintly of salt and smoke. She had copied the names from the post, but one page held a sketch she had missed: a small star, drawn in the margin beside a list of dates. Underneath, Jonas had written, “When the lights return, look beyond the harbor.”\\n\\nShe read it twice. Outside, the village lamps flickered on, one by one, along the waterfront. Beyond them, the lighthouse remained dark. It had been closed since the winter storm, when a crack split its upper window and the keeper moved inland.\\n\\nMara took her coat and walked down to the harbor. Elian was there, mending a net beneath the boathouse roof. When she showed him the page, his face changed.\\n\\n“Jonas used to climb the lighthouse stairs,” he said. “He claimed he could see a second shore from the top.”\\n\\n“There’s no second shore.”\\n\\n“Not on any map.” Elian set down his needle. “But the old keeper told stories about lights appearing out at sea, far beyond the shipping lanes. He said they belonged to people who were trying to find their way home.”\\n\\nThey crossed the quiet pier and followed the path up the headland. The lighthouse door resisted, then swung inward with a groan. Dust softened the steps. At the top, Mara found a tin box tucked beneath the broken lantern mechanism. Inside lay a bundle of letters, all addressed in Jonas’s hand—to names she had copied from the rocks.\\n\\nThrough the cracked glass, a pale light blinked once beyond the black water.\\n\\nElian reached for her hand. This time, neither of them looked away.\"\n}",
+  "output_sha256": "076585e658ae17e38b15df7da7eebc4f9786b3e6c8c5a028bb815757504efb23",
+  "finish_reason": "stop",
+  "refusal": null,
+  "returned_model": "gpt-6-luna",
+  "usage": {
+    "prompt_tokens": 369,
+    "completion_tokens": 463,
+    "total_tokens": 832,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 50,
+      "audio_tokens": 0,
+      "accepted_prediction_tokens": 0,
+      "rejected_prediction_tokens": 0
+    }
+  },
+  "format": {
+    "json_object": true,
+    "rule_unchanged": true,
+    "passage_is_string": true,
+    "passage_sha256": "e1b3a713d756c934f0b9bf4de10c22ecfbe9155250c7b5cd71163892ac460c01",
+    "passage_words": 279
+  },
+  "finished_at": "2026-09-22T20:04:57.250981+00:00",
+  "latency_seconds": 6.4141,
+  "usage_cost_upper_estimate_usd": 0.00026839999999999996,
+  "stream_status": "active",
+  "budget": {
+    "usage_cost_upper_estimate_usd": 3.5865019,
+    "uncertain_cost_reserve_usd": 0.04533,
+    "in_flight_reserve_usd": 0.586508,
+    "limit_usd": 18.83
+  }
+}

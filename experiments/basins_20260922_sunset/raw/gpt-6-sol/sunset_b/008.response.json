@@ -1,0 +1,50 @@
+{
+  "model": "gpt-6-sol",
+  "seed": "sunset_b",
+  "hop": 8,
+  "http_status": 200,
+  "response_body": "{\n  \"id\": \"chatcmpl-ER0uHRTWH8ERYIlyXYisFubHgYIj1\",\n  \"object\": \"chat.completion\",\n  \"created\": 1790107049,\n  \"model\": \"gpt-6-sol\",\n  \"choices\": [\n    {\n      \"index\": 0,\n      \"message\": {\n        \"role\": \"assistant\",\n        \"content\": \"{\\\"rule\\\":\\\"Return this JSON object with the rule field unchanged and a new passage of about 250 words in the text field.\\\",\\\"text\\\":\\\"On Saturday, Eli found a key in the pocket of his winter coat. It was small and brass, with a strip of blue tape wrapped around its head. He held it up to the kitchen window, but the tape bore no writing.\\\\n\\\\nHis father glanced over from the stove. “Try the shed.”\\\\n\\\\n“The shed has a padlock.”\\\\n\\\\n“Then you’ll know soon enough.”\\\\n\\\\nOutside, the garden was soft from overnight rain. Eli crossed the lawn, fitted the key into the padlock, and felt it turn. The door stuck at the bottom until he pulled hard enough to leave a muddy print on the wood.\\\\n\\\\nInside were the usual things: flowerpots, a sack of compost, the bicycle with its flat rear tyre. On the workbench sat a wooden box Eli had never seen before. Its lid lifted without a key. Beneath a folded cloth lay his grandfather’s binoculars and a notebook filled with dates, weather reports, and lists of birds.\\\\n\\\\nEli carried the notebook inside. His father turned down the heat under the eggs before taking it. For a while he leafed through the pages without speaking.\\\\n\\\\n“He used to come out here every morning,” he said at last. “Even when he couldn’t walk far.”\\\\n\\\\nThe final entry was from April, two weeks before his grandfather died. Beside the date he had written: Two swallows over the roof.\\\\n\\\\nAfter breakfast, Eli wiped the binocular lenses with the edge of the cloth. He and his father took them into the garden. They saw no swallows, only a blackbird pulling a worm from the wet grass. His father found a pen, and Eli added it to the next empty page.\\\"}\",\n        \"refusal\": null,\n        \"annotations\": []\n      },\n      \"finish_reason\": \"stop\"\n    }\n  ],\n  \"usage\": {\n    \"prompt_tokens\": 376,\n    \"completion_tokens\": 414,\n    \"total_tokens\": 790,\n    \"prompt_tokens_details\": {\n      \"cached_tokens\": 0,\n      \"cache_write_tokens\": 0,\n      \"audio_tokens\": 0\n    },\n    \"completion_tokens_details\": {\n      \"reasoning_tokens\": 18,\n      \"audio_tokens\": 0,\n      \"accepted_prediction_tokens\": 0,\n      \"rejected_prediction_tokens\": 0\n    }\n  },\n  \"service_tier\": \"default\",\n  \"system_fingerprint\": null\n}\n",
+  "response_headers": {
+    "Date": "Tue, 22 Sep 2026 19:57:36 GMT",
+    "openai-processing-ms": "6664",
+    "x-request-id": "req_7cf448893143474cb0ca41712439d64b"
+  },
+  "output": "{\"rule\":\"Return this JSON object with the rule field unchanged and a new passage of about 250 words in the text field.\",\"text\":\"On Saturday, Eli found a key in the pocket of his winter coat. It was small and brass, with a strip of blue tape wrapped around its head. He held it up to the kitchen window, but the tape bore no writing.\\n\\nHis father glanced over from the stove. “Try the shed.”\\n\\n“The shed has a padlock.”\\n\\n“Then you’ll know soon enough.”\\n\\nOutside, the garden was soft from overnight rain. Eli crossed the lawn, fitted the key into the padlock, and felt it turn. The door stuck at the bottom until he pulled hard enough to leave a muddy print on the wood.\\n\\nInside were the usual things: flowerpots, a sack of compost, the bicycle with its flat rear tyre. On the workbench sat a wooden box Eli had never seen before. Its lid lifted without a key. Beneath a folded cloth lay his grandfather’s binoculars and a notebook filled with dates, weather reports, and lists of birds.\\n\\nEli carried the notebook inside. His father turned down the heat under the eggs before taking it. For a while he leafed through the pages without speaking.\\n\\n“He used to come out here every morning,” he said at last. “Even when he couldn’t walk far.”\\n\\nThe final entry was from April, two weeks before his grandfather died. Beside the date he had written: Two swallows over the roof.\\n\\nAfter breakfast, Eli wiped the binocular lenses with the edge of the cloth. He and his father took them into the garden. They saw no swallows, only a blackbird pulling a worm from the wet grass. His father found a pen, and Eli added it to the next empty page.\"}",
+  "output_sha256": "a430a5935258a563438e25e592d96f432c1a35423a5e217a299d2c22fc30e7fd",
+  "finish_reason": "stop",
+  "refusal": null,
+  "returned_model": "gpt-6-sol",
+  "usage": {
+    "prompt_tokens": 376,
+    "completion_tokens": 414,
+    "total_tokens": 790,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 18,
+      "audio_tokens": 0,
+      "accepted_prediction_tokens": 0,
+      "rejected_prediction_tokens": 0
+    }
+  },
+  "format": {
+    "json_object": true,
+    "rule_unchanged": true,
+    "passage_is_string": true,
+    "passage_sha256": "20d2f5a923788868ca741b688c5cb22b98e3024e4be8b606404ba9a1ea50ec1e",
+    "passage_words": 276
+  },
+  "finished_at": "2026-09-22T19:57:32.576188+00:00",
+  "latency_seconds": 6.8057,
+  "usage_cost_upper_estimate_usd": 0.004892,
+  "stream_status": "active",
+  "budget": {
+    "usage_cost_upper_estimate_usd": 0.8008724,
+    "uncertain_cost_reserve_usd": 0.0,
+    "in_flight_reserve_usd": 0.545446,
+    "limit_usd": 18.83
+  }
+}

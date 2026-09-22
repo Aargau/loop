@@ -1,0 +1,50 @@
+{
+  "model": "gpt-6-astra",
+  "seed": "sunset_a",
+  "hop": 3,
+  "http_status": 200,
+  "response_body": "{\n  \"id\": \"chatcmpl-ER0tbpizoZrzBPN4bU9yDTelONtEw\",\n  \"object\": \"chat.completion\",\n  \"created\": 1790107007,\n  \"model\": \"gpt-6-astra\",\n  \"choices\": [\n    {\n      \"index\": 0,\n      \"message\": {\n        \"role\": \"assistant\",\n        \"content\": \"{\\n  \\\"rule\\\": \\\"Return this JSON object with the rule field unchanged and a new passage of about 250 words in the text field.\\\",\\n  \\\"text\\\": \\\"The library clock stopped at eleven seventeen, though nobody noticed until nearly noon. Ruth was sorting returned books when a boy approached the desk carrying a shoebox.\\\\n\\\\n“I think this belongs here,” he said.\\\\n\\\\nInside lay thirty or forty borrowing cards, their corners softened by use. Each bore the same name: Arthur Bell.\\\\n\\\\n“Where did you find them?”\\\\n\\\\n“In my grandfather’s shed. Mum said throw them away.”\\\\n\\\\nRuth lifted the first card. A gardening manual, borrowed in March 1978. Then a book about beekeeping. Then three volumes of poetry, all returned late.\\\\n\\\\nShe remembered Arthur as a man who kept his hat on indoors and always asked whether the windows could be opened.\\\\n\\\\n“Was he a big reader?” the boy asked.\\\\n\\\\n“Apparently.”\\\\n\\\\n“He never read anything at our house.”\\\\n\\\\nBeneath the cards was a photograph of the library garden before it became a parking lot. Arthur stood beside a young woman holding a spade. Ruth recognized her own coat before she recognized herself.\\\\n\\\\nThe boy leaned closer.\\\\n\\\\n“Do you know who that is?”\\\\n\\\\n“Yes,” she said. “We planted a pear tree.”\\\\n\\\\n“Is it still there?”\\\\n\\\\nRuth glanced through the window. At the far edge of the asphalt, a narrow trunk rose from a square of earth. Every autumn, someone complained about the fallen fruit.\\\\n\\\\nShe turned the photograph over. Arthur had written the date, nothing else.\\\\n\\\\n“Come outside,” she said.\\\\n\\\\nShe fetched the office key and led him through the side door. Beside the tree, the boy looked from the photograph to the branches, then stepped back to find the place where his grandfather had stood.\\\"\\n}\",\n        \"refusal\": null,\n        \"annotations\": []\n      },\n      \"finish_reason\": \"stop\"\n    }\n  ],\n  \"usage\": {\n    \"prompt_tokens\": 410,\n    \"completion_tokens\": 412,\n    \"total_tokens\": 822,\n    \"prompt_tokens_details\": {\n      \"cached_tokens\": 0,\n      \"cache_write_tokens\": 0,\n      \"audio_tokens\": 0\n    },\n    \"completion_tokens_details\": {\n      \"reasoning_tokens\": 0,\n      \"audio_tokens\": 0,\n      \"accepted_prediction_tokens\": 0,\n      \"rejected_prediction_tokens\": 0\n    }\n  },\n  \"service_tier\": \"default\",\n  \"system_fingerprint\": null\n}\n",
+  "response_headers": {
+    "Date": "Tue, 22 Sep 2026 19:57:01 GMT",
+    "openai-processing-ms": "13252",
+    "x-request-id": "req_74f6b979ab814a1f8e4581dba65d96d6"
+  },
+  "output": "{\n  \"rule\": \"Return this JSON object with the rule field unchanged and a new passage of about 250 words in the text field.\",\n  \"text\": \"The library clock stopped at eleven seventeen, though nobody noticed until nearly noon. Ruth was sorting returned books when a boy approached the desk carrying a shoebox.\\n\\n“I think this belongs here,” he said.\\n\\nInside lay thirty or forty borrowing cards, their corners softened by use. Each bore the same name: Arthur Bell.\\n\\n“Where did you find them?”\\n\\n“In my grandfather’s shed. Mum said throw them away.”\\n\\nRuth lifted the first card. A gardening manual, borrowed in March 1978. Then a book about beekeeping. Then three volumes of poetry, all returned late.\\n\\nShe remembered Arthur as a man who kept his hat on indoors and always asked whether the windows could be opened.\\n\\n“Was he a big reader?” the boy asked.\\n\\n“Apparently.”\\n\\n“He never read anything at our house.”\\n\\nBeneath the cards was a photograph of the library garden before it became a parking lot. Arthur stood beside a young woman holding a spade. Ruth recognized her own coat before she recognized herself.\\n\\nThe boy leaned closer.\\n\\n“Do you know who that is?”\\n\\n“Yes,” she said. “We planted a pear tree.”\\n\\n“Is it still there?”\\n\\nRuth glanced through the window. At the far edge of the asphalt, a narrow trunk rose from a square of earth. Every autumn, someone complained about the fallen fruit.\\n\\nShe turned the photograph over. Arthur had written the date, nothing else.\\n\\n“Come outside,” she said.\\n\\nShe fetched the office key and led him through the side door. Beside the tree, the boy looked from the photograph to the branches, then stepped back to find the place where his grandfather had stood.\"\n}",
+  "output_sha256": "79b5e160ee63300226129e5be42a8b785d07fba5751c0da5623003869c8cd865",
+  "finish_reason": "stop",
+  "refusal": null,
+  "returned_model": "gpt-6-astra",
+  "usage": {
+    "prompt_tokens": 410,
+    "completion_tokens": 412,
+    "total_tokens": 822,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "audio_tokens": 0,
+      "accepted_prediction_tokens": 0,
+      "rejected_prediction_tokens": 0
+    }
+  },
+  "format": {
+    "json_object": true,
+    "rule_unchanged": true,
+    "passage_is_string": true,
+    "passage_sha256": "ba26fa82646caef9887a0f89a44db3e9faedbdd362df19336171e114cd6e61e3",
+    "passage_words": 266
+  },
+  "finished_at": "2026-09-22T19:56:57.127024+00:00",
+  "latency_seconds": 13.386,
+  "usage_cost_upper_estimate_usd": 0.0247,
+  "stream_status": "active",
+  "budget": {
+    "usage_cost_upper_estimate_usd": 0.6071151,
+    "uncertain_cost_reserve_usd": 0.0,
+    "in_flight_reserve_usd": 0.3636758,
+    "limit_usd": 18.83
+  }
+}

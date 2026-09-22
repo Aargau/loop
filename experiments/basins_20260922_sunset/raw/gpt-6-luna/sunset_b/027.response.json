@@ -1,0 +1,50 @@
+{
+  "model": "gpt-6-luna",
+  "seed": "sunset_b",
+  "hop": 27,
+  "http_status": 200,
+  "response_body": "{\n  \"id\": \"chatcmpl-ER0xzNuYEoVKR47Dwtql7b1d5Xgwf\",\n  \"object\": \"chat.completion\",\n  \"created\": 1790107279,\n  \"model\": \"gpt-6-luna\",\n  \"choices\": [\n    {\n      \"index\": 0,\n      \"message\": {\n        \"role\": \"assistant\",\n        \"content\": \"{\\n  \\\"rule\\\": \\\"Return this JSON object with the rule field unchanged and a new passage of about 250 words in the text field.\\\",\\n  \\\"text\\\": \\\"On the first day of autumn, Mateo found a brass key beneath the bench at the train station. It was old and heavy, with a tiny number stamped near its teeth. He asked the ticket clerk whether anyone had reported it missing, but she shook her head and suggested he leave it in the lost-property drawer.\\\\n\\\\nMateo was about to do that when he noticed the number matched the one painted on a row of small lockers along the platform wall. He tried the key in locker 18. It turned with a soft click, revealing a bundle of letters tied with green ribbon and a photograph of two children standing beside a red bicycle.\\\\n\\\\nA name was written on the top envelope: Mrs. Bell, Willow Street. Mateo knew the address because he delivered groceries to an elderly woman there every Saturday. He brought the letters to her that afternoon. When she saw the photograph, her eyes widened. The children were her and her brother, who had moved overseas decades ago. She had thought the letters were lost when her family left their old apartment.\\\\n\\\\nMrs. Bell invited Mateo inside and read the first letter aloud. Her brother described a seaside town, a noisy parrot, and a promise to visit soon. The letters had never reached her, but each one carried a little piece of their shared childhood.\\\\n\\\\nThe following month, a postcard arrived from abroad. Her brother had heard from Mrs. Bell and was planning a visit. Mateo smiled when she showed it to him. The key had opened a locker, but it had also unlocked a conversation that had waited years to begin.\\\"\\n}\",\n        \"refusal\": null,\n        \"annotations\": []\n      },\n      \"finish_reason\": \"stop\"\n    }\n  ],\n  \"usage\": {\n    \"prompt_tokens\": 367,\n    \"completion_tokens\": 411,\n    \"total_tokens\": 778,\n    \"prompt_tokens_details\": {\n      \"cached_tokens\": 0,\n      \"cache_write_tokens\": 0,\n      \"audio_tokens\": 0\n    },\n    \"completion_tokens_details\": {\n      \"reasoning_tokens\": 46,\n      \"audio_tokens\": 0,\n      \"accepted_prediction_tokens\": 0,\n      \"rejected_prediction_tokens\": 0\n    }\n  },\n  \"service_tier\": \"default\",\n  \"system_fingerprint\": null\n}\n",
+  "response_headers": {
+    "Date": "Tue, 22 Sep 2026 20:01:24 GMT",
+    "openai-processing-ms": "5423",
+    "x-request-id": "req_ad59fd40e08a49d98874b437664ce8bb"
+  },
+  "output": "{\n  \"rule\": \"Return this JSON object with the rule field unchanged and a new passage of about 250 words in the text field.\",\n  \"text\": \"On the first day of autumn, Mateo found a brass key beneath the bench at the train station. It was old and heavy, with a tiny number stamped near its teeth. He asked the ticket clerk whether anyone had reported it missing, but she shook her head and suggested he leave it in the lost-property drawer.\\n\\nMateo was about to do that when he noticed the number matched the one painted on a row of small lockers along the platform wall. He tried the key in locker 18. It turned with a soft click, revealing a bundle of letters tied with green ribbon and a photograph of two children standing beside a red bicycle.\\n\\nA name was written on the top envelope: Mrs. Bell, Willow Street. Mateo knew the address because he delivered groceries to an elderly woman there every Saturday. He brought the letters to her that afternoon. When she saw the photograph, her eyes widened. The children were her and her brother, who had moved overseas decades ago. She had thought the letters were lost when her family left their old apartment.\\n\\nMrs. Bell invited Mateo inside and read the first letter aloud. Her brother described a seaside town, a noisy parrot, and a promise to visit soon. The letters had never reached her, but each one carried a little piece of their shared childhood.\\n\\nThe following month, a postcard arrived from abroad. Her brother had heard from Mrs. Bell and was planning a visit. Mateo smiled when she showed it to him. The key had opened a locker, but it had also unlocked a conversation that had waited years to begin.\"\n}",
+  "output_sha256": "eafc839b8f9801e1787e10186bc7bab40f94fa1272e2711da4bfff8e54d5f002",
+  "finish_reason": "stop",
+  "refusal": null,
+  "returned_model": "gpt-6-luna",
+  "usage": {
+    "prompt_tokens": 367,
+    "completion_tokens": 411,
+    "total_tokens": 778,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 46,
+      "audio_tokens": 0,
+      "accepted_prediction_tokens": 0,
+      "rejected_prediction_tokens": 0
+    }
+  },
+  "format": {
+    "json_object": true,
+    "rule_unchanged": true,
+    "passage_is_string": true,
+    "passage_sha256": "9a00c60ac4ffa7e93f9ae1b7905038d4960a3b0ca92f8e5bec896721ed9dc004",
+    "passage_words": 274
+  },
+  "finished_at": "2026-09-22T20:01:20.475133+00:00",
+  "latency_seconds": 5.5231,
+  "usage_cost_upper_estimate_usd": 0.00024219999999999998,
+  "stream_status": "active",
+  "budget": {
+    "usage_cost_upper_estimate_usd": 2.2080182,
+    "uncertain_cost_reserve_usd": 0.04533,
+    "in_flight_reserve_usd": 0.58905,
+    "limit_usd": 18.83
+  }
+}

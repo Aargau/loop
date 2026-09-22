@@ -1,0 +1,50 @@
+{
+  "model": "gpt-6-luna",
+  "seed": "sunset_b",
+  "hop": 50,
+  "http_status": 200,
+  "response_body": "{\n  \"id\": \"chatcmpl-ER12rzJPmX4kF7Pbiqailep0yL9OX\",\n  \"object\": \"chat.completion\",\n  \"created\": 1790107581,\n  \"model\": \"gpt-6-luna\",\n  \"choices\": [\n    {\n      \"index\": 0,\n      \"message\": {\n        \"role\": \"assistant\",\n        \"content\": \"{\\n  \\\"rule\\\": \\\"Return this JSON object with the rule field unchanged and a new passage of about 250 words in the text field.\\\",\\n  \\\"text\\\": \\\"The island rose from the dark like the back of a sleeping whale. Peter guided the boat toward a narrow strip of shore, where the waves broke softly over black stones. The golden flicker vanished.\\\\n\\\\nFor a moment, no one moved.\\\\n\\\\nThen Ada lifted the lantern. “We brought our own light,” she said, though her voice trembled.\\\\n\\\\nThey stepped onto the island and followed a path almost swallowed by grass. The keeper’s hut stood beyond a low ridge, its roof bent beneath years of wind. A thin ribbon of smoke curled from the chimney.\\\\n\\\\nPeter knocked. The door opened at once.\\\\n\\\\nAn old woman stood in the doorway, holding a small oil lamp. Her silver hair was braided over one shoulder. She looked first at Peter, then at the compass in his hand.\\\\n\\\\n“You took your time,” she said.\\\\n\\\\nHe knew her voice, though he had not heard it since he was a boy. “Elian?”\\\\n\\\\nShe smiled. “Tomas said you might come when you were ready.”\\\\n\\\\nInside, the hut smelled of ash and salt. On the table lay a second map, marked with the same blue line. Beside it rested a letter, its paper browned at the edges.\\\\n\\\\nPeter recognized Tomas’s handwriting.\\\\n\\\\n“Why did he send us here?” Mara asked.\\\\n\\\\nElian passed the letter to Peter. “Because the light was never meant to guide him home,” she said. “It was meant to show you where to begin.”\\\\n\\\\nOutside, the lamp shone through the window, bright enough to reach the far shore. Peter unfolded the letter, and the first words made his breath catch: THERE IS ANOTHER ISLAND.\\\"\\n}\",\n        \"refusal\": null,\n        \"annotations\": []\n      },\n      \"finish_reason\": \"stop\"\n    }\n  ],\n  \"usage\": {\n    \"prompt_tokens\": 379,\n    \"completion_tokens\": 470,\n    \"total_tokens\": 849,\n    \"prompt_tokens_details\": {\n      \"cached_tokens\": 0,\n      \"cache_write_tokens\": 0,\n      \"audio_tokens\": 0\n    },\n    \"completion_tokens_details\": {\n      \"reasoning_tokens\": 66,\n      \"audio_tokens\": 0,\n      \"accepted_prediction_tokens\": 0,\n      \"rejected_prediction_tokens\": 0\n    }\n  },\n  \"service_tier\": \"default\",\n  \"system_fingerprint\": null\n}\n",
+  "response_headers": {
+    "Date": "Tue, 22 Sep 2026 20:06:27 GMT",
+    "openai-processing-ms": "6129",
+    "x-request-id": "req_4ca5576afef349c1bfb75ceb7acf10e1"
+  },
+  "output": "{\n  \"rule\": \"Return this JSON object with the rule field unchanged and a new passage of about 250 words in the text field.\",\n  \"text\": \"The island rose from the dark like the back of a sleeping whale. Peter guided the boat toward a narrow strip of shore, where the waves broke softly over black stones. The golden flicker vanished.\\n\\nFor a moment, no one moved.\\n\\nThen Ada lifted the lantern. “We brought our own light,” she said, though her voice trembled.\\n\\nThey stepped onto the island and followed a path almost swallowed by grass. The keeper’s hut stood beyond a low ridge, its roof bent beneath years of wind. A thin ribbon of smoke curled from the chimney.\\n\\nPeter knocked. The door opened at once.\\n\\nAn old woman stood in the doorway, holding a small oil lamp. Her silver hair was braided over one shoulder. She looked first at Peter, then at the compass in his hand.\\n\\n“You took your time,” she said.\\n\\nHe knew her voice, though he had not heard it since he was a boy. “Elian?”\\n\\nShe smiled. “Tomas said you might come when you were ready.”\\n\\nInside, the hut smelled of ash and salt. On the table lay a second map, marked with the same blue line. Beside it rested a letter, its paper browned at the edges.\\n\\nPeter recognized Tomas’s handwriting.\\n\\n“Why did he send us here?” Mara asked.\\n\\nElian passed the letter to Peter. “Because the light was never meant to guide him home,” she said. “It was meant to show you where to begin.”\\n\\nOutside, the lamp shone through the window, bright enough to reach the far shore. Peter unfolded the letter, and the first words made his breath catch: THERE IS ANOTHER ISLAND.\"\n}",
+  "output_sha256": "08ff1bb3d773d100b853d081a156dc021b4c3a37b98f844a55db87ff1eeddcbb",
+  "finish_reason": "stop",
+  "refusal": null,
+  "returned_model": "gpt-6-luna",
+  "usage": {
+    "prompt_tokens": 379,
+    "completion_tokens": 470,
+    "total_tokens": 849,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 66,
+      "audio_tokens": 0,
+      "accepted_prediction_tokens": 0,
+      "rejected_prediction_tokens": 0
+    }
+  },
+  "format": {
+    "json_object": true,
+    "rule_unchanged": true,
+    "passage_is_string": true,
+    "passage_sha256": "afa1c8f5b89780e76495b5849f5d00749e7f82340ca4612b593b686a1dd65ddf",
+    "passage_words": 267
+  },
+  "finished_at": "2026-09-22T20:06:23.239191+00:00",
+  "latency_seconds": 6.231,
+  "usage_cost_upper_estimate_usd": 0.00027289999999999997,
+  "stream_status": "active",
+  "budget": {
+    "usage_cost_upper_estimate_usd": 4.1428195,
+    "uncertain_cost_reserve_usd": 0.04533,
+    "in_flight_reserve_usd": 0.587842,
+    "limit_usd": 18.83
+  }
+}

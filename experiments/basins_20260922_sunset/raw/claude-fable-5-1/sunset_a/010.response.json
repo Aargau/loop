@@ -1,0 +1,48 @@
+{
+  "model": "claude-fable-5-1",
+  "seed": "sunset_a",
+  "hop": 10,
+  "http_status": 200,
+  "response_body": "{\"model\":\"claude-fable-5-1\",\"id\":\"msg_011CfK5ByhLduSQBdjdCDYd7\",\"type\":\"message\",\"role\":\"assistant\",\"content\":[{\"type\":\"text\",\"text\":\"{\\\"rule\\\": \\\"Return this JSON object with the rule field unchanged and a new passage of about 250 words in the text field.\\\", \\\"text\\\": \\\"The piano tuner came on a Monday, which Ines had already learned was the day the shop belonged to no one in particular. He did not knock. He stood on the step with his case in both hands, as if he had been sent for and was waiting to be told he had the wrong address.\\\\n\\\\n\\\\\\\"There isn't a piano,\\\\\\\" Ines said.\\\\n\\\\n\\\\\\\"There was,\\\\\\\" he said. \\\\\\\"Upstairs. She sold it in the winter. I'm not here for the piano.\\\\\\\"\\\\n\\\\nHe wanted the bench. She had not known there was a bench, but he described it so exactly—the hinge that caught, the lid that had to be lifted from the left—that she went up and found it under a dust sheet in the room with the sloped ceiling. Inside, instead of sheet music, there were letters, tied in bundles by year. The oldest was from before Ines was born.\\\\n\\\\nShe carried the bench down herself. He did not offer to help, and she understood that this was a kind of courtesy.\\\\n\\\\n\\\\\\\"You'll want to read those,\\\\\\\" he said, when she set it before him.\\\\n\\\\n\\\\\\\"Are they mine to read?\\\\\\\"\\\\n\\\\nHe considered the question longer than she expected. \\\\\\\"They're the shop's,\\\\\\\" he said. \\\\\\\"Which is the same thing now, or will be.\\\\\\\"\\\\n\\\\nHe left the letters. He took only the bench, tilting it through the doorway with the ease of someone who had done it before. The bell rang once behind him, then settled.\\\\n\\\\nIns sat on the floor where the bench had been and untied the first bundle, and the paper made the sound of something being let out.\\\"}\"}],\"container\":null,\"stop_reason\":\"end_turn\",\"stop_sequence\":null,\"stop_details\":null,\"usage\":{\"input_tokens\":538,\"cache_creation_input_tokens\":0,\"cache_read_input_tokens\":0,\"cache_creation\":{\"ephemeral_5m_input_tokens\":0,\"ephemeral_1h_input_tokens\":0},\"output_tokens\":535,\"output_tokens_details\":{\"thinking_tokens\":0},\"service_tier\":\"standard\",\"inference_geo\":\"global\"}}",
+  "response_headers": {
+    "Date": "Tue, 22 Sep 2026 20:01:15 GMT",
+    "request-id": "req_011CfK5By9qddGRwHzZZrSmd"
+  },
+  "output": "{\"rule\": \"Return this JSON object with the rule field unchanged and a new passage of about 250 words in the text field.\", \"text\": \"The piano tuner came on a Monday, which Ines had already learned was the day the shop belonged to no one in particular. He did not knock. He stood on the step with his case in both hands, as if he had been sent for and was waiting to be told he had the wrong address.\\n\\n\\\"There isn't a piano,\\\" Ines said.\\n\\n\\\"There was,\\\" he said. \\\"Upstairs. She sold it in the winter. I'm not here for the piano.\\\"\\n\\nHe wanted the bench. She had not known there was a bench, but he described it so exactly—the hinge that caught, the lid that had to be lifted from the left—that she went up and found it under a dust sheet in the room with the sloped ceiling. Inside, instead of sheet music, there were letters, tied in bundles by year. The oldest was from before Ines was born.\\n\\nShe carried the bench down herself. He did not offer to help, and she understood that this was a kind of courtesy.\\n\\n\\\"You'll want to read those,\\\" he said, when she set it before him.\\n\\n\\\"Are they mine to read?\\\"\\n\\nHe considered the question longer than she expected. \\\"They're the shop's,\\\" he said. \\\"Which is the same thing now, or will be.\\\"\\n\\nHe left the letters. He took only the bench, tilting it through the doorway with the ease of someone who had done it before. The bell rang once behind him, then settled.\\n\\nIns sat on the floor where the bench had been and untied the first bundle, and the paper made the sound of something being let out.\"}",
+  "output_sha256": "6bd1100c7ecc9cb10784b219725f601dec6bfe3d33824c138a8adedf5138d667",
+  "finish_reason": "end_turn",
+  "refusal": null,
+  "returned_model": "claude-fable-5-1",
+  "usage": {
+    "input_tokens": 538,
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 0,
+    "cache_creation": {
+      "ephemeral_5m_input_tokens": 0,
+      "ephemeral_1h_input_tokens": 0
+    },
+    "output_tokens": 535,
+    "output_tokens_details": {
+      "thinking_tokens": 0
+    },
+    "service_tier": "standard",
+    "inference_geo": "global"
+  },
+  "format": {
+    "json_object": true,
+    "rule_unchanged": true,
+    "passage_is_string": true,
+    "passage_sha256": "dd8ae490821b40fb8fa50d5bdd876abdd3beec8652dd245d818268ef90a25b8d",
+    "passage_words": 268
+  },
+  "finished_at": "2026-09-22T20:01:11.701230+00:00",
+  "latency_seconds": 12.6529,
+  "usage_cost_upper_estimate_usd": 0.03213,
+  "stream_status": "active",
+  "budget": {
+    "usage_cost_upper_estimate_usd": 2.1900648,
+    "uncertain_cost_reserve_usd": 0.04533,
+    "in_flight_reserve_usd": 0.3652997,
+    "limit_usd": 18.83
+  }
+}

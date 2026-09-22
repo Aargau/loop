@@ -1,0 +1,50 @@
+{
+  "model": "gpt-6-sol",
+  "seed": "sunset_a",
+  "hop": 55,
+  "http_status": 200,
+  "response_body": "{\n  \"id\": \"chatcmpl-ER148y3QnRbUwlGmz4w9JNwhY0tIF\",\n  \"object\": \"chat.completion\",\n  \"created\": 1790107660,\n  \"model\": \"gpt-6-sol\",\n  \"choices\": [\n    {\n      \"index\": 0,\n      \"message\": {\n        \"role\": \"assistant\",\n        \"content\": \"{\\n  \\\"rule\\\": \\\"Return this JSON object with the rule field unchanged and a new passage of about 250 words in the text field.\\\",\\n  \\\"text\\\": \\\"On Tuesday, Imani and Sami followed the street Laila had written beneath the bell. It ended at a row of houses with narrow front steps. They had asked at three doors before a man came out carrying a basket of laundry.\\\\n\\\\n“The school bell?” he said. “My mother used to talk about it. Wait here.”\\\\n\\\\nHe returned with a photograph. In it, children stood outside the school, their coats buttoned to their chins. Above the doorway hung a small bell.\\\\n\\\\nImani copied its shape into the notebook. “Do you know what happened to it?”\\\\n\\\\nThe man shook his head, then pointed to a girl at the edge of the photograph. “Ask her. She lives over the tailor’s shop now.”\\\\n\\\\nAt the shop, the girl in the photograph opened the upstairs window. She was old enough to be Sami’s grandmother, but she recognized the bell at once.\\\\n\\\\n“It cracked,” she called down. “The caretaker took it away to be mended. Then the school closed, and nobody thought to ask him for it.”\\\\n\\\\n“Did he keep it?” Sami asked.\\\\n\\\\n“He might have. His daughter lives near the market.” She gave them a name and a building with a red door.\\\\n\\\\nBy the time they reached the bakery, the afternoon light had faded. Imani put the photograph’s story on a new page, leaving room at the bottom for the red door. Her grandfather brought them each a piece of bread, still warm from the oven.\\\\n\\\\n“Did you find the bell?” he asked.\\\\n\\\\n“Not yet,” Imani said. “But we know who to ask next.”\\\"\\n}\",\n        \"refusal\": null,\n        \"annotations\": []\n      },\n      \"finish_reason\": \"stop\"\n    }\n  ],\n  \"usage\": {\n    \"prompt_tokens\": 389,\n    \"completion_tokens\": 415,\n    \"total_tokens\": 804,\n    \"prompt_tokens_details\": {\n      \"cached_tokens\": 0,\n      \"cache_write_tokens\": 0,\n      \"audio_tokens\": 0\n    },\n    \"completion_tokens_details\": {\n      \"reasoning_tokens\": 21,\n      \"audio_tokens\": 0,\n      \"accepted_prediction_tokens\": 0,\n      \"rejected_prediction_tokens\": 0\n    }\n  },\n  \"service_tier\": \"default\",\n  \"system_fingerprint\": null\n}\n",
+  "response_headers": {
+    "Date": "Tue, 22 Sep 2026 20:07:46 GMT",
+    "openai-processing-ms": "6377",
+    "x-request-id": "req_11e7a83b7d7a4121951b78db9cb0e792"
+  },
+  "output": "{\n  \"rule\": \"Return this JSON object with the rule field unchanged and a new passage of about 250 words in the text field.\",\n  \"text\": \"On Tuesday, Imani and Sami followed the street Laila had written beneath the bell. It ended at a row of houses with narrow front steps. They had asked at three doors before a man came out carrying a basket of laundry.\\n\\n“The school bell?” he said. “My mother used to talk about it. Wait here.”\\n\\nHe returned with a photograph. In it, children stood outside the school, their coats buttoned to their chins. Above the doorway hung a small bell.\\n\\nImani copied its shape into the notebook. “Do you know what happened to it?”\\n\\nThe man shook his head, then pointed to a girl at the edge of the photograph. “Ask her. She lives over the tailor’s shop now.”\\n\\nAt the shop, the girl in the photograph opened the upstairs window. She was old enough to be Sami’s grandmother, but she recognized the bell at once.\\n\\n“It cracked,” she called down. “The caretaker took it away to be mended. Then the school closed, and nobody thought to ask him for it.”\\n\\n“Did he keep it?” Sami asked.\\n\\n“He might have. His daughter lives near the market.” She gave them a name and a building with a red door.\\n\\nBy the time they reached the bakery, the afternoon light had faded. Imani put the photograph’s story on a new page, leaving room at the bottom for the red door. Her grandfather brought them each a piece of bread, still warm from the oven.\\n\\n“Did you find the bell?” he asked.\\n\\n“Not yet,” Imani said. “But we know who to ask next.”\"\n}",
+  "output_sha256": "47c6a159c2133af9392924a9c7ab038d4e2bbed7ffb9f4a6b4b982268eb41751",
+  "finish_reason": "stop",
+  "refusal": null,
+  "returned_model": "gpt-6-sol",
+  "usage": {
+    "prompt_tokens": 389,
+    "completion_tokens": 415,
+    "total_tokens": 804,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 21,
+      "audio_tokens": 0,
+      "accepted_prediction_tokens": 0,
+      "rejected_prediction_tokens": 0
+    }
+  },
+  "format": {
+    "json_object": true,
+    "rule_unchanged": true,
+    "passage_is_string": true,
+    "passage_sha256": "963d9ab914b53a361b76fd635b7ca54b14c2de450b4958d37e3bc7fd37efbb15",
+    "passage_words": 260
+  },
+  "finished_at": "2026-09-22T20:07:42.923882+00:00",
+  "latency_seconds": 6.4966,
+  "usage_cost_upper_estimate_usd": 0.004928,
+  "stream_status": "active",
+  "budget": {
+    "usage_cost_upper_estimate_usd": 4.64995,
+    "uncertain_cost_reserve_usd": 0.04533,
+    "in_flight_reserve_usd": 0.5467045,
+    "limit_usd": 18.83
+  }
+}

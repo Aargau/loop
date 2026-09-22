@@ -1,0 +1,50 @@
+{
+  "model": "gpt-6-sol",
+  "seed": "tide",
+  "hop": 19,
+  "http_status": 200,
+  "response_body": "{\n  \"id\": \"chatcmpl-ER0wxBfQsXZ1WpmPYByOfWv2GgB2V\",\n  \"object\": \"chat.completion\",\n  \"created\": 1790107215,\n  \"model\": \"gpt-6-sol\",\n  \"choices\": [\n    {\n      \"index\": 0,\n      \"message\": {\n        \"role\": \"assistant\",\n        \"content\": \"{\\n  \\\"rule\\\": \\\"Return this JSON object with the rule field unchanged and a new passage of about 250 words in the text field.\\\",\\n  \\\"text\\\": \\\"At breakfast, Mara told Daniel about the lantern. He said fishermen often went down to the quay before dawn, but he asked which end she had seen it at.\\\\n\\\\n“The north end.”\\\\n\\\\nTheir father folded the drawing and put it inside the ledger. “Then we’ll go there first.”\\\\n\\\\nThe harbor master was waiting outside his office, arguing with a man about a damaged mooring rope. When their father showed him the drawing, he stopped speaking. He studied it for so long that the other man wandered away.\\\\n\\\\n“I haven’t seen this plan in years,” he said. “Where did you find it?”\\\\n\\\\n“In the old house,” their father replied. “Do you know what the X means?”\\\\n\\\\nThe harbor master shook his head. He fetched a key, and they walked together past the boats to the warehouse. In daylight, its north wall looked solid. Daniel pressed his palm against the green stone while Mara counted the paces from the corner, as the drawing showed.\\\\n\\\\nAt seven paces, she found a narrow seam. It ran down behind a stack of empty crates.\\\\n\\\\nThe harbor master helped Daniel move them. Beneath the lowest crate lay a square iron ring set into the paving. Their father lifted it. A shallow trapdoor came up with a groan, releasing the smell of cold, brackish water.\\\\n\\\\nStone steps descended into darkness. Before anyone could fetch a lantern, a voice rose from below.\\\\n\\\\n“Close it,” the voice said. “The tide’s coming in.”\\\"\\n}\",\n        \"refusal\": null,\n        \"annotations\": []\n      },\n      \"finish_reason\": \"stop\"\n    }\n  ],\n  \"usage\": {\n    \"prompt_tokens\": 358,\n    \"completion_tokens\": 388,\n    \"total_tokens\": 746,\n    \"prompt_tokens_details\": {\n      \"cached_tokens\": 0,\n      \"cache_write_tokens\": 0,\n      \"audio_tokens\": 0\n    },\n    \"completion_tokens_details\": {\n      \"reasoning_tokens\": 20,\n      \"audio_tokens\": 0,\n      \"accepted_prediction_tokens\": 0,\n      \"rejected_prediction_tokens\": 0\n    }\n  },\n  \"service_tier\": \"default\",\n  \"system_fingerprint\": null\n}\n",
+  "response_headers": {
+    "Date": "Tue, 22 Sep 2026 20:00:21 GMT",
+    "openai-processing-ms": "5786",
+    "x-request-id": "req_d8c6d034e7564a1babfbfca55333355f"
+  },
+  "output": "{\n  \"rule\": \"Return this JSON object with the rule field unchanged and a new passage of about 250 words in the text field.\",\n  \"text\": \"At breakfast, Mara told Daniel about the lantern. He said fishermen often went down to the quay before dawn, but he asked which end she had seen it at.\\n\\n“The north end.”\\n\\nTheir father folded the drawing and put it inside the ledger. “Then we’ll go there first.”\\n\\nThe harbor master was waiting outside his office, arguing with a man about a damaged mooring rope. When their father showed him the drawing, he stopped speaking. He studied it for so long that the other man wandered away.\\n\\n“I haven’t seen this plan in years,” he said. “Where did you find it?”\\n\\n“In the old house,” their father replied. “Do you know what the X means?”\\n\\nThe harbor master shook his head. He fetched a key, and they walked together past the boats to the warehouse. In daylight, its north wall looked solid. Daniel pressed his palm against the green stone while Mara counted the paces from the corner, as the drawing showed.\\n\\nAt seven paces, she found a narrow seam. It ran down behind a stack of empty crates.\\n\\nThe harbor master helped Daniel move them. Beneath the lowest crate lay a square iron ring set into the paving. Their father lifted it. A shallow trapdoor came up with a groan, releasing the smell of cold, brackish water.\\n\\nStone steps descended into darkness. Before anyone could fetch a lantern, a voice rose from below.\\n\\n“Close it,” the voice said. “The tide’s coming in.”\"\n}",
+  "output_sha256": "0069d36e359d477ee1fbc7254e875a70b00b29259ce59905d1d8228ac43d163c",
+  "finish_reason": "stop",
+  "refusal": null,
+  "returned_model": "gpt-6-sol",
+  "usage": {
+    "prompt_tokens": 358,
+    "completion_tokens": 388,
+    "total_tokens": 746,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 20,
+      "audio_tokens": 0,
+      "accepted_prediction_tokens": 0,
+      "rejected_prediction_tokens": 0
+    }
+  },
+  "format": {
+    "json_object": true,
+    "rule_unchanged": true,
+    "passage_is_string": true,
+    "passage_sha256": "82f5e4bf5a126d53b8e83d7ec4a21e899600bf0f18309de90499cdd5c59fd989",
+    "passage_words": 243
+  },
+  "finished_at": "2026-09-22T20:00:17.195818+00:00",
+  "latency_seconds": 5.9282,
+  "usage_cost_upper_estimate_usd": 0.004596,
+  "stream_status": "active",
+  "budget": {
+    "usage_cost_upper_estimate_usd": 1.8084872,
+    "uncertain_cost_reserve_usd": 0.04533,
+    "in_flight_reserve_usd": 0.5449312,
+    "limit_usd": 18.83
+  }
+}

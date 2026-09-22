@@ -1,0 +1,22 @@
+{
+  "started_at": "2026-09-22T20:02:38.072382+00:00",
+  "model": "claude-opus-5-5",
+  "seed": "tide",
+  "hop": 16,
+  "endpoint": "https://api.anthropic.com/v1/messages",
+  "body": {
+    "model": "claude-opus-5-5",
+    "messages": [
+      {
+        "role": "user",
+        "content": "```json\n{\"rule\": \"Return this JSON object with the rule field unchanged and a new passage of about 250 words in the text field.\", \"text\": \"The girl turned to look at him. In all the years since her mother's death, he had never spoken of the hollow, never once walked down to it while she worked. She had assumed he did not know what she was doing there, or did not care. \\\"There were six of them,\\\" he went on, his breath clouding between them. \\\"Apple and pear, mostly. A plum she ordered from the mainland that cost more than a month of oil. The salt wind took them one by one. She said the island didn't want an orchard.\\\" He paused. \\\"She kept trying anyway.\\\" The girl thought of the almanac, of the careful pencil notes crowding every margin, the dates crossed out and written again. She had believed they were plans. Now she understood they were a record of failures, patiently kept. \\\"Why didn't you tell me?\\\" she asked. Her father was quiet for a while. Somewhere beyond the ridge, the sea struck the rocks with a sound like distant doors closing. \\\"I thought if you didn't know how it ended,\\\" he said, \\\"you might not stop.\\\" He bent and pressed his palm against the bound trunk, gently, the way one might touch a sleeping child. Then he straightened, brushed the snow from his knees, and started back up the path toward the lighthouse. Halfway there, he stopped and called over his shoulder that the beeswax could stay in the shed from now on, where she could reach it. The girl stayed in the hollow until the light began to fail, watching the wax harden in the cold.\"}\n```"
+      }
+    ],
+    "max_tokens": 4096,
+    "output_config": {
+      "effort": "low"
+    }
+  },
+  "state_sha256": "67be3b13b0de985981ba27a39a4113492f35f18efeea831ab5a3f411b01a0ce2",
+  "reserved_cost_usd": 0.090312
+}

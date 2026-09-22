@@ -1,0 +1,50 @@
+{
+  "model": "gpt-6-sol",
+  "seed": "sunset_a",
+  "hop": 45,
+  "http_status": 200,
+  "response_body": "{\n  \"id\": \"chatcmpl-ER121jQkc4kAWlFJax2ff4TaeYdNs\",\n  \"object\": \"chat.completion\",\n  \"created\": 1790107529,\n  \"model\": \"gpt-6-sol\",\n  \"choices\": [\n    {\n      \"index\": 0,\n      \"message\": {\n        \"role\": \"assistant\",\n        \"content\": \"{\\n  \\\"rule\\\": \\\"Return this JSON object with the rule field unchanged and a new passage of about 250 words in the text field.\\\",\\n  \\\"text\\\": \\\"On Saturday, Imani brought a piece of chalk to the bench. The boy was already there, drawing a careful square in his notebook.\\\\n\\\\n“What’s that?” she asked.\\\\n\\\\n“The patch from yesterday. I thought I’d remember its shape.”\\\\n\\\\nImani looked at the square. “It was more like a leaf.”\\\\n\\\\n“I know. I forgot the points.”\\\\n\\\\nShe found a chestnut leaf on the ground and held it against the page. It was too large, and one edge had curled inward. The boy traced around it anyway.\\\\n\\\\nThe bench was warm. Imani pressed her palm to a slat, then drew a chalk line beside her hand. When she lifted it, the line stayed where it was. She watched the space inside it fill with sunlight.\\\\n\\\\n“Now we can see if it moves,” she said.\\\\n\\\\nThey went across the street for rolls. Her grandfather gave them each one in a paper bag and asked why there was chalk on Imani’s fingers. She showed him her open hand, but there was nothing on it to explain.\\\\n\\\\nBy the time they returned, the chalk line was still there. A thin shadow from the bench’s iron arm had reached one corner.\\\\n\\\\nThe boy added the shadow to his drawing. Imani ate her roll slowly, brushing crumbs from her knees onto the ground beneath the slats. She wondered if the beetle would find them.\\\\n\\\\nWhen the shadow crossed the whole outline, she put her hand back inside it. Her fingers fit, though the warmth she had marked was gone.\\\"\\n}\",\n        \"refusal\": null,\n        \"annotations\": []\n      },\n      \"finish_reason\": \"stop\"\n    }\n  ],\n  \"usage\": {\n    \"prompt_tokens\": 388,\n    \"completion_tokens\": 395,\n    \"total_tokens\": 783,\n    \"prompt_tokens_details\": {\n      \"cached_tokens\": 0,\n      \"cache_write_tokens\": 0,\n      \"audio_tokens\": 0\n    },\n    \"completion_tokens_details\": {\n      \"reasoning_tokens\": 21,\n      \"audio_tokens\": 0,\n      \"accepted_prediction_tokens\": 0,\n      \"rejected_prediction_tokens\": 0\n    }\n  },\n  \"service_tier\": \"default\",\n  \"system_fingerprint\": null\n}\n",
+  "response_headers": {
+    "Date": "Tue, 22 Sep 2026 20:05:35 GMT",
+    "openai-processing-ms": "6000",
+    "x-request-id": "req_4877823c90a64cf39febf8fbb4d16d5d"
+  },
+  "output": "{\n  \"rule\": \"Return this JSON object with the rule field unchanged and a new passage of about 250 words in the text field.\",\n  \"text\": \"On Saturday, Imani brought a piece of chalk to the bench. The boy was already there, drawing a careful square in his notebook.\\n\\n“What’s that?” she asked.\\n\\n“The patch from yesterday. I thought I’d remember its shape.”\\n\\nImani looked at the square. “It was more like a leaf.”\\n\\n“I know. I forgot the points.”\\n\\nShe found a chestnut leaf on the ground and held it against the page. It was too large, and one edge had curled inward. The boy traced around it anyway.\\n\\nThe bench was warm. Imani pressed her palm to a slat, then drew a chalk line beside her hand. When she lifted it, the line stayed where it was. She watched the space inside it fill with sunlight.\\n\\n“Now we can see if it moves,” she said.\\n\\nThey went across the street for rolls. Her grandfather gave them each one in a paper bag and asked why there was chalk on Imani’s fingers. She showed him her open hand, but there was nothing on it to explain.\\n\\nBy the time they returned, the chalk line was still there. A thin shadow from the bench’s iron arm had reached one corner.\\n\\nThe boy added the shadow to his drawing. Imani ate her roll slowly, brushing crumbs from her knees onto the ground beneath the slats. She wondered if the beetle would find them.\\n\\nWhen the shadow crossed the whole outline, she put her hand back inside it. Her fingers fit, though the warmth she had marked was gone.\"\n}",
+  "output_sha256": "a1c1c4a3622f6014bc7fe0d4e8844fd9142083f4025bd97fb935f76f296d7f46",
+  "finish_reason": "stop",
+  "refusal": null,
+  "returned_model": "gpt-6-sol",
+  "usage": {
+    "prompt_tokens": 388,
+    "completion_tokens": 395,
+    "total_tokens": 783,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 21,
+      "audio_tokens": 0,
+      "accepted_prediction_tokens": 0,
+      "rejected_prediction_tokens": 0
+    }
+  },
+  "format": {
+    "json_object": true,
+    "rule_unchanged": true,
+    "passage_is_string": true,
+    "passage_sha256": "e8b83ada3b3a9f88149e5a7262b95835852aa0f1ae0adceb6fd0889ccba8965c",
+    "passage_words": 251
+  },
+  "finished_at": "2026-09-22T20:05:31.251580+00:00",
+  "latency_seconds": 6.1223,
+  "usage_cost_upper_estimate_usd": 0.004726,
+  "stream_status": "active",
+  "budget": {
+    "usage_cost_upper_estimate_usd": 3.8454253,
+    "uncertain_cost_reserve_usd": 0.04533,
+    "in_flight_reserve_usd": 0.5440269,
+    "limit_usd": 18.83
+  }
+}

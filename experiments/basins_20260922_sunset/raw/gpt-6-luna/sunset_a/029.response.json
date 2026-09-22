@@ -1,0 +1,47 @@
+{
+  "model": "gpt-6-luna",
+  "seed": "sunset_a",
+  "hop": 29,
+  "http_status": 200,
+  "response_body": "{\n  \"id\": \"chatcmpl-ER0yIaMmaN7B3bs1KewvoApunf1pV\",\n  \"object\": \"chat.completion\",\n  \"created\": 1790107298,\n  \"model\": \"gpt-6-luna\",\n  \"choices\": [\n    {\n      \"index\": 0,\n      \"message\": {\n        \"role\": \"assistant\",\n        \"content\": \"{\\\"rule\\\":\\\"Return this JSON object with the rule field unchanged and a new passage of about 250 words in the text field.\\\",\\\"text\\\":\\\"Every Thursday afternoon, Omar visited the old train station with his grandfather. The station no longer served passengers, but its clock still ticked above the empty platform, and wildflowers grew between the rails.\\n\\nGrandfather had worked there when he was young. He showed Omar the small office where conductors once checked tickets and the bench where travelers waited for trains. In a wooden drawer, they found a stack of faded postcards. Each showed a different place: a snowy mountain, a crowded harbor, a field of golden wheat.\\n\\nOmar chose a postcard with a picture of a lighthouse. On its back, someone had written, “The sea is louder than I imagined.” He wondered who had sent it and what the sender had seen on the journey.\\n\\nThe next week, Omar brought a notebook. He began recording the stories his grandfather remembered: the baker who carried warm bread onto the morning train, the musician who played a fiddle on the platform, and the time a storm delayed every train until midnight.\\n\\nSoon, Omar asked the librarian to help him find old photographs of the station. A local historian shared a map, and neighbors brought letters and ticket stubs from their families. Together, they arranged the objects in the station’s waiting room, creating a small exhibit.\\n\\nOn opening day, visitors wandered among the displays, pointing out familiar names and sharing memories of their own. Omar stood beside the lighthouse postcard and read its message aloud.\\n\\nThe station remained quiet after everyone left, but it no longer felt forgotten. Its stories had found new listeners, and Omar knew there would always be another one to discover.\\\"}\",\n        \"refusal\": null,\n        \"annotations\": []\n      },\n      \"finish_reason\": \"stop\"\n    }\n  ],\n  \"usage\": {\n    \"prompt_tokens\": 359,\n    \"completion_tokens\": 434,\n    \"total_tokens\": 793,\n    \"prompt_tokens_details\": {\n      \"cached_tokens\": 0,\n      \"cache_write_tokens\": 0,\n      \"audio_tokens\": 0\n    },\n    \"completion_tokens_details\": {\n      \"reasoning_tokens\": 77,\n      \"audio_tokens\": 0,\n      \"accepted_prediction_tokens\": 0,\n      \"rejected_prediction_tokens\": 0\n    }\n  },\n  \"service_tier\": \"default\",\n  \"system_fingerprint\": null\n}\n",
+  "response_headers": {
+    "Date": "Tue, 22 Sep 2026 20:01:44 GMT",
+    "openai-processing-ms": "6318",
+    "x-request-id": "req_94aac25c16a04853884a55839db1c194"
+  },
+  "output": "{\"rule\":\"Return this JSON object with the rule field unchanged and a new passage of about 250 words in the text field.\",\"text\":\"Every Thursday afternoon, Omar visited the old train station with his grandfather. The station no longer served passengers, but its clock still ticked above the empty platform, and wildflowers grew between the rails.\n\nGrandfather had worked there when he was young. He showed Omar the small office where conductors once checked tickets and the bench where travelers waited for trains. In a wooden drawer, they found a stack of faded postcards. Each showed a different place: a snowy mountain, a crowded harbor, a field of golden wheat.\n\nOmar chose a postcard with a picture of a lighthouse. On its back, someone had written, “The sea is louder than I imagined.” He wondered who had sent it and what the sender had seen on the journey.\n\nThe next week, Omar brought a notebook. He began recording the stories his grandfather remembered: the baker who carried warm bread onto the morning train, the musician who played a fiddle on the platform, and the time a storm delayed every train until midnight.\n\nSoon, Omar asked the librarian to help him find old photographs of the station. A local historian shared a map, and neighbors brought letters and ticket stubs from their families. Together, they arranged the objects in the station’s waiting room, creating a small exhibit.\n\nOn opening day, visitors wandered among the displays, pointing out familiar names and sharing memories of their own. Omar stood beside the lighthouse postcard and read its message aloud.\n\nThe station remained quiet after everyone left, but it no longer felt forgotten. Its stories had found new listeners, and Omar knew there would always be another one to discover.\"}",
+  "output_sha256": "13081a5e3e81645acf28e92bbfa411555affca2732aa4cfe9aa1c063d6eff2a7",
+  "finish_reason": "stop",
+  "refusal": null,
+  "returned_model": "gpt-6-luna",
+  "usage": {
+    "prompt_tokens": 359,
+    "completion_tokens": 434,
+    "total_tokens": 793,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 77,
+      "audio_tokens": 0,
+      "accepted_prediction_tokens": 0,
+      "rejected_prediction_tokens": 0
+    }
+  },
+  "format": {
+    "json_object": false,
+    "rule_unchanged": false
+  },
+  "finished_at": "2026-09-22T20:01:40.361819+00:00",
+  "latency_seconds": 6.4186,
+  "usage_cost_upper_estimate_usd": 0.0002529,
+  "stream_status": "active",
+  "budget": {
+    "usage_cost_upper_estimate_usd": 2.3768575,
+    "uncertain_cost_reserve_usd": 0.04533,
+    "in_flight_reserve_usd": 0.587796,
+    "limit_usd": 18.83
+  }
+}

@@ -1,0 +1,50 @@
+{
+  "model": "gpt-6-astra",
+  "seed": "sunset_b",
+  "hop": 8,
+  "http_status": 200,
+  "response_body": "{\n  \"id\": \"chatcmpl-ER0xsS0nRYI2y76iJ9aV0U1DChZ9S\",\n  \"object\": \"chat.completion\",\n  \"created\": 1790107272,\n  \"model\": \"gpt-6-astra\",\n  \"choices\": [\n    {\n      \"index\": 0,\n      \"message\": {\n        \"role\": \"assistant\",\n        \"content\": \"{\\n  \\\"rule\\\": \\\"Return this JSON object with the rule field unchanged and a new passage of about 250 words in the text field.\\\",\\n  \\\"text\\\": \\\"Every Thursday, the sea returned something it had taken.\\\\n\\\\nUsually it was a sandal, a fishing float, a crate with foreign lettering. Once, it was a piano stool.\\\\n\\\\nElias kept a ledger in the coastguard hut. He recorded each object, where it had washed ashore, and who came to claim it.\\\\n\\\\nHe had been doing this for thirty-one years when the sea returned his father's watch.\\\\n\\\\nHe knew the dent beside the winding stem. He had made it himself, dropping the watch onto the kitchen tiles while pretending to be late for work.\\\\n\\\\nHis father had laughed.\\\\n\\\\nThat was the part Elias had forgotten.\\\\n\\\\nHe carried the watch home in his coat pocket. All evening he expected it to tick, though its hands were missing and the glass was clouded white.\\\\n\\\\nOn Friday, a boy knocked at the hut.\\\\n\\\\n“My gran says you found a watch.”\\\\n\\\\nElias closed the ledger.\\\\n\\\\n“Lots of watches get lost.”\\\\n\\\\n“She says this one's got a dent.”\\\\n\\\\nThe boy produced a photograph. An old woman stood beside Elias's father on a promenade Elias did not recognize. His father wore the watch.\\\\n\\\\n“When was this taken?” Elias asked.\\\\n\\\\nThe boy turned it over. The date was twelve years after the funeral.\\\\n\\\\nOutside, the tide dragged pebbles down the beach.\\\\n\\\\n“My gran can't manage the steps,” the boy said. “She's waiting in the car.”\\\\n\\\\nElias reached for his coat, then stopped and took the watch from its pocket.\\\\n\\\\nHe left the ledger open. In the space reserved for the claimant's name, he had written his own.\\\\n\\\\nHe crossed it out before going downstairs.\\\"\\n}\",\n        \"refusal\": null,\n        \"annotations\": []\n      },\n      \"finish_reason\": \"stop\"\n    }\n  ],\n  \"usage\": {\n    \"prompt_tokens\": 438,\n    \"completion_tokens\": 405,\n    \"total_tokens\": 843,\n    \"prompt_tokens_details\": {\n      \"cached_tokens\": 0,\n      \"cache_write_tokens\": 0,\n      \"audio_tokens\": 0\n    },\n    \"completion_tokens_details\": {\n      \"reasoning_tokens\": 0,\n      \"audio_tokens\": 0,\n      \"accepted_prediction_tokens\": 0,\n      \"rejected_prediction_tokens\": 0\n    }\n  },\n  \"service_tier\": \"default\",\n  \"system_fingerprint\": null\n}\n",
+  "response_headers": {
+    "Date": "Tue, 22 Sep 2026 20:01:25 GMT",
+    "openai-processing-ms": "13920",
+    "x-request-id": "req_c34fdc0d7cdf46fab741dd2ac04d96b9"
+  },
+  "output": "{\n  \"rule\": \"Return this JSON object with the rule field unchanged and a new passage of about 250 words in the text field.\",\n  \"text\": \"Every Thursday, the sea returned something it had taken.\\n\\nUsually it was a sandal, a fishing float, a crate with foreign lettering. Once, it was a piano stool.\\n\\nElias kept a ledger in the coastguard hut. He recorded each object, where it had washed ashore, and who came to claim it.\\n\\nHe had been doing this for thirty-one years when the sea returned his father's watch.\\n\\nHe knew the dent beside the winding stem. He had made it himself, dropping the watch onto the kitchen tiles while pretending to be late for work.\\n\\nHis father had laughed.\\n\\nThat was the part Elias had forgotten.\\n\\nHe carried the watch home in his coat pocket. All evening he expected it to tick, though its hands were missing and the glass was clouded white.\\n\\nOn Friday, a boy knocked at the hut.\\n\\n“My gran says you found a watch.”\\n\\nElias closed the ledger.\\n\\n“Lots of watches get lost.”\\n\\n“She says this one's got a dent.”\\n\\nThe boy produced a photograph. An old woman stood beside Elias's father on a promenade Elias did not recognize. His father wore the watch.\\n\\n“When was this taken?” Elias asked.\\n\\nThe boy turned it over. The date was twelve years after the funeral.\\n\\nOutside, the tide dragged pebbles down the beach.\\n\\n“My gran can't manage the steps,” the boy said. “She's waiting in the car.”\\n\\nElias reached for his coat, then stopped and took the watch from its pocket.\\n\\nHe left the ledger open. In the space reserved for the claimant's name, he had written his own.\\n\\nHe crossed it out before going downstairs.\"\n}",
+  "output_sha256": "1aa1a07c872f87490bc4532f298ad3107b28c85251b7e082321f7c2d3705472f",
+  "finish_reason": "stop",
+  "refusal": null,
+  "returned_model": "gpt-6-astra",
+  "usage": {
+    "prompt_tokens": 438,
+    "completion_tokens": 405,
+    "total_tokens": 843,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "audio_tokens": 0,
+      "accepted_prediction_tokens": 0,
+      "rejected_prediction_tokens": 0
+    }
+  },
+  "format": {
+    "json_object": true,
+    "rule_unchanged": true,
+    "passage_is_string": true,
+    "passage_sha256": "50dac286a8b38c5e61a875e78720850451cbf341ae4d224be5143f11bd62fdce",
+    "passage_words": 266
+  },
+  "finished_at": "2026-09-22T20:01:21.873024+00:00",
+  "latency_seconds": 14.1169,
+  "usage_cost_upper_estimate_usd": 0.02463,
+  "stream_status": "active",
+  "budget": {
+    "usage_cost_upper_estimate_usd": 2.2326546,
+    "uncertain_cost_reserve_usd": 0.04533,
+    "in_flight_reserve_usd": 0.3637978,
+    "limit_usd": 18.83
+  }
+}

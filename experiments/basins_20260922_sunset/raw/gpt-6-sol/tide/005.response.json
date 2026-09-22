@@ -1,0 +1,50 @@
+{
+  "model": "gpt-6-sol",
+  "seed": "tide",
+  "hop": 5,
+  "http_status": 200,
+  "response_body": "{\n  \"id\": \"chatcmpl-ER0tW2hWB36JcHVqkbVTJUDBmBxYK\",\n  \"object\": \"chat.completion\",\n  \"created\": 1790107002,\n  \"model\": \"gpt-6-sol\",\n  \"choices\": [\n    {\n      \"index\": 0,\n      \"message\": {\n        \"role\": \"assistant\",\n        \"content\": \"{\\n  \\\"rule\\\": \\\"Return this JSON object with the rule field unchanged and a new passage of about 250 words in the text field.\\\",\\n  \\\"text\\\": \\\"“No,” Daniel shouted. “The water’s coming back.”\\\\n\\\\nMara looked over the stern. A pale line had appeared beyond the breakwater, stretching from one headland to the other. It was moving toward them.\\\\n\\\\nMr. Venn eased the trawler alongside the skiff. Mara caught its gunwale with the boat hook. Beneath the white hull, a rope hung straight down into the dark water. Each time the bell sounded, it snapped taut.\\\\n\\\\nShe reached for her knife.\\\\n\\\\n“Wait,” Daniel called from the quay. He held up the chart, its corners whipping in the wind. “The crosses aren’t boats. They’re places to tie off.”\\\\n\\\\nMara saw them then: five crosses beyond the breakwater, one inside. Her father had drawn a path, not an inventory.\\\\n\\\\nThe bell began its fourth note. Mara climbed into the skiff. It dipped under her weight, and the rope pulled hard enough to drag the bow beneath the surface. She looped the painter around the trawler’s cleat.\\\\n\\\\n“Go!”\\\\n\\\\nMr. Venn opened the throttle. For one terrible second neither boat moved. Then something gave below them. The trawler surged forward, towing the skiff through the gap just as the pale line rose into a wall of water.\\\\n\\\\nMara braced for the impact. Instead, the skiff’s rope jerked once, and the wave broke around them. Spray filled the air. When she could see again, both boats were afloat beyond the breakwater.\\\\n\\\\nThe church was silent. Daniel stood alone on the quay, holding the chart against his chest. Mara lifted an arm to wave, but he was looking past her, toward whatever had followed the rope out to sea.\\\"\\n}\",\n        \"refusal\": null,\n        \"annotations\": []\n      },\n      \"finish_reason\": \"stop\"\n    }\n  ],\n  \"usage\": {\n    \"prompt_tokens\": 392,\n    \"completion_tokens\": 441,\n    \"total_tokens\": 833,\n    \"prompt_tokens_details\": {\n      \"cached_tokens\": 0,\n      \"cache_write_tokens\": 0,\n      \"audio_tokens\": 0\n    },\n    \"completion_tokens_details\": {\n      \"reasoning_tokens\": 22,\n      \"audio_tokens\": 0,\n      \"accepted_prediction_tokens\": 0,\n      \"rejected_prediction_tokens\": 0\n    }\n  },\n  \"service_tier\": \"default\",\n  \"system_fingerprint\": null\n}\n",
+  "response_headers": {
+    "Date": "Tue, 22 Sep 2026 19:56:48 GMT",
+    "openai-processing-ms": "5921",
+    "x-request-id": "req_1ddeced1d20b419b81b9c3dbe0c67f8d"
+  },
+  "output": "{\n  \"rule\": \"Return this JSON object with the rule field unchanged and a new passage of about 250 words in the text field.\",\n  \"text\": \"“No,” Daniel shouted. “The water’s coming back.”\\n\\nMara looked over the stern. A pale line had appeared beyond the breakwater, stretching from one headland to the other. It was moving toward them.\\n\\nMr. Venn eased the trawler alongside the skiff. Mara caught its gunwale with the boat hook. Beneath the white hull, a rope hung straight down into the dark water. Each time the bell sounded, it snapped taut.\\n\\nShe reached for her knife.\\n\\n“Wait,” Daniel called from the quay. He held up the chart, its corners whipping in the wind. “The crosses aren’t boats. They’re places to tie off.”\\n\\nMara saw them then: five crosses beyond the breakwater, one inside. Her father had drawn a path, not an inventory.\\n\\nThe bell began its fourth note. Mara climbed into the skiff. It dipped under her weight, and the rope pulled hard enough to drag the bow beneath the surface. She looped the painter around the trawler’s cleat.\\n\\n“Go!”\\n\\nMr. Venn opened the throttle. For one terrible second neither boat moved. Then something gave below them. The trawler surged forward, towing the skiff through the gap just as the pale line rose into a wall of water.\\n\\nMara braced for the impact. Instead, the skiff’s rope jerked once, and the wave broke around them. Spray filled the air. When she could see again, both boats were afloat beyond the breakwater.\\n\\nThe church was silent. Daniel stood alone on the quay, holding the chart against his chest. Mara lifted an arm to wave, but he was looking past her, toward whatever had followed the rope out to sea.\"\n}",
+  "output_sha256": "a5730b783123226e66959e730991ea579c718e5e89376cc37c1524f8791e2abf",
+  "finish_reason": "stop",
+  "refusal": null,
+  "returned_model": "gpt-6-sol",
+  "usage": {
+    "prompt_tokens": 392,
+    "completion_tokens": 441,
+    "total_tokens": 833,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 22,
+      "audio_tokens": 0,
+      "accepted_prediction_tokens": 0,
+      "rejected_prediction_tokens": 0
+    }
+  },
+  "format": {
+    "json_object": true,
+    "rule_unchanged": true,
+    "passage_is_string": true,
+    "passage_sha256": "dd32cafe0b7f2a9998316e4dd11ab580f4fe357856380b598c7f3e8484fe32eb",
+    "passage_words": 266
+  },
+  "finished_at": "2026-09-22T19:56:44.423096+00:00",
+  "latency_seconds": 6.0516,
+  "usage_cost_upper_estimate_usd": 0.005194,
+  "stream_status": "active",
+  "budget": {
+    "usage_cost_upper_estimate_usd": 0.5163446,
+    "uncertain_cost_reserve_usd": 0.0,
+    "in_flight_reserve_usd": 0.5457434,
+    "limit_usd": 18.83
+  }
+}

@@ -1,0 +1,50 @@
+{
+  "model": "gpt-6-sol",
+  "seed": "sunset_a",
+  "hop": 21,
+  "http_status": 200,
+  "response_body": "{\n  \"id\": \"chatcmpl-ER0xEjZDrx611SFfbRor5sEQJjxoC\",\n  \"object\": \"chat.completion\",\n  \"created\": 1790107232,\n  \"model\": \"gpt-6-sol\",\n  \"choices\": [\n    {\n      \"index\": 0,\n      \"message\": {\n        \"role\": \"assistant\",\n        \"content\": \"{\\n  \\\"rule\\\": \\\"Return this JSON object with the rule field unchanged and a new passage of about 250 words in the text field.\\\",\\n  \\\"text\\\": \\\"On Monday morning, Lena took the screws from her coat pocket and set them on the kitchen table. There were twelve, though two had rusted together. She separated them with the tip of a butter knife and put the usable ones back in the box.\\\\n\\\\nThe notebook lay beside the keys. Under her note about the shed door, she wrote that the chair inside was broken. Then she crossed it out. There was no reason to keep an inventory of things they would throw away.\\\\n\\\\nRain began before lunch. Lena watched it run down the kitchen window while she ate the last biscuit. The compost bin stood beside the wall, its lid slightly open. She went out to close it and, on her way back, looked at the shed. Water was dripping from a corner of the roof.\\\\n\\\\nShe rang her sister that evening. They agreed to clear the shed the following Saturday, if it was dry. Her sister said she could bring a pry bar for the door.\\\\n\\\\nAfter the call, Lena found an old photograph tucked between two pages of the notebook. It showed the garden in summer, with a row of beans where the compost bin now stood. At the edge of the picture, the shed door was open. A child sat on the step, holding something too small for Lena to make out.\\\\n\\\\nShe placed the photograph on the table, then moved the box of screws so it would not cover the child.\\\"\\n}\",\n        \"refusal\": null,\n        \"annotations\": []\n      },\n      \"finish_reason\": \"stop\"\n    }\n  ],\n  \"usage\": {\n    \"prompt_tokens\": 344,\n    \"completion_tokens\": 357,\n    \"total_tokens\": 701,\n    \"prompt_tokens_details\": {\n      \"cached_tokens\": 0,\n      \"cache_write_tokens\": 0,\n      \"audio_tokens\": 0\n    },\n    \"completion_tokens_details\": {\n      \"reasoning_tokens\": 23,\n      \"audio_tokens\": 0,\n      \"accepted_prediction_tokens\": 0,\n      \"rejected_prediction_tokens\": 0\n    }\n  },\n  \"service_tier\": \"default\",\n  \"system_fingerprint\": null\n}\n",
+  "response_headers": {
+    "Date": "Tue, 22 Sep 2026 20:00:37 GMT",
+    "openai-processing-ms": "5576",
+    "x-request-id": "req_a08d03496bd148fda3b1e321553b4dfa"
+  },
+  "output": "{\n  \"rule\": \"Return this JSON object with the rule field unchanged and a new passage of about 250 words in the text field.\",\n  \"text\": \"On Monday morning, Lena took the screws from her coat pocket and set them on the kitchen table. There were twelve, though two had rusted together. She separated them with the tip of a butter knife and put the usable ones back in the box.\\n\\nThe notebook lay beside the keys. Under her note about the shed door, she wrote that the chair inside was broken. Then she crossed it out. There was no reason to keep an inventory of things they would throw away.\\n\\nRain began before lunch. Lena watched it run down the kitchen window while she ate the last biscuit. The compost bin stood beside the wall, its lid slightly open. She went out to close it and, on her way back, looked at the shed. Water was dripping from a corner of the roof.\\n\\nShe rang her sister that evening. They agreed to clear the shed the following Saturday, if it was dry. Her sister said she could bring a pry bar for the door.\\n\\nAfter the call, Lena found an old photograph tucked between two pages of the notebook. It showed the garden in summer, with a row of beans where the compost bin now stood. At the edge of the picture, the shed door was open. A child sat on the step, holding something too small for Lena to make out.\\n\\nShe placed the photograph on the table, then moved the box of screws so it would not cover the child.\"\n}",
+  "output_sha256": "b1e321cb92d4092bca96be79c080c4961eec55b66d3b0bd8a2b3f3fdbb238ca7",
+  "finish_reason": "stop",
+  "refusal": null,
+  "returned_model": "gpt-6-sol",
+  "usage": {
+    "prompt_tokens": 344,
+    "completion_tokens": 357,
+    "total_tokens": 701,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 23,
+      "audio_tokens": 0,
+      "accepted_prediction_tokens": 0,
+      "rejected_prediction_tokens": 0
+    }
+  },
+  "format": {
+    "json_object": true,
+    "rule_unchanged": true,
+    "passage_is_string": true,
+    "passage_sha256": "878418cd1d1c4c2388f0f31f7cbcf8c0c184ab36ff0acdc5349fd258c7ff6454",
+    "passage_words": 247
+  },
+  "finished_at": "2026-09-22T20:00:33.959232+00:00",
+  "latency_seconds": 5.742,
+  "usage_cost_upper_estimate_usd": 0.004258,
+  "stream_status": "active",
+  "budget": {
+    "usage_cost_upper_estimate_usd": 1.9164334,
+    "uncertain_cost_reserve_usd": 0.04533,
+    "in_flight_reserve_usd": 0.5452173,
+    "limit_usd": 18.83
+  }
+}

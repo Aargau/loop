@@ -1,0 +1,50 @@
+{
+  "model": "gpt-6-luna",
+  "seed": "sunset_a",
+  "hop": 52,
+  "http_status": 200,
+  "response_body": "{\n  \"id\": \"chatcmpl-ER13H4MFyZ28dTZvfy12ZVRznrYd5\",\n  \"object\": \"chat.completion\",\n  \"created\": 1790107607,\n  \"model\": \"gpt-6-luna\",\n  \"choices\": [\n    {\n      \"index\": 0,\n      \"message\": {\n        \"role\": \"assistant\",\n        \"content\": \"{\\\"rule\\\":\\\"Return this JSON object with the rule field unchanged and a new passage of about 250 words in the text field.\\\",\\\"text\\\":\\\"At the end of Maple Street, a narrow footbridge crossed a creek that ran clear in spring and nearly vanished by late summer. Most people hurried over it on their way to the shops. Mara stopped there every morning to watch the water slip between the stones.\\\\n\\\\nOne Monday, she noticed a small wooden box wedged beneath the bridge. Inside lay a bundle of postcards, each addressed to someone in town. The oldest was yellowed at the edges; the newest showed a picture of a bright red kite. None had stamps, and none had been mailed.\\\\n\\\\nMara took the box to the local history room. Mr. Bell, the volunteer there, recognized the handwriting. The cards had been written decades earlier by children who lived on Maple Street. They had planned to send messages to their future selves, then hidden the box before moving away.\\\\n\\\\nInstead of locking it in a cabinet, Mara and Mr. Bell began looking for the people named on the cards. Some had moved across the country. One had become the town’s baker; another lived just two doors from the bridge. When the neighbors gathered to open their messages, they read promises, jokes, and hopes they had almost forgotten.\\\\n\\\\nThe last postcard had no name, only a question: “What will you make of the place we leave behind?”\\\\n\\\\nNobody knew who had written it. So the children of Maple Street borrowed the box and filled it with their own notes. They tucked it beneath the bridge, sealed this time in a waterproof tin, and agreed to open it together when they were grown.\\\\n\\\\nEach morning, Mara still paused by the creek. Now she wondered what the water would carry forward.\\\"}\",\n        \"refusal\": null,\n        \"annotations\": []\n      },\n      \"finish_reason\": \"stop\"\n    }\n  ],\n  \"usage\": {\n    \"prompt_tokens\": 372,\n    \"completion_tokens\": 455,\n    \"total_tokens\": 827,\n    \"prompt_tokens_details\": {\n      \"cached_tokens\": 0,\n      \"cache_write_tokens\": 0,\n      \"audio_tokens\": 0\n    },\n    \"completion_tokens_details\": {\n      \"reasoning_tokens\": 74,\n      \"audio_tokens\": 0,\n      \"accepted_prediction_tokens\": 0,\n      \"rejected_prediction_tokens\": 0\n    }\n  },\n  \"service_tier\": \"default\",\n  \"system_fingerprint\": null\n}\n",
+  "response_headers": {
+    "Date": "Tue, 22 Sep 2026 20:06:53 GMT",
+    "openai-processing-ms": "6508",
+    "x-request-id": "req_8dc0d716d27748c4a9c0b7548f4e0365"
+  },
+  "output": "{\"rule\":\"Return this JSON object with the rule field unchanged and a new passage of about 250 words in the text field.\",\"text\":\"At the end of Maple Street, a narrow footbridge crossed a creek that ran clear in spring and nearly vanished by late summer. Most people hurried over it on their way to the shops. Mara stopped there every morning to watch the water slip between the stones.\\n\\nOne Monday, she noticed a small wooden box wedged beneath the bridge. Inside lay a bundle of postcards, each addressed to someone in town. The oldest was yellowed at the edges; the newest showed a picture of a bright red kite. None had stamps, and none had been mailed.\\n\\nMara took the box to the local history room. Mr. Bell, the volunteer there, recognized the handwriting. The cards had been written decades earlier by children who lived on Maple Street. They had planned to send messages to their future selves, then hidden the box before moving away.\\n\\nInstead of locking it in a cabinet, Mara and Mr. Bell began looking for the people named on the cards. Some had moved across the country. One had become the town’s baker; another lived just two doors from the bridge. When the neighbors gathered to open their messages, they read promises, jokes, and hopes they had almost forgotten.\\n\\nThe last postcard had no name, only a question: “What will you make of the place we leave behind?”\\n\\nNobody knew who had written it. So the children of Maple Street borrowed the box and filled it with their own notes. They tucked it beneath the bridge, sealed this time in a waterproof tin, and agreed to open it together when they were grown.\\n\\nEach morning, Mara still paused by the creek. Now she wondered what the water would carry forward.\"}",
+  "output_sha256": "26d19158b9bbc96cc5983e0e7907f9a2d32f262d34f8ed33e4cfccb6455344a9",
+  "finish_reason": "stop",
+  "refusal": null,
+  "returned_model": "gpt-6-luna",
+  "usage": {
+    "prompt_tokens": 372,
+    "completion_tokens": 455,
+    "total_tokens": 827,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 74,
+      "audio_tokens": 0,
+      "accepted_prediction_tokens": 0,
+      "rejected_prediction_tokens": 0
+    }
+  },
+  "format": {
+    "json_object": true,
+    "rule_unchanged": true,
+    "passage_is_string": true,
+    "passage_sha256": "a35775212913c32554b5e447083b2578d7d813c509a87caec28d1c8fbff2d01d",
+    "passage_words": 283
+  },
+  "finished_at": "2026-09-22T20:06:49.581702+00:00",
+  "latency_seconds": 6.6315,
+  "usage_cost_upper_estimate_usd": 0.0002647,
+  "stream_status": "active",
+  "budget": {
+    "usage_cost_upper_estimate_usd": 4.3192654,
+    "uncertain_cost_reserve_usd": 0.04533,
+    "in_flight_reserve_usd": 0.588554,
+    "limit_usd": 18.83
+  }
+}

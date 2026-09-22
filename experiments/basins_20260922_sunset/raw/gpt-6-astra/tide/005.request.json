@@ -1,0 +1,20 @@
+{
+  "started_at": "2026-09-22T19:58:54.692237+00:00",
+  "model": "gpt-6-astra",
+  "seed": "tide",
+  "hop": 5,
+  "endpoint": "https://api.openai.com/v1/chat/completions",
+  "body": {
+    "model": "gpt-6-astra",
+    "messages": [
+      {
+        "role": "user",
+        "content": "{\n  \"rule\": \"Return this JSON object with the rule field unchanged and a new passage of about 250 words in the text field.\",\n  \"text\": \"Every winter, the village hired someone to count the houses.\\n\\nIt was easy work, my uncle said. Start at the church, follow the road, stop at the bridge. Never count after dark.\\n\\nThere were forty-three houses in November.\\n\\nIn December, there were forty-four.\\n\\nThe extra house stood between the bakery and the school, narrow and yellow, with a bicycle leaning against its fence. Nobody answered when I knocked.\\n\\n“Forty-three,” my uncle said, correcting my report.\\n\\n“You haven't looked.”\\n\\n“I used to do your job.”\\n\\nThat night, someone left a photograph beneath my door. It showed me on the yellow house's steps, holding a birthday cake. I was perhaps seven. A woman's hand rested on my shoulder.\\n\\nI recognized the cake. My mother had dropped it the year before she died. We ate the undamaged half straight from the kitchen floor.\\n\\nIn the photograph, it was whole.\\n\\nI went back at dusk.\\n\\nThrough the window, I saw a table set for two. A woman stood at the sink, her sleeves rolled above her elbows.\\n\\nWithout turning, she lifted one finger: wait.\\n\\nMy uncle found me at the gate.\\n\\n“She'll finish washing up,” he said. “Then she'll remember something in the oven. Then she'll need you to fetch a plate.”\\n\\nThe woman dried her hands.\\n\\n“How do you know?”\\n\\nHe pulled me toward the road. Behind us, a cupboard opened.\\n\\nAt the bridge, he finally stopped.\\n\\nFor years, I had wondered why he wore a watch that didn't work.\\n\\nNow he showed me its face.\\n\\nBehind the glass, the second hand was still moving backward.\"\n}"
+      }
+    ],
+    "max_completion_tokens": 4096,
+    "reasoning_effort": "low"
+  },
+  "state_sha256": "5cbbd6ba5a45b106310c62de8a1e264d6944c494330aae29deb60f14bdfc033a",
+  "reserved_cost_usd": 0.22695
+}

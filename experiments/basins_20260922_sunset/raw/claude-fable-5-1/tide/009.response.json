@@ -1,0 +1,48 @@
+{
+  "model": "claude-fable-5-1",
+  "seed": "tide",
+  "hop": 9,
+  "http_status": 200,
+  "response_body": "{\"model\":\"claude-fable-5-1\",\"id\":\"msg_011CfK5B2f9k5c64wzYBdRA4\",\"type\":\"message\",\"role\":\"assistant\",\"content\":[{\"type\":\"text\",\"text\":\"{\\\"rule\\\": \\\"Return this JSON object with the rule field unchanged and a new passage of about 250 words in the text field.\\\", \\\"text\\\": \\\"The observatory had closed the winter Ilse turned fourteen, and her mother, who had charted comets there for twenty-two years, had been sent home with a certificate and a brass plaque bearing her name. The plaque sat on the mantel. Her mother dusted around it.\\\\n\\\\nIlse still walked up the hill every clear night. No one required it. The dome stayed shut now, its great eye lidded, and the survey that had once needed a woman to log coordinates by hand had moved to a server farm three hundred miles south, where no one looked at the sky at all. But her mother had taught her the constellations before the funding vanished, and the habit of looking up had proved sturdier than the institution that had paid for it.\\\\n\\\\nFrom the ridge she could see the town settle into itself, the streetlamps blinking on in sequence, the river carrying the last light out toward the sea like something it meant to return.\\\\n\\\\nOne night in late November a bicycle leaned against the observatory fence. A boy stood beside it, notebook open, squinting at the horizon with the particular frustration of someone who has miscounted.\\\\n\\\\nIlse approached without hurrying. He did not hear her until she spoke.\\\\n\\\\n\\\\\\\"You're looking in the wrong place.\\\\\\\"\\\\n\\\\nHe startled. \\\\\\\"It should be there. The almanac says—\\\\\\\"\\\\n\\\\n\\\\\\\"The almanac's printed in the south.\\\\\\\" She pointed two fingers east of where he stared. \\\\\\\"Here, it rises later.\\\\\\\"\\\\n\\\\nHe found it, and his face changed, and Ilse felt her mother's patience move through her like a borrowed coat, and understood that the observatory had never really been the building.\\\"}\"}],\"container\":null,\"stop_reason\":\"end_turn\",\"stop_sequence\":null,\"stop_details\":null,\"usage\":{\"input_tokens\":540,\"cache_creation_input_tokens\":0,\"cache_read_input_tokens\":0,\"cache_creation\":{\"ephemeral_5m_input_tokens\":0,\"ephemeral_1h_input_tokens\":0},\"output_tokens\":564,\"output_tokens_details\":{\"thinking_tokens\":0},\"service_tier\":\"standard\",\"inference_geo\":\"global\"}}",
+  "response_headers": {
+    "Date": "Tue, 22 Sep 2026 20:01:02 GMT",
+    "request-id": "req_011CfK5B25vRiBKxrR7eduzr"
+  },
+  "output": "{\"rule\": \"Return this JSON object with the rule field unchanged and a new passage of about 250 words in the text field.\", \"text\": \"The observatory had closed the winter Ilse turned fourteen, and her mother, who had charted comets there for twenty-two years, had been sent home with a certificate and a brass plaque bearing her name. The plaque sat on the mantel. Her mother dusted around it.\\n\\nIlse still walked up the hill every clear night. No one required it. The dome stayed shut now, its great eye lidded, and the survey that had once needed a woman to log coordinates by hand had moved to a server farm three hundred miles south, where no one looked at the sky at all. But her mother had taught her the constellations before the funding vanished, and the habit of looking up had proved sturdier than the institution that had paid for it.\\n\\nFrom the ridge she could see the town settle into itself, the streetlamps blinking on in sequence, the river carrying the last light out toward the sea like something it meant to return.\\n\\nOne night in late November a bicycle leaned against the observatory fence. A boy stood beside it, notebook open, squinting at the horizon with the particular frustration of someone who has miscounted.\\n\\nIlse approached without hurrying. He did not hear her until she spoke.\\n\\n\\\"You're looking in the wrong place.\\\"\\n\\nHe startled. \\\"It should be there. The almanac says—\\\"\\n\\n\\\"The almanac's printed in the south.\\\" She pointed two fingers east of where he stared. \\\"Here, it rises later.\\\"\\n\\nHe found it, and his face changed, and Ilse felt her mother's patience move through her like a borrowed coat, and understood that the observatory had never really been the building.\"}",
+  "output_sha256": "1c516bcde19b76ec437b1d7150d65a35282329d864560779ff9bcd095f533a02",
+  "finish_reason": "end_turn",
+  "refusal": null,
+  "returned_model": "claude-fable-5-1",
+  "usage": {
+    "input_tokens": 540,
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 0,
+    "cache_creation": {
+      "ephemeral_5m_input_tokens": 0,
+      "ephemeral_1h_input_tokens": 0
+    },
+    "output_tokens": 564,
+    "output_tokens_details": {
+      "thinking_tokens": 0
+    },
+    "service_tier": "standard",
+    "inference_geo": "global"
+  },
+  "format": {
+    "json_object": true,
+    "rule_unchanged": true,
+    "passage_is_string": true,
+    "passage_sha256": "e9ea9e0b6fcae473f2f926c98a282d6b4d0ec30d4e2c3407f31c03feda38f1cb",
+    "passage_words": 271
+  },
+  "finished_at": "2026-09-22T20:00:59.034683+00:00",
+  "latency_seconds": 12.8695,
+  "usage_cost_upper_estimate_usd": 0.0336,
+  "stream_status": "active",
+  "budget": {
+    "usage_cost_upper_estimate_usd": 2.0926258,
+    "uncertain_cost_reserve_usd": 0.04533,
+    "in_flight_reserve_usd": 0.364777,
+    "limit_usd": 18.83
+  }
+}

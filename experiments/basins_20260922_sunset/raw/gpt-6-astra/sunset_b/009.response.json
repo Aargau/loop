@@ -1,0 +1,50 @@
+{
+  "model": "gpt-6-astra",
+  "seed": "sunset_b",
+  "hop": 9,
+  "http_status": 200,
+  "response_body": "{\n  \"id\": \"chatcmpl-ER0yZ4NzWYcIkUeFI1ERx8yGPn9th\",\n  \"object\": \"chat.completion\",\n  \"created\": 1790107315,\n  \"model\": \"gpt-6-astra\",\n  \"choices\": [\n    {\n      \"index\": 0,\n      \"message\": {\n        \"role\": \"assistant\",\n        \"content\": \"{\\n  \\\"rule\\\": \\\"Return this JSON object with the rule field unchanged and a new passage of about 250 words in the text field.\\\",\\n  \\\"text\\\": \\\"The municipal clock stopped at seventeen minutes past four, and Mara was the only person who noticed.\\\\n\\\\nEveryone else was watching the demolition across the square.\\\\n\\\\nHer mother’s apartment building folded inward, each floor briefly resting on the one below before surrendering. A yellow curtain lifted through the dust.\\\\n\\\\nMara had come to see the kitchen window disappear. She thought this might settle something.\\\\n\\\\nInstead, she noticed the clock.\\\\n\\\\nAt the council office, a clerk told her it had never worked.\\\\n\\\\n“I used to set my watch by it,” Mara said.\\\\n\\\\n“People often say that.”\\\\n\\\\nHe gave her a complaint form.\\\\n\\\\nThat evening, she found a small brass key in the pocket of the coat she had worn to her mother’s funeral. Attached was a paper label in her mother’s handwriting.\\\\n\\\\nFor when you have time.\\\\n\\\\nThe tower door opened without resistance.\\\\n\\\\nInside, narrow stairs climbed past windows furred with dust. At the top stood a wooden chair, an oilcan, and the clock mechanism.\\\\n\\\\nSomeone had maintained it carefully.\\\\n\\\\nOn the chair lay a notebook. Every page contained dates, adjustments, observations about the weather. Mara recognized the handwriting before she reached the final entry.\\\\n\\\\nTuesday. Running three minutes fast. M coming Sunday, if work allows.\\\\n\\\\nMara had not gone that Sunday.\\\\n\\\\nShe sat until the square’s lamps came on. Then she examined the mechanism, comparing its levers with a diagram tucked into the notebook.\\\\n\\\\nThe pendulum needed only a nudge.\\\\n\\\\nBelow, people hurried through the square without looking up.\\\\n\\\\nMara stayed to check the time against her phone. Before leaving, she turned to a fresh page and wrote down the date.\\\"\\n}\",\n        \"refusal\": null,\n        \"annotations\": []\n      },\n      \"finish_reason\": \"stop\"\n    }\n  ],\n  \"usage\": {\n    \"prompt_tokens\": 408,\n    \"completion_tokens\": 410,\n    \"total_tokens\": 818,\n    \"prompt_tokens_details\": {\n      \"cached_tokens\": 0,\n      \"cache_write_tokens\": 0,\n      \"audio_tokens\": 0\n    },\n    \"completion_tokens_details\": {\n      \"reasoning_tokens\": 0,\n      \"audio_tokens\": 0,\n      \"accepted_prediction_tokens\": 0,\n      \"rejected_prediction_tokens\": 0\n    }\n  },\n  \"service_tier\": \"default\",\n  \"system_fingerprint\": null\n}\n",
+  "response_headers": {
+    "Date": "Tue, 22 Sep 2026 20:02:10 GMT",
+    "openai-processing-ms": "15358",
+    "x-request-id": "req_e9b3ad811ee04ba3a4ef571207efde0a"
+  },
+  "output": "{\n  \"rule\": \"Return this JSON object with the rule field unchanged and a new passage of about 250 words in the text field.\",\n  \"text\": \"The municipal clock stopped at seventeen minutes past four, and Mara was the only person who noticed.\\n\\nEveryone else was watching the demolition across the square.\\n\\nHer mother’s apartment building folded inward, each floor briefly resting on the one below before surrendering. A yellow curtain lifted through the dust.\\n\\nMara had come to see the kitchen window disappear. She thought this might settle something.\\n\\nInstead, she noticed the clock.\\n\\nAt the council office, a clerk told her it had never worked.\\n\\n“I used to set my watch by it,” Mara said.\\n\\n“People often say that.”\\n\\nHe gave her a complaint form.\\n\\nThat evening, she found a small brass key in the pocket of the coat she had worn to her mother’s funeral. Attached was a paper label in her mother’s handwriting.\\n\\nFor when you have time.\\n\\nThe tower door opened without resistance.\\n\\nInside, narrow stairs climbed past windows furred with dust. At the top stood a wooden chair, an oilcan, and the clock mechanism.\\n\\nSomeone had maintained it carefully.\\n\\nOn the chair lay a notebook. Every page contained dates, adjustments, observations about the weather. Mara recognized the handwriting before she reached the final entry.\\n\\nTuesday. Running three minutes fast. M coming Sunday, if work allows.\\n\\nMara had not gone that Sunday.\\n\\nShe sat until the square’s lamps came on. Then she examined the mechanism, comparing its levers with a diagram tucked into the notebook.\\n\\nThe pendulum needed only a nudge.\\n\\nBelow, people hurried through the square without looking up.\\n\\nMara stayed to check the time against her phone. Before leaving, she turned to a fresh page and wrote down the date.\"\n}",
+  "output_sha256": "6b6ac98ecca80ed069f759f883dc4fe3020d99f3b41e740ee0cec1bc95d990b5",
+  "finish_reason": "stop",
+  "refusal": null,
+  "returned_model": "gpt-6-astra",
+  "usage": {
+    "prompt_tokens": 408,
+    "completion_tokens": 410,
+    "total_tokens": 818,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "audio_tokens": 0,
+      "accepted_prediction_tokens": 0,
+      "rejected_prediction_tokens": 0
+    }
+  },
+  "format": {
+    "json_object": true,
+    "rule_unchanged": true,
+    "passage_is_string": true,
+    "passage_sha256": "6d53f6837cf02e981e505755f84e3ec4c86022aa4aed0055dfcfc188f9508033",
+    "passage_words": 271
+  },
+  "finished_at": "2026-09-22T20:02:06.993984+00:00",
+  "latency_seconds": 15.49,
+  "usage_cost_upper_estimate_usd": 0.02458,
+  "stream_status": "active",
+  "budget": {
+    "usage_cost_upper_estimate_usd": 2.5367063,
+    "uncertain_cost_reserve_usd": 0.04533,
+    "in_flight_reserve_usd": 0.365981,
+    "limit_usd": 18.83
+  }
+}

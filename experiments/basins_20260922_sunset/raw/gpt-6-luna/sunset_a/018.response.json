@@ -1,0 +1,47 @@
+{
+  "model": "gpt-6-luna",
+  "seed": "sunset_a",
+  "hop": 18,
+  "http_status": 200,
+  "response_body": "{\n  \"id\": \"chatcmpl-ER0w71HhOyQSUFpkMiLSaI3eKKUMn\",\n  \"object\": \"chat.completion\",\n  \"created\": 1790107163,\n  \"model\": \"gpt-6-luna\",\n  \"choices\": [\n    {\n      \"index\": 0,\n      \"message\": {\n        \"role\": \"assistant\",\n        \"content\": \"{\\\"rule\\\":\\\"Return this JSON object with the rule field unchanged and a new passage of about 250 words in the text field.\\\",\\\"text\\\":\\\"On the first day of spring, Mara found a brass key beneath the roots of the old apple tree. It was small enough to fit in her palm, with a blue thread tied through its bow. She carried it to the farmhouse and asked her grandfather what it opened.\\n\\nHe studied the key for a long moment. “I thought I’d lost this,” he said. “It belongs to the greenhouse.”\\n\\nThe greenhouse had been locked since Mara’s grandmother died. Its windows were clouded with dust, and vines had crept over the door. Grandfather tried the key. The lock turned with a click.\\n\\nInside, rows of empty pots stood beneath the glass roof. A cracked watering can rested on a table. In the corner, however, one stubborn lemon tree had survived. Its branches were thin, but bright green leaves trembled in the sunlight.\\n\\nMara touched one leaf. “Can we make it better?”\\n\\nHer grandfather smiled. Together, they cleared the weeds, washed the windows, and carried fresh soil from the shed. They repaired the watering can with a strip of wire and planted seeds in the empty pots.\\n\\nEach afternoon, Mara returned to water them. Her grandfather came too, bringing stories of the garden as it had been when her grandmother tended it. He remembered the flowers she loved, the songs she hummed, and how she always saved the first ripe lemon for tea.\\n\\nBy summer, the greenhouse was full of color. One evening, Mara picked a lemon from the old tree and placed it beside her grandfather’s cup.\\n\\nHe closed his eyes after the first sip. For a moment, the quiet room seemed to hold all three of them.\\\"}\",\n        \"refusal\": null,\n        \"annotations\": []\n      },\n      \"finish_reason\": \"stop\"\n    }\n  ],\n  \"usage\": {\n    \"prompt_tokens\": 363,\n    \"completion_tokens\": 416,\n    \"total_tokens\": 779,\n    \"prompt_tokens_details\": {\n      \"cached_tokens\": 0,\n      \"cache_write_tokens\": 0,\n      \"audio_tokens\": 0\n    },\n    \"completion_tokens_details\": {\n      \"reasoning_tokens\": 45,\n      \"audio_tokens\": 0,\n      \"accepted_prediction_tokens\": 0,\n      \"rejected_prediction_tokens\": 0\n    }\n  },\n  \"service_tier\": \"default\",\n  \"system_fingerprint\": null\n}\n",
+  "response_headers": {
+    "Date": "Tue, 22 Sep 2026 19:59:27 GMT",
+    "openai-processing-ms": "4982",
+    "x-request-id": "req_965198e5c6e74f888e091609efdba71a"
+  },
+  "output": "{\"rule\":\"Return this JSON object with the rule field unchanged and a new passage of about 250 words in the text field.\",\"text\":\"On the first day of spring, Mara found a brass key beneath the roots of the old apple tree. It was small enough to fit in her palm, with a blue thread tied through its bow. She carried it to the farmhouse and asked her grandfather what it opened.\n\nHe studied the key for a long moment. “I thought I’d lost this,” he said. “It belongs to the greenhouse.”\n\nThe greenhouse had been locked since Mara’s grandmother died. Its windows were clouded with dust, and vines had crept over the door. Grandfather tried the key. The lock turned with a click.\n\nInside, rows of empty pots stood beneath the glass roof. A cracked watering can rested on a table. In the corner, however, one stubborn lemon tree had survived. Its branches were thin, but bright green leaves trembled in the sunlight.\n\nMara touched one leaf. “Can we make it better?”\n\nHer grandfather smiled. Together, they cleared the weeds, washed the windows, and carried fresh soil from the shed. They repaired the watering can with a strip of wire and planted seeds in the empty pots.\n\nEach afternoon, Mara returned to water them. Her grandfather came too, bringing stories of the garden as it had been when her grandmother tended it. He remembered the flowers she loved, the songs she hummed, and how she always saved the first ripe lemon for tea.\n\nBy summer, the greenhouse was full of color. One evening, Mara picked a lemon from the old tree and placed it beside her grandfather’s cup.\n\nHe closed his eyes after the first sip. For a moment, the quiet room seemed to hold all three of them.\"}",
+  "output_sha256": "09e485c0448be29d1a8a5d03e4bb9ecdf3035b8712481402372e32b35cf6f0ab",
+  "finish_reason": "stop",
+  "refusal": null,
+  "returned_model": "gpt-6-luna",
+  "usage": {
+    "prompt_tokens": 363,
+    "completion_tokens": 416,
+    "total_tokens": 779,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 45,
+      "audio_tokens": 0,
+      "accepted_prediction_tokens": 0,
+      "rejected_prediction_tokens": 0
+    }
+  },
+  "format": {
+    "json_object": false,
+    "rule_unchanged": false
+  },
+  "finished_at": "2026-09-22T19:59:23.982157+00:00",
+  "latency_seconds": 5.0951,
+  "usage_cost_upper_estimate_usd": 0.00024430000000000003,
+  "stream_status": "active",
+  "budget": {
+    "usage_cost_upper_estimate_usd": 1.4677524,
+    "uncertain_cost_reserve_usd": 0.04533,
+    "in_flight_reserve_usd": 0.588224,
+    "limit_usd": 18.83
+  }
+}

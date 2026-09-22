@@ -1,0 +1,50 @@
+{
+  "model": "gpt-6-sol",
+  "seed": "tide",
+  "hop": 11,
+  "http_status": 200,
+  "response_body": "{\n  \"id\": \"chatcmpl-ER0vLIIGNzuxTWQDEUURWHp8T3HWj\",\n  \"object\": \"chat.completion\",\n  \"created\": 1790107115,\n  \"model\": \"gpt-6-sol\",\n  \"choices\": [\n    {\n      \"index\": 0,\n      \"message\": {\n        \"role\": \"assistant\",\n        \"content\": \"{\\n  \\\"rule\\\": \\\"Return this JSON object with the rule field unchanged and a new passage of about 250 words in the text field.\\\",\\n  \\\"text\\\": \\\"By morning, the water had fallen farther than anyone expected. The pale stones stood clear of the surface, and the iron plate lay in a hollow between them.\\\\n\\\\nMara reached it first. She crouched and brushed sand from its edges. Four bolts held it in place. Beside one bolt, scratched into the iron, was a small cross like the one their father used to mark his maps.\\\\n\\\\nDaniel arrived with a spanner from Mr. Venn’s shed. The first bolt turned easily. The second would not move until Mrs. Bell poured a little oil over it. As Daniel worked, Mara kept watch on the channel. No boat had passed since dawn.\\\\n\\\\nWhen the last bolt came free, they lifted the plate together. A stone shaft opened beneath it, scarcely wide enough for a person. An iron ladder descended into darkness.\\\\n\\\\n“Hello?” Daniel called.\\\\n\\\\nFor a moment there was only the sound of water dripping. Then a voice, thin but unmistakable, answered, “Daniel?”\\\\n\\\\nHe gripped the rim. “Dad?”\\\\n\\\\n“Don’t come down yet. The bottom step is broken.”\\\\n\\\\nMr. Venn fetched a lantern and lowered it on the rope. Its light showed their father sitting on a narrow ledge above the water. His coat was soaked, but he raised one hand.\\\\n\\\\n“I found the chamber,” he said. “The tide shut me in.”\\\\n\\\\nMrs. Bell secured the rope around the iron staple. Daniel checked the knot twice before lowering the other end. Below them, their father caught it and tied it around his waist.\\\"\\n}\",\n        \"refusal\": null,\n        \"annotations\": []\n      },\n      \"finish_reason\": \"stop\"\n    }\n  ],\n  \"usage\": {\n    \"prompt_tokens\": 397,\n    \"completion_tokens\": 407,\n    \"total_tokens\": 804,\n    \"prompt_tokens_details\": {\n      \"cached_tokens\": 0,\n      \"cache_write_tokens\": 0,\n      \"audio_tokens\": 0\n    },\n    \"completion_tokens_details\": {\n      \"reasoning_tokens\": 26,\n      \"audio_tokens\": 0,\n      \"accepted_prediction_tokens\": 0,\n      \"rejected_prediction_tokens\": 0\n    }\n  },\n  \"service_tier\": \"default\",\n  \"system_fingerprint\": null\n}\n",
+  "response_headers": {
+    "Date": "Tue, 22 Sep 2026 19:58:42 GMT",
+    "openai-processing-ms": "6908",
+    "x-request-id": "req_31059992b7b5440c93f4fb15e24da0c6"
+  },
+  "output": "{\n  \"rule\": \"Return this JSON object with the rule field unchanged and a new passage of about 250 words in the text field.\",\n  \"text\": \"By morning, the water had fallen farther than anyone expected. The pale stones stood clear of the surface, and the iron plate lay in a hollow between them.\\n\\nMara reached it first. She crouched and brushed sand from its edges. Four bolts held it in place. Beside one bolt, scratched into the iron, was a small cross like the one their father used to mark his maps.\\n\\nDaniel arrived with a spanner from Mr. Venn’s shed. The first bolt turned easily. The second would not move until Mrs. Bell poured a little oil over it. As Daniel worked, Mara kept watch on the channel. No boat had passed since dawn.\\n\\nWhen the last bolt came free, they lifted the plate together. A stone shaft opened beneath it, scarcely wide enough for a person. An iron ladder descended into darkness.\\n\\n“Hello?” Daniel called.\\n\\nFor a moment there was only the sound of water dripping. Then a voice, thin but unmistakable, answered, “Daniel?”\\n\\nHe gripped the rim. “Dad?”\\n\\n“Don’t come down yet. The bottom step is broken.”\\n\\nMr. Venn fetched a lantern and lowered it on the rope. Its light showed their father sitting on a narrow ledge above the water. His coat was soaked, but he raised one hand.\\n\\n“I found the chamber,” he said. “The tide shut me in.”\\n\\nMrs. Bell secured the rope around the iron staple. Daniel checked the knot twice before lowering the other end. Below them, their father caught it and tied it around his waist.\"\n}",
+  "output_sha256": "2a0db0d891f7b24171e5590bee2c85c13d1ec5f759011b92364592c63cee4735",
+  "finish_reason": "stop",
+  "refusal": null,
+  "returned_model": "gpt-6-sol",
+  "usage": {
+    "prompt_tokens": 397,
+    "completion_tokens": 407,
+    "total_tokens": 804,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 26,
+      "audio_tokens": 0,
+      "accepted_prediction_tokens": 0,
+      "rejected_prediction_tokens": 0
+    }
+  },
+  "format": {
+    "json_object": true,
+    "rule_unchanged": true,
+    "passage_is_string": true,
+    "passage_sha256": "a60c7fc5da6704ec29c7e7e8e9e083885a79b00e515f6959b3c14ac1c4a9e1a6",
+    "passage_words": 250
+  },
+  "finished_at": "2026-09-22T19:58:38.512607+00:00",
+  "latency_seconds": 7.047,
+  "usage_cost_upper_estimate_usd": 0.004864,
+  "stream_status": "active",
+  "budget": {
+    "usage_cost_upper_estimate_usd": 1.1865256,
+    "uncertain_cost_reserve_usd": 0.04533,
+    "in_flight_reserve_usd": 0.5449602,
+    "limit_usd": 18.83
+  }
+}

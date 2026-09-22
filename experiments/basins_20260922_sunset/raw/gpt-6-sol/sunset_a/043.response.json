@@ -1,0 +1,50 @@
+{
+  "model": "gpt-6-sol",
+  "seed": "sunset_a",
+  "hop": 43,
+  "http_status": 200,
+  "response_body": "{\n  \"id\": \"chatcmpl-ER11dMvgrrfYyqYAirupKvBbbR0qH\",\n  \"object\": \"chat.completion\",\n  \"created\": 1790107505,\n  \"model\": \"gpt-6-sol\",\n  \"choices\": [\n    {\n      \"index\": 0,\n      \"message\": {\n        \"role\": \"assistant\",\n        \"content\": \"{\\n  \\\"rule\\\": \\\"Return this JSON object with the rule field unchanged and a new passage of about 250 words in the text field.\\\",\\n  \\\"text\\\": \\\"On Thursday, rain kept everyone away from the bench. Imani could see it from the bakery window, its wooden slats dark and shining. She wondered whether the shade still arrived when nobody was there to notice.\\\\n\\\\nHer grandfather was tying string around a box of rolls. ‘That sounds like a question for your pocket,’ he said.\\\\n\\\\nImani wrote it on the back of a receipt. Before she could fold it, the older boy came in, carrying his notebook beneath his coat. He bought a bun and stood by the window to eat it.\\\\n\\\\n‘The bench is wet,’ Imani said.\\\\n\\\\n‘I can see that.’ He took another bite. ‘I was going to ask if anyone knew where the beetles go when it rains.’\\\\n\\\\nImani looked at the receipt in her hand. ‘I don’t know.’\\\\n\\\\n‘Me neither.’\\\\n\\\\nThey watched water run along the pavement crack where the beetle had walked. A leaf floated past, turned sideways, and caught against a stone.\\\\n\\\\nWhen the rain stopped, Imani’s grandfather gave them a clean paper bag for the bun crumbs. They carried it to the bench and brushed a dry place with their sleeves, though neither sat down. The chestnut leaves were dripping, and the whole street smelled of damp earth.\\\\n\\\\nImani put her receipt in her pocket. The boy opened his notebook but didn’t write anything. After a moment, he held it out so the rain could spot the blank page.\\\\n\\\\n‘Now I have another question,’ he said.\\\\n\\\\nImani waited, but he only closed the notebook and smiled.\\\"\\n}\",\n        \"refusal\": null,\n        \"annotations\": []\n      },\n      \"finish_reason\": \"stop\"\n    }\n  ],\n  \"usage\": {\n    \"prompt_tokens\": 365,\n    \"completion_tokens\": 398,\n    \"total_tokens\": 763,\n    \"prompt_tokens_details\": {\n      \"cached_tokens\": 0,\n      \"cache_write_tokens\": 0,\n      \"audio_tokens\": 0\n    },\n    \"completion_tokens_details\": {\n      \"reasoning_tokens\": 16,\n      \"audio_tokens\": 0,\n      \"accepted_prediction_tokens\": 0,\n      \"rejected_prediction_tokens\": 0\n    }\n  },\n  \"service_tier\": \"default\",\n  \"system_fingerprint\": null\n}\n",
+  "response_headers": {
+    "Date": "Tue, 22 Sep 2026 20:05:11 GMT",
+    "openai-processing-ms": "6215",
+    "x-request-id": "req_921b326592234f05ada9acdb6a922359"
+  },
+  "output": "{\n  \"rule\": \"Return this JSON object with the rule field unchanged and a new passage of about 250 words in the text field.\",\n  \"text\": \"On Thursday, rain kept everyone away from the bench. Imani could see it from the bakery window, its wooden slats dark and shining. She wondered whether the shade still arrived when nobody was there to notice.\\n\\nHer grandfather was tying string around a box of rolls. ‘That sounds like a question for your pocket,’ he said.\\n\\nImani wrote it on the back of a receipt. Before she could fold it, the older boy came in, carrying his notebook beneath his coat. He bought a bun and stood by the window to eat it.\\n\\n‘The bench is wet,’ Imani said.\\n\\n‘I can see that.’ He took another bite. ‘I was going to ask if anyone knew where the beetles go when it rains.’\\n\\nImani looked at the receipt in her hand. ‘I don’t know.’\\n\\n‘Me neither.’\\n\\nThey watched water run along the pavement crack where the beetle had walked. A leaf floated past, turned sideways, and caught against a stone.\\n\\nWhen the rain stopped, Imani’s grandfather gave them a clean paper bag for the bun crumbs. They carried it to the bench and brushed a dry place with their sleeves, though neither sat down. The chestnut leaves were dripping, and the whole street smelled of damp earth.\\n\\nImani put her receipt in her pocket. The boy opened his notebook but didn’t write anything. After a moment, he held it out so the rain could spot the blank page.\\n\\n‘Now I have another question,’ he said.\\n\\nImani waited, but he only closed the notebook and smiled.\"\n}",
+  "output_sha256": "a8e2f774a3ef68d33944f4636a80f827d404d0e17d7da979958bb4904fed9a9d",
+  "finish_reason": "stop",
+  "refusal": null,
+  "returned_model": "gpt-6-sol",
+  "usage": {
+    "prompt_tokens": 365,
+    "completion_tokens": 398,
+    "total_tokens": 763,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 16,
+      "audio_tokens": 0,
+      "accepted_prediction_tokens": 0,
+      "rejected_prediction_tokens": 0
+    }
+  },
+  "format": {
+    "json_object": true,
+    "rule_unchanged": true,
+    "passage_is_string": true,
+    "passage_sha256": "57ff003a290a436de5550f5d899b4f1e1042e9dae280c34c5ddd03932e75f506",
+    "passage_words": 254
+  },
+  "finished_at": "2026-09-22T20:05:07.569279+00:00",
+  "latency_seconds": 6.3282,
+  "usage_cost_upper_estimate_usd": 0.00471,
+  "stream_status": "active",
+  "budget": {
+    "usage_cost_upper_estimate_usd": 3.6610397,
+    "uncertain_cost_reserve_usd": 0.04533,
+    "in_flight_reserve_usd": 0.5453543,
+    "limit_usd": 18.83
+  }
+}

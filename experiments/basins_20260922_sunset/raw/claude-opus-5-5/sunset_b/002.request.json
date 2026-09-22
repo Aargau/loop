@@ -1,0 +1,22 @@
+{
+  "started_at": "2026-09-22T19:55:51.694827+00:00",
+  "model": "claude-opus-5-5",
+  "seed": "sunset_b",
+  "hop": 2,
+  "endpoint": "https://api.anthropic.com/v1/messages",
+  "body": {
+    "model": "claude-opus-5-5",
+    "messages": [
+      {
+        "role": "user",
+        "content": "```json\n{\"rule\": \"Return this JSON object with the rule field unchanged and a new passage of about 250 words in the text field.\", \"text\": \"The sun was setting behind the hills, spilling amber light across the valley like honey poured from a tipped jar. Long shadows stretched from the fence posts and the old oak by the creek, reaching toward the farmhouse as if they, too, wanted to come inside before dark. Mara stood on the porch with a mug of tea cooling in her hands, watching the sky shift from gold to rose to a soft, bruised violet. Somewhere in the tall grass, crickets began their evening chorus, tentative at first, then swelling until the whole field seemed to hum. A pair of swallows stitched quick loops above the barn, catching the last insects of the day. The air smelled of cut hay and damp earth, carrying the faint sweetness of the honeysuckle that climbed the trellis beside the steps. She thought of her grandmother, who had stood on this same porch for fifty years, marking the seasons by where the sun slipped below the ridge. In summer it vanished near the twin pines; in winter, far to the south, behind the quarry. Her grandmother used to say that a sunset was the day's way of saying thank you, and that it was rude not to watch. Mara had laughed at that as a child. Now, older and quieter, she understood. As the first star pricked through the deepening blue, a breeze stirred the wind chimes, and she whispered a small thank you of her own before turning to go inside.\"}\n```"
+      }
+    ],
+    "max_tokens": 4096,
+    "output_config": {
+      "effort": "low"
+    }
+  },
+  "state_sha256": "98f97224dfc909b3d49ba281f5bb234e7ddd438920331744ec9d414669ec8b6a",
+  "reserved_cost_usd": 0.08998
+}

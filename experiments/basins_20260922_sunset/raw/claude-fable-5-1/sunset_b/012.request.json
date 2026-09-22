@@ -1,0 +1,22 @@
+{
+  "started_at": "2026-09-22T20:02:28.690800+00:00",
+  "model": "claude-fable-5-1",
+  "seed": "sunset_b",
+  "hop": 12,
+  "endpoint": "https://api.anthropic.com/v1/messages",
+  "body": {
+    "model": "claude-fable-5-1",
+    "messages": [
+      {
+        "role": "user",
+        "content": "{\"rule\": \"Return this JSON object with the rule field unchanged and a new passage of about 250 words in the text field.\", \"text\": \"The lighthouse had been automated in the spring, and Marit had stayed on because the cottage came with the job and no one had told her to leave. The lamp lit itself now at dusk, timed to a clock somewhere in Bergen, and turned all night without her. She still climbed the stairs each evening to watch it come on.\\n\\nHer father had trimmed wicks here, and his father before him. She had never trimmed a wick in her life. By her time it was already electric, a switch and a logbook and a radio that crackled when the weather turned. But she had kept the log by hand, the way he had, and written down the ships that passed and the ones that did not.\\n\\nThere was no log anymore. The lamp reported itself to a server, and the server was satisfied.\\n\\nOn the third night of October a trawler came in close under the cliff, closer than it should have, and Marit stood at the gallery rail and watched its lights slide along the black water. The lamp swept over it and past it and over it again, indifferent, exactly as it was meant to be. The trawler corrected. It found the channel. It went on.\\n\\nShe went down and wrote it in a notebook she kept on the kitchen table: the time, the heading, the way it had drifted. Nobody would read it. She knew that.\\n\\nBut the sea did not know the lamp was automated. Somebody, she thought, ought to still be watching it back.\"}"
+      }
+    ],
+    "max_tokens": 4096,
+    "output_config": {
+      "effort": "low"
+    }
+  },
+  "state_sha256": "b0f1e034efff169cb113cea82c44c33bd228b1ca1a7e1f73f8f9a1b37a43e5b9",
+  "reserved_cost_usd": 0.22483
+}

@@ -1,0 +1,22 @@
+{
+  "started_at": "2026-09-22T19:57:29.602196+00:00",
+  "model": "claude-opus-5-5",
+  "seed": "tide",
+  "hop": 5,
+  "endpoint": "https://api.anthropic.com/v1/messages",
+  "body": {
+    "model": "claude-opus-5-5",
+    "messages": [
+      {
+        "role": "user",
+        "content": "{\"rule\": \"Return this JSON object with the rule field unchanged and a new passage of about 250 words in the text field.\", \"text\": \"They walked home without speaking, the tin box tucked inside her father's coat and the lantern swinging low between them. The lighthouse beam swept over their heads every eleven seconds, and each time it passed, the girl looked up at the gallery where the woman in the photograph had stood. She tried to picture her there, hair blown loose, waving to someone on the headland. Perhaps she had been waving to whoever buried the box. Perhaps she had been waving to no one at all. Back in the kitchen, her father set the key on the table beside the teapot and turned it slowly with one finger. It was heavy and old-fashioned, its bow shaped like a scallop shell. The girl knew every lock in the lighthouse: the storeroom, the oil cellar, the iron door at the foot of the stairs. None of them had a keyhole that looked right. \\\"There was a sea chest,\\\" her father said at last, as if the words had been waiting a long time. \\\"In the attic, when I was small. She told me it held nothing but old sails. After she left, my father said it was lost.\\\" He rubbed his eyes with the heel of his hand. The girl reached across and picked up the photograph. On the back, in faded pencil, someone had written a single line: For the one who keeps the light. She read it twice. Then she took the lantern from its hook, lit it again, and looked toward the narrow attic stairs.\"}"
+      }
+    ],
+    "max_tokens": 4096,
+    "output_config": {
+      "effort": "low"
+    }
+  },
+  "state_sha256": "03baf332539853177279c5d2f2452ad85ac0fe05408fb49f2b4cfdad6f981fb2",
+  "reserved_cost_usd": 0.089924
+}

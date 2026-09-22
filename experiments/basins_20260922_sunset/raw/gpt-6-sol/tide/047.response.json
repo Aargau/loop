@@ -1,0 +1,50 @@
+{
+  "model": "gpt-6-sol",
+  "seed": "tide",
+  "hop": 47,
+  "http_status": 200,
+  "response_body": "{\n  \"id\": \"chatcmpl-ER12WDVNA5zmN9Odu5Ul9zDlE3t8i\",\n  \"object\": \"chat.completion\",\n  \"created\": 1790107560,\n  \"model\": \"gpt-6-sol\",\n  \"choices\": [\n    {\n      \"index\": 0,\n      \"message\": {\n        \"role\": \"assistant\",\n        \"content\": \"{\\n  \\\"rule\\\": \\\"Return this JSON object with the rule field unchanged and a new passage of about 250 words in the text field.\\\",\\n  \\\"text\\\": \\\"Mara looked at the brass key in her hand. Its teeth were wet, though the kitchen floor was dry.\\\\n\\\\nThree more knocks came from beneath the table.\\\\n\\\\n“Who’s in there?” she asked.\\\\n\\\\nThe girl tightened her grip. “Ask her what happened to the boat.”\\\\n\\\\nMara’s mother called again, nearer now. Mara remembered a boat painted green, its name worn away by salt. She remembered being told it had sunk in a storm. She could not remember who had been aboard.\\\\n\\\\n“What happened to the boat?” Mara called.\\\\n\\\\nThe knocking ceased.\\\\n\\\\nBeyond the kitchen window, the harbor master stood waist-deep in water. He raised both arms and waved her back. Beside him, the woman from the gate was gone.\\\\n\\\\nA match scraped behind Mara. In the stove’s dark glass, she saw her mother standing by the door to the sea, holding a small flame.\\\\n\\\\n“We made it home,” her mother said.\\\\n\\\\nThe girl shook her head. “One of us did.”\\\\n\\\\nMara pulled her wrist free and knelt. The little door had no handle, only a keyhole at a child’s height. Through it came the smell of wet rope and diesel.\\\\n\\\\nShe put her eye to the hole. A child sat in the green boat, clutching a shell. Around her, the sea was perfectly still.\\\\n\\\\nThe child looked up. Mara could not see her face, but she knew the voice when it spoke.\\\\n\\\\n“Please,” it said. “I’ve been waiting for you to remember.”\\\\n\\\\nBehind Mara, the match burned down to her mother’s fingers. Her mother let it fall. Mara fitted the key into the little door.\\\"\\n}\",\n        \"refusal\": null,\n        \"annotations\": []\n      },\n      \"finish_reason\": \"stop\"\n    }\n  ],\n  \"usage\": {\n    \"prompt_tokens\": 390,\n    \"completion_tokens\": 434,\n    \"total_tokens\": 824,\n    \"prompt_tokens_details\": {\n      \"cached_tokens\": 0,\n      \"cache_write_tokens\": 0,\n      \"audio_tokens\": 0\n    },\n    \"completion_tokens_details\": {\n      \"reasoning_tokens\": 24,\n      \"audio_tokens\": 0,\n      \"accepted_prediction_tokens\": 0,\n      \"rejected_prediction_tokens\": 0\n    }\n  },\n  \"service_tier\": \"default\",\n  \"system_fingerprint\": null\n}\n",
+  "response_headers": {
+    "Date": "Tue, 22 Sep 2026 20:06:06 GMT",
+    "openai-processing-ms": "6479",
+    "x-request-id": "req_658f01760083448db16d4ded52431c71"
+  },
+  "output": "{\n  \"rule\": \"Return this JSON object with the rule field unchanged and a new passage of about 250 words in the text field.\",\n  \"text\": \"Mara looked at the brass key in her hand. Its teeth were wet, though the kitchen floor was dry.\\n\\nThree more knocks came from beneath the table.\\n\\n“Who’s in there?” she asked.\\n\\nThe girl tightened her grip. “Ask her what happened to the boat.”\\n\\nMara’s mother called again, nearer now. Mara remembered a boat painted green, its name worn away by salt. She remembered being told it had sunk in a storm. She could not remember who had been aboard.\\n\\n“What happened to the boat?” Mara called.\\n\\nThe knocking ceased.\\n\\nBeyond the kitchen window, the harbor master stood waist-deep in water. He raised both arms and waved her back. Beside him, the woman from the gate was gone.\\n\\nA match scraped behind Mara. In the stove’s dark glass, she saw her mother standing by the door to the sea, holding a small flame.\\n\\n“We made it home,” her mother said.\\n\\nThe girl shook her head. “One of us did.”\\n\\nMara pulled her wrist free and knelt. The little door had no handle, only a keyhole at a child’s height. Through it came the smell of wet rope and diesel.\\n\\nShe put her eye to the hole. A child sat in the green boat, clutching a shell. Around her, the sea was perfectly still.\\n\\nThe child looked up. Mara could not see her face, but she knew the voice when it spoke.\\n\\n“Please,” it said. “I’ve been waiting for you to remember.”\\n\\nBehind Mara, the match burned down to her mother’s fingers. Her mother let it fall. Mara fitted the key into the little door.\"\n}",
+  "output_sha256": "34b01961e5ab06edd8cabf466ae964f3ab5041c17037b7137b3f9eaa4f3dea58",
+  "finish_reason": "stop",
+  "refusal": null,
+  "returned_model": "gpt-6-sol",
+  "usage": {
+    "prompt_tokens": 390,
+    "completion_tokens": 434,
+    "total_tokens": 824,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 24,
+      "audio_tokens": 0,
+      "accepted_prediction_tokens": 0,
+      "rejected_prediction_tokens": 0
+    }
+  },
+  "format": {
+    "json_object": true,
+    "rule_unchanged": true,
+    "passage_is_string": true,
+    "passage_sha256": "d31898cd614090629c1ed775f30f8478d53998451b761daee2709cafb93c51c2",
+    "passage_words": 264
+  },
+  "finished_at": "2026-09-22T20:06:02.875813+00:00",
+  "latency_seconds": 6.8059,
+  "usage_cost_upper_estimate_usd": 0.00512,
+  "stream_status": "active",
+  "budget": {
+    "usage_cost_upper_estimate_usd": 3.9901849,
+    "uncertain_cost_reserve_usd": 0.04533,
+    "in_flight_reserve_usd": 0.545423,
+    "limit_usd": 18.83
+  }
+}

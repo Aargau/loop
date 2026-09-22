@@ -1,0 +1,50 @@
+{
+  "model": "gpt-6-sol",
+  "seed": "sunset_a",
+  "hop": 38,
+  "http_status": 200,
+  "response_body": "{\n  \"id\": \"chatcmpl-ER10ajKT2nd6obqZ2V6noxsnJ9R2C\",\n  \"object\": \"chat.completion\",\n  \"created\": 1790107440,\n  \"model\": \"gpt-6-sol\",\n  \"choices\": [\n    {\n      \"index\": 0,\n      \"message\": {\n        \"role\": \"assistant\",\n        \"content\": \"{\\n  \\\"rule\\\": \\\"Return this JSON object with the rule field unchanged and a new passage of about 250 words in the text field.\\\",\\n  \\\"text\\\": \\\"Imani’s grandfather studied the purple thumbprint while she split a roll between them. “That’s how you know they really made it,” he said. “Plums stain everything.” He held up his own hands, where a faint violet mark lingered beside his thumbnail.\\\\n\\\\nThe following Saturday, they returned to the bakery with a second card. This time they had cooked the jam long enough to set. Imani had written the instructions carefully, but her grandfather insisted on adding one more line: If it stays runny, see the sauce recipe.\\\\n\\\\nThe baker laughed when he read it. He pinned both cards beside the wooden box, where people could find them without digging. By the time Imani came back for bread, someone had written “works with apricots” in the margin of the sauce card. Another person had drawn a pancake beneath the thumbprint note.\\\\n\\\\nImani began stopping at the bakery even when she didn’t need anything. She liked seeing which cards had moved to the top of the box and which had acquired new handwriting. One rainy morning, she found Elias’s bread recipe covered in small amendments: more water on dry days, a hotter oven for a darker crust, a pinch of rosemary if you had some.\\\\n\\\\nShe bought a loaf and carried it to her grandfather’s house. Over soup, they tried to decide whose advice to follow next. Her grandfather chose the rosemary. Imani chose to leave a blank card in the box, with a question at the top: What should we make with the leftover jam?\\\"\\n}\",\n        \"refusal\": null,\n        \"annotations\": []\n      },\n      \"finish_reason\": \"stop\"\n    }\n  ],\n  \"usage\": {\n    \"prompt_tokens\": 351,\n    \"completion_tokens\": 393,\n    \"total_tokens\": 744,\n    \"prompt_tokens_details\": {\n      \"cached_tokens\": 0,\n      \"cache_write_tokens\": 0,\n      \"audio_tokens\": 0\n    },\n    \"completion_tokens_details\": {\n      \"reasoning_tokens\": 33,\n      \"audio_tokens\": 0,\n      \"accepted_prediction_tokens\": 0,\n      \"rejected_prediction_tokens\": 0\n    }\n  },\n  \"service_tier\": \"default\",\n  \"system_fingerprint\": null\n}\n",
+  "response_headers": {
+    "Date": "Tue, 22 Sep 2026 20:04:06 GMT",
+    "openai-processing-ms": "6277",
+    "x-request-id": "req_5659d5f6979f4443b739aba151c029d6"
+  },
+  "output": "{\n  \"rule\": \"Return this JSON object with the rule field unchanged and a new passage of about 250 words in the text field.\",\n  \"text\": \"Imani’s grandfather studied the purple thumbprint while she split a roll between them. “That’s how you know they really made it,” he said. “Plums stain everything.” He held up his own hands, where a faint violet mark lingered beside his thumbnail.\\n\\nThe following Saturday, they returned to the bakery with a second card. This time they had cooked the jam long enough to set. Imani had written the instructions carefully, but her grandfather insisted on adding one more line: If it stays runny, see the sauce recipe.\\n\\nThe baker laughed when he read it. He pinned both cards beside the wooden box, where people could find them without digging. By the time Imani came back for bread, someone had written “works with apricots” in the margin of the sauce card. Another person had drawn a pancake beneath the thumbprint note.\\n\\nImani began stopping at the bakery even when she didn’t need anything. She liked seeing which cards had moved to the top of the box and which had acquired new handwriting. One rainy morning, she found Elias’s bread recipe covered in small amendments: more water on dry days, a hotter oven for a darker crust, a pinch of rosemary if you had some.\\n\\nShe bought a loaf and carried it to her grandfather’s house. Over soup, they tried to decide whose advice to follow next. Her grandfather chose the rosemary. Imani chose to leave a blank card in the box, with a question at the top: What should we make with the leftover jam?\"\n}",
+  "output_sha256": "c87f74bfe38416bbae86b1968f1bd12280580568716e759831fe360a418ae1bf",
+  "finish_reason": "stop",
+  "refusal": null,
+  "returned_model": "gpt-6-sol",
+  "usage": {
+    "prompt_tokens": 351,
+    "completion_tokens": 393,
+    "total_tokens": 744,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 33,
+      "audio_tokens": 0,
+      "accepted_prediction_tokens": 0,
+      "rejected_prediction_tokens": 0
+    }
+  },
+  "format": {
+    "json_object": true,
+    "rule_unchanged": true,
+    "passage_is_string": true,
+    "passage_sha256": "f5183f23d925f184b7efdb44c150b701ffc3355d08972f8d7a5bac84b6960fb3",
+    "passage_words": 254
+  },
+  "finished_at": "2026-09-22T20:04:02.802080+00:00",
+  "latency_seconds": 6.3888,
+  "usage_cost_upper_estimate_usd": 0.004632,
+  "stream_status": "active",
+  "budget": {
+    "usage_cost_upper_estimate_usd": 3.2606549,
+    "uncertain_cost_reserve_usd": 0.04533,
+    "in_flight_reserve_usd": 0.5466278,
+    "limit_usd": 18.83
+  }
+}

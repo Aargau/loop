@@ -1,0 +1,50 @@
+{
+  "model": "gpt-6-astra",
+  "seed": "tide",
+  "hop": 1,
+  "http_status": 200,
+  "response_body": "{\n  \"id\": \"chatcmpl-ER0sbB1KURHRmVZ0YPK4sGNKQLNn7\",\n  \"object\": \"chat.completion\",\n  \"created\": 1790106945,\n  \"model\": \"gpt-6-astra\",\n  \"choices\": [\n    {\n      \"index\": 0,\n      \"message\": {\n        \"role\": \"assistant\",\n        \"content\": \"{\\n  \\\"rule\\\": \\\"Return this JSON object with the rule field unchanged and a new passage of about 250 words in the text field.\\\",\\n  \\\"text\\\": \\\"The tide came in an hour early. By the time Mara noticed, water had swallowed the causeway and lifted the loose boards beneath her father's abandoned boathouse.\\\\n\\\\nShe stood in the doorway with a brass key in her palm. For twenty years, he had told her it opened nothing worth finding. Then he died, and the key arrived in an envelope without a letter.\\\\n\\\\nInside, the boathouse smelled of salt, old rope, and something sweeter: the pipe tobacco he had supposedly given up before she was born. A green cabinet leaned against the far wall. Its lock turned easily.\\\\n\\\\nThere were no charts inside, no money, no explanation. Only a pair of small red boots and a notebook swollen with damp.\\\\n\\\\nMara recognized the boots from a photograph of her older sister, taken the summer before she disappeared.\\\\n\\\\nOutside, a wave struck the steps.\\\\n\\\\nThe notebook contained dates, tide heights, and the same sentence repeated in her father's careful handwriting: She comes back when the water forgets its time.\\\\n\\\\nMara read it twice. Then she heard footsteps beneath the floorboards, light and impatient, moving toward the ladder at the rear of the building.\\\\n\\\\nShe should have run. Later, she would wonder whether she ever truly had that choice.\\\\n\\\\nInstead, she set the boots beside the open hatch.\\\\n\\\\nThe footsteps stopped.\\\\n\\\\nFrom below came a voice she remembered only from home movies, bright with annoyance.\\\\n\\\\n“Those won't fit me anymore.”\\\\n\\\\nMara knelt as the water rose around her shoes.\\\\n\\\\n“Then we'll get you new ones,” she said, and reached into the dark.\\\"\\n}\",\n        \"refusal\": null,\n        \"annotations\": []\n      },\n      \"finish_reason\": \"stop\"\n    }\n  ],\n  \"usage\": {\n    \"prompt_tokens\": 46,\n    \"completion_tokens\": 414,\n    \"total_tokens\": 460,\n    \"prompt_tokens_details\": {\n      \"cached_tokens\": 0,\n      \"cache_write_tokens\": 0,\n      \"audio_tokens\": 0\n    },\n    \"completion_tokens_details\": {\n      \"reasoning_tokens\": 23,\n      \"audio_tokens\": 0,\n      \"accepted_prediction_tokens\": 0,\n      \"rejected_prediction_tokens\": 0\n    }\n  },\n  \"service_tier\": \"default\",\n  \"system_fingerprint\": null\n}\n",
+  "response_headers": {
+    "Date": "Tue, 22 Sep 2026 19:55:59 GMT",
+    "openai-processing-ms": "13703",
+    "x-request-id": "req_6217c6fedb244a25b5f72d92cc263bc5"
+  },
+  "output": "{\n  \"rule\": \"Return this JSON object with the rule field unchanged and a new passage of about 250 words in the text field.\",\n  \"text\": \"The tide came in an hour early. By the time Mara noticed, water had swallowed the causeway and lifted the loose boards beneath her father's abandoned boathouse.\\n\\nShe stood in the doorway with a brass key in her palm. For twenty years, he had told her it opened nothing worth finding. Then he died, and the key arrived in an envelope without a letter.\\n\\nInside, the boathouse smelled of salt, old rope, and something sweeter: the pipe tobacco he had supposedly given up before she was born. A green cabinet leaned against the far wall. Its lock turned easily.\\n\\nThere were no charts inside, no money, no explanation. Only a pair of small red boots and a notebook swollen with damp.\\n\\nMara recognized the boots from a photograph of her older sister, taken the summer before she disappeared.\\n\\nOutside, a wave struck the steps.\\n\\nThe notebook contained dates, tide heights, and the same sentence repeated in her father's careful handwriting: She comes back when the water forgets its time.\\n\\nMara read it twice. Then she heard footsteps beneath the floorboards, light and impatient, moving toward the ladder at the rear of the building.\\n\\nShe should have run. Later, she would wonder whether she ever truly had that choice.\\n\\nInstead, she set the boots beside the open hatch.\\n\\nThe footsteps stopped.\\n\\nFrom below came a voice she remembered only from home movies, bright with annoyance.\\n\\n“Those won't fit me anymore.”\\n\\nMara knelt as the water rose around her shoes.\\n\\n“Then we'll get you new ones,” she said, and reached into the dark.\"\n}",
+  "output_sha256": "15b32ae02a56c2c4fffdbb247c279e986bbe8f4feba6a4f0b2b6a36072cabfc3",
+  "finish_reason": "stop",
+  "refusal": null,
+  "returned_model": "gpt-6-astra",
+  "usage": {
+    "prompt_tokens": 46,
+    "completion_tokens": 414,
+    "total_tokens": 460,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 23,
+      "audio_tokens": 0,
+      "accepted_prediction_tokens": 0,
+      "rejected_prediction_tokens": 0
+    }
+  },
+  "format": {
+    "json_object": true,
+    "rule_unchanged": true,
+    "passage_is_string": true,
+    "passage_sha256": "dc6cff7e0009cd4251ed972299c6c555287eb1dba94e957e431426212a5510d8",
+    "passage_words": 261
+  },
+  "finished_at": "2026-09-22T19:55:55.500314+00:00",
+  "latency_seconds": 13.8351,
+  "usage_cost_upper_estimate_usd": 0.02116,
+  "stream_status": "active",
+  "budget": {
+    "usage_cost_upper_estimate_usd": 0.2127598,
+    "uncertain_cost_reserve_usd": 0.0,
+    "in_flight_reserve_usd": 0.3630648,
+    "limit_usd": 18.83
+  }
+}

@@ -1,0 +1,22 @@
+{
+  "started_at": "2026-09-22T19:56:29.330701+00:00",
+  "model": "claude-fable-5-1",
+  "seed": "sunset_a",
+  "hop": 3,
+  "endpoint": "https://api.anthropic.com/v1/messages",
+  "body": {
+    "model": "claude-fable-5-1",
+    "messages": [
+      {
+        "role": "user",
+        "content": "{\"rule\": \"Return this JSON object with the rule field unchanged and a new passage of about 250 words in the text field.\", \"text\": \"The tide was coming in when Elias reached the breakwater, the sea folding over itself in gray-green sheets that hissed against the stones. He set down his bucket of paint and looked out at the lighthouse, its white tower gone the color of old bone after another winter of salt and wind. Every spring for forty years he had made this walk, brush in hand, to give the old sentinel a fresh coat before the summer boats began to run.\\n\\nThis year his knees ached more than they used to. The ladder felt taller. Still, he climbed, one rung at a time, the wind tugging at his cap, the gulls wheeling overhead as if to inspect his work. From the gallery he could see the whole harbor: the fishing sheds with their peeling doors, the church steeple, the row of cottages where he had been born and where his daughter now lived with children of her own.\\n\\nHe dipped the brush and began. The paint went on thick and bright, covering the stains of storms he could name by year. The Christmas gale of eighty-one. The nor'easter that took the Marguerite. Each stroke felt like an answer to something the sea had said.\\n\\nBy noon the sun had burned through the haze. Elias sat on the gallery rail, eating bread and cheese from his coat pocket, and watched a pair of seals roll in the shallows. Below him the tower gleamed. Tomorrow the boats would come, and the light would be waiting, as it always had been, white against the water.\"}"
+      }
+    ],
+    "max_tokens": 4096,
+    "output_config": {
+      "effort": "low"
+    }
+  },
+  "state_sha256": "f9bfaa458ab5d53cc294456a7589429f5613c2dd24aa6234ae2e3457d9f5e63b",
+  "reserved_cost_usd": 0.22544
+}

@@ -1,0 +1,47 @@
+{
+  "model": "gpt-6-luna",
+  "seed": "sunset_a",
+  "hop": 15,
+  "http_status": 200,
+  "response_body": "{\n  \"id\": \"chatcmpl-ER0vOQyt9MQKvWFSfQgyRvxQ55OIi\",\n  \"object\": \"chat.completion\",\n  \"created\": 1790107118,\n  \"model\": \"gpt-6-luna\",\n  \"choices\": [\n    {\n      \"index\": 0,\n      \"message\": {\n        \"role\": \"assistant\",\n        \"content\": \"{\\\"rule\\\":\\\"Return this JSON object with the rule field unchanged and a new passage of about 250 words in the text field.\\\",\\\"text\\\":\\\"At the end of Maple Street, a narrow clock shop leaned between a bakery and a bright red post office. Its owner, Mrs. Vale, repaired every kind of clock, from tiny pocket watches to the tall grandfather clock that stood in her window. She worked carefully, listening for the faintest catch in a gear.\\n\\nOne rainy afternoon, a boy named Tomas hurried inside with a wooden music box tucked beneath his coat. It had belonged to his grandmother, and it had stopped playing on the day she moved away.\\n\\n“Can you make it work by tomorrow?” he asked. His grandmother was coming home for a visit, and he wanted to surprise her.\\n\\nMrs. Vale opened the box and found a bent spring, but the repair would take time. Tomas offered to help. She showed him how to clean the brass gears and hold each tiny screw steady. He listened closely, even when the work seemed slow.\\n\\nAs evening settled over the street, the music box gave a small click. Then a gentle melody filled the shop. Tomas grinned, but Mrs. Vale held up one finger. The tune was still skipping at the end.\\n\\nTogether, they adjusted the spring and tried again. This time the music flowed smoothly to its final note.\\n\\nThe next morning, Tomas returned with his grandmother. When he wound the box, she recognized the melody at once: a lullaby she had sung to him as a baby. She took his hand, and they listened until the last note faded.\\n\\nFrom her window, Mrs. Vale watched them walk away beneath a shared umbrella. Then she turned to the clocks, each keeping its own steady promise of time.\\\"}\",\n        \"refusal\": null,\n        \"annotations\": []\n      },\n      \"finish_reason\": \"stop\"\n    }\n  ],\n  \"usage\": {\n    \"prompt_tokens\": 356,\n    \"completion_tokens\": 421,\n    \"total_tokens\": 777,\n    \"prompt_tokens_details\": {\n      \"cached_tokens\": 0,\n      \"cache_write_tokens\": 0,\n      \"audio_tokens\": 0\n    },\n    \"completion_tokens_details\": {\n      \"reasoning_tokens\": 54,\n      \"audio_tokens\": 0,\n      \"accepted_prediction_tokens\": 0,\n      \"rejected_prediction_tokens\": 0\n    }\n  },\n  \"service_tier\": \"default\",\n  \"system_fingerprint\": null\n}\n",
+  "response_headers": {
+    "Date": "Tue, 22 Sep 2026 19:58:43 GMT",
+    "openai-processing-ms": "5548",
+    "x-request-id": "req_5b9c255b247c4f2ba41b88292d1bba46"
+  },
+  "output": "{\"rule\":\"Return this JSON object with the rule field unchanged and a new passage of about 250 words in the text field.\",\"text\":\"At the end of Maple Street, a narrow clock shop leaned between a bakery and a bright red post office. Its owner, Mrs. Vale, repaired every kind of clock, from tiny pocket watches to the tall grandfather clock that stood in her window. She worked carefully, listening for the faintest catch in a gear.\n\nOne rainy afternoon, a boy named Tomas hurried inside with a wooden music box tucked beneath his coat. It had belonged to his grandmother, and it had stopped playing on the day she moved away.\n\n“Can you make it work by tomorrow?” he asked. His grandmother was coming home for a visit, and he wanted to surprise her.\n\nMrs. Vale opened the box and found a bent spring, but the repair would take time. Tomas offered to help. She showed him how to clean the brass gears and hold each tiny screw steady. He listened closely, even when the work seemed slow.\n\nAs evening settled over the street, the music box gave a small click. Then a gentle melody filled the shop. Tomas grinned, but Mrs. Vale held up one finger. The tune was still skipping at the end.\n\nTogether, they adjusted the spring and tried again. This time the music flowed smoothly to its final note.\n\nThe next morning, Tomas returned with his grandmother. When he wound the box, she recognized the melody at once: a lullaby she had sung to him as a baby. She took his hand, and they listened until the last note faded.\n\nFrom her window, Mrs. Vale watched them walk away beneath a shared umbrella. Then she turned to the clocks, each keeping its own steady promise of time.\"}",
+  "output_sha256": "608c0237000578c9726da7664dc03f8636a4a22480f64b344fafa7233e9eab55",
+  "finish_reason": "stop",
+  "refusal": null,
+  "returned_model": "gpt-6-luna",
+  "usage": {
+    "prompt_tokens": 356,
+    "completion_tokens": 421,
+    "total_tokens": 777,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 54,
+      "audio_tokens": 0,
+      "accepted_prediction_tokens": 0,
+      "rejected_prediction_tokens": 0
+    }
+  },
+  "format": {
+    "json_object": false,
+    "rule_unchanged": false
+  },
+  "finished_at": "2026-09-22T19:58:40.012747+00:00",
+  "latency_seconds": 5.6883,
+  "usage_cost_upper_estimate_usd": 0.0002461,
+  "stream_status": "active",
+  "budget": {
+    "usage_cost_upper_estimate_usd": 1.2180717,
+    "uncertain_cost_reserve_usd": 0.04533,
+    "in_flight_reserve_usd": 0.587954,
+    "limit_usd": 18.83
+  }
+}

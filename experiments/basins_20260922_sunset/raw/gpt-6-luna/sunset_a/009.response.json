@@ -1,0 +1,50 @@
+{
+  "model": "gpt-6-luna",
+  "seed": "sunset_a",
+  "hop": 9,
+  "http_status": 200,
+  "response_body": "{\n  \"id\": \"chatcmpl-ER0txrNFICrtC5vqeYkjrpC34eBvV\",\n  \"object\": \"chat.completion\",\n  \"created\": 1790107029,\n  \"model\": \"gpt-6-luna\",\n  \"choices\": [\n    {\n      \"index\": 0,\n      \"message\": {\n        \"role\": \"assistant\",\n        \"content\": \"{\\\"rule\\\":\\\"Return this JSON object with the rule field unchanged and a new passage of about 250 words in the text field.\\\",\\\"text\\\":\\\"On the edge of a quiet harbor stood a clock tower that had been stopped for decades. Its hands pointed to ten minutes past four, the moment a storm had driven every boat back to shore. Children used to ask why no one repaired it, but the old shopkeeper, Mr. Vale, always answered, “Some things are waiting for the right time.”\\\\n\\\\nOne afternoon, a girl named Nessa climbed the tower’s narrow stairs. She carried a small brass key she had found among her grandmother’s belongings. At the top, she discovered a dusty mechanism and a little compartment hidden behind the clock face. The key fit perfectly.\\\\n\\\\nInside lay a folded note and a photograph of two young women standing on the harbor steps. One was Nessa’s grandmother. The other, the note explained, was her closest friend, who had left town after an argument and never returned. The clock had stopped on the day they were meant to meet again.\\\\n\\\\nNessa took the photograph to Mr. Vale. He studied it for a long while, then pointed to the second woman. “That’s my sister,” he said softly. “I thought she’d forgotten us.”\\\\n\\\\nTogether, they searched through old records and found an address in a coastal village. Nessa wrote a letter, enclosing a copy of the photograph. Weeks later, a reply arrived in a careful hand. Mr. Vale’s sister wanted to visit.\\\\n\\\\nOn the morning she came, the siblings stood beneath the tower while a repairer wound the clock. Its hands began to move. When the bell rang, the harbor seemed to wake around them, and the two old friends smiled as if time had finally made room for their meeting.\\\"}\",\n        \"refusal\": null,\n        \"annotations\": []\n      },\n      \"finish_reason\": \"stop\"\n    }\n  ],\n  \"usage\": {\n    \"prompt_tokens\": 360,\n    \"completion_tokens\": 441,\n    \"total_tokens\": 801,\n    \"prompt_tokens_details\": {\n      \"cached_tokens\": 0,\n      \"cache_write_tokens\": 0,\n      \"audio_tokens\": 0\n    },\n    \"completion_tokens_details\": {\n      \"reasoning_tokens\": 55,\n      \"audio_tokens\": 0,\n      \"accepted_prediction_tokens\": 0,\n      \"rejected_prediction_tokens\": 0\n    }\n  },\n  \"service_tier\": \"default\",\n  \"system_fingerprint\": null\n}\n",
+  "response_headers": {
+    "Date": "Tue, 22 Sep 2026 19:57:14 GMT",
+    "openai-processing-ms": "4583",
+    "x-request-id": "req_d3bb1493a7f941338e66c6c253d48e74"
+  },
+  "output": "{\"rule\":\"Return this JSON object with the rule field unchanged and a new passage of about 250 words in the text field.\",\"text\":\"On the edge of a quiet harbor stood a clock tower that had been stopped for decades. Its hands pointed to ten minutes past four, the moment a storm had driven every boat back to shore. Children used to ask why no one repaired it, but the old shopkeeper, Mr. Vale, always answered, “Some things are waiting for the right time.”\\n\\nOne afternoon, a girl named Nessa climbed the tower’s narrow stairs. She carried a small brass key she had found among her grandmother’s belongings. At the top, she discovered a dusty mechanism and a little compartment hidden behind the clock face. The key fit perfectly.\\n\\nInside lay a folded note and a photograph of two young women standing on the harbor steps. One was Nessa’s grandmother. The other, the note explained, was her closest friend, who had left town after an argument and never returned. The clock had stopped on the day they were meant to meet again.\\n\\nNessa took the photograph to Mr. Vale. He studied it for a long while, then pointed to the second woman. “That’s my sister,” he said softly. “I thought she’d forgotten us.”\\n\\nTogether, they searched through old records and found an address in a coastal village. Nessa wrote a letter, enclosing a copy of the photograph. Weeks later, a reply arrived in a careful hand. Mr. Vale’s sister wanted to visit.\\n\\nOn the morning she came, the siblings stood beneath the tower while a repairer wound the clock. Its hands began to move. When the bell rang, the harbor seemed to wake around them, and the two old friends smiled as if time had finally made room for their meeting.\"}",
+  "output_sha256": "517eda81236860f6e2acbb7c7589072c6d55824bbefffd2606cb87bdba5d028f",
+  "finish_reason": "stop",
+  "refusal": null,
+  "returned_model": "gpt-6-luna",
+  "usage": {
+    "prompt_tokens": 360,
+    "completion_tokens": 441,
+    "total_tokens": 801,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 55,
+      "audio_tokens": 0,
+      "accepted_prediction_tokens": 0,
+      "rejected_prediction_tokens": 0
+    }
+  },
+  "format": {
+    "json_object": true,
+    "rule_unchanged": true,
+    "passage_is_string": true,
+    "passage_sha256": "b4a5cc8ab7d8c9438580e3827f5c099702514a2333d1d3a0a125cdd2df3c80e3",
+    "passage_words": 278
+  },
+  "finished_at": "2026-09-22T19:57:10.313851+00:00",
+  "latency_seconds": 4.7582,
+  "usage_cost_upper_estimate_usd": 0.0002565,
+  "stream_status": "active",
+  "budget": {
+    "usage_cost_upper_estimate_usd": 0.6622224,
+    "uncertain_cost_reserve_usd": 0.0,
+    "in_flight_reserve_usd": 0.5882,
+    "limit_usd": 18.83
+  }
+}

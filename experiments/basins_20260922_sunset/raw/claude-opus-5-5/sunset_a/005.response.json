@@ -1,0 +1,45 @@
+{
+  "model": "claude-opus-5-5",
+  "seed": "sunset_a",
+  "hop": 5,
+  "http_status": 200,
+  "response_body": "{\"model\":\"claude-opus-5-5\",\"id\":\"msg_011CfK4uPHC4aC3fJJSdoSbH\",\"type\":\"message\",\"role\":\"assistant\",\"content\":[{\"type\":\"text\",\"text\":\"```json\\n{\\\"rule\\\": \\\"Return this JSON object with the rule field unchanged and a new passage of about 250 words in the text field.\\\", \\\"text\\\": \\\"The lighthouse keeper climbed the spiral stairs each evening at dusk, counting the steps out of habit though he had long since memorized their number. One hundred and twelve. At the top, he wiped the great lens with a soft cloth, polishing away the salt that the wind carried up from the rocks below. The light had been automated three years ago, and a technician from the mainland came twice a year to check the wiring and replace the bulbs. The keeper's position no longer officially existed. The coast guard had sent a polite letter thanking him for his decades of service and offering a small pension and an apartment in the city. He had folded the letter neatly and placed it in a drawer beneath his maps. Still, he stayed on the island, tending the garden behind the cottage, mending the fences, and walking the shoreline after every storm to see what the sea had brought in. He kept a logbook on the desk by the window, filled with weather notes, passing ships, and the names of birds that rested on the railing during migration. The oldest entries were written in his father's careful hand. Sometimes he wondered whether anyone would ever read them. On clear nights, he sat on the gallery with a thermos of tea and watched the beam sweep across the dark water, steady and patient, reaching farther than he could see. Once, near midnight, a fishing boat blinked its lights twice in reply, and he raised his cup toward the horizon in greeting.\\\"}\\n```\"}],\"container\":null,\"stop_reason\":\"end_turn\",\"stop_sequence\":null,\"stop_details\":null,\"usage\":{\"input_tokens\":500,\"cache_creation_input_tokens\":0,\"cache_read_input_tokens\":0,\"cache_creation\":{\"ephemeral_5m_input_tokens\":0,\"ephemeral_1h_input_tokens\":0},\"output_tokens\":498,\"output_tokens_details\":{\"thinking_tokens\":0},\"service_tier\":\"standard\",\"inference_geo\":\"global\"}}",
+  "response_headers": {
+    "Date": "Tue, 22 Sep 2026 19:57:25 GMT",
+    "request-id": "req_011CfK4uNrdx8JQC61rzbMsZ"
+  },
+  "output": "```json\n{\"rule\": \"Return this JSON object with the rule field unchanged and a new passage of about 250 words in the text field.\", \"text\": \"The lighthouse keeper climbed the spiral stairs each evening at dusk, counting the steps out of habit though he had long since memorized their number. One hundred and twelve. At the top, he wiped the great lens with a soft cloth, polishing away the salt that the wind carried up from the rocks below. The light had been automated three years ago, and a technician from the mainland came twice a year to check the wiring and replace the bulbs. The keeper's position no longer officially existed. The coast guard had sent a polite letter thanking him for his decades of service and offering a small pension and an apartment in the city. He had folded the letter neatly and placed it in a drawer beneath his maps. Still, he stayed on the island, tending the garden behind the cottage, mending the fences, and walking the shoreline after every storm to see what the sea had brought in. He kept a logbook on the desk by the window, filled with weather notes, passing ships, and the names of birds that rested on the railing during migration. The oldest entries were written in his father's careful hand. Sometimes he wondered whether anyone would ever read them. On clear nights, he sat on the gallery with a thermos of tea and watched the beam sweep across the dark water, steady and patient, reaching farther than he could see. Once, near midnight, a fishing boat blinked its lights twice in reply, and he raised his cup toward the horizon in greeting.\"}\n```",
+  "output_sha256": "7c8c162956a7d067baccc78e1856778e316910eeaed65b107f2e6fe2a3997018",
+  "finish_reason": "end_turn",
+  "refusal": null,
+  "returned_model": "claude-opus-5-5",
+  "usage": {
+    "input_tokens": 500,
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 0,
+    "cache_creation": {
+      "ephemeral_5m_input_tokens": 0,
+      "ephemeral_1h_input_tokens": 0
+    },
+    "output_tokens": 498,
+    "output_tokens_details": {
+      "thinking_tokens": 0
+    },
+    "service_tier": "standard",
+    "inference_geo": "global"
+  },
+  "format": {
+    "json_object": false,
+    "rule_unchanged": false
+  },
+  "finished_at": "2026-09-22T19:57:21.309871+00:00",
+  "latency_seconds": 7.2966,
+  "usage_cost_upper_estimate_usd": 0.01196,
+  "stream_status": "active",
+  "budget": {
+    "usage_cost_upper_estimate_usd": 0.7210834,
+    "uncertain_cost_reserve_usd": 0.0,
+    "in_flight_reserve_usd": 0.5013038,
+    "limit_usd": 18.83
+  }
+}

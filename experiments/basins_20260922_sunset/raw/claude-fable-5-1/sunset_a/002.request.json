@@ -1,0 +1,22 @@
+{
+  "started_at": "2026-09-22T19:55:50.988493+00:00",
+  "model": "claude-fable-5-1",
+  "seed": "sunset_a",
+  "hop": 2,
+  "endpoint": "https://api.anthropic.com/v1/messages",
+  "body": {
+    "model": "claude-fable-5-1",
+    "messages": [
+      {
+        "role": "user",
+        "content": "{\"rule\": \"Return this JSON object with the rule field unchanged and a new passage of about 250 words in the text field.\", \"text\": \"The sun was setting behind the hills, spilling amber light across the valley in long, slow ribbons. Mara stood at the edge of the orchard with her hands in her coat pockets, watching the shadows of the apple trees stretch toward the farmhouse like fingers reaching for something they could never quite hold. The air had turned cool, carrying the smell of turned earth and woodsmoke from a neighbor's chimney somewhere beyond the ridge.\\n\\nShe had promised herself she would leave before dark. The car was packed, the keys were in her pocket, and the road to the city waited at the bottom of the lane. Yet her feet stayed rooted in the damp grass. Every evening of her childhood had ended like this, with the hills swallowing the sun and her grandmother calling from the porch that supper was on the table. The porch was empty now. The house had been sold that morning, the papers signed in a lawyer's office that smelled of old carpet and coffee.\\n\\nA crow settled on the fence post beside her and regarded her with one dark, unbothered eye. Mara laughed softly. \\\"You'll have the place to yourself soon,\\\" she told it.\\n\\nThe last sliver of gold slipped beneath the ridge. Blue dusk pooled in the hollows. Somewhere a dog barked twice and fell silent. Mara drew a long breath, tasting autumn, and finally turned toward the lane. Behind her, the first star blinked awake over the hills she had loved for thirty years, and would, she suspected, love for the rest of her life.\"}"
+      }
+    ],
+    "max_tokens": 4096,
+    "output_config": {
+      "effort": "low"
+    }
+  },
+  "state_sha256": "c829e97a420509480cb1c86def91701496178ffb38a44b3af2221be27ab0215e",
+  "reserved_cost_usd": 0.22599
+}

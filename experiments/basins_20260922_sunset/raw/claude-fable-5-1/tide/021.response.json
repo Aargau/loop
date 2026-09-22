@@ -1,0 +1,48 @@
+{
+  "model": "claude-fable-5-1",
+  "seed": "tide",
+  "hop": 21,
+  "http_status": 200,
+  "response_body": "{\"model\":\"claude-fable-5-1\",\"id\":\"msg_011CfK5mNMmL4F6C1Cp26odL\",\"type\":\"message\",\"role\":\"assistant\",\"content\":[{\"type\":\"text\",\"text\":\"{\\\"rule\\\": \\\"Return this JSON object with the rule field unchanged and a new passage of about 250 words in the text field.\\\", \\\"text\\\": \\\"The observatory on Halden Ridge had stopped publishing its own forecasts the winter Mara Quill turned twenty-two, and for a while nobody noticed that she kept writing them anyway.\\\\n\\\\nHer aunt had been the last resident meteorologist. The older woman had taught Mara to read the sky the way other people read faces: the thin mare's tails that meant a front was still a day out, the copper tint at dusk that promised frost by morning, the way the pines on the north slope went quiet an hour before the wind turned.\\\\n\\\\nThe regional centre now took the ridge's data by satellite and folded it into a model that covered four counties. It did this competently. Mara did not distrust the model so much as she distrusted the idea that weather could be understood from a place where it was not being felt.\\\\n\\\\nSo she rose at five most mornings, took her readings from the old instruments on the platform, and wrote a forecast in a notebook she showed to no one.\\\\n\\\\nIn March a transmitter failure cut the ridge out of the network. The model, missing one station among hundreds, adjusted and carried on. It called for light snow. Mara's notebook, from the smell of the air and the way the pressure had fallen through the night, called for something else entirely.\\\\n\\\\nShe walked down to the village at dawn and told the school to close early. By noon the road was gone under two feet of drifting white.\\\\n\\\\nThe incident review noted an unofficial warning of uncertain provenance.\\\\n\\\\nMara bought a new notebook.\\\"}\"}],\"container\":null,\"stop_reason\":\"end_turn\",\"stop_sequence\":null,\"stop_details\":null,\"usage\":{\"input_tokens\":539,\"cache_creation_input_tokens\":0,\"cache_read_input_tokens\":0,\"cache_creation\":{\"ephemeral_5m_input_tokens\":0,\"ephemeral_1h_input_tokens\":0},\"output_tokens\":521,\"output_tokens_details\":{\"thinking_tokens\":0},\"service_tier\":\"standard\",\"inference_geo\":\"global\"}}",
+  "response_headers": {
+    "Date": "Tue, 22 Sep 2026 20:08:45 GMT",
+    "request-id": "req_011CfK5mMszeEgukXdVRP7CP"
+  },
+  "output": "{\"rule\": \"Return this JSON object with the rule field unchanged and a new passage of about 250 words in the text field.\", \"text\": \"The observatory on Halden Ridge had stopped publishing its own forecasts the winter Mara Quill turned twenty-two, and for a while nobody noticed that she kept writing them anyway.\\n\\nHer aunt had been the last resident meteorologist. The older woman had taught Mara to read the sky the way other people read faces: the thin mare's tails that meant a front was still a day out, the copper tint at dusk that promised frost by morning, the way the pines on the north slope went quiet an hour before the wind turned.\\n\\nThe regional centre now took the ridge's data by satellite and folded it into a model that covered four counties. It did this competently. Mara did not distrust the model so much as she distrusted the idea that weather could be understood from a place where it was not being felt.\\n\\nSo she rose at five most mornings, took her readings from the old instruments on the platform, and wrote a forecast in a notebook she showed to no one.\\n\\nIn March a transmitter failure cut the ridge out of the network. The model, missing one station among hundreds, adjusted and carried on. It called for light snow. Mara's notebook, from the smell of the air and the way the pressure had fallen through the night, called for something else entirely.\\n\\nShe walked down to the village at dawn and told the school to close early. By noon the road was gone under two feet of drifting white.\\n\\nThe incident review noted an unofficial warning of uncertain provenance.\\n\\nMara bought a new notebook.\"}",
+  "output_sha256": "195bf6015e4f3dea25e01e70f1ffe9100821eb2418329611b10b3e0e9d54ec3a",
+  "finish_reason": "end_turn",
+  "refusal": null,
+  "returned_model": "claude-fable-5-1",
+  "usage": {
+    "input_tokens": 539,
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 0,
+    "cache_creation": {
+      "ephemeral_5m_input_tokens": 0,
+      "ephemeral_1h_input_tokens": 0
+    },
+    "output_tokens": 521,
+    "output_tokens_details": {
+      "thinking_tokens": 0
+    },
+    "service_tier": "standard",
+    "inference_geo": "global"
+  },
+  "format": {
+    "json_object": true,
+    "rule_unchanged": true,
+    "passage_is_string": true,
+    "passage_sha256": "c0a49c8b35ea40a5146da401e13f612d7b766500a9998c46102b5e978acba17e",
+    "passage_words": 265
+  },
+  "finished_at": "2026-09-22T20:08:41.914228+00:00",
+  "latency_seconds": 9.9404,
+  "usage_cost_upper_estimate_usd": 0.03144,
+  "stream_status": "active",
+  "budget": {
+    "usage_cost_upper_estimate_usd": 5.0448397,
+    "uncertain_cost_reserve_usd": 0.04533,
+    "in_flight_reserve_usd": 0.363216,
+    "limit_usd": 18.83
+  }
+}

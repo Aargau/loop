@@ -1,0 +1,50 @@
+{
+  "model": "gpt-6-luna",
+  "seed": "sunset_a",
+  "hop": 10,
+  "http_status": 200,
+  "response_body": "{\n  \"id\": \"chatcmpl-ER0uAxsxZACBVRDB8xDLht22pu7kL\",\n  \"object\": \"chat.completion\",\n  \"created\": 1790107042,\n  \"model\": \"gpt-6-luna\",\n  \"choices\": [\n    {\n      \"index\": 0,\n      \"message\": {\n        \"role\": \"assistant\",\n        \"content\": \"{\\\"rule\\\":\\\"Return this JSON object with the rule field unchanged and a new passage of about 250 words in the text field.\\\",\\\"text\\\":\\\"Every spring, the town of Bellweather held a lantern walk along the river. Residents painted paper lanterns with wishes, memories, or small drawings, then carried them to the old stone bridge at dusk. The lanterns were never set afloat; instead, they hung from the bridge’s iron railings until morning, glowing above the dark water.\\\\n\\\\nTomas had never made one. His father had once told him that wishes were private, and Tomas had taken the advice so seriously that he had stopped making them altogether. But this year, his younger neighbor, Lila, arrived at his door with a lantern kit and a determined expression.\\\\n\\\\n“You can draw anything,” she said. “It doesn’t have to be a wish.”\\\\n\\\\nTomas painted a little blue house beneath a wide, gold sky. He added a crooked chimney and a garden full of sunflowers. When Lila asked who lived there, he shrugged. “Someone who isn’t afraid to start over.”\\\\n\\\\nAt the bridge, he found dozens of lanterns already swaying in the breeze. One showed a baby’s tiny hand; another pictured a ship sailing toward an unfamiliar shore. Lila hung hers beside his: a bright red bird perched on an open window.\\\\n\\\\nThe next morning, Tomas returned to collect the lanterns. Rain had softened their paper, and several had come loose. His blue house had survived, though its golden sky had faded. He carried it home and placed it on his windowsill.\\\\n\\\\nThat afternoon, he called his sister, whom he hadn’t spoken to in two years. They talked awkwardly at first, then easily, until the light outside turned amber. The lantern remained in the window, a small reminder that beginnings did not always need to be grand. Sometimes they only needed an open door.\\\"}\",\n        \"refusal\": null,\n        \"annotations\": []\n      },\n      \"finish_reason\": \"stop\"\n    }\n  ],\n  \"usage\": {\n    \"prompt_tokens\": 383,\n    \"completion_tokens\": 457,\n    \"total_tokens\": 840,\n    \"prompt_tokens_details\": {\n      \"cached_tokens\": 0,\n      \"cache_write_tokens\": 0,\n      \"audio_tokens\": 0\n    },\n    \"completion_tokens_details\": {\n      \"reasoning_tokens\": 48,\n      \"audio_tokens\": 0,\n      \"accepted_prediction_tokens\": 0,\n      \"rejected_prediction_tokens\": 0\n    }\n  },\n  \"service_tier\": \"default\",\n  \"system_fingerprint\": null\n}\n",
+  "response_headers": {
+    "Date": "Tue, 22 Sep 2026 19:57:27 GMT",
+    "openai-processing-ms": "5657",
+    "x-request-id": "req_65a4a96d0e514211baba509063757403"
+  },
+  "output": "{\"rule\":\"Return this JSON object with the rule field unchanged and a new passage of about 250 words in the text field.\",\"text\":\"Every spring, the town of Bellweather held a lantern walk along the river. Residents painted paper lanterns with wishes, memories, or small drawings, then carried them to the old stone bridge at dusk. The lanterns were never set afloat; instead, they hung from the bridge’s iron railings until morning, glowing above the dark water.\\n\\nTomas had never made one. His father had once told him that wishes were private, and Tomas had taken the advice so seriously that he had stopped making them altogether. But this year, his younger neighbor, Lila, arrived at his door with a lantern kit and a determined expression.\\n\\n“You can draw anything,” she said. “It doesn’t have to be a wish.”\\n\\nTomas painted a little blue house beneath a wide, gold sky. He added a crooked chimney and a garden full of sunflowers. When Lila asked who lived there, he shrugged. “Someone who isn’t afraid to start over.”\\n\\nAt the bridge, he found dozens of lanterns already swaying in the breeze. One showed a baby’s tiny hand; another pictured a ship sailing toward an unfamiliar shore. Lila hung hers beside his: a bright red bird perched on an open window.\\n\\nThe next morning, Tomas returned to collect the lanterns. Rain had softened their paper, and several had come loose. His blue house had survived, though its golden sky had faded. He carried it home and placed it on his windowsill.\\n\\nThat afternoon, he called his sister, whom he hadn’t spoken to in two years. They talked awkwardly at first, then easily, until the light outside turned amber. The lantern remained in the window, a small reminder that beginnings did not always need to be grand. Sometimes they only needed an open door.\"}",
+  "output_sha256": "a73b99d35520a0509c358828c67711de014dd4540534696a452180f43758074a",
+  "finish_reason": "stop",
+  "refusal": null,
+  "returned_model": "gpt-6-luna",
+  "usage": {
+    "prompt_tokens": 383,
+    "completion_tokens": 457,
+    "total_tokens": 840,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 48,
+      "audio_tokens": 0,
+      "accepted_prediction_tokens": 0,
+      "rejected_prediction_tokens": 0
+    }
+  },
+  "format": {
+    "json_object": true,
+    "rule_unchanged": true,
+    "passage_is_string": true,
+    "passage_sha256": "fbe723046394982dc0a273d5b7a6b311ec7cf60ab7b97c7a6082a009d0f147bf",
+    "passage_words": 287
+  },
+  "finished_at": "2026-09-22T19:57:23.693254+00:00",
+  "latency_seconds": 5.7519,
+  "usage_cost_upper_estimate_usd": 0.00026680000000000003,
+  "stream_status": "active",
+  "budget": {
+    "usage_cost_upper_estimate_usd": 0.7521202,
+    "uncertain_cost_reserve_usd": 0.0,
+    "in_flight_reserve_usd": 0.588822,
+    "limit_usd": 18.83
+  }
+}

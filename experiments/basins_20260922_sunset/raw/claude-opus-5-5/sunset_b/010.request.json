@@ -1,0 +1,22 @@
+{
+  "started_at": "2026-09-22T19:59:29.278596+00:00",
+  "model": "claude-opus-5-5",
+  "seed": "sunset_b",
+  "hop": 10,
+  "endpoint": "https://api.anthropic.com/v1/messages",
+  "body": {
+    "model": "claude-opus-5-5",
+    "messages": [
+      {
+        "role": "user",
+        "content": "```json\n{\"rule\": \"Return this JSON object with the rule field unchanged and a new passage of about 250 words in the text field.\", \"text\": \"Every autumn, when the first frost silvered the fields beyond the village, Elena climbed the narrow path to her grandfather's workshop at the top of the hill. The building was small and crooked, built of weathered timber and roofed with slate, and inside it smelled of sawdust, linseed oil, and pipe smoke that had soaked into the walls over fifty years. Her grandfather made violins, and he had promised that this would be the year she helped him finish one from beginning to end. Together they chose the wood: a pale slab of spruce for the top, a curling piece of maple for the back, both cut decades earlier and left to dry in the rafters. He showed her how to hold the gouge at a gentle angle, how to shave the spruce so thin that light glowed through it like a lantern, and how to tap the plate with a knuckle and listen for the clear, ringing note that meant it was ready. While they worked, he told her stories: of the cellist who traveled from the city through a snowstorm to collect his instrument, of the winter the river froze so thick that the whole village skated to the next town, and of Elena's grandmother, who used to sing in the workshop doorway while the varnish dried. Elena listened and carved, carved and listened, learning patience with every curl of wood that fell to the floor. When the last string was finally tightened, her grandfather drew the bow across it, and a warm, trembling note filled the room, carrying every season of their work inside it.\"}\n```"
+      }
+    ],
+    "max_tokens": 4096,
+    "output_config": {
+      "effort": "low"
+    }
+  },
+  "state_sha256": "3062cb6426fff390d309366fa1193eebe377de963397a39981e369df1e0d73b9",
+  "reserved_cost_usd": 0.090456
+}

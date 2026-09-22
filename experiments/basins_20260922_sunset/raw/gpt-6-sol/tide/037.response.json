@@ -1,0 +1,50 @@
+{
+  "model": "gpt-6-sol",
+  "seed": "tide",
+  "hop": 37,
+  "http_status": 200,
+  "response_body": "{\n  \"id\": \"chatcmpl-ER10U4ItqG0NjhZ1AuzOF2uyrj2Da\",\n  \"object\": \"chat.completion\",\n  \"created\": 1790107434,\n  \"model\": \"gpt-6-sol\",\n  \"choices\": [\n    {\n      \"index\": 0,\n      \"message\": {\n        \"role\": \"assistant\",\n        \"content\": \"{\\n  \\\"rule\\\": \\\"Return this JSON object with the rule field unchanged and a new passage of about 250 words in the text field.\\\",\\n  \\\"text\\\": \\\"For several breaths, no one moved. The water around Mara’s boots settled, and the last trickle through the gate stopped. Beyond it, something heavy scraped along the other side of the iron.\\\\n\\\\nThe harbor master lifted his pole. “Is it shut?”\\\\n\\\\nThe woman kept her bleeding hand against the lock. “For now.”\\\\n\\\\nOut in the harbor, the man’s boat drifted back toward the quay. He made no effort to row. He was staring at the pale outline the photograph had left on the gate.\\\\n\\\\nMara leaned closer. Within the square, two darker marks had appeared, no larger than fingerprints. She looked at the woman, who wrapped her thumb in a strip torn from her sleeve.\\\\n\\\\n“Who was in the picture?” Mara asked.\\\\n\\\\nThe woman glanced toward the boat. “Ask him.”\\\\n\\\\nA knock came from the gate. The harbor master stumbled back, but the woman did not flinch. A second knock followed, softer and lower, near the broken hinge.\\\\n\\\\nThe man stepped from the boat onto the quay. Water poured from its seams, though the deck was dry. “There were three of us,” he said.\\\\n\\\\nMara looked again at the two marks. “Where’s the third?”\\\\n\\\\nThe bell began to swing without sounding. The woman caught Mara by the wrist and drew her away from the gate.\\\\n\\\\n“On the wrong side,” the man said.\\\\n\\\\nBehind the iron, a voice called Mara’s name. It sounded like her own voice, spoken through a mouthful of seawater.\\\"\\n}\",\n        \"refusal\": null,\n        \"annotations\": []\n      },\n      \"finish_reason\": \"stop\"\n    }\n  ],\n  \"usage\": {\n    \"prompt_tokens\": 397,\n    \"completion_tokens\": 402,\n    \"total_tokens\": 799,\n    \"prompt_tokens_details\": {\n      \"cached_tokens\": 0,\n      \"cache_write_tokens\": 0,\n      \"audio_tokens\": 0\n    },\n    \"completion_tokens_details\": {\n      \"reasoning_tokens\": 25,\n      \"audio_tokens\": 0,\n      \"accepted_prediction_tokens\": 0,\n      \"rejected_prediction_tokens\": 0\n    }\n  },\n  \"service_tier\": \"default\",\n  \"system_fingerprint\": null\n}\n",
+  "response_headers": {
+    "Date": "Tue, 22 Sep 2026 20:04:00 GMT",
+    "openai-processing-ms": "5677",
+    "x-request-id": "req_36143208b0d946cd9be5f2f77f968a95"
+  },
+  "output": "{\n  \"rule\": \"Return this JSON object with the rule field unchanged and a new passage of about 250 words in the text field.\",\n  \"text\": \"For several breaths, no one moved. The water around Mara’s boots settled, and the last trickle through the gate stopped. Beyond it, something heavy scraped along the other side of the iron.\\n\\nThe harbor master lifted his pole. “Is it shut?”\\n\\nThe woman kept her bleeding hand against the lock. “For now.”\\n\\nOut in the harbor, the man’s boat drifted back toward the quay. He made no effort to row. He was staring at the pale outline the photograph had left on the gate.\\n\\nMara leaned closer. Within the square, two darker marks had appeared, no larger than fingerprints. She looked at the woman, who wrapped her thumb in a strip torn from her sleeve.\\n\\n“Who was in the picture?” Mara asked.\\n\\nThe woman glanced toward the boat. “Ask him.”\\n\\nA knock came from the gate. The harbor master stumbled back, but the woman did not flinch. A second knock followed, softer and lower, near the broken hinge.\\n\\nThe man stepped from the boat onto the quay. Water poured from its seams, though the deck was dry. “There were three of us,” he said.\\n\\nMara looked again at the two marks. “Where’s the third?”\\n\\nThe bell began to swing without sounding. The woman caught Mara by the wrist and drew her away from the gate.\\n\\n“On the wrong side,” the man said.\\n\\nBehind the iron, a voice called Mara’s name. It sounded like her own voice, spoken through a mouthful of seawater.\"\n}",
+  "output_sha256": "17a62d11b296b88fab3c059491cda9e656789521ea240b4477d0198f1c973e60",
+  "finish_reason": "stop",
+  "refusal": null,
+  "returned_model": "gpt-6-sol",
+  "usage": {
+    "prompt_tokens": 397,
+    "completion_tokens": 402,
+    "total_tokens": 799,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 25,
+      "audio_tokens": 0,
+      "accepted_prediction_tokens": 0,
+      "rejected_prediction_tokens": 0
+    }
+  },
+  "format": {
+    "json_object": true,
+    "rule_unchanged": true,
+    "passage_is_string": true,
+    "passage_sha256": "36785e4dd1763697d9306204099acfefb455448cbabd4e2efb577fa72259a738",
+    "passage_words": 242
+  },
+  "finished_at": "2026-09-22T20:03:56.385855+00:00",
+  "latency_seconds": 5.7793,
+  "usage_cost_upper_estimate_usd": 0.004814,
+  "stream_status": "active",
+  "budget": {
+    "usage_cost_upper_estimate_usd": 3.1994505,
+    "uncertain_cost_reserve_usd": 0.04533,
+    "in_flight_reserve_usd": 0.5442308,
+    "limit_usd": 18.83
+  }
+}

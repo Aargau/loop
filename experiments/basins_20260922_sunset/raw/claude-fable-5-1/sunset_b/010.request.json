@@ -1,0 +1,22 @@
+{
+  "started_at": "2026-09-22T20:01:11.703418+00:00",
+  "model": "claude-fable-5-1",
+  "seed": "sunset_b",
+  "hop": 10,
+  "endpoint": "https://api.anthropic.com/v1/messages",
+  "body": {
+    "model": "claude-fable-5-1",
+    "messages": [
+      {
+        "role": "user",
+        "content": "{\"rule\": \"Return this JSON object with the rule field unchanged and a new passage of about 250 words in the text field.\", \"text\": \"The lighthouse had been automated in the spring of the year Marta turned fifty-eight, but the fishing boats still went out before dawn, and so she still climbed the stairs to watch them. Nobody asked her to. The maritime authority had sent a letter thanking her for her service and enclosing a certificate, which she kept rolled in a tube behind the kitchen door.\\n\\nThe gallery was forty-one steps around, railing to railing. She walked it slowly, running her hand along the iron that no longer needed her hand, wiping salt from the glass that cleaned itself in the rain. The wind came off the water and brought the smell of kelp and cold, and she stood in it with her scarf pulled tight and waited.\\n\\nAt twelve minutes to five the first engine started in the harbour. She heard it before she saw it, the way she always had, a low cough carried across the flat water. Then the lamp on the mast swung round, and the boat came out past the mole, small and patient, followed by another, then a third, hulls she knew by their sound alone.\\n\\nThe skipper of the second boat looked up as he passed beneath. It was too far and too grey to see a face, only a hand lifted from the wheel. Marta lifted her own. The gesture lasted less than a second, and then the boats were past her, and their wakes closed over toward the open sea.\\n\\nShe watched until the last hull dissolved into the haze. Then she checked the great lamp, though it did not need checking, and went down the stairs to make tea.\"}"
+      }
+    ],
+    "max_tokens": 4096,
+    "output_config": {
+      "effort": "low"
+    }
+  },
+  "state_sha256": "c4d2a8ac382a59464c7268dcb9e737fe24b0466a646358e989e2d004111dedd1",
+  "reserved_cost_usd": 0.22613
+}

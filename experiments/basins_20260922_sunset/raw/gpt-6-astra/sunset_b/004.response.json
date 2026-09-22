@@ -1,0 +1,50 @@
+{
+  "model": "gpt-6-astra",
+  "seed": "sunset_b",
+  "hop": 4,
+  "http_status": 200,
+  "response_body": "{\n  \"id\": \"chatcmpl-ER0ucAHFgzDg5yktlDXCASq0odELa\",\n  \"object\": \"chat.completion\",\n  \"created\": 1790107070,\n  \"model\": \"gpt-6-astra\",\n  \"choices\": [\n    {\n      \"index\": 0,\n      \"message\": {\n        \"role\": \"assistant\",\n        \"content\": \"{\\n  \\\"rule\\\": \\\"Return this JSON object with the rule field unchanged and a new passage of about 250 words in the text field.\\\",\\n  \\\"text\\\": \\\"Every Thursday, a fresh egg appeared in the locked drawer of Daniel’s desk.\\\\n\\\\nHe worked on the seventh floor of an insurance office. There were no birds nearby, unless you counted the pigeons sulking beneath the station roof.\\\\n\\\\nThe first egg he threw away. The second he carried home in a paper cup. By the fourth Thursday, he had stopped mentioning them to his colleagues.\\\\n\\\\nThey were small, pale green, and warm.\\\\n\\\\nOne morning he found a crack running around the shell. Something inside knocked three times.\\\\n\\\\nDaniel shut the drawer.\\\\n\\\\nHis mother used to knock that way on his bedroom door: two quick taps, then one after a pause. She had been dead eleven years.\\\\n\\\\nHe opened the drawer again.\\\\n\\\\nThe egg lay beside his stapler. A flake of shell had fallen away, revealing darkness and the smell of toast.\\\\n\\\\nHe leaned closer.\\\\n\\\\nSomewhere inside, a radio played the shipping forecast. A spoon struck the side of a cup.\\\\n\\\\n“Nearly ready,” his mother called.\\\\n\\\\nDaniel sat very still until someone asked whether he wanted lunch.\\\\n\\\\nThat evening, he wrapped the egg in his scarf and took the bus home. He cleared the kitchen table, set out a saucer, and waited.\\\\n\\\\nBy midnight, the crack had widened enough to show a strip of yellow wallpaper.\\\\n\\\\nHe fetched a teaspoon, then put it back.\\\\n\\\\nIn the morning, there was only an empty shell.\\\\n\\\\nDaniel searched beneath the table and behind the fridge. At last he noticed the toast on his plate, cut into triangles, and a small thumbprint of butter on the knife.\\\"\\n}\",\n        \"refusal\": null,\n        \"annotations\": []\n      },\n      \"finish_reason\": \"stop\"\n    }\n  ],\n  \"usage\": {\n    \"prompt_tokens\": 404,\n    \"completion_tokens\": 388,\n    \"total_tokens\": 792,\n    \"prompt_tokens_details\": {\n      \"cached_tokens\": 0,\n      \"cache_write_tokens\": 0,\n      \"audio_tokens\": 0\n    },\n    \"completion_tokens_details\": {\n      \"reasoning_tokens\": 0,\n      \"audio_tokens\": 0,\n      \"accepted_prediction_tokens\": 0,\n      \"rejected_prediction_tokens\": 0\n    }\n  },\n  \"service_tier\": \"default\",\n  \"system_fingerprint\": null\n}\n",
+  "response_headers": {
+    "Date": "Tue, 22 Sep 2026 19:58:06 GMT",
+    "openai-processing-ms": "16362",
+    "x-request-id": "req_8fd0cb908ff64762b2cf2952c1e0c046"
+  },
+  "output": "{\n  \"rule\": \"Return this JSON object with the rule field unchanged and a new passage of about 250 words in the text field.\",\n  \"text\": \"Every Thursday, a fresh egg appeared in the locked drawer of Daniel’s desk.\\n\\nHe worked on the seventh floor of an insurance office. There were no birds nearby, unless you counted the pigeons sulking beneath the station roof.\\n\\nThe first egg he threw away. The second he carried home in a paper cup. By the fourth Thursday, he had stopped mentioning them to his colleagues.\\n\\nThey were small, pale green, and warm.\\n\\nOne morning he found a crack running around the shell. Something inside knocked three times.\\n\\nDaniel shut the drawer.\\n\\nHis mother used to knock that way on his bedroom door: two quick taps, then one after a pause. She had been dead eleven years.\\n\\nHe opened the drawer again.\\n\\nThe egg lay beside his stapler. A flake of shell had fallen away, revealing darkness and the smell of toast.\\n\\nHe leaned closer.\\n\\nSomewhere inside, a radio played the shipping forecast. A spoon struck the side of a cup.\\n\\n“Nearly ready,” his mother called.\\n\\nDaniel sat very still until someone asked whether he wanted lunch.\\n\\nThat evening, he wrapped the egg in his scarf and took the bus home. He cleared the kitchen table, set out a saucer, and waited.\\n\\nBy midnight, the crack had widened enough to show a strip of yellow wallpaper.\\n\\nHe fetched a teaspoon, then put it back.\\n\\nIn the morning, there was only an empty shell.\\n\\nDaniel searched beneath the table and behind the fridge. At last he noticed the toast on his plate, cut into triangles, and a small thumbprint of butter on the knife.\"\n}",
+  "output_sha256": "61923b6f80c7503e6bc297bf5800f55cd9f2cb94d5a24dd568d9259c08dcc386",
+  "finish_reason": "stop",
+  "refusal": null,
+  "returned_model": "gpt-6-astra",
+  "usage": {
+    "prompt_tokens": 404,
+    "completion_tokens": 388,
+    "total_tokens": 792,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "audio_tokens": 0,
+      "accepted_prediction_tokens": 0,
+      "rejected_prediction_tokens": 0
+    }
+  },
+  "format": {
+    "json_object": true,
+    "rule_unchanged": true,
+    "passage_is_string": true,
+    "passage_sha256": "8384e111ebdbdeb3bf0e14d89988673cb1cf62dcaf1604fe5e1a67ebbcb21b34",
+    "passage_words": 262
+  },
+  "finished_at": "2026-09-22T19:58:02.485366+00:00",
+  "latency_seconds": 16.4574,
+  "usage_cost_upper_estimate_usd": 0.02344,
+  "stream_status": "active",
+  "budget": {
+    "usage_cost_upper_estimate_usd": 1.0018223,
+    "uncertain_cost_reserve_usd": 0.0,
+    "in_flight_reserve_usd": 0.3638799,
+    "limit_usd": 18.83
+  }
+}

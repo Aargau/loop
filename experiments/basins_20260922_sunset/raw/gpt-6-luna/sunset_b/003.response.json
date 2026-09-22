@@ -1,0 +1,50 @@
+{
+  "model": "gpt-6-luna",
+  "seed": "sunset_b",
+  "hop": 3,
+  "http_status": 200,
+  "response_body": "{\n  \"id\": \"chatcmpl-ER0sliFErx3svqlbSNZFKaYTtDcsw\",\n  \"object\": \"chat.completion\",\n  \"created\": 1790106955,\n  \"model\": \"gpt-6-luna\",\n  \"choices\": [\n    {\n      \"index\": 0,\n      \"message\": {\n        \"role\": \"assistant\",\n        \"content\": \"{\\\"rule\\\":\\\"Return this JSON object with the rule field unchanged and a new passage of about 250 words in the text field.\\\",\\\"text\\\":\\\"On the first morning of winter, Mara found a door in the snow. It stood upright beside the old train tracks, painted green and fitted with a brass handle. There was no wall around it, only drifts of white stretching toward the pine forest.\\\\n\\\\nShe tugged the handle. Warm air breathed through the opening, carrying the smell of oranges and woodsmoke. Beyond the threshold lay a crowded station, bright with lamps. Travelers hurried across the platform, though every clock showed the same time: seven minutes past midnight.\\\\n\\\\nA conductor in a red scarf approached. “You’re late,” he said, handing her a ticket with no destination printed on it. “The train leaves when you remember where you’re going.”\\\\n\\\\nMara thought of home: the narrow kitchen, her father’s silent chair, the suitcase she had packed after their argument. She had meant to leave before dawn, but the snow had covered the road. Now she stood with the ticket trembling in her glove.\\\\n\\\\nA whistle sounded somewhere underground. The conductor waited. Mara could step aboard and let the train carry her away, or turn back through the green door. Neither choice felt easy.\\\\n\\\\nThen, from the station’s far end, came a familiar tune—her father humming the song he used to sing while fixing the radio. Mara looked through the open doorway. On the snowy track, a lantern bobbed closer, and a figure called her name.\\\\n\\\\nThe ticket warmed in her hand. Its blank face filled with a single word: “Home.” Mara folded it carefully and stepped back into the winter night. Behind her, the train departed without a sound.\\\"}\",\n        \"refusal\": null,\n        \"annotations\": []\n      },\n      \"finish_reason\": \"stop\"\n    }\n  ],\n  \"usage\": {\n    \"prompt_tokens\": 378,\n    \"completion_tokens\": 429,\n    \"total_tokens\": 807,\n    \"prompt_tokens_details\": {\n      \"cached_tokens\": 0,\n      \"cache_write_tokens\": 0,\n      \"audio_tokens\": 0\n    },\n    \"completion_tokens_details\": {\n      \"reasoning_tokens\": 53,\n      \"audio_tokens\": 0,\n      \"accepted_prediction_tokens\": 0,\n      \"rejected_prediction_tokens\": 0\n    }\n  },\n  \"service_tier\": \"default\",\n  \"system_fingerprint\": null\n}\n",
+  "response_headers": {
+    "Date": "Tue, 22 Sep 2026 19:55:59 GMT",
+    "openai-processing-ms": "4510",
+    "x-request-id": "req_af8d221fd8974969b70e7967da8c8f6f"
+  },
+  "output": "{\"rule\":\"Return this JSON object with the rule field unchanged and a new passage of about 250 words in the text field.\",\"text\":\"On the first morning of winter, Mara found a door in the snow. It stood upright beside the old train tracks, painted green and fitted with a brass handle. There was no wall around it, only drifts of white stretching toward the pine forest.\\n\\nShe tugged the handle. Warm air breathed through the opening, carrying the smell of oranges and woodsmoke. Beyond the threshold lay a crowded station, bright with lamps. Travelers hurried across the platform, though every clock showed the same time: seven minutes past midnight.\\n\\nA conductor in a red scarf approached. “You’re late,” he said, handing her a ticket with no destination printed on it. “The train leaves when you remember where you’re going.”\\n\\nMara thought of home: the narrow kitchen, her father’s silent chair, the suitcase she had packed after their argument. She had meant to leave before dawn, but the snow had covered the road. Now she stood with the ticket trembling in her glove.\\n\\nA whistle sounded somewhere underground. The conductor waited. Mara could step aboard and let the train carry her away, or turn back through the green door. Neither choice felt easy.\\n\\nThen, from the station’s far end, came a familiar tune—her father humming the song he used to sing while fixing the radio. Mara looked through the open doorway. On the snowy track, a lantern bobbed closer, and a figure called her name.\\n\\nThe ticket warmed in her hand. Its blank face filled with a single word: “Home.” Mara folded it carefully and stepped back into the winter night. Behind her, the train departed without a sound.\"}",
+  "output_sha256": "57d6bdc3a967a35cf332a6dd215a1ced4af95d6a01d0dd3659306a7588c30a8f",
+  "finish_reason": "stop",
+  "refusal": null,
+  "returned_model": "gpt-6-luna",
+  "usage": {
+    "prompt_tokens": 378,
+    "completion_tokens": 429,
+    "total_tokens": 807,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 53,
+      "audio_tokens": 0,
+      "accepted_prediction_tokens": 0,
+      "rejected_prediction_tokens": 0
+    }
+  },
+  "format": {
+    "json_object": true,
+    "rule_unchanged": true,
+    "passage_is_string": true,
+    "passage_sha256": "5ca9c9cf4670faea47f40dc664a81ce38b0cdfb1b5d3c389588804ecccf71a92",
+    "passage_words": 266
+  },
+  "finished_at": "2026-09-22T19:55:55.832311+00:00",
+  "latency_seconds": 4.6484,
+  "usage_cost_upper_estimate_usd": 0.0002523,
+  "stream_status": "active",
+  "budget": {
+    "usage_cost_upper_estimate_usd": 0.2130121,
+    "uncertain_cost_reserve_usd": 0.0,
+    "in_flight_reserve_usd": 0.587546,
+    "limit_usd": 18.83
+  }
+}

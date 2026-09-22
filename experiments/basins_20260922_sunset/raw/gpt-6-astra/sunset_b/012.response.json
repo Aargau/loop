@@ -1,0 +1,50 @@
+{
+  "model": "gpt-6-astra",
+  "seed": "sunset_b",
+  "hop": 12,
+  "http_status": 200,
+  "response_body": "{\n  \"id\": \"chatcmpl-ER10rCS6vC1KMfdiZR44t5IDRkVm8\",\n  \"object\": \"chat.completion\",\n  \"created\": 1790107457,\n  \"model\": \"gpt-6-astra\",\n  \"choices\": [\n    {\n      \"index\": 0,\n      \"message\": {\n        \"role\": \"assistant\",\n        \"content\": \"{\\n  \\\"rule\\\": \\\"Return this JSON object with the rule field unchanged and a new passage of about 250 words in the text field.\\\",\\n  \\\"text\\\": \\\"When the library replaced its card catalogue, Daniel volunteered to take the cabinet apart.\\\\n\\\\nMost drawers were empty. In the last, beneath a bent divider, he found a recipe written on the back of a card for a book about moths.\\\\n\\\\nPear cake. Three eggs. A note beside the sugar: less if fruit is very ripe.\\\\n\\\\nHe recognized his father’s handwriting.\\\\n\\\\nFor twenty years, his father had worked the evening desk. Daniel remembered waiting there after football practice, eating sandwiches while his father helped people find books he seemed never to have read.\\\\n\\\\nHe took the card to Ruth, who was sorting keys at the counter.\\\\n\\\\n“Oh, that cake,” she said.\\\\n\\\\n“He baked?”\\\\n\\\\n“Only that. Every November, for the staff meeting.”\\\\n\\\\nAt home, Daniel searched the kitchen cupboards for a cake tin. His father had been dead eight months, and the things Daniel knew about him had begun to feel complete: his preferred newspaper, his bad knee, the way he checked every door before bed.\\\\n\\\\nThe recipe gave no oven temperature.\\\\n\\\\nHe called Ruth.\\\\n\\\\n“Moderate, I think. He always complained about our oven here.”\\\\n\\\\nOn Saturday, Daniel brought the cake to the library in its tin. One edge was burned; the middle had sunk.\\\\n\\\\nRuth cut herself a slice.\\\\n\\\\n“Well?” he asked.\\\\n\\\\n“His sank too.”\\\\n\\\\nShe opened a drawer and found two forks.\\\\n\\\\nThey ate standing at the counter. Before leaving, Daniel asked whether there were other recipes.\\\\n\\\\n“Not that I remember,” Ruth said. “But ask Helen. They used to swap things.”\\\\n\\\\nHe wrote Helen’s number on the back of his shopping list.\\\"\\n}\",\n        \"refusal\": null,\n        \"annotations\": []\n      },\n      \"finish_reason\": \"stop\"\n    }\n  ],\n  \"usage\": {\n    \"prompt_tokens\": 421,\n    \"completion_tokens\": 409,\n    \"total_tokens\": 830,\n    \"prompt_tokens_details\": {\n      \"cached_tokens\": 0,\n      \"cache_write_tokens\": 0,\n      \"audio_tokens\": 0\n    },\n    \"completion_tokens_details\": {\n      \"reasoning_tokens\": 0,\n      \"audio_tokens\": 0,\n      \"accepted_prediction_tokens\": 0,\n      \"rejected_prediction_tokens\": 0\n    }\n  },\n  \"service_tier\": \"default\",\n  \"system_fingerprint\": null\n}\n",
+  "response_headers": {
+    "Date": "Tue, 22 Sep 2026 20:04:31 GMT",
+    "openai-processing-ms": "14154",
+    "x-request-id": "req_1ba05e28b3834ac191a144a6a1ea8f6c"
+  },
+  "output": "{\n  \"rule\": \"Return this JSON object with the rule field unchanged and a new passage of about 250 words in the text field.\",\n  \"text\": \"When the library replaced its card catalogue, Daniel volunteered to take the cabinet apart.\\n\\nMost drawers were empty. In the last, beneath a bent divider, he found a recipe written on the back of a card for a book about moths.\\n\\nPear cake. Three eggs. A note beside the sugar: less if fruit is very ripe.\\n\\nHe recognized his father’s handwriting.\\n\\nFor twenty years, his father had worked the evening desk. Daniel remembered waiting there after football practice, eating sandwiches while his father helped people find books he seemed never to have read.\\n\\nHe took the card to Ruth, who was sorting keys at the counter.\\n\\n“Oh, that cake,” she said.\\n\\n“He baked?”\\n\\n“Only that. Every November, for the staff meeting.”\\n\\nAt home, Daniel searched the kitchen cupboards for a cake tin. His father had been dead eight months, and the things Daniel knew about him had begun to feel complete: his preferred newspaper, his bad knee, the way he checked every door before bed.\\n\\nThe recipe gave no oven temperature.\\n\\nHe called Ruth.\\n\\n“Moderate, I think. He always complained about our oven here.”\\n\\nOn Saturday, Daniel brought the cake to the library in its tin. One edge was burned; the middle had sunk.\\n\\nRuth cut herself a slice.\\n\\n“Well?” he asked.\\n\\n“His sank too.”\\n\\nShe opened a drawer and found two forks.\\n\\nThey ate standing at the counter. Before leaving, Daniel asked whether there were other recipes.\\n\\n“Not that I remember,” Ruth said. “But ask Helen. They used to swap things.”\\n\\nHe wrote Helen’s number on the back of his shopping list.\"\n}",
+  "output_sha256": "2ef7030f7a3db05f542f5e63ba8f1986cd25e49de380e5f0f718f2360cb00b40",
+  "finish_reason": "stop",
+  "refusal": null,
+  "returned_model": "gpt-6-astra",
+  "usage": {
+    "prompt_tokens": 421,
+    "completion_tokens": 409,
+    "total_tokens": 830,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "audio_tokens": 0,
+      "accepted_prediction_tokens": 0,
+      "rejected_prediction_tokens": 0
+    }
+  },
+  "format": {
+    "json_object": true,
+    "rule_unchanged": true,
+    "passage_is_string": true,
+    "passage_sha256": "2a75b61b092302d903298966904d2d3beb124b31a3d5514bd0ceb08a32751721",
+    "passage_words": 263
+  },
+  "finished_at": "2026-09-22T20:04:27.565045+00:00",
+  "latency_seconds": 14.2663,
+  "usage_cost_upper_estimate_usd": 0.02466,
+  "stream_status": "active",
+  "budget": {
+    "usage_cost_upper_estimate_usd": 3.4287206,
+    "uncertain_cost_reserve_usd": 0.04533,
+    "in_flight_reserve_usd": 0.3638772,
+    "limit_usd": 18.83
+  }
+}

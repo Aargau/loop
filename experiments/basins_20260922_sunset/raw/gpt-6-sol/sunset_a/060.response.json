@@ -1,0 +1,50 @@
+{
+  "model": "gpt-6-sol",
+  "seed": "sunset_a",
+  "hop": 60,
+  "http_status": 200,
+  "response_body": "{\n  \"id\": \"chatcmpl-ER158801O3fvFKB0TNlssBsLPyD1Z\",\n  \"object\": \"chat.completion\",\n  \"created\": 1790107722,\n  \"model\": \"gpt-6-sol\",\n  \"choices\": [\n    {\n      \"index\": 0,\n      \"message\": {\n        \"role\": \"assistant\",\n        \"content\": \"{\\n  \\\"rule\\\": \\\"Return this JSON object with the rule field unchanged and a new passage of about 250 words in the text field.\\\",\\n  \\\"text\\\": \\\"By the following Saturday, the caretaker had found a second table for the schoolroom. People kept arriving with things they thought someone else might recognize: a brass button, a spelling prize, a photograph so faded that only the bell above the door was clear.\\\\n\\\\nImani set out the biscuits while Sami arranged the objects in rows. Beside each one, he placed a slip of paper for its owner’s name and whatever else they knew.\\\\n\\\\nA man in a blue cap picked up the brass button. “That’s from the caretaker’s old coat,” he said. “He used to lend it to anyone who forgot theirs.”\\\\n\\\\nThe caretaker, standing by the stove, shook his head. “It was too big for all of you.”\\\\n\\\\n“Which was why we liked it,” the man replied.\\\\n\\\\nImani wrote the exchange in the notebook. Across the room, two sisters were arguing cheerfully over the year of the spelling prize. One remembered the teacher who had awarded it; the other remembered being jealous. Between them, they settled on a date.\\\\n\\\\nIn the afternoon, the elderly woman returned with a folded sheet of paper. It was a list of songs the children had sung while waiting for the bakery ovens to warm the room. She could recall only the first line of one song, but three visitors knew the rest. They sang it softly, then again so Sami could write down the words.\\\\n\\\\nWhen it was time to leave, Imani put the notebook in the cupboard. The table was still crowded with objects. This time, she left the slips of paper beside them.\\\"\\n}\",\n        \"refusal\": null,\n        \"annotations\": []\n      },\n      \"finish_reason\": \"stop\"\n    }\n  ],\n  \"usage\": {\n    \"prompt_tokens\": 357,\n    \"completion_tokens\": 407,\n    \"total_tokens\": 764,\n    \"prompt_tokens_details\": {\n      \"cached_tokens\": 0,\n      \"cache_write_tokens\": 0,\n      \"audio_tokens\": 0\n    },\n    \"completion_tokens_details\": {\n      \"reasoning_tokens\": 33,\n      \"audio_tokens\": 0,\n      \"accepted_prediction_tokens\": 0,\n      \"rejected_prediction_tokens\": 0\n    }\n  },\n  \"service_tier\": \"default\",\n  \"system_fingerprint\": null\n}\n",
+  "response_headers": {
+    "Date": "Tue, 22 Sep 2026 20:08:48 GMT",
+    "openai-processing-ms": "6179",
+    "x-request-id": "req_51234df4718045c5ba2a958125eb91fa"
+  },
+  "output": "{\n  \"rule\": \"Return this JSON object with the rule field unchanged and a new passage of about 250 words in the text field.\",\n  \"text\": \"By the following Saturday, the caretaker had found a second table for the schoolroom. People kept arriving with things they thought someone else might recognize: a brass button, a spelling prize, a photograph so faded that only the bell above the door was clear.\\n\\nImani set out the biscuits while Sami arranged the objects in rows. Beside each one, he placed a slip of paper for its owner’s name and whatever else they knew.\\n\\nA man in a blue cap picked up the brass button. “That’s from the caretaker’s old coat,” he said. “He used to lend it to anyone who forgot theirs.”\\n\\nThe caretaker, standing by the stove, shook his head. “It was too big for all of you.”\\n\\n“Which was why we liked it,” the man replied.\\n\\nImani wrote the exchange in the notebook. Across the room, two sisters were arguing cheerfully over the year of the spelling prize. One remembered the teacher who had awarded it; the other remembered being jealous. Between them, they settled on a date.\\n\\nIn the afternoon, the elderly woman returned with a folded sheet of paper. It was a list of songs the children had sung while waiting for the bakery ovens to warm the room. She could recall only the first line of one song, but three visitors knew the rest. They sang it softly, then again so Sami could write down the words.\\n\\nWhen it was time to leave, Imani put the notebook in the cupboard. The table was still crowded with objects. This time, she left the slips of paper beside them.\"\n}",
+  "output_sha256": "95a5417ccda1a7d9ea28d9b2c4b2a669d7ae426e26e370fd8dc9cb08492d1f9c",
+  "finish_reason": "stop",
+  "refusal": null,
+  "returned_model": "gpt-6-sol",
+  "usage": {
+    "prompt_tokens": 357,
+    "completion_tokens": 407,
+    "total_tokens": 764,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 33,
+      "audio_tokens": 0,
+      "accepted_prediction_tokens": 0,
+      "rejected_prediction_tokens": 0
+    }
+  },
+  "format": {
+    "json_object": true,
+    "rule_unchanged": true,
+    "passage_is_string": true,
+    "passage_sha256": "76533a1e1dd62c47595735a58a0da36caba833547c859ed5ce0499c3585c90aa",
+    "passage_words": 263
+  },
+  "finished_at": "2026-09-22T20:08:44.803451+00:00",
+  "latency_seconds": 6.3279,
+  "usage_cost_upper_estimate_usd": 0.004784,
+  "stream_status": "active",
+  "budget": {
+    "usage_cost_upper_estimate_usd": 5.0496237,
+    "uncertain_cost_reserve_usd": 0.04533,
+    "in_flight_reserve_usd": 0.543472,
+    "limit_usd": 18.83
+  }
+}

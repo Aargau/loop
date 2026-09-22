@@ -1,0 +1,22 @@
+{
+  "started_at": "2026-09-22T20:04:52.251050+00:00",
+  "model": "claude-opus-5-5",
+  "seed": "tide",
+  "hop": 21,
+  "endpoint": "https://api.anthropic.com/v1/messages",
+  "body": {
+    "model": "claude-opus-5-5",
+    "messages": [
+      {
+        "role": "user",
+        "content": "```json\n{\"rule\": \"Return this JSON object with the rule field unchanged and a new passage of about 250 words in the text field.\", \"text\": \"The minister nodded as though this settled something, and he did not ask anything more. After he had gone, the girl sat on the step and watched the rowan move in the wind. She tried to remember her mother saying those words and could not, and the not-remembering frightened her more than the storm had. That night she asked her father what else her mother had said. He was quiet so long that she thought he had not heard. Then he set down his pipe and began, haltingly, to tell her: how her mother sang to the hens so they would lay, how she kept a sprig of rowan above the door of the byre, how she had once walked three miles in the rain to return a borrowed spoon. The stories came slowly at first, then faster, as if they had been waiting behind a door he had finally opened. The girl listened until the lamp burned low. In August the berries came, small and hard and green, clustered at the tips of the thin branches. By September they had turned a red so bright it seemed to hum against the grey sky. The birds found them before anyone else did, a pair of blackbirds that quarrelled in the grass below. Her father did not chase them off. 'Let them have some,' he said. 'That's what they're for.' The girl cut a single sprig before the birds took the rest, tied it with a length of the net twine, and hung it above the kitchen door, where it stayed all winter.\"}\n```"
+      }
+    ],
+    "max_tokens": 4096,
+    "output_config": {
+      "effort": "low"
+    }
+  },
+  "state_sha256": "257809be4dba617a915e59a14ee3c8903ac2b731733ef0b631b2b64161fd4204",
+  "reserved_cost_usd": 0.090008
+}

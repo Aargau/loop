@@ -1,0 +1,22 @@
+{
+  "started_at": "2026-09-22T20:04:05.957191+00:00",
+  "model": "claude-opus-5-5",
+  "seed": "sunset_a",
+  "hop": 20,
+  "endpoint": "https://api.anthropic.com/v1/messages",
+  "body": {
+    "model": "claude-opus-5-5",
+    "messages": [
+      {
+        "role": "user",
+        "content": "```json\n{\"rule\": \"Return this JSON object with the rule field unchanged and a new passage of about 250 words in the text field.\", \"text\": \"By January the snow had stopped pretending and settled in earnest, banking against the shop door so that Mira had to shovel a path each morning before she could turn the sign. Business slowed, as it always did after the holidays, and the long gray afternoons stretched out with little to fill them. Tobias did not seem to mind. He had begun keeping a notebook, its pages crowded with sketches of escapements and gear trains, each one labeled in his careful, cramped hand. Some evenings Mira found him bent over it long after she had banked the stove, tracing the path of a single tooth through its rotation as though it might reveal something he had missed. One night she brought him tea and glanced at the page. It was not a movement she recognized. The design was strange, a little clumsy, the wheels too many and arranged in ways no textbook would recommend. When she asked what it was, he closed the notebook and said it was nothing, only an idea. But the next morning she noticed a length of brass stock missing from the cabinet, and a fresh curl of shavings beneath his stool. She did not mention it. Her own master had once let her ruin a month's worth of materials chasing a design that never ran, and she had learned more from that failure than from any finished piece. So she kept the stove lit a little later each night, left the good files within his reach, and waited to see what he would make.\"}\n```"
+      }
+    ],
+    "max_tokens": 4096,
+    "output_config": {
+      "effort": "low"
+    }
+  },
+  "state_sha256": "1ce5a53c1096510db9a16187835ea31a58f3dda342b1b86e210cda693bf11d70",
+  "reserved_cost_usd": 0.090176
+}

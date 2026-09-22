@@ -1,0 +1,20 @@
+{
+  "started_at": "2026-09-22T19:56:57.129117+00:00",
+  "model": "gpt-6-astra",
+  "seed": "sunset_b",
+  "hop": 3,
+  "endpoint": "https://api.openai.com/v1/chat/completions",
+  "body": {
+    "model": "gpt-6-astra",
+    "messages": [
+      {
+        "role": "user",
+        "content": "{\n  \"rule\": \"Return this JSON object with the rule field unchanged and a new passage of about 250 words in the text field.\",\n  \"text\": \"Every Thursday, the clockmaker found a pear on his doorstep. No basket, no note, just one green pear resting precisely in the center of the mat.\\n\\nAt first, Emil assumed it was a mistake. He left the fruit on the wall beside his shop, where schoolchildren usually claimed anything edible. But the following Thursday another appeared, its stem tied with red thread.\\n\\nHe asked the baker, the postman, the woman who swept the station steps. Nobody admitted knowing anything.\\n\\nBy November, he had collected six lengths of thread in a drawer meant for watch springs.\\n\\nOn the seventh Thursday, he opened the shop early and waited behind the curtain. At half past five, a girl in an oversized yellow coat approached. She placed a pear on the mat, adjusted it carefully, and turned away.\\n\\nEmil opened the door.\\n\\n“Have we met?” he asked.\\n\\nThe girl shook her head. “You fixed my grandfather’s clock.”\\n\\n“I fix many clocks.”\\n\\n“This one had birds inside. You wouldn’t take his money.”\\n\\nEmil remembered the old man carrying the clock wrapped in a blanket. He had died before spring.\\n\\n“He said you should always pay people,” the girl continued. “Our tree did well this year.”\\n\\nEmil looked at the pear. There was a small bruise near its base, shaped like a thumbprint.\\n\\n“Would you like to hear the clocks strike six?” he asked.\\n\\nShe glanced toward the empty street, then nodded.\\n\\nInside, he found a knife and two saucers. While the minute hands climbed, they ate the pear in silence, leaving the red thread beside the seeds.\"\n}"
+      }
+    ],
+    "max_completion_tokens": 4096,
+    "reasoning_effort": "low"
+  },
+  "state_sha256": "b632c180a15e2f4a707ac4c606e07f3f501acac2442b26b8420d0de07b0235e4",
+  "reserved_cost_usd": 0.227
+}

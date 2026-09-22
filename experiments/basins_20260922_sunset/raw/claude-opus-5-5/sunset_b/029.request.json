@@ -1,0 +1,22 @@
+{
+  "started_at": "2026-09-22T20:08:22.133200+00:00",
+  "model": "claude-opus-5-5",
+  "seed": "sunset_b",
+  "hop": 29,
+  "endpoint": "https://api.anthropic.com/v1/messages",
+  "body": {
+    "model": "claude-opus-5-5",
+    "messages": [
+      {
+        "role": "user",
+        "content": "```json\n{\"rule\": \"Return this JSON object with the rule field unchanged and a new passage of about 250 words in the text field.\", \"text\": \"In the hill village of Dunmere, an old clock tower stood above the market square, its hands frozen at a quarter past three for as long as anyone could remember. Merchants set their stalls beneath it, children played tag around its base, and travelers often paused to ask why no one had repaired it. The mayor claimed the gears had rusted beyond saving. The innkeeper swore lightning had struck it during a summer storm long before his grandfather was born. A curious boy named Tomas, who delivered bread each morning, noticed something strange: on certain days, the minute hand seemed to have shifted ever so slightly. Determined to find out why, he slipped into the tower one evening after the market closed. Climbing the narrow wooden ladder, he discovered a small workshop tucked beneath the clock face. There sat an elderly woman named Ilse, polishing a brass gear by candlelight. She had once been the village clockmaker, she explained, and the clock had stopped on the afternoon her son left Dunmere to seek his fortune across the sea. She had promised herself it would run again when he returned. For decades, she had rebuilt it piece by piece, testing each part in secret. Tomas asked if he could help. Night after night, he learned to file teeth, balance weights, and oil springs. One spring morning, the whole village gathered in astonishment as the great bell rang for the first time in living memory. Ilse's son never came home, but she smiled anyway, because the clock was moving forward, and so, at last, was she.\"}\n```"
+      }
+    ],
+    "max_tokens": 4096,
+    "output_config": {
+      "effort": "low"
+    }
+  },
+  "state_sha256": "bbd90684dee6b8c282f6ca4287d76e08ae76ed13d86f975608ddfd7fcf41e06c",
+  "reserved_cost_usd": 0.090656
+}

@@ -1,0 +1,48 @@
+{
+  "model": "claude-fable-5-1",
+  "seed": "sunset_b",
+  "hop": 17,
+  "http_status": 200,
+  "response_body": "{\"model\":\"claude-fable-5-1\",\"id\":\"msg_011CfK5Yih2p8mTwEBB4tP1E\",\"type\":\"message\",\"role\":\"assistant\",\"content\":[{\"type\":\"text\",\"text\":\"{\\\"rule\\\": \\\"Return this JSON object with the rule field unchanged and a new passage of about 250 words in the text field.\\\", \\\"text\\\": \\\"The lighthouse at Brenna had been automated in the spring Agnes turned sixty, and the letter informing her of this arrived on the same boat as her birthday cake. She read it standing on the jetty with the cake box balanced on one arm, and afterward she could never separate the two things in memory: the taste of marzipan and the phrase no longer requires a resident keeper.\\\\n\\\\nShe stayed anyway. The house was hers by some arrangement her father had made decades earlier, and the light did not seem to mind her presence. It turned on at dusk without her, swung its slow arm across the water, and turned off at dawn with a small click she could hear from her bed if the wind was right.\\\\n\\\\nThe fishermen still waved when they passed. She still logged the weather in the ledger, out of habit, in the same cramped hand her father had used. Wind northwest, moderate. Visibility good. Nothing to report. Nobody would read it, and she knew that, and she wrote it anyway.\\\\n\\\\nWhat surprised her was how little the automation changed. She had imagined herself as the light's tender, its necessary hand. Now she understood she had mostly been its witness. The lamp had never needed her to shine; it had needed someone to see it shine, to stand at the window at two in the morning and confirm that the world was still marked, still warned, still safe from that particular rock.\\\\n\\\\nShe went on doing that. It seemed the least anyone could do.\\\"}\"}],\"container\":null,\"stop_reason\":\"end_turn\",\"stop_sequence\":null,\"stop_details\":null,\"usage\":{\"input_tokens\":480,\"cache_creation_input_tokens\":0,\"cache_read_input_tokens\":0,\"cache_creation\":{\"ephemeral_5m_input_tokens\":0,\"ephemeral_1h_input_tokens\":0},\"output_tokens\":501,\"output_tokens_details\":{\"thinking_tokens\":0},\"service_tier\":\"standard\",\"inference_geo\":\"global\"}}",
+  "response_headers": {
+    "Date": "Tue, 22 Sep 2026 20:05:56 GMT",
+    "request-id": "req_011CfK5Yi54sEXqTnfGy6hsm"
+  },
+  "output": "{\"rule\": \"Return this JSON object with the rule field unchanged and a new passage of about 250 words in the text field.\", \"text\": \"The lighthouse at Brenna had been automated in the spring Agnes turned sixty, and the letter informing her of this arrived on the same boat as her birthday cake. She read it standing on the jetty with the cake box balanced on one arm, and afterward she could never separate the two things in memory: the taste of marzipan and the phrase no longer requires a resident keeper.\\n\\nShe stayed anyway. The house was hers by some arrangement her father had made decades earlier, and the light did not seem to mind her presence. It turned on at dusk without her, swung its slow arm across the water, and turned off at dawn with a small click she could hear from her bed if the wind was right.\\n\\nThe fishermen still waved when they passed. She still logged the weather in the ledger, out of habit, in the same cramped hand her father had used. Wind northwest, moderate. Visibility good. Nothing to report. Nobody would read it, and she knew that, and she wrote it anyway.\\n\\nWhat surprised her was how little the automation changed. She had imagined herself as the light's tender, its necessary hand. Now she understood she had mostly been its witness. The lamp had never needed her to shine; it had needed someone to see it shine, to stand at the window at two in the morning and confirm that the world was still marked, still warned, still safe from that particular rock.\\n\\nShe went on doing that. It seemed the least anyone could do.\"}",
+  "output_sha256": "f897ef15f67f927a0a38ec2f525df3dcd53dab87deaf8920cfe4a7793467a9e6",
+  "finish_reason": "end_turn",
+  "refusal": null,
+  "returned_model": "claude-fable-5-1",
+  "usage": {
+    "input_tokens": 480,
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 0,
+    "cache_creation": {
+      "ephemeral_5m_input_tokens": 0,
+      "ephemeral_1h_input_tokens": 0
+    },
+    "output_tokens": 501,
+    "output_tokens_details": {
+      "thinking_tokens": 0
+    },
+    "service_tier": "standard",
+    "inference_geo": "global"
+  },
+  "format": {
+    "json_object": true,
+    "rule_unchanged": true,
+    "passage_is_string": true,
+    "passage_sha256": "16c73e28cc7fb5208fad3c55cd08cd22b631fe4c9b7259c84ddb2ca49b85f44c",
+    "passage_words": 259
+  },
+  "finished_at": "2026-09-22T20:05:52.606474+00:00",
+  "latency_seconds": 12.1976,
+  "usage_cost_upper_estimate_usd": 0.02985,
+  "stream_status": "active",
+  "budget": {
+    "usage_cost_upper_estimate_usd": 3.9556134,
+    "uncertain_cost_reserve_usd": 0.04533,
+    "in_flight_reserve_usd": 0.3648895,
+    "limit_usd": 18.83
+  }
+}

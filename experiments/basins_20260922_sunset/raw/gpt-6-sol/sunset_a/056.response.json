@@ -1,0 +1,50 @@
+{
+  "model": "gpt-6-sol",
+  "seed": "sunset_a",
+  "hop": 56,
+  "http_status": 200,
+  "response_body": "{\n  \"id\": \"chatcmpl-ER14LHPdnnkDoVTUS1SCA9hDV8Qnj\",\n  \"object\": \"chat.completion\",\n  \"created\": 1790107673,\n  \"model\": \"gpt-6-sol\",\n  \"choices\": [\n    {\n      \"index\": 0,\n      \"message\": {\n        \"role\": \"assistant\",\n        \"content\": \"{\\n  \\\"rule\\\": \\\"Return this JSON object with the rule field unchanged and a new passage of about 250 words in the text field.\\\",\\n  \\\"text\\\": \\\"The next morning, Imani and Sami found the red door between a fruit seller’s stall and a shop full of clocks. Sami knocked while Imani held the notebook open to a clean page.\\\\n\\\\nA woman answered. When they told her about the school bell, she looked surprised.\\\\n\\\\n“My father brought home all sorts of things to repair,” she said. “Come in. We can look in his workshop.”\\\\n\\\\nThe workshop was a small room at the back of the building. Jars of screws lined the shelves, and tools hung above a wooden bench. The woman opened a cupboard and lifted out a box of hinges, then another filled with brass handles. At the bottom of the third box lay a bell wrapped in a square of cloth.\\\\n\\\\nImani knew it by its narrow handle and rounded lip. A thin crack ran up one side.\\\\n\\\\n“Father tried to mend it,” the woman said, turning it carefully in her hands. “He never found a way to make it ring properly again.”\\\\n\\\\nSami asked if they could hear it. She gave the bell a gentle shake. It made a soft, uneven note.\\\\n\\\\n“It still has a voice,” Imani said.\\\\n\\\\nThe woman smiled. “Would you take it to the old school? I think he meant to return it.”\\\\n\\\\nThey carried it to the bakery first. Imani’s grandfather cleared a place for it beside the notebook, where everyone could see what they had found. Imani drew the crack, then wrote down the woman’s name and her father’s. She left one last blank line for the day the bell went home.\\\"\\n}\",\n        \"refusal\": null,\n        \"annotations\": []\n      },\n      \"finish_reason\": \"stop\"\n    }\n  ],\n  \"usage\": {\n    \"prompt_tokens\": 391,\n    \"completion_tokens\": 401,\n    \"total_tokens\": 792,\n    \"prompt_tokens_details\": {\n      \"cached_tokens\": 0,\n      \"cache_write_tokens\": 0,\n      \"audio_tokens\": 0\n    },\n    \"completion_tokens_details\": {\n      \"reasoning_tokens\": 19,\n      \"audio_tokens\": 0,\n      \"accepted_prediction_tokens\": 0,\n      \"rejected_prediction_tokens\": 0\n    }\n  },\n  \"service_tier\": \"default\",\n  \"system_fingerprint\": null\n}\n",
+  "response_headers": {
+    "Date": "Tue, 22 Sep 2026 20:07:59 GMT",
+    "openai-processing-ms": "5972",
+    "x-request-id": "req_10eeff69094040b0b2339d6cb452d98a"
+  },
+  "output": "{\n  \"rule\": \"Return this JSON object with the rule field unchanged and a new passage of about 250 words in the text field.\",\n  \"text\": \"The next morning, Imani and Sami found the red door between a fruit seller’s stall and a shop full of clocks. Sami knocked while Imani held the notebook open to a clean page.\\n\\nA woman answered. When they told her about the school bell, she looked surprised.\\n\\n“My father brought home all sorts of things to repair,” she said. “Come in. We can look in his workshop.”\\n\\nThe workshop was a small room at the back of the building. Jars of screws lined the shelves, and tools hung above a wooden bench. The woman opened a cupboard and lifted out a box of hinges, then another filled with brass handles. At the bottom of the third box lay a bell wrapped in a square of cloth.\\n\\nImani knew it by its narrow handle and rounded lip. A thin crack ran up one side.\\n\\n“Father tried to mend it,” the woman said, turning it carefully in her hands. “He never found a way to make it ring properly again.”\\n\\nSami asked if they could hear it. She gave the bell a gentle shake. It made a soft, uneven note.\\n\\n“It still has a voice,” Imani said.\\n\\nThe woman smiled. “Would you take it to the old school? I think he meant to return it.”\\n\\nThey carried it to the bakery first. Imani’s grandfather cleared a place for it beside the notebook, where everyone could see what they had found. Imani drew the crack, then wrote down the woman’s name and her father’s. She left one last blank line for the day the bell went home.\"\n}",
+  "output_sha256": "3cd34ca2fd9ced342a24df2003d47abe5e734289b64062e084fc3874ecc3322f",
+  "finish_reason": "stop",
+  "refusal": null,
+  "returned_model": "gpt-6-sol",
+  "usage": {
+    "prompt_tokens": 391,
+    "completion_tokens": 401,
+    "total_tokens": 792,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 19,
+      "audio_tokens": 0,
+      "accepted_prediction_tokens": 0,
+      "rejected_prediction_tokens": 0
+    }
+  },
+  "format": {
+    "json_object": true,
+    "rule_unchanged": true,
+    "passage_is_string": true,
+    "passage_sha256": "14b4f0bdcee1b7ee27764a68f50f115bca0b6775f5c7e8cf5fbd5ad75fe5c49c",
+    "passage_words": 264
+  },
+  "finished_at": "2026-09-22T20:07:55.394308+00:00",
+  "latency_seconds": 6.0633,
+  "usage_cost_upper_estimate_usd": 0.004792,
+  "stream_status": "active",
+  "budget": {
+    "usage_cost_upper_estimate_usd": 4.7409872,
+    "uncertain_cost_reserve_usd": 0.04533,
+    "in_flight_reserve_usd": 0.5476067,
+    "limit_usd": 18.83
+  }
+}

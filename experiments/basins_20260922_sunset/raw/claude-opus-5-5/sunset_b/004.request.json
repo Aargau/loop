@@ -1,0 +1,22 @@
+{
+  "started_at": "2026-09-22T19:56:55.004454+00:00",
+  "model": "claude-opus-5-5",
+  "seed": "sunset_b",
+  "hop": 4,
+  "endpoint": "https://api.anthropic.com/v1/messages",
+  "body": {
+    "model": "claude-opus-5-5",
+    "messages": [
+      {
+        "role": "user",
+        "content": "```json\n{\"rule\": \"Return this JSON object with the rule field unchanged and a new passage of about 250 words in the text field.\", \"text\": \"By late afternoon the snow had turned the color of weak tea, and the light slanted low across the rooftops as if it, too, were tired. Mara stood at the edge of the frozen pond with a thermos cradled in her mittens, watching the skaters trace their looping signatures across the ice. Some glided with effortless grace, arms folded behind their backs like herons; others wobbled and flailed, laughing each time they fell. An old man in a knitted cap moved slowly along the far shore, sweeping a path with a wide broom, pausing now and then to wave at children who called his name. The air smelled of woodsmoke and cold metal. Somewhere behind her, a vendor was selling roasted chestnuts, and the scent drifted over in warm, sweet ribbons. Mara unscrewed the thermos and poured cocoa into the lid, steam curling up and fogging her glasses for a moment. She had not skated since she was twelve, the winter her grandmother had held her hands and pulled her gently backward across this very pond, promising she would not let go. She had kept that promise until Mara no longer needed it. Now the skates hung in her closet, laces stiff with age, blades dulled by years of waiting. She sipped the cocoa and considered them. The sun slipped lower, gilding the ice with streaks of amber and rose. A girl nearby took her first shaky strides, clutching her mother's sleeve. Mara watched, then smiled, and decided that tomorrow she would bring the skates.\"}\n```"
+      }
+    ],
+    "max_tokens": 4096,
+    "output_config": {
+      "effort": "low"
+    }
+  },
+  "state_sha256": "0e4b8f5fcdcfb418a665b64ae9d79579b07dacb147badac0419c79b41df7a5f2",
+  "reserved_cost_usd": 0.090312
+}

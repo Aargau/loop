@@ -1,0 +1,50 @@
+{
+  "model": "gpt-6-sol",
+  "seed": "sunset_a",
+  "hop": 4,
+  "http_status": 200,
+  "response_body": "{\n  \"id\": \"chatcmpl-ER0t260oDzXvErEJ7OYUrqkxlgRVs\",\n  \"object\": \"chat.completion\",\n  \"created\": 1790106972,\n  \"model\": \"gpt-6-sol\",\n  \"choices\": [\n    {\n      \"index\": 0,\n      \"message\": {\n        \"role\": \"assistant\",\n        \"content\": \"{\\n  \\\"rule\\\": \\\"Return this JSON object with the rule field unchanged and a new passage of about 250 words in the text field.\\\",\\n  \\\"text\\\": \\\"For a moment, neither of them spoke. Mara could hear a clock ticking at his end of the line and, beneath it, the faint noise of traffic. She had imagined him in a quiet room, waiting for her call. Instead, he sounded surprised.\\\\n\\\\n‘Hello, Mara,’ he said.\\\\n\\\\nShe sat down on the bottom stair. The telephone cord stretched across the hall, just long enough. He asked whether she had received his letter, and she told him she had. They talked about the weather, then about the library where she worked. He said he had never been inside it. She nearly told him there was nothing stopping him now, but asked instead how his knee was. He seemed pleased she remembered it.\\\\n\\\\nWhen the conversation faltered, Mara looked at the unopened parcel on the table. She told him about the suitcase and its broken wheel. He laughed once, softly. He said he had thought it would have been thrown away years ago.\\\\n\\\\n‘It nearly was,’ she said.\\\\n\\\\nHe asked if he could call again on Sunday. Mara watched a drop of rain slide down the glass in the front door. She could say she would be busy. She probably would be; there were always books to sort and meals to make. But Sunday afternoon was usually quiet.\\\\n\\\\n‘All right,’ she said. ‘After four.’\\\\n\\\\nWhen she put down the receiver, the house felt much as it had before. She opened the parcel and took out the library book. A receipt was tucked inside. She set it aside to take to work in the morning.\\\"\\n}\",\n        \"refusal\": null,\n        \"annotations\": []\n      },\n      \"finish_reason\": \"stop\"\n    }\n  ],\n  \"usage\": {\n    \"prompt_tokens\": 343,\n    \"completion_tokens\": 420,\n    \"total_tokens\": 763,\n    \"prompt_tokens_details\": {\n      \"cached_tokens\": 0,\n      \"cache_write_tokens\": 0,\n      \"audio_tokens\": 0\n    },\n    \"completion_tokens_details\": {\n      \"reasoning_tokens\": 49,\n      \"audio_tokens\": 0,\n      \"accepted_prediction_tokens\": 0,\n      \"rejected_prediction_tokens\": 0\n    }\n  },\n  \"service_tier\": \"default\",\n  \"system_fingerprint\": null\n}\n",
+  "response_headers": {
+    "Date": "Tue, 22 Sep 2026 19:56:18 GMT",
+    "openai-processing-ms": "5929",
+    "x-request-id": "req_f2e87a6a53b14a2fa92c55f66ed76be8"
+  },
+  "output": "{\n  \"rule\": \"Return this JSON object with the rule field unchanged and a new passage of about 250 words in the text field.\",\n  \"text\": \"For a moment, neither of them spoke. Mara could hear a clock ticking at his end of the line and, beneath it, the faint noise of traffic. She had imagined him in a quiet room, waiting for her call. Instead, he sounded surprised.\\n\\n‘Hello, Mara,’ he said.\\n\\nShe sat down on the bottom stair. The telephone cord stretched across the hall, just long enough. He asked whether she had received his letter, and she told him she had. They talked about the weather, then about the library where she worked. He said he had never been inside it. She nearly told him there was nothing stopping him now, but asked instead how his knee was. He seemed pleased she remembered it.\\n\\nWhen the conversation faltered, Mara looked at the unopened parcel on the table. She told him about the suitcase and its broken wheel. He laughed once, softly. He said he had thought it would have been thrown away years ago.\\n\\n‘It nearly was,’ she said.\\n\\nHe asked if he could call again on Sunday. Mara watched a drop of rain slide down the glass in the front door. She could say she would be busy. She probably would be; there were always books to sort and meals to make. But Sunday afternoon was usually quiet.\\n\\n‘All right,’ she said. ‘After four.’\\n\\nWhen she put down the receiver, the house felt much as it had before. She opened the parcel and took out the library book. A receipt was tucked inside. She set it aside to take to work in the morning.\"\n}",
+  "output_sha256": "035d5a8a7fcce231fabd0abad61b3002d181d23946c05cd174c59f7f4422a172",
+  "finish_reason": "stop",
+  "refusal": null,
+  "returned_model": "gpt-6-sol",
+  "usage": {
+    "prompt_tokens": 343,
+    "completion_tokens": 420,
+    "total_tokens": 763,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 49,
+      "audio_tokens": 0,
+      "accepted_prediction_tokens": 0,
+      "rejected_prediction_tokens": 0
+    }
+  },
+  "format": {
+    "json_object": true,
+    "rule_unchanged": true,
+    "passage_is_string": true,
+    "passage_sha256": "9d30678cf27df5ba92b8a596752d5d2c1bd11ad1a921f4d24469bc1b1b0990c5",
+    "passage_words": 262
+  },
+  "finished_at": "2026-09-22T19:56:14.193438+00:00",
+  "latency_seconds": 6.0371,
+  "usage_cost_upper_estimate_usd": 0.004886,
+  "stream_status": "active",
+  "budget": {
+    "usage_cost_upper_estimate_usd": 0.3014824,
+    "uncertain_cost_reserve_usd": 0.0,
+    "in_flight_reserve_usd": 0.5443436,
+    "limit_usd": 18.83
+  }
+}

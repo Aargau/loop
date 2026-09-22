@@ -1,0 +1,50 @@
+{
+  "model": "gpt-6-luna",
+  "seed": "tide",
+  "hop": 1,
+  "http_status": 200,
+  "response_body": "{\n  \"id\": \"chatcmpl-ER0sL2KMRKZll9xEv4jyPPrjh5gpz\",\n  \"object\": \"chat.completion\",\n  \"created\": 1790106929,\n  \"model\": \"gpt-6-luna\",\n  \"choices\": [\n    {\n      \"index\": 0,\n      \"message\": {\n        \"role\": \"assistant\",\n        \"content\": \"{\\\"rule\\\":\\\"Return this JSON object with the rule field unchanged and a new passage of about 250 words in the text field.\\\",\\\"text\\\":\\\"The tide came in an hour early. By the time Mara reached the harbor, water was already licking the lowest steps, carrying bits of eelgrass and a bright red buoy that knocked softly against the stone. The fishermen had not returned, and the gulls circled above the empty slips as if waiting for someone to explain the change.\\\\n\\\\nShe set down her canvas bag and watched the water climb. Her grandfather used to say the sea kept its own clock, one that paid no attention to calendars or promises. When she was small, she thought he meant the moon. Now, standing alone beneath a sky the color of pewter, she wondered if he had meant something else entirely.\\\\n\\\\nAcross the harbor, the old signal bell began to ring. No one had touched it in years. Its notes drifted over the water, slow and uneven, while windows opened along the waterfront. A dog barked. Somewhere, a door slammed.\\\\n\\\\nMara pulled the folded chart from her coat. It was the one her grandfather had marked with pencil before he disappeared, though she had never understood the blue circle drawn around the lighthouse. The path to it was already underwater. She could turn back, call the coast guard, and wait for daylight—or take the narrow road above the cliffs before the rising water cut that off, too.\\\\n\\\\nThe bell rang again. Mara tucked the chart away and started toward the hill. Behind her, the harbor swallowed the first step, then the next, smoothing the stone as if it had never been there.\\\"}\",\n        \"refusal\": null,\n        \"annotations\": []\n      },\n      \"finish_reason\": \"stop\"\n    }\n  ],\n  \"usage\": {\n    \"prompt_tokens\": 46,\n    \"completion_tokens\": 384,\n    \"total_tokens\": 430,\n    \"prompt_tokens_details\": {\n      \"cached_tokens\": 0,\n      \"cache_write_tokens\": 0,\n      \"audio_tokens\": 0\n    },\n    \"completion_tokens_details\": {\n      \"reasoning_tokens\": 34,\n      \"audio_tokens\": 0,\n      \"accepted_prediction_tokens\": 0,\n      \"rejected_prediction_tokens\": 0\n    }\n  },\n  \"service_tier\": \"default\",\n  \"system_fingerprint\": null\n}\n",
+  "response_headers": {
+    "Date": "Tue, 22 Sep 2026 19:55:34 GMT",
+    "openai-processing-ms": "4556",
+    "x-request-id": "req_9beeb8f9f1f1451d808042590ecf6e32"
+  },
+  "output": "{\"rule\":\"Return this JSON object with the rule field unchanged and a new passage of about 250 words in the text field.\",\"text\":\"The tide came in an hour early. By the time Mara reached the harbor, water was already licking the lowest steps, carrying bits of eelgrass and a bright red buoy that knocked softly against the stone. The fishermen had not returned, and the gulls circled above the empty slips as if waiting for someone to explain the change.\\n\\nShe set down her canvas bag and watched the water climb. Her grandfather used to say the sea kept its own clock, one that paid no attention to calendars or promises. When she was small, she thought he meant the moon. Now, standing alone beneath a sky the color of pewter, she wondered if he had meant something else entirely.\\n\\nAcross the harbor, the old signal bell began to ring. No one had touched it in years. Its notes drifted over the water, slow and uneven, while windows opened along the waterfront. A dog barked. Somewhere, a door slammed.\\n\\nMara pulled the folded chart from her coat. It was the one her grandfather had marked with pencil before he disappeared, though she had never understood the blue circle drawn around the lighthouse. The path to it was already underwater. She could turn back, call the coast guard, and wait for daylight—or take the narrow road above the cliffs before the rising water cut that off, too.\\n\\nThe bell rang again. Mara tucked the chart away and started toward the hill. Behind her, the harbor swallowed the first step, then the next, smoothing the stone as if it had never been there.\"}",
+  "output_sha256": "a36fd897040dee893815d59bd9c9e42ad8c38c3f7d61de201979ab6a9c7b6d25",
+  "finish_reason": "stop",
+  "refusal": null,
+  "returned_model": "gpt-6-luna",
+  "usage": {
+    "prompt_tokens": 46,
+    "completion_tokens": 384,
+    "total_tokens": 430,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 34,
+      "audio_tokens": 0,
+      "accepted_prediction_tokens": 0,
+      "rejected_prediction_tokens": 0
+    }
+  },
+  "format": {
+    "json_object": true,
+    "rule_unchanged": true,
+    "passage_is_string": true,
+    "passage_sha256": "9f1d7f2b9518cbb75ecb0b17caa8302e6959307f1b56152897083c4faca0a43f",
+    "passage_words": 259
+  },
+  "finished_at": "2026-09-22T19:55:30.448028+00:00",
+  "latency_seconds": 4.644,
+  "usage_cost_upper_estimate_usd": 0.00019659999999999998,
+  "stream_status": "active",
+  "budget": {
+    "usage_cost_upper_estimate_usd": 0.0667723,
+    "uncertain_cost_reserve_usd": 0.0,
+    "in_flight_reserve_usd": 0.5502,
+    "limit_usd": 18.83
+  }
+}

@@ -1,0 +1,22 @@
+{
+  "started_at": "2026-09-22T20:06:40.480489+00:00",
+  "model": "claude-opus-5-5",
+  "seed": "sunset_b",
+  "hop": 25,
+  "endpoint": "https://api.anthropic.com/v1/messages",
+  "body": {
+    "model": "claude-opus-5-5",
+    "messages": [
+      {
+        "role": "user",
+        "content": "```json\n{\"rule\": \"Return this JSON object with the rule field unchanged and a new passage of about 250 words in the text field.\", \"text\": \"Every Saturday morning, the Hollis Street bakery opened its doors at six, and every Saturday morning, a man named Tomas Reyes was already waiting on the bench outside. He wore the same gray cap and ordered the same thing: one rye loaf, sliced thin, and a single almond croissant he ate standing at the counter. The owner, a brisk woman named Greta Lindqvist, had his order bagged before he reached the register. Over eleven years, they had exchanged perhaps a hundred words, most of them about the weather. Then, one February, Greta noticed something odd. Tomas bought two croissants instead of one. The next week, he bought three. By March, he was carrying out a white box tied with string, and he had begun to hum. The morning staff invented theories. One baker was certain he had fallen in love. Another suspected a new job with generous coworkers. The dishwasher claimed, with no evidence at all, that Tomas was secretly training for a pastry-eating contest. Greta disliked gossip and said nothing, but she found herself watching him leave. At last, on a rainy April morning, curiosity won. She asked him, as casually as she could, who the croissants were for. Tomas smiled and pulled out his phone. On the screen was a photograph of three small children at a kitchen table, their faces dusted with powdered sugar. His daughter had moved back to town, he explained, and Saturday breakfast had become a family tradition. The following week, Greta slipped a fourth croissant into the box. Tomas noticed, and for the first time in eleven years, they talked about something other than the weather.\"}\n```"
+      }
+    ],
+    "max_tokens": 4096,
+    "output_config": {
+      "effort": "low"
+    }
+  },
+  "state_sha256": "ecc2705ee8974fbdd323c19aed63bd17c4a5c3dfa1c1137852384b4d460abe70",
+  "reserved_cost_usd": 0.090936
+}

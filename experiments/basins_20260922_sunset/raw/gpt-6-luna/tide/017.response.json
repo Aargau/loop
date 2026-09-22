@@ -1,0 +1,47 @@
+{
+  "model": "gpt-6-luna",
+  "seed": "tide",
+  "hop": 17,
+  "http_status": 200,
+  "response_body": "{\n  \"id\": \"chatcmpl-ER0w5kVPGoOOrufjnrKExvhUDhGtb\",\n  \"object\": \"chat.completion\",\n  \"created\": 1790107161,\n  \"model\": \"gpt-6-luna\",\n  \"choices\": [\n    {\n      \"index\": 0,\n      \"message\": {\n        \"role\": \"assistant\",\n        \"content\": \"Yes—that’s clear, natural, and concise. It gives the reader three straightforward options.\",\n        \"refusal\": null,\n        \"annotations\": []\n      },\n      \"finish_reason\": \"stop\"\n    }\n  ],\n  \"usage\": {\n    \"prompt_tokens\": 44,\n    \"completion_tokens\": 95,\n    \"total_tokens\": 139,\n    \"prompt_tokens_details\": {\n      \"cached_tokens\": 0,\n      \"cache_write_tokens\": 0,\n      \"audio_tokens\": 0\n    },\n    \"completion_tokens_details\": {\n      \"reasoning_tokens\": 68,\n      \"audio_tokens\": 0,\n      \"accepted_prediction_tokens\": 0,\n      \"rejected_prediction_tokens\": 0\n    }\n  },\n  \"service_tier\": \"default\",\n  \"system_fingerprint\": null\n}\n",
+  "response_headers": {
+    "Date": "Tue, 22 Sep 2026 19:59:22 GMT",
+    "openai-processing-ms": "1895",
+    "x-request-id": "req_ff7ff116325b451697ed8cd07ea4ddef"
+  },
+  "output": "Yes—that’s clear, natural, and concise. It gives the reader three straightforward options.",
+  "output_sha256": "8f70c2b907e915a718187d6cb9c6e9665bf012dee9c3cff188610760bf04a1fb",
+  "finish_reason": "stop",
+  "refusal": null,
+  "returned_model": "gpt-6-luna",
+  "usage": {
+    "prompt_tokens": 44,
+    "completion_tokens": 95,
+    "total_tokens": 139,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 68,
+      "audio_tokens": 0,
+      "accepted_prediction_tokens": 0,
+      "rejected_prediction_tokens": 0
+    }
+  },
+  "format": {
+    "json_object": false,
+    "rule_unchanged": false
+  },
+  "finished_at": "2026-09-22T19:59:18.870980+00:00",
+  "latency_seconds": 2.0266,
+  "usage_cost_upper_estimate_usd": 5.19e-05,
+  "stream_status": "active",
+  "budget": {
+    "usage_cost_upper_estimate_usd": 1.4505801,
+    "uncertain_cost_reserve_usd": 0.04533,
+    "in_flight_reserve_usd": 0.588444,
+    "limit_usd": 18.83
+  }
+}

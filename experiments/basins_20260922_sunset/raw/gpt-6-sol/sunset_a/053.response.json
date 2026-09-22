@@ -1,0 +1,50 @@
+{
+  "model": "gpt-6-sol",
+  "seed": "sunset_a",
+  "hop": 53,
+  "http_status": 200,
+  "response_body": "{\n  \"id\": \"chatcmpl-ER13jy0TN0LzWTCNeKFQWqPgfcoXx\",\n  \"object\": \"chat.completion\",\n  \"created\": 1790107635,\n  \"model\": \"gpt-6-sol\",\n  \"choices\": [\n    {\n      \"index\": 0,\n      \"message\": {\n        \"role\": \"assistant\",\n        \"content\": \"{\\n  \\\"rule\\\": \\\"Return this JSON object with the rule field unchanged and a new passage of about 250 words in the text field.\\\",\\n  \\\"text\\\": \\\"On Saturday, Nabil arrived at the bakery carrying an umbrella, though the sky was clear. “My mother never trusted September,” he said.\\\\n\\\\nSami brought the notebook. Imani’s grandfather brought a paper bag of honey cakes, and the four of them followed the map drawn by a customer who had signed her name only as Auntie Laila.\\\\n\\\\nThe school had become a community garden. Where the classrooms once stood, tomatoes climbed wooden frames. Sami searched for the gate until Nabil pointed to two blue posts half hidden by beans.\\\\n\\\\n“See?” Imani’s grandfather said. “Blue.”\\\\n\\\\n“Green underneath,” Nabil replied, scraping a flake of paint with his thumbnail.\\\\n\\\\nThey found the narrow path behind the garden. It led to a wall crowded with ivy and a patch of hard ground where nothing grew. Her grandfather stopped there.\\\\n\\\\n“We played marbles against that wall,” he said. “Your grandmother always won.”\\\\n\\\\nImani took the marble from her pocket. She had asked before removing it from the jar, but now she hesitated. Sami drew a circle in the dust with a stick.\\\\n\\\\n“Just one game,” Nabil said.\\\\n\\\\nThey each took a turn. The marble clicked against the wall, rolled past Sami’s circle, and came to rest beside her grandfather’s shoe. He picked it up, smiling at something none of them could see.\\\\n\\\\nBack at the bakery, Imani added a page to the notebook. She drew the two posts, the ivy, and four small figures on the path. Beneath them she wrote: We went to look. Then she left the pencil ready for whoever came next.\\\"\\n}\",\n        \"refusal\": null,\n        \"annotations\": []\n      },\n      \"finish_reason\": \"stop\"\n    }\n  ],\n  \"usage\": {\n    \"prompt_tokens\": 395,\n    \"completion_tokens\": 422,\n    \"total_tokens\": 817,\n    \"prompt_tokens_details\": {\n      \"cached_tokens\": 0,\n      \"cache_write_tokens\": 0,\n      \"audio_tokens\": 0\n    },\n    \"completion_tokens_details\": {\n      \"reasoning_tokens\": 28,\n      \"audio_tokens\": 0,\n      \"accepted_prediction_tokens\": 0,\n      \"rejected_prediction_tokens\": 0\n    }\n  },\n  \"service_tier\": \"default\",\n  \"system_fingerprint\": null\n}\n",
+  "response_headers": {
+    "Date": "Tue, 22 Sep 2026 20:07:22 GMT",
+    "openai-processing-ms": "6596",
+    "x-request-id": "req_bcbc1e37052e4c2f864acb480ac436cc"
+  },
+  "output": "{\n  \"rule\": \"Return this JSON object with the rule field unchanged and a new passage of about 250 words in the text field.\",\n  \"text\": \"On Saturday, Nabil arrived at the bakery carrying an umbrella, though the sky was clear. “My mother never trusted September,” he said.\\n\\nSami brought the notebook. Imani’s grandfather brought a paper bag of honey cakes, and the four of them followed the map drawn by a customer who had signed her name only as Auntie Laila.\\n\\nThe school had become a community garden. Where the classrooms once stood, tomatoes climbed wooden frames. Sami searched for the gate until Nabil pointed to two blue posts half hidden by beans.\\n\\n“See?” Imani’s grandfather said. “Blue.”\\n\\n“Green underneath,” Nabil replied, scraping a flake of paint with his thumbnail.\\n\\nThey found the narrow path behind the garden. It led to a wall crowded with ivy and a patch of hard ground where nothing grew. Her grandfather stopped there.\\n\\n“We played marbles against that wall,” he said. “Your grandmother always won.”\\n\\nImani took the marble from her pocket. She had asked before removing it from the jar, but now she hesitated. Sami drew a circle in the dust with a stick.\\n\\n“Just one game,” Nabil said.\\n\\nThey each took a turn. The marble clicked against the wall, rolled past Sami’s circle, and came to rest beside her grandfather’s shoe. He picked it up, smiling at something none of them could see.\\n\\nBack at the bakery, Imani added a page to the notebook. She drew the two posts, the ivy, and four small figures on the path. Beneath them she wrote: We went to look. Then she left the pencil ready for whoever came next.\"\n}",
+  "output_sha256": "48f325fe22a65824019b2757480fb5b777d927aa0809b00d6b5b9fed7bd73c38",
+  "finish_reason": "stop",
+  "refusal": null,
+  "returned_model": "gpt-6-sol",
+  "usage": {
+    "prompt_tokens": 395,
+    "completion_tokens": 422,
+    "total_tokens": 817,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 28,
+      "audio_tokens": 0,
+      "accepted_prediction_tokens": 0,
+      "rejected_prediction_tokens": 0
+    }
+  },
+  "format": {
+    "json_object": true,
+    "rule_unchanged": true,
+    "passage_is_string": true,
+    "passage_sha256": "d9f64f39a5de09d3886e02136dc8220d93cdd774c97d0a909997bb355322c4d7",
+    "passage_words": 259
+  },
+  "finished_at": "2026-09-22T20:07:18.093959+00:00",
+  "latency_seconds": 6.732,
+  "usage_cost_upper_estimate_usd": 0.00501,
+  "stream_status": "active",
+  "budget": {
+    "usage_cost_upper_estimate_usd": 4.4988674,
+    "uncertain_cost_reserve_usd": 0.04533,
+    "in_flight_reserve_usd": 0.5477433,
+    "limit_usd": 18.83
+  }
+}

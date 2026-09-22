@@ -1,0 +1,50 @@
+{
+  "model": "gpt-6-luna",
+  "seed": "sunset_a",
+  "hop": 48,
+  "http_status": 200,
+  "response_body": "{\n  \"id\": \"chatcmpl-ER12CKkXC32xhx7wGj9qTH5hTOCr6\",\n  \"object\": \"chat.completion\",\n  \"created\": 1790107540,\n  \"model\": \"gpt-6-luna\",\n  \"choices\": [\n    {\n      \"index\": 0,\n      \"message\": {\n        \"role\": \"assistant\",\n        \"content\": \"{\\\"rule\\\":\\\"Return this JSON object with the rule field unchanged and a new passage of about 250 words in the text field.\\\",\\\"text\\\":\\\"Every Thursday afternoon, Mateo visited the old train station with a paper bag of oranges. The station had been closed for years, but its clock still ticked above the platform, and sparrows nested beneath the roof. Mateo liked to sit on a wooden bench and imagine the trains that had once carried people to distant cities.\\\\n\\\\nOne rainy Thursday, he found a woman standing beneath the station sign, studying a folded map. She looked worried. Mateo offered her an orange, and she accepted with a grateful smile. Her name was Farah, and she had come to town to visit her brother. The bus had dropped her at the wrong stop, and her phone had run out of battery.\\\\n\\\\nMateo knew the way to the neighborhood she needed. He walked with Farah along the river, past a bakery and a row of yellow houses. As they went, she told him about her brother’s new baby and the tiny wool hat she had knitted for the child.\\\\n\\\\nAt the right street, Farah thanked him and pressed a small knitted star into his hand. “For being a good guide,” she said. Then she hurried toward her brother’s door.\\\\n\\\\nThe following week, Mateo returned to the station. Someone had left a basket of oranges on the bench, along with a note: “For anyone who needs a little help finding their way.” Mateo placed the knitted star beside it. He never learned who had brought the fruit, but he began leaving a new note each Thursday.\\\\n\\\\nThe station remained quiet, its clock keeping time for no trains at all. Yet people came and went, sharing directions, stories, and small gifts. In its own way, the old station was still carrying travelers somewhere important.\\\"}\",\n        \"refusal\": null,\n        \"annotations\": []\n      },\n      \"finish_reason\": \"stop\"\n    }\n  ],\n  \"usage\": {\n    \"prompt_tokens\": 377,\n    \"completion_tokens\": 451,\n    \"total_tokens\": 828,\n    \"prompt_tokens_details\": {\n      \"cached_tokens\": 0,\n      \"cache_write_tokens\": 0,\n      \"audio_tokens\": 0\n    },\n    \"completion_tokens_details\": {\n      \"reasoning_tokens\": 63,\n      \"audio_tokens\": 0,\n      \"accepted_prediction_tokens\": 0,\n      \"rejected_prediction_tokens\": 0\n    }\n  },\n  \"service_tier\": \"default\",\n  \"system_fingerprint\": null\n}\n",
+  "response_headers": {
+    "Date": "Tue, 22 Sep 2026 20:05:47 GMT",
+    "openai-processing-ms": "6730",
+    "x-request-id": "req_d2d7d42036304e78913e28e7855b33df"
+  },
+  "output": "{\"rule\":\"Return this JSON object with the rule field unchanged and a new passage of about 250 words in the text field.\",\"text\":\"Every Thursday afternoon, Mateo visited the old train station with a paper bag of oranges. The station had been closed for years, but its clock still ticked above the platform, and sparrows nested beneath the roof. Mateo liked to sit on a wooden bench and imagine the trains that had once carried people to distant cities.\\n\\nOne rainy Thursday, he found a woman standing beneath the station sign, studying a folded map. She looked worried. Mateo offered her an orange, and she accepted with a grateful smile. Her name was Farah, and she had come to town to visit her brother. The bus had dropped her at the wrong stop, and her phone had run out of battery.\\n\\nMateo knew the way to the neighborhood she needed. He walked with Farah along the river, past a bakery and a row of yellow houses. As they went, she told him about her brother’s new baby and the tiny wool hat she had knitted for the child.\\n\\nAt the right street, Farah thanked him and pressed a small knitted star into his hand. “For being a good guide,” she said. Then she hurried toward her brother’s door.\\n\\nThe following week, Mateo returned to the station. Someone had left a basket of oranges on the bench, along with a note: “For anyone who needs a little help finding their way.” Mateo placed the knitted star beside it. He never learned who had brought the fruit, but he began leaving a new note each Thursday.\\n\\nThe station remained quiet, its clock keeping time for no trains at all. Yet people came and went, sharing directions, stories, and small gifts. In its own way, the old station was still carrying travelers somewhere important.\"}",
+  "output_sha256": "c1d2e5348f3147e3e3d79abc878431d0961f24fdab529b66002b0e7d00508d3c",
+  "finish_reason": "stop",
+  "refusal": null,
+  "returned_model": "gpt-6-luna",
+  "usage": {
+    "prompt_tokens": 377,
+    "completion_tokens": 451,
+    "total_tokens": 828,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 63,
+      "audio_tokens": 0,
+      "accepted_prediction_tokens": 0,
+      "rejected_prediction_tokens": 0
+    }
+  },
+  "format": {
+    "json_object": true,
+    "rule_unchanged": true,
+    "passage_is_string": true,
+    "passage_sha256": "e0674329bc0b2f1b3810ea764e5121f35c2dfd73dabdb5272721aaf6c1350636",
+    "passage_words": 288
+  },
+  "finished_at": "2026-09-22T20:05:43.099677+00:00",
+  "latency_seconds": 6.8312,
+  "usage_cost_upper_estimate_usd": 0.0002632,
+  "stream_status": "active",
+  "budget": {
+    "usage_cost_upper_estimate_usd": 3.8926198,
+    "uncertain_cost_reserve_usd": 0.04533,
+    "in_flight_reserve_usd": 0.587624,
+    "limit_usd": 18.83
+  }
+}

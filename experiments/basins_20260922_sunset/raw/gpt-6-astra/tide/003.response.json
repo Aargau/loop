@@ -1,0 +1,50 @@
+{
+  "model": "gpt-6-astra",
+  "seed": "tide",
+  "hop": 3,
+  "http_status": 200,
+  "response_body": "{\n  \"id\": \"chatcmpl-ER0u6p70fD8jYFsOQsllMcWhh3ehm\",\n  \"object\": \"chat.completion\",\n  \"created\": 1790107038,\n  \"model\": \"gpt-6-astra\",\n  \"choices\": [\n    {\n      \"index\": 0,\n      \"message\": {\n        \"role\": \"assistant\",\n        \"content\": \"{\\n  \\\"rule\\\": \\\"Return this JSON object with the rule field unchanged and a new passage of about 250 words in the text field.\\\",\\n  \\\"text\\\": \\\"The sea began returning my father's tools three days after his funeral.\\\\n\\\\nFirst came the hammer, laid neatly above the tideline. Then his folding ruler. On Friday, I found the red-handled screwdriver he'd accused me of losing when I was twelve.\\\\n\\\\nI carried them home and rinsed the salt away.\\\\n\\\\nMy mother watched from the kitchen window.\\\\n\\\\n“Don't thank it,” she said.\\\\n\\\\nShe had lived beside the water longer than I had.\\\\n\\\\nBy Monday, the beach was littered with objects: fishing hooks, spectacles, a wedding ring neither of us recognized. Everything smelled faintly of his workshop.\\\\n\\\\nThen came the door.\\\\n\\\\nIt stood upright in the sand, painted the same green as our old house, with a brass number seven screwed crookedly beneath the knocker.\\\\n\\\\nOur old house had burned down twenty years earlier.\\\\n\\\\nBehind the door, someone coughed.\\\\n\\\\nI knew that cough. The apologetic little rattle before he asked for help with something he could no longer lift alone.\\\\n\\\\nMy hand found the knob.\\\\n\\\\nMy mother caught my sleeve.\\\\n\\\\n“Your father never knocked at his own door.”\\\\n\\\\nThe coughing stopped.\\\\n\\\\nWe stood listening to the waves.\\\\n\\\\n“What does it want?” I whispered.\\\\n\\\\nFrom the other side came the scrape of a chair being pulled close.\\\\n\\\\nMy mother took the screwdriver from my pocket. She knelt beside the lowest hinge and began to work.\\\\n\\\\n“Hold it steady.”\\\\n\\\\nInside, my father's voice said her name.\\\\n\\\\nShe paused, her forehead pressed against the wood. Then she turned the screwdriver again.\\\\n\\\\nI held the door while she worked. When the last hinge came loose, we laid it flat in the sand and walked home.\\\"\\n}\",\n        \"refusal\": null,\n        \"annotations\": []\n      },\n      \"finish_reason\": \"stop\"\n    }\n  ],\n  \"usage\": {\n    \"prompt_tokens\": 415,\n    \"completion_tokens\": 417,\n    \"total_tokens\": 832,\n    \"prompt_tokens_details\": {\n      \"cached_tokens\": 0,\n      \"cache_write_tokens\": 0,\n      \"audio_tokens\": 0\n    },\n    \"completion_tokens_details\": {\n      \"reasoning_tokens\": 0,\n      \"audio_tokens\": 0,\n      \"accepted_prediction_tokens\": 0,\n      \"rejected_prediction_tokens\": 0\n    }\n  },\n  \"service_tier\": \"default\",\n  \"system_fingerprint\": null\n}\n",
+  "response_headers": {
+    "Date": "Tue, 22 Sep 2026 19:57:34 GMT",
+    "openai-processing-ms": "15578",
+    "x-request-id": "req_fc722c10e06149929d17cf6d6b9acddc"
+  },
+  "output": "{\n  \"rule\": \"Return this JSON object with the rule field unchanged and a new passage of about 250 words in the text field.\",\n  \"text\": \"The sea began returning my father's tools three days after his funeral.\\n\\nFirst came the hammer, laid neatly above the tideline. Then his folding ruler. On Friday, I found the red-handled screwdriver he'd accused me of losing when I was twelve.\\n\\nI carried them home and rinsed the salt away.\\n\\nMy mother watched from the kitchen window.\\n\\n“Don't thank it,” she said.\\n\\nShe had lived beside the water longer than I had.\\n\\nBy Monday, the beach was littered with objects: fishing hooks, spectacles, a wedding ring neither of us recognized. Everything smelled faintly of his workshop.\\n\\nThen came the door.\\n\\nIt stood upright in the sand, painted the same green as our old house, with a brass number seven screwed crookedly beneath the knocker.\\n\\nOur old house had burned down twenty years earlier.\\n\\nBehind the door, someone coughed.\\n\\nI knew that cough. The apologetic little rattle before he asked for help with something he could no longer lift alone.\\n\\nMy hand found the knob.\\n\\nMy mother caught my sleeve.\\n\\n“Your father never knocked at his own door.”\\n\\nThe coughing stopped.\\n\\nWe stood listening to the waves.\\n\\n“What does it want?” I whispered.\\n\\nFrom the other side came the scrape of a chair being pulled close.\\n\\nMy mother took the screwdriver from my pocket. She knelt beside the lowest hinge and began to work.\\n\\n“Hold it steady.”\\n\\nInside, my father's voice said her name.\\n\\nShe paused, her forehead pressed against the wood. Then she turned the screwdriver again.\\n\\nI held the door while she worked. When the last hinge came loose, we laid it flat in the sand and walked home.\"\n}",
+  "output_sha256": "52e294b4f0375722ce619dd7ceaf3d352a4b1b011495660894111752362d0f62",
+  "finish_reason": "stop",
+  "refusal": null,
+  "returned_model": "gpt-6-astra",
+  "usage": {
+    "prompt_tokens": 415,
+    "completion_tokens": 417,
+    "total_tokens": 832,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "audio_tokens": 0,
+      "accepted_prediction_tokens": 0,
+      "rejected_prediction_tokens": 0
+    }
+  },
+  "format": {
+    "json_object": true,
+    "rule_unchanged": true,
+    "passage_is_string": true,
+    "passage_sha256": "f91488c018f5782bfce9cee095e08823a7c72f63c990bf794ff5cabb69fc9b28",
+    "passage_words": 270
+  },
+  "finished_at": "2026-09-22T19:57:30.159559+00:00",
+  "latency_seconds": 15.6941,
+  "usage_cost_upper_estimate_usd": 0.025,
+  "stream_status": "active",
+  "budget": {
+    "usage_cost_upper_estimate_usd": 0.7959524,
+    "uncertain_cost_reserve_usd": 0.0,
+    "in_flight_reserve_usd": 0.3628665,
+    "limit_usd": 18.83
+  }
+}

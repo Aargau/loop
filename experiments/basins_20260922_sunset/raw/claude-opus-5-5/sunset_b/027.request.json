@@ -1,0 +1,22 @@
+{
+  "started_at": "2026-09-22T20:07:30.575567+00:00",
+  "model": "claude-opus-5-5",
+  "seed": "sunset_b",
+  "hop": 27,
+  "endpoint": "https://api.anthropic.com/v1/messages",
+  "body": {
+    "model": "claude-opus-5-5",
+    "messages": [
+      {
+        "role": "user",
+        "content": "```json\n{\"rule\": \"Return this JSON object with the rule field unchanged and a new passage of about 250 words in the text field.\", \"text\": \"Every Saturday morning, Tomas Reyes opened the doors of his tiny bookshop on Linden Street at exactly eight o'clock, even though customers rarely arrived before ten. The shop smelled of cedar and old paper, and its shelves leaned slightly, as if tired from holding so many stories. Tomas's neighbors wondered how he stayed in business. The coffee shop owner next door guessed he had a secret inheritance. The mail carrier suspected he sold rare first editions online. A curious boy named Felix, who passed the shop on his way to soccer practice, decided Tomas must be a retired spy hiding in plain sight. The truth was simpler. Tomas kept a single chair by the front window, and every Saturday, an elderly woman named Rosa came to sit in it. She had lost most of her eyesight years ago, so Tomas read to her aloud, one chapter at a time, while the street slowly woke up outside. They had finished mysteries, histories, poetry collections, and three enormous Russian novels. One Saturday, Rosa did not come. Tomas waited until noon, then walked to her apartment and learned she had fallen and was recovering in the hospital. That afternoon, he closed the shop early for the first time in twenty years. He brought a book to her bedside and picked up exactly where they had left off. Word spread through the neighborhood. By the following month, the chair by the window had company: a row of folding seats, filled every Saturday with listeners of all ages, including Felix.\"}\n```"
+      }
+    ],
+    "max_tokens": 4096,
+    "output_config": {
+      "effort": "low"
+    }
+  },
+  "state_sha256": "8ea528da9a264cdc693a0610ec11b77a788395bb1862779ba2afa9968fa229d1",
+  "reserved_cost_usd": 0.090428
+}

@@ -1,0 +1,22 @@
+{
+  "started_at": "2026-09-22T19:59:05.840367+00:00",
+  "model": "claude-opus-5-5",
+  "seed": "sunset_b",
+  "hop": 9,
+  "endpoint": "https://api.anthropic.com/v1/messages",
+  "body": {
+    "model": "claude-opus-5-5",
+    "messages": [
+      {
+        "role": "user",
+        "content": "```json\n{\"rule\": \"Return this JSON object with the rule field unchanged and a new passage of about 250 words in the text field.\", \"text\": \"Every spring, when the orchard behind his grandmother's farmhouse burst into blossom, Tomas woke before dawn to help her tend the beehives. There were eleven hives, painted in faded shades of blue, yellow, and green, arranged in a crooked line along the stone wall at the edge of the field. His grandmother moved among them slowly and calmly, her veil tied loosely beneath her chin, humming a tune she said the bees liked better than any other. Tomas carried the smoker, puffing gentle clouds of cool grey smoke as she lifted each lid and drew out the wooden frames, heavy and golden with comb. The air hummed with a sound so deep and steady that it seemed to come from the earth itself. While they worked, she told him stories: of the summer the swarm settled in the church bell tower, of the year the honey tasted faintly of lavender from a neighbor's garden, and of Tomas's great-grandfather, who once walked twenty miles with a hive strapped to his back to start a new colony. Tomas listened and watched, watched and listened, learning to read the patterns of the bees as they crawled over his gloves without fear. When the morning sun climbed above the apple trees, his grandmother cut a small square of comb and handed it to him. He bit into it, and the honey spilled warm and bright across his tongue, tasting of clover and sunlight. Somewhere in that sweetness, he thought, was every flower in the valley, gathered patiently, one tiny journey at a time.\"}\n```"
+      }
+    ],
+    "max_tokens": 4096,
+    "output_config": {
+      "effort": "low"
+    }
+  },
+  "state_sha256": "db6f184af235c5a58f031d8d242f91a7fce1370d12def41790324fc91f0242ad",
+  "reserved_cost_usd": 0.090392
+}

@@ -1,0 +1,50 @@
+{
+  "model": "gpt-6-luna",
+  "seed": "sunset_b",
+  "hop": 13,
+  "http_status": 200,
+  "response_body": "{\n  \"id\": \"chatcmpl-ER0v1PguDOXTTviLVvPS2Krp6zTdQ\",\n  \"object\": \"chat.completion\",\n  \"created\": 1790107095,\n  \"model\": \"gpt-6-luna\",\n  \"choices\": [\n    {\n      \"index\": 0,\n      \"message\": {\n        \"role\": \"assistant\",\n        \"content\": \"{\\\"rule\\\":\\\"Return this JSON object with the rule field unchanged and a new passage of about 250 words in the text field.\\\",\\\"text\\\":\\\"Every Thursday, Mara unlocked the little station at the edge of town, though no train had stopped there in years. She swept the platform, polished the brass clock, and left a jar of wildflowers beside the timetable. Her grandfather had been the stationmaster, and he used to say that waiting was a kind of welcome.\\\\n\\\\nOne rainy afternoon, a boy appeared beneath the station roof, clutching a damp envelope. He asked whether the evening train still came. Mara explained that the tracks had been closed for a decade, but the boy looked so disappointed that she offered him a seat inside.\\\\n\\\\nThe letter was addressed to a woman named June Bell, who had moved away before the boy was born. It contained a photograph of two young sisters beside the station clock. His grandmother, the boy explained, had asked him to deliver it to her old friend. June lived on the far side of the hills, and the bus had stopped running in the storm.\\\\n\\\\nMara studied the photograph. She recognized the younger sister: her own mother, who had never spoken about a friend named June. Together, they called the village library, where a volunteer found June’s number in an old directory.\\\\n\\\\nAn hour later, June arrived in a neighbor’s car. The two women stared at the photograph, then laughed and cried as if the years between them had folded shut.\\\\n\\\\nAfterward, Mara reset the station clock. No train had come, but someone had reached the right place all the same.\\\"}\",\n        \"refusal\": null,\n        \"annotations\": []\n      },\n      \"finish_reason\": \"stop\"\n    }\n  ],\n  \"usage\": {\n    \"prompt_tokens\": 358,\n    \"completion_tokens\": 448,\n    \"total_tokens\": 806,\n    \"prompt_tokens_details\": {\n      \"cached_tokens\": 0,\n      \"cache_write_tokens\": 0,\n      \"audio_tokens\": 0\n    },\n    \"completion_tokens_details\": {\n      \"reasoning_tokens\": 105,\n      \"audio_tokens\": 0,\n      \"accepted_prediction_tokens\": 0,\n      \"rejected_prediction_tokens\": 0\n    }\n  },\n  \"service_tier\": \"default\",\n  \"system_fingerprint\": null\n}\n",
+  "response_headers": {
+    "Date": "Tue, 22 Sep 2026 19:58:20 GMT",
+    "openai-processing-ms": "5093",
+    "x-request-id": "req_7318299b6039417882497e6a1cd885ba"
+  },
+  "output": "{\"rule\":\"Return this JSON object with the rule field unchanged and a new passage of about 250 words in the text field.\",\"text\":\"Every Thursday, Mara unlocked the little station at the edge of town, though no train had stopped there in years. She swept the platform, polished the brass clock, and left a jar of wildflowers beside the timetable. Her grandfather had been the stationmaster, and he used to say that waiting was a kind of welcome.\\n\\nOne rainy afternoon, a boy appeared beneath the station roof, clutching a damp envelope. He asked whether the evening train still came. Mara explained that the tracks had been closed for a decade, but the boy looked so disappointed that she offered him a seat inside.\\n\\nThe letter was addressed to a woman named June Bell, who had moved away before the boy was born. It contained a photograph of two young sisters beside the station clock. His grandmother, the boy explained, had asked him to deliver it to her old friend. June lived on the far side of the hills, and the bus had stopped running in the storm.\\n\\nMara studied the photograph. She recognized the younger sister: her own mother, who had never spoken about a friend named June. Together, they called the village library, where a volunteer found June’s number in an old directory.\\n\\nAn hour later, June arrived in a neighbor’s car. The two women stared at the photograph, then laughed and cried as if the years between them had folded shut.\\n\\nAfterward, Mara reset the station clock. No train had come, but someone had reached the right place all the same.\"}",
+  "output_sha256": "d8f40ac428ddd0a81cd954e7df15863dd6135b00a107d261a0a96bb3dd9a1f2d",
+  "finish_reason": "stop",
+  "refusal": null,
+  "returned_model": "gpt-6-luna",
+  "usage": {
+    "prompt_tokens": 358,
+    "completion_tokens": 448,
+    "total_tokens": 806,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 105,
+      "audio_tokens": 0,
+      "accepted_prediction_tokens": 0,
+      "rejected_prediction_tokens": 0
+    }
+  },
+  "format": {
+    "json_object": true,
+    "rule_unchanged": true,
+    "passage_is_string": true,
+    "passage_sha256": "d62dc7ed39aaf7190506cb072f0eb869d123dc62223193316ef550341248ab55",
+    "passage_words": 251
+  },
+  "finished_at": "2026-09-22T19:58:16.919455+00:00",
+  "latency_seconds": 5.2025,
+  "usage_cost_upper_estimate_usd": 0.0002598,
+  "stream_status": "active",
+  "budget": {
+    "usage_cost_upper_estimate_usd": 1.0507023,
+    "uncertain_cost_reserve_usd": 0.04533,
+    "in_flight_reserve_usd": 0.587638,
+    "limit_usd": 18.83
+  }
+}

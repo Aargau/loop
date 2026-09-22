@@ -1,0 +1,50 @@
+{
+  "model": "gpt-6-luna",
+  "seed": "sunset_b",
+  "hop": 29,
+  "http_status": 200,
+  "response_body": "{\n  \"id\": \"chatcmpl-ER0yOBS5cGSwwy4WQbfbmlzklSgnK\",\n  \"object\": \"chat.completion\",\n  \"created\": 1790107304,\n  \"model\": \"gpt-6-luna\",\n  \"choices\": [\n    {\n      \"index\": 0,\n      \"message\": {\n        \"role\": \"assistant\",\n        \"content\": \"{\\n  \\\"rule\\\": \\\"Return this JSON object with the rule field unchanged and a new passage of about 250 words in the text field.\\\",\\n  \\\"text\\\": \\\"When the old train station reopened as a library, June volunteered to sort the books left behind by its previous tenants. Most were water-damaged timetables and faded travel guides, but one afternoon she found a small red notebook tucked beneath a loose floorboard.\\\\n\\\\nIts pages were filled with names, dates, and brief descriptions of people who had passed through the station. “A woman in a yellow hat, carrying two pears.” “A sailor who whistled the same tune every time he missed his train.” The final entry, written in a shaky hand, read: “June, age seven, waiting for her father. She gave me half her biscuit.”\\\\n\\\\nJune remembered the day. Her father had been delayed, and she had sat on a bench with an old man who claimed he was waiting for a train to a place that no longer appeared on the maps. She had forgotten him almost entirely.\\\\n\\\\nThe next morning, she asked the station’s retired ticket clerk about the notebook. He studied the handwriting and smiled. “That was Mr. Vale,” he said. “He kept track of people because he was afraid the station would forget them.”\\\\n\\\\nJune placed the notebook in a glass case near the entrance, with a fresh page beside it. Visitors began adding their own small observations: a child asleep on a suitcase, a couple sharing an umbrella, a dog refusing to board.\\\\n\\\\nSoon, the library held more than books. It held traces of arrivals and departures, of ordinary moments someone had thought worth saving. June added one final note: “An old station learning how to welcome people again.”\\\"\\n}\",\n        \"refusal\": null,\n        \"annotations\": []\n      },\n      \"finish_reason\": \"stop\"\n    }\n  ],\n  \"usage\": {\n    \"prompt_tokens\": 370,\n    \"completion_tokens\": 421,\n    \"total_tokens\": 791,\n    \"prompt_tokens_details\": {\n      \"cached_tokens\": 0,\n      \"cache_write_tokens\": 0,\n      \"audio_tokens\": 0\n    },\n    \"completion_tokens_details\": {\n      \"reasoning_tokens\": 46,\n      \"audio_tokens\": 0,\n      \"accepted_prediction_tokens\": 0,\n      \"rejected_prediction_tokens\": 0\n    }\n  },\n  \"service_tier\": \"default\",\n  \"system_fingerprint\": null\n}\n",
+  "response_headers": {
+    "Date": "Tue, 22 Sep 2026 20:01:50 GMT",
+    "openai-processing-ms": "5531",
+    "x-request-id": "req_526267612c534158be719909a81616c0"
+  },
+  "output": "{\n  \"rule\": \"Return this JSON object with the rule field unchanged and a new passage of about 250 words in the text field.\",\n  \"text\": \"When the old train station reopened as a library, June volunteered to sort the books left behind by its previous tenants. Most were water-damaged timetables and faded travel guides, but one afternoon she found a small red notebook tucked beneath a loose floorboard.\\n\\nIts pages were filled with names, dates, and brief descriptions of people who had passed through the station. “A woman in a yellow hat, carrying two pears.” “A sailor who whistled the same tune every time he missed his train.” The final entry, written in a shaky hand, read: “June, age seven, waiting for her father. She gave me half her biscuit.”\\n\\nJune remembered the day. Her father had been delayed, and she had sat on a bench with an old man who claimed he was waiting for a train to a place that no longer appeared on the maps. She had forgotten him almost entirely.\\n\\nThe next morning, she asked the station’s retired ticket clerk about the notebook. He studied the handwriting and smiled. “That was Mr. Vale,” he said. “He kept track of people because he was afraid the station would forget them.”\\n\\nJune placed the notebook in a glass case near the entrance, with a fresh page beside it. Visitors began adding their own small observations: a child asleep on a suitcase, a couple sharing an umbrella, a dog refusing to board.\\n\\nSoon, the library held more than books. It held traces of arrivals and departures, of ordinary moments someone had thought worth saving. June added one final note: “An old station learning how to welcome people again.”\"\n}",
+  "output_sha256": "e2828b1fabf593aef79f7f17257c46bb932227f0802271ad200d28b4c90405e4",
+  "finish_reason": "stop",
+  "refusal": null,
+  "returned_model": "gpt-6-luna",
+  "usage": {
+    "prompt_tokens": 370,
+    "completion_tokens": 421,
+    "total_tokens": 791,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 46,
+      "audio_tokens": 0,
+      "accepted_prediction_tokens": 0,
+      "rejected_prediction_tokens": 0
+    }
+  },
+  "format": {
+    "json_object": true,
+    "rule_unchanged": true,
+    "passage_is_string": true,
+    "passage_sha256": "384b5824b8c73e34c1424d9a05dd27612bcf94ee033106e45b9a564e63b86af5",
+    "passage_words": 264
+  },
+  "finished_at": "2026-09-22T20:01:46.145769+00:00",
+  "latency_seconds": 5.771,
+  "usage_cost_upper_estimate_usd": 0.0002475,
+  "stream_status": "active",
+  "budget": {
+    "usage_cost_upper_estimate_usd": 2.382231,
+    "uncertain_cost_reserve_usd": 0.04533,
+    "in_flight_reserve_usd": 0.587422,
+    "limit_usd": 18.83
+  }
+}

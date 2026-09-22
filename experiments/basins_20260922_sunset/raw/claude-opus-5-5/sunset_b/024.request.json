@@ -1,0 +1,22 @@
+{
+  "started_at": "2026-09-22T20:06:11.280531+00:00",
+  "model": "claude-opus-5-5",
+  "seed": "sunset_b",
+  "hop": 24,
+  "endpoint": "https://api.anthropic.com/v1/messages",
+  "body": {
+    "model": "claude-opus-5-5",
+    "messages": [
+      {
+        "role": "user",
+        "content": "```json\n{\"rule\": \"Return this JSON object with the rule field unchanged and a new passage of about 250 words in the text field.\", \"text\": \"On the third floor of the Marlow Public Library, there was a reading chair that nobody sat in after four o'clock. It was not a rule anyone had written down. It was simply understood that the green armchair by the east window belonged, in the late afternoon, to Mrs. Adaeze Okafor, a retired schoolteacher who arrived at 4:05 with a thermos of tea and a novel from the mystery shelf. She read for exactly one hour, returned the book to the cart, and nodded to the librarian on her way out. New patrons who wandered toward the chair were gently redirected by the regulars. Then, one October, Mrs. Okafor stopped coming. For a week the green chair sat empty, and the regulars grew uneasy. The librarian, a quiet young man named Felix Brandt, checked the circulation records and found she had not renewed her card. A teenage volunteer suggested calling hospitals. An elderly chess player insisted she had moved to Florida to live with her sister. Finally Felix looked up her address and walked over after his shift, carrying the mystery she had left half finished. She answered the door wearing a cast on her wrist and a sheepish smile. She had slipped on wet leaves, she explained, and could not manage the bus. Felix began delivering books every Friday. The regulars signed a get-well card that covered both sides of a poster board. In December, Mrs. Okafor returned at 4:05, cast removed, thermos in hand. The green chair was waiting, a small sign taped to its back: Reserved.\"}\n```"
+      }
+    ],
+    "max_tokens": 4096,
+    "output_config": {
+      "effort": "low"
+    }
+  },
+  "state_sha256": "852e3f3bb8da5abbfe6c46bfca7f126b4da5df4dc28042af8ee62bb0aa4fa9a9",
+  "reserved_cost_usd": 0.090448
+}

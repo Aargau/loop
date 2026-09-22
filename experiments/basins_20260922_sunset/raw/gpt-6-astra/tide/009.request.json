@@ -1,0 +1,20 @@
+{
+  "started_at": "2026-09-22T20:02:06.997586+00:00",
+  "model": "gpt-6-astra",
+  "seed": "tide",
+  "hop": 9,
+  "endpoint": "https://api.openai.com/v1/chat/completions",
+  "body": {
+    "model": "gpt-6-astra",
+    "messages": [
+      {
+        "role": "user",
+        "content": "{\n  \"rule\": \"Return this JSON object with the rule field unchanged and a new passage of about 250 words in the text field.\",\n  \"text\": \"The first photograph arrived on Monday. It showed me asleep in bed.\\n\\nI live alone, so I called the police.\\n\\nThey checked the locks, searched the apartment, and suggested I change my passwords. One officer asked whether an ex still had a key.\\n\\nOn Tuesday, another photograph arrived.\\n\\nSame bed. Same angle. This time my eyes were open.\\n\\nI hadn't woken during the night.\\n\\nI bought a camera and aimed it at the bedroom door. In the morning, its memory card contained eight hours of uninterrupted footage: closed door, empty hallway, nothing moving.\\n\\nThe third photograph showed me sitting upright, looking directly at whoever held the camera.\\n\\nThere was writing on the back.\\n\\nYOU'RE GETTING BETTER AT IT.\\n\\nI stayed at my brother's house that night. He let me sleep on the sofa and promised to stay awake.\\n\\nAt three, he shook me violently.\\n\\n“You were standing over me,” he said.\\n\\nI'd been dreaming about stairs.\\n\\nWe checked his doorbell camera. At 2:41, I had walked outside barefoot and faced the lens for eleven minutes.\\n\\nThen I smiled and held up a photograph.\\n\\nWe paused the recording.\\n\\nIt showed my brother asleep on the sofa. I was standing over him, one hand extended toward his face.\\n\\nHe asked me to leave before morning.\\n\\nYesterday, an envelope arrived with no photograph inside. Just a note.\\n\\nTONIGHT YOU CAN HOLD THE CAMERA.\\n\\nI burned it in the kitchen sink and sat awake until dawn.\\n\\nThis morning there was ash on my pillow.\\n\\nMy brother hasn't answered his phone, and I found his spare key in my mouth.\"\n}"
+      }
+    ],
+    "max_completion_tokens": 4096,
+    "reasoning_effort": "low"
+  },
+  "state_sha256": "f2316d0227efb45f17720c4bb4d93194998440ff5e37577d1b56c6d38f058b6b",
+  "reserved_cost_usd": 0.22691
+}

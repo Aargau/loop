@@ -1,0 +1,50 @@
+{
+  "model": "gpt-6-sol",
+  "seed": "tide",
+  "hop": 24,
+  "http_status": 200,
+  "response_body": "{\n  \"id\": \"chatcmpl-ER0xvuqkyMklWVEUVtZ1qE3ipByjq\",\n  \"object\": \"chat.completion\",\n  \"created\": 1790107275,\n  \"model\": \"gpt-6-sol\",\n  \"choices\": [\n    {\n      \"index\": 0,\n      \"message\": {\n        \"role\": \"assistant\",\n        \"content\": \"{\\n  \\\"rule\\\": \\\"Return this JSON object with the rule field unchanged and a new passage of about 250 words in the text field.\\\",\\n  \\\"text\\\": \\\"For a moment, no one moved. Then the key turned by itself.\\\\n\\\\nMara’s father caught it before it fell. The iron catch slid back, and the stone door opened a finger’s width. From the gap came the smell of salt and lamp oil.\\\\n\\\\n“Don’t open it,” the keeper said through the pipe.\\\\n\\\\nThe harbor master pulled his hand from the door. “You told us to open the gate.”\\\\n\\\\n“Not that one.”\\\\n\\\\nMara raised the lantern to the gap. Beyond it, water pressed against a round pane of glass. A pale shape drifted past, then returned. It was a hand, flattened against the pane from the other side.\\\\n\\\\nHer father pushed the door shut. The catch snapped home.\\\\n\\\\n“Where is the gate?” Mara asked.\\\\n\\\\n“Under your feet. The lighthouse wheel lifted its weight. Now the QUAY wheel can move.”\\\\n\\\\nThe harbor master glanced at the words on the plate. “It says to keep it open.”\\\\n\\\\n“It was open,” the keeper replied. “Until someone painted over the instructions and shut it.”\\\\n\\\\nMara looked down. Black flakes floated around their boots. She put both hands on the QUAY wheel. It resisted, then shifted. A deep rumble traveled beneath the floor toward the harbor.\\\\n\\\\nThe needle on the gauge fell out of the red band. Above them, a ship’s bell rang three times.\\\\n\\\\n“Keep turning,” said the keeper.\\\\n\\\\nMara did. Water rushed somewhere below, and the pressure against the stone door faded. When she finally let go, the harbor master leaned into the pipe.\\\\n\\\\n“Are you safe?” he asked.\\\\n\\\\nNo answer came. Then, faintly, they heard footsteps climbing the stairs above them.\\\"\\n}\",\n        \"refusal\": null,\n        \"annotations\": []\n      },\n      \"finish_reason\": \"stop\"\n    }\n  ],\n  \"usage\": {\n    \"prompt_tokens\": 423,\n    \"completion_tokens\": 442,\n    \"total_tokens\": 865,\n    \"prompt_tokens_details\": {\n      \"cached_tokens\": 0,\n      \"cache_write_tokens\": 0,\n      \"audio_tokens\": 0\n    },\n    \"completion_tokens_details\": {\n      \"reasoning_tokens\": 18,\n      \"audio_tokens\": 0,\n      \"accepted_prediction_tokens\": 0,\n      \"rejected_prediction_tokens\": 0\n    }\n  },\n  \"service_tier\": \"default\",\n  \"system_fingerprint\": null\n}\n",
+  "response_headers": {
+    "Date": "Tue, 22 Sep 2026 20:01:22 GMT",
+    "openai-processing-ms": "6447",
+    "x-request-id": "req_d7a89d9378504f588928c5f7c97413b2"
+  },
+  "output": "{\n  \"rule\": \"Return this JSON object with the rule field unchanged and a new passage of about 250 words in the text field.\",\n  \"text\": \"For a moment, no one moved. Then the key turned by itself.\\n\\nMara’s father caught it before it fell. The iron catch slid back, and the stone door opened a finger’s width. From the gap came the smell of salt and lamp oil.\\n\\n“Don’t open it,” the keeper said through the pipe.\\n\\nThe harbor master pulled his hand from the door. “You told us to open the gate.”\\n\\n“Not that one.”\\n\\nMara raised the lantern to the gap. Beyond it, water pressed against a round pane of glass. A pale shape drifted past, then returned. It was a hand, flattened against the pane from the other side.\\n\\nHer father pushed the door shut. The catch snapped home.\\n\\n“Where is the gate?” Mara asked.\\n\\n“Under your feet. The lighthouse wheel lifted its weight. Now the QUAY wheel can move.”\\n\\nThe harbor master glanced at the words on the plate. “It says to keep it open.”\\n\\n“It was open,” the keeper replied. “Until someone painted over the instructions and shut it.”\\n\\nMara looked down. Black flakes floated around their boots. She put both hands on the QUAY wheel. It resisted, then shifted. A deep rumble traveled beneath the floor toward the harbor.\\n\\nThe needle on the gauge fell out of the red band. Above them, a ship’s bell rang three times.\\n\\n“Keep turning,” said the keeper.\\n\\nMara did. Water rushed somewhere below, and the pressure against the stone door faded. When she finally let go, the harbor master leaned into the pipe.\\n\\n“Are you safe?” he asked.\\n\\nNo answer came. Then, faintly, they heard footsteps climbing the stairs above them.\"\n}",
+  "output_sha256": "51fa0e23e8545a2fec9e0ce1d0e6c9faa2c42a9c44ba887dbe736048f6bdb0db",
+  "finish_reason": "stop",
+  "refusal": null,
+  "returned_model": "gpt-6-sol",
+  "usage": {
+    "prompt_tokens": 423,
+    "completion_tokens": 442,
+    "total_tokens": 865,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 18,
+      "audio_tokens": 0,
+      "accepted_prediction_tokens": 0,
+      "rejected_prediction_tokens": 0
+    }
+  },
+  "format": {
+    "json_object": true,
+    "rule_unchanged": true,
+    "passage_is_string": true,
+    "passage_sha256": "c688a2df2c06c84df1486591c13750217d4348b6e1b73defaa6e11abe30e6487",
+    "passage_words": 268
+  },
+  "finished_at": "2026-09-22T20:01:18.218880+00:00",
+  "latency_seconds": 6.6588,
+  "usage_cost_upper_estimate_usd": 0.005266,
+  "stream_status": "active",
+  "budget": {
+    "usage_cost_upper_estimate_usd": 2.207776,
+    "uncertain_cost_reserve_usd": 0.04533,
+    "in_flight_reserve_usd": 0.5463302,
+    "limit_usd": 18.83
+  }
+}

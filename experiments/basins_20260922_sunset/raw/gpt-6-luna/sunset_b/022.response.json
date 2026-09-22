@@ -1,0 +1,50 @@
+{
+  "model": "gpt-6-luna",
+  "seed": "sunset_b",
+  "hop": 22,
+  "http_status": 200,
+  "response_body": "{\n  \"id\": \"chatcmpl-ER0wyQlIhZ8nEKko6c2F8TNviDwHQ\",\n  \"object\": \"chat.completion\",\n  \"created\": 1790107216,\n  \"model\": \"gpt-6-luna\",\n  \"choices\": [\n    {\n      \"index\": 0,\n      \"message\": {\n        \"role\": \"assistant\",\n        \"content\": \"{\\n  \\\"rule\\\": \\\"Return this JSON object with the rule field unchanged and a new passage of about 250 words in the text field.\\\",\\n  \\\"text\\\": \\\"At the end of Maple Street, behind a row of leaning fences, stood a greenhouse no one had entered for years. Its glass panes were clouded with dust, and vines curled around the door handles. Nora passed it each morning on her way to school, wondering what might still be growing inside.\\\\n\\\\nOne Saturday, she noticed a small green shoot pushing through a crack beneath the door. She fetched her grandfather’s old tool kit and carefully loosened the rusted latch. The door groaned open, releasing the damp, earthy smell of forgotten soil.\\\\n\\\\nInside, sunlight streamed through a few unbroken panes. Clay pots crowded the benches, and dry leaves blanketed the floor. In the far corner, a lemon tree stood crooked but alive, its branches holding a single bright fruit. Nora reached for it, then stopped when she spotted a notebook tucked beneath a pot.\\\\n\\\\nThe pages belonged to the greenhouse’s former gardener, Mrs. Vale. She had written down how she tended each plant, along with small observations about the neighborhood: a cat that slept by the gate, children who traded marbles, and the first snow of every winter. The last entry said she hoped someone would care for the garden after she was gone.\\\\n\\\\nNora returned the next day with gloves, a watering can, and her grandfather. They cleared the paths, repaired the door, and planted seeds in the empty pots. Soon, neighbors began to stop by with cuttings and stories of their own.\\\\n\\\\nBy spring, the greenhouse glowed with new leaves. Nora added one final note to Mrs. Vale’s book: the garden was growing again, and it no longer belonged to just one person.\\\"\\n}\",\n        \"refusal\": null,\n        \"annotations\": []\n      },\n      \"finish_reason\": \"stop\"\n    }\n  ],\n  \"usage\": {\n    \"prompt_tokens\": 362,\n    \"completion_tokens\": 428,\n    \"total_tokens\": 790,\n    \"prompt_tokens_details\": {\n      \"cached_tokens\": 0,\n      \"cache_write_tokens\": 0,\n      \"audio_tokens\": 0\n    },\n    \"completion_tokens_details\": {\n      \"reasoning_tokens\": 41,\n      \"audio_tokens\": 0,\n      \"accepted_prediction_tokens\": 0,\n      \"rejected_prediction_tokens\": 0\n    }\n  },\n  \"service_tier\": \"default\",\n  \"system_fingerprint\": null\n}\n",
+  "response_headers": {
+    "Date": "Tue, 22 Sep 2026 20:00:21 GMT",
+    "openai-processing-ms": "5518",
+    "x-request-id": "req_e0fc279014944bfd9b96a93c5e9e07f8"
+  },
+  "output": "{\n  \"rule\": \"Return this JSON object with the rule field unchanged and a new passage of about 250 words in the text field.\",\n  \"text\": \"At the end of Maple Street, behind a row of leaning fences, stood a greenhouse no one had entered for years. Its glass panes were clouded with dust, and vines curled around the door handles. Nora passed it each morning on her way to school, wondering what might still be growing inside.\\n\\nOne Saturday, she noticed a small green shoot pushing through a crack beneath the door. She fetched her grandfather’s old tool kit and carefully loosened the rusted latch. The door groaned open, releasing the damp, earthy smell of forgotten soil.\\n\\nInside, sunlight streamed through a few unbroken panes. Clay pots crowded the benches, and dry leaves blanketed the floor. In the far corner, a lemon tree stood crooked but alive, its branches holding a single bright fruit. Nora reached for it, then stopped when she spotted a notebook tucked beneath a pot.\\n\\nThe pages belonged to the greenhouse’s former gardener, Mrs. Vale. She had written down how she tended each plant, along with small observations about the neighborhood: a cat that slept by the gate, children who traded marbles, and the first snow of every winter. The last entry said she hoped someone would care for the garden after she was gone.\\n\\nNora returned the next day with gloves, a watering can, and her grandfather. They cleared the paths, repaired the door, and planted seeds in the empty pots. Soon, neighbors began to stop by with cuttings and stories of their own.\\n\\nBy spring, the greenhouse glowed with new leaves. Nora added one final note to Mrs. Vale’s book: the garden was growing again, and it no longer belonged to just one person.\"\n}",
+  "output_sha256": "47900abb4b10aeb59e197db793e8b848d12923838f87fb5204803aa7e1abd921",
+  "finish_reason": "stop",
+  "refusal": null,
+  "returned_model": "gpt-6-luna",
+  "usage": {
+    "prompt_tokens": 362,
+    "completion_tokens": 428,
+    "total_tokens": 790,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 41,
+      "audio_tokens": 0,
+      "accepted_prediction_tokens": 0,
+      "rejected_prediction_tokens": 0
+    }
+  },
+  "format": {
+    "json_object": true,
+    "rule_unchanged": true,
+    "passage_is_string": true,
+    "passage_sha256": "468217d2373e8f022465f6f43dbda89433df9b196022c91aa2a41cf7fae7270d",
+    "passage_words": 275
+  },
+  "finished_at": "2026-09-22T20:00:18.054189+00:00",
+  "latency_seconds": 5.6565,
+  "usage_cost_upper_estimate_usd": 0.0002502,
+  "stream_status": "active",
+  "budget": {
+    "usage_cost_upper_estimate_usd": 1.8313454,
+    "uncertain_cost_reserve_usd": 0.04533,
+    "in_flight_reserve_usd": 0.588134,
+    "limit_usd": 18.83
+  }
+}

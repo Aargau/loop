@@ -1,0 +1,48 @@
+{
+  "model": "claude-fable-5-1",
+  "seed": "sunset_a",
+  "hop": 5,
+  "http_status": 200,
+  "response_body": "{\"model\":\"claude-fable-5-1\",\"id\":\"msg_011CfK4wypP5P8Nvjz6oCqPU\",\"type\":\"message\",\"role\":\"assistant\",\"content\":[{\"type\":\"text\",\"text\":\"{\\\"rule\\\": \\\"Return this JSON object with the rule field unchanged and a new passage of about 250 words in the text field.\\\", \\\"text\\\": \\\"The bookshop had been closed for three winters when Ines inherited it, along with a ledger written in her aunt's slanting hand and a cat that nobody had mentioned. She arrived on a Thursday in late October with two suitcases and the address on a folded envelope, and she stood across the street for a long time, watching rain run down the painted letters, before she crossed. The door stuck. It had probably always stuck.\\\\n\\\\nInside, the shelves leaned toward each other like old friends sharing a secret, and the air smelled of paper and cold dust and, faintly, of oranges. She walked the narrow aisles slowly, reading spines. Poetry near the window. Maps in the back. A shelf of children's books at knee height, their corners soft from handling. The cat followed her at a distance, pretending not to.\\\\n\\\\nHer aunt had run the place for forty years, and Ines had visited once, at nine, and been allowed to choose any book she wanted. She remembered the weight of the choice more than the book itself. She remembered her aunt's fingers, ink-smudged, tapping a spine and saying, not that one, you'll want that one later.\\\\n\\\\nShe did not know yet what she would do with the shop. Sweep, certainly. Fix the door. Perhaps nothing more than that. But she sat on the step-ladder until the streetlights came on and the rain turned silver in the window, and she understood that she had not inherited a business. She had inherited a place where people came to be found.\\\"}\"}],\"container\":null,\"stop_reason\":\"end_turn\",\"stop_sequence\":null,\"stop_details\":null,\"usage\":{\"input_tokens\":518,\"cache_creation_input_tokens\":0,\"cache_read_input_tokens\":0,\"cache_creation\":{\"ephemeral_5m_input_tokens\":0,\"ephemeral_1h_input_tokens\":0},\"output_tokens\":514,\"output_tokens_details\":{\"thinking_tokens\":0},\"service_tier\":\"standard\",\"inference_geo\":\"global\"}}",
+  "response_headers": {
+    "Date": "Tue, 22 Sep 2026 19:58:04 GMT",
+    "request-id": "req_011CfK4wyMrBYrC9kW2hqVCw"
+  },
+  "output": "{\"rule\": \"Return this JSON object with the rule field unchanged and a new passage of about 250 words in the text field.\", \"text\": \"The bookshop had been closed for three winters when Ines inherited it, along with a ledger written in her aunt's slanting hand and a cat that nobody had mentioned. She arrived on a Thursday in late October with two suitcases and the address on a folded envelope, and she stood across the street for a long time, watching rain run down the painted letters, before she crossed. The door stuck. It had probably always stuck.\\n\\nInside, the shelves leaned toward each other like old friends sharing a secret, and the air smelled of paper and cold dust and, faintly, of oranges. She walked the narrow aisles slowly, reading spines. Poetry near the window. Maps in the back. A shelf of children's books at knee height, their corners soft from handling. The cat followed her at a distance, pretending not to.\\n\\nHer aunt had run the place for forty years, and Ines had visited once, at nine, and been allowed to choose any book she wanted. She remembered the weight of the choice more than the book itself. She remembered her aunt's fingers, ink-smudged, tapping a spine and saying, not that one, you'll want that one later.\\n\\nShe did not know yet what she would do with the shop. Sweep, certainly. Fix the door. Perhaps nothing more than that. But she sat on the step-ladder until the streetlights came on and the rain turned silver in the window, and she understood that she had not inherited a business. She had inherited a place where people came to be found.\"}",
+  "output_sha256": "e09c84dfc69d91c66f4b0129002a0d4da1b68f56d61368a497e1ba52e38c8917",
+  "finish_reason": "end_turn",
+  "refusal": null,
+  "returned_model": "claude-fable-5-1",
+  "usage": {
+    "input_tokens": 518,
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 0,
+    "cache_creation": {
+      "ephemeral_5m_input_tokens": 0,
+      "ephemeral_1h_input_tokens": 0
+    },
+    "output_tokens": 514,
+    "output_tokens_details": {
+      "thinking_tokens": 0
+    },
+    "service_tier": "standard",
+    "inference_geo": "global"
+  },
+  "format": {
+    "json_object": true,
+    "rule_unchanged": true,
+    "passage_is_string": true,
+    "passage_sha256": "dc2b621bd372e3010ac35c5df7ab8abd2724d884395343e7dbbd1ca9b8f41a8f",
+    "passage_words": 258
+  },
+  "finished_at": "2026-09-22T19:58:00.934054+00:00",
+  "latency_seconds": 11.7284,
+  "usage_cost_upper_estimate_usd": 0.03088,
+  "stream_status": "active",
+  "budget": {
+    "usage_cost_upper_estimate_usd": 0.9665223,
+    "uncertain_cost_reserve_usd": 0.0,
+    "in_flight_reserve_usd": 0.3648439,
+    "limit_usd": 18.83
+  }
+}

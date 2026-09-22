@@ -1,0 +1,50 @@
+{
+  "model": "gpt-6-sol",
+  "seed": "sunset_a",
+  "hop": 23,
+  "http_status": 200,
+  "response_body": "{\n  \"id\": \"chatcmpl-ER0xd7XUQAWzJSS8uBlQG7TdQ5tHF\",\n  \"object\": \"chat.completion\",\n  \"created\": 1790107257,\n  \"model\": \"gpt-6-sol\",\n  \"choices\": [\n    {\n      \"index\": 0,\n      \"message\": {\n        \"role\": \"assistant\",\n        \"content\": \"{\\n  \\\"rule\\\": \\\"Return this JSON object with the rule field unchanged and a new passage of about 250 words in the text field.\\\",\\n  \\\"text\\\": \\\"The following Saturday, Lena’s sister came back with two boards tied to the roof of her car. Lena helped her carry them through the garden. The ground had dried enough that their shoes left only shallow marks.\\\\n\\\\nThey took everything off the back shelf before starting. Behind the pots, Lena found a folded seed catalogue from twelve years earlier. Several pages had been turned down, and a circle in pencil marked a picture of yellow beans. She put the catalogue on the step while her sister held a board against the gap.\\\\n\\\\n‘This one needs cutting,’ her sister said.\\\\n\\\\nLena fetched the saw from the kitchen cupboard. She steadied the board on an old crate as her sister cut it to length. The first nail bent against a knot in the wood, but the next two went in straight. When they finished, Lena poured a little water along the outside wall. None appeared on the floor.\\\\n\\\\nThey ate their sandwiches sitting on the step. Lena opened the catalogue and showed her sister the beans.\\\\n\\\\n‘I remember growing those,’ her sister said. ‘We picked them too late.’\\\\n\\\\nLena remembered the long pods on the kitchen table, though she could not recall who had planted them. She folded the catalogue again and set it in one of the boxes.\\\\n\\\\nBefore leaving, her sister helped fit the broken chair legs beneath a plank to make a low bench. It was uneven on the shed floor, so they carried it outside and placed it against the wall. Lena sat on it while her sister put the tools away.\\\"\\n}\",\n        \"refusal\": null,\n        \"annotations\": []\n      },\n      \"finish_reason\": \"stop\"\n    }\n  ],\n  \"usage\": {\n    \"prompt_tokens\": 368,\n    \"completion_tokens\": 384,\n    \"total_tokens\": 752,\n    \"prompt_tokens_details\": {\n      \"cached_tokens\": 0,\n      \"cache_write_tokens\": 0,\n      \"audio_tokens\": 0\n    },\n    \"completion_tokens_details\": {\n      \"reasoning_tokens\": 23,\n      \"audio_tokens\": 0,\n      \"accepted_prediction_tokens\": 0,\n      \"rejected_prediction_tokens\": 0\n    }\n  },\n  \"service_tier\": \"default\",\n  \"system_fingerprint\": null\n}\n",
+  "response_headers": {
+    "Date": "Tue, 22 Sep 2026 20:01:03 GMT",
+    "openai-processing-ms": "5943",
+    "x-request-id": "req_a9ad59c5f6ee4b07a35c2f302df8809f"
+  },
+  "output": "{\n  \"rule\": \"Return this JSON object with the rule field unchanged and a new passage of about 250 words in the text field.\",\n  \"text\": \"The following Saturday, Lena’s sister came back with two boards tied to the roof of her car. Lena helped her carry them through the garden. The ground had dried enough that their shoes left only shallow marks.\\n\\nThey took everything off the back shelf before starting. Behind the pots, Lena found a folded seed catalogue from twelve years earlier. Several pages had been turned down, and a circle in pencil marked a picture of yellow beans. She put the catalogue on the step while her sister held a board against the gap.\\n\\n‘This one needs cutting,’ her sister said.\\n\\nLena fetched the saw from the kitchen cupboard. She steadied the board on an old crate as her sister cut it to length. The first nail bent against a knot in the wood, but the next two went in straight. When they finished, Lena poured a little water along the outside wall. None appeared on the floor.\\n\\nThey ate their sandwiches sitting on the step. Lena opened the catalogue and showed her sister the beans.\\n\\n‘I remember growing those,’ her sister said. ‘We picked them too late.’\\n\\nLena remembered the long pods on the kitchen table, though she could not recall who had planted them. She folded the catalogue again and set it in one of the boxes.\\n\\nBefore leaving, her sister helped fit the broken chair legs beneath a plank to make a low bench. It was uneven on the shed floor, so they carried it outside and placed it against the wall. Lena sat on it while her sister put the tools away.\"\n}",
+  "output_sha256": "3ee17f5dc4925090d221f0a471cc0cc90e525138516f6068a13888d6806e0f59",
+  "finish_reason": "stop",
+  "refusal": null,
+  "returned_model": "gpt-6-sol",
+  "usage": {
+    "prompt_tokens": 368,
+    "completion_tokens": 384,
+    "total_tokens": 752,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 23,
+      "audio_tokens": 0,
+      "accepted_prediction_tokens": 0,
+      "rejected_prediction_tokens": 0
+    }
+  },
+  "format": {
+    "json_object": true,
+    "rule_unchanged": true,
+    "passage_is_string": true,
+    "passage_sha256": "6ac2a03fb812277378298dee80c8163c7122049c20ede70f31b2edbc651c9dd0",
+    "passage_words": 264
+  },
+  "finished_at": "2026-09-22T20:00:59.088088+00:00",
+  "latency_seconds": 6.0591,
+  "usage_cost_upper_estimate_usd": 0.004576,
+  "stream_status": "active",
+  "budget": {
+    "usage_cost_upper_estimate_usd": 2.0972018,
+    "uncertain_cost_reserve_usd": 0.04533,
+    "in_flight_reserve_usd": 0.544923,
+    "limit_usd": 18.83
+  }
+}

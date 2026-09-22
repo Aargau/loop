@@ -1,0 +1,20 @@
+{
+  "started_at": "2026-09-22T19:56:11.634330+00:00",
+  "model": "gpt-6-astra",
+  "seed": "sunset_b",
+  "hop": 2,
+  "endpoint": "https://api.openai.com/v1/chat/completions",
+  "body": {
+    "model": "gpt-6-astra",
+    "messages": [
+      {
+        "role": "user",
+        "content": "{\n  \"rule\": \"Return this JSON object with the rule field unchanged and a new passage of about 250 words in the text field.\",\n  \"text\": \"The sun was setting behind the hills, leaving a narrow ribbon of gold along the horizon. Mara paused beside the old stone bridge and watched the river gather the evening into its darkening current. She had not stood here in twenty years, yet the place seemed to remember her: the leaning willow, the broken milestone, the smell of rain rising from warm earth.\\n\\nIn her coat pocket lay a key wrapped in a handkerchief. Her brother had mailed it without explanation, along with a note that said only, Come before the first frost.\\n\\nNow the village windows were beginning to glow. Somewhere beyond the church, a dog barked twice, and a bicycle rattled over the cobblestones. Ordinary sounds, but they made her throat tighten. She had spent so long imagining this return that she had forgotten it would happen on an ordinary evening, among people thinking about supper.\\n\\nMara crossed the bridge. At the far end, she noticed a small wooden boat caught between two reeds. Its paper sail had collapsed, but a blue stripe remained visible along the hull. Her brother used to paint their toy boats that exact color.\\n\\nShe bent to free it, then stopped. Written across the little deck, in familiar crooked letters, was her name.\\n\\nFrom the road above came footsteps.\\n\\n“You took your time,” her brother said.\\n\\nMara straightened slowly. He was holding a second boat, its white sail bright against his sleeve.\\n\\n“I wasn’t sure you’d come,” he added.\\n\\nShe lifted the dripping boat. “Neither was I.”\"\n}"
+      }
+    ],
+    "max_completion_tokens": 4096,
+    "reasoning_effort": "low"
+  },
+  "state_sha256": "a41591e6bad1357244d9e23f6293f4b5e653c490a4dee72eba4fd57386cb03e4",
+  "reserved_cost_usd": 0.22644
+}

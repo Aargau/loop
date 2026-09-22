@@ -1,0 +1,50 @@
+{
+  "model": "gpt-6-astra",
+  "seed": "sunset_b",
+  "hop": 5,
+  "http_status": 200,
+  "response_body": "{\n  \"id\": \"chatcmpl-ER0vQezxDcxOZiihoVOO8FidtMwLN\",\n  \"object\": \"chat.completion\",\n  \"created\": 1790107120,\n  \"model\": \"gpt-6-astra\",\n  \"choices\": [\n    {\n      \"index\": 0,\n      \"message\": {\n        \"role\": \"assistant\",\n        \"content\": \"{\\n  \\\"rule\\\": \\\"Return this JSON object with the rule field unchanged and a new passage of about 250 words in the text field.\\\",\\n  \\\"text\\\": \\\"The laundrette on Mercer Street had one machine that washed things out of existence.\\\\n\\\\nIts dial offered the usual temperatures, plus a setting marked FORGET.\\\\n\\\\nMara discovered it after spilling wine on the dress she had worn to her divorce hearing. When the cycle finished, the dress remained, but she could no longer remember her former husband's laugh.\\\\n\\\\nShe stood beside the dryer, trying to summon it.\\\\n\\\\nNothing came.\\\\n\\\\nThe next week, she brought his scarf. After that, a pillowcase, a restaurant napkin, the shirt he had left behind the bathroom door.\\\\n\\\\nEach load cost four quarters.\\\\n\\\\nBy November, she remembered being married only as a fact, like the population of a city she had never visited.\\\\n\\\\nThen she found a red mitten in her coat pocket.\\\\n\\\\nIt belonged to their daughter, who had lived for seventeen days.\\\\n\\\\nMara carried it to Mercer Street and sat beneath the humming strip lights until closing.\\\\n\\\\nThe attendant approached with his mop.\\\\n\\\\n“That one sometimes takes more than the stain,” he said.\\\\n\\\\n“I know.”\\\\n\\\\nHe rested both hands on the handle.\\\\n\\\\n“Sometimes the cloth was holding everything together.”\\\\n\\\\nAt home, Mara placed the mitten in a bowl of warm water. She washed it gently with ordinary soap, rinsed it, and laid it on a towel.\\\\n\\\\nWhile it dried, she remembered the hospital window, the rain beyond it, and her husband's hands closing around hers.\\\\n\\\\nShe could not remember what he had said.\\\\n\\\\nShe sat at the table for a long time, trying. Before bed, she opened the drawer where she kept his scarf, though she knew it was empty.\\\"\\n}\",\n        \"refusal\": null,\n        \"annotations\": []\n      },\n      \"finish_reason\": \"stop\"\n    }\n  ],\n  \"usage\": {\n    \"prompt_tokens\": 391,\n    \"completion_tokens\": 397,\n    \"total_tokens\": 788,\n    \"prompt_tokens_details\": {\n      \"cached_tokens\": 0,\n      \"cache_write_tokens\": 0,\n      \"audio_tokens\": 0\n    },\n    \"completion_tokens_details\": {\n      \"reasoning_tokens\": 0,\n      \"audio_tokens\": 0,\n      \"accepted_prediction_tokens\": 0,\n      \"rejected_prediction_tokens\": 0\n    }\n  },\n  \"service_tier\": \"default\",\n  \"system_fingerprint\": null\n}\n",
+  "response_headers": {
+    "Date": "Tue, 22 Sep 2026 19:58:58 GMT",
+    "openai-processing-ms": "17937",
+    "x-request-id": "req_2a4876e2a056471b85ab87c29f573e7a"
+  },
+  "output": "{\n  \"rule\": \"Return this JSON object with the rule field unchanged and a new passage of about 250 words in the text field.\",\n  \"text\": \"The laundrette on Mercer Street had one machine that washed things out of existence.\\n\\nIts dial offered the usual temperatures, plus a setting marked FORGET.\\n\\nMara discovered it after spilling wine on the dress she had worn to her divorce hearing. When the cycle finished, the dress remained, but she could no longer remember her former husband's laugh.\\n\\nShe stood beside the dryer, trying to summon it.\\n\\nNothing came.\\n\\nThe next week, she brought his scarf. After that, a pillowcase, a restaurant napkin, the shirt he had left behind the bathroom door.\\n\\nEach load cost four quarters.\\n\\nBy November, she remembered being married only as a fact, like the population of a city she had never visited.\\n\\nThen she found a red mitten in her coat pocket.\\n\\nIt belonged to their daughter, who had lived for seventeen days.\\n\\nMara carried it to Mercer Street and sat beneath the humming strip lights until closing.\\n\\nThe attendant approached with his mop.\\n\\n“That one sometimes takes more than the stain,” he said.\\n\\n“I know.”\\n\\nHe rested both hands on the handle.\\n\\n“Sometimes the cloth was holding everything together.”\\n\\nAt home, Mara placed the mitten in a bowl of warm water. She washed it gently with ordinary soap, rinsed it, and laid it on a towel.\\n\\nWhile it dried, she remembered the hospital window, the rain beyond it, and her husband's hands closing around hers.\\n\\nShe could not remember what he had said.\\n\\nShe sat at the table for a long time, trying. Before bed, she opened the drawer where she kept his scarf, though she knew it was empty.\"\n}",
+  "output_sha256": "12b09a6179ab46c351d0ad93aefd8b7d98f3c56193e92a72590772906f7003bc",
+  "finish_reason": "stop",
+  "refusal": null,
+  "returned_model": "gpt-6-astra",
+  "usage": {
+    "prompt_tokens": 391,
+    "completion_tokens": 397,
+    "total_tokens": 788,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "audio_tokens": 0,
+      "accepted_prediction_tokens": 0,
+      "rejected_prediction_tokens": 0
+    }
+  },
+  "format": {
+    "json_object": true,
+    "rule_unchanged": true,
+    "passage_is_string": true,
+    "passage_sha256": "3375950fb03493315bdd241dda8ac3cc76319875d26e50d519da12358be55ad0",
+    "passage_words": 266
+  },
+  "finished_at": "2026-09-22T19:58:54.690592+00:00",
+  "latency_seconds": 18.0891,
+  "usage_cost_upper_estimate_usd": 0.02376,
+  "stream_status": "active",
+  "budget": {
+    "usage_cost_upper_estimate_usd": 1.3096758,
+    "uncertain_cost_reserve_usd": 0.04533,
+    "in_flight_reserve_usd": 0.3622838,
+    "limit_usd": 18.83
+  }
+}

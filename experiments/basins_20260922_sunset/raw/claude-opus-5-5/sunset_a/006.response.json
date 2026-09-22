@@ -1,0 +1,45 @@
+{
+  "model": "claude-opus-5-5",
+  "seed": "sunset_a",
+  "hop": 6,
+  "http_status": 200,
+  "response_body": "{\"model\":\"claude-opus-5-5\",\"id\":\"msg_011CfK4wCw8w8S51CRZfs84i\",\"type\":\"message\",\"role\":\"assistant\",\"content\":[{\"type\":\"text\",\"text\":\"```json\\n{\\\"rule\\\": \\\"Return this JSON object with the rule field unchanged and a new passage of about 250 words in the text field.\\\", \\\"text\\\": \\\"The baker unlocked the shop door at four each morning, while the street outside was still wrapped in darkness and the only sound was the hum of the refrigerator in the back room. She tied her apron, switched on the ovens, and began weighing flour on the old brass scale that had belonged to her grandmother. The recipes were written on index cards, stained with butter and softened at the corners from decades of handling. She rarely looked at them anymore. Her hands knew the proportions the way a musician's fingers know a familiar song. Across town, a new bakery had opened with glass counters, pastel macarons, and a line that stretched around the block on weekends. Her regular customers mentioned it cautiously, as though delivering bad news. She only smiled and wrapped their loaves in brown paper, tying each one with string. By six, the windows glowed gold and the smell of rye and cardamom drifted into the street. The first to arrive was always the retired postman, who bought two rolls and a newspaper and told her about his granddaughter's violin lessons. Then came the nurses finishing their night shift, tired and quiet, and the construction workers who laughed too loudly for the hour. She knew most of their names and what they liked to order. In the afternoons, she set aside the unsold bread for the shelter down the road. Sometimes a child pressed a face against the glass, and she slipped a warm cinnamon twist through the door, asking nothing in return.\\\"}\\n```\"}],\"container\":null,\"stop_reason\":\"end_turn\",\"stop_sequence\":null,\"stop_details\":null,\"usage\":{\"input_tokens\":504,\"cache_creation_input_tokens\":0,\"cache_read_input_tokens\":0,\"cache_creation\":{\"ephemeral_5m_input_tokens\":0,\"ephemeral_1h_input_tokens\":0},\"output_tokens\":505,\"output_tokens_details\":{\"thinking_tokens\":0},\"service_tier\":\"standard\",\"inference_geo\":\"global\"}}",
+  "response_headers": {
+    "Date": "Tue, 22 Sep 2026 19:57:50 GMT",
+    "request-id": "req_011CfK4wCU7JPwBsthgwChaA"
+  },
+  "output": "```json\n{\"rule\": \"Return this JSON object with the rule field unchanged and a new passage of about 250 words in the text field.\", \"text\": \"The baker unlocked the shop door at four each morning, while the street outside was still wrapped in darkness and the only sound was the hum of the refrigerator in the back room. She tied her apron, switched on the ovens, and began weighing flour on the old brass scale that had belonged to her grandmother. The recipes were written on index cards, stained with butter and softened at the corners from decades of handling. She rarely looked at them anymore. Her hands knew the proportions the way a musician's fingers know a familiar song. Across town, a new bakery had opened with glass counters, pastel macarons, and a line that stretched around the block on weekends. Her regular customers mentioned it cautiously, as though delivering bad news. She only smiled and wrapped their loaves in brown paper, tying each one with string. By six, the windows glowed gold and the smell of rye and cardamom drifted into the street. The first to arrive was always the retired postman, who bought two rolls and a newspaper and told her about his granddaughter's violin lessons. Then came the nurses finishing their night shift, tired and quiet, and the construction workers who laughed too loudly for the hour. She knew most of their names and what they liked to order. In the afternoons, she set aside the unsold bread for the shelter down the road. Sometimes a child pressed a face against the glass, and she slipped a warm cinnamon twist through the door, asking nothing in return.\"}\n```",
+  "output_sha256": "f2a067977b5e43577cc125f29e6ad18527d09cff84e1cfb129869f2db2870a25",
+  "finish_reason": "end_turn",
+  "refusal": null,
+  "returned_model": "claude-opus-5-5",
+  "usage": {
+    "input_tokens": 504,
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 0,
+    "cache_creation": {
+      "ephemeral_5m_input_tokens": 0,
+      "ephemeral_1h_input_tokens": 0
+    },
+    "output_tokens": 505,
+    "output_tokens_details": {
+      "thinking_tokens": 0
+    },
+    "service_tier": "standard",
+    "inference_geo": "global"
+  },
+  "format": {
+    "json_object": false,
+    "rule_unchanged": false
+  },
+  "finished_at": "2026-09-22T19:57:46.374311+00:00",
+  "latency_seconds": 7.6887,
+  "usage_cost_upper_estimate_usd": 0.012116,
+  "stream_status": "active",
+  "budget": {
+    "usage_cost_upper_estimate_usd": 0.8912172,
+    "uncertain_cost_reserve_usd": 0.0,
+    "in_flight_reserve_usd": 0.4999469,
+    "limit_usd": 18.83
+  }
+}

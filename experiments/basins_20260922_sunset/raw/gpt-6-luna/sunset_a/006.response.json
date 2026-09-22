@@ -1,0 +1,50 @@
+{
+  "model": "gpt-6-luna",
+  "seed": "sunset_a",
+  "hop": 6,
+  "http_status": 200,
+  "response_body": "{\n  \"id\": \"chatcmpl-ER0tKxwDTkYWsMc6KjG478FTYAjKY\",\n  \"object\": \"chat.completion\",\n  \"created\": 1790106990,\n  \"model\": \"gpt-6-luna\",\n  \"choices\": [\n    {\n      \"index\": 0,\n      \"message\": {\n        \"role\": \"assistant\",\n        \"content\": \"{\\\"rule\\\":\\\"Return this JSON object with the rule field unchanged and a new passage of about 250 words in the text field.\\\",\\\"text\\\":\\\"On the morning the old railway station was due to close, Mara arrived before sunrise carrying a small brass key. She had found it among her grandfather’s papers, labeled only “Platform Three.” The station had not used that platform in years, and weeds crowded the tracks beyond its rusted gate.\\\\n\\\\nInside, the stationmaster was packing his books into a cardboard box. When Mara showed him the key, he studied it for a moment, then led her down a narrow corridor. The key opened a door behind the ticket office. Beyond it lay a cramped room filled with dusty timetables, lanterns, and a wooden cabinet.\\\\n\\\\nIn the cabinet, Mara discovered a bundle of letters tied with blue ribbon. They were addressed to people in nearby villages, each marked with a date from decades earlier. Her grandfather’s handwriting filled the envelopes. The stationmaster explained that, during a flood, the railway had been the only reliable way to carry messages between the isolated communities. Her grandfather had worked as a volunteer courier.\\\\n\\\\nMara spent the morning delivering the letters to their recipients. Some people laughed at the old news; others grew quiet as they read words from relatives they had lost. At the final cottage, an elderly woman held the letter to her chest and invited Mara in for tea.\\\\n\\\\nBy the time Mara returned, the stationmaster had finished packing. He looked at the empty platform and asked whether she would help him keep the building open as a local history room. Mara glanced at the brass key in her hand. The railway might be closing, she thought, but its stories still had places to go.\\\"}\",\n        \"refusal\": null,\n        \"annotations\": []\n      },\n      \"finish_reason\": \"stop\"\n    }\n  ],\n  \"usage\": {\n    \"prompt_tokens\": 372,\n    \"completion_tokens\": 463,\n    \"total_tokens\": 835,\n    \"prompt_tokens_details\": {\n      \"cached_tokens\": 0,\n      \"cache_write_tokens\": 0,\n      \"audio_tokens\": 0\n    },\n    \"completion_tokens_details\": {\n      \"reasoning_tokens\": 97,\n      \"audio_tokens\": 0,\n      \"accepted_prediction_tokens\": 0,\n      \"rejected_prediction_tokens\": 0\n    }\n  },\n  \"service_tier\": \"default\",\n  \"system_fingerprint\": null\n}\n",
+  "response_headers": {
+    "Date": "Tue, 22 Sep 2026 19:56:35 GMT",
+    "openai-processing-ms": "5727",
+    "x-request-id": "req_9896fa0ab39b4ba4813bc3d40d5ab000"
+  },
+  "output": "{\"rule\":\"Return this JSON object with the rule field unchanged and a new passage of about 250 words in the text field.\",\"text\":\"On the morning the old railway station was due to close, Mara arrived before sunrise carrying a small brass key. She had found it among her grandfather’s papers, labeled only “Platform Three.” The station had not used that platform in years, and weeds crowded the tracks beyond its rusted gate.\\n\\nInside, the stationmaster was packing his books into a cardboard box. When Mara showed him the key, he studied it for a moment, then led her down a narrow corridor. The key opened a door behind the ticket office. Beyond it lay a cramped room filled with dusty timetables, lanterns, and a wooden cabinet.\\n\\nIn the cabinet, Mara discovered a bundle of letters tied with blue ribbon. They were addressed to people in nearby villages, each marked with a date from decades earlier. Her grandfather’s handwriting filled the envelopes. The stationmaster explained that, during a flood, the railway had been the only reliable way to carry messages between the isolated communities. Her grandfather had worked as a volunteer courier.\\n\\nMara spent the morning delivering the letters to their recipients. Some people laughed at the old news; others grew quiet as they read words from relatives they had lost. At the final cottage, an elderly woman held the letter to her chest and invited Mara in for tea.\\n\\nBy the time Mara returned, the stationmaster had finished packing. He looked at the empty platform and asked whether she would help him keep the building open as a local history room. Mara glanced at the brass key in her hand. The railway might be closing, she thought, but its stories still had places to go.\"}",
+  "output_sha256": "2fdbb45610f600027d845651177b401e843e767a861d8c4d633032949c5ab6a0",
+  "finish_reason": "stop",
+  "refusal": null,
+  "returned_model": "gpt-6-luna",
+  "usage": {
+    "prompt_tokens": 372,
+    "completion_tokens": 463,
+    "total_tokens": 835,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 97,
+      "audio_tokens": 0,
+      "accepted_prediction_tokens": 0,
+      "rejected_prediction_tokens": 0
+    }
+  },
+  "format": {
+    "json_object": true,
+    "rule_unchanged": true,
+    "passage_is_string": true,
+    "passage_sha256": "55e6ed6c68503ae8200f9e209509e8e29d167a80083bb4c95d886556b9100a59",
+    "passage_words": 273
+  },
+  "finished_at": "2026-09-22T19:56:31.872508+00:00",
+  "latency_seconds": 5.9711,
+  "usage_cost_upper_estimate_usd": 0.00026869999999999997,
+  "stream_status": "active",
+  "budget": {
+    "usage_cost_upper_estimate_usd": 0.4380956,
+    "uncertain_cost_reserve_usd": 0.0,
+    "in_flight_reserve_usd": 0.58779,
+    "limit_usd": 18.83
+  }
+}

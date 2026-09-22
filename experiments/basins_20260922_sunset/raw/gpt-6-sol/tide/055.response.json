@@ -1,0 +1,50 @@
+{
+  "model": "gpt-6-sol",
+  "seed": "tide",
+  "hop": 55,
+  "http_status": 200,
+  "response_body": "{\n  \"id\": \"chatcmpl-ER14FvSvIfjgj977n7FwdlKwh81vS\",\n  \"object\": \"chat.completion\",\n  \"created\": 1790107667,\n  \"model\": \"gpt-6-sol\",\n  \"choices\": [\n    {\n      \"index\": 0,\n      \"message\": {\n        \"role\": \"assistant\",\n        \"content\": \"{\\n  \\\"rule\\\": \\\"Return this JSON object with the rule field unchanged and a new passage of about 250 words in the text field.\\\",\\n  \\\"text\\\": \\\"Mara held the chart against the boathouse wall, where the daylight was strongest. The circled channel ran beneath the old pier and ended at a black square marked in her father’s hand. Her sister leaned close, then looked away.\\\\n\\\\n“He went after the boy,” she said. “I saw him climb down.”\\\\n\\\\n“You said you never left the pier.”\\\\n\\\\n“I know.”\\\\n\\\\nOutside, their mother called the child back from the water. Mara rolled up the chart and stepped into the salt air. At the far end of the pier, exposed pilings stood dark and slick. The tide was still falling.\\\\n\\\\nTheir mother saw the chart. For a moment she seemed ready to take it, but she folded her hands instead. “He came home that night,” she said quietly. “Your father. He told me there was a place under there where a person could breathe. He wanted to go back when the tide was low enough.”\\\\n\\\\n“Did he?” Mara asked.\\\\n\\\\nTheir mother watched the water slip between the pilings. “The next morning, his boat was gone.”\\\\n\\\\nThe child held out the brass key. A thin strand of green weed clung to its teeth, though the lock had been dry. Mara rubbed it away with her thumb.\\\\n\\\\nShe could see a gap now beneath the pier, no wider than a doorway. Something pale shifted inside it. Her sister gripped the rail, and Mara waited for the water to drop far enough to tell whether it was a shell, a hand, or merely the light.\\\"\\n}\",\n        \"refusal\": null,\n        \"annotations\": []\n      },\n      \"finish_reason\": \"stop\"\n    }\n  ],\n  \"usage\": {\n    \"prompt_tokens\": 378,\n    \"completion_tokens\": 403,\n    \"total_tokens\": 781,\n    \"prompt_tokens_details\": {\n      \"cached_tokens\": 0,\n      \"cache_write_tokens\": 0,\n      \"audio_tokens\": 0\n    },\n    \"completion_tokens_details\": {\n      \"reasoning_tokens\": 31,\n      \"audio_tokens\": 0,\n      \"accepted_prediction_tokens\": 0,\n      \"rejected_prediction_tokens\": 0\n    }\n  },\n  \"service_tier\": \"default\",\n  \"system_fingerprint\": null\n}\n",
+  "response_headers": {
+    "Date": "Tue, 22 Sep 2026 20:07:53 GMT",
+    "openai-processing-ms": "6282",
+    "x-request-id": "req_8eb0cb165ee1492ab51e903e604ebab3"
+  },
+  "output": "{\n  \"rule\": \"Return this JSON object with the rule field unchanged and a new passage of about 250 words in the text field.\",\n  \"text\": \"Mara held the chart against the boathouse wall, where the daylight was strongest. The circled channel ran beneath the old pier and ended at a black square marked in her father’s hand. Her sister leaned close, then looked away.\\n\\n“He went after the boy,” she said. “I saw him climb down.”\\n\\n“You said you never left the pier.”\\n\\n“I know.”\\n\\nOutside, their mother called the child back from the water. Mara rolled up the chart and stepped into the salt air. At the far end of the pier, exposed pilings stood dark and slick. The tide was still falling.\\n\\nTheir mother saw the chart. For a moment she seemed ready to take it, but she folded her hands instead. “He came home that night,” she said quietly. “Your father. He told me there was a place under there where a person could breathe. He wanted to go back when the tide was low enough.”\\n\\n“Did he?” Mara asked.\\n\\nTheir mother watched the water slip between the pilings. “The next morning, his boat was gone.”\\n\\nThe child held out the brass key. A thin strand of green weed clung to its teeth, though the lock had been dry. Mara rubbed it away with her thumb.\\n\\nShe could see a gap now beneath the pier, no wider than a doorway. Something pale shifted inside it. Her sister gripped the rail, and Mara waited for the water to drop far enough to tell whether it was a shell, a hand, or merely the light.\"\n}",
+  "output_sha256": "62fe5b3400c6ad08556546cda6ddf3d6677ec2268f00adc448be44971733179d",
+  "finish_reason": "stop",
+  "refusal": null,
+  "returned_model": "gpt-6-sol",
+  "usage": {
+    "prompt_tokens": 378,
+    "completion_tokens": 403,
+    "total_tokens": 781,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 31,
+      "audio_tokens": 0,
+      "accepted_prediction_tokens": 0,
+      "rejected_prediction_tokens": 0
+    }
+  },
+  "format": {
+    "json_object": true,
+    "rule_unchanged": true,
+    "passage_is_string": true,
+    "passage_sha256": "4ef7c0b061d1e76e1e9090bbaac6fcc43cf2ae011098e4e21fe76394826cb7c7",
+    "passage_words": 251
+  },
+  "finished_at": "2026-09-22T20:07:49.322500+00:00",
+  "latency_seconds": 6.3865,
+  "usage_cost_upper_estimate_usd": 0.004786,
+  "stream_status": "active",
+  "budget": {
+    "usage_cost_upper_estimate_usd": 4.6918363,
+    "uncertain_cost_reserve_usd": 0.04533,
+    "in_flight_reserve_usd": 0.5469625,
+    "limit_usd": 18.83
+  }
+}

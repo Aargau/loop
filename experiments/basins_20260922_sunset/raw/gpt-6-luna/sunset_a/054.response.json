@@ -1,0 +1,50 @@
+{
+  "model": "gpt-6-luna",
+  "seed": "sunset_a",
+  "hop": 54,
+  "http_status": 200,
+  "response_body": "{\n  \"id\": \"chatcmpl-ER13kEW1zJpJSnrraSfbFarp2BpvR\",\n  \"object\": \"chat.completion\",\n  \"created\": 1790107636,\n  \"model\": \"gpt-6-luna\",\n  \"choices\": [\n    {\n      \"index\": 0,\n      \"message\": {\n        \"role\": \"assistant\",\n        \"content\": \"{\\\"rule\\\":\\\"Return this JSON object with the rule field unchanged and a new passage of about 250 words in the text field.\\\",\\\"text\\\":\\\"Every autumn, the town of Maple Crossing held a lantern walk along the river. People decorated paper lanterns with painted leaves, stars, and small wishes, then carried them down the winding path after sunset.\\\\n\\\\nThis year, eleven-year-old Theo planned to make the brightest lantern of all. He covered its sides with silver paper and added a ring of tiny mirrors. But as he hurried toward the river, a gust of wind caught the lantern. It bounced across the path and landed in a muddy puddle.\\\\n\\\\nTheo stared at the soggy paper. Around him, other families were already gathering. His little sister, June, knelt beside him. “We could make a new one,” she said, “but we don’t have time.”\\\\n\\\\nAn older neighbor named Mrs. Alvarez came over with a basket of supplies. She had been bringing extra paper and string to the walk for years. Together, they peeled away the wet decorations and patched the lantern with bright scraps. June added a crooked orange moon, while Theo drew a row of green trees.\\\\n\\\\nTheir lantern was lopsided, and its mirrors were gone. Still, when they placed a candle inside, its warm light shone through every patch of paper. They joined the others along the riverbank, where hundreds of lanterns bobbed in the evening breeze.\\\\n\\\\nTheo noticed that his handmade lantern did not outshine the rest. Instead, its unusual colors made people pause and smile. Mrs. Alvarez pointed to its reflection in the water, where the different pieces came together in one glowing shape.\\\\n\\\\nOn the walk home, Theo carried the lantern carefully. It had not turned out as he planned, but he decided that was part of what made it worth keeping.\\\"}\",\n        \"refusal\": null,\n        \"annotations\": []\n      },\n      \"finish_reason\": \"stop\"\n    }\n  ],\n  \"usage\": {\n    \"prompt_tokens\": 373,\n    \"completion_tokens\": 455,\n    \"total_tokens\": 828,\n    \"prompt_tokens_details\": {\n      \"cached_tokens\": 0,\n      \"cache_write_tokens\": 0,\n      \"audio_tokens\": 0\n    },\n    \"completion_tokens_details\": {\n      \"reasoning_tokens\": 62,\n      \"audio_tokens\": 0,\n      \"accepted_prediction_tokens\": 0,\n      \"rejected_prediction_tokens\": 0\n    }\n  },\n  \"service_tier\": \"default\",\n  \"system_fingerprint\": null\n}\n",
+  "response_headers": {
+    "Date": "Tue, 22 Sep 2026 20:07:21 GMT",
+    "openai-processing-ms": "5073",
+    "x-request-id": "req_c117fa71f3c74f4cb14a82b89c96f059"
+  },
+  "output": "{\"rule\":\"Return this JSON object with the rule field unchanged and a new passage of about 250 words in the text field.\",\"text\":\"Every autumn, the town of Maple Crossing held a lantern walk along the river. People decorated paper lanterns with painted leaves, stars, and small wishes, then carried them down the winding path after sunset.\\n\\nThis year, eleven-year-old Theo planned to make the brightest lantern of all. He covered its sides with silver paper and added a ring of tiny mirrors. But as he hurried toward the river, a gust of wind caught the lantern. It bounced across the path and landed in a muddy puddle.\\n\\nTheo stared at the soggy paper. Around him, other families were already gathering. His little sister, June, knelt beside him. “We could make a new one,” she said, “but we don’t have time.”\\n\\nAn older neighbor named Mrs. Alvarez came over with a basket of supplies. She had been bringing extra paper and string to the walk for years. Together, they peeled away the wet decorations and patched the lantern with bright scraps. June added a crooked orange moon, while Theo drew a row of green trees.\\n\\nTheir lantern was lopsided, and its mirrors were gone. Still, when they placed a candle inside, its warm light shone through every patch of paper. They joined the others along the riverbank, where hundreds of lanterns bobbed in the evening breeze.\\n\\nTheo noticed that his handmade lantern did not outshine the rest. Instead, its unusual colors made people pause and smile. Mrs. Alvarez pointed to its reflection in the water, where the different pieces came together in one glowing shape.\\n\\nOn the walk home, Theo carried the lantern carefully. It had not turned out as he planned, but he decided that was part of what made it worth keeping.\"}",
+  "output_sha256": "1482ac49afd2d110cd588de866fb43c35c8389d6295f2bf0a0989ab988750d38",
+  "finish_reason": "stop",
+  "refusal": null,
+  "returned_model": "gpt-6-luna",
+  "usage": {
+    "prompt_tokens": 373,
+    "completion_tokens": 455,
+    "total_tokens": 828,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 62,
+      "audio_tokens": 0,
+      "accepted_prediction_tokens": 0,
+      "rejected_prediction_tokens": 0
+    }
+  },
+  "format": {
+    "json_object": true,
+    "rule_unchanged": true,
+    "passage_is_string": true,
+    "passage_sha256": "91429241710b59087f6c853800f4559a8c9f7896abcc05bada13a74c3ac9e1f9",
+    "passage_words": 281
+  },
+  "finished_at": "2026-09-22T20:07:17.675077+00:00",
+  "latency_seconds": 5.2087,
+  "usage_cost_upper_estimate_usd": 0.0002648,
+  "stream_status": "active",
+  "budget": {
+    "usage_cost_upper_estimate_usd": 4.4938574,
+    "uncertain_cost_reserve_usd": 0.04533,
+    "in_flight_reserve_usd": 0.59081,
+    "limit_usd": 18.83
+  }
+}

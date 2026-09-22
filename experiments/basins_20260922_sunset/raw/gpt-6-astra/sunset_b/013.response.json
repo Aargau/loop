@@ -1,0 +1,50 @@
+{
+  "model": "gpt-6-astra",
+  "seed": "sunset_b",
+  "hop": 13,
+  "http_status": 200,
+  "response_body": "{\n  \"id\": \"chatcmpl-ER11ZWFATsgRkyXOe8om3dJyhXbMk\",\n  \"object\": \"chat.completion\",\n  \"created\": 1790107501,\n  \"model\": \"gpt-6-astra\",\n  \"choices\": [\n    {\n      \"index\": 0,\n      \"message\": {\n        \"role\": \"assistant\",\n        \"content\": \"{\\n  \\\"rule\\\": \\\"Return this JSON object with the rule field unchanged and a new passage of about 250 words in the text field.\\\",\\n  \\\"text\\\": \\\"The first time the upstairs neighbor knocked, Mara pretended not to be home.\\\\n\\\\nThe second time, he left a small brass key in an envelope beneath her door. On the envelope he had written: For the roof. Tomatoes need water while I’m away.\\\\n\\\\nShe had lived in the building for eleven months. They had exchanged perhaps six sentences, mostly about parcels.\\\\n\\\\nOn Tuesday evening she tried the key.\\\\n\\\\nThere were no tomatoes. There were twelve black buckets containing soil and brittle stalks, a folding chair, and a watering can with a cracked handle. Beyond the parapet, the laundromat sign flashed against the windows opposite.\\\\n\\\\nShe watered the buckets anyway.\\\\n\\\\nHe returned on Sunday carrying a suitcase held shut with a belt.\\\\n\\\\n“Your tomatoes are dead,” she told him.\\\\n\\\\n“Yes,” he said. “I wondered.”\\\\n\\\\n“You could have mentioned that.”\\\\n\\\\nHe looked down at the suitcase. “I usually go up there with my wife.”\\\\n\\\\nMara had never seen his wife. She waited, but he only asked for the key.\\\\n\\\\nThat evening she found an unopened packet of radish seeds in her kitchen drawer. She had bought them in March, imagining a different sort of summer.\\\\n\\\\nShe took them upstairs.\\\\n\\\\n“Wrong season, probably,” she said when he opened the door.\\\\n\\\\nHe studied the packet. “We can check.”\\\\n\\\\nThey planted two buckets and left the others alone. He showed her where the tap was hidden behind a loose board.\\\\n\\\\nOn her way down, Mara remembered the watering can.\\\\n\\\\n“I’ve got some tape for that handle.”\\\\n\\\\n“Bring it next time,” he said.\\\\n\\\\nShe kept the key.\\\"\\n}\",\n        \"refusal\": null,\n        \"annotations\": []\n      },\n      \"finish_reason\": \"stop\"\n    }\n  ],\n  \"usage\": {\n    \"prompt_tokens\": 412,\n    \"completion_tokens\": 406,\n    \"total_tokens\": 818,\n    \"prompt_tokens_details\": {\n      \"cached_tokens\": 0,\n      \"cache_write_tokens\": 0,\n      \"audio_tokens\": 0\n    },\n    \"completion_tokens_details\": {\n      \"reasoning_tokens\": 0,\n      \"audio_tokens\": 0,\n      \"accepted_prediction_tokens\": 0,\n      \"rejected_prediction_tokens\": 0\n    }\n  },\n  \"service_tier\": \"default\",\n  \"system_fingerprint\": null\n}\n",
+  "response_headers": {
+    "Date": "Tue, 22 Sep 2026 20:05:16 GMT",
+    "openai-processing-ms": "15423",
+    "x-request-id": "req_6a6b5cb3b213454f9279fd85c77d304e"
+  },
+  "output": "{\n  \"rule\": \"Return this JSON object with the rule field unchanged and a new passage of about 250 words in the text field.\",\n  \"text\": \"The first time the upstairs neighbor knocked, Mara pretended not to be home.\\n\\nThe second time, he left a small brass key in an envelope beneath her door. On the envelope he had written: For the roof. Tomatoes need water while I’m away.\\n\\nShe had lived in the building for eleven months. They had exchanged perhaps six sentences, mostly about parcels.\\n\\nOn Tuesday evening she tried the key.\\n\\nThere were no tomatoes. There were twelve black buckets containing soil and brittle stalks, a folding chair, and a watering can with a cracked handle. Beyond the parapet, the laundromat sign flashed against the windows opposite.\\n\\nShe watered the buckets anyway.\\n\\nHe returned on Sunday carrying a suitcase held shut with a belt.\\n\\n“Your tomatoes are dead,” she told him.\\n\\n“Yes,” he said. “I wondered.”\\n\\n“You could have mentioned that.”\\n\\nHe looked down at the suitcase. “I usually go up there with my wife.”\\n\\nMara had never seen his wife. She waited, but he only asked for the key.\\n\\nThat evening she found an unopened packet of radish seeds in her kitchen drawer. She had bought them in March, imagining a different sort of summer.\\n\\nShe took them upstairs.\\n\\n“Wrong season, probably,” she said when he opened the door.\\n\\nHe studied the packet. “We can check.”\\n\\nThey planted two buckets and left the others alone. He showed her where the tap was hidden behind a loose board.\\n\\nOn her way down, Mara remembered the watering can.\\n\\n“I’ve got some tape for that handle.”\\n\\n“Bring it next time,” he said.\\n\\nShe kept the key.\"\n}",
+  "output_sha256": "8a34b949358d759bd83a88fdb63403dd38d97d916818c41dba4778242690fc23",
+  "finish_reason": "stop",
+  "refusal": null,
+  "returned_model": "gpt-6-astra",
+  "usage": {
+    "prompt_tokens": 412,
+    "completion_tokens": 406,
+    "total_tokens": 818,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "audio_tokens": 0,
+      "accepted_prediction_tokens": 0,
+      "rejected_prediction_tokens": 0
+    }
+  },
+  "format": {
+    "json_object": true,
+    "rule_unchanged": true,
+    "passage_is_string": true,
+    "passage_sha256": "8d3904ff2ae4ca2a973433a7a18a6d29882bdfb9ed2c4ccae767447242302a23",
+    "passage_words": 261
+  },
+  "finished_at": "2026-09-22T20:05:12.893020+00:00",
+  "latency_seconds": 15.5525,
+  "usage_cost_upper_estimate_usd": 0.02442,
+  "stream_status": "active",
+  "budget": {
+    "usage_cost_upper_estimate_usd": 3.6994818,
+    "uncertain_cost_reserve_usd": 0.04533,
+    "in_flight_reserve_usd": 0.3640476,
+    "limit_usd": 18.83
+  }
+}

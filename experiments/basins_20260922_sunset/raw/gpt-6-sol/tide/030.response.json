@@ -1,0 +1,50 @@
+{
+  "model": "gpt-6-sol",
+  "seed": "tide",
+  "hop": 30,
+  "http_status": 200,
+  "response_body": "{\n  \"id\": \"chatcmpl-ER0z64OII9ncSrLKjsyGihyVQdlAi\",\n  \"object\": \"chat.completion\",\n  \"created\": 1790107348,\n  \"model\": \"gpt-6-sol\",\n  \"choices\": [\n    {\n      \"index\": 0,\n      \"message\": {\n        \"role\": \"assistant\",\n        \"content\": \"{\\n  \\\"rule\\\": \\\"Return this JSON object with the rule field unchanged and a new passage of about 250 words in the text field.\\\",\\n  \\\"text\\\": \\\"By noon, the mud had begun to dry in plates. Mara watched her father kneel beside the grate and lift away a clot of weed. Beneath it lay a narrow brass key.\\\\n\\\\nThe woman did not reach for it. “Elias carried that,” she said. “He said the gate had two locks.”\\\\n\\\\n“There’s only one,” Mara’s father said.\\\\n\\\\n“Now there is.”\\\\n\\\\nHe turned the key over. Salt had eaten most of its teeth, but one side bore the same eight strokes cut into the bell. Mara counted them twice.\\\\n\\\\nFrom outside came the harbor master’s voice. He had found footprints in the mud beyond the gate: a single trail leading toward shore. Mara hurried down after him. The prints were small and close together, as if whoever made them had been carrying something heavy. They ended beneath the lantern window.\\\\n\\\\nThere, pressed deep into the mud, was the round impression of the blue float.\\\\n\\\\nMara looked up. The float still hung by the door upstairs. Its paint had left a faint mark on the woman’s palm.\\\\n\\\\nHer father joined her at the window. For a moment neither of them spoke. Then a soft clang sounded overhead, no louder than a spoon against a cup.\\\\n\\\\nThey climbed the stairs. The woman stood by the lantern with the bell in her hand. She had rung it once, and was waiting.\\\\n\\\\nAcross the emptied harbor, where the old channel curved behind the breakwater, another bell answered. Mara could see no one in the mud. Then the distant light appeared, pale even in daylight, and moved slowly toward the gate.\\\"\\n}\",\n        \"refusal\": null,\n        \"annotations\": []\n      },\n      \"finish_reason\": \"stop\"\n    }\n  ],\n  \"usage\": {\n    \"prompt_tokens\": 380,\n    \"completion_tokens\": 405,\n    \"total_tokens\": 785,\n    \"prompt_tokens_details\": {\n      \"cached_tokens\": 0,\n      \"cache_write_tokens\": 0,\n      \"audio_tokens\": 0\n    },\n    \"completion_tokens_details\": {\n      \"reasoning_tokens\": 19,\n      \"audio_tokens\": 0,\n      \"accepted_prediction_tokens\": 0,\n      \"rejected_prediction_tokens\": 0\n    }\n  },\n  \"service_tier\": \"default\",\n  \"system_fingerprint\": null\n}\n",
+  "response_headers": {
+    "Date": "Tue, 22 Sep 2026 20:02:34 GMT",
+    "openai-processing-ms": "6386",
+    "x-request-id": "req_0c2f3bac6fef4792ae72ea69f9d81c5e"
+  },
+  "output": "{\n  \"rule\": \"Return this JSON object with the rule field unchanged and a new passage of about 250 words in the text field.\",\n  \"text\": \"By noon, the mud had begun to dry in plates. Mara watched her father kneel beside the grate and lift away a clot of weed. Beneath it lay a narrow brass key.\\n\\nThe woman did not reach for it. “Elias carried that,” she said. “He said the gate had two locks.”\\n\\n“There’s only one,” Mara’s father said.\\n\\n“Now there is.”\\n\\nHe turned the key over. Salt had eaten most of its teeth, but one side bore the same eight strokes cut into the bell. Mara counted them twice.\\n\\nFrom outside came the harbor master’s voice. He had found footprints in the mud beyond the gate: a single trail leading toward shore. Mara hurried down after him. The prints were small and close together, as if whoever made them had been carrying something heavy. They ended beneath the lantern window.\\n\\nThere, pressed deep into the mud, was the round impression of the blue float.\\n\\nMara looked up. The float still hung by the door upstairs. Its paint had left a faint mark on the woman’s palm.\\n\\nHer father joined her at the window. For a moment neither of them spoke. Then a soft clang sounded overhead, no louder than a spoon against a cup.\\n\\nThey climbed the stairs. The woman stood by the lantern with the bell in her hand. She had rung it once, and was waiting.\\n\\nAcross the emptied harbor, where the old channel curved behind the breakwater, another bell answered. Mara could see no one in the mud. Then the distant light appeared, pale even in daylight, and moved slowly toward the gate.\"\n}",
+  "output_sha256": "883e8fe7343979cc17cd14294a20e06caa591a93addc3b6ab8d35b799290d7a8",
+  "finish_reason": "stop",
+  "refusal": null,
+  "returned_model": "gpt-6-sol",
+  "usage": {
+    "prompt_tokens": 380,
+    "completion_tokens": 405,
+    "total_tokens": 785,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 19,
+      "audio_tokens": 0,
+      "accepted_prediction_tokens": 0,
+      "rejected_prediction_tokens": 0
+    }
+  },
+  "format": {
+    "json_object": true,
+    "rule_unchanged": true,
+    "passage_is_string": true,
+    "passage_sha256": "d02665737d20da5a2a427434555c6a8f90949c59722e23dda7b2120d019a4cc8",
+    "passage_words": 265
+  },
+  "finished_at": "2026-09-22T20:02:30.847875+00:00",
+  "latency_seconds": 6.5033,
+  "usage_cost_upper_estimate_usd": 0.00481,
+  "stream_status": "active",
+  "budget": {
+    "usage_cost_upper_estimate_usd": 2.6945276,
+    "uncertain_cost_reserve_usd": 0.04533,
+    "in_flight_reserve_usd": 0.5446695,
+    "limit_usd": 18.83
+  }
+}

@@ -1,0 +1,50 @@
+{
+  "model": "gpt-6-luna",
+  "seed": "sunset_a",
+  "hop": 42,
+  "http_status": 200,
+  "response_body": "{\n  \"id\": \"chatcmpl-ER10wZyV3h66v8s2qQmUl8NPcQI7n\",\n  \"object\": \"chat.completion\",\n  \"created\": 1790107462,\n  \"model\": \"gpt-6-luna\",\n  \"choices\": [\n    {\n      \"index\": 0,\n      \"message\": {\n        \"role\": \"assistant\",\n        \"content\": \"{\\\"rule\\\":\\\"Return this JSON object with the rule field unchanged and a new passage of about 250 words in the text field.\\\",\\\"text\\\":\\\"Every Saturday, Leo helped his grandmother open the little bookshop on Harbor Lane. The shop smelled of paper, cinnamon tea, and the sea. Its shelves leaned at odd angles, and a brass bell above the door rang whenever someone entered.\\\\n\\\\nOne windy afternoon, Leo found a blue envelope tucked inside a book of maps. His grandmother peered at the faded writing. “This was left here a long time ago,” she said. “Perhaps its owner is still nearby.”\\\\n\\\\nInside the envelope was a note describing a hidden garden behind the old lighthouse. The writer had planted white flowers there for a friend who loved the moon. At the bottom, a name was signed: Ada.\\\\n\\\\nLeo and his grandmother followed the directions after closing. They passed the harbor, climbed a narrow path, and discovered a rusty gate half-covered in ivy. Beyond it, small white blossoms shone in the evening light.\\\\n\\\\nAn older woman was kneeling among the flowers, gently clearing leaves from their stems. When she saw the note, she smiled in surprise.\\\\n\\\\n“I wrote that when I was young,” she said. “My friend moved away before I could show her the garden.”\\\\n\\\\nThe next week, Leo helped Ada place a new sign by the gate. It invited anyone who missed someone to plant a flower in their memory. Soon, neighbors arrived with seeds, bulbs, and stories. The garden filled with color, and the quiet path became a place where people met.\\\\n\\\\nBack at the shop, Leo returned the map book to its shelf. He wondered how many more small messages were waiting to be found.\\\"}\",\n        \"refusal\": null,\n        \"annotations\": []\n      },\n      \"finish_reason\": \"stop\"\n    }\n  ],\n  \"usage\": {\n    \"prompt_tokens\": 375,\n    \"completion_tokens\": 438,\n    \"total_tokens\": 813,\n    \"prompt_tokens_details\": {\n      \"cached_tokens\": 0,\n      \"cache_write_tokens\": 0,\n      \"audio_tokens\": 0\n    },\n    \"completion_tokens_details\": {\n      \"reasoning_tokens\": 69,\n      \"audio_tokens\": 0,\n      \"accepted_prediction_tokens\": 0,\n      \"rejected_prediction_tokens\": 0\n    }\n  },\n  \"service_tier\": \"default\",\n  \"system_fingerprint\": null\n}\n",
+  "response_headers": {
+    "Date": "Tue, 22 Sep 2026 20:04:28 GMT",
+    "openai-processing-ms": "5665",
+    "x-request-id": "req_f2dd677d22a34bdbb7650b7ab0f2a232"
+  },
+  "output": "{\"rule\":\"Return this JSON object with the rule field unchanged and a new passage of about 250 words in the text field.\",\"text\":\"Every Saturday, Leo helped his grandmother open the little bookshop on Harbor Lane. The shop smelled of paper, cinnamon tea, and the sea. Its shelves leaned at odd angles, and a brass bell above the door rang whenever someone entered.\\n\\nOne windy afternoon, Leo found a blue envelope tucked inside a book of maps. His grandmother peered at the faded writing. “This was left here a long time ago,” she said. “Perhaps its owner is still nearby.”\\n\\nInside the envelope was a note describing a hidden garden behind the old lighthouse. The writer had planted white flowers there for a friend who loved the moon. At the bottom, a name was signed: Ada.\\n\\nLeo and his grandmother followed the directions after closing. They passed the harbor, climbed a narrow path, and discovered a rusty gate half-covered in ivy. Beyond it, small white blossoms shone in the evening light.\\n\\nAn older woman was kneeling among the flowers, gently clearing leaves from their stems. When she saw the note, she smiled in surprise.\\n\\n“I wrote that when I was young,” she said. “My friend moved away before I could show her the garden.”\\n\\nThe next week, Leo helped Ada place a new sign by the gate. It invited anyone who missed someone to plant a flower in their memory. Soon, neighbors arrived with seeds, bulbs, and stories. The garden filled with color, and the quiet path became a place where people met.\\n\\nBack at the shop, Leo returned the map book to its shelf. He wondered how many more small messages were waiting to be found.\"}",
+  "output_sha256": "21d4fe8dd92fe6200586abb914fda849a76958fee547a8a9c869451a9d5b514f",
+  "finish_reason": "stop",
+  "refusal": null,
+  "returned_model": "gpt-6-luna",
+  "usage": {
+    "prompt_tokens": 375,
+    "completion_tokens": 438,
+    "total_tokens": 813,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 69,
+      "audio_tokens": 0,
+      "accepted_prediction_tokens": 0,
+      "rejected_prediction_tokens": 0
+    }
+  },
+  "format": {
+    "json_object": true,
+    "rule_unchanged": true,
+    "passage_is_string": true,
+    "passage_sha256": "06a9a75a6ea924ab0ee7be2e450498e601794e1f6d30495fed85bbd5f7b57114",
+    "passage_words": 264
+  },
+  "finished_at": "2026-09-22T20:04:24.560887+00:00",
+  "latency_seconds": 5.7547,
+  "usage_cost_upper_estimate_usd": 0.0002565,
+  "stream_status": "active",
+  "budget": {
+    "usage_cost_upper_estimate_usd": 3.3749306,
+    "uncertain_cost_reserve_usd": 0.04533,
+    "in_flight_reserve_usd": 0.588412,
+    "limit_usd": 18.83
+  }
+}

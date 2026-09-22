@@ -1,0 +1,50 @@
+{
+  "model": "gpt-6-sol",
+  "seed": "sunset_a",
+  "hop": 11,
+  "http_status": 200,
+  "response_body": "{\n  \"id\": \"chatcmpl-ER0vFrUQBvPl9R4QvtiBfvshkwnxt\",\n  \"object\": \"chat.completion\",\n  \"created\": 1790107109,\n  \"model\": \"gpt-6-sol\",\n  \"choices\": [\n    {\n      \"index\": 0,\n      \"message\": {\n        \"role\": \"assistant\",\n        \"content\": \"{\\n  \\\"rule\\\": \\\"Return this JSON object with the rule field unchanged and a new passage of about 250 words in the text field.\\\",\\n  \\\"text\\\": \\\"By the time the rain began, the library was nearly empty. Elias heard it first against the high windows, a soft rattling that made the woman at the returns desk look up from her book.\\\\n\\\\nHe had come to bring back an atlas. It was seventeen years out of date, and the borders on some pages had changed, but his daughter had liked the drawings of ships scattered across the oceans. She was too old for them now. That morning she had packed for university without asking whether the atlas was hers to take.\\\\n\\\\nElias slipped it into the returns slot. The woman scanned it and paused.\\\\n\\\\n“There’s something inside,” she said.\\\\n\\\\nBetween pages eighty-four and eighty-five lay a square of blue paper. He recognized it before she unfolded it: the wrapping from a chocolate bar they had shared on a train to the coast. On the back, in his daughter’s small handwriting, was a list of things they hoped to see. Lighthouse. Seals. A really enormous wave.\\\\n\\\\nThey had seen the lighthouse from a distance. The seals had stayed away, and the sea had been so calm that she’d tried to make waves herself, slapping the water with both hands.\\\\n\\\\n“Would you like it?” the woman asked.\\\\n\\\\nElias nodded. Outside, students ran through the rain with their bags held over their heads. He folded the paper along its old creases and put it in his coat pocket.\\\\n\\\\nAt home, his daughter’s bedroom door stood open. He left the paper on her desk, beside the phone charger she had forgotten, where she might find it when she came back.\\\"\\n}\",\n        \"refusal\": null,\n        \"annotations\": []\n      },\n      \"finish_reason\": \"stop\"\n    }\n  ],\n  \"usage\": {\n    \"prompt_tokens\": 352,\n    \"completion_tokens\": 401,\n    \"total_tokens\": 753,\n    \"prompt_tokens_details\": {\n      \"cached_tokens\": 0,\n      \"cache_write_tokens\": 0,\n      \"audio_tokens\": 0\n    },\n    \"completion_tokens_details\": {\n      \"reasoning_tokens\": 21,\n      \"audio_tokens\": 0,\n      \"accepted_prediction_tokens\": 0,\n      \"rejected_prediction_tokens\": 0\n    }\n  },\n  \"service_tier\": \"default\",\n  \"system_fingerprint\": null\n}\n",
+  "response_headers": {
+    "Date": "Tue, 22 Sep 2026 19:58:35 GMT",
+    "openai-processing-ms": "6130",
+    "x-request-id": "req_475736a9358e4540a5628a43d21a9c59"
+  },
+  "output": "{\n  \"rule\": \"Return this JSON object with the rule field unchanged and a new passage of about 250 words in the text field.\",\n  \"text\": \"By the time the rain began, the library was nearly empty. Elias heard it first against the high windows, a soft rattling that made the woman at the returns desk look up from her book.\\n\\nHe had come to bring back an atlas. It was seventeen years out of date, and the borders on some pages had changed, but his daughter had liked the drawings of ships scattered across the oceans. She was too old for them now. That morning she had packed for university without asking whether the atlas was hers to take.\\n\\nElias slipped it into the returns slot. The woman scanned it and paused.\\n\\n“There’s something inside,” she said.\\n\\nBetween pages eighty-four and eighty-five lay a square of blue paper. He recognized it before she unfolded it: the wrapping from a chocolate bar they had shared on a train to the coast. On the back, in his daughter’s small handwriting, was a list of things they hoped to see. Lighthouse. Seals. A really enormous wave.\\n\\nThey had seen the lighthouse from a distance. The seals had stayed away, and the sea had been so calm that she’d tried to make waves herself, slapping the water with both hands.\\n\\n“Would you like it?” the woman asked.\\n\\nElias nodded. Outside, students ran through the rain with their bags held over their heads. He folded the paper along its old creases and put it in his coat pocket.\\n\\nAt home, his daughter’s bedroom door stood open. He left the paper on her desk, beside the phone charger she had forgotten, where she might find it when she came back.\"\n}",
+  "output_sha256": "0b156a2ff3dc7fff9c3d46b3fcacbe2f170a8856014d12a6de0090b1f308ccec",
+  "finish_reason": "stop",
+  "refusal": null,
+  "returned_model": "gpt-6-sol",
+  "usage": {
+    "prompt_tokens": 352,
+    "completion_tokens": 401,
+    "total_tokens": 753,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 21,
+      "audio_tokens": 0,
+      "accepted_prediction_tokens": 0,
+      "rejected_prediction_tokens": 0
+    }
+  },
+  "format": {
+    "json_object": true,
+    "rule_unchanged": true,
+    "passage_is_string": true,
+    "passage_sha256": "f77e36a9f777cfcd650831743d878eaae1ce1e7d822aa6c0956888efece558e3",
+    "passage_words": 269
+  },
+  "finished_at": "2026-09-22T19:58:31.450020+00:00",
+  "latency_seconds": 6.2165,
+  "usage_cost_upper_estimate_usd": 0.004714,
+  "stream_status": "active",
+  "budget": {
+    "usage_cost_upper_estimate_usd": 1.1444594,
+    "uncertain_cost_reserve_usd": 0.04533,
+    "in_flight_reserve_usd": 0.5462905,
+    "limit_usd": 18.83
+  }
+}

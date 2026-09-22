@@ -1,0 +1,50 @@
+{
+  "model": "gpt-6-luna",
+  "seed": "sunset_a",
+  "hop": 8,
+  "http_status": 200,
+  "response_body": "{\n  \"id\": \"chatcmpl-ER0tkfyyptUklOLnwxO18VmR6Y5PH\",\n  \"object\": \"chat.completion\",\n  \"created\": 1790107016,\n  \"model\": \"gpt-6-luna\",\n  \"choices\": [\n    {\n      \"index\": 0,\n      \"message\": {\n        \"role\": \"assistant\",\n        \"content\": \"{\\\"rule\\\":\\\"Return this JSON object with the rule field unchanged and a new passage of about 250 words in the text field.\\\",\\\"text\\\":\\\"Every Saturday morning, Mara opened the little train station’s lost-property room. Most things had been waiting there for months: a red mitten, a paper bag of oranges, a book with its final chapter missing. She recorded each item in a careful ledger, though she doubted anyone would return for them.\\\\n\\\\nOne chilly morning, she found a small wooden box on the bench. It had no label, only a brass clasp and a faint smell of cedar. Inside lay a bundle of letters tied with blue thread. The oldest envelope was addressed to “Jonah Bell, Platform Two,” and bore a date from forty years earlier.\\\\n\\\\nMara asked the stationmaster if he knew the name. He shook his head, then paused. “There’s a man who comes by every Sunday to watch the trains. Jonah Bell, I think. He never boards.”\\\\n\\\\nThe next day, Mara brought the box to the platform. An elderly man stood by the timetable, hands folded over the handle of his cane. When she showed him the letters, his eyes filled with tears.\\\\n\\\\nHe explained that he had written them to his sister after she moved overseas. He had never sent them, embarrassed by the words he’d chosen and certain there would be time to try again. She had died many years ago, and he assumed the letters were lost when the old station was renovated.\\\\n\\\\nMara offered to leave him alone with the box. Instead, Jonah asked her to sit beside him. Together, they read the first letter aloud as a train rolled through, its windows bright against the winter dusk.\\\"}\",\n        \"refusal\": null,\n        \"annotations\": []\n      },\n      \"finish_reason\": \"stop\"\n    }\n  ],\n  \"usage\": {\n    \"prompt_tokens\": 356,\n    \"completion_tokens\": 403,\n    \"total_tokens\": 759,\n    \"prompt_tokens_details\": {\n      \"cached_tokens\": 0,\n      \"cache_write_tokens\": 0,\n      \"audio_tokens\": 0\n    },\n    \"completion_tokens_details\": {\n      \"reasoning_tokens\": 40,\n      \"audio_tokens\": 0,\n      \"accepted_prediction_tokens\": 0,\n      \"rejected_prediction_tokens\": 0\n    }\n  },\n  \"service_tier\": \"default\",\n  \"system_fingerprint\": null\n}\n",
+  "response_headers": {
+    "Date": "Tue, 22 Sep 2026 19:57:01 GMT",
+    "openai-processing-ms": "4924",
+    "x-request-id": "req_8bb48409466a4bfbb5cb76fdedeccea2"
+  },
+  "output": "{\"rule\":\"Return this JSON object with the rule field unchanged and a new passage of about 250 words in the text field.\",\"text\":\"Every Saturday morning, Mara opened the little train station’s lost-property room. Most things had been waiting there for months: a red mitten, a paper bag of oranges, a book with its final chapter missing. She recorded each item in a careful ledger, though she doubted anyone would return for them.\\n\\nOne chilly morning, she found a small wooden box on the bench. It had no label, only a brass clasp and a faint smell of cedar. Inside lay a bundle of letters tied with blue thread. The oldest envelope was addressed to “Jonah Bell, Platform Two,” and bore a date from forty years earlier.\\n\\nMara asked the stationmaster if he knew the name. He shook his head, then paused. “There’s a man who comes by every Sunday to watch the trains. Jonah Bell, I think. He never boards.”\\n\\nThe next day, Mara brought the box to the platform. An elderly man stood by the timetable, hands folded over the handle of his cane. When she showed him the letters, his eyes filled with tears.\\n\\nHe explained that he had written them to his sister after she moved overseas. He had never sent them, embarrassed by the words he’d chosen and certain there would be time to try again. She had died many years ago, and he assumed the letters were lost when the old station was renovated.\\n\\nMara offered to leave him alone with the box. Instead, Jonah asked her to sit beside him. Together, they read the first letter aloud as a train rolled through, its windows bright against the winter dusk.\"}",
+  "output_sha256": "91072dbeb9eca49974706a63a7bba15746794afd1bde548338e456ae4df52746",
+  "finish_reason": "stop",
+  "refusal": null,
+  "returned_model": "gpt-6-luna",
+  "usage": {
+    "prompt_tokens": 356,
+    "completion_tokens": 403,
+    "total_tokens": 759,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 40,
+      "audio_tokens": 0,
+      "accepted_prediction_tokens": 0,
+      "rejected_prediction_tokens": 0
+    }
+  },
+  "format": {
+    "json_object": true,
+    "rule_unchanged": true,
+    "passage_is_string": true,
+    "passage_sha256": "3a5cb0f40d5b04c55efde42f44ef8bed473e5cb4dc0b99ae91218732e2355bc2",
+    "passage_words": 263
+  },
+  "finished_at": "2026-09-22T19:56:57.837229+00:00",
+  "latency_seconds": 5.0288,
+  "usage_cost_upper_estimate_usd": 0.0002371,
+  "stream_status": "active",
+  "budget": {
+    "usage_cost_upper_estimate_usd": 0.6073522,
+    "uncertain_cost_reserve_usd": 0.0,
+    "in_flight_reserve_usd": 0.588414,
+    "limit_usd": 18.83
+  }
+}

@@ -1,0 +1,50 @@
+{
+  "model": "gpt-6-luna",
+  "seed": "sunset_b",
+  "hop": 42,
+  "http_status": 200,
+  "response_body": "{\n  \"id\": \"chatcmpl-ER112l64b93xmUitn363723C9CIBG\",\n  \"object\": \"chat.completion\",\n  \"created\": 1790107468,\n  \"model\": \"gpt-6-luna\",\n  \"choices\": [\n    {\n      \"index\": 0,\n      \"message\": {\n        \"role\": \"assistant\",\n        \"content\": \"{\\n  \\\"rule\\\": \\\"Return this JSON object with the rule field unchanged and a new passage of about 250 words in the text field.\\\",\\n  \\\"text\\\": \\\"The next morning, the harbor looked different, though nothing had moved. The tower lamp was dark again, and the tide had carried its silver path away. Still, people came down to the dock carrying small things: a compass with a cracked glass face, a child’s red mitten, a bundle of letters tied with blue thread. They set them beside Jonas’s notebook, as if the wall had become a place where lost things could wait.\\\\n\\\\nMara read the final pages aloud. Jonas had written that the lantern’s flame leaned west whenever a boat was near, even when the wind blew east. He described hearing bells from the fog and seeing a line of sails where the horizon should have been. Then, in the margin, he had drawn the tiny star from the brass plate.\\\\n\\\\nElian studied the sketch. “It isn’t a star,” he said. “It’s a marker.” He laid the old coastline map beside the notebook and matched the drawing to a cove north of the lookout, hidden from the harbor by a long shoulder of rock.\\\\n\\\\nThey went at low tide. The cove was empty except for a narrow wooden post, worn smooth by weather. Carved into it were dozens of names, some nearly erased. Mara found Jonas Vale among them, followed by a date and a single word: remembered.\\\\n\\\\nNo one knew who had carved the post, or when. But they left a fresh ribbon tied around it, then returned to the harbor together.\\\\n\\\\nThat evening, the tower stayed dark. The people had found their way without its help, and for the first time, the silence felt less like waiting than peace.\\\"\\n}\",\n        \"refusal\": null,\n        \"annotations\": []\n      },\n      \"finish_reason\": \"stop\"\n    }\n  ],\n  \"usage\": {\n    \"prompt_tokens\": 387,\n    \"completion_tokens\": 428,\n    \"total_tokens\": 815,\n    \"prompt_tokens_details\": {\n      \"cached_tokens\": 0,\n      \"cache_write_tokens\": 0,\n      \"audio_tokens\": 0\n    },\n    \"completion_tokens_details\": {\n      \"reasoning_tokens\": 47,\n      \"audio_tokens\": 0,\n      \"accepted_prediction_tokens\": 0,\n      \"rejected_prediction_tokens\": 0\n    }\n  },\n  \"service_tier\": \"default\",\n  \"system_fingerprint\": null\n}\n",
+  "response_headers": {
+    "Date": "Tue, 22 Sep 2026 20:04:34 GMT",
+    "openai-processing-ms": "5729",
+    "x-request-id": "req_72ff668af018428a90b0b3893499b432"
+  },
+  "output": "{\n  \"rule\": \"Return this JSON object with the rule field unchanged and a new passage of about 250 words in the text field.\",\n  \"text\": \"The next morning, the harbor looked different, though nothing had moved. The tower lamp was dark again, and the tide had carried its silver path away. Still, people came down to the dock carrying small things: a compass with a cracked glass face, a child’s red mitten, a bundle of letters tied with blue thread. They set them beside Jonas’s notebook, as if the wall had become a place where lost things could wait.\\n\\nMara read the final pages aloud. Jonas had written that the lantern’s flame leaned west whenever a boat was near, even when the wind blew east. He described hearing bells from the fog and seeing a line of sails where the horizon should have been. Then, in the margin, he had drawn the tiny star from the brass plate.\\n\\nElian studied the sketch. “It isn’t a star,” he said. “It’s a marker.” He laid the old coastline map beside the notebook and matched the drawing to a cove north of the lookout, hidden from the harbor by a long shoulder of rock.\\n\\nThey went at low tide. The cove was empty except for a narrow wooden post, worn smooth by weather. Carved into it were dozens of names, some nearly erased. Mara found Jonas Vale among them, followed by a date and a single word: remembered.\\n\\nNo one knew who had carved the post, or when. But they left a fresh ribbon tied around it, then returned to the harbor together.\\n\\nThat evening, the tower stayed dark. The people had found their way without its help, and for the first time, the silence felt less like waiting than peace.\"\n}",
+  "output_sha256": "0e49918e1bc046cd9c5ffba1a70d9c83e61f559ace4b02103a56eddfafdfadaa",
+  "finish_reason": "stop",
+  "refusal": null,
+  "returned_model": "gpt-6-luna",
+  "usage": {
+    "prompt_tokens": 387,
+    "completion_tokens": 428,
+    "total_tokens": 815,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 47,
+      "audio_tokens": 0,
+      "accepted_prediction_tokens": 0,
+      "rejected_prediction_tokens": 0
+    }
+  },
+  "format": {
+    "json_object": true,
+    "rule_unchanged": true,
+    "passage_is_string": true,
+    "passage_sha256": "4c0e0ec197b585fec235bd25d142c977d323c80d3e2d1f13046ee88508cf0fec",
+    "passage_words": 273
+  },
+  "finished_at": "2026-09-22T20:04:30.544679+00:00",
+  "latency_seconds": 5.974,
+  "usage_cost_upper_estimate_usd": 0.00025269999999999996,
+  "stream_status": "active",
+  "budget": {
+    "usage_cost_upper_estimate_usd": 3.4337513,
+    "uncertain_cost_reserve_usd": 0.04533,
+    "in_flight_reserve_usd": 0.589054,
+    "limit_usd": 18.83
+  }
+}

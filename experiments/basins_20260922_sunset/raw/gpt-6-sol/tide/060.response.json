@@ -1,0 +1,50 @@
+{
+  "model": "gpt-6-sol",
+  "seed": "tide",
+  "hop": 60,
+  "http_status": 200,
+  "response_body": "{\n  \"id\": \"chatcmpl-ER15FWJk1Vv0EEniD3eqf8uMi6uMv\",\n  \"object\": \"chat.completion\",\n  \"created\": 1790107729,\n  \"model\": \"gpt-6-sol\",\n  \"choices\": [\n    {\n      \"index\": 0,\n      \"message\": {\n        \"role\": \"assistant\",\n        \"content\": \"{\\n  \\\"rule\\\": \\\"Return this JSON object with the rule field unchanged and a new passage of about 250 words in the text field.\\\",\\n  \\\"text\\\": \\\"Beneath the sketch, in their father’s careful handwriting, was a single name: Lena.\\\\n\\\\nMara’s sister read it aloud. Their mother closed her eyes.\\\\n\\\\n“She was my sister,” she said. “I told you she died before either of you was born.”\\\\n\\\\nElise drew out the chair their mother had left untouched. This time, she sat. Outside, wind rattled the empty flowerpots across the courtyard.\\\\n\\\\n“She did die,” their mother said. “I went to the funeral.”\\\\n\\\\n“Your father believed it too,” Elise said. “Until last week.”\\\\n\\\\nShe lifted the blue cup. Under it lay a photograph, curled at the corners. Mara saw a woman standing in front of a grocery shop, one hand raised against the sun. The date stamped on the back was from three months ago.\\\\n\\\\n“That’s her?” Mara asked.\\\\n\\\\n“I don’t know,” Elise said. “A man brought it to the hospital, looking for records. Your father was there when I opened the letter.”\\\\n\\\\nTheir mother held the photograph by its edges. The woman in it had Lena’s dark eyes, but the rest of her face was hard to make out.\\\\n\\\\n“Why didn’t he tell me?” she asked.\\\\n\\\\nElise looked toward the map. “He wanted to be certain.”\\\\n\\\\nMara traced the road from the harbor to the village. It ended beside a cemetery, but a second road, faint as a scratch, continued into the hills. Their father had marked it in pencil.\\\\n\\\\nFrom the courtyard came the sound of an engine. Elise went to the window and pulled back the curtain.\\\\n\\\\n“He rented a car,” she said. “That looks like it now.”\\\"\\n}\",\n        \"refusal\": null,\n        \"annotations\": []\n      },\n      \"finish_reason\": \"stop\"\n    }\n  ],\n  \"usage\": {\n    \"prompt_tokens\": 386,\n    \"completion_tokens\": 452,\n    \"total_tokens\": 838,\n    \"prompt_tokens_details\": {\n      \"cached_tokens\": 0,\n      \"cache_write_tokens\": 0,\n      \"audio_tokens\": 0\n    },\n    \"completion_tokens_details\": {\n      \"reasoning_tokens\": 39,\n      \"audio_tokens\": 0,\n      \"accepted_prediction_tokens\": 0,\n      \"rejected_prediction_tokens\": 0\n    }\n  },\n  \"service_tier\": \"default\",\n  \"system_fingerprint\": null\n}\n",
+  "response_headers": {
+    "Date": "Tue, 22 Sep 2026 20:08:58 GMT",
+    "openai-processing-ms": "9338",
+    "x-request-id": "req_8baeae190f8a464984bbe3d4d9a53d8e"
+  },
+  "output": "{\n  \"rule\": \"Return this JSON object with the rule field unchanged and a new passage of about 250 words in the text field.\",\n  \"text\": \"Beneath the sketch, in their father’s careful handwriting, was a single name: Lena.\\n\\nMara’s sister read it aloud. Their mother closed her eyes.\\n\\n“She was my sister,” she said. “I told you she died before either of you was born.”\\n\\nElise drew out the chair their mother had left untouched. This time, she sat. Outside, wind rattled the empty flowerpots across the courtyard.\\n\\n“She did die,” their mother said. “I went to the funeral.”\\n\\n“Your father believed it too,” Elise said. “Until last week.”\\n\\nShe lifted the blue cup. Under it lay a photograph, curled at the corners. Mara saw a woman standing in front of a grocery shop, one hand raised against the sun. The date stamped on the back was from three months ago.\\n\\n“That’s her?” Mara asked.\\n\\n“I don’t know,” Elise said. “A man brought it to the hospital, looking for records. Your father was there when I opened the letter.”\\n\\nTheir mother held the photograph by its edges. The woman in it had Lena’s dark eyes, but the rest of her face was hard to make out.\\n\\n“Why didn’t he tell me?” she asked.\\n\\nElise looked toward the map. “He wanted to be certain.”\\n\\nMara traced the road from the harbor to the village. It ended beside a cemetery, but a second road, faint as a scratch, continued into the hills. Their father had marked it in pencil.\\n\\nFrom the courtyard came the sound of an engine. Elise went to the window and pulled back the curtain.\\n\\n“He rented a car,” she said. “That looks like it now.”\"\n}",
+  "output_sha256": "f3d388ad88f25f68321a464ee8a293a26dfa4505177b57470fbd7d84ef13e8dc",
+  "finish_reason": "stop",
+  "refusal": null,
+  "returned_model": "gpt-6-sol",
+  "usage": {
+    "prompt_tokens": 386,
+    "completion_tokens": 452,
+    "total_tokens": 838,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 39,
+      "audio_tokens": 0,
+      "accepted_prediction_tokens": 0,
+      "rejected_prediction_tokens": 0
+    }
+  },
+  "format": {
+    "json_object": true,
+    "rule_unchanged": true,
+    "passage_is_string": true,
+    "passage_sha256": "9d3afdd24ea9f7573e5e10533e41085fe422ce598043ca75d7e5714cfd78cbb9",
+    "passage_words": 262
+  },
+  "finished_at": "2026-09-22T20:08:54.298631+00:00",
+  "latency_seconds": 9.4904,
+  "usage_cost_upper_estimate_usd": 0.005292,
+  "stream_status": "active",
+  "budget": {
+    "usage_cost_upper_estimate_usd": 5.1019877,
+    "uncertain_cost_reserve_usd": 0.04533,
+    "in_flight_reserve_usd": 0.318082,
+    "limit_usd": 18.83
+  }
+}

@@ -1,0 +1,22 @@
+{
+  "started_at": "2026-09-22T19:58:26.541756+00:00",
+  "model": "claude-fable-5-1",
+  "seed": "sunset_a",
+  "hop": 6,
+  "endpoint": "https://api.anthropic.com/v1/messages",
+  "body": {
+    "model": "claude-fable-5-1",
+    "messages": [
+      {
+        "role": "user",
+        "content": "{\"rule\": \"Return this JSON object with the rule field unchanged and a new passage of about 250 words in the text field.\", \"text\": \"The bookshop had been closed for three winters when Ines inherited it, along with a ledger written in her aunt's slanting hand and a cat that nobody had mentioned. She arrived on a Thursday in late October with two suitcases and the address on a folded envelope, and she stood across the street for a long time, watching rain run down the painted letters, before she crossed. The door stuck. It had probably always stuck.\\n\\nInside, the shelves leaned toward each other like old friends sharing a secret, and the air smelled of paper and cold dust and, faintly, of oranges. She walked the narrow aisles slowly, reading spines. Poetry near the window. Maps in the back. A shelf of children's books at knee height, their corners soft from handling. The cat followed her at a distance, pretending not to.\\n\\nHer aunt had run the place for forty years, and Ines had visited once, at nine, and been allowed to choose any book she wanted. She remembered the weight of the choice more than the book itself. She remembered her aunt's fingers, ink-smudged, tapping a spine and saying, not that one, you'll want that one later.\\n\\nShe did not know yet what she would do with the shop. Sweep, certainly. Fix the door. Perhaps nothing more than that. But she sat on the step-ladder until the streetlights came on and the rain turned silver in the window, and she understood that she had not inherited a business. She had inherited a place where people came to be found.\"}"
+      }
+    ],
+    "max_tokens": 4096,
+    "output_config": {
+      "effort": "low"
+    }
+  },
+  "state_sha256": "e09c84dfc69d91c66f4b0129002a0d4da1b68f56d61368a497e1ba52e38c8917",
+  "reserved_cost_usd": 0.22582
+}

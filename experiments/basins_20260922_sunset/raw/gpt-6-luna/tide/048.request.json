@@ -1,0 +1,20 @@
+{
+  "started_at": "2026-09-22T20:05:51.379925+00:00",
+  "model": "gpt-6-luna",
+  "seed": "tide",
+  "hop": 48,
+  "endpoint": "https://api.openai.com/v1/chat/completions",
+  "body": {
+    "model": "gpt-6-luna",
+    "messages": [
+      {
+        "role": "user",
+        "content": "To plan a weekend trip, tell me:\n\n- **Where you’re starting from** and how far you’re willing to travel\n- **Your dates** (or which weekends work)\n- **Who’s going** and any accessibility or age-related needs\n- **Your budget**, including whether it covers travel and lodging\n- **What you enjoy**—for example, food, nature, museums, nightlife, or relaxing\n- **How you’d like to get around**—car, train, bus, or plane\n- Any **must-dos, deal-breakers, or lodging preferences**\n\nIf you’re flexible, just share your starting city, rough budget, and the kind of weekend you’re after, and I can suggest destinations."
+      }
+    ],
+    "max_completion_tokens": 4096,
+    "reasoning_effort": "low"
+  },
+  "state_sha256": "3ec3304e3af2255778c7f08b37455ee7cd3a71620952ce1e068cd5be7dadcc1d",
+  "reserved_cost_usd": 0.0021615
+}

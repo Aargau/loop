@@ -1,0 +1,50 @@
+{
+  "model": "gpt-6-sol",
+  "seed": "sunset_b",
+  "hop": 3,
+  "http_status": 200,
+  "response_body": "{\n  \"id\": \"chatcmpl-ER0sqkH9cQBnHOYFKKms2djU5ulro\",\n  \"object\": \"chat.completion\",\n  \"created\": 1790106960,\n  \"model\": \"gpt-6-sol\",\n  \"choices\": [\n    {\n      \"index\": 0,\n      \"message\": {\n        \"role\": \"assistant\",\n        \"content\": \"{\\\"rule\\\":\\\"Return this JSON object with the rule field unchanged and a new passage of about 250 words in the text field.\\\",\\\"text\\\":\\\"The next morning, Mara found her mother standing beneath the apple tree. Rain still clung to its leaves, and the grass soaked the hems of their trousers as Mara crossed the yard.\\\\n\\\\n“I didn’t know you’d planted one here,” Mara said.\\\\n\\\\nHer mother rested a hand against the trunk. “Your grandfather brought it as a sapling. The year you were born.”\\\\n\\\\nMara looked up. The branches were bare of fruit, though a few small apples lay in the wet grass. She picked one up and turned it in her palm. A bird had pecked a neat hole in its side.\\\\n\\\\n“He never came back after that,” her mother said. “I told myself it was because he was too proud.”\\\\n\\\\n“Maybe he was.” Mara slipped the apple into her coat pocket. “Maybe he didn’t know if he’d be welcome.”\\\\n\\\\nHer mother said nothing. From the kitchen came the faint rattle of the loose window latch, a sound Mara remembered from childhood. She had offered to fix it yesterday, and her mother had told her not to bother.\\\\n\\\\nThey stood beneath the tree until the clouds began to thin. Then her mother pointed to a branch hanging low over the path.\\\\n\\\\n“That one needs cutting back before winter.”\\\\n\\\\nMara went to the shed for the pruning shears. When she returned, her mother was gathering the fallen apples into the hem of her sweater. Some were bruised; a few were sound. She carried them inside to wash, while Mara steadied the branch with one hand and made the first cut.\\\"}\",\n        \"refusal\": null,\n        \"annotations\": []\n      },\n      \"finish_reason\": \"stop\"\n    }\n  ],\n  \"usage\": {\n    \"prompt_tokens\": 363,\n    \"completion_tokens\": 412,\n    \"total_tokens\": 775,\n    \"prompt_tokens_details\": {\n      \"cached_tokens\": 0,\n      \"cache_write_tokens\": 0,\n      \"audio_tokens\": 0\n    },\n    \"completion_tokens_details\": {\n      \"reasoning_tokens\": 42,\n      \"audio_tokens\": 0,\n      \"accepted_prediction_tokens\": 0,\n      \"rejected_prediction_tokens\": 0\n    }\n  },\n  \"service_tier\": \"default\",\n  \"system_fingerprint\": null\n}\n",
+  "response_headers": {
+    "Date": "Tue, 22 Sep 2026 19:56:06 GMT",
+    "openai-processing-ms": "5868",
+    "x-request-id": "req_eb7b3c87c9b8433fa895cf4cf7498164"
+  },
+  "output": "{\"rule\":\"Return this JSON object with the rule field unchanged and a new passage of about 250 words in the text field.\",\"text\":\"The next morning, Mara found her mother standing beneath the apple tree. Rain still clung to its leaves, and the grass soaked the hems of their trousers as Mara crossed the yard.\\n\\n“I didn’t know you’d planted one here,” Mara said.\\n\\nHer mother rested a hand against the trunk. “Your grandfather brought it as a sapling. The year you were born.”\\n\\nMara looked up. The branches were bare of fruit, though a few small apples lay in the wet grass. She picked one up and turned it in her palm. A bird had pecked a neat hole in its side.\\n\\n“He never came back after that,” her mother said. “I told myself it was because he was too proud.”\\n\\n“Maybe he was.” Mara slipped the apple into her coat pocket. “Maybe he didn’t know if he’d be welcome.”\\n\\nHer mother said nothing. From the kitchen came the faint rattle of the loose window latch, a sound Mara remembered from childhood. She had offered to fix it yesterday, and her mother had told her not to bother.\\n\\nThey stood beneath the tree until the clouds began to thin. Then her mother pointed to a branch hanging low over the path.\\n\\n“That one needs cutting back before winter.”\\n\\nMara went to the shed for the pruning shears. When she returned, her mother was gathering the fallen apples into the hem of her sweater. Some were bruised; a few were sound. She carried them inside to wash, while Mara steadied the branch with one hand and made the first cut.\"}",
+  "output_sha256": "0dbccf9199d5ae17bf8efcdfb568f379a82252f951acbef9f68aa99e2beea7e1",
+  "finish_reason": "stop",
+  "refusal": null,
+  "returned_model": "gpt-6-sol",
+  "usage": {
+    "prompt_tokens": 363,
+    "completion_tokens": 412,
+    "total_tokens": 775,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 42,
+      "audio_tokens": 0,
+      "accepted_prediction_tokens": 0,
+      "rejected_prediction_tokens": 0
+    }
+  },
+  "format": {
+    "json_object": true,
+    "rule_unchanged": true,
+    "passage_is_string": true,
+    "passage_sha256": "41033e50cd9b968cf57daf80ece5b021cf2a96f3bea6314ec51bf9203aed7470",
+    "passage_words": 257
+  },
+  "finished_at": "2026-09-22T19:56:02.347470+00:00",
+  "latency_seconds": 5.9888,
+  "usage_cost_upper_estimate_usd": 0.004846,
+  "stream_status": "active",
+  "budget": {
+    "usage_cost_upper_estimate_usd": 0.2226005,
+    "uncertain_cost_reserve_usd": 0.0,
+    "in_flight_reserve_usd": 0.5449822,
+    "limit_usd": 18.83
+  }
+}

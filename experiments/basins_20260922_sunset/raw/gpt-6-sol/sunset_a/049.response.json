@@ -1,0 +1,50 @@
+{
+  "model": "gpt-6-sol",
+  "seed": "sunset_a",
+  "hop": 49,
+  "http_status": 200,
+  "response_body": "{\n  \"id\": \"chatcmpl-ER12sR2xvkyzSs2QvgDL0FVeTuiSL\",\n  \"object\": \"chat.completion\",\n  \"created\": 1790107582,\n  \"model\": \"gpt-6-sol\",\n  \"choices\": [\n    {\n      \"index\": 0,\n      \"message\": {\n        \"role\": \"assistant\",\n        \"content\": \"{\\n  \\\"rule\\\": \\\"Return this JSON object with the rule field unchanged and a new passage of about 250 words in the text field.\\\",\\n  \\\"text\\\": \\\"In the morning, Imani carried the drawing back to the bakery. Her grandfather was pulling loaves from the oven, so she waited by the counter while the air filled with the smell of warm crust.\\\\n\\\\nWhen he had set the last loaf on its rack, she unfolded the paper. It showed three boys beside a fence. The smallest held up a marble marked with a yellow ribbon.\\\\n\\\\nHer grandfather wiped his hands on his apron and leaned closer. “Where did you get this?”\\\\n\\\\n“It was tucked behind a kitchen drawer. Is that you?”\\\\n\\\\nHe pointed to the boy in the middle. “That’s me. My brother Sami drew it.” He studied the smallest boy for a while. “And that’s Nabil. He was the one who gave me the marble.”\\\\n\\\\n“I thought you said you kept it hidden from your brothers.”\\\\n\\\\n“From Sami,” he said, smiling. “Nabil knew where it was.”\\\\n\\\\nImani took the marble from her pocket and laid it beside the drawing. Her grandfather turned it slowly beneath the counter lamp.\\\\n\\\\n“Nabil went away when we were young,” he said. “I always meant to ask if he’d taken it with him.”\\\\n\\\\n“Could we ask him now?”\\\\n\\\\n“We could.” He reached for the shop telephone, then paused. “After the bread is out front. He likes to know the bakery is doing well.”\\\\n\\\\nImani helped carry the loaves to the window. When the shelves were full, her grandfather dialed. She stood beside him with the marble in her palm, waiting to hear whether Nabil remembered.\\\"\\n}\",\n        \"refusal\": null,\n        \"annotations\": []\n      },\n      \"finish_reason\": \"stop\"\n    }\n  ],\n  \"usage\": {\n    \"prompt_tokens\": 394,\n    \"completion_tokens\": 416,\n    \"total_tokens\": 810,\n    \"prompt_tokens_details\": {\n      \"cached_tokens\": 0,\n      \"cache_write_tokens\": 0,\n      \"audio_tokens\": 0\n    },\n    \"completion_tokens_details\": {\n      \"reasoning_tokens\": 29,\n      \"audio_tokens\": 0,\n      \"accepted_prediction_tokens\": 0,\n      \"rejected_prediction_tokens\": 0\n    }\n  },\n  \"service_tier\": \"default\",\n  \"system_fingerprint\": null\n}\n",
+  "response_headers": {
+    "Date": "Tue, 22 Sep 2026 20:06:28 GMT",
+    "openai-processing-ms": "6260",
+    "x-request-id": "req_363fbf8c147c4692a27d08fccda6c626"
+  },
+  "output": "{\n  \"rule\": \"Return this JSON object with the rule field unchanged and a new passage of about 250 words in the text field.\",\n  \"text\": \"In the morning, Imani carried the drawing back to the bakery. Her grandfather was pulling loaves from the oven, so she waited by the counter while the air filled with the smell of warm crust.\\n\\nWhen he had set the last loaf on its rack, she unfolded the paper. It showed three boys beside a fence. The smallest held up a marble marked with a yellow ribbon.\\n\\nHer grandfather wiped his hands on his apron and leaned closer. “Where did you get this?”\\n\\n“It was tucked behind a kitchen drawer. Is that you?”\\n\\nHe pointed to the boy in the middle. “That’s me. My brother Sami drew it.” He studied the smallest boy for a while. “And that’s Nabil. He was the one who gave me the marble.”\\n\\n“I thought you said you kept it hidden from your brothers.”\\n\\n“From Sami,” he said, smiling. “Nabil knew where it was.”\\n\\nImani took the marble from her pocket and laid it beside the drawing. Her grandfather turned it slowly beneath the counter lamp.\\n\\n“Nabil went away when we were young,” he said. “I always meant to ask if he’d taken it with him.”\\n\\n“Could we ask him now?”\\n\\n“We could.” He reached for the shop telephone, then paused. “After the bread is out front. He likes to know the bakery is doing well.”\\n\\nImani helped carry the loaves to the window. When the shelves were full, her grandfather dialed. She stood beside him with the marble in her palm, waiting to hear whether Nabil remembered.\"\n}",
+  "output_sha256": "9fd67366ec6bc16d840a312fa6813c88ff9278e2a5b88290342eba8177e4ab0c",
+  "finish_reason": "stop",
+  "refusal": null,
+  "returned_model": "gpt-6-sol",
+  "usage": {
+    "prompt_tokens": 394,
+    "completion_tokens": 416,
+    "total_tokens": 810,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 29,
+      "audio_tokens": 0,
+      "accepted_prediction_tokens": 0,
+      "rejected_prediction_tokens": 0
+    }
+  },
+  "format": {
+    "json_object": true,
+    "rule_unchanged": true,
+    "passage_is_string": true,
+    "passage_sha256": "7f96ad81a25c6e301a5379bb6d918806030f1da8a8dceca2d6b301efc524910d",
+    "passage_words": 253
+  },
+  "finished_at": "2026-09-22T20:06:24.261253+00:00",
+  "latency_seconds": 6.3575,
+  "usage_cost_upper_estimate_usd": 0.004948,
+  "stream_status": "active",
+  "budget": {
+    "usage_cost_upper_estimate_usd": 4.1734115,
+    "uncertain_cost_reserve_usd": 0.04533,
+    "in_flight_reserve_usd": 0.5443466,
+    "limit_usd": 18.83
+  }
+}

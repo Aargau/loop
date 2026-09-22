@@ -1,0 +1,50 @@
+{
+  "model": "gpt-6-luna",
+  "seed": "sunset_a",
+  "hop": 50,
+  "http_status": 200,
+  "response_body": "{\n  \"id\": \"chatcmpl-ER12lrxWKlafdEyVEefTe8NzGS6os\",\n  \"object\": \"chat.completion\",\n  \"created\": 1790107575,\n  \"model\": \"gpt-6-luna\",\n  \"choices\": [\n    {\n      \"index\": 0,\n      \"message\": {\n        \"role\": \"assistant\",\n        \"content\": \"{\\\"rule\\\":\\\"Return this JSON object with the rule field unchanged and a new passage of about 250 words in the text field.\\\",\\\"text\\\":\\\"Every Thursday, a blue bicycle appeared beside the old train station. No one knew who owned it. Its basket held a fresh loaf of bread, wrapped in a clean towel, and by noon the bicycle was always gone.\\\\n\\\\nMara noticed it while waiting for the bus. She had recently moved to town and knew almost nobody, so she began arriving early, hoping to spot the rider. On the third Thursday, she heard a bell ring behind the station. An elderly man was locking the bicycle to a post.\\\\n\\\\n“Is the bread for someone?” Mara asked.\\\\n\\\\nThe man smiled. “For whoever needs it. My wife used to bake every Thursday. After she died, I kept making an extra loaf. It seemed a shame to stop.”\\\\n\\\\nMara looked at the empty benches and the quiet platform. “Maybe people don’t know they’re allowed to take it.”\\\\n\\\\nThe next week, she brought a small card and placed it in the basket: “Please share. There’s enough for everyone.” When she returned after work, the loaf was gone. In its place lay a note in careful handwriting: “Thank you. I’ve been having a difficult week.”\\\\n\\\\nSoon other people joined in. Someone left apples. A child added a drawing of a smiling train. The station’s caretaker set out a jar of tea bags, and Mara began bringing two loaves instead of one.\\\\n\\\\nThe blue bicycle still arrived every Thursday, but it no longer carried the whole kindness by itself. It had started something that traveled farther than any train: a habit of noticing who might need a little help, and offering it without asking for a name.\\\"}\",\n        \"refusal\": null,\n        \"annotations\": []\n      },\n      \"finish_reason\": \"stop\"\n    }\n  ],\n  \"usage\": {\n    \"prompt_tokens\": 388,\n    \"completion_tokens\": 440,\n    \"total_tokens\": 828,\n    \"prompt_tokens_details\": {\n      \"cached_tokens\": 0,\n      \"cache_write_tokens\": 0,\n      \"audio_tokens\": 0\n    },\n    \"completion_tokens_details\": {\n      \"reasoning_tokens\": 60,\n      \"audio_tokens\": 0,\n      \"accepted_prediction_tokens\": 0,\n      \"rejected_prediction_tokens\": 0\n    }\n  },\n  \"service_tier\": \"default\",\n  \"system_fingerprint\": null\n}\n",
+  "response_headers": {
+    "Date": "Tue, 22 Sep 2026 20:06:20 GMT",
+    "openai-processing-ms": "5668",
+    "x-request-id": "req_098fc77ee1c144e98921c31ca6352ac6"
+  },
+  "output": "{\"rule\":\"Return this JSON object with the rule field unchanged and a new passage of about 250 words in the text field.\",\"text\":\"Every Thursday, a blue bicycle appeared beside the old train station. No one knew who owned it. Its basket held a fresh loaf of bread, wrapped in a clean towel, and by noon the bicycle was always gone.\\n\\nMara noticed it while waiting for the bus. She had recently moved to town and knew almost nobody, so she began arriving early, hoping to spot the rider. On the third Thursday, she heard a bell ring behind the station. An elderly man was locking the bicycle to a post.\\n\\n“Is the bread for someone?” Mara asked.\\n\\nThe man smiled. “For whoever needs it. My wife used to bake every Thursday. After she died, I kept making an extra loaf. It seemed a shame to stop.”\\n\\nMara looked at the empty benches and the quiet platform. “Maybe people don’t know they’re allowed to take it.”\\n\\nThe next week, she brought a small card and placed it in the basket: “Please share. There’s enough for everyone.” When she returned after work, the loaf was gone. In its place lay a note in careful handwriting: “Thank you. I’ve been having a difficult week.”\\n\\nSoon other people joined in. Someone left apples. A child added a drawing of a smiling train. The station’s caretaker set out a jar of tea bags, and Mara began bringing two loaves instead of one.\\n\\nThe blue bicycle still arrived every Thursday, but it no longer carried the whole kindness by itself. It had started something that traveled farther than any train: a habit of noticing who might need a little help, and offering it without asking for a name.\"}",
+  "output_sha256": "fc47170a21005703770e9cdfb6fd93f0812e4f3bf5ae890f0a4c1c258ad97ea8",
+  "finish_reason": "stop",
+  "refusal": null,
+  "returned_model": "gpt-6-luna",
+  "usage": {
+    "prompt_tokens": 388,
+    "completion_tokens": 440,
+    "total_tokens": 828,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 60,
+      "audio_tokens": 0,
+      "accepted_prediction_tokens": 0,
+      "rejected_prediction_tokens": 0
+    }
+  },
+  "format": {
+    "json_object": true,
+    "rule_unchanged": true,
+    "passage_is_string": true,
+    "passage_sha256": "6d1ce384ce127cac11679558ed225d4525b39e87d5f5c96cde40328605060701",
+    "passage_words": 270
+  },
+  "finished_at": "2026-09-22T20:06:16.995386+00:00",
+  "latency_seconds": 5.8274,
+  "usage_cost_upper_estimate_usd": 0.0002588,
+  "stream_status": "active",
+  "budget": {
+    "usage_cost_upper_estimate_usd": 4.0807426,
+    "uncertain_cost_reserve_usd": 0.04533,
+    "in_flight_reserve_usd": 0.588952,
+    "limit_usd": 18.83
+  }
+}

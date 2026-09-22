@@ -1,0 +1,50 @@
+{
+  "model": "gpt-6-luna",
+  "seed": "sunset_a",
+  "hop": 46,
+  "http_status": 200,
+  "response_body": "{\n  \"id\": \"chatcmpl-ER11mVz5UjrLnf3neb5idXfrp3bxq\",\n  \"object\": \"chat.completion\",\n  \"created\": 1790107514,\n  \"model\": \"gpt-6-luna\",\n  \"choices\": [\n    {\n      \"index\": 0,\n      \"message\": {\n        \"role\": \"assistant\",\n        \"content\": \"{\\\"rule\\\":\\\"Return this JSON object with the rule field unchanged and a new passage of about 250 words in the text field.\\\",\\\"text\\\":\\\"On the first cool morning of autumn, Luis noticed a small brass key lying on the steps of the town library. A paper tag was tied to its ring, but rain had blurred the writing until only one word remained: “Clock.”\\\\n\\\\nLuis brought the key inside and showed it to Ms. Avery, the librarian. She glanced toward the old clock above the front desk. It had stopped at ten past three years ago, and no one had been able to open its wooden case.\\\\n\\\\nThe key fit a narrow lock beneath the clock’s face. Ms. Avery turned it slowly, and the case swung open with a soft creak. Inside, they found a tiny envelope and a silver winding key. The envelope held a note written in careful handwriting: “For the next person who wonders why time matters: wind the clock, then listen.”\\\\n\\\\nLuis used the silver key to wind the clock. Its gears clicked, paused, and then began to move. A deep, steady tick filled the library. People looked up from their books and smiled as the hands crept forward.\\\\n\\\\nMs. Avery recognized the handwriting. The note had been left by Mr. Bell, the clockmaker who built the library clock long ago. He had retired, but he still lived nearby. Luis and Ms. Avery walked to his house that afternoon to tell him the clock was working again.\\\\n\\\\nMr. Bell laughed when he heard the ticking. “A clock is useful,” he said, “but its best work is reminding us to notice the moments we share.” From then on, Luis visited every week. Sometimes he helped wind the clock; sometimes he simply sat with Mr. Bell and listened.\\\"}\",\n        \"refusal\": null,\n        \"annotations\": []\n      },\n      \"finish_reason\": \"stop\"\n    }\n  ],\n  \"usage\": {\n    \"prompt_tokens\": 376,\n    \"completion_tokens\": 376,\n    \"total_tokens\": 752,\n    \"prompt_tokens_details\": {\n      \"cached_tokens\": 0,\n      \"cache_write_tokens\": 0,\n      \"audio_tokens\": 0\n    },\n    \"completion_tokens_details\": {\n      \"reasoning_tokens\": 0,\n      \"audio_tokens\": 0,\n      \"accepted_prediction_tokens\": 0,\n      \"rejected_prediction_tokens\": 0\n    }\n  },\n  \"service_tier\": \"default\",\n  \"system_fingerprint\": null\n}\n",
+  "response_headers": {
+    "Date": "Tue, 22 Sep 2026 20:05:19 GMT",
+    "openai-processing-ms": "4581",
+    "x-request-id": "req_560ef7de85e249c096280b1388cc6a0e"
+  },
+  "output": "{\"rule\":\"Return this JSON object with the rule field unchanged and a new passage of about 250 words in the text field.\",\"text\":\"On the first cool morning of autumn, Luis noticed a small brass key lying on the steps of the town library. A paper tag was tied to its ring, but rain had blurred the writing until only one word remained: “Clock.”\\n\\nLuis brought the key inside and showed it to Ms. Avery, the librarian. She glanced toward the old clock above the front desk. It had stopped at ten past three years ago, and no one had been able to open its wooden case.\\n\\nThe key fit a narrow lock beneath the clock’s face. Ms. Avery turned it slowly, and the case swung open with a soft creak. Inside, they found a tiny envelope and a silver winding key. The envelope held a note written in careful handwriting: “For the next person who wonders why time matters: wind the clock, then listen.”\\n\\nLuis used the silver key to wind the clock. Its gears clicked, paused, and then began to move. A deep, steady tick filled the library. People looked up from their books and smiled as the hands crept forward.\\n\\nMs. Avery recognized the handwriting. The note had been left by Mr. Bell, the clockmaker who built the library clock long ago. He had retired, but he still lived nearby. Luis and Ms. Avery walked to his house that afternoon to tell him the clock was working again.\\n\\nMr. Bell laughed when he heard the ticking. “A clock is useful,” he said, “but its best work is reminding us to notice the moments we share.” From then on, Luis visited every week. Sometimes he helped wind the clock; sometimes he simply sat with Mr. Bell and listened.\"}",
+  "output_sha256": "cbc6cd0f3d5a815d95bc47838a615e56719dd3edce1c4bc6c13b3b17185f8e7e",
+  "finish_reason": "stop",
+  "refusal": null,
+  "returned_model": "gpt-6-luna",
+  "usage": {
+    "prompt_tokens": 376,
+    "completion_tokens": 376,
+    "total_tokens": 752,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "audio_tokens": 0,
+      "accepted_prediction_tokens": 0,
+      "rejected_prediction_tokens": 0
+    }
+  },
+  "format": {
+    "json_object": true,
+    "rule_unchanged": true,
+    "passage_is_string": true,
+    "passage_sha256": "9a43d156ac9063e81fde73ba807a650a8d25f16c84cde4475d47a580187ee14d",
+    "passage_words": 277
+  },
+  "finished_at": "2026-09-22T20:05:15.125467+00:00",
+  "latency_seconds": 4.6832,
+  "usage_cost_upper_estimate_usd": 0.00022559999999999998,
+  "stream_status": "active",
+  "budget": {
+    "usage_cost_upper_estimate_usd": 3.7046754,
+    "uncertain_cost_reserve_usd": 0.04533,
+    "in_flight_reserve_usd": 0.58983,
+    "limit_usd": 18.83
+  }
+}

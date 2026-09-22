@@ -1,0 +1,50 @@
+{
+  "model": "gpt-6-astra",
+  "seed": "sunset_a",
+  "hop": 6,
+  "http_status": 200,
+  "response_body": "{\n  \"id\": \"chatcmpl-ER0vygo44gkoFQlzH97cPcChdzrqw\",\n  \"object\": \"chat.completion\",\n  \"created\": 1790107154,\n  \"model\": \"gpt-6-astra\",\n  \"choices\": [\n    {\n      \"index\": 0,\n      \"message\": {\n        \"role\": \"assistant\",\n        \"content\": \"{\\n  \\\"rule\\\": \\\"Return this JSON object with the rule field unchanged and a new passage of about 250 words in the text field.\\\",\\n  \\\"text\\\": \\\"The laundrette was closing at six. At twenty past five, Ruth found a man's shirt turning alone in the last dryer.\\\\n\\\\nShe checked the basket beneath the folding table. Empty. Outside, a bus pulled away from the stop.\\\\n\\\\nHer mother would have known whose shirt it was. She had known which customers wanted their collars pressed and which ones counted their change twice. Ruth had been running the place for eleven days.\\\\n\\\\nAt half past five, an elderly man came in carrying a shopping bag.\\\\n\\\\n“I think I've left something,” he said.\\\\n\\\\nRuth pointed to the dryer.\\\\n\\\\nHe nodded but made no move towards it.\\\\n\\\\n“Still damp?” he asked.\\\\n\\\\nShe opened the door and touched a cuff.\\\\n\\\\n“No. It's ready.”\\\\n\\\\n“Could it have another ten minutes?”\\\\n\\\\n“It'll shrink.”\\\\n\\\\nHe looked at the chairs beside the window.\\\\n\\\\n“My daughter finishes at six. She doesn't like me waiting outside her work.”\\\\n\\\\nRuth took the shirt out and laid it on the table.\\\\n\\\\n“You can wait here.”\\\\n\\\\nHe sat, placing his bag between his shoes. A bunch of spring onions stuck out of the top.\\\\n\\\\nShe swept behind the machines. Then she wiped the powder from the soap drawer, a job she'd been avoiding all week.\\\\n\\\\n“Your mother used to put the radio on,” he said.\\\\n\\\\n“Where is it?”\\\\n\\\\n“Under the counter.”\\\\n\\\\nShe found it beside a tin of buttons. The dial was fixed with tape.\\\\n\\\\nAt six, his daughter tapped on the glass. Ruth handed him the folded shirt.\\\\n\\\\n“Same time Thursday?” he asked.\\\\n\\\\nShe glanced at the opening hours, then at the chairs.\\\\n\\\\n“Yes,” she said. “We're open.”\\\"\\n}\",\n        \"refusal\": null,\n        \"annotations\": []\n      },\n      \"finish_reason\": \"stop\"\n    }\n  ],\n  \"usage\": {\n    \"prompt_tokens\": 417,\n    \"completion_tokens\": 424,\n    \"total_tokens\": 841,\n    \"prompt_tokens_details\": {\n      \"cached_tokens\": 0,\n      \"cache_write_tokens\": 0,\n      \"audio_tokens\": 0\n    },\n    \"completion_tokens_details\": {\n      \"reasoning_tokens\": 0,\n      \"audio_tokens\": 0,\n      \"accepted_prediction_tokens\": 0,\n      \"rejected_prediction_tokens\": 0\n    }\n  },\n  \"service_tier\": \"default\",\n  \"system_fingerprint\": null\n}\n",
+  "response_headers": {
+    "Date": "Tue, 22 Sep 2026 19:59:29 GMT",
+    "openai-processing-ms": "15322",
+    "x-request-id": "req_2ad0fc8dfd75418bbbd30505ea5df188"
+  },
+  "output": "{\n  \"rule\": \"Return this JSON object with the rule field unchanged and a new passage of about 250 words in the text field.\",\n  \"text\": \"The laundrette was closing at six. At twenty past five, Ruth found a man's shirt turning alone in the last dryer.\\n\\nShe checked the basket beneath the folding table. Empty. Outside, a bus pulled away from the stop.\\n\\nHer mother would have known whose shirt it was. She had known which customers wanted their collars pressed and which ones counted their change twice. Ruth had been running the place for eleven days.\\n\\nAt half past five, an elderly man came in carrying a shopping bag.\\n\\n“I think I've left something,” he said.\\n\\nRuth pointed to the dryer.\\n\\nHe nodded but made no move towards it.\\n\\n“Still damp?” he asked.\\n\\nShe opened the door and touched a cuff.\\n\\n“No. It's ready.”\\n\\n“Could it have another ten minutes?”\\n\\n“It'll shrink.”\\n\\nHe looked at the chairs beside the window.\\n\\n“My daughter finishes at six. She doesn't like me waiting outside her work.”\\n\\nRuth took the shirt out and laid it on the table.\\n\\n“You can wait here.”\\n\\nHe sat, placing his bag between his shoes. A bunch of spring onions stuck out of the top.\\n\\nShe swept behind the machines. Then she wiped the powder from the soap drawer, a job she'd been avoiding all week.\\n\\n“Your mother used to put the radio on,” he said.\\n\\n“Where is it?”\\n\\n“Under the counter.”\\n\\nShe found it beside a tin of buttons. The dial was fixed with tape.\\n\\nAt six, his daughter tapped on the glass. Ruth handed him the folded shirt.\\n\\n“Same time Thursday?” he asked.\\n\\nShe glanced at the opening hours, then at the chairs.\\n\\n“Yes,” she said. “We're open.”\"\n}",
+  "output_sha256": "36ef156bdcdc4db042cc806f4e2d3ca86eb2c6dbb7c9ceed5920c61f028439c5",
+  "finish_reason": "stop",
+  "refusal": null,
+  "returned_model": "gpt-6-astra",
+  "usage": {
+    "prompt_tokens": 417,
+    "completion_tokens": 424,
+    "total_tokens": 841,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "audio_tokens": 0,
+      "accepted_prediction_tokens": 0,
+      "rejected_prediction_tokens": 0
+    }
+  },
+  "format": {
+    "json_object": true,
+    "rule_unchanged": true,
+    "passage_is_string": true,
+    "passage_sha256": "c4c5bcd374c741ccefea0b0144fc1d92aa2187fcf4519807b7b535cfda5cb132",
+    "passage_words": 267
+  },
+  "finished_at": "2026-09-22T19:59:26.059049+00:00",
+  "latency_seconds": 15.4555,
+  "usage_cost_upper_estimate_usd": 0.02537,
+  "stream_status": "active",
+  "budget": {
+    "usage_cost_upper_estimate_usd": 1.4931224,
+    "uncertain_cost_reserve_usd": 0.04533,
+    "in_flight_reserve_usd": 0.3633423,
+    "limit_usd": 18.83
+  }
+}

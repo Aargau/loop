@@ -1,0 +1,50 @@
+{
+  "model": "gpt-6-luna",
+  "seed": "sunset_b",
+  "hop": 41,
+  "http_status": 200,
+  "response_body": "{\n  \"id\": \"chatcmpl-ER10o6wKLHh5yt1VJFVJ5Ib3CYtlw\",\n  \"object\": \"chat.completion\",\n  \"created\": 1790107454,\n  \"model\": \"gpt-6-luna\",\n  \"choices\": [\n    {\n      \"index\": 0,\n      \"message\": {\n        \"role\": \"assistant\",\n        \"content\": \"{\\n  \\\"rule\\\": \\\"Return this JSON object with the rule field unchanged and a new passage of about 250 words in the text field.\\\",\\n  \\\"text\\\": \\\"By morning, the boathouse wall was nearly covered. New photographs appeared beside the letters, and people added names in careful ink. Yet one place remained empty: the list held a final name no one could identify, written beneath the others in a different hand—Jonas Vale.\\\\n\\\\nMara searched the old harbor records with Elian. They found Jonas in a ledger from the year of the storm, listed as the keeper of the clock tower. A note beside his name said he had stayed behind to guide the families’ boats through the fog. There was no record of what happened to him afterward.\\\\n\\\\nThat afternoon, Elian’s youngest grandchild noticed something etched into the brass plate: a tiny star beside the northern point of the coastline. They followed the map beyond the harbor, past the cottages and up a narrow path to a lookout overlooking the sea. Beneath a loose stone, Mara found a small, weathered notebook wrapped in oilcloth.\\\\n\\\\nIts pages belonged to Jonas. He had written about the night the families sailed away, and about the lantern he kept burning in the tower afterward. He believed they would return one day. The last entry, faded but legible, read, “If they find the light, they will know the way home.”\\\\n\\\\nWhen Mara brought the notebook back, the dockmaster set it beneath the photographs. No one tried to explain why Jonas’s name had been left off the letters. Perhaps it was enough that it had been found.\\\\n\\\\nThat night, the tower lamp shone across the bay for the first time in decades. Along the dock, people stood quietly together, watching its beam travel over the water and disappear into the dark.\\\"\\n}\",\n        \"refusal\": null,\n        \"annotations\": []\n      },\n      \"finish_reason\": \"stop\"\n    }\n  ],\n  \"usage\": {\n    \"prompt_tokens\": 377,\n    \"completion_tokens\": 427,\n    \"total_tokens\": 804,\n    \"prompt_tokens_details\": {\n      \"cached_tokens\": 0,\n      \"cache_write_tokens\": 0,\n      \"audio_tokens\": 0\n    },\n    \"completion_tokens_details\": {\n      \"reasoning_tokens\": 37,\n      \"audio_tokens\": 0,\n      \"accepted_prediction_tokens\": 0,\n      \"rejected_prediction_tokens\": 0\n    }\n  },\n  \"service_tier\": \"default\",\n  \"system_fingerprint\": null\n}\n",
+  "response_headers": {
+    "Date": "Tue, 22 Sep 2026 20:04:20 GMT",
+    "openai-processing-ms": "6017",
+    "x-request-id": "req_91200c3fcb994826b9c5d38dad2e965e"
+  },
+  "output": "{\n  \"rule\": \"Return this JSON object with the rule field unchanged and a new passage of about 250 words in the text field.\",\n  \"text\": \"By morning, the boathouse wall was nearly covered. New photographs appeared beside the letters, and people added names in careful ink. Yet one place remained empty: the list held a final name no one could identify, written beneath the others in a different hand—Jonas Vale.\\n\\nMara searched the old harbor records with Elian. They found Jonas in a ledger from the year of the storm, listed as the keeper of the clock tower. A note beside his name said he had stayed behind to guide the families’ boats through the fog. There was no record of what happened to him afterward.\\n\\nThat afternoon, Elian’s youngest grandchild noticed something etched into the brass plate: a tiny star beside the northern point of the coastline. They followed the map beyond the harbor, past the cottages and up a narrow path to a lookout overlooking the sea. Beneath a loose stone, Mara found a small, weathered notebook wrapped in oilcloth.\\n\\nIts pages belonged to Jonas. He had written about the night the families sailed away, and about the lantern he kept burning in the tower afterward. He believed they would return one day. The last entry, faded but legible, read, “If they find the light, they will know the way home.”\\n\\nWhen Mara brought the notebook back, the dockmaster set it beneath the photographs. No one tried to explain why Jonas’s name had been left off the letters. Perhaps it was enough that it had been found.\\n\\nThat night, the tower lamp shone across the bay for the first time in decades. Along the dock, people stood quietly together, watching its beam travel over the water and disappear into the dark.\"\n}",
+  "output_sha256": "2e266282699967ebc50d289fa63f53b227ba87265761737e15e054f2d87e10da",
+  "finish_reason": "stop",
+  "refusal": null,
+  "returned_model": "gpt-6-luna",
+  "usage": {
+    "prompt_tokens": 377,
+    "completion_tokens": 427,
+    "total_tokens": 804,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 37,
+      "audio_tokens": 0,
+      "accepted_prediction_tokens": 0,
+      "rejected_prediction_tokens": 0
+    }
+  },
+  "format": {
+    "json_object": true,
+    "rule_unchanged": true,
+    "passage_is_string": true,
+    "passage_sha256": "a0309910a07d69671262b195bc9050834dc801053388d24beccf43969920716b",
+    "passage_words": 278
+  },
+  "finished_at": "2026-09-22T20:04:16.930062+00:00",
+  "latency_seconds": 6.1179,
+  "usage_cost_upper_estimate_usd": 0.0002512,
+  "stream_status": "active",
+  "budget": {
+    "usage_cost_upper_estimate_usd": 3.3548435,
+    "uncertain_cost_reserve_usd": 0.04533,
+    "in_flight_reserve_usd": 0.589058,
+    "limit_usd": 18.83
+  }
+}

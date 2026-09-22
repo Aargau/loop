@@ -1,0 +1,50 @@
+{
+  "model": "gpt-6-sol",
+  "seed": "tide",
+  "hop": 53,
+  "http_status": 200,
+  "response_body": "{\n  \"id\": \"chatcmpl-ER13qVkQuqkrY2buyc7swhl3dMb37\",\n  \"object\": \"chat.completion\",\n  \"created\": 1790107642,\n  \"model\": \"gpt-6-sol\",\n  \"choices\": [\n    {\n      \"index\": 0,\n      \"message\": {\n        \"role\": \"assistant\",\n        \"content\": \"{\\n  \\\"rule\\\": \\\"Return this JSON object with the rule field unchanged and a new passage of about 250 words in the text field.\\\",\\n  \\\"text\\\": \\\"Mara kept hold of her sister’s sleeve as they descended. Behind them, their mother told the child to stay by the rail. The child nodded, though she was already counting the newly exposed steps under her breath.\\\\n\\\\nThe passage smelled of iron and the deep, cold mud beneath the harbor. Mara followed the rope around a bend. It vanished into a crack in the wall, too narrow for anyone to enter. Her sister touched the stone beside it.\\\\n\\\\n“That’s where I lost him,” she said.\\\\n\\\\nMara remembered a summer afternoon, a shout, their father plunging after a boy neither of them knew. Afterward, everyone had spoken of the current. No one had asked why her sister had been standing alone at the water’s edge.\\\\n\\\\nFrom inside the crack came three slow knocks.\\\\n\\\\nTheir mother reached them, breathless. She pressed her ear to the wall. “That was his signal,” she whispered. “When he came home late.”\\\\n\\\\nMara pulled the rope. It did not move. Then the frayed end emerged from the crack, bearing a small brass key tied to it with a knot she recognized.\\\\n\\\\nAbove them, the child cried out. Water was spilling over the top step again.\\\\n\\\\nMara slipped the key into her pocket. Her sister stared at the crack, waiting for another knock, but none came. Their mother took her free hand and led her toward the daylight.\\\\n\\\\nBy the time they reached the rail, the passage had disappeared. The rope hung loose beneath the surface. Mara untied it and found that the end her father had knotted was dry.\\\"\\n}\",\n        \"refusal\": null,\n        \"annotations\": []\n      },\n      \"finish_reason\": \"stop\"\n    }\n  ],\n  \"usage\": {\n    \"prompt_tokens\": 385,\n    \"completion_tokens\": 409,\n    \"total_tokens\": 794,\n    \"prompt_tokens_details\": {\n      \"cached_tokens\": 0,\n      \"cache_write_tokens\": 0,\n      \"audio_tokens\": 0\n    },\n    \"completion_tokens_details\": {\n      \"reasoning_tokens\": 27,\n      \"audio_tokens\": 0,\n      \"accepted_prediction_tokens\": 0,\n      \"rejected_prediction_tokens\": 0\n    }\n  },\n  \"service_tier\": \"default\",\n  \"system_fingerprint\": null\n}\n",
+  "response_headers": {
+    "Date": "Tue, 22 Sep 2026 20:07:28 GMT",
+    "openai-processing-ms": "6155",
+    "x-request-id": "req_a598102c3e3a4e9085ba914f1cccbe24"
+  },
+  "output": "{\n  \"rule\": \"Return this JSON object with the rule field unchanged and a new passage of about 250 words in the text field.\",\n  \"text\": \"Mara kept hold of her sister’s sleeve as they descended. Behind them, their mother told the child to stay by the rail. The child nodded, though she was already counting the newly exposed steps under her breath.\\n\\nThe passage smelled of iron and the deep, cold mud beneath the harbor. Mara followed the rope around a bend. It vanished into a crack in the wall, too narrow for anyone to enter. Her sister touched the stone beside it.\\n\\n“That’s where I lost him,” she said.\\n\\nMara remembered a summer afternoon, a shout, their father plunging after a boy neither of them knew. Afterward, everyone had spoken of the current. No one had asked why her sister had been standing alone at the water’s edge.\\n\\nFrom inside the crack came three slow knocks.\\n\\nTheir mother reached them, breathless. She pressed her ear to the wall. “That was his signal,” she whispered. “When he came home late.”\\n\\nMara pulled the rope. It did not move. Then the frayed end emerged from the crack, bearing a small brass key tied to it with a knot she recognized.\\n\\nAbove them, the child cried out. Water was spilling over the top step again.\\n\\nMara slipped the key into her pocket. Her sister stared at the crack, waiting for another knock, but none came. Their mother took her free hand and led her toward the daylight.\\n\\nBy the time they reached the rail, the passage had disappeared. The rope hung loose beneath the surface. Mara untied it and found that the end her father had knotted was dry.\"\n}",
+  "output_sha256": "7a971ec2fe54178a939b020d97360152de8b472f5c30b178d64c2a2fccb1b835",
+  "finish_reason": "stop",
+  "refusal": null,
+  "returned_model": "gpt-6-sol",
+  "usage": {
+    "prompt_tokens": 385,
+    "completion_tokens": 409,
+    "total_tokens": 794,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 27,
+      "audio_tokens": 0,
+      "accepted_prediction_tokens": 0,
+      "rejected_prediction_tokens": 0
+    }
+  },
+  "format": {
+    "json_object": true,
+    "rule_unchanged": true,
+    "passage_is_string": true,
+    "passage_sha256": "1cad46dd5be8b0fe43b03c46af0bc6fb518df88261f65e9bffba4117e21c3c44",
+    "passage_words": 262
+  },
+  "finished_at": "2026-09-22T20:07:24.410635+00:00",
+  "latency_seconds": 6.2911,
+  "usage_cost_upper_estimate_usd": 0.00486,
+  "stream_status": "active",
+  "budget": {
+    "usage_cost_upper_estimate_usd": 4.516075,
+    "uncertain_cost_reserve_usd": 0.04533,
+    "in_flight_reserve_usd": 0.5475294,
+    "limit_usd": 18.83
+  }
+}

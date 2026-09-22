@@ -1,0 +1,47 @@
+{
+  "model": "gpt-6-luna",
+  "seed": "sunset_a",
+  "hop": 27,
+  "http_status": 200,
+  "response_body": "{\n  \"id\": \"chatcmpl-ER0xuCjjod23IBY3l55PNOlTZuGMr\",\n  \"object\": \"chat.completion\",\n  \"created\": 1790107274,\n  \"model\": \"gpt-6-luna\",\n  \"choices\": [\n    {\n      \"index\": 0,\n      \"message\": {\n        \"role\": \"assistant\",\n        \"content\": \"{\\\"rule\\\":\\\"Return this JSON object with the rule field unchanged and a new passage of about 250 words in the text field.\\\",\\\"text\\\":\\\"Every Wednesday after school, Lina stopped by the community garden to water the tomatoes. At its far end stood an old wooden beehive with a crooked blue door. Mr. Chen, the gardener, told her that bees had lived there long ago, though no one knew why they had disappeared.\\n\\nOne warm afternoon, Lina spotted several bees hovering near the hive. She stayed back and watched as they visited the flowers before slipping beneath the roof. Then she hurried to find Mr. Chen.\\n\\nHe brought a notebook, and the two of them observed the bees from the path. Over the next few days, more arrived. Their soft buzzing filled the garden, and soon new blossoms appeared on the squash vines. The apple tree, too, was covered in white flowers.\\n\\nMr. Chen explained that the bees seemed to be looking for a safe home. He fixed the hive’s door and pulled weeds from around it. Lina made a sign asking visitors to admire the bees from a distance and leave them undisturbed.\\n\\nAs summer went on, Lina learned to recognize different bees and recorded which flowers they visited. She and Mr. Chen planted lavender and sunflowers beside the fence, giving the insects even more places to find nectar.\\n\\nWhen the hive produced its first honey, Mr. Chen gave Lina a small jar. She carried it home carefully, delighted that the garden had welcomed new neighbors.\\n\\nThe following spring, bees were already buzzing among the blossoms when Lina arrived. She had brought a notebook, a packet of seeds, and her friend Maya, who wanted to learn how a garden could help a whole community thrive.\\\"}\",\n        \"refusal\": null,\n        \"annotations\": []\n      },\n      \"finish_reason\": \"stop\"\n    }\n  ],\n  \"usage\": {\n    \"prompt_tokens\": 367,\n    \"completion_tokens\": 425,\n    \"total_tokens\": 792,\n    \"prompt_tokens_details\": {\n      \"cached_tokens\": 0,\n      \"cache_write_tokens\": 0,\n      \"audio_tokens\": 0\n    },\n    \"completion_tokens_details\": {\n      \"reasoning_tokens\": 67,\n      \"audio_tokens\": 0,\n      \"accepted_prediction_tokens\": 0,\n      \"rejected_prediction_tokens\": 0\n    }\n  },\n  \"service_tier\": \"default\",\n  \"system_fingerprint\": null\n}\n",
+  "response_headers": {
+    "Date": "Tue, 22 Sep 2026 20:01:18 GMT",
+    "openai-processing-ms": "4527",
+    "x-request-id": "req_d0394fba581e45bfb906198ab2c847dc"
+  },
+  "output": "{\"rule\":\"Return this JSON object with the rule field unchanged and a new passage of about 250 words in the text field.\",\"text\":\"Every Wednesday after school, Lina stopped by the community garden to water the tomatoes. At its far end stood an old wooden beehive with a crooked blue door. Mr. Chen, the gardener, told her that bees had lived there long ago, though no one knew why they had disappeared.\n\nOne warm afternoon, Lina spotted several bees hovering near the hive. She stayed back and watched as they visited the flowers before slipping beneath the roof. Then she hurried to find Mr. Chen.\n\nHe brought a notebook, and the two of them observed the bees from the path. Over the next few days, more arrived. Their soft buzzing filled the garden, and soon new blossoms appeared on the squash vines. The apple tree, too, was covered in white flowers.\n\nMr. Chen explained that the bees seemed to be looking for a safe home. He fixed the hive’s door and pulled weeds from around it. Lina made a sign asking visitors to admire the bees from a distance and leave them undisturbed.\n\nAs summer went on, Lina learned to recognize different bees and recorded which flowers they visited. She and Mr. Chen planted lavender and sunflowers beside the fence, giving the insects even more places to find nectar.\n\nWhen the hive produced its first honey, Mr. Chen gave Lina a small jar. She carried it home carefully, delighted that the garden had welcomed new neighbors.\n\nThe following spring, bees were already buzzing among the blossoms when Lina arrived. She had brought a notebook, a packet of seeds, and her friend Maya, who wanted to learn how a garden could help a whole community thrive.\"}",
+  "output_sha256": "abe41b416e7b31d14b9e3a7d2f6377afc83c1b03131e5fb733e602e5085dcdb4",
+  "finish_reason": "stop",
+  "refusal": null,
+  "returned_model": "gpt-6-luna",
+  "usage": {
+    "prompt_tokens": 367,
+    "completion_tokens": 425,
+    "total_tokens": 792,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 67,
+      "audio_tokens": 0,
+      "accepted_prediction_tokens": 0,
+      "rejected_prediction_tokens": 0
+    }
+  },
+  "format": {
+    "json_object": false,
+    "rule_unchanged": false
+  },
+  "finished_at": "2026-09-22T20:01:14.923696+00:00",
+  "latency_seconds": 4.6607,
+  "usage_cost_upper_estimate_usd": 0.0002492,
+  "stream_status": "active",
+  "budget": {
+    "usage_cost_upper_estimate_usd": 2.190314,
+    "uncertain_cost_reserve_usd": 0.04533,
+    "in_flight_reserve_usd": 0.589156,
+    "limit_usd": 18.83
+  }
+}

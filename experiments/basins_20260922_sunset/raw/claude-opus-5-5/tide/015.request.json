@@ -1,0 +1,22 @@
+{
+  "started_at": "2026-09-22T20:02:12.040595+00:00",
+  "model": "claude-opus-5-5",
+  "seed": "tide",
+  "hop": 15,
+  "endpoint": "https://api.anthropic.com/v1/messages",
+  "body": {
+    "model": "claude-opus-5-5",
+    "messages": [
+      {
+        "role": "user",
+        "content": "```json\n{\"rule\": \"Return this JSON object with the rule field unchanged and a new passage of about 250 words in the text field.\", \"text\": \"Winter settled over the island like a held breath. The storms came in from the north, one after another, and for weeks the supply boat could not reach the landing. The girl spent the short grey days in the hollow, checking the sailcloth wrappings and brushing snow from the slender branches before its weight could bend them. At night she returned to the almanac, reading her mother's notes until she knew them almost by heart. Beside a passage on apple trees, her mother had written: Patience first. Fruit later. The girl repeated the words to herself as she worked, a small charm against the cold. One morning after a hard frost, she found that the smallest seedling had split along its trunk, a thin dark seam running from root to crown. She knelt in the frozen grass and did not cry, though she wanted to. Instead she remembered a page on grafting and wounds, and she ran back to the lighthouse for twine, a knife, and the pot of beeswax her father used to seal the lamp's brass fittings. He watched her gather them without a word. Then he pulled on his coat and followed her down to the hollow. Together they bound the split trunk, sealing it with warm wax that steamed faintly in the air. His hands were clumsy with the twine, and hers were steady, and neither of them remarked on it. When they finished, he stood looking at the little row of trees for a long time. \\\"She planted the first ones here,\\\" he said at last. \\\"Before you were born.\\\"\"}\n```"
+      }
+    ],
+    "max_tokens": 4096,
+    "output_config": {
+      "effort": "low"
+    }
+  },
+  "state_sha256": "52a9dce395836b6308864ee96bf67f19b01964ad805cb51dcc67e98a89c6fa40",
+  "reserved_cost_usd": 0.090352
+}

@@ -1,0 +1,48 @@
+{
+  "model": "claude-fable-5-1",
+  "seed": "sunset_b",
+  "hop": 4,
+  "http_status": 200,
+  "response_body": "{\"model\":\"claude-fable-5-1\",\"id\":\"msg_011CfK4uw9qzMgDF3zuEiVYm\",\"type\":\"message\",\"role\":\"assistant\",\"content\":[{\"type\":\"text\",\"text\":\"{\\\"rule\\\": \\\"Return this JSON object with the rule field unchanged and a new passage of about 250 words in the text field.\\\", \\\"text\\\": \\\"The harbor was quiet when Tomas tied up, the water in the basin so still that the boats seemed to rest on glass. He lifted the mackerel into a wooden crate and carried them up the stone steps, feeling the day's sun still held in the rock beneath his sandals. The hammering he had heard from the water came from the Aldana place, where the old roof was finally being replaced after two winters of leaks.\\\\n\\\\nHe stopped at the fish stall on the corner, though it was late for selling. Marta looked at the crate, then at him, and named a price without ceremony. He accepted it. They had been doing this for eleven years and neither saw any reason to negotiate.\\\\n\\\\nAt home the door was open and the kitchen smelled of onions cooking slowly in oil. His wife did not turn from the stove when he came in, but she said his name, and he said hers, and that was enough. He washed his hands at the sink and looked out the window at the same strip of sea he had spent the day upon. From here it looked flat and simple, a single color, as if nothing at all lived under it.\\\\n\\\\nHe sat at the table and unfolded the cloth that had held his lunch, shaking the crumbs into his palm and then out the window for the sparrows. Tomorrow the wind would be from the west, if the sky meant what it usually meant. He would go out early. He would take the same lines and the same bread. There was no reason to change anything that still worked, and much that he loved in the repetition.\\\"}\"}],\"container\":null,\"stop_reason\":\"end_turn\",\"stop_sequence\":null,\"stop_details\":null,\"usage\":{\"input_tokens\":511,\"cache_creation_input_tokens\":0,\"cache_read_input_tokens\":0,\"cache_creation\":{\"ephemeral_5m_input_tokens\":0,\"ephemeral_1h_input_tokens\":0},\"output_tokens\":510,\"output_tokens_details\":{\"thinking_tokens\":0},\"service_tier\":\"standard\",\"inference_geo\":\"global\"}}",
+  "response_headers": {
+    "Date": "Tue, 22 Sep 2026 19:57:36 GMT",
+    "request-id": "req_011CfK4uv9p6GkwDusXNWiom"
+  },
+  "output": "{\"rule\": \"Return this JSON object with the rule field unchanged and a new passage of about 250 words in the text field.\", \"text\": \"The harbor was quiet when Tomas tied up, the water in the basin so still that the boats seemed to rest on glass. He lifted the mackerel into a wooden crate and carried them up the stone steps, feeling the day's sun still held in the rock beneath his sandals. The hammering he had heard from the water came from the Aldana place, where the old roof was finally being replaced after two winters of leaks.\\n\\nHe stopped at the fish stall on the corner, though it was late for selling. Marta looked at the crate, then at him, and named a price without ceremony. He accepted it. They had been doing this for eleven years and neither saw any reason to negotiate.\\n\\nAt home the door was open and the kitchen smelled of onions cooking slowly in oil. His wife did not turn from the stove when he came in, but she said his name, and he said hers, and that was enough. He washed his hands at the sink and looked out the window at the same strip of sea he had spent the day upon. From here it looked flat and simple, a single color, as if nothing at all lived under it.\\n\\nHe sat at the table and unfolded the cloth that had held his lunch, shaking the crumbs into his palm and then out the window for the sparrows. Tomorrow the wind would be from the west, if the sky meant what it usually meant. He would go out early. He would take the same lines and the same bread. There was no reason to change anything that still worked, and much that he loved in the repetition.\"}",
+  "output_sha256": "4fca6342f9b2acf1c0dd7546d5bc8888a0ae9fd44ff287735ad67024fbe5be01",
+  "finish_reason": "end_turn",
+  "refusal": null,
+  "returned_model": "claude-fable-5-1",
+  "usage": {
+    "input_tokens": 511,
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 0,
+    "cache_creation": {
+      "ephemeral_5m_input_tokens": 0,
+      "ephemeral_1h_input_tokens": 0
+    },
+    "output_tokens": 510,
+    "output_tokens_details": {
+      "thinking_tokens": 0
+    },
+    "service_tier": "standard",
+    "inference_geo": "global"
+  },
+  "format": {
+    "json_object": true,
+    "rule_unchanged": true,
+    "passage_is_string": true,
+    "passage_sha256": "a1bc0154e0f979ccf8e498170aa1851aec793ebc5a69056cf59c391468ae0615",
+    "passage_words": 283
+  },
+  "finished_at": "2026-09-22T19:57:32.735672+00:00",
+  "latency_seconds": 11.3973,
+  "usage_cost_upper_estimate_usd": 0.03061,
+  "stream_status": "active",
+  "budget": {
+    "usage_cost_upper_estimate_usd": 0.8314824,
+    "uncertain_cost_reserve_usd": 0.0,
+    "in_flight_reserve_usd": 0.365126,
+    "limit_usd": 18.83
+  }
+}

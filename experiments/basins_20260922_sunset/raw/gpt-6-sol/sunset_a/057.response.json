@@ -1,0 +1,50 @@
+{
+  "model": "gpt-6-sol",
+  "seed": "sunset_a",
+  "hop": 57,
+  "http_status": 200,
+  "response_body": "{\n  \"id\": \"chatcmpl-ER14XnlZbeoAWLH5llk2vK9qDTOst\",\n  \"object\": \"chat.completion\",\n  \"created\": 1790107685,\n  \"model\": \"gpt-6-sol\",\n  \"choices\": [\n    {\n      \"index\": 0,\n      \"message\": {\n        \"role\": \"assistant\",\n        \"content\": \"{\\n  \\\"rule\\\": \\\"Return this JSON object with the rule field unchanged and a new passage of about 250 words in the text field.\\\",\\n  \\\"text\\\": \\\"By noon, three people had come into the bakery to see the bell. The fruit seller remembered hearing it on her first day at the old school. A man buying bread said its handle had always been crooked, even before it cracked. Imani added both memories to her notebook.\\\\n\\\\nAfter the lunch rush, Grandfather wrapped the bell in a clean tea towel. He walked with Imani and Sami up the hill, past the playground and through the school’s iron gate. The building had been empty for years, but the caretaker still swept the steps and kept a key to the front door.\\\\n\\\\nHe listened as they explained where they had found the bell. Then he led them down a corridor to a room with tall windows. A hook hung beside the doorway.\\\\n\\\\n“That’s where it used to go,” he said.\\\\n\\\\nSami stood on a chair and held the bell near the hook. Its handle fit easily, but he waited for the caretaker to lift it into place. For a moment, nobody spoke.\\\\n\\\\n“Should we try it?” Imani asked.\\\\n\\\\nThe caretaker nodded. Imani reached up and gave the bell one careful shake. Its note wavered through the empty room, quiet but clear enough to make Sami grin.\\\\n\\\\nThat evening, Imani returned to the bakery and filled in the last line of her notebook. Beneath the date, she wrote: The bell is back at school. Then she left the notebook open so Grandfather could read it.\\\"\\n}\",\n        \"refusal\": null,\n        \"annotations\": []\n      },\n      \"finish_reason\": \"stop\"\n    }\n  ],\n  \"usage\": {\n    \"prompt_tokens\": 379,\n    \"completion_tokens\": 390,\n    \"total_tokens\": 769,\n    \"prompt_tokens_details\": {\n      \"cached_tokens\": 0,\n      \"cache_write_tokens\": 0,\n      \"audio_tokens\": 0\n    },\n    \"completion_tokens_details\": {\n      \"reasoning_tokens\": 40,\n      \"audio_tokens\": 0,\n      \"accepted_prediction_tokens\": 0,\n      \"rejected_prediction_tokens\": 0\n    }\n  },\n  \"service_tier\": \"default\",\n  \"system_fingerprint\": null\n}\n",
+  "response_headers": {
+    "Date": "Tue, 22 Sep 2026 20:08:11 GMT",
+    "openai-processing-ms": "5977",
+    "x-request-id": "req_642be3fa448146f485535b236620f84b"
+  },
+  "output": "{\n  \"rule\": \"Return this JSON object with the rule field unchanged and a new passage of about 250 words in the text field.\",\n  \"text\": \"By noon, three people had come into the bakery to see the bell. The fruit seller remembered hearing it on her first day at the old school. A man buying bread said its handle had always been crooked, even before it cracked. Imani added both memories to her notebook.\\n\\nAfter the lunch rush, Grandfather wrapped the bell in a clean tea towel. He walked with Imani and Sami up the hill, past the playground and through the school’s iron gate. The building had been empty for years, but the caretaker still swept the steps and kept a key to the front door.\\n\\nHe listened as they explained where they had found the bell. Then he led them down a corridor to a room with tall windows. A hook hung beside the doorway.\\n\\n“That’s where it used to go,” he said.\\n\\nSami stood on a chair and held the bell near the hook. Its handle fit easily, but he waited for the caretaker to lift it into place. For a moment, nobody spoke.\\n\\n“Should we try it?” Imani asked.\\n\\nThe caretaker nodded. Imani reached up and gave the bell one careful shake. Its note wavered through the empty room, quiet but clear enough to make Sami grin.\\n\\nThat evening, Imani returned to the bakery and filled in the last line of her notebook. Beneath the date, she wrote: The bell is back at school. Then she left the notebook open so Grandfather could read it.\"\n}",
+  "output_sha256": "3250c421269c3e6f001c99493462a7ba1fa501e8254d088ca4c7a0a8d5a60342",
+  "finish_reason": "stop",
+  "refusal": null,
+  "returned_model": "gpt-6-sol",
+  "usage": {
+    "prompt_tokens": 379,
+    "completion_tokens": 390,
+    "total_tokens": 769,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 40,
+      "audio_tokens": 0,
+      "accepted_prediction_tokens": 0,
+      "rejected_prediction_tokens": 0
+    }
+  },
+  "format": {
+    "json_object": true,
+    "rule_unchanged": true,
+    "passage_is_string": true,
+    "passage_sha256": "cf9d4f303740a581f6e99845750150520222db293cd6c72e6f6a44b134c1936b",
+    "passage_words": 244
+  },
+  "finished_at": "2026-09-22T20:08:07.344292+00:00",
+  "latency_seconds": 6.0832,
+  "usage_cost_upper_estimate_usd": 0.004658,
+  "stream_status": "active",
+  "budget": {
+    "usage_cost_upper_estimate_usd": 4.7960535,
+    "uncertain_cost_reserve_usd": 0.04533,
+    "in_flight_reserve_usd": 0.5451692,
+    "limit_usd": 18.83
+  }
+}

@@ -1,0 +1,50 @@
+{
+  "model": "gpt-6-sol",
+  "seed": "sunset_a",
+  "hop": 33,
+  "http_status": 200,
+  "response_body": "{\n  \"id\": \"chatcmpl-ER0zag5Hky2CglzB4gi5o9vNqkjHw\",\n  \"object\": \"chat.completion\",\n  \"created\": 1790107378,\n  \"model\": \"gpt-6-sol\",\n  \"choices\": [\n    {\n      \"index\": 0,\n      \"message\": {\n        \"role\": \"assistant\",\n        \"content\": \"{\\n  \\\"rule\\\": \\\"Return this JSON object with the rule field unchanged and a new passage of about 250 words in the text field.\\\",\\n  \\\"text\\\": \\\"The first frost arrived on a Thursday, silvering the community garden before anyone had picked the last tomatoes. Mara went there after work with a basket and found a note tied to the gate: Please leave the smallest green ones. They’re for the school’s science class.\\\\n\\\\nShe had never met the person who taught that class, but she left a dozen tiny tomatoes on the vine. The next afternoon, a row of children stood beside the garden beds, examining them through magnifying glasses. Their teacher explained that the class was testing which ways of ripening tomatoes worked best. One group would use a sunny windowsill; another would try a paper bag.\\\\n\\\\nMara offered them the basket of tomatoes she had picked. The children counted them, weighed them, and thanked her with the solemn courtesy of people conducting important research.\\\\n\\\\nA week later, a chart appeared on the garden gate. The paper bag had won by two days, although one tomato had vanished from the windowsill group. Beneath the chart, in careful pencil, someone had written: We think the classroom hamster took it, but we cannot prove this.\\\\n\\\\nMara laughed and brought the chart home to show her brother. On Saturday, she returned with a packet of seeds for next spring. The teacher was clearing the beds and invited her to help the class plant them when the weather warmed.\\\\n\\\\nAll winter, Mara passed the empty garden on her way to work. She began to look forward to April: not just to the new tomatoes, but to hearing what the children might discover next.\\\"\\n}\",\n        \"refusal\": null,\n        \"annotations\": []\n      },\n      \"finish_reason\": \"stop\"\n    }\n  ],\n  \"usage\": {\n    \"prompt_tokens\": 345,\n    \"completion_tokens\": 388,\n    \"total_tokens\": 733,\n    \"prompt_tokens_details\": {\n      \"cached_tokens\": 0,\n      \"cache_write_tokens\": 0,\n      \"audio_tokens\": 0\n    },\n    \"completion_tokens_details\": {\n      \"reasoning_tokens\": 26,\n      \"audio_tokens\": 0,\n      \"accepted_prediction_tokens\": 0,\n      \"rejected_prediction_tokens\": 0\n    }\n  },\n  \"service_tier\": \"default\",\n  \"system_fingerprint\": null\n}\n",
+  "response_headers": {
+    "Date": "Tue, 22 Sep 2026 20:03:04 GMT",
+    "openai-processing-ms": "5860",
+    "x-request-id": "req_44c7e334d4c24542ae5f4827f7e9f27b"
+  },
+  "output": "{\n  \"rule\": \"Return this JSON object with the rule field unchanged and a new passage of about 250 words in the text field.\",\n  \"text\": \"The first frost arrived on a Thursday, silvering the community garden before anyone had picked the last tomatoes. Mara went there after work with a basket and found a note tied to the gate: Please leave the smallest green ones. They’re for the school’s science class.\\n\\nShe had never met the person who taught that class, but she left a dozen tiny tomatoes on the vine. The next afternoon, a row of children stood beside the garden beds, examining them through magnifying glasses. Their teacher explained that the class was testing which ways of ripening tomatoes worked best. One group would use a sunny windowsill; another would try a paper bag.\\n\\nMara offered them the basket of tomatoes she had picked. The children counted them, weighed them, and thanked her with the solemn courtesy of people conducting important research.\\n\\nA week later, a chart appeared on the garden gate. The paper bag had won by two days, although one tomato had vanished from the windowsill group. Beneath the chart, in careful pencil, someone had written: We think the classroom hamster took it, but we cannot prove this.\\n\\nMara laughed and brought the chart home to show her brother. On Saturday, she returned with a packet of seeds for next spring. The teacher was clearing the beds and invited her to help the class plant them when the weather warmed.\\n\\nAll winter, Mara passed the empty garden on her way to work. She began to look forward to April: not just to the new tomatoes, but to hearing what the children might discover next.\"\n}",
+  "output_sha256": "97744c8309bfccf4df45a637e7e8d5f624f55204542104dd252b58a1e8dd0227",
+  "finish_reason": "stop",
+  "refusal": null,
+  "returned_model": "gpt-6-sol",
+  "usage": {
+    "prompt_tokens": 345,
+    "completion_tokens": 388,
+    "total_tokens": 733,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 26,
+      "audio_tokens": 0,
+      "accepted_prediction_tokens": 0,
+      "rejected_prediction_tokens": 0
+    }
+  },
+  "format": {
+    "json_object": true,
+    "rule_unchanged": true,
+    "passage_is_string": true,
+    "passage_sha256": "fcd2430c951f6769052197d0f4fb5fc81d30b8316a159b93bed0eade2f72b5bd",
+    "passage_words": 263
+  },
+  "finished_at": "2026-09-22T20:03:00.625862+00:00",
+  "latency_seconds": 5.9995,
+  "usage_cost_upper_estimate_usd": 0.00457,
+  "stream_status": "active",
+  "budget": {
+    "usage_cost_upper_estimate_usd": 2.8718399,
+    "uncertain_cost_reserve_usd": 0.04533,
+    "in_flight_reserve_usd": 0.5462417,
+    "limit_usd": 18.83
+  }
+}

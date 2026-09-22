@@ -1,0 +1,50 @@
+{
+  "model": "gpt-6-luna",
+  "seed": "sunset_a",
+  "hop": 32,
+  "http_status": 200,
+  "response_body": "{\n  \"id\": \"chatcmpl-ER0ywN3l2DdTJWxBaEyal8lKT9u7h\",\n  \"object\": \"chat.completion\",\n  \"created\": 1790107338,\n  \"model\": \"gpt-6-luna\",\n  \"choices\": [\n    {\n      \"index\": 0,\n      \"message\": {\n        \"role\": \"assistant\",\n        \"content\": \"{\\\"rule\\\":\\\"Return this JSON object with the rule field unchanged and a new passage of about 250 words in the text field.\\\",\\\"text\\\":\\\"When the town library announced it would close for repairs, everyone wondered where its books would go. The building needed a new roof, and the work was expected to last all summer. For many children, the library was more than a place to borrow stories. It was where they finished homework, escaped the heat, and met friends after school.\\\\n\\\\nJonah had an idea. His family owned an old delivery van that had not been driven in years. With help from his mother and a neighbor who knew about engines, he cleaned it, repaired its lights, and painted its sides bright green. The librarian filled the van with books, while volunteers built sturdy shelves inside.\\\\n\\\\nOn the first Saturday, Jonah drove the little book van to the park. He expected a few visitors, but children soon formed a line. Some chose picture books, and others searched for mysteries or books about space. A retired teacher came by to read aloud beneath the trees.\\\\n\\\\nEach week, the van visited a different neighborhood. Jonah learned which books people liked and began keeping a list of requests. He also discovered quiet streets he had never noticed and met neighbors who had lived nearby for years.\\\\n\\\\nBy the time the library reopened, the van had become a familiar sight. The children helped return the books to the shelves, but they asked Jonah to keep making his weekly rounds.\\\\n\\\\nThe librarian agreed. After all, a library did not have to stay in one building. Sometimes it could travel down the road, carrying stories wherever they were needed.\\\"}\",\n        \"refusal\": null,\n        \"annotations\": []\n      },\n      \"finish_reason\": \"stop\"\n    }\n  ],\n  \"usage\": {\n    \"prompt_tokens\": 334,\n    \"completion_tokens\": 379,\n    \"total_tokens\": 713,\n    \"prompt_tokens_details\": {\n      \"cached_tokens\": 0,\n      \"cache_write_tokens\": 0,\n      \"audio_tokens\": 0\n    },\n    \"completion_tokens_details\": {\n      \"reasoning_tokens\": 32,\n      \"audio_tokens\": 0,\n      \"accepted_prediction_tokens\": 0,\n      \"rejected_prediction_tokens\": 0\n    }\n  },\n  \"service_tier\": \"default\",\n  \"system_fingerprint\": null\n}\n",
+  "response_headers": {
+    "Date": "Tue, 22 Sep 2026 20:02:21 GMT",
+    "openai-processing-ms": "3179",
+    "x-request-id": "req_821d63088b1e420aa0fc83696c56a73b"
+  },
+  "output": "{\"rule\":\"Return this JSON object with the rule field unchanged and a new passage of about 250 words in the text field.\",\"text\":\"When the town library announced it would close for repairs, everyone wondered where its books would go. The building needed a new roof, and the work was expected to last all summer. For many children, the library was more than a place to borrow stories. It was where they finished homework, escaped the heat, and met friends after school.\\n\\nJonah had an idea. His family owned an old delivery van that had not been driven in years. With help from his mother and a neighbor who knew about engines, he cleaned it, repaired its lights, and painted its sides bright green. The librarian filled the van with books, while volunteers built sturdy shelves inside.\\n\\nOn the first Saturday, Jonah drove the little book van to the park. He expected a few visitors, but children soon formed a line. Some chose picture books, and others searched for mysteries or books about space. A retired teacher came by to read aloud beneath the trees.\\n\\nEach week, the van visited a different neighborhood. Jonah learned which books people liked and began keeping a list of requests. He also discovered quiet streets he had never noticed and met neighbors who had lived nearby for years.\\n\\nBy the time the library reopened, the van had become a familiar sight. The children helped return the books to the shelves, but they asked Jonah to keep making his weekly rounds.\\n\\nThe librarian agreed. After all, a library did not have to stay in one building. Sometimes it could travel down the road, carrying stories wherever they were needed.\"}",
+  "output_sha256": "adbc0cc27749c2dd949a47a8de09d3bb2dd5f430f0f672c18f5e9ca0ad365197",
+  "finish_reason": "stop",
+  "refusal": null,
+  "returned_model": "gpt-6-luna",
+  "usage": {
+    "prompt_tokens": 334,
+    "completion_tokens": 379,
+    "total_tokens": 713,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 32,
+      "audio_tokens": 0,
+      "accepted_prediction_tokens": 0,
+      "rejected_prediction_tokens": 0
+    }
+  },
+  "format": {
+    "json_object": true,
+    "rule_unchanged": true,
+    "passage_is_string": true,
+    "passage_sha256": "b51d10ce0464f1f5b0cd4e869ce986c9d274b79451aec0f2c7a0dbce171944e5",
+    "passage_words": 261
+  },
+  "finished_at": "2026-09-22T20:02:17.248659+00:00",
+  "latency_seconds": 3.3199,
+  "usage_cost_upper_estimate_usd": 0.0002229,
+  "stream_status": "active",
+  "budget": {
+    "usage_cost_upper_estimate_usd": 2.5996791,
+    "uncertain_cost_reserve_usd": 0.04533,
+    "in_flight_reserve_usd": 0.588154,
+    "limit_usd": 18.83
+  }
+}

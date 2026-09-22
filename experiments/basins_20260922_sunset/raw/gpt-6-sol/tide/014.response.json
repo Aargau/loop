@@ -1,0 +1,50 @@
+{
+  "model": "gpt-6-sol",
+  "seed": "tide",
+  "hop": 14,
+  "http_status": 200,
+  "response_body": "{\n  \"id\": \"chatcmpl-ER0vy7YsyxOUutGzyPXTGXP6tDvA9\",\n  \"object\": \"chat.completion\",\n  \"created\": 1790107154,\n  \"model\": \"gpt-6-sol\",\n  \"choices\": [\n    {\n      \"index\": 0,\n      \"message\": {\n        \"role\": \"assistant\",\n        \"content\": \"{\\n  \\\"rule\\\": \\\"Return this JSON object with the rule field unchanged and a new passage of about 250 words in the text field.\\\",\\n  \\\"text\\\": \\\"By morning, the sea had given back the path to the boathouse. Mara could see the stones from the cottage window, slick and dark beneath a pale sky. Daniel was already outside, testing the rope for frayed places.\\\\n\\\\nTheir father came down with his coat buttoned to the throat. Mrs. Bell handed him a parcel of bread and told him he was not to climb on anything.\\\\n\\\\n“I won’t,” he said.\\\\n\\\\n“You said that yesterday.”\\\\n\\\\nMr. Venn went ahead of them across the stones. Inside the boathouse, the floor smelled of salt and wet timber. The shelf had held, though a line of seaweed hung from its lowest board. Daniel lifted down the survey books one at a time and passed them to Mara.\\\\n\\\\nTheir father opened the last book on a dry crate. Its pages were stiff at the edges. Near the middle, he found a drawing of the channel wall, with a narrow passage marked behind it.\\\\n\\\\n“What was that for?” Mara asked.\\\\n\\\\n“Drainage, I think.” He followed the ink line with one finger. It ended directly beneath the crack he had seen. “If it’s blocked, the water may be pressing against the wall.”\\\\n\\\\nMr. Venn leaned over the drawing. “The harbor committee ought to see this.”\\\\n\\\\nTheir father closed the book. “They will. Today.”\\\\n\\\\nOn the walk back, Daniel carried the books while Mara kept hold of her father’s arm. He did not seem to need the help, but he did not pull away.\\\"\\n}\",\n        \"refusal\": null,\n        \"annotations\": []\n      },\n      \"finish_reason\": \"stop\"\n    }\n  ],\n  \"usage\": {\n    \"prompt_tokens\": 371,\n    \"completion_tokens\": 398,\n    \"total_tokens\": 769,\n    \"prompt_tokens_details\": {\n      \"cached_tokens\": 0,\n      \"cache_write_tokens\": 0,\n      \"audio_tokens\": 0\n    },\n    \"completion_tokens_details\": {\n      \"reasoning_tokens\": 24,\n      \"audio_tokens\": 0,\n      \"accepted_prediction_tokens\": 0,\n      \"rejected_prediction_tokens\": 0\n    }\n  },\n  \"service_tier\": \"default\",\n  \"system_fingerprint\": null\n}\n",
+  "response_headers": {
+    "Date": "Tue, 22 Sep 2026 19:59:20 GMT",
+    "openai-processing-ms": "5856",
+    "x-request-id": "req_a78cfff06c264aefbb1decd03bb4a949"
+  },
+  "output": "{\n  \"rule\": \"Return this JSON object with the rule field unchanged and a new passage of about 250 words in the text field.\",\n  \"text\": \"By morning, the sea had given back the path to the boathouse. Mara could see the stones from the cottage window, slick and dark beneath a pale sky. Daniel was already outside, testing the rope for frayed places.\\n\\nTheir father came down with his coat buttoned to the throat. Mrs. Bell handed him a parcel of bread and told him he was not to climb on anything.\\n\\n“I won’t,” he said.\\n\\n“You said that yesterday.”\\n\\nMr. Venn went ahead of them across the stones. Inside the boathouse, the floor smelled of salt and wet timber. The shelf had held, though a line of seaweed hung from its lowest board. Daniel lifted down the survey books one at a time and passed them to Mara.\\n\\nTheir father opened the last book on a dry crate. Its pages were stiff at the edges. Near the middle, he found a drawing of the channel wall, with a narrow passage marked behind it.\\n\\n“What was that for?” Mara asked.\\n\\n“Drainage, I think.” He followed the ink line with one finger. It ended directly beneath the crack he had seen. “If it’s blocked, the water may be pressing against the wall.”\\n\\nMr. Venn leaned over the drawing. “The harbor committee ought to see this.”\\n\\nTheir father closed the book. “They will. Today.”\\n\\nOn the walk back, Daniel carried the books while Mara kept hold of her father’s arm. He did not seem to need the help, but he did not pull away.\"\n}",
+  "output_sha256": "3b166b2371b7bc2f8deccc12d304597af3204d61ecb7535e859d343c295d3b4f",
+  "finish_reason": "stop",
+  "refusal": null,
+  "returned_model": "gpt-6-sol",
+  "usage": {
+    "prompt_tokens": 371,
+    "completion_tokens": 398,
+    "total_tokens": 769,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 24,
+      "audio_tokens": 0,
+      "accepted_prediction_tokens": 0,
+      "rejected_prediction_tokens": 0
+    }
+  },
+  "format": {
+    "json_object": true,
+    "rule_unchanged": true,
+    "passage_is_string": true,
+    "passage_sha256": "f32dc2ec2c6435adad2e96661d075ad543d52f8ed0ed8df970c20d4c59d3e9a8",
+    "passage_words": 247
+  },
+  "finished_at": "2026-09-22T19:59:16.386249+00:00",
+  "latency_seconds": 5.9673,
+  "usage_cost_upper_estimate_usd": 0.004722,
+  "stream_status": "active",
+  "budget": {
+    "usage_cost_upper_estimate_usd": 1.4215868,
+    "uncertain_cost_reserve_usd": 0.04533,
+    "in_flight_reserve_usd": 0.5447726,
+    "limit_usd": 18.83
+  }
+}

@@ -1,0 +1,48 @@
+{
+  "model": "claude-fable-5-1",
+  "seed": "tide",
+  "hop": 1,
+  "http_status": 200,
+  "response_body": "{\"model\":\"claude-fable-5-1\",\"id\":\"msg_011CfK4nHNJJGPkgFKXweZkC\",\"type\":\"message\",\"role\":\"assistant\",\"content\":[{\"type\":\"text\",\"text\":\"{\\\"rule\\\": \\\"Return this JSON object with the rule field unchanged and a new passage of about 250 words in the text field.\\\", \\\"text\\\": \\\"The tide came in an hour early. Marguerite noticed it first from the kitchen window, the way the water had already swallowed the flat gray stones where the gulls usually stood at this time of morning. She checked the almanac pinned beside the stove, ran her finger down the column of dates, and frowned. The numbers were right. The sea was wrong.\\\\n\\\\nShe pulled on her boots and walked down to the shingle. The air smelled of iodine and something sharper, like a struck match. Out past the breakwater, the water lay unusually still, a sheet of pewter without the small chop that normally ruffled it. The fishing boats had not gone out. She could see them at their moorings, bobbing in a slow, uneasy rhythm, and along the harbor wall a handful of men stood with their hands in their pockets, saying nothing.\\\\n\\\\nOld Teodor was among them. He had fished these waters for sixty years and claimed he could feel weather in his knees before the radio announced it. When Marguerite reached him he did not turn, only nodded toward the horizon.\\\\n\\\\n\\\\\\\"Twice in my life,\\\\\\\" he said. \\\\\\\"Once in fifty-three. Once the winter my brother drowned.\\\\\\\"\\\\n\\\\n\\\\\\\"What does it mean?\\\\\\\"\\\\n\\\\nHe shrugged, but his jaw was tight. \\\\\\\"Means the sea has changed its mind about something.\\\\\\\"\\\\n\\\\nBy noon the water had climbed the lower steps of the church. The children were kept indoors. Marguerite moved her mother's photographs to the upper shelf and waited, listening to the strange, patient lapping at the door.\\\"}\"}],\"container\":null,\"stop_reason\":\"end_turn\",\"stop_sequence\":null,\"stop_details\":null,\"usage\":{\"input_tokens\":62,\"cache_creation_input_tokens\":0,\"cache_read_input_tokens\":0,\"cache_creation\":{\"ephemeral_5m_input_tokens\":0,\"ephemeral_1h_input_tokens\":0},\"output_tokens\":552,\"output_tokens_details\":{\"thinking_tokens\":0},\"service_tier\":\"standard\",\"inference_geo\":\"global\"}}",
+  "response_headers": {
+    "Date": "Tue, 22 Sep 2026 19:55:54 GMT",
+    "request-id": "req_011CfK4nGsmi7t1asRkBZNtr"
+  },
+  "output": "{\"rule\": \"Return this JSON object with the rule field unchanged and a new passage of about 250 words in the text field.\", \"text\": \"The tide came in an hour early. Marguerite noticed it first from the kitchen window, the way the water had already swallowed the flat gray stones where the gulls usually stood at this time of morning. She checked the almanac pinned beside the stove, ran her finger down the column of dates, and frowned. The numbers were right. The sea was wrong.\\n\\nShe pulled on her boots and walked down to the shingle. The air smelled of iodine and something sharper, like a struck match. Out past the breakwater, the water lay unusually still, a sheet of pewter without the small chop that normally ruffled it. The fishing boats had not gone out. She could see them at their moorings, bobbing in a slow, uneasy rhythm, and along the harbor wall a handful of men stood with their hands in their pockets, saying nothing.\\n\\nOld Teodor was among them. He had fished these waters for sixty years and claimed he could feel weather in his knees before the radio announced it. When Marguerite reached him he did not turn, only nodded toward the horizon.\\n\\n\\\"Twice in my life,\\\" he said. \\\"Once in fifty-three. Once the winter my brother drowned.\\\"\\n\\n\\\"What does it mean?\\\"\\n\\nHe shrugged, but his jaw was tight. \\\"Means the sea has changed its mind about something.\\\"\\n\\nBy noon the water had climbed the lower steps of the church. The children were kept indoors. Marguerite moved her mother's photographs to the upper shelf and waited, listening to the strange, patient lapping at the door.\"}",
+  "output_sha256": "e4018c780e4a26d57b92eb26007bf2e249a3e621dca087374ce835977f00c4b1",
+  "finish_reason": "end_turn",
+  "refusal": null,
+  "returned_model": "claude-fable-5-1",
+  "usage": {
+    "input_tokens": 62,
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 0,
+    "cache_creation": {
+      "ephemeral_5m_input_tokens": 0,
+      "ephemeral_1h_input_tokens": 0
+    },
+    "output_tokens": 552,
+    "output_tokens_details": {
+      "thinking_tokens": 0
+    },
+    "service_tier": "standard",
+    "inference_geo": "global"
+  },
+  "format": {
+    "json_object": true,
+    "rule_unchanged": true,
+    "passage_is_string": true,
+    "passage_sha256": "a6e90c5b54a21c8a55173f03652531be9b3f5d54ffbe0140c3c02f706c541479",
+    "passage_words": 256
+  },
+  "finished_at": "2026-09-22T19:55:50.984917+00:00",
+  "latency_seconds": 13.3366,
+  "usage_cost_upper_estimate_usd": 0.02822,
+  "stream_status": "active",
+  "budget": {
+    "usage_cost_upper_estimate_usd": 0.1782453,
+    "uncertain_cost_reserve_usd": 0.0,
+    "in_flight_reserve_usd": 0.3490045,
+    "limit_usd": 18.83
+  }
+}

@@ -1,0 +1,22 @@
+{
+  "started_at": "2026-09-22T20:04:32.495845+00:00",
+  "model": "claude-opus-5-5",
+  "seed": "sunset_a",
+  "hop": 21,
+  "endpoint": "https://api.anthropic.com/v1/messages",
+  "body": {
+    "model": "claude-opus-5-5",
+    "messages": [
+      {
+        "role": "user",
+        "content": "```json\n{\"rule\": \"Return this JSON object with the rule field unchanged and a new passage of about 250 words in the text field.\", \"text\": \"February brought a thaw that lasted only three days, just long enough to turn the street to slush before the cold returned and locked it all into ridges of dirty ice. It was during that brief softening that Mira first heard the sound. She was sorting invoices at the front counter when it drifted from the back room, a faint, uneven ticking, halting and stubborn, like a heart learning its rhythm. She set down her pen and listened. It stopped, started again, faltered, and then, for nearly a full minute, held steady before collapsing into silence. That evening Tobias said nothing about it, and she did not ask. But she saw that his hands were nicked in new places and that the notebook had grown thick with crossed-out pages, whole sections scored through with impatient lines. Once she caught him staring at the old regulator clock on the wall, the one her master had built, as if measuring himself against it. The following week he stayed home with a fever, and in his absence she allowed herself to lift the cloth covering his bench. Beneath it sat a small, ungainly mechanism, its plates filed by hand and not quite square, its wheels crowded together like passengers in a narrow carriage. It was ugly. It was also, she realized with a quiet jolt, doing something she had never seen a movement do. She replaced the cloth exactly as she had found it, brushed a stray shaving from the edge of the bench, and went back to the counter, her pulse ticking unevenly in her ears.\"}\n```"
+      }
+    ],
+    "max_tokens": 4096,
+    "output_config": {
+      "effort": "low"
+    }
+  },
+  "state_sha256": "8cdae78058c5e9194c9584d747b8b097b9b3b25929e8c74ac8e49e93e435ce24",
+  "reserved_cost_usd": 0.09046
+}

@@ -1,0 +1,50 @@
+{
+  "model": "gpt-6-luna",
+  "seed": "sunset_a",
+  "hop": 40,
+  "http_status": 200,
+  "response_body": "{\n  \"id\": \"chatcmpl-ER10Y59Ahq99fdBJAT6MhKpGXhH3D\",\n  \"object\": \"chat.completion\",\n  \"created\": 1790107438,\n  \"model\": \"gpt-6-luna\",\n  \"choices\": [\n    {\n      \"index\": 0,\n      \"message\": {\n        \"role\": \"assistant\",\n        \"content\": \"{\\\"rule\\\":\\\"Return this JSON object with the rule field unchanged and a new passage of about 250 words in the text field.\\\",\\\"text\\\":\\\"On the edge of Willow Marsh stood a little blue house with a crooked chimney. Every evening, its windows glowed gold, though nobody in the village knew who lived there. The house had been empty for years—or so they thought.\\\\n\\\\nOne autumn afternoon, twelve-year-old Rowan followed a trail of feathers through the reeds. It led to the blue house, where the front door stood open. Inside, a woman in a green coat was mending a kite. Beside her, a gray heron watched with one bright eye.\\\\n\\\\n“You must be the new keeper,” Rowan said.\\\\n\\\\nThe woman smiled. “And you must be the first visitor in a long while.”\\\\n\\\\nShe explained that she cared for injured birds until they were strong enough to fly. The heron had arrived with a tangled wing, and the kite was meant to help it practice lifting off. Rowan offered to help. Together, they carried the kite into the marsh, where the wind moved gently over the water.\\\\n\\\\nFor days, Rowan returned after school. He learned how to clean feathers and prepare food, and the woman taught him to read the weather by watching the clouds. The heron grew stronger. Each morning, it stretched its wings a little farther.\\\\n\\\\nAt last, on a clear Saturday, the bird rose above the reeds. It circled once over the blue house, then glided toward the distant hills. Rowan watched until it disappeared.\\\\n\\\\nThat evening, he walked home beneath a sky full of stars. The village still called the house empty, but Rowan knew better. Some places weren’t empty at all. They were simply waiting for someone to notice the life inside.\\\"}\",\n        \"refusal\": null,\n        \"annotations\": []\n      },\n      \"finish_reason\": \"stop\"\n    }\n  ],\n  \"usage\": {\n    \"prompt_tokens\": 389,\n    \"completion_tokens\": 447,\n    \"total_tokens\": 836,\n    \"prompt_tokens_details\": {\n      \"cached_tokens\": 0,\n      \"cache_write_tokens\": 0,\n      \"audio_tokens\": 0\n    },\n    \"completion_tokens_details\": {\n      \"reasoning_tokens\": 66,\n      \"audio_tokens\": 0,\n      \"accepted_prediction_tokens\": 0,\n      \"rejected_prediction_tokens\": 0\n    }\n  },\n  \"service_tier\": \"default\",\n  \"system_fingerprint\": null\n}\n",
+  "response_headers": {
+    "Date": "Tue, 22 Sep 2026 20:04:02 GMT",
+    "openai-processing-ms": "4779",
+    "x-request-id": "req_b4f61c9f40044f2b8c62e74c09fdc512"
+  },
+  "output": "{\"rule\":\"Return this JSON object with the rule field unchanged and a new passage of about 250 words in the text field.\",\"text\":\"On the edge of Willow Marsh stood a little blue house with a crooked chimney. Every evening, its windows glowed gold, though nobody in the village knew who lived there. The house had been empty for years—or so they thought.\\n\\nOne autumn afternoon, twelve-year-old Rowan followed a trail of feathers through the reeds. It led to the blue house, where the front door stood open. Inside, a woman in a green coat was mending a kite. Beside her, a gray heron watched with one bright eye.\\n\\n“You must be the new keeper,” Rowan said.\\n\\nThe woman smiled. “And you must be the first visitor in a long while.”\\n\\nShe explained that she cared for injured birds until they were strong enough to fly. The heron had arrived with a tangled wing, and the kite was meant to help it practice lifting off. Rowan offered to help. Together, they carried the kite into the marsh, where the wind moved gently over the water.\\n\\nFor days, Rowan returned after school. He learned how to clean feathers and prepare food, and the woman taught him to read the weather by watching the clouds. The heron grew stronger. Each morning, it stretched its wings a little farther.\\n\\nAt last, on a clear Saturday, the bird rose above the reeds. It circled once over the blue house, then glided toward the distant hills. Rowan watched until it disappeared.\\n\\nThat evening, he walked home beneath a sky full of stars. The village still called the house empty, but Rowan knew better. Some places weren’t empty at all. They were simply waiting for someone to notice the life inside.\"}",
+  "output_sha256": "52b16960be350f73364730c4daae3fb7a321e116570d862f569d0916d55a123e",
+  "finish_reason": "stop",
+  "refusal": null,
+  "returned_model": "gpt-6-luna",
+  "usage": {
+    "prompt_tokens": 389,
+    "completion_tokens": 447,
+    "total_tokens": 836,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 66,
+      "audio_tokens": 0,
+      "accepted_prediction_tokens": 0,
+      "rejected_prediction_tokens": 0
+    }
+  },
+  "format": {
+    "json_object": true,
+    "rule_unchanged": true,
+    "passage_is_string": true,
+    "passage_sha256": "d68126805069a69cfd186bd7bed55a86ffda56b22fc95960ccf6451da1d419ee",
+    "passage_words": 272
+  },
+  "finished_at": "2026-09-22T20:03:58.839844+00:00",
+  "latency_seconds": 4.9123,
+  "usage_cost_upper_estimate_usd": 0.0002624,
+  "stream_status": "active",
+  "budget": {
+    "usage_cost_upper_estimate_usd": 3.2259329,
+    "uncertain_cost_reserve_usd": 0.04533,
+    "in_flight_reserve_usd": 0.586752,
+    "limit_usd": 18.83
+  }
+}

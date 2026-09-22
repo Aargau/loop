@@ -1,0 +1,47 @@
+{
+  "model": "gpt-6-luna",
+  "seed": "sunset_a",
+  "hop": 20,
+  "http_status": 200,
+  "response_body": "{\n  \"id\": \"chatcmpl-ER0wVLBUXAnnusbdBPcDEC1cdCjxj\",\n  \"object\": \"chat.completion\",\n  \"created\": 1790107187,\n  \"model\": \"gpt-6-luna\",\n  \"choices\": [\n    {\n      \"index\": 0,\n      \"message\": {\n        \"role\": \"assistant\",\n        \"content\": \"{\\\"rule\\\":\\\"Return this JSON object with the rule field unchanged and a new passage of about 250 words in the text field.\\\",\\\"text\\\":\\\"On Saturday morning, Nia found a brass key buried in the garden beneath the old pear tree. It was tied to a faded blue ribbon, and a tiny tag hung from its bow. The tag bore a single word: “Bellwether.”\\n\\nNia showed it to her grandfather, who had lived in the village all his life. He studied the key, then smiled. “That opens the little room at the train station,” he said. “Or it did, when trains still stopped here.”\\n\\nThe station had been empty for years. Ivy covered its walls, and weeds grew between the platform stones. Nia and her grandfather walked there together. At the back of the building, a narrow wooden door waited beneath a dusty window. The key turned with a click.\\n\\nInside, they found a small room filled with clocks. Some were round, some were shaped like birds, and one had painted flowers on its face. None of them showed the same time. On a workbench lay a notebook and a box of tools.\\n\\nHer grandfather opened the notebook. Its pages held careful notes from a stationmaster who had repaired clocks for travelers while they waited for trains. The final entry read, “A town keeps time in the stories it shares.”\\n\\nNia looked at the silent clocks. “Could we make them work again?”\\n\\nThey cleaned the room, wound each clock, and listened as its ticking filled the station. Nia copied the stationmaster’s notes into a fresh book, adding what she learned about every clock.\\n\\nBy autumn, the villagers had gathered there to hear the clocks chime. Nia placed the brass key beside the notebook, ready for whoever came next.\\\"}\",\n        \"refusal\": null,\n        \"annotations\": []\n      },\n      \"finish_reason\": \"stop\"\n    }\n  ],\n  \"usage\": {\n    \"prompt_tokens\": 356,\n    \"completion_tokens\": 412,\n    \"total_tokens\": 768,\n    \"prompt_tokens_details\": {\n      \"cached_tokens\": 0,\n      \"cache_write_tokens\": 0,\n      \"audio_tokens\": 0\n    },\n    \"completion_tokens_details\": {\n      \"reasoning_tokens\": 39,\n      \"audio_tokens\": 0,\n      \"accepted_prediction_tokens\": 0,\n      \"rejected_prediction_tokens\": 0\n    }\n  },\n  \"service_tier\": \"default\",\n  \"system_fingerprint\": null\n}\n",
+  "response_headers": {
+    "Date": "Tue, 22 Sep 2026 19:59:52 GMT",
+    "openai-processing-ms": "5319",
+    "x-request-id": "req_a11850a7c1a8495f871c227190be632d"
+  },
+  "output": "{\"rule\":\"Return this JSON object with the rule field unchanged and a new passage of about 250 words in the text field.\",\"text\":\"On Saturday morning, Nia found a brass key buried in the garden beneath the old pear tree. It was tied to a faded blue ribbon, and a tiny tag hung from its bow. The tag bore a single word: “Bellwether.”\n\nNia showed it to her grandfather, who had lived in the village all his life. He studied the key, then smiled. “That opens the little room at the train station,” he said. “Or it did, when trains still stopped here.”\n\nThe station had been empty for years. Ivy covered its walls, and weeds grew between the platform stones. Nia and her grandfather walked there together. At the back of the building, a narrow wooden door waited beneath a dusty window. The key turned with a click.\n\nInside, they found a small room filled with clocks. Some were round, some were shaped like birds, and one had painted flowers on its face. None of them showed the same time. On a workbench lay a notebook and a box of tools.\n\nHer grandfather opened the notebook. Its pages held careful notes from a stationmaster who had repaired clocks for travelers while they waited for trains. The final entry read, “A town keeps time in the stories it shares.”\n\nNia looked at the silent clocks. “Could we make them work again?”\n\nThey cleaned the room, wound each clock, and listened as its ticking filled the station. Nia copied the stationmaster’s notes into a fresh book, adding what she learned about every clock.\n\nBy autumn, the villagers had gathered there to hear the clocks chime. Nia placed the brass key beside the notebook, ready for whoever came next.\"}",
+  "output_sha256": "50118334bfa8da3f2d7cac75621f09ddda89bf916f4a8ac3c8fb766bda99f329",
+  "finish_reason": "stop",
+  "refusal": null,
+  "returned_model": "gpt-6-luna",
+  "usage": {
+    "prompt_tokens": 356,
+    "completion_tokens": 412,
+    "total_tokens": 768,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 39,
+      "audio_tokens": 0,
+      "accepted_prediction_tokens": 0,
+      "rejected_prediction_tokens": 0
+    }
+  },
+  "format": {
+    "json_object": false,
+    "rule_unchanged": false
+  },
+  "finished_at": "2026-09-22T19:59:48.876890+00:00",
+  "latency_seconds": 5.4507,
+  "usage_cost_upper_estimate_usd": 0.0002416,
+  "stream_status": "active",
+  "budget": {
+    "usage_cost_upper_estimate_usd": 1.645364,
+    "uncertain_cost_reserve_usd": 0.04533,
+    "in_flight_reserve_usd": 0.58834,
+    "limit_usd": 18.83
+  }
+}

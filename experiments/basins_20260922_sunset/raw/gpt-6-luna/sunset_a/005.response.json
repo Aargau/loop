@@ -1,0 +1,50 @@
+{
+  "model": "gpt-6-luna",
+  "seed": "sunset_a",
+  "hop": 5,
+  "http_status": 200,
+  "response_body": "{\n  \"id\": \"chatcmpl-ER0t7lYbWTItjTQsvpj79ugFWEKIf\",\n  \"object\": \"chat.completion\",\n  \"created\": 1790106977,\n  \"model\": \"gpt-6-luna\",\n  \"choices\": [\n    {\n      \"index\": 0,\n      \"message\": {\n        \"role\": \"assistant\",\n        \"content\": \"{\\\"rule\\\":\\\"Return this JSON object with the rule field unchanged and a new passage of about 250 words in the text field.\\\",\\\"text\\\":\\\"When the lighthouse lamp went dark, the islanders noticed at once. Its beam had guided boats around the northern rocks for generations, and without it the harbor seemed suddenly farther away. Tessa, the keeper’s apprentice, climbed the spiral stairs with a toolbox while wind rattled the glass.\\\\n\\\\nAt the top, she found the lamp intact but the small generator silent. Her mentor, Mr. Vale, had taken the supply boat to the mainland that morning and would not return until tomorrow. Tessa checked the fuel line, tightened a loose bolt, and pulled the starter cord. Nothing happened.\\\\n\\\\nShe remembered a tin of spare parts in the storeroom below. On her way down, she heard a faint bell beyond the windows. A fishing boat was approaching through the fog, its captain sounding an alarm near the reef. Tessa hurried back up and lit the emergency oil lantern. Its weak glow appeared in the glass, but it was too small to reach the boat.\\\\n\\\\nThen she noticed the polished metal reflector stored beside the lamp. With a length of wire and a wrench, she angled it toward the lantern’s flame. The light brightened, casting a narrow golden beam across the water. Tessa turned the reflector slowly, signaling the boat toward the safer channel.\\\\n\\\\nBy the time the fishing crew reached the harbor, the storm had begun to ease. They thanked her as they tied up, and one sailor offered a replacement generator belt from his kit. Together, they got the lighthouse turning again. At dawn, Tessa watched its beam sweep over the calm sea, proud that, for one long night, she had kept the way home visible.\\\"}\",\n        \"refusal\": null,\n        \"annotations\": []\n      },\n      \"finish_reason\": \"stop\"\n    }\n  ],\n  \"usage\": {\n    \"prompt_tokens\": 371,\n    \"completion_tokens\": 423,\n    \"total_tokens\": 794,\n    \"prompt_tokens_details\": {\n      \"cached_tokens\": 0,\n      \"cache_write_tokens\": 0,\n      \"audio_tokens\": 0\n    },\n    \"completion_tokens_details\": {\n      \"reasoning_tokens\": 48,\n      \"audio_tokens\": 0,\n      \"accepted_prediction_tokens\": 0,\n      \"rejected_prediction_tokens\": 0\n    }\n  },\n  \"service_tier\": \"default\",\n  \"system_fingerprint\": null\n}\n",
+  "response_headers": {
+    "Date": "Tue, 22 Sep 2026 19:56:22 GMT",
+    "openai-processing-ms": "5306",
+    "x-request-id": "req_4a87e8832d56415680ffc1cd2216d8b4"
+  },
+  "output": "{\"rule\":\"Return this JSON object with the rule field unchanged and a new passage of about 250 words in the text field.\",\"text\":\"When the lighthouse lamp went dark, the islanders noticed at once. Its beam had guided boats around the northern rocks for generations, and without it the harbor seemed suddenly farther away. Tessa, the keeper’s apprentice, climbed the spiral stairs with a toolbox while wind rattled the glass.\\n\\nAt the top, she found the lamp intact but the small generator silent. Her mentor, Mr. Vale, had taken the supply boat to the mainland that morning and would not return until tomorrow. Tessa checked the fuel line, tightened a loose bolt, and pulled the starter cord. Nothing happened.\\n\\nShe remembered a tin of spare parts in the storeroom below. On her way down, she heard a faint bell beyond the windows. A fishing boat was approaching through the fog, its captain sounding an alarm near the reef. Tessa hurried back up and lit the emergency oil lantern. Its weak glow appeared in the glass, but it was too small to reach the boat.\\n\\nThen she noticed the polished metal reflector stored beside the lamp. With a length of wire and a wrench, she angled it toward the lantern’s flame. The light brightened, casting a narrow golden beam across the water. Tessa turned the reflector slowly, signaling the boat toward the safer channel.\\n\\nBy the time the fishing crew reached the harbor, the storm had begun to ease. They thanked her as they tied up, and one sailor offered a replacement generator belt from his kit. Together, they got the lighthouse turning again. At dawn, Tessa watched its beam sweep over the calm sea, proud that, for one long night, she had kept the way home visible.\"}",
+  "output_sha256": "705f59910db17e757c3374651c203d1906a748889a3bc290151db72e703eb086",
+  "finish_reason": "stop",
+  "refusal": null,
+  "returned_model": "gpt-6-luna",
+  "usage": {
+    "prompt_tokens": 371,
+    "completion_tokens": 423,
+    "total_tokens": 794,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 48,
+      "audio_tokens": 0,
+      "accepted_prediction_tokens": 0,
+      "rejected_prediction_tokens": 0
+    }
+  },
+  "format": {
+    "json_object": true,
+    "rule_unchanged": true,
+    "passage_is_string": true,
+    "passage_sha256": "6e7e214e21724840d5b82e28e2aa126a75fba4ca77ef893572d8994cb96d165b",
+    "passage_words": 274
+  },
+  "finished_at": "2026-09-22T19:56:18.250845+00:00",
+  "latency_seconds": 5.5755,
+  "usage_cost_upper_estimate_usd": 0.00024859999999999997,
+  "stream_status": "active",
+  "budget": {
+    "usage_cost_upper_estimate_usd": 0.344207,
+    "uncertain_cost_reserve_usd": 0.0,
+    "in_flight_reserve_usd": 0.587976,
+    "limit_usd": 18.83
+  }
+}

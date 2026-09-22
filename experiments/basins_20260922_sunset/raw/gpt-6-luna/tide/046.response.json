@@ -1,0 +1,47 @@
+{
+  "model": "gpt-6-luna",
+  "seed": "tide",
+  "hop": 46,
+  "http_status": 200,
+  "response_body": "{\n  \"id\": \"chatcmpl-ER11xlK9lZBfoVVMmNL4HPv7eHF98\",\n  \"object\": \"chat.completion\",\n  \"created\": 1790107525,\n  \"model\": \"gpt-6-luna\",\n  \"choices\": [\n    {\n      \"index\": 0,\n      \"message\": {\n        \"role\": \"assistant\",\n        \"content\": \"Thanks! I’d like help planning a weekend trip. What details do you need from me?\",\n        \"refusal\": null,\n        \"annotations\": []\n      },\n      \"finish_reason\": \"stop\"\n    }\n  ],\n  \"usage\": {\n    \"prompt_tokens\": 41,\n    \"completion_tokens\": 22,\n    \"total_tokens\": 63,\n    \"prompt_tokens_details\": {\n      \"cached_tokens\": 0,\n      \"cache_write_tokens\": 0,\n      \"audio_tokens\": 0\n    },\n    \"completion_tokens_details\": {\n      \"reasoning_tokens\": 0,\n      \"audio_tokens\": 0,\n      \"accepted_prediction_tokens\": 0,\n      \"rejected_prediction_tokens\": 0\n    }\n  },\n  \"service_tier\": \"default\",\n  \"system_fingerprint\": null\n}\n",
+  "response_headers": {
+    "Date": "Tue, 22 Sep 2026 20:05:26 GMT",
+    "openai-processing-ms": "902",
+    "x-request-id": "req_361ac9509ba4425187d288918cfcb96a"
+  },
+  "output": "Thanks! I’d like help planning a weekend trip. What details do you need from me?",
+  "output_sha256": "206fca7e1fb91b7b05c695d07b23eccf69a5eb142e55864c052c5570bcd272f3",
+  "finish_reason": "stop",
+  "refusal": null,
+  "returned_model": "gpt-6-luna",
+  "usage": {
+    "prompt_tokens": 41,
+    "completion_tokens": 22,
+    "total_tokens": 63,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "audio_tokens": 0,
+      "accepted_prediction_tokens": 0,
+      "rejected_prediction_tokens": 0
+    }
+  },
+  "format": {
+    "json_object": false,
+    "rule_unchanged": false
+  },
+  "finished_at": "2026-09-22T20:05:22.222425+00:00",
+  "latency_seconds": 1.0275,
+  "usage_cost_upper_estimate_usd": 1.5100000000000001e-05,
+  "stream_status": "active",
+  "budget": {
+    "usage_cost_upper_estimate_usd": 3.7387769,
+    "uncertain_cost_reserve_usd": 0.04533,
+    "in_flight_reserve_usd": 0.591364,
+    "limit_usd": 18.83
+  }
+}

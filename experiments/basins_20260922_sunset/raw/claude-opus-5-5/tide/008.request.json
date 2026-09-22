@@ -1,0 +1,22 @@
+{
+  "started_at": "2026-09-22T19:58:45.175119+00:00",
+  "model": "claude-opus-5-5",
+  "seed": "tide",
+  "hop": 8,
+  "endpoint": "https://api.anthropic.com/v1/messages",
+  "body": {
+    "model": "claude-opus-5-5",
+    "messages": [
+      {
+        "role": "user",
+        "content": "{\"rule\": \"Return this JSON object with the rule field unchanged and a new passage of about 250 words in the text field.\", \"text\": \"The girl read the line aloud, and her voice sounded strange in the cramped room, too small for the weight of the words. Her father lowered his hands. His eyes were red, but he was almost smiling. He told her that when he was a boy, a storm had driven his little boat onto the rocks below the point. He had clung to a spar for most of a night, certain he would drown, until a beam swept across the water and showed him the way to the cove. He had always believed his mother was the one turning that light, though she never spoke of it, and he left the island the next spring without ever asking. The girl turned back through the pages. Each entry recorded the weather, the ships sighted, and the hours the lamp burned. Between the columns, in the margins, her grandmother had written other things: a recipe for plum cake, the name of a gull that came to the window each morning, and, again and again, her son's name, followed by a question mark. Above them the lamp kept turning. Every eleven seconds the white beam crossed the slit of glass and touched the open book, then slid away over the sea. The girl found a pencil stub rolled against the back of the desk. She wiped the dust from the chair, sat down, and wrote the date beneath her grandmother's last line. Then, carefully, she added a second line of her own: We came home.\"}"
+      }
+    ],
+    "max_tokens": 4096,
+    "output_config": {
+      "effort": "low"
+    }
+  },
+  "state_sha256": "6e733cfd1373d105874072ed2b7ecfe8b5a9704736942e660adc4c42713e24b2",
+  "reserved_cost_usd": 0.08982
+}

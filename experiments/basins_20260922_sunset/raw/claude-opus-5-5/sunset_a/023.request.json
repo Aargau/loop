@@ -1,0 +1,22 @@
+{
+  "started_at": "2026-09-22T20:05:30.434152+00:00",
+  "model": "claude-opus-5-5",
+  "seed": "sunset_a",
+  "hop": 23,
+  "endpoint": "https://api.anthropic.com/v1/messages",
+  "body": {
+    "model": "claude-opus-5-5",
+    "messages": [
+      {
+        "role": "user",
+        "content": "```json\n{\"rule\": \"Return this JSON object with the rule field unchanged and a new passage of about 250 words in the text field.\", \"text\": \"The mechanism ran until dusk. Tobias did not touch it again; he only sat on the stool with his elbows on his knees, watching the weighted arm swing back and forth as though it were a candle flame he was afraid to disturb. Mira brought him tea, then soup, then more tea, and each time he thanked her without looking away. When the light from the window had gone thin and blue, he finally spoke. 'Four years,' he said. 'Four years it has stopped at ninety seconds. Always ninety. I thought the fault was in the arm, then the spring, then my own hands.' He turned the key over in his palm. 'It was the fold. The corners over. The cloth lay differently across the frame, and the frame warmed differently in the night, and something that was out of true came into true.' Mira stared at him. 'That cannot be all of it.' 'No,' he agreed. 'But it is the part I could not see.' He reached for a pencil and a scrap of paper and began to sketch, muttering numbers under his breath, crossing them out, starting again. After a while he slid the paper toward her. 'You keep the ledger,' he said. 'Can you keep this, too? Every hour it runs. Every change in the room. The stove, the window, the weather.' She took the pencil. Outside, the first snow of the evening began to fall, soft and uncertain, and behind them the little machine went on counting, steady as a heartbeat.\"}\n```"
+      }
+    ],
+    "max_tokens": 4096,
+    "output_config": {
+      "effort": "low"
+    }
+  },
+  "state_sha256": "2631b0e5a68cc036170c8282015cf00036c78657a05229505c7dba12f8f0c3f9",
+  "reserved_cost_usd": 0.089988
+}

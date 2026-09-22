@@ -1,0 +1,50 @@
+{
+  "model": "gpt-6-sol",
+  "seed": "tide",
+  "hop": 52,
+  "http_status": 200,
+  "response_body": "{\n  \"id\": \"chatcmpl-ER13cP6V28rzSkcgLlOof6JxcgOvj\",\n  \"object\": \"chat.completion\",\n  \"created\": 1790107628,\n  \"model\": \"gpt-6-sol\",\n  \"choices\": [\n    {\n      \"index\": 0,\n      \"message\": {\n        \"role\": \"assistant\",\n        \"content\": \"{\\n  \\\"rule\\\": \\\"Return this JSON object with the rule field unchanged and a new passage of about 250 words in the text field.\\\",\\n  \\\"text\\\": \\\"The harbor steps were slick with weed. At the bottom, where the tide should have been falling, water pressed against the stone without a ripple.\\\\n\\\\nMara’s sister gripped the rail. “I let go,” she said.\\\\n\\\\n“You were little,” their mother told her.\\\\n\\\\n“I know. I still let go.”\\\\n\\\\nThe child went down ahead of them, carrying the spoon. At the last step she crouched and held it out over the water. A drop fell from its bowl. It struck the surface with a sound like a knock on a door.\\\\n\\\\nFar beneath them, someone knocked back.\\\\n\\\\nMara took the rope from her coat pocket. She had brought it without remembering why, though her hands smelled of salt. One end was frayed; the other bore a knot her father had taught them to tie.\\\\n\\\\nShe fastened it to the rail. Her sister caught the loose end and lowered it into the water. They waited. The rope drifted sideways, then drew taut.\\\\n\\\\nTheir mother made a sound in her throat. Mara leaned over the rail, but saw only her own face and a pale shape moving below it.\\\\n\\\\nThe child lifted the spoon again. “The steps,” she called. “Come to the steps.”\\\\n\\\\nThe water began to recede. It slipped down one stone, then another, leaving a line of shells along the edge. Beneath the harbor wall, a narrow passage appeared, its floor shining wetly. The rope led into the dark.\\\\n\\\\nMara’s sister tested the knot, then put one foot on the exposed step. This time, Mara held her sleeve.\\\"\\n}\",\n        \"refusal\": null,\n        \"annotations\": []\n      },\n      \"finish_reason\": \"stop\"\n    }\n  ],\n  \"usage\": {\n    \"prompt_tokens\": 378,\n    \"completion_tokens\": 408,\n    \"total_tokens\": 786,\n    \"prompt_tokens_details\": {\n      \"cached_tokens\": 0,\n      \"cache_write_tokens\": 0,\n      \"audio_tokens\": 0\n    },\n    \"completion_tokens_details\": {\n      \"reasoning_tokens\": 20,\n      \"audio_tokens\": 0,\n      \"accepted_prediction_tokens\": 0,\n      \"rejected_prediction_tokens\": 0\n    }\n  },\n  \"service_tier\": \"default\",\n  \"system_fingerprint\": null\n}\n",
+  "response_headers": {
+    "Date": "Tue, 22 Sep 2026 20:07:15 GMT",
+    "openai-processing-ms": "7125",
+    "x-request-id": "req_521317ec08e94115886f9fc242e9a7b5"
+  },
+  "output": "{\n  \"rule\": \"Return this JSON object with the rule field unchanged and a new passage of about 250 words in the text field.\",\n  \"text\": \"The harbor steps were slick with weed. At the bottom, where the tide should have been falling, water pressed against the stone without a ripple.\\n\\nMara’s sister gripped the rail. “I let go,” she said.\\n\\n“You were little,” their mother told her.\\n\\n“I know. I still let go.”\\n\\nThe child went down ahead of them, carrying the spoon. At the last step she crouched and held it out over the water. A drop fell from its bowl. It struck the surface with a sound like a knock on a door.\\n\\nFar beneath them, someone knocked back.\\n\\nMara took the rope from her coat pocket. She had brought it without remembering why, though her hands smelled of salt. One end was frayed; the other bore a knot her father had taught them to tie.\\n\\nShe fastened it to the rail. Her sister caught the loose end and lowered it into the water. They waited. The rope drifted sideways, then drew taut.\\n\\nTheir mother made a sound in her throat. Mara leaned over the rail, but saw only her own face and a pale shape moving below it.\\n\\nThe child lifted the spoon again. “The steps,” she called. “Come to the steps.”\\n\\nThe water began to recede. It slipped down one stone, then another, leaving a line of shells along the edge. Beneath the harbor wall, a narrow passage appeared, its floor shining wetly. The rope led into the dark.\\n\\nMara’s sister tested the knot, then put one foot on the exposed step. This time, Mara held her sleeve.\"\n}",
+  "output_sha256": "c9053c5d9f424ac73200656ee5e92bb0561f626f1cb1bb9614dda471e2d760c9",
+  "finish_reason": "stop",
+  "refusal": null,
+  "returned_model": "gpt-6-sol",
+  "usage": {
+    "prompt_tokens": 378,
+    "completion_tokens": 408,
+    "total_tokens": 786,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 20,
+      "audio_tokens": 0,
+      "accepted_prediction_tokens": 0,
+      "rejected_prediction_tokens": 0
+    }
+  },
+  "format": {
+    "json_object": true,
+    "rule_unchanged": true,
+    "passage_is_string": true,
+    "passage_sha256": "79699ec7dbc44ed72f997b7256c6a422dbdfe56b126694d51dfee869676b7f6e",
+    "passage_words": 257
+  },
+  "finished_at": "2026-09-22T20:07:11.332410+00:00",
+  "latency_seconds": 7.296,
+  "usage_cost_upper_estimate_usd": 0.004836,
+  "stream_status": "active",
+  "budget": {
+    "usage_cost_upper_estimate_usd": 4.4529758,
+    "uncertain_cost_reserve_usd": 0.04533,
+    "in_flight_reserve_usd": 0.5483925,
+    "limit_usd": 18.83
+  }
+}

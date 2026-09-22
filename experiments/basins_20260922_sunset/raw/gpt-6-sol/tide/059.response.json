@@ -1,0 +1,50 @@
+{
+  "model": "gpt-6-sol",
+  "seed": "tide",
+  "hop": 59,
+  "http_status": 200,
+  "response_body": "{\n  \"id\": \"chatcmpl-ER152gBglBDXzgATN4XDzgt1mbcuy\",\n  \"object\": \"chat.completion\",\n  \"created\": 1790107716,\n  \"model\": \"gpt-6-sol\",\n  \"choices\": [\n    {\n      \"index\": 0,\n      \"message\": {\n        \"role\": \"assistant\",\n        \"content\": \"{\\n  \\\"rule\\\": \\\"Return this JSON object with the rule field unchanged and a new passage of about 250 words in the text field.\\\",\\n  \\\"text\\\": \\\"The passage opened onto a courtyard crowded with empty flowerpots. The woman waited beside a kitchen door, wiping her hands on a towel. Up close, she looked older than Mara had expected.\\\\n\\\\n“He left yesterday,” she said. “Before dawn.”\\\\n\\\\nMara’s mother stopped so suddenly that her sister nearly walked into her. “Did he say where he was going?”\\\\n\\\\nThe woman glanced at the child, now awake and watching them all. “Come inside.”\\\\n\\\\nThe kitchen smelled of bread and boiled coffee. On the table lay a folded map, held flat by a chipped blue cup. The woman said her name was Elise. She had known their father at the hospital, years ago, when he delivered supplies there.\\\\n\\\\n“He came to ask about someone,” Elise said. “A patient from that time.”\\\\n\\\\nTheir mother pulled out a chair but did not sit. Mara set the notebook on the table. “Was it someone we know?”\\\\n\\\\nElise touched a place on the map beyond the harbor, where the road ended at a small village. “I told him she was buried here. He went to see for himself.”\\\\n\\\\nFor the first time since they had found the notebook, their mother reached for it. She turned past the pages Mara had studied and stopped at a pencil sketch of a young woman standing outside a hospital window.\\\\n\\\\n“I knew her,” their mother said quietly.\\\\n\\\\nElise nodded. “Then you know why he came.”\\\\n\\\\nBut their mother shook her head. She looked at the sketch for a long moment, then turned the notebook so her daughters could see the name written beneath it.\\\"\\n}\",\n        \"refusal\": null,\n        \"annotations\": []\n      },\n      \"finish_reason\": \"stop\"\n    }\n  ],\n  \"usage\": {\n    \"prompt_tokens\": 371,\n    \"completion_tokens\": 408,\n    \"total_tokens\": 779,\n    \"prompt_tokens_details\": {\n      \"cached_tokens\": 0,\n      \"cache_write_tokens\": 0,\n      \"audio_tokens\": 0\n    },\n    \"completion_tokens_details\": {\n      \"reasoning_tokens\": 19,\n      \"audio_tokens\": 0,\n      \"accepted_prediction_tokens\": 0,\n      \"rejected_prediction_tokens\": 0\n    }\n  },\n  \"service_tier\": \"default\",\n  \"system_fingerprint\": null\n}\n",
+  "response_headers": {
+    "Date": "Tue, 22 Sep 2026 20:08:42 GMT",
+    "openai-processing-ms": "6104",
+    "x-request-id": "req_60814f0febca4063bb6621165f01881e"
+  },
+  "output": "{\n  \"rule\": \"Return this JSON object with the rule field unchanged and a new passage of about 250 words in the text field.\",\n  \"text\": \"The passage opened onto a courtyard crowded with empty flowerpots. The woman waited beside a kitchen door, wiping her hands on a towel. Up close, she looked older than Mara had expected.\\n\\n“He left yesterday,” she said. “Before dawn.”\\n\\nMara’s mother stopped so suddenly that her sister nearly walked into her. “Did he say where he was going?”\\n\\nThe woman glanced at the child, now awake and watching them all. “Come inside.”\\n\\nThe kitchen smelled of bread and boiled coffee. On the table lay a folded map, held flat by a chipped blue cup. The woman said her name was Elise. She had known their father at the hospital, years ago, when he delivered supplies there.\\n\\n“He came to ask about someone,” Elise said. “A patient from that time.”\\n\\nTheir mother pulled out a chair but did not sit. Mara set the notebook on the table. “Was it someone we know?”\\n\\nElise touched a place on the map beyond the harbor, where the road ended at a small village. “I told him she was buried here. He went to see for himself.”\\n\\nFor the first time since they had found the notebook, their mother reached for it. She turned past the pages Mara had studied and stopped at a pencil sketch of a young woman standing outside a hospital window.\\n\\n“I knew her,” their mother said quietly.\\n\\nElise nodded. “Then you know why he came.”\\n\\nBut their mother shook her head. She looked at the sketch for a long moment, then turned the notebook so her daughters could see the name written beneath it.\"\n}",
+  "output_sha256": "0bd9e33e21dcef7b3231e5ea46c7eb3d21dd9529d2eecd66331fa89e7e775116",
+  "finish_reason": "stop",
+  "refusal": null,
+  "returned_model": "gpt-6-sol",
+  "usage": {
+    "prompt_tokens": 371,
+    "completion_tokens": 408,
+    "total_tokens": 779,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 19,
+      "audio_tokens": 0,
+      "accepted_prediction_tokens": 0,
+      "rejected_prediction_tokens": 0
+    }
+  },
+  "format": {
+    "json_object": true,
+    "rule_unchanged": true,
+    "passage_is_string": true,
+    "passage_sha256": "06a1713351a3dcd7827f0104ff44861bb8e444efaaf486c0e6fc577122a6ccca",
+    "passage_words": 264
+  },
+  "finished_at": "2026-09-22T20:08:38.442805+00:00",
+  "latency_seconds": 6.2423,
+  "usage_cost_upper_estimate_usd": 0.004822,
+  "stream_status": "active",
+  "budget": {
+    "usage_cost_upper_estimate_usd": 4.9750493,
+    "uncertain_cost_reserve_usd": 0.04533,
+    "in_flight_reserve_usd": 0.5455159,
+    "limit_usd": 18.83
+  }
+}

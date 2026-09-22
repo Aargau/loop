@@ -1,0 +1,48 @@
+{
+  "model": "claude-fable-5-1",
+  "seed": "tide",
+  "hop": 6,
+  "http_status": 200,
+  "response_body": "{\"model\":\"claude-fable-5-1\",\"id\":\"msg_011CfK52fhrLxjRk4r5yaiXa\",\"type\":\"message\",\"role\":\"assistant\",\"content\":[{\"type\":\"text\",\"text\":\"{\\\"rule\\\": \\\"Return this JSON object with the rule field unchanged and a new passage of about 250 words in the text field.\\\", \\\"text\\\": \\\"The lighthouse had been decommissioned the year Tomas was born, which meant he had never seen it lit, only heard about it the way you hear about weather from before your time. His grandfather kept the logbooks in a sea chest under the stairs, and on the night the power went out across the whole cape, he brought one up and set it on the kitchen table beside the candle.\\\\n\\\\n\\\\\\\"Read from where the ribbon is,\\\\\\\" the old man said.\\\\n\\\\nThe ribbon marked a page from November, forty-one years back. The handwriting was small and careful and belonged to someone Tomas had never met. It recorded wind speed, visibility, the arrival and passing of a freighter called the Aldous Mar. Then, at 2:14 in the morning, a single line: light seen offshore, answering.\\\\n\\\\n\\\\\\\"Answering what?\\\\\\\" Tomas asked.\\\\n\\\\nHis grandfather did not say. He took the book back, closed it on the ribbon, and went to the window that faced the water. The candle made the glass into a mirror, so all Tomas could see was the two of them, small and gold, and the dark behind.\\\\n\\\\n\\\\\\\"Blow that out,\\\\\\\" his grandfather said.\\\\n\\\\nTomas did. The kitchen fell away. Slowly the window filled back in with sea and sky, and the black bulk of the tower on the point. He waited for his eyes to finish adjusting, and then he waited longer, because at the top of the tower, where nothing had burned in forty-one years, something was beginning, very faintly, to glow.\\\"}\"}],\"container\":null,\"stop_reason\":\"end_turn\",\"stop_sequence\":null,\"stop_details\":null,\"usage\":{\"input_tokens\":481,\"cache_creation_input_tokens\":0,\"cache_read_input_tokens\":0,\"cache_creation\":{\"ephemeral_5m_input_tokens\":0,\"ephemeral_1h_input_tokens\":0},\"output_tokens\":526,\"output_tokens_details\":{\"thinking_tokens\":0},\"service_tier\":\"standard\",\"inference_geo\":\"global\"}}",
+  "response_headers": {
+    "Date": "Tue, 22 Sep 2026 19:59:09 GMT",
+    "request-id": "req_011CfK52fDamNYyoCkEXcPMP"
+  },
+  "output": "{\"rule\": \"Return this JSON object with the rule field unchanged and a new passage of about 250 words in the text field.\", \"text\": \"The lighthouse had been decommissioned the year Tomas was born, which meant he had never seen it lit, only heard about it the way you hear about weather from before your time. His grandfather kept the logbooks in a sea chest under the stairs, and on the night the power went out across the whole cape, he brought one up and set it on the kitchen table beside the candle.\\n\\n\\\"Read from where the ribbon is,\\\" the old man said.\\n\\nThe ribbon marked a page from November, forty-one years back. The handwriting was small and careful and belonged to someone Tomas had never met. It recorded wind speed, visibility, the arrival and passing of a freighter called the Aldous Mar. Then, at 2:14 in the morning, a single line: light seen offshore, answering.\\n\\n\\\"Answering what?\\\" Tomas asked.\\n\\nHis grandfather did not say. He took the book back, closed it on the ribbon, and went to the window that faced the water. The candle made the glass into a mirror, so all Tomas could see was the two of them, small and gold, and the dark behind.\\n\\n\\\"Blow that out,\\\" his grandfather said.\\n\\nTomas did. The kitchen fell away. Slowly the window filled back in with sea and sky, and the black bulk of the tower on the point. He waited for his eyes to finish adjusting, and then he waited longer, because at the top of the tower, where nothing had burned in forty-one years, something was beginning, very faintly, to glow.\"}",
+  "output_sha256": "541dbd891cb9c569d1a2672cbb935cec7c0afb72c1644a54cbf9455219b93faa",
+  "finish_reason": "end_turn",
+  "refusal": null,
+  "returned_model": "claude-fable-5-1",
+  "usage": {
+    "input_tokens": 481,
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 0,
+    "cache_creation": {
+      "ephemeral_5m_input_tokens": 0,
+      "ephemeral_1h_input_tokens": 0
+    },
+    "output_tokens": 526,
+    "output_tokens_details": {
+      "thinking_tokens": 0
+    },
+    "service_tier": "standard",
+    "inference_geo": "global"
+  },
+  "format": {
+    "json_object": true,
+    "rule_unchanged": true,
+    "passage_is_string": true,
+    "passage_sha256": "548f377f689d8505d10dcc85e87ba51a1670acdc76a58b7efa31c78a9e8ee8bd",
+    "passage_words": 252
+  },
+  "finished_at": "2026-09-22T19:59:05.939153+00:00",
+  "latency_seconds": 13.1433,
+  "usage_cost_upper_estimate_usd": 0.03111,
+  "stream_status": "active",
+  "budget": {
+    "usage_cost_upper_estimate_usd": 1.3683675,
+    "uncertain_cost_reserve_usd": 0.04533,
+    "in_flight_reserve_usd": 0.3649844,
+    "limit_usd": 18.83
+  }
+}

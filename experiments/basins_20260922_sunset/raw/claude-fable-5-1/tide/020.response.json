@@ -1,0 +1,48 @@
+{
+  "model": "claude-fable-5-1",
+  "seed": "tide",
+  "hop": 20,
+  "http_status": 200,
+  "response_body": "{\"model\":\"claude-fable-5-1\",\"id\":\"msg_011CfK5idPoxHqYBKitYddZF\",\"type\":\"message\",\"role\":\"assistant\",\"content\":[{\"type\":\"text\",\"text\":\"{\\\"rule\\\": \\\"Return this JSON object with the rule field unchanged and a new passage of about 250 words in the text field.\\\", \\\"text\\\": \\\"The lighthouse at Corrie Head had been automated in the year Ivo Marchant turned nineteen, and for a while nobody noticed that he kept going up anyway.\\\\n\\\\nHis grandfather had been the last keeper. The old man had taught Ivo to read the lamp the way other people read weather: the faint stutter in the rotation that meant salt on the bearings, the particular hum of the generator when the fuel was running thin, the way the beam looked thicker on the water when a sea fog was building out past the Sisters.\\\\n\\\\nThe new system reported all of this to a control room on the mainland, ninety miles south. It reported it well. Ivo did not distrust the machine so much as he distrusted the idea that a light could be watched from somewhere it could not be seen.\\\\n\\\\nSo he climbed the hundred and twelve steps most evenings and sat with a thermos in the lamp room, saying nothing to anyone about it.\\\\n\\\\nIn February a cable fault took the telemetry down. The control room showed the light as operating normally, because that was the last thing it had heard. The lamp, in fact, had stopped turning at half past nine.\\\\n\\\\nIvo saw the fixed beam from the harbour wall and was up the steps in twelve minutes. He cranked the mechanism by hand, as his grandfather had shown him once, half as a joke, and kept it turning until the relief crew arrived at dawn.\\\\n\\\\nThe fault report noted a manual restart of unknown origin.\\\\n\\\\nIvo bought a new thermos.\\\"}\"}],\"container\":null,\"stop_reason\":\"end_turn\",\"stop_sequence\":null,\"stop_details\":null,\"usage\":{\"input_tokens\":583,\"cache_creation_input_tokens\":0,\"cache_read_input_tokens\":0,\"cache_creation\":{\"ephemeral_5m_input_tokens\":0,\"ephemeral_1h_input_tokens\":0},\"output_tokens\":533,\"output_tokens_details\":{\"thinking_tokens\":0},\"service_tier\":\"standard\",\"inference_geo\":\"global\"}}",
+  "response_headers": {
+    "Date": "Tue, 22 Sep 2026 20:08:10 GMT",
+    "request-id": "req_011CfK5id4icuBHQiZN9Ys4j"
+  },
+  "output": "{\"rule\": \"Return this JSON object with the rule field unchanged and a new passage of about 250 words in the text field.\", \"text\": \"The lighthouse at Corrie Head had been automated in the year Ivo Marchant turned nineteen, and for a while nobody noticed that he kept going up anyway.\\n\\nHis grandfather had been the last keeper. The old man had taught Ivo to read the lamp the way other people read weather: the faint stutter in the rotation that meant salt on the bearings, the particular hum of the generator when the fuel was running thin, the way the beam looked thicker on the water when a sea fog was building out past the Sisters.\\n\\nThe new system reported all of this to a control room on the mainland, ninety miles south. It reported it well. Ivo did not distrust the machine so much as he distrusted the idea that a light could be watched from somewhere it could not be seen.\\n\\nSo he climbed the hundred and twelve steps most evenings and sat with a thermos in the lamp room, saying nothing to anyone about it.\\n\\nIn February a cable fault took the telemetry down. The control room showed the light as operating normally, because that was the last thing it had heard. The lamp, in fact, had stopped turning at half past nine.\\n\\nIvo saw the fixed beam from the harbour wall and was up the steps in twelve minutes. He cranked the mechanism by hand, as his grandfather had shown him once, half as a joke, and kept it turning until the relief crew arrived at dawn.\\n\\nThe fault report noted a manual restart of unknown origin.\\n\\nIvo bought a new thermos.\"}",
+  "output_sha256": "d5e991353b0cb3bf852765acc2242e59d7f02b38943de443e235afd9069006c4",
+  "finish_reason": "end_turn",
+  "refusal": null,
+  "returned_model": "claude-fable-5-1",
+  "usage": {
+    "input_tokens": 583,
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 0,
+    "cache_creation": {
+      "ephemeral_5m_input_tokens": 0,
+      "ephemeral_1h_input_tokens": 0
+    },
+    "output_tokens": 533,
+    "output_tokens_details": {
+      "thinking_tokens": 0
+    },
+    "service_tier": "standard",
+    "inference_geo": "global"
+  },
+  "format": {
+    "json_object": true,
+    "rule_unchanged": true,
+    "passage_is_string": true,
+    "passage_sha256": "5f9b3905900449e03c2a28fb54c5d85d2182fc02e3c59dc55b7aa7b702b799f0",
+    "passage_words": 263
+  },
+  "finished_at": "2026-09-22T20:08:07.014947+00:00",
+  "latency_seconds": 12.1402,
+  "usage_cost_upper_estimate_usd": 0.03248,
+  "stream_status": "active",
+  "budget": {
+    "usage_cost_upper_estimate_usd": 4.7913955,
+    "uncertain_cost_reserve_usd": 0.04533,
+    "in_flight_reserve_usd": 0.3650512,
+    "limit_usd": 18.83
+  }
+}

@@ -1,0 +1,22 @@
+{
+  "started_at": "2026-09-22T20:06:03.190441+00:00",
+  "model": "claude-opus-5-5",
+  "seed": "sunset_a",
+  "hop": 24,
+  "endpoint": "https://api.anthropic.com/v1/messages",
+  "body": {
+    "model": "claude-opus-5-5",
+    "messages": [
+      {
+        "role": "user",
+        "content": "```json\n{\"rule\": \"Return this JSON object with the rule field unchanged and a new passage of about 250 words in the text field.\", \"text\": \"Mira kept the ledger through the night. She wrote the hour in a neat column down the left margin and beside each one she noted what she could: the stove banked low at ten, the wind rising from the north at eleven, a draft under the door that made the candle lean. Tobias slept for a while in the chair, his head tipped back and his mouth open, and she did not wake him. The machine did not need him. It swung and clicked and swung again, and she found herself counting along with it, a small private rhythm beneath her breath. Near three o'clock she noticed the frost creeping across the lower panes of the window, feathered and white, and she wrote that down too, though she could not have said why it mattered. At four the arm faltered. It was only the smallest hesitation, a catch at the top of the swing, as though the thing had drawn a breath and held it. Mira set down the pencil. She did not move. The arm hung there for a moment that seemed far too long, and then it fell, and swung, and went on. She let out the breath she had been holding and looked at the clock on the mantel. Four hours, eleven minutes. She wrote the time, and the frost, and the catch in the swing, and then, after a moment's thought, she wrote: the stove had gone cold. When Tobias woke at dawn, she handed him the page without a word, and watched his face change as he read.\"}\n```"
+      }
+    ],
+    "max_tokens": 4096,
+    "output_config": {
+      "effort": "low"
+    }
+  },
+  "state_sha256": "4bc977925910deb8e1728f5b994fd169dacb69ad81d4c0664b1f4fecf5ad659f",
+  "reserved_cost_usd": 0.089972
+}

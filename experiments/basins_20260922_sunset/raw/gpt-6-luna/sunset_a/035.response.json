@@ -1,0 +1,50 @@
+{
+  "model": "gpt-6-luna",
+  "seed": "sunset_a",
+  "hop": 35,
+  "http_status": 200,
+  "response_body": "{\n  \"id\": \"chatcmpl-ER0zVXIwDi4CZxWUP3mBzQ54Q35Ua\",\n  \"object\": \"chat.completion\",\n  \"created\": 1790107373,\n  \"model\": \"gpt-6-luna\",\n  \"choices\": [\n    {\n      \"index\": 0,\n      \"message\": {\n        \"role\": \"assistant\",\n        \"content\": \"{\\\"rule\\\":\\\"Return this JSON object with the rule field unchanged and a new passage of about 250 words in the text field.\\\",\\\"text\\\":\\\"On the first Saturday of summer, the residents of Maple Street gathered to turn an empty lot into a garden. For years, the space had been filled with weeds, broken bricks, and an old wooden bench. Now the neighbors arrived carrying shovels, seed packets, and buckets of water.\\\\n\\\\nMaya, who had recently moved into the blue house on the corner, wasn’t sure how she could help. She had never planted anything before. Mr. Alvarez, a retired teacher, handed her a small packet of sunflower seeds.\\\\n\\\\n“Start with these,” he said. “They’re cheerful, and they don’t mind a little beginner’s mistake.”\\\\n\\\\nMaya loosened the soil and made a row of shallow holes. She carefully dropped one seed into each hole, then covered them with earth. Nearby, children painted signs while their parents cleared away rubbish. Someone brought lemonade, and a neighbor set out a basket of warm rolls.\\\\n\\\\nBy lunchtime, the lot looked different. A narrow path wound between newly planted beds, and a fresh coat of paint brightened the old bench. The neighbors chose a sunny corner for Maya’s sunflowers.\\\\n\\\\nOver the next few weeks, Maya returned every morning to water the seeds. At first, nothing seemed to happen. Then one day she spotted two tiny green shoots poking through the soil. She called Mr. Alvarez, who came over to admire them.\\\\n\\\\nBy midsummer, the sunflowers stood taller than Maya. Their golden faces turned toward the light, visible from every house on the street. The garden had grown more than flowers: it had given the neighbors a place to meet, share stories, and welcome newcomers. Maya decided that next year she would plant something new—and help someone else learn how.\\\"}\",\n        \"refusal\": null,\n        \"annotations\": []\n      },\n      \"finish_reason\": \"stop\"\n    }\n  ],\n  \"usage\": {\n    \"prompt_tokens\": 387,\n    \"completion_tokens\": 453,\n    \"total_tokens\": 840,\n    \"prompt_tokens_details\": {\n      \"cached_tokens\": 0,\n      \"cache_write_tokens\": 0,\n      \"audio_tokens\": 0\n    },\n    \"completion_tokens_details\": {\n      \"reasoning_tokens\": 54,\n      \"audio_tokens\": 0,\n      \"accepted_prediction_tokens\": 0,\n      \"rejected_prediction_tokens\": 0\n    }\n  },\n  \"service_tier\": \"default\",\n  \"system_fingerprint\": null\n}\n",
+  "response_headers": {
+    "Date": "Tue, 22 Sep 2026 20:02:59 GMT",
+    "openai-processing-ms": "5999",
+    "x-request-id": "req_683743db7d4844f090aedb37aa4702b2"
+  },
+  "output": "{\"rule\":\"Return this JSON object with the rule field unchanged and a new passage of about 250 words in the text field.\",\"text\":\"On the first Saturday of summer, the residents of Maple Street gathered to turn an empty lot into a garden. For years, the space had been filled with weeds, broken bricks, and an old wooden bench. Now the neighbors arrived carrying shovels, seed packets, and buckets of water.\\n\\nMaya, who had recently moved into the blue house on the corner, wasn’t sure how she could help. She had never planted anything before. Mr. Alvarez, a retired teacher, handed her a small packet of sunflower seeds.\\n\\n“Start with these,” he said. “They’re cheerful, and they don’t mind a little beginner’s mistake.”\\n\\nMaya loosened the soil and made a row of shallow holes. She carefully dropped one seed into each hole, then covered them with earth. Nearby, children painted signs while their parents cleared away rubbish. Someone brought lemonade, and a neighbor set out a basket of warm rolls.\\n\\nBy lunchtime, the lot looked different. A narrow path wound between newly planted beds, and a fresh coat of paint brightened the old bench. The neighbors chose a sunny corner for Maya’s sunflowers.\\n\\nOver the next few weeks, Maya returned every morning to water the seeds. At first, nothing seemed to happen. Then one day she spotted two tiny green shoots poking through the soil. She called Mr. Alvarez, who came over to admire them.\\n\\nBy midsummer, the sunflowers stood taller than Maya. Their golden faces turned toward the light, visible from every house on the street. The garden had grown more than flowers: it had given the neighbors a place to meet, share stories, and welcome newcomers. Maya decided that next year she would plant something new—and help someone else learn how.\"}",
+  "output_sha256": "43449558169c0ed61055026910e6649a13264910201b3e5e01fc215167c61016",
+  "finish_reason": "stop",
+  "refusal": null,
+  "returned_model": "gpt-6-luna",
+  "usage": {
+    "prompt_tokens": 387,
+    "completion_tokens": 453,
+    "total_tokens": 840,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 54,
+      "audio_tokens": 0,
+      "accepted_prediction_tokens": 0,
+      "rejected_prediction_tokens": 0
+    }
+  },
+  "format": {
+    "json_object": true,
+    "rule_unchanged": true,
+    "passage_is_string": true,
+    "passage_sha256": "c0ece81e0501fa08f3ffafd2b4483ddaf374f6adc07f85c85579f7c77fa7e6ef",
+    "passage_words": 280
+  },
+  "finished_at": "2026-09-22T20:02:55.662361+00:00",
+  "latency_seconds": 6.0948,
+  "usage_cost_upper_estimate_usd": 0.0002652,
+  "stream_status": "active",
+  "budget": {
+    "usage_cost_upper_estimate_usd": 2.8672699,
+    "uncertain_cost_reserve_usd": 0.04533,
+    "in_flight_reserve_usd": 0.589082,
+    "limit_usd": 18.83
+  }
+}

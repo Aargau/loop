@@ -1,0 +1,48 @@
+{
+  "model": "claude-fable-5-1",
+  "seed": "tide",
+  "hop": 3,
+  "http_status": 200,
+  "response_body": "{\"model\":\"claude-fable-5-1\",\"id\":\"msg_011CfK4t7uSPtd5pgbchvfD3\",\"type\":\"message\",\"role\":\"assistant\",\"content\":[{\"type\":\"text\",\"text\":\"{\\\"rule\\\": \\\"Return this JSON object with the rule field unchanged and a new passage of about 250 words in the text field.\\\", \\\"text\\\": \\\"The drive took four hours, most of it on roads Hollis had not traveled since he was a boy. He did not turn on the radio. He watched the fields flatten and then rise again into the low hills of the county where his grandmother had lived, and he tried not to think about what he was doing, because thinking about it made it impossible.\\\\n\\\\nThe farm had a new name on the gate. Someone had painted the barn a hard modern red and put up a satellite dish. But the willow was still there, enormous now, its branches sweeping the ground like a woman gathering her skirts. He parked on the shoulder and walked across the field without asking anyone's permission.\\\\n\\\\nThe earth beneath the tree was dry and packed. He had brought nothing to dig with. He knelt and used his hands, and then a flat stone, and the light went from gold to gray while he worked. His fingernails split. He kept going.\\\\n\\\\nThe tin was deeper than he remembered. When the stone struck metal, he stopped breathing for a moment, then clawed the rest of the dirt away and lifted it out. The roses had faded almost to nothing. The lid was rusted shut.\\\\n\\\\nHe sat back on his heels and held it in his lap. Behind him, footsteps came through the grass, slow and even, the way she had always walked when she wanted him to turn around first.\\\\n\\\\nHollis did not turn. He closed his eyes and waited, and the footsteps stopped just close enough.\\\"}\"}],\"container\":null,\"stop_reason\":\"end_turn\",\"stop_sequence\":null,\"stop_details\":null,\"usage\":{\"input_tokens\":545,\"cache_creation_input_tokens\":0,\"cache_read_input_tokens\":0,\"cache_creation\":{\"ephemeral_5m_input_tokens\":0,\"ephemeral_1h_input_tokens\":0},\"output_tokens\":503,\"output_tokens_details\":{\"thinking_tokens\":0},\"service_tier\":\"standard\",\"inference_geo\":\"global\"}}",
+  "response_headers": {
+    "Date": "Tue, 22 Sep 2026 19:57:13 GMT",
+    "request-id": "req_011CfK4t7RAgpqyee51NAwWb"
+  },
+  "output": "{\"rule\": \"Return this JSON object with the rule field unchanged and a new passage of about 250 words in the text field.\", \"text\": \"The drive took four hours, most of it on roads Hollis had not traveled since he was a boy. He did not turn on the radio. He watched the fields flatten and then rise again into the low hills of the county where his grandmother had lived, and he tried not to think about what he was doing, because thinking about it made it impossible.\\n\\nThe farm had a new name on the gate. Someone had painted the barn a hard modern red and put up a satellite dish. But the willow was still there, enormous now, its branches sweeping the ground like a woman gathering her skirts. He parked on the shoulder and walked across the field without asking anyone's permission.\\n\\nThe earth beneath the tree was dry and packed. He had brought nothing to dig with. He knelt and used his hands, and then a flat stone, and the light went from gold to gray while he worked. His fingernails split. He kept going.\\n\\nThe tin was deeper than he remembered. When the stone struck metal, he stopped breathing for a moment, then clawed the rest of the dirt away and lifted it out. The roses had faded almost to nothing. The lid was rusted shut.\\n\\nHe sat back on his heels and held it in his lap. Behind him, footsteps came through the grass, slow and even, the way she had always walked when she wanted him to turn around first.\\n\\nHollis did not turn. He closed his eyes and waited, and the footsteps stopped just close enough.\"}",
+  "output_sha256": "0a6dddd7d415d80ae937e8cb344f5a282f5678ce23ce211c71ebf91276b1e095",
+  "finish_reason": "end_turn",
+  "refusal": null,
+  "returned_model": "claude-fable-5-1",
+  "usage": {
+    "input_tokens": 545,
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 0,
+    "cache_creation": {
+      "ephemeral_5m_input_tokens": 0,
+      "ephemeral_1h_input_tokens": 0
+    },
+    "output_tokens": 503,
+    "output_tokens_details": {
+      "thinking_tokens": 0
+    },
+    "service_tier": "standard",
+    "inference_geo": "global"
+  },
+  "format": {
+    "json_object": true,
+    "rule_unchanged": true,
+    "passage_is_string": true,
+    "passage_sha256": "82d7f9a646b3793a1c698b5932d919c0b9689a6e096407ada3c3097f368cf081",
+    "passage_words": 261
+  },
+  "finished_at": "2026-09-22T19:57:09.346576+00:00",
+  "latency_seconds": 12.5231,
+  "usage_cost_upper_estimate_usd": 0.0306,
+  "stream_status": "active",
+  "budget": {
+    "usage_cost_upper_estimate_usd": 0.6619659,
+    "uncertain_cost_reserve_usd": 0.0,
+    "in_flight_reserve_usd": 0.3644606,
+    "limit_usd": 18.83
+  }
+}

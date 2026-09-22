@@ -1,0 +1,50 @@
+{
+  "model": "gpt-6-sol",
+  "seed": "tide",
+  "hop": 15,
+  "http_status": 200,
+  "response_body": "{\n  \"id\": \"chatcmpl-ER0wA6qmgiGXKOEM7XtnfTlrWEKpy\",\n  \"object\": \"chat.completion\",\n  \"created\": 1790107166,\n  \"model\": \"gpt-6-sol\",\n  \"choices\": [\n    {\n      \"index\": 0,\n      \"message\": {\n        \"role\": \"assistant\",\n        \"content\": \"{\\n  \\\"rule\\\": \\\"Return this JSON object with the rule field unchanged and a new passage of about 250 words in the text field.\\\",\\n  \\\"text\\\": \\\"At the cottage, Daniel spread the books beside the hearth to dry. Their father took the drawing to the harbor office, and Mara went with him, carrying the page under her coat when rain began to fall.\\\\n\\\\nThe committee was meeting around a long table. Mr. Venn found them two chairs while their father laid the drawing before the harbor master. For a while, no one spoke. Then the harbor master turned the page toward the window.\\\\n\\\\n“We sealed this passage years ago,” he said.\\\\n\\\\n“Both ends?” their father asked.\\\\n\\\\n“I don’t know.”\\\\n\\\\nHe sent for the old maintenance records. By the time the clerk returned with them, rain was running down the panes. The records showed that a grating had been fitted at the seaward end, but there was no mention of anyone clearing it since.\\\\n\\\\n“We can look when the tide goes out,” Mr. Venn said.\\\\n\\\\nThe harbor master nodded and asked for three men with shovels. Mara watched her father ease back in his chair. He looked tired, but he was smiling a little.\\\\n\\\\nThat afternoon they stood on the quay as the men worked below the channel wall. Daniel had come with Mrs. Bell and a flask of tea. At first the shovels brought up only sand. Then one struck iron, and the men uncovered a grating packed tight with weed and broken shells.\\\\n\\\\nWhen they pulled the last of it free, water rushed through the passage and spilled across the exposed stones. Everyone stepped back. Mara felt her father’s hand find hers.\\\"\\n}\",\n        \"refusal\": null,\n        \"annotations\": []\n      },\n      \"finish_reason\": \"stop\"\n    }\n  ],\n  \"usage\": {\n    \"prompt_tokens\": 371,\n    \"completion_tokens\": 395,\n    \"total_tokens\": 766,\n    \"prompt_tokens_details\": {\n      \"cached_tokens\": 0,\n      \"cache_write_tokens\": 0,\n      \"audio_tokens\": 0\n    },\n    \"completion_tokens_details\": {\n      \"reasoning_tokens\": 25,\n      \"audio_tokens\": 0,\n      \"accepted_prediction_tokens\": 0,\n      \"rejected_prediction_tokens\": 0\n    }\n  },\n  \"service_tier\": \"default\",\n  \"system_fingerprint\": null\n}\n",
+  "response_headers": {
+    "Date": "Tue, 22 Sep 2026 19:59:32 GMT",
+    "openai-processing-ms": "6191",
+    "x-request-id": "req_5bbd3060d122443884666e230ac04b7c"
+  },
+  "output": "{\n  \"rule\": \"Return this JSON object with the rule field unchanged and a new passage of about 250 words in the text field.\",\n  \"text\": \"At the cottage, Daniel spread the books beside the hearth to dry. Their father took the drawing to the harbor office, and Mara went with him, carrying the page under her coat when rain began to fall.\\n\\nThe committee was meeting around a long table. Mr. Venn found them two chairs while their father laid the drawing before the harbor master. For a while, no one spoke. Then the harbor master turned the page toward the window.\\n\\n“We sealed this passage years ago,” he said.\\n\\n“Both ends?” their father asked.\\n\\n“I don’t know.”\\n\\nHe sent for the old maintenance records. By the time the clerk returned with them, rain was running down the panes. The records showed that a grating had been fitted at the seaward end, but there was no mention of anyone clearing it since.\\n\\n“We can look when the tide goes out,” Mr. Venn said.\\n\\nThe harbor master nodded and asked for three men with shovels. Mara watched her father ease back in his chair. He looked tired, but he was smiling a little.\\n\\nThat afternoon they stood on the quay as the men worked below the channel wall. Daniel had come with Mrs. Bell and a flask of tea. At first the shovels brought up only sand. Then one struck iron, and the men uncovered a grating packed tight with weed and broken shells.\\n\\nWhen they pulled the last of it free, water rushed through the passage and spilled across the exposed stones. Everyone stepped back. Mara felt her father’s hand find hers.\"\n}",
+  "output_sha256": "47c8c7cd376213606d8068634f77b2b12dcfa9aecaa29cbe4ee88257ea44f3f6",
+  "finish_reason": "stop",
+  "refusal": null,
+  "returned_model": "gpt-6-sol",
+  "usage": {
+    "prompt_tokens": 371,
+    "completion_tokens": 395,
+    "total_tokens": 766,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 25,
+      "audio_tokens": 0,
+      "accepted_prediction_tokens": 0,
+      "rejected_prediction_tokens": 0
+    }
+  },
+  "format": {
+    "json_object": true,
+    "rule_unchanged": true,
+    "passage_is_string": true,
+    "passage_sha256": "b9a86a80bfcfb57f3f85f0043bb4984bea0ea274ac325118399820b1bc02fec0",
+    "passage_words": 257
+  },
+  "finished_at": "2026-09-22T19:59:28.874351+00:00",
+  "latency_seconds": 6.3206,
+  "usage_cost_upper_estimate_usd": 0.004692,
+  "stream_status": "active",
+  "budget": {
+    "usage_cost_upper_estimate_usd": 1.4978144,
+    "uncertain_cost_reserve_usd": 0.04533,
+    "in_flight_reserve_usd": 0.5454343,
+    "limit_usd": 18.83
+  }
+}

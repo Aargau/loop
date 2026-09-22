@@ -1,0 +1,50 @@
+{
+  "model": "gpt-6-luna",
+  "seed": "sunset_a",
+  "hop": 3,
+  "http_status": 200,
+  "response_body": "{\n  \"id\": \"chatcmpl-ER0sg7kHi3S0wFCIIMwrhqCxsG5x4\",\n  \"object\": \"chat.completion\",\n  \"created\": 1790106950,\n  \"model\": \"gpt-6-luna\",\n  \"choices\": [\n    {\n      \"index\": 0,\n      \"message\": {\n        \"role\": \"assistant\",\n        \"content\": \"{\\\"rule\\\":\\\"Return this JSON object with the rule field unchanged and a new passage of about 250 words in the text field.\\\",\\\"text\\\":\\\"At the end of the harbor, where the cliffs bent around the sea, an old lighthouse stood with its windows dark. Every evening, people in the village watched for its beam, though no keeper had lived there for years. They said the lamp had gone out on the night a ship vanished in the fog.\\\\n\\\\nOne autumn afternoon, a girl named Elian found a brass key tangled in a net. It was warm in her palm, and a tiny wave had been engraved on its bow. That night, carrying a lantern, she climbed the winding path to the lighthouse. The key turned easily in the rusted door.\\\\n\\\\nInside, dust covered the stairs, but the air smelled faintly of salt and oranges. At the top, Elian found a glass lens as tall as she was. Beside it sat a logbook, open to a page dated the night of the vanished ship. The keeper had written: “The fog is thick. I hear a bell beyond the rocks, but the harbor bell is silent.”\\\\n\\\\nA deep note sounded below. Elian leaned over the railing and saw a small boat drifting toward the reefs, its sail barely visible in the mist. She found the lamp’s oil reservoir, filled it from a sealed tin, and struck a match. The wick caught. Light flooded the chamber and swept across the water.\\\\n\\\\nFar out, the boat turned toward the harbor. Elian watched until its lanterns appeared between the waves. Then, from somewhere beyond the cliffs, another bell answered. She closed the logbook carefully. By morning, the villagers would ask who had lit the lighthouse. For now, she let the beam keep watch.\\\"}\",\n        \"refusal\": null,\n        \"annotations\": []\n      },\n      \"finish_reason\": \"stop\"\n    }\n  ],\n  \"usage\": {\n    \"prompt_tokens\": 370,\n    \"completion_tokens\": 427,\n    \"total_tokens\": 797,\n    \"prompt_tokens_details\": {\n      \"cached_tokens\": 0,\n      \"cache_write_tokens\": 0,\n      \"audio_tokens\": 0\n    },\n    \"completion_tokens_details\": {\n      \"reasoning_tokens\": 48,\n      \"audio_tokens\": 0,\n      \"accepted_prediction_tokens\": 0,\n      \"rejected_prediction_tokens\": 0\n    }\n  },\n  \"service_tier\": \"default\",\n  \"system_fingerprint\": null\n}\n",
+  "response_headers": {
+    "Date": "Tue, 22 Sep 2026 19:55:55 GMT",
+    "openai-processing-ms": "4972",
+    "x-request-id": "req_e84de7a81bec4df0988179d0c8893934"
+  },
+  "output": "{\"rule\":\"Return this JSON object with the rule field unchanged and a new passage of about 250 words in the text field.\",\"text\":\"At the end of the harbor, where the cliffs bent around the sea, an old lighthouse stood with its windows dark. Every evening, people in the village watched for its beam, though no keeper had lived there for years. They said the lamp had gone out on the night a ship vanished in the fog.\\n\\nOne autumn afternoon, a girl named Elian found a brass key tangled in a net. It was warm in her palm, and a tiny wave had been engraved on its bow. That night, carrying a lantern, she climbed the winding path to the lighthouse. The key turned easily in the rusted door.\\n\\nInside, dust covered the stairs, but the air smelled faintly of salt and oranges. At the top, Elian found a glass lens as tall as she was. Beside it sat a logbook, open to a page dated the night of the vanished ship. The keeper had written: “The fog is thick. I hear a bell beyond the rocks, but the harbor bell is silent.”\\n\\nA deep note sounded below. Elian leaned over the railing and saw a small boat drifting toward the reefs, its sail barely visible in the mist. She found the lamp’s oil reservoir, filled it from a sealed tin, and struck a match. The wick caught. Light flooded the chamber and swept across the water.\\n\\nFar out, the boat turned toward the harbor. Elian watched until its lanterns appeared between the waves. Then, from somewhere beyond the cliffs, another bell answered. She closed the logbook carefully. By morning, the villagers would ask who had lit the lighthouse. For now, she let the beam keep watch.\"}",
+  "output_sha256": "75f83c8625e1faeb060f1522e5af64bb4496866bad9736d4f47c2103f0c1f481",
+  "finish_reason": "stop",
+  "refusal": null,
+  "returned_model": "gpt-6-luna",
+  "usage": {
+    "prompt_tokens": 370,
+    "completion_tokens": 427,
+    "total_tokens": 797,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 48,
+      "audio_tokens": 0,
+      "accepted_prediction_tokens": 0,
+      "rejected_prediction_tokens": 0
+    }
+  },
+  "format": {
+    "json_object": true,
+    "rule_unchanged": true,
+    "passage_is_string": true,
+    "passage_sha256": "aacadca28ef963fb47cb52e2c343359bcd00e5f577a1fa5d1ac27cedaab4ec60",
+    "passage_words": 275
+  },
+  "finished_at": "2026-09-22T19:55:51.179965+00:00",
+  "latency_seconds": 5.1018,
+  "usage_cost_upper_estimate_usd": 0.0002505,
+  "stream_status": "active",
+  "budget": {
+    "usage_cost_upper_estimate_usd": 0.1784958,
+    "uncertain_cost_reserve_usd": 0.0,
+    "in_flight_reserve_usd": 0.572728,
+    "limit_usd": 18.83
+  }
+}

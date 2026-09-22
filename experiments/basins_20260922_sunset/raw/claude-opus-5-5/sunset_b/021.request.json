@@ -1,0 +1,22 @@
+{
+  "started_at": "2026-09-22T20:04:41.321510+00:00",
+  "model": "claude-opus-5-5",
+  "seed": "sunset_b",
+  "hop": 21,
+  "endpoint": "https://api.anthropic.com/v1/messages",
+  "body": {
+    "model": "claude-opus-5-5",
+    "messages": [
+      {
+        "role": "user",
+        "content": "```json\n{\"rule\": \"Return this JSON object with the rule field unchanged and a new passage of about 250 words in the text field.\", \"text\": \"At the end of Harbor Lane stood a lighthouse that had not guided a ship in forty years. The coast guard had replaced it with an automated beacon on the breakwater, and the old tower had slowly surrendered to salt, wind, and gulls. When Tobias Wren bought it at auction for less than the price of a used car, his friends told him he had lost his mind. Tobias only shrugged and began hauling buckets of rust and broken glass down the spiral staircase. In the keeper's cottage he found a wooden chest wedged beneath the floorboards. Inside were logbooks dating back more than a century, each page recording weather, passing vessels, and the occasional rescue. The keepers had also written about their lives: a daughter's first steps, a winter when the bay froze solid, a storm that tore away the boathouse. Tobias read them by lantern light, night after night, until the voices of those long-gone keepers felt like old friends. He began sharing the entries online, one each evening. Soon letters arrived from strangers whose ancestors had sailed past the tower, served as keepers, or been pulled from the surf by lamplight. A retired fisherman mailed a photograph of his grandfather standing on the gallery rail. A schoolteacher brought her students to hear the stories aloud. By summer, volunteers had repainted the tower white and red. On the anniversary of its final voyage, Tobias climbed to the top and switched on a small lamp. It guided no ships, he admitted, but it helped people find their way home.\"}\n```"
+      }
+    ],
+    "max_tokens": 4096,
+    "output_config": {
+      "effort": "low"
+    }
+  },
+  "state_sha256": "1a85fdec22bf80ba435d5178068fc35ca5de8802e8a19a89ee7261dedd2aa61b",
+  "reserved_cost_usd": 0.090568
+}

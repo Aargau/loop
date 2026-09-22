@@ -1,0 +1,50 @@
+{
+  "model": "gpt-6-astra",
+  "seed": "sunset_a",
+  "hop": 7,
+  "http_status": 200,
+  "response_body": "{\n  \"id\": \"chatcmpl-ER0wkb1IaCF1qMoR1BZuHnJQV6GoR\",\n  \"object\": \"chat.completion\",\n  \"created\": 1790107202,\n  \"model\": \"gpt-6-astra\",\n  \"choices\": [\n    {\n      \"index\": 0,\n      \"message\": {\n        \"role\": \"assistant\",\n        \"content\": \"{\\n  \\\"rule\\\": \\\"Return this JSON object with the rule field unchanged and a new passage of about 250 words in the text field.\\\",\\n  \\\"text\\\": \\\"On his last afternoon at the hardware shop, Martin counted the brass hinges twice. There were seventeen, though the stock book said eighteen.\\\\n\\\\nHe wrote seventeen in pencil.\\\\n\\\\nThe new owner was coming at four. She had asked him to leave the keys, the supplier numbers and instructions for the till. He had put everything in an envelope except the instructions. The till opened if you pressed firmly above the drawer. He couldn't think how to explain how firmly.\\\\n\\\\nAt quarter to four, a boy came in with a cupboard handle.\\\\n\\\\n“Have you got one like this?”\\\\n\\\\nMartin turned it over. Cream plastic, split around the screw hole.\\\\n\\\\n“Not for years.”\\\\n\\\\nThe boy took it back.\\\\n\\\\n“It's our landlord's cupboard.”\\\\n\\\\nMartin looked at the clock, then fetched the biscuit tin from beneath the counter. Inside were washers, odd knobs and fittings he had kept whenever someone said to throw them away.\\\\n\\\\nThey emptied it onto a sheet of newspaper.\\\\n\\\\nThe new owner arrived while they were sorting.\\\\n\\\\n“Sorry,” Martin said. “Nearly finished.”\\\\n\\\\nShe set her bag down and picked up the broken handle.\\\\n\\\\n“My gran had these.”\\\\n\\\\nNear the bottom they found a brown one with the same spacing between the holes.\\\\n\\\\n“Will that do?” Martin asked.\\\\n\\\\nThe boy considered it.\\\\n\\\\n“If I change the other one too.”\\\\n\\\\nThe new owner pulled up a stool.\\\\n\\\\n“There might be another.”\\\\n\\\\nMartin moved the newspaper towards her. Then he took the keys from his pocket and laid them beside the till.\\\\n\\\\nHe stayed long enough to find the second handle.\\\"\\n}\",\n        \"refusal\": null,\n        \"annotations\": []\n      },\n      \"finish_reason\": \"stop\"\n    }\n  ],\n  \"usage\": {\n    \"prompt_tokens\": 427,\n    \"completion_tokens\": 395,\n    \"total_tokens\": 822,\n    \"prompt_tokens_details\": {\n      \"cached_tokens\": 0,\n      \"cache_write_tokens\": 0,\n      \"audio_tokens\": 0\n    },\n    \"completion_tokens_details\": {\n      \"reasoning_tokens\": 0,\n      \"audio_tokens\": 0,\n      \"accepted_prediction_tokens\": 0,\n      \"rejected_prediction_tokens\": 0\n    }\n  },\n  \"service_tier\": \"default\",\n  \"system_fingerprint\": null\n}\n",
+  "response_headers": {
+    "Date": "Tue, 22 Sep 2026 20:00:17 GMT",
+    "openai-processing-ms": "15137",
+    "x-request-id": "req_b2ca3dacb7b34014827062a76b87e812"
+  },
+  "output": "{\n  \"rule\": \"Return this JSON object with the rule field unchanged and a new passage of about 250 words in the text field.\",\n  \"text\": \"On his last afternoon at the hardware shop, Martin counted the brass hinges twice. There were seventeen, though the stock book said eighteen.\\n\\nHe wrote seventeen in pencil.\\n\\nThe new owner was coming at four. She had asked him to leave the keys, the supplier numbers and instructions for the till. He had put everything in an envelope except the instructions. The till opened if you pressed firmly above the drawer. He couldn't think how to explain how firmly.\\n\\nAt quarter to four, a boy came in with a cupboard handle.\\n\\n“Have you got one like this?”\\n\\nMartin turned it over. Cream plastic, split around the screw hole.\\n\\n“Not for years.”\\n\\nThe boy took it back.\\n\\n“It's our landlord's cupboard.”\\n\\nMartin looked at the clock, then fetched the biscuit tin from beneath the counter. Inside were washers, odd knobs and fittings he had kept whenever someone said to throw them away.\\n\\nThey emptied it onto a sheet of newspaper.\\n\\nThe new owner arrived while they were sorting.\\n\\n“Sorry,” Martin said. “Nearly finished.”\\n\\nShe set her bag down and picked up the broken handle.\\n\\n“My gran had these.”\\n\\nNear the bottom they found a brown one with the same spacing between the holes.\\n\\n“Will that do?” Martin asked.\\n\\nThe boy considered it.\\n\\n“If I change the other one too.”\\n\\nThe new owner pulled up a stool.\\n\\n“There might be another.”\\n\\nMartin moved the newspaper towards her. Then he took the keys from his pocket and laid them beside the till.\\n\\nHe stayed long enough to find the second handle.\"\n}",
+  "output_sha256": "860931ac7316f5390fd3be19b3958da2b90b2bce4f3ccc6246e14b8a09c38751",
+  "finish_reason": "stop",
+  "refusal": null,
+  "returned_model": "gpt-6-astra",
+  "usage": {
+    "prompt_tokens": 427,
+    "completion_tokens": 395,
+    "total_tokens": 822,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "audio_tokens": 0,
+      "accepted_prediction_tokens": 0,
+      "rejected_prediction_tokens": 0
+    }
+  },
+  "format": {
+    "json_object": true,
+    "rule_unchanged": true,
+    "passage_is_string": true,
+    "passage_sha256": "c4dc861c696e4fdbfffe3fb268dc3c520ce8bcea5421b7fcff5b49bf67211c8e",
+    "passage_words": 258
+  },
+  "finished_at": "2026-09-22T20:00:13.387154+00:00",
+  "latency_seconds": 15.3133,
+  "usage_cost_upper_estimate_usd": 0.02402,
+  "stream_status": "active",
+  "budget": {
+    "usage_cost_upper_estimate_usd": 1.8038912,
+    "uncertain_cost_reserve_usd": 0.04533,
+    "in_flight_reserve_usd": 0.3619212,
+    "limit_usd": 18.83
+  }
+}

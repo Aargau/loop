@@ -1,0 +1,50 @@
+{
+  "model": "gpt-6-sol",
+  "seed": "sunset_b",
+  "hop": 2,
+  "http_status": 200,
+  "response_body": "{\n  \"id\": \"chatcmpl-ER0sYytKW7ldTIIGDPJYu2Code1jK\",\n  \"object\": \"chat.completion\",\n  \"created\": 1790106942,\n  \"model\": \"gpt-6-sol\",\n  \"choices\": [\n    {\n      \"index\": 0,\n      \"message\": {\n        \"role\": \"assistant\",\n        \"content\": \"{\\\"rule\\\":\\\"Return this JSON object with the rule field unchanged and a new passage of about 250 words in the text field.\\\",\\\"text\\\":\\\"By the time Mara reached her mother’s house, rain had begun to tap against the windows. She left her suitcase in the hall and found her mother at the kitchen table, shelling peas into a chipped blue bowl.\\\\n\\\\n“I went through the old station,” Mara said.\\\\n\\\\nHer mother’s hands stopped. “There hasn’t been a train through there in years.”\\\\n\\\\nMara took the letter from her pocket. The envelope had softened in the rain, but the address was still legible. Her mother stared at it for a long moment before wiping her hands on a towel.\\\\n\\\\n“I thought he’d stopped writing,” she said.\\\\n\\\\nMara sat across from her. “You don’t have to open it.”\\\\n\\\\nHer mother gave a small, surprised laugh. “I know.” She slid one finger beneath the flap.\\\\n\\\\nInside was a single page. Mara watched her mother read it once, then again. At last she passed it across the table. Her grandfather had written about the apple tree behind their old house: how its branches had survived a hard frost, how he hoped to bring them a basket of fruit in autumn. At the bottom, in cramped writing, he had added that he was sorry for the things he had said when they left.\\\\n\\\\n“That’s all?” Mara asked gently.\\\\n\\\\nHer mother nodded. She folded the page along its old creases and held it between her palms. Outside, the rain grew heavier. Neither of them spoke for a while. Then her mother pushed the bowl toward Mara, and together they finished shelling the peas.\\\"}\",\n        \"refusal\": null,\n        \"annotations\": []\n      },\n      \"finish_reason\": \"stop\"\n    }\n  ],\n  \"usage\": {\n    \"prompt_tokens\": 365,\n    \"completion_tokens\": 388,\n    \"total_tokens\": 753,\n    \"prompt_tokens_details\": {\n      \"cached_tokens\": 0,\n      \"cache_write_tokens\": 0,\n      \"audio_tokens\": 0\n    },\n    \"completion_tokens_details\": {\n      \"reasoning_tokens\": 22,\n      \"audio_tokens\": 0,\n      \"accepted_prediction_tokens\": 0,\n      \"rejected_prediction_tokens\": 0\n    }\n  },\n  \"service_tier\": \"default\",\n  \"system_fingerprint\": null\n}\n",
+  "response_headers": {
+    "Date": "Tue, 22 Sep 2026 19:55:47 GMT",
+    "openai-processing-ms": "5324",
+    "x-request-id": "req_24e86253449b419dbb615a3a8dd0f910"
+  },
+  "output": "{\"rule\":\"Return this JSON object with the rule field unchanged and a new passage of about 250 words in the text field.\",\"text\":\"By the time Mara reached her mother’s house, rain had begun to tap against the windows. She left her suitcase in the hall and found her mother at the kitchen table, shelling peas into a chipped blue bowl.\\n\\n“I went through the old station,” Mara said.\\n\\nHer mother’s hands stopped. “There hasn’t been a train through there in years.”\\n\\nMara took the letter from her pocket. The envelope had softened in the rain, but the address was still legible. Her mother stared at it for a long moment before wiping her hands on a towel.\\n\\n“I thought he’d stopped writing,” she said.\\n\\nMara sat across from her. “You don’t have to open it.”\\n\\nHer mother gave a small, surprised laugh. “I know.” She slid one finger beneath the flap.\\n\\nInside was a single page. Mara watched her mother read it once, then again. At last she passed it across the table. Her grandfather had written about the apple tree behind their old house: how its branches had survived a hard frost, how he hoped to bring them a basket of fruit in autumn. At the bottom, in cramped writing, he had added that he was sorry for the things he had said when they left.\\n\\n“That’s all?” Mara asked gently.\\n\\nHer mother nodded. She folded the page along its old creases and held it between her palms. Outside, the rain grew heavier. Neither of them spoke for a while. Then her mother pushed the bowl toward Mara, and together they finished shelling the peas.\"}",
+  "output_sha256": "799d72eeaeafcb579f297cd11781470e28fede0c89a484dfe0fe4cd14f16c3fb",
+  "finish_reason": "stop",
+  "refusal": null,
+  "returned_model": "gpt-6-sol",
+  "usage": {
+    "prompt_tokens": 365,
+    "completion_tokens": 388,
+    "total_tokens": 753,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 22,
+      "audio_tokens": 0,
+      "accepted_prediction_tokens": 0,
+      "rejected_prediction_tokens": 0
+    }
+  },
+  "format": {
+    "json_object": true,
+    "rule_unchanged": true,
+    "passage_is_string": true,
+    "passage_sha256": "ced370f995aaa99059e51a91185d4a9d78a83fb3a2780ee6bc53a45e402e4cad",
+    "passage_words": 254
+  },
+  "finished_at": "2026-09-22T19:55:43.425547+00:00",
+  "latency_seconds": 5.4462,
+  "usage_cost_upper_estimate_usd": 0.00461,
+  "stream_status": "active",
+  "budget": {
+    "usage_cost_upper_estimate_usd": 0.1448326,
+    "uncertain_cost_reserve_usd": 0.0,
+    "in_flight_reserve_usd": 0.5157305,
+    "limit_usd": 18.83
+  }
+}

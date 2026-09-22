@@ -1,0 +1,48 @@
+{
+  "model": "claude-fable-5-1",
+  "seed": "sunset_a",
+  "hop": 11,
+  "http_status": 200,
+  "response_body": "{\"model\":\"claude-fable-5-1\",\"id\":\"msg_011CfK5EjinC4WYnt9xZDLXS\",\"type\":\"message\",\"role\":\"assistant\",\"content\":[{\"type\":\"text\",\"text\":\"{\\\"rule\\\": \\\"Return this JSON object with the rule field unchanged and a new passage of about 250 words in the text field.\\\", \\\"text\\\": \\\"The letters were not addressed to anyone Ines recognized. They began, most of them, with a single initial and a dash, as though the writer had assumed the reader would know who was meant. The handwriting changed across the years, slanting first one way and then the other, but the paper stayed the same: thin, blue-lined, torn from the same kind of pad.\\\\n\\\\nShe read the first one twice. It described a window. Not the shop's window, she thought, but one somewhere else, where the light came in wrong in the afternoons and had to be corrected with a curtain. The writer had measured the curtain three times and still gotten it short. There was no signature.\\\\n\\\\nBy the fourth letter Ines understood that they were all about rooms. A kitchen with a step down that everyone forgot. A landing where a clock had been moved and the wall showed its pale shape for years. The writer went from house to house, it seemed, and wrote about what each one refused to give up.\\\\n\\\\nShe found the shop in the eleventh letter. The bell that rang once and then settled. The room with the sloped ceiling, empty then, waiting for something to be carried into it.\\\\n\\\\nInes set the bundle down and listened. Above her, the floorboards made the small adjustments they made when no one was on them. She thought of the piano tuner tilting the bench through the door, and of what he had said—the shop's, which is the same thing now—and she reached for the next year.\\\"}\"}],\"container\":null,\"stop_reason\":\"end_turn\",\"stop_sequence\":null,\"stop_details\":null,\"usage\":{\"input_tokens\":541,\"cache_creation_input_tokens\":0,\"cache_read_input_tokens\":0,\"cache_creation\":{\"ephemeral_5m_input_tokens\":0,\"ephemeral_1h_input_tokens\":0},\"output_tokens\":489,\"output_tokens_details\":{\"thinking_tokens\":0},\"service_tier\":\"standard\",\"inference_geo\":\"global\"}}",
+  "response_headers": {
+    "Date": "Tue, 22 Sep 2026 20:01:52 GMT",
+    "request-id": "req_011CfK5EiytKJJBk7b8e4xwj"
+  },
+  "output": "{\"rule\": \"Return this JSON object with the rule field unchanged and a new passage of about 250 words in the text field.\", \"text\": \"The letters were not addressed to anyone Ines recognized. They began, most of them, with a single initial and a dash, as though the writer had assumed the reader would know who was meant. The handwriting changed across the years, slanting first one way and then the other, but the paper stayed the same: thin, blue-lined, torn from the same kind of pad.\\n\\nShe read the first one twice. It described a window. Not the shop's window, she thought, but one somewhere else, where the light came in wrong in the afternoons and had to be corrected with a curtain. The writer had measured the curtain three times and still gotten it short. There was no signature.\\n\\nBy the fourth letter Ines understood that they were all about rooms. A kitchen with a step down that everyone forgot. A landing where a clock had been moved and the wall showed its pale shape for years. The writer went from house to house, it seemed, and wrote about what each one refused to give up.\\n\\nShe found the shop in the eleventh letter. The bell that rang once and then settled. The room with the sloped ceiling, empty then, waiting for something to be carried into it.\\n\\nInes set the bundle down and listened. Above her, the floorboards made the small adjustments they made when no one was on them. She thought of the piano tuner tilting the bench through the door, and of what he had said—the shop's, which is the same thing now—and she reached for the next year.\"}",
+  "output_sha256": "76eb2426636b1dc4e650c118532395032545d6e69ba32298b5de746f2c0c08c6",
+  "finish_reason": "end_turn",
+  "refusal": null,
+  "returned_model": "claude-fable-5-1",
+  "usage": {
+    "input_tokens": 541,
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 0,
+    "cache_creation": {
+      "ephemeral_5m_input_tokens": 0,
+      "ephemeral_1h_input_tokens": 0
+    },
+    "output_tokens": 489,
+    "output_tokens_details": {
+      "thinking_tokens": 0
+    },
+    "service_tier": "standard",
+    "inference_geo": "global"
+  },
+  "format": {
+    "json_object": true,
+    "rule_unchanged": true,
+    "passage_is_string": true,
+    "passage_sha256": "4501873ef8ebe4f763fb3867c8e84dea7dbdfeee9c244ea00815814cfdf8eb8b",
+    "passage_words": 260
+  },
+  "finished_at": "2026-09-22T20:01:48.844850+00:00",
+  "latency_seconds": 12.3824,
+  "usage_cost_upper_estimate_usd": 0.02986,
+  "stream_status": "active",
+  "budget": {
+    "usage_cost_upper_estimate_usd": 2.4165262,
+    "uncertain_cost_reserve_usd": 0.04533,
+    "in_flight_reserve_usd": 0.3645108,
+    "limit_usd": 18.83
+  }
+}

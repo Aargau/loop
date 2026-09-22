@@ -1,0 +1,50 @@
+{
+  "model": "gpt-6-sol",
+  "seed": "sunset_a",
+  "hop": 39,
+  "http_status": 200,
+  "response_body": "{\n  \"id\": \"chatcmpl-ER10nXf6qu84ISsgHrv5RY3RhCxDY\",\n  \"object\": \"chat.completion\",\n  \"created\": 1790107453,\n  \"model\": \"gpt-6-sol\",\n  \"choices\": [\n    {\n      \"index\": 0,\n      \"message\": {\n        \"role\": \"assistant\",\n        \"content\": \"{\\n  \\\"rule\\\": \\\"Return this JSON object with the rule field unchanged and a new passage of about 250 words in the text field.\\\",\\n  \\\"text\\\": \\\"For three days, the blank card stayed blank. Imani checked it each afternoon, pretending she had come in for a roll. On Thursday, a little boy wrote toast in large, uneven letters. Beneath it, someone else added: Stir a spoonful into plain yogurt.\\\\n\\\\nBy Saturday, the card was crowded. There were suggestions for thumbprint cookies, a glaze for roasted carrots, and something called jam pockets that required only pastry scraps and a fork. One person had written, Eat it from the jar, which her grandfather declared the most sensible answer.\\\\n\\\\nImani copied the jam-pocket instructions before the baker needed the counter space. At home, she and her grandfather rolled out the pastry left from a pie. The first pocket leaked. The second held together, though her grandfather pressed the edges so firmly that it looked like a little sun.\\\\n\\\\nThey took the good ones to the bakery while they were still warm. Elias was there, waiting for his bread to cool. He tried a pocket, brushed crumbs from his sleeve, and asked whether the recipe card had room for one more note.\\\\n\\\\n‘Put a tray underneath,’ he wrote. ‘The jam may escape.’\\\\n\\\\nThe baker pinned the card beside the others. Imani noticed that the box was nearly full, with corners of paper sticking out at every angle. She asked what would happen when there was no more room.\\\\n\\\\n‘We’ll find another box,’ the baker said.\\\\n\\\\nHer grandfather handed him the last jam pocket. ‘Better make it a big one.’\\\"\\n}\",\n        \"refusal\": null,\n        \"annotations\": []\n      },\n      \"finish_reason\": \"stop\"\n    }\n  ],\n  \"usage\": {\n    \"prompt_tokens\": 357,\n    \"completion_tokens\": 388,\n    \"total_tokens\": 745,\n    \"prompt_tokens_details\": {\n      \"cached_tokens\": 0,\n      \"cache_write_tokens\": 0,\n      \"audio_tokens\": 0\n    },\n    \"completion_tokens_details\": {\n      \"reasoning_tokens\": 26,\n      \"audio_tokens\": 0,\n      \"accepted_prediction_tokens\": 0,\n      \"rejected_prediction_tokens\": 0\n    }\n  },\n  \"service_tier\": \"default\",\n  \"system_fingerprint\": null\n}\n",
+  "response_headers": {
+    "Date": "Tue, 22 Sep 2026 20:04:19 GMT",
+    "openai-processing-ms": "6113",
+    "x-request-id": "req_57aa5d523cd847ed9e951771dd39cd69"
+  },
+  "output": "{\n  \"rule\": \"Return this JSON object with the rule field unchanged and a new passage of about 250 words in the text field.\",\n  \"text\": \"For three days, the blank card stayed blank. Imani checked it each afternoon, pretending she had come in for a roll. On Thursday, a little boy wrote toast in large, uneven letters. Beneath it, someone else added: Stir a spoonful into plain yogurt.\\n\\nBy Saturday, the card was crowded. There were suggestions for thumbprint cookies, a glaze for roasted carrots, and something called jam pockets that required only pastry scraps and a fork. One person had written, Eat it from the jar, which her grandfather declared the most sensible answer.\\n\\nImani copied the jam-pocket instructions before the baker needed the counter space. At home, she and her grandfather rolled out the pastry left from a pie. The first pocket leaked. The second held together, though her grandfather pressed the edges so firmly that it looked like a little sun.\\n\\nThey took the good ones to the bakery while they were still warm. Elias was there, waiting for his bread to cool. He tried a pocket, brushed crumbs from his sleeve, and asked whether the recipe card had room for one more note.\\n\\n‘Put a tray underneath,’ he wrote. ‘The jam may escape.’\\n\\nThe baker pinned the card beside the others. Imani noticed that the box was nearly full, with corners of paper sticking out at every angle. She asked what would happen when there was no more room.\\n\\n‘We’ll find another box,’ the baker said.\\n\\nHer grandfather handed him the last jam pocket. ‘Better make it a big one.’\"\n}",
+  "output_sha256": "18e9faa72d0813f2f63fa691b860b8a8f2cba1630b474f36ddde47b5fef94efa",
+  "finish_reason": "stop",
+  "refusal": null,
+  "returned_model": "gpt-6-sol",
+  "usage": {
+    "prompt_tokens": 357,
+    "completion_tokens": 388,
+    "total_tokens": 745,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 26,
+      "audio_tokens": 0,
+      "accepted_prediction_tokens": 0,
+      "rejected_prediction_tokens": 0
+    }
+  },
+  "format": {
+    "json_object": true,
+    "rule_unchanged": true,
+    "passage_is_string": true,
+    "passage_sha256": "82cf632defdc3c1967bdf0f87749a801e773af41bc4d91e4a8a759a01ad34af2",
+    "passage_words": 249
+  },
+  "finished_at": "2026-09-22T20:04:15.149537+00:00",
+  "latency_seconds": 6.2633,
+  "usage_cost_upper_estimate_usd": 0.004594,
+  "stream_status": "active",
+  "budget": {
+    "usage_cost_upper_estimate_usd": 3.3545923,
+    "uncertain_cost_reserve_usd": 0.04533,
+    "in_flight_reserve_usd": 0.5462153,
+    "limit_usd": 18.83
+  }
+}

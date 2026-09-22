@@ -1,0 +1,50 @@
+{
+  "model": "gpt-6-sol",
+  "seed": "sunset_a",
+  "hop": 30,
+  "http_status": 200,
+  "response_body": "{\n  \"id\": \"chatcmpl-ER0z0OsNzDK08WfJ4JhFtxERl470l\",\n  \"object\": \"chat.completion\",\n  \"created\": 1790107342,\n  \"model\": \"gpt-6-sol\",\n  \"choices\": [\n    {\n      \"index\": 0,\n      \"message\": {\n        \"role\": \"assistant\",\n        \"content\": \"{\\n  \\\"rule\\\": \\\"Return this JSON object with the rule field unchanged and a new passage of about 250 words in the text field.\\\",\\n  \\\"text\\\": \\\"On Monday morning, Elena found a blue notebook on the seat beside her as the train pulled into the station. Its cover was worn, and a paper bookmark stuck out near the middle. She picked it up, hoping to find a name inside, but the pages held only sketches of buildings and brief notes about windows, doors, and rooflines.\\\\n\\\\nAt the station office, the clerk told her lost property would not open until noon. Elena had a meeting across town, so she left the notebook with him and wrote down her phone number in case its owner called.\\\\n\\\\nThat evening, a man named Ravi rang to thank her. He explained that the notebook contained ideas for a mural he was planning with students at a local school. He had been drawing places the children passed every day: the bakery, the library, and the narrow bridge over the canal. Without the notebook, he would have had trouble remembering which details they had chosen together.\\\\n\\\\nElena asked when the mural would be finished. Ravi laughed and said they had not started painting yet. The students were still deciding what belonged in the background. He invited her to visit once the work was underway.\\\\n\\\\nTwo weeks later, Elena stopped by the school on her lunch break. A teacher led her to a courtyard wall covered in bright outlines. Several students were painting the bridge while Ravi helped another mix a shade of green. Near the bottom, someone had added a small blue notebook on a train seat. Elena spotted it before Ravi pointed it out, and smiled.\\\"\\n}\",\n        \"refusal\": null,\n        \"annotations\": []\n      },\n      \"finish_reason\": \"stop\"\n    }\n  ],\n  \"usage\": {\n    \"prompt_tokens\": 359,\n    \"completion_tokens\": 372,\n    \"total_tokens\": 731,\n    \"prompt_tokens_details\": {\n      \"cached_tokens\": 0,\n      \"cache_write_tokens\": 0,\n      \"audio_tokens\": 0\n    },\n    \"completion_tokens_details\": {\n      \"reasoning_tokens\": 20,\n      \"audio_tokens\": 0,\n      \"accepted_prediction_tokens\": 0,\n      \"rejected_prediction_tokens\": 0\n    }\n  },\n  \"service_tier\": \"default\",\n  \"system_fingerprint\": null\n}\n",
+  "response_headers": {
+    "Date": "Tue, 22 Sep 2026 20:02:28 GMT",
+    "openai-processing-ms": "5728",
+    "x-request-id": "req_65b2583cf11a47b89a5157bb6c2af1b2"
+  },
+  "output": "{\n  \"rule\": \"Return this JSON object with the rule field unchanged and a new passage of about 250 words in the text field.\",\n  \"text\": \"On Monday morning, Elena found a blue notebook on the seat beside her as the train pulled into the station. Its cover was worn, and a paper bookmark stuck out near the middle. She picked it up, hoping to find a name inside, but the pages held only sketches of buildings and brief notes about windows, doors, and rooflines.\\n\\nAt the station office, the clerk told her lost property would not open until noon. Elena had a meeting across town, so she left the notebook with him and wrote down her phone number in case its owner called.\\n\\nThat evening, a man named Ravi rang to thank her. He explained that the notebook contained ideas for a mural he was planning with students at a local school. He had been drawing places the children passed every day: the bakery, the library, and the narrow bridge over the canal. Without the notebook, he would have had trouble remembering which details they had chosen together.\\n\\nElena asked when the mural would be finished. Ravi laughed and said they had not started painting yet. The students were still deciding what belonged in the background. He invited her to visit once the work was underway.\\n\\nTwo weeks later, Elena stopped by the school on her lunch break. A teacher led her to a courtyard wall covered in bright outlines. Several students were painting the bridge while Ravi helped another mix a shade of green. Near the bottom, someone had added a small blue notebook on a train seat. Elena spotted it before Ravi pointed it out, and smiled.\"\n}",
+  "output_sha256": "a658289de3f1d70259180da9e66f6a2fb2c124a3d316d11acda27ba5dcca1a33",
+  "finish_reason": "stop",
+  "refusal": null,
+  "returned_model": "gpt-6-sol",
+  "usage": {
+    "prompt_tokens": 359,
+    "completion_tokens": 372,
+    "total_tokens": 731,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 20,
+      "audio_tokens": 0,
+      "accepted_prediction_tokens": 0,
+      "rejected_prediction_tokens": 0
+    }
+  },
+  "format": {
+    "json_object": true,
+    "rule_unchanged": true,
+    "passage_is_string": true,
+    "passage_sha256": "29b63478d0ead1cbb8745f98ca026f0ea79b2d210f7df0784dbdba7056a21008",
+    "passage_words": 264
+  },
+  "finished_at": "2026-09-22T20:02:24.324629+00:00",
+  "latency_seconds": 5.8583,
+  "usage_cost_upper_estimate_usd": 0.004438,
+  "stream_status": "active",
+  "budget": {
+    "usage_cost_upper_estimate_usd": 2.6480162,
+    "uncertain_cost_reserve_usd": 0.04533,
+    "in_flight_reserve_usd": 0.5453879,
+    "limit_usd": 18.83
+  }
+}
