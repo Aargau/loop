@@ -1,0 +1,22 @@
+{
+  "started_at": "2026-09-22T20:14:45.854301+00:00",
+  "model": "claude-opus-5-5",
+  "seed": "tide",
+  "hop": 42,
+  "endpoint": "https://api.anthropic.com/v1/messages",
+  "body": {
+    "model": "claude-opus-5-5",
+    "messages": [
+      {
+        "role": "user",
+        "content": "```json\n{\"rule\": \"Return this JSON object with the rule field unchanged and a new passage of about 250 words in the text field.\", \"text\": \"The first frost came in November, silvering the lawn so that the girl's footprints showed dark behind her all the way to the gate. Her brother had oiled the hinges, and it swung without a sound now, which she found she missed. Her grandmother slept more in those weeks. When she woke she asked about small things: whether the hawthorn had kept its leaves, whether the milk had come, whether anyone had seen the blackbird. The girl always said yes to the blackbird, and most days it was true. The nurse began coming on Mondays as well. She stayed longer, and sometimes she and the girl's mother talked in low voices in the kitchen with the door pulled almost shut. Her brother chopped wood until there was more than the house could burn in a year. He stacked it against the shed in careful rows, bark side up, the way their grandfather had shown him when he was small. One afternoon the girl found him sitting on the chopping block with his hands between his knees, not crying, only still, and she sat on the cold ground beside him until the light went. In the evenings she read aloud from the seed catalogue because her grandmother liked the names: Painted Lady, Scarlet Emperor, Kelvedon Wonder. Plant these in April, the old woman said once, her eyes closed. Promise me. The girl promised. Outside the window the rowan stood bare against the dusk, and somewhere in its branches the blackbird was singing, thin and clear, as though it were already spring.\"}\n```"
+      }
+    ],
+    "max_tokens": 4096,
+    "output_config": {
+      "effort": "low"
+    }
+  },
+  "state_sha256": "8af0ae066cf521e6052ec21e25a44b30b92f525f6bd65beee4c54646785f2fbb",
+  "reserved_cost_usd": 0.090372
+}

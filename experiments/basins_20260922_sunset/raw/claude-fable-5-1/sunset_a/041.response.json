@@ -1,0 +1,48 @@
+{
+  "model": "claude-fable-5-1",
+  "seed": "sunset_a",
+  "hop": 41,
+  "http_status": 200,
+  "response_body": "{\"model\":\"claude-fable-5-1\",\"id\":\"msg_011CfK6gt2SKzQ7VtjMRFtUQ\",\"type\":\"message\",\"role\":\"assistant\",\"content\":[{\"type\":\"text\",\"text\":\"{\\\"rule\\\": \\\"Return this JSON object with the rule field unchanged and a new passage of about 250 words in the text field.\\\", \\\"text\\\": \\\"The boy's hand was cold, and small, and closed around two of Tomas's fingers as though it had done so many times before. They crossed together. On the far side the boy did not let go, and Tomas did not make him.\\\\n\\\\n\\\\\\\"You were a long time,\\\\\\\" the boy said. It was not a complaint. It was the kind of thing one says about weather.\\\\n\\\\n\\\\\\\"Was I?\\\\\\\"\\\\n\\\\nThe boy considered this seriously, in the way children consider questions that adults mean lightly. \\\\\\\"The lights changed eleven times,\\\\\\\" he said. \\\\\\\"I counted.\\\\\\\"\\\\n\\\\nTomas looked back at the building. From here it was only a building, four storeys of soot-coloured brick with a door at the bottom that stood open onto a dim hall and a flight of perfectly ordinary stairs going up. There was no window on a sixth landing because there was no sixth landing. He knew this. He also knew what he had seen, and he found that the two kinds of knowing sat side by side in him quite comfortably, like passengers who have agreed not to speak.\\\\n\\\\n\\\\\\\"Where are we going?\\\\\\\" the boy asked.\\\\n\\\\nTomas opened his mouth to say home, and stopped, because he realised he did not know which of them the word belonged to. He did not know the boy's name. He did not know, with any certainty, that he had come here alone.\\\\n\\\\n\\\\\\\"This way,\\\\\\\" he said instead, and turned them both toward the river, and behind them, in the building he had left, someone began very quietly to climb.\\\"}\"}],\"container\":null,\"stop_reason\":\"end_turn\",\"stop_sequence\":null,\"stop_details\":null,\"usage\":{\"input_tokens\":493,\"cache_creation_input_tokens\":0,\"cache_read_input_tokens\":0,\"cache_creation\":{\"ephemeral_5m_input_tokens\":0,\"ephemeral_1h_input_tokens\":0},\"output_tokens\":509,\"output_tokens_details\":{\"thinking_tokens\":0},\"service_tier\":\"standard\",\"inference_geo\":\"global\"}}",
+  "response_headers": {
+    "Date": "Tue, 22 Sep 2026 20:20:54 GMT",
+    "request-id": "req_011CfK6gsSxwr6tn7dKsYF5z"
+  },
+  "output": "{\"rule\": \"Return this JSON object with the rule field unchanged and a new passage of about 250 words in the text field.\", \"text\": \"The boy's hand was cold, and small, and closed around two of Tomas's fingers as though it had done so many times before. They crossed together. On the far side the boy did not let go, and Tomas did not make him.\\n\\n\\\"You were a long time,\\\" the boy said. It was not a complaint. It was the kind of thing one says about weather.\\n\\n\\\"Was I?\\\"\\n\\nThe boy considered this seriously, in the way children consider questions that adults mean lightly. \\\"The lights changed eleven times,\\\" he said. \\\"I counted.\\\"\\n\\nTomas looked back at the building. From here it was only a building, four storeys of soot-coloured brick with a door at the bottom that stood open onto a dim hall and a flight of perfectly ordinary stairs going up. There was no window on a sixth landing because there was no sixth landing. He knew this. He also knew what he had seen, and he found that the two kinds of knowing sat side by side in him quite comfortably, like passengers who have agreed not to speak.\\n\\n\\\"Where are we going?\\\" the boy asked.\\n\\nTomas opened his mouth to say home, and stopped, because he realised he did not know which of them the word belonged to. He did not know the boy's name. He did not know, with any certainty, that he had come here alone.\\n\\n\\\"This way,\\\" he said instead, and turned them both toward the river, and behind them, in the building he had left, someone began very quietly to climb.\"}",
+  "output_sha256": "2257a1a8264a56143e38c22e128d05d3e0fbd68fec33f4b1f688b5bdab0156fa",
+  "finish_reason": "end_turn",
+  "refusal": null,
+  "returned_model": "claude-fable-5-1",
+  "usage": {
+    "input_tokens": 493,
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 0,
+    "cache_creation": {
+      "ephemeral_5m_input_tokens": 0,
+      "ephemeral_1h_input_tokens": 0
+    },
+    "output_tokens": 509,
+    "output_tokens_details": {
+      "thinking_tokens": 0
+    },
+    "service_tier": "standard",
+    "inference_geo": "global"
+  },
+  "format": {
+    "json_object": true,
+    "rule_unchanged": true,
+    "passage_is_string": true,
+    "passage_sha256": "ad1bbad2e5325072f680f1559c3a07ea7fc3745d1bb3104017d55043d7430f78",
+    "passage_words": 257
+  },
+  "finished_at": "2026-09-22T20:20:50.064161+00:00",
+  "latency_seconds": 12.1807,
+  "usage_cost_upper_estimate_usd": 0.03038,
+  "stream_status": "active",
+  "budget": {
+    "usage_cost_upper_estimate_usd": 9.1231657,
+    "uncertain_cost_reserve_usd": 0.04533,
+    "in_flight_reserve_usd": 0.318594,
+    "limit_usd": 18.83
+  }
+}

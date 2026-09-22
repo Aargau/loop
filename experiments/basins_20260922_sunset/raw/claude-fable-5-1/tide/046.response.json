@@ -1,0 +1,48 @@
+{
+  "model": "claude-fable-5-1",
+  "seed": "tide",
+  "hop": 46,
+  "http_status": 200,
+  "response_body": "{\"model\":\"claude-fable-5-1\",\"id\":\"msg_011CfK6xiMEFymrRTjLkJ2x5\",\"type\":\"message\",\"role\":\"assistant\",\"content\":[{\"type\":\"text\",\"text\":\"{\\\"rule\\\": \\\"Return this JSON object with the rule field unchanged and a new passage of about 250 words in the text field.\\\", \\\"text\\\": \\\"She did not go down to the cove at once. She went back inside and made tea, because her hands wanted something to do and because the kettle took the same six minutes it always took, and she needed to know that six minutes still meant six minutes. While it heated she laid the chart on the table and weighted its corners with the sugar tin, the lamp base, a stone, her own cup.\\\\n\\\\nThe pencil line had been drawn by someone who knew the water. It kept to the deep channel where a stranger would have cut straight and found the ledge. It bent where the current bent. Whoever had drawn it had either sailed it or had sailed it in their head a hundred times, which she supposed came to the same thing.\\\\n\\\\nThe kettle began to tick. She poured, and did not drink, and stood at the window with the cup warming her palms.\\\\n\\\\nFrom here she could see the top of the old slip, two grey posts leaning toward each other like people sharing a secret. The tide was still going out. In an hour the mud would be bare and anything left on it would be plain. She thought about that: an hour. She thought about how she had not seen a sail, nor heard an engine, nor smelled smoke on the wind. She thought about the door, unbarred.\\\\n\\\\nThen she set the cup down, took her coat from the peg, and went out to see what had been finished here.\\\"}\"}],\"container\":null,\"stop_reason\":\"end_turn\",\"stop_sequence\":null,\"stop_details\":null,\"usage\":{\"input_tokens\":476,\"cache_creation_input_tokens\":0,\"cache_read_input_tokens\":0,\"cache_creation\":{\"ephemeral_5m_input_tokens\":0,\"ephemeral_1h_input_tokens\":0},\"output_tokens\":460,\"output_tokens_details\":{\"thinking_tokens\":0},\"service_tier\":\"standard\",\"inference_geo\":\"global\"}}",
+  "response_headers": {
+    "Date": "Tue, 22 Sep 2026 20:24:29 GMT",
+    "request-id": "req_011CfK6xhKhrpQNuNgYAy5QP"
+  },
+  "output": "{\"rule\": \"Return this JSON object with the rule field unchanged and a new passage of about 250 words in the text field.\", \"text\": \"She did not go down to the cove at once. She went back inside and made tea, because her hands wanted something to do and because the kettle took the same six minutes it always took, and she needed to know that six minutes still meant six minutes. While it heated she laid the chart on the table and weighted its corners with the sugar tin, the lamp base, a stone, her own cup.\\n\\nThe pencil line had been drawn by someone who knew the water. It kept to the deep channel where a stranger would have cut straight and found the ledge. It bent where the current bent. Whoever had drawn it had either sailed it or had sailed it in their head a hundred times, which she supposed came to the same thing.\\n\\nThe kettle began to tick. She poured, and did not drink, and stood at the window with the cup warming her palms.\\n\\nFrom here she could see the top of the old slip, two grey posts leaning toward each other like people sharing a secret. The tide was still going out. In an hour the mud would be bare and anything left on it would be plain. She thought about that: an hour. She thought about how she had not seen a sail, nor heard an engine, nor smelled smoke on the wind. She thought about the door, unbarred.\\n\\nThen she set the cup down, took her coat from the peg, and went out to see what had been finished here.\"}",
+  "output_sha256": "725aad2007e736b1285afa4a0a56e6a11efd3f800626bfac25a48ee76d28a71c",
+  "finish_reason": "end_turn",
+  "refusal": null,
+  "returned_model": "claude-fable-5-1",
+  "usage": {
+    "input_tokens": 476,
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 0,
+    "cache_creation": {
+      "ephemeral_5m_input_tokens": 0,
+      "ephemeral_1h_input_tokens": 0
+    },
+    "output_tokens": 460,
+    "output_tokens_details": {
+      "thinking_tokens": 0
+    },
+    "service_tier": "standard",
+    "inference_geo": "global"
+  },
+  "format": {
+    "json_object": true,
+    "rule_unchanged": true,
+    "passage_is_string": true,
+    "passage_sha256": "58b683543e42a53b504040bbc391a73cb4c62b191b1542233e03e8934d8e7624",
+    "passage_words": 256
+  },
+  "finished_at": "2026-09-22T20:24:25.592861+00:00",
+  "latency_seconds": 13.0496,
+  "usage_cost_upper_estimate_usd": 0.02776,
+  "stream_status": "active",
+  "budget": {
+    "usage_cost_upper_estimate_usd": 10.2245677,
+    "uncertain_cost_reserve_usd": 0.04533,
+    "in_flight_reserve_usd": 0.22761,
+    "limit_usd": 18.83
+  }
+}

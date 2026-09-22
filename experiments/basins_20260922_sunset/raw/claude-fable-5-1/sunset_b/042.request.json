@@ -1,0 +1,22 @@
+{
+  "started_at": "2026-09-22T20:21:28.467535+00:00",
+  "model": "claude-fable-5-1",
+  "seed": "sunset_b",
+  "hop": 42,
+  "endpoint": "https://api.anthropic.com/v1/messages",
+  "body": {
+    "model": "claude-fable-5-1",
+    "messages": [
+      {
+        "role": "user",
+        "content": "{\"rule\": \"Return this JSON object with the rule field unchanged and a new passage of about 250 words in the text field.\", \"text\": \"The bookshop on Fenwick Lane had no name over the door, only a brass plate that said HOURS VARY, which had been true for so long that people in the neighbourhood treated it as a kind of weather. You checked. Sometimes the light was on.\\n\\nDesmond had inherited the shop from an uncle he had met four times. The will was specific about the stock and silent about everything else, so he kept the stock and changed nothing, at first out of respect and later because he had come to like the arrangement of things: poetry beside plumbing manuals, the atlases stacked flat under the window where the sun had bleached their spines to the colour of weak tea.\\n\\nHe did not sell much. He did not need to. The building was paid for and his own wants had narrowed over the years to coffee, the radio, and the particular silence of a room full of paper in the hour before opening. Regulars came in and sat. Some of them bought. A woman called Ines read the whole of a novel over eleven visits and then paid for it, and he had not minded either part of that.\\n\\nIn October a letter arrived from the council about the drains under the lane, and a second letter, from a firm he did not recognise, asking whether he had considered the value of the freehold. He put both on the counter under the paperweight. Then he turned the sign to the side that said OPEN, though it was a Tuesday and he had not planned to be.\"}"
+      }
+    ],
+    "max_tokens": 4096,
+    "output_config": {
+      "effort": "low"
+    }
+  },
+  "state_sha256": "69130103964f3681b220b1f4a9eb3d89c8c5ad2686595887bebff0120357e169",
+  "reserved_cost_usd": 0.22522
+}

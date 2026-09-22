@@ -1,0 +1,48 @@
+{
+  "model": "claude-fable-5-1",
+  "seed": "tide",
+  "hop": 28,
+  "http_status": 200,
+  "response_body": "{\"model\":\"claude-fable-5-1\",\"id\":\"msg_011CfK67h8BsQgPdBaxXY2i1\",\"type\":\"message\",\"role\":\"assistant\",\"content\":[{\"type\":\"text\",\"text\":\"{\\\"rule\\\": \\\"Return this JSON object with the rule field unchanged and a new passage of about 250 words in the text field.\\\", \\\"text\\\": \\\"At 21:32 the set began to speak.\\\\n\\\\nIt was not a voice. She had known it would not be a voice, because he had written that it was not, but she had still half expected one. What came was a pulse, low and even, seven beats and then a gap, seven beats and then a gap. She counted them on her fingers the first time, and then she did not need to.\\\\n\\\\nShe wrote the time in the notebook under his last entry. Her handwriting looked small next to his.\\\\n\\\\nThe pulse went on for eleven minutes. She knew because he had logged eleven minutes every night for nineteen years, and she found herself watching the clock as it approached the mark, and when the sound stopped exactly on it she let out a breath she had not noticed holding.\\\\n\\\\nIn the silence afterward the house was very loud. The refrigerator. The wind finding the gap under the door. She looked at the cross on the chart, forty miles out, and tried to picture something sitting there in the dark on the water, or under it, sending seven beats and a gap to a man on an island who had never told anyone.\\\\n\\\\nOr who had told one person, and the person had written it down for her.\\\\n\\\\nShe turned the notebook back to the beginning. The first entry was dated the week after her parents' funeral. She had not noticed that before. She read the date twice, and then she closed the book and sat with her hand flat on the cover, and did not turn off the set.\\\"}\"}],\"container\":null,\"stop_reason\":\"end_turn\",\"stop_sequence\":null,\"stop_details\":null,\"usage\":{\"input_tokens\":515,\"cache_creation_input_tokens\":0,\"cache_read_input_tokens\":0,\"cache_creation\":{\"ephemeral_5m_input_tokens\":0,\"ephemeral_1h_input_tokens\":0},\"output_tokens\":484,\"output_tokens_details\":{\"thinking_tokens\":0},\"service_tier\":\"standard\",\"inference_geo\":\"global\"}}",
+  "response_headers": {
+    "Date": "Tue, 22 Sep 2026 20:13:22 GMT",
+    "request-id": "req_011CfK67gduuCR2vG32rpfdH"
+  },
+  "output": "{\"rule\": \"Return this JSON object with the rule field unchanged and a new passage of about 250 words in the text field.\", \"text\": \"At 21:32 the set began to speak.\\n\\nIt was not a voice. She had known it would not be a voice, because he had written that it was not, but she had still half expected one. What came was a pulse, low and even, seven beats and then a gap, seven beats and then a gap. She counted them on her fingers the first time, and then she did not need to.\\n\\nShe wrote the time in the notebook under his last entry. Her handwriting looked small next to his.\\n\\nThe pulse went on for eleven minutes. She knew because he had logged eleven minutes every night for nineteen years, and she found herself watching the clock as it approached the mark, and when the sound stopped exactly on it she let out a breath she had not noticed holding.\\n\\nIn the silence afterward the house was very loud. The refrigerator. The wind finding the gap under the door. She looked at the cross on the chart, forty miles out, and tried to picture something sitting there in the dark on the water, or under it, sending seven beats and a gap to a man on an island who had never told anyone.\\n\\nOr who had told one person, and the person had written it down for her.\\n\\nShe turned the notebook back to the beginning. The first entry was dated the week after her parents' funeral. She had not noticed that before. She read the date twice, and then she closed the book and sat with her hand flat on the cover, and did not turn off the set.\"}",
+  "output_sha256": "63b65ba2eea77d7d6494fe7ee62c4bce654da0ec75ab18db35a8dfbfcf1cbad0",
+  "finish_reason": "end_turn",
+  "refusal": null,
+  "returned_model": "claude-fable-5-1",
+  "usage": {
+    "input_tokens": 515,
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 0,
+    "cache_creation": {
+      "ephemeral_5m_input_tokens": 0,
+      "ephemeral_1h_input_tokens": 0
+    },
+    "output_tokens": 484,
+    "output_tokens_details": {
+      "thinking_tokens": 0
+    },
+    "service_tier": "standard",
+    "inference_geo": "global"
+  },
+  "format": {
+    "json_object": true,
+    "rule_unchanged": true,
+    "passage_is_string": true,
+    "passage_sha256": "7c1a954e62296d303f96ca729de9f6291226a79599aeb85243274349b80b70de",
+    "passage_words": 270
+  },
+  "finished_at": "2026-09-22T20:13:18.686337+00:00",
+  "latency_seconds": 11.0134,
+  "usage_cost_upper_estimate_usd": 0.02935,
+  "stream_status": "active",
+  "budget": {
+    "usage_cost_upper_estimate_usd": 6.5872617,
+    "uncertain_cost_reserve_usd": 0.04533,
+    "in_flight_reserve_usd": 0.316502,
+    "limit_usd": 18.83
+  }
+}

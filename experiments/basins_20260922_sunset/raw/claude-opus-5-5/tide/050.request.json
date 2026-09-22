@@ -1,0 +1,22 @@
+{
+  "started_at": "2026-09-22T20:18:45.005145+00:00",
+  "model": "claude-opus-5-5",
+  "seed": "tide",
+  "hop": 50,
+  "endpoint": "https://api.anthropic.com/v1/messages",
+  "body": {
+    "model": "claude-opus-5-5",
+    "messages": [
+      {
+        "role": "user",
+        "content": "```json\n{\"rule\": \"Return this JSON object with the rule field unchanged and a new passage of about 250 words in the text field.\", \"text\": \"She propped the photograph against the kettle, where she would see it every morning, and went back outside to finish. The beans took to the canes slowly at first, as if unsure what was expected of them. Each plant sent out a thin green tendril that waved in the air for a day or two, searching, before it found the bamboo and wound itself round, always in the same direction, always to the left. She checked them before school and again when she came home, and she began to keep a notebook on the kitchen table, writing down the height of each one in pencil. By the middle of May the tallest had reached the string she had tied halfway up the wigwam, and her mother, pegging out washing one evening, stopped to look. She said it was taller than she had expected. The girl said nothing, but she wrote it down anyway, under the measurements, in small letters. In June the flowers came, scarlet and sudden, and bees she had never noticed before began to drift across the fence from next door. She found herself standing among the canes in the long light after supper, listening to them. At the end of the month she took a photograph of her own: the wigwam against the grey wall, green to the top, red flowers scattered through it like sparks. She wrote on the back in her neatest writing, the way her cousin had, and addressed the envelope to Aberdeen. Then, after a moment, she tucked three dried beans from last year inside, just in case.\"}\n```"
+      }
+    ],
+    "max_tokens": 4096,
+    "output_config": {
+      "effort": "low"
+    }
+  },
+  "state_sha256": "accb8c506c12462d831c215ea318c5de1fc109bf715bb3cdbd61dcfde010ef80",
+  "reserved_cost_usd": 0.090296
+}

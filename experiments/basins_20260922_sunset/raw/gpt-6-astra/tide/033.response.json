@@ -1,0 +1,50 @@
+{
+  "model": "gpt-6-astra",
+  "seed": "tide",
+  "hop": 33,
+  "http_status": 200,
+  "response_body": "{\n  \"id\": \"chatcmpl-ER1IYnXDpYP49qOSjYSP0VSJG5h6F\",\n  \"object\": \"chat.completion\",\n  \"created\": 1790108554,\n  \"model\": \"gpt-6-astra\",\n  \"choices\": [\n    {\n      \"index\": 0,\n      \"message\": {\n        \"role\": \"assistant\",\n        \"content\": \"{\\n  \\\"rule\\\": \\\"Return this JSON object with the rule field unchanged and a new passage of about 250 words in the text field.\\\",\\n  \\\"text\\\": \\\"The elevator in my new building had a button marked HOME beneath the basement button.\\\\n\\\\nI assumed it was a joke.\\\\n\\\\nOn Thursday, carrying groceries and half asleep, I pressed it instead of six.\\\\n\\\\nThe elevator descended.\\\\n\\\\nAfter a while, the floor numbers went dark.\\\\n\\\\nWhen the doors opened, I was looking into the kitchen of the house where I grew up.\\\\n\\\\nNot a similar kitchen. Ours. The chipped yellow counter. The calendar permanently turned to April. My father's reading glasses beside the sink.\\\\n\\\\nHe had been missing for nineteen years.\\\\n\\\\nA kettle began to whistle.\\\\n\\\\n“Could you get that?” he called from the next room.\\\\n\\\\nI kept one foot inside the elevator and reached for the stove.\\\\n\\\\nThe kettle stopped before I touched it.\\\\n\\\\nMy father appeared in the doorway, exactly as I remembered him, except for his hands. They were very old.\\\\n\\\\n“Don't put your bags down,” he said.\\\\n\\\\nBehind me, the elevator chimed.\\\\n\\\\nHe looked past my shoulder.\\\\n\\\\n“And don't let her help you.”\\\\n\\\\nA hand reached from inside the elevator and gently took one grocery bag.\\\\n\\\\nI turned.\\\\n\\\\nMy mother stood beside the buttons, smiling. I had spoken to her that morning. She was in Florida.\\\\n\\\\n“You found him,” she said.\\\\n\\\\nMy father backed into the next room.\\\\n\\\\nThe bag split. Oranges rolled across the kitchen floor.\\\\n\\\\nMy mother watched them settle.\\\\n\\\\n“Now,” she said, “we'll have to stay until you've picked those up.”\\\\n\\\\nMy father began to cry.\\\\n\\\\nUnder the table lay hundreds of oranges, collapsed and black with age.\\\\n\\\\nHe knelt among them and reached for another.\\\"\\n}\",\n        \"refusal\": null,\n        \"annotations\": []\n      },\n      \"finish_reason\": \"stop\"\n    }\n  ],\n  \"usage\": {\n    \"prompt_tokens\": 443,\n    \"completion_tokens\": 416,\n    \"total_tokens\": 859,\n    \"prompt_tokens_details\": {\n      \"cached_tokens\": 0,\n      \"cache_write_tokens\": 0,\n      \"audio_tokens\": 0\n    },\n    \"completion_tokens_details\": {\n      \"reasoning_tokens\": 0,\n      \"audio_tokens\": 0,\n      \"accepted_prediction_tokens\": 0,\n      \"rejected_prediction_tokens\": 0\n    }\n  },\n  \"service_tier\": \"default\",\n  \"system_fingerprint\": null\n}\n",
+  "response_headers": {
+    "Date": "Tue, 22 Sep 2026 20:22:50 GMT",
+    "openai-processing-ms": "16525",
+    "x-request-id": "req_8d744bc418194e1287e8d89635566bbf"
+  },
+  "output": "{\n  \"rule\": \"Return this JSON object with the rule field unchanged and a new passage of about 250 words in the text field.\",\n  \"text\": \"The elevator in my new building had a button marked HOME beneath the basement button.\\n\\nI assumed it was a joke.\\n\\nOn Thursday, carrying groceries and half asleep, I pressed it instead of six.\\n\\nThe elevator descended.\\n\\nAfter a while, the floor numbers went dark.\\n\\nWhen the doors opened, I was looking into the kitchen of the house where I grew up.\\n\\nNot a similar kitchen. Ours. The chipped yellow counter. The calendar permanently turned to April. My father's reading glasses beside the sink.\\n\\nHe had been missing for nineteen years.\\n\\nA kettle began to whistle.\\n\\n“Could you get that?” he called from the next room.\\n\\nI kept one foot inside the elevator and reached for the stove.\\n\\nThe kettle stopped before I touched it.\\n\\nMy father appeared in the doorway, exactly as I remembered him, except for his hands. They were very old.\\n\\n“Don't put your bags down,” he said.\\n\\nBehind me, the elevator chimed.\\n\\nHe looked past my shoulder.\\n\\n“And don't let her help you.”\\n\\nA hand reached from inside the elevator and gently took one grocery bag.\\n\\nI turned.\\n\\nMy mother stood beside the buttons, smiling. I had spoken to her that morning. She was in Florida.\\n\\n“You found him,” she said.\\n\\nMy father backed into the next room.\\n\\nThe bag split. Oranges rolled across the kitchen floor.\\n\\nMy mother watched them settle.\\n\\n“Now,” she said, “we'll have to stay until you've picked those up.”\\n\\nMy father began to cry.\\n\\nUnder the table lay hundreds of oranges, collapsed and black with age.\\n\\nHe knelt among them and reached for another.\"\n}",
+  "output_sha256": "90b7a55f98af13549b43a242cde841b22c70793fa20f8d0c5b8c40e03a8da6ca",
+  "finish_reason": "stop",
+  "refusal": null,
+  "returned_model": "gpt-6-astra",
+  "usage": {
+    "prompt_tokens": 443,
+    "completion_tokens": 416,
+    "total_tokens": 859,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "audio_tokens": 0,
+      "accepted_prediction_tokens": 0,
+      "rejected_prediction_tokens": 0
+    }
+  },
+  "format": {
+    "json_object": true,
+    "rule_unchanged": true,
+    "passage_is_string": true,
+    "passage_sha256": "8c6e1cbccf87d9fa373034cb9b768221f40d0d6faeeb269dc132f0c7df4ed256",
+    "passage_words": 263
+  },
+  "finished_at": "2026-09-22T20:22:46.840725+00:00",
+  "latency_seconds": 16.7767,
+  "usage_cost_upper_estimate_usd": 0.02523,
+  "stream_status": "active",
+  "budget": {
+    "usage_cost_upper_estimate_usd": 9.7784917,
+    "uncertain_cost_reserve_usd": 0.04533,
+    "in_flight_reserve_usd": 0.316496,
+    "limit_usd": 18.83
+  }
+}

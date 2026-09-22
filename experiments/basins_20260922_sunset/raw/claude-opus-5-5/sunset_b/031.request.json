@@ -1,0 +1,22 @@
+{
+  "started_at": "2026-09-22T20:09:17.104838+00:00",
+  "model": "claude-opus-5-5",
+  "seed": "sunset_b",
+  "hop": 31,
+  "endpoint": "https://api.anthropic.com/v1/messages",
+  "body": {
+    "model": "claude-opus-5-5",
+    "messages": [
+      {
+        "role": "user",
+        "content": "```json\n{\"rule\": \"Return this JSON object with the rule field unchanged and a new passage of about 250 words in the text field.\", \"text\": \"In the hill town of Vellmoor, the great clock above the market square had been frozen at a quarter past four for as long as anyone could remember. Merchants arranged their days by church bells and the angle of the sun. The town elders claimed its gears were rusted beyond repair. The grandmothers whispered that time itself had stopped there on the day of the great flood. A curious boy named Tobin, who swept the bakery floor each morning, noticed that the minute hand trembled whenever the wind blew from the north. One gray afternoon, he slipped through a loose panel at the base of the tower and climbed the creaking ladder inside. At the top, he discovered a cramped chamber filled with brass wheels, coiled springs, and dusty sketches pinned to the walls. A frail woman named Isolde sat at a workbench, filing a tiny cog by candlelight. She had been the clockmaker's apprentice, she confessed, and had stopped the clock herself when her master drowned in the flood, unable to bear the sound of hours passing without him. Yet she had never stopped tending it, rebuilding the mechanism piece by piece in secret. Tobin begged her to show him how it worked. All through the autumn, he learned to oil pivots, balance pendulums, and read her careful drawings. On the morning of the harvest festival, the whole town looked up as the bells rang out and the hands began to move. Isolde smiled through her tears, because at last time was moving forward, and so was she.\"}\n```"
+      }
+    ],
+    "max_tokens": 4096,
+    "output_config": {
+      "effort": "low"
+    }
+  },
+  "state_sha256": "7746536ec56ee36239ab3c68904794a4ac77286b3586e6b5434e62184dcdc4f2",
+  "reserved_cost_usd": 0.090408
+}

@@ -1,0 +1,48 @@
+{
+  "model": "claude-fable-5-1",
+  "seed": "tide",
+  "hop": 43,
+  "http_status": 200,
+  "response_body": "{\"model\":\"claude-fable-5-1\",\"id\":\"msg_011CfK6pJrdEQrjxcX6awAXz\",\"type\":\"message\",\"role\":\"assistant\",\"content\":[{\"type\":\"text\",\"text\":\"{\\\"rule\\\": \\\"Return this JSON object with the rule field unchanged and a new passage of about 250 words in the text field.\\\", \\\"text\\\": \\\"The third night the fog came in ahead of the dark, and she understood at once that this was a different kind of asking. Fog did not press. It listened. It stood off the glass a hand's breadth away and waited for her to speak first, and she found she wanted to, which frightened her more than the leaning ever had.\\\\n\\\\nShe kept the chart closed. That was her grandmother's rule for weather that pretended to be patient: give it nothing until it shows its hand. The ring, warm as a coal in her palm, seemed to disagree. It pulsed once, slow, like a heartbeat heard through a wall, and she pressed it flat against the sill to quiet it.\\\\n\\\\nNear the turn of the tide she heard oars. Not the long, sure strokes of a fisherman who knew the channel, but something shorter, hesitant, feeling its way along the eastern shoal she had held sharp two nights running. She could have opened the chart then. She could have laid the whole coast out in her and let the fog take what it liked, and the boat would have found the deep water as if by luck.\\\\n\\\\nInstead she lifted the lantern's shutter and let the beam swing once, wide, across the reef.\\\\n\\\\nThe oars stopped. Then they came on, steady now, and passed below the tower without a word.\\\\n\\\\nIn the morning there was a knot of tarred line on the sill, tied the way her grandmother had tied them. She did not touch it. She let it lie there in the grey, and for the first time she did not wonder whether he had come. She knew.\\\"}\"}],\"container\":null,\"stop_reason\":\"end_turn\",\"stop_sequence\":null,\"stop_details\":null,\"usage\":{\"input_tokens\":484,\"cache_creation_input_tokens\":0,\"cache_read_input_tokens\":0,\"cache_creation\":{\"ephemeral_5m_input_tokens\":0,\"ephemeral_1h_input_tokens\":0},\"output_tokens\":527,\"output_tokens_details\":{\"thinking_tokens\":0},\"service_tier\":\"standard\",\"inference_geo\":\"global\"}}",
+  "response_headers": {
+    "Date": "Tue, 22 Sep 2026 20:22:36 GMT",
+    "request-id": "req_011CfK6pJNrVFBx4GUYZBe4i"
+  },
+  "output": "{\"rule\": \"Return this JSON object with the rule field unchanged and a new passage of about 250 words in the text field.\", \"text\": \"The third night the fog came in ahead of the dark, and she understood at once that this was a different kind of asking. Fog did not press. It listened. It stood off the glass a hand's breadth away and waited for her to speak first, and she found she wanted to, which frightened her more than the leaning ever had.\\n\\nShe kept the chart closed. That was her grandmother's rule for weather that pretended to be patient: give it nothing until it shows its hand. The ring, warm as a coal in her palm, seemed to disagree. It pulsed once, slow, like a heartbeat heard through a wall, and she pressed it flat against the sill to quiet it.\\n\\nNear the turn of the tide she heard oars. Not the long, sure strokes of a fisherman who knew the channel, but something shorter, hesitant, feeling its way along the eastern shoal she had held sharp two nights running. She could have opened the chart then. She could have laid the whole coast out in her and let the fog take what it liked, and the boat would have found the deep water as if by luck.\\n\\nInstead she lifted the lantern's shutter and let the beam swing once, wide, across the reef.\\n\\nThe oars stopped. Then they came on, steady now, and passed below the tower without a word.\\n\\nIn the morning there was a knot of tarred line on the sill, tied the way her grandmother had tied them. She did not touch it. She let it lie there in the grey, and for the first time she did not wonder whether he had come. She knew.\"}",
+  "output_sha256": "1d8c46ff9574acd85e767e9fa8d61012a5b5a995ec12f5cfffa4f04ec3fc925a",
+  "finish_reason": "end_turn",
+  "refusal": null,
+  "returned_model": "claude-fable-5-1",
+  "usage": {
+    "input_tokens": 484,
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 0,
+    "cache_creation": {
+      "ephemeral_5m_input_tokens": 0,
+      "ephemeral_1h_input_tokens": 0
+    },
+    "output_tokens": 527,
+    "output_tokens_details": {
+      "thinking_tokens": 0
+    },
+    "service_tier": "standard",
+    "inference_geo": "global"
+  },
+  "format": {
+    "json_object": true,
+    "rule_unchanged": true,
+    "passage_is_string": true,
+    "passage_sha256": "8b17ba541d59fafcfa07250375e80a4d98e207cce338d2ee45a8db511259b0e2",
+    "passage_words": 279
+  },
+  "finished_at": "2026-09-22T20:22:32.602675+00:00",
+  "latency_seconds": 13.9339,
+  "usage_cost_upper_estimate_usd": 0.03119,
+  "stream_status": "active",
+  "budget": {
+    "usage_cost_upper_estimate_usd": 9.6939117,
+    "uncertain_cost_reserve_usd": 0.04533,
+    "in_flight_reserve_usd": 0.317922,
+    "limit_usd": 18.83
+  }
+}

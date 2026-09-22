@@ -1,0 +1,48 @@
+{
+  "model": "claude-fable-5-1",
+  "seed": "tide",
+  "hop": 41,
+  "http_status": 200,
+  "response_body": "{\"model\":\"claude-fable-5-1\",\"id\":\"msg_011CfK6iiiQW99pjB9fLJZSo\",\"type\":\"message\",\"role\":\"assistant\",\"content\":[{\"type\":\"text\",\"text\":\"{\\\"rule\\\": \\\"Return this JSON object with the rule field unchanged and a new passage of about 250 words in the text field.\\\", \\\"text\\\": \\\"The first night the sea came as he had said it would, not with weight but with questions. It pressed against the pilings and asked what she was made of, and the chart inside her answered before she could: soundings, headlands, the long shoal off the eastern point that had drowned four boats in her grandmother's time. She had not known she knew that. She knew it now the way she knew her own pulse.\\\\n\\\\nThe ring grew warm under her hand. She had thought it would stay cold.\\\\n\\\\nToward the deepest part of the dark, the water leaned. That was the only word for it. Every plank in the tower groaned toward the sea at once, and she felt her wrists go thin, felt the coastlines in her begin to blur at their edges like ink under a wet thumb. It would be so simple to lift her hand. She understood, finally, what he had meant. Wanting to was not weakness. Wanting to was the price.\\\\n\\\\nShe held.\\\\n\\\\nWhen the light turned grey she found she had been standing for hours without deciding to. The lantern had guttered. On the sill, where the salt had crusted thickest, someone had scratched a mark she had not made: a small arc, two cables from the reef, corrected.\\\\n\\\\nHe had come back, then, sometime before dawn, and gone again. She did not know whether to be grateful or angry. She decided the sea could have that argument later. For now there was the tide going out, taking nothing with it, and the shore still hers.\\\"}\"}],\"container\":null,\"stop_reason\":\"end_turn\",\"stop_sequence\":null,\"stop_details\":null,\"usage\":{\"input_tokens\":519,\"cache_creation_input_tokens\":0,\"cache_read_input_tokens\":0,\"cache_creation\":{\"ephemeral_5m_input_tokens\":0,\"ephemeral_1h_input_tokens\":0},\"output_tokens\":498,\"output_tokens_details\":{\"thinking_tokens\":0},\"service_tier\":\"standard\",\"inference_geo\":\"global\"}}",
+  "response_headers": {
+    "Date": "Tue, 22 Sep 2026 20:21:20 GMT",
+    "request-id": "req_011CfK6ii6TDSQVGnRmiEu7R"
+  },
+  "output": "{\"rule\": \"Return this JSON object with the rule field unchanged and a new passage of about 250 words in the text field.\", \"text\": \"The first night the sea came as he had said it would, not with weight but with questions. It pressed against the pilings and asked what she was made of, and the chart inside her answered before she could: soundings, headlands, the long shoal off the eastern point that had drowned four boats in her grandmother's time. She had not known she knew that. She knew it now the way she knew her own pulse.\\n\\nThe ring grew warm under her hand. She had thought it would stay cold.\\n\\nToward the deepest part of the dark, the water leaned. That was the only word for it. Every plank in the tower groaned toward the sea at once, and she felt her wrists go thin, felt the coastlines in her begin to blur at their edges like ink under a wet thumb. It would be so simple to lift her hand. She understood, finally, what he had meant. Wanting to was not weakness. Wanting to was the price.\\n\\nShe held.\\n\\nWhen the light turned grey she found she had been standing for hours without deciding to. The lantern had guttered. On the sill, where the salt had crusted thickest, someone had scratched a mark she had not made: a small arc, two cables from the reef, corrected.\\n\\nHe had come back, then, sometime before dawn, and gone again. She did not know whether to be grateful or angry. She decided the sea could have that argument later. For now there was the tide going out, taking nothing with it, and the shore still hers.\"}",
+  "output_sha256": "ddbf28040013c34147578afaa42ad75fd09a36ad948aae10306269dd4f0f2734",
+  "finish_reason": "end_turn",
+  "refusal": null,
+  "returned_model": "claude-fable-5-1",
+  "usage": {
+    "input_tokens": 519,
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 0,
+    "cache_creation": {
+      "ephemeral_5m_input_tokens": 0,
+      "ephemeral_1h_input_tokens": 0
+    },
+    "output_tokens": 498,
+    "output_tokens_details": {
+      "thinking_tokens": 0
+    },
+    "service_tier": "standard",
+    "inference_geo": "global"
+  },
+  "format": {
+    "json_object": true,
+    "rule_unchanged": true,
+    "passage_is_string": true,
+    "passage_sha256": "96394b8fc239ec8e8083cb1adfe1c047126d804cb769d8f847a9c2813880fb68",
+    "passage_words": 263
+  },
+  "finished_at": "2026-09-22T20:21:16.420986+00:00",
+  "latency_seconds": 13.5973,
+  "usage_cost_upper_estimate_usd": 0.03009,
+  "stream_status": "active",
+  "budget": {
+    "usage_cost_upper_estimate_usd": 9.2499137,
+    "uncertain_cost_reserve_usd": 0.04533,
+    "in_flight_reserve_usd": 0.31829,
+    "limit_usd": 18.83
+  }
+}

@@ -1,0 +1,22 @@
+{
+  "started_at": "2026-09-22T20:14:35.901199+00:00",
+  "model": "claude-opus-5-5",
+  "seed": "sunset_b",
+  "hop": 42,
+  "endpoint": "https://api.anthropic.com/v1/messages",
+  "body": {
+    "model": "claude-opus-5-5",
+    "messages": [
+      {
+        "role": "user",
+        "content": "```json\n{\"rule\": \"Return this JSON object with the rule field unchanged and a new passage of about 250 words in the text field.\", \"text\": \"On the windswept coast of Harrowmere, the lighthouse had stood dark for eleven winters after its keeper, old Tobias, sailed out one stormy evening and never returned. Fishing boats learned to creep home before dusk, and on moonless nights the villagers lit bonfires along the cliffs, though the flames rarely reached far enough to warn ships away from the jagged rocks below. A girl named Liesel, who mended nets on the harbor wall, watched the silent tower each evening and imagined its great lamp sweeping across the waves. One autumn afternoon she noticed a thin curl of smoke rising from the lighthouse chimney. Curious, she crossed the tidal causeway before the water rose and pushed open the salt-stiff door. At the top of the spiral stairs she found a stooped man polishing the enormous glass lens with a scrap of wool. His name was Anders, and he had once been Tobias's apprentice. He had come back to the village hoping to restore the light, but his hands trembled too badly to trim the wick or adjust the delicate clockwork that turned the beam. Liesel offered to help. Each day after her chores, she climbed the stairs to learn how to clean the brass fittings, measure the oil, and wind the heavy weights that kept the lens revolving. By the first frost, everything was ready. That evening Liesel struck a match, and a brilliant beam swept across the dark sea. Far out on the water, a fishing boat answered with three cheerful blasts of its horn.\"}\n```"
+      }
+    ],
+    "max_tokens": 4096,
+    "output_config": {
+      "effort": "low"
+    }
+  },
+  "state_sha256": "78b116ad1b32d4c3ea980bcfd027f6afdd02023f7315a42ec227794caf0ae7b6",
+  "reserved_cost_usd": 0.090376
+}

@@ -1,0 +1,22 @@
+{
+  "started_at": "2026-09-22T20:17:12.479562+00:00",
+  "model": "claude-opus-5-5",
+  "seed": "sunset_b",
+  "hop": 47,
+  "endpoint": "https://api.anthropic.com/v1/messages",
+  "body": {
+    "model": "claude-opus-5-5",
+    "messages": [
+      {
+        "role": "user",
+        "content": "```json\n{\"rule\": \"Return this JSON object with the rule field unchanged and a new passage of about 250 words in the text field.\", \"text\": \"High in the valley of Brenmoor, the old stone mill had stood silent since the spring its waterwheel cracked beneath a flood of melting snow. Without it, the farmers carried their grain three days over the mountain pass to be ground, and many simply stopped planting wheat at all. The bakery on the square sold fewer loaves each season, and the smell of warm bread that once filled the morning streets faded like a half-remembered song. A boy named Emil, who herded goats along the riverbank, often paused beside the mill and listened to the water rushing past the broken paddles. One misty morning he heard a steady tapping from inside. He pushed open the heavy oak door and found a woman with silver braids measuring planks beside a workbench. Her name was Marit, and her grandfather had built the wheel sixty years before. She had come home to repair it, but her back ached too much to lift the timbers alone. Emil offered his strong arms. Every afternoon, once the goats were penned, he ran to the mill to learn how to shape the paddles, fit the iron bands, and grease the great wooden axle until it turned smoothly. Marit showed him how to read the grain of the wood and trust the patience of careful work. At the first thaw of the new year, they lifted the sluice gate together. Water poured onto the fresh paddles, the wheel groaned and began to turn, and soon the millstones rumbled to life, grinding golden flour for the village of Brenmoor once more.\"}\n```"
+      }
+    ],
+    "max_tokens": 4096,
+    "output_config": {
+      "effort": "low"
+    }
+  },
+  "state_sha256": "9960c53f0ed3541b5cb036958b5779ae0d75e1c132efe01b9431cf343472dcbe",
+  "reserved_cost_usd": 0.090384
+}

@@ -1,0 +1,50 @@
+{
+  "model": "gpt-6-astra",
+  "seed": "sunset_b",
+  "hop": 29,
+  "http_status": 200,
+  "response_body": "{\n  \"id\": \"chatcmpl-ER1EtOtsCbfmdMrEzHkbXroOMtX3H\",\n  \"object\": \"chat.completion\",\n  \"created\": 1790108327,\n  \"model\": \"gpt-6-astra\",\n  \"choices\": [\n    {\n      \"index\": 0,\n      \"message\": {\n        \"role\": \"assistant\",\n        \"content\": \"{\\n  \\\"rule\\\": \\\"Return this JSON object with the rule field unchanged and a new passage of about 250 words in the text field.\\\",\\n  \\\"text\\\": \\\"On Saturday, Martin took his father’s shoes to the cobbler.\\\\n\\\\n“Both pairs?” the woman asked.\\\\n\\\\n“Just the brown ones. The others are for the charity shop.”\\\\n\\\\nShe pressed a thumb against the sole.\\\\n\\\\n“Plenty left in these.”\\\\n\\\\nHe had meant to explain that they were not his, but she was already writing the ticket.\\\\n\\\\nWhen he returned the following week, the shoes stood polished on the counter. There was a small mark on the left toe, a crescent he remembered from beneath the dining table.\\\\n\\\\n“Couldn’t get that out,” she said.\\\\n\\\\n“That’s all right.”\\\\n\\\\nAt home, his daughter was doing homework in the kitchen. He put the shoes beside the back door.\\\\n\\\\n“Are you going somewhere?” she asked.\\\\n\\\\n“No.”\\\\n\\\\n“Why have you bought shoes?”\\\\n\\\\n“They were Grandad’s.”\\\\n\\\\nShe leaned sideways to see them.\\\\n\\\\n“Will they fit you?”\\\\n\\\\n“I don’t know.”\\\\n\\\\nAfter lunch he tried them on. The right one went on easily. He needed a finger behind the heel of the left.\\\\n\\\\nHis daughter watched him walk to the sink and back.\\\\n\\\\n“Well?” she said.\\\\n\\\\n“A bit stiff.”\\\\n\\\\n“You have to wear them in.”\\\\n\\\\nHe looked down at the creases across the leather.\\\\n\\\\n“I suppose so.”\\\\n\\\\nLater, they went to buy milk. At the corner she stopped to retie her trainer, and Martin waited with the empty shopping bag folded under his arm.\\\\n\\\\n“You’re walking slowly,” she said, catching up.\\\\n\\\\n“It’s the shoes.”\\\\n\\\\nShe took the bag from him and swung it once, then put her free hand in his.\\\"\\n}\",\n        \"refusal\": null,\n        \"annotations\": []\n      },\n      \"finish_reason\": \"stop\"\n    }\n  ],\n  \"usage\": {\n    \"prompt_tokens\": 430,\n    \"completion_tokens\": 423,\n    \"total_tokens\": 853,\n    \"prompt_tokens_details\": {\n      \"cached_tokens\": 0,\n      \"cache_write_tokens\": 0,\n      \"audio_tokens\": 0\n    },\n    \"completion_tokens_details\": {\n      \"reasoning_tokens\": 0,\n      \"audio_tokens\": 0,\n      \"accepted_prediction_tokens\": 0,\n      \"rejected_prediction_tokens\": 0\n    }\n  },\n  \"service_tier\": \"default\",\n  \"system_fingerprint\": null\n}\n",
+  "response_headers": {
+    "Date": "Tue, 22 Sep 2026 20:19:00 GMT",
+    "openai-processing-ms": "13261",
+    "x-request-id": "req_89839c776bc74504882c95b9d3b28405"
+  },
+  "output": "{\n  \"rule\": \"Return this JSON object with the rule field unchanged and a new passage of about 250 words in the text field.\",\n  \"text\": \"On Saturday, Martin took his father’s shoes to the cobbler.\\n\\n“Both pairs?” the woman asked.\\n\\n“Just the brown ones. The others are for the charity shop.”\\n\\nShe pressed a thumb against the sole.\\n\\n“Plenty left in these.”\\n\\nHe had meant to explain that they were not his, but she was already writing the ticket.\\n\\nWhen he returned the following week, the shoes stood polished on the counter. There was a small mark on the left toe, a crescent he remembered from beneath the dining table.\\n\\n“Couldn’t get that out,” she said.\\n\\n“That’s all right.”\\n\\nAt home, his daughter was doing homework in the kitchen. He put the shoes beside the back door.\\n\\n“Are you going somewhere?” she asked.\\n\\n“No.”\\n\\n“Why have you bought shoes?”\\n\\n“They were Grandad’s.”\\n\\nShe leaned sideways to see them.\\n\\n“Will they fit you?”\\n\\n“I don’t know.”\\n\\nAfter lunch he tried them on. The right one went on easily. He needed a finger behind the heel of the left.\\n\\nHis daughter watched him walk to the sink and back.\\n\\n“Well?” she said.\\n\\n“A bit stiff.”\\n\\n“You have to wear them in.”\\n\\nHe looked down at the creases across the leather.\\n\\n“I suppose so.”\\n\\nLater, they went to buy milk. At the corner she stopped to retie her trainer, and Martin waited with the empty shopping bag folded under his arm.\\n\\n“You’re walking slowly,” she said, catching up.\\n\\n“It’s the shoes.”\\n\\nShe took the bag from him and swung it once, then put her free hand in his.\"\n}",
+  "output_sha256": "cf4d6fc3d4e881a894bdd4b78649e2ced9f039cf516f6673825f470a1c2ae348",
+  "finish_reason": "stop",
+  "refusal": null,
+  "returned_model": "gpt-6-astra",
+  "usage": {
+    "prompt_tokens": 430,
+    "completion_tokens": 423,
+    "total_tokens": 853,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "audio_tokens": 0,
+      "accepted_prediction_tokens": 0,
+      "rejected_prediction_tokens": 0
+    }
+  },
+  "format": {
+    "json_object": true,
+    "rule_unchanged": true,
+    "passage_is_string": true,
+    "passage_sha256": "1dfd9581d3fae4330eed4cc102790e1a51a582e1578b45a9323d223aca05886e",
+    "passage_words": 250
+  },
+  "finished_at": "2026-09-22T20:18:56.277145+00:00",
+  "latency_seconds": 13.5642,
+  "usage_cost_upper_estimate_usd": 0.02545,
+  "stream_status": "active",
+  "budget": {
+    "usage_cost_upper_estimate_usd": 8.5121557,
+    "uncertain_cost_reserve_usd": 0.04533,
+    "in_flight_reserve_usd": 0.315296,
+    "limit_usd": 18.83
+  }
+}

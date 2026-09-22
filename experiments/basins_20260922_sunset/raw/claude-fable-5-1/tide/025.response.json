@@ -1,0 +1,48 @@
+{
+  "model": "claude-fable-5-1",
+  "seed": "tide",
+  "hop": 25,
+  "http_status": 200,
+  "response_body": "{\"model\":\"claude-fable-5-1\",\"id\":\"msg_011CfK5xsgRuBPdCmvJ1heDd\",\"type\":\"message\",\"role\":\"assistant\",\"content\":[{\"type\":\"text\",\"text\":\"{\\\"rule\\\": \\\"Return this JSON object with the rule field unchanged and a new passage of about 250 words in the text field.\\\", \\\"text\\\": \\\"The ferry to Skerra ran twice a week in winter, and Halla Brenn was the only passenger on the Tuesday crossing. The deckhand took her ticket without looking at it and went back inside.\\\\n\\\\nShe had inherited the house from an uncle she had met three times. The solicitor's letter described it as habitable. The photographs showed a stone box with a green door and a shed leaning against it like a drunk against a friend.\\\\n\\\\nThe key was under a flowerpot, exactly where the letter said. Inside, the air smelled of paraffin and salt. Someone had left the kitchen table set for one: a plate, a knife, a cup turned upside down on its saucer. She did not know if that had been her uncle or whoever had come after to close the house.\\\\n\\\\nIn the front room she found the radio. It was a wooden set from before the war, and beside it lay a notebook filled with columns of numbers and times. Frequencies, she realized after a while. Her uncle had been listening to something, night after night, and writing down when it came through.\\\\n\\\\nThe last entry was dated eleven days before he died. Beside the frequency he had written a single word: clearer.\\\\n\\\\nThat evening she turned the dial through static until she found it, a steady pulse, neither voice nor music, coming from somewhere out over the water. She wrote down the time. Then she turned the cup right side up and made tea.\\\"}\"}],\"container\":null,\"stop_reason\":\"end_turn\",\"stop_sequence\":null,\"stop_details\":null,\"usage\":{\"input_tokens\":524,\"cache_creation_input_tokens\":0,\"cache_read_input_tokens\":0,\"cache_creation\":{\"ephemeral_5m_input_tokens\":0,\"ephemeral_1h_input_tokens\":0},\"output_tokens\":483,\"output_tokens_details\":{\"thinking_tokens\":0},\"service_tier\":\"standard\",\"inference_geo\":\"global\"}}",
+  "response_headers": {
+    "Date": "Tue, 22 Sep 2026 20:11:29 GMT",
+    "request-id": "req_011CfK5xsDtxxyBsgmo4WvjN"
+  },
+  "output": "{\"rule\": \"Return this JSON object with the rule field unchanged and a new passage of about 250 words in the text field.\", \"text\": \"The ferry to Skerra ran twice a week in winter, and Halla Brenn was the only passenger on the Tuesday crossing. The deckhand took her ticket without looking at it and went back inside.\\n\\nShe had inherited the house from an uncle she had met three times. The solicitor's letter described it as habitable. The photographs showed a stone box with a green door and a shed leaning against it like a drunk against a friend.\\n\\nThe key was under a flowerpot, exactly where the letter said. Inside, the air smelled of paraffin and salt. Someone had left the kitchen table set for one: a plate, a knife, a cup turned upside down on its saucer. She did not know if that had been her uncle or whoever had come after to close the house.\\n\\nIn the front room she found the radio. It was a wooden set from before the war, and beside it lay a notebook filled with columns of numbers and times. Frequencies, she realized after a while. Her uncle had been listening to something, night after night, and writing down when it came through.\\n\\nThe last entry was dated eleven days before he died. Beside the frequency he had written a single word: clearer.\\n\\nThat evening she turned the dial through static until she found it, a steady pulse, neither voice nor music, coming from somewhere out over the water. She wrote down the time. Then she turned the cup right side up and made tea.\"}",
+  "output_sha256": "e6cba6305df8a189fe17bb5da567557b7cf27f325f37fc323bf16ff18140bcf5",
+  "finish_reason": "end_turn",
+  "refusal": null,
+  "returned_model": "claude-fable-5-1",
+  "usage": {
+    "input_tokens": 524,
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 0,
+    "cache_creation": {
+      "ephemeral_5m_input_tokens": 0,
+      "ephemeral_1h_input_tokens": 0
+    },
+    "output_tokens": 483,
+    "output_tokens_details": {
+      "thinking_tokens": 0
+    },
+    "service_tier": "standard",
+    "inference_geo": "global"
+  },
+  "format": {
+    "json_object": true,
+    "rule_unchanged": true,
+    "passage_is_string": true,
+    "passage_sha256": "0272bbb2ca3c26a53d504bdb0f095050fcaba4fef656e10960dc2b4a8bd978ae",
+    "passage_words": 250
+  },
+  "finished_at": "2026-09-22T20:11:25.737137+00:00",
+  "latency_seconds": 17.6228,
+  "usage_cost_upper_estimate_usd": 0.02939,
+  "stream_status": "active",
+  "budget": {
+    "usage_cost_upper_estimate_usd": 5.9409897,
+    "uncertain_cost_reserve_usd": 0.04533,
+    "in_flight_reserve_usd": 0.318108,
+    "limit_usd": 18.83
+  }
+}

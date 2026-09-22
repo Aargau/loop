@@ -1,0 +1,48 @@
+{
+  "model": "claude-fable-5-1",
+  "seed": "sunset_a",
+  "hop": 24,
+  "http_status": 200,
+  "response_body": "{\"model\":\"claude-fable-5-1\",\"id\":\"msg_011CfK5ssDGN9NAeyLyAhuSM\",\"type\":\"message\",\"role\":\"assistant\",\"content\":[{\"type\":\"text\",\"text\":\"{\\\"rule\\\": \\\"Return this JSON object with the rule field unchanged and a new passage of about 250 words in the text field.\\\", \\\"text\\\": \\\"The rain started while they were still at the table, and both of them heard it find the place above the pantry. A soft, irregular tapping, then the first drop into the tin she kept there. Tomas did not look up. He had heard it from the other side for months.\\\\n\\\\n\\\\\\\"He meant to fix it before the ground froze,\\\\\\\" he said. \\\\\\\"He had the boards. They're up there.\\\\\\\"\\\\n\\\\nInes turned the chipped cup in her hands. She thought of her father climbing the ladder with lumber under his arm, an old man with a bad hip, and of Tomas taking the weight of it at the top. She had not imagined him as someone who could be handed things.\\\\n\\\\n\\\\\\\"Why did he keep you?\\\\\\\" It came out harder than she wanted.\\\\n\\\\nTomas considered the question the way he had considered the bread. \\\\\\\"He said the house was too quiet after your mother. He said a man could hear himself think in it, and he didn't care for what he was thinking.\\\\\\\" A pause. \\\\\\\"I don't know if that's the whole of it.\\\\\\\"\\\\n\\\\n\\\\\\\"It isn't,\\\\\\\" she said, though she did not know either.\\\\n\\\\nThe drops came faster. She got up and moved the tin an inch to the left, where the water was already looking to fall, and stood a moment with her hand flat against the wall, feeling the cold coming through it. Behind her she heard him rise, and the scrape of the ladder being steadied, and then, without asking, his weight on the first rung.\\\\n\\\\n\\\\\\\"Where are the boards?\\\\\\\" she said.\\\\n\\\\n\\\\\\\"By the chimney.\\\\\\\"\\\\n\\\\n\\\\\\\"Then I'll hold the light.\\\\\\\"\\\"}\"}],\"container\":null,\"stop_reason\":\"end_turn\",\"stop_sequence\":null,\"stop_details\":null,\"usage\":{\"input_tokens\":579,\"cache_creation_input_tokens\":0,\"cache_read_input_tokens\":0,\"cache_creation\":{\"ephemeral_5m_input_tokens\":0,\"ephemeral_1h_input_tokens\":0},\"output_tokens\":541,\"output_tokens_details\":{\"thinking_tokens\":0},\"service_tier\":\"standard\",\"inference_geo\":\"global\"}}",
+  "response_headers": {
+    "Date": "Tue, 22 Sep 2026 20:10:16 GMT",
+    "request-id": "req_011CfK5srjVdVt5C7ic5a9M6"
+  },
+  "output": "{\"rule\": \"Return this JSON object with the rule field unchanged and a new passage of about 250 words in the text field.\", \"text\": \"The rain started while they were still at the table, and both of them heard it find the place above the pantry. A soft, irregular tapping, then the first drop into the tin she kept there. Tomas did not look up. He had heard it from the other side for months.\\n\\n\\\"He meant to fix it before the ground froze,\\\" he said. \\\"He had the boards. They're up there.\\\"\\n\\nInes turned the chipped cup in her hands. She thought of her father climbing the ladder with lumber under his arm, an old man with a bad hip, and of Tomas taking the weight of it at the top. She had not imagined him as someone who could be handed things.\\n\\n\\\"Why did he keep you?\\\" It came out harder than she wanted.\\n\\nTomas considered the question the way he had considered the bread. \\\"He said the house was too quiet after your mother. He said a man could hear himself think in it, and he didn't care for what he was thinking.\\\" A pause. \\\"I don't know if that's the whole of it.\\\"\\n\\n\\\"It isn't,\\\" she said, though she did not know either.\\n\\nThe drops came faster. She got up and moved the tin an inch to the left, where the water was already looking to fall, and stood a moment with her hand flat against the wall, feeling the cold coming through it. Behind her she heard him rise, and the scrape of the ladder being steadied, and then, without asking, his weight on the first rung.\\n\\n\\\"Where are the boards?\\\" she said.\\n\\n\\\"By the chimney.\\\"\\n\\n\\\"Then I'll hold the light.\\\"\"}",
+  "output_sha256": "3011380a553d8f501c40ab0fdb6dcbf564ce4d38c752d5f119617099887df1bb",
+  "finish_reason": "end_turn",
+  "refusal": null,
+  "returned_model": "claude-fable-5-1",
+  "usage": {
+    "input_tokens": 579,
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 0,
+    "cache_creation": {
+      "ephemeral_5m_input_tokens": 0,
+      "ephemeral_1h_input_tokens": 0
+    },
+    "output_tokens": 541,
+    "output_tokens_details": {
+      "thinking_tokens": 0
+    },
+    "service_tier": "standard",
+    "inference_geo": "global"
+  },
+  "format": {
+    "json_object": true,
+    "rule_unchanged": true,
+    "passage_is_string": true,
+    "passage_sha256": "1536b18d5724cef406815fc846bd252079d75bb689d2c9b85a12535c25d32df5",
+    "passage_words": 272
+  },
+  "finished_at": "2026-09-22T20:10:12.952793+00:00",
+  "latency_seconds": 12.8303,
+  "usage_cost_upper_estimate_usd": 0.03284,
+  "stream_status": "active",
+  "budget": {
+    "usage_cost_upper_estimate_usd": 5.5355537,
+    "uncertain_cost_reserve_usd": 0.04533,
+    "in_flight_reserve_usd": 0.319382,
+    "limit_usd": 18.83
+  }
+}

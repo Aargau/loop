@@ -1,0 +1,22 @@
+{
+  "started_at": "2026-09-22T20:23:18.557598+00:00",
+  "model": "claude-opus-5-5",
+  "seed": "tide",
+  "hop": 60,
+  "endpoint": "https://api.anthropic.com/v1/messages",
+  "body": {
+    "model": "claude-opus-5-5",
+    "messages": [
+      {
+        "role": "user",
+        "content": "```json\n{\"rule\": \"Return this JSON object with the rule field unchanged and a new passage of about 250 words in the text field.\", \"text\": \"Callum read the line four times before he understood it, and then he went out to the corner and stood looking at the sunflowers as if they had been listening. They were taller than him by midsummer, taller than his grandmother by August, and their heavy faces turned slowly across the yard every day, following the light from the kitchen window to the shed. When the petals began to curl and brown, his grandmother showed him how to tie paper bags over the heads so the birds would not take everything. In September they cut the stalks together, and he carried the flower heads into the kitchen one at a time, holding them in both arms like sleeping animals. They spread newspaper across the table and sat rubbing the seeds loose with their thumbs until their fingers were black and striped. There were far more than he had expected, hundreds of them, rattling into the biscuit tin with a sound like rain on a roof. His grandmother kept a handful for the birds in winter and let him choose the rest. He thought for a long time about who should have them. In the end he counted out twenty, even though it was probably bad luck, and folded them into an envelope with a map of the yard and an arrow pointing to the south wall. On the front he wrote the address of the boy next door, who had only moved in that summer and had no garden at all. Then, underneath the map, he copied out the line exactly.\"}\n```"
+      }
+    ],
+    "max_tokens": 4096,
+    "output_config": {
+      "effort": "low"
+    }
+  },
+  "state_sha256": "3c4776ab2b7d7674076969e37cfbc50bb04644dc780bccc95b522b9a7bba4c2e",
+  "reserved_cost_usd": 0.090136
+}

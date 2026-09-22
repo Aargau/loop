@@ -1,0 +1,48 @@
+{
+  "model": "claude-fable-5-1",
+  "seed": "sunset_a",
+  "hop": 29,
+  "http_status": 200,
+  "response_body": "{\"model\":\"claude-fable-5-1\",\"id\":\"msg_011CfK68W4hUWZ9SFyh9M59e\",\"type\":\"message\",\"role\":\"assistant\",\"content\":[{\"type\":\"text\",\"text\":\"{\\\"rule\\\": \\\"Return this JSON object with the rule field unchanged and a new passage of about 250 words in the text field.\\\", \\\"text\\\": \\\"The ledger was where he said it would be, in the drawer beneath the bread box, wrapped in a flour sack that had gone stiff with age. She carried it to the table and opened it under the lamp while Tomas stayed where he was, near the door, as though the book might ask him to leave.\\\\n\\\\nHer father's hand had changed over the years. The early pages were firm and upright, the letters closed and careful, the kind of writing a man does when he still believes someone will read it. Later the lines began to slope. Sums were crossed out and started again. There were months with nothing but a date and a dash.\\\\n\\\\n\\\\\\\"He stopped keeping the wood in it,\\\\\\\" Tomas said. \\\\\\\"After the second winter. Said it wasn't worth the ink.\\\\\\\"\\\\n\\\\n\\\\\\\"Was it?\\\\\\\"\\\\n\\\\n\\\\\\\"Four cords. Five, the bad year.\\\\\\\"\\\\n\\\\nShe found his name, over and over, always in the same column. *Tomas, roof.* *Tomas, gate.* *Tomas, owed.* The word *owed* appeared more often than she liked, and beside it, in a different pencil, a small mark she did not recognize. She turned the book so the light fell on it.\\\\n\\\\n\\\\\\\"That's mine,\\\\\\\" he said. \\\\\\\"I'd come by and check it off when he'd forgotten. So he wouldn't think he'd been careless.\\\\\\\"\\\\n\\\\nShe sat with that a while. The drip counted on above them. Then she took up the pencil that had been left in the crease, licked the point the way her father used to, and beneath the last entry wrote the day's date, and her own name, and the word *begins*.\\\"}\"}],\"container\":null,\"stop_reason\":\"end_turn\",\"stop_sequence\":null,\"stop_details\":null,\"usage\":{\"input_tokens\":571,\"cache_creation_input_tokens\":0,\"cache_read_input_tokens\":0,\"cache_creation\":{\"ephemeral_5m_input_tokens\":0,\"ephemeral_1h_input_tokens\":0},\"output_tokens\":547,\"output_tokens_details\":{\"thinking_tokens\":0},\"service_tier\":\"standard\",\"inference_geo\":\"global\"}}",
+  "response_headers": {
+    "Date": "Tue, 22 Sep 2026 20:13:35 GMT",
+    "request-id": "req_011CfK68VbB443Zh9wgjXiy6"
+  },
+  "output": "{\"rule\": \"Return this JSON object with the rule field unchanged and a new passage of about 250 words in the text field.\", \"text\": \"The ledger was where he said it would be, in the drawer beneath the bread box, wrapped in a flour sack that had gone stiff with age. She carried it to the table and opened it under the lamp while Tomas stayed where he was, near the door, as though the book might ask him to leave.\\n\\nHer father's hand had changed over the years. The early pages were firm and upright, the letters closed and careful, the kind of writing a man does when he still believes someone will read it. Later the lines began to slope. Sums were crossed out and started again. There were months with nothing but a date and a dash.\\n\\n\\\"He stopped keeping the wood in it,\\\" Tomas said. \\\"After the second winter. Said it wasn't worth the ink.\\\"\\n\\n\\\"Was it?\\\"\\n\\n\\\"Four cords. Five, the bad year.\\\"\\n\\nShe found his name, over and over, always in the same column. *Tomas, roof.* *Tomas, gate.* *Tomas, owed.* The word *owed* appeared more often than she liked, and beside it, in a different pencil, a small mark she did not recognize. She turned the book so the light fell on it.\\n\\n\\\"That's mine,\\\" he said. \\\"I'd come by and check it off when he'd forgotten. So he wouldn't think he'd been careless.\\\"\\n\\nShe sat with that a while. The drip counted on above them. Then she took up the pencil that had been left in the crease, licked the point the way her father used to, and beneath the last entry wrote the day's date, and her own name, and the word *begins*.\"}",
+  "output_sha256": "65f0f0a7539915bc96ed7bb511186611f5c0bf2cd52f12e8561ac23db45d4063",
+  "finish_reason": "end_turn",
+  "refusal": null,
+  "returned_model": "claude-fable-5-1",
+  "usage": {
+    "input_tokens": 571,
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 0,
+    "cache_creation": {
+      "ephemeral_5m_input_tokens": 0,
+      "ephemeral_1h_input_tokens": 0
+    },
+    "output_tokens": 547,
+    "output_tokens_details": {
+      "thinking_tokens": 0
+    },
+    "service_tier": "standard",
+    "inference_geo": "global"
+  },
+  "format": {
+    "json_object": true,
+    "rule_unchanged": true,
+    "passage_is_string": true,
+    "passage_sha256": "c476b5523304ef365770e66732b304c47dc4237e4ea082deede7ada802426e84",
+    "passage_words": 266
+  },
+  "finished_at": "2026-09-22T20:13:31.938616+00:00",
+  "latency_seconds": 13.248,
+  "usage_cost_upper_estimate_usd": 0.03306,
+  "stream_status": "active",
+  "budget": {
+    "usage_cost_upper_estimate_usd": 6.6331137,
+    "uncertain_cost_reserve_usd": 0.04533,
+    "in_flight_reserve_usd": 0.316586,
+    "limit_usd": 18.83
+  }
+}

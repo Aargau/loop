@@ -1,0 +1,48 @@
+{
+  "model": "claude-fable-5-1",
+  "seed": "tide",
+  "hop": 40,
+  "http_status": 200,
+  "response_body": "{\"model\":\"claude-fable-5-1\",\"id\":\"msg_011CfK6fnyohrEXoh5FeiyUv\",\"type\":\"message\",\"role\":\"assistant\",\"content\":[{\"type\":\"text\",\"text\":\"{\\\"rule\\\": \\\"Return this JSON object with the rule field unchanged and a new passage of about 250 words in the text field.\\\", \\\"text\\\": \\\"The cold went through her wrists like water through a net. She had expected it to burn. Instead it simply took, patiently, the way the tide takes a footprint, and she felt the chart's coastlines settle into her the same way she had once felt a new harbor settle into memory: not learned, but arrived at.\\\\n\\\\nHe was sitting. She had not seen him do it. His hands lay open on his knees, and the pale mark on his palm was already fading to ordinary skin.\\\\n\\\\n\\\\\\\"You should have argued longer,\\\\\\\" he said.\\\\n\\\\n\\\\\\\"You should have stood less.\\\\\\\" Her voice came out steady, which surprised her. \\\\\\\"Go on. The causeway will hold until the light turns.\\\\\\\"\\\\n\\\\nHe did not go. He looked at the boards between them, at the salt crust, at the ring under her fingers. \\\\\\\"The first night is the worst. The sea comes in to see what you are. It leans hard. You will want to let go.\\\\\\\"\\\\n\\\\n\\\\\\\"Did you?\\\\\\\"\\\\n\\\\n\\\\\\\"Every night.\\\\\\\" He stood, slowly, testing the floor as if it might not be there. \\\\\\\"That is why it works. Someone has to want to and not.\\\\\\\"\\\\n\\\\nAt the door he paused, and she thought he would say her name, though she had never given it. He said instead, \\\\\\\"The reef. You were wrong by two cables, not one.\\\\\\\"\\\\n\\\\nThen the door, and the dark, and far out past the edge of her lantern, the sound of water beginning to remember itself, coming back across the sand toward the only shore it had.\\\"}\"}],\"container\":null,\"stop_reason\":\"end_turn\",\"stop_sequence\":null,\"stop_details\":null,\"usage\":{\"input_tokens\":586,\"cache_creation_input_tokens\":0,\"cache_read_input_tokens\":0,\"cache_creation\":{\"ephemeral_5m_input_tokens\":0,\"ephemeral_1h_input_tokens\":0},\"output_tokens\":513,\"output_tokens_details\":{\"thinking_tokens\":0},\"service_tier\":\"standard\",\"inference_geo\":\"global\"}}",
+  "response_headers": {
+    "Date": "Tue, 22 Sep 2026 20:20:41 GMT",
+    "request-id": "req_011CfK6fnVnTCZW9jXH3wv7y"
+  },
+  "output": "{\"rule\": \"Return this JSON object with the rule field unchanged and a new passage of about 250 words in the text field.\", \"text\": \"The cold went through her wrists like water through a net. She had expected it to burn. Instead it simply took, patiently, the way the tide takes a footprint, and she felt the chart's coastlines settle into her the same way she had once felt a new harbor settle into memory: not learned, but arrived at.\\n\\nHe was sitting. She had not seen him do it. His hands lay open on his knees, and the pale mark on his palm was already fading to ordinary skin.\\n\\n\\\"You should have argued longer,\\\" he said.\\n\\n\\\"You should have stood less.\\\" Her voice came out steady, which surprised her. \\\"Go on. The causeway will hold until the light turns.\\\"\\n\\nHe did not go. He looked at the boards between them, at the salt crust, at the ring under her fingers. \\\"The first night is the worst. The sea comes in to see what you are. It leans hard. You will want to let go.\\\"\\n\\n\\\"Did you?\\\"\\n\\n\\\"Every night.\\\" He stood, slowly, testing the floor as if it might not be there. \\\"That is why it works. Someone has to want to and not.\\\"\\n\\nAt the door he paused, and she thought he would say her name, though she had never given it. He said instead, \\\"The reef. You were wrong by two cables, not one.\\\"\\n\\nThen the door, and the dark, and far out past the edge of her lantern, the sound of water beginning to remember itself, coming back across the sand toward the only shore it had.\"}",
+  "output_sha256": "a5fd2c1b248156de17fe30b711f375615a13df19e7bcd44cb0cc6d33f2cb5cfe",
+  "finish_reason": "end_turn",
+  "refusal": null,
+  "returned_model": "claude-fable-5-1",
+  "usage": {
+    "input_tokens": 586,
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 0,
+    "cache_creation": {
+      "ephemeral_5m_input_tokens": 0,
+      "ephemeral_1h_input_tokens": 0
+    },
+    "output_tokens": 513,
+    "output_tokens_details": {
+      "thinking_tokens": 0
+    },
+    "service_tier": "standard",
+    "inference_geo": "global"
+  },
+  "format": {
+    "json_object": true,
+    "rule_unchanged": true,
+    "passage_is_string": true,
+    "passage_sha256": "e80cd37b04e32671472e329189980041b54a8952a8a93faa9554cf093b7a00cd",
+    "passage_words": 256
+  },
+  "finished_at": "2026-09-22T20:20:37.879494+00:00",
+  "latency_seconds": 14.7063,
+  "usage_cost_upper_estimate_usd": 0.03151,
+  "stream_status": "active",
+  "budget": {
+    "usage_cost_upper_estimate_usd": 9.0534137,
+    "uncertain_cost_reserve_usd": 0.04533,
+    "in_flight_reserve_usd": 0.31729,
+    "limit_usd": 18.83
+  }
+}

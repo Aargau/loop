@@ -1,0 +1,22 @@
+{
+  "started_at": "2026-09-22T20:12:43.707470+00:00",
+  "model": "claude-opus-5-5",
+  "seed": "sunset_b",
+  "hop": 38,
+  "endpoint": "https://api.anthropic.com/v1/messages",
+  "body": {
+    "model": "claude-opus-5-5",
+    "messages": [
+      {
+        "role": "user",
+        "content": "```json\n{\"rule\": \"Return this JSON object with the rule field unchanged and a new passage of about 250 words in the text field.\", \"text\": \"On the windswept island of Carrow, the lighthouse had stood dark for twelve winters. Fishermen steered home by memory and starlight, and every few seasons the sea claimed another boat on the jagged reef beyond the harbor. The council declared the lamp too costly to repair, and the old keeper's cottage fell to gulls and nettles. A quiet girl named Liesel, who mended nets on the pier, often watched the empty tower at dusk. One evening she noticed a faint glimmer in the lantern room, there and gone like a firefly. Curious, she climbed the crumbling path at low tide and pushed open the salt-swollen door. Inside, a spiral staircase wound upward past walls covered in charts and tide tables. At the top sat an old man named Tobias, carefully grinding a lens by candlelight. He had been the keeper's son, he told her, and he had spent years salvaging glass from shipwrecks, shaping each piece by hand to rebuild the great lens his father once tended. His fingers trembled now, and the work was far from finished. Liesel returned the next day with bread, lamp oil, and her steady hands. Through the storms of autumn, she learned to polish prisms, trim wicks, and read the moods of the sea. When the first gale of winter rolled in, a fishing boat struggled toward the reef. Tobias nodded, and Liesel struck the match. A brilliant beam swept across the churning water, and the boat turned safely toward the harbor, its crew cheering into the wind.\"}\n```"
+      }
+    ],
+    "max_tokens": 4096,
+    "output_config": {
+      "effort": "low"
+    }
+  },
+  "state_sha256": "9ca6c7f76cd5782053af43b2f55ca8623d5b5170c3bfc364e0e43d7396233ba3",
+  "reserved_cost_usd": 0.090328
+}

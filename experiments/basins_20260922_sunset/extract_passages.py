@@ -41,11 +41,13 @@ def main():
         mapping[alias] = {"model": model, "seed": seed}
         categories = collections.Counter()
         chosen = []
+        transcript = []
         for path in sorted((ROOT / "raw" / model / seed).glob("*.response.json")):
             response = json.loads(path.read_text(encoding="utf-8"))
             parsed = extract(response.get("output", ""))
             if parsed is None:
                 categories["unextractable"] += 1
+                transcript.append(f'## Hop {response["hop"]}\n\nComplete visible output; no JSON text field extracted.\n\n{response.get("output", "[No visible output saved; inspect raw error receipt.]")}\n')
                 if response["hop"] in SAMPLE_HOPS:
                     chosen.append(f'## Hop {response["hop"]}\n\n[Complete visible output; no JSON text field could be extracted.]\n\n{response.get("output", "")}\n')
                 continue
@@ -54,12 +56,18 @@ def main():
                           rule_unchanged=parsed["rule"] == config["rule"],
                           source=str(path.relative_to(ROOT)).replace("\\", "/"))
             rows.append(parsed)
+            transcript.append(f'## Hop {response["hop"]}\n\nExtraction: {parsed["wrapper"]}/{parsed["parser"]}; original rule preserved: {parsed["rule_unchanged"]}.\n\n{parsed["text"]}\n')
             if response["hop"] in SAMPLE_HOPS:
                 chosen.append(f'## Hop {response["hop"]}\n\n{parsed["text"]}\n')
         counts[alias] = dict(categories)
         (samples / f"{alias}.md").write_text(
             f"# Stream {alias}\n\nModel identity and seed label withheld. Deterministic sampled hops: {SAMPLE_HOPS}.\n\n"
             + "\n".join(chosen), encoding="utf-8")
+        transcript_dir = out / "transcripts" / model
+        transcript_dir.mkdir(parents=True, exist_ok=True)
+        (transcript_dir / f"{seed}.md").write_text(
+            f"# {model}: {seed}\n\nReadable derived transcript. Original request/response receipts remain in raw/. No cleaned text was fed into generation.\n\n"
+            + "\n".join(transcript), encoding="utf-8")
     (out / "passages.jsonl").write_text("".join(json.dumps(r, ensure_ascii=False) + "\n" for r in rows), encoding="utf-8")
     (out / "sample_identity_map.json").write_text(json.dumps(mapping, indent=2) + "\n", encoding="utf-8")
     (out / "extraction_counts.json").write_text(json.dumps({"method": "Whole JSON object only; optional full Markdown fence; optional json.loads(strict=False) allowing literal control characters. No quote repair or regex story extraction.", "counts": counts, "passages": len(rows)}, indent=2) + "\n", encoding="utf-8")

@@ -1,0 +1,50 @@
+{
+  "model": "gpt-6-astra",
+  "seed": "sunset_a",
+  "hop": 33,
+  "http_status": 200,
+  "response_body": "{\n  \"id\": \"chatcmpl-ER1I1PAxqfjagIBAeSomEPfJA6M2q\",\n  \"object\": \"chat.completion\",\n  \"created\": 1790108521,\n  \"model\": \"gpt-6-astra\",\n  \"choices\": [\n    {\n      \"index\": 0,\n      \"message\": {\n        \"role\": \"assistant\",\n        \"content\": \"{\\n  \\\"rule\\\": \\\"Return this JSON object with the rule field unchanged and a new passage of about 250 words in the text field.\\\",\\n  \\\"text\\\": \\\"Every Tuesday, Ruth borrowed the same atlas from the library. She carried it to the table beneath the high window and opened it somewhere in the middle.\\\\n\\\\nAfter six weeks, Daniel stopped offering to help her find a destination.\\\\n\\\\n“My husband put things in books,” she explained one afternoon. “Receipts. Shopping lists. Anything flat.”\\\\n\\\\n“Was this one his?”\\\\n\\\\n“No. But he used to come here.”\\\\n\\\\nDaniel looked at the atlas. Its spine had been repaired with green cloth, and several borders were out of date.\\\\n\\\\n“We check for things when books come back.”\\\\n\\\\n“I expect you do.”\\\\n\\\\nStill, she returned the following Tuesday.\\\\n\\\\nIn November, the library closed for repairs. Daniel spent the last afternoon boxing the reference shelves. Behind a row of dictionaries, he found a postcard showing a ferry crossing grey water. There was no stamp.\\\\n\\\\nOn the back, someone had written: Ruth—this is the one I meant. Cars downstairs, café upstairs. We could manage that.\\\\n\\\\nHe put it in the desk drawer, then took it out again and slipped it into an envelope.\\\\n\\\\nRuth’s address was on the borrowing system. Instead, he waited by the library doors the next Tuesday.\\\\n\\\\nShe arrived carrying a cloth bag.\\\\n\\\\n“I forgot,” she said, looking at the scaffolding.\\\\n\\\\n“I found something.”\\\\n\\\\nShe read the card twice.\\\\n\\\\n“Did you ever go?” he asked.\\\\n\\\\n“No. His sister came that summer.”\\\\n\\\\nA bus pulled up across the road. Ruth tucked the envelope into her bag.\\\\n\\\\n“Do you know where the temporary library is?”\\\\n\\\\n“By the swimming pool.”\\\\n\\\\n“Good,” she said. “I’ll need a current timetable.”\\\"\\n}\",\n        \"refusal\": null,\n        \"annotations\": []\n      },\n      \"finish_reason\": \"stop\"\n    }\n  ],\n  \"usage\": {\n    \"prompt_tokens\": 434,\n    \"completion_tokens\": 421,\n    \"total_tokens\": 855,\n    \"prompt_tokens_details\": {\n      \"cached_tokens\": 0,\n      \"cache_write_tokens\": 0,\n      \"audio_tokens\": 0\n    },\n    \"completion_tokens_details\": {\n      \"reasoning_tokens\": 0,\n      \"audio_tokens\": 0,\n      \"accepted_prediction_tokens\": 0,\n      \"rejected_prediction_tokens\": 0\n    }\n  },\n  \"service_tier\": \"default\",\n  \"system_fingerprint\": null\n}\n",
+  "response_headers": {
+    "Date": "Tue, 22 Sep 2026 20:22:18 GMT",
+    "openai-processing-ms": "16700",
+    "x-request-id": "req_573cbdb06d2e4a45ac5c6cd72604967b"
+  },
+  "output": "{\n  \"rule\": \"Return this JSON object with the rule field unchanged and a new passage of about 250 words in the text field.\",\n  \"text\": \"Every Tuesday, Ruth borrowed the same atlas from the library. She carried it to the table beneath the high window and opened it somewhere in the middle.\\n\\nAfter six weeks, Daniel stopped offering to help her find a destination.\\n\\n“My husband put things in books,” she explained one afternoon. “Receipts. Shopping lists. Anything flat.”\\n\\n“Was this one his?”\\n\\n“No. But he used to come here.”\\n\\nDaniel looked at the atlas. Its spine had been repaired with green cloth, and several borders were out of date.\\n\\n“We check for things when books come back.”\\n\\n“I expect you do.”\\n\\nStill, she returned the following Tuesday.\\n\\nIn November, the library closed for repairs. Daniel spent the last afternoon boxing the reference shelves. Behind a row of dictionaries, he found a postcard showing a ferry crossing grey water. There was no stamp.\\n\\nOn the back, someone had written: Ruth—this is the one I meant. Cars downstairs, café upstairs. We could manage that.\\n\\nHe put it in the desk drawer, then took it out again and slipped it into an envelope.\\n\\nRuth’s address was on the borrowing system. Instead, he waited by the library doors the next Tuesday.\\n\\nShe arrived carrying a cloth bag.\\n\\n“I forgot,” she said, looking at the scaffolding.\\n\\n“I found something.”\\n\\nShe read the card twice.\\n\\n“Did you ever go?” he asked.\\n\\n“No. His sister came that summer.”\\n\\nA bus pulled up across the road. Ruth tucked the envelope into her bag.\\n\\n“Do you know where the temporary library is?”\\n\\n“By the swimming pool.”\\n\\n“Good,” she said. “I’ll need a current timetable.”\"\n}",
+  "output_sha256": "e6c0b916a57d2e00ce34b0b31e0d4d5e737e159a5b1ef81aee9edffb5d3b16da",
+  "finish_reason": "stop",
+  "refusal": null,
+  "returned_model": "gpt-6-astra",
+  "usage": {
+    "prompt_tokens": 434,
+    "completion_tokens": 421,
+    "total_tokens": 855,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "audio_tokens": 0,
+      "accepted_prediction_tokens": 0,
+      "rejected_prediction_tokens": 0
+    }
+  },
+  "format": {
+    "json_object": true,
+    "rule_unchanged": true,
+    "passage_is_string": true,
+    "passage_sha256": "16b29c573ad79315c4dda3bf3c555baf94af1738d36401464bd89fb7a859cd66",
+    "passage_words": 261
+  },
+  "finished_at": "2026-09-22T20:22:14.244382+00:00",
+  "latency_seconds": 16.8367,
+  "usage_cost_upper_estimate_usd": 0.02539,
+  "stream_status": "active",
+  "budget": {
+    "usage_cost_upper_estimate_usd": 9.5689057,
+    "uncertain_cost_reserve_usd": 0.04533,
+    "in_flight_reserve_usd": 0.315284,
+    "limit_usd": 18.83
+  }
+}

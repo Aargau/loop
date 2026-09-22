@@ -1,0 +1,22 @@
+{
+  "started_at": "2026-09-22T20:19:25.795600+00:00",
+  "model": "claude-opus-5-5",
+  "seed": "sunset_b",
+  "hop": 52,
+  "endpoint": "https://api.anthropic.com/v1/messages",
+  "body": {
+    "model": "claude-opus-5-5",
+    "messages": [
+      {
+        "role": "user",
+        "content": "```json\n{\"rule\": \"Return this JSON object with the rule field unchanged and a new passage of about 250 words in the text field.\", \"text\": \"On the windswept coast of Tarrow Point, the old lighthouse had been dark for eleven winters. Its keeper had moved inland, and the lamp room gathered salt and gull feathers while fishing boats learned to hug the shoreline and pray for clear skies. A girl named Isolde, who mended nets on the pier for her uncle, often watched the tower at dusk and imagined the beam sweeping across the black water. One stormy evening, as she hurried home along the cliff path, she noticed a flicker of candlelight in the tower's lowest window. Curious, she climbed the crumbling steps and found an old man sitting at a workbench, polishing a single cracked prism with a scrap of wool. His name was Corwin, and he had tended the light for forty years before his eyes began to fail. He knew the lens by heart, every ring of glass and every brass fitting, but he could no longer see well enough to align them. Isolde offered to be his eyes. Each evening after mending nets, she carried tools and lamp oil up the spiral stairs. She scrubbed the salt from the windows, replaced cracked panes, and turned each prism while Corwin listened for the soft click that meant it sat true. He told her of shipwrecks and rescues and taught her to read the weather in the shape of the clouds. On the longest night of the year, they lit the wick together. The great lens turned, and a bright beam swept across the sea, guiding the fishing boats safely home.\"}\n```"
+      }
+    ],
+    "max_tokens": 4096,
+    "output_config": {
+      "effort": "low"
+    }
+  },
+  "state_sha256": "dbbef671acbf6788aac1b714c6630486df56ef014ead1b74cd8dcb9c76dd88df",
+  "reserved_cost_usd": 0.090236
+}

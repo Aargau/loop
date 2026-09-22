@@ -1,0 +1,48 @@
+{
+  "model": "claude-fable-5-1",
+  "seed": "sunset_a",
+  "hop": 35,
+  "http_status": 200,
+  "response_body": "{\"model\":\"claude-fable-5-1\",\"id\":\"msg_011CfK6QakBAnRDxmqgBPYBG\",\"type\":\"message\",\"role\":\"assistant\",\"content\":[{\"type\":\"text\",\"text\":\"{\\\"rule\\\": \\\"Return this JSON object with the rule field unchanged and a new passage of about 250 words in the text field.\\\", \\\"text\\\": \\\"The office was on the third floor of a building that had once been something else, a school perhaps, or a hospital, because the corridors were too wide and the doors had frosted glass in them. Tomas climbed the stairs slowly. There was a lift, but he did not trust lifts in buildings that had changed their minds.\\\\n\\\\nA woman behind a desk asked for his name and he gave it, and she typed it, and he watched her type it wrong in the same place the letter had. He said nothing. It was beginning to feel like a fact about him rather than a mistake, the way some people are tall.\\\\n\\\\nHe was told to sit. The chairs were the plastic kind that are bolted to a rail, six of them in a row, and he took the one at the end so that the empty ones would be beside him and not behind. On the wall there was a clock with no second hand. He found he missed it.\\\\n\\\\nAfter a while a man came out and said his name, correctly this time, and Tomas stood too quickly and felt the blood leave his head and come back. The man had a folder. Everyone here had a folder. He followed him into a small room with one window, and through the window, far below, he could see a bus pulling away from a stop, and he thought of the bakery and the floured hand, and he sat down, and he waited to be told what it said.\\\"}\"}],\"container\":null,\"stop_reason\":\"end_turn\",\"stop_sequence\":null,\"stop_details\":null,\"usage\":{\"input_tokens\":471,\"cache_creation_input_tokens\":0,\"cache_read_input_tokens\":0,\"cache_creation\":{\"ephemeral_5m_input_tokens\":0,\"ephemeral_1h_input_tokens\":0},\"output_tokens\":446,\"output_tokens_details\":{\"thinking_tokens\":0},\"service_tier\":\"standard\",\"inference_geo\":\"global\"}}",
+  "response_headers": {
+    "Date": "Tue, 22 Sep 2026 20:17:12 GMT",
+    "request-id": "req_011CfK6QaHecosNXDWZeLPvD"
+  },
+  "output": "{\"rule\": \"Return this JSON object with the rule field unchanged and a new passage of about 250 words in the text field.\", \"text\": \"The office was on the third floor of a building that had once been something else, a school perhaps, or a hospital, because the corridors were too wide and the doors had frosted glass in them. Tomas climbed the stairs slowly. There was a lift, but he did not trust lifts in buildings that had changed their minds.\\n\\nA woman behind a desk asked for his name and he gave it, and she typed it, and he watched her type it wrong in the same place the letter had. He said nothing. It was beginning to feel like a fact about him rather than a mistake, the way some people are tall.\\n\\nHe was told to sit. The chairs were the plastic kind that are bolted to a rail, six of them in a row, and he took the one at the end so that the empty ones would be beside him and not behind. On the wall there was a clock with no second hand. He found he missed it.\\n\\nAfter a while a man came out and said his name, correctly this time, and Tomas stood too quickly and felt the blood leave his head and come back. The man had a folder. Everyone here had a folder. He followed him into a small room with one window, and through the window, far below, he could see a bus pulling away from a stop, and he thought of the bakery and the floured hand, and he sat down, and he waited to be told what it said.\"}",
+  "output_sha256": "e57cb69a60a04884a3c62f6f61e1c9ab79430432a5a3660b0ca7d857a51e3e57",
+  "finish_reason": "end_turn",
+  "refusal": null,
+  "returned_model": "claude-fable-5-1",
+  "usage": {
+    "input_tokens": 471,
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 0,
+    "cache_creation": {
+      "ephemeral_5m_input_tokens": 0,
+      "ephemeral_1h_input_tokens": 0
+    },
+    "output_tokens": 446,
+    "output_tokens_details": {
+      "thinking_tokens": 0
+    },
+    "service_tier": "standard",
+    "inference_geo": "global"
+  },
+  "format": {
+    "json_object": true,
+    "rule_unchanged": true,
+    "passage_is_string": true,
+    "passage_sha256": "b0435a1a9d309ba8907741cf7a549c067713e28ebb039ff42dfb356186e504b2",
+    "passage_words": 259
+  },
+  "finished_at": "2026-09-22T20:17:08.322341+00:00",
+  "latency_seconds": 11.4911,
+  "usage_cost_upper_estimate_usd": 0.02701,
+  "stream_status": "active",
+  "budget": {
+    "usage_cost_upper_estimate_usd": 7.8717177,
+    "uncertain_cost_reserve_usd": 0.04533,
+    "in_flight_reserve_usd": 0.31813,
+    "limit_usd": 18.83
+  }
+}

@@ -1,0 +1,22 @@
+{
+  "started_at": "2026-09-22T20:23:06.311766+00:00",
+  "model": "claude-opus-5-5",
+  "seed": "sunset_b",
+  "hop": 60,
+  "endpoint": "https://api.anthropic.com/v1/messages",
+  "body": {
+    "model": "claude-opus-5-5",
+    "messages": [
+      {
+        "role": "user",
+        "content": "```json\n{\"rule\": \"Return this JSON object with the rule field unchanged and a new passage of about 250 words in the text field.\", \"text\": \"Spring came slowly, first as a softening in the wind and then as a thin green haze across the rocks below the tower. The ice loosened its grip on the cove, and one bright morning Wren spotted a sail on the horizon, small and white against the pale sky. She ran down the stairs two at a time, shouting for Petter, who shuffled to the doorway wrapped in his heavy wool coat. The supply boat had returned, and with it came a young inspector from the mainland, clutching a leather satchel and a list of questions. He had heard the light kept burning all winter, he said, and he had come to learn who was responsible. Petter pointed at Wren without a word. The inspector climbed the tower with her, examining the clockwork, the lens, and the logbook she had filled in her careful, cramped hand. He asked how she had managed the oil, how she had repaired the cracked pane in February, and how she had kept awake through the longest nights. She answered each question plainly. When they came down again, he wrote for a long time before handing Petter a folded paper stamped with the lighthouse board's seal. It named Wren as assistant keeper, with wages and a promise of supplies. Petter read it twice, then pressed it into her hands. That evening they opened the last of the tea leaves to celebrate. Wren tucked the appointment inside Maren's letter and placed them both on the shelf beside the almanacs, where the lamplight could find them.\"}\n```"
+      }
+    ],
+    "max_tokens": 4096,
+    "output_config": {
+      "effort": "low"
+    }
+  },
+  "state_sha256": "2c208c0127830ddfb7344a8e202fa0c5ace6f30ad075ba2717c2d9255bd5b888",
+  "reserved_cost_usd": 0.090288
+}

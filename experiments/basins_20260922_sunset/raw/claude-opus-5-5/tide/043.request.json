@@ -1,0 +1,22 @@
+{
+  "started_at": "2026-09-22T20:15:23.967182+00:00",
+  "model": "claude-opus-5-5",
+  "seed": "tide",
+  "hop": 43,
+  "endpoint": "https://api.anthropic.com/v1/messages",
+  "body": {
+    "model": "claude-opus-5-5",
+    "messages": [
+      {
+        "role": "user",
+        "content": "```json\n{\"rule\": \"Return this JSON object with the rule field unchanged and a new passage of about 250 words in the text field.\", \"text\": \"The grandmother died in the second week of January, early on a morning when the frost had not yet lifted. The girl learned of it from the quiet in the house, which was a different quiet from sleep. Her mother sat at the kitchen table with both hands around a cup she did not drink from. Her brother went out to the shed and came back without any wood. The funeral was small. The vicar spoke of rest, and the girl thought of the seed catalogue lying face down on the bedside table where she had left it. Afterwards the house filled with casseroles and with people who touched her hair. February was long and wet. The gate rusted a little, and by March it had begun to creak again, faintly, and she was glad. In April she dug the bed beside the hawthorn while her brother turned the compost. The soil was dark and cold under her fingernails. She pushed the beans in one by one, two inches deep, the way the packet said: Painted Lady along the fence, Scarlet Emperor by the path, Kelvedon Wonder in a short row near the gate where anyone coming in would see them. Her brother built the canes into tall wigwams and tied them with green string. Neither of them spoke much. When they had finished, they stood together with dirt on their knees and watched the light go gold across the lawn. In the rowan a blackbird was singing. The girl did not look up to check. She already knew.\"}\n```"
+      }
+    ],
+    "max_tokens": 4096,
+    "output_config": {
+      "effort": "low"
+    }
+  },
+  "state_sha256": "067978173ab64ce002211100fd1290a82cc6025c51b5c210654f69ed6c4209e5",
+  "reserved_cost_usd": 0.090044
+}

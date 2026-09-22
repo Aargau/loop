@@ -1,0 +1,22 @@
+{
+  "started_at": "2026-09-22T20:18:36.242750+00:00",
+  "model": "claude-opus-5-5",
+  "seed": "sunset_b",
+  "hop": 50,
+  "endpoint": "https://api.anthropic.com/v1/messages",
+  "body": {
+    "model": "claude-opus-5-5",
+    "messages": [
+      {
+        "role": "user",
+        "content": "```json\n{\"rule\": \"Return this JSON object with the rule field unchanged and a new passage of about 250 words in the text field.\", \"text\": \"On the windswept island of Karrow, the old lighthouse had stood dark since the winter its keeper moved to the mainland. Fishing boats returning after sunset had to feel their way past the jagged reef by memory alone, and more than one hull had been torn open on the rocks. The harbor grew quiet, and families began to wonder whether they should leave the island too. A girl named Isla, who gathered mussels along the tide pools, often climbed the cliff path to gaze at the empty lantern room. One stormy evening she noticed a flicker of candlelight behind the salt-crusted glass. She climbed the spiral stairs and found a thin old man polishing a cracked brass lens with a scrap of wool. His name was Tobias, and he had built the great lamp as a young apprentice. He knew every screw and prism by heart, but his eyes had clouded, and he could no longer see well enough to trim the wick or fit the delicate panes. Isla offered to be his eyes. Every evening, after the tide had turned, she hurried up the cliff to scrub soot from the glass, mend the frayed counterweight rope, and haul up oil in heavy tin cans. Tobias taught her the names of the stars and how the sea changed color before a gale. On the longest night of winter, they struck a match together. The flame caught, the lens began to turn, and a bright beam swept across the waves, guiding every boat of Karrow safely home.\"}\n```"
+      }
+    ],
+    "max_tokens": 4096,
+    "output_config": {
+      "effort": "low"
+    }
+  },
+  "state_sha256": "4a5a3a15e3bee8e60d13807c531fb4c27eef030be7ab759b39f840ef4eb84157",
+  "reserved_cost_usd": 0.09008
+}

@@ -1,0 +1,22 @@
+{
+  "started_at": "2026-09-22T20:13:15.728611+00:00",
+  "model": "claude-opus-5-5",
+  "seed": "tide",
+  "hop": 39,
+  "endpoint": "https://api.anthropic.com/v1/messages",
+  "body": {
+    "model": "claude-opus-5-5",
+    "messages": [
+      {
+        "role": "user",
+        "content": "```json\n{\"rule\": \"Return this JSON object with the rule field unchanged and a new passage of about 250 words in the text field.\", \"text\": \"By April the thrush had a mate, and the two of them worked at the rowan from first light, carrying moss and grass and scraps of wool snagged from the fence. The girl watched them from the kitchen table while she ate her porridge, spoon halfway to her mouth, until her brother told her she would be late for school. Her grandmother had moved back to the bench by then, though only in the afternoons, when the sun reached that corner of the garden and warmed the stones. She brought a cushion and a flask of tea, and she did not ask the girl to describe the tree anymore. She could see it for herself. The old nest still sat on the windowsill. One evening the girl asked whether she ought to put it back, whether the birds might want it. Her grandmother shook her head. They never use the same one twice, she said. They'd rather start again. The girl thought about this for a long time. It seemed like a great deal of trouble when there was a perfectly good nest already made. In May the eggs hatched, and the garden filled with a thin, insistent crying that went on from dawn until dusk. The parent birds grew ragged and quick, darting in and out of the branches. Her brother said they looked exhausted. Her grandmother laughed and said that was what it was like. At the end of the month the fledglings left, clumsy and loud, scattering into the hedges. The new nest sat empty in the rowan, and the girl did not touch it. She left it where it was.\"}\n```"
+      }
+    ],
+    "max_tokens": 4096,
+    "output_config": {
+      "effort": "low"
+    }
+  },
+  "state_sha256": "7cb6edb6c9b81aaa33f6d1a23bc793a011cafd48d2670654744eb7ca4ef78e6a",
+  "reserved_cost_usd": 0.090332
+}

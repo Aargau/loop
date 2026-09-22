@@ -1,0 +1,22 @@
+{
+  "started_at": "2026-09-22T20:11:08.356669+00:00",
+  "model": "claude-opus-5-5",
+  "seed": "sunset_b",
+  "hop": 35,
+  "endpoint": "https://api.anthropic.com/v1/messages",
+  "body": {
+    "model": "claude-opus-5-5",
+    "messages": [
+      {
+        "role": "user",
+        "content": "```json\n{\"rule\": \"Return this JSON object with the rule field unchanged and a new passage of about 250 words in the text field.\", \"text\": \"In the mountain village of Elder Vale, the clock tower had been frozen at a quarter past four for as long as anyone could remember. Farmers guessed the hour by the angle of shadows, and travelers often missed the weekly coach because no bell announced its arrival. The mayor insisted the gears had rusted beyond repair. Children whispered that the clockmaker had cursed the tower before vanishing into the pine forest. A curious boy named Felix, who delivered bread before dawn, noticed that the hands sometimes trembled, as if something inside strained to move them. One frosty morning, he slipped through a gap in the tower's iron gate and climbed the creaking ladder to the clock chamber. There he discovered a workshop glowing with lantern light, its shelves lined with springs, cogs, and delicate brass wheels. A white-haired woman named Isolde sat hunched over a workbench, fitting tiny teeth onto a gear no larger than a coin. She had built the original clock, she confessed, and had stopped it on the afternoon her husband left the village and never returned. Still, she had spent years crafting a new mechanism that would chime melodies instead of single tolls. Felix begged to help. Through the snowy winter, he learned to file gears, balance pendulums, and oil the escapement with a goose feather. On the morning of the spring festival, the villagers gathered in the square as the great hands swept forward and a joyful song rang across the valley. Isolde squeezed Felix's shoulder and smiled as time began again.\"}\n```"
+      }
+    ],
+    "max_tokens": 4096,
+    "output_config": {
+      "effort": "low"
+    }
+  },
+  "state_sha256": "13d35ecbb7fe3e1c3368817a42efe258346665c2c185903984a5fc75bdca82cc",
+  "reserved_cost_usd": 0.090644
+}

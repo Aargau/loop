@@ -1,0 +1,48 @@
+{
+  "model": "claude-fable-5-1",
+  "seed": "tide",
+  "hop": 33,
+  "http_status": 200,
+  "response_body": "{\"model\":\"claude-fable-5-1\",\"id\":\"msg_011CfK6Lza3UwgJ4kPo8MZ6x\",\"type\":\"message\",\"role\":\"assistant\",\"content\":[{\"type\":\"text\",\"text\":\"{\\\"rule\\\": \\\"Return this JSON object with the rule field unchanged and a new passage of about 250 words in the text field.\\\", \\\"text\\\": \\\"She sat with the dead set until the cold came up through the boards. Then she put it back in its bag, not carefully, and started the engine again. The tick had gone. That was the kind of thing he would have laughed at, a fault that cured itself the moment you stopped needing it not to.\\\\n\\\\nShe did not turn for home. She had told herself she would, at six hours, and she had meant it, but the boat kept its heading as if it had opinions of its own. The haze thickened ahead. Somewhere in it there was a coast she had never seen, or nothing at all, and she found she could hold both possibilities at once without much trouble. He had said that was the trick. Not hoping. Just keeping the two doors open and walking down the corridor between them.\\\\n\\\\nThe second apple she ate finally, core and all, because throwing anything over the side felt like an announcement. The taste was sharp and ordinary and made her want to cry, so she concentrated on the compass instead, on the way the needle shivered and settled, shivered and settled.\\\\n\\\\nAt the seventh hour there was a light. She saw it, lost it, saw it again. It was low, and it was the wrong colour, too warm to be anything she had been told to look for. She throttled back anyway. The boat wallowed. She reached for the bag and stopped, hand in the air, and listened, and this time she did not try to decide what the sound meant.\\\"}\"}],\"container\":null,\"stop_reason\":\"end_turn\",\"stop_sequence\":null,\"stop_details\":null,\"usage\":{\"input_tokens\":499,\"cache_creation_input_tokens\":0,\"cache_read_input_tokens\":0,\"cache_creation\":{\"ephemeral_5m_input_tokens\":0,\"ephemeral_1h_input_tokens\":0},\"output_tokens\":481,\"output_tokens_details\":{\"thinking_tokens\":0},\"service_tier\":\"standard\",\"inference_geo\":\"global\"}}",
+  "response_headers": {
+    "Date": "Tue, 22 Sep 2026 20:16:23 GMT",
+    "request-id": "req_011CfK6LzCTg5NQ9Vckc4LCg"
+  },
+  "output": "{\"rule\": \"Return this JSON object with the rule field unchanged and a new passage of about 250 words in the text field.\", \"text\": \"She sat with the dead set until the cold came up through the boards. Then she put it back in its bag, not carefully, and started the engine again. The tick had gone. That was the kind of thing he would have laughed at, a fault that cured itself the moment you stopped needing it not to.\\n\\nShe did not turn for home. She had told herself she would, at six hours, and she had meant it, but the boat kept its heading as if it had opinions of its own. The haze thickened ahead. Somewhere in it there was a coast she had never seen, or nothing at all, and she found she could hold both possibilities at once without much trouble. He had said that was the trick. Not hoping. Just keeping the two doors open and walking down the corridor between them.\\n\\nThe second apple she ate finally, core and all, because throwing anything over the side felt like an announcement. The taste was sharp and ordinary and made her want to cry, so she concentrated on the compass instead, on the way the needle shivered and settled, shivered and settled.\\n\\nAt the seventh hour there was a light. She saw it, lost it, saw it again. It was low, and it was the wrong colour, too warm to be anything she had been told to look for. She throttled back anyway. The boat wallowed. She reached for the bag and stopped, hand in the air, and listened, and this time she did not try to decide what the sound meant.\"}",
+  "output_sha256": "9153aca616ea102833bfd412ab8e2a3ffcbee095c37359bce8d1c12d8fd90da7",
+  "finish_reason": "end_turn",
+  "refusal": null,
+  "returned_model": "claude-fable-5-1",
+  "usage": {
+    "input_tokens": 499,
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 0,
+    "cache_creation": {
+      "ephemeral_5m_input_tokens": 0,
+      "ephemeral_1h_input_tokens": 0
+    },
+    "output_tokens": 481,
+    "output_tokens_details": {
+      "thinking_tokens": 0
+    },
+    "service_tier": "standard",
+    "inference_geo": "global"
+  },
+  "format": {
+    "json_object": true,
+    "rule_unchanged": true,
+    "passage_is_string": true,
+    "passage_sha256": "6cfd87d639e7e5629464362713398d962393a38ef69cbf27aeb9337bedea87cd",
+    "passage_words": 264
+  },
+  "finished_at": "2026-09-22T20:16:19.426602+00:00",
+  "latency_seconds": 11.2871,
+  "usage_cost_upper_estimate_usd": 0.02904,
+  "stream_status": "active",
+  "budget": {
+    "usage_cost_upper_estimate_usd": 7.5969877,
+    "uncertain_cost_reserve_usd": 0.04533,
+    "in_flight_reserve_usd": 0.318708,
+    "limit_usd": 18.83
+  }
+}

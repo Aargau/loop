@@ -1,0 +1,48 @@
+{
+  "model": "claude-fable-5-1",
+  "seed": "tide",
+  "hop": 36,
+  "http_status": 200,
+  "response_body": "{\"model\":\"claude-fable-5-1\",\"id\":\"msg_011CfK6UhBF5GJJiornNLVum\",\"type\":\"message\",\"role\":\"assistant\",\"content\":[{\"type\":\"text\",\"text\":\"{\\\"rule\\\": \\\"Return this JSON object with the rule field unchanged and a new passage of about 250 words in the text field.\\\", \\\"text\\\": \\\"The stone did not end where it should have. She counted forty paces, then sixty, and the water on either side stayed the same dull green, neither deepening nor shallowing, as if the causeway had been laid across a floor rather than a sea. Behind her the light on its post had shrunk to a point. She did not look back a second time.\\\\n\\\\nThe sound had resolved itself into something like breathing, or like the working of a bellows in a forge she could not see. It came at intervals she found herself matching with her steps. When she tried to break the rhythm, walking faster, then slower, the sound adjusted, and she stopped trying.\\\\n\\\\nThe air changed first. It grew warmer, then dry, so dry her lips cracked and the salt on her hands began to itch. Then the stone rose beneath her feet, three shallow steps, and she was standing on a platform wide enough to hold a house. Nothing stood on it. Only a ring of the same iron as the mooring, set into the center, and beside it a chair with its back to her.\\\\n\\\\nSomeone was sitting in it.\\\\n\\\\nShe knew the shape of the shoulders before she knew anything else. The careful stillness. The hands, folded, resting on a chart she recognized by its torn corner. He had told her she would know it. He had not told her he would already be here, waiting, and that the sea between them had never been the hard part.\\\"}\"}],\"container\":null,\"stop_reason\":\"end_turn\",\"stop_sequence\":null,\"stop_details\":null,\"usage\":{\"input_tokens\":462,\"cache_creation_input_tokens\":0,\"cache_read_input_tokens\":0,\"cache_creation\":{\"ephemeral_5m_input_tokens\":0,\"ephemeral_1h_input_tokens\":0},\"output_tokens\":475,\"output_tokens_details\":{\"thinking_tokens\":0},\"service_tier\":\"standard\",\"inference_geo\":\"global\"}}",
+  "response_headers": {
+    "Date": "Tue, 22 Sep 2026 20:18:08 GMT",
+    "request-id": "req_011CfK6UgjxENhsPYkzyZfKW"
+  },
+  "output": "{\"rule\": \"Return this JSON object with the rule field unchanged and a new passage of about 250 words in the text field.\", \"text\": \"The stone did not end where it should have. She counted forty paces, then sixty, and the water on either side stayed the same dull green, neither deepening nor shallowing, as if the causeway had been laid across a floor rather than a sea. Behind her the light on its post had shrunk to a point. She did not look back a second time.\\n\\nThe sound had resolved itself into something like breathing, or like the working of a bellows in a forge she could not see. It came at intervals she found herself matching with her steps. When she tried to break the rhythm, walking faster, then slower, the sound adjusted, and she stopped trying.\\n\\nThe air changed first. It grew warmer, then dry, so dry her lips cracked and the salt on her hands began to itch. Then the stone rose beneath her feet, three shallow steps, and she was standing on a platform wide enough to hold a house. Nothing stood on it. Only a ring of the same iron as the mooring, set into the center, and beside it a chair with its back to her.\\n\\nSomeone was sitting in it.\\n\\nShe knew the shape of the shoulders before she knew anything else. The careful stillness. The hands, folded, resting on a chart she recognized by its torn corner. He had told her she would know it. He had not told her he would already be here, waiting, and that the sea between them had never been the hard part.\"}",
+  "output_sha256": "b8ed27a71c89e81ef058c725c676fdce1cdc98f9f6fed8ef0584c36bf3127015",
+  "finish_reason": "end_turn",
+  "refusal": null,
+  "returned_model": "claude-fable-5-1",
+  "usage": {
+    "input_tokens": 462,
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 0,
+    "cache_creation": {
+      "ephemeral_5m_input_tokens": 0,
+      "ephemeral_1h_input_tokens": 0
+    },
+    "output_tokens": 475,
+    "output_tokens_details": {
+      "thinking_tokens": 0
+    },
+    "service_tier": "standard",
+    "inference_geo": "global"
+  },
+  "format": {
+    "json_object": true,
+    "rule_unchanged": true,
+    "passage_is_string": true,
+    "passage_sha256": "788e0ed15a3c3cdb0a6db238af5dee12b02f9baa3c62528c62614dbab548ba57",
+    "passage_words": 254
+  },
+  "finished_at": "2026-09-22T20:18:04.879858+00:00",
+  "latency_seconds": 12.267,
+  "usage_cost_upper_estimate_usd": 0.02837,
+  "stream_status": "active",
+  "budget": {
+    "usage_cost_upper_estimate_usd": 8.2024337,
+    "uncertain_cost_reserve_usd": 0.04533,
+    "in_flight_reserve_usd": 0.317698,
+    "limit_usd": 18.83
+  }
+}

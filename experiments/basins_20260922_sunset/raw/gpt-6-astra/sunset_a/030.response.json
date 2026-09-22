@@ -1,0 +1,50 @@
+{
+  "model": "gpt-6-astra",
+  "seed": "sunset_a",
+  "hop": 30,
+  "http_status": 200,
+  "response_body": "{\n  \"id\": \"chatcmpl-ER1FL9nXBpWS8Up04bOpg9jRc03jG\",\n  \"object\": \"chat.completion\",\n  \"created\": 1790108355,\n  \"model\": \"gpt-6-astra\",\n  \"choices\": [\n    {\n      \"index\": 0,\n      \"message\": {\n        \"role\": \"assistant\",\n        \"content\": \"{\\n  \\\"rule\\\": \\\"Return this JSON object with the rule field unchanged and a new passage of about 250 words in the text field.\\\",\\n  \\\"text\\\": \\\"The station clock had stopped at twenty past four. Each morning, Ada unlocked the ticket office and checked it against her watch.\\\\n\\\\n“You could take the battery out,” said Neil, who swept the platform.\\\\n\\\\n“Then it would be broken on purpose.”\\\\n\\\\nHe swept beneath the bench.\\\\n\\\\nIn March, a boy began arriving on the seven-forty bus. He wore a school blazer and carried a violin case with one silver catch and one brass one. He sat under the clock until the eight-ten train came.\\\\n\\\\nHe never boarded it.\\\\n\\\\nAfter a week, Ada opened the office window.\\\\n\\\\n“Waiting for someone?”\\\\n\\\\n“My lesson’s at nine.”\\\\n\\\\n“There’s a café up the road.”\\\\n\\\\n“I know.”\\\\n\\\\nShe shut the window halfway.\\\\n\\\\nOn wet mornings, he stood beneath the narrow awning. Once, she heard him undo the catches, then close them again.\\\\n\\\\nIn April, Neil found a folding music stand beside the bins.\\\\n\\\\n“Anything for lost property?” he asked.\\\\n\\\\nAda straightened one of its legs.\\\\n\\\\n“Put it in the waiting room.”\\\\n\\\\nThe boy noticed it on Thursday.\\\\n\\\\n“Is anyone using that?”\\\\n\\\\n“Not currently.”\\\\n\\\\nHe practised with the door closed. Through the ticket-office wall, Ada heard the same few notes repeated until the eight-ten arrived.\\\\n\\\\nBy June, he was playing longer pieces.\\\\n\\\\nA man came to replace the station clock. He asked Ada whether the old one should go in the skip.\\\\n\\\\n“Leave it here.”\\\\n\\\\nThat afternoon, she put it in the waiting room, above the music stand.\\\\n\\\\nThe boy looked up at it the next morning.\\\\n\\\\n“Still twenty past four.”\\\\n\\\\n“Yes,” Ada said. “The train’s running six minutes late.”\\\"\\n}\",\n        \"refusal\": null,\n        \"annotations\": []\n      },\n      \"finish_reason\": \"stop\"\n    }\n  ],\n  \"usage\": {\n    \"prompt_tokens\": 436,\n    \"completion_tokens\": 437,\n    \"total_tokens\": 873,\n    \"prompt_tokens_details\": {\n      \"cached_tokens\": 0,\n      \"cache_write_tokens\": 0,\n      \"audio_tokens\": 0\n    },\n    \"completion_tokens_details\": {\n      \"reasoning_tokens\": 0,\n      \"audio_tokens\": 0,\n      \"accepted_prediction_tokens\": 0,\n      \"rejected_prediction_tokens\": 0\n    }\n  },\n  \"service_tier\": \"default\",\n  \"system_fingerprint\": null\n}\n",
+  "response_headers": {
+    "Date": "Tue, 22 Sep 2026 20:19:37 GMT",
+    "openai-processing-ms": "22096",
+    "x-request-id": "req_e0ab18821f1b476eb10cb69f62942899"
+  },
+  "output": "{\n  \"rule\": \"Return this JSON object with the rule field unchanged and a new passage of about 250 words in the text field.\",\n  \"text\": \"The station clock had stopped at twenty past four. Each morning, Ada unlocked the ticket office and checked it against her watch.\\n\\n“You could take the battery out,” said Neil, who swept the platform.\\n\\n“Then it would be broken on purpose.”\\n\\nHe swept beneath the bench.\\n\\nIn March, a boy began arriving on the seven-forty bus. He wore a school blazer and carried a violin case with one silver catch and one brass one. He sat under the clock until the eight-ten train came.\\n\\nHe never boarded it.\\n\\nAfter a week, Ada opened the office window.\\n\\n“Waiting for someone?”\\n\\n“My lesson’s at nine.”\\n\\n“There’s a café up the road.”\\n\\n“I know.”\\n\\nShe shut the window halfway.\\n\\nOn wet mornings, he stood beneath the narrow awning. Once, she heard him undo the catches, then close them again.\\n\\nIn April, Neil found a folding music stand beside the bins.\\n\\n“Anything for lost property?” he asked.\\n\\nAda straightened one of its legs.\\n\\n“Put it in the waiting room.”\\n\\nThe boy noticed it on Thursday.\\n\\n“Is anyone using that?”\\n\\n“Not currently.”\\n\\nHe practised with the door closed. Through the ticket-office wall, Ada heard the same few notes repeated until the eight-ten arrived.\\n\\nBy June, he was playing longer pieces.\\n\\nA man came to replace the station clock. He asked Ada whether the old one should go in the skip.\\n\\n“Leave it here.”\\n\\nThat afternoon, she put it in the waiting room, above the music stand.\\n\\nThe boy looked up at it the next morning.\\n\\n“Still twenty past four.”\\n\\n“Yes,” Ada said. “The train’s running six minutes late.”\"\n}",
+  "output_sha256": "4a79add6ebbdb820fee433a1af4f001061464236fe6a5bf734f18bd36094d9d7",
+  "finish_reason": "stop",
+  "refusal": null,
+  "returned_model": "gpt-6-astra",
+  "usage": {
+    "prompt_tokens": 436,
+    "completion_tokens": 437,
+    "total_tokens": 873,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "audio_tokens": 0,
+      "accepted_prediction_tokens": 0,
+      "rejected_prediction_tokens": 0
+    }
+  },
+  "format": {
+    "json_object": true,
+    "rule_unchanged": true,
+    "passage_is_string": true,
+    "passage_sha256": "29431067580811a928da9925984ef719392ac0f7009e0f1e72fd188e01548609",
+    "passage_words": 263
+  },
+  "finished_at": "2026-09-22T20:19:33.542293+00:00",
+  "latency_seconds": 22.2019,
+  "usage_cost_upper_estimate_usd": 0.02621,
+  "stream_status": "active",
+  "budget": {
+    "usage_cost_upper_estimate_usd": 8.7143617,
+    "uncertain_cost_reserve_usd": 0.04533,
+    "in_flight_reserve_usd": 0.315416,
+    "limit_usd": 18.83
+  }
+}

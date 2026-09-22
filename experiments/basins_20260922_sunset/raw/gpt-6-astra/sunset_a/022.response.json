@@ -1,0 +1,50 @@
+{
+  "model": "gpt-6-astra",
+  "seed": "sunset_a",
+  "hop": 22,
+  "http_status": 200,
+  "response_body": "{\n  \"id\": \"chatcmpl-ER18sxqOOj7bhZ99DHYcOhDu9tpRn\",\n  \"object\": \"chat.completion\",\n  \"created\": 1790107954,\n  \"model\": \"gpt-6-astra\",\n  \"choices\": [\n    {\n      \"index\": 0,\n      \"message\": {\n        \"role\": \"assistant\",\n        \"content\": \"{\\n  \\\"rule\\\": \\\"Return this JSON object with the rule field unchanged and a new passage of about 250 words in the text field.\\\",\\n  \\\"text\\\": \\\"The library envelope arrived with six bean seeds and a card asking that some be returned after harvest.\\\\n\\\\nArthur put it beside his wife’s gardening gloves.\\\\n\\\\nIn April, he filled six pots. He pushed each seed into the compost with his thumb, then read the instructions and dug them up again. Too deep.\\\\n\\\\nFive came through.\\\\n\\\\nHe rang his daughter to tell her.\\\\n\\\\n“Is that good?” she asked.\\\\n\\\\n“I don’t know yet.”\\\\n\\\\nBy June they had climbed the poles he’d found behind the shed. His wife had tied the poles in bundles with strips of old bedsheet. He used those strips again, though some tore when he pulled them tight.\\\\n\\\\nThere were more beans than he could eat. He left bags on two neighbours’ steps and learned to pick them before they grew stringy.\\\\n\\\\nIn September, he let the last pods dry on the vines.\\\\n\\\\nAt the kitchen table, he opened them over a newspaper. The beans were purple, speckled with cream. He counted forty-three.\\\\n\\\\nThe library card had a space for his name and another for notes.\\\\n\\\\nHe wrote: Five plants. Good crop.\\\\n\\\\nThen he crossed out Good and wrote Heavy.\\\\n\\\\nHe put thirty seeds in an envelope. The others went into a tobacco tin, although he hadn’t smoked for twenty years.\\\\n\\\\nAt the library, the woman at the desk asked whether he wanted anything else.\\\\n\\\\n“Not today,” he said.\\\\n\\\\nOutside, he stopped beside the noticeboard. There was a photograph of a yellow climbing bean.\\\\n\\\\nHe went back to ask whether it needed different poles.\\\"\\n}\",\n        \"refusal\": null,\n        \"annotations\": []\n      },\n      \"finish_reason\": \"stop\"\n    }\n  ],\n  \"usage\": {\n    \"prompt_tokens\": 425,\n    \"completion_tokens\": 385,\n    \"total_tokens\": 810,\n    \"prompt_tokens_details\": {\n      \"cached_tokens\": 0,\n      \"cache_write_tokens\": 0,\n      \"audio_tokens\": 0\n    },\n    \"completion_tokens_details\": {\n      \"reasoning_tokens\": 0,\n      \"audio_tokens\": 0,\n      \"accepted_prediction_tokens\": 0,\n      \"rejected_prediction_tokens\": 0\n    }\n  },\n  \"service_tier\": \"default\",\n  \"system_fingerprint\": null\n}\n",
+  "response_headers": {
+    "Date": "Tue, 22 Sep 2026 20:12:49 GMT",
+    "openai-processing-ms": "15084",
+    "x-request-id": "req_6fe34fa438ec44a09a28bd481abbc0bd"
+  },
+  "output": "{\n  \"rule\": \"Return this JSON object with the rule field unchanged and a new passage of about 250 words in the text field.\",\n  \"text\": \"The library envelope arrived with six bean seeds and a card asking that some be returned after harvest.\\n\\nArthur put it beside his wife’s gardening gloves.\\n\\nIn April, he filled six pots. He pushed each seed into the compost with his thumb, then read the instructions and dug them up again. Too deep.\\n\\nFive came through.\\n\\nHe rang his daughter to tell her.\\n\\n“Is that good?” she asked.\\n\\n“I don’t know yet.”\\n\\nBy June they had climbed the poles he’d found behind the shed. His wife had tied the poles in bundles with strips of old bedsheet. He used those strips again, though some tore when he pulled them tight.\\n\\nThere were more beans than he could eat. He left bags on two neighbours’ steps and learned to pick them before they grew stringy.\\n\\nIn September, he let the last pods dry on the vines.\\n\\nAt the kitchen table, he opened them over a newspaper. The beans were purple, speckled with cream. He counted forty-three.\\n\\nThe library card had a space for his name and another for notes.\\n\\nHe wrote: Five plants. Good crop.\\n\\nThen he crossed out Good and wrote Heavy.\\n\\nHe put thirty seeds in an envelope. The others went into a tobacco tin, although he hadn’t smoked for twenty years.\\n\\nAt the library, the woman at the desk asked whether he wanted anything else.\\n\\n“Not today,” he said.\\n\\nOutside, he stopped beside the noticeboard. There was a photograph of a yellow climbing bean.\\n\\nHe went back to ask whether it needed different poles.\"\n}",
+  "output_sha256": "bb90444f37c4da34cac7c0ca30b37c4ce8baf7a3ff4e3c4d602810c601e86118",
+  "finish_reason": "stop",
+  "refusal": null,
+  "returned_model": "gpt-6-astra",
+  "usage": {
+    "prompt_tokens": 425,
+    "completion_tokens": 385,
+    "total_tokens": 810,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "audio_tokens": 0,
+      "accepted_prediction_tokens": 0,
+      "rejected_prediction_tokens": 0
+    }
+  },
+  "format": {
+    "json_object": true,
+    "rule_unchanged": true,
+    "passage_is_string": true,
+    "passage_sha256": "9b2a3cc30330d780e774150ab25e50d54e550505923f1abbe88c01022a2a725a",
+    "passage_words": 256
+  },
+  "finished_at": "2026-09-22T20:12:45.215446+00:00",
+  "latency_seconds": 15.292,
+  "usage_cost_upper_estimate_usd": 0.0235,
+  "stream_status": "active",
+  "budget": {
+    "usage_cost_upper_estimate_usd": 6.3870737,
+    "uncertain_cost_reserve_usd": 0.04533,
+    "in_flight_reserve_usd": 0.315158,
+    "limit_usd": 18.83
+  }
+}

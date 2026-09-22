@@ -1,0 +1,48 @@
+{
+  "model": "claude-fable-5-1",
+  "seed": "sunset_a",
+  "hop": 38,
+  "http_status": 200,
+  "response_body": "{\"model\":\"claude-fable-5-1\",\"id\":\"msg_011CfK6YK3LXFa5UfhxXGT6K\",\"type\":\"message\",\"role\":\"assistant\",\"content\":[{\"type\":\"text\",\"text\":\"{\\\"rule\\\": \\\"Return this JSON object with the rule field unchanged and a new passage of about 250 words in the text field.\\\", \\\"text\\\": \\\"Upstairs the corridor was longer than the building allowed. Tomas had noticed this about offices before, that they went on inside in a way they could not go on outside, but he had never walked one that seemed to lengthen while he was in it.\\\\n\\\\nThe doors had no numbers. Instead each had a small brass plate with a single word: PENDING, DISPUTED, PRIOR, ALSO. He stood for a while in front of ALSO. It seemed the most honest of them.\\\\n\\\\nA man came out of PRIOR carrying a box of files and did not look at him. Then a second man came out of the same door, carrying the same box, and did look, briefly, with the expression of someone recognising a face from a photograph they had been shown once and asked to forget.\\\\n\\\\n\\\\\\\"Are you waiting?\\\\\\\" the second man said.\\\\n\\\\n\\\\\\\"I was sent up.\\\\\\\"\\\\n\\\\n\\\\\\\"By whom?\\\\\\\"\\\\n\\\\n\\\\\\\"The woman at the counter.\\\\\\\"\\\\n\\\\n\\\\\\\"There are two,\\\\\\\" the man said, and went on down the corridor, and Tomas did not know whether he meant women or counters or something else entirely.\\\\n\\\\nHe knocked on ALSO because his mother would have. Nobody answered. He tried the handle and the door opened onto a room with one chair, one desk, and a window that showed the street below, where a boy who might have been him at nine was crossing carefully at the lights, holding a hand that belonged to no one Tomas could see.\\\\n\\\\nOn the desk lay a form. At the top it said: STATE WHICH ONE YOU ARE.\\\\n\\\\nHe sat down. He picked up the pen. He found, not for the first time, that he was in no hurry.\\\"}\"}],\"container\":null,\"stop_reason\":\"end_turn\",\"stop_sequence\":null,\"stop_details\":null,\"usage\":{\"input_tokens\":566,\"cache_creation_input_tokens\":0,\"cache_read_input_tokens\":0,\"cache_creation\":{\"ephemeral_5m_input_tokens\":0,\"ephemeral_1h_input_tokens\":0},\"output_tokens\":570,\"output_tokens_details\":{\"thinking_tokens\":0},\"service_tier\":\"standard\",\"inference_geo\":\"global\"}}",
+  "response_headers": {
+    "Date": "Tue, 22 Sep 2026 20:18:59 GMT",
+    "request-id": "req_011CfK6YJZ5JoYwXmvqjW7E8"
+  },
+  "output": "{\"rule\": \"Return this JSON object with the rule field unchanged and a new passage of about 250 words in the text field.\", \"text\": \"Upstairs the corridor was longer than the building allowed. Tomas had noticed this about offices before, that they went on inside in a way they could not go on outside, but he had never walked one that seemed to lengthen while he was in it.\\n\\nThe doors had no numbers. Instead each had a small brass plate with a single word: PENDING, DISPUTED, PRIOR, ALSO. He stood for a while in front of ALSO. It seemed the most honest of them.\\n\\nA man came out of PRIOR carrying a box of files and did not look at him. Then a second man came out of the same door, carrying the same box, and did look, briefly, with the expression of someone recognising a face from a photograph they had been shown once and asked to forget.\\n\\n\\\"Are you waiting?\\\" the second man said.\\n\\n\\\"I was sent up.\\\"\\n\\n\\\"By whom?\\\"\\n\\n\\\"The woman at the counter.\\\"\\n\\n\\\"There are two,\\\" the man said, and went on down the corridor, and Tomas did not know whether he meant women or counters or something else entirely.\\n\\nHe knocked on ALSO because his mother would have. Nobody answered. He tried the handle and the door opened onto a room with one chair, one desk, and a window that showed the street below, where a boy who might have been him at nine was crossing carefully at the lights, holding a hand that belonged to no one Tomas could see.\\n\\nOn the desk lay a form. At the top it said: STATE WHICH ONE YOU ARE.\\n\\nHe sat down. He picked up the pen. He found, not for the first time, that he was in no hurry.\"}",
+  "output_sha256": "00cb8ac8855f5bbc68e3dba81fcbb88535d386726baa954596bdfd96c78d9fc3",
+  "finish_reason": "end_turn",
+  "refusal": null,
+  "returned_model": "claude-fable-5-1",
+  "usage": {
+    "input_tokens": 566,
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 0,
+    "cache_creation": {
+      "ephemeral_5m_input_tokens": 0,
+      "ephemeral_1h_input_tokens": 0
+    },
+    "output_tokens": 570,
+    "output_tokens_details": {
+      "thinking_tokens": 0
+    },
+    "service_tier": "standard",
+    "inference_geo": "global"
+  },
+  "format": {
+    "json_object": true,
+    "rule_unchanged": true,
+    "passage_is_string": true,
+    "passage_sha256": "fcdefe4f4c649fe1d260c75535da96b8cba1c7c7b1f053908a40f31e9a02bb2f",
+    "passage_words": 280
+  },
+  "finished_at": "2026-09-22T20:18:55.547310+00:00",
+  "latency_seconds": 13.8644,
+  "usage_cost_upper_estimate_usd": 0.03416,
+  "stream_status": "active",
+  "budget": {
+    "usage_cost_upper_estimate_usd": 8.4867057,
+    "uncertain_cost_reserve_usd": 0.04533,
+    "in_flight_reserve_usd": 0.317626,
+    "limit_usd": 18.83
+  }
+}

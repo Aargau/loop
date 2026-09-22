@@ -1,0 +1,22 @@
+{
+  "started_at": "2026-09-22T20:11:54.865601+00:00",
+  "model": "claude-opus-5-5",
+  "seed": "tide",
+  "hop": 36,
+  "endpoint": "https://api.anthropic.com/v1/messages",
+  "body": {
+    "model": "claude-opus-5-5",
+    "messages": [
+      {
+        "role": "user",
+        "content": "```json\n{\"rule\": \"Return this JSON object with the rule field unchanged and a new passage of about 250 words in the text field.\", \"text\": \"In August the berries turned, not all at once but in patches, as if someone were painting the tree a little each night. The girl counted the red clusters every morning before breakfast and reported the numbers to her grandmother, who received them gravely, like news from a distant front. On the ninth day the birds came. There were starlings first, loud and quarrelsome, then a pair of mistle thrushes that drove the starlings off and claimed the tree as their own, rattling at anything that came near. The girl sat on the wall and watched them gorge until their beaks were stained. Her brother said they would be sick. Her grandmother said birds did not get sick from rowan berries, only people did, and that was why the girl was not to eat them, however pretty they looked. The girl had not intended to eat them, but now she wondered what they tasted like. One afternoon she saw a young bird among the thrushes, smaller and scruffier, with a speckled breast. It hopped along a branch, swallowed a berry whole, and nearly fell. She did not call to anyone. She only watched it until it flew, clumsily but well enough, toward the hedge. That evening she went down and sat beside her grandmother on the bench. Neither of them spoke. The tree above them was half bare already, and the path was scattered with dropped berries, bright as beads. Her grandmother took her hand and held it until the light was gone.\"}\n```"
+      }
+    ],
+    "max_tokens": 4096,
+    "output_config": {
+      "effort": "low"
+    }
+  },
+  "state_sha256": "0376fd8e93e28709312956a093c3371dd22bd619e4dc7bd69a3eca2311928aa9",
+  "reserved_cost_usd": 0.09018
+}

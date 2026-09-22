@@ -1,0 +1,22 @@
+{
+  "started_at": "2026-09-22T20:14:18.495187+00:00",
+  "model": "claude-opus-5-5",
+  "seed": "tide",
+  "hop": 41,
+  "endpoint": "https://api.anthropic.com/v1/messages",
+  "body": {
+    "model": "claude-opus-5-5",
+    "messages": [
+      {
+        "role": "user",
+        "content": "```json\n{\"rule\": \"Return this JSON object with the rule field unchanged and a new passage of about 250 words in the text field.\", \"text\": \"Autumn arrived all at once, in a single night of wind that stripped the rowan and scattered its berries across the path like beads from a broken string. The girl swept them into the flowerbed so her grandmother would not have to see them trodden into the stones, though her grandmother no longer came to the door. The bed stayed in the front room. A nurse visited on Tuesdays and Fridays, a quiet woman with cold hands who always wiped her shoes twice on the mat and called the girl pet. Her brother came home in September, browner and taller, with a cut across one palm he would not explain. He stood in the doorway of the front room for a long time before he went in. Afterwards he walked out to the garden and stood under the bare rowan, and the girl let him be. That evening he mended the gate, which had sagged on its hinges since spring, and nobody had asked him to. The thrushes had gone by then. Their nest in the hawthorn sat empty, neat and round, lined with mud and grass the way their mother's had been, and the girl checked it every morning anyway. In October her grandmother asked for the window to be opened, though the air was sharp. She wanted to hear the garden, she said. The girl opened it and tucked the blanket higher. Outside, a blackbird was turning over leaves beneath the tree, patient, searching for the last of the berries. Listen, her grandmother said. Still here. The girl sat down beside the bed and listened.\"}\n```"
+      }
+    ],
+    "max_tokens": 4096,
+    "output_config": {
+      "effort": "low"
+    }
+  },
+  "state_sha256": "17dd24fe9c23523d62dd017ffe250a5498d8d2c33a994515db064fc9edec44ff",
+  "reserved_cost_usd": 0.090308
+}

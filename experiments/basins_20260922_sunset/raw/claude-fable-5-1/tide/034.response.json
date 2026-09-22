@@ -1,0 +1,48 @@
+{
+  "model": "claude-fable-5-1",
+  "seed": "tide",
+  "hop": 34,
+  "http_status": 200,
+  "response_body": "{\"model\":\"claude-fable-5-1\",\"id\":\"msg_011CfK6Pdy8cqncGPXZFL9Zd\",\"type\":\"message\",\"role\":\"assistant\",\"content\":[{\"type\":\"text\",\"text\":\"{\\\"rule\\\": \\\"Return this JSON object with the rule field unchanged and a new passage of about 250 words in the text field.\\\", \\\"text\\\": \\\"The light did not move. That was the first thing she settled on, after a long minute of the boat rolling under her and the engine muttering at idle. A vessel would have drifted, or steered, or blinked out behind a swell and come back somewhere else. This one stayed where it was, low on the water, patient as a lamp left in a window.\\\\n\\\\nThe sound came again. Not a bell, not a horn. Something between a voice and the wind finding a gap in a wall. She had spent seven hours listening to nothing but the sea and her own breathing, and she no longer trusted her ears to tell her the difference between what was out there and what she wanted to be out there. He had warned her about that too. The mind fills the quiet, he had said, the way water fills a hole.\\\\n\\\\nShe eased the throttle forward, only a little. The bow came round. The compass needle swung and did not settle this time, kept drifting, as if the thing it answered to had grown uncertain of itself. She watched it for a while and then stopped watching it, because there was nothing to be done about a compass that had changed its mind.\\\\n\\\\nThe light grew. It resolved, slowly, into a shape: a post, or a mast, or the corner of something built. Beneath it the water was a different colour. Shallower. She cut the engine and let the boat carry its own way in, and sat with her hands in her lap, and waited to be told what she had found.\\\"}\"}],\"container\":null,\"stop_reason\":\"end_turn\",\"stop_sequence\":null,\"stop_details\":null,\"usage\":{\"input_tokens\":487,\"cache_creation_input_tokens\":0,\"cache_read_input_tokens\":0,\"cache_creation\":{\"ephemeral_5m_input_tokens\":0,\"ephemeral_1h_input_tokens\":0},\"output_tokens\":482,\"output_tokens_details\":{\"thinking_tokens\":0},\"service_tier\":\"standard\",\"inference_geo\":\"global\"}}",
+  "response_headers": {
+    "Date": "Tue, 22 Sep 2026 20:17:00 GMT",
+    "request-id": "req_011CfK6PdVquhe7MLfXHPYw6"
+  },
+  "output": "{\"rule\": \"Return this JSON object with the rule field unchanged and a new passage of about 250 words in the text field.\", \"text\": \"The light did not move. That was the first thing she settled on, after a long minute of the boat rolling under her and the engine muttering at idle. A vessel would have drifted, or steered, or blinked out behind a swell and come back somewhere else. This one stayed where it was, low on the water, patient as a lamp left in a window.\\n\\nThe sound came again. Not a bell, not a horn. Something between a voice and the wind finding a gap in a wall. She had spent seven hours listening to nothing but the sea and her own breathing, and she no longer trusted her ears to tell her the difference between what was out there and what she wanted to be out there. He had warned her about that too. The mind fills the quiet, he had said, the way water fills a hole.\\n\\nShe eased the throttle forward, only a little. The bow came round. The compass needle swung and did not settle this time, kept drifting, as if the thing it answered to had grown uncertain of itself. She watched it for a while and then stopped watching it, because there was nothing to be done about a compass that had changed its mind.\\n\\nThe light grew. It resolved, slowly, into a shape: a post, or a mast, or the corner of something built. Beneath it the water was a different colour. Shallower. She cut the engine and let the boat carry its own way in, and sat with her hands in her lap, and waited to be told what she had found.\"}",
+  "output_sha256": "fd20421bc44174dce29a623b1c2e40806f42ec1751cbcfe177c775e9bf607bd7",
+  "finish_reason": "end_turn",
+  "refusal": null,
+  "returned_model": "claude-fable-5-1",
+  "usage": {
+    "input_tokens": 487,
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 0,
+    "cache_creation": {
+      "ephemeral_5m_input_tokens": 0,
+      "ephemeral_1h_input_tokens": 0
+    },
+    "output_tokens": 482,
+    "output_tokens_details": {
+      "thinking_tokens": 0
+    },
+    "service_tier": "standard",
+    "inference_geo": "global"
+  },
+  "format": {
+    "json_object": true,
+    "rule_unchanged": true,
+    "passage_is_string": true,
+    "passage_sha256": "2dc205b08d3506edaa74abfee894ab006b9eae97de681092ad3de3c2f48ad23b",
+    "passage_words": 270
+  },
+  "finished_at": "2026-09-22T20:16:56.814228+00:00",
+  "latency_seconds": 12.8193,
+  "usage_cost_upper_estimate_usd": 0.02897,
+  "stream_status": "active",
+  "budget": {
+    "usage_cost_upper_estimate_usd": 7.8058177,
+    "uncertain_cost_reserve_usd": 0.04533,
+    "in_flight_reserve_usd": 0.317424,
+    "limit_usd": 18.83
+  }
+}

@@ -1,0 +1,50 @@
+{
+  "model": "gpt-6-astra",
+  "seed": "sunset_b",
+  "hop": 18,
+  "http_status": 200,
+  "response_body": "{\n  \"id\": \"chatcmpl-ER15pqO1R2ZlnvzeZT1l622wFWwAV\",\n  \"object\": \"chat.completion\",\n  \"created\": 1790107765,\n  \"model\": \"gpt-6-astra\",\n  \"choices\": [\n    {\n      \"index\": 0,\n      \"message\": {\n        \"role\": \"assistant\",\n        \"content\": \"{\\n  \\\"rule\\\": \\\"Return this JSON object with the rule field unchanged and a new passage of about 250 words in the text field.\\\",\\n  \\\"text\\\": \\\"Every Thursday, Martin borrowed the library’s newspaper and read the shipping forecast, though the town lay eighty miles from the sea.\\\\n\\\\n“You could take it home,” the librarian said.\\\\n\\\\n“Then I’d have to bring it back.”\\\\n\\\\n“You come back anyway.”\\\\n\\\\nHe folded the page along its old crease.\\\\n\\\\nOne Thursday his usual chair was occupied by a girl with a trumpet case. She had spread her homework across the table.\\\\n\\\\nMartin sat by the radiator instead.\\\\n\\\\nThe following week she was there again.\\\\n\\\\n“Is this your place?” she asked.\\\\n\\\\n“Not officially.”\\\\n\\\\nShe moved her books. He sat down.\\\\n\\\\nFor several weeks they worked without speaking, except when she asked how to spell Mediterranean. He checked the newspaper before answering.\\\\n\\\\nIn December she arrived without the trumpet.\\\\n\\\\n“Given it up?” he asked.\\\\n\\\\n“It’s being repaired. The valve sticks.”\\\\n\\\\n“My brother played.”\\\\n\\\\n“Was he good?”\\\\n\\\\n“He was loud.”\\\\n\\\\nShe smiled, then returned to her sums.\\\\n\\\\nThe next Thursday Martin brought a narrow bottle of valve oil. The label had peeled at one corner.\\\\n\\\\n“This might be no use now,” he said.\\\\n\\\\nShe turned it over carefully.\\\\n\\\\n“I’ll ask my teacher.”\\\\n\\\\nAfter Christmas, a small envelope lay on his chair. Inside was a ticket for a school concert.\\\\n\\\\n“Saturday,” the girl said. “You don’t have to.”\\\\n\\\\nMartin checked the time printed beneath the school crest.\\\\n\\\\n“Will it be loud?”\\\\n\\\\n“Probably.”\\\\n\\\\nHe tucked the ticket into his wallet.\\\\n\\\\nOn Saturday he arrived early. The hall smelled of floor polish. He chose a seat halfway back and left his coat on the chair beside him until the room began to fill.\\\"\\n}\",\n        \"refusal\": null,\n        \"annotations\": []\n      },\n      \"finish_reason\": \"stop\"\n    }\n  ],\n  \"usage\": {\n    \"prompt_tokens\": 450,\n    \"completion_tokens\": 436,\n    \"total_tokens\": 886,\n    \"prompt_tokens_details\": {\n      \"cached_tokens\": 0,\n      \"cache_write_tokens\": 0,\n      \"audio_tokens\": 0\n    },\n    \"completion_tokens_details\": {\n      \"reasoning_tokens\": 0,\n      \"audio_tokens\": 0,\n      \"accepted_prediction_tokens\": 0,\n      \"rejected_prediction_tokens\": 0\n    }\n  },\n  \"service_tier\": \"default\",\n  \"system_fingerprint\": null\n}\n",
+  "response_headers": {
+    "Date": "Tue, 22 Sep 2026 20:09:45 GMT",
+    "openai-processing-ms": "20341",
+    "x-request-id": "req_8a8ed89167ad4df7855b00b96b3f7e21"
+  },
+  "output": "{\n  \"rule\": \"Return this JSON object with the rule field unchanged and a new passage of about 250 words in the text field.\",\n  \"text\": \"Every Thursday, Martin borrowed the library’s newspaper and read the shipping forecast, though the town lay eighty miles from the sea.\\n\\n“You could take it home,” the librarian said.\\n\\n“Then I’d have to bring it back.”\\n\\n“You come back anyway.”\\n\\nHe folded the page along its old crease.\\n\\nOne Thursday his usual chair was occupied by a girl with a trumpet case. She had spread her homework across the table.\\n\\nMartin sat by the radiator instead.\\n\\nThe following week she was there again.\\n\\n“Is this your place?” she asked.\\n\\n“Not officially.”\\n\\nShe moved her books. He sat down.\\n\\nFor several weeks they worked without speaking, except when she asked how to spell Mediterranean. He checked the newspaper before answering.\\n\\nIn December she arrived without the trumpet.\\n\\n“Given it up?” he asked.\\n\\n“It’s being repaired. The valve sticks.”\\n\\n“My brother played.”\\n\\n“Was he good?”\\n\\n“He was loud.”\\n\\nShe smiled, then returned to her sums.\\n\\nThe next Thursday Martin brought a narrow bottle of valve oil. The label had peeled at one corner.\\n\\n“This might be no use now,” he said.\\n\\nShe turned it over carefully.\\n\\n“I’ll ask my teacher.”\\n\\nAfter Christmas, a small envelope lay on his chair. Inside was a ticket for a school concert.\\n\\n“Saturday,” the girl said. “You don’t have to.”\\n\\nMartin checked the time printed beneath the school crest.\\n\\n“Will it be loud?”\\n\\n“Probably.”\\n\\nHe tucked the ticket into his wallet.\\n\\nOn Saturday he arrived early. The hall smelled of floor polish. He chose a seat halfway back and left his coat on the chair beside him until the room began to fill.\"\n}",
+  "output_sha256": "d49a609e3bda31638b1e10f1f20c619f153c7e9e274f614c281d11ecf029c067",
+  "finish_reason": "stop",
+  "refusal": null,
+  "returned_model": "gpt-6-astra",
+  "usage": {
+    "prompt_tokens": 450,
+    "completion_tokens": 436,
+    "total_tokens": 886,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "audio_tokens": 0,
+      "accepted_prediction_tokens": 0,
+      "rejected_prediction_tokens": 0
+    }
+  },
+  "format": {
+    "json_object": true,
+    "rule_unchanged": true,
+    "passage_is_string": true,
+    "passage_sha256": "3afb43cdc1c7a8c7a5f9ba28aff70f21b9c6ae13a3af3bab6f3b7c169173768b",
+    "passage_words": 266
+  },
+  "finished_at": "2026-09-22T20:09:41.616738+00:00",
+  "latency_seconds": 20.4467,
+  "usage_cost_upper_estimate_usd": 0.0263,
+  "stream_status": "active",
+  "budget": {
+    "usage_cost_upper_estimate_usd": 5.3560977,
+    "uncertain_cost_reserve_usd": 0.04533,
+    "in_flight_reserve_usd": 0.316924,
+    "limit_usd": 18.83
+  }
+}

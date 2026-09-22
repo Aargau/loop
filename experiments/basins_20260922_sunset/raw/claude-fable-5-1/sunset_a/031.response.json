@@ -1,0 +1,48 @@
+{
+  "model": "claude-fable-5-1",
+  "seed": "sunset_a",
+  "hop": 31,
+  "http_status": 200,
+  "response_body": "{\"model\":\"claude-fable-5-1\",\"id\":\"msg_011CfK6DkjdwGgfd8ue6jnjL\",\"type\":\"message\",\"role\":\"assistant\",\"content\":[{\"type\":\"text\",\"text\":\"{\\\"rule\\\": \\\"Return this JSON object with the rule field unchanged and a new passage of about 250 words in the text field.\\\", \\\"text\\\": \\\"The ledger lay where he had left it, on the corner of the counter nearest the window, its cover gone soft and dark at the edges from handling. Ilse did not open it right away. She stood with the shop key still warm in her fist and looked at the shelves, at the jars with their faded labels, at the scale with its brass pans gone dull.\\\\n\\\\nBehind her, Aunt Marit set down the basket and did not come further in. \\\\\\\"You don't have to do it today.\\\\\\\"\\\\n\\\\n\\\\\\\"I know.\\\\\\\"\\\\n\\\\nThe bell above the door had not rung when they entered. Ilse looked up and saw why: someone had wrapped a rag around it and tied it off with twine. Her father, then, in the last months, when the sound had become too much. She reached up and worked the knot loose. The rag came away and the bell swung once, small and clear, and the sound went through the empty room and did not come back.\\\\n\\\\nShe opened the ledger. His hand ran down the page in the same careful columns she had learned to read before she could read anything else. Flour. Salt. Oil for the widow Hansen, marked paid. Then a date, and beneath it nothing, the ruled lines waiting.\\\\n\\\\n\\\\\\\"He kept it to the end,\\\\\\\" Marit said.\\\\n\\\\n\\\\\\\"He kept everything.\\\\\\\"\\\\n\\\\nIlse found the pencil in the groove where it had always been, its point still sharp. She looked at the blank line for a long moment. Then she wrote the day's date, and under it, in a hand that was not his but close enough, the first entry.\\\"}\"}],\"container\":null,\"stop_reason\":\"end_turn\",\"stop_sequence\":null,\"stop_details\":null,\"usage\":{\"input_tokens\":578,\"cache_creation_input_tokens\":0,\"cache_read_input_tokens\":0,\"cache_creation\":{\"ephemeral_5m_input_tokens\":0,\"ephemeral_1h_input_tokens\":0},\"output_tokens\":525,\"output_tokens_details\":{\"thinking_tokens\":0},\"service_tier\":\"standard\",\"inference_geo\":\"global\"}}",
+  "response_headers": {
+    "Date": "Tue, 22 Sep 2026 20:14:47 GMT",
+    "request-id": "req_011CfK6DkGN13mTgdvXhLNmc"
+  },
+  "output": "{\"rule\": \"Return this JSON object with the rule field unchanged and a new passage of about 250 words in the text field.\", \"text\": \"The ledger lay where he had left it, on the corner of the counter nearest the window, its cover gone soft and dark at the edges from handling. Ilse did not open it right away. She stood with the shop key still warm in her fist and looked at the shelves, at the jars with their faded labels, at the scale with its brass pans gone dull.\\n\\nBehind her, Aunt Marit set down the basket and did not come further in. \\\"You don't have to do it today.\\\"\\n\\n\\\"I know.\\\"\\n\\nThe bell above the door had not rung when they entered. Ilse looked up and saw why: someone had wrapped a rag around it and tied it off with twine. Her father, then, in the last months, when the sound had become too much. She reached up and worked the knot loose. The rag came away and the bell swung once, small and clear, and the sound went through the empty room and did not come back.\\n\\nShe opened the ledger. His hand ran down the page in the same careful columns she had learned to read before she could read anything else. Flour. Salt. Oil for the widow Hansen, marked paid. Then a date, and beneath it nothing, the ruled lines waiting.\\n\\n\\\"He kept it to the end,\\\" Marit said.\\n\\n\\\"He kept everything.\\\"\\n\\nIlse found the pencil in the groove where it had always been, its point still sharp. She looked at the blank line for a long moment. Then she wrote the day's date, and under it, in a hand that was not his but close enough, the first entry.\"}",
+  "output_sha256": "647da0e1f193883ef9911f0a6c2010d24727d06ca5be40405b7c9f0adb7e2ea4",
+  "finish_reason": "end_turn",
+  "refusal": null,
+  "returned_model": "claude-fable-5-1",
+  "usage": {
+    "input_tokens": 578,
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 0,
+    "cache_creation": {
+      "ephemeral_5m_input_tokens": 0,
+      "ephemeral_1h_input_tokens": 0
+    },
+    "output_tokens": 525,
+    "output_tokens_details": {
+      "thinking_tokens": 0
+    },
+    "service_tier": "standard",
+    "inference_geo": "global"
+  },
+  "format": {
+    "json_object": true,
+    "rule_unchanged": true,
+    "passage_is_string": true,
+    "passage_sha256": "223b745ddfc498ecccba16cfc4296ddd5f71a68078be22d41a21efab55ad6a79",
+    "passage_words": 272
+  },
+  "finished_at": "2026-09-22T20:14:43.408094+00:00",
+  "latency_seconds": 13.4575,
+  "usage_cost_upper_estimate_usd": 0.03203,
+  "stream_status": "active",
+  "budget": {
+    "usage_cost_upper_estimate_usd": 7.0672257,
+    "uncertain_cost_reserve_usd": 0.04533,
+    "in_flight_reserve_usd": 0.318166,
+    "limit_usd": 18.83
+  }
+}

@@ -1,0 +1,48 @@
+{
+  "model": "claude-fable-5-1",
+  "seed": "sunset_b",
+  "hop": 24,
+  "http_status": 200,
+  "response_body": "{\"model\":\"claude-fable-5-1\",\"id\":\"msg_011CfK5tp5nSv4NEFVmpPt8U\",\"type\":\"message\",\"role\":\"assistant\",\"content\":[{\"type\":\"text\",\"text\":\"{\\\"rule\\\": \\\"Return this JSON object with the rule field unchanged and a new passage of about 250 words in the text field.\\\", \\\"text\\\": \\\"The ferry stopped calling at Hollow Point the spring after Deirdre buried her husband, and the harbour board took down the tide bell the same month she found she could no longer read the small print on her own pill bottles. She sat on the seawall while two men in orange vests lowered the bell into a truck bed, the last passenger manifest still folded in her coat pocket, and for a while the two absences kept company in her: the crossing that would now be memory and the eyes that had already begun to be.\\\\n\\\\nShe still walked to the landing at dawn. Thirty-one years of unlocking the ticket hut had worn a path her boots followed without asking, and the gulls did not mind an old woman coiling a rope no boat would ever take. The bollard still stood, the fare board still listed prices in pounds nobody carried, and when the light came up over the water she caught herself noting the wind on the slate by the door, as if a skipper might shout across for it.\\\\n\\\\nThe island took the bridge now and called it progress. She knew that. She still raised her hand when a trawler passed the mouth of the bay, the way she had signalled the ferry in, and once a deckhand lifted his cap back, which may have been reflex on his side too.\\\\n\\\\nWhat unsettled her was how easily the tide kept its hours. She had thought herself the harbour's keeper. Now she saw she had mostly been its witness. The water had never needed her to turn; it had needed someone on the wall to say, quietly, that the far shore was still worth reaching.\\\\n\\\\nShe kept the rope.\\\"}\"}],\"container\":null,\"stop_reason\":\"end_turn\",\"stop_sequence\":null,\"stop_details\":null,\"usage\":{\"input_tokens\":536,\"cache_creation_input_tokens\":0,\"cache_read_input_tokens\":0,\"cache_creation\":{\"ephemeral_5m_input_tokens\":0,\"ephemeral_1h_input_tokens\":0},\"output_tokens\":537,\"output_tokens_details\":{\"thinking_tokens\":0},\"service_tier\":\"standard\",\"inference_geo\":\"global\"}}",
+  "response_headers": {
+    "Date": "Tue, 22 Sep 2026 20:10:30 GMT",
+    "request-id": "req_011CfK5toZGpVPBbi8SFFN93"
+  },
+  "output": "{\"rule\": \"Return this JSON object with the rule field unchanged and a new passage of about 250 words in the text field.\", \"text\": \"The ferry stopped calling at Hollow Point the spring after Deirdre buried her husband, and the harbour board took down the tide bell the same month she found she could no longer read the small print on her own pill bottles. She sat on the seawall while two men in orange vests lowered the bell into a truck bed, the last passenger manifest still folded in her coat pocket, and for a while the two absences kept company in her: the crossing that would now be memory and the eyes that had already begun to be.\\n\\nShe still walked to the landing at dawn. Thirty-one years of unlocking the ticket hut had worn a path her boots followed without asking, and the gulls did not mind an old woman coiling a rope no boat would ever take. The bollard still stood, the fare board still listed prices in pounds nobody carried, and when the light came up over the water she caught herself noting the wind on the slate by the door, as if a skipper might shout across for it.\\n\\nThe island took the bridge now and called it progress. She knew that. She still raised her hand when a trawler passed the mouth of the bay, the way she had signalled the ferry in, and once a deckhand lifted his cap back, which may have been reflex on his side too.\\n\\nWhat unsettled her was how easily the tide kept its hours. She had thought herself the harbour's keeper. Now she saw she had mostly been its witness. The water had never needed her to turn; it had needed someone on the wall to say, quietly, that the far shore was still worth reaching.\\n\\nShe kept the rope.\"}",
+  "output_sha256": "d66ea9f283a370f354063b0b6b03e89b035d1b62040eafae101403511e3d8898",
+  "finish_reason": "end_turn",
+  "refusal": null,
+  "returned_model": "claude-fable-5-1",
+  "usage": {
+    "input_tokens": 536,
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 0,
+    "cache_creation": {
+      "ephemeral_5m_input_tokens": 0,
+      "ephemeral_1h_input_tokens": 0
+    },
+    "output_tokens": 537,
+    "output_tokens_details": {
+      "thinking_tokens": 0
+    },
+    "service_tier": "standard",
+    "inference_geo": "global"
+  },
+  "format": {
+    "json_object": true,
+    "rule_unchanged": true,
+    "passage_is_string": true,
+    "passage_sha256": "9161a4a398035a49ea5b494b493ea7a44e306c7dbde289dd25147c0690427cf4",
+    "passage_words": 290
+  },
+  "finished_at": "2026-09-22T20:10:26.031058+00:00",
+  "latency_seconds": 13.0532,
+  "usage_cost_upper_estimate_usd": 0.03221,
+  "stream_status": "active",
+  "budget": {
+    "usage_cost_upper_estimate_usd": 5.6197017,
+    "uncertain_cost_reserve_usd": 0.04533,
+    "in_flight_reserve_usd": 0.318288,
+    "limit_usd": 18.83
+  }
+}

@@ -1,0 +1,22 @@
+{
+  "started_at": "2026-09-22T20:13:33.616081+00:00",
+  "model": "claude-opus-5-5",
+  "seed": "sunset_b",
+  "hop": 40,
+  "endpoint": "https://api.anthropic.com/v1/messages",
+  "body": {
+    "model": "claude-opus-5-5",
+    "messages": [
+      {
+        "role": "user",
+        "content": "```json\n{\"rule\": \"Return this JSON object with the rule field unchanged and a new passage of about 250 words in the text field.\", \"text\": \"On the windswept island of Carrow, the lighthouse had been dark for as long as anyone could remember. Its great lens was clouded with salt, and the iron stairs inside had rusted into a brittle, groaning spiral. Fishermen steered home by memory and luck, and every autumn the rocks along the northern point claimed another boat. The harbor council called the lighthouse a hazard and voted to pull it down before it collapsed on its own. A girl named Tova, who mended nets on the docks, walked past the lighthouse every evening. One stormy night she noticed a faint glow flickering behind its cracked windows, as if someone were carrying a candle up the stairs. Curious, she pried open the swollen door and climbed carefully toward the light. At the top, surrounded by buckets of polish and scraps of cloth, sat an old man named Aldric, rubbing patiently at the enormous glass lens. He had been the last keeper, he told her, and for years he had crept back each night to clean the lens one small patch at a time. But his hands now trembled too much to reach the highest prisms. Tova returned the next evening with a ladder and steady fingers. Through the long winter, she learned to trim wicks, polish brass, and wind the clockwork that turned the beam. On the first calm night of spring, Aldric struck a match and lit the lamp. The lens blazed to life, and a golden beam swept across the black water, guiding every boat in Carrow safely home.\"}\n```"
+      }
+    ],
+    "max_tokens": 4096,
+    "output_config": {
+      "effort": "low"
+    }
+  },
+  "state_sha256": "d623f6284c719c115b2b3417b22df23876d30259f8e1055e5384ae0a3c223a1f",
+  "reserved_cost_usd": 0.090312
+}

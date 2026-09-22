@@ -1,0 +1,48 @@
+{
+  "model": "claude-fable-5-1",
+  "seed": "tide",
+  "hop": 31,
+  "http_status": 200,
+  "response_body": "{\"model\":\"claude-fable-5-1\",\"id\":\"msg_011CfK6FbhyhwX64iZ8B6oX5\",\"type\":\"message\",\"role\":\"assistant\",\"content\":[{\"type\":\"text\",\"text\":\"{\\\"rule\\\": \\\"Return this JSON object with the rule field unchanged and a new passage of about 250 words in the text field.\\\", \\\"text\\\": \\\"The engine caught on the third pull, which surprised her. She had expected it to be dead, or at least sullen, but it settled into a steady knock as if it had only been waiting for someone to ask. She cast off the way he used to, one line then the other, and the boat drifted clear of the wall before she put it in gear.\\\\n\\\\nShe steered by the compass on the bulkhead, its glass fogged with old salt. A little north of east. The harbour mouth slid past and the swell took hold, long and slow, and the town flattened behind her into a line of grey roofs and one church tower.\\\\n\\\\nForty-one miles was six hours at this speed. She had brought the notebook, a flask, two apples, and the set in its canvas bag, though she did not know what she would plug it into out here. She had brought them the way you bring things to a hospital, because leaving them behind felt worse.\\\\n\\\\nAround noon the coast was gone entirely. There was nothing but water in every direction and the sound of the engine and the gulls that had followed her for a while and then given up. She checked the compass. She checked it again. She ate an apple she did not want.\\\\n\\\\nAt some point she realised she was saying the word under her breath, the one from the first page, in time with the engine. Not a call sign. She said it louder. The sea did not answer, but she kept the bearing anyway.\\\"}\"}],\"container\":null,\"stop_reason\":\"end_turn\",\"stop_sequence\":null,\"stop_details\":null,\"usage\":{\"input_tokens\":478,\"cache_creation_input_tokens\":0,\"cache_read_input_tokens\":0,\"cache_creation\":{\"ephemeral_5m_input_tokens\":0,\"ephemeral_1h_input_tokens\":0},\"output_tokens\":466,\"output_tokens_details\":{\"thinking_tokens\":0},\"service_tier\":\"standard\",\"inference_geo\":\"global\"}}",
+  "response_headers": {
+    "Date": "Tue, 22 Sep 2026 20:15:11 GMT",
+    "request-id": "req_011CfK6FbAyVZ7mzEigpyD8d"
+  },
+  "output": "{\"rule\": \"Return this JSON object with the rule field unchanged and a new passage of about 250 words in the text field.\", \"text\": \"The engine caught on the third pull, which surprised her. She had expected it to be dead, or at least sullen, but it settled into a steady knock as if it had only been waiting for someone to ask. She cast off the way he used to, one line then the other, and the boat drifted clear of the wall before she put it in gear.\\n\\nShe steered by the compass on the bulkhead, its glass fogged with old salt. A little north of east. The harbour mouth slid past and the swell took hold, long and slow, and the town flattened behind her into a line of grey roofs and one church tower.\\n\\nForty-one miles was six hours at this speed. She had brought the notebook, a flask, two apples, and the set in its canvas bag, though she did not know what she would plug it into out here. She had brought them the way you bring things to a hospital, because leaving them behind felt worse.\\n\\nAround noon the coast was gone entirely. There was nothing but water in every direction and the sound of the engine and the gulls that had followed her for a while and then given up. She checked the compass. She checked it again. She ate an apple she did not want.\\n\\nAt some point she realised she was saying the word under her breath, the one from the first page, in time with the engine. Not a call sign. She said it louder. The sea did not answer, but she kept the bearing anyway.\"}",
+  "output_sha256": "3caab55a50f58b5b748c782ce2b9bd242d557fb1e18aa046e7398df3b513f3db",
+  "finish_reason": "end_turn",
+  "refusal": null,
+  "returned_model": "claude-fable-5-1",
+  "usage": {
+    "input_tokens": 478,
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 0,
+    "cache_creation": {
+      "ephemeral_5m_input_tokens": 0,
+      "ephemeral_1h_input_tokens": 0
+    },
+    "output_tokens": 466,
+    "output_tokens_details": {
+      "thinking_tokens": 0
+    },
+    "service_tier": "standard",
+    "inference_geo": "global"
+  },
+  "format": {
+    "json_object": true,
+    "rule_unchanged": true,
+    "passage_is_string": true,
+    "passage_sha256": "5196ed321b57caaa1b51ff48458df3e02f564ea7ac0b6485f210a2555a2e8dae",
+    "passage_words": 263
+  },
+  "finished_at": "2026-09-22T20:15:07.325591+00:00",
+  "latency_seconds": 12.3771,
+  "usage_cost_upper_estimate_usd": 0.02808,
+  "stream_status": "active",
+  "budget": {
+    "usage_cost_upper_estimate_usd": 7.1904617,
+    "uncertain_cost_reserve_usd": 0.04533,
+    "in_flight_reserve_usd": 0.31732,
+    "limit_usd": 18.83
+  }
+}

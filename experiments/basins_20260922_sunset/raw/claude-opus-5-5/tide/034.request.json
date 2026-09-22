@@ -1,0 +1,22 @@
+{
+  "started_at": "2026-09-22T20:10:50.319090+00:00",
+  "model": "claude-opus-5-5",
+  "seed": "tide",
+  "hop": 34,
+  "endpoint": "https://api.anthropic.com/v1/messages",
+  "body": {
+    "model": "claude-opus-5-5",
+    "messages": [
+      {
+        "role": "user",
+        "content": "```json\n{\"rule\": \"Return this JSON object with the rule field unchanged and a new passage of about 250 words in the text field.\", \"text\": \"In May the flowers opened fully and the tree smelled faintly sour, a smell the girl could not decide whether she liked. Bees came, and small flies, and once a white butterfly that rested on a leaf for so long she thought it might be dead until it lifted off all at once and was gone over the wall. The robins were feeding young now. She knew because they flew back and forth in a hurry with things in their beaks, and they no longer stopped to look at her. Her brother said the fledglings would be out soon and she should keep the cat in, and she did, though the cat complained at the window all afternoon. One wet morning she found a speckled bird on the path, round and furious and hardly able to fly. She did not touch it. She went back inside and stood at the kitchen door until her grandmother asked what was the matter, and when she explained, her grandmother put down the kettle and came to look. The bird had hopped under the gorse by then. The parents were scolding from the wall. Her grandmother said that was as it should be, and that the worst thing people did was try to help. They stood together in the drizzle a while longer anyway. On the way back her grandmother stopped by the rowan and touched one of the flower clusters, gently, the way you might touch a sleeping child's hair, and said nothing at all. The girl did not ask. She thought she already knew.\"}\n```"
+      }
+    ],
+    "max_tokens": 4096,
+    "output_config": {
+      "effort": "low"
+    }
+  },
+  "state_sha256": "4eed881a932d1d4b2db94522a059f340fa782c49212e778eb8f1ed4e0b4974ce",
+  "reserved_cost_usd": 0.090044
+}

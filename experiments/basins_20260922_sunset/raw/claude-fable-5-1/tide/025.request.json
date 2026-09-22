@@ -1,0 +1,22 @@
+{
+  "started_at": "2026-09-22T20:11:08.108161+00:00",
+  "model": "claude-fable-5-1",
+  "seed": "tide",
+  "hop": 25,
+  "endpoint": "https://api.anthropic.com/v1/messages",
+  "body": {
+    "model": "claude-fable-5-1",
+    "messages": [
+      {
+        "role": "user",
+        "content": "{\"rule\": \"Return this JSON object with the rule field unchanged and a new passage of about 250 words in the text field.\", \"text\": \"The lighthouse at Corran Point had been automated in 1978, and by the time Teodor Vask took the keeper's cottage, no one had climbed the tower stairs in a decade except to replace a bulb.\\n\\nHe had not come for the light. He had come for the logbooks.\\n\\nThey filled a cupboard in the cottage kitchen, ninety years of them, bound in canvas that had gone the color of tea. Each page recorded the same things: wind direction, visibility, the passing of ships by name and time. Between the columns, though, the keepers had written other things. A porpoise seen at dawn. A child's birthday. A wife's cough that did not improve.\\n\\nTeodor's grandmother had kept the light for eleven years. She had never spoken of it.\\n\\nHe read her entries first, then the ones before and after, until he knew the handwriting of six strangers as well as his own. He learned that the winter of 1952 had frozen the spray on the gallery rail into a solid wall. He learned that a keeper named Ross had lost a boat and never written another word about the sea, only about his garden.\\n\\nIn his grandmother's last year there was a single line, in March: he did not come back, and the light was on the whole night.\\n\\nTeodor did not know who he was. There was no one left to ask.\\n\\nHe climbed the tower that evening and stood beside the lamp as it turned, and counted the seconds between each sweep, and found that the rhythm had not changed.\"}"
+      }
+    ],
+    "max_tokens": 4096,
+    "output_config": {
+      "effort": "low"
+    }
+  },
+  "state_sha256": "1812a311e21b2a9f7845ab2ad735994b683803e979181bf55f2ae1b1bce9ab92",
+  "reserved_cost_usd": 0.2254
+}

@@ -1,0 +1,22 @@
+{
+  "started_at": "2026-09-22T20:10:10.551071+00:00",
+  "model": "claude-opus-5-5",
+  "seed": "sunset_b",
+  "hop": 33,
+  "endpoint": "https://api.anthropic.com/v1/messages",
+  "body": {
+    "model": "claude-opus-5-5",
+    "messages": [
+      {
+        "role": "user",
+        "content": "```json\n{\"rule\": \"Return this JSON object with the rule field unchanged and a new passage of about 250 words in the text field.\", \"text\": \"In the mountain village of Tessel, the great clock in the market square had not chimed in nine years. Farmers guessed the hour by the slant of shadows, and merchants argued endlessly over when the stalls should open. The mayor declared the gears rusted beyond repair. The old women whispered that the clockmaker had cursed it before vanishing into the pines. A restless boy named Anselm, who swept the bakery floor each dawn, noticed something odd: every night at exactly the same moment, a soft ticking drifted down from the tower, though the hands never moved. One frosty morning, he slipped past the chained gate, squeezed through a broken shutter, and climbed the narrow ladder inside. At the top, he discovered a cramped workshop cluttered with springs, brass wheels, and tiny carved birds hanging from threads. A white-haired woman named Liesel sat hunched over a workbench, fitting a gear no larger than a coin. She had been the clockmaker, she confessed, and had silenced the bells the day her husband died, unable to bear the sound of time moving on without him. Yet she had never stopped tinkering, building a new mechanism that would sing a different melody for every season. Anselm begged to become her apprentice. Through the long winter, he learned to file teeth, balance pendulums, and read the faded diagrams in her notebooks. On the first morning of summer, the whole village gathered as the clock burst into song, carved birds circling its face. Liesel stood in the square beside Anselm and, for the first time in years, smiled at the passing hour.\"}\n```"
+      }
+    ],
+    "max_tokens": 4096,
+    "output_config": {
+      "effort": "low"
+    }
+  },
+  "state_sha256": "fab77d5ee267517d6886af30555967b6fd59bb29c74efc709525df8bc962dd1d",
+  "reserved_cost_usd": 0.090812
+}

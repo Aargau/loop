@@ -1,0 +1,48 @@
+{
+  "model": "claude-fable-5-1",
+  "seed": "sunset_a",
+  "hop": 25,
+  "http_status": 200,
+  "response_body": "{\"model\":\"claude-fable-5-1\",\"id\":\"msg_011CfK5vqioWuuY66raHiDt1\",\"type\":\"message\",\"role\":\"assistant\",\"content\":[{\"type\":\"text\",\"text\":\"{\\\"rule\\\": \\\"Return this JSON object with the rule field unchanged and a new passage of about 250 words in the text field.\\\", \\\"text\\\": \\\"The attic smelled of dust and cold wood, and of something older that Ines could not name until she saw the trunks along the eaves. Her mother's. She kept the lamp steady and did not look at them again.\\\\n\\\\nTomas found the boards where he had said, stacked neatly, the nails already sorted into a jar. Her father's habit. He had labeled the jar in pencil, and the word was slanted the way his hand had gone in the last year, as if the letters were leaning into a wind.\\\\n\\\\n\\\\\\\"He measured them,\\\\\\\" Tomas said. \\\\\\\"They should fit without cutting.\\\\\\\"\\\\n\\\\nShe raised the light to the place where the shingles had lifted. Water beaded on the underside of the roof and ran in a thin line toward the joist. Tomas set the first board and held it with his shoulder while he felt in his pocket for the hammer.\\\\n\\\\n\\\\\\\"You've done this before,\\\\\\\" she said.\\\\n\\\\n\\\\\\\"Not here.\\\\\\\"\\\\n\\\\n\\\\\\\"Where, then?\\\\\\\"\\\\n\\\\nHe drove a nail before he answered. \\\\\\\"Places I was passing through. People let you stay a night if you fix something.\\\\\\\" Another nail. \\\\\\\"Your father let me stay longer than a night.\\\\\\\"\\\\n\\\\nThe rain drummed harder above them. Ines watched his hands, which were careful, and thought of the word the neighbors had used for him at the burial. Stranger. As if he had wandered in from the road that morning.\\\\n\\\\n\\\\\\\"Hand me the next one,\\\\\\\" he said.\\\\n\\\\nShe set the lamp on the trunk after all, and did.\\\"}\"}],\"container\":null,\"stop_reason\":\"end_turn\",\"stop_sequence\":null,\"stop_details\":null,\"usage\":{\"input_tokens\":547,\"cache_creation_input_tokens\":0,\"cache_read_input_tokens\":0,\"cache_creation\":{\"ephemeral_5m_input_tokens\":0,\"ephemeral_1h_input_tokens\":0},\"output_tokens\":528,\"output_tokens_details\":{\"thinking_tokens\":0},\"service_tier\":\"standard\",\"inference_geo\":\"global\"}}",
+  "response_headers": {
+    "Date": "Tue, 22 Sep 2026 20:10:59 GMT",
+    "request-id": "req_011CfK5vq76cDjb7BkWLk8BY"
+  },
+  "output": "{\"rule\": \"Return this JSON object with the rule field unchanged and a new passage of about 250 words in the text field.\", \"text\": \"The attic smelled of dust and cold wood, and of something older that Ines could not name until she saw the trunks along the eaves. Her mother's. She kept the lamp steady and did not look at them again.\\n\\nTomas found the boards where he had said, stacked neatly, the nails already sorted into a jar. Her father's habit. He had labeled the jar in pencil, and the word was slanted the way his hand had gone in the last year, as if the letters were leaning into a wind.\\n\\n\\\"He measured them,\\\" Tomas said. \\\"They should fit without cutting.\\\"\\n\\nShe raised the light to the place where the shingles had lifted. Water beaded on the underside of the roof and ran in a thin line toward the joist. Tomas set the first board and held it with his shoulder while he felt in his pocket for the hammer.\\n\\n\\\"You've done this before,\\\" she said.\\n\\n\\\"Not here.\\\"\\n\\n\\\"Where, then?\\\"\\n\\nHe drove a nail before he answered. \\\"Places I was passing through. People let you stay a night if you fix something.\\\" Another nail. \\\"Your father let me stay longer than a night.\\\"\\n\\nThe rain drummed harder above them. Ines watched his hands, which were careful, and thought of the word the neighbors had used for him at the burial. Stranger. As if he had wandered in from the road that morning.\\n\\n\\\"Hand me the next one,\\\" he said.\\n\\nShe set the lamp on the trunk after all, and did.\"}",
+  "output_sha256": "8c38c778ef170b2ed7d2e3745e2f56543cf6e5e2a5c21c1678bb5814f9a7a396",
+  "finish_reason": "end_turn",
+  "refusal": null,
+  "returned_model": "claude-fable-5-1",
+  "usage": {
+    "input_tokens": 547,
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 0,
+    "cache_creation": {
+      "ephemeral_5m_input_tokens": 0,
+      "ephemeral_1h_input_tokens": 0
+    },
+    "output_tokens": 528,
+    "output_tokens_details": {
+      "thinking_tokens": 0
+    },
+    "service_tier": "standard",
+    "inference_geo": "global"
+  },
+  "format": {
+    "json_object": true,
+    "rule_unchanged": true,
+    "passage_is_string": true,
+    "passage_sha256": "5ffa8c1af9dfd833eae3fe2a091335b2d5a129e96754f38e565973b92aae2d7d",
+    "passage_words": 249
+  },
+  "finished_at": "2026-09-22T20:10:55.087533+00:00",
+  "latency_seconds": 14.6046,
+  "usage_cost_upper_estimate_usd": 0.03187,
+  "stream_status": "active",
+  "budget": {
+    "usage_cost_upper_estimate_usd": 5.7735217,
+    "uncertain_cost_reserve_usd": 0.04533,
+    "in_flight_reserve_usd": 0.317834,
+    "limit_usd": 18.83
+  }
+}

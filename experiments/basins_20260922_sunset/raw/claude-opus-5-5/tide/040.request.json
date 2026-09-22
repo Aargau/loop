@@ -1,0 +1,22 @@
+{
+  "started_at": "2026-09-22T20:13:48.025946+00:00",
+  "model": "claude-opus-5-5",
+  "seed": "tide",
+  "hop": 40,
+  "endpoint": "https://api.anthropic.com/v1/messages",
+  "body": {
+    "model": "claude-opus-5-5",
+    "messages": [
+      {
+        "role": "user",
+        "content": "```json\n{\"rule\": \"Return this JSON object with the rule field unchanged and a new passage of about 250 words in the text field.\", \"text\": \"Summer came in slowly that year, with long grey mornings that burned off by noon. The rowan put out its berries, small and green at first, then orange, then a red so bright the girl could see it from the end of the lane on her way home. Her grandmother spent more time on the bench now, mornings as well as afternoons, and sometimes the girl found her asleep there with the flask gone cold beside her and a blanket over her knees that someone else had brought. In July the girl's brother left for a summer job on a farm two valleys over. He promised to write and did not, though he telephoned on Sundays and asked about the garden as if it were a person. The girl told him about the berries and the blackbirds that had started to raid them, and about the cat from next door that sat under the tree for hours, pretending not to care. She did not tell him that their grandmother had stopped going upstairs, or that her bed had been moved into the front room. He would see soon enough. In August the thrushes came back. Not the same ones, perhaps, or perhaps the same, the girl could not tell. They did not look at the old nest in the rowan. They built another, lower down, in the hawthorn by the gate. Her grandmother watched them through the window, too tired now for the bench. See, she said. Start again. The girl nodded, and put the kettle on, and did not say anything at all.\"}\n```"
+      }
+    ],
+    "max_tokens": 4096,
+    "output_config": {
+      "effort": "low"
+    }
+  },
+  "state_sha256": "46ec2b83f6c451d04e1cf60476308f0091c870b0756a80fea7efc5101dfc9243",
+  "reserved_cost_usd": 0.09006
+}
