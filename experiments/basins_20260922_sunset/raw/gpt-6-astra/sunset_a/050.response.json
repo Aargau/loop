@@ -1,0 +1,50 @@
+{
+  "model": "gpt-6-astra",
+  "seed": "sunset_a",
+  "hop": 50,
+  "http_status": 200,
+  "response_body": "{\n  \"id\": \"chatcmpl-ER1WDJpzxUCpW1ZF5p1OaGlnjCy8p\",\n  \"object\": \"chat.completion\",\n  \"created\": 1790109401,\n  \"model\": \"gpt-6-astra\",\n  \"choices\": [\n    {\n      \"index\": 0,\n      \"message\": {\n        \"role\": \"assistant\",\n        \"content\": \"{\\n  \\\"rule\\\": \\\"Return this JSON object with the rule field unchanged and a new passage of about 250 words in the text field.\\\",\\n  \\\"text\\\": \\\"The bottom drawer in the bakery had swollen shut during the winter. Inside were the birthday candles, paper doilies and a screwdriver nobody could reach.\\\\n\\\\n“Give it a kick,” Ruth said.\\\\n\\\\nHer nephew Daniel tried, carefully, with the side of his shoe.\\\\n\\\\n“Not like you’re apologising.”\\\\n\\\\nIt stayed shut.\\\\n\\\\nThey ordered more candles and kept them in a biscuit tin. Customers asked for doilies less often than Ruth expected.\\\\n\\\\nDaniel worked Saturdays. He was saving for a bicycle, although he had stopped mentioning which one.\\\\n\\\\nIn March, Ruth caught him watching a video beside the bread slicer.\\\\n\\\\n“Not there,” she said.\\\\n\\\\nHe turned the screen towards her. A man was rubbing soap along the edge of a wooden drawer.\\\\n\\\\n“You have to get it open first,” Ruth said.\\\\n\\\\n“I know.”\\\\n\\\\nThe next Saturday he brought a narrow metal scraper. Before opening time, he knelt on a flour sack and worked it into the gap.\\\\n\\\\nRuth filled the display trays. Twice she nearly told him to leave it.\\\\n\\\\nThe drawer came free with a noise like a snapped crust.\\\\n\\\\nInside, the candles had bent against one another. Daniel found the screwdriver beneath a packet of silver cake boards.\\\\n\\\\n“There,” he said.\\\\n\\\\nRuth put the usable candles in the tin while he sanded the drawer's edge.\\\\n\\\\nA week later, he arrived on his old bicycle, the chain clicking.\\\\n\\\\n“Still saving?” she asked.\\\\n\\\\n“Nearly.”\\\\n\\\\nShe handed him an envelope with his wages and something extra.\\\\n\\\\n“For the drawer,” she said.\\\\n\\\\nHe counted it, then folded the envelope into his pocket.\\\\n\\\\nAt closing time, Ruth heard him pull the drawer open once more before he left.\\\"\\n}\",\n        \"refusal\": null,\n        \"annotations\": []\n      },\n      \"finish_reason\": \"stop\"\n    }\n  ],\n  \"usage\": {\n    \"prompt_tokens\": 426,\n    \"completion_tokens\": 427,\n    \"total_tokens\": 853,\n    \"prompt_tokens_details\": {\n      \"cached_tokens\": 0,\n      \"cache_write_tokens\": 0,\n      \"audio_tokens\": 0\n    },\n    \"completion_tokens_details\": {\n      \"reasoning_tokens\": 0,\n      \"audio_tokens\": 0,\n      \"accepted_prediction_tokens\": 0,\n      \"rejected_prediction_tokens\": 0\n    }\n  },\n  \"service_tier\": \"default\",\n  \"system_fingerprint\": null\n}\n",
+  "response_headers": {
+    "Date": "Tue, 22 Sep 2026 20:37:03 GMT",
+    "openai-processing-ms": "22490",
+    "x-request-id": "req_217a78a701f949c59f0f43da65cc2058"
+  },
+  "output": "{\n  \"rule\": \"Return this JSON object with the rule field unchanged and a new passage of about 250 words in the text field.\",\n  \"text\": \"The bottom drawer in the bakery had swollen shut during the winter. Inside were the birthday candles, paper doilies and a screwdriver nobody could reach.\\n\\n“Give it a kick,” Ruth said.\\n\\nHer nephew Daniel tried, carefully, with the side of his shoe.\\n\\n“Not like you’re apologising.”\\n\\nIt stayed shut.\\n\\nThey ordered more candles and kept them in a biscuit tin. Customers asked for doilies less often than Ruth expected.\\n\\nDaniel worked Saturdays. He was saving for a bicycle, although he had stopped mentioning which one.\\n\\nIn March, Ruth caught him watching a video beside the bread slicer.\\n\\n“Not there,” she said.\\n\\nHe turned the screen towards her. A man was rubbing soap along the edge of a wooden drawer.\\n\\n“You have to get it open first,” Ruth said.\\n\\n“I know.”\\n\\nThe next Saturday he brought a narrow metal scraper. Before opening time, he knelt on a flour sack and worked it into the gap.\\n\\nRuth filled the display trays. Twice she nearly told him to leave it.\\n\\nThe drawer came free with a noise like a snapped crust.\\n\\nInside, the candles had bent against one another. Daniel found the screwdriver beneath a packet of silver cake boards.\\n\\n“There,” he said.\\n\\nRuth put the usable candles in the tin while he sanded the drawer's edge.\\n\\nA week later, he arrived on his old bicycle, the chain clicking.\\n\\n“Still saving?” she asked.\\n\\n“Nearly.”\\n\\nShe handed him an envelope with his wages and something extra.\\n\\n“For the drawer,” she said.\\n\\nHe counted it, then folded the envelope into his pocket.\\n\\nAt closing time, Ruth heard him pull the drawer open once more before he left.\"\n}",
+  "output_sha256": "48d7ef8cecfa73b8b886d6a3e533b47a47c61902b725ac12b3b8b6ec222791b5",
+  "finish_reason": "stop",
+  "refusal": null,
+  "returned_model": "gpt-6-astra",
+  "usage": {
+    "prompt_tokens": 426,
+    "completion_tokens": 427,
+    "total_tokens": 853,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "audio_tokens": 0,
+      "accepted_prediction_tokens": 0,
+      "rejected_prediction_tokens": 0
+    }
+  },
+  "format": {
+    "json_object": true,
+    "rule_unchanged": true,
+    "passage_is_string": true,
+    "passage_sha256": "e72e484e6cf20a070a09978bf75a35b0200965a9918c3f77c0b818704334b7b5",
+    "passage_words": 272
+  },
+  "finished_at": "2026-09-22T20:36:59.196856+00:00",
+  "latency_seconds": 22.7882,
+  "usage_cost_upper_estimate_usd": 0.02561,
+  "stream_status": "active",
+  "budget": {
+    "usage_cost_upper_estimate_usd": 12.7699377,
+    "uncertain_cost_reserve_usd": 0.04533,
+    "in_flight_reserve_usd": 0.0,
+    "limit_usd": 18.83
+  }
+}

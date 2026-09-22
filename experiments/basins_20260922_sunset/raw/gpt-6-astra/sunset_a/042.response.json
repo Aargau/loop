@@ -1,0 +1,50 @@
+{
+  "model": "gpt-6-astra",
+  "seed": "sunset_a",
+  "hop": 42,
+  "http_status": 200,
+  "response_body": "{\n  \"id\": \"chatcmpl-ER1PVyfLXwHD5yAiMpRH0xA1LUBm8\",\n  \"object\": \"chat.completion\",\n  \"created\": 1790108985,\n  \"model\": \"gpt-6-astra\",\n  \"choices\": [\n    {\n      \"index\": 0,\n      \"message\": {\n        \"role\": \"assistant\",\n        \"content\": \"{\\n  \\\"rule\\\": \\\"Return this JSON object with the rule field unchanged and a new passage of about 250 words in the text field.\\\",\\n  \\\"text\\\": \\\"The station clock had stopped at eleven minutes past four, which meant Edith caught her train on time twice a day.\\\\n\\\\n“Someone ought to mend it,” she told the man sweeping the platform.\\\\n\\\\n“Someone's been informed,” he said.\\\\n\\\\n“Are you someone?”\\\\n\\\\n“Only when there's sweeping.”\\\\n\\\\nHis name was Alan. He had worked at the station for thirty years and carried spare gloves in case the weather changed its mind.\\\\n\\\\nThe following Thursday, Edith brought a small clock in a biscuit tin.\\\\n\\\\n“For the waiting room,” she said.\\\\n\\\\nAlan examined it. The face was decorated with roses.\\\\n\\\\n“Does it keep good time?”\\\\n\\\\n“It kept my sister punctual. No easy task.”\\\\n\\\\nThey put it on the windowsill beside a leaflet advertising a bus service that no longer existed.\\\\n\\\\nThe ticking filled the room pleasantly.\\\\n\\\\n“Needs a biscuit,” Alan said.\\\\n\\\\n“What does?”\\\\n\\\\n“The tin. Looks disappointed.”\\\\n\\\\nEdith returned the next week with shortbread.\\\\n\\\\nBy November, passengers had begun checking the little clock instead of the large one. Someone left a paperback beside it. Someone else added a cushion to the bench.\\\\n\\\\nThen an engineer arrived and repaired the station clock.\\\\n\\\\nAlan found Edith in the waiting room, wrapping her clock in a scarf.\\\\n\\\\n“You could leave it,” he said.\\\\n\\\\n“They'll disagree eventually.”\\\\n\\\\n“We're used to that. We have two timetables.”\\\\n\\\\nShe unwrapped it and set it back among the crumbs.\\\\n\\\\nOutside, the train pulled in.\\\\n\\\\n“That's yours,” Alan said.\\\\n\\\\n“I know.”\\\\n\\\\nBut she took a moment to wind the clock before she went.\\\"\\n}\",\n        \"refusal\": null,\n        \"annotations\": []\n      },\n      \"finish_reason\": \"stop\"\n    }\n  ],\n  \"usage\": {\n    \"prompt_tokens\": 446,\n    \"completion_tokens\": 413,\n    \"total_tokens\": 859,\n    \"prompt_tokens_details\": {\n      \"cached_tokens\": 0,\n      \"cache_write_tokens\": 0,\n      \"audio_tokens\": 0\n    },\n    \"completion_tokens_details\": {\n      \"reasoning_tokens\": 0,\n      \"audio_tokens\": 0,\n      \"accepted_prediction_tokens\": 0,\n      \"rejected_prediction_tokens\": 0\n    }\n  },\n  \"service_tier\": \"default\",\n  \"system_fingerprint\": null\n}\n",
+  "response_headers": {
+    "Date": "Tue, 22 Sep 2026 20:29:58 GMT",
+    "openai-processing-ms": "13475",
+    "x-request-id": "req_135e75f919de415681caee656587db23"
+  },
+  "output": "{\n  \"rule\": \"Return this JSON object with the rule field unchanged and a new passage of about 250 words in the text field.\",\n  \"text\": \"The station clock had stopped at eleven minutes past four, which meant Edith caught her train on time twice a day.\\n\\n“Someone ought to mend it,” she told the man sweeping the platform.\\n\\n“Someone's been informed,” he said.\\n\\n“Are you someone?”\\n\\n“Only when there's sweeping.”\\n\\nHis name was Alan. He had worked at the station for thirty years and carried spare gloves in case the weather changed its mind.\\n\\nThe following Thursday, Edith brought a small clock in a biscuit tin.\\n\\n“For the waiting room,” she said.\\n\\nAlan examined it. The face was decorated with roses.\\n\\n“Does it keep good time?”\\n\\n“It kept my sister punctual. No easy task.”\\n\\nThey put it on the windowsill beside a leaflet advertising a bus service that no longer existed.\\n\\nThe ticking filled the room pleasantly.\\n\\n“Needs a biscuit,” Alan said.\\n\\n“What does?”\\n\\n“The tin. Looks disappointed.”\\n\\nEdith returned the next week with shortbread.\\n\\nBy November, passengers had begun checking the little clock instead of the large one. Someone left a paperback beside it. Someone else added a cushion to the bench.\\n\\nThen an engineer arrived and repaired the station clock.\\n\\nAlan found Edith in the waiting room, wrapping her clock in a scarf.\\n\\n“You could leave it,” he said.\\n\\n“They'll disagree eventually.”\\n\\n“We're used to that. We have two timetables.”\\n\\nShe unwrapped it and set it back among the crumbs.\\n\\nOutside, the train pulled in.\\n\\n“That's yours,” Alan said.\\n\\n“I know.”\\n\\nBut she took a moment to wind the clock before she went.\"\n}",
+  "output_sha256": "d0be2976a873e06696ad6135cf40cc450dea11ae3bee9b072fec60300f59ad86",
+  "finish_reason": "stop",
+  "refusal": null,
+  "returned_model": "gpt-6-astra",
+  "usage": {
+    "prompt_tokens": 446,
+    "completion_tokens": 413,
+    "total_tokens": 859,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "audio_tokens": 0,
+      "accepted_prediction_tokens": 0,
+      "rejected_prediction_tokens": 0
+    }
+  },
+  "format": {
+    "json_object": true,
+    "rule_unchanged": true,
+    "passage_is_string": true,
+    "passage_sha256": "90666641bebcd67f0aebfb8d4950f78e914d9f28d0f91607fc6396968c5620fb",
+    "passage_words": 250
+  },
+  "finished_at": "2026-09-22T20:29:54.357946+00:00",
+  "latency_seconds": 13.707,
+  "usage_cost_upper_estimate_usd": 0.02511,
+  "stream_status": "active",
+  "budget": {
+    "usage_cost_upper_estimate_usd": 11.5576677,
+    "uncertain_cost_reserve_usd": 0.04533,
+    "in_flight_reserve_usd": 0.22629,
+    "limit_usd": 18.83
+  }
+}

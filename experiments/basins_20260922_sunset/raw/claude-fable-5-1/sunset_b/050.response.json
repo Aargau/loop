@@ -1,0 +1,48 @@
+{
+  "model": "claude-fable-5-1",
+  "seed": "sunset_b",
+  "hop": 50,
+  "http_status": 200,
+  "response_body": "{\"model\":\"claude-fable-5-1\",\"id\":\"msg_011CfK78pAkZgk1UH8jLfGWY\",\"type\":\"message\",\"role\":\"assistant\",\"content\":[{\"type\":\"text\",\"text\":\"{\\\"rule\\\": \\\"Return this JSON object with the rule field unchanged and a new passage of about 250 words in the text field.\\\", \\\"text\\\": \\\"He closed at six, as he always did, though there had been nothing to close against. He turned the sign and stood a moment with his hand on the bolt, listening to the street settle. A bicycle. Someone calling a dog in. The ordinary sounds, and under them the strip of tar giving off the last of its heat, or so he imagined, since a man cannot hear tar cooling and he knew it.\\\\n\\\\nHe did not go up to the flat. He went instead to the back room and sat with the ledger open on his knees and turned the pages without reading them. His father's hand for the first forty pages, then his own, the two scripts so alike that he had once lost an afternoon trying to find the exact line where one stopped and the other began. He found it now without looking. March, the year of the flood. Nails, a pound. The same figure.\\\\n\\\\nThat was what troubled him, if he was honest, and he tried at this hour to be honest. Not that she knew the price. Anyone might know it who had once bought nails. It was that she had written it on a card and left the card where he would find it, as a man leaves a coin on a step to see whether the boy who sweeps is the kind who pockets it or the kind who hands it in.\\\\n\\\\nHe did not know which kind he was. He had never had cause to find out. He closed the ledger and sat in the dark, and outside, very faintly, something on the road set and went hard.\\\"}\"}],\"container\":null,\"stop_reason\":\"end_turn\",\"stop_sequence\":null,\"stop_details\":null,\"usage\":{\"input_tokens\":437,\"cache_creation_input_tokens\":0,\"cache_read_input_tokens\":0,\"cache_creation\":{\"ephemeral_5m_input_tokens\":0,\"ephemeral_1h_input_tokens\":0},\"output_tokens\":477,\"output_tokens_details\":{\"thinking_tokens\":0},\"service_tier\":\"standard\",\"inference_geo\":\"global\"}}",
+  "response_headers": {
+    "Date": "Tue, 22 Sep 2026 20:26:46 GMT",
+    "request-id": "req_011CfK78ohDNSChvqeq2FsmF"
+  },
+  "output": "{\"rule\": \"Return this JSON object with the rule field unchanged and a new passage of about 250 words in the text field.\", \"text\": \"He closed at six, as he always did, though there had been nothing to close against. He turned the sign and stood a moment with his hand on the bolt, listening to the street settle. A bicycle. Someone calling a dog in. The ordinary sounds, and under them the strip of tar giving off the last of its heat, or so he imagined, since a man cannot hear tar cooling and he knew it.\\n\\nHe did not go up to the flat. He went instead to the back room and sat with the ledger open on his knees and turned the pages without reading them. His father's hand for the first forty pages, then his own, the two scripts so alike that he had once lost an afternoon trying to find the exact line where one stopped and the other began. He found it now without looking. March, the year of the flood. Nails, a pound. The same figure.\\n\\nThat was what troubled him, if he was honest, and he tried at this hour to be honest. Not that she knew the price. Anyone might know it who had once bought nails. It was that she had written it on a card and left the card where he would find it, as a man leaves a coin on a step to see whether the boy who sweeps is the kind who pockets it or the kind who hands it in.\\n\\nHe did not know which kind he was. He had never had cause to find out. He closed the ledger and sat in the dark, and outside, very faintly, something on the road set and went hard.\"}",
+  "output_sha256": "0be69e6efb84e53e8693869ce48e9a3bdffb82e0a0ac0ef92ed49a794ffd97b0",
+  "finish_reason": "end_turn",
+  "refusal": null,
+  "returned_model": "claude-fable-5-1",
+  "usage": {
+    "input_tokens": 437,
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 0,
+    "cache_creation": {
+      "ephemeral_5m_input_tokens": 0,
+      "ephemeral_1h_input_tokens": 0
+    },
+    "output_tokens": 477,
+    "output_tokens_details": {
+      "thinking_tokens": 0
+    },
+    "service_tier": "standard",
+    "inference_geo": "global"
+  },
+  "format": {
+    "json_object": true,
+    "rule_unchanged": true,
+    "passage_is_string": true,
+    "passage_sha256": "95437f142b2fe6c3b9d667575e09abfc297c89aff5e7d666dcfb5ad57bf33c3b",
+    "passage_words": 277
+  },
+  "finished_at": "2026-09-22T20:26:42.376492+00:00",
+  "latency_seconds": 12.716,
+  "usage_cost_upper_estimate_usd": 0.02822,
+  "stream_status": "active",
+  "budget": {
+    "usage_cost_upper_estimate_usd": 10.7882577,
+    "uncertain_cost_reserve_usd": 0.04533,
+    "in_flight_reserve_usd": 0.22671,
+    "limit_usd": 18.83
+  }
+}

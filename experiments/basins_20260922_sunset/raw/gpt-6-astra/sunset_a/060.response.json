@@ -1,0 +1,50 @@
+{
+  "model": "gpt-6-astra",
+  "seed": "sunset_a",
+  "hop": 60,
+  "http_status": 200,
+  "response_body": "{\n  \"id\": \"chatcmpl-ER1eQuBK7nKqpDy1N31tgo27cVODd\",\n  \"object\": \"chat.completion\",\n  \"created\": 1790109910,\n  \"model\": \"gpt-6-astra\",\n  \"choices\": [\n    {\n      \"index\": 0,\n      \"message\": {\n        \"role\": \"assistant\",\n        \"content\": \"{\\n  \\\"rule\\\": \\\"Return this JSON object with the rule field unchanged and a new passage of about 250 words in the text field.\\\",\\n  \\\"text\\\": \\\"On Thursday, Martin took his daughter’s shoes to the repair shop. She had left them under the stairs when she moved out, one heel worn crooked.\\\\n\\\\nThe shopkeeper turned them over.\\\\n\\\\n“Both heels?”\\\\n\\\\n“If you think.”\\\\n\\\\n“I can do them by Saturday.”\\\\n\\\\nMartin gave his name. The shopkeeper wrote it on a yellow ticket and tucked the shoes beneath the counter.\\\\n\\\\nOutside, rain had collected in the folds of the market awnings. He bought six oranges because the sign said six for two pounds. At home he arranged them in the blue bowl, then moved three to the fridge.\\\\n\\\\nHis daughter rang while he was eating lunch.\\\\n\\\\n“Have I left my black shoes there?”\\\\n\\\\n“They’re being repaired.”\\\\n\\\\n“Oh. Dad.”\\\\n\\\\n“One of the heels was going.”\\\\n\\\\n“I don’t wear them anymore.”\\\\n\\\\nHe put his sandwich down.\\\\n\\\\n“Well, you can now.”\\\\n\\\\nShe was quiet. Behind her he could hear traffic and the short, insistent signal of a pedestrian crossing.\\\\n\\\\n“I’m coming over Sunday,” she said.\\\\n\\\\n“You don’t have to.”\\\\n\\\\n“I know. Shall I bring lunch?”\\\\n\\\\n“I’ve got food.”\\\\n\\\\n“I’ll bring something anyway.”\\\\n\\\\nOn Saturday he collected the shoes. The new heels made a firm sound when the shopkeeper set them on the counter.\\\\n\\\\nAt home Martin found a carrier bag without holes. He put the shoes inside, then took them out and stood them by the stairs.\\\\n\\\\nOn Sunday morning he checked the fridge. There was cheese, half a loaf, and the three oranges. He took out two plates, leaving enough room between them for whatever she brought.\\\"\\n}\",\n        \"refusal\": null,\n        \"annotations\": []\n      },\n      \"finish_reason\": \"stop\"\n    }\n  ],\n  \"usage\": {\n    \"prompt_tokens\": 428,\n    \"completion_tokens\": 413,\n    \"total_tokens\": 841,\n    \"prompt_tokens_details\": {\n      \"cached_tokens\": 0,\n      \"cache_write_tokens\": 0,\n      \"audio_tokens\": 0\n    },\n    \"completion_tokens_details\": {\n      \"reasoning_tokens\": 0,\n      \"audio_tokens\": 0,\n      \"accepted_prediction_tokens\": 0,\n      \"rejected_prediction_tokens\": 0\n    }\n  },\n  \"service_tier\": \"default\",\n  \"system_fingerprint\": null\n}\n",
+  "response_headers": {
+    "Date": "Tue, 22 Sep 2026 20:45:25 GMT",
+    "openai-processing-ms": "14966",
+    "x-request-id": "req_5c5606c2313c42a5b630d666d45c534b"
+  },
+  "output": "{\n  \"rule\": \"Return this JSON object with the rule field unchanged and a new passage of about 250 words in the text field.\",\n  \"text\": \"On Thursday, Martin took his daughter’s shoes to the repair shop. She had left them under the stairs when she moved out, one heel worn crooked.\\n\\nThe shopkeeper turned them over.\\n\\n“Both heels?”\\n\\n“If you think.”\\n\\n“I can do them by Saturday.”\\n\\nMartin gave his name. The shopkeeper wrote it on a yellow ticket and tucked the shoes beneath the counter.\\n\\nOutside, rain had collected in the folds of the market awnings. He bought six oranges because the sign said six for two pounds. At home he arranged them in the blue bowl, then moved three to the fridge.\\n\\nHis daughter rang while he was eating lunch.\\n\\n“Have I left my black shoes there?”\\n\\n“They’re being repaired.”\\n\\n“Oh. Dad.”\\n\\n“One of the heels was going.”\\n\\n“I don’t wear them anymore.”\\n\\nHe put his sandwich down.\\n\\n“Well, you can now.”\\n\\nShe was quiet. Behind her he could hear traffic and the short, insistent signal of a pedestrian crossing.\\n\\n“I’m coming over Sunday,” she said.\\n\\n“You don’t have to.”\\n\\n“I know. Shall I bring lunch?”\\n\\n“I’ve got food.”\\n\\n“I’ll bring something anyway.”\\n\\nOn Saturday he collected the shoes. The new heels made a firm sound when the shopkeeper set them on the counter.\\n\\nAt home Martin found a carrier bag without holes. He put the shoes inside, then took them out and stood them by the stairs.\\n\\nOn Sunday morning he checked the fridge. There was cheese, half a loaf, and the three oranges. He took out two plates, leaving enough room between them for whatever she brought.\"\n}",
+  "output_sha256": "1f241552e32bc1840d37a3ed5cbded3953a99f63dba992f3f3b0a1840b4483b3",
+  "finish_reason": "stop",
+  "refusal": null,
+  "returned_model": "gpt-6-astra",
+  "usage": {
+    "prompt_tokens": 428,
+    "completion_tokens": 413,
+    "total_tokens": 841,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "audio_tokens": 0,
+      "accepted_prediction_tokens": 0,
+      "rejected_prediction_tokens": 0
+    }
+  },
+  "format": {
+    "json_object": true,
+    "rule_unchanged": true,
+    "passage_is_string": true,
+    "passage_sha256": "4a5680b31646f14e60eb53e02b581c463a61b9fddf53b62bfef072f48c3fe162",
+    "passage_words": 256
+  },
+  "finished_at": "2026-09-22T20:45:21.402739+00:00",
+  "latency_seconds": 15.1681,
+  "usage_cost_upper_estimate_usd": 0.02493,
+  "stream_status": "active",
+  "budget": {
+    "usage_cost_upper_estimate_usd": 13.5206277,
+    "uncertain_cost_reserve_usd": 0.04533,
+    "in_flight_reserve_usd": 0.0,
+    "limit_usd": 18.83
+  }
+}

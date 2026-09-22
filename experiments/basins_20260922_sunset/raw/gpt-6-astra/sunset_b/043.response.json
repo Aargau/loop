@@ -1,0 +1,50 @@
+{
+  "model": "gpt-6-astra",
+  "seed": "sunset_b",
+  "hop": 43,
+  "http_status": 200,
+  "response_body": "{\n  \"id\": \"chatcmpl-ER1QY6kw4RXqzQGqcXQqO1bx0K2Wr\",\n  \"object\": \"chat.completion\",\n  \"created\": 1790109050,\n  \"model\": \"gpt-6-astra\",\n  \"choices\": [\n    {\n      \"index\": 0,\n      \"message\": {\n        \"role\": \"assistant\",\n        \"content\": \"{\\n  \\\"rule\\\": \\\"Return this JSON object with the rule field unchanged and a new passage of about 250 words in the text field.\\\",\\n  \\\"text\\\": \\\"Martin found the spare key in a tin of buttons, though his mother had insisted it was under the sink.\\\\n\\\\n“That’s where it used to be,” she said.\\\\n\\\\nHe held up the tin.\\\\n\\\\n“Well, you found it.”\\\\n\\\\nThe key was for the shed. A couple from the next village were coming to collect his father’s bicycle, and Martin had promised to pump the tyres.\\\\n\\\\nOutside, the grass soaked the edges of his shoes. His mother watched from the kitchen window until he raised a hand, then turned away.\\\\n\\\\nThe shed door caught on the ground. He lifted it by the handle, as his father had, and squeezed through.\\\\n\\\\nThe bicycle stood behind a folded deckchair. On its handlebars hung a carrier bag containing three punctured inner tubes, each neatly tied.\\\\n\\\\nMartin wheeled it onto the path.\\\\n\\\\nHis mother opened the back door.\\\\n\\\\n“They’ll need the lights.”\\\\n\\\\n“Are they in there?”\\\\n\\\\n“Top drawer. Unless he moved them.”\\\\n\\\\nThe front light worked. The rear one didn’t. Martin unscrewed the casing and found a white crust around the batteries.\\\\n\\\\n“I can get new ones,” he said.\\\\n\\\\n“They said they’d come at four.”\\\\n\\\\n“It’s only half past two.”\\\\n\\\\nHis mother came down the path carrying a yellow duster. She wiped the saddle, then the crossbar.\\\\n\\\\n“He used to ride to the reservoir.”\\\\n\\\\n“I know.”\\\\n\\\\n“Not always. Sometimes he only went to the shop.”\\\\n\\\\nShe threaded the duster between the spokes. Martin steadied the wheel.\\\\n\\\\nWhen she had finished, he put the dead batteries in his pocket.\\\\n\\\\n“Anything you need while I’m out?”\\\\n\\\\nShe considered.\\\\n\\\\n“Milk. The small one.”\\\"\\n}\",\n        \"refusal\": null,\n        \"annotations\": []\n      },\n      \"finish_reason\": \"stop\"\n    }\n  ],\n  \"usage\": {\n    \"prompt_tokens\": 431,\n    \"completion_tokens\": 433,\n    \"total_tokens\": 864,\n    \"prompt_tokens_details\": {\n      \"cached_tokens\": 0,\n      \"cache_write_tokens\": 0,\n      \"audio_tokens\": 0\n    },\n    \"completion_tokens_details\": {\n      \"reasoning_tokens\": 0,\n      \"audio_tokens\": 0,\n      \"accepted_prediction_tokens\": 0,\n      \"rejected_prediction_tokens\": 0\n    }\n  },\n  \"service_tier\": \"default\",\n  \"system_fingerprint\": null\n}\n",
+  "response_headers": {
+    "Date": "Tue, 22 Sep 2026 20:31:09 GMT",
+    "openai-processing-ms": "18712",
+    "x-request-id": "req_d11ce4ea326e4a78bb7f27544b62c252"
+  },
+  "output": "{\n  \"rule\": \"Return this JSON object with the rule field unchanged and a new passage of about 250 words in the text field.\",\n  \"text\": \"Martin found the spare key in a tin of buttons, though his mother had insisted it was under the sink.\\n\\n“That’s where it used to be,” she said.\\n\\nHe held up the tin.\\n\\n“Well, you found it.”\\n\\nThe key was for the shed. A couple from the next village were coming to collect his father’s bicycle, and Martin had promised to pump the tyres.\\n\\nOutside, the grass soaked the edges of his shoes. His mother watched from the kitchen window until he raised a hand, then turned away.\\n\\nThe shed door caught on the ground. He lifted it by the handle, as his father had, and squeezed through.\\n\\nThe bicycle stood behind a folded deckchair. On its handlebars hung a carrier bag containing three punctured inner tubes, each neatly tied.\\n\\nMartin wheeled it onto the path.\\n\\nHis mother opened the back door.\\n\\n“They’ll need the lights.”\\n\\n“Are they in there?”\\n\\n“Top drawer. Unless he moved them.”\\n\\nThe front light worked. The rear one didn’t. Martin unscrewed the casing and found a white crust around the batteries.\\n\\n“I can get new ones,” he said.\\n\\n“They said they’d come at four.”\\n\\n“It’s only half past two.”\\n\\nHis mother came down the path carrying a yellow duster. She wiped the saddle, then the crossbar.\\n\\n“He used to ride to the reservoir.”\\n\\n“I know.”\\n\\n“Not always. Sometimes he only went to the shop.”\\n\\nShe threaded the duster between the spokes. Martin steadied the wheel.\\n\\nWhen she had finished, he put the dead batteries in his pocket.\\n\\n“Anything you need while I’m out?”\\n\\nShe considered.\\n\\n“Milk. The small one.”\"\n}",
+  "output_sha256": "57c50401fae6159f70042fd8c01f54bac8a31eccd7fe73303b065a030f1bf6df",
+  "finish_reason": "stop",
+  "refusal": null,
+  "returned_model": "gpt-6-astra",
+  "usage": {
+    "prompt_tokens": 431,
+    "completion_tokens": 433,
+    "total_tokens": 864,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "audio_tokens": 0,
+      "accepted_prediction_tokens": 0,
+      "rejected_prediction_tokens": 0
+    }
+  },
+  "format": {
+    "json_object": true,
+    "rule_unchanged": true,
+    "passage_is_string": true,
+    "passage_sha256": "eb33258053f1542c1b87aab44993554b96700773c76dce9ee6385f6c60f9e2ab",
+    "passage_words": 264
+  },
+  "finished_at": "2026-09-22T20:31:05.220897+00:00",
+  "latency_seconds": 18.9656,
+  "usage_cost_upper_estimate_usd": 0.02596,
+  "stream_status": "active",
+  "budget": {
+    "usage_cost_upper_estimate_usd": 11.8245377,
+    "uncertain_cost_reserve_usd": 0.04533,
+    "in_flight_reserve_usd": 0.22924,
+    "limit_usd": 18.83
+  }
+}

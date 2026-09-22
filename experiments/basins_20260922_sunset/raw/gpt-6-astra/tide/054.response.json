@@ -1,0 +1,50 @@
+{
+  "model": "gpt-6-astra",
+  "seed": "tide",
+  "hop": 54,
+  "http_status": 200,
+  "response_body": "{\n  \"id\": \"chatcmpl-ER1a7sizTJbSZJJNuOHRiy5H713rT\",\n  \"object\": \"chat.completion\",\n  \"created\": 1790109643,\n  \"model\": \"gpt-6-astra\",\n  \"choices\": [\n    {\n      \"index\": 0,\n      \"message\": {\n        \"role\": \"assistant\",\n        \"content\": \"{\\n  \\\"rule\\\": \\\"Return this JSON object with the rule field unchanged and a new passage of about 250 words in the text field.\\\",\\n  \\\"text\\\": \\\"The man at the repair shop put my father's watch on a square of felt.\\\\n\\\\n“Nothing wrong with it,” he said.\\\\n\\\\n“It stops at night.”\\\\n\\\\n“Are you winding it?”\\\\n\\\\nI looked at the watch. My father had worn it every day for forty years. I had been wearing it for six weeks.\\\\n\\\\nThe man picked it up and turned the little knob beside the face.\\\\n\\\\n“Same time each morning. Stop when you feel resistance.”\\\\n\\\\nHe held it out, but I asked him to show me again.\\\\n\\\\nOutside, a bus lowered itself to the kerb. Two people came into the shop carrying a clock between them. The man nodded towards a chair.\\\\n\\\\nI sat while he found a space for their clock. There were watches in a glass cabinet beside me, each fastened around a small grey cushion. Some cost less than I had expected.\\\\n\\\\nWhen the couple left, I asked what I owed.\\\\n\\\\n“For winding it?”\\\\n\\\\n“For your time.”\\\\n\\\\nHe shook his head and reached for a brown envelope.\\\\n\\\\n“You'll want this, though.”\\\\n\\\\nInside was a narrow leather strap, cracked around the holes.\\\\n\\\\n“Your dad had it changed in February. Asked me to keep the old one. Said he'd collect it.”\\\\n\\\\nI bent the envelope to fit my pocket, then straightened it.\\\\n\\\\n“Was he in here often?”\\\\n\\\\n“Not often. When he needed something.”\\\\n\\\\nThe man adjusted the time and handed me the watch.\\\\n\\\\nAt home I put the envelope in my bedside drawer. The next morning, before getting dressed, I wound the watch. I stopped twice to check whether what I felt was resistance.\\\"\\n}\",\n        \"refusal\": null,\n        \"annotations\": []\n      },\n      \"finish_reason\": \"stop\"\n    }\n  ],\n  \"usage\": {\n    \"prompt_tokens\": 405,\n    \"completion_tokens\": 407,\n    \"total_tokens\": 812,\n    \"prompt_tokens_details\": {\n      \"cached_tokens\": 0,\n      \"cache_write_tokens\": 0,\n      \"audio_tokens\": 0\n    },\n    \"completion_tokens_details\": {\n      \"reasoning_tokens\": 0,\n      \"audio_tokens\": 0,\n      \"accepted_prediction_tokens\": 0,\n      \"rejected_prediction_tokens\": 0\n    }\n  },\n  \"service_tier\": \"default\",\n  \"system_fingerprint\": null\n}\n",
+  "response_headers": {
+    "Date": "Tue, 22 Sep 2026 20:40:59 GMT",
+    "openai-processing-ms": "16034",
+    "x-request-id": "req_3dbd8c426f114bc5ae9b8a571bb09e67"
+  },
+  "output": "{\n  \"rule\": \"Return this JSON object with the rule field unchanged and a new passage of about 250 words in the text field.\",\n  \"text\": \"The man at the repair shop put my father's watch on a square of felt.\\n\\n“Nothing wrong with it,” he said.\\n\\n“It stops at night.”\\n\\n“Are you winding it?”\\n\\nI looked at the watch. My father had worn it every day for forty years. I had been wearing it for six weeks.\\n\\nThe man picked it up and turned the little knob beside the face.\\n\\n“Same time each morning. Stop when you feel resistance.”\\n\\nHe held it out, but I asked him to show me again.\\n\\nOutside, a bus lowered itself to the kerb. Two people came into the shop carrying a clock between them. The man nodded towards a chair.\\n\\nI sat while he found a space for their clock. There were watches in a glass cabinet beside me, each fastened around a small grey cushion. Some cost less than I had expected.\\n\\nWhen the couple left, I asked what I owed.\\n\\n“For winding it?”\\n\\n“For your time.”\\n\\nHe shook his head and reached for a brown envelope.\\n\\n“You'll want this, though.”\\n\\nInside was a narrow leather strap, cracked around the holes.\\n\\n“Your dad had it changed in February. Asked me to keep the old one. Said he'd collect it.”\\n\\nI bent the envelope to fit my pocket, then straightened it.\\n\\n“Was he in here often?”\\n\\n“Not often. When he needed something.”\\n\\nThe man adjusted the time and handed me the watch.\\n\\nAt home I put the envelope in my bedside drawer. The next morning, before getting dressed, I wound the watch. I stopped twice to check whether what I felt was resistance.\"\n}",
+  "output_sha256": "75c4f0967c12e95832c6ddfaf0f6bbceb5a816e7cb4feaca01f2d58af34546ca",
+  "finish_reason": "stop",
+  "refusal": null,
+  "returned_model": "gpt-6-astra",
+  "usage": {
+    "prompt_tokens": 405,
+    "completion_tokens": 407,
+    "total_tokens": 812,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "audio_tokens": 0,
+      "accepted_prediction_tokens": 0,
+      "rejected_prediction_tokens": 0
+    }
+  },
+  "format": {
+    "json_object": true,
+    "rule_unchanged": true,
+    "passage_is_string": true,
+    "passage_sha256": "1d7cbe1e2f2d8dfb27089135acc26ac49107e946b98171d71efc50af9c641991",
+    "passage_words": 264
+  },
+  "finished_at": "2026-09-22T20:40:55.117995+00:00",
+  "latency_seconds": 16.4763,
+  "usage_cost_upper_estimate_usd": 0.0244,
+  "stream_status": "active",
+  "budget": {
+    "usage_cost_upper_estimate_usd": 13.1243377,
+    "uncertain_cost_reserve_usd": 0.04533,
+    "in_flight_reserve_usd": 0.0,
+    "limit_usd": 18.83
+  }
+}

@@ -1,0 +1,50 @@
+{
+  "model": "gpt-6-astra",
+  "seed": "tide",
+  "hop": 45,
+  "http_status": 200,
+  "response_body": "{\n  \"id\": \"chatcmpl-ER1SkOjtxxo0LNHQ9aDLp1dwCRlDe\",\n  \"object\": \"chat.completion\",\n  \"created\": 1790109186,\n  \"model\": \"gpt-6-astra\",\n  \"choices\": [\n    {\n      \"index\": 0,\n      \"message\": {\n        \"role\": \"assistant\",\n        \"content\": \"{\\n  \\\"rule\\\": \\\"Return this JSON object with the rule field unchanged and a new passage of about 250 words in the text field.\\\",\\n  \\\"text\\\": \\\"The swimming pool was empty when my mother asked me to take her there.\\\\n\\\\n“Empty of people?” I said.\\\\n\\\\n“Of water.”\\\\n\\\\nShe had seen the notice in the paper. Demolition would begin Monday.\\\\n\\\\nI parked beside the fence. Someone had cut a gap in it, then tied it closed with orange string. Mum worked the knot while I held her handbag.\\\\n\\\\n“You could get arrested,” I said.\\\\n\\\\n“Hold that properly.”\\\\n\\\\nInside, weeds grew through the changing-room floor. The painted arrows still directed men left and women right.\\\\n\\\\nMum went straight ahead.\\\\n\\\\nAt the shallow end she stopped and looked down. Leaves had collected around the drain. A plastic chair lay on its side beneath the diving board.\\\\n\\\\n“This is where you let go,” she said.\\\\n\\\\n“I thought you let go.”\\\\n\\\\n“No. You pushed my hands away. Quite cross about it.”\\\\n\\\\nI remembered swallowing water, the rough edge under my fingers. Nothing about her hands.\\\\n\\\\nShe took off her coat.\\\\n\\\\n“Mum.”\\\\n\\\\n“I’m not swimming.”\\\\n\\\\nShe folded it over the railing and began descending the metal ladder. I climbed down after her, staying close enough to catch her without appearing to.\\\\n\\\\nWe walked along the blue line toward the deep end. The slope made her lean backward slightly.\\\\n\\\\nHalfway there, she slipped her hand into mine.\\\\n\\\\nFrom below, the diving board looked much higher than I remembered.\\\\n\\\\n“Did I ever jump?”\\\\n\\\\n“Once.”\\\\n\\\\n“Were you watching?”\\\\n\\\\nShe gave me the look she used when I asked where something was while standing in front of it.\\\\n\\\\nWe stayed until a man at the fence called down, asking whether we needed help getting out.\\\"\\n}\",\n        \"refusal\": null,\n        \"annotations\": []\n      },\n      \"finish_reason\": \"stop\"\n    }\n  ],\n  \"usage\": {\n    \"prompt_tokens\": 435,\n    \"completion_tokens\": 425,\n    \"total_tokens\": 860,\n    \"prompt_tokens_details\": {\n      \"cached_tokens\": 0,\n      \"cache_write_tokens\": 0,\n      \"audio_tokens\": 0\n    },\n    \"completion_tokens_details\": {\n      \"reasoning_tokens\": 0,\n      \"audio_tokens\": 0,\n      \"accepted_prediction_tokens\": 0,\n      \"rejected_prediction_tokens\": 0\n    }\n  },\n  \"service_tier\": \"default\",\n  \"system_fingerprint\": null\n}\n",
+  "response_headers": {
+    "Date": "Tue, 22 Sep 2026 20:33:21 GMT",
+    "openai-processing-ms": "15225",
+    "x-request-id": "req_e74e4f36c7354a5492b390ae92afe4e5"
+  },
+  "output": "{\n  \"rule\": \"Return this JSON object with the rule field unchanged and a new passage of about 250 words in the text field.\",\n  \"text\": \"The swimming pool was empty when my mother asked me to take her there.\\n\\n“Empty of people?” I said.\\n\\n“Of water.”\\n\\nShe had seen the notice in the paper. Demolition would begin Monday.\\n\\nI parked beside the fence. Someone had cut a gap in it, then tied it closed with orange string. Mum worked the knot while I held her handbag.\\n\\n“You could get arrested,” I said.\\n\\n“Hold that properly.”\\n\\nInside, weeds grew through the changing-room floor. The painted arrows still directed men left and women right.\\n\\nMum went straight ahead.\\n\\nAt the shallow end she stopped and looked down. Leaves had collected around the drain. A plastic chair lay on its side beneath the diving board.\\n\\n“This is where you let go,” she said.\\n\\n“I thought you let go.”\\n\\n“No. You pushed my hands away. Quite cross about it.”\\n\\nI remembered swallowing water, the rough edge under my fingers. Nothing about her hands.\\n\\nShe took off her coat.\\n\\n“Mum.”\\n\\n“I’m not swimming.”\\n\\nShe folded it over the railing and began descending the metal ladder. I climbed down after her, staying close enough to catch her without appearing to.\\n\\nWe walked along the blue line toward the deep end. The slope made her lean backward slightly.\\n\\nHalfway there, she slipped her hand into mine.\\n\\nFrom below, the diving board looked much higher than I remembered.\\n\\n“Did I ever jump?”\\n\\n“Once.”\\n\\n“Were you watching?”\\n\\nShe gave me the look she used when I asked where something was while standing in front of it.\\n\\nWe stayed until a man at the fence called down, asking whether we needed help getting out.\"\n}",
+  "output_sha256": "11f6d44bdc5b1325c3fa8b92c72db80a23b2d5995f9db9e02ad552353544b0b0",
+  "finish_reason": "stop",
+  "refusal": null,
+  "returned_model": "gpt-6-astra",
+  "usage": {
+    "prompt_tokens": 435,
+    "completion_tokens": 425,
+    "total_tokens": 860,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "audio_tokens": 0,
+      "accepted_prediction_tokens": 0,
+      "rejected_prediction_tokens": 0
+    }
+  },
+  "format": {
+    "json_object": true,
+    "rule_unchanged": true,
+    "passage_is_string": true,
+    "passage_sha256": "90c22f65cbc219dff7597e6629f0ad6f749bfa2e264d789082af79dabbec7828",
+    "passage_words": 269
+  },
+  "finished_at": "2026-09-22T20:33:17.572173+00:00",
+  "latency_seconds": 15.3466,
+  "usage_cost_upper_estimate_usd": 0.0256,
+  "stream_status": "active",
+  "budget": {
+    "usage_cost_upper_estimate_usd": 12.3687977,
+    "uncertain_cost_reserve_usd": 0.04533,
+    "in_flight_reserve_usd": 0.2253,
+    "limit_usd": 18.83
+  }
+}

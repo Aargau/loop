@@ -1,0 +1,50 @@
+{
+  "model": "gpt-6-astra",
+  "seed": "sunset_a",
+  "hop": 44,
+  "http_status": 200,
+  "response_body": "{\n  \"id\": \"chatcmpl-ER1RD8eylA2XHMH12dRmf8uC8iSrF\",\n  \"object\": \"chat.completion\",\n  \"created\": 1790109091,\n  \"model\": \"gpt-6-astra\",\n  \"choices\": [\n    {\n      \"index\": 0,\n      \"message\": {\n        \"role\": \"assistant\",\n        \"content\": \"{\\n  \\\"rule\\\": \\\"Return this JSON object with the rule field unchanged and a new passage of about 250 words in the text field.\\\",\\n  \\\"text\\\": \\\"Every morning, Martin wound the clock in the village hall, although nobody had hired the hall since March.\\\\n\\\\n“You’re keeping time for the chairs,” his daughter said.\\\\n\\\\n“They’re very punctual.”\\\\n\\\\nHe had once maintained the machinery at the biscuit factory. The clock required the same attention, on a less rewarding scale. Nothing warm came off it.\\\\n\\\\nIn June, a woman arrived to measure the hall for evening classes.\\\\n\\\\n“What sort?” Martin asked.\\\\n\\\\n“Painting. If anyone comes.”\\\\n\\\\nHe helped her unfold six tables.\\\\n\\\\nOn the first evening, four people came. Martin stayed in the kitchen, where the kettle had developed a habit of switching itself off too soon.\\\\n\\\\n“There’s a spare place,” the woman called.\\\\n\\\\n“I’m seeing to this.”\\\\n\\\\nThe following week she left paper and a brush beside his cup.\\\\n\\\\nHe painted the kettle. It looked like a distressed pigeon.\\\\n\\\\n“Good weight,” she said.\\\\n\\\\nHe suspected this was something teachers said when there was nothing else.\\\\n\\\\nStill, he came the next week.\\\\n\\\\nBy August, he had painted the fire extinguisher, three stacked chairs and the view through the kitchen hatch.\\\\n\\\\nHis daughter asked whether he might try a landscape.\\\\n\\\\n“I haven’t finished indoors.”\\\\n\\\\nWhen the classes stopped for winter, Martin found a parcel beside the clock key: paints, brushes, a small pad.\\\\n\\\\nThe card said, For your own time.\\\\n\\\\nHe took them home and cleared the newspapers from the kitchen table.\\\\n\\\\nFor several minutes he sat looking at the blank page. Then he fetched his daughter’s blue mug from the draining board and set it where the light fell.\\\"\\n}\",\n        \"refusal\": null,\n        \"annotations\": []\n      },\n      \"finish_reason\": \"stop\"\n    }\n  ],\n  \"usage\": {\n    \"prompt_tokens\": 430,\n    \"completion_tokens\": 402,\n    \"total_tokens\": 832,\n    \"prompt_tokens_details\": {\n      \"cached_tokens\": 0,\n      \"cache_write_tokens\": 0,\n      \"audio_tokens\": 0\n    },\n    \"completion_tokens_details\": {\n      \"reasoning_tokens\": 0,\n      \"audio_tokens\": 0,\n      \"accepted_prediction_tokens\": 0,\n      \"rejected_prediction_tokens\": 0\n    }\n  },\n  \"service_tier\": \"default\",\n  \"system_fingerprint\": null\n}\n",
+  "response_headers": {
+    "Date": "Tue, 22 Sep 2026 20:31:48 GMT",
+    "openai-processing-ms": "17569",
+    "x-request-id": "req_bc6513b274914a50b6b178ae572b0f7c"
+  },
+  "output": "{\n  \"rule\": \"Return this JSON object with the rule field unchanged and a new passage of about 250 words in the text field.\",\n  \"text\": \"Every morning, Martin wound the clock in the village hall, although nobody had hired the hall since March.\\n\\n“You’re keeping time for the chairs,” his daughter said.\\n\\n“They’re very punctual.”\\n\\nHe had once maintained the machinery at the biscuit factory. The clock required the same attention, on a less rewarding scale. Nothing warm came off it.\\n\\nIn June, a woman arrived to measure the hall for evening classes.\\n\\n“What sort?” Martin asked.\\n\\n“Painting. If anyone comes.”\\n\\nHe helped her unfold six tables.\\n\\nOn the first evening, four people came. Martin stayed in the kitchen, where the kettle had developed a habit of switching itself off too soon.\\n\\n“There’s a spare place,” the woman called.\\n\\n“I’m seeing to this.”\\n\\nThe following week she left paper and a brush beside his cup.\\n\\nHe painted the kettle. It looked like a distressed pigeon.\\n\\n“Good weight,” she said.\\n\\nHe suspected this was something teachers said when there was nothing else.\\n\\nStill, he came the next week.\\n\\nBy August, he had painted the fire extinguisher, three stacked chairs and the view through the kitchen hatch.\\n\\nHis daughter asked whether he might try a landscape.\\n\\n“I haven’t finished indoors.”\\n\\nWhen the classes stopped for winter, Martin found a parcel beside the clock key: paints, brushes, a small pad.\\n\\nThe card said, For your own time.\\n\\nHe took them home and cleared the newspapers from the kitchen table.\\n\\nFor several minutes he sat looking at the blank page. Then he fetched his daughter’s blue mug from the draining board and set it where the light fell.\"\n}",
+  "output_sha256": "8ddea59ffc95d65ffdcd433eaa150bb635d124ce5f31c4c7e3b15aba0ad80604",
+  "finish_reason": "stop",
+  "refusal": null,
+  "returned_model": "gpt-6-astra",
+  "usage": {
+    "prompt_tokens": 430,
+    "completion_tokens": 402,
+    "total_tokens": 832,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "audio_tokens": 0,
+      "accepted_prediction_tokens": 0,
+      "rejected_prediction_tokens": 0
+    }
+  },
+  "format": {
+    "json_object": true,
+    "rule_unchanged": true,
+    "passage_is_string": true,
+    "passage_sha256": "1cbf32b07ea26f9209b2df0319c1114919da78e10265818e8925b6588a58db85",
+    "passage_words": 259
+  },
+  "finished_at": "2026-09-22T20:31:44.717632+00:00",
+  "latency_seconds": 18.3039,
+  "usage_cost_upper_estimate_usd": 0.0244,
+  "stream_status": "active",
+  "budget": {
+    "usage_cost_upper_estimate_usd": 11.9804477,
+    "uncertain_cost_reserve_usd": 0.04533,
+    "in_flight_reserve_usd": 0.22974,
+    "limit_usd": 18.83
+  }
+}

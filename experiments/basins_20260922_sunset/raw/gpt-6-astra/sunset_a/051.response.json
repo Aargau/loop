@@ -1,0 +1,50 @@
+{
+  "model": "gpt-6-astra",
+  "seed": "sunset_a",
+  "hop": 51,
+  "http_status": 200,
+  "response_body": "{\n  \"id\": \"chatcmpl-ER1X8dSFd4SoiJfBf3dYAprvwmTlb\",\n  \"object\": \"chat.completion\",\n  \"created\": 1790109458,\n  \"model\": \"gpt-6-astra\",\n  \"choices\": [\n    {\n      \"index\": 0,\n      \"message\": {\n        \"role\": \"assistant\",\n        \"content\": \"{\\n  \\\"rule\\\": \\\"Return this JSON object with the rule field unchanged and a new passage of about 250 words in the text field.\\\",\\n  \\\"text\\\": \\\"The clock above the laundrette dryers had been eleven minutes slow for as long as Nina could remember. Her father said people waiting for washing weren’t going anywhere.\\\\n\\\\n“Some of them are,” she said.\\\\n\\\\nHe was sorting coins into paper sleeves. He pushed a stack towards her without answering.\\\\n\\\\nNina came after college on Thursdays. She used to bring homework, but the folding table was usually wet.\\\\n\\\\nOne evening, a woman in a green coat asked whether she could leave her sheets while she collected her son.\\\\n\\\\n“Back by six,” Nina’s father said.\\\\n\\\\nThe woman looked at the clock.\\\\n\\\\n“Proper six,” Nina added.\\\\n\\\\nAfter she had gone, Nina fetched the stepladder from behind the mop bucket.\\\\n\\\\n“Battery’s fine,” her father said.\\\\n\\\\n“I know.”\\\\n\\\\nThe clock left a pale circle on the wall. Nina turned the little wheel at the back, checked her phone, then moved the minute hand again.\\\\n\\\\nHer father watched from the counter.\\\\n\\\\n“It’ll only lose time.”\\\\n\\\\n“Then we’ll know how much.”\\\\n\\\\nAt six, the woman hadn’t returned. Her sheets sat folded in a blue bag.\\\\n\\\\nNina put on her jacket.\\\\n\\\\n“You go,” her father said. “I’ve got the till.”\\\\n\\\\nFrom the bus stop across the road, she saw him unlock the door for the woman and carry the bag out to her car.\\\\n\\\\nThe following Thursday, the clock showed the right time. Beneath it, on the counter, lay a packet of batteries with one missing.\\\\n\\\\n“Your tea’s by the sink,” her father said.\\\\n\\\\nNina took her books to the folding table. He had wiped it dry.\\\"\\n}\",\n        \"refusal\": null,\n        \"annotations\": []\n      },\n      \"finish_reason\": \"stop\"\n    }\n  ],\n  \"usage\": {\n    \"prompt_tokens\": 430,\n    \"completion_tokens\": 411,\n    \"total_tokens\": 841,\n    \"prompt_tokens_details\": {\n      \"cached_tokens\": 0,\n      \"cache_write_tokens\": 0,\n      \"audio_tokens\": 0\n    },\n    \"completion_tokens_details\": {\n      \"reasoning_tokens\": 0,\n      \"audio_tokens\": 0,\n      \"accepted_prediction_tokens\": 0,\n      \"rejected_prediction_tokens\": 0\n    }\n  },\n  \"service_tier\": \"default\",\n  \"system_fingerprint\": null\n}\n",
+  "response_headers": {
+    "Date": "Tue, 22 Sep 2026 20:37:53 GMT",
+    "openai-processing-ms": "17284",
+    "x-request-id": "req_d0f1e4d96a8940f1bfabaee6f188437b"
+  },
+  "output": "{\n  \"rule\": \"Return this JSON object with the rule field unchanged and a new passage of about 250 words in the text field.\",\n  \"text\": \"The clock above the laundrette dryers had been eleven minutes slow for as long as Nina could remember. Her father said people waiting for washing weren’t going anywhere.\\n\\n“Some of them are,” she said.\\n\\nHe was sorting coins into paper sleeves. He pushed a stack towards her without answering.\\n\\nNina came after college on Thursdays. She used to bring homework, but the folding table was usually wet.\\n\\nOne evening, a woman in a green coat asked whether she could leave her sheets while she collected her son.\\n\\n“Back by six,” Nina’s father said.\\n\\nThe woman looked at the clock.\\n\\n“Proper six,” Nina added.\\n\\nAfter she had gone, Nina fetched the stepladder from behind the mop bucket.\\n\\n“Battery’s fine,” her father said.\\n\\n“I know.”\\n\\nThe clock left a pale circle on the wall. Nina turned the little wheel at the back, checked her phone, then moved the minute hand again.\\n\\nHer father watched from the counter.\\n\\n“It’ll only lose time.”\\n\\n“Then we’ll know how much.”\\n\\nAt six, the woman hadn’t returned. Her sheets sat folded in a blue bag.\\n\\nNina put on her jacket.\\n\\n“You go,” her father said. “I’ve got the till.”\\n\\nFrom the bus stop across the road, she saw him unlock the door for the woman and carry the bag out to her car.\\n\\nThe following Thursday, the clock showed the right time. Beneath it, on the counter, lay a packet of batteries with one missing.\\n\\n“Your tea’s by the sink,” her father said.\\n\\nNina took her books to the folding table. He had wiped it dry.\"\n}",
+  "output_sha256": "67c14ea3a8595f2dea19af8ac787a334cde44db94a90eecbb2bacce9618a5ad1",
+  "finish_reason": "stop",
+  "refusal": null,
+  "returned_model": "gpt-6-astra",
+  "usage": {
+    "prompt_tokens": 430,
+    "completion_tokens": 411,
+    "total_tokens": 841,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "audio_tokens": 0,
+      "accepted_prediction_tokens": 0,
+      "rejected_prediction_tokens": 0
+    }
+  },
+  "format": {
+    "json_object": true,
+    "rule_unchanged": true,
+    "passage_is_string": true,
+    "passage_sha256": "884f470c681fc4090411c960ba7485482f485aeb325791d7f471063d9eed576f",
+    "passage_words": 259
+  },
+  "finished_at": "2026-09-22T20:37:49.412224+00:00",
+  "latency_seconds": 17.4234,
+  "usage_cost_upper_estimate_usd": 0.02485,
+  "stream_status": "active",
+  "budget": {
+    "usage_cost_upper_estimate_usd": 12.8469877,
+    "uncertain_cost_reserve_usd": 0.04533,
+    "in_flight_reserve_usd": 0.0,
+    "limit_usd": 18.83
+  }
+}

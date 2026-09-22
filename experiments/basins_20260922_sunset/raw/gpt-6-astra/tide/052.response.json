@@ -1,0 +1,50 @@
+{
+  "model": "gpt-6-astra",
+  "seed": "tide",
+  "hop": 52,
+  "http_status": 200,
+  "response_body": "{\n  \"id\": \"chatcmpl-ER1YXXtyz7IQmLgu2kGIInb9tluVX\",\n  \"object\": \"chat.completion\",\n  \"created\": 1790109545,\n  \"model\": \"gpt-6-astra\",\n  \"choices\": [\n    {\n      \"index\": 0,\n      \"message\": {\n        \"role\": \"assistant\",\n        \"content\": \"{\\n  \\\"rule\\\": \\\"Return this JSON object with the rule field unchanged and a new passage of about 250 words in the text field.\\\",\\n  \\\"text\\\": \\\"The man at the repair shop set my father's watch on a square of felt.\\\\n\\\\n“Nothing wrong with the movement,” he said. “Just needs wearing.”\\\\n\\\\nI had brought it in because it stopped every night.\\\\n\\\\nHe turned the crown between two fingers, then held the watch to his ear.\\\\n\\\\n“Automatic. Your arm does the work.”\\\\n\\\\n“My father wore it every day.”\\\\n\\\\n“That would explain it.”\\\\n\\\\nHe passed it across the counter. The strap had kept the shape of my father's wrist, wider than mine, with a pale crease at the buckle hole.\\\\n\\\\n“Can you shorten it?”\\\\n\\\\n“New strap would be better.”\\\\n\\\\nI rubbed the worn edge with my thumb.\\\\n\\\\n“Or I can put another hole in this one.”\\\\n\\\\nHe took a small punch from a drawer. While he worked, I looked at the clocks behind him. None agreed. A brass one showed twenty past nine; the kitchen clock above it said twelve.\\\\n\\\\n“Do you want a receipt?”\\\\n\\\\n“How much?”\\\\n\\\\n“Don't worry about it.”\\\\n\\\\nOutside, I fastened the watch. It sat just above the bone, where I wasn't used to anything touching me.\\\\n\\\\nAt home I started to take it off before washing the lunch dishes. My father had always left his on. I remembered the wet strap darkening, his hand disappearing into the cloudy water for another spoon.\\\\n\\\\nI put mine on the windowsill.\\\\n\\\\nWhen the dishes were done, I dried my hands and went upstairs. Halfway up, I stopped.\\\\n\\\\nThe watch was still beside the washing-up liquid.\\\\n\\\\nI came back for it and fastened it in the new hole.\\\"\\n}\",\n        \"refusal\": null,\n        \"annotations\": []\n      },\n      \"finish_reason\": \"stop\"\n    }\n  ],\n  \"usage\": {\n    \"prompt_tokens\": 419,\n    \"completion_tokens\": 407,\n    \"total_tokens\": 826,\n    \"prompt_tokens_details\": {\n      \"cached_tokens\": 0,\n      \"cache_write_tokens\": 0,\n      \"audio_tokens\": 0\n    },\n    \"completion_tokens_details\": {\n      \"reasoning_tokens\": 0,\n      \"audio_tokens\": 0,\n      \"accepted_prediction_tokens\": 0,\n      \"rejected_prediction_tokens\": 0\n    }\n  },\n  \"service_tier\": \"default\",\n  \"system_fingerprint\": null\n}\n",
+  "response_headers": {
+    "Date": "Tue, 22 Sep 2026 20:39:18 GMT",
+    "openai-processing-ms": "13995",
+    "x-request-id": "req_6fb6948d2e2843e89ff1fd911574bc05"
+  },
+  "output": "{\n  \"rule\": \"Return this JSON object with the rule field unchanged and a new passage of about 250 words in the text field.\",\n  \"text\": \"The man at the repair shop set my father's watch on a square of felt.\\n\\n“Nothing wrong with the movement,” he said. “Just needs wearing.”\\n\\nI had brought it in because it stopped every night.\\n\\nHe turned the crown between two fingers, then held the watch to his ear.\\n\\n“Automatic. Your arm does the work.”\\n\\n“My father wore it every day.”\\n\\n“That would explain it.”\\n\\nHe passed it across the counter. The strap had kept the shape of my father's wrist, wider than mine, with a pale crease at the buckle hole.\\n\\n“Can you shorten it?”\\n\\n“New strap would be better.”\\n\\nI rubbed the worn edge with my thumb.\\n\\n“Or I can put another hole in this one.”\\n\\nHe took a small punch from a drawer. While he worked, I looked at the clocks behind him. None agreed. A brass one showed twenty past nine; the kitchen clock above it said twelve.\\n\\n“Do you want a receipt?”\\n\\n“How much?”\\n\\n“Don't worry about it.”\\n\\nOutside, I fastened the watch. It sat just above the bone, where I wasn't used to anything touching me.\\n\\nAt home I started to take it off before washing the lunch dishes. My father had always left his on. I remembered the wet strap darkening, his hand disappearing into the cloudy water for another spoon.\\n\\nI put mine on the windowsill.\\n\\nWhen the dishes were done, I dried my hands and went upstairs. Halfway up, I stopped.\\n\\nThe watch was still beside the washing-up liquid.\\n\\nI came back for it and fastened it in the new hole.\"\n}",
+  "output_sha256": "17cdefe14f88699561992da66a31f0267e9919ac185983d350ff2e432cb87828",
+  "finish_reason": "stop",
+  "refusal": null,
+  "returned_model": "gpt-6-astra",
+  "usage": {
+    "prompt_tokens": 419,
+    "completion_tokens": 407,
+    "total_tokens": 826,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "audio_tokens": 0,
+      "accepted_prediction_tokens": 0,
+      "rejected_prediction_tokens": 0
+    }
+  },
+  "format": {
+    "json_object": true,
+    "rule_unchanged": true,
+    "passage_is_string": true,
+    "passage_sha256": "7935d4f6468292efd97cfa725a35712543bbb17dc839f8e4e5d76181402448d8",
+    "passage_words": 260
+  },
+  "finished_at": "2026-09-22T20:39:14.821118+00:00",
+  "latency_seconds": 14.1537,
+  "usage_cost_upper_estimate_usd": 0.02454,
+  "stream_status": "active",
+  "budget": {
+    "usage_cost_upper_estimate_usd": 12.9727377,
+    "uncertain_cost_reserve_usd": 0.04533,
+    "in_flight_reserve_usd": 0.0,
+    "limit_usd": 18.83
+  }
+}

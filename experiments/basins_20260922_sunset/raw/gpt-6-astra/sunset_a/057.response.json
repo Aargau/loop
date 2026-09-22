@@ -1,0 +1,50 @@
+{
+  "model": "gpt-6-astra",
+  "seed": "sunset_a",
+  "hop": 57,
+  "http_status": 200,
+  "response_body": "{\n  \"id\": \"chatcmpl-ER1btKFtQsTt2O1zaT4mlSLweRcyd\",\n  \"object\": \"chat.completion\",\n  \"created\": 1790109753,\n  \"model\": \"gpt-6-astra\",\n  \"choices\": [\n    {\n      \"index\": 0,\n      \"message\": {\n        \"role\": \"assistant\",\n        \"content\": \"{\\n  \\\"rule\\\": \\\"Return this JSON object with the rule field unchanged and a new passage of about 250 words in the text field.\\\",\\n  \\\"text\\\": \\\"The swimming pool was closing for six weeks to replace the roof. On Friday, Ruth brought her usual twenty-pence piece for the locker, though the notice said they were free now.\\\\n\\\\n“Last one?” the attendant asked.\\\\n\\\\n“For a while.”\\\\n\\\\nHe handed her a yellow wristband.\\\\n\\\\nShe had been coming on Fridays since her husband stopped driving. At first she swam while he waited in the café. Later she came alone, and nobody at the desk asked why.\\\\n\\\\nIn the changing room, a woman was folding a dress into a square small enough to fit inside her shoe.\\\\n\\\\n“Apparently the new roof opens,” she said.\\\\n\\\\nRuth looked up at the brown stain above the benches.\\\\n\\\\n“This one does too.”\\\\n\\\\nThe woman laughed.\\\\n\\\\nOnly three lanes were occupied. Ruth lowered herself down the steps, pausing when the water reached her waist. She always forgot this part.\\\\n\\\\nShe swam twelve lengths, then two more because she had lost count and preferred to owe herself nothing.\\\\n\\\\nAt the shallow end, an instructor was collecting floats. One escaped and drifted towards Ruth. She pushed it back.\\\\n\\\\n“Thank you,” he said.\\\\n\\\\nShe stayed with her elbows on the edge until the whistle blew.\\\\n\\\\nOutside, her hair damp beneath her hat, she found the twenty-pence piece in her coat pocket. The café shutters were halfway down.\\\\n\\\\n“Still time for tea?” she asked.\\\\n\\\\nThe attendant glanced at the clock, then lifted the shutter.\\\\n\\\\nRuth chose a table beside the window. Across the road, two men were unloading scaffolding. She watched them carry the long poles together, one walking backwards.\\\"\\n}\",\n        \"refusal\": null,\n        \"annotations\": []\n      },\n      \"finish_reason\": \"stop\"\n    }\n  ],\n  \"usage\": {\n    \"prompt_tokens\": 423,\n    \"completion_tokens\": 398,\n    \"total_tokens\": 821,\n    \"prompt_tokens_details\": {\n      \"cached_tokens\": 0,\n      \"cache_write_tokens\": 0,\n      \"audio_tokens\": 0\n    },\n    \"completion_tokens_details\": {\n      \"reasoning_tokens\": 0,\n      \"audio_tokens\": 0,\n      \"accepted_prediction_tokens\": 0,\n      \"rejected_prediction_tokens\": 0\n    }\n  },\n  \"service_tier\": \"default\",\n  \"system_fingerprint\": null\n}\n",
+  "response_headers": {
+    "Date": "Tue, 22 Sep 2026 20:42:48 GMT",
+    "openai-processing-ms": "14473",
+    "x-request-id": "req_8abb5b9a59f349e9b763174754f2288a"
+  },
+  "output": "{\n  \"rule\": \"Return this JSON object with the rule field unchanged and a new passage of about 250 words in the text field.\",\n  \"text\": \"The swimming pool was closing for six weeks to replace the roof. On Friday, Ruth brought her usual twenty-pence piece for the locker, though the notice said they were free now.\\n\\n“Last one?” the attendant asked.\\n\\n“For a while.”\\n\\nHe handed her a yellow wristband.\\n\\nShe had been coming on Fridays since her husband stopped driving. At first she swam while he waited in the café. Later she came alone, and nobody at the desk asked why.\\n\\nIn the changing room, a woman was folding a dress into a square small enough to fit inside her shoe.\\n\\n“Apparently the new roof opens,” she said.\\n\\nRuth looked up at the brown stain above the benches.\\n\\n“This one does too.”\\n\\nThe woman laughed.\\n\\nOnly three lanes were occupied. Ruth lowered herself down the steps, pausing when the water reached her waist. She always forgot this part.\\n\\nShe swam twelve lengths, then two more because she had lost count and preferred to owe herself nothing.\\n\\nAt the shallow end, an instructor was collecting floats. One escaped and drifted towards Ruth. She pushed it back.\\n\\n“Thank you,” he said.\\n\\nShe stayed with her elbows on the edge until the whistle blew.\\n\\nOutside, her hair damp beneath her hat, she found the twenty-pence piece in her coat pocket. The café shutters were halfway down.\\n\\n“Still time for tea?” she asked.\\n\\nThe attendant glanced at the clock, then lifted the shutter.\\n\\nRuth chose a table beside the window. Across the road, two men were unloading scaffolding. She watched them carry the long poles together, one walking backwards.\"\n}",
+  "output_sha256": "9024d812d5e4269c1a9d7866ec77563361a47cbfb3aee1e09cc36f20cf7a2dba",
+  "finish_reason": "stop",
+  "refusal": null,
+  "returned_model": "gpt-6-astra",
+  "usage": {
+    "prompt_tokens": 423,
+    "completion_tokens": 398,
+    "total_tokens": 821,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "audio_tokens": 0,
+      "accepted_prediction_tokens": 0,
+      "rejected_prediction_tokens": 0
+    }
+  },
+  "format": {
+    "json_object": true,
+    "rule_unchanged": true,
+    "passage_is_string": true,
+    "passage_sha256": "59a41d79f8a0bffb19a6c2cda6f2090ba6a2bdb64ec394cccff9380212027445",
+    "passage_words": 261
+  },
+  "finished_at": "2026-09-22T20:42:43.974060+00:00",
+  "latency_seconds": 14.5846,
+  "usage_cost_upper_estimate_usd": 0.02413,
+  "stream_status": "active",
+  "budget": {
+    "usage_cost_upper_estimate_usd": 13.2970777,
+    "uncertain_cost_reserve_usd": 0.04533,
+    "in_flight_reserve_usd": 0.0,
+    "limit_usd": 18.83
+  }
+}

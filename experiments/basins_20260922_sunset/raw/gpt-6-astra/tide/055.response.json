@@ -1,0 +1,50 @@
+{
+  "model": "gpt-6-astra",
+  "seed": "tide",
+  "hop": 55,
+  "http_status": 200,
+  "response_body": "{\n  \"id\": \"chatcmpl-ER1apIHA0LUFFre9fhHvkcto8xEzW\",\n  \"object\": \"chat.completion\",\n  \"created\": 1790109687,\n  \"model\": \"gpt-6-astra\",\n  \"choices\": [\n    {\n      \"index\": 0,\n      \"message\": {\n        \"role\": \"assistant\",\n        \"content\": \"{\\n  \\\"rule\\\": \\\"Return this JSON object with the rule field unchanged and a new passage of about 250 words in the text field.\\\",\\n  \\\"text\\\": \\\"The woman at the allotment gate asked which plot was mine.\\\\n\\\\n“Seventeen,” I said. “It was my mother's.”\\\\n\\\\nShe moved her wheelbarrow so I could get past.\\\\n\\\\n“There's a key for the shed. Under the brick.”\\\\n\\\\nI had brought bin bags and a pair of gloves. The council letter said I had until the end of the month to clear it.\\\\n\\\\nInside the shed were three spades, a folding chair and a calendar from the previous year. My mother had written planting dates in the squares. On a shelf stood a mug with teaspoons in it, all dark at one end.\\\\n\\\\nI put the calendar in a bag.\\\\n\\\\nThe woman appeared at the door holding two courgettes.\\\\n\\\\n“These are yours.”\\\\n\\\\n“I don't really cook.”\\\\n\\\\n“They'll keep a few days.”\\\\n\\\\nShe laid them on the chair and looked at the bags.\\\\n\\\\n“Are you giving it up?”\\\\n\\\\n“I work Saturdays.”\\\\n\\\\n“You can come other days.”\\\\n\\\\nFrom somewhere beyond the shed came the noise of a hose being dragged along a path.\\\\n\\\\n“I wouldn't know what to do,” I said.\\\\n\\\\nThe woman pointed at a patch beside the door.\\\\n\\\\n“Those onions can come up.”\\\\n\\\\nI followed her outside. She loosened one with a fork, then passed the fork to me.\\\\n\\\\nBy noon I had filled half a bag. She told me to leave it open or they would sweat.\\\\n\\\\nBefore locking the shed, I took the calendar out of the rubbish. I hung it back on its nail, although the dates were no use now.\\\\n\\\\nAt the gate I asked the woman when she usually came.\\\"\\n}\",\n        \"refusal\": null,\n        \"annotations\": []\n      },\n      \"finish_reason\": \"stop\"\n    }\n  ],\n  \"usage\": {\n    \"prompt_tokens\": 410,\n    \"completion_tokens\": 406,\n    \"total_tokens\": 816,\n    \"prompt_tokens_details\": {\n      \"cached_tokens\": 0,\n      \"cache_write_tokens\": 0,\n      \"audio_tokens\": 0\n    },\n    \"completion_tokens_details\": {\n      \"reasoning_tokens\": 0,\n      \"audio_tokens\": 0,\n      \"accepted_prediction_tokens\": 0,\n      \"rejected_prediction_tokens\": 0\n    }\n  },\n  \"service_tier\": \"default\",\n  \"system_fingerprint\": null\n}\n",
+  "response_headers": {
+    "Date": "Tue, 22 Sep 2026 20:41:40 GMT",
+    "openai-processing-ms": "13483",
+    "x-request-id": "req_551efa4a2a834047a634978c5bfa7565"
+  },
+  "output": "{\n  \"rule\": \"Return this JSON object with the rule field unchanged and a new passage of about 250 words in the text field.\",\n  \"text\": \"The woman at the allotment gate asked which plot was mine.\\n\\n“Seventeen,” I said. “It was my mother's.”\\n\\nShe moved her wheelbarrow so I could get past.\\n\\n“There's a key for the shed. Under the brick.”\\n\\nI had brought bin bags and a pair of gloves. The council letter said I had until the end of the month to clear it.\\n\\nInside the shed were three spades, a folding chair and a calendar from the previous year. My mother had written planting dates in the squares. On a shelf stood a mug with teaspoons in it, all dark at one end.\\n\\nI put the calendar in a bag.\\n\\nThe woman appeared at the door holding two courgettes.\\n\\n“These are yours.”\\n\\n“I don't really cook.”\\n\\n“They'll keep a few days.”\\n\\nShe laid them on the chair and looked at the bags.\\n\\n“Are you giving it up?”\\n\\n“I work Saturdays.”\\n\\n“You can come other days.”\\n\\nFrom somewhere beyond the shed came the noise of a hose being dragged along a path.\\n\\n“I wouldn't know what to do,” I said.\\n\\nThe woman pointed at a patch beside the door.\\n\\n“Those onions can come up.”\\n\\nI followed her outside. She loosened one with a fork, then passed the fork to me.\\n\\nBy noon I had filled half a bag. She told me to leave it open or they would sweat.\\n\\nBefore locking the shed, I took the calendar out of the rubbish. I hung it back on its nail, although the dates were no use now.\\n\\nAt the gate I asked the woman when she usually came.\"\n}",
+  "output_sha256": "5a4c8bbe8b532cc1fb2cf2ac607159d008eabf1398884b04926e405b9c2dfd8d",
+  "finish_reason": "stop",
+  "refusal": null,
+  "returned_model": "gpt-6-astra",
+  "usage": {
+    "prompt_tokens": 410,
+    "completion_tokens": 406,
+    "total_tokens": 816,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "audio_tokens": 0,
+      "accepted_prediction_tokens": 0,
+      "rejected_prediction_tokens": 0
+    }
+  },
+  "format": {
+    "json_object": true,
+    "rule_unchanged": true,
+    "passage_is_string": true,
+    "passage_sha256": "dfd56308f0d6e2498224864cb1d0c800eb450cd31309b56e507f66b0ee898eaf",
+    "passage_words": 263
+  },
+  "finished_at": "2026-09-22T20:41:36.783833+00:00",
+  "latency_seconds": 13.6137,
+  "usage_cost_upper_estimate_usd": 0.0244,
+  "stream_status": "active",
+  "budget": {
+    "usage_cost_upper_estimate_usd": 13.1986077,
+    "uncertain_cost_reserve_usd": 0.04533,
+    "in_flight_reserve_usd": 0.0,
+    "limit_usd": 18.83
+  }
+}

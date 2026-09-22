@@ -1,0 +1,50 @@
+{
+  "model": "gpt-6-astra",
+  "seed": "tide",
+  "hop": 57,
+  "http_status": 200,
+  "response_body": "{\n  \"id\": \"chatcmpl-ER1cRHSkLjtkYkAY6DWV5oht452aN\",\n  \"object\": \"chat.completion\",\n  \"created\": 1790109787,\n  \"model\": \"gpt-6-astra\",\n  \"choices\": [\n    {\n      \"index\": 0,\n      \"message\": {\n        \"role\": \"assistant\",\n        \"content\": \"{\\n  \\\"rule\\\": \\\"Return this JSON object with the rule field unchanged and a new passage of about 250 words in the text field.\\\",\\n  \\\"text\\\": \\\"The allotment secretary rang to ask whether I wanted my mother's plot.\\\\n\\\\n“There's a waiting list,” she said. “But we give family first refusal.”\\\\n\\\\nI told her I'd go and look.\\\\n\\\\nThe key was still on my ring, between the back door and a small one nobody could identify. At the gate I had to pull the bolt towards me before it would turn.\\\\n\\\\nHer plot was near the water tank. Someone had cut the grass along the edge, but the beds were full of weeds.\\\\n\\\\nA man working opposite raised his hand.\\\\n\\\\n“Your mum's beans did well last year.”\\\\n\\\\n“Yes,” I said, although I hadn't known.\\\\n\\\\nInside the shed, her gloves lay on an upturned bucket. One had stiffened around a pinch of soil. There were plant labels in a margarine tub, each washed clean.\\\\n\\\\nI'd brought a roll of bin bags. I opened one and put in a split flowerpot, then took it out because there were seedlings growing in it.\\\\n\\\\nThe man came over with two mugs.\\\\n\\\\n“No milk, I'm afraid.”\\\\n\\\\nWe stood beside the shed. He told me which tap worked and where people left spare produce.\\\\n\\\\n“I'm not sure I'll keep it,” I said.\\\\n\\\\nHe nodded. “It's a fair bit.”\\\\n\\\\nAfter he'd gone back, I tipped the rainwater out of a tray. Beneath it was a packet of radish seeds, folded shut with a clothes peg.\\\\n\\\\nI rang the secretary from the car.\\\\n\\\\n“Could I have until Monday?”\\\\n\\\\nShe said that would be fine.\\\\n\\\\nI put the seeds in the glove compartment, then moved them to the passenger seat.\\\"\\n}\",\n        \"refusal\": null,\n        \"annotations\": []\n      },\n      \"finish_reason\": \"stop\"\n    }\n  ],\n  \"usage\": {\n    \"prompt_tokens\": 397,\n    \"completion_tokens\": 402,\n    \"total_tokens\": 799,\n    \"prompt_tokens_details\": {\n      \"cached_tokens\": 0,\n      \"cache_write_tokens\": 0,\n      \"audio_tokens\": 0\n    },\n    \"completion_tokens_details\": {\n      \"reasoning_tokens\": 0,\n      \"audio_tokens\": 0,\n      \"accepted_prediction_tokens\": 0,\n      \"rejected_prediction_tokens\": 0\n    }\n  },\n  \"service_tier\": \"default\",\n  \"system_fingerprint\": null\n}\n",
+  "response_headers": {
+    "Date": "Tue, 22 Sep 2026 20:43:26 GMT",
+    "openai-processing-ms": "19209",
+    "x-request-id": "req_3efdf7afb0e842519bb6d8830fb8bc9f"
+  },
+  "output": "{\n  \"rule\": \"Return this JSON object with the rule field unchanged and a new passage of about 250 words in the text field.\",\n  \"text\": \"The allotment secretary rang to ask whether I wanted my mother's plot.\\n\\n“There's a waiting list,” she said. “But we give family first refusal.”\\n\\nI told her I'd go and look.\\n\\nThe key was still on my ring, between the back door and a small one nobody could identify. At the gate I had to pull the bolt towards me before it would turn.\\n\\nHer plot was near the water tank. Someone had cut the grass along the edge, but the beds were full of weeds.\\n\\nA man working opposite raised his hand.\\n\\n“Your mum's beans did well last year.”\\n\\n“Yes,” I said, although I hadn't known.\\n\\nInside the shed, her gloves lay on an upturned bucket. One had stiffened around a pinch of soil. There were plant labels in a margarine tub, each washed clean.\\n\\nI'd brought a roll of bin bags. I opened one and put in a split flowerpot, then took it out because there were seedlings growing in it.\\n\\nThe man came over with two mugs.\\n\\n“No milk, I'm afraid.”\\n\\nWe stood beside the shed. He told me which tap worked and where people left spare produce.\\n\\n“I'm not sure I'll keep it,” I said.\\n\\nHe nodded. “It's a fair bit.”\\n\\nAfter he'd gone back, I tipped the rainwater out of a tray. Beneath it was a packet of radish seeds, folded shut with a clothes peg.\\n\\nI rang the secretary from the car.\\n\\n“Could I have until Monday?”\\n\\nShe said that would be fine.\\n\\nI put the seeds in the glove compartment, then moved them to the passenger seat.\"\n}",
+  "output_sha256": "9dc7d157687f85cc4baf3671133664ddd5a2377e0e379fe515b4169b7a22dfff",
+  "finish_reason": "stop",
+  "refusal": null,
+  "returned_model": "gpt-6-astra",
+  "usage": {
+    "prompt_tokens": 397,
+    "completion_tokens": 402,
+    "total_tokens": 799,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "audio_tokens": 0,
+      "accepted_prediction_tokens": 0,
+      "rejected_prediction_tokens": 0
+    }
+  },
+  "format": {
+    "json_object": true,
+    "rule_unchanged": true,
+    "passage_is_string": true,
+    "passage_sha256": "48b206fa873c753e18331ffa14fd0d671386070b1f4a07c27f47d850a138e449",
+    "passage_words": 264
+  },
+  "finished_at": "2026-09-22T20:43:22.017970+00:00",
+  "latency_seconds": 19.5833,
+  "usage_cost_upper_estimate_usd": 0.02407,
+  "stream_status": "active",
+  "budget": {
+    "usage_cost_upper_estimate_usd": 13.3464177,
+    "uncertain_cost_reserve_usd": 0.04533,
+    "in_flight_reserve_usd": 0.0,
+    "limit_usd": 18.83
+  }
+}

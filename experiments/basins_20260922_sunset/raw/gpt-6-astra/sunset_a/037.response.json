@@ -1,0 +1,50 @@
+{
+  "model": "gpt-6-astra",
+  "seed": "sunset_a",
+  "hop": 37,
+  "http_status": 200,
+  "response_body": "{\n  \"id\": \"chatcmpl-ER1LEo7uPyExGqyVmwWt7EuVwS0ok\",\n  \"object\": \"chat.completion\",\n  \"created\": 1790108720,\n  \"model\": \"gpt-6-astra\",\n  \"choices\": [\n    {\n      \"index\": 0,\n      \"message\": {\n        \"role\": \"assistant\",\n        \"content\": \"{\\n  \\\"rule\\\": \\\"Return this JSON object with the rule field unchanged and a new passage of about 250 words in the text field.\\\",\\n  \\\"text\\\": \\\"The first thing Nina repaired after retiring was a toaster that had never belonged to her.\\\\n\\\\nSomeone had left it beside the bins with a note: WORKS IF YOU HOLD THE LEVER.\\\\n\\\\nShe took it upstairs, replaced a spring, and returned it to the entrance hall with another note: NOW YOU DON’T HAVE TO.\\\\n\\\\nBy Friday, a desk lamp appeared outside her door.\\\\n\\\\nThen a radio. Then a clock shaped like a pear.\\\\n\\\\nNina put up a sign: SMALL ELECTRICAL ITEMS ONLY. NO PRINTERS.\\\\n\\\\nShe had spent forty years fixing hospital equipment. Printers, she felt, could answer to someone else.\\\\n\\\\nMost people left their names. The person who brought the blue fan left three oranges instead.\\\\n\\\\nIn July, the repairs stopped.\\\\n\\\\nNina assumed everyone’s things were working. She watered her plants. She took apart her own perfectly serviceable kettle and put it back together.\\\\n\\\\nOn the hottest afternoon of the year, there was a knock.\\\\n\\\\nA girl from the fourth floor stood holding the blue fan.\\\\n\\\\n“Again?” Nina asked.\\\\n\\\\n“No. Mum says you probably need it more. Your windows face the sun.”\\\\n\\\\nBehind the girl stood a small boy carrying an extension lead with both hands.\\\\n\\\\nThey installed the fan beside Nina’s chair. The boy insisted on testing all three speeds.\\\\n\\\\nAt the door, the girl paused.\\\\n\\\\n“Have you got anything broken?”\\\\n\\\\nNina looked around the flat.\\\\n\\\\n“The cupboard handle’s loose.”\\\\n\\\\n“I can do screws,” the girl said.\\\\n\\\\nNina fetched her toolbox. Then she put three glasses on the kitchen table and cut the last orange into wedges.\\\"\\n}\",\n        \"refusal\": null,\n        \"annotations\": []\n      },\n      \"finish_reason\": \"stop\"\n    }\n  ],\n  \"usage\": {\n    \"prompt_tokens\": 429,\n    \"completion_tokens\": 404,\n    \"total_tokens\": 833,\n    \"prompt_tokens_details\": {\n      \"cached_tokens\": 0,\n      \"cache_write_tokens\": 0,\n      \"audio_tokens\": 0\n    },\n    \"completion_tokens_details\": {\n      \"reasoning_tokens\": 0,\n      \"audio_tokens\": 0,\n      \"accepted_prediction_tokens\": 0,\n      \"rejected_prediction_tokens\": 0\n    }\n  },\n  \"service_tier\": \"default\",\n  \"system_fingerprint\": null\n}\n",
+  "response_headers": {
+    "Date": "Tue, 22 Sep 2026 20:25:36 GMT",
+    "openai-processing-ms": "16695",
+    "x-request-id": "req_cf00700eb630469ab3fe1a13f081011e"
+  },
+  "output": "{\n  \"rule\": \"Return this JSON object with the rule field unchanged and a new passage of about 250 words in the text field.\",\n  \"text\": \"The first thing Nina repaired after retiring was a toaster that had never belonged to her.\\n\\nSomeone had left it beside the bins with a note: WORKS IF YOU HOLD THE LEVER.\\n\\nShe took it upstairs, replaced a spring, and returned it to the entrance hall with another note: NOW YOU DON’T HAVE TO.\\n\\nBy Friday, a desk lamp appeared outside her door.\\n\\nThen a radio. Then a clock shaped like a pear.\\n\\nNina put up a sign: SMALL ELECTRICAL ITEMS ONLY. NO PRINTERS.\\n\\nShe had spent forty years fixing hospital equipment. Printers, she felt, could answer to someone else.\\n\\nMost people left their names. The person who brought the blue fan left three oranges instead.\\n\\nIn July, the repairs stopped.\\n\\nNina assumed everyone’s things were working. She watered her plants. She took apart her own perfectly serviceable kettle and put it back together.\\n\\nOn the hottest afternoon of the year, there was a knock.\\n\\nA girl from the fourth floor stood holding the blue fan.\\n\\n“Again?” Nina asked.\\n\\n“No. Mum says you probably need it more. Your windows face the sun.”\\n\\nBehind the girl stood a small boy carrying an extension lead with both hands.\\n\\nThey installed the fan beside Nina’s chair. The boy insisted on testing all three speeds.\\n\\nAt the door, the girl paused.\\n\\n“Have you got anything broken?”\\n\\nNina looked around the flat.\\n\\n“The cupboard handle’s loose.”\\n\\n“I can do screws,” the girl said.\\n\\nNina fetched her toolbox. Then she put three glasses on the kitchen table and cut the last orange into wedges.\"\n}",
+  "output_sha256": "0f62899aafe4b22606aaa49e580089d4803df5c923df20287a78e72a80018b1d",
+  "finish_reason": "stop",
+  "refusal": null,
+  "returned_model": "gpt-6-astra",
+  "usage": {
+    "prompt_tokens": 429,
+    "completion_tokens": 404,
+    "total_tokens": 833,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "audio_tokens": 0,
+      "accepted_prediction_tokens": 0,
+      "rejected_prediction_tokens": 0
+    }
+  },
+  "format": {
+    "json_object": true,
+    "rule_unchanged": true,
+    "passage_is_string": true,
+    "passage_sha256": "3b50adef43924547d12c8d3eaec299b7490b0ede774678c2168b5099fa5adc39",
+    "passage_words": 258
+  },
+  "finished_at": "2026-09-22T20:25:32.917611+00:00",
+  "latency_seconds": 16.8236,
+  "usage_cost_upper_estimate_usd": 0.02449,
+  "stream_status": "active",
+  "budget": {
+    "usage_cost_upper_estimate_usd": 10.5035677,
+    "uncertain_cost_reserve_usd": 0.04533,
+    "in_flight_reserve_usd": 0.22474,
+    "limit_usd": 18.83
+  }
+}

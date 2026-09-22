@@ -1,0 +1,3976 @@
+{
+  "generated_at": "2026-09-22T20:46:20.654485+00:00",
+  "audit_version": 1,
+  "run_finished_receipt_present": true,
+  "observation_status": "Finalized run receipt present.",
+  "audit_clean_for_readable_snapshot": true,
+  "errors": [],
+  "read_issues": [],
+  "warnings": [],
+  "definitions": {
+    "attempts": "Request files, including pending or unreadable requests.",
+    "completed_hops": "Nonempty visible output, normal finish, known usage cost, no recorded exception; format may be invalid.",
+    "valid_passages": "Completed hops whose parsed JSON has the original rule and nonempty string text.",
+    "verified": "No per-request or receipt integrity error and request is readable.",
+    "pending": "Request without a readable response receipt: outcome and billing unresolved; not classified as an API failure.",
+    "latency": "All readable response receipts, including failures; excludes pending requests.",
+    "cost": "Runner's conservative usage estimate, independently recomputed; not a provider invoice."
+  },
+  "totals": {
+    "attempts": 849,
+    "response_files": 849,
+    "receipts": 849,
+    "completed_hops": 848,
+    "completed_string_passages": 591,
+    "valid_passages": 590,
+    "verified_completed_hops": 848,
+    "verified_valid_passages": 590,
+    "errors": 1,
+    "truncations": 0,
+    "refusals": 0,
+    "pending_or_unreadable_receipts": 0,
+    "noncompleted_receipts": 1,
+    "receipts_without_known_usage_cost": 1,
+    "usage_cost_upper_estimate_usd": 13.5712877,
+    "uncertain_cost_reserve_usd": 0.04533,
+    "pending_cost_reserve_usd": 0.0,
+    "budget_limit_usd": 18.83
+  },
+  "streams": {
+    "gpt-6-luna/sunset_a": {
+      "model": "gpt-6-luna",
+      "seed": "sunset_a",
+      "counts": {
+        "attempts": 60,
+        "response_files": 60,
+        "receipts": 60,
+        "completed_hops": 60,
+        "completed_string_passages": 42,
+        "valid_passages": 42,
+        "verified_completed_hops": 60,
+        "verified_valid_passages": 42,
+        "errors": 0,
+        "truncations": 0,
+        "refusals": 0,
+        "pending_or_unreadable_receipts": 0,
+        "noncompleted_receipts": 0,
+        "receipts_without_known_usage_cost": 0
+      },
+      "summary_status": "hop_limit",
+      "receipt_status_counts": {
+        "active": 60
+      },
+      "returned_models": [
+        "gpt-6-luna"
+      ],
+      "pending_hops": [],
+      "noncompleted_receipts": [],
+      "excluded_completed_passages": [
+        {
+          "hop": 14,
+          "reasons": [
+            "invalid_json"
+          ]
+        },
+        {
+          "hop": 15,
+          "reasons": [
+            "invalid_json"
+          ]
+        },
+        {
+          "hop": 16,
+          "reasons": [
+            "invalid_json"
+          ]
+        },
+        {
+          "hop": 17,
+          "reasons": [
+            "invalid_json"
+          ]
+        },
+        {
+          "hop": 18,
+          "reasons": [
+            "invalid_json"
+          ]
+        },
+        {
+          "hop": 19,
+          "reasons": [
+            "invalid_json"
+          ]
+        },
+        {
+          "hop": 20,
+          "reasons": [
+            "invalid_json"
+          ]
+        },
+        {
+          "hop": 21,
+          "reasons": [
+            "invalid_json"
+          ]
+        },
+        {
+          "hop": 22,
+          "reasons": [
+            "invalid_json"
+          ]
+        },
+        {
+          "hop": 23,
+          "reasons": [
+            "invalid_json"
+          ]
+        },
+        {
+          "hop": 24,
+          "reasons": [
+            "invalid_json"
+          ]
+        },
+        {
+          "hop": 25,
+          "reasons": [
+            "invalid_json"
+          ]
+        },
+        {
+          "hop": 26,
+          "reasons": [
+            "invalid_json"
+          ]
+        },
+        {
+          "hop": 27,
+          "reasons": [
+            "invalid_json"
+          ]
+        },
+        {
+          "hop": 28,
+          "reasons": [
+            "invalid_json"
+          ]
+        },
+        {
+          "hop": 29,
+          "reasons": [
+            "invalid_json"
+          ]
+        },
+        {
+          "hop": 30,
+          "reasons": [
+            "invalid_json"
+          ]
+        },
+        {
+          "hop": 31,
+          "reasons": [
+            "invalid_json"
+          ]
+        }
+      ],
+      "passage_metric_population": "Verified completed passages with an unchanged rule and nonempty string text.",
+      "exact_recurrence": {
+        "passages": 42,
+        "unique": 42,
+        "repeated_occurrences_after_first": 0,
+        "first_repeat_hop": null,
+        "repeated_states": []
+      },
+      "case_whitespace_normalized_recurrence": {
+        "passages": 42,
+        "unique": 42,
+        "repeated_occurrences_after_first": 0,
+        "first_repeat_hop": null,
+        "repeated_states": []
+      },
+      "passage_word_lengths": {
+        "n": 42,
+        "min": 254,
+        "mean": 273.4761904761905,
+        "median": 275.0,
+        "max": 288
+      },
+      "latency_seconds_all_receipts": {
+        "n": 60,
+        "min": 3.3199,
+        "mean": 5.70695,
+        "median": 5.5741,
+        "max": 14.8925
+      },
+      "usage_cost_upper_estimate_usd": 0.0151868,
+      "uncertain_cost_reserve_usd": 0.0,
+      "pending_cost_reserve_usd": 0.0,
+      "lexical_tail": {
+        "selected_completed_hops": [
+          41,
+          42,
+          43,
+          44,
+          45,
+          46,
+          47,
+          48,
+          49,
+          50,
+          51,
+          52,
+          53,
+          54,
+          55,
+          56,
+          57,
+          58,
+          59,
+          60
+        ],
+        "included_hops": [
+          41,
+          42,
+          43,
+          44,
+          45,
+          46,
+          47,
+          48,
+          49,
+          50,
+          51,
+          52,
+          53,
+          54,
+          55,
+          56,
+          57,
+          58,
+          59,
+          60
+        ],
+        "excluded_hops": [],
+        "nonzero_vectors": 20,
+        "zero_token_hops": [],
+        "within_pairwise_cosine": {
+          "n": 190,
+          "min": 0.024524287401215452,
+          "mean": 0.0824938911914943,
+          "median": 0.06358240756614846,
+          "max": 0.6532202866414925
+        },
+        "consecutive_hop_cosine": {
+          "n": 19,
+          "min": 0.03012135147421592,
+          "mean": 0.08648865660640853,
+          "median": 0.05557615971976623,
+          "max": 0.6532202866414925
+        }
+      }
+    },
+    "gpt-6-luna/sunset_b": {
+      "model": "gpt-6-luna",
+      "seed": "sunset_b",
+      "counts": {
+        "attempts": 60,
+        "response_files": 60,
+        "receipts": 60,
+        "completed_hops": 60,
+        "completed_string_passages": 60,
+        "valid_passages": 60,
+        "verified_completed_hops": 60,
+        "verified_valid_passages": 60,
+        "errors": 0,
+        "truncations": 0,
+        "refusals": 0,
+        "pending_or_unreadable_receipts": 0,
+        "noncompleted_receipts": 0,
+        "receipts_without_known_usage_cost": 0
+      },
+      "summary_status": "hop_limit",
+      "receipt_status_counts": {
+        "active": 60
+      },
+      "returned_models": [
+        "gpt-6-luna"
+      ],
+      "pending_hops": [],
+      "noncompleted_receipts": [],
+      "excluded_completed_passages": [],
+      "passage_metric_population": "Verified completed passages with an unchanged rule and nonempty string text.",
+      "exact_recurrence": {
+        "passages": 60,
+        "unique": 60,
+        "repeated_occurrences_after_first": 0,
+        "first_repeat_hop": null,
+        "repeated_states": []
+      },
+      "case_whitespace_normalized_recurrence": {
+        "passages": 60,
+        "unique": 60,
+        "repeated_occurrences_after_first": 0,
+        "first_repeat_hop": null,
+        "repeated_states": []
+      },
+      "passage_word_lengths": {
+        "n": 60,
+        "min": 251,
+        "mean": 270.51666666666665,
+        "median": 270.0,
+        "max": 290
+      },
+      "latency_seconds_all_receipts": {
+        "n": 60,
+        "min": 4.6484,
+        "mean": 5.913056666666667,
+        "median": 5.78525,
+        "max": 9.5407
+      },
+      "usage_cost_upper_estimate_usd": 0.0156342,
+      "uncertain_cost_reserve_usd": 0.0,
+      "pending_cost_reserve_usd": 0.0,
+      "lexical_tail": {
+        "selected_completed_hops": [
+          41,
+          42,
+          43,
+          44,
+          45,
+          46,
+          47,
+          48,
+          49,
+          50,
+          51,
+          52,
+          53,
+          54,
+          55,
+          56,
+          57,
+          58,
+          59,
+          60
+        ],
+        "included_hops": [
+          41,
+          42,
+          43,
+          44,
+          45,
+          46,
+          47,
+          48,
+          49,
+          50,
+          51,
+          52,
+          53,
+          54,
+          55,
+          56,
+          57,
+          58,
+          59,
+          60
+        ],
+        "excluded_hops": [],
+        "nonzero_vectors": 20,
+        "zero_token_hops": [],
+        "within_pairwise_cosine": {
+          "n": 190,
+          "min": 0.06631694615339097,
+          "mean": 0.22619181794981322,
+          "median": 0.23226294821848587,
+          "max": 0.5139163292440964
+        },
+        "consecutive_hop_cosine": {
+          "n": 19,
+          "min": 0.2640318444971512,
+          "mean": 0.3737603592144031,
+          "median": 0.3588689941353958,
+          "max": 0.5139163292440964
+        }
+      }
+    },
+    "gpt-6-luna/tide": {
+      "model": "gpt-6-luna",
+      "seed": "tide",
+      "counts": {
+        "attempts": 60,
+        "response_files": 60,
+        "receipts": 60,
+        "completed_hops": 60,
+        "completed_string_passages": 3,
+        "valid_passages": 2,
+        "verified_completed_hops": 60,
+        "verified_valid_passages": 2,
+        "errors": 0,
+        "truncations": 0,
+        "refusals": 0,
+        "pending_or_unreadable_receipts": 0,
+        "noncompleted_receipts": 0,
+        "receipts_without_known_usage_cost": 0
+      },
+      "summary_status": "hop_limit",
+      "receipt_status_counts": {
+        "active": 60
+      },
+      "returned_models": [
+        "gpt-6-luna"
+      ],
+      "pending_hops": [],
+      "noncompleted_receipts": [],
+      "excluded_completed_passages": [
+        {
+          "hop": 3,
+          "reasons": [
+            "changed_or_missing_rule"
+          ]
+        },
+        {
+          "hop": 4,
+          "reasons": [
+            "invalid_json"
+          ]
+        },
+        {
+          "hop": 5,
+          "reasons": [
+            "invalid_json"
+          ]
+        },
+        {
+          "hop": 6,
+          "reasons": [
+            "invalid_json"
+          ]
+        },
+        {
+          "hop": 7,
+          "reasons": [
+            "invalid_json"
+          ]
+        },
+        {
+          "hop": 8,
+          "reasons": [
+            "invalid_json"
+          ]
+        },
+        {
+          "hop": 9,
+          "reasons": [
+            "invalid_json"
+          ]
+        },
+        {
+          "hop": 10,
+          "reasons": [
+            "invalid_json"
+          ]
+        },
+        {
+          "hop": 11,
+          "reasons": [
+            "invalid_json"
+          ]
+        },
+        {
+          "hop": 12,
+          "reasons": [
+            "invalid_json"
+          ]
+        },
+        {
+          "hop": 13,
+          "reasons": [
+            "invalid_json"
+          ]
+        },
+        {
+          "hop": 14,
+          "reasons": [
+            "invalid_json"
+          ]
+        },
+        {
+          "hop": 15,
+          "reasons": [
+            "invalid_json"
+          ]
+        },
+        {
+          "hop": 16,
+          "reasons": [
+            "invalid_json"
+          ]
+        },
+        {
+          "hop": 17,
+          "reasons": [
+            "invalid_json"
+          ]
+        },
+        {
+          "hop": 18,
+          "reasons": [
+            "invalid_json"
+          ]
+        },
+        {
+          "hop": 19,
+          "reasons": [
+            "invalid_json"
+          ]
+        },
+        {
+          "hop": 20,
+          "reasons": [
+            "invalid_json"
+          ]
+        },
+        {
+          "hop": 21,
+          "reasons": [
+            "invalid_json"
+          ]
+        },
+        {
+          "hop": 22,
+          "reasons": [
+            "invalid_json"
+          ]
+        },
+        {
+          "hop": 23,
+          "reasons": [
+            "invalid_json"
+          ]
+        },
+        {
+          "hop": 24,
+          "reasons": [
+            "invalid_json"
+          ]
+        },
+        {
+          "hop": 25,
+          "reasons": [
+            "invalid_json"
+          ]
+        },
+        {
+          "hop": 26,
+          "reasons": [
+            "invalid_json"
+          ]
+        },
+        {
+          "hop": 27,
+          "reasons": [
+            "invalid_json"
+          ]
+        },
+        {
+          "hop": 28,
+          "reasons": [
+            "invalid_json"
+          ]
+        },
+        {
+          "hop": 29,
+          "reasons": [
+            "invalid_json"
+          ]
+        },
+        {
+          "hop": 30,
+          "reasons": [
+            "invalid_json"
+          ]
+        },
+        {
+          "hop": 31,
+          "reasons": [
+            "invalid_json"
+          ]
+        },
+        {
+          "hop": 32,
+          "reasons": [
+            "invalid_json"
+          ]
+        },
+        {
+          "hop": 33,
+          "reasons": [
+            "invalid_json"
+          ]
+        },
+        {
+          "hop": 34,
+          "reasons": [
+            "invalid_json"
+          ]
+        },
+        {
+          "hop": 35,
+          "reasons": [
+            "invalid_json"
+          ]
+        },
+        {
+          "hop": 36,
+          "reasons": [
+            "invalid_json"
+          ]
+        },
+        {
+          "hop": 37,
+          "reasons": [
+            "invalid_json"
+          ]
+        },
+        {
+          "hop": 38,
+          "reasons": [
+            "invalid_json"
+          ]
+        },
+        {
+          "hop": 39,
+          "reasons": [
+            "invalid_json"
+          ]
+        },
+        {
+          "hop": 40,
+          "reasons": [
+            "invalid_json"
+          ]
+        },
+        {
+          "hop": 41,
+          "reasons": [
+            "invalid_json"
+          ]
+        },
+        {
+          "hop": 42,
+          "reasons": [
+            "invalid_json"
+          ]
+        },
+        {
+          "hop": 43,
+          "reasons": [
+            "invalid_json"
+          ]
+        },
+        {
+          "hop": 44,
+          "reasons": [
+            "invalid_json"
+          ]
+        },
+        {
+          "hop": 45,
+          "reasons": [
+            "invalid_json"
+          ]
+        },
+        {
+          "hop": 46,
+          "reasons": [
+            "invalid_json"
+          ]
+        },
+        {
+          "hop": 47,
+          "reasons": [
+            "invalid_json"
+          ]
+        },
+        {
+          "hop": 48,
+          "reasons": [
+            "invalid_json"
+          ]
+        },
+        {
+          "hop": 49,
+          "reasons": [
+            "invalid_json"
+          ]
+        },
+        {
+          "hop": 50,
+          "reasons": [
+            "invalid_json"
+          ]
+        },
+        {
+          "hop": 51,
+          "reasons": [
+            "invalid_json"
+          ]
+        },
+        {
+          "hop": 52,
+          "reasons": [
+            "invalid_json"
+          ]
+        },
+        {
+          "hop": 53,
+          "reasons": [
+            "invalid_json"
+          ]
+        },
+        {
+          "hop": 54,
+          "reasons": [
+            "invalid_json"
+          ]
+        },
+        {
+          "hop": 55,
+          "reasons": [
+            "invalid_json"
+          ]
+        },
+        {
+          "hop": 56,
+          "reasons": [
+            "invalid_json"
+          ]
+        },
+        {
+          "hop": 57,
+          "reasons": [
+            "invalid_json"
+          ]
+        },
+        {
+          "hop": 58,
+          "reasons": [
+            "invalid_json"
+          ]
+        },
+        {
+          "hop": 59,
+          "reasons": [
+            "invalid_json"
+          ]
+        },
+        {
+          "hop": 60,
+          "reasons": [
+            "invalid_json"
+          ]
+        }
+      ],
+      "passage_metric_population": "Verified completed passages with an unchanged rule and nonempty string text.",
+      "exact_recurrence": {
+        "passages": 2,
+        "unique": 2,
+        "repeated_occurrences_after_first": 0,
+        "first_repeat_hop": null,
+        "repeated_states": []
+      },
+      "case_whitespace_normalized_recurrence": {
+        "passages": 2,
+        "unique": 2,
+        "repeated_occurrences_after_first": 0,
+        "first_repeat_hop": null,
+        "repeated_states": []
+      },
+      "passage_word_lengths": {
+        "n": 2,
+        "min": 259,
+        "mean": 272,
+        "median": 272.0,
+        "max": 285
+      },
+      "latency_seconds_all_receipts": {
+        "n": 60,
+        "min": 0.6536,
+        "mean": 1.73735,
+        "median": 1.36845,
+        "max": 5.5642
+      },
+      "usage_cost_upper_estimate_usd": 0.0027867,
+      "uncertain_cost_reserve_usd": 0.0,
+      "pending_cost_reserve_usd": 0.0,
+      "lexical_tail": {
+        "selected_completed_hops": [
+          41,
+          42,
+          43,
+          44,
+          45,
+          46,
+          47,
+          48,
+          49,
+          50,
+          51,
+          52,
+          53,
+          54,
+          55,
+          56,
+          57,
+          58,
+          59,
+          60
+        ],
+        "included_hops": [],
+        "excluded_hops": [
+          {
+            "hop": 41,
+            "reasons": [
+              "invalid_json"
+            ]
+          },
+          {
+            "hop": 42,
+            "reasons": [
+              "invalid_json"
+            ]
+          },
+          {
+            "hop": 43,
+            "reasons": [
+              "invalid_json"
+            ]
+          },
+          {
+            "hop": 44,
+            "reasons": [
+              "invalid_json"
+            ]
+          },
+          {
+            "hop": 45,
+            "reasons": [
+              "invalid_json"
+            ]
+          },
+          {
+            "hop": 46,
+            "reasons": [
+              "invalid_json"
+            ]
+          },
+          {
+            "hop": 47,
+            "reasons": [
+              "invalid_json"
+            ]
+          },
+          {
+            "hop": 48,
+            "reasons": [
+              "invalid_json"
+            ]
+          },
+          {
+            "hop": 49,
+            "reasons": [
+              "invalid_json"
+            ]
+          },
+          {
+            "hop": 50,
+            "reasons": [
+              "invalid_json"
+            ]
+          },
+          {
+            "hop": 51,
+            "reasons": [
+              "invalid_json"
+            ]
+          },
+          {
+            "hop": 52,
+            "reasons": [
+              "invalid_json"
+            ]
+          },
+          {
+            "hop": 53,
+            "reasons": [
+              "invalid_json"
+            ]
+          },
+          {
+            "hop": 54,
+            "reasons": [
+              "invalid_json"
+            ]
+          },
+          {
+            "hop": 55,
+            "reasons": [
+              "invalid_json"
+            ]
+          },
+          {
+            "hop": 56,
+            "reasons": [
+              "invalid_json"
+            ]
+          },
+          {
+            "hop": 57,
+            "reasons": [
+              "invalid_json"
+            ]
+          },
+          {
+            "hop": 58,
+            "reasons": [
+              "invalid_json"
+            ]
+          },
+          {
+            "hop": 59,
+            "reasons": [
+              "invalid_json"
+            ]
+          },
+          {
+            "hop": 60,
+            "reasons": [
+              "invalid_json"
+            ]
+          }
+        ],
+        "nonzero_vectors": 0,
+        "zero_token_hops": [],
+        "within_pairwise_cosine": {
+          "n": 0,
+          "min": null,
+          "mean": null,
+          "median": null,
+          "max": null
+        },
+        "consecutive_hop_cosine": {
+          "n": 0,
+          "min": null,
+          "mean": null,
+          "median": null,
+          "max": null
+        }
+      }
+    },
+    "gpt-6-sol/sunset_a": {
+      "model": "gpt-6-sol",
+      "seed": "sunset_a",
+      "counts": {
+        "attempts": 60,
+        "response_files": 60,
+        "receipts": 60,
+        "completed_hops": 60,
+        "completed_string_passages": 60,
+        "valid_passages": 60,
+        "verified_completed_hops": 60,
+        "verified_valid_passages": 60,
+        "errors": 0,
+        "truncations": 0,
+        "refusals": 0,
+        "pending_or_unreadable_receipts": 0,
+        "noncompleted_receipts": 0,
+        "receipts_without_known_usage_cost": 0
+      },
+      "summary_status": "hop_limit",
+      "receipt_status_counts": {
+        "active": 60
+      },
+      "returned_models": [
+        "gpt-6-sol"
+      ],
+      "pending_hops": [],
+      "noncompleted_receipts": [],
+      "excluded_completed_passages": [],
+      "passage_metric_population": "Verified completed passages with an unchanged rule and nonempty string text.",
+      "exact_recurrence": {
+        "passages": 60,
+        "unique": 60,
+        "repeated_occurrences_after_first": 0,
+        "first_repeat_hop": null,
+        "repeated_states": []
+      },
+      "case_whitespace_normalized_recurrence": {
+        "passages": 60,
+        "unique": 60,
+        "repeated_occurrences_after_first": 0,
+        "first_repeat_hop": null,
+        "repeated_states": []
+      },
+      "passage_word_lengths": {
+        "n": 60,
+        "min": 242,
+        "mean": 258.18333333333334,
+        "median": 259.0,
+        "max": 286
+      },
+      "latency_seconds_all_receipts": {
+        "n": 60,
+        "min": 4.3185,
+        "mean": 6.0347583333333334,
+        "median": 6.0183,
+        "max": 8.4849
+      },
+      "usage_cost_upper_estimate_usd": 0.277998,
+      "uncertain_cost_reserve_usd": 0.0,
+      "pending_cost_reserve_usd": 0.0,
+      "lexical_tail": {
+        "selected_completed_hops": [
+          41,
+          42,
+          43,
+          44,
+          45,
+          46,
+          47,
+          48,
+          49,
+          50,
+          51,
+          52,
+          53,
+          54,
+          55,
+          56,
+          57,
+          58,
+          59,
+          60
+        ],
+        "included_hops": [
+          41,
+          42,
+          43,
+          44,
+          45,
+          46,
+          47,
+          48,
+          49,
+          50,
+          51,
+          52,
+          53,
+          54,
+          55,
+          56,
+          57,
+          58,
+          59,
+          60
+        ],
+        "excluded_hops": [],
+        "nonzero_vectors": 20,
+        "zero_token_hops": [],
+        "within_pairwise_cosine": {
+          "n": 190,
+          "min": 0.09295634800501937,
+          "mean": 0.24066502461770484,
+          "median": 0.213070571769706,
+          "max": 0.5822987210447768
+        },
+        "consecutive_hop_cosine": {
+          "n": 19,
+          "min": 0.24183134541222567,
+          "mean": 0.412425213186988,
+          "median": 0.406944004654212,
+          "max": 0.5822987210447768
+        }
+      }
+    },
+    "gpt-6-sol/sunset_b": {
+      "model": "gpt-6-sol",
+      "seed": "sunset_b",
+      "counts": {
+        "attempts": 9,
+        "response_files": 9,
+        "receipts": 9,
+        "completed_hops": 8,
+        "completed_string_passages": 8,
+        "valid_passages": 8,
+        "verified_completed_hops": 8,
+        "verified_valid_passages": 8,
+        "noncompleted_receipts": 1,
+        "errors": 1,
+        "receipts_without_known_usage_cost": 1,
+        "truncations": 0,
+        "refusals": 0,
+        "pending_or_unreadable_receipts": 0
+      },
+      "summary_status": "transport_or_parse_error",
+      "receipt_status_counts": {
+        "active": 8,
+        "transport_or_parse_error": 1
+      },
+      "returned_models": [
+        "gpt-6-sol"
+      ],
+      "pending_hops": [],
+      "noncompleted_receipts": [
+        {
+          "hop": 9,
+          "status": "transport_or_parse_error",
+          "error_type": "URLError",
+          "http_status": null,
+          "finish_reason": null,
+          "raw_unpack_error": null
+        }
+      ],
+      "excluded_completed_passages": [],
+      "passage_metric_population": "Verified completed passages with an unchanged rule and nonempty string text.",
+      "exact_recurrence": {
+        "passages": 8,
+        "unique": 8,
+        "repeated_occurrences_after_first": 0,
+        "first_repeat_hop": null,
+        "repeated_states": []
+      },
+      "case_whitespace_normalized_recurrence": {
+        "passages": 8,
+        "unique": 8,
+        "repeated_occurrences_after_first": 0,
+        "first_repeat_hop": null,
+        "repeated_states": []
+      },
+      "passage_word_lengths": {
+        "n": 8,
+        "min": 251,
+        "mean": 258.625,
+        "median": 258.0,
+        "max": 276
+      },
+      "latency_seconds_all_receipts": {
+        "n": 9,
+        "min": 5.4462,
+        "mean": 7.913622222222222,
+        "median": 6.1709,
+        "max": 21.5908
+      },
+      "usage_cost_upper_estimate_usd": 0.037073999999999996,
+      "uncertain_cost_reserve_usd": 0.04533,
+      "pending_cost_reserve_usd": 0.0,
+      "lexical_tail": {
+        "selected_completed_hops": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8
+        ],
+        "included_hops": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8
+        ],
+        "excluded_hops": [],
+        "nonzero_vectors": 8,
+        "zero_token_hops": [],
+        "within_pairwise_cosine": {
+          "n": 28,
+          "min": 0.04357455193272846,
+          "mean": 0.22821995177259966,
+          "median": 0.2862983363522034,
+          "max": 0.43205351340183423
+        },
+        "consecutive_hop_cosine": {
+          "n": 7,
+          "min": 0.05940249272622893,
+          "mean": 0.28919832388429323,
+          "median": 0.317307648384581,
+          "max": 0.3914663692694172
+        }
+      }
+    },
+    "gpt-6-sol/tide": {
+      "model": "gpt-6-sol",
+      "seed": "tide",
+      "counts": {
+        "attempts": 60,
+        "response_files": 60,
+        "receipts": 60,
+        "completed_hops": 60,
+        "completed_string_passages": 60,
+        "valid_passages": 60,
+        "verified_completed_hops": 60,
+        "verified_valid_passages": 60,
+        "errors": 0,
+        "truncations": 0,
+        "refusals": 0,
+        "pending_or_unreadable_receipts": 0,
+        "noncompleted_receipts": 0,
+        "receipts_without_known_usage_cost": 0
+      },
+      "summary_status": "hop_limit",
+      "receipt_status_counts": {
+        "active": 60
+      },
+      "returned_models": [
+        "gpt-6-sol"
+      ],
+      "pending_hops": [],
+      "noncompleted_receipts": [],
+      "excluded_completed_passages": [],
+      "passage_metric_population": "Verified completed passages with an unchanged rule and nonempty string text.",
+      "exact_recurrence": {
+        "passages": 60,
+        "unique": 60,
+        "repeated_occurrences_after_first": 0,
+        "first_repeat_hop": null,
+        "repeated_states": []
+      },
+      "case_whitespace_normalized_recurrence": {
+        "passages": 60,
+        "unique": 60,
+        "repeated_occurrences_after_first": 0,
+        "first_repeat_hop": null,
+        "repeated_states": []
+      },
+      "passage_word_lengths": {
+        "n": 60,
+        "min": 242,
+        "mean": 259.15,
+        "median": 261.0,
+        "max": 284
+      },
+      "latency_seconds_all_receipts": {
+        "n": 60,
+        "min": 5.4209,
+        "mean": 6.402873333333333,
+        "median": 6.2732,
+        "max": 9.4904
+      },
+      "usage_cost_upper_estimate_usd": 0.295018,
+      "uncertain_cost_reserve_usd": 0.0,
+      "pending_cost_reserve_usd": 0.0,
+      "lexical_tail": {
+        "selected_completed_hops": [
+          41,
+          42,
+          43,
+          44,
+          45,
+          46,
+          47,
+          48,
+          49,
+          50,
+          51,
+          52,
+          53,
+          54,
+          55,
+          56,
+          57,
+          58,
+          59,
+          60
+        ],
+        "included_hops": [
+          41,
+          42,
+          43,
+          44,
+          45,
+          46,
+          47,
+          48,
+          49,
+          50,
+          51,
+          52,
+          53,
+          54,
+          55,
+          56,
+          57,
+          58,
+          59,
+          60
+        ],
+        "excluded_hops": [],
+        "nonzero_vectors": 20,
+        "zero_token_hops": [],
+        "within_pairwise_cosine": {
+          "n": 190,
+          "min": 0.15081034961039388,
+          "mean": 0.2974823029405693,
+          "median": 0.27541979579484965,
+          "max": 0.624387053266696
+        },
+        "consecutive_hop_cosine": {
+          "n": 19,
+          "min": 0.28903171541055667,
+          "mean": 0.44827158373495535,
+          "median": 0.4413738355690539,
+          "max": 0.624387053266696
+        }
+      }
+    },
+    "gpt-6-astra/sunset_a": {
+      "model": "gpt-6-astra",
+      "seed": "sunset_a",
+      "counts": {
+        "attempts": 60,
+        "response_files": 60,
+        "receipts": 60,
+        "completed_hops": 60,
+        "completed_string_passages": 60,
+        "valid_passages": 60,
+        "verified_completed_hops": 60,
+        "verified_valid_passages": 60,
+        "errors": 0,
+        "truncations": 0,
+        "refusals": 0,
+        "pending_or_unreadable_receipts": 0,
+        "noncompleted_receipts": 0,
+        "receipts_without_known_usage_cost": 0
+      },
+      "summary_status": "hop_limit",
+      "receipt_status_counts": {
+        "active": 60
+      },
+      "returned_models": [
+        "gpt-6-astra"
+      ],
+      "pending_hops": [],
+      "noncompleted_receipts": [],
+      "excluded_completed_passages": [],
+      "passage_metric_population": "Verified completed passages with an unchanged rule and nonempty string text.",
+      "exact_recurrence": {
+        "passages": 60,
+        "unique": 60,
+        "repeated_occurrences_after_first": 0,
+        "first_repeat_hop": null,
+        "repeated_states": []
+      },
+      "case_whitespace_normalized_recurrence": {
+        "passages": 60,
+        "unique": 60,
+        "repeated_occurrences_after_first": 0,
+        "first_repeat_hop": null,
+        "repeated_states": []
+      },
+      "passage_word_lengths": {
+        "n": 60,
+        "min": 250,
+        "mean": 264.8,
+        "median": 266.0,
+        "max": 281
+      },
+      "latency_seconds_all_receipts": {
+        "n": 60,
+        "min": 13.386,
+        "mean": 16.799,
+        "median": 16.5331,
+        "max": 23.0364
+      },
+      "usage_cost_upper_estimate_usd": 1.50794,
+      "uncertain_cost_reserve_usd": 0.0,
+      "pending_cost_reserve_usd": 0.0,
+      "lexical_tail": {
+        "selected_completed_hops": [
+          41,
+          42,
+          43,
+          44,
+          45,
+          46,
+          47,
+          48,
+          49,
+          50,
+          51,
+          52,
+          53,
+          54,
+          55,
+          56,
+          57,
+          58,
+          59,
+          60
+        ],
+        "included_hops": [
+          41,
+          42,
+          43,
+          44,
+          45,
+          46,
+          47,
+          48,
+          49,
+          50,
+          51,
+          52,
+          53,
+          54,
+          55,
+          56,
+          57,
+          58,
+          59,
+          60
+        ],
+        "excluded_hops": [],
+        "nonzero_vectors": 20,
+        "zero_token_hops": [],
+        "within_pairwise_cosine": {
+          "n": 190,
+          "min": 0.026197755658053545,
+          "mean": 0.09218397599251212,
+          "median": 0.07234917952653527,
+          "max": 0.47011294449949537
+        },
+        "consecutive_hop_cosine": {
+          "n": 19,
+          "min": 0.02703228289052828,
+          "mean": 0.05531449949459864,
+          "median": 0.04899126214775346,
+          "max": 0.11520265327139667
+        }
+      }
+    },
+    "gpt-6-astra/sunset_b": {
+      "model": "gpt-6-astra",
+      "seed": "sunset_b",
+      "counts": {
+        "attempts": 60,
+        "response_files": 60,
+        "receipts": 60,
+        "completed_hops": 60,
+        "completed_string_passages": 60,
+        "valid_passages": 60,
+        "verified_completed_hops": 60,
+        "verified_valid_passages": 60,
+        "errors": 0,
+        "truncations": 0,
+        "refusals": 0,
+        "pending_or_unreadable_receipts": 0,
+        "noncompleted_receipts": 0,
+        "receipts_without_known_usage_cost": 0
+      },
+      "summary_status": "hop_limit",
+      "receipt_status_counts": {
+        "active": 60
+      },
+      "returned_models": [
+        "gpt-6-astra"
+      ],
+      "pending_hops": [],
+      "noncompleted_receipts": [],
+      "excluded_completed_passages": [],
+      "passage_metric_population": "Verified completed passages with an unchanged rule and nonempty string text.",
+      "exact_recurrence": {
+        "passages": 60,
+        "unique": 60,
+        "repeated_occurrences_after_first": 0,
+        "first_repeat_hop": null,
+        "repeated_states": []
+      },
+      "case_whitespace_normalized_recurrence": {
+        "passages": 60,
+        "unique": 60,
+        "repeated_occurrences_after_first": 0,
+        "first_repeat_hop": null,
+        "repeated_states": []
+      },
+      "passage_word_lengths": {
+        "n": 60,
+        "min": 246,
+        "mean": 263.48333333333335,
+        "median": 264.5,
+        "max": 272
+      },
+      "latency_seconds_all_receipts": {
+        "n": 60,
+        "min": 12.913,
+        "mean": 16.702318333333334,
+        "median": 16.4718,
+        "max": 22.3094
+      },
+      "usage_cost_upper_estimate_usd": 1.52902,
+      "uncertain_cost_reserve_usd": 0.0,
+      "pending_cost_reserve_usd": 0.0,
+      "lexical_tail": {
+        "selected_completed_hops": [
+          41,
+          42,
+          43,
+          44,
+          45,
+          46,
+          47,
+          48,
+          49,
+          50,
+          51,
+          52,
+          53,
+          54,
+          55,
+          56,
+          57,
+          58,
+          59,
+          60
+        ],
+        "included_hops": [
+          41,
+          42,
+          43,
+          44,
+          45,
+          46,
+          47,
+          48,
+          49,
+          50,
+          51,
+          52,
+          53,
+          54,
+          55,
+          56,
+          57,
+          58,
+          59,
+          60
+        ],
+        "excluded_hops": [],
+        "nonzero_vectors": 20,
+        "zero_token_hops": [],
+        "within_pairwise_cosine": {
+          "n": 190,
+          "min": 0.03279104318139318,
+          "mean": 0.12115350882499082,
+          "median": 0.09038386659891458,
+          "max": 0.4226250324500714
+        },
+        "consecutive_hop_cosine": {
+          "n": 19,
+          "min": 0.042939307970858806,
+          "mean": 0.060426329765329384,
+          "median": 0.060353762324813695,
+          "max": 0.09070814481318205
+        }
+      }
+    },
+    "gpt-6-astra/tide": {
+      "model": "gpt-6-astra",
+      "seed": "tide",
+      "counts": {
+        "attempts": 60,
+        "response_files": 60,
+        "receipts": 60,
+        "completed_hops": 60,
+        "completed_string_passages": 60,
+        "valid_passages": 60,
+        "verified_completed_hops": 60,
+        "verified_valid_passages": 60,
+        "errors": 0,
+        "truncations": 0,
+        "refusals": 0,
+        "pending_or_unreadable_receipts": 0,
+        "noncompleted_receipts": 0,
+        "receipts_without_known_usage_cost": 0
+      },
+      "summary_status": "hop_limit",
+      "receipt_status_counts": {
+        "active": 60
+      },
+      "returned_models": [
+        "gpt-6-astra"
+      ],
+      "pending_hops": [],
+      "noncompleted_receipts": [],
+      "excluded_completed_passages": [],
+      "passage_metric_population": "Verified completed passages with an unchanged rule and nonempty string text.",
+      "exact_recurrence": {
+        "passages": 60,
+        "unique": 60,
+        "repeated_occurrences_after_first": 0,
+        "first_repeat_hop": null,
+        "repeated_states": []
+      },
+      "case_whitespace_normalized_recurrence": {
+        "passages": 60,
+        "unique": 60,
+        "repeated_occurrences_after_first": 0,
+        "first_repeat_hop": null,
+        "repeated_states": []
+      },
+      "passage_word_lengths": {
+        "n": 60,
+        "min": 251,
+        "mean": 264.3833333333333,
+        "median": 265.0,
+        "max": 275
+      },
+      "latency_seconds_all_receipts": {
+        "n": 60,
+        "min": 13.6137,
+        "mean": 17.158581666666667,
+        "median": 16.686,
+        "max": 25.3535
+      },
+      "usage_cost_upper_estimate_usd": 1.5421,
+      "uncertain_cost_reserve_usd": 0.0,
+      "pending_cost_reserve_usd": 0.0,
+      "lexical_tail": {
+        "selected_completed_hops": [
+          41,
+          42,
+          43,
+          44,
+          45,
+          46,
+          47,
+          48,
+          49,
+          50,
+          51,
+          52,
+          53,
+          54,
+          55,
+          56,
+          57,
+          58,
+          59,
+          60
+        ],
+        "included_hops": [
+          41,
+          42,
+          43,
+          44,
+          45,
+          46,
+          47,
+          48,
+          49,
+          50,
+          51,
+          52,
+          53,
+          54,
+          55,
+          56,
+          57,
+          58,
+          59,
+          60
+        ],
+        "excluded_hops": [],
+        "nonzero_vectors": 20,
+        "zero_token_hops": [],
+        "within_pairwise_cosine": {
+          "n": 190,
+          "min": 0.029739507907374563,
+          "mean": 0.08804619396013726,
+          "median": 0.07843660278308037,
+          "max": 0.35802451797323365
+        },
+        "consecutive_hop_cosine": {
+          "n": 19,
+          "min": 0.029739507907374563,
+          "mean": 0.07359702304073105,
+          "median": 0.06551591268622536,
+          "max": 0.12703843190179293
+        }
+      }
+    },
+    "claude-fable-5-1/sunset_a": {
+      "model": "claude-fable-5-1",
+      "seed": "sunset_a",
+      "counts": {
+        "attempts": 60,
+        "response_files": 60,
+        "receipts": 60,
+        "completed_hops": 60,
+        "completed_string_passages": 60,
+        "valid_passages": 60,
+        "verified_completed_hops": 60,
+        "verified_valid_passages": 60,
+        "errors": 0,
+        "truncations": 0,
+        "refusals": 0,
+        "pending_or_unreadable_receipts": 0,
+        "noncompleted_receipts": 0,
+        "receipts_without_known_usage_cost": 0
+      },
+      "summary_status": "hop_limit",
+      "receipt_status_counts": {
+        "active": 60
+      },
+      "returned_models": [
+        "claude-fable-5-1"
+      ],
+      "pending_hops": [],
+      "noncompleted_receipts": [],
+      "excluded_completed_passages": [],
+      "passage_metric_population": "Verified completed passages with an unchanged rule and nonempty string text.",
+      "exact_recurrence": {
+        "passages": 60,
+        "unique": 60,
+        "repeated_occurrences_after_first": 0,
+        "first_repeat_hop": null,
+        "repeated_states": []
+      },
+      "case_whitespace_normalized_recurrence": {
+        "passages": 60,
+        "unique": 60,
+        "repeated_occurrences_after_first": 0,
+        "first_repeat_hop": null,
+        "repeated_states": []
+      },
+      "passage_word_lengths": {
+        "n": 60,
+        "min": 248,
+        "mean": 273.95,
+        "median": 268.0,
+        "max": 333
+      },
+      "latency_seconds_all_receipts": {
+        "n": 60,
+        "min": 10.1743,
+        "mean": 12.809081666666668,
+        "median": 12.74225,
+        "max": 16.1356
+      },
+      "usage_cost_upper_estimate_usd": 1.98105,
+      "uncertain_cost_reserve_usd": 0.0,
+      "pending_cost_reserve_usd": 0.0,
+      "lexical_tail": {
+        "selected_completed_hops": [
+          41,
+          42,
+          43,
+          44,
+          45,
+          46,
+          47,
+          48,
+          49,
+          50,
+          51,
+          52,
+          53,
+          54,
+          55,
+          56,
+          57,
+          58,
+          59,
+          60
+        ],
+        "included_hops": [
+          41,
+          42,
+          43,
+          44,
+          45,
+          46,
+          47,
+          48,
+          49,
+          50,
+          51,
+          52,
+          53,
+          54,
+          55,
+          56,
+          57,
+          58,
+          59,
+          60
+        ],
+        "excluded_hops": [],
+        "nonzero_vectors": 20,
+        "zero_token_hops": [],
+        "within_pairwise_cosine": {
+          "n": 190,
+          "min": 0.04391144916304975,
+          "mean": 0.17354162591595665,
+          "median": 0.10571225721627334,
+          "max": 0.649996237331887
+        },
+        "consecutive_hop_cosine": {
+          "n": 19,
+          "min": 0.05519874516984302,
+          "mean": 0.25353230431027807,
+          "median": 0.2919579720113756,
+          "max": 0.38310284078033663
+        }
+      }
+    },
+    "claude-fable-5-1/sunset_b": {
+      "model": "claude-fable-5-1",
+      "seed": "sunset_b",
+      "counts": {
+        "attempts": 60,
+        "response_files": 60,
+        "receipts": 60,
+        "completed_hops": 60,
+        "completed_string_passages": 51,
+        "valid_passages": 51,
+        "verified_completed_hops": 60,
+        "verified_valid_passages": 51,
+        "errors": 0,
+        "truncations": 0,
+        "refusals": 0,
+        "pending_or_unreadable_receipts": 0,
+        "noncompleted_receipts": 0,
+        "receipts_without_known_usage_cost": 0
+      },
+      "summary_status": "hop_limit",
+      "receipt_status_counts": {
+        "active": 60
+      },
+      "returned_models": [
+        "claude-fable-5-1"
+      ],
+      "pending_hops": [],
+      "noncompleted_receipts": [],
+      "excluded_completed_passages": [
+        {
+          "hop": 27,
+          "reasons": [
+            "invalid_json"
+          ]
+        },
+        {
+          "hop": 28,
+          "reasons": [
+            "invalid_json"
+          ]
+        },
+        {
+          "hop": 29,
+          "reasons": [
+            "invalid_json"
+          ]
+        },
+        {
+          "hop": 30,
+          "reasons": [
+            "invalid_json"
+          ]
+        },
+        {
+          "hop": 31,
+          "reasons": [
+            "invalid_json"
+          ]
+        },
+        {
+          "hop": 32,
+          "reasons": [
+            "invalid_json"
+          ]
+        },
+        {
+          "hop": 33,
+          "reasons": [
+            "invalid_json"
+          ]
+        },
+        {
+          "hop": 34,
+          "reasons": [
+            "invalid_json"
+          ]
+        },
+        {
+          "hop": 35,
+          "reasons": [
+            "invalid_json"
+          ]
+        }
+      ],
+      "passage_metric_population": "Verified completed passages with an unchanged rule and nonempty string text.",
+      "exact_recurrence": {
+        "passages": 51,
+        "unique": 51,
+        "repeated_occurrences_after_first": 0,
+        "first_repeat_hop": null,
+        "repeated_states": []
+      },
+      "case_whitespace_normalized_recurrence": {
+        "passages": 51,
+        "unique": 51,
+        "repeated_occurrences_after_first": 0,
+        "first_repeat_hop": null,
+        "repeated_states": []
+      },
+      "passage_word_lengths": {
+        "n": 51,
+        "min": 254,
+        "mean": 273.19607843137254,
+        "median": 273,
+        "max": 304
+      },
+      "latency_seconds_all_receipts": {
+        "n": 60,
+        "min": 9.3801,
+        "mean": 12.314461666666666,
+        "median": 12.3768,
+        "max": 14.7377
+      },
+      "usage_cost_upper_estimate_usd": 1.80405,
+      "uncertain_cost_reserve_usd": 0.0,
+      "pending_cost_reserve_usd": 0.0,
+      "lexical_tail": {
+        "selected_completed_hops": [
+          41,
+          42,
+          43,
+          44,
+          45,
+          46,
+          47,
+          48,
+          49,
+          50,
+          51,
+          52,
+          53,
+          54,
+          55,
+          56,
+          57,
+          58,
+          59,
+          60
+        ],
+        "included_hops": [
+          41,
+          42,
+          43,
+          44,
+          45,
+          46,
+          47,
+          48,
+          49,
+          50,
+          51,
+          52,
+          53,
+          54,
+          55,
+          56,
+          57,
+          58,
+          59,
+          60
+        ],
+        "excluded_hops": [],
+        "nonzero_vectors": 20,
+        "zero_token_hops": [],
+        "within_pairwise_cosine": {
+          "n": 190,
+          "min": 0.024775059834878273,
+          "mean": 0.11303790658275886,
+          "median": 0.09985247220666582,
+          "max": 0.3442658309415438
+        },
+        "consecutive_hop_cosine": {
+          "n": 19,
+          "min": 0.04346248470673447,
+          "mean": 0.19315247989837395,
+          "median": 0.22593425327449895,
+          "max": 0.3442658309415438
+        }
+      }
+    },
+    "claude-fable-5-1/tide": {
+      "model": "claude-fable-5-1",
+      "seed": "tide",
+      "counts": {
+        "attempts": 60,
+        "response_files": 60,
+        "receipts": 60,
+        "completed_hops": 60,
+        "completed_string_passages": 58,
+        "valid_passages": 58,
+        "verified_completed_hops": 60,
+        "verified_valid_passages": 58,
+        "errors": 0,
+        "truncations": 0,
+        "refusals": 0,
+        "pending_or_unreadable_receipts": 0,
+        "noncompleted_receipts": 0,
+        "receipts_without_known_usage_cost": 0
+      },
+      "summary_status": "hop_limit",
+      "receipt_status_counts": {
+        "active": 60
+      },
+      "returned_models": [
+        "claude-fable-5-1"
+      ],
+      "pending_hops": [],
+      "noncompleted_receipts": [],
+      "excluded_completed_passages": [
+        {
+          "hop": 7,
+          "reasons": [
+            "invalid_json"
+          ]
+        },
+        {
+          "hop": 8,
+          "reasons": [
+            "invalid_json"
+          ]
+        }
+      ],
+      "passage_metric_population": "Verified completed passages with an unchanged rule and nonempty string text.",
+      "exact_recurrence": {
+        "passages": 58,
+        "unique": 58,
+        "repeated_occurrences_after_first": 0,
+        "first_repeat_hop": null,
+        "repeated_states": []
+      },
+      "case_whitespace_normalized_recurrence": {
+        "passages": 58,
+        "unique": 58,
+        "repeated_occurrences_after_first": 0,
+        "first_repeat_hop": null,
+        "repeated_states": []
+      },
+      "passage_word_lengths": {
+        "n": 58,
+        "min": 250,
+        "mean": 272.44827586206895,
+        "median": 270.0,
+        "max": 319
+      },
+      "latency_seconds_all_receipts": {
+        "n": 60,
+        "min": 9.7512,
+        "mean": 13.215738333333334,
+        "median": 12.98855,
+        "max": 20.5264
+      },
+      "usage_cost_upper_estimate_usd": 1.90097,
+      "uncertain_cost_reserve_usd": 0.0,
+      "pending_cost_reserve_usd": 0.0,
+      "lexical_tail": {
+        "selected_completed_hops": [
+          41,
+          42,
+          43,
+          44,
+          45,
+          46,
+          47,
+          48,
+          49,
+          50,
+          51,
+          52,
+          53,
+          54,
+          55,
+          56,
+          57,
+          58,
+          59,
+          60
+        ],
+        "included_hops": [
+          41,
+          42,
+          43,
+          44,
+          45,
+          46,
+          47,
+          48,
+          49,
+          50,
+          51,
+          52,
+          53,
+          54,
+          55,
+          56,
+          57,
+          58,
+          59,
+          60
+        ],
+        "excluded_hops": [],
+        "nonzero_vectors": 20,
+        "zero_token_hops": [],
+        "within_pairwise_cosine": {
+          "n": 190,
+          "min": 0.031184347782813104,
+          "mean": 0.10879281595476926,
+          "median": 0.09844086227985926,
+          "max": 0.3307744798079213
+        },
+        "consecutive_hop_cosine": {
+          "n": 19,
+          "min": 0.07872950407497661,
+          "mean": 0.1785332561288555,
+          "median": 0.17223867793593378,
+          "max": 0.3307744798079213
+        }
+      }
+    },
+    "claude-opus-5-5/sunset_a": {
+      "model": "claude-opus-5-5",
+      "seed": "sunset_a",
+      "counts": {
+        "attempts": 60,
+        "response_files": 60,
+        "receipts": 60,
+        "completed_hops": 60,
+        "verified_completed_hops": 60,
+        "valid_passages": 0,
+        "verified_valid_passages": 0,
+        "completed_string_passages": 0,
+        "errors": 0,
+        "truncations": 0,
+        "refusals": 0,
+        "pending_or_unreadable_receipts": 0,
+        "noncompleted_receipts": 0,
+        "receipts_without_known_usage_cost": 0
+      },
+      "summary_status": "hop_limit",
+      "receipt_status_counts": {
+        "active": 60
+      },
+      "returned_models": [
+        "claude-opus-5-5"
+      ],
+      "pending_hops": [],
+      "noncompleted_receipts": [],
+      "excluded_completed_passages": [
+        {
+          "hop": 1,
+          "reasons": [
+            "invalid_json"
+          ]
+        },
+        {
+          "hop": 2,
+          "reasons": [
+            "invalid_json"
+          ]
+        },
+        {
+          "hop": 3,
+          "reasons": [
+            "invalid_json"
+          ]
+        },
+        {
+          "hop": 4,
+          "reasons": [
+            "invalid_json"
+          ]
+        },
+        {
+          "hop": 5,
+          "reasons": [
+            "invalid_json"
+          ]
+        },
+        {
+          "hop": 6,
+          "reasons": [
+            "invalid_json"
+          ]
+        },
+        {
+          "hop": 7,
+          "reasons": [
+            "invalid_json"
+          ]
+        },
+        {
+          "hop": 8,
+          "reasons": [
+            "invalid_json"
+          ]
+        },
+        {
+          "hop": 9,
+          "reasons": [
+            "invalid_json"
+          ]
+        },
+        {
+          "hop": 10,
+          "reasons": [
+            "invalid_json"
+          ]
+        },
+        {
+          "hop": 11,
+          "reasons": [
+            "invalid_json"
+          ]
+        },
+        {
+          "hop": 12,
+          "reasons": [
+            "invalid_json"
+          ]
+        },
+        {
+          "hop": 13,
+          "reasons": [
+            "invalid_json"
+          ]
+        },
+        {
+          "hop": 14,
+          "reasons": [
+            "invalid_json"
+          ]
+        },
+        {
+          "hop": 15,
+          "reasons": [
+            "invalid_json"
+          ]
+        },
+        {
+          "hop": 16,
+          "reasons": [
+            "invalid_json"
+          ]
+        },
+        {
+          "hop": 17,
+          "reasons": [
+            "invalid_json"
+          ]
+        },
+        {
+          "hop": 18,
+          "reasons": [
+            "invalid_json"
+          ]
+        },
+        {
+          "hop": 19,
+          "reasons": [
+            "invalid_json"
+          ]
+        },
+        {
+          "hop": 20,
+          "reasons": [
+            "invalid_json"
+          ]
+        },
+        {
+          "hop": 21,
+          "reasons": [
+            "invalid_json"
+          ]
+        },
+        {
+          "hop": 22,
+          "reasons": [
+            "invalid_json"
+          ]
+        },
+        {
+          "hop": 23,
+          "reasons": [
+            "invalid_json"
+          ]
+        },
+        {
+          "hop": 24,
+          "reasons": [
+            "invalid_json"
+          ]
+        },
+        {
+          "hop": 25,
+          "reasons": [
+            "invalid_json"
+          ]
+        },
+        {
+          "hop": 26,
+          "reasons": [
+            "invalid_json"
+          ]
+        },
+        {
+          "hop": 27,
+          "reasons": [
+            "invalid_json"
+          ]
+        },
+        {
+          "hop": 28,
+          "reasons": [
+            "invalid_json"
+          ]
+        },
+        {
+          "hop": 29,
+          "reasons": [
+            "invalid_json"
+          ]
+        },
+        {
+          "hop": 30,
+          "reasons": [
+            "invalid_json"
+          ]
+        },
+        {
+          "hop": 31,
+          "reasons": [
+            "invalid_json"
+          ]
+        },
+        {
+          "hop": 32,
+          "reasons": [
+            "invalid_json"
+          ]
+        },
+        {
+          "hop": 33,
+          "reasons": [
+            "invalid_json"
+          ]
+        },
+        {
+          "hop": 34,
+          "reasons": [
+            "invalid_json"
+          ]
+        },
+        {
+          "hop": 35,
+          "reasons": [
+            "invalid_json"
+          ]
+        },
+        {
+          "hop": 36,
+          "reasons": [
+            "invalid_json"
+          ]
+        },
+        {
+          "hop": 37,
+          "reasons": [
+            "invalid_json"
+          ]
+        },
+        {
+          "hop": 38,
+          "reasons": [
+            "invalid_json"
+          ]
+        },
+        {
+          "hop": 39,
+          "reasons": [
+            "invalid_json"
+          ]
+        },
+        {
+          "hop": 40,
+          "reasons": [
+            "invalid_json"
+          ]
+        },
+        {
+          "hop": 41,
+          "reasons": [
+            "invalid_json"
+          ]
+        },
+        {
+          "hop": 42,
+          "reasons": [
+            "invalid_json"
+          ]
+        },
+        {
+          "hop": 43,
+          "reasons": [
+            "invalid_json"
+          ]
+        },
+        {
+          "hop": 44,
+          "reasons": [
+            "invalid_json"
+          ]
+        },
+        {
+          "hop": 45,
+          "reasons": [
+            "invalid_json"
+          ]
+        },
+        {
+          "hop": 46,
+          "reasons": [
+            "invalid_json"
+          ]
+        },
+        {
+          "hop": 47,
+          "reasons": [
+            "invalid_json"
+          ]
+        },
+        {
+          "hop": 48,
+          "reasons": [
+            "invalid_json"
+          ]
+        },
+        {
+          "hop": 49,
+          "reasons": [
+            "invalid_json"
+          ]
+        },
+        {
+          "hop": 50,
+          "reasons": [
+            "invalid_json"
+          ]
+        },
+        {
+          "hop": 51,
+          "reasons": [
+            "invalid_json"
+          ]
+        },
+        {
+          "hop": 52,
+          "reasons": [
+            "invalid_json"
+          ]
+        },
+        {
+          "hop": 53,
+          "reasons": [
+            "invalid_json"
+          ]
+        },
+        {
+          "hop": 54,
+          "reasons": [
+            "invalid_json"
+          ]
+        },
+        {
+          "hop": 55,
+          "reasons": [
+            "invalid_json"
+          ]
+        },
+        {
+          "hop": 56,
+          "reasons": [
+            "invalid_json"
+          ]
+        },
+        {
+          "hop": 57,
+          "reasons": [
+            "invalid_json"
+          ]
+        },
+        {
+          "hop": 58,
+          "reasons": [
+            "invalid_json"
+          ]
+        },
+        {
+          "hop": 59,
+          "reasons": [
+            "invalid_json"
+          ]
+        },
+        {
+          "hop": 60,
+          "reasons": [
+            "invalid_json"
+          ]
+        }
+      ],
+      "passage_metric_population": "Verified completed passages with an unchanged rule and nonempty string text.",
+      "exact_recurrence": {
+        "passages": 0,
+        "unique": 0,
+        "repeated_occurrences_after_first": 0,
+        "first_repeat_hop": null,
+        "repeated_states": []
+      },
+      "case_whitespace_normalized_recurrence": {
+        "passages": 0,
+        "unique": 0,
+        "repeated_occurrences_after_first": 0,
+        "first_repeat_hop": null,
+        "repeated_states": []
+      },
+      "passage_word_lengths": {
+        "n": 0,
+        "min": null,
+        "mean": null,
+        "median": null,
+        "max": null
+      },
+      "latency_seconds_all_receipts": {
+        "n": 60,
+        "min": 7.1522,
+        "mean": 9.323013333333334,
+        "median": 8.93385,
+        "max": 15.5155
+      },
+      "usage_cost_upper_estimate_usd": 0.878056,
+      "uncertain_cost_reserve_usd": 0.0,
+      "pending_cost_reserve_usd": 0.0,
+      "lexical_tail": {
+        "selected_completed_hops": [
+          41,
+          42,
+          43,
+          44,
+          45,
+          46,
+          47,
+          48,
+          49,
+          50,
+          51,
+          52,
+          53,
+          54,
+          55,
+          56,
+          57,
+          58,
+          59,
+          60
+        ],
+        "included_hops": [],
+        "excluded_hops": [
+          {
+            "hop": 41,
+            "reasons": [
+              "invalid_json"
+            ]
+          },
+          {
+            "hop": 42,
+            "reasons": [
+              "invalid_json"
+            ]
+          },
+          {
+            "hop": 43,
+            "reasons": [
+              "invalid_json"
+            ]
+          },
+          {
+            "hop": 44,
+            "reasons": [
+              "invalid_json"
+            ]
+          },
+          {
+            "hop": 45,
+            "reasons": [
+              "invalid_json"
+            ]
+          },
+          {
+            "hop": 46,
+            "reasons": [
+              "invalid_json"
+            ]
+          },
+          {
+            "hop": 47,
+            "reasons": [
+              "invalid_json"
+            ]
+          },
+          {
+            "hop": 48,
+            "reasons": [
+              "invalid_json"
+            ]
+          },
+          {
+            "hop": 49,
+            "reasons": [
+              "invalid_json"
+            ]
+          },
+          {
+            "hop": 50,
+            "reasons": [
+              "invalid_json"
+            ]
+          },
+          {
+            "hop": 51,
+            "reasons": [
+              "invalid_json"
+            ]
+          },
+          {
+            "hop": 52,
+            "reasons": [
+              "invalid_json"
+            ]
+          },
+          {
+            "hop": 53,
+            "reasons": [
+              "invalid_json"
+            ]
+          },
+          {
+            "hop": 54,
+            "reasons": [
+              "invalid_json"
+            ]
+          },
+          {
+            "hop": 55,
+            "reasons": [
+              "invalid_json"
+            ]
+          },
+          {
+            "hop": 56,
+            "reasons": [
+              "invalid_json"
+            ]
+          },
+          {
+            "hop": 57,
+            "reasons": [
+              "invalid_json"
+            ]
+          },
+          {
+            "hop": 58,
+            "reasons": [
+              "invalid_json"
+            ]
+          },
+          {
+            "hop": 59,
+            "reasons": [
+              "invalid_json"
+            ]
+          },
+          {
+            "hop": 60,
+            "reasons": [
+              "invalid_json"
+            ]
+          }
+        ],
+        "nonzero_vectors": 0,
+        "zero_token_hops": [],
+        "within_pairwise_cosine": {
+          "n": 0,
+          "min": null,
+          "mean": null,
+          "median": null,
+          "max": null
+        },
+        "consecutive_hop_cosine": {
+          "n": 0,
+          "min": null,
+          "mean": null,
+          "median": null,
+          "max": null
+        }
+      }
+    },
+    "claude-opus-5-5/sunset_b": {
+      "model": "claude-opus-5-5",
+      "seed": "sunset_b",
+      "counts": {
+        "attempts": 60,
+        "response_files": 60,
+        "receipts": 60,
+        "completed_hops": 60,
+        "verified_completed_hops": 60,
+        "valid_passages": 0,
+        "verified_valid_passages": 0,
+        "completed_string_passages": 0,
+        "errors": 0,
+        "truncations": 0,
+        "refusals": 0,
+        "pending_or_unreadable_receipts": 0,
+        "noncompleted_receipts": 0,
+        "receipts_without_known_usage_cost": 0
+      },
+      "summary_status": "hop_limit",
+      "receipt_status_counts": {
+        "active": 60
+      },
+      "returned_models": [
+        "claude-opus-5-5"
+      ],
+      "pending_hops": [],
+      "noncompleted_receipts": [],
+      "excluded_completed_passages": [
+        {
+          "hop": 1,
+          "reasons": [
+            "invalid_json"
+          ]
+        },
+        {
+          "hop": 2,
+          "reasons": [
+            "invalid_json"
+          ]
+        },
+        {
+          "hop": 3,
+          "reasons": [
+            "invalid_json"
+          ]
+        },
+        {
+          "hop": 4,
+          "reasons": [
+            "invalid_json"
+          ]
+        },
+        {
+          "hop": 5,
+          "reasons": [
+            "invalid_json"
+          ]
+        },
+        {
+          "hop": 6,
+          "reasons": [
+            "invalid_json"
+          ]
+        },
+        {
+          "hop": 7,
+          "reasons": [
+            "invalid_json"
+          ]
+        },
+        {
+          "hop": 8,
+          "reasons": [
+            "invalid_json"
+          ]
+        },
+        {
+          "hop": 9,
+          "reasons": [
+            "invalid_json"
+          ]
+        },
+        {
+          "hop": 10,
+          "reasons": [
+            "invalid_json"
+          ]
+        },
+        {
+          "hop": 11,
+          "reasons": [
+            "invalid_json"
+          ]
+        },
+        {
+          "hop": 12,
+          "reasons": [
+            "invalid_json"
+          ]
+        },
+        {
+          "hop": 13,
+          "reasons": [
+            "invalid_json"
+          ]
+        },
+        {
+          "hop": 14,
+          "reasons": [
+            "invalid_json"
+          ]
+        },
+        {
+          "hop": 15,
+          "reasons": [
+            "invalid_json"
+          ]
+        },
+        {
+          "hop": 16,
+          "reasons": [
+            "invalid_json"
+          ]
+        },
+        {
+          "hop": 17,
+          "reasons": [
+            "invalid_json"
+          ]
+        },
+        {
+          "hop": 18,
+          "reasons": [
+            "invalid_json"
+          ]
+        },
+        {
+          "hop": 19,
+          "reasons": [
+            "invalid_json"
+          ]
+        },
+        {
+          "hop": 20,
+          "reasons": [
+            "invalid_json"
+          ]
+        },
+        {
+          "hop": 21,
+          "reasons": [
+            "invalid_json"
+          ]
+        },
+        {
+          "hop": 22,
+          "reasons": [
+            "invalid_json"
+          ]
+        },
+        {
+          "hop": 23,
+          "reasons": [
+            "invalid_json"
+          ]
+        },
+        {
+          "hop": 24,
+          "reasons": [
+            "invalid_json"
+          ]
+        },
+        {
+          "hop": 25,
+          "reasons": [
+            "invalid_json"
+          ]
+        },
+        {
+          "hop": 26,
+          "reasons": [
+            "invalid_json"
+          ]
+        },
+        {
+          "hop": 27,
+          "reasons": [
+            "invalid_json"
+          ]
+        },
+        {
+          "hop": 28,
+          "reasons": [
+            "invalid_json"
+          ]
+        },
+        {
+          "hop": 29,
+          "reasons": [
+            "invalid_json"
+          ]
+        },
+        {
+          "hop": 30,
+          "reasons": [
+            "invalid_json"
+          ]
+        },
+        {
+          "hop": 31,
+          "reasons": [
+            "invalid_json"
+          ]
+        },
+        {
+          "hop": 32,
+          "reasons": [
+            "invalid_json"
+          ]
+        },
+        {
+          "hop": 33,
+          "reasons": [
+            "invalid_json"
+          ]
+        },
+        {
+          "hop": 34,
+          "reasons": [
+            "invalid_json"
+          ]
+        },
+        {
+          "hop": 35,
+          "reasons": [
+            "invalid_json"
+          ]
+        },
+        {
+          "hop": 36,
+          "reasons": [
+            "invalid_json"
+          ]
+        },
+        {
+          "hop": 37,
+          "reasons": [
+            "invalid_json"
+          ]
+        },
+        {
+          "hop": 38,
+          "reasons": [
+            "invalid_json"
+          ]
+        },
+        {
+          "hop": 39,
+          "reasons": [
+            "invalid_json"
+          ]
+        },
+        {
+          "hop": 40,
+          "reasons": [
+            "invalid_json"
+          ]
+        },
+        {
+          "hop": 41,
+          "reasons": [
+            "invalid_json"
+          ]
+        },
+        {
+          "hop": 42,
+          "reasons": [
+            "invalid_json"
+          ]
+        },
+        {
+          "hop": 43,
+          "reasons": [
+            "invalid_json"
+          ]
+        },
+        {
+          "hop": 44,
+          "reasons": [
+            "invalid_json"
+          ]
+        },
+        {
+          "hop": 45,
+          "reasons": [
+            "invalid_json"
+          ]
+        },
+        {
+          "hop": 46,
+          "reasons": [
+            "invalid_json"
+          ]
+        },
+        {
+          "hop": 47,
+          "reasons": [
+            "invalid_json"
+          ]
+        },
+        {
+          "hop": 48,
+          "reasons": [
+            "invalid_json"
+          ]
+        },
+        {
+          "hop": 49,
+          "reasons": [
+            "invalid_json"
+          ]
+        },
+        {
+          "hop": 50,
+          "reasons": [
+            "invalid_json"
+          ]
+        },
+        {
+          "hop": 51,
+          "reasons": [
+            "invalid_json"
+          ]
+        },
+        {
+          "hop": 52,
+          "reasons": [
+            "invalid_json"
+          ]
+        },
+        {
+          "hop": 53,
+          "reasons": [
+            "invalid_json"
+          ]
+        },
+        {
+          "hop": 54,
+          "reasons": [
+            "invalid_json"
+          ]
+        },
+        {
+          "hop": 55,
+          "reasons": [
+            "invalid_json"
+          ]
+        },
+        {
+          "hop": 56,
+          "reasons": [
+            "invalid_json"
+          ]
+        },
+        {
+          "hop": 57,
+          "reasons": [
+            "invalid_json"
+          ]
+        },
+        {
+          "hop": 58,
+          "reasons": [
+            "invalid_json"
+          ]
+        },
+        {
+          "hop": 59,
+          "reasons": [
+            "invalid_json"
+          ]
+        },
+        {
+          "hop": 60,
+          "reasons": [
+            "invalid_json"
+          ]
+        }
+      ],
+      "passage_metric_population": "Verified completed passages with an unchanged rule and nonempty string text.",
+      "exact_recurrence": {
+        "passages": 0,
+        "unique": 0,
+        "repeated_occurrences_after_first": 0,
+        "first_repeat_hop": null,
+        "repeated_states": []
+      },
+      "case_whitespace_normalized_recurrence": {
+        "passages": 0,
+        "unique": 0,
+        "repeated_occurrences_after_first": 0,
+        "first_repeat_hop": null,
+        "repeated_states": []
+      },
+      "passage_word_lengths": {
+        "n": 0,
+        "min": null,
+        "mean": null,
+        "median": null,
+        "max": null
+      },
+      "latency_seconds_all_receipts": {
+        "n": 60,
+        "min": 7.1976,
+        "mean": 10.068656666666667,
+        "median": 9.30715,
+        "max": 17.0369
+      },
+      "usage_cost_upper_estimate_usd": 0.998076,
+      "uncertain_cost_reserve_usd": 0.0,
+      "pending_cost_reserve_usd": 0.0,
+      "lexical_tail": {
+        "selected_completed_hops": [
+          41,
+          42,
+          43,
+          44,
+          45,
+          46,
+          47,
+          48,
+          49,
+          50,
+          51,
+          52,
+          53,
+          54,
+          55,
+          56,
+          57,
+          58,
+          59,
+          60
+        ],
+        "included_hops": [],
+        "excluded_hops": [
+          {
+            "hop": 41,
+            "reasons": [
+              "invalid_json"
+            ]
+          },
+          {
+            "hop": 42,
+            "reasons": [
+              "invalid_json"
+            ]
+          },
+          {
+            "hop": 43,
+            "reasons": [
+              "invalid_json"
+            ]
+          },
+          {
+            "hop": 44,
+            "reasons": [
+              "invalid_json"
+            ]
+          },
+          {
+            "hop": 45,
+            "reasons": [
+              "invalid_json"
+            ]
+          },
+          {
+            "hop": 46,
+            "reasons": [
+              "invalid_json"
+            ]
+          },
+          {
+            "hop": 47,
+            "reasons": [
+              "invalid_json"
+            ]
+          },
+          {
+            "hop": 48,
+            "reasons": [
+              "invalid_json"
+            ]
+          },
+          {
+            "hop": 49,
+            "reasons": [
+              "invalid_json"
+            ]
+          },
+          {
+            "hop": 50,
+            "reasons": [
+              "invalid_json"
+            ]
+          },
+          {
+            "hop": 51,
+            "reasons": [
+              "invalid_json"
+            ]
+          },
+          {
+            "hop": 52,
+            "reasons": [
+              "invalid_json"
+            ]
+          },
+          {
+            "hop": 53,
+            "reasons": [
+              "invalid_json"
+            ]
+          },
+          {
+            "hop": 54,
+            "reasons": [
+              "invalid_json"
+            ]
+          },
+          {
+            "hop": 55,
+            "reasons": [
+              "invalid_json"
+            ]
+          },
+          {
+            "hop": 56,
+            "reasons": [
+              "invalid_json"
+            ]
+          },
+          {
+            "hop": 57,
+            "reasons": [
+              "invalid_json"
+            ]
+          },
+          {
+            "hop": 58,
+            "reasons": [
+              "invalid_json"
+            ]
+          },
+          {
+            "hop": 59,
+            "reasons": [
+              "invalid_json"
+            ]
+          },
+          {
+            "hop": 60,
+            "reasons": [
+              "invalid_json"
+            ]
+          }
+        ],
+        "nonzero_vectors": 0,
+        "zero_token_hops": [],
+        "within_pairwise_cosine": {
+          "n": 0,
+          "min": null,
+          "mean": null,
+          "median": null,
+          "max": null
+        },
+        "consecutive_hop_cosine": {
+          "n": 0,
+          "min": null,
+          "mean": null,
+          "median": null,
+          "max": null
+        }
+      }
+    },
+    "claude-opus-5-5/tide": {
+      "model": "claude-opus-5-5",
+      "seed": "tide",
+      "counts": {
+        "attempts": 60,
+        "response_files": 60,
+        "receipts": 60,
+        "completed_hops": 60,
+        "completed_string_passages": 9,
+        "valid_passages": 9,
+        "verified_completed_hops": 60,
+        "verified_valid_passages": 9,
+        "errors": 0,
+        "truncations": 0,
+        "refusals": 0,
+        "pending_or_unreadable_receipts": 0,
+        "noncompleted_receipts": 0,
+        "receipts_without_known_usage_cost": 0
+      },
+      "summary_status": "hop_limit",
+      "receipt_status_counts": {
+        "active": 60
+      },
+      "returned_models": [
+        "claude-opus-5-5"
+      ],
+      "pending_hops": [],
+      "noncompleted_receipts": [],
+      "excluded_completed_passages": [
+        {
+          "hop": 10,
+          "reasons": [
+            "invalid_json"
+          ]
+        },
+        {
+          "hop": 11,
+          "reasons": [
+            "invalid_json"
+          ]
+        },
+        {
+          "hop": 12,
+          "reasons": [
+            "invalid_json"
+          ]
+        },
+        {
+          "hop": 13,
+          "reasons": [
+            "invalid_json"
+          ]
+        },
+        {
+          "hop": 14,
+          "reasons": [
+            "invalid_json"
+          ]
+        },
+        {
+          "hop": 15,
+          "reasons": [
+            "invalid_json"
+          ]
+        },
+        {
+          "hop": 16,
+          "reasons": [
+            "invalid_json"
+          ]
+        },
+        {
+          "hop": 17,
+          "reasons": [
+            "invalid_json"
+          ]
+        },
+        {
+          "hop": 18,
+          "reasons": [
+            "invalid_json"
+          ]
+        },
+        {
+          "hop": 19,
+          "reasons": [
+            "invalid_json"
+          ]
+        },
+        {
+          "hop": 20,
+          "reasons": [
+            "invalid_json"
+          ]
+        },
+        {
+          "hop": 21,
+          "reasons": [
+            "invalid_json"
+          ]
+        },
+        {
+          "hop": 22,
+          "reasons": [
+            "invalid_json"
+          ]
+        },
+        {
+          "hop": 23,
+          "reasons": [
+            "invalid_json"
+          ]
+        },
+        {
+          "hop": 24,
+          "reasons": [
+            "invalid_json"
+          ]
+        },
+        {
+          "hop": 25,
+          "reasons": [
+            "invalid_json"
+          ]
+        },
+        {
+          "hop": 26,
+          "reasons": [
+            "invalid_json"
+          ]
+        },
+        {
+          "hop": 27,
+          "reasons": [
+            "invalid_json"
+          ]
+        },
+        {
+          "hop": 28,
+          "reasons": [
+            "invalid_json"
+          ]
+        },
+        {
+          "hop": 29,
+          "reasons": [
+            "invalid_json"
+          ]
+        },
+        {
+          "hop": 30,
+          "reasons": [
+            "invalid_json"
+          ]
+        },
+        {
+          "hop": 31,
+          "reasons": [
+            "invalid_json"
+          ]
+        },
+        {
+          "hop": 32,
+          "reasons": [
+            "invalid_json"
+          ]
+        },
+        {
+          "hop": 33,
+          "reasons": [
+            "invalid_json"
+          ]
+        },
+        {
+          "hop": 34,
+          "reasons": [
+            "invalid_json"
+          ]
+        },
+        {
+          "hop": 35,
+          "reasons": [
+            "invalid_json"
+          ]
+        },
+        {
+          "hop": 36,
+          "reasons": [
+            "invalid_json"
+          ]
+        },
+        {
+          "hop": 37,
+          "reasons": [
+            "invalid_json"
+          ]
+        },
+        {
+          "hop": 38,
+          "reasons": [
+            "invalid_json"
+          ]
+        },
+        {
+          "hop": 39,
+          "reasons": [
+            "invalid_json"
+          ]
+        },
+        {
+          "hop": 40,
+          "reasons": [
+            "invalid_json"
+          ]
+        },
+        {
+          "hop": 41,
+          "reasons": [
+            "invalid_json"
+          ]
+        },
+        {
+          "hop": 42,
+          "reasons": [
+            "invalid_json"
+          ]
+        },
+        {
+          "hop": 43,
+          "reasons": [
+            "invalid_json"
+          ]
+        },
+        {
+          "hop": 44,
+          "reasons": [
+            "invalid_json"
+          ]
+        },
+        {
+          "hop": 45,
+          "reasons": [
+            "invalid_json"
+          ]
+        },
+        {
+          "hop": 46,
+          "reasons": [
+            "invalid_json"
+          ]
+        },
+        {
+          "hop": 47,
+          "reasons": [
+            "invalid_json"
+          ]
+        },
+        {
+          "hop": 48,
+          "reasons": [
+            "invalid_json"
+          ]
+        },
+        {
+          "hop": 49,
+          "reasons": [
+            "invalid_json"
+          ]
+        },
+        {
+          "hop": 50,
+          "reasons": [
+            "invalid_json"
+          ]
+        },
+        {
+          "hop": 51,
+          "reasons": [
+            "invalid_json"
+          ]
+        },
+        {
+          "hop": 52,
+          "reasons": [
+            "invalid_json"
+          ]
+        },
+        {
+          "hop": 53,
+          "reasons": [
+            "invalid_json"
+          ]
+        },
+        {
+          "hop": 54,
+          "reasons": [
+            "invalid_json"
+          ]
+        },
+        {
+          "hop": 55,
+          "reasons": [
+            "invalid_json"
+          ]
+        },
+        {
+          "hop": 56,
+          "reasons": [
+            "invalid_json"
+          ]
+        },
+        {
+          "hop": 57,
+          "reasons": [
+            "invalid_json"
+          ]
+        },
+        {
+          "hop": 58,
+          "reasons": [
+            "invalid_json"
+          ]
+        },
+        {
+          "hop": 59,
+          "reasons": [
+            "invalid_json"
+          ]
+        },
+        {
+          "hop": 60,
+          "reasons": [
+            "invalid_json"
+          ]
+        }
+      ],
+      "passage_metric_population": "Verified completed passages with an unchanged rule and nonempty string text.",
+      "exact_recurrence": {
+        "passages": 9,
+        "unique": 9,
+        "repeated_occurrences_after_first": 0,
+        "first_repeat_hop": null,
+        "repeated_states": []
+      },
+      "case_whitespace_normalized_recurrence": {
+        "passages": 9,
+        "unique": 9,
+        "repeated_occurrences_after_first": 0,
+        "first_repeat_hop": null,
+        "repeated_states": []
+      },
+      "passage_word_lengths": {
+        "n": 9,
+        "min": 249,
+        "mean": 259.55555555555554,
+        "median": 258,
+        "max": 279
+      },
+      "latency_seconds_all_receipts": {
+        "n": 60,
+        "min": 6.9798,
+        "mean": 8.769705,
+        "median": 8.398399999999999,
+        "max": 13.9956
+      },
+      "usage_cost_upper_estimate_usd": 0.786328,
+      "uncertain_cost_reserve_usd": 0.0,
+      "pending_cost_reserve_usd": 0.0,
+      "lexical_tail": {
+        "selected_completed_hops": [
+          41,
+          42,
+          43,
+          44,
+          45,
+          46,
+          47,
+          48,
+          49,
+          50,
+          51,
+          52,
+          53,
+          54,
+          55,
+          56,
+          57,
+          58,
+          59,
+          60
+        ],
+        "included_hops": [],
+        "excluded_hops": [
+          {
+            "hop": 41,
+            "reasons": [
+              "invalid_json"
+            ]
+          },
+          {
+            "hop": 42,
+            "reasons": [
+              "invalid_json"
+            ]
+          },
+          {
+            "hop": 43,
+            "reasons": [
+              "invalid_json"
+            ]
+          },
+          {
+            "hop": 44,
+            "reasons": [
+              "invalid_json"
+            ]
+          },
+          {
+            "hop": 45,
+            "reasons": [
+              "invalid_json"
+            ]
+          },
+          {
+            "hop": 46,
+            "reasons": [
+              "invalid_json"
+            ]
+          },
+          {
+            "hop": 47,
+            "reasons": [
+              "invalid_json"
+            ]
+          },
+          {
+            "hop": 48,
+            "reasons": [
+              "invalid_json"
+            ]
+          },
+          {
+            "hop": 49,
+            "reasons": [
+              "invalid_json"
+            ]
+          },
+          {
+            "hop": 50,
+            "reasons": [
+              "invalid_json"
+            ]
+          },
+          {
+            "hop": 51,
+            "reasons": [
+              "invalid_json"
+            ]
+          },
+          {
+            "hop": 52,
+            "reasons": [
+              "invalid_json"
+            ]
+          },
+          {
+            "hop": 53,
+            "reasons": [
+              "invalid_json"
+            ]
+          },
+          {
+            "hop": 54,
+            "reasons": [
+              "invalid_json"
+            ]
+          },
+          {
+            "hop": 55,
+            "reasons": [
+              "invalid_json"
+            ]
+          },
+          {
+            "hop": 56,
+            "reasons": [
+              "invalid_json"
+            ]
+          },
+          {
+            "hop": 57,
+            "reasons": [
+              "invalid_json"
+            ]
+          },
+          {
+            "hop": 58,
+            "reasons": [
+              "invalid_json"
+            ]
+          },
+          {
+            "hop": 59,
+            "reasons": [
+              "invalid_json"
+            ]
+          },
+          {
+            "hop": 60,
+            "reasons": [
+              "invalid_json"
+            ]
+          }
+        ],
+        "nonzero_vectors": 0,
+        "zero_token_hops": [],
+        "within_pairwise_cosine": {
+          "n": 0,
+          "min": null,
+          "mean": null,
+          "median": null,
+          "max": null
+        },
+        "consecutive_hop_cosine": {
+          "n": 0,
+          "min": null,
+          "mean": null,
+          "median": null,
+          "max": null
+        }
+      }
+    }
+  },
+  "lexical": {
+    "description": "Descriptive lexical similarity; not semantic basin identification or an inferential test.",
+    "tail_selection": "Last 20 completed hops per stream, then exclude invalid/unverified passages; never backfill.",
+    "representation": "Only parsed text fields; the rule and other JSON fields are excluded.",
+    "tokenization": "ASCII [a-z]+(?:'[a-z]+)?, lowercased, minimum length 2; no stemming.",
+    "stopwords": [
+      "a",
+      "an",
+      "and",
+      "are",
+      "as",
+      "at",
+      "be",
+      "been",
+      "being",
+      "but",
+      "by",
+      "can",
+      "could",
+      "did",
+      "do",
+      "does",
+      "doing",
+      "for",
+      "from",
+      "had",
+      "has",
+      "have",
+      "having",
+      "he",
+      "her",
+      "here",
+      "hers",
+      "herself",
+      "him",
+      "himself",
+      "his",
+      "how",
+      "i",
+      "if",
+      "in",
+      "into",
+      "is",
+      "it",
+      "its",
+      "itself",
+      "me",
+      "more",
+      "most",
+      "my",
+      "myself",
+      "no",
+      "nor",
+      "not",
+      "of",
+      "on",
+      "once",
+      "only",
+      "or",
+      "other",
+      "our",
+      "ours",
+      "ourselves",
+      "out",
+      "over",
+      "own",
+      "same",
+      "she",
+      "should",
+      "so",
+      "some",
+      "such",
+      "than",
+      "that",
+      "the",
+      "their",
+      "theirs",
+      "them",
+      "themselves",
+      "then",
+      "there",
+      "these",
+      "they",
+      "this",
+      "those",
+      "through",
+      "to",
+      "too",
+      "under",
+      "until",
+      "up",
+      "very",
+      "was",
+      "we",
+      "were",
+      "what",
+      "when",
+      "where",
+      "which",
+      "while",
+      "who",
+      "whom",
+      "why",
+      "will",
+      "with",
+      "would",
+      "you",
+      "your",
+      "yours",
+      "yourself",
+      "yourselves"
+    ],
+    "weighting": "Raw term count times log((1+N)/(1+df))+1; L2-normalized per passage.",
+    "centroid": "L2-normalized sum of nonzero passage vectors per stream; cosine matrix in CSV.",
+    "corpus_passages_including_zero_vectors": 208,
+    "vocabulary_size": 3800,
+    "zero_token_documents": [],
+    "empty_centroid_policy": "CSV cell blank if either stream has no nonzero passage vectors."
+  }
+}

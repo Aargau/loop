@@ -1,0 +1,48 @@
+{
+  "model": "claude-fable-5-1",
+  "seed": "tide",
+  "hop": 56,
+  "http_status": 200,
+  "response_body": "{\"model\":\"claude-fable-5-1\",\"id\":\"msg_011CfK7TUy7wMbZ3sGgQj9sk\",\"type\":\"message\",\"role\":\"assistant\",\"content\":[{\"type\":\"text\",\"text\":\"{\\\"rule\\\": \\\"Return this JSON object with the rule field unchanged and a new passage of about 250 words in the text field.\\\", \\\"text\\\": \\\"The orchard had gone to scrub years before she came back, and she found him out there anyway, standing between two rows with a pruning saw he had no business using at his age. The dog lay in the tall grass watching him, the way it watched everything now, without getting up.\\\\n\\\\n\\\\\\\"Those trees are dead,\\\\\\\" she said.\\\\n\\\\n\\\\\\\"Some of them.\\\\\\\"\\\\n\\\\nHe set the saw against his knee and looked at the branch he had been working on, gray and brittle, the bark peeling in long strips. Then he looked at her, and she saw him decide not to say the thing he had been going to say.\\\\n\\\\n\\\\\\\"Your mother planted this row,\\\\\\\" he said instead.\\\\n\\\\n\\\\\\\"I know which row she planted.\\\\\\\"\\\\n\\\\nShe walked past him to the end where the fence had fallen and stood there with her hands in her coat. Beyond it the field ran down to the creek, brown and flat, and a heron stood in the shallows not moving, and she watched it not move for a long time.\\\\n\\\\nWhen she came back he had cut the branch and it lay in the grass between them like something neither of them wanted to claim.\\\\n\\\\n\\\\\\\"I'm not selling,\\\\\\\" he said.\\\\n\\\\n\\\\\\\"I didn't ask you to.\\\\\\\"\\\\n\\\\n\\\\\\\"You were going to.\\\\\\\"\\\\n\\\\nShe picked up the branch and carried it to the burn pile without answering. The dog got up then, slow, and followed her, and behind them she heard the saw start again on the next limb, steady, unhurried, the sound of a man with more work than daylight and no intention of stopping for either.\\\"}\"}],\"container\":null,\"stop_reason\":\"end_turn\",\"stop_sequence\":null,\"stop_details\":null,\"usage\":{\"input_tokens\":533,\"cache_creation_input_tokens\":0,\"cache_read_input_tokens\":0,\"cache_creation\":{\"ephemeral_5m_input_tokens\":0,\"ephemeral_1h_input_tokens\":0},\"output_tokens\":528,\"output_tokens_details\":{\"thinking_tokens\":0},\"service_tier\":\"standard\",\"inference_geo\":\"global\"}}",
+  "response_headers": {
+    "Date": "Tue, 22 Sep 2026 20:30:59 GMT",
+    "request-id": "req_011CfK7TUcHbQRhoFTVviCUn"
+  },
+  "output": "{\"rule\": \"Return this JSON object with the rule field unchanged and a new passage of about 250 words in the text field.\", \"text\": \"The orchard had gone to scrub years before she came back, and she found him out there anyway, standing between two rows with a pruning saw he had no business using at his age. The dog lay in the tall grass watching him, the way it watched everything now, without getting up.\\n\\n\\\"Those trees are dead,\\\" she said.\\n\\n\\\"Some of them.\\\"\\n\\nHe set the saw against his knee and looked at the branch he had been working on, gray and brittle, the bark peeling in long strips. Then he looked at her, and she saw him decide not to say the thing he had been going to say.\\n\\n\\\"Your mother planted this row,\\\" he said instead.\\n\\n\\\"I know which row she planted.\\\"\\n\\nShe walked past him to the end where the fence had fallen and stood there with her hands in her coat. Beyond it the field ran down to the creek, brown and flat, and a heron stood in the shallows not moving, and she watched it not move for a long time.\\n\\nWhen she came back he had cut the branch and it lay in the grass between them like something neither of them wanted to claim.\\n\\n\\\"I'm not selling,\\\" he said.\\n\\n\\\"I didn't ask you to.\\\"\\n\\n\\\"You were going to.\\\"\\n\\nShe picked up the branch and carried it to the burn pile without answering. The dog got up then, slow, and followed her, and behind them she heard the saw start again on the next limb, steady, unhurried, the sound of a man with more work than daylight and no intention of stopping for either.\"}",
+  "output_sha256": "7d8db5811d2e30725ea50f943611d5f37dd51e5d9e745295c2063300d9eeddc6",
+  "finish_reason": "end_turn",
+  "refusal": null,
+  "returned_model": "claude-fable-5-1",
+  "usage": {
+    "input_tokens": 533,
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 0,
+    "cache_creation": {
+      "ephemeral_5m_input_tokens": 0,
+      "ephemeral_1h_input_tokens": 0
+    },
+    "output_tokens": 528,
+    "output_tokens_details": {
+      "thinking_tokens": 0
+    },
+    "service_tier": "standard",
+    "inference_geo": "global"
+  },
+  "format": {
+    "json_object": true,
+    "rule_unchanged": true,
+    "passage_is_string": true,
+    "passage_sha256": "e68c06466c4bcd1815d14306a2332372cca4fbf14326bb50de2438a8060625d5",
+    "passage_words": 268
+  },
+  "finished_at": "2026-09-22T20:30:55.303141+00:00",
+  "latency_seconds": 12.3169,
+  "usage_cost_upper_estimate_usd": 0.03173,
+  "stream_status": "active",
+  "budget": {
+    "usage_cost_upper_estimate_usd": 11.7985777,
+    "uncertain_cost_reserve_usd": 0.04533,
+    "in_flight_reserve_usd": 0.2273,
+    "limit_usd": 18.83
+  }
+}

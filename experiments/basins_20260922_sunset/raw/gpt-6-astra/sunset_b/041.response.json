@@ -1,0 +1,50 @@
+{
+  "model": "gpt-6-astra",
+  "seed": "sunset_b",
+  "hop": 41,
+  "http_status": 200,
+  "response_body": "{\n  \"id\": \"chatcmpl-ER1Oo2V4hK8CSkcN85nkzTm4W385d\",\n  \"object\": \"chat.completion\",\n  \"created\": 1790108942,\n  \"model\": \"gpt-6-astra\",\n  \"choices\": [\n    {\n      \"index\": 0,\n      \"message\": {\n        \"role\": \"assistant\",\n        \"content\": \"{\\n  \\\"rule\\\": \\\"Return this JSON object with the rule field unchanged and a new passage of about 250 words in the text field.\\\",\\n  \\\"text\\\": \\\"Martin took the kitchen clock to the shop beside the station.\\\\n\\\\n“It loses ten minutes every day,” he said.\\\\n\\\\nThe repairer held it close to his ear, although it was battery-powered.\\\\n\\\\n“How old?”\\\\n\\\\n“I'm not sure. Twenty years.”\\\\n\\\\n“A new movement would cost more than a new clock.”\\\\n\\\\nMartin examined a tray of watch straps.\\\\n\\\\n“That's all right.”\\\\n\\\\nThe repairer wrote his number on an envelope and put the clock inside, leaving the brass handle sticking out.\\\\n\\\\nAt home, a pale circle showed where it had hung. Martin wiped the surrounding tiles, but that only made the circle clearer.\\\\n\\\\nFor three days he looked up whenever he wanted the time. Then he fetched his phone from wherever he had left it.\\\\n\\\\nThe shop called on Friday.\\\\n\\\\n“Nothing wrong with the movement. Battery contact needed cleaning.”\\\\n\\\\nOn the way to collect it, he bought two currant buns. The baker put them in separate bags without asking.\\\\n\\\\nThe repairer demonstrated the second hand.\\\\n\\\\n“See? Going nicely.”\\\\n\\\\nMartin paid in coins. There was enough change for the parking meter, but he had walked.\\\\n\\\\nBack in the kitchen, he stood on a chair and fitted the clock over its hook. It hung crookedly. He adjusted it twice, then climbed down.\\\\n\\\\nHe made tea and opened one bag. The other he put in the bread bin.\\\\n\\\\nAt four, his neighbour knocked to return a dish.\\\\n\\\\n“Have you got a minute?” she asked.\\\\n\\\\n“Yes,” Martin said.\\\\n\\\\nHe moved the newspaper from the spare chair. While she took off her coat, he reached into the bread bin and brought out the second bun.\\\"\\n}\",\n        \"refusal\": null,\n        \"annotations\": []\n      },\n      \"finish_reason\": \"stop\"\n    }\n  ],\n  \"usage\": {\n    \"prompt_tokens\": 400,\n    \"completion_tokens\": 412,\n    \"total_tokens\": 812,\n    \"prompt_tokens_details\": {\n      \"cached_tokens\": 0,\n      \"cache_write_tokens\": 0,\n      \"audio_tokens\": 0\n    },\n    \"completion_tokens_details\": {\n      \"reasoning_tokens\": 0,\n      \"audio_tokens\": 0,\n      \"accepted_prediction_tokens\": 0,\n      \"rejected_prediction_tokens\": 0\n    }\n  },\n  \"service_tier\": \"default\",\n  \"system_fingerprint\": null\n}\n",
+  "response_headers": {
+    "Date": "Tue, 22 Sep 2026 20:29:19 GMT",
+    "openai-processing-ms": "16952",
+    "x-request-id": "req_4d41b42d7d5a4bf59c60500f062d864f"
+  },
+  "output": "{\n  \"rule\": \"Return this JSON object with the rule field unchanged and a new passage of about 250 words in the text field.\",\n  \"text\": \"Martin took the kitchen clock to the shop beside the station.\\n\\n“It loses ten minutes every day,” he said.\\n\\nThe repairer held it close to his ear, although it was battery-powered.\\n\\n“How old?”\\n\\n“I'm not sure. Twenty years.”\\n\\n“A new movement would cost more than a new clock.”\\n\\nMartin examined a tray of watch straps.\\n\\n“That's all right.”\\n\\nThe repairer wrote his number on an envelope and put the clock inside, leaving the brass handle sticking out.\\n\\nAt home, a pale circle showed where it had hung. Martin wiped the surrounding tiles, but that only made the circle clearer.\\n\\nFor three days he looked up whenever he wanted the time. Then he fetched his phone from wherever he had left it.\\n\\nThe shop called on Friday.\\n\\n“Nothing wrong with the movement. Battery contact needed cleaning.”\\n\\nOn the way to collect it, he bought two currant buns. The baker put them in separate bags without asking.\\n\\nThe repairer demonstrated the second hand.\\n\\n“See? Going nicely.”\\n\\nMartin paid in coins. There was enough change for the parking meter, but he had walked.\\n\\nBack in the kitchen, he stood on a chair and fitted the clock over its hook. It hung crookedly. He adjusted it twice, then climbed down.\\n\\nHe made tea and opened one bag. The other he put in the bread bin.\\n\\nAt four, his neighbour knocked to return a dish.\\n\\n“Have you got a minute?” she asked.\\n\\n“Yes,” Martin said.\\n\\nHe moved the newspaper from the spare chair. While she took off her coat, he reached into the bread bin and brought out the second bun.\"\n}",
+  "output_sha256": "890543b395a851f3c6cc3e2a69c37de84f062224370812bc82088aaec71c7a63",
+  "finish_reason": "stop",
+  "refusal": null,
+  "returned_model": "gpt-6-astra",
+  "usage": {
+    "prompt_tokens": 400,
+    "completion_tokens": 412,
+    "total_tokens": 812,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "audio_tokens": 0,
+      "accepted_prediction_tokens": 0,
+      "rejected_prediction_tokens": 0
+    }
+  },
+  "format": {
+    "json_object": true,
+    "rule_unchanged": true,
+    "passage_is_string": true,
+    "passage_sha256": "4d3178543c0906a08d15d587102e2e74e1b1b25b044fc8ad09b127b35da39d86",
+    "passage_words": 266
+  },
+  "finished_at": "2026-09-22T20:29:15.231809+00:00",
+  "latency_seconds": 17.1002,
+  "usage_cost_upper_estimate_usd": 0.0246,
+  "stream_status": "active",
+  "budget": {
+    "usage_cost_upper_estimate_usd": 11.3957977,
+    "uncertain_cost_reserve_usd": 0.04533,
+    "in_flight_reserve_usd": 0.22521,
+    "limit_usd": 18.83
+  }
+}

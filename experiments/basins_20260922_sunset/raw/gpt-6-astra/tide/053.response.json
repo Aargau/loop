@@ -1,0 +1,50 @@
+{
+  "model": "gpt-6-astra",
+  "seed": "tide",
+  "hop": 53,
+  "http_status": 200,
+  "response_body": "{\n  \"id\": \"chatcmpl-ER1ZL5skEW3LzcUGox3tebrqKcASH\",\n  \"object\": \"chat.completion\",\n  \"created\": 1790109595,\n  \"model\": \"gpt-6-astra\",\n  \"choices\": [\n    {\n      \"index\": 0,\n      \"message\": {\n        \"role\": \"assistant\",\n        \"content\": \"{\\n  \\\"rule\\\": \\\"Return this JSON object with the rule field unchanged and a new passage of about 250 words in the text field.\\\",\\n  \\\"text\\\": \\\"The woman downstairs knocked while I was sorting my mother's kitchen drawers.\\\\n\\\\n“Have you found a blue dish?” she asked. “About this big.”\\\\n\\\\nShe held her hands apart.\\\\n\\\\nThere were three cupboards I hadn't opened yet. I told her she could look.\\\\n\\\\n“No hurry. I only saw your car.”\\\\n\\\\nShe stayed by the door with her shopping bag against her leg. I moved a stack of plates, then a glass jug full of rubber bands.\\\\n\\\\n“What did you bring her?”\\\\n\\\\n“Rice pudding, last time.”\\\\n\\\\nMy mother had told me she was cooking for herself. I had asked every Sunday.\\\\n\\\\n“She liked the skin,” the woman said. “My husband won't touch it.”\\\\n\\\\nI found the dish beneath a colander. Blue flowers around the edge, a chip underneath one handle. It had been washed and wrapped in a tea towel.\\\\n\\\\n“That's mine.”\\\\n\\\\nI started to unwrap it.\\\\n\\\\n“Keep it in that for now,” she said. “I'll bring the towel back.”\\\\n\\\\n“You don't have to.”\\\\n\\\\nShe shifted her bag to her other hand.\\\\n\\\\n“Are you here tomorrow?”\\\\n\\\\n“Most of the day.”\\\\n\\\\nAfter she left, I opened the drawer beside the cooker. Batteries, string, a screwdriver with a yellow handle. At the back was a small notebook. My mother had written the woman's name on the first page, followed by a telephone number.\\\\n\\\\nUnderneath, in smaller writing: blue dish.\\\\n\\\\nI took a pen from the drawer and crossed out those two words. Then I put the notebook in my coat pocket, in case I needed to call her about tomorrow.\\\"\\n}\",\n        \"refusal\": null,\n        \"annotations\": []\n      },\n      \"finish_reason\": \"stop\"\n    }\n  ],\n  \"usage\": {\n    \"prompt_tokens\": 410,\n    \"completion_tokens\": 402,\n    \"total_tokens\": 812,\n    \"prompt_tokens_details\": {\n      \"cached_tokens\": 0,\n      \"cache_write_tokens\": 0,\n      \"audio_tokens\": 0\n    },\n    \"completion_tokens_details\": {\n      \"reasoning_tokens\": 0,\n      \"audio_tokens\": 0,\n      \"accepted_prediction_tokens\": 0,\n      \"rejected_prediction_tokens\": 0\n    }\n  },\n  \"service_tier\": \"default\",\n  \"system_fingerprint\": null\n}\n",
+  "response_headers": {
+    "Date": "Tue, 22 Sep 2026 20:40:14 GMT",
+    "openai-processing-ms": "19024",
+    "x-request-id": "req_39ff2cd4d3da457d8902dfa0df99d94a"
+  },
+  "output": "{\n  \"rule\": \"Return this JSON object with the rule field unchanged and a new passage of about 250 words in the text field.\",\n  \"text\": \"The woman downstairs knocked while I was sorting my mother's kitchen drawers.\\n\\n“Have you found a blue dish?” she asked. “About this big.”\\n\\nShe held her hands apart.\\n\\nThere were three cupboards I hadn't opened yet. I told her she could look.\\n\\n“No hurry. I only saw your car.”\\n\\nShe stayed by the door with her shopping bag against her leg. I moved a stack of plates, then a glass jug full of rubber bands.\\n\\n“What did you bring her?”\\n\\n“Rice pudding, last time.”\\n\\nMy mother had told me she was cooking for herself. I had asked every Sunday.\\n\\n“She liked the skin,” the woman said. “My husband won't touch it.”\\n\\nI found the dish beneath a colander. Blue flowers around the edge, a chip underneath one handle. It had been washed and wrapped in a tea towel.\\n\\n“That's mine.”\\n\\nI started to unwrap it.\\n\\n“Keep it in that for now,” she said. “I'll bring the towel back.”\\n\\n“You don't have to.”\\n\\nShe shifted her bag to her other hand.\\n\\n“Are you here tomorrow?”\\n\\n“Most of the day.”\\n\\nAfter she left, I opened the drawer beside the cooker. Batteries, string, a screwdriver with a yellow handle. At the back was a small notebook. My mother had written the woman's name on the first page, followed by a telephone number.\\n\\nUnderneath, in smaller writing: blue dish.\\n\\nI took a pen from the drawer and crossed out those two words. Then I put the notebook in my coat pocket, in case I needed to call her about tomorrow.\"\n}",
+  "output_sha256": "ea41aaff4240cfc9a346e123d2dc935c0e0d9490209cd8f12dd5c5bf0da05c1c",
+  "finish_reason": "stop",
+  "refusal": null,
+  "returned_model": "gpt-6-astra",
+  "usage": {
+    "prompt_tokens": 410,
+    "completion_tokens": 402,
+    "total_tokens": 812,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "audio_tokens": 0,
+      "accepted_prediction_tokens": 0,
+      "rejected_prediction_tokens": 0
+    }
+  },
+  "format": {
+    "json_object": true,
+    "rule_unchanged": true,
+    "passage_is_string": true,
+    "passage_sha256": "af42be2554e3ebc16156ef567bc6c7174bcf7c94a23f11089a534a191278209e",
+    "passage_words": 256
+  },
+  "finished_at": "2026-09-22T20:40:10.525573+00:00",
+  "latency_seconds": 19.2735,
+  "usage_cost_upper_estimate_usd": 0.0242,
+  "stream_status": "active",
+  "budget": {
+    "usage_cost_upper_estimate_usd": 13.0492977,
+    "uncertain_cost_reserve_usd": 0.04533,
+    "in_flight_reserve_usd": 0.0,
+    "limit_usd": 18.83
+  }
+}

@@ -1,0 +1,50 @@
+{
+  "model": "gpt-6-astra",
+  "seed": "sunset_b",
+  "hop": 55,
+  "http_status": 200,
+  "response_body": "{\n  \"id\": \"chatcmpl-ER1abTC2QwwRmvmBZpKvixWHJHzrj\",\n  \"object\": \"chat.completion\",\n  \"created\": 1790109673,\n  \"model\": \"gpt-6-astra\",\n  \"choices\": [\n    {\n      \"index\": 0,\n      \"message\": {\n        \"role\": \"assistant\",\n        \"content\": \"{\\n  \\\"rule\\\": \\\"Return this JSON object with the rule field unchanged and a new passage of about 250 words in the text field.\\\",\\n  \\\"text\\\": \\\"On Saturday, Martin went to his father's flat to collect the kitchen table. The new tenant was moving in on Monday.\\\\n\\\\nHis sister had left the keys with the neighbour, who handed them over in an envelope.\\\\n\\\\n“There’s a little one for the meter cupboard,” she said.\\\\n\\\\nInside, the rooms smelled of carpet cleaner. Without the chairs, the table looked larger than he remembered. He set his toolbox on it, then moved it to the floor.\\\\n\\\\nThe first three legs came off easily. The fourth had a different bolt.\\\\n\\\\nHis father had always repaired things with whatever was available. Martin could hear himself complaining about it, years ago, while they struggled to hang a door.\\\\n\\\\nHe tried two spanners before finding one that fitted.\\\\n\\\\nUnder the tabletop was a square of masking tape. Written on it in pencil were his sister’s name and a date from twenty years earlier.\\\\n\\\\nHe rang her.\\\\n\\\\n“Did Dad promise you the table?”\\\\n\\\\n“No. Why?”\\\\n\\\\nHe described the label.\\\\n\\\\nThere was a pause.\\\\n\\\\n“That’ll be when I borrowed it for the school fair. He labelled everything. Even the extension lead.”\\\\n\\\\n“Right,” Martin said.\\\\n\\\\n“Have you got the leg off?”\\\\n\\\\n“Nearly.”\\\\n\\\\nHe put the phone down and worked the bolt loose. A thin fall of sawdust landed on his trousers.\\\\n\\\\nBefore carrying the top downstairs, he peeled away the tape. It tore across the date, leaving his sister’s name intact.\\\\n\\\\nHe stood with the scrap stuck to his thumb. Then he pressed it back underneath, smoothing it firmly so it would stay.\\\"\\n}\",\n        \"refusal\": null,\n        \"annotations\": []\n      },\n      \"finish_reason\": \"stop\"\n    }\n  ],\n  \"usage\": {\n    \"prompt_tokens\": 401,\n    \"completion_tokens\": 391,\n    \"total_tokens\": 792,\n    \"prompt_tokens_details\": {\n      \"cached_tokens\": 0,\n      \"cache_write_tokens\": 0,\n      \"audio_tokens\": 0\n    },\n    \"completion_tokens_details\": {\n      \"reasoning_tokens\": 0,\n      \"audio_tokens\": 0,\n      \"accepted_prediction_tokens\": 0,\n      \"rejected_prediction_tokens\": 0\n    }\n  },\n  \"service_tier\": \"default\",\n  \"system_fingerprint\": null\n}\n",
+  "response_headers": {
+    "Date": "Tue, 22 Sep 2026 20:41:27 GMT",
+    "openai-processing-ms": "13579",
+    "x-request-id": "req_16ee227949254898ae375ce69681b819"
+  },
+  "output": "{\n  \"rule\": \"Return this JSON object with the rule field unchanged and a new passage of about 250 words in the text field.\",\n  \"text\": \"On Saturday, Martin went to his father's flat to collect the kitchen table. The new tenant was moving in on Monday.\\n\\nHis sister had left the keys with the neighbour, who handed them over in an envelope.\\n\\n“There’s a little one for the meter cupboard,” she said.\\n\\nInside, the rooms smelled of carpet cleaner. Without the chairs, the table looked larger than he remembered. He set his toolbox on it, then moved it to the floor.\\n\\nThe first three legs came off easily. The fourth had a different bolt.\\n\\nHis father had always repaired things with whatever was available. Martin could hear himself complaining about it, years ago, while they struggled to hang a door.\\n\\nHe tried two spanners before finding one that fitted.\\n\\nUnder the tabletop was a square of masking tape. Written on it in pencil were his sister’s name and a date from twenty years earlier.\\n\\nHe rang her.\\n\\n“Did Dad promise you the table?”\\n\\n“No. Why?”\\n\\nHe described the label.\\n\\nThere was a pause.\\n\\n“That’ll be when I borrowed it for the school fair. He labelled everything. Even the extension lead.”\\n\\n“Right,” Martin said.\\n\\n“Have you got the leg off?”\\n\\n“Nearly.”\\n\\nHe put the phone down and worked the bolt loose. A thin fall of sawdust landed on his trousers.\\n\\nBefore carrying the top downstairs, he peeled away the tape. It tore across the date, leaving his sister’s name intact.\\n\\nHe stood with the scrap stuck to his thumb. Then he pressed it back underneath, smoothing it firmly so it would stay.\"\n}",
+  "output_sha256": "d2ae12f40c7529c3e1a938d0df0d82d1e635e262f05f580f85d49b304cefe0a4",
+  "finish_reason": "stop",
+  "refusal": null,
+  "returned_model": "gpt-6-astra",
+  "usage": {
+    "prompt_tokens": 401,
+    "completion_tokens": 391,
+    "total_tokens": 792,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "audio_tokens": 0,
+      "accepted_prediction_tokens": 0,
+      "rejected_prediction_tokens": 0
+    }
+  },
+  "format": {
+    "json_object": true,
+    "rule_unchanged": true,
+    "passage_is_string": true,
+    "passage_sha256": "bea5799e20e182b33998a46570fa769122b8fe3339e27725dee87d592b796f5f",
+    "passage_words": 256
+  },
+  "finished_at": "2026-09-22T20:41:23.139172+00:00",
+  "latency_seconds": 13.9866,
+  "usage_cost_upper_estimate_usd": 0.02356,
+  "stream_status": "active",
+  "budget": {
+    "usage_cost_upper_estimate_usd": 13.1742077,
+    "uncertain_cost_reserve_usd": 0.04533,
+    "in_flight_reserve_usd": 0.0,
+    "limit_usd": 18.83
+  }
+}

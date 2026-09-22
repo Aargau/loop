@@ -1,0 +1,50 @@
+{
+  "model": "gpt-6-astra",
+  "seed": "sunset_b",
+  "hop": 39,
+  "http_status": 200,
+  "response_body": "{\n  \"id\": \"chatcmpl-ER1N9rEk4R6M8OmfHKBiDLsUyyDyL\",\n  \"object\": \"chat.completion\",\n  \"created\": 1790108839,\n  \"model\": \"gpt-6-astra\",\n  \"choices\": [\n    {\n      \"index\": 0,\n      \"message\": {\n        \"role\": \"assistant\",\n        \"content\": \"{\\n  \\\"rule\\\": \\\"Return this JSON object with the rule field unchanged and a new passage of about 250 words in the text field.\\\",\\n  \\\"text\\\": \\\"At the hardware shop, Martin put a brass handle on the counter.\\\\n\\\\n“Something like this.”\\\\n\\\\nThe assistant picked it up and pressed the lever with his thumb.\\\\n\\\\n“Door or window?”\\\\n\\\\n“Door. Inside.”\\\\n\\\\n“We don't keep this pattern now.”\\\\n\\\\n“It doesn't have to match.”\\\\n\\\\nThe assistant went down an aisle. Martin stayed by the counter, beside a tray of loose keys. Some had coloured caps. He wondered whether people bought them before they forgot which key was which, or afterwards.\\\\n\\\\n“This is the nearest.”\\\\n\\\\nThe new handle was silver, sealed in plastic with screws and a folded sheet.\\\\n\\\\n“Will the holes line up?”\\\\n\\\\n“Probably. Bring it back if they don't.”\\\\n\\\\nMartin took out his wallet.\\\\n\\\\n“Keep the receipt,” the assistant said.\\\\n\\\\nAt home, he set both handles on the kitchen table. He fetched the screwdriver from the drawer beneath the sink, then returned for his glasses.\\\\n\\\\nThe old handle had come off the spare room door. He had kept it open with a slipper for three weeks.\\\\n\\\\nThe first screw went in easily. The second turned without catching. He knelt to look, got up, and tried a longer screw from the tobacco tin.\\\\n\\\\nThat held.\\\\n\\\\nHe worked the lever twice, then closed the door from the landing. It clicked shut. For a moment he stood with his hand still on it.\\\\n\\\\nInside, the bed was made. A charging cable lay curled beside the lamp.\\\\n\\\\nHe opened the door again and took the slipper back to his bedroom. The old handle went into the tobacco tin, though he had to move several screws to make it fit.\\\"\\n}\",\n        \"refusal\": null,\n        \"annotations\": []\n      },\n      \"finish_reason\": \"stop\"\n    }\n  ],\n  \"usage\": {\n    \"prompt_tokens\": 425,\n    \"completion_tokens\": 404,\n    \"total_tokens\": 829,\n    \"prompt_tokens_details\": {\n      \"cached_tokens\": 0,\n      \"cache_write_tokens\": 0,\n      \"audio_tokens\": 0\n    },\n    \"completion_tokens_details\": {\n      \"reasoning_tokens\": 0,\n      \"audio_tokens\": 0,\n      \"accepted_prediction_tokens\": 0,\n      \"rejected_prediction_tokens\": 0\n    }\n  },\n  \"service_tier\": \"default\",\n  \"system_fingerprint\": null\n}\n",
+  "response_headers": {
+    "Date": "Tue, 22 Sep 2026 20:27:33 GMT",
+    "openai-processing-ms": "14127",
+    "x-request-id": "req_7b7bf26ca8994443a298b3cf484c4ede"
+  },
+  "output": "{\n  \"rule\": \"Return this JSON object with the rule field unchanged and a new passage of about 250 words in the text field.\",\n  \"text\": \"At the hardware shop, Martin put a brass handle on the counter.\\n\\n“Something like this.”\\n\\nThe assistant picked it up and pressed the lever with his thumb.\\n\\n“Door or window?”\\n\\n“Door. Inside.”\\n\\n“We don't keep this pattern now.”\\n\\n“It doesn't have to match.”\\n\\nThe assistant went down an aisle. Martin stayed by the counter, beside a tray of loose keys. Some had coloured caps. He wondered whether people bought them before they forgot which key was which, or afterwards.\\n\\n“This is the nearest.”\\n\\nThe new handle was silver, sealed in plastic with screws and a folded sheet.\\n\\n“Will the holes line up?”\\n\\n“Probably. Bring it back if they don't.”\\n\\nMartin took out his wallet.\\n\\n“Keep the receipt,” the assistant said.\\n\\nAt home, he set both handles on the kitchen table. He fetched the screwdriver from the drawer beneath the sink, then returned for his glasses.\\n\\nThe old handle had come off the spare room door. He had kept it open with a slipper for three weeks.\\n\\nThe first screw went in easily. The second turned without catching. He knelt to look, got up, and tried a longer screw from the tobacco tin.\\n\\nThat held.\\n\\nHe worked the lever twice, then closed the door from the landing. It clicked shut. For a moment he stood with his hand still on it.\\n\\nInside, the bed was made. A charging cable lay curled beside the lamp.\\n\\nHe opened the door again and took the slipper back to his bedroom. The old handle went into the tobacco tin, though he had to move several screws to make it fit.\"\n}",
+  "output_sha256": "d495c0094e660bb7f6cd813d7a62bc6d64cb7782759049038680fc09ebbee6c3",
+  "finish_reason": "stop",
+  "refusal": null,
+  "returned_model": "gpt-6-astra",
+  "usage": {
+    "prompt_tokens": 425,
+    "completion_tokens": 404,
+    "total_tokens": 829,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "audio_tokens": 0,
+      "accepted_prediction_tokens": 0,
+      "rejected_prediction_tokens": 0
+    }
+  },
+  "format": {
+    "json_object": true,
+    "rule_unchanged": true,
+    "passage_is_string": true,
+    "passage_sha256": "522879a5da0f6ea53bb739743e4af97b947e4ed291964188b246f75bbe7868af",
+    "passage_words": 265
+  },
+  "finished_at": "2026-09-22T20:27:29.583572+00:00",
+  "latency_seconds": 14.3112,
+  "usage_cost_upper_estimate_usd": 0.02445,
+  "stream_status": "active",
+  "budget": {
+    "usage_cost_upper_estimate_usd": 10.9668677,
+    "uncertain_cost_reserve_usd": 0.04533,
+    "in_flight_reserve_usd": 0.22585,
+    "limit_usd": 18.83
+  }
+}

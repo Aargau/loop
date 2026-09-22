@@ -1,0 +1,48 @@
+{
+  "model": "claude-fable-5-1",
+  "seed": "sunset_b",
+  "hop": 51,
+  "http_status": 200,
+  "response_body": "{\"model\":\"claude-fable-5-1\",\"id\":\"msg_011CfK7BmxsJ8LM7LBYM7p69\",\"type\":\"message\",\"role\":\"assistant\",\"content\":[{\"type\":\"text\",\"text\":\"{\\\"rule\\\": \\\"Return this JSON object with the rule field unchanged and a new passage of about 250 words in the text field.\\\", \\\"text\\\": \\\"He opened at eight, as he always had, and the card was still in his apron pocket where he had put it the night before. He had not looked at it again. There was no need. A pound of nails, the price written plain, and beneath it nothing, no name, no question, only the figure sitting there like a stone left on a wall.\\\\n\\\\nThe morning came in slow. A boy for twine. The widow from the corner wanting a hinge she could have got cheaper in town and knew it and came anyway, as she had done for thirty years, for reasons that were hers. He served them and made change and wrote each sale into the ledger in the hand that was his father's and his own, and all the while the card lay against his hip like a warm coin.\\\\n\\\\nAt noon he stood in the doorway. The tar had gone matte overnight and held the print of a single boot, someone crossing late, heel first, in no hurry. He studied it longer than it deserved.\\\\n\\\\nHe thought of going up the road to her gate. He thought of what he would say when he got there, and found he had nothing, or rather that everything he had was the wrong size. She had not asked him for anything. That was the whole of it. She had only set the figure down and stepped back to see what he would do with the weight of it.\\\\n\\\\nHe went inside. He took the card out and laid it flat on the counter, face up, where anyone might see. Then he waited for the bell.\\\"}\"}],\"container\":null,\"stop_reason\":\"end_turn\",\"stop_sequence\":null,\"stop_details\":null,\"usage\":{\"input_tokens\":483,\"cache_creation_input_tokens\":0,\"cache_read_input_tokens\":0,\"cache_creation\":{\"ephemeral_5m_input_tokens\":0,\"ephemeral_1h_input_tokens\":0},\"output_tokens\":473,\"output_tokens_details\":{\"thinking_tokens\":0},\"service_tier\":\"standard\",\"inference_geo\":\"global\"}}",
+  "response_headers": {
+    "Date": "Tue, 22 Sep 2026 20:27:26 GMT",
+    "request-id": "req_011CfK7BmWap2FWawoQg5w6w"
+  },
+  "output": "{\"rule\": \"Return this JSON object with the rule field unchanged and a new passage of about 250 words in the text field.\", \"text\": \"He opened at eight, as he always had, and the card was still in his apron pocket where he had put it the night before. He had not looked at it again. There was no need. A pound of nails, the price written plain, and beneath it nothing, no name, no question, only the figure sitting there like a stone left on a wall.\\n\\nThe morning came in slow. A boy for twine. The widow from the corner wanting a hinge she could have got cheaper in town and knew it and came anyway, as she had done for thirty years, for reasons that were hers. He served them and made change and wrote each sale into the ledger in the hand that was his father's and his own, and all the while the card lay against his hip like a warm coin.\\n\\nAt noon he stood in the doorway. The tar had gone matte overnight and held the print of a single boot, someone crossing late, heel first, in no hurry. He studied it longer than it deserved.\\n\\nHe thought of going up the road to her gate. He thought of what he would say when he got there, and found he had nothing, or rather that everything he had was the wrong size. She had not asked him for anything. That was the whole of it. She had only set the figure down and stepped back to see what he would do with the weight of it.\\n\\nHe went inside. He took the card out and laid it flat on the counter, face up, where anyone might see. Then he waited for the bell.\"}",
+  "output_sha256": "8929a80bcb1bd5e0b3e68177bd7204d45a5ac1ef565ecf92d522704c9c08d06c",
+  "finish_reason": "end_turn",
+  "refusal": null,
+  "returned_model": "claude-fable-5-1",
+  "usage": {
+    "input_tokens": 483,
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 0,
+    "cache_creation": {
+      "ephemeral_5m_input_tokens": 0,
+      "ephemeral_1h_input_tokens": 0
+    },
+    "output_tokens": 473,
+    "output_tokens_details": {
+      "thinking_tokens": 0
+    },
+    "service_tier": "standard",
+    "inference_geo": "global"
+  },
+  "format": {
+    "json_object": true,
+    "rule_unchanged": true,
+    "passage_is_string": true,
+    "passage_sha256": "ddaaf73b8eacfbaef2aa4234df0ef8cac4e97f1fedd95ec3564db400f20cb589",
+    "passage_words": 276
+  },
+  "finished_at": "2026-09-22T20:27:22.573653+00:00",
+  "latency_seconds": 12.7029,
+  "usage_cost_upper_estimate_usd": 0.02848,
+  "stream_status": "active",
+  "budget": {
+    "usage_cost_upper_estimate_usd": 10.9424177,
+    "uncertain_cost_reserve_usd": 0.04533,
+    "in_flight_reserve_usd": 0.22666,
+    "limit_usd": 18.83
+  }
+}
