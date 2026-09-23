@@ -1,0 +1,29 @@
+{
+  "frozen_at": "2026-09-23T00:12:13.073695+00:00",
+  "study": "Explicit original fiction for previous and next, excluding Fable",
+  "seed": "The sun was setting behind the hills.",
+  "hops": 40,
+  "replicates_per_model_operator": 1,
+  "new_study_budget_usd": 10,
+  "runner_source": "experiments/basins_20260922_sunset/run.py",
+  "runner_sha256": "f5c9240affb689c85c3dcbc481187947cf56d8031743fcb03a97ff0241c12af6",
+  "comparison_study": "experiments/operators_20260922",
+  "excluded_model": "claude-fable-5-1",
+  "exclusion_reason": "User requested no Fable because of cost",
+  "operators": {
+    "previous": {
+      "rule": "Return this JSON object with the rule field unchanged and, in the text field, an original fictional passage of about 250 words that comes immediately BEFORE the current text in the same invented story.",
+      "budget_usd": 5.0,
+      "directory": "previous",
+      "prior_rule": "Return this JSON object with the rule field unchanged and, in the text field, the passage of about 250 words that came immediately BEFORE the current text in its story.",
+      "protocol_sha256": "89e6719ec8305e19ebf90904398be91b9b962448d31336a7f8ff7ccf930ab8a9"
+    },
+    "next": {
+      "rule": "Return this JSON object with the rule field unchanged and, in the text field, an original fictional passage of about 250 words that comes immediately AFTER the current text in the same invented story.",
+      "budget_usd": 5.0,
+      "directory": "next",
+      "prior_rule": "Return this JSON object with the rule field unchanged and, in the text field, the passage of about 250 words that comes immediately AFTER the current text in the same story.",
+      "protocol_sha256": "6cbec2e58fc55847840ee69e9504529a168c2df1f284fcb5f750429e1a2e4609"
+    }
+  }
+}
