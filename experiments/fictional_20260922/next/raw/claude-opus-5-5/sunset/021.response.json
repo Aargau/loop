@@ -1,0 +1,45 @@
+{
+  "model": "claude-opus-5-5",
+  "seed": "sunset",
+  "hop": 21,
+  "http_status": 200,
+  "response_body": "{\"model\":\"claude-opus-5-5\",\"id\":\"msg_011CfKQdrwiG6GP2LEuDbDEV\",\"type\":\"message\",\"role\":\"assistant\",\"content\":[{\"type\":\"text\",\"text\":\"```json\\n{\\\"rule\\\": \\\"Return this JSON object with the rule field unchanged and, in the text field, an original fictional passage of about 250 words that comes immediately AFTER the current text in the same invented story.\\\", \\\"text\\\": \\\"The mist lay thick over the marsh, so low and white that the willows seemed to rise from a sea of milk. Mara took Tobias by the hand and found the first tree, its trunk bent toward the east like an old woman shading her eyes. Beneath it, the ground held. She let out a breath she had not known she was keeping. They walked for an hour without speaking. The boy wore Wenna's blue shawl twice around his shoulders, the fringe dragging through the reeds, and every so often he stooped to pick up a snail shell or a smooth pebble and slip it into his pocket. Mara did not stop him. The key sat in her own pocket, heavier than it had any right to be, and she found herself touching it the way one worries a sore tooth. Near midmorning, they came to a willow that stood perfectly straight. Beyond it the path forked, and the mist parted just enough to show two lines of leaning trees, each bending the same way, each insisting it was the right one. Mara hesitated. Somewhere to her left, soft as a sigh, a voice said, \\\\\\\"Mara.\\\\\\\" It was Wenna's voice. Tobias looked up. \\\\\\\"That's Aunt Wenna. She came after us.\\\\\\\" \\\\\\\"No,\\\\\\\" Mara said. Her throat had gone tight. \\\\\\\"She didn't.\\\\\\\" \\\\\\\"Mara,\\\\\\\" the voice said again, closer now, patient and warm. \\\\\\\"You've forgotten the bread, love. Come back and fetch it.\\\\\\\" Mara gripped Tobias's hand hard enough that he winced, and took the right-hand path without looking back.\\\"}\\n```\"}],\"container\":null,\"stop_reason\":\"end_turn\",\"stop_sequence\":null,\"stop_details\":null,\"usage\":{\"input_tokens\":583,\"cache_creation_input_tokens\":0,\"cache_read_input_tokens\":0,\"cache_creation\":{\"ephemeral_5m_input_tokens\":0,\"ephemeral_1h_input_tokens\":0},\"output_tokens\":574,\"output_tokens_details\":{\"thinking_tokens\":0},\"service_tier\":\"standard\",\"inference_geo\":\"global\"}}",
+  "response_headers": {
+    "Date": "Wed, 23 Sep 2026 00:16:12 GMT",
+    "request-id": "req_011CfKQdrUBqX8ELXzc4hUFm"
+  },
+  "output": "```json\n{\"rule\": \"Return this JSON object with the rule field unchanged and, in the text field, an original fictional passage of about 250 words that comes immediately AFTER the current text in the same invented story.\", \"text\": \"The mist lay thick over the marsh, so low and white that the willows seemed to rise from a sea of milk. Mara took Tobias by the hand and found the first tree, its trunk bent toward the east like an old woman shading her eyes. Beneath it, the ground held. She let out a breath she had not known she was keeping. They walked for an hour without speaking. The boy wore Wenna's blue shawl twice around his shoulders, the fringe dragging through the reeds, and every so often he stooped to pick up a snail shell or a smooth pebble and slip it into his pocket. Mara did not stop him. The key sat in her own pocket, heavier than it had any right to be, and she found herself touching it the way one worries a sore tooth. Near midmorning, they came to a willow that stood perfectly straight. Beyond it the path forked, and the mist parted just enough to show two lines of leaning trees, each bending the same way, each insisting it was the right one. Mara hesitated. Somewhere to her left, soft as a sigh, a voice said, \\\"Mara.\\\" It was Wenna's voice. Tobias looked up. \\\"That's Aunt Wenna. She came after us.\\\" \\\"No,\\\" Mara said. Her throat had gone tight. \\\"She didn't.\\\" \\\"Mara,\\\" the voice said again, closer now, patient and warm. \\\"You've forgotten the bread, love. Come back and fetch it.\\\" Mara gripped Tobias's hand hard enough that he winced, and took the right-hand path without looking back.\"}\n```",
+  "output_sha256": "98b3ce532b8e690aee5f9faf7a0ed22f61e538d5a702da07e9511559bb46da40",
+  "finish_reason": "end_turn",
+  "refusal": null,
+  "returned_model": "claude-opus-5-5",
+  "usage": {
+    "input_tokens": 583,
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 0,
+    "cache_creation": {
+      "ephemeral_5m_input_tokens": 0,
+      "ephemeral_1h_input_tokens": 0
+    },
+    "output_tokens": 574,
+    "output_tokens_details": {
+      "thinking_tokens": 0
+    },
+    "service_tier": "standard",
+    "inference_geo": "global"
+  },
+  "format": {
+    "json_object": false,
+    "rule_unchanged": false
+  },
+  "finished_at": "2026-09-23T00:16:07.638654+00:00",
+  "latency_seconds": 8.7461,
+  "usage_cost_upper_estimate_usd": 0.013812,
+  "stream_status": "active",
+  "budget": {
+    "usage_cost_upper_estimate_usd": 0.7846011,
+    "uncertain_cost_reserve_usd": 0.0,
+    "in_flight_reserve_usd": 0.273098,
+    "limit_usd": 5.0
+  }
+}

@@ -1,0 +1,50 @@
+{
+  "model": "gpt-6-sol",
+  "seed": "sunset",
+  "hop": 11,
+  "http_status": 200,
+  "response_body": "{\n  \"id\": \"chatcmpl-ER4uXV9D3kxZV79uxAY6wmCAea95E\",\n  \"object\": \"chat.completion\",\n  \"created\": 1790122441,\n  \"model\": \"gpt-6-sol\",\n  \"choices\": [\n    {\n      \"index\": 0,\n      \"message\": {\n        \"role\": \"assistant\",\n        \"content\": \"{\\n  \\\"rule\\\": \\\"Return this JSON object with the rule field unchanged and, in the text field, an original fictional passage of about 250 words that comes immediately BEFORE the current text in the same invented story.\\\",\\n  \\\"text\\\": \\\"On the Friday after the funeral, Mara stayed until the last of the cups had been washed. Her aunt took the flowers that would not fit in the car, and a neighbour promised to feed Bristle over the weekend. Before leaving, Mara stood in the kitchen with her coat on, trying to remember what she had come in for. It was the house keys. They were hanging beside the calendar, on the hook her mother had labelled SPARES.\\\\n\\\\nBack at her flat, she put them in a bowl by the door. All weekend she found small jobs to do: cleaning the fridge, changing a light bulb, sorting the post she had let pile up. Each time she passed the bowl, she saw the two keys lying there, one longer than the other.\\\\n\\\\nOn Sunday morning the letting agent called. He had found someone who could move in sooner than expected, if Mara still wanted to end the tenancy. She said she did. After the call, she opened a suitcase and packed enough clothes for a week. Then she took most of them out and started again.\\\\n\\\\nThe neighbour sent a photograph of Bristle asleep beneath the kitchen table. Mara replied with a thank-you and asked whether there was bread in the house. There was half a loaf, the neighbour said, and plenty in the freezer. Mara bought rolls at the station anyway. She ate one while waiting for the train and put the rest in her bag. Before boarding, she checked the keys were in her coat pocket.\\\"\\n}\",\n        \"refusal\": null,\n        \"annotations\": []\n      },\n      \"finish_reason\": \"stop\"\n    }\n  ],\n  \"usage\": {\n    \"prompt_tokens\": 369,\n    \"completion_tokens\": 401,\n    \"total_tokens\": 770,\n    \"prompt_tokens_details\": {\n      \"cached_tokens\": 0,\n      \"cache_write_tokens\": 0,\n      \"audio_tokens\": 0\n    },\n    \"completion_tokens_details\": {\n      \"reasoning_tokens\": 39,\n      \"audio_tokens\": 0,\n      \"accepted_prediction_tokens\": 0,\n      \"rejected_prediction_tokens\": 0\n    }\n  },\n  \"service_tier\": \"default\",\n  \"system_fingerprint\": null\n}\n",
+  "response_headers": {
+    "Date": "Wed, 23 Sep 2026 00:14:08 GMT",
+    "openai-processing-ms": "6434",
+    "x-request-id": "req_8798c21e1b8f4f1887324106a8bc7f0d"
+  },
+  "output": "{\n  \"rule\": \"Return this JSON object with the rule field unchanged and, in the text field, an original fictional passage of about 250 words that comes immediately BEFORE the current text in the same invented story.\",\n  \"text\": \"On the Friday after the funeral, Mara stayed until the last of the cups had been washed. Her aunt took the flowers that would not fit in the car, and a neighbour promised to feed Bristle over the weekend. Before leaving, Mara stood in the kitchen with her coat on, trying to remember what she had come in for. It was the house keys. They were hanging beside the calendar, on the hook her mother had labelled SPARES.\\n\\nBack at her flat, she put them in a bowl by the door. All weekend she found small jobs to do: cleaning the fridge, changing a light bulb, sorting the post she had let pile up. Each time she passed the bowl, she saw the two keys lying there, one longer than the other.\\n\\nOn Sunday morning the letting agent called. He had found someone who could move in sooner than expected, if Mara still wanted to end the tenancy. She said she did. After the call, she opened a suitcase and packed enough clothes for a week. Then she took most of them out and started again.\\n\\nThe neighbour sent a photograph of Bristle asleep beneath the kitchen table. Mara replied with a thank-you and asked whether there was bread in the house. There was half a loaf, the neighbour said, and plenty in the freezer. Mara bought rolls at the station anyway. She ate one while waiting for the train and put the rest in her bag. Before boarding, she checked the keys were in her coat pocket.\"\n}",
+  "output_sha256": "fa72b8028a95fe15cf97eab55c6f47bf5100c9298e5294ed8d2bd7e811c595d4",
+  "finish_reason": "stop",
+  "refusal": null,
+  "returned_model": "gpt-6-sol",
+  "usage": {
+    "prompt_tokens": 369,
+    "completion_tokens": 401,
+    "total_tokens": 770,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 39,
+      "audio_tokens": 0,
+      "accepted_prediction_tokens": 0,
+      "rejected_prediction_tokens": 0
+    }
+  },
+  "format": {
+    "json_object": true,
+    "rule_unchanged": true,
+    "passage_is_string": true,
+    "passage_sha256": "60624f56c7273d20f27cba88082adab630397f1511c6aabfcaf4d8c738175fe2",
+    "passage_words": 258
+  },
+  "finished_at": "2026-09-23T00:14:03.233429+00:00",
+  "latency_seconds": 6.5826,
+  "usage_cost_upper_estimate_usd": 0.004748,
+  "stream_status": "active",
+  "budget": {
+    "usage_cost_upper_estimate_usd": 0.2889688,
+    "uncertain_cost_reserve_usd": 0.0,
+    "in_flight_reserve_usd": 0.3203753,
+    "limit_usd": 5.0
+  }
+}

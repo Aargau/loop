@@ -1,0 +1,22 @@
+{
+  "started_at": "2026-09-23T00:14:09.964651+00:00",
+  "model": "claude-opus-5-5",
+  "seed": "sunset",
+  "hop": 10,
+  "endpoint": "https://api.anthropic.com/v1/messages",
+  "body": {
+    "model": "claude-opus-5-5",
+    "messages": [
+      {
+        "role": "user",
+        "content": "```json\n{\"rule\": \"Return this JSON object with the rule field unchanged and, in the text field, an original fictional passage of about 250 words that comes immediately BEFORE the current text in the same invented story.\", \"text\": \"That summer Mara nearly sold the orchard. A developer from Albany had come up twice in June, a pleasant man in a pressed shirt who walked the rows with her and talked about lot sizes and road frontage as if the trees were already gone. He left a number on a folded card, and she kept it on the kitchen windowsill beside the salt, where she could see it every morning while the kettle heated.\\n\\nThe rain stopped in August. By September the creek had shrunk to a string of shallow pools, and the grass along the lane went brittle and pale. Mara hauled water to the youngest trees in the back of the pickup, filling the tank at the well until the pump coughed air, and she lay awake some nights listening for thunder that never came. Her neighbors said the crop would be a loss. She half believed them.\\n\\nBut the old trees held on. Her grandfather had planted most of them himself, and he used to say that a tree with deep roots remembered wetter years and drew on them when it had to. The apples stayed small, but they colored beautifully, and when she bit into the first ripe Spy she stood still in the row for a long moment, tasting something she had almost forgotten.\\n\\nThat evening she took the developer's card from the windowsill and dropped it in the stove. Then she walked down the road to the Hollister place to ask whether their boys wanted work come October.\"}\n```"
+      }
+    ],
+    "max_tokens": 4096,
+    "output_config": {
+      "effort": "low"
+    }
+  },
+  "state_sha256": "abae4d556bbb8e21fc20a771d4dd30871174c9599de2ecc55d4af54a964bda59",
+  "reserved_cost_usd": 0.090396
+}

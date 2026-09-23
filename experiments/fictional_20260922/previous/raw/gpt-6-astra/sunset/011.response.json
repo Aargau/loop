@@ -1,0 +1,50 @@
+{
+  "model": "gpt-6-astra",
+  "seed": "sunset",
+  "hop": 11,
+  "http_status": 200,
+  "response_body": "{\n  \"id\": \"chatcmpl-ER4vkg4rHvTvcRNIzNBjSY7k4O64A\",\n  \"object\": \"chat.completion\",\n  \"created\": 1790122516,\n  \"model\": \"gpt-6-astra\",\n  \"choices\": [\n    {\n      \"index\": 0,\n      \"message\": {\n        \"role\": \"assistant\",\n        \"content\": \"{\\n  \\\"rule\\\": \\\"Return this JSON object with the rule field unchanged and, in the text field, an original fictional passage of about 250 words that comes immediately BEFORE the current text in the same invented story.\\\",\\n  \\\"text\\\": \\\"On Sunday afternoon, Mara went back to the hospital for the things they had forgotten to give her. The nurse at reception telephoned upstairs, then asked her to sit down. There was only one other person waiting, a man holding a pair of slippers in a supermarket bag.\\\\n\\\\nHer father’s belongings arrived in a clear sack with his name written on a white strip. A watch, a comb, his trousers folded around his shoes. She checked for his glasses.\\\\n\\\\n‘They might still be on the ward,’ the nurse said.\\\\n\\\\n‘He didn’t bring them.’\\\\n\\\\nShe remembered now: he had left them beside the till because the screw in one arm was loose. He had been using the spare pair, the ones that made the floor seem farther away.\\\\n\\\\nAt home she put the sack on a kitchen chair. Her sister called to ask whether she had eaten and whether there was anyone they ought to telephone.\\\\n\\\\n‘The people with clothes in the shop,’ Mara said.\\\\n\\\\n‘Surely that can wait.’\\\\n\\\\n‘Some of them might need them.’\\\\n\\\\nNeither spoke for a moment. Her sister said she would come on Thursday, earlier if she could arrange it.\\\\n\\\\nMara washed a plate and left it in the rack. She had taken three days off work; she would have to ring again. Before bed, she looked in her handbag for the shop key, emptying the small compartments onto the table. There were two pens, a receipt for petrol and a wrapped mint she had been carrying for months.\\\\n\\\\nShe put everything back except the mint.\\\"\\n}\",\n        \"refusal\": null,\n        \"annotations\": []\n      },\n      \"finish_reason\": \"stop\"\n    }\n  ],\n  \"usage\": {\n    \"prompt_tokens\": 376,\n    \"completion_tokens\": 385,\n    \"total_tokens\": 761,\n    \"prompt_tokens_details\": {\n      \"cached_tokens\": 0,\n      \"cache_write_tokens\": 0,\n      \"audio_tokens\": 0\n    },\n    \"completion_tokens_details\": {\n      \"reasoning_tokens\": 0,\n      \"audio_tokens\": 0,\n      \"accepted_prediction_tokens\": 0,\n      \"rejected_prediction_tokens\": 0\n    }\n  },\n  \"service_tier\": \"default\",\n  \"system_fingerprint\": null\n}\n",
+  "response_headers": {
+    "Date": "Wed, 23 Sep 2026 00:15:28 GMT",
+    "openai-processing-ms": "12548",
+    "x-request-id": "req_827e8fb7fccd460da51f1cc69378c01b"
+  },
+  "output": "{\n  \"rule\": \"Return this JSON object with the rule field unchanged and, in the text field, an original fictional passage of about 250 words that comes immediately BEFORE the current text in the same invented story.\",\n  \"text\": \"On Sunday afternoon, Mara went back to the hospital for the things they had forgotten to give her. The nurse at reception telephoned upstairs, then asked her to sit down. There was only one other person waiting, a man holding a pair of slippers in a supermarket bag.\\n\\nHer father’s belongings arrived in a clear sack with his name written on a white strip. A watch, a comb, his trousers folded around his shoes. She checked for his glasses.\\n\\n‘They might still be on the ward,’ the nurse said.\\n\\n‘He didn’t bring them.’\\n\\nShe remembered now: he had left them beside the till because the screw in one arm was loose. He had been using the spare pair, the ones that made the floor seem farther away.\\n\\nAt home she put the sack on a kitchen chair. Her sister called to ask whether she had eaten and whether there was anyone they ought to telephone.\\n\\n‘The people with clothes in the shop,’ Mara said.\\n\\n‘Surely that can wait.’\\n\\n‘Some of them might need them.’\\n\\nNeither spoke for a moment. Her sister said she would come on Thursday, earlier if she could arrange it.\\n\\nMara washed a plate and left it in the rack. She had taken three days off work; she would have to ring again. Before bed, she looked in her handbag for the shop key, emptying the small compartments onto the table. There were two pens, a receipt for petrol and a wrapped mint she had been carrying for months.\\n\\nShe put everything back except the mint.\"\n}",
+  "output_sha256": "855f18a1888b9177c75abd82a7b39887e5605d9607f056b676dcdf49678dede3",
+  "finish_reason": "stop",
+  "refusal": null,
+  "returned_model": "gpt-6-astra",
+  "usage": {
+    "prompt_tokens": 376,
+    "completion_tokens": 385,
+    "total_tokens": 761,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "audio_tokens": 0,
+      "accepted_prediction_tokens": 0,
+      "rejected_prediction_tokens": 0
+    }
+  },
+  "format": {
+    "json_object": true,
+    "rule_unchanged": true,
+    "passage_is_string": true,
+    "passage_sha256": "95b927aa90d363bc9053e37443595bb8cadcceac9ad80594b3b5a10eea13c0be",
+    "passage_words": 259
+  },
+  "finished_at": "2026-09-23T00:15:23.849439+00:00",
+  "latency_seconds": 12.6499,
+  "usage_cost_upper_estimate_usd": 0.02301,
+  "stream_status": "active",
+  "budget": {
+    "usage_cost_upper_estimate_usd": 0.6063342,
+    "uncertain_cost_reserve_usd": 0.0,
+    "in_flight_reserve_usd": 0.1381288,
+    "limit_usd": 5.0
+  }
+}

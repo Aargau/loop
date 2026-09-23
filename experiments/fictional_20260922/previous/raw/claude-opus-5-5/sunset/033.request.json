@@ -1,0 +1,22 @@
+{
+  "started_at": "2026-09-23T00:18:05.901960+00:00",
+  "model": "claude-opus-5-5",
+  "seed": "sunset",
+  "hop": 33,
+  "endpoint": "https://api.anthropic.com/v1/messages",
+  "body": {
+    "model": "claude-opus-5-5",
+    "messages": [
+      {
+        "role": "user",
+        "content": "```json\n{\"rule\": \"Return this JSON object with the rule field unchanged and, in the text field, an original fictional passage of about 250 words that comes immediately BEFORE the current text in the same invented story.\", \"text\": \"The house on Linden Street had not been Margaret's first choice. She had wanted the brick one on Cherry Lane, with the bay window and the lilac hedge, and she had said so plainly to the realtor, a thin man named Dobbs who smelled of peppermint and cigarettes. Walter had wanted the smaller place because of the maple in the backyard. \\\"A tree like that,\\\" he had said, standing under it with his hands in his pockets, \\\"you can't buy a tree like that.\\\"\\n\\n\\\"You are, in fact, buying a tree like that,\\\" Margaret had pointed out. \\\"It comes with the lot.\\\"\\n\\nThey had signed the papers on a Thursday in the spring of their second year of marriage. Walter carried her over the threshold even though she told him it was silly, and he nearly put his shoulder through the doorframe doing it. That first night they ate cold chicken on the floor of the empty living room because the table had not arrived, and Margaret spread the newspaper between them like a picnic cloth. When she finished eating, she took a pen from her purse and started on the crossword in the corner of the page.\\n\\n\\\"You'll make a mess of it,\\\" Walter said. \\\"Use a pencil.\\\"\\n\\n\\\"I don't make mistakes,\\\" she said, and filled in the first answer without hesitating.\\n\\nHe watched her for a while in the lamplight, then leaned back against the bare wall and looked out the window at the dark shape of the maple, as if the whole house had been built only so he could sit and see it.\"}\n```"
+      }
+    ],
+    "max_tokens": 4096,
+    "output_config": {
+      "effort": "low"
+    }
+  },
+  "state_sha256": "a3a6c24cd60c47c8e6ea10375a00215b3d646a9e254ea5cb0ad6eb29d650eae1",
+  "reserved_cost_usd": 0.090716
+}

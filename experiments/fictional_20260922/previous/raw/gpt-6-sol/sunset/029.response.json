@@ -1,0 +1,50 @@
+{
+  "model": "gpt-6-sol",
+  "seed": "sunset",
+  "hop": 29,
+  "http_status": 200,
+  "response_body": "{\n  \"id\": \"chatcmpl-ER4wY6JsyodwUnXW4XBHB2LIekXDB\",\n  \"object\": \"chat.completion\",\n  \"created\": 1790122566,\n  \"model\": \"gpt-6-sol\",\n  \"choices\": [\n    {\n      \"index\": 0,\n      \"message\": {\n        \"role\": \"assistant\",\n        \"content\": \"{\\n  \\\"rule\\\": \\\"Return this JSON object with the rule field unchanged and, in the text field, an original fictional passage of about 250 words that comes immediately BEFORE the current text in the same invented story.\\\",\\n  \\\"text\\\": \\\"On Monday, Mara meant to take the early train to her mother’s house and fix the cupboard handle. She had a screwdriver in her bag and a packet of screws she had bought without knowing what size she needed. At the station, she found she had brought the wrong ticket. By the time she had bought another, the early train was gone.\\\\n\\\\nShe called from the platform. The phone rang until the recorded voice answered, and Mara said she would be there by lunch. On the later train she watched the fields pass and tried to think what else her mother had asked her to do. There was something about the garden gate. She could not remember whether it stuck or swung open.\\\\n\\\\nAt the house, no one answered. Mara let herself in and found a note on the kitchen table: Gone out. Back soon. Her mother had left the date off, as she often did. The cupboard handle came away in Mara’s hand before she could use the screwdriver. She sat at the table with it beside her until the light began to fade.\\\\n\\\\nBefore leaving, she put the handle and screws in a dish by the sink. She called once more from the doorstep and heard the telephone ringing inside. On the train home, she noticed a missed call from an unfamiliar number. There was no message.\\\\n\\\\nShe got in late, set her bag at the foot of the stairs and went up without making dinner. In the morning, she would have to decide whether to call again or go back.\\\"\\n}\",\n        \"refusal\": null,\n        \"annotations\": []\n      },\n      \"finish_reason\": \"stop\"\n    }\n  ],\n  \"usage\": {\n    \"prompt_tokens\": 365,\n    \"completion_tokens\": 389,\n    \"total_tokens\": 754,\n    \"prompt_tokens_details\": {\n      \"cached_tokens\": 0,\n      \"cache_write_tokens\": 0,\n      \"audio_tokens\": 0\n    },\n    \"completion_tokens_details\": {\n      \"reasoning_tokens\": 25,\n      \"audio_tokens\": 0,\n      \"accepted_prediction_tokens\": 0,\n      \"rejected_prediction_tokens\": 0\n    }\n  },\n  \"service_tier\": \"default\",\n  \"system_fingerprint\": null\n}\n",
+  "response_headers": {
+    "Date": "Wed, 23 Sep 2026 00:16:12 GMT",
+    "openai-processing-ms": "5981",
+    "x-request-id": "req_6fb83a33bf884d30aa771266f1082cb8"
+  },
+  "output": "{\n  \"rule\": \"Return this JSON object with the rule field unchanged and, in the text field, an original fictional passage of about 250 words that comes immediately BEFORE the current text in the same invented story.\",\n  \"text\": \"On Monday, Mara meant to take the early train to her mother’s house and fix the cupboard handle. She had a screwdriver in her bag and a packet of screws she had bought without knowing what size she needed. At the station, she found she had brought the wrong ticket. By the time she had bought another, the early train was gone.\\n\\nShe called from the platform. The phone rang until the recorded voice answered, and Mara said she would be there by lunch. On the later train she watched the fields pass and tried to think what else her mother had asked her to do. There was something about the garden gate. She could not remember whether it stuck or swung open.\\n\\nAt the house, no one answered. Mara let herself in and found a note on the kitchen table: Gone out. Back soon. Her mother had left the date off, as she often did. The cupboard handle came away in Mara’s hand before she could use the screwdriver. She sat at the table with it beside her until the light began to fade.\\n\\nBefore leaving, she put the handle and screws in a dish by the sink. She called once more from the doorstep and heard the telephone ringing inside. On the train home, she noticed a missed call from an unfamiliar number. There was no message.\\n\\nShe got in late, set her bag at the foot of the stairs and went up without making dinner. In the morning, she would have to decide whether to call again or go back.\"\n}",
+  "output_sha256": "b642b588bf32d1ea25b406c1d37f37a8dd8d42aa1f733e2510daa44004c4dcce",
+  "finish_reason": "stop",
+  "refusal": null,
+  "returned_model": "gpt-6-sol",
+  "usage": {
+    "prompt_tokens": 365,
+    "completion_tokens": 389,
+    "total_tokens": 754,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 25,
+      "audio_tokens": 0,
+      "accepted_prediction_tokens": 0,
+      "rejected_prediction_tokens": 0
+    }
+  },
+  "format": {
+    "json_object": true,
+    "rule_unchanged": true,
+    "passage_is_string": true,
+    "passage_sha256": "cfaacae7f1ca41ec3c5bee137850c2d70fc2aef4c20d9bae929c3cc35d1f81d0",
+    "passage_words": 263
+  },
+  "finished_at": "2026-09-23T00:16:07.674421+00:00",
+  "latency_seconds": 6.1773,
+  "usage_cost_upper_estimate_usd": 0.00462,
+  "stream_status": "active",
+  "budget": {
+    "usage_cost_upper_estimate_usd": 0.7911891,
+    "uncertain_cost_reserve_usd": 0.0,
+    "in_flight_reserve_usd": 0.31645,
+    "limit_usd": 5.0
+  }
+}

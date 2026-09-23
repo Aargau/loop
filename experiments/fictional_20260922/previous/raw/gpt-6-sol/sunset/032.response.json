@@ -1,0 +1,50 @@
+{
+  "model": "gpt-6-sol",
+  "seed": "sunset",
+  "hop": 32,
+  "http_status": 200,
+  "response_body": "{\n  \"id\": \"chatcmpl-ER4wqRHRystU4ej6AD3YbMc5C7mn9\",\n  \"object\": \"chat.completion\",\n  \"created\": 1790122584,\n  \"model\": \"gpt-6-sol\",\n  \"choices\": [\n    {\n      \"index\": 0,\n      \"message\": {\n        \"role\": \"assistant\",\n        \"content\": \"{\\n  \\\"rule\\\": \\\"Return this JSON object with the rule field unchanged and, in the text field, an original fictional passage of about 250 words that comes immediately BEFORE the current text in the same invented story.\\\",\\n  \\\"text\\\": \\\"By Friday evening, Mara had given up on the kitchen drawer. It had begun to stick sometime in the spring, and she had been meaning to empty it ever since. Now a teaspoon lay on the floor, two batteries had rolled beneath the cooker, and the drawer still refused to close properly. She put everything back except the teaspoon and decided to try again another day.\\\\n\\\\nHer mother would have known how to fix it, or at least what to look for. When Mara was young, the kitchen cupboards at home had each had their own trick: one needed lifting, another a firm push near the hinge. Her mother had never called anyone in until she had tried every screwdriver in the house.\\\\n\\\\nMara picked up her phone. She could have asked about the drawer, then worked round to the question she had been avoiding since their last call: whether her mother was managing all right on her own. Instead she opened the weather forecast for her mother’s town. Rain was due on Sunday. She pictured the roses along the back fence and wondered whether they still needed watering this late in the year.\\\\n\\\\nShe made toast for supper and ate it standing beside the sink. The letters on the kitchen table had spread beyond their usual corner, but none looked urgent. She pushed the stack aside to set down her plate, leaving it there when she went to bed.\\\\n\\\\nIn the morning, she would deal with the post first.\\\"\\n}\",\n        \"refusal\": null,\n        \"annotations\": []\n      },\n      \"finish_reason\": \"stop\"\n    }\n  ],\n  \"usage\": {\n    \"prompt_tokens\": 356,\n    \"completion_tokens\": 381,\n    \"total_tokens\": 737,\n    \"prompt_tokens_details\": {\n      \"cached_tokens\": 0,\n      \"cache_write_tokens\": 0,\n      \"audio_tokens\": 0\n    },\n    \"completion_tokens_details\": {\n      \"reasoning_tokens\": 33,\n      \"audio_tokens\": 0,\n      \"accepted_prediction_tokens\": 0,\n      \"rejected_prediction_tokens\": 0\n    }\n  },\n  \"service_tier\": \"default\",\n  \"system_fingerprint\": null\n}\n",
+  "response_headers": {
+    "Date": "Wed, 23 Sep 2026 00:16:31 GMT",
+    "openai-processing-ms": "7012",
+    "x-request-id": "req_e9fd35d9d3a4469cb14fc42a6273a08c"
+  },
+  "output": "{\n  \"rule\": \"Return this JSON object with the rule field unchanged and, in the text field, an original fictional passage of about 250 words that comes immediately BEFORE the current text in the same invented story.\",\n  \"text\": \"By Friday evening, Mara had given up on the kitchen drawer. It had begun to stick sometime in the spring, and she had been meaning to empty it ever since. Now a teaspoon lay on the floor, two batteries had rolled beneath the cooker, and the drawer still refused to close properly. She put everything back except the teaspoon and decided to try again another day.\\n\\nHer mother would have known how to fix it, or at least what to look for. When Mara was young, the kitchen cupboards at home had each had their own trick: one needed lifting, another a firm push near the hinge. Her mother had never called anyone in until she had tried every screwdriver in the house.\\n\\nMara picked up her phone. She could have asked about the drawer, then worked round to the question she had been avoiding since their last call: whether her mother was managing all right on her own. Instead she opened the weather forecast for her mother’s town. Rain was due on Sunday. She pictured the roses along the back fence and wondered whether they still needed watering this late in the year.\\n\\nShe made toast for supper and ate it standing beside the sink. The letters on the kitchen table had spread beyond their usual corner, but none looked urgent. She pushed the stack aside to set down her plate, leaving it there when she went to bed.\\n\\nIn the morning, she would deal with the post first.\"\n}",
+  "output_sha256": "afd991061300abd1c9c79570dfee656cfa9559b08f7c9fac72a03c01efdccc5c",
+  "finish_reason": "stop",
+  "refusal": null,
+  "returned_model": "gpt-6-sol",
+  "usage": {
+    "prompt_tokens": 356,
+    "completion_tokens": 381,
+    "total_tokens": 737,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 33,
+      "audio_tokens": 0,
+      "accepted_prediction_tokens": 0,
+      "rejected_prediction_tokens": 0
+    }
+  },
+  "format": {
+    "json_object": true,
+    "rule_unchanged": true,
+    "passage_is_string": true,
+    "passage_sha256": "fcf2a9f3e09709c2f5dee7588cbedbe946c09105bc0fd4c97e1e9a7ee845f91e",
+    "passage_words": 250
+  },
+  "finished_at": "2026-09-23T00:16:26.985971+00:00",
+  "latency_seconds": 7.125,
+  "usage_cost_upper_estimate_usd": 0.004522,
+  "stream_status": "active",
+  "budget": {
+    "usage_cost_upper_estimate_usd": 0.8421891,
+    "uncertain_cost_reserve_usd": 0.0,
+    "in_flight_reserve_usd": 0.316512,
+    "limit_usd": 5.0
+  }
+}

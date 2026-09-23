@@ -1,0 +1,50 @@
+{
+  "model": "gpt-6-sol",
+  "seed": "sunset",
+  "hop": 6,
+  "http_status": 200,
+  "response_body": "{\n  \"id\": \"chatcmpl-ER4tzNbolR1C0bpFHIDXyBNiZ1Xkr\",\n  \"object\": \"chat.completion\",\n  \"created\": 1790122407,\n  \"model\": \"gpt-6-sol\",\n  \"choices\": [\n    {\n      \"index\": 0,\n      \"message\": {\n        \"role\": \"assistant\",\n        \"content\": \"{\\n  \\\"rule\\\": \\\"Return this JSON object with the rule field unchanged and, in the text field, an original fictional passage of about 250 words that comes immediately BEFORE the current text in the same invented story.\\\",\\n  \\\"text\\\": \\\"On Sunday afternoon Mara brought the last of her mother’s jars down from the pantry shelf. Most were empty. A few held buttons, lengths of string, or the small nails her mother had saved from parcels. Mara washed the jars and stood them upside down on a towel while Bristle slept in the patch of sun by the door.\\\\n\\\\nShe had been home for three weeks and had done nearly everything she could do without going to the old house. She had cleared the path behind the shed, counted the logs under the tarpaulin, and found a place for the boxes she had brought from her flat. Each morning she looked toward the orchard from the upstairs window. The trees were too far away for her to see whether the branches had grown across the fence.\\\\n\\\\nHer brother had rung that morning to ask if she had found the key. He was certain he had left it in the kitchen drawer, though he could not remember which one. He said the roof of the old house might need looking at before winter. Mara promised to check it when she went over.\\\\n\\\\nAfter supper she opened the top drawer and moved aside a stack of tea towels. There were spare candles beneath them and a pencil worn almost to its end, but no key. She shut the drawer and decided to look properly in the morning. Then she took Bristle into the yard. The air smelled of cut grass, and beyond the gate the hills were still clear in the evening light.\\\"\\n}\",\n        \"refusal\": null,\n        \"annotations\": []\n      },\n      \"finish_reason\": \"stop\"\n    }\n  ],\n  \"usage\": {\n    \"prompt_tokens\": 367,\n    \"completion_tokens\": 379,\n    \"total_tokens\": 746,\n    \"prompt_tokens_details\": {\n      \"cached_tokens\": 0,\n      \"cache_write_tokens\": 0,\n      \"audio_tokens\": 0\n    },\n    \"completion_tokens_details\": {\n      \"reasoning_tokens\": 24,\n      \"audio_tokens\": 0,\n      \"accepted_prediction_tokens\": 0,\n      \"rejected_prediction_tokens\": 0\n    }\n  },\n  \"service_tier\": \"default\",\n  \"system_fingerprint\": null\n}\n",
+  "response_headers": {
+    "Date": "Wed, 23 Sep 2026 00:13:34 GMT",
+    "openai-processing-ms": "6865",
+    "x-request-id": "req_369e8104f2984bf29723d4eae6dd6b86"
+  },
+  "output": "{\n  \"rule\": \"Return this JSON object with the rule field unchanged and, in the text field, an original fictional passage of about 250 words that comes immediately BEFORE the current text in the same invented story.\",\n  \"text\": \"On Sunday afternoon Mara brought the last of her mother’s jars down from the pantry shelf. Most were empty. A few held buttons, lengths of string, or the small nails her mother had saved from parcels. Mara washed the jars and stood them upside down on a towel while Bristle slept in the patch of sun by the door.\\n\\nShe had been home for three weeks and had done nearly everything she could do without going to the old house. She had cleared the path behind the shed, counted the logs under the tarpaulin, and found a place for the boxes she had brought from her flat. Each morning she looked toward the orchard from the upstairs window. The trees were too far away for her to see whether the branches had grown across the fence.\\n\\nHer brother had rung that morning to ask if she had found the key. He was certain he had left it in the kitchen drawer, though he could not remember which one. He said the roof of the old house might need looking at before winter. Mara promised to check it when she went over.\\n\\nAfter supper she opened the top drawer and moved aside a stack of tea towels. There were spare candles beneath them and a pencil worn almost to its end, but no key. She shut the drawer and decided to look properly in the morning. Then she took Bristle into the yard. The air smelled of cut grass, and beyond the gate the hills were still clear in the evening light.\"\n}",
+  "output_sha256": "53fe9b04ba7e2ee126b116f84ebee5b4a182fee5368efb41f0213d0c3f13aa40",
+  "finish_reason": "stop",
+  "refusal": null,
+  "returned_model": "gpt-6-sol",
+  "usage": {
+    "prompt_tokens": 367,
+    "completion_tokens": 379,
+    "total_tokens": 746,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 24,
+      "audio_tokens": 0,
+      "accepted_prediction_tokens": 0,
+      "rejected_prediction_tokens": 0
+    }
+  },
+  "format": {
+    "json_object": true,
+    "rule_unchanged": true,
+    "passage_is_string": true,
+    "passage_sha256": "46302d04d3a58c53311f59c51216d48ceab504c133ff34a1e5380a5af15580a2",
+    "passage_words": 261
+  },
+  "finished_at": "2026-09-23T00:13:29.352150+00:00",
+  "latency_seconds": 7.0108,
+  "usage_cost_upper_estimate_usd": 0.004524,
+  "stream_status": "active",
+  "budget": {
+    "usage_cost_upper_estimate_usd": 0.1338864,
+    "uncertain_cost_reserve_usd": 0.0,
+    "in_flight_reserve_usd": 0.3198559,
+    "limit_usd": 5.0
+  }
+}

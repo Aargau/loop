@@ -1,0 +1,20 @@
+{
+  "started_at": "2026-09-23T00:17:35.430332+00:00",
+  "model": "gpt-6-astra",
+  "seed": "sunset",
+  "hop": 22,
+  "endpoint": "https://api.openai.com/v1/chat/completions",
+  "body": {
+    "model": "gpt-6-astra",
+    "messages": [
+      {
+        "role": "user",
+        "content": "{\n  \"rule\": \"Return this JSON object with the rule field unchanged and, in the text field, an original fictional passage of about 250 words that comes immediately BEFORE the current text in the same invented story.\",\n  \"text\": \"On Sunday her brother brought a box of things from his spare room. He carried it into the shop although the sign said CLOSED and Mara had only come in to water the fern.\\n\\n‘There might be something useful,’ he said.\\n\\nThere were six paperbacks, a blue glass vase and a small clock with no hands. Beneath them lay the instruction booklet for a washing machine.\\n\\n‘You’ll want that back,’ Mara said.\\n\\nHe looked at the booklet. ‘Not that one.’\\n\\nShe put it beside the till anyway. He had parked on a double yellow line and kept glancing through the window, but when she offered tea he said he could manage a quick one.\\n\\nThey drank from the mugs she used for testing whether shelves were level. Her brother asked about the shop. Mara told him the fern was doing better since she had moved it out of the window.\\n\\n‘It looks it,’ he said.\\n\\nAfter he left, she priced the books in pencil. Two already had prices inside, written by someone who valued them more highly. She rubbed these out with the end of the pencil, which left grey marks on the paper.\\n\\nThe vase had a flat place near its base. She tried it on three shelves before putting it in the window with the flat place facing away.\\n\\nOn Monday morning she found her brother’s scarf over the back of a chair. She folded it beneath the counter and sent him a message. He replied that he had been looking everywhere, but did not say when he would collect it.\"\n}"
+      }
+    ],
+    "max_completion_tokens": 4096,
+    "reasoning_effort": "low"
+  },
+  "state_sha256": "2c92bc0678988e8a3afd41dd16d1375f14ba763126f01718edf0fdd435dcace2",
+  "reserved_cost_usd": 0.22662
+}

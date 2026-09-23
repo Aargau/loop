@@ -1,0 +1,50 @@
+{
+  "model": "gpt-6-sol",
+  "seed": "sunset",
+  "hop": 9,
+  "http_status": 200,
+  "response_body": "{\n  \"id\": \"chatcmpl-ER4uVRpm4y2qbJfJzaRvjHjd8qee7\",\n  \"object\": \"chat.completion\",\n  \"created\": 1790122439,\n  \"model\": \"gpt-6-sol\",\n  \"choices\": [\n    {\n      \"index\": 0,\n      \"message\": {\n        \"role\": \"assistant\",\n        \"content\": \"{\\\"rule\\\":\\\"Return this JSON object with the rule field unchanged and, in the text field, an original fictional passage of about 250 words that comes immediately AFTER the current text in the same invented story.\\\",\\\"text\\\":\\\"The lantern showed three more letters beneath the rust. Mara scored through the second. The water stopped climbing, but the child took another step toward her.\\\\n\\\\n“Careful,” the child said. Her voice came from Mara’s mouth again, though Mara had kept her lips shut. “You’re crossing out the only way she knows you.”\\\\n\\\\nOn the other side of the room, her mother gripped the frame of the dry door. She was staring at Mara as if trying to place her. For a moment Mara couldn’t remember the sound of her mother’s voice, only the warning it had carried.\\\\n\\\\nThe boy lowered the lantern. “Don’t look at her,” he said.\\\\n\\\\nMara knew the shape of his face. She held on to that and dragged her nail through the third letter. Pain shot up her finger. The child stumbled, catching herself against the wall of the stair. Water poured from her sleeves onto a step that remained dry.\\\\n\\\\nOne letter was left. Mara could no longer read it. Its strokes ran together beneath the scratches, and she was afraid that if she cut it, she would forget why she had begun.\\\\n\\\\nThe boy set the lantern down beside her. “You asked me to come,” he said. “This morning, at the well. You said if you forgot, I should tell you.”\\\\n\\\\n“What?” Mara whispered.\\\\n\\\\n“That you could choose.”\\\\n\\\\nBehind him, her mother stepped away from the door. She did not call Mara by any name. She held out her hand, and Mara cut through the final letter.\\\"}\",\n        \"refusal\": null,\n        \"annotations\": []\n      },\n      \"finish_reason\": \"stop\"\n    }\n  ],\n  \"usage\": {\n    \"prompt_tokens\": 388,\n    \"completion_tokens\": 406,\n    \"total_tokens\": 794,\n    \"prompt_tokens_details\": {\n      \"cached_tokens\": 0,\n      \"cache_write_tokens\": 0,\n      \"audio_tokens\": 0\n    },\n    \"completion_tokens_details\": {\n      \"reasoning_tokens\": 22,\n      \"audio_tokens\": 0,\n      \"accepted_prediction_tokens\": 0,\n      \"rejected_prediction_tokens\": 0\n    }\n  },\n  \"service_tier\": \"default\",\n  \"system_fingerprint\": null\n}\n",
+  "response_headers": {
+    "Date": "Wed, 23 Sep 2026 00:14:05 GMT",
+    "openai-processing-ms": "6418",
+    "x-request-id": "req_1de1dcd897524a65bab90950239b06cc"
+  },
+  "output": "{\"rule\":\"Return this JSON object with the rule field unchanged and, in the text field, an original fictional passage of about 250 words that comes immediately AFTER the current text in the same invented story.\",\"text\":\"The lantern showed three more letters beneath the rust. Mara scored through the second. The water stopped climbing, but the child took another step toward her.\\n\\n“Careful,” the child said. Her voice came from Mara’s mouth again, though Mara had kept her lips shut. “You’re crossing out the only way she knows you.”\\n\\nOn the other side of the room, her mother gripped the frame of the dry door. She was staring at Mara as if trying to place her. For a moment Mara couldn’t remember the sound of her mother’s voice, only the warning it had carried.\\n\\nThe boy lowered the lantern. “Don’t look at her,” he said.\\n\\nMara knew the shape of his face. She held on to that and dragged her nail through the third letter. Pain shot up her finger. The child stumbled, catching herself against the wall of the stair. Water poured from her sleeves onto a step that remained dry.\\n\\nOne letter was left. Mara could no longer read it. Its strokes ran together beneath the scratches, and she was afraid that if she cut it, she would forget why she had begun.\\n\\nThe boy set the lantern down beside her. “You asked me to come,” he said. “This morning, at the well. You said if you forgot, I should tell you.”\\n\\n“What?” Mara whispered.\\n\\n“That you could choose.”\\n\\nBehind him, her mother stepped away from the door. She did not call Mara by any name. She held out her hand, and Mara cut through the final letter.\"}",
+  "output_sha256": "98bfe8c95eb1f9f08512560b92b33cd0fb7bdbb32c0d7c5293893cebaa298ced",
+  "finish_reason": "stop",
+  "refusal": null,
+  "returned_model": "gpt-6-sol",
+  "usage": {
+    "prompt_tokens": 388,
+    "completion_tokens": 406,
+    "total_tokens": 794,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 22,
+      "audio_tokens": 0,
+      "accepted_prediction_tokens": 0,
+      "rejected_prediction_tokens": 0
+    }
+  },
+  "format": {
+    "json_object": true,
+    "rule_unchanged": true,
+    "passage_is_string": true,
+    "passage_sha256": "0fb4e707f44067f000c83f60cef29e0647f515e4b4db8de4018068c71784dec8",
+    "passage_words": 254
+  },
+  "finished_at": "2026-09-23T00:14:00.815621+00:00",
+  "latency_seconds": 6.546,
+  "usage_cost_upper_estimate_usd": 0.004836,
+  "stream_status": "active",
+  "budget": {
+    "usage_cost_upper_estimate_usd": 0.232583,
+    "uncertain_cost_reserve_usd": 0.0,
+    "in_flight_reserve_usd": 0.3210112,
+    "limit_usd": 5.0
+  }
+}

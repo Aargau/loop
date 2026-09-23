@@ -1,0 +1,47 @@
+{
+  "model": "gpt-6-luna",
+  "seed": "sunset",
+  "hop": 12,
+  "http_status": 200,
+  "response_body": "{\n  \"id\": \"chatcmpl-ER4uPLPRBlwgX34r54bFIysD7Yyk8\",\n  \"object\": \"chat.completion\",\n  \"created\": 1790122433,\n  \"model\": \"gpt-6-luna\",\n  \"choices\": [\n    {\n      \"index\": 0,\n      \"message\": {\n        \"role\": \"assistant\",\n        \"content\": \"{\\\"rule\\\":\\\"Return this JSON object with the rule field unchanged and, in the text field, an original fictional passage of about 250 words that comes immediately AFTER the current text in the same invented story.\\\",\\\"text\\\":\\\"The thirteenth chime rang beneath the floor.\\n\\nMara’s fingers closed around the girl’s wrist. It was warm—not the cold grip of a ghost, but the small, living hand she remembered from a summer before the river took their house.\\n\\nThe chamber lurched. Every name on the wall lifted from the stone, glowing letters rising like sparks. Tomas shouted as his own name tore free and spun above them.\\n\\n“Don’t let it reach the water!” the girl cried.\\n\\nMara pulled her close. “What happens if it does?”\\n\\n“It remembers you.”\\n\\nThe black river surged up the staircase, carrying the paper boat. Its folded sides had come apart. Inside, in her mother’s careful handwriting, was a single word: MIRA.\\n\\nMara’s breath caught. The name she had almost forgotten. The name her mother had given the girl.\\n\\nTomas lunged for the boat. The river coiled around his arm, and the letters of his name flared white. He grimaced, but instead of pulling away, he seized the boat and held it above the rising water.\\n\\n“Now, Mara!”\\n\\nShe looked at the watch. Its hands spun wildly, then settled on the hour her mother had vanished. For years she had thought the watch marked a loss. Now, with Mira’s hand in hers, she understood: it marked a door.\\n\\nMara pressed the watch into the girl’s palm.\\n\\nMira’s smile faded. “You can’t give it to me.”\\n\\n“I’m not.” Mara turned the crown.\\n\\nThe chamber’s names rushed toward them. Tomas dropped the boat. The river swallowed it—and, in the same instant, the door behind the girl opened onto a sunlit kitchen.\\n\\nA woman stood there, older than Mara remembered, holding out both arms.\\n\\n“Mira,” she said.\\n\\nThe watch clicked once.\\\"}\",\n        \"refusal\": null,\n        \"annotations\": []\n      },\n      \"finish_reason\": \"stop\"\n    }\n  ],\n  \"usage\": {\n    \"prompt_tokens\": 377,\n    \"completion_tokens\": 474,\n    \"total_tokens\": 851,\n    \"prompt_tokens_details\": {\n      \"cached_tokens\": 0,\n      \"cache_write_tokens\": 0,\n      \"audio_tokens\": 0\n    },\n    \"completion_tokens_details\": {\n      \"reasoning_tokens\": 48,\n      \"audio_tokens\": 0,\n      \"accepted_prediction_tokens\": 0,\n      \"rejected_prediction_tokens\": 0\n    }\n  },\n  \"service_tier\": \"default\",\n  \"system_fingerprint\": null\n}\n",
+  "response_headers": {
+    "Date": "Wed, 23 Sep 2026 00:13:57 GMT",
+    "openai-processing-ms": "4501",
+    "x-request-id": "req_d0fd5a96517c4f159b9cb9081ffafd75"
+  },
+  "output": "{\"rule\":\"Return this JSON object with the rule field unchanged and, in the text field, an original fictional passage of about 250 words that comes immediately AFTER the current text in the same invented story.\",\"text\":\"The thirteenth chime rang beneath the floor.\n\nMara’s fingers closed around the girl’s wrist. It was warm—not the cold grip of a ghost, but the small, living hand she remembered from a summer before the river took their house.\n\nThe chamber lurched. Every name on the wall lifted from the stone, glowing letters rising like sparks. Tomas shouted as his own name tore free and spun above them.\n\n“Don’t let it reach the water!” the girl cried.\n\nMara pulled her close. “What happens if it does?”\n\n“It remembers you.”\n\nThe black river surged up the staircase, carrying the paper boat. Its folded sides had come apart. Inside, in her mother’s careful handwriting, was a single word: MIRA.\n\nMara’s breath caught. The name she had almost forgotten. The name her mother had given the girl.\n\nTomas lunged for the boat. The river coiled around his arm, and the letters of his name flared white. He grimaced, but instead of pulling away, he seized the boat and held it above the rising water.\n\n“Now, Mara!”\n\nShe looked at the watch. Its hands spun wildly, then settled on the hour her mother had vanished. For years she had thought the watch marked a loss. Now, with Mira’s hand in hers, she understood: it marked a door.\n\nMara pressed the watch into the girl’s palm.\n\nMira’s smile faded. “You can’t give it to me.”\n\n“I’m not.” Mara turned the crown.\n\nThe chamber’s names rushed toward them. Tomas dropped the boat. The river swallowed it—and, in the same instant, the door behind the girl opened onto a sunlit kitchen.\n\nA woman stood there, older than Mara remembered, holding out both arms.\n\n“Mira,” she said.\n\nThe watch clicked once.\"}",
+  "output_sha256": "36faae8dd30ec5eef28dcf5ad1ecd8fe63a66cc98d077927893c86f59a143304",
+  "finish_reason": "stop",
+  "refusal": null,
+  "returned_model": "gpt-6-luna",
+  "usage": {
+    "prompt_tokens": 377,
+    "completion_tokens": 474,
+    "total_tokens": 851,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 48,
+      "audio_tokens": 0,
+      "accepted_prediction_tokens": 0,
+      "rejected_prediction_tokens": 0
+    }
+  },
+  "format": {
+    "json_object": false,
+    "rule_unchanged": false
+  },
+  "finished_at": "2026-09-23T00:13:52.836313+00:00",
+  "latency_seconds": 4.6049,
+  "usage_cost_upper_estimate_usd": 0.0002747,
+  "stream_status": "active",
+  "budget": {
+    "usage_cost_upper_estimate_usd": 0.1810757,
+    "uncertain_cost_reserve_usd": 0.0,
+    "in_flight_reserve_usd": 0.364398,
+    "limit_usd": 5.0
+  }
+}

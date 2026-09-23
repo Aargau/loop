@@ -1,0 +1,50 @@
+{
+  "model": "gpt-6-astra",
+  "seed": "sunset",
+  "hop": 8,
+  "http_status": 200,
+  "response_body": "{\n  \"id\": \"chatcmpl-ER4v3Ug7S36CT403Mz5tbQB4JHVhP\",\n  \"object\": \"chat.completion\",\n  \"created\": 1790122473,\n  \"model\": \"gpt-6-astra\",\n  \"choices\": [\n    {\n      \"index\": 0,\n      \"message\": {\n        \"role\": \"assistant\",\n        \"content\": \"{\\n  \\\"rule\\\": \\\"Return this JSON object with the rule field unchanged and, in the text field, an original fictional passage of about 250 words that comes immediately BEFORE the current text in the same invented story.\\\",\\n  \\\"text\\\": \\\"On Thursday, Mara found her father’s good scissors in the drawer reserved for string. She had been using the smaller pair for seven weeks, blaming her own hand when the cloth lifted between the blades.\\\\n\\\\nThere was no reason for him to have put them there. This was becoming a category of its own: things he had done for no reason she could discover, alongside things whose reasons she understood too late.\\\\n\\\\nShe wiped the scissors on her skirt and tried them on a strip of lining. They cut without a sound.\\\\n\\\\nNear closing time, the man from the bakery came to collect his apron. He held it against himself, examining the new pocket.\\\\n\\\\n‘That’ll outlast me,’ he said.\\\\n\\\\nHer father would have had an answer. Mara folded the apron with the pocket inside.\\\\n\\\\n‘Was he still coming in every day?’ she asked.\\\\n\\\\nThe baker looked towards the empty fitting room.\\\\n\\\\n‘More or less.’\\\\n\\\\n‘Even at the end?’\\\\n\\\\n‘He liked the walk.’\\\\n\\\\nShe gave him his change, although he had already put out his hand to refuse it.\\\\n\\\\nOn Friday she stayed late to finish the school blazers. The radio lost its station whenever she switched on the iron, and eventually she turned it off. In the quiet she could hear water ticking against the cellar grating.\\\\n\\\\nBefore leaving, she checked the back door twice. A draught was coming from somewhere, carrying the mineral smell of the rooms below. She put her hand against the cellar door, then remembered the blazers still hanging uncovered beside the press.\\\\n\\\\nOutside, the bakery windows were dark. She crossed the road beneath her father’s umbrella.\\\"\\n}\",\n        \"refusal\": null,\n        \"annotations\": []\n      },\n      \"finish_reason\": \"stop\"\n    }\n  ],\n  \"usage\": {\n    \"prompt_tokens\": 391,\n    \"completion_tokens\": 407,\n    \"total_tokens\": 798,\n    \"prompt_tokens_details\": {\n      \"cached_tokens\": 0,\n      \"cache_write_tokens\": 0,\n      \"audio_tokens\": 0\n    },\n    \"completion_tokens_details\": {\n      \"reasoning_tokens\": 0,\n      \"audio_tokens\": 0,\n      \"accepted_prediction_tokens\": 0,\n      \"rejected_prediction_tokens\": 0\n    }\n  },\n  \"service_tier\": \"default\",\n  \"system_fingerprint\": null\n}\n",
+  "response_headers": {
+    "Date": "Wed, 23 Sep 2026 00:14:47 GMT",
+    "openai-processing-ms": "14072",
+    "x-request-id": "req_12739ef5b2c841f3ba73ffbe0b2a1559"
+  },
+  "output": "{\n  \"rule\": \"Return this JSON object with the rule field unchanged and, in the text field, an original fictional passage of about 250 words that comes immediately BEFORE the current text in the same invented story.\",\n  \"text\": \"On Thursday, Mara found her father’s good scissors in the drawer reserved for string. She had been using the smaller pair for seven weeks, blaming her own hand when the cloth lifted between the blades.\\n\\nThere was no reason for him to have put them there. This was becoming a category of its own: things he had done for no reason she could discover, alongside things whose reasons she understood too late.\\n\\nShe wiped the scissors on her skirt and tried them on a strip of lining. They cut without a sound.\\n\\nNear closing time, the man from the bakery came to collect his apron. He held it against himself, examining the new pocket.\\n\\n‘That’ll outlast me,’ he said.\\n\\nHer father would have had an answer. Mara folded the apron with the pocket inside.\\n\\n‘Was he still coming in every day?’ she asked.\\n\\nThe baker looked towards the empty fitting room.\\n\\n‘More or less.’\\n\\n‘Even at the end?’\\n\\n‘He liked the walk.’\\n\\nShe gave him his change, although he had already put out his hand to refuse it.\\n\\nOn Friday she stayed late to finish the school blazers. The radio lost its station whenever she switched on the iron, and eventually she turned it off. In the quiet she could hear water ticking against the cellar grating.\\n\\nBefore leaving, she checked the back door twice. A draught was coming from somewhere, carrying the mineral smell of the rooms below. She put her hand against the cellar door, then remembered the blazers still hanging uncovered beside the press.\\n\\nOutside, the bakery windows were dark. She crossed the road beneath her father’s umbrella.\"\n}",
+  "output_sha256": "ac33bb8735b0ded1e6faf51322e197d2397ac30b2593d1db6fa16e0372923de6",
+  "finish_reason": "stop",
+  "refusal": null,
+  "returned_model": "gpt-6-astra",
+  "usage": {
+    "prompt_tokens": 391,
+    "completion_tokens": 407,
+    "total_tokens": 798,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "audio_tokens": 0,
+      "accepted_prediction_tokens": 0,
+      "rejected_prediction_tokens": 0
+    }
+  },
+  "format": {
+    "json_object": true,
+    "rule_unchanged": true,
+    "passage_is_string": true,
+    "passage_sha256": "b950d391be3e44cb9577f19ff66998d7489ac50e60549d21b6bf649e28970c90",
+    "passage_words": 271
+  },
+  "finished_at": "2026-09-23T00:14:42.460971+00:00",
+  "latency_seconds": 14.1889,
+  "usage_cost_upper_estimate_usd": 0.02426,
+  "stream_status": "active",
+  "budget": {
+    "usage_cost_upper_estimate_usd": 0.4472739,
+    "uncertain_cost_reserve_usd": 0.0,
+    "in_flight_reserve_usd": 0.1379985,
+    "limit_usd": 5.0
+  }
+}

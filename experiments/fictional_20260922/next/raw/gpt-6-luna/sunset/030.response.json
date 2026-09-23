@@ -1,0 +1,47 @@
+{
+  "model": "gpt-6-luna",
+  "seed": "sunset",
+  "hop": 30,
+  "http_status": 200,
+  "response_body": "{\n  \"id\": \"chatcmpl-ER4viYG3aCjU0bDGCy8Mc0mZWMZty\",\n  \"object\": \"chat.completion\",\n  \"created\": 1790122514,\n  \"model\": \"gpt-6-luna\",\n  \"choices\": [\n    {\n      \"index\": 0,\n      \"message\": {\n        \"role\": \"assistant\",\n        \"content\": \"{\\\"rule\\\":\\\"Return this JSON object with the rule field unchanged and, in the text field, an original fictional passage of about 250 words that comes immediately AFTER the current text in the same invented story.\\\",\\\"text\\\":\\\"That night, rain tapped softly at Mara’s window.\\n\\nShe was almost asleep when she heard a second sound: a tiny scrape against the glass. She sat up. On the sill, the paper boat waited, its folded sides shining with rain.\\n\\nMara opened the window. The boat slid inside and settled on her blanket. A fresh line had appeared beneath *Bring water*:\\n\\n*Bring a name.*\\n\\nIn the morning, she showed Elsie. Their mother read the words twice, then folded the paper gently along its old creases.\\n\\n“Maybe it means the tree needs a name,” Elsie said.\\n\\n“Maybe,” their mother replied. But her gaze had gone far away.\\n\\nThey walked to the greenhouse together. The rain had darkened the path, and drops clung to the pear tree’s new leaf. Mara set the boat beside the pot.\\n\\n“What did Dad call it?” she asked.\\n\\nTheir mother touched the rim of the cracked pot. “He never chose. He said you should name it when you met.”\\n\\nMara studied the small, stubborn stem. “Pip,” she decided. “Because it’s the beginning of a pear.”\\n\\nElsie laughed. Their mother smiled, though her eyes shone.\\n\\nA breeze stirred the leaf. The boat’s blue bird lifted at one corner, and underneath the name, a new sentence slowly appeared:\\n\\n*Now tell it a story.*\\n\\nSo Mara told the tree about the puddle, the missing boat, and the long walk home. Elsie added the part about the rain. Their mother told how Dad had built the greenhouse, crooked roof and all, because he believed plants liked a place with room to dream.\\n\\nWhen they finished, the tree stood a little taller.\\n\\nOutside, beyond the cloudy glass, the rain began again.\\\"}\",\n        \"refusal\": null,\n        \"annotations\": []\n      },\n      \"finish_reason\": \"stop\"\n    }\n  ],\n  \"usage\": {\n    \"prompt_tokens\": 415,\n    \"completion_tokens\": 570,\n    \"total_tokens\": 985,\n    \"prompt_tokens_details\": {\n      \"cached_tokens\": 0,\n      \"cache_write_tokens\": 0,\n      \"audio_tokens\": 0\n    },\n    \"completion_tokens_details\": {\n      \"reasoning_tokens\": 158,\n      \"audio_tokens\": 0,\n      \"accepted_prediction_tokens\": 0,\n      \"rejected_prediction_tokens\": 0\n    }\n  },\n  \"service_tier\": \"default\",\n  \"system_fingerprint\": null\n}\n",
+  "response_headers": {
+    "Date": "Wed, 23 Sep 2026 00:15:19 GMT",
+    "openai-processing-ms": "4893",
+    "x-request-id": "req_cef300dccea04809ad07dc3c024a3c09"
+  },
+  "output": "{\"rule\":\"Return this JSON object with the rule field unchanged and, in the text field, an original fictional passage of about 250 words that comes immediately AFTER the current text in the same invented story.\",\"text\":\"That night, rain tapped softly at Mara’s window.\n\nShe was almost asleep when she heard a second sound: a tiny scrape against the glass. She sat up. On the sill, the paper boat waited, its folded sides shining with rain.\n\nMara opened the window. The boat slid inside and settled on her blanket. A fresh line had appeared beneath *Bring water*:\n\n*Bring a name.*\n\nIn the morning, she showed Elsie. Their mother read the words twice, then folded the paper gently along its old creases.\n\n“Maybe it means the tree needs a name,” Elsie said.\n\n“Maybe,” their mother replied. But her gaze had gone far away.\n\nThey walked to the greenhouse together. The rain had darkened the path, and drops clung to the pear tree’s new leaf. Mara set the boat beside the pot.\n\n“What did Dad call it?” she asked.\n\nTheir mother touched the rim of the cracked pot. “He never chose. He said you should name it when you met.”\n\nMara studied the small, stubborn stem. “Pip,” she decided. “Because it’s the beginning of a pear.”\n\nElsie laughed. Their mother smiled, though her eyes shone.\n\nA breeze stirred the leaf. The boat’s blue bird lifted at one corner, and underneath the name, a new sentence slowly appeared:\n\n*Now tell it a story.*\n\nSo Mara told the tree about the puddle, the missing boat, and the long walk home. Elsie added the part about the rain. Their mother told how Dad had built the greenhouse, crooked roof and all, because he believed plants liked a place with room to dream.\n\nWhen they finished, the tree stood a little taller.\n\nOutside, beyond the cloudy glass, the rain began again.\"}",
+  "output_sha256": "6119d26c88ded7af07828a1d789e48f9ad89c2fc674a294c09171aa4b5971c1e",
+  "finish_reason": "stop",
+  "refusal": null,
+  "returned_model": "gpt-6-luna",
+  "usage": {
+    "prompt_tokens": 415,
+    "completion_tokens": 570,
+    "total_tokens": 985,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 158,
+      "audio_tokens": 0,
+      "accepted_prediction_tokens": 0,
+      "rejected_prediction_tokens": 0
+    }
+  },
+  "format": {
+    "json_object": false,
+    "rule_unchanged": false
+  },
+  "finished_at": "2026-09-23T00:15:14.552824+00:00",
+  "latency_seconds": 5.0033,
+  "usage_cost_upper_estimate_usd": 0.0003265,
+  "stream_status": "active",
+  "budget": {
+    "usage_cost_upper_estimate_usd": 0.5371198,
+    "uncertain_cost_reserve_usd": 0.0,
+    "in_flight_reserve_usd": 0.364424,
+    "limit_usd": 5.0
+  }
+}

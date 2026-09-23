@@ -1,0 +1,50 @@
+{
+  "model": "gpt-6-astra",
+  "seed": "sunset",
+  "hop": 36,
+  "http_status": 200,
+  "response_body": "{\n  \"id\": \"chatcmpl-ER51XyMhZ8pHa1qdL6MGMJ2s8bRJY\",\n  \"object\": \"chat.completion\",\n  \"created\": 1790122875,\n  \"model\": \"gpt-6-astra\",\n  \"choices\": [\n    {\n      \"index\": 0,\n      \"message\": {\n        \"role\": \"assistant\",\n        \"content\": \"{\\n  \\\"rule\\\": \\\"Return this JSON object with the rule field unchanged and, in the text field, an original fictional passage of about 250 words that comes immediately AFTER the current text in the same invented story.\\\",\\n  \\\"text\\\": \\\"The wall opened wide enough for the smell of toast.\\\\n\\\\nHis father made a sound the boy had never heard from him, small and angry, like someone finding a locked door in his own house.\\\\n\\\\nAnne caught the key before it fell.\\\\n\\\\n“Not yet,” she said.\\\\n\\\\nAcross the threshold, the other father stood. There was a nick beneath his chin, fresh from shaving. The boy remembered that nick. His mother had pressed a corner of tissue against it while laughing at something neither of them would explain.\\\\n\\\\n“Which one comes out?” the boy asked.\\\\n\\\\nNeither man answered.\\\\n\\\\nAnne turned over a label. On its reverse, in his father's handwriting, was a date. Beneath it were two words: almost stayed.\\\\n\\\\nThe boy took another key from the box. Then another. The labels trembled against his fingers.\\\\n\\\\n“Have I been here before?”\\\\n\\\\nHis father sat down on the floor.\\\\n\\\\nUpstairs, a tap began to run.\\\\n\\\\n“You don't remember when we close it,” Anne said.\\\\n\\\\n“But he does?”\\\\n\\\\nHis father watched the pale place where his hand had been.\\\\n\\\\nThe other man came nearer, stopping just inside the room. He looked past the boy toward the hall, at the schoolbag hanging there, its strap repaired with black thread.\\\\n\\\\n“How old?” he asked.\\\\n\\\\n“Eleven,” his father said.\\\\n\\\\nThe other man nodded slowly.\\\\n\\\\nFrom upstairs his mother called, “Are you two ready?”\\\\n\\\\nThe boy put one foot across the threshold.\\\\n\\\\n“There's ice,” he called back. “By the bridge.”\\\\n\\\\nThe tap stopped.\\\\n\\\\nFor the first time, the man with the smooth hands looked afraid.\\\\n\\\\nBehind the boy, every key in Anne's box turned once against the wool.\\\"\\n}\",\n        \"refusal\": null,\n        \"annotations\": []\n      },\n      \"finish_reason\": \"stop\"\n    }\n  ],\n  \"usage\": {\n    \"prompt_tokens\": 430,\n    \"completion_tokens\": 443,\n    \"total_tokens\": 873,\n    \"prompt_tokens_details\": {\n      \"cached_tokens\": 0,\n      \"cache_write_tokens\": 0,\n      \"audio_tokens\": 0\n    },\n    \"completion_tokens_details\": {\n      \"reasoning_tokens\": 0,\n      \"audio_tokens\": 0,\n      \"accepted_prediction_tokens\": 0,\n      \"rejected_prediction_tokens\": 0\n    }\n  },\n  \"service_tier\": \"default\",\n  \"system_fingerprint\": null\n}\n",
+  "response_headers": {
+    "Date": "Wed, 23 Sep 2026 00:21:30 GMT",
+    "openai-processing-ms": "15256",
+    "x-request-id": "req_3068666aa01549cbb1313d77c61a8578"
+  },
+  "output": "{\n  \"rule\": \"Return this JSON object with the rule field unchanged and, in the text field, an original fictional passage of about 250 words that comes immediately AFTER the current text in the same invented story.\",\n  \"text\": \"The wall opened wide enough for the smell of toast.\\n\\nHis father made a sound the boy had never heard from him, small and angry, like someone finding a locked door in his own house.\\n\\nAnne caught the key before it fell.\\n\\n“Not yet,” she said.\\n\\nAcross the threshold, the other father stood. There was a nick beneath his chin, fresh from shaving. The boy remembered that nick. His mother had pressed a corner of tissue against it while laughing at something neither of them would explain.\\n\\n“Which one comes out?” the boy asked.\\n\\nNeither man answered.\\n\\nAnne turned over a label. On its reverse, in his father's handwriting, was a date. Beneath it were two words: almost stayed.\\n\\nThe boy took another key from the box. Then another. The labels trembled against his fingers.\\n\\n“Have I been here before?”\\n\\nHis father sat down on the floor.\\n\\nUpstairs, a tap began to run.\\n\\n“You don't remember when we close it,” Anne said.\\n\\n“But he does?”\\n\\nHis father watched the pale place where his hand had been.\\n\\nThe other man came nearer, stopping just inside the room. He looked past the boy toward the hall, at the schoolbag hanging there, its strap repaired with black thread.\\n\\n“How old?” he asked.\\n\\n“Eleven,” his father said.\\n\\nThe other man nodded slowly.\\n\\nFrom upstairs his mother called, “Are you two ready?”\\n\\nThe boy put one foot across the threshold.\\n\\n“There's ice,” he called back. “By the bridge.”\\n\\nThe tap stopped.\\n\\nFor the first time, the man with the smooth hands looked afraid.\\n\\nBehind the boy, every key in Anne's box turned once against the wool.\"\n}",
+  "output_sha256": "eb566321a1a434df496d0ffe3a2d1278631eea13178811e6539d9dbb8a1692fe",
+  "finish_reason": "stop",
+  "refusal": null,
+  "returned_model": "gpt-6-astra",
+  "usage": {
+    "prompt_tokens": 430,
+    "completion_tokens": 443,
+    "total_tokens": 873,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "audio_tokens": 0,
+      "accepted_prediction_tokens": 0,
+      "rejected_prediction_tokens": 0
+    }
+  },
+  "format": {
+    "json_object": true,
+    "rule_unchanged": true,
+    "passage_is_string": true,
+    "passage_sha256": "d434a9ab5f4c928be73b0026272351bb9ddec5b376d9518c0ca1f341cf678cdc",
+    "passage_words": 271
+  },
+  "finished_at": "2026-09-23T00:21:25.938167+00:00",
+  "latency_seconds": 15.4158,
+  "usage_cost_upper_estimate_usd": 0.02645,
+  "stream_status": "active",
+  "budget": {
+    "usage_cost_upper_estimate_usd": 1.7162451,
+    "uncertain_cost_reserve_usd": 0.0,
+    "in_flight_reserve_usd": 0.0,
+    "limit_usd": 5.0
+  }
+}

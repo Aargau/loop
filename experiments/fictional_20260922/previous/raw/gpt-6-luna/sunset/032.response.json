@@ -1,0 +1,47 @@
+{
+  "model": "gpt-6-luna",
+  "seed": "sunset",
+  "hop": 32,
+  "http_status": 200,
+  "response_body": "{\n  \"id\": \"chatcmpl-ER4vt1mb62kiVmSsnpTfdeWkR3LDm\",\n  \"object\": \"chat.completion\",\n  \"created\": 1790122525,\n  \"model\": \"gpt-6-luna\",\n  \"choices\": [\n    {\n      \"index\": 0,\n      \"message\": {\n        \"role\": \"assistant\",\n        \"content\": \"{\\\"rule\\\":\\\"Return this JSON object with the rule field unchanged and, in the text field, an original fictional passage of about 250 words that comes immediately BEFORE the current text in the same invented story.\\\",\\\"text\\\":\\\"Mr. Bell wrote LOCAL HISTORY across the blackboard in blue chalk, then turned to face the class. Chalk dust clung to his sleeve.\\n\\n“For this assignment,” he said, “I want you to choose a place nearby that has changed. Find out what stood there before, and make a map showing both the past and the present.”\\n\\nThe room stirred with questions. Someone suggested the old cinema on Market Street. Another student wanted to draw the empty lot by the bus depot. Mara sat quietly, picturing the creek that slipped behind her grandmother’s house.\\n\\n“Was there really a bridge over it?” she asked when Mr. Bell came by her desk.\\n\\n“There was,” he said. “A wooden footbridge, I think. Your grandmother might remember where it stood.”\\n\\nMara tried to imagine it: two low rails, wet planks, maybe a sign warning people to keep off. She had crossed the creek only once, years ago, with her mother. They’d stood on the pavement above it and listened to water moving underneath, hidden by weeds and a concrete culvert.\\n\\nThe last bell rang. Mara tucked the assignment sheet into her folder and joined the slow stream of students heading outside. The air smelled like rain, though the clouds hadn’t opened yet. At the corner, her friend Jo hurried toward the bus stop, calling goodbye over her shoulder.\\n\\nMara walked the familiar streets alone, looking for clues. She noticed where an old brick wall changed to newer blocks, and where the sidewalk bent around a building that had once been a shop. Near the library, she paused, trying to picture the creek’s course beneath the road.\\n\\nThen the first cold drops landed on her sleeve. She pulled her jacket close and hurried the last few blocks, reaching home as the sky darkened.\\\"}\",\n        \"refusal\": null,\n        \"annotations\": []\n      },\n      \"finish_reason\": \"stop\"\n    }\n  ],\n  \"usage\": {\n    \"prompt_tokens\": 389,\n    \"completion_tokens\": 536,\n    \"total_tokens\": 925,\n    \"prompt_tokens_details\": {\n      \"cached_tokens\": 0,\n      \"cache_write_tokens\": 0,\n      \"audio_tokens\": 0\n    },\n    \"completion_tokens_details\": {\n      \"reasoning_tokens\": 122,\n      \"audio_tokens\": 0,\n      \"accepted_prediction_tokens\": 0,\n      \"rejected_prediction_tokens\": 0\n    }\n  },\n  \"service_tier\": \"default\",\n  \"system_fingerprint\": null\n}\n",
+  "response_headers": {
+    "Date": "Wed, 23 Sep 2026 00:15:30 GMT",
+    "openai-processing-ms": "5049",
+    "x-request-id": "req_83f08de144d64556bb38d17071ec6fad"
+  },
+  "output": "{\"rule\":\"Return this JSON object with the rule field unchanged and, in the text field, an original fictional passage of about 250 words that comes immediately BEFORE the current text in the same invented story.\",\"text\":\"Mr. Bell wrote LOCAL HISTORY across the blackboard in blue chalk, then turned to face the class. Chalk dust clung to his sleeve.\n\n“For this assignment,” he said, “I want you to choose a place nearby that has changed. Find out what stood there before, and make a map showing both the past and the present.”\n\nThe room stirred with questions. Someone suggested the old cinema on Market Street. Another student wanted to draw the empty lot by the bus depot. Mara sat quietly, picturing the creek that slipped behind her grandmother’s house.\n\n“Was there really a bridge over it?” she asked when Mr. Bell came by her desk.\n\n“There was,” he said. “A wooden footbridge, I think. Your grandmother might remember where it stood.”\n\nMara tried to imagine it: two low rails, wet planks, maybe a sign warning people to keep off. She had crossed the creek only once, years ago, with her mother. They’d stood on the pavement above it and listened to water moving underneath, hidden by weeds and a concrete culvert.\n\nThe last bell rang. Mara tucked the assignment sheet into her folder and joined the slow stream of students heading outside. The air smelled like rain, though the clouds hadn’t opened yet. At the corner, her friend Jo hurried toward the bus stop, calling goodbye over her shoulder.\n\nMara walked the familiar streets alone, looking for clues. She noticed where an old brick wall changed to newer blocks, and where the sidewalk bent around a building that had once been a shop. Near the library, she paused, trying to picture the creek’s course beneath the road.\n\nThen the first cold drops landed on her sleeve. She pulled her jacket close and hurried the last few blocks, reaching home as the sky darkened.\"}",
+  "output_sha256": "d42aa48bb9294026315a1d9b1efa9fe4274fd17eeea5c4f23ca8588282d23834",
+  "finish_reason": "stop",
+  "refusal": null,
+  "returned_model": "gpt-6-luna",
+  "usage": {
+    "prompt_tokens": 389,
+    "completion_tokens": 536,
+    "total_tokens": 925,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 122,
+      "audio_tokens": 0,
+      "accepted_prediction_tokens": 0,
+      "rejected_prediction_tokens": 0
+    }
+  },
+  "format": {
+    "json_object": false,
+    "rule_unchanged": false
+  },
+  "finished_at": "2026-09-23T00:15:25.340521+00:00",
+  "latency_seconds": 5.1882,
+  "usage_cost_upper_estimate_usd": 0.0003069,
+  "stream_status": "active",
+  "budget": {
+    "usage_cost_upper_estimate_usd": 0.6066411,
+    "uncertain_cost_reserve_usd": 0.0,
+    "in_flight_reserve_usd": 0.362596,
+    "limit_usd": 5.0
+  }
+}

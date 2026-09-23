@@ -1,0 +1,47 @@
+{
+  "model": "gpt-6-luna",
+  "seed": "sunset",
+  "hop": 6,
+  "http_status": 200,
+  "response_body": "{\n  \"id\": \"chatcmpl-ER4txaWzjGR2sGb7xfpTe9OA6TDIw\",\n  \"object\": \"chat.completion\",\n  \"created\": 1790122405,\n  \"model\": \"gpt-6-luna\",\n  \"choices\": [\n    {\n      \"index\": 0,\n      \"message\": {\n        \"role\": \"assistant\",\n        \"content\": \"{\\\"rule\\\":\\\"Return this JSON object with the rule field unchanged and, in the text field, an original fictional passage of about 250 words that comes immediately AFTER the current text in the same invented story.\\\",\\\"text\\\":\\\"The stairs went down farther than Mara remembered.\\n\\nAt the first landing, a narrow window showed the town beneath a sky crowded with stars. She stopped. The tower stood in the middle of the market square, though she had climbed it from the hill above town.\\n\\nTomas came beside her, rubbing his bruised shoulder. “That’s not right.”\\n\\n“No,” Mara said. “But it’s downstairs.”\\n\\nThey continued. At each landing, the tower offered them another impossible view: their old schoolyard, bright with summer; the river where Tomas had once fallen through thin ice; the little bedroom they had shared, with two beds and a paper moon on the ceiling.\\n\\nMara didn’t look for long. Tomas didn’t either.\\n\\nAt the bottom, a wooden door waited beneath a green EXIT sign. Someone had scratched a message into its paint:\\n\\nA NAME IS A DOOR, TOO.\\n\\nTomas read it twice. “Do you think it knows our names?”\\n\\nBefore Mara could answer, a bell rang overhead. The sound shivered through the stairs, and the watch in her pocket gave a single, cold pulse.\\n\\nShe tried the handle. It turned easily.\\n\\nThe door opened onto the market square at dawn. Rain silvered the cobbles. Beyond the rooftops, the river shone like a strip of tin, and the town’s clock chimed six.\\n\\nMara stepped out first. Tomas followed, then stopped beneath the arch.\\n\\n“Do we tell anyone what happened?”\\n\\nMara looked back. The tower’s doorway was only a brick wall now, dark with rain.\\n\\n“Not yet,” she said.\\n\\nTogether, they walked toward the river, carrying no key and keeping their names to themselves.\\\"}\",\n        \"refusal\": null,\n        \"annotations\": []\n      },\n      \"finish_reason\": \"stop\"\n    }\n  ],\n  \"usage\": {\n    \"prompt_tokens\": 404,\n    \"completion_tokens\": 499,\n    \"total_tokens\": 903,\n    \"prompt_tokens_details\": {\n      \"cached_tokens\": 0,\n      \"cache_write_tokens\": 0,\n      \"audio_tokens\": 0\n    },\n    \"completion_tokens_details\": {\n      \"reasoning_tokens\": 103,\n      \"audio_tokens\": 0,\n      \"accepted_prediction_tokens\": 0,\n      \"rejected_prediction_tokens\": 0\n    }\n  },\n  \"service_tier\": \"default\",\n  \"system_fingerprint\": null\n}\n",
+  "response_headers": {
+    "Date": "Wed, 23 Sep 2026 00:13:29 GMT",
+    "openai-processing-ms": "4536",
+    "x-request-id": "req_6bd7a7c93d5b472daa66502b015c26a7"
+  },
+  "output": "{\"rule\":\"Return this JSON object with the rule field unchanged and, in the text field, an original fictional passage of about 250 words that comes immediately AFTER the current text in the same invented story.\",\"text\":\"The stairs went down farther than Mara remembered.\n\nAt the first landing, a narrow window showed the town beneath a sky crowded with stars. She stopped. The tower stood in the middle of the market square, though she had climbed it from the hill above town.\n\nTomas came beside her, rubbing his bruised shoulder. “That’s not right.”\n\n“No,” Mara said. “But it’s downstairs.”\n\nThey continued. At each landing, the tower offered them another impossible view: their old schoolyard, bright with summer; the river where Tomas had once fallen through thin ice; the little bedroom they had shared, with two beds and a paper moon on the ceiling.\n\nMara didn’t look for long. Tomas didn’t either.\n\nAt the bottom, a wooden door waited beneath a green EXIT sign. Someone had scratched a message into its paint:\n\nA NAME IS A DOOR, TOO.\n\nTomas read it twice. “Do you think it knows our names?”\n\nBefore Mara could answer, a bell rang overhead. The sound shivered through the stairs, and the watch in her pocket gave a single, cold pulse.\n\nShe tried the handle. It turned easily.\n\nThe door opened onto the market square at dawn. Rain silvered the cobbles. Beyond the rooftops, the river shone like a strip of tin, and the town’s clock chimed six.\n\nMara stepped out first. Tomas followed, then stopped beneath the arch.\n\n“Do we tell anyone what happened?”\n\nMara looked back. The tower’s doorway was only a brick wall now, dark with rain.\n\n“Not yet,” she said.\n\nTogether, they walked toward the river, carrying no key and keeping their names to themselves.\"}",
+  "output_sha256": "8b4c3e22e30cca5e4d36d971ed29b23d040ddc087b853c5d68a7db613e84b00f",
+  "finish_reason": "stop",
+  "refusal": null,
+  "returned_model": "gpt-6-luna",
+  "usage": {
+    "prompt_tokens": 404,
+    "completion_tokens": 499,
+    "total_tokens": 903,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 103,
+      "audio_tokens": 0,
+      "accepted_prediction_tokens": 0,
+      "rejected_prediction_tokens": 0
+    }
+  },
+  "format": {
+    "json_object": false,
+    "rule_unchanged": false
+  },
+  "finished_at": "2026-09-23T00:13:25.130226+00:00",
+  "latency_seconds": 4.6764,
+  "usage_cost_upper_estimate_usd": 0.0002899,
+  "stream_status": "active",
+  "budget": {
+    "usage_cost_upper_estimate_usd": 0.1025261,
+    "uncertain_cost_reserve_usd": 0.0,
+    "in_flight_reserve_usd": 0.3644,
+    "limit_usd": 5.0
+  }
+}

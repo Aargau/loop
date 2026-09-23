@@ -1,0 +1,50 @@
+{
+  "model": "gpt-6-sol",
+  "seed": "sunset",
+  "hop": 27,
+  "http_status": 200,
+  "response_body": "{\n  \"id\": \"chatcmpl-ER4wViKZp8jaK5iFd2YZxtdecdxIj\",\n  \"object\": \"chat.completion\",\n  \"created\": 1790122563,\n  \"model\": \"gpt-6-sol\",\n  \"choices\": [\n    {\n      \"index\": 0,\n      \"message\": {\n        \"role\": \"assistant\",\n        \"content\": \"{\\\"rule\\\":\\\"Return this JSON object with the rule field unchanged and, in the text field, an original fictional passage of about 250 words that comes immediately AFTER the current text in the same invented story.\\\",\\\"text\\\":\\\"The driver pulled away. The key scraped along the folding doors until the bus turned the corner, and then the sound came from beneath Mara’s seat.\\\\n\\\\n“Four,” Kit said.\\\\n\\\\n“Don’t,” the driver snapped. His eyes stayed on the road. “She needs you to finish.”\\\\n\\\\nIn the shelter glass, Mara had seen six bowls on the kitchen table. That morning there had been three. Kit’s grandmother had set them out herself, though she had been dead since winter.\\\\n\\\\nLina crouched beside Kit. “What happens if we stop?”\\\\n\\\\nHe pointed toward the empty seats at the back. A little spoon lay on the rearmost cushion. As they watched, it slid an inch toward the aisle.\\\\n\\\\nThe bus passed the bakery, then passed it again. Its clock showed half past seven both times. Outside, the windows of every shop reflected a yellow kitchen, bright and still, with a cellar door at the far end.\\\\n\\\\nMara gripped the rail. “Kit, how many?”\\\\n\\\\n“I only saw five.”\\\\n\\\\nA sixth bowl appeared in the driver’s mirror. It rested on the step below the cellar door, where no one at the table could have reached it. Mara remembered flour falling from Kit’s grandmother’s hands that morning. She had been making a trail.\\\\n\\\\n“Five,” Mara said.\\\\n\\\\nThe bus shuddered. The bakery disappeared behind them, and the road opened onto the river bridge.\\\\n\\\\nFrom the back seat came a careful clink. The spoon had found a bowl.\\\\n\\\\nKit looked at Mara. “That one’s for whoever counts six.”\\\"}\",\n        \"refusal\": null,\n        \"annotations\": []\n      },\n      \"finish_reason\": \"stop\"\n    }\n  ],\n  \"usage\": {\n    \"prompt_tokens\": 403,\n    \"completion_tokens\": 421,\n    \"total_tokens\": 824,\n    \"prompt_tokens_details\": {\n      \"cached_tokens\": 0,\n      \"cache_write_tokens\": 0,\n      \"audio_tokens\": 0\n    },\n    \"completion_tokens_details\": {\n      \"reasoning_tokens\": 22,\n      \"audio_tokens\": 0,\n      \"accepted_prediction_tokens\": 0,\n      \"rejected_prediction_tokens\": 0\n    }\n  },\n  \"service_tier\": \"default\",\n  \"system_fingerprint\": null\n}\n",
+  "response_headers": {
+    "Date": "Wed, 23 Sep 2026 00:16:11 GMT",
+    "openai-processing-ms": "7681",
+    "x-request-id": "req_3d641174a3a848bd86f02d0e9cbab9bc"
+  },
+  "output": "{\"rule\":\"Return this JSON object with the rule field unchanged and, in the text field, an original fictional passage of about 250 words that comes immediately AFTER the current text in the same invented story.\",\"text\":\"The driver pulled away. The key scraped along the folding doors until the bus turned the corner, and then the sound came from beneath Mara’s seat.\\n\\n“Four,” Kit said.\\n\\n“Don’t,” the driver snapped. His eyes stayed on the road. “She needs you to finish.”\\n\\nIn the shelter glass, Mara had seen six bowls on the kitchen table. That morning there had been three. Kit’s grandmother had set them out herself, though she had been dead since winter.\\n\\nLina crouched beside Kit. “What happens if we stop?”\\n\\nHe pointed toward the empty seats at the back. A little spoon lay on the rearmost cushion. As they watched, it slid an inch toward the aisle.\\n\\nThe bus passed the bakery, then passed it again. Its clock showed half past seven both times. Outside, the windows of every shop reflected a yellow kitchen, bright and still, with a cellar door at the far end.\\n\\nMara gripped the rail. “Kit, how many?”\\n\\n“I only saw five.”\\n\\nA sixth bowl appeared in the driver’s mirror. It rested on the step below the cellar door, where no one at the table could have reached it. Mara remembered flour falling from Kit’s grandmother’s hands that morning. She had been making a trail.\\n\\n“Five,” Mara said.\\n\\nThe bus shuddered. The bakery disappeared behind them, and the road opened onto the river bridge.\\n\\nFrom the back seat came a careful clink. The spoon had found a bowl.\\n\\nKit looked at Mara. “That one’s for whoever counts six.”\"}",
+  "output_sha256": "09cce5240500f81b8ba25a8db9e65f73cac64a7e4cc8ad88504f69c0a17e2802",
+  "finish_reason": "stop",
+  "refusal": null,
+  "returned_model": "gpt-6-sol",
+  "usage": {
+    "prompt_tokens": 403,
+    "completion_tokens": 421,
+    "total_tokens": 824,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 22,
+      "audio_tokens": 0,
+      "accepted_prediction_tokens": 0,
+      "rejected_prediction_tokens": 0
+    }
+  },
+  "format": {
+    "json_object": true,
+    "rule_unchanged": true,
+    "passage_is_string": true,
+    "passage_sha256": "65f9563e526e710a86c74367fe0712d513f404312a59934a34b266dfca872b93",
+    "passage_words": 248
+  },
+  "finished_at": "2026-09-23T00:16:06.508825+00:00",
+  "latency_seconds": 7.7861,
+  "usage_cost_upper_estimate_usd": 0.005016,
+  "stream_status": "active",
+  "budget": {
+    "usage_cost_upper_estimate_usd": 0.7451091,
+    "uncertain_cost_reserve_usd": 0.0,
+    "in_flight_reserve_usd": 0.318236,
+    "limit_usd": 5.0
+  }
+}

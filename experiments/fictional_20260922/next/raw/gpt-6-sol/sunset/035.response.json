@@ -1,0 +1,50 @@
+{
+  "model": "gpt-6-sol",
+  "seed": "sunset",
+  "hop": 35,
+  "http_status": 200,
+  "response_body": "{\n  \"id\": \"chatcmpl-ER4xQpqxtEp4vx42PXNWHqBKpOH6I\",\n  \"object\": \"chat.completion\",\n  \"created\": 1790122620,\n  \"model\": \"gpt-6-sol\",\n  \"choices\": [\n    {\n      \"index\": 0,\n      \"message\": {\n        \"role\": \"assistant\",\n        \"content\": \"{\\\"rule\\\":\\\"Return this JSON object with the rule field unchanged and, in the text field, an original fictional passage of about 250 words that comes immediately AFTER the current text in the same invented story.\\\",\\\"text\\\":\\\"Mara kept her hand on the last bowl. The knock came once more, softer this time.\\\\n\\\\nKit went to the door. Through the frosted glass stood a small figure holding something close to its chest.\\\\n\\\\n“Gran?” he called.\\\\n\\\\nThe figure shook its head.\\\\n\\\\nLina picked up the bus ticket. On its back, in Gran’s narrow hand, was written: ASK WHAT THEY’RE CARRYING.\\\\n\\\\n“What are you carrying?” Mara called.\\\\n\\\\n“A cup,” said a child’s voice. “She said not to spill it.”\\\\n\\\\nMara glanced at the sink. Its single drop still clung to the tap, too heavy to fall.\\\\n\\\\nKit opened the door a crack. A boy in a yellow raincoat stood on the step, though the evening was dry. He held Gran’s chipped green cup in both hands. Inside was a little blue water.\\\\n\\\\n“Where did you see her?” Lina asked.\\\\n\\\\n“On the bus. She got off where the road ends.” The boy looked past them at the table. “She said there’d be a place for me.”\\\\n\\\\nMara moved the fourth bowl aside. Beneath it was a folded paper map, no bigger than a playing card. A blue line crept across it, marking a road she had never seen.\\\\n\\\\nThe boy’s hands began to shake. Mara drew out the empty chair, and he sat, setting the cup beside the map. The line stopped moving.\\\\n\\\\nFrom under the first bowl came a faint clink. Mara lifted it just enough to see the thimble. Gran was no longer at the sink. She stood beside a bus stop sign, pointing down the road.\\\\n\\\\nOn the map, a small X appeared.\\\"}\",\n        \"refusal\": null,\n        \"annotations\": []\n      },\n      \"finish_reason\": \"stop\"\n    }\n  ],\n  \"usage\": {\n    \"prompt_tokens\": 404,\n    \"completion_tokens\": 439,\n    \"total_tokens\": 843,\n    \"prompt_tokens_details\": {\n      \"cached_tokens\": 0,\n      \"cache_write_tokens\": 0,\n      \"audio_tokens\": 0\n    },\n    \"completion_tokens_details\": {\n      \"reasoning_tokens\": 15,\n      \"audio_tokens\": 0,\n      \"accepted_prediction_tokens\": 0,\n      \"rejected_prediction_tokens\": 0\n    }\n  },\n  \"service_tier\": \"default\",\n  \"system_fingerprint\": null\n}\n",
+  "response_headers": {
+    "Date": "Wed, 23 Sep 2026 00:17:06 GMT",
+    "openai-processing-ms": "5756",
+    "x-request-id": "req_e3f6cc024ef545c192aca61a3e20c7f9"
+  },
+  "output": "{\"rule\":\"Return this JSON object with the rule field unchanged and, in the text field, an original fictional passage of about 250 words that comes immediately AFTER the current text in the same invented story.\",\"text\":\"Mara kept her hand on the last bowl. The knock came once more, softer this time.\\n\\nKit went to the door. Through the frosted glass stood a small figure holding something close to its chest.\\n\\n“Gran?” he called.\\n\\nThe figure shook its head.\\n\\nLina picked up the bus ticket. On its back, in Gran’s narrow hand, was written: ASK WHAT THEY’RE CARRYING.\\n\\n“What are you carrying?” Mara called.\\n\\n“A cup,” said a child’s voice. “She said not to spill it.”\\n\\nMara glanced at the sink. Its single drop still clung to the tap, too heavy to fall.\\n\\nKit opened the door a crack. A boy in a yellow raincoat stood on the step, though the evening was dry. He held Gran’s chipped green cup in both hands. Inside was a little blue water.\\n\\n“Where did you see her?” Lina asked.\\n\\n“On the bus. She got off where the road ends.” The boy looked past them at the table. “She said there’d be a place for me.”\\n\\nMara moved the fourth bowl aside. Beneath it was a folded paper map, no bigger than a playing card. A blue line crept across it, marking a road she had never seen.\\n\\nThe boy’s hands began to shake. Mara drew out the empty chair, and he sat, setting the cup beside the map. The line stopped moving.\\n\\nFrom under the first bowl came a faint clink. Mara lifted it just enough to see the thimble. Gran was no longer at the sink. She stood beside a bus stop sign, pointing down the road.\\n\\nOn the map, a small X appeared.\"}",
+  "output_sha256": "c4d7201a70adcc5961cdbb7466de2295a5001093311adac2882db024a49f6ae3",
+  "finish_reason": "stop",
+  "refusal": null,
+  "returned_model": "gpt-6-sol",
+  "usage": {
+    "prompt_tokens": 404,
+    "completion_tokens": 439,
+    "total_tokens": 843,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 15,
+      "audio_tokens": 0,
+      "accepted_prediction_tokens": 0,
+      "rejected_prediction_tokens": 0
+    }
+  },
+  "format": {
+    "json_object": true,
+    "rule_unchanged": true,
+    "passage_is_string": true,
+    "passage_sha256": "6df69df79bcec12c78c360ce15b7be6e4ca0711918545f0e152018b50979a347",
+    "passage_words": 266
+  },
+  "finished_at": "2026-09-23T00:17:01.496746+00:00",
+  "latency_seconds": 5.8844,
+  "usage_cost_upper_estimate_usd": 0.005198,
+  "stream_status": "active",
+  "budget": {
+    "usage_cost_upper_estimate_usd": 0.9739931,
+    "uncertain_cost_reserve_usd": 0.0,
+    "in_flight_reserve_usd": 0.317728,
+    "limit_usd": 5.0
+  }
+}

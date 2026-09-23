@@ -1,0 +1,22 @@
+{
+  "started_at": "2026-09-23T00:15:49.902410+00:00",
+  "model": "claude-opus-5-5",
+  "seed": "sunset",
+  "hop": 20,
+  "endpoint": "https://api.anthropic.com/v1/messages",
+  "body": {
+    "model": "claude-opus-5-5",
+    "messages": [
+      {
+        "role": "user",
+        "content": "```json\n{\"rule\": \"Return this JSON object with the rule field unchanged and, in the text field, an original fictional passage of about 250 words that comes immediately AFTER the current text in the same invented story.\", \"text\": \"Mara's mouth went dry. \\\"The marsh chapel? Nobody's gone out there since the causeway sank.\\\" \\\"Somebody has,\\\" Wenna said. \\\"Every spring, somebody leaves a candle in the east window. I've seen it from the ridge.\\\" She coughed, a wet, rattling sound, and pressed her sleeve against her lips. When she lowered it, Mara pretended not to see the dark spot on the wool. \\\"Her name is Ysolde. She'll be old, older than me, and she won't want to see you. Tell her Wenna Crane sent you, and tell her the debt is being called.\\\" \\\"What debt?\\\" \\\"She'll know.\\\" Tobias had gone quiet again, his breath slow and warm against Mara's collarbone. She looked down at him, at the pale line on his wrist where the thread had been, faded now to a scar no wider than a hair. \\\"I can't leave him.\\\" \\\"You'll take him with you. It'll not touch him while I'm still here to feed it.\\\" Wenna said this plainly, the way she might have said the bread needed another quarter hour. \\\"That gives you three days. Perhaps four, if I'm stubborn, and I've always been stubborn.\\\" Mara wanted to argue. She wanted to shout that it wasn't fair, that Wenna had only done what anyone would do. But the candles had begun to gutter, one by one, though no draft stirred the room, and somewhere beneath the floorboards something shifted, patient as roots. \\\"Sleep,\\\" Wenna said softly. \\\"You'll need your legs tomorrow. The marsh doesn't forgive the tired.\\\"\"}\n```"
+      }
+    ],
+    "max_tokens": 4096,
+    "output_config": {
+      "effort": "low"
+    }
+  },
+  "state_sha256": "57a5e8c9824fc1ac27338925c29be94e96c08e61c020d0192853762a14abf66a",
+  "reserved_cost_usd": 0.090588
+}

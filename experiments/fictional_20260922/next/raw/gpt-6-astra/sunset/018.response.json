@@ -1,0 +1,50 @@
+{
+  "model": "gpt-6-astra",
+  "seed": "sunset",
+  "hop": 18,
+  "http_status": 200,
+  "response_body": "{\n  \"id\": \"chatcmpl-ER4xZcApRcz1ORJBJ91f53ws1hPfy\",\n  \"object\": \"chat.completion\",\n  \"created\": 1790122629,\n  \"model\": \"gpt-6-astra\",\n  \"choices\": [\n    {\n      \"index\": 0,\n      \"message\": {\n        \"role\": \"assistant\",\n        \"content\": \"{\\n  \\\"rule\\\": \\\"Return this JSON object with the rule field unchanged and, in the text field, an original fictional passage of about 250 words that comes immediately AFTER the current text in the same invented story.\\\",\\n  \\\"text\\\": \\\"He wiped his thumb before opening the flap. The gum had gone yellow and held a thread from somebody's sleeve.\\\\n\\\\nThe first photograph was of a car neither of them remembered. A man stood beside it with his hat in his hand.\\\\n\\\\n“That's not ours,” she said.\\\\n\\\\n“No.”\\\\n\\\\n“Put it aside, though.”\\\\n\\\\nUnder it was the garden. He passed it to her by the edges.\\\\n\\\\nThere were sheets on the line, and beyond them the pear tree, supported by the forked prop her father had cut. At the bottom of the picture a child's shoe entered the frame.\\\\n\\\\n“You,” she said.\\\\n\\\\n“Could be.”\\\\n\\\\n“I bought those shoes. You wouldn't have the brown.”\\\\n\\\\nHe leaned closer. She held the photograph between them, tilting it away from the window's glare.\\\\n\\\\n“I thought the tree was nearer the house.”\\\\n\\\\n“It grew.”\\\\n\\\\n“Not nearer, it didn't.”\\\\n\\\\nShe gave a small laugh and laid the picture face down. On the back, in pencil, someone had written June. Nothing else.\\\\n\\\\nHe took out the receipt. The paper had split along a fold, separating the price from the name of the shop.\\\\n\\\\n“Your father used to say they'd come for it.”\\\\n\\\\n“Did they?”\\\\n\\\\n“No. Two men came about the roof once. I thought it was them.”\\\\n\\\\nThe clock made a dry sound, as though preparing to strike, but did not.\\\\n\\\\nShe reached for the garden again.\\\\n\\\\n“There's another envelope,” he said.\\\\n\\\\n“In the bag?”\\\\n\\\\nHe nodded.\\\\n\\\\nShe studied the little shoe. Then she put the photograph against the sugar bowl, where both of them could see it.\\\\n\\\\n“Finish your bread first,” she said.\\\"\\n}\",\n        \"refusal\": null,\n        \"annotations\": []\n      },\n      \"finish_reason\": \"stop\"\n    }\n  ],\n  \"usage\": {\n    \"prompt_tokens\": 430,\n    \"completion_tokens\": 445,\n    \"total_tokens\": 875,\n    \"prompt_tokens_details\": {\n      \"cached_tokens\": 0,\n      \"cache_write_tokens\": 0,\n      \"audio_tokens\": 0\n    },\n    \"completion_tokens_details\": {\n      \"reasoning_tokens\": 0,\n      \"audio_tokens\": 0,\n      \"accepted_prediction_tokens\": 0,\n      \"rejected_prediction_tokens\": 0\n    }\n  },\n  \"service_tier\": \"default\",\n  \"system_fingerprint\": null\n}\n",
+  "response_headers": {
+    "Date": "Wed, 23 Sep 2026 00:17:22 GMT",
+    "openai-processing-ms": "13416",
+    "x-request-id": "req_a0b03070f5604a469882cef83a02c811"
+  },
+  "output": "{\n  \"rule\": \"Return this JSON object with the rule field unchanged and, in the text field, an original fictional passage of about 250 words that comes immediately AFTER the current text in the same invented story.\",\n  \"text\": \"He wiped his thumb before opening the flap. The gum had gone yellow and held a thread from somebody's sleeve.\\n\\nThe first photograph was of a car neither of them remembered. A man stood beside it with his hat in his hand.\\n\\n“That's not ours,” she said.\\n\\n“No.”\\n\\n“Put it aside, though.”\\n\\nUnder it was the garden. He passed it to her by the edges.\\n\\nThere were sheets on the line, and beyond them the pear tree, supported by the forked prop her father had cut. At the bottom of the picture a child's shoe entered the frame.\\n\\n“You,” she said.\\n\\n“Could be.”\\n\\n“I bought those shoes. You wouldn't have the brown.”\\n\\nHe leaned closer. She held the photograph between them, tilting it away from the window's glare.\\n\\n“I thought the tree was nearer the house.”\\n\\n“It grew.”\\n\\n“Not nearer, it didn't.”\\n\\nShe gave a small laugh and laid the picture face down. On the back, in pencil, someone had written June. Nothing else.\\n\\nHe took out the receipt. The paper had split along a fold, separating the price from the name of the shop.\\n\\n“Your father used to say they'd come for it.”\\n\\n“Did they?”\\n\\n“No. Two men came about the roof once. I thought it was them.”\\n\\nThe clock made a dry sound, as though preparing to strike, but did not.\\n\\nShe reached for the garden again.\\n\\n“There's another envelope,” he said.\\n\\n“In the bag?”\\n\\nHe nodded.\\n\\nShe studied the little shoe. Then she put the photograph against the sugar bowl, where both of them could see it.\\n\\n“Finish your bread first,” she said.\"\n}",
+  "output_sha256": "8fbaed109fe76db1095364cada9a6b883d5448f466d382596f2bc65562459e55",
+  "finish_reason": "stop",
+  "refusal": null,
+  "returned_model": "gpt-6-astra",
+  "usage": {
+    "prompt_tokens": 430,
+    "completion_tokens": 445,
+    "total_tokens": 875,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "audio_tokens": 0,
+      "accepted_prediction_tokens": 0,
+      "rejected_prediction_tokens": 0
+    }
+  },
+  "format": {
+    "json_object": true,
+    "rule_unchanged": true,
+    "passage_is_string": true,
+    "passage_sha256": "5fece2efeba43638f133686fe8ff72ff3810c8cb0c42c93bf63478aa5b207aff",
+    "passage_words": 266
+  },
+  "finished_at": "2026-09-23T00:17:18.018568+00:00",
+  "latency_seconds": 13.5087,
+  "usage_cost_upper_estimate_usd": 0.02655,
+  "stream_status": "active",
+  "budget": {
+    "usage_cost_upper_estimate_usd": 1.0640211,
+    "uncertain_cost_reserve_usd": 0.0,
+    "in_flight_reserve_usd": 0.135948,
+    "limit_usd": 5.0
+  }
+}

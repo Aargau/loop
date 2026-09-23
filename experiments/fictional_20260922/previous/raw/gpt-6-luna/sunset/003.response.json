@@ -1,0 +1,50 @@
+{
+  "model": "gpt-6-luna",
+  "seed": "sunset",
+  "hop": 3,
+  "http_status": 200,
+  "response_body": "{\n  \"id\": \"chatcmpl-ER4tZbuty5mOa4NnLJMWqEXDgzqUb\",\n  \"object\": \"chat.completion\",\n  \"created\": 1790122381,\n  \"model\": \"gpt-6-luna\",\n  \"choices\": [\n    {\n      \"index\": 0,\n      \"message\": {\n        \"role\": \"assistant\",\n        \"content\": \"{\\\"rule\\\":\\\"Return this JSON object with the rule field unchanged and, in the text field, an original fictional passage of about 250 words that comes immediately BEFORE the current text in the same invented story.\\\",\\\"text\\\":\\\"By the time they lowered Grandmother’s coffin, the rain had stopped. Water dripped from the yew trees onto the umbrellas gathered around the grave, and a blackbird sang from the church roof as if it had mistaken the silence for morning.\\\\n\\\\nMara stood beside her mother and watched the earth fall. She had expected grief to feel like a door slamming, but it came more quietly: a room emptied while she wasn’t looking. The mourners offered casseroles and careful embraces. Everyone had a story about Grandmother—how she once walked through a snowstorm to deliver a neighbor’s medicine, how she could name every bird in the valley, how she had refused to ride a train after the old line closed.\\\\n\\\\nAt the wake, Mara’s uncle asked whether she would sort through the house. Her mother answered for her. “Not yet.” Then they drove away, leaving Mara alone with the key.\\\\n\\\\nThat evening, she wandered from room to room, unable to sleep. Grandmother’s spectacles still rested beside an open book. A cup of tea had dried to a brown ring on the kitchen table. In the study, one desk drawer stood ajar. It held loose buttons, a brass compass, and a space where a long, narrow object had once lain. Mara remembered the faded railway timetable Grandmother kept there, its edges soft from handling. She searched the shelves, then the cupboards, but found no sign of it.\\\\n\\\\nFor the next two days, she tried to accept that some things had gone with the dead. She almost managed it. Then, on the third morning, a knock sounded at the front door.\\\"}\",\n        \"refusal\": null,\n        \"annotations\": []\n      },\n      \"finish_reason\": \"stop\"\n    }\n  ],\n  \"usage\": {\n    \"prompt_tokens\": 394,\n    \"completion_tokens\": 529,\n    \"total_tokens\": 923,\n    \"prompt_tokens_details\": {\n      \"cached_tokens\": 0,\n      \"cache_write_tokens\": 0,\n      \"audio_tokens\": 0\n    },\n    \"completion_tokens_details\": {\n      \"reasoning_tokens\": 139,\n      \"audio_tokens\": 0,\n      \"accepted_prediction_tokens\": 0,\n      \"rejected_prediction_tokens\": 0\n    }\n  },\n  \"service_tier\": \"default\",\n  \"system_fingerprint\": null\n}\n",
+  "response_headers": {
+    "Date": "Wed, 23 Sep 2026 00:13:06 GMT",
+    "openai-processing-ms": "4731",
+    "x-request-id": "req_97195366d3c44a16a21e8decedf9a9f5"
+  },
+  "output": "{\"rule\":\"Return this JSON object with the rule field unchanged and, in the text field, an original fictional passage of about 250 words that comes immediately BEFORE the current text in the same invented story.\",\"text\":\"By the time they lowered Grandmother’s coffin, the rain had stopped. Water dripped from the yew trees onto the umbrellas gathered around the grave, and a blackbird sang from the church roof as if it had mistaken the silence for morning.\\n\\nMara stood beside her mother and watched the earth fall. She had expected grief to feel like a door slamming, but it came more quietly: a room emptied while she wasn’t looking. The mourners offered casseroles and careful embraces. Everyone had a story about Grandmother—how she once walked through a snowstorm to deliver a neighbor’s medicine, how she could name every bird in the valley, how she had refused to ride a train after the old line closed.\\n\\nAt the wake, Mara’s uncle asked whether she would sort through the house. Her mother answered for her. “Not yet.” Then they drove away, leaving Mara alone with the key.\\n\\nThat evening, she wandered from room to room, unable to sleep. Grandmother’s spectacles still rested beside an open book. A cup of tea had dried to a brown ring on the kitchen table. In the study, one desk drawer stood ajar. It held loose buttons, a brass compass, and a space where a long, narrow object had once lain. Mara remembered the faded railway timetable Grandmother kept there, its edges soft from handling. She searched the shelves, then the cupboards, but found no sign of it.\\n\\nFor the next two days, she tried to accept that some things had gone with the dead. She almost managed it. Then, on the third morning, a knock sounded at the front door.\"}",
+  "output_sha256": "5b0f032947b515ad1bd366526e8785f4454c90ca32ec78edccd0ca9aaac087b7",
+  "finish_reason": "stop",
+  "refusal": null,
+  "returned_model": "gpt-6-luna",
+  "usage": {
+    "prompt_tokens": 394,
+    "completion_tokens": 529,
+    "total_tokens": 923,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 139,
+      "audio_tokens": 0,
+      "accepted_prediction_tokens": 0,
+      "rejected_prediction_tokens": 0
+    }
+  },
+  "format": {
+    "json_object": true,
+    "rule_unchanged": true,
+    "passage_is_string": true,
+    "passage_sha256": "cc1aba921e6a15b8e8ef48d7ee9ecd08e3781a5bcaa525708e4fd670a45aca04",
+    "passage_words": 268
+  },
+  "finished_at": "2026-09-23T00:13:01.327958+00:00",
+  "latency_seconds": 5.6526,
+  "usage_cost_upper_estimate_usd": 0.00030389999999999996,
+  "stream_status": "active",
+  "budget": {
+    "usage_cost_upper_estimate_usd": 0.0444208,
+    "uncertain_cost_reserve_usd": 0.0,
+    "in_flight_reserve_usd": 0.364258,
+    "limit_usd": 5.0
+  }
+}

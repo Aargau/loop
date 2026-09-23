@@ -1,0 +1,47 @@
+{
+  "model": "gpt-6-luna",
+  "seed": "sunset",
+  "hop": 16,
+  "http_status": 200,
+  "response_body": "{\n  \"id\": \"chatcmpl-ER4ugOx4K39Z16SYo2yoT4L7XM9px\",\n  \"object\": \"chat.completion\",\n  \"created\": 1790122450,\n  \"model\": \"gpt-6-luna\",\n  \"choices\": [\n    {\n      \"index\": 0,\n      \"message\": {\n        \"role\": \"assistant\",\n        \"content\": \"{\\\"rule\\\":\\\"Return this JSON object with the rule field unchanged and, in the text field, an original fictional passage of about 250 words that comes immediately AFTER the current text in the same invented story.\\\",\\\"text\\\":\\\"The stair carried her down through the river without getting her wet. Above, the current pressed against a ceiling of glass, dragging leaves and pale scraps of moonlight past her like passing ships.\\n\\nAt the bottom waited a room no wider than a bedroom. Its walls were lined with little brass drawers, each marked with a date. Mara recognized the year she was born, then the year she had learned to swim. One drawer stood open.\\n\\nInside lay a blue ribbon, frayed at the ends.\\n\\nShe knew it. Her mother had tied it around her wrist the night they camped beside the river, before the fever, before the long quiet weeks in the hospital. Mara had forgotten the camping trip entirely. Now its memory stirred: fireflies above the tent, her mother laughing as rain drummed on the canvas.\\n\\nA voice came from the dark between the drawers. “The river keeps what people cannot bear to carry.”\\n\\nMara turned. The star-eyed stranger stood at the foot of the stair, her silver gaze dimmed.\\n\\n“Did it take my mother’s voice?”\\n\\n“It took the last sound you remember hearing from her.” The stranger held out a hand. “You may leave it here. The river will give you back the rest.”\\n\\nMara closed her fingers around the ribbon. “And if I take it?”\\n\\n“You’ll remember how she said goodbye.”\\n\\nThe watch ticked in her pocket. Its bright word had changed. FORWARD, it read.\\n\\nMara looked at the open drawer, then at the stranger. Grief tightened in her chest, but beneath it she heard the melody again, faint and unfinished.\\n\\n“I want the whole memory,” she said.\\n\\nThe river roared overhead. The drawer slammed shut.\\\"}\",\n        \"refusal\": null,\n        \"annotations\": []\n      },\n      \"finish_reason\": \"stop\"\n    }\n  ],\n  \"usage\": {\n    \"prompt_tokens\": 395,\n    \"completion_tokens\": 449,\n    \"total_tokens\": 844,\n    \"prompt_tokens_details\": {\n      \"cached_tokens\": 0,\n      \"cache_write_tokens\": 0,\n      \"audio_tokens\": 0\n    },\n    \"completion_tokens_details\": {\n      \"reasoning_tokens\": 50,\n      \"audio_tokens\": 0,\n      \"accepted_prediction_tokens\": 0,\n      \"rejected_prediction_tokens\": 0\n    }\n  },\n  \"service_tier\": \"default\",\n  \"system_fingerprint\": null\n}\n",
+  "response_headers": {
+    "Date": "Wed, 23 Sep 2026 00:14:14 GMT",
+    "openai-processing-ms": "4207",
+    "x-request-id": "req_7919f68ebec747ec8fc833c24344ed53"
+  },
+  "output": "{\"rule\":\"Return this JSON object with the rule field unchanged and, in the text field, an original fictional passage of about 250 words that comes immediately AFTER the current text in the same invented story.\",\"text\":\"The stair carried her down through the river without getting her wet. Above, the current pressed against a ceiling of glass, dragging leaves and pale scraps of moonlight past her like passing ships.\n\nAt the bottom waited a room no wider than a bedroom. Its walls were lined with little brass drawers, each marked with a date. Mara recognized the year she was born, then the year she had learned to swim. One drawer stood open.\n\nInside lay a blue ribbon, frayed at the ends.\n\nShe knew it. Her mother had tied it around her wrist the night they camped beside the river, before the fever, before the long quiet weeks in the hospital. Mara had forgotten the camping trip entirely. Now its memory stirred: fireflies above the tent, her mother laughing as rain drummed on the canvas.\n\nA voice came from the dark between the drawers. “The river keeps what people cannot bear to carry.”\n\nMara turned. The star-eyed stranger stood at the foot of the stair, her silver gaze dimmed.\n\n“Did it take my mother’s voice?”\n\n“It took the last sound you remember hearing from her.” The stranger held out a hand. “You may leave it here. The river will give you back the rest.”\n\nMara closed her fingers around the ribbon. “And if I take it?”\n\n“You’ll remember how she said goodbye.”\n\nThe watch ticked in her pocket. Its bright word had changed. FORWARD, it read.\n\nMara looked at the open drawer, then at the stranger. Grief tightened in her chest, but beneath it she heard the melody again, faint and unfinished.\n\n“I want the whole memory,” she said.\n\nThe river roared overhead. The drawer slammed shut.\"}",
+  "output_sha256": "3e3435daecf84c80b9d5002b471f63fdc3ec5774c0253c710159343e4ad483b5",
+  "finish_reason": "stop",
+  "refusal": null,
+  "returned_model": "gpt-6-luna",
+  "usage": {
+    "prompt_tokens": 395,
+    "completion_tokens": 449,
+    "total_tokens": 844,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 50,
+      "audio_tokens": 0,
+      "accepted_prediction_tokens": 0,
+      "rejected_prediction_tokens": 0
+    }
+  },
+  "format": {
+    "json_object": false,
+    "rule_unchanged": false
+  },
+  "finished_at": "2026-09-23T00:14:10.001451+00:00",
+  "latency_seconds": 4.3443,
+  "usage_cost_upper_estimate_usd": 0.000264,
+  "stream_status": "active",
+  "budget": {
+    "usage_cost_upper_estimate_usd": 0.2531337,
+    "uncertain_cost_reserve_usd": 0.0,
+    "in_flight_reserve_usd": 0.36431,
+    "limit_usd": 5.0
+  }
+}

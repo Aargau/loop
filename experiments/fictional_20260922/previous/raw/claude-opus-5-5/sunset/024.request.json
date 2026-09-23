@@ -1,0 +1,22 @@
+{
+  "started_at": "2026-09-23T00:16:28.796670+00:00",
+  "model": "claude-opus-5-5",
+  "seed": "sunset",
+  "hop": 24,
+  "endpoint": "https://api.anthropic.com/v1/messages",
+  "body": {
+    "model": "claude-opus-5-5",
+    "messages": [
+      {
+        "role": "user",
+        "content": "```json\n{\"rule\": \"Return this JSON object with the rule field unchanged and, in the text field, an original fictional passage of about 250 words that comes immediately BEFORE the current text in the same invented story.\", \"text\": \"The spring of 1952 came late to the Harlow farm. Snow lay in the north ditches until April, and when it finally went, it left the lane so rutted that the milk truck sank to its axles twice before May. Walter was fourteen that year, tall enough to do a man's work and young enough that nobody thought to thank him for it. He rose at four-thirty, lit the lantern in the barn, and had eleven cows stripped before the sky turned gray over the Pruitt ridge.\\n\\nHis father did the figuring at night. Walter would hear him at the kitchen table after the house had gone quiet: the scratch of a pencil, a long pause, then the pencil again. Sometimes a chair scraped back and the screen door opened and closed, and Walter would lie awake listening to his father's boots cross the yard toward nowhere in particular.\\n\\nIn June the rain stopped. The sky stayed white and hard for three weeks, and the timothy in the lower field came up short and brittle. His father walked the rows every evening, bending now and then to pull a stalk and roll it between his fingers, as though he might find some argument in it.\\n\\nHis mother kept her own counsel. She weeded the garden in the cool of the morning, hauled water to the beans by the bucket, and hung the wash as if nothing in the world were wrong. Only once did Walter see her stop halfway across the yard and stand looking up at the old tree behind the house, already heavy with small green fruit.\"}\n```"
+      }
+    ],
+    "max_tokens": 4096,
+    "output_config": {
+      "effort": "low"
+    }
+  },
+  "state_sha256": "22ad7eb2c313a8491e403a3758005b7f6b552d5e822600c5056b3b21b0a3f430",
+  "reserved_cost_usd": 0.090652
+}

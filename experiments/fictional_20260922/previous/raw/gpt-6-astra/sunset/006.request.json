@@ -1,0 +1,20 @@
+{
+  "started_at": "2026-09-23T00:13:58.748939+00:00",
+  "model": "gpt-6-astra",
+  "seed": "sunset",
+  "hop": 6,
+  "endpoint": "https://api.openai.com/v1/chat/completions",
+  "body": {
+    "model": "gpt-6-astra",
+    "messages": [
+      {
+        "role": "user",
+        "content": "{\n  \"rule\": \"Return this JSON object with the rule field unchanged and, in the text field, an original fictional passage of about 250 words that comes immediately BEFORE the current text in the same invented story.\",\n  \"text\": \"That morning, Mara found her father’s measuring tape stretched across the floor between the cutting table and the cellar door. She had been looking for it since Thursday.\\n\\nThe tape lay numbered side down. At one end, its brass tab had slipped beneath the door, as though someone below had tried to pull it through.\\n\\nShe gathered it without opening the cellar. There was nothing down there except shelving, a broken pressing machine, and the boxes her father had told her never to put out with the rubbish. After his funeral she had carried them upstairs one at a time, discovered they contained only old account books, and carried them back.\\n\\nAt eleven, Mrs Vale telephoned about her skirt.\\n\\n“The hem again?” Mara asked.\\n\\n“It’s hanging wrong on the left.”\\n\\n“Bring the shoes you wear with it.”\\n\\nThere was a pause, filled by the thin clatter of somebody washing dishes at Mrs Vale’s end.\\n\\n“Your father used to keep a stool,” she said.\\n\\n“I still have it.”\\n\\n“For children, I mean. So they could see themselves in the glass.”\\n\\nMara glanced at the low wooden stool beneath the window. One leg was shorter than the others; her father had always steadied it with his foot.\\n\\n“Yes,” she said. “That one.”\\n\\nBut Mrs Vale had returned to the subject of her skirt.\\n\\nAt noon Mara ate a cheese sandwich in the workroom. Through the open doorway she could see the empty shop and the square of sunlight on the floor. Once, the bell trembled without ringing. She supposed a bus had passed.\"\n}"
+      }
+    ],
+    "max_completion_tokens": 4096,
+    "reasoning_effort": "low"
+  },
+  "state_sha256": "a88389bd7b88a77414acbb8fa0f1e49316aec81978d2bf314830ac1edea52ebd",
+  "reserved_cost_usd": 0.22759
+}

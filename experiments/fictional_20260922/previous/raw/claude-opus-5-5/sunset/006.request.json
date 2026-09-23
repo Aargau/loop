@@ -1,0 +1,22 @@
+{
+  "started_at": "2026-09-23T00:13:30.176828+00:00",
+  "model": "claude-opus-5-5",
+  "seed": "sunset",
+  "hop": 6,
+  "endpoint": "https://api.anthropic.com/v1/messages",
+  "body": {
+    "model": "claude-opus-5-5",
+    "messages": [
+      {
+        "role": "user",
+        "content": "{\"rule\": \"Return this JSON object with the rule field unchanged and, in the text field, an original fictional passage of about 250 words that comes immediately BEFORE the current text in the same invented story.\", \"text\": \"The orchard had belonged to the Hallorans for four generations, and every autumn of Mara's life had followed the same shape. In September the ladders went up. In October the cider press came out of the barn, groaning on its rusted wheels, and her mother stood over it with her sleeves rolled past the elbow, calling out orders no one needed and everyone obeyed.\\n\\nThat was how Mara remembered her best: flushed and laughing, a smear of pulp on her cheek, tasting the first pressing from a chipped enamel cup and declaring it either the finest in years or fit only for vinegar. There was never anything in between with her. She had loved things fiercely or not at all.\\n\\nShe had died in April, in the hospital in town, on a morning when the trees were just coming into blossom. Mara was eleven. She remembered the drive home more clearly than anything the doctors said: the white petals blowing across the road, her grandfather's hands tight on the wheel, the way he kept switching the wipers on and off though it was not raining.\\n\\nAfterward, people came with casseroles and stayed too long, and then they stopped coming at all. The summer passed in a kind of haze. Mara went to the creek alone. Her grandfather mended fences that did not need mending.\\n\\nAnd then it was September again, and the ladders went up as they always had, because apples do not wait for grief. The two of them worked the rows in silence, filling crate after crate, until the weather turned.\"}"
+      }
+    ],
+    "max_tokens": 4096,
+    "output_config": {
+      "effort": "low"
+    }
+  },
+  "state_sha256": "fd39740fda9dfb2e270f510ecd50acc562f7921566c2715eb274e77fc710c329",
+  "reserved_cost_usd": 0.090748
+}

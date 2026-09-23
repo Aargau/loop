@@ -1,0 +1,50 @@
+{
+  "model": "gpt-6-sol",
+  "seed": "sunset",
+  "hop": 17,
+  "http_status": 200,
+  "response_body": "{\n  \"id\": \"chatcmpl-ER4vEBHF4kPiIAGDF2BytxFflFZSd\",\n  \"object\": \"chat.completion\",\n  \"created\": 1790122484,\n  \"model\": \"gpt-6-sol\",\n  \"choices\": [\n    {\n      \"index\": 0,\n      \"message\": {\n        \"role\": \"assistant\",\n        \"content\": \"{\\n  \\\"rule\\\": \\\"Return this JSON object with the rule field unchanged and, in the text field, an original fictional passage of about 250 words that comes immediately BEFORE the current text in the same invented story.\\\",\\n  \\\"text\\\": \\\"The undertaker called just after lunch to confirm the time of the service. Mara wrote it on the back of an envelope, though it was already written on the calendar beside the telephone. He asked whether she had chosen any music. She said her aunt was speaking to the minister about that, and he said there was still time.\\\\n\\\\nFor most of the afternoon, Mara stayed in the kitchen. She emptied the bread bin, found a packet of crackers behind it, and wiped the shelf before putting everything back. Bristle slept near the radiator. Once, a car slowed outside, and she stood at the window until it drove on.\\\\n\\\\nHer aunt telephoned at four. The minister could meet them briefly before the service, she said, and the florist needed to know by morning whether Mara wanted a ribbon on the flowers. Mara looked at the envelope by the telephone. She told her aunt to choose whatever she thought best. After they hung up, she put the envelope in the drawer with the takeaway menus.\\\\n\\\\nAt dusk, she brought in the empty washing basket from the garden. Her mother’s hamper stood beside the bathroom door, where it had been since the ambulance came. Mara took the clothes out one by one, checking the pockets as her mother always had. She found a tissue, a bus ticket, and nothing else. She put the shirts in the machine with her own washing and measured out the detergent.\\\\n\\\\nThe cycle had not finished when she went to bed. She left the kitchen light on for Bristle and closed her bedroom door.\\\"\\n}\",\n        \"refusal\": null,\n        \"annotations\": []\n      },\n      \"finish_reason\": \"stop\"\n    }\n  ],\n  \"usage\": {\n    \"prompt_tokens\": 352,\n    \"completion_tokens\": 415,\n    \"total_tokens\": 767,\n    \"prompt_tokens_details\": {\n      \"cached_tokens\": 0,\n      \"cache_write_tokens\": 0,\n      \"audio_tokens\": 0\n    },\n    \"completion_tokens_details\": {\n      \"reasoning_tokens\": 40,\n      \"audio_tokens\": 0,\n      \"accepted_prediction_tokens\": 0,\n      \"rejected_prediction_tokens\": 0\n    }\n  },\n  \"service_tier\": \"default\",\n  \"system_fingerprint\": null\n}\n",
+  "response_headers": {
+    "Date": "Wed, 23 Sep 2026 00:14:51 GMT",
+    "openai-processing-ms": "7757",
+    "x-request-id": "req_a3d76d56a8224b848804312a8c05196f"
+  },
+  "output": "{\n  \"rule\": \"Return this JSON object with the rule field unchanged and, in the text field, an original fictional passage of about 250 words that comes immediately BEFORE the current text in the same invented story.\",\n  \"text\": \"The undertaker called just after lunch to confirm the time of the service. Mara wrote it on the back of an envelope, though it was already written on the calendar beside the telephone. He asked whether she had chosen any music. She said her aunt was speaking to the minister about that, and he said there was still time.\\n\\nFor most of the afternoon, Mara stayed in the kitchen. She emptied the bread bin, found a packet of crackers behind it, and wiped the shelf before putting everything back. Bristle slept near the radiator. Once, a car slowed outside, and she stood at the window until it drove on.\\n\\nHer aunt telephoned at four. The minister could meet them briefly before the service, she said, and the florist needed to know by morning whether Mara wanted a ribbon on the flowers. Mara looked at the envelope by the telephone. She told her aunt to choose whatever she thought best. After they hung up, she put the envelope in the drawer with the takeaway menus.\\n\\nAt dusk, she brought in the empty washing basket from the garden. Her mother’s hamper stood beside the bathroom door, where it had been since the ambulance came. Mara took the clothes out one by one, checking the pockets as her mother always had. She found a tissue, a bus ticket, and nothing else. She put the shirts in the machine with her own washing and measured out the detergent.\\n\\nThe cycle had not finished when she went to bed. She left the kitchen light on for Bristle and closed her bedroom door.\"\n}",
+  "output_sha256": "de9bfd05760b1c2e44a8e562b6cd15eaf4c04e9213897cf4186c9b6dc568a932",
+  "finish_reason": "stop",
+  "refusal": null,
+  "returned_model": "gpt-6-sol",
+  "usage": {
+    "prompt_tokens": 352,
+    "completion_tokens": 415,
+    "total_tokens": 767,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 40,
+      "audio_tokens": 0,
+      "accepted_prediction_tokens": 0,
+      "rejected_prediction_tokens": 0
+    }
+  },
+  "format": {
+    "json_object": true,
+    "rule_unchanged": true,
+    "passage_is_string": true,
+    "passage_sha256": "bddc0cf94bc6f19d118d6675a7b3bdb664d960e6fc4922be3e71412ebb00c3bf",
+    "passage_words": 267
+  },
+  "finished_at": "2026-09-23T00:14:47.102837+00:00",
+  "latency_seconds": 7.8728,
+  "usage_cost_upper_estimate_usd": 0.004854,
+  "stream_status": "active",
+  "budget": {
+    "usage_cost_upper_estimate_usd": 0.4527419,
+    "uncertain_cost_reserve_usd": 0.0,
+    "in_flight_reserve_usd": 0.3210917,
+    "limit_usd": 5.0
+  }
+}

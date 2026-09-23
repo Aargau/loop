@@ -1,0 +1,22 @@
+{
+  "started_at": "2026-09-23T00:14:48.706070+00:00",
+  "model": "claude-opus-5-5",
+  "seed": "sunset",
+  "hop": 14,
+  "endpoint": "https://api.anthropic.com/v1/messages",
+  "body": {
+    "model": "claude-opus-5-5",
+    "messages": [
+      {
+        "role": "user",
+        "content": "```json\n{\"rule\": \"Return this JSON object with the rule field unchanged and, in the text field, an original fictional passage of about 250 words that comes immediately BEFORE the current text in the same invented story.\", \"text\": \"Mara drove up from Albany the last weekend in August, the first time since the funeral. She brought a rhubarb pie from a bakery and set it on the counter still in its white box, and Walter understood that she had not baked it herself, and that this was meant to tell him something.\\n\\nThey walked the rows together on Sunday morning. The Macs were coloring early, and the Baldwins hung heavy and green on branches that had not been properly pruned in two winters. Mara touched a limb where the bark had split and said nothing for a long time. Then she said the man from the development company had called her again. He was offering a fair price, she said. More than fair. Walter kept walking. He told her about the frost in May, how he and her mother had once stayed up all night burning smudge pots between the trees, the whole hillside glowing orange in the dark.\\n\\n\\\"Dad,\\\" she said. \\\"You can't do this alone.\\\"\\n\\n\\\"I'm not alone. I've got pickers coming.\\\"\\n\\n\\\"How many?\\\"\\n\\nHe didn't answer, and she didn't ask again. She left that afternoon with the pie still half-eaten in the refrigerator, and she hugged him at the car longer than she needed to, which was worse than if she hadn't hugged him at all.\\n\\nThe pickers arrived after Labor Day. Walter put them up in the bunkhouse, patched the screens, and fed them breakfast every morning at five. They worked hard and fast and still could not keep up with the falling fruit.\"}\n```"
+      }
+    ],
+    "max_tokens": 4096,
+    "output_config": {
+      "effort": "low"
+    }
+  },
+  "state_sha256": "fd572d953f23f89615d961e688108cac0028b594615c2aebc1afc6e32f1940c1",
+  "reserved_cost_usd": 0.090656
+}

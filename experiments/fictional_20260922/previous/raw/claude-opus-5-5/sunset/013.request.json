@@ -1,0 +1,22 @@
+{
+  "started_at": "2026-09-23T00:14:38.836103+00:00",
+  "model": "claude-opus-5-5",
+  "seed": "sunset",
+  "hop": 13,
+  "endpoint": "https://api.anthropic.com/v1/messages",
+  "body": {
+    "model": "claude-opus-5-5",
+    "messages": [
+      {
+        "role": "user",
+        "content": "```json\n{\"rule\": \"Return this JSON object with the rule field unchanged and, in the text field, an original fictional passage of about 250 words that comes immediately BEFORE the current text in the same invented story.\", \"text\": \"The last of the pickers left in the second week of October, their old sedan rattling down the gravel drive with bushel crates still strapped to the roof. Walter stood on the porch and raised a hand until the dust settled. There had been only four of them this year, where once there had been twenty, and half the Baldwins had dropped and rotted in the grass before anyone could reach them.\\n\\nHe spent the rest of the month sorting what they had picked, culling the bruised fruit for the cider press, stacking the good crates in the cold storage where the compressor groaned and shuddered like an old dog. The Hollister boys came by one Saturday to help him load the truck for market. It was the older one, Danny, who told him they were leaving after the new year. There was work at a warehouse in Buffalo, steady and indoors. Walter said that sounded fine. He meant it, mostly.\\n\\nChristmas came and went without a card from Mara. He had not expected one, not really, but he found himself walking out to the mailbox twice a day that week anyway, his boots squeaking on the packed snow. On Christmas Eve he set out one plate, then stood a moment in the kitchen and set out a second, the blue one with the chipped rim that had been Ellen's favorite. He did not know why he did it. He ate his supper with the radio on and left the second plate clean on the table until morning.\\n\\nIn January the cold came down hard and stayed.\"}\n```"
+      }
+    ],
+    "max_tokens": 4096,
+    "output_config": {
+      "effort": "low"
+    }
+  },
+  "state_sha256": "ab2fc138f62d69f9ccef7a5ad60e12ff888a1adf4cf67a4485663dd76afe869d",
+  "reserved_cost_usd": 0.090616
+}

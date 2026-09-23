@@ -1,0 +1,50 @@
+{
+  "model": "gpt-6-sol",
+  "seed": "sunset",
+  "hop": 8,
+  "http_status": 200,
+  "response_body": "{\n  \"id\": \"chatcmpl-ER4uCAUjPluI5p6DalMiFoTECTn69\",\n  \"object\": \"chat.completion\",\n  \"created\": 1790122420,\n  \"model\": \"gpt-6-sol\",\n  \"choices\": [\n    {\n      \"index\": 0,\n      \"message\": {\n        \"role\": \"assistant\",\n        \"content\": \"{\\n  \\\"rule\\\": \\\"Return this JSON object with the rule field unchanged and, in the text field, an original fictional passage of about 250 words that comes immediately BEFORE the current text in the same invented story.\\\",\\n  \\\"text\\\": \\\"On Friday morning Mara found a note from the electricity company pushed beneath the front door. It was addressed to her mother. She put it on the mantel with the other letters she had not yet sorted, then took Bristle outside before he could paw at the envelope.\\\\n\\\\nThe garden gate dragged across the gravel. Mara lifted it by the latch, as her mother had always done, and watched Bristle squeeze through ahead of her. Beyond the shed, nettles leaned into the narrow path. She had cleared half of it the day before, stopping when she came upon the flat stone where she used to leave cups of water for beetles. The stone was still there, though she could no longer tell which side had been the top.\\\\n\\\\nShe worked until the sun reached the shed roof. Then she went indoors to telephone the letting agent. The last box from the flat was ready to collect, she said; she would bring it herself on Saturday. Afterward she stood by the hall table, looking at the keys laid out beside the telephone. One belonged to the flat. Another, smaller one opened the old house at the far end of the lane. She had carried it in her coat pocket since arriving, but had taken it out when she washed the coat.\\\\n\\\\nAt dusk, Bristle came in with seeds caught in his fur. Mara combed them free over a sheet of newspaper. She folded the paper carefully and left it beside the back door, ready to be thrown away in the morning.\\\"\\n}\",\n        \"refusal\": null,\n        \"annotations\": []\n      },\n      \"finish_reason\": \"stop\"\n    }\n  ],\n  \"usage\": {\n    \"prompt_tokens\": 354,\n    \"completion_tokens\": 388,\n    \"total_tokens\": 742,\n    \"prompt_tokens_details\": {\n      \"cached_tokens\": 0,\n      \"cache_write_tokens\": 0,\n      \"audio_tokens\": 0\n    },\n    \"completion_tokens_details\": {\n      \"reasoning_tokens\": 25,\n      \"audio_tokens\": 0,\n      \"accepted_prediction_tokens\": 0,\n      \"rejected_prediction_tokens\": 0\n    }\n  },\n  \"service_tier\": \"default\",\n  \"system_fingerprint\": null\n}\n",
+  "response_headers": {
+    "Date": "Wed, 23 Sep 2026 00:13:46 GMT",
+    "openai-processing-ms": "6605",
+    "x-request-id": "req_fd47ee238e604794a240649ecd8da143"
+  },
+  "output": "{\n  \"rule\": \"Return this JSON object with the rule field unchanged and, in the text field, an original fictional passage of about 250 words that comes immediately BEFORE the current text in the same invented story.\",\n  \"text\": \"On Friday morning Mara found a note from the electricity company pushed beneath the front door. It was addressed to her mother. She put it on the mantel with the other letters she had not yet sorted, then took Bristle outside before he could paw at the envelope.\\n\\nThe garden gate dragged across the gravel. Mara lifted it by the latch, as her mother had always done, and watched Bristle squeeze through ahead of her. Beyond the shed, nettles leaned into the narrow path. She had cleared half of it the day before, stopping when she came upon the flat stone where she used to leave cups of water for beetles. The stone was still there, though she could no longer tell which side had been the top.\\n\\nShe worked until the sun reached the shed roof. Then she went indoors to telephone the letting agent. The last box from the flat was ready to collect, she said; she would bring it herself on Saturday. Afterward she stood by the hall table, looking at the keys laid out beside the telephone. One belonged to the flat. Another, smaller one opened the old house at the far end of the lane. She had carried it in her coat pocket since arriving, but had taken it out when she washed the coat.\\n\\nAt dusk, Bristle came in with seeds caught in his fur. Mara combed them free over a sheet of newspaper. She folded the paper carefully and left it beside the back door, ready to be thrown away in the morning.\"\n}",
+  "output_sha256": "9355f38fd5d200230868067a7e4eb3499c7b6682a4f183a9db315af7ca01e88f",
+  "finish_reason": "stop",
+  "refusal": null,
+  "returned_model": "gpt-6-sol",
+  "usage": {
+    "prompt_tokens": 354,
+    "completion_tokens": 388,
+    "total_tokens": 742,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 25,
+      "audio_tokens": 0,
+      "accepted_prediction_tokens": 0,
+      "rejected_prediction_tokens": 0
+    }
+  },
+  "format": {
+    "json_object": true,
+    "rule_unchanged": true,
+    "passage_is_string": true,
+    "passage_sha256": "fc775dab154257458219844a8b1d41a819c237e4013ae9a6ff6cfde0230f1889",
+    "passage_words": 260
+  },
+  "finished_at": "2026-09-23T00:13:41.968577+00:00",
+  "latency_seconds": 6.7143,
+  "usage_cost_upper_estimate_usd": 0.004588,
+  "stream_status": "active",
+  "budget": {
+    "usage_cost_upper_estimate_usd": 0.1957841,
+    "uncertain_cost_reserve_usd": 0.0,
+    "in_flight_reserve_usd": 0.3206284,
+    "limit_usd": 5.0
+  }
+}

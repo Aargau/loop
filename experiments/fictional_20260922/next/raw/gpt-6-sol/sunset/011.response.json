@@ -1,0 +1,50 @@
+{
+  "model": "gpt-6-sol",
+  "seed": "sunset",
+  "hop": 11,
+  "http_status": 200,
+  "response_body": "{\n  \"id\": \"chatcmpl-ER4uj36KW8gt6pKgqwp7cHzzewTra\",\n  \"object\": \"chat.completion\",\n  \"created\": 1790122453,\n  \"model\": \"gpt-6-sol\",\n  \"choices\": [\n    {\n      \"index\": 0,\n      \"message\": {\n        \"role\": \"assistant\",\n        \"content\": \"{\\\"rule\\\":\\\"Return this JSON object with the rule field unchanged and, in the text field, an original fictional passage of about 250 words that comes immediately AFTER the current text in the same invented story.\\\",\\\"text\\\":\\\"The footprints crossed the kitchen, where a chipped green cup stood beside the sink. Mara stopped. Its handle had been mended with white thread, wound so tightly around the break that no green showed through.\\\\n\\\\n“I did that,” she said.\\\\n\\\\nThe woman in the blue coat looked at her. “Yes.”\\\\n\\\\nOutside, the yard was bright and empty. The well stood beyond the washing line, its stone rim black with rain. One small footprint marked the path to it. There were none on the other side.\\\\n\\\\nThe boy ran ahead, but the woman called him back. “Stay where we can see you.”\\\\n\\\\nMara heard water moving inside the well. She lifted the lantern over its mouth. Far below, a child in a yellow dress stood on a narrow ledge, looking up. Though the distance was too great, Mara could see that her feet were dry.\\\\n\\\\n“Throw me the key,” the child said.\\\\n\\\\nMara put her free hand in her pocket. A little iron key lay there, warm from her body. She had no memory of taking it.\\\\n\\\\nThe woman saw it and drew a sharp breath. “That locks the door beneath the water.”\\\\n\\\\n“It’s already open,” the child said.\\\\n\\\\nFrom the well came a sound like a chair scraping across a kitchen floor. Mara looked at the woman, and this time the memory held: the two of them at the table, making a promise while the boy slept upstairs.\\\\n\\\\nMara closed her fingers around the key. “Then tell me how we reach the door.”\\\"}\",\n        \"refusal\": null,\n        \"annotations\": []\n      },\n      \"finish_reason\": \"stop\"\n    }\n  ],\n  \"usage\": {\n    \"prompt_tokens\": 381,\n    \"completion_tokens\": 400,\n    \"total_tokens\": 781,\n    \"prompt_tokens_details\": {\n      \"cached_tokens\": 0,\n      \"cache_write_tokens\": 0,\n      \"audio_tokens\": 0\n    },\n    \"completion_tokens_details\": {\n      \"reasoning_tokens\": 16,\n      \"audio_tokens\": 0,\n      \"accepted_prediction_tokens\": 0,\n      \"rejected_prediction_tokens\": 0\n    }\n  },\n  \"service_tier\": \"default\",\n  \"system_fingerprint\": null\n}\n",
+  "response_headers": {
+    "Date": "Wed, 23 Sep 2026 00:14:19 GMT",
+    "openai-processing-ms": "5580",
+    "x-request-id": "req_f28857a009f2479d98754fb9e37275e2"
+  },
+  "output": "{\"rule\":\"Return this JSON object with the rule field unchanged and, in the text field, an original fictional passage of about 250 words that comes immediately AFTER the current text in the same invented story.\",\"text\":\"The footprints crossed the kitchen, where a chipped green cup stood beside the sink. Mara stopped. Its handle had been mended with white thread, wound so tightly around the break that no green showed through.\\n\\n“I did that,” she said.\\n\\nThe woman in the blue coat looked at her. “Yes.”\\n\\nOutside, the yard was bright and empty. The well stood beyond the washing line, its stone rim black with rain. One small footprint marked the path to it. There were none on the other side.\\n\\nThe boy ran ahead, but the woman called him back. “Stay where we can see you.”\\n\\nMara heard water moving inside the well. She lifted the lantern over its mouth. Far below, a child in a yellow dress stood on a narrow ledge, looking up. Though the distance was too great, Mara could see that her feet were dry.\\n\\n“Throw me the key,” the child said.\\n\\nMara put her free hand in her pocket. A little iron key lay there, warm from her body. She had no memory of taking it.\\n\\nThe woman saw it and drew a sharp breath. “That locks the door beneath the water.”\\n\\n“It’s already open,” the child said.\\n\\nFrom the well came a sound like a chair scraping across a kitchen floor. Mara looked at the woman, and this time the memory held: the two of them at the table, making a promise while the boy slept upstairs.\\n\\nMara closed her fingers around the key. “Then tell me how we reach the door.”\"}",
+  "output_sha256": "c85b92edf00a39d1a707b880000e5cb1a3b25b031ba6ff6be465879d297746bf",
+  "finish_reason": "stop",
+  "refusal": null,
+  "returned_model": "gpt-6-sol",
+  "usage": {
+    "prompt_tokens": 381,
+    "completion_tokens": 400,
+    "total_tokens": 781,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 16,
+      "audio_tokens": 0,
+      "accepted_prediction_tokens": 0,
+      "rejected_prediction_tokens": 0
+    }
+  },
+  "format": {
+    "json_object": true,
+    "rule_unchanged": true,
+    "passage_is_string": true,
+    "passage_sha256": "16f8265108bf37b3ff9833b39df3d614935823ec335bcbac9768a4dda3c91fe7",
+    "passage_words": 253
+  },
+  "finished_at": "2026-09-23T00:14:14.167675+00:00",
+  "latency_seconds": 5.704,
+  "usage_cost_upper_estimate_usd": 0.004762,
+  "stream_status": "active",
+  "budget": {
+    "usage_cost_upper_estimate_usd": 0.2976937,
+    "uncertain_cost_reserve_usd": 0.0,
+    "in_flight_reserve_usd": 0.3208387,
+    "limit_usd": 5.0
+  }
+}

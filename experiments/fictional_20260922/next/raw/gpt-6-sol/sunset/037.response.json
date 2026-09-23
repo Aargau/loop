@@ -1,0 +1,50 @@
+{
+  "model": "gpt-6-sol",
+  "seed": "sunset",
+  "hop": 37,
+  "http_status": 200,
+  "response_body": "{\n  \"id\": \"chatcmpl-ER4xdk6yZgkaxgyxmvflr4iIKXare\",\n  \"object\": \"chat.completion\",\n  \"created\": 1790122633,\n  \"model\": \"gpt-6-sol\",\n  \"choices\": [\n    {\n      \"index\": 0,\n      \"message\": {\n        \"role\": \"assistant\",\n        \"content\": \"{\\\"rule\\\":\\\"Return this JSON object with the rule field unchanged and, in the text field, an original fictional passage of about 250 words that comes immediately AFTER the current text in the same invented story.\\\",\\\"text\\\":\\\"Lina looked at the wall. The bell rang again, closer this time. A thin line of rain appeared beneath the cupboard door.\\\\n\\\\n“There are four of us,” she said. “How do we all get on?”\\\\n\\\\nBen shook his head. “Gran didn’t say.”\\\\n\\\\nMara picked up the key by its red string. The rain stopped advancing. On the map, a small square appeared beside LAST STOP, no bigger than the cupboard door. She fitted the key into its printed outline. It sank through the paper with a soft click.\\\\n\\\\nThe cupboard swung open.\\\\n\\\\nBeyond the shelves stood the bus, its doors folded wide. Water lapped at the bottom step. Gran was still in the aisle, three fingers raised, but now Mara could hear her.\\\\n\\\\n“Bring the cup!”\\\\n\\\\nKit snatched it from the table. As he stepped aboard, the water inside tipped toward the rim. He held it steady while Lina helped Ben up after him. Mara followed last, pulling the cupboard door shut behind her.\\\\n\\\\nThe kitchen vanished. Rain struck the bus roof. Gran came down the aisle and took the key from Mara, then pressed it into Ben’s hand.\\\\n\\\\n“You kept it safe,” she told him.\\\\n\\\\n“I nearly didn’t.”\\\\n\\\\n“Nearly is all right.” Gran glanced at the dark water outside. “Driver, home, please.”\\\\n\\\\nThe bus did not move. Kit looked down at the cup. Across its still green surface, a tiny blue road ran to the far shore. He held it out to the driver, who leaned over and touched the water with one finger.\\\\n\\\\nAt last, the engine turned over.\\\"}\",\n        \"refusal\": null,\n        \"annotations\": []\n      },\n      \"finish_reason\": \"stop\"\n    }\n  ],\n  \"usage\": {\n    \"prompt_tokens\": 402,\n    \"completion_tokens\": 423,\n    \"total_tokens\": 825,\n    \"prompt_tokens_details\": {\n      \"cached_tokens\": 0,\n      \"cache_write_tokens\": 0,\n      \"audio_tokens\": 0\n    },\n    \"completion_tokens_details\": {\n      \"reasoning_tokens\": 16,\n      \"audio_tokens\": 0,\n      \"accepted_prediction_tokens\": 0,\n      \"rejected_prediction_tokens\": 0\n    }\n  },\n  \"service_tier\": \"default\",\n  \"system_fingerprint\": null\n}\n",
+  "response_headers": {
+    "Date": "Wed, 23 Sep 2026 00:17:20 GMT",
+    "openai-processing-ms": "6403",
+    "x-request-id": "req_05cf05c5c72743659558194d27cae5a8"
+  },
+  "output": "{\"rule\":\"Return this JSON object with the rule field unchanged and, in the text field, an original fictional passage of about 250 words that comes immediately AFTER the current text in the same invented story.\",\"text\":\"Lina looked at the wall. The bell rang again, closer this time. A thin line of rain appeared beneath the cupboard door.\\n\\n“There are four of us,” she said. “How do we all get on?”\\n\\nBen shook his head. “Gran didn’t say.”\\n\\nMara picked up the key by its red string. The rain stopped advancing. On the map, a small square appeared beside LAST STOP, no bigger than the cupboard door. She fitted the key into its printed outline. It sank through the paper with a soft click.\\n\\nThe cupboard swung open.\\n\\nBeyond the shelves stood the bus, its doors folded wide. Water lapped at the bottom step. Gran was still in the aisle, three fingers raised, but now Mara could hear her.\\n\\n“Bring the cup!”\\n\\nKit snatched it from the table. As he stepped aboard, the water inside tipped toward the rim. He held it steady while Lina helped Ben up after him. Mara followed last, pulling the cupboard door shut behind her.\\n\\nThe kitchen vanished. Rain struck the bus roof. Gran came down the aisle and took the key from Mara, then pressed it into Ben’s hand.\\n\\n“You kept it safe,” she told him.\\n\\n“I nearly didn’t.”\\n\\n“Nearly is all right.” Gran glanced at the dark water outside. “Driver, home, please.”\\n\\nThe bus did not move. Kit looked down at the cup. Across its still green surface, a tiny blue road ran to the far shore. He held it out to the driver, who leaned over and touched the water with one finger.\\n\\nAt last, the engine turned over.\"}",
+  "output_sha256": "dc203ff2fa2d4596da977c95dcf8c34965ccf9c6948274d08c444a761ad056fa",
+  "finish_reason": "stop",
+  "refusal": null,
+  "returned_model": "gpt-6-sol",
+  "usage": {
+    "prompt_tokens": 402,
+    "completion_tokens": 423,
+    "total_tokens": 825,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 16,
+      "audio_tokens": 0,
+      "accepted_prediction_tokens": 0,
+      "rejected_prediction_tokens": 0
+    }
+  },
+  "format": {
+    "json_object": true,
+    "rule_unchanged": true,
+    "passage_is_string": true,
+    "passage_sha256": "82e5f3f7e149126cb0b7f14fcf0f73d86935dcdf19d1e8f1ccd27d7ba122def5",
+    "passage_words": 261
+  },
+  "finished_at": "2026-09-23T00:17:15.244353+00:00",
+  "latency_seconds": 6.5174,
+  "usage_cost_upper_estimate_usd": 0.005034,
+  "stream_status": "active",
+  "budget": {
+    "usage_cost_upper_estimate_usd": 1.0374711,
+    "uncertain_cost_reserve_usd": 0.0,
+    "in_flight_reserve_usd": 0.22729,
+    "limit_usd": 5.0
+  }
+}

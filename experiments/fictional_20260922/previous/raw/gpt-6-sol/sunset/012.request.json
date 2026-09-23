@@ -1,0 +1,20 @@
+{
+  "started_at": "2026-09-23T00:14:03.235815+00:00",
+  "model": "gpt-6-sol",
+  "seed": "sunset",
+  "hop": 12,
+  "endpoint": "https://api.openai.com/v1/chat/completions",
+  "body": {
+    "model": "gpt-6-sol",
+    "messages": [
+      {
+        "role": "user",
+        "content": "{\n  \"rule\": \"Return this JSON object with the rule field unchanged and, in the text field, an original fictional passage of about 250 words that comes immediately BEFORE the current text in the same invented story.\",\n  \"text\": \"On the Friday after the funeral, Mara stayed until the last of the cups had been washed. Her aunt took the flowers that would not fit in the car, and a neighbour promised to feed Bristle over the weekend. Before leaving, Mara stood in the kitchen with her coat on, trying to remember what she had come in for. It was the house keys. They were hanging beside the calendar, on the hook her mother had labelled SPARES.\\n\\nBack at her flat, she put them in a bowl by the door. All weekend she found small jobs to do: cleaning the fridge, changing a light bulb, sorting the post she had let pile up. Each time she passed the bowl, she saw the two keys lying there, one longer than the other.\\n\\nOn Sunday morning the letting agent called. He had found someone who could move in sooner than expected, if Mara still wanted to end the tenancy. She said she did. After the call, she opened a suitcase and packed enough clothes for a week. Then she took most of them out and started again.\\n\\nThe neighbour sent a photograph of Bristle asleep beneath the kitchen table. Mara replied with a thank-you and asked whether there was bread in the house. There was half a loaf, the neighbour said, and plenty in the freezer. Mara bought rolls at the station anyway. She ate one while waiting for the train and put the rest in her bag. Before boarding, she checked the keys were in her coat pocket.\"\n}"
+      }
+    ],
+    "max_completion_tokens": 4096,
+    "reasoning_effort": "low"
+  },
+  "state_sha256": "fa72b8028a95fe15cf97eab55c6f47bf5100c9298e5294ed8d2bd7e811c595d4",
+  "reserved_cost_usd": 0.045206
+}

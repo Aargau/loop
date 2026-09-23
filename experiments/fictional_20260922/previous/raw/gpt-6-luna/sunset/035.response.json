@@ -1,0 +1,47 @@
+{
+  "model": "gpt-6-luna",
+  "seed": "sunset",
+  "hop": 35,
+  "http_status": 200,
+  "response_body": "{\n  \"id\": \"chatcmpl-ER4w9IWSVgGr7i7U82NesnDR6CK6u\",\n  \"object\": \"chat.completion\",\n  \"created\": 1790122541,\n  \"model\": \"gpt-6-luna\",\n  \"choices\": [\n    {\n      \"index\": 0,\n      \"message\": {\n        \"role\": \"assistant\",\n        \"content\": \"{\\\"rule\\\":\\\"Return this JSON object with the rule field unchanged and, in the text field, an original fictional passage of about 250 words that comes immediately BEFORE the current text in the same invented story.\\\",\\\"text\\\":\\\"At lunch, Mara found a folded note tucked inside her library book. The paper was soft at the creases, and the handwriting—small, slanted, and careful—belonged to her grandmother.\\n\\nIf the clouds turn green, bring the tin box from the hall closet. Don’t open it until we’re together.\\n\\nMara read it twice. Grandma had given her the box years ago, saying it held old buttons, though Mara had never been allowed to look inside. She glanced out the classroom window. The sky was gray, not green, and the last bell was still hours away.\\n\\nAfter school, she called Grandma from the office phone. The line crackled, but Grandma sounded cheerful.\\n\\n“It’s nothing urgent,” she said. “I just found the note in my recipe book and thought I’d better send it along.”\\n\\n“Why does the sky have to turn green?”\\n\\n“Because that’s what your grandfather always said before a summer storm. He was usually right about the weather.”\\n\\nMara looked again at the clouds. A pale greenish smear hovered over the rooftops, so faint she wasn’t sure it was real.\\n\\nHer mother was working late, and Grandma lived only a few stops away. Mara promised to come by. She packed her notebook, zipped her jacket, and hurried to catch the bus before the rain began.\\n\\nAt the stop, she pulled the note from her pocket. The ink had blurred where a raindrop touched it. Across the street, a shopkeeper dragged a wooden sign indoors. The wind lifted grit from the pavement and sent it swirling around Mara’s shoes.\\n\\nThe bus groaned up to the curb. She climbed aboard, chose a seat by the window, and watched the first drops tap against the glass.\\\"}\",\n        \"refusal\": null,\n        \"annotations\": []\n      },\n      \"finish_reason\": \"stop\"\n    }\n  ],\n  \"usage\": {\n    \"prompt_tokens\": 397,\n    \"completion_tokens\": 469,\n    \"total_tokens\": 866,\n    \"prompt_tokens_details\": {\n      \"cached_tokens\": 0,\n      \"cache_write_tokens\": 0,\n      \"audio_tokens\": 0\n    },\n    \"completion_tokens_details\": {\n      \"reasoning_tokens\": 63,\n      \"audio_tokens\": 0,\n      \"accepted_prediction_tokens\": 0,\n      \"rejected_prediction_tokens\": 0\n    }\n  },\n  \"service_tier\": \"default\",\n  \"system_fingerprint\": null\n}\n",
+  "response_headers": {
+    "Date": "Wed, 23 Sep 2026 00:15:46 GMT",
+    "openai-processing-ms": "4858",
+    "x-request-id": "req_6ca06a9f760f43eb888c8c0e6436a4a5"
+  },
+  "output": "{\"rule\":\"Return this JSON object with the rule field unchanged and, in the text field, an original fictional passage of about 250 words that comes immediately BEFORE the current text in the same invented story.\",\"text\":\"At lunch, Mara found a folded note tucked inside her library book. The paper was soft at the creases, and the handwriting—small, slanted, and careful—belonged to her grandmother.\n\nIf the clouds turn green, bring the tin box from the hall closet. Don’t open it until we’re together.\n\nMara read it twice. Grandma had given her the box years ago, saying it held old buttons, though Mara had never been allowed to look inside. She glanced out the classroom window. The sky was gray, not green, and the last bell was still hours away.\n\nAfter school, she called Grandma from the office phone. The line crackled, but Grandma sounded cheerful.\n\n“It’s nothing urgent,” she said. “I just found the note in my recipe book and thought I’d better send it along.”\n\n“Why does the sky have to turn green?”\n\n“Because that’s what your grandfather always said before a summer storm. He was usually right about the weather.”\n\nMara looked again at the clouds. A pale greenish smear hovered over the rooftops, so faint she wasn’t sure it was real.\n\nHer mother was working late, and Grandma lived only a few stops away. Mara promised to come by. She packed her notebook, zipped her jacket, and hurried to catch the bus before the rain began.\n\nAt the stop, she pulled the note from her pocket. The ink had blurred where a raindrop touched it. Across the street, a shopkeeper dragged a wooden sign indoors. The wind lifted grit from the pavement and sent it swirling around Mara’s shoes.\n\nThe bus groaned up to the curb. She climbed aboard, chose a seat by the window, and watched the first drops tap against the glass.\"}",
+  "output_sha256": "1d364a0d688f32d8aceb0b194cfbf01ad38052dfec059d80f214455b1ea145dd",
+  "finish_reason": "stop",
+  "refusal": null,
+  "returned_model": "gpt-6-luna",
+  "usage": {
+    "prompt_tokens": 397,
+    "completion_tokens": 469,
+    "total_tokens": 866,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 63,
+      "audio_tokens": 0,
+      "accepted_prediction_tokens": 0,
+      "rejected_prediction_tokens": 0
+    }
+  },
+  "format": {
+    "json_object": false,
+    "rule_unchanged": false
+  },
+  "finished_at": "2026-09-23T00:15:41.284812+00:00",
+  "latency_seconds": 5.0034,
+  "usage_cost_upper_estimate_usd": 0.0002742,
+  "stream_status": "active",
+  "budget": {
+    "usage_cost_upper_estimate_usd": 0.6779954,
+    "uncertain_cost_reserve_usd": 0.0,
+    "in_flight_reserve_usd": 0.363702,
+    "limit_usd": 5.0
+  }
+}

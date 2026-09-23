@@ -1,0 +1,22 @@
+{
+  "started_at": "2026-09-23T00:18:44.073046+00:00",
+  "model": "claude-opus-5-5",
+  "seed": "sunset",
+  "hop": 37,
+  "endpoint": "https://api.anthropic.com/v1/messages",
+  "body": {
+    "model": "claude-opus-5-5",
+    "messages": [
+      {
+        "role": "user",
+        "content": "```json\n{\"rule\": \"Return this JSON object with the rule field unchanged and, in the text field, an original fictional passage of about 250 words that comes immediately BEFORE the current text in the same invented story.\", \"text\": \"Years afterward, when people asked Margaret how she had met her husband, she gave them the short version, the one that fit neatly between the soup and the roast. \\\"At a church social,\\\" she would say, \\\"over a cup of lemonade,\\\" and she would smile the way women smile when they have decided a story belongs to them and no one else.\\n\\nThe long version she told only once, to her granddaughter, on a February afternoon when the snow had shut the roads and there was nothing to do but sort through the cedar chest in the spare room. They had found a pressed cornflower between the pages of a hymnal, brown and brittle as tissue, and Margaret had held it in her palm for a long moment without speaking.\\n\\n\\\"You have to understand,\\\" she said at last, \\\"that I was not the sort of girl things happened to. I was the sort of girl who watched things happen and then went home and wrote about them in a diary nobody would ever read. I had a great many opinions and no one to give them to.\\\"\\n\\nHer granddaughter, who was nineteen and certain that nothing interesting had ever happened to anyone over sixty, settled back against the bedframe to listen. Outside, the wind worried at the windowpanes. Margaret turned the flower over once, then set it carefully on the quilt between them, as if it might still wilt.\\n\\n\\\"It begins,\\\" she said, \\\"with the house.\\\"\"}\n```"
+      }
+    ],
+    "max_tokens": 4096,
+    "output_config": {
+      "effort": "low"
+    }
+  },
+  "state_sha256": "1d9e9a3e6b46a7fb908b503b3602e0f37c70bea6de5811db6a7d9bd5d059edf0",
+  "reserved_cost_usd": 0.090332
+}

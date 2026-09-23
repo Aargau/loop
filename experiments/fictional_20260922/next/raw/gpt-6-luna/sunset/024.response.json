@@ -1,0 +1,47 @@
+{
+  "model": "gpt-6-luna",
+  "seed": "sunset",
+  "hop": 24,
+  "http_status": 200,
+  "response_body": "{\n  \"id\": \"chatcmpl-ER4vGH8KrvYYnOrWAl3VZmMpSgNps\",\n  \"object\": \"chat.completion\",\n  \"created\": 1790122486,\n  \"model\": \"gpt-6-luna\",\n  \"choices\": [\n    {\n      \"index\": 0,\n      \"message\": {\n        \"role\": \"assistant\",\n        \"content\": \"{\\\"rule\\\":\\\"Return this JSON object with the rule field unchanged and, in the text field, an original fictional passage of about 250 words that comes immediately AFTER the current text in the same invented story.\\\",\\\"text\\\":\\\"The stairs narrowed as they descended, their edges worn smooth by countless careful feet. Mara could hear her mother behind her, breathing unevenly. The stone in her pocket rang again, a tiny clear note that seemed to travel through the walls.\\n\\nAt the bottom stood a red door. The trembling light came from a lantern hanging beside it. Beneath the lantern, someone had scratched a name into the wood: ELSIE.\\n\\nMara touched the letters. The door shivered.\\n\\n“Don’t open it until you know what you’re asking for,” her mother said.\\n\\nMara turned. “You brought me here.”\\n\\n“I brought you to the choice.”\\n\\n“What choice?”\\n\\nHer mother looked older in the lantern light. “Your sister went through this door once. She asked to be forgotten, because she thought it would make the pain stop.”\\n\\nThe voice came again from the other side. “Mara?”\\n\\nThis time Mara recognized it—not from memory, but from the ache that had followed her all evening. She pressed the stone against the door. Its ringing stopped.\\n\\n“What happens if I open it?”\\n\\n“You may remember everything,” her mother said. “And so may she.”\\n\\nMara stared at the scratched name. “And if I don’t?”\\n\\n“Then the door will close. The stone will be silent. We’ll go home.”\\n\\nBehind the wood, a small hand tapped twice.\\n\\nMara slipped the stone into the keyhole. It fit perfectly.\\n\\nHer mother reached for her shoulder, then let her hand fall.\\n\\nMara turned the stone.\\n\\nThe red door opened inward, and a girl with rain-dark hair stood waiting in a room full of scattered stars.\\\"}\",\n        \"refusal\": null,\n        \"annotations\": []\n      },\n      \"finish_reason\": \"stop\"\n    }\n  ],\n  \"usage\": {\n    \"prompt_tokens\": 391,\n    \"completion_tokens\": 456,\n    \"total_tokens\": 847,\n    \"prompt_tokens_details\": {\n      \"cached_tokens\": 0,\n      \"cache_write_tokens\": 0,\n      \"audio_tokens\": 0\n    },\n    \"completion_tokens_details\": {\n      \"reasoning_tokens\": 69,\n      \"audio_tokens\": 0,\n      \"accepted_prediction_tokens\": 0,\n      \"rejected_prediction_tokens\": 0\n    }\n  },\n  \"service_tier\": \"default\",\n  \"system_fingerprint\": null\n}\n",
+  "response_headers": {
+    "Date": "Wed, 23 Sep 2026 00:14:50 GMT",
+    "openai-processing-ms": "4272",
+    "x-request-id": "req_189d5d988d3745ce9f078ee5fac410be"
+  },
+  "output": "{\"rule\":\"Return this JSON object with the rule field unchanged and, in the text field, an original fictional passage of about 250 words that comes immediately AFTER the current text in the same invented story.\",\"text\":\"The stairs narrowed as they descended, their edges worn smooth by countless careful feet. Mara could hear her mother behind her, breathing unevenly. The stone in her pocket rang again, a tiny clear note that seemed to travel through the walls.\n\nAt the bottom stood a red door. The trembling light came from a lantern hanging beside it. Beneath the lantern, someone had scratched a name into the wood: ELSIE.\n\nMara touched the letters. The door shivered.\n\n“Don’t open it until you know what you’re asking for,” her mother said.\n\nMara turned. “You brought me here.”\n\n“I brought you to the choice.”\n\n“What choice?”\n\nHer mother looked older in the lantern light. “Your sister went through this door once. She asked to be forgotten, because she thought it would make the pain stop.”\n\nThe voice came again from the other side. “Mara?”\n\nThis time Mara recognized it—not from memory, but from the ache that had followed her all evening. She pressed the stone against the door. Its ringing stopped.\n\n“What happens if I open it?”\n\n“You may remember everything,” her mother said. “And so may she.”\n\nMara stared at the scratched name. “And if I don’t?”\n\n“Then the door will close. The stone will be silent. We’ll go home.”\n\nBehind the wood, a small hand tapped twice.\n\nMara slipped the stone into the keyhole. It fit perfectly.\n\nHer mother reached for her shoulder, then let her hand fall.\n\nMara turned the stone.\n\nThe red door opened inward, and a girl with rain-dark hair stood waiting in a room full of scattered stars.\"}",
+  "output_sha256": "374f045fe4d25995e9bd1db960337b7d3eee47625c482f9df446a808509daabc",
+  "finish_reason": "stop",
+  "refusal": null,
+  "returned_model": "gpt-6-luna",
+  "usage": {
+    "prompt_tokens": 391,
+    "completion_tokens": 456,
+    "total_tokens": 847,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 69,
+      "audio_tokens": 0,
+      "accepted_prediction_tokens": 0,
+      "rejected_prediction_tokens": 0
+    }
+  },
+  "format": {
+    "json_object": false,
+    "rule_unchanged": false
+  },
+  "finished_at": "2026-09-23T00:14:45.575922+00:00",
+  "latency_seconds": 4.4829,
+  "usage_cost_upper_estimate_usd": 0.00026710000000000004,
+  "stream_status": "active",
+  "budget": {
+    "usage_cost_upper_estimate_usd": 0.4157123,
+    "uncertain_cost_reserve_usd": 0.0,
+    "in_flight_reserve_usd": 0.363656,
+    "limit_usd": 5.0
+  }
+}

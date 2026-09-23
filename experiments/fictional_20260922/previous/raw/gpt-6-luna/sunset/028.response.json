@@ -1,0 +1,47 @@
+{
+  "model": "gpt-6-luna",
+  "seed": "sunset",
+  "hop": 28,
+  "http_status": 200,
+  "response_body": "{\n  \"id\": \"chatcmpl-ER4vZN8m3u9h4DVa1A9qOf9VY0FiL\",\n  \"object\": \"chat.completion\",\n  \"created\": 1790122505,\n  \"model\": \"gpt-6-luna\",\n  \"choices\": [\n    {\n      \"index\": 0,\n      \"message\": {\n        \"role\": \"assistant\",\n        \"content\": \"{\\\"rule\\\":\\\"Return this JSON object with the rule field unchanged and, in the text field, an original fictional passage of about 250 words that comes immediately BEFORE the current text in the same invented story.\\\",\\\"text\\\":\\\"By the time Mara got home on Tuesday, the rain had turned the pavement silver. She left her damp shoes by the door and found her mother in the hallway, still wearing her work coat.\\n\\n“Your school called,” her mother said. “You left your history folder in the classroom.”\\n\\nMara checked her bag anyway, though she knew it was missing. The assignment sheet was tucked into the front pocket, its corner softened from being carried around all day. She had to draw a map of the neighborhood, showing how the streets had changed. Her mother glanced at the sheet, then at the clock.\\n\\n“You can ask Mr. Bell for the folder tomorrow.”\\n\\n“I could go back now.”\\n\\n“In this weather? No. We’ll manage.”\\n\\nHer mother hung up her coat and went to the kitchen. A pale envelope lay on the counter, beside the telephone. Mara could see the clinic’s name printed in the corner. Before she could ask about it, the phone rang.\\n\\nHer mother answered, listened, and said, “Yes, this is she.” Then she turned away from Mara and lowered her voice. The conversation lasted less than a minute. When she hung up, she stood with one hand on the counter.\\n\\n“Was that the clinic?” Mara asked.\\n\\n“They want me to call them back,” her mother said. “Nothing urgent.”\\n\\nShe gathered the envelope and carried it to the table, but didn’t open it. Mara thought about asking again, then remembered the way her mother’s shoulders had tightened at the sound of the phone. So she took the history sheet to her room and began sketching the streets she could remember.\\n\\nBy evening, the rain had stopped. In the kitchen, her mother had set out two bowls and the unopened mail.\\\"}\",\n        \"refusal\": null,\n        \"annotations\": []\n      },\n      \"finish_reason\": \"stop\"\n    }\n  ],\n  \"usage\": {\n    \"prompt_tokens\": 424,\n    \"completion_tokens\": 556,\n    \"total_tokens\": 980,\n    \"prompt_tokens_details\": {\n      \"cached_tokens\": 0,\n      \"cache_write_tokens\": 0,\n      \"audio_tokens\": 0\n    },\n    \"completion_tokens_details\": {\n      \"reasoning_tokens\": 151,\n      \"audio_tokens\": 0,\n      \"accepted_prediction_tokens\": 0,\n      \"rejected_prediction_tokens\": 0\n    }\n  },\n  \"service_tier\": \"default\",\n  \"system_fingerprint\": null\n}\n",
+  "response_headers": {
+    "Date": "Wed, 23 Sep 2026 00:15:10 GMT",
+    "openai-processing-ms": "4428",
+    "x-request-id": "req_9ae3cac3ac6a4ec4b71a4872a0d7e492"
+  },
+  "output": "{\"rule\":\"Return this JSON object with the rule field unchanged and, in the text field, an original fictional passage of about 250 words that comes immediately BEFORE the current text in the same invented story.\",\"text\":\"By the time Mara got home on Tuesday, the rain had turned the pavement silver. She left her damp shoes by the door and found her mother in the hallway, still wearing her work coat.\n\n“Your school called,” her mother said. “You left your history folder in the classroom.”\n\nMara checked her bag anyway, though she knew it was missing. The assignment sheet was tucked into the front pocket, its corner softened from being carried around all day. She had to draw a map of the neighborhood, showing how the streets had changed. Her mother glanced at the sheet, then at the clock.\n\n“You can ask Mr. Bell for the folder tomorrow.”\n\n“I could go back now.”\n\n“In this weather? No. We’ll manage.”\n\nHer mother hung up her coat and went to the kitchen. A pale envelope lay on the counter, beside the telephone. Mara could see the clinic’s name printed in the corner. Before she could ask about it, the phone rang.\n\nHer mother answered, listened, and said, “Yes, this is she.” Then she turned away from Mara and lowered her voice. The conversation lasted less than a minute. When she hung up, she stood with one hand on the counter.\n\n“Was that the clinic?” Mara asked.\n\n“They want me to call them back,” her mother said. “Nothing urgent.”\n\nShe gathered the envelope and carried it to the table, but didn’t open it. Mara thought about asking again, then remembered the way her mother’s shoulders had tightened at the sound of the phone. So she took the history sheet to her room and began sketching the streets she could remember.\n\nBy evening, the rain had stopped. In the kitchen, her mother had set out two bowls and the unopened mail.\"}",
+  "output_sha256": "2b8d9ef7db544344c9ea53e5414b5bbdb543a838cf1fb8deafe9d2998706d999",
+  "finish_reason": "stop",
+  "refusal": null,
+  "returned_model": "gpt-6-luna",
+  "usage": {
+    "prompt_tokens": 424,
+    "completion_tokens": 556,
+    "total_tokens": 980,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 151,
+      "audio_tokens": 0,
+      "accepted_prediction_tokens": 0,
+      "rejected_prediction_tokens": 0
+    }
+  },
+  "format": {
+    "json_object": false,
+    "rule_unchanged": false
+  },
+  "finished_at": "2026-09-23T00:15:05.191491+00:00",
+  "latency_seconds": 4.5289,
+  "usage_cost_upper_estimate_usd": 0.0003204,
+  "stream_status": "active",
+  "budget": {
+    "usage_cost_upper_estimate_usd": 0.51574,
+    "uncertain_cost_reserve_usd": 0.0,
+    "in_flight_reserve_usd": 0.363304,
+    "limit_usd": 5.0
+  }
+}

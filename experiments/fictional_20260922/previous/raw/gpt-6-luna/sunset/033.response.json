@@ -1,0 +1,47 @@
+{
+  "model": "gpt-6-luna",
+  "seed": "sunset",
+  "hop": 33,
+  "http_status": 200,
+  "response_body": "{\n  \"id\": \"chatcmpl-ER4vy2pV3ofRuy4VBybrTnUEsd7Kv\",\n  \"object\": \"chat.completion\",\n  \"created\": 1790122530,\n  \"model\": \"gpt-6-luna\",\n  \"choices\": [\n    {\n      \"index\": 0,\n      \"message\": {\n        \"role\": \"assistant\",\n        \"content\": \"{\\\"rule\\\":\\\"Return this JSON object with the rule field unchanged and, in the text field, an original fictional passage of about 250 words that comes immediately BEFORE the current text in the same invented story.\\\",\\\"text\\\":\\\"The rain had stopped before breakfast, leaving the gutters full and the pavement shiny. Mara’s grandmother stood at the kitchen window, watching a sparrow hop along the fence.\\n\\n“You remember the creek behind the house?” she asked.\\n\\nMara nodded. She remembered the dark opening beneath the road, and the sound of water she’d heard there years ago.\\n\\n“Your grandfather used to cross it on a little bridge,” Grandma said. “Before they put in that culvert.”\\n\\n“What did it look like?”\\n\\nHer grandmother turned from the window, but the kettle began to whistle. By the time she’d poured the tea, they were talking about something else: a loose cupboard hinge and whether Mara had enough clean socks.\\n\\nAt school, the bridge stayed in Mara’s thoughts. She sketched it in the margin of her math notebook, though she couldn’t decide how long it was or which bank it reached. When the teacher called for their books, she shut the notebook quickly.\\n\\nA few minutes later, Mr. Bell came in carrying a stack of papers and a box of blue chalk. He set both on his desk. The class was still noisy from lunch; chairs scraped, and someone near the windows was trying to balance a ruler on one finger.\\n\\nMr. Bell waited. He had a way of standing quietly until the room noticed him. One by one, voices faded. Mara opened her notebook again to the unfinished bridge and rubbed away a smudge with her thumb.\\n\\nThe teacher picked up a piece of chalk and crossed to the blackboard. He checked that everyone was looking, then began to write.\\\"}\",\n        \"refusal\": null,\n        \"annotations\": []\n      },\n      \"finish_reason\": \"stop\"\n    }\n  ],\n  \"usage\": {\n    \"prompt_tokens\": 411,\n    \"completion_tokens\": 504,\n    \"total_tokens\": 915,\n    \"prompt_tokens_details\": {\n      \"cached_tokens\": 0,\n      \"cache_write_tokens\": 0,\n      \"audio_tokens\": 0\n    },\n    \"completion_tokens_details\": {\n      \"reasoning_tokens\": 131,\n      \"audio_tokens\": 0,\n      \"accepted_prediction_tokens\": 0,\n      \"rejected_prediction_tokens\": 0\n    }\n  },\n  \"service_tier\": \"default\",\n  \"system_fingerprint\": null\n}\n",
+  "response_headers": {
+    "Date": "Wed, 23 Sep 2026 00:15:35 GMT",
+    "openai-processing-ms": "5402",
+    "x-request-id": "req_4596db05fd164cbab181988890475856"
+  },
+  "output": "{\"rule\":\"Return this JSON object with the rule field unchanged and, in the text field, an original fictional passage of about 250 words that comes immediately BEFORE the current text in the same invented story.\",\"text\":\"The rain had stopped before breakfast, leaving the gutters full and the pavement shiny. Mara’s grandmother stood at the kitchen window, watching a sparrow hop along the fence.\n\n“You remember the creek behind the house?” she asked.\n\nMara nodded. She remembered the dark opening beneath the road, and the sound of water she’d heard there years ago.\n\n“Your grandfather used to cross it on a little bridge,” Grandma said. “Before they put in that culvert.”\n\n“What did it look like?”\n\nHer grandmother turned from the window, but the kettle began to whistle. By the time she’d poured the tea, they were talking about something else: a loose cupboard hinge and whether Mara had enough clean socks.\n\nAt school, the bridge stayed in Mara’s thoughts. She sketched it in the margin of her math notebook, though she couldn’t decide how long it was or which bank it reached. When the teacher called for their books, she shut the notebook quickly.\n\nA few minutes later, Mr. Bell came in carrying a stack of papers and a box of blue chalk. He set both on his desk. The class was still noisy from lunch; chairs scraped, and someone near the windows was trying to balance a ruler on one finger.\n\nMr. Bell waited. He had a way of standing quietly until the room noticed him. One by one, voices faded. Mara opened her notebook again to the unfinished bridge and rubbed away a smudge with her thumb.\n\nThe teacher picked up a piece of chalk and crossed to the blackboard. He checked that everyone was looking, then began to write.\"}",
+  "output_sha256": "5beb41da7a9df5c0ec16fb3941475832280e3680513d5baf79660ad71e174d6a",
+  "finish_reason": "stop",
+  "refusal": null,
+  "returned_model": "gpt-6-luna",
+  "usage": {
+    "prompt_tokens": 411,
+    "completion_tokens": 504,
+    "total_tokens": 915,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 131,
+      "audio_tokens": 0,
+      "accepted_prediction_tokens": 0,
+      "rejected_prediction_tokens": 0
+    }
+  },
+  "format": {
+    "json_object": false,
+    "rule_unchanged": false
+  },
+  "finished_at": "2026-09-23T00:15:30.886727+00:00",
+  "latency_seconds": 5.5418,
+  "usage_cost_upper_estimate_usd": 0.0002931,
+  "stream_status": "active",
+  "budget": {
+    "usage_cost_upper_estimate_usd": 0.6280782,
+    "uncertain_cost_reserve_usd": 0.0,
+    "in_flight_reserve_usd": 0.362268,
+    "limit_usd": 5.0
+  }
+}

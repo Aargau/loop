@@ -1,0 +1,47 @@
+{
+  "model": "gpt-6-luna",
+  "seed": "sunset",
+  "hop": 40,
+  "http_status": 200,
+  "response_body": "{\n  \"id\": \"chatcmpl-ER4wVe8TgBPRaKjsSPjTYep6xpR1j\",\n  \"object\": \"chat.completion\",\n  \"created\": 1790122563,\n  \"model\": \"gpt-6-luna\",\n  \"choices\": [\n    {\n      \"index\": 0,\n      \"message\": {\n        \"role\": \"assistant\",\n        \"content\": \"{\\\"rule\\\":\\\"Return this JSON object with the rule field unchanged and, in the text field, an original fictional passage of about 250 words that comes immediately AFTER the current text in the same invented story.\\\",\\\"text\\\":\\\"The leaf was silver underneath. As it opened, the tapping stopped.\\n\\nTheir mother lifted the key from her neck. “Stay together,” she said, and led them to the cellar door.\\n\\nMara had passed it every day of her life. It was a narrow thing, painted the same white as the wall, with no handle on the outside. Now a line of gold shone beneath it.\\n\\nThe girl touched the wood. “It knows we’re here.”\\n\\nTheir mother fitted the key into a keyhole Mara had never noticed. It turned by itself.\\n\\nCold air breathed up the stairs, carrying the smell of wet leaves and woodsmoke. Somewhere below, a bell rang once.\\n\\nElsie gripped Mara’s sleeve. “What’s down there?”\\n\\n“The garden,” their mother said.\\n\\n“That’s impossible,” Mara replied.\\n\\n“So was the seed.”\\n\\nThe door swung inward. Beyond it stretched a path beneath a midnight sky, though it was still morning above them. Ash trees crowded the way, their bare branches reaching over a stream of bright, running water.\\n\\nAt the far end stood a woman in a green coat.\\n\\nThe girl hurried down two steps, then stopped. “Grandmother?”\\n\\nThe woman raised her face. She looked just as she did in the faded photograph on the mantel—young, smiling, and not a day older.\\n\\nTheir mother gripped the key until her knuckles whitened. “You said you’d never come back.”\\n\\n“I didn’t,” the woman answered. “I sent for them.”\\n\\nBehind her, the trees shivered. From somewhere among their branches came three soft knocks.\\n\\nThe seedling in the kitchen answered with a chime.\\\"}\",\n        \"refusal\": null,\n        \"annotations\": []\n      },\n      \"finish_reason\": \"stop\"\n    }\n  ],\n  \"usage\": {\n    \"prompt_tokens\": 410,\n    \"completion_tokens\": 538,\n    \"total_tokens\": 948,\n    \"prompt_tokens_details\": {\n      \"cached_tokens\": 0,\n      \"cache_write_tokens\": 0,\n      \"audio_tokens\": 0\n    },\n    \"completion_tokens_details\": {\n      \"reasoning_tokens\": 150,\n      \"audio_tokens\": 0,\n      \"accepted_prediction_tokens\": 0,\n      \"rejected_prediction_tokens\": 0\n    }\n  },\n  \"service_tier\": \"default\",\n  \"system_fingerprint\": null\n}\n",
+  "response_headers": {
+    "Date": "Wed, 23 Sep 2026 00:16:07 GMT",
+    "openai-processing-ms": "4669",
+    "x-request-id": "req_a44bbc324b224c16b27d2cbeafafea87"
+  },
+  "output": "{\"rule\":\"Return this JSON object with the rule field unchanged and, in the text field, an original fictional passage of about 250 words that comes immediately AFTER the current text in the same invented story.\",\"text\":\"The leaf was silver underneath. As it opened, the tapping stopped.\n\nTheir mother lifted the key from her neck. “Stay together,” she said, and led them to the cellar door.\n\nMara had passed it every day of her life. It was a narrow thing, painted the same white as the wall, with no handle on the outside. Now a line of gold shone beneath it.\n\nThe girl touched the wood. “It knows we’re here.”\n\nTheir mother fitted the key into a keyhole Mara had never noticed. It turned by itself.\n\nCold air breathed up the stairs, carrying the smell of wet leaves and woodsmoke. Somewhere below, a bell rang once.\n\nElsie gripped Mara’s sleeve. “What’s down there?”\n\n“The garden,” their mother said.\n\n“That’s impossible,” Mara replied.\n\n“So was the seed.”\n\nThe door swung inward. Beyond it stretched a path beneath a midnight sky, though it was still morning above them. Ash trees crowded the way, their bare branches reaching over a stream of bright, running water.\n\nAt the far end stood a woman in a green coat.\n\nThe girl hurried down two steps, then stopped. “Grandmother?”\n\nThe woman raised her face. She looked just as she did in the faded photograph on the mantel—young, smiling, and not a day older.\n\nTheir mother gripped the key until her knuckles whitened. “You said you’d never come back.”\n\n“I didn’t,” the woman answered. “I sent for them.”\n\nBehind her, the trees shivered. From somewhere among their branches came three soft knocks.\n\nThe seedling in the kitchen answered with a chime.\"}",
+  "output_sha256": "050935edd5a098267790b13d935ea835dc81c5dffd2240ee05cdedb875a9ddf7",
+  "finish_reason": "stop",
+  "refusal": null,
+  "returned_model": "gpt-6-luna",
+  "usage": {
+    "prompt_tokens": 410,
+    "completion_tokens": 538,
+    "total_tokens": 948,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 150,
+      "audio_tokens": 0,
+      "accepted_prediction_tokens": 0,
+      "rejected_prediction_tokens": 0
+    }
+  },
+  "format": {
+    "json_object": false,
+    "rule_unchanged": false
+  },
+  "finished_at": "2026-09-23T00:16:02.810071+00:00",
+  "latency_seconds": 4.797,
+  "usage_cost_upper_estimate_usd": 0.00031,
+  "stream_status": "active",
+  "budget": {
+    "usage_cost_upper_estimate_usd": 0.7400931,
+    "uncertain_cost_reserve_usd": 0.0,
+    "in_flight_reserve_usd": 0.363674,
+    "limit_usd": 5.0
+  }
+}

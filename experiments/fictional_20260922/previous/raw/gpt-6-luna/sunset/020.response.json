@@ -1,0 +1,50 @@
+{
+  "model": "gpt-6-luna",
+  "seed": "sunset",
+  "hop": 20,
+  "http_status": 200,
+  "response_body": "{\n  \"id\": \"chatcmpl-ER4uyIZ9e3nnsaQs77QZz0kUerZ12\",\n  \"object\": \"chat.completion\",\n  \"created\": 1790122468,\n  \"model\": \"gpt-6-luna\",\n  \"choices\": [\n    {\n      \"index\": 0,\n      \"message\": {\n        \"role\": \"assistant\",\n        \"content\": \"{\\\"rule\\\":\\\"Return this JSON object with the rule field unchanged and, in the text field, an original fictional passage of about 250 words that comes immediately BEFORE the current text in the same invented story.\\\",\\\"text\\\":\\\"The first time Mara stepped into Alvarez Print, she was carrying a portfolio that had split at one corner. Her drawings slid across the pavement outside, and a man in a flour-dusted apron helped her gather them before the wind could send them into the gutter.\\\\n\\\\n“You looking for work?” he asked, handing her the last sketch.\\\\n\\\\nMara had come to ask about an apprenticeship, though she had rehearsed the question all morning and now couldn’t remember a word of it. Through the open door came the warm, sharp smell of ink. Inside, a press shuddered through a stack of paper while a small bell trembled above the entrance.\\\\n\\\\nMr. Alvarez studied her drawings. She had filled them with letters—blocky headlines, looping names, a storefront sign for a bakery that did not exist. He turned one page sideways, then upside down.\\\\n\\\\n“You know these are backwards?”\\\\n\\\\n“I know,” Mara said. “I just like seeing how they fit together.”\\\\n\\\\nHe looked at her for a moment, as if weighing the answer. Then he led her to a narrow bench beside the type cases and showed her how to choose a letter without smudging the ink on its face. Her first line came out uneven. The second was worse. But Mr. Alvarez didn’t laugh; he loosened the stick and showed her how to start again.\\\\n\\\\nWhen the afternoon light faded, he offered her a trial week. Mara said yes before he could change his mind. The next morning, she arrived early, tucked her portfolio beneath the bench, and began learning the shop one letter at a time.\\\"}\",\n        \"refusal\": null,\n        \"annotations\": []\n      },\n      \"finish_reason\": \"stop\"\n    }\n  ],\n  \"usage\": {\n    \"prompt_tokens\": 375,\n    \"completion_tokens\": 491,\n    \"total_tokens\": 866,\n    \"prompt_tokens_details\": {\n      \"cached_tokens\": 0,\n      \"cache_write_tokens\": 0,\n      \"audio_tokens\": 0\n    },\n    \"completion_tokens_details\": {\n      \"reasoning_tokens\": 102,\n      \"audio_tokens\": 0,\n      \"accepted_prediction_tokens\": 0,\n      \"rejected_prediction_tokens\": 0\n    }\n  },\n  \"service_tier\": \"default\",\n  \"system_fingerprint\": null\n}\n",
+  "response_headers": {
+    "Date": "Wed, 23 Sep 2026 00:14:32 GMT",
+    "openai-processing-ms": "4589",
+    "x-request-id": "req_85c457172f714506b6190dbe422e3e15"
+  },
+  "output": "{\"rule\":\"Return this JSON object with the rule field unchanged and, in the text field, an original fictional passage of about 250 words that comes immediately BEFORE the current text in the same invented story.\",\"text\":\"The first time Mara stepped into Alvarez Print, she was carrying a portfolio that had split at one corner. Her drawings slid across the pavement outside, and a man in a flour-dusted apron helped her gather them before the wind could send them into the gutter.\\n\\n“You looking for work?” he asked, handing her the last sketch.\\n\\nMara had come to ask about an apprenticeship, though she had rehearsed the question all morning and now couldn’t remember a word of it. Through the open door came the warm, sharp smell of ink. Inside, a press shuddered through a stack of paper while a small bell trembled above the entrance.\\n\\nMr. Alvarez studied her drawings. She had filled them with letters—blocky headlines, looping names, a storefront sign for a bakery that did not exist. He turned one page sideways, then upside down.\\n\\n“You know these are backwards?”\\n\\n“I know,” Mara said. “I just like seeing how they fit together.”\\n\\nHe looked at her for a moment, as if weighing the answer. Then he led her to a narrow bench beside the type cases and showed her how to choose a letter without smudging the ink on its face. Her first line came out uneven. The second was worse. But Mr. Alvarez didn’t laugh; he loosened the stick and showed her how to start again.\\n\\nWhen the afternoon light faded, he offered her a trial week. Mara said yes before he could change his mind. The next morning, she arrived early, tucked her portfolio beneath the bench, and began learning the shop one letter at a time.\"}",
+  "output_sha256": "c276bb0accb9c1786072e4d1c79c68c31ecd922a562d3efac8da78b20327095a",
+  "finish_reason": "stop",
+  "refusal": null,
+  "returned_model": "gpt-6-luna",
+  "usage": {
+    "prompt_tokens": 375,
+    "completion_tokens": 491,
+    "total_tokens": 866,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 102,
+      "audio_tokens": 0,
+      "accepted_prediction_tokens": 0,
+      "rejected_prediction_tokens": 0
+    }
+  },
+  "format": {
+    "json_object": true,
+    "rule_unchanged": true,
+    "passage_is_string": true,
+    "passage_sha256": "2e607e163ffa6cefe6911c0e3f4c2cf19ec9b322a44016b55831c54df7c86f4a",
+    "passage_words": 265
+  },
+  "finished_at": "2026-09-23T00:14:27.857574+00:00",
+  "latency_seconds": 4.7033,
+  "usage_cost_upper_estimate_usd": 0.000283,
+  "stream_status": "active",
+  "budget": {
+    "usage_cost_upper_estimate_usd": 0.3588271,
+    "uncertain_cost_reserve_usd": 0.0,
+    "in_flight_reserve_usd": 0.364054,
+    "limit_usd": 5.0
+  }
+}

@@ -1,0 +1,47 @@
+{
+  "model": "gpt-6-luna",
+  "seed": "sunset",
+  "hop": 23,
+  "http_status": 200,
+  "response_body": "{\n  \"id\": \"chatcmpl-ER4vCSNO2qvRf6DZatoCUKnpGRSiA\",\n  \"object\": \"chat.completion\",\n  \"created\": 1790122482,\n  \"model\": \"gpt-6-luna\",\n  \"choices\": [\n    {\n      \"index\": 0,\n      \"message\": {\n        \"role\": \"assistant\",\n        \"content\": \"{\\\"rule\\\":\\\"Return this JSON object with the rule field unchanged and, in the text field, an original fictional passage of about 250 words that comes immediately BEFORE the current text in the same invented story.\\\",\\\"text\\\":\\\"On Thursday morning, the rain stopped just long enough for Mr. Alvarez to carry a fresh sheet of paper across the street without covering it with his coat.\\n\\nMara was inside the laundromat, feeding quarters into the dryer. Through the front window she watched him unlock the narrow door of his print shop, then disappear inside. A moment later, he came back out with a strip of tape between his teeth and the paper held flat against his chest.\\n\\nHer mother’s shirts tumbled behind her in the dryer. Mara counted the turns of the glass door, trying not to think about the envelope on the kitchen counter. The clinic had sent another bill, and her mother had said not to worry, which usually meant there was something to worry about.\\n\\nMr. Alvarez crossed to the laundromat’s bulletin board. He pressed the paper to the cork, smoothed its corners, and stepped back to inspect it. From where Mara stood, she could make out only the bold black letters at the top. She looked away before he glanced through the window.\\n\\nWhen she came out with the clean shirts, he was already back in his shop. The new notice hung between a piano lesson flyer and a card offering to mend broken lamps. Mara shifted the shirts against her hip and started toward home.\\n\\nAt the corner, she thought she heard the shop door open. She kept walking.\\n\\nThat night, while her mother slept, Mara unfolded a receipt and drew a row of windows along its blank side. She shaded one window dark, then filled another with tiny squares of light. In the morning, she tucked the drawing into her pocket and went back to the laundromat.\\\"}\",\n        \"refusal\": null,\n        \"annotations\": []\n      },\n      \"finish_reason\": \"stop\"\n    }\n  ],\n  \"usage\": {\n    \"prompt_tokens\": 377,\n    \"completion_tokens\": 629,\n    \"total_tokens\": 1006,\n    \"prompt_tokens_details\": {\n      \"cached_tokens\": 0,\n      \"cache_write_tokens\": 0,\n      \"audio_tokens\": 0\n    },\n    \"completion_tokens_details\": {\n      \"reasoning_tokens\": 243,\n      \"audio_tokens\": 0,\n      \"accepted_prediction_tokens\": 0,\n      \"rejected_prediction_tokens\": 0\n    }\n  },\n  \"service_tier\": \"default\",\n  \"system_fingerprint\": null\n}\n",
+  "response_headers": {
+    "Date": "Wed, 23 Sep 2026 00:14:47 GMT",
+    "openai-processing-ms": "5772",
+    "x-request-id": "req_dce3b89eaa00468aa9cfe70abfbadc2a"
+  },
+  "output": "{\"rule\":\"Return this JSON object with the rule field unchanged and, in the text field, an original fictional passage of about 250 words that comes immediately BEFORE the current text in the same invented story.\",\"text\":\"On Thursday morning, the rain stopped just long enough for Mr. Alvarez to carry a fresh sheet of paper across the street without covering it with his coat.\n\nMara was inside the laundromat, feeding quarters into the dryer. Through the front window she watched him unlock the narrow door of his print shop, then disappear inside. A moment later, he came back out with a strip of tape between his teeth and the paper held flat against his chest.\n\nHer mother’s shirts tumbled behind her in the dryer. Mara counted the turns of the glass door, trying not to think about the envelope on the kitchen counter. The clinic had sent another bill, and her mother had said not to worry, which usually meant there was something to worry about.\n\nMr. Alvarez crossed to the laundromat’s bulletin board. He pressed the paper to the cork, smoothed its corners, and stepped back to inspect it. From where Mara stood, she could make out only the bold black letters at the top. She looked away before he glanced through the window.\n\nWhen she came out with the clean shirts, he was already back in his shop. The new notice hung between a piano lesson flyer and a card offering to mend broken lamps. Mara shifted the shirts against her hip and started toward home.\n\nAt the corner, she thought she heard the shop door open. She kept walking.\n\nThat night, while her mother slept, Mara unfolded a receipt and drew a row of windows along its blank side. She shaded one window dark, then filled another with tiny squares of light. In the morning, she tucked the drawing into her pocket and went back to the laundromat.\"}",
+  "output_sha256": "642d3c801c4ff7154c66ce65a6b227f61b7f996c3089cc3ab86fe8981b50431c",
+  "finish_reason": "stop",
+  "refusal": null,
+  "returned_model": "gpt-6-luna",
+  "usage": {
+    "prompt_tokens": 377,
+    "completion_tokens": 629,
+    "total_tokens": 1006,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 243,
+      "audio_tokens": 0,
+      "accepted_prediction_tokens": 0,
+      "rejected_prediction_tokens": 0
+    }
+  },
+  "format": {
+    "json_object": false,
+    "rule_unchanged": false
+  },
+  "finished_at": "2026-09-23T00:14:43.096991+00:00",
+  "latency_seconds": 5.8773,
+  "usage_cost_upper_estimate_usd": 0.0003522,
+  "stream_status": "active",
+  "budget": {
+    "usage_cost_upper_estimate_usd": 0.4476261,
+    "uncertain_cost_reserve_usd": 0.0,
+    "in_flight_reserve_usd": 0.36393,
+    "limit_usd": 5.0
+  }
+}

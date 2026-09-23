@@ -1,0 +1,45 @@
+{
+  "model": "claude-opus-5-5",
+  "seed": "sunset",
+  "hop": 38,
+  "http_status": 200,
+  "response_body": "{\"model\":\"claude-opus-5-5\",\"id\":\"msg_011CfKQqZHfsyqWzf5QAYmzx\",\"type\":\"message\",\"role\":\"assistant\",\"content\":[{\"type\":\"text\",\"text\":\"```json\\n{\\\"rule\\\": \\\"Return this JSON object with the rule field unchanged and, in the text field, an original fictional passage of about 250 words that comes immediately AFTER the current text in the same invented story.\\\", \\\"text\\\": \\\"Then it fell. It made no sound when it struck the bottom of the cup, but the whole house seemed to exhale. The kettle on the stove, cold for three weeks, gave a thin, rising whistle. The clock above the pantry, stopped since the funeral, ticked once, twice, and began again as if it had only paused to listen. Steam curled up from the empty cup. Mara leaned closer. There was tea in it now, dark and sweet-smelling, with a skin of milk turning slowly on the surface. At the bottom, where the bone had been, she could see nothing at all. \\\\\\\"Oh,\\\\\\\" said the voice, and this time it came from the chair, and it was entirely in time with itself. \\\\\\\"Oh, there I am. Winifred. Winnie, to my sister. Gran, to you two.\\\\\\\" Tobias made a small noise behind her, half a sob. The chair stayed empty, but the cushion sank, the way it always had when Gran lowered herself down with a grunt and a complaint about her knees. \\\\\\\"You shouldn't be up,\\\\\\\" the voice said fondly. \\\\\\\"Either of you. School tomorrow.\\\\\\\" \\\\\\\"Are you staying?\\\\\\\" Mara whispered. For a while there was only the clock. Outside, the sheet on the line lifted once more in a wind that wasn't there, and settled. \\\\\\\"Till the tea's gone,\\\\\\\" Gran said. \\\\\\\"Sit down, loves. Tell me everything I missed.\\\\\\\" So they sat, one on either side of the empty chair, and began.\\\"}\\n```\"}],\"container\":null,\"stop_reason\":\"end_turn\",\"stop_sequence\":null,\"stop_details\":null,\"usage\":{\"input_tokens\":592,\"cache_creation_input_tokens\":0,\"cache_read_input_tokens\":0,\"cache_creation\":{\"ephemeral_5m_input_tokens\":0,\"ephemeral_1h_input_tokens\":0},\"output_tokens\":550,\"output_tokens_details\":{\"thinking_tokens\":0},\"service_tier\":\"standard\",\"inference_geo\":\"global\"}}",
+  "response_headers": {
+    "Date": "Wed, 23 Sep 2026 00:18:50 GMT",
+    "request-id": "req_011CfKQqYq8a1nc5HqesRfEp"
+  },
+  "output": "```json\n{\"rule\": \"Return this JSON object with the rule field unchanged and, in the text field, an original fictional passage of about 250 words that comes immediately AFTER the current text in the same invented story.\", \"text\": \"Then it fell. It made no sound when it struck the bottom of the cup, but the whole house seemed to exhale. The kettle on the stove, cold for three weeks, gave a thin, rising whistle. The clock above the pantry, stopped since the funeral, ticked once, twice, and began again as if it had only paused to listen. Steam curled up from the empty cup. Mara leaned closer. There was tea in it now, dark and sweet-smelling, with a skin of milk turning slowly on the surface. At the bottom, where the bone had been, she could see nothing at all. \\\"Oh,\\\" said the voice, and this time it came from the chair, and it was entirely in time with itself. \\\"Oh, there I am. Winifred. Winnie, to my sister. Gran, to you two.\\\" Tobias made a small noise behind her, half a sob. The chair stayed empty, but the cushion sank, the way it always had when Gran lowered herself down with a grunt and a complaint about her knees. \\\"You shouldn't be up,\\\" the voice said fondly. \\\"Either of you. School tomorrow.\\\" \\\"Are you staying?\\\" Mara whispered. For a while there was only the clock. Outside, the sheet on the line lifted once more in a wind that wasn't there, and settled. \\\"Till the tea's gone,\\\" Gran said. \\\"Sit down, loves. Tell me everything I missed.\\\" So they sat, one on either side of the empty chair, and began.\"}\n```",
+  "output_sha256": "1c0bff18137fa274ec32b4b8bb9b5bf37febd8dab4e2b62152966e6504b8907f",
+  "finish_reason": "end_turn",
+  "refusal": null,
+  "returned_model": "claude-opus-5-5",
+  "usage": {
+    "input_tokens": 592,
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 0,
+    "cache_creation": {
+      "ephemeral_5m_input_tokens": 0,
+      "ephemeral_1h_input_tokens": 0
+    },
+    "output_tokens": 550,
+    "output_tokens_details": {
+      "thinking_tokens": 0
+    },
+    "service_tier": "standard",
+    "inference_geo": "global"
+  },
+  "format": {
+    "json_object": false,
+    "rule_unchanged": false
+  },
+  "finished_at": "2026-09-23T00:18:45.794616+00:00",
+  "latency_seconds": 8.2216,
+  "usage_cost_upper_estimate_usd": 0.013368,
+  "stream_status": "active",
+  "budget": {
+    "usage_cost_upper_estimate_usd": 1.3790191,
+    "uncertain_cost_reserve_usd": 0.0,
+    "in_flight_reserve_usd": 0.22842,
+    "limit_usd": 5.0
+  }
+}

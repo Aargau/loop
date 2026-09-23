@@ -1,0 +1,50 @@
+{
+  "model": "gpt-6-sol",
+  "seed": "sunset",
+  "hop": 18,
+  "http_status": 200,
+  "response_body": "{\n  \"id\": \"chatcmpl-ER4vM9EB69j1YnOfCczdxtS0Oa8Kl\",\n  \"object\": \"chat.completion\",\n  \"created\": 1790122492,\n  \"model\": \"gpt-6-sol\",\n  \"choices\": [\n    {\n      \"index\": 0,\n      \"message\": {\n        \"role\": \"assistant\",\n        \"content\": \"{\\n  \\\"rule\\\": \\\"Return this JSON object with the rule field unchanged and, in the text field, an original fictional passage of about 250 words that comes immediately BEFORE the current text in the same invented story.\\\",\\n  \\\"text\\\": \\\"In the morning, Mara found Bristle lying across the doorway to her mother’s room. He lifted his head when she stepped over him but did not get up. The bed had been made before her mother went to the hospital. A cardigan hung over the chair, and a library book lay face down on the bedside table, holding its place.\\\\n\\\\nMara opened the curtains. Across the street, someone was washing a car. She could hear the hose striking the pavement whenever it was set down. She took the book downstairs and placed it beside the telephone, then went back for the cardigan. She had meant to put it in the hamper, but when she reached the bathroom, she hung it on the hook behind the door instead.\\\\n\\\\nHer aunt had left a message the night before, asking her to call when she was awake. Mara waited until the kettle boiled. Her aunt said she had spoken to the minister and that the undertaker would be in touch. She asked if Mara had eaten anything. Mara looked at the unopened loaf on the counter and said she would make toast.\\\\n\\\\nAfter the call, she fed Bristle and let him into the garden. He walked to the gate and stood there for a while, his nose near the gap beneath it. Mara put two slices of bread in the toaster. When they rose, she spread one with butter and left the other on the plate. Bristle came in with wet paws. She wiped the floor with a tea towel and set the towel by the sink to wash later.\\\"\\n}\",\n        \"refusal\": null,\n        \"annotations\": []\n      },\n      \"finish_reason\": \"stop\"\n    }\n  ],\n  \"usage\": {\n    \"prompt_tokens\": 372,\n    \"completion_tokens\": 393,\n    \"total_tokens\": 765,\n    \"prompt_tokens_details\": {\n      \"cached_tokens\": 0,\n      \"cache_write_tokens\": 0,\n      \"audio_tokens\": 0\n    },\n    \"completion_tokens_details\": {\n      \"reasoning_tokens\": 24,\n      \"audio_tokens\": 0,\n      \"accepted_prediction_tokens\": 0,\n      \"rejected_prediction_tokens\": 0\n    }\n  },\n  \"service_tier\": \"default\",\n  \"system_fingerprint\": null\n}\n",
+  "response_headers": {
+    "Date": "Wed, 23 Sep 2026 00:14:58 GMT",
+    "openai-processing-ms": "6171",
+    "x-request-id": "req_da6e95d2680b4b6aab42a06e14344a4c"
+  },
+  "output": "{\n  \"rule\": \"Return this JSON object with the rule field unchanged and, in the text field, an original fictional passage of about 250 words that comes immediately BEFORE the current text in the same invented story.\",\n  \"text\": \"In the morning, Mara found Bristle lying across the doorway to her mother’s room. He lifted his head when she stepped over him but did not get up. The bed had been made before her mother went to the hospital. A cardigan hung over the chair, and a library book lay face down on the bedside table, holding its place.\\n\\nMara opened the curtains. Across the street, someone was washing a car. She could hear the hose striking the pavement whenever it was set down. She took the book downstairs and placed it beside the telephone, then went back for the cardigan. She had meant to put it in the hamper, but when she reached the bathroom, she hung it on the hook behind the door instead.\\n\\nHer aunt had left a message the night before, asking her to call when she was awake. Mara waited until the kettle boiled. Her aunt said she had spoken to the minister and that the undertaker would be in touch. She asked if Mara had eaten anything. Mara looked at the unopened loaf on the counter and said she would make toast.\\n\\nAfter the call, she fed Bristle and let him into the garden. He walked to the gate and stood there for a while, his nose near the gap beneath it. Mara put two slices of bread in the toaster. When they rose, she spread one with butter and left the other on the plate. Bristle came in with wet paws. She wiped the floor with a tea towel and set the towel by the sink to wash later.\"\n}",
+  "output_sha256": "a20a654f6696ea50ca672f462bc07b241bc9cbc058b91d6ee8311ab85ba7f166",
+  "finish_reason": "stop",
+  "refusal": null,
+  "returned_model": "gpt-6-sol",
+  "usage": {
+    "prompt_tokens": 372,
+    "completion_tokens": 393,
+    "total_tokens": 765,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 24,
+      "audio_tokens": 0,
+      "accepted_prediction_tokens": 0,
+      "rejected_prediction_tokens": 0
+    }
+  },
+  "format": {
+    "json_object": true,
+    "rule_unchanged": true,
+    "passage_is_string": true,
+    "passage_sha256": "bcc1c3c1b77d268de96a8df5f7c0f87e2e2013a31ad1966827f4297be5edad28",
+    "passage_words": 267
+  },
+  "finished_at": "2026-09-23T00:14:53.414014+00:00",
+  "latency_seconds": 6.3014,
+  "usage_cost_upper_estimate_usd": 0.004674,
+  "stream_status": "active",
+  "budget": {
+    "usage_cost_upper_estimate_usd": 0.4736374,
+    "uncertain_cost_reserve_usd": 0.0,
+    "in_flight_reserve_usd": 0.3211294,
+    "limit_usd": 5.0
+  }
+}

@@ -1,0 +1,47 @@
+{
+  "model": "gpt-6-luna",
+  "seed": "sunset",
+  "hop": 25,
+  "http_status": 200,
+  "response_body": "{\n  \"id\": \"chatcmpl-ER4vMbCUbYwt7M1BuueQqiBu0Bher\",\n  \"object\": \"chat.completion\",\n  \"created\": 1790122492,\n  \"model\": \"gpt-6-luna\",\n  \"choices\": [\n    {\n      \"index\": 0,\n      \"message\": {\n        \"role\": \"assistant\",\n        \"content\": \"{\\\"rule\\\":\\\"Return this JSON object with the rule field unchanged and, in the text field, an original fictional passage of about 250 words that comes immediately BEFORE the current text in the same invented story.\\\",\\\"text\\\":\\\"By Wednesday afternoon, the rain had turned the gutters along Bell Street into narrow, rushing streams. Mara hurried home from school with her coat pulled over her head, keeping one hand around the paper bag tucked beneath her arm. Inside was a loaf of bread her mother had asked her to pick up, along with a folded clinic notice she’d found wedged beneath the apartment door.\\n\\nShe hadn’t opened it. The return address was enough to make her stomach tighten.\\n\\nAt the corner, Mr. Alvarez stood in the doorway of his print shop, brushing rain from his sleeves. He waved, and Mara waved back. Then he went inside and began rearranging the front window. First he moved a stack of maps. Then he brought out a small square of pale paper and pinned it near the glass.\\n\\nMara slowed, curious. The square had a dark mark in its center, like a tiny bird—or a thumbprint. Before she could get close enough to see, Mr. Alvarez glanced up. He took it down and slipped it under his arm.\\n\\nAt home, her mother was still at work. Mara set the bread on the counter and placed the clinic notice beside the kettle. She could have opened it. Instead, she washed her hands, changed out of her damp clothes, and tried to finish her history assignment.\\n\\nThe rain thickened against the windows. When the clock above the sink clicked past six, Mara heard her mother’s key turn in the lock. She closed her book and went to help with supper.\\\"}\",\n        \"refusal\": null,\n        \"annotations\": []\n      },\n      \"finish_reason\": \"stop\"\n    }\n  ],\n  \"usage\": {\n    \"prompt_tokens\": 370,\n    \"completion_tokens\": 537,\n    \"total_tokens\": 907,\n    \"prompt_tokens_details\": {\n      \"cached_tokens\": 0,\n      \"cache_write_tokens\": 0,\n      \"audio_tokens\": 0\n    },\n    \"completion_tokens_details\": {\n      \"reasoning_tokens\": 180,\n      \"audio_tokens\": 0,\n      \"accepted_prediction_tokens\": 0,\n      \"rejected_prediction_tokens\": 0\n    }\n  },\n  \"service_tier\": \"default\",\n  \"system_fingerprint\": null\n}\n",
+  "response_headers": {
+    "Date": "Wed, 23 Sep 2026 00:14:56 GMT",
+    "openai-processing-ms": "4837",
+    "x-request-id": "req_22c6887a8d5d41229d61a2208579a22a"
+  },
+  "output": "{\"rule\":\"Return this JSON object with the rule field unchanged and, in the text field, an original fictional passage of about 250 words that comes immediately BEFORE the current text in the same invented story.\",\"text\":\"By Wednesday afternoon, the rain had turned the gutters along Bell Street into narrow, rushing streams. Mara hurried home from school with her coat pulled over her head, keeping one hand around the paper bag tucked beneath her arm. Inside was a loaf of bread her mother had asked her to pick up, along with a folded clinic notice she’d found wedged beneath the apartment door.\n\nShe hadn’t opened it. The return address was enough to make her stomach tighten.\n\nAt the corner, Mr. Alvarez stood in the doorway of his print shop, brushing rain from his sleeves. He waved, and Mara waved back. Then he went inside and began rearranging the front window. First he moved a stack of maps. Then he brought out a small square of pale paper and pinned it near the glass.\n\nMara slowed, curious. The square had a dark mark in its center, like a tiny bird—or a thumbprint. Before she could get close enough to see, Mr. Alvarez glanced up. He took it down and slipped it under his arm.\n\nAt home, her mother was still at work. Mara set the bread on the counter and placed the clinic notice beside the kettle. She could have opened it. Instead, she washed her hands, changed out of her damp clothes, and tried to finish her history assignment.\n\nThe rain thickened against the windows. When the clock above the sink clicked past six, Mara heard her mother’s key turn in the lock. She closed her book and went to help with supper.\"}",
+  "output_sha256": "dd7a146b93da8e6e81a23891cec30246c58eb3d6a6ac5cac8bd5235b2756f8c2",
+  "finish_reason": "stop",
+  "refusal": null,
+  "returned_model": "gpt-6-luna",
+  "usage": {
+    "prompt_tokens": 370,
+    "completion_tokens": 537,
+    "total_tokens": 907,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 180,
+      "audio_tokens": 0,
+      "accepted_prediction_tokens": 0,
+      "rejected_prediction_tokens": 0
+    }
+  },
+  "format": {
+    "json_object": false,
+    "rule_unchanged": false
+  },
+  "finished_at": "2026-09-23T00:14:51.946499+00:00",
+  "latency_seconds": 4.9703,
+  "usage_cost_upper_estimate_usd": 0.0003055,
+  "stream_status": "active",
+  "budget": {
+    "usage_cost_upper_estimate_usd": 0.4689634,
+    "uncertain_cost_reserve_usd": 0.0,
+    "in_flight_reserve_usd": 0.36428,
+    "limit_usd": 5.0
+  }
+}

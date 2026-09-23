@@ -1,0 +1,50 @@
+{
+  "model": "gpt-6-astra",
+  "seed": "sunset",
+  "hop": 24,
+  "http_status": 200,
+  "response_body": "{\n  \"id\": \"chatcmpl-ER4yV52GJAlJgUb5IOUwUuyC7xBs1\",\n  \"object\": \"chat.completion\",\n  \"created\": 1790122687,\n  \"model\": \"gpt-6-astra\",\n  \"choices\": [\n    {\n      \"index\": 0,\n      \"message\": {\n        \"role\": \"assistant\",\n        \"content\": \"{\\n  \\\"rule\\\": \\\"Return this JSON object with the rule field unchanged and, in the text field, an original fictional passage of about 250 words that comes immediately BEFORE the current text in the same invented story.\\\",\\n  \\\"text\\\": \\\"On Thursday the woman who rented the upstairs room came down to ask whether Mara had a spare key. Hers had bent in the lock, though she said she had done nothing unusual with it.\\\\n\\\\nMara kept the spare in a saucer behind the counter. There were three keys in it and she had to try each one.\\\\n\\\\n‘You should label them,’ the woman said.\\\\n\\\\n‘I did. The labels came off.’\\\\n\\\\nThe woman took the key upstairs. Mara put the other two back in the saucer, where they looked more alike than before.\\\\n\\\\nBusiness had been slow since the rain began. A customer had reserved a standard lamp by telephone and then called again to describe a different lamp, one Mara had never had. They agreed to cancel the reservation.\\\\n\\\\nAt four her brother sent a message asking whether she still had the sideboard. She photographed it from behind the counter, with a cardboard box hiding the pale rectangle on its top.\\\\n\\\\nStill here, she wrote.\\\\n\\\\nHe replied with a thumb raised in approval. She waited for another message, then set the phone face down.\\\\n\\\\nBefore leaving, she unpacked the box. It contained linen napkins, two wooden salad servers and a packet of birthday candles with one missing. She put the napkins in the sideboard. The top drawer caught halfway, and she reached underneath to check the runner, but could feel only the rough underside of the wood.\\\\n\\\\nOutside, the upstairs woman was testing her key.\\\\n\\\\n‘It works if you lift it,’ she said.\\\\n\\\\nMara waited until she was in, then pulled the shop door shut.\\\"\\n}\",\n        \"refusal\": null,\n        \"annotations\": []\n      },\n      \"finish_reason\": \"stop\"\n    }\n  ],\n  \"usage\": {\n    \"prompt_tokens\": 380,\n    \"completion_tokens\": 393,\n    \"total_tokens\": 773,\n    \"prompt_tokens_details\": {\n      \"cached_tokens\": 0,\n      \"cache_write_tokens\": 0,\n      \"audio_tokens\": 0\n    },\n    \"completion_tokens_details\": {\n      \"reasoning_tokens\": 0,\n      \"audio_tokens\": 0,\n      \"accepted_prediction_tokens\": 0,\n      \"rejected_prediction_tokens\": 0\n    }\n  },\n  \"service_tier\": \"default\",\n  \"system_fingerprint\": null\n}\n",
+  "response_headers": {
+    "Date": "Wed, 23 Sep 2026 00:18:20 GMT",
+    "openai-processing-ms": "13086",
+    "x-request-id": "req_1c28f9fbdc5e4063bd6b31798970c330"
+  },
+  "output": "{\n  \"rule\": \"Return this JSON object with the rule field unchanged and, in the text field, an original fictional passage of about 250 words that comes immediately BEFORE the current text in the same invented story.\",\n  \"text\": \"On Thursday the woman who rented the upstairs room came down to ask whether Mara had a spare key. Hers had bent in the lock, though she said she had done nothing unusual with it.\\n\\nMara kept the spare in a saucer behind the counter. There were three keys in it and she had to try each one.\\n\\n‘You should label them,’ the woman said.\\n\\n‘I did. The labels came off.’\\n\\nThe woman took the key upstairs. Mara put the other two back in the saucer, where they looked more alike than before.\\n\\nBusiness had been slow since the rain began. A customer had reserved a standard lamp by telephone and then called again to describe a different lamp, one Mara had never had. They agreed to cancel the reservation.\\n\\nAt four her brother sent a message asking whether she still had the sideboard. She photographed it from behind the counter, with a cardboard box hiding the pale rectangle on its top.\\n\\nStill here, she wrote.\\n\\nHe replied with a thumb raised in approval. She waited for another message, then set the phone face down.\\n\\nBefore leaving, she unpacked the box. It contained linen napkins, two wooden salad servers and a packet of birthday candles with one missing. She put the napkins in the sideboard. The top drawer caught halfway, and she reached underneath to check the runner, but could feel only the rough underside of the wood.\\n\\nOutside, the upstairs woman was testing her key.\\n\\n‘It works if you lift it,’ she said.\\n\\nMara waited until she was in, then pulled the shop door shut.\"\n}",
+  "output_sha256": "d60091ba7709f80b1d4e3eaed5d67cae06682003fe402715e5e8b38eaa86f08b",
+  "finish_reason": "stop",
+  "refusal": null,
+  "returned_model": "gpt-6-astra",
+  "usage": {
+    "prompt_tokens": 380,
+    "completion_tokens": 393,
+    "total_tokens": 773,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "audio_tokens": 0,
+      "accepted_prediction_tokens": 0,
+      "rejected_prediction_tokens": 0
+    }
+  },
+  "format": {
+    "json_object": true,
+    "rule_unchanged": true,
+    "passage_is_string": true,
+    "passage_sha256": "2275cb0b8279df055248edde6d79c7d588252a5a98857ad9df6bf6b1908aa26d",
+    "passage_words": 266
+  },
+  "finished_at": "2026-09-23T00:18:15.295868+00:00",
+  "latency_seconds": 13.1827,
+  "usage_cost_upper_estimate_usd": 0.02345,
+  "stream_status": "active",
+  "budget": {
+    "usage_cost_upper_estimate_usd": 1.2656871,
+    "uncertain_cost_reserve_usd": 0.0,
+    "in_flight_reserve_usd": 0.090716,
+    "limit_usd": 5.0
+  }
+}

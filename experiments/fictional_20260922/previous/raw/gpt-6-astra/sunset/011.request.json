@@ -1,0 +1,20 @@
+{
+  "started_at": "2026-09-23T00:15:11.189991+00:00",
+  "model": "gpt-6-astra",
+  "seed": "sunset",
+  "hop": 11,
+  "endpoint": "https://api.openai.com/v1/chat/completions",
+  "body": {
+    "model": "gpt-6-astra",
+    "messages": [
+      {
+        "role": "user",
+        "content": "{\n  \"rule\": \"Return this JSON object with the rule field unchanged and, in the text field, an original fictional passage of about 250 words that comes immediately BEFORE the current text in the same invented story.\",\n  \"text\": \"On Monday morning, Mara found the shop key in the pocket of the coat she had worn to the hospital. A paper parking ticket came out with it. She put the ticket back.\\n\\nThe lock needed lifting as she turned it. Her father had mentioned this on the telephone, along with the price of electricity and a customer who kept losing weight after his trousers were finished. She had told him to get someone to look at the door.\\n\\nInside, nothing smelled shut up. There was wool, machine oil, the faint dampness from the wall behind the fitting room. She took off her coat and hung it on the lower hook.\\n\\nThe first customer wanted a zip replaced. He laid his jacket on the counter and kept one hand on it while she searched for a ticket book.\\n\\n‘Will you be doing the work yourself?’\\n\\n‘Yes.’\\n\\nHe released the jacket. She could not tell whether she had reassured him.\\n\\nAt lunchtime she bought a sandwich and ate it standing beside the cutting table. There were three pairs of scissors in the drawer, each wrapped at one handle with a different colour of thread. She tried them on a scrap of lining before choosing the largest.\\n\\nOn Tuesday, she moved the stool closer to the machine. Her knees no longer struck the underside of the table, but the pedal sat too far away. She knelt and pulled it towards her, disturbing a small grey drift of lint.\\n\\nUnder the pedal lay a shirt button. She put it in the saucer with the others.\"\n}"
+      }
+    ],
+    "max_completion_tokens": 4096,
+    "reasoning_effort": "low"
+  },
+  "state_sha256": "0510f481b5bcd4b847c2a29dc799e77ecc9efa9914fdc26a48bc4d38ffdc9053",
+  "reserved_cost_usd": 0.22658
+}

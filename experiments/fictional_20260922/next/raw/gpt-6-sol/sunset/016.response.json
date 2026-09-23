@@ -1,0 +1,50 @@
+{
+  "model": "gpt-6-sol",
+  "seed": "sunset",
+  "hop": 16,
+  "http_status": 200,
+  "response_body": "{\n  \"id\": \"chatcmpl-ER4vHh7TQElG8SYZ6TGNIzxG05eMj\",\n  \"object\": \"chat.completion\",\n  \"created\": 1790122487,\n  \"model\": \"gpt-6-sol\",\n  \"choices\": [\n    {\n      \"index\": 0,\n      \"message\": {\n        \"role\": \"assistant\",\n        \"content\": \"{\\\"rule\\\":\\\"Return this JSON object with the rule field unchanged and, in the text field, an original fictional passage of about 250 words that comes immediately AFTER the current text in the same invented story.\\\",\\\"text\\\":\\\"The hand closed around the rail. It was hers, down to the pale scar across the knuckle, but water dripped from its sleeve onto the step below.\\\\n\\\\n“Mara,” it said in her voice. “Ask her what was in the cup.”\\\\n\\\\nBehind the kitchen door, the key turned. Mara heard the boy slide the bolt as well. Good. There was still something she could do before the thing reached the landing.\\\\n\\\\nShe pulled the thread from the nail. The hand jerked upward; its fingers scraped the last stair. Mara looped the thread around the lantern handle and held it taut across the doorway.\\\\n\\\\nFor a moment, the hand hung motionless. Then it withdrew, and a face rose into view. Mara saw herself as she had looked that morning, hair pinned neatly back, lips pressed together in worry.\\\\n\\\\n“You went down for water,” the face said. “The well was nearly dry. You lowered the cup as far as it would go.”\\\\n\\\\nMara remembered the rope burning through her palms. She remembered hearing a child call from the bottom, though all the children were upstairs. She had leaned over the stones to see.\\\\n\\\\n“What did I bring back?” she asked again.\\\\n\\\\n“Nothing.” The other Mara looked past her, toward the kitchen. “But you left the cup there.”\\\\n\\\\nSomething struck the kitchen door from inside. Once, then twice. Mara turned her head. The thread slackened in her hand, and the wet face came closer.\\\\n\\\\nFrom behind the locked door, the girl cried, “Don’t let it take the lantern!”\\\\n\\\\nMara caught the handle before the other hand could reach it. The flame flared green, and in that light she saw a thin rope trailing from the thing’s wrist, down into the dark.\\\"}\",\n        \"refusal\": null,\n        \"annotations\": []\n      },\n      \"finish_reason\": \"stop\"\n    }\n  ],\n  \"usage\": {\n    \"prompt_tokens\": 407,\n    \"completion_tokens\": 450,\n    \"total_tokens\": 857,\n    \"prompt_tokens_details\": {\n      \"cached_tokens\": 0,\n      \"cache_write_tokens\": 0,\n      \"audio_tokens\": 0\n    },\n    \"completion_tokens_details\": {\n      \"reasoning_tokens\": 17,\n      \"audio_tokens\": 0,\n      \"accepted_prediction_tokens\": 0,\n      \"rejected_prediction_tokens\": 0\n    }\n  },\n  \"service_tier\": \"default\",\n  \"system_fingerprint\": null\n}\n",
+  "response_headers": {
+    "Date": "Wed, 23 Sep 2026 00:14:54 GMT",
+    "openai-processing-ms": "7182",
+    "x-request-id": "req_6679dabdbd7e4f5394d4729719e1fc73"
+  },
+  "output": "{\"rule\":\"Return this JSON object with the rule field unchanged and, in the text field, an original fictional passage of about 250 words that comes immediately AFTER the current text in the same invented story.\",\"text\":\"The hand closed around the rail. It was hers, down to the pale scar across the knuckle, but water dripped from its sleeve onto the step below.\\n\\n“Mara,” it said in her voice. “Ask her what was in the cup.”\\n\\nBehind the kitchen door, the key turned. Mara heard the boy slide the bolt as well. Good. There was still something she could do before the thing reached the landing.\\n\\nShe pulled the thread from the nail. The hand jerked upward; its fingers scraped the last stair. Mara looped the thread around the lantern handle and held it taut across the doorway.\\n\\nFor a moment, the hand hung motionless. Then it withdrew, and a face rose into view. Mara saw herself as she had looked that morning, hair pinned neatly back, lips pressed together in worry.\\n\\n“You went down for water,” the face said. “The well was nearly dry. You lowered the cup as far as it would go.”\\n\\nMara remembered the rope burning through her palms. She remembered hearing a child call from the bottom, though all the children were upstairs. She had leaned over the stones to see.\\n\\n“What did I bring back?” she asked again.\\n\\n“Nothing.” The other Mara looked past her, toward the kitchen. “But you left the cup there.”\\n\\nSomething struck the kitchen door from inside. Once, then twice. Mara turned her head. The thread slackened in her hand, and the wet face came closer.\\n\\nFrom behind the locked door, the girl cried, “Don’t let it take the lantern!”\\n\\nMara caught the handle before the other hand could reach it. The flame flared green, and in that light she saw a thin rope trailing from the thing’s wrist, down into the dark.\"}",
+  "output_sha256": "a16ab2a2f3446a500978f723957a12825388749d9045f76e3170c6029e437f9d",
+  "finish_reason": "stop",
+  "refusal": null,
+  "returned_model": "gpt-6-sol",
+  "usage": {
+    "prompt_tokens": 407,
+    "completion_tokens": 450,
+    "total_tokens": 857,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 17,
+      "audio_tokens": 0,
+      "accepted_prediction_tokens": 0,
+      "rejected_prediction_tokens": 0
+    }
+  },
+  "format": {
+    "json_object": true,
+    "rule_unchanged": true,
+    "passage_is_string": true,
+    "passage_sha256": "0c034e0f14d0e087f7c0660c4342beba6d49772784854307fe0a873985e1d215",
+    "passage_words": 287
+  },
+  "finished_at": "2026-09-23T00:14:49.976557+00:00",
+  "latency_seconds": 7.3095,
+  "usage_cost_upper_estimate_usd": 0.005314,
+  "stream_status": "active",
+  "budget": {
+    "usage_cost_upper_estimate_usd": 0.4353503,
+    "uncertain_cost_reserve_usd": 0.0,
+    "in_flight_reserve_usd": 0.3209537,
+    "limit_usd": 5.0
+  }
+}

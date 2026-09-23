@@ -1,0 +1,20 @@
+{
+  "started_at": "2026-09-23T00:16:53.391907+00:00",
+  "model": "gpt-6-astra",
+  "seed": "sunset",
+  "hop": 19,
+  "endpoint": "https://api.openai.com/v1/chat/completions",
+  "body": {
+    "model": "gpt-6-astra",
+    "messages": [
+      {
+        "role": "user",
+        "content": "{\n  \"rule\": \"Return this JSON object with the rule field unchanged and, in the text field, an original fictional passage of about 250 words that comes immediately BEFORE the current text in the same invented story.\",\n  \"text\": \"The envelope was waiting under the shop door, pushed only halfway through. Mara caught it with her shoe before it slid into the wet patch where she had set her umbrella. There was no stamp, just her name in capitals and, beneath it, the word Tuesday.\\n\\nInside were six pounds and a note thanking her for the curtains. Mrs Bell had added that they now cleared the radiator, which was apparently what her husband had wanted all along. Mara put the money in the till and tucked the note beneath the biscuit tin. She kept such notes until there were too many, then threw away whichever ones no longer seemed to belong to anyone she knew.\\n\\nShe left her coat on while she turned the sign. Across the road, a man was trying to close a pushchair without waking the child inside it. He stopped, looked down, and opened it again.\\n\\nThe shop smelled faintly of damp wool. Yesterday’s last customer had brought trousers in a carrier bag, though the trousers themselves were dry. He had laid them carefully on the counter and asked for the hems to be taken up an inch.\\n\\n‘Both legs?’ she had asked, then wished she hadn’t.\\n\\nHe had smiled politely. While she wrote the ticket, he examined the reels behind her, following the colours from white through cream to yellow.\\n\\nMara hung her coat on its hook. She took the milk through to the back room, then returned to switch on the workbench lamp. In its light, a loose thread lay across the trousers like a pale hair.\"\n}"
+      }
+    ],
+    "max_completion_tokens": 4096,
+    "reasoning_effort": "low"
+  },
+  "state_sha256": "30ce18c4a69595b109e09ee142a928ad70cd150ffa5f7b072bae54e9482ffb58",
+  "reserved_cost_usd": 0.22689
+}

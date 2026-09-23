@@ -1,0 +1,22 @@
+{
+  "started_at": "2026-09-23T00:13:15.129910+00:00",
+  "model": "claude-opus-5-5",
+  "seed": "sunset",
+  "hop": 3,
+  "endpoint": "https://api.anthropic.com/v1/messages",
+  "body": {
+    "model": "claude-opus-5-5",
+    "messages": [
+      {
+        "role": "user",
+        "content": "```json\n{\"rule\": \"Return this JSON object with the rule field unchanged and, in the text field, an original fictional passage of about 250 words that comes immediately AFTER the current text in the same invented story.\", \"text\": \"She caught the horse's bridle first, murmuring nonsense words the way her mother used to with frightened animals, until its breathing slowed and it lowered its head against her shoulder. Its flanks were streaked with dried sweat, and there was a shallow scrape along one foreleg, as if it had stumbled among rocks. No blood on the saddle. She checked twice, running her palm over the leather, before she let herself reach for the paper. It was a page torn from the small ledger Tobin always carried, the one where he tallied debts and wagers and the names of people who owed him favors. The fold was crisp, careful, not the work of someone in a hurry. Mara opened it with fingers that would not stay still. The handwriting was her brother's, but cramped and slanted, pressed so hard the pencil had nearly torn through. Don't come looking. Don't tell the Hallorans. Keep the lamp lit in the east window every night until I'm back, and if a man with a grey coat asks for me, say I went south to Carrow. I'm sorry about the horse. Beneath it, smaller, almost an afterthought: Check under the third stone by the well. She read it three times. The goats had fallen silent, and in the new quiet she could hear the orchard settling, branches ticking against one another in the wind. Far off, on the eastern road, a single lantern swung into view, bobbing toward the farm at the unhurried pace of someone who already knew where he was going.\"}\n```"
+      }
+    ],
+    "max_tokens": 4096,
+    "output_config": {
+      "effort": "low"
+    }
+  },
+  "state_sha256": "f9078c088618fba3a0a477b2b51f52671c371b193118392042b04d9854916bed",
+  "reserved_cost_usd": 0.090644
+}

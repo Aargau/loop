@@ -1,0 +1,50 @@
+{
+  "model": "gpt-6-luna",
+  "seed": "sunset",
+  "hop": 17,
+  "http_status": 200,
+  "response_body": "{\n  \"id\": \"chatcmpl-ER4ujncSd3LzA1ODjMK2Id3GtU1eY\",\n  \"object\": \"chat.completion\",\n  \"created\": 1790122453,\n  \"model\": \"gpt-6-luna\",\n  \"choices\": [\n    {\n      \"index\": 0,\n      \"message\": {\n        \"role\": \"assistant\",\n        \"content\": \"{\\\"rule\\\":\\\"Return this JSON object with the rule field unchanged and, in the text field, an original fictional passage of about 250 words that comes immediately BEFORE the current text in the same invented story.\\\",\\\"text\\\":\\\"In October, Mara had believed the café might be a place to start over. She’d moved across town after her old job at a print shop disappeared, bringing two suitcases, a chipped blue mug, and a list of bills folded into her coat pocket. The café hired her after a short interview and promised regular shifts. For the first few weeks, she let herself imagine that regular could mean reliable.\\\\n\\\\nThe owner, Mr. Bell, rarely came in, but his daughter, who managed the café, said business would pick up once the weather turned. Mara learned the menu, memorized which customers wanted oat milk, and discovered that the espresso machine made a small whistle just before it needed descaling. She liked the work more than she expected. There was comfort in the clink of cups and the familiar rhythm of clearing tables.\\\\n\\\\nThen November brought a run of quiet afternoons. The manager started sending people home early, one by one, with apologies and promises to make it up later. Mara stayed whenever anyone called in sick, hoping extra hours might balance the ones she’d lost. Her paychecks still covered the essentials, but each came close enough to the edge that she checked her bank account before buying groceries.\\\\n\\\\nOne evening, while she was stacking chairs, the manager mentioned that the schedule might get tighter after the holidays. He said it casually, already looking toward the office, and Mara asked no questions. She told herself there was time to sort it out. The next morning, she walked to work beneath a sky the color of dishwater, carrying coffee in the blue mug and believing, for now, that the job would hold.\\\"}\",\n        \"refusal\": null,\n        \"annotations\": []\n      },\n      \"finish_reason\": \"stop\"\n    }\n  ],\n  \"usage\": {\n    \"prompt_tokens\": 384,\n    \"completion_tokens\": 474,\n    \"total_tokens\": 858,\n    \"prompt_tokens_details\": {\n      \"cached_tokens\": 0,\n      \"cache_write_tokens\": 0,\n      \"audio_tokens\": 0\n    },\n    \"completion_tokens_details\": {\n      \"reasoning_tokens\": 87,\n      \"audio_tokens\": 0,\n      \"accepted_prediction_tokens\": 0,\n      \"rejected_prediction_tokens\": 0\n    }\n  },\n  \"service_tier\": \"default\",\n  \"system_fingerprint\": null\n}\n",
+  "response_headers": {
+    "Date": "Wed, 23 Sep 2026 00:14:17 GMT",
+    "openai-processing-ms": "4640",
+    "x-request-id": "req_5ac2d7657efb411c8bda6e3f90f6a2f8"
+  },
+  "output": "{\"rule\":\"Return this JSON object with the rule field unchanged and, in the text field, an original fictional passage of about 250 words that comes immediately BEFORE the current text in the same invented story.\",\"text\":\"In October, Mara had believed the café might be a place to start over. She’d moved across town after her old job at a print shop disappeared, bringing two suitcases, a chipped blue mug, and a list of bills folded into her coat pocket. The café hired her after a short interview and promised regular shifts. For the first few weeks, she let herself imagine that regular could mean reliable.\\n\\nThe owner, Mr. Bell, rarely came in, but his daughter, who managed the café, said business would pick up once the weather turned. Mara learned the menu, memorized which customers wanted oat milk, and discovered that the espresso machine made a small whistle just before it needed descaling. She liked the work more than she expected. There was comfort in the clink of cups and the familiar rhythm of clearing tables.\\n\\nThen November brought a run of quiet afternoons. The manager started sending people home early, one by one, with apologies and promises to make it up later. Mara stayed whenever anyone called in sick, hoping extra hours might balance the ones she’d lost. Her paychecks still covered the essentials, but each came close enough to the edge that she checked her bank account before buying groceries.\\n\\nOne evening, while she was stacking chairs, the manager mentioned that the schedule might get tighter after the holidays. He said it casually, already looking toward the office, and Mara asked no questions. She told herself there was time to sort it out. The next morning, she walked to work beneath a sky the color of dishwater, carrying coffee in the blue mug and believing, for now, that the job would hold.\"}",
+  "output_sha256": "2c26c205b3c8b5a04c2ebbdc219dca3ed84346d4154c4dc2cdd243ee9b99b6ee",
+  "finish_reason": "stop",
+  "refusal": null,
+  "returned_model": "gpt-6-luna",
+  "usage": {
+    "prompt_tokens": 384,
+    "completion_tokens": 474,
+    "total_tokens": 858,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 87,
+      "audio_tokens": 0,
+      "accepted_prediction_tokens": 0,
+      "rejected_prediction_tokens": 0
+    }
+  },
+  "format": {
+    "json_object": true,
+    "rule_unchanged": true,
+    "passage_is_string": true,
+    "passage_sha256": "cdb5977864c71840ee64cc5cd448879ee75e2a228c53a0b8bd919261ea82f99c",
+    "passage_words": 279
+  },
+  "finished_at": "2026-09-23T00:14:13.014997+00:00",
+  "latency_seconds": 4.7593,
+  "usage_cost_upper_estimate_usd": 0.00027539999999999997,
+  "stream_status": "active",
+  "budget": {
+    "usage_cost_upper_estimate_usd": 0.3330298,
+    "uncertain_cost_reserve_usd": 0.0,
+    "in_flight_reserve_usd": 0.363678,
+    "limit_usd": 5.0
+  }
+}

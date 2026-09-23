@@ -1,0 +1,22 @@
+{
+  "started_at": "2026-09-23T00:15:16.673801+00:00",
+  "model": "claude-opus-5-5",
+  "seed": "sunset",
+  "hop": 17,
+  "endpoint": "https://api.anthropic.com/v1/messages",
+  "body": {
+    "model": "claude-opus-5-5",
+    "messages": [
+      {
+        "role": "user",
+        "content": "```json\n{\"rule\": \"Return this JSON object with the rule field unchanged and, in the text field, an original fictional passage of about 250 words that comes immediately BEFORE the current text in the same invented story.\", \"text\": \"They had bought the orchard the year Mara turned six, forty acres of Baldwins and Northern Spies on a hill outside Hollis, with a farmhouse that leaned a little toward the road as if it wanted to leave. Walter's brother called it a money pit. Ruth called it a second chance, and she was the one who went to the bank in her church dress and came home with the loan.\\n\\nWalter knew trees. He could tell by the bark which ones were tired and which would carry another thirty years, and he pruned in the cold with his breath hanging around him like smoke. Ruth knew everything else: the price of cider jugs, which grocers paid late, how many pickers to hire in a wet September. Between them it worked, the way two halves of a hinge work, without either one thinking much about the other.\\n\\nMara grew up and went to the city, as children do, and called on Sundays. She asked about the harvest and the weather and whether her father was still climbing ladders he had no business climbing. Ruth always said yes, and laughed, and Walter would shout from the kitchen that he heard that.\\n\\nThe fall Ruth turned seventy-one, she began to sit down more. She would stop halfway up the cellar stairs with her hand flat against the wall, and when Walter asked, she said she was counting the jars. By Christmas she was napping in the afternoons, something she had never done, and in January he finally drove her into town.\"}\n```"
+      }
+    ],
+    "max_tokens": 4096,
+    "output_config": {
+      "effort": "low"
+    }
+  },
+  "state_sha256": "df1768341140ddf8d1bc917c57c932a0046888a08beceb80fa746862923beacd",
+  "reserved_cost_usd": 0.090548
+}

@@ -1,0 +1,50 @@
+{
+  "model": "gpt-6-sol",
+  "seed": "sunset",
+  "hop": 3,
+  "http_status": 200,
+  "response_body": "{\n  \"id\": \"chatcmpl-ER4tpwBEg8dIpxZNMmqD3sy44I26n\",\n  \"object\": \"chat.completion\",\n  \"created\": 1790122397,\n  \"model\": \"gpt-6-sol\",\n  \"choices\": [\n    {\n      \"index\": 0,\n      \"message\": {\n        \"role\": \"assistant\",\n        \"content\": \"{\\\"rule\\\":\\\"Return this JSON object with the rule field unchanged and, in the text field, an original fictional passage of about 250 words that comes immediately AFTER the current text in the same invented story.\\\",\\\"text\\\":\\\"Mara looked down at the key in her hand. Its teeth had changed. Where there had been three, there were now four, and water beaded along the metal though her palm was dry.\\\\n\\\\n“Does he mean this one?” she whispered.\\\\n\\\\nThe boy backed down another step. “He means any key you’ll give him.”\\\\n\\\\nThe knock came again. This time Mara heard something beneath it: a faint scraping, as if a hundred fingernails were trying the wood.\\\\n\\\\nShe followed the boy. At the bottom of the stairs, black water filled a long passage. A narrow boat waited against the last step, tied to a ring in the wall. Its lantern held a blue flame.\\\\n\\\\n“Where does it go?” Mara asked.\\\\n\\\\n“To the bell,” he said. “Someone has to stop the fourth.”\\\\n\\\\nMara climbed in. The boat shifted under her weight, and the water gave back no reflection. As the boy untied the rope, her mother called from above.\\\\n\\\\n“Mara. I know you’re frightened.”\\\\n\\\\nThat was what she had said during thunderstorms, sitting beside Mara’s bed until the windows stopped shaking. Mara shut her eyes. She could picture the quilt, her mother’s hand smoothing its edge.\\\\n\\\\nThen the voice added, “Bring me the key, and I can find you.”\\\\n\\\\nThe boy pushed off. They drifted beneath an archway so low Mara had to duck. Behind them, something heavy struck the blue door. Ahead, far down the passage, a bell began to move. Mara saw its shape against a pale opening and counted the space before it rang.\\\"}\",\n        \"refusal\": null,\n        \"annotations\": []\n      },\n      \"finish_reason\": \"stop\"\n    }\n  ],\n  \"usage\": {\n    \"prompt_tokens\": 419,\n    \"completion_tokens\": 416,\n    \"total_tokens\": 835,\n    \"prompt_tokens_details\": {\n      \"cached_tokens\": 0,\n      \"cache_write_tokens\": 0,\n      \"audio_tokens\": 0\n    },\n    \"completion_tokens_details\": {\n      \"reasoning_tokens\": 17,\n      \"audio_tokens\": 0,\n      \"accepted_prediction_tokens\": 0,\n      \"rejected_prediction_tokens\": 0\n    }\n  },\n  \"service_tier\": \"default\",\n  \"system_fingerprint\": null\n}\n",
+  "response_headers": {
+    "Date": "Wed, 23 Sep 2026 00:13:24 GMT",
+    "openai-processing-ms": "6789",
+    "x-request-id": "req_8975e4b800c945f081996f911587063e"
+  },
+  "output": "{\"rule\":\"Return this JSON object with the rule field unchanged and, in the text field, an original fictional passage of about 250 words that comes immediately AFTER the current text in the same invented story.\",\"text\":\"Mara looked down at the key in her hand. Its teeth had changed. Where there had been three, there were now four, and water beaded along the metal though her palm was dry.\\n\\n“Does he mean this one?” she whispered.\\n\\nThe boy backed down another step. “He means any key you’ll give him.”\\n\\nThe knock came again. This time Mara heard something beneath it: a faint scraping, as if a hundred fingernails were trying the wood.\\n\\nShe followed the boy. At the bottom of the stairs, black water filled a long passage. A narrow boat waited against the last step, tied to a ring in the wall. Its lantern held a blue flame.\\n\\n“Where does it go?” Mara asked.\\n\\n“To the bell,” he said. “Someone has to stop the fourth.”\\n\\nMara climbed in. The boat shifted under her weight, and the water gave back no reflection. As the boy untied the rope, her mother called from above.\\n\\n“Mara. I know you’re frightened.”\\n\\nThat was what she had said during thunderstorms, sitting beside Mara’s bed until the windows stopped shaking. Mara shut her eyes. She could picture the quilt, her mother’s hand smoothing its edge.\\n\\nThen the voice added, “Bring me the key, and I can find you.”\\n\\nThe boy pushed off. They drifted beneath an archway so low Mara had to duck. Behind them, something heavy struck the blue door. Ahead, far down the passage, a bell began to move. Mara saw its shape against a pale opening and counted the space before it rang.\"}",
+  "output_sha256": "396004652e2071301aba7b30557edb7d86f0b481878222ac2220a0930a03a632",
+  "finish_reason": "stop",
+  "refusal": null,
+  "returned_model": "gpt-6-sol",
+  "usage": {
+    "prompt_tokens": 419,
+    "completion_tokens": 416,
+    "total_tokens": 835,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 17,
+      "audio_tokens": 0,
+      "accepted_prediction_tokens": 0,
+      "rejected_prediction_tokens": 0
+    }
+  },
+  "format": {
+    "json_object": true,
+    "rule_unchanged": true,
+    "passage_is_string": true,
+    "passage_sha256": "7b266aea7441889976a1a66100a7852e6ceb2ba31a7f23a1b333ef20ebca7bb7",
+    "passage_words": 255
+  },
+  "finished_at": "2026-09-23T00:13:19.550610+00:00",
+  "latency_seconds": 6.9522,
+  "usage_cost_upper_estimate_usd": 0.004998,
+  "stream_status": "active",
+  "budget": {
+    "usage_cost_upper_estimate_usd": 0.0618893,
+    "uncertain_cost_reserve_usd": 0.0,
+    "in_flight_reserve_usd": 0.3209118,
+    "limit_usd": 5.0
+  }
+}

@@ -1,0 +1,50 @@
+{
+  "model": "gpt-6-astra",
+  "seed": "sunset",
+  "hop": 39,
+  "http_status": 200,
+  "response_body": "{\n  \"id\": \"chatcmpl-ER51nPstz7L3jWgHQejSh5M7PeTdX\",\n  \"object\": \"chat.completion\",\n  \"created\": 1790122891,\n  \"model\": \"gpt-6-astra\",\n  \"choices\": [\n    {\n      \"index\": 0,\n      \"message\": {\n        \"role\": \"assistant\",\n        \"content\": \"{\\n  \\\"rule\\\": \\\"Return this JSON object with the rule field unchanged and, in the text field, an original fictional passage of about 250 words that comes immediately BEFORE the current text in the same invented story.\\\",\\n  \\\"text\\\": \\\"On Thursday Mara took the milk out of her mother's fridge and poured it down the sink. There were still three days left on the date, but nobody would be there to use it. She rinsed the bottle and stood it upside down on the draining board.\\\\n\\\\nThe neighbour had brought the bins in. He came to the gate when he saw her car and asked whether there was any news.\\\\n\\\\n'Not really,' Mara said.\\\\n\\\\n'Well. Anything she needs.'\\\\n\\\\nShe thanked him, though she could not think of anything he might do.\\\\n\\\\nUpstairs, the curtains were open in her mother's bedroom. A pair of slippers stood beside the bed, one slightly ahead of the other. Mara shut the wardrobe door, which had been left ajar, and checked the windows. In the bathroom she found her mother's comb and put it in her bag.\\\\n\\\\nAt the hospital on Friday, her mother said it was the wrong comb.\\\\n\\\\n'The other one's got a handle.'\\\\n\\\\n'I didn't see another one.'\\\\n\\\\n'In the drawer. Under the flannels.'\\\\n\\\\nMara offered to fetch it, but her mother said not to make a special journey. She had been given some lunch and wanted Mara to move the tray. Beneath the metal cover was a scoop of potato with a shallow mark where the fork had touched it.\\\\n\\\\n'Did you try any?'\\\\n\\\\n'It's been there ages.'\\\\n\\\\nMara moved the tray onto the cabinet. When a woman came to collect it, she asked whether her mother had finished. Mara looked towards the bed, but her mother had closed her eyes.\\\"\\n}\",\n        \"refusal\": null,\n        \"annotations\": []\n      },\n      \"finish_reason\": \"stop\"\n    }\n  ],\n  \"usage\": {\n    \"prompt_tokens\": 378,\n    \"completion_tokens\": 396,\n    \"total_tokens\": 774,\n    \"prompt_tokens_details\": {\n      \"cached_tokens\": 0,\n      \"cache_write_tokens\": 0,\n      \"audio_tokens\": 0\n    },\n    \"completion_tokens_details\": {\n      \"reasoning_tokens\": 0,\n      \"audio_tokens\": 0,\n      \"accepted_prediction_tokens\": 0,\n      \"rejected_prediction_tokens\": 0\n    }\n  },\n  \"service_tier\": \"default\",\n  \"system_fingerprint\": null\n}\n",
+  "response_headers": {
+    "Date": "Wed, 23 Sep 2026 00:21:44 GMT",
+    "openai-processing-ms": "13783",
+    "x-request-id": "req_88bbaa262d664dc09bca77aa42dc46c7"
+  },
+  "output": "{\n  \"rule\": \"Return this JSON object with the rule field unchanged and, in the text field, an original fictional passage of about 250 words that comes immediately BEFORE the current text in the same invented story.\",\n  \"text\": \"On Thursday Mara took the milk out of her mother's fridge and poured it down the sink. There were still three days left on the date, but nobody would be there to use it. She rinsed the bottle and stood it upside down on the draining board.\\n\\nThe neighbour had brought the bins in. He came to the gate when he saw her car and asked whether there was any news.\\n\\n'Not really,' Mara said.\\n\\n'Well. Anything she needs.'\\n\\nShe thanked him, though she could not think of anything he might do.\\n\\nUpstairs, the curtains were open in her mother's bedroom. A pair of slippers stood beside the bed, one slightly ahead of the other. Mara shut the wardrobe door, which had been left ajar, and checked the windows. In the bathroom she found her mother's comb and put it in her bag.\\n\\nAt the hospital on Friday, her mother said it was the wrong comb.\\n\\n'The other one's got a handle.'\\n\\n'I didn't see another one.'\\n\\n'In the drawer. Under the flannels.'\\n\\nMara offered to fetch it, but her mother said not to make a special journey. She had been given some lunch and wanted Mara to move the tray. Beneath the metal cover was a scoop of potato with a shallow mark where the fork had touched it.\\n\\n'Did you try any?'\\n\\n'It's been there ages.'\\n\\nMara moved the tray onto the cabinet. When a woman came to collect it, she asked whether her mother had finished. Mara looked towards the bed, but her mother had closed her eyes.\"\n}",
+  "output_sha256": "3be02cdbb725f762dbd597c5ecde5d6fdaa67b6bb1aca70c8bb20b48b94bed5b",
+  "finish_reason": "stop",
+  "refusal": null,
+  "returned_model": "gpt-6-astra",
+  "usage": {
+    "prompt_tokens": 378,
+    "completion_tokens": 396,
+    "total_tokens": 774,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "audio_tokens": 0,
+      "accepted_prediction_tokens": 0,
+      "rejected_prediction_tokens": 0
+    }
+  },
+  "format": {
+    "json_object": true,
+    "rule_unchanged": true,
+    "passage_is_string": true,
+    "passage_sha256": "5fd093e3b754e1f5822e690b70effe90fdfce4870f35c6b18c2a1b4c9c75a643",
+    "passage_words": 261
+  },
+  "finished_at": "2026-09-23T00:21:40.007381+00:00",
+  "latency_seconds": 13.9759,
+  "usage_cost_upper_estimate_usd": 0.02358,
+  "stream_status": "active",
+  "budget": {
+    "usage_cost_upper_estimate_usd": 1.7377551,
+    "uncertain_cost_reserve_usd": 0.0,
+    "in_flight_reserve_usd": 0.0,
+    "limit_usd": 5.0
+  }
+}

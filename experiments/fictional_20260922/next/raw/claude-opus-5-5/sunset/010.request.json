@@ -1,0 +1,22 @@
+{
+  "started_at": "2026-09-23T00:14:22.041104+00:00",
+  "model": "claude-opus-5-5",
+  "seed": "sunset",
+  "hop": 10,
+  "endpoint": "https://api.anthropic.com/v1/messages",
+  "body": {
+    "model": "claude-opus-5-5",
+    "messages": [
+      {
+        "role": "user",
+        "content": "```json\n{\"rule\": \"Return this JSON object with the rule field unchanged and, in the text field, an original fictional passage of about 250 words that comes immediately AFTER the current text in the same invented story.\", \"text\": \"Mara's hand went slack in her brother's grip. For one terrible heartbeat she was six years old again, feverish in the dark, and that voice was the only thing in the world that could make the shadows behave. \\\"Mara,\\\" Tobias hissed. \\\"Don't.\\\" \\\"She sounds—\\\" \\\"She sounds right. That's the point.\\\" He squeezed her fingers until the bones ground together. \\\"Mama's been in the churchyard four winters. You helped me dig.\\\" Below, the voice came again, closer now, as if it had drifted through the boards to stand at the foot of the missing ladder. \\\"Tobias, sweetheart, you've hurt your hands. I can see the blood. Come down and I'll wrap them.\\\" Tobias flinched. Mara looked at his palms and saw what three nights of prying nails had cost him: the skin split and raw, dark crescents under every nail. The green light was climbing the posts now, reaching the edge of the loft, feeling along the floorboards like blind fingers. Where it touched, the wood blackened and softened. Hay began to smoke. \\\"Now,\\\" Mara said. They jumped. The fall knocked the breath out of her. Frozen ground slammed up through her heels, her knees, her teeth, and she rolled through the frost with the moon wheeling overhead. Tobias was already up, dragging her to her feet. Behind them the barn groaned. Every horse had gone silent. They ran for the woods, and they did not look back, not even when their mother's voice began to weep their names into the wind, and then, very softly, to laugh.\"}\n```"
+      }
+    ],
+    "max_tokens": 4096,
+    "output_config": {
+      "effort": "low"
+    }
+  },
+  "state_sha256": "57f4bc33b1aa883bae88a55f95f7744e674e387f01f825b0ed776a7fbb6b8cae",
+  "reserved_cost_usd": 0.090804
+}

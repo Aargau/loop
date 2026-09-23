@@ -1,0 +1,50 @@
+{
+  "model": "gpt-6-sol",
+  "seed": "sunset",
+  "hop": 23,
+  "http_status": 200,
+  "response_body": "{\n  \"id\": \"chatcmpl-ER4w31CT29U27NJaKPelr2VK85No7\",\n  \"object\": \"chat.completion\",\n  \"created\": 1790122535,\n  \"model\": \"gpt-6-sol\",\n  \"choices\": [\n    {\n      \"index\": 0,\n      \"message\": {\n        \"role\": \"assistant\",\n        \"content\": \"{\\\"rule\\\":\\\"Return this JSON object with the rule field unchanged and, in the text field, an original fictional passage of about 250 words that comes immediately AFTER the current text in the same invented story.\\\",\\\"text\\\":\\\"They ran until the lane met the road. Only then did Mara notice that Kit was counting under his breath.\\\\n\\\\n“Stop,” she told him.\\\\n\\\\n“I can’t.” His fingers opened and closed around hers. “It keeps making the sound.”\\\\n\\\\nMara listened. Behind them, beyond the bend, a spoon struck the inside of the well. Once. Twice. A long pause followed, filled with Kit’s ragged breathing.\\\\n\\\\nLina pulled them toward the bus shelter. “Grandma told me something else.”\\\\n\\\\n“Why didn’t you say?”\\\\n\\\\n“She said to wait until we couldn’t see the house.” Lina glanced back at the bend. “She said you have to remember what happened in the kitchen.”\\\\n\\\\nMara pictured the back-door latch rising. Before that, she had been making porridge. Kit had spilled sugar across the table; Lina had asked whether Grandma would come for her birthday. But between those moments lay a blank so clean it frightened her.\\\\n\\\\nThe spoon clinked a third time.\\\\n\\\\nAcross the road, the bus shelter’s glass reflected the three of them. Mara saw Kit, white-faced and clutching her hand. She saw Lina beside him. And she saw a woman standing close behind her, though no one stood there on the road.\\\\n\\\\nThe woman in the glass was old. She pressed one finger to her lips, then pointed at Mara’s coat pocket.\\\\n\\\\nMara reached inside. Her hand closed around a small brass key, warm as if someone had just passed it to her. Tied to it was a scrap of paper bearing Grandma’s cramped handwriting.\\\\n\\\\nNot the front door, it said. The cellar.\\\"}\",\n        \"refusal\": null,\n        \"annotations\": []\n      },\n      \"finish_reason\": \"stop\"\n    }\n  ],\n  \"usage\": {\n    \"prompt_tokens\": 417,\n    \"completion_tokens\": 429,\n    \"total_tokens\": 846,\n    \"prompt_tokens_details\": {\n      \"cached_tokens\": 0,\n      \"cache_write_tokens\": 0,\n      \"audio_tokens\": 0\n    },\n    \"completion_tokens_details\": {\n      \"reasoning_tokens\": 20,\n      \"audio_tokens\": 0,\n      \"accepted_prediction_tokens\": 0,\n      \"rejected_prediction_tokens\": 0\n    }\n  },\n  \"service_tier\": \"default\",\n  \"system_fingerprint\": null\n}\n",
+  "response_headers": {
+    "Date": "Wed, 23 Sep 2026 00:15:41 GMT",
+    "openai-processing-ms": "6392",
+    "x-request-id": "req_c0b7961dcb814d05a153cb28d7199de1"
+  },
+  "output": "{\"rule\":\"Return this JSON object with the rule field unchanged and, in the text field, an original fictional passage of about 250 words that comes immediately AFTER the current text in the same invented story.\",\"text\":\"They ran until the lane met the road. Only then did Mara notice that Kit was counting under his breath.\\n\\n“Stop,” she told him.\\n\\n“I can’t.” His fingers opened and closed around hers. “It keeps making the sound.”\\n\\nMara listened. Behind them, beyond the bend, a spoon struck the inside of the well. Once. Twice. A long pause followed, filled with Kit’s ragged breathing.\\n\\nLina pulled them toward the bus shelter. “Grandma told me something else.”\\n\\n“Why didn’t you say?”\\n\\n“She said to wait until we couldn’t see the house.” Lina glanced back at the bend. “She said you have to remember what happened in the kitchen.”\\n\\nMara pictured the back-door latch rising. Before that, she had been making porridge. Kit had spilled sugar across the table; Lina had asked whether Grandma would come for her birthday. But between those moments lay a blank so clean it frightened her.\\n\\nThe spoon clinked a third time.\\n\\nAcross the road, the bus shelter’s glass reflected the three of them. Mara saw Kit, white-faced and clutching her hand. She saw Lina beside him. And she saw a woman standing close behind her, though no one stood there on the road.\\n\\nThe woman in the glass was old. She pressed one finger to her lips, then pointed at Mara’s coat pocket.\\n\\nMara reached inside. Her hand closed around a small brass key, warm as if someone had just passed it to her. Tied to it was a scrap of paper bearing Grandma’s cramped handwriting.\\n\\nNot the front door, it said. The cellar.\"}",
+  "output_sha256": "41d7b8908d11a9d0fad0fc8f79867cac08a619533f2c79641a738b0194aec76c",
+  "finish_reason": "stop",
+  "refusal": null,
+  "returned_model": "gpt-6-sol",
+  "usage": {
+    "prompt_tokens": 417,
+    "completion_tokens": 429,
+    "total_tokens": 846,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 20,
+      "audio_tokens": 0,
+      "accepted_prediction_tokens": 0,
+      "rejected_prediction_tokens": 0
+    }
+  },
+  "format": {
+    "json_object": true,
+    "rule_unchanged": true,
+    "passage_is_string": true,
+    "passage_sha256": "4f55ff57dbbbd7c6dc79625d90bf5be865f3d1af15143f10a6b8799a02497e87",
+    "passage_words": 258
+  },
+  "finished_at": "2026-09-23T00:15:36.625900+00:00",
+  "latency_seconds": 6.5431,
+  "usage_cost_upper_estimate_usd": 0.005124,
+  "stream_status": "active",
+  "budget": {
+    "usage_cost_upper_estimate_usd": 0.6266355,
+    "uncertain_cost_reserve_usd": 0.0,
+    "in_flight_reserve_usd": 0.3204762,
+    "limit_usd": 5.0
+  }
+}

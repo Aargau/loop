@@ -1,0 +1,22 @@
+{
+  "started_at": "2026-09-23T00:16:14.619414+00:00",
+  "model": "claude-opus-5-5",
+  "seed": "sunset",
+  "hop": 23,
+  "endpoint": "https://api.anthropic.com/v1/messages",
+  "body": {
+    "model": "claude-opus-5-5",
+    "messages": [
+      {
+        "role": "user",
+        "content": "```json\n{\"rule\": \"Return this JSON object with the rule field unchanged and, in the text field, an original fictional passage of about 250 words that comes immediately BEFORE the current text in the same invented story.\", \"text\": \"The pear tree behind the Harlow house had been planted by Walter's great-grandfather, and in the late summer of 1952 it bore more fruit than anyone could remember. The branches bowed so low that Walter had to prop them with forked poles cut from the woodlot, and still one limb split under the weight and hung there, bleeding sap, until his father sawed it off.\\n\\nHis mother took it as a sign, though she never said of what. For two weeks in September the kitchen was all steam and sugar. She peeled pears at the table until her fingers wrinkled, packed them into jars, and lined the cellar shelves in rows so neat they looked like books in a library. Walter carried the crates down the narrow stairs in the evenings, after milking, and counted them without meaning to. Ninety-one jars. Enough for two winters, maybe three.\\n\\nHis father watched all this from the porch and said little. The letter from the bank had come in August, on thick cream paper, and it lay folded in the breadbox where nobody had to look at it. The milk check had dropped again. The hay had come in thin after a dry June. The tractor needed a clutch they could not afford.\\n\\nOne night Walter found his father standing in the cellar with a lantern, looking at the shelves.\\n\\n\\\"Your mother does good work,\\\" he said.\\n\\n\\\"She does.\\\"\\n\\nHis father nodded slowly, as if agreeing to something larger, and climbed the stairs without another word.\"}\n```"
+      }
+    ],
+    "max_tokens": 4096,
+    "output_config": {
+      "effort": "low"
+    }
+  },
+  "state_sha256": "ba4e872960bf7dda90deeee1a8c9a438ce3653d166e1c525e529ff7b1bca0bf9",
+  "reserved_cost_usd": 0.090592
+}

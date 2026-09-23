@@ -1,0 +1,22 @@
+{
+  "started_at": "2026-09-23T00:13:03.388704+00:00",
+  "model": "claude-opus-5-5",
+  "seed": "sunset",
+  "hop": 3,
+  "endpoint": "https://api.anthropic.com/v1/messages",
+  "body": {
+    "model": "claude-opus-5-5",
+    "messages": [
+      {
+        "role": "user",
+        "content": "{\"rule\": \"Return this JSON object with the rule field unchanged and, in the text field, an original fictional passage of about 250 words that comes immediately BEFORE the current text in the same invented story.\", \"text\": \"The morning had begun with rain, a soft gray drizzle that tapped against the kitchen window while Mara ate her porridge. Her grandfather sat across from her, mending the torn strap of an old leather harness, his reading glasses balanced low on his nose. He worked slowly now. His fingers were knotted like the roots of the pear trees he had planted fifty years before, but they still knew every stitch.\\n\\n\\\"The Hallorans won't want the late pears,\\\" he said, without looking up. \\\"Too soft for the cart. But your mother used to make preserves from them, the ones nobody else would take.\\\"\\n\\nMara set down her spoon. She had found the recipe the week before, tucked inside a cookbook swollen with damp, written in handwriting that looped and slanted like her own. She had not told him. She had been afraid it would make him sad.\\n\\n\\\"I could pick some,\\\" she said carefully. \\\"After the rain stops.\\\"\\n\\nHe was quiet for a long moment. Then he nodded, and something in his face loosened, the way the sky loosens before the sun breaks through.\\n\\n\\\"Take the canvas sack from the shed,\\\" he said. \\\"And mind the far rows. The wall's crumbling near the river, and the ground gives way if you're not careful.\\\" He finally looked at her over the rims of his glasses. \\\"Home before dark, Mara. I mean it.\\\"\\n\\nBy noon the clouds had drifted east, leaving the grass bright and dripping. Mara promised, slung the empty sack over her shoulder, and walked out into the glittering afternoon.\"}"
+      }
+    ],
+    "max_tokens": 4096,
+    "output_config": {
+      "effort": "low"
+    }
+  },
+  "state_sha256": "5be76db33101e9086a86e73cbc120e833bb080e4798375939608971b05a5e5f2",
+  "reserved_cost_usd": 0.090792
+}

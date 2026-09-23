@@ -1,0 +1,50 @@
+{
+  "model": "gpt-6-astra",
+  "seed": "sunset",
+  "hop": 15,
+  "http_status": 200,
+  "response_body": "{\n  \"id\": \"chatcmpl-ER4wZSw7ZuLFjvc4Fht7dpS4v5EQ6\",\n  \"object\": \"chat.completion\",\n  \"created\": 1790122567,\n  \"model\": \"gpt-6-astra\",\n  \"choices\": [\n    {\n      \"index\": 0,\n      \"message\": {\n        \"role\": \"assistant\",\n        \"content\": \"{\\n  \\\"rule\\\": \\\"Return this JSON object with the rule field unchanged and, in the text field, an original fictional passage of about 250 words that comes immediately BEFORE the current text in the same invented story.\\\",\\n  \\\"text\\\": \\\"Mara had left the shop with the lights on. Halfway to the hospital she remembered the iron, then remembered unplugging it before she answered the telephone. There was a pair of trousers laid across the board, one leg pressed and the other still showing the pale line where the hem had been.\\\\n\\\\nAt reception she gave her father’s name. The woman asked her to spell it, though it was an ordinary name, and pointed towards the lifts.\\\\n\\\\nHer brother had not answered either number. She had called his house first, then his mobile, standing beside a machine that sold sandwiches. On the second call she watched a packet move forward on its metal coil and stop against the glass. The man who had paid for it pressed the button again.\\\\n\\\\nA doctor took her into a room with no bed. There were three chairs and a low table with a box of tissues on it. He explained what had happened after the neighbour found her father. Mara kept her coat on. When he asked whether there was anything she wanted to know, she asked what time the neighbour had come.\\\\n\\\\nLater, a nurse walked with her to the ward desk. Mara could not remember whether she had thanked the doctor. She looked back, but the door to the little room was closed.\\\\n\\\\n‘He had a bag with him,’ the nurse said. ‘We can give you that now, if you like.’\\\\n\\\\nMara moved aside to let a trolley pass. Then she said yes.\\\"\\n}\",\n        \"refusal\": null,\n        \"annotations\": []\n      },\n      \"finish_reason\": \"stop\"\n    }\n  ],\n  \"usage\": {\n    \"prompt_tokens\": 373,\n    \"completion_tokens\": 357,\n    \"total_tokens\": 730,\n    \"prompt_tokens_details\": {\n      \"cached_tokens\": 0,\n      \"cache_write_tokens\": 0,\n      \"audio_tokens\": 0\n    },\n    \"completion_tokens_details\": {\n      \"reasoning_tokens\": 0,\n      \"audio_tokens\": 0,\n      \"accepted_prediction_tokens\": 0,\n      \"rejected_prediction_tokens\": 0\n    }\n  },\n  \"service_tier\": \"default\",\n  \"system_fingerprint\": null\n}\n",
+  "response_headers": {
+    "Date": "Wed, 23 Sep 2026 00:16:20 GMT",
+    "openai-processing-ms": "13509",
+    "x-request-id": "req_5868e9dfa44d4aff9515b19ea09da015"
+  },
+  "output": "{\n  \"rule\": \"Return this JSON object with the rule field unchanged and, in the text field, an original fictional passage of about 250 words that comes immediately BEFORE the current text in the same invented story.\",\n  \"text\": \"Mara had left the shop with the lights on. Halfway to the hospital she remembered the iron, then remembered unplugging it before she answered the telephone. There was a pair of trousers laid across the board, one leg pressed and the other still showing the pale line where the hem had been.\\n\\nAt reception she gave her father’s name. The woman asked her to spell it, though it was an ordinary name, and pointed towards the lifts.\\n\\nHer brother had not answered either number. She had called his house first, then his mobile, standing beside a machine that sold sandwiches. On the second call she watched a packet move forward on its metal coil and stop against the glass. The man who had paid for it pressed the button again.\\n\\nA doctor took her into a room with no bed. There were three chairs and a low table with a box of tissues on it. He explained what had happened after the neighbour found her father. Mara kept her coat on. When he asked whether there was anything she wanted to know, she asked what time the neighbour had come.\\n\\nLater, a nurse walked with her to the ward desk. Mara could not remember whether she had thanked the doctor. She looked back, but the door to the little room was closed.\\n\\n‘He had a bag with him,’ the nurse said. ‘We can give you that now, if you like.’\\n\\nMara moved aside to let a trolley pass. Then she said yes.\"\n}",
+  "output_sha256": "1dce2537853b4f7b22fb029bf98b18c2d451f79453e8d8981644c316aedf54ea",
+  "finish_reason": "stop",
+  "refusal": null,
+  "returned_model": "gpt-6-astra",
+  "usage": {
+    "prompt_tokens": 373,
+    "completion_tokens": 357,
+    "total_tokens": 730,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "audio_tokens": 0,
+      "accepted_prediction_tokens": 0,
+      "rejected_prediction_tokens": 0
+    }
+  },
+  "format": {
+    "json_object": true,
+    "rule_unchanged": true,
+    "passage_is_string": true,
+    "passage_sha256": "a953d93f05786da62f01acdc589504631f5c3f330c6f1f4ae0b7772ad743c561",
+    "passage_words": 252
+  },
+  "finished_at": "2026-09-23T00:16:15.420177+00:00",
+  "latency_seconds": 13.6354,
+  "usage_cost_upper_estimate_usd": 0.02158,
+  "stream_status": "active",
+  "budget": {
+    "usage_cost_upper_estimate_usd": 0.8330791,
+    "uncertain_cost_reserve_usd": 0.0,
+    "in_flight_reserve_usd": 0.135912,
+    "limit_usd": 5.0
+  }
+}

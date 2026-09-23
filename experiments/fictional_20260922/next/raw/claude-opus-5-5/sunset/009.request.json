@@ -1,0 +1,22 @@
+{
+  "started_at": "2026-09-23T00:14:13.229846+00:00",
+  "model": "claude-opus-5-5",
+  "seed": "sunset",
+  "hop": 9,
+  "endpoint": "https://api.anthropic.com/v1/messages",
+  "body": {
+    "model": "claude-opus-5-5",
+    "messages": [
+      {
+        "role": "user",
+        "content": "```json\n{\"rule\": \"Return this JSON object with the rule field unchanged and, in the text field, an original fictional passage of about 250 words that comes immediately AFTER the current text in the same invented story.\", \"text\": \"Mara grabbed the ladder and climbed. The rungs twisted under her feet, and twice she nearly slipped, but Tobias caught her wrist at the top and hauled her into the loft. He looked thinner than she remembered, his face gray beneath the dirt, his eyes too bright. \\\"Where?\\\" she asked. He pointed toward the back wall, where the old hay door had been nailed shut since their father's time. The nails were gone now, pried loose and scattered across the boards like teeth. \\\"I've been working at it for three nights,\\\" he said. \\\"I only needed one more.\\\" Below them the barn door shuddered. Once. Twice. The horses screamed and stamped in their stalls. Green light seeped through the cracks and crawled along the floor, curling around the posts like smoke. \\\"He can't come in,\\\" Tobias said, pulling up the ladder. \\\"Not unless someone opens it for him.\\\" \\\"Then why is he knocking?\\\" Tobias didn't answer. He set his shoulder against the hay door and pushed. It gave with a shriek of old hinges, and cold night air rushed in, sharp with frost. Beyond lay the long slope of the pasture, silver under the moon, and past that the black line of the woods. It was a twelve-foot drop to the frozen ground. \\\"Together,\\\" Mara said, taking his hand. Behind them the knocking stopped. In the silence that followed, a small, familiar voice drifted up from below, their mother's voice, soft and pleading: \\\"Children? Let me in. It's cold out here.\\\"\"}\n```"
+      }
+    ],
+    "max_tokens": 4096,
+    "output_config": {
+      "effort": "low"
+    }
+  },
+  "state_sha256": "1ed70191b74b6789b8f819f0aa8a5d6a3b6a706376152594fbee9020e881c350",
+  "reserved_cost_usd": 0.090656
+}

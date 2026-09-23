@@ -1,0 +1,50 @@
+{
+  "model": "gpt-6-astra",
+  "seed": "sunset",
+  "hop": 25,
+  "http_status": 200,
+  "response_body": "{\n  \"id\": \"chatcmpl-ER4zCCfr50bFV13vtSbTqwMWCLhUs\",\n  \"object\": \"chat.completion\",\n  \"created\": 1790122730,\n  \"model\": \"gpt-6-astra\",\n  \"choices\": [\n    {\n      \"index\": 0,\n      \"message\": {\n        \"role\": \"assistant\",\n        \"content\": \"{\\n  \\\"rule\\\": \\\"Return this JSON object with the rule field unchanged and, in the text field, an original fictional passage of about 250 words that comes immediately AFTER the current text in the same invented story.\\\",\\n  \\\"text\\\": \\\"He turned the page. The next was blank, except for a sum carried over at the top.\\\\n\\\\n“Who is she?”\\\\n\\\\n“The woman who gave me the tin.”\\\\n\\\\n“You must know her name.”\\\\n\\\\n“She knew mine.”\\\\n\\\\nOutside, a bin lid fell shut. He looked towards the window, but the glass showed only the strip light and his own hand resting on the book.\\\\n\\\\nThe woman took eighty pounds from her coat pocket. Four twenties, folded together. She put them beside the broken rubber band.\\\\n\\\\n“I don't want your money.”\\\\n\\\\n“It isn't mine.”\\\\n\\\\nHe picked up a pair of keys. One was brass, ordinary enough. The other had a square stem and no teeth. A paper label hung from the cord, softened by handling.\\\\n\\\\nOn it was the number of his house.\\\\n\\\\nHe went to the back door. The brass key entered the lock but would not turn. He tried lifting the handle, the way his father had always insisted, and felt the mechanism give.\\\\n\\\\nBehind him, she drew a breath.\\\\n\\\\n“That's all right, then.”\\\\n\\\\nHe locked it again.\\\\n\\\\n“What are you taking?”\\\\n\\\\nShe looked past him at the narrow cupboard beside the refrigerator.\\\\n\\\\n“That wasn't there before,” she said.\\\\n\\\\n“The cupboard?”\\\\n\\\\n“The handle.”\\\\n\\\\nHe had fitted it on Sunday. He remembered the packet of screws, the drill charging by the sink.\\\\n\\\\nFrom the hall came the boy's voice.\\\\n\\\\n“Shall I bring the rest?”\\\\n\\\\nNeither of them answered.\\\\n\\\\nThe woman separated the square key from its cord and laid it on the money.\\\\n\\\\n“You'll need this one afterwards.”\\\"\\n}\",\n        \"refusal\": null,\n        \"annotations\": []\n      },\n      \"finish_reason\": \"stop\"\n    }\n  ],\n  \"usage\": {\n    \"prompt_tokens\": 449,\n    \"completion_tokens\": 425,\n    \"total_tokens\": 874,\n    \"prompt_tokens_details\": {\n      \"cached_tokens\": 0,\n      \"cache_write_tokens\": 0,\n      \"audio_tokens\": 0\n    },\n    \"completion_tokens_details\": {\n      \"reasoning_tokens\": 0,\n      \"audio_tokens\": 0,\n      \"accepted_prediction_tokens\": 0,\n      \"rejected_prediction_tokens\": 0\n    }\n  },\n  \"service_tier\": \"default\",\n  \"system_fingerprint\": null\n}\n",
+  "response_headers": {
+    "Date": "Wed, 23 Sep 2026 00:19:02 GMT",
+    "openai-processing-ms": "12526",
+    "x-request-id": "req_3cfb4fc503294dc6b229ad35bbbf3655"
+  },
+  "output": "{\n  \"rule\": \"Return this JSON object with the rule field unchanged and, in the text field, an original fictional passage of about 250 words that comes immediately AFTER the current text in the same invented story.\",\n  \"text\": \"He turned the page. The next was blank, except for a sum carried over at the top.\\n\\n“Who is she?”\\n\\n“The woman who gave me the tin.”\\n\\n“You must know her name.”\\n\\n“She knew mine.”\\n\\nOutside, a bin lid fell shut. He looked towards the window, but the glass showed only the strip light and his own hand resting on the book.\\n\\nThe woman took eighty pounds from her coat pocket. Four twenties, folded together. She put them beside the broken rubber band.\\n\\n“I don't want your money.”\\n\\n“It isn't mine.”\\n\\nHe picked up a pair of keys. One was brass, ordinary enough. The other had a square stem and no teeth. A paper label hung from the cord, softened by handling.\\n\\nOn it was the number of his house.\\n\\nHe went to the back door. The brass key entered the lock but would not turn. He tried lifting the handle, the way his father had always insisted, and felt the mechanism give.\\n\\nBehind him, she drew a breath.\\n\\n“That's all right, then.”\\n\\nHe locked it again.\\n\\n“What are you taking?”\\n\\nShe looked past him at the narrow cupboard beside the refrigerator.\\n\\n“That wasn't there before,” she said.\\n\\n“The cupboard?”\\n\\n“The handle.”\\n\\nHe had fitted it on Sunday. He remembered the packet of screws, the drill charging by the sink.\\n\\nFrom the hall came the boy's voice.\\n\\n“Shall I bring the rest?”\\n\\nNeither of them answered.\\n\\nThe woman separated the square key from its cord and laid it on the money.\\n\\n“You'll need this one afterwards.”\"\n}",
+  "output_sha256": "7269a6d680161ef0b295504cb5e72882fd967d6443ffdea93f8533af86d259e6",
+  "finish_reason": "stop",
+  "refusal": null,
+  "returned_model": "gpt-6-astra",
+  "usage": {
+    "prompt_tokens": 449,
+    "completion_tokens": 425,
+    "total_tokens": 874,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "audio_tokens": 0,
+      "accepted_prediction_tokens": 0,
+      "rejected_prediction_tokens": 0
+    }
+  },
+  "format": {
+    "json_object": true,
+    "rule_unchanged": true,
+    "passage_is_string": true,
+    "passage_sha256": "479a741af569b557936fa4d44a98272523f940440fb1d13f9412500c7009eb48",
+    "passage_words": 256
+  },
+  "finished_at": "2026-09-23T00:18:57.653389+00:00",
+  "latency_seconds": 12.6503,
+  "usage_cost_upper_estimate_usd": 0.02574,
+  "stream_status": "active",
+  "budget": {
+    "usage_cost_upper_estimate_usd": 1.4185631,
+    "uncertain_cost_reserve_usd": 0.0,
+    "in_flight_reserve_usd": 0.090364,
+    "limit_usd": 5.0
+  }
+}

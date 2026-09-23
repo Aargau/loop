@@ -1,0 +1,47 @@
+{
+  "model": "gpt-6-luna",
+  "seed": "sunset",
+  "hop": 28,
+  "http_status": 200,
+  "response_body": "{\n  \"id\": \"chatcmpl-ER4vZXjbtqFDT8n4Op8WaVTX7F5aG\",\n  \"object\": \"chat.completion\",\n  \"created\": 1790122505,\n  \"model\": \"gpt-6-luna\",\n  \"choices\": [\n    {\n      \"index\": 0,\n      \"message\": {\n        \"role\": \"assistant\",\n        \"content\": \"{\\\"rule\\\":\\\"Return this JSON object with the rule field unchanged and, in the text field, an original fictional passage of about 250 words that comes immediately AFTER the current text in the same invented story.\\\",\\\"text\\\":\\\"In the morning, the window was still open, and the room smelled of wet leaves. Mara sat up and looked at the sill. The stone rested where she had left it, quiet as a button.\\n\\nBeside it lay a damp paper boat.\\n\\nShe called for Elsie. Her sister came running, one sock on and one sock missing, and their mother appeared behind her, fastening the belt of her robe. They gathered around the boat as if it might startle.\\n\\nOn its folded side, in their mother’s blue pencil, was a bird with its wings spread. Beneath it, someone had written a single word: **Tomorrow.**\\n\\nTheir mother touched the pencil marks. “I didn’t draw this.”\\n\\n“No,” Elsie said. She turned the boat over carefully. “But you taught us how.”\\n\\nAt breakfast, they searched the old letters and grocery lists for another clean sheet of paper. They found a recipe for pear cake, a bill from the dentist, and a note their father had once left on the fridge: *Back before the kettle boils.*\\n\\nTheir mother held that one a long time. Then she folded it into a boat, creasing the paper gently, without trying to smooth away the words.\\n\\nMara drew a bird on its sail. Elsie added a crooked moon.\\n\\nThey set the new boat on the windowsill beside the stone. Outside, the rain had stopped. Down in the garden, a puddle reflected a bright patch of sky, and something small drifted across it—slowly, steadily, toward the open gate.\\n\\nNone of them said where it was going.\\n\\nThey had learned that some journeys were easier to follow when you let them begin.\\\"}\",\n        \"refusal\": null,\n        \"annotations\": []\n      },\n      \"finish_reason\": \"stop\"\n    }\n  ],\n  \"usage\": {\n    \"prompt_tokens\": 390,\n    \"completion_tokens\": 468,\n    \"total_tokens\": 858,\n    \"prompt_tokens_details\": {\n      \"cached_tokens\": 0,\n      \"cache_write_tokens\": 0,\n      \"audio_tokens\": 0\n    },\n    \"completion_tokens_details\": {\n      \"reasoning_tokens\": 75,\n      \"audio_tokens\": 0,\n      \"accepted_prediction_tokens\": 0,\n      \"rejected_prediction_tokens\": 0\n    }\n  },\n  \"service_tier\": \"default\",\n  \"system_fingerprint\": null\n}\n",
+  "response_headers": {
+    "Date": "Wed, 23 Sep 2026 00:15:09 GMT",
+    "openai-processing-ms": "4530",
+    "x-request-id": "req_c354bd05f1d1467a8ec17b6f684bad0b"
+  },
+  "output": "{\"rule\":\"Return this JSON object with the rule field unchanged and, in the text field, an original fictional passage of about 250 words that comes immediately AFTER the current text in the same invented story.\",\"text\":\"In the morning, the window was still open, and the room smelled of wet leaves. Mara sat up and looked at the sill. The stone rested where she had left it, quiet as a button.\n\nBeside it lay a damp paper boat.\n\nShe called for Elsie. Her sister came running, one sock on and one sock missing, and their mother appeared behind her, fastening the belt of her robe. They gathered around the boat as if it might startle.\n\nOn its folded side, in their mother’s blue pencil, was a bird with its wings spread. Beneath it, someone had written a single word: **Tomorrow.**\n\nTheir mother touched the pencil marks. “I didn’t draw this.”\n\n“No,” Elsie said. She turned the boat over carefully. “But you taught us how.”\n\nAt breakfast, they searched the old letters and grocery lists for another clean sheet of paper. They found a recipe for pear cake, a bill from the dentist, and a note their father had once left on the fridge: *Back before the kettle boils.*\n\nTheir mother held that one a long time. Then she folded it into a boat, creasing the paper gently, without trying to smooth away the words.\n\nMara drew a bird on its sail. Elsie added a crooked moon.\n\nThey set the new boat on the windowsill beside the stone. Outside, the rain had stopped. Down in the garden, a puddle reflected a bright patch of sky, and something small drifted across it—slowly, steadily, toward the open gate.\n\nNone of them said where it was going.\n\nThey had learned that some journeys were easier to follow when you let them begin.\"}",
+  "output_sha256": "07bc9df405f58c78284c672948afc80bfaef8d4f5aad426b162a07fd6888200f",
+  "finish_reason": "stop",
+  "refusal": null,
+  "returned_model": "gpt-6-luna",
+  "usage": {
+    "prompt_tokens": 390,
+    "completion_tokens": 468,
+    "total_tokens": 858,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 75,
+      "audio_tokens": 0,
+      "accepted_prediction_tokens": 0,
+      "rejected_prediction_tokens": 0
+    }
+  },
+  "format": {
+    "json_object": false,
+    "rule_unchanged": false
+  },
+  "finished_at": "2026-09-23T00:15:04.723015+00:00",
+  "latency_seconds": 4.6802,
+  "usage_cost_upper_estimate_usd": 0.000273,
+  "stream_status": "active",
+  "budget": {
+    "usage_cost_upper_estimate_usd": 0.4882518,
+    "uncertain_cost_reserve_usd": 0.0,
+    "in_flight_reserve_usd": 0.364772,
+    "limit_usd": 5.0
+  }
+}

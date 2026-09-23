@@ -1,0 +1,50 @@
+{
+  "model": "gpt-6-sol",
+  "seed": "sunset",
+  "hop": 22,
+  "http_status": 200,
+  "response_body": "{\n  \"id\": \"chatcmpl-ER4vloX2IGHtMdLuWobmJH182cPE3\",\n  \"object\": \"chat.completion\",\n  \"created\": 1790122517,\n  \"model\": \"gpt-6-sol\",\n  \"choices\": [\n    {\n      \"index\": 0,\n      \"message\": {\n        \"role\": \"assistant\",\n        \"content\": \"{\\n  \\\"rule\\\": \\\"Return this JSON object with the rule field unchanged and, in the text field, an original fictional passage of about 250 words that comes immediately BEFORE the current text in the same invented story.\\\",\\n  \\\"text\\\": \\\"Mara found the note under the blue sugar bowl, where her mother left anything she thought might otherwise be missed. It was a list of three things: washing powder, stamps, bread. The handwriting grew smaller toward the bottom, as if her mother had been running out of room, though the page was nearly blank.\\\\n\\\\nShe had come by to water the plants while her mother was at her afternoon appointment. The soil in the kitchen window was damp already. On the sill stood a glass with a little orange juice in it, and beside it the folded newspaper. Mara rinsed the glass, checked the latch on the back door, and took the list with her.\\\\n\\\\nAt the corner shop she bought washing powder and stamps. She passed the bakery on her way to the bus stop, then turned back. Her mother liked the dark loaf with seeds on top. It was too large for one person, but she always cut it in half and put the rest in the freezer. Mara thought she could leave it on the kitchen table later, with the stamps.\\\\n\\\\nThere were two people ahead of her in the bakery. While she waited, she checked her phone. Her mother had not replied to the message Mara had sent that morning about Sunday lunch. That was ordinary enough; she often forgot to take the phone out of her coat pocket. Mara slipped it away and watched the baker lift the last dark loaf from the shelf.\\\\n\\\\nWhen her turn came, she asked for it. The baker laid a sheet of brown paper on the counter.\\\"\\n}\",\n        \"refusal\": null,\n        \"annotations\": []\n      },\n      \"finish_reason\": \"stop\"\n    }\n  ],\n  \"usage\": {\n    \"prompt_tokens\": 369,\n    \"completion_tokens\": 403,\n    \"total_tokens\": 772,\n    \"prompt_tokens_details\": {\n      \"cached_tokens\": 0,\n      \"cache_write_tokens\": 0,\n      \"audio_tokens\": 0\n    },\n    \"completion_tokens_details\": {\n      \"reasoning_tokens\": 32,\n      \"audio_tokens\": 0,\n      \"accepted_prediction_tokens\": 0,\n      \"rejected_prediction_tokens\": 0\n    }\n  },\n  \"service_tier\": \"default\",\n  \"system_fingerprint\": null\n}\n",
+  "response_headers": {
+    "Date": "Wed, 23 Sep 2026 00:15:23 GMT",
+    "openai-processing-ms": "6299",
+    "x-request-id": "req_12e8052797d843baa55dfbc0ecd72b26"
+  },
+  "output": "{\n  \"rule\": \"Return this JSON object with the rule field unchanged and, in the text field, an original fictional passage of about 250 words that comes immediately BEFORE the current text in the same invented story.\",\n  \"text\": \"Mara found the note under the blue sugar bowl, where her mother left anything she thought might otherwise be missed. It was a list of three things: washing powder, stamps, bread. The handwriting grew smaller toward the bottom, as if her mother had been running out of room, though the page was nearly blank.\\n\\nShe had come by to water the plants while her mother was at her afternoon appointment. The soil in the kitchen window was damp already. On the sill stood a glass with a little orange juice in it, and beside it the folded newspaper. Mara rinsed the glass, checked the latch on the back door, and took the list with her.\\n\\nAt the corner shop she bought washing powder and stamps. She passed the bakery on her way to the bus stop, then turned back. Her mother liked the dark loaf with seeds on top. It was too large for one person, but she always cut it in half and put the rest in the freezer. Mara thought she could leave it on the kitchen table later, with the stamps.\\n\\nThere were two people ahead of her in the bakery. While she waited, she checked her phone. Her mother had not replied to the message Mara had sent that morning about Sunday lunch. That was ordinary enough; she often forgot to take the phone out of her coat pocket. Mara slipped it away and watched the baker lift the last dark loaf from the shelf.\\n\\nWhen her turn came, she asked for it. The baker laid a sheet of brown paper on the counter.\"\n}",
+  "output_sha256": "fdde6bcfdc707da727a1e4bcb5f966c128e2f180f3d53a351fd3f41301a6fd04",
+  "finish_reason": "stop",
+  "refusal": null,
+  "returned_model": "gpt-6-sol",
+  "usage": {
+    "prompt_tokens": 369,
+    "completion_tokens": 403,
+    "total_tokens": 772,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 32,
+      "audio_tokens": 0,
+      "accepted_prediction_tokens": 0,
+      "rejected_prediction_tokens": 0
+    }
+  },
+  "format": {
+    "json_object": true,
+    "rule_unchanged": true,
+    "passage_is_string": true,
+    "passage_sha256": "735345bff0671e5cd2e2f31c2e62d6ef5415f5bf33022fea70d806edd69e22d7",
+    "passage_words": 268
+  },
+  "finished_at": "2026-09-23T00:15:18.563435+00:00",
+  "latency_seconds": 6.4313,
+  "usage_cost_upper_estimate_usd": 0.004768,
+  "stream_status": "active",
+  "budget": {
+    "usage_cost_upper_estimate_usd": 0.5829925,
+    "uncertain_cost_reserve_usd": 0.0,
+    "in_flight_reserve_usd": 0.3194181,
+    "limit_usd": 5.0
+  }
+}

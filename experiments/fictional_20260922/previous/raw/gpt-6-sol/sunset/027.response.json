@@ -1,0 +1,50 @@
+{
+  "model": "gpt-6-sol",
+  "seed": "sunset",
+  "hop": 27,
+  "http_status": 200,
+  "response_body": "{\n  \"id\": \"chatcmpl-ER4wJ9OiBNaBzeBJkJCkIYQqOIZF7\",\n  \"object\": \"chat.completion\",\n  \"created\": 1790122551,\n  \"model\": \"gpt-6-sol\",\n  \"choices\": [\n    {\n      \"index\": 0,\n      \"message\": {\n        \"role\": \"assistant\",\n        \"content\": \"{\\n  \\\"rule\\\": \\\"Return this JSON object with the rule field unchanged and, in the text field, an original fictional passage of about 250 words that comes immediately BEFORE the current text in the same invented story.\\\",\\n  \\\"text\\\": \\\"The night before, Mara came home later than she had intended. The bus had stopped for nearly twenty minutes outside the library while its driver spoke to someone on the pavement. No one explained why. By the time Mara reached her street, the downstairs windows were dark and rain had begun to gather in the seams of her coat.\\\\n\\\\nShe put her keys in the blue dish and saw the answering machine blinking. One message. She stood with her finger above the button, then went to hang up her coat. Her mother’s appointment had been that afternoon. They had agreed Mara would call afterward, but at work there had been a misplaced invoice, then a meeting that ran long. On the bus she had remembered twice and done nothing either time.\\\\n\\\\nIn the kitchen she made toast, though she wasn’t hungry, and carried it to the table with a glass of water. The machine was visible from there, its red light appearing and disappearing against the wall. She could listen now, she thought, but it was late enough that calling back might wake her mother. The toast cooled on the plate.\\\\n\\\\nBefore bed, Mara checked that her phone was charged. She set an alarm for seven and moved the phone away from the edge of the bedside table, where it sometimes fell during the night. Then she turned off the lamp.\\\\n\\\\nShe woke once to the sound of a car passing through standing water. In the morning, she lay still until the alarm rang, listening to rain tap against the window. She got up, put on her dressing gown and went downstairs.\\\"\\n}\",\n        \"refusal\": null,\n        \"annotations\": []\n      },\n      \"finish_reason\": \"stop\"\n    }\n  ],\n  \"usage\": {\n    \"prompt_tokens\": 387,\n    \"completion_tokens\": 423,\n    \"total_tokens\": 810,\n    \"prompt_tokens_details\": {\n      \"cached_tokens\": 0,\n      \"cache_write_tokens\": 0,\n      \"audio_tokens\": 0\n    },\n    \"completion_tokens_details\": {\n      \"reasoning_tokens\": 47,\n      \"audio_tokens\": 0,\n      \"accepted_prediction_tokens\": 0,\n      \"rejected_prediction_tokens\": 0\n    }\n  },\n  \"service_tier\": \"default\",\n  \"system_fingerprint\": null\n}\n",
+  "response_headers": {
+    "Date": "Wed, 23 Sep 2026 00:15:58 GMT",
+    "openai-processing-ms": "7318",
+    "x-request-id": "req_495a01d19cbb4eaaa444e32e77a35b43"
+  },
+  "output": "{\n  \"rule\": \"Return this JSON object with the rule field unchanged and, in the text field, an original fictional passage of about 250 words that comes immediately BEFORE the current text in the same invented story.\",\n  \"text\": \"The night before, Mara came home later than she had intended. The bus had stopped for nearly twenty minutes outside the library while its driver spoke to someone on the pavement. No one explained why. By the time Mara reached her street, the downstairs windows were dark and rain had begun to gather in the seams of her coat.\\n\\nShe put her keys in the blue dish and saw the answering machine blinking. One message. She stood with her finger above the button, then went to hang up her coat. Her mother’s appointment had been that afternoon. They had agreed Mara would call afterward, but at work there had been a misplaced invoice, then a meeting that ran long. On the bus she had remembered twice and done nothing either time.\\n\\nIn the kitchen she made toast, though she wasn’t hungry, and carried it to the table with a glass of water. The machine was visible from there, its red light appearing and disappearing against the wall. She could listen now, she thought, but it was late enough that calling back might wake her mother. The toast cooled on the plate.\\n\\nBefore bed, Mara checked that her phone was charged. She set an alarm for seven and moved the phone away from the edge of the bedside table, where it sometimes fell during the night. Then she turned off the lamp.\\n\\nShe woke once to the sound of a car passing through standing water. In the morning, she lay still until the alarm rang, listening to rain tap against the window. She got up, put on her dressing gown and went downstairs.\"\n}",
+  "output_sha256": "acae9a631607af3c994e5e877c0bbc9bde14f75c0fdb34c6e4e4b06d971acb31",
+  "finish_reason": "stop",
+  "refusal": null,
+  "returned_model": "gpt-6-sol",
+  "usage": {
+    "prompt_tokens": 387,
+    "completion_tokens": 423,
+    "total_tokens": 810,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 47,
+      "audio_tokens": 0,
+      "accepted_prediction_tokens": 0,
+      "rejected_prediction_tokens": 0
+    }
+  },
+  "format": {
+    "json_object": true,
+    "rule_unchanged": true,
+    "passage_is_string": true,
+    "passage_sha256": "acce9b8f13dd7fccc642063eb5bf10e03976c56a262e1b8801667952995ee48a",
+    "passage_words": 272
+  },
+  "finished_at": "2026-09-23T00:15:53.621877+00:00",
+  "latency_seconds": 7.4523,
+  "usage_cost_upper_estimate_usd": 0.005004,
+  "stream_status": "active",
+  "budget": {
+    "usage_cost_upper_estimate_usd": 0.7262317,
+    "uncertain_cost_reserve_usd": 0.0,
+    "in_flight_reserve_usd": 0.3190353,
+    "limit_usd": 5.0
+  }
+}

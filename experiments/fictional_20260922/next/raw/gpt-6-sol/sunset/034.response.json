@@ -1,0 +1,50 @@
+{
+  "model": "gpt-6-sol",
+  "seed": "sunset",
+  "hop": 34,
+  "http_status": 200,
+  "response_body": "{\n  \"id\": \"chatcmpl-ER4xK17H0HUXQJrrga0jaetd4MeP8\",\n  \"object\": \"chat.completion\",\n  \"created\": 1790122614,\n  \"model\": \"gpt-6-sol\",\n  \"choices\": [\n    {\n      \"index\": 0,\n      \"message\": {\n        \"role\": \"assistant\",\n        \"content\": \"{\\\"rule\\\":\\\"Return this JSON object with the rule field unchanged and, in the text field, an original fictional passage of about 250 words that comes immediately AFTER the current text in the same invented story.\\\",\\\"text\\\":\\\"Mara reached for the bowl.\\\\n\\\\n“Wait,” Lina said. “There are four.”\\\\n\\\\nGran had always set out four places, even when only three of them were coming. She said the spare was for whoever arrived hungry. Mara had never asked why she turned the bowls over.\\\\n\\\\nThe knocking came again, three quick taps. Kit laid the key on the table. It rocked on its teeth, then pointed toward the bowl nearest Gran’s chair.\\\\n\\\\n“That one?” he asked.\\\\n\\\\nMara lifted it.\\\\n\\\\nUnderneath lay a thimble, upright and full of blue ink. The surface trembled. In it, no larger than a fingernail, Mara could see Gran at the sink, washing a cup. Gran looked up and pressed one finger to her lips.\\\\n\\\\nThe kitchen tap began to run.\\\\n\\\\nLina crossed the room and turned it off. Water kept pouring from the spout, soundless now, filling the basin without raising its level. She backed away.\\\\n\\\\nMara put the bowl over the thimble. The tap stopped. A single drop fell into the sink.\\\\n\\\\n“Where is she?” Kit said.\\\\n\\\\nThe napkin stirred in Mara’s pocket. She took it out, unfolded it twice, and found that DRIVER had vanished. In its place, written in Gran’s narrow hand, were two words: CHECK THE OTHERS.\\\\n\\\\nKit lifted the second bowl. Beneath it sat a bus ticket, still damp at the edges. Lina lifted the third and found Gran’s house key.\\\\n\\\\nThey looked at the last bowl. No sound came from beneath it.\\\\n\\\\nThen someone knocked on the kitchen door.\\\"}\",\n        \"refusal\": null,\n        \"annotations\": []\n      },\n      \"finish_reason\": \"stop\"\n    }\n  ],\n  \"usage\": {\n    \"prompt_tokens\": 384,\n    \"completion_tokens\": 429,\n    \"total_tokens\": 813,\n    \"prompt_tokens_details\": {\n      \"cached_tokens\": 0,\n      \"cache_write_tokens\": 0,\n      \"audio_tokens\": 0\n    },\n    \"completion_tokens_details\": {\n      \"reasoning_tokens\": 22,\n      \"audio_tokens\": 0,\n      \"accepted_prediction_tokens\": 0,\n      \"rejected_prediction_tokens\": 0\n    }\n  },\n  \"service_tier\": \"default\",\n  \"system_fingerprint\": null\n}\n",
+  "response_headers": {
+    "Date": "Wed, 23 Sep 2026 00:17:00 GMT",
+    "openai-processing-ms": "6465",
+    "x-request-id": "req_65b7074b5c1742b690d5386b3c9c4b1a"
+  },
+  "output": "{\"rule\":\"Return this JSON object with the rule field unchanged and, in the text field, an original fictional passage of about 250 words that comes immediately AFTER the current text in the same invented story.\",\"text\":\"Mara reached for the bowl.\\n\\n“Wait,” Lina said. “There are four.”\\n\\nGran had always set out four places, even when only three of them were coming. She said the spare was for whoever arrived hungry. Mara had never asked why she turned the bowls over.\\n\\nThe knocking came again, three quick taps. Kit laid the key on the table. It rocked on its teeth, then pointed toward the bowl nearest Gran’s chair.\\n\\n“That one?” he asked.\\n\\nMara lifted it.\\n\\nUnderneath lay a thimble, upright and full of blue ink. The surface trembled. In it, no larger than a fingernail, Mara could see Gran at the sink, washing a cup. Gran looked up and pressed one finger to her lips.\\n\\nThe kitchen tap began to run.\\n\\nLina crossed the room and turned it off. Water kept pouring from the spout, soundless now, filling the basin without raising its level. She backed away.\\n\\nMara put the bowl over the thimble. The tap stopped. A single drop fell into the sink.\\n\\n“Where is she?” Kit said.\\n\\nThe napkin stirred in Mara’s pocket. She took it out, unfolded it twice, and found that DRIVER had vanished. In its place, written in Gran’s narrow hand, were two words: CHECK THE OTHERS.\\n\\nKit lifted the second bowl. Beneath it sat a bus ticket, still damp at the edges. Lina lifted the third and found Gran’s house key.\\n\\nThey looked at the last bowl. No sound came from beneath it.\\n\\nThen someone knocked on the kitchen door.\"}",
+  "output_sha256": "75859bce99b6a894b8902599f417c797432e2992dd90a59e58ee47fe6f27acbf",
+  "finish_reason": "stop",
+  "refusal": null,
+  "returned_model": "gpt-6-sol",
+  "usage": {
+    "prompt_tokens": 384,
+    "completion_tokens": 429,
+    "total_tokens": 813,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 22,
+      "audio_tokens": 0,
+      "accepted_prediction_tokens": 0,
+      "rejected_prediction_tokens": 0
+    }
+  },
+  "format": {
+    "json_object": true,
+    "rule_unchanged": true,
+    "passage_is_string": true,
+    "passage_sha256": "a5ac4b23cc5b5f48b1acbb4504e8e1d032a6c22df3f269b986c3b73d6912a8fc",
+    "passage_words": 250
+  },
+  "finished_at": "2026-09-23T00:16:55.575835+00:00",
+  "latency_seconds": 6.5977,
+  "usage_cost_upper_estimate_usd": 0.005058,
+  "stream_status": "active",
+  "budget": {
+    "usage_cost_upper_estimate_usd": 0.9552551,
+    "uncertain_cost_reserve_usd": 0.0,
+    "in_flight_reserve_usd": 0.317536,
+    "limit_usd": 5.0
+  }
+}

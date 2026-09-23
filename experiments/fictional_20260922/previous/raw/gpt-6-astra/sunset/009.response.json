@@ -1,0 +1,50 @@
+{
+  "model": "gpt-6-astra",
+  "seed": "sunset",
+  "hop": 9,
+  "http_status": 200,
+  "response_body": "{\n  \"id\": \"chatcmpl-ER4vHjhDVbYFRYmKHccuWLV85dMSS\",\n  \"object\": \"chat.completion\",\n  \"created\": 1790122487,\n  \"model\": \"gpt-6-astra\",\n  \"choices\": [\n    {\n      \"index\": 0,\n      \"message\": {\n        \"role\": \"assistant\",\n        \"content\": \"{\\n  \\\"rule\\\": \\\"Return this JSON object with the rule field unchanged and, in the text field, an original fictional passage of about 250 words that comes immediately BEFORE the current text in the same invented story.\\\",\\n  \\\"text\\\": \\\"By Wednesday, Mara had learned which customers expected her to remember them. They stood just inside the shop and waited for recognition before saying what they wanted. Those who had known her as a child were the least willing to help.\\\\n\\\\nA woman brought in three school blazers with the sleeves pinned at different lengths. She explained that the boys were brothers, as though this settled something about the work.\\\\n\\\\n‘Your father always left room,’ she said.\\\\n\\\\nMara turned back one cuff. There was nearly an inch of cloth inside, neatly secured with stitches she recognised.\\\\n\\\\n‘I can do that.’\\\\n\\\\nAfter the woman left, she wrote Friday on the ticket and put it beneath the brass weight. Her father had used an old iron, but someone had taken it away during the week when people were constantly offering to take things away.\\\\n\\\\nShe spent the afternoon replacing the pocket of a baker’s apron. Flour had worked into the seams and fell onto her lap when she unpicked them. The new cotton was brighter than the rest. She washed it in the little sink, then pressed it dry through a towel.\\\\n\\\\nAt six, she looked for string to tie the finished alterations. The drawer stuck halfway, and she used a length of ribbon instead.\\\\n\\\\nBefore turning out the light, she checked the appointments book. Her father’s last entry was a surname without a time. Below it, he had drawn a line across the page, pressing hard enough to mark the week underneath.\\\\n\\\\nShe left the book open. There was no one to ask whether the line meant he was finished.\\\"\\n}\",\n        \"refusal\": null,\n        \"annotations\": []\n      },\n      \"finish_reason\": \"stop\"\n    }\n  ],\n  \"usage\": {\n    \"prompt_tokens\": 410,\n    \"completion_tokens\": 381,\n    \"total_tokens\": 791,\n    \"prompt_tokens_details\": {\n      \"cached_tokens\": 0,\n      \"cache_write_tokens\": 0,\n      \"audio_tokens\": 0\n    },\n    \"completion_tokens_details\": {\n      \"reasoning_tokens\": 0,\n      \"audio_tokens\": 0,\n      \"accepted_prediction_tokens\": 0,\n      \"rejected_prediction_tokens\": 0\n    }\n  },\n  \"service_tier\": \"default\",\n  \"system_fingerprint\": null\n}\n",
+  "response_headers": {
+    "Date": "Wed, 23 Sep 2026 00:15:03 GMT",
+    "openai-processing-ms": "15527",
+    "x-request-id": "req_4210481470ee4b8c8edb8b3338ad22b7"
+  },
+  "output": "{\n  \"rule\": \"Return this JSON object with the rule field unchanged and, in the text field, an original fictional passage of about 250 words that comes immediately BEFORE the current text in the same invented story.\",\n  \"text\": \"By Wednesday, Mara had learned which customers expected her to remember them. They stood just inside the shop and waited for recognition before saying what they wanted. Those who had known her as a child were the least willing to help.\\n\\nA woman brought in three school blazers with the sleeves pinned at different lengths. She explained that the boys were brothers, as though this settled something about the work.\\n\\n‘Your father always left room,’ she said.\\n\\nMara turned back one cuff. There was nearly an inch of cloth inside, neatly secured with stitches she recognised.\\n\\n‘I can do that.’\\n\\nAfter the woman left, she wrote Friday on the ticket and put it beneath the brass weight. Her father had used an old iron, but someone had taken it away during the week when people were constantly offering to take things away.\\n\\nShe spent the afternoon replacing the pocket of a baker’s apron. Flour had worked into the seams and fell onto her lap when she unpicked them. The new cotton was brighter than the rest. She washed it in the little sink, then pressed it dry through a towel.\\n\\nAt six, she looked for string to tie the finished alterations. The drawer stuck halfway, and she used a length of ribbon instead.\\n\\nBefore turning out the light, she checked the appointments book. Her father’s last entry was a surname without a time. Below it, he had drawn a line across the page, pressing hard enough to mark the week underneath.\\n\\nShe left the book open. There was no one to ask whether the line meant he was finished.\"\n}",
+  "output_sha256": "b1646eceb5918092f417e8c76cbec2e2795181d7a5fdce8f262accac3ef1c5ef",
+  "finish_reason": "stop",
+  "refusal": null,
+  "returned_model": "gpt-6-astra",
+  "usage": {
+    "prompt_tokens": 410,
+    "completion_tokens": 381,
+    "total_tokens": 791,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "audio_tokens": 0,
+      "accepted_prediction_tokens": 0,
+      "rejected_prediction_tokens": 0
+    }
+  },
+  "format": {
+    "json_object": true,
+    "rule_unchanged": true,
+    "passage_is_string": true,
+    "passage_sha256": "90056e2923c7416470fdc8137eefb0db84df9fbf6c9c64c6f31b40ee6e3d65d1",
+    "passage_words": 269
+  },
+  "finished_at": "2026-09-23T00:14:58.215152+00:00",
+  "latency_seconds": 15.7214,
+  "usage_cost_upper_estimate_usd": 0.02315,
+  "stream_status": "active",
+  "budget": {
+    "usage_cost_upper_estimate_usd": 0.5102048,
+    "uncertain_cost_reserve_usd": 0.0,
+    "in_flight_reserve_usd": 0.1378877,
+    "limit_usd": 5.0
+  }
+}

@@ -1,0 +1,50 @@
+{
+  "model": "gpt-6-sol",
+  "seed": "sunset",
+  "hop": 5,
+  "http_status": 200,
+  "response_body": "{\n  \"id\": \"chatcmpl-ER4tsjjB83CJHC4L0KjXq1lbXLb5D\",\n  \"object\": \"chat.completion\",\n  \"created\": 1790122400,\n  \"model\": \"gpt-6-sol\",\n  \"choices\": [\n    {\n      \"index\": 0,\n      \"message\": {\n        \"role\": \"assistant\",\n        \"content\": \"{\\n  \\\"rule\\\": \\\"Return this JSON object with the rule field unchanged and, in the text field, an original fictional passage of about 250 words that comes immediately BEFORE the current text in the same invented story.\\\",\\n  \\\"text\\\": \\\"Mara had meant to go to the orchard on Monday. She had found the key to the old house in the kitchen drawer, tied to a wooden label on which her brother had written BACK DOOR, though it had always opened the front. She put it in her coat pocket and left it there while she finished the washing.\\\\n\\\\nBy noon, clouds had covered the hills. Bristle followed her from room to room as she folded sheets and put them away, hopeful each time she passed the hook where his lead hung. At last she took him as far as the bridge. The stream was low enough to show its stones, and he stopped to sniff every clump of grass along the bank. On the way home she noticed that the first pears at the market garden had been set out in wooden crates.\\\\n\\\\nA note from the man who leased the field lay beneath the sugar bowl. He had sent it the week before, asking about the branches over his fence. Mara had intended to answer after seeing the trees for herself. She took out a sheet of paper, wrote his name at the top, and could think of nothing useful to say. The note went back beneath the bowl.\\\\n\\\\nThat night the wind lifted the loose edge of the shed roof. Mara heard it from her bed and made a list in her head: a nail for the roof, more logs indoors, a reply about the branches. Near dawn, rain began tapping at the window. By breakfast it was falling steadily, and Bristle refused to leave the doorstep.\\\"\\n}\",\n        \"refusal\": null,\n        \"annotations\": []\n      },\n      \"finish_reason\": \"stop\"\n    }\n  ],\n  \"usage\": {\n    \"prompt_tokens\": 379,\n    \"completion_tokens\": 408,\n    \"total_tokens\": 787,\n    \"prompt_tokens_details\": {\n      \"cached_tokens\": 0,\n      \"cache_write_tokens\": 0,\n      \"audio_tokens\": 0\n    },\n    \"completion_tokens_details\": {\n      \"reasoning_tokens\": 38,\n      \"audio_tokens\": 0,\n      \"accepted_prediction_tokens\": 0,\n      \"rejected_prediction_tokens\": 0\n    }\n  },\n  \"service_tier\": \"default\",\n  \"system_fingerprint\": null\n}\n",
+  "response_headers": {
+    "Date": "Wed, 23 Sep 2026 00:13:27 GMT",
+    "openai-processing-ms": "7189",
+    "x-request-id": "req_0874321b4b50428d9ac29c129a7c6434"
+  },
+  "output": "{\n  \"rule\": \"Return this JSON object with the rule field unchanged and, in the text field, an original fictional passage of about 250 words that comes immediately BEFORE the current text in the same invented story.\",\n  \"text\": \"Mara had meant to go to the orchard on Monday. She had found the key to the old house in the kitchen drawer, tied to a wooden label on which her brother had written BACK DOOR, though it had always opened the front. She put it in her coat pocket and left it there while she finished the washing.\\n\\nBy noon, clouds had covered the hills. Bristle followed her from room to room as she folded sheets and put them away, hopeful each time she passed the hook where his lead hung. At last she took him as far as the bridge. The stream was low enough to show its stones, and he stopped to sniff every clump of grass along the bank. On the way home she noticed that the first pears at the market garden had been set out in wooden crates.\\n\\nA note from the man who leased the field lay beneath the sugar bowl. He had sent it the week before, asking about the branches over his fence. Mara had intended to answer after seeing the trees for herself. She took out a sheet of paper, wrote his name at the top, and could think of nothing useful to say. The note went back beneath the bowl.\\n\\nThat night the wind lifted the loose edge of the shed roof. Mara heard it from her bed and made a list in her head: a nail for the roof, more logs indoors, a reply about the branches. Near dawn, rain began tapping at the window. By breakfast it was falling steadily, and Bristle refused to leave the doorstep.\"\n}",
+  "output_sha256": "fad605453d8b3c24a8a7e39754715a1656ef3a189d27c3c038fe2d2b6f8e95d3",
+  "finish_reason": "stop",
+  "refusal": null,
+  "returned_model": "gpt-6-sol",
+  "usage": {
+    "prompt_tokens": 379,
+    "completion_tokens": 408,
+    "total_tokens": 787,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 38,
+      "audio_tokens": 0,
+      "accepted_prediction_tokens": 0,
+      "rejected_prediction_tokens": 0
+    }
+  },
+  "format": {
+    "json_object": true,
+    "rule_unchanged": true,
+    "passage_is_string": true,
+    "passage_sha256": "60e25ba76be67de3073dbd2093059b82912ffdbcf08761d613c42803a31a5960",
+    "passage_words": 270
+  },
+  "finished_at": "2026-09-23T00:13:22.330839+00:00",
+  "latency_seconds": 7.3058,
+  "usage_cost_upper_estimate_usd": 0.004838,
+  "stream_status": "active",
+  "budget": {
+    "usage_cost_upper_estimate_usd": 0.1287308,
+    "uncertain_cost_reserve_usd": 0.0,
+    "in_flight_reserve_usd": 0.3198367,
+    "limit_usd": 5.0
+  }
+}

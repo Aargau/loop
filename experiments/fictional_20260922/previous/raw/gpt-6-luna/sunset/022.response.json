@@ -1,0 +1,47 @@
+{
+  "model": "gpt-6-luna",
+  "seed": "sunset",
+  "hop": 22,
+  "http_status": 200,
+  "response_body": "{\n  \"id\": \"chatcmpl-ER4v783I2BTGknOXGOzEHs29WtCE1\",\n  \"object\": \"chat.completion\",\n  \"created\": 1790122477,\n  \"model\": \"gpt-6-luna\",\n  \"choices\": [\n    {\n      \"index\": 0,\n      \"message\": {\n        \"role\": \"assistant\",\n        \"content\": \"{\\\"rule\\\":\\\"Return this JSON object with the rule field unchanged and, in the text field, an original fictional passage of about 250 words that comes immediately BEFORE the current text in the same invented story.\\\",\\\"text\\\":\\\"The notice had been pinned to the laundromat bulletin board for six days before Mara let herself read it.\\n\\nALVAREZ PRINT was looking for a part-time assistant, the paper said. No experience necessary. Ask inside.\\n\\nShe had passed that board every Thursday on her way to collect her mother’s shirts, telling herself she was only checking for lost cats and piano lessons. On the sixth visit, the notice had curled at one corner, and someone had drawn a tiny crown above the word assistant. Mara touched the paper, then pulled her hand back as if it might leave a mark.\\n\\nThat evening, she spread her drawings across the kitchen table. Her mother was asleep in the next room, one hand resting on the blanket, the other curled around the television remote. The apartment smelled of starch and orange peel. Mara turned each page slowly, remembering when she had made it: the rainy afternoon at the bus stop, the long wait outside the clinic, the night the power went out and she had drawn by candlelight.\\n\\nShe had never shown the pictures to anyone who might know what to do with them. Compliments from classmates were easy to dismiss; they didn’t have to mean anything. A print shop was different. Ink could make a drawing permanent, put it in a window where strangers would see it.\\n\\nStill, she couldn’t simply walk in and ask for work. She needed a question that wouldn’t make her sound foolish, and a way to prove she could be useful. She packed the sketches into her old folder and set it beside the door.\\n\\nThen she took a receipt from her pocket and began to write.\\\"}\",\n        \"refusal\": null,\n        \"annotations\": []\n      },\n      \"finish_reason\": \"stop\"\n    }\n  ],\n  \"usage\": {\n    \"prompt_tokens\": 367,\n    \"completion_tokens\": 538,\n    \"total_tokens\": 905,\n    \"prompt_tokens_details\": {\n      \"cached_tokens\": 0,\n      \"cache_write_tokens\": 0,\n      \"audio_tokens\": 0\n    },\n    \"completion_tokens_details\": {\n      \"reasoning_tokens\": 158,\n      \"audio_tokens\": 0,\n      \"accepted_prediction_tokens\": 0,\n      \"rejected_prediction_tokens\": 0\n    }\n  },\n  \"service_tier\": \"default\",\n  \"system_fingerprint\": null\n}\n",
+  "response_headers": {
+    "Date": "Wed, 23 Sep 2026 00:14:42 GMT",
+    "openai-processing-ms": "4804",
+    "x-request-id": "req_d9bf3d4e769741daa7a90c18b6ea16d8"
+  },
+  "output": "{\"rule\":\"Return this JSON object with the rule field unchanged and, in the text field, an original fictional passage of about 250 words that comes immediately BEFORE the current text in the same invented story.\",\"text\":\"The notice had been pinned to the laundromat bulletin board for six days before Mara let herself read it.\n\nALVAREZ PRINT was looking for a part-time assistant, the paper said. No experience necessary. Ask inside.\n\nShe had passed that board every Thursday on her way to collect her mother’s shirts, telling herself she was only checking for lost cats and piano lessons. On the sixth visit, the notice had curled at one corner, and someone had drawn a tiny crown above the word assistant. Mara touched the paper, then pulled her hand back as if it might leave a mark.\n\nThat evening, she spread her drawings across the kitchen table. Her mother was asleep in the next room, one hand resting on the blanket, the other curled around the television remote. The apartment smelled of starch and orange peel. Mara turned each page slowly, remembering when she had made it: the rainy afternoon at the bus stop, the long wait outside the clinic, the night the power went out and she had drawn by candlelight.\n\nShe had never shown the pictures to anyone who might know what to do with them. Compliments from classmates were easy to dismiss; they didn’t have to mean anything. A print shop was different. Ink could make a drawing permanent, put it in a window where strangers would see it.\n\nStill, she couldn’t simply walk in and ask for work. She needed a question that wouldn’t make her sound foolish, and a way to prove she could be useful. She packed the sketches into her old folder and set it beside the door.\n\nThen she took a receipt from her pocket and began to write.\"}",
+  "output_sha256": "228ce027b220865f1fa69888f3d8bcdf5a05500e1bab90b8e97f28c162440013",
+  "finish_reason": "stop",
+  "refusal": null,
+  "returned_model": "gpt-6-luna",
+  "usage": {
+    "prompt_tokens": 367,
+    "completion_tokens": 538,
+    "total_tokens": 905,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 158,
+      "audio_tokens": 0,
+      "accepted_prediction_tokens": 0,
+      "rejected_prediction_tokens": 0
+    }
+  },
+  "format": {
+    "json_object": false,
+    "rule_unchanged": false
+  },
+  "finished_at": "2026-09-23T00:14:37.205324+00:00",
+  "latency_seconds": 4.8936,
+  "usage_cost_upper_estimate_usd": 0.0003057,
+  "stream_status": "active",
+  "budget": {
+    "usage_cost_upper_estimate_usd": 0.4033339,
+    "uncertain_cost_reserve_usd": 0.0,
+    "in_flight_reserve_usd": 0.363342,
+    "limit_usd": 5.0
+  }
+}

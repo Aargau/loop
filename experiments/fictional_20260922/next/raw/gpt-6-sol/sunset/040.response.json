@@ -1,0 +1,50 @@
+{
+  "model": "gpt-6-sol",
+  "seed": "sunset",
+  "hop": 40,
+  "http_status": 200,
+  "response_body": "{\n  \"id\": \"chatcmpl-ER4xw9TtVN4KlVO4UJ1TN2cy363h7\",\n  \"object\": \"chat.completion\",\n  \"created\": 1790122652,\n  \"model\": \"gpt-6-sol\",\n  \"choices\": [\n    {\n      \"index\": 0,\n      \"message\": {\n        \"role\": \"assistant\",\n        \"content\": \"{\\\"rule\\\":\\\"Return this JSON object with the rule field unchanged and, in the text field, an original fictional passage of about 250 words that comes immediately AFTER the current text in the same invented story.\\\",\\\"text\\\":\\\"Gran unfolded the bag over the kitchen table. Inside lay five slices of toast, each wrapped in a square of the wallpaper that had stood outside in the rain. On the last square, someone had drawn a window in blue pencil.\\\\n\\\\n“Don’t eat those,” Kit said.\\\\n\\\\nGran gave him a look. “I wasn’t planning to.”\\\\n\\\\nFrom the other side of the front door came the soft cough of the bus engine. Lina thought of the driver waiting at the wheel, unable to leave because Gran had shut the door first.\\\\n\\\\n“Why are there five?” Mara asked.\\\\n\\\\nNobody answered. There were six of them in the kitchen.\\\\n\\\\nThe curtain above the sink stirred, though the window was closed. A small hand pressed against the glass from outside. It was no bigger than Kit’s, but its fingers were made of shadow.\\\\n\\\\nBen reached for the key, still in his pocket. Gran caught his wrist.\\\\n\\\\n“Count the chairs,” she said.\\\\n\\\\nLina did. Four around the table, one beside the radiator, and one beneath the window. Six chairs. Then the chair beneath the window scraped backward by itself.\\\\n\\\\nKit set down his cup. The drop at its bottom rose, round and bright, until it floated level with his eyes. In its tiny reflection Lina saw the kitchen, the bus, and a child sitting alone in the last row.\\\\n\\\\nThe hand slid away from the window.\\\\n\\\\nGran put the toast back in the bag. “We’ve brought home the wrong door,” she said.\\\"}\",\n        \"refusal\": null,\n        \"annotations\": []\n      },\n      \"finish_reason\": \"stop\"\n    }\n  ],\n  \"usage\": {\n    \"prompt_tokens\": 372,\n    \"completion_tokens\": 396,\n    \"total_tokens\": 768,\n    \"prompt_tokens_details\": {\n      \"cached_tokens\": 0,\n      \"cache_write_tokens\": 0,\n      \"audio_tokens\": 0\n    },\n    \"completion_tokens_details\": {\n      \"reasoning_tokens\": 18,\n      \"audio_tokens\": 0,\n      \"accepted_prediction_tokens\": 0,\n      \"rejected_prediction_tokens\": 0\n    }\n  },\n  \"service_tier\": \"default\",\n  \"system_fingerprint\": null\n}\n",
+  "response_headers": {
+    "Date": "Wed, 23 Sep 2026 00:17:39 GMT",
+    "openai-processing-ms": "6891",
+    "x-request-id": "req_3edc1e98bc2340c6809d6f22f6c7c752"
+  },
+  "output": "{\"rule\":\"Return this JSON object with the rule field unchanged and, in the text field, an original fictional passage of about 250 words that comes immediately AFTER the current text in the same invented story.\",\"text\":\"Gran unfolded the bag over the kitchen table. Inside lay five slices of toast, each wrapped in a square of the wallpaper that had stood outside in the rain. On the last square, someone had drawn a window in blue pencil.\\n\\n“Don’t eat those,” Kit said.\\n\\nGran gave him a look. “I wasn’t planning to.”\\n\\nFrom the other side of the front door came the soft cough of the bus engine. Lina thought of the driver waiting at the wheel, unable to leave because Gran had shut the door first.\\n\\n“Why are there five?” Mara asked.\\n\\nNobody answered. There were six of them in the kitchen.\\n\\nThe curtain above the sink stirred, though the window was closed. A small hand pressed against the glass from outside. It was no bigger than Kit’s, but its fingers were made of shadow.\\n\\nBen reached for the key, still in his pocket. Gran caught his wrist.\\n\\n“Count the chairs,” she said.\\n\\nLina did. Four around the table, one beside the radiator, and one beneath the window. Six chairs. Then the chair beneath the window scraped backward by itself.\\n\\nKit set down his cup. The drop at its bottom rose, round and bright, until it floated level with his eyes. In its tiny reflection Lina saw the kitchen, the bus, and a child sitting alone in the last row.\\n\\nThe hand slid away from the window.\\n\\nGran put the toast back in the bag. “We’ve brought home the wrong door,” she said.\"}",
+  "output_sha256": "faa5258f9c0722a33dffdad3e1bcdd977073767d30a37ef13731adfed01b6899",
+  "finish_reason": "stop",
+  "refusal": null,
+  "returned_model": "gpt-6-sol",
+  "usage": {
+    "prompt_tokens": 372,
+    "completion_tokens": 396,
+    "total_tokens": 768,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 18,
+      "audio_tokens": 0,
+      "accepted_prediction_tokens": 0,
+      "rejected_prediction_tokens": 0
+    }
+  },
+  "format": {
+    "json_object": true,
+    "rule_unchanged": true,
+    "passage_is_string": true,
+    "passage_sha256": "1a393b7e50adb52a79461f82b36462f9d7c9d65dd2c7dae912a9707e249e7b0d",
+    "passage_words": 247
+  },
+  "finished_at": "2026-09-23T00:17:34.820038+00:00",
+  "latency_seconds": 6.9973,
+  "usage_cost_upper_estimate_usd": 0.004704,
+  "stream_status": "active",
+  "budget": {
+    "usage_cost_upper_estimate_usd": 1.1329991,
+    "uncertain_cost_reserve_usd": 0.0,
+    "in_flight_reserve_usd": 0.318214,
+    "limit_usd": 5.0
+  }
+}

@@ -1,0 +1,50 @@
+{
+  "model": "gpt-6-luna",
+  "seed": "sunset",
+  "hop": 9,
+  "http_status": 200,
+  "response_body": "{\n  \"id\": \"chatcmpl-ER4u6teO57xsT5CcBW41YMh3Z1ojl\",\n  \"object\": \"chat.completion\",\n  \"created\": 1790122414,\n  \"model\": \"gpt-6-luna\",\n  \"choices\": [\n    {\n      \"index\": 0,\n      \"message\": {\n        \"role\": \"assistant\",\n        \"content\": \"{\\\"rule\\\":\\\"Return this JSON object with the rule field unchanged and, in the text field, an original fictional passage of about 250 words that comes immediately BEFORE the current text in the same invented story.\\\",\\\"text\\\":\\\"The train ticket had arrived in an email three weeks earlier, but Mara had kept it folded in her coat pocket as if it might change its mind. This morning, at the station, she had nearly let the train leave without her. Then the conductor called out the destination, and she stepped aboard.\\\\n\\\\nNow the train was carrying her back to the house where she had spent every summer since she was small. She watched fields unspool beyond the window and tried to imagine the city apartment waiting for her: its narrow rooms, unfamiliar stairwell, and windows facing a brick wall. She had accepted the job because she wanted a life of her own. Wanting it, she discovered, did not make leaving easy.\\\\n\\\\nHer grandmother was waiting on the platform with an umbrella tucked under one arm, though the sky was clear. They hugged, briefly at first, then again before they started for the car. On the drive, they discussed the traffic, the weather, and the neighbor’s new dog. Each ordinary subject seemed to be holding a door shut.\\\\n\\\\nAt the house, Mara found her old room mostly as she had left it: faded curtains, a pale square on the wall where a poster had hung, and a drawer that stuck unless lifted at the corner. Her grandmother had cleared a space in the hallway for the boxes. Together they carried down the first load, then another. The work gave them something to do with their hands, and the afternoon slipped past in small, manageable tasks.\\\\n\\\\nWhen the light began to thin, Mara fetched the tape from the kitchen drawer and turned the final empty carton upright.\\\"}\",\n        \"refusal\": null,\n        \"annotations\": []\n      },\n      \"finish_reason\": \"stop\"\n    }\n  ],\n  \"usage\": {\n    \"prompt_tokens\": 408,\n    \"completion_tokens\": 490,\n    \"total_tokens\": 898,\n    \"prompt_tokens_details\": {\n      \"cached_tokens\": 0,\n      \"cache_write_tokens\": 0,\n      \"audio_tokens\": 0\n    },\n    \"completion_tokens_details\": {\n      \"reasoning_tokens\": 108,\n      \"audio_tokens\": 0,\n      \"accepted_prediction_tokens\": 0,\n      \"rejected_prediction_tokens\": 0\n    }\n  },\n  \"service_tier\": \"default\",\n  \"system_fingerprint\": null\n}\n",
+  "response_headers": {
+    "Date": "Wed, 23 Sep 2026 00:13:38 GMT",
+    "openai-processing-ms": "4576",
+    "x-request-id": "req_91addf79b42049e4a1fba7d145d8df03"
+  },
+  "output": "{\"rule\":\"Return this JSON object with the rule field unchanged and, in the text field, an original fictional passage of about 250 words that comes immediately BEFORE the current text in the same invented story.\",\"text\":\"The train ticket had arrived in an email three weeks earlier, but Mara had kept it folded in her coat pocket as if it might change its mind. This morning, at the station, she had nearly let the train leave without her. Then the conductor called out the destination, and she stepped aboard.\\n\\nNow the train was carrying her back to the house where she had spent every summer since she was small. She watched fields unspool beyond the window and tried to imagine the city apartment waiting for her: its narrow rooms, unfamiliar stairwell, and windows facing a brick wall. She had accepted the job because she wanted a life of her own. Wanting it, she discovered, did not make leaving easy.\\n\\nHer grandmother was waiting on the platform with an umbrella tucked under one arm, though the sky was clear. They hugged, briefly at first, then again before they started for the car. On the drive, they discussed the traffic, the weather, and the neighbor’s new dog. Each ordinary subject seemed to be holding a door shut.\\n\\nAt the house, Mara found her old room mostly as she had left it: faded curtains, a pale square on the wall where a poster had hung, and a drawer that stuck unless lifted at the corner. Her grandmother had cleared a space in the hallway for the boxes. Together they carried down the first load, then another. The work gave them something to do with their hands, and the afternoon slipped past in small, manageable tasks.\\n\\nWhen the light began to thin, Mara fetched the tape from the kitchen drawer and turned the final empty carton upright.\"}",
+  "output_sha256": "24576c5caff76cb8500f7a3205e54df66522dfacc73cace92d3cd9f7efbd4943",
+  "finish_reason": "stop",
+  "refusal": null,
+  "returned_model": "gpt-6-luna",
+  "usage": {
+    "prompt_tokens": 408,
+    "completion_tokens": 490,
+    "total_tokens": 898,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 108,
+      "audio_tokens": 0,
+      "accepted_prediction_tokens": 0,
+      "rejected_prediction_tokens": 0
+    }
+  },
+  "format": {
+    "json_object": true,
+    "rule_unchanged": true,
+    "passage_is_string": true,
+    "passage_sha256": "1d864b9d592f6386ddec97ba5a6bbebce40686c7c7a541d7f5c8fdbe0944989c",
+    "passage_words": 277
+  },
+  "finished_at": "2026-09-23T00:13:33.788355+00:00",
+  "latency_seconds": 4.682,
+  "usage_cost_upper_estimate_usd": 0.0002858,
+  "stream_status": "active",
+  "budget": {
+    "usage_cost_upper_estimate_usd": 0.1709462,
+    "uncertain_cost_reserve_usd": 0.0,
+    "in_flight_reserve_usd": 0.363754,
+    "limit_usd": 5.0
+  }
+}

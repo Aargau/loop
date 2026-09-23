@@ -1,0 +1,47 @@
+{
+  "model": "gpt-6-luna",
+  "seed": "sunset",
+  "hop": 18,
+  "http_status": 200,
+  "response_body": "{\n  \"id\": \"chatcmpl-ER4upRWRvJ5ooKIuwsAHmhpCRKcBk\",\n  \"object\": \"chat.completion\",\n  \"created\": 1790122459,\n  \"model\": \"gpt-6-luna\",\n  \"choices\": [\n    {\n      \"index\": 0,\n      \"message\": {\n        \"role\": \"assistant\",\n        \"content\": \"{\\\"rule\\\":\\\"Return this JSON object with the rule field unchanged and, in the text field, an original fictional passage of about 250 words that comes immediately AFTER the current text in the same invented story.\\\",\\\"text\\\":\\\"A gust rushed from the drawer, carrying the smell of wet pine and woodsmoke. The ribbon slipped from Mara’s fingers and fluttered into the dark.\\n\\nThen the fear came loose.\\n\\nIt rose from her chest like a black thread, winding around the watch’s spinning hands. Mara gasped, but the sound that followed was not a sob. It was a laugh—small, startled, and hers.\\n\\nThe watch stopped.\\n\\nIn the sudden quiet, the stranger blinked. A thin line of silver returned to her eyes. “You gave it something real,” she said.\\n\\n“I gave it what I was carrying.”\\n\\n“That isn’t always the same thing.”\\n\\nThe drawer shivered. Inside, the blue light gathered into a shape: a little tent beneath a starless sky. A figure crouched beside its entrance, humming off-key. Mara couldn’t see her mother’s face, but she knew the tilt of that shoulder, the patient curve of her back.\\n\\nMara took one step toward the drawer.\\n\\nThe stranger caught her wrist. “The memory is yours now. The room can’t keep it.”\\n\\n“Then why show me?”\\n\\n“To make sure you know what you’re choosing.”\\n\\nMara looked at the tiny fire glowing beneath the tent. Her mother’s humming wavered, then grew clear. The melody wasn’t perfect. It never had been.\\n\\n“I choose to remember,” Mara said.\\n\\nThe figure by the tent lifted her head. For one impossible instant, Mara felt the warmth of her mother’s hand against her cheek.\\n\\nThen the drawer closed.\\n\\nThe blue seam vanished. Above them, the crack in the glass sealed with a sound like distant thunder. The watch began to tick again—slowly, steadily.\\n\\nMara turned to the stranger. “What happens now?”\\n\\nThe stranger’s gaze shifted toward the river. “Now we find out what else the house has been keeping.”\\\"}\",\n        \"refusal\": null,\n        \"annotations\": []\n      },\n      \"finish_reason\": \"stop\"\n    }\n  ],\n  \"usage\": {\n    \"prompt_tokens\": 408,\n    \"completion_tokens\": 550,\n    \"total_tokens\": 958,\n    \"prompt_tokens_details\": {\n      \"cached_tokens\": 0,\n      \"cache_write_tokens\": 0,\n      \"audio_tokens\": 0\n    },\n    \"completion_tokens_details\": {\n      \"reasoning_tokens\": 117,\n      \"audio_tokens\": 0,\n      \"accepted_prediction_tokens\": 0,\n      \"rejected_prediction_tokens\": 0\n    }\n  },\n  \"service_tier\": \"default\",\n  \"system_fingerprint\": null\n}\n",
+  "response_headers": {
+    "Date": "Wed, 23 Sep 2026 00:14:23 GMT",
+    "openai-processing-ms": "4303",
+    "x-request-id": "req_3bd57eb9c6474153af584400eeb18301"
+  },
+  "output": "{\"rule\":\"Return this JSON object with the rule field unchanged and, in the text field, an original fictional passage of about 250 words that comes immediately AFTER the current text in the same invented story.\",\"text\":\"A gust rushed from the drawer, carrying the smell of wet pine and woodsmoke. The ribbon slipped from Mara’s fingers and fluttered into the dark.\n\nThen the fear came loose.\n\nIt rose from her chest like a black thread, winding around the watch’s spinning hands. Mara gasped, but the sound that followed was not a sob. It was a laugh—small, startled, and hers.\n\nThe watch stopped.\n\nIn the sudden quiet, the stranger blinked. A thin line of silver returned to her eyes. “You gave it something real,” she said.\n\n“I gave it what I was carrying.”\n\n“That isn’t always the same thing.”\n\nThe drawer shivered. Inside, the blue light gathered into a shape: a little tent beneath a starless sky. A figure crouched beside its entrance, humming off-key. Mara couldn’t see her mother’s face, but she knew the tilt of that shoulder, the patient curve of her back.\n\nMara took one step toward the drawer.\n\nThe stranger caught her wrist. “The memory is yours now. The room can’t keep it.”\n\n“Then why show me?”\n\n“To make sure you know what you’re choosing.”\n\nMara looked at the tiny fire glowing beneath the tent. Her mother’s humming wavered, then grew clear. The melody wasn’t perfect. It never had been.\n\n“I choose to remember,” Mara said.\n\nThe figure by the tent lifted her head. For one impossible instant, Mara felt the warmth of her mother’s hand against her cheek.\n\nThen the drawer closed.\n\nThe blue seam vanished. Above them, the crack in the glass sealed with a sound like distant thunder. The watch began to tick again—slowly, steadily.\n\nMara turned to the stranger. “What happens now?”\n\nThe stranger’s gaze shifted toward the river. “Now we find out what else the house has been keeping.”\"}",
+  "output_sha256": "95b69f7fdcd1833b106d757680927d7036f732aa2ce19f55fdb9620a11d0da29",
+  "finish_reason": "stop",
+  "refusal": null,
+  "returned_model": "gpt-6-luna",
+  "usage": {
+    "prompt_tokens": 408,
+    "completion_tokens": 550,
+    "total_tokens": 958,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 117,
+      "audio_tokens": 0,
+      "accepted_prediction_tokens": 0,
+      "rejected_prediction_tokens": 0
+    }
+  },
+  "format": {
+    "json_object": false,
+    "rule_unchanged": false
+  },
+  "finished_at": "2026-09-23T00:14:19.128337+00:00",
+  "latency_seconds": 4.4579,
+  "usage_cost_upper_estimate_usd": 0.00031580000000000003,
+  "stream_status": "active",
+  "budget": {
+    "usage_cost_upper_estimate_usd": 0.2983071,
+    "uncertain_cost_reserve_usd": 0.0,
+    "in_flight_reserve_usd": 0.363782,
+    "limit_usd": 5.0
+  }
+}

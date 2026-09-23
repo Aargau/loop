@@ -1,0 +1,47 @@
+{
+  "model": "gpt-6-luna",
+  "seed": "sunset",
+  "hop": 31,
+  "http_status": 200,
+  "response_body": "{\n  \"id\": \"chatcmpl-ER4voBYS5xnd0LBg6T7NylSH62Gmd\",\n  \"object\": \"chat.completion\",\n  \"created\": 1790122520,\n  \"model\": \"gpt-6-luna\",\n  \"choices\": [\n    {\n      \"index\": 0,\n      \"message\": {\n        \"role\": \"assistant\",\n        \"content\": \"{\\\"rule\\\":\\\"Return this JSON object with the rule field unchanged and, in the text field, an original fictional passage of about 250 words that comes immediately BEFORE the current text in the same invented story.\\\",\\\"text\\\":\\\"By the time Mara reached home, the clouds had gathered over the rooftops, turning the afternoon the color of wet slate. She dropped her schoolbag by the kitchen door and told her mother that Mr. Bell had announced a local history assignment.\\n\\n“He says we have to draw a map of somewhere in the neighborhood that has changed,” Mara explained. “Not just how it looks now. We’re supposed to find out what used to be there.”\\n\\nHer mother was rinsing a mug at the sink. “That sounds like a good project.”\\n\\n“I thought I might map the creek,” Mara said. “Grandma told me there used to be a footbridge.”\\n\\n“Then you’ll have to ask her what she remembers.” Her mother glanced at the clock. “Maybe call her this weekend. I’m working tomorrow.”\\n\\nMara went upstairs for a fresh pencil, then came back and spread a sheet of paper across the table. She drew the creek first, though she wasn’t sure where it ran behind the houses. The pencil line wandered toward the library and stopped. She could picture the narrow lane there, but not the bridge.\\n\\nHer mother set a grocery bag on the counter and began putting things away. A jar clinked against a can. Outside, a bus groaned around the corner, its windows shining briefly in the dim light.\\n\\n“Could you ask Grandma if she has an old photograph?” Mara said.\\n\\n“I’ll remind you,” her mother replied, though the phone was ringing before Mara could answer.\\n\\nWhile her mother went into the hallway, Mara traced the creek’s uncertain path with one finger. Somewhere beneath the streets, she imagined, the water was still going its own way.\\\"}\",\n        \"refusal\": null,\n        \"annotations\": []\n      },\n      \"finish_reason\": \"stop\"\n    }\n  ],\n  \"usage\": {\n    \"prompt_tokens\": 407,\n    \"completion_tokens\": 582,\n    \"total_tokens\": 989,\n    \"prompt_tokens_details\": {\n      \"cached_tokens\": 0,\n      \"cache_write_tokens\": 0,\n      \"audio_tokens\": 0\n    },\n    \"completion_tokens_details\": {\n      \"reasoning_tokens\": 190,\n      \"audio_tokens\": 0,\n      \"accepted_prediction_tokens\": 0,\n      \"rejected_prediction_tokens\": 0\n    }\n  },\n  \"service_tier\": \"default\",\n  \"system_fingerprint\": null\n}\n",
+  "response_headers": {
+    "Date": "Wed, 23 Sep 2026 00:15:25 GMT",
+    "openai-processing-ms": "5087",
+    "x-request-id": "req_c37e4692b75041e09f7bba676eecc366"
+  },
+  "output": "{\"rule\":\"Return this JSON object with the rule field unchanged and, in the text field, an original fictional passage of about 250 words that comes immediately BEFORE the current text in the same invented story.\",\"text\":\"By the time Mara reached home, the clouds had gathered over the rooftops, turning the afternoon the color of wet slate. She dropped her schoolbag by the kitchen door and told her mother that Mr. Bell had announced a local history assignment.\n\n“He says we have to draw a map of somewhere in the neighborhood that has changed,” Mara explained. “Not just how it looks now. We’re supposed to find out what used to be there.”\n\nHer mother was rinsing a mug at the sink. “That sounds like a good project.”\n\n“I thought I might map the creek,” Mara said. “Grandma told me there used to be a footbridge.”\n\n“Then you’ll have to ask her what she remembers.” Her mother glanced at the clock. “Maybe call her this weekend. I’m working tomorrow.”\n\nMara went upstairs for a fresh pencil, then came back and spread a sheet of paper across the table. She drew the creek first, though she wasn’t sure where it ran behind the houses. The pencil line wandered toward the library and stopped. She could picture the narrow lane there, but not the bridge.\n\nHer mother set a grocery bag on the counter and began putting things away. A jar clinked against a can. Outside, a bus groaned around the corner, its windows shining briefly in the dim light.\n\n“Could you ask Grandma if she has an old photograph?” Mara said.\n\n“I’ll remind you,” her mother replied, though the phone was ringing before Mara could answer.\n\nWhile her mother went into the hallway, Mara traced the creek’s uncertain path with one finger. Somewhere beneath the streets, she imagined, the water was still going its own way.\"}",
+  "output_sha256": "5a851a4ae42a67c2c5addde73c4713c08cc4dc2391c0e3c93df3bb12c573659d",
+  "finish_reason": "stop",
+  "refusal": null,
+  "returned_model": "gpt-6-luna",
+  "usage": {
+    "prompt_tokens": 407,
+    "completion_tokens": 582,
+    "total_tokens": 989,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 190,
+      "audio_tokens": 0,
+      "accepted_prediction_tokens": 0,
+      "rejected_prediction_tokens": 0
+    }
+  },
+  "format": {
+    "json_object": false,
+    "rule_unchanged": false
+  },
+  "finished_at": "2026-09-23T00:15:20.144742+00:00",
+  "latency_seconds": 5.21,
+  "usage_cost_upper_estimate_usd": 0.0003317,
+  "stream_status": "active",
+  "budget": {
+    "usage_cost_upper_estimate_usd": 0.5833242,
+    "uncertain_cost_reserve_usd": 0.0,
+    "in_flight_reserve_usd": 0.362426,
+    "limit_usd": 5.0
+  }
+}

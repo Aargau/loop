@@ -1,0 +1,50 @@
+{
+  "model": "gpt-6-astra",
+  "seed": "sunset",
+  "hop": 40,
+  "http_status": 200,
+  "response_body": "{\n  \"id\": \"chatcmpl-ER521XoXL0sSAhUWgydNocdO8Nzb9\",\n  \"object\": \"chat.completion\",\n  \"created\": 1790122905,\n  \"model\": \"gpt-6-astra\",\n  \"choices\": [\n    {\n      \"index\": 0,\n      \"message\": {\n        \"role\": \"assistant\",\n        \"content\": \"{\\n  \\\"rule\\\": \\\"Return this JSON object with the rule field unchanged and, in the text field, an original fictional passage of about 250 words that comes immediately BEFORE the current text in the same invented story.\\\",\\n  \\\"text\\\": \\\"On Wednesday the nurse asked Mara to bring in a few things from home. Nightdresses, a toothbrush, whatever her mother usually used. There was a cupboard beside the bed, though the nurse said not to leave anything valuable.\\\\n\\\\nHer mother was watching a man clean the floor outside the ward. Each time he reached the doors he lifted the handle of his machine and turned it carefully.\\\\n\\\\n'I've got a toothbrush,' she said.\\\\n\\\\n'They mean your own things.'\\\\n\\\\n'That one is mine. I was given it.'\\\\n\\\\nMara opened the cupboard. A toothbrush in a paper sleeve lay on the shelf beside a packet of tissues. She closed it again.\\\\n\\\\nAt six, someone brought sandwiches. Her mother chose cheese and asked Mara to take the tomato out. Mara used the edge of the plastic knife, putting the slices on the lid. When she had finished, her mother said she wasn't hungry yet.\\\\n\\\\n'I'll wrap it up, then.'\\\\n\\\\n'You'll make it soggy.'\\\\n\\\\nMara left it on the plate.\\\\n\\\\nBefore she went, she asked about the house. Her mother had already told her where the spare key was, but now seemed doubtful that it would work.\\\\n\\\\n'It sticks unless you pull the door towards you.'\\\\n\\\\n'I know.'\\\\n\\\\n'Not too hard. Just enough.'\\\\n\\\\nIn the car park Mara found the list she had made on the back of an envelope. She added comb beneath slippers. Then she rang her mother's number and waited for the answering machine, listening to the familiar voice ask her to leave a message. She ended the call at the tone.\\\"\\n}\",\n        \"refusal\": null,\n        \"annotations\": []\n      },\n      \"finish_reason\": \"stop\"\n    }\n  ],\n  \"usage\": {\n    \"prompt_tokens\": 399,\n    \"completion_tokens\": 401,\n    \"total_tokens\": 800,\n    \"prompt_tokens_details\": {\n      \"cached_tokens\": 0,\n      \"cache_write_tokens\": 0,\n      \"audio_tokens\": 0\n    },\n    \"completion_tokens_details\": {\n      \"reasoning_tokens\": 0,\n      \"audio_tokens\": 0,\n      \"accepted_prediction_tokens\": 0,\n      \"rejected_prediction_tokens\": 0\n    }\n  },\n  \"service_tier\": \"default\",\n  \"system_fingerprint\": null\n}\n",
+  "response_headers": {
+    "Date": "Wed, 23 Sep 2026 00:22:01 GMT",
+    "openai-processing-ms": "16714",
+    "x-request-id": "req_1e83360173f14d18b21279d1f9e388c7"
+  },
+  "output": "{\n  \"rule\": \"Return this JSON object with the rule field unchanged and, in the text field, an original fictional passage of about 250 words that comes immediately BEFORE the current text in the same invented story.\",\n  \"text\": \"On Wednesday the nurse asked Mara to bring in a few things from home. Nightdresses, a toothbrush, whatever her mother usually used. There was a cupboard beside the bed, though the nurse said not to leave anything valuable.\\n\\nHer mother was watching a man clean the floor outside the ward. Each time he reached the doors he lifted the handle of his machine and turned it carefully.\\n\\n'I've got a toothbrush,' she said.\\n\\n'They mean your own things.'\\n\\n'That one is mine. I was given it.'\\n\\nMara opened the cupboard. A toothbrush in a paper sleeve lay on the shelf beside a packet of tissues. She closed it again.\\n\\nAt six, someone brought sandwiches. Her mother chose cheese and asked Mara to take the tomato out. Mara used the edge of the plastic knife, putting the slices on the lid. When she had finished, her mother said she wasn't hungry yet.\\n\\n'I'll wrap it up, then.'\\n\\n'You'll make it soggy.'\\n\\nMara left it on the plate.\\n\\nBefore she went, she asked about the house. Her mother had already told her where the spare key was, but now seemed doubtful that it would work.\\n\\n'It sticks unless you pull the door towards you.'\\n\\n'I know.'\\n\\n'Not too hard. Just enough.'\\n\\nIn the car park Mara found the list she had made on the back of an envelope. She added comb beneath slippers. Then she rang her mother's number and waited for the answering machine, listening to the familiar voice ask her to leave a message. She ended the call at the tone.\"\n}",
+  "output_sha256": "339aa92fac8f60b6cf52f67a15ccd7ee92990662081a9b37d63e034f0238f2e1",
+  "finish_reason": "stop",
+  "refusal": null,
+  "returned_model": "gpt-6-astra",
+  "usage": {
+    "prompt_tokens": 399,
+    "completion_tokens": 401,
+    "total_tokens": 800,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "audio_tokens": 0,
+      "accepted_prediction_tokens": 0,
+      "rejected_prediction_tokens": 0
+    }
+  },
+  "format": {
+    "json_object": true,
+    "rule_unchanged": true,
+    "passage_is_string": true,
+    "passage_sha256": "0b4e9fafee3cab59b85bf0dbe403cb79f93b3e3d42dd30dcbef39ace37d34fb4",
+    "passage_words": 261
+  },
+  "finished_at": "2026-09-23T00:21:56.859709+00:00",
+  "latency_seconds": 16.8209,
+  "usage_cost_upper_estimate_usd": 0.02404,
+  "stream_status": "active",
+  "budget": {
+    "usage_cost_upper_estimate_usd": 1.7617951,
+    "uncertain_cost_reserve_usd": 0.0,
+    "in_flight_reserve_usd": 0.0,
+    "limit_usd": 5.0
+  }
+}

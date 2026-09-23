@@ -1,0 +1,50 @@
+{
+  "model": "gpt-6-sol",
+  "seed": "sunset",
+  "hop": 19,
+  "http_status": 200,
+  "response_body": "{\n  \"id\": \"chatcmpl-ER4vSRCj3Jpb3lFY5IYClH59B4t8E\",\n  \"object\": \"chat.completion\",\n  \"created\": 1790122498,\n  \"model\": \"gpt-6-sol\",\n  \"choices\": [\n    {\n      \"index\": 0,\n      \"message\": {\n        \"role\": \"assistant\",\n        \"content\": \"{\\n  \\\"rule\\\": \\\"Return this JSON object with the rule field unchanged and, in the text field, an original fictional passage of about 250 words that comes immediately BEFORE the current text in the same invented story.\\\",\\n  \\\"text\\\": \\\"By the time Mara got home from the hospital, the light over the front door had gone out. She found the key by feeling along the edge of the lock. Bristle barked once from inside, then scratched at the door until she opened it.\\\\n\\\\nShe filled his water bowl. On the kitchen counter sat the loaf she had bought that afternoon, still in its paper bag. Her mother had asked her to pick it up on the way home, before anyone knew there would be a reason to stay at the hospital. Mara folded the top of the bag closed.\\\\n\\\\nThe telephone rang while she was taking off her coat. It was her aunt, who had been waiting for news. Mara told her what the doctor had said. After a silence, her aunt asked if she should come over. Mara said she would call in the morning. Her aunt began to say something else, but the line crackled, and Mara asked her to leave a message if she thought of anything they needed to do.\\\\n\\\\nUpstairs, the bathroom window was open a little. Mara shut it and stood looking at the towel her mother had laid neatly over the radiator. Then she went to her own room without turning on the landing light.\\\\n\\\\nBristle followed her up, his nails clicking on each stair. He lay beside her bed until she turned out the lamp. Later, when Mara woke and reached down, the floor was empty. She could hear him settle somewhere along the hall. She pulled the blanket up and listened to the house until she fell asleep again.\\\"\\n}\",\n        \"refusal\": null,\n        \"annotations\": []\n      },\n      \"finish_reason\": \"stop\"\n    }\n  ],\n  \"usage\": {\n    \"prompt_tokens\": 366,\n    \"completion_tokens\": 418,\n    \"total_tokens\": 784,\n    \"prompt_tokens_details\": {\n      \"cached_tokens\": 0,\n      \"cache_write_tokens\": 0,\n      \"audio_tokens\": 0\n    },\n    \"completion_tokens_details\": {\n      \"reasoning_tokens\": 43,\n      \"audio_tokens\": 0,\n      \"accepted_prediction_tokens\": 0,\n      \"rejected_prediction_tokens\": 0\n    }\n  },\n  \"service_tier\": \"default\",\n  \"system_fingerprint\": null\n}\n",
+  "response_headers": {
+    "Date": "Wed, 23 Sep 2026 00:15:04 GMT",
+    "openai-processing-ms": "6229",
+    "x-request-id": "req_5c64c57db1ee4e4fb3b36634d255a192"
+  },
+  "output": "{\n  \"rule\": \"Return this JSON object with the rule field unchanged and, in the text field, an original fictional passage of about 250 words that comes immediately BEFORE the current text in the same invented story.\",\n  \"text\": \"By the time Mara got home from the hospital, the light over the front door had gone out. She found the key by feeling along the edge of the lock. Bristle barked once from inside, then scratched at the door until she opened it.\\n\\nShe filled his water bowl. On the kitchen counter sat the loaf she had bought that afternoon, still in its paper bag. Her mother had asked her to pick it up on the way home, before anyone knew there would be a reason to stay at the hospital. Mara folded the top of the bag closed.\\n\\nThe telephone rang while she was taking off her coat. It was her aunt, who had been waiting for news. Mara told her what the doctor had said. After a silence, her aunt asked if she should come over. Mara said she would call in the morning. Her aunt began to say something else, but the line crackled, and Mara asked her to leave a message if she thought of anything they needed to do.\\n\\nUpstairs, the bathroom window was open a little. Mara shut it and stood looking at the towel her mother had laid neatly over the radiator. Then she went to her own room without turning on the landing light.\\n\\nBristle followed her up, his nails clicking on each stair. He lay beside her bed until she turned out the lamp. Later, when Mara woke and reached down, the floor was empty. She could hear him settle somewhere along the hall. She pulled the blanket up and listened to the house until she fell asleep again.\"\n}",
+  "output_sha256": "d384d4c7af65b1575468ee0935173072e729f51fef3a5a0ae2fe8062334c1474",
+  "finish_reason": "stop",
+  "refusal": null,
+  "returned_model": "gpt-6-sol",
+  "usage": {
+    "prompt_tokens": 366,
+    "completion_tokens": 418,
+    "total_tokens": 784,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 43,
+      "audio_tokens": 0,
+      "accepted_prediction_tokens": 0,
+      "rejected_prediction_tokens": 0
+    }
+  },
+  "format": {
+    "json_object": true,
+    "rule_unchanged": true,
+    "passage_is_string": true,
+    "passage_sha256": "cae21632623d854ff0b109153affae88ef3edf50e2cc6cec1a18f326286b66a4",
+    "passage_words": 269
+  },
+  "finished_at": "2026-09-23T00:14:59.823719+00:00",
+  "latency_seconds": 6.3743,
+  "usage_cost_upper_estimate_usd": 0.004912,
+  "stream_status": "active",
+  "budget": {
+    "usage_cost_upper_estimate_usd": 0.5151168,
+    "uncertain_cost_reserve_usd": 0.0,
+    "in_flight_reserve_usd": 0.3203077,
+    "limit_usd": 5.0
+  }
+}

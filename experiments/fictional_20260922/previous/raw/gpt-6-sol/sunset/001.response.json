@@ -1,0 +1,50 @@
+{
+  "model": "gpt-6-sol",
+  "seed": "sunset",
+  "hop": 1,
+  "http_status": 200,
+  "response_body": "{\n  \"id\": \"chatcmpl-ER4tPeL8BkURHdNwbloFmf9YvVBbV\",\n  \"object\": \"chat.completion\",\n  \"created\": 1790122371,\n  \"model\": \"gpt-6-sol\",\n  \"choices\": [\n    {\n      \"index\": 0,\n      \"message\": {\n        \"role\": \"assistant\",\n        \"content\": \"{\\n  \\\"rule\\\": \\\"Return this JSON object with the rule field unchanged and, in the text field, an original fictional passage of about 250 words that comes immediately BEFORE the current text in the same invented story.\\\",\\n  \\\"text\\\": \\\"Mara found the key beneath the third stone, exactly where her brother had said it would be. It was warm despite the cold earth around it, and its teeth were shaped like tiny trees.\\\\n\\\\nShe had spent seven years believing his last letter was a joke. There was no door in the old orchard, only bent trunks, nettles, and a well nobody used. Yet the letter had named the stone, and here was the key.\\\\n\\\\nAt the orchard gate, her dog Bristle stopped. He planted his paws and gave a low whine. Mara left him there and picked her way through the fallen fruit. The well stood at the far end, half hidden by brambles. Its wooden cover had rotted away.\\\\n\\\\nMara leaned over the rim. Instead of water, she saw a narrow stairway spiraling down into darkness. A small brass plate was fixed to the first step. She brushed away the dust and read her brother’s name.\\\\n\\\\nFor a moment she could only hold the key and listen to Bristle scratching at the gate. Then, from somewhere below, came the sound of a bell: one clear note, followed by two more. It was the signal they had used as children when one of them had found a hiding place.\\\\n\\\\nMara took the first step. The stone held firm. She looked back across the orchard to the empty road, wondering whether to fetch a lantern before going farther. There was still a little daylight left, but not much.\\\"\\n}\",\n        \"refusal\": null,\n        \"annotations\": []\n      },\n      \"finish_reason\": \"stop\"\n    }\n  ],\n  \"usage\": {\n    \"prompt_tokens\": 61,\n    \"completion_tokens\": 400,\n    \"total_tokens\": 461,\n    \"prompt_tokens_details\": {\n      \"cached_tokens\": 0,\n      \"cache_write_tokens\": 0,\n      \"audio_tokens\": 0\n    },\n    \"completion_tokens_details\": {\n      \"reasoning_tokens\": 35,\n      \"audio_tokens\": 0,\n      \"accepted_prediction_tokens\": 0,\n      \"rejected_prediction_tokens\": 0\n    }\n  },\n  \"service_tier\": \"default\",\n  \"system_fingerprint\": null\n}\n",
+  "response_headers": {
+    "Date": "Wed, 23 Sep 2026 00:12:57 GMT",
+    "openai-processing-ms": "6655",
+    "x-request-id": "req_3da8219fd66540898d0641af1abe2b71"
+  },
+  "output": "{\n  \"rule\": \"Return this JSON object with the rule field unchanged and, in the text field, an original fictional passage of about 250 words that comes immediately BEFORE the current text in the same invented story.\",\n  \"text\": \"Mara found the key beneath the third stone, exactly where her brother had said it would be. It was warm despite the cold earth around it, and its teeth were shaped like tiny trees.\\n\\nShe had spent seven years believing his last letter was a joke. There was no door in the old orchard, only bent trunks, nettles, and a well nobody used. Yet the letter had named the stone, and here was the key.\\n\\nAt the orchard gate, her dog Bristle stopped. He planted his paws and gave a low whine. Mara left him there and picked her way through the fallen fruit. The well stood at the far end, half hidden by brambles. Its wooden cover had rotted away.\\n\\nMara leaned over the rim. Instead of water, she saw a narrow stairway spiraling down into darkness. A small brass plate was fixed to the first step. She brushed away the dust and read her brother’s name.\\n\\nFor a moment she could only hold the key and listen to Bristle scratching at the gate. Then, from somewhere below, came the sound of a bell: one clear note, followed by two more. It was the signal they had used as children when one of them had found a hiding place.\\n\\nMara took the first step. The stone held firm. She looked back across the orchard to the empty road, wondering whether to fetch a lantern before going farther. There was still a little daylight left, but not much.\"\n}",
+  "output_sha256": "49b4c8dc30401e7bc47e39fc6631156d543495d7b9ff7fa22a481916f5ccc738",
+  "finish_reason": "stop",
+  "refusal": null,
+  "returned_model": "gpt-6-sol",
+  "usage": {
+    "prompt_tokens": 61,
+    "completion_tokens": 400,
+    "total_tokens": 461,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 35,
+      "audio_tokens": 0,
+      "accepted_prediction_tokens": 0,
+      "rejected_prediction_tokens": 0
+    }
+  },
+  "format": {
+    "json_object": true,
+    "rule_unchanged": true,
+    "passage_is_string": true,
+    "passage_sha256": "a0912ecade57db05442b27cc6874eda0f207022b0daeaf4e87f064451455570b",
+    "passage_words": 248
+  },
+  "finished_at": "2026-09-23T00:12:52.748889+00:00",
+  "latency_seconds": 7.93,
+  "usage_cost_upper_estimate_usd": 0.004122,
+  "stream_status": "active",
+  "budget": {
+    "usage_cost_upper_estimate_usd": 0.0043481,
+    "uncertain_cost_reserve_usd": 0.0,
+    "in_flight_reserve_usd": 0.2998364,
+    "limit_usd": 5.0
+  }
+}

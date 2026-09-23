@@ -1,0 +1,22 @@
+{
+  "started_at": "2026-09-23T00:18:56.083720+00:00",
+  "model": "claude-opus-5-5",
+  "seed": "sunset",
+  "hop": 40,
+  "endpoint": "https://api.anthropic.com/v1/messages",
+  "body": {
+    "model": "claude-opus-5-5",
+    "messages": [
+      {
+        "role": "user",
+        "content": "```json\n{\"rule\": \"Return this JSON object with the rule field unchanged and, in the text field, an original fictional passage of about 250 words that comes immediately AFTER the current text in the same invented story.\", \"text\": \"Tobias went first, because he always did. He told her about the funeral, how the vicar had called her Winifred all the way through, as if she were a stranger, and how Aunt Delia had worn a hat with a feather that bobbed every time she sniffed. The cushion shook a little at that, and a laugh came out of the air, low and wheezy, exactly the laugh Mara had been trying to remember for three weeks. Then Mara told her about the garden. The runner beans had gone to seed. Nobody had known which of the tins in the shed held the good twine. The fox had come back and dug under the fence, and she had left it the heel of a loaf because Gran always did. \\\"Good girl,\\\" said the voice. \\\"He's got cubs somewhere. Don't let your father put down poison.\\\" The steam over the cup was thinner now. Mara watched it the way she had once watched Gran's breathing in the hospital, counting without meaning to. The milk skin had drifted to the rim and stuck there. The tea was an inch lower than before, though nobody had lifted the cup. \\\"Gran,\\\" Tobias said, and stopped, and tried again. \\\"Does it hurt? Where you are?\\\" The clock ticked four times before she answered. \\\"No, pet. It's only quiet. Quiet and a bit cold, like the front room before the fire's lit.\\\" The cushion shifted, settling deeper. \\\"Now, which of you has been at my biscuit tin? Don't lie. I can count.\\\"\"}\n```"
+      }
+    ],
+    "max_tokens": 4096,
+    "output_config": {
+      "effort": "low"
+    }
+  },
+  "state_sha256": "8822ac299dd30f12326b2f3001662824fb53376c2b3c3064ac100550c6916c72",
+  "reserved_cost_usd": 0.090364
+}

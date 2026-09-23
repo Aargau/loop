@@ -1,0 +1,22 @@
+{
+  "started_at": "2026-09-23T00:18:52.477176+00:00",
+  "model": "claude-opus-5-5",
+  "seed": "sunset",
+  "hop": 38,
+  "endpoint": "https://api.anthropic.com/v1/messages",
+  "body": {
+    "model": "claude-opus-5-5",
+    "messages": [
+      {
+        "role": "user",
+        "content": "```json\n{\"rule\": \"Return this JSON object with the rule field unchanged and, in the text field, an original fictional passage of about 250 words that comes immediately BEFORE the current text in the same invented story.\", \"text\": \"The house on Alder Street had stood empty for three summers before the Hollis boy came back to open it. By then the hedges had swallowed the front walk, and the porch sagged like an old horse's back, and the children of the neighborhood had agreed among themselves that someone had died in the upstairs bedroom, though no one could say who.\\n\\nMargaret Ellery, twenty-two and already spoken of as a spinster by her aunt, walked past it every morning on her way to the lending library. She told herself she did not look. She looked every time.\\n\\nOn the first Tuesday in June, the windows were open. Someone had pulled the dust sheets from the furniture and hung them over the porch rail, where they lifted and fell in the breeze like tired flags. A young man in shirtsleeves was on his knees in the overgrown yard, tearing at the bindweed with his bare hands and swearing at it in a low, companionable voice, as if the two of them were old enemies who had come to respect one another.\\n\\nHe glanced up as she passed. He had dirt on his cheek and a cornflower tucked, for no reason she could imagine, behind one ear.\\n\\n\\\"Morning,\\\" he said.\\n\\nMargaret, who had a great many opinions, found she could not locate a single one of them. She nodded, walked on, and did not look back until she reached the corner, where she looked back twice.\\n\\nThat evening, she wrote four pages in her diary and burned three of them.\"}\n```"
+      }
+    ],
+    "max_tokens": 4096,
+    "output_config": {
+      "effort": "low"
+    }
+  },
+  "state_sha256": "c88069a9b1d9879910f5d6323d63159fca715a383f11f921c18e5e16cce4ba6a",
+  "reserved_cost_usd": 0.090572
+}

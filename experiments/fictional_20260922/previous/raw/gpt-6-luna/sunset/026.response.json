@@ -1,0 +1,47 @@
+{
+  "model": "gpt-6-luna",
+  "seed": "sunset",
+  "hop": 26,
+  "http_status": 200,
+  "response_body": "{\n  \"id\": \"chatcmpl-ER4vRpHPqINPLcmgo47n0rylKJnxb\",\n  \"object\": \"chat.completion\",\n  \"created\": 1790122497,\n  \"model\": \"gpt-6-luna\",\n  \"choices\": [\n    {\n      \"index\": 0,\n      \"message\": {\n        \"role\": \"assistant\",\n        \"content\": \"{\\\"rule\\\":\\\"Return this JSON object with the rule field unchanged and, in the text field, an original fictional passage of about 250 words that comes immediately BEFORE the current text in the same invented story.\\\",\\\"text\\\":\\\"On Wednesday morning, Mara woke to the sound of her mother moving quietly around the kitchen. The pipes rattled whenever the upstairs neighbor turned on the tap, and the old clock above the sink seemed to tick louder than usual.\\n\\nHer mother was buttoning her work coat when Mara came in. “There’s bread on the list,” she said, sliding a few coins across the table. “If you have time after school, would you pick up a loaf?”\\n\\nMara nodded. She noticed a white envelope on the counter, its corner tucked beneath the sugar bowl. Her mother followed her gaze and quickly moved the bowl.\\n\\n“It’s nothing you need to worry about,” she said.\\n\\nMara wanted to ask what that meant, but the bus was due in ten minutes. She stuffed her books into her bag and hurried out, leaving the question behind.\\n\\nAt school, she tried to concentrate on a lesson about old city boundaries. Their teacher drew streets on the board and explained how some roads had been built over buried streams. Mara copied the notes, though her mind kept returning to the envelope and the careful way her mother had hidden it.\\n\\nAt lunch, she checked her phone. There was a message from her mother: Please come straight home today. Nothing else.\\n\\nMara read it twice, then put the phone away. She wondered whether something had happened at the clinic, where her mother had been going for appointments all month. But when the final bell rang, she packed her things and headed out without asking anyone for advice.\\n\\nThe sky had darkened while she was inside. By the time she reached Bell Street, the first drops were already tapping against the pavement.\\\"}\",\n        \"refusal\": null,\n        \"annotations\": []\n      },\n      \"finish_reason\": \"stop\"\n    }\n  ],\n  \"usage\": {\n    \"prompt_tokens\": 354,\n    \"completion_tokens\": 460,\n    \"total_tokens\": 814,\n    \"prompt_tokens_details\": {\n      \"cached_tokens\": 0,\n      \"cache_write_tokens\": 0,\n      \"audio_tokens\": 0\n    },\n    \"completion_tokens_details\": {\n      \"reasoning_tokens\": 74,\n      \"audio_tokens\": 0,\n      \"accepted_prediction_tokens\": 0,\n      \"rejected_prediction_tokens\": 0\n    }\n  },\n  \"service_tier\": \"default\",\n  \"system_fingerprint\": null\n}\n",
+  "response_headers": {
+    "Date": "Wed, 23 Sep 2026 00:15:00 GMT",
+    "openai-processing-ms": "3993",
+    "x-request-id": "req_0870f931316a4743952bfa94989dc0ae"
+  },
+  "output": "{\"rule\":\"Return this JSON object with the rule field unchanged and, in the text field, an original fictional passage of about 250 words that comes immediately BEFORE the current text in the same invented story.\",\"text\":\"On Wednesday morning, Mara woke to the sound of her mother moving quietly around the kitchen. The pipes rattled whenever the upstairs neighbor turned on the tap, and the old clock above the sink seemed to tick louder than usual.\n\nHer mother was buttoning her work coat when Mara came in. “There’s bread on the list,” she said, sliding a few coins across the table. “If you have time after school, would you pick up a loaf?”\n\nMara nodded. She noticed a white envelope on the counter, its corner tucked beneath the sugar bowl. Her mother followed her gaze and quickly moved the bowl.\n\n“It’s nothing you need to worry about,” she said.\n\nMara wanted to ask what that meant, but the bus was due in ten minutes. She stuffed her books into her bag and hurried out, leaving the question behind.\n\nAt school, she tried to concentrate on a lesson about old city boundaries. Their teacher drew streets on the board and explained how some roads had been built over buried streams. Mara copied the notes, though her mind kept returning to the envelope and the careful way her mother had hidden it.\n\nAt lunch, she checked her phone. There was a message from her mother: Please come straight home today. Nothing else.\n\nMara read it twice, then put the phone away. She wondered whether something had happened at the clinic, where her mother had been going for appointments all month. But when the final bell rang, she packed her things and headed out without asking anyone for advice.\n\nThe sky had darkened while she was inside. By the time she reached Bell Street, the first drops were already tapping against the pavement.\"}",
+  "output_sha256": "f1df85f7f515e5c4cbdf2d9aadcf6ddb9d0d1f4ed701f85e4b5643776e5a05f0",
+  "finish_reason": "stop",
+  "refusal": null,
+  "returned_model": "gpt-6-luna",
+  "usage": {
+    "prompt_tokens": 354,
+    "completion_tokens": 460,
+    "total_tokens": 814,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 74,
+      "audio_tokens": 0,
+      "accepted_prediction_tokens": 0,
+      "rejected_prediction_tokens": 0
+    }
+  },
+  "format": {
+    "json_object": false,
+    "rule_unchanged": false
+  },
+  "finished_at": "2026-09-23T00:14:56.069647+00:00",
+  "latency_seconds": 4.1122,
+  "usage_cost_upper_estimate_usd": 0.0002654,
+  "stream_status": "active",
+  "budget": {
+    "usage_cost_upper_estimate_usd": 0.4739028,
+    "uncertain_cost_reserve_usd": 0.0,
+    "in_flight_reserve_usd": 0.364106,
+    "limit_usd": 5.0
+  }
+}

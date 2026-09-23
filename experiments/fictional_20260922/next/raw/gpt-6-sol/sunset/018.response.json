@@ -1,0 +1,50 @@
+{
+  "model": "gpt-6-sol",
+  "seed": "sunset",
+  "hop": 18,
+  "http_status": 200,
+  "response_body": "{\n  \"id\": \"chatcmpl-ER4vWpZ4Z5cx1AK7wIDpghgPbZ6xU\",\n  \"object\": \"chat.completion\",\n  \"created\": 1790122502,\n  \"model\": \"gpt-6-sol\",\n  \"choices\": [\n    {\n      \"index\": 0,\n      \"message\": {\n        \"role\": \"assistant\",\n        \"content\": \"{\\\"rule\\\":\\\"Return this JSON object with the rule field unchanged and, in the text field, an original fictional passage of about 250 words that comes immediately AFTER the current text in the same invented story.\\\",\\\"text\\\":\\\"Mara held the cup away from her. The rope kept sliding into it, hand over hand, though no length remained on the stairs. At the threshold, the other Mara lifted its head.\\\\n\\\\n“That isn’t yours,” it said in the boy’s voice.\\\\n\\\\nBehind the door, the girl began to cry. Mara wanted to turn, to see where the boy stood, but the cup had grown too heavy to hold with one hand. She set it on the floor. The boards bowed beneath it.\\\\n\\\\n“Take the children outside,” she told the girl. “Don’t go near the well.”\\\\n\\\\nThe kitchen door shut. Footsteps hurried toward the back of the house, two sets, then a third, smaller than either. Mara heard the back door open and slam.\\\\n\\\\nThe thing at the threshold heard it too. Its face smoothed into her own, and it smiled.\\\\n\\\\nMara snatched up the lantern. Green flame clung to the wick, giving off no heat. She lowered it toward the cup and saw, deep inside, a circle of sky. A bucket swung across that little patch of daylight. Someone was hauling it up.\\\\n\\\\nThe cup lurched. Mara caught its rim with her boot. Below, a hand appeared over the lip of the well, gripping the stones from the inside. It wore her mother’s ring.\\\\n\\\\nMara tipped the lantern into the cup. The flame fell a long way. For one breath, the house smelled of rain on hot stone. Then the rope snapped taut, and the hand below let go.\\\"}\",\n        \"refusal\": null,\n        \"annotations\": []\n      },\n      \"finish_reason\": \"stop\"\n    }\n  ],\n  \"usage\": {\n    \"prompt_tokens\": 398,\n    \"completion_tokens\": 399,\n    \"total_tokens\": 797,\n    \"prompt_tokens_details\": {\n      \"cached_tokens\": 0,\n      \"cache_write_tokens\": 0,\n      \"audio_tokens\": 0\n    },\n    \"completion_tokens_details\": {\n      \"reasoning_tokens\": 19,\n      \"audio_tokens\": 0,\n      \"accepted_prediction_tokens\": 0,\n      \"rejected_prediction_tokens\": 0\n    }\n  },\n  \"service_tier\": \"default\",\n  \"system_fingerprint\": null\n}\n",
+  "response_headers": {
+    "Date": "Wed, 23 Sep 2026 00:15:09 GMT",
+    "openai-processing-ms": "7578",
+    "x-request-id": "req_1deefa77faa14832ac4444fad0971015"
+  },
+  "output": "{\"rule\":\"Return this JSON object with the rule field unchanged and, in the text field, an original fictional passage of about 250 words that comes immediately AFTER the current text in the same invented story.\",\"text\":\"Mara held the cup away from her. The rope kept sliding into it, hand over hand, though no length remained on the stairs. At the threshold, the other Mara lifted its head.\\n\\n“That isn’t yours,” it said in the boy’s voice.\\n\\nBehind the door, the girl began to cry. Mara wanted to turn, to see where the boy stood, but the cup had grown too heavy to hold with one hand. She set it on the floor. The boards bowed beneath it.\\n\\n“Take the children outside,” she told the girl. “Don’t go near the well.”\\n\\nThe kitchen door shut. Footsteps hurried toward the back of the house, two sets, then a third, smaller than either. Mara heard the back door open and slam.\\n\\nThe thing at the threshold heard it too. Its face smoothed into her own, and it smiled.\\n\\nMara snatched up the lantern. Green flame clung to the wick, giving off no heat. She lowered it toward the cup and saw, deep inside, a circle of sky. A bucket swung across that little patch of daylight. Someone was hauling it up.\\n\\nThe cup lurched. Mara caught its rim with her boot. Below, a hand appeared over the lip of the well, gripping the stones from the inside. It wore her mother’s ring.\\n\\nMara tipped the lantern into the cup. The flame fell a long way. For one breath, the house smelled of rain on hot stone. Then the rope snapped taut, and the hand below let go.\"}",
+  "output_sha256": "b09fcdc393eee199f535da742a93e8aeee47ff515ef65ad77b1a7400aa42824a",
+  "finish_reason": "stop",
+  "refusal": null,
+  "returned_model": "gpt-6-sol",
+  "usage": {
+    "prompt_tokens": 398,
+    "completion_tokens": 399,
+    "total_tokens": 797,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 19,
+      "audio_tokens": 0,
+      "accepted_prediction_tokens": 0,
+      "rejected_prediction_tokens": 0
+    }
+  },
+  "format": {
+    "json_object": true,
+    "rule_unchanged": true,
+    "passage_is_string": true,
+    "passage_sha256": "f096e2bfaf1a474d02719db1cb3159c282b02226cabf904dd70b2720d7365082",
+    "passage_words": 249
+  },
+  "finished_at": "2026-09-23T00:15:04.354634+00:00",
+  "latency_seconds": 7.7634,
+  "usage_cost_upper_estimate_usd": 0.004786,
+  "stream_status": "active",
+  "budget": {
+    "usage_cost_upper_estimate_usd": 0.4879788,
+    "uncertain_cost_reserve_usd": 0.0,
+    "in_flight_reserve_usd": 0.3219259,
+    "limit_usd": 5.0
+  }
+}

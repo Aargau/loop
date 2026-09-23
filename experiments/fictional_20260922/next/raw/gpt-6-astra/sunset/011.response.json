@@ -1,0 +1,50 @@
+{
+  "model": "gpt-6-astra",
+  "seed": "sunset",
+  "hop": 11,
+  "http_status": 200,
+  "response_body": "{\n  \"id\": \"chatcmpl-ER4vvfUUDAfzpSqp0FZEwY7qbybwm\",\n  \"object\": \"chat.completion\",\n  \"created\": 1790122527,\n  \"model\": \"gpt-6-astra\",\n  \"choices\": [\n    {\n      \"index\": 0,\n      \"message\": {\n        \"role\": \"assistant\",\n        \"content\": \"{\\n  \\\"rule\\\": \\\"Return this JSON object with the rule field unchanged and, in the text field, an original fictional passage of about 250 words that comes immediately AFTER the current text in the same invented story.\\\",\\n  \\\"text\\\": \\\"Mara put the watch beside her shoes. On the far bank, something white moved between the trees and was gone.\\\\n\\\\n“Is there a house over there?”\\\\n\\\\n“There are steps.”\\\\n\\\\n“To a house?”\\\\n\\\\n“I haven't gone up them.”\\\\n\\\\nShe turned the stocking. A small brown leaf clung to the heel. She picked it off and laid it on the water, where it stayed against the stone.\\\\n\\\\n“You could come back with me,” she said.\\\\n\\\\nElias rubbed his knee through his trousers.\\\\n\\\\n“I could walk as far as the gate.”\\\\n\\\\n“You said that last time.”\\\\n\\\\n“Last time you wouldn't stop walking.”\\\\n\\\\nThe ferryman sat down. Without his pole upright he looked smaller, an old man resting after work. He took something from a cloth and began to eat.\\\\n\\\\n“I didn't know I was meant to stop.”\\\\n\\\\nElias looked toward the path behind her. The grass she had bent coming down was lifting again.\\\\n\\\\n“No,” he said. “Neither did I.”\\\\n\\\\nShe reached for her shoe and tipped it. A little water darkened the stone.\\\\n\\\\n“At home I keep hearing you in the yard.”\\\\n\\\\n“The latch is loose.”\\\\n\\\\n“I fixed the latch.”\\\\n\\\\nHe nodded, as though this were news he had been waiting for.\\\\n\\\\nMara pulled on the damp stocking. She worked carefully around the hole at the toe, though there was no reason now to keep it from growing.\\\\n\\\\n“Will he take two?”\\\\n\\\\nElias stood and picked up her other shoe.\\\\n\\\\n“Not today.”\\\\n\\\\nHe knelt to hold it steady while she slipped her foot inside. His hands were cold through the leather.\\\"\\n}\",\n        \"refusal\": null,\n        \"annotations\": []\n      },\n      \"finish_reason\": \"stop\"\n    }\n  ],\n  \"usage\": {\n    \"prompt_tokens\": 434,\n    \"completion_tokens\": 430,\n    \"total_tokens\": 864,\n    \"prompt_tokens_details\": {\n      \"cached_tokens\": 0,\n      \"cache_write_tokens\": 0,\n      \"audio_tokens\": 0\n    },\n    \"completion_tokens_details\": {\n      \"reasoning_tokens\": 0,\n      \"audio_tokens\": 0,\n      \"accepted_prediction_tokens\": 0,\n      \"rejected_prediction_tokens\": 0\n    }\n  },\n  \"service_tier\": \"default\",\n  \"system_fingerprint\": null\n}\n",
+  "response_headers": {
+    "Date": "Wed, 23 Sep 2026 00:15:43 GMT",
+    "openai-processing-ms": "15926",
+    "x-request-id": "req_f99cfb04507e4e0494751cca6df53c41"
+  },
+  "output": "{\n  \"rule\": \"Return this JSON object with the rule field unchanged and, in the text field, an original fictional passage of about 250 words that comes immediately AFTER the current text in the same invented story.\",\n  \"text\": \"Mara put the watch beside her shoes. On the far bank, something white moved between the trees and was gone.\\n\\n“Is there a house over there?”\\n\\n“There are steps.”\\n\\n“To a house?”\\n\\n“I haven't gone up them.”\\n\\nShe turned the stocking. A small brown leaf clung to the heel. She picked it off and laid it on the water, where it stayed against the stone.\\n\\n“You could come back with me,” she said.\\n\\nElias rubbed his knee through his trousers.\\n\\n“I could walk as far as the gate.”\\n\\n“You said that last time.”\\n\\n“Last time you wouldn't stop walking.”\\n\\nThe ferryman sat down. Without his pole upright he looked smaller, an old man resting after work. He took something from a cloth and began to eat.\\n\\n“I didn't know I was meant to stop.”\\n\\nElias looked toward the path behind her. The grass she had bent coming down was lifting again.\\n\\n“No,” he said. “Neither did I.”\\n\\nShe reached for her shoe and tipped it. A little water darkened the stone.\\n\\n“At home I keep hearing you in the yard.”\\n\\n“The latch is loose.”\\n\\n“I fixed the latch.”\\n\\nHe nodded, as though this were news he had been waiting for.\\n\\nMara pulled on the damp stocking. She worked carefully around the hole at the toe, though there was no reason now to keep it from growing.\\n\\n“Will he take two?”\\n\\nElias stood and picked up her other shoe.\\n\\n“Not today.”\\n\\nHe knelt to hold it steady while she slipped her foot inside. His hands were cold through the leather.\"\n}",
+  "output_sha256": "60ced99fe3db032690246290af315e486b392f7a51caf09352df158726996885",
+  "finish_reason": "stop",
+  "refusal": null,
+  "returned_model": "gpt-6-astra",
+  "usage": {
+    "prompt_tokens": 434,
+    "completion_tokens": 430,
+    "total_tokens": 864,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "audio_tokens": 0,
+      "accepted_prediction_tokens": 0,
+      "rejected_prediction_tokens": 0
+    }
+  },
+  "format": {
+    "json_object": true,
+    "rule_unchanged": true,
+    "passage_is_string": true,
+    "passage_sha256": "2cdb3191ece9d177b06aa2fab9523927403046a2cf8ceae276ea29d940ea1a25",
+    "passage_words": 259
+  },
+  "finished_at": "2026-09-23T00:15:38.401015+00:00",
+  "latency_seconds": 16.0394,
+  "usage_cost_upper_estimate_usd": 0.02584,
+  "stream_status": "active",
+  "budget": {
+    "usage_cost_upper_estimate_usd": 0.6524755,
+    "uncertain_cost_reserve_usd": 0.0,
+    "in_flight_reserve_usd": 0.1382082,
+    "limit_usd": 5.0
+  }
+}

@@ -1,0 +1,20 @@
+{
+  "started_at": "2026-09-23T00:16:41.345652+00:00",
+  "model": "gpt-6-astra",
+  "seed": "sunset",
+  "hop": 18,
+  "endpoint": "https://api.openai.com/v1/chat/completions",
+  "body": {
+    "model": "gpt-6-astra",
+    "messages": [
+      {
+        "role": "user",
+        "content": "{\n  \"rule\": \"Return this JSON object with the rule field unchanged and, in the text field, an original fictional passage of about 250 words that comes immediately BEFORE the current text in the same invented story.\",\n  \"text\": \"By eleven the rain had found its way through the corner of the window frame. Mara put a folded tea towel on the sill, moving the cards for piano lessons and a missing cat to the dry end. The cat had been missing since June. She had meant to telephone the number and ask whether the card was still needed, but there seemed no good way to begin.\\n\\nNext door, the florist was taking delivery of buckets. The driver brought them through the shop two at a time while the florist stood in the doorway holding a clipboard under her cardigan. Mara watched him negotiate the step. Everyone discovered that step with a full pair of hands.\\n\\nShe had opened late. On the way in she had stopped for milk, then gone back because she had left it beside the till. The grocer had kept it there for her, a receipt tucked beneath the carton.\\n\\n‘One of those mornings,’ he said.\\n\\nShe had agreed, although nothing much had happened to account for it.\\n\\nNow she made tea in the little room behind the fitting curtain. There were three clean cups and she chose the chipped one, which did not wobble on the draining board. While the kettle boiled, she counted the jobs on the rail: a skirt lining, two school blazers, a dress waiting for its owner to decide about the sleeves.\\n\\nThe trousers were hanging separately, over the back of her chair. She carried her tea to the workbench and unpinned the ticket.\"\n}"
+      }
+    ],
+    "max_completion_tokens": 4096,
+    "reasoning_effort": "low"
+  },
+  "state_sha256": "e76876982395eb517b9f63c5f10c3f3f2d1561d3b88c2f0f2c28bbbbbbe78939",
+  "reserved_cost_usd": 0.22616
+}

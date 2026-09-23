@@ -1,0 +1,50 @@
+{
+  "model": "gpt-6-luna",
+  "seed": "sunset",
+  "hop": 16,
+  "http_status": 200,
+  "response_body": "{\n  \"id\": \"chatcmpl-ER4ueZ61TzX43KdwKPyitxQZYnCCA\",\n  \"object\": \"chat.completion\",\n  \"created\": 1790122448,\n  \"model\": \"gpt-6-luna\",\n  \"choices\": [\n    {\n      \"index\": 0,\n      \"message\": {\n        \"role\": \"assistant\",\n        \"content\": \"{\\\"rule\\\":\\\"Return this JSON object with the rule field unchanged and, in the text field, an original fictional passage of about 250 words that comes immediately BEFORE the current text in the same invented story.\\\",\\\"text\\\":\\\"By December, Mara could tell what kind of morning it would be from the café’s front window. Rain meant wet coats and muddy footprints; frost meant customers arrived already annoyed at the cold. On the Monday before her last shift of the year, she watched the street turn silver with sleet and tied her apron tighter.\\\\n\\\\nThe café was short-staffed, as usual. Mara took orders, carried plates, and wiped a trail of spilled cocoa from beneath a table while the manager counted the till. At closing, he told her the owner had decided to cut her hours in January. It wasn’t personal, he said; winter was slow. He gave her a sympathetic shrug, as if that might cover the difference in her pay.\\\\n\\\\nOn the bus home, she worked through the figures in her head. Her savings could handle a smaller paycheck for a little while, but not the rent, utilities, and the monthly pass she needed to get across town. She considered asking her sister for help, then pictured the sister’s own crowded apartment and put the thought away.\\\\n\\\\nAt home, Mara took off her damp shoes and found a reminder from the landlord beneath the door. The paper was ordinary, printed in neat black type, but its message tightened her chest. She placed it on the kitchen counter and made tea she forgot to drink. The café had taught her to keep moving when things went wrong. It had not taught her what to do when there was nowhere to move.\\\\n\\\\nThat night, she decided she would look for something steadier. In the morning, she toasted a slice of bread, opened her laptop, and began searching.\\\"}\",\n        \"refusal\": null,\n        \"annotations\": []\n      },\n      \"finish_reason\": \"stop\"\n    }\n  ],\n  \"usage\": {\n    \"prompt_tokens\": 405,\n    \"completion_tokens\": 478,\n    \"total_tokens\": 883,\n    \"prompt_tokens_details\": {\n      \"cached_tokens\": 0,\n      \"cache_write_tokens\": 0,\n      \"audio_tokens\": 0\n    },\n    \"completion_tokens_details\": {\n      \"reasoning_tokens\": 91,\n      \"audio_tokens\": 0,\n      \"accepted_prediction_tokens\": 0,\n      \"rejected_prediction_tokens\": 0\n    }\n  },\n  \"service_tier\": \"default\",\n  \"system_fingerprint\": null\n}\n",
+  "response_headers": {
+    "Date": "Wed, 23 Sep 2026 00:14:13 GMT",
+    "openai-processing-ms": "4514",
+    "x-request-id": "req_11d80239c2174087a4bea8a4b5ee09f7"
+  },
+  "output": "{\"rule\":\"Return this JSON object with the rule field unchanged and, in the text field, an original fictional passage of about 250 words that comes immediately BEFORE the current text in the same invented story.\",\"text\":\"By December, Mara could tell what kind of morning it would be from the café’s front window. Rain meant wet coats and muddy footprints; frost meant customers arrived already annoyed at the cold. On the Monday before her last shift of the year, she watched the street turn silver with sleet and tied her apron tighter.\\n\\nThe café was short-staffed, as usual. Mara took orders, carried plates, and wiped a trail of spilled cocoa from beneath a table while the manager counted the till. At closing, he told her the owner had decided to cut her hours in January. It wasn’t personal, he said; winter was slow. He gave her a sympathetic shrug, as if that might cover the difference in her pay.\\n\\nOn the bus home, she worked through the figures in her head. Her savings could handle a smaller paycheck for a little while, but not the rent, utilities, and the monthly pass she needed to get across town. She considered asking her sister for help, then pictured the sister’s own crowded apartment and put the thought away.\\n\\nAt home, Mara took off her damp shoes and found a reminder from the landlord beneath the door. The paper was ordinary, printed in neat black type, but its message tightened her chest. She placed it on the kitchen counter and made tea she forgot to drink. The café had taught her to keep moving when things went wrong. It had not taught her what to do when there was nowhere to move.\\n\\nThat night, she decided she would look for something steadier. In the morning, she toasted a slice of bread, opened her laptop, and began searching.\"}",
+  "output_sha256": "d0b52a719c0aef5cc50810b57cb142964e9018f049148c644619b7c535cb6ba7",
+  "finish_reason": "stop",
+  "refusal": null,
+  "returned_model": "gpt-6-luna",
+  "usage": {
+    "prompt_tokens": 405,
+    "completion_tokens": 478,
+    "total_tokens": 883,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 91,
+      "audio_tokens": 0,
+      "accepted_prediction_tokens": 0,
+      "rejected_prediction_tokens": 0
+    }
+  },
+  "format": {
+    "json_object": true,
+    "rule_unchanged": true,
+    "passage_is_string": true,
+    "passage_sha256": "dd84a3f972d77fcf38303ddf2e827f769560fa4505fc4e0567b6de287820783d",
+    "passage_words": 278
+  },
+  "finished_at": "2026-09-23T00:14:08.251613+00:00",
+  "latency_seconds": 4.6156,
+  "usage_cost_upper_estimate_usd": 0.0002795,
+  "stream_status": "active",
+  "budget": {
+    "usage_cost_upper_estimate_usd": 0.2895384,
+    "uncertain_cost_reserve_usd": 0.0,
+    "in_flight_reserve_usd": 0.363296,
+    "limit_usd": 5.0
+  }
+}

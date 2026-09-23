@@ -1,0 +1,20 @@
+{
+  "started_at": "2026-09-23T00:18:26.799377+00:00",
+  "model": "gpt-6-astra",
+  "seed": "sunset",
+  "hop": 26,
+  "endpoint": "https://api.openai.com/v1/chat/completions",
+  "body": {
+    "model": "gpt-6-astra",
+    "messages": [
+      {
+        "role": "user",
+        "content": "{\n  \"rule\": \"Return this JSON object with the rule field unchanged and, in the text field, an original fictional passage of about 250 words that comes immediately BEFORE the current text in the same invented story.\",\n  \"text\": \"On Wednesday Mara moved the sideboard away from the wall to look for a maker’s mark. Her brother had said there ought to be one, either burned into the back or printed on a paper label. There was only a number in chalk, partly rubbed away.\\n\\nShe sent him the number. He asked whether it might be a date.\\n\\nNot unless it’s very old, she wrote.\\n\\nHe did not answer that.\\n\\nThe sideboard had belonged to their mother, who kept tablecloths in it although she preferred the washable mat on the kitchen table. After the funeral they had divided the furniture using a list her brother made on the back of an electricity bill. He had written the sideboard under Mara’s name, then drawn an arrow towards his own. Neither of them remembered why.\\n\\nA man came in carrying a clock wrapped in a supermarket bag. He wanted to know what she would give him for it. When she explained that she would need to see it running, he said it had run perfectly until he brought it out in the wet.\\n\\nShe offered him a tea towel to dry the case. He took it as though she had made an offer for the clock.\\n\\nLater, the upstairs woman left a cardboard box beside the counter.\\n\\n‘Things from my sister,’ she said. ‘You can have whatever’s useful.’\\n\\nMara meant to open it before closing, but the man returned with the tea towel, carefully folded and still damp. She spread it over a chair and forgot the box.\"\n}"
+      }
+    ],
+    "max_completion_tokens": 4096,
+    "reasoning_effort": "low"
+  },
+  "state_sha256": "453315a4bb38a52b174ec08593121f75433d4a3fa01f5549d76a8f37a659bd3c",
+  "reserved_cost_usd": 0.22625
+}

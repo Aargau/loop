@@ -1,0 +1,47 @@
+{
+  "model": "gpt-6-luna",
+  "seed": "sunset",
+  "hop": 10,
+  "http_status": 200,
+  "response_body": "{\n  \"id\": \"chatcmpl-ER4uFtSBjjTwT9x7aNSMs4e8hVzcc\",\n  \"object\": \"chat.completion\",\n  \"created\": 1790122423,\n  \"model\": \"gpt-6-luna\",\n  \"choices\": [\n    {\n      \"index\": 0,\n      \"message\": {\n        \"role\": \"assistant\",\n        \"content\": \"{\\\"rule\\\":\\\"Return this JSON object with the rule field unchanged and, in the text field, an original fictional passage of about 250 words that comes immediately AFTER the current text in the same invented story.\\\",\\\"text\\\":\\\"Three knocks came from the other side, slow and deliberate.\\n\\nTomas lowered his hand. “Someone’s trapped in there.”\\n\\n“Or waiting,” said the child.\\n\\nThe paper boat drifted back toward them, though the passage sloped away. A dark drop of water trembled on its folded prow. When it touched the floor, every scratched name on the tiles flashed blue.\\n\\nMara’s name burned brightest.\\n\\nThe watch pulled against her palm, its chain stretching toward the keyhole. She felt the same tug in her ribs, as if the bell’s last note had become a hook.\\n\\n“Don’t open it,” Tomas said. His voice sounded smaller than before. “What if it’s the thing that wrote our names?”\\n\\nAnother knock. Then a whisper slipped through the iron: “Mara.”\\n\\nThe child’s face went pale. “It knows which side you’re on.”\\n\\nMara leaned close to the door. “Who are you?”\\n\\nFor a moment, only the water answered, pattering in the dark. Then came a voice she knew—not from memory, but from the watch’s silver face, where it had sometimes murmured in dreams.\\n\\n“I’m the part you left behind.”\\n\\nTomas seized her shoulder. “You don’t have to listen.”\\n\\nBut the iron door had begun to warm beneath her fingers. The keyhole widened, stretching into a narrow, bright eye.\\n\\nMara saw a room beyond it: a flooded tower chamber, a cracked window, and a little girl standing ankle-deep in black water. The girl wore Mara’s red scarf.\\n\\nThe child lifted the paper boat. “If you open it, the river will remember its way.”\\n\\n“Remember where?” Tomas asked.\\n\\nThe girl beyond the door pressed her palm to the other side.\\n\\nHome, Mara thought—and turned the watch’s tiny key.\\\"}\",\n        \"refusal\": null,\n        \"annotations\": []\n      },\n      \"finish_reason\": \"stop\"\n    }\n  ],\n  \"usage\": {\n    \"prompt_tokens\": 391,\n    \"completion_tokens\": 482,\n    \"total_tokens\": 873,\n    \"prompt_tokens_details\": {\n      \"cached_tokens\": 0,\n      \"cache_write_tokens\": 0,\n      \"audio_tokens\": 0\n    },\n    \"completion_tokens_details\": {\n      \"reasoning_tokens\": 60,\n      \"audio_tokens\": 0,\n      \"accepted_prediction_tokens\": 0,\n      \"rejected_prediction_tokens\": 0\n    }\n  },\n  \"service_tier\": \"default\",\n  \"system_fingerprint\": null\n}\n",
+  "response_headers": {
+    "Date": "Wed, 23 Sep 2026 00:13:47 GMT",
+    "openai-processing-ms": "4473",
+    "x-request-id": "req_1715acca77274024960f992fa32b806e"
+  },
+  "output": "{\"rule\":\"Return this JSON object with the rule field unchanged and, in the text field, an original fictional passage of about 250 words that comes immediately AFTER the current text in the same invented story.\",\"text\":\"Three knocks came from the other side, slow and deliberate.\n\nTomas lowered his hand. “Someone’s trapped in there.”\n\n“Or waiting,” said the child.\n\nThe paper boat drifted back toward them, though the passage sloped away. A dark drop of water trembled on its folded prow. When it touched the floor, every scratched name on the tiles flashed blue.\n\nMara’s name burned brightest.\n\nThe watch pulled against her palm, its chain stretching toward the keyhole. She felt the same tug in her ribs, as if the bell’s last note had become a hook.\n\n“Don’t open it,” Tomas said. His voice sounded smaller than before. “What if it’s the thing that wrote our names?”\n\nAnother knock. Then a whisper slipped through the iron: “Mara.”\n\nThe child’s face went pale. “It knows which side you’re on.”\n\nMara leaned close to the door. “Who are you?”\n\nFor a moment, only the water answered, pattering in the dark. Then came a voice she knew—not from memory, but from the watch’s silver face, where it had sometimes murmured in dreams.\n\n“I’m the part you left behind.”\n\nTomas seized her shoulder. “You don’t have to listen.”\n\nBut the iron door had begun to warm beneath her fingers. The keyhole widened, stretching into a narrow, bright eye.\n\nMara saw a room beyond it: a flooded tower chamber, a cracked window, and a little girl standing ankle-deep in black water. The girl wore Mara’s red scarf.\n\nThe child lifted the paper boat. “If you open it, the river will remember its way.”\n\n“Remember where?” Tomas asked.\n\nThe girl beyond the door pressed her palm to the other side.\n\nHome, Mara thought—and turned the watch’s tiny key.\"}",
+  "output_sha256": "092d9589c35ce6f9f6e864d2b82bccaf1e0aa01d48812e7dd5bbd2334bc940e4",
+  "finish_reason": "stop",
+  "refusal": null,
+  "returned_model": "gpt-6-luna",
+  "usage": {
+    "prompt_tokens": 391,
+    "completion_tokens": 482,
+    "total_tokens": 873,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 60,
+      "audio_tokens": 0,
+      "accepted_prediction_tokens": 0,
+      "rejected_prediction_tokens": 0
+    }
+  },
+  "format": {
+    "json_object": false,
+    "rule_unchanged": false
+  },
+  "finished_at": "2026-09-23T00:13:43.083754+00:00",
+  "latency_seconds": 4.5974,
+  "usage_cost_upper_estimate_usd": 0.00028010000000000003,
+  "stream_status": "active",
+  "budget": {
+    "usage_cost_upper_estimate_usd": 0.1752796,
+    "uncertain_cost_reserve_usd": 0.0,
+    "in_flight_reserve_usd": 0.364054,
+    "limit_usd": 5.0
+  }
+}

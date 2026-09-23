@@ -1,0 +1,22 @@
+{
+  "started_at": "2026-09-23T00:17:16.994596+00:00",
+  "model": "claude-opus-5-5",
+  "seed": "sunset",
+  "hop": 28,
+  "endpoint": "https://api.anthropic.com/v1/messages",
+  "body": {
+    "model": "claude-opus-5-5",
+    "messages": [
+      {
+        "role": "user",
+        "content": "```json\n{\"rule\": \"Return this JSON object with the rule field unchanged and, in the text field, an original fictional passage of about 250 words that comes immediately BEFORE the current text in the same invented story.\", \"text\": \"The realtor had warned him the place was in rough shape, but Walter was not prepared for how small it looked. The house sagged at the roofline like a tired horse, and the porch where his mother had shelled peas every summer evening was missing half its boards. Someone had boarded the front windows with plywood that had long since gone gray and soft with rain.\\n\\nHe parked on the shoulder of the road because the lane was too rutted for his car and walked the last quarter mile. Goldenrod grew waist-high where the pasture had been. The barn was gone entirely, nothing left but a rectangle of fieldstone foundation and a rusted hay rake sinking into the weeds.\\n\\nHe was seventy-three years old. He had not stood on this ground since he was fourteen.\\n\\nThe young woman from the county office had asked him on the phone whether he wanted to see the property before the auction, and he had said no, there was no need, and then he had driven four hundred miles anyway without quite deciding to. His daughter thought he was at a veterans' reunion in Columbus. He had not known how to explain it to her. He was not sure he could explain it to himself.\\n\\nHe went around the side of the house, past the cellar door and the stone well cap, and stopped.\\n\\nIt was still there. Or what was left of it was: a broad, split stump, silver with age, ringed by a scatter of suckers that had never amounted to anything.\\n\\nHe stood looking at it for a long time.\"}\n```"
+      }
+    ],
+    "max_tokens": 4096,
+    "output_config": {
+      "effort": "low"
+    }
+  },
+  "state_sha256": "1e14d20930f7c642beb396e45f687cad64d1fde2bba575bb20819c4b396253c9",
+  "reserved_cost_usd": 0.090712
+}

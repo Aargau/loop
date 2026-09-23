@@ -1,0 +1,22 @@
+{
+  "started_at": "2026-09-23T00:15:08.254905+00:00",
+  "model": "claude-opus-5-5",
+  "seed": "sunset",
+  "hop": 15,
+  "endpoint": "https://api.anthropic.com/v1/messages",
+  "body": {
+    "model": "claude-opus-5-5",
+    "messages": [
+      {
+        "role": "user",
+        "content": "```json\n{\"rule\": \"Return this JSON object with the rule field unchanged and, in the text field, an original fictional passage of about 250 words that comes immediately AFTER the current text in the same invented story.\", \"text\": \"The scratching was slow and patient, like a fingernail tracing the grain of the wood, searching for a knot or a split. Mara pressed herself against the wall and pulled Tobias with her. His skin was cooler now, the green light only a faint shimmer beneath the veins of his wrist. Wenna set the cup down without a sound. She crossed to the door and pressed her palm flat against it, head tilted, listening the way Mara had seen her listen to a kettle before it sang. \\\"It's testing the salt,\\\" the old woman murmured. \\\"Looking for the gap.\\\" \\\"Is there a gap?\\\" Mara whispered. Wenna didn't answer, which was an answer. The scratching moved. It slid along the doorframe, down toward the threshold, where a thin white line of salt glittered in the firelight. Mara watched in horror as a single grain trembled, then another, as though a breath were blowing beneath the door. \\\"Tobias,\\\" Wenna said, very calmly, \\\"how long did you stand at the well tonight?\\\" He swallowed. \\\"Only a minute. I thought I heard Da calling.\\\" \\\"And did you answer?\\\" His silence filled the room. Wenna closed her eyes. When she opened them, she was looking at Mara, not at him. \\\"Then it has his name,\\\" she said. \\\"And a name is a key, child. Fetch me the iron nails from the chest, all of them, and the red thread. We have until the fire burns down.\\\" Behind the door, something began to hum a lullaby.\"}\n```"
+      }
+    ],
+    "max_tokens": 4096,
+    "output_config": {
+      "effort": "low"
+    }
+  },
+  "state_sha256": "2c746127aa53dcdd937aa14b27ba5989f798b1cdc9635a6d23a1500652b850da",
+  "reserved_cost_usd": 0.090436
+}

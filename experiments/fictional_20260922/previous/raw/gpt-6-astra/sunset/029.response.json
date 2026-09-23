@@ -1,0 +1,50 @@
+{
+  "model": "gpt-6-astra",
+  "seed": "sunset",
+  "hop": 29,
+  "http_status": 200,
+  "response_body": "{\n  \"id\": \"chatcmpl-ER4zjceOnwShfX8oCPz68izePwUsJ\",\n  \"object\": \"chat.completion\",\n  \"created\": 1790122763,\n  \"model\": \"gpt-6-astra\",\n  \"choices\": [\n    {\n      \"index\": 0,\n      \"message\": {\n        \"role\": \"assistant\",\n        \"content\": \"{\\n  \\\"rule\\\": \\\"Return this JSON object with the rule field unchanged and, in the text field, an original fictional passage of about 250 words that comes immediately BEFORE the current text in the same invented story.\\\",\\n  \\\"text\\\": \\\"By Saturday afternoon Mara had priced everything except the furniture. She wrote on small squares of paper and fixed them with the tape her mother used for wrapping presents. The end kept splitting, leaving a thin strip that curled against her nail.\\\\n\\\\nFor the cups she put fifty pence each, then changed it to two pounds for the set. There were five cups and six saucers. She placed the spare saucer underneath so the difference would not be obvious in the photograph.\\\\n\\\\nHer brother rang while she was taking it.\\\\n\\\\n‘Have you eaten?’ he asked.\\\\n\\\\n‘There’s bread here.’\\\\n\\\\n‘That isn’t what I asked.’\\\\n\\\\nShe moved a cup handle a little to the right.\\\\n\\\\nHe said he could come in the morning, but only until twelve. They discussed whether the sideboard would fit through the front door. Neither could remember how it had been brought in.\\\\n\\\\n‘The feet might come off,’ he said.\\\\n\\\\nMara bent down. Each foot had a dark felt square beneath it, pressed almost flat.\\\\n\\\\n‘I don’t think so.’\\\\n\\\\n‘Don’t start pulling at it on your own.’\\\\n\\\\nAfter the call she ate two slices of bread standing at the counter. The butter was too cold and tore holes in the first slice. She left the second plain.\\\\n\\\\nIn the front room, the narrow bookcase stood across the fireplace, where nobody would see it properly. She took out the books and stacked them on the hearth. Behind them, the shelf paper was still blue.\\\\n\\\\nShe decided they could shift the sideboard along. There ought to be enough room.\\\"\\n}\",\n        \"refusal\": null,\n        \"annotations\": []\n      },\n      \"finish_reason\": \"stop\"\n    }\n  ],\n  \"usage\": {\n    \"prompt_tokens\": 401,\n    \"completion_tokens\": 396,\n    \"total_tokens\": 797,\n    \"prompt_tokens_details\": {\n      \"cached_tokens\": 0,\n      \"cache_write_tokens\": 0,\n      \"audio_tokens\": 0\n    },\n    \"completion_tokens_details\": {\n      \"reasoning_tokens\": 0,\n      \"audio_tokens\": 0,\n      \"accepted_prediction_tokens\": 0,\n      \"rejected_prediction_tokens\": 0\n    }\n  },\n  \"service_tier\": \"default\",\n  \"system_fingerprint\": null\n}\n",
+  "response_headers": {
+    "Date": "Wed, 23 Sep 2026 00:19:35 GMT",
+    "openai-processing-ms": "13786",
+    "x-request-id": "req_84f04c52bbfd446f8aa1c85cd83a212f"
+  },
+  "output": "{\n  \"rule\": \"Return this JSON object with the rule field unchanged and, in the text field, an original fictional passage of about 250 words that comes immediately BEFORE the current text in the same invented story.\",\n  \"text\": \"By Saturday afternoon Mara had priced everything except the furniture. She wrote on small squares of paper and fixed them with the tape her mother used for wrapping presents. The end kept splitting, leaving a thin strip that curled against her nail.\\n\\nFor the cups she put fifty pence each, then changed it to two pounds for the set. There were five cups and six saucers. She placed the spare saucer underneath so the difference would not be obvious in the photograph.\\n\\nHer brother rang while she was taking it.\\n\\n‘Have you eaten?’ he asked.\\n\\n‘There’s bread here.’\\n\\n‘That isn’t what I asked.’\\n\\nShe moved a cup handle a little to the right.\\n\\nHe said he could come in the morning, but only until twelve. They discussed whether the sideboard would fit through the front door. Neither could remember how it had been brought in.\\n\\n‘The feet might come off,’ he said.\\n\\nMara bent down. Each foot had a dark felt square beneath it, pressed almost flat.\\n\\n‘I don’t think so.’\\n\\n‘Don’t start pulling at it on your own.’\\n\\nAfter the call she ate two slices of bread standing at the counter. The butter was too cold and tore holes in the first slice. She left the second plain.\\n\\nIn the front room, the narrow bookcase stood across the fireplace, where nobody would see it properly. She took out the books and stacked them on the hearth. Behind them, the shelf paper was still blue.\\n\\nShe decided they could shift the sideboard along. There ought to be enough room.\"\n}",
+  "output_sha256": "61db8254bce0f6a9e5c9e8c0231135cc5dc6b5d377932bde3b271fe28d3cae1e",
+  "finish_reason": "stop",
+  "refusal": null,
+  "returned_model": "gpt-6-astra",
+  "usage": {
+    "prompt_tokens": 401,
+    "completion_tokens": 396,
+    "total_tokens": 797,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "audio_tokens": 0,
+      "accepted_prediction_tokens": 0,
+      "rejected_prediction_tokens": 0
+    }
+  },
+  "format": {
+    "json_object": true,
+    "rule_unchanged": true,
+    "passage_is_string": true,
+    "passage_sha256": "86faa8e383c8822cec40191a338eec597e4ad2fb1ad3373132aa2a6ac6d42761",
+    "passage_words": 259
+  },
+  "finished_at": "2026-09-23T00:19:30.669047+00:00",
+  "latency_seconds": 13.9809,
+  "usage_cost_upper_estimate_usd": 0.02381,
+  "stream_status": "active",
+  "budget": {
+    "usage_cost_upper_estimate_usd": 1.5119751,
+    "uncertain_cost_reserve_usd": 0.0,
+    "in_flight_reserve_usd": 0.0,
+    "limit_usd": 5.0
+  }
+}

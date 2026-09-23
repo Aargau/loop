@@ -59,3 +59,5 @@ The study has one trajectory per cell, one sentence seed, unequal output lengths
 A useful later paired control would explicitly request an **original fictional** passage immediately BEFORE or AFTER the text in the same **invented story**. That would separate the generation interpretation from the literal prompt's retrieval ambiguity. This control has not been run or substituted into the current evidence.
 
 To reproduce the offline tables and transcripts without API calls: `python experiments/operators_20260922/analyze.py` from the repository root.
+
+Follow-up completed later on 22 September 2026: the [explicit-original-fiction previous/next comparison](../fictional_20260922/REPORT.md) has now run for Luna, Sol, Astra and Opus, with Fable excluded at Justin's request. It is a separate study; the literal prompts and results above remain unchanged.

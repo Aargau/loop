@@ -1,0 +1,22 @@
+{
+  "started_at": "2026-09-23T00:16:05.042616+00:00",
+  "model": "claude-opus-5-5",
+  "seed": "sunset",
+  "hop": 22,
+  "endpoint": "https://api.anthropic.com/v1/messages",
+  "body": {
+    "model": "claude-opus-5-5",
+    "messages": [
+      {
+        "role": "user",
+        "content": "```json\n{\"rule\": \"Return this JSON object with the rule field unchanged and, in the text field, an original fictional passage of about 250 words that comes immediately BEFORE the current text in the same invented story.\", \"text\": \"The auction men came to the Harlow place in October of 1952, when the maples along the road had already dropped half their leaves and the pasture had gone the color of old rope. Walter was eighteen. He stood by the barn with his hands jammed in his pockets and watched strangers lead the cows up the ramp of a cattle truck, one after another, the old Jersey bawling as if she understood.\\n\\nHis father had not come out of the house all morning. The bank had been patient for three winters, and then it had stopped being patient, and that was all there was to say about it. A man named Pelletier from over in Lyndonville had bought the land and buildings outright. He shook Walter's hand in the dooryard and said he would take good care of the place, and Walter believed him, which somehow made it worse.\\n\\nThat afternoon his mother went down to the cellar one last time. She came up with a single jar of pears, the syrup gold in the thin light, and set it on the kitchen table among the packed crates. The rest she left on the shelves. \\\"They'll keep,\\\" she said, though no one had asked her.\\n\\nThey drove south the next morning in a borrowed truck, toward a cousin's spare room and a job at the wire mill in Worcester. Walter did not look back at the house. He told himself he never would, and for most of a lifetime he kept that promise.\"}\n```"
+      }
+    ],
+    "max_tokens": 4096,
+    "output_config": {
+      "effort": "low"
+    }
+  },
+  "state_sha256": "f942c9af127f4ec21fcb50290d12b6bad302d27017e6e7ff63d5248e27addb59",
+  "reserved_cost_usd": 0.09028
+}

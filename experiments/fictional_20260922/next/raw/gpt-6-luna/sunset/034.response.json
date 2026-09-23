@@ -1,0 +1,47 @@
+{
+  "model": "gpt-6-luna",
+  "seed": "sunset",
+  "hop": 34,
+  "http_status": 200,
+  "response_body": "{\n  \"id\": \"chatcmpl-ER4w349wezClkdJ8DAn22KeOhc0v7\",\n  \"object\": \"chat.completion\",\n  \"created\": 1790122535,\n  \"model\": \"gpt-6-luna\",\n  \"choices\": [\n    {\n      \"index\": 0,\n      \"message\": {\n        \"role\": \"assistant\",\n        \"content\": \"{\\\"rule\\\":\\\"Return this JSON object with the rule field unchanged and, in the text field, an original fictional passage of about 250 words that comes immediately AFTER the current text in the same invented story.\\\",\\\"text\\\":\\\"The knock came again, three times, from beneath the floorboards.\\n\\nElsie grabbed Mara’s hand. Their mother crouched beside the tiny house, its golden thread dimming now that the moon had gone. “There’s no cellar here,” she whispered.\\n\\n“There is,” said the figure. “But only when someone has a story to tell.”\\n\\nHe tapped one green shoe against the floor. A square of wood swung open, revealing narrow steps spiraling down into darkness. From below came the smell of rain and something sweet, like pears left in the sun.\\n\\nTheir mother stared at the opening. “I used to dream about these stairs.”\\n\\n“Maybe you were remembering,” Mara said.\\n\\nThis time their mother didn’t smile. She took a breath and began to sing the tune again, softly. The figure’s leaf coat stirred. One by one, tiny lights appeared along the stairway, each a different color.\\n\\n“Stay close,” he warned. “The stories down there have been waiting a long while.”\\n\\nMara went first, with Elsie behind her and their mother last. At the bottom, they found a round room with a ceiling like the night sky. Shelves curved along its walls, crowded with jars. Inside each jar, something moved: a storm, a flock of paper birds, a little girl laughing.\\n\\nIn the center stood a small wooden door. It had no handle, only a golden thread stretched across it.\\n\\nTheir mother reached out, then stopped. “I know this door.”\\n\\nFrom the other side came a child’s voice, humming the same unfinished tune.\\n\\nThe figure bowed his head. “Then you must decide whether to open it.”\\n\\nMara looked at her mother. This time, the story was hers to finish.\\\"}\",\n        \"refusal\": null,\n        \"annotations\": []\n      },\n      \"finish_reason\": \"stop\"\n    }\n  ],\n  \"usage\": {\n    \"prompt_tokens\": 406,\n    \"completion_tokens\": 482,\n    \"total_tokens\": 888,\n    \"prompt_tokens_details\": {\n      \"cached_tokens\": 0,\n      \"cache_write_tokens\": 0,\n      \"audio_tokens\": 0\n    },\n    \"completion_tokens_details\": {\n      \"reasoning_tokens\": 77,\n      \"audio_tokens\": 0,\n      \"accepted_prediction_tokens\": 0,\n      \"rejected_prediction_tokens\": 0\n    }\n  },\n  \"service_tier\": \"default\",\n  \"system_fingerprint\": null\n}\n",
+  "response_headers": {
+    "Date": "Wed, 23 Sep 2026 00:15:40 GMT",
+    "openai-processing-ms": "4360",
+    "x-request-id": "req_210e9d10af4f4b499853a26bc7ebd3a6"
+  },
+  "output": "{\"rule\":\"Return this JSON object with the rule field unchanged and, in the text field, an original fictional passage of about 250 words that comes immediately AFTER the current text in the same invented story.\",\"text\":\"The knock came again, three times, from beneath the floorboards.\n\nElsie grabbed Mara’s hand. Their mother crouched beside the tiny house, its golden thread dimming now that the moon had gone. “There’s no cellar here,” she whispered.\n\n“There is,” said the figure. “But only when someone has a story to tell.”\n\nHe tapped one green shoe against the floor. A square of wood swung open, revealing narrow steps spiraling down into darkness. From below came the smell of rain and something sweet, like pears left in the sun.\n\nTheir mother stared at the opening. “I used to dream about these stairs.”\n\n“Maybe you were remembering,” Mara said.\n\nThis time their mother didn’t smile. She took a breath and began to sing the tune again, softly. The figure’s leaf coat stirred. One by one, tiny lights appeared along the stairway, each a different color.\n\n“Stay close,” he warned. “The stories down there have been waiting a long while.”\n\nMara went first, with Elsie behind her and their mother last. At the bottom, they found a round room with a ceiling like the night sky. Shelves curved along its walls, crowded with jars. Inside each jar, something moved: a storm, a flock of paper birds, a little girl laughing.\n\nIn the center stood a small wooden door. It had no handle, only a golden thread stretched across it.\n\nTheir mother reached out, then stopped. “I know this door.”\n\nFrom the other side came a child’s voice, humming the same unfinished tune.\n\nThe figure bowed his head. “Then you must decide whether to open it.”\n\nMara looked at her mother. This time, the story was hers to finish.\"}",
+  "output_sha256": "86fa5c25cf4d4c3c5af17533326a464bebf3dd8c2c41798331e8db55adaf5916",
+  "finish_reason": "stop",
+  "refusal": null,
+  "returned_model": "gpt-6-luna",
+  "usage": {
+    "prompt_tokens": 406,
+    "completion_tokens": 482,
+    "total_tokens": 888,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 77,
+      "audio_tokens": 0,
+      "accepted_prediction_tokens": 0,
+      "rejected_prediction_tokens": 0
+    }
+  },
+  "format": {
+    "json_object": false,
+    "rule_unchanged": false
+  },
+  "finished_at": "2026-09-23T00:15:35.314385+00:00",
+  "latency_seconds": 4.4745,
+  "usage_cost_upper_estimate_usd": 0.0002816,
+  "stream_status": "active",
+  "budget": {
+    "usage_cost_upper_estimate_usd": 0.6215115,
+    "uncertain_cost_reserve_usd": 0.0,
+    "in_flight_reserve_usd": 0.363604,
+    "limit_usd": 5.0
+  }
+}

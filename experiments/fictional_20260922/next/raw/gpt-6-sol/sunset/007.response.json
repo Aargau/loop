@@ -1,0 +1,50 @@
+{
+  "model": "gpt-6-sol",
+  "seed": "sunset",
+  "hop": 7,
+  "http_status": 200,
+  "response_body": "{\n  \"id\": \"chatcmpl-ER4uHLQcA0nbPy3vh2FSCbTIVnP97\",\n  \"object\": \"chat.completion\",\n  \"created\": 1790122425,\n  \"model\": \"gpt-6-sol\",\n  \"choices\": [\n    {\n      \"index\": 0,\n      \"message\": {\n        \"role\": \"assistant\",\n        \"content\": \"{\\\"rule\\\":\\\"Return this JSON object with the rule field unchanged and, in the text field, an original fictional passage of about 250 words that comes immediately AFTER the current text in the same invented story.\\\",\\\"text\\\":\\\"The scratching stopped. Water still slipped beneath Mara’s door, but now it ran uphill, gathering against the iron as though listening.\\\\n\\\\n“That’s not possible,” Mara said.\\\\n\\\\n“I thought so too.” Her mother’s voice came close to the other side of the dry door. “When you were born, the keeper asked for a name to seal the stair. I gave him yours. I meant to take it back before you learned to read.”\\\\n\\\\nThe boy raised the lantern toward the scratched letters. Mara touched her own name. Beneath her finger, the cuts were warm.\\\\n\\\\n“What happens if the door opens?” she asked.\\\\n\\\\nHer mother did not answer. The scratching began again, this time against every wet door at once.\\\\n\\\\nThe boy seized the clapper from Mara and held it near the glass. The seventh wheel spun faster. Its neighbours slowed, one by one, until the water beneath the six doors thinned to nothing.\\\\n\\\\n“Give it here,” Mara said.\\\\n\\\\nHe hesitated, then placed the clapper in her hands. She drew it away from the glass. The wheels reversed. Water surged across her boots, cold enough to make her gasp.\\\\n\\\\nOn the dry door, her mother struck the iron once. Not a warning, Mara realized. A count.\\\\n\\\\nShe pressed the clapper to the glass and held it there. The seventh wheel caught. Somewhere inside the wall, a bolt fell.\\\\n\\\\nHer own door opened a finger’s width. No one stood behind it. In the darkness beyond, a little girl’s voice said, very carefully, “Mara.”\\\\n\\\\nFor a moment Mara could not remember whether it was her name. Then her mother shouted it through the dry door, and Mara turned toward her.\\\"}\",\n        \"refusal\": null,\n        \"annotations\": []\n      },\n      \"finish_reason\": \"stop\"\n    }\n  ],\n  \"usage\": {\n    \"prompt_tokens\": 382,\n    \"completion_tokens\": 447,\n    \"total_tokens\": 829,\n    \"prompt_tokens_details\": {\n      \"cached_tokens\": 0,\n      \"cache_write_tokens\": 0,\n      \"audio_tokens\": 0\n    },\n    \"completion_tokens_details\": {\n      \"reasoning_tokens\": 25,\n      \"audio_tokens\": 0,\n      \"accepted_prediction_tokens\": 0,\n      \"rejected_prediction_tokens\": 0\n    }\n  },\n  \"service_tier\": \"default\",\n  \"system_fingerprint\": null\n}\n",
+  "response_headers": {
+    "Date": "Wed, 23 Sep 2026 00:13:52 GMT",
+    "openai-processing-ms": "7242",
+    "x-request-id": "req_b745621d17354274b036b810fadd5f14"
+  },
+  "output": "{\"rule\":\"Return this JSON object with the rule field unchanged and, in the text field, an original fictional passage of about 250 words that comes immediately AFTER the current text in the same invented story.\",\"text\":\"The scratching stopped. Water still slipped beneath Mara’s door, but now it ran uphill, gathering against the iron as though listening.\\n\\n“That’s not possible,” Mara said.\\n\\n“I thought so too.” Her mother’s voice came close to the other side of the dry door. “When you were born, the keeper asked for a name to seal the stair. I gave him yours. I meant to take it back before you learned to read.”\\n\\nThe boy raised the lantern toward the scratched letters. Mara touched her own name. Beneath her finger, the cuts were warm.\\n\\n“What happens if the door opens?” she asked.\\n\\nHer mother did not answer. The scratching began again, this time against every wet door at once.\\n\\nThe boy seized the clapper from Mara and held it near the glass. The seventh wheel spun faster. Its neighbours slowed, one by one, until the water beneath the six doors thinned to nothing.\\n\\n“Give it here,” Mara said.\\n\\nHe hesitated, then placed the clapper in her hands. She drew it away from the glass. The wheels reversed. Water surged across her boots, cold enough to make her gasp.\\n\\nOn the dry door, her mother struck the iron once. Not a warning, Mara realized. A count.\\n\\nShe pressed the clapper to the glass and held it there. The seventh wheel caught. Somewhere inside the wall, a bolt fell.\\n\\nHer own door opened a finger’s width. No one stood behind it. In the darkness beyond, a little girl’s voice said, very carefully, “Mara.”\\n\\nFor a moment Mara could not remember whether it was her name. Then her mother shouted it through the dry door, and Mara turned toward her.\"}",
+  "output_sha256": "eb62794132ae61a83380eba53370680e015af73589e38ba50e6533e93032e384",
+  "finish_reason": "stop",
+  "refusal": null,
+  "returned_model": "gpt-6-sol",
+  "usage": {
+    "prompt_tokens": 382,
+    "completion_tokens": 447,
+    "total_tokens": 829,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 25,
+      "audio_tokens": 0,
+      "accepted_prediction_tokens": 0,
+      "rejected_prediction_tokens": 0
+    }
+  },
+  "format": {
+    "json_object": true,
+    "rule_unchanged": true,
+    "passage_is_string": true,
+    "passage_sha256": "8ef38375bf6e619fa04afd3c2fce49e5c438a3b1d8944bcbf11006b56b78aebc",
+    "passage_words": 276
+  },
+  "finished_at": "2026-09-23T00:13:47.733865+00:00",
+  "latency_seconds": 7.3442,
+  "usage_cost_upper_estimate_usd": 0.005234,
+  "stream_status": "active",
+  "budget": {
+    "usage_cost_upper_estimate_usd": 0.1805136,
+    "uncertain_cost_reserve_usd": 0.0,
+    "in_flight_reserve_usd": 0.3210607,
+    "limit_usd": 5.0
+  }
+}

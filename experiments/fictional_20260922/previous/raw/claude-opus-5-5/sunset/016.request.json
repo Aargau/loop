@@ -1,0 +1,22 @@
+{
+  "started_at": "2026-09-23T00:15:06.905732+00:00",
+  "model": "claude-opus-5-5",
+  "seed": "sunset",
+  "hop": 16,
+  "endpoint": "https://api.anthropic.com/v1/messages",
+  "body": {
+    "model": "claude-opus-5-5",
+    "messages": [
+      {
+        "role": "user",
+        "content": "```json\n{\"rule\": \"Return this JSON object with the rule field unchanged and, in the text field, an original fictional passage of about 250 words that comes immediately BEFORE the current text in the same invented story.\", \"text\": \"The doctor in Hollis said it was her heart, though Ruth insisted it was only the winter. She had always slowed down in February, she said, the way the orchard did, and she would be herself again when the sap rose. Walter wanted to believe her, so he did. He took over the woodstove and the morning chores, and she let him, which should have told him something.\\n\\nShe still did the books at night. He would come in from checking the barn and find her at the rolltop desk with her glasses low on her nose, the lamp pulled close, her pencil moving in small, careful strokes. When he asked how things looked, she said, \\\"Fine, Walt. Go wash up.\\\" Then she would fold the glasses and set them on the windowsill above the sink before bed, facing the dark trees, as if they might keep watch.\\n\\nIn March the snow went gray and soft, and one morning she did not come down. He found her sitting on the edge of the bed with one shoe on, looking out at the orchard, and she said his name once, quietly, as though she had just remembered something she meant to tell him.\\n\\nMara drove up from the city that afternoon and stayed nine days. She cooked casseroles nobody ate and answered the phone and walked the rows alone in her good coat. On the last night, over the dishes, she said the place was too much for one person. She said there were apartments near her, nice ones, with elevators. Walter dried the same plate for a long time and said he would think about it.\"}\n```"
+      }
+    ],
+    "max_tokens": 4096,
+    "output_config": {
+      "effort": "low"
+    }
+  },
+  "state_sha256": "2f3a5403a12467b25bbb04210ad97e63f9d55db34136391ef979a4cc3bab7b84",
+  "reserved_cost_usd": 0.090744
+}

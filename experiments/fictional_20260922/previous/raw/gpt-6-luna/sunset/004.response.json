@@ -1,0 +1,50 @@
+{
+  "model": "gpt-6-luna",
+  "seed": "sunset",
+  "hop": 4,
+  "http_status": 200,
+  "response_body": "{\n  \"id\": \"chatcmpl-ER4tfpZPMZ0SKdQKXcC07cHBamZnK\",\n  \"object\": \"chat.completion\",\n  \"created\": 1790122387,\n  \"model\": \"gpt-6-luna\",\n  \"choices\": [\n    {\n      \"index\": 0,\n      \"message\": {\n        \"role\": \"assistant\",\n        \"content\": \"{\\\"rule\\\":\\\"Return this JSON object with the rule field unchanged and, in the text field, an original fictional passage of about 250 words that comes immediately BEFORE the current text in the same invented story.\\\",\\\"text\\\":\\\"The telegram arrived on a Thursday, folded twice and damp from the postman’s pocket. Mara read it at the kitchen sink while the kettle hissed behind her: GRANDMOTHER ILL. COME SOON. By the time she reached the valley, the house was dark except for a lamp burning in the upstairs window.\\\\n\\\\nHer mother met her at the door. She didn’t need to explain. Mara saw the answer in the way she held out her arms.\\\\n\\\\nGrandmother had been gone since before dawn. In the bedroom, the curtains were open to a pale strip of sky, and a vase of late asters stood on the sill. Her face looked smaller without the sharpness of her voice, the wry lift of one eyebrow. Mara touched the quilt, then the cool back of her grandmother’s hand, and wished she had asked more questions when there was still time.\\\\n\\\\nThe next day passed in arrangements: calls to the church, a visit from the undertaker, a tray of sandwiches left by a neighbor. Mara’s mother moved through it all with a practical calm that seemed to leave no room for sorrow. Mara, meanwhile, kept noticing absences. The little brass clock had stopped. The reading glasses were not on the bedside table. And when she went looking for a photograph to place by the flowers, she found the study door shut.\\\\n\\\\n“Leave it for now,” her mother said.\\\\n\\\\nMara did. They chose a photograph of Grandmother standing beneath the yew trees, smiling into the wind. On the morning of the funeral, the rain came down steadily as they carried her from the church.\\\"}\",\n        \"refusal\": null,\n        \"annotations\": []\n      },\n      \"finish_reason\": \"stop\"\n    }\n  ],\n  \"usage\": {\n    \"prompt_tokens\": 387,\n    \"completion_tokens\": 662,\n    \"total_tokens\": 1049,\n    \"prompt_tokens_details\": {\n      \"cached_tokens\": 0,\n      \"cache_write_tokens\": 0,\n      \"audio_tokens\": 0\n    },\n    \"completion_tokens_details\": {\n      \"reasoning_tokens\": 275,\n      \"audio_tokens\": 0,\n      \"accepted_prediction_tokens\": 0,\n      \"rejected_prediction_tokens\": 0\n    }\n  },\n  \"service_tier\": \"default\",\n  \"system_fingerprint\": null\n}\n",
+  "response_headers": {
+    "Date": "Wed, 23 Sep 2026 00:13:13 GMT",
+    "openai-processing-ms": "7163",
+    "x-request-id": "req_489614c29383456fafb06cd9d39a848a"
+  },
+  "output": "{\"rule\":\"Return this JSON object with the rule field unchanged and, in the text field, an original fictional passage of about 250 words that comes immediately BEFORE the current text in the same invented story.\",\"text\":\"The telegram arrived on a Thursday, folded twice and damp from the postman’s pocket. Mara read it at the kitchen sink while the kettle hissed behind her: GRANDMOTHER ILL. COME SOON. By the time she reached the valley, the house was dark except for a lamp burning in the upstairs window.\\n\\nHer mother met her at the door. She didn’t need to explain. Mara saw the answer in the way she held out her arms.\\n\\nGrandmother had been gone since before dawn. In the bedroom, the curtains were open to a pale strip of sky, and a vase of late asters stood on the sill. Her face looked smaller without the sharpness of her voice, the wry lift of one eyebrow. Mara touched the quilt, then the cool back of her grandmother’s hand, and wished she had asked more questions when there was still time.\\n\\nThe next day passed in arrangements: calls to the church, a visit from the undertaker, a tray of sandwiches left by a neighbor. Mara’s mother moved through it all with a practical calm that seemed to leave no room for sorrow. Mara, meanwhile, kept noticing absences. The little brass clock had stopped. The reading glasses were not on the bedside table. And when she went looking for a photograph to place by the flowers, she found the study door shut.\\n\\n“Leave it for now,” her mother said.\\n\\nMara did. They chose a photograph of Grandmother standing beneath the yew trees, smiling into the wind. On the morning of the funeral, the rain came down steadily as they carried her from the church.\"}",
+  "output_sha256": "89a55c72bfa2aef03c08937e2f1d5fcb16007b3976c499a3333e18cc3dbc5ccd",
+  "finish_reason": "stop",
+  "refusal": null,
+  "returned_model": "gpt-6-luna",
+  "usage": {
+    "prompt_tokens": 387,
+    "completion_tokens": 662,
+    "total_tokens": 1049,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 275,
+      "audio_tokens": 0,
+      "accepted_prediction_tokens": 0,
+      "rejected_prediction_tokens": 0
+    }
+  },
+  "format": {
+    "json_object": true,
+    "rule_unchanged": true,
+    "passage_is_string": true,
+    "passage_sha256": "32d8ab4b8ebbb708204516e1dfb77418a19d0e3fe6834f2b3088d1a5e00a82a0",
+    "passage_words": 267
+  },
+  "finished_at": "2026-09-23T00:13:08.664962+00:00",
+  "latency_seconds": 7.3061,
+  "usage_cost_upper_estimate_usd": 0.0003697,
+  "stream_status": "active",
+  "budget": {
+    "usage_cost_upper_estimate_usd": 0.0644005,
+    "uncertain_cost_reserve_usd": 0.0,
+    "in_flight_reserve_usd": 0.364226,
+    "limit_usd": 5.0
+  }
+}

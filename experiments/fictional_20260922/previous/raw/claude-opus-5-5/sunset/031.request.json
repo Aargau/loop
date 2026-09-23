@@ -1,0 +1,22 @@
+{
+  "started_at": "2026-09-23T00:17:46.028286+00:00",
+  "model": "claude-opus-5-5",
+  "seed": "sunset",
+  "hop": 31,
+  "endpoint": "https://api.anthropic.com/v1/messages",
+  "body": {
+    "model": "claude-opus-5-5",
+    "messages": [
+      {
+        "role": "user",
+        "content": "```json\n{\"rule\": \"Return this JSON object with the rule field unchanged and, in the text field, an original fictional passage of about 250 words that comes immediately BEFORE the current text in the same invented story.\", \"text\": \"Margaret died on the second Tuesday of October, in the blue armchair by the window, with the crossword folded on her knee and a pencil still between her fingers. Walter found her when he came in from raking. He stood in the doorway a long time with the leaves still clinging to his boots, waiting for her to look up and tell him he was tracking in the yard.\\n\\nThe funeral was small. Their daughter flew in from Ohio and stayed nine days, which was two days longer than she had planned and three days longer than Walter could comfortably bear. She cleaned out the refrigerator. She labeled the thermostat. She left brochures on the kitchen table, fanned out like a hand of cards, each one showing silver-haired couples laughing over plates of salmon.\\n\\nAfter she left, the house grew very quiet. Walter had not understood how much noise Margaret made simply by existing: the radio in the kitchen, the humming, the way she talked back to the weatherman. Now he could hear the furnace cycle on and off. He could hear the clock in the hall.\\n\\nNeighbors brought casseroles through November. Then the casseroles stopped, and the first snow came, and Walter understood that the world had finished grieving on his behalf and was waiting for him to decide what kind of man he would be alone.\\n\\nHe decided, for the time being, to be an orderly one.\"}\n```"
+      }
+    ],
+    "max_tokens": 4096,
+    "output_config": {
+      "effort": "low"
+    }
+  },
+  "state_sha256": "81ad90f4447070fba41ef24162fbdb04ac0ee7701918db0e48f2034398e709eb",
+  "reserved_cost_usd": 0.090284
+}

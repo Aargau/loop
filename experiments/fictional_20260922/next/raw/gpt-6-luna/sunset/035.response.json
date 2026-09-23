@@ -1,0 +1,47 @@
+{
+  "model": "gpt-6-luna",
+  "seed": "sunset",
+  "hop": 35,
+  "http_status": 200,
+  "response_body": "{\n  \"id\": \"chatcmpl-ER4w8EF2aitGmNUyWQ9CuvWdXvE0o\",\n  \"object\": \"chat.completion\",\n  \"created\": 1790122540,\n  \"model\": \"gpt-6-luna\",\n  \"choices\": [\n    {\n      \"index\": 0,\n      \"message\": {\n        \"role\": \"assistant\",\n        \"content\": \"{\\\"rule\\\":\\\"Return this JSON object with the rule field unchanged and, in the text field, an original fictional passage of about 250 words that comes immediately AFTER the current text in the same invented story.\\\",\\\"text\\\":\\\"Her mother lowered her hand. “I was afraid you’d ask me to open it,” she said.\\n\\nThe humming stopped.\\n\\n“Who’s in there?” Elsie whispered.\\n\\nTheir mother looked at the jars. A storm rolled silently through one; the paper birds beat their wings against another. “A girl who waited for me,” she said. “A girl I promised I’d come back for.”\\n\\nThe figure’s green shoes made no sound as he stepped beside them. “Promises can grow roots,” he said. “Even when the people who made them forget.”\\n\\nMara touched the golden thread. It was warm, and beneath her fingertips she felt a tiny, quick pulse.\\n\\nTheir mother took her hand. “I left this place when I was little. I thought it was a dream. I thought I’d imagined the friend who lived here.”\\n\\n“Did you?” Mara asked.\\n\\n“No.” Her mother closed her eyes. “I just didn’t know how to find her again.”\\n\\nTogether, she and Mara pulled the thread.\\n\\nThe door opened inward.\\n\\nOn the other side sat a girl about their mother’s age when she’d left, her hair tangled with leaves. She held a chipped blue cup in both hands. For a moment, nobody moved.\\n\\nThen the girl smiled. “You’re late.”\\n\\nTheir mother laughed, though tears ran down her cheeks. “I know.”\\n\\nThe girl stood and set the cup on the floor. A small green shoot curled from its crack.\\n\\nBehind her, the room stretched into a moonlit forest, full of paths that vanished between the trees. The figure bowed. “The way home is waiting,” he said.\\n\\nTheir mother reached for the girl’s hand. Mara and Elsie reached for hers.\\n\\nAnd all four stepped through together.\\\"}\",\n        \"refusal\": null,\n        \"annotations\": []\n      },\n      \"finish_reason\": \"stop\"\n    }\n  ],\n  \"usage\": {\n    \"prompt_tokens\": 402,\n    \"completion_tokens\": 573,\n    \"total_tokens\": 975,\n    \"prompt_tokens_details\": {\n      \"cached_tokens\": 0,\n      \"cache_write_tokens\": 0,\n      \"audio_tokens\": 0\n    },\n    \"completion_tokens_details\": {\n      \"reasoning_tokens\": 165,\n      \"audio_tokens\": 0,\n      \"accepted_prediction_tokens\": 0,\n      \"rejected_prediction_tokens\": 0\n    }\n  },\n  \"service_tier\": \"default\",\n  \"system_fingerprint\": null\n}\n",
+  "response_headers": {
+    "Date": "Wed, 23 Sep 2026 00:15:45 GMT",
+    "openai-processing-ms": "5020",
+    "x-request-id": "req_27f9f73dc27846f3a594e1e4fc07c117"
+  },
+  "output": "{\"rule\":\"Return this JSON object with the rule field unchanged and, in the text field, an original fictional passage of about 250 words that comes immediately AFTER the current text in the same invented story.\",\"text\":\"Her mother lowered her hand. “I was afraid you’d ask me to open it,” she said.\n\nThe humming stopped.\n\n“Who’s in there?” Elsie whispered.\n\nTheir mother looked at the jars. A storm rolled silently through one; the paper birds beat their wings against another. “A girl who waited for me,” she said. “A girl I promised I’d come back for.”\n\nThe figure’s green shoes made no sound as he stepped beside them. “Promises can grow roots,” he said. “Even when the people who made them forget.”\n\nMara touched the golden thread. It was warm, and beneath her fingertips she felt a tiny, quick pulse.\n\nTheir mother took her hand. “I left this place when I was little. I thought it was a dream. I thought I’d imagined the friend who lived here.”\n\n“Did you?” Mara asked.\n\n“No.” Her mother closed her eyes. “I just didn’t know how to find her again.”\n\nTogether, she and Mara pulled the thread.\n\nThe door opened inward.\n\nOn the other side sat a girl about their mother’s age when she’d left, her hair tangled with leaves. She held a chipped blue cup in both hands. For a moment, nobody moved.\n\nThen the girl smiled. “You’re late.”\n\nTheir mother laughed, though tears ran down her cheeks. “I know.”\n\nThe girl stood and set the cup on the floor. A small green shoot curled from its crack.\n\nBehind her, the room stretched into a moonlit forest, full of paths that vanished between the trees. The figure bowed. “The way home is waiting,” he said.\n\nTheir mother reached for the girl’s hand. Mara and Elsie reached for hers.\n\nAnd all four stepped through together.\"}",
+  "output_sha256": "b3ede09bb266983cfc6dd8401062dfc63a1c66bbcfa2f0cdf742c826bb201ed7",
+  "finish_reason": "stop",
+  "refusal": null,
+  "returned_model": "gpt-6-luna",
+  "usage": {
+    "prompt_tokens": 402,
+    "completion_tokens": 573,
+    "total_tokens": 975,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 165,
+      "audio_tokens": 0,
+      "accepted_prediction_tokens": 0,
+      "rejected_prediction_tokens": 0
+    }
+  },
+  "format": {
+    "json_object": false,
+    "rule_unchanged": false
+  },
+  "finished_at": "2026-09-23T00:15:40.441628+00:00",
+  "latency_seconds": 5.1018,
+  "usage_cost_upper_estimate_usd": 0.00032669999999999997,
+  "stream_status": "active",
+  "budget": {
+    "usage_cost_upper_estimate_usd": 0.6528022,
+    "uncertain_cost_reserve_usd": 0.0,
+    "in_flight_reserve_usd": 0.363244,
+    "limit_usd": 5.0
+  }
+}

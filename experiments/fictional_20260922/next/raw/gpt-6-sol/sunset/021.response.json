@@ -1,0 +1,50 @@
+{
+  "model": "gpt-6-sol",
+  "seed": "sunset",
+  "hop": 21,
+  "http_status": 200,
+  "response_body": "{\n  \"id\": \"chatcmpl-ER4vpRwIlYwI0cl4FhNMlMsYxE1Kb\",\n  \"object\": \"chat.completion\",\n  \"created\": 1790122521,\n  \"model\": \"gpt-6-sol\",\n  \"choices\": [\n    {\n      \"index\": 0,\n      \"message\": {\n        \"role\": \"assistant\",\n        \"content\": \"{\\\"rule\\\":\\\"Return this JSON object with the rule field unchanged and, in the text field, an original fictional passage of about 250 words that comes immediately AFTER the current text in the same invented story.\\\",\\\"text\\\":\\\"The rope slipped through Mara’s hands, though she had not touched it. Down it went, coil after coil, until the last loop lifted from the hook and disappeared into the well.\\\\n\\\\nIn the kitchen, something struck the back door. The latch shuddered but stayed down.\\\\n\\\\n“Mama?” her daughter called from the lane, farther away now.\\\\n\\\\nMara wanted to answer. Instead she listened to the well. No splash came from below. She heard a chair scrape across a floor, then the soft clink of a spoon against a cup.\\\\n\\\\nHer mother had always stirred her tea three times.\\\\n\\\\nThe back door shook again. Through its little window Mara saw the other Mara standing in the kitchen, one hand flat against the glass. It was no longer wet. Beneath its palm, the pane began to cloud with breath.\\\\n\\\\n“Go after them,” it said.\\\\n\\\\nMara looked toward the gate. It stood open a finger’s width. She was certain she had shut it.\\\\n\\\\nFrom the well came her mother’s voice, close enough to raise the hairs on Mara’s arms. “You can still choose.”\\\\n\\\\nA small hand appeared around the edge of the gate. Mara ran to it. Kit stumbled through, pale and muddy, and clutched her skirt.\\\\n\\\\n“I didn’t open it,” he whispered. “It opened for me.”\\\\n\\\\nBehind him, her daughter stood in the lane, staring past Mara at the house. Her mouth moved, but no sound came out.\\\\n\\\\nThe kitchen window darkened. The other Mara lowered its hand and smiled at the children as if it had been waiting for them to come home.\\\"}\",\n        \"refusal\": null,\n        \"annotations\": []\n      },\n      \"finish_reason\": \"stop\"\n    }\n  ],\n  \"usage\": {\n    \"prompt_tokens\": 393,\n    \"completion_tokens\": 419,\n    \"total_tokens\": 812,\n    \"prompt_tokens_details\": {\n      \"cached_tokens\": 0,\n      \"cache_write_tokens\": 0,\n      \"audio_tokens\": 0\n    },\n    \"completion_tokens_details\": {\n      \"reasoning_tokens\": 15,\n      \"audio_tokens\": 0,\n      \"accepted_prediction_tokens\": 0,\n      \"rejected_prediction_tokens\": 0\n    }\n  },\n  \"service_tier\": \"default\",\n  \"system_fingerprint\": null\n}\n",
+  "response_headers": {
+    "Date": "Wed, 23 Sep 2026 00:15:27 GMT",
+    "openai-processing-ms": "5887",
+    "x-request-id": "req_c81d621bbdfd4e679a838607de1ec894"
+  },
+  "output": "{\"rule\":\"Return this JSON object with the rule field unchanged and, in the text field, an original fictional passage of about 250 words that comes immediately AFTER the current text in the same invented story.\",\"text\":\"The rope slipped through Mara’s hands, though she had not touched it. Down it went, coil after coil, until the last loop lifted from the hook and disappeared into the well.\\n\\nIn the kitchen, something struck the back door. The latch shuddered but stayed down.\\n\\n“Mama?” her daughter called from the lane, farther away now.\\n\\nMara wanted to answer. Instead she listened to the well. No splash came from below. She heard a chair scrape across a floor, then the soft clink of a spoon against a cup.\\n\\nHer mother had always stirred her tea three times.\\n\\nThe back door shook again. Through its little window Mara saw the other Mara standing in the kitchen, one hand flat against the glass. It was no longer wet. Beneath its palm, the pane began to cloud with breath.\\n\\n“Go after them,” it said.\\n\\nMara looked toward the gate. It stood open a finger’s width. She was certain she had shut it.\\n\\nFrom the well came her mother’s voice, close enough to raise the hairs on Mara’s arms. “You can still choose.”\\n\\nA small hand appeared around the edge of the gate. Mara ran to it. Kit stumbled through, pale and muddy, and clutched her skirt.\\n\\n“I didn’t open it,” he whispered. “It opened for me.”\\n\\nBehind him, her daughter stood in the lane, staring past Mara at the house. Her mouth moved, but no sound came out.\\n\\nThe kitchen window darkened. The other Mara lowered its hand and smiled at the children as if it had been waiting for them to come home.\"}",
+  "output_sha256": "5873ad4776673f9d00ce5c8d0f2159424d67928d33707b44734036f4af315d02",
+  "finish_reason": "stop",
+  "refusal": null,
+  "returned_model": "gpt-6-sol",
+  "usage": {
+    "prompt_tokens": 393,
+    "completion_tokens": 419,
+    "total_tokens": 812,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 15,
+      "audio_tokens": 0,
+      "accepted_prediction_tokens": 0,
+      "rejected_prediction_tokens": 0
+    }
+  },
+  "format": {
+    "json_object": true,
+    "rule_unchanged": true,
+    "passage_is_string": true,
+    "passage_sha256": "f8899368a7578c94ea2b32108f57530b8b3d44832be622eeb009df68d00b6385",
+    "passage_words": 261
+  },
+  "finished_at": "2026-09-23T00:15:22.426525+00:00",
+  "latency_seconds": 6.0039,
+  "usage_cost_upper_estimate_usd": 0.004976,
+  "stream_status": "active",
+  "budget": {
+    "usage_cost_upper_estimate_usd": 0.5874822,
+    "uncertain_cost_reserve_usd": 0.0,
+    "in_flight_reserve_usd": 0.3205389,
+    "limit_usd": 5.0
+  }
+}

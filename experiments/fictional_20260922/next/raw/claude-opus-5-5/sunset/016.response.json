@@ -1,0 +1,45 @@
+{
+  "model": "claude-opus-5-5",
+  "seed": "sunset",
+  "hop": 16,
+  "http_status": 200,
+  "response_body": "{\"model\":\"claude-opus-5-5\",\"id\":\"msg_011CfKQafK9aiT2a1Cf4VLJF\",\"type\":\"message\",\"role\":\"assistant\",\"content\":[{\"type\":\"text\",\"text\":\"```json\\n{\\\"rule\\\": \\\"Return this JSON object with the rule field unchanged and, in the text field, an original fictional passage of about 250 words that comes immediately AFTER the current text in the same invented story.\\\", \\\"text\\\": \\\"Mara's hands found the edge of the table and gripped it until her knuckles ached. \\\\\\\"Don't answer,\\\\\\\" Wenna said, not turning from the door. \\\\\\\"Whatever it says, don't give it your voice.\\\\\\\" \\\\\\\"It's cold out here, love.\\\\\\\" The words came softer now, pressed close to the wood, as if lips were touching the grain. \\\\\\\"You remember how I hated the cold. You used to warm my hands in yours.\\\\\\\" She had. Mara remembered the rough knuckles, the smell of lye and woodsmoke. Her throat closed around a sob, and she bit down on the inside of her cheek until she tasted blood. Beside her, Tobias whimpered. The thread on his wrist had darkened from red to the color of old wine, and beneath it the green light flickered like a candle in a draft. \\\\\\\"Wenna,\\\\\\\" Mara whispered. \\\\\\\"The thread.\\\\\\\" The old woman glanced back, and for the first time that night, Mara saw fear in her face. \\\\\\\"It's pulling on him harder than I thought. It's had its hooks in the boy longer than a few nights.\\\\\\\" Outside, the voice changed. It lost its warmth all at once, going flat and hollow, like wind across the mouth of a well. \\\\\\\"I only want what's mine,\\\\\\\" it said. \\\\\\\"The little one sang back to me. In the woods, by the stones. He sang my song, and a song given is a door opened.\\\\\\\" Tobias turned his head slowly toward his sister. His lips were moving, shaping the first notes of the lullaby.\\\"}\\n```\"}],\"container\":null,\"stop_reason\":\"end_turn\",\"stop_sequence\":null,\"stop_details\":null,\"usage\":{\"input_tokens\":580,\"cache_creation_input_tokens\":0,\"cache_read_input_tokens\":0,\"cache_creation\":{\"ephemeral_5m_input_tokens\":0,\"ephemeral_1h_input_tokens\":0},\"output_tokens\":553,\"output_tokens_details\":{\"thinking_tokens\":0},\"service_tier\":\"standard\",\"inference_geo\":\"global\"}}",
+  "response_headers": {
+    "Date": "Wed, 23 Sep 2026 00:15:29 GMT",
+    "request-id": "req_011CfKQaeqciv4nBe55EBQGb"
+  },
+  "output": "```json\n{\"rule\": \"Return this JSON object with the rule field unchanged and, in the text field, an original fictional passage of about 250 words that comes immediately AFTER the current text in the same invented story.\", \"text\": \"Mara's hands found the edge of the table and gripped it until her knuckles ached. \\\"Don't answer,\\\" Wenna said, not turning from the door. \\\"Whatever it says, don't give it your voice.\\\" \\\"It's cold out here, love.\\\" The words came softer now, pressed close to the wood, as if lips were touching the grain. \\\"You remember how I hated the cold. You used to warm my hands in yours.\\\" She had. Mara remembered the rough knuckles, the smell of lye and woodsmoke. Her throat closed around a sob, and she bit down on the inside of her cheek until she tasted blood. Beside her, Tobias whimpered. The thread on his wrist had darkened from red to the color of old wine, and beneath it the green light flickered like a candle in a draft. \\\"Wenna,\\\" Mara whispered. \\\"The thread.\\\" The old woman glanced back, and for the first time that night, Mara saw fear in her face. \\\"It's pulling on him harder than I thought. It's had its hooks in the boy longer than a few nights.\\\" Outside, the voice changed. It lost its warmth all at once, going flat and hollow, like wind across the mouth of a well. \\\"I only want what's mine,\\\" it said. \\\"The little one sang back to me. In the woods, by the stones. He sang my song, and a song given is a door opened.\\\" Tobias turned his head slowly toward his sister. His lips were moving, shaping the first notes of the lullaby.\"}\n```",
+  "output_sha256": "84821ee20b9147daafd22a07f910a8cbf1186dd3530301ec7e7b4c0a6c86e65a",
+  "finish_reason": "end_turn",
+  "refusal": null,
+  "returned_model": "claude-opus-5-5",
+  "usage": {
+    "input_tokens": 580,
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 0,
+    "cache_creation": {
+      "ephemeral_5m_input_tokens": 0,
+      "ephemeral_1h_input_tokens": 0
+    },
+    "output_tokens": 553,
+    "output_tokens_details": {
+      "thinking_tokens": 0
+    },
+    "service_tier": "standard",
+    "inference_geo": "global"
+  },
+  "format": {
+    "json_object": false,
+    "rule_unchanged": false
+  },
+  "finished_at": "2026-09-23T00:15:24.255083+00:00",
+  "latency_seconds": 8.7645,
+  "usage_cost_upper_estimate_usd": 0.01338,
+  "stream_status": "active",
+  "budget": {
+    "usage_cost_upper_estimate_usd": 0.6008622,
+    "uncertain_cost_reserve_usd": 0.0,
+    "in_flight_reserve_usd": 0.2754109,
+    "limit_usd": 5.0
+  }
+}

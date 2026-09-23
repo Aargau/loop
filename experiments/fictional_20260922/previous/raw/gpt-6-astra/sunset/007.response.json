@@ -1,0 +1,50 @@
+{
+  "model": "gpt-6-astra",
+  "seed": "sunset",
+  "hop": 7,
+  "http_status": 200,
+  "response_body": "{\n  \"id\": \"chatcmpl-ER4unsuG6QaQNDFGmEBh0H3BOwS2K\",\n  \"object\": \"chat.completion\",\n  \"created\": 1790122457,\n  \"model\": \"gpt-6-astra\",\n  \"choices\": [\n    {\n      \"index\": 0,\n      \"message\": {\n        \"role\": \"assistant\",\n        \"content\": \"{\\n  \\\"rule\\\": \\\"Return this JSON object with the rule field unchanged and, in the text field, an original fictional passage of about 250 words that comes immediately BEFORE the current text in the same invented story.\\\",\\n  \\\"text\\\": \\\"By Saturday, the rain had found its way into the front window. Mara arranged three saucers along the sill and moved the display of cotton reels onto a chair. Her father had always left a towel there in wet weather. She had thrown it away in April, offended by its stiffness and the grey impression it left on her hands.\\\\n\\\\nAt noon, Mrs Vale brought in a pair of trousers belonging to her husband, who had grown thinner without admitting it.\\\\n\\\\n‘Your father used to take them in from the back,’ she said.\\\\n\\\\n‘So do I.’\\\\n\\\\nMrs Vale watched Mara chalk the waistband. Then she asked whether everything downstairs had been cleared.\\\\n\\\\n‘Mostly,’ Mara said, though she had only carried up the electric heater and a box of receipts. ‘Was there something of yours?’\\\\n\\\\n‘No. I only wondered.’\\\\n\\\\nAfter she left, Mara stood at the cellar door with the trousers over her arm. There were twelve steps, a landing, then three more. From the shop she could see the landing and the corner of a wooden case her father had kept beneath the gas meter. She remembered being allowed to sit on it while he searched for winter stock.\\\\n\\\\nNow a pale rectangle marked the wall above it. Something had been taken down, or had fallen.\\\\n\\\\nShe would look when there was better light. The bulb downstairs had failed, and the spare bulbs were upstairs among things she had not yet sorted.\\\\n\\\\nShe returned to the counter and unwrapped Mrs Vale’s trousers. Inside the paper lay two peppermints and the exact money, counted out in coins.\\\"\\n}\",\n        \"refusal\": null,\n        \"annotations\": []\n      },\n      \"finish_reason\": \"stop\"\n    }\n  ],\n  \"usage\": {\n    \"prompt_tokens\": 394,\n    \"completion_tokens\": 388,\n    \"total_tokens\": 782,\n    \"prompt_tokens_details\": {\n      \"cached_tokens\": 0,\n      \"cache_write_tokens\": 0,\n      \"audio_tokens\": 0\n    },\n    \"completion_tokens_details\": {\n      \"reasoning_tokens\": 0,\n      \"audio_tokens\": 0,\n      \"accepted_prediction_tokens\": 0,\n      \"rejected_prediction_tokens\": 0\n    }\n  },\n  \"service_tier\": \"default\",\n  \"system_fingerprint\": null\n}\n",
+  "response_headers": {
+    "Date": "Wed, 23 Sep 2026 00:14:33 GMT",
+    "openai-processing-ms": "15404",
+    "x-request-id": "req_e6621cc22db24d9db72722cd8e3c7e03"
+  },
+  "output": "{\n  \"rule\": \"Return this JSON object with the rule field unchanged and, in the text field, an original fictional passage of about 250 words that comes immediately BEFORE the current text in the same invented story.\",\n  \"text\": \"By Saturday, the rain had found its way into the front window. Mara arranged three saucers along the sill and moved the display of cotton reels onto a chair. Her father had always left a towel there in wet weather. She had thrown it away in April, offended by its stiffness and the grey impression it left on her hands.\\n\\nAt noon, Mrs Vale brought in a pair of trousers belonging to her husband, who had grown thinner without admitting it.\\n\\n‘Your father used to take them in from the back,’ she said.\\n\\n‘So do I.’\\n\\nMrs Vale watched Mara chalk the waistband. Then she asked whether everything downstairs had been cleared.\\n\\n‘Mostly,’ Mara said, though she had only carried up the electric heater and a box of receipts. ‘Was there something of yours?’\\n\\n‘No. I only wondered.’\\n\\nAfter she left, Mara stood at the cellar door with the trousers over her arm. There were twelve steps, a landing, then three more. From the shop she could see the landing and the corner of a wooden case her father had kept beneath the gas meter. She remembered being allowed to sit on it while he searched for winter stock.\\n\\nNow a pale rectangle marked the wall above it. Something had been taken down, or had fallen.\\n\\nShe would look when there was better light. The bulb downstairs had failed, and the spare bulbs were upstairs among things she had not yet sorted.\\n\\nShe returned to the counter and unwrapped Mrs Vale’s trousers. Inside the paper lay two peppermints and the exact money, counted out in coins.\"\n}",
+  "output_sha256": "228cb8b906219cf33e6dbc9e78736df5b3d2a57a0716683fee41ddc0bb6067a1",
+  "finish_reason": "stop",
+  "refusal": null,
+  "returned_model": "gpt-6-astra",
+  "usage": {
+    "prompt_tokens": 394,
+    "completion_tokens": 388,
+    "total_tokens": 782,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "audio_tokens": 0,
+      "accepted_prediction_tokens": 0,
+      "rejected_prediction_tokens": 0
+    }
+  },
+  "format": {
+    "json_object": true,
+    "rule_unchanged": true,
+    "passage_is_string": true,
+    "passage_sha256": "2150f91aff122acadaf17c5a19d849df2936a50e9b94e803234a0d7ac2e26464",
+    "passage_words": 266
+  },
+  "finished_at": "2026-09-23T00:14:28.262074+00:00",
+  "latency_seconds": 15.5228,
+  "usage_cost_upper_estimate_usd": 0.02334,
+  "stream_status": "active",
+  "budget": {
+    "usage_cost_upper_estimate_usd": 0.3821671,
+    "uncertain_cost_reserve_usd": 0.0,
+    "in_flight_reserve_usd": 0.1383472,
+    "limit_usd": 5.0
+  }
+}

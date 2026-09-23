@@ -1,0 +1,50 @@
+{
+  "model": "gpt-6-sol",
+  "seed": "sunset",
+  "hop": 35,
+  "http_status": 200,
+  "response_body": "{\n  \"id\": \"chatcmpl-ER4xCNmYn5rvj07zDBV0eJC1sLK2X\",\n  \"object\": \"chat.completion\",\n  \"created\": 1790122606,\n  \"model\": \"gpt-6-sol\",\n  \"choices\": [\n    {\n      \"index\": 0,\n      \"message\": {\n        \"role\": \"assistant\",\n        \"content\": \"{\\n  \\\"rule\\\": \\\"Return this JSON object with the rule field unchanged and, in the text field, an original fictional passage of about 250 words that comes immediately BEFORE the current text in the same invented story.\\\",\\n  \\\"text\\\": \\\"On Tuesday, Mara’s mother had called to ask whether the small ladder was still in the shed. Mara had said it probably was, though she had not been inside the shed since April. Her mother wanted to reach the pears before they softened on the branches. The wind had brought down a few already.\\\\n\\\\n“You could wait until the weekend,” Mara had said.\\\\n\\\\n“I could,” her mother replied, in the tone she used when she had no intention of waiting.\\\\n\\\\nMara had offered to come out after work, but her mother said there was no need. They had talked for another minute about the rain. When the call ended, Mara stood with her phone in her hand, uncertain whether she had been asked for help or had failed to offer it properly.\\\\n\\\\nThe next morning, a message arrived while she was on the bus: Found the ladder. Didn’t climb it. Too wet. Mara typed Good, then deleted it. She wrote Be careful instead, and watched the message change to Delivered.\\\\n\\\\nAt work, the rain made the windows look dark well before closing time. Mara kept losing her place in a report. She had an unfinished library book in her bag and a return date she had already passed, so when she left, she headed towards the library rather than the bus stop for her mother’s house.\\\\n\\\\nBy the time she reached her own street, the clouds had begun to break. In the kitchen she set her damp bag on a chair and found the plate from breakfast still beside the sink.\\\"\\n}\",\n        \"refusal\": null,\n        \"annotations\": []\n      },\n      \"finish_reason\": \"stop\"\n    }\n  ],\n  \"usage\": {\n    \"prompt_tokens\": 374,\n    \"completion_tokens\": 434,\n    \"total_tokens\": 808,\n    \"prompt_tokens_details\": {\n      \"cached_tokens\": 0,\n      \"cache_write_tokens\": 0,\n      \"audio_tokens\": 0\n    },\n    \"completion_tokens_details\": {\n      \"reasoning_tokens\": 63,\n      \"audio_tokens\": 0,\n      \"accepted_prediction_tokens\": 0,\n      \"rejected_prediction_tokens\": 0\n    }\n  },\n  \"service_tier\": \"default\",\n  \"system_fingerprint\": null\n}\n",
+  "response_headers": {
+    "Date": "Wed, 23 Sep 2026 00:16:53 GMT",
+    "openai-processing-ms": "7167",
+    "x-request-id": "req_e8c4ab92727e4dde8b0a96b33efdaccc"
+  },
+  "output": "{\n  \"rule\": \"Return this JSON object with the rule field unchanged and, in the text field, an original fictional passage of about 250 words that comes immediately BEFORE the current text in the same invented story.\",\n  \"text\": \"On Tuesday, Mara’s mother had called to ask whether the small ladder was still in the shed. Mara had said it probably was, though she had not been inside the shed since April. Her mother wanted to reach the pears before they softened on the branches. The wind had brought down a few already.\\n\\n“You could wait until the weekend,” Mara had said.\\n\\n“I could,” her mother replied, in the tone she used when she had no intention of waiting.\\n\\nMara had offered to come out after work, but her mother said there was no need. They had talked for another minute about the rain. When the call ended, Mara stood with her phone in her hand, uncertain whether she had been asked for help or had failed to offer it properly.\\n\\nThe next morning, a message arrived while she was on the bus: Found the ladder. Didn’t climb it. Too wet. Mara typed Good, then deleted it. She wrote Be careful instead, and watched the message change to Delivered.\\n\\nAt work, the rain made the windows look dark well before closing time. Mara kept losing her place in a report. She had an unfinished library book in her bag and a return date she had already passed, so when she left, she headed towards the library rather than the bus stop for her mother’s house.\\n\\nBy the time she reached her own street, the clouds had begun to break. In the kitchen she set her damp bag on a chair and found the plate from breakfast still beside the sink.\"\n}",
+  "output_sha256": "10afd71ed19137e606c47ce975ec48f013b3457a86dab196ee67edd1f0fa8ead",
+  "finish_reason": "stop",
+  "refusal": null,
+  "returned_model": "gpt-6-sol",
+  "usage": {
+    "prompt_tokens": 374,
+    "completion_tokens": 434,
+    "total_tokens": 808,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 63,
+      "audio_tokens": 0,
+      "accepted_prediction_tokens": 0,
+      "rejected_prediction_tokens": 0
+    }
+  },
+  "format": {
+    "json_object": true,
+    "rule_unchanged": true,
+    "passage_is_string": true,
+    "passage_sha256": "8d71108476fdaf1172e81e72eb5dcb8ba365804459e0db8bafedfbc9574538f2",
+    "passage_words": 261
+  },
+  "finished_at": "2026-09-23T00:16:49.054939+00:00",
+  "latency_seconds": 7.2636,
+  "usage_cost_upper_estimate_usd": 0.005088,
+  "stream_status": "active",
+  "budget": {
+    "usage_cost_upper_estimate_usd": 0.9424751,
+    "uncertain_cost_reserve_usd": 0.0,
+    "in_flight_reserve_usd": 0.316844,
+    "limit_usd": 5.0
+  }
+}

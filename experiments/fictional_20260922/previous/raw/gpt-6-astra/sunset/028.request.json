@@ -1,0 +1,20 @@
+{
+  "started_at": "2026-09-23T00:19:00.709785+00:00",
+  "model": "gpt-6-astra",
+  "seed": "sunset",
+  "hop": 28,
+  "endpoint": "https://api.openai.com/v1/chat/completions",
+  "body": {
+    "model": "gpt-6-astra",
+    "messages": [
+      {
+        "role": "user",
+        "content": "{\n  \"rule\": \"Return this JSON object with the rule field unchanged and, in the text field, an original fictional passage of about 250 words that comes immediately BEFORE the current text in the same invented story.\",\n  \"text\": \"On Monday Mara found a drawing pin under the felt lining of the sideboard drawer. There was nothing attached to it. She laid it in a saucer with two watch keys and a button somebody had mistaken for ivory.\\n\\nThe lining had come loose at one corner. Her mother had cut it from a piece left over after covering the card table, making a small join at the back where the drawer was wider than she had allowed. Mara pressed the corner down. It lifted again.\\n\\nA woman came in wanting six matching glasses. There were five of one kind and seven of another, but one of the seven had a cloudy patch near the rim.\\n\\n‘It might wash off,’ the woman said.\\n\\nMara took it to the sink. Under the tap, the patch disappeared; when she dried the glass, it returned. The woman bought the five and asked for newspaper rather than tissue.\\n\\nAfterwards Mara moved the counter lamp. Its cord had been stretched across the place where she wrapped things, and she had caught it twice with her scissors. In its new position it lit the saucer. She put the drawing pin in a drawer before she could forget what it was.\\n\\nHer brother rang as she was locking up.\\n\\n‘Are you there tomorrow?’\\n\\n‘It’s Tuesday.’\\n\\n‘I know what day it is.’\\n\\nShe waited, holding the telephone between her shoulder and her ear while she checked the till.\\n\\n‘I’ve still got your key,’ he said.\\n\\n‘Yes.’\\n\\n‘I’ll bring it round.’\\n\\nShe took the lamp out of the window display and left its empty space until morning.\"\n}"
+      }
+    ],
+    "max_completion_tokens": 4096,
+    "reasoning_effort": "low"
+  },
+  "state_sha256": "22583170b9efe3053d284b42485f75cbb4a975bd92b32f0905aa1b201006cdde",
+  "reserved_cost_usd": 0.22731
+}

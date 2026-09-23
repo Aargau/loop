@@ -1,0 +1,47 @@
+{
+  "model": "gpt-6-luna",
+  "seed": "sunset",
+  "hop": 29,
+  "http_status": 200,
+  "response_body": "{\n  \"id\": \"chatcmpl-ER4vdkzRWkWFY8zJ2JU7iVe3soxC9\",\n  \"object\": \"chat.completion\",\n  \"created\": 1790122509,\n  \"model\": \"gpt-6-luna\",\n  \"choices\": [\n    {\n      \"index\": 0,\n      \"message\": {\n        \"role\": \"assistant\",\n        \"content\": \"{\\\"rule\\\":\\\"Return this JSON object with the rule field unchanged and, in the text field, an original fictional passage of about 250 words that comes immediately AFTER the current text in the same invented story.\\\",\\\"text\\\":\\\"That afternoon, the boat was gone from the puddle.\\n\\nMara found a trail of wet leaves leading from the gate to the old greenhouse. Its glass panes were cloudy with age, and one corner leaned toward the earth as if listening. The three of them stood outside while their mother searched her pockets for the key.\\n\\n“I thought we gave this place away,” Elsie said.\\n\\n“We gave away the tools,” their mother replied. “Not the key.”\\n\\nInside, the air smelled of soil and something sweet beneath it. A cracked pot sat on the bench. In it, a pear tree no taller than Mara’s hand had pushed up through the dry dirt.\\n\\nTheir mother went very still.\\n\\n“Dad planted it,” she said. “The year you were born. He said it would be ready when you were big enough to climb.”\\n\\nMara leaned closer. One new leaf trembled on the stem, though the greenhouse door was shut.\\n\\nBeside the pot lay the paper boat. Its sail was damp, the blue bird blurred at the edges. The word *Tomorrow* had faded, but beneath it another line had appeared in the pencil:\\n\\n*Bring water.*\\n\\nElsie ran for the watering can. Their mother filled it at the outdoor tap, and Mara poured slowly, careful not to wash the little tree away.\\n\\nWhen they finished, the sun slipped through a clear patch in the roof. The leaves shone.\\n\\n“Will it grow pears?” Elsie asked.\\n\\n“Someday,” their mother said.\\n\\nThey left the boat beside the pot and locked the greenhouse behind them. On the walk back, Mara noticed her mother had taken Elsie’s hand. Her own hand found Mara’s.\\n\\nAt the gate, all three turned once more toward the glass house.\\n\\nNothing moved inside.\\n\\nStill, they went home expecting rain.\\\"}\",\n        \"refusal\": null,\n        \"annotations\": []\n      },\n      \"finish_reason\": \"stop\"\n    }\n  ],\n  \"usage\": {\n    \"prompt_tokens\": 390,\n    \"completion_tokens\": 525,\n    \"total_tokens\": 915,\n    \"prompt_tokens_details\": {\n      \"cached_tokens\": 0,\n      \"cache_write_tokens\": 0,\n      \"audio_tokens\": 0\n    },\n    \"completion_tokens_details\": {\n      \"reasoning_tokens\": 107,\n      \"audio_tokens\": 0,\n      \"accepted_prediction_tokens\": 0,\n      \"rejected_prediction_tokens\": 0\n    }\n  },\n  \"service_tier\": \"default\",\n  \"system_fingerprint\": null\n}\n",
+  "response_headers": {
+    "Date": "Wed, 23 Sep 2026 00:15:14 GMT",
+    "openai-processing-ms": "4644",
+    "x-request-id": "req_9239e70f628b4be59f33168b8d3268ff"
+  },
+  "output": "{\"rule\":\"Return this JSON object with the rule field unchanged and, in the text field, an original fictional passage of about 250 words that comes immediately AFTER the current text in the same invented story.\",\"text\":\"That afternoon, the boat was gone from the puddle.\n\nMara found a trail of wet leaves leading from the gate to the old greenhouse. Its glass panes were cloudy with age, and one corner leaned toward the earth as if listening. The three of them stood outside while their mother searched her pockets for the key.\n\n“I thought we gave this place away,” Elsie said.\n\n“We gave away the tools,” their mother replied. “Not the key.”\n\nInside, the air smelled of soil and something sweet beneath it. A cracked pot sat on the bench. In it, a pear tree no taller than Mara’s hand had pushed up through the dry dirt.\n\nTheir mother went very still.\n\n“Dad planted it,” she said. “The year you were born. He said it would be ready when you were big enough to climb.”\n\nMara leaned closer. One new leaf trembled on the stem, though the greenhouse door was shut.\n\nBeside the pot lay the paper boat. Its sail was damp, the blue bird blurred at the edges. The word *Tomorrow* had faded, but beneath it another line had appeared in the pencil:\n\n*Bring water.*\n\nElsie ran for the watering can. Their mother filled it at the outdoor tap, and Mara poured slowly, careful not to wash the little tree away.\n\nWhen they finished, the sun slipped through a clear patch in the roof. The leaves shone.\n\n“Will it grow pears?” Elsie asked.\n\n“Someday,” their mother said.\n\nThey left the boat beside the pot and locked the greenhouse behind them. On the walk back, Mara noticed her mother had taken Elsie’s hand. Her own hand found Mara’s.\n\nAt the gate, all three turned once more toward the glass house.\n\nNothing moved inside.\n\nStill, they went home expecting rain.\"}",
+  "output_sha256": "5ae778afd0c688c9cbe505ce39a46a28fd707cd96d9d1b3755b98313aae8ac68",
+  "finish_reason": "stop",
+  "refusal": null,
+  "returned_model": "gpt-6-luna",
+  "usage": {
+    "prompt_tokens": 390,
+    "completion_tokens": 525,
+    "total_tokens": 915,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 107,
+      "audio_tokens": 0,
+      "accepted_prediction_tokens": 0,
+      "rejected_prediction_tokens": 0
+    }
+  },
+  "format": {
+    "json_object": false,
+    "rule_unchanged": false
+  },
+  "finished_at": "2026-09-23T00:15:09.518781+00:00",
+  "latency_seconds": 4.7909,
+  "usage_cost_upper_estimate_usd": 0.0003015,
+  "stream_status": "active",
+  "budget": {
+    "usage_cost_upper_estimate_usd": 0.5317793,
+    "uncertain_cost_reserve_usd": 0.0,
+    "in_flight_reserve_usd": 0.36405,
+    "limit_usd": 5.0
+  }
+}

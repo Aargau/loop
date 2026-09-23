@@ -1,0 +1,50 @@
+{
+  "model": "gpt-6-luna",
+  "seed": "sunset",
+  "hop": 15,
+  "http_status": 200,
+  "response_body": "{\n  \"id\": \"chatcmpl-ER4uZ87Hm6qrnV9UUKzaOy2HHsNGl\",\n  \"object\": \"chat.completion\",\n  \"created\": 1790122443,\n  \"model\": \"gpt-6-luna\",\n  \"choices\": [\n    {\n      \"index\": 0,\n      \"message\": {\n        \"role\": \"assistant\",\n        \"content\": \"{\\\"rule\\\":\\\"Return this JSON object with the rule field unchanged and, in the text field, an original fictional passage of about 250 words that comes immediately BEFORE the current text in the same invented story.\\\",\\\"text\\\":\\\"The week before Christmas, Mara found the job posting while eating toast over the kitchen sink. Her landlord had left a reminder beneath her door: January’s rent would be due on the first, regardless of the holiday. She read the notice twice, then opened her laptop and searched for work that didn’t require a uniform or a long commute.\\\\n\\\\nThe design firm’s listing appeared near the top. It was a small place, the description said, looking for someone organized and comfortable with everyday office tasks. The hours were regular. The pay was enough, just barely, and the office was three bus rides away. Mara hesitated over the application form. She had spent the past year on her feet in a café, learning to stay pleasant through noise, spills, and customers who changed their orders after the food arrived. A quiet desk sounded almost luxurious.\\\\n\\\\nShe attached her résumé and kept the cover note brief. Two days later, a man named Simon called. He asked whether she could start in January and whether she was good at “a bit of everything.” Mara said she was, though she wasn’t sure what everything meant. He explained that the firm needed help keeping the office running while the team was busy with several projects. There would be emails, paperwork, scheduling—nothing too complicated, he assured her.\\\\n\\\\nAfter the call, she wrote the hours and salary on the back of an envelope. The numbers lined up closely with her rent and bus fare. There wasn’t much room for a mistake, but there was enough room to breathe. She set the envelope beside the landlord’s notice and looked again at the posting’s promise of “general office support.” It sounded manageable. In January, Mara accepted a six-month job at a small design firm.\\\"}\",\n        \"refusal\": null,\n        \"annotations\": []\n      },\n      \"finish_reason\": \"stop\"\n    }\n  ],\n  \"usage\": {\n    \"prompt_tokens\": 396,\n    \"completion_tokens\": 501,\n    \"total_tokens\": 897,\n    \"prompt_tokens_details\": {\n      \"cached_tokens\": 0,\n      \"cache_write_tokens\": 0,\n      \"audio_tokens\": 0\n    },\n    \"completion_tokens_details\": {\n      \"reasoning_tokens\": 93,\n      \"audio_tokens\": 0,\n      \"accepted_prediction_tokens\": 0,\n      \"rejected_prediction_tokens\": 0\n    }\n  },\n  \"service_tier\": \"default\",\n  \"system_fingerprint\": null\n}\n",
+  "response_headers": {
+    "Date": "Wed, 23 Sep 2026 00:14:08 GMT",
+    "openai-processing-ms": "4869",
+    "x-request-id": "req_5ed44d5fa4524a42957e5488b7b674d9"
+  },
+  "output": "{\"rule\":\"Return this JSON object with the rule field unchanged and, in the text field, an original fictional passage of about 250 words that comes immediately BEFORE the current text in the same invented story.\",\"text\":\"The week before Christmas, Mara found the job posting while eating toast over the kitchen sink. Her landlord had left a reminder beneath her door: January’s rent would be due on the first, regardless of the holiday. She read the notice twice, then opened her laptop and searched for work that didn’t require a uniform or a long commute.\\n\\nThe design firm’s listing appeared near the top. It was a small place, the description said, looking for someone organized and comfortable with everyday office tasks. The hours were regular. The pay was enough, just barely, and the office was three bus rides away. Mara hesitated over the application form. She had spent the past year on her feet in a café, learning to stay pleasant through noise, spills, and customers who changed their orders after the food arrived. A quiet desk sounded almost luxurious.\\n\\nShe attached her résumé and kept the cover note brief. Two days later, a man named Simon called. He asked whether she could start in January and whether she was good at “a bit of everything.” Mara said she was, though she wasn’t sure what everything meant. He explained that the firm needed help keeping the office running while the team was busy with several projects. There would be emails, paperwork, scheduling—nothing too complicated, he assured her.\\n\\nAfter the call, she wrote the hours and salary on the back of an envelope. The numbers lined up closely with her rent and bus fare. There wasn’t much room for a mistake, but there was enough room to breathe. She set the envelope beside the landlord’s notice and looked again at the posting’s promise of “general office support.” It sounded manageable. In January, Mara accepted a six-month job at a small design firm.\"}",
+  "output_sha256": "df44b7fcadd3016e90d96eee0fb72ff48e844a242334d02ea8981b465c5e6795",
+  "finish_reason": "stop",
+  "refusal": null,
+  "returned_model": "gpt-6-luna",
+  "usage": {
+    "prompt_tokens": 396,
+    "completion_tokens": 501,
+    "total_tokens": 897,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 93,
+      "audio_tokens": 0,
+      "accepted_prediction_tokens": 0,
+      "rejected_prediction_tokens": 0
+    }
+  },
+  "format": {
+    "json_object": true,
+    "rule_unchanged": true,
+    "passage_is_string": true,
+    "passage_sha256": "2ed76148b1b409d9cbe5fe654bc5ae646aeb4a9c68d8f4373daab31ff90f48cf",
+    "passage_words": 295
+  },
+  "finished_at": "2026-09-23T00:14:03.631278+00:00",
+  "latency_seconds": 5.0044,
+  "usage_cost_upper_estimate_usd": 0.0002901,
+  "stream_status": "active",
+  "budget": {
+    "usage_cost_upper_estimate_usd": 0.2892589,
+    "uncertain_cost_reserve_usd": 0.0,
+    "in_flight_reserve_usd": 0.363296,
+    "limit_usd": 5.0
+  }
+}

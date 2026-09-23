@@ -1,0 +1,50 @@
+{
+  "model": "gpt-6-astra",
+  "seed": "sunset",
+  "hop": 6,
+  "http_status": 200,
+  "response_body": "{\n  \"id\": \"chatcmpl-ER4umJic7sHMGDxkezqGgHIqnGqgy\",\n  \"object\": \"chat.completion\",\n  \"created\": 1790122456,\n  \"model\": \"gpt-6-astra\",\n  \"choices\": [\n    {\n      \"index\": 0,\n      \"message\": {\n        \"role\": \"assistant\",\n        \"content\": \"{\\n  \\\"rule\\\": \\\"Return this JSON object with the rule field unchanged and, in the text field, an original fictional passage of about 250 words that comes immediately AFTER the current text in the same invented story.\\\",\\n  \\\"text\\\": \\\"The boy turned toward the voice. One foot nudged a plate off the table. Mara remembered the breaking sound, though she had always placed it earlier, before the water reached the house.\\\\n\\\\n“Who was I talking to?” she asked.\\\\n\\\\nThe ferryman lowered his eyes.\\\\n\\\\nIn the mirror, her father appeared in the doorway carrying a length of rope. He was younger than she was now. That seemed indecent: to have outlived his face.\\\\n\\\\nHe threw the rope toward Elias. It fell short.\\\\n\\\\n“Again,” Mara whispered.\\\\n\\\\nBut her younger self caught her father’s sleeve.\\\\n\\\\nOutside, something struck the wall with a force that shook the plates. Her father stumbled. The girl pulled him toward the door.\\\\n\\\\nMara remembered his weight against her, his wet shirt clutched in both fists. She had told herself he was pulling her out.\\\\n\\\\n“The rope,” she said. “I could have thrown it.”\\\\n\\\\n“Yes,” said the ferryman.\\\\n\\\\n“Would it have reached?”\\\\n\\\\n“I don’t know.”\\\\n\\\\nShe hated him for that more than she would have hated certainty.\\\\n\\\\nBeneath the boat, Elias crouched on the table. Water lifted the fallen plate and carried it past his feet, unbroken.\\\\n\\\\nMara reached toward him.\\\\n\\\\nThe ferryman caught her wrist.\\\\n\\\\n“You can watch until you remember. You cannot stay until it changes.”\\\\n\\\\nOn the bank, the grown man waited, wearing the face she had invented for her brother over twenty years.\\\\n\\\\nThe boy in the glass was looking at the doorway.\\\\n\\\\nMara knelt in the warm water.\\\\n\\\\n“Elias,” she said, and this time addressed the child. “I went outside with Father. I didn’t come back.”\\\"\\n}\",\n        \"refusal\": null,\n        \"annotations\": []\n      },\n      \"finish_reason\": \"stop\"\n    }\n  ],\n  \"usage\": {\n    \"prompt_tokens\": 432,\n    \"completion_tokens\": 441,\n    \"total_tokens\": 873,\n    \"prompt_tokens_details\": {\n      \"cached_tokens\": 0,\n      \"cache_write_tokens\": 0,\n      \"audio_tokens\": 0\n    },\n    \"completion_tokens_details\": {\n      \"reasoning_tokens\": 0,\n      \"audio_tokens\": 0,\n      \"accepted_prediction_tokens\": 0,\n      \"rejected_prediction_tokens\": 0\n    }\n  },\n  \"service_tier\": \"default\",\n  \"system_fingerprint\": null\n}\n",
+  "response_headers": {
+    "Date": "Wed, 23 Sep 2026 00:14:28 GMT",
+    "openai-processing-ms": "13053",
+    "x-request-id": "req_db9806d900304648ab5e3f1311164823"
+  },
+  "output": "{\n  \"rule\": \"Return this JSON object with the rule field unchanged and, in the text field, an original fictional passage of about 250 words that comes immediately AFTER the current text in the same invented story.\",\n  \"text\": \"The boy turned toward the voice. One foot nudged a plate off the table. Mara remembered the breaking sound, though she had always placed it earlier, before the water reached the house.\\n\\n“Who was I talking to?” she asked.\\n\\nThe ferryman lowered his eyes.\\n\\nIn the mirror, her father appeared in the doorway carrying a length of rope. He was younger than she was now. That seemed indecent: to have outlived his face.\\n\\nHe threw the rope toward Elias. It fell short.\\n\\n“Again,” Mara whispered.\\n\\nBut her younger self caught her father’s sleeve.\\n\\nOutside, something struck the wall with a force that shook the plates. Her father stumbled. The girl pulled him toward the door.\\n\\nMara remembered his weight against her, his wet shirt clutched in both fists. She had told herself he was pulling her out.\\n\\n“The rope,” she said. “I could have thrown it.”\\n\\n“Yes,” said the ferryman.\\n\\n“Would it have reached?”\\n\\n“I don’t know.”\\n\\nShe hated him for that more than she would have hated certainty.\\n\\nBeneath the boat, Elias crouched on the table. Water lifted the fallen plate and carried it past his feet, unbroken.\\n\\nMara reached toward him.\\n\\nThe ferryman caught her wrist.\\n\\n“You can watch until you remember. You cannot stay until it changes.”\\n\\nOn the bank, the grown man waited, wearing the face she had invented for her brother over twenty years.\\n\\nThe boy in the glass was looking at the doorway.\\n\\nMara knelt in the warm water.\\n\\n“Elias,” she said, and this time addressed the child. “I went outside with Father. I didn’t come back.”\"\n}",
+  "output_sha256": "fcbd5fbf6fcfe918dbadc3c78fedec44d142ee3aa9c4a61f4eaf1c5ce13d0c55",
+  "finish_reason": "stop",
+  "refusal": null,
+  "returned_model": "gpt-6-astra",
+  "usage": {
+    "prompt_tokens": 432,
+    "completion_tokens": 441,
+    "total_tokens": 873,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "audio_tokens": 0,
+      "accepted_prediction_tokens": 0,
+      "rejected_prediction_tokens": 0
+    }
+  },
+  "format": {
+    "json_object": true,
+    "rule_unchanged": true,
+    "passage_is_string": true,
+    "passage_sha256": "d591a3539f20b79974a28ed3c751b1cbd56b2cc174134927cf80e35deb0ed4f7",
+    "passage_words": 263
+  },
+  "finished_at": "2026-09-23T00:14:23.955688+00:00",
+  "latency_seconds": 13.1588,
+  "usage_cost_upper_estimate_usd": 0.02637,
+  "stream_status": "active",
+  "budget": {
+    "usage_cost_upper_estimate_usd": 0.3448376,
+    "uncertain_cost_reserve_usd": 0.0,
+    "in_flight_reserve_usd": 0.1385034,
+    "limit_usd": 5.0
+  }
+}

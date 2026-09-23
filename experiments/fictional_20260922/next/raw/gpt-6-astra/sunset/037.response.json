@@ -1,0 +1,50 @@
+{
+  "model": "gpt-6-astra",
+  "seed": "sunset",
+  "hop": 37,
+  "http_status": 200,
+  "response_body": "{\n  \"id\": \"chatcmpl-ER51nDYsxjTjCEj1FPNJoQfdbiXpu\",\n  \"object\": \"chat.completion\",\n  \"created\": 1790122891,\n  \"model\": \"gpt-6-astra\",\n  \"choices\": [\n    {\n      \"index\": 0,\n      \"message\": {\n        \"role\": \"assistant\",\n        \"content\": \"{\\n  \\\"rule\\\": \\\"Return this JSON object with the rule field unchanged and, in the text field, an original fictional passage of about 250 words that comes immediately AFTER the current text in the same invented story.\\\",\\n  \\\"text\\\": \\\"His mother did not answer. A pipe knocked inside the ceiling, three patient blows.\\\\n\\\\n“Take your foot back,” his father said.\\\\n\\\\nBut the boy had seen the kitchen beyond the other man. On its table stood a blue bowl with a crack through the painted pears. They had thrown that bowl away before he started school. He remembered being allowed to break it the rest of the way, wrapped in newspaper, with a hammer too heavy for him.\\\\n\\\\nNow someone had filled it with oranges.\\\\n\\\\n“That's not today,” he said.\\\\n\\\\n“No,” Anne said.\\\\n\\\\nThe other father reached for the wall. His fingers found something the boy couldn't see.\\\\n\\\\n“Don't,” Anne told him.\\\\n\\\\n“She's coming down.”\\\\n\\\\n“Then let her.”\\\\n\\\\nHis father got up from the floor. There was dust on one knee, and the boy wanted, absurdly, to brush it off before his mother saw.\\\\n\\\\n“You said it would be empty,” his father said to Anne.\\\\n\\\\n“I said it was empty when I left.”\\\\n\\\\nA stair creaked overhead.\\\\n\\\\nThe boy looked down at the label still pinched between his fingers. Its date had changed. He knew the new one: tomorrow. They were meant to drive to his grandmother's after breakfast.\\\\n\\\\nUnderneath, a wet stroke of ink appeared.\\\\n\\\\nAlmost.\\\\n\\\\nHe dropped the key.\\\\n\\\\nBefore it touched the floor, his mother said his name from the bottom stair.\\\\n\\\\nBoth fathers turned toward her.\\\\n\\\\nShe was holding a length of black thread. One end trailed from her hand into the hallway.\\\\n\\\\n“Anne,” she said, “why is his bag coming undone?”\\\"\\n}\",\n        \"refusal\": null,\n        \"annotations\": []\n      },\n      \"finish_reason\": \"stop\"\n    }\n  ],\n  \"usage\": {\n    \"prompt_tokens\": 446,\n    \"completion_tokens\": 416,\n    \"total_tokens\": 862,\n    \"prompt_tokens_details\": {\n      \"cached_tokens\": 0,\n      \"cache_write_tokens\": 0,\n      \"audio_tokens\": 0\n    },\n    \"completion_tokens_details\": {\n      \"reasoning_tokens\": 0,\n      \"audio_tokens\": 0,\n      \"accepted_prediction_tokens\": 0,\n      \"rejected_prediction_tokens\": 0\n    }\n  },\n  \"service_tier\": \"default\",\n  \"system_fingerprint\": null\n}\n",
+  "response_headers": {
+    "Date": "Wed, 23 Sep 2026 00:21:43 GMT",
+    "openai-processing-ms": "12263",
+    "x-request-id": "req_be019a3da012480dab68383a4a8c1064"
+  },
+  "output": "{\n  \"rule\": \"Return this JSON object with the rule field unchanged and, in the text field, an original fictional passage of about 250 words that comes immediately AFTER the current text in the same invented story.\",\n  \"text\": \"His mother did not answer. A pipe knocked inside the ceiling, three patient blows.\\n\\n“Take your foot back,” his father said.\\n\\nBut the boy had seen the kitchen beyond the other man. On its table stood a blue bowl with a crack through the painted pears. They had thrown that bowl away before he started school. He remembered being allowed to break it the rest of the way, wrapped in newspaper, with a hammer too heavy for him.\\n\\nNow someone had filled it with oranges.\\n\\n“That's not today,” he said.\\n\\n“No,” Anne said.\\n\\nThe other father reached for the wall. His fingers found something the boy couldn't see.\\n\\n“Don't,” Anne told him.\\n\\n“She's coming down.”\\n\\n“Then let her.”\\n\\nHis father got up from the floor. There was dust on one knee, and the boy wanted, absurdly, to brush it off before his mother saw.\\n\\n“You said it would be empty,” his father said to Anne.\\n\\n“I said it was empty when I left.”\\n\\nA stair creaked overhead.\\n\\nThe boy looked down at the label still pinched between his fingers. Its date had changed. He knew the new one: tomorrow. They were meant to drive to his grandmother's after breakfast.\\n\\nUnderneath, a wet stroke of ink appeared.\\n\\nAlmost.\\n\\nHe dropped the key.\\n\\nBefore it touched the floor, his mother said his name from the bottom stair.\\n\\nBoth fathers turned toward her.\\n\\nShe was holding a length of black thread. One end trailed from her hand into the hallway.\\n\\n“Anne,” she said, “why is his bag coming undone?”\"\n}",
+  "output_sha256": "169a4631bbc0179f5c9726916ecfd796d5bc2c3a23bb27745ce861253cdfee6e",
+  "finish_reason": "stop",
+  "refusal": null,
+  "returned_model": "gpt-6-astra",
+  "usage": {
+    "prompt_tokens": 446,
+    "completion_tokens": 416,
+    "total_tokens": 862,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "audio_tokens": 0,
+      "accepted_prediction_tokens": 0,
+      "rejected_prediction_tokens": 0
+    }
+  },
+  "format": {
+    "json_object": true,
+    "rule_unchanged": true,
+    "passage_is_string": true,
+    "passage_sha256": "c7abd06c87224155867a4d0a22c379b463cd3d09a82b4eb806e317a0865fdbf4",
+    "passage_words": 256
+  },
+  "finished_at": "2026-09-23T00:21:38.510560+00:00",
+  "latency_seconds": 12.5339,
+  "usage_cost_upper_estimate_usd": 0.02526,
+  "stream_status": "active",
+  "budget": {
+    "usage_cost_upper_estimate_usd": 1.7415051,
+    "uncertain_cost_reserve_usd": 0.0,
+    "in_flight_reserve_usd": 0.0,
+    "limit_usd": 5.0
+  }
+}

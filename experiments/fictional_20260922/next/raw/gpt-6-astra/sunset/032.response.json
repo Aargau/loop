@@ -1,0 +1,50 @@
+{
+  "model": "gpt-6-astra",
+  "seed": "sunset",
+  "hop": 32,
+  "http_status": 200,
+  "response_body": "{\n  \"id\": \"chatcmpl-ER50bnIdKe6AzFXHJOh6WorB9T9ES\",\n  \"object\": \"chat.completion\",\n  \"created\": 1790122817,\n  \"model\": \"gpt-6-astra\",\n  \"choices\": [\n    {\n      \"index\": 0,\n      \"message\": {\n        \"role\": \"assistant\",\n        \"content\": \"{\\n  \\\"rule\\\": \\\"Return this JSON object with the rule field unchanged and, in the text field, an original fictional passage of about 250 words that comes immediately AFTER the current text in the same invented story.\\\",\\n  \\\"text\\\": \\\"He had wanted to know whether things stayed buried.\\\\n\\\\nEvery afternoon afterward, he had dug it up. On the fourth day the notches were gone. He made them again, deeper, and told nobody.\\\\n\\\\nNow he rubbed his thumb across them.\\\\n\\\\n“Which tree?” he asked.\\\\n\\\\nThe man glanced at the woman.\\\\n\\\\n“We looked under all of them.”\\\\n\\\\n“There was only one.”\\\\n\\\\nFor a moment the house was quiet enough for him to hear Anne breathing against the cupboard door.\\\\n\\\\nThen the man smiled.\\\\n\\\\n“You were smaller then.”\\\\n\\\\nHis father said that too. Usually when the boy remembered something differently: a room, a holiday, the height of a wall. He had never thought it might be a way of taking things away.\\\\n\\\\nThe woman lifted her shoe. The broken stone lay in two pieces. Inside was a small hollow lined with something soft and yellow.\\\\n\\\\n“There's still time,” she told the man.\\\\n\\\\nAnne's fingers tightened.\\\\n\\\\nThe boy turned the key toward the cupboard lock.\\\\n\\\\n“Not that door,” she said.\\\\n\\\\nHe stopped.\\\\n\\\\nThrough the gap he could see one of her eyes. He had been avoiding it, grateful for her voice and unwilling to look too closely at anything else.\\\\n\\\\n“Then let go.”\\\\n\\\\nShe did not.\\\\n\\\\nThe man took a step backward. That frightened the boy more than his coming nearer would have done.\\\\n\\\\n“Anne,” the woman said, very softly. “Give him his sleeve.”\\\\n\\\\nThe fingers opened one at a time.\\\\n\\\\nBehind the coats, where the plaster had always bulged in winter, something clicked.\\\\n\\\\nThe boy carried the key toward it. None of them asked where he was going.\\\"\\n}\",\n        \"refusal\": null,\n        \"annotations\": []\n      },\n      \"finish_reason\": \"stop\"\n    }\n  ],\n  \"usage\": {\n    \"prompt_tokens\": 414,\n    \"completion_tokens\": 430,\n    \"total_tokens\": 844,\n    \"prompt_tokens_details\": {\n      \"cached_tokens\": 0,\n      \"cache_write_tokens\": 0,\n      \"audio_tokens\": 0\n    },\n    \"completion_tokens_details\": {\n      \"reasoning_tokens\": 0,\n      \"audio_tokens\": 0,\n      \"accepted_prediction_tokens\": 0,\n      \"rejected_prediction_tokens\": 0\n    }\n  },\n  \"service_tier\": \"default\",\n  \"system_fingerprint\": null\n}\n",
+  "response_headers": {
+    "Date": "Wed, 23 Sep 2026 00:20:30 GMT",
+    "openai-processing-ms": "13099",
+    "x-request-id": "req_0a0e705287b741eba97b5346717d3414"
+  },
+  "output": "{\n  \"rule\": \"Return this JSON object with the rule field unchanged and, in the text field, an original fictional passage of about 250 words that comes immediately AFTER the current text in the same invented story.\",\n  \"text\": \"He had wanted to know whether things stayed buried.\\n\\nEvery afternoon afterward, he had dug it up. On the fourth day the notches were gone. He made them again, deeper, and told nobody.\\n\\nNow he rubbed his thumb across them.\\n\\n“Which tree?” he asked.\\n\\nThe man glanced at the woman.\\n\\n“We looked under all of them.”\\n\\n“There was only one.”\\n\\nFor a moment the house was quiet enough for him to hear Anne breathing against the cupboard door.\\n\\nThen the man smiled.\\n\\n“You were smaller then.”\\n\\nHis father said that too. Usually when the boy remembered something differently: a room, a holiday, the height of a wall. He had never thought it might be a way of taking things away.\\n\\nThe woman lifted her shoe. The broken stone lay in two pieces. Inside was a small hollow lined with something soft and yellow.\\n\\n“There's still time,” she told the man.\\n\\nAnne's fingers tightened.\\n\\nThe boy turned the key toward the cupboard lock.\\n\\n“Not that door,” she said.\\n\\nHe stopped.\\n\\nThrough the gap he could see one of her eyes. He had been avoiding it, grateful for her voice and unwilling to look too closely at anything else.\\n\\n“Then let go.”\\n\\nShe did not.\\n\\nThe man took a step backward. That frightened the boy more than his coming nearer would have done.\\n\\n“Anne,” the woman said, very softly. “Give him his sleeve.”\\n\\nThe fingers opened one at a time.\\n\\nBehind the coats, where the plaster had always bulged in winter, something clicked.\\n\\nThe boy carried the key toward it. None of them asked where he was going.\"\n}",
+  "output_sha256": "fda51fe5b60dba21bac778fd34e51227980734664c9cdf08012f49def9cf6321",
+  "finish_reason": "stop",
+  "refusal": null,
+  "returned_model": "gpt-6-astra",
+  "usage": {
+    "prompt_tokens": 414,
+    "completion_tokens": 430,
+    "total_tokens": 844,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "audio_tokens": 0,
+      "accepted_prediction_tokens": 0,
+      "rejected_prediction_tokens": 0
+    }
+  },
+  "format": {
+    "json_object": true,
+    "rule_unchanged": true,
+    "passage_is_string": true,
+    "passage_sha256": "9d54dc493b8d75f7a4d04d7c0f18a0f161cf381622a2039d399e5c8b63785f26",
+    "passage_words": 266
+  },
+  "finished_at": "2026-09-23T00:20:26.001413+00:00",
+  "latency_seconds": 13.1989,
+  "usage_cost_upper_estimate_usd": 0.02564,
+  "stream_status": "active",
+  "budget": {
+    "usage_cost_upper_estimate_usd": 1.6131151,
+    "uncertain_cost_reserve_usd": 0.0,
+    "in_flight_reserve_usd": 0.0,
+    "limit_usd": 5.0
+  }
+}

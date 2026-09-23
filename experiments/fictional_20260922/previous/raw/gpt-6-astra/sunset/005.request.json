@@ -1,0 +1,20 @@
+{
+  "started_at": "2026-09-23T00:13:46.746865+00:00",
+  "model": "gpt-6-astra",
+  "seed": "sunset",
+  "hop": 5,
+  "endpoint": "https://api.openai.com/v1/chat/completions",
+  "body": {
+    "model": "gpt-6-astra",
+    "messages": [
+      {
+        "role": "user",
+        "content": "{\n  \"rule\": \"Return this JSON object with the rule field unchanged and, in the text field, an original fictional passage of about 250 words that comes immediately BEFORE the current text in the same invented story.\",\n  \"text\": \"The parcel arrived after lunch, wrapped in brown paper that had softened at the corners. No courier came through the door. Mara found it on the chair where customers sat to take off their shoes.\\n\\nInside was a boy’s coat.\\n\\nShe lifted it by the shoulders. Grey wool, bone buttons, a lining repaired with green thread. Whoever had done the repair had used stitches much too small for the fabric; the silk puckered around them like skin around a splinter.\\n\\nThere was no name, only an alterations ticket from the shop. Mara’s father had ordered those tickets before she took over. She still found them in drawers, their blue lettering faded almost white.\\n\\nIn the space marked INSTRUCTIONS, someone had written: Let out as much as possible.\\n\\nShe checked the seams. There was scarcely half an inch to spare.\\n\\nSomething hard shifted in a pocket. She reached inside and brought out a brass key, its teeth clogged with pale earth. A length of green thread had been tied through the bow.\\n\\nMara laid it on the counter. Then she moved it into the till, beneath the rolls of coins, where a customer would not mistake it for something lost.\\n\\nThe doorbell rang.\\n\\nMrs Vale entered carrying her usual canvas bag, the black skirt folded over one arm.\\n\\n“I hope I’m not too late.”\\n\\n“Not at all,” Mara said.\\n\\nShe covered the coat with its brown paper and fetched the chalk. Mrs Vale stepped behind the curtain, talking about the buses. Mara listened to the familiar complaint and waited for her to come out.\"\n}"
+      }
+    ],
+    "max_completion_tokens": 4096,
+    "reasoning_effort": "low"
+  },
+  "state_sha256": "da34878e93d816c8c3aff4e6c418496b5d0b19ebc21f1c24d51921b902665d7c",
+  "reserved_cost_usd": 0.22746
+}

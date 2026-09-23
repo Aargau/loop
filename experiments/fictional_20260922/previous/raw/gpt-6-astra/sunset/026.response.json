@@ -1,0 +1,50 @@
+{
+  "model": "gpt-6-astra",
+  "seed": "sunset",
+  "hop": 26,
+  "http_status": 200,
+  "response_body": "{\n  \"id\": \"chatcmpl-ER4yuOzBCJ4DtDo5RLnAy3lwBDezH\",\n  \"object\": \"chat.completion\",\n  \"created\": 1790122712,\n  \"model\": \"gpt-6-astra\",\n  \"choices\": [\n    {\n      \"index\": 0,\n      \"message\": {\n        \"role\": \"assistant\",\n        \"content\": \"{\\n  \\\"rule\\\": \\\"Return this JSON object with the rule field unchanged and, in the text field, an original fictional passage of about 250 words that comes immediately BEFORE the current text in the same invented story.\\\",\\n  \\\"text\\\": \\\"On Tuesday her brother came to the shop with a packet of biscuits and the spare key he had borrowed in August. He put both on the counter, keeping one finger through the key ring while he looked around.\\\\n\\\\n‘You’ve changed it,’ he said.\\\\n\\\\nMara had moved a lamp from one end of the counter to the other. She waited for him to notice something else.\\\\n\\\\nHe went over to the sideboard. It stood beneath a shelf of glasses, some priced separately and some in sets that customers kept breaking up. He opened the left-hand cupboard and shut it again.\\\\n\\\\n‘That door always caught.’\\\\n\\\\n‘Only in winter.’\\\\n\\\\n‘It’s catching now.’\\\\n\\\\nShe told him there were biscuits already, in the tin beside the kettle. He said these were different ones. Then he asked how much she wanted for the sideboard.\\\\n\\\\n‘It isn’t priced.’\\\\n\\\\n‘Everything else is.’\\\\n\\\\nMara took the packet from the counter and tried to open it along the seam. Their mother had used scissors, even for things with a strip to pull.\\\\n\\\\nHer brother said someone at work bought old furniture. Not for himself; he knew people. A name would help, he said, or anything that showed where it had been made.\\\\n\\\\n‘You could ask him to come in.’\\\\n\\\\n‘He’ll ask me what it is first.’\\\\n\\\\n‘A sideboard.’\\\\n\\\\nHe smiled without looking at her. When he left, the key was still on his finger. She tapped the window, but he lifted his hand in farewell and carried on towards the crossing.\\\\n\\\\nShe put the unopened biscuits in the cupboard with the others.\\\"\\n}\",\n        \"refusal\": null,\n        \"annotations\": []\n      },\n      \"finish_reason\": \"stop\"\n    }\n  ],\n  \"usage\": {\n    \"prompt_tokens\": 375,\n    \"completion_tokens\": 413,\n    \"total_tokens\": 788,\n    \"prompt_tokens_details\": {\n      \"cached_tokens\": 0,\n      \"cache_write_tokens\": 0,\n      \"audio_tokens\": 0\n    },\n    \"completion_tokens_details\": {\n      \"reasoning_tokens\": 0,\n      \"audio_tokens\": 0,\n      \"accepted_prediction_tokens\": 0,\n      \"rejected_prediction_tokens\": 0\n    }\n  },\n  \"service_tier\": \"default\",\n  \"system_fingerprint\": null\n}\n",
+  "response_headers": {
+    "Date": "Wed, 23 Sep 2026 00:18:49 GMT",
+    "openai-processing-ms": "17546",
+    "x-request-id": "req_e64f85fdfdf24c1dbd0cbc49124a5a19"
+  },
+  "output": "{\n  \"rule\": \"Return this JSON object with the rule field unchanged and, in the text field, an original fictional passage of about 250 words that comes immediately BEFORE the current text in the same invented story.\",\n  \"text\": \"On Tuesday her brother came to the shop with a packet of biscuits and the spare key he had borrowed in August. He put both on the counter, keeping one finger through the key ring while he looked around.\\n\\n‘You’ve changed it,’ he said.\\n\\nMara had moved a lamp from one end of the counter to the other. She waited for him to notice something else.\\n\\nHe went over to the sideboard. It stood beneath a shelf of glasses, some priced separately and some in sets that customers kept breaking up. He opened the left-hand cupboard and shut it again.\\n\\n‘That door always caught.’\\n\\n‘Only in winter.’\\n\\n‘It’s catching now.’\\n\\nShe told him there were biscuits already, in the tin beside the kettle. He said these were different ones. Then he asked how much she wanted for the sideboard.\\n\\n‘It isn’t priced.’\\n\\n‘Everything else is.’\\n\\nMara took the packet from the counter and tried to open it along the seam. Their mother had used scissors, even for things with a strip to pull.\\n\\nHer brother said someone at work bought old furniture. Not for himself; he knew people. A name would help, he said, or anything that showed where it had been made.\\n\\n‘You could ask him to come in.’\\n\\n‘He’ll ask me what it is first.’\\n\\n‘A sideboard.’\\n\\nHe smiled without looking at her. When he left, the key was still on his finger. She tapped the window, but he lifted his hand in farewell and carried on towards the crossing.\\n\\nShe put the unopened biscuits in the cupboard with the others.\"\n}",
+  "output_sha256": "0a653ff04a9d919b9aa5559cffe86c4eee9dc31333ac0d681a3b89d587581c54",
+  "finish_reason": "stop",
+  "refusal": null,
+  "returned_model": "gpt-6-astra",
+  "usage": {
+    "prompt_tokens": 375,
+    "completion_tokens": 413,
+    "total_tokens": 788,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "audio_tokens": 0,
+      "accepted_prediction_tokens": 0,
+      "rejected_prediction_tokens": 0
+    }
+  },
+  "format": {
+    "json_object": true,
+    "rule_unchanged": true,
+    "passage_is_string": true,
+    "passage_sha256": "2e76b264d189c14a4c97f4c395f3e6bb694700a8403dd77481697ed1eb82c39a",
+    "passage_words": 263
+  },
+  "finished_at": "2026-09-23T00:18:44.484714+00:00",
+  "latency_seconds": 17.6762,
+  "usage_cost_upper_estimate_usd": 0.0244,
+  "stream_status": "active",
+  "budget": {
+    "usage_cost_upper_estimate_usd": 1.3756071,
+    "uncertain_cost_reserve_usd": 0.0,
+    "in_flight_reserve_usd": 0.090332,
+    "limit_usd": 5.0
+  }
+}

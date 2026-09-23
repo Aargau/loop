@@ -1,0 +1,50 @@
+{
+  "model": "gpt-6-sol",
+  "seed": "sunset",
+  "hop": 12,
+  "http_status": 200,
+  "response_body": "{\n  \"id\": \"chatcmpl-ER4upgdjuo43HF3hYwoj03KD5up9q\",\n  \"object\": \"chat.completion\",\n  \"created\": 1790122459,\n  \"model\": \"gpt-6-sol\",\n  \"choices\": [\n    {\n      \"index\": 0,\n      \"message\": {\n        \"role\": \"assistant\",\n        \"content\": \"{\\\"rule\\\":\\\"Return this JSON object with the rule field unchanged and, in the text field, an original fictional passage of about 250 words that comes immediately AFTER the current text in the same invented story.\\\",\\\"text\\\":\\\"The woman in the blue coat looked toward the house. “Through the kitchen.”\\\\n\\\\nThe boy shook his head. “There isn’t a door there.”\\\\n\\\\n“There was,” Mara said. She remembered now the promise they had made at the table: neither of them would open it, no matter whose voice they heard below.\\\\n\\\\nThe child in the well tilted her face toward the lantern. “You promised to come back for me, too.”\\\\n\\\\nMara stepped away from the rim. In the house, the green cup had been moved. It stood in the center of the kitchen table, with a dark ring of water spreading beneath it. The footprints ended at the cupboard under the sink.\\\\n\\\\nThe woman knelt and pulled its doors open. Behind the pipes was a square of wood, painted the same dull cream as the wall. A keyhole showed near its edge.\\\\n\\\\n“Who is she?” Mara asked.\\\\n\\\\nThe woman touched the white thread around the cup’s handle. “You brought her here when you were small. She said she’d fallen in. We believed her.”\\\\n\\\\nFrom behind the painted door came three slow knocks. Then the child’s voice, close enough to be in the room: “It’s cold down here.”\\\\n\\\\nThe boy reached for Mara’s hand. His fingers were wet.\\\\n\\\\nShe looked at his shoes. Mud clung to the soles, but the leather was dry. He followed her gaze and began to cry without making a sound.\\\\n\\\\nMara set the lantern on the floor and fitted the key into the lock. She did not turn it yet. “Tell me,” she said to the woman, “which one came out of the well?”\\\"}\",\n        \"refusal\": null,\n        \"annotations\": []\n      },\n      \"finish_reason\": \"stop\"\n    }\n  ],\n  \"usage\": {\n    \"prompt_tokens\": 381,\n    \"completion_tokens\": 440,\n    \"total_tokens\": 821,\n    \"prompt_tokens_details\": {\n      \"cached_tokens\": 0,\n      \"cache_write_tokens\": 0,\n      \"audio_tokens\": 0\n    },\n    \"completion_tokens_details\": {\n      \"reasoning_tokens\": 30,\n      \"audio_tokens\": 0,\n      \"accepted_prediction_tokens\": 0,\n      \"rejected_prediction_tokens\": 0\n    }\n  },\n  \"service_tier\": \"default\",\n  \"system_fingerprint\": null\n}\n",
+  "response_headers": {
+    "Date": "Wed, 23 Sep 2026 00:14:25 GMT",
+    "openai-processing-ms": "6279",
+    "x-request-id": "req_5d77802796b54606af4ce9b129dac659"
+  },
+  "output": "{\"rule\":\"Return this JSON object with the rule field unchanged and, in the text field, an original fictional passage of about 250 words that comes immediately AFTER the current text in the same invented story.\",\"text\":\"The woman in the blue coat looked toward the house. “Through the kitchen.”\\n\\nThe boy shook his head. “There isn’t a door there.”\\n\\n“There was,” Mara said. She remembered now the promise they had made at the table: neither of them would open it, no matter whose voice they heard below.\\n\\nThe child in the well tilted her face toward the lantern. “You promised to come back for me, too.”\\n\\nMara stepped away from the rim. In the house, the green cup had been moved. It stood in the center of the kitchen table, with a dark ring of water spreading beneath it. The footprints ended at the cupboard under the sink.\\n\\nThe woman knelt and pulled its doors open. Behind the pipes was a square of wood, painted the same dull cream as the wall. A keyhole showed near its edge.\\n\\n“Who is she?” Mara asked.\\n\\nThe woman touched the white thread around the cup’s handle. “You brought her here when you were small. She said she’d fallen in. We believed her.”\\n\\nFrom behind the painted door came three slow knocks. Then the child’s voice, close enough to be in the room: “It’s cold down here.”\\n\\nThe boy reached for Mara’s hand. His fingers were wet.\\n\\nShe looked at his shoes. Mud clung to the soles, but the leather was dry. He followed her gaze and began to cry without making a sound.\\n\\nMara set the lantern on the floor and fitted the key into the lock. She did not turn it yet. “Tell me,” she said to the woman, “which one came out of the well?”\"}",
+  "output_sha256": "a24dbd4c829ab5064ef9d1870b1569833228077032cddb5efa65a8e25195afec",
+  "finish_reason": "stop",
+  "refusal": null,
+  "returned_model": "gpt-6-sol",
+  "usage": {
+    "prompt_tokens": 381,
+    "completion_tokens": 440,
+    "total_tokens": 821,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 30,
+      "audio_tokens": 0,
+      "accepted_prediction_tokens": 0,
+      "rejected_prediction_tokens": 0
+    }
+  },
+  "format": {
+    "json_object": true,
+    "rule_unchanged": true,
+    "passage_is_string": true,
+    "passage_sha256": "b9d674b4dbf45721cc643f575132d3cf099b4fabddc4b2a791a3d33c9d23396d",
+    "passage_words": 268
+  },
+  "finished_at": "2026-09-23T00:14:20.550775+00:00",
+  "latency_seconds": 6.3791,
+  "usage_cost_upper_estimate_usd": 0.005162,
+  "stream_status": "active",
+  "budget": {
+    "usage_cost_upper_estimate_usd": 0.3034691,
+    "uncertain_cost_reserve_usd": 0.0,
+    "in_flight_reserve_usd": 0.3208514,
+    "limit_usd": 5.0
+  }
+}

@@ -1,0 +1,50 @@
+{
+  "model": "gpt-6-luna",
+  "seed": "sunset",
+  "hop": 18,
+  "http_status": 200,
+  "response_body": "{\n  \"id\": \"chatcmpl-ER4uotVmcgoNH0SjWs2SVDvREbOVf\",\n  \"object\": \"chat.completion\",\n  \"created\": 1790122458,\n  \"model\": \"gpt-6-luna\",\n  \"choices\": [\n    {\n      \"index\": 0,\n      \"message\": {\n        \"role\": \"assistant\",\n        \"content\": \"{\\\"rule\\\":\\\"Return this JSON object with the rule field unchanged and, in the text field, an original fictional passage of about 250 words that comes immediately BEFORE the current text in the same invented story.\\\",\\\"text\\\":\\\"The print shop closed on a Thursday, though the warning had been hanging over it for months. On Mara’s last day, the owner gave everyone a paper bag of pastries and said he was sorry. The presses stood silent behind him, their rollers streaked with old ink. Mara took home a box of type samples she’d saved and spent the weekend trying not to think of all the mornings she’d spent there.\\\\n\\\\nShe had been living in a narrow upstairs room near the shop, but the rent was due again in two weeks. Her sister offered the sofa, an offer Mara appreciated and declined. Instead, she searched the neighborhood listings until she found a small apartment across town, above a tailor’s shop. The kitchen window looked onto a brick wall, but the rent was just low enough. She packed what she owned into two suitcases and wrapped her chipped blue mug in a sweater.\\\\n\\\\nWork proved harder to find. At the library, she circled ads in the newspaper; online, she sent applications into silence. Then she noticed a hand-lettered sign in the window of a café on Bell Street: HELP WANTED. The manager, Mr. Bell’s daughter, asked about her availability and whether she could learn the register. Mara said yes to both. She left the interview with a trial shift arranged and the scent of roasted coffee clinging to her coat.\\\\n\\\\nOn moving day, rain tapped the windows of the hired van. By evening, the suitcases were unpacked, the mug sat on the counter, and a clean apron hung from the back of a chair. Mara set her alarm for the café’s opening shift and tried to picture what came next.\\\"}\",\n        \"refusal\": null,\n        \"annotations\": []\n      },\n      \"finish_reason\": \"stop\"\n    }\n  ],\n  \"usage\": {\n    \"prompt_tokens\": 384,\n    \"completion_tokens\": 621,\n    \"total_tokens\": 1005,\n    \"prompt_tokens_details\": {\n      \"cached_tokens\": 0,\n      \"cache_write_tokens\": 0,\n      \"audio_tokens\": 0\n    },\n    \"completion_tokens_details\": {\n      \"reasoning_tokens\": 229,\n      \"audio_tokens\": 0,\n      \"accepted_prediction_tokens\": 0,\n      \"rejected_prediction_tokens\": 0\n    }\n  },\n  \"service_tier\": \"default\",\n  \"system_fingerprint\": null\n}\n",
+  "response_headers": {
+    "Date": "Wed, 23 Sep 2026 00:14:23 GMT",
+    "openai-processing-ms": "5560",
+    "x-request-id": "req_3ba257e198d04d28b7c832463fe60562"
+  },
+  "output": "{\"rule\":\"Return this JSON object with the rule field unchanged and, in the text field, an original fictional passage of about 250 words that comes immediately BEFORE the current text in the same invented story.\",\"text\":\"The print shop closed on a Thursday, though the warning had been hanging over it for months. On Mara’s last day, the owner gave everyone a paper bag of pastries and said he was sorry. The presses stood silent behind him, their rollers streaked with old ink. Mara took home a box of type samples she’d saved and spent the weekend trying not to think of all the mornings she’d spent there.\\n\\nShe had been living in a narrow upstairs room near the shop, but the rent was due again in two weeks. Her sister offered the sofa, an offer Mara appreciated and declined. Instead, she searched the neighborhood listings until she found a small apartment across town, above a tailor’s shop. The kitchen window looked onto a brick wall, but the rent was just low enough. She packed what she owned into two suitcases and wrapped her chipped blue mug in a sweater.\\n\\nWork proved harder to find. At the library, she circled ads in the newspaper; online, she sent applications into silence. Then she noticed a hand-lettered sign in the window of a café on Bell Street: HELP WANTED. The manager, Mr. Bell’s daughter, asked about her availability and whether she could learn the register. Mara said yes to both. She left the interview with a trial shift arranged and the scent of roasted coffee clinging to her coat.\\n\\nOn moving day, rain tapped the windows of the hired van. By evening, the suitcases were unpacked, the mug sat on the counter, and a clean apron hung from the back of a chair. Mara set her alarm for the café’s opening shift and tried to picture what came next.\"}",
+  "output_sha256": "4dd78613291f679a15b571ae031810f46ad5f6486e6b8203dad216352bb65d7b",
+  "finish_reason": "stop",
+  "refusal": null,
+  "returned_model": "gpt-6-luna",
+  "usage": {
+    "prompt_tokens": 384,
+    "completion_tokens": 621,
+    "total_tokens": 1005,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 229,
+      "audio_tokens": 0,
+      "accepted_prediction_tokens": 0,
+      "rejected_prediction_tokens": 0
+    }
+  },
+  "format": {
+    "json_object": true,
+    "rule_unchanged": true,
+    "passage_is_string": true,
+    "passage_sha256": "fe3a0dc454ce87d048480aa9d30b5955f1ce998a11ea939929d473d8b5646cce",
+    "passage_words": 281
+  },
+  "finished_at": "2026-09-23T00:14:18.732036+00:00",
+  "latency_seconds": 5.712,
+  "usage_cost_upper_estimate_usd": 0.00034889999999999997,
+  "stream_status": "active",
+  "budget": {
+    "usage_cost_upper_estimate_usd": 0.3382987,
+    "uncertain_cost_reserve_usd": 0.0,
+    "in_flight_reserve_usd": 0.36391,
+    "limit_usd": 5.0
+  }
+}

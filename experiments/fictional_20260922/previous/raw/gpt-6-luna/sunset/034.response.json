@@ -1,0 +1,47 @@
+{
+  "model": "gpt-6-luna",
+  "seed": "sunset",
+  "hop": 34,
+  "http_status": 200,
+  "response_body": "{\n  \"id\": \"chatcmpl-ER4w3O3wRjGdyjXrSVOhTDB8Dqpqp\",\n  \"object\": \"chat.completion\",\n  \"created\": 1790122535,\n  \"model\": \"gpt-6-luna\",\n  \"choices\": [\n    {\n      \"index\": 0,\n      \"message\": {\n        \"role\": \"assistant\",\n        \"content\": \"{\\\"rule\\\":\\\"Return this JSON object with the rule field unchanged and, in the text field, an original fictional passage of about 250 words that comes immediately BEFORE the current text in the same invented story.\\\",\\\"text\\\":\\\"The storm arrived while Mara was still on the bus. By the time she reached her grandmother’s house, rain rattled on the porch roof and streamed down the windows in silver threads.\\n\\nGrandma had left the kitchen light on. Mara let herself in, shook water from her jacket, and found a towel waiting over the back of a chair.\\n\\n“You’re soaked through,” Grandma said, though she was smiling.\\n\\nThey ate soup at the little table by the stove. Between spoonfuls, Mara told her about the science quiz and the substitute teacher who had mistaken her for someone named Nina. Grandma listened, nodding at the right moments, while rain drummed steadily overhead.\\n\\nAfter supper, the power blinked out.\\n\\nGrandma found candles in a drawer. Their small flames made the familiar kitchen look like a room in an old photograph. Mara helped carry one into the front room, where they sat without turning on their phones. Outside, water rushed along the curb.\\n\\n“Does it ever flood the creek?” Mara asked.\\n\\n“Not like it used to,” Grandma said. She watched the candle flame lean as a draft slipped beneath the door. “Your grandfather could tell how high it was just by listening.”\\n\\nMara waited for her to say more, but Grandma only adjusted the wick. Somewhere beyond the houses, a car rolled through a puddle with a long, soft hiss.\\n\\nThe lights came back a few minutes later. Grandma laughed, and Mara went upstairs to unpack. Before bed, she heard the rain easing, pattering now instead of pounding. She imagined the creek filling in the dark, its hidden water running beneath the road.\\n\\nIn the morning, the storm had moved on. The house smelled of toast and tea.\\\"}\",\n        \"refusal\": null,\n        \"annotations\": []\n      },\n      \"finish_reason\": \"stop\"\n    }\n  ],\n  \"usage\": {\n    \"prompt_tokens\": 370,\n    \"completion_tokens\": 556,\n    \"total_tokens\": 926,\n    \"prompt_tokens_details\": {\n      \"cached_tokens\": 0,\n      \"cache_write_tokens\": 0,\n      \"audio_tokens\": 0\n    },\n    \"completion_tokens_details\": {\n      \"reasoning_tokens\": 156,\n      \"audio_tokens\": 0,\n      \"accepted_prediction_tokens\": 0,\n      \"rejected_prediction_tokens\": 0\n    }\n  },\n  \"service_tier\": \"default\",\n  \"system_fingerprint\": null\n}\n",
+  "response_headers": {
+    "Date": "Wed, 23 Sep 2026 00:15:41 GMT",
+    "openai-processing-ms": "5213",
+    "x-request-id": "req_c756835d30234b8eb0afdc0a9eee18a5"
+  },
+  "output": "{\"rule\":\"Return this JSON object with the rule field unchanged and, in the text field, an original fictional passage of about 250 words that comes immediately BEFORE the current text in the same invented story.\",\"text\":\"The storm arrived while Mara was still on the bus. By the time she reached her grandmother’s house, rain rattled on the porch roof and streamed down the windows in silver threads.\n\nGrandma had left the kitchen light on. Mara let herself in, shook water from her jacket, and found a towel waiting over the back of a chair.\n\n“You’re soaked through,” Grandma said, though she was smiling.\n\nThey ate soup at the little table by the stove. Between spoonfuls, Mara told her about the science quiz and the substitute teacher who had mistaken her for someone named Nina. Grandma listened, nodding at the right moments, while rain drummed steadily overhead.\n\nAfter supper, the power blinked out.\n\nGrandma found candles in a drawer. Their small flames made the familiar kitchen look like a room in an old photograph. Mara helped carry one into the front room, where they sat without turning on their phones. Outside, water rushed along the curb.\n\n“Does it ever flood the creek?” Mara asked.\n\n“Not like it used to,” Grandma said. She watched the candle flame lean as a draft slipped beneath the door. “Your grandfather could tell how high it was just by listening.”\n\nMara waited for her to say more, but Grandma only adjusted the wick. Somewhere beyond the houses, a car rolled through a puddle with a long, soft hiss.\n\nThe lights came back a few minutes later. Grandma laughed, and Mara went upstairs to unpack. Before bed, she heard the rain easing, pattering now instead of pounding. She imagined the creek filling in the dark, its hidden water running beneath the road.\n\nIn the morning, the storm had moved on. The house smelled of toast and tea.\"}",
+  "output_sha256": "5cff2e7b0ccd576d278b44f17f13065449468ca8d3d106b163441f3976a8b04a",
+  "finish_reason": "stop",
+  "refusal": null,
+  "returned_model": "gpt-6-luna",
+  "usage": {
+    "prompt_tokens": 370,
+    "completion_tokens": 556,
+    "total_tokens": 926,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 156,
+      "audio_tokens": 0,
+      "accepted_prediction_tokens": 0,
+      "rejected_prediction_tokens": 0
+    }
+  },
+  "format": {
+    "json_object": false,
+    "rule_unchanged": false
+  },
+  "finished_at": "2026-09-23T00:15:36.247967+00:00",
+  "latency_seconds": 5.3569,
+  "usage_cost_upper_estimate_usd": 0.000315,
+  "stream_status": "active",
+  "budget": {
+    "usage_cost_upper_estimate_usd": 0.6573372,
+    "uncertain_cost_reserve_usd": 0.0,
+    "in_flight_reserve_usd": 0.36371,
+    "limit_usd": 5.0
+  }
+}

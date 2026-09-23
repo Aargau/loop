@@ -1,0 +1,20 @@
+{
+  "started_at": "2026-09-23T00:20:48.257708+00:00",
+  "model": "gpt-6-astra",
+  "seed": "sunset",
+  "hop": 36,
+  "endpoint": "https://api.openai.com/v1/chat/completions",
+  "body": {
+    "model": "gpt-6-astra",
+    "messages": [
+      {
+        "role": "user",
+        "content": "{\n  \"rule\": \"Return this JSON object with the rule field unchanged and, in the text field, an original fictional passage of about 250 words that comes immediately BEFORE the current text in the same invented story.\",\n  \"text\": \"By Saturday Mara had filled four bags for the charity shop. She left them in the hall with the handles tied, except for the one containing her mother's shoes. These lay on top of a folded coat, their toes pointing towards the door.\\n\\nHer brother had said they ought to make a start. He had offered to come the following weekend, provided the car was back from the garage.\\n\\nIn the kitchen she found six rubber bands looped round a cupboard handle. She removed them and put them in a drawer, then wondered why she had done that. The drawer was full of takeaway menus from places that had closed.\\n\\nThere was a saucepan on the hob with its lid slightly crooked. Inside, a little water had dried around a spoon. Mara carried it to the sink.\\n\\nThrough the window she could see the neighbour taking shirts off the line. He raised a hand without looking directly at her. She raised hers, although by then he had turned away.\\n\\nShe had meant to look for the house papers. Instead she spent the afternoon sorting the cupboard beneath the sink, setting aside unopened bottles of bleach as if somebody had asked for an inventory.\\n\\nBefore leaving, she checked the back door twice. Her mother's keys were still hanging from the lock. Mara took them out and stood holding both sets, trying to decide which to use.\\n\\nShe stayed that night. Upstairs, the spare bed had been made with a towel laid across the pillow. She moved it to a chair and slept in her clothes.\"\n}"
+      }
+    ],
+    "max_completion_tokens": 4096,
+    "reasoning_effort": "low"
+  },
+  "state_sha256": "03d88b01e8b757f6d82d9d90f65f05146f8f41fb1559e27ba7e7193bfe1686e2",
+  "reserved_cost_usd": 0.22681
+}

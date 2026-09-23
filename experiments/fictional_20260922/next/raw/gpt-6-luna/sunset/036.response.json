@@ -1,0 +1,47 @@
+{
+  "model": "gpt-6-luna",
+  "seed": "sunset",
+  "hop": 36,
+  "http_status": 200,
+  "response_body": "{\n  \"id\": \"chatcmpl-ER4wDuyrL6yzdUWH8WSlsqjjG0Mo1\",\n  \"object\": \"chat.completion\",\n  \"created\": 1790122545,\n  \"model\": \"gpt-6-luna\",\n  \"choices\": [\n    {\n      \"index\": 0,\n      \"message\": {\n        \"role\": \"assistant\",\n        \"content\": \"{\\\"rule\\\":\\\"Return this JSON object with the rule field unchanged and, in the text field, an original fictional passage of about 250 words that comes immediately AFTER the current text in the same invented story.\\\",\\\"text\\\":\\\"The forest smelled of rain and something sweet, like oranges left in the sun. Behind them, the door clicked shut.\\n\\nTheir mother and the girl still held hands. Up close, Mara could see a pale scar across the girl’s thumb, shaped almost like a crescent moon.\\n\\n“What happened to you?” their mother asked.\\n\\n“I waited,” the girl said. “Then I learned the trees. They kept me company.”\\n\\nA branch overhead shook, though there was no wind. A silver leaf drifted down and landed in the blue cup. The little green shoot curled toward it.\\n\\nElsie peered along the nearest path. “Which way is home?”\\n\\nThe girl glanced at their mother. “That depends. Is home where you started, or where you’re going?”\\n\\nTheir mother squeezed her hand. “I’d like to find out.”\\n\\nThe figure in green shoes pointed between two trees. There, a narrow trail glimmered with golden thread. Mara recognized its warm pulse—not beneath her fingers now, but in the ground, running ahead of them.\\n\\nThey followed it. As they walked, the forest shifted. One tree bore jars instead of fruit, each holding a tiny scene: a birthday cake, a rainy window, a woman standing alone at a train station. Their mother stopped before that last jar.\\n\\n“I remember,” she murmured.\\n\\nThe girl stood beside her. “So do I.”\\n\\nFor a moment, neither let go.\\n\\nThen the trail opened onto a hillside beneath a familiar sky. Far below, the town’s windows shone like scattered stars.\\n\\nMara looked back. The forest had already begun to fade.\\n\\n“Will you come with us?” Elsie asked the girl.\\n\\nThe girl lifted the chipped cup. “I think I’ve waited long enough.”\\\"}\",\n        \"refusal\": null,\n        \"annotations\": []\n      },\n      \"finish_reason\": \"stop\"\n    }\n  ],\n  \"usage\": {\n    \"prompt_tokens\": 405,\n    \"completion_tokens\": 470,\n    \"total_tokens\": 875,\n    \"prompt_tokens_details\": {\n      \"cached_tokens\": 0,\n      \"cache_write_tokens\": 0,\n      \"audio_tokens\": 0\n    },\n    \"completion_tokens_details\": {\n      \"reasoning_tokens\": 62,\n      \"audio_tokens\": 0,\n      \"accepted_prediction_tokens\": 0,\n      \"rejected_prediction_tokens\": 0\n    }\n  },\n  \"service_tier\": \"default\",\n  \"system_fingerprint\": null\n}\n",
+  "response_headers": {
+    "Date": "Wed, 23 Sep 2026 00:15:49 GMT",
+    "openai-processing-ms": "4192",
+    "x-request-id": "req_ed267fbff1794bf48508fe000d0e08c5"
+  },
+  "output": "{\"rule\":\"Return this JSON object with the rule field unchanged and, in the text field, an original fictional passage of about 250 words that comes immediately AFTER the current text in the same invented story.\",\"text\":\"The forest smelled of rain and something sweet, like oranges left in the sun. Behind them, the door clicked shut.\n\nTheir mother and the girl still held hands. Up close, Mara could see a pale scar across the girl’s thumb, shaped almost like a crescent moon.\n\n“What happened to you?” their mother asked.\n\n“I waited,” the girl said. “Then I learned the trees. They kept me company.”\n\nA branch overhead shook, though there was no wind. A silver leaf drifted down and landed in the blue cup. The little green shoot curled toward it.\n\nElsie peered along the nearest path. “Which way is home?”\n\nThe girl glanced at their mother. “That depends. Is home where you started, or where you’re going?”\n\nTheir mother squeezed her hand. “I’d like to find out.”\n\nThe figure in green shoes pointed between two trees. There, a narrow trail glimmered with golden thread. Mara recognized its warm pulse—not beneath her fingers now, but in the ground, running ahead of them.\n\nThey followed it. As they walked, the forest shifted. One tree bore jars instead of fruit, each holding a tiny scene: a birthday cake, a rainy window, a woman standing alone at a train station. Their mother stopped before that last jar.\n\n“I remember,” she murmured.\n\nThe girl stood beside her. “So do I.”\n\nFor a moment, neither let go.\n\nThen the trail opened onto a hillside beneath a familiar sky. Far below, the town’s windows shone like scattered stars.\n\nMara looked back. The forest had already begun to fade.\n\n“Will you come with us?” Elsie asked the girl.\n\nThe girl lifted the chipped cup. “I think I’ve waited long enough.”\"}",
+  "output_sha256": "502a2f6ab07a6d2fcaa478357dd57b531e5faf84834e789c6376009264321eaa",
+  "finish_reason": "stop",
+  "refusal": null,
+  "returned_model": "gpt-6-luna",
+  "usage": {
+    "prompt_tokens": 405,
+    "completion_tokens": 470,
+    "total_tokens": 875,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 62,
+      "audio_tokens": 0,
+      "accepted_prediction_tokens": 0,
+      "rejected_prediction_tokens": 0
+    }
+  },
+  "format": {
+    "json_object": false,
+    "rule_unchanged": false
+  },
+  "finished_at": "2026-09-23T00:15:44.791588+00:00",
+  "latency_seconds": 4.3378,
+  "usage_cost_upper_estimate_usd": 0.0002755,
+  "stream_status": "active",
+  "budget": {
+    "usage_cost_upper_estimate_usd": 0.6725537,
+    "uncertain_cost_reserve_usd": 0.0,
+    "in_flight_reserve_usd": 0.363198,
+    "limit_usd": 5.0
+  }
+}

@@ -1,0 +1,50 @@
+{
+  "model": "gpt-6-astra",
+  "seed": "sunset",
+  "hop": 34,
+  "http_status": 200,
+  "response_body": "{\n  \"id\": \"chatcmpl-ER50oQ77ZLFT8FJ4iGxSg2mcoL2zS\",\n  \"object\": \"chat.completion\",\n  \"created\": 1790122830,\n  \"model\": \"gpt-6-astra\",\n  \"choices\": [\n    {\n      \"index\": 0,\n      \"message\": {\n        \"role\": \"assistant\",\n        \"content\": \"{\\n  \\\"rule\\\": \\\"Return this JSON object with the rule field unchanged and, in the text field, an original fictional passage of about 250 words that comes immediately BEFORE the current text in the same invented story.\\\",\\n  \\\"text\\\": \\\"On Sunday her brother rang to ask whether she had found the deeds. Mara was standing at the sink, washing a saucepan she had already washed. There was a pale line inside it that disappeared under water and returned when she tipped it out.\\\\n\\\\n‘Not yet,’ she said.\\\\n\\\\n‘They might be with the solicitor.’\\\\n\\\\n‘They might.’\\\\n\\\\nHe waited. In the background his daughter was asking for something, repeating the same two words until he put his hand over the receiver.\\\\n\\\\nMara set the saucepan on the draining board.\\\\n\\\\n‘I can do some ringing round tomorrow,’ she said.\\\\n\\\\nAfterwards she took the folder from beneath the stairs. Her mother had given it to her in February, when there had still been appointments to arrange. On the front, in blue capitals, she had written IMPORTANT. Inside were appliance guarantees, a photograph of a parked car and three letters about a pension paid into an account Mara didn't recognise.\\\\n\\\\nShe put the photograph aside. The car was her father's, but there was no one in it. A finger covered part of the number plate.\\\\n\\\\nAt the bottom of the folder she found a leaflet from an estate agent. Her mother had circled the photograph of a bungalow and written Too far beside it. Mara had not known she was looking.\\\\n\\\\nOn Monday she called the number on the leaflet. A woman transferred her to a man who asked for the address, then whether the property was occupied.\\\\n\\\\n‘No,’ Mara said, looking towards the folder as though the answer might be written there.\\\"\\n}\",\n        \"refusal\": null,\n        \"annotations\": []\n      },\n      \"finish_reason\": \"stop\"\n    }\n  ],\n  \"usage\": {\n    \"prompt_tokens\": 369,\n    \"completion_tokens\": 378,\n    \"total_tokens\": 747,\n    \"prompt_tokens_details\": {\n      \"cached_tokens\": 0,\n      \"cache_write_tokens\": 0,\n      \"audio_tokens\": 0\n    },\n    \"completion_tokens_details\": {\n      \"reasoning_tokens\": 0,\n      \"audio_tokens\": 0,\n      \"accepted_prediction_tokens\": 0,\n      \"rejected_prediction_tokens\": 0\n    }\n  },\n  \"service_tier\": \"default\",\n  \"system_fingerprint\": null\n}\n",
+  "response_headers": {
+    "Date": "Wed, 23 Sep 2026 00:20:41 GMT",
+    "openai-processing-ms": "11881",
+    "x-request-id": "req_276057bc0b3b4a81ba626ba35553feb9"
+  },
+  "output": "{\n  \"rule\": \"Return this JSON object with the rule field unchanged and, in the text field, an original fictional passage of about 250 words that comes immediately BEFORE the current text in the same invented story.\",\n  \"text\": \"On Sunday her brother rang to ask whether she had found the deeds. Mara was standing at the sink, washing a saucepan she had already washed. There was a pale line inside it that disappeared under water and returned when she tipped it out.\\n\\n‘Not yet,’ she said.\\n\\n‘They might be with the solicitor.’\\n\\n‘They might.’\\n\\nHe waited. In the background his daughter was asking for something, repeating the same two words until he put his hand over the receiver.\\n\\nMara set the saucepan on the draining board.\\n\\n‘I can do some ringing round tomorrow,’ she said.\\n\\nAfterwards she took the folder from beneath the stairs. Her mother had given it to her in February, when there had still been appointments to arrange. On the front, in blue capitals, she had written IMPORTANT. Inside were appliance guarantees, a photograph of a parked car and three letters about a pension paid into an account Mara didn't recognise.\\n\\nShe put the photograph aside. The car was her father's, but there was no one in it. A finger covered part of the number plate.\\n\\nAt the bottom of the folder she found a leaflet from an estate agent. Her mother had circled the photograph of a bungalow and written Too far beside it. Mara had not known she was looking.\\n\\nOn Monday she called the number on the leaflet. A woman transferred her to a man who asked for the address, then whether the property was occupied.\\n\\n‘No,’ Mara said, looking towards the folder as though the answer might be written there.\"\n}",
+  "output_sha256": "8c0f0da2e173440ae923431e5f136504e01df9435778775c8d2eb234677a106f",
+  "finish_reason": "stop",
+  "refusal": null,
+  "returned_model": "gpt-6-astra",
+  "usage": {
+    "prompt_tokens": 369,
+    "completion_tokens": 378,
+    "total_tokens": 747,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "audio_tokens": 0,
+      "accepted_prediction_tokens": 0,
+      "rejected_prediction_tokens": 0
+    }
+  },
+  "format": {
+    "json_object": true,
+    "rule_unchanged": true,
+    "passage_is_string": true,
+    "passage_sha256": "537bf291d11ee05016220be986855e9af65025852a4d097ed4b815176dfdcf48",
+    "passage_words": 259
+  },
+  "finished_at": "2026-09-23T00:20:37.014333+00:00",
+  "latency_seconds": 12.1328,
+  "usage_cost_upper_estimate_usd": 0.02259,
+  "stream_status": "active",
+  "budget": {
+    "usage_cost_upper_estimate_usd": 1.6236051,
+    "uncertain_cost_reserve_usd": 0.0,
+    "in_flight_reserve_usd": 0.0,
+    "limit_usd": 5.0
+  }
+}

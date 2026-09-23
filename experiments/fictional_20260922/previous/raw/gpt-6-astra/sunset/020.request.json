@@ -1,0 +1,20 @@
+{
+  "started_at": "2026-09-23T00:17:07.188056+00:00",
+  "model": "gpt-6-astra",
+  "seed": "sunset",
+  "hop": 20,
+  "endpoint": "https://api.openai.com/v1/chat/completions",
+  "body": {
+    "model": "gpt-6-astra",
+    "messages": [
+      {
+        "role": "user",
+        "content": "{\n  \"rule\": \"Return this JSON object with the rule field unchanged and, in the text field, an original fictional passage of about 250 words that comes immediately BEFORE the current text in the same invented story.\",\n  \"text\": \"On Tuesday morning the kitchen clock had stopped at twenty past four. Mara noticed while waiting for the kettle, and for a moment enjoyed being awake at an hour when nothing could reasonably be expected of her. Then a bus went past and she remembered the battery.\\n\\nThere was a new one in the drawer with the takeaway menus, unless she had used it for the radio. She opened the drawer, moved a screwdriver from one side to the other, and shut it again. The clock could wait until evening.\\n\\nDownstairs, her neighbour had left a small wooden chair beside the bins. One of its legs was wrapped in brown tape. Mara had seen him carrying it home in July, holding it above his head in a sudden shower. Now rain stood in the shallow hollow of the seat.\\n\\nShe walked to the shop by the longer route, avoiding the pavement outside the chemist’s where the paving slabs tipped underfoot. At the corner she bought milk. The woman serving asked whether she needed a bag, although Mara already had her shopping bag open on the counter.\\n\\n‘No, thank you.’\\n\\n‘They make us ask.’\\n\\nOutside the shop, Mara paused to find her keys. The umbrella slipped against her shoulder, sending water down the back of her collar. She held the milk between her knees while she tried the lock.\\n\\nOnce inside, she propped the umbrella beside the counter. The door resisted as she pulled it shut, and she looked down to see what was catching.\"\n}"
+      }
+    ],
+    "max_completion_tokens": 4096,
+    "reasoning_effort": "low"
+  },
+  "state_sha256": "f071e9bb07e2f4c60f41d46ed50b36faa991b02f4a7c545caa5e78fac621c9f0",
+  "reserved_cost_usd": 0.22648
+}

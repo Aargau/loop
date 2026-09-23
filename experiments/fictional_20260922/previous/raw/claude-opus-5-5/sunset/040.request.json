@@ -1,0 +1,22 @@
+{
+  "started_at": "2026-09-23T00:19:13.491668+00:00",
+  "model": "claude-opus-5-5",
+  "seed": "sunset",
+  "hop": 40,
+  "endpoint": "https://api.anthropic.com/v1/messages",
+  "body": {
+    "model": "claude-opus-5-5",
+    "messages": [
+      {
+        "role": "user",
+        "content": "```json\n{\"rule\": \"Return this JSON object with the rule field unchanged and, in the text field, an original fictional passage of about 250 words that comes immediately BEFORE the current text in the same invented story.\", \"text\": \"The shutters of the Hollis house were open.\\n\\nMargaret saw them from the end of Linden Street on a Tuesday in late October, with the leaves coming down in wet yellow drifts and her market basket heavy on her arm. For a long moment she stood quite still beside the Baptist church fence, uncertain whether she had truly seen it or only imagined it, the way one sometimes imagines a dead friend's face in a crowd.\\n\\nBut there was no mistake. The tall front windows, blind for so many years that the town had stopped noticing them, now stood uncovered to the gray afternoon. Someone had cut back the lilac that had swallowed the porch rail. A thin ribbon of smoke rose from the east chimney, and on the front step sat a man's valise, battered and brown, as though its owner had set it down only a minute before and gone inside to see whether the house remembered him.\\n\\nMargaret shifted her basket to the other arm. She was thirty-four years old, unmarried, and possessed of a reputation for good sense, and she told herself firmly that a lit chimney on Linden Street was no concern of hers.\\n\\nStill, she walked home the long way, past the post office and the parsonage, and by the time she reached her own gate she had met no one who knew anything at all. That, more than the smoke, unsettled her. It meant the news had not yet reached the one person in town who always heard it first.\"}\n```"
+      }
+    ],
+    "max_tokens": 4096,
+    "output_config": {
+      "effort": "low"
+    }
+  },
+  "state_sha256": "23a054e4e79afa33373c7d79e5ef664f6f506b13fa78ab0b07cf266cc71825eb",
+  "reserved_cost_usd": 0.09046
+}

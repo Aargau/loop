@@ -1,0 +1,50 @@
+{
+  "model": "gpt-6-astra",
+  "seed": "sunset",
+  "hop": 30,
+  "http_status": 200,
+  "response_body": "{\n  \"id\": \"chatcmpl-ER50ECUMQ6pSHupaeH4ycL7Ca4hCI\",\n  \"object\": \"chat.completion\",\n  \"created\": 1790122794,\n  \"model\": \"gpt-6-astra\",\n  \"choices\": [\n    {\n      \"index\": 0,\n      \"message\": {\n        \"role\": \"assistant\",\n        \"content\": \"{\\n  \\\"rule\\\": \\\"Return this JSON object with the rule field unchanged and, in the text field, an original fictional passage of about 250 words that comes immediately AFTER the current text in the same invented story.\\\",\\n  \\\"text\\\": \\\"The man on the stairs wore his father's coat. It had been too large for his father and was too small for him. His wrists showed beneath the cuffs.\\\\n\\\\n“Those won't cover it,” he said.\\\\n\\\\nThe boy put a penny on its edge. It fell against another with a small, ordinary sound.\\\\n\\\\n“How much?”\\\\n\\\\nThe woman closed her fingers around the stone.\\\\n\\\\n“Don't ask prices in this house.”\\\\n\\\\nThe man came down one step. There was mud on his socks, no shoes. He looked at the cupboard with an expression the boy remembered from mirrors: annoyance, quickly arranged to resemble concern.\\\\n\\\\n“She'll say anything to stay.”\\\\n\\\\nInside the cupboard, Anne moved her foot. The door opened another inch.\\\\n\\\\n“Get my slipper,” she said.\\\\n\\\\nHe reached through the gap. Her ankle was warm. That was worse than if it had been cold, and he nearly let go.\\\\n\\\\n“Just the slipper.”\\\\n\\\\nHe eased it off. Something hard lay beneath the flattened lining, pressing up through a split in the cloth.\\\\n\\\\nThe man descended another step.\\\\n\\\\n“I put that there for safekeeping.”\\\\n\\\\nThe boy worked a fingernail into the split and drew out a little brass key.\\\\n\\\\nBehind him, the woman set her stone on the floor. Very carefully, she rested one shoe upon it.\\\\n\\\\n“Now,” she said, “we can discuss which of you lives here.”\\\\n\\\\nThe man stopped smiling.\\\\n\\\\nThe boy hadn't noticed that he'd been smiling until he stopped.\\\\n\\\\n“What does it open?” he asked.\\\\n\\\\nAnne's bare toes curled against the threshold.\\\\n\\\\n“Nothing,” she said. “It locks the front door.”\\\\n\\\\nFrom the stairs, the man said, “You wouldn't leave me outside.”\\\"\\n}\",\n        \"refusal\": null,\n        \"annotations\": []\n      },\n      \"finish_reason\": \"stop\"\n    }\n  ],\n  \"usage\": {\n    \"prompt_tokens\": 421,\n    \"completion_tokens\": 444,\n    \"total_tokens\": 865,\n    \"prompt_tokens_details\": {\n      \"cached_tokens\": 0,\n      \"cache_write_tokens\": 0,\n      \"audio_tokens\": 0\n    },\n    \"completion_tokens_details\": {\n      \"reasoning_tokens\": 0,\n      \"audio_tokens\": 0,\n      \"accepted_prediction_tokens\": 0,\n      \"rejected_prediction_tokens\": 0\n    }\n  },\n  \"service_tier\": \"default\",\n  \"system_fingerprint\": null\n}\n",
+  "response_headers": {
+    "Date": "Wed, 23 Sep 2026 00:20:06 GMT",
+    "openai-processing-ms": "12105",
+    "x-request-id": "req_8e817f0d37ad4c0ead4a7df6a50e704a"
+  },
+  "output": "{\n  \"rule\": \"Return this JSON object with the rule field unchanged and, in the text field, an original fictional passage of about 250 words that comes immediately AFTER the current text in the same invented story.\",\n  \"text\": \"The man on the stairs wore his father's coat. It had been too large for his father and was too small for him. His wrists showed beneath the cuffs.\\n\\n“Those won't cover it,” he said.\\n\\nThe boy put a penny on its edge. It fell against another with a small, ordinary sound.\\n\\n“How much?”\\n\\nThe woman closed her fingers around the stone.\\n\\n“Don't ask prices in this house.”\\n\\nThe man came down one step. There was mud on his socks, no shoes. He looked at the cupboard with an expression the boy remembered from mirrors: annoyance, quickly arranged to resemble concern.\\n\\n“She'll say anything to stay.”\\n\\nInside the cupboard, Anne moved her foot. The door opened another inch.\\n\\n“Get my slipper,” she said.\\n\\nHe reached through the gap. Her ankle was warm. That was worse than if it had been cold, and he nearly let go.\\n\\n“Just the slipper.”\\n\\nHe eased it off. Something hard lay beneath the flattened lining, pressing up through a split in the cloth.\\n\\nThe man descended another step.\\n\\n“I put that there for safekeeping.”\\n\\nThe boy worked a fingernail into the split and drew out a little brass key.\\n\\nBehind him, the woman set her stone on the floor. Very carefully, she rested one shoe upon it.\\n\\n“Now,” she said, “we can discuss which of you lives here.”\\n\\nThe man stopped smiling.\\n\\nThe boy hadn't noticed that he'd been smiling until he stopped.\\n\\n“What does it open?” he asked.\\n\\nAnne's bare toes curled against the threshold.\\n\\n“Nothing,” she said. “It locks the front door.”\\n\\nFrom the stairs, the man said, “You wouldn't leave me outside.”\"\n}",
+  "output_sha256": "26478c4c4a1d801bf217afcc592e95af3fdd95c3cd634def23b5e43917f47776",
+  "finish_reason": "stop",
+  "refusal": null,
+  "returned_model": "gpt-6-astra",
+  "usage": {
+    "prompt_tokens": 421,
+    "completion_tokens": 444,
+    "total_tokens": 865,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "audio_tokens": 0,
+      "accepted_prediction_tokens": 0,
+      "rejected_prediction_tokens": 0
+    }
+  },
+  "format": {
+    "json_object": true,
+    "rule_unchanged": true,
+    "passage_is_string": true,
+    "passage_sha256": "ccbe09eda960261bc5e3e7a0f769ec3020b3e17e99b066120d21605f10005fed",
+    "passage_words": 270
+  },
+  "finished_at": "2026-09-23T00:20:01.662413+00:00",
+  "latency_seconds": 12.2176,
+  "usage_cost_upper_estimate_usd": 0.02641,
+  "stream_status": "active",
+  "budget": {
+    "usage_cost_upper_estimate_usd": 1.5624551,
+    "uncertain_cost_reserve_usd": 0.0,
+    "in_flight_reserve_usd": 0.0,
+    "limit_usd": 5.0
+  }
+}

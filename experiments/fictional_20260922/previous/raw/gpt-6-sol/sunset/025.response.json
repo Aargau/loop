@@ -1,0 +1,50 @@
+{
+  "model": "gpt-6-sol",
+  "seed": "sunset",
+  "hop": 25,
+  "http_status": 200,
+  "response_body": "{\n  \"id\": \"chatcmpl-ER4w6bEyEX62gUnR4oRWHNofLfzOO\",\n  \"object\": \"chat.completion\",\n  \"created\": 1790122538,\n  \"model\": \"gpt-6-sol\",\n  \"choices\": [\n    {\n      \"index\": 0,\n      \"message\": {\n        \"role\": \"assistant\",\n        \"content\": \"{\\n  \\\"rule\\\": \\\"Return this JSON object with the rule field unchanged and, in the text field, an original fictional passage of about 250 words that comes immediately BEFORE the current text in the same invented story.\\\",\\n  \\\"text\\\": \\\"By nine, the rain had settled into a steady patter against Mara’s kitchen window. She moved the basil plant away from the draft and wiped a ring of water from the sill. Beyond the glass, a woman in a yellow coat hurried past with a newspaper held over her head.\\\\n\\\\nMara’s mother had said there was no need to come early. The appointment was over, and the nurse had given her a sheet explaining what to do next. Still, when Mara had asked whether she wanted anything from the shops, her mother had paused long enough for Mara to hear the television in the background. Then she had said that the watering can would be useful. The pots by the back step had gone dry while she was away.\\\\n\\\\nMara looked up the bus route on her phone. The service was less frequent on Wednesdays than she remembered, and she copied two times onto a piece of paper before the screen went dark. She folded the paper in half and set it on the table beside her empty cup.\\\\n\\\\nShe had already packed a book, an umbrella, and the packet of ginger biscuits her mother liked. The biscuits had split their wrapper at one corner, so she tucked them into a clean envelope. She checked the bag once more, feeling that she had forgotten something, then looked at the receipt beside her keys. WATER PLANTS was written across it in thick blue pen.\\\\n\\\\nMara put down the bag and went to the sink.\\\"\\n}\",\n        \"refusal\": null,\n        \"annotations\": []\n      },\n      \"finish_reason\": \"stop\"\n    }\n  ],\n  \"usage\": {\n    \"prompt_tokens\": 361,\n    \"completion_tokens\": 413,\n    \"total_tokens\": 774,\n    \"prompt_tokens_details\": {\n      \"cached_tokens\": 0,\n      \"cache_write_tokens\": 0,\n      \"audio_tokens\": 0\n    },\n    \"completion_tokens_details\": {\n      \"reasoning_tokens\": 59,\n      \"audio_tokens\": 0,\n      \"accepted_prediction_tokens\": 0,\n      \"rejected_prediction_tokens\": 0\n    }\n  },\n  \"service_tier\": \"default\",\n  \"system_fingerprint\": null\n}\n",
+  "response_headers": {
+    "Date": "Wed, 23 Sep 2026 00:15:44 GMT",
+    "openai-processing-ms": "6885",
+    "x-request-id": "req_4adb1b160e5f4dd7892a237d115c5825"
+  },
+  "output": "{\n  \"rule\": \"Return this JSON object with the rule field unchanged and, in the text field, an original fictional passage of about 250 words that comes immediately BEFORE the current text in the same invented story.\",\n  \"text\": \"By nine, the rain had settled into a steady patter against Mara’s kitchen window. She moved the basil plant away from the draft and wiped a ring of water from the sill. Beyond the glass, a woman in a yellow coat hurried past with a newspaper held over her head.\\n\\nMara’s mother had said there was no need to come early. The appointment was over, and the nurse had given her a sheet explaining what to do next. Still, when Mara had asked whether she wanted anything from the shops, her mother had paused long enough for Mara to hear the television in the background. Then she had said that the watering can would be useful. The pots by the back step had gone dry while she was away.\\n\\nMara looked up the bus route on her phone. The service was less frequent on Wednesdays than she remembered, and she copied two times onto a piece of paper before the screen went dark. She folded the paper in half and set it on the table beside her empty cup.\\n\\nShe had already packed a book, an umbrella, and the packet of ginger biscuits her mother liked. The biscuits had split their wrapper at one corner, so she tucked them into a clean envelope. She checked the bag once more, feeling that she had forgotten something, then looked at the receipt beside her keys. WATER PLANTS was written across it in thick blue pen.\\n\\nMara put down the bag and went to the sink.\"\n}",
+  "output_sha256": "872e73802a3cc20e545ad474f79e4da2811f6bcdf27412cf44e6ebe649a54054",
+  "finish_reason": "stop",
+  "refusal": null,
+  "returned_model": "gpt-6-sol",
+  "usage": {
+    "prompt_tokens": 361,
+    "completion_tokens": 413,
+    "total_tokens": 774,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 59,
+      "audio_tokens": 0,
+      "accepted_prediction_tokens": 0,
+      "rejected_prediction_tokens": 0
+    }
+  },
+  "format": {
+    "json_object": true,
+    "rule_unchanged": true,
+    "passage_is_string": true,
+    "passage_sha256": "8e0c59ea27d352fcefd92f8badabfe49db9f76118c291f5bf285cc0adfb20f36",
+    "passage_words": 253
+  },
+  "finished_at": "2026-09-23T00:15:39.935774+00:00",
+  "latency_seconds": 6.9858,
+  "usage_cost_upper_estimate_usd": 0.004852,
+  "stream_status": "active",
+  "budget": {
+    "usage_cost_upper_estimate_usd": 0.6777212,
+    "uncertain_cost_reserve_usd": 0.0,
+    "in_flight_reserve_usd": 0.3208253,
+    "limit_usd": 5.0
+  }
+}

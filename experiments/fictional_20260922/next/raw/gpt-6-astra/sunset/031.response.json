@@ -1,0 +1,50 @@
+{
+  "model": "gpt-6-astra",
+  "seed": "sunset",
+  "hop": 31,
+  "http_status": 200,
+  "response_body": "{\n  \"id\": \"chatcmpl-ER50QsDnA7i49rBqySZ3v9ynF497C\",\n  \"object\": \"chat.completion\",\n  \"created\": 1790122806,\n  \"model\": \"gpt-6-astra\",\n  \"choices\": [\n    {\n      \"index\": 0,\n      \"message\": {\n        \"role\": \"assistant\",\n        \"content\": \"{\\n  \\\"rule\\\": \\\"Return this JSON object with the rule field unchanged and, in the text field, an original fictional passage of about 250 words that comes immediately AFTER the current text in the same invented story.\\\",\\n  \\\"text\\\": \\\"The woman pressed her shoe down. The stone made a dent in the floorboards, though it was no larger than an egg.\\\\n\\\\n“Outside isn't where you were left.”\\\\n\\\\nThe boy looked toward the front door. His school coat hung from its hook. Below it stood his boots, touching at the toes. He had arranged them that way that morning, before any of this, and felt a sudden affection for the person who had done it.\\\\n\\\\n“Give it here,” the man said.\\\\n\\\\nHe held out his hand. There was a pale groove around one finger where a ring ought to have been.\\\\n\\\\nThe woman saw the boy looking.\\\\n\\\\n“Your father lost his in the garden.”\\\\n\\\\n“I know.”\\\\n\\\\n“You helped him look.”\\\\n\\\\n“For three days.”\\\\n\\\\nThe man closed his hand.\\\\n\\\\nFrom the cupboard Anne said, “Ask him what you found instead.”\\\\n\\\\nThe boy remembered the spoon first, then the button with a scrap of blue cloth still attached. Neither seemed important enough to save him.\\\\n\\\\n“What did we find?”\\\\n\\\\n“A lot of worms,” the man said.\\\\n\\\\nIt was what his father would have said. He would have said it kindly, to make the wasted afternoons into something they could laugh about.\\\\n\\\\nThe boy took one step toward him.\\\\n\\\\nUnder the woman's shoe, the stone cracked.\\\\n\\\\nAnne caught his sleeve through the gap.\\\\n\\\\n“Not what he found,” she whispered. “What you found.”\\\\n\\\\nHe looked down at the key. Along its stem were three shallow notches.\\\\n\\\\nHe had made them with his father's saw, before putting it back in the earth.\\\"\\n}\",\n        \"refusal\": null,\n        \"annotations\": []\n      },\n      \"finish_reason\": \"stop\"\n    }\n  ],\n  \"usage\": {\n    \"prompt_tokens\": 447,\n    \"completion_tokens\": 411,\n    \"total_tokens\": 858,\n    \"prompt_tokens_details\": {\n      \"cached_tokens\": 0,\n      \"cache_write_tokens\": 0,\n      \"audio_tokens\": 0\n    },\n    \"completion_tokens_details\": {\n      \"reasoning_tokens\": 0,\n      \"audio_tokens\": 0,\n      \"accepted_prediction_tokens\": 0,\n      \"rejected_prediction_tokens\": 0\n    }\n  },\n  \"service_tier\": \"default\",\n  \"system_fingerprint\": null\n}\n",
+  "response_headers": {
+    "Date": "Wed, 23 Sep 2026 00:20:17 GMT",
+    "openai-processing-ms": "10947",
+    "x-request-id": "req_f9c37e8b05e84168a5598b0c9a835506"
+  },
+  "output": "{\n  \"rule\": \"Return this JSON object with the rule field unchanged and, in the text field, an original fictional passage of about 250 words that comes immediately AFTER the current text in the same invented story.\",\n  \"text\": \"The woman pressed her shoe down. The stone made a dent in the floorboards, though it was no larger than an egg.\\n\\n“Outside isn't where you were left.”\\n\\nThe boy looked toward the front door. His school coat hung from its hook. Below it stood his boots, touching at the toes. He had arranged them that way that morning, before any of this, and felt a sudden affection for the person who had done it.\\n\\n“Give it here,” the man said.\\n\\nHe held out his hand. There was a pale groove around one finger where a ring ought to have been.\\n\\nThe woman saw the boy looking.\\n\\n“Your father lost his in the garden.”\\n\\n“I know.”\\n\\n“You helped him look.”\\n\\n“For three days.”\\n\\nThe man closed his hand.\\n\\nFrom the cupboard Anne said, “Ask him what you found instead.”\\n\\nThe boy remembered the spoon first, then the button with a scrap of blue cloth still attached. Neither seemed important enough to save him.\\n\\n“What did we find?”\\n\\n“A lot of worms,” the man said.\\n\\nIt was what his father would have said. He would have said it kindly, to make the wasted afternoons into something they could laugh about.\\n\\nThe boy took one step toward him.\\n\\nUnder the woman's shoe, the stone cracked.\\n\\nAnne caught his sleeve through the gap.\\n\\n“Not what he found,” she whispered. “What you found.”\\n\\nHe looked down at the key. Along its stem were three shallow notches.\\n\\nHe had made them with his father's saw, before putting it back in the earth.\"\n}",
+  "output_sha256": "baa5ccbcfebf622d0e130cb80a6d05d35a4294a8936db99bf0ef802ce342cd66",
+  "finish_reason": "stop",
+  "refusal": null,
+  "returned_model": "gpt-6-astra",
+  "usage": {
+    "prompt_tokens": 447,
+    "completion_tokens": 411,
+    "total_tokens": 858,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "audio_tokens": 0,
+      "accepted_prediction_tokens": 0,
+      "rejected_prediction_tokens": 0
+    }
+  },
+  "format": {
+    "json_object": true,
+    "rule_unchanged": true,
+    "passage_is_string": true,
+    "passage_sha256": "9e633fb36faf9bead0426746e85a1502df17d47369028d26c5e2467965192d48",
+    "passage_words": 257
+  },
+  "finished_at": "2026-09-23T00:20:12.796669+00:00",
+  "latency_seconds": 11.1197,
+  "usage_cost_upper_estimate_usd": 0.02502,
+  "stream_status": "active",
+  "budget": {
+    "usage_cost_upper_estimate_usd": 1.5874751,
+    "uncertain_cost_reserve_usd": 0.0,
+    "in_flight_reserve_usd": 0.0,
+    "limit_usd": 5.0
+  }
+}

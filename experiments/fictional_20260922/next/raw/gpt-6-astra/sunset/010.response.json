@@ -1,0 +1,50 @@
+{
+  "model": "gpt-6-astra",
+  "seed": "sunset",
+  "hop": 10,
+  "http_status": 200,
+  "response_body": "{\n  \"id\": \"chatcmpl-ER4vgVayOBI34q45TfKtv9mIXNGYz\",\n  \"object\": \"chat.completion\",\n  \"created\": 1790122512,\n  \"model\": \"gpt-6-astra\",\n  \"choices\": [\n    {\n      \"index\": 0,\n      \"message\": {\n        \"role\": \"assistant\",\n        \"content\": \"{\\n  \\\"rule\\\": \\\"Return this JSON object with the rule field unchanged and, in the text field, an original fictional passage of about 250 words that comes immediately AFTER the current text in the same invented story.\\\",\\n  \\\"text\\\": \\\"The ferryman called something neither of them understood. Elias raised a hand without looking toward him.\\\\n\\\\n“Does he wait for you?” Mara asked.\\\\n\\\\n“He waits.”\\\\n\\\\nShe spread the stocking on the stone. Already the edge had begun to dry, turning pale against the wet wool.\\\\n\\\\n“I brought the watch.”\\\\n\\\\nElias looked at her coat.\\\\n\\\\n“It doesn't run.”\\\\n\\\\n“It never did unless you wound it.”\\\\n\\\\n“I wound it.”\\\\n\\\\n“Then don't wind it again.”\\\\n\\\\nShe took it from the inside pocket. The chain had tangled around a button, and he reached to help her, then rested his hand on his knee while she freed it herself.\\\\n\\\\nThere was earth in the engraving on the back. She had dropped it beside the grave and found it only because the chain caught the light.\\\\n\\\\n“I thought you might want it.”\\\\n\\\\nElias held out his palm. She set the watch there, keeping the chain a moment longer. Then she let that go too.\\\\n\\\\nHe pressed the catch. The lid opened on their mother's photograph, almost worn away where their father's thumb had rested.\\\\n\\\\n“I'd forgotten that was in there,” he said.\\\\n\\\\nMara leaned closer. She had not opened the lid.\\\\n\\\\nTheir mother stood beside a chair, one hand on its back, looking past whoever had asked her to keep still.\\\\n\\\\n“Was that taken at home?” Mara asked.\\\\n\\\\n“No. Before.”\\\\n\\\\nThe ferryman knocked his pole against the boat.\\\\n\\\\nElias closed the watch and offered it back.\\\\n\\\\n“Keep it until your shoes are dry.”\\\\n\\\\n“And then?”\\\\n\\\\nHe looked at the stockings on the stone.\\\\n\\\\n“Then we'll see.”\\\"\\n}\",\n        \"refusal\": null,\n        \"annotations\": []\n      },\n      \"finish_reason\": \"stop\"\n    }\n  ],\n  \"usage\": {\n    \"prompt_tokens\": 477,\n    \"completion_tokens\": 431,\n    \"total_tokens\": 908,\n    \"prompt_tokens_details\": {\n      \"cached_tokens\": 0,\n      \"cache_write_tokens\": 0,\n      \"audio_tokens\": 0\n    },\n    \"completion_tokens_details\": {\n      \"reasoning_tokens\": 0,\n      \"audio_tokens\": 0,\n      \"accepted_prediction_tokens\": 0,\n      \"rejected_prediction_tokens\": 0\n    }\n  },\n  \"service_tier\": \"default\",\n  \"system_fingerprint\": null\n}\n",
+  "response_headers": {
+    "Date": "Wed, 23 Sep 2026 00:15:27 GMT",
+    "openai-processing-ms": "14726",
+    "x-request-id": "req_7c7c1fcf200c4b2e8a521b2e1fb44059"
+  },
+  "output": "{\n  \"rule\": \"Return this JSON object with the rule field unchanged and, in the text field, an original fictional passage of about 250 words that comes immediately AFTER the current text in the same invented story.\",\n  \"text\": \"The ferryman called something neither of them understood. Elias raised a hand without looking toward him.\\n\\n“Does he wait for you?” Mara asked.\\n\\n“He waits.”\\n\\nShe spread the stocking on the stone. Already the edge had begun to dry, turning pale against the wet wool.\\n\\n“I brought the watch.”\\n\\nElias looked at her coat.\\n\\n“It doesn't run.”\\n\\n“It never did unless you wound it.”\\n\\n“I wound it.”\\n\\n“Then don't wind it again.”\\n\\nShe took it from the inside pocket. The chain had tangled around a button, and he reached to help her, then rested his hand on his knee while she freed it herself.\\n\\nThere was earth in the engraving on the back. She had dropped it beside the grave and found it only because the chain caught the light.\\n\\n“I thought you might want it.”\\n\\nElias held out his palm. She set the watch there, keeping the chain a moment longer. Then she let that go too.\\n\\nHe pressed the catch. The lid opened on their mother's photograph, almost worn away where their father's thumb had rested.\\n\\n“I'd forgotten that was in there,” he said.\\n\\nMara leaned closer. She had not opened the lid.\\n\\nTheir mother stood beside a chair, one hand on its back, looking past whoever had asked her to keep still.\\n\\n“Was that taken at home?” Mara asked.\\n\\n“No. Before.”\\n\\nThe ferryman knocked his pole against the boat.\\n\\nElias closed the watch and offered it back.\\n\\n“Keep it until your shoes are dry.”\\n\\n“And then?”\\n\\nHe looked at the stockings on the stone.\\n\\n“Then we'll see.”\"\n}",
+  "output_sha256": "97154f8ceeb2a7e7bb82b8a36fa9000cbfae2ff1815661fbb1eb25f0db38d9cd",
+  "finish_reason": "stop",
+  "refusal": null,
+  "returned_model": "gpt-6-astra",
+  "usage": {
+    "prompt_tokens": 477,
+    "completion_tokens": 431,
+    "total_tokens": 908,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "audio_tokens": 0,
+      "accepted_prediction_tokens": 0,
+      "rejected_prediction_tokens": 0
+    }
+  },
+  "format": {
+    "json_object": true,
+    "rule_unchanged": true,
+    "passage_is_string": true,
+    "passage_sha256": "be6c00fee01bbdec13afefafeb3e17647d1b0b29ac6a8d7922743d50d6f56f2a",
+    "passage_words": 260
+  },
+  "finished_at": "2026-09-23T00:15:22.350936+00:00",
+  "latency_seconds": 14.8481,
+  "usage_cost_upper_estimate_usd": 0.02632,
+  "stream_status": "active",
+  "budget": {
+    "usage_cost_upper_estimate_usd": 0.5825062,
+    "uncertain_cost_reserve_usd": 0.0,
+    "in_flight_reserve_usd": 0.1381569,
+    "limit_usd": 5.0
+  }
+}

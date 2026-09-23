@@ -1,0 +1,22 @@
+{
+  "started_at": "2026-09-23T00:17:06.988098+00:00",
+  "model": "claude-opus-5-5",
+  "seed": "sunset",
+  "hop": 27,
+  "endpoint": "https://api.anthropic.com/v1/messages",
+  "body": {
+    "model": "claude-opus-5-5",
+    "messages": [
+      {
+        "role": "user",
+        "content": "```json\n{\"rule\": \"Return this JSON object with the rule field unchanged and, in the text field, an original fictional passage of about 250 words that comes immediately BEFORE the current text in the same invented story.\", \"text\": \"The tree stood at the corner of the garden, eleven years older than Walter. His father had planted it the spring he married, a bare whip of a sapling he'd bought for a quarter from a peddler's wagon and carried home across his shoulder. His mother liked to say it was the first thing on the place that belonged to both of them, before the house was finished and before the barn was even framed.\\n\\nEvery May it blossomed so thick the bees could be heard from the porch, and every October there were more apples than the three of them could use. Walter had learned to climb in its branches. He had broken his wrist falling from it at seven and been back up in it before the cast came off. His father never allowed anyone to carve the bark, not even initials, not even once.\\n\\nThat last summer it bore heavier than Walter had ever seen. The limbs bent so low his father propped them with boards to keep them from cracking. And his father was different that summer too, though Walter could not have said exactly how. He was quieter at supper. Some evenings he walked out after dark and stood beneath the tree with one hand flat against the trunk, not moving, until Walter's mother called him in.\\n\\nWalter noticed, but he did not ask. It was not a house where such things were asked.\\n\\nBy late August the heat had gone heavy and still, and in the afternoons the clouds piled up black in the west.\"}\n```"
+      }
+    ],
+    "max_tokens": 4096,
+    "output_config": {
+      "effort": "low"
+    }
+  },
+  "state_sha256": "5a3e5be37621edefabbe7074bbb54177ad678c5d362d97ef94e12983b3f0931b",
+  "reserved_cost_usd": 0.090496
+}

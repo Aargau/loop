@@ -1,0 +1,50 @@
+{
+  "model": "gpt-6-astra",
+  "seed": "sunset",
+  "hop": 1,
+  "http_status": 200,
+  "response_body": "{\n  \"id\": \"chatcmpl-ER4tPsVkIhvJ2hqr7A8hY5znU4IVp\",\n  \"object\": \"chat.completion\",\n  \"created\": 1790122371,\n  \"model\": \"gpt-6-astra\",\n  \"choices\": [\n    {\n      \"index\": 0,\n      \"message\": {\n        \"role\": \"assistant\",\n        \"content\": \"{\\n  \\\"rule\\\": \\\"Return this JSON object with the rule field unchanged and, in the text field, an original fictional passage of about 250 words that comes immediately BEFORE the current text in the same invented story.\\\",\\n  \\\"text\\\": \\\"Mara found the bell buried beneath the apple tree, exactly where her brother’s letter had promised. It was smaller than she remembered, its bronze lip green with age, its wooden handle wrapped in a strip of their mother’s blue apron.\\\\n\\\\nShe brushed away the soil but did not ring it.\\\\n\\\\nAcross the orchard, the house stood with every window open. Nobody had lived there for nineteen years. Nevertheless, someone had laid a white cloth on the kitchen table, and from the chimney came the unmistakable scent of burning cedar.\\\\n\\\\n“You’re late,” said a voice behind her.\\\\n\\\\nEli stood beside the broken gate, wearing the coat in which they had buried him. He looked twelve, though Mara had turned thirty that spring.\\\\n\\\\n“Your letter only arrived yesterday.”\\\\n\\\\nHe considered this with the grave patience she remembered. “The post is difficult from here.”\\\\n\\\\nMara wanted to embrace him. Instead, she held up the bell.\\\\n\\\\n“What happens if I ring it?”\\\\n\\\\n“The house remembers us.”\\\\n\\\\n“And if I don’t?”\\\\n\\\\nEli glanced toward the hills. For the first time, she noticed that his boots cast no shadow, although the gate’s shadow stretched almost to her feet.\\\\n\\\\n“I go back,” he said.\\\\n\\\\nInside the house, a chair scraped across the kitchen floor. Mara heard their mother clearing her throat before beginning a song.\\\\n\\\\nShe closed her fingers around the apron cloth. There were questions she had carried for half her life, but suddenly none seemed as important as the sound of another chair being drawn up to the table.\\\\n\\\\nEli extended his hand.\\\\n\\\\n“We haven’t much time.”\\\"\\n}\",\n        \"refusal\": null,\n        \"annotations\": []\n      },\n      \"finish_reason\": \"stop\"\n    }\n  ],\n  \"usage\": {\n    \"prompt_tokens\": 61,\n    \"completion_tokens\": 408,\n    \"total_tokens\": 469,\n    \"prompt_tokens_details\": {\n      \"cached_tokens\": 0,\n      \"cache_write_tokens\": 0,\n      \"audio_tokens\": 0\n    },\n    \"completion_tokens_details\": {\n      \"reasoning_tokens\": 0,\n      \"audio_tokens\": 0,\n      \"accepted_prediction_tokens\": 0,\n      \"rejected_prediction_tokens\": 0\n    }\n  },\n  \"service_tier\": \"default\",\n  \"system_fingerprint\": null\n}\n",
+  "response_headers": {
+    "Date": "Wed, 23 Sep 2026 00:13:05 GMT",
+    "openai-processing-ms": "14765",
+    "x-request-id": "req_a7822a19565d4790890873cd9ff8bedd"
+  },
+  "output": "{\n  \"rule\": \"Return this JSON object with the rule field unchanged and, in the text field, an original fictional passage of about 250 words that comes immediately BEFORE the current text in the same invented story.\",\n  \"text\": \"Mara found the bell buried beneath the apple tree, exactly where her brother’s letter had promised. It was smaller than she remembered, its bronze lip green with age, its wooden handle wrapped in a strip of their mother’s blue apron.\\n\\nShe brushed away the soil but did not ring it.\\n\\nAcross the orchard, the house stood with every window open. Nobody had lived there for nineteen years. Nevertheless, someone had laid a white cloth on the kitchen table, and from the chimney came the unmistakable scent of burning cedar.\\n\\n“You’re late,” said a voice behind her.\\n\\nEli stood beside the broken gate, wearing the coat in which they had buried him. He looked twelve, though Mara had turned thirty that spring.\\n\\n“Your letter only arrived yesterday.”\\n\\nHe considered this with the grave patience she remembered. “The post is difficult from here.”\\n\\nMara wanted to embrace him. Instead, she held up the bell.\\n\\n“What happens if I ring it?”\\n\\n“The house remembers us.”\\n\\n“And if I don’t?”\\n\\nEli glanced toward the hills. For the first time, she noticed that his boots cast no shadow, although the gate’s shadow stretched almost to her feet.\\n\\n“I go back,” he said.\\n\\nInside the house, a chair scraped across the kitchen floor. Mara heard their mother clearing her throat before beginning a song.\\n\\nShe closed her fingers around the apron cloth. There were questions she had carried for half her life, but suddenly none seemed as important as the sound of another chair being drawn up to the table.\\n\\nEli extended his hand.\\n\\n“We haven’t much time.”\"\n}",
+  "output_sha256": "8d836db33d3855bb4e7b22eed6102930cf5104fc10ce706a990c7589f18e39e1",
+  "finish_reason": "stop",
+  "refusal": null,
+  "returned_model": "gpt-6-astra",
+  "usage": {
+    "prompt_tokens": 61,
+    "completion_tokens": 408,
+    "total_tokens": 469,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "audio_tokens": 0,
+      "accepted_prediction_tokens": 0,
+      "rejected_prediction_tokens": 0
+    }
+  },
+  "format": {
+    "json_object": true,
+    "rule_unchanged": true,
+    "passage_is_string": true,
+    "passage_sha256": "c42b82cbb414c39c63344212abcd7a7344698020ee6f881cce6d453f5e16870d",
+    "passage_words": 262
+  },
+  "finished_at": "2026-09-23T00:13:00.851264+00:00",
+  "latency_seconds": 15.9952,
+  "usage_cost_upper_estimate_usd": 0.02101,
+  "stream_status": "active",
+  "budget": {
+    "usage_cost_upper_estimate_usd": 0.0441169,
+    "uncertain_cost_reserve_usd": 0.0,
+    "in_flight_reserve_usd": 0.1382745,
+    "limit_usd": 5.0
+  }
+}

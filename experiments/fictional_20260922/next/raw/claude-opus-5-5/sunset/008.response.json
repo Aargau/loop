@@ -1,0 +1,45 @@
+{
+  "model": "claude-opus-5-5",
+  "seed": "sunset",
+  "hop": 8,
+  "http_status": 200,
+  "response_body": "{\"model\":\"claude-opus-5-5\",\"id\":\"msg_011CfKQVQ8SRrkWtaR7X3KBQ\",\"type\":\"message\",\"role\":\"assistant\",\"content\":[{\"type\":\"text\",\"text\":\"```json\\n{\\\"rule\\\": \\\"Return this JSON object with the rule field unchanged and, in the text field, an original fictional passage of about 250 words that comes immediately AFTER the current text in the same invented story.\\\", \\\"text\\\": \\\"Mara grabbed the ladder and climbed. The rungs twisted under her feet, and twice she nearly slipped, but Tobias caught her wrist at the top and hauled her into the loft. He looked thinner than she remembered, his face gray beneath the dirt, his eyes too bright. \\\\\\\"Where?\\\\\\\" she asked. He pointed toward the back wall, where the old hay door had been nailed shut since their father's time. The nails were gone now, pried loose and scattered across the boards like teeth. \\\\\\\"I've been working at it for three nights,\\\\\\\" he said. \\\\\\\"I only needed one more.\\\\\\\" Below them the barn door shuddered. Once. Twice. The horses screamed and stamped in their stalls. Green light seeped through the cracks and crawled along the floor, curling around the posts like smoke. \\\\\\\"He can't come in,\\\\\\\" Tobias said, pulling up the ladder. \\\\\\\"Not unless someone opens it for him.\\\\\\\" \\\\\\\"Then why is he knocking?\\\\\\\" Tobias didn't answer. He set his shoulder against the hay door and pushed. It gave with a shriek of old hinges, and cold night air rushed in, sharp with frost. Beyond lay the long slope of the pasture, silver under the moon, and past that the black line of the woods. It was a twelve-foot drop to the frozen ground. \\\\\\\"Together,\\\\\\\" Mara said, taking his hand. Behind them the knocking stopped. In the silence that followed, a small, familiar voice drifted up from below, their mother's voice, soft and pleading: \\\\\\\"Children? Let me in. It's cold out here.\\\\\\\"\\\"}\\n```\"}],\"container\":null,\"stop_reason\":\"end_turn\",\"stop_sequence\":null,\"stop_details\":null,\"usage\":{\"input_tokens\":592,\"cache_creation_input_tokens\":0,\"cache_read_input_tokens\":0,\"cache_creation\":{\"ephemeral_5m_input_tokens\":0,\"ephemeral_1h_input_tokens\":0},\"output_tokens\":582,\"output_tokens_details\":{\"thinking_tokens\":0},\"service_tier\":\"standard\",\"inference_geo\":\"global\"}}",
+  "response_headers": {
+    "Date": "Wed, 23 Sep 2026 00:14:18 GMT",
+    "request-id": "req_011CfKQVPffRpAng5Dp1ZvZi"
+  },
+  "output": "```json\n{\"rule\": \"Return this JSON object with the rule field unchanged and, in the text field, an original fictional passage of about 250 words that comes immediately AFTER the current text in the same invented story.\", \"text\": \"Mara grabbed the ladder and climbed. The rungs twisted under her feet, and twice she nearly slipped, but Tobias caught her wrist at the top and hauled her into the loft. He looked thinner than she remembered, his face gray beneath the dirt, his eyes too bright. \\\"Where?\\\" she asked. He pointed toward the back wall, where the old hay door had been nailed shut since their father's time. The nails were gone now, pried loose and scattered across the boards like teeth. \\\"I've been working at it for three nights,\\\" he said. \\\"I only needed one more.\\\" Below them the barn door shuddered. Once. Twice. The horses screamed and stamped in their stalls. Green light seeped through the cracks and crawled along the floor, curling around the posts like smoke. \\\"He can't come in,\\\" Tobias said, pulling up the ladder. \\\"Not unless someone opens it for him.\\\" \\\"Then why is he knocking?\\\" Tobias didn't answer. He set his shoulder against the hay door and pushed. It gave with a shriek of old hinges, and cold night air rushed in, sharp with frost. Beyond lay the long slope of the pasture, silver under the moon, and past that the black line of the woods. It was a twelve-foot drop to the frozen ground. \\\"Together,\\\" Mara said, taking his hand. Behind them the knocking stopped. In the silence that followed, a small, familiar voice drifted up from below, their mother's voice, soft and pleading: \\\"Children? Let me in. It's cold out here.\\\"\"}\n```",
+  "output_sha256": "1ed70191b74b6789b8f819f0aa8a5d6a3b6a706376152594fbee9020e881c350",
+  "finish_reason": "end_turn",
+  "refusal": null,
+  "returned_model": "claude-opus-5-5",
+  "usage": {
+    "input_tokens": 592,
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 0,
+    "cache_creation": {
+      "ephemeral_5m_input_tokens": 0,
+      "ephemeral_1h_input_tokens": 0
+    },
+    "output_tokens": 582,
+    "output_tokens_details": {
+      "thinking_tokens": 0
+    },
+    "service_tier": "standard",
+    "inference_geo": "global"
+  },
+  "format": {
+    "json_object": false,
+    "rule_unchanged": false
+  },
+  "finished_at": "2026-09-23T00:14:13.227738+00:00",
+  "latency_seconds": 9.1125,
+  "usage_cost_upper_estimate_usd": 0.014008,
+  "stream_status": "active",
+  "budget": {
+    "usage_cost_upper_estimate_usd": 0.2929317,
+    "uncertain_cost_reserve_usd": 0.0,
+    "in_flight_reserve_usd": 0.2753927,
+    "limit_usd": 5.0
+  }
+}
