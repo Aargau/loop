@@ -1,0 +1,50 @@
+{
+  "model": "gpt-6-astra",
+  "seed": "sunset",
+  "hop": 33,
+  "http_status": 200,
+  "response_body": "{\n  \"id\": \"chatcmpl-ER50ZuaaKVi02msEJl3M109GZtSgj\",\n  \"object\": \"chat.completion\",\n  \"created\": 1790122815,\n  \"model\": \"gpt-6-astra\",\n  \"choices\": [\n    {\n      \"index\": 0,\n      \"message\": {\n        \"role\": \"assistant\",\n        \"content\": \"{\\n  \\\"rule\\\": \\\"Return this JSON object with the rule field unchanged and, in the text field, an original fictional passage of about 250 words that comes immediately BEFORE the current text in the same invented story.\\\",\\n  \\\"text\\\": \\\"The estate agent had offered to meet them at the house, but Mara said they weren't ready. He told her there was no hurry, then asked whether Thursday might suit.\\\\n\\\\nShe wrote Thursday on the envelope beside the telephone. It was addressed to her mother and contained an offer to insure the boiler for another year.\\\\n\\\\nThat had been Monday. Now, on Wednesday morning, she stood in her own hallway looking for a bag large enough to hold the bed linen. The good shopping bags were in her brother's car after the funeral. She remembered putting them there, between a wreath box and his daughter's school shoes.\\\\n\\\\nShe took her handbag instead.\\\\n\\\\nOutside, someone had left a chest of drawers on the pavement with a notice saying FREE. One drawer was open an inch. Overnight rain had collected along its upper edge, and Mara tipped it out as she passed, then wished she hadn't touched it.\\\\n\\\\nThe bus was nearly empty. She sat downstairs, although she usually went up, and kept her mother's keys in her hand. There were four keys on the ring. She knew the front and back doors; the small brass one might have belonged to the shed. The fourth had a red plastic cap, split down one side.\\\\n\\\\nAt the stop before her mother's, she got off to visit the corner shop. The man behind the counter asked how she was.\\\\n\\\\n‘Fine, thanks.’\\\\n\\\\nShe walked past the newspapers to the chiller. Milk was the only thing she could remember coming here to buy.\\\"\\n}\",\n        \"refusal\": null,\n        \"annotations\": []\n      },\n      \"finish_reason\": \"stop\"\n    }\n  ],\n  \"usage\": {\n    \"prompt_tokens\": 379,\n    \"completion_tokens\": 366,\n    \"total_tokens\": 745,\n    \"prompt_tokens_details\": {\n      \"cached_tokens\": 0,\n      \"cache_write_tokens\": 0,\n      \"audio_tokens\": 0\n    },\n    \"completion_tokens_details\": {\n      \"reasoning_tokens\": 0,\n      \"audio_tokens\": 0,\n      \"accepted_prediction_tokens\": 0,\n      \"rejected_prediction_tokens\": 0\n    }\n  },\n  \"service_tier\": \"default\",\n  \"system_fingerprint\": null\n}\n",
+  "response_headers": {
+    "Date": "Wed, 23 Sep 2026 00:20:29 GMT",
+    "openai-processing-ms": "14285",
+    "x-request-id": "req_1917fec7e0bb4ea7ab6cb1cd6263cb10"
+  },
+  "output": "{\n  \"rule\": \"Return this JSON object with the rule field unchanged and, in the text field, an original fictional passage of about 250 words that comes immediately BEFORE the current text in the same invented story.\",\n  \"text\": \"The estate agent had offered to meet them at the house, but Mara said they weren't ready. He told her there was no hurry, then asked whether Thursday might suit.\\n\\nShe wrote Thursday on the envelope beside the telephone. It was addressed to her mother and contained an offer to insure the boiler for another year.\\n\\nThat had been Monday. Now, on Wednesday morning, she stood in her own hallway looking for a bag large enough to hold the bed linen. The good shopping bags were in her brother's car after the funeral. She remembered putting them there, between a wreath box and his daughter's school shoes.\\n\\nShe took her handbag instead.\\n\\nOutside, someone had left a chest of drawers on the pavement with a notice saying FREE. One drawer was open an inch. Overnight rain had collected along its upper edge, and Mara tipped it out as she passed, then wished she hadn't touched it.\\n\\nThe bus was nearly empty. She sat downstairs, although she usually went up, and kept her mother's keys in her hand. There were four keys on the ring. She knew the front and back doors; the small brass one might have belonged to the shed. The fourth had a red plastic cap, split down one side.\\n\\nAt the stop before her mother's, she got off to visit the corner shop. The man behind the counter asked how she was.\\n\\n‘Fine, thanks.’\\n\\nShe walked past the newspapers to the chiller. Milk was the only thing she could remember coming here to buy.\"\n}",
+  "output_sha256": "2c7dd640270d811bcbf3d8841cbdd7ab35a229ba85a0bc66bbc5d713ac4b9ee3",
+  "finish_reason": "stop",
+  "refusal": null,
+  "returned_model": "gpt-6-astra",
+  "usage": {
+    "prompt_tokens": 379,
+    "completion_tokens": 366,
+    "total_tokens": 745,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "audio_tokens": 0,
+      "accepted_prediction_tokens": 0,
+      "rejected_prediction_tokens": 0
+    }
+  },
+  "format": {
+    "json_object": true,
+    "rule_unchanged": true,
+    "passage_is_string": true,
+    "passage_sha256": "9af463b4e32acb5297edee0fd9881ea92cd6368a8e1facb80c85aa38b1bb61af",
+    "passage_words": 257
+  },
+  "finished_at": "2026-09-23T00:20:24.870555+00:00",
+  "latency_seconds": 14.3964,
+  "usage_cost_upper_estimate_usd": 0.02209,
+  "stream_status": "active",
+  "budget": {
+    "usage_cost_upper_estimate_usd": 1.6010151,
+    "uncertain_cost_reserve_usd": 0.0,
+    "in_flight_reserve_usd": 0.0,
+    "limit_usd": 5.0
+  }
+}

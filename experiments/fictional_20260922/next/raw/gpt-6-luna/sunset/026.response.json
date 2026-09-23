@@ -1,0 +1,47 @@
+{
+  "model": "gpt-6-luna",
+  "seed": "sunset",
+  "hop": 26,
+  "http_status": 200,
+  "response_body": "{\n  \"id\": \"chatcmpl-ER4vPRCm75Em0VePfiBGiqEk3jeXV\",\n  \"object\": \"chat.completion\",\n  \"created\": 1790122495,\n  \"model\": \"gpt-6-luna\",\n  \"choices\": [\n    {\n      \"index\": 0,\n      \"message\": {\n        \"role\": \"assistant\",\n        \"content\": \"{\\\"rule\\\":\\\"Return this JSON object with the rule field unchanged and, in the text field, an original fictional passage of about 250 words that comes immediately AFTER the current text in the same invented story.\\\",\\\"text\\\":\\\"The note lingered after the stone went quiet.\\n\\nTheir mother stood very still, one hand pressed to her chest. “I remember,” she said. “Not everything. But enough.”\\n\\nThe room began to change. The black walls softened into wallpaper patterned with tiny blue birds, and a narrow bed appeared beneath the window. Mara recognized it from the house they’d lived in before the night Elsie vanished. On the pillow lay a folded paper boat.\\n\\nElsie picked it up. “We made these when it rained.”\\n\\n“You said they could sail anywhere,” Mara replied.\\n\\n“They could.” Elsie opened the boat carefully. Inside, in a child’s wavering handwriting, were the words: FIND ME WHEN YOU’RE READY.\\n\\nTheir mother let out a shaky breath. “I wrote that. I thought you’d find it.”\\n\\n“But I did,” Mara said. “Just late.”\\n\\n“No,” said Elsie. “You found it when you could.”\\n\\nThe stars drifted upward, slipping through the ceiling like sparks rising into a night sky. As they vanished, the room brightened with ordinary morning light. The stone in Mara’s pocket warmed once, then cooled.\\n\\nTheir mother reached for both girls. This time, neither hesitated. They held one another in the small room, with its familiar birds and crooked window, while the house settled around them.\\n\\nWhen they finally stepped into the hallway, the red door was gone. In its place hung a family photograph: three faces turned toward the camera, all laughing, though Mara couldn’t remember the moment it had been taken.\\n\\nElsie leaned close to study it. “We look happy.”\\n\\n“We are,” their mother said.\\n\\nOutside, rain began to tap against the glass. Mara glanced at Elsie.\\n\\n“Come on,” her sister said. “Let’s make boats.”\\\"}\",\n        \"refusal\": null,\n        \"annotations\": []\n      },\n      \"finish_reason\": \"stop\"\n    }\n  ],\n  \"usage\": {\n    \"prompt_tokens\": 409,\n    \"completion_tokens\": 479,\n    \"total_tokens\": 888,\n    \"prompt_tokens_details\": {\n      \"cached_tokens\": 0,\n      \"cache_write_tokens\": 0,\n      \"audio_tokens\": 0\n    },\n    \"completion_tokens_details\": {\n      \"reasoning_tokens\": 59,\n      \"audio_tokens\": 0,\n      \"accepted_prediction_tokens\": 0,\n      \"rejected_prediction_tokens\": 0\n    }\n  },\n  \"service_tier\": \"default\",\n  \"system_fingerprint\": null\n}\n",
+  "response_headers": {
+    "Date": "Wed, 23 Sep 2026 00:14:59 GMT",
+    "openai-processing-ms": "4308",
+    "x-request-id": "req_f092079f984c45d18ba44221903273d0"
+  },
+  "output": "{\"rule\":\"Return this JSON object with the rule field unchanged and, in the text field, an original fictional passage of about 250 words that comes immediately AFTER the current text in the same invented story.\",\"text\":\"The note lingered after the stone went quiet.\n\nTheir mother stood very still, one hand pressed to her chest. “I remember,” she said. “Not everything. But enough.”\n\nThe room began to change. The black walls softened into wallpaper patterned with tiny blue birds, and a narrow bed appeared beneath the window. Mara recognized it from the house they’d lived in before the night Elsie vanished. On the pillow lay a folded paper boat.\n\nElsie picked it up. “We made these when it rained.”\n\n“You said they could sail anywhere,” Mara replied.\n\n“They could.” Elsie opened the boat carefully. Inside, in a child’s wavering handwriting, were the words: FIND ME WHEN YOU’RE READY.\n\nTheir mother let out a shaky breath. “I wrote that. I thought you’d find it.”\n\n“But I did,” Mara said. “Just late.”\n\n“No,” said Elsie. “You found it when you could.”\n\nThe stars drifted upward, slipping through the ceiling like sparks rising into a night sky. As they vanished, the room brightened with ordinary morning light. The stone in Mara’s pocket warmed once, then cooled.\n\nTheir mother reached for both girls. This time, neither hesitated. They held one another in the small room, with its familiar birds and crooked window, while the house settled around them.\n\nWhen they finally stepped into the hallway, the red door was gone. In its place hung a family photograph: three faces turned toward the camera, all laughing, though Mara couldn’t remember the moment it had been taken.\n\nElsie leaned close to study it. “We look happy.”\n\n“We are,” their mother said.\n\nOutside, rain began to tap against the glass. Mara glanced at Elsie.\n\n“Come on,” her sister said. “Let’s make boats.”\"}",
+  "output_sha256": "4d4dcd64113ec1b2388acb3ab60e3f1aee321ffb8263a34f86c1e60e239dfb54",
+  "finish_reason": "stop",
+  "refusal": null,
+  "returned_model": "gpt-6-luna",
+  "usage": {
+    "prompt_tokens": 409,
+    "completion_tokens": 479,
+    "total_tokens": 888,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 59,
+      "audio_tokens": 0,
+      "accepted_prediction_tokens": 0,
+      "rejected_prediction_tokens": 0
+    }
+  },
+  "format": {
+    "json_object": false,
+    "rule_unchanged": false
+  },
+  "finished_at": "2026-09-23T00:14:54.472679+00:00",
+  "latency_seconds": 4.4202,
+  "usage_cost_upper_estimate_usd": 0.0002804,
+  "stream_status": "active",
+  "budget": {
+    "usage_cost_upper_estimate_usd": 0.4633156,
+    "uncertain_cost_reserve_usd": 0.0,
+    "in_flight_reserve_usd": 0.365638,
+    "limit_usd": 5.0
+  }
+}

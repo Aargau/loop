@@ -1,0 +1,50 @@
+{
+  "model": "gpt-6-sol",
+  "seed": "sunset",
+  "hop": 14,
+  "http_status": 200,
+  "response_body": "{\n  \"id\": \"chatcmpl-ER4usq8qvAqVSX0W8jrbbmiGtHEuJ\",\n  \"object\": \"chat.completion\",\n  \"created\": 1790122462,\n  \"model\": \"gpt-6-sol\",\n  \"choices\": [\n    {\n      \"index\": 0,\n      \"message\": {\n        \"role\": \"assistant\",\n        \"content\": \"{\\n  \\\"rule\\\": \\\"Return this JSON object with the rule field unchanged and, in the text field, an original fictional passage of about 250 words that comes immediately BEFORE the current text in the same invented story.\\\",\\n  \\\"text\\\": \\\"On the morning of the funeral, Mara found Bristle asleep against her mother’s bedroom door. He woke when she stepped over him but did not get up. Inside, the curtains were still drawn. Mara had come for a pair of earrings her mother used to lend her, small silver leaves kept in a blue dish beside the bed. She put them on without looking in the mirror.\\\\n\\\\nHer aunt arrived with a box of tissues and a list written on the back of an envelope. She had arranged to borrow chairs from the village hall; someone would bring them over while they were at the church. Mara cleared space in the sitting room, moving a stack of library books from the floor to her mother’s desk. One still had a paper bookmark halfway through it.\\\\n\\\\nOutside, the garden wall was damp from overnight rain. Mara checked that the gate would latch, then went back for Bristle’s lead. He followed her as far as the car, but when she opened the rear door, he sat down. Her aunt said he would be all right at home. Mara left him by the gate, watching the car pull away.\\\\n\\\\nAt the church, people stood aside to let her pass. Mrs Vale touched her arm and asked if she had eaten anything. Mara could not remember, so she said yes. During the service, she kept her hands in her lap and felt the edges of the silver leaves against her neck whenever she turned her head.\\\\n\\\\nWhen they came out, her aunt took the keys and offered to drive back first. Mara stayed a moment longer among the wet gravestones, then followed.\\\"\\n}\",\n        \"refusal\": null,\n        \"annotations\": []\n      },\n      \"finish_reason\": \"stop\"\n    }\n  ],\n  \"usage\": {\n    \"prompt_tokens\": 372,\n    \"completion_tokens\": 411,\n    \"total_tokens\": 783,\n    \"prompt_tokens_details\": {\n      \"cached_tokens\": 0,\n      \"cache_write_tokens\": 0,\n      \"audio_tokens\": 0\n    },\n    \"completion_tokens_details\": {\n      \"reasoning_tokens\": 25,\n      \"audio_tokens\": 0,\n      \"accepted_prediction_tokens\": 0,\n      \"rejected_prediction_tokens\": 0\n    }\n  },\n  \"service_tier\": \"default\",\n  \"system_fingerprint\": null\n}\n",
+  "response_headers": {
+    "Date": "Wed, 23 Sep 2026 00:14:29 GMT",
+    "openai-processing-ms": "6814",
+    "x-request-id": "req_95abe445dc824cffb459f45db4bcec14"
+  },
+  "output": "{\n  \"rule\": \"Return this JSON object with the rule field unchanged and, in the text field, an original fictional passage of about 250 words that comes immediately BEFORE the current text in the same invented story.\",\n  \"text\": \"On the morning of the funeral, Mara found Bristle asleep against her mother’s bedroom door. He woke when she stepped over him but did not get up. Inside, the curtains were still drawn. Mara had come for a pair of earrings her mother used to lend her, small silver leaves kept in a blue dish beside the bed. She put them on without looking in the mirror.\\n\\nHer aunt arrived with a box of tissues and a list written on the back of an envelope. She had arranged to borrow chairs from the village hall; someone would bring them over while they were at the church. Mara cleared space in the sitting room, moving a stack of library books from the floor to her mother’s desk. One still had a paper bookmark halfway through it.\\n\\nOutside, the garden wall was damp from overnight rain. Mara checked that the gate would latch, then went back for Bristle’s lead. He followed her as far as the car, but when she opened the rear door, he sat down. Her aunt said he would be all right at home. Mara left him by the gate, watching the car pull away.\\n\\nAt the church, people stood aside to let her pass. Mrs Vale touched her arm and asked if she had eaten anything. Mara could not remember, so she said yes. During the service, she kept her hands in her lap and felt the edges of the silver leaves against her neck whenever she turned her head.\\n\\nWhen they came out, her aunt took the keys and offered to drive back first. Mara stayed a moment longer among the wet gravestones, then followed.\"\n}",
+  "output_sha256": "7672592f87b171e5896d1b80cb958f7b70714ff1bc01c4d51a049aba8b7ca98a",
+  "finish_reason": "stop",
+  "refusal": null,
+  "returned_model": "gpt-6-sol",
+  "usage": {
+    "prompt_tokens": 372,
+    "completion_tokens": 411,
+    "total_tokens": 783,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 25,
+      "audio_tokens": 0,
+      "accepted_prediction_tokens": 0,
+      "rejected_prediction_tokens": 0
+    }
+  },
+  "format": {
+    "json_object": true,
+    "rule_unchanged": true,
+    "passage_is_string": true,
+    "passage_sha256": "6ed028ca79b76a047baea50bd8e9abc3afb82e192a565ba07b5cc08ebb48cb11",
+    "passage_words": 278
+  },
+  "finished_at": "2026-09-23T00:14:24.695664+00:00",
+  "latency_seconds": 6.9392,
+  "usage_cost_upper_estimate_usd": 0.004854,
+  "stream_status": "active",
+  "budget": {
+    "usage_cost_upper_estimate_usd": 0.3585441,
+    "uncertain_cost_reserve_usd": 0.0,
+    "in_flight_reserve_usd": 0.3209115,
+    "limit_usd": 5.0
+  }
+}

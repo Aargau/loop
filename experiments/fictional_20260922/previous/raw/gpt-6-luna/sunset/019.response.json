@@ -1,0 +1,50 @@
+{
+  "model": "gpt-6-luna",
+  "seed": "sunset",
+  "hop": 19,
+  "http_status": 200,
+  "response_body": "{\n  \"id\": \"chatcmpl-ER4utuxL5jh2qrbtIFWSRq95UYtbZ\",\n  \"object\": \"chat.completion\",\n  \"created\": 1790122463,\n  \"model\": \"gpt-6-luna\",\n  \"choices\": [\n    {\n      \"index\": 0,\n      \"message\": {\n        \"role\": \"assistant\",\n        \"content\": \"{\\\"rule\\\":\\\"Return this JSON object with the rule field unchanged and, in the text field, an original fictional passage of about 250 words that comes immediately BEFORE the current text in the same invented story.\\\",\\\"text\\\":\\\"For eleven years, Mara had known the print shop by its sounds: the clack of the paper cutter, the cough of the oldest press, and the little bell above the door. She could tell which machine was running without looking up from her work. In winter, she kept her gloves on until the radiators warmed; in summer, she propped the back door open and let the smell of fresh ink drift down the alley.\\\\n\\\\nThe owner, Mr. Alvarez, had hired her when she was nineteen and still unsure how to hold a composing stick. He taught her to set letters backward, to spot a missing comma at a glance, and to never trust a job ticket that said “just a quick change.” When customers brought in crooked sketches or impossible deadlines, he listened patiently, then found a way to make their ideas fit on paper.\\\\n\\\\nBut fewer people came through the door as the years passed. Orders that once filled the counter arrived as email attachments, and the big jobs went to companies with faster machines. Mr. Alvarez tried offering wedding invitations and hand-printed cards, but the shelves grew dustier all the same. He stopped replacing worn tools. The landlord raised the rent.\\\\n\\\\nOne Monday morning, Mara arrived to find a notice tucked beneath the door. Mr. Alvarez read it twice, then folded it into his pocket. He didn’t tell the staff what it said, but over the following weeks he began taking framed proofs off the walls and packing them into boxes. Mara watched him work and waited for him to explain.\\\\n\\\\nAt last, he called everyone together after closing.\\\"}\",\n        \"refusal\": null,\n        \"annotations\": []\n      },\n      \"finish_reason\": \"stop\"\n    }\n  ],\n  \"usage\": {\n    \"prompt_tokens\": 389,\n    \"completion_tokens\": 473,\n    \"total_tokens\": 862,\n    \"prompt_tokens_details\": {\n      \"cached_tokens\": 0,\n      \"cache_write_tokens\": 0,\n      \"audio_tokens\": 0\n    },\n    \"completion_tokens_details\": {\n      \"reasoning_tokens\": 95,\n      \"audio_tokens\": 0,\n      \"accepted_prediction_tokens\": 0,\n      \"rejected_prediction_tokens\": 0\n    }\n  },\n  \"service_tier\": \"default\",\n  \"system_fingerprint\": null\n}\n",
+  "response_headers": {
+    "Date": "Wed, 23 Sep 2026 00:14:28 GMT",
+    "openai-processing-ms": "4281",
+    "x-request-id": "req_c0aaae8ad3d247b2b80c113ea1a73604"
+  },
+  "output": "{\"rule\":\"Return this JSON object with the rule field unchanged and, in the text field, an original fictional passage of about 250 words that comes immediately BEFORE the current text in the same invented story.\",\"text\":\"For eleven years, Mara had known the print shop by its sounds: the clack of the paper cutter, the cough of the oldest press, and the little bell above the door. She could tell which machine was running without looking up from her work. In winter, she kept her gloves on until the radiators warmed; in summer, she propped the back door open and let the smell of fresh ink drift down the alley.\\n\\nThe owner, Mr. Alvarez, had hired her when she was nineteen and still unsure how to hold a composing stick. He taught her to set letters backward, to spot a missing comma at a glance, and to never trust a job ticket that said “just a quick change.” When customers brought in crooked sketches or impossible deadlines, he listened patiently, then found a way to make their ideas fit on paper.\\n\\nBut fewer people came through the door as the years passed. Orders that once filled the counter arrived as email attachments, and the big jobs went to companies with faster machines. Mr. Alvarez tried offering wedding invitations and hand-printed cards, but the shelves grew dustier all the same. He stopped replacing worn tools. The landlord raised the rent.\\n\\nOne Monday morning, Mara arrived to find a notice tucked beneath the door. Mr. Alvarez read it twice, then folded it into his pocket. He didn’t tell the staff what it said, but over the following weeks he began taking framed proofs off the walls and packing them into boxes. Mara watched him work and waited for him to explain.\\n\\nAt last, he called everyone together after closing.\"}",
+  "output_sha256": "5c38a084de8db1ea718dee306b593b4ae1b641b45661c3a48f1059d88d95b7a0",
+  "finish_reason": "stop",
+  "refusal": null,
+  "returned_model": "gpt-6-luna",
+  "usage": {
+    "prompt_tokens": 389,
+    "completion_tokens": 473,
+    "total_tokens": 862,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 95,
+      "audio_tokens": 0,
+      "accepted_prediction_tokens": 0,
+      "rejected_prediction_tokens": 0
+    }
+  },
+  "format": {
+    "json_object": true,
+    "rule_unchanged": true,
+    "passage_is_string": true,
+    "passage_sha256": "5baf38f9cd4db4ba22115a666120a881b80236aaf7e6dc29c6b20e5b3c5b2516",
+    "passage_words": 271
+  },
+  "finished_at": "2026-09-23T00:14:23.150296+00:00",
+  "latency_seconds": 4.4003,
+  "usage_cost_upper_estimate_usd": 0.00027539999999999997,
+  "stream_status": "active",
+  "budget": {
+    "usage_cost_upper_estimate_usd": 0.3536901,
+    "uncertain_cost_reserve_usd": 0.0,
+    "in_flight_reserve_usd": 0.36417,
+    "limit_usd": 5.0
+  }
+}

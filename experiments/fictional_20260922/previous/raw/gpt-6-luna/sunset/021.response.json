@@ -1,0 +1,47 @@
+{
+  "model": "gpt-6-luna",
+  "seed": "sunset",
+  "hop": 21,
+  "http_status": 200,
+  "response_body": "{\n  \"id\": \"chatcmpl-ER4v2n5FfQDJm0zQ2DrNiy6F6bBei\",\n  \"object\": \"chat.completion\",\n  \"created\": 1790122472,\n  \"model\": \"gpt-6-luna\",\n  \"choices\": [\n    {\n      \"index\": 0,\n      \"message\": {\n        \"role\": \"assistant\",\n        \"content\": \"{\\\"rule\\\":\\\"Return this JSON object with the rule field unchanged and, in the text field, an original fictional passage of about 250 words that comes immediately BEFORE the current text in the same invented story.\\\",\\\"text\\\":\\\"By sunrise, Mara had already crossed out three versions of the question she meant to ask.\\n\\nThe first sounded too certain: Will you teach me? The second sounded too small: Do you need anyone? She wrote a third on the back of a receipt, folded it into her coat pocket, and tried not to read it as she walked.\\n\\nHer portfolio was an old cardboard folder, its elastic stretched thin from years of carrying sketches to school and back. She had reinforced one corner with tape, but the paper had begun to peel away. Inside were drawings she’d made in the margins of her life: letters shaped like birds, a row of shop signs for streets she’d never visited, her mother’s name written a dozen different ways. She’d arranged them in what she hoped was a sensible order, then rearranged them twice.\\n\\nAt the end of the avenue, the neighborhood changed. The grocery gave way to a locksmith, the locksmith to a narrow shop with painted lettering above its door: ALVAREZ PRINT. Mara stopped across the street. In the front window, a faded poster showed a blue heron standing among gold reeds. The colors had dulled, but the bird still seemed poised to lift its wings.\\n\\nShe checked the receipt in her pocket. The words had blurred where her hand had sweated against them. A delivery truck rumbled past, stirring grit and scraps of paper along the curb. Mara tightened her grip on the folder and crossed toward the shop. As she reached the doorway, a gust caught the loose corner of its cover and tugged it open.\\\"}\",\n        \"refusal\": null,\n        \"annotations\": []\n      },\n      \"finish_reason\": \"stop\"\n    }\n  ],\n  \"usage\": {\n    \"prompt_tokens\": 386,\n    \"completion_tokens\": 505,\n    \"total_tokens\": 891,\n    \"prompt_tokens_details\": {\n      \"cached_tokens\": 0,\n      \"cache_write_tokens\": 0,\n      \"audio_tokens\": 0\n    },\n    \"completion_tokens_details\": {\n      \"reasoning_tokens\": 135,\n      \"audio_tokens\": 0,\n      \"accepted_prediction_tokens\": 0,\n      \"rejected_prediction_tokens\": 0\n    }\n  },\n  \"service_tier\": \"default\",\n  \"system_fingerprint\": null\n}\n",
+  "response_headers": {
+    "Date": "Wed, 23 Sep 2026 00:14:37 GMT",
+    "openai-processing-ms": "4304",
+    "x-request-id": "req_b6757af502b0459a85012f68bdb25da1"
+  },
+  "output": "{\"rule\":\"Return this JSON object with the rule field unchanged and, in the text field, an original fictional passage of about 250 words that comes immediately BEFORE the current text in the same invented story.\",\"text\":\"By sunrise, Mara had already crossed out three versions of the question she meant to ask.\n\nThe first sounded too certain: Will you teach me? The second sounded too small: Do you need anyone? She wrote a third on the back of a receipt, folded it into her coat pocket, and tried not to read it as she walked.\n\nHer portfolio was an old cardboard folder, its elastic stretched thin from years of carrying sketches to school and back. She had reinforced one corner with tape, but the paper had begun to peel away. Inside were drawings she’d made in the margins of her life: letters shaped like birds, a row of shop signs for streets she’d never visited, her mother’s name written a dozen different ways. She’d arranged them in what she hoped was a sensible order, then rearranged them twice.\n\nAt the end of the avenue, the neighborhood changed. The grocery gave way to a locksmith, the locksmith to a narrow shop with painted lettering above its door: ALVAREZ PRINT. Mara stopped across the street. In the front window, a faded poster showed a blue heron standing among gold reeds. The colors had dulled, but the bird still seemed poised to lift its wings.\n\nShe checked the receipt in her pocket. The words had blurred where her hand had sweated against them. A delivery truck rumbled past, stirring grit and scraps of paper along the curb. Mara tightened her grip on the folder and crossed toward the shop. As she reached the doorway, a gust caught the loose corner of its cover and tugged it open.\"}",
+  "output_sha256": "4944461f4b8ac747a583880a044b14bd9e8217c1035835769e822f0ecac15681",
+  "finish_reason": "stop",
+  "refusal": null,
+  "returned_model": "gpt-6-luna",
+  "usage": {
+    "prompt_tokens": 386,
+    "completion_tokens": 505,
+    "total_tokens": 891,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 135,
+      "audio_tokens": 0,
+      "accepted_prediction_tokens": 0,
+      "rejected_prediction_tokens": 0
+    }
+  },
+  "format": {
+    "json_object": false,
+    "rule_unchanged": false
+  },
+  "finished_at": "2026-09-23T00:14:32.301536+00:00",
+  "latency_seconds": 4.4338,
+  "usage_cost_upper_estimate_usd": 0.00029110000000000003,
+  "stream_status": "active",
+  "budget": {
+    "usage_cost_upper_estimate_usd": 0.4030282,
+    "uncertain_cost_reserve_usd": 0.0,
+    "in_flight_reserve_usd": 0.363342,
+    "limit_usd": 5.0
+  }
+}

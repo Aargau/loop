@@ -1,0 +1,50 @@
+{
+  "model": "gpt-6-sol",
+  "seed": "sunset",
+  "hop": 37,
+  "http_status": 200,
+  "response_body": "{\n  \"id\": \"chatcmpl-ER4xQHG0kkzkG3QmFUHqtTT0uCp6H\",\n  \"object\": \"chat.completion\",\n  \"created\": 1790122620,\n  \"model\": \"gpt-6-sol\",\n  \"choices\": [\n    {\n      \"index\": 0,\n      \"message\": {\n        \"role\": \"assistant\",\n        \"content\": \"{\\n  \\\"rule\\\": \\\"Return this JSON object with the rule field unchanged and, in the text field, an original fictional passage of about 250 words that comes immediately BEFORE the current text in the same invented story.\\\",\\n  \\\"text\\\": \\\"In March, Mara’s mother began leaving messages that did not quite ask for help. The shed door had swollen again. There were things inside she could no longer reach without moving everything in front of them. She had found three watering cans, though only one had a handle. None of this was urgent, she said, and Mara knew that meant it would be mentioned again.\\\\n\\\\nMara lived forty minutes away, close enough to promise she would come over and far enough to keep putting it off. At work, Saturdays disappeared into other people’s deadlines. On Sundays she washed clothes, bought groceries and called her mother while the kettle boiled. They discussed the weather in both towns, though it was nearly always the same weather.\\\\n\\\\nOne evening her mother asked whether Mara remembered the green table that used to stand in the garden. Mara remembered eating toast there, brushing crumbs from its uneven boards. Her mother said she thought it might be behind the shed, or perhaps in it. She wanted to know whether the wood was worth saving. Mara said she would have a look when she came.\\\\n\\\\nShe put the visit in her calendar for the first free Saturday in April. Her mother sounded pleased, then immediately listed the reasons they might not get much done if it rained. Mara said they could at least open the shed and see what was there.\\\\n\\\\nAfter the call, she tried to picture the garden as it was now. She could remember the path, the vegetable beds and the narrow strip of grass, but the view seemed to stop before it reached the back fence.\\\"\\n}\",\n        \"refusal\": null,\n        \"annotations\": []\n      },\n      \"finish_reason\": \"stop\"\n    }\n  ],\n  \"usage\": {\n    \"prompt_tokens\": 356,\n    \"completion_tokens\": 437,\n    \"total_tokens\": 793,\n    \"prompt_tokens_details\": {\n      \"cached_tokens\": 0,\n      \"cache_write_tokens\": 0,\n      \"audio_tokens\": 0\n    },\n    \"completion_tokens_details\": {\n      \"reasoning_tokens\": 60,\n      \"audio_tokens\": 0,\n      \"accepted_prediction_tokens\": 0,\n      \"rejected_prediction_tokens\": 0\n    }\n  },\n  \"service_tier\": \"default\",\n  \"system_fingerprint\": null\n}\n",
+  "response_headers": {
+    "Date": "Wed, 23 Sep 2026 00:17:07 GMT",
+    "openai-processing-ms": "7364",
+    "x-request-id": "req_892de30a526c499a9071e0ef7ed1b7b2"
+  },
+  "output": "{\n  \"rule\": \"Return this JSON object with the rule field unchanged and, in the text field, an original fictional passage of about 250 words that comes immediately BEFORE the current text in the same invented story.\",\n  \"text\": \"In March, Mara’s mother began leaving messages that did not quite ask for help. The shed door had swollen again. There were things inside she could no longer reach without moving everything in front of them. She had found three watering cans, though only one had a handle. None of this was urgent, she said, and Mara knew that meant it would be mentioned again.\\n\\nMara lived forty minutes away, close enough to promise she would come over and far enough to keep putting it off. At work, Saturdays disappeared into other people’s deadlines. On Sundays she washed clothes, bought groceries and called her mother while the kettle boiled. They discussed the weather in both towns, though it was nearly always the same weather.\\n\\nOne evening her mother asked whether Mara remembered the green table that used to stand in the garden. Mara remembered eating toast there, brushing crumbs from its uneven boards. Her mother said she thought it might be behind the shed, or perhaps in it. She wanted to know whether the wood was worth saving. Mara said she would have a look when she came.\\n\\nShe put the visit in her calendar for the first free Saturday in April. Her mother sounded pleased, then immediately listed the reasons they might not get much done if it rained. Mara said they could at least open the shed and see what was there.\\n\\nAfter the call, she tried to picture the garden as it was now. She could remember the path, the vegetable beds and the narrow strip of grass, but the view seemed to stop before it reached the back fence.\"\n}",
+  "output_sha256": "25f065e287fabc18abbb1b26ae9c792471cd6329e91bf62a895e674ff3eaae99",
+  "finish_reason": "stop",
+  "refusal": null,
+  "returned_model": "gpt-6-sol",
+  "usage": {
+    "prompt_tokens": 356,
+    "completion_tokens": 437,
+    "total_tokens": 793,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 60,
+      "audio_tokens": 0,
+      "accepted_prediction_tokens": 0,
+      "rejected_prediction_tokens": 0
+    }
+  },
+  "format": {
+    "json_object": true,
+    "rule_unchanged": true,
+    "passage_is_string": true,
+    "passage_sha256": "74501095e226ebc1e08e965c1364210b1ab5892e78ca39741d48ea10a09d9011",
+    "passage_words": 273
+  },
+  "finished_at": "2026-09-23T00:17:02.565063+00:00",
+  "latency_seconds": 7.4447,
+  "usage_cost_upper_estimate_usd": 0.005082,
+  "stream_status": "active",
+  "budget": {
+    "usage_cost_upper_estimate_usd": 0.9970211,
+    "uncertain_cost_reserve_usd": 0.0,
+    "in_flight_reserve_usd": 0.317318,
+    "limit_usd": 5.0
+  }
+}

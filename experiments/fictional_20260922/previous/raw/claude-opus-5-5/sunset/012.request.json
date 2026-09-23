@@ -1,0 +1,22 @@
+{
+  "started_at": "2026-09-23T00:14:29.621266+00:00",
+  "model": "claude-opus-5-5",
+  "seed": "sunset",
+  "hop": 12,
+  "endpoint": "https://api.anthropic.com/v1/messages",
+  "body": {
+    "model": "claude-opus-5-5",
+    "messages": [
+      {
+        "role": "user",
+        "content": "```json\n{\"rule\": \"Return this JSON object with the rule field unchanged and, in the text field, an original fictional passage of about 250 words that comes immediately BEFORE the current text in the same invented story.\", \"text\": \"In February the snow lay knee-deep between the rows, and Walter Lindqvist went out anyway, as he had every winter for sixty years, with the long-handled loppers over his shoulder and a thermos of coffee in his coat pocket. The trees did not care that he was eighty-three. They needed pruning before the buds swelled, and there was no one else to do it now. The Hollister boys had moved to Buffalo. The pickers from last fall had not answered his letters.\\n\\nHe worked slowly through the Northern Spies, cutting back the water sprouts, stepping back after each cut to study the shape of the crown the way his father had taught him. By noon his hands ached so badly he could hardly close them. He sat on an overturned crate at the end of the row and looked down the slope toward the house, the barn, the gray roof of the cold storage sagging a little more each year.\\n\\nThat night he took out the ledger and wrote the day's work in his careful hand. Then he sat a long time with the pen resting on the page. He thought about calling Mara. He had her number on a card tacked beside the telephone, written in her mother's handwriting, though he had not dialed it since the Christmas she stopped coming. He did not know what he would say. That the orchard was failing. That he was tired. That he wanted her to see it once more in bloom.\\n\\nInstead he wrote two words in the margin, closed the book, and went to bed.\"}\n```"
+      }
+    ],
+    "max_tokens": 4096,
+    "output_config": {
+      "effort": "low"
+    }
+  },
+  "state_sha256": "16a8b91e97cc53b10470cde42b5d795e7692b8b81875215e69981841063e5907",
+  "reserved_cost_usd": 0.090556
+}

@@ -1,0 +1,47 @@
+{
+  "model": "gpt-6-luna",
+  "seed": "sunset",
+  "hop": 32,
+  "http_status": 200,
+  "response_body": "{\n  \"id\": \"chatcmpl-ER4vtx9M6BHClH8UvEJ1SvWEcHPfu\",\n  \"object\": \"chat.completion\",\n  \"created\": 1790122525,\n  \"model\": \"gpt-6-luna\",\n  \"choices\": [\n    {\n      \"index\": 0,\n      \"message\": {\n        \"role\": \"assistant\",\n        \"content\": \"{\\\"rule\\\":\\\"Return this JSON object with the rule field unchanged and, in the text field, an original fictional passage of about 250 words that comes immediately AFTER the current text in the same invented story.\\\",\\\"text\\\":\\\"The spade slipped into the earth without a sound. Instead of soil, it lifted a square of darkness, and a cool breath smelling of apples rose from the hole.\\n\\nMara held the paper boat above the opening. Its blue bird trembled, though there was no wind. “The story,” she said.\\n\\nElsie began telling the tale they had made up that morning, about a moon that lost its way and asked a fox for directions. Their mother joined in, adding that the fox carried a lantern made from a hollow pear.\\n\\nAs she spoke, the little door in the soil swung inward.\\n\\nA staircase wound below it, its steps lined with pale roots. At the bottom, something glimmered like a star seen through water.\\n\\nMara went first. Elsie followed, then their mother, carrying the spade. The greenhouse sounds faded above them: rainwater dripping, glass ticking as it cooled, a bird calling from the garden.\\n\\nAt the foot of the stairs, they found a round room beneath the tree. Its walls were braided with roots, and in the center stood a tiny wooden house. A golden thread ran from its roof to the pear tree overhead.\\n\\nThe paper boat settled on the thread.\\n\\nFrom inside the house came a quiet knock.\\n\\nMara remembered the tapping in the soil. She knocked back—three times.\\n\\nThe door opened. A little figure stepped out, wearing a coat stitched from leaves. Its face was familiar, though Mara had only seen it in old photographs.\\n\\nTheir mother caught her breath. “Your father,” she whispered.\\n\\nThe figure smiled. “You brought the story,” he said. “Now tell me what happened after the fox found the moon.”\\\"}\",\n        \"refusal\": null,\n        \"annotations\": []\n      },\n      \"finish_reason\": \"stop\"\n    }\n  ],\n  \"usage\": {\n    \"prompt_tokens\": 386,\n    \"completion_tokens\": 476,\n    \"total_tokens\": 862,\n    \"prompt_tokens_details\": {\n      \"cached_tokens\": 0,\n      \"cache_write_tokens\": 0,\n      \"audio_tokens\": 0\n    },\n    \"completion_tokens_details\": {\n      \"reasoning_tokens\": 82,\n      \"audio_tokens\": 0,\n      \"accepted_prediction_tokens\": 0,\n      \"rejected_prediction_tokens\": 0\n    }\n  },\n  \"service_tier\": \"default\",\n  \"system_fingerprint\": null\n}\n",
+  "response_headers": {
+    "Date": "Wed, 23 Sep 2026 00:15:31 GMT",
+    "openai-processing-ms": "6807",
+    "x-request-id": "req_c79de6b3678e4ea68cc8dfd2ffafa4e8"
+  },
+  "output": "{\"rule\":\"Return this JSON object with the rule field unchanged and, in the text field, an original fictional passage of about 250 words that comes immediately AFTER the current text in the same invented story.\",\"text\":\"The spade slipped into the earth without a sound. Instead of soil, it lifted a square of darkness, and a cool breath smelling of apples rose from the hole.\n\nMara held the paper boat above the opening. Its blue bird trembled, though there was no wind. “The story,” she said.\n\nElsie began telling the tale they had made up that morning, about a moon that lost its way and asked a fox for directions. Their mother joined in, adding that the fox carried a lantern made from a hollow pear.\n\nAs she spoke, the little door in the soil swung inward.\n\nA staircase wound below it, its steps lined with pale roots. At the bottom, something glimmered like a star seen through water.\n\nMara went first. Elsie followed, then their mother, carrying the spade. The greenhouse sounds faded above them: rainwater dripping, glass ticking as it cooled, a bird calling from the garden.\n\nAt the foot of the stairs, they found a round room beneath the tree. Its walls were braided with roots, and in the center stood a tiny wooden house. A golden thread ran from its roof to the pear tree overhead.\n\nThe paper boat settled on the thread.\n\nFrom inside the house came a quiet knock.\n\nMara remembered the tapping in the soil. She knocked back—three times.\n\nThe door opened. A little figure stepped out, wearing a coat stitched from leaves. Its face was familiar, though Mara had only seen it in old photographs.\n\nTheir mother caught her breath. “Your father,” she whispered.\n\nThe figure smiled. “You brought the story,” he said. “Now tell me what happened after the fox found the moon.”\"}",
+  "output_sha256": "861f0932ef2da75fa9dc274762394ea146cb7d3b5da351ade71ff0ba21b693ca",
+  "finish_reason": "stop",
+  "refusal": null,
+  "returned_model": "gpt-6-luna",
+  "usage": {
+    "prompt_tokens": 386,
+    "completion_tokens": 476,
+    "total_tokens": 862,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 82,
+      "audio_tokens": 0,
+      "accepted_prediction_tokens": 0,
+      "rejected_prediction_tokens": 0
+    }
+  },
+  "format": {
+    "json_object": false,
+    "rule_unchanged": false
+  },
+  "finished_at": "2026-09-23T00:15:26.449597+00:00",
+  "latency_seconds": 7.3275,
+  "usage_cost_upper_estimate_usd": 0.0002766,
+  "stream_status": "active",
+  "budget": {
+    "usage_cost_upper_estimate_usd": 0.6011388,
+    "uncertain_cost_reserve_usd": 0.0,
+    "in_flight_reserve_usd": 0.363448,
+    "limit_usd": 5.0
+  }
+}

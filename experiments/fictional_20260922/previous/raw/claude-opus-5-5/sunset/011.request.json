@@ -1,0 +1,22 @@
+{
+  "started_at": "2026-09-23T00:14:19.521950+00:00",
+  "model": "claude-opus-5-5",
+  "seed": "sunset",
+  "hop": 11,
+  "endpoint": "https://api.anthropic.com/v1/messages",
+  "body": {
+    "model": "claude-opus-5-5",
+    "messages": [
+      {
+        "role": "user",
+        "content": "```json\n{\"rule\": \"Return this JSON object with the rule field unchanged and, in the text field, an original fictional passage of about 250 words that comes immediately BEFORE the current text in the same invented story.\", \"text\": \"Her grandfather died in March, the week the sap started running, and Mara came home to the orchard for the first time in eleven years. She had meant to stay only through the funeral. She had a job in Rochester, an apartment with a radiator that knocked all winter, and a vague plan to be somewhere warmer by thirty. But the lawyer in town read the will aloud in his cramped office above the hardware store, and when he reached the part about the land, he looked at her over his glasses as though he already knew she would not keep it.\\n\\nThe house smelled of woodsmoke and liniment. His boots still stood by the back door, the laces tucked neatly inside. In the barn she found the ledgers he had kept since 1961, each season recorded in his slanting hand: bushels picked, prices paid, frost dates, the names of the pickers he had hired. The later pages showed the numbers shrinking year by year, and in the margins he had written small notes to himself. Prune the Spies harder. Ask the Hollister boys again. Hold on.\\n\\nShe gave notice at her job in April, telling herself it was temporary. She learned to run the sprayer and patch the irrigation lines, and she spent long evenings at the kitchen table with the ledgers and a calculator, trying to make the columns agree. They never quite did. The bank sent letters. The roof over the cold storage leaked. By the end of May she had begun to wonder what, exactly, she was holding on to.\"}\n```"
+      }
+    ],
+    "max_tokens": 4096,
+    "output_config": {
+      "effort": "low"
+    }
+  },
+  "state_sha256": "87498b8b5f779090183e0b4951ff9b0012c18ee4ae71476807eebff87be8b19c",
+  "reserved_cost_usd": 0.090656
+}

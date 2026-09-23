@@ -1,0 +1,47 @@
+{
+  "model": "gpt-6-luna",
+  "seed": "sunset",
+  "hop": 14,
+  "http_status": 200,
+  "response_body": "{\n  \"id\": \"chatcmpl-ER4uY0F6LtQcapHoD4Z5nA5vhP8uB\",\n  \"object\": \"chat.completion\",\n  \"created\": 1790122442,\n  \"model\": \"gpt-6-luna\",\n  \"choices\": [\n    {\n      \"index\": 0,\n      \"message\": {\n        \"role\": \"assistant\",\n        \"content\": \"{\\\"rule\\\":\\\"Return this JSON object with the rule field unchanged and, in the text field, an original fictional passage of about 250 words that comes immediately AFTER the current text in the same invented story.\\\",\\\"text\\\":\\\"Mara stopped.\\n\\nThe whisper came again, this time from the kitchen doorway. Her mother stood there, one hand resting on the frame. “You can come home,” she said.\\n\\nMira seized Mara’s sleeve. “That isn’t her.”\\n\\nThe woman’s expression softened. “I know the song you sang when the storms frightened you.”\\n\\nMara remembered the tune, but not the words. She remembered a warm hand smoothing her hair, and the smell of rain in the garden. The river’s edge pressed against her shoes.\\n\\nTomas held out the paper boat. Its little folded sail had begun to glow.\\n\\n“Read the ink,” Mara said.\\n\\nHe turned it over. The words had changed: NOT EVERY DOOR LEADS OUT.\\n\\nThe kitchen flickered. For an instant, Mara saw what lay beyond it: not a summer house, but a long corridor lined with clocks. At its far end, a girl in a red coat ran toward them, carrying a lantern.\\n\\nMira’s breath caught. “That’s my brother.”\\n\\nOne of the circling names flared overhead. It was Tomas’s, bright as a struck match. The river tugged at his waist, drawing him backward.\\n\\nMara thrust the boat into his hands. “Follow the lantern.”\\n\\nHe stared at her. “What about you?”\\n\\nShe looked from the false doorway to the dark water. Her mother’s face waited in the kitchen, patient and impossible.\\n\\n“I’ll find the real way.”\\n\\nThe watch gave a sharp click. Its second hand spun backward, and the river fell away from Tomas like a curtain.\\n\\nMira grabbed his hand. Together they ran toward the lantern.\\n\\nMara stayed behind as the kitchen door vanished.\\\"}\",\n        \"refusal\": null,\n        \"annotations\": []\n      },\n      \"finish_reason\": \"stop\"\n    }\n  ],\n  \"usage\": {\n    \"prompt_tokens\": 382,\n    \"completion_tokens\": 460,\n    \"total_tokens\": 842,\n    \"prompt_tokens_details\": {\n      \"cached_tokens\": 0,\n      \"cache_write_tokens\": 0,\n      \"audio_tokens\": 0\n    },\n    \"completion_tokens_details\": {\n      \"reasoning_tokens\": 62,\n      \"audio_tokens\": 0,\n      \"accepted_prediction_tokens\": 0,\n      \"rejected_prediction_tokens\": 0\n    }\n  },\n  \"service_tier\": \"default\",\n  \"system_fingerprint\": null\n}\n",
+  "response_headers": {
+    "Date": "Wed, 23 Sep 2026 00:14:06 GMT",
+    "openai-processing-ms": "3907",
+    "x-request-id": "req_7eafa2fc11d046c49d9e92d4c3095826"
+  },
+  "output": "{\"rule\":\"Return this JSON object with the rule field unchanged and, in the text field, an original fictional passage of about 250 words that comes immediately AFTER the current text in the same invented story.\",\"text\":\"Mara stopped.\n\nThe whisper came again, this time from the kitchen doorway. Her mother stood there, one hand resting on the frame. “You can come home,” she said.\n\nMira seized Mara’s sleeve. “That isn’t her.”\n\nThe woman’s expression softened. “I know the song you sang when the storms frightened you.”\n\nMara remembered the tune, but not the words. She remembered a warm hand smoothing her hair, and the smell of rain in the garden. The river’s edge pressed against her shoes.\n\nTomas held out the paper boat. Its little folded sail had begun to glow.\n\n“Read the ink,” Mara said.\n\nHe turned it over. The words had changed: NOT EVERY DOOR LEADS OUT.\n\nThe kitchen flickered. For an instant, Mara saw what lay beyond it: not a summer house, but a long corridor lined with clocks. At its far end, a girl in a red coat ran toward them, carrying a lantern.\n\nMira’s breath caught. “That’s my brother.”\n\nOne of the circling names flared overhead. It was Tomas’s, bright as a struck match. The river tugged at his waist, drawing him backward.\n\nMara thrust the boat into his hands. “Follow the lantern.”\n\nHe stared at her. “What about you?”\n\nShe looked from the false doorway to the dark water. Her mother’s face waited in the kitchen, patient and impossible.\n\n“I’ll find the real way.”\n\nThe watch gave a sharp click. Its second hand spun backward, and the river fell away from Tomas like a curtain.\n\nMira grabbed his hand. Together they ran toward the lantern.\n\nMara stayed behind as the kitchen door vanished.\"}",
+  "output_sha256": "a385cbc74d9e7cab168d02fba859fdb0a341cde5bb015b3dae0e6d580d4aa931",
+  "finish_reason": "stop",
+  "refusal": null,
+  "returned_model": "gpt-6-luna",
+  "usage": {
+    "prompt_tokens": 382,
+    "completion_tokens": 460,
+    "total_tokens": 842,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 62,
+      "audio_tokens": 0,
+      "accepted_prediction_tokens": 0,
+      "rejected_prediction_tokens": 0
+    }
+  },
+  "format": {
+    "json_object": false,
+    "rule_unchanged": false
+  },
+  "finished_at": "2026-09-23T00:14:01.621958+00:00",
+  "latency_seconds": 4.037,
+  "usage_cost_upper_estimate_usd": 0.0002682,
+  "stream_status": "active",
+  "budget": {
+    "usage_cost_upper_estimate_usd": 0.2328512,
+    "uncertain_cost_reserve_usd": 0.0,
+    "in_flight_reserve_usd": 0.364036,
+    "limit_usd": 5.0
+  }
+}

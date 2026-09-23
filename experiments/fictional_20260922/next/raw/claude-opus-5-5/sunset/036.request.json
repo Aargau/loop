@@ -1,0 +1,22 @@
+{
+  "started_at": "2026-09-23T00:18:19.219862+00:00",
+  "model": "claude-opus-5-5",
+  "seed": "sunset",
+  "hop": 36,
+  "endpoint": "https://api.anthropic.com/v1/messages",
+  "body": {
+    "model": "claude-opus-5-5",
+    "messages": [
+      {
+        "role": "user",
+        "content": "```json\n{\"rule\": \"Return this JSON object with the rule field unchanged and, in the text field, an original fictional passage of about 250 words that comes immediately AFTER the current text in the same invented story.\", \"text\": \"It turned slowly, the way a person turns when they hear their name, and Mara saw that the sheet had a shape inside it. Not a body, exactly. More the memory of one: the slope of narrow shoulders, the tilt of a head that always leaned a little to the left when it was listening. \\\"Don't look at it,\\\" Tobias gasped. He came stumbling out of the dark behind her, his sleeve torn, his glasses gone, and grabbed her wrist so hard it hurt. \\\"Mara, don't look.\\\" But the sliver in her fist had gone silent. For the first time since she'd pulled it from the teapot, it was not singing at all. The sheet lifted at its hem. Beneath it there were no feet, only the wet dark grass, pressed flat in two small ovals as if someone had been standing there for a very long time. *You found the door,* said the humming, and now it came from the garden too, from the sheet, from the washing line's thin creak. *Clever girl. You always were. But you've taken something that isn't yours.* Mara opened her hand. The sliver lay across her palm, pale as a fingernail, and in the moonlight she finally saw what it was. Not china. Bone. A tiny curved piece of it, polished smooth by years of warm tea. Behind them, very gently, the kitchen door began to close. And somewhere inside, a chair scraped back, as though whoever had been sitting in it had decided to stand.\"}\n```"
+      }
+    ],
+    "max_tokens": 4096,
+    "output_config": {
+      "effort": "low"
+    }
+  },
+  "state_sha256": "7a7c438c38294801ad3c32565fbdc2f72e83f8b09f793deb4ab6b6cb5cc088d2",
+  "reserved_cost_usd": 0.090276
+}

@@ -1,0 +1,47 @@
+{
+  "model": "gpt-6-luna",
+  "seed": "sunset",
+  "hop": 40,
+  "http_status": 200,
+  "response_body": "{\n  \"id\": \"chatcmpl-ER4wZUQT0vHdy4iIb9wFkCeI8Xnh4\",\n  \"object\": \"chat.completion\",\n  \"created\": 1790122567,\n  \"model\": \"gpt-6-luna\",\n  \"choices\": [\n    {\n      \"index\": 0,\n      \"message\": {\n        \"role\": \"assistant\",\n        \"content\": \"{\\\"rule\\\":\\\"Return this JSON object with the rule field unchanged and, in the text field, an original fictional passage of about 250 words that comes immediately BEFORE the current text in the same invented story.\\\",\\\"text\\\":\\\"That afternoon, the last bell rang while rain tapped softly against the classroom windows. Mara tucked her library book into her schoolbag, careful not to bend its cover. She had borrowed it the week before, and the little boat pictured on the front had kept her company through two rainy evenings. The book was due back tomorrow.\\n\\n“Don’t forget your library card,” her teacher reminded the class. “You’ll need it when you return your books.”\\n\\nMara patted the pocket where she usually kept the card. It was there—or at least, she thought it was. She had used it during lunch to show her friend Lila the tiny picture of a star printed on the back. Afterward, the girls had hurried outside to watch the clouds gather over the playground.\\n\\nNow the sky was clearing. Puddles shone between the hopscotch squares, and the clouds drifted apart in long, pale ribbons. Mara wondered where they were going. She followed their shapes all the way to the school gate, imagining one looked like a whale and another like a silver ship.\\n\\nAt home, she set her schoolbag beside her desk and took out the book. Her mother was still at work, so the house was quiet except for the ticking kitchen clock. Mara meant to find her library card, but first she went to the window. The clouds were turning the color of old silver, and the fading light made them seem farther away than ever.\\n\\nShe dragged a chair across the floor and climbed up, hoping to see where they went after sunset.\\\"}\",\n        \"refusal\": null,\n        \"annotations\": []\n      },\n      \"finish_reason\": \"stop\"\n    }\n  ],\n  \"usage\": {\n    \"prompt_tokens\": 385,\n    \"completion_tokens\": 508,\n    \"total_tokens\": 893,\n    \"prompt_tokens_details\": {\n      \"cached_tokens\": 0,\n      \"cache_write_tokens\": 0,\n      \"audio_tokens\": 0\n    },\n    \"completion_tokens_details\": {\n      \"reasoning_tokens\": 144,\n      \"audio_tokens\": 0,\n      \"accepted_prediction_tokens\": 0,\n      \"rejected_prediction_tokens\": 0\n    }\n  },\n  \"service_tier\": \"default\",\n  \"system_fingerprint\": null\n}\n",
+  "response_headers": {
+    "Date": "Wed, 23 Sep 2026 00:16:11 GMT",
+    "openai-processing-ms": "4176",
+    "x-request-id": "req_472c9c5a0fe742918ba60f0b89193053"
+  },
+  "output": "{\"rule\":\"Return this JSON object with the rule field unchanged and, in the text field, an original fictional passage of about 250 words that comes immediately BEFORE the current text in the same invented story.\",\"text\":\"That afternoon, the last bell rang while rain tapped softly against the classroom windows. Mara tucked her library book into her schoolbag, careful not to bend its cover. She had borrowed it the week before, and the little boat pictured on the front had kept her company through two rainy evenings. The book was due back tomorrow.\n\n“Don’t forget your library card,” her teacher reminded the class. “You’ll need it when you return your books.”\n\nMara patted the pocket where she usually kept the card. It was there—or at least, she thought it was. She had used it during lunch to show her friend Lila the tiny picture of a star printed on the back. Afterward, the girls had hurried outside to watch the clouds gather over the playground.\n\nNow the sky was clearing. Puddles shone between the hopscotch squares, and the clouds drifted apart in long, pale ribbons. Mara wondered where they were going. She followed their shapes all the way to the school gate, imagining one looked like a whale and another like a silver ship.\n\nAt home, she set her schoolbag beside her desk and took out the book. Her mother was still at work, so the house was quiet except for the ticking kitchen clock. Mara meant to find her library card, but first she went to the window. The clouds were turning the color of old silver, and the fading light made them seem farther away than ever.\n\nShe dragged a chair across the floor and climbed up, hoping to see where they went after sunset.\"}",
+  "output_sha256": "2ec155378bcb6a6c8246b5c550cca686470a19af9eb3a1a5bc38b4bc3de6a5f8",
+  "finish_reason": "stop",
+  "refusal": null,
+  "returned_model": "gpt-6-luna",
+  "usage": {
+    "prompt_tokens": 385,
+    "completion_tokens": 508,
+    "total_tokens": 893,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 144,
+      "audio_tokens": 0,
+      "accepted_prediction_tokens": 0,
+      "rejected_prediction_tokens": 0
+    }
+  },
+  "format": {
+    "json_object": false,
+    "rule_unchanged": false
+  },
+  "finished_at": "2026-09-23T00:16:06.978773+00:00",
+  "latency_seconds": 4.3167,
+  "usage_cost_upper_estimate_usd": 0.0002925,
+  "stream_status": "active",
+  "budget": {
+    "usage_cost_upper_estimate_usd": 0.7865691,
+    "uncertain_cost_reserve_usd": 0.0,
+    "in_flight_reserve_usd": 0.361784,
+    "limit_usd": 5.0
+  }
+}

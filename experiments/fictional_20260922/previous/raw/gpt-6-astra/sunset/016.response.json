@@ -1,0 +1,50 @@
+{
+  "model": "gpt-6-astra",
+  "seed": "sunset",
+  "hop": 16,
+  "http_status": 200,
+  "response_body": "{\n  \"id\": \"chatcmpl-ER4wmPZDWTDJFuVSte1sZmGNrr7rh\",\n  \"object\": \"chat.completion\",\n  \"created\": 1790122580,\n  \"model\": \"gpt-6-astra\",\n  \"choices\": [\n    {\n      \"index\": 0,\n      \"message\": {\n        \"role\": \"assistant\",\n        \"content\": \"{\\n  \\\"rule\\\": \\\"Return this JSON object with the rule field unchanged and, in the text field, an original fictional passage of about 250 words that comes immediately BEFORE the current text in the same invented story.\\\",\\n  \\\"text\\\": \\\"The customer had brought the trousers in on Tuesday and said there was no hurry, provided they were ready by Friday. Mara wrote Thursday on the ticket. She preferred to leave herself a day for people who remembered weddings late.\\\\n\\\\nHer father had telephoned that morning about a button. He wanted to know whether she kept the large brown ones, the sort with four holes.\\\\n\\\\n‘Bring the coat,’ she had said.\\\\n\\\\n‘There’s nothing wrong with the coat.’\\\\n\\\\n‘I need to see the size.’\\\\n\\\\nHe said he would look in the drawer first. There was a tin her mother had used for buttons, although since his move it might have contained screws. Mara waited while he went to check. Through the receiver she heard him set something down, then open and close a drawer.\\\\n\\\\nNow, with the shop empty, she folded the bottom of the trouser leg to the chalk mark. Outside, a boy was trying to fit a collapsed umbrella into the litter bin. Each time he let go, one black rib sprang out again.\\\\n\\\\nThe telephone rang beneath a length of lining fabric. Mara put the iron upright and reached behind the board for the plug.\\\\n\\\\nThe caller asked whether she was somewhere she could talk. Mara gave the name of the shop, thinking at first that it concerned a delivery.\\\\n\\\\nShe listened with the receiver against one ear and her free hand resting on the counter. When the woman repeated the hospital’s name, Mara said she knew it. She took her coat from the peg and checked the pocket for her keys.\\\"\\n}\",\n        \"refusal\": null,\n        \"annotations\": []\n      },\n      \"finish_reason\": \"stop\"\n    }\n  ],\n  \"usage\": {\n    \"prompt_tokens\": 360,\n    \"completion_tokens\": 377,\n    \"total_tokens\": 737,\n    \"prompt_tokens_details\": {\n      \"cached_tokens\": 0,\n      \"cache_write_tokens\": 0,\n      \"audio_tokens\": 0\n    },\n    \"completion_tokens_details\": {\n      \"reasoning_tokens\": 0,\n      \"audio_tokens\": 0,\n      \"accepted_prediction_tokens\": 0,\n      \"rejected_prediction_tokens\": 0\n    }\n  },\n  \"service_tier\": \"default\",\n  \"system_fingerprint\": null\n}\n",
+  "response_headers": {
+    "Date": "Wed, 23 Sep 2026 00:16:32 GMT",
+    "openai-processing-ms": "12571",
+    "x-request-id": "req_e94c6619409144b2b0f1653e6a6ff0c0"
+  },
+  "output": "{\n  \"rule\": \"Return this JSON object with the rule field unchanged and, in the text field, an original fictional passage of about 250 words that comes immediately BEFORE the current text in the same invented story.\",\n  \"text\": \"The customer had brought the trousers in on Tuesday and said there was no hurry, provided they were ready by Friday. Mara wrote Thursday on the ticket. She preferred to leave herself a day for people who remembered weddings late.\\n\\nHer father had telephoned that morning about a button. He wanted to know whether she kept the large brown ones, the sort with four holes.\\n\\n‘Bring the coat,’ she had said.\\n\\n‘There’s nothing wrong with the coat.’\\n\\n‘I need to see the size.’\\n\\nHe said he would look in the drawer first. There was a tin her mother had used for buttons, although since his move it might have contained screws. Mara waited while he went to check. Through the receiver she heard him set something down, then open and close a drawer.\\n\\nNow, with the shop empty, she folded the bottom of the trouser leg to the chalk mark. Outside, a boy was trying to fit a collapsed umbrella into the litter bin. Each time he let go, one black rib sprang out again.\\n\\nThe telephone rang beneath a length of lining fabric. Mara put the iron upright and reached behind the board for the plug.\\n\\nThe caller asked whether she was somewhere she could talk. Mara gave the name of the shop, thinking at first that it concerned a delivery.\\n\\nShe listened with the receiver against one ear and her free hand resting on the counter. When the woman repeated the hospital’s name, Mara said she knew it. She took her coat from the peg and checked the pocket for her keys.\"\n}",
+  "output_sha256": "ae0aa17f68fc7368f05c9ee0b8c61cba0e7aa544e7c15c5bcae8de4f6577d4e2",
+  "finish_reason": "stop",
+  "refusal": null,
+  "returned_model": "gpt-6-astra",
+  "usage": {
+    "prompt_tokens": 360,
+    "completion_tokens": 377,
+    "total_tokens": 737,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "audio_tokens": 0,
+      "accepted_prediction_tokens": 0,
+      "rejected_prediction_tokens": 0
+    }
+  },
+  "format": {
+    "json_object": true,
+    "rule_unchanged": true,
+    "passage_is_string": true,
+    "passage_sha256": "db7840104cc5d1e59895a6b246b073a3d9ab45a409598b018b33a6f773bc6143",
+    "passage_words": 264
+  },
+  "finished_at": "2026-09-23T00:16:28.123295+00:00",
+  "latency_seconds": 12.6899,
+  "usage_cost_upper_estimate_usd": 0.02245,
+  "stream_status": "active",
+  "budget": {
+    "usage_cost_upper_estimate_usd": 0.8646391,
+    "uncertain_cost_reserve_usd": 0.0,
+    "in_flight_reserve_usd": 0.135788,
+    "limit_usd": 5.0
+  }
+}

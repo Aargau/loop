@@ -1,0 +1,47 @@
+{
+  "model": "gpt-6-luna",
+  "seed": "sunset",
+  "hop": 2,
+  "http_status": 200,
+  "response_body": "{\n  \"id\": \"chatcmpl-ER4tf8fVV70XTaLVRIvArH6dz7U1i\",\n  \"object\": \"chat.completion\",\n  \"created\": 1790122387,\n  \"model\": \"gpt-6-luna\",\n  \"choices\": [\n    {\n      \"index\": 0,\n      \"message\": {\n        \"role\": \"assistant\",\n        \"content\": \"{\\\"rule\\\":\\\"Return this JSON object with the rule field unchanged and, in the text field, an original fictional passage of about 250 words that comes immediately AFTER the current text in the same invented story.\\\",\\\"text\\\":\\\"Mara caught the door with her shoulder. It pressed against her, heavy as a stone, while the figure below lifted his lantern.\\n\\n“Don’t come down,” Tomas said.\\n\\nThe warning sounded wrong in his mouth. He had always called her Mare, even when they were arguing. And the muddy cuffs—she remembered those, but not the silver thread sewn along their hems.\\n\\n“Who are you?” she asked.\\n\\nThe lantern flame bent sideways, though no wind stirred. The figure lowered it. Beneath the familiar face, a second shadow moved, turning its head a heartbeat too late.\\n\\n“Mare,” he said. “You have to wind the clock.”\\n\\nBehind her, the door groaned closer. The blue flame inside the key flared, and warmth spread through her palm. Then the tower shuddered. Somewhere far overhead, gears began to grind.\\n\\n“What happens at seven minutes past nine?”\\n\\n“Everything that was taken stays taken.”\\n\\nThe answer came from behind her.\\n\\nMara looked over her shoulder. The lane was gone. Through the narrowing gap, she saw only a wall of dark stone—and, briefly, the pale faces at the windows, each one smiling now.\\n\\nBelow, Tomas held out his free hand. A brass watch gleamed at his wrist. Its hands showed seven minutes past nine.\\n\\n“You said you’d find me,” he whispered.\\n\\nMara stepped down. The instant her foot touched the stair, the door slammed shut above her. In the lantern light, the figure’s face softened into the brother she remembered.\\n\\nThen the watch ticked.\\n\\nTomas flinched. His shadow split in two.\\n\\nMara tightened her grip on the key. “Tell me what you did.”\\n\\nThe lantern went out.\\n\\nIn the dark, her brother answered, “I stopped the clock.”\\\"}\",\n        \"refusal\": null,\n        \"annotations\": []\n      },\n      \"finish_reason\": \"stop\"\n    }\n  ],\n  \"usage\": {\n    \"prompt_tokens\": 386,\n    \"completion_tokens\": 516,\n    \"total_tokens\": 902,\n    \"prompt_tokens_details\": {\n      \"cached_tokens\": 0,\n      \"cache_write_tokens\": 0,\n      \"audio_tokens\": 0\n    },\n    \"completion_tokens_details\": {\n      \"reasoning_tokens\": 100,\n      \"audio_tokens\": 0,\n      \"accepted_prediction_tokens\": 0,\n      \"rejected_prediction_tokens\": 0\n    }\n  },\n  \"service_tier\": \"default\",\n  \"system_fingerprint\": null\n}\n",
+  "response_headers": {
+    "Date": "Wed, 23 Sep 2026 00:13:11 GMT",
+    "openai-processing-ms": "4711",
+    "x-request-id": "req_19bd1ff0cbb64442b83fc870b597eec6"
+  },
+  "output": "{\"rule\":\"Return this JSON object with the rule field unchanged and, in the text field, an original fictional passage of about 250 words that comes immediately AFTER the current text in the same invented story.\",\"text\":\"Mara caught the door with her shoulder. It pressed against her, heavy as a stone, while the figure below lifted his lantern.\n\n“Don’t come down,” Tomas said.\n\nThe warning sounded wrong in his mouth. He had always called her Mare, even when they were arguing. And the muddy cuffs—she remembered those, but not the silver thread sewn along their hems.\n\n“Who are you?” she asked.\n\nThe lantern flame bent sideways, though no wind stirred. The figure lowered it. Beneath the familiar face, a second shadow moved, turning its head a heartbeat too late.\n\n“Mare,” he said. “You have to wind the clock.”\n\nBehind her, the door groaned closer. The blue flame inside the key flared, and warmth spread through her palm. Then the tower shuddered. Somewhere far overhead, gears began to grind.\n\n“What happens at seven minutes past nine?”\n\n“Everything that was taken stays taken.”\n\nThe answer came from behind her.\n\nMara looked over her shoulder. The lane was gone. Through the narrowing gap, she saw only a wall of dark stone—and, briefly, the pale faces at the windows, each one smiling now.\n\nBelow, Tomas held out his free hand. A brass watch gleamed at his wrist. Its hands showed seven minutes past nine.\n\n“You said you’d find me,” he whispered.\n\nMara stepped down. The instant her foot touched the stair, the door slammed shut above her. In the lantern light, the figure’s face softened into the brother she remembered.\n\nThen the watch ticked.\n\nTomas flinched. His shadow split in two.\n\nMara tightened her grip on the key. “Tell me what you did.”\n\nThe lantern went out.\n\nIn the dark, her brother answered, “I stopped the clock.”\"}",
+  "output_sha256": "fff0734cec866d62d6161a98b10a115c3bfe4ff3b5132f9bdebe9abfceb90204",
+  "finish_reason": "stop",
+  "refusal": null,
+  "returned_model": "gpt-6-luna",
+  "usage": {
+    "prompt_tokens": 386,
+    "completion_tokens": 516,
+    "total_tokens": 902,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 100,
+      "audio_tokens": 0,
+      "accepted_prediction_tokens": 0,
+      "rejected_prediction_tokens": 0
+    }
+  },
+  "format": {
+    "json_object": false,
+    "rule_unchanged": false
+  },
+  "finished_at": "2026-09-23T00:13:06.725358+00:00",
+  "latency_seconds": 4.806,
+  "usage_cost_upper_estimate_usd": 0.0002966,
+  "stream_status": "active",
+  "budget": {
+    "usage_cost_upper_estimate_usd": 0.0168497,
+    "uncertain_cost_reserve_usd": 0.0,
+    "in_flight_reserve_usd": 0.348726,
+    "limit_usd": 5.0
+  }
+}

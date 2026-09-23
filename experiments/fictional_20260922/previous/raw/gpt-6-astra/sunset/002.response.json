@@ -1,0 +1,50 @@
+{
+  "model": "gpt-6-astra",
+  "seed": "sunset",
+  "hop": 2,
+  "http_status": 200,
+  "response_body": "{\n  \"id\": \"chatcmpl-ER4teBqvx8dVl7wL0XAo84h0F9Z5g\",\n  \"object\": \"chat.completion\",\n  \"created\": 1790122386,\n  \"model\": \"gpt-6-astra\",\n  \"choices\": [\n    {\n      \"index\": 0,\n      \"message\": {\n        \"role\": \"assistant\",\n        \"content\": \"{\\n  \\\"rule\\\": \\\"Return this JSON object with the rule field unchanged and, in the text field, an original fictional passage of about 250 words that comes immediately BEFORE the current text in the same invented story.\\\",\\n  \\\"text\\\": \\\"The envelope had been waiting beneath her door when Mara returned from work, damp at the corners although the afternoon was dry. Her name appeared in the painstaking capitals Eli used to copy from seed packets. The stamp showed a king who had died before either of them was born.\\\\n\\\\nShe opened it standing up.\\\\n\\\\nMara,\\\\n\\\\nCome tomorrow before the orchard loses its light. Bring something to dig with. I put the bell under the apple tree, on the side where we buried the fox.\\\\n\\\\nDon’t stop in the village. They’ll tell you the bridge is gone.\\\\n\\\\nThere was no signature, only a small drawing of a ladder. As children, they had added it to messages that were not to be shown to grown-ups.\\\\n\\\\nShe slept badly and left before dawn.\\\\n\\\\nAt the last petrol station, she bought a garden trowel from a rack beside the windscreen wash. The cashier wrapped its teeth in yesterday’s newspaper. Mara almost asked him about the bridge, then paid and went outside.\\\\n\\\\nThe bridge was there. She crossed slowly, listening to the boards settle beneath the tyres.\\\\n\\\\nBeyond it, nettles crowded the lane. She parked where the branches grew too close and continued on foot, carrying the trowel. The orchard wall appeared through the weeds, lower than she remembered.\\\\n\\\\nMara climbed over where a stone had fallen loose. Wind stirred the apple leaves, showing their pale undersides. She passed the old swing and knelt beside the tree, trying to recall which of its roots had marked the fox’s grave.\\\"\\n}\",\n        \"refusal\": null,\n        \"annotations\": []\n      },\n      \"finish_reason\": \"stop\"\n    }\n  ],\n  \"usage\": {\n    \"prompt_tokens\": 411,\n    \"completion_tokens\": 379,\n    \"total_tokens\": 790,\n    \"prompt_tokens_details\": {\n      \"cached_tokens\": 0,\n      \"cache_write_tokens\": 0,\n      \"audio_tokens\": 0\n    },\n    \"completion_tokens_details\": {\n      \"reasoning_tokens\": 0,\n      \"audio_tokens\": 0,\n      \"accepted_prediction_tokens\": 0,\n      \"rejected_prediction_tokens\": 0\n    }\n  },\n  \"service_tier\": \"default\",\n  \"system_fingerprint\": null\n}\n",
+  "response_headers": {
+    "Date": "Wed, 23 Sep 2026 00:13:22 GMT",
+    "openai-processing-ms": "16448",
+    "x-request-id": "req_6e5de65ac0fa45cb87922f774211758c"
+  },
+  "output": "{\n  \"rule\": \"Return this JSON object with the rule field unchanged and, in the text field, an original fictional passage of about 250 words that comes immediately BEFORE the current text in the same invented story.\",\n  \"text\": \"The envelope had been waiting beneath her door when Mara returned from work, damp at the corners although the afternoon was dry. Her name appeared in the painstaking capitals Eli used to copy from seed packets. The stamp showed a king who had died before either of them was born.\\n\\nShe opened it standing up.\\n\\nMara,\\n\\nCome tomorrow before the orchard loses its light. Bring something to dig with. I put the bell under the apple tree, on the side where we buried the fox.\\n\\nDon’t stop in the village. They’ll tell you the bridge is gone.\\n\\nThere was no signature, only a small drawing of a ladder. As children, they had added it to messages that were not to be shown to grown-ups.\\n\\nShe slept badly and left before dawn.\\n\\nAt the last petrol station, she bought a garden trowel from a rack beside the windscreen wash. The cashier wrapped its teeth in yesterday’s newspaper. Mara almost asked him about the bridge, then paid and went outside.\\n\\nThe bridge was there. She crossed slowly, listening to the boards settle beneath the tyres.\\n\\nBeyond it, nettles crowded the lane. She parked where the branches grew too close and continued on foot, carrying the trowel. The orchard wall appeared through the weeds, lower than she remembered.\\n\\nMara climbed over where a stone had fallen loose. Wind stirred the apple leaves, showing their pale undersides. She passed the old swing and knelt beside the tree, trying to recall which of its roots had marked the fox’s grave.\"\n}",
+  "output_sha256": "464338e87f7f1ab2b6f79beed836aab29fcd9cccc283d4c51663f26500d875b4",
+  "finish_reason": "stop",
+  "refusal": null,
+  "returned_model": "gpt-6-astra",
+  "usage": {
+    "prompt_tokens": 411,
+    "completion_tokens": 379,
+    "total_tokens": 790,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "audio_tokens": 0,
+      "accepted_prediction_tokens": 0,
+      "rejected_prediction_tokens": 0
+    }
+  },
+  "format": {
+    "json_object": true,
+    "rule_unchanged": true,
+    "passage_is_string": true,
+    "passage_sha256": "e86271cec687a38c14b42c6c8b11107537c73313a5d44adaf300e7e36215f40b",
+    "passage_words": 255
+  },
+  "finished_at": "2026-09-23T00:13:17.723728+00:00",
+  "latency_seconds": 16.8586,
+  "usage_cost_upper_estimate_usd": 0.02306,
+  "stream_status": "active",
+  "budget": {
+    "usage_cost_upper_estimate_usd": 0.1090379,
+    "uncertain_cost_reserve_usd": 0.0,
+    "in_flight_reserve_usd": 0.1379727,
+    "limit_usd": 5.0
+  }
+}

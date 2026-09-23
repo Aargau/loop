@@ -1,0 +1,50 @@
+{
+  "model": "gpt-6-astra",
+  "seed": "sunset",
+  "hop": 37,
+  "http_status": 200,
+  "response_body": "{\n  \"id\": \"chatcmpl-ER51PQM50MjOTs1cEZwxO2odukcpx\",\n  \"object\": \"chat.completion\",\n  \"created\": 1790122867,\n  \"model\": \"gpt-6-astra\",\n  \"choices\": [\n    {\n      \"index\": 0,\n      \"message\": {\n        \"role\": \"assistant\",\n        \"content\": \"{\\n  \\\"rule\\\": \\\"Return this JSON object with the rule field unchanged and, in the text field, an original fictional passage of about 250 words that comes immediately BEFORE the current text in the same invented story.\\\",\\n  \\\"text\\\": \\\"On Monday Mara collected the things from the ward. The nurse brought them in a white plastic bag with a space for a name, though nobody had written one. Inside were slippers, a washbag and the cardigan Mara had taken in on Saturday. One sleeve was still turned inside out.\\\\n\\\\n'Is there any jewellery?' Mara asked.\\\\n\\\\nThe nurse checked a cupboard. While she waited, Mara looked at the notice about parking charges. She had bought a weekly ticket that morning.\\\\n\\\\nHer mother's wedding ring came in a small envelope. Mara put it in the zipped pocket of her handbag, where she kept foreign coins.\\\\n\\\\nOutside, her brother was moving his car from a space reserved for ambulances. He lowered the passenger window.\\\\n\\\\n'Did you get everything?'\\\\n\\\\nShe held up the bag.\\\\n\\\\n'I can take that,' he said.\\\\n\\\\n'It's all right.'\\\\n\\\\nHe had to collect his daughter. They agreed to speak later, then stood for a moment on either side of the open window, neither seeming sure who should move first.\\\\n\\\\nAt home Mara washed the cardigan with two work shirts. She checked the label twice and chose the cooler setting. The slippers she left in the bag by the washing machine.\\\\n\\\\nOn Wednesday her brother sent her a photograph of a gas meter and asked whether she knew which figures mattered. She enlarged it with her fingers. There was a strip of her mother's kitchen wallpaper above the meter, yellow flowers behind the pipes.\\\\n\\\\n'Not the red ones,' she wrote.\\\\n\\\\nThen she asked if he had found the stopcock. He didn't reply.\\\"\\n}\",\n        \"refusal\": null,\n        \"annotations\": []\n      },\n      \"finish_reason\": \"stop\"\n    }\n  ],\n  \"usage\": {\n    \"prompt_tokens\": 383,\n    \"completion_tokens\": 388,\n    \"total_tokens\": 771,\n    \"prompt_tokens_details\": {\n      \"cached_tokens\": 0,\n      \"cache_write_tokens\": 0,\n      \"audio_tokens\": 0\n    },\n    \"completion_tokens_details\": {\n      \"reasoning_tokens\": 0,\n      \"audio_tokens\": 0,\n      \"accepted_prediction_tokens\": 0,\n      \"rejected_prediction_tokens\": 0\n    }\n  },\n  \"service_tier\": \"default\",\n  \"system_fingerprint\": null\n}\n",
+  "response_headers": {
+    "Date": "Wed, 23 Sep 2026 00:21:19 GMT",
+    "openai-processing-ms": "12914",
+    "x-request-id": "req_230bbf6825954cd3a7bccb266810777d"
+  },
+  "output": "{\n  \"rule\": \"Return this JSON object with the rule field unchanged and, in the text field, an original fictional passage of about 250 words that comes immediately BEFORE the current text in the same invented story.\",\n  \"text\": \"On Monday Mara collected the things from the ward. The nurse brought them in a white plastic bag with a space for a name, though nobody had written one. Inside were slippers, a washbag and the cardigan Mara had taken in on Saturday. One sleeve was still turned inside out.\\n\\n'Is there any jewellery?' Mara asked.\\n\\nThe nurse checked a cupboard. While she waited, Mara looked at the notice about parking charges. She had bought a weekly ticket that morning.\\n\\nHer mother's wedding ring came in a small envelope. Mara put it in the zipped pocket of her handbag, where she kept foreign coins.\\n\\nOutside, her brother was moving his car from a space reserved for ambulances. He lowered the passenger window.\\n\\n'Did you get everything?'\\n\\nShe held up the bag.\\n\\n'I can take that,' he said.\\n\\n'It's all right.'\\n\\nHe had to collect his daughter. They agreed to speak later, then stood for a moment on either side of the open window, neither seeming sure who should move first.\\n\\nAt home Mara washed the cardigan with two work shirts. She checked the label twice and chose the cooler setting. The slippers she left in the bag by the washing machine.\\n\\nOn Wednesday her brother sent her a photograph of a gas meter and asked whether she knew which figures mattered. She enlarged it with her fingers. There was a strip of her mother's kitchen wallpaper above the meter, yellow flowers behind the pipes.\\n\\n'Not the red ones,' she wrote.\\n\\nThen she asked if he had found the stopcock. He didn't reply.\"\n}",
+  "output_sha256": "a755c97eddee8f3eae160d3346e9c0e06546b34777f2ec02aed57e0915800537",
+  "finish_reason": "stop",
+  "refusal": null,
+  "returned_model": "gpt-6-astra",
+  "usage": {
+    "prompt_tokens": 383,
+    "completion_tokens": 388,
+    "total_tokens": 771,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "audio_tokens": 0,
+      "accepted_prediction_tokens": 0,
+      "rejected_prediction_tokens": 0
+    }
+  },
+  "format": {
+    "json_object": true,
+    "rule_unchanged": true,
+    "passage_is_string": true,
+    "passage_sha256": "03ee9d2f0dcba6d0798cf6ad521a4ef0bd94b0b2feb642cfa2642d8cca6dbaf2",
+    "passage_words": 262
+  },
+  "finished_at": "2026-09-23T00:21:14.800870+00:00",
+  "latency_seconds": 13.0147,
+  "usage_cost_upper_estimate_usd": 0.02323,
+  "stream_status": "active",
+  "budget": {
+    "usage_cost_upper_estimate_usd": 1.6915151,
+    "uncertain_cost_reserve_usd": 0.0,
+    "in_flight_reserve_usd": 0.0,
+    "limit_usd": 5.0
+  }
+}

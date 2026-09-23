@@ -1,0 +1,50 @@
+{
+  "model": "gpt-6-sol",
+  "seed": "sunset",
+  "hop": 5,
+  "http_status": 200,
+  "response_body": "{\n  \"id\": \"chatcmpl-ER4u377d6P5rIYbyo5dFdAJluhh9f\",\n  \"object\": \"chat.completion\",\n  \"created\": 1790122411,\n  \"model\": \"gpt-6-sol\",\n  \"choices\": [\n    {\n      \"index\": 0,\n      \"message\": {\n        \"role\": \"assistant\",\n        \"content\": \"{\\\"rule\\\":\\\"Return this JSON object with the rule field unchanged and, in the text field, an original fictional passage of about 250 words that comes immediately AFTER the current text in the same invented story.\\\",\\\"text\\\":\\\"The rope dragged Mara across the platform. The bell slowed, but its rim kept moving toward the place where the clapper should have struck.\\\\n\\\\n“Put it back,” the boy said.\\\\n\\\\nMara looked at the little brass weight in her fist. There was no hook inside the bell, only a dark hollow filled with her reflection: wet hair, bloodied hands, her mother’s eyes.\\\\n\\\\nBehind her, a latch lifted.\\\\n\\\\n“Mara,” her mother called. “Please.”\\\\n\\\\nThe boy leaped from the boat and caught the rope below her hands. Together they hauled until the bell stopped a finger’s width from the wall. In the passage, the latch fell shut. Others followed, one after another, like stones dropping down a well.\\\\n\\\\nFor a moment neither of them moved.\\\\n\\\\nThen the blue cloth unwrapped itself from the clapper. Stitched along its edge were seven names. Mara recognized her mother’s. Beside it, in smaller letters, was her own.\\\\n\\\\n“She came here,” Mara said.\\\\n\\\\n“She got as far as the box.” The boy eased his grip on the rope. The bell stayed still. “She left that for you.”\\\\n\\\\nMara turned the clapper over. A narrow slot ran through its center, just wide enough for the key. When she fitted them together, the new tooth broke off with a soft snap. Somewhere beneath the platform, gears began to turn.\\\\n\\\\nWater drained from the chamber, revealing a stairway below the iron box. The boy took the lantern and descended two steps. He waited there while Mara folded the cloth around the clapper and followed him down.\\\"}\",\n        \"refusal\": null,\n        \"annotations\": []\n      },\n      \"finish_reason\": \"stop\"\n    }\n  ],\n  \"usage\": {\n    \"prompt_tokens\": 396,\n    \"completion_tokens\": 418,\n    \"total_tokens\": 814,\n    \"prompt_tokens_details\": {\n      \"cached_tokens\": 0,\n      \"cache_write_tokens\": 0,\n      \"audio_tokens\": 0\n    },\n    \"completion_tokens_details\": {\n      \"reasoning_tokens\": 19,\n      \"audio_tokens\": 0,\n      \"accepted_prediction_tokens\": 0,\n      \"rejected_prediction_tokens\": 0\n    }\n  },\n  \"service_tier\": \"default\",\n  \"system_fingerprint\": null\n}\n",
+  "response_headers": {
+    "Date": "Wed, 23 Sep 2026 00:13:38 GMT",
+    "openai-processing-ms": "7451",
+    "x-request-id": "req_b9c5703f78174fe38dfb50c2eb14fc5d"
+  },
+  "output": "{\"rule\":\"Return this JSON object with the rule field unchanged and, in the text field, an original fictional passage of about 250 words that comes immediately AFTER the current text in the same invented story.\",\"text\":\"The rope dragged Mara across the platform. The bell slowed, but its rim kept moving toward the place where the clapper should have struck.\\n\\n“Put it back,” the boy said.\\n\\nMara looked at the little brass weight in her fist. There was no hook inside the bell, only a dark hollow filled with her reflection: wet hair, bloodied hands, her mother’s eyes.\\n\\nBehind her, a latch lifted.\\n\\n“Mara,” her mother called. “Please.”\\n\\nThe boy leaped from the boat and caught the rope below her hands. Together they hauled until the bell stopped a finger’s width from the wall. In the passage, the latch fell shut. Others followed, one after another, like stones dropping down a well.\\n\\nFor a moment neither of them moved.\\n\\nThen the blue cloth unwrapped itself from the clapper. Stitched along its edge were seven names. Mara recognized her mother’s. Beside it, in smaller letters, was her own.\\n\\n“She came here,” Mara said.\\n\\n“She got as far as the box.” The boy eased his grip on the rope. The bell stayed still. “She left that for you.”\\n\\nMara turned the clapper over. A narrow slot ran through its center, just wide enough for the key. When she fitted them together, the new tooth broke off with a soft snap. Somewhere beneath the platform, gears began to turn.\\n\\nWater drained from the chamber, revealing a stairway below the iron box. The boy took the lantern and descended two steps. He waited there while Mara folded the cloth around the clapper and followed him down.\"}",
+  "output_sha256": "9ddf549afb5e3e70cd996a9ed00e0e8b07846843ca1a178f8b7b22e5c0850c16",
+  "finish_reason": "stop",
+  "refusal": null,
+  "returned_model": "gpt-6-sol",
+  "usage": {
+    "prompt_tokens": 396,
+    "completion_tokens": 418,
+    "total_tokens": 814,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 19,
+      "audio_tokens": 0,
+      "accepted_prediction_tokens": 0,
+      "rejected_prediction_tokens": 0
+    }
+  },
+  "format": {
+    "json_object": true,
+    "rule_unchanged": true,
+    "passage_is_string": true,
+    "passage_sha256": "63e16ca9736cce6e2fe1c820c6d4f04710c8aea3459b8cb1ecadc43115e65c01",
+    "passage_words": 256
+  },
+  "finished_at": "2026-09-23T00:13:33.942175+00:00",
+  "latency_seconds": 7.5657,
+  "usage_cost_upper_estimate_usd": 0.004972,
+  "stream_status": "active",
+  "budget": {
+    "usage_cost_upper_estimate_usd": 0.1266634,
+    "uncertain_cost_reserve_usd": 0.0,
+    "in_flight_reserve_usd": 0.3213712,
+    "limit_usd": 5.0
+  }
+}

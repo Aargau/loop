@@ -1,0 +1,50 @@
+{
+  "model": "gpt-6-sol",
+  "seed": "sunset",
+  "hop": 15,
+  "http_status": 200,
+  "response_body": "{\n  \"id\": \"chatcmpl-ER4vAWNvSvb9GTPdZiBBVVlcYCyZC\",\n  \"object\": \"chat.completion\",\n  \"created\": 1790122480,\n  \"model\": \"gpt-6-sol\",\n  \"choices\": [\n    {\n      \"index\": 0,\n      \"message\": {\n        \"role\": \"assistant\",\n        \"content\": \"{\\\"rule\\\":\\\"Return this JSON object with the rule field unchanged and, in the text field, an original fictional passage of about 250 words that comes immediately AFTER the current text in the same invented story.\\\",\\\"text\\\":\\\"Mara knew the voice. She had used it to coax frightened children out from under beds, to ask the boy if he had washed his hands. Hearing it come up the stair made her grip the lantern handle until it hurt.\\\\n\\\\n“Don’t answer,” said the woman in the blue hood.\\\\n\\\\nBelow them, a foot settled on the next step. The girl wound the loose thread around her fingers and pulled. Somewhere in the dark, wood gave a sharp crack. The footsteps stopped.\\\\n\\\\n“It can’t cross a line it remembers,” the girl whispered. “Not for long.”\\\\n\\\\nMara looked at the thread stretching from the girl’s fist to a nail in the doorframe. She remembered tying that nail in place with a strip torn from her dress. She remembered the children asleep at the table. Then she remembered going down the stair alone, carrying the green cup.\\\\n\\\\n“What did I bring back?” she asked.\\\\n\\\\nThe woman’s expression changed. “You came back empty-handed. It came later.”\\\\n\\\\nFrom below, Mara’s voice said, “That isn’t what happened.”\\\\n\\\\nThe lantern flame bent toward the well. In its light, Mara saw wet fingerprints appearing one by one on the stair rail, climbing toward them. The boy reached for her free hand, but she passed him the key instead.\\\\n\\\\n“Lock the kitchen door,” she said. “Both of you, stay with her.”\\\\n\\\\nHe hesitated only until the woman held out her hand. Then he and the girl ran past Mara into the kitchen. Mara set the lantern on the top step and drew the little door nearly shut. She kept her eye to the gap as the first wet hand came into view.\\\"}\",\n        \"refusal\": null,\n        \"annotations\": []\n      },\n      \"finish_reason\": \"stop\"\n    }\n  ],\n  \"usage\": {\n    \"prompt_tokens\": 391,\n    \"completion_tokens\": 438,\n    \"total_tokens\": 829,\n    \"prompt_tokens_details\": {\n      \"cached_tokens\": 0,\n      \"cache_write_tokens\": 0,\n      \"audio_tokens\": 0\n    },\n    \"completion_tokens_details\": {\n      \"reasoning_tokens\": 28,\n      \"audio_tokens\": 0,\n      \"accepted_prediction_tokens\": 0,\n      \"rejected_prediction_tokens\": 0\n    }\n  },\n  \"service_tier\": \"default\",\n  \"system_fingerprint\": null\n}\n",
+  "response_headers": {
+    "Date": "Wed, 23 Sep 2026 00:14:47 GMT",
+    "openai-processing-ms": "7378",
+    "x-request-id": "req_eb88dd62293640ed95e5b5f4e3255791"
+  },
+  "output": "{\"rule\":\"Return this JSON object with the rule field unchanged and, in the text field, an original fictional passage of about 250 words that comes immediately AFTER the current text in the same invented story.\",\"text\":\"Mara knew the voice. She had used it to coax frightened children out from under beds, to ask the boy if he had washed his hands. Hearing it come up the stair made her grip the lantern handle until it hurt.\\n\\n“Don’t answer,” said the woman in the blue hood.\\n\\nBelow them, a foot settled on the next step. The girl wound the loose thread around her fingers and pulled. Somewhere in the dark, wood gave a sharp crack. The footsteps stopped.\\n\\n“It can’t cross a line it remembers,” the girl whispered. “Not for long.”\\n\\nMara looked at the thread stretching from the girl’s fist to a nail in the doorframe. She remembered tying that nail in place with a strip torn from her dress. She remembered the children asleep at the table. Then she remembered going down the stair alone, carrying the green cup.\\n\\n“What did I bring back?” she asked.\\n\\nThe woman’s expression changed. “You came back empty-handed. It came later.”\\n\\nFrom below, Mara’s voice said, “That isn’t what happened.”\\n\\nThe lantern flame bent toward the well. In its light, Mara saw wet fingerprints appearing one by one on the stair rail, climbing toward them. The boy reached for her free hand, but she passed him the key instead.\\n\\n“Lock the kitchen door,” she said. “Both of you, stay with her.”\\n\\nHe hesitated only until the woman held out her hand. Then he and the girl ran past Mara into the kitchen. Mara set the lantern on the top step and drew the little door nearly shut. She kept her eye to the gap as the first wet hand came into view.\"}",
+  "output_sha256": "8bad03048cb04a67d5aa40720a50f3b7923a9bc19448299419d1c5ed1302f0bc",
+  "finish_reason": "stop",
+  "refusal": null,
+  "returned_model": "gpt-6-sol",
+  "usage": {
+    "prompt_tokens": 391,
+    "completion_tokens": 438,
+    "total_tokens": 829,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 28,
+      "audio_tokens": 0,
+      "accepted_prediction_tokens": 0,
+      "rejected_prediction_tokens": 0
+    }
+  },
+  "format": {
+    "json_object": true,
+    "rule_unchanged": true,
+    "passage_is_string": true,
+    "passage_sha256": "b0458c30dd7aecca7a7d6d77b1cf5f78edf7b539e2ab634de89c2e3f7921fe86",
+    "passage_words": 274
+  },
+  "finished_at": "2026-09-23T00:14:42.657210+00:00",
+  "latency_seconds": 7.521,
+  "usage_cost_upper_estimate_usd": 0.005162,
+  "stream_status": "active",
+  "budget": {
+    "usage_cost_upper_estimate_usd": 0.4154452,
+    "uncertain_cost_reserve_usd": 0.0,
+    "in_flight_reserve_usd": 0.3203902,
+    "limit_usd": 5.0
+  }
+}

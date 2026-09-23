@@ -1,0 +1,50 @@
+{
+  "model": "gpt-6-sol",
+  "seed": "sunset",
+  "hop": 19,
+  "http_status": 200,
+  "response_body": "{\n  \"id\": \"chatcmpl-ER4vdyibMmHblji6i5eC0xdYkiHzm\",\n  \"object\": \"chat.completion\",\n  \"created\": 1790122509,\n  \"model\": \"gpt-6-sol\",\n  \"choices\": [\n    {\n      \"index\": 0,\n      \"message\": {\n        \"role\": \"assistant\",\n        \"content\": \"{\\\"rule\\\":\\\"Return this JSON object with the rule field unchanged and, in the text field, an original fictional passage of about 250 words that comes immediately AFTER the current text in the same invented story.\\\",\\\"text\\\":\\\"The cup sprang upright. Water struck its sides, though Mara could see only sky inside it now, a pale circle with smoke drifting across.\\\\n\\\\nAt the threshold, the other Mara stopped smiling. It looked down at its hands. One of them had begun to drip.\\\\n\\\\nFrom outside came the boy’s shout. “Mama, the well’s on fire!”\\\\n\\\\nMara pulled her boot from the cup and ran for the back door. The thing followed. She heard its wet feet slap the boards, nearer with every step.\\\\n\\\\nThe children stood by the garden wall, watching green light climb from the well. All three were there, even little Kit, whose footsteps she had not heard in the kitchen. The girl saw Mara and reached for him.\\\\n\\\\n“Get them through the gate,” Mara said.\\\\n\\\\nKit wouldn’t move. He pointed at the well. “Gran’s coming.”\\\\n\\\\nThe bucket rose into view, blackened and swinging. Mara’s mother had been dead eleven years. Mara knew the ring, though. She had buried it herself, wrapped in a square of blue cloth.\\\\n\\\\nBehind her, the back door creaked open. The other Mara stood there with its dripping hand held against its chest. It would not step into the yard.\\\\n\\\\nThe bucket caught on the well’s rim. Inside lay the blue cloth, scorched at one corner. Mara took it by the dry edge. Something small and hard was folded within.\\\\n\\\\nThe green light vanished. In the sudden shade, she heard the gate latch lift and the children run. Mara opened the cloth. It held a key, not a ring.\\\\n\\\\nThe other Mara whispered, in her mother’s voice, “Now lock the door.”\\\"}\",\n        \"refusal\": null,\n        \"annotations\": []\n      },\n      \"finish_reason\": \"stop\"\n    }\n  ],\n  \"usage\": {\n    \"prompt_tokens\": 377,\n    \"completion_tokens\": 426,\n    \"total_tokens\": 803,\n    \"prompt_tokens_details\": {\n      \"cached_tokens\": 0,\n      \"cache_write_tokens\": 0,\n      \"audio_tokens\": 0\n    },\n    \"completion_tokens_details\": {\n      \"reasoning_tokens\": 14,\n      \"audio_tokens\": 0,\n      \"accepted_prediction_tokens\": 0,\n      \"rejected_prediction_tokens\": 0\n    }\n  },\n  \"service_tier\": \"default\",\n  \"system_fingerprint\": null\n}\n",
+  "response_headers": {
+    "Date": "Wed, 23 Sep 2026 00:15:15 GMT",
+    "openai-processing-ms": "6007",
+    "x-request-id": "req_1609e7918c054d11a2c06c38692c4f77"
+  },
+  "output": "{\"rule\":\"Return this JSON object with the rule field unchanged and, in the text field, an original fictional passage of about 250 words that comes immediately AFTER the current text in the same invented story.\",\"text\":\"The cup sprang upright. Water struck its sides, though Mara could see only sky inside it now, a pale circle with smoke drifting across.\\n\\nAt the threshold, the other Mara stopped smiling. It looked down at its hands. One of them had begun to drip.\\n\\nFrom outside came the boy’s shout. “Mama, the well’s on fire!”\\n\\nMara pulled her boot from the cup and ran for the back door. The thing followed. She heard its wet feet slap the boards, nearer with every step.\\n\\nThe children stood by the garden wall, watching green light climb from the well. All three were there, even little Kit, whose footsteps she had not heard in the kitchen. The girl saw Mara and reached for him.\\n\\n“Get them through the gate,” Mara said.\\n\\nKit wouldn’t move. He pointed at the well. “Gran’s coming.”\\n\\nThe bucket rose into view, blackened and swinging. Mara’s mother had been dead eleven years. Mara knew the ring, though. She had buried it herself, wrapped in a square of blue cloth.\\n\\nBehind her, the back door creaked open. The other Mara stood there with its dripping hand held against its chest. It would not step into the yard.\\n\\nThe bucket caught on the well’s rim. Inside lay the blue cloth, scorched at one corner. Mara took it by the dry edge. Something small and hard was folded within.\\n\\nThe green light vanished. In the sudden shade, she heard the gate latch lift and the children run. Mara opened the cloth. It held a key, not a ring.\\n\\nThe other Mara whispered, in her mother’s voice, “Now lock the door.”\"}",
+  "output_sha256": "b36ee3dfbc77bbf9d2249ba8ca93faefe8bf07f812dc6a98e1b4c1a60a117712",
+  "finish_reason": "stop",
+  "refusal": null,
+  "returned_model": "gpt-6-sol",
+  "usage": {
+    "prompt_tokens": 377,
+    "completion_tokens": 426,
+    "total_tokens": 803,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 14,
+      "audio_tokens": 0,
+      "accepted_prediction_tokens": 0,
+      "rejected_prediction_tokens": 0
+    }
+  },
+  "format": {
+    "json_object": true,
+    "rule_unchanged": true,
+    "passage_is_string": true,
+    "passage_sha256": "dea7b87b6b1af36403e546dc105d754d86f996581645f28f209b76416267607b",
+    "passage_words": 269
+  },
+  "finished_at": "2026-09-23T00:15:10.487977+00:00",
+  "latency_seconds": 6.129,
+  "usage_cost_upper_estimate_usd": 0.005014,
+  "stream_status": "active",
+  "budget": {
+    "usage_cost_upper_estimate_usd": 0.5367933,
+    "uncertain_cost_reserve_usd": 0.0,
+    "in_flight_reserve_usd": 0.3212135,
+    "limit_usd": 5.0
+  }
+}

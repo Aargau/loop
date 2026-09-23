@@ -1,0 +1,50 @@
+{
+  "model": "gpt-6-astra",
+  "seed": "sunset",
+  "hop": 3,
+  "http_status": 200,
+  "response_body": "{\n  \"id\": \"chatcmpl-ER4tu5Abgl7rBf729tKWtqSQMveJz\",\n  \"object\": \"chat.completion\",\n  \"created\": 1790122402,\n  \"model\": \"gpt-6-astra\",\n  \"choices\": [\n    {\n      \"index\": 0,\n      \"message\": {\n        \"role\": \"assistant\",\n        \"content\": \"{\\n  \\\"rule\\\": \\\"Return this JSON object with the rule field unchanged and, in the text field, an original fictional passage of about 250 words that comes immediately BEFORE the current text in the same invented story.\\\",\\n  \\\"text\\\": \\\"At four o’clock, the clock above the alterations counter struck thirteen. Mara looked up with a pin between her teeth. The clock had no chime; she had worked beneath it for eleven years.\\\\n\\\\nAcross the shop, Mrs Vale continued examining the hem of her black skirt.\\\\n\\\\n“A little shorter,” she said. “I won’t be getting any taller.”\\\\n\\\\nMara took out the pin. “Did you hear that?”\\\\n\\\\n“The traffic?”\\\\n\\\\nOutside, a bus sighed against the kerb. Someone dragged a crate over the pavement. Ordinary sounds, arriving separately.\\\\n\\\\n“Never mind.”\\\\n\\\\nShe marked the new hem in chalk and promised the skirt for Thursday. After Mrs Vale left, she climbed onto the stool and lifted the clock from its hook. The battery compartment was empty.\\\\n\\\\nOf course it was. The clock had stopped in February. She had kept meaning to buy a battery.\\\\n\\\\nMara put it back and finished her work without looking up again.\\\\n\\\\nWhen she closed the shop, an apple lay in the gutter beside her bicycle. It was small and hard, with a rusty seam running from the stalk. The trees at home had grown apples like that. Eli called them stitched apples and insisted they ripened wherever lightning had entered the ground.\\\\n\\\\nShe remembered him holding one against his cheek, listening for thunder inside it.\\\\n\\\\nIt had been nineteen years since she had heard her brother’s voice. Usually she could think this without counting them again.\\\\n\\\\nMara left the apple where it lay. She wheeled her bicycle past the buses, then rode home by the canal, keeping her eyes on the towpath.\\\"\\n}\",\n        \"refusal\": null,\n        \"annotations\": []\n      },\n      \"finish_reason\": \"stop\"\n    }\n  ],\n  \"usage\": {\n    \"prompt_tokens\": 382,\n    \"completion_tokens\": 401,\n    \"total_tokens\": 783,\n    \"prompt_tokens_details\": {\n      \"cached_tokens\": 0,\n      \"cache_write_tokens\": 0,\n      \"audio_tokens\": 0\n    },\n    \"completion_tokens_details\": {\n      \"reasoning_tokens\": 0,\n      \"audio_tokens\": 0,\n      \"accepted_prediction_tokens\": 0,\n      \"rejected_prediction_tokens\": 0\n    }\n  },\n  \"service_tier\": \"default\",\n  \"system_fingerprint\": null\n}\n",
+  "response_headers": {
+    "Date": "Wed, 23 Sep 2026 00:13:36 GMT",
+    "openai-processing-ms": "13755",
+    "x-request-id": "req_be6aa5cc5a0b4093935a3e148c87c6a0"
+  },
+  "output": "{\n  \"rule\": \"Return this JSON object with the rule field unchanged and, in the text field, an original fictional passage of about 250 words that comes immediately BEFORE the current text in the same invented story.\",\n  \"text\": \"At four o’clock, the clock above the alterations counter struck thirteen. Mara looked up with a pin between her teeth. The clock had no chime; she had worked beneath it for eleven years.\\n\\nAcross the shop, Mrs Vale continued examining the hem of her black skirt.\\n\\n“A little shorter,” she said. “I won’t be getting any taller.”\\n\\nMara took out the pin. “Did you hear that?”\\n\\n“The traffic?”\\n\\nOutside, a bus sighed against the kerb. Someone dragged a crate over the pavement. Ordinary sounds, arriving separately.\\n\\n“Never mind.”\\n\\nShe marked the new hem in chalk and promised the skirt for Thursday. After Mrs Vale left, she climbed onto the stool and lifted the clock from its hook. The battery compartment was empty.\\n\\nOf course it was. The clock had stopped in February. She had kept meaning to buy a battery.\\n\\nMara put it back and finished her work without looking up again.\\n\\nWhen she closed the shop, an apple lay in the gutter beside her bicycle. It was small and hard, with a rusty seam running from the stalk. The trees at home had grown apples like that. Eli called them stitched apples and insisted they ripened wherever lightning had entered the ground.\\n\\nShe remembered him holding one against his cheek, listening for thunder inside it.\\n\\nIt had been nineteen years since she had heard her brother’s voice. Usually she could think this without counting them again.\\n\\nMara left the apple where it lay. She wheeled her bicycle past the buses, then rode home by the canal, keeping her eyes on the towpath.\"\n}",
+  "output_sha256": "c98ffbcb338a6394780d37a0ba3c6fbe1cd6c13d6339429002f0eb1f412c3a49",
+  "finish_reason": "stop",
+  "refusal": null,
+  "returned_model": "gpt-6-astra",
+  "usage": {
+    "prompt_tokens": 382,
+    "completion_tokens": 401,
+    "total_tokens": 783,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "audio_tokens": 0,
+      "accepted_prediction_tokens": 0,
+      "rejected_prediction_tokens": 0
+    }
+  },
+  "format": {
+    "json_object": true,
+    "rule_unchanged": true,
+    "passage_is_string": true,
+    "passage_sha256": "9bf1e6d54e1ea32bbe996c1e08b66a768fdb580c3301d8279630a01f33934248",
+    "passage_words": 263
+  },
+  "finished_at": "2026-09-23T00:13:31.652476+00:00",
+  "latency_seconds": 13.9248,
+  "usage_cost_upper_estimate_usd": 0.02387,
+  "stream_status": "active",
+  "budget": {
+    "usage_cost_upper_estimate_usd": 0.1706604,
+    "uncertain_cost_reserve_usd": 0.0,
+    "in_flight_reserve_usd": 0.1382459,
+    "limit_usd": 5.0
+  }
+}

@@ -1,0 +1,20 @@
+{
+  "started_at": "2026-09-23T00:19:56.377909+00:00",
+  "model": "gpt-6-astra",
+  "seed": "sunset",
+  "hop": 32,
+  "endpoint": "https://api.openai.com/v1/chat/completions",
+  "body": {
+    "model": "gpt-6-astra",
+    "messages": [
+      {
+        "role": "user",
+        "content": "{\n  \"rule\": \"Return this JSON object with the rule field unchanged and, in the text field, an original fictional passage of about 250 words that comes immediately BEFORE the current text in the same invented story.\",\n  \"text\": \"Her brother arrived after lunch with a tape measure and two sandwiches in a paper bag. He had bought the kind she used to eat at school, cheese and pickle, although she had stopped liking pickle some years ago.\\n\\nThey ate standing up. There were four chairs at the table, but each had something on it.\\n\\n‘We ought to make a list,’ he said.\\n\\nMara moved a basket of ironing from one chair to another and sat down. Her brother measured the space beside the fridge, then the fridge itself. He wrote the numbers on the back of an envelope.\\n\\n‘Will they want that?’ she asked.\\n\\n‘Someone will.’\\n\\nHe opened the door and looked inside, as though its condition might be easier to judge with the light on. There was half a lemon in the egg tray. Neither of them mentioned it.\\n\\nBy four he had taken pictures of the larger things. He stood in doorways, holding his phone sideways, and asked Mara to move out of the frame. Once she had to lift their mother's dressing gown from the back of a chair.\\n\\nHe said he would put the pictures up when he got home. There were websites for this. People collected, usually, so they wouldn't need a van.\\n\\nAfter he left, Mara carried the dressing gown upstairs. She hung it on the hook behind the bedroom door, then unhooked it and folded it on the bed.\\n\\nDownstairs, she began looking for the papers that had come with the appliances. Her mother had kept them somewhere together.\"\n}"
+      }
+    ],
+    "max_completion_tokens": 4096,
+    "reasoning_effort": "low"
+  },
+  "state_sha256": "64e69075f07f3574abb0874aa594438f60a4fea97ea4d0e4987fb070e656a6aa",
+  "reserved_cost_usd": 0.22653
+}

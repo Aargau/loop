@@ -1,0 +1,50 @@
+{
+  "model": "gpt-6-sol",
+  "seed": "sunset",
+  "hop": 15,
+  "http_status": 200,
+  "response_body": "{\n  \"id\": \"chatcmpl-ER4uz4IzTJWlOY4rXe65YVZff7QcG\",\n  \"object\": \"chat.completion\",\n  \"created\": 1790122469,\n  \"model\": \"gpt-6-sol\",\n  \"choices\": [\n    {\n      \"index\": 0,\n      \"message\": {\n        \"role\": \"assistant\",\n        \"content\": \"{\\n  \\\"rule\\\": \\\"Return this JSON object with the rule field unchanged and, in the text field, an original fictional passage of about 250 words that comes immediately BEFORE the current text in the same invented story.\\\",\\n  \\\"text\\\": \\\"The evening before the funeral, Mara brought the washing in just as the rain began. Her mother’s shirts were dry, though the pegs had left small dents in the shoulders. She folded them at the kitchen table and put them in the basket without deciding what to do with them next.\\\\n\\\\nBristle waited beside his empty bowl. Mara filled it, and he sniffed the food before following her into the sitting room. On the desk lay the library books her mother had collected two weeks earlier. Mara had meant to ask whether any needed returning. She picked up the one on top, read the first line, and set it down again.\\\\n\\\\nHer aunt telephoned after supper. The minister had confirmed the time, and Mrs Vale had offered to make sandwiches. Mara wrote both things on an envelope because she could not find the notebook her aunt said was beside the telephone. They spoke about the weather, then about how many chairs might fit around the table. When her aunt asked if she should come early, Mara said she would be glad if she did.\\\\n\\\\nBefore bed, Mara took Bristle into the garden. Rain collected on the top of the wall and fell in slow drops onto the path. He wandered to the gate and stood there until she called him back. Inside, she checked the latch on the front door and turned off the kitchen light. Bristle settled on the landing while Mara went to her room. She heard him get up once in the night, his claws clicking softly across the floorboards.\\\"\\n}\",\n        \"refusal\": null,\n        \"annotations\": []\n      },\n      \"finish_reason\": \"stop\"\n    }\n  ],\n  \"usage\": {\n    \"prompt_tokens\": 383,\n    \"completion_tokens\": 396,\n    \"total_tokens\": 779,\n    \"prompt_tokens_details\": {\n      \"cached_tokens\": 0,\n      \"cache_write_tokens\": 0,\n      \"audio_tokens\": 0\n    },\n    \"completion_tokens_details\": {\n      \"reasoning_tokens\": 28,\n      \"audio_tokens\": 0,\n      \"accepted_prediction_tokens\": 0,\n      \"rejected_prediction_tokens\": 0\n    }\n  },\n  \"service_tier\": \"default\",\n  \"system_fingerprint\": null\n}\n",
+  "response_headers": {
+    "Date": "Wed, 23 Sep 2026 00:14:36 GMT",
+    "openai-processing-ms": "7022",
+    "x-request-id": "req_fe5c393af9c04491878da6144f125db2"
+  },
+  "output": "{\n  \"rule\": \"Return this JSON object with the rule field unchanged and, in the text field, an original fictional passage of about 250 words that comes immediately BEFORE the current text in the same invented story.\",\n  \"text\": \"The evening before the funeral, Mara brought the washing in just as the rain began. Her mother’s shirts were dry, though the pegs had left small dents in the shoulders. She folded them at the kitchen table and put them in the basket without deciding what to do with them next.\\n\\nBristle waited beside his empty bowl. Mara filled it, and he sniffed the food before following her into the sitting room. On the desk lay the library books her mother had collected two weeks earlier. Mara had meant to ask whether any needed returning. She picked up the one on top, read the first line, and set it down again.\\n\\nHer aunt telephoned after supper. The minister had confirmed the time, and Mrs Vale had offered to make sandwiches. Mara wrote both things on an envelope because she could not find the notebook her aunt said was beside the telephone. They spoke about the weather, then about how many chairs might fit around the table. When her aunt asked if she should come early, Mara said she would be glad if she did.\\n\\nBefore bed, Mara took Bristle into the garden. Rain collected on the top of the wall and fell in slow drops onto the path. He wandered to the gate and stood there until she called him back. Inside, she checked the latch on the front door and turned off the kitchen light. Bristle settled on the landing while Mara went to her room. She heard him get up once in the night, his claws clicking softly across the floorboards.\"\n}",
+  "output_sha256": "19d30fb32035a75b52f286ffa66ce52aa342315d18b17a8f4cb1d0eb3582a804",
+  "finish_reason": "stop",
+  "refusal": null,
+  "returned_model": "gpt-6-sol",
+  "usage": {
+    "prompt_tokens": 383,
+    "completion_tokens": 396,
+    "total_tokens": 779,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 28,
+      "audio_tokens": 0,
+      "accepted_prediction_tokens": 0,
+      "rejected_prediction_tokens": 0
+    }
+  },
+  "format": {
+    "json_object": true,
+    "rule_unchanged": true,
+    "passage_is_string": true,
+    "passage_sha256": "7e40a31332c109caa6fcdacccafb6818e0ecb67b5aea9dcc9e62d0e35c7f7f18",
+    "passage_words": 263
+  },
+  "finished_at": "2026-09-23T00:14:31.847745+00:00",
+  "latency_seconds": 7.1478,
+  "usage_cost_upper_estimate_usd": 0.004726,
+  "stream_status": "active",
+  "budget": {
+    "usage_cost_upper_estimate_usd": 0.4027371,
+    "uncertain_cost_reserve_usd": 0.0,
+    "in_flight_reserve_usd": 0.3202892,
+    "limit_usd": 5.0
+  }
+}

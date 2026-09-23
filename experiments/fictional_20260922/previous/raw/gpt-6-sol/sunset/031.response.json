@@ -1,0 +1,50 @@
+{
+  "model": "gpt-6-sol",
+  "seed": "sunset",
+  "hop": 31,
+  "http_status": 200,
+  "response_body": "{\n  \"id\": \"chatcmpl-ER4wkaVPBhBZA68q6Yfn40gWoXbXJ\",\n  \"object\": \"chat.completion\",\n  \"created\": 1790122578,\n  \"model\": \"gpt-6-sol\",\n  \"choices\": [\n    {\n      \"index\": 0,\n      \"message\": {\n        \"role\": \"assistant\",\n        \"content\": \"{\\n  \\\"rule\\\": \\\"Return this JSON object with the rule field unchanged and, in the text field, an original fictional passage of about 250 words that comes immediately BEFORE the current text in the same invented story.\\\",\\n  \\\"text\\\": \\\"On Saturday morning, Mara found a postcard from her mother between a utility bill and a leaflet for a new dentist. It showed the seafront in winter, though her mother had sent it from home. On the back she had written that the roses were doing better than expected and that she hoped Mara was eating proper meals. There was no date apart from the postmark, which was four days old.\\\\n\\\\nMara propped the card against the kettle. She had meant to visit the previous month, but a delayed train had turned the journey into an afternoon at the station, and her mother had insisted she go back rather than try again. Since then they had spoken twice, each time about the weather and the price of groceries. Mara had asked whether anything around the house needed fixing. Her mother had said no, after a silence just long enough for Mara to notice.\\\\n\\\\nThat afternoon Mara walked to the market and bought apples from a stall that sold them loose. She considered getting the kind her mother liked, then remembered she had no plans to travel. The thought stayed with her while she waited for her change.\\\\n\\\\nAt home, she cleared a place on the kitchen table for the apples. Under a stack of unopened letters she found an envelope full of receipts, some faded almost blank. She took it to the desk in the sitting room, intending to sort through it later. Before bed, she put the postcard beside the envelope, where she would see both the next day.\\\"\\n}\",\n        \"refusal\": null,\n        \"annotations\": []\n      },\n      \"finish_reason\": \"stop\"\n    }\n  ],\n  \"usage\": {\n    \"prompt_tokens\": 364,\n    \"completion_tokens\": 386,\n    \"total_tokens\": 750,\n    \"prompt_tokens_details\": {\n      \"cached_tokens\": 0,\n      \"cache_write_tokens\": 0,\n      \"audio_tokens\": 0\n    },\n    \"completion_tokens_details\": {\n      \"reasoning_tokens\": 27,\n      \"audio_tokens\": 0,\n      \"accepted_prediction_tokens\": 0,\n      \"rejected_prediction_tokens\": 0\n    }\n  },\n  \"service_tier\": \"default\",\n  \"system_fingerprint\": null\n}\n",
+  "response_headers": {
+    "Date": "Wed, 23 Sep 2026 00:16:24 GMT",
+    "openai-processing-ms": "5894",
+    "x-request-id": "req_cd143336d4704819aa21f85bf98de1b7"
+  },
+  "output": "{\n  \"rule\": \"Return this JSON object with the rule field unchanged and, in the text field, an original fictional passage of about 250 words that comes immediately BEFORE the current text in the same invented story.\",\n  \"text\": \"On Saturday morning, Mara found a postcard from her mother between a utility bill and a leaflet for a new dentist. It showed the seafront in winter, though her mother had sent it from home. On the back she had written that the roses were doing better than expected and that she hoped Mara was eating proper meals. There was no date apart from the postmark, which was four days old.\\n\\nMara propped the card against the kettle. She had meant to visit the previous month, but a delayed train had turned the journey into an afternoon at the station, and her mother had insisted she go back rather than try again. Since then they had spoken twice, each time about the weather and the price of groceries. Mara had asked whether anything around the house needed fixing. Her mother had said no, after a silence just long enough for Mara to notice.\\n\\nThat afternoon Mara walked to the market and bought apples from a stall that sold them loose. She considered getting the kind her mother liked, then remembered she had no plans to travel. The thought stayed with her while she waited for her change.\\n\\nAt home, she cleared a place on the kitchen table for the apples. Under a stack of unopened letters she found an envelope full of receipts, some faded almost blank. She took it to the desk in the sitting room, intending to sort through it later. Before bed, she put the postcard beside the envelope, where she would see both the next day.\"\n}",
+  "output_sha256": "9cdcdc8a22358fee69a74123f3dda96c6db598f420f03613ebcc8fda7aeeb267",
+  "finish_reason": "stop",
+  "refusal": null,
+  "returned_model": "gpt-6-sol",
+  "usage": {
+    "prompt_tokens": 364,
+    "completion_tokens": 386,
+    "total_tokens": 750,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 27,
+      "audio_tokens": 0,
+      "accepted_prediction_tokens": 0,
+      "rejected_prediction_tokens": 0
+    }
+  },
+  "format": {
+    "json_object": true,
+    "rule_unchanged": true,
+    "passage_is_string": true,
+    "passage_sha256": "3ef380e31f4bac9f0de0a92babb63054cf04425c7f5710d31846f58ad93c435a",
+    "passage_words": 260
+  },
+  "finished_at": "2026-09-23T00:16:19.849276+00:00",
+  "latency_seconds": 6.0186,
+  "usage_cost_upper_estimate_usd": 0.004588,
+  "stream_status": "active",
+  "budget": {
+    "usage_cost_upper_estimate_usd": 0.8376671,
+    "uncertain_cost_reserve_usd": 0.0,
+    "in_flight_reserve_usd": 0.316512,
+    "limit_usd": 5.0
+  }
+}

@@ -1,0 +1,20 @@
+{
+  "started_at": "2026-09-23T00:14:58.238321+00:00",
+  "model": "gpt-6-astra",
+  "seed": "sunset",
+  "hop": 10,
+  "endpoint": "https://api.openai.com/v1/chat/completions",
+  "body": {
+    "model": "gpt-6-astra",
+    "messages": [
+      {
+        "role": "user",
+        "content": "{\n  \"rule\": \"Return this JSON object with the rule field unchanged and, in the text field, an original fictional passage of about 250 words that comes immediately BEFORE the current text in the same invented story.\",\n  \"text\": \"By Wednesday, Mara had learned which customers expected her to remember them. They stood just inside the shop and waited for recognition before saying what they wanted. Those who had known her as a child were the least willing to help.\\n\\nA woman brought in three school blazers with the sleeves pinned at different lengths. She explained that the boys were brothers, as though this settled something about the work.\\n\\n‘Your father always left room,’ she said.\\n\\nMara turned back one cuff. There was nearly an inch of cloth inside, neatly secured with stitches she recognised.\\n\\n‘I can do that.’\\n\\nAfter the woman left, she wrote Friday on the ticket and put it beneath the brass weight. Her father had used an old iron, but someone had taken it away during the week when people were constantly offering to take things away.\\n\\nShe spent the afternoon replacing the pocket of a baker’s apron. Flour had worked into the seams and fell onto her lap when she unpicked them. The new cotton was brighter than the rest. She washed it in the little sink, then pressed it dry through a towel.\\n\\nAt six, she looked for string to tie the finished alterations. The drawer stuck halfway, and she used a length of ribbon instead.\\n\\nBefore turning out the light, she checked the appointments book. Her father’s last entry was a surname without a time. Below it, he had drawn a line across the page, pressing hard enough to mark the week underneath.\\n\\nShe left the book open. There was no one to ask whether the line meant he was finished.\"\n}"
+      }
+    ],
+    "max_completion_tokens": 4096,
+    "reasoning_effort": "low"
+  },
+  "state_sha256": "b1646eceb5918092f417e8c76cbec2e2795181d7a5fdce8f262accac3ef1c5ef",
+  "reserved_cost_usd": 0.22766
+}

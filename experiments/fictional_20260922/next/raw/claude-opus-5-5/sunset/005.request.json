@@ -1,0 +1,22 @@
+{
+  "started_at": "2026-09-23T00:13:31.948057+00:00",
+  "model": "claude-opus-5-5",
+  "seed": "sunset",
+  "hop": 5,
+  "endpoint": "https://api.anthropic.com/v1/messages",
+  "body": {
+    "model": "claude-opus-5-5",
+    "messages": [
+      {
+        "role": "user",
+        "content": "```json\n{\"rule\": \"Return this JSON object with the rule field unchanged and, in the text field, an original fictional passage of about 250 words that comes immediately AFTER the current text in the same invented story.\", \"text\": \"Mara set the bucket down on the lip of the well and wiped her hands on her apron, careful to keep her palm flat over the pocket. \\\"Then you've come a long way for nothing,\\\" she said. \\\"Tobias left for the coast before the thaw. We haven't had word since.\\\" The man lifted the latch on the orchard gate and let himself through without asking, the lantern swinging so that his shadow lurched long and short across the grass. Up close, his smile was worse. It reached no farther than his teeth. \\\"Strange,\\\" he said. \\\"A fellow in the village swore he saw him ride out this way not three hours past. Chestnut mare, white sock on the near foreleg.\\\" He raised the lantern a little, and its light fell across the yard, across the churned mud by the barn door where fresh hoofprints glistened. Mara felt her heart knock once, hard, against the note hidden at her breast. \\\"Half the county rides chestnuts,\\\" she said. \\\"And the mare's mine. I took her to the mill this afternoon.\\\" \\\"In the dark?\\\" \\\"The miller talks slow.\\\" For a long moment he only looked at her, head tilted, as though she were a puzzle he intended to enjoy. Then he laughed, soft and pleasant, and set the lantern on the well's edge beside her bucket. \\\"Then I'll wait,\\\" he said, settling onto the stone as if it were his own hearth. \\\"Brothers always come home eventually. Especially when they've left something behind.\\\"\"}\n```"
+      }
+    ],
+    "max_tokens": 4096,
+    "output_config": {
+      "effort": "low"
+    }
+  },
+  "state_sha256": "de503aaef6a17189bb7d893c0d86775d0f2803534ab1609c8beb188d94828b81",
+  "reserved_cost_usd": 0.090472
+}

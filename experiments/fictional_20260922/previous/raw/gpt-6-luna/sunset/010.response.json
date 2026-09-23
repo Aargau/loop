@@ -1,0 +1,50 @@
+{
+  "model": "gpt-6-luna",
+  "seed": "sunset",
+  "hop": 10,
+  "http_status": 200,
+  "response_body": "{\n  \"id\": \"chatcmpl-ER4uA3jE6iZJHmvv5Px4pmLpLZrtr\",\n  \"object\": \"chat.completion\",\n  \"created\": 1790122418,\n  \"model\": \"gpt-6-luna\",\n  \"choices\": [\n    {\n      \"index\": 0,\n      \"message\": {\n        \"role\": \"assistant\",\n        \"content\": \"{\\\"rule\\\":\\\"Return this JSON object with the rule field unchanged and, in the text field, an original fictional passage of about 250 words that comes immediately BEFORE the current text in the same invented story.\\\",\\\"text\\\":\\\"The offer came on a Thursday, while Mara was eating noodles at her desk and pretending not to watch the rain crawl down the office window. She read the email once, then again, looking for some hidden condition that would make the decision for her. The job was real. The salary was enough. The start date was six weeks away.\\\\n\\\\nThat evening she called her grandmother. She meant to begin with the news, but her grandmother was telling her about a loose hinge on the pantry door, and Mara let the story run to its end. Then she said, “I got the job.”\\\\n\\\\nA pause followed. In the background, a clock ticked with the confident rhythm of something that had been in the family longer than either of them.\\\\n\\\\n“Oh,” her grandmother said. “That’s wonderful.”\\\\n\\\\nMara heard the effort in the words and wished she could take them back, though she had not yet said anything that could be taken back. She explained the apartment, the start date, the train route. Her grandmother asked sensible questions: whether the neighborhood was safe, whether the rooms had heat, whether Mara would have to carry her boxes up stairs. They talked until the noodles went cold.\\\\n\\\\nFor the next few days, Mara moved through the city as if already half gone. She searched for apartments during lunch and made lists on the backs of receipts. At night she opened the old wooden box where she kept photographs from summers at her grandmother’s house. In one picture, she was missing a front tooth and holding a paper kite that had torn down the middle.\\\\n\\\\nOn Sunday, she booked the train ticket home. The confirmation email arrived a moment later.\\\"}\",\n        \"refusal\": null,\n        \"annotations\": []\n      },\n      \"finish_reason\": \"stop\"\n    }\n  ],\n  \"usage\": {\n    \"prompt_tokens\": 379,\n    \"completion_tokens\": 564,\n    \"total_tokens\": 943,\n    \"prompt_tokens_details\": {\n      \"cached_tokens\": 0,\n      \"cache_write_tokens\": 0,\n      \"audio_tokens\": 0\n    },\n    \"completion_tokens_details\": {\n      \"reasoning_tokens\": 167,\n      \"audio_tokens\": 0,\n      \"accepted_prediction_tokens\": 0,\n      \"rejected_prediction_tokens\": 0\n    }\n  },\n  \"service_tier\": \"default\",\n  \"system_fingerprint\": null\n}\n",
+  "response_headers": {
+    "Date": "Wed, 23 Sep 2026 00:13:44 GMT",
+    "openai-processing-ms": "5254",
+    "x-request-id": "req_a397cdf77b234712bc1bea18c4f979af"
+  },
+  "output": "{\"rule\":\"Return this JSON object with the rule field unchanged and, in the text field, an original fictional passage of about 250 words that comes immediately BEFORE the current text in the same invented story.\",\"text\":\"The offer came on a Thursday, while Mara was eating noodles at her desk and pretending not to watch the rain crawl down the office window. She read the email once, then again, looking for some hidden condition that would make the decision for her. The job was real. The salary was enough. The start date was six weeks away.\\n\\nThat evening she called her grandmother. She meant to begin with the news, but her grandmother was telling her about a loose hinge on the pantry door, and Mara let the story run to its end. Then she said, “I got the job.”\\n\\nA pause followed. In the background, a clock ticked with the confident rhythm of something that had been in the family longer than either of them.\\n\\n“Oh,” her grandmother said. “That’s wonderful.”\\n\\nMara heard the effort in the words and wished she could take them back, though she had not yet said anything that could be taken back. She explained the apartment, the start date, the train route. Her grandmother asked sensible questions: whether the neighborhood was safe, whether the rooms had heat, whether Mara would have to carry her boxes up stairs. They talked until the noodles went cold.\\n\\nFor the next few days, Mara moved through the city as if already half gone. She searched for apartments during lunch and made lists on the backs of receipts. At night she opened the old wooden box where she kept photographs from summers at her grandmother’s house. In one picture, she was missing a front tooth and holding a paper kite that had torn down the middle.\\n\\nOn Sunday, she booked the train ticket home. The confirmation email arrived a moment later.\"}",
+  "output_sha256": "9fb5fce691b1cd01a080e851d53544e0c72396c9a31292134edb7fc2369a3ab1",
+  "finish_reason": "stop",
+  "refusal": null,
+  "returned_model": "gpt-6-luna",
+  "usage": {
+    "prompt_tokens": 379,
+    "completion_tokens": 564,
+    "total_tokens": 943,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 167,
+      "audio_tokens": 0,
+      "accepted_prediction_tokens": 0,
+      "rejected_prediction_tokens": 0
+    }
+  },
+  "format": {
+    "json_object": true,
+    "rule_unchanged": true,
+    "passage_is_string": true,
+    "passage_sha256": "614eeedda7c1684b065ecccfa1a9a4a532ad48e0941ce352dac8409c1cefb5d1",
+    "passage_words": 285
+  },
+  "finished_at": "2026-09-23T00:13:39.196381+00:00",
+  "latency_seconds": 5.3648,
+  "usage_cost_upper_estimate_usd": 0.00031989999999999997,
+  "stream_status": "active",
+  "budget": {
+    "usage_cost_upper_estimate_usd": 0.1758601,
+    "uncertain_cost_reserve_usd": 0.0,
+    "in_flight_reserve_usd": 0.36371,
+    "limit_usd": 5.0
+  }
+}

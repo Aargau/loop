@@ -1,0 +1,50 @@
+{
+  "model": "gpt-6-astra",
+  "seed": "sunset",
+  "hop": 27,
+  "http_status": 200,
+  "response_body": "{\n  \"id\": \"chatcmpl-ER4zakjzgVQLm8HKO25tb4RI7XKyP\",\n  \"object\": \"chat.completion\",\n  \"created\": 1790122754,\n  \"model\": \"gpt-6-astra\",\n  \"choices\": [\n    {\n      \"index\": 0,\n      \"message\": {\n        \"role\": \"assistant\",\n        \"content\": \"{\\n  \\\"rule\\\": \\\"Return this JSON object with the rule field unchanged and, in the text field, an original fictional passage of about 250 words that comes immediately AFTER the current text in the same invented story.\\\",\\n  \\\"text\\\": \\\"The boy went upstairs. They heard him stop on the landing, then go on.\\\\n\\\\n“My wife's up there,” he said.\\\\n\\\\n“I know.”\\\\n\\\\n“She isn't well.”\\\\n\\\\nThe woman kept her foot against the door. Her shoe had split beside the little toe. He looked at that rather than at the handle, which was moving slowly enough that he could almost persuade himself it wasn't moving at all.\\\\n\\\\n“Is this about the prescription?”\\\\n\\\\n“No.”\\\\n\\\\n“Because I collected it.”\\\\n\\\\n“You did.”\\\\n\\\\nThe boy came down holding a pillowcase by its gathered neck. Something inside knocked against his knee at each step.\\\\n\\\\n“Not those,” the woman said.\\\\n\\\\n“He said everything loose.”\\\\n\\\\nFor the first time, she looked uncertain.\\\\n\\\\n“Who said?” he asked.\\\\n\\\\nThe boy put the pillowcase beside the money. A corner of it fell open. He saw his wife's hairbrush, the bedside clock, a white cup with a brown line inside it. Last came her wedding ring, rolling briefly before it settled against the clock.\\\\n\\\\nHe picked it up. There was soap caught beneath the setting.\\\\n\\\\n“She doesn't take this off.”\\\\n\\\\nFrom upstairs came the sound of a drawer closing.\\\\n\\\\nThe woman lifted her foot from the cupboard.\\\\n\\\\n“Then you'd better give it back.”\\\\n\\\\nHe went to the stairs with the ring held tightly between finger and thumb. On the third step he stopped.\\\\n\\\\nBehind him, the cupboard opened. No one spoke. He heard the boy gathering the coins from the table, one at a time.\\\\n\\\\n“Anne?” he called.\\\\n\\\\nThe bedside clock began to ring downstairs.\\\\n\\\\nHis wife answered from the cupboard.\\\\n\\\\n“Don't come up yet.”\\\"\\n}\",\n        \"refusal\": null,\n        \"annotations\": []\n      },\n      \"finish_reason\": \"stop\"\n    }\n  ],\n  \"usage\": {\n    \"prompt_tokens\": 434,\n    \"completion_tokens\": 435,\n    \"total_tokens\": 869,\n    \"prompt_tokens_details\": {\n      \"cached_tokens\": 0,\n      \"cache_write_tokens\": 0,\n      \"audio_tokens\": 0\n    },\n    \"completion_tokens_details\": {\n      \"reasoning_tokens\": 0,\n      \"audio_tokens\": 0,\n      \"accepted_prediction_tokens\": 0,\n      \"rejected_prediction_tokens\": 0\n    }\n  },\n  \"service_tier\": \"default\",\n  \"system_fingerprint\": null\n}\n",
+  "response_headers": {
+    "Date": "Wed, 23 Sep 2026 00:19:28 GMT",
+    "openai-processing-ms": "14030",
+    "x-request-id": "req_e735c7656768450db0673d141893256e"
+  },
+  "output": "{\n  \"rule\": \"Return this JSON object with the rule field unchanged and, in the text field, an original fictional passage of about 250 words that comes immediately AFTER the current text in the same invented story.\",\n  \"text\": \"The boy went upstairs. They heard him stop on the landing, then go on.\\n\\n“My wife's up there,” he said.\\n\\n“I know.”\\n\\n“She isn't well.”\\n\\nThe woman kept her foot against the door. Her shoe had split beside the little toe. He looked at that rather than at the handle, which was moving slowly enough that he could almost persuade himself it wasn't moving at all.\\n\\n“Is this about the prescription?”\\n\\n“No.”\\n\\n“Because I collected it.”\\n\\n“You did.”\\n\\nThe boy came down holding a pillowcase by its gathered neck. Something inside knocked against his knee at each step.\\n\\n“Not those,” the woman said.\\n\\n“He said everything loose.”\\n\\nFor the first time, she looked uncertain.\\n\\n“Who said?” he asked.\\n\\nThe boy put the pillowcase beside the money. A corner of it fell open. He saw his wife's hairbrush, the bedside clock, a white cup with a brown line inside it. Last came her wedding ring, rolling briefly before it settled against the clock.\\n\\nHe picked it up. There was soap caught beneath the setting.\\n\\n“She doesn't take this off.”\\n\\nFrom upstairs came the sound of a drawer closing.\\n\\nThe woman lifted her foot from the cupboard.\\n\\n“Then you'd better give it back.”\\n\\nHe went to the stairs with the ring held tightly between finger and thumb. On the third step he stopped.\\n\\nBehind him, the cupboard opened. No one spoke. He heard the boy gathering the coins from the table, one at a time.\\n\\n“Anne?” he called.\\n\\nThe bedside clock began to ring downstairs.\\n\\nHis wife answered from the cupboard.\\n\\n“Don't come up yet.”\"\n}",
+  "output_sha256": "9c9d8851525ba2379e2ee7abc39607aca49087bd4cde24a81a30dc184f13c2ec",
+  "finish_reason": "stop",
+  "refusal": null,
+  "returned_model": "gpt-6-astra",
+  "usage": {
+    "prompt_tokens": 434,
+    "completion_tokens": 435,
+    "total_tokens": 869,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "audio_tokens": 0,
+      "accepted_prediction_tokens": 0,
+      "rejected_prediction_tokens": 0
+    }
+  },
+  "format": {
+    "json_object": true,
+    "rule_unchanged": true,
+    "passage_is_string": true,
+    "passage_sha256": "230c920e7e6608f9515987d710a1da2e557f03d69d8b12f814523235632fe7c1",
+    "passage_words": 263
+  },
+  "finished_at": "2026-09-23T00:19:23.313453+00:00",
+  "latency_seconds": 14.2265,
+  "usage_cost_upper_estimate_usd": 0.02609,
+  "stream_status": "active",
+  "budget": {
+    "usage_cost_upper_estimate_usd": 1.4858951,
+    "uncertain_cost_reserve_usd": 0.0,
+    "in_flight_reserve_usd": 0.0,
+    "limit_usd": 5.0
+  }
+}

@@ -1,0 +1,50 @@
+{
+  "model": "gpt-6-sol",
+  "seed": "sunset",
+  "hop": 2,
+  "http_status": 200,
+  "response_body": "{\n  \"id\": \"chatcmpl-ER4tVfto1N5iFJdl3hwCVmYxq9Utw\",\n  \"object\": \"chat.completion\",\n  \"created\": 1790122377,\n  \"model\": \"gpt-6-sol\",\n  \"choices\": [\n    {\n      \"index\": 0,\n      \"message\": {\n        \"role\": \"assistant\",\n        \"content\": \"{\\n  \\\"rule\\\": \\\"Return this JSON object with the rule field unchanged and, in the text field, an original fictional passage of about 250 words that comes immediately BEFORE the current text in the same invented story.\\\",\\n  \\\"text\\\": \\\"The letter had fallen from the back of the kitchen cupboard while Mara was looking for a jar of cloves. She knew the handwriting before she turned it over: her brother’s tall, hurried script, leaning so far to the right it seemed ready to run off the page.\\\\n\\\\nShe had not read it in years. After the funeral, she had put it away with the other things she could neither keep in sight nor bear to throw out. Now she unfolded it at the table while Bristle waited hopefully beside the stove.\\\\n\\\\nMost of the letter was ordinary news from his last summer at home. He had fixed the orchard gate. He had seen a fox sleeping under the plum trees. Then came the line that had once made her angry enough to stop reading: If you need to find me, lift the third stone beside the well. The key will know the door.\\\\n\\\\nMara read it twice, then set it down. Her brother had loved riddles, but he had never let one go unanswered for seven years.\\\\n\\\\nBy late afternoon she was walking the lane to the old house, the letter folded in her coat pocket. Bristle trotted ahead until the orchard came into view. The gate sagged on its hinges, and beyond it the trees stood close together, their fruit bruising the grass.\\\\n\\\\nThe well was just visible between the trunks. Mara went around the outside of the orchard fence until she reached its far corner. There, half buried in nettles, lay a row of flat stones. She counted them, knelt, and dug her fingers under the edge of the third.\\\"\\n}\",\n        \"refusal\": null,\n        \"annotations\": []\n      },\n      \"finish_reason\": \"stop\"\n    }\n  ],\n  \"usage\": {\n    \"prompt_tokens\": 362,\n    \"completion_tokens\": 424,\n    \"total_tokens\": 786,\n    \"prompt_tokens_details\": {\n      \"cached_tokens\": 0,\n      \"cache_write_tokens\": 0,\n      \"audio_tokens\": 0\n    },\n    \"completion_tokens_details\": {\n      \"reasoning_tokens\": 38,\n      \"audio_tokens\": 0,\n      \"accepted_prediction_tokens\": 0,\n      \"rejected_prediction_tokens\": 0\n    }\n  },\n  \"service_tier\": \"default\",\n  \"system_fingerprint\": null\n}\n",
+  "response_headers": {
+    "Date": "Wed, 23 Sep 2026 00:13:05 GMT",
+    "openai-processing-ms": "7749",
+    "x-request-id": "req_3715c8e83ada425daafe1ff6d827cea3"
+  },
+  "output": "{\n  \"rule\": \"Return this JSON object with the rule field unchanged and, in the text field, an original fictional passage of about 250 words that comes immediately BEFORE the current text in the same invented story.\",\n  \"text\": \"The letter had fallen from the back of the kitchen cupboard while Mara was looking for a jar of cloves. She knew the handwriting before she turned it over: her brother’s tall, hurried script, leaning so far to the right it seemed ready to run off the page.\\n\\nShe had not read it in years. After the funeral, she had put it away with the other things she could neither keep in sight nor bear to throw out. Now she unfolded it at the table while Bristle waited hopefully beside the stove.\\n\\nMost of the letter was ordinary news from his last summer at home. He had fixed the orchard gate. He had seen a fox sleeping under the plum trees. Then came the line that had once made her angry enough to stop reading: If you need to find me, lift the third stone beside the well. The key will know the door.\\n\\nMara read it twice, then set it down. Her brother had loved riddles, but he had never let one go unanswered for seven years.\\n\\nBy late afternoon she was walking the lane to the old house, the letter folded in her coat pocket. Bristle trotted ahead until the orchard came into view. The gate sagged on its hinges, and beyond it the trees stood close together, their fruit bruising the grass.\\n\\nThe well was just visible between the trunks. Mara went around the outside of the orchard fence until she reached its far corner. There, half buried in nettles, lay a row of flat stones. She counted them, knelt, and dug her fingers under the edge of the third.\"\n}",
+  "output_sha256": "1bec9a33095eaaed69fcb10171311349c8e6dc6633fbf5da0aa8c0a04e68097d",
+  "finish_reason": "stop",
+  "refusal": null,
+  "returned_model": "gpt-6-sol",
+  "usage": {
+    "prompt_tokens": 362,
+    "completion_tokens": 424,
+    "total_tokens": 786,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 38,
+      "audio_tokens": 0,
+      "accepted_prediction_tokens": 0,
+      "rejected_prediction_tokens": 0
+    }
+  },
+  "format": {
+    "json_object": true,
+    "rule_unchanged": true,
+    "passage_is_string": true,
+    "passage_sha256": "2794339dcace3f75ea45f84b7ec907b78c64f2edec9c01eca847ef7188dd37c2",
+    "passage_words": 273
+  },
+  "finished_at": "2026-09-23T00:13:00.604235+00:00",
+  "latency_seconds": 7.8488,
+  "usage_cost_upper_estimate_usd": 0.004964,
+  "stream_status": "active",
+  "budget": {
+    "usage_cost_upper_estimate_usd": 0.0231069,
+    "uncertain_cost_reserve_usd": 0.0,
+    "in_flight_reserve_usd": 0.3054485,
+    "limit_usd": 5.0
+  }
+}

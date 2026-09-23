@@ -1,0 +1,22 @@
+{
+  "started_at": "2026-09-23T00:18:24.551927+00:00",
+  "model": "claude-opus-5-5",
+  "seed": "sunset",
+  "hop": 35,
+  "endpoint": "https://api.anthropic.com/v1/messages",
+  "body": {
+    "model": "claude-opus-5-5",
+    "messages": [
+      {
+        "role": "user",
+        "content": "```json\n{\"rule\": \"Return this JSON object with the rule field unchanged and, in the text field, an original fictional passage of about 250 words that comes immediately BEFORE the current text in the same invented story.\", \"text\": \"Margaret Ellison met Walter Price at the Methodist church picnic in the summer she turned twenty-two, when he knocked over the lemonade table while trying to carry three folding chairs at once. He apologized to everyone within earshot, then spent the rest of the afternoon mopping the grass with borrowed napkins, as though he could soak the whole lawn dry by persistence alone. Margaret thought it was the most foolish thing she had ever seen. She also thought he had kind hands.\\n\\nHe called on her the following Tuesday, wearing a tie that did not match his jacket, and asked her mother's permission to take Margaret for a walk. They walked as far as the river bridge and back, and Walter talked the entire way about property lines and old deeds and how the whole town was really just a map that people had agreed to believe in. Margaret did not understand half of it, but she liked the way he said it, as if the world were a puzzle he was glad to be working on.\\n\\nThey courted for eleven months. Her father thought Walter lacked ambition; her mother thought he lacked a proper overcoat. Margaret thought he lacked nothing that could not be supplied later, with patience and a little planning.\\n\\nThey were married in October, on a cold bright Saturday, with chrysanthemums on the altar and her aunt Louise weeping in the second pew. There was no money for a honeymoon. Instead, Walter carried her suitcase up a narrow flight of stairs on Main Street and unlocked the door with a flourish, as if it opened onto a palace.\"}\n```"
+      }
+    ],
+    "max_tokens": 4096,
+    "output_config": {
+      "effort": "low"
+    }
+  },
+  "state_sha256": "810ab075a87d313b0621d3bebbef0751c7f768c1cd143e2b2c5912e3ec021dab",
+  "reserved_cost_usd": 0.091012
+}

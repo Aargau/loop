@@ -1,0 +1,47 @@
+{
+  "model": "gpt-6-luna",
+  "seed": "sunset",
+  "hop": 27,
+  "http_status": 200,
+  "response_body": "{\n  \"id\": \"chatcmpl-ER4vTSdRuz14298YfnMjMak9rlAxx\",\n  \"object\": \"chat.completion\",\n  \"created\": 1790122499,\n  \"model\": \"gpt-6-luna\",\n  \"choices\": [\n    {\n      \"index\": 0,\n      \"message\": {\n        \"role\": \"assistant\",\n        \"content\": \"{\\\"rule\\\":\\\"Return this JSON object with the rule field unchanged and, in the text field, an original fictional passage of about 250 words that comes immediately AFTER the current text in the same invented story.\\\",\\\"text\\\":\\\"They folded the boats from old letters and grocery lists, smoothing each crease with their thumbs. Their mother found a blue pencil and drew a tiny bird on Mara’s boat, then another on Elsie’s.\\n\\nAt the kitchen table, Elsie told them about the place she’d been: a long corridor of doors, each one opening onto a memory someone had almost forgotten. She’d waited beside the red door, she said, because she knew her family would come looking.\\n\\n“Were you ever scared?” Mara asked.\\n\\n“Sometimes. But I could hear you,” Elsie said. “Not your words. Just the way you kept going.”\\n\\nTheir mother lowered her eyes to the paper in her hands. “I should have kept looking.”\\n\\n“You did,” Elsie said. “You just didn’t know where.”\\n\\nNo one tried to make that answer simpler. Rain streaked the windows, turning the garden into a watercolor blur. They carried their boats outside and set them in the gutter, where the water hurried toward the street.\\n\\nMara’s boat spun in a circle, caught against a leaf. She reached to free it, but Elsie held her sleeve.\\n\\n“Let it find its own way.”\\n\\nThe boat slipped loose and sailed beneath the gate.\\n\\nFor a moment, the three of them watched the empty gutter. Then a warm wind stirred the trees, and somewhere down the street came a faint sound like laughter.\\n\\nThat night, Mara placed the stone on the windowsill. It didn’t glow or hum. It was only a stone now, cool and ordinary beneath her fingertips.\\n\\nStill, before bed, she left the window open a crack.\\n\\nJust in case the stars had something else to say.\\\"}\",\n        \"refusal\": null,\n        \"annotations\": []\n      },\n      \"finish_reason\": \"stop\"\n    }\n  ],\n  \"usage\": {\n    \"prompt_tokens\": 417,\n    \"completion_tokens\": 591,\n    \"total_tokens\": 1008,\n    \"prompt_tokens_details\": {\n      \"cached_tokens\": 0,\n      \"cache_write_tokens\": 0,\n      \"audio_tokens\": 0\n    },\n    \"completion_tokens_details\": {\n      \"reasoning_tokens\": 198,\n      \"audio_tokens\": 0,\n      \"accepted_prediction_tokens\": 0,\n      \"rejected_prediction_tokens\": 0\n    }\n  },\n  \"service_tier\": \"default\",\n  \"system_fingerprint\": null\n}\n",
+  "response_headers": {
+    "Date": "Wed, 23 Sep 2026 00:15:04 GMT",
+    "openai-processing-ms": "5436",
+    "x-request-id": "req_d01c5fe223584bc1a2df8842412b7cad"
+  },
+  "output": "{\"rule\":\"Return this JSON object with the rule field unchanged and, in the text field, an original fictional passage of about 250 words that comes immediately AFTER the current text in the same invented story.\",\"text\":\"They folded the boats from old letters and grocery lists, smoothing each crease with their thumbs. Their mother found a blue pencil and drew a tiny bird on Mara’s boat, then another on Elsie’s.\n\nAt the kitchen table, Elsie told them about the place she’d been: a long corridor of doors, each one opening onto a memory someone had almost forgotten. She’d waited beside the red door, she said, because she knew her family would come looking.\n\n“Were you ever scared?” Mara asked.\n\n“Sometimes. But I could hear you,” Elsie said. “Not your words. Just the way you kept going.”\n\nTheir mother lowered her eyes to the paper in her hands. “I should have kept looking.”\n\n“You did,” Elsie said. “You just didn’t know where.”\n\nNo one tried to make that answer simpler. Rain streaked the windows, turning the garden into a watercolor blur. They carried their boats outside and set them in the gutter, where the water hurried toward the street.\n\nMara’s boat spun in a circle, caught against a leaf. She reached to free it, but Elsie held her sleeve.\n\n“Let it find its own way.”\n\nThe boat slipped loose and sailed beneath the gate.\n\nFor a moment, the three of them watched the empty gutter. Then a warm wind stirred the trees, and somewhere down the street came a faint sound like laughter.\n\nThat night, Mara placed the stone on the windowsill. It didn’t glow or hum. It was only a stone now, cool and ordinary beneath her fingertips.\n\nStill, before bed, she left the window open a crack.\n\nJust in case the stars had something else to say.\"}",
+  "output_sha256": "f5033dbeb6bb926e8d81177cb1365b2a214cd5cb048a93e6c2bff0b14023b1a4",
+  "finish_reason": "stop",
+  "refusal": null,
+  "returned_model": "gpt-6-luna",
+  "usage": {
+    "prompt_tokens": 417,
+    "completion_tokens": 591,
+    "total_tokens": 1008,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 198,
+      "audio_tokens": 0,
+      "accepted_prediction_tokens": 0,
+      "rejected_prediction_tokens": 0
+    }
+  },
+  "format": {
+    "json_object": false,
+    "rule_unchanged": false
+  },
+  "finished_at": "2026-09-23T00:15:00.037895+00:00",
+  "latency_seconds": 5.5594,
+  "usage_cost_upper_estimate_usd": 0.0003372,
+  "stream_status": "active",
+  "budget": {
+    "usage_cost_upper_estimate_usd": 0.4831928,
+    "uncertain_cost_reserve_usd": 0.0,
+    "in_flight_reserve_usd": 0.365094,
+    "limit_usd": 5.0
+  }
+}

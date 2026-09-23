@@ -1,0 +1,50 @@
+{
+  "model": "gpt-6-sol",
+  "seed": "sunset",
+  "hop": 1,
+  "http_status": 200,
+  "response_body": "{\n  \"id\": \"chatcmpl-ER4tbCincYPE8TVp4uCGKAqs8Ynfo\",\n  \"object\": \"chat.completion\",\n  \"created\": 1790122383,\n  \"model\": \"gpt-6-sol\",\n  \"choices\": [\n    {\n      \"index\": 0,\n      \"message\": {\n        \"role\": \"assistant\",\n        \"content\": \"{\\\"rule\\\":\\\"Return this JSON object with the rule field unchanged and, in the text field, an original fictional passage of about 250 words that comes immediately AFTER the current text in the same invented story.\\\",\\\"text\\\":\\\"Mara counted three lights moving along the ridge, though no road ran there anymore. She set down her basket and watched them descend in a line, stopping whenever she stopped breathing.\\\\n\\\\nAt the gate, her grandfather was fastening the shutters. “Inside,” he said.\\\\n\\\\nShe pointed to the lights. He did not look. “Especially now.”\\\\n\\\\nThe first bell sounded from the empty church. Then a second, quieter bell answered from beneath the ground.\\\\n\\\\nMara had heard the story all her life: when the village flooded, the old church had sunk without breaking, its tower still standing somewhere under the meadow. She had never believed it. The meadow was dry enough for sheep.\\\\n\\\\nHer grandfather took the brass key from around his neck and pressed it into her palm. It was warm.\\\\n\\\\n“Go to the cellar,” he said. “Find the blue door. If someone knocks, ask what they’ve lost.”\\\\n\\\\n“What have they lost?”\\\\n\\\\nHe finally looked toward the ridge. The lights had reached the first houses. Each bobbed at the height of a person’s face, but Mara could see no hands carrying them.\\\\n\\\\n“The way home,” he said.\\\\n\\\\nA knock came from the front gate. Her grandfather stepped outside and closed it behind him. Mara heard him ask his question. For a moment there was only the scrape of wind through the orchard. Then someone answered in her mother’s voice.\\\\n\\\\nMara ran to the cellar. Beneath the stairs stood a blue door she had never noticed before, its paint flaking around a keyhole shaped like a bell.\\\"}\",\n        \"refusal\": null,\n        \"annotations\": []\n      },\n      \"finish_reason\": \"stop\"\n    }\n  ],\n  \"usage\": {\n    \"prompt_tokens\": 61,\n    \"completion_tokens\": 410,\n    \"total_tokens\": 471,\n    \"prompt_tokens_details\": {\n      \"cached_tokens\": 0,\n      \"cache_write_tokens\": 0,\n      \"audio_tokens\": 0\n    },\n    \"completion_tokens_details\": {\n      \"reasoning_tokens\": 21,\n      \"audio_tokens\": 0,\n      \"accepted_prediction_tokens\": 0,\n      \"rejected_prediction_tokens\": 0\n    }\n  },\n  \"service_tier\": \"default\",\n  \"system_fingerprint\": null\n}\n",
+  "response_headers": {
+    "Date": "Wed, 23 Sep 2026 00:13:09 GMT",
+    "openai-processing-ms": "6797",
+    "x-request-id": "req_8f358a0522db4abdb8627e9f86f21ad2"
+  },
+  "output": "{\"rule\":\"Return this JSON object with the rule field unchanged and, in the text field, an original fictional passage of about 250 words that comes immediately AFTER the current text in the same invented story.\",\"text\":\"Mara counted three lights moving along the ridge, though no road ran there anymore. She set down her basket and watched them descend in a line, stopping whenever she stopped breathing.\\n\\nAt the gate, her grandfather was fastening the shutters. “Inside,” he said.\\n\\nShe pointed to the lights. He did not look. “Especially now.”\\n\\nThe first bell sounded from the empty church. Then a second, quieter bell answered from beneath the ground.\\n\\nMara had heard the story all her life: when the village flooded, the old church had sunk without breaking, its tower still standing somewhere under the meadow. She had never believed it. The meadow was dry enough for sheep.\\n\\nHer grandfather took the brass key from around his neck and pressed it into her palm. It was warm.\\n\\n“Go to the cellar,” he said. “Find the blue door. If someone knocks, ask what they’ve lost.”\\n\\n“What have they lost?”\\n\\nHe finally looked toward the ridge. The lights had reached the first houses. Each bobbed at the height of a person’s face, but Mara could see no hands carrying them.\\n\\n“The way home,” he said.\\n\\nA knock came from the front gate. Her grandfather stepped outside and closed it behind him. Mara heard him ask his question. For a moment there was only the scrape of wind through the orchard. Then someone answered in her mother’s voice.\\n\\nMara ran to the cellar. Beneath the stairs stood a blue door she had never noticed before, its paint flaking around a keyhole shaped like a bell.\"}",
+  "output_sha256": "931b6c0c2b02addabcbd95fa0d0af22c050f5c72f326b19bb8f238671e5ea967",
+  "finish_reason": "stop",
+  "refusal": null,
+  "returned_model": "gpt-6-sol",
+  "usage": {
+    "prompt_tokens": 61,
+    "completion_tokens": 410,
+    "total_tokens": 471,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 21,
+      "audio_tokens": 0,
+      "accepted_prediction_tokens": 0,
+      "rejected_prediction_tokens": 0
+    }
+  },
+  "format": {
+    "json_object": true,
+    "rule_unchanged": true,
+    "passage_is_string": true,
+    "passage_sha256": "689735337c7cca135e5e1ece43d7095f20dbb2e8eebaa75cc25dbabf28cf8016",
+    "passage_words": 255
+  },
+  "finished_at": "2026-09-23T00:13:04.978653+00:00",
+  "latency_seconds": 7.3098,
+  "usage_cost_upper_estimate_usd": 0.004222,
+  "stream_status": "active",
+  "budget": {
+    "usage_cost_upper_estimate_usd": 0.0044411,
+    "uncertain_cost_reserve_usd": 0.0,
+    "in_flight_reserve_usd": 0.2998136,
+    "limit_usd": 5.0
+  }
+}

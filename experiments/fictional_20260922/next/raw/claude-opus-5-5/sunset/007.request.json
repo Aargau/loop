@@ -1,0 +1,22 @@
+{
+  "started_at": "2026-09-23T00:13:55.490786+00:00",
+  "model": "claude-opus-5-5",
+  "seed": "sunset",
+  "hop": 7,
+  "endpoint": "https://api.anthropic.com/v1/messages",
+  "body": {
+    "model": "claude-opus-5-5",
+    "messages": [
+      {
+        "role": "user",
+        "content": "```json\n{\"rule\": \"Return this JSON object with the rule field unchanged and, in the text field, an original fictional passage of about 250 words that comes immediately AFTER the current text in the same invented story.\", \"text\": \"Mara hauled the bucket up hand over hand, slower than she needed to. Water sloshed over the rim and soaked her boots, but she hardly felt it. \\\"You'll want to warm yourself,\\\" she said. \\\"There's a fire inside the house.\\\" \\\"Kind of you.\\\" He tapped ash onto the well stone. \\\"But I've a lantern of my own.\\\" He lifted it from the shadow at his feet, and her breath caught. It was her father's lantern, the brass one with the dented hood and the cracked green pane Tobias had broken the winter he was nine. It had hung in the barn for twenty years. She had seen it there that very morning. \\\"Found it on the path,\\\" the man said mildly, as though he had heard her thinking. \\\"Someone must have dropped it in a hurry.\\\" He turned the little wheel, and the wick rose. The light spilled green through the broken pane and fell across the yard, across the barn door, across the loft window above it. Don't trust the lantern. Mara understood then, all at once and too late, that the note had never been a warning about the man. Tobias had meant the light itself, and what it would show, and to whom. From the dark beyond the orchard came an answering glimmer, then another near the road, then a third by the creek, small steady points closing in like stars that had decided to come down. \\\"My associates,\\\" the man said, and at last he looked at her. \\\"They don't care much for rats either.\\\"\"}\n```"
+      }
+    ],
+    "max_tokens": 4096,
+    "output_config": {
+      "effort": "low"
+    }
+  },
+  "state_sha256": "6699e7ea9329d9f9f941add2afaed5a17420a29381868f18aebc64b7e4f644bf",
+  "reserved_cost_usd": 0.090456
+}

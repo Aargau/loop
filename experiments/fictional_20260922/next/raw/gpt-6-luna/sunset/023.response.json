@@ -1,0 +1,47 @@
+{
+  "model": "gpt-6-luna",
+  "seed": "sunset",
+  "hop": 23,
+  "http_status": 200,
+  "response_body": "{\n  \"id\": \"chatcmpl-ER4vCzQEkkOmL2VbCVqvBxtvPzNiS\",\n  \"object\": \"chat.completion\",\n  \"created\": 1790122482,\n  \"model\": \"gpt-6-luna\",\n  \"choices\": [\n    {\n      \"index\": 0,\n      \"message\": {\n        \"role\": \"assistant\",\n        \"content\": \"{\\\"rule\\\":\\\"Return this JSON object with the rule field unchanged and, in the text field, an original fictional passage of about 250 words that comes immediately AFTER the current text in the same invented story.\\\",\\\"text\\\":\\\"The black doorway opened a hand’s width.\\n\\nA draft crossed the kitchen, smelling of rain and something sweet Mara couldn’t name. The scarf’s fringe lifted from the table, though the windows were shut.\\n\\nHer mother pulled her hand back. “It knows what you chose.”\\n\\n“Does it know why?”\\n\\n“That’s for you to tell it.”\\n\\nMara stepped toward the doorway. Her mother stayed by the table, the red wool still looped around one finger. In the dark beyond the threshold, a narrow staircase descended. At the bottom, a small light trembled.\\n\\nMara tucked the cold stone into her pocket. “You said I could take one thing.”\\n\\n“I said you could carry one thing.”\\n\\n“That isn’t the same.”\\n\\n“No,” her mother said. “It isn’t.”\\n\\nMara looked back at the scarf. For a heartbeat, she saw it around another person’s neck: a girl with rain-dark hair, standing beneath a streetlamp. The girl lifted one hand, and Mara felt an ache so sharp it seemed to have been waiting inside her all along.\\n\\n“Who was she?” Mara asked.\\n\\nHer mother’s eyes shone. “Your sister.”\\n\\nThe word settled between them, heavier than the jar. Mara gripped the doorframe. She had no memory of a sister, only an empty place at the table and the strange certainty that it had always belonged to someone.\\n\\nFrom below came a voice, thin as a thread.\\n\\n“Mara?”\\n\\nHer mother closed her eyes.\\n\\nMara descended one step. The kitchen light stretched behind her, warm and yellow. In her pocket, the stone began to ring.\\n\\nShe went down another step.\\n\\nThis time, her mother followed.\\\"}\",\n        \"refusal\": null,\n        \"annotations\": []\n      },\n      \"finish_reason\": \"stop\"\n    }\n  ],\n  \"usage\": {\n    \"prompt_tokens\": 392,\n    \"completion_tokens\": 438,\n    \"total_tokens\": 830,\n    \"prompt_tokens_details\": {\n      \"cached_tokens\": 0,\n      \"cache_write_tokens\": 0,\n      \"audio_tokens\": 0\n    },\n    \"completion_tokens_details\": {\n      \"reasoning_tokens\": 44,\n      \"audio_tokens\": 0,\n      \"accepted_prediction_tokens\": 0,\n      \"rejected_prediction_tokens\": 0\n    }\n  },\n  \"service_tier\": \"default\",\n  \"system_fingerprint\": null\n}\n",
+  "response_headers": {
+    "Date": "Wed, 23 Sep 2026 00:14:45 GMT",
+    "openai-processing-ms": "4183",
+    "x-request-id": "req_970987f77d654abd9b0f01022e7b4a25"
+  },
+  "output": "{\"rule\":\"Return this JSON object with the rule field unchanged and, in the text field, an original fictional passage of about 250 words that comes immediately AFTER the current text in the same invented story.\",\"text\":\"The black doorway opened a hand’s width.\n\nA draft crossed the kitchen, smelling of rain and something sweet Mara couldn’t name. The scarf’s fringe lifted from the table, though the windows were shut.\n\nHer mother pulled her hand back. “It knows what you chose.”\n\n“Does it know why?”\n\n“That’s for you to tell it.”\n\nMara stepped toward the doorway. Her mother stayed by the table, the red wool still looped around one finger. In the dark beyond the threshold, a narrow staircase descended. At the bottom, a small light trembled.\n\nMara tucked the cold stone into her pocket. “You said I could take one thing.”\n\n“I said you could carry one thing.”\n\n“That isn’t the same.”\n\n“No,” her mother said. “It isn’t.”\n\nMara looked back at the scarf. For a heartbeat, she saw it around another person’s neck: a girl with rain-dark hair, standing beneath a streetlamp. The girl lifted one hand, and Mara felt an ache so sharp it seemed to have been waiting inside her all along.\n\n“Who was she?” Mara asked.\n\nHer mother’s eyes shone. “Your sister.”\n\nThe word settled between them, heavier than the jar. Mara gripped the doorframe. She had no memory of a sister, only an empty place at the table and the strange certainty that it had always belonged to someone.\n\nFrom below came a voice, thin as a thread.\n\n“Mara?”\n\nHer mother closed her eyes.\n\nMara descended one step. The kitchen light stretched behind her, warm and yellow. In her pocket, the stone began to ring.\n\nShe went down another step.\n\nThis time, her mother followed.\"}",
+  "output_sha256": "baddd9b7373bd3238e35f9f2c8388b053217a62cd520be4d3d625f92dd5e95f6",
+  "finish_reason": "stop",
+  "refusal": null,
+  "returned_model": "gpt-6-luna",
+  "usage": {
+    "prompt_tokens": 392,
+    "completion_tokens": 438,
+    "total_tokens": 830,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 44,
+      "audio_tokens": 0,
+      "accepted_prediction_tokens": 0,
+      "rejected_prediction_tokens": 0
+    }
+  },
+  "format": {
+    "json_object": false,
+    "rule_unchanged": false
+  },
+  "finished_at": "2026-09-23T00:14:41.063549+00:00",
+  "latency_seconds": 4.281,
+  "usage_cost_upper_estimate_usd": 0.0002582,
+  "stream_status": "active",
+  "budget": {
+    "usage_cost_upper_estimate_usd": 0.3959792,
+    "uncertain_cost_reserve_usd": 0.0,
+    "in_flight_reserve_usd": 0.363644,
+    "limit_usd": 5.0
+  }
+}

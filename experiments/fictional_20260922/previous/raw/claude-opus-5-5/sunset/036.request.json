@@ -1,0 +1,22 @@
+{
+  "started_at": "2026-09-23T00:18:34.026962+00:00",
+  "model": "claude-opus-5-5",
+  "seed": "sunset",
+  "hop": 36,
+  "endpoint": "https://api.anthropic.com/v1/messages",
+  "body": {
+    "model": "claude-opus-5-5",
+    "messages": [
+      {
+        "role": "user",
+        "content": "```json\n{\"rule\": \"Return this JSON object with the rule field unchanged and, in the text field, an original fictional passage of about 250 words that comes immediately BEFORE the current text in the same invented story.\", \"text\": \"The Ellison house stood at the end of Sycamore Street, close enough to the river that in spring the cellar smelled of mud and in summer the mosquitoes came up through the screens like uninvited relations. Margaret had lived there all her life, and by the time she was twenty-one she had begun to suspect she would die there too, folding the same linen in the same upstairs closet while her mother called instructions from the foot of the stairs.\\n\\nShe was not unhappy, exactly. She taught the youngest children at Sunday school, kept the accounts for her father's hardware store in a neat slanting hand, and read every novel the town library would let her borrow, twice. But she had watched her friends marry one by one, Ruth Carmichael to the dentist's son, Ellen Pruitt to a boy from Harlan who sold insurance, and each wedding left her feeling as though a train had pulled out while she was still buying her ticket.\\n\\nAunt Louise, who had never married and claimed to be glad of it, told her not to hurry. \\\"A man is a long-term arrangement,\\\" she said, \\\"like a roof. You want one that won't leak.\\\"\\n\\nHer mother, less philosophical, simply made sure Margaret attended every social the church put on, in a freshly pressed dress, with her hair pinned just so. That was how Margaret came to be standing beside the lemonade table on the last Sunday in June, holding a paper cup and wishing she had stayed home with a book.\"}\n```"
+      }
+    ],
+    "max_tokens": 4096,
+    "output_config": {
+      "effort": "low"
+    }
+  },
+  "state_sha256": "b3038686b62834a5f75319badde2f62be49343515112d0469a83ccf4c3c0919d",
+  "reserved_cost_usd": 0.09062
+}

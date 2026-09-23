@@ -1,0 +1,50 @@
+{
+  "model": "gpt-6-astra",
+  "seed": "sunset",
+  "hop": 12,
+  "http_status": 200,
+  "response_body": "{\n  \"id\": \"chatcmpl-ER4vwPccYldTQKfBNOiV1bJccWtZZ\",\n  \"object\": \"chat.completion\",\n  \"created\": 1790122528,\n  \"model\": \"gpt-6-astra\",\n  \"choices\": [\n    {\n      \"index\": 0,\n      \"message\": {\n        \"role\": \"assistant\",\n        \"content\": \"{\\n  \\\"rule\\\": \\\"Return this JSON object with the rule field unchanged and, in the text field, an original fictional passage of about 250 words that comes immediately BEFORE the current text in the same invented story.\\\",\\n  \\\"text\\\": \\\"On Saturday morning, Mara unlocked the shop and stood behind the counter without taking off her coat. Someone had pushed a takeaway menu through the letterbox. It lay open beneath the door, advertising a family meal for four.\\\\n\\\\nHer father had left a jacket under the sewing machine, one sleeve turned inside out. Beside it was a saucer containing three buttons and a short piece of chalk. She moved the saucer farther from the edge.\\\\n\\\\nThe telephone rang while she was looking for paper.\\\\n\\\\n‘Is my blue skirt ready?’ a woman asked.\\\\n\\\\nMara looked at the rail. There were several blue things beneath the plastic covers.\\\\n\\\\n‘What name?’\\\\n\\\\n‘Bell. He said Saturday.’\\\\n\\\\nShe found it at the back, with a ticket pinned to the waistband. The hem was finished. Her father had written six pounds in the corner, then crossed it out and written five.\\\\n\\\\n‘Yes,’ Mara said. ‘But we’re closed today.’\\\\n\\\\n‘Your sign says one o’clock.’\\\\n\\\\n‘I know. I’m sorry.’\\\\n\\\\nAfterwards she wrote CLOSED UNTIL FURTHER NOTICE on the back of an envelope. There was proper card somewhere, but she could not remember which drawer. She taped the envelope to the glass with the writing facing the street.\\\\n\\\\nAt home, the hospital rang. A woman explained that some belongings were still on the ward. Mara said she had thought the carrier bag they gave her contained everything.\\\\n\\\\n‘You can collect them whenever you’re ready.’\\\\n\\\\nShe wrote the ward number on the takeaway menu, which she had brought home without noticing. Then she asked whether reception would be open on Sunday.\\\"\\n}\",\n        \"refusal\": null,\n        \"annotations\": []\n      },\n      \"finish_reason\": \"stop\"\n    }\n  ],\n  \"usage\": {\n    \"prompt_tokens\": 388,\n    \"completion_tokens\": 408,\n    \"total_tokens\": 796,\n    \"prompt_tokens_details\": {\n      \"cached_tokens\": 0,\n      \"cache_write_tokens\": 0,\n      \"audio_tokens\": 0\n    },\n    \"completion_tokens_details\": {\n      \"reasoning_tokens\": 0,\n      \"audio_tokens\": 0,\n      \"accepted_prediction_tokens\": 0,\n      \"rejected_prediction_tokens\": 0\n    }\n  },\n  \"service_tier\": \"default\",\n  \"system_fingerprint\": null\n}\n",
+  "response_headers": {
+    "Date": "Wed, 23 Sep 2026 00:15:39 GMT",
+    "openai-processing-ms": "10814",
+    "x-request-id": "req_c0e676c6ca9e4b2fa1b2ff796f0e1c2d"
+  },
+  "output": "{\n  \"rule\": \"Return this JSON object with the rule field unchanged and, in the text field, an original fictional passage of about 250 words that comes immediately BEFORE the current text in the same invented story.\",\n  \"text\": \"On Saturday morning, Mara unlocked the shop and stood behind the counter without taking off her coat. Someone had pushed a takeaway menu through the letterbox. It lay open beneath the door, advertising a family meal for four.\\n\\nHer father had left a jacket under the sewing machine, one sleeve turned inside out. Beside it was a saucer containing three buttons and a short piece of chalk. She moved the saucer farther from the edge.\\n\\nThe telephone rang while she was looking for paper.\\n\\n‘Is my blue skirt ready?’ a woman asked.\\n\\nMara looked at the rail. There were several blue things beneath the plastic covers.\\n\\n‘What name?’\\n\\n‘Bell. He said Saturday.’\\n\\nShe found it at the back, with a ticket pinned to the waistband. The hem was finished. Her father had written six pounds in the corner, then crossed it out and written five.\\n\\n‘Yes,’ Mara said. ‘But we’re closed today.’\\n\\n‘Your sign says one o’clock.’\\n\\n‘I know. I’m sorry.’\\n\\nAfterwards she wrote CLOSED UNTIL FURTHER NOTICE on the back of an envelope. There was proper card somewhere, but she could not remember which drawer. She taped the envelope to the glass with the writing facing the street.\\n\\nAt home, the hospital rang. A woman explained that some belongings were still on the ward. Mara said she had thought the carrier bag they gave her contained everything.\\n\\n‘You can collect them whenever you’re ready.’\\n\\nShe wrote the ward number on the takeaway menu, which she had brought home without noticing. Then she asked whether reception would be open on Sunday.\"\n}",
+  "output_sha256": "7d93043651b1a44d27c0c121e53a07b90ae7d40c231992ee5daafc2e9c1b82b4",
+  "finish_reason": "stop",
+  "refusal": null,
+  "returned_model": "gpt-6-astra",
+  "usage": {
+    "prompt_tokens": 388,
+    "completion_tokens": 408,
+    "total_tokens": 796,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "audio_tokens": 0,
+      "accepted_prediction_tokens": 0,
+      "rejected_prediction_tokens": 0
+    }
+  },
+  "format": {
+    "json_object": true,
+    "rule_unchanged": true,
+    "passage_is_string": true,
+    "passage_sha256": "205bc0802326085f660e13bbb80e29a69bd6c2253b425d54b3ae659d915a88dd",
+    "passage_words": 261
+  },
+  "finished_at": "2026-09-23T00:15:34.758883+00:00",
+  "latency_seconds": 10.9038,
+  "usage_cost_upper_estimate_usd": 0.02428,
+  "stream_status": "active",
+  "budget": {
+    "usage_cost_upper_estimate_usd": 0.6570222,
+    "uncertain_cost_reserve_usd": 0.0,
+    "in_flight_reserve_usd": 0.1378949,
+    "limit_usd": 5.0
+  }
+}

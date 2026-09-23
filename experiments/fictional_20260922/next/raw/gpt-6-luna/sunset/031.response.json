@@ -1,0 +1,47 @@
+{
+  "model": "gpt-6-luna",
+  "seed": "sunset",
+  "hop": 31,
+  "http_status": 200,
+  "response_body": "{\n  \"id\": \"chatcmpl-ER4vntZoz3pj2P6VL8Gt6c3YuutHK\",\n  \"object\": \"chat.completion\",\n  \"created\": 1790122519,\n  \"model\": \"gpt-6-luna\",\n  \"choices\": [\n    {\n      \"index\": 0,\n      \"message\": {\n        \"role\": \"assistant\",\n        \"content\": \"{\\\"rule\\\":\\\"Return this JSON object with the rule field unchanged and, in the text field, an original fictional passage of about 250 words that comes immediately AFTER the current text in the same invented story.\\\",\\\"text\\\":\\\"By afternoon, the rain had stopped, but a thin stream still trickled from the greenhouse roof. Mara went back alone to check on Pip.\\n\\nThe paper boat sat where they had left it. Its folded blue bird now stood upright, its beak pointed toward the pear tree. Beneath the story they had told, another line had appeared:\\n\\n*Ask the roots.*\\n\\nMara frowned. The tree was small enough that its roots barely reached the edges of the pot. She knelt and pressed one finger into the damp soil.\\n\\nSomething tapped back.\\n\\nShe snatched her hand away. For a moment, the greenhouse was quiet except for the drip of water. Then the soil gave a soft, papery rustle. A thin root curled up through the earth, wrapped around her fingertip, and tugged.\\n\\n“Mara?” Elsie called from the doorway.\\n\\n“Come here,” Mara whispered.\\n\\nHer sister hurried over. Together, they leaned close as the root slowly drew a shape in the soil: a crooked little door, no bigger than a plum.\\n\\nTheir mother arrived carrying a watering can. When she saw the mark, she set the can down.\\n\\n“I wondered when it would find you,” she said.\\n\\n“You knew?” Mara asked.\\n\\n“I knew your father heard something beneath this greenhouse. He never found out what it was.” Their mother knelt beside them. “He thought it might be a seed.”\\n\\nThe root tapped the soil three times.\\n\\nMara glanced at the boat. A final message was unfolding beneath its bird:\\n\\n*Bring the story underground.*\\n\\nElsie took Mara’s hand. Their mother reached for the little spade.\\n\\nTogether, they began to dig.\\\"}\",\n        \"refusal\": null,\n        \"annotations\": []\n      },\n      \"finish_reason\": \"stop\"\n    }\n  ],\n  \"usage\": {\n    \"prompt_tokens\": 409,\n    \"completion_tokens\": 515,\n    \"total_tokens\": 924,\n    \"prompt_tokens_details\": {\n      \"cached_tokens\": 0,\n      \"cache_write_tokens\": 0,\n      \"audio_tokens\": 0\n    },\n    \"completion_tokens_details\": {\n      \"reasoning_tokens\": 126,\n      \"audio_tokens\": 0,\n      \"accepted_prediction_tokens\": 0,\n      \"rejected_prediction_tokens\": 0\n    }\n  },\n  \"service_tier\": \"default\",\n  \"system_fingerprint\": null\n}\n",
+  "response_headers": {
+    "Date": "Wed, 23 Sep 2026 00:15:23 GMT",
+    "openai-processing-ms": "4389",
+    "x-request-id": "req_39ae22ecaeac46f28e2a04be00908205"
+  },
+  "output": "{\"rule\":\"Return this JSON object with the rule field unchanged and, in the text field, an original fictional passage of about 250 words that comes immediately AFTER the current text in the same invented story.\",\"text\":\"By afternoon, the rain had stopped, but a thin stream still trickled from the greenhouse roof. Mara went back alone to check on Pip.\n\nThe paper boat sat where they had left it. Its folded blue bird now stood upright, its beak pointed toward the pear tree. Beneath the story they had told, another line had appeared:\n\n*Ask the roots.*\n\nMara frowned. The tree was small enough that its roots barely reached the edges of the pot. She knelt and pressed one finger into the damp soil.\n\nSomething tapped back.\n\nShe snatched her hand away. For a moment, the greenhouse was quiet except for the drip of water. Then the soil gave a soft, papery rustle. A thin root curled up through the earth, wrapped around her fingertip, and tugged.\n\n“Mara?” Elsie called from the doorway.\n\n“Come here,” Mara whispered.\n\nHer sister hurried over. Together, they leaned close as the root slowly drew a shape in the soil: a crooked little door, no bigger than a plum.\n\nTheir mother arrived carrying a watering can. When she saw the mark, she set the can down.\n\n“I wondered when it would find you,” she said.\n\n“You knew?” Mara asked.\n\n“I knew your father heard something beneath this greenhouse. He never found out what it was.” Their mother knelt beside them. “He thought it might be a seed.”\n\nThe root tapped the soil three times.\n\nMara glanced at the boat. A final message was unfolding beneath its bird:\n\n*Bring the story underground.*\n\nElsie took Mara’s hand. Their mother reached for the little spade.\n\nTogether, they began to dig.\"}",
+  "output_sha256": "b7adb8b554bffcacb17756aea0dd210e1e0a1f27cb3e6aa54cd7121e4e8291c4",
+  "finish_reason": "stop",
+  "refusal": null,
+  "returned_model": "gpt-6-luna",
+  "usage": {
+    "prompt_tokens": 409,
+    "completion_tokens": 515,
+    "total_tokens": 924,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 126,
+      "audio_tokens": 0,
+      "accepted_prediction_tokens": 0,
+      "rejected_prediction_tokens": 0
+    }
+  },
+  "format": {
+    "json_object": false,
+    "rule_unchanged": false
+  },
+  "finished_at": "2026-09-23T00:15:19.108315+00:00",
+  "latency_seconds": 4.5499,
+  "usage_cost_upper_estimate_usd": 0.0002984,
+  "stream_status": "active",
+  "budget": {
+    "usage_cost_upper_estimate_usd": 0.5561862,
+    "uncertain_cost_reserve_usd": 0.0,
+    "in_flight_reserve_usd": 0.364372,
+    "limit_usd": 5.0
+  }
+}

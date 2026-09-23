@@ -1,0 +1,47 @@
+{
+  "model": "gpt-6-luna",
+  "seed": "sunset",
+  "hop": 11,
+  "http_status": 200,
+  "response_body": "{\n  \"id\": \"chatcmpl-ER4uKASK1hRfHWU2vD4Mgf2H93ce3\",\n  \"object\": \"chat.completion\",\n  \"created\": 1790122428,\n  \"model\": \"gpt-6-luna\",\n  \"choices\": [\n    {\n      \"index\": 0,\n      \"message\": {\n        \"role\": \"assistant\",\n        \"content\": \"{\\\"rule\\\":\\\"Return this JSON object with the rule field unchanged and, in the text field, an original fictional passage of about 250 words that comes immediately AFTER the current text in the same invented story.\\\",\\\"text\\\":\\\"The watch clicked once.\\n\\nThe door opened inward without a sound. Cold water swept across Mara’s shoes, carrying the paper boat between her feet. Beyond the threshold, the little girl lowered her hand.\\n\\nTomas caught Mara’s sleeve. “That isn’t you.”\\n\\n“No,” Mara said. “Not yet.”\\n\\nThe girl smiled, and the chamber’s black water rippled around her ankles. On the far wall, names shone in blue. Hundreds of them, scratched into the stone—some crossed out, some written twice. At the bottom, a fresh line appeared:\\n\\nTOMAS VALE.\\n\\nHe released Mara. “Close it.”\\n\\nThe watch began to tick backward. With every beat, the water retreated from the chamber, revealing pale shapes beneath its surface: doors, windows, a staircase descending through the floor. The girl’s red scarf fluttered though there was no wind.\\n\\n“You left me here,” she said.\\n\\nMara looked at the watch. Its hands had stopped at the hour her mother disappeared. She had spent years believing the watch had belonged to her mother alone.\\n\\n“I was six,” Mara whispered.\\n\\n“And I was waiting.”\\n\\nTomas stepped between them. The name on the wall flared brighter, then split down the middle. A crack raced through the chamber, dividing the girl from the door.\\n\\nThe child seized Mara’s wrist. “Choose quickly. The river can take one name back—or carry all of us through.”\\n\\nBehind them, the passage filled with the sound of distant bells. Tomas looked at the glowing inscription, then at Mara.\\n\\nShe reached for the little girl.\\n\\nThe watch struck thirteen.\\\"}\",\n        \"refusal\": null,\n        \"annotations\": []\n      },\n      \"finish_reason\": \"stop\"\n    }\n  ],\n  \"usage\": {\n    \"prompt_tokens\": 419,\n    \"completion_tokens\": 491,\n    \"total_tokens\": 910,\n    \"prompt_tokens_details\": {\n      \"cached_tokens\": 0,\n      \"cache_write_tokens\": 0,\n      \"audio_tokens\": 0\n    },\n    \"completion_tokens_details\": {\n      \"reasoning_tokens\": 111,\n      \"audio_tokens\": 0,\n      \"accepted_prediction_tokens\": 0,\n      \"rejected_prediction_tokens\": 0\n    }\n  },\n  \"service_tier\": \"default\",\n  \"system_fingerprint\": null\n}\n",
+  "response_headers": {
+    "Date": "Wed, 23 Sep 2026 00:13:53 GMT",
+    "openai-processing-ms": "5018",
+    "x-request-id": "req_d3f565f517704e1bb6638bc7b06569c3"
+  },
+  "output": "{\"rule\":\"Return this JSON object with the rule field unchanged and, in the text field, an original fictional passage of about 250 words that comes immediately AFTER the current text in the same invented story.\",\"text\":\"The watch clicked once.\n\nThe door opened inward without a sound. Cold water swept across Mara’s shoes, carrying the paper boat between her feet. Beyond the threshold, the little girl lowered her hand.\n\nTomas caught Mara’s sleeve. “That isn’t you.”\n\n“No,” Mara said. “Not yet.”\n\nThe girl smiled, and the chamber’s black water rippled around her ankles. On the far wall, names shone in blue. Hundreds of them, scratched into the stone—some crossed out, some written twice. At the bottom, a fresh line appeared:\n\nTOMAS VALE.\n\nHe released Mara. “Close it.”\n\nThe watch began to tick backward. With every beat, the water retreated from the chamber, revealing pale shapes beneath its surface: doors, windows, a staircase descending through the floor. The girl’s red scarf fluttered though there was no wind.\n\n“You left me here,” she said.\n\nMara looked at the watch. Its hands had stopped at the hour her mother disappeared. She had spent years believing the watch had belonged to her mother alone.\n\n“I was six,” Mara whispered.\n\n“And I was waiting.”\n\nTomas stepped between them. The name on the wall flared brighter, then split down the middle. A crack raced through the chamber, dividing the girl from the door.\n\nThe child seized Mara’s wrist. “Choose quickly. The river can take one name back—or carry all of us through.”\n\nBehind them, the passage filled with the sound of distant bells. Tomas looked at the glowing inscription, then at Mara.\n\nShe reached for the little girl.\n\nThe watch struck thirteen.\"}",
+  "output_sha256": "dc1097204ec54482cf0b7ecc9253c53c3f11d7c6dfcb19d16bb0e2dcef46b253",
+  "finish_reason": "stop",
+  "refusal": null,
+  "returned_model": "gpt-6-luna",
+  "usage": {
+    "prompt_tokens": 419,
+    "completion_tokens": 491,
+    "total_tokens": 910,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 111,
+      "audio_tokens": 0,
+      "accepted_prediction_tokens": 0,
+      "rejected_prediction_tokens": 0
+    }
+  },
+  "format": {
+    "json_object": false,
+    "rule_unchanged": false
+  },
+  "finished_at": "2026-09-23T00:13:48.225574+00:00",
+  "latency_seconds": 5.1373,
+  "usage_cost_upper_estimate_usd": 0.0002874,
+  "stream_status": "active",
+  "budget": {
+    "usage_cost_upper_estimate_usd": 0.180801,
+    "uncertain_cost_reserve_usd": 0.0,
+    "in_flight_reserve_usd": 0.364398,
+    "limit_usd": 5.0
+  }
+}

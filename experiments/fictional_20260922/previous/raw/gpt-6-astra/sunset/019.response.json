@@ -1,0 +1,50 @@
+{
+  "model": "gpt-6-astra",
+  "seed": "sunset",
+  "hop": 19,
+  "http_status": 200,
+  "response_body": "{\n  \"id\": \"chatcmpl-ER4xOHrujqkCf0yuXVNhNng2vAfqk\",\n  \"object\": \"chat.completion\",\n  \"created\": 1790122618,\n  \"model\": \"gpt-6-astra\",\n  \"choices\": [\n    {\n      \"index\": 0,\n      \"message\": {\n        \"role\": \"assistant\",\n        \"content\": \"{\\n  \\\"rule\\\": \\\"Return this JSON object with the rule field unchanged and, in the text field, an original fictional passage of about 250 words that comes immediately BEFORE the current text in the same invented story.\\\",\\n  \\\"text\\\": \\\"On Tuesday morning the kitchen clock had stopped at twenty past four. Mara noticed while waiting for the kettle, and for a moment enjoyed being awake at an hour when nothing could reasonably be expected of her. Then a bus went past and she remembered the battery.\\\\n\\\\nThere was a new one in the drawer with the takeaway menus, unless she had used it for the radio. She opened the drawer, moved a screwdriver from one side to the other, and shut it again. The clock could wait until evening.\\\\n\\\\nDownstairs, her neighbour had left a small wooden chair beside the bins. One of its legs was wrapped in brown tape. Mara had seen him carrying it home in July, holding it above his head in a sudden shower. Now rain stood in the shallow hollow of the seat.\\\\n\\\\nShe walked to the shop by the longer route, avoiding the pavement outside the chemist’s where the paving slabs tipped underfoot. At the corner she bought milk. The woman serving asked whether she needed a bag, although Mara already had her shopping bag open on the counter.\\\\n\\\\n‘No, thank you.’\\\\n\\\\n‘They make us ask.’\\\\n\\\\nOutside the shop, Mara paused to find her keys. The umbrella slipped against her shoulder, sending water down the back of her collar. She held the milk between her knees while she tried the lock.\\\\n\\\\nOnce inside, she propped the umbrella beside the counter. The door resisted as she pulled it shut, and she looked down to see what was catching.\\\"\\n}\",\n        \"refusal\": null,\n        \"annotations\": []\n      },\n      \"finish_reason\": \"stop\"\n    }\n  ],\n  \"usage\": {\n    \"prompt_tokens\": 374,\n    \"completion_tokens\": 363,\n    \"total_tokens\": 737,\n    \"prompt_tokens_details\": {\n      \"cached_tokens\": 0,\n      \"cache_write_tokens\": 0,\n      \"audio_tokens\": 0\n    },\n    \"completion_tokens_details\": {\n      \"reasoning_tokens\": 0,\n      \"audio_tokens\": 0,\n      \"accepted_prediction_tokens\": 0,\n      \"rejected_prediction_tokens\": 0\n    }\n  },\n  \"service_tier\": \"default\",\n  \"system_fingerprint\": null\n}\n",
+  "response_headers": {
+    "Date": "Wed, 23 Sep 2026 00:17:12 GMT",
+    "openai-processing-ms": "13695",
+    "x-request-id": "req_82b25ced839f4407b1a7370e60ef82a8"
+  },
+  "output": "{\n  \"rule\": \"Return this JSON object with the rule field unchanged and, in the text field, an original fictional passage of about 250 words that comes immediately BEFORE the current text in the same invented story.\",\n  \"text\": \"On Tuesday morning the kitchen clock had stopped at twenty past four. Mara noticed while waiting for the kettle, and for a moment enjoyed being awake at an hour when nothing could reasonably be expected of her. Then a bus went past and she remembered the battery.\\n\\nThere was a new one in the drawer with the takeaway menus, unless she had used it for the radio. She opened the drawer, moved a screwdriver from one side to the other, and shut it again. The clock could wait until evening.\\n\\nDownstairs, her neighbour had left a small wooden chair beside the bins. One of its legs was wrapped in brown tape. Mara had seen him carrying it home in July, holding it above his head in a sudden shower. Now rain stood in the shallow hollow of the seat.\\n\\nShe walked to the shop by the longer route, avoiding the pavement outside the chemist’s where the paving slabs tipped underfoot. At the corner she bought milk. The woman serving asked whether she needed a bag, although Mara already had her shopping bag open on the counter.\\n\\n‘No, thank you.’\\n\\n‘They make us ask.’\\n\\nOutside the shop, Mara paused to find her keys. The umbrella slipped against her shoulder, sending water down the back of her collar. She held the milk between her knees while she tried the lock.\\n\\nOnce inside, she propped the umbrella beside the counter. The door resisted as she pulled it shut, and she looked down to see what was catching.\"\n}",
+  "output_sha256": "f071e9bb07e2f4c60f41d46ed50b36faa991b02f4a7c545caa5e78fac621c9f0",
+  "finish_reason": "stop",
+  "refusal": null,
+  "returned_model": "gpt-6-astra",
+  "usage": {
+    "prompt_tokens": 374,
+    "completion_tokens": 363,
+    "total_tokens": 737,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "audio_tokens": 0,
+      "accepted_prediction_tokens": 0,
+      "rejected_prediction_tokens": 0
+    }
+  },
+  "format": {
+    "json_object": true,
+    "rule_unchanged": true,
+    "passage_is_string": true,
+    "passage_sha256": "f3f098255f64f01062903b154381e17928dbe7819b3d8554470dfa986dd70a7b",
+    "passage_words": 254
+  },
+  "finished_at": "2026-09-23T00:17:07.182934+00:00",
+  "latency_seconds": 13.7861,
+  "usage_cost_upper_estimate_usd": 0.02189,
+  "stream_status": "active",
+  "budget": {
+    "usage_cost_upper_estimate_usd": 1.0402991,
+    "uncertain_cost_reserve_usd": 0.0,
+    "in_flight_reserve_usd": 0.136026,
+    "limit_usd": 5.0
+  }
+}

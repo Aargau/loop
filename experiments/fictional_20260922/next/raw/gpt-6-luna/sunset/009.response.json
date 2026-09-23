@@ -1,0 +1,47 @@
+{
+  "model": "gpt-6-luna",
+  "seed": "sunset",
+  "hop": 9,
+  "http_status": 200,
+  "response_body": "{\n  \"id\": \"chatcmpl-ER4uBeDcoHOXMET2Txiv85y9la4TB\",\n  \"object\": \"chat.completion\",\n  \"created\": 1790122419,\n  \"model\": \"gpt-6-luna\",\n  \"choices\": [\n    {\n      \"index\": 0,\n      \"message\": {\n        \"role\": \"assistant\",\n        \"content\": \"{\\\"rule\\\":\\\"Return this JSON object with the rule field unchanged and, in the text field, an original fictional passage of about 250 words that comes immediately AFTER the current text in the same invented story.\\\",\\\"text\\\":\\\"At the next corner, the boat waited in a doorway. Its folded prow pointed toward a staircase descending beneath the street.\\n\\nThe child stood on the first step. “The tower has a door,” he said. “But it only opens from below.”\\n\\n“Below what?” Tomas asked.\\n\\nThe child tilted his head, listening. Somewhere under their feet, water tapped against stone.\\n\\nMara’s watch shivered in her palm. The silver door on its face had opened a crack. A thin thread of light escaped, and with it came the smell of dust and cold iron.\\n\\nShe started down. Tomas followed, though he kept looking over his shoulder at the empty street.\\n\\nAt the bottom, they found a passage lined with old blue tiles. Names had been scratched into them, hundreds of names, some so faded they were almost smooth. Mara ran her fingers along the nearest row. One tile was warm.\\n\\nHer own name was carved there.\\n\\nBeside it, a second name appeared letter by letter: TOMAS.\\n\\nHe stepped back. “I’ve never been here.”\\n\\n“Neither have I,” Mara said.\\n\\nThe child placed the paper boat on the wet floor. It sailed ahead without a current, its little white sides catching the watch’s glow. They followed until the passage ended at a round iron door.\\n\\nA bell rang overhead. This time its sound was clear, and each note seemed to strike somewhere inside Mara’s chest.\\n\\nThe watch hands spun once, then stopped. Its tiny silver door swung wide.\\n\\nOn the iron door, a keyhole brightened.\\n\\nTomas reached for it. Mara caught his wrist—not to stop him, but because beneath the metal, something had begun to knock back.\\\"}\",\n        \"refusal\": null,\n        \"annotations\": []\n      },\n      \"finish_reason\": \"stop\"\n    }\n  ],\n  \"usage\": {\n    \"prompt_tokens\": 397,\n    \"completion_tokens\": 432,\n    \"total_tokens\": 829,\n    \"prompt_tokens_details\": {\n      \"cached_tokens\": 0,\n      \"cache_write_tokens\": 0,\n      \"audio_tokens\": 0\n    },\n    \"completion_tokens_details\": {\n      \"reasoning_tokens\": 38,\n      \"audio_tokens\": 0,\n      \"accepted_prediction_tokens\": 0,\n      \"rejected_prediction_tokens\": 0\n    }\n  },\n  \"service_tier\": \"default\",\n  \"system_fingerprint\": null\n}\n",
+  "response_headers": {
+    "Date": "Wed, 23 Sep 2026 00:13:43 GMT",
+    "openai-processing-ms": "3996",
+    "x-request-id": "req_1ddfd0c5ffea4f6e8f397fa95a0ebe72"
+  },
+  "output": "{\"rule\":\"Return this JSON object with the rule field unchanged and, in the text field, an original fictional passage of about 250 words that comes immediately AFTER the current text in the same invented story.\",\"text\":\"At the next corner, the boat waited in a doorway. Its folded prow pointed toward a staircase descending beneath the street.\n\nThe child stood on the first step. “The tower has a door,” he said. “But it only opens from below.”\n\n“Below what?” Tomas asked.\n\nThe child tilted his head, listening. Somewhere under their feet, water tapped against stone.\n\nMara’s watch shivered in her palm. The silver door on its face had opened a crack. A thin thread of light escaped, and with it came the smell of dust and cold iron.\n\nShe started down. Tomas followed, though he kept looking over his shoulder at the empty street.\n\nAt the bottom, they found a passage lined with old blue tiles. Names had been scratched into them, hundreds of names, some so faded they were almost smooth. Mara ran her fingers along the nearest row. One tile was warm.\n\nHer own name was carved there.\n\nBeside it, a second name appeared letter by letter: TOMAS.\n\nHe stepped back. “I’ve never been here.”\n\n“Neither have I,” Mara said.\n\nThe child placed the paper boat on the wet floor. It sailed ahead without a current, its little white sides catching the watch’s glow. They followed until the passage ended at a round iron door.\n\nA bell rang overhead. This time its sound was clear, and each note seemed to strike somewhere inside Mara’s chest.\n\nThe watch hands spun once, then stopped. Its tiny silver door swung wide.\n\nOn the iron door, a keyhole brightened.\n\nTomas reached for it. Mara caught his wrist—not to stop him, but because beneath the metal, something had begun to knock back.\"}",
+  "output_sha256": "4aa9e99f8e9e2197316bdd20a126c6c96705fd9cbb3d55bf6e292de3b1bfa647",
+  "finish_reason": "stop",
+  "refusal": null,
+  "returned_model": "gpt-6-luna",
+  "usage": {
+    "prompt_tokens": 397,
+    "completion_tokens": 432,
+    "total_tokens": 829,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 38,
+      "audio_tokens": 0,
+      "accepted_prediction_tokens": 0,
+      "rejected_prediction_tokens": 0
+    }
+  },
+  "format": {
+    "json_object": false,
+    "rule_unchanged": false
+  },
+  "finished_at": "2026-09-23T00:13:38.447491+00:00",
+  "latency_seconds": 4.1509,
+  "usage_cost_upper_estimate_usd": 0.0002557,
+  "stream_status": "active",
+  "budget": {
+    "usage_cost_upper_estimate_usd": 0.1271855,
+    "uncertain_cost_reserve_usd": 0.0,
+    "in_flight_reserve_usd": 0.364516,
+    "limit_usd": 5.0
+  }
+}

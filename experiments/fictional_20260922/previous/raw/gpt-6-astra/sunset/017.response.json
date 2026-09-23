@@ -1,0 +1,50 @@
+{
+  "model": "gpt-6-astra",
+  "seed": "sunset",
+  "hop": 17,
+  "http_status": 200,
+  "response_body": "{\n  \"id\": \"chatcmpl-ER4wznXoi7sB2n6KnXtbvBRRaqaBU\",\n  \"object\": \"chat.completion\",\n  \"created\": 1790122593,\n  \"model\": \"gpt-6-astra\",\n  \"choices\": [\n    {\n      \"index\": 0,\n      \"message\": {\n        \"role\": \"assistant\",\n        \"content\": \"{\\n  \\\"rule\\\": \\\"Return this JSON object with the rule field unchanged and, in the text field, an original fictional passage of about 250 words that comes immediately BEFORE the current text in the same invented story.\\\",\\n  \\\"text\\\": \\\"By eleven the rain had found its way through the corner of the window frame. Mara put a folded tea towel on the sill, moving the cards for piano lessons and a missing cat to the dry end. The cat had been missing since June. She had meant to telephone the number and ask whether the card was still needed, but there seemed no good way to begin.\\\\n\\\\nNext door, the florist was taking delivery of buckets. The driver brought them through the shop two at a time while the florist stood in the doorway holding a clipboard under her cardigan. Mara watched him negotiate the step. Everyone discovered that step with a full pair of hands.\\\\n\\\\nShe had opened late. On the way in she had stopped for milk, then gone back because she had left it beside the till. The grocer had kept it there for her, a receipt tucked beneath the carton.\\\\n\\\\n‘One of those mornings,’ he said.\\\\n\\\\nShe had agreed, although nothing much had happened to account for it.\\\\n\\\\nNow she made tea in the little room behind the fitting curtain. There were three clean cups and she chose the chipped one, which did not wobble on the draining board. While the kettle boiled, she counted the jobs on the rail: a skirt lining, two school blazers, a dress waiting for its owner to decide about the sleeves.\\\\n\\\\nThe trousers were hanging separately, over the back of her chair. She carried her tea to the workbench and unpinned the ticket.\\\"\\n}\",\n        \"refusal\": null,\n        \"annotations\": []\n      },\n      \"finish_reason\": \"stop\"\n    }\n  ],\n  \"usage\": {\n    \"prompt_tokens\": 380,\n    \"completion_tokens\": 357,\n    \"total_tokens\": 737,\n    \"prompt_tokens_details\": {\n      \"cached_tokens\": 0,\n      \"cache_write_tokens\": 0,\n      \"audio_tokens\": 0\n    },\n    \"completion_tokens_details\": {\n      \"reasoning_tokens\": 0,\n      \"audio_tokens\": 0,\n      \"accepted_prediction_tokens\": 0,\n      \"rejected_prediction_tokens\": 0\n    }\n  },\n  \"service_tier\": \"default\",\n  \"system_fingerprint\": null\n}\n",
+  "response_headers": {
+    "Date": "Wed, 23 Sep 2026 00:16:46 GMT",
+    "openai-processing-ms": "13089",
+    "x-request-id": "req_4cf83dd094594f62ad99684313c6dce6"
+  },
+  "output": "{\n  \"rule\": \"Return this JSON object with the rule field unchanged and, in the text field, an original fictional passage of about 250 words that comes immediately BEFORE the current text in the same invented story.\",\n  \"text\": \"By eleven the rain had found its way through the corner of the window frame. Mara put a folded tea towel on the sill, moving the cards for piano lessons and a missing cat to the dry end. The cat had been missing since June. She had meant to telephone the number and ask whether the card was still needed, but there seemed no good way to begin.\\n\\nNext door, the florist was taking delivery of buckets. The driver brought them through the shop two at a time while the florist stood in the doorway holding a clipboard under her cardigan. Mara watched him negotiate the step. Everyone discovered that step with a full pair of hands.\\n\\nShe had opened late. On the way in she had stopped for milk, then gone back because she had left it beside the till. The grocer had kept it there for her, a receipt tucked beneath the carton.\\n\\n‘One of those mornings,’ he said.\\n\\nShe had agreed, although nothing much had happened to account for it.\\n\\nNow she made tea in the little room behind the fitting curtain. There were three clean cups and she chose the chipped one, which did not wobble on the draining board. While the kettle boiled, she counted the jobs on the rail: a skirt lining, two school blazers, a dress waiting for its owner to decide about the sleeves.\\n\\nThe trousers were hanging separately, over the back of her chair. She carried her tea to the workbench and unpinned the ticket.\"\n}",
+  "output_sha256": "e76876982395eb517b9f63c5f10c3f3f2d1561d3b88c2f0f2c28bbbbbbe78939",
+  "finish_reason": "stop",
+  "refusal": null,
+  "returned_model": "gpt-6-astra",
+  "usage": {
+    "prompt_tokens": 380,
+    "completion_tokens": 357,
+    "total_tokens": 737,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "audio_tokens": 0,
+      "accepted_prediction_tokens": 0,
+      "rejected_prediction_tokens": 0
+    }
+  },
+  "format": {
+    "json_object": true,
+    "rule_unchanged": true,
+    "passage_is_string": true,
+    "passage_sha256": "586e76e8c2545d6a1cda87342a8a712a431c55e56d614c05da0da54eb34319f1",
+    "passage_words": 254
+  },
+  "finished_at": "2026-09-23T00:16:41.340442+00:00",
+  "latency_seconds": 13.2132,
+  "usage_cost_upper_estimate_usd": 0.02165,
+  "stream_status": "active",
+  "budget": {
+    "usage_cost_upper_estimate_usd": 0.9324711,
+    "uncertain_cost_reserve_usd": 0.0,
+    "in_flight_reserve_usd": 0.136122,
+    "limit_usd": 5.0
+  }
+}

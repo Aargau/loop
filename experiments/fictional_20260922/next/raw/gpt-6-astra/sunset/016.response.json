@@ -1,0 +1,50 @@
+{
+  "model": "gpt-6-astra",
+  "seed": "sunset",
+  "hop": 16,
+  "http_status": 200,
+  "response_body": "{\n  \"id\": \"chatcmpl-ER4x9JV0KI1sCxymIjLD3GkofwQEJ\",\n  \"object\": \"chat.completion\",\n  \"created\": 1790122603,\n  \"model\": \"gpt-6-astra\",\n  \"choices\": [\n    {\n      \"index\": 0,\n      \"message\": {\n        \"role\": \"assistant\",\n        \"content\": \"{\\n  \\\"rule\\\": \\\"Return this JSON object with the rule field unchanged and, in the text field, an original fictional passage of about 250 words that comes immediately AFTER the current text in the same invented story.\\\",\\n  \\\"text\\\": \\\"The knife was in the drawer beneath the window. She opened the drawer carefully; it had swollen in the wet weather and would not shut again if pulled too far.\\\\n\\\\nBehind her, his chair creaked.\\\\n\\\\n“Still that one,” he said.\\\\n\\\\n“It holds.”\\\\n\\\\nShe set the loaf against her apron. The first slice broke where the crust was hard, and she put that piece aside for herself.\\\\n\\\\n“Who was calling?”\\\\n\\\\nHe did not answer at once.\\\\n\\\\n“No one you know.”\\\\n\\\\nThe second slice came away whole. She laid it on the blue plate, then took it off and spread butter on it. There was no reason to be sparing now. Tomorrow she could go to the shop.\\\\n\\\\n“There's a girl lives next door,” she said. “She brings things for me sometimes.”\\\\n\\\\n“That's kind.”\\\\n\\\\n“Not always things I want.”\\\\n\\\\nShe turned with the plate. He had moved the sugar bowl and was tracing the pale mark on the table with one finger.\\\\n\\\\n“I tried sanding it,” she said.\\\\n\\\\n“You'd have to do the whole top.”\\\\n\\\\n“Yes.”\\\\n\\\\nShe put the bread beside his mug. Neither had been touched.\\\\n\\\\nFor a while they listened to the children outside. The basket scraped again, farther off now.\\\\n\\\\n“Will you come again?” she asked.\\\\n\\\\nHe looked at the bread.\\\\n\\\\nShe sat down before he could answer and drew her chair closer to the table.\\\\n\\\\n“Never mind. You're here now.”\\\\n\\\\nHis hand rested beside hers. She could have covered it easily. Instead she picked a crumb from his cuff and placed it on her own plate.\\\"\\n}\",\n        \"refusal\": null,\n        \"annotations\": []\n      },\n      \"finish_reason\": \"stop\"\n    }\n  ],\n  \"usage\": {\n    \"prompt_tokens\": 449,\n    \"completion_tokens\": 419,\n    \"total_tokens\": 868,\n    \"prompt_tokens_details\": {\n      \"cached_tokens\": 0,\n      \"cache_write_tokens\": 0,\n      \"audio_tokens\": 0\n    },\n    \"completion_tokens_details\": {\n      \"reasoning_tokens\": 0,\n      \"audio_tokens\": 0,\n      \"accepted_prediction_tokens\": 0,\n      \"rejected_prediction_tokens\": 0\n    }\n  },\n  \"service_tier\": \"default\",\n  \"system_fingerprint\": null\n}\n",
+  "response_headers": {
+    "Date": "Wed, 23 Sep 2026 00:16:56 GMT",
+    "openai-processing-ms": "13583",
+    "x-request-id": "req_061c4b5c2a9d45c5ba9e5bdd3d389baf"
+  },
+  "output": "{\n  \"rule\": \"Return this JSON object with the rule field unchanged and, in the text field, an original fictional passage of about 250 words that comes immediately AFTER the current text in the same invented story.\",\n  \"text\": \"The knife was in the drawer beneath the window. She opened the drawer carefully; it had swollen in the wet weather and would not shut again if pulled too far.\\n\\nBehind her, his chair creaked.\\n\\n“Still that one,” he said.\\n\\n“It holds.”\\n\\nShe set the loaf against her apron. The first slice broke where the crust was hard, and she put that piece aside for herself.\\n\\n“Who was calling?”\\n\\nHe did not answer at once.\\n\\n“No one you know.”\\n\\nThe second slice came away whole. She laid it on the blue plate, then took it off and spread butter on it. There was no reason to be sparing now. Tomorrow she could go to the shop.\\n\\n“There's a girl lives next door,” she said. “She brings things for me sometimes.”\\n\\n“That's kind.”\\n\\n“Not always things I want.”\\n\\nShe turned with the plate. He had moved the sugar bowl and was tracing the pale mark on the table with one finger.\\n\\n“I tried sanding it,” she said.\\n\\n“You'd have to do the whole top.”\\n\\n“Yes.”\\n\\nShe put the bread beside his mug. Neither had been touched.\\n\\nFor a while they listened to the children outside. The basket scraped again, farther off now.\\n\\n“Will you come again?” she asked.\\n\\nHe looked at the bread.\\n\\nShe sat down before he could answer and drew her chair closer to the table.\\n\\n“Never mind. You're here now.”\\n\\nHis hand rested beside hers. She could have covered it easily. Instead she picked a crumb from his cuff and placed it on her own plate.\"\n}",
+  "output_sha256": "0dff2e088ab39ddf677bd9885761c73a7276d9bad71406eae1d67e21984d2111",
+  "finish_reason": "stop",
+  "refusal": null,
+  "returned_model": "gpt-6-astra",
+  "usage": {
+    "prompt_tokens": 449,
+    "completion_tokens": 419,
+    "total_tokens": 868,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "audio_tokens": 0,
+      "accepted_prediction_tokens": 0,
+      "rejected_prediction_tokens": 0
+    }
+  },
+  "format": {
+    "json_object": true,
+    "rule_unchanged": true,
+    "passage_is_string": true,
+    "passage_sha256": "3a243db4956736cd3635d66c5eb2c747cf6836bbc349968c13745bcdcda2345d",
+    "passage_words": 258
+  },
+  "finished_at": "2026-09-23T00:16:52.092635+00:00",
+  "latency_seconds": 13.6933,
+  "usage_cost_upper_estimate_usd": 0.02544,
+  "stream_status": "active",
+  "budget": {
+    "usage_cost_upper_estimate_usd": 0.9501971,
+    "uncertain_cost_reserve_usd": 0.0,
+    "in_flight_reserve_usd": 0.135772,
+    "limit_usd": 5.0
+  }
+}

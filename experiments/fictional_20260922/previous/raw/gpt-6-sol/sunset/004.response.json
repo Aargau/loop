@@ -1,0 +1,50 @@
+{
+  "model": "gpt-6-sol",
+  "seed": "sunset",
+  "hop": 4,
+  "http_status": 200,
+  "response_body": "{\n  \"id\": \"chatcmpl-ER4tkJXsSCyR6NsZdmRuSl3MJ3k0c\",\n  \"object\": \"chat.completion\",\n  \"created\": 1790122392,\n  \"model\": \"gpt-6-sol\",\n  \"choices\": [\n    {\n      \"index\": 0,\n      \"message\": {\n        \"role\": \"assistant\",\n        \"content\": \"{\\n  \\\"rule\\\": \\\"Return this JSON object with the rule field unchanged and, in the text field, an original fictional passage of about 250 words that comes immediately BEFORE the current text in the same invented story.\\\",\\n  \\\"text\\\": \\\"Rain had kept Mara indoors for three days. Each evening she carried another log from the shed, stepping around the puddle beneath the eaves, and each morning the lane had disappeared a little further under water. Bristle objected to the weather more loudly than she did. He stood at the open door, considered the yard, and retreated to his blanket until necessity drove him out.\\\\n\\\\nOn the third afternoon, the postman brought a letter in an oilskin pouch. The man who leased the field beside the orchard had written again. He wanted permission to trim the branches that hung over his fence before the cattle returned in October. He had added that the gate to the old house was still sound, in case she meant to visit.\\\\n\\\\nMara put the letter beside the breadboard. She could picture the gate clearly: the iron latch worn smooth at one end, the bottom rail her brother had repaired with a piece of oak that never took the paint. She could not remember whether the pear tree beside it had flowered the last time she was there.\\\\n\\\\nToward evening, the rain eased. She took Bristle down the lane, but the ditch had overflowed, and he came home with mud up to his belly. She caught him with a towel before he reached the sitting room. He endured the rubbing, then shook himself over her boots.\\\\n\\\\nMara hung the towel by the stove and made supper from bread and the last of the cheese. Before bed she checked the sky. A few stars showed between the clouds, though rain still dripped from the gutter.\\\"\\n}\",\n        \"refusal\": null,\n        \"annotations\": []\n      },\n      \"finish_reason\": \"stop\"\n    }\n  ],\n  \"usage\": {\n    \"prompt_tokens\": 346,\n    \"completion_tokens\": 417,\n    \"total_tokens\": 763,\n    \"prompt_tokens_details\": {\n      \"cached_tokens\": 0,\n      \"cache_write_tokens\": 0,\n      \"audio_tokens\": 0\n    },\n    \"completion_tokens_details\": {\n      \"reasoning_tokens\": 35,\n      \"audio_tokens\": 0,\n      \"accepted_prediction_tokens\": 0,\n      \"rejected_prediction_tokens\": 0\n    }\n  },\n  \"service_tier\": \"default\",\n  \"system_fingerprint\": null\n}\n",
+  "response_headers": {
+    "Date": "Wed, 23 Sep 2026 00:13:19 GMT",
+    "openai-processing-ms": "7819",
+    "x-request-id": "req_f44da3c800ce481c8acec49d3e2083c4"
+  },
+  "output": "{\n  \"rule\": \"Return this JSON object with the rule field unchanged and, in the text field, an original fictional passage of about 250 words that comes immediately BEFORE the current text in the same invented story.\",\n  \"text\": \"Rain had kept Mara indoors for three days. Each evening she carried another log from the shed, stepping around the puddle beneath the eaves, and each morning the lane had disappeared a little further under water. Bristle objected to the weather more loudly than she did. He stood at the open door, considered the yard, and retreated to his blanket until necessity drove him out.\\n\\nOn the third afternoon, the postman brought a letter in an oilskin pouch. The man who leased the field beside the orchard had written again. He wanted permission to trim the branches that hung over his fence before the cattle returned in October. He had added that the gate to the old house was still sound, in case she meant to visit.\\n\\nMara put the letter beside the breadboard. She could picture the gate clearly: the iron latch worn smooth at one end, the bottom rail her brother had repaired with a piece of oak that never took the paint. She could not remember whether the pear tree beside it had flowered the last time she was there.\\n\\nToward evening, the rain eased. She took Bristle down the lane, but the ditch had overflowed, and he came home with mud up to his belly. She caught him with a towel before he reached the sitting room. He endured the rubbing, then shook himself over her boots.\\n\\nMara hung the towel by the stove and made supper from bread and the last of the cheese. Before bed she checked the sky. A few stars showed between the clouds, though rain still dripped from the gutter.\"\n}",
+  "output_sha256": "3947b24b176bfa12c4ca602c4da6a5d7335f52965f46abc3b6af5fb28e530709",
+  "finish_reason": "stop",
+  "refusal": null,
+  "returned_model": "gpt-6-sol",
+  "usage": {
+    "prompt_tokens": 346,
+    "completion_tokens": 417,
+    "total_tokens": 763,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 35,
+      "audio_tokens": 0,
+      "accepted_prediction_tokens": 0,
+      "rejected_prediction_tokens": 0
+    }
+  },
+  "format": {
+    "json_object": true,
+    "rule_unchanged": true,
+    "passage_is_string": true,
+    "passage_sha256": "6ff53db5d28f3f00c864960793caadfa7914596eb9c1f1dc486636ebf26714f4",
+    "passage_words": 269
+  },
+  "finished_at": "2026-09-23T00:13:14.983212+00:00",
+  "latency_seconds": 7.9528,
+  "usage_cost_upper_estimate_usd": 0.004862,
+  "stream_status": "active",
+  "budget": {
+    "usage_cost_upper_estimate_usd": 0.0859779,
+    "uncertain_cost_reserve_usd": 0.0,
+    "in_flight_reserve_usd": 0.3208047,
+    "limit_usd": 5.0
+  }
+}

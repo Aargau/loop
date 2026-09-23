@@ -1,0 +1,50 @@
+{
+  "model": "gpt-6-sol",
+  "seed": "sunset",
+  "hop": 24,
+  "http_status": 200,
+  "response_body": "{\n  \"id\": \"chatcmpl-ER4w9JzF1XbHwCRPtC7fXUS7wOXzQ\",\n  \"object\": \"chat.completion\",\n  \"created\": 1790122541,\n  \"model\": \"gpt-6-sol\",\n  \"choices\": [\n    {\n      \"index\": 0,\n      \"message\": {\n        \"role\": \"assistant\",\n        \"content\": \"{\\\"rule\\\":\\\"Return this JSON object with the rule field unchanged and, in the text field, an original fictional passage of about 250 words that comes immediately AFTER the current text in the same invented story.\\\",\\\"text\\\":\\\"“We’re not going back,” Lina said.\\\\n\\\\nMara turned the key over. Its teeth were packed with flour.\\\\n\\\\nFor an instant she smelled scorched milk and saw Kit standing on a chair, reaching into the kitchen cupboard. Then the memory slipped away.\\\\n\\\\nThe spoon struck the well again. Kit whispered, “Four.”\\\\n\\\\nA bus appeared at the far end of the road, its headlights pale in the morning mist. Mara stepped toward it, pulling Kit along. In the shelter glass, the old woman shook her head.\\\\n\\\\n“Is that Grandma?” Lina asked.\\\\n\\\\nMara looked at her. “You can see her?”\\\\n\\\\n“Only in there.” Lina touched the glass. The woman’s reflection raised a hand to meet hers, but the hands did not line up. One was too small.\\\\n\\\\nThe bus slowed. Its doors folded open, revealing empty seats and a driver with his cap pulled low. No one spoke. Kit’s fingers began counting against Mara’s palm.\\\\n\\\\n“Five,” he said, though the spoon had made no sound.\\\\n\\\\nThe driver lifted his face. Mara recognized the blue checked apron she had tied around him that morning, because Kit had insisted on helping with breakfast. Beneath the cap was the smooth, blank curve of the kitchen cupboard door.\\\\n\\\\nMara dragged the children back. The bus doors closed, and it rolled away without a sound.\\\\n\\\\nIn the shelter glass, the old woman had vanished. In her place stood Mara, holding the cellar key beside the open back door. Behind her, something waited in the kitchen, tapping a spoon against an empty bowl.\\\\n\\\\nThis time she remembered locking it in.\\\"}\",\n        \"refusal\": null,\n        \"annotations\": []\n      },\n      \"finish_reason\": \"stop\"\n    }\n  ],\n  \"usage\": {\n    \"prompt_tokens\": 406,\n    \"completion_tokens\": 426,\n    \"total_tokens\": 832,\n    \"prompt_tokens_details\": {\n      \"cached_tokens\": 0,\n      \"cache_write_tokens\": 0,\n      \"audio_tokens\": 0\n    },\n    \"completion_tokens_details\": {\n      \"reasoning_tokens\": 20,\n      \"audio_tokens\": 0,\n      \"accepted_prediction_tokens\": 0,\n      \"rejected_prediction_tokens\": 0\n    }\n  },\n  \"service_tier\": \"default\",\n  \"system_fingerprint\": null\n}\n",
+  "response_headers": {
+    "Date": "Wed, 23 Sep 2026 00:15:48 GMT",
+    "openai-processing-ms": "7287",
+    "x-request-id": "req_691f42b52de54251bb138dd99a23b7c5"
+  },
+  "output": "{\"rule\":\"Return this JSON object with the rule field unchanged and, in the text field, an original fictional passage of about 250 words that comes immediately AFTER the current text in the same invented story.\",\"text\":\"“We’re not going back,” Lina said.\\n\\nMara turned the key over. Its teeth were packed with flour.\\n\\nFor an instant she smelled scorched milk and saw Kit standing on a chair, reaching into the kitchen cupboard. Then the memory slipped away.\\n\\nThe spoon struck the well again. Kit whispered, “Four.”\\n\\nA bus appeared at the far end of the road, its headlights pale in the morning mist. Mara stepped toward it, pulling Kit along. In the shelter glass, the old woman shook her head.\\n\\n“Is that Grandma?” Lina asked.\\n\\nMara looked at her. “You can see her?”\\n\\n“Only in there.” Lina touched the glass. The woman’s reflection raised a hand to meet hers, but the hands did not line up. One was too small.\\n\\nThe bus slowed. Its doors folded open, revealing empty seats and a driver with his cap pulled low. No one spoke. Kit’s fingers began counting against Mara’s palm.\\n\\n“Five,” he said, though the spoon had made no sound.\\n\\nThe driver lifted his face. Mara recognized the blue checked apron she had tied around him that morning, because Kit had insisted on helping with breakfast. Beneath the cap was the smooth, blank curve of the kitchen cupboard door.\\n\\nMara dragged the children back. The bus doors closed, and it rolled away without a sound.\\n\\nIn the shelter glass, the old woman had vanished. In her place stood Mara, holding the cellar key beside the open back door. Behind her, something waited in the kitchen, tapping a spoon against an empty bowl.\\n\\nThis time she remembered locking it in.\"}",
+  "output_sha256": "487aeedc8f5f53ccb5acfb34ed6373097dc4265025cc8a2dde615a3e88f5c4f7",
+  "finish_reason": "stop",
+  "refusal": null,
+  "returned_model": "gpt-6-sol",
+  "usage": {
+    "prompt_tokens": 406,
+    "completion_tokens": 426,
+    "total_tokens": 832,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 20,
+      "audio_tokens": 0,
+      "accepted_prediction_tokens": 0,
+      "rejected_prediction_tokens": 0
+    }
+  },
+  "format": {
+    "json_object": true,
+    "rule_unchanged": true,
+    "passage_is_string": true,
+    "passage_sha256": "66fa7684ed7c227eb95ef683823b8d7826322ab126c445b2ca2af807aa8793f6",
+    "passage_words": 261
+  },
+  "finished_at": "2026-09-23T00:15:44.028927+00:00",
+  "latency_seconds": 7.3982,
+  "usage_cost_upper_estimate_usd": 0.005072,
+  "stream_status": "active",
+  "budget": {
+    "usage_cost_upper_estimate_usd": 0.6722782,
+    "uncertain_cost_reserve_usd": 0.0,
+    "in_flight_reserve_usd": 0.3199784,
+    "limit_usd": 5.0
+  }
+}

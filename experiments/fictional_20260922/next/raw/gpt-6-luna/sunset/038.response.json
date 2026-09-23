@@ -1,0 +1,47 @@
+{
+  "model": "gpt-6-luna",
+  "seed": "sunset",
+  "hop": 38,
+  "http_status": 200,
+  "response_body": "{\n  \"id\": \"chatcmpl-ER4wMweXawwWIe97mGlPVfXgAGzZI\",\n  \"object\": \"chat.completion\",\n  \"created\": 1790122554,\n  \"model\": \"gpt-6-luna\",\n  \"choices\": [\n    {\n      \"index\": 0,\n      \"message\": {\n        \"role\": \"assistant\",\n        \"content\": \"{\\\"rule\\\":\\\"Return this JSON object with the rule field unchanged and, in the text field, an original fictional passage of about 250 words that comes immediately AFTER the current text in the same invented story.\\\",\\\"text\\\":\\\"Inside, the house smelled of rain and cinnamon. Their mother lit the kitchen lamp, and its familiar yellow circle fell across the table. The girl stood just inside the door, turning the blue cup slowly in her hands.\\n\\n“Would you like tea?” their mother asked.\\n\\nThe girl nodded. “If you still have the little chipped pot.”\\n\\nMara looked at Elsie. Neither of them had mentioned the pot. It had belonged to their grandmother, and years ago their mother had packed it away in the cellar.\\n\\n“I’ll get it,” Mara said.\\n\\nThe cellar door opened with its usual groan. At the foot of the stairs, a narrow stripe of gold lay across the stones. Mara followed it to a shelf behind the coal bin. There sat the chipped pot, clean and dry, though dust covered everything around it.\\n\\nWhen she brought it upstairs, the girl touched the painted blue flowers. “She used to let me pour,” she whispered.\\n\\nTheir mother’s hand tightened on the kettle. For a moment, the room was filled only with the tick of the clock.\\n\\nThen Elsie pushed a saucer toward the girl. “You can sit by the window.”\\n\\nThey drank tea while the dark gathered beyond the glass. The golden window across the street had gone black. In its place, a pale square appeared in the sky, low above the rooftops, like a door seen from the wrong side.\\n\\nMara felt the seed warming in her palm.\\n\\n“Somewhere warm,” she remembered.\\n\\nThe girl pointed to the empty flowerpot on the sill. “There,” she said. “That’s where it began.”\\n\\nTheir mother stood very still. Then she fetched a spoon and filled the pot with earth.\\\"}\",\n        \"refusal\": null,\n        \"annotations\": []\n      },\n      \"finish_reason\": \"stop\"\n    }\n  ],\n  \"usage\": {\n    \"prompt_tokens\": 380,\n    \"completion_tokens\": 486,\n    \"total_tokens\": 866,\n    \"prompt_tokens_details\": {\n      \"cached_tokens\": 0,\n      \"cache_write_tokens\": 0,\n      \"audio_tokens\": 0\n    },\n    \"completion_tokens_details\": {\n      \"reasoning_tokens\": 89,\n      \"audio_tokens\": 0,\n      \"accepted_prediction_tokens\": 0,\n      \"rejected_prediction_tokens\": 0\n    }\n  },\n  \"service_tier\": \"default\",\n  \"system_fingerprint\": null\n}\n",
+  "response_headers": {
+    "Date": "Wed, 23 Sep 2026 00:15:58 GMT",
+    "openai-processing-ms": "4284",
+    "x-request-id": "req_05bcc3d857b84d0788c7790e4181cc48"
+  },
+  "output": "{\"rule\":\"Return this JSON object with the rule field unchanged and, in the text field, an original fictional passage of about 250 words that comes immediately AFTER the current text in the same invented story.\",\"text\":\"Inside, the house smelled of rain and cinnamon. Their mother lit the kitchen lamp, and its familiar yellow circle fell across the table. The girl stood just inside the door, turning the blue cup slowly in her hands.\n\n“Would you like tea?” their mother asked.\n\nThe girl nodded. “If you still have the little chipped pot.”\n\nMara looked at Elsie. Neither of them had mentioned the pot. It had belonged to their grandmother, and years ago their mother had packed it away in the cellar.\n\n“I’ll get it,” Mara said.\n\nThe cellar door opened with its usual groan. At the foot of the stairs, a narrow stripe of gold lay across the stones. Mara followed it to a shelf behind the coal bin. There sat the chipped pot, clean and dry, though dust covered everything around it.\n\nWhen she brought it upstairs, the girl touched the painted blue flowers. “She used to let me pour,” she whispered.\n\nTheir mother’s hand tightened on the kettle. For a moment, the room was filled only with the tick of the clock.\n\nThen Elsie pushed a saucer toward the girl. “You can sit by the window.”\n\nThey drank tea while the dark gathered beyond the glass. The golden window across the street had gone black. In its place, a pale square appeared in the sky, low above the rooftops, like a door seen from the wrong side.\n\nMara felt the seed warming in her palm.\n\n“Somewhere warm,” she remembered.\n\nThe girl pointed to the empty flowerpot on the sill. “There,” she said. “That’s where it began.”\n\nTheir mother stood very still. Then she fetched a spoon and filled the pot with earth.\"}",
+  "output_sha256": "0ee76a54c6c62fa02d955de73646d50bf60065946a46d334ea5acff7bc4c9289",
+  "finish_reason": "stop",
+  "refusal": null,
+  "returned_model": "gpt-6-luna",
+  "usage": {
+    "prompt_tokens": 380,
+    "completion_tokens": 486,
+    "total_tokens": 866,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 89,
+      "audio_tokens": 0,
+      "accepted_prediction_tokens": 0,
+      "rejected_prediction_tokens": 0
+    }
+  },
+  "format": {
+    "json_object": false,
+    "rule_unchanged": false
+  },
+  "finished_at": "2026-09-23T00:15:53.748288+00:00",
+  "latency_seconds": 4.4125,
+  "usage_cost_upper_estimate_usd": 0.000281,
+  "stream_status": "active",
+  "budget": {
+    "usage_cost_upper_estimate_usd": 0.6931827,
+    "uncertain_cost_reserve_usd": 0.0,
+    "in_flight_reserve_usd": 0.36326,
+    "limit_usd": 5.0
+  }
+}

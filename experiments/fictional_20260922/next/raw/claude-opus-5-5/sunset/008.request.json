@@ -1,0 +1,22 @@
+{
+  "started_at": "2026-09-23T00:14:04.113311+00:00",
+  "model": "claude-opus-5-5",
+  "seed": "sunset",
+  "hop": 8,
+  "endpoint": "https://api.anthropic.com/v1/messages",
+  "body": {
+    "model": "claude-opus-5-5",
+    "messages": [
+      {
+        "role": "user",
+        "content": "```json\n{\"rule\": \"Return this JSON object with the rule field unchanged and, in the text field, an original fictional passage of about 250 words that comes immediately AFTER the current text in the same invented story.\", \"text\": \"Mara let go of the rope. The bucket plunged back down the shaft, the crank spinning wild, and the clatter of it rang off the well stones like a bell. The man flinched, only a little, but it was enough. She was already moving. Not toward the house, where the fire burned and where anyone would expect her to run, but toward the barn, straight into the green spill of light. \\\"Tobias!\\\" she shouted. \\\"The ladder! Pull up the ladder!\\\" Above her the loft window stayed dark. For one terrible heartbeat she thought she had been wrong about everything, that the loft was empty, that her brother was already gone. Then came the scrape of wood on wood, and a shape shifted behind the shutters. Behind her the man laughed, low and unhurried. \\\"There now. You see? The light always finds what it's looking for.\\\" Mara reached the barn door and threw her weight against it. It groaned shut, and she dropped the bar across it with shaking hands. Darkness swallowed her, thick with hay and the warm breath of the horses. Through the gaps between the boards she could see the green glow creeping closer, and beyond it the other lights, nearer now, bobbing as their bearers crossed the orchard. \\\"Mara.\\\" Tobias's voice came from above, cracked and hoarse. \\\"You shouldn't have come.\\\" \\\"You left me a note,\\\" she whispered back. \\\"What did you expect?\\\" A rope ladder slapped down beside her in the dark. \\\"I expected you to burn it,\\\" he said. \\\"Climb. Quickly. There's another way out.\\\"\"}\n```"
+      }
+    ],
+    "max_tokens": 4096,
+    "output_config": {
+      "effort": "low"
+    }
+  },
+  "state_sha256": "9f5f1dad35bf1fdda51ec6bb383e2fb9370894da6ee6c087d544eaaebcbad795",
+  "reserved_cost_usd": 0.09082
+}

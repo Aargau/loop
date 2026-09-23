@@ -1,0 +1,50 @@
+{
+  "model": "gpt-6-sol",
+  "seed": "sunset",
+  "hop": 23,
+  "http_status": 200,
+  "response_body": "{\n  \"id\": \"chatcmpl-ER4vrX95ywZA5LFiF70VUCYYm6yPs\",\n  \"object\": \"chat.completion\",\n  \"created\": 1790122523,\n  \"model\": \"gpt-6-sol\",\n  \"choices\": [\n    {\n      \"index\": 0,\n      \"message\": {\n        \"role\": \"assistant\",\n        \"content\": \"{\\n  \\\"rule\\\": \\\"Return this JSON object with the rule field unchanged and, in the text field, an original fictional passage of about 250 words that comes immediately BEFORE the current text in the same invented story.\\\",\\n  \\\"text\\\": \\\"The bus was early, and Mara had to hurry the last few steps to catch it. She sat upstairs, where the windows were streaked from the morning rain, and watched the familiar shops pass in a blur. Her mother’s appointment was at two. If Mara went straight to the house, she could water the plants and be gone before her mother got back.\\\\n\\\\nShe had offered to go along to the appointment, but her mother had said there was no need. It was only a conversation, she’d said, and then changed the subject to the loose handle on the kitchen drawer. Mara had tightened it the previous week. She had not mentioned that on the phone.\\\\n\\\\nAt the stop by the park, a man climbed aboard carrying a flat cardboard box. He held it upright between his knees for the rest of the journey. Mara tried to read the name printed on the side, but his hand covered it.\\\\n\\\\nShe got off two streets before her mother’s house. The rain had stopped, though water still dripped from the trees onto the pavement. In a front garden, someone had put out a chair to dry, its seat tilted toward the weak sun.\\\\n\\\\nMara let herself in with her key. The hallway smelled faintly of furniture polish. Her mother’s green coat was gone from its hook, and the house was quiet except for the clock above the stairs. Mara set her bag down, crossed into the kitchen, and went to fill the watering can.\\\"\\n}\",\n        \"refusal\": null,\n        \"annotations\": []\n      },\n      \"finish_reason\": \"stop\"\n    }\n  ],\n  \"usage\": {\n    \"prompt_tokens\": 368,\n    \"completion_tokens\": 382,\n    \"total_tokens\": 750,\n    \"prompt_tokens_details\": {\n      \"cached_tokens\": 0,\n      \"cache_write_tokens\": 0,\n      \"audio_tokens\": 0\n    },\n    \"completion_tokens_details\": {\n      \"reasoning_tokens\": 22,\n      \"audio_tokens\": 0,\n      \"accepted_prediction_tokens\": 0,\n      \"rejected_prediction_tokens\": 0\n    }\n  },\n  \"service_tier\": \"default\",\n  \"system_fingerprint\": null\n}\n",
+  "response_headers": {
+    "Date": "Wed, 23 Sep 2026 00:15:30 GMT",
+    "openai-processing-ms": "6935",
+    "x-request-id": "req_08b3e4a3c916498e997cc58bfbdfb5f9"
+  },
+  "output": "{\n  \"rule\": \"Return this JSON object with the rule field unchanged and, in the text field, an original fictional passage of about 250 words that comes immediately BEFORE the current text in the same invented story.\",\n  \"text\": \"The bus was early, and Mara had to hurry the last few steps to catch it. She sat upstairs, where the windows were streaked from the morning rain, and watched the familiar shops pass in a blur. Her mother’s appointment was at two. If Mara went straight to the house, she could water the plants and be gone before her mother got back.\\n\\nShe had offered to go along to the appointment, but her mother had said there was no need. It was only a conversation, she’d said, and then changed the subject to the loose handle on the kitchen drawer. Mara had tightened it the previous week. She had not mentioned that on the phone.\\n\\nAt the stop by the park, a man climbed aboard carrying a flat cardboard box. He held it upright between his knees for the rest of the journey. Mara tried to read the name printed on the side, but his hand covered it.\\n\\nShe got off two streets before her mother’s house. The rain had stopped, though water still dripped from the trees onto the pavement. In a front garden, someone had put out a chair to dry, its seat tilted toward the weak sun.\\n\\nMara let herself in with her key. The hallway smelled faintly of furniture polish. Her mother’s green coat was gone from its hook, and the house was quiet except for the clock above the stairs. Mara set her bag down, crossed into the kitchen, and went to fill the watering can.\"\n}",
+  "output_sha256": "0dade87679acb71275cdfd65457d28ab84315b2f8491e2359fbeeaed2d92a019",
+  "finish_reason": "stop",
+  "refusal": null,
+  "returned_model": "gpt-6-sol",
+  "usage": {
+    "prompt_tokens": 368,
+    "completion_tokens": 382,
+    "total_tokens": 750,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 22,
+      "audio_tokens": 0,
+      "accepted_prediction_tokens": 0,
+      "rejected_prediction_tokens": 0
+    }
+  },
+  "format": {
+    "json_object": true,
+    "rule_unchanged": true,
+    "passage_is_string": true,
+    "passage_sha256": "0f887105e7afb7d1621594843110619edd2b12026f0bd97f496ed404a576e0d0",
+    "passage_words": 252
+  },
+  "finished_at": "2026-09-23T00:15:25.640483+00:00",
+  "latency_seconds": 7.0668,
+  "usage_cost_upper_estimate_usd": 0.004556,
+  "stream_status": "active",
+  "budget": {
+    "usage_cost_upper_estimate_usd": 0.6111971,
+    "uncertain_cost_reserve_usd": 0.0,
+    "in_flight_reserve_usd": 0.3195927,
+    "limit_usd": 5.0
+  }
+}

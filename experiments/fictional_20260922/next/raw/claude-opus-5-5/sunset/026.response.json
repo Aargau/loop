@@ -1,0 +1,45 @@
+{
+  "model": "claude-opus-5-5",
+  "seed": "sunset",
+  "hop": 26,
+  "http_status": 200,
+  "response_body": "{\"model\":\"claude-opus-5-5\",\"id\":\"msg_011CfKQhbyR7c8r48rigQr9P\",\"type\":\"message\",\"role\":\"assistant\",\"content\":[{\"type\":\"text\",\"text\":\"```json\\n{\\\"rule\\\": \\\"Return this JSON object with the rule field unchanged and, in the text field, an original fictional passage of about 250 words that comes immediately AFTER the current text in the same invented story.\\\", \\\"text\\\": \\\"Neither of them touched it. The steam curled upward in a thin, unbroken thread, rising straight despite the wind that had begun to comb through the reeds. Mara watched it climb past the empty doorframe, past the broken lintel, until it thinned against the pale sky and was gone. \\\\\\\"We should go,\\\\\\\" Tobias said. His voice cracked on the last word. He had mud to his knees and a long scratch across one cheek where a bramble had caught him. \\\\\\\"Mara. Please.\\\\\\\" She opened her hand. The stone lay in her palm, dull now, its heat fading to something like the warmth of a living thing. A thin crack ran across its face that had not been there before. Through the crack, very faintly, she thought she saw a light, small and yellow, like a lantern seen from far across the water. \\\\\\\"She's still in there,\\\\\\\" Mara said. \\\\\\\"Somewhere.\\\\\\\" \\\\\\\"You don't know that.\\\\\\\" \\\\\\\"She wouldn't have set out three cups if she weren't.\\\\\\\" Mara closed her fingers over the stone. \\\\\\\"It knew about the cups. It knew about the tea. It only got the words wrong.\\\\\\\" Tobias looked at the single cup on the step, then at the dark gap beneath the door, and swallowed hard. Behind them the heron cried again, closer this time, and when Mara turned she saw it standing in the shallows, grey and still, one bright eye fixed on the stone in her hand. It did not fly when she stepped toward it. It only lowered its long neck, as if in greeting, and began to wade west toward the mill.\\\"}\\n```\"}],\"container\":null,\"stop_reason\":\"end_turn\",\"stop_sequence\":null,\"stop_details\":null,\"usage\":{\"input_tokens\":575,\"cache_creation_input_tokens\":0,\"cache_read_input_tokens\":0,\"cache_creation\":{\"ephemeral_5m_input_tokens\":0,\"ephemeral_1h_input_tokens\":0},\"output_tokens\":562,\"output_tokens_details\":{\"thinking_tokens\":0},\"service_tier\":\"standard\",\"inference_geo\":\"global\"}}",
+  "response_headers": {
+    "Date": "Wed, 23 Sep 2026 00:17:02 GMT",
+    "request-id": "req_011CfKQhbAYqffBVrxs34Gqn"
+  },
+  "output": "```json\n{\"rule\": \"Return this JSON object with the rule field unchanged and, in the text field, an original fictional passage of about 250 words that comes immediately AFTER the current text in the same invented story.\", \"text\": \"Neither of them touched it. The steam curled upward in a thin, unbroken thread, rising straight despite the wind that had begun to comb through the reeds. Mara watched it climb past the empty doorframe, past the broken lintel, until it thinned against the pale sky and was gone. \\\"We should go,\\\" Tobias said. His voice cracked on the last word. He had mud to his knees and a long scratch across one cheek where a bramble had caught him. \\\"Mara. Please.\\\" She opened her hand. The stone lay in her palm, dull now, its heat fading to something like the warmth of a living thing. A thin crack ran across its face that had not been there before. Through the crack, very faintly, she thought she saw a light, small and yellow, like a lantern seen from far across the water. \\\"She's still in there,\\\" Mara said. \\\"Somewhere.\\\" \\\"You don't know that.\\\" \\\"She wouldn't have set out three cups if she weren't.\\\" Mara closed her fingers over the stone. \\\"It knew about the cups. It knew about the tea. It only got the words wrong.\\\" Tobias looked at the single cup on the step, then at the dark gap beneath the door, and swallowed hard. Behind them the heron cried again, closer this time, and when Mara turned she saw it standing in the shallows, grey and still, one bright eye fixed on the stone in her hand. It did not fly when she stepped toward it. It only lowered its long neck, as if in greeting, and began to wade west toward the mill.\"}\n```",
+  "output_sha256": "2478fff88c35056b956ba6216647023902e31f670514c9751e3d4a60a0639954",
+  "finish_reason": "end_turn",
+  "refusal": null,
+  "returned_model": "claude-opus-5-5",
+  "usage": {
+    "input_tokens": 575,
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 0,
+    "cache_creation": {
+      "ephemeral_5m_input_tokens": 0,
+      "ephemeral_1h_input_tokens": 0
+    },
+    "output_tokens": 562,
+    "output_tokens_details": {
+      "thinking_tokens": 0
+    },
+    "service_tier": "standard",
+    "inference_geo": "global"
+  },
+  "format": {
+    "json_object": false,
+    "rule_unchanged": false
+  },
+  "finished_at": "2026-09-23T00:16:57.673898+00:00",
+  "latency_seconds": 8.1036,
+  "usage_cost_upper_estimate_usd": 0.01354,
+  "stream_status": "active",
+  "budget": {
+    "usage_cost_upper_estimate_usd": 0.9687951,
+    "uncertain_cost_reserve_usd": 0.0,
+    "in_flight_reserve_usd": 0.272366,
+    "limit_usd": 5.0
+  }
+}

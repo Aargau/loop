@@ -1,0 +1,22 @@
+{
+  "started_at": "2026-09-23T00:15:26.549458+00:00",
+  "model": "claude-opus-5-5",
+  "seed": "sunset",
+  "hop": 18,
+  "endpoint": "https://api.anthropic.com/v1/messages",
+  "body": {
+    "model": "claude-opus-5-5",
+    "messages": [
+      {
+        "role": "user",
+        "content": "```json\n{\"rule\": \"Return this JSON object with the rule field unchanged and, in the text field, an original fictional passage of about 250 words that comes immediately BEFORE the current text in the same invented story.\", \"text\": \"The shoe factory in Lowell closed on a Tuesday in March, and Walter came home at ten in the morning with his lunch pail still full. Ruth was at the sink. She looked at the clock, then at him, and did not ask. She took the pail from his hand, set it on the counter, and poured him a cup of coffee he didn't drink.\\n\\nFor weeks he walked the city looking for work. He came back each evening smelling of wet wool and other men's cigarettes, and he sat by the radiator with his hands between his knees. Mara, who was five and did not understand, climbed into his lap and asked him to tell her about the farm again, the one in Vermont where he had grown up, where there had been a pear tree taller than the barn. He told her. Ruth, drying dishes, listened to the way his voice changed when he talked about it, how it slowed down and found its footing.\\n\\nShe began reading the classified pages from the back instead of the front. In April she found it, three lines between a used tractor and a litter of beagles: ORCHARD FOR SALE, HOLLIS N.H., HOUSE, BARN, EQUIPMENT, OWNER RETIRING. She cut it out with her sewing scissors and kept it in her apron pocket for four days, taking it out when no one was looking, before she finally laid it on the table beside his plate.\\n\\nWalter read it twice. Then he looked up at her, and for the first time since March, he smiled.\"}\n```"
+      }
+    ],
+    "max_tokens": 4096,
+    "output_config": {
+      "effort": "low"
+    }
+  },
+  "state_sha256": "bb738e16b59175ce0cc0479a96f0e5567fb76fedb3693b5511b96c5c1b0c947f",
+  "reserved_cost_usd": 0.090356
+}

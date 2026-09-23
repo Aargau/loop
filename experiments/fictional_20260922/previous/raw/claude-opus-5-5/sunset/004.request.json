@@ -1,0 +1,22 @@
+{
+  "started_at": "2026-09-23T00:13:12.495227+00:00",
+  "model": "claude-opus-5-5",
+  "seed": "sunset",
+  "hop": 4,
+  "endpoint": "https://api.anthropic.com/v1/messages",
+  "body": {
+    "model": "claude-opus-5-5",
+    "messages": [
+      {
+        "role": "user",
+        "content": "{\"rule\": \"Return this JSON object with the rule field unchanged and, in the text field, an original fictional passage of about 250 words that comes immediately BEFORE the current text in the same invented story.\", \"text\": \"The Hallorans' cart came up the lane every Thursday in autumn, its wheels groaning under the weight of empty crates. Mara had watched it arrive for as long as she could remember, first from her mother's hip, later from the top rung of the orchard gate, and now from the porch steps, where she sat with her chin on her knees while her grandfather haggled over the price of the early pears.\\n\\nThis year he did not walk out to meet the cart. He stood in the doorway instead, one hand braced against the frame, and let young Tom Halloran do the loading himself. Mara noticed. She noticed most things about him lately: the way he paused on the stairs, the way he rubbed his knuckles by the stove each evening, the way he no longer said her mother's name at all.\\n\\nThat night, after he had gone to bed, she took the cookbook down from the high shelf again. The recipe was still there, pressed between a page on soda bread and another on quince jelly. Late Pear Preserves, it said at the top, and beneath it, in smaller letters, For Papa, who says the soft ones are the sweetest. Mara traced the words with one finger until the candle guttered.\\n\\nShe fell asleep thinking of the far rows by the river, where the last pears hung heavy and golden and forgotten, waiting for someone to want them.\\n\\nSometime before dawn, the clouds rolled in from the hills.\"}"
+      }
+    ],
+    "max_tokens": 4096,
+    "output_config": {
+      "effort": "low"
+    }
+  },
+  "state_sha256": "850bbba75a57c2748242731f210aed6dead82ae67b0c02cadf2e916322c2f59c",
+  "reserved_cost_usd": 0.090272
+}

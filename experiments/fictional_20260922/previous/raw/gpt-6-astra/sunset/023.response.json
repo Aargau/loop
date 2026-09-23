@@ -1,0 +1,50 @@
+{
+  "model": "gpt-6-astra",
+  "seed": "sunset",
+  "hop": 23,
+  "http_status": 200,
+  "response_body": "{\n  \"id\": \"chatcmpl-ER4yHzktDtXPJ1XbHq8tzj1Z3GUl3\",\n  \"object\": \"chat.completion\",\n  \"created\": 1790122673,\n  \"model\": \"gpt-6-astra\",\n  \"choices\": [\n    {\n      \"index\": 0,\n      \"message\": {\n        \"role\": \"assistant\",\n        \"content\": \"{\\n  \\\"rule\\\": \\\"Return this JSON object with the rule field unchanged and, in the text field, an original fictional passage of about 250 words that comes immediately BEFORE the current text in the same invented story.\\\",\\n  \\\"text\\\": \\\"On Friday Mara found a receipt inside the sideboard. It was for six dining chairs, paid for in cash, and someone had written Delivery after three beneath the total. There was no date.\\\\n\\\\nShe counted the chairs. Four were arranged around a table that had arrived separately. The other two were in the window, supporting a board of blue and white cups.\\\\n\\\\nHer brother had brought the sideboard in November. He had said it was too large for the flat, although she remembered it fitting quite well.\\\\n\\\\nShe rang him to ask about the receipt, then put the phone down before it connected. There was nothing he could usefully tell her. She folded the paper along its existing crease and put it back.\\\\n\\\\nAt lunchtime a man came in looking for a desk small enough to discourage his wife from working at home.\\\\n\\\\n‘Not too small,’ he said. ‘She’ll know.’\\\\n\\\\nMara showed him a sewing table. He opened its shallow drawer and seemed disappointed by the compartments.\\\\n\\\\nAfter he left, she ate her sandwich standing behind the counter. Across the road, two council workers were replacing a sign with an identical sign. One held the old one while the other checked something on his phone.\\\\n\\\\nBefore closing, she took the cups out of the window and lined all six chairs along the wall. She made a price ticket for the set, then another with the price for each. She left both on the nearest seat.\\\\n\\\\nThe sideboard drawer would not quite shut. She pushed it with her hip and switched off the lights.\\\"\\n}\",\n        \"refusal\": null,\n        \"annotations\": []\n      },\n      \"finish_reason\": \"stop\"\n    }\n  ],\n  \"usage\": {\n    \"prompt_tokens\": 405,\n    \"completion_tokens\": 377,\n    \"total_tokens\": 782,\n    \"prompt_tokens_details\": {\n      \"cached_tokens\": 0,\n      \"cache_write_tokens\": 0,\n      \"audio_tokens\": 0\n    },\n    \"completion_tokens_details\": {\n      \"reasoning_tokens\": 0,\n      \"audio_tokens\": 0,\n      \"accepted_prediction_tokens\": 0,\n      \"rejected_prediction_tokens\": 0\n    }\n  },\n  \"service_tier\": \"default\",\n  \"system_fingerprint\": null\n}\n",
+  "response_headers": {
+    "Date": "Wed, 23 Sep 2026 00:18:06 GMT",
+    "openai-processing-ms": "13323",
+    "x-request-id": "req_c01c010802f4449ca06ae74eb635d6bd"
+  },
+  "output": "{\n  \"rule\": \"Return this JSON object with the rule field unchanged and, in the text field, an original fictional passage of about 250 words that comes immediately BEFORE the current text in the same invented story.\",\n  \"text\": \"On Friday Mara found a receipt inside the sideboard. It was for six dining chairs, paid for in cash, and someone had written Delivery after three beneath the total. There was no date.\\n\\nShe counted the chairs. Four were arranged around a table that had arrived separately. The other two were in the window, supporting a board of blue and white cups.\\n\\nHer brother had brought the sideboard in November. He had said it was too large for the flat, although she remembered it fitting quite well.\\n\\nShe rang him to ask about the receipt, then put the phone down before it connected. There was nothing he could usefully tell her. She folded the paper along its existing crease and put it back.\\n\\nAt lunchtime a man came in looking for a desk small enough to discourage his wife from working at home.\\n\\n‘Not too small,’ he said. ‘She’ll know.’\\n\\nMara showed him a sewing table. He opened its shallow drawer and seemed disappointed by the compartments.\\n\\nAfter he left, she ate her sandwich standing behind the counter. Across the road, two council workers were replacing a sign with an identical sign. One held the old one while the other checked something on his phone.\\n\\nBefore closing, she took the cups out of the window and lined all six chairs along the wall. She made a price ticket for the set, then another with the price for each. She left both on the nearest seat.\\n\\nThe sideboard drawer would not quite shut. She pushed it with her hip and switched off the lights.\"\n}",
+  "output_sha256": "093c74cefb36982cd4900850697c6cbd5712dfe46a10107eeb736bc944833dff",
+  "finish_reason": "stop",
+  "refusal": null,
+  "returned_model": "gpt-6-astra",
+  "usage": {
+    "prompt_tokens": 405,
+    "completion_tokens": 377,
+    "total_tokens": 782,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "audio_tokens": 0,
+      "accepted_prediction_tokens": 0,
+      "rejected_prediction_tokens": 0
+    }
+  },
+  "format": {
+    "json_object": true,
+    "rule_unchanged": true,
+    "passage_is_string": true,
+    "passage_sha256": "446a8dc197f5d4b1d51dbc74b2a91216f7a5490b2296337f757b1855a3417db1",
+    "passage_words": 263
+  },
+  "finished_at": "2026-09-23T00:18:02.081832+00:00",
+  "latency_seconds": 13.4567,
+  "usage_cost_upper_estimate_usd": 0.0229,
+  "stream_status": "active",
+  "budget": {
+    "usage_cost_upper_estimate_usd": 1.2263211,
+    "uncertain_cost_reserve_usd": 0.0,
+    "in_flight_reserve_usd": 0.090568,
+    "limit_usd": 5.0
+  }
+}

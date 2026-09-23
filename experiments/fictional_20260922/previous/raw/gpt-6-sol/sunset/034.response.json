@@ -1,0 +1,50 @@
+{
+  "model": "gpt-6-sol",
+  "seed": "sunset",
+  "hop": 34,
+  "http_status": 200,
+  "response_body": "{\n  \"id\": \"chatcmpl-ER4x5b0ej7G0iILeAFKe3yzeGRBXt\",\n  \"object\": \"chat.completion\",\n  \"created\": 1790122599,\n  \"model\": \"gpt-6-sol\",\n  \"choices\": [\n    {\n      \"index\": 0,\n      \"message\": {\n        \"role\": \"assistant\",\n        \"content\": \"{\\n  \\\"rule\\\": \\\"Return this JSON object with the rule field unchanged and, in the text field, an original fictional passage of about 250 words that comes immediately BEFORE the current text in the same invented story.\\\",\\n  \\\"text\\\": \\\"By Wednesday evening, the rain had stopped, but water still dripped from the fire escape outside Mara’s kitchen window. She stood at the sink rinsing a plate and watched a pigeon step cautiously along the rail. It lifted one foot, set it down, and appeared to reconsider the whole arrangement.\\\\n\\\\nShe had meant to call her mother after work. Instead she had gone to the library to return a novel she had not finished, then walked home the long way, past the closed florist and the row of houses with identical green doors. Now it was nearly nine. Her mother would be listening to the radio with the volume low, and Mara could think of nothing to say that would not sound like a question about the ladder.\\\\n\\\\nShe dried the plate and put it away. The drawer beside the cooker caught when she reached for a clean teaspoon. She gave it a harder pull than she intended, and something inside knocked against the wood. The spoon was near the front. She took it, pushed the drawer shut with her hip and forgot about the noise.\\\\n\\\\nOn the kitchen table lay a supermarket leaflet and two envelopes that had come that morning. Neither had a window, so she knew they were not bills. She moved them aside to make room for her cup. At the weekend, she thought, she might take the bus out to her mother’s and help gather the pears. She could mention it tomorrow, when a visit would feel less like an apology. For now she opened the novel she had borrowed in place of the old one and read the first page twice.\\\"\\n}\",\n        \"refusal\": null,\n        \"annotations\": []\n      },\n      \"finish_reason\": \"stop\"\n    }\n  ],\n  \"usage\": {\n    \"prompt_tokens\": 368,\n    \"completion_tokens\": 418,\n    \"total_tokens\": 786,\n    \"prompt_tokens_details\": {\n      \"cached_tokens\": 0,\n      \"cache_write_tokens\": 0,\n      \"audio_tokens\": 0\n    },\n    \"completion_tokens_details\": {\n      \"reasoning_tokens\": 41,\n      \"audio_tokens\": 0,\n      \"accepted_prediction_tokens\": 0,\n      \"rejected_prediction_tokens\": 0\n    }\n  },\n  \"service_tier\": \"default\",\n  \"system_fingerprint\": null\n}\n",
+  "response_headers": {
+    "Date": "Wed, 23 Sep 2026 00:16:46 GMT",
+    "openai-processing-ms": "7518",
+    "x-request-id": "req_868072a199f643d2945a694c052f358a"
+  },
+  "output": "{\n  \"rule\": \"Return this JSON object with the rule field unchanged and, in the text field, an original fictional passage of about 250 words that comes immediately BEFORE the current text in the same invented story.\",\n  \"text\": \"By Wednesday evening, the rain had stopped, but water still dripped from the fire escape outside Mara’s kitchen window. She stood at the sink rinsing a plate and watched a pigeon step cautiously along the rail. It lifted one foot, set it down, and appeared to reconsider the whole arrangement.\\n\\nShe had meant to call her mother after work. Instead she had gone to the library to return a novel she had not finished, then walked home the long way, past the closed florist and the row of houses with identical green doors. Now it was nearly nine. Her mother would be listening to the radio with the volume low, and Mara could think of nothing to say that would not sound like a question about the ladder.\\n\\nShe dried the plate and put it away. The drawer beside the cooker caught when she reached for a clean teaspoon. She gave it a harder pull than she intended, and something inside knocked against the wood. The spoon was near the front. She took it, pushed the drawer shut with her hip and forgot about the noise.\\n\\nOn the kitchen table lay a supermarket leaflet and two envelopes that had come that morning. Neither had a window, so she knew they were not bills. She moved them aside to make room for her cup. At the weekend, she thought, she might take the bus out to her mother’s and help gather the pears. She could mention it tomorrow, when a visit would feel less like an apology. For now she opened the novel she had borrowed in place of the old one and read the first page twice.\"\n}",
+  "output_sha256": "9abe797d3ab76b3a9f4938868c960a457e23ad83467236fde6ebbb9ad257b8a3",
+  "finish_reason": "stop",
+  "refusal": null,
+  "returned_model": "gpt-6-sol",
+  "usage": {
+    "prompt_tokens": 368,
+    "completion_tokens": 418,
+    "total_tokens": 786,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 41,
+      "audio_tokens": 0,
+      "accepted_prediction_tokens": 0,
+      "rejected_prediction_tokens": 0
+    }
+  },
+  "format": {
+    "json_object": true,
+    "rule_unchanged": true,
+    "passage_is_string": true,
+    "passage_sha256": "929ccd45ed8671739ea19a3653b04f3339117d4593483e9ad28b29839b1193e3",
+    "passage_words": 277
+  },
+  "finished_at": "2026-09-23T00:16:41.762286+00:00",
+  "latency_seconds": 7.6532,
+  "usage_cost_upper_estimate_usd": 0.004916,
+  "stream_status": "active",
+  "budget": {
+    "usage_cost_upper_estimate_usd": 0.9373871,
+    "uncertain_cost_reserve_usd": 0.0,
+    "in_flight_reserve_usd": 0.316844,
+    "limit_usd": 5.0
+  }
+}

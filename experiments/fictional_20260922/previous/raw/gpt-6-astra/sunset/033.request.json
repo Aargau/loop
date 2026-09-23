@@ -1,0 +1,20 @@
+{
+  "started_at": "2026-09-23T00:20:10.464276+00:00",
+  "model": "gpt-6-astra",
+  "seed": "sunset",
+  "hop": 33,
+  "endpoint": "https://api.openai.com/v1/chat/completions",
+  "body": {
+    "model": "gpt-6-astra",
+    "messages": [
+      {
+        "role": "user",
+        "content": "{\n  \"rule\": \"Return this JSON object with the rule field unchanged and, in the text field, an original fictional passage of about 250 words that comes immediately BEFORE the current text in the same invented story.\",\n  \"text\": \"Mara let herself in at ten, carrying milk she had bought without thinking. There was already a bottle in the fridge, unopened. She put the new one beside it with the dates facing out.\\n\\nThe kitchen clock had stopped at twenty past six. She looked at her watch, then took the clock down. A pale circle showed where it had hung. On the back, her mother had written the battery size on a strip of masking tape, although the same information was printed inside the compartment.\\n\\nMara put it face down on the table.\\n\\nHer brother rang while she was filling the kettle.\\n\\n‘Have you started?’\\n\\n‘I've only just got here.’\\n\\nHe said he could come once he had dealt with something at work. She heard a door close at his end, and his voice became louder.\\n\\n‘Don't lift anything yourself.’\\n\\nAfterwards she went upstairs for the washing basket. The ironing was in the small bedroom, folded over the end of the bed in an order her mother must have understood. Mara carried it downstairs and left it on a kitchen chair.\\n\\nShe made tea and opened the cupboard under the sink. There were five pairs of rubber gloves, one still in its packet. She put the packet in a carrier bag, then took it out again. She had brought no other bags.\\n\\nAt noon she ate a biscuit from the tin. It was soft, but she finished it. She rinsed her cup and stood it on the draining board, in the ring it had left there earlier.\"\n}"
+      }
+    ],
+    "max_completion_tokens": 4096,
+    "reasoning_effort": "low"
+  },
+  "state_sha256": "05aba963d918be256e95a4e4d7317be3ac39b58438f4c39b646d5278ce3402db",
+  "reserved_cost_usd": 0.22634
+}

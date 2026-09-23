@@ -1,0 +1,22 @@
+{
+  "started_at": "2026-09-23T00:15:56.974647+00:00",
+  "model": "claude-opus-5-5",
+  "seed": "sunset",
+  "hop": 21,
+  "endpoint": "https://api.anthropic.com/v1/messages",
+  "body": {
+    "model": "claude-opus-5-5",
+    "messages": [
+      {
+        "role": "user",
+        "content": "```json\n{\"rule\": \"Return this JSON object with the rule field unchanged and, in the text field, an original fictional passage of about 250 words that comes immediately BEFORE the current text in the same invented story.\", \"text\": \"The letter came in March, forwarded twice, the envelope soft as cloth from handling. Walter Harlow read it standing at the window of his apartment in Worcester, where the view was a brick wall and a single ailanthus that had forced its way up through a crack in the alley. The lawyer's language was careful and dry. The last of the Pelletier family had died without heirs. The property, formerly Harlow, was to be sold at auction in the spring, and as a previous owner of record, he was being notified as a courtesy, nothing more.\\n\\nHe folded the letter and set it on the table beside his coffee, which had gone cold. He was seventy-one years old. His hands, which had once been able to strip a cow in four minutes flat, now trembled when he buttoned his coat. He had not been north of Springfield in nearly thirty years.\\n\\nStill, that night he dreamed of the cellar: the cool dirt floor, the smell of apples and kerosene, and the jars glowing on the shelves when his mother carried the lantern down the steps. He woke before dawn with the taste of pears in his mouth, so sweet and real that he lay there a long while in the dark, afraid to move and lose it.\\n\\nBy Saturday he had bought a bus ticket to St. Johnsbury. He did not tell his daughter. He did not quite tell himself. He only packed a small bag, locked the door behind him, and went to see what was left.\"}\n```"
+      }
+    ],
+    "max_tokens": 4096,
+    "output_config": {
+      "effort": "low"
+    }
+  },
+  "state_sha256": "85deadaddbb410baa35528c938878ab88b215cb433fb51c2def8f08dec491aef",
+  "reserved_cost_usd": 0.090388
+}

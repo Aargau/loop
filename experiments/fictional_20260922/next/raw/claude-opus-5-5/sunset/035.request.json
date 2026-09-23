@@ -1,0 +1,22 @@
+{
+  "started_at": "2026-09-23T00:18:11.298749+00:00",
+  "model": "claude-opus-5-5",
+  "seed": "sunset",
+  "hop": 35,
+  "endpoint": "https://api.anthropic.com/v1/messages",
+  "body": {
+    "model": "claude-opus-5-5",
+    "messages": [
+      {
+        "role": "user",
+        "content": "```json\n{\"rule\": \"Return this JSON object with the rule field unchanged and, in the text field, an original fictional passage of about 250 words that comes immediately AFTER the current text in the same invented story.\", \"text\": \"She did not know which way the door was. She only knew which way the table was, so she ran from it, her shoulder striking something hard that rang like a struck bell and then went quiet. Behind her, the humming swelled. It was no longer one voice but many, layered and patient, every cup on that endless table taking up Gran's tune. \\\"Mara!\\\" Tobias's voice came from somewhere to her left, thin and far too distant for the size the kitchen had once been. \\\"Mara, keep talking, I can't see you!\\\" \\\"Here!\\\" she shouted, and the word came back to her three times, each echo a little softer, a little more like Gran. *Here, love. Here. Come here.* The sliver burned in her fist. It was singing again, that wrong half-tone, and she realised it was pulling, faintly, the way a compass needle pulls. Not toward the table. Away from it. She let it lead her. Her hip caught a chair and she heard it scrape, heard it settle, as though someone had just sat down in it. Cold air touched her face. A draught, smelling of rain and cut grass and the ordinary night. Her outstretched hand found wood, then a latch, rough with old paint. \\\"Tobias! The back door!\\\" She wrenched it open. Moonlight spilled across the step, and across Gran's garden, and across the washing line, where a single white sheet hung perfectly still. Then, though there was no wind, it began to turn.\"}\n```"
+      }
+    ],
+    "max_tokens": 4096,
+    "output_config": {
+      "effort": "low"
+    }
+  },
+  "state_sha256": "2e04716cb3e8112b101ff065ece89c73ad48752d534c0eb45ea295df178455a1",
+  "reserved_cost_usd": 0.090352
+}

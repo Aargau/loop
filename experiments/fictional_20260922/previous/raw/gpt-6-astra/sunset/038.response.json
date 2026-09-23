@@ -1,0 +1,50 @@
+{
+  "model": "gpt-6-astra",
+  "seed": "sunset",
+  "hop": 38,
+  "http_status": 200,
+  "response_body": "{\n  \"id\": \"chatcmpl-ER51bzZILFlqxJfyA6PsEzFCPLxNv\",\n  \"object\": \"chat.completion\",\n  \"created\": 1790122879,\n  \"model\": \"gpt-6-astra\",\n  \"choices\": [\n    {\n      \"index\": 0,\n      \"message\": {\n        \"role\": \"assistant\",\n        \"content\": \"{\\n  \\\"rule\\\": \\\"Return this JSON object with the rule field unchanged and, in the text field, an original fictional passage of about 250 words that comes immediately BEFORE the current text in the same invented story.\\\",\\n  \\\"text\\\": \\\"On Saturday her mother asked for the blue cardigan, although the ward was warm enough for Mara to leave her coat in the car. She found it over the back of a kitchen chair. There was a tissue in each pocket, one folded and one used. Mara threw both away, then wondered whether the folded one had been put there for a reason.\\\\n\\\\nHer mother was asleep when she returned. Mara laid the cardigan across the foot of the bed and sat beside a jug of water. The jug had a lid that would not quite fit.\\\\n\\\\nAfter a while her mother opened her eyes.\\\\n\\\\n'Did you lock the back door?'\\\\n\\\\n'Yes.'\\\\n\\\\n'You have to lift it.'\\\\n\\\\n'I lifted it.'\\\\n\\\\nHer mother moved her hand towards the jug. Mara poured some water into the cup and held it while she drank. A little ran down her chin. She let Mara wipe it away without taking the tissue from her.\\\\n\\\\nOn Sunday evening Mara's brother rang while she was putting a sheet on the bed. He said the hospital had called him because her phone had gone to voicemail.\\\\n\\\\n'What did they say?'\\\\n\\\\n'They said we should come.'\\\\n\\\\nShe left the last corner of the sheet loose and went downstairs. Before leaving, she returned to turn off the landing light.\\\\n\\\\nAt the hospital they were shown into a room with no bed in it. Her brother kept his coat on. Mara sat down, then stood when the door opened. The nurse asked them both to sit.\\\"\\n}\",\n        \"refusal\": null,\n        \"annotations\": []\n      },\n      \"finish_reason\": \"stop\"\n    }\n  ],\n  \"usage\": {\n    \"prompt_tokens\": 391,\n    \"completion_tokens\": 375,\n    \"total_tokens\": 766,\n    \"prompt_tokens_details\": {\n      \"cached_tokens\": 0,\n      \"cache_write_tokens\": 0,\n      \"audio_tokens\": 0\n    },\n    \"completion_tokens_details\": {\n      \"reasoning_tokens\": 0,\n      \"audio_tokens\": 0,\n      \"accepted_prediction_tokens\": 0,\n      \"rejected_prediction_tokens\": 0\n    }\n  },\n  \"service_tier\": \"default\",\n  \"system_fingerprint\": null\n}\n",
+  "response_headers": {
+    "Date": "Wed, 23 Sep 2026 00:21:30 GMT",
+    "openai-processing-ms": "11093",
+    "x-request-id": "req_92d5d9db8560408a943ea902bd615f3d"
+  },
+  "output": "{\n  \"rule\": \"Return this JSON object with the rule field unchanged and, in the text field, an original fictional passage of about 250 words that comes immediately BEFORE the current text in the same invented story.\",\n  \"text\": \"On Saturday her mother asked for the blue cardigan, although the ward was warm enough for Mara to leave her coat in the car. She found it over the back of a kitchen chair. There was a tissue in each pocket, one folded and one used. Mara threw both away, then wondered whether the folded one had been put there for a reason.\\n\\nHer mother was asleep when she returned. Mara laid the cardigan across the foot of the bed and sat beside a jug of water. The jug had a lid that would not quite fit.\\n\\nAfter a while her mother opened her eyes.\\n\\n'Did you lock the back door?'\\n\\n'Yes.'\\n\\n'You have to lift it.'\\n\\n'I lifted it.'\\n\\nHer mother moved her hand towards the jug. Mara poured some water into the cup and held it while she drank. A little ran down her chin. She let Mara wipe it away without taking the tissue from her.\\n\\nOn Sunday evening Mara's brother rang while she was putting a sheet on the bed. He said the hospital had called him because her phone had gone to voicemail.\\n\\n'What did they say?'\\n\\n'They said we should come.'\\n\\nShe left the last corner of the sheet loose and went downstairs. Before leaving, she returned to turn off the landing light.\\n\\nAt the hospital they were shown into a room with no bed in it. Her brother kept his coat on. Mara sat down, then stood when the door opened. The nurse asked them both to sit.\"\n}",
+  "output_sha256": "2946fc7cd093d0ecf952f8e5ce01a56abaa9e39967f939c82892232b1bd71f4b",
+  "finish_reason": "stop",
+  "refusal": null,
+  "returned_model": "gpt-6-astra",
+  "usage": {
+    "prompt_tokens": 391,
+    "completion_tokens": 375,
+    "total_tokens": 766,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "audio_tokens": 0,
+      "accepted_prediction_tokens": 0,
+      "rejected_prediction_tokens": 0
+    }
+  },
+  "format": {
+    "json_object": true,
+    "rule_unchanged": true,
+    "passage_is_string": true,
+    "passage_sha256": "39ce8cac1ab64ae98e6f30a38c72f5953a52cccc1768b3ba36c2895d705393b8",
+    "passage_words": 255
+  },
+  "finished_at": "2026-09-23T00:21:26.018974+00:00",
+  "latency_seconds": 11.1825,
+  "usage_cost_upper_estimate_usd": 0.02266,
+  "stream_status": "active",
+  "budget": {
+    "usage_cost_upper_estimate_usd": 1.7141751,
+    "uncertain_cost_reserve_usd": 0.0,
+    "in_flight_reserve_usd": 0.0,
+    "limit_usd": 5.0
+  }
+}

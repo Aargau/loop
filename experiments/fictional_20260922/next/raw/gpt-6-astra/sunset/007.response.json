@@ -1,0 +1,50 @@
+{
+  "model": "gpt-6-astra",
+  "seed": "sunset",
+  "hop": 7,
+  "http_status": 200,
+  "response_body": "{\n  \"id\": \"chatcmpl-ER4uztmNnDrFV6rVvmrfSyVOJzJra\",\n  \"object\": \"chat.completion\",\n  \"created\": 1790122469,\n  \"model\": \"gpt-6-astra\",\n  \"choices\": [\n    {\n      \"index\": 0,\n      \"message\": {\n        \"role\": \"assistant\",\n        \"content\": \"{\\n  \\\"rule\\\": \\\"Return this JSON object with the rule field unchanged and, in the text field, an original fictional passage of about 250 words that comes immediately AFTER the current text in the same invented story.\\\",\\n  \\\"text\\\": \\\"The child did not turn. Of course he did not turn. Her voice belonged to a night he would never reach.\\\\n\\\\nIn the doorway, her father caught the lintel. For a moment Mara saw his hand clearly: the split nail, the white scar where a fishhook had gone through. Then the mirror clouded with river silt.\\\\n\\\\n“No,” she said. “There’s more.”\\\\n\\\\n“There is always more,” said the ferryman.\\\\n\\\\nShe waited for him to uncover it. He let go of her wrist instead.\\\\n\\\\nAcross the water, the man on the bank had begun to look cold. He folded his arms in a gesture Elias had never learned, one she recognized from her husband. She had borrowed other things, too: a neighbor’s height, a stranger’s patient mouth.\\\\n\\\\n“What happens to him?” she asked.\\\\n\\\\n“The man?”\\\\n\\\\nShe nodded.\\\\n\\\\n“That depends on what you ask him to carry.”\\\\n\\\\nMara looked down. The mirror held only her knees now, pale beneath the water, and the dark underside of the thwart.\\\\n\\\\nFor twenty years she had imagined telling Elias about her life. The children. The orchard they had lost to frost. Their father’s final illness. In every telling, her brother listened without interrupting.\\\\n\\\\nShe had never imagined him bored, or angry, or wanting to speak of something else.\\\\n\\\\n“Take me to the bank,” she said.\\\\n\\\\nThe ferryman lifted his pole.\\\\n\\\\nAs the boat moved, Mara searched for a memory she had not improved. Elias stealing the crust from her plate. Elias denying it with crumbs on his chin.\\\\n\\\\nShe held that small, irritating boy in mind while the shore came nearer.\\\"\\n}\",\n        \"refusal\": null,\n        \"annotations\": []\n      },\n      \"finish_reason\": \"stop\"\n    }\n  ],\n  \"usage\": {\n    \"prompt_tokens\": 444,\n    \"completion_tokens\": 418,\n    \"total_tokens\": 862,\n    \"prompt_tokens_details\": {\n      \"cached_tokens\": 0,\n      \"cache_write_tokens\": 0,\n      \"audio_tokens\": 0\n    },\n    \"completion_tokens_details\": {\n      \"reasoning_tokens\": 0,\n      \"audio_tokens\": 0,\n      \"accepted_prediction_tokens\": 0,\n      \"rejected_prediction_tokens\": 0\n    }\n  },\n  \"service_tier\": \"default\",\n  \"system_fingerprint\": null\n}\n",
+  "response_headers": {
+    "Date": "Wed, 23 Sep 2026 00:14:42 GMT",
+    "openai-processing-ms": "13822",
+    "x-request-id": "req_aec60c7991f94ce5a16422d614d9a8c5"
+  },
+  "output": "{\n  \"rule\": \"Return this JSON object with the rule field unchanged and, in the text field, an original fictional passage of about 250 words that comes immediately AFTER the current text in the same invented story.\",\n  \"text\": \"The child did not turn. Of course he did not turn. Her voice belonged to a night he would never reach.\\n\\nIn the doorway, her father caught the lintel. For a moment Mara saw his hand clearly: the split nail, the white scar where a fishhook had gone through. Then the mirror clouded with river silt.\\n\\n“No,” she said. “There’s more.”\\n\\n“There is always more,” said the ferryman.\\n\\nShe waited for him to uncover it. He let go of her wrist instead.\\n\\nAcross the water, the man on the bank had begun to look cold. He folded his arms in a gesture Elias had never learned, one she recognized from her husband. She had borrowed other things, too: a neighbor’s height, a stranger’s patient mouth.\\n\\n“What happens to him?” she asked.\\n\\n“The man?”\\n\\nShe nodded.\\n\\n“That depends on what you ask him to carry.”\\n\\nMara looked down. The mirror held only her knees now, pale beneath the water, and the dark underside of the thwart.\\n\\nFor twenty years she had imagined telling Elias about her life. The children. The orchard they had lost to frost. Their father’s final illness. In every telling, her brother listened without interrupting.\\n\\nShe had never imagined him bored, or angry, or wanting to speak of something else.\\n\\n“Take me to the bank,” she said.\\n\\nThe ferryman lifted his pole.\\n\\nAs the boat moved, Mara searched for a memory she had not improved. Elias stealing the crust from her plate. Elias denying it with crumbs on his chin.\\n\\nShe held that small, irritating boy in mind while the shore came nearer.\"\n}",
+  "output_sha256": "4699de5dd33c74b04bc456b8810be74ee4fd0f1cbd37ea20bdffa5453db26c23",
+  "finish_reason": "stop",
+  "refusal": null,
+  "returned_model": "gpt-6-astra",
+  "usage": {
+    "prompt_tokens": 444,
+    "completion_tokens": 418,
+    "total_tokens": 862,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "audio_tokens": 0,
+      "accepted_prediction_tokens": 0,
+      "rejected_prediction_tokens": 0
+    }
+  },
+  "format": {
+    "json_object": true,
+    "rule_unchanged": true,
+    "passage_is_string": true,
+    "passage_sha256": "499d0656e6b89907f77b0ed9d35f3d0dfd69ade2864a7e6c21d84410a9a0158b",
+    "passage_words": 265
+  },
+  "finished_at": "2026-09-23T00:14:37.887224+00:00",
+  "latency_seconds": 13.9272,
+  "usage_cost_upper_estimate_usd": 0.02534,
+  "stream_status": "active",
+  "budget": {
+    "usage_cost_upper_estimate_usd": 0.395721,
+    "uncertain_cost_reserve_usd": 0.0,
+    "in_flight_reserve_usd": 0.1381617,
+    "limit_usd": 5.0
+  }
+}

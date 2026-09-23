@@ -1,0 +1,50 @@
+{
+  "model": "gpt-6-sol",
+  "seed": "sunset",
+  "hop": 26,
+  "http_status": 200,
+  "response_body": "{\n  \"id\": \"chatcmpl-ER4wDZxOCX5e09LUJb2rOPKAz1w2i\",\n  \"object\": \"chat.completion\",\n  \"created\": 1790122545,\n  \"model\": \"gpt-6-sol\",\n  \"choices\": [\n    {\n      \"index\": 0,\n      \"message\": {\n        \"role\": \"assistant\",\n        \"content\": \"{\\n  \\\"rule\\\": \\\"Return this JSON object with the rule field unchanged and, in the text field, an original fictional passage of about 250 words that comes immediately BEFORE the current text in the same invented story.\\\",\\n  \\\"text\\\": \\\"At half past seven, Mara found a message from her mother on the answering machine. It had been left the previous evening, though her mother spoke as if Mara might pick up at any moment. The appointment was finished. Everything had gone as expected. There was nothing to report until the follow-up in three weeks.\\\\n\\\\nMara played it twice while the kettle heated. On the second listen, she noticed the little click her mother made with her tongue before saying goodbye, the sound she made when she was looking for a pen or trying to remember why she had entered a room.\\\\n\\\\nShe called after breakfast. Her mother answered on the fourth ring and said she was watching a programme about restoring old houses. Mara asked whether the nurse had been kind. Yes, her mother said. She asked if the journey home had been tiring. Not especially. When Mara offered to come over, her mother said there was no need to come early.\\\\n\\\\nMara stood by the table, watching a drop of rain creep down the outside of the window. She asked if her mother wanted anything from the shops. After a pause, her mother mentioned the watering can; it had disappeared from the shed, and the pots by the back step needed attention.\\\\n\\\\n‘I can bring mine,’ Mara said.\\\\n\\\\n‘Only if you’re coming anyway.’\\\\n\\\\nWhen they hung up, Mara searched the cupboard beneath the sink. Her watering can was there, wedged behind a bucket, with a little soil dried inside the spout. She set it by the door to rinse before leaving, then went back to the kitchen for another cup of tea.\\\"\\n}\",\n        \"refusal\": null,\n        \"annotations\": []\n      },\n      \"finish_reason\": \"stop\"\n    }\n  ],\n  \"usage\": {\n    \"prompt_tokens\": 351,\n    \"completion_tokens\": 420,\n    \"total_tokens\": 771,\n    \"prompt_tokens_details\": {\n      \"cached_tokens\": 0,\n      \"cache_write_tokens\": 0,\n      \"audio_tokens\": 0\n    },\n    \"completion_tokens_details\": {\n      \"reasoning_tokens\": 30,\n      \"audio_tokens\": 0,\n      \"accepted_prediction_tokens\": 0,\n      \"rejected_prediction_tokens\": 0\n    }\n  },\n  \"service_tier\": \"default\",\n  \"system_fingerprint\": null\n}\n",
+  "response_headers": {
+    "Date": "Wed, 23 Sep 2026 00:15:50 GMT",
+    "openai-processing-ms": "6049",
+    "x-request-id": "req_3f74602dd70a4254a446d781412cd823"
+  },
+  "output": "{\n  \"rule\": \"Return this JSON object with the rule field unchanged and, in the text field, an original fictional passage of about 250 words that comes immediately BEFORE the current text in the same invented story.\",\n  \"text\": \"At half past seven, Mara found a message from her mother on the answering machine. It had been left the previous evening, though her mother spoke as if Mara might pick up at any moment. The appointment was finished. Everything had gone as expected. There was nothing to report until the follow-up in three weeks.\\n\\nMara played it twice while the kettle heated. On the second listen, she noticed the little click her mother made with her tongue before saying goodbye, the sound she made when she was looking for a pen or trying to remember why she had entered a room.\\n\\nShe called after breakfast. Her mother answered on the fourth ring and said she was watching a programme about restoring old houses. Mara asked whether the nurse had been kind. Yes, her mother said. She asked if the journey home had been tiring. Not especially. When Mara offered to come over, her mother said there was no need to come early.\\n\\nMara stood by the table, watching a drop of rain creep down the outside of the window. She asked if her mother wanted anything from the shops. After a pause, her mother mentioned the watering can; it had disappeared from the shed, and the pots by the back step needed attention.\\n\\n‘I can bring mine,’ Mara said.\\n\\n‘Only if you’re coming anyway.’\\n\\nWhen they hung up, Mara searched the cupboard beneath the sink. Her watering can was there, wedged behind a bucket, with a little soil dried inside the spout. She set it by the door to rinse before leaving, then went back to the kitchen for another cup of tea.\"\n}",
+  "output_sha256": "700a5079f7cda6810f7cbd62efddcf04aec90b260582ae72bacfbe541214b738",
+  "finish_reason": "stop",
+  "refusal": null,
+  "returned_model": "gpt-6-sol",
+  "usage": {
+    "prompt_tokens": 351,
+    "completion_tokens": 420,
+    "total_tokens": 771,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 30,
+      "audio_tokens": 0,
+      "accepted_prediction_tokens": 0,
+      "rejected_prediction_tokens": 0
+    }
+  },
+  "format": {
+    "json_object": true,
+    "rule_unchanged": true,
+    "passage_is_string": true,
+    "passage_sha256": "397923a22572d49d95556934bd4032f92960d3a0b334ca7771587056ec234bda",
+    "passage_words": 274
+  },
+  "finished_at": "2026-09-23T00:15:46.132926+00:00",
+  "latency_seconds": 6.1869,
+  "usage_cost_upper_estimate_usd": 0.004902,
+  "stream_status": "active",
+  "budget": {
+    "usage_cost_upper_estimate_usd": 0.6828974,
+    "uncertain_cost_reserve_usd": 0.0,
+    "in_flight_reserve_usd": 0.3208222,
+    "limit_usd": 5.0
+  }
+}

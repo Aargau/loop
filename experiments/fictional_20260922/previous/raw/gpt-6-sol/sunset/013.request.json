@@ -1,0 +1,20 @@
+{
+  "started_at": "2026-09-23T00:14:10.555489+00:00",
+  "model": "gpt-6-sol",
+  "seed": "sunset",
+  "hop": 13,
+  "endpoint": "https://api.openai.com/v1/chat/completions",
+  "body": {
+    "model": "gpt-6-sol",
+    "messages": [
+      {
+        "role": "user",
+        "content": "{\n  \"rule\": \"Return this JSON object with the rule field unchanged and, in the text field, an original fictional passage of about 250 words that comes immediately BEFORE the current text in the same invented story.\",\n  \"text\": \"By Thursday evening, the house had begun to look like a house again. The chairs borrowed for the funeral had gone back to the village hall, though their marks remained in the carpet. Mara’s aunt folded the extra tablecloth and put it in the airing cupboard, where it had always lived. Neither of them knew what to do with the cards, so they left them on the mantelpiece.\\n\\nMara went out to empty the bins. Bristle followed her down the path and waited by the gate, his nose lifted toward the road. He had been doing that all week. When she came back, she found her aunt at the kitchen table with a notebook open beside the telephone. They had written down the names of people who needed thanking. There were more names than either of them had expected.\\n\\n‘You can leave the rest,’ her aunt said.\\n\\nMara sat down anyway. She addressed three envelopes before realising she had written the wrong postcode on one. Her mother would have known it without looking. Mara crossed it out carefully and began again.\\n\\nLater, her aunt offered to stay the night, but Mara said she would be fine. She slept in her old room under a duvet that smelled faintly of the cupboard. In the morning she heard Bristle scratching at the back door and went down to let him out. Her aunt arrived just after breakfast with milk, a bag of biscuits and a box for the flowers. There were still visitors due that afternoon, so Mara put the kettle on.\"\n}"
+      }
+    ],
+    "max_completion_tokens": 4096,
+    "reasoning_effort": "low"
+  },
+  "state_sha256": "96987e3272cab798e0f41daaa94fd3e4f5fc67bec47cdc43a69cb6fe99e42ce5",
+  "reserved_cost_usd": 0.045302
+}

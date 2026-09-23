@@ -1,0 +1,50 @@
+{
+  "model": "gpt-6-sol",
+  "seed": "sunset",
+  "hop": 3,
+  "http_status": 200,
+  "response_body": "{\n  \"id\": \"chatcmpl-ER4tdVsBt3mgrfrjYXZZjoOY75INP\",\n  \"object\": \"chat.completion\",\n  \"created\": 1790122385,\n  \"model\": \"gpt-6-sol\",\n  \"choices\": [\n    {\n      \"index\": 0,\n      \"message\": {\n        \"role\": \"assistant\",\n        \"content\": \"{\\n  \\\"rule\\\": \\\"Return this JSON object with the rule field unchanged and, in the text field, an original fictional passage of about 250 words that comes immediately BEFORE the current text in the same invented story.\\\",\\n  \\\"text\\\": \\\"On the morning the rain stopped, Mara opened every window in the cottage. The rooms smelled of damp wool and yesterday’s fire, and Bristle had tracked mud across the floor despite her best efforts with a towel. He watched from his blanket as she swept, lifting his head each time the broom came near.\\\\n\\\\nShe had planned to go to the market. Instead, she found herself sorting the kitchen cupboards, throwing out flour that had gone stale and gathering the empty jars she always meant to return. She washed their lids and left them on the sill to dry. It was work she could finish in a day, which was perhaps why she kept finding more of it.\\\\n\\\\nBy noon the sun had reached the kitchen table. Mara made tea and considered the orchard. She had received another note from the man who leased the grazing field beside it, asking whether he might cut back the branches hanging over his fence. She had told him she would come and look, though she had not been to the old house since winter. Seven years after her brother’s death, she still put off the journey whenever she could.\\\\n\\\\nBristle rose when she put on her coat, then settled again as she took it off. There was bread enough for lunch and a saucepan of stewed pears she could warm for supper. She set the saucepan on the stove, opened the cupboard above it, and reached past the tea tin toward the back shelf.\\\"\\n}\",\n        \"refusal\": null,\n        \"annotations\": []\n      },\n      \"finish_reason\": \"stop\"\n    }\n  ],\n  \"usage\": {\n    \"prompt_tokens\": 383,\n    \"completion_tokens\": 392,\n    \"total_tokens\": 775,\n    \"prompt_tokens_details\": {\n      \"cached_tokens\": 0,\n      \"cache_write_tokens\": 0,\n      \"audio_tokens\": 0\n    },\n    \"completion_tokens_details\": {\n      \"reasoning_tokens\": 43,\n      \"audio_tokens\": 0,\n      \"accepted_prediction_tokens\": 0,\n      \"rejected_prediction_tokens\": 0\n    }\n  },\n  \"service_tier\": \"default\",\n  \"system_fingerprint\": null\n}\n",
+  "response_headers": {
+    "Date": "Wed, 23 Sep 2026 00:13:11 GMT",
+    "openai-processing-ms": "6264",
+    "x-request-id": "req_2dad8d0d95674362a78d66ed7cae48cd"
+  },
+  "output": "{\n  \"rule\": \"Return this JSON object with the rule field unchanged and, in the text field, an original fictional passage of about 250 words that comes immediately BEFORE the current text in the same invented story.\",\n  \"text\": \"On the morning the rain stopped, Mara opened every window in the cottage. The rooms smelled of damp wool and yesterday’s fire, and Bristle had tracked mud across the floor despite her best efforts with a towel. He watched from his blanket as she swept, lifting his head each time the broom came near.\\n\\nShe had planned to go to the market. Instead, she found herself sorting the kitchen cupboards, throwing out flour that had gone stale and gathering the empty jars she always meant to return. She washed their lids and left them on the sill to dry. It was work she could finish in a day, which was perhaps why she kept finding more of it.\\n\\nBy noon the sun had reached the kitchen table. Mara made tea and considered the orchard. She had received another note from the man who leased the grazing field beside it, asking whether he might cut back the branches hanging over his fence. She had told him she would come and look, though she had not been to the old house since winter. Seven years after her brother’s death, she still put off the journey whenever she could.\\n\\nBristle rose when she put on her coat, then settled again as she took it off. There was bread enough for lunch and a saucepan of stewed pears she could warm for supper. She set the saucepan on the stove, opened the cupboard above it, and reached past the tea tin toward the back shelf.\"\n}",
+  "output_sha256": "882023a5d568a2ca2c92f208ce3bc5c533f69c1caeaeb18172671c67b6ea1e2d",
+  "finish_reason": "stop",
+  "refusal": null,
+  "returned_model": "gpt-6-sol",
+  "usage": {
+    "prompt_tokens": 383,
+    "completion_tokens": 392,
+    "total_tokens": 775,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 43,
+      "audio_tokens": 0,
+      "accepted_prediction_tokens": 0,
+      "rejected_prediction_tokens": 0
+    }
+  },
+  "format": {
+    "json_object": true,
+    "rule_unchanged": true,
+    "passage_is_string": true,
+    "passage_sha256": "7ac26588269294c46aa5bb9adffe6a0b58d48459991d00913ba70c53467679db",
+    "passage_words": 251
+  },
+  "finished_at": "2026-09-23T00:13:07.023696+00:00",
+  "latency_seconds": 6.3878,
+  "usage_cost_upper_estimate_usd": 0.004686,
+  "stream_status": "active",
+  "budget": {
+    "usage_cost_upper_estimate_usd": 0.0640308,
+    "uncertain_cost_reserve_usd": 0.0,
+    "in_flight_reserve_usd": 0.3213278,
+    "limit_usd": 5.0
+  }
+}

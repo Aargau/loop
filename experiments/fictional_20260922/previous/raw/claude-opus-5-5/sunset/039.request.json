@@ -1,0 +1,22 @@
+{
+  "started_at": "2026-09-23T00:19:04.027728+00:00",
+  "model": "claude-opus-5-5",
+  "seed": "sunset",
+  "hop": 39,
+  "endpoint": "https://api.anthropic.com/v1/messages",
+  "body": {
+    "model": "claude-opus-5-5",
+    "messages": [
+      {
+        "role": "user",
+        "content": "```json\n{\"rule\": \"Return this JSON object with the rule field unchanged and, in the text field, an original fictional passage of about 250 words that comes immediately BEFORE the current text in the same invented story.\", \"text\": \"In the town of Wickham Falls, news traveled by way of the post office, the Methodist ladies' circle, and Aunt Constance, and of the three, Aunt Constance was by far the most reliable and the least kind.\\n\\nIt was she who had first reported, one August long ago, that the Hollises were leaving. Old Judge Hollis had gone to a sanitarium in the mountains, where the air was said to be good for the lungs and bad for conversation. His wife had followed within the week, taking with her two trunks, a canary, and the boy, who was then nineteen and had been sent home from college under circumstances no one would describe in front of Margaret.\\n\\n\\\"A scandal,\\\" Aunt Constance had pronounced over the breakfast table, buttering her toast with the precision of a surgeon. \\\"Or a debt. With men like that it is generally both.\\\"\\n\\nMargaret, who was nineteen herself that summer and had once danced a single reel with Thomas Hollis at the Grange hall, said nothing. She remembered chiefly that he had trodden on her foot, apologized with great ceremony, and then trodden on it again, laughing so hard that she had laughed too, and been scolded for it all the way home.\\n\\nThe Hollises did not write. The judge died that winter, and his widow the spring after, somewhere in Ohio. Their lawyer sent a man to lock the shutters and cut off the water, and after that there was nothing to tell, and even Aunt Constance was obliged to let the matter rest.\"}\n```"
+      }
+    ],
+    "max_tokens": 4096,
+    "output_config": {
+      "effort": "low"
+    }
+  },
+  "state_sha256": "f8e5025c85b51bbe58874b4ea23251869d3544092f5a430aa0337955fc20fcb8",
+  "reserved_cost_usd": 0.090684
+}

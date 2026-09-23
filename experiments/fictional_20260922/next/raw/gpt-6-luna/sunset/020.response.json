@@ -1,0 +1,47 @@
+{
+  "model": "gpt-6-luna",
+  "seed": "sunset",
+  "hop": 20,
+  "http_status": 200,
+  "response_body": "{\n  \"id\": \"chatcmpl-ER4uy5ZPwLTvmY2sSbP9nMl68TFQz\",\n  \"object\": \"chat.completion\",\n  \"created\": 1790122468,\n  \"model\": \"gpt-6-luna\",\n  \"choices\": [\n    {\n      \"index\": 0,\n      \"message\": {\n        \"role\": \"assistant\",\n        \"content\": \"{\\\"rule\\\":\\\"Return this JSON object with the rule field unchanged and, in the text field, an original fictional passage of about 250 words that comes immediately AFTER the current text in the same invented story.\\\",\\\"text\\\":\\\"The attic’s reflection widened until it filled the river, its sloping walls rippling like curtains in a draft. The boat slipped through the surface without a splash.\\n\\nMara stood among the boxes. Dust hung in the air, bright as stars. The red scarf lay across an open trunk, though she remembered it folded away years ago, after her mother stopped wearing it.\\n\\nThe stranger remained in the boat, visible through the attic floorboards. “Take only what belongs to you,” they called.\\n\\nMara reached for the scarf. Its wool was warm. When she lifted it, something small tumbled from the trunk: a brass key, green at the teeth. She knew it—not from this house, but from a dream she’d had as a child, of a locked door at the end of a long hall.\\n\\nThe attic shuddered. Below, the river rushed louder, and every reflected room went dark.\\n\\n“Quickly,” the stranger said. “The current has found its way back.”\\n\\nMara looped the scarf around her neck and clutched the key. A seam opened in the attic wall, revealing the green door from below. Beyond it was no riverbank, only a dim hallway, stretching farther than the house could hold.\\n\\nAt its distant end, someone knocked three times.\\n\\nMara looked down through the floor. The boat had begun to drift away, carrying the stranger with it. They lifted one hand—not a farewell, she thought, but a warning.\\n\\nThe knocking came again.\\n\\nShe stepped through the doorway. Behind her, the attic folded shut, and the key in her palm turned by itself.\\\"}\",\n        \"refusal\": null,\n        \"annotations\": []\n      },\n      \"finish_reason\": \"stop\"\n    }\n  ],\n  \"usage\": {\n    \"prompt_tokens\": 403,\n    \"completion_tokens\": 498,\n    \"total_tokens\": 901,\n    \"prompt_tokens_details\": {\n      \"cached_tokens\": 0,\n      \"cache_write_tokens\": 0,\n      \"audio_tokens\": 0\n    },\n    \"completion_tokens_details\": {\n      \"reasoning_tokens\": 116,\n      \"audio_tokens\": 0,\n      \"accepted_prediction_tokens\": 0,\n      \"rejected_prediction_tokens\": 0\n    }\n  },\n  \"service_tier\": \"default\",\n  \"system_fingerprint\": null\n}\n",
+  "response_headers": {
+    "Date": "Wed, 23 Sep 2026 00:14:33 GMT",
+    "openai-processing-ms": "4384",
+    "x-request-id": "req_19147dc23467415db53e534e8ddad33d"
+  },
+  "output": "{\"rule\":\"Return this JSON object with the rule field unchanged and, in the text field, an original fictional passage of about 250 words that comes immediately AFTER the current text in the same invented story.\",\"text\":\"The attic’s reflection widened until it filled the river, its sloping walls rippling like curtains in a draft. The boat slipped through the surface without a splash.\n\nMara stood among the boxes. Dust hung in the air, bright as stars. The red scarf lay across an open trunk, though she remembered it folded away years ago, after her mother stopped wearing it.\n\nThe stranger remained in the boat, visible through the attic floorboards. “Take only what belongs to you,” they called.\n\nMara reached for the scarf. Its wool was warm. When she lifted it, something small tumbled from the trunk: a brass key, green at the teeth. She knew it—not from this house, but from a dream she’d had as a child, of a locked door at the end of a long hall.\n\nThe attic shuddered. Below, the river rushed louder, and every reflected room went dark.\n\n“Quickly,” the stranger said. “The current has found its way back.”\n\nMara looped the scarf around her neck and clutched the key. A seam opened in the attic wall, revealing the green door from below. Beyond it was no riverbank, only a dim hallway, stretching farther than the house could hold.\n\nAt its distant end, someone knocked three times.\n\nMara looked down through the floor. The boat had begun to drift away, carrying the stranger with it. They lifted one hand—not a farewell, she thought, but a warning.\n\nThe knocking came again.\n\nShe stepped through the doorway. Behind her, the attic folded shut, and the key in her palm turned by itself.\"}",
+  "output_sha256": "532e3f4ebd97f5821aaa0afb404a757713d57a5b70e6963da662c08318379060",
+  "finish_reason": "stop",
+  "refusal": null,
+  "returned_model": "gpt-6-luna",
+  "usage": {
+    "prompt_tokens": 403,
+    "completion_tokens": 498,
+    "total_tokens": 901,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 116,
+      "audio_tokens": 0,
+      "accepted_prediction_tokens": 0,
+      "rejected_prediction_tokens": 0
+    }
+  },
+  "format": {
+    "json_object": false,
+    "rule_unchanged": false
+  },
+  "finished_at": "2026-09-23T00:14:28.204372+00:00",
+  "latency_seconds": 4.4838,
+  "usage_cost_upper_estimate_usd": 0.0002893,
+  "stream_status": "active",
+  "budget": {
+    "usage_cost_upper_estimate_usd": 0.3501409,
+    "uncertain_cost_reserve_usd": 0.0,
+    "in_flight_reserve_usd": 0.364464,
+    "limit_usd": 5.0
+  }
+}

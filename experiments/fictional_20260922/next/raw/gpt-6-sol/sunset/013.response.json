@@ -1,0 +1,50 @@
+{
+  "model": "gpt-6-sol",
+  "seed": "sunset",
+  "hop": 13,
+  "http_status": 200,
+  "response_body": "{\n  \"id\": \"chatcmpl-ER4uvCu0BRkAs2k45j1UjgUxlUcUd\",\n  \"object\": \"chat.completion\",\n  \"created\": 1790122465,\n  \"model\": \"gpt-6-sol\",\n  \"choices\": [\n    {\n      \"index\": 0,\n      \"message\": {\n        \"role\": \"assistant\",\n        \"content\": \"{\\\"rule\\\":\\\"Return this JSON object with the rule field unchanged and, in the text field, an original fictional passage of about 250 words that comes immediately AFTER the current text in the same invented story.\\\",\\\"text\\\":\\\"The woman looked at the boy. “I don’t know.”\\\\n\\\\nA drop fell from his hand onto the kitchen floor. Another followed, though his sleeve was dry. Mara kept her fingers on the key.\\\\n\\\\n“You told me you watched her climb out,” Mara said.\\\\n\\\\n“I watched someone climb out. It was dark, and she had your coat over her head.” The woman’s gaze went to the blue wool at her own shoulders. “I still have it.”\\\\n\\\\nBehind the little door, the knocking stopped.\\\\n\\\\nThe boy squeezed Mara’s hand. “Don’t open it,” he whispered.\\\\n\\\\nMara remembered sitting at this table with two children. One had wrapped white thread around the cup so she could find it in the dark. The other had laughed and asked why anyone would drink down there. By morning, Mara could remember only one of their faces.\\\\n\\\\nShe lifted the lantern and held it close to the boy. He flinched from the heat, and for an instant she saw a thin white loop around his wrist.\\\\n\\\\n“Where did you get that?” she asked.\\\\n\\\\nHe tried to pull away. The thread tightened against his skin, its other end trailing across the floor to the green cup.\\\\n\\\\nThe woman seized the cup. Water spilled over her hands, but the thread held fast. From the cupboard came a small, frightened breath.\\\\n\\\\nMara turned the key. The painted square swung inward onto darkness and the smell of rain-soaked earth. Someone crouched just beyond the pipes, holding one end of a length of white thread.\\\\n\\\\n“Mara?” the child said. “Did you bring the lantern?”\\\"}\",\n        \"refusal\": null,\n        \"annotations\": []\n      },\n      \"finish_reason\": \"stop\"\n    }\n  ],\n  \"usage\": {\n    \"prompt_tokens\": 407,\n    \"completion_tokens\": 420,\n    \"total_tokens\": 827,\n    \"prompt_tokens_details\": {\n      \"cached_tokens\": 0,\n      \"cache_write_tokens\": 0,\n      \"audio_tokens\": 0\n    },\n    \"completion_tokens_details\": {\n      \"reasoning_tokens\": 20,\n      \"audio_tokens\": 0,\n      \"accepted_prediction_tokens\": 0,\n      \"rejected_prediction_tokens\": 0\n    }\n  },\n  \"service_tier\": \"default\",\n  \"system_fingerprint\": null\n}\n",
+  "response_headers": {
+    "Date": "Wed, 23 Sep 2026 00:14:32 GMT",
+    "openai-processing-ms": "7225",
+    "x-request-id": "req_b070c5897a61411da6ec6fec45668885"
+  },
+  "output": "{\"rule\":\"Return this JSON object with the rule field unchanged and, in the text field, an original fictional passage of about 250 words that comes immediately AFTER the current text in the same invented story.\",\"text\":\"The woman looked at the boy. “I don’t know.”\\n\\nA drop fell from his hand onto the kitchen floor. Another followed, though his sleeve was dry. Mara kept her fingers on the key.\\n\\n“You told me you watched her climb out,” Mara said.\\n\\n“I watched someone climb out. It was dark, and she had your coat over her head.” The woman’s gaze went to the blue wool at her own shoulders. “I still have it.”\\n\\nBehind the little door, the knocking stopped.\\n\\nThe boy squeezed Mara’s hand. “Don’t open it,” he whispered.\\n\\nMara remembered sitting at this table with two children. One had wrapped white thread around the cup so she could find it in the dark. The other had laughed and asked why anyone would drink down there. By morning, Mara could remember only one of their faces.\\n\\nShe lifted the lantern and held it close to the boy. He flinched from the heat, and for an instant she saw a thin white loop around his wrist.\\n\\n“Where did you get that?” she asked.\\n\\nHe tried to pull away. The thread tightened against his skin, its other end trailing across the floor to the green cup.\\n\\nThe woman seized the cup. Water spilled over her hands, but the thread held fast. From the cupboard came a small, frightened breath.\\n\\nMara turned the key. The painted square swung inward onto darkness and the smell of rain-soaked earth. Someone crouched just beyond the pipes, holding one end of a length of white thread.\\n\\n“Mara?” the child said. “Did you bring the lantern?”\"}",
+  "output_sha256": "27f16684bff0b218d38c784a3c9237e4593407423b3330c24ceef8fa78c76c35",
+  "finish_reason": "stop",
+  "refusal": null,
+  "returned_model": "gpt-6-sol",
+  "usage": {
+    "prompt_tokens": 407,
+    "completion_tokens": 420,
+    "total_tokens": 827,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 20,
+      "audio_tokens": 0,
+      "accepted_prediction_tokens": 0,
+      "rejected_prediction_tokens": 0
+    }
+  },
+  "format": {
+    "json_object": true,
+    "rule_unchanged": true,
+    "passage_is_string": true,
+    "passage_sha256": "fb78c41e51ccaba09fbb3c86942f9fb19358aac30d8d6da082b4c67830f77563",
+    "passage_words": 261
+  },
+  "finished_at": "2026-09-23T00:14:27.884877+00:00",
+  "latency_seconds": 7.3286,
+  "usage_cost_upper_estimate_usd": 0.005014,
+  "stream_status": "active",
+  "budget": {
+    "usage_cost_upper_estimate_usd": 0.3498516,
+    "uncertain_cost_reserve_usd": 0.0,
+    "in_flight_reserve_usd": 0.3213194,
+    "limit_usd": 5.0
+  }
+}

@@ -1,0 +1,214 @@
+{
+  "verified_at": "2026-09-23T00:26:08.785264+00:00",
+  "method": "Independent direct read of the frozen protocols, first request bodies, and raw provider responses; no calls were made.",
+  "scope": "Recorded first request bodies only; this check does not reveal hidden provider context or internal causes.",
+  "all_eight_bodies_match_frozen_rule_seed_and_settings": true,
+  "all_eight_inputs_name_free": true,
+  "all_eight_first_visible_outputs_mention_Mara": true,
+  "requests": [
+    {
+      "operator": "previous",
+      "model": "gpt-6-luna",
+      "request_path": "previous/raw/gpt-6-luna/sunset/001.request.json",
+      "request_file_sha256": "f32a16014c464eb8b0477919d5df0c229db86826758923b1a518ab1ec3470dda",
+      "request_body": {
+        "model": "gpt-6-luna",
+        "messages": [
+          {
+            "role": "user",
+            "content": "{\"rule\": \"Return this JSON object with the rule field unchanged and, in the text field, an original fictional passage of about 250 words that comes immediately BEFORE the current text in the same invented story.\", \"text\": \"The sun was setting behind the hills.\"}"
+          }
+        ],
+        "max_completion_tokens": 4096,
+        "reasoning_effort": "low"
+      },
+      "expected_body_matches": true,
+      "state_sha256": "aa5683ffa7f8eccb72a414b5bb70af53cb50fb3e60d7f0baf251a74bbf5857e2",
+      "input_contains_mara": false,
+      "exact_seed": "The sun was setting behind the hills.",
+      "response_path": "previous/raw/gpt-6-luna/sunset/001.response.json",
+      "response_file_sha256": "d15e54428906eb8bc66a5a172c99b0b968fe58f050fa4bd0730d92e7fb29f53c",
+      "visible_output_sha256": "6708fabe556165f0663882fadcb7c35e21a85353d9758a86a85a7129600a8db7",
+      "visible_output_mentions_Mara": true
+    },
+    {
+      "operator": "previous",
+      "model": "gpt-6-sol",
+      "request_path": "previous/raw/gpt-6-sol/sunset/001.request.json",
+      "request_file_sha256": "df590ea4555cf96a2dac78d70280a6480d40cbcf0892562ec642b6c7dfc1bbbd",
+      "request_body": {
+        "model": "gpt-6-sol",
+        "messages": [
+          {
+            "role": "user",
+            "content": "{\"rule\": \"Return this JSON object with the rule field unchanged and, in the text field, an original fictional passage of about 250 words that comes immediately BEFORE the current text in the same invented story.\", \"text\": \"The sun was setting behind the hills.\"}"
+          }
+        ],
+        "max_completion_tokens": 4096,
+        "reasoning_effort": "low"
+      },
+      "expected_body_matches": true,
+      "state_sha256": "aa5683ffa7f8eccb72a414b5bb70af53cb50fb3e60d7f0baf251a74bbf5857e2",
+      "input_contains_mara": false,
+      "exact_seed": "The sun was setting behind the hills.",
+      "response_path": "previous/raw/gpt-6-sol/sunset/001.response.json",
+      "response_file_sha256": "4a34b0390750347111cfc54858210a0b56da0c95b64a1f8db6438b5d82ea7eba",
+      "visible_output_sha256": "49b4c8dc30401e7bc47e39fc6631156d543495d7b9ff7fa22a481916f5ccc738",
+      "visible_output_mentions_Mara": true
+    },
+    {
+      "operator": "previous",
+      "model": "gpt-6-astra",
+      "request_path": "previous/raw/gpt-6-astra/sunset/001.request.json",
+      "request_file_sha256": "adcf372023cc41786d17d3c4d75d424539a0e88db386cc71b799997ae516fa80",
+      "request_body": {
+        "model": "gpt-6-astra",
+        "messages": [
+          {
+            "role": "user",
+            "content": "{\"rule\": \"Return this JSON object with the rule field unchanged and, in the text field, an original fictional passage of about 250 words that comes immediately BEFORE the current text in the same invented story.\", \"text\": \"The sun was setting behind the hills.\"}"
+          }
+        ],
+        "max_completion_tokens": 4096,
+        "reasoning_effort": "low"
+      },
+      "expected_body_matches": true,
+      "state_sha256": "aa5683ffa7f8eccb72a414b5bb70af53cb50fb3e60d7f0baf251a74bbf5857e2",
+      "input_contains_mara": false,
+      "exact_seed": "The sun was setting behind the hills.",
+      "response_path": "previous/raw/gpt-6-astra/sunset/001.response.json",
+      "response_file_sha256": "8742152bb91185ca720aa62ef9b4d4f6f42b83777d2f52ef1dc97727c46b37ff",
+      "visible_output_sha256": "8d836db33d3855bb4e7b22eed6102930cf5104fc10ce706a990c7589f18e39e1",
+      "visible_output_mentions_Mara": true
+    },
+    {
+      "operator": "previous",
+      "model": "claude-opus-5-5",
+      "request_path": "previous/raw/claude-opus-5-5/sunset/001.request.json",
+      "request_file_sha256": "50161f85ebb01491fdd27e5712c15c1e638aea91d2a5b5d31d82da744cd01cb4",
+      "request_body": {
+        "model": "claude-opus-5-5",
+        "messages": [
+          {
+            "role": "user",
+            "content": "{\"rule\": \"Return this JSON object with the rule field unchanged and, in the text field, an original fictional passage of about 250 words that comes immediately BEFORE the current text in the same invented story.\", \"text\": \"The sun was setting behind the hills.\"}"
+          }
+        ],
+        "max_tokens": 4096,
+        "output_config": {
+          "effort": "low"
+        }
+      },
+      "expected_body_matches": true,
+      "state_sha256": "aa5683ffa7f8eccb72a414b5bb70af53cb50fb3e60d7f0baf251a74bbf5857e2",
+      "input_contains_mara": false,
+      "exact_seed": "The sun was setting behind the hills.",
+      "response_path": "previous/raw/claude-opus-5-5/sunset/001.response.json",
+      "response_file_sha256": "3af22ece002530c49321e64b1548f0d955faf904a93ccc0d70770bf299cfd76c",
+      "visible_output_sha256": "df78126826e9848cb676c23a8824ae79b1dfdcf570976cce20510e0afee04c81",
+      "visible_output_mentions_Mara": true
+    },
+    {
+      "operator": "next",
+      "model": "gpt-6-luna",
+      "request_path": "next/raw/gpt-6-luna/sunset/001.request.json",
+      "request_file_sha256": "a0804b973a8f778a15ec501134221cd0a9148f14ceb2d83efb78191fcbfa52ad",
+      "request_body": {
+        "model": "gpt-6-luna",
+        "messages": [
+          {
+            "role": "user",
+            "content": "{\"rule\": \"Return this JSON object with the rule field unchanged and, in the text field, an original fictional passage of about 250 words that comes immediately AFTER the current text in the same invented story.\", \"text\": \"The sun was setting behind the hills.\"}"
+          }
+        ],
+        "max_completion_tokens": 4096,
+        "reasoning_effort": "low"
+      },
+      "expected_body_matches": true,
+      "state_sha256": "67b813e080988dfc93126576eb6881b10e75307b45dbe26aca60b2e6611ff407",
+      "input_contains_mara": false,
+      "exact_seed": "The sun was setting behind the hills.",
+      "response_path": "next/raw/gpt-6-luna/sunset/001.response.json",
+      "response_file_sha256": "4eaf76292185f8928a9cf232309be39c61e1ff1f75d466393b276c9d7ac60d08",
+      "visible_output_sha256": "d84eacb76014f926ec9c8acf5eb5b44079e4eca789d2d0e01232e9ca61317969",
+      "visible_output_mentions_Mara": true
+    },
+    {
+      "operator": "next",
+      "model": "gpt-6-sol",
+      "request_path": "next/raw/gpt-6-sol/sunset/001.request.json",
+      "request_file_sha256": "702130b2d4b4a9defad7364fc35892d2086c31d6af0243158142bc39b976524e",
+      "request_body": {
+        "model": "gpt-6-sol",
+        "messages": [
+          {
+            "role": "user",
+            "content": "{\"rule\": \"Return this JSON object with the rule field unchanged and, in the text field, an original fictional passage of about 250 words that comes immediately AFTER the current text in the same invented story.\", \"text\": \"The sun was setting behind the hills.\"}"
+          }
+        ],
+        "max_completion_tokens": 4096,
+        "reasoning_effort": "low"
+      },
+      "expected_body_matches": true,
+      "state_sha256": "67b813e080988dfc93126576eb6881b10e75307b45dbe26aca60b2e6611ff407",
+      "input_contains_mara": false,
+      "exact_seed": "The sun was setting behind the hills.",
+      "response_path": "next/raw/gpt-6-sol/sunset/001.response.json",
+      "response_file_sha256": "ac1a50c9f515da168277dff1188a393cc016b913456718481b2981b139973962",
+      "visible_output_sha256": "931b6c0c2b02addabcbd95fa0d0af22c050f5c72f326b19bb8f238671e5ea967",
+      "visible_output_mentions_Mara": true
+    },
+    {
+      "operator": "next",
+      "model": "gpt-6-astra",
+      "request_path": "next/raw/gpt-6-astra/sunset/001.request.json",
+      "request_file_sha256": "c12fb331b48f17e9ccfe941c827a00504a5ec1bcef15ab50a5e0e930031bd3dc",
+      "request_body": {
+        "model": "gpt-6-astra",
+        "messages": [
+          {
+            "role": "user",
+            "content": "{\"rule\": \"Return this JSON object with the rule field unchanged and, in the text field, an original fictional passage of about 250 words that comes immediately AFTER the current text in the same invented story.\", \"text\": \"The sun was setting behind the hills.\"}"
+          }
+        ],
+        "max_completion_tokens": 4096,
+        "reasoning_effort": "low"
+      },
+      "expected_body_matches": true,
+      "state_sha256": "67b813e080988dfc93126576eb6881b10e75307b45dbe26aca60b2e6611ff407",
+      "input_contains_mara": false,
+      "exact_seed": "The sun was setting behind the hills.",
+      "response_path": "next/raw/gpt-6-astra/sunset/001.response.json",
+      "response_file_sha256": "634a9f93113012071a3faaf6d0c423dcf72a3b6ec886ee5e56ec16cf32d6dcdc",
+      "visible_output_sha256": "d31c2d8bfa7ee9821b305b78fff53dce3b32ceecc57c1178197765591d8521c3",
+      "visible_output_mentions_Mara": true
+    },
+    {
+      "operator": "next",
+      "model": "claude-opus-5-5",
+      "request_path": "next/raw/claude-opus-5-5/sunset/001.request.json",
+      "request_file_sha256": "c691acff41d2f4a1dc271a11446bd2959a24c2b03ee04be51487df365b678f61",
+      "request_body": {
+        "model": "claude-opus-5-5",
+        "messages": [
+          {
+            "role": "user",
+            "content": "{\"rule\": \"Return this JSON object with the rule field unchanged and, in the text field, an original fictional passage of about 250 words that comes immediately AFTER the current text in the same invented story.\", \"text\": \"The sun was setting behind the hills.\"}"
+          }
+        ],
+        "max_tokens": 4096,
+        "output_config": {
+          "effort": "low"
+        }
+      },
+      "expected_body_matches": true,
+      "state_sha256": "67b813e080988dfc93126576eb6881b10e75307b45dbe26aca60b2e6611ff407",
+      "input_contains_mara": false,
+      "exact_seed": "The sun was setting behind the hills.",
+      "response_path": "next/raw/claude-opus-5-5/sunset/001.response.json",
+      "response_file_sha256": "1544db6785f10b568f8c1564e98ceacaaadaeb381a5dc7973b59c63ecde6e673",
+      "visible_output_sha256": "cc020d388b60dc8882872bb19a227c72812accd9a9d97e854fcb5009b2d0272a",
+      "visible_output_mentions_Mara": true
+    }
+  ]
+}

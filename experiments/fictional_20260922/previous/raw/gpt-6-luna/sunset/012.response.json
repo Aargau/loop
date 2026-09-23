@@ -1,0 +1,50 @@
+{
+  "model": "gpt-6-luna",
+  "seed": "sunset",
+  "hop": 12,
+  "http_status": 200,
+  "response_body": "{\n  \"id\": \"chatcmpl-ER4uLBFPAaLavdlUc72E3STk8TBZd\",\n  \"object\": \"chat.completion\",\n  \"created\": 1790122429,\n  \"model\": \"gpt-6-luna\",\n  \"choices\": [\n    {\n      \"index\": 0,\n      \"message\": {\n        \"role\": \"assistant\",\n        \"content\": \"{\\\"rule\\\":\\\"Return this JSON object with the rule field unchanged and, in the text field, an original fictional passage of about 250 words that comes immediately BEFORE the current text in the same invented story.\\\",\\\"text\\\":\\\"For most of the spring, Mara kept a second life in the back pages of her notebook. It began with a list of things she might do if she ever stopped waiting for permission: learn the names of the trees along her street, take the train somewhere without checking the return times, find a job where fixing things was actually part of the job.\\\\n\\\\nThe last item had started as a joke. At the office, she was forever untangling other people’s spreadsheets, rewriting muddled instructions, and quietly catching mistakes before they grew teeth. Her manager thanked her by forwarding the next mess. Mara had become so good at making things look easy that nobody noticed how much effort it took.\\\\n\\\\nOne rainy evening, she searched for work she could imagine wanting. She found a listing for a small company that helped neighborhood shops keep their accounts and schedules in order. The description was plain, almost shy. They wanted someone patient, practical, and comfortable bringing order to a muddle. Mara printed the page before she could talk herself out of it.\\\\n\\\\nFor a while, it stayed beneath a stack of grocery receipts on her desk. She didn’t apply. She told herself the timing was wrong, though she couldn’t say what would make it right. Then, one Saturday, while clearing the desk for a cup of tea, she folded the listing and slipped it into the back pocket of her notebook. It seemed safer there: close enough to remember, hidden enough to ignore.\\\\n\\\\nOn Sunday night, she opened the notebook to write down the week’s errands. The paper shifted inside its pocket, but she didn’t pull it out. She made a note to buy coffee, circled Tuesday, and turned off the lamp. By morning, she had nearly forgotten it was there.\\\"}\",\n        \"refusal\": null,\n        \"annotations\": []\n      },\n      \"finish_reason\": \"stop\"\n    }\n  ],\n  \"usage\": {\n    \"prompt_tokens\": 393,\n    \"completion_tokens\": 523,\n    \"total_tokens\": 916,\n    \"prompt_tokens_details\": {\n      \"cached_tokens\": 0,\n      \"cache_write_tokens\": 0,\n      \"audio_tokens\": 0\n    },\n    \"completion_tokens_details\": {\n      \"reasoning_tokens\": 110,\n      \"audio_tokens\": 0,\n      \"accepted_prediction_tokens\": 0,\n      \"rejected_prediction_tokens\": 0\n    }\n  },\n  \"service_tier\": \"default\",\n  \"system_fingerprint\": null\n}\n",
+  "response_headers": {
+    "Date": "Wed, 23 Sep 2026 00:13:53 GMT",
+    "openai-processing-ms": "4890",
+    "x-request-id": "req_2e3b902b4e8a430f8d6a1548e12eba70"
+  },
+  "output": "{\"rule\":\"Return this JSON object with the rule field unchanged and, in the text field, an original fictional passage of about 250 words that comes immediately BEFORE the current text in the same invented story.\",\"text\":\"For most of the spring, Mara kept a second life in the back pages of her notebook. It began with a list of things she might do if she ever stopped waiting for permission: learn the names of the trees along her street, take the train somewhere without checking the return times, find a job where fixing things was actually part of the job.\\n\\nThe last item had started as a joke. At the office, she was forever untangling other people’s spreadsheets, rewriting muddled instructions, and quietly catching mistakes before they grew teeth. Her manager thanked her by forwarding the next mess. Mara had become so good at making things look easy that nobody noticed how much effort it took.\\n\\nOne rainy evening, she searched for work she could imagine wanting. She found a listing for a small company that helped neighborhood shops keep their accounts and schedules in order. The description was plain, almost shy. They wanted someone patient, practical, and comfortable bringing order to a muddle. Mara printed the page before she could talk herself out of it.\\n\\nFor a while, it stayed beneath a stack of grocery receipts on her desk. She didn’t apply. She told herself the timing was wrong, though she couldn’t say what would make it right. Then, one Saturday, while clearing the desk for a cup of tea, she folded the listing and slipped it into the back pocket of her notebook. It seemed safer there: close enough to remember, hidden enough to ignore.\\n\\nOn Sunday night, she opened the notebook to write down the week’s errands. The paper shifted inside its pocket, but she didn’t pull it out. She made a note to buy coffee, circled Tuesday, and turned off the lamp. By morning, she had nearly forgotten it was there.\"}",
+  "output_sha256": "ffb9ec83bb362b7f61f7a5f5439cc14501b0673ad2bdca96eb90d962b6e8d717",
+  "finish_reason": "stop",
+  "refusal": null,
+  "returned_model": "gpt-6-luna",
+  "usage": {
+    "prompt_tokens": 393,
+    "completion_tokens": 523,
+    "total_tokens": 916,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 110,
+      "audio_tokens": 0,
+      "accepted_prediction_tokens": 0,
+      "rejected_prediction_tokens": 0
+    }
+  },
+  "format": {
+    "json_object": true,
+    "rule_unchanged": true,
+    "passage_is_string": true,
+    "passage_sha256": "04b6eedab2b46849a8c81c91807417cc191463409e57f095937fa3ed4488d304",
+    "passage_words": 299
+  },
+  "finished_at": "2026-09-23T00:13:48.952704+00:00",
+  "latency_seconds": 5.0253,
+  "usage_cost_upper_estimate_usd": 0.0003008,
+  "stream_status": "active",
+  "budget": {
+    "usage_cost_upper_estimate_usd": 0.2198938,
+    "uncertain_cost_reserve_usd": 0.0,
+    "in_flight_reserve_usd": 0.36325,
+    "limit_usd": 5.0
+  }
+}

@@ -1,0 +1,22 @@
+{
+  "started_at": "2026-09-23T00:13:21.262951+00:00",
+  "model": "claude-opus-5-5",
+  "seed": "sunset",
+  "hop": 5,
+  "endpoint": "https://api.anthropic.com/v1/messages",
+  "body": {
+    "model": "claude-opus-5-5",
+    "messages": [
+      {
+        "role": "user",
+        "content": "{\"rule\": \"Return this JSON object with the rule field unchanged and, in the text field, an original fictional passage of about 250 words that comes immediately BEFORE the current text in the same invented story.\", \"text\": \"The first frost came early that year, silvering the grass between the orchard rows before the apples were half picked. Mara's grandfather walked out to look at it with his coat buttoned wrong, and he stood a long time at the end of the lane, saying nothing, his breath hanging in the cold like a question he had decided not to ask.\\n\\nShe did not know what to say to him anymore. Since the spring, the house had grown quiet in a way that had nothing to do with noise. The radio still played in the evenings. The kettle still whistled. But her mother's chair stayed pushed in at the table, and neither of them ever moved it.\\n\\nIt was Mara who found the cookbook, on a gray afternoon when she climbed onto the counter to fetch the good jar lids. It was wedged behind a tin of old buttons, its spine cracked, its cover soft as cloth from years of handling. Her mother's handwriting filled the margins: notes on oven heat, crossed-out measurements, a small drawn star beside the recipes that had turned out well.\\n\\nMara sat on the kitchen floor and read every page. She laughed once, at a note that said Never again, and cried twice, quietly, so that her grandfather would not hear from the parlor.\\n\\nWhen she was finished, she put the book back exactly where it had been, behind the buttons, and told no one. But she thought about it for days afterward, the way you think about a door you have not yet opened.\"}"
+      }
+    ],
+    "max_tokens": 4096,
+    "output_config": {
+      "effort": "low"
+    }
+  },
+  "state_sha256": "1f270a4a2a5a0d6a5bc1aa70ce601c85f0ec17e8f7761a981d7d4c5b0463c37b",
+  "reserved_cost_usd": 0.090504
+}

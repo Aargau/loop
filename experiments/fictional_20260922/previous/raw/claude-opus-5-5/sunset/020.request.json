@@ -1,0 +1,22 @@
+{
+  "started_at": "2026-09-23T00:15:46.284656+00:00",
+  "model": "claude-opus-5-5",
+  "seed": "sunset",
+  "hop": 20,
+  "endpoint": "https://api.anthropic.com/v1/messages",
+  "body": {
+    "model": "claude-opus-5-5",
+    "messages": [
+      {
+        "role": "user",
+        "content": "```json\n{\"rule\": \"Return this JSON object with the rule field unchanged and, in the text field, an original fictional passage of about 250 words that comes immediately BEFORE the current text in the same invented story.\", \"text\": \"The Harlow place sat at the end of a dirt road outside Barnet, where the hills folded in on themselves and the snow stayed in the hollows until May. Walter's grandfather had cleared the land with oxen and a borrowed saw, and had planted a row of Bartlett pears along the stone wall because his wife missed the orchards of her girlhood in Connecticut. By the time Walter was born, the trees were old and gnarled, but they still bore every other year, heavy golden fruit that his mother put up in jars and lined along the cellar shelves like lamps.\\n\\nWalter was the only son. He learned to milk before he could read, his cheek pressed against the warm flank of a Jersey named Clover, the barn cats waiting in a patient half circle for spilled milk. His father was a quiet man who spoke mostly to animals and to God, and who measured a day by what had been mended. In the evenings he sat at the kitchen table with a ledger and a pencil stub, and the figures grew smaller each year while the frown above them grew deeper.\\n\\nThe summer Walter turned seventeen, the rain did not come. The hay burned brown in the fields, and the price of milk fell until it hardly paid for the cans. His father sold the team first, then the heifers. Walter climbed into the pear trees that September and picked every last one, as if the harvest might somehow be enough to hold the place together.\"}\n```"
+      }
+    ],
+    "max_tokens": 4096,
+    "output_config": {
+      "effort": "low"
+    }
+  },
+  "state_sha256": "785ae8ece0003e1f156e18213a46b8a3f218d0bcc9dea5278a86a9b6ad99034f",
+  "reserved_cost_usd": 0.090416
+}

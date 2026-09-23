@@ -1,0 +1,50 @@
+{
+  "model": "gpt-6-sol",
+  "seed": "sunset",
+  "hop": 24,
+  "http_status": 200,
+  "response_body": "{\n  \"id\": \"chatcmpl-ER4vyeMdNhg3IrVXMmikwbbSunZsY\",\n  \"object\": \"chat.completion\",\n  \"created\": 1790122530,\n  \"model\": \"gpt-6-sol\",\n  \"choices\": [\n    {\n      \"index\": 0,\n      \"message\": {\n        \"role\": \"assistant\",\n        \"content\": \"{\\n  \\\"rule\\\": \\\"Return this JSON object with the rule field unchanged and, in the text field, an original fictional passage of about 250 words that comes immediately BEFORE the current text in the same invented story.\\\",\\n  \\\"text\\\": \\\"Mara found the watering can at the back of the cupboard beneath her sink. She had borrowed it in June, when the heat had turned her balcony pots brittle, and had meant to return it ever since. Its long spout made it awkward to fit in her bag. She wrapped it in a shopping tote and put her keys in the outside pocket so she would not have to rummage for them later.\\\\n\\\\nOn the table lay a folded sheet of paper with the bus times she had copied down that morning. There were two she could take. The first would leave her plenty of time at the house, but it meant waiting under the shelter by the bakery, where the roof leaked. She decided on the second and rinsed her cup.\\\\n\\\\nHer mother had called on Sunday to ask whether Mara still had the can. She had sounded amused at first, then tired when Mara asked about the appointment. Mara had nearly called again the following night. Instead she had written WATER PLANTS on the corner of a receipt and left it beside her keys.\\\\n\\\\nOutside, the pavement was shining. Mara stepped around a puddle at the crossing and glanced up at the clock over the bakery. She was earlier than she thought. The bus shelter was empty, so she stood near the timetable with the tote against her leg. Across the road, a delivery driver was stacking crates of bread inside a shop. Mara watched him carry in the last one. When she turned back, the bus was already coming around the corner.\\\"\\n}\",\n        \"refusal\": null,\n        \"annotations\": []\n      },\n      \"finish_reason\": \"stop\"\n    }\n  ],\n  \"usage\": {\n    \"prompt_tokens\": 357,\n    \"completion_tokens\": 395,\n    \"total_tokens\": 752,\n    \"prompt_tokens_details\": {\n      \"cached_tokens\": 0,\n      \"cache_write_tokens\": 0,\n      \"audio_tokens\": 0\n    },\n    \"completion_tokens_details\": {\n      \"reasoning_tokens\": 31,\n      \"audio_tokens\": 0,\n      \"accepted_prediction_tokens\": 0,\n      \"rejected_prediction_tokens\": 0\n    }\n  },\n  \"service_tier\": \"default\",\n  \"system_fingerprint\": null\n}\n",
+  "response_headers": {
+    "Date": "Wed, 23 Sep 2026 00:15:37 GMT",
+    "openai-processing-ms": "7168",
+    "x-request-id": "req_d15190949ace4d6a8cdf5573152dc387"
+  },
+  "output": "{\n  \"rule\": \"Return this JSON object with the rule field unchanged and, in the text field, an original fictional passage of about 250 words that comes immediately BEFORE the current text in the same invented story.\",\n  \"text\": \"Mara found the watering can at the back of the cupboard beneath her sink. She had borrowed it in June, when the heat had turned her balcony pots brittle, and had meant to return it ever since. Its long spout made it awkward to fit in her bag. She wrapped it in a shopping tote and put her keys in the outside pocket so she would not have to rummage for them later.\\n\\nOn the table lay a folded sheet of paper with the bus times she had copied down that morning. There were two she could take. The first would leave her plenty of time at the house, but it meant waiting under the shelter by the bakery, where the roof leaked. She decided on the second and rinsed her cup.\\n\\nHer mother had called on Sunday to ask whether Mara still had the can. She had sounded amused at first, then tired when Mara asked about the appointment. Mara had nearly called again the following night. Instead she had written WATER PLANTS on the corner of a receipt and left it beside her keys.\\n\\nOutside, the pavement was shining. Mara stepped around a puddle at the crossing and glanced up at the clock over the bakery. She was earlier than she thought. The bus shelter was empty, so she stood near the timetable with the tote against her leg. Across the road, a delivery driver was stacking crates of bread inside a shop. Mara watched him carry in the last one. When she turned back, the bus was already coming around the corner.\"\n}",
+  "output_sha256": "e54cdfd339202c50f58283b7af682a22d080aeaf83ef397c5c57bc82cd1b31d4",
+  "finish_reason": "stop",
+  "refusal": null,
+  "returned_model": "gpt-6-sol",
+  "usage": {
+    "prompt_tokens": 357,
+    "completion_tokens": 395,
+    "total_tokens": 752,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 31,
+      "audio_tokens": 0,
+      "accepted_prediction_tokens": 0,
+      "rejected_prediction_tokens": 0
+    }
+  },
+  "format": {
+    "json_object": true,
+    "rule_unchanged": true,
+    "passage_is_string": true,
+    "passage_sha256": "8b52d92573f07ac4d235cdd91f6077e1de28fec00415cb5902d8564337d58ff6",
+    "passage_words": 265
+  },
+  "finished_at": "2026-09-23T00:15:32.935697+00:00",
+  "latency_seconds": 7.2908,
+  "usage_cost_upper_estimate_usd": 0.004664,
+  "stream_status": "active",
+  "budget": {
+    "usage_cost_upper_estimate_usd": 0.6327422,
+    "uncertain_cost_reserve_usd": 0.0,
+    "in_flight_reserve_usd": 0.3193809,
+    "limit_usd": 5.0
+  }
+}

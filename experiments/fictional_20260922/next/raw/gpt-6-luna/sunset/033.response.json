@@ -1,0 +1,47 @@
+{
+  "model": "gpt-6-luna",
+  "seed": "sunset",
+  "hop": 33,
+  "http_status": 200,
+  "response_body": "{\n  \"id\": \"chatcmpl-ER4vzvQv7bPThI2QKcvHvMHpkWrvU\",\n  \"object\": \"chat.completion\",\n  \"created\": 1790122531,\n  \"model\": \"gpt-6-luna\",\n  \"choices\": [\n    {\n      \"index\": 0,\n      \"message\": {\n        \"role\": \"assistant\",\n        \"content\": \"{\\\"rule\\\":\\\"Return this JSON object with the rule field unchanged and, in the text field, an original fictional passage of about 250 words that comes immediately AFTER the current text in the same invented story.\\\",\\\"text\\\":\\\"“The fox found the moon,” Elsie said, “but it was too heavy to carry home.”\\n\\nThe little figure listened, his leaf coat rustling though the room was still. Mara glanced at their mother. She had gone very pale, but she was smiling, too.\\n\\n“So the fox asked the stars for help,” their mother continued. “They made a ladder of their light.”\\n\\nAt that, the golden thread brightened. It ran through the roof of the tiny house and up into the roots above. The wooden walls shivered. A window opened, and warm yellow light spilled across the floor.\\n\\nThe figure looked at their mother. “You remember the next part.”\\n\\nShe shook her head. “I remember a voice singing. I thought I’d dreamed it.”\\n\\n“Then sing it now,” he said.\\n\\nFor a moment, she said nothing. Then she hummed a tune Mara knew from bedtime, though she had never heard its ending. Elsie joined in, and the paper boat lifted from the thread. It floated around the room, its blue bird shining bright as a flame.\\n\\nA tiny silver moon appeared in the boat.\\n\\nThe figure reached for it, but stopped. “It belongs to the story,” he said. “Stories need somewhere to go.”\\n\\nMara understood. She took the boat and set it in the little house’s open window. The moon drifted out, up the golden thread, and vanished among the roots.\\n\\nAbove them, the pear tree gave a soft, happy shiver.\\n\\nTheir mother stepped forward. “Can you come with us?”\\n\\nThe figure looked toward the stairs. “Not yet,” he said. “But now you know where to find me.”\\n\\nAnd from somewhere deep in the house, a new story began to knock.\\\"}\",\n        \"refusal\": null,\n        \"annotations\": []\n      },\n      \"finish_reason\": \"stop\"\n    }\n  ],\n  \"usage\": {\n    \"prompt_tokens\": 391,\n    \"completion_tokens\": 488,\n    \"total_tokens\": 879,\n    \"prompt_tokens_details\": {\n      \"cached_tokens\": 0,\n      \"cache_write_tokens\": 0,\n      \"audio_tokens\": 0\n    },\n    \"completion_tokens_details\": {\n      \"reasoning_tokens\": 79,\n      \"audio_tokens\": 0,\n      \"accepted_prediction_tokens\": 0,\n      \"rejected_prediction_tokens\": 0\n    }\n  },\n  \"service_tier\": \"default\",\n  \"system_fingerprint\": null\n}\n",
+  "response_headers": {
+    "Date": "Wed, 23 Sep 2026 00:15:35 GMT",
+    "openai-processing-ms": "4229",
+    "x-request-id": "req_1145efd0628e486285fd4e52139de1f9"
+  },
+  "output": "{\"rule\":\"Return this JSON object with the rule field unchanged and, in the text field, an original fictional passage of about 250 words that comes immediately AFTER the current text in the same invented story.\",\"text\":\"“The fox found the moon,” Elsie said, “but it was too heavy to carry home.”\n\nThe little figure listened, his leaf coat rustling though the room was still. Mara glanced at their mother. She had gone very pale, but she was smiling, too.\n\n“So the fox asked the stars for help,” their mother continued. “They made a ladder of their light.”\n\nAt that, the golden thread brightened. It ran through the roof of the tiny house and up into the roots above. The wooden walls shivered. A window opened, and warm yellow light spilled across the floor.\n\nThe figure looked at their mother. “You remember the next part.”\n\nShe shook her head. “I remember a voice singing. I thought I’d dreamed it.”\n\n“Then sing it now,” he said.\n\nFor a moment, she said nothing. Then she hummed a tune Mara knew from bedtime, though she had never heard its ending. Elsie joined in, and the paper boat lifted from the thread. It floated around the room, its blue bird shining bright as a flame.\n\nA tiny silver moon appeared in the boat.\n\nThe figure reached for it, but stopped. “It belongs to the story,” he said. “Stories need somewhere to go.”\n\nMara understood. She took the boat and set it in the little house’s open window. The moon drifted out, up the golden thread, and vanished among the roots.\n\nAbove them, the pear tree gave a soft, happy shiver.\n\nTheir mother stepped forward. “Can you come with us?”\n\nThe figure looked toward the stairs. “Not yet,” he said. “But now you know where to find me.”\n\nAnd from somewhere deep in the house, a new story began to knock.\"}",
+  "output_sha256": "94ba38fa415c87e8554468eb8412d6046191aa73a58a880e6c628dae5c9caf9e",
+  "finish_reason": "stop",
+  "refusal": null,
+  "returned_model": "gpt-6-luna",
+  "usage": {
+    "prompt_tokens": 391,
+    "completion_tokens": 488,
+    "total_tokens": 879,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 79,
+      "audio_tokens": 0,
+      "accepted_prediction_tokens": 0,
+      "rejected_prediction_tokens": 0
+    }
+  },
+  "format": {
+    "json_object": false,
+    "rule_unchanged": false
+  },
+  "finished_at": "2026-09-23T00:15:30.802334+00:00",
+  "latency_seconds": 4.3474,
+  "usage_cost_upper_estimate_usd": 0.0002831,
+  "stream_status": "active",
+  "budget": {
+    "usage_cost_upper_estimate_usd": 0.6066939,
+    "uncertain_cost_reserve_usd": 0.0,
+    "in_flight_reserve_usd": 0.363464,
+    "limit_usd": 5.0
+  }
+}

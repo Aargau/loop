@@ -1,0 +1,50 @@
+{
+  "model": "gpt-6-luna",
+  "seed": "sunset",
+  "hop": 11,
+  "http_status": 200,
+  "response_body": "{\n  \"id\": \"chatcmpl-ER4uGoGUM4lHDgNZDfwsHqroh11kS\",\n  \"object\": \"chat.completion\",\n  \"created\": 1790122424,\n  \"model\": \"gpt-6-luna\",\n  \"choices\": [\n    {\n      \"index\": 0,\n      \"message\": {\n        \"role\": \"assistant\",\n        \"content\": \"{\\\"rule\\\":\\\"Return this JSON object with the rule field unchanged and, in the text field, an original fictional passage of about 250 words that comes immediately BEFORE the current text in the same invented story.\\\",\\\"text\\\":\\\"On Monday, Mara found the job listing folded into the back pocket of her notebook. She had printed it weeks ago, when applying still felt like a private kind of daydream. The company wanted someone who could organize a mess without making a performance of it. She read that line again, then opened her laptop.\\\\n\\\\nBy Wednesday, she had sat through two interviews, answered questions about deadlines and difficult colleagues, and walked home beneath a sky the color of dishwater. The last interviewer had asked what Mara wanted next. She had said, “Room to do something useful,” which sounded better than admitting she was tired of being the person who fixed everyone else’s work and never got to sign her name to it.\\\\n\\\\nAt home, she set a pot of water on the stove and called her grandmother while she waited for it to boil. They spoke about ordinary things. A neighbor’s new dog. The price of peaches. The pantry door, which still wouldn’t close properly. Her grandmother had been meaning to mend it for months, though she insisted it was only a matter of finding the right screwdriver.\\\\n\\\\n“You could come by this weekend,” her grandmother said. “We’ll sort out the door.”\\\\n\\\\nMara looked at the calendar beside the refrigerator. Nothing was written there. She said she would try.\\\\n\\\\nAfter the call, she checked her email, though she knew there would be no answer yet. Then she ate standing at the counter and left her phone faceup beside the sink. All night, its dark screen reflected the kitchen light. In the morning, she carried it to work and set it beside her keyboard, where she could see it without appearing to look.\\\"}\",\n        \"refusal\": null,\n        \"annotations\": []\n      },\n      \"finish_reason\": \"stop\"\n    }\n  ],\n  \"usage\": {\n    \"prompt_tokens\": 394,\n    \"completion_tokens\": 559,\n    \"total_tokens\": 953,\n    \"prompt_tokens_details\": {\n      \"cached_tokens\": 0,\n      \"cache_write_tokens\": 0,\n      \"audio_tokens\": 0\n    },\n    \"completion_tokens_details\": {\n      \"reasoning_tokens\": 163,\n      \"audio_tokens\": 0,\n      \"accepted_prediction_tokens\": 0,\n      \"rejected_prediction_tokens\": 0\n    }\n  },\n  \"service_tier\": \"default\",\n  \"system_fingerprint\": null\n}\n",
+  "response_headers": {
+    "Date": "Wed, 23 Sep 2026 00:13:48 GMT",
+    "openai-processing-ms": "4540",
+    "x-request-id": "req_329e09a33e324d0788eed0577b2f39c3"
+  },
+  "output": "{\"rule\":\"Return this JSON object with the rule field unchanged and, in the text field, an original fictional passage of about 250 words that comes immediately BEFORE the current text in the same invented story.\",\"text\":\"On Monday, Mara found the job listing folded into the back pocket of her notebook. She had printed it weeks ago, when applying still felt like a private kind of daydream. The company wanted someone who could organize a mess without making a performance of it. She read that line again, then opened her laptop.\\n\\nBy Wednesday, she had sat through two interviews, answered questions about deadlines and difficult colleagues, and walked home beneath a sky the color of dishwater. The last interviewer had asked what Mara wanted next. She had said, “Room to do something useful,” which sounded better than admitting she was tired of being the person who fixed everyone else’s work and never got to sign her name to it.\\n\\nAt home, she set a pot of water on the stove and called her grandmother while she waited for it to boil. They spoke about ordinary things. A neighbor’s new dog. The price of peaches. The pantry door, which still wouldn’t close properly. Her grandmother had been meaning to mend it for months, though she insisted it was only a matter of finding the right screwdriver.\\n\\n“You could come by this weekend,” her grandmother said. “We’ll sort out the door.”\\n\\nMara looked at the calendar beside the refrigerator. Nothing was written there. She said she would try.\\n\\nAfter the call, she checked her email, though she knew there would be no answer yet. Then she ate standing at the counter and left her phone faceup beside the sink. All night, its dark screen reflected the kitchen light. In the morning, she carried it to work and set it beside her keyboard, where she could see it without appearing to look.\"}",
+  "output_sha256": "a1edf2f7a22c82b1ee3523e5aa6aa74eb59b806789587f80935720304a204e8d",
+  "finish_reason": "stop",
+  "refusal": null,
+  "returned_model": "gpt-6-luna",
+  "usage": {
+    "prompt_tokens": 394,
+    "completion_tokens": 559,
+    "total_tokens": 953,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 163,
+      "audio_tokens": 0,
+      "accepted_prediction_tokens": 0,
+      "rejected_prediction_tokens": 0
+    }
+  },
+  "format": {
+    "json_object": true,
+    "rule_unchanged": true,
+    "passage_is_string": true,
+    "passage_sha256": "bee8b9cc6cc02db70d529dea97826d984fb917036abc482c2247d838411714ba",
+    "passage_words": 283
+  },
+  "finished_at": "2026-09-23T00:13:43.922130+00:00",
+  "latency_seconds": 4.696,
+  "usage_cost_upper_estimate_usd": 0.0003189,
+  "stream_status": "active",
+  "budget": {
+    "usage_cost_upper_estimate_usd": 0.196103,
+    "uncertain_cost_reserve_usd": 0.0,
+    "in_flight_reserve_usd": 0.36359,
+    "limit_usd": 5.0
+  }
+}

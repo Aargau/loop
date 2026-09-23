@@ -1,0 +1,50 @@
+{
+  "model": "gpt-6-luna",
+  "seed": "sunset",
+  "hop": 14,
+  "http_status": 200,
+  "response_body": "{\n  \"id\": \"chatcmpl-ER4uVC9pngljBXvo7I1iln2uNpqk8\",\n  \"object\": \"chat.completion\",\n  \"created\": 1790122439,\n  \"model\": \"gpt-6-luna\",\n  \"choices\": [\n    {\n      \"index\": 0,\n      \"message\": {\n        \"role\": \"assistant\",\n        \"content\": \"{\\\"rule\\\":\\\"Return this JSON object with the rule field unchanged and, in the text field, an original fictional passage of about 250 words that comes immediately BEFORE the current text in the same invented story.\\\",\\\"text\\\":\\\"In January, Mara accepted a six-month job at a small design firm because the rent was due and the work sounded manageable. The posting had promised “general office support,” a phrase broad enough to mean almost anything. On her first morning, she found three unanswered emails on the shared computer, a stack of invoices beside the kettle, and a calendar that listed two meetings in the same room at the same time.\\\\n\\\\nHer manager, Simon, showed her where to sit and hurried through a list of passwords. “You’ll get the hang of it,” he said, checking his watch. Then he disappeared into a call.\\\\n\\\\nMara did get the hang of it. She made a map of the room bookings, sorted the invoices by deadline, and sent a polite message asking which meeting could move. By lunchtime, the room was free, the invoices had owners, and the emails no longer looked quite so urgent.\\\\n\\\\nShe liked the clean click of a task completed. At her last job, in a crowded café, the problems had returned as soon as she turned her back: another spilled drink, another order called to the wrong table. Here, she thought, a little attention might actually leave things better than she found them.\\\\n\\\\nFor the first few weeks, she watched how the office worked. People rushed between desks carrying mugs and half-finished ideas. Small snags accumulated quietly: a missing cable, a mislabeled folder, a meeting invite sent to the wrong person. Mara began fixing them before anyone asked. When she mentioned this to Simon, he said, “Great initiative,” and opened his laptop.\\\\n\\\\nBy the end of the month, she had learned which problems the office considered hers.\\\"}\",\n        \"refusal\": null,\n        \"annotations\": []\n      },\n      \"finish_reason\": \"stop\"\n    }\n  ],\n  \"usage\": {\n    \"prompt_tokens\": 395,\n    \"completion_tokens\": 487,\n    \"total_tokens\": 882,\n    \"prompt_tokens_details\": {\n      \"cached_tokens\": 0,\n      \"cache_write_tokens\": 0,\n      \"audio_tokens\": 0\n    },\n    \"completion_tokens_details\": {\n      \"reasoning_tokens\": 88,\n      \"audio_tokens\": 0,\n      \"accepted_prediction_tokens\": 0,\n      \"rejected_prediction_tokens\": 0\n    }\n  },\n  \"service_tier\": \"default\",\n  \"system_fingerprint\": null\n}\n",
+  "response_headers": {
+    "Date": "Wed, 23 Sep 2026 00:14:03 GMT",
+    "openai-processing-ms": "4638",
+    "x-request-id": "req_24caa87a05324f87bb2a1dfd1be30a2d"
+  },
+  "output": "{\"rule\":\"Return this JSON object with the rule field unchanged and, in the text field, an original fictional passage of about 250 words that comes immediately BEFORE the current text in the same invented story.\",\"text\":\"In January, Mara accepted a six-month job at a small design firm because the rent was due and the work sounded manageable. The posting had promised “general office support,” a phrase broad enough to mean almost anything. On her first morning, she found three unanswered emails on the shared computer, a stack of invoices beside the kettle, and a calendar that listed two meetings in the same room at the same time.\\n\\nHer manager, Simon, showed her where to sit and hurried through a list of passwords. “You’ll get the hang of it,” he said, checking his watch. Then he disappeared into a call.\\n\\nMara did get the hang of it. She made a map of the room bookings, sorted the invoices by deadline, and sent a polite message asking which meeting could move. By lunchtime, the room was free, the invoices had owners, and the emails no longer looked quite so urgent.\\n\\nShe liked the clean click of a task completed. At her last job, in a crowded café, the problems had returned as soon as she turned her back: another spilled drink, another order called to the wrong table. Here, she thought, a little attention might actually leave things better than she found them.\\n\\nFor the first few weeks, she watched how the office worked. People rushed between desks carrying mugs and half-finished ideas. Small snags accumulated quietly: a missing cable, a mislabeled folder, a meeting invite sent to the wrong person. Mara began fixing them before anyone asked. When she mentioned this to Simon, he said, “Great initiative,” and opened his laptop.\\n\\nBy the end of the month, she had learned which problems the office considered hers.\"}",
+  "output_sha256": "e68e814efce640211cc8b09f4cfeb4f007192d1597353a31fa99cadb23ca8cb9",
+  "finish_reason": "stop",
+  "refusal": null,
+  "returned_model": "gpt-6-luna",
+  "usage": {
+    "prompt_tokens": 395,
+    "completion_tokens": 487,
+    "total_tokens": 882,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 88,
+      "audio_tokens": 0,
+      "accepted_prediction_tokens": 0,
+      "rejected_prediction_tokens": 0
+    }
+  },
+  "format": {
+    "json_object": true,
+    "rule_unchanged": true,
+    "passage_is_string": true,
+    "passage_sha256": "69a9819c8c2651aeb62bd2e63d6ececfc3b77aec63bddf67b5ef22aa84ed161b",
+    "passage_words": 280
+  },
+  "finished_at": "2026-09-23T00:13:58.605335+00:00",
+  "latency_seconds": 4.7503,
+  "usage_cost_upper_estimate_usd": 0.000283,
+  "stream_status": "active",
+  "budget": {
+    "usage_cost_upper_estimate_usd": 0.2461048,
+    "uncertain_cost_reserve_usd": 0.0,
+    "in_flight_reserve_usd": 0.363308,
+    "limit_usd": 5.0
+  }
+}

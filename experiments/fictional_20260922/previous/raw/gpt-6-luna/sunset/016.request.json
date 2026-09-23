@@ -1,0 +1,20 @@
+{
+  "started_at": "2026-09-23T00:14:03.634018+00:00",
+  "model": "gpt-6-luna",
+  "seed": "sunset",
+  "hop": 16,
+  "endpoint": "https://api.openai.com/v1/chat/completions",
+  "body": {
+    "model": "gpt-6-luna",
+    "messages": [
+      {
+        "role": "user",
+        "content": "{\"rule\":\"Return this JSON object with the rule field unchanged and, in the text field, an original fictional passage of about 250 words that comes immediately BEFORE the current text in the same invented story.\",\"text\":\"The week before Christmas, Mara found the job posting while eating toast over the kitchen sink. Her landlord had left a reminder beneath her door: January’s rent would be due on the first, regardless of the holiday. She read the notice twice, then opened her laptop and searched for work that didn’t require a uniform or a long commute.\\n\\nThe design firm’s listing appeared near the top. It was a small place, the description said, looking for someone organized and comfortable with everyday office tasks. The hours were regular. The pay was enough, just barely, and the office was three bus rides away. Mara hesitated over the application form. She had spent the past year on her feet in a café, learning to stay pleasant through noise, spills, and customers who changed their orders after the food arrived. A quiet desk sounded almost luxurious.\\n\\nShe attached her résumé and kept the cover note brief. Two days later, a man named Simon called. He asked whether she could start in January and whether she was good at “a bit of everything.” Mara said she was, though she wasn’t sure what everything meant. He explained that the firm needed help keeping the office running while the team was busy with several projects. There would be emails, paperwork, scheduling—nothing too complicated, he assured her.\\n\\nAfter the call, she wrote the hours and salary on the back of an envelope. The numbers lined up closely with her rent and bus fare. There wasn’t much room for a mistake, but there was enough room to breathe. She set the envelope beside the landlord’s notice and looked again at the posting’s promise of “general office support.” It sounded manageable. In January, Mara accepted a six-month job at a small design firm.\"}"
+      }
+    ],
+    "max_completion_tokens": 4096,
+    "reasoning_effort": "low"
+  },
+  "state_sha256": "df44b7fcadd3016e90d96eee0fb72ff48e844a242334d02ea8981b465c5e6795",
+  "reserved_cost_usd": 0.0022969
+}

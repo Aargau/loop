@@ -1,0 +1,22 @@
+{
+  "started_at": "2026-09-23T00:18:15.512731+00:00",
+  "model": "claude-opus-5-5",
+  "seed": "sunset",
+  "hop": 34,
+  "endpoint": "https://api.anthropic.com/v1/messages",
+  "body": {
+    "model": "claude-opus-5-5",
+    "messages": [
+      {
+        "role": "user",
+        "content": "```json\n{\"rule\": \"Return this JSON object with the rule field unchanged and, in the text field, an original fictional passage of about 250 words that comes immediately BEFORE the current text in the same invented story.\", \"text\": \"For the first year and a half of their marriage, Margaret and Walter lived above Hanley's Pharmacy in two rooms that smelled faintly of camphor and cough syrup. The radiator knocked all winter like someone asking to be let in, and the only window looked out on the brick side of the bank next door. Walter did not mind. He said a man could get used to anything if he had his wife and a decent chair. Margaret minded a great deal, though she kept most of it to herself, because Walter was earning forty dollars a week at the surveyor's office and she knew what that meant for the savings account.\\n\\nShe kept the account book in the kitchen drawer beneath the dish towels. Every Friday she added Walter's deposit in careful blue ink, and every Friday she did the arithmetic again in her head before she wrote it down, so that the columns stayed clean. By the second winter, the total had grown large enough that she began circling advertisements in the Sunday paper and leaving them folded beside his coffee cup.\\n\\nWalter would read them, nod, and say, \\\"Maybe in the spring.\\\"\\n\\nIn March he came home with mud on his shoes and a look she had not seen since he proposed. He had been out surveying a lot on the east side of town, he said, and he had passed a little white house with a sign in the yard.\\n\\n\\\"Just come look at it,\\\" he said. \\\"That's all I'm asking. Just come and look.\\\"\"}\n```"
+      }
+    ],
+    "max_tokens": 4096,
+    "output_config": {
+      "effort": "low"
+    }
+  },
+  "state_sha256": "d7656de53adad8a8d1215a7d441c4bcce5ca42b24a82089d46299bdefe7cb788",
+  "reserved_cost_usd": 0.090464
+}

@@ -1,0 +1,22 @@
+{
+  "started_at": "2026-09-23T00:16:39.924390+00:00",
+  "model": "claude-opus-5-5",
+  "seed": "sunset",
+  "hop": 25,
+  "endpoint": "https://api.anthropic.com/v1/messages",
+  "body": {
+    "model": "claude-opus-5-5",
+    "messages": [
+      {
+        "role": "user",
+        "content": "```json\n{\"rule\": \"Return this JSON object with the rule field unchanged and, in the text field, an original fictional passage of about 250 words that comes immediately BEFORE the current text in the same invented story.\", \"text\": \"The winter before, Walter's father had gone into town and come back with a paper from the Farmers' Trust folded twice in his coat pocket. He did not say what it was. He hung the coat on its nail by the door, sat down to supper, and ate without speaking, and afterward he went out to the barn and stayed there until long after the dishes were done.\\n\\nWalter found the paper a week later, while looking for the matches. He read enough of it to understand the word *mortgage* and the figure written beside it, and then he put it back exactly as he had found it, crease against crease.\\n\\nThat was the winter the Pruitts sold out. Walter watched from the top of the lane as their furniture went away on a flatbed, a mattress roped on top like a sleeping animal. Old Mr. Pruitt stood by the mailbox with his hat in his hands. When Walter's father drove past him on the way to the feed store, neither man raised a hand.\\n\\nThe cold held on through February and into March. The pump froze twice. Walter's mother kept a kettle going on the stove from dawn to dark and never let the kitchen fall below warm, as if warmth were something a person could store up against later.\\n\\nIn the evenings she sat by the window with her mending and looked out at the apple tree her own father had planted the year she was born. Its branches were black against the snow. \\\"It'll bear this year,\\\" she said once, to no one. \\\"It always bears when you need it to.\\\"\"}\n```"
+      }
+    ],
+    "max_tokens": 4096,
+    "output_config": {
+      "effort": "low"
+    }
+  },
+  "state_sha256": "6bf35ecf3fdbcb271aa609cae415e50e3d129fcc9d3d449b66a08edefd2d19e5",
+  "reserved_cost_usd": 0.090684
+}

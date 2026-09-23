@@ -1,0 +1,47 @@
+{
+  "model": "gpt-6-luna",
+  "seed": "sunset",
+  "hop": 27,
+  "http_status": 200,
+  "response_body": "{\n  \"id\": \"chatcmpl-ER4vV6iiYvWaGNczhcoxDtnFGLtUr\",\n  \"object\": \"chat.completion\",\n  \"created\": 1790122501,\n  \"model\": \"gpt-6-luna\",\n  \"choices\": [\n    {\n      \"index\": 0,\n      \"message\": {\n        \"role\": \"assistant\",\n        \"content\": \"{\\\"rule\\\":\\\"Return this JSON object with the rule field unchanged and, in the text field, an original fictional passage of about 250 words that comes immediately BEFORE the current text in the same invented story.\\\",\\\"text\\\":\\\"On Tuesday evening, Mara found her mother sitting at the kitchen table with a stack of unopened mail. The rain had stopped, but water still dripped from the fire escape outside, tapping the window like someone waiting to be let in.\\n\\n“Did the clinic call?” Mara asked.\\n\\nHer mother turned one envelope over in her hands. “They left a message. I’ll call them back tomorrow.”\\n\\nMara set two plates on the table. They ate soup and talked about ordinary things: a girl in Mara’s class who had cut her own bangs, the neighbor’s new dog, the loose handle on the cupboard. Her mother laughed at the right places, but kept glancing toward the telephone.\\n\\nAfter dinner, Mara offered to wash up. While she rinsed the bowls, she saw her mother sort the mail into neat piles. One envelope was white and thicker than the others. Her mother held it for a moment, then placed it near the sugar bowl.\\n\\n“Is it from the clinic?” Mara asked.\\n\\n“I’m not sure,” her mother said, though the return address was plainly printed across the corner. She slipped the envelope beneath the bowl and stood. “You should get your school things ready. You’ve got that history lesson tomorrow.”\\n\\nMara packed her books at the little desk by the window. The assignment was to sketch an old map of the neighborhood, marking streets that had changed over time. She drew Bell Street from memory, then added the crooked lane behind the bakery.\\n\\nWhen she came back to the kitchen, her mother was checking the pockets of her work coat. A few coins clinked onto the counter.\\n\\n“Don’t forget your lunch,” she said.\\n\\nMara set an apple beside her bag. They said goodnight, and she went to bed wondering what the envelope contained. Outside, the pipes rattled once, then fell quiet.\\\"}\",\n        \"refusal\": null,\n        \"annotations\": []\n      },\n      \"finish_reason\": \"stop\"\n    }\n  ],\n  \"usage\": {\n    \"prompt_tokens\": 383,\n    \"completion_tokens\": 529,\n    \"total_tokens\": 912,\n    \"prompt_tokens_details\": {\n      \"cached_tokens\": 0,\n      \"cache_write_tokens\": 0,\n      \"audio_tokens\": 0\n    },\n    \"completion_tokens_details\": {\n      \"reasoning_tokens\": 102,\n      \"audio_tokens\": 0,\n      \"accepted_prediction_tokens\": 0,\n      \"rejected_prediction_tokens\": 0\n    }\n  },\n  \"service_tier\": \"default\",\n  \"system_fingerprint\": null\n}\n",
+  "response_headers": {
+    "Date": "Wed, 23 Sep 2026 00:15:05 GMT",
+    "openai-processing-ms": "4366",
+    "x-request-id": "req_c495ecdfd1534a5ca67f597c7045d6be"
+  },
+  "output": "{\"rule\":\"Return this JSON object with the rule field unchanged and, in the text field, an original fictional passage of about 250 words that comes immediately BEFORE the current text in the same invented story.\",\"text\":\"On Tuesday evening, Mara found her mother sitting at the kitchen table with a stack of unopened mail. The rain had stopped, but water still dripped from the fire escape outside, tapping the window like someone waiting to be let in.\n\n“Did the clinic call?” Mara asked.\n\nHer mother turned one envelope over in her hands. “They left a message. I’ll call them back tomorrow.”\n\nMara set two plates on the table. They ate soup and talked about ordinary things: a girl in Mara’s class who had cut her own bangs, the neighbor’s new dog, the loose handle on the cupboard. Her mother laughed at the right places, but kept glancing toward the telephone.\n\nAfter dinner, Mara offered to wash up. While she rinsed the bowls, she saw her mother sort the mail into neat piles. One envelope was white and thicker than the others. Her mother held it for a moment, then placed it near the sugar bowl.\n\n“Is it from the clinic?” Mara asked.\n\n“I’m not sure,” her mother said, though the return address was plainly printed across the corner. She slipped the envelope beneath the bowl and stood. “You should get your school things ready. You’ve got that history lesson tomorrow.”\n\nMara packed her books at the little desk by the window. The assignment was to sketch an old map of the neighborhood, marking streets that had changed over time. She drew Bell Street from memory, then added the crooked lane behind the bakery.\n\nWhen she came back to the kitchen, her mother was checking the pockets of her work coat. A few coins clinked onto the counter.\n\n“Don’t forget your lunch,” she said.\n\nMara set an apple beside her bag. They said goodnight, and she went to bed wondering what the envelope contained. Outside, the pipes rattled once, then fell quiet.\"}",
+  "output_sha256": "6cda98776abfc97cfd61fb921207c315844f9b498cd301af0ca300f1d43ff2a9",
+  "finish_reason": "stop",
+  "refusal": null,
+  "returned_model": "gpt-6-luna",
+  "usage": {
+    "prompt_tokens": 383,
+    "completion_tokens": 529,
+    "total_tokens": 912,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 102,
+      "audio_tokens": 0,
+      "accepted_prediction_tokens": 0,
+      "rejected_prediction_tokens": 0
+    }
+  },
+  "format": {
+    "json_object": false,
+    "rule_unchanged": false
+  },
+  "finished_at": "2026-09-23T00:15:00.656778+00:00",
+  "latency_seconds": 4.5823,
+  "usage_cost_upper_estimate_usd": 0.0003028,
+  "stream_status": "active",
+  "budget": {
+    "usage_cost_upper_estimate_usd": 0.5154196,
+    "uncertain_cost_reserve_usd": 0.0,
+    "in_flight_reserve_usd": 0.363304,
+    "limit_usd": 5.0
+  }
+}

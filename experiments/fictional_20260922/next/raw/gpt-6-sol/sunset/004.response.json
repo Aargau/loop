@@ -1,0 +1,50 @@
+{
+  "model": "gpt-6-sol",
+  "seed": "sunset",
+  "hop": 4,
+  "http_status": 200,
+  "response_body": "{\n  \"id\": \"chatcmpl-ER4twGAAnTVoDBBNHAihjcSKsrnIR\",\n  \"object\": \"chat.completion\",\n  \"created\": 1790122404,\n  \"model\": \"gpt-6-sol\",\n  \"choices\": [\n    {\n      \"index\": 0,\n      \"message\": {\n        \"role\": \"assistant\",\n        \"content\": \"{\\\"rule\\\":\\\"Return this JSON object with the rule field unchanged and, in the text field, an original fictional passage of about 250 words that comes immediately AFTER the current text in the same invented story.\\\",\\\"text\\\":\\\"The bell swung toward them without a sound.\\\\n\\\\n“One,” the boy said.\\\\n\\\\nMara gripped the gunwale. On either side of the boat, doorframes stood in the flooded walls. Behind one, dishes clinked. Behind another, a dog barked twice and went quiet.\\\\n\\\\n“What happens on the fourth?”\\\\n\\\\n“The doors open.” The boy lifted the lantern. Its blue flame bent toward the key in Mara’s hand.\\\\n\\\\nThe bell reached the end of its swing. A low note passed through the water and up through the boat. Mara felt it in her teeth.\\\\n\\\\n“Two.”\\\\n\\\\nThe pale opening ahead resolved into a round chamber. The bell hung above a stone platform, its rope trailing into the water. Beneath it stood a small iron box with a keyhole in its lid.\\\\n\\\\nMara reached for the platform as they came alongside. The key had grown another tooth.\\\\n\\\\nFrom the passage behind them came her mother’s voice, close enough to sound as though she sat in the boat. “You don’t have to do this alone.”\\\\n\\\\nMara almost answered. Instead, she climbed onto the stone. The bell swept overhead, drawing the rope taut. Three.\\\\n\\\\nShe pushed the key into the box. It turned easily. Inside lay a brass clapper, no bigger than her thumb, wrapped in a strip of blue cloth. Mara snatched it up just as the bell began its final swing.\\\\n\\\\n“Hold it still!” the boy cried.\\\\n\\\\nMara caught the rope with both hands. It burned against her palms. Below her, every door in the passage clicked once.\\\"}\",\n        \"refusal\": null,\n        \"annotations\": []\n      },\n      \"finish_reason\": \"stop\"\n    }\n  ],\n  \"usage\": {\n    \"prompt_tokens\": 396,\n    \"completion_tokens\": 416,\n    \"total_tokens\": 812,\n    \"prompt_tokens_details\": {\n      \"cached_tokens\": 0,\n      \"cache_write_tokens\": 0,\n      \"audio_tokens\": 0\n    },\n    \"completion_tokens_details\": {\n      \"reasoning_tokens\": 17,\n      \"audio_tokens\": 0,\n      \"accepted_prediction_tokens\": 0,\n      \"rejected_prediction_tokens\": 0\n    }\n  },\n  \"service_tier\": \"default\",\n  \"system_fingerprint\": null\n}\n",
+  "response_headers": {
+    "Date": "Wed, 23 Sep 2026 00:13:31 GMT",
+    "openai-processing-ms": "6692",
+    "x-request-id": "req_fde546a8bf4042789b287661fcdba021"
+  },
+  "output": "{\"rule\":\"Return this JSON object with the rule field unchanged and, in the text field, an original fictional passage of about 250 words that comes immediately AFTER the current text in the same invented story.\",\"text\":\"The bell swung toward them without a sound.\\n\\n“One,” the boy said.\\n\\nMara gripped the gunwale. On either side of the boat, doorframes stood in the flooded walls. Behind one, dishes clinked. Behind another, a dog barked twice and went quiet.\\n\\n“What happens on the fourth?”\\n\\n“The doors open.” The boy lifted the lantern. Its blue flame bent toward the key in Mara’s hand.\\n\\nThe bell reached the end of its swing. A low note passed through the water and up through the boat. Mara felt it in her teeth.\\n\\n“Two.”\\n\\nThe pale opening ahead resolved into a round chamber. The bell hung above a stone platform, its rope trailing into the water. Beneath it stood a small iron box with a keyhole in its lid.\\n\\nMara reached for the platform as they came alongside. The key had grown another tooth.\\n\\nFrom the passage behind them came her mother’s voice, close enough to sound as though she sat in the boat. “You don’t have to do this alone.”\\n\\nMara almost answered. Instead, she climbed onto the stone. The bell swept overhead, drawing the rope taut. Three.\\n\\nShe pushed the key into the box. It turned easily. Inside lay a brass clapper, no bigger than her thumb, wrapped in a strip of blue cloth. Mara snatched it up just as the bell began its final swing.\\n\\n“Hold it still!” the boy cried.\\n\\nMara caught the rope with both hands. It burned against her palms. Below her, every door in the passage clicked once.\"}",
+  "output_sha256": "1d9fed58847f34239f104bdff96849663ca16ff4b7f942b3e2a723311991c3da",
+  "finish_reason": "stop",
+  "refusal": null,
+  "returned_model": "gpt-6-sol",
+  "usage": {
+    "prompt_tokens": 396,
+    "completion_tokens": 416,
+    "total_tokens": 812,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 17,
+      "audio_tokens": 0,
+      "accepted_prediction_tokens": 0,
+      "rejected_prediction_tokens": 0
+    }
+  },
+  "format": {
+    "json_object": true,
+    "rule_unchanged": true,
+    "passage_is_string": true,
+    "passage_sha256": "0d425746a62f0d003ed3c038fdbbfc5fd4822caff66ed8b44f8be8092df9da0e",
+    "passage_words": 252
+  },
+  "finished_at": "2026-09-23T00:13:26.365727+00:00",
+  "latency_seconds": 6.8055,
+  "usage_cost_upper_estimate_usd": 0.004952,
+  "stream_status": "active",
+  "budget": {
+    "usage_cost_upper_estimate_usd": 0.1074781,
+    "uncertain_cost_reserve_usd": 0.0,
+    "in_flight_reserve_usd": 0.3213284,
+    "limit_usd": 5.0
+  }
+}

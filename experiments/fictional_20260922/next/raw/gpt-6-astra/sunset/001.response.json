@@ -1,0 +1,50 @@
+{
+  "model": "gpt-6-astra",
+  "seed": "sunset",
+  "hop": 1,
+  "http_status": 200,
+  "response_body": "{\n  \"id\": \"chatcmpl-ER4taic7OvPPOweSE3foR3F7Kpti9\",\n  \"object\": \"chat.completion\",\n  \"created\": 1790122382,\n  \"model\": \"gpt-6-astra\",\n  \"choices\": [\n    {\n      \"index\": 0,\n      \"message\": {\n        \"role\": \"assistant\",\n        \"content\": \"{\\n  \\\"rule\\\": \\\"Return this JSON object with the rule field unchanged and, in the text field, an original fictional passage of about 250 words that comes immediately AFTER the current text in the same invented story.\\\",\\n  \\\"text\\\": \\\"Mara counted the windows catching its last light: six in the mill, three in the abandoned schoolhouse, and one in the tower where nobody had lived for forty years.\\\\n\\\\nThe tower window blinked.\\\\n\\\\nShe stopped on the bridge, her basket knocking against her knee. Once might have been a bird crossing the glass. Twice might have been a cloud. But the light flashed a third time, followed by two short glimmers.\\\\n\\\\nHer brother’s signal.\\\\n\\\\nMara set down the basket. An apple rolled between the planks and dropped into the river with a small, final sound.\\\\n\\\\nElias had been buried in February. She had helped choose his coat.\\\\n\\\\nAcross the water, the mill wheel turned although the sluice gates were shut. Its paddles lifted dripping into the air, each bearing something pale. At first she thought they were leaves. Then one unfolded, and she recognized the blue border of the stationery her mother kept locked in a drawer.\\\\n\\\\nLetters.\\\\n\\\\nA hundred letters, perhaps, rising out of the darkening river.\\\\n\\\\nBehind her, someone cleared his throat.\\\\n\\\\nThe ferryman stood at the end of the bridge, holding his cap in both hands. He looked older than he had that morning.\\\\n\\\\n“You saw it, then,” he said.\\\\n\\\\n“Who’s in the tower?”\\\\n\\\\nHe glanced toward the hills, where the last edge of sunlight was disappearing.\\\\n\\\\n“That depends on whether you answer.”\\\\n\\\\nMara reached into her pocket for the little brass mirror Elias had given her. The ferryman stepped forward, but she had already lifted it toward the window.\\\\n\\\\n“Wait,” he said. “What coat did you bury him in?”\\\"\\n}\",\n        \"refusal\": null,\n        \"annotations\": []\n      },\n      \"finish_reason\": \"stop\"\n    }\n  ],\n  \"usage\": {\n    \"prompt_tokens\": 61,\n    \"completion_tokens\": 415,\n    \"total_tokens\": 476,\n    \"prompt_tokens_details\": {\n      \"cached_tokens\": 0,\n      \"cache_write_tokens\": 0,\n      \"audio_tokens\": 0\n    },\n    \"completion_tokens_details\": {\n      \"reasoning_tokens\": 0,\n      \"audio_tokens\": 0,\n      \"accepted_prediction_tokens\": 0,\n      \"rejected_prediction_tokens\": 0\n    }\n  },\n  \"service_tier\": \"default\",\n  \"system_fingerprint\": null\n}\n",
+  "response_headers": {
+    "Date": "Wed, 23 Sep 2026 00:13:15 GMT",
+    "openai-processing-ms": "12608",
+    "x-request-id": "req_8037f8ed0bc648e29d0f82cc0c4ac98f"
+  },
+  "output": "{\n  \"rule\": \"Return this JSON object with the rule field unchanged and, in the text field, an original fictional passage of about 250 words that comes immediately AFTER the current text in the same invented story.\",\n  \"text\": \"Mara counted the windows catching its last light: six in the mill, three in the abandoned schoolhouse, and one in the tower where nobody had lived for forty years.\\n\\nThe tower window blinked.\\n\\nShe stopped on the bridge, her basket knocking against her knee. Once might have been a bird crossing the glass. Twice might have been a cloud. But the light flashed a third time, followed by two short glimmers.\\n\\nHer brother’s signal.\\n\\nMara set down the basket. An apple rolled between the planks and dropped into the river with a small, final sound.\\n\\nElias had been buried in February. She had helped choose his coat.\\n\\nAcross the water, the mill wheel turned although the sluice gates were shut. Its paddles lifted dripping into the air, each bearing something pale. At first she thought they were leaves. Then one unfolded, and she recognized the blue border of the stationery her mother kept locked in a drawer.\\n\\nLetters.\\n\\nA hundred letters, perhaps, rising out of the darkening river.\\n\\nBehind her, someone cleared his throat.\\n\\nThe ferryman stood at the end of the bridge, holding his cap in both hands. He looked older than he had that morning.\\n\\n“You saw it, then,” he said.\\n\\n“Who’s in the tower?”\\n\\nHe glanced toward the hills, where the last edge of sunlight was disappearing.\\n\\n“That depends on whether you answer.”\\n\\nMara reached into her pocket for the little brass mirror Elias had given her. The ferryman stepped forward, but she had already lifted it toward the window.\\n\\n“Wait,” he said. “What coat did you bury him in?”\"\n}",
+  "output_sha256": "d31c2d8bfa7ee9821b305b78fff53dce3b32ceecc57c1178197765591d8521c3",
+  "finish_reason": "stop",
+  "refusal": null,
+  "returned_model": "gpt-6-astra",
+  "usage": {
+    "prompt_tokens": 61,
+    "completion_tokens": 415,
+    "total_tokens": 476,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "audio_tokens": 0,
+      "accepted_prediction_tokens": 0,
+      "rejected_prediction_tokens": 0
+    }
+  },
+  "format": {
+    "json_object": true,
+    "rule_unchanged": true,
+    "passage_is_string": true,
+    "passage_sha256": "304840155b9a72a304f1bd785e007b13b974a56364f980fefd6871d4f87f242f",
+    "passage_words": 263
+  },
+  "finished_at": "2026-09-23T00:13:10.523594+00:00",
+  "latency_seconds": 12.8247,
+  "usage_cost_upper_estimate_usd": 0.02136,
+  "stream_status": "active",
+  "budget": {
+    "usage_cost_upper_estimate_usd": 0.0382097,
+    "uncertain_cost_reserve_usd": 0.0,
+    "in_flight_reserve_usd": 0.1384836,
+    "limit_usd": 5.0
+  }
+}

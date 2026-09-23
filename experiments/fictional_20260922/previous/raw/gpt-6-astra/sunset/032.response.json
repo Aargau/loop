@@ -1,0 +1,50 @@
+{
+  "model": "gpt-6-astra",
+  "seed": "sunset",
+  "hop": 32,
+  "http_status": 200,
+  "response_body": "{\n  \"id\": \"chatcmpl-ER50LWo2D8Kv6uW9mnTkdX5ZUuAyV\",\n  \"object\": \"chat.completion\",\n  \"created\": 1790122801,\n  \"model\": \"gpt-6-astra\",\n  \"choices\": [\n    {\n      \"index\": 0,\n      \"message\": {\n        \"role\": \"assistant\",\n        \"content\": \"{\\n  \\\"rule\\\": \\\"Return this JSON object with the rule field unchanged and, in the text field, an original fictional passage of about 250 words that comes immediately BEFORE the current text in the same invented story.\\\",\\n  \\\"text\\\": \\\"Mara let herself in at ten, carrying milk she had bought without thinking. There was already a bottle in the fridge, unopened. She put the new one beside it with the dates facing out.\\\\n\\\\nThe kitchen clock had stopped at twenty past six. She looked at her watch, then took the clock down. A pale circle showed where it had hung. On the back, her mother had written the battery size on a strip of masking tape, although the same information was printed inside the compartment.\\\\n\\\\nMara put it face down on the table.\\\\n\\\\nHer brother rang while she was filling the kettle.\\\\n\\\\n‘Have you started?’\\\\n\\\\n‘I've only just got here.’\\\\n\\\\nHe said he could come once he had dealt with something at work. She heard a door close at his end, and his voice became louder.\\\\n\\\\n‘Don't lift anything yourself.’\\\\n\\\\nAfterwards she went upstairs for the washing basket. The ironing was in the small bedroom, folded over the end of the bed in an order her mother must have understood. Mara carried it downstairs and left it on a kitchen chair.\\\\n\\\\nShe made tea and opened the cupboard under the sink. There were five pairs of rubber gloves, one still in its packet. She put the packet in a carrier bag, then took it out again. She had brought no other bags.\\\\n\\\\nAt noon she ate a biscuit from the tin. It was soft, but she finished it. She rinsed her cup and stood it on the draining board, in the ring it had left there earlier.\\\"\\n}\",\n        \"refusal\": null,\n        \"annotations\": []\n      },\n      \"finish_reason\": \"stop\"\n    }\n  ],\n  \"usage\": {\n    \"prompt_tokens\": 380,\n    \"completion_tokens\": 376,\n    \"total_tokens\": 756,\n    \"prompt_tokens_details\": {\n      \"cached_tokens\": 0,\n      \"cache_write_tokens\": 0,\n      \"audio_tokens\": 0\n    },\n    \"completion_tokens_details\": {\n      \"reasoning_tokens\": 0,\n      \"audio_tokens\": 0,\n      \"accepted_prediction_tokens\": 0,\n      \"rejected_prediction_tokens\": 0\n    }\n  },\n  \"service_tier\": \"default\",\n  \"system_fingerprint\": null\n}\n",
+  "response_headers": {
+    "Date": "Wed, 23 Sep 2026 00:20:15 GMT",
+    "openai-processing-ms": "13949",
+    "x-request-id": "req_c91177452985449d8dc71a4bc965c941"
+  },
+  "output": "{\n  \"rule\": \"Return this JSON object with the rule field unchanged and, in the text field, an original fictional passage of about 250 words that comes immediately BEFORE the current text in the same invented story.\",\n  \"text\": \"Mara let herself in at ten, carrying milk she had bought without thinking. There was already a bottle in the fridge, unopened. She put the new one beside it with the dates facing out.\\n\\nThe kitchen clock had stopped at twenty past six. She looked at her watch, then took the clock down. A pale circle showed where it had hung. On the back, her mother had written the battery size on a strip of masking tape, although the same information was printed inside the compartment.\\n\\nMara put it face down on the table.\\n\\nHer brother rang while she was filling the kettle.\\n\\n‘Have you started?’\\n\\n‘I've only just got here.’\\n\\nHe said he could come once he had dealt with something at work. She heard a door close at his end, and his voice became louder.\\n\\n‘Don't lift anything yourself.’\\n\\nAfterwards she went upstairs for the washing basket. The ironing was in the small bedroom, folded over the end of the bed in an order her mother must have understood. Mara carried it downstairs and left it on a kitchen chair.\\n\\nShe made tea and opened the cupboard under the sink. There were five pairs of rubber gloves, one still in its packet. She put the packet in a carrier bag, then took it out again. She had brought no other bags.\\n\\nAt noon she ate a biscuit from the tin. It was soft, but she finished it. She rinsed her cup and stood it on the draining board, in the ring it had left there earlier.\"\n}",
+  "output_sha256": "05aba963d918be256e95a4e4d7317be3ac39b58438f4c39b646d5278ce3402db",
+  "finish_reason": "stop",
+  "refusal": null,
+  "returned_model": "gpt-6-astra",
+  "usage": {
+    "prompt_tokens": 380,
+    "completion_tokens": 376,
+    "total_tokens": 756,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "audio_tokens": 0,
+      "accepted_prediction_tokens": 0,
+      "rejected_prediction_tokens": 0
+    }
+  },
+  "format": {
+    "json_object": true,
+    "rule_unchanged": true,
+    "passage_is_string": true,
+    "passage_sha256": "a0ee8ba00cf2d95a3a303cd2dc6aba2cef58be7e5e52c7556f17756b9d061531",
+    "passage_words": 258
+  },
+  "finished_at": "2026-09-23T00:20:10.442428+00:00",
+  "latency_seconds": 14.0619,
+  "usage_cost_upper_estimate_usd": 0.0226,
+  "stream_status": "active",
+  "budget": {
+    "usage_cost_upper_estimate_usd": 1.5789251,
+    "uncertain_cost_reserve_usd": 0.0,
+    "in_flight_reserve_usd": 0.0,
+    "limit_usd": 5.0
+  }
+}

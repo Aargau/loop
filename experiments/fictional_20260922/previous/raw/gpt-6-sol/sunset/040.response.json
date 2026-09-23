@@ -1,0 +1,50 @@
+{
+  "model": "gpt-6-sol",
+  "seed": "sunset",
+  "hop": 40,
+  "http_status": 200,
+  "response_body": "{\n  \"id\": \"chatcmpl-ER4xk5aeNF55EPjrmjZfOPCNVrRJp\",\n  \"object\": \"chat.completion\",\n  \"created\": 1790122640,\n  \"model\": \"gpt-6-sol\",\n  \"choices\": [\n    {\n      \"index\": 0,\n      \"message\": {\n        \"role\": \"assistant\",\n        \"content\": \"{\\n  \\\"rule\\\": \\\"Return this JSON object with the rule field unchanged and, in the text field, an original fictional passage of about 250 words that comes immediately BEFORE the current text in the same invented story.\\\",\\n  \\\"text\\\": \\\"At the end of October, Mara went to see her mother for the day. The train was late, and by the time she arrived the light had begun to leave the garden. Her mother had made soup and set out two bowls, though she said she had eaten already. Mara took some anyway. They sat at the small table by the window, watching leaves collect against the back step.\\\\n\\\\nAfter lunch, her mother showed her where the neighbour’s fence had started to lean. A post had come loose, and one panel moved when the wind caught it. The neighbour had promised to send someone round. Mara pressed the panel with her hand. It shifted a little, then settled back.\\\\n\\\\nThey went indoors before it grew cold. Mara washed the bowls while her mother dried them, putting each one away as soon as it was ready. On the fridge was a timetable Mara had printed months earlier, with several trains circled in blue pen. Her mother said she had kept it because the numbers were large enough to read.\\\\n\\\\nMara left before supper. At the station she found that her train had been moved to a different platform, and she crossed the footbridge with the other passengers. From the window, the last gardens behind the houses appeared briefly and were gone. When she got home, she put her coat on its hook without checking the pockets. She meant to clear the balcony the next morning, but it rained, and then the working week began.\\\"\\n}\",\n        \"refusal\": null,\n        \"annotations\": []\n      },\n      \"finish_reason\": \"stop\"\n    }\n  ],\n  \"usage\": {\n    \"prompt_tokens\": 356,\n    \"completion_tokens\": 396,\n    \"total_tokens\": 752,\n    \"prompt_tokens_details\": {\n      \"cached_tokens\": 0,\n      \"cache_write_tokens\": 0,\n      \"audio_tokens\": 0\n    },\n    \"completion_tokens_details\": {\n      \"reasoning_tokens\": 40,\n      \"audio_tokens\": 0,\n      \"accepted_prediction_tokens\": 0,\n      \"rejected_prediction_tokens\": 0\n    }\n  },\n  \"service_tier\": \"default\",\n  \"system_fingerprint\": null\n}\n",
+  "response_headers": {
+    "Date": "Wed, 23 Sep 2026 00:17:27 GMT",
+    "openai-processing-ms": "6705",
+    "x-request-id": "req_7c81864a0f7d48378b2b082781d5a4cc"
+  },
+  "output": "{\n  \"rule\": \"Return this JSON object with the rule field unchanged and, in the text field, an original fictional passage of about 250 words that comes immediately BEFORE the current text in the same invented story.\",\n  \"text\": \"At the end of October, Mara went to see her mother for the day. The train was late, and by the time she arrived the light had begun to leave the garden. Her mother had made soup and set out two bowls, though she said she had eaten already. Mara took some anyway. They sat at the small table by the window, watching leaves collect against the back step.\\n\\nAfter lunch, her mother showed her where the neighbour’s fence had started to lean. A post had come loose, and one panel moved when the wind caught it. The neighbour had promised to send someone round. Mara pressed the panel with her hand. It shifted a little, then settled back.\\n\\nThey went indoors before it grew cold. Mara washed the bowls while her mother dried them, putting each one away as soon as it was ready. On the fridge was a timetable Mara had printed months earlier, with several trains circled in blue pen. Her mother said she had kept it because the numbers were large enough to read.\\n\\nMara left before supper. At the station she found that her train had been moved to a different platform, and she crossed the footbridge with the other passengers. From the window, the last gardens behind the houses appeared briefly and were gone. When she got home, she put her coat on its hook without checking the pockets. She meant to clear the balcony the next morning, but it rained, and then the working week began.\"\n}",
+  "output_sha256": "7fde01a2fafb51d1ae594ca9e69beb49daeb575a40e80a6a59d9965aec653d34",
+  "finish_reason": "stop",
+  "refusal": null,
+  "returned_model": "gpt-6-sol",
+  "usage": {
+    "prompt_tokens": 356,
+    "completion_tokens": 396,
+    "total_tokens": 752,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 40,
+      "audio_tokens": 0,
+      "accepted_prediction_tokens": 0,
+      "rejected_prediction_tokens": 0
+    }
+  },
+  "format": {
+    "json_object": true,
+    "rule_unchanged": true,
+    "passage_is_string": true,
+    "passage_sha256": "b67d62f4e5c735226c91add814f9006f39904f82ae6450595121198c03263831",
+    "passage_words": 253
+  },
+  "finished_at": "2026-09-23T00:17:22.679481+00:00",
+  "latency_seconds": 6.8534,
+  "usage_cost_upper_estimate_usd": 0.004672,
+  "stream_status": "active",
+  "budget": {
+    "usage_cost_upper_estimate_usd": 1.0919051,
+    "uncertain_cost_reserve_usd": 0.0,
+    "in_flight_reserve_usd": 0.317062,
+    "limit_usd": 5.0
+  }
+}

@@ -1,0 +1,50 @@
+{
+  "model": "gpt-6-sol",
+  "seed": "sunset",
+  "hop": 30,
+  "http_status": 200,
+  "response_body": "{\n  \"id\": \"chatcmpl-ER4wrXUbQdWp7UQvlSytfA4mAVnm8\",\n  \"object\": \"chat.completion\",\n  \"created\": 1790122585,\n  \"model\": \"gpt-6-sol\",\n  \"choices\": [\n    {\n      \"index\": 0,\n      \"message\": {\n        \"role\": \"assistant\",\n        \"content\": \"{\\\"rule\\\":\\\"Return this JSON object with the rule field unchanged and, in the text field, an original fictional passage of about 250 words that comes immediately AFTER the current text in the same invented story.\\\",\\\"text\\\":\\\"Beyond the little door lay a kitchen no bigger than Mara’s palm. Three chairs stood around its table. On the fourth sat a dark, dripping shape, its back to the door.\\\\n\\\\nLina caught Mara’s sleeve. “If we go in, do we shrink?”\\\\n\\\\nThe driver shook his head. “That isn’t an entrance. It’s a view.”\\\\n\\\\nIn the river, Gran knocked again, twice this time. The shape in the chair tilted its head toward the sound. Water ran from its cuffs onto the floorboards.\\\\n\\\\nMara lowered the bowl over the tiny door. The kitchen vanished. So did the smell of bread. A moment later, something struck the underside of the bowl hard enough to rattle it against the stone.\\\\n\\\\n“Three knocks to call us,” Kit said. “Two to warn us.”\\\\n\\\\n“Warn us of what?” Lina asked.\\\\n\\\\nMara looked across the water. Gran was holding up one finger. Then she closed her hand and pointed again, behind them.\\\\n\\\\nAt the far end of the bridge, the bus emerged from the mist. It rolled toward them without its headlights, slow enough that Mara could see empty seats through every window. At the wheel sat the dripping shape from the kitchen.\\\\n\\\\nThe driver seized the bowl and turned it upside down, trapping the soot-black key inside. “Now,” he said, “we count the places, not the people.”\\\\n\\\\nThe bus stopped. Its doors folded open. Three dry seats waited just behind the driver, each with a folded napkin on it.\\\\n\\\\nFrom beneath the bowl came a small, furious knock.\\\\n\\\\nKit took Mara’s hand again. Together with Lina, they stepped onto the bus, leaving the fourth place empty.\\\"}\",\n        \"refusal\": null,\n        \"annotations\": []\n      },\n      \"finish_reason\": \"stop\"\n    }\n  ],\n  \"usage\": {\n    \"prompt_tokens\": 402,\n    \"completion_tokens\": 465,\n    \"total_tokens\": 867,\n    \"prompt_tokens_details\": {\n      \"cached_tokens\": 0,\n      \"cache_write_tokens\": 0,\n      \"audio_tokens\": 0\n    },\n    \"completion_tokens_details\": {\n      \"reasoning_tokens\": 44,\n      \"audio_tokens\": 0,\n      \"accepted_prediction_tokens\": 0,\n      \"rejected_prediction_tokens\": 0\n    }\n  },\n  \"service_tier\": \"default\",\n  \"system_fingerprint\": null\n}\n",
+  "response_headers": {
+    "Date": "Wed, 23 Sep 2026 00:16:32 GMT",
+    "openai-processing-ms": "7872",
+    "x-request-id": "req_e8bfd76fc31344e6ae1334d5dbad67ed"
+  },
+  "output": "{\"rule\":\"Return this JSON object with the rule field unchanged and, in the text field, an original fictional passage of about 250 words that comes immediately AFTER the current text in the same invented story.\",\"text\":\"Beyond the little door lay a kitchen no bigger than Mara’s palm. Three chairs stood around its table. On the fourth sat a dark, dripping shape, its back to the door.\\n\\nLina caught Mara’s sleeve. “If we go in, do we shrink?”\\n\\nThe driver shook his head. “That isn’t an entrance. It’s a view.”\\n\\nIn the river, Gran knocked again, twice this time. The shape in the chair tilted its head toward the sound. Water ran from its cuffs onto the floorboards.\\n\\nMara lowered the bowl over the tiny door. The kitchen vanished. So did the smell of bread. A moment later, something struck the underside of the bowl hard enough to rattle it against the stone.\\n\\n“Three knocks to call us,” Kit said. “Two to warn us.”\\n\\n“Warn us of what?” Lina asked.\\n\\nMara looked across the water. Gran was holding up one finger. Then she closed her hand and pointed again, behind them.\\n\\nAt the far end of the bridge, the bus emerged from the mist. It rolled toward them without its headlights, slow enough that Mara could see empty seats through every window. At the wheel sat the dripping shape from the kitchen.\\n\\nThe driver seized the bowl and turned it upside down, trapping the soot-black key inside. “Now,” he said, “we count the places, not the people.”\\n\\nThe bus stopped. Its doors folded open. Three dry seats waited just behind the driver, each with a folded napkin on it.\\n\\nFrom beneath the bowl came a small, furious knock.\\n\\nKit took Mara’s hand again. Together with Lina, they stepped onto the bus, leaving the fourth place empty.\"}",
+  "output_sha256": "9ef9cf2b97d9ce22c048c511caa3bf02d4ad867016faabc3ae352336ed289885",
+  "finish_reason": "stop",
+  "refusal": null,
+  "returned_model": "gpt-6-sol",
+  "usage": {
+    "prompt_tokens": 402,
+    "completion_tokens": 465,
+    "total_tokens": 867,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 44,
+      "audio_tokens": 0,
+      "accepted_prediction_tokens": 0,
+      "rejected_prediction_tokens": 0
+    }
+  },
+  "format": {
+    "json_object": true,
+    "rule_unchanged": true,
+    "passage_is_string": true,
+    "passage_sha256": "8a1f85342933167e3d3299a2e7f598658d01e4981efbd8c6aa86e0af96b927cd",
+    "passage_words": 270
+  },
+  "finished_at": "2026-09-23T00:16:28.036838+00:00",
+  "latency_seconds": 8.0003,
+  "usage_cost_upper_estimate_usd": 0.005454,
+  "stream_status": "active",
+  "budget": {
+    "usage_cost_upper_estimate_usd": 0.8391231,
+    "uncertain_cost_reserve_usd": 0.0,
+    "in_flight_reserve_usd": 0.317516,
+    "limit_usd": 5.0
+  }
+}

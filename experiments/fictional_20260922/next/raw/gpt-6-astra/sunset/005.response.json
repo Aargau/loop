@@ -1,0 +1,50 @@
+{
+  "model": "gpt-6-astra",
+  "seed": "sunset",
+  "hop": 5,
+  "http_status": 200,
+  "response_body": "{\n  \"id\": \"chatcmpl-ER4uWHxULbMNTvv9Ur89agAsw6AkO\",\n  \"object\": \"chat.completion\",\n  \"created\": 1790122440,\n  \"model\": \"gpt-6-astra\",\n  \"choices\": [\n    {\n      \"index\": 0,\n      \"message\": {\n        \"role\": \"assistant\",\n        \"content\": \"{\\n  \\\"rule\\\": \\\"Return this JSON object with the rule field unchanged and, in the text field, an original fictional passage of about 250 words that comes immediately AFTER the current text in the same invented story.\\\",\\n  \\\"text\\\": \\\"Three knocks. A pause. Then two.\\\\n\\\\nElias’s signal when he came home too late and hoped she would open the kitchen door without waking their father.\\\\n\\\\nAcross the river, the man on the bank lifted his head.\\\\n\\\\n“Don’t answer either of them,” the ferryman said.\\\\n\\\\nThe oar stood upright in the mirror. Its iron tip had passed through the glass without leaving a crack. Mara pulled. Something below pulled back.\\\\n\\\\n“What did you bring me to?”\\\\n\\\\nHe watched the place where the blade disappeared.\\\\n\\\\n“I only take people across.”\\\\n\\\\n“You haven’t taken me anywhere.”\\\\n\\\\nAt that, he looked ashamed.\\\\n\\\\nWater began to gather around her boots. Not river water: this was warm, carrying wood ash and a pale curl of onion skin. The smell caught her harder than fear. Her father’s kitchen, the night of the flood. Elias standing on the table because he could not swim.\\\\n\\\\nShe had forgotten the onion skins.\\\\n\\\\nNo. She had spent twenty years forgetting them.\\\\n\\\\nThe knocking came again.\\\\n\\\\nMara let go of the oar. It slipped downward, slowly, until the handle vanished through the ceiling in the glass.\\\\n\\\\nOn the bank, Elias opened his mouth. The voice came from beneath the boat.\\\\n\\\\n“You said you’d come back.”\\\\n\\\\n“I did.”\\\\n\\\\nThe ferryman reached for her, too late to stop the answer.\\\\n\\\\nThe mirror tilted. Beneath its reflected beams, a table came into view, then a boy’s bare feet planted among the supper plates.\\\\n\\\\nMara gripped the gunwale.\\\\n\\\\nFrom somewhere behind the boy, her own young voice called, “Leave him. We can still get out.”\\\"\\n}\",\n        \"refusal\": null,\n        \"annotations\": []\n      },\n      \"finish_reason\": \"stop\"\n    }\n  ],\n  \"usage\": {\n    \"prompt_tokens\": 434,\n    \"completion_tokens\": 429,\n    \"total_tokens\": 863,\n    \"prompt_tokens_details\": {\n      \"cached_tokens\": 0,\n      \"cache_write_tokens\": 0,\n      \"audio_tokens\": 0\n    },\n    \"completion_tokens_details\": {\n      \"reasoning_tokens\": 0,\n      \"audio_tokens\": 0,\n      \"accepted_prediction_tokens\": 0,\n      \"rejected_prediction_tokens\": 0\n    }\n  },\n  \"service_tier\": \"default\",\n  \"system_fingerprint\": null\n}\n",
+  "response_headers": {
+    "Date": "Wed, 23 Sep 2026 00:14:15 GMT",
+    "openai-processing-ms": "15315",
+    "x-request-id": "req_5ed422ae91244dd7b11570da1ddc9a9f"
+  },
+  "output": "{\n  \"rule\": \"Return this JSON object with the rule field unchanged and, in the text field, an original fictional passage of about 250 words that comes immediately AFTER the current text in the same invented story.\",\n  \"text\": \"Three knocks. A pause. Then two.\\n\\nElias’s signal when he came home too late and hoped she would open the kitchen door without waking their father.\\n\\nAcross the river, the man on the bank lifted his head.\\n\\n“Don’t answer either of them,” the ferryman said.\\n\\nThe oar stood upright in the mirror. Its iron tip had passed through the glass without leaving a crack. Mara pulled. Something below pulled back.\\n\\n“What did you bring me to?”\\n\\nHe watched the place where the blade disappeared.\\n\\n“I only take people across.”\\n\\n“You haven’t taken me anywhere.”\\n\\nAt that, he looked ashamed.\\n\\nWater began to gather around her boots. Not river water: this was warm, carrying wood ash and a pale curl of onion skin. The smell caught her harder than fear. Her father’s kitchen, the night of the flood. Elias standing on the table because he could not swim.\\n\\nShe had forgotten the onion skins.\\n\\nNo. She had spent twenty years forgetting them.\\n\\nThe knocking came again.\\n\\nMara let go of the oar. It slipped downward, slowly, until the handle vanished through the ceiling in the glass.\\n\\nOn the bank, Elias opened his mouth. The voice came from beneath the boat.\\n\\n“You said you’d come back.”\\n\\n“I did.”\\n\\nThe ferryman reached for her, too late to stop the answer.\\n\\nThe mirror tilted. Beneath its reflected beams, a table came into view, then a boy’s bare feet planted among the supper plates.\\n\\nMara gripped the gunwale.\\n\\nFrom somewhere behind the boy, her own young voice called, “Leave him. We can still get out.”\"\n}",
+  "output_sha256": "80060276c213d66b46874a21f68dabae2eedddef1a63a832588bda2e91497adf",
+  "finish_reason": "stop",
+  "refusal": null,
+  "returned_model": "gpt-6-astra",
+  "usage": {
+    "prompt_tokens": 434,
+    "completion_tokens": 429,
+    "total_tokens": 863,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "audio_tokens": 0,
+      "accepted_prediction_tokens": 0,
+      "rejected_prediction_tokens": 0
+    }
+  },
+  "format": {
+    "json_object": true,
+    "rule_unchanged": true,
+    "passage_is_string": true,
+    "passage_sha256": "b7247b1d146487ddb31b42fda5a94262e275d1028f26e4efdf5f8b58a4f2e4d8",
+    "passage_words": 260
+  },
+  "finished_at": "2026-09-23T00:14:10.785458+00:00",
+  "latency_seconds": 15.4703,
+  "usage_cost_upper_estimate_usd": 0.02579,
+  "stream_status": "active",
+  "budget": {
+    "usage_cost_upper_estimate_usd": 0.2789237,
+    "uncertain_cost_reserve_usd": 0.0,
+    "in_flight_reserve_usd": 0.1383127,
+    "limit_usd": 5.0
+  }
+}

@@ -1,0 +1,50 @@
+{
+  "model": "gpt-6-sol",
+  "seed": "sunset",
+  "hop": 28,
+  "http_status": 200,
+  "response_body": "{\n  \"id\": \"chatcmpl-ER4wdi4zDaktYoe2mtyEfaC0zXQlA\",\n  \"object\": \"chat.completion\",\n  \"created\": 1790122571,\n  \"model\": \"gpt-6-sol\",\n  \"choices\": [\n    {\n      \"index\": 0,\n      \"message\": {\n        \"role\": \"assistant\",\n        \"content\": \"{\\\"rule\\\":\\\"Return this JSON object with the rule field unchanged and, in the text field, an original fictional passage of about 250 words that comes immediately AFTER the current text in the same invented story.\\\",\\\"text\\\":\\\"Mara pressed her lips together. Beyond the windows, the river ran black beneath the bridge, though the last light of evening still touched the rooftops behind them.\\\\n\\\\nThe spoon struck the bowl again.\\\\n\\\\nKit covered his ears. “Gran said we had to count what was on the table. Not what was underneath.”\\\\n\\\\n“There were only three this morning,” Lina said.\\\\n\\\\n“Then she was still setting places.”\\\\n\\\\nThe driver braked. The bus stopped halfway across the bridge, and its doors folded open on a narrow strip of pavement. Cold air swept in, smelling of wet stone and fresh bread.\\\\n\\\\nIn the glass of the doors, the yellow kitchen waited. Kit’s grandmother stood beside the table, one floury hand held out toward the cellar. She was not looking at the bowls. She was looking at the floor.\\\\n\\\\nMara followed her gaze. A pale line crossed the kitchen tiles and vanished beneath the cellar door. Flour. The trail had not led to the sixth bowl; it led away from it.\\\\n\\\\n“Everyone off,” Mara said.\\\\n\\\\nThe driver shook his head. “Not until she finishes.”\\\\n\\\\n“Then we’re leaving it unfinished.” Mara took Kit’s hand and stepped down onto the bridge. Lina followed. Behind them, the spoon began to stir, slowly at first, then fast enough to rattle against the bowl.\\\\n\\\\nThe bus doors closed. For a moment its windows showed the kitchen, with three empty chairs and three places still set. Then the bus pulled away without its driver. He stood on the pavement beside them, staring after it.\\\\n\\\\nFrom somewhere below the bridge came the sound of a cellar door opening.\\\"}\",\n        \"refusal\": null,\n        \"annotations\": []\n      },\n      \"finish_reason\": \"stop\"\n    }\n  ],\n  \"usage\": {\n    \"prompt_tokens\": 396,\n    \"completion_tokens\": 420,\n    \"total_tokens\": 816,\n    \"prompt_tokens_details\": {\n      \"cached_tokens\": 0,\n      \"cache_write_tokens\": 0,\n      \"audio_tokens\": 0\n    },\n    \"completion_tokens_details\": {\n      \"reasoning_tokens\": 14,\n      \"audio_tokens\": 0,\n      \"accepted_prediction_tokens\": 0,\n      \"rejected_prediction_tokens\": 0\n    }\n  },\n  \"service_tier\": \"default\",\n  \"system_fingerprint\": null\n}\n",
+  "response_headers": {
+    "Date": "Wed, 23 Sep 2026 00:16:17 GMT",
+    "openai-processing-ms": "6339",
+    "x-request-id": "req_6a3c7801d73043f1a067fb0fb1d48b82"
+  },
+  "output": "{\"rule\":\"Return this JSON object with the rule field unchanged and, in the text field, an original fictional passage of about 250 words that comes immediately AFTER the current text in the same invented story.\",\"text\":\"Mara pressed her lips together. Beyond the windows, the river ran black beneath the bridge, though the last light of evening still touched the rooftops behind them.\\n\\nThe spoon struck the bowl again.\\n\\nKit covered his ears. “Gran said we had to count what was on the table. Not what was underneath.”\\n\\n“There were only three this morning,” Lina said.\\n\\n“Then she was still setting places.”\\n\\nThe driver braked. The bus stopped halfway across the bridge, and its doors folded open on a narrow strip of pavement. Cold air swept in, smelling of wet stone and fresh bread.\\n\\nIn the glass of the doors, the yellow kitchen waited. Kit’s grandmother stood beside the table, one floury hand held out toward the cellar. She was not looking at the bowls. She was looking at the floor.\\n\\nMara followed her gaze. A pale line crossed the kitchen tiles and vanished beneath the cellar door. Flour. The trail had not led to the sixth bowl; it led away from it.\\n\\n“Everyone off,” Mara said.\\n\\nThe driver shook his head. “Not until she finishes.”\\n\\n“Then we’re leaving it unfinished.” Mara took Kit’s hand and stepped down onto the bridge. Lina followed. Behind them, the spoon began to stir, slowly at first, then fast enough to rattle against the bowl.\\n\\nThe bus doors closed. For a moment its windows showed the kitchen, with three empty chairs and three places still set. Then the bus pulled away without its driver. He stood on the pavement beside them, staring after it.\\n\\nFrom somewhere below the bridge came the sound of a cellar door opening.\"}",
+  "output_sha256": "b766c86ba06c3446011b093fbf7e9a5d9f14ab71abe74954ada741428e243a18",
+  "finish_reason": "stop",
+  "refusal": null,
+  "returned_model": "gpt-6-sol",
+  "usage": {
+    "prompt_tokens": 396,
+    "completion_tokens": 420,
+    "total_tokens": 816,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 14,
+      "audio_tokens": 0,
+      "accepted_prediction_tokens": 0,
+      "rejected_prediction_tokens": 0
+    }
+  },
+  "format": {
+    "json_object": true,
+    "rule_unchanged": true,
+    "passage_is_string": true,
+    "passage_sha256": "4b6f117a67fcedf5989da1d4a59246683fc237d5e200dc76350243ba149f891a",
+    "passage_words": 267
+  },
+  "finished_at": "2026-09-23T00:16:12.980447+00:00",
+  "latency_seconds": 6.4485,
+  "usage_cost_upper_estimate_usd": 0.004992,
+  "stream_status": "active",
+  "budget": {
+    "usage_cost_upper_estimate_usd": 0.7895931,
+    "uncertain_cost_reserve_usd": 0.0,
+    "in_flight_reserve_usd": 0.318222,
+    "limit_usd": 5.0
+  }
+}

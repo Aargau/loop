@@ -1,0 +1,50 @@
+{
+  "model": "gpt-6-luna",
+  "seed": "sunset",
+  "hop": 5,
+  "http_status": 200,
+  "response_body": "{\n  \"id\": \"chatcmpl-ER4tljrNY2doVYSwNoybuM8ld613b\",\n  \"object\": \"chat.completion\",\n  \"created\": 1790122393,\n  \"model\": \"gpt-6-luna\",\n  \"choices\": [\n    {\n      \"index\": 0,\n      \"message\": {\n        \"role\": \"assistant\",\n        \"content\": \"{\\\"rule\\\":\\\"Return this JSON object with the rule field unchanged and, in the text field, an original fictional passage of about 250 words that comes immediately BEFORE the current text in the same invented story.\\\",\\\"text\\\":\\\"For three weeks, Mara had meant to write. Each Sunday she set a sheet of paper on her desk and thought of something ordinary to say: the new tenant who practiced scales at midnight, the pear tree outside her window, the way autumn had turned the city pavements gold. Each Sunday the words seemed too small to send all the way to the valley, and she put the sheet away.\\\\n\\\\nHer grandmother had never been patient with letters. She preferred to telephone, though the line crackled so badly that half their conversations became a game of guessing. “You sound tired,” she would say, and Mara would insist she was fine. Then Grandmother would tell her about the garden, the church roof, or the fox that had begun stealing eggs from the neighbor’s henhouse. Before hanging up, she always asked when Mara was coming home.\\\\n\\\\n“Soon,” Mara said the last time. She had been hurrying to catch a train, one hand on her suitcase, the other holding the receiver. “When work lets up.”\\\\n\\\\nThere was a pause. In the background, Mara heard a clock ticking, steady and small.\\\\n\\\\n“Work has a way of letting up for other people,” Grandmother said.\\\\n\\\\nMara laughed, though she felt the rebuke. She promised to call the following week. Then the train doors chimed, and she said goodbye too quickly.\\\\n\\\\nOn Thursday morning, rain tapped at the kitchen window while Mara sorted invoices at the table. The telephone stayed silent. She had just begun to wonder whether she should call first when someone knocked at the door.\\\"}\",\n        \"refusal\": null,\n        \"annotations\": []\n      },\n      \"finish_reason\": \"stop\"\n    }\n  ],\n  \"usage\": {\n    \"prompt_tokens\": 384,\n    \"completion_tokens\": 498,\n    \"total_tokens\": 882,\n    \"prompt_tokens_details\": {\n      \"cached_tokens\": 0,\n      \"cache_write_tokens\": 0,\n      \"audio_tokens\": 0\n    },\n    \"completion_tokens_details\": {\n      \"reasoning_tokens\": 116,\n      \"audio_tokens\": 0,\n      \"accepted_prediction_tokens\": 0,\n      \"rejected_prediction_tokens\": 0\n    }\n  },\n  \"service_tier\": \"default\",\n  \"system_fingerprint\": null\n}\n",
+  "response_headers": {
+    "Date": "Wed, 23 Sep 2026 00:13:18 GMT",
+    "openai-processing-ms": "4434",
+    "x-request-id": "req_fec5e70341894ed1b102511bd4d55686"
+  },
+  "output": "{\"rule\":\"Return this JSON object with the rule field unchanged and, in the text field, an original fictional passage of about 250 words that comes immediately BEFORE the current text in the same invented story.\",\"text\":\"For three weeks, Mara had meant to write. Each Sunday she set a sheet of paper on her desk and thought of something ordinary to say: the new tenant who practiced scales at midnight, the pear tree outside her window, the way autumn had turned the city pavements gold. Each Sunday the words seemed too small to send all the way to the valley, and she put the sheet away.\\n\\nHer grandmother had never been patient with letters. She preferred to telephone, though the line crackled so badly that half their conversations became a game of guessing. “You sound tired,” she would say, and Mara would insist she was fine. Then Grandmother would tell her about the garden, the church roof, or the fox that had begun stealing eggs from the neighbor’s henhouse. Before hanging up, she always asked when Mara was coming home.\\n\\n“Soon,” Mara said the last time. She had been hurrying to catch a train, one hand on her suitcase, the other holding the receiver. “When work lets up.”\\n\\nThere was a pause. In the background, Mara heard a clock ticking, steady and small.\\n\\n“Work has a way of letting up for other people,” Grandmother said.\\n\\nMara laughed, though she felt the rebuke. She promised to call the following week. Then the train doors chimed, and she said goodbye too quickly.\\n\\nOn Thursday morning, rain tapped at the kitchen window while Mara sorted invoices at the table. The telephone stayed silent. She had just begun to wonder whether she should call first when someone knocked at the door.\"}",
+  "output_sha256": "04a50d25a2c9d06e4aafc20d85692e92f862658a478c1d70201d41d3ec0feeaf",
+  "finish_reason": "stop",
+  "refusal": null,
+  "returned_model": "gpt-6-luna",
+  "usage": {
+    "prompt_tokens": 384,
+    "completion_tokens": 498,
+    "total_tokens": 882,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 116,
+      "audio_tokens": 0,
+      "accepted_prediction_tokens": 0,
+      "rejected_prediction_tokens": 0
+    }
+  },
+  "format": {
+    "json_object": true,
+    "rule_unchanged": true,
+    "passage_is_string": true,
+    "passage_sha256": "cc9415ce650f2f9567258df38703756acf35f2550a0b5ff571ad175672a7da0f",
+    "passage_words": 261
+  },
+  "finished_at": "2026-09-23T00:13:13.230992+00:00",
+  "latency_seconds": 4.5619,
+  "usage_cost_upper_estimate_usd": 0.0002874,
+  "stream_status": "active",
+  "budget": {
+    "usage_cost_upper_estimate_usd": 0.0811159,
+    "uncertain_cost_reserve_usd": 0.0,
+    "in_flight_reserve_usd": 0.363706,
+    "limit_usd": 5.0
+  }
+}

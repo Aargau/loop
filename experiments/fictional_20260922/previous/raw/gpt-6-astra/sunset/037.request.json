@@ -1,0 +1,20 @@
+{
+  "started_at": "2026-09-23T00:21:01.778816+00:00",
+  "model": "gpt-6-astra",
+  "seed": "sunset",
+  "hop": 37,
+  "endpoint": "https://api.openai.com/v1/chat/completions",
+  "body": {
+    "model": "gpt-6-astra",
+    "messages": [
+      {
+        "role": "user",
+        "content": "{\n  \"rule\": \"Return this JSON object with the rule field unchanged and, in the text field, an original fictional passage of about 250 words that comes immediately BEFORE the current text in the same invented story.\",\n  \"text\": \"On Thursday the solicitor's letter arrived at Mara's flat, addressed to her by the name she had stopped using eleven years earlier. She put it beside the kettle and took it with her to work, where it remained unopened beneath her lunch.\\n\\nThere had been a form at the hospital. Perhaps she had written the old name there. She remembered the pen being attached to the counter by a chain too short to reach the space for her signature.\\n\\nThat evening she rang her brother. He was in a supermarket and asked her to wait while something went through the till.\\n\\n'It's probably about the house,' he said when she read him the first paragraph.\\n\\n'I know.'\\n\\nIn the background a woman asked whether he wanted the receipt.\\n\\nMara went over on Friday with milk, a packet of bin bags and the letter. Her key caught halfway round. She pulled the door towards her, as her mother had always told visitors to do, and the lock turned easily.\\n\\nThe hall smelled of furniture polish. On the telephone table lay a pair of glasses with one arm folded beneath them. She straightened the arm before setting down her bag.\\n\\nShe drank her tea standing up. There were biscuits in a tin, soft enough to bend, and she ate two while reading the calendar. A hair appointment was marked for Tuesday. She found the salon's number but decided someone must already have told them.\\n\\nUpstairs, she opened the wardrobe. The empty hangers at one end were hooked neatly through one another. She separated them and laid them on the bed.\"\n}"
+      }
+    ],
+    "max_completion_tokens": 4096,
+    "reasoning_effort": "low"
+  },
+  "state_sha256": "5256f7f360e11177ef77b7194e016122be7e385e1a0d932bfca49f9e99a14d52",
+  "reserved_cost_usd": 0.22731
+}

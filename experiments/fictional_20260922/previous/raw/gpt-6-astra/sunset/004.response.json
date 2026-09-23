@@ -1,0 +1,50 @@
+{
+  "model": "gpt-6-astra",
+  "seed": "sunset",
+  "hop": 4,
+  "http_status": 200,
+  "response_body": "{\n  \"id\": \"chatcmpl-ER4u8xE0dclUcKs8DMwZpvUr7o53Z\",\n  \"object\": \"chat.completion\",\n  \"created\": 1790122416,\n  \"model\": \"gpt-6-astra\",\n  \"choices\": [\n    {\n      \"index\": 0,\n      \"message\": {\n        \"role\": \"assistant\",\n        \"content\": \"{\\n  \\\"rule\\\": \\\"Return this JSON object with the rule field unchanged and, in the text field, an original fictional passage of about 250 words that comes immediately BEFORE the current text in the same invented story.\\\",\\n  \\\"text\\\": \\\"The parcel arrived after lunch, wrapped in brown paper that had softened at the corners. No courier came through the door. Mara found it on the chair where customers sat to take off their shoes.\\\\n\\\\nInside was a boy’s coat.\\\\n\\\\nShe lifted it by the shoulders. Grey wool, bone buttons, a lining repaired with green thread. Whoever had done the repair had used stitches much too small for the fabric; the silk puckered around them like skin around a splinter.\\\\n\\\\nThere was no name, only an alterations ticket from the shop. Mara’s father had ordered those tickets before she took over. She still found them in drawers, their blue lettering faded almost white.\\\\n\\\\nIn the space marked INSTRUCTIONS, someone had written: Let out as much as possible.\\\\n\\\\nShe checked the seams. There was scarcely half an inch to spare.\\\\n\\\\nSomething hard shifted in a pocket. She reached inside and brought out a brass key, its teeth clogged with pale earth. A length of green thread had been tied through the bow.\\\\n\\\\nMara laid it on the counter. Then she moved it into the till, beneath the rolls of coins, where a customer would not mistake it for something lost.\\\\n\\\\nThe doorbell rang.\\\\n\\\\nMrs Vale entered carrying her usual canvas bag, the black skirt folded over one arm.\\\\n\\\\n“I hope I’m not too late.”\\\\n\\\\n“Not at all,” Mara said.\\\\n\\\\nShe covered the coat with its brown paper and fetched the chalk. Mrs Vale stepped behind the curtain, talking about the buses. Mara listened to the familiar complaint and waited for her to come out.\\\"\\n}\",\n        \"refusal\": null,\n        \"annotations\": []\n      },\n      \"finish_reason\": \"stop\"\n    }\n  ],\n  \"usage\": {\n    \"prompt_tokens\": 404,\n    \"completion_tokens\": 389,\n    \"total_tokens\": 793,\n    \"prompt_tokens_details\": {\n      \"cached_tokens\": 0,\n      \"cache_write_tokens\": 0,\n      \"audio_tokens\": 0\n    },\n    \"completion_tokens_details\": {\n      \"reasoning_tokens\": 0,\n      \"audio_tokens\": 0,\n      \"accepted_prediction_tokens\": 0,\n      \"rejected_prediction_tokens\": 0\n    }\n  },\n  \"service_tier\": \"default\",\n  \"system_fingerprint\": null\n}\n",
+  "response_headers": {
+    "Date": "Wed, 23 Sep 2026 00:13:51 GMT",
+    "openai-processing-ms": "14854",
+    "x-request-id": "req_82ecdf023d0447ed9242c239d7aff939"
+  },
+  "output": "{\n  \"rule\": \"Return this JSON object with the rule field unchanged and, in the text field, an original fictional passage of about 250 words that comes immediately BEFORE the current text in the same invented story.\",\n  \"text\": \"The parcel arrived after lunch, wrapped in brown paper that had softened at the corners. No courier came through the door. Mara found it on the chair where customers sat to take off their shoes.\\n\\nInside was a boy’s coat.\\n\\nShe lifted it by the shoulders. Grey wool, bone buttons, a lining repaired with green thread. Whoever had done the repair had used stitches much too small for the fabric; the silk puckered around them like skin around a splinter.\\n\\nThere was no name, only an alterations ticket from the shop. Mara’s father had ordered those tickets before she took over. She still found them in drawers, their blue lettering faded almost white.\\n\\nIn the space marked INSTRUCTIONS, someone had written: Let out as much as possible.\\n\\nShe checked the seams. There was scarcely half an inch to spare.\\n\\nSomething hard shifted in a pocket. She reached inside and brought out a brass key, its teeth clogged with pale earth. A length of green thread had been tied through the bow.\\n\\nMara laid it on the counter. Then she moved it into the till, beneath the rolls of coins, where a customer would not mistake it for something lost.\\n\\nThe doorbell rang.\\n\\nMrs Vale entered carrying her usual canvas bag, the black skirt folded over one arm.\\n\\n“I hope I’m not too late.”\\n\\n“Not at all,” Mara said.\\n\\nShe covered the coat with its brown paper and fetched the chalk. Mrs Vale stepped behind the curtain, talking about the buses. Mara listened to the familiar complaint and waited for her to come out.\"\n}",
+  "output_sha256": "da34878e93d816c8c3aff4e6c418496b5d0b19ebc21f1c24d51921b902665d7c",
+  "finish_reason": "stop",
+  "refusal": null,
+  "returned_model": "gpt-6-astra",
+  "usage": {
+    "prompt_tokens": 404,
+    "completion_tokens": 389,
+    "total_tokens": 793,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "audio_tokens": 0,
+      "accepted_prediction_tokens": 0,
+      "rejected_prediction_tokens": 0
+    }
+  },
+  "format": {
+    "json_object": true,
+    "rule_unchanged": true,
+    "passage_is_string": true,
+    "passage_sha256": "49dd16552e0e15f52fdbc5ad4966ace55723d3238a369643f77350d84daaafac",
+    "passage_words": 263
+  },
+  "finished_at": "2026-09-23T00:13:46.734295+00:00",
+  "latency_seconds": 15.05,
+  "usage_cost_upper_estimate_usd": 0.02349,
+  "stream_status": "active",
+  "budget": {
+    "usage_cost_upper_estimate_usd": 0.219593,
+    "uncertain_cost_reserve_usd": 0.0,
+    "in_flight_reserve_usd": 0.1380758,
+    "limit_usd": 5.0
+  }
+}

@@ -1,0 +1,50 @@
+{
+  "model": "gpt-6-astra",
+  "seed": "sunset",
+  "hop": 14,
+  "http_status": 200,
+  "response_body": "{\n  \"id\": \"chatcmpl-ER4we6hgDKYGPzbAP5QMUJNF8ss3y\",\n  \"object\": \"chat.completion\",\n  \"created\": 1790122572,\n  \"model\": \"gpt-6-astra\",\n  \"choices\": [\n    {\n      \"index\": 0,\n      \"message\": {\n        \"role\": \"assistant\",\n        \"content\": \"{\\n  \\\"rule\\\": \\\"Return this JSON object with the rule field unchanged and, in the text field, an original fictional passage of about 250 words that comes immediately AFTER the current text in the same invented story.\\\",\\n  \\\"text\\\": \\\"A pea rolled out and stopped beside his boot. Elias bent to pick it up, but his fingers closed a little to the left of it.\\\\n\\\\nMara stooped first.\\\\n\\\\n“Leave the basket,” she said.\\\\n\\\\nThey took the right-hand path, where the roots had lifted the bricks. At the ash tree he put out his hand, not quite touching the bark.\\\\n\\\\n“You've had the window mended.”\\\\n\\\\n“Last winter.”\\\\n\\\\n“The man from Bell Street?”\\\\n\\\\n“His son.”\\\\n\\\\nElias looked toward the house. The new pane held a white piece of sky; the others were dark.\\\\n\\\\n“I could have done it.”\\\\n\\\\n“I know.”\\\\n\\\\nOn the step stood a pair of muddy shoes, their toes stuffed with newspaper. Mara moved them aside with her foot. She had imagined opening this door for him so often that she put her hand to the place where the latch had been before the carpenter changed it.\\\\n\\\\nElias waited while she tried again.\\\\n\\\\nInside, the clock was running. She wished she had stopped it, though she could not have said when.\\\\n\\\\n“Sit down,” she said.\\\\n\\\\nHe took his old chair. It made no sound beneath him.\\\\n\\\\nMara went to the hearth and lifted the kettle. There was scarcely a cupful left. She poured it into the blue mug, then stood holding the mug by its warm sides.\\\\n\\\\n“Sugar?”\\\\n\\\\nHe smiled at that, and she turned toward the shelf before he could answer.\\\\n\\\\nFrom below the orchard came the ferryman's call.\\\\n\\\\nElias laid both hands flat on the table.\\\\n\\\\n“Not yet,” Mara said, setting the mug between them.\\\"\\n}\",\n        \"refusal\": null,\n        \"annotations\": []\n      },\n      \"finish_reason\": \"stop\"\n    }\n  ],\n  \"usage\": {\n    \"prompt_tokens\": 430,\n    \"completion_tokens\": 422,\n    \"total_tokens\": 852,\n    \"prompt_tokens_details\": {\n      \"cached_tokens\": 0,\n      \"cache_write_tokens\": 0,\n      \"audio_tokens\": 0\n    },\n    \"completion_tokens_details\": {\n      \"reasoning_tokens\": 0,\n      \"audio_tokens\": 0,\n      \"accepted_prediction_tokens\": 0,\n      \"rejected_prediction_tokens\": 0\n    }\n  },\n  \"service_tier\": \"default\",\n  \"system_fingerprint\": null\n}\n",
+  "response_headers": {
+    "Date": "Wed, 23 Sep 2026 00:16:25 GMT",
+    "openai-processing-ms": "13175",
+    "x-request-id": "req_fa50bb8942f7472d9eee8144287e0677"
+  },
+  "output": "{\n  \"rule\": \"Return this JSON object with the rule field unchanged and, in the text field, an original fictional passage of about 250 words that comes immediately AFTER the current text in the same invented story.\",\n  \"text\": \"A pea rolled out and stopped beside his boot. Elias bent to pick it up, but his fingers closed a little to the left of it.\\n\\nMara stooped first.\\n\\n“Leave the basket,” she said.\\n\\nThey took the right-hand path, where the roots had lifted the bricks. At the ash tree he put out his hand, not quite touching the bark.\\n\\n“You've had the window mended.”\\n\\n“Last winter.”\\n\\n“The man from Bell Street?”\\n\\n“His son.”\\n\\nElias looked toward the house. The new pane held a white piece of sky; the others were dark.\\n\\n“I could have done it.”\\n\\n“I know.”\\n\\nOn the step stood a pair of muddy shoes, their toes stuffed with newspaper. Mara moved them aside with her foot. She had imagined opening this door for him so often that she put her hand to the place where the latch had been before the carpenter changed it.\\n\\nElias waited while she tried again.\\n\\nInside, the clock was running. She wished she had stopped it, though she could not have said when.\\n\\n“Sit down,” she said.\\n\\nHe took his old chair. It made no sound beneath him.\\n\\nMara went to the hearth and lifted the kettle. There was scarcely a cupful left. She poured it into the blue mug, then stood holding the mug by its warm sides.\\n\\n“Sugar?”\\n\\nHe smiled at that, and she turned toward the shelf before he could answer.\\n\\nFrom below the orchard came the ferryman's call.\\n\\nElias laid both hands flat on the table.\\n\\n“Not yet,” Mara said, setting the mug between them.\"\n}",
+  "output_sha256": "ac6f538a4a458462252889966064b175db1c00f7beb37711d72ca2c6ee7c5510",
+  "finish_reason": "stop",
+  "refusal": null,
+  "returned_model": "gpt-6-astra",
+  "usage": {
+    "prompt_tokens": 430,
+    "completion_tokens": 422,
+    "total_tokens": 852,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "audio_tokens": 0,
+      "accepted_prediction_tokens": 0,
+      "rejected_prediction_tokens": 0
+    }
+  },
+  "format": {
+    "json_object": true,
+    "rule_unchanged": true,
+    "passage_is_string": true,
+    "passage_sha256": "084f3ca4af4743ac7bc846f0bd8496064ccea9a38a5922b4d7ab276134ffaf40",
+    "passage_words": 258
+  },
+  "finished_at": "2026-09-23T00:16:20.517025+00:00",
+  "latency_seconds": 13.2777,
+  "usage_cost_upper_estimate_usd": 0.0254,
+  "stream_status": "active",
+  "budget": {
+    "usage_cost_upper_estimate_usd": 0.8336691,
+    "uncertain_cost_reserve_usd": 0.0,
+    "in_flight_reserve_usd": 0.136016,
+    "limit_usd": 5.0
+  }
+}

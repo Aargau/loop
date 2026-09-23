@@ -1,0 +1,50 @@
+{
+  "model": "gpt-6-astra",
+  "seed": "sunset",
+  "hop": 15,
+  "http_status": 200,
+  "response_body": "{\n  \"id\": \"chatcmpl-ER4wrvVXUDeJpKe0iqgcnDB4sT7Xv\",\n  \"object\": \"chat.completion\",\n  \"created\": 1790122585,\n  \"model\": \"gpt-6-astra\",\n  \"choices\": [\n    {\n      \"index\": 0,\n      \"message\": {\n        \"role\": \"assistant\",\n        \"content\": \"{\\n  \\\"rule\\\": \\\"Return this JSON object with the rule field unchanged and, in the text field, an original fictional passage of about 250 words that comes immediately AFTER the current text in the same invented story.\\\",\\n  \\\"text\\\": \\\"The call came once more, then ceased. In the quiet after it, she heard water dripping from the kettle onto the hearth.\\\\n\\\\nElias turned his hands over.\\\\n\\\\n“Have you kept the garden?”\\\\n\\\\n“Most of it.”\\\\n\\\\n“The beans?”\\\\n\\\\n“They wouldn't climb this year.”\\\\n\\\\nHe nodded, as though he might go out after tea and see what could be done.\\\\n\\\\nMara fetched the sugar bowl. The spoon lay buried in it, its handle showing. She dug it free and put two spoonfuls into his mug.\\\\n\\\\n“One,” he said.\\\\n\\\\n“You used to take two.”\\\\n\\\\n“Did I?”\\\\n\\\\nShe sat opposite him. Beyond his shoulder, the little cupboard hung crookedly. For seven years she had meant to ask someone to straighten it.\\\\n\\\\n“Your coat,” she said. “You'll be warm.”\\\\n\\\\nHe looked down at the buttons but made no move to undo them.\\\\n\\\\nOn the table between his wrists was a pale crescent, left by a hot saucepan long ago. Mara covered it with the sugar bowl.\\\\n\\\\n“I was angry,” she said.\\\\n\\\\n“The table was new.”\\\\n\\\\n“Not about the table.”\\\\n\\\\nHe watched her. Outside, someone dragged the basket across the bricks. A child called a question, and another child answered.\\\\n\\\\n“You should drink,” she said.\\\\n\\\\nElias bent toward the mug. For a moment she thought he was smelling the tea.\\\\n\\\\n“It's good to be here.”\\\\n\\\\nShe reached across and took his sleeve between finger and thumb. The cloth was dry, rough at the seam. She had expected something else, though afterward she could never remember what.\\\\n\\\\n“There's bread,” she said.\\\\n\\\\nHe glanced toward the window.\\\\n\\\\n“I'll cut it thin.”\\\"\\n}\",\n        \"refusal\": null,\n        \"annotations\": []\n      },\n      \"finish_reason\": \"stop\"\n    }\n  ],\n  \"usage\": {\n    \"prompt_tokens\": 425,\n    \"completion_tokens\": 446,\n    \"total_tokens\": 871,\n    \"prompt_tokens_details\": {\n      \"cached_tokens\": 0,\n      \"cache_write_tokens\": 0,\n      \"audio_tokens\": 0\n    },\n    \"completion_tokens_details\": {\n      \"reasoning_tokens\": 0,\n      \"audio_tokens\": 0,\n      \"accepted_prediction_tokens\": 0,\n      \"rejected_prediction_tokens\": 0\n    }\n  },\n  \"service_tier\": \"default\",\n  \"system_fingerprint\": null\n}\n",
+  "response_headers": {
+    "Date": "Wed, 23 Sep 2026 00:16:43 GMT",
+    "openai-processing-ms": "17635",
+    "x-request-id": "req_4b528327e80649bf9c21988ebe441000"
+  },
+  "output": "{\n  \"rule\": \"Return this JSON object with the rule field unchanged and, in the text field, an original fictional passage of about 250 words that comes immediately AFTER the current text in the same invented story.\",\n  \"text\": \"The call came once more, then ceased. In the quiet after it, she heard water dripping from the kettle onto the hearth.\\n\\nElias turned his hands over.\\n\\n“Have you kept the garden?”\\n\\n“Most of it.”\\n\\n“The beans?”\\n\\n“They wouldn't climb this year.”\\n\\nHe nodded, as though he might go out after tea and see what could be done.\\n\\nMara fetched the sugar bowl. The spoon lay buried in it, its handle showing. She dug it free and put two spoonfuls into his mug.\\n\\n“One,” he said.\\n\\n“You used to take two.”\\n\\n“Did I?”\\n\\nShe sat opposite him. Beyond his shoulder, the little cupboard hung crookedly. For seven years she had meant to ask someone to straighten it.\\n\\n“Your coat,” she said. “You'll be warm.”\\n\\nHe looked down at the buttons but made no move to undo them.\\n\\nOn the table between his wrists was a pale crescent, left by a hot saucepan long ago. Mara covered it with the sugar bowl.\\n\\n“I was angry,” she said.\\n\\n“The table was new.”\\n\\n“Not about the table.”\\n\\nHe watched her. Outside, someone dragged the basket across the bricks. A child called a question, and another child answered.\\n\\n“You should drink,” she said.\\n\\nElias bent toward the mug. For a moment she thought he was smelling the tea.\\n\\n“It's good to be here.”\\n\\nShe reached across and took his sleeve between finger and thumb. The cloth was dry, rough at the seam. She had expected something else, though afterward she could never remember what.\\n\\n“There's bread,” she said.\\n\\nHe glanced toward the window.\\n\\n“I'll cut it thin.”\"\n}",
+  "output_sha256": "04d5dd20f54740edcbaa58463bc7e487965e5138ecfcdc79e5f67cc2019e4239",
+  "finish_reason": "stop",
+  "refusal": null,
+  "returned_model": "gpt-6-astra",
+  "usage": {
+    "prompt_tokens": 425,
+    "completion_tokens": 446,
+    "total_tokens": 871,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "audio_tokens": 0,
+      "accepted_prediction_tokens": 0,
+      "rejected_prediction_tokens": 0
+    }
+  },
+  "format": {
+    "json_object": true,
+    "rule_unchanged": true,
+    "passage_is_string": true,
+    "passage_sha256": "3e75687457d2c6940bbf770f87ddb29c4f3915a2356dae5159ae520840abbd9d",
+    "passage_words": 263
+  },
+  "finished_at": "2026-09-23T00:16:38.389305+00:00",
+  "latency_seconds": 17.8602,
+  "usage_cost_upper_estimate_usd": 0.02655,
+  "stream_status": "active",
+  "budget": {
+    "usage_cost_upper_estimate_usd": 0.8847631,
+    "uncertain_cost_reserve_usd": 0.0,
+    "in_flight_reserve_usd": 0.135768,
+    "limit_usd": 5.0
+  }
+}

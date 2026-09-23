@@ -1,0 +1,50 @@
+{
+  "model": "gpt-6-luna",
+  "seed": "sunset",
+  "hop": 2,
+  "http_status": 200,
+  "response_body": "{\n  \"id\": \"chatcmpl-ER4tTdNh8nxuXyaKs7kYlLJHepber\",\n  \"object\": \"chat.completion\",\n  \"created\": 1790122375,\n  \"model\": \"gpt-6-luna\",\n  \"choices\": [\n    {\n      \"index\": 0,\n      \"message\": {\n        \"role\": \"assistant\",\n        \"content\": \"{\\\"rule\\\":\\\"Return this JSON object with the rule field unchanged and, in the text field, an original fictional passage of about 250 words that comes immediately BEFORE the current text in the same invented story.\\\",\\\"text\\\":\\\"The letter arrived three days after the funeral, delivered by a boy who said he’d found it tucked inside the station’s broken clock. Mara knew her grandmother’s handwriting at once: the narrow, slanting letters, the long tails on every y. The envelope was sealed with red wax, stamped with a fox.\\\\n\\\\nShe waited until the house was quiet before opening it. Inside lay a single sheet, folded twice. Grandmother had written only a few lines.\\\\n\\\\n“Go to the old station before sunset. In the field, find the stone that looks like a sleeping dog. Lift it. Take what is beneath. Don’t bring anyone.”\\\\n\\\\nMara read the message again, hoping the words might change. They didn’t. Outside, the valley was washed in the late summer light, and the hills stood blue against the sky. She folded the letter and slid it into her coat pocket.\\\\n\\\\nAll her life, Grandmother had kept secrets. She’d never explained why she sometimes woke from dreams calling out station names, or why she kept a faded railway timetable in her desk. When Mara asked, she would only say that the past was a train you couldn’t catch by running after it.\\\\n\\\\nNow the timetable was gone, and Grandmother was gone, too. The letter was all that remained of an answer.\\\\n\\\\nMara walked down the garden path, crossed the dry streambed, and entered the field. She searched among the stones until she spotted one half-buried in the grass, its rounded back and blunt nose unmistakable. The light was thinning. She knelt, pressed her fingers beneath the stone’s edge, and began to lift.\\\"}\",\n        \"refusal\": null,\n        \"annotations\": []\n      },\n      \"finish_reason\": \"stop\"\n    }\n  ],\n  \"usage\": {\n    \"prompt_tokens\": 398,\n    \"completion_tokens\": 518,\n    \"total_tokens\": 916,\n    \"prompt_tokens_details\": {\n      \"cached_tokens\": 0,\n      \"cache_write_tokens\": 0,\n      \"audio_tokens\": 0\n    },\n    \"completion_tokens_details\": {\n      \"reasoning_tokens\": 121,\n      \"audio_tokens\": 0,\n      \"accepted_prediction_tokens\": 0,\n      \"rejected_prediction_tokens\": 0\n    }\n  },\n  \"service_tier\": \"default\",\n  \"system_fingerprint\": null\n}\n",
+  "response_headers": {
+    "Date": "Wed, 23 Sep 2026 00:13:00 GMT",
+    "openai-processing-ms": "4861",
+    "x-request-id": "req_c548428e338b416f91ef2c2bfb2efb99"
+  },
+  "output": "{\"rule\":\"Return this JSON object with the rule field unchanged and, in the text field, an original fictional passage of about 250 words that comes immediately BEFORE the current text in the same invented story.\",\"text\":\"The letter arrived three days after the funeral, delivered by a boy who said he’d found it tucked inside the station’s broken clock. Mara knew her grandmother’s handwriting at once: the narrow, slanting letters, the long tails on every y. The envelope was sealed with red wax, stamped with a fox.\\n\\nShe waited until the house was quiet before opening it. Inside lay a single sheet, folded twice. Grandmother had written only a few lines.\\n\\n“Go to the old station before sunset. In the field, find the stone that looks like a sleeping dog. Lift it. Take what is beneath. Don’t bring anyone.”\\n\\nMara read the message again, hoping the words might change. They didn’t. Outside, the valley was washed in the late summer light, and the hills stood blue against the sky. She folded the letter and slid it into her coat pocket.\\n\\nAll her life, Grandmother had kept secrets. She’d never explained why she sometimes woke from dreams calling out station names, or why she kept a faded railway timetable in her desk. When Mara asked, she would only say that the past was a train you couldn’t catch by running after it.\\n\\nNow the timetable was gone, and Grandmother was gone, too. The letter was all that remained of an answer.\\n\\nMara walked down the garden path, crossed the dry streambed, and entered the field. She searched among the stones until she spotted one half-buried in the grass, its rounded back and blunt nose unmistakable. The light was thinning. She knelt, pressed her fingers beneath the stone’s edge, and began to lift.\"}",
+  "output_sha256": "6c27bfb811ba06251850f763e153e288237c815740fef290180f676925923d2c",
+  "finish_reason": "stop",
+  "refusal": null,
+  "returned_model": "gpt-6-luna",
+  "usage": {
+    "prompt_tokens": 398,
+    "completion_tokens": 518,
+    "total_tokens": 916,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 121,
+      "audio_tokens": 0,
+      "accepted_prediction_tokens": 0,
+      "rejected_prediction_tokens": 0
+    }
+  },
+  "format": {
+    "json_object": true,
+    "rule_unchanged": true,
+    "passage_is_string": true,
+    "passage_sha256": "ade702bd17f6f031d4df2a38e6034dbff5ece8fb8a6472db18244979148c2e5f",
+    "passage_words": 265
+  },
+  "finished_at": "2026-09-23T00:12:55.638524+00:00",
+  "latency_seconds": 5.2946,
+  "usage_cost_upper_estimate_usd": 0.0002988,
+  "stream_status": "active",
+  "budget": {
+    "usage_cost_upper_estimate_usd": 0.0181429,
+    "uncertain_cost_reserve_usd": 0.0,
+    "in_flight_reserve_usd": 0.348288,
+    "limit_usd": 5.0
+  }
+}

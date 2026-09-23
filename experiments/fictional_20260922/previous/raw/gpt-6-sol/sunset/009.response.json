@@ -1,0 +1,50 @@
+{
+  "model": "gpt-6-sol",
+  "seed": "sunset",
+  "hop": 9,
+  "http_status": 200,
+  "response_body": "{\n  \"id\": \"chatcmpl-ER4uJuHpfnjwWPwUBrbJnM2Ewa0me\",\n  \"object\": \"chat.completion\",\n  \"created\": 1790122427,\n  \"model\": \"gpt-6-sol\",\n  \"choices\": [\n    {\n      \"index\": 0,\n      \"message\": {\n        \"role\": \"assistant\",\n        \"content\": \"{\\n  \\\"rule\\\": \\\"Return this JSON object with the rule field unchanged and, in the text field, an original fictional passage of about 250 words that comes immediately BEFORE the current text in the same invented story.\\\",\\n  \\\"text\\\": \\\"By Thursday, Mara had learned which floorboards complained and how long the kitchen tap needed to run before the water came through cold. She made tea in her mother’s chipped blue mug, though there were six unchipped ones in the cupboard, and drank it standing at the window. Bristle waited by the back door with his lead in his mouth.\\\\n\\\\nOutside, she found the secateurs hanging from a nail in the shed. Their handles had been wrapped with green tape, the ends tucked so neatly that none had come loose. Mara carried them to the path beyond the shed and began cutting back the nettles. Bristle nosed about among the fallen stems, then retreated to a patch of sun when she told him to leave them alone.\\\\n\\\\nAt midday, her phone rang. The letting agent wanted to know whether the flat would be empty by the weekend. Mara looked at the muddy knees of her trousers and said she thought so. There was one box left, mostly books and the lamp from beside her bed. She had meant to go back for it herself, but had not decided when.\\\\n\\\\nIn the afternoon she took the post from the hall table and sorted the envelopes into piles. She opened two addressed to her and set the others on the mantel. Then she put the secateurs away, rinsed Bristle’s water bowl and checked that the garden gate was shut.\\\\n\\\\nBefore bed, she found the smaller house key in her coat pocket. She placed it beside the telephone, where she would see it in the morning.\\\"\\n}\",\n        \"refusal\": null,\n        \"annotations\": []\n      },\n      \"finish_reason\": \"stop\"\n    }\n  ],\n  \"usage\": {\n    \"prompt_tokens\": 360,\n    \"completion_tokens\": 410,\n    \"total_tokens\": 770,\n    \"prompt_tokens_details\": {\n      \"cached_tokens\": 0,\n      \"cache_write_tokens\": 0,\n      \"audio_tokens\": 0\n    },\n    \"completion_tokens_details\": {\n      \"reasoning_tokens\": 37,\n      \"audio_tokens\": 0,\n      \"accepted_prediction_tokens\": 0,\n      \"rejected_prediction_tokens\": 0\n    }\n  },\n  \"service_tier\": \"default\",\n  \"system_fingerprint\": null\n}\n",
+  "response_headers": {
+    "Date": "Wed, 23 Sep 2026 00:13:54 GMT",
+    "openai-processing-ms": "7086",
+    "x-request-id": "req_b03be25a2e71437587fa43ed1d1f7320"
+  },
+  "output": "{\n  \"rule\": \"Return this JSON object with the rule field unchanged and, in the text field, an original fictional passage of about 250 words that comes immediately BEFORE the current text in the same invented story.\",\n  \"text\": \"By Thursday, Mara had learned which floorboards complained and how long the kitchen tap needed to run before the water came through cold. She made tea in her mother’s chipped blue mug, though there were six unchipped ones in the cupboard, and drank it standing at the window. Bristle waited by the back door with his lead in his mouth.\\n\\nOutside, she found the secateurs hanging from a nail in the shed. Their handles had been wrapped with green tape, the ends tucked so neatly that none had come loose. Mara carried them to the path beyond the shed and began cutting back the nettles. Bristle nosed about among the fallen stems, then retreated to a patch of sun when she told him to leave them alone.\\n\\nAt midday, her phone rang. The letting agent wanted to know whether the flat would be empty by the weekend. Mara looked at the muddy knees of her trousers and said she thought so. There was one box left, mostly books and the lamp from beside her bed. She had meant to go back for it herself, but had not decided when.\\n\\nIn the afternoon she took the post from the hall table and sorted the envelopes into piles. She opened two addressed to her and set the others on the mantel. Then she put the secateurs away, rinsed Bristle’s water bowl and checked that the garden gate was shut.\\n\\nBefore bed, she found the smaller house key in her coat pocket. She placed it beside the telephone, where she would see it in the morning.\"\n}",
+  "output_sha256": "adcf5e7242cbe48fe61161347c27ee6e05c4d204d9df493ce33bf80352c369b5",
+  "finish_reason": "stop",
+  "refusal": null,
+  "returned_model": "gpt-6-sol",
+  "usage": {
+    "prompt_tokens": 360,
+    "completion_tokens": 410,
+    "total_tokens": 770,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 37,
+      "audio_tokens": 0,
+      "accepted_prediction_tokens": 0,
+      "rejected_prediction_tokens": 0
+    }
+  },
+  "format": {
+    "json_object": true,
+    "rule_unchanged": true,
+    "passage_is_string": true,
+    "passage_sha256": "30e555fcdd7d703aa03424b9c6d0d2b6385ec240d26b99781f47c736d46aa619",
+    "passage_words": 263
+  },
+  "finished_at": "2026-09-23T00:13:49.261840+00:00",
+  "latency_seconds": 7.2839,
+  "usage_cost_upper_estimate_usd": 0.00482,
+  "stream_status": "active",
+  "budget": {
+    "usage_cost_upper_estimate_usd": 0.2247138,
+    "uncertain_cost_reserve_usd": 0.0,
+    "in_flight_reserve_usd": 0.3202981,
+    "limit_usd": 5.0
+  }
+}

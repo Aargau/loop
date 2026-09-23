@@ -1,0 +1,50 @@
+{
+  "model": "gpt-6-astra",
+  "seed": "sunset",
+  "hop": 10,
+  "http_status": 200,
+  "response_body": "{\n  \"id\": \"chatcmpl-ER4vXfpdRntHgSje6m47MtnLM9n7L\",\n  \"object\": \"chat.completion\",\n  \"created\": 1790122503,\n  \"model\": \"gpt-6-astra\",\n  \"choices\": [\n    {\n      \"index\": 0,\n      \"message\": {\n        \"role\": \"assistant\",\n        \"content\": \"{\\n  \\\"rule\\\": \\\"Return this JSON object with the rule field unchanged and, in the text field, an original fictional passage of about 250 words that comes immediately BEFORE the current text in the same invented story.\\\",\\n  \\\"text\\\": \\\"On Monday morning, Mara found the shop key in the pocket of the coat she had worn to the hospital. A paper parking ticket came out with it. She put the ticket back.\\\\n\\\\nThe lock needed lifting as she turned it. Her father had mentioned this on the telephone, along with the price of electricity and a customer who kept losing weight after his trousers were finished. She had told him to get someone to look at the door.\\\\n\\\\nInside, nothing smelled shut up. There was wool, machine oil, the faint dampness from the wall behind the fitting room. She took off her coat and hung it on the lower hook.\\\\n\\\\nThe first customer wanted a zip replaced. He laid his jacket on the counter and kept one hand on it while she searched for a ticket book.\\\\n\\\\n‘Will you be doing the work yourself?’\\\\n\\\\n‘Yes.’\\\\n\\\\nHe released the jacket. She could not tell whether she had reassured him.\\\\n\\\\nAt lunchtime she bought a sandwich and ate it standing beside the cutting table. There were three pairs of scissors in the drawer, each wrapped at one handle with a different colour of thread. She tried them on a scrap of lining before choosing the largest.\\\\n\\\\nOn Tuesday, she moved the stool closer to the machine. Her knees no longer struck the underside of the table, but the pedal sat too far away. She knelt and pulled it towards her, disturbing a small grey drift of lint.\\\\n\\\\nUnder the pedal lay a shirt button. She put it in the saucer with the others.\\\"\\n}\",\n        \"refusal\": null,\n        \"annotations\": []\n      },\n      \"finish_reason\": \"stop\"\n    }\n  ],\n  \"usage\": {\n    \"prompt_tokens\": 384,\n    \"completion_tokens\": 373,\n    \"total_tokens\": 757,\n    \"prompt_tokens_details\": {\n      \"cached_tokens\": 0,\n      \"cache_write_tokens\": 0,\n      \"audio_tokens\": 0\n    },\n    \"completion_tokens_details\": {\n      \"reasoning_tokens\": 0,\n      \"audio_tokens\": 0,\n      \"accepted_prediction_tokens\": 0,\n      \"rejected_prediction_tokens\": 0\n    }\n  },\n  \"service_tier\": \"default\",\n  \"system_fingerprint\": null\n}\n",
+  "response_headers": {
+    "Date": "Wed, 23 Sep 2026 00:15:16 GMT",
+    "openai-processing-ms": "12760",
+    "x-request-id": "req_9a7e76e591544464b679b74c9708e694"
+  },
+  "output": "{\n  \"rule\": \"Return this JSON object with the rule field unchanged and, in the text field, an original fictional passage of about 250 words that comes immediately BEFORE the current text in the same invented story.\",\n  \"text\": \"On Monday morning, Mara found the shop key in the pocket of the coat she had worn to the hospital. A paper parking ticket came out with it. She put the ticket back.\\n\\nThe lock needed lifting as she turned it. Her father had mentioned this on the telephone, along with the price of electricity and a customer who kept losing weight after his trousers were finished. She had told him to get someone to look at the door.\\n\\nInside, nothing smelled shut up. There was wool, machine oil, the faint dampness from the wall behind the fitting room. She took off her coat and hung it on the lower hook.\\n\\nThe first customer wanted a zip replaced. He laid his jacket on the counter and kept one hand on it while she searched for a ticket book.\\n\\n‘Will you be doing the work yourself?’\\n\\n‘Yes.’\\n\\nHe released the jacket. She could not tell whether she had reassured him.\\n\\nAt lunchtime she bought a sandwich and ate it standing beside the cutting table. There were three pairs of scissors in the drawer, each wrapped at one handle with a different colour of thread. She tried them on a scrap of lining before choosing the largest.\\n\\nOn Tuesday, she moved the stool closer to the machine. Her knees no longer struck the underside of the table, but the pedal sat too far away. She knelt and pulled it towards her, disturbing a small grey drift of lint.\\n\\nUnder the pedal lay a shirt button. She put it in the saucer with the others.\"\n}",
+  "output_sha256": "0510f481b5bcd4b847c2a29dc799e77ecc9efa9914fdc26a48bc4d38ffdc9053",
+  "finish_reason": "stop",
+  "refusal": null,
+  "returned_model": "gpt-6-astra",
+  "usage": {
+    "prompt_tokens": 384,
+    "completion_tokens": 373,
+    "total_tokens": 757,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "audio_tokens": 0,
+      "accepted_prediction_tokens": 0,
+      "rejected_prediction_tokens": 0
+    }
+  },
+  "format": {
+    "json_object": true,
+    "rule_unchanged": true,
+    "passage_is_string": true,
+    "passage_sha256": "c5400fac250d1ea99889a5411d5e18dd439e9c5609ddc8e841ed1b00faf1a779",
+    "passage_words": 262
+  },
+  "finished_at": "2026-09-23T00:15:11.169929+00:00",
+  "latency_seconds": 12.9224,
+  "usage_cost_upper_estimate_usd": 0.02249,
+  "stream_status": "active",
+  "budget": {
+    "usage_cost_upper_estimate_usd": 0.5592892,
+    "uncertain_cost_reserve_usd": 0.0,
+    "in_flight_reserve_usd": 0.138319,
+    "limit_usd": 5.0
+  }
+}

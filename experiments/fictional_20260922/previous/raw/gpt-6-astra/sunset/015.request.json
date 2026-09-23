@@ -1,0 +1,20 @@
+{
+  "started_at": "2026-09-23T00:16:01.783044+00:00",
+  "model": "gpt-6-astra",
+  "seed": "sunset",
+  "hop": 15,
+  "endpoint": "https://api.openai.com/v1/chat/completions",
+  "body": {
+    "model": "gpt-6-astra",
+    "messages": [
+      {
+        "role": "user",
+        "content": "{\n  \"rule\": \"Return this JSON object with the rule field unchanged and, in the text field, an original fictional passage of about 250 words that comes immediately BEFORE the current text in the same invented story.\",\n  \"text\": \"The nurse brought the bag from a cupboard behind the desk. She checked the name on a label tied to one handle, then asked Mara to sign at the bottom of a form.\\n\\n‘Just to say you’ve received his belongings.’\\n\\nThe pen was fastened to the counter with a cord. Mara moved the form nearer because the cord would not reach the place where she had set it down.\\n\\nHis watch and some coins were in a brown envelope. The nurse tipped them out so that Mara could check them. There were two keys as well, joined by a ring with a little shoe hanging from it.\\n\\n‘Those are for the shop,’ Mara said.\\n\\nThe nurse waited while she put them in her handbag.\\n\\nOutside, an ambulance stood with its back doors open. A man in a green uniform was eating something from foil. Mara walked past him to the bus stop, where she discovered she had missed the direct bus by four minutes.\\n\\nShe could have called a taxi. Instead she sat beneath the timetable and tried her brother again. This time she left a message saying she was going to their father’s house. She did not mention the bag.\\n\\nWhen the bus came, she had to put it down to find her fare. The driver lowered the step, although she had not asked him to.\\n\\nAt her father’s stop she rang the bell too late. The driver let her off beyond the crossing, beside the parade of shops. She kept her eyes on the pavement as she passed his window.\"\n}"
+      }
+    ],
+    "max_completion_tokens": 4096,
+    "reasoning_effort": "low"
+  },
+  "state_sha256": "e54b0b05fbedc22930f17c1e5e82ee39896a815f7cac8d08727d41a6dbe283b9",
+  "reserved_cost_usd": 0.22617
+}

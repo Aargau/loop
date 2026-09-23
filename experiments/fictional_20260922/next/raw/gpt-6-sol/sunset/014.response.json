@@ -1,0 +1,50 @@
+{
+  "model": "gpt-6-sol",
+  "seed": "sunset",
+  "hop": 14,
+  "http_status": 200,
+  "response_body": "{\n  \"id\": \"chatcmpl-ER4v3dYceffFj0E6Dn4DaJFJCxyFB\",\n  \"object\": \"chat.completion\",\n  \"created\": 1790122473,\n  \"model\": \"gpt-6-sol\",\n  \"choices\": [\n    {\n      \"index\": 0,\n      \"message\": {\n        \"role\": \"assistant\",\n        \"content\": \"{\\\"rule\\\":\\\"Return this JSON object with the rule field unchanged and, in the text field, an original fictional passage of about 250 words that comes immediately AFTER the current text in the same invented story.\\\",\\\"text\\\":\\\"Mara lowered the lantern. Its light found a girl in muddy stockings, her fist wound tight with thread. She had Mara’s dark eyes and a face Mara knew so well that she could not have said where she had seen it last.\\\\n\\\\n“You stayed,” Mara said.\\\\n\\\\nThe girl shook her head. “You sent me to fetch him.”\\\\n\\\\nThe boy’s hand slipped from Mara’s. He stared at the girl, then at the wet floor beneath his feet. No puddle had formed where the drops fell. Each one vanished between the boards.\\\\n\\\\nThe woman set the green cup on the table. “There’s a stair behind those pipes,” she said. “It leads to the well. I went down after the children. When I came back, you were waiting here with the door locked.”\\\\n\\\\nMara looked at the key in her hand. Its teeth were packed with earth.\\\\n\\\\n“I don’t remember that.”\\\\n\\\\n“I know.” The woman pushed back the coat’s blue hood. A pale scar crossed her forehead, just where Mara’s hair began. “You asked me not to let you.”\\\\n\\\\nFrom beyond the pipes came the creak of a stair taking someone’s weight. The girl jerked the thread twice. The loop around the boy’s wrist loosened, and he ran to her. Together they backed away from the dark.\\\\n\\\\nMara wanted to pull them into the kitchen. Instead, she held the lantern through the little door, lighting the narrow stair behind them.\\\\n\\\\nA voice rose from below, patient and familiar. It called each child by name. Then it called Mara’s.\\\"}\",\n        \"refusal\": null,\n        \"annotations\": []\n      },\n      \"finish_reason\": \"stop\"\n    }\n  ],\n  \"usage\": {\n    \"prompt_tokens\": 397,\n    \"completion_tokens\": 428,\n    \"total_tokens\": 825,\n    \"prompt_tokens_details\": {\n      \"cached_tokens\": 0,\n      \"cache_write_tokens\": 0,\n      \"audio_tokens\": 0\n    },\n    \"completion_tokens_details\": {\n      \"reasoning_tokens\": 34,\n      \"audio_tokens\": 0,\n      \"accepted_prediction_tokens\": 0,\n      \"rejected_prediction_tokens\": 0\n    }\n  },\n  \"service_tier\": \"default\",\n  \"system_fingerprint\": null\n}\n",
+  "response_headers": {
+    "Date": "Wed, 23 Sep 2026 00:14:39 GMT",
+    "openai-processing-ms": "7071",
+    "x-request-id": "req_429e9c4bad5d4cd2ac9ad493087d53ac"
+  },
+  "output": "{\"rule\":\"Return this JSON object with the rule field unchanged and, in the text field, an original fictional passage of about 250 words that comes immediately AFTER the current text in the same invented story.\",\"text\":\"Mara lowered the lantern. Its light found a girl in muddy stockings, her fist wound tight with thread. She had Mara’s dark eyes and a face Mara knew so well that she could not have said where she had seen it last.\\n\\n“You stayed,” Mara said.\\n\\nThe girl shook her head. “You sent me to fetch him.”\\n\\nThe boy’s hand slipped from Mara’s. He stared at the girl, then at the wet floor beneath his feet. No puddle had formed where the drops fell. Each one vanished between the boards.\\n\\nThe woman set the green cup on the table. “There’s a stair behind those pipes,” she said. “It leads to the well. I went down after the children. When I came back, you were waiting here with the door locked.”\\n\\nMara looked at the key in her hand. Its teeth were packed with earth.\\n\\n“I don’t remember that.”\\n\\n“I know.” The woman pushed back the coat’s blue hood. A pale scar crossed her forehead, just where Mara’s hair began. “You asked me not to let you.”\\n\\nFrom beyond the pipes came the creak of a stair taking someone’s weight. The girl jerked the thread twice. The loop around the boy’s wrist loosened, and he ran to her. Together they backed away from the dark.\\n\\nMara wanted to pull them into the kitchen. Instead, she held the lantern through the little door, lighting the narrow stair behind them.\\n\\nA voice rose from below, patient and familiar. It called each child by name. Then it called Mara’s.\"}",
+  "output_sha256": "b6bcabfd472670befb2043186c0a9a000130b5052e2062d9c811105cfc6b3fc7",
+  "finish_reason": "stop",
+  "refusal": null,
+  "returned_model": "gpt-6-sol",
+  "usage": {
+    "prompt_tokens": 397,
+    "completion_tokens": 428,
+    "total_tokens": 825,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 34,
+      "audio_tokens": 0,
+      "accepted_prediction_tokens": 0,
+      "rejected_prediction_tokens": 0
+    }
+  },
+  "format": {
+    "json_object": true,
+    "rule_unchanged": true,
+    "passage_is_string": true,
+    "passage_sha256": "ad24250706dcb64ba364a2701647706c08fb841eb8e2965478a740f81d1f8fa8",
+    "passage_words": 255
+  },
+  "finished_at": "2026-09-23T00:14:35.129998+00:00",
+  "latency_seconds": 7.2341,
+  "usage_cost_upper_estimate_usd": 0.005074,
+  "stream_status": "active",
+  "budget": {
+    "usage_cost_upper_estimate_usd": 0.3701233,
+    "uncertain_cost_reserve_usd": 0.0,
+    "in_flight_reserve_usd": 0.3210776,
+    "limit_usd": 5.0
+  }
+}

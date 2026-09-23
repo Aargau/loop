@@ -1,0 +1,50 @@
+{
+  "model": "gpt-6-astra",
+  "seed": "sunset",
+  "hop": 17,
+  "http_status": 200,
+  "response_body": "{\n  \"id\": \"chatcmpl-ER4xNcqbbjJnSf84cxODJFPJ83Xsi\",\n  \"object\": \"chat.completion\",\n  \"created\": 1790122617,\n  \"model\": \"gpt-6-astra\",\n  \"choices\": [\n    {\n      \"index\": 0,\n      \"message\": {\n        \"role\": \"assistant\",\n        \"content\": \"{\\n  \\\"rule\\\": \\\"Return this JSON object with the rule field unchanged and, in the text field, an original fictional passage of about 250 words that comes immediately AFTER the current text in the same invented story.\\\",\\n  \\\"text\\\": \\\"He turned his wrist and looked at the place where the crumb had been.\\\\n\\\\n“You've kept the clock.”\\\\n\\\\n“It keeps me.”\\\\n\\\\nThe clock stood on the mantel without its glass. On Thursdays she wound it with a key she kept in an eggcup, though it generally stopped by Tuesday.\\\\n\\\\n“It's slow,” he said.\\\\n\\\\n“Then you've time for your bread.”\\\\n\\\\nHe picked up the slice. She watched him bite through the crust, carefully, on one side of his mouth.\\\\n\\\\nOutside, someone called a child's name. The answer came from much nearer than the call.\\\\n\\\\n“I brought something,” he said.\\\\n\\\\nShe looked at the bag beneath his chair. He had carried it in without offering it to her, and she had supposed it contained clothes.\\\\n\\\\n“Don't put it on the table. The bottom will be wet.”\\\\n\\\\nHe set it on his knees and undid the buckle. Inside was a small brown envelope, softened at the corners.\\\\n\\\\n“They gave me these when the house was cleared.”\\\\n\\\\nShe did not take it.\\\\n\\\\n“Photographs?”\\\\n\\\\n“Some. And the receipt for the piano.”\\\\n\\\\n“We never paid it off.”\\\\n\\\\n“I know.”\\\\n\\\\nHe laid the envelope between the sugar bowl and his plate. A little butter shone on his thumb.\\\\n\\\\nShe got up for a cloth. At the sink she let the water run until it was warm, although cold would have done.\\\\n\\\\n“Was there one of the garden?” she asked.\\\\n\\\\n“I haven't looked.”\\\\n\\\\nShe wrung the cloth out twice and brought it back.\\\\n\\\\n“Well,” she said, sitting beside him instead of opposite. “We can look now.”\\\"\\n}\",\n        \"refusal\": null,\n        \"annotations\": []\n      },\n      \"finish_reason\": \"stop\"\n    }\n  ],\n  \"usage\": {\n    \"prompt_tokens\": 422,\n    \"completion_tokens\": 427,\n    \"total_tokens\": 849,\n    \"prompt_tokens_details\": {\n      \"cached_tokens\": 0,\n      \"cache_write_tokens\": 0,\n      \"audio_tokens\": 0\n    },\n    \"completion_tokens_details\": {\n      \"reasoning_tokens\": 0,\n      \"audio_tokens\": 0,\n      \"accepted_prediction_tokens\": 0,\n      \"rejected_prediction_tokens\": 0\n    }\n  },\n  \"service_tier\": \"default\",\n  \"system_fingerprint\": null\n}\n",
+  "response_headers": {
+    "Date": "Wed, 23 Sep 2026 00:17:09 GMT",
+    "openai-processing-ms": "12266",
+    "x-request-id": "req_ff47a551a24c4586aa80a7d23b8dacc7"
+  },
+  "output": "{\n  \"rule\": \"Return this JSON object with the rule field unchanged and, in the text field, an original fictional passage of about 250 words that comes immediately AFTER the current text in the same invented story.\",\n  \"text\": \"He turned his wrist and looked at the place where the crumb had been.\\n\\n“You've kept the clock.”\\n\\n“It keeps me.”\\n\\nThe clock stood on the mantel without its glass. On Thursdays she wound it with a key she kept in an eggcup, though it generally stopped by Tuesday.\\n\\n“It's slow,” he said.\\n\\n“Then you've time for your bread.”\\n\\nHe picked up the slice. She watched him bite through the crust, carefully, on one side of his mouth.\\n\\nOutside, someone called a child's name. The answer came from much nearer than the call.\\n\\n“I brought something,” he said.\\n\\nShe looked at the bag beneath his chair. He had carried it in without offering it to her, and she had supposed it contained clothes.\\n\\n“Don't put it on the table. The bottom will be wet.”\\n\\nHe set it on his knees and undid the buckle. Inside was a small brown envelope, softened at the corners.\\n\\n“They gave me these when the house was cleared.”\\n\\nShe did not take it.\\n\\n“Photographs?”\\n\\n“Some. And the receipt for the piano.”\\n\\n“We never paid it off.”\\n\\n“I know.”\\n\\nHe laid the envelope between the sugar bowl and his plate. A little butter shone on his thumb.\\n\\nShe got up for a cloth. At the sink she let the water run until it was warm, although cold would have done.\\n\\n“Was there one of the garden?” she asked.\\n\\n“I haven't looked.”\\n\\nShe wrung the cloth out twice and brought it back.\\n\\n“Well,” she said, sitting beside him instead of opposite. “We can look now.”\"\n}",
+  "output_sha256": "3c723aa378b684ec857b65a6253ac000811851e45f2ef289978c36ce909a2ff4",
+  "finish_reason": "stop",
+  "refusal": null,
+  "returned_model": "gpt-6-astra",
+  "usage": {
+    "prompt_tokens": 422,
+    "completion_tokens": 427,
+    "total_tokens": 849,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "audio_tokens": 0,
+      "accepted_prediction_tokens": 0,
+      "rejected_prediction_tokens": 0
+    }
+  },
+  "format": {
+    "json_object": true,
+    "rule_unchanged": true,
+    "passage_is_string": true,
+    "passage_sha256": "9593aa7197e47bd9d5fb6fefadd8521d0d0e19cc23d62bba1a9a5496d11ce2b4",
+    "passage_words": 258
+  },
+  "finished_at": "2026-09-23T00:17:04.503159+00:00",
+  "latency_seconds": 12.397,
+  "usage_cost_upper_estimate_usd": 0.02557,
+  "stream_status": "active",
+  "budget": {
+    "usage_cost_upper_estimate_usd": 0.9995631,
+    "uncertain_cost_reserve_usd": 0.0,
+    "in_flight_reserve_usd": 0.135992,
+    "limit_usd": 5.0
+  }
+}

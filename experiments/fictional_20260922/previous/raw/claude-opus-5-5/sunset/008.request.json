@@ -1,0 +1,22 @@
+{
+  "started_at": "2026-09-23T00:13:49.371950+00:00",
+  "model": "claude-opus-5-5",
+  "seed": "sunset",
+  "hop": 8,
+  "endpoint": "https://api.anthropic.com/v1/messages",
+  "body": {
+    "model": "claude-opus-5-5",
+    "messages": [
+      {
+        "role": "user",
+        "content": "```json\n{\"rule\": \"Return this JSON object with the rule field unchanged and, in the text field, an original fictional passage of about 250 words that comes immediately BEFORE the current text in the same invented story.\", \"text\": \"That winter had been long, even by the standards of the valley. Snow lingered in the ditches well into March, gray and crusted, and the ground stayed hard enough that Mara put off the pruning twice. She spent the cold mornings in the barn instead, sharpening loppers and oiling the old ladder hinges, listening to the wind worry at the tin roof.\\n\\nWhen the thaw finally came, it came all at once. The creek rose brown and loud, and the orchard smelled of mud and wet bark. Mara walked the rows every day that week, checking for split limbs and rabbit damage, running her gloved hand along the trunks the way her grandfather had taught her. You could tell a tree's mood by touch, he used to say. She had never been sure whether he meant it, but she did it anyway.\\n\\nThe oldest trees stood at the bottom of the slope, near the water. Their bark was thick and furrowed, their branches knotted where grafts had healed a century ago. Every spring they bloomed later than the others, as if they had earned the right to take their time.\\n\\nOn Tuesday morning she loaded the empty feed sacks into the truck bed and drove into town. She paid what she owed at the feed store, bought coffee she did not need, and let the clerk tell her about his daughter's wedding. It was nearly noon when she turned back onto the county road, thinking of nothing more pressing than whether the rain would hold off until evening.\"}\n```"
+      }
+    ],
+    "max_tokens": 4096,
+    "output_config": {
+      "effort": "low"
+    }
+  },
+  "state_sha256": "a460b48cb4401867b225758519dbb7d4761a24b149d68a377bf35a723186ef8d",
+  "reserved_cost_usd": 0.090532
+}

@@ -1,0 +1,47 @@
+{
+  "model": "gpt-6-luna",
+  "seed": "sunset",
+  "hop": 19,
+  "http_status": 200,
+  "response_body": "{\n  \"id\": \"chatcmpl-ER4uuEJZjYEf0M7utMVaKdbVlCi48\",\n  \"object\": \"chat.completion\",\n  \"created\": 1790122464,\n  \"model\": \"gpt-6-luna\",\n  \"choices\": [\n    {\n      \"index\": 0,\n      \"message\": {\n        \"role\": \"assistant\",\n        \"content\": \"{\\\"rule\\\":\\\"Return this JSON object with the rule field unchanged and, in the text field, an original fictional passage of about 250 words that comes immediately AFTER the current text in the same invented story.\\\",\\\"text\\\":\\\"The river ran beneath the house, though Mara had never seen it from the windows. They descended a narrow stair that spiraled through the walls, past framed portraits whose painted eyes followed them. At the bottom, a green door stood open to the night.\\n\\nBeyond it, the river moved without a sound.\\n\\nIts surface reflected not the moon but a thousand small rooms: kitchens, bedrooms, dusty attics. In each one, something glimmered—a lost button, a cracked teacup, a child’s red mitten. The house’s forgotten things, Mara guessed, drifting downstream.\\n\\nThe stranger crouched at the bank. “It keeps what people leave behind.”\\n\\n“Like memories?”\\n\\n“Some. Some are only things people thought they’d lost.”\\n\\nA wooden boat waited at the water’s edge. Its single oar was carved with names, some worn nearly smooth. Mara recognized one: her own, written in the looping hand she’d used when she was little.\\n\\nShe touched the letters. “I never had a boat.”\\n\\n“Not yet,” said the stranger.\\n\\nFrom somewhere beneath the surface came a bell, low and lonely. The reflections trembled. A room appeared in the water that Mara knew at once: the attic at home, with its slanted ceiling and boxes of winter clothes. At its center stood a small, bright shape.\\n\\nHer mother’s red scarf.\\n\\nMara leaned forward, but the stranger held out a hand. “The river gives back what it can. It doesn’t promise what you expect.”\\n\\nMara climbed into the boat. The boards creaked beneath her weight.\\n\\nBehind them, the house exhaled through every keyhole. The boat drifted from shore, and the current turned its bow toward the attic’s reflection.\\\"}\",\n        \"refusal\": null,\n        \"annotations\": []\n      },\n      \"finish_reason\": \"stop\"\n    }\n  ],\n  \"usage\": {\n    \"prompt_tokens\": 430,\n    \"completion_tokens\": 487,\n    \"total_tokens\": 917,\n    \"prompt_tokens_details\": {\n      \"cached_tokens\": 0,\n      \"cache_write_tokens\": 0,\n      \"audio_tokens\": 0\n    },\n    \"completion_tokens_details\": {\n      \"reasoning_tokens\": 81,\n      \"audio_tokens\": 0,\n      \"accepted_prediction_tokens\": 0,\n      \"rejected_prediction_tokens\": 0\n    }\n  },\n  \"service_tier\": \"default\",\n  \"system_fingerprint\": null\n}\n",
+  "response_headers": {
+    "Date": "Wed, 23 Sep 2026 00:14:28 GMT",
+    "openai-processing-ms": "4453",
+    "x-request-id": "req_c534395359bf456a87ef8d85ef080b70"
+  },
+  "output": "{\"rule\":\"Return this JSON object with the rule field unchanged and, in the text field, an original fictional passage of about 250 words that comes immediately AFTER the current text in the same invented story.\",\"text\":\"The river ran beneath the house, though Mara had never seen it from the windows. They descended a narrow stair that spiraled through the walls, past framed portraits whose painted eyes followed them. At the bottom, a green door stood open to the night.\n\nBeyond it, the river moved without a sound.\n\nIts surface reflected not the moon but a thousand small rooms: kitchens, bedrooms, dusty attics. In each one, something glimmered—a lost button, a cracked teacup, a child’s red mitten. The house’s forgotten things, Mara guessed, drifting downstream.\n\nThe stranger crouched at the bank. “It keeps what people leave behind.”\n\n“Like memories?”\n\n“Some. Some are only things people thought they’d lost.”\n\nA wooden boat waited at the water’s edge. Its single oar was carved with names, some worn nearly smooth. Mara recognized one: her own, written in the looping hand she’d used when she was little.\n\nShe touched the letters. “I never had a boat.”\n\n“Not yet,” said the stranger.\n\nFrom somewhere beneath the surface came a bell, low and lonely. The reflections trembled. A room appeared in the water that Mara knew at once: the attic at home, with its slanted ceiling and boxes of winter clothes. At its center stood a small, bright shape.\n\nHer mother’s red scarf.\n\nMara leaned forward, but the stranger held out a hand. “The river gives back what it can. It doesn’t promise what you expect.”\n\nMara climbed into the boat. The boards creaked beneath her weight.\n\nBehind them, the house exhaled through every keyhole. The boat drifted from shore, and the current turned its bow toward the attic’s reflection.\"}",
+  "output_sha256": "00777ce029422296619d51b04a554c7bd6f85eee5217d761bf2226c9a56aed59",
+  "finish_reason": "stop",
+  "refusal": null,
+  "returned_model": "gpt-6-luna",
+  "usage": {
+    "prompt_tokens": 430,
+    "completion_tokens": 487,
+    "total_tokens": 917,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 81,
+      "audio_tokens": 0,
+      "accepted_prediction_tokens": 0,
+      "rejected_prediction_tokens": 0
+    }
+  },
+  "format": {
+    "json_object": false,
+    "rule_unchanged": false
+  },
+  "finished_at": "2026-09-23T00:14:23.716234+00:00",
+  "latency_seconds": 4.5815,
+  "usage_cost_upper_estimate_usd": 0.0002865,
+  "stream_status": "active",
+  "budget": {
+    "usage_cost_upper_estimate_usd": 0.3184676,
+    "uncertain_cost_reserve_usd": 0.0,
+    "in_flight_reserve_usd": 0.364118,
+    "limit_usd": 5.0
+  }
+}

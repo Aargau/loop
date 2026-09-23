@@ -1,0 +1,50 @@
+{
+  "model": "gpt-6-luna",
+  "seed": "sunset",
+  "hop": 8,
+  "http_status": 200,
+  "response_body": "{\n  \"id\": \"chatcmpl-ER4u0yjWMBSa394JPWLpLMqgMdNV2\",\n  \"object\": \"chat.completion\",\n  \"created\": 1790122408,\n  \"model\": \"gpt-6-luna\",\n  \"choices\": [\n    {\n      \"index\": 0,\n      \"message\": {\n        \"role\": \"assistant\",\n        \"content\": \"{\\\"rule\\\":\\\"Return this JSON object with the rule field unchanged and, in the text field, an original fictional passage of about 250 words that comes immediately BEFORE the current text in the same invented story.\\\",\\\"text\\\":\\\"By dusk, the last box was taped shut. Mara had written KITCHEN on its side in thick marker, though it held mostly books, a chipped bowl, and the little brass clock that had belonged to her grandfather. Her grandmother stood in the doorway, watching her press the tape flat.\\\\n\\\\n“You don’t have to take everything at once,” she said.\\\\n\\\\n“I know.” Mara rubbed the sticky residue from her thumb. “I just want to be ready.”\\\\n\\\\nFor a while, they worked without speaking. They folded the spare blankets, emptied the drawers, and set aside the things Mara would leave behind. In the kitchen, her grandmother made soup, though neither of them was hungry. They ate at the small table where Mara had done homework as a child, the clock ticking steadily between them.\\\\n\\\\nAfterward, her grandmother brought out a stack of old photographs. They laughed at Mara’s crooked fringe and solemn school portraits, then fell quiet over a picture of her mother standing beside the same gate Mara would pass through in the morning. Neither of them mentioned how long it had been since the photograph was taken.\\\\n\\\\nLater, Mara checked her ticket, charged her phone, and laid her clothes out for the journey. Her grandmother came to the bedroom carrying a folded scarf, dark green and still faintly smelling of cedar.\\\\n\\\\n“For the station,” she said.\\\\n\\\\nMara took it, wanting to say something that would make the leaving feel smaller. Nothing came out right. They sat together on the edge of the bed, shoulders touching, while the house settled around them. When the clock struck midnight, her grandmother switched off the lamp. In the dark, they kept talking softly, circling the words neither was ready to say.\\\"}\",\n        \"refusal\": null,\n        \"annotations\": []\n      },\n      \"finish_reason\": \"stop\"\n    }\n  ],\n  \"usage\": {\n    \"prompt_tokens\": 405,\n    \"completion_tokens\": 570,\n    \"total_tokens\": 975,\n    \"prompt_tokens_details\": {\n      \"cached_tokens\": 0,\n      \"cache_write_tokens\": 0,\n      \"audio_tokens\": 0\n    },\n    \"completion_tokens_details\": {\n      \"reasoning_tokens\": 159,\n      \"audio_tokens\": 0,\n      \"accepted_prediction_tokens\": 0,\n      \"rejected_prediction_tokens\": 0\n    }\n  },\n  \"service_tier\": \"default\",\n  \"system_fingerprint\": null\n}\n",
+  "response_headers": {
+    "Date": "Wed, 23 Sep 2026 00:13:33 GMT",
+    "openai-processing-ms": "5577",
+    "x-request-id": "req_543fd46c32ab40f3a0ae9e0ff0870a32"
+  },
+  "output": "{\"rule\":\"Return this JSON object with the rule field unchanged and, in the text field, an original fictional passage of about 250 words that comes immediately BEFORE the current text in the same invented story.\",\"text\":\"By dusk, the last box was taped shut. Mara had written KITCHEN on its side in thick marker, though it held mostly books, a chipped bowl, and the little brass clock that had belonged to her grandfather. Her grandmother stood in the doorway, watching her press the tape flat.\\n\\n“You don’t have to take everything at once,” she said.\\n\\n“I know.” Mara rubbed the sticky residue from her thumb. “I just want to be ready.”\\n\\nFor a while, they worked without speaking. They folded the spare blankets, emptied the drawers, and set aside the things Mara would leave behind. In the kitchen, her grandmother made soup, though neither of them was hungry. They ate at the small table where Mara had done homework as a child, the clock ticking steadily between them.\\n\\nAfterward, her grandmother brought out a stack of old photographs. They laughed at Mara’s crooked fringe and solemn school portraits, then fell quiet over a picture of her mother standing beside the same gate Mara would pass through in the morning. Neither of them mentioned how long it had been since the photograph was taken.\\n\\nLater, Mara checked her ticket, charged her phone, and laid her clothes out for the journey. Her grandmother came to the bedroom carrying a folded scarf, dark green and still faintly smelling of cedar.\\n\\n“For the station,” she said.\\n\\nMara took it, wanting to say something that would make the leaving feel smaller. Nothing came out right. They sat together on the edge of the bed, shoulders touching, while the house settled around them. When the clock struck midnight, her grandmother switched off the lamp. In the dark, they kept talking softly, circling the words neither was ready to say.\"}",
+  "output_sha256": "5e0d26b7cadf917aeb3ab0f43a2ab9b01e6b64614e979e396ca4138b2781b50e",
+  "finish_reason": "stop",
+  "refusal": null,
+  "returned_model": "gpt-6-luna",
+  "usage": {
+    "prompt_tokens": 405,
+    "completion_tokens": 570,
+    "total_tokens": 975,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 159,
+      "audio_tokens": 0,
+      "accepted_prediction_tokens": 0,
+      "rejected_prediction_tokens": 0
+    }
+  },
+  "format": {
+    "json_object": true,
+    "rule_unchanged": true,
+    "passage_is_string": true,
+    "passage_sha256": "5d8bb47c0d01f3e121ff40ae8e2e9b35d9b8608293b4e94794ce9ccd3d1f3590",
+    "passage_words": 287
+  },
+  "finished_at": "2026-09-23T00:13:29.094915+00:00",
+  "latency_seconds": 5.6962,
+  "usage_cost_upper_estimate_usd": 0.0003255,
+  "stream_status": "active",
+  "budget": {
+    "usage_cost_upper_estimate_usd": 0.1293624,
+    "uncertain_cost_reserve_usd": 0.0,
+    "in_flight_reserve_usd": 0.362788,
+    "limit_usd": 5.0
+  }
+}

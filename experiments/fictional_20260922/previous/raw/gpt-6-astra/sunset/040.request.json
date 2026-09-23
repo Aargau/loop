@@ -1,0 +1,20 @@
+{
+  "started_at": "2026-09-23T00:21:40.029089+00:00",
+  "model": "gpt-6-astra",
+  "seed": "sunset",
+  "hop": 40,
+  "endpoint": "https://api.openai.com/v1/chat/completions",
+  "body": {
+    "model": "gpt-6-astra",
+    "messages": [
+      {
+        "role": "user",
+        "content": "{\n  \"rule\": \"Return this JSON object with the rule field unchanged and, in the text field, an original fictional passage of about 250 words that comes immediately BEFORE the current text in the same invented story.\",\n  \"text\": \"On Thursday Mara took the milk out of her mother's fridge and poured it down the sink. There were still three days left on the date, but nobody would be there to use it. She rinsed the bottle and stood it upside down on the draining board.\\n\\nThe neighbour had brought the bins in. He came to the gate when he saw her car and asked whether there was any news.\\n\\n'Not really,' Mara said.\\n\\n'Well. Anything she needs.'\\n\\nShe thanked him, though she could not think of anything he might do.\\n\\nUpstairs, the curtains were open in her mother's bedroom. A pair of slippers stood beside the bed, one slightly ahead of the other. Mara shut the wardrobe door, which had been left ajar, and checked the windows. In the bathroom she found her mother's comb and put it in her bag.\\n\\nAt the hospital on Friday, her mother said it was the wrong comb.\\n\\n'The other one's got a handle.'\\n\\n'I didn't see another one.'\\n\\n'In the drawer. Under the flannels.'\\n\\nMara offered to fetch it, but her mother said not to make a special journey. She had been given some lunch and wanted Mara to move the tray. Beneath the metal cover was a scoop of potato with a shallow mark where the fork had touched it.\\n\\n'Did you try any?'\\n\\n'It's been there ages.'\\n\\nMara moved the tray onto the cabinet. When a woman came to collect it, she asked whether her mother had finished. Mara looked towards the bed, but her mother had closed her eyes.\"\n}"
+      }
+    ],
+    "max_completion_tokens": 4096,
+    "reasoning_effort": "low"
+  },
+  "state_sha256": "3be02cdbb725f762dbd597c5ecde5d6fdaa67b6bb1aca70c8bb20b48b94bed5b",
+  "reserved_cost_usd": 0.22642
+}

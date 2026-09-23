@@ -1,0 +1,50 @@
+{
+  "model": "gpt-6-sol",
+  "seed": "sunset",
+  "hop": 16,
+  "http_status": 200,
+  "response_body": "{\n  \"id\": \"chatcmpl-ER4v60RNx82cBLXuWVsSKsAjFChZP\",\n  \"object\": \"chat.completion\",\n  \"created\": 1790122476,\n  \"model\": \"gpt-6-sol\",\n  \"choices\": [\n    {\n      \"index\": 0,\n      \"message\": {\n        \"role\": \"assistant\",\n        \"content\": \"{\\n  \\\"rule\\\": \\\"Return this JSON object with the rule field unchanged and, in the text field, an original fictional passage of about 250 words that comes immediately BEFORE the current text in the same invented story.\\\",\\n  \\\"text\\\": \\\"On the morning before the funeral, Mara found the laundry still in the machine. She had put it on the night before and forgotten to take it out. She ran the rinse cycle again while she ate toast at the kitchen counter. Bristle sat beneath the window, watching a sparrow hop along the sill.\\\\n\\\\nHer aunt arrived at ten with a tin of biscuits and the name of a florist. Mara made tea, and together they counted the people likely to come back to the house. Her aunt wrote the names in a small notebook, crossing out two who had moved away. When she left, she said she would telephone later, once she had spoken to the minister.\\\\n\\\\nMara hung the washing in the garden. Among her own things were three of her mother’s shirts, the ones that had been in the hamper when the ambulance came. She shook each one before pegging it to the line. The blue shirt had lost a button at the cuff. Her mother had kept spare buttons in a jam jar, but Mara did not go looking for it.\\\\n\\\\nIn the afternoon, she cleared newspapers from the sitting-room chairs and carried an extra chair down from the spare room. Bristle followed her on each trip, then fell asleep in the patch of sun by the desk. Mara sat beside him for a while. From the open window she could hear the shirts moving on the line. By five, the sun had gone and the air smelled of rain.\\\"\\n}\",\n        \"refusal\": null,\n        \"annotations\": []\n      },\n      \"finish_reason\": \"stop\"\n    }\n  ],\n  \"usage\": {\n    \"prompt_tokens\": 365,\n    \"completion_tokens\": 401,\n    \"total_tokens\": 766,\n    \"prompt_tokens_details\": {\n      \"cached_tokens\": 0,\n      \"cache_write_tokens\": 0,\n      \"audio_tokens\": 0\n    },\n    \"completion_tokens_details\": {\n      \"reasoning_tokens\": 46,\n      \"audio_tokens\": 0,\n      \"accepted_prediction_tokens\": 0,\n      \"rejected_prediction_tokens\": 0\n    }\n  },\n  \"service_tier\": \"default\",\n  \"system_fingerprint\": null\n}\n",
+  "response_headers": {
+    "Date": "Wed, 23 Sep 2026 00:14:44 GMT",
+    "openai-processing-ms": "7281",
+    "x-request-id": "req_2bb65d877929424faf43ddcdfa0d8603"
+  },
+  "output": "{\n  \"rule\": \"Return this JSON object with the rule field unchanged and, in the text field, an original fictional passage of about 250 words that comes immediately BEFORE the current text in the same invented story.\",\n  \"text\": \"On the morning before the funeral, Mara found the laundry still in the machine. She had put it on the night before and forgotten to take it out. She ran the rinse cycle again while she ate toast at the kitchen counter. Bristle sat beneath the window, watching a sparrow hop along the sill.\\n\\nHer aunt arrived at ten with a tin of biscuits and the name of a florist. Mara made tea, and together they counted the people likely to come back to the house. Her aunt wrote the names in a small notebook, crossing out two who had moved away. When she left, she said she would telephone later, once she had spoken to the minister.\\n\\nMara hung the washing in the garden. Among her own things were three of her mother’s shirts, the ones that had been in the hamper when the ambulance came. She shook each one before pegging it to the line. The blue shirt had lost a button at the cuff. Her mother had kept spare buttons in a jam jar, but Mara did not go looking for it.\\n\\nIn the afternoon, she cleared newspapers from the sitting-room chairs and carried an extra chair down from the spare room. Bristle followed her on each trip, then fell asleep in the patch of sun by the desk. Mara sat beside him for a while. From the open window she could hear the shirts moving on the line. By five, the sun had gone and the air smelled of rain.\"\n}",
+  "output_sha256": "b37ac2aabfc903039b98dd0370dacb4a8220f90ced42a2b362b3b22e21c8eda1",
+  "finish_reason": "stop",
+  "refusal": null,
+  "returned_model": "gpt-6-sol",
+  "usage": {
+    "prompt_tokens": 365,
+    "completion_tokens": 401,
+    "total_tokens": 766,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 46,
+      "audio_tokens": 0,
+      "accepted_prediction_tokens": 0,
+      "rejected_prediction_tokens": 0
+    }
+  },
+  "format": {
+    "json_object": true,
+    "rule_unchanged": true,
+    "passage_is_string": true,
+    "passage_sha256": "0449e472f9ccaa37a92ab35bfe1ea2b20fd3858cd3f9d5868e66c54be22d6465",
+    "passage_words": 254
+  },
+  "finished_at": "2026-09-23T00:14:39.226161+00:00",
+  "latency_seconds": 7.3685,
+  "usage_cost_upper_estimate_usd": 0.00474,
+  "stream_status": "active",
+  "budget": {
+    "usage_cost_upper_estimate_usd": 0.4230139,
+    "uncertain_cost_reserve_usd": 0.0,
+    "in_flight_reserve_usd": 0.3203545,
+    "limit_usd": 5.0
+  }
+}

@@ -1,0 +1,50 @@
+{
+  "model": "gpt-6-astra",
+  "seed": "sunset",
+  "hop": 30,
+  "http_status": 200,
+  "response_body": "{\n  \"id\": \"chatcmpl-ER4zvVQrs52tiRF8BKtKMZL3BrNmv\",\n  \"object\": \"chat.completion\",\n  \"created\": 1790122775,\n  \"model\": \"gpt-6-astra\",\n  \"choices\": [\n    {\n      \"index\": 0,\n      \"message\": {\n        \"role\": \"assistant\",\n        \"content\": \"{\\n  \\\"rule\\\": \\\"Return this JSON object with the rule field unchanged and, in the text field, an original fictional passage of about 250 words that comes immediately BEFORE the current text in the same invented story.\\\",\\n  \\\"text\\\": \\\"On Friday evening Mara found the receipt for the washing machine folded inside its instruction booklet. Her mother had written the delivery date across the top and underlined the telephone number twice. The shop had closed years ago. It was a place that sold mattresses now, or had been the last time Mara passed.\\\\n\\\\nShe put the booklet on the kitchen table with the others. Boiler, cooker, an electric carving knife she had not yet found. Things someone might need if they bought the things that went with them.\\\\n\\\\nHer brother had left a roll of bin bags beside the kettle. She opened one and shook it until the bottom dropped out, making a noise much louder than she expected.\\\\n\\\\nThere was very little she could immediately call rubbish.\\\\n\\\\nIn the drawer beneath the telephone were elastic bands, takeaway menus and a packet of seeds with a photograph of orange flowers. She checked the date on the seeds before putting them in the bag. Then she took them out again and laid them on the windowsill.\\\\n\\\\nAt nine she stopped. She washed a cup, dried it with the tea towel hanging from the oven handle and put it back in its cupboard.\\\\n\\\\nUpstairs, the bed in her old room had been made with sheets from the airing cupboard. She sat on the edge to remove her shoes. From there she could see the landing light through the gap beside the door.\\\\n\\\\nIn the morning she would start with the kitchen cupboards. Her brother had said photographs were no use without prices.\\\"\\n}\",\n        \"refusal\": null,\n        \"annotations\": []\n      },\n      \"finish_reason\": \"stop\"\n    }\n  ],\n  \"usage\": {\n    \"prompt_tokens\": 399,\n    \"completion_tokens\": 358,\n    \"total_tokens\": 757,\n    \"prompt_tokens_details\": {\n      \"cached_tokens\": 0,\n      \"cache_write_tokens\": 0,\n      \"audio_tokens\": 0\n    },\n    \"completion_tokens_details\": {\n      \"reasoning_tokens\": 0,\n      \"audio_tokens\": 0,\n      \"accepted_prediction_tokens\": 0,\n      \"rejected_prediction_tokens\": 0\n    }\n  },\n  \"service_tier\": \"default\",\n  \"system_fingerprint\": null\n}\n",
+  "response_headers": {
+    "Date": "Wed, 23 Sep 2026 00:19:49 GMT",
+    "openai-processing-ms": "14041",
+    "x-request-id": "req_59e4d0a6d4c34212a08c30d3d0a05be2"
+  },
+  "output": "{\n  \"rule\": \"Return this JSON object with the rule field unchanged and, in the text field, an original fictional passage of about 250 words that comes immediately BEFORE the current text in the same invented story.\",\n  \"text\": \"On Friday evening Mara found the receipt for the washing machine folded inside its instruction booklet. Her mother had written the delivery date across the top and underlined the telephone number twice. The shop had closed years ago. It was a place that sold mattresses now, or had been the last time Mara passed.\\n\\nShe put the booklet on the kitchen table with the others. Boiler, cooker, an electric carving knife she had not yet found. Things someone might need if they bought the things that went with them.\\n\\nHer brother had left a roll of bin bags beside the kettle. She opened one and shook it until the bottom dropped out, making a noise much louder than she expected.\\n\\nThere was very little she could immediately call rubbish.\\n\\nIn the drawer beneath the telephone were elastic bands, takeaway menus and a packet of seeds with a photograph of orange flowers. She checked the date on the seeds before putting them in the bag. Then she took them out again and laid them on the windowsill.\\n\\nAt nine she stopped. She washed a cup, dried it with the tea towel hanging from the oven handle and put it back in its cupboard.\\n\\nUpstairs, the bed in her old room had been made with sheets from the airing cupboard. She sat on the edge to remove her shoes. From there she could see the landing light through the gap beside the door.\\n\\nIn the morning she would start with the kitchen cupboards. Her brother had said photographs were no use without prices.\"\n}",
+  "output_sha256": "81f69391678b7fcd58c0e86b7ae9b3b4a87a958c747ee5e1629f27fc94367cbd",
+  "finish_reason": "stop",
+  "refusal": null,
+  "returned_model": "gpt-6-astra",
+  "usage": {
+    "prompt_tokens": 399,
+    "completion_tokens": 358,
+    "total_tokens": 757,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "audio_tokens": 0,
+      "accepted_prediction_tokens": 0,
+      "rejected_prediction_tokens": 0
+    }
+  },
+  "format": {
+    "json_object": true,
+    "rule_unchanged": true,
+    "passage_is_string": true,
+    "passage_sha256": "154bbc3a26a0bddc62171fdb628f0a081367fb7adf35740b85ad49577881703b",
+    "passage_words": 261
+  },
+  "finished_at": "2026-09-23T00:19:44.864466+00:00",
+  "latency_seconds": 14.1635,
+  "usage_cost_upper_estimate_usd": 0.02189,
+  "stream_status": "active",
+  "budget": {
+    "usage_cost_upper_estimate_usd": 1.5338651,
+    "uncertain_cost_reserve_usd": 0.0,
+    "in_flight_reserve_usd": 0.0,
+    "limit_usd": 5.0
+  }
+}

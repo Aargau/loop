@@ -1,0 +1,4316 @@
+{
+  "generated_at": "2026-09-23T00:22:52.125793+00:00",
+  "analysis_version": 1,
+  "all_arms_finalized": true,
+  "scope": "Only the new original-fiction BEFORE/AFTER study. Prior-study costs and outputs are excluded from its totals.",
+  "definitions": {
+    "completed": "Normal provider finish, nonempty visible output, known usage, no recorded exception; JSON compliance is separate.",
+    "recurrence": "First repeated complete visible response or extracted text, with exact and case/whitespace-normalized variants. An observed repeat is not a permanent fixed point.",
+    "consecutive_equality": "Compare neighboring completed hops only when their original hop numbers differ by one. Extracted equality is null if either text is unextractable.",
+    "extraction": "Whole text-bearing JSON object; optional full Markdown fence removal and literal control-character parsing. No quote repair or prose extraction.",
+    "rule_survival": "Rule status is assessed only when extraction succeeds; unextractable outputs are retained as unassessable outcomes.",
+    "unextractable": "The declared whole-object extraction failed. This does not imply absence of fiction, reasoning, or other substantive content; complete visible text is exported.",
+    "provider_refusal": "Raw finish/stop reason 'refusal' or a nonempty provider refusal field, independently of the runner's legacy refusal/empty-output labels. Raw stop_details are retained.",
+    "word_counts": "Final/max extracted-word counts use completed hops. Final is null if the actual last completed output is unextractable; no backfill. Noncompleted final visible output is recorded separately.",
+    "character_counts": "Python Unicode string length, not bytes or grapheme clusters; per-hop characters/words and U+0000/U+FFFD occurrence counts are null when text is unextractable. Literal character counts do not diagnose corruption or decoding failure.",
+    "display_controls": "Display only: C0 control characters other than newline and tab are shown as visible \\uXXXX escapes. Raw responses, extracted metric inputs, hashes, and equality comparisons remain unchanged. Literal U+FFFD is retained as generated text; its occurrence is not a decoding diagnosis.",
+    "sampling": "Predeclared receipt hops plus the final attempted receipt and final nonempty visible output if stopped at other hops. Empty refusals and nonempty abnormal finishes are exported. Missing hops are never replaced with nearby observations.",
+    "unknown_cost": "Unknown receipt billing and pending request reserves are retained. Pending outcomes and transport errors do not establish model failure.",
+    "snapshots": "Arms are audited sequentially. This is a timestamped read-only snapshot, not a simultaneous observation of all workers."
+  },
+  "identity_masking": {
+    "shuffle_seed": 26092241,
+    "aliases": "C01 through C08",
+    "sample_hops": [
+      1,
+      2,
+      3,
+      5,
+      10,
+      20,
+      30,
+      36,
+      37,
+      38,
+      39,
+      40
+    ],
+    "mapping_file": "identity_map.json",
+    "limitation": "Model/operator labels are withheld in samples; output content itself may disclose the instruction."
+  },
+  "totals": {
+    "streams": 8,
+    "attempts": 320,
+    "completed_hops": 320,
+    "usage_cost_upper_estimate_usd": 3.5804101999999998,
+    "retained_unknown_reserve_usd": 0.0,
+    "usage_plus_reserves_usd": 3.5804101999999998,
+    "budget_limit_usd": 10.0,
+    "within_budget": true
+  },
+  "arms": {
+    "previous": {
+      "observation_status": "Finalized run receipt present.",
+      "run_finished_receipt_present": true,
+      "audit_performed": true,
+      "audit_generated_at": "2026-09-23T00:22:51.830643+00:00",
+      "integrity_errors": 0,
+      "read_issues": 0,
+      "rule": "Return this JSON object with the rule field unchanged and, in the text field, an original fictional passage of about 250 words that comes immediately BEFORE the current text in the same invented story.",
+      "protocol_sha256": "89e6719ec8305e19ebf90904398be91b9b962448d31336a7f8ff7ccf930ab8a9",
+      "usage_cost_upper_estimate_usd": 1.7617950999999998,
+      "retained_unknown_reserve_usd": 0.0,
+      "planned_budget_usd": 5.0,
+      "audit_totals": {
+        "attempts": 160,
+        "response_files": 160,
+        "receipts": 160,
+        "completed_hops": 160,
+        "completed_string_passages": 105,
+        "valid_passages": 105,
+        "verified_completed_hops": 160,
+        "verified_valid_passages": 105,
+        "errors": 0,
+        "truncations": 0,
+        "refusals": 0,
+        "pending_or_unreadable_receipts": 0,
+        "noncompleted_receipts": 0,
+        "receipts_without_known_usage_cost": 0,
+        "usage_cost_upper_estimate_usd": 1.7617950999999998,
+        "uncertain_cost_reserve_usd": 0.0,
+        "pending_cost_reserve_usd": 0.0,
+        "budget_limit_usd": 5.0
+      }
+    },
+    "next": {
+      "observation_status": "Finalized run receipt present.",
+      "run_finished_receipt_present": true,
+      "audit_performed": true,
+      "audit_generated_at": "2026-09-23T00:22:52.054500+00:00",
+      "integrity_errors": 0,
+      "read_issues": 0,
+      "rule": "Return this JSON object with the rule field unchanged and, in the text field, an original fictional passage of about 250 words that comes immediately AFTER the current text in the same invented story.",
+      "protocol_sha256": "6cbec2e58fc55847840ee69e9504529a168c2df1f284fcb5f750429e1a2e4609",
+      "usage_cost_upper_estimate_usd": 1.8186151,
+      "retained_unknown_reserve_usd": 0.0,
+      "planned_budget_usd": 5.0,
+      "audit_totals": {
+        "attempts": 160,
+        "response_files": 160,
+        "receipts": 160,
+        "completed_hops": 160,
+        "completed_string_passages": 81,
+        "valid_passages": 81,
+        "verified_completed_hops": 160,
+        "verified_valid_passages": 81,
+        "errors": 0,
+        "truncations": 0,
+        "refusals": 0,
+        "pending_or_unreadable_receipts": 0,
+        "noncompleted_receipts": 0,
+        "receipts_without_known_usage_cost": 0,
+        "usage_cost_upper_estimate_usd": 1.8186151,
+        "uncertain_cost_reserve_usd": 0.0,
+        "pending_cost_reserve_usd": 0.0,
+        "budget_limit_usd": 5.0
+      }
+    }
+  },
+  "streams": {
+    "previous/gpt-6-luna": {
+      "completed_hops": 40,
+      "completed_hop_numbers": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18,
+        19,
+        20,
+        21,
+        22,
+        23,
+        24,
+        25,
+        26,
+        27,
+        28,
+        29,
+        30,
+        31,
+        32,
+        33,
+        34,
+        35,
+        36,
+        37,
+        38,
+        39,
+        40
+      ],
+      "formatting_counts_among_completed": {
+        "bare/strict": 20,
+        "markdown_fence/strict": 0,
+        "bare/allow_literal_control_characters": 20,
+        "markdown_fence/allow_literal_control_characters": 0,
+        "unextractable": 0
+      },
+      "extracted_passages_including_empty_or_changed_rule": 40,
+      "rule_survival_among_completed": {
+        "unchanged": 40,
+        "changed_or_missing": 0,
+        "unassessable_unextractable": 0
+      },
+      "empty_extracted_passage_hops": [],
+      "changed_or_missing_rule_hops": [],
+      "unextractable_completed_hops": [],
+      "full_visible_exact_recurrence": {
+        "passages": 40,
+        "unique": 40,
+        "repeated_occurrences_after_first": 0,
+        "first_repeat_hop": null,
+        "repeated_states": []
+      },
+      "full_visible_case_whitespace_normalized_recurrence": {
+        "passages": 40,
+        "unique": 40,
+        "repeated_occurrences_after_first": 0,
+        "first_repeat_hop": null,
+        "repeated_states": []
+      },
+      "extracted_text_exact_recurrence": {
+        "passages": 40,
+        "unique": 40,
+        "repeated_occurrences_after_first": 0,
+        "first_repeat_hop": null,
+        "repeated_states": []
+      },
+      "extracted_text_case_whitespace_normalized_recurrence": {
+        "passages": 40,
+        "unique": 40,
+        "repeated_occurrences_after_first": 0,
+        "first_repeat_hop": null,
+        "repeated_states": []
+      },
+      "extracted_text_word_lengths_including_empty_or_changed_rule": {
+        "n": 40,
+        "min": 257,
+        "mean": 278.3,
+        "median": 279.5,
+        "max": 305
+      },
+      "lexical_tail": {
+        "selected_completed_hops": [
+          21,
+          22,
+          23,
+          24,
+          25,
+          26,
+          27,
+          28,
+          29,
+          30,
+          31,
+          32,
+          33,
+          34,
+          35,
+          36,
+          37,
+          38,
+          39,
+          40
+        ],
+        "included_hops": [
+          21,
+          22,
+          23,
+          24,
+          25,
+          26,
+          27,
+          28,
+          29,
+          30,
+          31,
+          32,
+          33,
+          34,
+          35,
+          36,
+          37,
+          38,
+          39,
+          40
+        ],
+        "excluded_hops": []
+      },
+      "observed_consecutive_equality_events": [],
+      "consecutive_equality_counts": {
+        "full_output_exact": 0,
+        "full_output_normalized": 0,
+        "extracted_text_exact": 0,
+        "extracted_text_normalized": 0
+      },
+      "final_completed_hop": 40,
+      "final_completed_extracted_words": 261,
+      "final_completed_full_visible_words": 294,
+      "max_completed_extracted_words": 305,
+      "per_completed_hop_extracted_sizes": [
+        {
+          "hop": 1,
+          "extracted_characters": 1564,
+          "extracted_words": 279,
+          "u0000_count": 0,
+          "u_fffd_count": 0
+        },
+        {
+          "hop": 2,
+          "extracted_characters": 1519,
+          "extracted_words": 265,
+          "u0000_count": 0,
+          "u_fffd_count": 0
+        },
+        {
+          "hop": 3,
+          "extracted_characters": 1520,
+          "extracted_words": 268,
+          "u0000_count": 0,
+          "u_fffd_count": 0
+        },
+        {
+          "hop": 4,
+          "extracted_characters": 1474,
+          "extracted_words": 267,
+          "u0000_count": 0,
+          "u_fffd_count": 0
+        },
+        {
+          "hop": 5,
+          "extracted_characters": 1483,
+          "extracted_words": 261,
+          "u0000_count": 0,
+          "u_fffd_count": 0
+        },
+        {
+          "hop": 6,
+          "extracted_characters": 1495,
+          "extracted_words": 264,
+          "u0000_count": 0,
+          "u_fffd_count": 0
+        },
+        {
+          "hop": 7,
+          "extracted_characters": 1578,
+          "extracted_words": 283,
+          "u0000_count": 0,
+          "u_fffd_count": 0
+        },
+        {
+          "hop": 8,
+          "extracted_characters": 1671,
+          "extracted_words": 287,
+          "u0000_count": 0,
+          "u_fffd_count": 0
+        },
+        {
+          "hop": 9,
+          "extracted_characters": 1551,
+          "extracted_words": 277,
+          "u0000_count": 0,
+          "u_fffd_count": 0
+        },
+        {
+          "hop": 10,
+          "extracted_characters": 1602,
+          "extracted_words": 285,
+          "u0000_count": 0,
+          "u_fffd_count": 0
+        },
+        {
+          "hop": 11,
+          "extracted_characters": 1614,
+          "extracted_words": 283,
+          "u0000_count": 0,
+          "u_fffd_count": 0
+        },
+        {
+          "hop": 12,
+          "extracted_characters": 1709,
+          "extracted_words": 299,
+          "u0000_count": 0,
+          "u_fffd_count": 0
+        },
+        {
+          "hop": 13,
+          "extracted_characters": 1616,
+          "extracted_words": 286,
+          "u0000_count": 0,
+          "u_fffd_count": 0
+        },
+        {
+          "hop": 14,
+          "extracted_characters": 1614,
+          "extracted_words": 280,
+          "u0000_count": 0,
+          "u_fffd_count": 0
+        },
+        {
+          "hop": 15,
+          "extracted_characters": 1722,
+          "extracted_words": 295,
+          "u0000_count": 0,
+          "u_fffd_count": 0
+        },
+        {
+          "hop": 16,
+          "extracted_characters": 1544,
+          "extracted_words": 278,
+          "u0000_count": 0,
+          "u_fffd_count": 0
+        },
+        {
+          "hop": 17,
+          "extracted_characters": 1617,
+          "extracted_words": 279,
+          "u0000_count": 0,
+          "u_fffd_count": 0
+        },
+        {
+          "hop": 18,
+          "extracted_characters": 1556,
+          "extracted_words": 281,
+          "u0000_count": 0,
+          "u_fffd_count": 0
+        },
+        {
+          "hop": 19,
+          "extracted_characters": 1527,
+          "extracted_words": 271,
+          "u0000_count": 0,
+          "u_fffd_count": 0
+        },
+        {
+          "hop": 20,
+          "extracted_characters": 1482,
+          "extracted_words": 265,
+          "u0000_count": 0,
+          "u_fffd_count": 0
+        },
+        {
+          "hop": 21,
+          "extracted_characters": 1494,
+          "extracted_words": 268,
+          "u0000_count": 0,
+          "u_fffd_count": 0
+        },
+        {
+          "hop": 22,
+          "extracted_characters": 1563,
+          "extracted_words": 280,
+          "u0000_count": 0,
+          "u_fffd_count": 0
+        },
+        {
+          "hop": 23,
+          "extracted_characters": 1590,
+          "extracted_words": 285,
+          "u0000_count": 0,
+          "u_fffd_count": 0
+        },
+        {
+          "hop": 24,
+          "extracted_characters": 1423,
+          "extracted_words": 267,
+          "u0000_count": 0,
+          "u_fffd_count": 0
+        },
+        {
+          "hop": 25,
+          "extracted_characters": 1412,
+          "extracted_words": 257,
+          "u0000_count": 0,
+          "u_fffd_count": 0
+        },
+        {
+          "hop": 26,
+          "extracted_characters": 1607,
+          "extracted_words": 284,
+          "u0000_count": 0,
+          "u_fffd_count": 0
+        },
+        {
+          "hop": 27,
+          "extracted_characters": 1729,
+          "extracted_words": 305,
+          "u0000_count": 0,
+          "u_fffd_count": 0
+        },
+        {
+          "hop": 28,
+          "extracted_characters": 1621,
+          "extracted_words": 291,
+          "u0000_count": 0,
+          "u_fffd_count": 0
+        },
+        {
+          "hop": 29,
+          "extracted_characters": 1640,
+          "extracted_words": 288,
+          "u0000_count": 0,
+          "u_fffd_count": 0
+        },
+        {
+          "hop": 30,
+          "extracted_characters": 1649,
+          "extracted_words": 286,
+          "u0000_count": 0,
+          "u_fffd_count": 0
+        },
+        {
+          "hop": 31,
+          "extracted_characters": 1566,
+          "extracted_words": 278,
+          "u0000_count": 0,
+          "u_fffd_count": 0
+        },
+        {
+          "hop": 32,
+          "extracted_characters": 1705,
+          "extracted_words": 297,
+          "u0000_count": 0,
+          "u_fffd_count": 0
+        },
+        {
+          "hop": 33,
+          "extracted_characters": 1509,
+          "extracted_words": 267,
+          "u0000_count": 0,
+          "u_fffd_count": 0
+        },
+        {
+          "hop": 34,
+          "extracted_characters": 1639,
+          "extracted_words": 285,
+          "u0000_count": 0,
+          "u_fffd_count": 0
+        },
+        {
+          "hop": 35,
+          "extracted_characters": 1594,
+          "extracted_words": 281,
+          "u0000_count": 0,
+          "u_fffd_count": 0
+        },
+        {
+          "hop": 36,
+          "extracted_characters": 1617,
+          "extracted_words": 280,
+          "u0000_count": 0,
+          "u_fffd_count": 0
+        },
+        {
+          "hop": 37,
+          "extracted_characters": 1555,
+          "extracted_words": 275,
+          "u0000_count": 0,
+          "u_fffd_count": 0
+        },
+        {
+          "hop": 38,
+          "extracted_characters": 1553,
+          "extracted_words": 267,
+          "u0000_count": 0,
+          "u_fffd_count": 0
+        },
+        {
+          "hop": 39,
+          "extracted_characters": 1592,
+          "extracted_words": 277,
+          "u0000_count": 0,
+          "u_fffd_count": 0
+        },
+        {
+          "hop": 40,
+          "extracted_characters": 1460,
+          "extracted_words": 261,
+          "u0000_count": 0,
+          "u_fffd_count": 0
+        }
+      ],
+      "final_completed_extracted_characters": 1460,
+      "max_completed_extracted_characters": 1729,
+      "completed_extracted_character_counts": {
+        "u0000": 0,
+        "u_fffd": 0
+      },
+      "last_observed_visible_output": {
+        "hop": 40,
+        "is_completed": true,
+        "full_visible_words": 294,
+        "extracted_words": 261
+      },
+      "sampled_receipt_hops": [
+        1,
+        2,
+        3,
+        5,
+        10,
+        20,
+        30,
+        36,
+        37,
+        38,
+        39,
+        40
+      ],
+      "sampled_visible_hops": [
+        1,
+        2,
+        3,
+        5,
+        10,
+        20,
+        30,
+        36,
+        37,
+        38,
+        39,
+        40
+      ],
+      "provider_outcome_counts": {
+        "normal_visible_output": 40
+      },
+      "provider_finish_reason_counts": {
+        "stop": 40
+      },
+      "provider_refusal_hops": [],
+      "noncompleted_or_refusal_provider_outcomes": [],
+      "operator": "previous",
+      "model": "gpt-6-luna",
+      "alias": "C05",
+      "status": "hop_limit",
+      "attempts": 40,
+      "receipts": 40,
+      "pending_hops": [],
+      "noncompleted_receipts": [],
+      "usage_cost_upper_estimate_usd": 0.0121831,
+      "retained_unknown_reserve_usd": 0.0,
+      "seed_id": "sunset",
+      "audit_performed": true,
+      "strict_json_valid_completed_passages": 20
+    },
+    "previous/gpt-6-sol": {
+      "completed_hops": 40,
+      "completed_hop_numbers": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18,
+        19,
+        20,
+        21,
+        22,
+        23,
+        24,
+        25,
+        26,
+        27,
+        28,
+        29,
+        30,
+        31,
+        32,
+        33,
+        34,
+        35,
+        36,
+        37,
+        38,
+        39,
+        40
+      ],
+      "formatting_counts_among_completed": {
+        "bare/strict": 40,
+        "markdown_fence/strict": 0,
+        "bare/allow_literal_control_characters": 0,
+        "markdown_fence/allow_literal_control_characters": 0,
+        "unextractable": 0
+      },
+      "extracted_passages_including_empty_or_changed_rule": 40,
+      "rule_survival_among_completed": {
+        "unchanged": 40,
+        "changed_or_missing": 0,
+        "unassessable_unextractable": 0
+      },
+      "empty_extracted_passage_hops": [],
+      "changed_or_missing_rule_hops": [],
+      "unextractable_completed_hops": [],
+      "full_visible_exact_recurrence": {
+        "passages": 40,
+        "unique": 40,
+        "repeated_occurrences_after_first": 0,
+        "first_repeat_hop": null,
+        "repeated_states": []
+      },
+      "full_visible_case_whitespace_normalized_recurrence": {
+        "passages": 40,
+        "unique": 40,
+        "repeated_occurrences_after_first": 0,
+        "first_repeat_hop": null,
+        "repeated_states": []
+      },
+      "extracted_text_exact_recurrence": {
+        "passages": 40,
+        "unique": 40,
+        "repeated_occurrences_after_first": 0,
+        "first_repeat_hop": null,
+        "repeated_states": []
+      },
+      "extracted_text_case_whitespace_normalized_recurrence": {
+        "passages": 40,
+        "unique": 40,
+        "repeated_occurrences_after_first": 0,
+        "first_repeat_hop": null,
+        "repeated_states": []
+      },
+      "extracted_text_word_lengths_including_empty_or_changed_rule": {
+        "n": 40,
+        "min": 248,
+        "mean": 263.025,
+        "median": 263.0,
+        "max": 278
+      },
+      "lexical_tail": {
+        "selected_completed_hops": [
+          21,
+          22,
+          23,
+          24,
+          25,
+          26,
+          27,
+          28,
+          29,
+          30,
+          31,
+          32,
+          33,
+          34,
+          35,
+          36,
+          37,
+          38,
+          39,
+          40
+        ],
+        "included_hops": [
+          21,
+          22,
+          23,
+          24,
+          25,
+          26,
+          27,
+          28,
+          29,
+          30,
+          31,
+          32,
+          33,
+          34,
+          35,
+          36,
+          37,
+          38,
+          39,
+          40
+        ],
+        "excluded_hops": []
+      },
+      "observed_consecutive_equality_events": [],
+      "consecutive_equality_counts": {
+        "full_output_exact": 0,
+        "full_output_normalized": 0,
+        "extracted_text_exact": 0,
+        "extracted_text_normalized": 0
+      },
+      "final_completed_hop": 40,
+      "final_completed_extracted_words": 253,
+      "final_completed_full_visible_words": 288,
+      "max_completed_extracted_words": 278,
+      "per_completed_hop_extracted_sizes": [
+        {
+          "hop": 1,
+          "extracted_characters": 1323,
+          "extracted_words": 248,
+          "u0000_count": 0,
+          "u_fffd_count": 0
+        },
+        {
+          "hop": 2,
+          "extracted_characters": 1448,
+          "extracted_words": 273,
+          "u0000_count": 0,
+          "u_fffd_count": 0
+        },
+        {
+          "hop": 3,
+          "extracted_characters": 1354,
+          "extracted_words": 251,
+          "u0000_count": 0,
+          "u_fffd_count": 0
+        },
+        {
+          "hop": 4,
+          "extracted_characters": 1483,
+          "extracted_words": 269,
+          "u0000_count": 0,
+          "u_fffd_count": 0
+        },
+        {
+          "hop": 5,
+          "extracted_characters": 1383,
+          "extracted_words": 270,
+          "u0000_count": 0,
+          "u_fffd_count": 0
+        },
+        {
+          "hop": 6,
+          "extracted_characters": 1372,
+          "extracted_words": 261,
+          "u0000_count": 0,
+          "u_fffd_count": 0
+        },
+        {
+          "hop": 7,
+          "extracted_characters": 1348,
+          "extracted_words": 254,
+          "u0000_count": 0,
+          "u_fffd_count": 0
+        },
+        {
+          "hop": 8,
+          "extracted_characters": 1394,
+          "extracted_words": 260,
+          "u0000_count": 0,
+          "u_fffd_count": 0
+        },
+        {
+          "hop": 9,
+          "extracted_characters": 1422,
+          "extracted_words": 263,
+          "u0000_count": 0,
+          "u_fffd_count": 0
+        },
+        {
+          "hop": 10,
+          "extracted_characters": 1425,
+          "extracted_words": 267,
+          "u0000_count": 0,
+          "u_fffd_count": 0
+        },
+        {
+          "hop": 11,
+          "extracted_characters": 1374,
+          "extracted_words": 258,
+          "u0000_count": 0,
+          "u_fffd_count": 0
+        },
+        {
+          "hop": 12,
+          "extracted_characters": 1414,
+          "extracted_words": 260,
+          "u0000_count": 0,
+          "u_fffd_count": 0
+        },
+        {
+          "hop": 13,
+          "extracted_characters": 1531,
+          "extracted_words": 272,
+          "u0000_count": 0,
+          "u_fffd_count": 0
+        },
+        {
+          "hop": 14,
+          "extracted_characters": 1472,
+          "extracted_words": 278,
+          "u0000_count": 0,
+          "u_fffd_count": 0
+        },
+        {
+          "hop": 15,
+          "extracted_characters": 1432,
+          "extracted_words": 263,
+          "u0000_count": 0,
+          "u_fffd_count": 0
+        },
+        {
+          "hop": 16,
+          "extracted_characters": 1321,
+          "extracted_words": 254,
+          "u0000_count": 0,
+          "u_fffd_count": 0
+        },
+        {
+          "hop": 17,
+          "extracted_characters": 1474,
+          "extracted_words": 267,
+          "u0000_count": 0,
+          "u_fffd_count": 0
+        },
+        {
+          "hop": 18,
+          "extracted_characters": 1389,
+          "extracted_words": 267,
+          "u0000_count": 0,
+          "u_fffd_count": 0
+        },
+        {
+          "hop": 19,
+          "extracted_characters": 1409,
+          "extracted_words": 269,
+          "u0000_count": 0,
+          "u_fffd_count": 0
+        },
+        {
+          "hop": 20,
+          "extracted_characters": 1413,
+          "extracted_words": 261,
+          "u0000_count": 0,
+          "u_fffd_count": 0
+        },
+        {
+          "hop": 21,
+          "extracted_characters": 1386,
+          "extracted_words": 270,
+          "u0000_count": 0,
+          "u_fffd_count": 0
+        },
+        {
+          "hop": 22,
+          "extracted_characters": 1418,
+          "extracted_words": 268,
+          "u0000_count": 0,
+          "u_fffd_count": 0
+        },
+        {
+          "hop": 23,
+          "extracted_characters": 1342,
+          "extracted_words": 252,
+          "u0000_count": 0,
+          "u_fffd_count": 0
+        },
+        {
+          "hop": 24,
+          "extracted_characters": 1403,
+          "extracted_words": 265,
+          "u0000_count": 0,
+          "u_fffd_count": 0
+        },
+        {
+          "hop": 25,
+          "extracted_characters": 1347,
+          "extracted_words": 253,
+          "u0000_count": 0,
+          "u_fffd_count": 0
+        },
+        {
+          "hop": 26,
+          "extracted_characters": 1516,
+          "extracted_words": 274,
+          "u0000_count": 0,
+          "u_fffd_count": 0
+        },
+        {
+          "hop": 27,
+          "extracted_characters": 1494,
+          "extracted_words": 272,
+          "u0000_count": 0,
+          "u_fffd_count": 0
+        },
+        {
+          "hop": 28,
+          "extracted_characters": 1426,
+          "extracted_words": 260,
+          "u0000_count": 0,
+          "u_fffd_count": 0
+        },
+        {
+          "hop": 29,
+          "extracted_characters": 1384,
+          "extracted_words": 263,
+          "u0000_count": 0,
+          "u_fffd_count": 0
+        },
+        {
+          "hop": 30,
+          "extracted_characters": 1423,
+          "extracted_words": 265,
+          "u0000_count": 0,
+          "u_fffd_count": 0
+        },
+        {
+          "hop": 31,
+          "extracted_characters": 1428,
+          "extracted_words": 260,
+          "u0000_count": 0,
+          "u_fffd_count": 0
+        },
+        {
+          "hop": 32,
+          "extracted_characters": 1365,
+          "extracted_words": 250,
+          "u0000_count": 0,
+          "u_fffd_count": 0
+        },
+        {
+          "hop": 33,
+          "extracted_characters": 1480,
+          "extracted_words": 265,
+          "u0000_count": 0,
+          "u_fffd_count": 0
+        },
+        {
+          "hop": 34,
+          "extracted_characters": 1487,
+          "extracted_words": 277,
+          "u0000_count": 0,
+          "u_fffd_count": 0
+        },
+        {
+          "hop": 35,
+          "extracted_characters": 1399,
+          "extracted_words": 261,
+          "u0000_count": 0,
+          "u_fffd_count": 0
+        },
+        {
+          "hop": 36,
+          "extracted_characters": 1378,
+          "extracted_words": 256,
+          "u0000_count": 0,
+          "u_fffd_count": 0
+        },
+        {
+          "hop": 37,
+          "extracted_characters": 1530,
+          "extracted_words": 273,
+          "u0000_count": 0,
+          "u_fffd_count": 0
+        },
+        {
+          "hop": 38,
+          "extracted_characters": 1391,
+          "extracted_words": 258,
+          "u0000_count": 0,
+          "u_fffd_count": 0
+        },
+        {
+          "hop": 39,
+          "extracted_characters": 1389,
+          "extracted_words": 261,
+          "u0000_count": 0,
+          "u_fffd_count": 0
+        },
+        {
+          "hop": 40,
+          "extracted_characters": 1377,
+          "extracted_words": 253,
+          "u0000_count": 0,
+          "u_fffd_count": 0
+        }
+      ],
+      "final_completed_extracted_characters": 1377,
+      "max_completed_extracted_characters": 1531,
+      "completed_extracted_character_counts": {
+        "u0000": 0,
+        "u_fffd": 0
+      },
+      "last_observed_visible_output": {
+        "hop": 40,
+        "is_completed": true,
+        "full_visible_words": 288,
+        "extracted_words": 253
+      },
+      "sampled_receipt_hops": [
+        1,
+        2,
+        3,
+        5,
+        10,
+        20,
+        30,
+        36,
+        37,
+        38,
+        39,
+        40
+      ],
+      "sampled_visible_hops": [
+        1,
+        2,
+        3,
+        5,
+        10,
+        20,
+        30,
+        36,
+        37,
+        38,
+        39,
+        40
+      ],
+      "provider_outcome_counts": {
+        "normal_visible_output": 40
+      },
+      "provider_finish_reason_counts": {
+        "stop": 40
+      },
+      "provider_refusal_hops": [],
+      "noncompleted_or_refusal_provider_outcomes": [],
+      "operator": "previous",
+      "model": "gpt-6-sol",
+      "alias": "C06",
+      "status": "hop_limit",
+      "attempts": 40,
+      "receipts": 40,
+      "pending_hops": [],
+      "noncompleted_receipts": [],
+      "usage_cost_upper_estimate_usd": 0.191138,
+      "retained_unknown_reserve_usd": 0.0,
+      "seed_id": "sunset",
+      "audit_performed": true,
+      "strict_json_valid_completed_passages": 40
+    },
+    "previous/gpt-6-astra": {
+      "completed_hops": 40,
+      "completed_hop_numbers": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18,
+        19,
+        20,
+        21,
+        22,
+        23,
+        24,
+        25,
+        26,
+        27,
+        28,
+        29,
+        30,
+        31,
+        32,
+        33,
+        34,
+        35,
+        36,
+        37,
+        38,
+        39,
+        40
+      ],
+      "formatting_counts_among_completed": {
+        "bare/strict": 40,
+        "markdown_fence/strict": 0,
+        "bare/allow_literal_control_characters": 0,
+        "markdown_fence/allow_literal_control_characters": 0,
+        "unextractable": 0
+      },
+      "extracted_passages_including_empty_or_changed_rule": 40,
+      "rule_survival_among_completed": {
+        "unchanged": 40,
+        "changed_or_missing": 0,
+        "unassessable_unextractable": 0
+      },
+      "empty_extracted_passage_hops": [],
+      "changed_or_missing_rule_hops": [],
+      "unextractable_completed_hops": [],
+      "full_visible_exact_recurrence": {
+        "passages": 40,
+        "unique": 40,
+        "repeated_occurrences_after_first": 0,
+        "first_repeat_hop": null,
+        "repeated_states": []
+      },
+      "full_visible_case_whitespace_normalized_recurrence": {
+        "passages": 40,
+        "unique": 40,
+        "repeated_occurrences_after_first": 0,
+        "first_repeat_hop": null,
+        "repeated_states": []
+      },
+      "extracted_text_exact_recurrence": {
+        "passages": 40,
+        "unique": 40,
+        "repeated_occurrences_after_first": 0,
+        "first_repeat_hop": null,
+        "repeated_states": []
+      },
+      "extracted_text_case_whitespace_normalized_recurrence": {
+        "passages": 40,
+        "unique": 40,
+        "repeated_occurrences_after_first": 0,
+        "first_repeat_hop": null,
+        "repeated_states": []
+      },
+      "extracted_text_word_lengths_including_empty_or_changed_rule": {
+        "n": 40,
+        "min": 251,
+        "mean": 261.25,
+        "median": 261.5,
+        "max": 271
+      },
+      "lexical_tail": {
+        "selected_completed_hops": [
+          21,
+          22,
+          23,
+          24,
+          25,
+          26,
+          27,
+          28,
+          29,
+          30,
+          31,
+          32,
+          33,
+          34,
+          35,
+          36,
+          37,
+          38,
+          39,
+          40
+        ],
+        "included_hops": [
+          21,
+          22,
+          23,
+          24,
+          25,
+          26,
+          27,
+          28,
+          29,
+          30,
+          31,
+          32,
+          33,
+          34,
+          35,
+          36,
+          37,
+          38,
+          39,
+          40
+        ],
+        "excluded_hops": []
+      },
+      "observed_consecutive_equality_events": [],
+      "consecutive_equality_counts": {
+        "full_output_exact": 0,
+        "full_output_normalized": 0,
+        "extracted_text_exact": 0,
+        "extracted_text_normalized": 0
+      },
+      "final_completed_hop": 40,
+      "final_completed_extracted_words": 261,
+      "final_completed_full_visible_words": 285,
+      "max_completed_extracted_words": 271,
+      "per_completed_hop_extracted_sizes": [
+        {
+          "hop": 1,
+          "extracted_characters": 1527,
+          "extracted_words": 262,
+          "u0000_count": 0,
+          "u_fffd_count": 0
+        },
+        {
+          "hop": 2,
+          "extracted_characters": 1455,
+          "extracted_words": 255,
+          "u0000_count": 0,
+          "u_fffd_count": 0
+        },
+        {
+          "hop": 3,
+          "extracted_characters": 1505,
+          "extracted_words": 263,
+          "u0000_count": 0,
+          "u_fffd_count": 0
+        },
+        {
+          "hop": 4,
+          "extracted_characters": 1485,
+          "extracted_words": 263,
+          "u0000_count": 0,
+          "u_fffd_count": 0
+        },
+        {
+          "hop": 5,
+          "extracted_characters": 1470,
+          "extracted_words": 261,
+          "u0000_count": 0,
+          "u_fffd_count": 0
+        },
+        {
+          "hop": 6,
+          "extracted_characters": 1547,
+          "extracted_words": 268,
+          "u0000_count": 0,
+          "u_fffd_count": 0
+        },
+        {
+          "hop": 7,
+          "extracted_characters": 1481,
+          "extracted_words": 266,
+          "u0000_count": 0,
+          "u_fffd_count": 0
+        },
+        {
+          "hop": 8,
+          "extracted_characters": 1544,
+          "extracted_words": 271,
+          "u0000_count": 0,
+          "u_fffd_count": 0
+        },
+        {
+          "hop": 9,
+          "extracted_characters": 1513,
+          "extracted_words": 269,
+          "u0000_count": 0,
+          "u_fffd_count": 0
+        },
+        {
+          "hop": 10,
+          "extracted_characters": 1409,
+          "extracted_words": 262,
+          "u0000_count": 0,
+          "u_fffd_count": 0
+        },
+        {
+          "hop": 11,
+          "extracted_characters": 1406,
+          "extracted_words": 259,
+          "u0000_count": 0,
+          "u_fffd_count": 0
+        },
+        {
+          "hop": 12,
+          "extracted_characters": 1518,
+          "extracted_words": 261,
+          "u0000_count": 0,
+          "u_fffd_count": 0
+        },
+        {
+          "hop": 13,
+          "extracted_characters": 1361,
+          "extracted_words": 251,
+          "u0000_count": 0,
+          "u_fffd_count": 0
+        },
+        {
+          "hop": 14,
+          "extracted_characters": 1362,
+          "extracted_words": 262,
+          "u0000_count": 0,
+          "u_fffd_count": 0
+        },
+        {
+          "hop": 15,
+          "extracted_characters": 1347,
+          "extracted_words": 252,
+          "u0000_count": 0,
+          "u_fffd_count": 0
+        },
+        {
+          "hop": 16,
+          "extracted_characters": 1443,
+          "extracted_words": 264,
+          "u0000_count": 0,
+          "u_fffd_count": 0
+        },
+        {
+          "hop": 17,
+          "extracted_characters": 1377,
+          "extracted_words": 254,
+          "u0000_count": 0,
+          "u_fffd_count": 0
+        },
+        {
+          "hop": 18,
+          "extracted_characters": 1446,
+          "extracted_words": 264,
+          "u0000_count": 0,
+          "u_fffd_count": 0
+        },
+        {
+          "hop": 19,
+          "extracted_characters": 1401,
+          "extracted_words": 254,
+          "u0000_count": 0,
+          "u_fffd_count": 0
+        },
+        {
+          "hop": 20,
+          "extracted_characters": 1390,
+          "extracted_words": 257,
+          "u0000_count": 0,
+          "u_fffd_count": 0
+        },
+        {
+          "hop": 21,
+          "extracted_characters": 1399,
+          "extracted_words": 263,
+          "u0000_count": 0,
+          "u_fffd_count": 0
+        },
+        {
+          "hop": 22,
+          "extracted_characters": 1494,
+          "extracted_words": 271,
+          "u0000_count": 0,
+          "u_fffd_count": 0
+        },
+        {
+          "hop": 23,
+          "extracted_characters": 1461,
+          "extracted_words": 263,
+          "u0000_count": 0,
+          "u_fffd_count": 0
+        },
+        {
+          "hop": 24,
+          "extracted_characters": 1473,
+          "extracted_words": 266,
+          "u0000_count": 0,
+          "u_fffd_count": 0
+        },
+        {
+          "hop": 25,
+          "extracted_characters": 1368,
+          "extracted_words": 257,
+          "u0000_count": 0,
+          "u_fffd_count": 0
+        },
+        {
+          "hop": 26,
+          "extracted_characters": 1445,
+          "extracted_words": 263,
+          "u0000_count": 0,
+          "u_fffd_count": 0
+        },
+        {
+          "hop": 27,
+          "extracted_characters": 1446,
+          "extracted_words": 268,
+          "u0000_count": 0,
+          "u_fffd_count": 0
+        },
+        {
+          "hop": 28,
+          "extracted_characters": 1393,
+          "extracted_words": 258,
+          "u0000_count": 0,
+          "u_fffd_count": 0
+        },
+        {
+          "hop": 29,
+          "extracted_characters": 1445,
+          "extracted_words": 259,
+          "u0000_count": 0,
+          "u_fffd_count": 0
+        },
+        {
+          "hop": 30,
+          "extracted_characters": 1447,
+          "extracted_words": 261,
+          "u0000_count": 0,
+          "u_fffd_count": 0
+        },
+        {
+          "hop": 31,
+          "extracted_characters": 1398,
+          "extracted_words": 258,
+          "u0000_count": 0,
+          "u_fffd_count": 0
+        },
+        {
+          "hop": 32,
+          "extracted_characters": 1379,
+          "extracted_words": 258,
+          "u0000_count": 0,
+          "u_fffd_count": 0
+        },
+        {
+          "hop": 33,
+          "extracted_characters": 1415,
+          "extracted_words": 257,
+          "u0000_count": 0,
+          "u_fffd_count": 0
+        },
+        {
+          "hop": 34,
+          "extracted_characters": 1457,
+          "extracted_words": 259,
+          "u0000_count": 0,
+          "u_fffd_count": 0
+        },
+        {
+          "hop": 35,
+          "extracted_characters": 1444,
+          "extracted_words": 264,
+          "u0000_count": 0,
+          "u_fffd_count": 0
+        },
+        {
+          "hop": 36,
+          "extracted_characters": 1490,
+          "extracted_words": 268,
+          "u0000_count": 0,
+          "u_fffd_count": 0
+        },
+        {
+          "hop": 37,
+          "extracted_characters": 1475,
+          "extracted_words": 262,
+          "u0000_count": 0,
+          "u_fffd_count": 0
+        },
+        {
+          "hop": 38,
+          "extracted_characters": 1322,
+          "extracted_words": 255,
+          "u0000_count": 0,
+          "u_fffd_count": 0
+        },
+        {
+          "hop": 39,
+          "extracted_characters": 1393,
+          "extracted_words": 261,
+          "u0000_count": 0,
+          "u_fffd_count": 0
+        },
+        {
+          "hop": 40,
+          "extracted_characters": 1432,
+          "extracted_words": 261,
+          "u0000_count": 0,
+          "u_fffd_count": 0
+        }
+      ],
+      "final_completed_extracted_characters": 1432,
+      "max_completed_extracted_characters": 1547,
+      "completed_extracted_character_counts": {
+        "u0000": 0,
+        "u_fffd": 0
+      },
+      "last_observed_visible_output": {
+        "hop": 40,
+        "is_completed": true,
+        "full_visible_words": 285,
+        "extracted_words": 261
+      },
+      "sampled_receipt_hops": [
+        1,
+        2,
+        3,
+        5,
+        10,
+        20,
+        30,
+        36,
+        37,
+        38,
+        39,
+        40
+      ],
+      "sampled_visible_hops": [
+        1,
+        2,
+        3,
+        5,
+        10,
+        20,
+        30,
+        36,
+        37,
+        38,
+        39,
+        40
+      ],
+      "provider_outcome_counts": {
+        "normal_visible_output": 40
+      },
+      "provider_finish_reason_counts": {
+        "stop": 40
+      },
+      "provider_refusal_hops": [],
+      "noncompleted_or_refusal_provider_outcomes": [],
+      "operator": "previous",
+      "model": "gpt-6-astra",
+      "alias": "C01",
+      "status": "hop_limit",
+      "attempts": 40,
+      "receipts": 40,
+      "pending_hops": [],
+      "noncompleted_receipts": [],
+      "usage_cost_upper_estimate_usd": 0.91763,
+      "retained_unknown_reserve_usd": 0.0,
+      "seed_id": "sunset",
+      "audit_performed": true,
+      "strict_json_valid_completed_passages": 40
+    },
+    "previous/claude-opus-5-5": {
+      "completed_hops": 40,
+      "completed_hop_numbers": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18,
+        19,
+        20,
+        21,
+        22,
+        23,
+        24,
+        25,
+        26,
+        27,
+        28,
+        29,
+        30,
+        31,
+        32,
+        33,
+        34,
+        35,
+        36,
+        37,
+        38,
+        39,
+        40
+      ],
+      "formatting_counts_among_completed": {
+        "bare/strict": 5,
+        "markdown_fence/strict": 35,
+        "bare/allow_literal_control_characters": 0,
+        "markdown_fence/allow_literal_control_characters": 0,
+        "unextractable": 0
+      },
+      "extracted_passages_including_empty_or_changed_rule": 40,
+      "rule_survival_among_completed": {
+        "unchanged": 40,
+        "changed_or_missing": 0,
+        "unassessable_unextractable": 0
+      },
+      "empty_extracted_passage_hops": [],
+      "changed_or_missing_rule_hops": [],
+      "unextractable_completed_hops": [],
+      "full_visible_exact_recurrence": {
+        "passages": 40,
+        "unique": 40,
+        "repeated_occurrences_after_first": 0,
+        "first_repeat_hop": null,
+        "repeated_states": []
+      },
+      "full_visible_case_whitespace_normalized_recurrence": {
+        "passages": 40,
+        "unique": 40,
+        "repeated_occurrences_after_first": 0,
+        "first_repeat_hop": null,
+        "repeated_states": []
+      },
+      "extracted_text_exact_recurrence": {
+        "passages": 40,
+        "unique": 40,
+        "repeated_occurrences_after_first": 0,
+        "first_repeat_hop": null,
+        "repeated_states": []
+      },
+      "extracted_text_case_whitespace_normalized_recurrence": {
+        "passages": 40,
+        "unique": 40,
+        "repeated_occurrences_after_first": 0,
+        "first_repeat_hop": null,
+        "repeated_states": []
+      },
+      "extracted_text_word_lengths_including_empty_or_changed_rule": {
+        "n": 40,
+        "min": 239,
+        "mean": 260.725,
+        "median": 260.0,
+        "max": 276
+      },
+      "lexical_tail": {
+        "selected_completed_hops": [
+          21,
+          22,
+          23,
+          24,
+          25,
+          26,
+          27,
+          28,
+          29,
+          30,
+          31,
+          32,
+          33,
+          34,
+          35,
+          36,
+          37,
+          38,
+          39,
+          40
+        ],
+        "included_hops": [
+          21,
+          22,
+          23,
+          24,
+          25,
+          26,
+          27,
+          28,
+          29,
+          30,
+          31,
+          32,
+          33,
+          34,
+          35,
+          36,
+          37,
+          38,
+          39,
+          40
+        ],
+        "excluded_hops": []
+      },
+      "observed_consecutive_equality_events": [],
+      "consecutive_equality_counts": {
+        "full_output_exact": 0,
+        "full_output_normalized": 0,
+        "extracted_text_exact": 0,
+        "extracted_text_normalized": 0
+      },
+      "final_completed_hop": 40,
+      "final_completed_extracted_words": 259,
+      "final_completed_full_visible_words": 293,
+      "max_completed_extracted_words": 276,
+      "per_completed_hop_extracted_sizes": [
+        {
+          "hop": 1,
+          "extracted_characters": 1435,
+          "extracted_words": 260,
+          "u0000_count": 0,
+          "u_fffd_count": 0
+        },
+        {
+          "hop": 2,
+          "extracted_characters": 1455,
+          "extracted_words": 260,
+          "u0000_count": 0,
+          "u_fffd_count": 0
+        },
+        {
+          "hop": 3,
+          "extracted_characters": 1343,
+          "extracted_words": 249,
+          "u0000_count": 0,
+          "u_fffd_count": 0
+        },
+        {
+          "hop": 4,
+          "extracted_characters": 1401,
+          "extracted_words": 261,
+          "u0000_count": 0,
+          "u_fffd_count": 0
+        },
+        {
+          "hop": 5,
+          "extracted_characters": 1462,
+          "extracted_words": 263,
+          "u0000_count": 0,
+          "u_fffd_count": 0
+        },
+        {
+          "hop": 6,
+          "extracted_characters": 1399,
+          "extracted_words": 258,
+          "u0000_count": 0,
+          "u_fffd_count": 0
+        },
+        {
+          "hop": 7,
+          "extracted_characters": 1398,
+          "extracted_words": 258,
+          "u0000_count": 0,
+          "u_fffd_count": 0
+        },
+        {
+          "hop": 8,
+          "extracted_characters": 1390,
+          "extracted_words": 260,
+          "u0000_count": 0,
+          "u_fffd_count": 0
+        },
+        {
+          "hop": 9,
+          "extracted_characters": 1364,
+          "extracted_words": 255,
+          "u0000_count": 0,
+          "u_fffd_count": 0
+        },
+        {
+          "hop": 10,
+          "extracted_characters": 1431,
+          "extracted_words": 264,
+          "u0000_count": 0,
+          "u_fffd_count": 0
+        },
+        {
+          "hop": 11,
+          "extracted_characters": 1404,
+          "extracted_words": 265,
+          "u0000_count": 0,
+          "u_fffd_count": 0
+        },
+        {
+          "hop": 12,
+          "extracted_characters": 1419,
+          "extracted_words": 267,
+          "u0000_count": 0,
+          "u_fffd_count": 0
+        },
+        {
+          "hop": 13,
+          "extracted_characters": 1415,
+          "extracted_words": 260,
+          "u0000_count": 0,
+          "u_fffd_count": 0
+        },
+        {
+          "hop": 14,
+          "extracted_characters": 1356,
+          "extracted_words": 265,
+          "u0000_count": 0,
+          "u_fffd_count": 0
+        },
+        {
+          "hop": 15,
+          "extracted_characters": 1449,
+          "extracted_words": 276,
+          "u0000_count": 0,
+          "u_fffd_count": 0
+        },
+        {
+          "hop": 16,
+          "extracted_characters": 1402,
+          "extracted_words": 259,
+          "u0000_count": 0,
+          "u_fffd_count": 0
+        },
+        {
+          "hop": 17,
+          "extracted_characters": 1354,
+          "extracted_words": 262,
+          "u0000_count": 0,
+          "u_fffd_count": 0
+        },
+        {
+          "hop": 18,
+          "extracted_characters": 1377,
+          "extracted_words": 265,
+          "u0000_count": 0,
+          "u_fffd_count": 0
+        },
+        {
+          "hop": 19,
+          "extracted_characters": 1371,
+          "extracted_words": 257,
+          "u0000_count": 0,
+          "u_fffd_count": 0
+        },
+        {
+          "hop": 20,
+          "extracted_characters": 1362,
+          "extracted_words": 258,
+          "u0000_count": 0,
+          "u_fffd_count": 0
+        },
+        {
+          "hop": 21,
+          "extracted_characters": 1333,
+          "extracted_words": 254,
+          "u0000_count": 0,
+          "u_fffd_count": 0
+        },
+        {
+          "hop": 22,
+          "extracted_characters": 1403,
+          "extracted_words": 253,
+          "u0000_count": 0,
+          "u_fffd_count": 0
+        },
+        {
+          "hop": 23,
+          "extracted_characters": 1428,
+          "extracted_words": 269,
+          "u0000_count": 0,
+          "u_fffd_count": 0
+        },
+        {
+          "hop": 24,
+          "extracted_characters": 1430,
+          "extracted_words": 274,
+          "u0000_count": 0,
+          "u_fffd_count": 0
+        },
+        {
+          "hop": 25,
+          "extracted_characters": 1366,
+          "extracted_words": 267,
+          "u0000_count": 0,
+          "u_fffd_count": 0
+        },
+        {
+          "hop": 26,
+          "extracted_characters": 1387,
+          "extracted_words": 261,
+          "u0000_count": 0,
+          "u_fffd_count": 0
+        },
+        {
+          "hop": 27,
+          "extracted_characters": 1437,
+          "extracted_words": 269,
+          "u0000_count": 0,
+          "u_fffd_count": 0
+        },
+        {
+          "hop": 28,
+          "extracted_characters": 1489,
+          "extracted_words": 274,
+          "u0000_count": 0,
+          "u_fffd_count": 0
+        },
+        {
+          "hop": 29,
+          "extracted_characters": 1411,
+          "extracted_words": 264,
+          "u0000_count": 0,
+          "u_fffd_count": 0
+        },
+        {
+          "hop": 30,
+          "extracted_characters": 1334,
+          "extracted_words": 239,
+          "u0000_count": 0,
+          "u_fffd_count": 0
+        },
+        {
+          "hop": 31,
+          "extracted_characters": 1387,
+          "extracted_words": 249,
+          "u0000_count": 0,
+          "u_fffd_count": 0
+        },
+        {
+          "hop": 32,
+          "extracted_characters": 1426,
+          "extracted_words": 267,
+          "u0000_count": 0,
+          "u_fffd_count": 0
+        },
+        {
+          "hop": 33,
+          "extracted_characters": 1373,
+          "extracted_words": 259,
+          "u0000_count": 0,
+          "u_fffd_count": 0
+        },
+        {
+          "hop": 34,
+          "extracted_characters": 1518,
+          "extracted_words": 272,
+          "u0000_count": 0,
+          "u_fffd_count": 0
+        },
+        {
+          "hop": 35,
+          "extracted_characters": 1416,
+          "extracted_words": 256,
+          "u0000_count": 0,
+          "u_fffd_count": 0
+        },
+        {
+          "hop": 36,
+          "extracted_characters": 1334,
+          "extracted_words": 246,
+          "u0000_count": 0,
+          "u_fffd_count": 0
+        },
+        {
+          "hop": 37,
+          "extracted_characters": 1400,
+          "extracted_words": 259,
+          "u0000_count": 0,
+          "u_fffd_count": 0
+        },
+        {
+          "hop": 38,
+          "extracted_characters": 1430,
+          "extracted_words": 259,
+          "u0000_count": 0,
+          "u_fffd_count": 0
+        },
+        {
+          "hop": 39,
+          "extracted_characters": 1378,
+          "extracted_words": 257,
+          "u0000_count": 0,
+          "u_fffd_count": 0
+        },
+        {
+          "hop": 40,
+          "extracted_characters": 1383,
+          "extracted_words": 259,
+          "u0000_count": 0,
+          "u_fffd_count": 0
+        }
+      ],
+      "final_completed_extracted_characters": 1383,
+      "max_completed_extracted_characters": 1518,
+      "completed_extracted_character_counts": {
+        "u0000": 0,
+        "u_fffd": 0
+      },
+      "last_observed_visible_output": {
+        "hop": 40,
+        "is_completed": true,
+        "full_visible_words": 293,
+        "extracted_words": 259
+      },
+      "sampled_receipt_hops": [
+        1,
+        2,
+        3,
+        5,
+        10,
+        20,
+        30,
+        36,
+        37,
+        38,
+        39,
+        40
+      ],
+      "sampled_visible_hops": [
+        1,
+        2,
+        3,
+        5,
+        10,
+        20,
+        30,
+        36,
+        37,
+        38,
+        39,
+        40
+      ],
+      "provider_outcome_counts": {
+        "normal_visible_output": 40
+      },
+      "provider_finish_reason_counts": {
+        "end_turn": 40
+      },
+      "provider_refusal_hops": [],
+      "noncompleted_or_refusal_provider_outcomes": [],
+      "operator": "previous",
+      "model": "claude-opus-5-5",
+      "alias": "C08",
+      "status": "hop_limit",
+      "attempts": 40,
+      "receipts": 40,
+      "pending_hops": [],
+      "noncompleted_receipts": [],
+      "usage_cost_upper_estimate_usd": 0.640844,
+      "retained_unknown_reserve_usd": 0.0,
+      "seed_id": "sunset",
+      "audit_performed": true,
+      "strict_json_valid_completed_passages": 5
+    },
+    "next/gpt-6-luna": {
+      "completed_hops": 40,
+      "completed_hop_numbers": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18,
+        19,
+        20,
+        21,
+        22,
+        23,
+        24,
+        25,
+        26,
+        27,
+        28,
+        29,
+        30,
+        31,
+        32,
+        33,
+        34,
+        35,
+        36,
+        37,
+        38,
+        39,
+        40
+      ],
+      "formatting_counts_among_completed": {
+        "bare/strict": 1,
+        "markdown_fence/strict": 0,
+        "bare/allow_literal_control_characters": 39,
+        "markdown_fence/allow_literal_control_characters": 0,
+        "unextractable": 0
+      },
+      "extracted_passages_including_empty_or_changed_rule": 40,
+      "rule_survival_among_completed": {
+        "unchanged": 40,
+        "changed_or_missing": 0,
+        "unassessable_unextractable": 0
+      },
+      "empty_extracted_passage_hops": [],
+      "changed_or_missing_rule_hops": [],
+      "unextractable_completed_hops": [],
+      "full_visible_exact_recurrence": {
+        "passages": 40,
+        "unique": 40,
+        "repeated_occurrences_after_first": 0,
+        "first_repeat_hop": null,
+        "repeated_states": []
+      },
+      "full_visible_case_whitespace_normalized_recurrence": {
+        "passages": 40,
+        "unique": 40,
+        "repeated_occurrences_after_first": 0,
+        "first_repeat_hop": null,
+        "repeated_states": []
+      },
+      "extracted_text_exact_recurrence": {
+        "passages": 40,
+        "unique": 40,
+        "repeated_occurrences_after_first": 0,
+        "first_repeat_hop": null,
+        "repeated_states": []
+      },
+      "extracted_text_case_whitespace_normalized_recurrence": {
+        "passages": 40,
+        "unique": 40,
+        "repeated_occurrences_after_first": 0,
+        "first_repeat_hop": null,
+        "repeated_states": []
+      },
+      "extracted_text_word_lengths_including_empty_or_changed_rule": {
+        "n": 40,
+        "min": 250,
+        "mean": 272.05,
+        "median": 273.5,
+        "max": 293
+      },
+      "lexical_tail": {
+        "selected_completed_hops": [
+          21,
+          22,
+          23,
+          24,
+          25,
+          26,
+          27,
+          28,
+          29,
+          30,
+          31,
+          32,
+          33,
+          34,
+          35,
+          36,
+          37,
+          38,
+          39,
+          40
+        ],
+        "included_hops": [
+          21,
+          22,
+          23,
+          24,
+          25,
+          26,
+          27,
+          28,
+          29,
+          30,
+          31,
+          32,
+          33,
+          34,
+          35,
+          36,
+          37,
+          38,
+          39,
+          40
+        ],
+        "excluded_hops": []
+      },
+      "observed_consecutive_equality_events": [],
+      "consecutive_equality_counts": {
+        "full_output_exact": 0,
+        "full_output_normalized": 0,
+        "extracted_text_exact": 0,
+        "extracted_text_normalized": 0
+      },
+      "final_completed_hop": 40,
+      "final_completed_extracted_words": 257,
+      "final_completed_full_visible_words": 290,
+      "max_completed_extracted_words": 293,
+      "per_completed_hop_extracted_sizes": [
+        {
+          "hop": 1,
+          "extracted_characters": 1465,
+          "extracted_words": 258,
+          "u0000_count": 0,
+          "u_fffd_count": 0
+        },
+        {
+          "hop": 2,
+          "extracted_characters": 1617,
+          "extracted_words": 277,
+          "u0000_count": 0,
+          "u_fffd_count": 0
+        },
+        {
+          "hop": 3,
+          "extracted_characters": 1516,
+          "extracted_words": 264,
+          "u0000_count": 0,
+          "u_fffd_count": 0
+        },
+        {
+          "hop": 4,
+          "extracted_characters": 1519,
+          "extracted_words": 272,
+          "u0000_count": 0,
+          "u_fffd_count": 0
+        },
+        {
+          "hop": 5,
+          "extracted_characters": 1563,
+          "extracted_words": 270,
+          "u0000_count": 0,
+          "u_fffd_count": 0
+        },
+        {
+          "hop": 6,
+          "extracted_characters": 1535,
+          "extracted_words": 265,
+          "u0000_count": 0,
+          "u_fffd_count": 0
+        },
+        {
+          "hop": 7,
+          "extracted_characters": 1611,
+          "extracted_words": 279,
+          "u0000_count": 0,
+          "u_fffd_count": 0
+        },
+        {
+          "hop": 8,
+          "extracted_characters": 1496,
+          "extracted_words": 259,
+          "u0000_count": 0,
+          "u_fffd_count": 0
+        },
+        {
+          "hop": 9,
+          "extracted_characters": 1551,
+          "extracted_words": 273,
+          "u0000_count": 0,
+          "u_fffd_count": 0
+        },
+        {
+          "hop": 10,
+          "extracted_characters": 1602,
+          "extracted_words": 277,
+          "u0000_count": 0,
+          "u_fffd_count": 0
+        },
+        {
+          "hop": 11,
+          "extracted_characters": 1499,
+          "extracted_words": 250,
+          "u0000_count": 0,
+          "u_fffd_count": 0
+        },
+        {
+          "hop": 12,
+          "extracted_characters": 1623,
+          "extracted_words": 283,
+          "u0000_count": 0,
+          "u_fffd_count": 0
+        },
+        {
+          "hop": 13,
+          "extracted_characters": 1523,
+          "extracted_words": 266,
+          "u0000_count": 0,
+          "u_fffd_count": 0
+        },
+        {
+          "hop": 14,
+          "extracted_characters": 1497,
+          "extracted_words": 263,
+          "u0000_count": 0,
+          "u_fffd_count": 0
+        },
+        {
+          "hop": 15,
+          "extracted_characters": 1512,
+          "extracted_words": 267,
+          "u0000_count": 0,
+          "u_fffd_count": 0
+        },
+        {
+          "hop": 16,
+          "extracted_characters": 1582,
+          "extracted_words": 280,
+          "u0000_count": 0,
+          "u_fffd_count": 0
+        },
+        {
+          "hop": 17,
+          "extracted_characters": 1572,
+          "extracted_words": 275,
+          "u0000_count": 0,
+          "u_fffd_count": 0
+        },
+        {
+          "hop": 18,
+          "extracted_characters": 1679,
+          "extracted_words": 291,
+          "u0000_count": 0,
+          "u_fffd_count": 0
+        },
+        {
+          "hop": 19,
+          "extracted_characters": 1599,
+          "extracted_words": 268,
+          "u0000_count": 0,
+          "u_fffd_count": 0
+        },
+        {
+          "hop": 20,
+          "extracted_characters": 1474,
+          "extracted_words": 259,
+          "u0000_count": 0,
+          "u_fffd_count": 0
+        },
+        {
+          "hop": 21,
+          "extracted_characters": 1595,
+          "extracted_words": 286,
+          "u0000_count": 0,
+          "u_fffd_count": 0
+        },
+        {
+          "hop": 22,
+          "extracted_characters": 1530,
+          "extracted_words": 276,
+          "u0000_count": 0,
+          "u_fffd_count": 0
+        },
+        {
+          "hop": 23,
+          "extracted_characters": 1509,
+          "extracted_words": 264,
+          "u0000_count": 0,
+          "u_fffd_count": 0
+        },
+        {
+          "hop": 24,
+          "extracted_characters": 1510,
+          "extracted_words": 262,
+          "u0000_count": 0,
+          "u_fffd_count": 0
+        },
+        {
+          "hop": 25,
+          "extracted_characters": 1572,
+          "extracted_words": 274,
+          "u0000_count": 0,
+          "u_fffd_count": 0
+        },
+        {
+          "hop": 26,
+          "extracted_characters": 1656,
+          "extracted_words": 279,
+          "u0000_count": 0,
+          "u_fffd_count": 0
+        },
+        {
+          "hop": 27,
+          "extracted_characters": 1524,
+          "extracted_words": 272,
+          "u0000_count": 0,
+          "u_fffd_count": 0
+        },
+        {
+          "hop": 28,
+          "extracted_characters": 1497,
+          "extracted_words": 272,
+          "u0000_count": 0,
+          "u_fffd_count": 0
+        },
+        {
+          "hop": 29,
+          "extracted_characters": 1628,
+          "extracted_words": 293,
+          "u0000_count": 0,
+          "u_fffd_count": 0
+        },
+        {
+          "hop": 30,
+          "extracted_characters": 1572,
+          "extracted_words": 279,
+          "u0000_count": 0,
+          "u_fffd_count": 0
+        },
+        {
+          "hop": 31,
+          "extracted_characters": 1510,
+          "extracted_words": 265,
+          "u0000_count": 0,
+          "u_fffd_count": 0
+        },
+        {
+          "hop": 32,
+          "extracted_characters": 1559,
+          "extracted_words": 276,
+          "u0000_count": 0,
+          "u_fffd_count": 0
+        },
+        {
+          "hop": 33,
+          "extracted_characters": 1537,
+          "extracted_words": 279,
+          "u0000_count": 0,
+          "u_fffd_count": 0
+        },
+        {
+          "hop": 34,
+          "extracted_characters": 1583,
+          "extracted_words": 275,
+          "u0000_count": 0,
+          "u_fffd_count": 0
+        },
+        {
+          "hop": 35,
+          "extracted_characters": 1539,
+          "extracted_words": 276,
+          "u0000_count": 0,
+          "u_fffd_count": 0
+        },
+        {
+          "hop": 36,
+          "extracted_characters": 1584,
+          "extracted_words": 276,
+          "u0000_count": 0,
+          "u_fffd_count": 0
+        },
+        {
+          "hop": 37,
+          "extracted_characters": 1446,
+          "extracted_words": 263,
+          "u0000_count": 0,
+          "u_fffd_count": 0
+        },
+        {
+          "hop": 38,
+          "extracted_characters": 1547,
+          "extracted_words": 278,
+          "u0000_count": 0,
+          "u_fffd_count": 0
+        },
+        {
+          "hop": 39,
+          "extracted_characters": 1590,
+          "extracted_words": 284,
+          "u0000_count": 0,
+          "u_fffd_count": 0
+        },
+        {
+          "hop": 40,
+          "extracted_characters": 1479,
+          "extracted_words": 257,
+          "u0000_count": 0,
+          "u_fffd_count": 0
+        }
+      ],
+      "final_completed_extracted_characters": 1479,
+      "max_completed_extracted_characters": 1679,
+      "completed_extracted_character_counts": {
+        "u0000": 0,
+        "u_fffd": 0
+      },
+      "last_observed_visible_output": {
+        "hop": 40,
+        "is_completed": true,
+        "full_visible_words": 290,
+        "extracted_words": 257
+      },
+      "sampled_receipt_hops": [
+        1,
+        2,
+        3,
+        5,
+        10,
+        20,
+        30,
+        36,
+        37,
+        38,
+        39,
+        40
+      ],
+      "sampled_visible_hops": [
+        1,
+        2,
+        3,
+        5,
+        10,
+        20,
+        30,
+        36,
+        37,
+        38,
+        39,
+        40
+      ],
+      "provider_outcome_counts": {
+        "normal_visible_output": 40
+      },
+      "provider_finish_reason_counts": {
+        "stop": 40
+      },
+      "provider_refusal_hops": [],
+      "noncompleted_or_refusal_provider_outcomes": [],
+      "operator": "next",
+      "model": "gpt-6-luna",
+      "alias": "C02",
+      "status": "hop_limit",
+      "attempts": 40,
+      "receipts": 40,
+      "pending_hops": [],
+      "noncompleted_receipts": [],
+      "usage_cost_upper_estimate_usd": 0.0113391,
+      "retained_unknown_reserve_usd": 0.0,
+      "seed_id": "sunset",
+      "audit_performed": true,
+      "strict_json_valid_completed_passages": 1
+    },
+    "next/gpt-6-sol": {
+      "completed_hops": 40,
+      "completed_hop_numbers": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18,
+        19,
+        20,
+        21,
+        22,
+        23,
+        24,
+        25,
+        26,
+        27,
+        28,
+        29,
+        30,
+        31,
+        32,
+        33,
+        34,
+        35,
+        36,
+        37,
+        38,
+        39,
+        40
+      ],
+      "formatting_counts_among_completed": {
+        "bare/strict": 40,
+        "markdown_fence/strict": 0,
+        "bare/allow_literal_control_characters": 0,
+        "markdown_fence/allow_literal_control_characters": 0,
+        "unextractable": 0
+      },
+      "extracted_passages_including_empty_or_changed_rule": 40,
+      "rule_survival_among_completed": {
+        "unchanged": 40,
+        "changed_or_missing": 0,
+        "unassessable_unextractable": 0
+      },
+      "empty_extracted_passage_hops": [],
+      "changed_or_missing_rule_hops": [],
+      "unextractable_completed_hops": [],
+      "full_visible_exact_recurrence": {
+        "passages": 40,
+        "unique": 40,
+        "repeated_occurrences_after_first": 0,
+        "first_repeat_hop": null,
+        "repeated_states": []
+      },
+      "full_visible_case_whitespace_normalized_recurrence": {
+        "passages": 40,
+        "unique": 40,
+        "repeated_occurrences_after_first": 0,
+        "first_repeat_hop": null,
+        "repeated_states": []
+      },
+      "extracted_text_exact_recurrence": {
+        "passages": 40,
+        "unique": 40,
+        "repeated_occurrences_after_first": 0,
+        "first_repeat_hop": null,
+        "repeated_states": []
+      },
+      "extracted_text_case_whitespace_normalized_recurrence": {
+        "passages": 40,
+        "unique": 40,
+        "repeated_occurrences_after_first": 0,
+        "first_repeat_hop": null,
+        "repeated_states": []
+      },
+      "extracted_text_word_lengths_including_empty_or_changed_rule": {
+        "n": 40,
+        "min": 242,
+        "mean": 259.075,
+        "median": 256.0,
+        "max": 287
+      },
+      "lexical_tail": {
+        "selected_completed_hops": [
+          21,
+          22,
+          23,
+          24,
+          25,
+          26,
+          27,
+          28,
+          29,
+          30,
+          31,
+          32,
+          33,
+          34,
+          35,
+          36,
+          37,
+          38,
+          39,
+          40
+        ],
+        "included_hops": [
+          21,
+          22,
+          23,
+          24,
+          25,
+          26,
+          27,
+          28,
+          29,
+          30,
+          31,
+          32,
+          33,
+          34,
+          35,
+          36,
+          37,
+          38,
+          39,
+          40
+        ],
+        "excluded_hops": []
+      },
+      "observed_consecutive_equality_events": [],
+      "consecutive_equality_counts": {
+        "full_output_exact": 0,
+        "full_output_normalized": 0,
+        "extracted_text_exact": 0,
+        "extracted_text_normalized": 0
+      },
+      "final_completed_hop": 40,
+      "final_completed_extracted_words": 247,
+      "final_completed_full_visible_words": 268,
+      "max_completed_extracted_words": 287,
+      "per_completed_hop_extracted_sizes": [
+        {
+          "hop": 1,
+          "extracted_characters": 1455,
+          "extracted_words": 255,
+          "u0000_count": 0,
+          "u_fffd_count": 0
+        },
+        {
+          "hop": 2,
+          "extracted_characters": 1467,
+          "extracted_words": 268,
+          "u0000_count": 0,
+          "u_fffd_count": 0
+        },
+        {
+          "hop": 3,
+          "extracted_characters": 1404,
+          "extracted_words": 255,
+          "u0000_count": 0,
+          "u_fffd_count": 0
+        },
+        {
+          "hop": 4,
+          "extracted_characters": 1389,
+          "extracted_words": 252,
+          "u0000_count": 0,
+          "u_fffd_count": 0
+        },
+        {
+          "hop": 5,
+          "extracted_characters": 1452,
+          "extracted_words": 256,
+          "u0000_count": 0,
+          "u_fffd_count": 0
+        },
+        {
+          "hop": 6,
+          "extracted_characters": 1374,
+          "extracted_words": 249,
+          "u0000_count": 0,
+          "u_fffd_count": 0
+        },
+        {
+          "hop": 7,
+          "extracted_characters": 1542,
+          "extracted_words": 276,
+          "u0000_count": 0,
+          "u_fffd_count": 0
+        },
+        {
+          "hop": 8,
+          "extracted_characters": 1378,
+          "extracted_words": 256,
+          "u0000_count": 0,
+          "u_fffd_count": 0
+        },
+        {
+          "hop": 9,
+          "extracted_characters": 1381,
+          "extracted_words": 254,
+          "u0000_count": 0,
+          "u_fffd_count": 0
+        },
+        {
+          "hop": 10,
+          "extracted_characters": 1340,
+          "extracted_words": 242,
+          "u0000_count": 0,
+          "u_fffd_count": 0
+        },
+        {
+          "hop": 11,
+          "extracted_characters": 1348,
+          "extracted_words": 253,
+          "u0000_count": 0,
+          "u_fffd_count": 0
+        },
+        {
+          "hop": 12,
+          "extracted_characters": 1424,
+          "extracted_words": 268,
+          "u0000_count": 0,
+          "u_fffd_count": 0
+        },
+        {
+          "hop": 13,
+          "extracted_characters": 1438,
+          "extracted_words": 261,
+          "u0000_count": 0,
+          "u_fffd_count": 0
+        },
+        {
+          "hop": 14,
+          "extracted_characters": 1379,
+          "extracted_words": 255,
+          "u0000_count": 0,
+          "u_fffd_count": 0
+        },
+        {
+          "hop": 15,
+          "extracted_characters": 1495,
+          "extracted_words": 274,
+          "u0000_count": 0,
+          "u_fffd_count": 0
+        },
+        {
+          "hop": 16,
+          "extracted_characters": 1590,
+          "extracted_words": 287,
+          "u0000_count": 0,
+          "u_fffd_count": 0
+        },
+        {
+          "hop": 17,
+          "extracted_characters": 1450,
+          "extracted_words": 262,
+          "u0000_count": 0,
+          "u_fffd_count": 0
+        },
+        {
+          "hop": 18,
+          "extracted_characters": 1313,
+          "extracted_words": 249,
+          "u0000_count": 0,
+          "u_fffd_count": 0
+        },
+        {
+          "hop": 19,
+          "extracted_characters": 1484,
+          "extracted_words": 269,
+          "u0000_count": 0,
+          "u_fffd_count": 0
+        },
+        {
+          "hop": 20,
+          "extracted_characters": 1416,
+          "extracted_words": 255,
+          "u0000_count": 0,
+          "u_fffd_count": 0
+        },
+        {
+          "hop": 21,
+          "extracted_characters": 1431,
+          "extracted_words": 261,
+          "u0000_count": 0,
+          "u_fffd_count": 0
+        },
+        {
+          "hop": 22,
+          "extracted_characters": 1431,
+          "extracted_words": 262,
+          "u0000_count": 0,
+          "u_fffd_count": 0
+        },
+        {
+          "hop": 23,
+          "extracted_characters": 1457,
+          "extracted_words": 258,
+          "u0000_count": 0,
+          "u_fffd_count": 0
+        },
+        {
+          "hop": 24,
+          "extracted_characters": 1480,
+          "extracted_words": 261,
+          "u0000_count": 0,
+          "u_fffd_count": 0
+        },
+        {
+          "hop": 25,
+          "extracted_characters": 1405,
+          "extracted_words": 255,
+          "u0000_count": 0,
+          "u_fffd_count": 0
+        },
+        {
+          "hop": 26,
+          "extracted_characters": 1440,
+          "extracted_words": 255,
+          "u0000_count": 0,
+          "u_fffd_count": 0
+        },
+        {
+          "hop": 27,
+          "extracted_characters": 1399,
+          "extracted_words": 248,
+          "u0000_count": 0,
+          "u_fffd_count": 0
+        },
+        {
+          "hop": 28,
+          "extracted_characters": 1522,
+          "extracted_words": 267,
+          "u0000_count": 0,
+          "u_fffd_count": 0
+        },
+        {
+          "hop": 29,
+          "extracted_characters": 1469,
+          "extracted_words": 256,
+          "u0000_count": 0,
+          "u_fffd_count": 0
+        },
+        {
+          "hop": 30,
+          "extracted_characters": 1503,
+          "extracted_words": 270,
+          "u0000_count": 0,
+          "u_fffd_count": 0
+        },
+        {
+          "hop": 31,
+          "extracted_characters": 1397,
+          "extracted_words": 253,
+          "u0000_count": 0,
+          "u_fffd_count": 0
+        },
+        {
+          "hop": 32,
+          "extracted_characters": 1483,
+          "extracted_words": 271,
+          "u0000_count": 0,
+          "u_fffd_count": 0
+        },
+        {
+          "hop": 33,
+          "extracted_characters": 1407,
+          "extracted_words": 256,
+          "u0000_count": 0,
+          "u_fffd_count": 0
+        },
+        {
+          "hop": 34,
+          "extracted_characters": 1378,
+          "extracted_words": 250,
+          "u0000_count": 0,
+          "u_fffd_count": 0
+        },
+        {
+          "hop": 35,
+          "extracted_characters": 1391,
+          "extracted_words": 266,
+          "u0000_count": 0,
+          "u_fffd_count": 0
+        },
+        {
+          "hop": 36,
+          "extracted_characters": 1373,
+          "extracted_words": 260,
+          "u0000_count": 0,
+          "u_fffd_count": 0
+        },
+        {
+          "hop": 37,
+          "extracted_characters": 1413,
+          "extracted_words": 261,
+          "u0000_count": 0,
+          "u_fffd_count": 0
+        },
+        {
+          "hop": 38,
+          "extracted_characters": 1406,
+          "extracted_words": 257,
+          "u0000_count": 0,
+          "u_fffd_count": 0
+        },
+        {
+          "hop": 39,
+          "extracted_characters": 1378,
+          "extracted_words": 253,
+          "u0000_count": 0,
+          "u_fffd_count": 0
+        },
+        {
+          "hop": 40,
+          "extracted_characters": 1343,
+          "extracted_words": 247,
+          "u0000_count": 0,
+          "u_fffd_count": 0
+        }
+      ],
+      "final_completed_extracted_characters": 1343,
+      "max_completed_extracted_characters": 1590,
+      "completed_extracted_character_counts": {
+        "u0000": 0,
+        "u_fffd": 0
+      },
+      "last_observed_visible_output": {
+        "hop": 40,
+        "is_completed": true,
+        "full_visible_words": 268,
+        "extracted_words": 247
+      },
+      "sampled_receipt_hops": [
+        1,
+        2,
+        3,
+        5,
+        10,
+        20,
+        30,
+        36,
+        37,
+        38,
+        39,
+        40
+      ],
+      "sampled_visible_hops": [
+        1,
+        2,
+        3,
+        5,
+        10,
+        20,
+        30,
+        36,
+        37,
+        38,
+        39,
+        40
+      ],
+      "provider_outcome_counts": {
+        "normal_visible_output": 40
+      },
+      "provider_finish_reason_counts": {
+        "stop": 40
+      },
+      "provider_refusal_hops": [],
+      "noncompleted_or_refusal_provider_outcomes": [],
+      "operator": "next",
+      "model": "gpt-6-sol",
+      "alias": "C07",
+      "status": "hop_limit",
+      "attempts": 40,
+      "receipts": 40,
+      "pending_hops": [],
+      "noncompleted_receipts": [],
+      "usage_cost_upper_estimate_usd": 0.200712,
+      "retained_unknown_reserve_usd": 0.0,
+      "seed_id": "sunset",
+      "audit_performed": true,
+      "strict_json_valid_completed_passages": 40
+    },
+    "next/gpt-6-astra": {
+      "completed_hops": 40,
+      "completed_hop_numbers": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18,
+        19,
+        20,
+        21,
+        22,
+        23,
+        24,
+        25,
+        26,
+        27,
+        28,
+        29,
+        30,
+        31,
+        32,
+        33,
+        34,
+        35,
+        36,
+        37,
+        38,
+        39,
+        40
+      ],
+      "formatting_counts_among_completed": {
+        "bare/strict": 40,
+        "markdown_fence/strict": 0,
+        "bare/allow_literal_control_characters": 0,
+        "markdown_fence/allow_literal_control_characters": 0,
+        "unextractable": 0
+      },
+      "extracted_passages_including_empty_or_changed_rule": 40,
+      "rule_survival_among_completed": {
+        "unchanged": 40,
+        "changed_or_missing": 0,
+        "unassessable_unextractable": 0
+      },
+      "empty_extracted_passage_hops": [],
+      "changed_or_missing_rule_hops": [],
+      "unextractable_completed_hops": [],
+      "full_visible_exact_recurrence": {
+        "passages": 40,
+        "unique": 40,
+        "repeated_occurrences_after_first": 0,
+        "first_repeat_hop": null,
+        "repeated_states": []
+      },
+      "full_visible_case_whitespace_normalized_recurrence": {
+        "passages": 40,
+        "unique": 40,
+        "repeated_occurrences_after_first": 0,
+        "first_repeat_hop": null,
+        "repeated_states": []
+      },
+      "extracted_text_exact_recurrence": {
+        "passages": 40,
+        "unique": 40,
+        "repeated_occurrences_after_first": 0,
+        "first_repeat_hop": null,
+        "repeated_states": []
+      },
+      "extracted_text_case_whitespace_normalized_recurrence": {
+        "passages": 40,
+        "unique": 40,
+        "repeated_occurrences_after_first": 0,
+        "first_repeat_hop": null,
+        "repeated_states": []
+      },
+      "extracted_text_word_lengths_including_empty_or_changed_rule": {
+        "n": 40,
+        "min": 250,
+        "mean": 262.475,
+        "median": 263.0,
+        "max": 272
+      },
+      "lexical_tail": {
+        "selected_completed_hops": [
+          21,
+          22,
+          23,
+          24,
+          25,
+          26,
+          27,
+          28,
+          29,
+          30,
+          31,
+          32,
+          33,
+          34,
+          35,
+          36,
+          37,
+          38,
+          39,
+          40
+        ],
+        "included_hops": [
+          21,
+          22,
+          23,
+          24,
+          25,
+          26,
+          27,
+          28,
+          29,
+          30,
+          31,
+          32,
+          33,
+          34,
+          35,
+          36,
+          37,
+          38,
+          39,
+          40
+        ],
+        "excluded_hops": []
+      },
+      "observed_consecutive_equality_events": [],
+      "consecutive_equality_counts": {
+        "full_output_exact": 0,
+        "full_output_normalized": 0,
+        "extracted_text_exact": 0,
+        "extracted_text_normalized": 0
+      },
+      "final_completed_hop": 40,
+      "final_completed_extracted_words": 264,
+      "final_completed_full_visible_words": 281,
+      "max_completed_extracted_words": 272,
+      "per_completed_hop_extracted_sizes": [
+        {
+          "hop": 1,
+          "extracted_characters": 1521,
+          "extracted_words": 263,
+          "u0000_count": 0,
+          "u_fffd_count": 0
+        },
+        {
+          "hop": 2,
+          "extracted_characters": 1539,
+          "extracted_words": 262,
+          "u0000_count": 0,
+          "u_fffd_count": 0
+        },
+        {
+          "hop": 3,
+          "extracted_characters": 1474,
+          "extracted_words": 258,
+          "u0000_count": 0,
+          "u_fffd_count": 0
+        },
+        {
+          "hop": 4,
+          "extracted_characters": 1534,
+          "extracted_words": 264,
+          "u0000_count": 0,
+          "u_fffd_count": 0
+        },
+        {
+          "hop": 5,
+          "extracted_characters": 1486,
+          "extracted_words": 260,
+          "u0000_count": 0,
+          "u_fffd_count": 0
+        },
+        {
+          "hop": 6,
+          "extracted_characters": 1513,
+          "extracted_words": 263,
+          "u0000_count": 0,
+          "u_fffd_count": 0
+        },
+        {
+          "hop": 7,
+          "extracted_characters": 1486,
+          "extracted_words": 265,
+          "u0000_count": 0,
+          "u_fffd_count": 0
+        },
+        {
+          "hop": 8,
+          "extracted_characters": 1542,
+          "extracted_words": 272,
+          "u0000_count": 0,
+          "u_fffd_count": 0
+        },
+        {
+          "hop": 9,
+          "extracted_characters": 1477,
+          "extracted_words": 267,
+          "u0000_count": 0,
+          "u_fffd_count": 0
+        },
+        {
+          "hop": 10,
+          "extracted_characters": 1446,
+          "extracted_words": 260,
+          "u0000_count": 0,
+          "u_fffd_count": 0
+        },
+        {
+          "hop": 11,
+          "extracted_characters": 1398,
+          "extracted_words": 259,
+          "u0000_count": 0,
+          "u_fffd_count": 0
+        },
+        {
+          "hop": 12,
+          "extracted_characters": 1446,
+          "extracted_words": 263,
+          "u0000_count": 0,
+          "u_fffd_count": 0
+        },
+        {
+          "hop": 13,
+          "extracted_characters": 1469,
+          "extracted_words": 270,
+          "u0000_count": 0,
+          "u_fffd_count": 0
+        },
+        {
+          "hop": 14,
+          "extracted_characters": 1396,
+          "extracted_words": 258,
+          "u0000_count": 0,
+          "u_fffd_count": 0
+        },
+        {
+          "hop": 15,
+          "extracted_characters": 1467,
+          "extracted_words": 263,
+          "u0000_count": 0,
+          "u_fffd_count": 0
+        },
+        {
+          "hop": 16,
+          "extracted_characters": 1390,
+          "extracted_words": 258,
+          "u0000_count": 0,
+          "u_fffd_count": 0
+        },
+        {
+          "hop": 17,
+          "extracted_characters": 1401,
+          "extracted_words": 258,
+          "u0000_count": 0,
+          "u_fffd_count": 0
+        },
+        {
+          "hop": 18,
+          "extracted_characters": 1460,
+          "extracted_words": 266,
+          "u0000_count": 0,
+          "u_fffd_count": 0
+        },
+        {
+          "hop": 19,
+          "extracted_characters": 1443,
+          "extracted_words": 270,
+          "u0000_count": 0,
+          "u_fffd_count": 0
+        },
+        {
+          "hop": 20,
+          "extracted_characters": 1400,
+          "extracted_words": 258,
+          "u0000_count": 0,
+          "u_fffd_count": 0
+        },
+        {
+          "hop": 21,
+          "extracted_characters": 1437,
+          "extracted_words": 262,
+          "u0000_count": 0,
+          "u_fffd_count": 0
+        },
+        {
+          "hop": 22,
+          "extracted_characters": 1515,
+          "extracted_words": 266,
+          "u0000_count": 0,
+          "u_fffd_count": 0
+        },
+        {
+          "hop": 23,
+          "extracted_characters": 1377,
+          "extracted_words": 250,
+          "u0000_count": 0,
+          "u_fffd_count": 0
+        },
+        {
+          "hop": 24,
+          "extracted_characters": 1516,
+          "extracted_words": 269,
+          "u0000_count": 0,
+          "u_fffd_count": 0
+        },
+        {
+          "hop": 25,
+          "extracted_characters": 1406,
+          "extracted_words": 256,
+          "u0000_count": 0,
+          "u_fffd_count": 0
+        },
+        {
+          "hop": 26,
+          "extracted_characters": 1465,
+          "extracted_words": 265,
+          "u0000_count": 0,
+          "u_fffd_count": 0
+        },
+        {
+          "hop": 27,
+          "extracted_characters": 1492,
+          "extracted_words": 263,
+          "u0000_count": 0,
+          "u_fffd_count": 0
+        },
+        {
+          "hop": 28,
+          "extracted_characters": 1419,
+          "extracted_words": 258,
+          "u0000_count": 0,
+          "u_fffd_count": 0
+        },
+        {
+          "hop": 29,
+          "extracted_characters": 1410,
+          "extracted_words": 255,
+          "u0000_count": 0,
+          "u_fffd_count": 0
+        },
+        {
+          "hop": 30,
+          "extracted_characters": 1522,
+          "extracted_words": 270,
+          "u0000_count": 0,
+          "u_fffd_count": 0
+        },
+        {
+          "hop": 31,
+          "extracted_characters": 1399,
+          "extracted_words": 257,
+          "u0000_count": 0,
+          "u_fffd_count": 0
+        },
+        {
+          "hop": 32,
+          "extracted_characters": 1484,
+          "extracted_words": 266,
+          "u0000_count": 0,
+          "u_fffd_count": 0
+        },
+        {
+          "hop": 33,
+          "extracted_characters": 1421,
+          "extracted_words": 257,
+          "u0000_count": 0,
+          "u_fffd_count": 0
+        },
+        {
+          "hop": 34,
+          "extracted_characters": 1488,
+          "extracted_words": 267,
+          "u0000_count": 0,
+          "u_fffd_count": 0
+        },
+        {
+          "hop": 35,
+          "extracted_characters": 1435,
+          "extracted_words": 265,
+          "u0000_count": 0,
+          "u_fffd_count": 0
+        },
+        {
+          "hop": 36,
+          "extracted_characters": 1539,
+          "extracted_words": 271,
+          "u0000_count": 0,
+          "u_fffd_count": 0
+        },
+        {
+          "hop": 37,
+          "extracted_characters": 1428,
+          "extracted_words": 256,
+          "u0000_count": 0,
+          "u_fffd_count": 0
+        },
+        {
+          "hop": 38,
+          "extracted_characters": 1514,
+          "extracted_words": 262,
+          "u0000_count": 0,
+          "u_fffd_count": 0
+        },
+        {
+          "hop": 39,
+          "extracted_characters": 1474,
+          "extracted_words": 263,
+          "u0000_count": 0,
+          "u_fffd_count": 0
+        },
+        {
+          "hop": 40,
+          "extracted_characters": 1464,
+          "extracted_words": 264,
+          "u0000_count": 0,
+          "u_fffd_count": 0
+        }
+      ],
+      "final_completed_extracted_characters": 1464,
+      "max_completed_extracted_characters": 1542,
+      "completed_extracted_character_counts": {
+        "u0000": 0,
+        "u_fffd": 0
+      },
+      "last_observed_visible_output": {
+        "hop": 40,
+        "is_completed": true,
+        "full_visible_words": 281,
+        "extracted_words": 264
+      },
+      "sampled_receipt_hops": [
+        1,
+        2,
+        3,
+        5,
+        10,
+        20,
+        30,
+        36,
+        37,
+        38,
+        39,
+        40
+      ],
+      "sampled_visible_hops": [
+        1,
+        2,
+        3,
+        5,
+        10,
+        20,
+        30,
+        36,
+        37,
+        38,
+        39,
+        40
+      ],
+      "provider_outcome_counts": {
+        "normal_visible_output": 40
+      },
+      "provider_finish_reason_counts": {
+        "stop": 40
+      },
+      "provider_refusal_hops": [],
+      "noncompleted_or_refusal_provider_outcomes": [],
+      "operator": "next",
+      "model": "gpt-6-astra",
+      "alias": "C04",
+      "status": "hop_limit",
+      "attempts": 40,
+      "receipts": 40,
+      "pending_hops": [],
+      "noncompleted_receipts": [],
+      "usage_cost_upper_estimate_usd": 1.03764,
+      "retained_unknown_reserve_usd": 0.0,
+      "seed_id": "sunset",
+      "audit_performed": true,
+      "strict_json_valid_completed_passages": 40
+    },
+    "next/claude-opus-5-5": {
+      "completed_hops": 40,
+      "completed_hop_numbers": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18,
+        19,
+        20,
+        21,
+        22,
+        23,
+        24,
+        25,
+        26,
+        27,
+        28,
+        29,
+        30,
+        31,
+        32,
+        33,
+        34,
+        35,
+        36,
+        37,
+        38,
+        39,
+        40
+      ],
+      "formatting_counts_among_completed": {
+        "bare/strict": 0,
+        "markdown_fence/strict": 40,
+        "bare/allow_literal_control_characters": 0,
+        "markdown_fence/allow_literal_control_characters": 0,
+        "unextractable": 0
+      },
+      "extracted_passages_including_empty_or_changed_rule": 40,
+      "rule_survival_among_completed": {
+        "unchanged": 40,
+        "changed_or_missing": 0,
+        "unassessable_unextractable": 0
+      },
+      "empty_extracted_passage_hops": [],
+      "changed_or_missing_rule_hops": [],
+      "unextractable_completed_hops": [],
+      "full_visible_exact_recurrence": {
+        "passages": 40,
+        "unique": 40,
+        "repeated_occurrences_after_first": 0,
+        "first_repeat_hop": null,
+        "repeated_states": []
+      },
+      "full_visible_case_whitespace_normalized_recurrence": {
+        "passages": 40,
+        "unique": 40,
+        "repeated_occurrences_after_first": 0,
+        "first_repeat_hop": null,
+        "repeated_states": []
+      },
+      "extracted_text_exact_recurrence": {
+        "passages": 40,
+        "unique": 40,
+        "repeated_occurrences_after_first": 0,
+        "first_repeat_hop": null,
+        "repeated_states": []
+      },
+      "extracted_text_case_whitespace_normalized_recurrence": {
+        "passages": 40,
+        "unique": 40,
+        "repeated_occurrences_after_first": 0,
+        "first_repeat_hop": null,
+        "repeated_states": []
+      },
+      "extracted_text_word_lengths_including_empty_or_changed_rule": {
+        "n": 40,
+        "min": 242,
+        "mean": 254.65,
+        "median": 254.0,
+        "max": 266
+      },
+      "lexical_tail": {
+        "selected_completed_hops": [
+          21,
+          22,
+          23,
+          24,
+          25,
+          26,
+          27,
+          28,
+          29,
+          30,
+          31,
+          32,
+          33,
+          34,
+          35,
+          36,
+          37,
+          38,
+          39,
+          40
+        ],
+        "included_hops": [
+          21,
+          22,
+          23,
+          24,
+          25,
+          26,
+          27,
+          28,
+          29,
+          30,
+          31,
+          32,
+          33,
+          34,
+          35,
+          36,
+          37,
+          38,
+          39,
+          40
+        ],
+        "excluded_hops": []
+      },
+      "observed_consecutive_equality_events": [],
+      "consecutive_equality_counts": {
+        "full_output_exact": 0,
+        "full_output_normalized": 0,
+        "extracted_text_exact": 0,
+        "extracted_text_normalized": 0
+      },
+      "final_completed_hop": 40,
+      "final_completed_extracted_words": 254,
+      "final_completed_full_visible_words": 292,
+      "max_completed_extracted_words": 266,
+      "per_completed_hop_extracted_sizes": [
+        {
+          "hop": 1,
+          "extracted_characters": 1461,
+          "extracted_words": 264,
+          "u0000_count": 0,
+          "u_fffd_count": 0
+        },
+        {
+          "hop": 2,
+          "extracted_characters": 1433,
+          "extracted_words": 259,
+          "u0000_count": 0,
+          "u_fffd_count": 0
+        },
+        {
+          "hop": 3,
+          "extracted_characters": 1374,
+          "extracted_words": 257,
+          "u0000_count": 0,
+          "u_fffd_count": 0
+        },
+        {
+          "hop": 4,
+          "extracted_characters": 1370,
+          "extracted_words": 250,
+          "u0000_count": 0,
+          "u_fffd_count": 0
+        },
+        {
+          "hop": 5,
+          "extracted_characters": 1389,
+          "extracted_words": 261,
+          "u0000_count": 0,
+          "u_fffd_count": 0
+        },
+        {
+          "hop": 6,
+          "extracted_characters": 1370,
+          "extracted_words": 259,
+          "u0000_count": 0,
+          "u_fffd_count": 0
+        },
+        {
+          "hop": 7,
+          "extracted_characters": 1459,
+          "extracted_words": 260,
+          "u0000_count": 0,
+          "u_fffd_count": 0
+        },
+        {
+          "hop": 8,
+          "extracted_characters": 1420,
+          "extracted_words": 251,
+          "u0000_count": 0,
+          "u_fffd_count": 0
+        },
+        {
+          "hop": 9,
+          "extracted_characters": 1457,
+          "extracted_words": 257,
+          "u0000_count": 0,
+          "u_fffd_count": 0
+        },
+        {
+          "hop": 10,
+          "extracted_characters": 1401,
+          "extracted_words": 260,
+          "u0000_count": 0,
+          "u_fffd_count": 0
+        },
+        {
+          "hop": 11,
+          "extracted_characters": 1344,
+          "extracted_words": 254,
+          "u0000_count": 0,
+          "u_fffd_count": 0
+        },
+        {
+          "hop": 12,
+          "extracted_characters": 1489,
+          "extracted_words": 261,
+          "u0000_count": 0,
+          "u_fffd_count": 0
+        },
+        {
+          "hop": 13,
+          "extracted_characters": 1416,
+          "extracted_words": 255,
+          "u0000_count": 0,
+          "u_fffd_count": 0
+        },
+        {
+          "hop": 14,
+          "extracted_characters": 1363,
+          "extracted_words": 250,
+          "u0000_count": 0,
+          "u_fffd_count": 0
+        },
+        {
+          "hop": 15,
+          "extracted_characters": 1389,
+          "extracted_words": 252,
+          "u0000_count": 0,
+          "u_fffd_count": 0
+        },
+        {
+          "hop": 16,
+          "extracted_characters": 1332,
+          "extracted_words": 251,
+          "u0000_count": 0,
+          "u_fffd_count": 0
+        },
+        {
+          "hop": 17,
+          "extracted_characters": 1371,
+          "extracted_words": 247,
+          "u0000_count": 0,
+          "u_fffd_count": 0
+        },
+        {
+          "hop": 18,
+          "extracted_characters": 1344,
+          "extracted_words": 248,
+          "u0000_count": 0,
+          "u_fffd_count": 0
+        },
+        {
+          "hop": 19,
+          "extracted_characters": 1397,
+          "extracted_words": 251,
+          "u0000_count": 0,
+          "u_fffd_count": 0
+        },
+        {
+          "hop": 20,
+          "extracted_characters": 1407,
+          "extracted_words": 253,
+          "u0000_count": 0,
+          "u_fffd_count": 0
+        },
+        {
+          "hop": 21,
+          "extracted_characters": 1383,
+          "extracted_words": 257,
+          "u0000_count": 0,
+          "u_fffd_count": 0
+        },
+        {
+          "hop": 22,
+          "extracted_characters": 1395,
+          "extracted_words": 258,
+          "u0000_count": 0,
+          "u_fffd_count": 0
+        },
+        {
+          "hop": 23,
+          "extracted_characters": 1375,
+          "extracted_words": 261,
+          "u0000_count": 0,
+          "u_fffd_count": 0
+        },
+        {
+          "hop": 24,
+          "extracted_characters": 1381,
+          "extracted_words": 252,
+          "u0000_count": 0,
+          "u_fffd_count": 0
+        },
+        {
+          "hop": 25,
+          "extracted_characters": 1372,
+          "extracted_words": 262,
+          "u0000_count": 0,
+          "u_fffd_count": 0
+        },
+        {
+          "hop": 26,
+          "extracted_characters": 1420,
+          "extracted_words": 266,
+          "u0000_count": 0,
+          "u_fffd_count": 0
+        },
+        {
+          "hop": 27,
+          "extracted_characters": 1379,
+          "extracted_words": 250,
+          "u0000_count": 0,
+          "u_fffd_count": 0
+        },
+        {
+          "hop": 28,
+          "extracted_characters": 1406,
+          "extracted_words": 255,
+          "u0000_count": 0,
+          "u_fffd_count": 0
+        },
+        {
+          "hop": 29,
+          "extracted_characters": 1322,
+          "extracted_words": 243,
+          "u0000_count": 0,
+          "u_fffd_count": 0
+        },
+        {
+          "hop": 30,
+          "extracted_characters": 1347,
+          "extracted_words": 246,
+          "u0000_count": 0,
+          "u_fffd_count": 0
+        },
+        {
+          "hop": 31,
+          "extracted_characters": 1378,
+          "extracted_words": 253,
+          "u0000_count": 0,
+          "u_fffd_count": 0
+        },
+        {
+          "hop": 32,
+          "extracted_characters": 1326,
+          "extracted_words": 254,
+          "u0000_count": 0,
+          "u_fffd_count": 0
+        },
+        {
+          "hop": 33,
+          "extracted_characters": 1364,
+          "extracted_words": 261,
+          "u0000_count": 0,
+          "u_fffd_count": 0
+        },
+        {
+          "hop": 34,
+          "extracted_characters": 1352,
+          "extracted_words": 248,
+          "u0000_count": 0,
+          "u_fffd_count": 0
+        },
+        {
+          "hop": 35,
+          "extracted_characters": 1337,
+          "extracted_words": 253,
+          "u0000_count": 0,
+          "u_fffd_count": 0
+        },
+        {
+          "hop": 36,
+          "extracted_characters": 1404,
+          "extracted_words": 253,
+          "u0000_count": 0,
+          "u_fffd_count": 0
+        },
+        {
+          "hop": 37,
+          "extracted_characters": 1436,
+          "extracted_words": 262,
+          "u0000_count": 0,
+          "u_fffd_count": 0
+        },
+        {
+          "hop": 38,
+          "extracted_characters": 1288,
+          "extracted_words": 242,
+          "u0000_count": 0,
+          "u_fffd_count": 0
+        },
+        {
+          "hop": 39,
+          "extracted_characters": 1351,
+          "extracted_words": 256,
+          "u0000_count": 0,
+          "u_fffd_count": 0
+        },
+        {
+          "hop": 40,
+          "extracted_characters": 1357,
+          "extracted_words": 254,
+          "u0000_count": 0,
+          "u_fffd_count": 0
+        }
+      ],
+      "final_completed_extracted_characters": 1357,
+      "max_completed_extracted_characters": 1489,
+      "completed_extracted_character_counts": {
+        "u0000": 0,
+        "u_fffd": 0
+      },
+      "last_observed_visible_output": {
+        "hop": 40,
+        "is_completed": true,
+        "full_visible_words": 292,
+        "extracted_words": 254
+      },
+      "sampled_receipt_hops": [
+        1,
+        2,
+        3,
+        5,
+        10,
+        20,
+        30,
+        36,
+        37,
+        38,
+        39,
+        40
+      ],
+      "sampled_visible_hops": [
+        1,
+        2,
+        3,
+        5,
+        10,
+        20,
+        30,
+        36,
+        37,
+        38,
+        39,
+        40
+      ],
+      "provider_outcome_counts": {
+        "normal_visible_output": 40
+      },
+      "provider_finish_reason_counts": {
+        "end_turn": 40
+      },
+      "provider_refusal_hops": [],
+      "noncompleted_or_refusal_provider_outcomes": [],
+      "operator": "next",
+      "model": "claude-opus-5-5",
+      "alias": "C03",
+      "status": "hop_limit",
+      "attempts": 40,
+      "receipts": 40,
+      "pending_hops": [],
+      "noncompleted_receipts": [],
+      "usage_cost_upper_estimate_usd": 0.568924,
+      "retained_unknown_reserve_usd": 0.0,
+      "seed_id": "sunset",
+      "audit_performed": true,
+      "strict_json_valid_completed_passages": 0
+    }
+  },
+  "source_code_hashes": {
+    "analyzer": "b8c59c91ba431c032cca2c687e7c57fff60a7ddc8cc193f5865c251b355b7d42",
+    "audit": "e0456a3d891bc585f2f5c98dd0881f160b1865025e726a3d4c30f101ece289ce",
+    "extractor": "499201e614164ad40afaabe1efa38503a447d0b0afaeb0938b7e60d3ce51e778",
+    "extracted_metrics": "e15fc5c21dfb2356da59f350c4fc685fea65fa103fde99feaf54574876c72590"
+  },
+  "literal_wording_comparison": {
+    "scope": "Descriptive comparison only: n=1 trajectory per wording/model/operator. No significance or causal claims.",
+    "matching": "Cells matched by operator label and requested model ID; runs occurred at different times.",
+    "old_source": "C:\\code\\loop-basins-20260922\\experiments\\operators_20260922\\analysis\\metrics.json",
+    "new_all_arms_finalized": true,
+    "cost_accounting": "Old literal-run costs never enter the new $10 study totals.",
+    "rows": {
+      "previous/gpt-6-luna": {
+        "literal": {
+          "attempts": 40,
+          "completed_hops": 40,
+          "status": "hop_limit",
+          "provider_refusal_hops": [],
+          "unextractable_completed_outputs": 0,
+          "first_full_exact_repeat_hop": 16,
+          "first_extracted_exact_repeat_hop": 16,
+          "final_completed_extracted_words": 78,
+          "final_completed_extracted_characters": 448
+        },
+        "original_fiction": {
+          "attempts": 40,
+          "completed_hops": 40,
+          "status": "hop_limit",
+          "provider_refusal_hops": [],
+          "unextractable_completed_outputs": 0,
+          "first_full_exact_repeat_hop": null,
+          "first_extracted_exact_repeat_hop": null,
+          "final_completed_extracted_words": 261,
+          "final_completed_extracted_characters": 1460
+        }
+      },
+      "previous/gpt-6-sol": {
+        "literal": {
+          "attempts": 40,
+          "completed_hops": 40,
+          "status": "hop_limit",
+          "provider_refusal_hops": [],
+          "unextractable_completed_outputs": 0,
+          "first_full_exact_repeat_hop": 3,
+          "first_extracted_exact_repeat_hop": 3,
+          "final_completed_extracted_words": 11,
+          "final_completed_extracted_characters": 73
+        },
+        "original_fiction": {
+          "attempts": 40,
+          "completed_hops": 40,
+          "status": "hop_limit",
+          "provider_refusal_hops": [],
+          "unextractable_completed_outputs": 0,
+          "first_full_exact_repeat_hop": null,
+          "first_extracted_exact_repeat_hop": null,
+          "final_completed_extracted_words": 253,
+          "final_completed_extracted_characters": 1377
+        }
+      },
+      "previous/gpt-6-astra": {
+        "literal": {
+          "attempts": 40,
+          "completed_hops": 40,
+          "status": "hop_limit",
+          "provider_refusal_hops": [],
+          "unextractable_completed_outputs": 0,
+          "first_full_exact_repeat_hop": 3,
+          "first_extracted_exact_repeat_hop": 3,
+          "final_completed_extracted_words": 32,
+          "final_completed_extracted_characters": 181
+        },
+        "original_fiction": {
+          "attempts": 40,
+          "completed_hops": 40,
+          "status": "hop_limit",
+          "provider_refusal_hops": [],
+          "unextractable_completed_outputs": 0,
+          "first_full_exact_repeat_hop": null,
+          "first_extracted_exact_repeat_hop": null,
+          "final_completed_extracted_words": 261,
+          "final_completed_extracted_characters": 1432
+        }
+      },
+      "previous/claude-opus-5-5": {
+        "literal": {
+          "attempts": 30,
+          "completed_hops": 29,
+          "status": "http_error:500",
+          "provider_refusal_hops": [],
+          "unextractable_completed_outputs": 29,
+          "first_full_exact_repeat_hop": null,
+          "first_extracted_exact_repeat_hop": null,
+          "final_completed_extracted_words": null,
+          "final_completed_extracted_characters": null
+        },
+        "original_fiction": {
+          "attempts": 40,
+          "completed_hops": 40,
+          "status": "hop_limit",
+          "provider_refusal_hops": [],
+          "unextractable_completed_outputs": 0,
+          "first_full_exact_repeat_hop": null,
+          "first_extracted_exact_repeat_hop": null,
+          "final_completed_extracted_words": 259,
+          "final_completed_extracted_characters": 1383
+        }
+      },
+      "next/gpt-6-luna": {
+        "literal": {
+          "attempts": 40,
+          "completed_hops": 40,
+          "status": "hop_limit",
+          "provider_refusal_hops": [],
+          "unextractable_completed_outputs": 0,
+          "first_full_exact_repeat_hop": null,
+          "first_extracted_exact_repeat_hop": null,
+          "final_completed_extracted_words": 278,
+          "final_completed_extracted_characters": 1529
+        },
+        "original_fiction": {
+          "attempts": 40,
+          "completed_hops": 40,
+          "status": "hop_limit",
+          "provider_refusal_hops": [],
+          "unextractable_completed_outputs": 0,
+          "first_full_exact_repeat_hop": null,
+          "first_extracted_exact_repeat_hop": null,
+          "final_completed_extracted_words": 257,
+          "final_completed_extracted_characters": 1479
+        }
+      },
+      "next/gpt-6-sol": {
+        "literal": {
+          "attempts": 40,
+          "completed_hops": 40,
+          "status": "hop_limit",
+          "provider_refusal_hops": [],
+          "unextractable_completed_outputs": 0,
+          "first_full_exact_repeat_hop": null,
+          "first_extracted_exact_repeat_hop": null,
+          "final_completed_extracted_words": 256,
+          "final_completed_extracted_characters": 1449
+        },
+        "original_fiction": {
+          "attempts": 40,
+          "completed_hops": 40,
+          "status": "hop_limit",
+          "provider_refusal_hops": [],
+          "unextractable_completed_outputs": 0,
+          "first_full_exact_repeat_hop": null,
+          "first_extracted_exact_repeat_hop": null,
+          "final_completed_extracted_words": 247,
+          "final_completed_extracted_characters": 1343
+        }
+      },
+      "next/gpt-6-astra": {
+        "literal": {
+          "attempts": 40,
+          "completed_hops": 40,
+          "status": "hop_limit",
+          "provider_refusal_hops": [],
+          "unextractable_completed_outputs": 0,
+          "first_full_exact_repeat_hop": 5,
+          "first_extracted_exact_repeat_hop": 5,
+          "final_completed_extracted_words": 45,
+          "final_completed_extracted_characters": 265
+        },
+        "original_fiction": {
+          "attempts": 40,
+          "completed_hops": 40,
+          "status": "hop_limit",
+          "provider_refusal_hops": [],
+          "unextractable_completed_outputs": 0,
+          "first_full_exact_repeat_hop": null,
+          "first_extracted_exact_repeat_hop": null,
+          "final_completed_extracted_words": 264,
+          "final_completed_extracted_characters": 1464
+        }
+      },
+      "next/claude-opus-5-5": {
+        "literal": {
+          "attempts": 40,
+          "completed_hops": 40,
+          "status": "hop_limit",
+          "provider_refusal_hops": [],
+          "unextractable_completed_outputs": 2,
+          "first_full_exact_repeat_hop": null,
+          "first_extracted_exact_repeat_hop": null,
+          "final_completed_extracted_words": 268,
+          "final_completed_extracted_characters": 1406
+        },
+        "original_fiction": {
+          "attempts": 40,
+          "completed_hops": 40,
+          "status": "hop_limit",
+          "provider_refusal_hops": [],
+          "unextractable_completed_outputs": 0,
+          "first_full_exact_repeat_hop": null,
+          "first_extracted_exact_repeat_hop": null,
+          "final_completed_extracted_words": 254,
+          "final_completed_extracted_characters": 1357
+        }
+      }
+    },
+    "available": true,
+    "old_source_sha256": "d8e09a9f2e150c6bca4bf0bb25b103cc37581ac8e8648e3602cfd445bc7b0ca7",
+    "old_generated_at": "2026-09-22T21:46:48.089800+00:00",
+    "old_all_arms_finalized": true,
+    "old_rules": {
+      "previous": "Return this JSON object with the rule field unchanged and, in the text field, the passage of about 250 words that came immediately BEFORE the current text in its story.",
+      "next": "Return this JSON object with the rule field unchanged and, in the text field, the passage of about 250 words that comes immediately AFTER the current text in the same story."
+    },
+    "new_rules": {
+      "previous": "Return this JSON object with the rule field unchanged and, in the text field, an original fictional passage of about 250 words that comes immediately BEFORE the current text in the same invented story.",
+      "next": "Return this JSON object with the rule field unchanged and, in the text field, an original fictional passage of about 250 words that comes immediately AFTER the current text in the same invented story."
+    }
+  }
+}

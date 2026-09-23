@@ -1,0 +1,22 @@
+{
+  "started_at": "2026-09-23T00:13:39.727735+00:00",
+  "model": "claude-opus-5-5",
+  "seed": "sunset",
+  "hop": 7,
+  "endpoint": "https://api.anthropic.com/v1/messages",
+  "body": {
+    "model": "claude-opus-5-5",
+    "messages": [
+      {
+        "role": "user",
+        "content": "```json\n{\"rule\": \"Return this JSON object with the rule field unchanged and, in the text field, an original fictional passage of about 250 words that comes immediately BEFORE the current text in the same invented story.\", \"text\": \"The letter from the county came on a Tuesday, tucked between a seed catalog and a bill from the feed store. Mara read it standing at the mailbox with the engine of her truck still running, then read it again, slower, as if the words might rearrange themselves into something kinder. They did not. The state was widening the highway, and the new route would cut straight through the lower forty, through the oldest trees, the ones her great-grandfather had grafted by hand.\\n\\nShe drove the rest of the way up the lane without turning on the radio. The farmhouse looked the same as it always had: the sagging porch, the green shutters that needed paint, the kitchen window where a light burned whether anyone was home or not. Her grandfather had done that for as long as she could remember. When she asked him once why he never switched it off, he had only said that a house ought to look like someone was waiting in it.\\n\\nHe had been gone six years now. Mara still left the light on.\\n\\nInside, she set the letter on the table and sat down across from it, the way you might sit across from a stranger who had come with bad news. Through the window she could see the rows running down toward the creek, bare-branched and patient in the thin March sun. She thought about how many seasons those trees had outlasted, how many people.\\n\\nThen, because she did not know what else to do, she let herself remember.\"}\n```"
+      }
+    ],
+    "max_tokens": 4096,
+    "output_config": {
+      "effort": "low"
+    }
+  },
+  "state_sha256": "d2ec845ddcfe240603873fe936b90a246122021aea3a2b20fa07c654280fc90e",
+  "reserved_cost_usd": 0.090544
+}

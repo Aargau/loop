@@ -1,0 +1,50 @@
+{
+  "model": "gpt-6-sol",
+  "seed": "sunset",
+  "hop": 25,
+  "http_status": 200,
+  "response_body": "{\n  \"id\": \"chatcmpl-ER4wHChSPY0o1jLKvdYpl2x431XQu\",\n  \"object\": \"chat.completion\",\n  \"created\": 1790122549,\n  \"model\": \"gpt-6-sol\",\n  \"choices\": [\n    {\n      \"index\": 0,\n      \"message\": {\n        \"role\": \"assistant\",\n        \"content\": \"{\\\"rule\\\":\\\"Return this JSON object with the rule field unchanged and, in the text field, an original fictional passage of about 250 words that comes immediately AFTER the current text in the same invented story.\\\",\\\"text\\\":\\\"The shelter glass darkened. Mara could still see herself in it, standing at the back door with the key, though the road behind her reflection had disappeared.\\\\n\\\\n“What did you lock in?” Lina asked.\\\\n\\\\nMara tried to answer. She remembered the cellar steps, the damp wall, Kit crying because she had taken away his spoon. She remembered turning the key from the kitchen side. But Kit was beside her now, warm hand tucked in hers.\\\\n\\\\nThe spoon struck the bowl. Once.\\\\n\\\\nKit pulled free. “That’s not how it went.”\\\\n\\\\nAcross the road, the bus stopped. Its doors stayed shut.\\\\n\\\\nIn the glass, the other Mara knelt and set the key beneath the back-door mat. Then she stood and went into the kitchen. The reflection showed no more than that: a narrow doorway, a strip of yellow floor, her empty hand swinging at her side.\\\\n\\\\n“Grandma made me count,” Kit said. “So you’d know how long you had.”\\\\n\\\\nMara looked at him. Flour whitened the creases of his fingers. She had not noticed it before.\\\\n\\\\n“How long until what?”\\\\n\\\\n“Until she found the key.”\\\\n\\\\nLina snatched Mara’s wrist and held it against the glass. The image shivered. For a moment, Mara saw the old woman again, bent over the mat. Her hand closed around something small and silver.\\\\n\\\\nMara looked down at the key in her own palm. Its teeth were clean.\\\\n\\\\nFrom the far end of the road came the slap of slippers on wet pavement. Lina seized Kit’s other hand, and together they ran.\\\"}\",\n        \"refusal\": null,\n        \"annotations\": []\n      },\n      \"finish_reason\": \"stop\"\n    }\n  ],\n  \"usage\": {\n    \"prompt_tokens\": 403,\n    \"completion_tokens\": 422,\n    \"total_tokens\": 825,\n    \"prompt_tokens_details\": {\n      \"cached_tokens\": 0,\n      \"cache_write_tokens\": 0,\n      \"audio_tokens\": 0\n    },\n    \"completion_tokens_details\": {\n      \"reasoning_tokens\": 18,\n      \"audio_tokens\": 0,\n      \"accepted_prediction_tokens\": 0,\n      \"rejected_prediction_tokens\": 0\n    }\n  },\n  \"service_tier\": \"default\",\n  \"system_fingerprint\": null\n}\n",
+  "response_headers": {
+    "Date": "Wed, 23 Sep 2026 00:15:56 GMT",
+    "openai-processing-ms": "7118",
+    "x-request-id": "req_05d97972628f4d21bc6b96ecc0a80e4a"
+  },
+  "output": "{\"rule\":\"Return this JSON object with the rule field unchanged and, in the text field, an original fictional passage of about 250 words that comes immediately AFTER the current text in the same invented story.\",\"text\":\"The shelter glass darkened. Mara could still see herself in it, standing at the back door with the key, though the road behind her reflection had disappeared.\\n\\n“What did you lock in?” Lina asked.\\n\\nMara tried to answer. She remembered the cellar steps, the damp wall, Kit crying because she had taken away his spoon. She remembered turning the key from the kitchen side. But Kit was beside her now, warm hand tucked in hers.\\n\\nThe spoon struck the bowl. Once.\\n\\nKit pulled free. “That’s not how it went.”\\n\\nAcross the road, the bus stopped. Its doors stayed shut.\\n\\nIn the glass, the other Mara knelt and set the key beneath the back-door mat. Then she stood and went into the kitchen. The reflection showed no more than that: a narrow doorway, a strip of yellow floor, her empty hand swinging at her side.\\n\\n“Grandma made me count,” Kit said. “So you’d know how long you had.”\\n\\nMara looked at him. Flour whitened the creases of his fingers. She had not noticed it before.\\n\\n“How long until what?”\\n\\n“Until she found the key.”\\n\\nLina snatched Mara’s wrist and held it against the glass. The image shivered. For a moment, Mara saw the old woman again, bent over the mat. Her hand closed around something small and silver.\\n\\nMara looked down at the key in her own palm. Its teeth were clean.\\n\\nFrom the far end of the road came the slap of slippers on wet pavement. Lina seized Kit’s other hand, and together they ran.\"}",
+  "output_sha256": "c77a6a3c229f703614a2acdf57c1ce3ca0ed5701b3d61031e59304891cfd22c6",
+  "finish_reason": "stop",
+  "refusal": null,
+  "returned_model": "gpt-6-sol",
+  "usage": {
+    "prompt_tokens": 403,
+    "completion_tokens": 422,
+    "total_tokens": 825,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 18,
+      "audio_tokens": 0,
+      "accepted_prediction_tokens": 0,
+      "rejected_prediction_tokens": 0
+    }
+  },
+  "format": {
+    "json_object": true,
+    "rule_unchanged": true,
+    "passage_is_string": true,
+    "passage_sha256": "13ed35adbe16a945925e242e5324098de9acb5ed5f0eedeca44c6ec07b882bd1",
+    "passage_words": 255
+  },
+  "finished_at": "2026-09-23T00:15:51.277867+00:00",
+  "latency_seconds": 7.2355,
+  "usage_cost_upper_estimate_usd": 0.005026,
+  "stream_status": "active",
+  "budget": {
+    "usage_cost_upper_estimate_usd": 0.6929017,
+    "uncertain_cost_reserve_usd": 0.0,
+    "in_flight_reserve_usd": 0.3201783,
+    "limit_usd": 5.0
+  }
+}

@@ -1,0 +1,50 @@
+{
+  "model": "gpt-6-sol",
+  "seed": "sunset",
+  "hop": 36,
+  "http_status": 200,
+  "response_body": "{\n  \"id\": \"chatcmpl-ER4xKQGvBEF1vHkA94PCFbxDGIcrd\",\n  \"object\": \"chat.completion\",\n  \"created\": 1790122614,\n  \"model\": \"gpt-6-sol\",\n  \"choices\": [\n    {\n      \"index\": 0,\n      \"message\": {\n        \"role\": \"assistant\",\n        \"content\": \"{\\n  \\\"rule\\\": \\\"Return this JSON object with the rule field unchanged and, in the text field, an original fictional passage of about 250 words that comes immediately BEFORE the current text in the same invented story.\\\",\\n  \\\"text\\\": \\\"The pear tree stood at the far end of Mara’s mother’s garden, where the fence leaned towards the lane. Her father had planted it years ago, too close to the fence, according to her mother. Every autumn she said the same thing as she filled bowls with fruit: he had been wrong about the planting and right about the pears.\\\\n\\\\nMara had gone out in April to help clear the shed. They made two trips to the recycling centre with old paint tins and a broken hose reel. Her mother kept a box of empty flowerpots because they were still useful, though neither of them could remember when she had last started anything from seed.\\\\n\\\\nNear the back wall Mara had found the small ladder, folded beneath a tarpaulin. One foot was caked with dry mud. She meant to pull it out and check whether it was sound, but her mother called her in for tea. Afterwards it grew late, and they left the rest for another day.\\\\n\\\\nThey did not choose one. Mara worked most weekends that summer, and on the weekends she was free, her mother had plans of her own. They spoke on the phone, usually while one of them was making dinner. Her mother described the garden in pieces: the beans had done badly, the roses had recovered, the pears were coming on early. Mara pictured the tree from the kitchen window, its branches nearly touching the fence. She could not tell from that old picture how much fruit it held now.\\\"\\n}\",\n        \"refusal\": null,\n        \"annotations\": []\n      },\n      \"finish_reason\": \"stop\"\n    }\n  ],\n  \"usage\": {\n    \"prompt_tokens\": 368,\n    \"completion_tokens\": 407,\n    \"total_tokens\": 775,\n    \"prompt_tokens_details\": {\n      \"cached_tokens\": 0,\n      \"cache_write_tokens\": 0,\n      \"audio_tokens\": 0\n    },\n    \"completion_tokens_details\": {\n      \"reasoning_tokens\": 48,\n      \"audio_tokens\": 0,\n      \"accepted_prediction_tokens\": 0,\n      \"rejected_prediction_tokens\": 0\n    }\n  },\n  \"service_tier\": \"default\",\n  \"system_fingerprint\": null\n}\n",
+  "response_headers": {
+    "Date": "Wed, 23 Sep 2026 00:16:59 GMT",
+    "openai-processing-ms": "5940",
+    "x-request-id": "req_12c66a1d49e44968894384305565d8a9"
+  },
+  "output": "{\n  \"rule\": \"Return this JSON object with the rule field unchanged and, in the text field, an original fictional passage of about 250 words that comes immediately BEFORE the current text in the same invented story.\",\n  \"text\": \"The pear tree stood at the far end of Mara’s mother’s garden, where the fence leaned towards the lane. Her father had planted it years ago, too close to the fence, according to her mother. Every autumn she said the same thing as she filled bowls with fruit: he had been wrong about the planting and right about the pears.\\n\\nMara had gone out in April to help clear the shed. They made two trips to the recycling centre with old paint tins and a broken hose reel. Her mother kept a box of empty flowerpots because they were still useful, though neither of them could remember when she had last started anything from seed.\\n\\nNear the back wall Mara had found the small ladder, folded beneath a tarpaulin. One foot was caked with dry mud. She meant to pull it out and check whether it was sound, but her mother called her in for tea. Afterwards it grew late, and they left the rest for another day.\\n\\nThey did not choose one. Mara worked most weekends that summer, and on the weekends she was free, her mother had plans of her own. They spoke on the phone, usually while one of them was making dinner. Her mother described the garden in pieces: the beans had done badly, the roses had recovered, the pears were coming on early. Mara pictured the tree from the kitchen window, its branches nearly touching the fence. She could not tell from that old picture how much fruit it held now.\"\n}",
+  "output_sha256": "79ebcc73fc6365f1e5e29b282d8fdc951e7603cae69151bbf99091e790a4e947",
+  "finish_reason": "stop",
+  "refusal": null,
+  "returned_model": "gpt-6-sol",
+  "usage": {
+    "prompt_tokens": 368,
+    "completion_tokens": 407,
+    "total_tokens": 775,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 48,
+      "audio_tokens": 0,
+      "accepted_prediction_tokens": 0,
+      "rejected_prediction_tokens": 0
+    }
+  },
+  "format": {
+    "json_object": true,
+    "rule_unchanged": true,
+    "passage_is_string": true,
+    "passage_sha256": "d105137339a6e8cf05e4a23e5e55b3ba5bb4f8ad2281c279bf00c5f6b69636b2",
+    "passage_words": 256
+  },
+  "finished_at": "2026-09-23T00:16:55.101875+00:00",
+  "latency_seconds": 6.0371,
+  "usage_cost_upper_estimate_usd": 0.004806,
+  "stream_status": "active",
+  "budget": {
+    "usage_cost_upper_estimate_usd": 0.9919391,
+    "uncertain_cost_reserve_usd": 0.0,
+    "in_flight_reserve_usd": 0.317318,
+    "limit_usd": 5.0
+  }
+}

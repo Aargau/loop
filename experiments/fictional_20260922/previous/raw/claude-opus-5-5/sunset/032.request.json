@@ -1,0 +1,22 @@
+{
+  "started_at": "2026-09-23T00:17:56.652443+00:00",
+  "model": "claude-opus-5-5",
+  "seed": "sunset",
+  "hop": 32,
+  "endpoint": "https://api.anthropic.com/v1/messages",
+  "body": {
+    "model": "claude-opus-5-5",
+    "messages": [
+      {
+        "role": "user",
+        "content": "```json\n{\"rule\": \"Return this JSON object with the rule field unchanged and, in the text field, an original fictional passage of about 250 words that comes immediately BEFORE the current text in the same invented story.\", \"text\": \"For forty-one years, Walter and Margaret Hale had kept the same small house on Linden Street, and for most of those years they had kept the same arguments too. She said he raked too early, before the maple had finished dropping. He said she did the crossword in pen out of pride. Neither of them had ever changed the other's mind, and both of them seemed to prefer it that way.\\n\\nThat autumn had been a mild one. The mornings came in gray and soft, and Margaret kept the kitchen radio tuned to the station that played big band music until nine and then gave the weather. She hummed along to the one and argued with the other. \\\"Partly cloudy,\\\" she would say, peering out the window over the sink. \\\"Partly nonsense.\\\"\\n\\nTheir daughter called on Sundays from Ohio. Margaret did most of the talking, and afterward she would report the news to Walter as if he had not been sitting ten feet away: the grandson's soccer, the trouble with the gutters, the promotion that might or might not come through.\\n\\nOn the second Tuesday of October, Margaret settled into the blue armchair by the window with her coffee and the paper. Walter pulled on his boots by the back door.\\n\\n\\\"Seven down,\\\" she said, not looking up. \\\"Six letters. 'Steadfast.'\\\"\\n\\n\\\"Loyal,\\\" he said.\\n\\n\\\"That's five, Walter.\\\"\\n\\nHe was still counting on his fingers when he stepped out into the yard, and the screen door clapped shut behind him.\"}\n```"
+      }
+    ],
+    "max_tokens": 4096,
+    "output_config": {
+      "effort": "low"
+    }
+  },
+  "state_sha256": "992361ce47a6cdfccaaa813160e853e37bee71c4aff57ed33e6036d862d5555f",
+  "reserved_cost_usd": 0.090568
+}

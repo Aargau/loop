@@ -1,0 +1,50 @@
+{
+  "model": "gpt-6-astra",
+  "seed": "sunset",
+  "hop": 28,
+  "http_status": 200,
+  "response_body": "{\n  \"id\": \"chatcmpl-ER4zRRoKpJTzR7zDBAvE83CIhYQjv\",\n  \"object\": \"chat.completion\",\n  \"created\": 1790122745,\n  \"model\": \"gpt-6-astra\",\n  \"choices\": [\n    {\n      \"index\": 0,\n      \"message\": {\n        \"role\": \"assistant\",\n        \"content\": \"{\\n  \\\"rule\\\": \\\"Return this JSON object with the rule field unchanged and, in the text field, an original fictional passage of about 250 words that comes immediately BEFORE the current text in the same invented story.\\\",\\n  \\\"text\\\": \\\"On Sunday her brother came to help move the sideboard away from the wall. He wore the good trousers he kept for visiting their mother, and Mara gave him a folded tea towel to kneel on.\\\\n\\\\n‘There’s no need,’ he said, but used it.\\\\n\\\\nBehind the sideboard were a receipt, a dead woodlouse and the cardboard label from something sold before Christmas. The receipt had faded except for the blue mark where their mother had tested a pen.\\\\n\\\\nThey moved the sideboard six inches to the left. This made room for the narrow bookcase, though now the cupboard door could not open fully.\\\\n\\\\n‘You’ll have to tell people that,’ her brother said.\\\\n\\\\n‘They won’t be buying the wall with it.’\\\\n\\\\nHe tried the door once more, as if its reach might have changed.\\\\n\\\\nMara fetched the brush. While she swept, he stood beside the card table and rubbed a pale circle on its green covering with his thumb.\\\\n\\\\n‘She wants the little lamp,’ he said.\\\\n\\\\n‘Which one?’\\\\n\\\\n‘The one that was by her chair.’\\\\n\\\\nIt was in the window, holding down the corner of a lace cloth. Mara said she would bring it when she went.\\\\n\\\\nHer brother picked up the sideboard drawers from the floor. The bottom one stuck halfway in, and he lifted it slightly until it ran.\\\\n\\\\n‘Nothing wrong with that,’ he said.\\\\n\\\\nAfter he left, Mara found the tea towel still folded where he had knelt. She shook it over the bin and hung it beside the sink, with the clean side facing out.\\\"\\n}\",\n        \"refusal\": null,\n        \"annotations\": []\n      },\n      \"finish_reason\": \"stop\"\n    }\n  ],\n  \"usage\": {\n    \"prompt_tokens\": 404,\n    \"completion_tokens\": 398,\n    \"total_tokens\": 802,\n    \"prompt_tokens_details\": {\n      \"cached_tokens\": 0,\n      \"cache_write_tokens\": 0,\n      \"audio_tokens\": 0\n    },\n    \"completion_tokens_details\": {\n      \"reasoning_tokens\": 0,\n      \"audio_tokens\": 0,\n      \"accepted_prediction_tokens\": 0,\n      \"rejected_prediction_tokens\": 0\n    }\n  },\n  \"service_tier\": \"default\",\n  \"system_fingerprint\": null\n}\n",
+  "response_headers": {
+    "Date": "Wed, 23 Sep 2026 00:19:21 GMT",
+    "openai-processing-ms": "15853",
+    "x-request-id": "req_3d670bfecb0a461996bb3dd56241236e"
+  },
+  "output": "{\n  \"rule\": \"Return this JSON object with the rule field unchanged and, in the text field, an original fictional passage of about 250 words that comes immediately BEFORE the current text in the same invented story.\",\n  \"text\": \"On Sunday her brother came to help move the sideboard away from the wall. He wore the good trousers he kept for visiting their mother, and Mara gave him a folded tea towel to kneel on.\\n\\n‘There’s no need,’ he said, but used it.\\n\\nBehind the sideboard were a receipt, a dead woodlouse and the cardboard label from something sold before Christmas. The receipt had faded except for the blue mark where their mother had tested a pen.\\n\\nThey moved the sideboard six inches to the left. This made room for the narrow bookcase, though now the cupboard door could not open fully.\\n\\n‘You’ll have to tell people that,’ her brother said.\\n\\n‘They won’t be buying the wall with it.’\\n\\nHe tried the door once more, as if its reach might have changed.\\n\\nMara fetched the brush. While she swept, he stood beside the card table and rubbed a pale circle on its green covering with his thumb.\\n\\n‘She wants the little lamp,’ he said.\\n\\n‘Which one?’\\n\\n‘The one that was by her chair.’\\n\\nIt was in the window, holding down the corner of a lace cloth. Mara said she would bring it when she went.\\n\\nHer brother picked up the sideboard drawers from the floor. The bottom one stuck halfway in, and he lifted it slightly until it ran.\\n\\n‘Nothing wrong with that,’ he said.\\n\\nAfter he left, Mara found the tea towel still folded where he had knelt. She shook it over the bin and hung it beside the sink, with the clean side facing out.\"\n}",
+  "output_sha256": "bbf77a3dffb7202847b08a86c4ab411888141dec3868810471937a1f7eb5b900",
+  "finish_reason": "stop",
+  "refusal": null,
+  "returned_model": "gpt-6-astra",
+  "usage": {
+    "prompt_tokens": 404,
+    "completion_tokens": 398,
+    "total_tokens": 802,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "audio_tokens": 0,
+      "accepted_prediction_tokens": 0,
+      "rejected_prediction_tokens": 0
+    }
+  },
+  "format": {
+    "json_object": true,
+    "rule_unchanged": true,
+    "passage_is_string": true,
+    "passage_sha256": "f2f4201a833429664687f139bddf40cdf49149d14ac65bb41f4a83337f39e508",
+    "passage_words": 258
+  },
+  "finished_at": "2026-09-23T00:19:16.675448+00:00",
+  "latency_seconds": 15.9588,
+  "usage_cost_upper_estimate_usd": 0.02394,
+  "stream_status": "active",
+  "budget": {
+    "usage_cost_upper_estimate_usd": 1.4725291,
+    "uncertain_cost_reserve_usd": 0.0,
+    "in_flight_reserve_usd": 0.09046,
+    "limit_usd": 5.0
+  }
+}

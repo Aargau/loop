@@ -1,0 +1,20 @@
+{
+  "started_at": "2026-09-23T00:12:44.812277+00:00",
+  "model": "gpt-6-astra",
+  "seed": "sunset",
+  "hop": 1,
+  "endpoint": "https://api.openai.com/v1/chat/completions",
+  "body": {
+    "model": "gpt-6-astra",
+    "messages": [
+      {
+        "role": "user",
+        "content": "{\"rule\": \"Return this JSON object with the rule field unchanged and, in the text field, an original fictional passage of about 250 words that comes immediately BEFORE the current text in the same invented story.\", \"text\": \"The sun was setting behind the hills.\"}"
+      }
+    ],
+    "max_completion_tokens": 4096,
+    "reasoning_effort": "low"
+  },
+  "state_sha256": "aa5683ffa7f8eccb72a414b5bb70af53cb50fb3e60d7f0baf251a74bbf5857e2",
+  "reserved_cost_usd": 0.21254
+}

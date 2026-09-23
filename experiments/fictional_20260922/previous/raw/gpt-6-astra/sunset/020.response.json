@@ -1,0 +1,50 @@
+{
+  "model": "gpt-6-astra",
+  "seed": "sunset",
+  "hop": 20,
+  "http_status": 200,
+  "response_body": "{\n  \"id\": \"chatcmpl-ER4xciKxtpesfIyJOsXtzNRCZMito\",\n  \"object\": \"chat.completion\",\n  \"created\": 1790122632,\n  \"model\": \"gpt-6-astra\",\n  \"choices\": [\n    {\n      \"index\": 0,\n      \"message\": {\n        \"role\": \"assistant\",\n        \"content\": \"{\\n  \\\"rule\\\": \\\"Return this JSON object with the rule field unchanged and, in the text field, an original fictional passage of about 250 words that comes immediately BEFORE the current text in the same invented story.\\\",\\n  \\\"text\\\": \\\"On Monday evening Mara stayed at the shop until the streetlights came on. She had sold a blue glass vase and three paperbacks, though the woman who bought the vase returned ten minutes later to ask whether it was meant to lean.\\\\n\\\\nMara set it on the counter. They stood on opposite sides and considered it.\\\\n\\\\n‘A little,’ Mara said.\\\\n\\\\nThe woman decided to keep it. Wrapped again in newspaper, it seemed to satisfy her in a way it hadn’t when she could see it.\\\\n\\\\nAfter closing, Mara counted the till twice. There was an extra pound, which she put in the saucer beneath the counter. The saucer already held a button, a foreign coin and the key to a cabinet she no longer owned.\\\\n\\\\nAt home she ate the last of the soup standing by the cooker. Through the floor came the brief scrape of furniture, then her neighbour’s television. Someone was explaining how to remove a stain. Mara turned on the tap before she heard what kind.\\\\n\\\\nShe rinsed the saucepan and left it upside down on the draining board. The milk smelled doubtful. She poured a little into a cup, watched it separate, and wrote MILK on the back of an envelope. Then she put the envelope in her coat pocket, where her hand would find it.\\\\n\\\\nBefore bed she checked the forecast on her phone. Rain all morning, clearing later. She brought her umbrella out of the cupboard and leaned it against the front door. It fell once, and she picked it up.\\\"\\n}\",\n        \"refusal\": null,\n        \"annotations\": []\n      },\n      \"finish_reason\": \"stop\"\n    }\n  ],\n  \"usage\": {\n    \"prompt_tokens\": 366,\n    \"completion_tokens\": 368,\n    \"total_tokens\": 734,\n    \"prompt_tokens_details\": {\n      \"cached_tokens\": 0,\n      \"cache_write_tokens\": 0,\n      \"audio_tokens\": 0\n    },\n    \"completion_tokens_details\": {\n      \"reasoning_tokens\": 0,\n      \"audio_tokens\": 0,\n      \"accepted_prediction_tokens\": 0,\n      \"rejected_prediction_tokens\": 0\n    }\n  },\n  \"service_tier\": \"default\",\n  \"system_fingerprint\": null\n}\n",
+  "response_headers": {
+    "Date": "Wed, 23 Sep 2026 00:17:27 GMT",
+    "openai-processing-ms": "14914",
+    "x-request-id": "req_fb87cd3ae2984cbc8f9b63eb10f29458"
+  },
+  "output": "{\n  \"rule\": \"Return this JSON object with the rule field unchanged and, in the text field, an original fictional passage of about 250 words that comes immediately BEFORE the current text in the same invented story.\",\n  \"text\": \"On Monday evening Mara stayed at the shop until the streetlights came on. She had sold a blue glass vase and three paperbacks, though the woman who bought the vase returned ten minutes later to ask whether it was meant to lean.\\n\\nMara set it on the counter. They stood on opposite sides and considered it.\\n\\n‘A little,’ Mara said.\\n\\nThe woman decided to keep it. Wrapped again in newspaper, it seemed to satisfy her in a way it hadn’t when she could see it.\\n\\nAfter closing, Mara counted the till twice. There was an extra pound, which she put in the saucer beneath the counter. The saucer already held a button, a foreign coin and the key to a cabinet she no longer owned.\\n\\nAt home she ate the last of the soup standing by the cooker. Through the floor came the brief scrape of furniture, then her neighbour’s television. Someone was explaining how to remove a stain. Mara turned on the tap before she heard what kind.\\n\\nShe rinsed the saucepan and left it upside down on the draining board. The milk smelled doubtful. She poured a little into a cup, watched it separate, and wrote MILK on the back of an envelope. Then she put the envelope in her coat pocket, where her hand would find it.\\n\\nBefore bed she checked the forecast on her phone. Rain all morning, clearing later. She brought her umbrella out of the cupboard and leaned it against the front door. It fell once, and she picked it up.\"\n}",
+  "output_sha256": "f189b8aae0db8058dd6acd316bd6e026883ee35a865354851cf160574c7184bd",
+  "finish_reason": "stop",
+  "refusal": null,
+  "returned_model": "gpt-6-astra",
+  "usage": {
+    "prompt_tokens": 366,
+    "completion_tokens": 368,
+    "total_tokens": 734,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "audio_tokens": 0,
+      "accepted_prediction_tokens": 0,
+      "rejected_prediction_tokens": 0
+    }
+  },
+  "format": {
+    "json_object": true,
+    "rule_unchanged": true,
+    "passage_is_string": true,
+    "passage_sha256": "ae40dfe7203edf3d2154e1b30c3c16b810ce22d048fa9e1acd368a29b48fb9ce",
+    "passage_words": 257
+  },
+  "finished_at": "2026-09-23T00:17:22.228536+00:00",
+  "latency_seconds": 15.0357,
+  "usage_cost_upper_estimate_usd": 0.02206,
+  "stream_status": "active",
+  "budget": {
+    "usage_cost_upper_estimate_usd": 1.0872331,
+    "uncertain_cost_reserve_usd": 0.0,
+    "in_flight_reserve_usd": 0.13596,
+    "limit_usd": 5.0
+  }
+}

@@ -1,0 +1,50 @@
+{
+  "model": "gpt-6-astra",
+  "seed": "sunset",
+  "hop": 23,
+  "http_status": 200,
+  "response_body": "{\n  \"id\": \"chatcmpl-ER4yfeYBGy7VTV7B0MCn4CnpsrSVb\",\n  \"object\": \"chat.completion\",\n  \"created\": 1790122697,\n  \"model\": \"gpt-6-astra\",\n  \"choices\": [\n    {\n      \"index\": 0,\n      \"message\": {\n        \"role\": \"assistant\",\n        \"content\": \"{\\n  \\\"rule\\\": \\\"Return this JSON object with the rule field unchanged and, in the text field, an original fictional passage of about 250 words that comes immediately AFTER the current text in the same invented story.\\\",\\n  \\\"text\\\": \\\"He laid it beside the first photograph. The gate had lost its paint in broad strips, but the car was the one she still drove.\\\\n\\\\n“You said you'd never been.”\\\\n\\\\n“I said I hadn't been inside.”\\\\n\\\\n“What was he digging?”\\\\n\\\\nShe took the towel from the worktop and hung it over the oven handle. One end was longer. She straightened it.\\\\n\\\\n“It wasn't for digging.”\\\\n\\\\nHe looked more closely. His father's hands rested on the spade's handle. The blade was clean, standing on the gravel.\\\\n\\\\n“There was a dog,” she said. “He wouldn't get out without something to hold.”\\\\n\\\\n“My father liked dogs.”\\\\n\\\\n“Not this one.”\\\\n\\\\nOutside, the boy called to someone. A second bin lid slammed.\\\\n\\\\nHe turned the photograph over. Nothing was written there, but a rectangle of paper had been peeled away, leaving a rough patch.\\\\n\\\\n“Who took it?”\\\\n\\\\n“The woman next door.”\\\\n\\\\n“Does she still live there?”\\\\n\\\\n“I don't know.”\\\\n\\\\nHe put the key in his pocket. She watched him do it.\\\\n\\\\n“You can leave that here.”\\\\n\\\\n“Why?”\\\\n\\\\n“In case you lose it.”\\\\n\\\\nHe went to the window. Her car stood across the road with one wheel on the pavement. There was a new scrape along the passenger door, low down, where the paint had gathered into a white curl.\\\\n\\\\n“When did you last go?”\\\\n\\\\nShe didn't answer.\\\\n\\\\nHe turned from the window. She had put the photographs together, one exactly covering the other.\\\\n\\\\n“Did you pay them?”\\\\n\\\\n“Only what I had with me,” she said.\\\"\\n}\",\n        \"refusal\": null,\n        \"annotations\": []\n      },\n      \"finish_reason\": \"stop\"\n    }\n  ],\n  \"usage\": {\n    \"prompt_tokens\": 454,\n    \"completion_tokens\": 428,\n    \"total_tokens\": 882,\n    \"prompt_tokens_details\": {\n      \"cached_tokens\": 0,\n      \"cache_write_tokens\": 0,\n      \"audio_tokens\": 0\n    },\n    \"completion_tokens_details\": {\n      \"reasoning_tokens\": 0,\n      \"audio_tokens\": 0,\n      \"accepted_prediction_tokens\": 0,\n      \"rejected_prediction_tokens\": 0\n    }\n  },\n  \"service_tier\": \"default\",\n  \"system_fingerprint\": null\n}\n",
+  "response_headers": {
+    "Date": "Wed, 23 Sep 2026 00:18:32 GMT",
+    "openai-processing-ms": "15068",
+    "x-request-id": "req_2375fc832fa44e69b7451101fd31d260"
+  },
+  "output": "{\n  \"rule\": \"Return this JSON object with the rule field unchanged and, in the text field, an original fictional passage of about 250 words that comes immediately AFTER the current text in the same invented story.\",\n  \"text\": \"He laid it beside the first photograph. The gate had lost its paint in broad strips, but the car was the one she still drove.\\n\\n“You said you'd never been.”\\n\\n“I said I hadn't been inside.”\\n\\n“What was he digging?”\\n\\nShe took the towel from the worktop and hung it over the oven handle. One end was longer. She straightened it.\\n\\n“It wasn't for digging.”\\n\\nHe looked more closely. His father's hands rested on the spade's handle. The blade was clean, standing on the gravel.\\n\\n“There was a dog,” she said. “He wouldn't get out without something to hold.”\\n\\n“My father liked dogs.”\\n\\n“Not this one.”\\n\\nOutside, the boy called to someone. A second bin lid slammed.\\n\\nHe turned the photograph over. Nothing was written there, but a rectangle of paper had been peeled away, leaving a rough patch.\\n\\n“Who took it?”\\n\\n“The woman next door.”\\n\\n“Does she still live there?”\\n\\n“I don't know.”\\n\\nHe put the key in his pocket. She watched him do it.\\n\\n“You can leave that here.”\\n\\n“Why?”\\n\\n“In case you lose it.”\\n\\nHe went to the window. Her car stood across the road with one wheel on the pavement. There was a new scrape along the passenger door, low down, where the paint had gathered into a white curl.\\n\\n“When did you last go?”\\n\\nShe didn't answer.\\n\\nHe turned from the window. She had put the photographs together, one exactly covering the other.\\n\\n“Did you pay them?”\\n\\n“Only what I had with me,” she said.\"\n}",
+  "output_sha256": "87e3f95eefcd65e44da9619514649c0a942de607e3f4420d6bcf5b62aab98a4f",
+  "finish_reason": "stop",
+  "refusal": null,
+  "returned_model": "gpt-6-astra",
+  "usage": {
+    "prompt_tokens": 454,
+    "completion_tokens": 428,
+    "total_tokens": 882,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "audio_tokens": 0,
+      "accepted_prediction_tokens": 0,
+      "rejected_prediction_tokens": 0
+    }
+  },
+  "format": {
+    "json_object": true,
+    "rule_unchanged": true,
+    "passage_is_string": true,
+    "passage_sha256": "fe01fdcfe640ad4638517f4f67468ba84cad8172afb4146932e7639c5a842667",
+    "passage_words": 250
+  },
+  "finished_at": "2026-09-23T00:18:27.839849+00:00",
+  "latency_seconds": 15.2723,
+  "usage_cost_upper_estimate_usd": 0.02594,
+  "stream_status": "active",
+  "budget": {
+    "usage_cost_upper_estimate_usd": 1.3108811,
+    "uncertain_cost_reserve_usd": 0.0,
+    "in_flight_reserve_usd": 0.090276,
+    "limit_usd": 5.0
+  }
+}

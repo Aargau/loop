@@ -1,0 +1,20 @@
+{
+  "started_at": "2026-09-23T00:15:23.852517+00:00",
+  "model": "gpt-6-astra",
+  "seed": "sunset",
+  "hop": 12,
+  "endpoint": "https://api.openai.com/v1/chat/completions",
+  "body": {
+    "model": "gpt-6-astra",
+    "messages": [
+      {
+        "role": "user",
+        "content": "{\n  \"rule\": \"Return this JSON object with the rule field unchanged and, in the text field, an original fictional passage of about 250 words that comes immediately BEFORE the current text in the same invented story.\",\n  \"text\": \"On Sunday afternoon, Mara went back to the hospital for the things they had forgotten to give her. The nurse at reception telephoned upstairs, then asked her to sit down. There was only one other person waiting, a man holding a pair of slippers in a supermarket bag.\\n\\nHer father’s belongings arrived in a clear sack with his name written on a white strip. A watch, a comb, his trousers folded around his shoes. She checked for his glasses.\\n\\n‘They might still be on the ward,’ the nurse said.\\n\\n‘He didn’t bring them.’\\n\\nShe remembered now: he had left them beside the till because the screw in one arm was loose. He had been using the spare pair, the ones that made the floor seem farther away.\\n\\nAt home she put the sack on a kitchen chair. Her sister called to ask whether she had eaten and whether there was anyone they ought to telephone.\\n\\n‘The people with clothes in the shop,’ Mara said.\\n\\n‘Surely that can wait.’\\n\\n‘Some of them might need them.’\\n\\nNeither spoke for a moment. Her sister said she would come on Thursday, earlier if she could arrange it.\\n\\nMara washed a plate and left it in the rack. She had taken three days off work; she would have to ring again. Before bed, she looked in her handbag for the shop key, emptying the small compartments onto the table. There were two pens, a receipt for petrol and a wrapped mint she had been carrying for months.\\n\\nShe put everything back except the mint.\"\n}"
+      }
+    ],
+    "max_completion_tokens": 4096,
+    "reasoning_effort": "low"
+  },
+  "state_sha256": "855f18a1888b9177c75abd82a7b39887e5605d9607f056b676dcdf49678dede3",
+  "reserved_cost_usd": 0.22675
+}

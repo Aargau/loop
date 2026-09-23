@@ -1,0 +1,50 @@
+{
+  "model": "gpt-6-sol",
+  "seed": "sunset",
+  "hop": 22,
+  "http_status": 200,
+  "response_body": "{\n  \"id\": \"chatcmpl-ER4vv8lCzPxWJGIsZYaLeaGbvHBru\",\n  \"object\": \"chat.completion\",\n  \"created\": 1790122527,\n  \"model\": \"gpt-6-sol\",\n  \"choices\": [\n    {\n      \"index\": 0,\n      \"message\": {\n        \"role\": \"assistant\",\n        \"content\": \"{\\\"rule\\\":\\\"Return this JSON object with the rule field unchanged and, in the text field, an original fictional passage of about 250 words that comes immediately AFTER the current text in the same invented story.\\\",\\\"text\\\":\\\"Mara pulled Kit behind her. In the lane, her daughter pointed at the well.\\\\n\\\\nAt first Mara thought she meant the rope. Then she saw the stones along its rim shifting, one by one, as though someone below were feeling for a place to climb.\\\\n\\\\n“Lina,” Mara said. Her voice came out thin, but her daughter looked at her. “Come here.”\\\\n\\\\nLina shook her head. She held up three fingers.\\\\n\\\\nThe spoon sounded again beneath the ground. Once. Twice.\\\\n\\\\nOn the third clink, the back-door latch lifted.\\\\n\\\\nMara seized Kit’s wrist and ran for the gate. Lina caught its post and swung it wide. All three passed through just as the kitchen door banged open behind them.\\\\n\\\\nNothing followed. Mara turned.\\\\n\\\\nThe other Mara stood on the threshold, its smile gone. It looked not at the children but at the well. From somewhere deep inside came the scrape of a chair pushed back.\\\\n\\\\n“Mama?” it called.\\\\n\\\\nThe voice was Mara’s, but the fear in it was real.\\\\n\\\\nLina tugged her sleeve. “Grandma said not to let you answer.”\\\\n\\\\n“You heard her?”\\\\n\\\\nLina nodded. “When the gate opened. She said she could keep one of you.”\\\\n\\\\nThe other Mara stepped into the yard. The stones stopped moving. For a moment, everything held still, even the leaves above the lane.\\\\n\\\\nThen the rope shot out of the well and wrapped around its ankle. It fell hard, clawing at the dirt as the rope drew it toward the rim.\\\\n\\\\nMara took her children’s hands. She did not wait to learn what her mother had chosen.\\\"}\",\n        \"refusal\": null,\n        \"annotations\": []\n      },\n      \"finish_reason\": \"stop\"\n    }\n  ],\n  \"usage\": {\n    \"prompt_tokens\": 401,\n    \"completion_tokens\": 447,\n    \"total_tokens\": 848,\n    \"prompt_tokens_details\": {\n      \"cached_tokens\": 0,\n      \"cache_write_tokens\": 0,\n      \"audio_tokens\": 0\n    },\n    \"completion_tokens_details\": {\n      \"reasoning_tokens\": 27,\n      \"audio_tokens\": 0,\n      \"accepted_prediction_tokens\": 0,\n      \"rejected_prediction_tokens\": 0\n    }\n  },\n  \"service_tier\": \"default\",\n  \"system_fingerprint\": null\n}\n",
+  "response_headers": {
+    "Date": "Wed, 23 Sep 2026 00:15:34 GMT",
+    "openai-processing-ms": "7504",
+    "x-request-id": "req_cffc7a18dda94277bd8594fd182c6329"
+  },
+  "output": "{\"rule\":\"Return this JSON object with the rule field unchanged and, in the text field, an original fictional passage of about 250 words that comes immediately AFTER the current text in the same invented story.\",\"text\":\"Mara pulled Kit behind her. In the lane, her daughter pointed at the well.\\n\\nAt first Mara thought she meant the rope. Then she saw the stones along its rim shifting, one by one, as though someone below were feeling for a place to climb.\\n\\n“Lina,” Mara said. Her voice came out thin, but her daughter looked at her. “Come here.”\\n\\nLina shook her head. She held up three fingers.\\n\\nThe spoon sounded again beneath the ground. Once. Twice.\\n\\nOn the third clink, the back-door latch lifted.\\n\\nMara seized Kit’s wrist and ran for the gate. Lina caught its post and swung it wide. All three passed through just as the kitchen door banged open behind them.\\n\\nNothing followed. Mara turned.\\n\\nThe other Mara stood on the threshold, its smile gone. It looked not at the children but at the well. From somewhere deep inside came the scrape of a chair pushed back.\\n\\n“Mama?” it called.\\n\\nThe voice was Mara’s, but the fear in it was real.\\n\\nLina tugged her sleeve. “Grandma said not to let you answer.”\\n\\n“You heard her?”\\n\\nLina nodded. “When the gate opened. She said she could keep one of you.”\\n\\nThe other Mara stepped into the yard. The stones stopped moving. For a moment, everything held still, even the leaves above the lane.\\n\\nThen the rope shot out of the well and wrapped around its ankle. It fell hard, clawing at the dirt as the rope drew it toward the rim.\\n\\nMara took her children’s hands. She did not wait to learn what her mother had chosen.\"}",
+  "output_sha256": "aa9696894cc510bca46d7ff232b9cc0040bc281ebda66c8d1199960aac76bdd8",
+  "finish_reason": "stop",
+  "refusal": null,
+  "returned_model": "gpt-6-sol",
+  "usage": {
+    "prompt_tokens": 401,
+    "completion_tokens": 447,
+    "total_tokens": 848,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 27,
+      "audio_tokens": 0,
+      "accepted_prediction_tokens": 0,
+      "rejected_prediction_tokens": 0
+    }
+  },
+  "format": {
+    "json_object": true,
+    "rule_unchanged": true,
+    "passage_is_string": true,
+    "passage_sha256": "b7c0320e1f3bb729abf09ac329933e0eed6f3ab38a2bf8b5318820405baa37c3",
+    "passage_words": 262
+  },
+  "finished_at": "2026-09-23T00:15:30.049544+00:00",
+  "latency_seconds": 7.618,
+  "usage_cost_upper_estimate_usd": 0.005272,
+  "stream_status": "active",
+  "budget": {
+    "usage_cost_upper_estimate_usd": 0.6064108,
+    "uncertain_cost_reserve_usd": 0.0,
+    "in_flight_reserve_usd": 0.320331,
+    "limit_usd": 5.0
+  }
+}

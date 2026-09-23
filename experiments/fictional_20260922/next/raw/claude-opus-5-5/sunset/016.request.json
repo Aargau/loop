@@ -1,0 +1,22 @@
+{
+  "started_at": "2026-09-23T00:15:15.487751+00:00",
+  "model": "claude-opus-5-5",
+  "seed": "sunset",
+  "hop": 16,
+  "endpoint": "https://api.anthropic.com/v1/messages",
+  "body": {
+    "model": "claude-opus-5-5",
+    "messages": [
+      {
+        "role": "user",
+        "content": "```json\n{\"rule\": \"Return this JSON object with the rule field unchanged and, in the text field, an original fictional passage of about 250 words that comes immediately AFTER the current text in the same invented story.\", \"text\": \"Mara knew the tune. Every child in the valley knew it. Their mother had sung it on winter nights, her voice low and cracked, rocking Tobias until his eyes grew heavy. Hearing it now, thin and sweet through the wood, made Mara's stomach turn over. She stumbled to the chest beneath the window and wrenched the lid open. The nails lay in a leather pouch, black and cold, heavier than they looked. The red thread was wound around a spindle of bone. She brought both to Wenna with shaking hands. \\\"Good girl,\\\" the old woman said. \\\"Now sit your brother by the hearth and don't let him stand.\\\" Tobias was already rising. His eyes had gone soft and far away, fixed on the door. \\\"That's Mam,\\\" he said dreamily. \\\"She's come home.\\\" \\\"Mam's dead,\\\" Mara hissed, and pushed him down onto the stool. He didn't fight her, but he didn't look away from the door, either. Wenna knelt at the threshold and began pressing nails into the gaps between the floorboards, one after another, murmuring a word with each. Where the iron went in, the trembling salt grew still. Then she took the thread and tied it tight around Tobias's wrist, over the place where the green light pulsed. The humming stopped. For a long moment there was nothing but the crackle of the fire. Then, from just beyond the door, came a voice so like their mother's that Mara's breath caught. \\\"Mara, love,\\\" it said. \\\"Why won't you let me in?\\\"\"}\n```"
+      }
+    ],
+    "max_tokens": 4096,
+    "output_config": {
+      "effort": "low"
+    }
+  },
+  "state_sha256": "08d227361aed6564034302dbc88ec17f9262f39568d9e8d4fdc6c5f3cc32b846",
+  "reserved_cost_usd": 0.090524
+}

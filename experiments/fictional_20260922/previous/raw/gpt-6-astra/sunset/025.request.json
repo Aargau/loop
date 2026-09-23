@@ -1,0 +1,20 @@
+{
+  "started_at": "2026-09-23T00:18:15.302946+00:00",
+  "model": "gpt-6-astra",
+  "seed": "sunset",
+  "hop": 25,
+  "endpoint": "https://api.openai.com/v1/chat/completions",
+  "body": {
+    "model": "gpt-6-astra",
+    "messages": [
+      {
+        "role": "user",
+        "content": "{\n  \"rule\": \"Return this JSON object with the rule field unchanged and, in the text field, an original fictional passage of about 250 words that comes immediately BEFORE the current text in the same invented story.\",\n  \"text\": \"On Thursday the woman who rented the upstairs room came down to ask whether Mara had a spare key. Hers had bent in the lock, though she said she had done nothing unusual with it.\\n\\nMara kept the spare in a saucer behind the counter. There were three keys in it and she had to try each one.\\n\\n‘You should label them,’ the woman said.\\n\\n‘I did. The labels came off.’\\n\\nThe woman took the key upstairs. Mara put the other two back in the saucer, where they looked more alike than before.\\n\\nBusiness had been slow since the rain began. A customer had reserved a standard lamp by telephone and then called again to describe a different lamp, one Mara had never had. They agreed to cancel the reservation.\\n\\nAt four her brother sent a message asking whether she still had the sideboard. She photographed it from behind the counter, with a cardboard box hiding the pale rectangle on its top.\\n\\nStill here, she wrote.\\n\\nHe replied with a thumb raised in approval. She waited for another message, then set the phone face down.\\n\\nBefore leaving, she unpacked the box. It contained linen napkins, two wooden salad servers and a packet of birthday candles with one missing. She put the napkins in the sideboard. The top drawer caught halfway, and she reached underneath to check the runner, but could feel only the rough underside of the wood.\\n\\nOutside, the upstairs woman was testing her key.\\n\\n‘It works if you lift it,’ she said.\\n\\nMara waited until she was in, then pulled the shop door shut.\"\n}"
+      }
+    ],
+    "max_completion_tokens": 4096,
+    "reasoning_effort": "low"
+  },
+  "state_sha256": "d60091ba7709f80b1d4e3eaed5d67cae06682003fe402715e5e8b38eaa86f08b",
+  "reserved_cost_usd": 0.22732
+}

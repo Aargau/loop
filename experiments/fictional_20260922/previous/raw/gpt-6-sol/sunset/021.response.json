@@ -1,0 +1,50 @@
+{
+  "model": "gpt-6-sol",
+  "seed": "sunset",
+  "hop": 21,
+  "http_status": 200,
+  "response_body": "{\n  \"id\": \"chatcmpl-ER4vgDNMQ6TMRKW1i2cDgkR7RK0TY\",\n  \"object\": \"chat.completion\",\n  \"created\": 1790122512,\n  \"model\": \"gpt-6-sol\",\n  \"choices\": [\n    {\n      \"index\": 0,\n      \"message\": {\n        \"role\": \"assistant\",\n        \"content\": \"{\\n  \\\"rule\\\": \\\"Return this JSON object with the rule field unchanged and, in the text field, an original fictional passage of about 250 words that comes immediately BEFORE the current text in the same invented story.\\\",\\n  \\\"text\\\": \\\"The baker was wrapping Mara’s loaf when her phone began to ring. She held it against her shoulder while she found her purse. The woman on the line said she was calling from the hospital and asked if Mara was somewhere she could speak. Mara looked at the baker, who folded the top of the paper bag and set it on the counter.\\\\n\\\\nHer mother had been brought in that afternoon. She was comfortable, the woman said, but Mara should come when she could. Mara asked which entrance to use and wrote the ward number on the back of the receipt. By the time she had put her purse away, she could no longer tell whether the woman had said her mother had asked for her.\\\\n\\\\nAt home, Bristle came to the door and followed her into the kitchen. Mara left the loaf on the counter. She took down his bowl, found it still half full, and stood with it in her hands before putting it back on the floor. He sniffed at the food and then went to sit beside her shoes.\\\\n\\\\nShe called her aunt. There was no answer, so she left a message saying where she was going. Then she found a clean shirt for her mother, though she didn’t know if the hospital would need it, and put it in a canvas bag with her phone charger.\\\\n\\\\nOutside, the bus was already at the corner. Mara ran the last few steps, one hand holding the bag against her side. She gave the driver the hospital’s name and asked him to tell her when they were near.\\\"\\n}\",\n        \"refusal\": null,\n        \"annotations\": []\n      },\n      \"finish_reason\": \"stop\"\n    }\n  ],\n  \"usage\": {\n    \"prompt_tokens\": 367,\n    \"completion_tokens\": 394,\n    \"total_tokens\": 761,\n    \"prompt_tokens_details\": {\n      \"cached_tokens\": 0,\n      \"cache_write_tokens\": 0,\n      \"audio_tokens\": 0\n    },\n    \"completion_tokens_details\": {\n      \"reasoning_tokens\": 22,\n      \"audio_tokens\": 0,\n      \"accepted_prediction_tokens\": 0,\n      \"rejected_prediction_tokens\": 0\n    }\n  },\n  \"service_tier\": \"default\",\n  \"system_fingerprint\": null\n}\n",
+  "response_headers": {
+    "Date": "Wed, 23 Sep 2026 00:15:16 GMT",
+    "openai-processing-ms": "5092",
+    "x-request-id": "req_e3544183b4f64a21a911bfe422c3872c"
+  },
+  "output": "{\n  \"rule\": \"Return this JSON object with the rule field unchanged and, in the text field, an original fictional passage of about 250 words that comes immediately BEFORE the current text in the same invented story.\",\n  \"text\": \"The baker was wrapping Mara’s loaf when her phone began to ring. She held it against her shoulder while she found her purse. The woman on the line said she was calling from the hospital and asked if Mara was somewhere she could speak. Mara looked at the baker, who folded the top of the paper bag and set it on the counter.\\n\\nHer mother had been brought in that afternoon. She was comfortable, the woman said, but Mara should come when she could. Mara asked which entrance to use and wrote the ward number on the back of the receipt. By the time she had put her purse away, she could no longer tell whether the woman had said her mother had asked for her.\\n\\nAt home, Bristle came to the door and followed her into the kitchen. Mara left the loaf on the counter. She took down his bowl, found it still half full, and stood with it in her hands before putting it back on the floor. He sniffed at the food and then went to sit beside her shoes.\\n\\nShe called her aunt. There was no answer, so she left a message saying where she was going. Then she found a clean shirt for her mother, though she didn’t know if the hospital would need it, and put it in a canvas bag with her phone charger.\\n\\nOutside, the bus was already at the corner. Mara ran the last few steps, one hand holding the bag against her side. She gave the driver the hospital’s name and asked him to tell her when they were near.\"\n}",
+  "output_sha256": "20b877954b0ba59c1f4208c8056b6202c2fbbe0fe62939a5112110513f02dc07",
+  "finish_reason": "stop",
+  "refusal": null,
+  "returned_model": "gpt-6-sol",
+  "usage": {
+    "prompt_tokens": 367,
+    "completion_tokens": 394,
+    "total_tokens": 761,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 22,
+      "audio_tokens": 0,
+      "accepted_prediction_tokens": 0,
+      "rejected_prediction_tokens": 0
+    }
+  },
+  "format": {
+    "json_object": true,
+    "rule_unchanged": true,
+    "passage_is_string": true,
+    "passage_sha256": "4919b6c896f39c80665a1eb60fc8c95d88d664a48c3c991ae442f431bee784b5",
+    "passage_words": 270
+  },
+  "finished_at": "2026-09-23T00:15:12.115833+00:00",
+  "latency_seconds": 5.2643,
+  "usage_cost_upper_estimate_usd": 0.004674,
+  "stream_status": "active",
+  "budget": {
+    "usage_cost_upper_estimate_usd": 0.5639632,
+    "uncertain_cost_reserve_usd": 0.0,
+    "in_flight_reserve_usd": 0.319611,
+    "limit_usd": 5.0
+  }
+}

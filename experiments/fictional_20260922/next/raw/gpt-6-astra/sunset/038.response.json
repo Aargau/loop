@@ -1,0 +1,50 @@
+{
+  "model": "gpt-6-astra",
+  "seed": "sunset",
+  "hop": 38,
+  "http_status": 200,
+  "response_body": "{\n  \"id\": \"chatcmpl-ER51zYnQy4R2tt2eBmifcXiqGH3gL\",\n  \"object\": \"chat.completion\",\n  \"created\": 1790122903,\n  \"model\": \"gpt-6-astra\",\n  \"choices\": [\n    {\n      \"index\": 0,\n      \"message\": {\n        \"role\": \"assistant\",\n        \"content\": \"{\\n  \\\"rule\\\": \\\"Return this JSON object with the rule field unchanged and, in the text field, an original fictional passage of about 250 words that comes immediately AFTER the current text in the same invented story.\\\",\\n  \\\"text\\\": \\\"Anne put her hand over her mouth.\\\\n\\\\nThe boy looked for his schoolbag, though he knew it was upstairs, hanging from the bedpost. His mother pulled gently on the thread. Something tightened beneath his ribs.\\\\n\\\\n“Stop,” he said.\\\\n\\\\nShe let it slacken at once.\\\\n\\\\nNeither father moved. That frightened him more than the bowl.\\\\n\\\\n“I only opened the seam,” Anne said. “There wasn't room for everything.”\\\\n\\\\n“For what?” his mother asked.\\\\n\\\\nAnne looked at the boy.\\\\n\\\\nHe remembered packing for his grandmother's. Socks, the green jumper, the book with the missing last page. But that was tomorrow. He remembered his father telling him to hurry. He remembered being halfway down the stairs when the telephone rang.\\\\n\\\\nThe other father closed his eyes.\\\\n\\\\n“No,” his mother said, watching the boy's face. “He doesn't need that one.”\\\\n\\\\nFrom the kitchen came the small, dry sound of an orange rolling across the table. It fell without striking the floor.\\\\n\\\\nHis father bent to pick up the key.\\\\n\\\\n“Leave it,” said the other man.\\\\n\\\\nFor the first time, their voices sounded different. His father's was younger.\\\\n\\\\nThe boy reached for the thread. His mother tried to lift it away, but he caught it between finger and thumb.\\\\n\\\\nHe could feel knots in it. Hundreds of them, close together.\\\\n\\\\n“Which one is tomorrow?” he asked.\\\\n\\\\nAnne knelt beside him.\\\\n\\\\n“None of them yet.”\\\\n\\\\n“Then we don't have to go.”\\\\n\\\\nHis mother made a sound he had only heard once before, through a bathroom door.\\\\n\\\\nOutside, a car horn sounded twice.\\\\n\\\\nHis grandmother never came to their house.\\\"\\n}\",\n        \"refusal\": null,\n        \"annotations\": []\n      },\n      \"finish_reason\": \"stop\"\n    }\n  ],\n  \"usage\": {\n    \"prompt_tokens\": 419,\n    \"completion_tokens\": 432,\n    \"total_tokens\": 851,\n    \"prompt_tokens_details\": {\n      \"cached_tokens\": 0,\n      \"cache_write_tokens\": 0,\n      \"audio_tokens\": 0\n    },\n    \"completion_tokens_details\": {\n      \"reasoning_tokens\": 0,\n      \"audio_tokens\": 0,\n      \"accepted_prediction_tokens\": 0,\n      \"rejected_prediction_tokens\": 0\n    }\n  },\n  \"service_tier\": \"default\",\n  \"system_fingerprint\": null\n}\n",
+  "response_headers": {
+    "Date": "Wed, 23 Sep 2026 00:21:57 GMT",
+    "openai-processing-ms": "14392",
+    "x-request-id": "req_d586a20dfd7f43a897b338831ee0ffce"
+  },
+  "output": "{\n  \"rule\": \"Return this JSON object with the rule field unchanged and, in the text field, an original fictional passage of about 250 words that comes immediately AFTER the current text in the same invented story.\",\n  \"text\": \"Anne put her hand over her mouth.\\n\\nThe boy looked for his schoolbag, though he knew it was upstairs, hanging from the bedpost. His mother pulled gently on the thread. Something tightened beneath his ribs.\\n\\n“Stop,” he said.\\n\\nShe let it slacken at once.\\n\\nNeither father moved. That frightened him more than the bowl.\\n\\n“I only opened the seam,” Anne said. “There wasn't room for everything.”\\n\\n“For what?” his mother asked.\\n\\nAnne looked at the boy.\\n\\nHe remembered packing for his grandmother's. Socks, the green jumper, the book with the missing last page. But that was tomorrow. He remembered his father telling him to hurry. He remembered being halfway down the stairs when the telephone rang.\\n\\nThe other father closed his eyes.\\n\\n“No,” his mother said, watching the boy's face. “He doesn't need that one.”\\n\\nFrom the kitchen came the small, dry sound of an orange rolling across the table. It fell without striking the floor.\\n\\nHis father bent to pick up the key.\\n\\n“Leave it,” said the other man.\\n\\nFor the first time, their voices sounded different. His father's was younger.\\n\\nThe boy reached for the thread. His mother tried to lift it away, but he caught it between finger and thumb.\\n\\nHe could feel knots in it. Hundreds of them, close together.\\n\\n“Which one is tomorrow?” he asked.\\n\\nAnne knelt beside him.\\n\\n“None of them yet.”\\n\\n“Then we don't have to go.”\\n\\nHis mother made a sound he had only heard once before, through a bathroom door.\\n\\nOutside, a car horn sounded twice.\\n\\nHis grandmother never came to their house.\"\n}",
+  "output_sha256": "926e3c97d08ae637a6a42ada416fed9ebda7d134d33ff87a0ef339f791a0655a",
+  "finish_reason": "stop",
+  "refusal": null,
+  "returned_model": "gpt-6-astra",
+  "usage": {
+    "prompt_tokens": 419,
+    "completion_tokens": 432,
+    "total_tokens": 851,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "audio_tokens": 0,
+      "accepted_prediction_tokens": 0,
+      "rejected_prediction_tokens": 0
+    }
+  },
+  "format": {
+    "json_object": true,
+    "rule_unchanged": true,
+    "passage_is_string": true,
+    "passage_sha256": "fa12342103f25f4be3d368a5418cb3742f3c66338624ca66ca9516352f7a7f43",
+    "passage_words": 262
+  },
+  "finished_at": "2026-09-23T00:21:53.015141+00:00",
+  "latency_seconds": 14.4994,
+  "usage_cost_upper_estimate_usd": 0.02579,
+  "stream_status": "active",
+  "budget": {
+    "usage_cost_upper_estimate_usd": 1.7672951,
+    "uncertain_cost_reserve_usd": 0.0,
+    "in_flight_reserve_usd": 0.0,
+    "limit_usd": 5.0
+  }
+}

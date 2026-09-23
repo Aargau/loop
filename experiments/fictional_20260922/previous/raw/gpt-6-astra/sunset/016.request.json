@@ -1,0 +1,20 @@
+{
+  "started_at": "2026-09-23T00:16:15.428655+00:00",
+  "model": "gpt-6-astra",
+  "seed": "sunset",
+  "hop": 16,
+  "endpoint": "https://api.openai.com/v1/chat/completions",
+  "body": {
+    "model": "gpt-6-astra",
+    "messages": [
+      {
+        "role": "user",
+        "content": "{\n  \"rule\": \"Return this JSON object with the rule field unchanged and, in the text field, an original fictional passage of about 250 words that comes immediately BEFORE the current text in the same invented story.\",\n  \"text\": \"Mara had left the shop with the lights on. Halfway to the hospital she remembered the iron, then remembered unplugging it before she answered the telephone. There was a pair of trousers laid across the board, one leg pressed and the other still showing the pale line where the hem had been.\\n\\nAt reception she gave her father’s name. The woman asked her to spell it, though it was an ordinary name, and pointed towards the lifts.\\n\\nHer brother had not answered either number. She had called his house first, then his mobile, standing beside a machine that sold sandwiches. On the second call she watched a packet move forward on its metal coil and stop against the glass. The man who had paid for it pressed the button again.\\n\\nA doctor took her into a room with no bed. There were three chairs and a low table with a box of tissues on it. He explained what had happened after the neighbour found her father. Mara kept her coat on. When he asked whether there was anything she wanted to know, she asked what time the neighbour had come.\\n\\nLater, a nurse walked with her to the ward desk. Mara could not remember whether she had thanked the doctor. She looked back, but the door to the little room was closed.\\n\\n‘He had a bag with him,’ the nurse said. ‘We can give you that now, if you like.’\\n\\nMara moved aside to let a trolley pass. Then she said yes.\"\n}"
+      }
+    ],
+    "max_completion_tokens": 4096,
+    "reasoning_effort": "low"
+  },
+  "state_sha256": "1dce2537853b4f7b22fb029bf98b18c2d451f79453e8d8981644c316aedf54ea",
+  "reserved_cost_usd": 0.22592
+}

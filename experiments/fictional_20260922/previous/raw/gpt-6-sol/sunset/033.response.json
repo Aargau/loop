@@ -1,0 +1,50 @@
+{
+  "model": "gpt-6-sol",
+  "seed": "sunset",
+  "hop": 33,
+  "http_status": 200,
+  "response_body": "{\n  \"id\": \"chatcmpl-ER4wynyIx2AIT9ysWfUW8KXg95AeV\",\n  \"object\": \"chat.completion\",\n  \"created\": 1790122592,\n  \"model\": \"gpt-6-sol\",\n  \"choices\": [\n    {\n      \"index\": 0,\n      \"message\": {\n        \"role\": \"assistant\",\n        \"content\": \"{\\n  \\\"rule\\\": \\\"Return this JSON object with the rule field unchanged and, in the text field, an original fictional passage of about 250 words that comes immediately BEFORE the current text in the same invented story.\\\",\\n  \\\"text\\\": \\\"On Thursday, Mara found an envelope from the electricity company beneath a supermarket leaflet. She slit it open while the kettle boiled, then left it on the table without reading past the first line. There was enough money in her account. She had checked on Tuesday. What she disliked was the small print, the dates, the possibility that she would have to telephone someone.\\\\n\\\\nHer mother used to sort the post before taking off her coat. Bills went into a blue folder; invitations stood against the clock until she answered them. Mara had inherited the clock, though not the habit. It ticked above the kitchen table, two minutes fast.\\\\n\\\\nThey had spoken on Sunday. Her mother had described a neighbour’s new dog and the pears falling early from the tree. When Mara asked whether she had been up the ladder to pick the rest, there had been a pause. ‘I’m not foolish,’ her mother said, and changed the subject. Mara had wanted to say that she hadn’t meant it like that, but they were already talking about bus times.\\\\n\\\\nOn Friday she came home with milk, bread and a packet of batteries for the radio. She set the shopping down among the letters and made tea. The teaspoon she wanted was in the drawer beside the cooker, the one that had resisted her for months. She tugged it open far enough to reach inside, then noticed how its front edge sat crooked against the cabinet. Perhaps something had slipped behind it. She drank her tea while it cooled, and after supper came back to look.\\\"\\n}\",\n        \"refusal\": null,\n        \"annotations\": []\n      },\n      \"finish_reason\": \"stop\"\n    }\n  ],\n  \"usage\": {\n    \"prompt_tokens\": 345,\n    \"completion_tokens\": 408,\n    \"total_tokens\": 753,\n    \"prompt_tokens_details\": {\n      \"cached_tokens\": 0,\n      \"cache_write_tokens\": 0,\n      \"audio_tokens\": 0\n    },\n    \"completion_tokens_details\": {\n      \"reasoning_tokens\": 37,\n      \"audio_tokens\": 0,\n      \"accepted_prediction_tokens\": 0,\n      \"rejected_prediction_tokens\": 0\n    }\n  },\n  \"service_tier\": \"default\",\n  \"system_fingerprint\": null\n}\n",
+  "response_headers": {
+    "Date": "Wed, 23 Sep 2026 00:16:38 GMT",
+    "openai-processing-ms": "6919",
+    "x-request-id": "req_15ee2171031449ae8d6724e2d4b3f069"
+  },
+  "output": "{\n  \"rule\": \"Return this JSON object with the rule field unchanged and, in the text field, an original fictional passage of about 250 words that comes immediately BEFORE the current text in the same invented story.\",\n  \"text\": \"On Thursday, Mara found an envelope from the electricity company beneath a supermarket leaflet. She slit it open while the kettle boiled, then left it on the table without reading past the first line. There was enough money in her account. She had checked on Tuesday. What she disliked was the small print, the dates, the possibility that she would have to telephone someone.\\n\\nHer mother used to sort the post before taking off her coat. Bills went into a blue folder; invitations stood against the clock until she answered them. Mara had inherited the clock, though not the habit. It ticked above the kitchen table, two minutes fast.\\n\\nThey had spoken on Sunday. Her mother had described a neighbour’s new dog and the pears falling early from the tree. When Mara asked whether she had been up the ladder to pick the rest, there had been a pause. ‘I’m not foolish,’ her mother said, and changed the subject. Mara had wanted to say that she hadn’t meant it like that, but they were already talking about bus times.\\n\\nOn Friday she came home with milk, bread and a packet of batteries for the radio. She set the shopping down among the letters and made tea. The teaspoon she wanted was in the drawer beside the cooker, the one that had resisted her for months. She tugged it open far enough to reach inside, then noticed how its front edge sat crooked against the cabinet. Perhaps something had slipped behind it. She drank her tea while it cooled, and after supper came back to look.\"\n}",
+  "output_sha256": "dc2f5e4cafe4c8b940b73f163722b9a63f29261ab99995c61aab67b4e5d1cd16",
+  "finish_reason": "stop",
+  "refusal": null,
+  "returned_model": "gpt-6-sol",
+  "usage": {
+    "prompt_tokens": 345,
+    "completion_tokens": 408,
+    "total_tokens": 753,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 37,
+      "audio_tokens": 0,
+      "accepted_prediction_tokens": 0,
+      "rejected_prediction_tokens": 0
+    }
+  },
+  "format": {
+    "json_object": true,
+    "rule_unchanged": true,
+    "passage_is_string": true,
+    "passage_sha256": "0b802dcf97d4cb73af321caa20e72b335b654cc7adafb0ca68c8dff265c17032",
+    "passage_words": 265
+  },
+  "finished_at": "2026-09-23T00:16:34.078525+00:00",
+  "latency_seconds": 7.0566,
+  "usage_cost_upper_estimate_usd": 0.00477,
+  "stream_status": "active",
+  "budget": {
+    "usage_cost_upper_estimate_usd": 0.8950851,
+    "uncertain_cost_reserve_usd": 0.0,
+    "in_flight_reserve_usd": 0.317652,
+    "limit_usd": 5.0
+  }
+}

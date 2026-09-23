@@ -1,0 +1,22 @@
+{
+  "started_at": "2026-09-23T00:13:06.548987+00:00",
+  "model": "claude-opus-5-5",
+  "seed": "sunset",
+  "hop": 2,
+  "endpoint": "https://api.anthropic.com/v1/messages",
+  "body": {
+    "model": "claude-opus-5-5",
+    "messages": [
+      {
+        "role": "user",
+        "content": "```json\n{\"rule\": \"Return this JSON object with the rule field unchanged and, in the text field, an original fictional passage of about 250 words that comes immediately AFTER the current text in the same invented story.\", \"text\": \"Mara stood at the edge of the orchard and watched the last gold light slide down the slopes like water draining from a basin. The apple trees threw long shadows across the grass, their branches reaching toward the farmhouse as if they, too, wanted to go inside before dark. Somewhere behind her, the goats had started their evening complaints, a ragged chorus that meant someone had forgotten to latch the pen again. She didn't turn around. Her eyes were fixed on the narrow road that curled over the nearest ridge, the road her brother had taken three days ago with a borrowed horse and a promise to return by the second nightfall. Tonight was the third. The wind shifted, carrying the smell of woodsmoke from the Hallorans' chimney half a mile east, and with it a sound she almost mistook for the creak of the gate. Hooves. Slow ones. Mara pressed a hand against the rough bark of the oldest tree, the one their grandfather had planted the year the river flooded, and held her breath. A shape appeared at the crest of the ridge, dark against the violet sky. It was the horse, she was sure of that, the pale blaze on its face catching the last of the light. But the saddle was empty, and the reins trailed loose in the dust. Mara was already running before she had decided to move, her skirts snagging on thistles, her heart louder than the hooves. The horse stopped when it saw her, trembling, and she noticed the folded paper tucked beneath the saddle strap.\"}\n```"
+      }
+    ],
+    "max_tokens": 4096,
+    "output_config": {
+      "effort": "low"
+    }
+  },
+  "state_sha256": "cc020d388b60dc8882872bb19a227c72812accd9a9d97e854fcb5009b2d0272a",
+  "reserved_cost_usd": 0.090756
+}

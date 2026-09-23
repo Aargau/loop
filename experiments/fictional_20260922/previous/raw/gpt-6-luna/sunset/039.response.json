@@ -1,0 +1,47 @@
+{
+  "model": "gpt-6-luna",
+  "seed": "sunset",
+  "hop": 39,
+  "http_status": 200,
+  "response_body": "{\n  \"id\": \"chatcmpl-ER4wUAmU54PRVAnV7UmZc3kPIKm0B\",\n  \"object\": \"chat.completion\",\n  \"created\": 1790122562,\n  \"model\": \"gpt-6-luna\",\n  \"choices\": [\n    {\n      \"index\": 0,\n      \"message\": {\n        \"role\": \"assistant\",\n        \"content\": \"{\\\"rule\\\":\\\"Return this JSON object with the rule field unchanged and, in the text field, an original fictional passage of about 250 words that comes immediately BEFORE the current text in the same invented story.\\\",\\\"text\\\":\\\"The evening before, Mara stood on a chair by her bedroom window, trying to see where the clouds went after sunset.\\n\\nThey had turned the color of old silver, and their edges were fading into the dark. She pressed her forehead to the cool glass. Somewhere beyond the rooftops, Grandma had said, clouds carried rain to thirsty gardens and shade to hot streets. Maybe they carried other things, too—lost wishes, whispered stories, the smell of faraway oceans.\\n\\n“Mara, time to get ready for bed,” her mother called.\\n\\n“Just one more minute.”\\n\\nOn the desk behind her lay the library book she was supposed to return the next day. Its cover showed a tiny boat beneath a sky full of clouds. Mara had read the story twice, but she still liked the picture best. She reached for her library card, certain she’d left it beside the book. The desk was empty.\\n\\nShe checked the pockets of her schoolbag, then the drawer where she kept pencils and buttons. No card. The more she searched, the more certain she became that it had vanished somewhere between the classroom and home.\\n\\nHer mother appeared in the doorway. “We’ll look again in the morning.”\\n\\nMara wanted to argue, but a yawn interrupted her. She placed the book carefully on her desk, where she would remember it, and climbed into bed. Through the window, the clouds had disappeared into the night. She imagined them traveling above the sleeping town, gathering secrets from every rooftop.\\n\\nJust before she drifted off, she decided she would watch them more carefully tomorrow. And, if she found her card, she would take the book back to the library.\\\"}\",\n        \"refusal\": null,\n        \"annotations\": []\n      },\n      \"finish_reason\": \"stop\"\n    }\n  ],\n  \"usage\": {\n    \"prompt_tokens\": 372,\n    \"completion_tokens\": 558,\n    \"total_tokens\": 930,\n    \"prompt_tokens_details\": {\n      \"cached_tokens\": 0,\n      \"cache_write_tokens\": 0,\n      \"audio_tokens\": 0\n    },\n    \"completion_tokens_details\": {\n      \"reasoning_tokens\": 170,\n      \"audio_tokens\": 0,\n      \"accepted_prediction_tokens\": 0,\n      \"rejected_prediction_tokens\": 0\n    }\n  },\n  \"service_tier\": \"default\",\n  \"system_fingerprint\": null\n}\n",
+  "response_headers": {
+    "Date": "Wed, 23 Sep 2026 00:16:07 GMT",
+    "openai-processing-ms": "5358",
+    "x-request-id": "req_4a0acc45b9db4cababaff15d6ea6218c"
+  },
+  "output": "{\"rule\":\"Return this JSON object with the rule field unchanged and, in the text field, an original fictional passage of about 250 words that comes immediately BEFORE the current text in the same invented story.\",\"text\":\"The evening before, Mara stood on a chair by her bedroom window, trying to see where the clouds went after sunset.\n\nThey had turned the color of old silver, and their edges were fading into the dark. She pressed her forehead to the cool glass. Somewhere beyond the rooftops, Grandma had said, clouds carried rain to thirsty gardens and shade to hot streets. Maybe they carried other things, too—lost wishes, whispered stories, the smell of faraway oceans.\n\n“Mara, time to get ready for bed,” her mother called.\n\n“Just one more minute.”\n\nOn the desk behind her lay the library book she was supposed to return the next day. Its cover showed a tiny boat beneath a sky full of clouds. Mara had read the story twice, but she still liked the picture best. She reached for her library card, certain she’d left it beside the book. The desk was empty.\n\nShe checked the pockets of her schoolbag, then the drawer where she kept pencils and buttons. No card. The more she searched, the more certain she became that it had vanished somewhere between the classroom and home.\n\nHer mother appeared in the doorway. “We’ll look again in the morning.”\n\nMara wanted to argue, but a yawn interrupted her. She placed the book carefully on her desk, where she would remember it, and climbed into bed. Through the window, the clouds had disappeared into the night. She imagined them traveling above the sleeping town, gathering secrets from every rooftop.\n\nJust before she drifted off, she decided she would watch them more carefully tomorrow. And, if she found her card, she would take the book back to the library.\"}",
+  "output_sha256": "4c5e308821ec25fe33174b6cc3fd99a5f431a91bbc5674e4223b75bd5776b02e",
+  "finish_reason": "stop",
+  "refusal": null,
+  "returned_model": "gpt-6-luna",
+  "usage": {
+    "prompt_tokens": 372,
+    "completion_tokens": 558,
+    "total_tokens": 930,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 170,
+      "audio_tokens": 0,
+      "accepted_prediction_tokens": 0,
+      "rejected_prediction_tokens": 0
+    }
+  },
+  "format": {
+    "json_object": false,
+    "rule_unchanged": false
+  },
+  "finished_at": "2026-09-23T00:16:02.658012+00:00",
+  "latency_seconds": 5.4661,
+  "usage_cost_upper_estimate_usd": 0.0003162,
+  "stream_status": "active",
+  "budget": {
+    "usage_cost_upper_estimate_usd": 0.7720806,
+    "uncertain_cost_reserve_usd": 0.0,
+    "in_flight_reserve_usd": 0.361892,
+    "limit_usd": 5.0
+  }
+}

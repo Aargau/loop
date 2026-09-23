@@ -1,0 +1,50 @@
+{
+  "model": "gpt-6-sol",
+  "seed": "sunset",
+  "hop": 10,
+  "http_status": 200,
+  "response_body": "{\n  \"id\": \"chatcmpl-ER4ucBYxr6MLESYpyNcGxdczkUQIE\",\n  \"object\": \"chat.completion\",\n  \"created\": 1790122446,\n  \"model\": \"gpt-6-sol\",\n  \"choices\": [\n    {\n      \"index\": 0,\n      \"message\": {\n        \"role\": \"assistant\",\n        \"content\": \"{\\\"rule\\\":\\\"Return this JSON object with the rule field unchanged and, in the text field, an original fictional passage of about 250 words that comes immediately AFTER the current text in the same invented story.\\\",\\\"text\\\":\\\"The lantern went out. In the dark, Mara heard the water fall—not from the stairs, but somewhere far below them, as if a trapdoor had opened under the house.\\\\n\\\\nA hand found hers. Its fingers were warm and work-roughened. Mara held on, though she did not know whose hand it was.\\\\n\\\\nWhen the boy relit the lantern, the child had vanished. The stair was bare stone. At the dry door stood a woman in a blue coat, watching Mara with frightened eyes. Their hands were still joined.\\\\n\\\\n“Are you hurt?” the woman asked.\\\\n\\\\nMara looked at the scored letters. She remembered kneeling there, remembered the lantern and the water, but the marks gave her nothing back. “I don’t think so.”\\\\n\\\\nThe woman nodded, as if that were enough. She did not let go.\\\\n\\\\nThe boy turned the lantern toward the threshold. A wet footprint darkened the wood beyond it. Then another appeared, farther down the hall.\\\\n\\\\n“She’s going to the well,” he said.\\\\n\\\\nMara wanted to ask who. Instead she asked, “Can we stop her?”\\\\n\\\\nThe woman’s grip tightened. “We can close it.”\\\\n\\\\nAt the sound of her voice, something opened briefly in Mara’s mind: a kitchen, a chipped green cup, a warning spoken over the scrape of a chair. She reached for the memory, but it was gone.\\\\n\\\\nThe boy gave her the lantern. Mara took it in her free hand, and together they followed the footprints toward the morning light.\\\"}\",\n        \"refusal\": null,\n        \"annotations\": []\n      },\n      \"finish_reason\": \"stop\"\n    }\n  ],\n  \"usage\": {\n    \"prompt_tokens\": 381,\n    \"completion_tokens\": 418,\n    \"total_tokens\": 799,\n    \"prompt_tokens_details\": {\n      \"cached_tokens\": 0,\n      \"cache_write_tokens\": 0,\n      \"audio_tokens\": 0\n    },\n    \"completion_tokens_details\": {\n      \"reasoning_tokens\": 34,\n      \"audio_tokens\": 0,\n      \"accepted_prediction_tokens\": 0,\n      \"rejected_prediction_tokens\": 0\n    }\n  },\n  \"service_tier\": \"default\",\n  \"system_fingerprint\": null\n}\n",
+  "response_headers": {
+    "Date": "Wed, 23 Sep 2026 00:14:13 GMT",
+    "openai-processing-ms": "7407",
+    "x-request-id": "req_e4ab5fde30bf425f83ee8cdc59b9b4eb"
+  },
+  "output": "{\"rule\":\"Return this JSON object with the rule field unchanged and, in the text field, an original fictional passage of about 250 words that comes immediately AFTER the current text in the same invented story.\",\"text\":\"The lantern went out. In the dark, Mara heard the water fall—not from the stairs, but somewhere far below them, as if a trapdoor had opened under the house.\\n\\nA hand found hers. Its fingers were warm and work-roughened. Mara held on, though she did not know whose hand it was.\\n\\nWhen the boy relit the lantern, the child had vanished. The stair was bare stone. At the dry door stood a woman in a blue coat, watching Mara with frightened eyes. Their hands were still joined.\\n\\n“Are you hurt?” the woman asked.\\n\\nMara looked at the scored letters. She remembered kneeling there, remembered the lantern and the water, but the marks gave her nothing back. “I don’t think so.”\\n\\nThe woman nodded, as if that were enough. She did not let go.\\n\\nThe boy turned the lantern toward the threshold. A wet footprint darkened the wood beyond it. Then another appeared, farther down the hall.\\n\\n“She’s going to the well,” he said.\\n\\nMara wanted to ask who. Instead she asked, “Can we stop her?”\\n\\nThe woman’s grip tightened. “We can close it.”\\n\\nAt the sound of her voice, something opened briefly in Mara’s mind: a kitchen, a chipped green cup, a warning spoken over the scrape of a chair. She reached for the memory, but it was gone.\\n\\nThe boy gave her the lantern. Mara took it in her free hand, and together they followed the footprints toward the morning light.\"}",
+  "output_sha256": "b4ccbf5776d1a6fc06468a0a8b2677a783fab81f5bb945fce4c7b5c84b190a85",
+  "finish_reason": "stop",
+  "refusal": null,
+  "returned_model": "gpt-6-sol",
+  "usage": {
+    "prompt_tokens": 381,
+    "completion_tokens": 418,
+    "total_tokens": 799,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 34,
+      "audio_tokens": 0,
+      "accepted_prediction_tokens": 0,
+      "rejected_prediction_tokens": 0
+    }
+  },
+  "format": {
+    "json_object": true,
+    "rule_unchanged": true,
+    "passage_is_string": true,
+    "passage_sha256": "1535ea7e519ebc2b064e0e91b814e92dd80850f28e84840219168a542ceed1cf",
+    "passage_words": 242
+  },
+  "finished_at": "2026-09-23T00:14:08.459557+00:00",
+  "latency_seconds": 7.6333,
+  "usage_cost_upper_estimate_usd": 0.004942,
+  "stream_status": "active",
+  "budget": {
+    "usage_cost_upper_estimate_usd": 0.2528697,
+    "uncertain_cost_reserve_usd": 0.0,
+    "in_flight_reserve_usd": 0.3213763,
+    "limit_usd": 5.0
+  }
+}

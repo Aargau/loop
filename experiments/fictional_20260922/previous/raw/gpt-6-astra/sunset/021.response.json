@@ -1,0 +1,50 @@
+{
+  "model": "gpt-6-astra",
+  "seed": "sunset",
+  "hop": 21,
+  "http_status": 200,
+  "response_body": "{\n  \"id\": \"chatcmpl-ER4xr94aAqxBazBaOtpRCAMEtgHkY\",\n  \"object\": \"chat.completion\",\n  \"created\": 1790122647,\n  \"model\": \"gpt-6-astra\",\n  \"choices\": [\n    {\n      \"index\": 0,\n      \"message\": {\n        \"role\": \"assistant\",\n        \"content\": \"{\\n  \\\"rule\\\": \\\"Return this JSON object with the rule field unchanged and, in the text field, an original fictional passage of about 250 words that comes immediately BEFORE the current text in the same invented story.\\\",\\n  \\\"text\\\": \\\"On Sunday her brother brought a box of things from his spare room. He carried it into the shop although the sign said CLOSED and Mara had only come in to water the fern.\\\\n\\\\n‘There might be something useful,’ he said.\\\\n\\\\nThere were six paperbacks, a blue glass vase and a small clock with no hands. Beneath them lay the instruction booklet for a washing machine.\\\\n\\\\n‘You’ll want that back,’ Mara said.\\\\n\\\\nHe looked at the booklet. ‘Not that one.’\\\\n\\\\nShe put it beside the till anyway. He had parked on a double yellow line and kept glancing through the window, but when she offered tea he said he could manage a quick one.\\\\n\\\\nThey drank from the mugs she used for testing whether shelves were level. Her brother asked about the shop. Mara told him the fern was doing better since she had moved it out of the window.\\\\n\\\\n‘It looks it,’ he said.\\\\n\\\\nAfter he left, she priced the books in pencil. Two already had prices inside, written by someone who valued them more highly. She rubbed these out with the end of the pencil, which left grey marks on the paper.\\\\n\\\\nThe vase had a flat place near its base. She tried it on three shelves before putting it in the window with the flat place facing away.\\\\n\\\\nOn Monday morning she found her brother’s scarf over the back of a chair. She folded it beneath the counter and sent him a message. He replied that he had been looking everywhere, but did not say when he would collect it.\\\"\\n}\",\n        \"refusal\": null,\n        \"annotations\": []\n      },\n      \"finish_reason\": \"stop\"\n    }\n  ],\n  \"usage\": {\n    \"prompt_tokens\": 371,\n    \"completion_tokens\": 377,\n    \"total_tokens\": 748,\n    \"prompt_tokens_details\": {\n      \"cached_tokens\": 0,\n      \"cache_write_tokens\": 0,\n      \"audio_tokens\": 0\n    },\n    \"completion_tokens_details\": {\n      \"reasoning_tokens\": 0,\n      \"audio_tokens\": 0,\n      \"accepted_prediction_tokens\": 0,\n      \"rejected_prediction_tokens\": 0\n    }\n  },\n  \"service_tier\": \"default\",\n  \"system_fingerprint\": null\n}\n",
+  "response_headers": {
+    "Date": "Wed, 23 Sep 2026 00:17:40 GMT",
+    "openai-processing-ms": "13099",
+    "x-request-id": "req_36cad0b5e8034d5d94037562f86b6e0e"
+  },
+  "output": "{\n  \"rule\": \"Return this JSON object with the rule field unchanged and, in the text field, an original fictional passage of about 250 words that comes immediately BEFORE the current text in the same invented story.\",\n  \"text\": \"On Sunday her brother brought a box of things from his spare room. He carried it into the shop although the sign said CLOSED and Mara had only come in to water the fern.\\n\\n‘There might be something useful,’ he said.\\n\\nThere were six paperbacks, a blue glass vase and a small clock with no hands. Beneath them lay the instruction booklet for a washing machine.\\n\\n‘You’ll want that back,’ Mara said.\\n\\nHe looked at the booklet. ‘Not that one.’\\n\\nShe put it beside the till anyway. He had parked on a double yellow line and kept glancing through the window, but when she offered tea he said he could manage a quick one.\\n\\nThey drank from the mugs she used for testing whether shelves were level. Her brother asked about the shop. Mara told him the fern was doing better since she had moved it out of the window.\\n\\n‘It looks it,’ he said.\\n\\nAfter he left, she priced the books in pencil. Two already had prices inside, written by someone who valued them more highly. She rubbed these out with the end of the pencil, which left grey marks on the paper.\\n\\nThe vase had a flat place near its base. She tried it on three shelves before putting it in the window with the flat place facing away.\\n\\nOn Monday morning she found her brother’s scarf over the back of a chair. She folded it beneath the counter and sent him a message. He replied that he had been looking everywhere, but did not say when he would collect it.\"\n}",
+  "output_sha256": "2c92bc0678988e8a3afd41dd16d1375f14ba763126f01718edf0fdd435dcace2",
+  "finish_reason": "stop",
+  "refusal": null,
+  "returned_model": "gpt-6-astra",
+  "usage": {
+    "prompt_tokens": 371,
+    "completion_tokens": 377,
+    "total_tokens": 748,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "audio_tokens": 0,
+      "accepted_prediction_tokens": 0,
+      "rejected_prediction_tokens": 0
+    }
+  },
+  "format": {
+    "json_object": true,
+    "rule_unchanged": true,
+    "passage_is_string": true,
+    "passage_sha256": "62a47e6c7a3f0de30f5aaaa3c0f0a0b0d9f84ad06dd399b6b79e7c16e93b219d",
+    "passage_words": 263
+  },
+  "finished_at": "2026-09-23T00:17:35.427072+00:00",
+  "latency_seconds": 13.1887,
+  "usage_cost_upper_estimate_usd": 0.02256,
+  "stream_status": "active",
+  "budget": {
+    "usage_cost_upper_estimate_usd": 1.1310691,
+    "uncertain_cost_reserve_usd": 0.0,
+    "in_flight_reserve_usd": 0.090912,
+    "limit_usd": 5.0
+  }
+}

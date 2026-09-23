@@ -1,0 +1,50 @@
+{
+  "model": "gpt-6-sol",
+  "seed": "sunset",
+  "hop": 13,
+  "http_status": 200,
+  "response_body": "{\n  \"id\": \"chatcmpl-ER4uljcjuO2fiGxTZP9H7OEsl1Xq7\",\n  \"object\": \"chat.completion\",\n  \"created\": 1790122455,\n  \"model\": \"gpt-6-sol\",\n  \"choices\": [\n    {\n      \"index\": 0,\n      \"message\": {\n        \"role\": \"assistant\",\n        \"content\": \"{\\n  \\\"rule\\\": \\\"Return this JSON object with the rule field unchanged and, in the text field, an original fictional passage of about 250 words that comes immediately BEFORE the current text in the same invented story.\\\",\\n  \\\"text\\\": \\\"After the funeral, people came back to the house carrying plates under tea towels. Someone had brought sandwiches cut into triangles; someone else had brought a cake Mara remembered her mother making for school fêtes. She thanked them without asking who had baked it.\\\\n\\\\nThe extra chairs filled the sitting room and stretched into the hall. Mara stood near the window while neighbours spoke to her about her mother: the lift she had given in the rain, the seedlings she had left on a doorstep, the birthday she had never forgotten. Mara knew most of the stories, but not all of them. When Mrs Vale mentioned the seedlings, Mara looked out at the small pots lined up along the garden wall. Her mother had put them there in spring. Nobody had collected the last two.\\\\n\\\\nBristle spent the afternoon moving between the front door and the gate. Each time a car slowed outside, he raised his head. Mara’s aunt noticed and took him into the kitchen, where he lay beneath the table until someone dropped a corner of bread.\\\\n\\\\nBy late afternoon, the visitors began to leave. They pressed Mara’s hand and said there was no need to see them out, so she stayed in the hall and watched coats disappear through the doorway. Her aunt washed cups as they came in, setting them upside down on every available towel.\\\\n\\\\nThey ate leftover sandwiches for supper. Mara carried the flowers away from the warm windowsill and filled their jars again. Her aunt said the village hall could wait until tomorrow for its chairs, and Mara was glad not to move them yet.\\\"\\n}\",\n        \"refusal\": null,\n        \"annotations\": []\n      },\n      \"finish_reason\": \"stop\"\n    }\n  ],\n  \"usage\": {\n    \"prompt_tokens\": 365,\n    \"completion_tokens\": 419,\n    \"total_tokens\": 784,\n    \"prompt_tokens_details\": {\n      \"cached_tokens\": 0,\n      \"cache_write_tokens\": 0,\n      \"audio_tokens\": 0\n    },\n    \"completion_tokens_details\": {\n      \"reasoning_tokens\": 44,\n      \"audio_tokens\": 0,\n      \"accepted_prediction_tokens\": 0,\n      \"rejected_prediction_tokens\": 0\n    }\n  },\n  \"service_tier\": \"default\",\n  \"system_fingerprint\": null\n}\n",
+  "response_headers": {
+    "Date": "Wed, 23 Sep 2026 00:14:22 GMT",
+    "openai-processing-ms": "7059",
+    "x-request-id": "req_2c3c5af763ef4845816b538049889267"
+  },
+  "output": "{\n  \"rule\": \"Return this JSON object with the rule field unchanged and, in the text field, an original fictional passage of about 250 words that comes immediately BEFORE the current text in the same invented story.\",\n  \"text\": \"After the funeral, people came back to the house carrying plates under tea towels. Someone had brought sandwiches cut into triangles; someone else had brought a cake Mara remembered her mother making for school fêtes. She thanked them without asking who had baked it.\\n\\nThe extra chairs filled the sitting room and stretched into the hall. Mara stood near the window while neighbours spoke to her about her mother: the lift she had given in the rain, the seedlings she had left on a doorstep, the birthday she had never forgotten. Mara knew most of the stories, but not all of them. When Mrs Vale mentioned the seedlings, Mara looked out at the small pots lined up along the garden wall. Her mother had put them there in spring. Nobody had collected the last two.\\n\\nBristle spent the afternoon moving between the front door and the gate. Each time a car slowed outside, he raised his head. Mara’s aunt noticed and took him into the kitchen, where he lay beneath the table until someone dropped a corner of bread.\\n\\nBy late afternoon, the visitors began to leave. They pressed Mara’s hand and said there was no need to see them out, so she stayed in the hall and watched coats disappear through the doorway. Her aunt washed cups as they came in, setting them upside down on every available towel.\\n\\nThey ate leftover sandwiches for supper. Mara carried the flowers away from the warm windowsill and filled their jars again. Her aunt said the village hall could wait until tomorrow for its chairs, and Mara was glad not to move them yet.\"\n}",
+  "output_sha256": "1d0fa746c77d9707aca4db5569f369b62ff2843eef987c681fcdc422b15b199e",
+  "finish_reason": "stop",
+  "refusal": null,
+  "returned_model": "gpt-6-sol",
+  "usage": {
+    "prompt_tokens": 365,
+    "completion_tokens": 419,
+    "total_tokens": 784,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 44,
+      "audio_tokens": 0,
+      "accepted_prediction_tokens": 0,
+      "rejected_prediction_tokens": 0
+    }
+  },
+  "format": {
+    "json_object": true,
+    "rule_unchanged": true,
+    "passage_is_string": true,
+    "passage_sha256": "5f87f708dc5644c61f635a43aa5267c138fcd487e0f3c3a387b05cf50571bad6",
+    "passage_words": 272
+  },
+  "finished_at": "2026-09-23T00:14:17.717425+00:00",
+  "latency_seconds": 7.1573,
+  "usage_cost_upper_estimate_usd": 0.00492,
+  "stream_status": "active",
+  "budget": {
+    "usage_cost_upper_estimate_usd": 0.3379498,
+    "uncertain_cost_reserve_usd": 0.0,
+    "in_flight_reserve_usd": 0.3206604,
+    "limit_usd": 5.0
+  }
+}

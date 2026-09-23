@@ -1,0 +1,50 @@
+{
+  "model": "gpt-6-sol",
+  "seed": "sunset",
+  "hop": 20,
+  "http_status": 200,
+  "response_body": "{\n  \"id\": \"chatcmpl-ER4vjaIT3UdI0aAiTrioNvvoTxEHI\",\n  \"object\": \"chat.completion\",\n  \"created\": 1790122515,\n  \"model\": \"gpt-6-sol\",\n  \"choices\": [\n    {\n      \"index\": 0,\n      \"message\": {\n        \"role\": \"assistant\",\n        \"content\": \"{\\\"rule\\\":\\\"Return this JSON object with the rule field unchanged and, in the text field, an original fictional passage of about 250 words that comes immediately AFTER the current text in the same invented story.\\\",\\\"text\\\":\\\"Mara looked at the back door. There was no keyhole in its lock, only the iron thumb latch her father had fitted when she was small.\\\\n\\\\n“Which door?” she asked.\\\\n\\\\nThe other Mara pressed its wet hand harder against its chest. Water ran between its fingers and vanished before it reached the step. Its eyes had fixed on the gate.\\\\n\\\\nBeyond the wall, Kit cried out. The sound stopped so sharply that Mara started toward him.\\\\n\\\\n“Not that one,” her mother’s voice said.\\\\n\\\\nThe key was warm in Mara’s palm. She turned it over and saw three shallow notches cut along its stem. On the morning her mother died, she had scratched three marks into the kitchen table, one for each grandchild she would never meet. Mara had sanded them away before supper.\\\\n\\\\nA knock came from the well. Then another, patient and hollow, as if someone were rapping on a door from beneath it.\\\\n\\\\nThe other Mara backed into the kitchen. For the first time, it looked frightened.\\\\n\\\\nMara crossed the yard and leaned over the stones. The bucket hung just below the rim. In its bottom, where the cloth had lain, a small keyhole shone green.\\\\n\\\\nFrom the lane came her daughter’s voice. “Mama? Kit says not to leave you.”\\\\n\\\\n“Keep walking,” Mara called. “Don’t open the gate.”\\\\n\\\\nShe put the key into the bucket. It turned easily. The knocking ceased, and the bucket began to descend, drawing the rope after it. Behind Mara, the back door slammed. This time, the latch held.\\\"}\",\n        \"refusal\": null,\n        \"annotations\": []\n      },\n      \"finish_reason\": \"stop\"\n    }\n  ],\n  \"usage\": {\n    \"prompt_tokens\": 409,\n    \"completion_tokens\": 419,\n    \"total_tokens\": 828,\n    \"prompt_tokens_details\": {\n      \"cached_tokens\": 0,\n      \"cache_write_tokens\": 0,\n      \"audio_tokens\": 0\n    },\n    \"completion_tokens_details\": {\n      \"reasoning_tokens\": 23,\n      \"audio_tokens\": 0,\n      \"accepted_prediction_tokens\": 0,\n      \"rejected_prediction_tokens\": 0\n    }\n  },\n  \"service_tier\": \"default\",\n  \"system_fingerprint\": null\n}\n",
+  "response_headers": {
+    "Date": "Wed, 23 Sep 2026 00:15:21 GMT",
+    "openai-processing-ms": "5790",
+    "x-request-id": "req_9774740d3e724f698b1fce8bd52400ad"
+  },
+  "output": "{\"rule\":\"Return this JSON object with the rule field unchanged and, in the text field, an original fictional passage of about 250 words that comes immediately AFTER the current text in the same invented story.\",\"text\":\"Mara looked at the back door. There was no keyhole in its lock, only the iron thumb latch her father had fitted when she was small.\\n\\n“Which door?” she asked.\\n\\nThe other Mara pressed its wet hand harder against its chest. Water ran between its fingers and vanished before it reached the step. Its eyes had fixed on the gate.\\n\\nBeyond the wall, Kit cried out. The sound stopped so sharply that Mara started toward him.\\n\\n“Not that one,” her mother’s voice said.\\n\\nThe key was warm in Mara’s palm. She turned it over and saw three shallow notches cut along its stem. On the morning her mother died, she had scratched three marks into the kitchen table, one for each grandchild she would never meet. Mara had sanded them away before supper.\\n\\nA knock came from the well. Then another, patient and hollow, as if someone were rapping on a door from beneath it.\\n\\nThe other Mara backed into the kitchen. For the first time, it looked frightened.\\n\\nMara crossed the yard and leaned over the stones. The bucket hung just below the rim. In its bottom, where the cloth had lain, a small keyhole shone green.\\n\\nFrom the lane came her daughter’s voice. “Mama? Kit says not to leave you.”\\n\\n“Keep walking,” Mara called. “Don’t open the gate.”\\n\\nShe put the key into the bucket. It turned easily. The knocking ceased, and the bucket began to descend, drawing the rope after it. Behind Mara, the back door slammed. This time, the latch held.\"}",
+  "output_sha256": "7602129de7ee9526146954dc041de958ee1334223f86c822573e1fbafb32f6c5",
+  "finish_reason": "stop",
+  "refusal": null,
+  "returned_model": "gpt-6-sol",
+  "usage": {
+    "prompt_tokens": 409,
+    "completion_tokens": 419,
+    "total_tokens": 828,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 23,
+      "audio_tokens": 0,
+      "accepted_prediction_tokens": 0,
+      "rejected_prediction_tokens": 0
+    }
+  },
+  "format": {
+    "json_object": true,
+    "rule_unchanged": true,
+    "passage_is_string": true,
+    "passage_sha256": "92f71f09d993adcac63532a3018787279990a6dea3dd1cef571a7bfb6a7f8172",
+    "passage_words": 255
+  },
+  "finished_at": "2026-09-23T00:15:16.405951+00:00",
+  "latency_seconds": 5.8857,
+  "usage_cost_upper_estimate_usd": 0.005008,
+  "stream_status": "active",
+  "budget": {
+    "usage_cost_upper_estimate_usd": 0.5558878,
+    "uncertain_cost_reserve_usd": 0.0,
+    "in_flight_reserve_usd": 0.3212957,
+    "limit_usd": 5.0
+  }
+}

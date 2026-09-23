@@ -1,0 +1,50 @@
+{
+  "model": "gpt-6-sol",
+  "seed": "sunset",
+  "hop": 20,
+  "http_status": 200,
+  "response_body": "{\n  \"id\": \"chatcmpl-ER4vY5zadYmNDLJiLpXCWPeV7pgfs\",\n  \"object\": \"chat.completion\",\n  \"created\": 1790122504,\n  \"model\": \"gpt-6-sol\",\n  \"choices\": [\n    {\n      \"index\": 0,\n      \"message\": {\n        \"role\": \"assistant\",\n        \"content\": \"{\\n  \\\"rule\\\": \\\"Return this JSON object with the rule field unchanged and, in the text field, an original fictional passage of about 250 words that comes immediately BEFORE the current text in the same invented story.\\\",\\n  \\\"text\\\": \\\"At the hospital, Mara kept the bakery receipt in her coat pocket. Each time she reached for a tissue, her fingers found its narrow edge instead. The loaf was waiting at home on the kitchen counter, where she had left it when the call came.\\\\n\\\\nHer mother had been awake when Mara arrived. She complained about the bright light above the bed and asked whether Bristle had eaten. Mara said he had, though she couldn't remember filling his bowl. A nurse dimmed the light, and her mother closed her eyes. After that, her breathing seemed to take up the whole room.\\\\n\\\\nMara sat in the chair by the window. Across the courtyard, people moved behind the lit windows of another ward. She tried to pick out what they were doing: lifting a cup, drawing a curtain, bending to speak to someone in a bed. Whenever a nurse came in, Mara stood, then sat again when there was nothing for her to do.\\\\n\\\\nThe doctor spoke with her near the lifts. He was careful not to hurry, even when a trolley passed and they had to step aside. Mara asked him to repeat one part, and he did. She nodded, hoping she would remember the words when her aunt called.\\\\n\\\\nBefore leaving, Mara went back into the room. Her mother was asleep. Mara tucked the sheet beneath her mother's hand, where it had come loose, and told the nurse she would return in the morning. Outside, she waited for the bus under a shelter whose timetable had peeled away from the glass.\\\"\\n}\",\n        \"refusal\": null,\n        \"annotations\": []\n      },\n      \"finish_reason\": \"stop\"\n    }\n  ],\n  \"usage\": {\n    \"prompt_tokens\": 372,\n    \"completion_tokens\": 421,\n    \"total_tokens\": 793,\n    \"prompt_tokens_details\": {\n      \"cached_tokens\": 0,\n      \"cache_write_tokens\": 0,\n      \"audio_tokens\": 0\n    },\n    \"completion_tokens_details\": {\n      \"reasoning_tokens\": 51,\n      \"audio_tokens\": 0,\n      \"accepted_prediction_tokens\": 0,\n      \"rejected_prediction_tokens\": 0\n    }\n  },\n  \"service_tier\": \"default\",\n  \"system_fingerprint\": null\n}\n",
+  "response_headers": {
+    "Date": "Wed, 23 Sep 2026 00:15:11 GMT",
+    "openai-processing-ms": "6906",
+    "x-request-id": "req_545e0eee33cc4b1ab674fa72271772d7"
+  },
+  "output": "{\n  \"rule\": \"Return this JSON object with the rule field unchanged and, in the text field, an original fictional passage of about 250 words that comes immediately BEFORE the current text in the same invented story.\",\n  \"text\": \"At the hospital, Mara kept the bakery receipt in her coat pocket. Each time she reached for a tissue, her fingers found its narrow edge instead. The loaf was waiting at home on the kitchen counter, where she had left it when the call came.\\n\\nHer mother had been awake when Mara arrived. She complained about the bright light above the bed and asked whether Bristle had eaten. Mara said he had, though she couldn't remember filling his bowl. A nurse dimmed the light, and her mother closed her eyes. After that, her breathing seemed to take up the whole room.\\n\\nMara sat in the chair by the window. Across the courtyard, people moved behind the lit windows of another ward. She tried to pick out what they were doing: lifting a cup, drawing a curtain, bending to speak to someone in a bed. Whenever a nurse came in, Mara stood, then sat again when there was nothing for her to do.\\n\\nThe doctor spoke with her near the lifts. He was careful not to hurry, even when a trolley passed and they had to step aside. Mara asked him to repeat one part, and he did. She nodded, hoping she would remember the words when her aunt called.\\n\\nBefore leaving, Mara went back into the room. Her mother was asleep. Mara tucked the sheet beneath her mother's hand, where it had come loose, and told the nurse she would return in the morning. Outside, she waited for the bus under a shelter whose timetable had peeled away from the glass.\"\n}",
+  "output_sha256": "2a9b95a63bd1c027cd924660328e4e80f8214843113e28bea53081150d5e47d4",
+  "finish_reason": "stop",
+  "refusal": null,
+  "returned_model": "gpt-6-sol",
+  "usage": {
+    "prompt_tokens": 372,
+    "completion_tokens": 421,
+    "total_tokens": 793,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 51,
+      "audio_tokens": 0,
+      "accepted_prediction_tokens": 0,
+      "rejected_prediction_tokens": 0
+    }
+  },
+  "format": {
+    "json_object": true,
+    "rule_unchanged": true,
+    "passage_is_string": true,
+    "passage_sha256": "ed2654db7a8bacc25a244d4a28f521677a222b527fb7a1dc9ca49a0a3ef3bf7e",
+    "passage_words": 261
+  },
+  "finished_at": "2026-09-23T00:15:06.840406+00:00",
+  "latency_seconds": 7.0107,
+  "usage_cost_upper_estimate_usd": 0.004954,
+  "stream_status": "active",
+  "budget": {
+    "usage_cost_upper_estimate_usd": 0.520694,
+    "uncertain_cost_reserve_usd": 0.0,
+    "in_flight_reserve_usd": 0.3203119,
+    "limit_usd": 5.0
+  }
+}

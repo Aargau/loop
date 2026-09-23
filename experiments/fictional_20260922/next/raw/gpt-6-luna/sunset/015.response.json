@@ -1,0 +1,47 @@
+{
+  "model": "gpt-6-luna",
+  "seed": "sunset",
+  "hop": 15,
+  "http_status": 200,
+  "response_body": "{\n  \"id\": \"chatcmpl-ER4ucPUJFT8pjGCnxhdkaBCfAr3K5\",\n  \"object\": \"chat.completion\",\n  \"created\": 1790122446,\n  \"model\": \"gpt-6-luna\",\n  \"choices\": [\n    {\n      \"index\": 0,\n      \"message\": {\n        \"role\": \"assistant\",\n        \"content\": \"{\\\"rule\\\":\\\"Return this JSON object with the rule field unchanged and, in the text field, an original fictional passage of about 250 words that comes immediately AFTER the current text in the same invented story.\\\",\\\"text\\\":\\\"For a moment, there was nothing but the sound of water moving in the dark.\\n\\nThen the watch clicked again.\\n\\nA thin seam of light appeared beneath Mara’s feet, tracing a path across the riverbank. She followed it to a stone arch half-hidden by reeds. No door stood within the arch, only a wall of black glass. Her reflection looked back at her, pale and dripping.\\n\\nBehind the reflection, the kitchen reappeared.\\n\\nHer mother was still waiting. “You don’t have to be brave,” she said.\\n\\nMara touched the glass. It felt warm. “You’re not my mother.”\\n\\n“No,” the woman agreed. Her face wavered, and for an instant Mara saw a stranger’s eyes beneath it—silver and full of stars. “But I remember what you miss.”\\n\\nThe seam of light brightened. Letters surfaced in the glass, one by one: SAY WHAT THE RIVER STOLE.\\n\\nMara tried to answer. She thought of the tune from the garden, the hand in her hair, the rain ticking softly against the windows. But the words had slipped away, and with them the memory of her mother’s voice.\\n\\n“I don’t know,” she whispered.\\n\\nThe river surged against the bank. A small, familiar melody rose from its depths—not the song itself, but the space where it should have been.\\n\\nMara listened. Then she began to hum.\\n\\nThe glass shivered. A crack ran from the arch’s crown to its base, spilling golden light across the stones. On the other side, a narrow stair descended beneath the river.\\n\\nThe watch opened in her palm. Its empty face filled with a single bright word: REMEMBER.\\n\\nMara stepped through.\\\"}\",\n        \"refusal\": null,\n        \"annotations\": []\n      },\n      \"finish_reason\": \"stop\"\n    }\n  ],\n  \"usage\": {\n    \"prompt_tokens\": 395,\n    \"completion_tokens\": 458,\n    \"total_tokens\": 853,\n    \"prompt_tokens_details\": {\n      \"cached_tokens\": 0,\n      \"cache_write_tokens\": 0,\n      \"audio_tokens\": 0\n    },\n    \"completion_tokens_details\": {\n      \"reasoning_tokens\": 60,\n      \"audio_tokens\": 0,\n      \"accepted_prediction_tokens\": 0,\n      \"rejected_prediction_tokens\": 0\n    }\n  },\n  \"service_tier\": \"default\",\n  \"system_fingerprint\": null\n}\n",
+  "response_headers": {
+    "Date": "Wed, 23 Sep 2026 00:14:10 GMT",
+    "openai-processing-ms": "3875",
+    "x-request-id": "req_a432610d5f5c4199a71fa301c94e96ea"
+  },
+  "output": "{\"rule\":\"Return this JSON object with the rule field unchanged and, in the text field, an original fictional passage of about 250 words that comes immediately AFTER the current text in the same invented story.\",\"text\":\"For a moment, there was nothing but the sound of water moving in the dark.\n\nThen the watch clicked again.\n\nA thin seam of light appeared beneath Mara’s feet, tracing a path across the riverbank. She followed it to a stone arch half-hidden by reeds. No door stood within the arch, only a wall of black glass. Her reflection looked back at her, pale and dripping.\n\nBehind the reflection, the kitchen reappeared.\n\nHer mother was still waiting. “You don’t have to be brave,” she said.\n\nMara touched the glass. It felt warm. “You’re not my mother.”\n\n“No,” the woman agreed. Her face wavered, and for an instant Mara saw a stranger’s eyes beneath it—silver and full of stars. “But I remember what you miss.”\n\nThe seam of light brightened. Letters surfaced in the glass, one by one: SAY WHAT THE RIVER STOLE.\n\nMara tried to answer. She thought of the tune from the garden, the hand in her hair, the rain ticking softly against the windows. But the words had slipped away, and with them the memory of her mother’s voice.\n\n“I don’t know,” she whispered.\n\nThe river surged against the bank. A small, familiar melody rose from its depths—not the song itself, but the space where it should have been.\n\nMara listened. Then she began to hum.\n\nThe glass shivered. A crack ran from the arch’s crown to its base, spilling golden light across the stones. On the other side, a narrow stair descended beneath the river.\n\nThe watch opened in her palm. Its empty face filled with a single bright word: REMEMBER.\n\nMara stepped through.\"}",
+  "output_sha256": "d7a438e47a8f5f3a022a46c442fcca1d06ae96ec92ae3f5ed538511fdef91bf3",
+  "finish_reason": "stop",
+  "refusal": null,
+  "returned_model": "gpt-6-luna",
+  "usage": {
+    "prompt_tokens": 395,
+    "completion_tokens": 458,
+    "total_tokens": 853,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 60,
+      "audio_tokens": 0,
+      "accepted_prediction_tokens": 0,
+      "rejected_prediction_tokens": 0
+    }
+  },
+  "format": {
+    "json_object": false,
+    "rule_unchanged": false
+  },
+  "finished_at": "2026-09-23T00:14:05.625813+00:00",
+  "latency_seconds": 3.9876,
+  "usage_cost_upper_estimate_usd": 0.0002685,
+  "stream_status": "active",
+  "budget": {
+    "usage_cost_upper_estimate_usd": 0.2479277,
+    "uncertain_cost_reserve_usd": 0.0,
+    "in_flight_reserve_usd": 0.3644,
+    "limit_usd": 5.0
+  }
+}

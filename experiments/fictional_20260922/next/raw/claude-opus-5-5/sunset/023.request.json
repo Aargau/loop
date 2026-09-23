@@ -1,0 +1,22 @@
+{
+  "started_at": "2026-09-23T00:16:15.869328+00:00",
+  "model": "claude-opus-5-5",
+  "seed": "sunset",
+  "hop": 23,
+  "endpoint": "https://api.anthropic.com/v1/messages",
+  "body": {
+    "model": "claude-opus-5-5",
+    "messages": [
+      {
+        "role": "user",
+        "content": "```json\n{\"rule\": \"Return this JSON object with the rule field unchanged and, in the text field, an original fictional passage of about 250 words that comes immediately AFTER the current text in the same invented story.\", \"text\": \"The voice followed them for a while. It did not hurry, and it did not raise itself. It simply kept pace somewhere off in the white, murmuring now about the kettle left on the hob, now about the loose shutter that would bang all night if no one latched it. Every word was something Wenna might have said. That was the worst of it. Tobias kept twisting to look over his shoulder until Mara stopped, knelt in the wet reeds, and took his face in her hands. \\\"Listen to me. Aunt Wenna told us never to answer anything in the marsh that knows our names. Do you remember?\\\" He nodded slowly, his lower lip trembling. \\\"But it sounds like her.\\\" \\\"I know. That's how you can tell.\\\" They went on. The leaning willows grew closer together, their branches knitting overhead until the mist turned green and dim, and the ground beneath them softened into something that gave a little with each step. The voice fell behind at last. Mara did not notice the exact moment it stopped. She only realized, some while later, that she could hear water dripping from the leaves and the small sounds of Tobias's pebbles clicking in his pocket, and nothing else. At the end of the tunnel of trees stood a door. It had no house around it, no wall, no frame but two willow trunks grown together at the top. It was painted the same faded blue as Wenna's shawl. In the middle, just below a tarnished brass knocker, was a keyhole.\"}\n```"
+      }
+    ],
+    "max_tokens": 4096,
+    "output_config": {
+      "effort": "low"
+    }
+  },
+  "state_sha256": "3a0330ff83b7b63ab280633037bf7afd8d8fa58934b202d353005c7d5e3ad939",
+  "reserved_cost_usd": 0.090516
+}

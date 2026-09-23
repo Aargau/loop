@@ -1,0 +1,47 @@
+{
+  "model": "gpt-6-luna",
+  "seed": "sunset",
+  "hop": 8,
+  "http_status": 200,
+  "response_body": "{\n  \"id\": \"chatcmpl-ER4u7ux6cuaWkX8xZRlc6fcNnTq4F\",\n  \"object\": \"chat.completion\",\n  \"created\": 1790122415,\n  \"model\": \"gpt-6-luna\",\n  \"choices\": [\n    {\n      \"index\": 0,\n      \"message\": {\n        \"role\": \"assistant\",\n        \"content\": \"{\\\"rule\\\":\\\"Return this JSON object with the rule field unchanged and, in the text field, an original fictional passage of about 250 words that comes immediately AFTER the current text in the same invented story.\\\",\\\"text\\\":\\\"Mara counted the ticks. One, two, three—then the watch stopped.\\n\\nThe woman in yellow had vanished. Only the empty basket bobbed against a bridge pier, turning slowly in the current.\\n\\nTomas let go of Mara’s sleeve. “We should find the tower.”\\n\\n“Which tower?”\\n\\nHe pointed beyond the rooftops. The town’s old bell tower rose above the square, though Mara was certain it had been shorter that morning. Its top disappeared into a ragged veil of cloud. A light glimmered behind one narrow window.\\n\\nThey crossed the bridge together. At the far end, a child stood beside a lamppost, holding a paper boat. Mara recognized him from the reflection: his coat was too long, his hair too neat. He looked at the watch in her hand.\\n\\n“It’s broken,” she said.\\n\\n“No,” the child replied. “It’s waiting.”\\n\\nHe set the boat in a puddle. Instead of drifting toward the gutter, it slid uphill, toward the tower. The child followed it, glancing back only once.\\n\\nTomas’s face had gone pale. “That’s the way we came out.”\\n\\nMara looked down at the watch. A new mark had appeared on its blank face: a tiny door, drawn in silver. Beneath it, the hands began to move—not forward, but backward.\\n\\nFrom somewhere above, the tower bell gave a muffled knock.\\n\\nThe paper boat vanished around the corner.\\n\\nMara closed her fingers around the watch. “If we go back, we go together.”\\n\\nTomas nodded. They followed the child’s trail through the rain-wet streets, while behind them the river kept running, dark and quick, beneath the bridge.\\\"}\",\n        \"refusal\": null,\n        \"annotations\": []\n      },\n      \"finish_reason\": \"stop\"\n    }\n  ],\n  \"usage\": {\n    \"prompt_tokens\": 419,\n    \"completion_tokens\": 449,\n    \"total_tokens\": 868,\n    \"prompt_tokens_details\": {\n      \"cached_tokens\": 0,\n      \"cache_write_tokens\": 0,\n      \"audio_tokens\": 0\n    },\n    \"completion_tokens_details\": {\n      \"reasoning_tokens\": 49,\n      \"audio_tokens\": 0,\n      \"accepted_prediction_tokens\": 0,\n      \"rejected_prediction_tokens\": 0\n    }\n  },\n  \"service_tier\": \"default\",\n  \"system_fingerprint\": null\n}\n",
+  "response_headers": {
+    "Date": "Wed, 23 Sep 2026 00:13:39 GMT",
+    "openai-processing-ms": "3879",
+    "x-request-id": "req_fed49031dedb4e5b957393e257d9a32c"
+  },
+  "output": "{\"rule\":\"Return this JSON object with the rule field unchanged and, in the text field, an original fictional passage of about 250 words that comes immediately AFTER the current text in the same invented story.\",\"text\":\"Mara counted the ticks. One, two, three—then the watch stopped.\n\nThe woman in yellow had vanished. Only the empty basket bobbed against a bridge pier, turning slowly in the current.\n\nTomas let go of Mara’s sleeve. “We should find the tower.”\n\n“Which tower?”\n\nHe pointed beyond the rooftops. The town’s old bell tower rose above the square, though Mara was certain it had been shorter that morning. Its top disappeared into a ragged veil of cloud. A light glimmered behind one narrow window.\n\nThey crossed the bridge together. At the far end, a child stood beside a lamppost, holding a paper boat. Mara recognized him from the reflection: his coat was too long, his hair too neat. He looked at the watch in her hand.\n\n“It’s broken,” she said.\n\n“No,” the child replied. “It’s waiting.”\n\nHe set the boat in a puddle. Instead of drifting toward the gutter, it slid uphill, toward the tower. The child followed it, glancing back only once.\n\nTomas’s face had gone pale. “That’s the way we came out.”\n\nMara looked down at the watch. A new mark had appeared on its blank face: a tiny door, drawn in silver. Beneath it, the hands began to move—not forward, but backward.\n\nFrom somewhere above, the tower bell gave a muffled knock.\n\nThe paper boat vanished around the corner.\n\nMara closed her fingers around the watch. “If we go back, we go together.”\n\nTomas nodded. They followed the child’s trail through the rain-wet streets, while behind them the river kept running, dark and quick, beneath the bridge.\"}",
+  "output_sha256": "b8ba5b0505e296e21202add5fb309e1598d59896429f8d806bc66fb1a8c704b9",
+  "finish_reason": "stop",
+  "refusal": null,
+  "returned_model": "gpt-6-luna",
+  "usage": {
+    "prompt_tokens": 419,
+    "completion_tokens": 449,
+    "total_tokens": 868,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 49,
+      "audio_tokens": 0,
+      "accepted_prediction_tokens": 0,
+      "rejected_prediction_tokens": 0
+    }
+  },
+  "format": {
+    "json_object": false,
+    "rule_unchanged": false
+  },
+  "finished_at": "2026-09-23T00:13:34.260184+00:00",
+  "latency_seconds": 3.9876,
+  "usage_cost_upper_estimate_usd": 0.00026639999999999997,
+  "stream_status": "active",
+  "budget": {
+    "usage_cost_upper_estimate_usd": 0.1269298,
+    "uncertain_cost_reserve_usd": 0.0,
+    "in_flight_reserve_usd": 0.364516,
+    "limit_usd": 5.0
+  }
+}

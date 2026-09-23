@@ -1,0 +1,50 @@
+{
+  "model": "gpt-6-luna",
+  "seed": "sunset",
+  "hop": 1,
+  "http_status": 200,
+  "response_body": "{\n  \"id\": \"chatcmpl-ER4tPLwVsf39EpjL4NGXX4mS5hhv4\",\n  \"object\": \"chat.completion\",\n  \"created\": 1790122371,\n  \"model\": \"gpt-6-luna\",\n  \"choices\": [\n    {\n      \"index\": 0,\n      \"message\": {\n        \"role\": \"assistant\",\n        \"content\": \"{\\\"rule\\\":\\\"Return this JSON object with the rule field unchanged and, in the text field, an original fictional passage of about 250 words that comes immediately BEFORE the current text in the same invented story.\\\",\\\"text\\\":\\\"Mara found the brass key beneath the loose stone, exactly where her grandmother’s letter had said it would be. The key was warm, though the afternoon had been cool, and its bow was stamped with a tiny fox. She rubbed the dirt from it with her sleeve, then looked toward the abandoned station at the edge of the valley.\\\\n\\\\nNo train had stopped there in thirty years. Its windows were boarded, its clock had lost both hands, and weeds had claimed the platform. Yet every evening, just before dark, a whistle sounded from somewhere beyond the hills. The villagers pretended not to hear it. Grandmother had never pretended.\\\\n\\\\n“Some doors open only when the last light is leaving,” she had whispered on the night she died. “And some journeys can’t be taken twice.”\\\\n\\\\nMara crossed the field with the key clenched in her fist. At the station, she found a narrow green door behind the ticket counter. It had no handle, only a keyhole shaped like a fox’s head. The brass slid in without a sound.\\\\n\\\\nFor a moment, nothing happened. Then the whole building shivered. Dust rose from the floorboards, and the dead clock began to tick. From far away came the whistle—one long note, followed by two short ones. Mara thought of the empty chair at home, the letter in her pocket, and all the questions she had been too afraid to ask.\\\\n\\\\nShe turned the key. Somewhere behind the door, wheels began to thunder over rails. A golden glow spilled across the platform, and the wind carried the scent of rain and coal. Mara stepped back, watching the valley change color as the evening drew near.\\\"}\",\n        \"refusal\": null,\n        \"annotations\": []\n      },\n      \"finish_reason\": \"stop\"\n    }\n  ],\n  \"usage\": {\n    \"prompt_tokens\": 61,\n    \"completion_tokens\": 440,\n    \"total_tokens\": 501,\n    \"prompt_tokens_details\": {\n      \"cached_tokens\": 0,\n      \"cache_write_tokens\": 0,\n      \"audio_tokens\": 0\n    },\n    \"completion_tokens_details\": {\n      \"reasoning_tokens\": 39,\n      \"audio_tokens\": 0,\n      \"accepted_prediction_tokens\": 0,\n      \"rejected_prediction_tokens\": 0\n    }\n  },\n  \"service_tier\": \"default\",\n  \"system_fingerprint\": null\n}\n",
+  "response_headers": {
+    "Date": "Wed, 23 Sep 2026 00:12:55 GMT",
+    "openai-processing-ms": "4168",
+    "x-request-id": "req_c405ccc4b7934fd9bd7e430b8ac27b17"
+  },
+  "output": "{\"rule\":\"Return this JSON object with the rule field unchanged and, in the text field, an original fictional passage of about 250 words that comes immediately BEFORE the current text in the same invented story.\",\"text\":\"Mara found the brass key beneath the loose stone, exactly where her grandmother’s letter had said it would be. The key was warm, though the afternoon had been cool, and its bow was stamped with a tiny fox. She rubbed the dirt from it with her sleeve, then looked toward the abandoned station at the edge of the valley.\\n\\nNo train had stopped there in thirty years. Its windows were boarded, its clock had lost both hands, and weeds had claimed the platform. Yet every evening, just before dark, a whistle sounded from somewhere beyond the hills. The villagers pretended not to hear it. Grandmother had never pretended.\\n\\n“Some doors open only when the last light is leaving,” she had whispered on the night she died. “And some journeys can’t be taken twice.”\\n\\nMara crossed the field with the key clenched in her fist. At the station, she found a narrow green door behind the ticket counter. It had no handle, only a keyhole shaped like a fox’s head. The brass slid in without a sound.\\n\\nFor a moment, nothing happened. Then the whole building shivered. Dust rose from the floorboards, and the dead clock began to tick. From far away came the whistle—one long note, followed by two short ones. Mara thought of the empty chair at home, the letter in her pocket, and all the questions she had been too afraid to ask.\\n\\nShe turned the key. Somewhere behind the door, wheels began to thunder over rails. A golden glow spilled across the platform, and the wind carried the scent of rain and coal. Mara stepped back, watching the valley change color as the evening drew near.\"}",
+  "output_sha256": "6708fabe556165f0663882fadcb7c35e21a85353d9758a86a85a7129600a8db7",
+  "finish_reason": "stop",
+  "refusal": null,
+  "returned_model": "gpt-6-luna",
+  "usage": {
+    "prompt_tokens": 61,
+    "completion_tokens": 440,
+    "total_tokens": 501,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 39,
+      "audio_tokens": 0,
+      "accepted_prediction_tokens": 0,
+      "rejected_prediction_tokens": 0
+    }
+  },
+  "format": {
+    "json_object": true,
+    "rule_unchanged": true,
+    "passage_is_string": true,
+    "passage_sha256": "dce5c6c46d9e068cdffe79095b35f3b555daaede6eaf235071de12b63b51395e",
+    "passage_words": 279
+  },
+  "finished_at": "2026-09-23T00:12:50.305636+00:00",
+  "latency_seconds": 5.4855,
+  "usage_cost_upper_estimate_usd": 0.0002261,
+  "stream_status": "active",
+  "budget": {
+    "usage_cost_upper_estimate_usd": 0.0002261,
+    "uncertain_cost_reserve_usd": 0.0,
+    "in_flight_reserve_usd": 0.340064,
+    "limit_usd": 5.0
+  }
+}
