@@ -357,7 +357,8 @@ def render_hop(lane, it, room_id, lane_i):
         if m["surv"] is not None: bits.append("5-gram survival %s" % fmt(m["surv"], 2))
         if m["cycle_exact"]: bits.append('<span class="same">exact cycle detected, period %d</span>' % m["cycle_exact"])
         metr = '<div class="metrics">%s</div>' % " · ".join(bits)
-    raw = '<details class="raw"><summary>raw output</summary><pre>%s</pre></details>' % esc(it["raw"])
+    # a browser drops one newline right after <pre>; give it one to drop so a raw output that starts with newlines keeps them
+    raw = '<details class="raw"><summary>raw output</summary><pre>\n%s</pre></details>' % esc(it["raw"])
     return '<li%s id="%s-%d-%d">\n<div class="cite">%s</div>\n%s\n%s\n%s\n</li>' % (attrs, room_id, lane_i, t, " · ".join(cite), "\n".join(body), metr, raw)
 
 def outcome(ln):
@@ -901,7 +902,7 @@ def build():
     rep = dict(rooms=[r["id"] for r in rooms], annex=[r["id"] for r in annex], extra_added=added, families={f: [r["id"] for r in rs] for f, rs in fam_rooms.items()},
                files=len(written), total_bytes=sum(written.values()), index_bytes=written["index.html"], llms_bytes=written["llms.txt"],
                largest_room_pages=[(p, v) for v, p in biggest], largest_text_part=biggest_t)
-    (HERE / "build_report.json").write_text(json.dumps(rep, indent=1), encoding="utf-8")
+    (DIST.parent / "build_report.json").write_text(json.dumps(rep, indent=1), encoding="utf-8")   # site/build_report.json for the default build
     print(json.dumps({k: rep[k] for k in ("files", "total_bytes", "index_bytes", "llms_bytes", "largest_room_pages", "largest_text_part")}))
     print("%d rooms, %d annex rooms" % (len(rooms), len(annex)))
 
