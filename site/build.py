@@ -1,92 +1,42 @@
 # -*- coding: utf-8 -*-
-"""build.py: render C:/ai/loop/site/index.html from data/ and src/.
+"""build.py: render the site into site/dist/ from the run data and src/.
 
     python build.py            (from anywhere; paths are resolved relative to this file)
+    python build.py --draft    (build without rooms whose notes are not written yet)
+    python build.py --out DIR  (write somewhere other than site/dist)
 
-Reads only. Writes site/index.html and site/build_report.json.
-Every passage in the output comes from data/<run>.json (or site/runs_extra/*/steps.jsonl for
-runs made after the bundle) via this script; nothing is retyped. Authored text is in src/copy.py.
+Reads only. Writes site/dist/ (gitignored; deploy that folder) and site/build_report.json:
+  index.html          front page: intro, seed, every room grouped by its instruction
+  r/<room>.html       one interactive page per room; without JS it is one long scroll of every hop
+  i/<family>.html     one page per instruction, listing the rooms that ran it
+  map.html, poem.html, colophon.html, annex.html
+  t/<room>.txt        the room as plain text for models and scripts: note, facts, rule, every hop's
+                      text; exact copies are named, not repeated; split into parts of at most
+                      TEXT_PART characters (t/<room>-2.txt, ...); also t/poem.txt, t/colophon.txt
+  llms.txt, robots.txt, sitemap.xml, 404.html, _headers, style.css, app.js
+Every passage comes from the data through rundata.py (data/, site/runs_extra/, experiments/);
+nothing is retyped. Authored text is in src/copy.py and the src/rooms_*.py modules it gathers.
 """
-import json, re, html, sys, difflib, pathlib, datetime
+import json, re, html, sys, difflib, pathlib, datetime, math, shutil, importlib.util
 
 HERE = pathlib.Path(__file__).resolve().parent          # site/
 LOOP = HERE.parent                                        # loop/
-DATA = LOOP / "data"
 SRC = HERE / "src"
-sys.path.insert(0, str(SRC)); sys.path.insert(0, str(LOOP))
-import copy as C                                          # authored text (src/copy.py)
-import loop as L                                          # for INITS and norm()
+DIST = HERE / "dist"
+sys.path.insert(0, str(SRC)); sys.path.insert(0, str(HERE)); sys.path.insert(0, str(LOOP))
 
-FENCE = re.compile(r"^\s*```(?:json)?\s*(.*?)\s*```\s*$", re.S)
-FENCE_ANY = re.compile(r"```(?:json)?\s*(\{.*?\})\s*```", re.S)
+def _load_copy():
+    """src/copy.py under its own name, so it never shadows the standard library's copy module."""
+    spec = importlib.util.spec_from_file_location("sitecopy", SRC / "copy.py")
+    m = importlib.util.module_from_spec(spec); sys.modules["sitecopy"] = m; spec.loader.exec_module(m)
+    return m
+C = _load_copy()                                          # authored text
+import loop as L                                          # for INITS
+import rundata as R
+from rundata import FENCE, FENCE_ANY, text_of, x0_for, split_x0, load_bundle, load_extra   # qa.py uses these through build
 
-# ---------------------------------------------------------------- data loading
-def text_of(out):
-    """Same decoding as export.py."""
-    m = FENCE.match(out)
-    if m: out = m.group(1)
-    try:
-        j = json.loads(out)
-        if isinstance(j, dict) and "text" in j: return j["text"], True
-    except Exception:
-        pass
-    return out, False
-
-def load_bundle():
-    runs = {}
-    for p in sorted(DATA.glob("*.json")):
-        if p.name == "index.json": continue
-        d = json.loads(p.read_text(encoding="utf-8"))
-        runs[d["meta"]["run"]] = d
-    index = {e["run"]: e for e in json.loads((DATA / "index.json").read_text(encoding="utf-8"))}
-    return runs, index
-
-def load_extra():
-    """Runs made after the bundle (site/runs_extra/<name>/steps.jsonl). Decoded like export.py."""
-    out = {}
-    for d in sorted((HERE / "runs_extra").glob("*")):
-        p = d / "steps.jsonl"
-        if not p.exists(): continue
-        hops = []
-        for line in p.read_text(encoding="utf-8").splitlines():
-            if not line.strip(): continue
-            j = json.loads(line)
-            if "out" not in j: continue
-            text, parsed = text_of(j["out"])
-            hops.append({"t": j["t"], "tag": j["tag"], "model": j.get("model", "qwen3.8-27b"), "sampling": j.get("sampling", "T=0"),
-                         "text": text, "text_is_json_field": parsed, "raw": j["out"], "tok_out": j.get("tok_out"), "finish": j.get("finish"),
-                         "cos_prev": j.get("cos_prev"), "cos_x0": j.get("cos_x0"), "ncd_prev": j.get("ncd_prev"), "ncd_x0": j.get("ncd_x0"),
-                         "surv_prev": j.get("surv_prev"), "surv_x0": j.get("surv_x0"), "gzip_ratio": j.get("gzip_ratio"), "latency": j.get("latency"),
-                         "cycle_exact": j.get("cycle_exact"), "cycle_norm": j.get("cycle_norm"), "cycle_broken": j.get("cycle_broken")})
-        if not hops: continue
-        # a steps.jsonl can carry a hop from an aborted start (the harness appends); the later record for a t wins
-        seen = {}
-        for h in hops: seen[(h["tag"], h["t"])] = h
-        dup = len(hops) - len(seen)
-        hops = sorted(seen.values(), key=lambda h: (h["tag"], h["t"]))
-        summ = {}
-        sp = d / "summary.json"
-        if sp.exists():
-            try: summ = json.loads(sp.read_text(encoding="utf-8"))
-            except Exception: summ = {}
-        out[d.name] = {"meta": {"run": d.name, "model": "qwen", "mode": "chat", "hops": len(hops), "tags": sorted({h["tag"] for h in hops}), "summary": summ, "superseded": dup}, "hops": hops}
-    return out
-
-def x0_for(tag, run):
-    """Full X_0 string for a tag (loop.INITS has the untruncated text; --init-file runs carry the file name as tag)."""
-    base = tag.replace("~r", "")
-    if base in L.INITS: return L.INITS[base]
-    p = HERE / "runs_extra" / "inits" / base
-    if p.exists(): return p.read_text(encoding="utf-8")
-    raise KeyError(tag)
-
-def split_x0(x0):
-    try:
-        j = json.loads(x0)
-        if isinstance(j, dict) and "text" in j: return j.get("rule"), j["text"], True
-    except Exception:
-        pass
-    return None, x0, False
+SITE = "https://endlessly-ending-stories.pages.dev"
+TEXT_PART = 90000      # characters per text part: under the ~100k that most fetch tools keep
 
 # ---------------------------------------------------------------- diff marks
 WORD = re.compile(r"(\s+)")
@@ -129,6 +79,7 @@ def del_marks(prev_text, cur_text, threshold=0.5):
     frac = len(matched_c) / len(cw)
     if frac < threshold or (frac == 1.0 and len(cw) == len(pw)):
         return html.escape(prev_text), False
+    if len(matched_p) == len(pw): return html.escape(prev_text), False   # nothing dropped, nothing to strike
     out = []; j = 0
     for tok in ptoks:
         if not tok: continue
@@ -143,12 +94,24 @@ def merge_marks(s):
     return re.sub(r"</mark>(\s+)<mark>", r"\1", s)
 
 # ---------------------------------------------------------------- lane building
+def recurrence(states):
+    """Exact recurrence of the whole output, from the data. None if no state repeats; else the first
+    repeat (hop `at` equals hop `of`), its period, and whether every later hop keeps that period."""
+    first = {}
+    for t, s in enumerate(states):
+        if s in first:
+            k = first[s]; p = t - k
+            holds = all(states[u] == states[u - p] for u in range(t, len(states)))
+            return dict(of=k, at=t, period=p, holds=holds)
+        first[s] = t
+    return None
+
 def build_lane(runs, index, lane):
     run = runs[lane["run"]]; tag = lane["tag"]
     hops = [dict(h, _run=lane["run"], _tag=tag) for h in run["hops"] if h.get("tag") == tag and "text" in h]
     hops.sort(key=lambda h: h["t"])
     ext = lane.get("extend")
-    if ext and not (HERE / "runs_extra" / ext["run"] / "summary.json").exists(): ext = None   # not finished yet
+    if ext and not (ext["run"] in runs and (runs[ext["run"]]["meta"].get("summary") or ext["run"] in R.X0)): ext = None   # not finished yet
     if ext and ext["run"] in runs:
         base_n = len(hops)
         ehops = sorted([h for h in runs[ext["run"]]["hops"] if h.get("tag") == ext["tag"] and "text" in h], key=lambda h: h["t"])
@@ -165,6 +128,7 @@ def build_lane(runs, index, lane):
     for t, s in enumerate(states):
         if s in first: copy_of[t] = first[s]
         else: first[s] = t
+    rec = recurrence(states)
     # summary/terminal
     terminal = None; summary = None
     ie = index.get(lane["run"])
@@ -254,41 +218,61 @@ def build_lane(runs, index, lane):
         if a["kind"] == "mono" or b_["kind"] == "mono": continue
         dm, marked = del_marks(a["text"], b_["text"])
         if marked: a["as_context"] = dm
+    models = sorted({h["model"] for h in hops})
+    model = (models[0] if len(models) == 1 else " / ".join(models)) if hops else run["meta"].get("model")
+    held = bool(terminal and "cycle confirmed" in terminal) or bool(summary and summary.get("transient_exact") is not None and not run["meta"].get("settings"))
+    args = (run["meta"].get("summary") or {}).get("args", {}) if isinstance(run["meta"].get("summary"), dict) else {}
     return dict(run=lane["run"], tag=tag, label=lane.get("label"), extend=(ext if ext and ext["run"] in runs else None), rule=rule, seed=seed, x0=x0, x0_is_json=x0_is_json,
-                model=(hops[0]["model"] if len({h["model"] for h in hops}) == 1 else " / ".join(sorted({h["model"] for h in hops}))) if hops else None,
-                n=len(hops), items=items, terminal=terminal, summary=summary,
+                model=model, n=len(hops), items=items, terminal=terminal, summary=summary, rec=rec, held=held,
+                settings=run["meta"].get("settings"), effort=args.get("effort"), source=run["meta"].get("source"),
                 sampling=(sorted({h.get("sampling") for h in hops if h.get("sampling")}) or [None])[0] if hops else None,
-                mode=run["meta"].get("mode"), copies=sum(1 for t in copy_of if t > 0))
+                mode=run["meta"].get("mode"), copies=sum(1 for t in copy_of if t > 0), from_experiment=bool(run["meta"].get("settings")))
 
 # ---------------------------------------------------------------- rendering helpers
 def esc(s): return html.escape(s, quote=True)
 
+MODEL_NAMES = {"qwen3.8-27b": "Qwen3.8-27B", "qwen-3.8-27b": "Qwen3.8-27B on Cerebras", "claude-sonnet-4-6": "Claude Sonnet 4.6", "claude-sonnet-5": "Claude Sonnet 5",
+               "gpt-6-astra": "GPT-6 Astra", "gpt-6-luna": "GPT-6 Luna", "gpt-6-sol": "GPT-6 Sol", "claude-fable-5-1": "Claude Fable 5.1", "claude-opus-5-5": "Claude Opus 5.5"}
 def model_name(m):
-    names = {"qwen3.8-27b": "Qwen3.8-27B", "qwen-3.8-27b": "Qwen3.8-27B on Cerebras", "claude-sonnet-4-6": "Claude Sonnet 4.6", "claude-sonnet-5": "Claude Sonnet 5"}
-    if m and " / " in m: return " / ".join(names.get(x, x) for x in m.split(" / "))
-    return names.get(m, m or "")
+    if m and " / " in m: return " / ".join(MODEL_NAMES.get(x, x) for x in m.split(" / "))
+    return MODEL_NAMES.get(m, m or "")
 
 def fmt(v, nd=3):
-    if v is None: return "\u2014"  # rendered only in metrics, not authored prose
+    if v is None: return "—"  # rendered only in metrics, not authored prose
     return ("%." + str(nd) + "f") % v
 
 QUOTE = re.compile(r"\{\{([^|]+)\|([^|]+)\|(\d+)\|(.+?)\}\}")
+def _quote_hop(m, runs):
+    run, tag, t, q = m.group(1), m.group(2), int(m.group(3)), m.group(4)
+    hs = [h for h in runs[run]["hops"] if h.get("tag") == tag and h.get("t") == t] if run in runs else []
+    if not hs: raise SystemExit("quote cites a missing hop: %s" % m.group(0))
+    h = hs[0]
+    if q not in (h.get("text") or "") and q not in (h.get("raw") or ""):
+        raise SystemExit("quote not found in data: %s" % m.group(0))
+    return run, tag, t, q
+
 def render_authored_safe(s, runs):
     """Authored prose with {{run|tag|t|exact}} quotes verified against the data."""
     # esc() would escape the braces' contents; do substitution on the raw string then escape the rest.
     parts = []; last = 0
     for m in QUOTE.finditer(s):
         parts.append(esc(s[last:m.start()]))
-        run, tag, t, q = m.group(1), m.group(2), int(m.group(3)), m.group(4)
-        hs = [h for h in runs[run]["hops"] if h.get("tag") == tag and h.get("t") == t]
-        if not hs: raise SystemExit("quote cites a missing hop: %s" % m.group(0))
-        h = hs[0]
-        if q not in (h.get("text") or "") and q not in (h.get("raw") or ""):
-            raise SystemExit("quote not found in data: %s" % m.group(0))
+        run, tag, t, q = _quote_hop(m, runs)
         parts.append('<q class="cited" title="run %s, %s, hop %d">%s</q><span class="qcite" title="run %s, %s">hop %d</span>' % (esc(run), esc(tag), t, esc(q), esc(run), esc(tag), t))
         last = m.end()
     parts.append(esc(s[last:]))
     return "".join(parts)
+
+def authored_plain(s, runs):
+    """The same prose for the text version: a quote becomes "exact" (hop N)."""
+    out = []; last = 0
+    for m in QUOTE.finditer(s):
+        out.append(s[last:m.start()])
+        run, tag, t, q = _quote_hop(m, runs)
+        out.append("“%s” (hop %d)" % (q, t))
+        last = m.end()
+    out.append(s[last:])
+    return "".join(out)
 
 def track_svg(lane, mini=False):
     n = lane["n"]
@@ -317,6 +301,13 @@ def track_svg(lane, mini=False):
     return ('<svg class="track" viewBox="0 0 %d %d" width="%d" height="%d" role="img" aria-label="hop track: one bar per hop, height is distance from the previous hop">'
             '<line class="floor" x1="0" y1="%d" x2="%d" y2="%d"/>%s%s<rect class="cursor" x="1" y="0" width="%d" height="%d"/></svg>') % (
             w, h + lab, w, h + lab, h - 1, w, h - 1, "".join(bars), "".join(labels), bw + 2, h)
+
+# U+0000 cannot be carried by HTML (parsers turn it into U+FFFD), and one stream's text fields hold it
+# (decoded from \u0000 escapes in its JSON). It is shown as the control picture U+2400, which occurs
+# nowhere in the data, so the mapping is exact; qa.py maps it back. The raw outputs keep the escapes.
+NUL_SHOWN = "␀"
+def show_controls(s):
+    return s.replace("\x00", '<span class="ctl" title="U+0000 in the data">%s</span>' % NUL_SHOWN)
 
 def render_hop(lane, it, room_id, lane_i):
     t = it["t"]
@@ -350,12 +341,12 @@ def render_hop(lane, it, room_id, lane_i):
         body.append('<div class="preamble" title="the model wrote this before the JSON object">%s</div>' % esc(it["preamble"]))
     if it.get("state_extra"):
         body.append('<div class="state" title="the other fields of the JSON object at this hop, carried in the state">%s</div>' % esc(it["state_extra"]))
-    marks_html = it["marks"]
+    marks_html = show_controls(it["marks"])
     if it.get("glider"):
         marks_html = re.sub(r"\((\d{1,3})\)", r'<span class="n">(\1)</span>', marks_html)
     body.append('<div class="text">%s</div>' % marks_html)
     if it.get("as_context"):
-        body.append('<div class="text as-context" hidden>%s</div>' % it["as_context"])
+        body.append('<div class="text as-context" hidden>%s</div>' % show_controls(it["as_context"]))
     if it.get("postamble"):
         body.append('<div class="preamble" title="the model wrote this after the JSON object">%s</div>' % esc(it["postamble"]))
     m = it["metrics"]
@@ -365,34 +356,60 @@ def render_hop(lane, it, room_id, lane_i):
         if m["cos"] is not None: bits.append("cos %s" % fmt(m["cos"], 4))
         if m["surv"] is not None: bits.append("5-gram survival %s" % fmt(m["surv"], 2))
         if m["cycle_exact"]: bits.append('<span class="same">exact cycle detected, period %d</span>' % m["cycle_exact"])
-        metr = '<div class="metrics">%s</div>' % " \u00b7 ".join(bits)
+        metr = '<div class="metrics">%s</div>' % " · ".join(bits)
     raw = '<details class="raw"><summary>raw output</summary><pre>%s</pre></details>' % esc(it["raw"])
-    return '<li%s id="%s-%d-%d">\n<div class="cite">%s</div>\n%s\n%s\n%s\n</li>' % (attrs, room_id, lane_i, t, " \u00b7 ".join(cite), "\n".join(body), metr, raw)
+    return '<li%s id="%s-%d-%d">\n<div class="cite">%s</div>\n%s\n%s\n%s\n</li>' % (attrs, room_id, lane_i, t, " · ".join(cite), "\n".join(body), metr, raw)
 
-def render_room(room, runs, index, section_class="room"):
-    lanes = [build_lane(runs, index, ln) for ln in room["lanes"]]
+def outcome(ln):
+    """Short outcome of a lane for the index rows and llms.txt."""
+    s = ln["summary"]; rec = ln["rec"]
+    if s and s.get("transient_exact") is not None and not ln["from_experiment"]:
+        return ("holds from hop %d%s" % (s["transient_exact"], " (the seed itself)" if s["transient_exact"] == 0 else "")) if s["period_exact"] == 1 else "period %d from hop %d" % (s["period_exact"], s["transient_exact"])
+    if rec and rec["holds"]:
+        return ("holds from hop %d" % rec["of"]) if rec["period"] == 1 else "period %d from hop %d" % (rec["period"], rec["of"])
+    if ln["n"] == 0:
+        return "no hops: %s" % (ln["terminal"] or "nothing recorded")
+    o = "%d hops, no repeat" % ln["n"] if not rec else "%d hops, repeats hop %d at hop %d and moves on" % (ln["n"], rec["of"], rec["at"])
+    if ln["terminal"] and ln["from_experiment"]: o += " (%s)" % ln["terminal"]
+    return o
+
+def facts_line(ln, runs):
+    who = model_name(ln["model"])
+    if ln["label"] and ln["label"] != who: who = "%s: %s" % (ln["label"], who)
+    f = "%s, %s hop%s" % (esc(who), ln["n"], "" if ln["n"] == 1 else "s")
+    if ln.get("settings"): f += ", " + esc(ln["settings"])
+    else:
+        if ln.get("effort"): f += ", reasoning effort %s" % esc(ln["effort"])
+        if ln.get("sampling") == "default": f += ", provider-default sampling"
+        elif ln.get("sampling") and ln["sampling"] != "T=0": f += ", temperature %s" % esc(ln["sampling"].replace("T=", ""))
+    s = ln["summary"]; rec = ln["rec"]
+    if s and s.get("transient_exact") is not None and not ln["from_experiment"]:
+        if s["period_exact"] == 1: f += ", exact fixed point from hop %d%s" % (s["transient_exact"], " (the seed itself)" if s["transient_exact"] == 0 else "")
+        else: f += ", exact cycle of period %d from hop %d" % (s["period_exact"], s["transient_exact"])
+    elif rec and rec["holds"]:
+        f += (", exact fixed point from hop %d to the end of the run" % rec["of"]) if rec["period"] == 1 else ", exact cycle of period %d from hop %d to the end of the run" % (rec["period"], rec["of"])
+    elif rec:
+        nrep = sum(1 for it in ln["items"] if it.get("copy_of") is not None)
+        f += ", the whole output repeats an earlier hop exactly at %d hop%s (first at hop %d, a copy of hop %d) and the run moves on" % (nrep, "" if nrep == 1 else "s", rec["at"], rec["of"])
+    elif ln["n"]:
+        tc = [it for it in ln["items"] if it.get("text_copy_of") is not None]
+        f += ", no exact recurrence of the whole object"
+        if tc: f += "; the text field repeats an earlier hop at %d hop%s (first at hop %d)" % (len(tc), "" if len(tc) == 1 else "s", tc[0]["t"])
+    if ln["terminal"]: f += " (%s)" % esc(ln["terminal"])
+    if ln["from_experiment"]: f += ". stream %s" % esc(ln["source"])
+    else: f += ". run %s, %s, %s mode" % (esc(ln["run"]), esc(ln["tag"]), esc(ln["mode"] or "chat"))
+    if ln.get("extend"):
+        f += "; continued from its last hop as run %s (hops %d and up)" % (esc(ln["extend"]["run"]), len([h for h in runs[ln["run"]]["hops"] if h.get("tag") == ln["tag"] and "text" in h]) + 1)
+    return f
+
+def render_room(room, lanes, runs, ctx):
+    """One room as a <section>. ctx: root (relative path to the site root), family_nav html, text_link html."""
     maxn = max(ln["n"] for ln in lanes)
-    rule = lanes[0]["rule"]
     head = []
     numtxt = ('<span class="num">%d</span> ' % room["num"]) if room.get("num") else ""
     head.append('<h2>%s%s</h2>' % (numtxt, esc(room["title"])))
-    facts = []
-    for ln in lanes:
-        f = "%s%s, %s hops" % ((esc(ln["label"]) + ": ") if ln["label"] else "", esc(model_name(ln["model"])), ln["n"])
-        if ln.get("sampling") and ln["sampling"] not in ("T=0", "default"): f += ", temperature %s" % esc(ln["sampling"].replace("T=", ""))
-        s = ln["summary"]
-        if s and s.get("transient_exact") is not None:
-            if s["period_exact"] == 1: f += ", exact fixed point from hop %d%s" % (s["transient_exact"], " (the seed itself)" if s["transient_exact"] == 0 else "")
-            else: f += ", exact cycle of period %d from hop %d" % (s["period_exact"], s["transient_exact"])
-        elif ln["n"]:
-            tc = [it for it in ln["items"] if it.get("text_copy_of") is not None]
-            f += ", no exact recurrence of the whole object"
-            if tc: f += "; the text field repeats an earlier hop at %d hop%s (first at hop %d)" % (len(tc), "" if len(tc) == 1 else "s", tc[0]["t"])
-        if ln["terminal"]: f += " (%s)" % esc(ln["terminal"])
-        f += ". run %s, %s, %s mode" % (esc(ln["run"]), esc(ln["tag"]), esc(ln["mode"] or "chat"))
-        if ln.get("extend"):
-            f += "; continued from its last hop as run %s (hops %d and up)" % (esc(ln["extend"]["run"]), len([h for h in runs[ln["run"]]["hops"] if h.get("tag") == ln["tag"] and "text" in h]) + 1)
-        facts.append(f)
+    if ctx.get("family_nav"): head.append(ctx["family_nav"])
+    facts = [facts_line(ln, runs) for ln in lanes]
     if room.get("content_note"):
         head.append('<p class="content-note">%s</p>' % esc(room["content_note"]))
     head.append('<p class="note">%s</p>' % render_authored_safe(room["note"], runs))
@@ -406,16 +423,22 @@ def render_room(room, runs, index, section_class="room"):
     else:
         for lab, r in rules:
             head.append('<div class="rule"><span class="k">rule, %s</span> <span class="rule-text">%s</span></div>' % (esc(lab or ""), esc(r)))
+    if ctx.get("text_link"): head.append(ctx["text_link"])
     lanes_html = []
     for i, ln in enumerate(lanes):
         hops_html = "\n".join(render_hop(ln, it, room["id"], i) for it in ln["items"])
         label = ('<div class="lane-label">%s</div>' % esc(ln["label"])) if ln["label"] else ""
         ended = ""
         if ln["n"] < maxn:
-            ended = '<div class="ended" hidden>No hop %s recorded. The harness stopped this run at hop %d%s.</div>' % ("<span class=\"ended-t\"></span>", ln["n"], (": " + esc(ln["terminal"])) if ln["terminal"] else "")
+            if ln["from_experiment"]:
+                why = "This run ends after hop %d%s." % (ln["n"], (": " + esc(ln["terminal"])) if ln["terminal"] else "")
+            else:
+                why = "The harness stopped this run at hop %d%s." % (ln["n"], (": " + esc(ln["terminal"])) if ln["terminal"] else "")
+            ended = '<div class="ended" hidden>No hop %s recorded. %s</div>' % ("<span class=\"ended-t\"></span>", why)
         ext_attr = (' data-extend-run="%s" data-extend-tag="%s"' % (esc(ln["extend"]["run"]), esc(ln["extend"]["tag"]))) if ln.get("extend") else ""
-        lanes_html.append('<div class="lane" data-n="%d" data-run="%s" data-tag="%s"%s>%s%s<div class="slot context"><div class="slot-label">it saw</div></div><div class="slot current"><div class="slot-label">it wrote</div>%s</div><ol class="hops">%s</ol></div>'
-                          % (ln["n"], esc(ln["run"]), esc(ln["tag"]), ext_attr, label, track_svg(ln), ended, hops_html))
+        held_attr = ' data-held="1"' if ln["held"] else ""
+        lanes_html.append('<div class="lane" data-n="%d" data-run="%s" data-tag="%s"%s%s>%s%s<div class="slot context"><div class="slot-label">it saw</div></div><div class="slot current"><div class="slot-label">it wrote</div>%s</div><ol class="hops">%s</ol></div>'
+                          % (ln["n"], esc(ln["run"]), esc(ln["tag"]), ext_attr, held_attr, label, track_svg(ln), ended, hops_html))
     controls = ('<div class="controls">'
                 '<button class="btn back" type="button" title="back (left arrow)">back</button>'
                 '<div class="counter"><span class="t">0</span> <span class="of">of %d</span><span class="status"></span></div>'
@@ -423,12 +446,12 @@ def render_room(room, runs, index, section_class="room"):
                 '<button class="btn play" type="button" title="play (p)">play</button>'
                 '<button class="btn raw-toggle" type="button" title="raw output (r)">raw</button>'
                 '<button class="btn sound-toggle" type="button" title="sound (s): one tone per hop, pitch is distance from the seed, loudness is distance from the previous hop">sound</button>'
-                '<span class="keys" title="right arrow or space: next. left arrow: back. p: play. r: raw output. s: sound. esc: index">keys &rarr; &larr; p r s esc</span>'
+                '<span class="keys" title="right arrow or space: next. left arrow: back. p: play. r: raw output. s: sound. n / b: next or previous room. esc: index">keys &rarr; &larr; p r s n b esc</span>'
                 '</div>') % maxn
     kind = " two" if len(lanes) == 2 else (" many" if len(lanes) > 2 else "")
-    return ('<section class="%s%s" id="%s" data-n="%d">\n<header class="room-head">\n%s\n</header>\n%s\n<div class="lanes lanes-%s">\n%s\n</div>\n</section>'
+    section_class = "room annex" if room.get("annex") else "room"
+    return ('<section class="%s%s active" id="%s" data-n="%d">\n<header class="room-head">\n%s\n</header>\n%s\n<div class="lanes lanes-%s">\n%s\n</div>\n</section>'
             % (section_class, kind, room["id"], maxn, "\n".join(head), controls, ("many" if len(lanes) > 2 else str(len(lanes))), "\n".join(lanes_html)))
-
 
 # ---------------------------------------------------------------- the map (census over the page-scale Qwen runs)
 MAP_RUNS = [("20260902T155557_chat", "json_page", "passage", "room 5"),
@@ -476,7 +499,6 @@ def map_svg(runs):
     W, H = 860, 430
     out = ['<svg class="map" viewBox="0 0 %d %d" width="%d" height="%d" role="img" aria-label="transition map of the page-scale Qwen runs">' % (W, H, W, H)]
     out.append('<defs><marker id="arr" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z"/></marker></defs>')
-    import math
     def radius(k): return 10 + 3.2 * math.log(len(visits[k]))
     # edges
     for (a, b), n in sorted(trans.items(), key=lambda kv: kv[1]):
@@ -502,7 +524,7 @@ def map_svg(runs):
         if k not in visits: continue
         r = radius(k); selfn = trans.get((k, k), 0); exn = exact_self.get(k, 0)
         t0, room0, lab0 = order_first[k]
-        href = "#%s/%d" % (room0, t0)
+        href = "r/%s.html#%d" % (room0, t0)
         who = {}
         for room, lab, t in visits[k]: who.setdefault(lab, []).append(t)
         def span(ts):
@@ -521,8 +543,8 @@ def map_svg(runs):
             out.append('<path class="loop%s" d="M%.1f,%.1f a%.1f,%.1f 0 1,1 %.1f,0" marker-end="url(#arr)"/>' % (" same-opening" if dashed else "", x - r * 0.5, y - r * 0.85, r * 0.6, r * 0.6, r * 1.0))
             if exn: out.append('<text class="lcount" x="%d" y="%.1f">×%d</text>' % (x, y - r - 22, exn))
             else: out.append('<text class="lcount faint" x="%d" y="%.1f">×%d same opening</text>' % (x, y - r - 22, selfn))
-        # label below (or above for the top row)
-        ly = y + r + 14 if y > 90 else y + r + 14
+        # label below
+        ly = y + r + 14
         words = label[k].split()
         out.append('<text class="nlabel" x="%d" y="%.1f">%s</text>' % (x, ly, esc(" ".join(words))))
         out.append('<text class="nsub" x="%d" y="%.1f">%s</text>' % (x, ly + 12, esc("first at hop %d, %s" % (t0, lab0))))
@@ -531,84 +553,357 @@ def map_svg(runs):
     stats = dict(states=len(visits), hops=sum(len(v) for v in visits.values()) - len(MAP_RUNS), trans=trans, visits=visits, label=label)
     return "\n".join(out), stats
 
-# ---------------------------------------------------------------- page
+# ---------------------------------------------------------------- text versions (for models and scripts)
+def hop_text_block(ln, it, prev_it):
+    """One hop as plain text. Exact copies are named, not repeated; a hop that keeps the previous text
+    as an exact prefix shows only what it added. Every omission says what was omitted."""
+    t = it["t"]
+    if t == 0:
+        head = "### hop 0, the seed"
+        body = it["text"]
+        if it.get("state_extra"): body += "\n\n[other fields of the starting object]\n" + it["state_extra"]
+        return head + "\n" + body + "\n"
+    bits = [model_name(it["model"])]
+    if it.get("orig_t"): bits.append("run %s, its hop %d" % (it["run"], it["orig_t"]))
+    if it.get("copy_of") is not None:
+        return "### hop %d (%s): identical to hop %d, the whole output byte for byte; not repeated here\n" % (t, ", ".join(bits), it["copy_of"])
+    m = it["metrics"] or {}
+    if m.get("finish") not in (None, "stop", "end_turn"): bits.append("finish %s" % m["finish"])
+    body = []
+    if it.get("preamble"): body.append("[before the JSON object]\n" + it["preamble"])
+    if it["kind"] == "mono" and not it.get("preamble") and not it.get("postamble"):
+        bits.append("did not parse as the JSON object; raw output")
+        body.append(it["text"])
+    else:
+        prev_text = prev_it["text"] if prev_it is not None else None
+        if it.get("same_text_as_prev") or (it.get("text_copy_of") is not None):
+            k = (t - 1) if it.get("same_text_as_prev") else it["text_copy_of"]
+            body.append("[text field identical to hop %d; not repeated]" % k)
+        elif prev_text and len(it["text"]) > len(prev_text) and it["text"].startswith(prev_text) and len(prev_text) > 200:
+            body.append("[hop %d's text exactly, then this:]\n%s" % (t - 1, it["text"][len(prev_text):]))
+        else:
+            bits.append("%d words" % it["words"])
+            body.append(it["text"])
+    if it.get("postamble"): body.append("[after the JSON object]\n" + it["postamble"])
+    if it.get("state_extra"): body.append(extra_delta(it["state_extra"], prev_it.get("state_extra") if prev_it else None, t - 1))
+    return "### hop %d (%s)\n%s\n" % (t, ", ".join(bits), "\n\n".join(body).replace("\x00", NUL_SHOWN))
+
+def extra_delta(cur_extra, prev_extra, prev_t):
+    """The object's other fields (step counter, ledger history), stated against the previous hop's so a
+    growing list is not reprinted every hop. Lossless: unchanged fields are named, an extended list
+    gives the new items, anything else is given in full."""
+    cur = json.loads(cur_extra)
+    prev = json.loads(prev_extra) if prev_extra else None
+    if not isinstance(prev, dict): return "[other fields of the object]\n" + cur_extra
+    lines = []
+    for k, v in cur.items():
+        pv = prev.get(k)
+        if k in prev and pv == v: lines.append("%s: unchanged from hop %d" % (k, prev_t))
+        elif isinstance(v, list) and isinstance(pv, list) and len(v) > len(pv) and v[:len(pv)] == pv:
+            lines.append("%s: hop %d's %d items, then %s" % (k, prev_t, len(pv), json.dumps(v[len(pv):], ensure_ascii=False)))
+        else: lines.append("%s: %s" % (k, json.dumps(v, ensure_ascii=False)))
+    lines += ["%s: absent (present at hop %d)" % (k, prev_t) for k in prev if k not in cur]
+    return "[other fields of the object, against hop %d]\n%s" % (prev_t, "\n".join(lines))
+
+def room_text_parts(room, lanes, runs, fam_title, part_name):
+    """The room as plain text, split into parts of at most TEXT_PART characters at hop boundaries."""
+    num = ("room %d, " % room["num"]) if room.get("num") else ""
+    intro = []
+    if room.get("content_note"): intro.append("Content note: " + room["content_note"])
+    intro.append("## Note (authored by the site's builders; quotes are checked against the data)\n" + authored_plain(room["note"], runs))
+    facts = [re.sub(r"<[^>]+>", "", html.unescape(facts_line(ln, runs))) for ln in lanes]
+    intro.append("## Facts (generated from the data)\n" + "\n".join("- " + f for f in facts))
+    rules = [(ln["label"], ln["rule"]) for ln in lanes if ln["rule"]]
+    if rules and len({r for _, r in rules}) == 1: intro.append("## Rule\n" + rules[0][1])
+    elif rules: intro.append("## Rules\n" + "\n".join("- %s: %s" % (lab, r) for lab, r in rules))
+    intro.append("## How to read the hops\nEach hop's text is the model's output for that hop: the JSON text field, or the raw output when it did not parse. "
+                 "The model saw only the previous hop. Exact copies of an earlier hop are named rather than repeated. Raw outputs and per-hop metrics are on the interactive page."
+                 + (" In this room the character U+0000 occurs in text fields; it is written here as %s (U+2400), which occurs nowhere in the data." % NUL_SHOWN
+                    if any("\x00" in it["text"] for ln in lanes for it in ln["items"]) else ""))
+    blocks = []   # (lane index, t, text)
+    for i, ln in enumerate(lanes):
+        lane_head = "## Lane %d of %d%s: %s, %d hops (run %s, %s)\n" % (i + 1, len(lanes), (" (" + ln["label"] + ")") if ln["label"] and ln["label"] != model_name(ln["model"]) else "",
+                                                                     model_name(ln["model"]), ln["n"], ln["run"], ln["tag"])
+        if ln["n"] == 0 and ln["terminal"]: lane_head += "No hops: %s.\n" % ln["terminal"]
+        prev = None
+        for j, it in enumerate(ln["items"]):
+            blocks.append((i, it["t"], (lane_head + "\n" if j == 0 else "") + hop_text_block(ln, it, prev)))
+            prev = it
+    url_html = "%s/r/%s" % (SITE, room["id"])
+    def header(k, n, first_block):
+        fam_url = "%s/annex" % SITE if room.get("annex") else "%s/i/%s" % (SITE, room["family"])
+        hdr = ["# Endlessly ending stories, %s%s" % (num, room["title"]),
+               "Text version of %s (the interactive reader). %s: %s (%s). Index of every room: %s/llms.txt"
+               % (url_html, "Part of" if room.get("annex") else "Instruction", fam_title, fam_url, SITE)]
+        if n > 1:
+            hdr.append("Part %d of %d. %s" % (k, n, " ".join("%s/t/%s" % (SITE, part_name(room["id"], q)) for q in range(1, n + 1))))
+            if first_block: hdr.append("This part starts at lane %d, hop %d." % (first_block[0] + 1, first_block[1]))
+        return "\n".join(hdr) + "\n\n"
+    # first pass: pack blocks into parts
+    budget = TEXT_PART - 1200
+    parts = []; cur = ["\n\n".join(intro) + "\n\n"]; cur_len = len(cur[0]); cur_first = None
+    for b in blocks:
+        if cur_len + len(b[2]) > budget and cur_len > 2000:
+            parts.append((cur_first, "".join(cur))); cur = []; cur_len = 0; cur_first = None
+        if cur_first is None: cur_first = b
+        cur.append(b[2] + "\n"); cur_len += len(b[2]) + 1
+    parts.append((cur_first, "".join(cur)))
+    n = len(parts)
+    return [header(k + 1, n, fb if k else None) + body for k, (fb, body) in enumerate(parts)]
+
+def part_name(rid, k):
+    return "%s.txt" % rid if k == 1 else "%s-%d.txt" % (rid, k)
+
+# ---------------------------------------------------------------- pages
+def public_url(path):
+    """The address Pages serves a file at: it redirects /x.html to /x, so absolute links skip the hop."""
+    if path == "index.html": return SITE + "/"
+    return SITE + "/" + (path[:-5] if path.endswith(".html") else path)
+
+TEMPLATE = None
+def page_html(path, title, body, desc="", body_class="reader-view", topbar="", text_alt=None, head_extra="", root=None):
+    if root is None: root = "../" * path.count("/")
+    canonical = public_url(path)
+    alt = ('<link rel="alternate" type="text/plain" href="%s%s" title="text version">' % (root, text_alt)) if text_alt else ""
+    return (TEMPLATE.replace("{{ROOT}}", root).replace("{{TITLE}}", esc(title)).replace("{{DESC}}", esc(desc))
+            .replace("{{CANONICAL}}", canonical).replace("{{ALT}}", alt).replace("{{HEAD_EXTRA}}", head_extra)
+            .replace("{{BODY_CLASS}}", body_class).replace("{{TOPBAR}}", topbar).replace("{{BODY}}", body))
+
+def topbar(root, where, prev, nxt):
+    """prev / nxt: (href relative to the site root, title) or None (the index)."""
+    p = (root + prev[0], prev[1]) if prev else (root, "index")
+    n = (root + nxt[0], nxt[1]) if nxt else (root, "index")
+    return ('<nav class="topbar" aria-label="site">\n  <a class="home" href="%s">%s</a>\n  <span class="where">%s</span>\n'
+            '  <button class="theme-toggle" type="button" title="light / dark">theme</button>\n'
+            '  <span class="roomnav"><a class="prev-room" href="%s" title="%s">&larr;</a> <a class="next-room" href="%s" title="%s">&rarr;</a></span>\n</nav>'
+            % (root or "./", esc(C.SITE_TITLE), esc(where), esc(p[0]), esc(p[1]), esc(n[0]), esc(n[1])))
+
+def pagenav(root, prev, nxt):
+    a = ('<a href="%s%s">&larr; %s</a>' % (root, prev[0], esc(prev[1]))) if prev else '<a href="%s">&larr; index</a>' % (root or "./")
+    b = ('<a href="%s%s">%s &rarr;</a>' % (root, nxt[0], esc(nxt[1]))) if nxt else '<a href="%s">index &rarr;</a>' % (root or "./")
+    return '<p class="pagenav">%s &nbsp; <a href="%s">index</a> &nbsp; %s</p>' % (a, root or "./", b)
+
+def room_label(r):
+    return ("%d " % r["num"] if r.get("num") else "") + r["title"]
+
+def families_of(r):
+    f = r.get("family")
+    return f if isinstance(f, list) else ([f] if f else [])
+
+# ---------------------------------------------------------------- build
 def build():
-    runs, index = load_bundle()
-    extra = load_extra()
-    runs.update(extra)
-    rooms = list(C.ROOMS)
+    global TEMPLATE, DIST
+    if "--out" in sys.argv: DIST = pathlib.Path(sys.argv[sys.argv.index("--out") + 1]).resolve()   # default site/dist
+    runs, index, extra, exp = R.load_all()
     def finished(run_name):
+        if run_name in exp: return True
         if run_name in runs and run_name not in extra: return True   # part of the bundle
         r = extra.get(run_name)
-        return bool(r and r["meta"]["hops"] >= 5 and (HERE / "runs_extra" / run_name / "summary.json").exists())
-    have_qwen_next = finished("qwen_json_next")
-    if have_qwen_next:
-        rooms.append(C.ROOM_QWEN_NEXT)
+        return bool(r and r["meta"]["hops"] >= 1 and (r["meta"].get("summary") or run_name in R.X0))
+    rooms = [dict(r) for r in C.ROOMS]
+    if finished("qwen_json_next"): rooms.append(dict(C.ROOM_QWEN_NEXT))
     added = []
-    for er in C.EXTRA_ROOMS:
+    missing = [i for i in C.LATER_ORDER if i not in {r["id"] for r in C.LATER_ROOMS}]
+    if missing:
+        if "--draft" not in sys.argv: raise SystemExit("rooms missing from src/rooms_*.py: %s (python build.py --draft builds without them)" % ", ".join(missing))
+        print("draft build, without:", ", ".join(missing))
+    for er in C.EXTRA_ROOMS + C.LATER_ROOMS:
         if all(finished(ln["run"]) for ln in er["lanes"]):
             er = dict(er); er["num"] = len(rooms) + 1; rooms.append(er); added.append(er["id"])
-    # summary for the extra run: compute a terminal note from the copy structure
-    room_html = [render_room(r, runs, index) for r in rooms]
-    annex_html = [render_room(r, runs, index, section_class="room annex") for r in C.ANNEX]
+        else:
+            print("skipped (a run is not finished):", er["id"])
+    for r in rooms:
+        r.setdefault("family", C.ROOM_FAMILY.get(r["id"]))
+        if not families_of(r): raise SystemExit("room %s has no family" % r["id"])
+    annex = [dict(r, annex=True) for r in C.ANNEX]
+    fam_by_id = {f["id"]: f for f in C.FAMILIES}
+    for r in rooms:
+        for f in families_of(r):
+            if f not in fam_by_id: raise SystemExit("room %s names unknown family %s" % (r["id"], f))
+    fam_rooms = {f["id"]: [r for r in rooms if f["id"] in families_of(r)] for f in C.FAMILIES}
+    lanes_of = {r["id"]: [build_lane(runs, index, ln) for ln in r["lanes"]] for r in rooms + annex}
 
-    # index (table of contents)
-    def toc_row(r):
-        lanes = [build_lane(runs, index, ln) for ln in r["lanes"]]
-        outs = []
-        for ln in lanes:
-            s = ln["summary"]
-            if s and s.get("transient_exact") is not None:
-                o = ("holds from hop %d%s" % (s["transient_exact"], " (the seed itself)" if s["transient_exact"] == 0 else "")) if s["period_exact"] == 1 else "period %d from hop %d" % (s["period_exact"], s["transient_exact"])
-            else:
-                o = "%d hops, no repeat" % ln["n"]
-            if ln["label"]: o = "%s: %s" % (ln["label"], o)
-            outs.append(o)
+    TEMPLATE = (SRC / "template.html").read_text(encoding="utf-8")
+    if DIST.exists():
+        if any(DIST.iterdir()) and not (DIST / "llms.txt").exists():
+            raise SystemExit("%s is not empty and is not a previous build; not deleting it" % DIST)
+        shutil.rmtree(DIST)
+    for d in ("r", "i", "t"): (DIST / d).mkdir(parents=True, exist_ok=True)
+    shutil.copyfile(SRC / "style.css", DIST / "style.css")
+    shutil.copyfile(SRC / "app.js", DIST / "app.js")
+    written = {}
+    def write(path, s):
+        (DIST / path).write_text(s, encoding="utf-8", newline="\n"); written[path] = len(s.encode("utf-8"))
+
+    # the walk: rooms in number order, then the map, the poem, the colophon, the annex and its rooms
+    walk = [("r/%s.html" % r["id"], room_label(r)) for r in rooms] + [("map.html", "The map"), ("poem.html", "The poem"), ("colophon.html", "Colophon"), ("annex.html", "Annex")] \
+           + [("r/%s.html" % r["id"], "Annex: " + r["title"]) for r in annex]
+    walk_i = {p: i for i, (p, _) in enumerate(walk)}
+    def neighbours(path):
+        i = walk_i[path]
+        return (walk[i - 1] if i > 0 else None), (walk[i + 1] if i < len(walk) - 1 else None)
+
+    def room_summary(lanes, with_models=False):
+        """The lanes' outcomes in one line: each lane for one or two, a count for more."""
+        def who(ln):
+            w = model_name(ln["model"])
+            if not with_models: return ln["label"]
+            return "%s (%s)" % (ln["label"], w) if ln["label"] and ln["label"] != w else w
+        if len(lanes) <= 2:
+            return "; ".join(("%s: %s" % (who(ln), outcome(ln))) if who(ln) else outcome(ln) for ln in lanes)
+        held = [ln for ln in lanes if "holds" in outcome(ln)]
+        cyc = [ln for ln in lanes if outcome(ln).startswith("period")]
+        free = [ln for ln in lanes if ln not in held and ln not in cyc]
+        parts = ["%d lanes" % len(lanes)]
+        hs = [int(re.search(r"hop (\d+)", outcome(ln)).group(1)) for ln in held]
+        if held: parts.append("%d hold, from hop %d to hop %d" % (len(held), min(hs), max(hs)) if len(held) > 1 else "1 holds from hop %d" % hs[0])
+        if cyc: parts.append("%d cycle" % len(cyc))
+        if free: parts.append("%d never hold%s in %s hops" % (len(free), "s" if len(free) == 1 else "", "/".join(sorted({str(ln["n"]) for ln in free}, key=int))))
+        if with_models: parts.append(" / ".join(sorted({model_name(ln["model"]) for ln in lanes})))
+        return "; ".join(parts)
+
+    # index rows
+    def toc_row(r, root=""):
+        lanes = lanes_of[r["id"]]
+        outs = [room_summary(lanes)]
         who = " / ".join(sorted({model_name(ln["model"]) for ln in lanes}))
         minis = "".join(track_svg(ln, mini=True) for ln in lanes)
-        if len(lanes) > 2:
-            held = [ln["summary"]["transient_exact"] for ln in lanes if ln["summary"] and ln["summary"].get("transient_exact") is not None and ln["summary"].get("period_exact") == 1]
-            cyc = [ln for ln in lanes if ln["summary"] and ln["summary"].get("transient_exact") is not None and ln["summary"].get("period_exact") != 1]
-            free = [ln for ln in lanes if not (ln["summary"] and ln["summary"].get("transient_exact") is not None)]
-            parts = ["%d lanes" % len(lanes)]
-            if held: parts.append("%d hold, from hop %d to hop %d" % (len(held), min(held), max(held)) if len(held) > 1 else "1 holds from hop %d" % held[0])
-            if cyc: parts.append("%d cycle" % len(cyc))
-            if free: parts.append("%d never repeat%s in %s hops" % (len(free), "s" if len(free) == 1 else "", "/".join(sorted({str(ln["n"]) for ln in free}))))
-            outs = ["; ".join(parts)]
-        return ('<li><a href="#%s"><span class="num">%s</span><span class="ttl">%s</span><span class="who">%s</span><span class="mini-wrap%s">%s</span><span class="out">%s</span></a></li>'
-                % (r["id"], r.get("num", ""), esc(r["title"]), esc(who), " many" if len(lanes) > 2 else "", minis, esc("; ".join(outs))))
-    toc = "\n".join(toc_row(r) for r in rooms)
-    toc_annex = "\n".join(toc_row(r) for r in C.ANNEX)
+        return ('<li><a href="%sr/%s.html"><span class="num">%s</span><span class="ttl">%s</span><span class="who">%s</span><span class="mini-wrap%s">%s</span><span class="out">%s</span></a></li>'
+                % (root, r["id"], r.get("num", ""), esc(r["title"]), esc(who), " many" if len(lanes) > 2 else "", minis, esc("; ".join(outs))))
 
+    # text versions first, so the room pages can link to their parts
+    text_parts = {}
+    for r in rooms + annex:
+        fam = families_of(r)[0] if not r.get("annex") else None
+        r2 = dict(r, family=fam or "annex")
+        parts = room_text_parts(r2, lanes_of[r["id"]], runs, fam_by_id[fam]["title"] if fam else "Annex", part_name)
+        text_parts[r["id"]] = parts
+        for k, s in enumerate(parts, 1): write("t/" + part_name(r["id"], k), s)
+
+    # room pages
+    for r in rooms + annex:
+        path = "r/%s.html" % r["id"]
+        prev, nxt = neighbours(path)
+        fams = families_of(r)
+        fam_nav = []
+        for f in fams:
+            sib = fam_rooms[f]
+            links = " &middot; ".join(('<b>%s</b>' % esc(room_label(s))) if s["id"] == r["id"] else '<a href="%s.html">%s</a>' % (s["id"], esc(room_label(s))) for s in sib)
+            fam_nav.append('<p class="family"><span class="k">instruction</span> <a href="../i/%s.html">%s</a>: %s</p>' % (f, esc(fam_by_id[f]["title"]), links))
+        if r.get("annex"):
+            fam_nav = ['<p class="family"><span class="k">annex</span> <a href="../annex.html">the instrument being found</a></p>']
+        parts = text_parts[r["id"]]
+        tl = '<p class="textver"><span class="k">text version</span> %s, %s characters, every hop in order, for reading without the reader</p>' % (
+            " ".join('<a href="../t/%s">%s</a>' % (part_name(r["id"], k), "part %d" % k if len(parts) > 1 else "t/" + part_name(r["id"], k)) for k in range(1, len(parts) + 1)),
+            "{:,}".format(sum(len(p) for p in parts)))
+        sec = render_room(r, lanes_of[r["id"]], runs, dict(family_nav="\n".join(fam_nav), text_link=tl))
+        body = "<main>\n%s\n%s\n</main>" % (sec, pagenav("../", prev, nxt))
+        desc = re.sub(r"\s+", " ", authored_plain(r["note"], runs))[:300]
+        write(path, page_html(path, "%s · %s" % (room_label(r), C.SITE_TITLE), body, desc=desc, topbar=topbar("../", room_label(r), prev, nxt), text_alt="t/" + part_name(r["id"], 1)))
+
+    # instruction pages
+    for f in C.FAMILIES:
+        path = "i/%s.html" % f["id"]
+        rs = fam_rooms[f["id"]]
+        if not rs: continue
+        rules = []
+        for r in rs:
+            for ln in lanes_of[r["id"]]:
+                if ln["rule"] and ln["rule"] not in rules: rules.append(ln["rule"])
+        rules_html = "\n".join('<div class="rule"><span class="rule-text">%s</span></div>' % esc(x) for x in rules)
+        body = ('<main>\n<section class="page active" id="family-%s">\n<header class="room-head">\n<h2>%s</h2>\n<p class="note">%s</p>\n<p class="facts">%d room%s. The rule%s as the model received %s:</p>\n%s\n</header>\n'
+                '<ol class="rooms-list">\n%s\n</ol>\n</section>\n%s\n</main>') % (
+            f["id"], esc(f["title"]), render_authored_safe(f["blurb"], runs), len(rs), "" if len(rs) == 1 else "s", "" if len(rules) == 1 else "s", "it" if len(rules) == 1 else "them",
+            rules_html, "\n".join(toc_row(r, "../") for r in rs), '<p class="pagenav"><a href="../">&larr; every instruction</a></p>')
+        write(path, page_html(path, "%s · %s" % (f["title"], C.SITE_TITLE), body, desc=re.sub(r"\s+", " ", authored_plain(f["blurb"], runs))[:300],
+                              topbar=topbar("../", "Instruction: " + f["title"], None, None)))
+
+    # front page
     seed = json.loads(L.INITS["json_page"])["text"]
     intro = "\n".join('<p class="authored">%s</p>' % esc(p) for p in C.INTRO)
     intro_after = "\n".join('<p class="authored">%s</p>' % render_authored_safe(p, runs) for p in C.INTRO_AFTER_SEED)
-    poem = "\n".join('<p class="stanza">%s</p>' % "<br>".join(esc(l) for l in st.split("\n")) for st in C.POEM.split("\n\n"))
-    colophon = "\n".join('<h3>%s</h3>\n<p class="authored">%s</p>' % (esc(h), esc(b)) for h, b in C.COLOPHON)
-    if have_qwen_next or added:
-        colophon += '\n<h3>Added after the bundle</h3>\n<p class="authored">%s</p>' % esc(
-            "Rooms 13 and up come from runs made while this site was built, with the same harness (site/runs_extra/<run>/steps.jsonl; the Claude runs were started by the human from a terminal with the API key). Apart from room 14's Sonnet 4.6 lane, which is room 11's run, they are not in data/. Their run ids are names, not timestamps."
-            + "".join(" The steps file of %s also holds %d record%s from a start that was aborted and rerun; the site uses the later record for that hop." % (name, r["meta"]["superseded"], "" if r["meta"]["superseded"] == 1 else "s")
-                      for name, r in sorted(extra.items()) if r["meta"].get("superseded")))
+    fam_html = []
+    for f in C.FAMILIES:
+        rs = fam_rooms[f["id"]]
+        if not rs: continue
+        fam_html.append('<section class="fam" id="i-%s">\n<h3><a href="i/%s.html">%s</a> <span class="fam-n">%d room%s</span></h3>\n<p class="fam-blurb authored">%s</p>\n<ol class="rooms-list">\n%s\n</ol>\n</section>'
+                        % (f["id"], f["id"], esc(f["title"]), len(rs), "" if len(rs) == 1 else "s", render_authored_safe(f["blurb"], runs), "\n".join(toc_row(r) for r in rs)))
+    legacy = json.dumps({"rooms": [r["id"] for r in rooms + annex], "pages": ["map", "poem", "colophon", "annex"]})
+    front = ('<header class="front" id="front">\n  <button class="theme-toggle" type="button" title="light / dark">theme</button>\n  <h1>%s</h1>\n  <p class="sub authored">%s</p>\n'
+             '  <div class="intro">\n%s\n  </div>\n  <p class="seed"><span class="k">hop 0</span> %s</p>\n  <div class="intro">\n%s\n  </div>\n'
+             '  <p><a class="enter" href="r/%s.html">Enter room 1 &rarr;</a></p>\n'
+             '  <p class="formodels authored">%s</p>\n'
+             '  <nav class="toc" aria-label="rooms by instruction">\n%s\n'
+             '    <p class="toc-extra"><a href="map.html">The map</a> &nbsp; <a href="poem.html">The poem</a> &nbsp; <a href="colophon.html">Colophon</a> &nbsp; <a href="annex.html">Annex</a> &nbsp; <a href="llms.txt">llms.txt</a></p>\n'
+             '  </nav>\n</header>') % (esc(C.SITE_TITLE), esc(C.SITE_SUB), intro, esc(seed), intro_after, rooms[0]["id"], render_authored_safe(C.FOR_MODELS, runs), "\n".join(fam_html))
+    # links from the one-page site (#room or #room/hop) still arrive at the same room and hop
+    head_extra = ('<script>(function(){var k=%s;function go(){var h=location.hash.replace(/^#/,"");if(!h)return;var p=h.split("/");'
+                  'if(k.rooms.indexOf(p[0])>=0)location.replace("r/"+p[0]+".html"+(p[1]?"#"+p[1]:""));else if(k.pages.indexOf(p[0])>=0)location.replace(p[0]+".html");}'
+                  'go();window.addEventListener("hashchange",go);})();</script>') % legacy
+    write("index.html", page_html("index.html", C.SITE_TITLE, front, desc=C.SITE_SUB, body_class="front-view", text_alt="llms.txt", head_extra=head_extra))
 
+    # the map, the poem, the colophon, the annex
     map_html, map_stats = map_svg(runs)
-    map_note = render_authored_safe(C.MAP_NOTE, runs)
-    tpl = (SRC / "template.html").read_text(encoding="utf-8")
-    css = (SRC / "style.css").read_text(encoding="utf-8")
-    js = (SRC / "app.js").read_text(encoding="utf-8")
-    page = (tpl.replace("{{CSS}}", css).replace("{{JS}}", js)
-            .replace("{{TITLE}}", esc(C.SITE_TITLE)).replace("{{SUB}}", esc(C.SITE_SUB))
-            .replace("{{INTRO}}", intro).replace("{{INTRO_AFTER}}", intro_after).replace("{{SEED}}", esc(seed))
-            .replace("{{TOC}}", toc).replace("{{TOC_ANNEX}}", toc_annex).replace("{{ANNEX_INTRO}}", esc(C.ANNEX_INTRO))
-            .replace("{{ROOMS}}", "\n".join(room_html)).replace("{{ANNEX}}", "\n".join(annex_html))
-            .replace("{{POEM_HEAD}}", esc(C.POEM_HEAD)).replace("{{POEM_TITLE}}", esc(C.POEM_TITLE)).replace("{{POEM}}", poem).replace("{{POEM_SIGN}}", esc(C.POEM_SIGN))
-            .replace("{{COLOPHON}}", colophon).replace("{{MAP}}", map_html).replace("{{MAP_NOTE}}", map_note)
-            .replace("{{MAP_FACTS}}", esc("%d states over %d hops of three runs: room 5, and slots A and B of room 6. A state is the first five words of a passage, the key the README's census uses. Node size is visits. A solid loop with ×n is a passage copied exactly n times; a dashed loop means the next hop kept only the opening words (hop 1 of every run starts like the seed; Mara's copy was one character off). ×n on an edge is how many times it was taken." % (map_stats["states"], map_stats["hops"]))).replace("{{BUILT}}", datetime.datetime.now().strftime("%Y-%m-%d %H:%M")))
-    (HERE / "index.html").write_text(page, encoding="utf-8")
-    rep = dict(rooms=[r["id"] for r in rooms], annex=[r["id"] for r in C.ANNEX], qwen_next=have_qwen_next, extra_added=added,
-               bytes=len(page.encode("utf-8")))
+    map_facts = "%d states over %d hops of three runs: room 5, and slots A and B of room 6. A state is the first five words of a passage, the key the README's census uses. Node size is visits. A solid loop with ×n is a passage copied exactly n times; a dashed loop means the next hop kept only the opening words (hop 1 of every run starts like the seed; Mara's copy was one character off). ×n on an edge is how many times it was taken." % (map_stats["states"], map_stats["hops"])
+    def simple_page(path, title, inner, desc):
+        prev, nxt = neighbours(path)
+        body = '<main>\n<section class="page active" id="%s">\n%s\n</section>\n%s\n</main>' % (path[:-5], inner, pagenav("", prev, nxt))
+        write(path, page_html(path, "%s · %s" % (title, C.SITE_TITLE), body, desc=desc, topbar=topbar("", title, prev, nxt),
+                              text_alt=("t/%s.txt" % path[:-5]) if path in ("poem.html", "colophon.html") else None))
+    simple_page("map.html", "The map", '<header class="room-head">\n<h2>The map</h2>\n<p class="note">%s</p>\n<p class="facts">%s</p>\n</header>\n<div class="map-wrap">\n%s\n</div>'
+                % (render_authored_safe(C.MAP_NOTE, runs), esc(map_facts), map_html), "Transition map of the page-scale Qwen runs.")
+    poem = "\n".join('<p class="stanza">%s</p>' % "<br>".join(esc(l) for l in st.split("\n")) for st in C.POEM.split("\n\n"))
+    simple_page("poem.html", "The poem", '<header class="room-head">\n<h2>The poem</h2>\n<p class="note">%s</p>\n</header>\n<article class="poem">\n<h3>%s</h3>\n%s\n<p class="sign">%s</p>\n</article>'
+                % (esc(C.POEM_HEAD), esc(C.POEM_TITLE), poem, esc(C.POEM_SIGN)), C.POEM_HEAD)
+    built = datetime.datetime.now().strftime("%Y-%m-%d %H:%M")
+    colophon = "\n".join('<h3>%s</h3>\n<p class="authored">%s</p>' % (esc(h), esc(b)) for h, b in C.COLOPHON)
+    colophon += '\n<p class="built">Built %s by site/build.py from data/, site/runs_extra/ and experiments/. Static pages, no network.</p>' % built
+    simple_page("colophon.html", "Colophon", '<header class="room-head">\n<h2>Colophon</h2>\n</header>\n<article class="colophon">\n%s\n</article>' % colophon, "What is data and what is authored on this site, and how it was built.")
+    simple_page("annex.html", "Annex", '<header class="room-head">\n<h2>Annex</h2>\n<p class="note">%s</p>\n</header>\n<ol class="rooms-list annex-list">\n%s\n</ol>' % (esc(C.ANNEX_INTRO), "\n".join(toc_row(r) for r in annex)), C.ANNEX_INTRO)
+    write("t/poem.txt", "# %s\n%s\n\n%s\n\n%s\n" % (C.POEM_TITLE, C.POEM_HEAD, C.POEM, C.POEM_SIGN))
+    write("t/colophon.txt", "# Colophon, Endlessly ending stories\n\n" + "\n\n".join("## %s\n%s" % (h, b) for h, b in C.COLOPHON) + "\n\nBuilt %s by site/build.py.\n" % built)
+
+    # llms.txt
+    out = ["# %s" % C.SITE_TITLE, "", "> %s" % C.SITE_SUB, ""]
+    for para in C.INTRO: out += [re.sub(r"\s+", " ", para), ""]
+    out += ["Seed of most rooms: \"%s\"" % seed, ""]
+    out += [authored_plain(C.FOR_MODELS, runs), ""]
+    out += ["## Start here", "",
+            "- [The poem](%s/t/poem.txt): written by a fresh Claude context before any of the experiments" % SITE,
+            "- [Colophon](%s/t/colophon.txt): what is data, what is authored, the harness" % SITE,
+            "- [The map](%s/map): transition graph of the page-scale Qwen runs" % SITE,
+            "- [Room 1](%s/t/%s.txt): the shortest room; the walk goes on from there in number order" % (SITE, rooms[0]["id"]), ""]
+    for f in C.FAMILIES:
+        rs = fam_rooms[f["id"]]
+        if not rs: continue
+        out += ["## %s" % f["title"], "", authored_plain(f["blurb"], runs), ""]
+        for r in rs:
+            parts = text_parts[r["id"]]
+            ptxt = " (%d parts: %s)" % (len(parts), ", ".join("%s/t/%s" % (SITE, part_name(r["id"], k)) for k in range(2, len(parts) + 1))) if len(parts) > 1 else ""
+            out.append("- [%s](%s/t/%s)%s: %s. Interactive: %s/r/%s" % (room_label(r), SITE, part_name(r["id"], 1), ptxt, room_summary(lanes_of[r["id"]], with_models=True), SITE, r["id"]))
+        out.append("")
+    out += ["## Optional", "", "- [Annex](%s/annex): %s" % (SITE, C.ANNEX_INTRO)]
+    for r in annex: out.append("- [%s](%s/t/%s)" % (r["title"], SITE, part_name(r["id"], 1)))
+    write("llms.txt", "\n".join(out) + "\n")
+
+    # robots, sitemap, 404, headers
+    write("robots.txt", "User-agent: *\nAllow: /\n\nSitemap: %s/sitemap.xml\n# Model-readable index: %s/llms.txt\n" % (SITE, SITE))
+    today = datetime.date.today().isoformat()
+    urls = sorted(p for p in written if p.endswith((".html", ".txt")) and p not in ("robots.txt", "404.html"))
+    write("sitemap.xml", '<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n%s\n</urlset>\n'
+          % "\n".join("<url><loc>%s</loc><lastmod>%s</lastmod></url>" % (public_url(p), today) for p in urls))
+    write("404.html", page_html("404.html", "Not found · " + C.SITE_TITLE, '<main>\n<section class="page active" id="notfound">\n<header class="room-head">\n<h2>Not found</h2>\n'
+          '<p class="note">Nothing at this address. The rooms are listed on <a href="/">the front page</a>, and as text in <a href="/llms.txt">/llms.txt</a>.</p>\n</header>\n</section>\n</main>', topbar=topbar("/", "Not found", None, None), root="/"))
+    write("_headers", "/t/*\n  Content-Type: text/plain; charset=utf-8\n/llms.txt\n  Content-Type: text/plain; charset=utf-8\n/robots.txt\n  Content-Type: text/plain; charset=utf-8\n")
+
+    biggest = sorted(((v, p) for p, v in written.items() if p.startswith("r/")), reverse=True)[:5]
+    biggest_t = max(v for p, v in written.items() if p.startswith("t/"))
+    rep = dict(rooms=[r["id"] for r in rooms], annex=[r["id"] for r in annex], extra_added=added, families={f: [r["id"] for r in rs] for f, rs in fam_rooms.items()},
+               files=len(written), total_bytes=sum(written.values()), index_bytes=written["index.html"], llms_bytes=written["llms.txt"],
+               largest_room_pages=[(p, v) for v, p in biggest], largest_text_part=biggest_t)
     (HERE / "build_report.json").write_text(json.dumps(rep, indent=1), encoding="utf-8")
-    print(json.dumps(rep))
+    print(json.dumps({k: rep[k] for k in ("files", "total_bytes", "index_bytes", "llms_bytes", "largest_room_pages", "largest_text_part")}))
+    print("%d rooms, %d annex rooms" % (len(rooms), len(annex)))
 
 if __name__ == "__main__":
     build()

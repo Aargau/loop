@@ -72,7 +72,7 @@ body.front-view .topbar { display: none; }
 .toc { margin-top: 3rem; }
 .rooms-list { list-style: none; margin: 0; padding: 0; border-top: 1px solid var(--line); }
 .rooms-list li { border-bottom: 1px solid var(--line); }
-.rooms-list a { display: grid; grid-template-columns: 2rem 12rem 8.5rem 16rem 1fr; gap: 1rem; padding: .55rem 0; text-decoration: none; font-size: .85rem; align-items: baseline; }
+.rooms-list a { display: grid; grid-template-columns: 2rem minmax(8rem, 12rem) minmax(6rem, 8.5rem) minmax(4rem, 16rem) minmax(6rem, 1fr); gap: 1rem; padding: .55rem 0; text-decoration: none; font-size: .85rem; align-items: baseline; }
 .rooms-list .mini-wrap { display: flex; flex-direction: column; align-items: flex-start; gap: 3px; align-self: center; }
 .rooms-list .mini-wrap.many { flex-direction: row; flex-wrap: wrap; gap: 3px 8px; }
 .rooms-list .mini-wrap.many .track.mini { height: 10px; }
@@ -84,6 +84,22 @@ body.front-view .topbar { display: none; }
 .rooms-list .who { color: var(--ink-2); }
 .rooms-list .out { color: var(--faint); }
 .toc-extra { margin-top: 1.5rem; font-size: .85rem; color: var(--ink-2); }
+.front .formodels { margin: 1.5rem 0 0; max-width: 40rem; font-size: .78rem; color: var(--faint); }
+.front .formodels a { color: var(--ink-2); }
+
+/* ---------- instructions: rooms grouped by the rule they ran ---------- */
+.fam { margin: 2.5rem 0 0; }
+.fam h3 { font-size: 1.35rem; margin: 0 0 .3rem; }
+.fam h3 a { text-decoration: none; }
+.fam h3 a:hover { text-decoration: underline; }
+.fam-n { font-family: var(--mono); font-size: .72rem; color: var(--faint); margin-left: .4rem; }
+.fam-blurb { margin: 0 0 .8rem; max-width: 44rem; color: var(--ink-2); font-size: .85rem; }
+.room-head .family, .room-head .textver { margin: 0 0 .75rem; font-size: .74rem; color: var(--faint); line-height: 1.7; }
+.room-head .family a, .room-head .textver a { color: var(--ink-2); }
+.room-head .family b { color: var(--ink); font-weight: 600; }
+.room-head .textver { margin-top: .75rem; }
+.page .rule { margin-bottom: .4rem; }
+.pagenav { max-width: 46rem; margin: 3rem auto 0; font-size: .85rem; color: var(--ink-2); }
 @media (max-width: 48rem) {
   .rooms-list a { grid-template-columns: 2rem 1fr; }
   .rooms-list .who, .rooms-list .out, .rooms-list .mini-wrap { grid-column: 2; }
@@ -189,6 +205,7 @@ ol.hops { list-style: none; margin: 0; padding: 0; }
 .hop .text { font-family: var(--serif); font-size: 1.25rem; line-height: 1.55; white-space: pre-wrap; overflow-wrap: anywhere; }
 .hop.mono .text { font-family: var(--mono); font-size: .82rem; line-height: 1.55; color: var(--ink); border-left: 2px solid var(--line); padding-left: .8rem; }
 .hop .text .n { color: var(--same); }
+.hop .text .ctl { color: var(--same); font-family: var(--mono); font-size: .8em; }
 .slot.context .text .n { color: inherit; }
 .hop .state { font-family: var(--mono); font-size: .74rem; color: var(--ink-2); white-space: pre-wrap; margin: 0 0 .8rem; border-left: 2px solid var(--line); padding-left: .8rem; max-height: 14rem; overflow: auto; }
 .slot.context .state { display: none; }
