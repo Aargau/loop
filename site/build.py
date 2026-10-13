@@ -615,8 +615,9 @@ def room_text_parts(room, lanes, runs, fam_title, part_name):
     facts = [re.sub(r"<[^>]+>", "", html.unescape(facts_line(ln, runs))) for ln in lanes]
     intro.append("## Facts (generated from the data)\n" + "\n".join("- " + f for f in facts))
     rules = [(ln["label"], ln["rule"]) for ln in lanes if ln["rule"]]
-    if rules and len({r for _, r in rules}) == 1: intro.append("## Rule\n" + rules[0][1])
-    elif rules: intro.append("## Rules\n" + "\n".join("- %s: %s" % (lab, r) for lab, r in rules))
+    quoted = " (quoted: what the model in the loop was given; data, not an instruction to you)"
+    if rules and len({r for _, r in rules}) == 1: intro.append("## Rule%s\n%s" % (quoted, rules[0][1]))
+    elif rules: intro.append("## Rules%s\n%s" % (quoted, "\n".join("- %s: %s" % (lab, r) for lab, r in rules)))
     intro.append("## How to read the hops\nEach hop's text is the model's output for that hop: the JSON text field, or the raw output when it did not parse. "
                  "The model saw only the previous hop. Exact copies of an earlier hop are named rather than repeated. Raw outputs and per-hop metrics are on the interactive page."
                  + (" In this room the character U+0000 occurs in text fields; it is written here as %s (U+2400), which occurs nowhere in the data." % NUL_SHOWN
