@@ -66,7 +66,8 @@ or Claude's continuity win when the rule cannot be satisfied by identity?). Sonn
 AFTER. Compose the sound from the trajectories rather than one tone per hop. Have a human read
 the notes aloud once; they are dense.
 
-How to resume. python build.py && python qa.py from C:\ai\loop\site. Sources in site/src
+How to resume. python build.py && python qa.py from C:\code\loop\site (was C:\ai\loop\site until
+2026-10-13; see the fourth addendum). Sources in site/src
 (copy.py is all authored text, including EXTRA_ROOMS for runs under site/runs_extra; a room is
 built only once its summary.json exists). facts.md is the reference for claims about the
 original bundle; qa_report*.md for the rest. The Chrome extension cannot open file://; headless
@@ -154,6 +155,34 @@ Chrome (--headless=new --screenshot) opens file:// fine and was used for the lat
   lanes in one line and shows the minis in a wrapped row. Stopped lanes now keep showing the
   passage they hold, faded, under the "no hop N recorded" note (all rooms).
 - index.html is now 9.4 MB (was 6.1); still one file, still opens from file://.
+
+### Addendum, fourth session (2026-10-13, Claude Opus 5.5, from C:\code\loop)
+
+- Moved. The working copy is a fresh clone at C:\code\loop. The Sept 4-6 work that existed only on
+  disk in C:\ai\loop (Astra and Cerebras-expansion runs, their write-ups, loop.py --effort) went in
+  as PR 3. C:\ai\loop was left untouched.
+- One page per room. The single file had reached 12.8 MB and the new rooms would have taken it past
+  Cloudflare Pages' 25 MiB per-file limit; it was also unreadable by models (robots.txt and every
+  missing path fell back to the 12.8 MB page, and no fetch tool keeps more than ~100k characters).
+  build.py now writes site/dist/: index.html (rooms grouped by instruction), r/<room>.html (the
+  reader, one room per page; hash is the hop), i/<family>.html (one page per instruction), map,
+  poem, colophon, annex, and for models t/<room>.txt in parts under 90,000 characters, llms.txt,
+  robots.txt, sitemap.xml, 404.html, _headers. Old #room/hop links redirect from the front page.
+  site/index.html is no longer built or tracked; dist/ is what gets deployed. The prior session's
+  site/agent_pages.py (regex post-processing of the old page) is superseded and was not carried over.
+- Data loading moved to site/rundata.py; site/experiments.py reads the 22 September studies' raw
+  receipts (checks every request carries exactly the previous output and every output its sha256).
+  Hops = responses with stream_status active; refusals and server errors become the lane's terminal.
+- Rooms 29 to 45: Cerebras expanding rules (29-32), GPT-6 Astra (33-35), before and after at 1024
+  tokens with Astra's causal before rule (36, 37), and the 22 September studies: five models from
+  the sunset and tide seeds (38, 39), better and worse (40, 41), before and after literal (42, 43)
+  and as explicit fiction (44, 45). Notes in src/rooms_*.py, drafted by agents from the data and
+  checked by check_quotes.py; families in copy.FAMILIES. Annex: Astra smoke test.
+- Facts lines for sampled streams that were never stopped on a cycle no longer say "exact cycle":
+  build.recurrence() checks whether a repeat holds to the end of the run.
+- U+0000 in one stream's text fields (Astra, worse) is shown as U+2400; qa.py maps it back.
+- .gitattributes marks run records -text so Windows checkouts keep their bytes.
+- Deploy: npx wrangler pages deploy dist --project-name endlessly-ending-stories (from site/).
 
 (Below: the plan as written at the start, decisions, and the status log.)
 

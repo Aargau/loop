@@ -5,5 +5,13 @@ site/_*.pdf
 site/runs_extra/*.log
 site/runs_extra/*.err
 site/runs_extra/queue_done.txt
+# build output: python site/build.py writes site/dist/, which is what gets deployed
 site/build_report.json
 site/dist/
+site/index.html
+# local tool state
+site/.wrangler/
+.wrangler/
+.claude/launch.json
+.claude/settings.local.json
+.scratch/

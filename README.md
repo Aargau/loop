@@ -1,11 +1,26 @@
 # Memoryless self-loop experiments ("endlessly ending stories")
 
-Started 2026-09-02. Harness, census, probe, and all run logs live in this directory.
+Started 2026-09-02. Harness, census, probe, and all run logs live in this directory. The working copy
+moved from C:\ai\loop to C:\code\loop on 2026-10-13 (a fresh clone of this repo); older run summaries
+and queue scripts still name the old path, which is where those runs were made.
+
+## The site
+
+https://endlessly-ending-stories.pages.dev is built from this repo; nothing in it is retyped.
+
+    cd C:\code\loop\site
+    python build.py          # writes site/dist/: one page per room, text versions under t/, llms.txt
+    python qa.py             # byte-checks every hop on every page and in every text version
+    npx wrangler pages deploy dist --project-name endlessly-ending-stories
+
+Sources: site/src/copy.py and site/src/rooms_*.py (all authored text), site/src/{template.html,style.css,app.js},
+site/rundata.py (loads data/, site/runs_extra/ and experiments/), site/experiments.py (the 22 September
+studies' raw receipts). site/NOTES.md is the build log.
 
 ## Start up fresh
 
     & C:\ai\serve-qwen.ps1 -NoMtp; & C:\ai\serve-embed.ps1      # local Qwen3.8-27B Q8 on :8080, embeddings on :8081
-    cd C:\ai\loop
+    cd C:\code\loop
     $env:ANTHROPIC_API_KEY = Read-Host -MaskInput "Anthropic key"   # multi-workspace key also needs:
     $env:ANTHROPIC_WORKSPACE_ID = 'wrkspc_01QV2g6CR9Z57RGH4wZqyjRU'
     python loop.py --help
