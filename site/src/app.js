@@ -1,65 +1,41 @@
-/* The memoryless reader. All hops are already in the DOM (ol.hops, one li per hop, hop 0 = seed).
-   This script only decides which two are visible: the hop before (context) and the hop (current). */
+/* The memoryless reader. One room per page; all its hops are already in the DOM (ol.hops, one li per
+   hop, hop 0 = seed). This script only decides which two are visible: the hop before (context) and
+   the hop (current). The hash is the hop: r/<room>.html#12. Rooms link to each other as pages. */
 (function () {
   "use strict";
   document.documentElement.classList.add("js");
 
   var sections = Array.prototype.slice.call(document.querySelectorAll("main > section"));
-  var order = sections.map(function (s) { return s.id; });
   var state = { room: null, t: 0, prevT: -1, timer: null, raw: false, sound: false, audio: null };
   var PLAY_MS = 2500;
 
   function $(sel, root) { return (root || document).querySelector(sel); }
-  function esc(s) { return String(s).replace(/&/g, "&amp;").replace(/</g, "&lt;").replace(/>/g, "&gt;"); }
   function $all(sel, root) { return Array.prototype.slice.call((root || document).querySelectorAll(sel)); }
 
+  // the hop from the hash: "#12", or the old one-page form "#room/12"
   function parseHash() {
     var h = location.hash.replace(/^#/, "");
-    if (!h) return { room: null, t: 0 };
-    var parts = h.split("/");
-    var id = parts[0]; var t = parseInt(parts[1] || "0", 10);
-    if (!document.getElementById(id)) return { room: null, t: 0 };
-    return { room: id, t: isNaN(t) ? 0 : t };
+    var parts = h.split("/"); var t = parseInt(parts[parts.length - 1] || "0", 10);
+    return isNaN(t) ? 0 : t;
   }
 
-  function setHash(room, t) {
-    var h = room ? ("#" + room + (t ? "/" + t : "")) : "#";
-    if (location.hash !== h) history.replaceState(null, "", h);
+  function setHash(t) {
+    var h = t ? "#" + t : "";
+    if (location.hash !== h) history.replaceState(null, "", location.pathname + location.search + h);
   }
 
-  function roomTitle(sec) {
-    var h2 = $("h2", sec); if (!h2) return sec.id;
-    var num = $(".num", h2);
-    var title = h2.textContent.replace(num ? num.textContent : "", "").trim();
-    return (num ? num.textContent + " " : "") + title;
-  }
+  // the other pages, as the build linked them in the top bar
+  function link(sel) { var a = $(".topbar " + sel); return a ? a.getAttribute("href") : null; }
+  function homeHref() { return link(".home") || "../"; }
+  function nextHref() { return link(".next-room") || homeHref(); }
+  function prevHref() { return link(".prev-room") || homeHref(); }
+  function go(href) { if (href) location.href = href; }
 
-  function show(room, t, opts) {
-    opts = opts || {};
+  function show(t) {
     stopPlay();
-    sections.forEach(function (s) { s.classList.toggle("active", s.id === room); });
-    document.body.classList.toggle("front-view", !room);
-    document.body.classList.toggle("reader-view", !!room);
-    state.room = room; state.t = t || 0; state.prevT = -1;
-    setHash(room, state.t);
-    var sec = room ? document.getElementById(room) : null;
-    var where = $(".topbar .where");
-    document.title = sec ? roomTitle(sec) + " · " + $(".topbar .home").textContent : $(".topbar .home").textContent;
-    if (sec) {
-      where.textContent = roomTitle(sec);
-      var i = order.indexOf(room);
-      var prev = $(".topbar .prev-room"), next = $(".topbar .next-room");
-      prev.href = i > 0 ? "#" + order[i - 1] : "#"; prev.title = i > 0 ? roomTitle(sections[i - 1]) : "index";
-      next.href = i < order.length - 1 ? "#" + order[i + 1] : "#"; next.title = i < order.length - 1 ? roomTitle(sections[i + 1]) : "index";
-      if (sec.classList.contains("room")) renderRoom(sec);
-      else {
-        var pn = $(".pagenav", sec);
-        if (!pn) { pn = document.createElement("p"); pn.className = "pagenav"; sec.appendChild(pn); }
-        pn.innerHTML = (i > 0 ? '<a href="#' + order[i - 1] + '">&larr; ' + esc(roomTitle(sections[i - 1])) + '</a>' : '<a href="#">&larr; index</a>')
-          + ' &nbsp; ' + (i < order.length - 1 ? '<a href="#' + order[i + 1] + '">' + esc(roomTitle(sections[i + 1])) + ' &rarr;</a>' : '<a href="#">index &rarr;</a>');
-      }
-    }
-    if (!opts.keepScroll) { window.scrollTo(0, 0); requestAnimationFrame(function () { window.scrollTo(0, 0); }); }
+    var sec = sections[0];
+    state.room = sec && sec.classList.contains("room") ? sec.id : null; state.t = t || 0; state.prevT = -1;
+    if (state.room) { setHash(state.t); renderRoom(sec); }
   }
 
   function renderRoom(sec) {
@@ -68,8 +44,7 @@
     var ct = $(".counter .t", sec); ct.textContent = t; ct.classList.remove("tick"); void ct.offsetWidth; ct.classList.add("tick");
     $(".btn.back", sec).disabled = t === 0;
     var nextBtn = $(".btn.next", sec);
-    var i = order.indexOf(sec.id);
-    if (t >= n) { nextBtn.textContent = i < order.length - 1 ? "next room →" : "index"; nextBtn.classList.add("to-room"); }
+    if (t >= n) { nextBtn.textContent = nextHref() !== homeHref() ? "next room →" : "index"; nextBtn.classList.add("to-room"); }
     else { nextBtn.textContent = "next"; nextBtn.classList.remove("to-room"); }
     var still = (t === state.prevT + 1);
     $all(".lane", sec).forEach(function (lane, li) {
@@ -109,7 +84,7 @@
     }
     st.textContent = words.length ? words.join(" / ") : "";
     state.prevT = t;
-    setHash(sec.id, t);
+    setHash(t);
   }
 
   function renderLane(lane, t, still) {
@@ -127,7 +102,7 @@
     } else {
       ctx.hidden = true;
       if (ended) { ended.hidden = false; $(".ended-t", ended).textContent = t; }
-      $(".slot-label", cur).textContent = "it holds";
+      $(".slot-label", cur).textContent = n === 0 ? "the seed" : lane.getAttribute("data-held") === "1" ? "it holds" : "its last hop";
       fillSlot(cur, hops[n], true); $(".hop", cur).classList.add("held");
     }
     var cursor = $(".track .cursor", lane);
@@ -160,7 +135,7 @@
     var sec = activeRoom(); if (!sec || !sec.classList.contains("room")) return;
     var n = parseInt(sec.getAttribute("data-n"), 10);
     var t = state.t + delta;
-    if (t > n) { var i = order.indexOf(sec.id); if (i < order.length - 1) show(order[i + 1], 0); else show(null, 0); return; }
+    if (t > n) { go(nextHref()); return; }
     if (t < 0) t = 0;
     state.t = t; renderRoom(sec);
     var top = $(".controls", sec).getBoundingClientRect().top + window.pageYOffset - 40;
@@ -287,22 +262,22 @@
     if (e.metaKey || e.ctrlKey || e.altKey) return;
     var tag = (e.target && e.target.tagName) || "";
     if (tag === "INPUT" || tag === "TEXTAREA") return;
-    if (!state.room) { if (e.key === "ArrowRight" || e.key === "Enter" && false) { } return; }
+    if (!$(".topbar")) return;   // the front page has no reader
+    if (e.key === "n") { go(nextHref()); return; }
+    if (e.key === "b") { go(prevHref()); return; }
+    if (e.key === "Escape") { go(homeHref()); return; }
+    if (!state.room) return;
     if (e.key === "ArrowRight" || e.key === " " || e.key === "j") { e.preventDefault(); step(1); }
     else if (e.key === "ArrowLeft" || e.key === "k") { e.preventDefault(); step(-1); }
     else if (e.key === "p") { togglePlay(); }
     else if (e.key === "r") { toggleRaw(); }
     else if (e.key === "s") { toggleSound(); }
-    else if (e.key === "Escape") { show(null, 0); }
-    else if (e.key === "n") { var i = order.indexOf(state.room); if (i < order.length - 1) show(order[i + 1], 0); }
-    else if (e.key === "b") { var j = order.indexOf(state.room); if (j > 0) show(order[j - 1], 0); }
   });
 
   window.addEventListener("hashchange", function () {
-    var h = parseHash();
-    if (h.room !== state.room || h.t !== state.t) show(h.room, h.t);
+    var t = parseHash();
+    if (state.room && t !== state.t) goto(t);
   });
 
-  var h0 = parseHash();
-  show(h0.room, h0.t);
+  show(parseHash());
 })();
