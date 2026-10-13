@@ -148,6 +148,7 @@ def step_openai(state, args, model):
     hdr = {"Authorization": "Bearer " + key}
     msgs = ([{"role": "system", "content": args.system}] if args.system else []) + [{"role": "user", "content": state}]
     body = {"model": model, "messages": msgs, "max_completion_tokens": args.max_tokens}
+    if getattr(args, "effort", None): body["reasoning_effort"] = args.effort   # reasoning models: low/medium/high/xhigh
     sampling = "default"
     if not args.no_sampling:
         body["temperature"] = args.temp; body["seed"] = args.seed; sampling = "T=%g" % args.temp
@@ -160,8 +161,10 @@ def step_openai(state, args, model):
         else:
             raise
     ch = r["choices"][0]; u = r.get("usage", {})
+    rt = (u.get("completion_tokens_details") or {}).get("reasoning_tokens")   # hidden reasoning, billed as output
     return ch["message"].get("content") or "", {"finish": ch.get("finish_reason"), "tok_out": u.get("completion_tokens"),
-                                                  "tok_in": u.get("prompt_tokens"), "reasoning_chars": 0,
+                                                  "tok_in": u.get("prompt_tokens"), "reasoning_chars": 0, "tok_reasoning": rt,
+                                                  "tok_cached": (u.get("prompt_tokens_details") or {}).get("cached_tokens"),
                                                   "model": r.get("model", model), "sampling": sampling}
 
 CEREBRAS = "https://api.cerebras.ai/v1/chat/completions"
@@ -281,6 +284,7 @@ def run_trajectory(x0, args, tag, log, steps, share=None):
                "hash": he, "nhash": hn, "chars": len(out),
                "tok_out": meta["tok_out"], "tok_in": meta["tok_in"], "finish": meta["finish"],
                "reasoning_chars": meta["reasoning_chars"], "tok_cached": meta.get("tok_cached"),
+               "tok_reasoning": meta.get("tok_reasoning"),
                "ncd_prev": round(ncd(state, out), 4), "ncd_x0": round(ncd(x0, out), 4),
                "surv_prev": survival(state, out), "surv_x0": survival(x0, out),
                "prefix_x0": common_prefix(x0, out), "line1_eq": (line1(out) == line1(x0) and bool(line1(x0))),
@@ -340,6 +344,7 @@ def main():
     ap.add_argument("--seed", type=int, default=42)
     ap.add_argument("--system", default=None)
     ap.add_argument("--think", action="store_true", help="llama/cerebras: leave thinking on")
+    ap.add_argument("--effort", default=None, help="openai reasoning models: reasoning_effort low/medium/high/xhigh (reasoning tokens logged as tok_reasoning)")
     ap.add_argument("--min-interval", type=float, default=0.0, help="seconds between requests (rate-limit pacing)")
     ap.add_argument("--perturb", action="store_true")
     ap.add_argument("--repeat", action="store_true")

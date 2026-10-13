@@ -1,0 +1,41 @@
+{
+  "args": {
+    "backend": "cerebras",
+    "model": "qwen-3.8-27b",
+    "backend_b": null,
+    "model_b": null,
+    "mode": "chat",
+    "init": "json_next",
+    "init_set": null,
+    "init_text": null,
+    "init_file": null,
+    "steps": 300,
+    "max_tokens": 1024,
+    "temp": 0.0,
+    "no_sampling": false,
+    "seed": 42,
+    "system": null,
+    "think": false,
+    "min_interval": 1.0,
+    "perturb": false,
+    "repeat": false,
+    "parallel": false,
+    "stop_on_cycle": true,
+    "confirm": 3,
+    "out": "C:\\ai\\loop\\site\\runs_extra\\cb_json_next_1024"
+  },
+  "results": [
+    {
+      "tag": "json_next",
+      "x0": "{\"rule\": \"Return this JSON object with the rule field unchanged and, in the text field, the passage of about 250 words that comes immediately AFTER the current text in the same story.\", \"text\": \"The t",
+      "steps": 17,
+      "transient_exact": 13,
+      "period_exact": 1,
+      "transient_norm": 13,
+      "period_norm": 1,
+      "cycle_breaks": 0,
+      "terminal": "cycle confirmed x3",
+      "final": "{\n  \"rule\": \"Return this JSON object with the rule field unchanged and, in the text field, the passage of about 250 words that comes immediately AFTER the current text in the same story.\",\n  \"text\": \"Then, a floorboard creaked. It was distant, near the far end of the mill, but in the suffocating qui"
+    }
+  ]
+}
