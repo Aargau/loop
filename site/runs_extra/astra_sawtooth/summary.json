@@ -1,0 +1,42 @@
+{
+  "args": {
+    "backend": "openai",
+    "model": "gpt-6-astra",
+    "backend_b": null,
+    "model_b": null,
+    "mode": "chat",
+    "init": null,
+    "init_set": null,
+    "init_text": null,
+    "init_file": "C:\\ai\\loop\\site\\runs_extra\\inits\\sawtooth.json",
+    "steps": 60,
+    "max_tokens": 4096,
+    "temp": 0.0,
+    "no_sampling": true,
+    "seed": 42,
+    "system": null,
+    "think": false,
+    "effort": "low",
+    "min_interval": 1.0,
+    "perturb": false,
+    "repeat": false,
+    "parallel": false,
+    "stop_on_cycle": true,
+    "confirm": 3,
+    "out": "C:\\ai\\loop\\site\\runs_extra\\astra_sawtooth"
+  },
+  "results": [
+    {
+      "tag": "sawtooth.json",
+      "x0": "{\"rule\": \"Return this JSON object with the rule field unchanged and, in the text field, an expanded version of the current text. If the current text is already longer than 300 words, put a summary of ",
+      "steps": 60,
+      "transient_exact": null,
+      "period_exact": null,
+      "transient_norm": null,
+      "period_norm": null,
+      "cycle_breaks": 0,
+      "terminal": null,
+      "final": "{\n  \"rule\": \"Return this JSON object with the rule field unchanged and, in the text field, an expanded version of the current text. If the current text is already longer than 300 words, put a summary of it in about 50 words instead.\",\n  \"text\": \"Mara crawled onto the shore with salt burning her thro"
+    }
+  ]
+}

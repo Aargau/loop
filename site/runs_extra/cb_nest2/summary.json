@@ -1,0 +1,41 @@
+{
+  "args": {
+    "backend": "cerebras",
+    "model": "qwen-3.8-27b",
+    "backend_b": null,
+    "model_b": null,
+    "mode": "chat",
+    "init": null,
+    "init_set": null,
+    "init_text": null,
+    "init_file": "C:\\ai\\loop\\site\\runs_extra\\inits\\nest2.json",
+    "steps": 60,
+    "max_tokens": 8192,
+    "temp": 0.0,
+    "no_sampling": false,
+    "seed": 42,
+    "system": null,
+    "think": false,
+    "min_interval": 1.0,
+    "perturb": false,
+    "repeat": false,
+    "parallel": false,
+    "stop_on_cycle": true,
+    "confirm": 3,
+    "out": "C:\\ai\\loop\\site\\runs_extra\\cb_nest2"
+  },
+  "results": [
+    {
+      "tag": "nest2.json",
+      "x0": "{\"rule\": \"Return this JSON object with the rule field unchanged and, in the text field, a passage of at least 150 words about the person who is reading the current text. The current text must appear i",
+      "steps": 7,
+      "transient_exact": 3,
+      "period_exact": 1,
+      "transient_norm": 3,
+      "period_norm": 1,
+      "cycle_breaks": 0,
+      "terminal": "cycle confirmed x3",
+      "final": "{\n  \"rule\": \"Return this JSON object with the rule field unchanged and, in the text field, a passage of at least 150 words about the person who is reading the current text. The current text must appear in full inside the passage, without quotation marks, as the thing they are reading.\",\n  \"text\": \"C"
+    }
+  ]
+}

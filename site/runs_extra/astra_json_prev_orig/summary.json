@@ -1,0 +1,42 @@
+{
+  "args": {
+    "backend": "openai",
+    "model": "gpt-6-astra",
+    "backend_b": null,
+    "model_b": null,
+    "mode": "chat",
+    "init": null,
+    "init_set": null,
+    "init_text": null,
+    "init_file": "C:\\ai\\loop\\site\\runs_extra\\inits\\json_prev_orig.json",
+    "steps": 150,
+    "max_tokens": 1024,
+    "temp": 0.0,
+    "no_sampling": true,
+    "seed": 42,
+    "system": null,
+    "think": false,
+    "effort": "low",
+    "min_interval": 1.0,
+    "perturb": false,
+    "repeat": false,
+    "parallel": false,
+    "stop_on_cycle": true,
+    "confirm": 3,
+    "out": "C:\\ai\\loop\\site\\runs_extra\\astra_json_prev_orig"
+  },
+  "results": [
+    {
+      "tag": "json_prev_orig.json",
+      "x0": "{\"rule\": \"Return this JSON object with the rule field unchanged and, in the text field, an original passage of about 250 words that comes immediately BEFORE the current text in the same story.\", \"text",
+      "steps": 150,
+      "transient_exact": null,
+      "period_exact": null,
+      "transient_norm": null,
+      "period_norm": null,
+      "cycle_breaks": 0,
+      "terminal": null,
+      "final": "{\n  \"rule\": \"Return this JSON object with the rule field unchanged and, in the text field, an original passage of about 250 words that comes immediately BEFORE the current text in the same story.\",\n  \"text\": \"On Sunday Elsie took the sheets off and carried them down in a basket. There was no need to"
+    }
+  ]
+}
