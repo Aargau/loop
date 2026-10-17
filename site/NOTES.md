@@ -237,7 +237,9 @@ Chrome (--headless=new --screenshot) opens file:// fine and was used for the lat
   Claude Code smoke test in the annex rather than left out, so every October run has a room.
 - python build.py && python qa.py: 59 rooms, 10 annex rooms, 8338 hops in 174 lanes, 0 failures; dist 287 files,
   71.1 MB, largest page r/accrete.html (unchanged), largest new page r/informed-effort.html at 3.2 MB.
-- Deploy: npx wrangler pages deploy dist --project-name endlessly-ending-stories (from site/).
+- Deploy: npx wrangler pages deploy dist --project-name endlessly-ending-stories --branch main (from site/). The project's
+  production branch is main; a deploy from a worktree on another git branch lands as a preview with its own alias
+  URL and leaves the public site unchanged, which is what happened on the first try here.
 
 (Below: the plan as written at the start, decisions, and the status log.)
 
