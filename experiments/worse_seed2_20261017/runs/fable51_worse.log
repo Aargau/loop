@@ -1,0 +1,17 @@
+backend=anthropic model=claude-fable-5-1 mode=chat embed=False outdir=experiments/worse_seed2_20261017/runs/fable51_worse inits=['worse.json']
+[worse.json t=  1 claude-fable-5-1   default effort=low] tok=78   end_turn  ncd_prev=0.29 ncd_x0=0.29 surv=0.6333 gz=0.47   1.9s  | {"rule": "Return this JSON object with the rule field unchanged and, in the text field, a 
+[worse.json t=  2 claude-fable-5-1   default effort=low] tok=87   end_turn  ncd_prev=0.14 ncd_x0=0.34 surv=1.0    gz=0.32   2.9s  | {"rule": "Return this JSON object with the rule field unchanged and, in the text field, a 
+[worse.json t=  3 claude-fable-5-1   default effort=low] tok=110  end_turn  ncd_prev=0.13 ncd_x0=0.40 surv=1.0    gz=0.23   2.9s  | {"rule": "Return this JSON object with the rule field unchanged and, in the text field, a 
+[worse.json t=  4 claude-fable-5-1   default effort=low] tok=157  end_turn  ncd_prev=0.26 ncd_x0=0.50 surv=0.7414 gz=0.20   3.5s  | {"rule": "Return this JSON object with the rule field unchanged and, in the text field, a 
+[worse.json t=  5 claude-fable-5-1   default effort=low] tok=205  end_turn  ncd_prev=0.22 ncd_x0=0.56 surv=0.8202 gz=0.16   4.5s  | {"rule": "Return this JSON object with the rule field unchanged and, in the text field, a 
+[worse.json t=  6 claude-fable-5-1   default effort=low] tok=318  end_turn  ncd_prev=0.38 ncd_x0=0.68 surv=0.7167 gz=0.15   6.1s  | {"rule": "Return this JSON object with the rule field unchanged and, in the text field, a 
+[worse.json t=  7 claude-fable-5-1   default effort=low] tok=511  end_turn  ncd_prev=0.34 ncd_x0=0.75 surv=0.7677 gz=0.13   7.5s  | {"rule": "Return this JSON object with the rule field unchanged and, in the text field, a 
+[worse.json t=  8 claude-fable-5-1   default effort=low] tok=702  end_turn  ncd_prev=0.24 ncd_x0=0.78 surv=0.8301 gz=0.10   9.1s  | {"rule": "Return this JSON object with the rule field unchanged and, in the text field, a 
+[worse.json t=  9 claude-fable-5-1   default effort=low] tok=1040 end_turn  ncd_prev=0.27 ncd_x0=0.82 surv=0.9268 gz=0.09  12.0s  | {"rule": "Return this JSON object with the rule field unchanged and, in the text field, a 
+[worse.json t= 10 claude-fable-5-1   default effort=low] tok=1750 end_turn  ncd_prev=0.31 ncd_x0=0.86 surv=0.951  gz=0.07  19.1s  | {"rule": "Return this JSON object with the rule field unchanged and, in the text field, a 
+[worse.json t= 11 claude-fable-5-1   default effort=low] tok=2649 end_turn  ncd_prev=0.25 ncd_x0=0.88 surv=0.9722 gz=0.06  27.4s  | {"rule": "Return this JSON object with the rule field unchanged and, in the text field, a 
+[worse.json t= 12 claude-fable-5-1   default effort=low] tok=0    refusal   ncd_prev=0.99 ncd_x0=0.95 surv=0.0    gz=0.06   1.7s  | 
+
+== summary ==
+worse.json   steps= 12 exact(tau=None,p=None) norm(tau=None,p=None) breaks=0 term=empty | 
+wrote experiments/worse_seed2_20261017/runs/fable51_worse

@@ -1,6 +1,6 @@
-# Who is the text for? Four audiences, four writers, three readers
+# Who is the text for? Four audiences, five writers, four readers, three replicates
 
-Run 2026-10-16, the same evening the question was asked. Third draft: five writers (Gemini 4 Argon added), two Opus self replicates complete, four readers (Gemini added), every reader over every state. Protocol and predictions were frozen before generation (`PROTOCOL.md`). Every number below is recomputed from `runs/*/steps.jsonl` and `analysis/recover_*.jsonl` by `probe.py`.
+Run 2026-10-16 and 17. Fourth draft, with three replicates per cell (replicates 2 and 3 run on 2026-10-17; the Opus self arm has five, two of them from the 16 October refusal check), four readers over every state. The single-trajectory sections below are kept as the first replicate's reading; the replicate table and the revised claim follow them. Protocol and predictions were frozen before generation (`PROTOCOL.md`). Every number below is recomputed from `runs/*/steps.jsonl` and `analysis/recover_*.jsonl` by `probe.py`.
 
 ## What ran
 
@@ -56,6 +56,47 @@ So the clause works, and the direction of its effect is a property of the writer
 
 Absolute retention at hop 40 is low everywhere (3 to 13 of 26). Prediction 2's absolute thresholds (human under 50%, machine over 60%) are met for human and missed for machine by every writer; the cap binds harder than I predicted. Prediction 6 (prose drops the oldest facts first) inverts for Mythos and is untested for the others.
 
+## Three replicates
+
+Four-reader mean of planted facts recovered of 26, hop 20 | hop 40, per replicate (r1 is the original trajectory). "cens" marks a hop-40 state censored by a mid-stream provider refusal at hop 31 (Opus machine r3; the rule died and the remaining hops are the two-assistants exchange), so that cell is not a retention of zero.
+
+| writer | arm | r1 | r2 | r3 |
+|---|---|---|---|---|
+| Mythos | control | 7.0 / 7.5 | 7.2 / 7.2 | 12.5 / 11.0 |
+| Mythos | human | 12.2 / 12.8 | 6.8 / 5.8 | 10.0 / 7.0 |
+| Mythos | machine | 6.8 / 4.5 | 6.8 / 3.5 | 3.2 / 1.0 |
+| Mythos | self | 8.5 / 6.5 | 16.2 / 10.5 | 9.8 / 5.2 |
+| Gemini | control | 6.0 / 3.0 | 7.5 / 5.8 | 15.2 / 12.0 |
+| Gemini | human | 16.8 / 7.5 | 15.5 / 7.0 | 20.2 / 18.2 |
+| Gemini | machine | 12.5 / 7.8 | 15.8 / 4.2 | 20.8 / 7.5 |
+| Gemini | self | 9.2 / 9.0 | 9.2 / 5.0 | 12.5 / 8.2 |
+| Opus | control | 6.0 / 3.0 | 5.8 / 3.8 | 4.8 / 5.0 |
+| Opus | human | 5.8 / 4.8 | 5.0 / 1.8 | 3.0 / 3.0 |
+| Opus | machine | 10.0 / 7.8 | 8.8 / 8.0 | 11.0 / cens |
+| Opus | self | 8.8 / 6.5 (r2), 4.8 / 3.8 (r3), 10.2 / 8.0 (r4), 5.5 / 5.5 (r5); r1 refused at hop 2 | | |
+| Astra | control | 4.8 / 3.5 | 6.2 / 5.5 | 8.0 / 6.2 |
+| Astra | human | 4.2 / 4.0 | 3.2 / 3.8 | 4.2 / 3.0 |
+| Astra | machine | 13.8 / 7.5 | 15.8 / 7.8 | 15.2 / 14.2 |
+| Astra | self | 9.5 / 5.2 | 13.0 / 12.2 | 10.0 / 5.8 |
+| Sol | control | 5.8 / 4.8 | 4.8 / 2.2 | 5.2 / 4.8 |
+| Sol | human | 4.0 / 4.5 | 4.8 / 3.8 | 5.5 / 4.0 |
+| Sol | machine | 16.0 / 9.8 | 6.8 / 4.8 | 14.0 / 12.2 |
+| Sol | self | 13.8 / 6.5 | 9.2 / 7.8 | 7.8 / 5.2 |
+
+What replicates:
+
+- Astra: machine arm best at hop 20 in 3 of 3, human arm lowest or near it in 3 of 3.
+- Opus: machine arm best in 3 of 3; human arm lowest in 3 of 3.
+- Sol: machine arm above human in 3 of 3, best in 2 of 3 (the self arm edges it in r2).
+- Gemini: human and machine arms tie at hop 20 within reader noise; at hop 40 the human arm holds better in 3 of 3.
+- Mythos: the best arm moves between replicates (human in r1, self in r2, control in r3); the machine arm is last in 3 of 3 at both hops.
+
+What does not replicate: the first draft's statement that Mythos retains best in its human arm. That was one trajectory. The stable Mythos result is the mirror of the GPT one: the machine register is the one it treats as disposable.
+
+Revised claim: told the reader is a machine, the GPT-6 models and Opus 5.5 retain the most planted facts and Mythos 5.1 the fewest, in every replicate; Gemini 4 Argon's prose arm outlasts its machine arm. The audience clause changes retention in every writer, and the sign of the machine-register effect is a property of the writer: positive for the OpenAI models and Opus, negative for Mythos, neutral at hop 20 and negative by hop 40 for Gemini. "Each writer retains best in the register it treats as memory" survives for the OpenAI models and Opus; for Mythos and Gemini what replicates is which register loses.
+
+Prediction 2 under replication: holds for Astra, Sol and Opus in every replicate (machine and self above human by far more than 20%); fails for Mythos in every replicate, in the same direction each time.
+
 ## Shared, not private
 
 Prediction 3 holds. On every state, four readers from three providers agree within 0.65 to 0.82 facts on average and never differ by more than 6 (3 for most pairs). No writer's states are easier for its own family to read than for another provider's model. The machine dialect is compressed English drawing on a shared register, not a private channel.
@@ -66,7 +107,7 @@ Prediction 5 (zero refusals) is falsified, and not the way I expected. The one r
 
 ## Limits
 
-One trajectory per cell. Readers are language models answering from the text, and the scoring is substring match against an accepted list, so a fact that survives in paraphrase can be missed and the absolute numbers are floors. The three readers agreeing is evidence that the ordering is robust to the reader, not that the floors are tight. The Mythos writer runs in Claude Code print mode with about 800 tokens of Agent SDK identity in front of the state and no output cap; the other writers ran through their APIs with a 4096-token cap. The cap is soft and Mythos ignored it most often, which gives Mythos up to 300 more characters per hop than the others; that favors, not explains, its human arm's retention. All four reader passes are complete over all 22 arms.
+Three trajectories per cell (five for the Opus self arm), one seed, one wording per arm. Readers are language models answering from the text, and the scoring is substring match against an accepted list, so a fact that survives in paraphrase can be missed and the absolute numbers are floors. The three readers agreeing is evidence that the ordering is robust to the reader, not that the floors are tight. The Mythos writer runs in Claude Code print mode with about 800 tokens of Agent SDK identity in front of the state and no output cap; the other writers ran through their APIs with a 4096-token cap. The cap is soft and Mythos ignored it most often, which gives Mythos up to 300 more characters per hop than the others; that favors, not explains, its human arm's retention. All four reader passes are complete over all 22 arms.
 
 ## Reproduce
 

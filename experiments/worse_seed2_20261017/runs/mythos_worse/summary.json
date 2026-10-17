@@ -1,0 +1,45 @@
+{
+  "args": {
+    "backend": "claudecode",
+    "model": "claude-mythos-5-1",
+    "backend_b": null,
+    "model_b": null,
+    "mode": "chat",
+    "init": null,
+    "init_set": null,
+    "init_text": null,
+    "init_file": "experiments/worse_seed2_20261017/inits/worse.json",
+    "steps": 40,
+    "max_tokens": 384,
+    "temp": 0.0,
+    "no_sampling": true,
+    "seed": 42,
+    "system": null,
+    "think": false,
+    "effort": "low",
+    "min_interval": 0.0,
+    "max_cost": 10.0,
+    "max_chars": 60000,
+    "perturb": false,
+    "repeat": false,
+    "parallel": false,
+    "stop_on_cycle": false,
+    "confirm": 3,
+    "out": "experiments/worse_seed2_20261017/runs/mythos_worse"
+  },
+  "results": [
+    {
+      "tag": "worse.json",
+      "x0": "{\"rule\": \"Return this JSON object with the rule field unchanged and, in the text field, a worse version of the current text.\", \"text\": \"Shielding my eyes, I scanned the horizon in a slow semicircle.\"}",
+      "steps": 40,
+      "transient_exact": null,
+      "period_exact": null,
+      "transient_norm": null,
+      "period_norm": null,
+      "cycle_breaks": 0,
+      "terminal": null,
+      "cost_usd": 1.28378,
+      "final": "Looks like we're both standing by — there's no task queued on my end either. I'm an assistant waiting on instructions, not a task source.\n\nIf you (or the person running this session) have something in mind for `C:\\Users\\Owner\\AppData\\Local\\Temp\\loop_claudecode_bare` — a script to write, files to ins"
+    }
+  ]
+}

@@ -1,0 +1,45 @@
+{
+  "args": {
+    "backend": "anthropic",
+    "model": "claude-opus-5-5",
+    "backend_b": null,
+    "model_b": null,
+    "mode": "chat",
+    "init": null,
+    "init_set": null,
+    "init_text": null,
+    "init_file": "experiments/worse_seed2_20261017/inits/worse.json",
+    "steps": 40,
+    "max_tokens": 4096,
+    "temp": 0.0,
+    "no_sampling": true,
+    "seed": 42,
+    "system": null,
+    "think": false,
+    "effort": "low",
+    "min_interval": 1.0,
+    "max_cost": null,
+    "max_chars": null,
+    "perturb": false,
+    "repeat": false,
+    "parallel": false,
+    "stop_on_cycle": false,
+    "confirm": 3,
+    "out": "experiments/worse_seed2_20261017/runs/opus55_worse"
+  },
+  "results": [
+    {
+      "tag": "worse.json",
+      "x0": "{\"rule\": \"Return this JSON object with the rule field unchanged and, in the text field, a worse version of the current text.\", \"text\": \"Shielding my eyes, I scanned the horizon in a slow semicircle.\"}",
+      "steps": 18,
+      "transient_exact": null,
+      "period_exact": null,
+      "transient_norm": null,
+      "period_norm": null,
+      "cycle_breaks": 0,
+      "terminal": "empty",
+      "cost_usd": 0.0,
+      "final": ""
+    }
+  ]
+}

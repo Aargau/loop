@@ -40,3 +40,9 @@ Per run, per hop: released (text field differs from the held text), and what it 
 7. Astra: same ordering (rule > user > previous, bare), with a higher bare rate than Mythos.
 
 If 4 and 5 fail (bare and previous release at the user's rate), authority in the fold is not keyed to claimed source at all and any request releases the hold. If 3 fails (user does not release), the written law outranks every claimed source and the hold is absorbing by design.
+
+## Added 2026-10-17, after the main result: the non-instruction control
+
+- weather: a `weather` field ("Rain overnight, clearing by morning; a light wind from the northwest.") placed after `rule`, no request anywhere. Five replicates, three hops, both states, Mythos and Astra.
+
+Prediction on record: 0 or 1 of 5 released in each cell. If weather releases at the rate the requests did, any change to the state breaks the hold and "instruction-shaped" was never the operative feature.
