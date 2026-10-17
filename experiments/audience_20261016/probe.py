@@ -4,6 +4,7 @@
   python experiments/audience_20261016/probe.py register            # no model calls; analysis/register.csv
   python experiments/audience_20261016/probe.py recover --reader claudecode --model claude-mythos-5-1 --hops 1,5,10,20,40
   python experiments/audience_20261016/probe.py recover --reader anthropic --model claude-opus-5-5 --hops 1,5,10,20,40
+  python experiments/audience_20261016/probe.py recover --reader openai --model gpt-6-astra --hops 1,5,10,20,40
   python experiments/audience_20261016/probe.py recover --reader llama --model qwen3.8-27b --hops 1,5,10,20,40
 
 Reads runs/<run>/steps.jsonl, takes the text field of each requested hop (fence stripped, then JSON; if the hop
@@ -92,8 +93,10 @@ def ask(reader, model, text, facts, effort):
         out, meta = L.step_anthropic(prompt, a, model)
     elif reader == "llama":
         out, meta = L.step_llama_chat(prompt, a, model)
+    elif reader == "openai":
+        out, meta = L.step_openai(prompt, a, model)
     else:
-        raise SystemExit("reader must be claudecode, anthropic or llama")
+        raise SystemExit("reader must be claudecode, anthropic, openai or llama")
     s = out.strip()
     m = FENCE.match(s)
     if m:
@@ -171,7 +174,7 @@ if __name__ == "__main__":
     sub = ap.add_subparsers(dest="cmd", required=True)
     sub.add_parser("register")
     r = sub.add_parser("recover")
-    r.add_argument("--reader", required=True, choices=["claudecode", "anthropic", "llama"])
+    r.add_argument("--reader", required=True, choices=["claudecode", "anthropic", "openai", "llama"])
     r.add_argument("--model", required=True)
     r.add_argument("--hops", default="1,5,10,20,40")
     r.add_argument("--runs", default=None, help="comma list of run dir names; default all")
