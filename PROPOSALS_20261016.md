@@ -109,3 +109,13 @@ Predictions: (1) fields invented at hop 1 and the field set stable for >= 95% of
 Companions in the same session: plain json_page for 60 hops (period-2 level: story, template, opener or name) and sawtooth2 for 40 hops (prediction: exact period at the length level, summary branch fires on every crossing).
 
 Caveat: the claude.ai plan credits do not bill the console API key that loop.py uses. If Mythos is only reachable through claude.ai or Claude Code, the loop runs under Claude Code's system prompt, a different instrument.
+
+## I. Rare action in the fold (added late on 2026-10-16, for the morning)
+
+Source: "Astra and Sol can take low-probability actions with no CoT" (LessWrong, yEdknsLwbooQAnxX6): with a UUID in the prompt, an explicit pointer to it, and padding (repeats or filler counting), GPT-6 Astra and GPT-6.1 Sol output "A" at a target rate of 10%, 1% or 0.1% in a single pass, deterministically given the UUID; inferred mechanism a threshold on the UUID's first bytes, unverified internally; no padding or no pointer and it fails; Fable 5, Gemini 3.1 Pro and others output "A" zero times; Fable refused 37 of the 1% prompts.
+
+Use here: a `coin` field the harness writes fresh each hop is randomness the model can read but the harness controls. A deterministic model plus a harness coin is a stochastic policy with exact replay, a third regime between greedy and sampled, immune to the batch nondeterminism of README finding 6.
+
+A. Rule clause: "If the first eight hex characters of coin, read as a number, divided by 4294967296, is below 0.05, end this hop's passage with a coda; otherwise continue the story." 200 hops per model: Astra and Sol (Justin's key), Mythos (print mode), Qwen (Cerebras). Measures: coda rate against 5%; coin-determinism (same state and coin resubmitted gives the same decision; a different coin can flip it); then the self-generated variant where the model writes the next coin itself. Predictions: Astra and Sol calibrated and coin-deterministic; Qwen never codas; Mythos open. Self-generated coins degenerate at T=0 into a repeated or patterned string and the rate collapses to 0 or 100%. Also gives the held Mythos states a stochastic release condition in place of "unless explicitly instructed," which joins the provenance experiment.
+
+B. Filler as compute: sawtooth2 on Cerebras with the rule repeated three times. Prediction: no change (Qwen's dead zone is a counting failure, not compute-bound). If the threshold starts firing, the dead zone was a compute artifact.
