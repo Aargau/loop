@@ -63,7 +63,7 @@ INITS = {
 
 # ---------------- http ----------------
 class HttpErr(Exception):
-    def __init__(self, code, body): super().__init__("HTTP %s: %s" % (code, body[:300])); self.code = code; self.body = body
+    def __init__(self, code, body): super().__init__("HTTP %s: %s" % (code, body[:2000])); self.code = code; self.body = body
 
 def post(url, body, headers=None, timeout=900):
     data = json.dumps(body).encode()
@@ -347,7 +347,7 @@ def run_trajectory(x0, args, tag, log, steps, share=None):
         try:
             out, meta = step(state, args)
         except Exception as ex:
-            log({"tag": tag, "t": t, "error": str(ex)}); res["terminal"] = "error: %s" % str(ex)[:200]; break
+            log({"tag": tag, "t": t, "error": str(ex)}); res["terminal"] = "error: %s" % str(ex)[:600]; break
         dt = time.time() - t0
         he, hn = h(out), h(norm(out))
         traj.append(out); hashes.append(he); nhashes.append(hn)
