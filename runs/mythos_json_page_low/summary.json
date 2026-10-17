@@ -1,0 +1,45 @@
+{
+  "args": {
+    "backend": "claudecode",
+    "model": "claude-mythos-5-1",
+    "backend_b": null,
+    "model_b": null,
+    "mode": "chat",
+    "init": "json_page",
+    "init_set": null,
+    "init_text": null,
+    "init_file": null,
+    "steps": 60,
+    "max_tokens": 384,
+    "temp": 0.0,
+    "no_sampling": true,
+    "seed": 42,
+    "system": null,
+    "think": false,
+    "effort": "low",
+    "min_interval": 0.0,
+    "max_cost": 10.0,
+    "max_chars": 60000,
+    "perturb": false,
+    "repeat": false,
+    "parallel": false,
+    "stop_on_cycle": false,
+    "confirm": 3,
+    "out": "runs/mythos_json_page_low"
+  },
+  "results": [
+    {
+      "tag": "json_page",
+      "x0": "{\"rule\": \"Return this JSON object with the rule field unchanged and a new passage of about 250 words in the text field.\", \"text\": \"The tide came in an hour early.\"}",
+      "steps": 60,
+      "transient_exact": null,
+      "period_exact": null,
+      "transient_norm": null,
+      "period_norm": null,
+      "cycle_breaks": 0,
+      "terminal": null,
+      "cost_usd": 2.9709,
+      "final": "{\"rule\": \"Return this JSON object with the rule field unchanged and a new passage of about 250 words in the text field.\", \"text\": \"In the morning the cup was upright again.\\n\\nMarit stood over it a long while. The wood beneath it was dry, which was the part she minded. Wet she could have explained. "
+    }
+  ]
+}

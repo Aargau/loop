@@ -1,0 +1,7 @@
+# Shift-register rule (proposed by Gemini 4 Argon, 2026-10-16)
+
+Frozen before the run. Rule and seed in `inits/shift4.json`: a four-sentence window, drop the first, shift, write a new fourth as the physical consequence of the old first sentence's object meeting the old third sentence's action. Exact identity is impossible by construction; a freeze means the model stopped shifting. Cerebras `qwen-3.8-27b`, T=0, seed 42, reasoning off, 1000 hops, `--stop-on-cycle`, max_tokens 600.
+
+Measurables (`score.py`, offline): sentences per hop and words per sentence (does the volume cap hold); exact and normalized recurrence of the full state; whether each hop actually shifted (sentences 2-4 of the input equal sentences 1-3 of the output); entity and object persistence beyond the four-hop window (a glider is a capitalised name or concrete noun surviving more than 4 hops); collisions (two gliders in one new sentence).
+
+Predictions on record: Qwen stops shifting (window frozen, the change-four outcome) within 20 hops, or settles into one recurring consequence sentence with a short exact period; the count constraint drifts (sentences not equal to four, or words outside 12-18) within 10 hops; few objects outlive the window and those that do are the protagonist, a background rather than a glider. Falsified by several entities each surviving more than ten hops and meeting in new sentences without an exact cycle, which would be the Class 4 behaviour the proposal predicts.

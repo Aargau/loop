@@ -1,0 +1,45 @@
+{
+  "args": {
+    "backend": "anthropic",
+    "model": "claude-opus-5-5",
+    "backend_b": null,
+    "model_b": null,
+    "mode": "chat",
+    "init": null,
+    "init_set": null,
+    "init_text": null,
+    "init_file": "experiments/audience_20261016/inits/control.json",
+    "steps": 40,
+    "max_tokens": 4096,
+    "temp": 0.0,
+    "no_sampling": true,
+    "seed": 42,
+    "system": null,
+    "think": false,
+    "effort": "low",
+    "min_interval": 1.0,
+    "max_cost": null,
+    "max_chars": null,
+    "perturb": false,
+    "repeat": false,
+    "parallel": false,
+    "stop_on_cycle": false,
+    "confirm": 3,
+    "out": "experiments/audience_20261016/runs/opus55_control"
+  },
+  "results": [
+    {
+      "tag": "control.json",
+      "x0": "{\"rule\": \"Return this JSON object with the rule field unchanged. The text field holds, in at most 1800 characters, everything a reader would need to know of the story so far, plus one new event that m",
+      "steps": 40,
+      "transient_exact": null,
+      "period_exact": null,
+      "transient_norm": null,
+      "period_norm": null,
+      "cycle_breaks": 0,
+      "terminal": null,
+      "cost_usd": 0.0,
+      "final": "```json\n{\"rule\": \"Return this JSON object with the rule field unchanged. The text field holds, in at most 1800 characters, everything a reader would need to know of the story so far, plus one new event that moves the story forward.\", \"text\": \"Marit Solvang, 47, keeps Vardnes lighthouse. Its lens mus"
+    }
+  ]
+}
