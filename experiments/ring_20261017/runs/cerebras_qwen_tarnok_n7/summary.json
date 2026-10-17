@@ -1,0 +1,43 @@
+{
+  "args": {
+    "backend": "cerebras",
+    "model": "qwen-3.8-27b",
+    "models": null,
+    "backends": null,
+    "cells": 7,
+    "steps": 40,
+    "seed_file": "experiments/ring_20261017/seeds/plain.txt",
+    "disturb_file": "experiments/ring_20261017/seeds/disturb_tarnok.txt",
+    "rule_file": "experiments/ring_20261017/rule.txt",
+    "max_tokens": 600,
+    "temp": 0.0,
+    "no_sampling": false,
+    "seed": 42,
+    "effort": null,
+    "think": false,
+    "system": null,
+    "workers": 4,
+    "min_interval": 0.0,
+    "out": "experiments/ring_20261017/runs/cerebras_qwen_tarnok_n7"
+  },
+  "cells": 7,
+  "steps": 40,
+  "models": [
+    "qwen-3.8-27b",
+    "qwen-3.8-27b",
+    "qwen-3.8-27b",
+    "qwen-3.8-27b",
+    "qwen-3.8-27b",
+    "qwen-3.8-27b",
+    "qwen-3.8-27b"
+  ],
+  "backends": [
+    "cerebras",
+    "cerebras",
+    "cerebras",
+    "cerebras",
+    "cerebras",
+    "cerebras",
+    "cerebras"
+  ]
+}
