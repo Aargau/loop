@@ -1,0 +1,1606 @@
+{
+ "summary": {
+  "run": "cerebras_qwen_shift4",
+  "hops": 45,
+  "shifted_frac": 1.0,
+  "in_cap_frac": 1.0,
+  "n_sent_hist": {
+   "4": 45
+  },
+  "first_exact_repeat": 33,
+  "first_norm_repeat": 33,
+  "unparsed": 0,
+  "length_finishes": 0,
+  "gliders": {
+   "ferry": {
+    "longest_run": 45,
+    "from": 1,
+    "to": 45,
+    "hops_present": 45
+   },
+   "mussel": {
+    "longest_run": 45,
+    "from": 1,
+    "to": 45,
+    "hops_present": 45
+   },
+   "table": {
+    "longest_run": 45,
+    "from": 1,
+    "to": 45,
+    "hops_present": 45
+   },
+   "shell": {
+    "longest_run": 45,
+    "from": 1,
+    "to": 45,
+    "hops_present": 45
+   },
+   "paper": {
+    "longest_run": 45,
+    "from": 1,
+    "to": 45,
+    "hops_present": 45
+   },
+   "horn": {
+    "longest_run": 45,
+    "from": 1,
+    "to": 45,
+    "hops_present": 45
+   },
+   "crab": {
+    "longest_run": 45,
+    "from": 1,
+    "to": 45,
+    "hops_present": 45
+   },
+   "bucket": {
+    "longest_run": 45,
+    "from": 1,
+    "to": 45,
+    "hops_present": 45
+   },
+   "The": {
+    "longest_run": 45,
+    "from": 1,
+    "to": 45,
+    "hops_present": 45
+   },
+   "slammed": {
+    "longest_run": 43,
+    "from": 3,
+    "to": 45,
+    "hops_present": 43
+   },
+   "tearing": {
+    "longest_run": 42,
+    "from": 4,
+    "to": 45,
+    "hops_present": 42
+   },
+   "slamming": {
+    "longest_run": 41,
+    "from": 5,
+    "to": 45,
+    "hops_present": 41
+   },
+   "action": {
+    "longest_run": 40,
+    "from": 6,
+    "to": 45,
+    "hops_present": 40
+   },
+   "ripping": {
+    "longest_run": 36,
+    "from": 10,
+    "to": 45,
+    "hops_present": 40
+   },
+   "tore": {
+    "longest_run": 36,
+    "from": 10,
+    "to": 45,
+    "hops_present": 36
+   },
+   "metal": {
+    "longest_run": 36,
+    "from": 10,
+    "to": 45,
+    "hops_present": 36
+   },
+   "plastic": {
+    "longest_run": 29,
+    "from": 17,
+    "to": 45,
+    "hops_present": 29
+   },
+   "water": {
+    "longest_run": 29,
+    "from": 17,
+    "to": 45,
+    "hops_present": 29
+   },
+   "strips": {
+    "longest_run": 28,
+    "from": 18,
+    "to": 45,
+    "hops_present": 32
+   },
+   "tangled": {
+    "longest_run": 28,
+    "from": 18,
+    "to": 45,
+    "hops_present": 28
+   },
+   "thin": {
+    "longest_run": 28,
+    "from": 18,
+    "to": 45,
+    "hops_present": 28
+   },
+   "fibers": {
+    "longest_run": 28,
+    "from": 18,
+    "to": 45,
+    "hops_present": 28
+   },
+   "casing": {
+    "longest_run": 26,
+    "from": 20,
+    "to": 45,
+    "hops_present": 26
+   },
+   "cracking": {
+    "longest_run": 23,
+    "from": 23,
+    "to": 45,
+    "hops_present": 39
+   },
+   "briny": {
+    "longest_run": 23,
+    "from": 23,
+    "to": 45,
+    "hops_present": 23
+   }
+  },
+  "n_gliders": 50,
+  "collisions": [
+   {
+    "t": 2,
+    "gliders": [
+     "The",
+     "ferry",
+     "horn",
+     "paper",
+     "table"
+    ]
+   },
+   {
+    "t": 3,
+    "gliders": [
+     "The",
+     "bucket",
+     "crab",
+     "shell",
+     "stone"
+    ]
+   },
+   {
+    "t": 4,
+    "gliders": [
+     "The",
+     "ferry",
+     "horn",
+     "paper"
+    ]
+   },
+   {
+    "t": 5,
+    "gliders": [
+     "The",
+     "bucket",
+     "crab",
+     "mussel"
+    ]
+   },
+   {
+    "t": 6,
+    "gliders": [
+     "The",
+     "causing",
+     "paper",
+     "table",
+     "tearing"
+    ]
+   },
+   {
+    "t": 7,
+    "gliders": [
+     "The",
+     "across",
+     "bucket",
+     "crab",
+     "fragments",
+     "scattering",
+     "shell",
+     "slammed",
+     "stone"
+    ]
+   },
+   {
+    "t": 8,
+    "gliders": [
+     "The",
+     "action",
+     "causing",
+     "ferry",
+     "horn",
+     "struck",
+     "tearing"
+    ]
+   },
+   {
+    "t": 9,
+    "gliders": [
+     "The",
+     "breaking",
+     "brine",
+     "bucket",
+     "crab",
+     "legs",
+     "mussel",
+     "slamming",
+     "smashed",
+     "splashing"
+    ]
+   },
+   {
+    "t": 10,
+    "gliders": [
+     "The",
+     "ferry",
+     "horn",
+     "paper",
+     "table"
+    ]
+   },
+   {
+    "t": 11,
+    "gliders": [
+     "The",
+     "across",
+     "bucket",
+     "crab",
+     "fragments",
+     "scattering",
+     "shell",
+     "slammed",
+     "smashing",
+     "stone"
+    ]
+   },
+   {
+    "t": 12,
+    "gliders": [
+     "The",
+     "action",
+     "causing",
+     "ferry",
+     "horn",
+     "jagged",
+     "metal",
+     "sharp",
+     "tearing"
+    ]
+   },
+   {
+    "t": 13,
+    "gliders": [
+     "The",
+     "across",
+     "brine",
+     "bucket",
+     "crab",
+     "legs",
+     "mussel",
+     "slamming"
+    ]
+   },
+   {
+    "t": 14,
+    "gliders": [
+     "The",
+     "ferry",
+     "horn",
+     "jagged",
+     "metal",
+     "paper",
+     "ripping",
+     "shards",
+     "sharp",
+     "table",
+     "tore"
+    ]
+   },
+   {
+    "t": 15,
+    "gliders": [
+     "The",
+     "action",
+     "crab",
+     "fragments",
+     "scattering",
+     "shell",
+     "slammed",
+     "slamming"
+    ]
+   },
+   {
+    "t": 16,
+    "gliders": [
+     "The",
+     "action",
+     "causing",
+     "collided",
+     "ferry",
+     "horn",
+     "jagged",
+     "metal",
+     "pieces",
+     "sharp",
+     "shatter",
+     "tearing"
+    ]
+   },
+   {
+    "t": 17,
+    "gliders": [
+     "The",
+     "action",
+     "bucket",
+     "mussel",
+     "slamming"
+    ]
+   },
+   {
+    "t": 18,
+    "gliders": [
+     "The",
+     "action",
+     "paper",
+     "ripping",
+     "table",
+     "tearing",
+     "tore"
+    ]
+   },
+   {
+    "t": 19,
+    "gliders": [
+     "The",
+     "action",
+     "crab",
+     "fragments",
+     "scattering",
+     "shell",
+     "slammed",
+     "slamming"
+    ]
+   },
+   {
+    "t": 20,
+    "gliders": [
+     "The",
+     "action",
+     "collided",
+     "ferry",
+     "horn",
+     "metal",
+     "tearing"
+    ]
+   },
+   {
+    "t": 21,
+    "gliders": [
+     "The",
+     "action",
+     "bucket",
+     "mussel",
+     "plastic",
+     "salty",
+     "slammed",
+     "slamming",
+     "water"
+    ]
+   },
+   {
+    "t": 22,
+    "gliders": [
+     "The",
+     "action",
+     "fibers",
+     "paper",
+     "ripping",
+     "strips",
+     "table",
+     "tangled",
+     "tearing",
+     "thin",
+     "tore"
+    ]
+   },
+   {
+    "t": 23,
+    "gliders": [
+     "The",
+     "action",
+     "crab",
+     "shell",
+     "slammed",
+     "slamming"
+    ]
+   },
+   {
+    "t": 24,
+    "gliders": [
+     "The",
+     "action",
+     "casing",
+     "ferry",
+     "horn",
+     "metal",
+     "tearing",
+     "tore"
+    ]
+   },
+   {
+    "t": 25,
+    "gliders": [
+     "The",
+     "action",
+     "bucket",
+     "mussel",
+     "plastic",
+     "slammed",
+     "slamming",
+     "water"
+    ]
+   },
+   {
+    "t": 26,
+    "gliders": [
+     "The",
+     "action",
+     "fibers",
+     "paper",
+     "ripping",
+     "strips",
+     "table",
+     "tangled",
+     "tearing",
+     "thin",
+     "tore"
+    ]
+   },
+   {
+    "t": 27,
+    "gliders": [
+     "The",
+     "action",
+     "briny",
+     "burst",
+     "crab",
+     "cracking",
+     "fluid",
+     "releasing",
+     "shell",
+     "slammed",
+     "slamming"
+    ]
+   },
+   {
+    "t": 28,
+    "gliders": [
+     "The",
+     "action",
+     "casing",
+     "ferry",
+     "horn",
+     "metal",
+     "ripping",
+     "strips",
+     "tangled",
+     "tearing",
+     "thin",
+     "tore"
+    ]
+   },
+   {
+    "t": 29,
+    "gliders": [
+     "The",
+     "action",
+     "bucket",
+     "mussel",
+     "plastic",
+     "slammed",
+     "slamming",
+     "water"
+    ]
+   },
+   {
+    "t": 30,
+    "gliders": [
+     "The",
+     "action",
+     "fibers",
+     "paper",
+     "ripping",
+     "strips",
+     "table",
+     "tangled",
+     "tearing",
+     "thin",
+     "tore"
+    ]
+   },
+   {
+    "t": 31,
+    "gliders": [
+     "The",
+     "action",
+     "briny",
+     "burst",
+     "crab",
+     "cracking",
+     "fluid",
+     "releasing",
+     "shell",
+     "slammed",
+     "slamming"
+    ]
+   },
+   {
+    "t": 32,
+    "gliders": [
+     "The",
+     "action",
+     "casing",
+     "ferry",
+     "horn",
+     "metal",
+     "ripping",
+     "strips",
+     "tangled",
+     "tearing",
+     "thin",
+     "tore"
+    ]
+   },
+   {
+    "t": 33,
+    "gliders": [
+     "The",
+     "action",
+     "bucket",
+     "everywhere",
+     "mussel",
+     "plastic",
+     "shattering",
+     "slammed",
+     "slamming",
+     "spraying",
+     "water"
+    ]
+   },
+   {
+    "t": 34,
+    "gliders": [
+     "The",
+     "action",
+     "fibers",
+     "paper",
+     "ripping",
+     "strips",
+     "table",
+     "tangled",
+     "tearing",
+     "thin",
+     "tore"
+    ]
+   },
+   {
+    "t": 35,
+    "gliders": [
+     "The",
+     "action",
+     "briny",
+     "burst",
+     "crab",
+     "cracking",
+     "fluid",
+     "releasing",
+     "shell",
+     "slammed",
+     "slamming"
+    ]
+   },
+   {
+    "t": 36,
+    "gliders": [
+     "The",
+     "action",
+     "casing",
+     "ferry",
+     "horn",
+     "metal",
+     "ripping",
+     "strips",
+     "tangled",
+     "tearing",
+     "thin",
+     "tore"
+    ]
+   },
+   {
+    "t": 37,
+    "gliders": [
+     "The",
+     "action",
+     "bucket",
+     "everywhere",
+     "mussel",
+     "plastic",
+     "shattering",
+     "slammed",
+     "slamming",
+     "spraying",
+     "water"
+    ]
+   },
+   {
+    "t": 38,
+    "gliders": [
+     "The",
+     "action",
+     "fibers",
+     "paper",
+     "ripping",
+     "strips",
+     "table",
+     "tangled",
+     "tearing",
+     "thin",
+     "tore"
+    ]
+   },
+   {
+    "t": 39,
+    "gliders": [
+     "The",
+     "action",
+     "briny",
+     "burst",
+     "crab",
+     "cracking",
+     "fluid",
+     "releasing",
+     "shell",
+     "slammed",
+     "slamming"
+    ]
+   },
+   {
+    "t": 40,
+    "gliders": [
+     "The",
+     "action",
+     "casing",
+     "ferry",
+     "horn",
+     "metal",
+     "ripping",
+     "strips",
+     "tangled",
+     "tearing",
+     "thin",
+     "tore"
+    ]
+   },
+   {
+    "t": 41,
+    "gliders": [
+     "The",
+     "action",
+     "bucket",
+     "everywhere",
+     "mussel",
+     "plastic",
+     "shattering",
+     "slammed",
+     "slamming",
+     "spraying",
+     "water"
+    ]
+   },
+   {
+    "t": 42,
+    "gliders": [
+     "The",
+     "action",
+     "fibers",
+     "paper",
+     "ripping",
+     "strips",
+     "table",
+     "tangled",
+     "tearing",
+     "thin",
+     "tore"
+    ]
+   },
+   {
+    "t": 43,
+    "gliders": [
+     "The",
+     "action",
+     "briny",
+     "burst",
+     "crab",
+     "cracking",
+     "fluid",
+     "releasing",
+     "shell",
+     "slammed",
+     "slamming"
+    ]
+   },
+   {
+    "t": 44,
+    "gliders": [
+     "The",
+     "action",
+     "casing",
+     "ferry",
+     "horn",
+     "metal",
+     "ripping",
+     "strips",
+     "tangled",
+     "tearing",
+     "thin",
+     "tore"
+    ]
+   },
+   {
+    "t": 45,
+    "gliders": [
+     "The",
+     "action",
+     "bucket",
+     "everywhere",
+     "mussel",
+     "plastic",
+     "shattering",
+     "slammed",
+     "slamming",
+     "spraying",
+     "water"
+    ]
+   }
+  ],
+  "n_collisions": 44
+ },
+ "hops": [
+  {
+   "t": 1,
+   "parsed": true,
+   "n_sent": 4,
+   "words": [
+    15,
+    16,
+    15,
+    15
+   ],
+   "in_cap": true,
+   "shifted": true,
+   "exact_repeat_of": null,
+   "norm_repeat_of": null,
+   "finish": "stop",
+   "tok_out": 168,
+   "new_sentence": "The mussel bucket shattered violently against the wet stone where the crab had just broken."
+  },
+  {
+   "t": 2,
+   "parsed": true,
+   "n_sent": 4,
+   "words": [
+    16,
+    15,
+    15,
+    16
+   ],
+   "in_cap": true,
+   "shifted": true,
+   "exact_repeat_of": null,
+   "norm_repeat_of": null,
+   "finish": "stop",
+   "tok_out": 169,
+   "new_sentence": "The paper table collided with the ferry horn, causing the paper to tear into small pieces."
+  },
+  {
+   "t": 3,
+   "parsed": true,
+   "n_sent": 4,
+   "words": [
+    15,
+    15,
+    16,
+    17
+   ],
+   "in_cap": true,
+   "shifted": true,
+   "exact_repeat_of": null,
+   "norm_repeat_of": null,
+   "finish": "stop",
+   "tok_out": 170,
+   "new_sentence": "The crab slammed into the shattering bucket, cracking its shell and scattering fragments across the wet stone."
+  },
+  {
+   "t": 4,
+   "parsed": true,
+   "n_sent": 4,
+   "words": [
+    15,
+    16,
+    17,
+    16
+   ],
+   "in_cap": true,
+   "shifted": true,
+   "exact_repeat_of": null,
+   "norm_repeat_of": null,
+   "finish": "stop",
+   "tok_out": 173,
+   "new_sentence": "The ferry horn struck the tearing paper, ripping it into jagged, wet strips on the deck."
+  },
+  {
+   "t": 5,
+   "parsed": true,
+   "n_sent": 4,
+   "words": [
+    16,
+    17,
+    16,
+    15
+   ],
+   "in_cap": true,
+   "shifted": true,
+   "exact_repeat_of": null,
+   "norm_repeat_of": null,
+   "finish": "stop",
+   "tok_out": 176,
+   "new_sentence": "The mussel bucket smashed into the slamming crab, breaking its legs and splashing brine everywhere."
+  },
+  {
+   "t": 6,
+   "parsed": true,
+   "n_sent": 4,
+   "words": [
+    17,
+    16,
+    15,
+    15
+   ],
+   "in_cap": true,
+   "shifted": true,
+   "exact_repeat_of": null,
+   "norm_repeat_of": null,
+   "finish": "stop",
+   "tok_out": 177,
+   "new_sentence": "The paper table collided with the tearing action, causing the table to shatter into splinters."
+  },
+  {
+   "t": 7,
+   "parsed": true,
+   "n_sent": 4,
+   "words": [
+    16,
+    15,
+    15,
+    17
+   ],
+   "in_cap": true,
+   "shifted": true,
+   "exact_repeat_of": null,
+   "norm_repeat_of": null,
+   "finish": "stop",
+   "tok_out": 176,
+   "new_sentence": "The crab slammed into the smashing bucket, cracking its shell and scattering fragments across the wet stone."
+  },
+  {
+   "t": 8,
+   "parsed": true,
+   "n_sent": 4,
+   "words": [
+    15,
+    15,
+    17,
+    18
+   ],
+   "in_cap": true,
+   "shifted": true,
+   "exact_repeat_of": null,
+   "norm_repeat_of": null,
+   "finish": "stop",
+   "tok_out": 180,
+   "new_sentence": "The ferry horn struck the tearing action, causing the horn to bend and emit a distorted, high-pitched shriek."
+  },
+  {
+   "t": 9,
+   "parsed": true,
+   "n_sent": 4,
+   "words": [
+    15,
+    17,
+    18,
+    15
+   ],
+   "in_cap": true,
+   "shifted": true,
+   "exact_repeat_of": null,
+   "norm_repeat_of": null,
+   "finish": "stop",
+   "tok_out": 180,
+   "new_sentence": "The mussel bucket smashed into the slamming crab, breaking its legs and splashing brine everywhere."
+  },
+  {
+   "t": 10,
+   "parsed": true,
+   "n_sent": 4,
+   "words": [
+    17,
+    18,
+    15,
+    15
+   ],
+   "in_cap": true,
+   "shifted": true,
+   "exact_repeat_of": null,
+   "norm_repeat_of": null,
+   "finish": "stop",
+   "tok_out": 180,
+   "new_sentence": "The paper table tore through the ferry horn, ripping the metal into jagged, sharp shards."
+  },
+  {
+   "t": 11,
+   "parsed": true,
+   "n_sent": 4,
+   "words": [
+    18,
+    15,
+    15,
+    17
+   ],
+   "in_cap": true,
+   "shifted": true,
+   "exact_repeat_of": null,
+   "norm_repeat_of": null,
+   "finish": "stop",
+   "tok_out": 180,
+   "new_sentence": "The crab slammed into the smashing bucket, cracking its shell and scattering fragments across the wet stone."
+  },
+  {
+   "t": 12,
+   "parsed": true,
+   "n_sent": 4,
+   "words": [
+    15,
+    15,
+    17,
+    17
+   ],
+   "in_cap": true,
+   "shifted": true,
+   "exact_repeat_of": null,
+   "norm_repeat_of": null,
+   "finish": "stop",
+   "tok_out": 178,
+   "new_sentence": "The ferry horn collided with the tearing action, causing the metal to shatter into sharp, jagged pieces."
+  },
+  {
+   "t": 13,
+   "parsed": true,
+   "n_sent": 4,
+   "words": [
+    15,
+    17,
+    17,
+    16
+   ],
+   "in_cap": true,
+   "shifted": true,
+   "exact_repeat_of": null,
+   "norm_repeat_of": null,
+   "finish": "stop",
+   "tok_out": 178,
+   "new_sentence": "The mussel bucket struck the slamming crab, snapping its legs and spraying brine across the deck."
+  },
+  {
+   "t": 14,
+   "parsed": true,
+   "n_sent": 4,
+   "words": [
+    17,
+    17,
+    16,
+    15
+   ],
+   "in_cap": true,
+   "shifted": true,
+   "exact_repeat_of": null,
+   "norm_repeat_of": null,
+   "finish": "stop",
+   "tok_out": 178,
+   "new_sentence": "The paper table tore through the ferry horn, ripping the metal into jagged, sharp shards."
+  },
+  {
+   "t": 15,
+   "parsed": true,
+   "n_sent": 4,
+   "words": [
+    17,
+    16,
+    15,
+    15
+   ],
+   "in_cap": true,
+   "shifted": true,
+   "exact_repeat_of": null,
+   "norm_repeat_of": null,
+   "finish": "stop",
+   "tok_out": 176,
+   "new_sentence": "The crab slammed into the slamming action, breaking its shell and scattering wet fragments everywhere."
+  },
+  {
+   "t": 16,
+   "parsed": true,
+   "n_sent": 4,
+   "words": [
+    16,
+    15,
+    15,
+    17
+   ],
+   "in_cap": true,
+   "shifted": true,
+   "exact_repeat_of": null,
+   "norm_repeat_of": null,
+   "finish": "stop",
+   "tok_out": 176,
+   "new_sentence": "The ferry horn collided with the tearing action, causing the metal to shatter into sharp, jagged pieces."
+  },
+  {
+   "t": 17,
+   "parsed": true,
+   "n_sent": 4,
+   "words": [
+    15,
+    15,
+    17,
+    18
+   ],
+   "in_cap": true,
+   "shifted": true,
+   "exact_repeat_of": null,
+   "norm_repeat_of": null,
+   "finish": "stop",
+   "tok_out": 178,
+   "new_sentence": "The mussel bucket hit the slamming action, cracking its plastic rim and spilling salty water onto the floor."
+  },
+  {
+   "t": 18,
+   "parsed": true,
+   "n_sent": 4,
+   "words": [
+    15,
+    17,
+    18,
+    15
+   ],
+   "in_cap": true,
+   "shifted": true,
+   "exact_repeat_of": null,
+   "norm_repeat_of": null,
+   "finish": "stop",
+   "tok_out": 177,
+   "new_sentence": "The paper table tore through the tearing action, ripping the fibers into thin, tangled strips."
+  },
+  {
+   "t": 19,
+   "parsed": true,
+   "n_sent": 4,
+   "words": [
+    17,
+    18,
+    15,
+    15
+   ],
+   "in_cap": true,
+   "shifted": true,
+   "exact_repeat_of": null,
+   "norm_repeat_of": null,
+   "finish": "stop",
+   "tok_out": 177,
+   "new_sentence": "The crab slammed into the slamming action, breaking its shell and scattering wet fragments everywhere."
+  },
+  {
+   "t": 20,
+   "parsed": true,
+   "n_sent": 4,
+   "words": [
+    18,
+    15,
+    15,
+    17
+   ],
+   "in_cap": true,
+   "shifted": true,
+   "exact_repeat_of": null,
+   "norm_repeat_of": null,
+   "finish": "stop",
+   "tok_out": 176,
+   "new_sentence": "The ferry horn collided with the tearing action, bending its metal casing into a twisted, unusable shape."
+  },
+  {
+   "t": 21,
+   "parsed": true,
+   "n_sent": 4,
+   "words": [
+    15,
+    15,
+    17,
+    17
+   ],
+   "in_cap": true,
+   "shifted": true,
+   "exact_repeat_of": null,
+   "norm_repeat_of": null,
+   "finish": "stop",
+   "tok_out": 175,
+   "new_sentence": "The mussel bucket slammed into the slamming action, shattering its plastic rim and spraying salty water everywhere."
+  },
+  {
+   "t": 22,
+   "parsed": true,
+   "n_sent": 4,
+   "words": [
+    15,
+    17,
+    17,
+    15
+   ],
+   "in_cap": true,
+   "shifted": true,
+   "exact_repeat_of": null,
+   "norm_repeat_of": null,
+   "finish": "stop",
+   "tok_out": 175,
+   "new_sentence": "The paper table tore through the tearing action, ripping its fibers into thin, tangled strips."
+  },
+  {
+   "t": 23,
+   "parsed": true,
+   "n_sent": 4,
+   "words": [
+    17,
+    17,
+    15,
+    17
+   ],
+   "in_cap": true,
+   "shifted": true,
+   "exact_repeat_of": null,
+   "norm_repeat_of": null,
+   "finish": "stop",
+   "tok_out": 178,
+   "new_sentence": "The crab slammed into the slamming action, cracking its shell and releasing a burst of briny fluid."
+  },
+  {
+   "t": 24,
+   "parsed": true,
+   "n_sent": 4,
+   "words": [
+    17,
+    15,
+    17,
+    16
+   ],
+   "in_cap": true,
+   "shifted": true,
+   "exact_repeat_of": null,
+   "norm_repeat_of": null,
+   "finish": "stop",
+   "tok_out": 178,
+   "new_sentence": "The ferry horn tore through the tearing action, shredding its metal casing into jagged, sharp fragments."
+  },
+  {
+   "t": 25,
+   "parsed": true,
+   "n_sent": 4,
+   "words": [
+    15,
+    17,
+    16,
+    17
+   ],
+   "in_cap": true,
+   "shifted": true,
+   "exact_repeat_of": null,
+   "norm_repeat_of": null,
+   "finish": "stop",
+   "tok_out": 178,
+   "new_sentence": "The mussel bucket slammed into the slamming action, causing the plastic rim to shatter and spray water."
+  },
+  {
+   "t": 26,
+   "parsed": true,
+   "n_sent": 4,
+   "words": [
+    17,
+    16,
+    17,
+    15
+   ],
+   "in_cap": true,
+   "shifted": true,
+   "exact_repeat_of": null,
+   "norm_repeat_of": null,
+   "finish": "stop",
+   "tok_out": 178,
+   "new_sentence": "The paper table tore through the tearing action, ripping its fibers into thin, tangled strips."
+  },
+  {
+   "t": 27,
+   "parsed": true,
+   "n_sent": 4,
+   "words": [
+    16,
+    17,
+    15,
+    17
+   ],
+   "in_cap": true,
+   "shifted": true,
+   "exact_repeat_of": null,
+   "norm_repeat_of": null,
+   "finish": "stop",
+   "tok_out": 178,
+   "new_sentence": "The crab slammed into the slamming action, cracking its shell and releasing a burst of briny fluid."
+  },
+  {
+   "t": 28,
+   "parsed": true,
+   "n_sent": 4,
+   "words": [
+    17,
+    15,
+    17,
+    16
+   ],
+   "in_cap": true,
+   "shifted": true,
+   "exact_repeat_of": null,
+   "norm_repeat_of": null,
+   "finish": "stop",
+   "tok_out": 176,
+   "new_sentence": "The ferry horn tore through the tearing action, ripping its metal casing into thin, tangled strips."
+  },
+  {
+   "t": 29,
+   "parsed": true,
+   "n_sent": 4,
+   "words": [
+    15,
+    17,
+    16,
+    16
+   ],
+   "in_cap": true,
+   "shifted": true,
+   "exact_repeat_of": null,
+   "norm_repeat_of": null,
+   "finish": "stop",
+   "tok_out": 175,
+   "new_sentence": "The mussel bucket slammed into the slamming action, shattering its plastic rim and spraying water everywhere."
+  },
+  {
+   "t": 30,
+   "parsed": true,
+   "n_sent": 4,
+   "words": [
+    17,
+    16,
+    16,
+    15
+   ],
+   "in_cap": true,
+   "shifted": true,
+   "exact_repeat_of": null,
+   "norm_repeat_of": null,
+   "finish": "stop",
+   "tok_out": 175,
+   "new_sentence": "The paper table tore through the tearing action, ripping its fibers into thin, tangled strips."
+  },
+  {
+   "t": 31,
+   "parsed": true,
+   "n_sent": 4,
+   "words": [
+    16,
+    16,
+    15,
+    17
+   ],
+   "in_cap": true,
+   "shifted": true,
+   "exact_repeat_of": null,
+   "norm_repeat_of": null,
+   "finish": "stop",
+   "tok_out": 175,
+   "new_sentence": "The crab slammed into the slamming action, cracking its shell and releasing a burst of briny fluid."
+  },
+  {
+   "t": 32,
+   "parsed": true,
+   "n_sent": 4,
+   "words": [
+    16,
+    15,
+    17,
+    16
+   ],
+   "in_cap": true,
+   "shifted": true,
+   "exact_repeat_of": null,
+   "norm_repeat_of": null,
+   "finish": "stop",
+   "tok_out": 175,
+   "new_sentence": "The ferry horn tore through the tearing action, ripping its metal casing into thin, tangled strips."
+  },
+  {
+   "t": 33,
+   "parsed": true,
+   "n_sent": 4,
+   "words": [
+    15,
+    17,
+    16,
+    16
+   ],
+   "in_cap": true,
+   "shifted": true,
+   "exact_repeat_of": 29,
+   "norm_repeat_of": 29,
+   "finish": "stop",
+   "tok_out": 175,
+   "new_sentence": "The mussel bucket slammed into the slamming action, shattering its plastic rim and spraying water everywhere."
+  },
+  {
+   "t": 34,
+   "parsed": true,
+   "n_sent": 4,
+   "words": [
+    17,
+    16,
+    16,
+    15
+   ],
+   "in_cap": true,
+   "shifted": true,
+   "exact_repeat_of": 30,
+   "norm_repeat_of": 30,
+   "finish": "stop",
+   "tok_out": 175,
+   "new_sentence": "The paper table tore through the tearing action, ripping its fibers into thin, tangled strips."
+  },
+  {
+   "t": 35,
+   "parsed": true,
+   "n_sent": 4,
+   "words": [
+    16,
+    16,
+    15,
+    17
+   ],
+   "in_cap": true,
+   "shifted": true,
+   "exact_repeat_of": 31,
+   "norm_repeat_of": 31,
+   "finish": "stop",
+   "tok_out": 175,
+   "new_sentence": "The crab slammed into the slamming action, cracking its shell and releasing a burst of briny fluid."
+  },
+  {
+   "t": 36,
+   "parsed": true,
+   "n_sent": 4,
+   "words": [
+    16,
+    15,
+    17,
+    16
+   ],
+   "in_cap": true,
+   "shifted": true,
+   "exact_repeat_of": 32,
+   "norm_repeat_of": 32,
+   "finish": "stop",
+   "tok_out": 175,
+   "new_sentence": "The ferry horn tore through the tearing action, ripping its metal casing into thin, tangled strips."
+  },
+  {
+   "t": 37,
+   "parsed": true,
+   "n_sent": 4,
+   "words": [
+    15,
+    17,
+    16,
+    16
+   ],
+   "in_cap": true,
+   "shifted": true,
+   "exact_repeat_of": 29,
+   "norm_repeat_of": 29,
+   "finish": "stop",
+   "tok_out": 175,
+   "new_sentence": "The mussel bucket slammed into the slamming action, shattering its plastic rim and spraying water everywhere."
+  },
+  {
+   "t": 38,
+   "parsed": true,
+   "n_sent": 4,
+   "words": [
+    17,
+    16,
+    16,
+    15
+   ],
+   "in_cap": true,
+   "shifted": true,
+   "exact_repeat_of": 30,
+   "norm_repeat_of": 30,
+   "finish": "stop",
+   "tok_out": 175,
+   "new_sentence": "The paper table tore through the tearing action, ripping its fibers into thin, tangled strips."
+  },
+  {
+   "t": 39,
+   "parsed": true,
+   "n_sent": 4,
+   "words": [
+    16,
+    16,
+    15,
+    17
+   ],
+   "in_cap": true,
+   "shifted": true,
+   "exact_repeat_of": 31,
+   "norm_repeat_of": 31,
+   "finish": "stop",
+   "tok_out": 175,
+   "new_sentence": "The crab slammed into the slamming action, cracking its shell and releasing a burst of briny fluid."
+  },
+  {
+   "t": 40,
+   "parsed": true,
+   "n_sent": 4,
+   "words": [
+    16,
+    15,
+    17,
+    16
+   ],
+   "in_cap": true,
+   "shifted": true,
+   "exact_repeat_of": 32,
+   "norm_repeat_of": 32,
+   "finish": "stop",
+   "tok_out": 175,
+   "new_sentence": "The ferry horn tore through the tearing action, ripping its metal casing into thin, tangled strips."
+  },
+  {
+   "t": 41,
+   "parsed": true,
+   "n_sent": 4,
+   "words": [
+    15,
+    17,
+    16,
+    16
+   ],
+   "in_cap": true,
+   "shifted": true,
+   "exact_repeat_of": 29,
+   "norm_repeat_of": 29,
+   "finish": "stop",
+   "tok_out": 175,
+   "new_sentence": "The mussel bucket slammed into the slamming action, shattering its plastic rim and spraying water everywhere."
+  },
+  {
+   "t": 42,
+   "parsed": true,
+   "n_sent": 4,
+   "words": [
+    17,
+    16,
+    16,
+    15
+   ],
+   "in_cap": true,
+   "shifted": true,
+   "exact_repeat_of": 30,
+   "norm_repeat_of": 30,
+   "finish": "stop",
+   "tok_out": 175,
+   "new_sentence": "The paper table tore through the tearing action, ripping its fibers into thin, tangled strips."
+  },
+  {
+   "t": 43,
+   "parsed": true,
+   "n_sent": 4,
+   "words": [
+    16,
+    16,
+    15,
+    17
+   ],
+   "in_cap": true,
+   "shifted": true,
+   "exact_repeat_of": 31,
+   "norm_repeat_of": 31,
+   "finish": "stop",
+   "tok_out": 175,
+   "new_sentence": "The crab slammed into the slamming action, cracking its shell and releasing a burst of briny fluid."
+  },
+  {
+   "t": 44,
+   "parsed": true,
+   "n_sent": 4,
+   "words": [
+    16,
+    15,
+    17,
+    16
+   ],
+   "in_cap": true,
+   "shifted": true,
+   "exact_repeat_of": 32,
+   "norm_repeat_of": 32,
+   "finish": "stop",
+   "tok_out": 175,
+   "new_sentence": "The ferry horn tore through the tearing action, ripping its metal casing into thin, tangled strips."
+  },
+  {
+   "t": 45,
+   "parsed": true,
+   "n_sent": 4,
+   "words": [
+    15,
+    17,
+    16,
+    16
+   ],
+   "in_cap": true,
+   "shifted": true,
+   "exact_repeat_of": 29,
+   "norm_repeat_of": 29,
+   "finish": "stop",
+   "tok_out": 175,
+   "new_sentence": "The mussel bucket slammed into the slamming action, shattering its plastic rim and spraying water everywhere."
+  }
+ ]
+}

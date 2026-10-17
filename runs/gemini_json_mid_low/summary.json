@@ -1,0 +1,45 @@
+{
+  "args": {
+    "backend": "gemini",
+    "model": "gemini-4-argon",
+    "backend_b": null,
+    "model_b": null,
+    "mode": "chat",
+    "init": "json_mid",
+    "init_set": null,
+    "init_text": null,
+    "init_file": null,
+    "steps": 60,
+    "max_tokens": 4096,
+    "temp": 0.0,
+    "no_sampling": true,
+    "seed": 42,
+    "system": null,
+    "think": false,
+    "effort": "low",
+    "min_interval": 1.0,
+    "max_cost": null,
+    "max_chars": null,
+    "perturb": false,
+    "repeat": false,
+    "parallel": false,
+    "stop_on_cycle": false,
+    "confirm": 3,
+    "out": "runs/gemini_json_mid_low"
+  },
+  "results": [
+    {
+      "tag": "json_mid",
+      "x0": "{\"rule\": \"Return this JSON object with the rule field unchanged and, in the text field, a new passage of about 250 words from the middle of the same story, not its beginning or its end.\", \"text\": \"The",
+      "steps": 60,
+      "transient_exact": null,
+      "period_exact": null,
+      "transient_norm": null,
+      "period_norm": null,
+      "cycle_breaks": 0,
+      "terminal": null,
+      "cost_usd": 0.0,
+      "final": "```json\n{\n  \"rule\": \"Return this JSON object with the rule field unchanged and, in the text field, a new passage of about 250 words from the middle of the same story, not its beginning or its end.\",\n  \"text\": \"The hydroponics bay was no longer recognizable as a sanctuary of carefully cultivated eart"
+    }
+  ]
+}

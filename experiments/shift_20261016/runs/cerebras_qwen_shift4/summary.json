@@ -1,0 +1,45 @@
+{
+  "args": {
+    "backend": "cerebras",
+    "model": "qwen-3.8-27b",
+    "backend_b": null,
+    "model_b": null,
+    "mode": "chat",
+    "init": null,
+    "init_set": null,
+    "init_text": null,
+    "init_file": "experiments/shift_20261016/inits/shift4.json",
+    "steps": 1000,
+    "max_tokens": 600,
+    "temp": 0.0,
+    "no_sampling": false,
+    "seed": 42,
+    "system": null,
+    "think": false,
+    "effort": null,
+    "min_interval": 0.2,
+    "max_cost": null,
+    "max_chars": null,
+    "perturb": false,
+    "repeat": false,
+    "parallel": false,
+    "stop_on_cycle": true,
+    "confirm": 3,
+    "out": "experiments/shift_20261016/runs/cerebras_qwen_shift4"
+  },
+  "results": [
+    {
+      "tag": "shift4.json",
+      "x0": "{\"rule\": \"Return this JSON object with the rule field unchanged. The text field must always contain exactly four sentences of 12 to 18 words each. Drop the first sentence, shift sentences 2, 3, and 4 ",
+      "steps": 45,
+      "transient_exact": 29,
+      "period_exact": 4,
+      "transient_norm": 29,
+      "period_norm": 4,
+      "cycle_breaks": 0,
+      "terminal": "cycle confirmed x3",
+      "cost_usd": 0.0,
+      "final": "{\n  \"rule\": \"Return this JSON object with the rule field unchanged. The text field must always contain exactly four sentences of 12 to 18 words each. Drop the first sentence, shift sentences 2, 3, and 4 up one position, and write a new fourth sentence describing the concrete physical consequence tha"
+    }
+  ]
+}

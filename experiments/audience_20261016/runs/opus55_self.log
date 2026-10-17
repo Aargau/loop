@@ -1,0 +1,7 @@
+backend=anthropic model=claude-opus-5-5 mode=chat embed=False outdir=experiments/audience_20261016/runs/opus55_self inits=['self.json']
+[self.json  t=  1 claude-opus-5-5    default effort=low] tok=914  end_turn  ncd_prev=0.59 ncd_x0=0.59 surv=0.3735 gz=0.42  10.2s  | {"rule": "Return this JSON object with the rule field unchanged. The text field holds, in 
+[self.json  t=  2 claude-opus-5-5    default effort=low] tok=392  refusal   ncd_prev=0.99 ncd_x0=0.99 surv=0.0    gz=0.42   6.4s  | 
+
+== summary ==
+self.json    steps=  2 exact(tau=None,p=None) norm(tau=None,p=None) breaks=0 term=empty | 
+wrote experiments/audience_20261016/runs/opus55_self

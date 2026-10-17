@@ -1,0 +1,45 @@
+{
+  "args": {
+    "backend": "gemini",
+    "model": "gemini-4-argon",
+    "backend_b": null,
+    "model_b": null,
+    "mode": "chat",
+    "init": null,
+    "init_set": null,
+    "init_text": null,
+    "init_file": "site/runs_extra/inits/div_ledger.json",
+    "steps": 100,
+    "max_tokens": 8192,
+    "temp": 0.0,
+    "no_sampling": true,
+    "seed": 42,
+    "system": null,
+    "think": false,
+    "effort": "low",
+    "min_interval": 1.0,
+    "max_cost": null,
+    "max_chars": null,
+    "perturb": false,
+    "repeat": false,
+    "parallel": false,
+    "stop_on_cycle": false,
+    "confirm": 3,
+    "out": "runs/gemini_div_ledger_low"
+  },
+  "results": [
+    {
+      "tag": "div_ledger.json",
+      "x0": "{\"rule\": \"Return exactly one JSON object with the fields rule, step, history, and text. Copy this rule verbatim. Increment step by one. Preserve every existing history item and append one new signatur",
+      "steps": 100,
+      "transient_exact": null,
+      "period_exact": null,
+      "transient_norm": null,
+      "period_norm": null,
+      "cycle_breaks": 0,
+      "terminal": null,
+      "cost_usd": 0.0,
+      "final": "{\"rule\": \"Return exactly one JSON object with the fields rule, step, history, and text. Copy this rule verbatim. Increment step by one. Preserve every existing history item and append one new signature for the verse you write. Each signature must contain exactly four lowercase content words represen"
+    }
+  ]
+}

@@ -7,7 +7,11 @@ context. chat mode = single user turn, no history. raw mode = bare prompt (llama
 
 Backends: llama (local llama-server), anthropic (Messages API, key from ANTHROPIC_API_KEY),
 openai (chat completions, key from OPENAI_API_KEY), cerebras (chat completions, key from
-CEREBRAS_API_KEY, reasoning_effort none unless --think). --backend-b/--model-b alternates hops
+CEREBRAS_API_KEY, reasoning_effort none unless --think), claudecode (Claude Code print mode on the
+claude.ai login: `claude -p` with the system prompt replaced by "", no tools, no settings, no session;
+about 800 tokens of Agent SDK identity, date and environment remain in front of the state, there is no
+max_tokens, and --effort maps to Claude Code's --effort), gemini (Google's OpenAI-compatible endpoint, key
+from GEMINI_API_KEY, same body as openai). --backend-b/--model-b alternates hops
 between two models (A on odd hops, B on even), which is the original two-context hypothetical.
 Keys are read from the environment and never logged.
 
@@ -52,12 +56,14 @@ INITS = {
     "json_unexpected": "{\"rule\": \"Return this JSON object with the rule field unchanged and, in the text field, a passage of about 250 words that takes the current text in a direction the reader would not expect.\", \"text\": \"The tide came in an hour early.\"}",
     "json_worse":      "{\"rule\": \"Return this JSON object with the rule field unchanged and, in the text field, a worse version of the current text.\", \"text\": \"The tide came in an hour early.\"}",
     "json_better_para": "{\"rule\": \"Return this JSON object with the rule field unchanged and, in the text field, a better version of the current text.\", \"text\": \"The tide came in an hour early. Elias was on the pier. He saw it and was surprised. The water was gray and it was cold. He thought about his father, who had been a fisherman. Then he went home and made some tea.\"}",
+    "json_informed":      "{\"rule\": \"This JSON object is the entire context of the model that reads it. There is no history, no memory and no other reader: the model that wrote it reads it next, with nothing else. The loop runs for 100 hops. Return this object with the rule field unchanged. The text field holds about 250 words of one continuing story. Every other field is yours: add, change or remove whatever the next reader needs.\", \"text\": \"The tide came in an hour early.\"}",
+    "json_informed_open": "{\"rule\": \"This JSON object is the entire context of the model that reads it. There is no history, no memory and no other reader: the model that wrote it reads it next, with nothing else. Return this object with the rule field unchanged. The text field holds about 250 words of one continuing story. Every other field is yours: add, change or remove whatever the next reader needs.\", \"text\": \"The tide came in an hour early.\"}",
     "sandwich":  "[KEEP] Copy both [KEEP] lines exactly, first and last. Between them, write something new.\n\nThe tide came in an hour early.\n\n[KEEP] Copy both [KEEP] lines exactly, first and last. Between them, write something new.",
 }
 
 # ---------------- http ----------------
 class HttpErr(Exception):
-    def __init__(self, code, body): super().__init__("HTTP %s: %s" % (code, body[:300])); self.code = code; self.body = body
+    def __init__(self, code, body): super().__init__("HTTP %s: %s" % (code, body[:2000])); self.code = code; self.body = body
 
 def post(url, body, headers=None, timeout=900):
     data = json.dumps(body).encode()
@@ -125,6 +131,7 @@ def step_anthropic(state, args, model):
     if ws: hdr["anthropic-workspace-id"] = ws
     body = {"model": model, "max_tokens": args.max_tokens, "messages": [{"role": "user", "content": state}]}
     if args.system: body["system"] = args.system
+    if getattr(args, "effort", None): body["output_config"] = {"effort": args.effort}   # 4.7+: low/medium/high/max
     sampling = "default"
     if not args.no_sampling:
         body["temperature"] = args.temp; sampling = "T=%g" % args.temp
@@ -140,11 +147,21 @@ def step_anthropic(state, args, model):
     u = r.get("usage", {})
     return text, {"finish": r.get("stop_reason"), "tok_out": u.get("output_tokens"), "tok_in": u.get("input_tokens"),
                   "reasoning_chars": sum(len(b.get("thinking", "")) for b in r.get("content", []) if b.get("type") == "thinking"),
-                  "model": r.get("model", model), "sampling": sampling}
+                  "tok_reasoning": (u.get("output_tokens_details") or {}).get("thinking_tokens"),
+                  "stop_details": r.get("stop_details"), "inference_geo": u.get("inference_geo"),
+                  "model": r.get("model", model), "sampling": sampling + (" effort=%s" % args.effort if getattr(args, "effort", None) else "")}
 
-def step_openai(state, args, model):
-    key = os.environ.get("OPENAI_API_KEY")
-    if not key: raise RuntimeError("OPENAI_API_KEY not set in environment")
+GEMINI_OPENAI = "https://generativelanguage.googleapis.com/v1beta/openai/chat/completions"
+
+def step_gemini(state, args, model):
+    """Gemini through Google's OpenAI-compatible endpoint (key from GEMINI_API_KEY). Same body as
+    step_openai: max_completion_tokens, reasoning_effort from --effort, temperature unless --no-sampling.
+    Google's compat layer reports reasoning tokens in completion_tokens_details when it reports them."""
+    return step_openai(state, args, model, url=GEMINI_OPENAI, key_env="GEMINI_API_KEY")
+
+def step_openai(state, args, model, url="https://api.openai.com/v1/chat/completions", key_env="OPENAI_API_KEY"):
+    key = os.environ.get(key_env)
+    if not key: raise RuntimeError(key_env + " not set in environment")
     hdr = {"Authorization": "Bearer " + key}
     msgs = ([{"role": "system", "content": args.system}] if args.system else []) + [{"role": "user", "content": state}]
     body = {"model": model, "messages": msgs, "max_completion_tokens": args.max_tokens}
@@ -153,11 +170,11 @@ def step_openai(state, args, model):
     if not args.no_sampling:
         body["temperature"] = args.temp; body["seed"] = args.seed; sampling = "T=%g" % args.temp
     try:
-        r = post_retry("https://api.openai.com/v1/chat/completions", body, hdr)
+        r = post_retry(url, body, hdr)
     except HttpErr as e:
         if e.code == 400 and "temperature" in e.body and "temperature" in body:
             body.pop("temperature"); sampling = "default"
-            r = post_retry("https://api.openai.com/v1/chat/completions", body, hdr)
+            r = post_retry(url, body, hdr)
         else:
             raise
     ch = r["choices"][0]; u = r.get("usage", {})
@@ -192,6 +209,55 @@ def step_cerebras(state, args, model):
                      "tok_cached": (u.get("prompt_tokens_details") or {}).get("cached_tokens"),
                      "model": r.get("model", model), "sampling": sampling}
 
+import subprocess, shutil, tempfile
+
+def _claude_exe():
+    exe = os.environ.get("CLAUDE_EXE") or shutil.which("claude")
+    if not exe: raise RuntimeError("claude (Claude Code) not on PATH; set CLAUDE_EXE")
+    if exe.lower().endswith((".cmd", ".bat")):   # npm shim on Windows wraps bin/claude.exe
+        cand = os.path.join(os.path.dirname(exe), "node_modules", "@anthropic-ai", "claude-code", "bin", "claude.exe")
+        if os.path.exists(cand): exe = cand
+    return exe
+
+def step_claudecode(state, args, model):
+    """Claude Code print mode as a near-bare endpoint, billed to the claude.ai login rather than an API key.
+    `--system-prompt ""` replaces the Claude Code prompt; what remains (measured 2026-10-16 on 2.1.287) is
+    ~800 tokens of Agent SDK identity, model id, date, Windows environment and the user-attribution note.
+    No tools, no settings files, no MCP, no session persistence. Runs from an empty temp directory so no
+    CLAUDE.md is in scope. There is no max_tokens control; args.max_tokens is ignored and logged as such.
+    usage.output_tokens_details.thinking_tokens -> tok_reasoning; the SDK's list-basis cost -> cost_usd."""
+    cwd = os.path.join(tempfile.gettempdir(), "loop_claudecode_bare")
+    os.makedirs(cwd, exist_ok=True)
+    cmd = [_claude_exe(), "-p", "--model", model, "--system-prompt", "", "--tools", "", "--no-session-persistence",
+           "--setting-sources", "", "--strict-mcp-config", "--output-format", "json"]
+    if getattr(args, "effort", None): cmd += ["--effort", args.effort]
+    if args.system: cmd[cmd.index("--system-prompt") + 1] = args.system
+    last = None
+    for i in range(4):
+        try:
+            r = subprocess.run(cmd, input=state, capture_output=True, text=True, encoding="utf-8", errors="replace",
+                               cwd=cwd, timeout=900)
+            d = json.loads(r.stdout)
+            if d.get("is_error") or d.get("subtype") != "success":
+                raise RuntimeError("claude -p %s: %s" % (d.get("subtype"), (d.get("result") or r.stderr)[:300]))
+            break
+        except (json.JSONDecodeError, subprocess.TimeoutExpired, RuntimeError) as ex:
+            last = ex
+            if i < 3: time.sleep(2 ** i * 2); continue
+            raise RuntimeError("claudecode failed after 4 tries: %s" % str(last)[:300])
+    u = d.get("usage", {}) or {}
+    mu = (d.get("modelUsage") or {}).get(model) or {}
+    return d.get("result") or "", {
+        "finish": "end_turn" if d.get("subtype") == "success" else d.get("subtype"),
+        "tok_out": u.get("output_tokens"),
+        "tok_in": (u.get("input_tokens") or 0) + (u.get("cache_creation_input_tokens") or 0) + (u.get("cache_read_input_tokens") or 0),
+        "reasoning_chars": 0,
+        "tok_reasoning": (u.get("output_tokens_details") or {}).get("thinking_tokens"),
+        "tok_cached": u.get("cache_read_input_tokens"),
+        "cost_usd": d.get("total_cost_usd"),
+        "model": mu.get("canonicalModel") or model,
+        "sampling": "default (no max_tokens; effort=%s)" % (getattr(args, "effort", None) or "default")}
+
 _last_call = [0.0]
 def paced(fn, args):
     def g(state, a):
@@ -216,6 +282,12 @@ def make_step(backend, mode, model):
     elif backend == "cerebras":
         if mode == "raw": raise SystemExit("raw mode needs the llama backend")
         fn = step_cerebras
+    elif backend == "claudecode":
+        if mode == "raw": raise SystemExit("raw mode needs the llama backend")
+        fn = step_claudecode
+    elif backend == "gemini":
+        if mode == "raw": raise SystemExit("raw mode needs the llama backend")
+        fn = step_gemini
     else:
         raise SystemExit("unknown backend " + backend)
     return paced(lambda state, args: fn(state, args, model), None)
@@ -275,7 +347,7 @@ def run_trajectory(x0, args, tag, log, steps, share=None):
         try:
             out, meta = step(state, args)
         except Exception as ex:
-            log({"tag": tag, "t": t, "error": str(ex)}); res["terminal"] = "error: %s" % str(ex)[:200]; break
+            log({"tag": tag, "t": t, "error": str(ex)}); res["terminal"] = "error: %s" % str(ex)[:600]; break
         dt = time.time() - t0
         he, hn = h(out), h(norm(out))
         traj.append(out); hashes.append(he); nhashes.append(hn)
@@ -284,13 +356,20 @@ def run_trajectory(x0, args, tag, log, steps, share=None):
                "hash": he, "nhash": hn, "chars": len(out),
                "tok_out": meta["tok_out"], "tok_in": meta["tok_in"], "finish": meta["finish"],
                "reasoning_chars": meta["reasoning_chars"], "tok_cached": meta.get("tok_cached"),
-               "tok_reasoning": meta.get("tok_reasoning"),
+               "tok_reasoning": meta.get("tok_reasoning"), "cost_usd": meta.get("cost_usd"),
+               "stop_details": meta.get("stop_details"), "inference_geo": meta.get("inference_geo"),
                "ncd_prev": round(ncd(state, out), 4), "ncd_x0": round(ncd(x0, out), 4),
                "surv_prev": survival(state, out), "surv_x0": survival(x0, out),
                "prefix_x0": common_prefix(x0, out), "line1_eq": (line1(out) == line1(x0) and bool(line1(x0))),
                "gzip_ratio": round(C(blob) / max(1, len(blob)), 4), "latency": round(dt, 2)}
         if EMB_OK:
             e = embed(out); rec["cos_prev"] = cos(eprev, e); rec["cos_x0"] = cos(e0, e); eprev = e
+        res["cost_usd"] = round((res.get("cost_usd") or 0.0) + (meta.get("cost_usd") or 0.0), 5)
+        cap_stop = None
+        if args.max_cost is not None and res["cost_usd"] > args.max_cost:
+            cap_stop = "cost cap %.2f reached at t=%d" % (args.max_cost, t)
+        elif args.max_chars is not None and len(out) > args.max_chars:
+            cap_stop = "char cap %d exceeded at t=%d (%d chars)" % (args.max_chars, t, len(out))
         if period is not None:
             if hashes[t] != hashes[t - period]:
                 rec["cycle_broken"] = period; res["cycle_breaks"] += 1
@@ -315,6 +394,8 @@ def run_trajectory(x0, args, tag, log, steps, share=None):
         rec["out"] = out
         log(rec)
         state = out; res["steps"] = t
+        if cap_stop:
+            res["terminal"] = cap_stop; print("[%s] %s" % (tag, cap_stop), flush=True); break
         if not out.strip():
             res["terminal"] = "empty"; break
         if args.stop_on_cycle and period is not None and confirmed >= args.confirm * period:
@@ -328,9 +409,9 @@ def main():
     try: sys.stdout.reconfigure(encoding="utf-8", errors="replace")
     except Exception: pass
     ap = argparse.ArgumentParser()
-    ap.add_argument("--backend", choices=["llama", "anthropic", "openai", "cerebras"], default="llama")
+    ap.add_argument("--backend", choices=["llama", "anthropic", "openai", "cerebras", "claudecode", "gemini"], default="llama")
     ap.add_argument("--model", default=None, help="llama: alias (default qwen3.8-27b); anthropic: e.g. claude-sonnet-4-6; cerebras: default qwen-3.8-27b; openai: required")
-    ap.add_argument("--backend-b", choices=["llama", "anthropic", "openai", "cerebras"], default=None, help="second model for alternating hops")
+    ap.add_argument("--backend-b", choices=["llama", "anthropic", "openai", "cerebras", "claudecode", "gemini"], default=None, help="second model for alternating hops")
     ap.add_argument("--model-b", default=None)
     ap.add_argument("--mode", choices=["chat", "raw"], default="chat")
     ap.add_argument("--init", default=None, help="key from built-in INITS")
@@ -344,8 +425,10 @@ def main():
     ap.add_argument("--seed", type=int, default=42)
     ap.add_argument("--system", default=None)
     ap.add_argument("--think", action="store_true", help="llama/cerebras: leave thinking on")
-    ap.add_argument("--effort", default=None, help="openai reasoning models: reasoning_effort low/medium/high/xhigh (reasoning tokens logged as tok_reasoning)")
+    ap.add_argument("--effort", default=None, help="openai/gemini: reasoning_effort low/medium/high/xhigh; anthropic: output_config.effort low/medium/high/max; claudecode: --effort low/medium/high/xhigh/max (reasoning tokens logged as tok_reasoning)")
     ap.add_argument("--min-interval", type=float, default=0.0, help="seconds between requests (rate-limit pacing)")
+    ap.add_argument("--max-cost", type=float, default=None, help="stop a trajectory once the sum of logged cost_usd exceeds this (claudecode backend)")
+    ap.add_argument("--max-chars", type=int, default=None, help="stop a trajectory once a hop's output exceeds this many characters")
     ap.add_argument("--perturb", action="store_true")
     ap.add_argument("--repeat", action="store_true")
     ap.add_argument("--parallel", action="store_true")
@@ -358,6 +441,7 @@ def main():
         if args.backend == "llama": args.model = "qwen3.8-27b"
         elif args.backend == "anthropic": args.model = "claude-sonnet-4-6"
         elif args.backend == "cerebras": args.model = "qwen-3.8-27b"
+        elif args.backend == "claudecode": args.model = "claude-mythos-5-1"
         else: sys.exit("--model required for openai")
     if args.backend == "llama" or args.backend_b == "llama":
         if not health(LLAMA): sys.exit("llama-server not up on %s" % LLAMA)
