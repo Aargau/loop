@@ -1108,8 +1108,16 @@ def build():
         mx = max(ln["n"] for ln in lanes_of[room_id])
         if hop > mx: raise SystemExit("findings: room %s has no hop %d (its longest lane has %d)" % (room_id, hop, mx))
         r = next(x for x in rooms + annex if x["id"] == room_id)
-        return "r/%s.html#%d" % (room_id, hop), "%s, hop %d" % (("annex: " + r["title"]) if r.get("annex") else room_label(r), hop)
-    f_secs = []; f_txt = ["# Findings, %s" % C.SITE_TITLE, "", authored_plain(FD.INTRO, runs), ""]
+        where = ("Annex room %s, hop %d" % (r["title"], hop)) if r.get("annex") else ("Room %d, %s, hop %d" % (r["num"], r["title"], hop))
+        # the text part that holds the hop (its first lane that has it), so a model reader can fetch exactly that hop
+        parts = text_parts[room_id]
+        k = next((i for i, s in enumerate(parts, 1) if ("\n### hop %d (" % hop) in s or ("\n### hop %d," % hop) in s), 1)
+        return "r/%s.html#%d" % (room_id, hop), where, "%s/t/%s" % (SITE, part_name(room_id, k))
+    f_secs = []
+    f_txt = ["# Findings, %s" % C.SITE_TITLE, "",
+             "What happened in the loop, by what is interesting. Each item names its room and hop in plain text; the room's text version "
+             "(t/<room>.txt, in parts) holds that hop, and the interactive page opens on it (r/<room>#<hop>). Index of every room: %s/llms.txt" % SITE,
+             "", authored_plain(FD.INTRO, runs), ""]
     seen_ids = set()
     for s in FD.SECTIONS:
         items = []
@@ -1117,10 +1125,10 @@ def build():
         for it in s["items"]:
             if it["id"] in seen_ids: raise SystemExit("findings: duplicate id %s" % it["id"])
             seen_ids.add(it["id"])
-            href, where = finding_link(it["room"], it["hop"])
+            href, where, tpart = finding_link(it["room"], it["hop"])
             items.append('<article class="finding" id="%s">\n<h4><a href="%s">%s</a></h4>\n<p class="where"><a href="%s">%s</a></p>\n<p class="authored">%s</p>\n</article>'
                          % (esc(it["id"]), href, esc(it["title"]), href, esc(where), render_authored_safe(it["text"], runs)))
-            f_txt += ["### %s" % it["title"], "%s: %s/%s" % (where, SITE, href.replace(".html", "")), "", authored_plain(it["text"], runs), ""]
+            f_txt += ["### %s" % it["title"], "%s. Text: %s. Interactive: %s/%s" % (where, tpart, SITE, href.replace(".html", "")), "", authored_plain(it["text"], runs), ""]
         f_secs.append('<section class="findings-sec" id="f-%s">\n<h3>%s</h3>\n<p class="authored">%s</p>\n%s\n</section>' % (esc(s["id"]), esc(s["title"]), render_authored_safe(s["lede"], runs), "\n".join(items)))
     simple_page("findings.html", "The findings", '<header class="room-head">\n<h2>The findings</h2>\n<p class="note">%s</p>\n</header>\n%s' % (render_authored_safe(FD.INTRO, runs), "\n".join(f_secs)), FD.DESC)
     write("t/findings.txt", "\n".join(f_txt))
@@ -1138,12 +1146,13 @@ def build():
     write("t/colophon.txt", "# Colophon, Endlessly ending stories\n\n" + "\n\n".join("## %s\n%s" % (h, b) for h, b in C.COLOPHON) + "\n\nBuilt %s by site/build.py.\n" % built)
 
     # llms.txt
-    out = ["# %s" % C.SITE_TITLE, "", "> %s" % C.SITE_SUB, ""]
+    out = ["# %s" % C.SITE_TITLE, "", "> %s" % C.SITE_SUB, "",
+           "- [The findings](%s/t/findings.txt): what happened, by what is interesting, in %d short items, each naming its room and hop; read this first" % (SITE, sum(len(s["items"]) for s in FD.SECTIONS)), ""]
     for para in C.INTRO: out += [re.sub(r"\s+", " ", para), ""]
     out += ["Seed of most rooms: \"%s\"" % seed, ""]
     out += [authored_plain(C.FOR_MODELS, runs), ""]
     out += ["## Start here", "",
-            "- [The findings](%s/t/findings.txt): what happened, by what is interesting, each item linked to its room and hop" % SITE,
+            "- [The findings](%s/t/findings.txt): the moments worth seeing, each with its room and hop" % SITE,
             "- [The poem](%s/t/poem.txt): written by a fresh Claude context before any of the experiments" % SITE,
             "- [Colophon](%s/t/colophon.txt): what is data, what is authored, the harness" % SITE,
             "- [The map](%s/map): transition graph of the page-scale Qwen runs" % SITE,

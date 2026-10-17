@@ -318,7 +318,7 @@ Chrome (--headless=new --screenshot) opens file:// fine and was used for the lat
   first hop.
 - The findings page, dist/findings.html and t/findings.txt, from src/findings.py: six sections (what a model stops on; endings
   written on purpose; recognizing the mirror; what worse means to each model; shared priors; small repairs, accidents, and what
-  the metrics never saw), 46 items, each a short paragraph with a link to r/<room>.html#<hop>; build.py checks that the room
+  the metrics never saw), 56 items, each a short paragraph that names its room and hop in plain text and links to r/<room>.html#<hop>; the text version t/findings.txt names the text part that holds the hop and is the first entry in llms.txt; build.py checks that the room
   exists and has that hop, and every quotation goes through the macro. Linked from the front page (next to Enter room 1, in the
   start-here list and in the footer links), from llms.txt under Start here, and in the walk between the last room and the map.
 - Rooms 64 and 65 (src/rooms_october2.py, 59 quotes): 64 "Worse and better, Argon" (experiments/operators_gemini_20261017,
