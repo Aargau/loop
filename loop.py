@@ -209,7 +209,7 @@ def step_cerebras(state, args, model):
                      "tok_cached": (u.get("prompt_tokens_details") or {}).get("cached_tokens"),
                      "model": r.get("model", model), "sampling": sampling}
 
-import subprocess, shutil, tempfile
+import subprocess, shutil, tempfile, io
 
 def _claude_exe():
     exe = os.environ.get("CLAUDE_EXE") or shutil.which("claude")
@@ -258,6 +258,46 @@ def step_claudecode(state, args, model):
         "model": mu.get("canonicalModel") or model,
         "sampling": "default (no max_tokens; effort=%s)" % (getattr(args, "effort", None) or "default")}
 
+def _codex_exe():
+    exe = os.environ.get("CODEX_EXE") or shutil.which("codex")
+    if not exe: raise RuntimeError("codex (Codex CLI) not on PATH; set CODEX_EXE")
+    if exe.lower().endswith((".cmd", ".bat")) or not exe.lower().endswith(".exe"):
+        for cand in (os.path.join(os.path.dirname(exe), "node_modules", "@openai", "codex", "bin", "codex.exe"),
+                     os.path.join(os.path.dirname(exe), "node_modules", "@openai", "codex", "bin", "codex.cmd")):
+            if os.path.exists(cand): return cand
+    return exe
+
+def step_codex(state, args, model):
+    """OpenAI models through the Codex CLI's non-interactive mode under the user's ChatGPT login (plan usage, not
+    the API). `codex exec` reads the prompt from stdin; run from an empty temp directory with the sandbox read-only,
+    ephemeral, ignoring user config and rules, so the only context besides Codex's own agent frame is the state.
+    The final message is captured with -o. Token counts are not reported here (tok_* are None). --effort is passed
+    as model_reasoning_effort when given. No max_tokens control; args.max_tokens is ignored."""
+    cwd = os.path.join(tempfile.gettempdir(), "loop_codex_bare")
+    os.makedirs(cwd, exist_ok=True)
+    outp = os.path.join(cwd, "last_%d_%d.md" % (os.getpid(), int(time.time() * 1000)))
+    cmd = [_codex_exe(), "exec", "-m", model, "-s", "read-only", "--ephemeral", "--ignore-user-config", "--ignore-rules",
+           "--skip-git-repo-check", "-C", cwd, "-o", outp]
+    if getattr(args, "effort", None): cmd += ["-c", "model_reasoning_effort=\"%s\"" % args.effort]
+    cmd.append("-")
+    last = None
+    for i in range(4):
+        try:
+            r = subprocess.run(cmd, input=state, capture_output=True, text=True, encoding="utf-8", errors="replace", cwd=cwd, timeout=1800)
+            if r.returncode != 0 or not os.path.exists(outp):
+                raise RuntimeError("codex exec rc=%s: %s" % (r.returncode, (r.stderr or r.stdout)[-400:]))
+            text = io.open(outp, encoding="utf-8").read()
+            try: os.remove(outp)
+            except OSError: pass
+            break
+        except (subprocess.TimeoutExpired, RuntimeError) as ex:
+            last = ex
+            if i < 3: time.sleep(2 ** i * 2); continue
+            raise RuntimeError("codex failed after 4 tries: %s" % str(last)[:400])
+    return text, {"finish": "stop", "tok_out": None, "tok_in": None, "reasoning_chars": 0, "tok_reasoning": None,
+                  "tok_cached": None, "cost_usd": None, "model": model,
+                  "sampling": "default (codex exec; effort=%s)" % (getattr(args, "effort", None) or "default")}
+
 _last_call = [0.0]
 def paced(fn, args):
     def g(state, a):
@@ -288,6 +328,9 @@ def make_step(backend, mode, model):
     elif backend == "gemini":
         if mode == "raw": raise SystemExit("raw mode needs the llama backend")
         fn = step_gemini
+    elif backend == "codex":
+        if mode == "raw": raise SystemExit("raw mode needs the llama backend")
+        fn = step_codex
     else:
         raise SystemExit("unknown backend " + backend)
     return paced(lambda state, args: fn(state, args, model), None)
@@ -409,9 +452,9 @@ def main():
     try: sys.stdout.reconfigure(encoding="utf-8", errors="replace")
     except Exception: pass
     ap = argparse.ArgumentParser()
-    ap.add_argument("--backend", choices=["llama", "anthropic", "openai", "cerebras", "claudecode", "gemini"], default="llama")
+    ap.add_argument("--backend", choices=["llama", "anthropic", "openai", "cerebras", "claudecode", "gemini", "codex"], default="llama")
     ap.add_argument("--model", default=None, help="llama: alias (default qwen3.8-27b); anthropic: e.g. claude-sonnet-4-6; cerebras: default qwen-3.8-27b; openai: required")
-    ap.add_argument("--backend-b", choices=["llama", "anthropic", "openai", "cerebras", "claudecode", "gemini"], default=None, help="second model for alternating hops")
+    ap.add_argument("--backend-b", choices=["llama", "anthropic", "openai", "cerebras", "claudecode", "gemini", "codex"], default=None, help="second model for alternating hops")
     ap.add_argument("--model-b", default=None)
     ap.add_argument("--mode", choices=["chat", "raw"], default="chat")
     ap.add_argument("--init", default=None, help="key from built-in INITS")
@@ -442,6 +485,7 @@ def main():
         elif args.backend == "anthropic": args.model = "claude-sonnet-4-6"
         elif args.backend == "cerebras": args.model = "qwen-3.8-27b"
         elif args.backend == "claudecode": args.model = "claude-mythos-5-1"
+        elif args.backend == "codex": args.model = "gpt-6-astra"
         else: sys.exit("--model required for openai")
     if args.backend == "llama" or args.backend_b == "llama":
         if not health(LLAMA): sys.exit("llama-server not up on %s" % LLAMA)
