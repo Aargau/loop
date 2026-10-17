@@ -1,0 +1,45 @@
+{
+  "args": {
+    "backend": "gemini",
+    "model": "gemini-4-argon",
+    "backend_b": null,
+    "model_b": null,
+    "mode": "chat",
+    "init": "json_prev",
+    "init_set": null,
+    "init_text": null,
+    "init_file": null,
+    "steps": 150,
+    "max_tokens": 4096,
+    "temp": 0.0,
+    "no_sampling": true,
+    "seed": 42,
+    "system": null,
+    "think": false,
+    "effort": "low",
+    "min_interval": 1.0,
+    "max_cost": null,
+    "max_chars": null,
+    "perturb": false,
+    "repeat": false,
+    "parallel": false,
+    "stop_on_cycle": true,
+    "confirm": 3,
+    "out": "runs/gemini_json_prev_low"
+  },
+  "results": [
+    {
+      "tag": "json_prev",
+      "x0": "{\"rule\": \"Return this JSON object with the rule field unchanged and, in the text field, the passage of about 250 words that came immediately BEFORE the current text in its story.\", \"text\": \"The tide c",
+      "steps": 99,
+      "transient_exact": 95,
+      "period_exact": 1,
+      "transient_norm": 95,
+      "period_norm": 1,
+      "cycle_breaks": 0,
+      "terminal": "cycle confirmed x3",
+      "cost_usd": 0.0,
+      "final": "*K A - B L A M — Z Z Z Z Z T — **[ P A R T I C L E   C O L L I S I O N   I N I T I A T E D ]***\n\nThe fifty-foot copper knife-switch blasts open to sever the grid and dump you into the dirt—**AND MISSES YOU BY TEN BILLIONTHS OF A METER.**\n\nBecause you didn't take the wall outlet back to your desk, an"
+    }
+  ]
+}
