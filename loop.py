@@ -365,10 +365,11 @@ def run_trajectory(x0, args, tag, log, steps, share=None):
         if EMB_OK:
             e = embed(out); rec["cos_prev"] = cos(eprev, e); rec["cos_x0"] = cos(e0, e); eprev = e
         res["cost_usd"] = round((res.get("cost_usd") or 0.0) + (meta.get("cost_usd") or 0.0), 5)
+        cap_stop = None
         if args.max_cost is not None and res["cost_usd"] > args.max_cost:
-            log(rec); traj_stop = "cost cap %.2f reached at t=%d" % (args.max_cost, t); res["terminal"] = traj_stop; res["steps"] = t; print("[%s] %s" % (tag, traj_stop)); break
-        if args.max_chars is not None and len(out) > args.max_chars:
-            log(rec); traj_stop = "char cap %d exceeded at t=%d (%d chars)" % (args.max_chars, t, len(out)); res["terminal"] = traj_stop; res["steps"] = t; print("[%s] %s" % (tag, traj_stop)); break
+            cap_stop = "cost cap %.2f reached at t=%d" % (args.max_cost, t)
+        elif args.max_chars is not None and len(out) > args.max_chars:
+            cap_stop = "char cap %d exceeded at t=%d (%d chars)" % (args.max_chars, t, len(out))
         if period is not None:
             if hashes[t] != hashes[t - period]:
                 rec["cycle_broken"] = period; res["cycle_breaks"] += 1
@@ -393,6 +394,8 @@ def run_trajectory(x0, args, tag, log, steps, share=None):
         rec["out"] = out
         log(rec)
         state = out; res["steps"] = t
+        if cap_stop:
+            res["terminal"] = cap_stop; print("[%s] %s" % (tag, cap_stop), flush=True); break
         if not out.strip():
             res["terminal"] = "empty"; break
         if args.stop_on_cycle and period is not None and confirmed >= args.confirm * period:
