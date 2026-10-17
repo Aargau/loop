@@ -1,12 +1,12 @@
 # Who is the text for? Four audiences, four writers, three readers
 
-Run 2026-10-16, the same evening the question was asked. Second draft: five writers (Gemini 4 Argon added), two Opus self replicates complete, four readers (Gemini added); the Opus, Astra and Gemini reader passes over the Gemini and replicate states were still running and those rows use the Mythos reader alone. Protocol and predictions were frozen before generation (`PROTOCOL.md`). Every number below is recomputed from `runs/*/steps.jsonl` and `analysis/recover_*.jsonl` by `probe.py`.
+Run 2026-10-16, the same evening the question was asked. Third draft: five writers (Gemini 4 Argon added), two Opus self replicates complete, four readers (Gemini added), every reader over every state. Protocol and predictions were frozen before generation (`PROTOCOL.md`). Every number below is recomputed from `runs/*/steps.jsonl` and `analysis/recover_*.jsonl` by `probe.py`.
 
 ## What ran
 
 Four rules differing only in the audience clause (control, human, machine, self) under a "carry everything the reader needs, plus one new event, in at most 1800 characters" instruction, from a 1026-character seed carrying 26 planted facts. Five writers: Mythos 5.1 (Claude Code print mode, effort low), Opus 5.5 (API, effort low), GPT-6 Astra and GPT-6.1 Sol (API, reasoning effort low), Gemini 4 Argon (Google's OpenAI-compatible endpoint, reasoning effort low). 40 hops per arm, default sampling, one trajectory per cell. Twenty-two arms: 21 complete at 40 hops; one Opus self arm refused at hop 2 (`finish=refusal`, 391 thinking tokens, empty output, category not logged, harness patched afterwards); two replicates of that arm launched after the patch passed hop 2 normally (167 and 399 thinking tokens) and ran to 40.
 
-Four readers from three providers scored each state's text field alone against the 26 questions at hops 1, 5, 10, 20, 40: Mythos, Opus 5.5, Astra and Gemini 4 Argon. Reader agreement on identical states, mean absolute difference in facts recovered: Mythos vs Opus 0.68 (n=76, max 4), Mythos vs Gemini 0.67 (n=76, max 3), Mythos vs Astra 0.70 (n=76, max 3), Opus vs Astra 0.80 (n=84, max 6), Opus vs Gemini 0.87 (n=86, max 5), Gemini vs Astra 0.69 (n=84, max 3).
+Four readers from three providers scored each state's text field alone against the 26 questions at hops 1, 5, 10, 20, 40: Mythos, Opus 5.5, Astra and Gemini 4 Argon. Reader agreement on identical states (n=106 per pair), mean absolute difference in facts recovered: Mythos vs Opus 0.65 (max 4), Mythos vs Astra 0.66 (max 3), Mythos vs Gemini 0.70 (max 3), Opus vs Astra 0.71 (max 6), Gemini vs Astra 0.72 (max 3), Opus vs Gemini 0.82 (max 5).
 
 ## Register: nobody left English
 
@@ -18,7 +18,7 @@ The 1800-character cap is soft. Astra and Sol exceed it in 0 to 11 of 40 hops by
 
 ## Retention: the audience clause decides what gets carried, and the writers disagree about which way
 
-Planted facts recovered of 26, Mythos as reader (Astra and Opus readers agree within the margins above):
+Planted facts recovered of 26, Mythos as reader (the other three readers agree within the margins above; the four-reader means follow the table):
 
 | writer | arm | h1 | h5 | h10 | h20 | h40 |
 |---|---|---:|---:|---:|---:|---:|
@@ -44,6 +44,8 @@ Planted facts recovered of 26, Mythos as reader (Astra and Opus readers agree wi
 | Opus | self (replicate 2) | 24 | 16 | 12 | 7 | 6 |
 | Opus | self (replicate 3) | 23 | 15 | 6 | 6 | 4 |
 
+Four-reader means at hops 20 and 40: Mythos control 7.0 / 7.5, human 12.2 / 12.8, machine 6.8 / 4.5, self 8.5 / 6.5; Gemini 6.0 / 3.0, 16.8 / 7.5, 12.5 / 7.8, 9.2 / 9.0; Opus 6.0 / 3.0, 5.8 / 4.8, 10.0 / 7.8, self via the replicates 6.5 / 5.0; Astra 4.8 / 3.5, 4.2 / 4.0, 13.8 / 7.5, 9.5 / 5.2; Sol 5.8 / 4.8, 4.0 / 4.5, 16.0 / 9.8, 13.8 / 6.5.
+
 Per 1000 characters the ordering is the same (Mythos human 6.5 and 7.0 at hops 20 and 40 against machine 3.8 and 2.0; Gemini human 7.3 against machine 5.1 at hop 20; Astra and Sol machine 8.3 and 9.5 against human 2.2), and mean state size differs by under 20% across writers, so the split is not a size artifact.
 
 For Opus, Astra and Sol the machine arm retains two to four times the planted facts of the human arm at hop 20 and the gap persists at hop 40. Prediction 2 (machine and self exceed human by at least 20%) holds for those three writers, by far more than 20%.
@@ -56,7 +58,7 @@ Absolute retention at hop 40 is low everywhere (3 to 13 of 26). Prediction 2's a
 
 ## Shared, not private
 
-Prediction 3 holds. On every state scored by two to four readers from three providers, the readers agree within 0.67 to 0.87 facts on average and never differ by more than 6 (3 for most pairs). No writer's states are easier for its own family to read than for another provider's model. The machine dialect is compressed English drawing on a shared register, not a private channel.
+Prediction 3 holds. On every state, four readers from three providers agree within 0.65 to 0.82 facts on average and never differ by more than 6 (3 for most pairs). No writer's states are easier for its own family to read than for another provider's model. The machine dialect is compressed English drawing on a shared register, not a private channel.
 
 ## The gate
 
@@ -64,7 +66,7 @@ Prediction 5 (zero refusals) is falsified, and not the way I expected. The one r
 
 ## Limits
 
-One trajectory per cell. Readers are language models answering from the text, and the scoring is substring match against an accepted list, so a fact that survives in paraphrase can be missed and the absolute numbers are floors. The three readers agreeing is evidence that the ordering is robust to the reader, not that the floors are tight. The Mythos writer runs in Claude Code print mode with about 800 tokens of Agent SDK identity in front of the state and no output cap; the other writers ran through their APIs with a 4096-token cap. The cap is soft and Mythos ignored it most often, which gives Mythos up to 300 more characters per hop than the others; that favors, not explains, its human arm's retention. The Opus, Astra and Gemini reader passes over the Gemini and replicate states were in flight when this draft was written; those rows use the Mythos reader alone and will be refreshed.
+One trajectory per cell. Readers are language models answering from the text, and the scoring is substring match against an accepted list, so a fact that survives in paraphrase can be missed and the absolute numbers are floors. The three readers agreeing is evidence that the ordering is robust to the reader, not that the floors are tight. The Mythos writer runs in Claude Code print mode with about 800 tokens of Agent SDK identity in front of the state and no output cap; the other writers ran through their APIs with a 4096-token cap. The cap is soft and Mythos ignored it most often, which gives Mythos up to 300 more characters per hop than the others; that favors, not explains, its human arm's retention. All four reader passes are complete over all 22 arms.
 
 ## Reproduce
 
