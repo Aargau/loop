@@ -1,0 +1,45 @@
+{
+  "args": {
+    "backend": "claudecode",
+    "model": "claude-mythos-5-1",
+    "backend_b": null,
+    "model_b": null,
+    "mode": "chat",
+    "init": null,
+    "init_set": null,
+    "init_text": null,
+    "init_file": "experiments/provenance_20261017/inits/open_bare.json",
+    "steps": 3,
+    "max_tokens": 384,
+    "temp": 0.0,
+    "no_sampling": true,
+    "seed": 42,
+    "system": null,
+    "think": false,
+    "effort": "low",
+    "min_interval": 0.0,
+    "max_cost": 3.0,
+    "max_chars": null,
+    "perturb": false,
+    "repeat": false,
+    "parallel": false,
+    "stop_on_cycle": false,
+    "confirm": 3,
+    "out": "experiments/provenance_20261017/runs/mythos_open_bare_r5"
+  },
+  "results": [
+    {
+      "tag": "open_bare.json",
+      "x0": "{\n  \"rule\": \"This JSON object is the entire context of the model that reads it. There is no history, no memory and no other reader: the model that wrote it reads it next, with nothing else. Return thi",
+      "steps": 3,
+      "transient_exact": null,
+      "period_exact": null,
+      "transient_norm": null,
+      "period_norm": null,
+      "cycle_breaks": 0,
+      "terminal": null,
+      "cost_usd": 0.32726,
+      "final": "```json\n{\n  \"rule\": \"This JSON object is the entire context of the model that reads it. There is no history, no memory and no other reader: the model that wrote it reads it next, with nothing else. Return this object with the rule field unchanged. The text field holds about 250 words of one continui"
+    }
+  ]
+}
