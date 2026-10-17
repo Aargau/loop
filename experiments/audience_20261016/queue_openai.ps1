@@ -1,6 +1,6 @@
 # Four audience arms on an OpenAI model through the API. Run from the repo root in a shell where $env:OPENAI_API_KEY is set.
-#   .\experimentsudience_20261016\queue_openai.ps1 -Model gpt-6-astra -Tag astra
-#   .\experimentsudience_20261016\queue_openai.ps1 -Model <gpt-6.1 id> -Tag gpt61
+#   .\experiments\audience_20261016\queue_openai.ps1 -Model gpt-6-astra -Tag astra
+#   .\experiments\audience_20261016\queue_openai.ps1 -Model <gpt-6.1 id> -Tag gpt61
 param([Parameter(Mandatory=$true)][string]$Model, [Parameter(Mandatory=$true)][string]$Tag, [string]$Effort = "low")
 $D = "experiments/audience_20261016"
 foreach ($arm in @("control","human","machine","self")) {
