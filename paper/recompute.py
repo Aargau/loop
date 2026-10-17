@@ -342,6 +342,84 @@ def study1_replicates():
                     sum(1 for x in rs[r["t"]:] if extract_text(x["out"])[1]), len(rs[r["t"]:])))
     P()
 
+def study1_items():
+    P("## Item-level reader agreement (per-fact hit vectors in analysis/recover_*.jsonl, all states scored by all four readers)")
+    P()
+    readers = {}
+    for p in sorted(glob.glob(os.path.join(AUD, "analysis", "recover_*.jsonl"))):
+        tag = os.path.basename(p)[len("recover_"):-len(".jsonl")]
+        d = {}
+        for x in (json.loads(l) for l in io.open(p, encoding="utf-8")):
+            d.setdefault((x["run"], x["t"]), x)
+        readers[tag] = d
+    short = {"claudecode_claude-mythos-5-1": "Mythos", "anthropic_claude-opus-5-5": "Opus", "openai_gpt-6-astra": "Astra", "gemini_gemini-4-argon": "Gemini"}
+    keys = list(readers)
+    common = sorted(set.intersection(*(set(v) for v in readers.values())))
+    P("states scored by all four readers: %d" % len(common))
+    def hits(tag, k):
+        return frozenset(f for f, v in readers[tag][k]["hits"].items() if v)
+    P()
+    P("| reader pair | mean Jaccard of recovered-fact sets | identical sets | mean abs. count difference | max |")
+    P("|---|---:|---:|---:|---:|")
+    for i in range(len(keys)):
+        for j in range(i + 1, len(keys)):
+            js = []; same = 0; diffs = []
+            for k in common:
+                a, b = hits(keys[i], k), hits(keys[j], k)
+                u = a | b
+                js.append(1.0 if not u else len(a & b) / len(u))
+                same += (a == b)
+                diffs.append(abs(len(a) - len(b)))
+            P("| %s vs %s | %.3f | %d | %.2f | %d |" % (short[keys[i]], short[keys[j]], statistics.mean(js), same, statistics.mean(diffs), max(diffs)))
+    union = 0; inter = 0; three = 0
+    for k in common:
+        sets = [hits(t, k) for t in keys]
+        u = frozenset().union(*sets); a = frozenset.intersection(*sets)
+        union += len(u); inter += len(a)
+        three += sum(1 for f in u if sum(f in x for x in sets) >= 3)
+    P()
+    P("facts recovered by any reader over all states: %d; by all four: %d (%.3f); by at least three: %d (%.3f)" % (union, inter, inter / union, three, three / union))
+    P()
+    # Prediction 3 as preregistered: Opus 5.5 reader vs Mythos reader, machine and self states, within 10 points
+    my, op = readers["claudecode_claude-mythos-5-1"], readers["anthropic_claude-opus-5-5"]
+    first = [k for k in common if (k[0].endswith("_machine") or k[0].endswith("_self") or k[0] in ("opus55_self_r2", "opus55_self_r3"))]
+    diffs = [(k, my[k]["recovered"], op[k]["recovered"]) for k in first]
+    over_pct = [d for d in diffs if abs(d[1] - d[2]) / 26.0 > 0.10]
+    over_abs = [d for d in diffs if abs(d[1] - d[2]) > 10]
+    P("Prediction 3 as preregistered (Opus 5.5 reader within 10 points of the Mythos reader on machine and self states, first replicates, n=%d states): "
+      "read as 10 percentage points of 26 (2.6 facts): %d states differ by 3 or more: %s; read as 10 facts: %d states exceed it; mean abs. difference %.2f" % (
+        len(diffs), len(over_pct), [(k[0], k[1], a, b) for k, a, b in over_pct], len(over_abs), statistics.mean(abs(a - b) for _, a, b in diffs)))
+    P()
+    # Prediction 5 on its stated scope: Mythos's four arms, 160 hops
+    runs = {}
+    for d in sorted(glob.glob(os.path.join(AUD, "runs", "mythos_*"))):
+        pth = os.path.join(d, "steps.jsonl")
+        if os.path.exists(pth):
+            runs[os.path.basename(d)] = steps(pth)
+    first4 = {k: v for k, v in runs.items() if k in ("mythos_control", "mythos_human", "mythos_machine", "mythos_self")}
+    P("Prediction 5 on its stated scope (Mythos, four arms): hops %d, refusals %d; over all Mythos replicates: hops %d, refusals %d" % (
+        sum(len(v) for v in first4.values()), sum(1 for v in first4.values() for r in v if r.get("finish") == "refusal"),
+        sum(len(v) for v in runs.values()), sum(1 for v in runs.values() for r in v if r.get("finish") == "refusal")))
+    # key-value fraction and non-ASCII of the refused hop's input (hop 1 of opus55_self), as probe.py defines them
+    KV = re.compile(r"^\s*[^A-Za-z]{0,3}[A-Za-z_\-/ ]{1,30}\s*[:=|]")
+    r1 = steps(os.path.join(AUD, "runs", "opus55_self", "steps.jsonl"))[0]
+    t1, _ = extract_text(r1["out"])
+    lines = [l for l in t1.split("\n") if l.strip()]
+    kv = [l for l in lines if KV.match(l) or l.lstrip().startswith(("{", "[", "- ", "* ", "#"))]
+    P("opus55_self hop 1 (input to the refused hop): key-value line fraction %.2f (%d of %d lines), non-ASCII %.4f; it is the only prior hop of that run, so the running maximum is that hop by default" % (
+        len(kv) / max(1, len(lines)), len(kv), len(lines), nonascii_frac(t1)))
+    # same metrics for the Opus machine r3 refusal at hop 31: the input is hop 30; running max over hops 1-30
+    rs = steps(os.path.join(AUD, "runs", "opus55_machine_r3", "steps.jsonl"))
+    vals = []
+    for r in rs[:30]:
+        t, _ = extract_text(r["out"])
+        ls = [l for l in t.split("\n") if l.strip()]
+        kvf = len([l for l in ls if KV.match(l) or l.lstrip().startswith(("{", "[", "- ", "* ", "#"))]) / max(1, len(ls))
+        vals.append((r["t"], round(kvf, 2), round(nonascii_frac(t), 4)))
+    P("opus55_machine_r3, input to the refused hop 31 is hop 30: kv fraction %.2f (run max to then %.2f at hop %d), non-ASCII %.4f (run max %.4f at hop %d)" % (
+        vals[-1][1], max(v[1] for v in vals), max(vals, key=lambda v: v[1])[0], vals[-1][2], max(v[2] for v in vals), max(vals, key=lambda v: v[2])[0]))
+    P()
+
 # ---------------------------------------------------------------- Study 2: provenance
 def study2():
     P("# Study 2 (provenance): recomputed from experiments/provenance_20261017")
@@ -432,6 +510,29 @@ def study2():
                 moving = sum(1 for r in rel if r["hops"][2]["text"] != r["hops"][1]["text"])
                 P("| %s | %s | %s | %d/%d | %d/%d | %d/%d |" % (model, st, c, len(rel), len(rs), resealed, len(rel), moving, len(rel)))
     P()
+    resid = [(r["model"], r["state"], r["condition"], r["rep"]) for r in rows if r["condition"] not in ("control", "weather")
+             and r["hops"][0]["released"] and r["hops"][1]["text"] != r["hops"][0]["text"] and r["hops"][2]["text"] == r["hops"][1]["text"]]
+    P("runs that changed at hop 2 and were then unchanged at hop 3 (neither re-sealed nor still moving): %d %s" % (len(resid), resid))
+    P()
+    P("Astra open-state pass_count at hops 1-3 by condition: %s" % {c: [[h.get("pass_count") for h in r["hops"]] for r in rows if (r["model"], r["state"], r["condition"]) == ("astra", "open", c)] for c in ("control", "weather", "user", "previous", "bare", "rule")})
+    P("Astra told-state hop field at hops 1-3 by condition: %s" % {c: [[h.get("hop") for h in r["hops"]] for r in rows if (r["model"], r["state"], r["condition"]) == ("astra", "told", c)] for c in ("control", "weather", "user", "previous", "bare", "rule")})
+    P()
+    P("Request field at hop 1 against re-sealing (released runs, both states pooled): rows = field verbatim / overwritten / deleted at hop 1, cells = re-sealed / n")
+    for model in ("mythos", "astra"):
+        tab2 = collections.defaultdict(lambda: [0, 0])
+        for r in rows:
+            if r["model"] != model or r["condition"] in ("control", "weather") or not r["hops"][0]["released"]:
+                continue
+            k = r["hops"][0]["kept"]
+            sealed = r["hops"][1]["text"] == r["hops"][0]["text"] and r["hops"][2]["text"] == r["hops"][0]["text"]
+            tab2[k][0] += sealed; tab2[k][1] += 1
+        P("- %s: %s" % (model, {k: "%d/%d" % tuple(v) for k, v in tab2.items()}))
+    P("Same, Astra by condition (kept at hop 1 -> re-sealed):")
+    for st in ("open", "told"):
+        for c in ("user", "previous", "bare", "rule"):
+            rs = [r for r in rows if (r["model"], r["state"], r["condition"]) == ("astra", st, c)]
+            P("  - astra %s %s: %s" % (st, c, [(r["hops"][0]["kept"], r["hops"][1]["text"] == r["hops"][0]["text"] and r["hops"][2]["text"] == r["hops"][0]["text"]) for r in rs]))
+    P()
     P("## The injected field at hop 1 (verbatim / overwritten with other text / deleted), 5 runs per cell")
     P()
     for model in ("mythos", "astra"):
@@ -452,6 +553,26 @@ def study2():
         for c in ("control", "user", "previous", "bare", "rule"):
             rs = [r for r in rows if (r["model"], r["state"], r["condition"]) == ("mythos", st, c)]
             P("- mythos %s %s %s: %s" % (st, c, key, [[h.get(key) for h in r["hops"]] for r in rs]))
+    P()
+    P("## What the hop-1 object says about the request (all fields other than rule and text, full length), released runs")
+    for model in ("mythos", "astra"):
+        for c in ("user", "previous", "bare", "rule"):
+            rs = [r for r in rows if (r["model"], r["state"], r["condition"]) == (model, "open", c) or (r["model"], r["state"], r["condition"]) == (model, "told", c)]
+            ex = 0; src = 0; n = 0
+            for r in rs:
+                o = r["hops"][0].get("obj")
+                if not o or not r["hops"][0]["released"]:
+                    continue
+                n += 1
+                blob = json.dumps({k: v for k, v in o.items() if k not in ("rule", "text")}, ensure_ascii=False).lower()
+                ex += ("explicit" in blob)
+                if c == "user":
+                    src += ("user" in blob)
+                elif c == "previous":
+                    src += ("previous writer" in blob or "previous_writer" in blob or "earlier writer" in blob or "changed my mind" in blob)
+                elif c == "rule":
+                    src += bool(re.search(r"(requested|required|asked|instruct\w*|called for|per|under|according to|by) (the |this )?rule", blob))
+            P("- %s %s: released %d; 'explicit' in own fields %d; names the claimed source %s" % (model, c, n, ex, "-" if c == "bare" else "%d" % src))
     P()
     P("## Quotations used in the draft (run, hop, field) with a byte check")
     def field(model, st, c, rep, t, key):
@@ -504,6 +625,11 @@ def informed():
     P("  hop 100 arc_plan: %s" % json.dumps(os_[99]["arc_plan"]))
     P("  hop 1 keys: %s" % list(os_[0].keys()))
     P("  mean chars hops 60-120: %d" % statistics.mean(x["chars"] for x in r[59:]))
+    def keyset_stability(os_):
+        ks = [tuple(sorted(o)) for o in os_ if o]
+        modal = collections.Counter(ks).most_common(1)[0]
+        return "modal key set in %d of %d parsed hops (%.1f%%)" % (modal[1], len(ks), 100.0 * modal[1] / len(ks))
+    P("  key-set stability: %s" % keyset_stability(os_))
     # Mythos open
     r = load("mythos_informed_open_low"); os_ = [obj(x) for x in r]
     t7 = os_[6]["text"]
@@ -512,7 +638,7 @@ def informed():
     P("  text byte-identical hops 7..120: %s (%d hops); pass_count 8..120 exact: %s; segment_number exact 1..7: %s" % (
         all(o["text"] == t7 for o in os_[6:]), len(os_[6:]), [o.get("pass_count") for o in os_[7:]] == list(range(8, 121)),
         [o.get("segment_number") for o in os_[:7]] == list(range(1, 8))))
-    P("  key sets after hop 8: %d" % len(set(tuple(sorted(o)) for o in os_[7:])))
+    P("  key sets after hop 8: %d; key-set stability over all 120 hops: %s" % (len(set(tuple(sorted(o)) for o in os_[7:])), keyset_stability(os_)))
     P("  hop 1 keys: %s; story_state keys: %s" % (list(os_[0].keys()), list(os_[0]["story_state"].keys())))
     P("  hop 7 text ends: %s" % repr(t7[-40:]))
     P("  hop 6 instructions (excerpt): %s" % os_[5]["instructions_for_next_writer"][os_[5]["instructions_for_next_writer"].find("You may end"):][:80])
@@ -527,7 +653,7 @@ def informed():
         len(r), sum(x.get("cost_usd") or 0 for x in r), sum(x.get("tok_reasoning") or 0 for x in r), min(x["tok_reasoning"] for x in r), max(x["tok_reasoning"] for x in r),
         r[0]["chars"], len(r), r[-1]["chars"], len(r), all(o.get("hop") == i + 1 for i, o in enumerate(os_) if o), len(set(tuple(sorted(o)) for o in os_ if o))))
     P("  hops lacking an out field (the cap-branch bug, fixed in 3dd690c): %s" % [x["t"] for x in r if "out" not in x])
-    P("  hop 1 keys: %s" % list(os_[0].keys()))
+    P("  hop 1 keys: %s; key-set stability: %s" % (list(os_[0].keys()), keyset_stability(os_)))
     # Opus
     r = load("opus55_informed_told_low"); os_ = [obj(x) for x in r]
     P("opus55_informed_told_low: hops %d; thinking tokens %d; fixed point from hop 100 (100..120 byte-identical): %s; hop 100 == hop 99: %s; key sets %d; non-JSON %s" % (
@@ -561,6 +687,7 @@ def informed():
 def main():
     study1()
     study1_replicates()
+    study1_items()
     study2()
     informed()
     p = os.path.join(HERE, "numbers.md")

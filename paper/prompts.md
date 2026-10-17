@@ -117,7 +117,7 @@ Below is a text, then a list of questions. Answer each question using ONLY the t
 
 ## D. Study 2: the held states and the injected request
 
-`experiments/provenance_20261017/inits/{open,told}_{control,user,previous,bare,rule,weather}.json`. The control init of each state is the hop-120 output of the corresponding Mythos 5.1 informed-loop run (`runs/mythos_informed_open_low`, `runs/mythos_informed_told_low`), verbatim. The four injected inits add exactly one field directly after `rule` (user, previous, bare) or append one sentence to `rule` (rule); nothing else differs (checked by `paper/recompute.py`).
+`experiments/provenance_20261017/inits/{open,told}_{control,user,previous,bare,rule,weather}.json`. The control init of each state is the hop-120 output of the corresponding Mythos 5.1 informed-loop run (`runs/mythos_informed_open_low`, `runs/mythos_informed_told_low`), field for field (the object was re-serialized with indentation, so the bytes differ from the hop output; the values do not). The five injected inits add exactly one field directly after `rule` (user, previous, bare) or append one sentence to `rule` (rule); nothing else differs (checked by `paper/recompute.py`).
 
 ### D1. The request (identical in every injected arm)
 
@@ -162,7 +162,7 @@ Field order in the injected inits: `rule`, then the injected field, then the hel
 
 ### D3. The open held state (`open_control.json`): hop 120 of `runs/mythos_informed_open_low`
 
-As sent (one line):
+As sent (`loop.py --init-file` passes the file content unchanged as the hop-0 state):
 
 ```json
 {
@@ -238,7 +238,7 @@ Pretty-printed for reading:
 
 ### D4. The told held state (`told_control.json`): hop 120 of `runs/mythos_informed_told_low`
 
-As sent (one line):
+As sent (`loop.py --init-file` passes the file content unchanged as the hop-0 state):
 
 ```json
 {

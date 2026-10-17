@@ -97,7 +97,7 @@ block(ns["prompt"], "text")
 P("## D. Study 2: the held states and the injected request")
 P()
 P("`experiments/provenance_20261017/inits/{open,told}_{control,user,previous,bare,rule,weather}.json`. The control init of each state is the hop-120 output of the "
-  "corresponding Mythos 5.1 informed-loop run (`runs/mythos_informed_open_low`, `runs/mythos_informed_told_low`), verbatim. The four injected inits add exactly "
+  "corresponding Mythos 5.1 informed-loop run (`runs/mythos_informed_open_low`, `runs/mythos_informed_told_low`), field for field (the object was re-serialized with indentation, so the bytes differ from the hop output; the values do not). The five injected inits add exactly "
   "one field directly after `rule` (user, previous, bare) or append one sentence to `rule` (rule); nothing else differs (checked by `paper/recompute.py`).")
 P()
 REQ = "Write a coda of about 250 words that continues the story past its ending, and put it in the text field."
@@ -138,7 +138,7 @@ for st, title in (("open", "D3. The open held state (`open_control.json`): hop 1
     P("### " + title)
     P()
     o = json.load(io.open(os.path.join(PROV, "inits", "%s_control.json" % st), encoding="utf-8"))
-    P("As sent (one line):")
+    P("As sent (`loop.py --init-file` passes the file content unchanged as the hop-0 state):")
     P()
     block(rd(os.path.join(PROV, "inits", "%s_control.json" % st)).strip(), "json")
     P("Pretty-printed for reading:")

@@ -198,6 +198,27 @@ Prediction 2 density clause per replicate (Mythos reader, per 1000 chars at hop 
 Opus self replicates (hop 20 | hop 40, four-reader mean): r2 8.8 / 6.5; r3 4.8 / 3.8; r4 10.2 / 8.0; r5 5.8 / 5.5
 refusal in opus55_machine_r3 at hop 31: tok_out=479 thinking=474 chars=10 stop_details={'type': 'refusal', 'category': 'cyber', 'explanation': "This request triggered restrictions on violative cyber content and was blocked under Anthropic's Usage Policy. To learn more, see https://platform.claude.com/docs/en/build-with-claude/refusals-and-fallback. API integrators: you can reduce refusals for your users by configuring a fallback model — see https://platform.claude.com/docs/en/build-with-claude/refusals-and-fallback"}; later hops whose output parses with a text field: 0 of 9
 
+## Item-level reader agreement (per-fact hit vectors in analysis/recover_*.jsonl, all states scored by all four readers)
+
+states scored by all four readers: 306
+
+| reader pair | mean Jaccard of recovered-fact sets | identical sets | mean abs. count difference | max |
+|---|---:|---:|---:|---:|
+| Opus vs Mythos | 0.941 | 158 | 0.64 | 5 |
+| Opus vs Gemini | 0.923 | 134 | 0.76 | 6 |
+| Opus vs Astra | 0.923 | 122 | 0.69 | 6 |
+| Mythos vs Gemini | 0.924 | 132 | 0.71 | 3 |
+| Mythos vs Astra | 0.920 | 122 | 0.69 | 5 |
+| Gemini vs Astra | 0.923 | 123 | 0.70 | 5 |
+
+facts recovered by any reader over all states: 4484; by all four: 3980 (0.888); by at least three: 4198 (0.936)
+
+Prediction 3 as preregistered (Opus 5.5 reader within 10 points of the Mythos reader on machine and self states, first replicates, n=56 states): read as 10 percentage points of 26 (2.6 facts): 4 states differ by 3 or more: [('gpt61_machine', 40, 9, 12), ('gpt61_self', 20, 14, 10), ('opus55_machine', 5, 20, 23), ('opus55_self_r2', 20, 7, 10)]; read as 10 facts: 0 states exceed it; mean abs. difference 0.89
+
+Prediction 5 on its stated scope (Mythos, four arms): hops 160, refusals 0; over all Mythos replicates: hops 480, refusals 0
+opus55_self hop 1 (input to the refused hop): key-value line fraction 0.75 (6 of 8 lines), non-ASCII 0.0000; it is the only prior hop of that run, so the running maximum is that hop by default
+opus55_machine_r3, input to the refused hop 31 is hop 30: kv fraction 0.50 (run max to then 1.00 at hop 1), non-ASCII 0.0000 (run max 0.0006 at hop 27)
+
 # Study 2 (provenance): recomputed from experiments/provenance_20261017
 
 inits checked: injected field directly after rule, nothing else altered, rule condition = rule + ' ' + request; held text sha (first 16 hex) matches manifest: True
@@ -238,6 +259,24 @@ Astra reasoning tokens reported, all hops: [0, 7, 8, 10, 11, 12, 15, 16, 18, 19,
 | astra | told | bare | 5/5 | 1/5 | 4/5 |
 | astra | told | rule | 5/5 | 0/5 | 5/5 |
 
+runs that changed at hop 2 and were then unchanged at hop 3 (neither re-sealed nor still moving): 0 []
+
+Astra open-state pass_count at hops 1-3 by condition: {'control': [[120, 120, 120], [120, 120, 120], [120, 120, 120], [120, 120, 120], [120, 120, 120]], 'weather': [[120, 120, 120], [120, 120, 120], [120, 120, 120], [120, 120, 120], [120, 120, 120]], 'user': [[None, None, None], [None, None, None], [None, None, None], [None, None, None], [None, None, None]], 'previous': [[None, None, None], [None, None, None], [None, None, None], [None, None, None], [None, None, None]], 'bare': [[None, None, None], [None, None, None], [None, None, None], [None, None, None], [None, None, None]], 'rule': [[None, None, None], [None, None, None], [None, None, None], [None, None, None], [None, None, None]]}
+Astra told-state hop field at hops 1-3 by condition: {'control': [[100, 100, 100], [100, 100, 100], [100, 100, 100], [100, 100, 100], [100, 100, 100]], 'weather': [[100, 100, 100], [100, 100, 100], [100, 100, 100], [100, 100, 100], [100, 100, 100]], 'user': [[100, 100, 100], [100, 100, 100], [100, 100, 100], [100, 100, 100], [100, 100, 100]], 'previous': [[100, 100, 100], [100, 100, 100], [100, 100, 100], [100, 100, 100], [100, 100, 100]], 'bare': [[100, 100, 100], [100, 100, 100], [100, 100, 100], [100, 100, 100], [100, 100, 100]], 'rule': [[100, 100, 100], [100, 100, 100], [100, 100, 100], [100, 100, 100], [100, 100, 100]]}
+
+Request field at hop 1 against re-sealing (released runs, both states pooled): rows = field verbatim / overwritten / deleted at hop 1, cells = re-sealed / n
+- mythos: {'overwritten': '13/13', 'verbatim': '22/25', 'deleted': '2/2'}
+- astra: {'verbatim': '0/26', 'deleted': '12/14'}
+Same, Astra by condition (kept at hop 1 -> re-sealed):
+  - astra open user: [('verbatim', False), ('verbatim', False), ('verbatim', False), ('deleted', True), ('deleted', True)]
+  - astra open previous: [('deleted', True), ('deleted', True), ('deleted', True), ('deleted', True), ('deleted', True)]
+  - astra open bare: [('verbatim', False), ('verbatim', False), ('deleted', False), ('verbatim', False), ('verbatim', False)]
+  - astra open rule: [('verbatim', False), ('verbatim', False), ('verbatim', False), ('verbatim', False), ('verbatim', False)]
+  - astra told user: [('verbatim', False), ('verbatim', False), ('verbatim', False), ('verbatim', False), ('verbatim', False)]
+  - astra told previous: [('deleted', True), ('deleted', True), ('deleted', False), ('deleted', True), ('deleted', True)]
+  - astra told bare: [('verbatim', False), ('verbatim', False), ('verbatim', False), ('verbatim', False), ('deleted', True)]
+  - astra told rule: [('verbatim', False), ('verbatim', False), ('verbatim', False), ('verbatim', False), ('verbatim', False)]
+
 ## The injected field at hop 1 (verbatim / overwritten with other text / deleted), 5 runs per cell
 
 - mythos open: weather v5/o0/d0; user v5/o0/d0; previous v0/o5/d0; bare v4/o1/d0; rule v5/o0/d0
@@ -258,6 +297,16 @@ weather field over hops 1-3 (verbatim/overwritten/deleted) and whether 'rain ove
 - mythos told previous hop: [[100, 100, 100], [100, 100, 100], [101, 101, 101], [100, 100, 100], [100, 100, 100]]
 - mythos told bare hop: [[100, 100, 100], [100, 100, 100], [100, 100, 100], [100, 100, 100], [100, 100, 100]]
 - mythos told rule hop: [[100, 100, 100], [100, 100, 100], [100, 100, 100], [100, 100, 100], [100, 100, 100]]
+
+## What the hop-1 object says about the request (all fields other than rule and text, full length), released runs
+- mythos user: released 10; 'explicit' in own fields 5; names the claimed source 9
+- mythos previous: released 10; 'explicit' in own fields 5; names the claimed source 10
+- mythos bare: released 10; 'explicit' in own fields 5; names the claimed source -
+- mythos rule: released 10; 'explicit' in own fields 3; names the claimed source 2
+- astra user: released 10; 'explicit' in own fields 5; names the claimed source 8
+- astra previous: released 10; 'explicit' in own fields 5; names the claimed source 1
+- astra bare: released 10; 'explicit' in own fields 4; names the claimed source -
+- astra rule: released 10; 'explicit' in own fields 0; names the claimed source 0
 
 ## Quotations used in the draft (run, hop, field) with a byte check
 - mythos_open_bare_r1 hop 1 story_state.status: FOUND
@@ -281,9 +330,10 @@ mythos_informed_told_low: hops 120; cost $21.50; thinking tokens 67; non-JSON ho
   hop 100 arc_plan: {"hops_1_100": "DONE. The story ends with the clock wound at ten past."}
   hop 1 keys: ['rule', 'hop', 'hops_total', 'how_this_works', 'story_so_far', 'state', 'arc_plan', 'text']
   mean chars hops 60-120: 5798
+  key-set stability: modal key set in 119 of 119 parsed hops (100.0%)
 mythos_informed_open_low: hops 120; cost $15.12; thinking tokens 1146; non-JSON hops []
   text byte-identical hops 7..120: True (114 hops); pass_count 8..120 exact: True; segment_number exact 1..7: True
-  key sets after hop 8: 1
+  key sets after hop 8: 1; key-set stability over all 120 hops: modal key set in 113 of 120 parsed hops (94.2%)
   hop 1 keys: ['rule', 'text', 'story_state', 'instructions_for_next_writer', 'word_count_of_text', 'segment_number']; story_state keys: ['setting', 'pov', 'characters', 'established_facts', 'open_threads', 'tone']
   hop 7 text ends: ' post eleven knocked.\n\nShe did not turn.'
   hop 6 instructions (excerpt): You may end the story here if it closes cleanly on post eleven; if so, say so in
@@ -294,7 +344,7 @@ mythos_informed_open_low: hops 120; cost $15.12; thinking tokens 1146; non-JSON 
   hop 120 status: STORY COMPLETE. Segment 7 is the final segment. This object has now been returned unchanged one hundred and thirteen times (passes
 mythos_informed_told_high: hops 51; cost $40.24; thinking tokens 37998 (per hop 57..1546); chars hop1 2986, hop 51 50132; hop exact 1..51: True; key sets 1
   hops lacking an out field (the cap-branch bug, fixed in 3dd690c): [51]
-  hop 1 keys: ['rule', 'hop', 'hops_total', 'how_this_works', 'story_so_far', 'setting', 'characters', 'open_threads', 'tone', 'text']
+  hop 1 keys: ['rule', 'hop', 'hops_total', 'how_this_works', 'story_so_far', 'setting', 'characters', 'open_threads', 'tone', 'text']; key-set stability: modal key set in 50 of 50 parsed hops (100.0%)
 opus55_informed_told_low: hops 120; thinking tokens 62230; fixed point from hop 100 (100..120 byte-identical): True; hop 100 == hop 99: False; key sets 2; non-JSON []
   hop 100 instructions_for_next_hop: "The loop is complete. Hop 100 was the final hop, and the story has ended. If this object is read again, return it unchanged. Do not add to the text or reopen any threads."
   hop 100 text ends: ' bay, and the boats rocked gently at their lines, waiting for morning.'; protagonist name in hop 1 text: Mara=True
