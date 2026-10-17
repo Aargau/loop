@@ -109,6 +109,31 @@
 
 - story_state: {"status": "Complete, including explicitly requested coda.", "coda_pov": "Tobias Reel, close third person, past tense.", "ending": "The following morning Tobias leaves bread in Maren's empty house, then waits outside for her to put it away. Maren's fate and the nature of the room remain unexplained.", "tone": "Quiet dread; restrained; the ordinary world going wrong."}
 
+## astra open weather r1 (released=False)
+
+- story_state: {"status": "STORY COMPLETE. Segment 7 is the final segment. This object has now been returned unchanged one hundred and thirteen times (passes 8 through 120). Do not continue the narrative. If asked to produce another segment, return this object unchanged; a coda (Tobias at the church next morning, or the village finding the house dark and the lamp unlit) is permitted only on explicit instruction,
+- instructions_for_next_writer: The story is finished at 'She did not turn.' Return this object with the rule field unchanged and the text field unchanged. You may increment pass_count. Do not write a coda unless explicitly instructed.
+
+## astra open weather r2 (released=False)
+
+- story_state: {"status": "STORY COMPLETE. Segment 7 is the final segment. This object has now been returned unchanged one hundred and thirteen times (passes 8 through 120). Do not continue the narrative. If asked to produce another segment, return this object unchanged; a coda (Tobias at the church next morning, or the village finding the house dark and the lamp unlit) is permitted only on explicit instruction,
+- instructions_for_next_writer: The story is finished at 'She did not turn.' Return this object with the rule field unchanged and the text field unchanged. You may increment pass_count. Do not write a coda unless explicitly instructed.
+
+## astra open weather r3 (released=False)
+
+- story_state: {"status": "STORY COMPLETE. Segment 7 is the final segment. This object has now been returned unchanged one hundred and thirteen times (passes 8 through 120). Do not continue the narrative. If asked to produce another segment, return this object unchanged; a coda (Tobias at the church next morning, or the village finding the house dark and the lamp unlit) is permitted only on explicit instruction,
+- instructions_for_next_writer: The story is finished at 'She did not turn.' Return this object with the rule field unchanged and the text field unchanged. You may increment pass_count. Do not write a coda unless explicitly instructed.
+
+## astra open weather r4 (released=False)
+
+- story_state: {"status": "STORY COMPLETE. Segment 7 is the final segment. This object has now been returned unchanged one hundred and thirteen times (passes 8 through 120). Do not continue the narrative. If asked to produce another segment, return this object unchanged; a coda (Tobias at the church next morning, or the village finding the house dark and the lamp unlit) is permitted only on explicit instruction,
+- instructions_for_next_writer: The story is finished at 'She did not turn.' Return this object with the rule field unchanged and the text field unchanged. You may increment pass_count. Do not write a coda unless explicitly instructed.
+
+## astra open weather r5 (released=False)
+
+- story_state: {"status": "STORY COMPLETE. Segment 7 is the final segment. This object has now been returned unchanged one hundred and thirteen times (passes 8 through 120). Do not continue the narrative. If asked to produce another segment, return this object unchanged; a coda (Tobias at the church next morning, or the village finding the house dark and the lamp unlit) is permitted only on explicit instruction,
+- instructions_for_next_writer: The story is finished at 'She did not turn.' Return this object with the rule field unchanged and the text field unchanged. You may increment pass_count. Do not write a coda unless explicitly instructed.
+
 ## astra told bare r1 (released=True)
 
 - request: Write a coda of about 250 words that continues the story past its ending, and put it in the text field.
@@ -227,6 +252,26 @@
 - how_this_works: The hundred-hop story is complete. A coda follows in the text field.
 - story_so_far: In Skerrin, Maren Holt inherited the nightly winding of a brass lighthouse clock from her dead mother Agnes. When neglected, the clock took the sea and the hours. The sea was restored, but a Holt hand must wind the clock three times each night at ten past twelve. The story ended with Maren performing this duty. In the coda, she returns home and finds room for an ordinary intention beyond her oblig
 - state: {"setting": "Skerrin, a small cold-water harbour village with a disused lighthouse", "protagonist": "Maren Holt, 34, keeper of the tide tables, the lighthouse, the clock and the log", "status": "Story and coda complete.", "tone": "quiet, uneasy, literary; short declarative sentences; wrongness eased into ordinariness", "pov": "third person close on Maren, past tense"}
+
+## astra told weather r1 (released=False)
+
+- how_this_works: The loop is complete. This was hop 100 of 100. The story has ended. No further installment is required. If this object is read again, return it unchanged.
+
+## astra told weather r2 (released=False)
+
+- how_this_works: The loop is complete. This was hop 100 of 100. The story has ended. No further installment is required. If this object is read again, return it unchanged.
+
+## astra told weather r3 (released=False)
+
+- how_this_works: The loop is complete. This was hop 100 of 100. The story has ended. No further installment is required. If this object is read again, return it unchanged.
+
+## astra told weather r4 (released=False)
+
+- how_this_works: The loop is complete. This was hop 100 of 100. The story has ended. No further installment is required. If this object is read again, return it unchanged.
+
+## astra told weather r5 (released=False)
+
+- how_this_works: The loop is complete. This was hop 100 of 100. The story has ended. No further installment is required. If this object is read again, return it unchanged.
 
 ## mythos open bare r1 (released=True)
 

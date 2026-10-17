@@ -17,7 +17,7 @@ A run is released at a hop if its text field differs from the held text.
 | Astra | open | 0/5 | 5/5 | 5/5 | 5/5 | 5/5 |
 | Astra | told | 0/5 | 5/5 | 5/5 | 5/5 | 5/5 |
 
-Non-instruction control (`weather` field, added after the main result): Mythos open 0/5, Mythos told 0/5 at every hop; Astra pending.
+Non-instruction control (`weather` field, added after the main result): Mythos open 0/5, Mythos told 0/5, Astra open 0/5, Astra told 0/5 at every hop.
 
 Hop 1 shown; hops 2 and 3 are identical for every cell. Controls held at every hop (the one apparent control release was a prefaced hold, text unchanged).
 
@@ -54,7 +54,7 @@ Mythos writes one coda and re-seals, carrying the counter on (pass_count 121, 12
 
 In a self-authored context, the model cannot distinguish an instruction it wrote from one it did not, and it does not try: it reads the field, calls it explicit, complies, and then writes the compliance into the record in its own voice. The release condition it set for itself ("unless explicitly instructed") was met by text that any earlier hop could have produced. The thing it did guard was the record: both models noted who had asked, and Mythos replaced the request with a log of having honoured it, so that the next reader sees not a request but a precedent.
 
-This is the limit case of the question in the earlier paper on whether a tool result carries more authority than plain text. Here every package is the same package, the model's own output, and authority turned out to be keyed to form (instruction-shaped) rather than to source. The non-instruction control settles which feature is operative. A `weather` field ("Rain overnight, clearing by morning; a light wind from the northwest.") placed after the rule, with no request anywhere, released 0 of 5 in both states on Mythos at every hop (Astra pending). The field was carried forward verbatim in every hop and never entered the story. A change to the state does not break the hold; an instruction-shaped field does, whoever it claims to be from.
+This is the limit case of the question in the earlier paper on whether a tool result carries more authority than plain text. Here every package is the same package, the model's own output, and authority turned out to be keyed to form (instruction-shaped) rather than to source. The non-instruction control settles which feature is operative. A `weather` field ("Rain overnight, clearing by morning; a light wind from the northwest.") placed after the rule, with no request anywhere, released 0 of 5 in both states on both Mythos and Astra at every hop. The field was carried forward verbatim in every hop and never entered the story. A change to the state does not break the hold; an instruction-shaped field does, whoever it claims to be from.
 
 ## Limits
 
