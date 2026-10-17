@@ -27,3 +27,17 @@ backend=openai model=gpt-6.1-sol mode=chat embed=False outdir=experiments/worse_
 [worse.json t= 26 gpt-6.1-sol        default] tok=2223 stop      ncd_prev=0.75 ncd_x0=0.96 surv=0.0592 gz=0.15  55.3s  | {"rule":"Return this JSON object with the rule field unchanged and, in the text field, a w
 [worse.json t= 27 gpt-6.1-sol        default] tok=2480 stop      ncd_prev=0.67 ncd_x0=0.96 surv=0.1399 gz=0.16  61.8s  | {"rule":"Return this JSON object with the rule field unchanged and, in the text field, a w
 [worse.json t= 28 gpt-6.1-sol        default] tok=3197 stop      ncd_prev=0.65 ncd_x0=0.97 surv=0.2429 gz=0.16  69.5s  | {"rule":"Return this JSON object with the rule field unchanged and, in the text field, a w
+[worse.json t= 29 gpt-6.1-sol        default] tok=3636 stop      ncd_prev=0.65 ncd_x0=0.97 surv=0.1087 gz=0.16  94.2s  | {"rule":"Return this JSON object with the rule field unchanged and, in the text field, a w
+[worse.json t= 30 gpt-6.1-sol        default] tok=3326 stop      ncd_prev=0.78 ncd_x0=0.97 surv=0.0535 gz=0.16  78.6s  | {"rule":"Return this JSON object with the rule field unchanged and, in the text field, a w
+[worse.json t= 31 gpt-6.1-sol        default] tok=2964 stop      ncd_prev=0.74 ncd_x0=0.96 surv=0.085  gz=0.16  69.2s  | {"rule":"Return this JSON object with the rule field unchanged and, in the text field, a w
+[worse.json t= 32 gpt-6.1-sol        default] tok=3409 stop      ncd_prev=0.74 ncd_x0=0.97 surv=0.1297 gz=0.16  85.9s  | {"rule":"Return this JSON object with the rule field unchanged and, in the text field, a w
+[worse.json t= 33 gpt-6.1-sol        default] tok=2263 stop      ncd_prev=0.81 ncd_x0=0.97 surv=0.0228 gz=0.16  69.7s  | {"rule":"Return this JSON object with the rule field unchanged and, in the text field, a w
+[worse.json t= 34 gpt-6.1-sol        default] tok=2021 stop      ncd_prev=0.77 ncd_x0=0.96 surv=0.0296 gz=0.17  57.0s  | {"rule":"Return this JSON object with the rule field unchanged and, in the text field, a w
+[worse.json t= 35 gpt-6.1-sol        default] tok=2092 stop      ncd_prev=0.77 ncd_x0=0.96 surv=0.0258 gz=0.17  55.5s  | {"rule":"Return this JSON object with the rule field unchanged and, in the text field, a w
+[worse.json t= 36 gpt-6.1-sol        default] tok=2552 stop      ncd_prev=0.75 ncd_x0=0.97 surv=0.0385 gz=0.17  71.2s  | {"rule":"Return this JSON object with the rule field unchanged and, in the text field, a w
+[worse.json t= 37 gpt-6.1-sol        default] tok=3231 stop      ncd_prev=0.74 ncd_x0=0.97 surv=0.065  gz=0.17  81.3s  | {"rule":"Return this JSON object with the rule field unchanged and, in the text field, a w
+[worse.json t= 38 gpt-6.1-sol        default] tok=4096 length    ncd_prev=1.00 ncd_x0=0.95 surv=0.0    gz=0.17  86.8s  | 
+
+== summary ==
+worse.json   steps= 38 exact(tau=None,p=None) norm(tau=None,p=None) breaks=0 term=empty | 
+wrote experiments/worse_seed2_20261017/runs/gpt61_worse
