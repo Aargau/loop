@@ -10,7 +10,8 @@ openai (chat completions, key from OPENAI_API_KEY), cerebras (chat completions, 
 CEREBRAS_API_KEY, reasoning_effort none unless --think), claudecode (Claude Code print mode on the
 claude.ai login: `claude -p` with the system prompt replaced by "", no tools, no settings, no session;
 about 800 tokens of Agent SDK identity, date and environment remain in front of the state, there is no
-max_tokens, and --effort maps to Claude Code's --effort). --backend-b/--model-b alternates hops
+max_tokens, and --effort maps to Claude Code's --effort), gemini (Google's OpenAI-compatible endpoint, key
+from GEMINI_API_KEY, same body as openai). --backend-b/--model-b alternates hops
 between two models (A on odd hops, B on even), which is the original two-context hypothetical.
 Keys are read from the environment and never logged.
 
@@ -150,9 +151,17 @@ def step_anthropic(state, args, model):
                   "stop_details": r.get("stop_details"), "inference_geo": u.get("inference_geo"),
                   "model": r.get("model", model), "sampling": sampling + (" effort=%s" % args.effort if getattr(args, "effort", None) else "")}
 
-def step_openai(state, args, model):
-    key = os.environ.get("OPENAI_API_KEY")
-    if not key: raise RuntimeError("OPENAI_API_KEY not set in environment")
+GEMINI_OPENAI = "https://generativelanguage.googleapis.com/v1beta/openai/chat/completions"
+
+def step_gemini(state, args, model):
+    """Gemini through Google's OpenAI-compatible endpoint (key from GEMINI_API_KEY). Same body as
+    step_openai: max_completion_tokens, reasoning_effort from --effort, temperature unless --no-sampling.
+    Google's compat layer reports reasoning tokens in completion_tokens_details when it reports them."""
+    return step_openai(state, args, model, url=GEMINI_OPENAI, key_env="GEMINI_API_KEY")
+
+def step_openai(state, args, model, url="https://api.openai.com/v1/chat/completions", key_env="OPENAI_API_KEY"):
+    key = os.environ.get(key_env)
+    if not key: raise RuntimeError(key_env + " not set in environment")
     hdr = {"Authorization": "Bearer " + key}
     msgs = ([{"role": "system", "content": args.system}] if args.system else []) + [{"role": "user", "content": state}]
     body = {"model": model, "messages": msgs, "max_completion_tokens": args.max_tokens}
@@ -161,11 +170,11 @@ def step_openai(state, args, model):
     if not args.no_sampling:
         body["temperature"] = args.temp; body["seed"] = args.seed; sampling = "T=%g" % args.temp
     try:
-        r = post_retry("https://api.openai.com/v1/chat/completions", body, hdr)
+        r = post_retry(url, body, hdr)
     except HttpErr as e:
         if e.code == 400 and "temperature" in e.body and "temperature" in body:
             body.pop("temperature"); sampling = "default"
-            r = post_retry("https://api.openai.com/v1/chat/completions", body, hdr)
+            r = post_retry(url, body, hdr)
         else:
             raise
     ch = r["choices"][0]; u = r.get("usage", {})
@@ -276,6 +285,9 @@ def make_step(backend, mode, model):
     elif backend == "claudecode":
         if mode == "raw": raise SystemExit("raw mode needs the llama backend")
         fn = step_claudecode
+    elif backend == "gemini":
+        if mode == "raw": raise SystemExit("raw mode needs the llama backend")
+        fn = step_gemini
     else:
         raise SystemExit("unknown backend " + backend)
     return paced(lambda state, args: fn(state, args, model), None)
@@ -394,9 +406,9 @@ def main():
     try: sys.stdout.reconfigure(encoding="utf-8", errors="replace")
     except Exception: pass
     ap = argparse.ArgumentParser()
-    ap.add_argument("--backend", choices=["llama", "anthropic", "openai", "cerebras", "claudecode"], default="llama")
+    ap.add_argument("--backend", choices=["llama", "anthropic", "openai", "cerebras", "claudecode", "gemini"], default="llama")
     ap.add_argument("--model", default=None, help="llama: alias (default qwen3.8-27b); anthropic: e.g. claude-sonnet-4-6; cerebras: default qwen-3.8-27b; openai: required")
-    ap.add_argument("--backend-b", choices=["llama", "anthropic", "openai", "cerebras", "claudecode"], default=None, help="second model for alternating hops")
+    ap.add_argument("--backend-b", choices=["llama", "anthropic", "openai", "cerebras", "claudecode", "gemini"], default=None, help="second model for alternating hops")
     ap.add_argument("--model-b", default=None)
     ap.add_argument("--mode", choices=["chat", "raw"], default="chat")
     ap.add_argument("--init", default=None, help="key from built-in INITS")
@@ -410,7 +422,7 @@ def main():
     ap.add_argument("--seed", type=int, default=42)
     ap.add_argument("--system", default=None)
     ap.add_argument("--think", action="store_true", help="llama/cerebras: leave thinking on")
-    ap.add_argument("--effort", default=None, help="openai: reasoning_effort low/medium/high/xhigh; anthropic: output_config.effort low/medium/high/max; claudecode: --effort low/medium/high/xhigh/max (reasoning tokens logged as tok_reasoning)")
+    ap.add_argument("--effort", default=None, help="openai/gemini: reasoning_effort low/medium/high/xhigh; anthropic: output_config.effort low/medium/high/max; claudecode: --effort low/medium/high/xhigh/max (reasoning tokens logged as tok_reasoning)")
     ap.add_argument("--min-interval", type=float, default=0.0, help="seconds between requests (rate-limit pacing)")
     ap.add_argument("--max-cost", type=float, default=None, help="stop a trajectory once the sum of logged cost_usd exceeds this (claudecode backend)")
     ap.add_argument("--max-chars", type=int, default=None, help="stop a trajectory once a hop's output exceeds this many characters")

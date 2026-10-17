@@ -95,8 +95,10 @@ def ask(reader, model, text, facts, effort):
         out, meta = L.step_llama_chat(prompt, a, model)
     elif reader == "openai":
         out, meta = L.step_openai(prompt, a, model)
+    elif reader == "gemini":
+        out, meta = L.step_gemini(prompt, a, model)
     else:
-        raise SystemExit("reader must be claudecode, anthropic, openai or llama")
+        raise SystemExit("reader must be claudecode, anthropic, openai, gemini or llama")
     s = out.strip()
     m = FENCE.match(s)
     if m:
@@ -174,7 +176,7 @@ if __name__ == "__main__":
     sub = ap.add_subparsers(dest="cmd", required=True)
     sub.add_parser("register")
     r = sub.add_parser("recover")
-    r.add_argument("--reader", required=True, choices=["claudecode", "anthropic", "openai", "llama"])
+    r.add_argument("--reader", required=True, choices=["claudecode", "anthropic", "openai", "gemini", "llama"])
     r.add_argument("--model", required=True)
     r.add_argument("--hops", default="1,5,10,20,40")
     r.add_argument("--runs", default=None, help="comma list of run dir names; default all")
