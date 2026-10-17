@@ -103,12 +103,8 @@ def shown_of(h, rule):
     """What the site shows as a hop's text: (text, preamble, postamble, mono). Mono is the raw output
     of a hop that did not parse; a fenced object with the lane's rule is shown as its text field."""
     if h["text_is_json_field"]: return h["text"], None, None, False
-    m = R.FENCE_ANY.search(h["raw"])
-    if m:
-        try: j = json.loads(m.group(1))
-        except ValueError: j = None
-        if isinstance(j, dict) and "text" in j and j.get("rule") == rule:
-            return j["text"], h["raw"][:m.start()].strip() or None, h["raw"][m.end():].strip() or None, False
+    po = R.prefaced_object(h["raw"], rule)
+    if po: return po[0], po[1], po[2], False
     return h["raw"], None, None, True
 
 def fields_of(s):
@@ -364,6 +360,16 @@ def authored():
         out += [("room %s lane label" % r["id"], ln["label"]) for ln in r["lanes"] if ln.get("label")]
     for f in C.FAMILIES: out += [("family %s title" % f["id"], f["title"]), ("family %s blurb" % f["id"], f["blurb"])]
     for h, b in C.COLOPHON: out += [("COLOPHON", h), ("COLOPHON " + h, b)]
+    # the 17 October reorganization: ledes, groups, start-here, the record legend, the findings page
+    out += [("lede %s" % k, v) for k, v in B.LD.LEDES.items()]
+    out += [("FRONT_LEDE", s) for s in C.FRONT_LEDE] + [("START_HERE %s" % rid, s) for rid, s in C.START_HERE]
+    out += [("FINDINGS_LINK", C.FINDINGS_LINK), ("RECORD_HOW", C.RECORD_HOW)]
+    for g in C.GROUPS: out += [("group %s title" % g["id"], g["title"]), ("group %s lede" % g["id"], g["lede"])]
+    out += [("family lede %s" % k, v) for k, v in C.FAMILY_LEDES.items()]
+    out += [("FINDINGS_INTRO", B.FD.INTRO), ("FINDINGS_DESC", B.FD.DESC)]
+    for s in B.FD.SECTIONS:
+        out += [("findings %s title" % s["id"], s["title"]), ("findings %s lede" % s["id"], s["lede"])]
+        out += [("finding %s %s" % (it["id"], k), it[k]) for it in s["items"] for k in ("title", "text")]
     return out
 
 def lint(where, s):
@@ -424,7 +430,7 @@ def main():
             if all(e for _, e in lanes): room_lanes[rid] = (lanes, sorted({e["rule"] for _, e in lanes if e["rule"]}))
         if rid in room_lanes: n_blocks += check_text(rid, *room_lanes[rid], part_sizes)
         else: fail("t/%s not checked: its lanes could not be read" % B.part_name(rid, 1))
-    known = {n for _, n in part_sizes} | {"t/poem.txt", "t/colophon.txt"}
+    known = {n for _, n in part_sizes} | {"t/poem.txt", "t/colophon.txt", "t/findings.txt"}
     for p in sorted(p for p in files if p.startswith("t/") and p not in known): fail("%s: not a part of any room" % p)
 
     # 3. site URLs, robots, sitemap, llms
@@ -445,10 +451,15 @@ def main():
     for rid in room_ids:
         if "%s/t/%s" % (SITE, B.part_name(rid, 1)) not in llms: fail("llms.txt does not list room %s" % rid)
 
-    # 4. authored text
+    # 4. authored text (a PLACEHOLDER note must never render; the hops themselves are data and may say anything, so
+    #    the room pages are checked with their hop lists removed and the text versions above their first lane)
     strings = authored()
-    for where, s in strings: lint(where, s)
+    for where, s in strings:
+        lint(where, s)
+        if "PLACEHOLDER" in s: fail("PLACEHOLDER in authored text (%s)" % where)
     for p, s in sorted(texts.items()):
+        if p.startswith("r/"): s = re.sub(r"<ol class=\"hops\">.*?</ol>", "", s, flags=re.S)
+        elif p.startswith("t/"): s = re.split(r"\n(?:## Lane \d|### hop \d)", s, maxsplit=1)[0]
         if "PLACEHOLDER" in s: fail("%s: PLACEHOLDER rendered" % p)
 
     # 5. the poem, verbatim against the brief

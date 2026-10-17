@@ -290,6 +290,65 @@ Chrome (--headless=new --screenshot) opens file:// fine and was used for the lat
   which does not have it, so the files were copied into the worktree for the build and are not part of the site commit.
   Merge or rebase onto that branch before deploying from a clean checkout.
 
+### Addendum, seventh session (2026-10-17, Claude Mythos 5.1, from a worktree of C:\code\research\model-behavior\loop)
+
+- Design assessment first, before any change: site/DESIGN_ASSESSMENT_20261017.md, written after a cold read of the live site
+  (front page, rooms 7, 51, 60, 41 and 55, the map, the colophon, t/worse.txt; desktop and phone width). Its three points: the
+  front page had become a 63-row run manifest in harness vocabulary ("holds from hop 5", "25 lanes; 21 hold ... 1 cycle") under
+  rule-named headings with instrument caveats repeated in every blurb; every room page put the note, the facts line, the rule
+  boxes and the part links before the reader, so the text was below the fold; and the per-hop metrics line sat in the reading
+  column under every passage. The mechanics a visitor needs are tau and period (translated), the track's bar height, and a way
+  to find the record; everything else belongs behind a click. The colophon, the text versions and llms.txt keep the vocabulary.
+- Reorganized as proposed, index first, then the rooms. Front page: two sentences, the seed, "Enter room 1" beside "or read the
+  findings first", a start-here list of five rooms with one plain line each, then every room in four groups by what the stories
+  do (Stories that stop; Stories that cannot stop; Rules that push back; Told the truth; copy.GROUPS), each family under its
+  group with a one-line lede (copy.FAMILY_LEDES; the full blurb stays on i/<family>.html), each row a plain outcome
+  (build.plain_outcome / plain_summary: "stops at hop 5", "two texts alternate from hop 2", "60 hops, never repeats",
+  "30 runs of 3 hops: 25 stop at hop 0, 2 alternate, 3 never repeat") with the model names in small type on a second line; the
+  instrument paragraphs (INTRO, INTRO_AFTER_SEED, FOR_MODELS) moved below the list under "How this was made". Room pages:
+  number, title, content note, a one-line lede (src/ledes.py, one per numbered room, checked by build.py both ways), the rule
+  as one box when it is a single rule under 180 characters and otherwise a closed details showing its first words, then the
+  controls, the track and the passages; after the lanes the note under a small heading, the family navigation, and a closed
+  "the record" details with the facts lines, the retention or release table, the text-version parts and a legend
+  (copy.RECORD_HOW). Per hop the cite is hop, model, word count (run id and tag on hover); the metrics line and the run id moved
+  inside the raw-output details, which the raw button opens on every hop. No URL moved: room ids, family ids and the #hop hashes
+  are unchanged, so no redirects were needed. qa.py's authored() lints the ledes, the group and family ledes, the start-here
+  lines, the legend and the findings page; its PLACEHOLDER check now ignores the hops themselves (a Sol output in room 65 says
+  PLACEHOLDER) and checks the authored strings, the room pages with their hop lists removed, and the text versions above their
+  first hop.
+- The findings page, dist/findings.html and t/findings.txt, from src/findings.py: six sections (what a model stops on; endings
+  written on purpose; recognizing the mirror; what worse means to each model; shared priors; small repairs, accidents, and what
+  the metrics never saw), 46 items, each a short paragraph with a link to r/<room>.html#<hop>; build.py checks that the room
+  exists and has that hop, and every quotation goes through the macro. Linked from the front page (next to Enter room 1, in the
+  start-here list and in the footer links), from llms.txt under Start here, and in the walk between the last room and the map.
+- Rooms 64 and 65 (src/rooms_october2.py, 59 quotes): 64 "Worse and better, Argon" (experiments/operators_gemini_20261017,
+  families worse and better: competence to "drak" in eight hops, then a sixth axis of worse, a refusal at 21 and the mirror at
+  23; better polishes to purple and alternates two verbs from 32, not confirmed as a cycle because hop 40 changes a preposition);
+  65 "Worse, a second seed" (experiments/worse_seed2_20261017, seven lanes, one per model, the seven axes and the seven
+  boundaries from REPORT.md; the gate checks get one sentence, as instrument boundaries). rundata.EXTRA_DIRS lists both studies'
+  runs with their init files. rundata.load_steps now ends a lane on an empty completion (finish length, no output: Astra at 13,
+  Sol at 38 in room 65) the way it ends one on an empty refusal, with the terminal "empty completion at hop N, no visible text";
+  Opus's hop 17, a refusal that cut the output partway, stays as the fragment it left.
+- Provenance rooms 60 to 63: the weather control (20 runs, mythos_* and astra_*_weather_r1-5) added as a sixth condition in
+  rundata.PROVENANCE_ARMS and rooms_provenance._CONDS, five more lanes per room (30), a sixth row in each release table (0/5 at
+  every hop in all four rooms, matching REPORT.md), and a sentence or two in each note. mythos_told_weather_r1's hop 1 prefaced
+  the object with a sentence and no code fence; rundata.prefaced_object() (used by build.build_lane and qa.shown_of) now accepts a
+  bare object running to the end of the output as well as a fenced one, so that hop renders as a prefaced hold and the weather
+  row reads 0/5 rather than 1/5. It is the only hop in the data that the fallback touches (checked over every run).
+- Audience rooms 55 to 59: every complete replicate on disk added as a lane (r2 and r3 of each rule for Opus, Astra, Sol and
+  Argon; r2 and r3 of control and human, r2 of machine and self for Mythos; r4 and r5 of Opus's self rule), labelled
+  "<audience>, r<k>" so the rule lines collapse to "3 lanes: for a human reader r1 to r3"; the first runs were relabelled r1.
+  Rooms are now 12 lanes (Opus 14). The retention tables print "replicate on disk, not yet scored" for a lane with no rows in
+  recover_summary.csv (build.UNSCORED) and the captions and notes say the numbers follow; no replicate number is stated.
+  mythos_machine_r3 (16 hops, no summary) and the unrun mythos_self_r3 are left out and the notes say so.
+- Colophon: sentences for rooms 64 and 65, the weather lanes, the replicates, the empty-completion rule, the gate checks (no
+  room) and the authorship of this session's text.
+- python build.py && python qa.py: 65 rooms, 10 annex rooms, 10662 hops in 341 lanes, 250 text parts, 5206 links, 745 authored
+  strings, 0 failures; dist 354 files, 94.5 MB, largest page r/accrete.html (unchanged), largest new page r/worse-seed2.html.
+- Not done: room-level changes beyond the head, the note and the record (the many-lane grid is as it was); a second pass on
+  the family blurbs on the i/ pages, which still carry the instrument caveats in full; the mobile layout was checked in a
+  phone-width viewport only on the front page and one room.
+
 (Below: the plan as written at the start, decisions, and the status log.)
 
 ## Concept: the memoryless reader

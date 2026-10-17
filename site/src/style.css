@@ -72,7 +72,10 @@ body.front-view .topbar { display: none; }
 .toc { margin-top: 3rem; }
 .rooms-list { list-style: none; margin: 0; padding: 0; border-top: 1px solid var(--line); }
 .rooms-list li { border-bottom: 1px solid var(--line); }
-.rooms-list a { display: grid; grid-template-columns: 2rem minmax(8rem, 12rem) minmax(6rem, 8.5rem) minmax(4rem, 16rem) minmax(6rem, 1fr); gap: 1rem; padding: .55rem 0; text-decoration: none; font-size: .85rem; align-items: baseline; }
+.rooms-list a { display: grid; grid-template-columns: 2rem minmax(9rem, 13rem) minmax(5rem, 13rem) 1fr; grid-template-rows: auto auto; column-gap: 1rem; row-gap: .1rem; padding: .55rem 0; text-decoration: none; font-size: .85rem; align-items: baseline; }
+.rooms-list .num, .rooms-list .ttl, .rooms-list .mini-wrap { grid-row: 1 / span 2; }
+.rooms-list .out { grid-column: 4; grid-row: 1; }
+.rooms-list .who { grid-column: 4; grid-row: 2; }
 .rooms-list .mini-wrap { display: flex; flex-direction: column; align-items: flex-start; gap: 3px; align-self: center; }
 .rooms-list .mini-wrap.many { flex-direction: row; flex-wrap: wrap; gap: 3px 8px; }
 .rooms-list .mini-wrap.many .track.mini { height: 10px; }
@@ -81,8 +84,8 @@ body.front-view .topbar { display: none; }
 .rooms-list a:hover .ttl { text-decoration: underline; }
 .rooms-list .num { color: var(--faint); }
 .rooms-list .ttl { font-family: var(--serif); font-size: 1.05rem; }
-.rooms-list .who { color: var(--ink-2); }
-.rooms-list .out { color: var(--faint); }
+.rooms-list .who { color: var(--faint); font-size: .74rem; }
+.rooms-list .out { color: var(--ink-2); }
 .toc-extra { margin-top: 1.5rem; font-size: .85rem; color: var(--ink-2); }
 .front .formodels { margin: 1.5rem 0 0; max-width: 40rem; font-size: .78rem; color: var(--faint); }
 .front .formodels a { color: var(--ink-2); }
@@ -101,7 +104,8 @@ body.front-view .topbar { display: none; }
 .page .rule { margin-bottom: .4rem; }
 .pagenav { max-width: 46rem; margin: 3rem auto 0; font-size: .85rem; color: var(--ink-2); }
 @media (max-width: 48rem) {
-  .rooms-list a { grid-template-columns: 2rem 1fr; }
+  .rooms-list a { grid-template-columns: 2rem 1fr; grid-template-rows: none; }
+  .rooms-list .num, .rooms-list .ttl, .rooms-list .mini-wrap, .rooms-list .out, .rooms-list .who { grid-row: auto; }
   .rooms-list .who, .rooms-list .out, .rooms-list .mini-wrap { grid-column: 2; }
 }
 
@@ -271,3 +275,62 @@ html:not(.js) .hop { margin-bottom: 3rem; }
   .hop { page-break-inside: avoid; }
   body { background: #fff; color: #000; }
 }
+
+/* ---------- the 17 October reorganization: front page groups, ledes, the record panel, the findings ---------- */
+.front .lede { font-size: .95rem; color: var(--ink); max-width: 40rem; margin: 0 0 1rem; }
+.front .links { margin: .5rem 0 0; display: flex; gap: 1.2rem; align-items: center; flex-wrap: wrap; }
+.front .findings-link { font-size: .85rem; color: var(--ink-2); }
+.front .start, .front .about { margin-top: 2.5rem; max-width: 44rem; }
+.front .start h3, .front .about h3 { font-family: var(--mono); font-size: .72rem; text-transform: uppercase; letter-spacing: .1em; color: var(--faint); margin: 0 0 .5rem; }
+.start-list { list-style: none; margin: 0; padding: 0; border-top: 1px solid var(--line); }
+.start-list li { border-bottom: 1px solid var(--line); }
+.start-list a { display: grid; grid-template-columns: 2rem minmax(8rem, 13rem) 1fr; gap: 1rem; padding: .5rem 0; text-decoration: none; font-size: .85rem; align-items: baseline; }
+.start-list .num { color: var(--faint); }
+.start-list .ttl { font-family: var(--serif); font-size: 1.05rem; }
+.start-list .why { color: var(--ink-2); }
+.start-list a:hover .ttl { text-decoration: underline; }
+.start-list .findings-row .ttl { font-family: var(--mono); font-size: .85rem; color: var(--ink-2); }
+.group { margin: 3rem 0 0; }
+.group h2 { font-size: 1.7rem; margin: 0 0 .3rem; }
+.group-lede { margin: 0 0 .5rem; max-width: 44rem; color: var(--ink-2); font-size: .9rem; }
+.group .fam { margin: 1.6rem 0 0; }
+.group .fam h3 { font-size: 1.2rem; }
+.front .about { border-top: 1px solid var(--line); padding-top: 1.5rem; }
+.front .about p.authored { margin: 0 0 1rem; color: var(--ink-2); font-size: .9rem; }
+@media (max-width: 48rem) { .start-list a { grid-template-columns: 2rem 1fr; } .start-list .why { grid-column: 2; } }
+.room-head .lede { font-size: 1rem; color: var(--ink); max-width: 44rem; margin: 0 0 .9rem; line-height: 1.55; }
+details.rule-wrap { font-size: .78rem; color: var(--ink-2); margin-bottom: .4rem; }
+details.rule-wrap summary { cursor: pointer; list-style: none; padding: .5rem .7rem; border: 1px solid var(--line); border-radius: 3px; background: var(--paper-2); white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+details.rule-wrap summary::-webkit-details-marker { display: none; }
+details.rule-wrap[open] summary { white-space: normal; border-bottom-left-radius: 0; border-bottom-right-radius: 0; }
+details.rule-wrap .rule-short { color: var(--ink); }
+details.rule-wrap .rule-n { color: var(--faint); margin-left: .4rem; }
+details.rule-wrap[open] .rule { border-top: 0; border-radius: 0; }
+details.rule-wrap[open] .rule:last-child { border-radius: 0 0 3px 3px; }
+.room-after { max-width: 46rem; margin-top: 2.5rem; border-top: 1px solid var(--line); padding-top: 1.2rem; }
+.room.many .room-after, .room.two .room-after { max-width: 46rem; }
+.room-after .note-block > .k { display: block; font-size: .7rem; text-transform: uppercase; letter-spacing: .1em; color: var(--faint); margin-bottom: .4rem; font-weight: normal; }
+.room-after .note { font-size: .9rem; color: var(--ink-2); margin: 0 0 1rem; }
+.room-after .family { margin: 0 0 .5rem; }
+details.record { font-size: .74rem; color: var(--faint); margin-top: 1rem; line-height: 1.6; }
+details.record summary { cursor: pointer; list-style: none; color: var(--ink-2); }
+details.record summary::-webkit-details-marker { display: none; }
+details.record summary::before { content: "+ "; }
+details.record[open] summary::before { content: "2 "; }
+details.record .facts { margin: .8rem 0; }
+details.record table.retention { margin-top: .6rem; }
+details.record .textver { margin: .8rem 0 0; }
+details.record .how { margin: .8rem 0 0; max-width: 44rem; }
+.hop .raw .metrics { margin: .3rem 0 .2rem; font-size: .7rem; color: var(--faint); }
+.page#findings { max-width: 46rem; }
+.findings-sec { margin-top: 2.6rem; }
+.findings-sec h3 { font-size: 1.4rem; margin: 0 0 .3rem; }
+.findings-sec > p.authored { color: var(--ink-2); font-size: .9rem; margin: 0 0 1.3rem; }
+.finding { margin: 0 0 1.7rem; }
+.finding h4 { font-family: var(--serif); font-weight: normal; font-size: 1.15rem; margin: 0 0 .15rem; }
+.finding h4 a { text-decoration: none; }
+.finding h4 a:hover { text-decoration: underline; }
+.finding .where { margin: 0 0 .4rem; font-size: .72rem; color: var(--faint); }
+.finding .where a { color: var(--ink-2); text-decoration: none; }
+.finding .where a:hover { text-decoration: underline; }
+.finding p.authored { margin: 0; font-size: .9rem; color: var(--ink-2); }
