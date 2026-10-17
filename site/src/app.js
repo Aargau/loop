@@ -60,7 +60,7 @@
       var lab = lanes.length > 1 && $(".lane-label", lane) ? $(".lane-label", lane).textContent + ": " : "";
       if (co === null && h.getAttribute("data-same-text") === "1") {
         var fd = h.getAttribute("data-fields-differ");
-        words.push(lab + (fd === "step" ? "same as hop " + (t - 1) + ", only the step counter moved" : fd ? "same verse as hop " + (t - 1) + ", " + fd.replace(",", " and ") + " differ" : "same words as hop " + (t - 1)));
+        words.push(lab + (fd === "step" ? "same as hop " + (t - 1) + ", only the step counter moved" : fd ? "same " + (h.getAttribute("data-noun") || "verse") + " as hop " + (t - 1) + ", " + fd.replace(",", " and ") + " differ" : "same words as hop " + (t - 1)));
       }
       else if (co === null && h.getAttribute("data-text-copy-of") !== null) words.push(lab + "text same as hop " + h.getAttribute("data-text-copy-of"));
       if (co !== null) {

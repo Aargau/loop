@@ -192,6 +192,14 @@ ol.hops .as-context, .slot.current .as-context { display: none; }
 .room.many .lane.open .metrics, .room.many .lane.open details.raw { display: block; }
 .room.many .track { margin-bottom: .4rem; }
 .room.many .ended { font-size: .66rem; padding: .4rem .6rem; margin-bottom: .5rem; }
+/* retention tables (the audience rooms): generated from the study's analysis */
+table.retention { font-family: var(--mono); font-size: .74rem; border-collapse: collapse; margin: 0 0 1.2rem; color: var(--ink-2); }
+table.retention caption { text-align: left; caption-side: top; font-size: .72rem; color: var(--faint); margin-bottom: .4rem; max-width: 46rem; }
+table.retention th, table.retention td { text-align: right; padding: .15rem .7rem .15rem 0; border-bottom: 1px solid var(--line); font-weight: normal; white-space: nowrap; }
+table.retention thead th { color: var(--faint); }
+table.retention tbody th { text-align: left; color: var(--ink); }
+table.retention td small { color: var(--faint); margin-left: .25rem; }
+table.retention td.none { color: var(--faint); }
 details.facts-many summary { cursor: pointer; list-style: none; }
 details.facts-many summary::before { content: "+ "; }
 details.facts-many[open] summary::before { content: "\2212 "; }
