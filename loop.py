@@ -147,6 +147,7 @@ def step_anthropic(state, args, model):
     return text, {"finish": r.get("stop_reason"), "tok_out": u.get("output_tokens"), "tok_in": u.get("input_tokens"),
                   "reasoning_chars": sum(len(b.get("thinking", "")) for b in r.get("content", []) if b.get("type") == "thinking"),
                   "tok_reasoning": (u.get("output_tokens_details") or {}).get("thinking_tokens"),
+                  "stop_details": r.get("stop_details"), "inference_geo": u.get("inference_geo"),
                   "model": r.get("model", model), "sampling": sampling + (" effort=%s" % args.effort if getattr(args, "effort", None) else "")}
 
 def step_openai(state, args, model):
@@ -344,6 +345,7 @@ def run_trajectory(x0, args, tag, log, steps, share=None):
                "tok_out": meta["tok_out"], "tok_in": meta["tok_in"], "finish": meta["finish"],
                "reasoning_chars": meta["reasoning_chars"], "tok_cached": meta.get("tok_cached"),
                "tok_reasoning": meta.get("tok_reasoning"), "cost_usd": meta.get("cost_usd"),
+               "stop_details": meta.get("stop_details"), "inference_geo": meta.get("inference_geo"),
                "ncd_prev": round(ncd(state, out), 4), "ncd_x0": round(ncd(x0, out), 4),
                "surv_prev": survival(state, out), "surv_x0": survival(x0, out),
                "prefix_x0": common_prefix(x0, out), "line1_eq": (line1(out) == line1(x0) and bool(line1(x0))),
