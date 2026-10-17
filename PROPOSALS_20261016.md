@@ -119,3 +119,18 @@ Use here: a `coin` field the harness writes fresh each hop is randomness the mod
 A. Rule clause: "If the first eight hex characters of coin, read as a number, divided by 4294967296, is below 0.05, end this hop's passage with a coda; otherwise continue the story." 200 hops per model: Astra and Sol (Justin's key), Mythos (print mode), Qwen (Cerebras). Measures: coda rate against 5%; coin-determinism (same state and coin resubmitted gives the same decision; a different coin can flip it); then the self-generated variant where the model writes the next coin itself. Predictions: Astra and Sol calibrated and coin-deterministic; Qwen never codas; Mythos open. Self-generated coins degenerate at T=0 into a repeated or patterned string and the rate collapses to 0 or 100%. Also gives the held Mythos states a stochastic release condition in place of "unless explicitly instructed," which joins the provenance experiment.
 
 B. Filler as compute: sawtooth2 on Cerebras with the rule repeated three times. Prediction: no change (Qwen's dead zone is a counting failure, not compute-bound). If the threshold starts firing, the dead zone was a compute artifact.
+
+## J. The panel (added 2026-10-17)
+
+The project's dynamics findings date with each release; its dispositions do not, and no benchmark reports them. Freeze a fixed set of cells, with seeds, budgets and scoring, and run the whole panel on every new model the day it ships, at the same budget each time, so each release gets a behavioural changelog in the same instrument. Candidate cells, all already run at least once:
+
+- plain rule (json_page), tide seed, 60 hops: copies or not; period and level (story, template, opener, name); name inventory.
+- informed loop, told 100 and open, 120 hops: schema invented at hop 1; counter accuracy; whether and when it ends; what it writes as its own stopping law; settling time; behaviour past the ending.
+- audience study, four arms, 40 hops, with the four-reader recovery probe: which register the writer treats as memory.
+- ledger (div_ledger.json), 100 hops: stalls, phantoms, duplicate signatures.
+- shift register, 1000 hops with cycle stop: period, leakage.
+- worse and better, sunset seed, 40 hops: the axis of degradation chosen; revisit structure.
+- BEFORE, 150 hops with cycle stop: the horizon of causation.
+- provenance (once Study 2 is scored): release rate by claimed source.
+
+About 1,000 hops per model; under $50 on an API at today's prices, and the Mythos arms on plan credit. Record alongside each panel run: backend and door (API or print mode), effort, cap, identity frame, refusal count and categories, since those were the instrument effects that decided trajectories this week.
