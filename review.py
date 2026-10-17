@@ -1,7 +1,8 @@
 #!/usr/bin/env python
 """review.py: have another model referee a document, for cross-model review of research-grade write-ups.
 
-  python review.py paper/draft_20261017.md --backend openai --model gpt-6-astra [--effort high] [--extra paper/prompts.md ...]
+  python review.py paper/draft_20261017.md --backend codex --model gpt-6-astra   # plan usage via Codex CLI
+  python review.py paper/draft_20261017.md --backend openai --model gpt-6-astra  # API [--effort high] [--extra paper/prompts.md ...]
 
 Sends the document (plus any --extra files, each labelled) to the model through loop.py's backends with a
 referee brief, and writes the review to <doc dir>/reviews/<model>_<date>.md with the exact brief at the top.
@@ -27,7 +28,7 @@ For each point give the section or quoted sentence it refers to. Mark anything y
 def main():
     ap = argparse.ArgumentParser()
     ap.add_argument("doc")
-    ap.add_argument("--backend", default="openai", choices=["openai", "anthropic", "gemini", "claudecode", "cerebras", "llama"])
+    ap.add_argument("--backend", default="openai", choices=["openai", "codex", "anthropic", "gemini", "claudecode", "cerebras", "llama"])
     ap.add_argument("--model", default="gpt-6-astra")
     ap.add_argument("--effort", default="high")
     ap.add_argument("--max-tokens", type=int, default=16000)
@@ -38,7 +39,7 @@ def main():
         parts += ["\n\n===== SUPPORTING FILE: %s =====\n\n" % os.path.basename(x), io.open(x, encoding="utf-8").read()]
     prompt = "".join(parts)
     args = types.SimpleNamespace(max_tokens=a.max_tokens, temp=0.0, no_sampling=True, seed=42, system=None, think=False, effort=a.effort, min_interval=0.0)
-    step = {"openai": L.step_openai, "anthropic": L.step_anthropic, "gemini": L.step_gemini, "claudecode": L.step_claudecode,
+    step = {"openai": L.step_openai, "codex": L.step_codex, "anthropic": L.step_anthropic, "gemini": L.step_gemini, "claudecode": L.step_claudecode,
             "cerebras": L.step_cerebras, "llama": L.step_llama_chat}[a.backend]
     text, meta = step(prompt, args, a.model)
     outdir = os.path.join(os.path.dirname(os.path.abspath(a.doc)), "reviews")
