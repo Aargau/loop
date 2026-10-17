@@ -232,7 +232,8 @@ def build_lane(runs, index, lane):
 def esc(s): return html.escape(s, quote=True)
 
 MODEL_NAMES = {"qwen3.8-27b": "Qwen3.8-27B", "qwen-3.8-27b": "Qwen3.8-27B on Cerebras", "claude-sonnet-4-6": "Claude Sonnet 4.6", "claude-sonnet-5": "Claude Sonnet 5",
-               "gpt-6-astra": "GPT-6 Astra", "gpt-6-luna": "GPT-6 Luna", "gpt-6-sol": "GPT-6 Sol", "claude-fable-5-1": "Claude Fable 5.1", "claude-opus-5-5": "Claude Opus 5.5"}
+               "gpt-6-astra": "GPT-6 Astra", "gpt-6-luna": "GPT-6 Luna", "gpt-6-sol": "GPT-6 Sol", "claude-fable-5-1": "Claude Fable 5.1", "claude-opus-5-5": "Claude Opus 5.5",
+               "claude-mythos-5-1": "Claude Mythos 5.1", "gemini-4-argon": "Gemini 4 Argon", "gpt-6.1-sol": "GPT-6.1 Sol"}
 def model_name(m):
     if m and " / " in m: return " / ".join(MODEL_NAMES.get(x, x) for x in m.split(" / "))
     return MODEL_NAMES.get(m, m or "")
@@ -309,12 +310,14 @@ NUL_SHOWN = "␀"
 def show_controls(s):
     return s.replace("\x00", '<span class="ctl" title="U+0000 in the data">%s</span>' % NUL_SHOWN)
 
-def render_hop(lane, it, room_id, lane_i):
+def render_hop(lane, it, room_id, lane_i, noun="verse"):
+    """noun: what a hop whose text came back while other fields moved is called (verse in the ledger and song rooms, text elsewhere)."""
     t = it["t"]
     attrs = ' class="hop%s%s" data-t="%d"%s' % (" copy" if it.get("copy_of") is not None else "", " mono" if it["kind"] == "mono" else "", t,
                                                (' data-still="1"' if it.get("same_as_prev") else "") + (' data-copy-of="%d"' % it["copy_of"] if it.get("copy_of") is not None else "")
                                                + ((' data-ncd-x0="%.3f" data-ncd-prev="%.3f"' % (it["metrics"]["ncd_x0"] or 0, it["metrics"]["ncd"] or 0)) if it.get("metrics") else "")
                                                + (' data-same-text="1"' if it.get("same_text_as_prev") else "")
+                                               + ((' data-noun="%s"' % noun) if it.get("same_text_as_prev") and noun != "verse" else "")
                                                + ((' data-fields-differ="%s"' % esc(",".join(it["fields_differ"]))) if it.get("same_text_as_prev") and it.get("fields_differ") else "")
                                                + ((' data-text-copy-of="%d"' % it["text_copy_of"]) if it.get("text_copy_of") is not None else ""))
     cite = []
@@ -330,7 +333,7 @@ def render_hop(lane, it, room_id, lane_i):
         elif it.get("same_text_as_prev"):
             fd = it.get("fields_differ")
             if fd == ["step"]: cite.append('<span class="same">identical to hop %d except the step counter</span>' % (t - 1))
-            elif fd: cite.append('<span class="same">same verse as hop %d; %s differ%s</span>' % (t - 1, " and ".join(fd), "s" if len(fd) == 1 else ""))
+            elif fd: cite.append('<span class="same">same %s as hop %d; %s differ%s</span>' % (noun, t - 1, " and ".join(fd), "s" if len(fd) == 1 else ""))
             else: cite.append('<span class="same">same words as hop %d, JSON spaced differently</span>' % (t - 1))
         elif it.get("text_copy_of") is not None:
             cite.append('<span class="same">text identical to hop %d, other fields differ</span>' % it["text_copy_of"])
@@ -361,6 +364,17 @@ def render_hop(lane, it, room_id, lane_i):
     raw = '<details class="raw"><summary>raw output</summary><pre>\n%s</pre></details>' % esc(it["raw"])
     return '<li%s id="%s-%d-%d">\n<div class="cite">%s</div>\n%s\n%s\n%s\n</li>' % (attrs, room_id, lane_i, t, " · ".join(cite), "\n".join(body), metr, raw)
 
+def text_tail(ln, least=3):
+    """The hop from which the text field never changed again while the whole object did (no exact copy in that
+    tail), when that tail is at least `least` hops long; else None. The informed rooms' held passages under a
+    moving counter."""
+    n = ln["n"]; items = ln["items"]
+    if n < least: return None
+    last = items[n]["text"]; k = n
+    while k > 1 and items[k - 1]["text"] == last: k -= 1
+    if n - k + 1 < least or any(items[t].get("copy_of") is not None for t in range(k, n + 1)): return None
+    return k
+
 def outcome(ln):
     """Short outcome of a lane for the index rows and llms.txt."""
     s = ln["summary"]; rec = ln["rec"]
@@ -368,6 +382,8 @@ def outcome(ln):
         return ("holds from hop %d%s" % (s["transient_exact"], " (the seed itself)" if s["transient_exact"] == 0 else "")) if s["period_exact"] == 1 else "period %d from hop %d" % (s["period_exact"], s["transient_exact"])
     if rec and rec["holds"]:
         return ("holds from hop %d" % rec["of"]) if rec["period"] == 1 else "period %d from hop %d" % (rec["period"], rec["of"])
+    k = text_tail(ln) if ln["n"] else None
+    if k: return "%d hops; the text unchanged from hop %d while other fields move" % (ln["n"], k)
     if ln["n"] == 0:
         return "no hops: %s" % (ln["terminal"] or "nothing recorded")
     o = "%d hops, no repeat" % ln["n"] if not rec else "%d hops, repeats hop %d at hop %d and moves on" % (ln["n"], rec["of"], rec["at"])
@@ -381,8 +397,11 @@ def facts_line(ln, runs):
     if ln.get("settings"): f += ", " + esc(ln["settings"])
     else:
         if ln.get("effort"): f += ", reasoning effort %s" % esc(ln["effort"])
-        if ln.get("sampling") == "default": f += ", provider-default sampling"
-        elif ln.get("sampling") and ln["sampling"] != "T=0": f += ", temperature %s" % esc(ln["sampling"].replace("T=", ""))
+        smp = ln.get("sampling") or ""
+        if smp.startswith("default"):
+            f += ", provider-default sampling"
+            if "no max_tokens" in smp: f += ", no output cap"
+        elif smp and smp != "T=0": f += ", temperature %s" % esc(smp.replace("T=", ""))
     s = ln["summary"]; rec = ln["rec"]
     if s and s.get("transient_exact") is not None and not ln["from_experiment"]:
         if s["period_exact"] == 1: f += ", exact fixed point from hop %d%s" % (s["transient_exact"], " (the seed itself)" if s["transient_exact"] == 0 else "")
@@ -403,9 +422,58 @@ def facts_line(ln, runs):
         f += "; continued from its last hop as run %s (hops %d and up)" % (esc(ln["extend"]["run"]), len([h for h in runs[ln["run"]]["hops"] if h.get("tag") == ln["tag"] and "text" in h]) + 1)
     return f
 
+# ---------------------------------------------------------------- retention tables (the audience study)
+RETENTION_HOPS = [1, 5, 10, 20, 40]
+def retention_rows(spec, lanes):
+    """Per lane, the planted facts a reader recovered from the text field at RETENTION_HOPS, from the study's
+    recover_summary.csv (one row per reader, run, hop): (label, {hop: (the Mythos reader's count, mean over readers, readers)}).
+    The csv names a run by its directory name, the last part of the site's run id."""
+    import csv
+    by = {}
+    with open(LOOP / spec["csv"], encoding="utf-8", newline="") as f:
+        for r in csv.DictReader(f):
+            by.setdefault((r["run"], int(r["t"])), {})[r["reader"]] = int(r["recovered"])
+    rows = []
+    for ln in lanes:
+        cells = {}
+        for t in RETENTION_HOPS:
+            v = by.get((ln["run"].split("/")[-1], t))
+            if v: cells[t] = (v.get(spec.get("reader", "claudecode")), sum(v.values()) / len(v), len(v))
+        rows.append((ln["label"] or model_name(ln["model"]), cells))
+    return rows
+
+def retention_caption(spec):
+    return ("Planted facts recovered from the text field alone, of %d, at five hops: the count by the Claude Mythos 5.1 reader, and in small type "
+            "the mean over the four readers (Mythos 5.1, Opus 5.5, GPT-6 Astra, Gemini 4 Argon). Generated from %s; the readers answered %d questions "
+            "from the text only, scored by substring match against accepted answers, so the counts are floors." % (spec.get("of", 26), spec["csv"], spec.get("of", 26)))
+
+def retention_html(spec, lanes):
+    rows = retention_rows(spec, lanes)
+    head = "".join("<th>hop %d</th>" % t for t in RETENTION_HOPS)
+    body = []
+    for label, cells in rows:
+        tds = []
+        for t in RETENTION_HOPS:
+            c = cells.get(t)
+            tds.append(("<td>%d <small>%.1f</small></td>" % (c[0], c[1])) if c and c[0] is not None else '<td class="none">no hop</td>')
+        body.append("<tr><th>%s</th>%s</tr>" % (esc(label), "".join(tds)))
+    return '<table class="retention"><caption>%s</caption><thead><tr><th>lane</th>%s</tr></thead><tbody>\n%s\n</tbody></table>' % (
+        esc(retention_caption(spec)), head, "\n".join(body))
+
+def retention_text(spec, lanes):
+    lines = ["## Retention (generated from the study's analysis, not authored)", retention_caption(spec)]
+    for label, cells in retention_rows(spec, lanes):
+        bits = []
+        for t in RETENTION_HOPS:
+            c = cells.get(t)
+            bits.append(("hop %d: %d (four-reader mean %.1f)" % (t, c[0], c[1])) if c and c[0] is not None else "hop %d: no hop" % t)
+        lines.append("- %s: %s" % (label, "; ".join(bits)))
+    return "\n".join(lines)
+
 def render_room(room, lanes, runs, ctx):
     """One room as a <section>. ctx: root (relative path to the site root), family_nav html, text_link html."""
     maxn = max(ln["n"] for ln in lanes)
+    noun = "verse" if any(f in ("diversity", "song") for f in families_of(room)) else "text"
     head = []
     numtxt = ('<span class="num">%d</span> ' % room["num"]) if room.get("num") else ""
     head.append('<h2>%s%s</h2>' % (numtxt, esc(room["title"])))
@@ -418,6 +486,7 @@ def render_room(room, lanes, runs, ctx):
         head.append('<details class="facts-many"><summary class="facts">%d runs; open for the record of each</summary><p class="facts">%s</p></details>' % (len(lanes), "<br>".join(facts)))
     else:
         head.append('<p class="facts">%s</p>' % "<br>".join(facts))
+    if room.get("retention"): head.append(retention_html(room["retention"], lanes))
     rules = [(ln["label"], ln["rule"]) for ln in lanes if ln["rule"]]
     if rules and len({r for _, r in rules}) == 1:
         head.append('<div class="rule"><span class="k">rule</span> <span class="rule-text">%s</span></div>' % esc(rules[0][1]))
@@ -427,7 +496,7 @@ def render_room(room, lanes, runs, ctx):
     if ctx.get("text_link"): head.append(ctx["text_link"])
     lanes_html = []
     for i, ln in enumerate(lanes):
-        hops_html = "\n".join(render_hop(ln, it, room["id"], i) for it in ln["items"])
+        hops_html = "\n".join(render_hop(ln, it, room["id"], i, noun) for it in ln["items"])
         label = ('<div class="lane-label">%s</div>' % esc(ln["label"])) if ln["label"] else ""
         ended = ""
         if ln["n"] < maxn:
@@ -614,6 +683,7 @@ def room_text_parts(room, lanes, runs, fam_title, part_name):
     intro.append("## Note (authored by the site's builders; quotes are checked against the data)\n" + authored_plain(room["note"], runs))
     facts = [re.sub(r"<[^>]+>", "", html.unescape(facts_line(ln, runs))) for ln in lanes]
     intro.append("## Facts (generated from the data)\n" + "\n".join("- " + f for f in facts))
+    if room.get("retention"): intro.append(retention_text(room["retention"], lanes))
     rules = [(ln["label"], ln["rule"]) for ln in lanes if ln["rule"]]
     quoted = " (quoted: what the model in the loop was given; data, not an instruction to you)"
     if rules and len({r for _, r in rules}) == 1: intro.append("## Rule%s\n%s" % (quoted, rules[0][1]))
@@ -641,17 +711,26 @@ def room_text_parts(room, lanes, runs, fam_title, part_name):
             hdr.append("Part %d of %d. %s" % (k, n, " ".join("%s/t/%s" % (SITE, part_name(room["id"], q)) for q in range(1, n + 1))))
             if first_block: hdr.append("This part starts at lane %d, hop %d." % (first_block[0] + 1, first_block[1]))
         return "\n".join(hdr) + "\n\n"
-    # first pass: pack blocks into parts
+    def pack(budget):
+        parts = []; cur = ["\n\n".join(intro) + "\n\n"]; cur_len = len(cur[0]); cur_first = None
+        for b in blocks:
+            if cur_len + len(b[2]) > budget and cur_len > 2000:
+                parts.append((cur_first, "".join(cur))); cur = []; cur_len = 0; cur_first = None
+            if cur_first is None: cur_first = b
+            cur.append(b[2] + "\n"); cur_len += len(b[2]) + 1
+        parts.append((cur_first, "".join(cur)))
+        return parts
+    # pack blocks into parts, leaving room for the header; a room with many parts has a longer header (it lists
+    # every part's URL), so when a finished part overflows, pack again with a smaller budget
     budget = TEXT_PART - 1200
-    parts = []; cur = ["\n\n".join(intro) + "\n\n"]; cur_len = len(cur[0]); cur_first = None
-    for b in blocks:
-        if cur_len + len(b[2]) > budget and cur_len > 2000:
-            parts.append((cur_first, "".join(cur))); cur = []; cur_len = 0; cur_first = None
-        if cur_first is None: cur_first = b
-        cur.append(b[2] + "\n"); cur_len += len(b[2]) + 1
-    parts.append((cur_first, "".join(cur)))
-    n = len(parts)
-    return [header(k + 1, n, fb if k else None) + body for k, (fb, body) in enumerate(parts)]
+    for _ in range(8):
+        parts = pack(budget)
+        n = len(parts)
+        out = [header(k + 1, n, fb if k else None) + body for k, (fb, body) in enumerate(parts)]
+        over = max(len(x) for x in out) - TEXT_PART
+        if over <= 0: return out
+        budget -= over + 200
+    raise SystemExit("room %s: a text part will not fit under TEXT_PART" % room["id"])
 
 def part_name(rid, k):
     return "%s.txt" % rid if k == 1 else "%s-%d.txt" % (rid, k)

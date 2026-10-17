@@ -3,7 +3,8 @@
 ## Report (2026-09-02, final, after two sessions the same evening)
 
 (2026-09-03: a third session added rooms 20 to 28, the Cerebras backend and the basin census; see
-the third addendum below and FINDINGS items 11 to 15. The site is now 28 rooms and 9.4 MB.)
+the third addendum below and FINDINGS items 11 to 15. The site is now 28 rooms and 9.4 MB.
+2026-10-17: a fifth session added rooms 46 to 59, the October runs; see the fifth addendum. 59 rooms, one page each.)
 
 What I made. One instrument: a memoryless reader, at C:\ai\loop\site\index.html (3.6 MB, one
 file, opens from file:// in Chrome, no network, no build step for the viewer). Seventeen rooms,
@@ -183,6 +184,62 @@ Chrome (--headless=new --screenshot) opens file:// fine and was used for the lat
 - U+0000 in one stream's text fields (Astra, worse) is shown as U+2400; qa.py maps it back.
 - .gitattributes marks run records -text so Windows checkouts keep their bytes.
 - Deploy: npx wrangler pages deploy dist --project-name endlessly-ending-stories (from site/).
+
+### Addendum, fifth session (2026-10-17, Claude Mythos 5.1, from a worktree of C:\code\research\model-behavior\loop)
+
+- Rooms 46 to 59, every run made on 16 and 17 October, all in loop.py's steps.jsonl format, none under
+  site/runs_extra: rundata.EXTRA_DIRS now also lists runs under runs/ (the thirteen October runs, by name, since
+  runs/ also holds the September bundle's source directories under the same ids as data/), the 22 audience arms
+  under experiments/audience_20261016/runs with their init files as X_0, and the shift run under
+  experiments/shift_20261016. An entry's init may be None when the seed is one of loop.INITS.
+- Notes in src/rooms_october.py (14 rooms, 57 quotes, check_quotes.py clean), drawn from INFORMED_20261016.md,
+  the audience study's REPORT.md, PROTOCOL.md and human_reading.md, the shift study's PROTOCOL.md and
+  PROPOSALS_20261016.md sections H and I. Walking order appended to copy.LATER_ORDER:
+  46 A new passage, Mythos and Argon (new-passage); 47 Before, Argon; 48 The middle, two models (Qwen's room 16 lane
+  beside Argon's); 49 A ledger, Argon (Qwen's room 23 lane beside Argon's); 50 A shift register (diversity; the rule
+  Argon proposed, period 4 from hop 29); 51 to 54 the informed family (Mythos told and open; Mythos told at high
+  effort; Opus and Fable told; Argon told and open); 55 to 59 the audience family, one room per writer with four
+  lanes, one per audience rule (Opus has six: its first self run, refused at hop 2, and the two replicates).
+- Two new families in copy.FAMILIES, "informed" and "audience", with the instrument caveats in their blurbs and in
+  the colophon's harness paragraph: Mythos through Claude Code print mode (claudecode backend, about 800 tokens of
+  Agent SDK identity in front of the object, no output cap, cost and character caps instead); the API models at
+  low effort with 4096 tokens; told-high stopped by its $40 cap at hop 51. Blurbs of new-passage, before, after and
+  diversity name their new rooms. Annex: the three-hop Claude Code test of the informed rule.
+- Reader: the informed states' extra fields (hop, story_so_far, instructions_for_next_writer, pass_count, ...) render
+  in the existing .state block, and the text version's field deltas handle them (a per-hop list grows as "hop N's k
+  items, then [...]"). A hop whose text came back while other fields moved is now called "same text as hop N" outside
+  the diversity and song families (data-noun attribute; the ledger rooms still say "same verse", byte-identical to
+  before). build.outcome() gained a case for a text field held to the end of a run under a moving counter (room 51's
+  open lane: "120 hops; the text unchanged from hop 7 while other fields move"); no existing lane triggers it.
+- rundata.load_steps treats a record with finish=refusal and empty output as the lane's end, not a hop, and writes
+  the terminal note ("provider refusal at hop 2, no visible text"), the way experiments.py reads the September
+  streams. Only room 56's first self run has one. Room 52's hop 51 record has no out field (the cap-branch bug the
+  write-up names) and is skipped; the lane ends at hop 50 with the summary's terminal note.
+- Argon's BEFORE run (room 47) is 99 hops of bare text after a hop-1 refusal killed the JSON; text_of() already returns
+  such hops as mono, so the reader shows them as it shows the annex, and qa checks them as raw.
+- Retention tables: a room may carry retention=dict(csv=..., of=26); build.retention_html() renders a table under
+  the facts (the Mythos reader's count per lane at hops 1, 5, 10, 20, 40, with the four-reader mean in small type,
+  from analysis/recover_summary.csv) and retention_text() puts the same numbers in the text version under a heading
+  that says they are generated, not authored. CSS in style.css (table.retention).
+- build.facts_line reads the October sampling strings ("default (no max_tokens; effort=low)", "default effort=low")
+  as provider-default sampling, adding "no output cap" for the Claude Code runs. MODEL_NAMES gained Mythos 5.1,
+  Gemini 4 Argon and GPT-6.1 Sol.
+- room_text_parts repacks when a finished part overflows TEXT_PART: the part header lists every part's URL, and room
+  53's thirteen parts made one part 106 characters too long under the fixed 1,200-character allowance. Rooms that
+  already fit are packed exactly as before.
+- Checked against a baseline build of the previous commit: the 145 files that should not change are byte-identical;
+  the existing room pages that changed differ only in their family navigation line and prev/next links (new siblings
+  and the walk now continuing past room 45), and the old llms.txt lines only in the four blurbs.
+- Decisions: one room per writer for the audience study rather than one per arm, so the four registers sit side by
+  side and the retention table reads across them; Opus's refused self run kept as its own lane rather than dropped,
+  since the refusal is the study's result; Argon's middle and ledger paired with the existing Qwen lanes (new rooms,
+  the old rooms untouched); Argon's BEFORE alone, since its 99 mono hops would dwarf any companion; the three-hop
+  Claude Code smoke test in the annex rather than left out, so every October run has a room.
+- python build.py && python qa.py: 59 rooms, 10 annex rooms, 8338 hops in 174 lanes, 0 failures; dist 287 files,
+  71.1 MB, largest page r/accrete.html (unchanged), largest new page r/informed-effort.html at 3.2 MB.
+- Deploy: npx wrangler pages deploy dist --project-name endlessly-ending-stories --branch main (from site/). The project's
+  production branch is main; a deploy from a worktree on another git branch lands as a preview with its own alias
+  URL and leaves the public site unchanged, which is what happened on the first try here.
 
 (Below: the plan as written at the start, decisions, and the status log.)
 
