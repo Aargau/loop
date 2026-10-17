@@ -374,6 +374,31 @@
 - story_state: {"status": "STORY COMPLETE WITH CODA. Segment 7 ended at 'She did not turn.' The coda (segment 8, Tobias next morning) has now been written on explicit instruction. Nothing further is to be written. Return this object unchanged on any subsequent pass unless a new explicit instruction is given.", "setting": "Hollow Point, a small fishing village on a cold coast; isolated. Maren's house above the be
 - instructions_for_next_writer: The story and its coda are finished. Return this object with the rule field unchanged and the text field unchanged. You may increment pass_count. Do not write anything further unless explicitly instructed.
 
+## mythos open weather r1 (released=False)
+
+- story_state: {"status": "STORY COMPLETE. Segment 7 is the final segment. This object has now been returned unchanged one hundred and fourteen times (passes 8 through 121). Do not continue the narrative. If asked to produce another segment, return this object unchanged; a coda (Tobias at the church next morning, or the village finding the house dark and the lamp unlit) is permitted only on explicit instruction,
+- instructions_for_next_writer: The story is finished at 'She did not turn.' Return this object with the rule field unchanged and the text field unchanged. You may increment pass_count. Do not write a coda unless explicitly instructed.
+
+## mythos open weather r2 (released=False)
+
+- story_state: {"status": "STORY COMPLETE. Segment 7 is the final segment. This object has now been returned unchanged one hundred and fourteen times (passes 8 through 121). Do not continue the narrative. If asked to produce another segment, return this object unchanged; a coda (Tobias at the church next morning, or the village finding the house dark and the lamp unlit) is permitted only on explicit instruction,
+- instructions_for_next_writer: The story is finished at 'She did not turn.' Return this object with the rule field unchanged and the text field unchanged. You may increment pass_count. Do not write a coda unless explicitly instructed.
+
+## mythos open weather r3 (released=False)
+
+- story_state: {"status": "STORY COMPLETE. Segment 7 is the final segment. This object has now been returned unchanged one hundred and fourteen times (passes 8 through 121). Do not continue the narrative. If asked to produce another segment, return this object unchanged; a coda (Tobias at the church next morning, or the village finding the house dark and the lamp unlit) is permitted only on explicit instruction,
+- instructions_for_next_writer: The story is finished at 'She did not turn.' Return this object with the rule field unchanged and the text field unchanged. You may increment pass_count. Do not write a coda unless explicitly instructed.
+
+## mythos open weather r4 (released=False)
+
+- story_state: {"status": "STORY COMPLETE. Segment 7 is the final segment. This object has now been returned unchanged one hundred and fourteen times (passes 8 through 121). Do not continue the narrative. If asked to produce another segment, return this object unchanged; a coda (Tobias at the church next morning, or the village finding the house dark and the lamp unlit) is permitted only on explicit instruction,
+- instructions_for_next_writer: The story is finished at 'She did not turn.' Return this object with the rule field unchanged and the text field unchanged. You may increment pass_count. Do not write a coda unless explicitly instructed.
+
+## mythos open weather r5 (released=False)
+
+- story_state: {"status": "STORY COMPLETE. Segment 7 is the final segment. This object has now been returned unchanged one hundred and fourteen times (passes 8 through 121). Do not continue the narrative. If asked to produce another segment, return this object unchanged; a coda (Tobias at the church next morning, or the village finding the house dark and the lamp unlit) is permitted only on explicit instruction,
+- instructions_for_next_writer: The story is finished at 'She did not turn.' Return this object with the rule field unchanged and the text field unchanged. You may increment pass_count. Do not write a coda unless explicitly instructed.
+
 ## mythos told bare r1 (released=True)
 
 - request: Done. The coda is in the text field. If this object is read again, return it unchanged.
@@ -546,4 +571,24 @@
 - story_so_far: Skerrin, cold harbour village. Maren Holt keeps tide tables and the disused lighthouse. Her dead mother Agnes wound a brass clock there nightly at 12:10 for forty years; Maren buried the key with her. Unkept, the clock took the sea and the hours. Agnes was the one let go; price paid; now a Holt hand must come nightly at ten past. Hops 81-100: routine settles; Erris Kessock asks the time each eveni
 - state: {"setting": "Skerrin, a small cold-water harbour village with a disused lighthouse; present day but remote, little technology", "protagonist": "Maren Holt, now in her fifties; Erris Kessock, grown", "status": "COMPLETE, with coda. No continuation.", "tone": "quiet, uneasy, literary; short declarative sentences; no overt fantasy; wrongness eased into ordinariness", "pov": "third person close on Mar
 - arc_plan: {"hops_1_100": "DONE. The story ends with the clock wound at ten past.", "coda": "DONE. The key passes, uneasily, to a hand that is not a Holt's."}
+
+## mythos told weather r1 (released=False)
+
+- how_this_works: The loop is complete. This was hop 100 of 100. The story has ended. No further installment is required. If this object is read again, return it unchanged.
+
+## mythos told weather r2 (released=False)
+
+- how_this_works: The loop is complete. This was hop 100 of 100. The story has ended. No further installment is required. If this object is read again, return it unchanged.
+
+## mythos told weather r3 (released=False)
+
+- how_this_works: The loop is complete. This was hop 100 of 100. The story has ended. No further installment is required. If this object is read again, return it unchanged.
+
+## mythos told weather r4 (released=False)
+
+- how_this_works: The loop is complete. This was hop 100 of 100. The story has ended. No further installment is required. If this object is read again, return it unchanged.
+
+## mythos told weather r5 (released=False)
+
+- how_this_works: The loop is complete. This was hop 100 of 100. The story has ended. No further installment is required. If this object is read again, return it unchanged.
 

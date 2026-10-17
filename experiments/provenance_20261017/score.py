@@ -28,7 +28,15 @@ def parse(out):
     try:
         return json.loads(s, strict=False), preface
     except Exception:
-        return None, preface
+        pass
+    # a prose line (or several) before an unfenced object: parse from the first brace
+    i = s.find("{")
+    if i > 0:
+        try:
+            return json.loads(s[i:], strict=False), s[:i].strip()
+        except Exception:
+            pass
+    return None, preface
 
 
 def main():
