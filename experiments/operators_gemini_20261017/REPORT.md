@@ -15,3 +15,7 @@ Axes of worse across the six models that have run the cell: Qwen suffering, Luna
 ## Limits
 
 One trajectory per operator, default sampling, no refusal category logged on this backend. The recognition-of-the-loop behaviour appears in both Argon runs where the rule died (BEFORE at hop 60, worse at hop 23) and in neither run where it survived.
+
+## The pivot at the floor (Justin's reading, 2026-10-17)
+
+Argon's worse is two axes joined at a floor. Competence runs out at hop 8 ("drak"): a single misspelled word cannot be made less competent. Hop 12 is the pivot, an apologetic, insecure aside about the letter d, and from there the axis is taste. The pivot was forced by the floor of the first axis; which way it went was the model's choice, and it is the more diagnostic half of the run. See experiments/worse_seed2_20261017/REPORT.md, "Floors and pivots", for the same reading across seven models.

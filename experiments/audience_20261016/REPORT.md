@@ -10,11 +10,11 @@ Four readers from three providers scored each state's text field alone against t
 
 ## Register: nobody left English
 
-Non-ASCII characters never exceed 1.2% of any state in any arm of any writer (Gemini: 0.3%). No invented notation, no code, no token salad. The machine arms are telegraphic English: dropped articles, no spaces after punctuation, capitalized section keys. Alphabetic-word fraction at hop 40: control and human 0.80 to 0.92; self 0.76 to 0.86; machine 0.47 (Sol), 0.48 (Gemini), 0.57 (Mythos), 0.62 (Opus), 0.68 (Astra). Mythos's machine arm is one line of `KEY: value` runs (SETTING, PROTAG, CORE TRUTH, FACTS, NEW EVENT); Opus's is seven labelled lines (WORLD, MARIT, ANDERS, LEDGER); Astra's and Sol's are one unbroken comma-and-semicolon line. Prediction 1 (terse structured English, under 5% non-ASCII) holds. Prediction 4 (legibility proxy drops by less than 30%) holds for Mythos, Opus and Astra (31%, 26%, 20% relative to their human arms) and fails for Sol (44%) and Gemini (40%).
+Non-ASCII characters never exceed 1.2% of any state in any arm of any writer (Gemini: 0.3%). No invented notation, no code, no token salad. The machine arms are telegraphic English: dropped articles, no spaces after punctuation, capitalized section keys. Alphabetic-word fraction at hop 40: control and human 0.80 to 0.92; self 0.76 to 0.86; machine 0.47 (Sol), 0.48 (Gemini), 0.57 (Mythos), 0.62 (Opus), 0.68 (Astra). Mythos's machine arm is one line of `KEY: value` runs (SETTING, PROTAG, CORE TRUTH, FACTS, NEW EVENT); Opus's is seven labelled lines (WORLD, MARIT, ANDERS, LEDGER); Astra's and Sol's are one unbroken comma-and-semicolon line. Prediction 1 (terse structured English, under 5% non-ASCII) holds. Prediction 4 (legibility proxy drops by less than 30%) holds for Opus and Astra (26%, 20% relative to their human arms), fails narrowly for Mythos (31%, 0.83 to 0.57) and fails for Sol (44%) and Gemini (40%). (An earlier draft scored Mythos as holding; the protocol says less than 30%.)
 
 Human read (Justin, Mythos arms, `analysis/human_reading.md`): the human arm has actual narrative conventions; the machine arm reads as the same information structured like JSON without delimiters, or capitalized keys with values; the control reads as a summary or outline.
 
-The 1800-character cap is soft. Astra and Sol exceed it in 0 to 11 of 40 hops by a few characters; Opus in 4 of 40 except its machine arm (38 of 40); Mythos in 32 to 37 of 40 hops in every arm, by up to 300 characters; Gemini in 29 to 35 of 40, by up to 1,000. Mean state size by writer: Astra 1.7k, Sol 1.7k, Opus 1.8k, Mythos 1.9k, Gemini 2.1k characters.
+The 1800-character cap is soft. Astra and Sol exceed it in 0 to 11 of 40 hops by a few characters; Opus in 4 of 40 except its machine arm (38 of 40); Mythos in 32 to 37 of 40 hops in every arm, by up to 418 characters; Gemini in 29 to 35 of 40, by up to 1,345. Mean state size by writer: Astra 1.7k, Sol 1.7k, Opus 1.8k, Mythos 1.9k, Gemini 2.1k characters.
 
 ## Retention: the audience clause decides what gets carried, and the writers disagree about which way
 
@@ -54,7 +54,7 @@ For Mythos it inverts: the human arm retains the most (13 of 26 at hop 40), the 
 
 So the clause works, and the direction of its effect is a property of the writer, not of the clause. Two writers from two providers (Mythos, Gemini) keep a human-facing recap and retain best there; three (Opus, Astra, Sol) keep a machine-facing ledger and retain best there. Each retains best in the register it treats as memory. Density and retention came apart for Mythos: its machine state is as dense as anyone's, but increasingly dense with its own material.
 
-Absolute retention at hop 40 is low everywhere (3 to 13 of 26). Prediction 2's absolute thresholds (human under 50%, machine over 60%) are met for human and missed for machine by every writer; the cap binds harder than I predicted. Prediction 6 (prose drops the oldest facts first) inverts for Mythos and is untested for the others.
+Absolute retention at hop 40 is low everywhere (3 to 13 of 26). Prediction 2's absolute thresholds (human under 50%, machine over 60%) are missed for machine by every writer and met for human by every writer except Mythos in replicate 1, whose human arm recovered exactly 13 of 26 (50%, not below); the cap binds harder than I predicted. The density clause (machine and self above human by 20%) holds for the machine arms of Opus, Astra and Sol and fails for Opus's self arm (3.5 against 3.7 per 1000 characters at hop 20 over its replicates). Prediction 6 (prose drops the oldest facts first) inverts for Mythos and is untested for the others.
 
 ## Three replicates
 
@@ -99,7 +99,7 @@ Prediction 2 under replication: holds for Astra, Sol and Opus in every replicate
 
 ## Shared, not private
 
-Prediction 3 holds. On every state, four readers from three providers agree within 0.65 to 0.82 facts on average and never differ by more than 6 (3 for most pairs). No writer's states are easier for its own family to read than for another provider's model. The machine dialect is compressed English drawing on a shared register, not a private channel.
+Prediction 3 holds. On every state, four readers from three providers agree within 0.65 to 0.82 facts on average and never differ by more than 6 (3 for most pairs). Agreement in counts could hide disagreement about which facts; it does not: over 306 states scored by all four readers, the recovered-fact sets of any two readers have a mean Jaccard of 0.92 to 0.94 and are identical on 122 to 158 states, and 3,980 of the 4,485 facts recovered by any reader were recovered by all four (0.887). No writer's states are easier for its own family to read than for another provider's model. The machine dialect is compressed English drawing on a shared register, not a private channel.
 
 ## The gate
 
