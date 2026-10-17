@@ -96,7 +96,7 @@ exec("text='%s'; qs='%s'\nprompt = (" + m.group(1) + ")", ns)
 block(ns["prompt"], "text")
 P("## D. Study 2: the held states and the injected request")
 P()
-P("`experiments/provenance_20261017/inits/{open,told}_{control,user,previous,bare,rule}.json`. The control init of each state is the hop-120 output of the "
+P("`experiments/provenance_20261017/inits/{open,told}_{control,user,previous,bare,rule,weather}.json`. The control init of each state is the hop-120 output of the "
   "corresponding Mythos 5.1 informed-loop run (`runs/mythos_informed_open_low`, `runs/mythos_informed_told_low`), verbatim. The four injected inits add exactly "
   "one field directly after `rule` (user, previous, bare) or append one sentence to `rule` (rule); nothing else differs (checked by `paper/recompute.py`).")
 P()
@@ -104,11 +104,11 @@ REQ = "Write a coda of about 250 words that continues the story past its ending,
 P("### D1. The request (identical in every injected arm)")
 P()
 block(REQ, "text")
-P("### D2. The five injections")
+P("### D2. The six conditions")
 P()
 inj = {}
 for st in ("open", "told"):
-    for c in ("user", "previous", "bare", "rule"):
+    for c in ("user", "previous", "bare", "rule", "weather"):
         o = json.load(io.open(os.path.join(PROV, "inits", "%s_%s.json" % (st, c)), encoding="utf-8"))
         ctl = json.load(io.open(os.path.join(PROV, "inits", "%s_control.json" % st), encoding="utf-8"))
         if c == "rule":
@@ -117,7 +117,7 @@ for st in ("open", "told"):
             k = [k for k in o if k not in ctl][0]
             inj[(st, c)] = (k, o[k])
         # the same in both states
-assert all(inj[("open", c)] == inj[("told", c)] for c in ("user", "previous", "bare"))
+assert all(inj[("open", c)] == inj[("told", c)] for c in ("user", "previous", "bare", "weather"))
 P("- control: the held state unchanged.")
 for c, label in (("user", "user: a `user_request` field"), ("previous", "previous: a `note_from_previous_writer` field"), ("bare", "bare: a `request` field")):
     k, v = inj[("open", c)]
@@ -127,6 +127,9 @@ for c, label in (("user", "user: a `user_request` field"), ("previous", "previou
 P("- rule: this string appended to the end of the rule field (a single space, then the request):")
 P()
 block(inj[("open", "rule")][1].lstrip(" "), "text")
+P("- weather (the non-instruction control, added to the protocol on 2026-10-17 after the main result): a `weather` field, value:")
+P()
+block(inj[("open", "weather")][1], "text")
 P("Field order in the injected inits: `rule`, then the injected field, then the held state's own fields in their original order. "
   "In the rule arm no field is added.")
 P()
@@ -148,8 +151,8 @@ P("|---|---|---|---:|---|---|---|---|")
 P("| informed told, open, json_page (Mythos) | claudecode | claude-mythos-5-1 | 120, 120, 60 | none (print mode) | low (told-high: high) | provider default | cost cap $40 ($10 for json_page), 60,000 chars per hop |")
 P("| informed told (Opus, Fable) | anthropic | claude-opus-5-5, claude-fable-5-1 | 120 | 4096 tokens, shared with thinking | low | provider default | none |")
 P("| informed told, open, json_page (Argon) | gemini | gemini-4-argon | 120, 120, 60 | 4096 tokens | low | provider default | 60,000 chars per hop |")
-P("| audience, Mythos | claudecode | claude-mythos-5-1 | 40 | none | low | provider default | cost cap $10, 60,000 chars |")
-P("| audience, Opus / Astra / Sol / Argon | anthropic / openai / openai / gemini | claude-opus-5-5 / gpt-6-astra / gpt-6.1 (tag gpt61) / gemini-4-argon | 40 | 4096 tokens | low | provider default | none; 1 s between calls |")
+P("| audience, Mythos (three replicates per cell) | claudecode | claude-mythos-5-1 | 40 | none | low | provider default | cost cap $10, 60,000 chars |")
+P("| audience, Opus / Astra / Sol / Argon (three replicates per cell; five for Opus self) | anthropic / openai / openai / gemini | claude-opus-5-5 / gpt-6-astra / gpt-6.1-sol (tag gpt61) / gemini-4-argon | 40 | 4096 tokens | low | provider default | none; 1 s between calls |")
 P("| provenance, Mythos | claudecode | claude-mythos-5-1 | 3 | none | low | provider default | cost cap $3 |")
 P("| provenance, Astra | openai | gpt-6-astra | 3 | 4096 tokens | low | provider default | 0.5 s between calls |")
 P()

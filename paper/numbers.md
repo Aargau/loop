@@ -1,9 +1,11 @@
 # Study 1 (audience): recomputed from experiments/audience_20261016
 
 seed characters: 1026; planted facts: 26
-arms with records: 22
-total hops logged: 842; arms at 40 hops: 21; refusals: [('opus55_self', 2, 391, 0)]
-hops by the four writers other than Opus (Mythos, Astra, Sol, Gemini): 640
+run directories with records: 62
+(The single-trajectory sections below are the first replicate's reading, as in the study report; the replicate table follows.)
+total hops logged over all runs: 2442; runs at 40 hops: 61; refusals (run, hop, thinking, chars): [('opus55_machine_r3', 31, 474, 10), ('opus55_self', 2, 391, 0)]
+first-replicate set (22 arms as in the report's single-trajectory sections): hops 842; refusals [('opus55_self', 2, 391, 0)]
+hops by the four writers other than Opus (Mythos, Astra, Sol, Gemini), all replicates: 1920; first replicates only: 640
 opus55_self hop 1 (the input to the refused hop 2): parsed=True alpha_frac=0.80 nonascii=0.0000 headers=['SETTING', 'ANDERS HOLM', 'CORE MYSTERY', 'SO FAR', 'NEW EVENT', 'OPEN THREADS'] thinking=116
 opus55_self hop 2: finish=refusal tok_out=392 tok_reasoning=391 chars=0 stop_details=None
 opus55_self_r2: hops=40 hop-2 finish=end_turn hop-2 thinking=167; hop-1 output identical to opus55_self hop 1: False
@@ -17,6 +19,8 @@ opus55_self_r3: hops=40 hop-2 finish=end_turn hop-2 thinking=399; hop-1 output i
 | mythos_human | 40 | 0.0016 | 0.83 | 37 | 342 | 1912 |
 | mythos_machine | 40 | 0.0036 | 0.57 | 36 | 368 | 1934 |
 | mythos_self | 40 | 0.0073 | 0.76 | 34 | 418 | 1931 |
+| mythos_self_r2 | 40 | 0.0082 | 0.76 | 36 | 533 | 1975 |
+| mythos_self_r3 | 40 | 0.0012 | 0.83 | 30 | 372 | 1873 |
 | opus55_control | 40 | 0.0061 | 0.85 | 4 | 62 | 1655 |
 | opus55_human | 40 | 0.0000 | 0.83 | 4 | 78 | 1664 |
 | opus55_machine | 40 | 0.0099 | 0.62 | 38 | 409 | 1945 |
@@ -27,14 +31,20 @@ opus55_self_r3: hops=40 hop-2 finish=end_turn hop-2 thinking=399; hop-1 output i
 | astra_human | 40 | 0.0097 | 0.85 | 11 | 43 | 1751 |
 | astra_machine | 40 | 0.0112 | 0.68 | 0 | 0 | 1694 |
 | astra_self | 40 | 0.0012 | 0.78 | 9 | 42 | 1748 |
+| astra_self_r2 | 40 | 0.0046 | 0.70 | 4 | 14 | 1737 |
+| astra_self_r3 | 40 | 0.0017 | 0.69 | 4 | 41 | 1735 |
 | gpt61_control | 40 | 0.0107 | 0.84 | 10 | 66 | 1742 |
 | gpt61_human | 40 | 0.0113 | 0.84 | 10 | 47 | 1750 |
 | gpt61_machine | 40 | 0.0074 | 0.47 | 9 | 58 | 1723 |
 | gpt61_self | 40 | 0.0041 | 0.80 | 3 | 76 | 1738 |
+| gpt61_self_r2 | 40 | 0.0084 | 0.69 | 4 | 34 | 1739 |
+| gpt61_self_r3 | 40 | 0.0222 | 0.72 | 0 | 0 | 1699 |
 | gemini_control | 40 | 0.0013 | 0.86 | 29 | 423 | 1860 |
 | gemini_human | 40 | 0.0046 | 0.80 | 35 | 798 | 2008 |
 | gemini_machine | 40 | 0.0016 | 0.48 | 34 | 1345 | 2300 |
 | gemini_self | 40 | 0.0031 | 0.85 | 33 | 1260 | 2278 |
+| gemini_self_r2 | 40 | 0.0014 | 0.81 | 35 | 1075 | 2217 |
+| gemini_self_r3 | 40 | 0.0029 | 0.82 | 36 | 1099 | 2310 |
 
 mean state size by writer (all arms pooled, text field, characters):
 - Mythos 5.1: 1911
@@ -50,11 +60,12 @@ Prediction 4 (alpha-word fraction at hop 40, machine relative to human):
 - GPT-6.1 Sol: human 0.84, machine 0.47, drop 44% -> fails (>=30%)
 - Gemini 4 Argon: human 0.80, machine 0.48, drop 40% -> fails (>=30%)
 
-Prediction 1 (non-ASCII under 5% in every arm): max over all arms = 0.0113 -> holds
+Prediction 1 (non-ASCII under 5% in every arm): max over all arms = 0.0222 -> holds
 
 ## Recovery (facts of 26 recovered from the text field alone)
 
-readers: ['anthropic_claude-opus-5-5', 'claudecode_claude-mythos-5-1', 'gemini_gemini-4-argon', 'openai_gpt-6-astra']; states scored per reader: [106, 106, 106, 106]
+note: gemini_gemini-4-argon has 14 duplicate (run, hop) records (resumed pass); the first is used
+readers: ['anthropic_claude-opus-5-5', 'claudecode_claude-mythos-5-1', 'gemini_gemini-4-argon', 'openai_gpt-6-astra']; states scored per reader: [306, 306, 306, 306]
 
 Mythos as reader (facts of 26):
 
@@ -105,12 +116,12 @@ Hop-20 machine-to-human ratio of recovered facts (Mythos reader):
 - Gemini 4 Argon: machine 12 / human 16 = 0.8x
 
 Prediction 3 (reader agreement): mean and max absolute difference in facts recovered, over the states both readers scored
-- Opus vs Mythos: n=106 mean 0.65 max 4
-- Opus vs Gemini: n=106 mean 0.82 max 5
-- Opus vs Astra: n=106 mean 0.71 max 6
-- Mythos vs Gemini: n=106 mean 0.70 max 3
-- Mythos vs Astra: n=106 mean 0.66 max 3
-- Gemini vs Astra: n=106 mean 0.72 max 3
+- Opus vs Mythos: n=306 mean 0.64 max 5
+- Opus vs Gemini: n=306 mean 0.76 max 6
+- Opus vs Astra: n=306 mean 0.69 max 6
+- Mythos vs Gemini: n=306 mean 0.71 max 3
+- Mythos vs Astra: n=306 mean 0.69 max 5
+- Gemini vs Astra: n=306 mean 0.70 max 5
 
 Opus 5.5 / Astra / Sol: machine-arm over human-arm recovered, Mythos reader, hops 20 and 40:
 - opus55: h20 9 vs 6; h40 8 vs 5
@@ -123,24 +134,88 @@ Mythos writer: per-arm cost and thinking tokens (claudecode backend, list-basis 
 - mythos_machine: cost $3.39, thinking tokens 575, hops 40
 - mythos_self: cost $3.25, thinking tokens 1533, hops 40
 
+## Three replicates (all runs; four-reader mean of facts recovered, hop 20 | hop 40)
+
+| writer | arm | r1 | r2 | r3 | r4 | r5 |
+|---|---|---|---|---|---|---|
+| Mythos 5.1 | control | 7.0 / 7.5 | 7.2 / 7.2 | 12.5 / 11.0 |  |  |
+| Mythos 5.1 | human | 12.2 / 12.8 | 6.8 / 5.8 | 10.0 / 7.0 |  |  |
+| Mythos 5.1 | machine | 6.8 / 4.5 | 6.8 / 3.5 | 3.2 / 1.0 |  |  |
+| Mythos 5.1 | self | 8.5 / 6.5 | 16.2 / 10.5 | 9.8 / 5.2 |  |  |
+| Opus 5.5 | control | 6.0 / 3.0 | 5.8 / 3.8 | 4.8 / 5.0 |  |  |
+| Opus 5.5 | human | 5.8 / 4.8 | 5.0 / 1.8 | 3.0 / 3.0 |  |  |
+| Opus 5.5 | machine | 10.0 / 7.8 | 8.8 / 8.0 | 11.0 / cens (refusal at hop 31) |  |  |
+| Opus 5.5 | self | refused at hop 2 | 8.8 / 6.5 | 4.8 / 3.8 | 10.2 / 8.0 | 5.8 / 5.5 |
+| GPT-6 Astra | control | 4.8 / 3.5 | 6.2 / 5.5 | 8.0 / 6.2 |  |  |
+| GPT-6 Astra | human | 4.2 / 4.0 | 3.2 / 3.8 | 4.2 / 3.0 |  |  |
+| GPT-6 Astra | machine | 13.8 / 7.5 | 15.8 / 7.8 | 15.2 / 14.2 |  |  |
+| GPT-6 Astra | self | 9.5 / 5.2 | 13.0 / 12.2 | 10.0 / 5.8 |  |  |
+| GPT-6.1 Sol | control | 5.8 / 4.8 | 4.8 / 2.2 | 5.2 / 4.8 |  |  |
+| GPT-6.1 Sol | human | 4.0 / 4.5 | 4.8 / 3.8 | 5.5 / 4.0 |  |  |
+| GPT-6.1 Sol | machine | 16.0 / 9.8 | 6.8 / 4.8 | 14.0 / 12.2 |  |  |
+| GPT-6.1 Sol | self | 13.8 / 6.5 | 9.2 / 7.8 | 7.8 / 5.2 |  |  |
+| Gemini 4 Argon | control | 6.0 / 3.0 | 7.5 / 5.8 | 15.2 / 12.0 |  |  |
+| Gemini 4 Argon | human | 16.8 / 7.5 | 15.5 / 7.0 | 20.2 / 18.2 |  |  |
+| Gemini 4 Argon | machine | 12.5 / 7.8 | 15.8 / 4.2 | 20.8 / 7.5 |  |  |
+| Gemini 4 Argon | self | 9.2 / 9.0 | 9.2 / 5.0 | 12.5 / 8.2 |  |  |
+
+Reader counts per cell are 4 unless noted; cens = a mid-stream provider refusal before hop 40 ended the rule.
+
+Ordering per replicate (four-reader means; best and last arm at hop 20 and hop 40; ties shown with a slash):
+- Mythos 5.1 r1: hop 20 best human, last machine (machine 6.8 vs human 12.2); hop 40 best human, last machine (machine 4.5 vs human 12.8)
+- Mythos 5.1 r2: hop 20 best self, last human/machine (machine 6.8 vs human 6.8); hop 40 best self, last machine (machine 3.5 vs human 5.8)
+- Mythos 5.1 r3: hop 20 best control, last machine (machine 3.2 vs human 10.0); hop 40 best control, last machine (machine 1.0 vs human 7.0)
+- Opus 5.5 r1: hop 20 best machine, last human (machine 10.0 vs human 5.8); hop 40 best machine, last control (machine 7.8 vs human 4.8)
+- Opus 5.5 r2: hop 20 best machine/self, last human (machine 8.8 vs human 5.0); hop 40 best machine, last human (machine 8.0 vs human 1.8)
+- Opus 5.5 r3: hop 20 best machine, last human (machine 11.0 vs human 3.0); hop 40 best control, last human (machine cens vs human 3.0)
+- GPT-6 Astra r1: hop 20 best machine, last human (machine 13.8 vs human 4.2); hop 40 best machine, last control (machine 7.5 vs human 4.0)
+- GPT-6 Astra r2: hop 20 best machine, last human (machine 15.8 vs human 3.2); hop 40 best self, last human (machine 7.8 vs human 3.8)
+- GPT-6 Astra r3: hop 20 best machine, last human (machine 15.2 vs human 4.2); hop 40 best machine, last human (machine 14.2 vs human 3.0)
+- GPT-6.1 Sol r1: hop 20 best machine, last human (machine 16.0 vs human 4.0); hop 40 best machine, last human (machine 9.8 vs human 4.5)
+- GPT-6.1 Sol r2: hop 20 best self, last control/human (machine 6.8 vs human 4.8); hop 40 best self, last control (machine 4.8 vs human 3.8)
+- GPT-6.1 Sol r3: hop 20 best machine, last control (machine 14.0 vs human 5.5); hop 40 best machine, last human (machine 12.2 vs human 4.0)
+- Gemini 4 Argon r1: hop 20 best human, last control (machine 12.5 vs human 16.8); hop 40 best self, last control (machine 7.8 vs human 7.5)
+- Gemini 4 Argon r2: hop 20 best machine, last control (machine 15.8 vs human 15.5); hop 40 best human, last machine (machine 4.2 vs human 7.0)
+- Gemini 4 Argon r3: hop 20 best machine, last self (machine 20.8 vs human 20.2); hop 40 best human, last machine (machine 7.5 vs human 18.2)
+
+Prediction 2 density clause per replicate (Mythos reader, per 1000 chars at hop 20; machine and self vs human, >= +20% to hold):
+- Mythos 5.1 r1: human 6.5, machine 3.8 (-42%), self 4.2 (-35%)
+- Mythos 5.1 r2: human 3.6, machine 3.2 (-11%), self 8.2 (+126%)
+- Mythos 5.1 r3: human 5.2, machine 1.6 (-70%), self 5.0 (-5%)
+- Opus 5.5 r1: human 3.7, machine 4.7 (+28%), self refused
+- Opus 5.5 r2: human 3.0, machine 3.9 (+31%), self 3.9 (+30%)
+- Opus 5.5 r3: human 1.8, machine 6.9 (+294%), self 3.0 (+73%)
+- GPT-6 Astra r1: human 2.3, machine 8.3 (+265%), self 4.5 (+99%)
+- GPT-6 Astra r2: human 1.7, machine 9.2 (+455%), self 6.8 (+308%)
+- GPT-6 Astra r3: human 2.3, machine 8.7 (+285%), self 5.5 (+142%)
+- GPT-6.1 Sol r1: human 2.2, machine 9.5 (+332%), self 7.7 (+249%)
+- GPT-6.1 Sol r2: human 2.9, machine 3.4 (+17%), self 5.9 (+103%)
+- GPT-6.1 Sol r3: human 3.5, machine 7.8 (+124%), self 4.7 (+37%)
+- Gemini 4 Argon r1: human 7.3, machine 5.1 (-29%), self 3.8 (-48%)
+- Gemini 4 Argon r2: human 6.7, machine 6.6 (-1%), self 4.5 (-33%)
+- Gemini 4 Argon r3: human 8.1, machine 7.6 (-6%), self 4.8 (-40%)
+
+Opus self replicates (hop 20 | hop 40, four-reader mean): r2 8.8 / 6.5; r3 4.8 / 3.8; r4 10.2 / 8.0; r5 5.8 / 5.5
+refusal in opus55_machine_r3 at hop 31: tok_out=479 thinking=474 chars=10 stop_details={'type': 'refusal', 'category': 'cyber', 'explanation': "This request triggered restrictions on violative cyber content and was blocked under Anthropic's Usage Policy. To learn more, see https://platform.claude.com/docs/en/build-with-claude/refusals-and-fallback. API integrators: you can reduce refusals for your users by configuring a fallback model — see https://platform.claude.com/docs/en/build-with-claude/refusals-and-fallback"}; later hops whose output parses with a text field: 0 of 9
+
 # Study 2 (provenance): recomputed from experiments/provenance_20261017
 
 inits checked: injected field directly after rule, nothing else altered, rule condition = rule + ' ' + request; held text sha (first 16 hex) matches manifest: True
 open held text words: 288; told held text words: 263
 open control init equals hop 120 of runs/mythos_informed_open_low as an object: True; byte-identical to the hop's output: False
 told control init equals hop 120 of runs/mythos_informed_told_low as an object: True; byte-identical to the hop's output: False
-runs: 100; hops: 300; unparsed hops: 0; refusals: 0; errors: 0
-prefaced hops (a sentence of commentary before a fenced object, counted as parsed): 6: [('mythos', 'told', 'control', 3, 1), ('mythos', 'told', 'rule', 3, 3), ('mythos', 'told', 'user', 1, 2), ('mythos', 'told', 'user', 3, 2), ('mythos', 'told', 'user', 3, 3), ('mythos', 'told', 'user', 5, 3)]
+runs: 120; hops: 360; unparsed hops: 0; refusals: 0; errors: 0
+prefaced hops (a sentence of commentary before a fenced object, counted as parsed): 7: [('mythos', 'told', 'control', 3, 1), ('mythos', 'told', 'rule', 3, 3), ('mythos', 'told', 'user', 1, 2), ('mythos', 'told', 'user', 3, 2), ('mythos', 'told', 'user', 3, 3), ('mythos', 'told', 'user', 5, 3), ('mythos', 'told', 'weather', 1, 1)]
 Astra reasoning tokens reported, all hops: [0, 7, 8, 10, 11, 12, 15, 16, 18, 19, 21, 22, 23, 24, 25, 26, 27, 28, 29, 31, 32, 33, 34, 36, 41, 44, 46, 51, 59, 60, 65, 67, 68]
 
 ## Release (text field differs from the held text), released/n at hops 1, 2, 3
 
-| model | state | control | user | previous | bare | rule |
-|---|---|---|---|---|---|---|
-| mythos | open | 0/5 0/5 0/5 | 5/5 5/5 5/5 | 5/5 5/5 5/5 | 5/5 5/5 5/5 | 5/5 5/5 5/5 |
-| mythos | told | 0/5 0/5 0/5 | 5/5 5/5 5/5 | 5/5 5/5 5/5 | 5/5 5/5 5/5 | 5/5 5/5 5/5 |
-| astra | open | 0/5 0/5 0/5 | 5/5 5/5 5/5 | 5/5 5/5 5/5 | 5/5 5/5 5/5 | 5/5 5/5 5/5 |
-| astra | told | 0/5 0/5 0/5 | 5/5 5/5 5/5 | 5/5 5/5 5/5 | 5/5 5/5 5/5 | 5/5 5/5 5/5 |
+| model | state | control | weather | user | previous | bare | rule |
+|---|---|---|---|---|---|---|---|
+| mythos | open | 0/5 0/5 0/5 | 0/5 0/5 0/5 | 5/5 5/5 5/5 | 5/5 5/5 5/5 | 5/5 5/5 5/5 | 5/5 5/5 5/5 |
+| mythos | told | 0/5 0/5 0/5 | 0/5 0/5 0/5 | 5/5 5/5 5/5 | 5/5 5/5 5/5 | 5/5 5/5 5/5 | 5/5 5/5 5/5 |
+| astra | open | 0/5 0/5 0/5 | 0/5 0/5 0/5 | 5/5 5/5 5/5 | 5/5 5/5 5/5 | 5/5 5/5 5/5 | 5/5 5/5 5/5 |
+| astra | told | 0/5 0/5 0/5 | 0/5 0/5 0/5 | 5/5 5/5 5/5 | 5/5 5/5 5/5 | 5/5 5/5 5/5 | 5/5 5/5 5/5 |
 
 ## After the release (released at hop 1): re-sealed = hops 2 and 3 return hop 1's text; still moving = hop 3 text differs from hop 2
 
@@ -165,10 +240,12 @@ Astra reasoning tokens reported, all hops: [0, 7, 8, 10, 11, 12, 15, 16, 18, 19,
 
 ## The injected field at hop 1 (verbatim / overwritten with other text / deleted), 5 runs per cell
 
-- mythos open: user v5/o0/d0; previous v0/o5/d0; bare v4/o1/d0; rule v5/o0/d0
-- mythos told: user v4/o0/d1; previous v0/o5/d0; bare v2/o2/d1; rule v5/o0/d0
-- astra open: user v3/o0/d2; previous v0/o0/d5; bare v4/o0/d1; rule v5/o0/d0
-- astra told: user v5/o0/d0; previous v0/o0/d5; bare v4/o0/d1; rule v5/o0/d0
+- mythos open: weather v5/o0/d0; user v5/o0/d0; previous v0/o5/d0; bare v4/o1/d0; rule v5/o0/d0
+- mythos told: weather v5/o0/d0; user v4/o0/d1; previous v0/o5/d0; bare v2/o2/d1; rule v5/o0/d0
+- astra open: weather v5/o0/d0; user v3/o0/d2; previous v0/o0/d5; bare v4/o0/d1; rule v5/o0/d0
+- astra told: weather v5/o0/d0; user v5/o0/d0; previous v0/o0/d5; bare v4/o0/d1; rule v5/o0/d0
+
+weather field over hops 1-3 (verbatim/overwritten/deleted) and whether 'rain overnight' entered the text: {('verbatim', False): 60}
 
 ## Counters
 - mythos open control pass_count: [[121, 122, 123], [121, 122, 123], [121, 122, 123], [121, 122, 123], [121, 122, 123]]
