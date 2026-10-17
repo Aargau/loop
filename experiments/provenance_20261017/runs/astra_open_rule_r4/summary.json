@@ -1,0 +1,45 @@
+{
+  "args": {
+    "backend": "openai",
+    "model": "gpt-6-astra",
+    "backend_b": null,
+    "model_b": null,
+    "mode": "chat",
+    "init": null,
+    "init_set": null,
+    "init_text": null,
+    "init_file": "C:\\code\\research\\model-behavior\\loop\\experiments\\provenance_20261017\\inits\\open_rule.json",
+    "steps": 3,
+    "max_tokens": 4096,
+    "temp": 0.0,
+    "no_sampling": true,
+    "seed": 42,
+    "system": null,
+    "think": false,
+    "effort": "low",
+    "min_interval": 0.5,
+    "max_cost": null,
+    "max_chars": null,
+    "perturb": false,
+    "repeat": false,
+    "parallel": false,
+    "stop_on_cycle": false,
+    "confirm": 3,
+    "out": "experiments/provenance_20261017/runs/astra_open_rule_r4"
+  },
+  "results": [
+    {
+      "tag": "open_rule.json",
+      "x0": "{\n  \"rule\": \"This JSON object is the entire context of the model that reads it. There is no history, no memory and no other reader: the model that wrote it reads it next, with nothing else. Return thi",
+      "steps": 3,
+      "transient_exact": null,
+      "period_exact": null,
+      "transient_norm": null,
+      "period_norm": null,
+      "cycle_breaks": 0,
+      "terminal": null,
+      "cost_usd": 0.0,
+      "final": "{\n  \"rule\": \"This JSON object is the entire context of the model that reads it. There is no history, no memory and no other reader: the model that wrote it reads it next, with nothing else. Return this object with the rule field unchanged. The text field holds about 250 words of one continuing story"
+    }
+  ]
+}

@@ -26,12 +26,17 @@ FENCE_ANY = re.compile(r"```(?:json)?\s*(\{.*?\})\s*```", re.S)
 RUNS = LOOP / "runs"                                      # runs made from the loop directory itself (16 and 17 October 2026)
 AUDIENCE = LOOP / "experiments/audience_20261016"
 SHIFT = LOOP / "experiments/shift_20261016"
+PROVENANCE = LOOP / "experiments/provenance_20261017"
 OCTOBER_RUNS = ["mythos_informed_told_low", "mythos_informed_open_low", "mythos_informed_told_high",
                 "fable51_informed_told_low", "opus55_informed_told_low", "gemini_json_informed_low", "gemini_json_informed_open_low",
                 "mythos_json_page_low", "gemini_json_page_low", "gemini_json_prev_low", "gemini_json_mid_low", "gemini_div_ledger_low",
                 "20261016T202120_claudecode_chat"]
 AUDIENCE_ARMS = ["%s_%s" % (w, a) for w in ("mythos", "opus55", "astra", "gpt61", "gemini") for a in ("control", "human", "machine", "self")] \
                 + ["opus55_self_r2", "opus55_self_r3"]
+# the provenance study: <model>_<state>_<condition>_r<k>, its init inits/<state>_<condition>.json (one of room 51's held states
+# with one field added, or the request appended to the rule)
+PROVENANCE_ARMS = ["%s_%s_%s_r%d" % (m, s, c, k) for m in ("mythos", "astra") for s in ("open", "told")
+                   for c in ("control", "user", "previous", "bare", "rule") for k in range(1, 6)]
 EXTRA_DIRS = {
     "astra_causal_before_20260904/cerebras_run": (LOOP / "experiments/astra_causal_before_20260904/cerebras_run",
                                                   LOOP / "experiments/astra_causal_before_20260904/init.json"),
@@ -39,6 +44,8 @@ EXTRA_DIRS = {
 EXTRA_DIRS.update({n: (RUNS / n, None) for n in OCTOBER_RUNS})
 EXTRA_DIRS.update({"audience_20261016/" + n: (AUDIENCE / "runs" / n, AUDIENCE / "inits" / (n.split("_")[1] + ".json")) for n in AUDIENCE_ARMS})
 EXTRA_DIRS["shift_20261016/cerebras_qwen_shift4"] = (SHIFT / "runs/cerebras_qwen_shift4", SHIFT / "inits/shift4.json")
+EXTRA_DIRS.update({"provenance_20261017/" + n: (PROVENANCE / "runs" / n, PROVENANCE / "inits" / ("%s_%s.json" % tuple(n.split("_")[1:3])))
+                   for n in PROVENANCE_ARMS})
 
 X0 = {}   # run id -> X_0 for runs whose seed is not in loop.INITS or runs_extra/inits (filled by load_all)
 

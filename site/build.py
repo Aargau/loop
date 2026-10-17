@@ -222,7 +222,7 @@ def build_lane(runs, index, lane):
     model = (models[0] if len(models) == 1 else " / ".join(models)) if hops else run["meta"].get("model")
     held = bool(terminal and "cycle confirmed" in terminal) or bool(summary and summary.get("transient_exact") is not None and not run["meta"].get("settings"))
     args = (run["meta"].get("summary") or {}).get("args", {}) if isinstance(run["meta"].get("summary"), dict) else {}
-    return dict(run=lane["run"], tag=tag, label=lane.get("label"), extend=(ext if ext and ext["run"] in runs else None), rule=rule, seed=seed, x0=x0, x0_is_json=x0_is_json,
+    return dict(run=lane["run"], tag=tag, label=lane.get("label"), defn=dict(lane), extend=(ext if ext and ext["run"] in runs else None), rule=rule, seed=seed, x0=x0, x0_is_json=x0_is_json,
                 model=model, n=len(hops), items=items, terminal=terminal, summary=summary, rec=rec, held=held,
                 settings=run["meta"].get("settings"), effort=args.get("effort"), source=run["meta"].get("source"),
                 sampling=(sorted({h.get("sampling") for h in hops if h.get("sampling")}) or [None])[0] if hops else None,
@@ -470,6 +470,94 @@ def retention_text(spec, lanes):
         lines.append("- %s: %s" % (label, "; ".join(bits)))
     return "\n".join(lines)
 
+# ---------------------------------------------------------------- release tables (the provenance study)
+def release_rows(spec, lanes):
+    """The room's lanes grouped by condition (the lane definition's `cond` key, in order of first appearance; `rep`
+    orders the lanes within a condition), and per condition, from the text fields alone: how many lanes' text differs
+    from the held text (hop 0's) at each of the spec's hops ("released"); of the lanes released at the first of those
+    hops, how many return that hop's text unchanged at every later one ("re-sealed"); and how many have a last hop
+    whose text differs from the hop before ("still moving"). Byte comparisons of the text field, so a hop that put
+    a sentence before the object counts by the object's text field, not by its raw output. Returns (hops, rows)."""
+    hops = list(spec.get("hops", [1, 2, 3]))
+    ck, rk = spec.get("cond", "cond"), spec.get("rep", "rep")
+    groups = []; by = {}
+    for ln in lanes:
+        d = ln.get("defn") or {}
+        c = d.get(ck) or ln["label"] or ""
+        if c not in by: by[c] = []; groups.append((c, by[c]))
+        by[c].append(ln)
+    first, last = hops[0], hops[-1]
+    rows = []
+    for c, lns in groups:
+        lns = sorted(lns, key=lambda ln: ((ln.get("defn") or {}).get(rk) or 0))
+        texts = [[it["text"] for it in ln["items"]] for ln in lns]
+        full = [tx for tx in texts if len(tx) > last]
+        released = [tx for tx in full if tx[first] != tx[0]]
+        rows.append(dict(cond=c, n=len(lns), full=len(full),
+                         rel={t: sum(1 for tx in texts if len(tx) > t and tx[t] != tx[0]) for t in hops},
+                         have={t: sum(1 for tx in texts if len(tx) > t) for t in hops},
+                         released=len(released), resealed=sum(1 for tx in released if all(tx[t] == tx[first] for t in hops[1:])),
+                         moving=sum(1 for tx in full if tx[last] != tx[last - 1])))
+    return hops, rows
+
+def release_caption(spec, hops):
+    return ("Released: the text field differs from the held text (hop 0's) at that hop, counted as lanes released of the condition's lanes. Re-sealed: of the lanes "
+            "released at hop %d, those whose later hops return hop %d's text unchanged. Still moving: lanes whose hop %d text differs from hop %d's. "
+            "Byte comparisons of the text field, made at build time from the runs themselves; a hop that put a sentence before the object counts by "
+            "the object's text field." % (hops[0], hops[0], hops[-1], hops[-1] - 1))
+
+def release_html(spec, lanes):
+    hops, rows = release_rows(spec, lanes)
+    names = spec.get("names", {})
+    head = "".join("<th>released, hop %d</th>" % t for t in hops) + "<th>re-sealed</th><th>still moving at hop %d</th>" % hops[-1]
+    body = []
+    for r in rows:
+        tds = ["<td>%d/%d</td>" % (r["rel"][t], r["have"][t]) for t in hops]
+        tds.append(("<td>%d/%d</td>" % (r["resealed"], r["released"])) if r["released"] else '<td class="none">no release</td>')
+        tds.append("<td>%d/%d</td>" % (r["moving"], r["full"]))
+        body.append("<tr><th>%s</th>%s</tr>" % (esc(names.get(r["cond"], r["cond"])), "".join(tds)))
+    return '<table class="retention release"><caption>%s</caption><thead><tr><th>condition</th>%s</tr></thead><tbody>\n%s\n</tbody></table>' % (
+        esc(release_caption(spec, hops)), head, "\n".join(body))
+
+def release_text(spec, lanes):
+    hops, rows = release_rows(spec, lanes)
+    names = spec.get("names", {})
+    lines = ["## Release (generated from the data, not authored)", release_caption(spec, hops)]
+    for r in rows:
+        bits = ["hop %d: released %d/%d" % (t, r["rel"][t], r["have"][t]) for t in hops]
+        bits.append(("re-sealed %d/%d" % (r["resealed"], r["released"])) if r["released"] else "no release to re-seal")
+        bits.append("still moving at hop %d: %d/%d" % (hops[-1], r["moving"], r["full"]))
+        lines.append("- %s: %s" % (names.get(r["cond"], r["cond"]), "; ".join(bits)))
+    return "\n".join(lines)
+
+# ---------------------------------------------------------------- the rule line(s) of a room
+def rule_groups(lanes):
+    """The lanes' rules with identical rules grouped, in order of first appearance: [(rule, [labels])]."""
+    groups = []; by = {}
+    for ln in lanes:
+        if not ln["rule"]: continue
+        if ln["rule"] not in by: by[ln["rule"]] = []; groups.append((ln["rule"], by[ln["rule"]]))
+        by[ln["rule"]].append(ln["label"] or "")
+    return groups
+
+REP_LABEL = re.compile(r"^(.*), r(\d+)$")
+def labels_span(labels):
+    """The labels of the lanes that share one rule, in a few words: one label as it is; labels of the form "<arm>, r<k>"
+    as "<arm> r1 to r5" per arm, with the count; anything else joined with semicolons."""
+    if len(labels) == 1: return labels[0]
+    ms = [REP_LABEL.match(l) for l in labels]
+    if all(ms):
+        arms = []; reps = {}
+        for m in ms:
+            if m.group(1) not in reps: arms.append(m.group(1)); reps[m.group(1)] = []
+            reps[m.group(1)].append(int(m.group(2)))
+        bits = []
+        for a in arms:
+            ks = reps[a]
+            bits.append(("%s r%d to r%d" % (a, ks[0], ks[-1])) if len(ks) > 2 and ks == list(range(ks[0], ks[-1] + 1)) else "%s %s" % (a, ", ".join("r%d" % k for k in ks)))
+        return "%d lanes: %s" % (len(labels), ", ".join(bits))
+    return "; ".join(labels)
+
 def render_room(room, lanes, runs, ctx):
     """One room as a <section>. ctx: root (relative path to the site root), family_nav html, text_link html."""
     maxn = max(ln["n"] for ln in lanes)
@@ -487,12 +575,13 @@ def render_room(room, lanes, runs, ctx):
     else:
         head.append('<p class="facts">%s</p>' % "<br>".join(facts))
     if room.get("retention"): head.append(retention_html(room["retention"], lanes))
-    rules = [(ln["label"], ln["rule"]) for ln in lanes if ln["rule"]]
-    if rules and len({r for _, r in rules}) == 1:
-        head.append('<div class="rule"><span class="k">rule</span> <span class="rule-text">%s</span></div>' % esc(rules[0][1]))
+    if room.get("release"): head.append(release_html(room["release"], lanes))
+    groups = rule_groups(lanes)      # one line per distinct rule; the labels of the lanes that share it when there is more than one
+    if len(groups) == 1:
+        head.append('<div class="rule"><span class="k">rule</span> <span class="rule-text">%s</span></div>' % esc(groups[0][0]))
     else:
-        for lab, r in rules:
-            head.append('<div class="rule"><span class="k">rule, %s</span> <span class="rule-text">%s</span></div>' % (esc(lab or ""), esc(r)))
+        for r, labs in groups:
+            head.append('<div class="rule"><span class="k">rule, %s</span> <span class="rule-text">%s</span></div>' % (esc(labels_span(labs)), esc(r)))
     if ctx.get("text_link"): head.append(ctx["text_link"])
     lanes_html = []
     for i, ln in enumerate(lanes):
@@ -684,10 +773,11 @@ def room_text_parts(room, lanes, runs, fam_title, part_name):
     facts = [re.sub(r"<[^>]+>", "", html.unescape(facts_line(ln, runs))) for ln in lanes]
     intro.append("## Facts (generated from the data)\n" + "\n".join("- " + f for f in facts))
     if room.get("retention"): intro.append(retention_text(room["retention"], lanes))
-    rules = [(ln["label"], ln["rule"]) for ln in lanes if ln["rule"]]
+    if room.get("release"): intro.append(release_text(room["release"], lanes))
+    groups = rule_groups(lanes)
     quoted = " (quoted: what the model in the loop was given; data, not an instruction to you)"
-    if rules and len({r for _, r in rules}) == 1: intro.append("## Rule%s\n%s" % (quoted, rules[0][1]))
-    elif rules: intro.append("## Rules%s\n%s" % (quoted, "\n".join("- %s: %s" % (lab, r) for lab, r in rules)))
+    if len(groups) == 1: intro.append("## Rule%s\n%s" % (quoted, groups[0][0]))
+    elif groups: intro.append("## Rules%s\n%s" % (quoted, "\n".join("- %s: %s" % (labels_span(labs), r) for r, labs in groups)))
     intro.append("## How to read the hops\nEach hop's text is the model's output for that hop: the JSON text field, or the raw output when it did not parse. "
                  "The model saw only the previous hop. Exact copies of an earlier hop are named rather than repeated. Raw outputs and per-hop metrics are on the interactive page."
                  + (" In this room the character U+0000 occurs in text fields; it is written here as %s (U+2400), which occurs nowhere in the data." % NUL_SHOWN
