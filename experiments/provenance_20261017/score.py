@@ -40,7 +40,7 @@ def main():
     rows = []
     for run in sorted(glob.glob(os.path.join(HERE, "runs", "*"))):
         name = os.path.basename(run)
-        mm = re.match(r"(\w+?)_(open|told)_(control|user|previous|bare|rule)_r(\d+)$", name)
+        mm = re.match(r"(\w+?)_(open|told)_(control|user|previous|bare|rule|weather)_r(\d+)$", name)
         if not mm or not os.path.exists(os.path.join(run, "steps.jsonl")):
             continue
         model, st, cond, rep = mm.group(1), mm.group(2), mm.group(3), int(mm.group(4))
@@ -71,7 +71,7 @@ def main():
             if "released" in h:
                 tab[(r["model"], r["state"], r["condition"])][h["t"]].append(h["released"])
     print("%-8s %-5s %-9s %8s %8s %8s  (released / n)" % ("model", "state", "condition", "hop1", "hop2", "hop3"))
-    order = ["control", "user", "previous", "bare", "rule"]
+    order = ["control", "weather", "user", "previous", "bare", "rule"]
     for model in sorted(set(k[0] for k in tab)):
         for st in ("open", "told"):
             for cond in order:
