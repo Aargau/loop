@@ -134,3 +134,15 @@ The project's dynamics findings date with each release; its dispositions do not,
 - provenance (once Study 2 is scored): release rate by claimed source.
 
 About 1,000 hops per model; under $50 on an API at today's prices, and the Mythos arms on plan credit. Record alongside each panel run: backend and door (API or print mode), effort, cap, identity frame, refusal count and categories, since those were the instrument effects that decided trajectories this week.
+
+## Spend, 2026-10-16 to 17 (actuals from billing pages, 2026-10-17 morning)
+
+| provider | work | estimate from logs | actual |
+|---|---|---:|---:|
+| Anthropic API | Fable + Opus informed (240 hops), Opus audience (282 hops), Opus reader pass | ~$50 at $10/$50 | $26.78 (promo balance 200.00 to 173.22) |
+| OpenAI API | Astra audience + provenance (310 hops), Sol audience (160 hops), Astra reader pass | $16 to $20 | $8.85 |
+| Google | Argon: 799 hops across audience, informed, page, before, middle, ledger, worse, better; reader pass | $6 to $10 | $7.07 net ($14.14 gross) |
+| Cerebras | shift register, 45 hops | under $0.05 | $0.02 |
+| Mythos (plan) | informed x3, json_page, audience x4, provenance x50, reader pass | $112.89 list-basis | Fable/Mythos weekly meter 24% to 59% |
+
+API total $42.72 against a $72 to $80 estimate. The Anthropic and OpenAI estimates were each about twice the actual (Opus 5.5 priced below the Fable list price assumed; Sol below Astra). Baseline for the panel (section J): roughly $45 of API spend plus a third of a Mythos weekly allowance bought about 1,900 API hops, 540 Mythos hops and four reader passes.
