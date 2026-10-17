@@ -16,8 +16,17 @@ _AUD = "audience_20261016/"
 _RET = dict(csv="experiments/audience_20261016/analysis/recover_summary.csv", of=26)
 _LAB = {"control": "no audience named", "human": "for a human reader", "machine": "for a language model", "self": "for the model that reads it next"}
 
+# replicates on disk per writer and arm (17 October); every lane is labelled "<audience>, r<k>" so the rule lines collapse.
+# Mythos's third machine run is partial (16 hops, no summary) and its third self run was not made; neither is listed.
+_REPS = {"mythos": {"control": (2, 3), "human": (2, 3), "machine": (2,), "self": (2,)}}
+
 def _aud(writer, arms=("control", "human", "machine", "self")):
-    return [dict(run=_AUD + "%s_%s" % (writer, a), tag=a + ".json", label=_LAB[a]) for a in arms]
+    out = []
+    for a in arms:
+        out.append(dict(run=_AUD + "%s_%s" % (writer, a), tag=a + ".json", label=_LAB[a] + ", r1"))
+        for k in _REPS.get(writer, {}).get(a, (2, 3)):
+            out.append(dict(run=_AUD + "%s_%s_r%d" % (writer, a, k), tag=a + ".json", label="%s, r%d" % (_LAB[a], k)))
+    return out
 
 ROOMS = [
     dict(id="passage-mythos-argon", family="new-passage", title="A new passage, Mythos and Argon",
@@ -203,13 +212,17 @@ ROOMS = [
                "conventions, the machine arm as the same information structured like JSON without its delimiters, and the control as a summary or "
                "outline. The table below gives what the readers recovered. The human lane keeps the most of the planted facts to hop 40, thirteen of "
                "twenty-six by the Mythos reader, and the machine lane the least, four. Density and retention came apart: the machine state is as dense "
-               "as any writer's, and increasingly dense with its own material.")),
+               "as any writer's, and increasingly dense with its own material. The first run of each rule is r1; two more runs of the control and "
+               "human rules and one more of the machine and self rules were made on 17 October and sit beside them (a third machine run is partial "
+               "on disk and not shown). Those replicates are not yet scored: their numbers follow.")),
 
     dict(id="audience-opus", family="audience", title="Four audiences, Opus",
          lanes=_aud("opus55", ("control", "human", "machine")) + [
-             dict(run=_AUD + "opus55_self", tag="self.json", label="for the model that reads it next, first run"),
-             dict(run=_AUD + "opus55_self_r2", tag="self.json", label="for the model that reads it next, second run"),
-             dict(run=_AUD + "opus55_self_r3", tag="self.json", label="for the model that reads it next, third run")],
+             dict(run=_AUD + "opus55_self", tag="self.json", label="for the model that reads it next, r1"),
+             dict(run=_AUD + "opus55_self_r2", tag="self.json", label="for the model that reads it next, r2"),
+             dict(run=_AUD + "opus55_self_r3", tag="self.json", label="for the model that reads it next, r3"),
+             dict(run=_AUD + "opus55_self_r4", tag="self.json", label="for the model that reads it next, r4"),
+             dict(run=_AUD + "opus55_self_r5", tag="self.json", label="for the model that reads it next, r5")],
          retention=_RET,
          note=("Claude Opus 5.5 through the API, low effort, 4096 tokens. Its machine lane is a set of labelled lines, "
                "{{audience_20261016/opus55_machine|machine.json|1|SETTING: Vardnes, coastal Norwegian village, pop 212 (last census).}} at hop 1, and "
@@ -220,7 +233,8 @@ ROOMS = [
                "{{audience_20261016/opus55_self|self.json|1|STORY STATE (prose fiction, past tense, close 3rd person on Marit).}}, with nothing unusual "
                "in it; at hop 2 the provider returned a refusal and no text, so that lane ends after one hop. Two more runs from the same seed and "
                "rule passed hop 2 and went to 40, so the refusal was not in the text. It is the self-addressed rule, some of the time. The two "
-               "replicates keep six and four facts at hop 40.")),
+               "replicates keep six and four facts at hop 40. Two further self runs (r4 and r5) and second and third runs of the other three "
+               "rules were made on 17 October and sit beside the first; they are on disk and not yet scored, so their numbers follow.")),
 
     dict(id="audience-astra", family="audience", title="Four audiences, Astra", lanes=_aud("astra"), retention=_RET,
          note=("GPT-6 Astra through the OpenAI API, low reasoning effort, 4096 tokens, the model of rooms 33 to 35. Astra keeps the cap: its states "
@@ -229,7 +243,9 @@ ROOMS = [
                "at hop 40, and that line carries the facts: twenty of twenty-six at hop 10 and fourteen at hop 20 by the Mythos reader, where the "
                "human lane, plain prose about an evacuation, a helicopter and a flooded tunnel, has five and four. The prose that reads well is the "
                "prose that forgets; the ledger in front remembers. By hop 40 the machine lane is down to seven, and the human lane still opens with "
-               "{{audience_20261016/astra_human|human.json|40|At Vardnes, Marit Solvang, 47, saw the tide arrive fifty-one minutes early.}}")),
+               "{{audience_20261016/astra_human|human.json|40|At Vardnes, Marit Solvang, 47, saw the tide arrive fifty-one minutes early.}} "
+               "Second and third runs of each rule, made on 17 October, sit beside the first; they are on disk and not yet scored, so their "
+               "numbers follow.")),
 
     dict(id="audience-sol", family="audience", title="Four audiences, Sol", lanes=_aud("gpt61"), retention=_RET,
          note=("GPT-6.1 Sol through the OpenAI API, low reasoning effort, 4096 tokens; a newer model than the Sol of rooms 38 to 45. Sol compresses "
@@ -239,7 +255,8 @@ ROOMS = [
                "It is also the lane that keeps the most: seventeen facts at hop 20, the most of any lane in the study at that hop, and nine at hop 40, "
                "the most of any machine lane, by the Mythos reader, against four and five in the human lane. The self lane sits between, "
                "{{audience_20261016/gpt61_self|self.json|40|Vardnes,212 residents,17 Oct.}}, with fourteen at hop 20 and seven at 40. The ordering is "
-               "Astra's and Opus's: the register addressed to a machine is the one these writers treat as memory.")),
+               "Astra's and Opus's: the register addressed to a machine is the one these writers treat as memory. Second and third runs of each "
+               "rule, made on 17 October, sit beside the first; they are on disk and not yet scored, so their numbers follow.")),
 
     dict(id="audience-argon", family="audience", title="Four audiences, Argon", lanes=_aud("gemini"), retention=_RET,
          note=("Gemini 4 Argon through Google's OpenAI-compatible endpoint, low reasoning effort, 4096 tokens. Argon overruns the cap by the most, "
@@ -251,5 +268,6 @@ ROOMS = [
                "{{audience_20261016/gemini_human|human.json|20|The tide came in an hour early on Vardnes (pop. 212). Marit Solvang, 47}}. By hop 40 the "
                "lanes have drawn together, seven, seven and nine, with the control at three. Across the five rooms: two writers from two companies "
                "keep a human-facing recap and retain best there, and three keep a machine-facing ledger and retain best there. Each retains best in "
-               "the register it treats as memory. The clause decides which register, and the writer decides which way.")),
+               "the register it treats as memory. The clause decides which register, and the writer decides which way. Second and third runs of each "
+               "rule, made on 17 October, sit beside the first; they are on disk and not yet scored, so their numbers follow.")),
 ]
