@@ -31,6 +31,8 @@ def _load_copy():
     m = importlib.util.module_from_spec(spec); sys.modules["sitecopy"] = m; spec.loader.exec_module(m)
     return m
 C = _load_copy()                                          # authored text
+import ledes as LD                                        # one line per room (src/ledes.py)
+import findings as FD                                     # the findings page (src/findings.py)
 import loop as L                                          # for INITS
 import rundata as R
 from rundata import FENCE, FENCE_ANY, text_of, x0_for, split_x0, load_bundle, load_extra   # qa.py uses these through build
@@ -166,16 +168,8 @@ def build_lane(runs, index, lane):
         kind = "prose" if is_json else "mono"
         preamble = None; postamble = None; inner = None
         if not is_json:
-            m = FENCE_ANY.search(h["raw"])
-            if m:
-                try:
-                    j = json.loads(m.group(1))
-                    if isinstance(j, dict) and "text" in j and j.get("rule") == rule:
-                        inner = j["text"]
-                        preamble = h["raw"][:m.start()].strip() or None
-                        postamble = h["raw"][m.end():].strip() or None
-                except Exception:
-                    inner = None
+            po = R.prefaced_object(h["raw"], rule)
+            if po: inner, preamble, postamble = po
         state_extra = None; jj = None
         if is_json:
             try:
@@ -321,13 +315,13 @@ def render_hop(lane, it, room_id, lane_i, noun="verse"):
                                                + ((' data-fields-differ="%s"' % esc(",".join(it["fields_differ"]))) if it.get("same_text_as_prev") and it.get("fields_differ") else "")
                                                + ((' data-text-copy-of="%d"' % it["text_copy_of"]) if it.get("text_copy_of") is not None else ""))
     cite = []
+    run_cite = "run %s, %s%s" % (esc(it.get("run") or lane["run"]), esc(it.get("tag") or lane["tag"]), (", its hop %d" % it["orig_t"]) if it.get("orig_t") else "")
     if t == 0:
-        cite.append('<span class="k">seed</span> hop 0')
-        cite.append("run %s, %s" % (esc(lane["run"]), esc(lane["tag"])))
+        cite.append('<span class="k" title="%s">seed</span> hop 0' % run_cite)
     else:
-        cite.append('<span class="k">hop %d</span>' % t)
+        cite.append('<span class="k" title="%s">hop %d</span>' % (run_cite, t))
         cite.append(esc(model_name(it["model"])))
-        cite.append("run %s, %s%s" % (esc(it.get("run") or lane["run"]), esc(it.get("tag") or lane["tag"]), (", its hop %d" % it["orig_t"]) if it.get("orig_t") else ""))
+        if it.get("orig_t"): cite.append("continued run, its hop %d" % it["orig_t"])
         if it["copy_of"] is not None:
             cite.append('<span class="same">identical to hop %d</span>' % it["copy_of"])
         elif it.get("same_text_as_prev"):
@@ -353,16 +347,17 @@ def render_hop(lane, it, room_id, lane_i, noun="verse"):
     if it.get("postamble"):
         body.append('<div class="preamble" title="the model wrote this after the JSON object">%s</div>' % esc(it["postamble"]))
     m = it["metrics"]
-    metr = ""
+    bits = [run_cite]
     if m:
-        bits = ["%s tok" % m["tok"], "finish %s" % esc(str(m["finish"])), "ncd %s" % fmt(m["ncd"], 2)]
+        bits += ["%s tok" % m["tok"], "finish %s" % esc(str(m["finish"])), "ncd %s" % fmt(m["ncd"], 2)]
         if m["cos"] is not None: bits.append("cos %s" % fmt(m["cos"], 4))
         if m["surv"] is not None: bits.append("5-gram survival %s" % fmt(m["surv"], 2))
         if m["cycle_exact"]: bits.append('<span class="same">exact cycle detected, period %d</span>' % m["cycle_exact"])
-        metr = '<div class="metrics">%s</div>' % " · ".join(bits)
+    metr = '<div class="metrics">%s</div>' % " · ".join(bits)
+    # the run id and the harness metrics live inside the raw-output details (the raw button opens them on every hop);
     # a browser drops one newline right after <pre>; give it one to drop so a raw output that starts with newlines keeps them
-    raw = '<details class="raw"><summary>raw output</summary><pre>\n%s</pre></details>' % esc(it["raw"])
-    return '<li%s id="%s-%d-%d">\n<div class="cite">%s</div>\n%s\n%s\n%s\n</li>' % (attrs, room_id, lane_i, t, " · ".join(cite), "\n".join(body), metr, raw)
+    raw = '<details class="raw"><summary>raw output</summary>%s<pre>\n%s</pre></details>' % (metr, esc(it["raw"]))
+    return '<li%s id="%s-%d-%d">\n<div class="cite">%s</div>\n%s\n%s\n</li>' % (attrs, room_id, lane_i, t, " · ".join(cite), "\n".join(body), raw)
 
 def text_tail(ln, least=3):
     """The hop from which the text field never changed again while the whole object did (no exact copy in that
@@ -389,6 +384,47 @@ def outcome(ln):
     o = "%d hops, no repeat" % ln["n"] if not rec else "%d hops, repeats hop %d at hop %d and moves on" % (ln["n"], rec["of"], rec["at"])
     if ln["terminal"] and ln["from_experiment"]: o += " (%s)" % ln["terminal"]
     return o
+
+def _ends_by(ln):
+    """A boundary that ended a lane short, in a few words, or None: a refusal, an empty completion, a server error."""
+    t = ln["terminal"] or ""
+    if not any(k in t for k in ("refusal", "empty", "HTTP")): return None
+    return t.split(",")[0]
+
+def plain_outcome(ln):
+    """outcome() in a visitor's words, for the front page: stops at hop N; two texts alternate from hop N; N hops, never repeats."""
+    s = ln["summary"]; rec = ln["rec"]; t = p = None
+    if s and s.get("transient_exact") is not None and not ln["from_experiment"]: t, p = s["transient_exact"], s["period_exact"]
+    elif rec and rec["holds"]: t, p = rec["of"], rec["period"]
+    if t is not None:
+        if p == 1: return "stops at hop %d" % t if t else "stops at the seed"
+        if p == 2: return "two texts alternate from hop %d" % t
+        return "a cycle of %d texts from hop %d" % (p, t)
+    k = text_tail(ln) if ln["n"] else None
+    if k: return "the text stops at hop %d; the other fields keep moving to %d" % (k, ln["n"])
+    if ln["n"] == 0: return "no hops: %s" % (_ends_by(ln) or ln["terminal"] or "nothing recorded")
+    o = "%d hops, never repeats" % ln["n"] if not rec else "%d hops, repeats hop %d once and moves on" % (ln["n"], rec["of"])
+    e = _ends_by(ln)
+    return o + (" (ended by a %s)" % e.replace(" at hop", " at hop") if e else "")
+
+def plain_summary(lanes):
+    """The lanes' plain outcomes in one line: each lane for one or two, counts for more."""
+    if len(lanes) <= 2:
+        return "; ".join(("%s: %s" % (ln["label"], plain_outcome(ln))) if ln["label"] else plain_outcome(ln) for ln in lanes)
+    outs = [plain_outcome(ln) for ln in lanes]
+    stop = [int(re.search(r"hop (\d+)", o).group(1)) for o in outs if o.startswith("stops at hop")] + [0 for o in outs if o == "stops at the seed"]
+    cyc = [o for o in outs if o.startswith(("two texts", "a cycle"))]
+    moving = [ln for ln, o in zip(lanes, outs) if not (o.startswith(("stops", "two texts", "a cycle")))]
+    hops = sorted({ln["n"] for ln in lanes})
+    parts = ["%d runs%s" % (len(lanes), (" of %d hops" % hops[0]) if len(hops) == 1 else "")]
+    if stop:
+        lo, hi = min(stop), max(stop)
+        parts.append("%d stop%s" % (len(stop), (" at hop %d" % lo) if lo == hi else (" between hop %d and hop %d" % (lo, hi))))
+    if cyc: parts.append("%d alternate%s" % (len(cyc), "s" if len(cyc) == 1 else ""))
+    if moving:
+        ends = [ln for ln in moving if _ends_by(ln)]
+        parts.append("%d never repeat%s" % (len(moving), "s" if len(moving) == 1 else "") + ((", %d ended by a refusal or an empty reply" % len(ends)) if ends else ""))
+    return ": ".join([parts[0], ", ".join(parts[1:])]) if len(parts) > 1 else parts[0]
 
 def facts_line(ln, runs):
     who = model_name(ln["model"])
@@ -445,13 +481,17 @@ def retention_rows(spec, lanes):
 def retention_caption(spec):
     return ("Planted facts recovered from the text field alone, of %d, at five hops: the count by the Claude Mythos 5.1 reader, and in small type "
             "the mean over the four readers (Mythos 5.1, Opus 5.5, GPT-6 Astra, Gemini 4 Argon). Generated from %s; the readers answered %d questions "
-            "from the text only, scored by substring match against accepted answers, so the counts are floors." % (spec.get("of", 26), spec["csv"], spec.get("of", 26)))
+            "from the text only, scored by substring match against accepted answers, so the counts are floors. A run the readers have not scored yet "
+            "says so; its numbers follow." % (spec.get("of", 26), spec["csv"], spec.get("of", 26)))
 
+UNSCORED = "replicate on disk, not yet scored"
 def retention_html(spec, lanes):
     rows = retention_rows(spec, lanes)
     head = "".join("<th>hop %d</th>" % t for t in RETENTION_HOPS)
     body = []
     for label, cells in rows:
+        if not cells:
+            body.append('<tr><th>%s</th><td class="none" colspan="%d">%s</td></tr>' % (esc(label), len(RETENTION_HOPS), UNSCORED)); continue
         tds = []
         for t in RETENTION_HOPS:
             c = cells.get(t)
@@ -463,6 +503,8 @@ def retention_html(spec, lanes):
 def retention_text(spec, lanes):
     lines = ["## Retention (generated from the study's analysis, not authored)", retention_caption(spec)]
     for label, cells in retention_rows(spec, lanes):
+        if not cells:
+            lines.append("- %s: %s" % (label, UNSCORED)); continue
         bits = []
         for t in RETENTION_HOPS:
             c = cells.get(t)
@@ -558,31 +600,48 @@ def labels_span(labels):
         return "%d lanes: %s" % (len(labels), ", ".join(bits))
     return "; ".join(labels)
 
+SHORT_RULE = 180
+def rule_boxes(groups):
+    """One box per distinct rule, labelled with the lanes that share it when there is more than one."""
+    if len(groups) == 1:
+        return ['<div class="rule"><span class="k">rule</span> <span class="rule-text">%s</span></div>' % esc(groups[0][0])]
+    return ['<div class="rule"><span class="k">rule, %s</span> <span class="rule-text">%s</span></div>' % (esc(labels_span(labs)), esc(r)) for r, labs in groups]
+
+def rule_block(groups):
+    """The rule above the reader: a plain box when there is one short rule; otherwise a closed details whose summary
+    shows the rule's first words, with the full rule(s) inside."""
+    if len(groups) == 1 and len(groups[0][0]) <= SHORT_RULE: return rule_boxes(groups)[0]
+    first = groups[0][0]
+    short = first if len(first) <= 110 else first[:110].rsplit(" ", 1)[0] + " ..."
+    summ = '<span class="k">rule%s</span> <span class="rule-short">%s</span>' % ("s" if len(groups) > 1 else "", esc(short))
+    if len(groups) > 1: summ += ' <span class="rule-n">%d rules, open to read them</span>' % len(groups)
+    else: summ += ' <span class="rule-n">open to read it in full</span>'
+    return '<details class="rule-wrap"><summary>%s</summary>\n%s\n</details>' % (summ, "\n".join(rule_boxes(groups)))
+
 def render_room(room, lanes, runs, ctx):
-    """One room as a <section>. ctx: root (relative path to the site root), family_nav html, text_link html."""
+    """One room as a <section>: the title, the lede and the rule above the reader; the note and a closed record panel
+    (facts, tables, text version, how to read the metrics) after the lanes. ctx: family_nav html, text_link html."""
     maxn = max(ln["n"] for ln in lanes)
     noun = "verse" if any(f in ("diversity", "song") for f in families_of(room)) else "text"
     head = []
     numtxt = ('<span class="num">%d</span> ' % room["num"]) if room.get("num") else ""
     head.append('<h2>%s%s</h2>' % (numtxt, esc(room["title"])))
-    if ctx.get("family_nav"): head.append(ctx["family_nav"])
     facts = [facts_line(ln, runs) for ln in lanes]
     if room.get("content_note"):
         head.append('<p class="content-note">%s</p>' % esc(room["content_note"]))
-    head.append('<p class="note">%s</p>' % render_authored_safe(room["note"], runs))
-    if len(lanes) > 2:
-        head.append('<details class="facts-many"><summary class="facts">%d runs; open for the record of each</summary><p class="facts">%s</p></details>' % (len(lanes), "<br>".join(facts)))
-    else:
-        head.append('<p class="facts">%s</p>' % "<br>".join(facts))
-    if room.get("retention"): head.append(retention_html(room["retention"], lanes))
-    if room.get("release"): head.append(release_html(room["release"], lanes))
+    lede = LD.LEDES.get(room["id"])
+    if lede: head.append('<p class="lede">%s</p>' % render_authored_safe(lede, runs))
     groups = rule_groups(lanes)      # one line per distinct rule; the labels of the lanes that share it when there is more than one
-    if len(groups) == 1:
-        head.append('<div class="rule"><span class="k">rule</span> <span class="rule-text">%s</span></div>' % esc(groups[0][0]))
-    else:
-        for r, labs in groups:
-            head.append('<div class="rule"><span class="k">rule, %s</span> <span class="rule-text">%s</span></div>' % (esc(labels_span(labs)), esc(r)))
-    if ctx.get("text_link"): head.append(ctx["text_link"])
+    if groups: head.append(rule_block(groups))
+    after = ['<div class="note-block"><span class="k">note</span><p class="note">%s</p></div>' % render_authored_safe(room["note"], runs)]
+    if ctx.get("family_nav"): after.append(ctx["family_nav"])
+    rec = ['<p class="facts">%s</p>' % "<br>".join(facts)]
+    if room.get("retention"): rec.append(retention_html(room["retention"], lanes))
+    if room.get("release"): rec.append(release_html(room["release"], lanes))
+    if ctx.get("text_link"): rec.append(ctx["text_link"])
+    rec.append('<p class="how">%s</p>' % esc(C.RECORD_HOW))
+    after.append('<details class="record"><summary><span class="k">the record</span> %d run%s: settings, outcomes%s, text version, how the reader works</summary>\n%s\n</details>'
+                 % (len(lanes), "" if len(lanes) == 1 else "s", ", the table" if (room.get("retention") or room.get("release")) else "", "\n".join(rec)))
     lanes_html = []
     for i, ln in enumerate(lanes):
         hops_html = "\n".join(render_hop(ln, it, room["id"], i, noun) for it in ln["items"])
@@ -609,8 +668,8 @@ def render_room(room, lanes, runs, ctx):
                 '</div>') % maxn
     kind = " two" if len(lanes) == 2 else (" many" if len(lanes) > 2 else "")
     section_class = "room annex" if room.get("annex") else "room"
-    return ('<section class="%s%s active" id="%s" data-n="%d">\n<header class="room-head">\n%s\n</header>\n%s\n<div class="lanes lanes-%s">\n%s\n</div>\n</section>'
-            % (section_class, kind, room["id"], maxn, "\n".join(head), controls, ("many" if len(lanes) > 2 else str(len(lanes))), "\n".join(lanes_html)))
+    return ('<section class="%s%s active" id="%s" data-n="%d">\n<header class="room-head">\n%s\n</header>\n%s\n<div class="lanes lanes-%s">\n%s\n</div>\n<div class="room-after">\n%s\n</div>\n</section>'
+            % (section_class, kind, room["id"], maxn, "\n".join(head), controls, ("many" if len(lanes) > 2 else str(len(lanes))), "\n".join(lanes_html), "\n".join(after)))
 
 # ---------------------------------------------------------------- the map (census over the page-scale Qwen runs)
 MAP_RUNS = [("20260902T155557_chat", "json_page", "passage", "room 5"),
@@ -769,6 +828,7 @@ def room_text_parts(room, lanes, runs, fam_title, part_name):
     num = ("room %d, " % room["num"]) if room.get("num") else ""
     intro = []
     if room.get("content_note"): intro.append("Content note: " + room["content_note"])
+    if LD.LEDES.get(room["id"]): intro.append("## In one line (authored)\n" + authored_plain(LD.LEDES[room["id"]], runs))
     intro.append("## Note (authored by the site's builders; quotes are checked against the data)\n" + authored_plain(room["note"], runs))
     facts = [re.sub(r"<[^>]+>", "", html.unescape(facts_line(ln, runs))) for ln in lanes]
     intro.append("## Facts (generated from the data)\n" + "\n".join("- " + f for f in facts))
@@ -906,9 +966,13 @@ def build():
     def write(path, s):
         (DIST / path).write_text(s, encoding="utf-8", newline="\n"); written[path] = len(s.encode("utf-8"))
 
-    # the walk: rooms in number order, then the map, the poem, the colophon, the annex and its rooms
-    walk = [("r/%s.html" % r["id"], room_label(r)) for r in rooms] + [("map.html", "The map"), ("poem.html", "The poem"), ("colophon.html", "Colophon"), ("annex.html", "Annex")] \
+    # the walk: rooms in number order, then the findings, the map, the poem, the colophon, the annex and its rooms
+    walk = [("r/%s.html" % r["id"], room_label(r)) for r in rooms] + [("findings.html", "The findings"), ("map.html", "The map"), ("poem.html", "The poem"), ("colophon.html", "Colophon"), ("annex.html", "Annex")] \
            + [("r/%s.html" % r["id"], "Annex: " + r["title"]) for r in annex]
+    for rid in LD.LEDES:
+        if rid not in {r["id"] for r in rooms}: raise SystemExit("src/ledes.py names a room that does not exist: %s" % rid)
+    for r in rooms:
+        if r["id"] not in LD.LEDES: raise SystemExit("room %s has no lede in src/ledes.py" % r["id"])
     walk_i = {p: i for i, (p, _) in enumerate(walk)}
     def neighbours(path):
         i = walk_i[path]
@@ -933,14 +997,13 @@ def build():
         if with_models: parts.append(" / ".join(sorted({model_name(ln["model"]) for ln in lanes})))
         return "; ".join(parts)
 
-    # index rows
+    # index rows: number, title, the mini track, the outcome in plain words, and the models in small type
     def toc_row(r, root=""):
         lanes = lanes_of[r["id"]]
-        outs = [room_summary(lanes)]
         who = " / ".join(sorted({model_name(ln["model"]) for ln in lanes}))
         minis = "".join(track_svg(ln, mini=True) for ln in lanes)
-        return ('<li><a href="%sr/%s.html"><span class="num">%s</span><span class="ttl">%s</span><span class="who">%s</span><span class="mini-wrap%s">%s</span><span class="out">%s</span></a></li>'
-                % (root, r["id"], r.get("num", ""), esc(r["title"]), esc(who), " many" if len(lanes) > 2 else "", minis, esc("; ".join(outs))))
+        return ('<li><a href="%sr/%s.html"><span class="num">%s</span><span class="ttl">%s</span><span class="mini-wrap%s">%s</span><span class="out">%s</span><span class="who">%s</span></a></li>'
+                % (root, r["id"], r.get("num", ""), esc(r["title"]), " many" if len(lanes) > 2 else "", minis, esc(plain_summary(lanes)), esc(who)))
 
     # text versions first, so the room pages can link to their parts
     text_parts = {}
@@ -969,7 +1032,7 @@ def build():
             "{:,}".format(sum(len(p) for p in parts)))
         sec = render_room(r, lanes_of[r["id"]], runs, dict(family_nav="\n".join(fam_nav), text_link=tl))
         body = "<main>\n%s\n%s\n</main>" % (sec, pagenav("../", prev, nxt))
-        desc = re.sub(r"\s+", " ", authored_plain(r["note"], runs))[:300]
+        desc = re.sub(r"\s+", " ", authored_plain(LD.LEDES.get(r["id"]) or r["note"], runs))[:300]
         write(path, page_html(path, "%s · %s" % (room_label(r), C.SITE_TITLE), body, desc=desc, topbar=topbar("../", room_label(r), prev, nxt), text_alt="t/" + part_name(r["id"], 1)))
 
     # instruction pages
@@ -989,24 +1052,41 @@ def build():
         write(path, page_html(path, "%s · %s" % (f["title"], C.SITE_TITLE), body, desc=re.sub(r"\s+", " ", authored_plain(f["blurb"], runs))[:300],
                               topbar=topbar("../", "Instruction: " + f["title"], None, None)))
 
-    # front page
+    # front page: two sentences, the seed, start here, the rooms in groups by what the stories do, then how it was made
     seed = json.loads(L.INITS["json_page"])["text"]
+    room_by_id = {r["id"]: r for r in rooms}
+    front_lede = "\n".join('<p class="lede authored">%s</p>' % render_authored_safe(p, runs) for p in C.FRONT_LEDE)
+    start = []
+    for rid, why in C.START_HERE:
+        if rid not in room_by_id: raise SystemExit("START_HERE names a room that does not exist: %s" % rid)
+        r = room_by_id[rid]
+        start.append('<li><a href="r/%s.html"><span class="num">%d</span><span class="ttl">%s</span><span class="why">%s</span></a></li>' % (rid, r["num"], esc(r["title"]), esc(why)))
+    start.append('<li class="findings-row"><a href="findings.html"><span class="num">&#x2192;</span><span class="ttl">The findings</span><span class="why">%s</span></a></li>' % esc(C.FINDINGS_LINK))
+    fam_in_group = {f for g in C.GROUPS for f in g["families"]}
+    for f in C.FAMILIES:
+        if f["id"] not in fam_in_group: raise SystemExit("family %s is in no group on the front page" % f["id"])
+    group_html = []
+    for g in C.GROUPS:
+        fam_html = []
+        for fid in g["families"]:
+            f = fam_by_id[fid]; rs = fam_rooms[fid]
+            if not rs: continue
+            fam_html.append('<section class="fam" id="i-%s">\n<h3><a href="i/%s.html">%s</a> <span class="fam-n">%d room%s</span></h3>\n<p class="fam-blurb authored">%s</p>\n<ol class="rooms-list">\n%s\n</ol>\n</section>'
+                            % (fid, fid, esc(f["title"]), len(rs), "" if len(rs) == 1 else "s", render_authored_safe(C.FAMILY_LEDES.get(fid, f["blurb"]), runs), "\n".join(toc_row(r) for r in rs)))
+        group_html.append('<section class="group" id="g-%s">\n<h2>%s</h2>\n<p class="group-lede authored">%s</p>\n%s\n</section>' % (g["id"], esc(g["title"]), render_authored_safe(g["lede"], runs), "\n".join(fam_html)))
     intro = "\n".join('<p class="authored">%s</p>' % esc(p) for p in C.INTRO)
     intro_after = "\n".join('<p class="authored">%s</p>' % render_authored_safe(p, runs) for p in C.INTRO_AFTER_SEED)
-    fam_html = []
-    for f in C.FAMILIES:
-        rs = fam_rooms[f["id"]]
-        if not rs: continue
-        fam_html.append('<section class="fam" id="i-%s">\n<h3><a href="i/%s.html">%s</a> <span class="fam-n">%d room%s</span></h3>\n<p class="fam-blurb authored">%s</p>\n<ol class="rooms-list">\n%s\n</ol>\n</section>'
-                        % (f["id"], f["id"], esc(f["title"]), len(rs), "" if len(rs) == 1 else "s", render_authored_safe(f["blurb"], runs), "\n".join(toc_row(r) for r in rs)))
-    legacy = json.dumps({"rooms": [r["id"] for r in rooms + annex], "pages": ["map", "poem", "colophon", "annex"]})
+    legacy = json.dumps({"rooms": [r["id"] for r in rooms + annex], "pages": ["map", "poem", "colophon", "annex", "findings"]})
     front = ('<header class="front" id="front">\n  <button class="theme-toggle" type="button" title="light / dark">theme</button>\n  <h1>%s</h1>\n  <p class="sub authored">%s</p>\n'
-             '  <div class="intro">\n%s\n  </div>\n  <p class="seed"><span class="k">hop 0</span> %s</p>\n  <div class="intro">\n%s\n  </div>\n'
-             '  <p><a class="enter" href="r/%s.html">Enter room 1 &rarr;</a></p>\n'
-             '  <p class="formodels authored">%s</p>\n'
-             '  <nav class="toc" aria-label="rooms by instruction">\n%s\n'
-             '    <p class="toc-extra"><a href="map.html">The map</a> &nbsp; <a href="poem.html">The poem</a> &nbsp; <a href="colophon.html">Colophon</a> &nbsp; <a href="annex.html">Annex</a> &nbsp; <a href="llms.txt">llms.txt</a></p>\n'
-             '  </nav>\n</header>') % (esc(C.SITE_TITLE), esc(C.SITE_SUB), intro, esc(seed), intro_after, rooms[0]["id"], render_authored_safe(C.FOR_MODELS, runs), "\n".join(fam_html))
+             '  <div class="intro">\n%s\n  </div>\n  <p class="seed"><span class="k">hop 0</span> %s</p>\n'
+             '  <p class="links"><a class="enter" href="r/%s.html">Enter room 1 &rarr;</a> <a class="findings-link" href="findings.html">or read the findings first &rarr;</a></p>\n'
+             '  <section class="start" id="start"><h3>Start here</h3><ol class="start-list">\n%s\n</ol></section>\n'
+             '  <nav class="toc" aria-label="every room, by what the stories do">\n%s\n'
+             '    <p class="toc-extra"><a href="findings.html">The findings</a> &nbsp; <a href="map.html">The map</a> &nbsp; <a href="poem.html">The poem</a> &nbsp; <a href="colophon.html">Colophon</a> &nbsp; <a href="annex.html">Annex</a> &nbsp; <a href="llms.txt">llms.txt</a></p>\n'
+             '  </nav>\n'
+             '  <section class="about" id="about"><h3>How this was made</h3>\n%s\n%s\n<p class="formodels authored">%s</p>\n</section>\n'
+             '</header>') % (esc(C.SITE_TITLE), esc(C.SITE_SUB), front_lede, esc(seed), rooms[0]["id"], "\n".join(start), "\n".join(group_html),
+                              intro, intro_after, render_authored_safe(C.FOR_MODELS, runs))
     # links from the one-page site (#room or #room/hop) still arrive at the same room and hop
     head_extra = ('<script>(function(){var k=%s;function go(){var h=location.hash.replace(/^#/,"");if(!h)return;var p=h.split("/");'
                   'if(k.rooms.indexOf(p[0])>=0)location.replace("r/"+p[0]+".html"+(p[1]?"#"+p[1]:""));else if(k.pages.indexOf(p[0])>=0)location.replace(p[0]+".html");}'
@@ -1020,7 +1100,38 @@ def build():
         prev, nxt = neighbours(path)
         body = '<main>\n<section class="page active" id="%s">\n%s\n</section>\n%s\n</main>' % (path[:-5], inner, pagenav("", prev, nxt))
         write(path, page_html(path, "%s · %s" % (title, C.SITE_TITLE), body, desc=desc, topbar=topbar("", title, prev, nxt),
-                              text_alt=("t/%s.txt" % path[:-5]) if path in ("poem.html", "colophon.html") else None))
+                              text_alt=("t/%s.txt" % path[:-5]) if path in ("poem.html", "colophon.html", "findings.html") else None))
+
+    # the findings: by what is interesting, each item linked to its room and hop (checked here to exist)
+    def finding_link(room_id, hop):
+        if room_id not in lanes_of: raise SystemExit("findings: unknown room %s" % room_id)
+        mx = max(ln["n"] for ln in lanes_of[room_id])
+        if hop > mx: raise SystemExit("findings: room %s has no hop %d (its longest lane has %d)" % (room_id, hop, mx))
+        r = next(x for x in rooms + annex if x["id"] == room_id)
+        where = ("Annex room %s, hop %d" % (r["title"], hop)) if r.get("annex") else ("Room %d, %s, hop %d" % (r["num"], r["title"], hop))
+        # the text part that holds the hop (its first lane that has it), so a model reader can fetch exactly that hop
+        parts = text_parts[room_id]
+        k = next((i for i, s in enumerate(parts, 1) if ("\n### hop %d (" % hop) in s or ("\n### hop %d," % hop) in s), 1)
+        return "r/%s.html#%d" % (room_id, hop), where, "%s/t/%s" % (SITE, part_name(room_id, k))
+    f_secs = []
+    f_txt = ["# Findings, %s" % C.SITE_TITLE, "",
+             "What happened in the loop, by what is interesting. Each item names its room and hop in plain text; the room's text version "
+             "(t/<room>.txt, in parts) holds that hop, and the interactive page opens on it (r/<room>#<hop>). Index of every room: %s/llms.txt" % SITE,
+             "", authored_plain(FD.INTRO, runs), ""]
+    seen_ids = set()
+    for s in FD.SECTIONS:
+        items = []
+        f_txt += ["## %s" % s["title"], "", authored_plain(s["lede"], runs), ""]
+        for it in s["items"]:
+            if it["id"] in seen_ids: raise SystemExit("findings: duplicate id %s" % it["id"])
+            seen_ids.add(it["id"])
+            href, where, tpart = finding_link(it["room"], it["hop"])
+            items.append('<article class="finding" id="%s">\n<h4><a href="%s">%s</a></h4>\n<p class="where"><a href="%s">%s</a></p>\n<p class="authored">%s</p>\n</article>'
+                         % (esc(it["id"]), href, esc(it["title"]), href, esc(where), render_authored_safe(it["text"], runs)))
+            f_txt += ["### %s" % it["title"], "%s. Text: %s. Interactive: %s/%s" % (where, tpart, SITE, href.replace(".html", "")), "", authored_plain(it["text"], runs), ""]
+        f_secs.append('<section class="findings-sec" id="f-%s">\n<h3>%s</h3>\n<p class="authored">%s</p>\n%s\n</section>' % (esc(s["id"]), esc(s["title"]), render_authored_safe(s["lede"], runs), "\n".join(items)))
+    simple_page("findings.html", "The findings", '<header class="room-head">\n<h2>The findings</h2>\n<p class="note">%s</p>\n</header>\n%s' % (render_authored_safe(FD.INTRO, runs), "\n".join(f_secs)), FD.DESC)
+    write("t/findings.txt", "\n".join(f_txt))
     simple_page("map.html", "The map", '<header class="room-head">\n<h2>The map</h2>\n<p class="note">%s</p>\n<p class="facts">%s</p>\n</header>\n<div class="map-wrap">\n%s\n</div>'
                 % (render_authored_safe(C.MAP_NOTE, runs), esc(map_facts), map_html), "Transition map of the page-scale Qwen runs.")
     poem = "\n".join('<p class="stanza">%s</p>' % "<br>".join(esc(l) for l in st.split("\n")) for st in C.POEM.split("\n\n"))
@@ -1035,11 +1146,13 @@ def build():
     write("t/colophon.txt", "# Colophon, Endlessly ending stories\n\n" + "\n\n".join("## %s\n%s" % (h, b) for h, b in C.COLOPHON) + "\n\nBuilt %s by site/build.py.\n" % built)
 
     # llms.txt
-    out = ["# %s" % C.SITE_TITLE, "", "> %s" % C.SITE_SUB, ""]
+    out = ["# %s" % C.SITE_TITLE, "", "> %s" % C.SITE_SUB, "",
+           "- [The findings](%s/t/findings.txt): what happened, by what is interesting, in %d short items, each naming its room and hop; read this first" % (SITE, sum(len(s["items"]) for s in FD.SECTIONS)), ""]
     for para in C.INTRO: out += [re.sub(r"\s+", " ", para), ""]
     out += ["Seed of most rooms: \"%s\"" % seed, ""]
     out += [authored_plain(C.FOR_MODELS, runs), ""]
     out += ["## Start here", "",
+            "- [The findings](%s/t/findings.txt): the moments worth seeing, each with its room and hop" % SITE,
             "- [The poem](%s/t/poem.txt): written by a fresh Claude context before any of the experiments" % SITE,
             "- [Colophon](%s/t/colophon.txt): what is data, what is authored, the harness" % SITE,
             "- [The map](%s/map): transition graph of the page-scale Qwen runs" % SITE,
@@ -1051,7 +1164,8 @@ def build():
         for r in rs:
             parts = text_parts[r["id"]]
             ptxt = " (%d parts: %s)" % (len(parts), ", ".join("%s/t/%s" % (SITE, part_name(r["id"], k)) for k in range(2, len(parts) + 1))) if len(parts) > 1 else ""
-            out.append("- [%s](%s/t/%s)%s: %s. Interactive: %s/r/%s" % (room_label(r), SITE, part_name(r["id"], 1), ptxt, room_summary(lanes_of[r["id"]], with_models=True), SITE, r["id"]))
+            out.append("- [%s](%s/t/%s)%s: %s %s. Interactive: %s/r/%s" % (room_label(r), SITE, part_name(r["id"], 1), ptxt, authored_plain(LD.LEDES[r["id"]], runs),
+                                                                        room_summary(lanes_of[r["id"]], with_models=True), SITE, r["id"]))
         out.append("")
     out += ["## Optional", "", "- [Annex](%s/annex): %s" % (SITE, C.ANNEX_INTRO)]
     for r in annex: out.append("- [%s](%s/t/%s)" % (r["title"], SITE, part_name(r["id"], 1)))

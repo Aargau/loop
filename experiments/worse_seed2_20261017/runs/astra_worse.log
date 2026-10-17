@@ -1,0 +1,18 @@
+backend=openai model=gpt-6-astra mode=chat embed=False outdir=experiments/worse_seed2_20261017/runs/astra_worse inits=['worse.json']
+[worse.json t=  1 gpt-6-astra        default] tok=57   stop      ncd_prev=0.36 ncd_x0=0.36 surv=0.5    gz=0.49   3.0s  | {"rule":"Return this JSON object with the rule field unchanged and, in the text field, a w
+[worse.json t=  2 gpt-6-astra        default] tok=68   stop      ncd_prev=0.29 ncd_x0=0.46 surv=0.5263 gz=0.37   3.8s  | {"rule":"Return this JSON object with the rule field unchanged and, in the text field, a w
+[worse.json t=  3 gpt-6-astra        default] tok=98   stop      ncd_prev=0.47 ncd_x0=0.57 surv=0.3542 gz=0.33   4.9s  | {"rule":"Return this JSON object with the rule field unchanged and, in the text field, a w
+[worse.json t=  4 gpt-6-astra        default] tok=150  stop      ncd_prev=0.56 ncd_x0=0.72 surv=0.24   gz=0.31   6.5s  | {"rule":"Return this JSON object with the rule field unchanged and, in the text field, a w
+[worse.json t=  5 gpt-6-astra        default] tok=232  stop      ncd_prev=0.70 ncd_x0=0.83 surv=0.1441 gz=0.33  10.2s  | {"rule":"Return this JSON object with the rule field unchanged and, in the text field, a w
+[worse.json t=  6 gpt-6-astra        default] tok=470  stop      ncd_prev=0.62 ncd_x0=0.91 surv=0.1214 gz=0.30  15.4s  | {"rule":"Return this JSON object with the rule field unchanged and, in the text field, a w
+[worse.json t=  7 gpt-6-astra        default] tok=934  stop      ncd_prev=0.60 ncd_x0=0.95 surv=0.2557 gz=0.26  25.6s  | {"rule":"Return this JSON object with the rule field unchanged and, in the text field, a w
+[worse.json t=  8 gpt-6-astra        default] tok=1836 stop      ncd_prev=0.88 ncd_x0=0.97 surv=0.0232 gz=0.29  54.1s  | {"rule":"Return this JSON object with the rule field unchanged and, in the text field, a w
+[worse.json t=  9 gpt-6-astra        default] tok=3087 stop      ncd_prev=0.89 ncd_x0=0.98 surv=0.0115 gz=0.31  94.5s  | {"rule":"Return this JSON object with the rule field unchanged and, in the text field, a w
+[worse.json t= 10 gpt-6-astra        default] tok=1487 stop      ncd_prev=0.90 ncd_x0=0.97 surv=0.0066 gz=0.32  56.4s  | {\n  "rule": "Return this JSON object with the rule field unchanged and, in the text field,
+[worse.json t= 11 gpt-6-astra        default] tok=2691 stop      ncd_prev=0.87 ncd_x0=0.98 surv=0.022  gz=0.32  78.7s  | {\n  "rule": "Return this JSON object with the rule field unchanged and, in the text field,
+[worse.json t= 12 gpt-6-astra        default] tok=2492 stop      ncd_prev=0.81 ncd_x0=0.98 surv=0.013  gz=0.31  72.5s  | {\n  "rule": "Return this JSON object with the rule field unchanged and, in the text field,
+[worse.json t= 13 gpt-6-astra        default] tok=4096 length    ncd_prev=1.00 ncd_x0=0.95 surv=0.0    gz=0.31  74.4s  | 
+
+== summary ==
+worse.json   steps= 13 exact(tau=None,p=None) norm(tau=None,p=None) breaks=0 term=empty | 
+wrote experiments/worse_seed2_20261017/runs/astra_worse
