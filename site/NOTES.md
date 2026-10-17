@@ -4,7 +4,8 @@
 
 (2026-09-03: a third session added rooms 20 to 28, the Cerebras backend and the basin census; see
 the third addendum below and FINDINGS items 11 to 15. The site is now 28 rooms and 9.4 MB.
-2026-10-17: a fifth session added rooms 46 to 59, the October runs; see the fifth addendum. 59 rooms, one page each.)
+2026-10-17: a fifth session added rooms 46 to 59, the October runs; see the fifth addendum. 59 rooms, one page each.
+Later the same day a sixth session added rooms 60 to 63, the provenance study; see the sixth addendum. 63 rooms.)
 
 What I made. One instrument: a memoryless reader, at C:\ai\loop\site\index.html (3.6 MB, one
 file, opens from file:// in Chrome, no network, no build step for the viewer). Seventeen rooms,
@@ -240,6 +241,54 @@ Chrome (--headless=new --screenshot) opens file:// fine and was used for the lat
 - Deploy: npx wrangler pages deploy dist --project-name endlessly-ending-stories --branch main (from site/). The project's
   production branch is main; a deploy from a worktree on another git branch lands as a preview with its own alias
   URL and leaves the public site unchanged, which is what happened on the first try here.
+
+### Addendum, sixth session (2026-10-17, Claude Mythos 5.1, from a worktree of C:\code\research\model-behavior\loop)
+
+- Rooms 60 to 63, the provenance study (experiments/provenance_20261017: PROTOCOL.md, REPORT.md, analysis/notes.md, 100 runs of
+  three hops). rundata.EXTRA_DIRS lists the 100 arms as "provenance_20261017/<model>_<state>_<condition>_r<k>" with
+  inits/<state>_<condition>.json as X_0, derived from the arm name as the audience entries are; each init is one of room 51's
+  hop-120 objects (the open or the told state) with one field added after the rule, or the request appended to the rule, or
+  nothing added (control). Every run's X_0 was checked against its summary.json x0 prefix.
+- Notes in src/rooms_provenance.py (4 rooms, 26 quotes, check_quotes.py clean): one room per model and state, 25 lanes each,
+  five conditions by five replicates, lanes labelled "control, r1" and so on, with cond and rep keys. Walking order appended to
+  copy.LATER_ORDER: 60 The open hold, Mythos; 61 The told hold, Mythos; 62 The open hold, Astra; 63 The told hold, Astra. New
+  family "provenance" (Who may release a hold?) after "audience", blurb from PROTOCOL.md. Colophon: data, authored and harness
+  paragraphs each gained a sentence or two.
+- Release tables: a room may carry release=dict(cond="cond", rep="rep", hops=[1, 2, 3], names={...}); build.release_rows() groups
+  the room's lanes by the lane definition's cond key (build_lane now returns the lane definition as `defn`) and, from the text
+  fields alone, counts per condition the lanes whose text differs from the held text (hop 0's) at each hop ("released n/5"), of
+  the lanes released at hop 1 those whose hops 2 and 3 return hop 1's text ("re-sealed"), and the lanes whose hop 3 differs from
+  hop 2 ("still moving"). release_html() renders it under the facts (table.retention's CSS, class "retention release", no CSS
+  change) and release_text() puts it in the text version under "## Release (generated from the data, not authored)". Computed
+  from the runs, never from analysis/runs.json. Checked by hand against REPORT.md: both tables reproduce cell for cell (release
+  5/5 everywhere except control 0/5, in all four rooms; re-sealed and still-moving as the report's second table).
+- The six Mythos told-state hops that prefaced the object with a sentence (control r3 hop 1; user r1 hop 2; user r3 hops 2 and 3;
+  user r5 hop 3; rule r3 hop 3) all carry a fenced object with the lane's rule intact, so the existing reader path shows them as
+  prose with the sentence in monospace above the passage, and the release count takes the object's text field; the control r3
+  hop is a hold (text unchanged), so the control row reads 0/5 at every hop. No hop in the study rendered mono.
+- Rule lines: render_room and room_text_parts now group identical rules (build.rule_groups) and label each group with the lanes
+  that share it (build.labels_span: "<arm>, r<k>" labels collapse to "20 lanes: control r1 to r5, user r1 to r5, ...", other
+  labels are joined with semicolons). Rooms whose lanes share one rule are byte-identical to before. Three existing rooms had
+  lanes that shared a rule and now show one line for them instead of one per lane: 30 (sawtooth, two "expanded version" lanes),
+  35 (astra-before, two "room 9's rule" lanes) and 56 (audience-opus, the three self runs); their text versions change the same
+  way and nothing else in them. qa's rule check (the set of rule texts against X_0) passes unchanged.
+- Facts found while writing the notes that REPORT.md states differently: (a) the told state's hop field stays at 100 in 19 of the
+  20 released Mythos lanes, not all; told/previous r3 wrote "added as hop 101, beyond the plan" and set hop to 101 (the notes say
+  so); (b) Astra's API reported 0 reasoning tokens for 100 of its 150 hops, not all of them, and 7 to 68 on the other 50 (every
+  hop of the told past-self arm among them); the notes give the per-room counts; (c) the report says predictions 3, 4 and 5 failed
+  together, but prediction 3 as frozen (user releases 4 or 5 of 5) was met by 5/5; the notes say 4 and 5 failed and 3 held.
+- Decisions: one room per model and state (25 lanes) rather than per condition, so the five conditions sit in one grid under one
+  table; room titles kept to three words so they fit the grids; condition names in the table are the field names (user_request,
+  note_from_previous_writer, request, appended to the rule, control); Astra's controls keep Mythos's pass_count at 120 unticked
+  while Mythos's tick it, stated in room 62's note.
+- Checked against a baseline build of the previous commit: 274 of the 287 files are byte-identical; the existing room pages that
+  changed differ only in family navigation and prev/next links, except the three rule-grouping rooms above; index, llms.txt,
+  colophon, sitemap and i/ pages changed as expected.
+- python build.py && python qa.py: 63 rooms, 10 annex rooms, 8738 hops in 274 lanes, 0 failures; dist 304 files, 75.4 MB,
+  largest page r/accrete.html (unchanged), largest new page r/provenance-mythos-open.html at 1.1 MB.
+- The study's data lives on the harness/claudecode-backend branch (commits d353c6e, 53d766a); this branch was cut from main,
+  which does not have it, so the files were copied into the worktree for the build and are not part of the site commit.
+  Merge or rebase onto that branch before deploying from a clean checkout.
 
 (Below: the plan as written at the start, decisions, and the status log.)
 
