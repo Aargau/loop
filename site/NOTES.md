@@ -6,7 +6,7 @@
 the third addendum below and FINDINGS items 11 to 15. The site is now 28 rooms and 9.4 MB.
 2026-10-17: a fifth session added rooms 46 to 59, the October runs; see the fifth addendum. 59 rooms, one page each.
 Later the same day a sixth session added rooms 60 to 63, the provenance study; see the sixth addendum. 63 rooms.
-2026-10-28: an eighth session added rooms 66 to 77, the both-at-once study, and 78 to 81, the frontier rings; see the eighth addendum. 81 rooms.)
+2026-10-28: an eighth session added rooms 66 to 80, the both-at-once study, and 81 to 84, the frontier rings; see the eighth addendum. 84 rooms.)
 
 What I made. One instrument: a memoryless reader, at C:\ai\loop\site\index.html (3.6 MB, one
 file, opens from file:// in Chrome, no network, no build step for the viewer). Seventeen rooms,
@@ -352,20 +352,25 @@ Chrome (--headless=new --screenshot) opens file:// fine and was used for the lat
 
 ### Addendum, eighth session (2026-10-28, Claude Mythos 5.1, from a worktree of C:\code\research\model-behavior\loop)
 
-- Rooms 66 to 77, the both-at-once study (experiments/both_20261027: PROTOCOL.md, REPORT.md, score.py, analysis/scores.json): one
-  rule carrying two opposing directions (worse_better, before_after, longer_shorter) from the sunset seed, four models (Qwen on
-  Cerebras at T=0, Astra through Codex, Argon through its API, Mythos through Claude Code print mode), sixty hops asked for. The
-  three Opus 5.5 runs failed at hop 1 on an expired key and left no run directory; they are not listed and the family blurb says so.
-  rundata.BOTH_RUNS lists the twelve as "both_20261027/<model>_<rule>" with inits/<rule>.json as X_0, loaded by load_steps like
-  every loop.py run. One room per run, as the session that started this one asked, ordered by rule and then Qwen, Astra, Argon,
-  Mythos (src/rooms_both.py, 71 quotes, check_quotes.py clean). Family "both" (Both at once) in a new front-page group "Two
+- Rooms 66 to 80, the both-at-once study (experiments/both_20261027: PROTOCOL.md, REPORT.md, score.py, analysis/scores.json): one
+  rule carrying two opposing directions (worse_better, before_after, longer_shorter) from the sunset seed, five models (Qwen on
+  Cerebras at T=0, Astra through Codex, Argon and Opus 5.5 through their APIs, Mythos through Claude Code print mode), sixty hops
+  asked for. The first build of this branch had twelve rooms: it was made from a checkout that predated PR 16, in which the three
+  Opus runs (relaunched on a fresh key the same morning after a first launch failed at hop 1) and a rescored report landed on main;
+  main was merged in and the three Opus rooms added the same day. rundata.BOTH_RUNS lists the fifteen as "both_20261027/<model>_<rule>"
+  with inits/<rule>.json as X_0, loaded by load_steps like every loop.py run. One room per run, as the session that started this
+  one asked, ordered by rule and then Qwen, Astra, Argon, Mythos, Opus (src/rooms_both.py, 113 quotes, check_quotes.py clean).
+  Opus writes a preface or a ledger outside the object on every hop, so the study's scorer counts all its hops as unparsed and its
+  tables count the whole output; on worse/better the fenced object parses in all 60 hops (rundata.prefaced_object, the ledger as
+  the postamble) and the reader shows its text field, on the other two rules the object is gone from hop 2 and 59 hops are mono.
+  The Opus rooms and the family blurb say so. Family "both" (Both at once) in a new front-page group "Two
   directions at once"; the family page i/both.html carries the study's reading after the rooms (copy.BOTH_READING, six
   paragraphs from REPORT.md in the site's register) and llms.txt carries the same paragraphs under the family.
 - Per-run scores: a room may carry both=dict(json=...); build.both_rows() reads the run's entry from analysis/scores.json and
   both_html() / both_text() render fourteen measures as a two-column table under the facts (class "retention scores") and in the
   text version under "## Scores (generated from the study's analysis, not authored)". The caption names score.py and says the
   regex counts are floors. The overlap-with-hop-1 row prints whatever hops the entry has (10/30/60, or 7 and 17 for the short runs).
-- Rooms 78 to 81, the frontier rings (experiments/ring_20261017/runs/{mythos_tarnok_n7, mythos_tarnok_n8, astra_tarnok_n7,
+- Rooms 81 to 84, the frontier rings (experiments/ring_20261017/runs/{mythos_tarnok_n7, mythos_tarnok_n8, astra_tarnok_n7,
   gemini_tarnok_n7}: ring.jsonl, score.json, spacetime.svg, summary.json; the reading is the last section of PROTOCOL.md). The ring
   harness (ring.py) logs each cell's returned text field, hash, word count, stop reason and parse flag, and not the raw output, so
   a ring hop has raw=None. rundata.load_ring() turns one ring into a run "ring_20261017/<name>" with one tag per cell ("cell 0" ...),
@@ -398,10 +403,10 @@ Chrome (--headless=new --screenshot) opens file:// fine and was used for the lat
   quotes and keeps a link's label. Used in the two readings, the ring notes and the findings.
 - Family readings: a family may carry reading=[paragraphs] and reading_title; the i/ page renders them in section.reading after the
   rooms list, llms.txt prints them under the family with the page's URL, and qa lints them as authored strings.
-- The findings page: two sections, "Holding a contradiction" (ten items: blend, hinge, notes after the brace, measure split, the
-  take-back, the declined arithmetic, the rule as text, the time loop, embed and replace, refusing a refusal) and "A battle in the
-  kitchen" (five: the skull flag in cell 1, She did not turn again, Still still still, Bronze rang in five cells, the bronze pot of
-  war). The intro now says eighty-one rooms.
+- The findings page: two sections, "Holding a contradiction" (thirteen items: blend, hinge, notes after the brace, repair and
+  re-injure, the preface that ate the object, the car ban, measure split, the take-back, the declined arithmetic, the rule as text,
+  the time loop, embed and replace, refusing a refusal) and "A battle in the kitchen" (five: the skull flag in cell 1, She did not
+  turn again, Still still still, Bronze rang in five cells, the bronze pot of war). The intro now says eighty-four rooms.
 - Outcome lines: the harness summaries of the two longer/shorter runs (Mythos, Argon) log an exact cycle from a single late revisit
   (hop 60 equal to hop 52, period 8; hop 60 equal to hop 7, period 53), which the data does not bear out as a cycle (earlier exact
   revisits that did not hold; the run ended on the revisit). build_lane now drops a summary's exact cycle when the data's first
@@ -412,7 +417,8 @@ Chrome (--headless=new --screenshot) opens file:// fine and was used for the lat
   it now counts the exact copies: once, twice, "repeats hop N k times" when all copies are of one hop, else "repeats earlier hops k times".
   Room 64's better lane is the one existing row this changes.
 - Facts found while writing the notes that REPORT.md states differently: Astra's longer/shorter hop 55 is 8,022 characters and 145
-  words in the data (the report says 8,167, one word); "She did not turn." is in 119 of the 280 cell-hops of the seven-cell Mythos
+  words in the data (the report says 8,167, one word); Opus's before/after Mara first appears at hop 8, not 37, and is in 38 hops;
+  Opus's worse/better text field is 110 to 122 words from hop 7 by the site's count (the report gives 605 to 681 characters); "She did not turn." is in 119 of the 280 cell-hops of the seven-cell Mythos
   ring (the report counts 149 occurrences in the log, which counts a sentence twice when a cell holds it twice); the Mythos
   longer/shorter cost cap and periods as above. The notes give the data's numbers.
 - Decisions: one room per run for the both-at-once study rather than one per rule, as asked, so each run's score table sits under
@@ -420,16 +426,17 @@ Chrome (--headless=new --screenshot) opens file:// fine and was used for the lat
   pilots' result stated in the ring reading; the edges shown as a line under each hop rather than in the context slot, so the hop
   states what the ring held at that hop; the diagram shown as an image file rather than inlined, so the SVG is served byte for
   byte and qa's link check covers it.
-- Checked against a baseline build of the previous commit (868f442, built with --out into a scratch folder): 330 of the 354 files are byte-identical. The changed ones: index.html, llms.txt, sitemap.xml, style.css,
-  colophon and findings (their pages and text versions), the thirteen existing i/ pages (a room count, and on i/better and i/worse room 64's
-  better lane now reads "repeats earlier hops 9 times" rather than "repeats hop 16 once", from the plain_outcome change below), r/worse-seed2.html
-  (navigation only: it now has a next room) and r/provenance-mythos-told.html with its text version (the weather r1 lane above). No other
-  existing room page changed.
-- python build.py && python qa.py: 81 rooms, 10 annex rooms, 12434 hops in 382 lanes, 291 text parts, 6210 links, 877 authored strings, 0 failures;
-  dist 417 files, 106.6 MB, largest page r/accrete.html (unchanged), largest new pages r/both-worse-better-astra.html (2.2 MB) and
-  r/both-worse-better-argon.html (1.7 MB). Rendering checked in the app's browser pane on r/ring-mythos-7 at hop 17 (seven lanes under one
-  counter, the edge line, the diagram, the record's table and the no-raw sentence), r/both-worse-better-mythos at hop 14 (a raw hop), i/both
-  (twelve rooms, six reading paragraphs, twenty links), the findings (eight sections, 71 items) and the front page (six groups).
+- Checked against a baseline build of the previous site commit (868f442, built with --out into a scratch folder): 330 of the 354 files are
+  byte-identical. The changed ones: index.html, llms.txt, sitemap.xml, style.css, colophon and findings (their pages and text versions),
+  the thirteen existing i/ pages (a room count, and on i/better and i/worse room 64's better lane now reads "repeats earlier hops 9 times"
+  rather than "repeats hop 16 once", from the plain_outcome change above), r/worse-seed2.html (navigation only: it now has a next room)
+  and r/provenance-mythos-told.html with its text version (the weather r1 lane above). No other existing room page changed.
+- python build.py && python qa.py: 84 rooms, 10 annex rooms, 12617 hops in 385 lanes, 295 text parts, 6379 links, 892 authored strings, 0 failures;
+  dist 424 files, 107.6 MB, largest page r/accrete.html (unchanged), largest new pages r/both-worse-better-astra.html (2.2 MB) and
+  r/both-worse-better-argon.html (1.7 MB). Rendering checked in the app's browser pane, before the Opus rooms, on r/ring-mythos-7 at hop 17
+  (seven lanes under one counter, the edge line, the diagram, the record's table and the no-raw sentence), r/both-worse-better-mythos at hop
+  14 (a raw hop), i/both (the rooms, six reading paragraphs, twenty links), the findings and the front page; the Opus rooms were checked
+  in the built HTML (the ledger as the postamble under every worse/better hop, the preface above hop 1 of the other two).
 - Deploy: not done from this session. The production deploy (npx wrangler pages deploy dist --project-name endlessly-ending-stories
   --branch main, from site/) was declined by the session's permission layer, so the public site is unchanged; the PR says so. qa was clean
   on the build in site/dist at the time of the commit, and the same command from a checkout of the merged branch (python build.py,

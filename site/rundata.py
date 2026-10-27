@@ -58,10 +58,10 @@ EXTRA_DIRS.update({"operators_gemini_20261017/" + n: (OPERATORS_GEMINI / "runs" 
                    for n in ("gemini_worse", "gemini_better")})
 EXTRA_DIRS.update({"worse_seed2_20261017/" + n: (WORSE_SEED2 / "runs" / n, WORSE_SEED2 / "inits" / "worse.json")
                    for n in ("qwen_worse", "astra_worse", "gpt61_worse", "fable51_worse", "opus55_worse", "gemini_worse", "mythos_worse")})
-# 27 October: one rule carrying two opposing directions (worse and better; before and after; longer and shorter), four models,
-# init inits/<rule>.json. The three Opus 5.5 runs failed at hop 1 on an expired key and left no run directory; they are not listed.
+# 27 and 28 October: one rule carrying two opposing directions (worse and better; before and after; longer and shorter), five models,
+# init inits/<rule>.json (the Opus 5.5 runs were relaunched on a fresh key the next morning after a first launch failed at hop 1).
 BOTH = LOOP / "experiments/both_20261027"
-BOTH_RUNS = ["%s_%s" % (m, r) for r in ("worse_better", "before_after", "longer_shorter") for m in ("qwen", "astra", "gemini", "mythos")]
+BOTH_RUNS = ["%s_%s" % (m, r) for r in ("worse_better", "before_after", "longer_shorter") for m in ("qwen", "astra", "gemini", "mythos", "opus55")]
 EXTRA_DIRS.update({"both_20261027/" + n: (BOTH / "runs" / n, BOTH / "inits" / (n.split("_", 1)[1] + ".json")) for n in BOTH_RUNS})
 
 # The ring (experiments/ring_20261017, ring.py): N cells updated at once, each shown its own text and the last sentence of its

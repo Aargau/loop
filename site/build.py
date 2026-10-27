@@ -217,7 +217,7 @@ def build_lane(runs, index, lane):
         if marked: a["as_context"] = dm
     models = sorted({h["model"] for h in hops})
     model = (models[0] if len(models) == 1 else " / ".join(models)) if hops else run["meta"].get("model")
-    # a harness summary may log an exact cycle from a single revisit at the run's last hop (both-at-once rooms 76 and 77: hop 60 equal to hop 52,
+    # a harness summary may log an exact cycle from a single revisit at the run's last hop (both-at-once rooms 78 and 79: hop 60 equal to hop 52,
     # or to hop 7) after an earlier exact revisit that did not hold; the run was not stopped on it, and one revisit is not a cycle, so the claim is
     # dropped and the data describes the lane. A claim that held past the last hop, or with no failed revisit at or before its start, is kept as
     # before; the one earlier lane this touches is room 61's weather r1 (hop 3 equal to hop 0 after hop 2 was too), which it now describes from the data.

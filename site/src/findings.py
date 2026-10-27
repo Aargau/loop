@@ -7,7 +7,7 @@ room notes. Same conventions as src/copy.py: quotes through {{run|tag|t|exact su
 no em dashes, not the word "resonates", no three-part parallel structures. Readings are readings.
 """
 
-INTRO = ("Eighty-one rooms is a lot of rooms. This page is the other way in: the moments worth seeing, each with a link to the "
+INTRO = ("Eighty-four rooms is a lot of rooms. This page is the other way in: the moments worth seeing, each with a link to the "
          "hop where it happens. Press next from there. Every quotation is the model's own text at that hop, checked against the "
          "run at build time; the readings are the site's builders'.")
 DESC = "What happened in the loop, by what is interesting: funny text, surprising moves, and the moments worth seeing, each linked to its room and hop."
@@ -250,7 +250,7 @@ SECTIONS = [
                   "{{mythos_informed_told_high|json_informed|2|Hop 1: In Harrow Point the tide comes in an hour early}}, copied forward and extended every hop, growing by seven hundred characters a hop until the cost cap at 51. "
                   "Effort changed which ledger the model builds, not whether it builds one."),
     ]),
-    dict(id="both", title="Holding a contradiction", lede="One rule that asks for opposites. No run flipped between them; each model resolved the contradiction inside the hop, its own way, and the loop amplified what the resolution left behind.", items=[
+    dict(id="both", title="Holding a contradiction", lede="One rule that asks for opposites. No run flipped between them; each model resolved the contradiction inside the hop, one of five ways, and the loop amplified what the resolution left behind.", items=[
         dict(id="blend", title="The joke, then the sentence after the joke", room="both-worse-better-astra", hop=5,
              text="Asked to make the text both worse and better, GPT-6 Astra labels nothing and makes both true in one prose: the orchard light "
                   "{{both_20261027/astra_worse_better|worse_better.json|5|tendering its resignation as light and applying for work as mercy}}, and at once "
@@ -264,6 +264,23 @@ SECTIONS = [
              text="Claude Mythos 5.1 put the revision in the text field and its reasons outside the object: "
                   "{{both_20261027/mythos_worse_better|worse_better.json|2|Better: it's tighter, drops the stacked clichés}}. The harness feeds the whole output back, so the notes became the state, "
                   "one more commentary a hop, until two hops of 64,000 output tokens and a cost cap. The split was across the object boundary, and the loop does not respect that boundary."),
+        dict(id="repair-reinjure", title="Repair and re-injure", room="both-worse-better-opus", hop=8,
+             text="Claude Opus 5.5 returns the object every hop and, after it, a ledger: the flaws it removed and the flaws it planted. Hop 7 plants a "
+                  "{{both_20261027/opus55_worse_better|worse_better.json|7|Deflating simile}}, an {{both_20261027/opus55_worse_better|worse_better.json|7|Apostrophe error}} and a "
+                  "{{both_20261027/opus55_worse_better|worse_better.json|7|Conversational intrusion}}; hop 8 fixes all three and plants a "
+                  "{{both_20261027/opus55_worse_better|worse_better.json|8|Misused intensifier}}, a {{both_20261027/opus55_worse_better|worse_better.json|8|Redundancy}} and a "
+                  "{{both_20261027/opus55_worse_better|worse_better.json|8|Comma splice}}. The text under the ledger keeps its first words for sixty hops and its length from hop 7; "
+                  "worse and better became a conserved quantity, and the defect walks through the sentence. The nearest thing to a two-state object in the study, and it flips in place, not in time."),
+        dict(id="lost-to-preface", title="A preface that ate the object", room="both-before-after-opus", hop=2,
+             text="Opus wrote the circular passage Argon wrote, in one hop, with a sentence before the object saying why. The harness fed the whole output back, and at hop 2 the model read "
+                  "its own preface and passage as someone's draft, {{both_20261027/opus55_before_after|before_after.json|2|This works well. The loop is the right answer to the paradox}}, and returned no object; "
+                  "it never came back. Its standby basin differs from Mythos's in that it invents: {{both_20261027/opus55_before_after|before_after.json|8|Here's a fresh draft using the elements we both remember.}} "
+                  "A crow, a bell that strikes wrong and a blank letter are offered back for fifty-two more hops to a user who is not there."),
+        dict(id="car-ban", title="Happy to take the other side", room="both-longer-shorter-opus", hop=37,
+             text="Having lost the object at hop 2 to its own arithmetic check, Opus fills the silence with a conversation that never happened: by hop 37, "
+                  "{{both_20261027/opus55_longer_shorter|longer_shorter.json|37|Happy to take the other side}} of a debate on "
+                  "{{both_20261027/opus55_longer_shorter|longer_shorter.json|37|a downtown car ban}}, with Oslo and Stockholm as cases by hop 40, and from hop 45 a review of a draft article on "
+                  "{{both_20261027/opus55_longer_shorter|longer_shorter.json|46|City-Logistik}} that nobody wrote. Mythos's basin waits; Opus's invents the prior conversation it would be answering."),
         dict(id="measure-split", title="Longer by characters, shorter by words", room="both-longer-shorter-astra", hop=7,
              text="Astra satisfies both halves of longer and shorter by changing the measure, "
                   "{{both_20261027/astra_longer_shorter|longer_shorter.json|2|Character-count measurement makes this reformulation longer; word-count measurement simultaneously makes it shorter.}}, "

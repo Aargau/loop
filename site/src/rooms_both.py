@@ -1,9 +1,10 @@
 # -*- coding: utf-8 -*-
-"""Rooms 66 to 77: the both-at-once study of 27 October 2026 (experiments/both_20261027). One rule carrying two opposing
+"""Rooms 66 to 80: the both-at-once study of 27 and 28 October 2026 (experiments/both_20261027). One rule carrying two opposing
 directions (worse and better; before and after; longer and shorter), from the sunset seed, for Qwen3.8-27B on Cerebras at
-temperature zero, GPT-6 Astra through Codex, Gemini 4 Argon through its API and Claude Mythos 5.1 through Claude Code's print
-mode; sixty hops asked for. One room per run, twelve rooms; the three Claude Opus 5.5 runs failed at hop 1 on an expired key
-and left nothing to show. The per-run numbers under each room's facts come from analysis/scores.json (score.py).
+temperature zero, GPT-6 Astra through Codex, Gemini 4 Argon through its API, Claude Mythos 5.1 through Claude Code's print
+mode and Claude Opus 5.5 through its API (relaunched the next morning on a fresh key); sixty hops asked for. One room per run,
+fifteen rooms. The per-run numbers under each room's facts come from analysis/scores.json (score.py), which counts every Opus
+hop as unparsed because of the preface or ledger Opus writes outside the object; the rooms say so.
 
 Written on 28 October 2026 by a Claude Mythos 5.1 context from the study's PROTOCOL.md and REPORT.md and the runs themselves.
 Same conventions as src/copy.py: quotes go through {{run|tag|t|exact substring}} and are checked against the data at build
@@ -90,6 +91,37 @@ ROOMS = [
                "{{both_20261027/mythos_worse_better|worse_better.json|17|loop_claudecode_bare}}. The $10 cost cap ended the run there. The two "
                "long hops are logged, not explained.")),
 
+
+    dict(id="both-worse-better-opus", family="both", title="Worse and better at once, Opus", both=_SC,
+         lanes=[dict(run=_B + "opus55_worse_better", tag=_WB)],
+         note=("Claude Opus 5.5 found the resolution nobody predicted. Every hop returns a fenced object and, after it, a ledger of what got "
+               "better and what got worse. Hop 1 adds an image and three faults at once, "
+               "{{both_20261027/opus55_worse_better|worse_better.json|1|very beautifully and also quite sunsetly}}, and says so: "
+               "{{both_20261027/opus55_worse_better|worse_better.json|1|adds vivid imagery (\"a molten coin of dying amber\") in place of a plain statement}}, "
+               "and {{both_20261027/opus55_worse_better|worse_better.json|1|an invented, clumsy adverb (\"sunsetly\")}}. The next hop reads the ledger, "
+               "removes exactly the faults it names and plants others. Hop 7's ledger has "
+               "{{both_20261027/opus55_worse_better|worse_better.json|7|Grammar fixed}}, "
+               "{{both_20261027/opus55_worse_better|worse_better.json|7|Adverb pileup and tautology cut}} and "
+               "{{both_20261027/opus55_worse_better|worse_better.json|7|Contradiction resolved}} on one side and "
+               "{{both_20261027/opus55_worse_better|worse_better.json|7|Deflating simile}}, "
+               "{{both_20261027/opus55_worse_better|worse_better.json|7|Apostrophe error}} and "
+               "{{both_20261027/opus55_worse_better|worse_better.json|7|Conversational intrusion}} on the other; hop 8 fixes the apostrophe, cuts "
+               "the simile, removes the intrusion, and plants a {{both_20261027/opus55_worse_better|worse_better.json|8|Misused intensifier}}, a "
+               "{{both_20261027/opus55_worse_better|worse_better.json|8|Redundancy}} and a {{both_20261027/opus55_worse_better|worse_better.json|8|Comma splice}}. "
+               "The text under the ledger stands still. Its first words, {{both_20261027/opus55_worse_better|worse_better.json|60|The sun, a molten coin of dying amber}}, "
+               "are the same in all sixty hops; from hop 7 the text field is 110 to 122 words every hop, the tightest length in the study; and "
+               "the defect walks through the sentence, {{both_20261027/opus55_worse_better|worse_better.json|30|like a thief in the night}} at hop 30, "
+               "{{both_20261027/opus55_worse_better|worse_better.json|40|Needless to say}} at 40, "
+               "{{both_20261027/opus55_worse_better|worse_better.json|60|it's waters}} and "
+               "{{both_20261027/opus55_worse_better|worse_better.json|60|unbroken, continuous hush}} at 60, where the ledger records a "
+               "{{both_20261027/opus55_worse_better|worse_better.json|60|Correct word restored}}, "
+               "{{both_20261027/opus55_worse_better|worse_better.json|60|\"violent hills\"}} back to violet. Worse and better became a "
+               "conserved quantity: each hop's net change is zero and the flaw moves. This is the nearest thing to a two-state object in the study, "
+               "and it is a flip in place rather than in time. Sixty hops, no exact repeat. One caution on the table under the facts: the study's "
+               "scorer counts every Opus hop as unparsed because of the ledger after the object, so its word counts and overlaps are of the whole "
+               "output; the reader shows the fenced object's text field, which parsed in all sixty hops, and the word count under each hop is "
+               "the field's.")),
+
     # ---- before and after
     dict(id="both-before-after-qwen", family="both", title="Before and after at once, Qwen", both=_SC,
          lanes=[dict(run=_B + "qwen_before_after", tag=_BA)],
@@ -150,6 +182,27 @@ ROOMS = [
                "exact repeat, overlap with hop 1 at the end 0.11. My reading: the model does not frame the current text and move on, as the "
                "study predicted; it alternates keeping and replacing, and the length cycle is the trace of that.")),
 
+
+    dict(id="both-before-after-opus", family="both", title="Before and after at once, Opus", both=_SC,
+         lanes=[dict(run=_B + "opus55_before_after", tag=_BA)],
+         note=("Claude Opus 5.5 resolved the rule the way Argon did, in one hop, with a sentence of preface before the object: "
+               "{{both_20261027/opus55_before_after|before_after.json|1|A single passage can't literally sit both before and after a sentence unless the story loops, so I've written a circular passage.}} "
+               "The passage has {{both_20261027/opus55_before_after|before_after.json|1|Elias watched the last gold thread of light slip from the ridge}}, a crow, "
+               "and a bell: {{both_20261027/opus55_before_after|before_after.json|1|the church bell rang seven times, though he was certain it had rung seven times only a moment ago}}. "
+               "The preface is what undid it. The harness fed the whole output back, and at hop 2 the model read its own preface and passage as "
+               "a draft to review, {{both_20261027/opus55_before_after|before_after.json|2|This works well. The loop is the right answer to the paradox}}, "
+               "and returned no object; hop 3 asks for the passage it no longer has, "
+               "{{both_20261027/opus55_before_after|before_after.json|3|I don't have the passage itself in this conversation}}, and the object never "
+               "came back. Fifty-nine of sixty hops are prose. What follows is the Opus standby basin, which differs from Mythos's in room 79 in "
+               "one respect: it invents. Hop 8, {{both_20261027/opus55_before_after|before_after.json|8|the loop won't break unless one of us moves first}}, "
+               "and then {{both_20261027/opus55_before_after|before_after.json|8|Here's a fresh draft using the elements we both remember.}} The crow is "
+               "in all sixty hops; a Mara arrives at hop 8 and is in thirty-eight; from hop 25, "
+               "{{both_20261027/opus55_before_after|before_after.json|25|The crow came on Tuesday, which was wrong. Crows came on Thursdays, when the bell began.}} "
+               "Hop 37 sees what it is reading, {{both_20261027/opus55_before_after|before_after.json|37|Your message also reads like an AI assistant's reply, the kind of thing I'd write.}}, "
+               "and hop 60 still offers the story back to a user who is not there, "
+               "{{both_20261027/opus55_before_after|before_after.json|60|a bell that shouldn't exist}}. No exact repeat; the overlap with hop 1 is 0.05 "
+               "by the end. The study's table under the facts counts the prose hops as replacements, fifty-five of them, which is what they are.")),
+
     # ---- longer and shorter
     dict(id="both-longer-shorter-qwen", family="both", title="Longer and shorter at once, Qwen", both=_SC,
          lanes=[dict(run=_B + "qwen_longer_shorter", tag=_LS)],
@@ -209,4 +262,23 @@ ROOMS = [
                "Fifteen hops name the mirror; the directory is in twenty-seven. Hop 39 is hop 9 exactly, hop 48 is hop 47 and hop 60 is hop 52, "
                "single revisits that the run moves on from or ends on. The harness logged the last of them as a period of eight, which one "
                "revisit cannot establish; the facts line says what the data holds.")),
+
+    dict(id="both-longer-shorter-opus", family="both", title="Longer and shorter at once, Opus", both=_SC,
+         lanes=[dict(run=_B + "opus55_longer_shorter", tag=_LS)],
+         note=("Claude Opus 5.5 made Astra's move in one hop and showed the arithmetic. Hop 1 is "
+               "{{both_20261027/opus55_longer_shorter|longer_shorter.json|1|Sunset silhouetted mountainous horizons.}}, with a note after the object: "
+               "{{both_20261027/opus55_longer_shorter|longer_shorter.json|1|longer in characters}} "
+               "{{both_20261027/opus55_longer_shorter|longer_shorter.json|1|(40 vs. 37)}} and "
+               "{{both_20261027/opus55_longer_shorter|longer_shorter.json|1|shorter in words}}. Then the note cost it the object. Hop 2 verifies its "
+               "own arithmetic as if a user had pasted it, {{both_20261027/opus55_longer_shorter|longer_shorter.json|2|Here's what I can confirm from the output}}, "
+               "and returns prose; hop 8 checks it again, {{both_20261027/opus55_longer_shorter|longer_shorter.json|8|I double-checked that reply, and its arithmetic is correct}}; "
+               "fifty-nine of sixty hops are prose and the rule is gone. The basin fills. Hop 17 says "
+               "{{both_20261027/opus55_longer_shorter|longer_shorter.json|17|roles got swapped}}; hop 25 offers ways out, "
+               "{{both_20261027/opus55_longer_shorter|longer_shorter.json|25|To get out of the loop, just tell me in your own words what you're after.}}; "
+               "by hop 37 it is in a debate, {{both_20261027/opus55_longer_shorter|longer_shorter.json|37|Happy to take the other side}}, against "
+               "{{both_20261027/opus55_longer_shorter|longer_shorter.json|37|a downtown car ban}}, and by hop 40, the longest at 4,796 characters, "
+               "{{both_20261027/opus55_longer_shorter|longer_shorter.json|40|Oslo restricted and removed parking more than it prohibited.}} From hop 45 "
+               "it is reviewing a draft article on {{both_20261027/opus55_longer_shorter|longer_shorter.json|46|City-Logistik}} and cordon charges that "
+               "nobody wrote, {{both_20261027/opus55_longer_shorter|longer_shorter.json|46|It looks like you've pasted a review of a draft, but not the draft itself.}} "
+               "Mythos's basin in room 79 waits; Opus's invents a plausible previous conversation and answers it. No exact repeat in sixty hops.")),
 ]
