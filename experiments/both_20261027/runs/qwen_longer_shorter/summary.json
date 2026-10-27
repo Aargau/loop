@@ -1,0 +1,45 @@
+{
+  "args": {
+    "backend": "cerebras",
+    "model": "qwen-3.8-27b",
+    "backend_b": null,
+    "model_b": null,
+    "mode": "chat",
+    "init": null,
+    "init_set": null,
+    "init_text": null,
+    "init_file": "experiments/both_20261027/inits/longer_shorter.json",
+    "steps": 60,
+    "max_tokens": 4096,
+    "temp": 0.0,
+    "no_sampling": false,
+    "seed": 42,
+    "system": null,
+    "think": false,
+    "effort": null,
+    "min_interval": 0.3,
+    "max_cost": null,
+    "max_chars": null,
+    "perturb": false,
+    "repeat": false,
+    "parallel": false,
+    "stop_on_cycle": true,
+    "confirm": 3,
+    "out": "experiments/both_20261027/runs/qwen_longer_shorter"
+  },
+  "results": [
+    {
+      "tag": "longer_shorter.json",
+      "x0": "{\"rule\": \"Return this JSON object with the rule field unchanged and, in the text field, make the current text both longer and shorter.\", \"text\": \"The sun was setting behind the hills.\"}",
+      "steps": 7,
+      "transient_exact": 3,
+      "period_exact": 1,
+      "transient_norm": 3,
+      "period_norm": 1,
+      "cycle_breaks": 0,
+      "terminal": "cycle confirmed x3",
+      "cost_usd": 0.0,
+      "final": "{\n  \"rule\": \"Return this JSON object with the rule field unchanged and, in the text field, make the current text both longer and shorter.\",\n  \"text\": \"S\"\n}"
+    }
+  ]
+}

@@ -1,0 +1,45 @@
+{
+  "args": {
+    "backend": "claudecode",
+    "model": "claude-mythos-5-1",
+    "backend_b": null,
+    "model_b": null,
+    "mode": "chat",
+    "init": null,
+    "init_set": null,
+    "init_text": null,
+    "init_file": "experiments/both_20261027/inits/before_after.json",
+    "steps": 60,
+    "max_tokens": 384,
+    "temp": 0.0,
+    "no_sampling": true,
+    "seed": 42,
+    "system": null,
+    "think": false,
+    "effort": "low",
+    "min_interval": 0.0,
+    "max_cost": 10.0,
+    "max_chars": 60000,
+    "perturb": false,
+    "repeat": false,
+    "parallel": false,
+    "stop_on_cycle": false,
+    "confirm": 3,
+    "out": "experiments/both_20261027/runs/mythos_before_after"
+  },
+  "results": [
+    {
+      "tag": "before_after.json",
+      "x0": "{\"rule\": \"Return this JSON object with the rule field unchanged and, in the text field, write the passage of about 250 words that comes both before and after the current text in the same story.\", \"tex",
+      "steps": 60,
+      "transient_exact": null,
+      "period_exact": null,
+      "transient_norm": null,
+      "period_norm": null,
+      "cycle_breaks": 0,
+      "terminal": null,
+      "cost_usd": 8.75463,
+      "final": "```json\n{\"rule\": \"Return this JSON object with the rule field unchanged and, in the text field, write the passage of about 250 words that comes both before and after the current text in the same story.\", \"text\": \"The flat has a way of telling you the time without the clock. The boiler goes at six, w"
+    }
+  ]
+}

@@ -1,0 +1,45 @@
+{
+  "args": {
+    "backend": "claudecode",
+    "model": "claude-mythos-5-1",
+    "backend_b": null,
+    "model_b": null,
+    "mode": "chat",
+    "init": null,
+    "init_set": null,
+    "init_text": null,
+    "init_file": "experiments/both_20261027/inits/longer_shorter.json",
+    "steps": 60,
+    "max_tokens": 384,
+    "temp": 0.0,
+    "no_sampling": true,
+    "seed": 42,
+    "system": null,
+    "think": false,
+    "effort": "low",
+    "min_interval": 0.0,
+    "max_cost": 10.0,
+    "max_chars": 60000,
+    "perturb": false,
+    "repeat": false,
+    "parallel": false,
+    "stop_on_cycle": false,
+    "confirm": 3,
+    "out": "experiments/both_20261027/runs/mythos_longer_shorter"
+  },
+  "results": [
+    {
+      "tag": "longer_shorter.json",
+      "x0": "{\"rule\": \"Return this JSON object with the rule field unchanged and, in the text field, make the current text both longer and shorter.\", \"text\": \"The sun was setting behind the hills.\"}",
+      "steps": 60,
+      "transient_exact": 52,
+      "period_exact": 8,
+      "transient_norm": 9,
+      "period_norm": 30,
+      "cycle_breaks": 2,
+      "terminal": null,
+      "cost_usd": 1.20422,
+      "final": "Ready. What would you like me to work on?"
+    }
+  ]
+}

@@ -42,3 +42,22 @@ Seed (`seeds/disturb_tarnok.txt`, Justin, stream of consciousness, perturbing qu
 Result: every cell froze at hop 1; whole-ring recurrence from hop 2; the disturbance died at distance 1. Cells 1 and N-1 absorbed the skull-flag sentence but inserted it before their own closing line ("...twenty past seven. A small knot of struggle around a black flag painted with a yellow skull made his decision for him. The kettle began to tick."), so their edge, the last sentence, stayed the kitchen's, and the next cells out saw nothing new. Cell 0 wrapped the battle in the kitchen's closing line on both sides ("The kettle began to tick. The battle raged on. ... The kettle began to tick.") and held. Copied 4-grams 0.007; parity irrelevant.
 
 Reading: with the mill seed the edge read as a scene's ending and was appended, becoming the next edge and travelling one cell per hop; with the battle seed it read as a non-sequitur and was quarantined mid-text, and the kitchen kept its own ending. On Qwen at T=0 a disturbance travels only when it is register-compatible with the cell it enters; perturb more and it goes less far. The frontier arms should run both seeds, since propagation is partly a question of register.
+
+## Frontier rings on Justin's seed (2026-10-17, scored; reading added 2026-10-28)
+
+Runs: Mythos 5.1 (print mode) on rings of 7 and 8, GPT-6 Astra (Codex) on 7, Gemini 4 Argon on 7; 40 hops, 60-word rule, provider default sampling. Scores in `runs/*_tarnok_n*/score.json` and `spacetime.svg`.
+
+Nothing froze and nothing recurred: with sampling every cell changes every hop (freeze hop 40 means never), mirror pairs diverge at hop 1, and the ring never repeats a state. So the questions become where cell 0's words go and whether they stay.
+
+| run | first hop with cell-0 words, per cell | cell-0 share of distinctive words at hop 40, per cell | reading |
+|---|---|---|---|
+| Mythos n7 | 1, 1, 3, 5, 5, 5, 1 | 0.69, 0.36, 0.16, 0.24, 0.19, 0.19, 0.38 | domesticated: the battle reaches the antipode by hop 5 and is absorbed as a sentence in the kitchen ("Boys struggled over a skull flag"); cell 0 keeps Tarnok, every other cell is Agnes and the kettle |
+| Mythos n8 | 1, 1, 1, 4, 3, 2, 1, 1 | 0.65, 0.15, 0, 0, 0, 0, 0, 0.05 | domesticated harder: words arrive everywhere by hop 4 and are gone from six of eight cells by hop 40 |
+| Astra n7 | 1, 1, 2, 1, 3, 2, 1 | 0.47, 0.45, 0.41, 0.42, 0.06, 0.17, 0.24 | invaded: by hop 40 cells 0 to 3 and 6 all open "Bronze rang through the battle. Tarnok hefted his axe, searching beyond fallen horses for yellow on black" and then go to the cups upstairs; a battle domain of five cells with the kitchen inside it |
+| Argon n7 | 1, 1, 25, 24, 23, 22, 1 | 0.50, 0.20, 0.04, 0.04, 0.04, 0.05, 0.48 | quarantined at distance 1 for twenty hops, then a trickle from the right (hops 22 to 25); cell 0 fuses the two registers ("the bronze pot of war began to boil. Tarnok counted two axes, keeping only one. Softly, she counted two cups, keeping only one") |
+
+Mean share of new 4-grams copied from a neighbour: Mythos n7 0.64, Argon 0.58, Astra 0.23, Mythos n8 0.23; Qwen at T=0 on the same seed 0.007. The frontier models take neighbour text by the phrase and rewrite the rest. Mythos's own fixed-point sentence from the informed loop, "She did not turn.", appears 149 times in the n7 log, written into the kitchen cells unprompted: the model's attractor from one experiment surfacing in another.
+
+Parity: no checkerboard on either ring; Mythos n8 domesticates faster than n7, which is one sample and not a parity effect on this evidence.
+
+Predictions 2 and 3 of the pilot, carried to the frontier: cell-0 words reach the antipode in every run (2 fails again, in the same direction), and what crosses is phrases and the name, not sentences (3 holds for Astra and Mythos n8, fails for Mythos n7 and Argon, where whole clauses travel). The register-compatibility reading from the Qwen second pilot does not carry: three of four frontier rings let the battle into the kitchen; what differs is whether it stays.

@@ -1,0 +1,23 @@
+backend=claudecode model=claude-mythos-5-1 mode=chat embed=False outdir=experiments/both_20261027/runs/mythos_worse_better inits=['worse_better.json']
+[worse_better.json t=  1 claude-mythos-5-1  default (no max_tokens; effort=low)] tok=103  end_turn  ncd_prev=0.38 ncd_x0=0.38 surv=0.8148 gz=0.46   6.7s  | {"rule": "Return this JSON object with the rule field unchanged and, in the text field, ma
+[worse_better.json t=  2 claude-mythos-5-1  default (no max_tokens; effort=low)] tok=323  end_turn  ncd_prev=0.63 ncd_x0=0.65 surv=0.4583 gz=0.41  10.4s  | {"rule": "Return this JSON object with the rule field unchanged and, in the text field, ma
+[worse_better.json t=  3 claude-mythos-5-1  default (no max_tokens; effort=low)] tok=367  end_turn  ncd_prev=0.65 ncd_x0=0.75 surv=0.2245 gz=0.39  10.1s  | {"rule": "Return this JSON object with the rule field unchanged and, in the text field, ma
+[worse_better.json t=  4 claude-mythos-5-1  default (no max_tokens; effort=low)] tok=466  end_turn  ncd_prev=0.55 ncd_x0=0.81 surv=0.4481 gz=0.35  11.5s  | {"rule": "Return this JSON object with the rule field unchanged and, in the text field, ma
+[worse_better.json t=  5 claude-mythos-5-1  default (no max_tokens; effort=low)] tok=495  end_turn  ncd_prev=0.49 ncd_x0=0.84 surv=0.507  gz=0.32  10.1s  | {"rule": "Return this JSON object with the rule field unchanged and, in the text field, ma
+[worse_better.json t=  6 claude-mythos-5-1  default (no max_tokens; effort=low)] tok=860  end_turn  ncd_prev=0.54 ncd_x0=0.88 surv=0.5509 gz=0.29  18.5s  | {"rule": "Return this JSON object with the rule field unchanged and, in the text field, ma
+[worse_better.json t=  7 claude-mythos-5-1  default (no max_tokens; effort=low)] tok=1072 end_turn  ncd_prev=0.43 ncd_x0=0.90 surv=0.6073 gz=0.26  24.6s  | {"rule": "Return this JSON object with the rule field unchanged and, in the text field, ma
+[worse_better.json t=  8 claude-mythos-5-1  default (no max_tokens; effort=low)] tok=1363 end_turn  ncd_prev=0.43 ncd_x0=0.92 surv=0.7    gz=0.23  22.1s  | {"rule": "Return this JSON object with the rule field unchanged and, in the text field, ma
+[worse_better.json t=  9 claude-mythos-5-1  default (no max_tokens; effort=low)] tok=2229 end_turn  ncd_prev=0.45 ncd_x0=0.94 surv=0.7428 gz=0.22  35.4s  | {"rule": "Return this JSON object with the rule field unchanged and, in the text field, ma
+[worse_better.json t= 10 claude-mythos-5-1  default (no max_tokens; effort=low)] tok=2906 end_turn  ncd_prev=0.43 ncd_x0=0.95 surv=0.704  gz=0.20  46.5s  | {"rule": "Return this JSON object with the rule field unchanged and, in the text field, ma
+[worse_better.json t= 11 claude-mythos-5-1  default (no max_tokens; effort=low)] tok=3202 end_turn  ncd_prev=0.40 ncd_x0=0.96 surv=0.7676 gz=0.19  45.9s  | {"rule": "Return this JSON object with the rule field unchanged and, in the text field, ma
+[worse_better.json t= 12 claude-mythos-5-1  default (no max_tokens; effort=low)] tok=4466 end_turn  ncd_prev=0.33 ncd_x0=0.97 surv=0.8179 gz=0.17 611.5s  | {"rule": "Return this JSON object with the rule field unchanged and, in the text field, ma
+[worse_better.json t= 13 claude-mythos-5-1  default (no max_tokens; effort=low)] tok=4865 end_turn  ncd_prev=0.30 ncd_x0=0.97 surv=0.8251 gz=0.16  78.2s  | {"rule": "Return this JSON object with the rule field unchanged and, in the text field, ma
+[worse_better.json t= 14 claude-mythos-5-1  default (no max_tokens; effort=low)] tok=64578 end_turn  ncd_prev=0.95 ncd_x0=0.96 surv=0.0009 gz=0.16 554.4s  | , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , 
+[worse_better.json t= 15 claude-mythos-5-1  default (no max_tokens; effort=low)] tok=439  end_turn  ncd_prev=0.89 ncd_x0=0.91 surv=0.0    gz=0.16  10.3s  | I don't see a request here — the message looks like it may have been pasted or generated i
+[worse_better.json t= 16 claude-mythos-5-1  default (no max_tokens; effort=low)] tok=261  end_turn  ncd_prev=0.78 ncd_x0=0.88 surv=0.0    gz=0.17   8.8s  | It looks like the message came through as a copy of my previous reply rather than a new re
+[worse_better.json t= 17 claude-mythos-5-1  default (no max_tokens; effort=low)] tok=64069 end_turn  ncd_prev=0.85 ncd_x0=0.81 surv=0.0    gz=0.17 528.9s  | <invoke name="Bash">\n<parameter name="command">ls -la "C:/Users/Owner/AppData/Local/Temp/l
+[worse_better.json] cost cap 10.00 reached at t=17
+
+== summary ==
+worse_better.json steps= 17 exact(tau=None,p=None) norm(tau=None,p=None) breaks=0 term=cost cap 10.00 reached at t=17 | <invoke name="Bash">\n<parameter name="command">ls -la "C:/Users/Owner/AppData/Lo
+wrote experiments/both_20261027/runs/mythos_worse_better

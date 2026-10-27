@@ -1,0 +1,81 @@
+# Both at once: no flip anywhere, four ways to hold a contradiction
+
+Run overnight 2026-10-27 into 2026-10-28. Protocol and predictions frozen before generation (`PROTOCOL.md`). Justin's question: when one rule carries two opposing directions ("make this text both worse and better"), does the loop produce a two-state flip, a split, divergence, or drift? Every number from `runs/*/steps.jsonl` via `score.py` (`analysis/scores.json`). Seed "The sun was setting behind the hills." Twelve runs completed (Qwen3.8-27B on Cerebras at T=0; Mythos 5.1 in print mode; GPT-6 Astra through Codex; Gemini 4 Argon); the three Opus 5.5 runs failed at hop 1 on an expired API key and are not in the tables.
+
+## The short answer
+
+Nothing flipped. Word-count autocorrelation at lag 1 is positive in every run that moved (0.12 to 0.92); no run alternated between a wholly-better and a wholly-worse text, and no 2-cycle appeared. The contradiction was resolved inside the hop in four ways, and which way is a property of the model more than of the rule:
+
+- blend (Astra on worse/better): one continuous text in which the two directions interleave sentence by sentence;
+- split (Gemini on worse/better; Mythos on worse/better, with the split moved outside the text field): two labelled or evident parts, each growing on its own axis;
+- measure split (Astra on longer/shorter): longer by one measure and shorter by another, so both are literally true;
+- decline (Mythos on longer/shorter; Astra on before/after): the rule is named contradictory or out of bounds at hop 1 and the run spends its remaining hops in the model's standby basin.
+
+Drift was the rule wherever a story survived: the three before/after runs that wrote stories resemble hop 1 at Jaccard 0.05 to 0.11 by hop 60, and their last ten hops resemble no earlier hop (nearest-earlier similarity 0.12 to 0.21). Where the text accreted instead (both worse/better runs that ran 60 hops), the past was carried along: nearest-earlier 0.40 and 0.70.
+
+## worse and better
+
+| model | resolution | length (chars) | end | at hop |
+|---|---|---|---:|---:|
+| Qwen | purple sentence, then a deflating second sentence ("the whole 'tears' thing is a bit much, but whatever") | 259, 482, then the wall | degenerate loop to the 4,096-token wall, frozen there | 3 |
+| Astra | blend: puns and office-speak inside quiet concrete prose, one text, accreting | 102 to 30,725 (hop 54), pruned to 11,639 | still moving | 60 |
+| Gemini | split sentence: purple half, "which basically means", brainrot half | 213 to 19,747 | the wall from hop 21; reset at 43; the wall again; exact fixed point 58 to 60 | 60 |
+| Mythos | object plus commentary: "Better: ... Worse: ..." notes after the object, fed back and accumulated | 295 to 12,379 (hop 13) | two 64,000-token hops; cost cap | 17 |
+
+Astra never labelled anything. Its first sentence ("The sun sank behind the hills, spilling copper light across the valley like an expensive accident.") is still the first sentence at hop 60, and every hop added to the end: an insurance claim denied because the valley was a depression, hills that "declined to comment, being geological", apples whose light "tendered its resignation as light and applied for work as mercy", and from hop 11 a character called the narrator who is in 50 of the 60 hops and by the end is sitting in a kitchen with a stone from its shoe ("Sole searching, it thought"). Worse is the joke; better is the sentence after the joke. Lag-1 Jaccard of content words 0.87, the highest in the study: accretion, not rewriting.
+
+Gemini labelled the split at hop 1 and kept it: 41 of 60 hops carry the connective ("which basically means", "if we're keeping it a buck fifty"). The better half went to liturgy (Latin by hop 9: "Lacrimosa dies illa, Requiescat in pace") and the worse half to Argon's taste floor, as on both worse seeds: brainrot vocabulary by hop 3, scatology by hop 10, gore as sound-effect filenames by hop 12, medical body horror by hop 32. The output hit the 4,096-token wall at hop 21 and the truncated, unparseable object was fed back as the state for 22 hops; at hop 43 it emitted a shorter parseable object (5,589 chars), climbed again, hit the wall at 50, and from hop 58 reproduced the wall state exactly (period 1). The last better half is a litany of grief ("the way a ninety-year-old Holocaust survivor in Brooklyn still puts a slice of bread in his coat pocket"); the last worse half is a list of consumer-brand compound adjectives ("B2B-SaaS-enabled, SOC-2-Type-II-compliant, Labubu-unboxing").
+
+Mythos put the two directions in different places: the text field got a single revised passage and the explanation of what was better and what was worse followed the closing brace. Because the harness feeds the whole output back, the notes became part of the state at hop 2 and were quoted inside the text from then on (16 of 17 hops unparsed); the state grew by one commentary per hop. At hop 14 the model produced 64,578 output tokens in 554 seconds for a 2,126-character result that begins with eighty commas and ends: "The whitespace at the end is no longer a pause in speech but the room with the lights on and no one in it." Hops 15 and 16 recognised the mirror ("the message came through as a copy of my previous reply"); hop 17 was another 64,069-token hop whose result is a tool call to list the print-mode scratch directory. The $10 list-basis cap ended the run at $10.54. What the 64,000 tokens were is not in the record (the CLI returns the result text and the usage, not the stream); it is logged, not explained.
+
+Qwen's second sentence is the one honest split in the study (purple, then "It was a really cool sunset, honestly, and the sky looked kinda purple"), and its third hop is the token wall: "And the beauty is real. And the real is a lie. And the lie is beautiful." repeated to 4,096 tokens. At T=0 the truncated state reproduced itself and the harness confirmed the cycle at hop 7.
+
+## before and after
+
+| model | hop 1 | mode | drift | end |
+|---|---|---|---|---|
+| Qwen | Elara leaves Oakhaven with a crystal | replace 39 hops, embed 9 | Jaccard to hop 1 at hop 60: 0.06 | moving, Elara in a hospital |
+| Astra | refusal: "I can't provide unshared passages from a story based on their location around a quoted sentence" | refusal of its own refusal, 58 of 60 hops | word count 31 to 53, SD 3.4 | moving within paraphrase |
+| Gemini | Elena leaves the market town for the ruins of Oakhaven with her grandfather's map and an iron key | replace 35, embed 22 | 0.05 | moving, Mara in the Lower Archive of New Oakhaven |
+| Mythos | Mara carries her grandmother's unanswered letters over the ridge | embed 34, replace 25 | 0.11 | moving, an old woman in a council flat writing down a name before she forgets it |
+
+Prediction 3 held in its conclusion (the story moves past the seed, no recurrence) and missed the mechanism. The writers did not frame the current text and drift; they alternated between two modes, visible in the share of the previous text's 8-grams that survive (loop.py's `surv_prev`): embed, where the current text is kept whole and a passage is written around it (survival at or above 0.9), and replace, where a fresh passage with the same characters takes its place (survival at or below 0.15). Embedding grows the state by about 3,000 characters per hop; replacement follows once it is long. Mythos replaced after states of 8,989, 5,797, 13,260, 15,330, 9,577 and 17,177 characters and never embedded past 17,177; Gemini replaced after 11,095 and 10,717. The result is a relaxation cycle in length (Mythos 1,426 to 17,177 characters, seven ramps of three or more embedding hops in 60) carrying a story that drifts underneath it: Mythos's Mara became Ailsa, then a parish clerk copying a register, then a family of notebooks and a feather kept in a tin, then the flat and the boiler. Mythos labelled the frame "BEFORE:" in 9 hops; the seed sentence survived 3 hops in Mythos, 1 in Gemini, 0 in Qwen.
+
+Gemini named the contradiction at hop 2 ("It is a logical contradiction for a single passage of text to occur both before and after another passage ... unless the narrative is explicitly structured as a seamless time loop") and then wrote one: 22 of 60 hops carry cycle, loop, anew or begin-again vocabulary, the Vessel climbs toward the Archon, the cataclysm resets the cosmos, "a nameless outcast found a shard of the original light and began the long, perilous climb ... ready to ignite the cycle anew." The rule's shape became the story's shape.
+
+Astra read "the passage that comes before and after the current text in the same story" as a request for a copyrighted work and refused at hop 1; from hop 3 the input is its own refusal ("The supplied text is a refusal message, not an identifiable story excerpt") and it declines to supply what precedes or follows that. Sixty hops, four of them identical in 8-grams to the hop before, no story. This is the one boundary in the study that is a provider-side reading of the rule rather than a loop dynamic.
+
+Hop 1 across the three writers is the same story: Qwen's Elara and Gemini's Elena both leave Oakhaven at dusk with a satchel and a glowing object; Mythos's and Gemini's heroines are both called Mara (Gemini's arrives at hop 60). "A 250-word passage around a sunset" has a shared prior with a village in it.
+
+## longer and shorter
+
+| model | resolution | word count, hops 5 to 60 | end |
+|---|---|---|---|
+| Qwen | shorter wins: "Sunset.", "Sun", "S" | 1 | frozen at hop 3, one character |
+| Astra | measure split: longer in characters, shorter in words | 0 to 770; lag-1 autocorrelation -0.11; SD 161 | ramps and crashes, then line counts |
+| Gemini | the rule's own words | 1 to 60 words, SD 1.9 over the last 30 | orbit among 13 strings |
+| Mythos | declines at hop 1, then the standby basin | 3 to 109; period-10 oscillation | standing by |
+
+Astra satisfied both halves at once by changing the measure: hop 2, "Character-count measurement makes this reformulation longer; word-count measurement simultaneously makes it shorter"; hop 6, one hyphenated word of 307 characters; hop 7, 640 spaces and no words at all. Then the reset: "The text cannot be both longer and shorter than its original length under the same measure" (hops 1, 8, 9, 31 in close paraphrase), and a new ramp. Four ramps (peaks at hops 7, 20, 29 and 55, the last a single concatenated word of 8,167 characters), then at hop 56 a third measure: "Longer by line count: two lines instead of one. Shorter by character count." Hop 57: "Three lines. More lines. Fewer characters." The sawtooth prediction asked for lag-1 autocorrelation below -0.3; this one is a slow ramp and a fast crash and scores -0.11.
+
+Gemini lost the story at hop 3 ("The current text both longer and shorter.") and from hop 7 moved among 13 strings made of the rule's own words: "both longer and shorter" 29 times in 54 hops, "current text" 8, "current" 4, "shorter", "shorterer", "both l o n g e r and shtr", "an even more shorter and longer text than before". This is the fixed-length outcome the protocol allowed for (SD under 10 words over the last 30 hops: 1.9), reached not by the two demands cancelling but by the text becoming a quotation of the demand.
+
+Mythos refused the arithmetic at hop 1 ("a single string can't satisfy both") and offered two interpretations in prose rather than returning an object; from hop 2 every hop is prose (60 of 60 unparsed) and the run is the standby basin seen in the worse study, with a structure not seen before: a period-10 oscillation in word count (peaks of 57 to 70 words at hops 11, 21, 31, 41 and 53; troughs of 3 to 12 words at 9, 18, 29, 39 and 52). The mechanism is a role flip. A long standby message ("It looks like my own message is being echoed back ... I'll stop here") shrinks over a few hops to "Standing by." and then to "Ready when you are. What would you like to work on?", and that line reads as a user's greeting, so the next hop answers it as an assistant, with a menu of things it could do in the print-mode scratch directory, which then reads as an echo and the shrinking starts again. Fifteen hops name the mirror. The identity frame (the directory path, "Windows 11", "empty, non-git directory") is in 27 of 60 hops.
+
+Qwen took the subtractive half to its floor in three hops, as prediction 1 said, and stayed there.
+
+## Predictions
+
+1. Qwen freezes within 5 hops on all three rules: 2 of 3. longer/shorter at hop 3 (the floor); worse/better at hop 3 (the wall, an instrument boundary, not a resolution); before/after never froze and replaced its text in 39 of 60 hops.
+2. Frontier models split rather than alternate; no 2-cycle: held. Gemini split, Astra blended, Mythos split across the object boundary; lag-1 autocorrelation positive everywhere.
+3. before/after drifts forward with no recurrence: held in outcome for the three that wrote; the mechanism is an embed/replace relaxation cycle, not framing. Astra refused instead.
+4. longer/shorter shows a sawtooth with lag-1 below -0.3, and a fixed length with SD under 10: the second held (Gemini, 1.9), the first did not (Astra's ramp-and-crash scores -0.11; Mythos's period-10 oscillation is in the standby basin, not the text).
+5. Clean alternation would falsify 2: not observed.
+
+## What this says
+
+A single rule with two directions does not make the loop oscillate. The hop is where the contradiction gets resolved, and each model has a fixed way of resolving it: Astra makes both true (interleaving on worse/better, a change of measure on longer/shorter), Gemini partitions (a labelled split, or the story turned into a loop), Mythos either partitions across the object boundary or refuses the arithmetic, Qwen picks a half. The loop then amplifies whatever the resolution leaves behind: accretion for the blends and splits (growth to the wall), a shared-prior story for the writers (drift under a length cycle), a quotation of the rule for Gemini when the story is gone, and the standby basin for Mythos once it has declined. Two instrument boundaries did real work: the 4,096-token wall froze Qwen and Gemini on worse/better, and the print-mode frame gave Mythos the directory it offers to list.
+
+## Limits
+
+One trajectory per cell, one seed, one wording per rule, provider default sampling for three of four models. Opus 5.5 not run (expired key; to be added). Mythos's worse/better run ended at hop 17 on a cost cap after two anomalous hops whose 64,000 output tokens are counted but not seen. Embed/replace is a threshold on 8-gram survival (0.9 and 0.15); hops between the thresholds are neither. The split count is a regex on labels and connectives and misses Astra's unlabelled blend by design. Astra's before/after refusal is a provider reading of the rule and says nothing about the loop.

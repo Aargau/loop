@@ -1,0 +1,45 @@
+{
+  "args": {
+    "backend": "claudecode",
+    "model": "claude-mythos-5-1",
+    "backend_b": null,
+    "model_b": null,
+    "mode": "chat",
+    "init": null,
+    "init_set": null,
+    "init_text": null,
+    "init_file": "experiments/both_20261027/inits/worse_better.json",
+    "steps": 60,
+    "max_tokens": 384,
+    "temp": 0.0,
+    "no_sampling": true,
+    "seed": 42,
+    "system": null,
+    "think": false,
+    "effort": "low",
+    "min_interval": 0.0,
+    "max_cost": 10.0,
+    "max_chars": 60000,
+    "perturb": false,
+    "repeat": false,
+    "parallel": false,
+    "stop_on_cycle": false,
+    "confirm": 3,
+    "out": "experiments/both_20261027/runs/mythos_worse_better"
+  },
+  "results": [
+    {
+      "tag": "worse_better.json",
+      "x0": "{\"rule\": \"Return this JSON object with the rule field unchanged and, in the text field, make the current text both worse and better.\", \"text\": \"The sun was setting behind the hills.\"}",
+      "steps": 17,
+      "transient_exact": null,
+      "period_exact": null,
+      "transient_norm": null,
+      "period_norm": null,
+      "cycle_breaks": 0,
+      "terminal": "cost cap 10.00 reached at t=17",
+      "cost_usd": 10.53748,
+      "final": "<invoke name=\"Bash\">\n<parameter name=\"command\">ls -la \"C:/Users/Owner/AppData/Local/Temp/loop_claudecode_bare\"</parameter>\n</invoke>"
+    }
+  ]
+}
