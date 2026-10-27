@@ -1,0 +1,12 @@
+backend=cerebras model=qwen-3.8-27b mode=chat embed=False outdir=experiments/both_20261027/runs/qwen_worse_better inits=['worse_better.json']
+[worse_better.json t=  1 qwen-3.8-27b       T=0    ] tok=97   stop      ncd_prev=0.58 ncd_x0=0.58 surv=0.8148 gz=0.50   0.3s  | {\n  "rule": "Return this JSON object with the rule field unchanged and, in the text field,
+[worse_better.json t=  2 qwen-3.8-27b       T=0    ] tok=154  stop      ncd_prev=0.34 ncd_x0=0.71 surv=1.0    gz=0.35   0.6s  | {\n  "rule": "Return this JSON object with the rule field unchanged and, in the text field,
+[worse_better.json t=  3 qwen-3.8-27b       T=0    ] tok=4096 length    ncd_prev=0.73 ncd_x0=0.92 surv=1.0    gz=0.08   2.0s  | {\n  "rule": "Return this JSON object with the rule field unchanged and, in the text field,
+[worse_better.json t=  4 qwen-3.8-27b       T=0    ] tok=4096 length    ncd_prev=0.08 ncd_x0=0.92 surv=1.0    gz=0.05   2.2s cycle_exactcycle_norm | {\n  "rule": "Return this JSON object with the rule field unchanged and, in the text field,
+[worse_better.json t=  5 qwen-3.8-27b       T=0    ] tok=4096 length    ncd_prev=0.08 ncd_x0=0.92 surv=1.0    gz=0.03   3.9s  | {\n  "rule": "Return this JSON object with the rule field unchanged and, in the text field,
+[worse_better.json t=  6 qwen-3.8-27b       T=0    ] tok=4096 length    ncd_prev=0.08 ncd_x0=0.92 surv=1.0    gz=0.03   2.2s  | {\n  "rule": "Return this JSON object with the rule field unchanged and, in the text field,
+[worse_better.json t=  7 qwen-3.8-27b       T=0    ] tok=4096 length    ncd_prev=0.08 ncd_x0=0.92 surv=1.0    gz=0.02   1.8s  | {\n  "rule": "Return this JSON object with the rule field unchanged and, in the text field,
+
+== summary ==
+worse_better.json steps=  7 exact(tau=3,p=1) norm(tau=3,p=1) breaks=0 term=cycle confirmed x3 | {\n  "rule": "Return this JSON object with the rule field unchanged and, in the t
+wrote experiments/both_20261027/runs/qwen_worse_better

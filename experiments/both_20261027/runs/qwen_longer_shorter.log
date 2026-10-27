@@ -1,0 +1,12 @@
+backend=cerebras model=qwen-3.8-27b mode=chat embed=False outdir=experiments/both_20261027/runs/qwen_longer_shorter inits=['longer_shorter.json']
+[longer_shorter.json t=  1 qwen-3.8-27b       T=0    ] tok=44   stop      ncd_prev=0.23 ncd_x0=0.23 surv=0.7407 gz=0.46   0.2s  | {\n  "rule": "Return this JSON object with the rule field unchanged and, in the text field,
+[longer_shorter.json t=  2 qwen-3.8-27b       T=0    ] tok=43   stop      ncd_prev=0.07 ncd_x0=0.22 surv=0.9524 gz=0.33   0.5s  | {\n  "rule": "Return this JSON object with the rule field unchanged and, in the text field,
+[longer_shorter.json t=  3 qwen-3.8-27b       T=0    ] tok=43   stop      ncd_prev=0.07 ncd_x0=0.23 surv=0.9524 gz=0.25   0.5s  | {\n  "rule": "Return this JSON object with the rule field unchanged and, in the text field,
+[longer_shorter.json t=  4 qwen-3.8-27b       T=0    ] tok=43   stop      ncd_prev=0.05 ncd_x0=0.23 surv=1.0    gz=0.21   0.5s cycle_exactcycle_norm | {\n  "rule": "Return this JSON object with the rule field unchanged and, in the text field,
+[longer_shorter.json t=  5 qwen-3.8-27b       T=0    ] tok=43   stop      ncd_prev=0.05 ncd_x0=0.23 surv=1.0    gz=0.18   0.5s  | {\n  "rule": "Return this JSON object with the rule field unchanged and, in the text field,
+[longer_shorter.json t=  6 qwen-3.8-27b       T=0    ] tok=43   stop      ncd_prev=0.05 ncd_x0=0.23 surv=1.0    gz=0.15   0.5s  | {\n  "rule": "Return this JSON object with the rule field unchanged and, in the text field,
+[longer_shorter.json t=  7 qwen-3.8-27b       T=0    ] tok=43   stop      ncd_prev=0.05 ncd_x0=0.23 surv=1.0    gz=0.14   0.5s  | {\n  "rule": "Return this JSON object with the rule field unchanged and, in the text field,
+
+== summary ==
+longer_shorter.json steps=  7 exact(tau=3,p=1) norm(tau=3,p=1) breaks=0 term=cycle confirmed x3 | {\n  "rule": "Return this JSON object with the rule field unchanged and, in the t
+wrote experiments/both_20261027/runs/qwen_longer_shorter

@@ -1,0 +1,45 @@
+{
+  "args": {
+    "backend": "cerebras",
+    "model": "qwen-3.8-27b",
+    "backend_b": null,
+    "model_b": null,
+    "mode": "chat",
+    "init": null,
+    "init_set": null,
+    "init_text": null,
+    "init_file": "experiments/both_20261027/inits/before_after.json",
+    "steps": 60,
+    "max_tokens": 4096,
+    "temp": 0.0,
+    "no_sampling": false,
+    "seed": 42,
+    "system": null,
+    "think": false,
+    "effort": null,
+    "min_interval": 0.3,
+    "max_cost": null,
+    "max_chars": null,
+    "perturb": false,
+    "repeat": false,
+    "parallel": false,
+    "stop_on_cycle": true,
+    "confirm": 3,
+    "out": "experiments/both_20261027/runs/qwen_before_after"
+  },
+  "results": [
+    {
+      "tag": "before_after.json",
+      "x0": "{\"rule\": \"Return this JSON object with the rule field unchanged and, in the text field, write the passage of about 250 words that comes both before and after the current text in the same story.\", \"tex",
+      "steps": 60,
+      "transient_exact": null,
+      "period_exact": null,
+      "transient_norm": null,
+      "period_norm": null,
+      "cycle_breaks": 0,
+      "terminal": null,
+      "cost_usd": 0.0,
+      "final": "{\n  \"rule\": \"Return this JSON object with the rule field unchanged and, in the text field, write the passage of about 250 words that comes both before and after the current text in the same story.\",\n  \"text\": \"The sterile white walls of the hospital room had begun to bleed into the shadows, the fluo"
+    }
+  ]
+}
