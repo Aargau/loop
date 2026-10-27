@@ -334,3 +334,20 @@ details.record .how { margin: .8rem 0 0; max-width: 44rem; }
 .finding .where a { color: var(--ink-2); text-decoration: none; }
 .finding .where a:hover { text-decoration: underline; }
 .finding p.authored { margin: 0; font-size: .9rem; color: var(--ink-2); }
+
+/* the ring rooms (October 2026): the edges a cell shows its neighbours, the space-time diagram, a record with no raw output */
+.hop .edges { font-family: var(--mono); font-size: .72rem; color: var(--ink-2); margin: .45rem 0 0; line-height: 1.45; }
+.hop .edges .k { color: var(--faint); margin-right: .2rem; }
+.hop .edges .edge { font-style: italic; margin-right: .6rem; }
+.room.many .lane:not(.open) .edges { display: none; }
+details.raw .noraw { font-family: var(--mono); font-size: .72rem; color: var(--faint); max-width: 46rem; margin: .4rem 0 0; }
+figure.spacetime { margin: 1rem 0 1.4rem; max-width: 46rem; }
+figure.spacetime img { display: block; width: 100%; height: auto; background: #fff; padding: .4rem; border: 1px solid var(--line); box-sizing: border-box; }
+figure.spacetime figcaption { font-family: var(--mono); font-size: .72rem; color: var(--faint); margin-top: .4rem; max-width: 46rem; }
+table.retention.scores th { white-space: normal; max-width: 28rem; }
+table.retention.scores td { text-align: left; white-space: normal; }
+table.retention.ring td.wide { text-align: left; white-space: normal; }
+.reading { margin-top: 2rem; max-width: 46rem; }
+.reading h3 { font-family: var(--mono); font-size: .8rem; color: var(--ink-2); margin: 0 0 .6rem; }
+.reading p.authored { font-family: var(--mono); font-size: .8rem; line-height: 1.6; color: var(--ink-2); margin: 0 0 .9rem; }
+a.roomlink { color: inherit; text-decoration: underline; text-decoration-color: var(--faint); text-underline-offset: .15em; }

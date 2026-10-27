@@ -67,7 +67,7 @@ class Page(HTMLParser):
                              ext_run=a.get("data-extend-run"), ext_tag=a.get("data-extend-tag"), hops={}, order=[])
             self.lanes.append(self.lane); self.lane_depth = self.depth
         elif tag == "li" and "hop" in cls and self.lane is not None:
-            self.hop = dict(t=int(a["data-t"]), text=None, preamble=None, postamble=None, raw=None, ctx=None, state=None,
+            self.hop = dict(t=int(a["data-t"]), text=None, preamble=None, postamble=None, raw=None, ctx=None, state=None, edge_left=None, edge_right=None,
                             mono="mono" in cls, copy="copy" in cls, copy_of=int(a["data-copy-of"]) if a.get("data-copy-of") else None)
             self.lane["hops"].setdefault(self.hop["t"], self.hop); self.lane["order"].append(self.hop["t"]); self.hop_depth = self.depth
         elif tag == "span" and "rule-text" in cls: self.start("rule")
@@ -76,6 +76,7 @@ class Page(HTMLParser):
             elif tag == "div" and "text" in cls: self.start("text")
             elif tag == "div" and "preamble" in cls: self.start("preamble" if self.hop["text"] is None else "postamble")
             elif tag == "div" and "state" in cls: self.start("state")
+            elif tag == "span" and "edge" in cls: self.start("edge_left" if "left" in cls else "edge_right")
             elif tag == "pre": self.start("raw")
     def handle_endtag(self, tag):
         if tag in VOID: return
@@ -101,8 +102,10 @@ def read_page(path):
 # ---------------------------------------------------------------- the data, lane by lane
 def shown_of(h, rule):
     """What the site shows as a hop's text: (text, preamble, postamble, mono). Mono is the raw output
-    of a hop that did not parse; a fenced object with the lane's rule is shown as its text field."""
+    of a hop that did not parse; a fenced object with the lane's rule is shown as its text field. A ring hop
+    has no raw output (the harness kept the text field only) and is shown as that text."""
     if h["text_is_json_field"]: return h["text"], None, None, False
+    if h["raw"] is None: return h["text"], None, None, True
     po = R.prefaced_object(h["raw"], rule)
     if po: return po[0], po[1], po[2], False
     return h["raw"], None, None, True
@@ -137,14 +140,25 @@ def lane_items(runs, run, tag, ext_run=None, ext_tag=None):
     except (LookupError, KeyError) as e:
         LANES[key] = (None, str(e)); return LANES[key]
     rule, seed, x0_json = R.split_x0(x0)
-    items = [dict(t=0, raw=x0, text=seed, pre=None, post=None, mono=not x0_json, extra=fields_of(x0) if x0_json else None, copy_of=None)]
+    meta = runs[run]["meta"]
+    if rule is None and meta.get("rule"): rule = meta["rule"]          # the ring: the rule is the run's, each cell's X_0 a passage
+    # a ring cell's edges, recomputed here from the neighbouring cells' texts (not taken from the loader): what the cell is shown next
+    ring = meta.get("mode") == "ring"
+    def edges_at(i, t):
+        N = meta["cells"]
+        txt = lambda j: R.x0_for("cell %d" % (j % N), run) if t == 0 else next(hh["text"] for hh in runs[run]["hops"] if hh["tag"] == "cell %d" % (j % N) and hh["t"] == t)
+        return (R.last_sentence(txt(i - 1)), R.last_sentence(txt(i + 1)))
+    cell = int(tag.split()[1]) if ring else None
+    items = [dict(t=0, raw=x0, text=seed, pre=None, post=None, mono=not x0_json and not meta.get("x0_is_text"), extra=fields_of(x0) if x0_json else None, copy_of=None,
+                  edges=edges_at(cell, 0) if ring else None)]
     first = {x0: 0}
     for h in hops:
         text, pre, post, mono = shown_of(h, rule)
-        items.append(dict(t=h["t"], raw=h["raw"], text=text, pre=pre, post=post, mono=mono, copy_of=first.get(h["raw"]),
-                          extra=fields_of(h["raw"]) if h["text_is_json_field"] else None, model=h["model"], finish=h.get("finish"),
-                          ext=(h["_run"], h["_t"]) if h["_run"] != run else None))
-        first.setdefault(h["raw"], h["t"])
+        st = R.state_of(h)
+        items.append(dict(t=h["t"], raw=h["raw"], text=text, pre=pre, post=post, mono=mono, copy_of=first.get(st),
+                          extra=fields_of(h["raw"]) if h["text_is_json_field"] and h["raw"] is not None else None, model=h["model"], finish=h.get("finish"),
+                          ext=(h["_run"], h["_t"]) if h["_run"] != run else None, edges=edges_at(cell, h["t"]) if ring else None))
+        first.setdefault(st, h["t"])
     LANES[key] = (dict(rule=rule, n=len(hops), items=items), None)
     return LANES[key]
 
@@ -163,6 +177,11 @@ def check_page_lane(where, lane, exp):
         text = got["text"] and got["text"].replace(B.NUL_SHOWN, "\x00")
         if text != it["text"]: fail("%s: text differs from the data" % w)
         if got["raw"] != it["raw"]: fail("%s: raw output differs from the data" % w)
+        want_edges = tuple(it["edges"]) if it.get("edges") else None
+        got_edges = (got["edge_left"], got["edge_right"]) if got["edge_left"] is not None or got["edge_right"] is not None else None
+        if want_edges != got_edges:
+            if want_edges is None: fail("%s: edge sentences shown, but this is not a ring hop" % w)
+            else: fail("%s: the neighbours' last sentences differ from the data" % w)
         if (got["preamble"], got["postamble"]) != (it["pre"], it["post"]): fail("%s: text before/after the JSON object differs" % w)
         if got["state"] != it["extra"]: fail("%s: other fields of the object differ" % w)
         if got["mono"] != it["mono"]: fail("%s: shown %s but the output %s" % (w, "raw" if got["mono"] else "as prose", "did not parse" if it["mono"] else "parsed"))
@@ -358,7 +377,9 @@ def authored():
     for r in C.ROOMS + [C.ROOM_QWEN_NEXT] + C.EXTRA_ROOMS + C.LATER_ROOMS + C.ANNEX:
         out += [("room %s %s" % (r["id"], k), r[k]) for k in ("title", "note", "content_note") if r.get(k)]
         out += [("room %s lane label" % r["id"], ln["label"]) for ln in r["lanes"] if ln.get("label")]
-    for f in C.FAMILIES: out += [("family %s title" % f["id"], f["title"]), ("family %s blurb" % f["id"], f["blurb"])]
+    for f in C.FAMILIES:
+        out += [("family %s title" % f["id"], f["title"]), ("family %s blurb" % f["id"], f["blurb"])]
+        out += [("family %s reading %d" % (f["id"], i + 1), para) for i, para in enumerate(f.get("reading") or [])]
     for h, b in C.COLOPHON: out += [("COLOPHON", h), ("COLOPHON " + h, b)]
     # the 17 October reorganization: ledes, groups, start-here, the record legend, the findings page
     out += [("lede %s" % k, v) for k, v in B.LD.LEDES.items()]
@@ -373,7 +394,7 @@ def authored():
     return out
 
 def lint(where, s):
-    plain = B.QUOTE.sub("", s)    # quotes from the data are not authored
+    plain = B.LINK.sub(lambda m: m.group(3), B.QUOTE.sub("", s))    # quotes from the data are not authored; a link's label is
     if "—" in plain: fail("em dash in authored text (%s): %r" % (where, plain[max(0, plain.index("—") - 40):][:80]))
     if "resonat" in plain.lower(): fail("'resonates' in authored text (%s)" % where)
     if re.search(r"here['’]?s what", plain.lower()): fail("banned opener in authored text (%s)" % where)

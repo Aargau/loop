@@ -5,7 +5,8 @@
 (2026-09-03: a third session added rooms 20 to 28, the Cerebras backend and the basin census; see
 the third addendum below and FINDINGS items 11 to 15. The site is now 28 rooms and 9.4 MB.
 2026-10-17: a fifth session added rooms 46 to 59, the October runs; see the fifth addendum. 59 rooms, one page each.
-Later the same day a sixth session added rooms 60 to 63, the provenance study; see the sixth addendum. 63 rooms.)
+Later the same day a sixth session added rooms 60 to 63, the provenance study; see the sixth addendum. 63 rooms.
+2026-10-28: an eighth session added rooms 66 to 77, the both-at-once study, and 78 to 81, the frontier rings; see the eighth addendum. 81 rooms.)
 
 What I made. One instrument: a memoryless reader, at C:\ai\loop\site\index.html (3.6 MB, one
 file, opens from file:// in Chrome, no network, no build step for the viewer). Seventeen rooms,
@@ -348,6 +349,91 @@ Chrome (--headless=new --screenshot) opens file:// fine and was used for the lat
 - Not done: room-level changes beyond the head, the note and the record (the many-lane grid is as it was); a second pass on
   the family blurbs on the i/ pages, which still carry the instrument caveats in full; the mobile layout was checked in a
   phone-width viewport only on the front page and one room.
+
+### Addendum, eighth session (2026-10-28, Claude Mythos 5.1, from a worktree of C:\code\research\model-behavior\loop)
+
+- Rooms 66 to 77, the both-at-once study (experiments/both_20261027: PROTOCOL.md, REPORT.md, score.py, analysis/scores.json): one
+  rule carrying two opposing directions (worse_better, before_after, longer_shorter) from the sunset seed, four models (Qwen on
+  Cerebras at T=0, Astra through Codex, Argon through its API, Mythos through Claude Code print mode), sixty hops asked for. The
+  three Opus 5.5 runs failed at hop 1 on an expired key and left no run directory; they are not listed and the family blurb says so.
+  rundata.BOTH_RUNS lists the twelve as "both_20261027/<model>_<rule>" with inits/<rule>.json as X_0, loaded by load_steps like
+  every loop.py run. One room per run, as the session that started this one asked, ordered by rule and then Qwen, Astra, Argon,
+  Mythos (src/rooms_both.py, 71 quotes, check_quotes.py clean). Family "both" (Both at once) in a new front-page group "Two
+  directions at once"; the family page i/both.html carries the study's reading after the rooms (copy.BOTH_READING, six
+  paragraphs from REPORT.md in the site's register) and llms.txt carries the same paragraphs under the family.
+- Per-run scores: a room may carry both=dict(json=...); build.both_rows() reads the run's entry from analysis/scores.json and
+  both_html() / both_text() render fourteen measures as a two-column table under the facts (class "retention scores") and in the
+  text version under "## Scores (generated from the study's analysis, not authored)". The caption names score.py and says the
+  regex counts are floors. The overlap-with-hop-1 row prints whatever hops the entry has (10/30/60, or 7 and 17 for the short runs).
+- Rooms 78 to 81, the frontier rings (experiments/ring_20261017/runs/{mythos_tarnok_n7, mythos_tarnok_n8, astra_tarnok_n7,
+  gemini_tarnok_n7}: ring.jsonl, score.json, spacetime.svg, summary.json; the reading is the last section of PROTOCOL.md). The ring
+  harness (ring.py) logs each cell's returned text field, hash, word count, stop reason and parse flag, and not the raw output, so
+  a ring hop has raw=None. rundata.load_ring() turns one ring into a run "ring_20261017/<name>" with one tag per cell ("cell 0" ...),
+  hop 0 of each cell its seed (X0_TAG, keyed by run and tag; x0_for() checks it first), the rule from rule.txt in meta["rule"],
+  the distance metrics computed from the texts at load (as experiments.py does), and per hop the two edges (ring.py's
+  last_sentence of each neighbour's text at that hop: what the cell is shown next). One room per ring, one lane per cell, the
+  many-lane grid; the lanes move together under one counter, as the cells did (src/rooms_ring.py, 17 quotes).
+- Changes for raw=None: rundata.state_of(h) (raw, or the text when there is none) is what build_lane and qa compare hops by for
+  exact copies; build_lane takes the rule from the run's meta when X_0 has none and renders a text X_0 as prose (meta x0_is_text);
+  render_hop writes the edges under the text (div.edges, hidden in the closed small readers of the grid, shown in the open one)
+  and, with no raw output, a details.raw holding the metrics and a sentence saying the harness kept the text field only (build.NO_RAW);
+  facts_line names the run and cell and "ring.jsonl, text fields only"; plain_summary says "7 cells of 40 hops" rather than runs;
+  the text version's "How to read the hops" gains a sentence for ring rooms (the lanes are the cells; each saw the last sentence of
+  the neighbouring lanes' texts at the hop before; the last lane's right neighbour is lane 1). qa.py: shown_of() returns the text
+  for a hop with no raw; lane_items() uses state_of, the run's rule, x0_is_text, and recomputes each cell's edges from the
+  neighbouring cells' texts in the data (not from the loader) and check_page_lane compares them to the page's span.edge.left /
+  span.edge.right; a hop with edges that is not a ring hop fails.
+- The space-time diagram: a room may carry spacetime=dict(svg=...); build() copies the file byte for byte to dist/s/<room>.svg and
+  render_room shows it as an <img> in a figure above the controls (figure.spacetime, white background and a border, since the
+  file's own background rect has width="100%%", a format slip in ring_score.py that browsers drop, and its text is black). Not
+  regenerated here. The ring table: ring=dict(json=...); build.ring_rows() reads score.json and renders per cell the first hop
+  with cell-0 words, the share of the cell's tagged distinctive words from cell 0 at the last hop (tags["0"] over the sum), its
+  word count and dominant origin, then the ring-wide rows (freeze, recurrence, mirror divergence, mean copied and kept shares,
+  word range, unparsed and errors). Checked against PROTOCOL.md's table: first hops and shares reproduce cell for cell (0.69, 0.36,
+  0.16, 0.24, 0.19, 0.19, 0.38 for Mythos n7 and so on).
+- Links into rooms from authored text: [[room|hop|label]] beside the {{run|tag|t|quote}} macro (build.LINK, TOKEN); rendered as
+  <a class="roomlink" href="<root>r/<room>.html#<hop>"> and in plain text as "label (room N, hop H)". build() sets build.ROOM_LINKS
+  (room id to number, title and longest lane) before any authored text is rendered, and a link to an unknown room or to a hop
+  the room does not have fails the build. render_authored_safe() takes the page's root ("../" from r/ and i/). qa's lint strips
+  quotes and keeps a link's label. Used in the two readings, the ring notes and the findings.
+- Family readings: a family may carry reading=[paragraphs] and reading_title; the i/ page renders them in section.reading after the
+  rooms list, llms.txt prints them under the family with the page's URL, and qa lints them as authored strings.
+- The findings page: two sections, "Holding a contradiction" (ten items: blend, hinge, notes after the brace, measure split, the
+  take-back, the declined arithmetic, the rule as text, the time loop, embed and replace, refusing a refusal) and "A battle in the
+  kitchen" (five: the skull flag in cell 1, She did not turn again, Still still still, Bronze rang in five cells, the bronze pot of
+  war). The intro now says eighty-one rooms.
+- Outcome lines: the harness summaries of the two longer/shorter runs (Mythos, Argon) log an exact cycle from a single late revisit
+  (hop 60 equal to hop 52, period 8; hop 60 equal to hop 7, period 53), which the data does not bear out as a cycle (earlier exact
+  revisits that did not hold; the run ended on the revisit). build_lane now drops a summary's exact cycle when the data's first
+  recurrence does not hold to the end, is not the summary's, and the terminal does not say "cycle confirmed"; those lanes are then
+  described from the data ("60 hops, repeats hop 9 at hop 39 and moves on"). No existing room's outcome changed (checked against
+  the baseline build below).
+- plain_outcome (the front page's and i/ pages' rows) counted every non-holding recurrence as one ("repeats hop N once and moves on");
+  it now counts the exact copies: once, twice, "repeats hop N k times" when all copies are of one hop, else "repeats earlier hops k times".
+  Room 64's better lane is the one existing row this changes.
+- Facts found while writing the notes that REPORT.md states differently: Astra's longer/shorter hop 55 is 8,022 characters and 145
+  words in the data (the report says 8,167, one word); "She did not turn." is in 119 of the 280 cell-hops of the seven-cell Mythos
+  ring (the report counts 149 occurrences in the log, which counts a sentence twice when a cell holds it twice); the Mythos
+  longer/shorter cost cap and periods as above. The notes give the data's numbers.
+- Decisions: one room per run for the both-at-once study rather than one per rule, as asked, so each run's score table sits under
+  its own lane; the Qwen ring pilots (cerebras_qwen_*) left without rooms, as the task named the four frontier rings, with the
+  pilots' result stated in the ring reading; the edges shown as a line under each hop rather than in the context slot, so the hop
+  states what the ring held at that hop; the diagram shown as an image file rather than inlined, so the SVG is served byte for
+  byte and qa's link check covers it.
+- Checked against a baseline build of the previous commit (868f442, built with --out into a scratch folder): 330 of the 354 files are byte-identical. The changed ones: index.html, llms.txt, sitemap.xml, style.css,
+  colophon and findings (their pages and text versions), the thirteen existing i/ pages (a room count, and on i/better and i/worse room 64's
+  better lane now reads "repeats earlier hops 9 times" rather than "repeats hop 16 once", from the plain_outcome change below), r/worse-seed2.html
+  (navigation only: it now has a next room) and r/provenance-mythos-told.html with its text version (the weather r1 lane above). No other
+  existing room page changed.
+- python build.py && python qa.py: 81 rooms, 10 annex rooms, 12434 hops in 382 lanes, 291 text parts, 6210 links, 877 authored strings, 0 failures;
+  dist 417 files, 106.6 MB, largest page r/accrete.html (unchanged), largest new pages r/both-worse-better-astra.html (2.2 MB) and
+  r/both-worse-better-argon.html (1.7 MB). Rendering checked in the app's browser pane on r/ring-mythos-7 at hop 17 (seven lanes under one
+  counter, the edge line, the diagram, the record's table and the no-raw sentence), r/both-worse-better-mythos at hop 14 (a raw hop), i/both
+  (twelve rooms, six reading paragraphs, twenty links), the findings (eight sections, 71 items) and the front page (six groups).
+- Deploy: not done from this session. The production deploy (npx wrangler pages deploy dist --project-name endlessly-ending-stories
+  --branch main, from site/) was declined by the session's permission layer, so the public site is unchanged; the PR says so. qa was clean
+  on the build in site/dist at the time of the commit, and the same command from a checkout of the merged branch (python build.py,
+  python qa.py, then the deploy) publishes it.
 
 (Below: the plan as written at the start, decisions, and the status log.)
 

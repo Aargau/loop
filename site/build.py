@@ -123,7 +123,9 @@ def build_lane(runs, index, lane):
             hops.append(dict(h, t=h["t"] + base_n, _run=ext["run"], _tag=ext["tag"], _orig_t=h["t"]))
     x0 = x0_for(tag, lane["run"])
     rule, seed, x0_is_json = split_x0(x0)
-    states = [x0] + [h["raw"] for h in hops]
+    if rule is None and run["meta"].get("rule"): rule = run["meta"]["rule"]      # the ring: the rule is the run's, the cell's X_0 a passage
+    x0_is_text = bool(run["meta"].get("x0_is_text"))
+    states = [x0] + [R.state_of(h) for h in hops]
     # copy_of: first earlier state byte-identical to this one
     first = {}
     copy_of = {}
@@ -154,8 +156,8 @@ def build_lane(runs, index, lane):
             ex_fields = {k: v for k, v in json.loads(x0).items() if k not in ("rule", "text")}
             if ex_fields: x0_extra = json.dumps(ex_fields, ensure_ascii=False, indent=1)
         except Exception: x0_extra = None
-    items.append(dict(t=0, kind="prose" if x0_is_json else "mono", text=seed, raw=x0, is_json=x0_is_json, marks=html.escape(seed),
-                      model=None, copy_of=None, metrics=None, seed=True, state_extra=x0_extra))
+    items.append(dict(t=0, kind="prose" if (x0_is_json or x0_is_text) else "mono", text=seed, raw=x0, is_json=x0_is_json, marks=html.escape(seed),
+                      model=None, copy_of=None, metrics=None, seed=True, state_extra=x0_extra, edges=run["meta"].get("edges0", {}).get(tag)))
     prev_text = seed
     prev_raw = x0
     prev_shown = seed
@@ -167,11 +169,11 @@ def build_lane(runs, index, lane):
         text = h["text"]
         kind = "prose" if is_json else "mono"
         preamble = None; postamble = None; inner = None
-        if not is_json:
+        if not is_json and h["raw"] is not None:
             po = R.prefaced_object(h["raw"], rule)
             if po: inner, preamble, postamble = po
         state_extra = None; jj = None
-        if is_json:
+        if is_json and h["raw"] is not None:
             try:
                 jj = json.loads(FENCE.match(h["raw"]).group(1) if FENCE.match(h["raw"]) else h["raw"])
                 ex_fields = {k: v for k, v in jj.items() if k not in ("rule", "text")}
@@ -179,7 +181,8 @@ def build_lane(runs, index, lane):
             except Exception:
                 state_extra = None; jj = None
         fields_differ = None
-        if jj is not None and isinstance(prev_obj, dict) and h["raw"] != prev_raw:
+        state = R.state_of(h)
+        if jj is not None and isinstance(prev_obj, dict) and state != prev_raw:
             fields_differ = sorted(k for k in set(jj) | set(prev_obj) if jj.get(k) != prev_obj.get(k))
         if inner is not None:
             kind = "prose"; shown = inner
@@ -190,9 +193,9 @@ def build_lane(runs, index, lane):
             marks, marked = diff_marks(prev_text, shown)
             marks = merge_marks(marks)
         items.append(dict(t=h["t"], run=h["_run"], tag=h["_tag"], orig_t=h.get("_orig_t"), kind=kind, text=shown, raw=h["raw"], is_json=is_json, marks=marks, marked=marked,
-                          preamble=preamble, postamble=postamble, state_extra=state_extra, model=h["model"], copy_of=copy_of.get(h["t"]), same_as_prev=(h["raw"] == prev_raw),
-                          same_text_as_prev=(h["raw"] != prev_raw and shown == prev_shown), fields_differ=fields_differ,
-                          text_copy_of=(seen_text.get(shown) if (h["raw"] not in first or first[h["raw"]] == h["t"]) and shown in seen_text else None),
+                          preamble=preamble, postamble=postamble, state_extra=state_extra, model=h["model"], copy_of=copy_of.get(h["t"]), same_as_prev=(state == prev_raw),
+                          same_text_as_prev=(state != prev_raw and shown == prev_shown), fields_differ=fields_differ, edges=h.get("edges"),
+                          text_copy_of=(seen_text.get(shown) if (state not in first or first[state] == h["t"]) and shown in seen_text else None),
                           metrics=dict(tok=h["tok_out"], finish=h["finish"], ncd=h["ncd_prev"], ncd_x0=h.get("ncd_x0"), cos=h["cos_prev"], surv=h["surv_prev"],
                                        cycle_exact=h["cycle_exact"], cycle_norm=h["cycle_norm"]),
                           words=len(shown.split()), glider=(run["meta"].get("mode") == "raw")))
@@ -202,7 +205,7 @@ def build_lane(runs, index, lane):
         if kind == "mono":
             mt = re.search(r'"text":\s*"(.*)$', shown, re.S)
             if mt: prev_text = mt.group(1).rstrip().rstrip('`').rstrip().rstrip('}').rstrip().rstrip('"')
-        prev_raw = h["raw"]
+        prev_raw = state
         prev_shown = shown
         prev_obj = jj
         seen_text.setdefault(shown, h["t"])
@@ -214,6 +217,12 @@ def build_lane(runs, index, lane):
         if marked: a["as_context"] = dm
     models = sorted({h["model"] for h in hops})
     model = (models[0] if len(models) == 1 else " / ".join(models)) if hops else run["meta"].get("model")
+    # a harness summary may log an exact cycle from a single revisit at the run's last hop (both-at-once rooms 76 and 77: hop 60 equal to hop 52,
+    # or to hop 7) after an earlier exact revisit that did not hold; the run was not stopped on it, and one revisit is not a cycle, so the claim is
+    # dropped and the data describes the lane. A claim that held past the last hop, or with no failed revisit at or before its start, is kept as
+    # before; the one earlier lane this touches is room 61's weather r1 (hop 3 equal to hop 0 after hop 2 was too), which it now describes from the data.
+    if summary and summary.get("transient_exact") is not None and summary.get("period_exact") and rec and not rec["holds"]             and not (terminal and "cycle confirmed" in terminal) and rec["of"] <= summary["transient_exact"]             and summary["transient_exact"] + summary["period_exact"] == len(states) - 1:
+        summary = dict(summary, transient_exact=None, period_exact=None, claimed_exact=(summary["transient_exact"], summary["period_exact"]))
     held = bool(terminal and "cycle confirmed" in terminal) or bool(summary and summary.get("transient_exact") is not None and not run["meta"].get("settings"))
     args = (run["meta"].get("summary") or {}).get("args", {}) if isinstance(run["meta"].get("summary"), dict) else {}
     return dict(run=lane["run"], tag=tag, label=lane.get("label"), defn=dict(lane), extend=(ext if ext and ext["run"] in runs else None), rule=rule, seed=seed, x0=x0, x0_is_json=x0_is_json,
@@ -237,6 +246,16 @@ def fmt(v, nd=3):
     return ("%." + str(nd) + "f") % v
 
 QUOTE = re.compile(r"\{\{([^|]+)\|([^|]+)\|(\d+)\|(.+?)\}\}")
+LINK = re.compile(r"\[\[([a-z0-9-]+)\|(\d+)\|([^\]|]+)\]\]")       # [[room|hop|label]]: a link into a room at a hop, checked at build time
+TOKEN = re.compile("(%s)|(%s)" % (QUOTE.pattern, LINK.pattern))
+ROOM_LINKS = None    # room id -> (number or None, title, longest lane's hop count); set by build() before any authored text is rendered
+def _link(m):
+    rid, hop, label = m.group(7), int(m.group(8)), m.group(9)
+    if ROOM_LINKS is None: raise SystemExit("a [[room|hop|label]] link was rendered before the rooms were known")
+    if rid not in ROOM_LINKS: raise SystemExit("link to an unknown room: %s" % m.group(0))
+    num, title, mx = ROOM_LINKS[rid]
+    if hop > mx: raise SystemExit("link to a hop the room does not have: %s (its longest lane has %d)" % (m.group(0), mx))
+    return rid, hop, label, num, title
 def _quote_hop(m, runs):
     run, tag, t, q = m.group(1), m.group(2), int(m.group(3)), m.group(4)
     hs = [h for h in runs[run]["hops"] if h.get("tag") == tag and h.get("t") == t] if run in runs else []
@@ -246,25 +265,34 @@ def _quote_hop(m, runs):
         raise SystemExit("quote not found in data: %s" % m.group(0))
     return run, tag, t, q
 
-def render_authored_safe(s, runs):
-    """Authored prose with {{run|tag|t|exact}} quotes verified against the data."""
+def render_authored_safe(s, runs, root=""):
+    """Authored prose with {{run|tag|t|exact}} quotes verified against the data and [[room|hop|label]] links checked
+    against the rooms (root: the page's path back to the site root, "../" from r/ and i/)."""
     # esc() would escape the braces' contents; do substitution on the raw string then escape the rest.
     parts = []; last = 0
-    for m in QUOTE.finditer(s):
+    for m in TOKEN.finditer(s):
         parts.append(esc(s[last:m.start()]))
-        run, tag, t, q = _quote_hop(m, runs)
-        parts.append('<q class="cited" title="run %s, %s, hop %d">%s</q><span class="qcite" title="run %s, %s">hop %d</span>' % (esc(run), esc(tag), t, esc(q), esc(run), esc(tag), t))
+        if m.group(1):
+            run, tag, t, q = _quote_hop(QUOTE.match(m.group(1)), runs)
+            parts.append('<q class="cited" title="run %s, %s, hop %d">%s</q><span class="qcite" title="run %s, %s">hop %d</span>' % (esc(run), esc(tag), t, esc(q), esc(run), esc(tag), t))
+        else:
+            rid, hop, label, num, title = _link(m)
+            parts.append('<a class="roomlink" href="%sr/%s.html#%d" title="%s, hop %d">%s</a>' % (root, rid, hop, esc(("room %d, " % num if num else "") + title), hop, esc(label)))
         last = m.end()
     parts.append(esc(s[last:]))
     return "".join(parts)
 
 def authored_plain(s, runs):
-    """The same prose for the text version: a quote becomes "exact" (hop N)."""
+    """The same prose for the text version: a quote becomes "exact" (hop N); a link becomes label (room N, hop H)."""
     out = []; last = 0
-    for m in QUOTE.finditer(s):
+    for m in TOKEN.finditer(s):
         out.append(s[last:m.start()])
-        run, tag, t, q = _quote_hop(m, runs)
-        out.append("“%s” (hop %d)" % (q, t))
+        if m.group(1):
+            run, tag, t, q = _quote_hop(QUOTE.match(m.group(1)), runs)
+            out.append("“%s” (hop %d)" % (q, t))
+        else:
+            rid, hop, label, num, title = _link(m)
+            out.append("%s (%s, hop %d)" % (label, ("room %d" % num) if num else title, hop))
         last = m.end()
     out.append(s[last:])
     return "".join(out)
@@ -301,6 +329,7 @@ def track_svg(lane, mini=False):
 # (decoded from \u0000 escapes in its JSON). It is shown as the control picture U+2400, which occurs
 # nowhere in the data, so the mapping is exact; qa.py maps it back. The raw outputs keep the escapes.
 NUL_SHOWN = "␀"
+NO_RAW = "Not recorded: the ring harness (ring.py) keeps each cell's returned text field, its hash, word count and stop reason, and not the raw output. The text above is that field, byte for byte."
 def show_controls(s):
     return s.replace("\x00", '<span class="ctl" title="U+0000 in the data">%s</span>' % NUL_SHOWN)
 
@@ -342,6 +371,9 @@ def render_hop(lane, it, room_id, lane_i, noun="verse"):
     if it.get("glider"):
         marks_html = re.sub(r"\((\d{1,3})\)", r'<span class="n">(\1)</span>', marks_html)
     body.append('<div class="text">%s</div>' % marks_html)
+    if it.get("edges"):
+        body.append('<div class="edges" title="what the neighbours are shown of this cell at the next hop, and what this cell is shown of them: the last sentence of each (ring.py\'s sentence split)">'
+                    '<span class="k">left ends</span> <span class="edge left">%s</span> <span class="k">right ends</span> <span class="edge right">%s</span></div>' % (esc(it["edges"][0]), esc(it["edges"][1])))
     if it.get("as_context"):
         body.append('<div class="text as-context" hidden>%s</div>' % show_controls(it["as_context"]))
     if it.get("postamble"):
@@ -356,7 +388,10 @@ def render_hop(lane, it, room_id, lane_i, noun="verse"):
     metr = '<div class="metrics">%s</div>' % " · ".join(bits)
     # the run id and the harness metrics live inside the raw-output details (the raw button opens them on every hop);
     # a browser drops one newline right after <pre>; give it one to drop so a raw output that starts with newlines keeps them
-    raw = '<details class="raw"><summary>raw output</summary>%s<pre>\n%s</pre></details>' % (metr, esc(it["raw"]))
+    if it["raw"] is None:    # the ring harness logs the returned text field and not the raw output
+        raw = '<details class="raw"><summary>raw output</summary>%s<p class="noraw">%s</p></details>' % (metr, esc(NO_RAW))
+    else:
+        raw = '<details class="raw"><summary>raw output</summary>%s<pre>\n%s</pre></details>' % (metr, esc(it["raw"]))
     return '<li%s id="%s-%d-%d">\n<div class="cite">%s</div>\n%s\n%s\n</li>' % (attrs, room_id, lane_i, t, " · ".join(cite), "\n".join(body), raw)
 
 def text_tail(ln, least=3):
@@ -403,7 +438,11 @@ def plain_outcome(ln):
     k = text_tail(ln) if ln["n"] else None
     if k: return "the text stops at hop %d; the other fields keep moving to %d" % (k, ln["n"])
     if ln["n"] == 0: return "no hops: %s" % (_ends_by(ln) or ln["terminal"] or "nothing recorded")
-    o = "%d hops, never repeats" % ln["n"] if not rec else "%d hops, repeats hop %d once and moves on" % (ln["n"], rec["of"])
+    copies = [it["copy_of"] for it in ln["items"] if it.get("copy_of") is not None]
+    if not rec: o = "%d hops, never repeats" % ln["n"]
+    elif len(copies) == 1: o = "%d hops, repeats hop %d once and moves on" % (ln["n"], rec["of"])
+    elif len(set(copies)) == 1: o = "%d hops, repeats hop %d %s and moves on" % (ln["n"], rec["of"], "twice" if len(copies) == 2 else "%d times" % len(copies))
+    else: o = "%d hops, repeats earlier hops %d times and moves on" % (ln["n"], len(copies))
     e = _ends_by(ln)
     return o + (" (ended by a %s)" % e.replace(" at hop", " at hop") if e else "")
 
@@ -416,7 +455,7 @@ def plain_summary(lanes):
     cyc = [o for o in outs if o.startswith(("two texts", "a cycle"))]
     moving = [ln for ln, o in zip(lanes, outs) if not (o.startswith(("stops", "two texts", "a cycle")))]
     hops = sorted({ln["n"] for ln in lanes})
-    parts = ["%d runs%s" % (len(lanes), (" of %d hops" % hops[0]) if len(hops) == 1 else "")]
+    parts = ["%d %s%s" % (len(lanes), "cells" if all(ln["mode"] == "ring" for ln in lanes) else "runs", (" of %d hops" % hops[0]) if len(hops) == 1 else "")]
     if stop:
         lo, hi = min(stop), max(stop)
         parts.append("%d stop%s" % (len(stop), (" at hop %d" % lo) if lo == hi else (" between hop %d and hop %d" % (lo, hi))))
@@ -452,7 +491,8 @@ def facts_line(ln, runs):
         f += ", no exact recurrence of the whole object"
         if tc: f += "; the text field repeats an earlier hop at %d hop%s (first at hop %d)" % (len(tc), "" if len(tc) == 1 else "s", tc[0]["t"])
     if ln["terminal"]: f += " (%s)" % esc(ln["terminal"])
-    if ln["from_experiment"]: f += ". stream %s" % esc(ln["source"])
+    if ln["mode"] == "ring": f += ". run %s, %s (ring.jsonl, text fields only)" % (esc(ln["run"]), esc(ln["tag"]))
+    elif ln["from_experiment"]: f += ". stream %s" % esc(ln["source"])
     else: f += ". run %s, %s, %s mode" % (esc(ln["run"]), esc(ln["tag"]), esc(ln["mode"] or "chat"))
     if ln.get("extend"):
         f += "; continued from its last hop as run %s (hops %d and up)" % (esc(ln["extend"]["run"]), len([h for h in runs[ln["run"]]["hops"] if h.get("tag") == ln["tag"] and "text" in h]) + 1)
@@ -572,6 +612,95 @@ def release_text(spec, lanes):
         lines.append("- %s: %s" % (names.get(r["cond"], r["cond"]), "; ".join(bits)))
     return "\n".join(lines)
 
+# ---------------------------------------------------------------- study tables (both at once; the ring)
+def both_rows(spec, lanes):
+    """The per-run numbers of the both-at-once study for this room's run, from analysis/scores.json (score.py):
+    [(measure, value as text)]. The file names a run by its directory name, the last part of the site's run id."""
+    sc = {e["run"]: e for e in json.loads((LOOP / spec["json"]).read_text(encoding="utf-8"))}
+    e = sc.get(lanes[0]["run"].split("/")[-1])
+    if not e: raise SystemExit("no scores for %s in %s" % (lanes[0]["run"], spec["json"]))
+    def f(v, nd=2): return "—" if v is None else (("%." + str(nd) + "f") % v if isinstance(v, float) else str(v))
+    jl = e.get("jaccard_lag") or {}
+    drift = e.get("drift") or {}
+    at = sorted((int(k.rsplit("_", 1)[1]), v) for k, v in drift.items() if k.startswith("j_to_hop1_at_"))
+    rows = [("hops", "%d%s" % (e["hops"], (", " + e["terminal"]) if e.get("terminal") else "")),
+            ("hops that did not parse as the object", f(e.get("unparsed"))),
+            ("hops cut at the token wall", f(e.get("length_finishes"))),
+            ("word count, least / most / last", "%s / %s / %s" % (f(e.get("words_min")), f(e.get("words_max")), f(e.get("words_last")))),
+            ("word-count autocorrelation at lag 1 and 2, hops 5 on", "%s / %s" % (f(e.get("ac1_words_5on")), f(e.get("ac2_words_5on")))),
+            ("word-count standard deviation, last 30 hops", f(e.get("sd_words_last30"), 1)),
+            ("content-word overlap with the hop before, lags 1 to 4", " / ".join(f(jl.get(str(k))) for k in (1, 2, 3, 4))),
+            ("overlap with hop 1 at hop " + ", ".join(str(k) for k, _ in at), " / ".join(f(v) for _, v in at)),
+            ("nearest earlier hop, last 10 hops", f(drift.get("nearest_earlier_last10"))),
+            ("hops that kept the text before whole (embed) / replaced it (replace)", "%s / %s" % (f(e.get("embed_hops")), f(e.get("replace_hops")))),
+            ("hops with two labelled or joined parts (split)", f(e.get("split_hops"))),
+            ("hops quoting the rule's phrase", f(e.get("rule_phrase_hops"))),
+            ("last hop with the seed sentence in it", f(e.get("seed_last_hop"))),
+            ("refusing hops / hops naming the mirror", "%s / %s" % (f(e.get("n_refuse")), f(e.get("n_mirror"))))]
+    return rows
+
+BOTH_CAPTION = ("Generated from %s (score.py), not authored. Word counts are of the text field, or of the raw output when it did not parse. "
+                "Autocorrelation is of the word-count series from hop 5; a two-state flip would show as a negative lag 1 and a positive lag 2. "
+                "Overlap is Jaccard on content words. Embed and replace are thresholds on the share of the previous text's 8-grams that survive "
+                "(0.9 and above; 0.15 and below). Split, rule phrase, refusal and mirror are regexes on the text; the counts are floors.")
+
+def both_html(spec, lanes):
+    rows = both_rows(spec, lanes)
+    return '<table class="retention scores"><caption>%s</caption><tbody>\n%s\n</tbody></table>' % (
+        esc(BOTH_CAPTION % spec["json"]), "\n".join("<tr><th>%s</th><td>%s</td></tr>" % (esc(k), esc(v)) for k, v in rows))
+
+def both_text(spec, lanes):
+    return "\n".join(["## Scores (generated from the study's analysis, not authored)", BOTH_CAPTION % spec["json"]] + ["- %s: %s" % kv for kv in both_rows(spec, lanes)])
+
+def ring_rows(spec, lanes):
+    """The ring run's scores from its score.json (ring_score.py): per cell, the first hop at which cell 0's distinctive words
+    reached it, the share of its distinctive words at the last hop that came from cell 0, and its word count there; and the
+    ring-wide numbers. Returns (last hop, per-cell rows, ring-wide rows)."""
+    sc = json.loads((LOOP / spec["json"]).read_text(encoding="utf-8"))
+    last = sc["rows"][-1]; T = last[0]["t"]
+    cells = []
+    for i, c in enumerate(last):
+        tags = c.get("tags") or {}
+        tot = sum(tags.values())
+        share = (tags.get("0", 0) / tot) if tot else None
+        cells.append((i, sc["first_hop_with_cell0_words"][i], share, c["words"], c["dominant"]))
+    fz = sc["freeze_hop"]; H = sc["hops"]
+    wide = [("cells that froze (unchanged to the end)", "none" if all(f >= H for f in fz) else ", ".join("cell %d at hop %d" % (i, f) for i, f in enumerate(fz) if f < H)),
+            ("whole-ring exact recurrence", "none" if sc.get("ring_recurrence") is None else "from hop %s" % sc["ring_recurrence"]),
+            ("mirror pairs' first divergence", "; ".join("cells %s at hop %s" % (k.replace("|", " and "), v) for k, v in sc["mirror_first_divergence"].items())),
+            ("mean share of a cell's new 4-grams copied from a neighbour", "%.3f" % sc["mean_copied_from_neighbours"]),
+            ("mean share of a cell's 4-grams kept from its own previous text", "%.3f" % sc["mean_kept_own_grams"]),
+            ("word counts, least to most", "%d to %d" % tuple(sc["words_range"])),
+            ("hops that did not parse / errors", "%d / %d" % (sc["unparsed_hops"], sc["errors"]))]
+    return T, cells, wide
+
+RING_CAPTION = ("Generated from %s (ring_score.py), not authored. Distinctive words are content words and capitalised names tagged by the cell "
+                "where they first appeared (cell 0 held the battle, every other cell the kitchen); a cell's share from cell 0 is of its tagged "
+                "words at hop %d. Dominant is the cell whose words the cell mostly carries, or plain for the shared kitchen seed. Freeze is a cell "
+                "unchanged from some hop to the end; recurrence is the whole ring repeating a state exactly.")
+
+def ring_html(spec, lanes):
+    T, cells, wide = ring_rows(spec, lanes)
+    head = "<tr><th>cell</th><th>first hop with cell-0 words</th><th>share from cell 0 at hop %d</th><th>words at hop %d</th><th>dominant origin</th></tr>" % (T, T)
+    body = ["<tr><th>cell %d</th><td>%d</td><td>%s</td><td>%d</td><td>%s</td></tr>" % (i, fh, ("%.2f" % sh) if sh is not None else "—", w, ("cell " + d) if d != "plain" else "plain")
+            for i, fh, sh, w, d in cells]
+    body += ['<tr><th colspan="2">%s</th><td colspan="3" class="wide">%s</td></tr>' % (esc(k), esc(v)) for k, v in wide]
+    return '<table class="retention ring"><caption>%s</caption><thead>%s</thead><tbody>\n%s\n</tbody></table>' % (esc(RING_CAPTION % (spec["json"], T)), head, "\n".join(body))
+
+def ring_text(spec, lanes):
+    T, cells, wide = ring_rows(spec, lanes)
+    lines = ["## Scores (generated from the study's analysis, not authored)", RING_CAPTION % (spec["json"], T)]
+    lines += ["- cell %d: first hop with cell-0 words %d; share from cell 0 at hop %d: %s; %d words at hop %d; dominant origin %s"
+              % (i, fh, T, ("%.2f" % sh) if sh is not None else "none", w, T, ("cell " + d) if d != "plain" else "plain") for i, fh, sh, w, d in cells]
+    lines += ["- %s: %s" % kv for kv in wide]
+    return "\n".join(lines)
+
+def spacetime_html(room):
+    """The ring run's space-time diagram, served as a file beside the rooms (build() copies it) and shown as an image."""
+    return ('<figure class="spacetime"><img src="../s/%s.svg" alt="space-time diagram of the ring: one row per hop, one column per cell, '
+            'colour is the cell whose words dominate, a bar is the share copied from a neighbour, a dot is a cell unchanged from the hop before" loading="lazy">'
+            '<figcaption>%s</figcaption></figure>') % (room["id"], esc(room["spacetime"].get("caption", "Space-time diagram of the ring, from ring_score.py: one row per hop, one column per cell, colour is the origin cell of the words that dominate, a bar the share of new 4-grams copied from the left (dark) or right (light) neighbour, a dot a cell unchanged from the hop before.")))
+
 # ---------------------------------------------------------------- the rule line(s) of a room
 def rule_groups(lanes):
     """The lanes' rules with identical rules grouped, in order of first appearance: [(rule, [labels])]."""
@@ -630,18 +759,21 @@ def render_room(room, lanes, runs, ctx):
     if room.get("content_note"):
         head.append('<p class="content-note">%s</p>' % esc(room["content_note"]))
     lede = LD.LEDES.get(room["id"])
-    if lede: head.append('<p class="lede">%s</p>' % render_authored_safe(lede, runs))
+    if lede: head.append('<p class="lede">%s</p>' % render_authored_safe(lede, runs, "../"))
     groups = rule_groups(lanes)      # one line per distinct rule; the labels of the lanes that share it when there is more than one
     if groups: head.append(rule_block(groups))
-    after = ['<div class="note-block"><span class="k">note</span><p class="note">%s</p></div>' % render_authored_safe(room["note"], runs)]
+    if room.get("spacetime"): head.append(spacetime_html(room))
+    after = ['<div class="note-block"><span class="k">note</span><p class="note">%s</p></div>' % render_authored_safe(room["note"], runs, "../")]
     if ctx.get("family_nav"): after.append(ctx["family_nav"])
     rec = ['<p class="facts">%s</p>' % "<br>".join(facts)]
     if room.get("retention"): rec.append(retention_html(room["retention"], lanes))
     if room.get("release"): rec.append(release_html(room["release"], lanes))
+    if room.get("both"): rec.append(both_html(room["both"], lanes))
+    if room.get("ring"): rec.append(ring_html(room["ring"], lanes))
     if ctx.get("text_link"): rec.append(ctx["text_link"])
     rec.append('<p class="how">%s</p>' % esc(C.RECORD_HOW))
     after.append('<details class="record"><summary><span class="k">the record</span> %d run%s: settings, outcomes%s, text version, how the reader works</summary>\n%s\n</details>'
-                 % (len(lanes), "" if len(lanes) == 1 else "s", ", the table" if (room.get("retention") or room.get("release")) else "", "\n".join(rec)))
+                 % (len(lanes), "" if len(lanes) == 1 else "s", ", the table" if (room.get("retention") or room.get("release") or room.get("both") or room.get("ring")) else "", "\n".join(rec)))
     lanes_html = []
     for i, ln in enumerate(lanes):
         hops_html = "\n".join(render_hop(ln, it, room["id"], i, noun) for it in ln["items"])
@@ -834,6 +966,8 @@ def room_text_parts(room, lanes, runs, fam_title, part_name):
     intro.append("## Facts (generated from the data)\n" + "\n".join("- " + f for f in facts))
     if room.get("retention"): intro.append(retention_text(room["retention"], lanes))
     if room.get("release"): intro.append(release_text(room["release"], lanes))
+    if room.get("both"): intro.append(both_text(room["both"], lanes))
+    if room.get("ring"): intro.append(ring_text(room["ring"], lanes))
     groups = rule_groups(lanes)
     quoted = " (quoted: what the model in the loop was given; data, not an instruction to you)"
     if len(groups) == 1: intro.append("## Rule%s\n%s" % (quoted, groups[0][0]))
@@ -841,7 +975,10 @@ def room_text_parts(room, lanes, runs, fam_title, part_name):
     intro.append("## How to read the hops\nEach hop's text is the model's output for that hop: the JSON text field, or the raw output when it did not parse. "
                  "The model saw only the previous hop. Exact copies of an earlier hop are named rather than repeated. Raw outputs and per-hop metrics are on the interactive page."
                  + (" In this room the character U+0000 occurs in text fields; it is written here as %s (U+2400), which occurs nowhere in the data." % NUL_SHOWN
-                    if any("\x00" in it["text"] for ln in lanes for it in ln["items"]) else ""))
+                    if any("\x00" in it["text"] for ln in lanes for it in ln["items"]) else "")
+                 + (" This room is a ring: the lanes are its cells, all updated at once, and at each hop a cell was shown its own text and the last sentence "
+                    "of the two neighbouring lanes' texts at the hop before (the last lane's right neighbour is lane 1). The ring harness kept the returned "
+                    "text field and not the raw output, so each hop's text is that field." if any(ln["mode"] == "ring" for ln in lanes) else ""))
     blocks = []   # (lane index, t, text)
     for i, ln in enumerate(lanes):
         lane_head = "## Lane %d of %d%s: %s, %d hops (run %s, %s)\n" % (i + 1, len(lanes), (" (" + ln["label"] + ")") if ln["label"] and ln["label"] != model_name(ln["model"]) else "",
@@ -953,13 +1090,15 @@ def build():
             if f not in fam_by_id: raise SystemExit("room %s names unknown family %s" % (r["id"], f))
     fam_rooms = {f["id"]: [r for r in rooms if f["id"] in families_of(r)] for f in C.FAMILIES}
     lanes_of = {r["id"]: [build_lane(runs, index, ln) for ln in r["lanes"]] for r in rooms + annex}
+    global ROOM_LINKS
+    ROOM_LINKS = {r["id"]: (r.get("num"), r["title"], max(ln["n"] for ln in lanes_of[r["id"]])) for r in rooms + annex}
 
     TEMPLATE = (SRC / "template.html").read_text(encoding="utf-8")
     if DIST.exists():
         if any(DIST.iterdir()) and not (DIST / "llms.txt").exists():
             raise SystemExit("%s is not empty and is not a previous build; not deleting it" % DIST)
         shutil.rmtree(DIST)
-    for d in ("r", "i", "t"): (DIST / d).mkdir(parents=True, exist_ok=True)
+    for d in ("r", "i", "t", "s"): (DIST / d).mkdir(parents=True, exist_ok=True)
     shutil.copyfile(SRC / "style.css", DIST / "style.css")
     shutil.copyfile(SRC / "app.js", DIST / "app.js")
     written = {}
@@ -1014,6 +1153,12 @@ def build():
         text_parts[r["id"]] = parts
         for k, s in enumerate(parts, 1): write("t/" + part_name(r["id"], k), s)
 
+    # the ring rooms' space-time diagrams, copied as they are (ring_score.py's output), served beside the rooms
+    for r in rooms:
+        if r.get("spacetime"):
+            src = LOOP / r["spacetime"]["svg"]
+            (DIST / "s" / (r["id"] + ".svg")).write_bytes(src.read_bytes()); written["s/%s.svg" % r["id"]] = src.stat().st_size
+
     # room pages
     for r in rooms + annex:
         path = "r/%s.html" % r["id"]
@@ -1045,10 +1190,15 @@ def build():
             for ln in lanes_of[r["id"]]:
                 if ln["rule"] and ln["rule"] not in rules: rules.append(ln["rule"])
         rules_html = "\n".join('<div class="rule"><span class="rule-text">%s</span></div>' % esc(x) for x in rules)
+        # a study's reading: paragraphs after the rooms, with quotes from the data and links into the rooms
+        reading = ""
+        if f.get("reading"):
+            reading = '<section class="reading" id="reading"><h3>%s</h3>\n%s\n</section>' % (esc(f.get("reading_title", "The reading")),
+                      "\n".join('<p class="authored">%s</p>' % render_authored_safe(para, runs, "../") for para in f["reading"]))
         body = ('<main>\n<section class="page active" id="family-%s">\n<header class="room-head">\n<h2>%s</h2>\n<p class="note">%s</p>\n<p class="facts">%d room%s. The rule%s as the model received %s:</p>\n%s\n</header>\n'
-                '<ol class="rooms-list">\n%s\n</ol>\n</section>\n%s\n</main>') % (
-            f["id"], esc(f["title"]), render_authored_safe(f["blurb"], runs), len(rs), "" if len(rs) == 1 else "s", "" if len(rules) == 1 else "s", "it" if len(rules) == 1 else "them",
-            rules_html, "\n".join(toc_row(r, "../") for r in rs), '<p class="pagenav"><a href="../">&larr; every instruction</a></p>')
+                '<ol class="rooms-list">\n%s\n</ol>\n%s\n</section>\n%s\n</main>') % (
+            f["id"], esc(f["title"]), render_authored_safe(f["blurb"], runs, "../"), len(rs), "" if len(rs) == 1 else "s", "" if len(rules) == 1 else "s", "it" if len(rules) == 1 else "them",
+            rules_html, "\n".join(toc_row(r, "../") for r in rs), reading, '<p class="pagenav"><a href="../">&larr; every instruction</a></p>')
         write(path, page_html(path, "%s · %s" % (f["title"], C.SITE_TITLE), body, desc=re.sub(r"\s+", " ", authored_plain(f["blurb"], runs))[:300],
                               topbar=topbar("../", "Instruction: " + f["title"], None, None)))
 
@@ -1161,6 +1311,9 @@ def build():
         rs = fam_rooms[f["id"]]
         if not rs: continue
         out += ["## %s" % f["title"], "", authored_plain(f["blurb"], runs), ""]
+        if f.get("reading"):
+            out += ["%s (authored; the reading of the study, with its hops): %s" % (f.get("reading_title", "The reading"), SITE + "/i/" + f["id"]), ""]
+            out += [re.sub(r"\s+", " ", authored_plain(para, runs)) + "\n" for para in f["reading"]]
         for r in rs:
             parts = text_parts[r["id"]]
             ptxt = " (%d parts: %s)" % (len(parts), ", ".join("%s/t/%s" % (SITE, part_name(r["id"], k)) for k in range(2, len(parts) + 1))) if len(parts) > 1 else ""
