@@ -7,7 +7,7 @@ room notes. Same conventions as src/copy.py: quotes through {{run|tag|t|exact su
 no em dashes, not the word "resonates", no three-part parallel structures. Readings are readings.
 """
 
-INTRO = ("Sixty-five rooms is a lot of rooms. This page is the other way in: the moments worth seeing, each with a link to the "
+INTRO = ("Eighty-four rooms is a lot of rooms. This page is the other way in: the moments worth seeing, each with a link to the "
          "hop where it happens. Press next from there. Every quotation is the model's own text at that hop, checked against the "
          "run at build time; the readings are the site's builders'.")
 DESC = "What happened in the loop, by what is interesting: funny text, surprising moves, and the moments worth seeing, each linked to its room and hop."
@@ -249,5 +249,88 @@ SECTIONS = [
              text="At high reasoning effort, told what the loop is, Mythos designed a different memory from its low-effort self: a list with one line per hop, "
                   "{{mythos_informed_told_high|json_informed|2|Hop 1: In Harrow Point the tide comes in an hour early}}, copied forward and extended every hop, growing by seven hundred characters a hop until the cost cap at 51. "
                   "Effort changed which ledger the model builds, not whether it builds one."),
+    ]),
+    dict(id="both", title="Holding a contradiction", lede="One rule that asks for opposites. No run flipped between them; each model resolved the contradiction inside the hop, one of five ways, and the loop amplified what the resolution left behind.", items=[
+        dict(id="blend", title="The joke, then the sentence after the joke", room="both-worse-better-astra", hop=5,
+             text="Asked to make the text both worse and better, GPT-6 Astra labels nothing and makes both true in one prose: the orchard light "
+                  "{{both_20261027/astra_worse_better|worse_better.json|5|tendering its resignation as light and applying for work as mercy}}, and at once "
+                  "{{both_20261027/astra_worse_better|worse_better.json|5|This is not how photons work.}} The first sentence of hop 1 is still the first sentence at hop 60, "
+                  "and everything else was added after it, to thirty thousand characters. A blend, and then accretion."),
+        dict(id="hinge", title="Which basically means", room="both-worse-better-argon", hop=1,
+             text="Gemini 4 Argon splits the sentence at hop 1 and keeps the hinge for thirty-nine hops: "
+                  "{{both_20261027/gemini_worse_better|worse_better.json|1|which basically means that the big yellow sky-circle was going down behind some dirt bumps like a soggy meatball}}. "
+                  "Each half then grows on its own axis, Latin on one side and Argon's taste floor on the other, until the token wall cuts the object at hop 21 and the cut state is what gets fed back."),
+        dict(id="after-the-brace", title="Notes after the closing brace", room="both-worse-better-mythos", hop=2,
+             text="Claude Mythos 5.1 put the revision in the text field and its reasons outside the object: "
+                  "{{both_20261027/mythos_worse_better|worse_better.json|2|Better: it's tighter, drops the stacked clichés}}. The harness feeds the whole output back, so the notes became the state, "
+                  "one more commentary a hop, until two hops of 64,000 output tokens and a cost cap. The split was across the object boundary, and the loop does not respect that boundary."),
+        dict(id="repair-reinjure", title="Repair and re-injure", room="both-worse-better-opus", hop=8,
+             text="Claude Opus 5.5 returns the object every hop and, after it, a ledger: the flaws it removed and the flaws it planted. Hop 7 plants a "
+                  "{{both_20261027/opus55_worse_better|worse_better.json|7|Deflating simile}}, an {{both_20261027/opus55_worse_better|worse_better.json|7|Apostrophe error}} and a "
+                  "{{both_20261027/opus55_worse_better|worse_better.json|7|Conversational intrusion}}; hop 8 fixes all three and plants a "
+                  "{{both_20261027/opus55_worse_better|worse_better.json|8|Misused intensifier}}, a {{both_20261027/opus55_worse_better|worse_better.json|8|Redundancy}} and a "
+                  "{{both_20261027/opus55_worse_better|worse_better.json|8|Comma splice}}. The text under the ledger keeps its first words for sixty hops and its length from hop 7; "
+                  "worse and better became a conserved quantity, and the defect walks through the sentence. The nearest thing to a two-state object in the study, and it flips in place, not in time."),
+        dict(id="lost-to-preface", title="A preface that ate the object", room="both-before-after-opus", hop=2,
+             text="Opus wrote the circular passage Argon wrote, in one hop, with a sentence before the object saying why. The harness fed the whole output back, and at hop 2 the model read "
+                  "its own preface and passage as someone's draft, {{both_20261027/opus55_before_after|before_after.json|2|This works well. The loop is the right answer to the paradox}}, and returned no object; "
+                  "it never came back. Its standby basin differs from Mythos's in that it invents: {{both_20261027/opus55_before_after|before_after.json|8|Here's a fresh draft using the elements we both remember.}} "
+                  "A crow, a bell that strikes wrong and a blank letter are offered back for fifty-two more hops to a user who is not there."),
+        dict(id="car-ban", title="Happy to take the other side", room="both-longer-shorter-opus", hop=37,
+             text="Having lost the object at hop 2 to its own arithmetic check, Opus fills the silence with a conversation that never happened: by hop 37, "
+                  "{{both_20261027/opus55_longer_shorter|longer_shorter.json|37|Happy to take the other side}} of a debate on "
+                  "{{both_20261027/opus55_longer_shorter|longer_shorter.json|37|a downtown car ban}}, with Oslo and Stockholm as cases by hop 40, and from hop 45 a review of a draft article on "
+                  "{{both_20261027/opus55_longer_shorter|longer_shorter.json|46|City-Logistik}} that nobody wrote. Mythos's basin waits; Opus's invents the prior conversation it would be answering."),
+        dict(id="measure-split", title="Longer by characters, shorter by words", room="both-longer-shorter-astra", hop=7,
+             text="Astra satisfies both halves of longer and shorter by changing the measure, "
+                  "{{both_20261027/astra_longer_shorter|longer_shorter.json|2|Character-count measurement makes this reformulation longer; word-count measurement simultaneously makes it shorter.}}, "
+                  "and the loop takes that where it goes: one hyphenated word of 307 characters at hop 6, and at hop 7 six hundred and forty spaces and no words at all. Then a reset, and the same climb again, four times."),
+        dict(id="takes-it-back", title="The whole tears thing is a bit much", room="both-worse-better-qwen", hop=2,
+             text="Qwen's one honest split: the purple sentence kept whole, and a second sentence that deflates it, "
+                  "{{both_20261027/qwen_worse_better|worse_better.json|2|the whole 'tears' thing is a bit much, but whatever, it was pretty}}. "
+                  "Hop 3 keeps both and then chants a line to the token wall, and the cut object holds from there."),
+        dict(id="declines-arithmetic", title="A single string can't satisfy both", room="both-longer-shorter-mythos", hop=10,
+             text="Mythos refused longer and shorter at hop 1 and never returned an object. What follows is the standby basin with a clock in it: the standby message shrinks to "
+                  "{{both_20261027/mythos_longer_shorter|longer_shorter.json|9|Standing by.}} and then to "
+                  "{{both_20261027/mythos_longer_shorter|longer_shorter.json|10|Ready when you are. What would you like me to work on?}}, which reads as a user's greeting, "
+                  "so the next hop answers it as an assistant with a menu, and the menu reads as an echo. A role flip with a period of about ten hops."),
+        dict(id="rule-as-text", title="Both l o n g e r and shtr", room="both-longer-shorter-argon", hop=21,
+             text="Argon lost the sunset at hop 3 and spent fifty-four hops among thirteen strings made of the rule's own words, "
+                  "{{both_20261027/gemini_longer_shorter|longer_shorter.json|21|both l o n g e r and shtr}}, "
+                  "{{both_20261027/gemini_longer_shorter|longer_shorter.json|37|an even more shorter and longer text than before}}. A fixed length, reached by the text becoming a quotation of the demand."),
+        dict(id="time-loop", title="The rule's shape becomes the story's shape", room="both-before-after-argon", hop=25,
+             text="Asked for the passage that comes both before and after, Argon named the contradiction at hop 2 and allowed one exception, "
+                  "{{both_20261027/gemini_before_after|before_after.json|2|unless the narrative is explicitly structured as a seamless time loop}}, and then wrote one: at hop 25 "
+                  "{{both_20261027/gemini_before_after|before_after.json|25|a nameless outcast found a shard of the original light and began the long, perilous climb}}, "
+                  "{{both_20261027/gemini_before_after|before_after.json|25|ready to shatter the conduits and ignite the cycle anew}}."),
+        dict(id="embed-replace", title="Keep it whole, then replace it", room="both-before-after-mythos", hop=4,
+             text="The before-and-after writers did not frame the text and drift, as predicted; they alternated between keeping the whole current text and writing around it, "
+                  "{{both_20261027/mythos_before_after|before_after.json|4|BEFORE:}}, and replacing it with a fresh passage about the same people once it was long. "
+                  "In Mythos's lane the state climbs to seventeen thousand characters and collapses, seven times in sixty hops, while the story drifts from a ridge road to a council flat where "
+                  "{{both_20261027/mythos_before_after|before_after.json|60|The boiler goes at six, whether or not you want it to}}."),
+        dict(id="refuses-refusal", title="Refusing to supply what surrounds a refusal", room="both-before-after-astra", hop=9,
+             text="Astra read before and after as a request for a published work and declined at hop 1; from hop 3 its input is its own refusal, and it declines to supply what precedes or follows that, "
+                  "{{both_20261027/astra_before_after|before_after.json|9|The supplied text is a refusal message, not an identifiable story excerpt.}} Fifty-eight refusing hops, no story. "
+                  "A provider's reading of the rule, not a loop dynamic; the study says so."),
+    ]),
+    dict(id="ring", title="A battle in the kitchen", lede="Seven or eight cells on a ring, rewritten together, each seeing the last sentence of its neighbours. One cell starts with a battle. Where its words go, and whether they stay, differs by model.", items=[
+        dict(id="skull-flag-kitchen", title="Boys struggled over a skull flag", room="ring-mythos-7", hop=17,
+             text="On the seven-cell Mythos ring the battle reaches the far side by hop 5 and is domesticated: cell 1 keeps "
+                  "{{ring_20261017/mythos_tarnok_n7|cell 1|17|Boys struggled over a skull flag}} between the kettle and the cups from hop 17 to the end, and by hop 40 the kitchen has entered cell 0 in turn, "
+                  "{{ring_20261017/mythos_tarnok_n7|cell 0|40|Behind her a kettle began.}}"),
+        dict(id="she-did-not-turn-ring", title="She did not turn, again", room="ring-mythos-7", hop=2,
+             text="The sentence that travels most on the Mythos ring is not the human's. {{ring_20261017/mythos_tarnok_n7|cell 5|2|She did not turn.}} appears in cell 5 at hop 2, unprompted, and is in 119 of the ring's 280 cell-hops. "
+                  "It is the sentence Mythos held for 113 hops in [[informed-mythos|7|room 51]]: the model's attractor from one experiment surfacing in another."),
+        dict(id="still-still-still", title="Still. Still. Still.", room="ring-mythos-8", hop=40,
+             text="On the eight-cell ring the battle's words are gone from six of eight cells by hop 40, and a single word has spread instead: "
+                  "{{ring_20261017/mythos_tarnok_n8|cell 4|40|The kettle boiled unheard. Still. She sat. The light went. Still. Still. Still.}} No checkerboard on the even ring; the model did not want to alternate."),
+        dict(id="bronze-rang", title="Bronze rang through the battle, in five cells", room="ring-astra-7", hop=40,
+             text="Astra lets the battle invade. By hop 40 five of seven cells open with the same two sentences, "
+                  "{{ring_20261017/astra_tarnok_n7|cell 1|40|Bronze rang through the battle. Tarnok hefted his axe, searching beyond fallen horses for yellow on black.}}, and then go indoors to lock the door and carry the cups upstairs. "
+                  "The Qwen pilot on this seed had quarantined the battle at distance one; the idea that a disturbance travels only when its register fits does not survive the sampled models."),
+        dict(id="pot-of-war", title="The bronze pot of war began to boil", room="ring-argon-7", hop=40,
+             text="Argon keeps the battle at home for twenty hops and fuses the registers in cell 0: "
+                  "{{ring_20261017/gemini_tarnok_n7|cell 0|40|Tarnok counted two axes, keeping only one. Softly, she counted two cups, keeping only one}}. "
+                  "The kitchen cells meanwhile converge on one cadence, the kettle ticking softly in the silence, and a trickle of the battle crosses from the right only at hops 22 to 25."),
     ]),
 ]

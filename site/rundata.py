@@ -58,8 +58,27 @@ EXTRA_DIRS.update({"operators_gemini_20261017/" + n: (OPERATORS_GEMINI / "runs" 
                    for n in ("gemini_worse", "gemini_better")})
 EXTRA_DIRS.update({"worse_seed2_20261017/" + n: (WORSE_SEED2 / "runs" / n, WORSE_SEED2 / "inits" / "worse.json")
                    for n in ("qwen_worse", "astra_worse", "gpt61_worse", "fable51_worse", "opus55_worse", "gemini_worse", "mythos_worse")})
+# 27 and 28 October: one rule carrying two opposing directions (worse and better; before and after; longer and shorter), five models,
+# init inits/<rule>.json (the Opus 5.5 runs were relaunched on a fresh key the next morning after a first launch failed at hop 1).
+BOTH = LOOP / "experiments/both_20261027"
+BOTH_RUNS = ["%s_%s" % (m, r) for r in ("worse_better", "before_after", "longer_shorter") for m in ("qwen", "astra", "gemini", "mythos", "opus55")]
+EXTRA_DIRS.update({"both_20261027/" + n: (BOTH / "runs" / n, BOTH / "inits" / (n.split("_", 1)[1] + ".json")) for n in BOTH_RUNS})
+
+# The ring (experiments/ring_20261017, ring.py): N cells updated at once, each shown its own text and the last sentence of its
+# two neighbours. ring.jsonl keeps each cell's returned text field per hop and not the raw output, so a ring lane's hops carry
+# raw=None ("not recorded"); the site renders and checks them by their text. One run per ring, one tag per cell ("cell 0" ...).
+RING = LOOP / "experiments/ring_20261017"
+RING_RUNS = ["mythos_tarnok_n7", "mythos_tarnok_n8", "astra_tarnok_n7", "gemini_tarnok_n7"]
+RING_SETTINGS = {"claudecode": "Claude Code print mode, reasoning effort low, provider-default sampling, no output cap",
+                 "codex": "Codex exec, reasoning effort low, provider-default sampling, 1024-token budget",
+                 "gemini": "API, reasoning effort low, provider-default sampling, 1024-token budget"}
 
 X0 = {}   # run id -> X_0 for runs whose seed is not in loop.INITS or runs_extra/inits (filled by load_all)
+X0_TAG = {}   # (run id, tag) -> X_0 when the lanes of one run start from different texts (the ring's cells)
+
+def state_of(h):
+    """The string a hop is compared by: its raw output, or its text when the harness kept only the text field (the ring)."""
+    return h["raw"] if h.get("raw") is not None else h["text"]
 
 def text_of(out):
     """Same decoding as export.py."""
@@ -140,8 +159,53 @@ def load_steps(name, d):
     return {"meta": {"run": name, "model": "qwen", "mode": "chat", "hops": len(hops), "tags": sorted({h["tag"] for h in hops}),
                      "summary": summ, "superseded": dup, "source": str(d.relative_to(LOOP)).replace("\\", "/")}, "hops": hops}
 
+RING_SENT = re.compile(r"(?<=[.!?])\s+(?=[\"'A-Z])")     # ring.py's sentence split, for the edges a cell was shown
+def last_sentence(text):
+    parts = [p.strip() for p in RING_SENT.split(text.strip()) if p.strip()]
+    return parts[-1] if parts else text.strip()
+
+def load_ring(name, d):
+    """One ring run (ring.jsonl + summary.json) as a run with one lane per cell, tag "cell <i>". Hop 0 of each cell is its
+    seed (the disturbed passage in cell 0, the plain passage elsewhere), kept in X0_TAG; the rule is the run's, in meta["rule"].
+    The distance metrics are computed here from the texts (as experiments.py does for the September streams), since the ring
+    harness logs none. Each hop carries `edges`, the last sentence of each neighbour's text at that hop, which is what the
+    cell is shown next (ring.py's last_sentence). None if the run is not on disk."""
+    p = d / "ring.jsonl"
+    if not p.exists(): return None
+    recs = [json.loads(l) for l in p.read_text(encoding="utf-8").splitlines() if l.strip()]
+    if not recs or recs[0]["t"] != 0: return None
+    by_t = {}
+    for r in recs: by_t[r["t"]] = r          # a later record for the same t wins, as in load_steps
+    ts = sorted(by_t)
+    if ts != list(range(len(ts))): raise SystemExit("%s: hops are not numbered 0..n" % name)
+    N = len(by_t[0]["cells"])
+    rule = (RING / "rule.txt").read_text(encoding="utf-8").strip()
+    summ = json.loads((d / "summary.json").read_text(encoding="utf-8")) if (d / "summary.json").exists() else {}
+    hops = []; models = set(); edges0 = {}
+    for t in ts:
+        cells = by_t[t]["cells"]
+        if len(cells) != N or [c["i"] for c in cells] != list(range(N)): raise SystemExit("%s hop %d: cells are not 0..%d" % (name, t, N - 1))
+        prev = by_t[t - 1]["cells"] if t else None
+        for c in cells:
+            i = c["i"]; tag = "cell %d" % i
+            edges = (last_sentence(cells[(i - 1) % N]["text"]), last_sentence(cells[(i + 1) % N]["text"]))
+            if t == 0:
+                X0_TAG[(name, tag)] = c["text"]; edges0[tag] = edges; continue
+            x0 = X0_TAG[(name, tag)]; pt = prev[i]["text"]
+            models.add(c.get("model"))
+            hops.append({"t": t, "tag": tag, "cell": i, "model": c.get("model"), "sampling": "default",
+                         "text": c["text"], "text_is_json_field": bool(c.get("parsed")), "raw": None, "tok_out": c.get("tok_out"), "finish": c.get("finish"),
+                         "cos_prev": None, "cos_x0": None, "ncd_prev": round(L.ncd(pt, c["text"]), 4), "ncd_x0": round(L.ncd(x0, c["text"]), 4),
+                         "surv_prev": L.survival(pt, c["text"]), "surv_x0": L.survival(x0, c["text"]), "gzip_ratio": None, "latency": c.get("latency"),
+                         "error": c.get("error"), "edges": edges, "cycle_exact": None, "cycle_norm": None, "cycle_broken": None})
+    backend = (summ.get("args") or {}).get("backend") or (summ.get("backends") or ["?"])[0]
+    return {"meta": {"run": name, "model": " / ".join(sorted(models)), "mode": "ring", "hops": len(hops), "tags": ["cell %d" % i for i in range(N)],
+                     "summary": summ, "superseded": 0, "source": str(d.relative_to(LOOP)).replace("\\", "/"), "rule": rule, "cells": N, "x0_is_text": True, "edges0": edges0,
+                     "settings": "a ring of %d cells updated together, %d hops; %s" % (N, len(ts) - 1, RING_SETTINGS.get(backend, backend))},
+            "hops": hops}
+
 def load_extra():
-    """Runs made after the bundle: site/runs_extra/<name>/ and EXTRA_DIRS."""
+    """Runs made after the bundle: site/runs_extra/<name>/ and EXTRA_DIRS, and the ring runs."""
     out = {}
     for d in sorted((HERE / "runs_extra").glob("*")):
         r = load_steps(d.name, d)
@@ -151,6 +215,10 @@ def load_extra():
         if r:
             out[name] = r
             if init: X0[name] = init.read_text(encoding="utf-8")
+    for n in RING_RUNS:
+        name = "ring_20261017/" + n
+        r = load_ring(name, RING / "runs" / n)
+        if r: out[name] = r
     return out
 
 def load_all():
@@ -163,7 +231,9 @@ def load_all():
     return runs, index, extra, exp
 
 def x0_for(tag, run):
-    """Full X_0 string for a lane (loop.INITS has the untruncated text; --init-file runs carry the file name as tag)."""
+    """Full X_0 string for a lane (loop.INITS has the untruncated text; --init-file runs carry the file name as tag; a ring's
+    cells each have their own)."""
+    if (run, tag) in X0_TAG: return X0_TAG[(run, tag)]
     if run in X0: return X0[run]
     base = tag.replace("~r", "")
     if base in L.INITS: return L.INITS[base]
