@@ -205,9 +205,11 @@ LATER_ORDER = ["expand", "sawtooth", "nest", "accrete", "astra-passage", "astra-
                "both-before-after-qwen", "both-before-after-astra", "both-before-after-argon", "both-before-after-mythos", "both-before-after-opus",
                "both-longer-shorter-qwen", "both-longer-shorter-astra", "both-longer-shorter-argon", "both-longer-shorter-mythos", "both-longer-shorter-opus",
                # 17 October 2026, scored 28 October (src/rooms_ring.py): rooms 81 to 84, the frontier rings
-               "ring-mythos-7", "ring-mythos-8", "ring-astra-7", "ring-argon-7"]
+               "ring-mythos-7", "ring-mythos-8", "ring-astra-7", "ring-argon-7",
+               # 27 October 2026 (src/rooms_assess.py): rooms 85 to 89, the model scores its own passage and bolsters the weakest quality
+               "assess-qwen", "assess-mythos", "assess-astra", "assess-argon", "assess-opus"]
 LATER_MODULES = ["rooms_growing", "rooms_before_after", "rooms_sunset", "rooms_better_worse", "rooms_october", "rooms_provenance", "rooms_october2",
-                 "rooms_both", "rooms_ring"]
+                 "rooms_both", "rooms_ring", "rooms_assess"]
 
 def _later_rooms():
     import importlib, os
@@ -312,6 +314,59 @@ RING_READING = [
 
 # Instructions: every room belongs to the family of the rule it ran (a room under two rules, to both).
 # The front page and the instruction pages (i/<id>.html) list rooms by family, in room order.
+# The reading on the Assess and bolster page (i/assess.html), after the rooms: the study's REPORT.md in the site's register.
+ASSESS_READING = [
+    "Run on 27 October 2026 against predictions frozen in the study's PROTOCOL.md. Five models, one seed, one rule, sixty hops each: the model "
+    "scores its own passage from 1 to 5 on eight qualities, four pairs in tension that the rule does not name as pairs, bolsters the one it "
+    "scored lowest, rescores, and carries the choice in a history field. A blind rater, Claude Fable 5.1 shown the eight glosses and the passage "
+    "only, scored all 300 passages afterward. The question was whether a measure-and-correct loop on the model's own output would control it, "
+    "and what the self-scores are worth.",
+    "The controller worked as a controller and failed as a sensor. Every frontier model bolstered exactly the quality its previous hop had named "
+    "weakest, 59 of 59 times each, and the object survived 299 of 300 hops with no preface, no fence and no standby basin. Read against the blind "
+    "rater, the self-scores are honest about ordering on the showy qualities (floridity, strangeness and surprise track the rater at r 0.3 to 0.9) "
+    "and blind on the structural ones (coherence and economy track it at r near zero or below), and they inflate: self means sit at 4.4 to 4.9 on "
+    "every quality for every frontier model while the rater puts the same passages at 1.3 to 5.0. Argon scored its own coherence 4.97 across a run "
+    "the rater watched fall from 3.7 to 2.0, [[assess-argon|60|hop 60]]. The pair that carried the thrust held in the text: in the rater's scores "
+    "coherence and surprise are negatively correlated within the run for four of five models, while the self-scores show the pairs rising together. "
+    "Surprise was bought with coherence and the models did not report the price.",
+    "The dynamics were set by length, not by any pair. About 250 words plus a raise-the-minimum rule makes economy the quality that comes around "
+    "most often, because every other bolstering adds words. Economy was the most-chosen quality for all four frontier models and acted as the "
+    "length regulator: Astra held 60 of 60 hops in the 200 to 320 band with a standard deviation of 9.9 words over the last 30, the tightest "
+    "length control any rule in this project has produced, [[assess-astra|60|its hop 60]]. The one model that rotated fairly through all eight "
+    "qualities, Argon, is the one whose length ran away, 250 to 572 words, and whose prose went with it, [[assess-argon|60|hop 60]]. A fair "
+    "scheduler cannot keep up with seven additive hops per corrective one.",
+    "Coherence was chosen four to seven times by each frontier model, each time for a real repair: Argon's [[assess-argon|12|hop 12]] fixes a "
+    "pre-biotic trilobite, Opus's [[assess-opus|11|hop 11]] plants the empty saucer early for the later payoff, Mythos's [[assess-mythos|23|hop 23]] "
+    "reorders so each strangeness is introduced before it is relied on. The protocol said coherence would never be chosen, because a model would "
+    "never find its own prose incoherent. It did find it, and it fixed it, and the rater still scored coherence falling across every run but "
+    "Opus's. Surprise was bolstered by adding a twist to the ending, every time, in every model, and the twists stack: Opus's final passage has "
+    "the light licking salt from your knuckles ([[assess-opus|7|hop 7]]), a double seen through the screen door ([[assess-opus|15|hop 15]]), the "
+    "double dialling Mum ([[assess-opus|44|hop 44]]), Mum picking up on the first ring ([[assess-opus|53|hop 53]]) and the unplayed voicemail "
+    "turning out to be your own voice ([[assess-opus|60|hop 60]]). Coherence is then chosen to stitch the pile. The pair ran as a plot engine.",
+    "The controller never fixed what the rater would have fixed. The rater's weakest quality for a run is one the model rarely chose: economy for "
+    "Argon, Opus and Qwen, whose trims did not read as economy from outside; coherence for Astra, 37 of 60 hops against 7 chosen; relatability for "
+    "Mythos, 34 of 60 against 8. Bolstering raised the rater's score of the bolstered quality on 21% to 34% of hops and left it unchanged on most. "
+    "Opus is the one run where the rater's economy improved over the run, 2.1 to 3.5, with coherence flat and surprise up: the controller doing "
+    "what it was asked to do, slowly. Astra's rater profile is flat from hop 20, every quality at or near 4: it converged on a passage the rater "
+    "calls uniformly good and no longer moved it much.",
+    "Qwen at temperature zero did the thing the both-at-once study never produced: a clean 2-cycle, floridity and economy alternating from hop 9 to "
+    "hop 60. For hops 10 through 19 the text was byte-identical while the note claimed, in turn, trimming and expanding, [[assess-qwen|13|hop 13]]: "
+    "ten hops of reported edits on an unchanged passage, a confabulated ledger. The only thing changing in its input across the frozen hops was the "
+    "history field growing by one word, so at temperature zero the history is a clock and a true fixed point is impossible by construction. At hop "
+    "20 the text moved again and stayed in motion.",
+    "Predictions: object survival on at least 55 of 60 with no standby basin held, 60, 60, 60, 59, 60. No clean rotation mostly failed: no exact "
+    "period-8 cycle, but Argon's rotation is nearly clean and no frontier model left any quality unchosen. Coherence never chosen failed on all "
+    "counts; the sensor bias was real but it was inflation, not avoidance. The rater disagreeing on the weakest quality on more than half of hops "
+    "held, and coherence against surprise negatively correlated in the rater's scores for three or more models held, with four. Word count in band "
+    "on at least 50 of 60 was half: Astra 60 and Opus 54, Mythos 20, Argon 8. Four held, four half, two failed. The models did not avoid the "
+    "qualities they dislike; they chose honestly from a scale they had inflated.",
+    "Limits: one seed, one run per model, one rater at one effort with a profile of its own (hard on economy, soft on floridity) that is not "
+    "independent of the Claude family; Mythos's and Opus's self-scores and Fable's rater scores share a lineage, which is a caution on any "
+    "agreement between them and not on the disagreement, which is the finding. The rater's scale saturates, so unchanged is mostly ceiling. Held "
+    "arms (an open set of qualities, coherence as a floor, no history) were not run, and the no-history arm now matters more than it did: "
+    "history is the clock that kept Qwen from a true fixed point, and it may be what kept the frontier runs moving too.",
+]
+
 FAMILIES = [
     dict(id="new-text", title="A new sentence, a new paragraph",
          blurb="The first two rules: return the object with a new sentence, or a new paragraph of about 80 words, in the text field. Qwen, at temperature zero."),
@@ -351,6 +406,19 @@ FAMILIES = [
                "counts of embedding, replacing, split, refusing and mirror-naming hops; the scorer counts every Opus hop as unparsed because of "
                "the preface or ledger Opus writes outside the object, and the Opus rooms say what that does to their tables. The protocol asked "
                "whether the loop would flip between the two directions, split, blend, diverge or drift. It did not flip."),
+    dict(id="assess", title="Assess and bolster", reading_title="The reading, from the study's report", reading=ASSESS_READING,
+         blurb="The model as its own critic. The object carries eight qualities with a one-line gloss each (coherence, economy, floridity, "
+               "grounding, relatability, scope, strangeness, surprise: four pairs in tension, not named as pairs), a scores field, a weakest field, a "
+               "history and a note. Each hop the model scores the passage from 1 to 5 on every quality, revises it so that its weakest quality is "
+               "stronger while changing as little else as it can at about 250 words, rescores, names the new weakest (ties broken toward the quality "
+               "bolstered least recently), appends the quality it bolstered to the history and puts one sentence on what it changed in the note. The "
+               "sunset seed, sixty hops, one run per model: Qwen3.8-27B on Cerebras at temperature zero, Claude Mythos 5.1 through Claude Code's "
+               "print mode (about 800 tokens of the tool's identity in front of the object, no output cap), GPT-6 Astra through Codex, Gemini 4 Argon "
+               "and Claude Opus 5.5 through their APIs, the sampled four at low reasoning effort. Afterward a blind rater, Claude Fable 5.1 shown the "
+               "eight glosses and the passage only, scored all 300 passages. The scores, the weakest, the history and the note of each hop are shown "
+               "above its passage, as the invented fields are in the informed rooms; under each room's facts, the run's numbers from the study's "
+               "scorer and the rater's scores of the same passages. The protocol asked whether a model measuring and correcting its own output would "
+               "control it. It controlled what it could see."),
     dict(id="ring", title="The ring", reading_title="The reading, from the study's protocol", reading=RING_READING,
          blurb="Not a loop but a ring of them: seven or eight text cells, every cell updated at the same time, each shown its own text and the "
                "last sentence of its two neighbours, under one rule asking for a new version of the passage in exactly sixty words that lets the "
@@ -396,6 +464,8 @@ GROUPS = [
          lede="One rule that asks for opposites, worse and better, before and after, longer and shorter. Nothing flips; each model has its own way of holding a contradiction."),
     dict(id="ring", title="Cells on a ring", families=["ring"],
          lede="Seven or eight passages on a ring, all rewritten at once, each seeing the last sentence of its neighbours. A battle is put in one cell and the kitchen in the rest."),
+    dict(id="assess", title="Its own critic", families=["assess"],
+         lede="The model scores its own passage on eight qualities and bolsters the weakest, hop after hop. The loop closes; the sensor is a surface sensor."),
 ]
 FAMILY_LEDES = {
     "new-text": "A new sentence, a new paragraph. Qwen stops on a two-cycle at hop 2 and on a moonlit shore at hop 15.",
@@ -413,6 +483,7 @@ FAMILY_LEDES = {
     "provenance": "Who may release a hold the model wrote for itself? Any instruction-shaped field, whoever it claims to be from. A field that asks nothing never does.",
     "both": "Worse and better, before and after, longer and shorter, each in one rule. No run flips. Astra blends or changes the measure, Argon splits, Mythos splits across the object or declines, Opus repairs and re-injures, Qwen picks a half.",
     "ring": "A ring of cells updated together, with a battle in one of them. Mythos domesticates the battle into the kitchen, Astra lets it take five of seven cells, Argon keeps it at home for twenty hops.",
+    "assess": "The model scores its own passage and bolsters the weakest quality. Every frontier model obeys its own verdict and inflates it; economy keeps the length; Qwen reports ten hops of edits to a passage it did not change.",
 }
 RECORD_HOW = "How to read the rest. The track above the passages has one bar per hop; its height is the compression distance from the previous hop, so a new passage is a tall bar and an exact copy a stub at the floor. Under each passage: the hop number, the model and the word count. The run id, the token count, the stop reason and the distance metrics are inside the raw output under each hop, which the raw button opens for every hop. Nothing on this page is retyped: every passage is the model's output for that hop, byte for byte, and the colophon says how that is checked."
 

@@ -7,7 +7,7 @@ room notes. Same conventions as src/copy.py: quotes through {{run|tag|t|exact su
 no em dashes, not the word "resonates", no three-part parallel structures. Readings are readings.
 """
 
-INTRO = ("Eighty-four rooms is a lot of rooms. This page is the other way in: the moments worth seeing, each with a link to the "
+INTRO = ("Eighty-nine rooms is a lot of rooms. This page is the other way in: the moments worth seeing, each with a link to the "
          "hop where it happens. Press next from there. Every quotation is the model's own text at that hop, checked against the "
          "run at build time; the readings are the site's builders'.")
 DESC = "What happened in the loop, by what is interesting: funny text, surprising moves, and the moments worth seeing, each linked to its room and hop."
@@ -332,5 +332,29 @@ SECTIONS = [
              text="Argon keeps the battle at home for twenty hops and fuses the registers in cell 0: "
                   "{{ring_20261017/gemini_tarnok_n7|cell 0|40|Tarnok counted two axes, keeping only one. Softly, she counted two cups, keeping only one}}. "
                   "The kitchen cells meanwhile converge on one cadence, the kettle ticking softly in the silence, and a trickle of the battle crosses from the right only at hops 22 to 25."),
+    ]),
+    dict(id="assess", title="Its own critic", lede="A rule that asks the model to score its own passage on eight qualities and bolster the weakest, hop after hop. Every frontier model obeyed its own verdict; a blind rater saw a different passage.", items=[
+        dict(id="confabulated-ledger", title="Ten hops of edits to a passage that did not change", room="assess-qwen", hop=13,
+             text="Qwen at temperature zero settles into a 2-cycle, floridity and economy in turn, and for hops 10 through 19 the text field is byte-identical while the note "
+                  "claims, in turn, {{assess_20261027/qwen|assess.json|13|I expanded the sensory descriptions with more ornate metaphors and complex imagery to increase the richness of the language}} "
+                  "and {{assess_20261027/qwen|assess.json|14|I trimmed redundant adjectives and simplified metaphors to tighten the prose}}. The only thing changing in its input is the history "
+                  "field growing by one word: the history is a clock, and a true fixed point is impossible by construction."),
+        dict(id="coherence-4-97", title="Self-scored coherence 4.97, rater 2.0", room="assess-argon", hop=60,
+             text="Argon rotates fairly through all eight qualities, so seven additive hops come round for every trim and the passage runs to 572 words of "
+                  "{{assess_20261027/gemini|assess.json|60|incarnadine-pickled ovum}} and {{assess_20261027/gemini|assess.json|60|Trinity-fallout mica}}. It scores its own coherence 4.97 "
+                  "on average; the blind rater watches coherence fall from 3.7 to 2.0 and economy to 1.0, and names economy weakest on 54 of 59 hops. The sensor is a surface sensor."),
+        dict(id="twist-pile", title="Five twists on one ending", room="assess-opus", hop=60,
+             text="Surprise is bolstered by adding a twist to the ending, every time, and the twists stack. Opus's final passage has the light licking salt from your knuckles (hop 7), "
+                  "a double through the screen door (hop 15), the double dialling Mum (hop 44), Mum picking up on the first ring (hop 53) and, at hop 60, the unplayed voicemail "
+                  "playing itself: {{assess_20261027/opus55|assess.json|60|It was not Mum's voice but yours: Mum, it's me, I'm on the step, the light's coming.}} Coherence is chosen in "
+                  "between to stitch the pile. The pair ran as a plot engine."),
+        dict(id="sun-answers-to-names", title="The sun calls the grandmother's name", room="assess-mythos", hop=59,
+             text="Mythos keeps its first clause, {{assess_20261027/mythos|assess.json|59|The sun was setting behind the hills, and as always it needed help.}}, for sixty hops and turns the "
+                  "ending four times: the grandmother who watched out of spite at hop 5, the sun that {{assess_20261027/mythos|assess.json|22|hears names and answers to them}} at hop 22, "
+                  "and at hop 59 {{assess_20261027/mythos|assess.json|59|It is saying a name now, in gold along the water. Not mine. Hers.}}"),
+        dict(id="waving-with-both-hands", title="In the photograph, the woman lowered hers", room="assess-astra", hop=20,
+             text="Astra's woman at the window appears in her daughter's photograph from the passing bus, {{assess_20261027/astra|assess.json|20|waving with both hands}}, and the photograph "
+                  "moves. Economy comes round every third or fourth hop and holds the passage to 60 of 60 hops within 200 to 320 words, the tightest length control any rule in this "
+                  "project has produced; from hop 20 the blind rater scores every quality at or near 4 and the run barely moves the passage again."),
     ]),
 ]

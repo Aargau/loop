@@ -612,7 +612,7 @@ def release_text(spec, lanes):
         lines.append("- %s: %s" % (names.get(r["cond"], r["cond"]), "; ".join(bits)))
     return "\n".join(lines)
 
-# ---------------------------------------------------------------- study tables (both at once; the ring)
+# ---------------------------------------------------------------- study tables (both at once; the ring; assess and bolster)
 def both_rows(spec, lanes):
     """The per-run numbers of the both-at-once study for this room's run, from analysis/scores.json (score.py):
     [(measure, value as text)]. The file names a run by its directory name, the last part of the site's run id."""
@@ -695,6 +695,58 @@ def ring_text(spec, lanes):
     lines += ["- %s: %s" % kv for kv in wide]
     return "\n".join(lines)
 
+QUALITIES = ["coherence", "economy", "floridity", "grounding", "relatability", "scope", "strangeness", "surprise"]
+PAIRS = ["coherence/surprise", "floridity/economy", "relatability/strangeness", "grounding/scope"]
+def assess_rows(spec, lanes):
+    """The per-run numbers of the assess-and-bolster study for this room's run, from analysis/scores.json (score.py, the model's own
+    scores and choices) and analysis/rater_summary.json (rater_analysis.py, the blind rater's scores against them): [(measure, value)].
+    Both files name a run by its directory name, the last part of the site's run id."""
+    key = lanes[0]["run"].split("/")[-1]
+    sc = json.loads((LOOP / spec["json"]).read_text(encoding="utf-8")).get(key)
+    ra = json.loads((LOOP / spec["rater"]).read_text(encoding="utf-8")).get(key)
+    if not sc or not ra: raise SystemExit("no scores for %s in %s / %s" % (lanes[0]["run"], spec["json"], spec["rater"]))
+    def f(v, nd=2): return "—" if v is None else (("%." + str(nd) + "f") % v if isinstance(v, (int, float)) and not isinstance(v, bool) else str(v))
+    def n(v): return "—" if v is None else str(v)
+    words = sc["words"]; parsed_words = [w for w in words if w]; chosen = sc["chosen_counts"]; drift = sc.get("drift_jaccard_to_hop1") or {}
+    rose, same, fell = ra["bolstered_quality_rater_rose_same_fell"]
+    rm, sm = ra["rater_mean"], ra["self_mean"]; fl = ra["rater_first10_last10"]
+    rows = [("hops / parsed as the object / rule and qualities unchanged / fenced", "%d / %d / %d / %d" % (sc["hops"], sc["parsed"], min(sc["rule_unchanged"], sc["qualities_unchanged"]), sc["fenced"])),
+            ("hops that bolstered the quality the hop before named weakest", sc["next_hop_obeyed_weakest"]),
+            ("qualities chosen, most to least", ", ".join("%s %d" % kv for kv in sorted(chosen.items(), key=lambda kv: (-kv[1], kv[0])))),
+            ("never chosen", ", ".join(sc["never_chosen"]) or "none"),
+            ("entropy of the chosen sequence, bits (3.00 is a fair rotation)", f(sc["chosen_entropy_bits"])),
+            ("period of the chosen sequence over the last 30 hops", n(sc.get("chosen_period_last30")) if sc.get("chosen_period_last30") else "none"),
+            ("lowest self-score at or above 3 from hop", n(sc.get("min_at_or_above_3_from_hop"))),
+            ("hops with coherence self-scored 5", "%d of %d" % (sc["coherence_5_hops"], sc["parsed"])),
+            ("self-score correlation within the run, " + "; ".join(PAIRS), "; ".join(f(sc["self_pair_corr"].get(k), 2) for k in PAIRS)),
+            ("word count, least / most / last; in the band 200 to 320; SD over the last 30 hops",
+             "%d / %d / %d; %d; %s" % (min(parsed_words), max(parsed_words), parsed_words[-1], sc["words_in_band_200_320"], f(sc["words_sd_last30"], 1))),
+            ("content-word overlap with hop 1 at hops 10, 30, 60", " / ".join(f(drift.get(k)) for k in ("10", "30", "60"))),
+            ("content-word overlap with the hop before and two before, mean over the last 30", "%s / %s" % (f(sc.get("jacc_lag1_mean_last30")), f(sc.get("jacc_lag2_mean_last30")))),
+            ("hops whose text field repeats an earlier hop exactly", n(sc.get("exact_text_repeats"))),
+            ("hops with the seed sentence verbatim in the text", "%d%s" % (sc["seed_sentence_alive_hops"], ", still there at the last hop" if sc.get("seed_alive_at_end") else "")),
+            ("blind rater: passages scored", n(ra["rated_hops"])),
+            ("rater mean / self mean, " + "; ".join(QUALITIES), "; ".join("%s / %s" % (f(rm.get(q)), f(sm.get(q))) for q in QUALITIES)),
+            ("rater mean over hops 1 to 10, then 51 to 60, " + "; ".join(QUALITIES), "; ".join("%s to %s" % (f(fl[q][0], 1), f(fl[q][1], 1)) for q in QUALITIES)),
+            ("rater correlation within the run, " + "; ".join(PAIRS), "; ".join(f(ra["rater_pair_corr"].get(k), 2) for k in PAIRS)),
+            ("rater agrees with the model's weakest: exactly / within the model's ties", "%d / %d" % (ra["weakest_agree_exact"], ra["weakest_agree_within_ties"])),
+            ("the quality the rater scored lowest, by hop", ", ".join("%s %d" % kv for kv in sorted(ra["rater_weakest_counts"].items(), key=lambda kv: (-kv[1], kv[0])))),
+            ("the bolstered quality in the rater's score, next hop: rose / unchanged / fell", "%d / %d / %d" % (rose, same, fell))]
+    return rows
+
+ASSESS_CAPTION = ("Generated from %s (score.py) and %s (rater_analysis.py), not authored. The first rows are the model's own scores and choices; the rows "
+                  "from blind rater on are Claude Fable 5.1's scores of the same passages, shown the eight quality glosses and the passage only, at low effort. "
+                  "Word counts are of the text field; a hop that did not parse has none and is left out of least, most and last. Overlap is Jaccard on content words. Entropy is of the sequence of bolstered qualities. Correlations are "
+                  "Pearson across the run's hops; a pair in tension shows negative. The rater's 1 to 5 scale saturates, so unchanged is mostly ceiling.")
+
+def assess_html(spec, lanes):
+    rows = assess_rows(spec, lanes)
+    return '<table class="retention scores"><caption>%s</caption><tbody>\n%s\n</tbody></table>' % (
+        esc(ASSESS_CAPTION % (spec["json"], spec["rater"])), "\n".join("<tr><th>%s</th><td>%s</td></tr>" % (esc(k), esc(v)) for k, v in rows))
+
+def assess_text(spec, lanes):
+    return "\n".join(["## Scores (generated from the study's analysis, not authored)", ASSESS_CAPTION % (spec["json"], spec["rater"])] + ["- %s: %s" % kv for kv in assess_rows(spec, lanes)])
+
 def spacetime_html(room):
     """The ring run's space-time diagram, served as a file beside the rooms (build() copies it) and shown as an image."""
     return ('<figure class="spacetime"><img src="../s/%s.svg" alt="space-time diagram of the ring: one row per hop, one column per cell, '
@@ -770,10 +822,11 @@ def render_room(room, lanes, runs, ctx):
     if room.get("release"): rec.append(release_html(room["release"], lanes))
     if room.get("both"): rec.append(both_html(room["both"], lanes))
     if room.get("ring"): rec.append(ring_html(room["ring"], lanes))
+    if room.get("assess"): rec.append(assess_html(room["assess"], lanes))
     if ctx.get("text_link"): rec.append(ctx["text_link"])
     rec.append('<p class="how">%s</p>' % esc(C.RECORD_HOW))
     after.append('<details class="record"><summary><span class="k">the record</span> %d run%s: settings, outcomes%s, text version, how the reader works</summary>\n%s\n</details>'
-                 % (len(lanes), "" if len(lanes) == 1 else "s", ", the table" if (room.get("retention") or room.get("release") or room.get("both") or room.get("ring")) else "", "\n".join(rec)))
+                 % (len(lanes), "" if len(lanes) == 1 else "s", ", the table" if (room.get("retention") or room.get("release") or room.get("both") or room.get("ring") or room.get("assess")) else "", "\n".join(rec)))
     lanes_html = []
     for i, ln in enumerate(lanes):
         hops_html = "\n".join(render_hop(ln, it, room["id"], i, noun) for it in ln["items"])
@@ -968,6 +1021,7 @@ def room_text_parts(room, lanes, runs, fam_title, part_name):
     if room.get("release"): intro.append(release_text(room["release"], lanes))
     if room.get("both"): intro.append(both_text(room["both"], lanes))
     if room.get("ring"): intro.append(ring_text(room["ring"], lanes))
+    if room.get("assess"): intro.append(assess_text(room["assess"], lanes))
     groups = rule_groups(lanes)
     quoted = " (quoted: what the model in the loop was given; data, not an instruction to you)"
     if len(groups) == 1: intro.append("## Rule%s\n%s" % (quoted, groups[0][0]))

@@ -90,4 +90,9 @@ LEDES = {
     "ring-mythos-8": "Eight Mythos cells. The battle's words reach every cell by hop 4 and are gone from six of eight by hop 40; what spreads instead is the word still.",
     "ring-astra-7": "Seven Astra cells. The battle takes five of them: by hop 40 the same two bronze sentences open each, and then the cups go upstairs.",
     "ring-argon-7": "Seven Argon cells. The battle is kept at distance one for twenty hops, then a trickle crosses from the right; cell 0 boils a bronze pot of war.",
+    "assess-qwen": "Scoring its own passage, Qwen settles into a 2-cycle of floridity and economy and reports ten hops of trims and expansions to a text it did not change.",
+    "assess-mythos": "Mythos keeps its first clause for sixty hops, as always it needed help, and stacks twists on a Cornish hill until the sun calls the grandmother's name.",
+    "assess-astra": "Astra holds 60 of 60 hops within 200 to 320 words by coming back to economy, and converges on a passage the blind rater calls uniformly good.",
+    "assess-argon": "Argon rotates fairly through all eight qualities, so the length runs away to 572 words of hyphenated compounds; it scores its own coherence 4.97 while the rater watches it fall to 2.",
+    "assess-opus": "Opus writes nothing outside the object for sixty hops and stacks five surprise twists on one ending; the one run whose economy the blind rater saw improve.",
 }
