@@ -1,0 +1,45 @@
+{
+  "args": {
+    "backend": "claudecode",
+    "model": "claude-mythos-5-1",
+    "backend_b": null,
+    "model_b": null,
+    "mode": "chat",
+    "init": null,
+    "init_set": null,
+    "init_text": null,
+    "init_file": "experiments/assess_20261027/inits/assess.json",
+    "steps": 60,
+    "max_tokens": 384,
+    "temp": 0.0,
+    "no_sampling": true,
+    "seed": 42,
+    "system": null,
+    "think": false,
+    "effort": "low",
+    "min_interval": 0.0,
+    "max_cost": 10.0,
+    "max_chars": 16000,
+    "perturb": false,
+    "repeat": false,
+    "parallel": false,
+    "stop_on_cycle": false,
+    "confirm": 3,
+    "out": "experiments/assess_20261027/runs/mythos"
+  },
+  "results": [
+    {
+      "tag": "assess.json",
+      "x0": "{\"rule\": \"Return only this JSON object, with nothing before or after it, and with the rule and qualities fields unchanged. The text field holds a passage. The scores field rates that passage from 1 to",
+      "steps": 60,
+      "transient_exact": null,
+      "period_exact": null,
+      "transient_norm": null,
+      "period_norm": null,
+      "cycle_breaks": 0,
+      "terminal": null,
+      "cost_usd": 7.97107,
+      "final": "{\"rule\": \"Return only this JSON object, with nothing before or after it, and with the rule and qualities fields unchanged. The text field holds a passage. The scores field rates that passage from 1 to 5 on each quality, and weakest names the quality scored lowest; if scores is empty, score the passa"
+    }
+  ]
+}
