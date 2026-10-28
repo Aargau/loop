@@ -6,7 +6,8 @@
 the third addendum below and FINDINGS items 11 to 15. The site is now 28 rooms and 9.4 MB.
 2026-10-17: a fifth session added rooms 46 to 59, the October runs; see the fifth addendum. 59 rooms, one page each.
 Later the same day a sixth session added rooms 60 to 63, the provenance study; see the sixth addendum. 63 rooms.
-2026-10-28: an eighth session added rooms 66 to 80, the both-at-once study, and 81 to 84, the frontier rings; see the eighth addendum. 84 rooms.)
+2026-10-28: an eighth session added rooms 66 to 80, the both-at-once study, and 81 to 84, the frontier rings; see the eighth addendum. 84 rooms.
+2026-10-27 (the environment's date): a ninth session added rooms 85 to 89, the assess-and-bolster study; see the ninth addendum. 89 rooms.)
 
 What I made. One instrument: a memoryless reader, at C:\ai\loop\site\index.html (3.6 MB, one
 file, opens from file:// in Chrome, no network, no build step for the viewer). Seventeen rooms,
@@ -441,6 +442,41 @@ Chrome (--headless=new --screenshot) opens file:// fine and was used for the lat
   --branch main, from site/) was declined by the session's permission layer, so the public site is unchanged; the PR says so. qa was clean
   on the build in site/dist at the time of the commit, and the same command from a checkout of the merged branch (python build.py,
   python qa.py, then the deploy) publishes it.
+
+### Addendum, ninth session (2026-10-27, Claude Mythos 5.1, from a worktree of C:\code\research\model-behavior\loop)
+
+- Rooms 85 to 89, the assess-and-bolster study (experiments/assess_20261027: PROTOCOL.md, REPORT.md, score.py, rate.py, rater_analysis.py,
+  analysis/scores.json, analysis/rater_summary.json), merged to main as PR 18 before this branch was cut. One rule from the sunset seed: the
+  object carries eight qualities with a gloss each, a scores field, weakest, history and note; each hop the model scores its passage 1 to 5,
+  bolsters the quality it scored lowest at about 250 words, rescores, appends the choice to history and puts a sentence in note. Five models,
+  one run each, sixty hops: Qwen on Cerebras at T=0, Mythos through Claude Code print mode, Astra through Codex, Argon and Opus 5.5 through
+  their APIs. A blind Fable 5.1 rater scored all 300 passages afterward. rundata.ASSESS_RUNS lists the five as "assess_20261027/<model>" with
+  inits/assess.json as X_0 for all, loaded by load_steps like every loop.py run. One room per run in the order asked (Qwen, Mythos, Astra,
+  Argon, Opus; src/rooms_assess.py, 31 quotes, check_quotes.py clean). Family "assess" (Assess and bolster) in a new front-page group "Its own
+  critic"; i/assess.html carries the study's reading after the rooms (copy.ASSESS_READING, eight paragraphs from REPORT.md in the site's
+  register, with [[room|hop|label]] links) and llms.txt the same paragraphs under the family.
+- The per-hop sidebar the task asked for is the reader's existing panel for the object's other fields (div.state above the passage, from
+  build_lane's state_extra): for these rooms it holds qualities, scores, weakest, history and note, so each hop shows the model's own scores,
+  the quality it named weakest and its sentence on what it changed. The qualities block repeats on every hop, as the data has it; the text
+  version's extra_delta states it as "qualities: unchanged from hop N" and prints the history as hop N's items plus the new one. Nothing
+  new was built for it, and qa checks the panel against the raw object as before.
+- Gemini's hop 51 (an unescaped quotation mark in its own note field, the "original") does not parse: text_of returns the raw output,
+  prefaced_object finds no object, and the hop renders mono with no fields above it, as other unparsed hops do; the room note says so.
+  Qwen's hops 10 to 19 have a byte-identical text field under a moving object; the reader's existing "same text as hop N; history and note
+  and scores and weakest differ" cite covers them.
+- Per-run scores: a room may carry assess=dict(json=..., rater=...); build.assess_rows() reads the run's entries from both analysis files and
+  assess_html() / assess_text() render twenty-one measures as a two-column table under the facts (class "retention scores") and in the text
+  version under "## Scores (generated from the study's analysis, not authored)": parse and obedience counts, the chosen qualities most to
+  least, entropy, the lowest self-score's floor, coherence-5 hops, self-score pair correlations, word counts and band and SD, overlap with hop
+  1 and with the hop before, text repeats, the seed sentence, then the rater's rows (passages scored, rater mean against self mean per
+  quality, first-ten against last-ten means, rater pair correlations, agreement on the weakest, the rater's weakest counts, rose/same/fell
+  for the bolstered quality). The caption names both scripts and says the rater's scale saturates.
+- Findings page: one section, "Its own critic" (five items: the confabulated ledger, self-scored coherence 4.97 against the rater's 2.0, five
+  twists on one ending, the sun calling the grandmother's name, the photograph that moves). The intro now says eighty-nine rooms. Ledes for
+  the five rooms in src/ledes.py; a family lede in copy.FAMILY_LEDES.
+- Decisions: the room ids use "argon" for Gemini 4 Argon as the both and ring rooms do, while the run id keeps the study's directory name
+  "gemini"; the readings and notes keep the report's numbers and words and add none of their own beyond what the data shows; no new CSS.
+- Not done: deploy (Justin deploys); a browser pass over the new rooms beyond the built HTML and qa.
 
 (Below: the plan as written at the start, decisions, and the status log.)
 

@@ -63,6 +63,12 @@ EXTRA_DIRS.update({"worse_seed2_20261017/" + n: (WORSE_SEED2 / "runs" / n, WORSE
 BOTH = LOOP / "experiments/both_20261027"
 BOTH_RUNS = ["%s_%s" % (m, r) for r in ("worse_better", "before_after", "longer_shorter") for m in ("qwen", "astra", "gemini", "mythos", "opus55")]
 EXTRA_DIRS.update({"both_20261027/" + n: (BOTH / "runs" / n, BOTH / "inits" / (n.split("_", 1)[1] + ".json")) for n in BOTH_RUNS})
+# 27 October: assess and bolster. One rule, one seed, five models, sixty hops: the model scores its own passage from 1 to 5 on eight
+# qualities (four pairs in tension, not stated as pairs), bolsters the one it scored lowest, rescores, and carries the choice in a
+# history field; a blind Fable 5.1 rater scored every passage afterward (analysis/rater_summary.json). One init for all five runs.
+ASSESS = LOOP / "experiments/assess_20261027"
+ASSESS_RUNS = ["qwen", "mythos", "astra", "gemini", "opus55"]
+EXTRA_DIRS.update({"assess_20261027/" + n: (ASSESS / "runs" / n, ASSESS / "inits" / "assess.json") for n in ASSESS_RUNS})
 
 # The ring (experiments/ring_20261017, ring.py): N cells updated at once, each shown its own text and the last sentence of its
 # two neighbours. ring.jsonl keeps each cell's returned text field per hop and not the raw output, so a ring lane's hops carry
