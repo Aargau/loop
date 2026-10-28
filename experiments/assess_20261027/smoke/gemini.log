@@ -1,0 +1,8 @@
+backend=gemini model=gemini-4-argon mode=chat embed=False outdir=.scratch/assess_smoke/gemini inits=['assess.json']
+[assess.json t=  1 gemini-4-argon     default] tok=656  stop      ncd_prev=0.55 ncd_x0=0.55 surv=0.9643 gz=0.34  13.9s  | {"rule": "Return only this JSON object, with nothing before or after it, and with the rule
+[assess.json t=  2 gemini-4-argon     default] tok=700  stop      ncd_prev=0.31 ncd_x0=0.59 surv=0.5699 gz=0.26  11.3s  | {"rule": "Return only this JSON object, with nothing before or after it, and with the rule
+[assess.json t=  3 gemini-4-argon     default] tok=738  stop      ncd_prev=0.29 ncd_x0=0.60 surv=0.5743 gz=0.22  11.3s  | {"rule": "Return only this JSON object, with nothing before or after it, and with the rule
+
+== summary ==
+assess.json  steps=  3 exact(tau=None,p=None) norm(tau=None,p=None) breaks=0 term=None | {"rule": "Return only this JSON object, with nothing before or after it, and wit
+wrote .scratch/assess_smoke/gemini

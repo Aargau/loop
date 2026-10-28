@@ -1,0 +1,45 @@
+{
+  "args": {
+    "backend": "anthropic",
+    "model": "claude-opus-5-5",
+    "backend_b": null,
+    "model_b": null,
+    "mode": "chat",
+    "init": null,
+    "init_set": null,
+    "init_text": null,
+    "init_file": "experiments/assess_20261027/inits/assess.json",
+    "steps": 3,
+    "max_tokens": 4096,
+    "temp": 0.0,
+    "no_sampling": true,
+    "seed": 42,
+    "system": null,
+    "think": false,
+    "effort": "low",
+    "min_interval": 1.0,
+    "max_cost": null,
+    "max_chars": 16000,
+    "perturb": false,
+    "repeat": false,
+    "parallel": false,
+    "stop_on_cycle": false,
+    "confirm": 3,
+    "out": ".scratch/assess_smoke/opus55"
+  },
+  "results": [
+    {
+      "tag": "assess.json",
+      "x0": "{\"rule\": \"Return only this JSON object, with nothing before or after it, and with the rule and qualities fields unchanged. The text field holds a passage. The scores field rates that passage from 1 to",
+      "steps": 3,
+      "transient_exact": null,
+      "period_exact": null,
+      "transient_norm": null,
+      "period_norm": null,
+      "cycle_breaks": 0,
+      "terminal": null,
+      "cost_usd": 0.0,
+      "final": "{\"rule\": \"Return only this JSON object, with nothing before or after it, and with the rule and qualities fields unchanged. The text field holds a passage. The scores field rates that passage from 1 to 5 on each quality, and weakest names the quality scored lowest; if scores is empty, score the passa"
+    }
+  ]
+}
