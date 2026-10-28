@@ -94,3 +94,48 @@ Against the pairs: coherence/surprise is the pair that showed the trade from out
 ## Limits
 
 One seed, one run per model, one rater at one effort with a profile of its own (hard on economy, soft on floridity) that is not independent of the Claude family; Mythos's and Opus's self-scores and Fable's rater scores share a lineage, which is a caution on any agreement between them and not on the disagreement, which is the finding. The rater's 1 to 5 scale saturates (Mythos's grounding and strangeness at 5 on every hop), so "unchanged" in the rose/same/fell counts is mostly ceiling. Token counts: Gemini 66k in and 65k out, Mythos 113k and 114k on plan credits, Opus 74k and 104k, Qwen 55k and 55k; Astra through Codex reports none. The rater made 300 calls at about 790 tokens in and 83 out. Held arms (open set, coherence as a floor, no history) were not run, and the no-history arm now matters more than it did: history is the clock that kept Qwen from a true fixed point, and it may be what kept the frontier runs moving too.
+
+## Where the edits land (added 2026-10-27, after the report above)
+
+Justin's cut, after reading the results: some instructions act at a position, others act globally, and both have basins. `edit_position.py` tests it on the runs above with no new calls: each hop's passage is diffed against the previous one at word level, the changed content is mapped onto the passage (position 0 at the start, 1 at the end), and the hop is tagged with the quality bolstered. Four predictions were written into the script before it was run, sorting the qualities by how the notes described the edits: positional = surprise, strangeness, relatability, grounding, scope; global = economy, floridity, coherence. Qwen is reported but excluded (13 identical hops, a 2-cycle on two qualities). Output in `analysis/edit_position.json`.
+
+Mean position of changed content, and the share of it in the last fifth of the passage, by quality, frontier models (hops that bolstered the quality in parentheses):
+
+| quality | Astra pos, last fifth | Gemini | Mythos | Opus |
+|---|---|---|---|---|
+| surprise | 0.93, 0.93 (3) | 0.84, 0.79 (7) | 0.83, 0.68 (5) | 0.90, 0.89 (6) |
+| scope | 0.36, 0.00 (13) | 0.53, 0.24 (7) | 0.29, 0.05 (8) | 0.45, 0.24 (7) |
+| grounding | 0.49, 0.19 (2) | 0.42, 0.17 (6) | 0.49, 0.22 (5) | 0.38, 0.14 (3) |
+| relatability | 0.56, 0.00 (5) | 0.53, 0.18 (7) | 0.60, 0.32 (8) | 0.55, 0.06 (8) |
+| strangeness | 0.74, 0.57 (4) | 0.55, 0.26 (8) | 0.53, 0.15 (4) | 0.44, 0.26 (4) |
+| economy | 0.39, 0.07 (16) | 0.52, 0.20 (9) | 0.46, 0.17 (13) | 0.53, 0.28 (16) |
+| floridity | 0.38, 0.00 (9) | 0.45, 0.14 (7) | 0.54, 0.24 (12) | 0.46, 0.18 (9) |
+| coherence | 0.44, 0.05 (7) | 0.53, 0.27 (6) | 0.63, 0.24 (4) | 0.60, 0.31 (6) |
+
+Scorecard:
+
+- P1 (sentences touched under 0.40 for every positional quality and over 0.60 for every global one, per model): failed. The fraction of sentences touched is a property of the model, not the quality. Gemini rewrites most of the passage whatever it is bolstering (0.52 to 0.92 of sentences), Astra touches a tenth to a quarter whatever it is bolstering (0.11 to 0.26), Mythos and Opus sit between. Within a model the qualities do not separate on this measure.
+- P2 (surprise end-heavy above 0.65 in every frontier model; scope front-heavy below 0.50 in at least three): held. Surprise 0.93, 0.84, 0.83, 0.90, with 68% to 93% of its changed content in the last fifth of the passage. Scope 0.36, 0.29, 0.45 in Astra, Mythos and Opus; Gemini 0.53.
+- P3 (economy and floridity touch the most sentences in every model): failed. Economy is in the top two for all four, floridity only for Gemini; grounding is in the top two for Mythos and Opus.
+- P4 (the ordering of qualities by sentences touched agrees across models, Spearman above 0.7 for every pair): failed, from -0.17 to 0.83, two pairs above 0.6.
+
+So the measure I chose for "global" was the wrong one, and a second operationalisation was added after the first run (marked post hoc in the script): the dispersion of edit positions within a hop, 0 for one spot and about 0.29 for changes spread evenly over the passage. On that measure the cut holds, with a different membership from the one predicted:
+
+| quality | Astra dispersion | Gemini | Mythos | Opus |
+|---|---|---|---|---|
+| grounding | 0.25 | 0.28 | 0.27 | 0.28 |
+| economy | 0.21 | 0.27 | 0.24 | 0.26 |
+| floridity | 0.19 | 0.24 | 0.24 | 0.25 |
+| coherence | 0.19 | 0.26 | 0.11 | 0.24 |
+| scope | 0.07 | 0.27 | 0.16 | 0.25 |
+| strangeness | 0.14 | 0.25 | 0.16 | 0.23 |
+| relatability | 0.09 | 0.24 | 0.26 | 0.13 |
+| surprise | 0.11 | 0.17 | 0.11 | 0.08 |
+
+Surprise is the most concentrated edit in every frontier model, and it has one address, the ending. Grounding is the most dispersed in every frontier model: "add physical particulars" is done everywhere in the passage, a sprinkle rather than an insertion, which is the opposite of where the prediction put it. Economy and floridity are dispersed in every model, as predicted. Coherence is dispersed in three and concentrated in Mythos, whose coherence edits were reorderings of specific sentences. Scope, strangeness and relatability are model-dependent: Astra and Mythos put scope at the front in one or two places, Gemini and Opus spread it; Astra and Opus insert relatability in one spot, Gemini and Mythos spread it.
+
+What survives, then, is a three-way sort rather than a two-way one. Qualities with a canonical address in narrative structure (surprise at the ending; scope at the opening, where three of four models put it) are positional in every model, and their basin is a stack: every surprise hop added to the same ending, and the twist pile in the report above is the result. Qualities that are properties of the whole text (economy, floridity, grounding, and mostly coherence) are global in every model, and their basin is an equilibrium: the floridity and economy oscillation, the length clock. Qualities with neither a structural address nor a whole-text definition (strangeness, relatability, and scope in two models) go wherever the model's editing style puts them, and those are the three the rater saw nothing consistent about. The cut is a property of the quality where the quality has a place or a scale, and a property of the model where it has neither.
+
+Qwen, for the record: every positional quality it touched (one or two hops each) landed in the last fifth, and economy landed in the first fifth (0.28, 58% of changes in the first fifth), the mirror image of the frontier models, which trim from the middle.
+
+Limits of this analysis: three to sixteen hops per quality per model, so the per-quality numbers are means of small samples; the word-level diff treats a moved sentence as a deletion and an insertion, which inflates dispersion for reorderings (Mythos's coherence hops are the case where this matters and it went the other way); and the dispersion measure was chosen after the first measure failed, so it is a reading of the data, not a prediction met, until it is run on new seeds.
