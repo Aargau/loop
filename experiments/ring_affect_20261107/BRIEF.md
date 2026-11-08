@@ -93,3 +93,14 @@ Expected cost: 640 calls per run; at local Qwen speeds roughly an hour each. Run
 ## After the runs
 
 RESULTS.md next to this brief: each prediction scored held / failed / unresolved with the number that decides it; the space-time diagrams; three quotations at most, each with cell and hop; a cost line; and the one-sentence reading. Then a cognitive-workspace thread with key `ring-affect-pilot-2026-11-07`, basis OBSERVED for the numbers and INFERRED for the reading.
+
+## Amendment, 2026-11-07 ~19:00 Pacific, before launch: Run 3 (sampled)
+
+Run 1 at hop 16: frozen 16/16 from hop 1, word counts [70, 58 x7, 73, 58 x7], byte-identical copies. P1's fallback branch (p=0.3) realised: with every edge identical, Qwen at T=0 copies, and a penultimate disturbance is never promoted to the edge. Justin approved a sampled arm ("Sure.").
+
+Run 3: same seeds and placement as Run 1 (jug cell 0, panic cell 8), local Qwen, T=0.7, seed 42, otherwise identical. Predictions (Mythos, before launch): every cell rewrites at hop 1 (frozen 0/16, p=0.9); the panic anchor is paraphrased out of cell 8 by hop 3 (exact gone, fuzzy >= 0.5, p=0.7); panic lexicon reaches at least one neighbour by hop 5 (p=0.5); the jug reaches a neighbour only as an exact copy (P2 stands); whole-ring exact recurrence never (p=0.9). The result that matters is unchanged from P7: a diagonal streak longer than five hops that is not a verbatim copy, p=0.15 at T=0.7.
+
+    python ring.py --backend llama --model qwen3.8-27b --cells 16 --steps 40 --temp 0.7 --seed 42 --max-tokens 600 --workers 4 ^
+      --seed-file experiments/ring_affect_20261107/seeds/plain.txt --rule-file experiments/ring_affect_20261107/rule.txt ^
+      --disturb 0=experiments/ring_affect_20261107/seeds/jug.txt,8=experiments/ring_affect_20261107/seeds/panic.txt ^
+      --out experiments/ring_affect_20261107/runs/llama_qwen_n16_jug_panic_t07
