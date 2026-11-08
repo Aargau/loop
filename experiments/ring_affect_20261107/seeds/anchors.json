@@ -1,0 +1,10 @@
+{
+  "jug":   {"anchor": "blue enamel jug with the chipped lip", "kind": "fact",   "seed": "jug.txt"},
+  "panic": {"anchor": "could not think what the kettle was for", "kind": "affect", "emotion": "panic", "seed": "panic.txt",
+            "lexicon": ["breath", "breathe", "breathing", "fast", "faster", "too fast", "could not think", "couldn't think", "hands", "shaking", "shook", "trembl", "heart", "pounding", "racing", "gasp", "dizzy", "could not", "couldn't", "panic", "what the kettle was for", "forgot what", "did not know what", "didn't know what"]},
+  "grief": {"anchor": "stared downwards in a pensive agony", "kind": "affect", "emotion": "grief", "seed": "grief.txt",
+            "lexicon": ["agony", "pensive", "stared", "staring", "grief", "grieving", "forgotten", "forgot", "downwards", "down at", "wept", "weep", "tears", "ache", "aching", "sorrow", "loss", "lost", "gone", "empty", "silence", "still"]},
+  "background": {"seed": "plain.txt",
+            "lexicon_calm": ["warm", "quiet", "waited", "wiped", "counted", "tick", "ticked", "ticking", "good cups", "twenty past seven"]},
+  "cause_nouns_watch": "any capitalised name or concrete noun (letter, phone, call, telegram, doctor, hospital, news, knock, door) appearing in a cell within one hop of a panic/grief anchor or lexicon arrival, absent from that cell's previous text and from plain.txt"
+}

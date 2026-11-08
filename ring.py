@@ -5,6 +5,7 @@ neighbours. The 1-D cellular-automaton version of the memoryless loop (loop.py).
   python ring.py --backend cerebras --model qwen-3.8-27b --cells 7 --steps 40 --temp 0 \
       --seed-file experiments/ring_20261017/seeds/plain.txt --disturb-file experiments/ring_20261017/seeds/disturb.txt \
       --rule-file experiments/ring_20261017/rule.txt --out experiments/ring_20261017/runs/cerebras_qwen_n7
+  (several disturbed cells: --disturb 0=seeds/jug.txt,8=seeds/panic.txt; --disturb-file F is exactly --disturb 0=F)
 
 Each hop t: for every cell i the harness builds {"rule", "left": last sentence of cell i-1, "text": cell i,
 "right": last sentence of cell i+1} (indices mod N), calls the model once per cell with that object as the only user
@@ -50,6 +51,34 @@ def parse_text(out):
     return out, False
 
 
+def parse_disturb(spec, disturb_file, N):
+    """--disturb 'POS=FILE[,POS=FILE...]' -> {pos mod N: path}; --disturb-file F is {0: F}. Both at once, a malformed
+    item or a position named twice (after mod N) is an error."""
+    if spec and disturb_file:
+        raise SystemExit("ring: give --disturb or --disturb-file, not both (--disturb-file F equals --disturb 0=F)")
+    if disturb_file:
+        return {0: disturb_file}
+    dmap = {}
+    for item in (spec.split(",") if spec else []):
+        pos, sep, path = item.strip().partition("=")
+        try:
+            p = int(pos)
+        except ValueError:
+            p = None
+        if p is None or not sep or not path:
+            raise SystemExit("ring: bad --disturb item %r (want POS=FILE, POS an integer)" % item)
+        p %= N
+        if p in dmap:
+            raise SystemExit("ring: --disturb names cell %d twice (mod %d): %s and %s" % (p, N, dmap[p], path))
+        dmap[p] = path
+    return dmap
+
+
+def place_cells(N, seed, disturb_map):
+    """Initial ring: disturb_map {pos: text} in the named cells, seed everywhere else."""
+    return [disturb_map.get(i, seed) for i in range(N)]
+
+
 def main():
     ap = argparse.ArgumentParser()
     ap.add_argument("--backend", default="cerebras", choices=["llama", "anthropic", "openai", "cerebras", "claudecode", "gemini", "codex"])
@@ -58,8 +87,9 @@ def main():
     ap.add_argument("--backends", default=None, help="comma list, one backend per cell (with --models)")
     ap.add_argument("--cells", type=int, default=7)
     ap.add_argument("--steps", type=int, default=40)
-    ap.add_argument("--seed-file", required=True, help="text placed in every cell except the disturbed one")
-    ap.add_argument("--disturb-file", default=None, help="text placed in cell 0 (default: same as seed)")
+    ap.add_argument("--seed-file", required=True, help="text placed in every cell except the disturbed ones")
+    ap.add_argument("--disturb-file", default=None, help="text placed in cell 0 (default: same as seed); same as --disturb 0=FILE")
+    ap.add_argument("--disturb", default=None, help="POS=FILE[,POS=FILE...]: text placed in cell POS (0-based, mod N); not with --disturb-file")
     ap.add_argument("--rule-file", required=True)
     ap.add_argument("--max-tokens", type=int, default=600)
     ap.add_argument("--temp", type=float, default=0.0)
@@ -75,7 +105,8 @@ def main():
     N = args.cells
     rule = io.open(args.rule_file, encoding="utf-8").read().strip()
     seed = io.open(args.seed_file, encoding="utf-8").read().strip()
-    disturb = io.open(args.disturb_file, encoding="utf-8").read().strip() if args.disturb_file else seed
+    dmap = parse_disturb(args.disturb, args.disturb_file, N)
+    dtext = {p: io.open(path, encoding="utf-8").read().strip() for p, path in dmap.items()}
     models = args.models.split(",") if args.models else [args.model or {"cerebras": "qwen-3.8-27b", "claudecode": "claude-mythos-5-1", "codex": "gpt-6-astra", "llama": "qwen3.8-27b"}.get(args.backend, args.model)] * N
     backends = args.backends.split(",") if args.backends else [args.backend] * N
     assert len(models) == N and len(backends) == N, "one model and backend per cell"
@@ -85,8 +116,11 @@ def main():
                     "claudecode": L.step_claudecode, "gemini": L.step_gemini, "codex": L.step_codex}[b]
     os.makedirs(args.out, exist_ok=True)
     log = io.open(os.path.join(args.out, "ring.jsonl"), "a", encoding="utf-8")
-    cells = [disturb if i == 0 else seed for i in range(N)]
+    cells = place_cells(N, seed, dtext)
     rec0 = {"t": 0, "cells": [{"i": i, "text": c, "hash": h(c), "words": len(c.split()), "parsed": True, "finish": "seed", "model": models[i]} for i, c in enumerate(cells)]}
+    if args.disturb:  # new flag only, so records from --disturb-file runs stay byte-identical
+        for p, path in dmap.items():
+            rec0["cells"][p]["disturb"] = os.path.basename(path)
     log.write(json.dumps(rec0, ensure_ascii=False) + "\n"); log.flush()
     print("ring N=%d backend=%s models=%s steps=%d out=%s" % (N, ",".join(sorted(set(backends))), ",".join(sorted(set(models))), args.steps, args.out), flush=True)
 
@@ -119,6 +153,8 @@ def main():
         print("t=%3d frozen=%d/%d words=%s finishes=%s" % (t, frozen, N, [c["words"] for c in rec["cells"]], sorted(set(c["finish"] for c in rec["cells"]))), flush=True)
         cells = new
     summary = {"args": vars(args), "cells": N, "steps": args.steps, "models": models, "backends": backends}
+    if args.disturb:
+        summary["disturb"] = {str(p): dmap[p] for p in sorted(dmap)}
     json.dump(summary, io.open(os.path.join(args.out, "summary.json"), "w", encoding="utf-8", newline="\n"), indent=2)
     print("wrote", args.out)
 
