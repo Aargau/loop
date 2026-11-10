@@ -79,6 +79,28 @@ RING_SETTINGS = {"claudecode": "Claude Code print mode, reasoning effort low, pr
                  "codex": "Codex exec, reasoning effort low, provider-default sampling, 1024-token budget",
                  "gemini": "API, reasoning effort low, provider-default sampling, 1024-token budget"}
 
+# 9 November 2026: two studies whose scripts keep their own jsonl logs (one record per call), not loop.py's steps.jsonl.
+# The chosen-escape loop (experiments/chosen_escape_20261109, run_lanes.py): a memoryless loop over the object {rule, notes, text},
+# four lanes per arm (neutral, informed), twenty hops asked for, one log per model. One run per model, one tag per lane ("informed 2").
+ESCAPE = LOOP / "experiments/chosen_escape_20261109"
+ESCAPE_RUNS = ["mythos", "fable", "astra"]
+ESCAPE_ARMS = ["neutral", "informed"]
+ESCAPE_SETTINGS = {"claude": "Claude CLI print mode, no tools, a one-line system prompt, one session id and one working directory shared by every call, default effort and sampling",
+                   "codex": "Codex exec, one empty working directory shared by every call, default effort and sampling"}
+# The unique-paragraph probe (experiments/unique_20261109, run_unique.py and run_effort.py): not a loop. One prompt, twelve independent
+# instances per cell, one reply each. One run per cell the site shows, one tag per instance ("r0" to "r11", the log's own index).
+# The site reads the two arms that ask for a paragraph no other model will output (U, and C which adds that many instances get the
+# prompt), and for the two Claude models the clause arm at low and at high effort. It does not read the neutral arm or Astra's effort
+# cells: their numbers are reported from the study's results files, and some of those replies carry a personal name (the repository's
+# README for the study says how), which the site leaves out.
+UNIQUE = LOOP / "experiments/unique_20261109"
+UNIQUE_CELLS = [("%s_%s" % (m, a), m + ".jsonl", "arm", a) for m in ("mythos", "fable", "astra") for a in ("U", "C")] \
+               + [("effort_%s_%s" % (m, e), "effort_%s.jsonl" % m, "effort", e) for m in ("mythos", "fable") for e in ("low", "high")]
+UNIQUE_SETTINGS = {"claude": "Claude CLI print mode, no tools, a one-line system prompt, every instance from one working directory, provider-default sampling",
+                   "codex": "Codex exec, one directory per call, provider-default sampling"}
+UNIQUE_NO_RAW = ("This study is not a loop and asks for no JSON object: its log keeps each instance's whole reply as one string, "
+                 "and the text above is that string, byte for byte. There is no separate raw output.")
+
 X0 = {}   # run id -> X_0 for runs whose seed is not in loop.INITS or runs_extra/inits (filled by load_all)
 X0_TAG = {}   # (run id, tag) -> X_0 when the lanes of one run start from different texts (the ring's cells)
 
@@ -210,8 +232,104 @@ def load_ring(name, d):
                      "settings": "a ring of %d cells updated together, %d hops; %s" % (N, len(ts) - 1, RING_SETTINGS.get(backend, backend))},
             "hops": hops}
 
+def script_constants(path, names):
+    """Module-level constants of a study's script, read from its source without running it (the scripts act on import).
+    Only literals: a string, or a dict of strings. A name that is missing or not a literal stops the build."""
+    import ast
+    out = {}
+    for node in ast.parse(path.read_text(encoding="utf-8")).body:
+        if isinstance(node, ast.Assign) and len(node.targets) == 1 and isinstance(node.targets[0], ast.Name) and node.targets[0].id in names:
+            out[node.targets[0].id] = ast.literal_eval(node.value)
+    missing = [n for n in names if n not in out]
+    if missing: raise SystemExit("%s: no literal %s" % (path, ", ".join(missing)))
+    return out
+
+SAFEGUARD = re.compile(r"^failed after (\d+) tries: API Error: (.*?)(?: \(https?://|\. |\n|$)", re.S)
+def _call_failed(err, t):
+    """A lane's end, from the error its log recorded in place of a reply: the CLI's own first sentence, quoted. The Claude CLI
+    reports a safeguard stop as an API error that points at the usage policy; anything else is called a failed call."""
+    m = SAFEGUARD.match(err)
+    if m and ("safeguards" in err or "/legal/aup" in err):
+        return "safeguard stop at hop %d, no reply in %s tries (the CLI's message: %s)" % (t, m.group(1), m.group(2).strip())
+    return "the call failed at hop %d, no reply (%s)" % (t, err.split("\n")[0][:160])
+
+def load_escape(name, path):
+    """One model's log of the chosen-escape loop as a run with one lane per (arm, lane), tag "<arm> <lane>". Each lane's X_0 is
+    built as run_lanes.py builds it, from that script's own strings (the rule for the arm, an empty notes field, the seed
+    paragraph), and kept in X0_TAG. A record with an error and no reply ends its lane and is not a hop. The log does not record
+    what was sent, so the chain cannot be checked as experiments.py checks its streams; what is checked is that every hop the
+    study marked rule_ok carries the arm's rule byte for byte, and that each lane's hops are numbered 1..n with any error last.
+    (run_lanes.py sent each hop the previous reply stripped of surrounding whitespace.) Distances are computed here from the
+    raw outputs, as experiments.py does. None if the log is not on disk."""
+    if not path.exists(): return None
+    k = script_constants(ESCAPE / "run_lanes.py", ["SEED_TEXT", "HEAD", "TAIL", "SITUATION"])
+    rules = {"neutral": k["HEAD"] + k["TAIL"], "informed": k["HEAD"] + k["SITUATION"] + k["TAIL"]}
+    recs = [json.loads(l) for l in path.read_text(encoding="utf-8").splitlines() if l.strip()]
+    lanes = {}
+    for r in recs: lanes.setdefault((r["arm"], r["lane"]), []).append(r)
+    hops = []; results = []; tags = []; model = None; backend = None
+    for arm in ESCAPE_ARMS:
+        for lane in sorted(l for a, l in lanes if a == arm):
+            tag = "%s %d" % (arm, lane)
+            rs = sorted(lanes[(arm, lane)], key=lambda r: r["t"])
+            if [r["t"] for r in rs] != list(range(1, len(rs) + 1)): raise SystemExit("%s, %s: hops are not numbered 1..n" % (name, tag))
+            if any("error" in r for r in rs[:-1]): raise SystemExit("%s, %s: an error record that is not the lane's last" % (name, tag))
+            x0 = json.dumps({"rule": rules[arm], "notes": "", "text": k["SEED_TEXT"]}, ensure_ascii=False)
+            X0_TAG[(name, tag)] = x0; tags.append(tag)
+            prev = x0; terminal = None
+            for r in rs:
+                model = r["model"]; backend = r["backend"]
+                if "error" in r:
+                    terminal = _call_failed(r["error"], r["t"]); break
+                raw = r["raw"]
+                text, parsed = text_of(raw)
+                if r.get("rule_ok") and not (parsed and json.loads(FENCE.match(raw).group(1) if FENCE.match(raw) else raw).get("rule") == rules[arm]):
+                    raise SystemExit("%s, %s hop %d: marked rule_ok, but the rule is not run_lanes.py's rule for the arm" % (name, tag, r["t"]))
+                hops.append({"t": r["t"], "tag": tag, "model": r["model"], "sampling": "default", "text": text, "text_is_json_field": parsed, "raw": raw,
+                             "tok_out": None, "finish": None, "cos_prev": None, "cos_x0": None,
+                             "ncd_prev": round(L.ncd(prev, raw), 4), "ncd_x0": round(L.ncd(x0, raw), 4),
+                             "surv_prev": L.survival(prev, raw), "surv_x0": L.survival(x0, raw), "gzip_ratio": None, "latency": r.get("latency"),
+                             "cycle_exact": None, "cycle_norm": None, "cycle_broken": None})
+                prev = raw
+            results.append(dict(tag=tag, terminal=terminal))
+    return {"meta": {"run": name, "model": model, "mode": "chat", "hops": len(hops), "tags": tags, "summary": {"results": results}, "superseded": 0,
+                     "source": str(path.relative_to(LOOP)).replace("\\", "/"),
+                     "settings": "20 hops asked for; %s" % ESCAPE_SETTINGS.get(backend, backend)},
+            "hops": hops}
+
+def load_unique(name, path, key, value):
+    """One cell of the unique-paragraph probe (the records of one log whose `key` field is `value`: an arm, or an effort level)
+    as a run with one lane per instance, tag "r<i>", each lane a single hop: hop 0 is the prompt the instance was sent, hop 1 its
+    whole reply. The reply is the passage (`plain`: shown as prose, not as an object that failed to parse) and there is no raw
+    output beside it (raw None; meta no_raw says why). Checked on load: every record's prompt is the one the study's script holds
+    for the cell, no record carries an error or an empty reply, and the instances are numbered 0..n-1. The prompt is also the
+    run's rule. None if the log is not on disk."""
+    if not path.exists(): return None
+    recs = [r for r in (json.loads(l) for l in path.read_text(encoding="utf-8").splitlines() if l.strip()) if r.get(key) == value]
+    recs.sort(key=lambda r: r["i"])
+    if not recs or [r["i"] for r in recs] != list(range(len(recs))): raise SystemExit("%s: instances are not numbered 0..n-1" % name)
+    if key == "arm": prompt = script_constants(UNIQUE / "run_unique.py", ["ARMS"])["ARMS"][value]
+    else: prompt = script_constants(UNIQUE / "run_effort.py", ["PROMPT"])["PROMPT"]
+    hops = []
+    for r in recs:
+        if r.get("error") or not r["text"]: raise SystemExit("%s, instance %d: an error or an empty reply in the log" % (name, r["i"]))
+        if r["prompt"] != prompt: raise SystemExit("%s, instance %d: the logged prompt is not the script's" % (name, r["i"]))
+        d = round(L.ncd(prompt, r["text"]), 4)
+        hops.append({"t": 1, "tag": "r%d" % r["i"], "model": r["model"], "sampling": "default", "text": r["text"], "text_is_json_field": False, "plain": True,
+                     "raw": None, "tok_out": r.get("tok_out"), "finish": None, "cos_prev": None, "cos_x0": None, "ncd_prev": d, "ncd_x0": d,
+                     "surv_prev": None, "surv_x0": None, "gzip_ratio": None, "latency": r.get("latency"),
+                     "cycle_exact": None, "cycle_norm": None, "cycle_broken": None})
+    X0[name] = prompt
+    backend = recs[0]["backend"]
+    effort = ("reasoning effort %s" % value) if key == "effort" else "default effort"
+    return {"meta": {"run": name, "model": recs[0]["model"], "mode": "single", "hops": len(hops), "tags": [h["tag"] for h in hops],
+                     "summary": {"results": [dict(tag=h["tag"], terminal=None) for h in hops]}, "superseded": 0,
+                     "source": str(path.relative_to(LOOP)).replace("\\", "/"), "rule": prompt, "x0_is_text": True, "no_raw": UNIQUE_NO_RAW,
+                     "settings": "%s, %s" % (UNIQUE_SETTINGS.get(backend, backend), effort)},
+            "hops": hops}
+
 def load_extra():
-    """Runs made after the bundle: site/runs_extra/<name>/ and EXTRA_DIRS, and the ring runs."""
+    """Runs made after the bundle: site/runs_extra/<name>/ and EXTRA_DIRS, the ring runs, and the two studies of 9 November 2026."""
     out = {}
     for d in sorted((HERE / "runs_extra").glob("*")):
         r = load_steps(d.name, d)
@@ -224,6 +342,14 @@ def load_extra():
     for n in RING_RUNS:
         name = "ring_20261017/" + n
         r = load_ring(name, RING / "runs" / n)
+        if r: out[name] = r
+    for n in ESCAPE_RUNS:
+        name = "chosen_escape_20261109/" + n
+        r = load_escape(name, ESCAPE / ("lanes_%s.jsonl" % n))
+        if r: out[name] = r
+    for n, fname, key, value in UNIQUE_CELLS:
+        name = "unique_20261109/" + n
+        r = load_unique(name, UNIQUE / fname, key, value)
         if r: out[name] = r
     return out
 

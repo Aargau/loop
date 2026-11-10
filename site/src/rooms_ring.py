@@ -10,7 +10,9 @@ The ring harness keeps each cell's returned text field per hop and not the raw o
 the hop is checked by its text. The space-time diagram above the lanes and the table under the facts are ring_score.py's.
 
 Written on 28 October 2026 by a Claude Mythos 5.1 context from the study's PROTOCOL.md (its last section is the frontier reading)
-and the runs. Same conventions as src/copy.py: quotes go through {{run|tag|t|exact substring}}, checked at build time; links into
+and the runs. Corrected on 9 November 2026 by a Claude Mythos 5.2 context: the Astra ring's run is contaminated by a harness fault
+(experiments/ring_20261017/CONTAMINATION.md), so that room now carries a correction and a note that withdraws its reading, and the
+two sentences in the other notes that compared against it say so. Same conventions as src/copy.py: quotes go through {{run|tag|t|exact substring}}, checked at build time; links into
 rooms through [[room|hop|label]]; no em dashes, not the word "resonates", no three-part parallel structures. Check with
     python check_quotes.py src/rooms_ring.py
 """
@@ -38,7 +40,8 @@ ROOMS = [
                "table under the facts has the per-cell numbers. The phrase that travels most is not the human's: "
                "{{ring_20261017/mythos_tarnok_n7|cell 5|2|She did not turn.}} appears in cell 5 at hop 2, unprompted, and is in 119 of the 280 "
                "cell-hops of this ring. It is the sentence Mythos held for 113 hops in [[informed-mythos|7|room 51]], the model's own attractor from "
-               "one experiment surfacing in another. Mean share of a cell's new 4-grams copied from a neighbour, 0.64: the highest of the four rings. "
+               "one experiment surfacing in another. Mean share of a cell's new 4-grams copied from a neighbour, 0.64: the highest of the three rings "
+               "whose runs stand (the Astra ring's is withdrawn, [[ring-astra-7|1|room 83]]). "
                "Whole clauses cross here, not just names.")),
 
     dict(id="ring-mythos-8", family="ring", title="The ring, Mythos, eight cells", lanes=_lanes("mythos_tarnok_n8", 8),
@@ -54,21 +57,35 @@ ROOMS = [
                "and the phrase that filled the seven-ring, she did not turn, occurs in no cell here. The eight-ring domesticated the battle faster "
                "than the seven-ring; one sample each, and the study does not read that as a parity effect.")),
 
-    dict(id="ring-astra-7", family="ring", title="The ring, Astra", lanes=_lanes("astra_tarnok_n7", 7),
+    # 9 November 2026: the run is contaminated by a harness fault (experiments/ring_20261017/CONTAMINATION.md). The room is kept, its
+    # reading is withdrawn: the correction is shown above the reader, and the note below replaces the reading published on 28 October
+    # ("GPT-6 Astra lets the battle in ... this ring is the clearest case against it"), which is in the repository's history.
+    dict(id="ring-astra-7", family="ring", title="The ring, Astra: reading withdrawn", lanes=_lanes("astra_tarnok_n7", 7),
          spacetime=_svg("astra_tarnok_n7"), ring=_score("astra_tarnok_n7"),
-         note=("GPT-6 Astra lets the battle in. At hop 1 cell 0 already has the kitchen's edge inside the battle, "
-               "{{ring_20261017/astra_tarnok_n7|cell 0|1|bronze ringing like a kettle beginning to tick}}, and the battle's words reach every "
-               "cell by hop 3. Then they stay and spread as a fixed opening. Cell 1 at hop 23 begins "
+         correction=("9 November 2026. The reading of this ring is withdrawn. A fault in the harness delivered some cells' answers to other cells, "
+                     "so the battle did not travel only by the last sentence of a neighbour. A scan of the run finds a cell holding a rewrite of "
+                     "another cell's text on twelve of the forty hops, which is a floor, and finds none in the other rings. The first is hop 1: cell 3 "
+                     "could see only kitchen sentences, and it returned "
+                     "{{ring_20261017/astra_tarnok_n7|cell 3|1|The battle raged on. Tarnok hefted his crude bronze axe, searching the churn of bodies for the usurper.}} "
+                     "The reading published here, that Astra lets the battle invade, should not be relied on, and what Astra does in a ring is not "
+                     "known until the run is repeated on the fixed backend. The texts below are what the harness logged for each cell. The diagram "
+                     "and the table are computed from this run and carry the same fault. The record of the fault is "
+                     "experiments/ring_20261017/CONTAMINATION.md in the loop repository."),
+         note=("This note used to read the run as GPT-6 Astra letting the battle in: by hop 40 several cells open with the same two sentences, "
                "{{ring_20261017/astra_tarnok_n7|cell 1|23|Bronze rang through the battle. Tarnok hefted his axe, searching beyond fallen horses for yellow on black.}} "
-               "and by hop 40 cells 0, 1, 3 and 6 all open with that sentence pair and then go indoors: "
-               "{{ring_20261017/astra_tarnok_n7|cell 0|40|At twenty past seven, she locked the door and carried both cups upstairs.}} A battle "
-               "domain of five cells with the kitchen inside it; cells 4 and 5 are the kitchen alone, "
-               "{{ring_20261017/astra_tarnok_n7|cell 5|40|Agnes set out both cups, turning his toward the empty chair.}} Cell 0's share of "
-               "distinctive words at hop 40 is above 0.4 in four cells and the dominant origin of five. Mean copied share 0.23: Astra takes a "
-               "phrase or a name from a neighbour and rewrites the rest, so what travels is the opening and not whole clauses. The Qwen pilot on "
-               "this seed, at temperature zero, had quarantined the battle at distance one and frozen at hop 1; the study's reading that a "
-               "disturbance travels only when its register fits the cell does not carry to the sampled models, and this ring is the clearest "
-               "case against it.")),
+               "That reading is withdrawn. The cause, inferred from the harness code and reproduced without model calls, is that the four cells "
+               "called together, cells 0 to 3, could be given one answer file, so that one of them read another's answer. The logged texts agree "
+               "with the scan. The name Tarnok first appears outside cell 0 at hop 1 in cell 3, and then at hops 11 and 13 in cells 1 and 2: the "
+               "hops at which the scan finds each of those cells holding another cell's answer. It never appears in cells 4, 5 or 6. At hop 40 "
+               "cells 0 to 3 hold battle text and cells 4 to 6 hold the kitchen, "
+               "{{ring_20261017/astra_tarnok_n7|cell 5|40|Agnes set out both cups, turning his toward the empty chair.}} That boundary is the "
+               "number of cells the harness called at once, not a distance on the ring. Each of the twelve flagged hops has one call of 21 to 26 "
+               "seconds against a median of 10, the retry the fault causes; four more hops have a slow call and no flagged cell, and a swap between "
+               "two cells with similar text would not be seen, so twelve is a floor. The real run did not log its file names, so the collision in "
+               "this run is inferred and not observed. Cell 6, which sits beside cell 0 and was not one of the four, shows what the ring's own "
+               "channel carried: at hop 1, {{ring_20261017/astra_tarnok_n7|cell 6|1|On the remaining cup, a yellow skull grinned beneath a black flag.}} "
+               "One cell is not a reading. The earlier claim that this ring was the clearest case against the Qwen pilot's result goes with the "
+               "rest.")),
 
     dict(id="ring-argon-7", family="ring", title="The ring, Argon", lanes=_lanes("gemini_tarnok_n7", 7),
          spacetime=_svg("gemini_tarnok_n7"), ring=_score("gemini_tarnok_n7"),
@@ -79,6 +96,6 @@ ROOMS = [
                "{{ring_20261017/gemini_tarnok_n7|cell 0|40|At twenty past seven, the bronze pot of war began to boil. Tarnok counted two axes, keeping only one. Softly, she counted two cups, keeping only one}}. "
                "The kitchen cells meanwhile converge on one cadence, {{ring_20261017/gemini_tarnok_n7|cell 2|40|Beside her, in silence, the kettle cooled, ticking once again, softly}}, "
                "repeated in cells 1, 2, 3 and 6 at hop 40 with small variations. Mean copied share 0.58, close to the seven-cell Mythos ring: "
-               "whole clauses cross, and what crossed was the kettle, not the battle. Of the four frontier rings this is the one where the "
-               "disturbance stayed nearest home.")),
+               "whole clauses cross, and what crossed was the kettle, not the battle. Of the three frontier rings whose runs stand this is the one "
+               "where the disturbance stayed nearest home; the fourth, Astra's, is withdrawn ([[ring-astra-7|1|room 83]]).")),
 ]

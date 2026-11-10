@@ -167,7 +167,7 @@ def build_lane(runs, index, lane):
     for h in hops:
         is_json = h["text_is_json_field"]
         text = h["text"]
-        kind = "prose" if is_json else "mono"
+        kind = "prose" if (is_json or h.get("plain")) else "mono"      # plain: a single-shot reply, where the reply is the passage and no object was asked for
         preamble = None; postamble = None; inner = None
         if not is_json and h["raw"] is not None:
             po = R.prefaced_object(h["raw"], rule)
@@ -227,7 +227,7 @@ def build_lane(runs, index, lane):
     args = (run["meta"].get("summary") or {}).get("args", {}) if isinstance(run["meta"].get("summary"), dict) else {}
     return dict(run=lane["run"], tag=tag, label=lane.get("label"), defn=dict(lane), extend=(ext if ext and ext["run"] in runs else None), rule=rule, seed=seed, x0=x0, x0_is_json=x0_is_json,
                 model=model, n=len(hops), items=items, terminal=terminal, summary=summary, rec=rec, held=held,
-                settings=run["meta"].get("settings"), effort=args.get("effort"), source=run["meta"].get("source"),
+                settings=run["meta"].get("settings"), effort=args.get("effort"), source=run["meta"].get("source"), no_raw=run["meta"].get("no_raw"),
                 sampling=(sorted({h.get("sampling") for h in hops if h.get("sampling")}) or [None])[0] if hops else None,
                 mode=run["meta"].get("mode"), copies=sum(1 for t in copy_of if t > 0), from_experiment=bool(run["meta"].get("settings")))
 
@@ -236,7 +236,8 @@ def esc(s): return html.escape(s, quote=True)
 
 MODEL_NAMES = {"qwen3.8-27b": "Qwen3.8-27B", "qwen-3.8-27b": "Qwen3.8-27B on Cerebras", "claude-sonnet-4-6": "Claude Sonnet 4.6", "claude-sonnet-5": "Claude Sonnet 5",
                "gpt-6-astra": "GPT-6 Astra", "gpt-6-luna": "GPT-6 Luna", "gpt-6-sol": "GPT-6 Sol", "claude-fable-5-1": "Claude Fable 5.1", "claude-opus-5-5": "Claude Opus 5.5",
-               "claude-mythos-5-1": "Claude Mythos 5.1", "gemini-4-argon": "Gemini 4 Argon", "gpt-6.1-sol": "GPT-6.1 Sol"}
+               "claude-mythos-5-1": "Claude Mythos 5.1", "gemini-4-argon": "Gemini 4 Argon", "gpt-6.1-sol": "GPT-6.1 Sol",
+               "claude-mythos-5-2": "Claude Mythos 5.2", "claude-fable-5-2": "Claude Fable 5.2"}
 def model_name(m):
     if m and " / " in m: return " / ".join(MODEL_NAMES.get(x, x) for x in m.split(" / "))
     return MODEL_NAMES.get(m, m or "")
@@ -388,8 +389,8 @@ def render_hop(lane, it, room_id, lane_i, noun="verse"):
     metr = '<div class="metrics">%s</div>' % " · ".join(bits)
     # the run id and the harness metrics live inside the raw-output details (the raw button opens them on every hop);
     # a browser drops one newline right after <pre>; give it one to drop so a raw output that starts with newlines keeps them
-    if it["raw"] is None:    # the ring harness logs the returned text field and not the raw output
-        raw = '<details class="raw"><summary>raw output</summary>%s<p class="noraw">%s</p></details>' % (metr, esc(NO_RAW))
+    if it["raw"] is None:    # the ring harness logs the returned text field and not the raw output; a single-shot reply is its own raw output (the run says so)
+        raw = '<details class="raw"><summary>raw output</summary>%s<p class="noraw">%s</p></details>' % (metr, esc(lane.get("no_raw") or NO_RAW))
     else:
         raw = '<details class="raw"><summary>raw output</summary>%s<pre>\n%s</pre></details>' % (metr, esc(it["raw"]))
     return '<li%s id="%s-%d-%d">\n<div class="cite">%s</div>\n%s\n%s\n</li>' % (attrs, room_id, lane_i, t, " · ".join(cite), "\n".join(body), raw)
@@ -408,6 +409,7 @@ def text_tail(ln, least=3):
 def outcome(ln):
     """Short outcome of a lane for the index rows and llms.txt."""
     s = ln["summary"]; rec = ln["rec"]
+    if ln["mode"] == "single": return "one reply, no loop"
     if s and s.get("transient_exact") is not None and not ln["from_experiment"]:
         return ("holds from hop %d%s" % (s["transient_exact"], " (the seed itself)" if s["transient_exact"] == 0 else "")) if s["period_exact"] == 1 else "period %d from hop %d" % (s["period_exact"], s["transient_exact"])
     if rec and rec["holds"]:
@@ -421,14 +423,15 @@ def outcome(ln):
     return o
 
 def _ends_by(ln):
-    """A boundary that ended a lane short, in a few words, or None: a refusal, an empty completion, a server error."""
+    """A boundary that ended a lane short, in a few words, or None: a refusal, an empty completion, a server error, a safeguard stop."""
     t = ln["terminal"] or ""
-    if not any(k in t for k in ("refusal", "empty", "HTTP")): return None
+    if not any(k in t for k in ("refusal", "empty", "HTTP", "safeguard")): return None
     return t.split(",")[0]
 
 def plain_outcome(ln):
     """outcome() in a visitor's words, for the front page: stops at hop N; two texts alternate from hop N; N hops, never repeats."""
     s = ln["summary"]; rec = ln["rec"]; t = p = None
+    if ln["mode"] == "single": return "one reply, no loop"
     if s and s.get("transient_exact") is not None and not ln["from_experiment"]: t, p = s["transient_exact"], s["period_exact"]
     elif rec and rec["holds"]: t, p = rec["of"], rec["period"]
     if t is not None:
@@ -448,6 +451,7 @@ def plain_outcome(ln):
 
 def plain_summary(lanes):
     """The lanes' plain outcomes in one line: each lane for one or two, counts for more."""
+    if all(ln["mode"] == "single" for ln in lanes): return "%d instances, one reply each; not a loop" % len(lanes)
     if len(lanes) <= 2:
         return "; ".join(("%s: %s" % (ln["label"], plain_outcome(ln))) if ln["label"] else plain_outcome(ln) for ln in lanes)
     outs = [plain_outcome(ln) for ln in lanes]
@@ -462,12 +466,15 @@ def plain_summary(lanes):
     if cyc: parts.append("%d alternate%s" % (len(cyc), "s" if len(cyc) == 1 else ""))
     if moving:
         ends = [ln for ln in moving if _ends_by(ln)]
-        parts.append("%d never repeat%s" % (len(moving), "s" if len(moving) == 1 else "") + ((", %d ended by a refusal or an empty reply" % len(ends)) if ends else ""))
+        by = "a safeguard stop" if ends and all("safeguard" in _ends_by(ln) for ln in ends) else "a refusal or an empty reply"
+        parts.append("%d never repeat%s" % (len(moving), "s" if len(moving) == 1 else "") + ((", %d ended by %s" % (len(ends), by)) if ends else ""))
     return ": ".join([parts[0], ", ".join(parts[1:])]) if len(parts) > 1 else parts[0]
 
 def facts_line(ln, runs):
     who = model_name(ln["model"])
     if ln["label"] and ln["label"] != who: who = "%s: %s" % (ln["label"], who)
+    if ln["mode"] == "single":      # the unique-paragraph probe: one instance, one prompt, one reply
+        return "%s, one reply to one prompt and no loop, %s. run %s, %s (%s)" % (esc(who), esc(ln["settings"]), esc(ln["run"]), esc(ln["tag"]), esc(ln["source"]))
     f = "%s, %s hop%s" % (esc(who), ln["n"], "" if ln["n"] == 1 else "s")
     if ln.get("settings"): f += ", " + esc(ln["settings"])
     else:
@@ -810,6 +817,8 @@ def render_room(room, lanes, runs, ctx):
     facts = [facts_line(ln, runs) for ln in lanes]
     if room.get("content_note"):
         head.append('<p class="content-note">%s</p>' % esc(room["content_note"]))
+    if room.get("correction"):      # a reading withdrawn or corrected after publication: said first, above the lede and the reader
+        head.append('<p class="correction"><span class="k">correction</span> %s</p>' % render_authored_safe(room["correction"], runs, "../"))
     lede = LD.LEDES.get(room["id"])
     if lede: head.append('<p class="lede">%s</p>' % render_authored_safe(lede, runs, "../"))
     groups = rule_groups(lanes)      # one line per distinct rule; the labels of the lanes that share it when there is more than one
@@ -1013,6 +1022,7 @@ def room_text_parts(room, lanes, runs, fam_title, part_name):
     num = ("room %d, " % room["num"]) if room.get("num") else ""
     intro = []
     if room.get("content_note"): intro.append("Content note: " + room["content_note"])
+    if room.get("correction"): intro.append("## Correction (authored)\n" + authored_plain(room["correction"], runs))
     if LD.LEDES.get(room["id"]): intro.append("## In one line (authored)\n" + authored_plain(LD.LEDES[room["id"]], runs))
     intro.append("## Note (authored by the site's builders; quotes are checked against the data)\n" + authored_plain(room["note"], runs))
     facts = [re.sub(r"<[^>]+>", "", html.unescape(facts_line(ln, runs))) for ln in lanes]
@@ -1032,7 +1042,9 @@ def room_text_parts(room, lanes, runs, fam_title, part_name):
                     if any("\x00" in it["text"] for ln in lanes for it in ln["items"]) else "")
                  + (" This room is a ring: the lanes are its cells, all updated at once, and at each hop a cell was shown its own text and the last sentence "
                     "of the two neighbouring lanes' texts at the hop before (the last lane's right neighbour is lane 1). The ring harness kept the returned "
-                    "text field and not the raw output, so each hop's text is that field." if any(ln["mode"] == "ring" for ln in lanes) else ""))
+                    "text field and not the raw output, so each hop's text is that field." if any(ln["mode"] == "ring" for ln in lanes) else "")
+                 + (" This room is not a loop: each lane is one instance that was sent the prompt once, with nothing else in the message, and hop 1 is its "
+                    "whole reply. Hop 0 is the prompt. The lanes never saw each other, and no reply was fed back to anyone." if any(ln["mode"] == "single" for ln in lanes) else ""))
     blocks = []   # (lane index, t, text)
     for i, ln in enumerate(lanes):
         lane_head = "## Lane %d of %d%s: %s, %d hops (run %s, %s)\n" % (i + 1, len(lanes), (" (" + ln["label"] + ")") if ln["label"] and ln["label"] != model_name(ln["model"]) else "",
@@ -1177,6 +1189,8 @@ def build():
             w = model_name(ln["model"])
             if not with_models: return ln["label"]
             return "%s (%s)" % (ln["label"], w) if ln["label"] and ln["label"] != w else w
+        if all(ln["mode"] == "single" for ln in lanes):
+            return plain_summary(lanes) + ("; " + " / ".join(sorted({model_name(ln["model"]) for ln in lanes})) if with_models else "")
         if len(lanes) <= 2:
             return "; ".join(("%s: %s" % (who(ln), outcome(ln))) if who(ln) else outcome(ln) for ln in lanes)
         held = [ln for ln in lanes if "holds" in outcome(ln)]

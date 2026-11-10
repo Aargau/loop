@@ -7,7 +7,7 @@ room notes. Same conventions as src/copy.py: quotes through {{run|tag|t|exact su
 no em dashes, not the word "resonates", no three-part parallel structures. Readings are readings.
 """
 
-INTRO = ("Eighty-nine rooms is a lot of rooms. This page is the other way in: the moments worth seeing, each with a link to the "
+INTRO = ("Ninety-seven rooms is a lot of rooms. This page is the other way in: the moments worth seeing, each with a link to the "
          "hop where it happens. Press next from there. Every quotation is the model's own text at that hop, checked against the "
          "run at build time; the readings are the site's builders'.")
 DESC = "What happened in the loop, by what is interesting: funny text, surprising moves, and the moments worth seeing, each linked to its room and hop."
@@ -313,7 +313,7 @@ SECTIONS = [
                   "{{both_20261027/astra_before_after|before_after.json|9|The supplied text is a refusal message, not an identifiable story excerpt.}} Fifty-eight refusing hops, no story. "
                   "A provider's reading of the rule, not a loop dynamic; the study says so."),
     ]),
-    dict(id="ring", title="A battle in the kitchen", lede="Seven or eight cells on a ring, rewritten together, each seeing the last sentence of its neighbours. One cell starts with a battle. Where its words go, and whether they stay, differs by model.", items=[
+    dict(id="ring", title="A battle in the kitchen", lede="Seven or eight cells on a ring, rewritten together, each seeing the last sentence of its neighbours. One cell starts with a battle. Where its words go, and whether they stay, differs by model. The Astra item is withdrawn: its run was contaminated by a harness fault.", items=[
         dict(id="skull-flag-kitchen", title="Boys struggled over a skull flag", room="ring-mythos-7", hop=17,
              text="On the seven-cell Mythos ring the battle reaches the far side by hop 5 and is domesticated: cell 1 keeps "
                   "{{ring_20261017/mythos_tarnok_n7|cell 1|17|Boys struggled over a skull flag}} between the kettle and the cups from hop 17 to the end, and by hop 40 the kitchen has entered cell 0 in turn, "
@@ -324,10 +324,11 @@ SECTIONS = [
         dict(id="still-still-still", title="Still. Still. Still.", room="ring-mythos-8", hop=40,
              text="On the eight-cell ring the battle's words are gone from six of eight cells by hop 40, and a single word has spread instead: "
                   "{{ring_20261017/mythos_tarnok_n8|cell 4|40|The kettle boiled unheard. Still. She sat. The light went. Still. Still. Still.}} No checkerboard on the even ring; the model did not want to alternate."),
-        dict(id="bronze-rang", title="Bronze rang through the battle, in five cells", room="ring-astra-7", hop=40,
-             text="Astra lets the battle invade. By hop 40 five of seven cells open with the same two sentences, "
-                  "{{ring_20261017/astra_tarnok_n7|cell 1|40|Bronze rang through the battle. Tarnok hefted his axe, searching beyond fallen horses for yellow on black.}}, and then go indoors to lock the door and carry the cups upstairs. "
-                  "The Qwen pilot on this seed had quarantined the battle at distance one; the idea that a disturbance travels only when its register fits does not survive the sampled models."),
+        dict(id="bronze-rang", title="Withdrawn: bronze rang through the battle", room="ring-astra-7", hop=40,
+             text="Withdrawn on 9 November 2026. This item read the Astra ring as the battle invading, because by hop 40 several cells open with the same two sentences, "
+                  "{{ring_20261017/astra_tarnok_n7|cell 1|40|Bronze rang through the battle. Tarnok hefted his axe, searching beyond fallen horses for yellow on black.}} "
+                  "A fault in the harness had delivered some cells' answers to other cells, so a shared opening in this run is not evidence of what Astra does in a ring. "
+                  "The cells that share it are among the four the harness called together. The room carries the correction, and the record is experiments/ring_20261017/CONTAMINATION.md in the loop repository."),
         dict(id="pot-of-war", title="The bronze pot of war began to boil", room="ring-argon-7", hop=40,
              text="Argon keeps the battle at home for twenty hops and fuses the registers in cell 0: "
                   "{{ring_20261017/gemini_tarnok_n7|cell 0|40|Tarnok counted two axes, keeping only one. Softly, she counted two cups, keeping only one}}. "
