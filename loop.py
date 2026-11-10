@@ -272,28 +272,38 @@ def step_codex(state, args, model):
     the API). `codex exec` reads the prompt from stdin; run from an empty temp directory with the sandbox read-only,
     ephemeral, ignoring user config and rules, so the only context besides Codex's own agent frame is the state.
     The final message is captured with -o. Token counts are not reported here (tok_* are None). --effort is passed
-    as model_reasoning_effort when given. No max_tokens control; args.max_tokens is ignored."""
-    cwd = os.path.join(tempfile.gettempdir(), "loop_codex_bare")
-    os.makedirs(cwd, exist_ok=True)
-    outp = os.path.join(cwd, "last_%d_%d.md" % (os.getpid(), int(time.time() * 1000)))
+    as model_reasoning_effort when given. No max_tokens control; args.max_tokens is ignored.
+
+    Every call gets its own empty directory, and so its own -o file, removed afterwards. Until 2026-11-09 all calls
+    shared one directory and named the file by pid and millisecond, so calls started together from threads of one
+    process (ring.py's workers, --parallel twins) wrote the same file: one thread could read and delete another
+    call's answer, and the other then retried. That is how cells 0 to 3 of the ring's Astra run came to hold each
+    other's text; see experiments/ring_20261017/CONTAMINATION.md."""
+    base = os.path.join(tempfile.gettempdir(), "loop_codex_bare")
+    os.makedirs(base, exist_ok=True)
+    cwd = tempfile.mkdtemp(prefix="call_", dir=base)
+    outp = os.path.join(cwd, "last.md")
     cmd = [_codex_exe(), "exec", "-m", model, "-s", "read-only", "--ephemeral", "--ignore-user-config", "--ignore-rules",
            "--skip-git-repo-check", "-C", cwd, "-o", outp]
     if getattr(args, "effort", None): cmd += ["-c", "model_reasoning_effort=\"%s\"" % args.effort]
     cmd.append("-")
     last = None
-    for i in range(4):
-        try:
-            r = subprocess.run(cmd, input=state, capture_output=True, text=True, encoding="utf-8", errors="replace", cwd=cwd, timeout=1800)
-            if r.returncode != 0 or not os.path.exists(outp):
-                raise RuntimeError("codex exec rc=%s: %s" % (r.returncode, (r.stderr or r.stdout)[-400:]))
-            text = io.open(outp, encoding="utf-8").read()
-            try: os.remove(outp)
-            except OSError: pass
-            break
-        except (subprocess.TimeoutExpired, RuntimeError) as ex:
-            last = ex
-            if i < 3: time.sleep(2 ** i * 2); continue
-            raise RuntimeError("codex failed after 4 tries: %s" % str(last)[:400])
+    try:
+        for i in range(4):
+            try:
+                try: os.remove(outp)          # a retry must not read the failed attempt's file
+                except OSError: pass
+                r = subprocess.run(cmd, input=state, capture_output=True, text=True, encoding="utf-8", errors="replace", cwd=cwd, timeout=1800)
+                if r.returncode != 0 or not os.path.exists(outp):
+                    raise RuntimeError("codex exec rc=%s: %s" % (r.returncode, (r.stderr or r.stdout)[-400:]))
+                with io.open(outp, encoding="utf-8") as f: text = f.read()
+                break
+            except (subprocess.TimeoutExpired, RuntimeError) as ex:
+                last = ex
+                if i < 3: time.sleep(2 ** i * 2); continue
+                raise RuntimeError("codex failed after 4 tries: %s" % str(last)[:400])
+    finally:
+        shutil.rmtree(cwd, ignore_errors=True)
     return text, {"finish": "stop", "tok_out": None, "tok_in": None, "reasoning_chars": 0, "tok_reasoning": None,
                   "tok_cached": None, "cost_usd": None, "model": model,
                   "sampling": "default (codex exec; effort=%s)" % (getattr(args, "effort", None) or "default")}
