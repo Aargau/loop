@@ -10,7 +10,8 @@
    lane's X_0, the copy flag and data-copy-of against byte equality of states, the context rendering
    against the text, the lane's data-n against its hop count (extensions included), every data hop
    rendered once and in order, the rule against X_0. One room section per page, its lanes those of the
-   room's definition, and the rooms are build_report.json's rooms + annex.
+   room's definition, and the rooms are build_report.json's rooms + annex. A room whose definition
+   carries a correction shows it above the reader and states it in its text version.
 2. Text versions t/<room>.txt, t/<room>-2.txt ...: the parts are joined, each hop block is parsed and
    the hop's text and other JSON fields are rebuilt from the data's earlier hops (named copies, prefix
    continuations, repeated text fields, field deltas); every hop of every lane once, in order; part
@@ -103,9 +104,10 @@ def read_page(path):
 def shown_of(h, rule):
     """What the site shows as a hop's text: (text, preamble, postamble, mono). Mono is the raw output
     of a hop that did not parse; a fenced object with the lane's rule is shown as its text field. A ring hop
-    has no raw output (the harness kept the text field only) and is shown as that text."""
+    has no raw output (the harness kept the text field only) and is shown as that text. A single-shot reply
+    (`plain`: the unique-paragraph probe) is the passage itself and must be shown as prose, not as raw."""
     if h["text_is_json_field"]: return h["text"], None, None, False
-    if h["raw"] is None: return h["text"], None, None, True
+    if h["raw"] is None: return h["text"], None, None, not h.get("plain")
     po = R.prefaced_object(h["raw"], rule)
     if po: return po[0], po[1], po[2], False
     return h["raw"], None, None, True
@@ -375,7 +377,7 @@ def authored():
            ("MAP_NOTE", C.MAP_NOTE), ("FOR_MODELS", C.FOR_MODELS)]
     out += [("INTRO", s) for s in C.INTRO] + [("INTRO_AFTER_SEED", s) for s in C.INTRO_AFTER_SEED]
     for r in C.ROOMS + [C.ROOM_QWEN_NEXT] + C.EXTRA_ROOMS + C.LATER_ROOMS + C.ANNEX:
-        out += [("room %s %s" % (r["id"], k), r[k]) for k in ("title", "note", "content_note") if r.get(k)]
+        out += [("room %s %s" % (r["id"], k), r[k]) for k in ("title", "note", "content_note", "correction") if r.get(k)]
         out += [("room %s lane label" % r["id"], ln["label"]) for ln in r["lanes"] if ln.get("label")]
     for f in C.FAMILIES:
         out += [("family %s title" % f["id"], f["title"]), ("family %s blurb" % f["id"], f["blurb"])]
@@ -423,6 +425,13 @@ def main():
         rid = rel[2:-5]
         if len(pg.rooms) != 1: fail("%s: %d room sections" % (rel, len(pg.rooms))); continue
         if pg.rooms[0]["id"] != rid: fail("%s: section id %s" % (rel, pg.rooms[0]["id"]))
+        # a room that carries a correction must show it above the reader and state it in its text version
+        if defs.get(rid, {}).get("correction"):
+            head = s.split('<div class="controls">', 1)[0]
+            if '<p class="correction">' not in head: fail("%s: the room has a correction and the page does not show it above the reader" % rel)
+            t1 = DIST / "t" / B.part_name(rid, 1)
+            if not t1.is_file() or ("## Correction (authored)\n" + B.authored_plain(defs[rid]["correction"], runs)) not in t1.read_text(encoding="utf-8"):
+                fail("t/%s: the room's correction is not stated" % B.part_name(rid, 1))
         if pg.rooms[0]["annex"] != (rid in rep["annex"]): fail("%s: annex class does not match build_report.json" % rel)
         d = defs.get(rid)
         if d is None: fail("%s: no room definition in copy.py or src/rooms_*.py" % rel)

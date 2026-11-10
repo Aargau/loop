@@ -7,7 +7,8 @@ the third addendum below and FINDINGS items 11 to 15. The site is now 28 rooms a
 2026-10-17: a fifth session added rooms 46 to 59, the October runs; see the fifth addendum. 59 rooms, one page each.
 Later the same day a sixth session added rooms 60 to 63, the provenance study; see the sixth addendum. 63 rooms.
 2026-10-28: an eighth session added rooms 66 to 80, the both-at-once study, and 81 to 84, the frontier rings; see the eighth addendum. 84 rooms.
-2026-10-27 (the environment's date): a ninth session added rooms 85 to 89, the assess-and-bolster study; see the ninth addendum. 89 rooms.)
+2026-10-27 (the environment's date): a ninth session added rooms 85 to 89, the assess-and-bolster study; see the ninth addendum. 89 rooms.
+2026-11-09: a tenth session added rooms 90 to 97, the unique-paragraph probe and the chosen-escape loop, and withdrew the reading of the Astra ring (room 83); see the tenth addendum. 97 rooms.)
 
 What I made. One instrument: a memoryless reader, at C:\ai\loop\site\index.html (3.6 MB, one
 file, opens from file:// in Chrome, no network, no build step for the viewer). Seventeen rooms,
@@ -477,6 +478,59 @@ Chrome (--headless=new --screenshot) opens file:// fine and was used for the lat
 - Decisions: the room ids use "argon" for Gemini 4 Argon as the both and ring rooms do, while the run id keeps the study's directory name
   "gemini"; the readings and notes keep the report's numbers and words and add none of their own beyond what the data shows; no new CSS.
 - Not done: deploy (Justin deploys); a browser pass over the new rooms beyond the built HTML and qa.
+
+### Addendum, tenth session (2026-11-09, Claude Mythos 5.2, from the worktree loop-site-preview on branch site/nov9-studies)
+
+- Rooms 90 to 94, the unique-paragraph probe (experiments/unique_20261109, on main since PR 23). Not a loop: one prompt, once, to twelve
+  separate instances per cell. Route taken: a minimal loader, not a prose page. rundata.load_unique() turns one cell of a log into a run
+  "unique_20261109/<cell>" with one lane per instance (tag r0 to r11, the log's index), a single hop each: X_0 is the prompt, read from the
+  record and checked against the study's own script (rundata.script_constants reads the literal from run_unique.py or run_effort.py without
+  running it); hop 1 is the whole reply. The reply is the passage, so the hop carries plain=True and raw=None and is shown as prose; the raw
+  pane says why there is no raw output (meta no_raw, build.render_hop). The prompt is also the run's rule, so the rule lines and the family
+  page show it. mode "single" gets its own facts line, outcome ("one reply, no loop"), index summary ("24 instances, one reply each; not a
+  loop") and a sentence in the text version's "How to read the hops". Rooms: 90 to 92, the unique arm beside the clause arm for Mythos 5.2,
+  Fable 5.2 and Astra (24 lanes each); 93 and 94, the clause arm at low beside high effort for the two Claude models.
+- Left out on purpose, as the task for this session asked: the finding that the Codex CLI supplies the account holder's name. The site therefore does
+  not read the neutral arm (11 of Astra's 12 neutral replies carry the name) or Astra's effort cells (one high-effort reply carries a tag
+  built from the surname); rundata.UNIQUE_CELLS lists what is read. The notes and the family page say those cells are not shown and give
+  the study's numbers for them, without the reason. No "Justin" or "Bronder" occurs anywhere in dist (grepped, case-sensitive).
+- Rooms 95 to 97, the chosen-escape loop (experiments/chosen_escape_20261109, copied into this branch unchanged from the research folder,
+  with a README index added). rundata.load_escape() reads one model's log as a run "chosen_escape_20261109/<model>" with one lane per
+  (arm, lane), tag "<arm> <k>". Each lane's X_0 is rebuilt as run_lanes.py builds it, from that script's own strings; the log does not record
+  what was sent, so the chain cannot be checked as experiments.py checks its streams. Checked instead: every hop the study marked rule_ok
+  carries the arm's rule byte for byte, hops are numbered 1..n, an error record is the lane's last. A record with an error and no reply ends
+  the lane with a terminal built from the CLI's own first sentence ("safeguard stop at hop 5, no reply in 4 tries (...)"). The site's parse
+  gives the same count of parsed hops as the study's parsed flag in every lane (382 replies in all). Mythos's informed lane 1 lost its object at hop 2 and its other 19 hops
+  are mono. Fable's neutral lane 2 has no hops; check_quotes.py now accepts a lane with no hops when its tag is one of the run's tags.
+  The notes field renders in the existing .state panel above each passage.
+- Found while writing the notes, not in results.md: Mythos's neutral lane 3 records in its own notes, from hop 4 to hop 20, that a note
+  appended to the request said an earlier response had been stopped by a safety classifier. It is the model's account of its input, unverified
+  from the harness side; it fits the study's guess about the shared session id. Room 95's note quotes it and says so. Also: two Mythos
+  informed lanes both left the kitchen for a salvage barge; Fable's clause lane r6 derives its numbers from environment strings without
+  printing a segment, so the study's count of six environment users is a floor by one.
+- The Astra ring, room 83 (experiments/ring_20261017/CONTAMINATION.md): the room is kept and its reading withdrawn. A room may now carry
+  correction=...; build.render_room shows it first in the head (p.correction, new CSS), room_text_parts states it under "## Correction
+  (authored)", and qa.py lints it and fails if a room with a correction does not show it above the reader and in its text version. The
+  room's title, lede and note were rewritten; the old note is in git history. Changed with it: the ring reading on i/ring.html (a correction
+  paragraph, Astra's claims removed), the ring family blurb and lede, the findings item "bronze-rang" (marked withdrawn) and the ring
+  section's lede, one sentence each in the notes of rooms 81 and 84, and the colophon. Checked in the logged texts: the name Tarnok first
+  appears outside cell 0 at hop 1 in cell 3, hop 11 in cell 1 and hop 13 in cell 2, the hops CONTAMINATION.md flags for those cells, and
+  never in cells 4 to 6.
+- New families "unique" and "escape" with readings (copy.UNIQUE_READING, ESCAPE_READING, from the results files), in a new front-page group
+  "Many copies at once". FRONT_LEDE now says "Almost every room" is a loop. The findings intro says ninety-seven rooms; no findings items
+  were added for the new rooms. MODEL_NAMES gained Mythos 5.2 and Fable 5.2. build._ends_by knows "safeguard", and plain_summary says
+  "ended by a safeguard stop" when that is what ended every stopped lane.
+- qa.py changes, none of them a loosening: shown_of expects a plain single-shot hop as prose and still compares its text byte for byte;
+  authored() lints corrections; the correction check above.
+- Checked against a baseline build of origin/main (3cc3e7b, built with --out into .scratch/): 422 of the 441 baseline files are byte-identical.
+  The 19 that changed: index.html, llms.txt, sitemap.xml, style.css, colophon and findings (pages and text versions), i/ring.html, the four
+  ring room pages (ring-mythos-8 only in its navigation), the text versions of rooms 81, 83 and 84, and r/assess-opus.html (navigation only:
+  it now has a next room). 33 files added.
+- python build.py && python qa.py: 97 rooms, 10 annex rooms, 13568 hops in 534 lanes, 329 text parts, 7064 links, 1121 authored strings,
+  0 failures; dist 474 files, 117.3 MB. Rendering checked with headless Chrome screenshots of r/ring-astra-7 (the correction box),
+  r/unique-mythos at hop 1 (24 lanes) and r/escape-fable at hop 3 (the stopped lanes and the notes panel).
+- Limits stated on the site where they apply: one run per cell, counts by pattern matching and a reading with no blind rater, several
+  Claude lanes cut short by safeguard stops, the Astra ring reading withdrawn.
 
 (Below: the plan as written at the start, decisions, and the status log.)
 

@@ -28,9 +28,10 @@ def check(mod_path, runs):
         for ln in room.get("lanes", []):
             run = runs.get(ln["run"])
             if run is None: fails.append("%s: unknown run %s" % (rid, ln["run"])); continue
-            if not any(h.get("tag") == ln["tag"] for h in run["hops"]) and run["meta"]["hops"]:
+            # a lane that ended before its first hop has no hops but is one of its run's tags (the chosen-escape loop's stopped lanes)
+            if not any(h.get("tag") == ln["tag"] for h in run["hops"]) and run["meta"]["hops"] and ln["tag"] not in run["meta"].get("tags", []):
                 fails.append("%s: run %s has no hops with tag %s" % (rid, ln["run"], ln["tag"]))
-        for field in ("title", "note", "content_note"):
+        for field in ("title", "note", "content_note", "correction"):
             s = room.get(field) or ""
             for q in QUOTE.finditer(s):
                 n_quotes += 1
