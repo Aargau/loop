@@ -531,6 +531,11 @@ Chrome (--headless=new --screenshot) opens file:// fine and was used for the lat
   r/unique-mythos at hop 1 (24 lanes) and r/escape-fable at hop 3 (the stopped lanes and the notes panel).
 - Limits stated on the site where they apply: one run per cell, counts by pattern matching and a reading with no blind rater, several
   Claude lanes cut short by safeguard stops, the Astra ring reading withdrawn.
+- Deploy: not done. The task first said not to deploy; after the PR was open a deploy from this worktree was asked for (from site/,
+  npx wrangler pages deploy dist --project-name endlessly-ending-stories, no branch flag). The session's permission layer declined wrangler
+  at the first call, a whoami to see whether it was authenticated, so no deploy command ran and the public site is unchanged. Whether
+  wrangler is authenticated on this machine was not established. By the fifth addendum's experience a deploy from this branch without
+  --branch main would land as a preview. qa was clean on the build in site/dist at the time of the commit.
 
 (Below: the plan as written at the start, decisions, and the status log.)
 
