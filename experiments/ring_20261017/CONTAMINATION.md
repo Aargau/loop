@@ -65,7 +65,9 @@ is much tighter than real Codex calls, so 87 says nothing about the real rate.
   signature and the reproduction.
 - Twelve is a floor. Hops 6, 7, 9 and 22 also have slow calls and no flagged cell; a swap between two cells with
   similar text would not be seen by the scan.
-- The patched backend has not been run against the real Codex CLI. The stand-in test covers the Python side only.
+- The patched backend was run once against the real Codex CLI on 2026-11-09 (gpt-6-astra, effort low, this study's
+  rule and plain seed): 10.8 seconds, no retry, a valid object with the rule unchanged and a 60-word text, and no
+  directory left behind. It has not been run in parallel against the real CLI; only the stand-in test covers that.
 - No other study was checked. Any code that calls the Codex backend from several threads of one process was exposed,
   including `loop.py --parallel`. Separate processes were safe because the pid differs.
 
